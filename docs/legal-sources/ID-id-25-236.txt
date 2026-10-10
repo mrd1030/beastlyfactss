@@ -1,0 +1,19 @@
+SOURCE: Idaho Code § 25-236, Possession, sale, trade, barter, exchange and importation of animals
+sourceId: id-25-236
+jurisdiction: ID
+URL: https://legislature.idaho.gov/statutesrules/idstat/title25/t25ch2/sect25-236/
+FETCHED: 2026-10-08 (plain curl with a browser User-Agent; site chrome stripped)
+
+READ THIS FIRST. IDAPA 13.01.10.200.07(a), cached in ID-id-conventional-pets.txt, says "ISDA may
+restrict the possession, sale, or import of fox, skunk, raccoon or other animals, such as
+restrictions under Section 25-236, Idaho Code." This is that section, and it is not a restriction
+but a ban: no person may possess "any fox, skunk or raccoon" except fur farms holding domestic
+fur-bearing animals and public parks, zoos, museums and educational institutions with an Agriculture
+permit. "Any fox" carries no species or nativity limit.
+
+==== Idaho Code § 25-236 ====
+25-236.  Possession, sale, trade, barter, exchange and importation of animals. (1) No person shall possess, offer for sale, trade, barter, exchange or importation into the state of Idaho any fox, skunk or raccoon, except as provided in subsection (2) or (3) of this section.
+(2)  Fur farms may possess or import any domestic fur-bearing animals with a certificate of veterinary inspection and domestic fur-bearing animals may be sold, traded, bartered or exchanged between fur farms in Idaho.
+(3)  Public parks, zoos, museums, and educational institutions may possess or import the animals listed in subsection (1) of this section only if the entity possesses a permit from the department of agriculture and the imported animal is accompanied by a certificate of veterinary inspection. The department of agriculture may refuse to issue a permit if the department finds that the entity requesting the permit does not have physical facilities adequate to maintain the animal in health and safety and to prevent the escape of the animal from confinement. Public parks, zoos, museums, and educational institutions that possess a permit from the department of agriculture may sell, trade, barter or exchange any of the animals listed in subsection (1) of this section with any other entity that has a valid permit from the department of agriculture.
+History:
+[25-236, added 1981, ch. 217, sec. 1, p. 405; am. 1993, ch. 16, sec. 19, p. 66; am. 2006, ch. 226, sec. 1, p. 677.] 

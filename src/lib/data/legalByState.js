@@ -1,5 +1,6 @@
 import LEGAL from '@/lib/data/legalStatus.json';
 import { bucketFor } from '@/components/legal/LegalStatusMap';
+import { liveLegalArticle } from '@/lib/data/liveLegalArticle';
 
 // The legal matrix, read down a column instead of across a row.
 //
@@ -31,7 +32,7 @@ for (const code of Object.keys(LEGAL.jurisdictions)) {
     const entry = animal.jurisdictions[code];
     const bucket = bucketFor(entry?.status);
     counts[bucket] += 1;
-    rows.push({ id, name: animal.name, scientific: animal.scientific, article: animal.article, entry, bucket });
+    rows.push({ id, name: animal.name, scientific: animal.scientific, article: liveLegalArticle(animal), entry, bucket });
   }
 
   rows.sort((a, b) => {

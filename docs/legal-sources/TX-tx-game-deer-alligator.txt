@@ -1,0 +1,277 @@
+# Texas's live game animal bar, the game breeder's license for squirrels, the deer breeder permit, and the alligator possession bar
+
+sourceId: tx-63-002 / tx-44-002 / tx-43-351 / tx-31tac-65-353
+jurisdiction: TX
+url: https://statutes.capitol.texas.gov/Docs/PW/htm/PW.63.htm, PW.44.htm, PW.43.htm; https://www.law.cornell.edu/regulations/texas/31-Tex-Admin-Code-SS-65-353
+fetched: 2026-10-08
+fetch notes: statutes fetched from https://tcss.legis.texas.gov/resources/PW/htm/PW.<chapter>.htm as described in TX-tx-statutes.txt; the alligator rule from Cornell LII by plain curl with a browser User-Agent. Tags stripped.
+
+Extracted text follows verbatim. This is a cache of the primary source, not a
+substitute for it. Re-fetch before relying on it for a new verification date.
+
+----------------------------------------------------------------------
+
+--- Tex. Parks & Wild. Code ch. 63, game animals (sourceId tx-63-002) ---
+SUBCHAPTER A. GAME ANIMALS
+Sec. 63.001.  GAME ANIMALS.
+(a)  The following animals are game animals:  mule deer, white-tailed deer, pronghorn antelope, desert bighorn sheep, gray or cat squirrels, fox squirrels or red squirrels, and collared peccary or javelina.
+(b)  No species of any animal set out in Subsection (a) of this section or any other animal is a game animal if it is not indigenous to this state.
+(c), (d) Repealed by Acts 1997, 75th Leg., ch. 863, Sec. 8, eff. Sept. 1, 1997.
+Acts 1975, 64th Leg., p. 1405, ch. 545, Sec. 1, eff. Sept. 1, 1975.  Amended by Acts 1981, 67th Leg., p. 1860, ch. 439, Sec. 6, eff. Aug. 31, 1981;  Acts 1987, 70th Leg., ch. 35, Sec. 1, eff. Sept. 1, 1987;  Acts 1997, 75th Leg., ch. 1256, Sec. 8, eff. Sept. 1, 1997.
+Sec. 63.002.  POSSESSION OF LIVE GAME ANIMALS.
+No person may possess a live game animal in this state for any purpose not authorized by this code.
+Added by Acts 1997, 75th Leg., ch. 1256, Sec. 91, eff. Sept. 1, 1997.
+SUBCHAPTER B. NONGAME ANIMALS
+
+--- Tex. Parks & Wild. Code ch. 44, game breeder's license (sourceId tx-44-002) ---
+﻿
+PARKS AND WILDLIFE CODE  CHAPTER 44. GAME BREEDER'S LICENSE
+PARKS AND WILDLIFE CODE
+TITLE 5. WILDLIFE AND PLANT CONSERVATION
+SUBTITLE A. HUNTING AND FISHING LICENSES
+CHAPTER 44. GAME BREEDER'S LICENSE
+Sec. 44.001.  DEFINITIONS.
+In this chapter:
+(1)  "Game breeder" means a person holding a valid game breeder's license.
+(2)  "Captivity" means the keeping of game animals in an enclosure suitable for and capable of retaining the animal it is designed to retain at all times under reasonable and ordinary circumstances and to prevent entry by another animal.
+(3)  "Game animal" means a pronghorn antelope, a collared peccary or javelina, or a red or gray squirrel.
+Acts 1975, 64th Leg., p. 1405, ch. 545, Sec. 1, eff. Sept. 1, 1975.
+Amended by: 
+Acts 2005, 79th Leg., Ch. 992 (H.B. 
+2026
+), Sec. 10, eff. June 18, 2005.
+Sec. 44.002.  LICENSE REQUIREMENT.
+No person may sell,  place in captivity, or engage in the business of propagating any game animal of this state unless the person has obtained a license issued under this chapter from the department.
+Acts 1975, 64th Leg., p. 1405, ch. 545, Sec. 1, eff. Sept. 1, 1975.  Amended by Acts 1975, 64th Leg., p. 1209, ch. 456, Sec. 9, eff. Sept. 1, 1975.
+Amended by: 
+Acts 2005, 79th Leg., Ch. 992 (H.B. 
+2026
+), Sec. 11, eff. June 18, 2005.
+Sec. 44.003.  GAME BREEDER'S LICENSE.
+The department shall issue a game breeder's license on payment of a license fee of $10 or an amount set by the commission, whichever amount is more.  The license is valid for a yearly period.  Each yearly period begins on September 1 or another date set by the commission and extends through August 31 of the next year or another date set by the commission.  The commission by rule may set the amount of a license fee for a license issued during a transition period at an amount lower than prescribed in this section and provide for a license term for a transition period that is shorter or longer than a year.
+Acts 1975, 64th Leg., p. 1405, ch. 545, Sec. 1, eff. Sept. 1, 1975.  Amended by Acts 1975, 64th Leg., p. 1209, ch. 456, Sec. 9, eff. Sept. 1, 1975;  Acts 1983, 68th Leg., p. 1331, ch. 277, Sec. 17, eff. Sept. 1, 1983;  Acts 1985, 69th Leg., ch. 267, art. 2, Sec. 27, eff. Sept. 1, 1985;  Acts 1993, 73rd Leg., ch. 365, Sec. 1, eff. May 31, 1993;  Acts 1995, 74th Leg., ch. 931, Sec. 45, eff. June 16, 1995.
+Sec. 44.004.  REISSUANCE OF LICENSE.
+A game breeder's license may not be issued to a previous licensee unless the licensee has filed with the department a copy of the record required by Section 
+44.007
+of this code with an affidavit made before an officer qualified to administer oaths that the copy is true and correct.
+Acts 1975, 64th Leg., p. 1405, ch. 545, Sec. 1, eff. Sept. 1, 1975.
+Sec. 44.005.  SERIAL NUMBER.
+(a)  The department shall issue a serial number to the applicant at the time of the first issuance of a game breeder's license to the applicant.  The same serial number shall be assigned to the licensee whenever he holds a game breeder's license.
+(b)  The game breeder shall place a suitable permanent tag bearing the game breeder's serial number on the ear of each pronghorn antelope or collared peccary or javelina held in captivity by the game breeder.
+Acts 1975, 64th Leg., p. 1405, ch. 545, Sec. 1, eff. Sept. 1, 1975.  Amended by Acts 1985, 69th Leg., ch. 267, art. 1, Sec. 50, eff. Sept. 1, 1985.
+Amended by: 
+Acts 2005, 79th Leg., Ch. 992 (H.B. 
+2026
+), Sec. 12, eff. June 18, 2005.
+Sec. 44.006.  LICENSE PRIVILEGES.
+The holder of a valid game breeder's license may:
+(1)  engage in the business of game breeding in the immediate locality for which the license was issued;  or
+(2)  sell or hold in captivity for the purpose of propagation or sale a game animal.
+Acts 1975, 64th Leg., p. 1405, ch. 545, Sec. 1, eff. Sept. 1, 1975.  Amended by Acts 1981, 67th Leg., p. 1860, ch. 439, Sec. 2, eff. Aug. 31, 1981;  Acts 1985, 69th Leg., ch. 267, art. 1, Sec. 51, eff. Sept. 1, 1985;  Acts 1987, 70th Leg., ch. 607, Sec. 1, eff. Sept. 1, 1987;  Acts 1997, 75th Leg., ch. 863, Sec. 3, eff. Sept. 1, 1997.
+Amended by: 
+Acts 2005, 79th Leg., Ch. 992 (H.B. 
+2026
+), Sec. 13, eff. June 18, 2005.
+Sec. 44.007.  RECORDS.
+(a)  Each game breeder shall keep a written record in a suitably bound book for the period from August 1 until the following July 31 or another yearly period established by the commission containing:
+(1)  the number and source of each kind of game animal on hand at the time the license is issued;
+(2)  the number, source, and date of receipt of each kind of game animal on hand at any time after the license is obtained;
+(3)  the number of each kind of game animal shipped or delivered, the date of shipment or delivery, and the name and address of persons to whom the shipment or delivery is made;  and
+(4)  any other information determined by the commission to be necessary to enforce the provisions of this chapter.
+(b)  During August or another month set by the commission of each year, but before August 31 or another date established by the commission, a game breeder shall send to the department a report showing the information required by this section.
+Acts 1975, 64th Leg., p. 1405, ch. 545, Sec. 1, eff. Sept. 1, 1975.  Amended by Acts 1993, 73rd Leg., ch. 365, Sec. 2, eff. May 31, 1993;  Acts 1995, 74th Leg., ch. 931, Sec. 46, eff. June 16, 1995.
+Sec. 44.008.  ENCLOSURE SIZE.
+A single enclosure for any game animal may not contain more than 320 acres.
+Acts 1975, 64th Leg., p. 1405, ch. 545, Sec. 1, eff. Sept. 1, 1975.
+Sec. 44.009.  INSPECTION.
+An authorized employee of the department may inspect at any time and without warrant any pen, coop, or enclosure holding a game animal.
+Acts 1975, 64th Leg., p. 1405, ch. 545, Sec. 1, eff. Sept. 1, 1975.
+Sec. 44.010.  SHIPMENT OF GAME ANIMALS.
+(a)  A common carrier may not accept a live game animal unless the game animal is one listed in Section 
+44.006
+(2) of this code and the shipment is made by a game breeder.
+(b)  No person, except a game breeder or his authorized agent, may transport or ship a live game animal unless he obtains a permit for shipment or transportation from the department.
+Acts 1975, 64th Leg., p. 1405, ch. 545, Sec. 1, eff. Sept. 1, 1975.
+Sec. 44.011.  PURCHASE AND SALE OF LIVE GAME ANIMALS.
+(a)  Only game animals that are in a healthy condition may be sold, bartered, or exchanged, or offered for sale, barter, or exchange by a game breeder.
+(b)  No person may purchase or accept in this state a live game animal unless:
+(1)  the game animal bears a tag required by Section 
+44.005
+of this code and is delivered or sold by a game breeder;  or
+(2)  the game animal is delivered by a common carrier from outside this state.
+Acts 1975, 64th Leg., p. 1405, ch. 545, Sec. 1, eff. Sept. 1, 1975.
+Sec. 44.012.  SALE DURING OPEN SEASON.
+A game animal held under the authority of a license issued under this subchapter may not be sold, traded, transferred, or shipped to any person in any county during an open season in the county of destination for taking the game animal or during a period of 10 days before the open season.
+Acts 1975, 64th Leg., p. 1405, ch. 545, Sec. 1, eff. Sept. 1, 1975.  Amended by Acts 1985, 69th Leg., ch. 267, art. 1, Sec. 52, eff. Sept. 1, 1985;  Acts 1997, 75th Leg., ch. 1256, Sec. 48, eff. Sept. 1, 1997.
+Sec. 44.0125.  PROHIBITED ACTS.
+It is an offense if:
+(1)  a licensed game breeder takes, traps, or captures or attempts to take or capture game animals from the wild;
+(2)  a licensed game breeder allows the hunting or killing of a game animal held in captivity under the provisions of this chapter;  or
+(3)  a person fails to furnish to a game warden commissioned by the department information as to the source from which game animals held in captivity were derived.
+Added by Acts 1985, 69th Leg., ch. 267, art. 1, Sec. 53, eff. Sept. 1, 1985.
+Sec. 44.013.  USE OF PURCHASED GAME ANIMALS.
+(a)  Except as provided in Subsection (b) of this section, game animals listed in Subdivision (2) of Section 
+44.006
+of this code may be purchased or received in this state only for the purpose of liberation for stocking purposes or holding for propagation purposes.  All game animals listed in Subdivision (2) of Section 
+44.006
+
+--- Tex. Parks & Wild. Code §§ 43.351 to 43.357, deer breeder permits (sourceId tx-43-351) ---
+Sec. 43.351.  DEFINITIONS.
+In this subchapter:
+(1)  "Breeder deer" means a white-tailed deer or mule deer legally held under a permit authorized by this subchapter.
+(2)  "Deer breeder" means a person holding a valid deer breeder's permit.
+(3)  "Captivity" means the keeping of a breeder deer in an enclosure suitable for and capable of retaining the breeder deer it is designed to retain at all times under reasonable and ordinary circumstances and to prevent entry by another deer.  The term includes the temporary keeping of a breeder deer in a vehicle or trailer.
+(4)  "Deer" means a white-tailed deer or mule deer.
+(5)  Repealed by Acts 2019, 86th Leg., R.S., Ch. 603 (S.B. 
+810
+), Sec. 2, eff. September 1, 2019.
+(6)  "Immediate locality" means land that is contiguous and that is owned by the same person.  For purposes of this subdivision, land divided or separated only by a public road or a public waterway is contiguous.
+(7)  "Transfer" means any movement of breeder deer from a breeder facility, a nursing facility, or a deer management permit facility other than to  an accredited veterinarian for medical purposes.
+Added by Acts 1985, 69th Leg., ch. 267, art. 1, Sec. 49, eff. Sept. 1, 1985.
+Amended by: 
+Acts 2007, 80th Leg., R.S., Ch. 79 (H.B. 
+1308
+), Sec. 2, eff. September 1, 2007.
+Acts 2019, 86th Leg., R.S., Ch. 603 (S.B. 
+810
+), Sec. 2, eff. September 1, 2019.
+Sec. 43.352.  PERMIT AUTHORIZED; DURATION OF PERMIT.
+(a)  The department shall issue a permit to a qualified person to possess live breeder deer in captivity.
+(b)  At the option of the person applying for the issuance or renewal of a permit under this section, the department may issue a permit that is valid for one year, three years, or five years.
+(c)  A three-year or five-year permit is available only to a person who:
+(1)  has held a deer breeder's permit for the three consecutive permit years immediately preceding the date of the application for a three-year or five-year permit;
+(2)  agrees to submit the annual reports required under this subchapter electronically; and
+(3)  meets any other criteria established by rule of the commission.
+(d)  The commission may adopt rules allowing the department to revoke a three-year or five-year permit before the date specified for expiration of the permit if the permit holder fails to submit the annual reports electronically as required.
+Added by Acts 1985, 69th Leg., ch. 267, art. 1, Sec. 49, eff. Sept. 1, 1985.  Amended by Acts 1991, 72nd Leg., ch. 704, Sec. 8, eff. Sept. 1, 1991.
+Amended by: 
+Acts 2007, 80th Leg., R.S., Ch. 79 (H.B. 
+1308
+), Sec. 2, eff. September 1, 2007.
+Acts 2013, 83rd Leg., R.S., Ch. 99 (S.B. 
+820
+), Sec. 4, eff. September 1, 2013.
+Sec. 43.353.  PERMIT IS DEFENSE.
+In any prosecution for the unlawful possession or transportation of white-tailed deer or mule deer, the possession of a permit issued under this subchapter to the accused is a complete defense if the conduct was authorized under the terms of the permit.
+Added by Acts 1985, 69th Leg., ch. 267, art. 1, Sec. 49, eff. Sept. 1, 1985.  Amended by Acts 1991, 72nd Leg., ch. 704, Sec. 9, eff. Sept. 1, 1991.
+Sec. 43.356.  SERIAL NUMBER.
+The department shall issue a serial number to a permittee when the department issues the permittee a deer breeder's permit.  The same serial number shall be assigned to the permittee if the department issues the permittee a subsequent deer breeder's permit.
+Added by Acts 1985, 69th Leg., ch. 267, art. 1, Sec. 49, eff. Sept. 1, 1985.  Amended by Acts 1991, 72nd Leg., ch. 704, Sec. 12, eff. Sept. 1, 1991;  Acts 1997, 75th Leg., ch. 1255, Sec. 2, eff. Sept. 1, 1997;  Acts 1997, 75th Leg., ch. 1256, Sec. 38, eff. Sept. 1, 1997.
+Amended by: 
+Acts 2007, 80th Leg., R.S., Ch. 79 (H.B. 
+1308
+), Sec. 2, eff. September 1, 2007.
+Sec. 43.3561.  IDENTIFICATION OF BREEDER DEER.
+(a)  In this section:
+(1)  "Button back" means the portion of an identification tag used to secure the tag to the breeder deer.
+(2)  "Electronic identification device" means a button tag or implant that uses radio frequency identification technology.
+(3)  "Identification tag" means a tag attached to the ear of a breeder deer for the purposes of identification that meets the requirements of this section.
+(4)  "Unique identifier" means five alphanumeric characters assigned by the department to uniquely identify a breeder deer.
+(b)  Not later than March 31 of the year following the year in which a breeder deer is born, the breeder deer must be identified by:
+(1)  attaching an identification tag to the pinna of either ear of the breeder deer in a manner so that the face of the tag is clearly visible on the anterior side of the ear; and
+(2)  applying a single electronic identification device.
+(c)  Except for a replacement identification tag described by Subsection (h), an identification tag applied under Subsection (b):
+(1)  must:
+(A)  be commercially manufactured;
+(B)  bear on the face and button back the unique identifier for the breeder deer to which it is attached in text placed by the manufacturer with characters on the face not less than 5/16 inch wide and 1/2 inch tall and spaced not less than 1/16 inch apart;
+(C)  be securely affixed so as not to be dislodged or removed easily;
+(D)  be made of a material that is not likely to disintegrate or decompose; and
+(E)  have sufficient contrast between the color of the text and the color of the tag to make the text characters clearly visible; and
+(2)  may bear additional information, provided that a dividing line placed by the manufacturer below the unique identifier separates the unique identifier from the additional information.
+(d)  The text of the unique identifier may be larger than the dimensions described by Subsection (c)(1)(B) but must maintain the same proportion of height and width.
+(e)  A breeder deer born before January 1, 2022, may be identified as described by Subsection (c) or (h).  A breeder deer born on or after January 1, 2022, must be identified first as described by Subsection (c) before the breeder deer may be identified as described by Subsection (h).
+(f)  An electronic identification device applied under Subsection (b)(2) must be approved by the United States Department of Agriculture and have an associated 15-digit animal identification number that begins with 840.  If the electronic identification device is a button tag, the button tag must be attached to the pinna of either ear of the breeder deer.  If the electronic identification device is an implant, the implant may not be implanted in edible muscle.  No person may remove an electronic identification device.
+(g)  The department shall create and maintain a database containing electronic identification device numbers entered by deer breeders.  An electronic identification device applied under Subsection (b)(2) is valid for purposes of Subsection (b) only if the number associated with the device has been entered into the department database and corresponds with the unique identifier assigned to the breeder deer to or in which the device is attached or implanted.  In making a determination to destroy a deer under Section 
+43.953
+, the department shall consider an electronic identification device that meets the requirements of this section as evidence of positive identification for a breeder deer that cannot be identified by either the identification tag or tattoo required by Subsection (b) or (j), provided that the deer breeder entered the electronic identification device number into the database before the identity of the breeder deer was in question as determined by the department.
+(h)  A deer breeder immediately shall replace an identification tag that has been dislodged, damaged, or removed by means other than human agency to the extent that the identification tag does not meet the requirements of Subsections (b) and (c) with another identification tag that meets the requirements of Subsections (b) and (c), except that a deer breeder may create and attach a replacement identification tag.  A replacement identification tag must:
+(1)  be clearly visible;
+(2)  have legible text written with a tag pen manufactured for use with the tag; and
+(3)  meet the requirements of Subsections (b)(1) and (c), except for the requirement that the text be placed on the tag by the manufacturer.
+(i)  A deer breeder is not required to remove the tag for any purpose but may remove the tag and replace the tag immediately to meet the requirements of this section.
+(j)  A person may not remove or knowingly permit the removal of a breeder deer held in a facility by a permittee under this subchapter unless the breeder deer has been identified by applying a tattoo to the inner portion of either ear of the deer that:
+(1)  is made with commercially available #300 or 5/16 inch tattoo letters and numbers;
+(2)  is legible, permanent, and green or black; and
+(3)  bears the same unique identifier printed on the identification tag attached to the deer under Subsection (c).
+(k)  A person may not knowingly accept or permit the acceptance of a breeder deer into a facility regulated under this subchapter unless the breeder deer has been identified as required by this section.
+Added by Acts 2007, 80th Leg., R.S., Ch. 79 (H.B. 
+1308
+), Sec. 2, eff. January 1, 2008.
+Amended by: 
+Acts 2019, 86th Leg., R.S., Ch. 603 (S.B. 
+810
+), Sec. 1, eff. September 1, 2019.
+Sec. 43.357.  PERMIT PRIVILEGES; REGULATIONS.
+(a)  The holder of a valid deer breeder's permit may:
+(1)  engage in the business of breeding breeder deer in the immediate locality for which the permit was issued; and
+(2)  sell, transfer to another person, or hold in captivity live breeder deer for the purpose of propagation or sale.
+(a-1)  A deer breeder, a deer breeder's authorized agent, or an assistant who is not a permittee under this subchapter but is acting under the direction of a deer breeder or a deer breeder's authorized agent may capture a breeder deer held in a permitted facility for:
+(1)  removal from an enclosure;
+(2)  veterinary treatment;
+(3)  tagging;
+(4)  euthanasia for the purpose of:
+(A)  humane dispatch of the breeder deer; or
+(B)  the conduct of a test for a reportable disease as required by law; or
+(5)  any other purpose required or allowed by law.
+(b)  The commission may make regulations governing:
+(1)  the possession of breeder deer held under the authority of this subchapter;
+(2)  the recapture of lawfully possessed breeder deer that have escaped from the facility of a deer breeder;
+(3)  permit applications and fees;
+(4)  reporting requirements;
+(5)  procedures and requirements for the purchase, transfer, sale, or shipment of breeder deer;
+(6)  the endorsement of a deer breeder facility by a certified wildlife biologist;
+(7)  the number of breeder deer that a deer breeder may possess; and
+(8)  the dates for which a deer breeder permit is valid.
+(c)  A person who holds a permit under this subchapter or a person who receives a breeder deer under this subchapter is not required to have the release site inspected or approved before the release of a breeder deer from a breeding facility.  This section does not preclude the department from making a habitat inspection but does direct the department to refrain from implementing habitat inspection rules or procedures that could unreasonably impede the broader deer breeding industry.
+(d)  Subsection (c) does not exempt a person from the requirements under the following permits issued by the department:
+(1)  managed land deer permit regulated under 31 T.A.C. Sections 65.26 and 65.34;
+(2)  deer management permit under Section 
+43.601
+;
+(3)  trap, transport, and transplant permit under Sections 
+43.061
+and 
+43.0611
+;
+(4)  trap, transport, and process permit under Section 
+43.0612
+; and
+(5)  antlerless deer control permit regulated under 31 T.A.C. Sections 65.25 and 65.27.
+Added by Acts 1985, 69th Leg., ch. 267, art. 1, Sec. 49, eff. Sept. 1, 1985.  Amended by Acts 1991, 72nd Leg., ch. 704, Sec. 13, 14, eff. Sept. 1, 1991;  Acts 1997, 75th Leg., ch. 1255, Sec. 3, eff. Sept. 1, 1997;  Acts 1997, 75th Leg., ch. 1256, Sec. 39, eff. Sept. 1, 1997.
+Amended by: 
+Acts 2007, 80th Leg., R.S., Ch. 79 (H.B. 
+1308
+), Sec. 2, eff. September 1, 2007.
+
+--- 31 TAC §§ 65.351 to 65.353, Alligator Proclamation, from Cornell LII (sourceId tx-31tac-65-353) ---
+31 Tex. Admin. Code § 65.351 - Application
+31 Tex. Admin. Code § 65.351 - Application 
+State Regulations 
+Compare
+Except as may be provided under the terms and conditions of
+special permits or contracts issued under Parks and Wildlife Code, Chapters 43
+or 81, or under the provisions of Subchapter A of this chapter, this subchapter
+governs the taking, possession, propagation, transportation, exportation,
+importation, and sale of alligators in this state.
+
+31 Tex. Admin. Code § 65.353 - General Provisions
+31 Tex. Admin. Code § 65.353 - General Provisions 
+State Regulations 
+Compare
+(a)
+Except as
+provided in this subchapter or Subchapter A of this chapter, no person may
+possess an untagged alligator hide or undocumented alligator part.
+(b)
+Except as provided in this subchapter or
+Parks and Wildlife Code, Chapter 43, Subchapter C, no person may possess a live
+alligator;
+(c)
+Any person
+transporting live alligators shall take reasonable precautions to maximize the
+humane treatment of and minimize stress to the alligators being
+transported.
+(d)
+No person other
+than a wholesale dealer or farmer may process alligator meat for purpose of
+sale.

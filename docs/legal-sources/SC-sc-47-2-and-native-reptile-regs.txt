@@ -1,0 +1,233 @@
+# South Carolina: S.C. Code §§ 47-2-10 to 47-2-30, §§ 50-15-15 and 50-15-20(C), § 50-11-1910(A), and S.C. Code Regs. 123-151.3, 123-151.4 and 123-152
+
+sourceId: sc-47-2
+jurisdiction: SC
+url: https://www.scstatehouse.gov/code/t47c002.php
+fetched: 2026-10-08
+fetch notes: scstatehouse.gov code pages by plain curl, tags stripped; Chapter 123 regulations PDF by plain curl, pdftotext -layout. Companion to SC-sc-wildlife-rules.txt, which holds Title 50 ch. 16 and Regs 123-150 to 123-151.
+
+Extracted text follows verbatim. This is a cache of the primary source, not a
+substitute for it. Re-fetch before relying on it for a new verification date.
+
+----------------------------------------------------------------------
+
+==== S.C. Code §§ 47-2-10 to 47-2-30 (https://www.scstatehouse.gov/code/t47c002.php) ====
+ SECTION 47-2-10. Definitions.
+ As contained in this chapter:
+ (1) "Animal control authority" means the agency designated by a city or county to administer ordinances regulating, restricting, or prohibiting the possession of large wild cats, non-native bears, and great apes. The animal control agency may be a municipal or county animal control agency, county sheriff, or other designated agency.
+ (2) "Large wild cat, non-native bear and great ape" means one of the following types of animals of the order Carnivora or Primate, and any hybrids of these animals:
+ (a) Family Felidae, Genus panthera—all lions, tigers, leopards, jaguars, cougars, cheetahs, snow leopards, and clouded leopards;
+ (b) Family Ursidae—all bears that are not native to South Carolina and not subject to oversight by the South Carolina Department of Natural Resources; and
+ (c) Family Hominidae—all great apes; to include all species of chimpanzees, gorillas, and orangutans.
+ (3) "Person" means any individual, partnership, corporation, organization, trade, or professional association, firm, limited liability company, joint venture, association, trust, estate, or any other legal entity, and any employee, agent, or representative of the entity.
+ (4) "Possessor" means any person who owns, possesses, keeps, harbors, brings into the State, acts as a custodian of, or has custody or control of, a large wild cat, non-native bear, or great ape.
+HISTORY: 2017 Act No. 86 (H.3531), SECTION 1, eff January 1, 2018.
+ SECTION 47-2-20. Application of chapter.
+ (A) The provisions of this chapter do not apply to:
+ (1) duly incorporated nonprofit animal protection organizations, such as humane societies and shelters, housing a large wild cat, non-native bear or great ape temporarily at the written request of the animal control authority or acting under the authority of this chapter;
+ (2) federal or state wildlife enforcement officers acting under the scope of their authority;
+ (3) animal control or law enforcement agencies or officers acting under the authority of this chapter;
+ (4) veterinary hospitals, clinics, veterinarians, and persons employed at such facilities under the direction of a veterinarian who are actively treating a large wild cat, non-native bear, or great ape in their professional capacity as a veterinarian or employee of such facility;
+ (5) a university, college, laboratory, or other research facility holding a Class R registration under the Animal Welfare Act, 7 U.S.C. Section 2131, et seq., as amended;
+ (6) any person who possesses a valid United States Department of Agriculture Class A, B, or C license in good standing and is in compliance with the United States Department of Agriculture Animal Welfare Act regulations and standards as of January 1, 2018. This person may keep and acquire new large wild cats, non-native bears, or great apes;
+ (7) any person who obtains a valid United States Department of Agriculture Class A, B, or C license and is in compliance with the United States Department of Agriculture Animal Welfare Act regulations and standards after January 1, 2018, may keep and acquire large wild cats, non-native bears, or great apes after that date, and must comply with the applicable provisions of this chapter;
+ (8) circuses that are incorporated and hold a Class C license under the Animal Welfare Act, 7 U.S.C. Section 2131, et seq., as amended, that are temporarily in this State, and that offer performances by live animals, clowns, and acrobats for public entertainment; and
+ (9) an intermediate handler, as defined by the Animal Welfare Act, 7 U.S.C. Section 2136, et seq., acting as a registered agent for a USDA license, pursuant to the Captive Wildlife Safety Act, shall be permitted to transport regulated species through this State, provided the animal is at all times maintained within a confinement sufficient to prevent the animal from escaping.
+HISTORY: 2017 Act No. 86 (H.3531), SECTION 1, eff January 1, 2018.
+ SECTION 47-2-30. Possession or purchase of large wild cat, non-native bear, or great ape prohibited; exceptions; registration.
+ (A) Except as otherwise provided in this chapter, it is unlawful for a person to import into, possess, keep, purchase, have custody or control of, breed, or sell within this State, by any means, a large wild cat, non-native bear, or great ape, including transactions conducted via the Internet.
+ (B) A person in legal possession of a large wild cat, non-native bear, or great ape prior to January 1, 2018, and who is the legal possessor of the animal, may keep possession of the animal for the remainder of the animal's life, subject to the following conditions:
+ (1) on or before January 1, 2018, the possessor of a large wild cat, non-native bear, or great ape shall register with the animal control authority for the city or county in which the animal is located. The registration shall include the person's name, address, telephone number, a complete inventory of each large wild cat, non-native bear, or great ape that the person possesses, a photograph or microchip number for each animal, the address for the site at which each animal is located, and the payment to the animal control authority of a one-time fee of five hundred dollars per site at which a large wild cat, non-native bear, or great ape is to be located, and an annual fee of one hundred dollars per large wild cat, non-native bear, or great ape located at that site to cover the costs of enforcement of this chapter. A possessor shall have a continuing obligation to promptly notify the animal control authority with jurisdiction of any material changes to the information required for registration;
+ (2) the possessor shall prepare and submit to the animal control authority at the time of payment of the fee required by item (1) a contingency plan to protect first responders by providing for the quick and safe recapture of the large wild cat, non-native bear, or great ape in the event of an escape;
+ (3) the possessor shall maintain veterinary records, acquisition papers for the animal, or other documents or records that establish that the person possessed the animal prior to January 1, 2018;
+ (4) the possessor shall present paperwork described in item (3) to an animal control or law enforcement authority upon request;
+ (5) the possessor shall comply with the basic standards for housing exotic animals and protecting the public under the federal Animal Welfare Act, 7 U.S.C. Section 2131, et seq., as amended, and the regulations adopted pursuant to that act, and shall allow the animal control authority access to the animal's housing in order to ensure that the animal is properly cared for and poses no risk of unauthorized contact with the public;
+ (6) the possessor shall notify the animal control authority, the local sheriff's department, and police department, if applicable, immediately upon discovery that the large wild cat, non-native bear, or great ape has escaped. The possessor of the animal shall be liable for any and all costs associated with the escape, capture, and disposition of a registered animal; and
+ (7) the possessor shall comply with any and all applicable federal, state, or local law, rule, regulation, ordinance, permit, or other permission regarding ownership of large wild cats, non-native bears, and great apes. Failure to comply with any law, rule, regulation, ordinance, permit, or other permission constitutes a violation of this chapter.
+HISTORY: 2017 Act No. 86 (H.3531), SECTION 1, eff January 1, 2018.
+
+==== S.C. Code §§ 50-15-15 and 50-15-20(C) (https://www.scstatehouse.gov/code/t50c015.php) ====
+ SECTION 50-15-15. Native reptiles; regulations; unlawful acts.
+ (A) The department may promulgate regulations for the appropriate management of native reptile and amphibian species, including limitations on, and permitting for, the possession, transfer, sale, barter, trade, shipment, and removal from this State of native reptile and amphibian species.
+ (B) It is unlawful to possess, transfer, sell, barter, trade, ship, or remove from this State, or attempt to possess, transfer, sell, barter, trade, ship, or remove from this State native reptile and amphibian species, including parts, products, eggs, offspring, and derivatives thereof, in violation of a limit or a permit condition established by the department pursuant to this section.
+
+ SECTION 50-15-20. Investigations on nongame wildlife by department; regulations; management programs; public hearings; prohibited acts.
+ (A) The department shall conduct investigations on nongame wildlife in order to develop information relating to population, distribution, habitat, needs, limiting factors, and other biological and ecological data to determine management measures necessary for their continued ability to sustain themselves successfully. On the basis of such determinations the department shall issue proposed regulations and develop management programs designed to ensure the continued ability of nongame wildlife to perpetuate themselves successfully. Such proposed regulations shall set forth species or subspecies of nongame wildlife which the department deems in need of management pursuant to this section, giving their common and scientific names by species or subspecies. The department shall conduct ongoing investigations of nongame wildlife and may from time to time amend such regulations by adding or deleting therefrom species or subspecies of nongame wildlife.
+ (B) The department shall by such regulations establish proposed limitations relating to taking, possession, transportation, exportation, processing, sale or offer for sale, or shipment as may be deemed necessary to manage such nongame wildlife.
+ Such regulation shall become effective sixty days after being proposed during which period public comment shall be solicited and received. The board may hold a public hearing if deemed appropriate. On the basis of public comments received or the testimony at any such hearing the department may make such changes in the proposed regulation as are consistent with effective management of nongame wildlife.
+ (C) Except as provided in regulations issued by the department, it shall be unlawful for any person to take, possess, transport, export, process, sell, or offer for sale or ship nongame wildlife deemed by the department to be in need of management pursuant to this section. Subject to the same exception, it shall further be unlawful for any common or contract carrier knowingly to transport or receive for shipment nongame wildlife deemed by the department to be in need of management pursuant to this section.
+
+==== S.C. Code § 50-11 small game list and § 50-11-1910(A) (https://www.scstatehouse.gov/code/t50c011.php) ====
+The following species constitute small game animals: raccoon, opossum, rabbit, squirrel, fox, quail, bobcat, beaver, mink, muskrat, skunk, otter, grouse, and weasel.
+ SECTION 50-11-1910. Sale of deer or deer parts; penalties.
+ (A) It is unlawful to buy or sell, offer for sale, barter, or have in possession for sale the following: any live deer (family cervidae), the venison of any deer except as provided in subsection (B) or in Section 50-11-1920, any whitetail deer gametes or antler velvet, or any whitetail deer antlers attached to the pedicel.
+ 
+==== S.C. Code Regs. 123-151.3, 123-151.4 and 123-152 (https://www.scstatehouse.gov/coderegs/Chapter%20123.pdf) ====
+123–151.3.                 Exchange and Transfer for Certain Native Reptiles and Amphibians.
+  A. No native reptile or amphibian, including parts, products, eggs, and derivatives may be sold,
+purchased, traded, exchanged, bartered, exported or shipped, transferred and/or re-homed, except:
+    1. Transferring possession of a native reptile or amphibian to the Department or the Depart-
+  ment’s designated recipient. The circumstances of acceptance shall be at the Department’s discretion.
+     2. Transferring possession of native reptiles or amphibians when lawfully possessed and transfer
+  is specifically authorized pursuant to other applicable federal or state laws, including those in Title
+  50. With respect to S.C. Code Section 50–16–60 this exception shall not apply and the provisions of
+S.C. Code Section 50–15–15 and the associated regulations in 123–151.3 and 123–151.4 shall have
+priority concerning possession and transfer of reptiles and amphibians.
+  3. Zoos and Aquaria maintaining accreditation or certification by the Association of Zoos and
+Aquariums, accredited research institutions under Institutional Care and Use Committees, and
+schools and educational displays open to the public may transfer and receive transferred reptiles and
+amphibians and must provide written notification to the Department specifying the number and
+species prior to transfer. Any such transfer may not be a sale, purchase, barter, or other commercial
+transaction. This exception also applies to the donor of a native reptile or amphibian to the above
+entities.
+  4.        Venom or venom derivatives obtained or produced by a laboratory.
+  5.        Any non-native phenotype (i.e. — ‘‘morph’’ or genetic mutation) of native snake species.
+  6. Any native wild phenotype of the following species reproduced in captivity and under 10
+inches in total length, eastern garter snake (Thamnophis sirtalis), mole king snake (Lampropeltis
+calligaster), and eastern milksnake (Lampropeltis triangulum).
+  7. Any native wild phenotype of the following species reproduced in captivity and under 20
+inches in total length, corn snake (Pantherophis guttatus), rat snake (Pantherophis sp.), and eastern king
+snake (Lampropeltis getula)
+  8. Any native wild phenotype of the following species reproduced in captivity and, or under 24
+inches in total length, pine snake (Pituophis melanoleucus).
+   9. The yellow-bellied slider (Trachemys scripta) species and the common snapping turtle (Chelydra
+serpentina) species if these turtles were taken from a) a permitted aquaculture facility or b) a private
+pond pursuant to a permit issued by the Department at the request of the owner or owner’s agent.
+Any person transporting more than five yellow-bellied sliders (Trachemys scripta) species or common
+snapping turtle (Chelydra serpentina) species must be in possession of a permit pursuant to which the
+turtles were taken or acquired. A person selling, offering to sell, or purchasing these species must
+have documentation from the aquaculture facility or permitted private pond as to the origin of the
+turtles.
+  10. American alligators (Alligator mississippiensis), alligator eggs, alligator parts, and alligator
+products, while subject to regulation under other provisions of Title 50.
+  11.        Bull Frogs Lithobates (Rana) catesbeianus.
+   12. Native reptiles and amphibians may be transferred to department-permitted wildlife rehabili-
+tators for the purpose of rehabilitation and release. Any transfer may not be a sale, purchase, barter,
+or other commercial transaction. Wildlife rehabilitators may be permitted by the Department by
+demonstrating the following:
+       a.        All captive reptiles and amphibians must receive proper care to ensure:
+            i.     appropriate bedding, cover, temperature regulation, and secure shelter;
+            ii.    potable water is accessible at all times or sufficient to meet daily requirements;
+            iii.    food of a quantity and nutritive value to meet normal requirements; and
+        iv. an effective program for the control of diseases, parasites, and pests is established and
+       maintained.
+       b.        Any permitted wildlife rehabilitator must show proof of veterinary care either:
+            i.     by being a licensed veterinarian; or
+         ii. with a letter from the treating or consulting veterinarian, or veterinary practice, listing the
+       permit holder and those species for which the veterinary practice will provide treatment or
+       consultation.
+     c. Providing an annual report documenting all reptiles and amphibians transferred to the
+  permitted individual or facility and from the permitted individual or facility and will describe the
+  final disposition of each individual.
+  13. Native American Indian tribes recognized Federally or by the State of South Carolina’s
+Commission for Minority Affairs, pursuant to S.C. Code Section 1–31–60, and their members may
+transfer possession of parts of dead native reptiles when such parts are or will be incorporated in
+  Native American cultural items and religious items, including but not limited to regalia, decorative
+  attire, religious items, and musical instruments. This exception does not apply to live animals.
+  B. An otherwise lawful collection of native reptiles or amphibians may be exported from the State
+of South Carolina if an export permit is first obtained from the Department. Export permits are only
+available when an individual or legal entity is permanently relocating to another state.
+  C. Temporary export permits for native reptiles and amphibians may be granted at the discretion
+of the Department for the purposes of education, rehabilitation, and conservation where the animals
+will return to their state of origin.
+  D. Any state endangered or threatened and in need of management species are subject to the
+protections provided by S.C. Code Sections 50–15–10, et seq. and shall not be possessed or transferred
+except by permit issued by the Department.
+  E.   The penalties for violation of this regulation are prescribed in S.C. Code Section 50–15–80.
+HISTORY: Added by SCSR 45–5 Doc. No. 5007, eff May 28, 2021.
+
+
+123–151.4.         Possession Limits for Certain Native Reptiles and Amphibians.
+ A. A person shall not possess any species listed as endangered or threatened and in need of
+management pursuant to S.C. Code Sections 50–15–10, et seq. except by permit issued by the
+Department.
+  B.   A person shall not possess more than 10 native turtles in aggregate.
+  C. Any person in possession of more than 10 native turtles and in excess of the established
+possession limits as of September 28, 2020 has 90 days from September 28, 2020 to register with the
+Department the current number by species of native turtles, both wild-caught and captive born, in
+their possession. No additional turtles may be acquired until such time as the number of turtles in
+possession is below the limit set in regulation.
+   D. A person shall not possess more than 2 eastern box turtles (Terrapene carolina). Any person in
+possession of eastern box turtles in excess of the established possession limits as of September 28, 2020
+has 90 days from September 28, 2020 to register with the Department the current number of eastern
+box turtles, both wild-caught and captive born, in their possession. No new turtles may be acquired
+until such time as the number of turtles in possession is below the limit set in regulation. Registered
+turtles will be assigned a unique identification number and must be shell notched with the identifica-
+tion number provided.
+    1. Permit applicants will shell notch turtles in their possession as prescribed by the Department
+  with the Department issued identification numbers. Permit applicants must provide evidence of
+  applied shell notches and signed affidavit confirming all individual turtles in their possession were
+  shell notched as directed by the Department and that they understand the regulations as they
+  pertain to eastern box turtles. Upon completion, the Department will issue a permit for the
+  registered box turtles.
+    2. Box turtle permit holders will be required to submit an annual report on the status and
+  number of registered box turtles on a Department provided form.
+  E. A person shall not possess more than 2 diamondback terrapins (Malaclemys terrapin). This
+provision does not prohibit the incidental catch of diamondback terrapins by persons engaged in a
+lawful fishery when the terrapins are returned immediately to the water.
+   F. A person shall not possess more than 5 turtles total from any of the following species/subspecies:
+Florida cooter (Pseudemys floridana), river cooter (Pseudemys concinna), chicken turtle (Deirochelys reticula-
+ria), eastern painted turtle (Chrysemys picta), spiny softshell turtle (Apalone spinifera), Florida softshell
+turtle (Apalone ferox), eastern mud turtle (Kinosternon subrubrum), striped mud turtle (Kinosternon bauri),
+common musk turtle (Sternotherus odoratus), yellow-bellied slider (Trachemys scripta) and common
+snapping turtle (Chelydra serpentina). The above limit does not apply to the lawful possession of yellow-
+bellied slider (Trachemys scripta) species and the common snapping turtle (Chelydra serpentina) species
+pursuant to Regulation 123–151.3.
+  G. The Department may issue scientific collection permits as described in Regulation 123–150.3 in
+excess of the above limits for scientific and conservation purposes.
+  H. Zoos and Aquaria maintaining accreditation or certification by the Association of Zoos and
+Aquariums, accredited research institutions under Institutional Care and Use Committees, schools and
+educational displays open to the public, and Department permitted wildlife rehabilitators may request
+a permit to exceed the above listed possession limits at the discretion of the Department.
+  I. Pursuant to S.C. Code Section 50–15–15(B), no native reptiles or amphibians may be possessed
+or transferred pursuant to S.C. Code Section 50–16–60 except as provided in Regulations 123–151.3
+and 123–151.4.
+  J.    The penalties for violation of this regulation are prescribed in S.C. Code Section 50–15–80.
+HISTORY: Added by SCSR 45–5 Doc. No. 5007, eff May 28, 2021.
+
+123–152.              Regulations for Nonnative Wildlife.
+  A. The Department has determined that the species designated as Restricted Nonnative Wildlife
+have the potential to become established in this State in sufficient numbers so as to become a nuisance
+and pose a demonstrable deleterious and widespread threat to wildlife, agriculture, or human health
+and safety. As used in this regulation, Restricted Nonnative Wildlife and the associated Listing Date
+are:
+    1. Black and White Tegu (Salvator merianae and, as used in this regulation, their hybrids) (listing
+  date: May 28, 2021)
+  B. Unless otherwise authorized by the Department, no person, firm, corporation, partnership,
+association, or any other entity shall possess, sell, offer for sale, transfer possession of, import, bring,
+release, reproduce, allow to escape, or cause to be brought or imported into the State of South
+Carolina any Restricted Nonnative Wildlife. Pursuant to the Department’s authority to regulate
+nonnative wildlife under S.C. Code Section 50–15–55, the provisions of S.C. Code Section 50–16–60 do
+not apply to Restricted Nonnative Wildlife.
+  C. The Department may issue a permit for the possession, import, release, reproduction, and
+transfer of Restricted Nonnative Wildlife for scientific and other special purposes at its discretion,
+provided that any such permit shall be conditioned to minimize risks of the hazardous exposure,
+release and proliferation of the Restricted Nonnative Wildlife.
+  D.        Additional provisions for specific Restricted Nonnative Wildlife
+       1.     Black and White Tegu
+         i. A person, firm, corporation, partnership, association, or any other entity possessing a Black
+       and White Tegu has 120 days from the listing date, the Registration Period, to register the total
+       number of Black and White Tegu in their possession with the Department and obtain a permit, as
+       conditioned herein, in order to retain the registered animals. During the Registration Period,
+       Black and White Tegus may be possessed, bought, sold, or transferred but may not be imported,
+       brought, released, reproduced, or allowed to escape in South Carolina.
+         ii. All Black and White Tegus must be microchipped with a unique identification number, at
+       the owner’s expense. The unique identification number must be supplied to the Department at the
+       time of registration and to receive a permit.
+         iii. Permits for registered animals are valid for three years and must be renewed within 30 days
+       of expiration. After the Registration Period, no Black and White Tegu may be possessed without a
+       permit issued by the Department. Permits may not be transferred. If Black and White Tegus are
+       removed from South Carolina, the permit becomes void and must be surrendered to the
+       Department within five days.
+            iv.   Reproduction of permitted Black and White Tegus is not allowed.
+         v. Black and White Tegus must be kept indoors in escape proof enclosures, or outdoors in
+       locked enclosures with primary and secondary containment barriers, each sufficient to prevent
+       escape.
+         vi. Escaped or missing Black and White Tegus must be reported to the Department within 24
+       hours.
+         vii. Upon death of the Black and White Tegu, possession permits become void and must be
+       surrendered to the Department within five days.
+  E. Failure to comply with permit terms and conditions is a violation of these regulations. Violations
+of these regulations are subject to the penalties and enforcement provisions of S.C. Code Section
+50–15–80.
+HISTORY: Added by SCSR 45–5 Doc. No. 5027, eff May 28, 2021.

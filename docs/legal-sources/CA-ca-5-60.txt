@@ -1,0 +1,165 @@
+# 14 CCR § 5.60, reptiles, from CDFW's 2026 Freshwater Sport Fishing Regulations booklet
+
+sourceId: ca-5-60
+jurisdiction: CA
+url: https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=209090&inline=
+fetched: 2026-10-08
+fetch notes: curl works; pdftotext -layout. The booklet is two-column, so the section's columns interleave with
+the neighboring sections (lamprey, landlocked salmon and so on) in the extract below. Updated 07/10/2026.
+
+Extracted text follows verbatim. This is a cache of the primary source, not a
+substitute for it. Re-fetch before relying on it for a new verification date.
+
+----------------------------------------------------------------------
+
+Updated 07/10/2026                                                12
+
+                  2026 FRESHWATER SPORT FISHING REGULATIONS
+                                        GENERAL INFORMATION
+Residency                                                     Telephone Number Required for Angler
+A resident is defined as: any person who has resided          Surveys
+continuously in California for six months or more             Anglers are required to provide their telephone number
+immediately before the date of application for a license,     when purchasing a sport fishing license. Collection of
+or any person on active military duty with the armed          telephone numbers allows California to comply with a
+forces of the United States, or an auxiliary branch, or a     federal mandate for purposes of establishing a National
+Job Corps enrollee. (FGC, Section 70)                         Saltwater Angler Registry and will prevent California anglers
+                                                              from having to pay an additional registration fee each
+License Provisions                                            year to the federal government. (CCR T-14, Section 700.3)
+Any person who is 16 years of age or older must have
+a sport fishing license to take any kind of fish, mollusk,    License Formats
+invertebrate, amphibian or crustacean in California,          Licenses issued through the Automated License Data
+
+[...]
+
+Body or Bodies of Water                      Bag Limit         (in the Hat Creek Drainage in Shasta County), Fall
+Oak Grove Regional Park Lake in Stockton.       10             River upstream of Spring Creek Bridge, Lava Creek,
+                                                               Tule River and all connected waters upstream of Little
+(11) Santa Clara County                                        Tule River, Sucker Springs Creek, Crystal Lake, Rising
+Body or Bodies of Water                      Bag Limit         River and Rising River Lake are closed to take and
+                                                               possession of crayfish. (See Section 4.30 for prohibition
+All waters.                                      5
+                                                               against crayfish use for bait in sections of the Pit
+(c) Carcasses:                                                 River).
+In the Colorado River and its backwaters, the carcasses    (e) The season closures in Chapter 3 (District Trout and
+of all catfish and bullheads imported, possessed or            Salmon Special Regulations) do not apply to crayfish
+transported must have either the head, tail or skin            fishing with methods other than hook and line (see
+attached so that the species can be identified and             sections 7.00 and 7.50(a)(3)).
+numbers can be determined until such fish are being
+prepared for immediate consumption.                        Grass Carp (T14 CCR §5.37)
+                                                           (a) No grass carp may be taken or possessed at any
+                                                               time, except that any grass carp inadvertently taken
+                                                               must be immediately returned unharmed to the
+                                                               water.
+Updated 07/10/2026                                        28
+
+                   2026 FRESHWATER SPORT FISHING REGULATIONS
+                                           SPECIES REGULATIONS
+(b) Exception for Siskiyou and Shasta Counties for any         as soon as possible, but not more than 24 hours after taking
+    waters, within the Sacramento River drainage above         the northern pike. The angler shall maintain the head
+    and including Lake Shasta: All grass carp taken shall      and body of the fish in a refrigerated or frozen condition,
+    be killed immediately by removing the head and             whenever possible, until CDFW collects the northern pike.
+    shall be retained by the angler. The angler shall notify
+    CDFW that he/she has taken and possesses a grass
+    carp by calling the department’s telephone number
+                                                               Reptiles (T14 CCR §5.60)
+                                                               (a) Only the following reptiles may be taken under the
+    (1-530-225-2278) as soon as possible, but not more
+                                                                   authority of a sportfishing license, subject to the
+    than 24 hours after taking the grass carp.
+                                                                   restrictions in this section. No sportfishing license is
+Lamprey (T14 CCR §5.40)                                            required for the sport take of any rattlesnake, but
+(a) Open season: All year, except for closures listed              bag and possession limits do apply. No reptiles shall
+    under district or special regulations.                         be taken from ecological reserves designated by
+(b) Limit: Five.                                                   the commission in Section 630 or from state parks, or
+(c) Methods of take: Lamprey may be taken only by                  national parks or monuments.
+    hand, hook and line, spear, bow and arrow fishing          (b) Limit: The limit for each of the species listed below is
+    tackle, or dip net.                                            two, unless otherwise provided. Limit, as used in this
+(d) The season closures in Chapter 3 (District Trout and           section, means daily bag and possession limit.
+    Salmon Special Regulations) do not apply to lamprey        (1) Painted turtle (Chrysemys picta): Limit: No limit.
+    fishing with methods other than hook and line (see         (2) Pond slider (Trachemys scripta): Limit: No limit.
+    sections 7.00 and 7.50(a)(3)).                             (3) Spiny softshell (Apalone spinifera): Limit: No limit.
+                                                               (4) Western banded gecko (Coleonyx variegatus),
+Landlocked Salmon (T14 CCR §5.41)                                  except San Diego banded gecko (Coleonyx
+(a) Open season: All year.                                         variegatus abbotti): See Special Closure (f)(1)
+(b) Daily bag limit: Five.                                     (5) Desert iguana (Dipsosaurus dorsalis)
+(c) Possession limit: Ten.                                     (6) Common chuckwalla (Sauromalus ater)
+(d) Size limit: None.                                          (7) Zebra-tailed lizard (Callisaurus draconoides)
+(e) Exceptions:                                                (8) Desert spiny lizard (Sceloporus magister)
+   (1) Bucks Lake (Plumas Co.), New Bullards Bar Reservoir     (9) Granite spiny lizard (Sceloporus orcutti)
+        (Yuba Co.), Pardee Lake (Amador Co.), and Trinity      (10) Western fence lizard (Sceloporus occidentalis): Limit:
+        Lake (Trinity Co.), which shall be subject to the          Species No. 10 -14 have a limit of twenty-five (25) in
+        following limits:                                          the aggregate
+    (A) Daily bag limit: Ten.                                  (11) Common sagebrush lizard (Sceloporus graciosus):
+    (B) Possession limit: Twenty.                                  Limit: Species No. 10-14 have a limit of twenty-five
+                                                                   (25) in the aggregate
+Marine Fin Fish, Mollusks and                                  (12) Common side-blotched lizard (Uta stansburiana):
+Crustaceans (T14 CCR §5.45)                                        Limit: Species No. 10-14 have a limit of twenty-five
+Marine fin fish, mollusks and crustaceans taken in lagoons         (25) in the aggregate
+and tidal waters are subject to the bag and possession         (13) Western skink (Plestiodon skiltonianus): Limit: Species
+limits established for the Ocean and San Francisco Bay             No. 10-14 have a limit of twenty-five (25) in the
+District (beginning with Section 27.00).                           aggregate
+                                                               (14) Desert night lizard (Xantusia vigilis), except Sierra
+See the Ocean Sport Fishing Regulations booklet.                   night lizard (Xantusia (vigilis) sierrae): See Special
+                                                                   Closure (f)(2): Limit: Species in subsections (10)
+Mountain Whitefish (T14 CCR §5.50)                                 through (14) have a limit of twenty-five (25) in the
+(a) Open season: No mountain whitefish may be taken in             aggregate
+    any water except when trout may be taken in such           (15) Long-tailed brush lizard (Urosaurus graciosus)
+    water.                                                     (16) Ornate tree lizard (Urosaurus ornatus)
+(b) Limit: Five.                                               (17) Baja California brush lizard (Urosaurus nigricaudus)
+                                                               (18) Desert horned lizard (Phrynosoma platyrhinos)
+Northern Pike (T14 CCR §5.51)                                  (19) Pygmy short-horned lizard (Phrynosoma douglasii)
+No northern pike, dead or alive, may be released into any      (20) Great Basin collared lizard (Crotaphytus bicinctores)
+water at any time. All northern pike taken shall be killed     (21) Mearns’ rock lizard (Petrosaurus mearnsi)
+immediately by removing the head and shall be retained         (22) Baja California collared lizard (Crotaphytus
+by the angler. The angler shall notify CDFW that he/she            vestigium)
+has taken and possesses a northern pike by calling the         (23) Long-nosed leopard lizard (Gambelia wislizenii)
+department's CalTIP telephone number (1-888-DFW-CALTIP)        (24) Gilbert’s skink (Plestiodon gilberti)
+
+                                                           29                                        Updated 07/10/2026
+
+                   2026 FRESHWATER SPORT FISHING REGULATIONS
+                                           SPECIES REGULATIONS
+(25) Tiger whiptail (Aspidoscelis tigris)                           (60) Mohave rattlesnake (Crotalus scutulatus)
+(26) Southern alligator lizard (Elgaria multicarinata)              (61) Western rattlesnake (Crotalus oreganus)
+(27) Northern alligator lizard (Elgaria coerulea)                   (62) Speckled rattlesnake (Crotalus mitchellii)
+(28) Northern rubber boa (Charina bottae): See Special              (63) Sidewinder (Crotalus cerastes)
+    Closure (f)(3)                                                  (64) Panamint rattlesnake (Crotalus stephensi)
+(29) Northern three-lined boa (Lichanura orcutti)                   (65) Red diamond rattlesnake (Crotalus ruber): Limit: Zero (0)
+(30) Ring-necked snake (Diadophis punctatus), except                (c) Open season: All year.
+    Regal ring-necked snake (Diadophis punctatus                    (d) Hours: Reptiles may be taken at any time of day or
+    regalis): See Special Closure (f)(4)                                 night.
+(31) Common sharp-tailed snake (Contia tenuis)                      (e) Methods of take:
+(32) Forest sharp-tailed snake (Contia longicauda)                     (1) Reptiles may be taken only by hand, except as
+(33) Spotted leaf-nosed snake (Phyllorhynchus                               provided in subsections (e)(2) and (3) below, or
+    decurtatus)                                                             by the following hand-operated devices:
+(34) North American racer (Coluber constrictor)                          (A) Lizard nooses.
+(35) Coachwhip (Coluber flagellum), except San                           (B) Snake tongs.
+    Joaquin Coachwhip (Coluber (Masticophis)                             (C) Snake hooks.
+    flagellum ruddocki): See Special Closure (f)(5)                    (2) Rattlesnakes may be taken by any method.
+(36) Striped whipsnake (Coluber taeniatus)                             (3) Turtles may be taken by hook and line. Fishing
+(37) Striped racer (Coluber lateralis), except Alameda                      methods described in Section 2.00 apply to the
+    striped racer (whipsnake) (Coluber (Masticophis)                        take of spiny softshell turtles, slider turtles and
+    lateralis euryxanthus): See Special Closure (f)(6)                      painted turtles.
+(38) Western patch-nosed snake (Salvadora hexalepis),                  (4) It is unlawful to use any method or means of
+    except coast patch-nosed snake (Salvadora                               collecting that involves breaking apart of rocks,
+    hexalepis virgultea): See Special Closure (f)(7)                        granite flakes, logs or other shelters in or under
+(39) Glossy snake (Arizona elegans), except California                      which reptiles may be found.
+    glossy snake (Arizona elegans occidentalis): See
+    Special Closure (f)(8)                                          (f) Special Closures:
+(40) Gophersnake (Pituophis catenifer): Limit: Four (4)                 (1) No geckos (Coleonyx variegatus) may be
+(41) California kingsnake (Lampropeltis californiae): Limit:                taken in San Diego County south and west of
+    Four (4)                                                                Highway 79 to its junction with County Road S-2,
+(42) California mountain kingsnake (Lampropeltis                            and south and west of County Road S-2 to the
+    zonata), except San Diego mountain kingsnake                            eastern San Diego County border.
+    (Lampropeltis zonata pulchra) and San Bernardino                    (2) No night lizards (Xantusia vigilis) may be taken in
+    mountain kingsnake (Lampropeltis zonata                                 Kern County.
+    parvirubra): Limit: One (1). See Special Closure: (f)               (3) No rubber boas (Charina bottae or Charina
+    (9)                                                                     umbratica) may be taken in Kern, Los Angeles,
+(43) Long-nosed snake (Rhinocheilus lecontei)                               Riverside, and San Bernardino counties.
+(44) Common gartersnake (Thamnophis sirtalis),                          (4) No ring-necked snakes (Diadophis punctatus)
+    except San Francisco gartersnake (Thamnophis                            may be taken in San Bernardino and Inyo
+    sirtalis tetrataenia) and South Coast gartersnake                       counties.
+    (Thamnophis sirtalis spp.): See Special Closure (f)(10)             (5) No coachwhips (Coluber flagellum) may be
+(45) Terrestrial gartersnake (Thamnophis elegans)                           taken in the following counties: Alameda,
+(46) Sierra gartersnake (Thamnophis couchii)                                Contra Costa, Fresno, Kern, Kings, Merced,
+(47) Aquatic gartersnake (Thamnophis atratus)                               Monterey, San Benito, San Joaquin, San Luis

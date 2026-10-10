@@ -1,0 +1,116 @@
+# Kentucky: 301 KAR 2:082 §§ 5 and 6, 301 KAR 2:083 (captive cervids), 301 KAR 2:081 § 9 enclosure rows, KDFWR reptile checklist
+
+sourceId: ky-301-2-082
+jurisdiction: KY
+url: https://apps.legislature.ky.gov/law/kar/titles/301/002/082/
+fetched: 2026-10-08
+fetch notes: Plain curl of the KAR pages (first, engrossed copy sliced) and the KDFWR reptiles page. Companion to KY-ky-exotic-and-native.txt: adds the 13 July 2005 grandfather for inherently dangerous exotics, the captive cervid permit and its closed noncommercial class, and the native pit viper list.
+
+Extracted text follows verbatim. This is a cache of the primary source, not a
+substitute for it. Re-fetch before relying on it for a new verification date.
+
+----------------------------------------------------------------------
+
+==== 301 KAR 2:082 §§ 5 and 6 (apps.legislature.ky.gov/law/kar/titles/301/002/082/) ====
+Section 5. Exemptions. (1) A facility that is accredited by the Association of Zoos and Aquariums
+shall: (a) Not be required to obtain a transportation permit for exotic wildlife; (b) Be allowed to
+import, possess, and transport into Kentucky federally endangered species and the prohibited exotic
+species listed in Section 4 of this administrative regulation for official zoo activities; and (c)
+Maintain prohibited exotic species in an enclosure sufficient to prevent escape and direct contact
+with the public. (2) Commissioner's exemption. (a) Upon written request, the commissioner shall
+consider an exemption for importation, transportation into Kentucky, or possession of the prohibited
+species listed in Section 4 of this administrative regulation. (b) The commissioner shall only grant
+exemptions that promote and further the purposes of KRS Chapter 150. (c) Only the following entities
+shall be eligible for an exemption by the commissioner: 1. A facility that is designated as the
+official zoo of a municipality; 2. A college or university conducting research or education that
+fulfills a classroom requirement; 3. A lawfully operated circus only importing or possessing
+inherently dangerous exotic wildlife species that are not federally endangered, as listed in the
+Endangered and Threatened Species Act list, 50 C.F.R. 17.11; 4. A facility previously granted an
+exemption by the commissioner for the purpose of housing confiscated wildlife and serving as an
+animal holding facility as a service to the department; and 5. A facility previously granted a
+commissioner's exemption, as a licensed or accredited institute of education or research, that
+houses prohibited species at a permanent wildlife facility for educational or research purposes.
+Section 6. Prohibited Species Requirements. (1) Prohibited exotic species imported, transported into
+Kentucky, or possessed shall be maintained within an enclosure sufficient to prevent: (a) Escape;
+and (b) Direct contact with the public. (2) A person shall obtain a valid transportation permit to
+temporarily transport into Kentucky a prohibited animal listed in Section 4(2) of this
+administrative regulation and shall not: (a) Remain in Kentucky in excess of forty-eight (48) hours;
+(b) Stop in Kentucky for exhibition purposes; or (c) Sell, trade, gift, barter, offer for sale,
+trade, gift, barter, or profit in any way from a prohibited animal while in Kentucky. (3) Except for
+Lynx, a person who legally possessed wildlife listed in Section 4(2) of this administrative
+regulation prior to July 13, 2005, may continue to possess the animal through the life of the animal
+and shall maintain: (a) Veterinary records; (b) Acquisition papers for the animal; or (c) Any other
+evidence that establishes that the person possessed the animal in Kentucky prior to July 13, 2005.
+(4) Lynx legally held in Kentucky prior to December 1, 2021, may be allowed to remain in possession
+of the owner through the life of the animal. The owner shall maintain: (a) Veterinary records; (b)
+Acquisition papers for the animal; or (c) Any other evidence that establishes that the person
+legally possessed the animal in Kentucky prior to December 1, 2021. (5) Without an exemption
+pursuant to Section 5 of this administrative regulation, a person who legally possesses wildlife
+pursuant to subsection (3) or (4) of this section shall not: (a) Replace the wildlife after its
+death; (b) Allow the wildlife to reproduce; or (c) Transfer wildlife to other persons, except if the
+owner predeceases the animal, the animal may be transferred to another person with the approval of
+the department's Wildlife Division Director. (6) If exotic wildlife listed in Section 4 of this
+administrative regulation escapes, the owner shall immediately contact local emergency services and
+the department at 800-252-5378 to report the escape. (7) All bites, as established in KRS 258.065,
+or contact with applicable exotic animals that results in possible exposure to disease or zoonotic
+infection, shall be reported to the local county health department within twelve (12) hours. (8) If
+an exotic mammal bites a person or a mammal shows symptoms of a rabies infection, the owner of the
+animal shall arrange for the animal to be killed in a manner as to preserve the brain intact, and
+the animal's head shall be submitted for testing immediately to a laboratory approved by the
+Secretary of the Cabinet for Health and Family Services to be tested for rabies, as established in
+902 KAR 2:070, Section 5 and KRS 258.085(1)(c).
+
+==== 301 KAR 2:083 § 1, and §§ 7 and 8(1) to (9) (apps.legislature.ky.gov/law/kar/titles/301/002/083/) ====
+Section 1. Definitions. (1) "Approved laboratory" means: (a) The National Veterinary Service
+Laboratory in Ames, Iowa; or (b) Any other laboratory approved by the Administrator of the Animal
+and Plant Health Inspection Service of the United States Department of Agriculture. (2) "Captive
+cervid" means a cervid that is privately owned, born, and raised in captivity, and not considered
+wildlife as established in KRS 150.010. (3) "Captive cervid permit" means a permit issued by the
+Kentucky Department of Fish and Wildlife Resources that authorizes the holding of cervids in
+captivity, with the exception of shooting areas, which are permitted under 301 KAR 2:041. (4)
+"Cervid" is defined by KRS 150.010(4). (5) "Chronic Wasting Disease" or "CWD" means a transmissible
+spongiform encephalopathy found in cervids. (6) "Flop tag" means a commercial plastic ear tag used
+to identify livestock. (7) "Line post" means a post in a fence that is not a corner or end post. (8)
+"Noncommercial captive cervid permit" means a permit issued prior to March 1, 2016, that allows a
+person to possess captive cervids that are not intended for sale, offered for sale, traded, or
+bartered.
+
+Section 7. Prohibited Species. Except for cervids legally held prior to November 12, 2002, a captive
+cervid permit shall not be issued for the species established in subsections (1) through (4) of this
+section: (1) Genus Cervus spp., except Cervus elaphus nelsoni; (2) Genus Axis spp.; (3) Roe deer
+(Capreolus and Capreolus pygarus); or (4) Hybrids of any of the species named in subsections (1)
+through (3) of this section. Section 8. Captive Cervid Permits. (1) Permit application and issuance.
+An application for a new or renewed captive cervid permit shall be processed in accordance with the
+provisions of KRS 150.730. (2) A captive cervid permit shall be valid only for the property and
+facility identified in the application and that is inspected as established in subsection (11) of
+this section. A cervid shall not be moved into a new or expanded facility until the facility has
+been issued a captive cervid permit by the department. (3) Zoos and other facilities fully
+accredited by and in good standing with the American Zoo and Aquarium Association shall not be
+required to obtain or renew a captive cervid permit, but facilities not accredited by the American
+Zoo and Aquarium Association shall be required to obtain and renew a captive cervid permit. (4) A
+captive cervid permit shall be required for a facility owned or leased by a person wishing to hold
+captive cervids. (5) A new noncommercial captive cervid permit shall not be issued to a facility
+after February 28, 2016. (6) All wild cervids shall be removed from the facility prior to initial
+inspection. (7) A permit shall identify the species of cervids being held. (8) Duration. (a) A
+captive cervid permit shall be valid for one (1) year beginning March 1 through the last day of
+February and may be renewed annually upon payment of the annual fee, established in 301 KAR 5:022,
+and proof of compliance with all applicable statutes and administrative regulations. (b) A
+noncommercial captive cervid permit shall be valid for three (3) years beginning March 1 through the
+last day of February and may be renewed every third year upon payment of the fee and proof of
+compliance with all applicable statutes and administrative regulations. (9) A holder of a
+noncommercial captive cervid permit prior to March 1, 2016, shall be allowed to hold captive cervids
+for the life of the animals, after which the permit shall not be valid.
+
+==== 301 KAR 2:081 § 9 enclosure rows (f) and (g) (apps.legislature.ky.gov/law/kar/titles/301/002/081/) ====
+(f) A gray squirrel, fox squirrel, or flying squirrel shall be held in an enclosure that meets the
+requirements established in subparagraphs 1. and 2. of this paragraph. 1. A single animal enclosure
+shall be 4 ft. x 4 ft. x 8 ft. 2. There shall be an increase in floor space by two (2) square feet
+for each additional animal. (g) A skunk, opossum, rabbit, or woodchuck shall be held in an enclosure
+that meets the requirements established in subparagraphs 1. through 3. of this paragraph. 1. A
+single animal enclosure shall be at least 6 ft. x 8 ft. x 8 ft. 2. There shall be an increase in
+floor space by at least four (4) square feet for each additional animal. 3. A woodchuck shall have
+several gnawing logs approximately six (6) inches in diameter.
+
+==== KDFWR Reptiles page, snakes heading (https://fw.ky.gov/Wildlife/Pages/Reptiles.aspx) ====
+SNAKES - For more information, please check our Snakes of Kentucky page. Pit Vipers (4) Eastern
+Copperhead Northern Cottonmouth Timber Rattlesnake Western Pigmy Rattlesnake

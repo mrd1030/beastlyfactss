@@ -1,0 +1,240 @@
+# Arkansas Game and Fish Commission Code Book (as of 1 July 2025): Codes 09.07, 09.17, 12.01, 12.02, Addendum F1.08(A)-(B) and Addendum R1.02 reptiles
+
+sourceId: ar-code-0900
+jurisdiction: AR
+url: https://agfc-omnibus.s3.amazonaws.com/eregs/regulation_pdfs/large/agfc_regulations_codebook_large.pdf
+fetched: 2026-10-08
+fetch notes: Plain curl from AGFC's S3 bucket, pdftotext -layout. Companion to AR-ar-agfc-codebook.txt and AR-ar-addenda-mammals.txt, which hold Chapter 09.00 and the mammal rows; R1.03's reptile rows are in AR-ar-addenda-mammals.txt.
+
+Extracted text follows verbatim. This is a cache of the primary source, not a
+substitute for it. Re-fetch before relying on it for a new verification date.
+
+----------------------------------------------------------------------
+
+==== 09.07 Wildlife Breeder/Dealer Permit Required ====
+09.07 Wildlife Breeder/Dealer Permit Required
+It is unlawful to rear, breed, propagate, produce, distribute, sell, or offer for
+sale any wildlife in Arkansas without first obtaining a valid Wildlife Breeder/
+Dealer Permit from the Commission (Addendum F1.03).
+
+
+EXCEPTIONS:
+
+A. Fish, bullfrogs, mussels, aquatic turtles and alligators in compliance
+    with Code 09.06 and Chapters 29.00, 30.00, 31.00, 32.00, 33.00,
+    34.00, 35.00.
+B. Red fox, gray fox and coyote legally trapped in Arkansas may be sold
+    by persons with a valid Live Fox and Coyote Permit, hunting license
+    and trapping permit.
+C. Accredited members of the Association of Zoos and Aquariums.
+D. Holders of U.S. Fish and Wildlife Service Raptor Propagation Permits
+    may propagate, distribute, and sell raptors without a Commission
+    Wildlife Breeder/Dealer Permit.
+E. Holders of Game Bird Shooting Resort Permits do not need a Wildlife
+    Breeder/Dealer Permit if the holder is breeding game birds solely for
+    the use of the permitted resort unless the permit holder will be
+    distributing, selling, or offering for sale, game birds or other wildlife.
+F. No Wildlife Breeder/Dealer Permit is necessary for wildlife listed in
+    Addendum R1.01. No permit will be issued for wildlife listed in
+    Addendum R1.03.
+G. In compliance with Code 09.15.
+H. Terrestrial invertebrate species not otherwise prohibited by this Code
+    or by federal or state regulations.
+ I. Arkansas residents may sell or transfer up to twenty (20) individual
+    wildlife specimens listed in Addendum R1.02 per calendar year that
+    were acquired from a permitted Wildlife Breeder/Dealer or imported
+    with a valid Wildlife Importation Permit provided except for large
+    carnivores, mountain lions, primates, any member of the Cervidae
+    family or any species listed in Code Addendum F1.03 Sections (B)(4)
+    and (C)(5). Each sale or transfer must be registered by the seller with
+    the Commission. Registered wildlife may be subsequently sold or
+    transferred in accordance with the preceding sentence.
+ J. Persons with fewer than 100 northern bobwhite that are possessed
+    and bred solely for personal consumption and are not sold or
+    otherwise transferred from the facility. Northern bobwhite for these
+    facilities may only be acquired from a Commission-permitted Wildlife
+    Breeder/Dealer or imported into the state in accordance with a
+    Wildlife Importation Permit.
+
+PENALTY: Class 3
+
+A. Any person convicted of violating this regulation shall be liable for the
+   costs accrued in the storage, care, and maintenance of any equipment
+   or wildlife seized in connection with the violation.
+
+
+                                                                                    97
+                                     As of July 1, 2025
+
+
+==== 09.17 Venomous Reptile Possession Permit Required ====
+09.17 Venomous Reptile Possession Permit
+Required
+It is unlawful to possess any medically significant venomous reptile after
+July 1, 2021, whether native or non-native to Arkansas, without obtaining a
+valid Venomous Reptile Permit issued by the Commission and complying
+with all permit requirements in Addendum F1.08. Persons who have
+submitted a permit application on or before July 1, 2021, may continue to
+possess existing stock while the application is being processed.
+
+
+EXCEPTIONS:
+
+A. Medically significant venomous reptiles may be transported through
+   Arkansas in accordance with a valid Commission-issued Wildlife
+   Importation Permit.
+B. No permit is required for native venomous reptiles being kept in
+   accordance with Code 09.14.
+C. No permit is required for accredited members of the Association of
+   Zoos and Aquariums.
+D. No permit is required for persons possessing native venomous reptiles
+   captured in accordance with a Commission Scientific Collection
+   Permit.
+E. No permit is required for persons possessing native venomous reptiles
+   in accordance with a Commission Conservation Education Permit.
+
+PENALTY: Class 3
+
+
+
+==== 12.01 and 12.02 ====
+ 12.01 Taking Of Alligator Prohibited
+  It is unlawful to hunt, buy, sell or possess an American alligator (Alligator
+  mississippiensis) or other crocodilian species, or any part, nest or eggs.
+
+  EXCEPTIONS:
+
+   A. Any alligator or other crocodilian species seized or otherwise acquired
+      by the Commission may be sold.
+   B. Any cured and mounted trophies and articles manufactured from the
+      lawfully acquired skins or hides or other parts of any alligator or other
+      crocodilian species.
+   C. An alligator may be possessed for display and educational purposes in
+      compliance with a written permit issued by the Chief of Fisheries.
+      Only established facilities such as state and federal parks, zoos,
+      aquariums, commercial or privately operated nature centers or similar
+      entities may possess alligators or other crocodilian species for public
+      display or bona fide educational purposes in compliance with a letter
+      of authorization issued by the Chief of Fisheries (facilities accredited
+      by the Association of Zoos and Aquariums are exempt).
+   D. Personnel authorized by the Commission and engaged in the removal
+      of nuisance alligators in compliance with the current AGFC Nuisance
+      Alligator Procedure.
+   E. In compliance with Codes 05.01,12.03, and Addendum A1.10.
+
+  PENALTY: Class 3
+
+ 12.02 Possession Of Alligator Permit Required
+   A. It is unlawful for any person to hunt or possess an alligator without
+      first obtaining the required permit or special tag issued by the
+      Commission prior to the activity.
+   B. It is unlawful for any person to fail to fully comply with all provisions
+      of his or her alligator permit and special tag.
+
+  PENALTY: Class 2
+
+
+
+
+                                                                                  113
+                                      As of July 1, 2025
+
+==== Addendum F1.08(A), (B) ====
+F1.08 Venomous Reptile Possession Permit
+Requirements
+A. Permit Requirements: A Venomous Reptile Permit may be issued to
+   applicants complying with the following requirements:
+   1. The applicant must be at least 18 years old and shall not have
+      been convicted of, or entered a plea of guilty or nolo contendere
+      for, violating any federal, state or municipal law governing
+      captive wildlife, illegal appropriation or commercialization of
+      wildlife, or cruelty to animals within 5 years of the application
+      date.
+   2. The applicant shall provide to the Commission, in writing, proof
+      from the appropriate county or municipal jurisdiction, stating
+      that the applicant’s possession of medically significant
+      venomous reptiles is in compliance with all local ordinances.
+   3. The applicant shall submit a written application (available from
+      the Commission) for each facility to be permitted
+   4. Other conditions as set forth in the Venomous Reptile Possession
+      Permit.
+B. The requested permit shall be denied if:
+   1. The applicant fails to meet any of the issuance criteria set forth
+      in this Addendum chapter;
+   2. The applicant fails to disclose material information required, or
+      makes false statements as to any material fact in connection
+      with the application, or supplies false information or makes a
+      false statement on the application;
+   3. The Commission finds, through further inquiry or investigation,
+      the issuance of the permit may pose a significant risk to human
+      health and safety, native fish and wildlife health or populations,
+      or agriculture, or the proposed species cannot be safely
+      confined in a humane manner.
+   4. The species requested in the application are listed in Addendum
+      R1.03.
+C. Caging and Facility Requirements: Venomous Reptile Possession
+   Permittees shall provide secure housing of all medically significant
+   venomous reptiles as defined herein:
+   1. Animal enclosures whether manufactured or constructed (e.g.,
+
+==== Addendum R1.02(A)(4) Reptiles and R1.02(B) ====
+4. Reptiles
+    ▪ Lizards
+       ▪ Beaded Lizards, Gila Monster (Genus Heloderma)
+       ▪ Collared Lizards, Leopard Lizards (Genera
+         Crotaphytus, Gambelia)
+    ▪ Snakes
+       ▪ African Bush Vipers (Genera: Atheris, Proatheris)
+       ▪ African Vipers (Genus Bitis)
+       ▪ Boomslangs (Genus Dispholidus)
+       ▪ Central and South American Pitvipers (Genera:
+         Bothrocophias, Bothrops, Cerrophidion, Lachesis,
+         Mixcoatlus, Ophryacus, Porthidium)
+       ▪ Cobras (Genus Naja)
+       ▪ Desert Cobras (Genus Walterinnesia)
+       ▪ Eurasian/ American Elapid Snakes (Genera:
+         Boulengerina, Bungarus, Calliophis, Dendroaspis,
+
+
+                                                              503
+                                     As of July 1, 2025
+
+                    Hemibungarus, Micruroides, Micrurus,
+                    Sinomicrurus)
+                  ▪ King Cobras (Genus Ophiophagus)
+                  ▪ Moccasins (Genus Agkistrodon)
+                  ▪ Palaearctic Vipers (Genus Vipera)
+                  ▪ Pitvipers (Genera: Calloselasma, Gloydius,
+                    Protobothrops, Deinagkistrodon, Hypnale, Ovophis,
+                    Trimeresurus, Tropidolaemus, Atropoides,
+                    Bothriechis)
+                  ▪ Pygmy Rattlesnakes (Genus Sistrurus)
+                  ▪ Rattlesnakes (Genus Crotalus)
+                  ▪ Sea Snakes (Genera: Acalyptophis, Aipysurus,
+                    Astrotia, Emydocephalus, Enhydrina, Ephalophis,
+                    Hydrelaps, Hydrophis, Kerilia, Kolpophis, Lapemis,
+                    Laticauda, Parahydrophis, Pelamis, Praescutata,
+                    Thalassophis)
+                  ▪ Shield-nosed Cobras (Genus Aspidelaps)
+                  ▪ Southeast Asian Vipers (Genus Azemiops)
+                  ▪ Terrestrial Papuaustralian Elapids (Genera Notechis,
+                    Oxyuranus, Pseudonaja, Pseudechis, Vermicella)
+                  ▪ Tree Cobras (Genus Pseudohaje)
+      B. Additionally, permits for breeding, sale, and importation may be
+         issued for the following species in accordance with Codes 09.07
+         (Wildlife Breeder/Dealer Permit Required) and 09.10 (Wildlife
+         Importation Permit Required):
+          1. All native species of wildlife not listed in Addendum R1.01
+             (listing species for which the permits are not necessary) or
+             R1.03 (listing species for which permits will not be issued).
+          2. The Chief of Wildlife Management or designee may issue a
+             permit for a species not listed in Addenda R1.02 or R1.03 if an
+             evaluation by Commission staff determines that the species does
+             not pose a significant risk to human health or safety, native fish
+             and wildlife health or populations, or agriculture and that the
+             species can be safely confined in a humane manner. Those
+             species that have been evaluated and do not pose a significant
+             risk will be classified as having interim approval until such time
+             as the Commission amends the code.
+          3. Species not listed in Addenda R1.01, R1.02, or R1.03 are
+             prohibited until evaluated.

@@ -1,0 +1,706 @@
+SOURCE: New Jersey: N.J.A.C. 7:25-10, Captive Game Animal and Game Bird Regulations, with the Division's
+        captive game synopsis and its policy on importing captive rabies vector species
+sourceId: nj-7-25-10 / nj-captive-game-info
+jurisdiction: NJ
+URL: https://nj.gov/dep/fgw/pdf/captv_regs.pdf
+     https://www.nj.gov/dep/fgw/pdf/captv_info.pdf
+     https://www.nj.gov/dep/fgw/pdf/captv_rvs_policy.pdf
+FETCHED: 2026-10-08 (plain curl with a browser User-Agent; pdftotext -layout)
+
+READ THIS FIRST. Subchapter 4 is the exotic and NONGAME rule, and "nongame" means wildlife with no
+hunting or trapping season. New Jersey's native furbearers have seasons, so they are GAME animals and
+subchapter 4 never reaches them. This subchapter does. 10.6(a) names the raccoon, striped skunk, red
+fox, gray fox, coyote, black bear and bobcat, and 10.7(a)1 offers an "Individual Hobby" permit "for
+hobby purposes or as pets". The catch is 10.10: nondomestic dogs, bears and nondomestic cats are
+potentially dangerous, and the synopsis says the Division "does not currently issue new permits for
+the possession of potentially dangerous species within the hobby permit category". So the raccoon and
+skunk are hobby-permit animals and the fox, bear and bobcat are not. The rabies vector species policy
+bars importing a raccoon, skunk or fox from any state with a rabies variant other than the raccoon
+variant, captive-bred or not.
+
+==== N.J.A.C. 7:25-10 (Division handout of the rule) ====
+                                        State of New Jersey
+               Captive Game Animal and Game Bird Regulations
+                                             N.J.A.C. 7:25-10
+
+Subchapter 10.             Possession, Propagation, Liberation, Sale and Importation
+                           of Game Animals and Game Birds
+§ 7:25-10.1       Scope
+
+   This subchapter shall constitute the rules governing the possession, propagation, liberation, sale and importation
+of game mammals and game birds pursuant to N.J.S.A. 23:3-28 through 39.
+
+§ 7:25-10.2       Construction
+
+  This subchapter shall be liberally construed to permit the department to discharge its statutory functions.
+
+§ 7:25-10.3       Purpose
+
+    This subchapter is promulgated to regulate the possession, propagation, liberation, sale, and importation of
+game mammals and game birds through a permit system, with conditions associated therewith, to be issued at the
+discretion of the division.
+
+§ 7:25-10.4       Definitions
+
+  The following words and terms, when used in this subchapter, shall have the following meanings unless the
+context clearly indicates otherwise.
+
+ "Department" means the New Jersey Department of Environmental Protection.
+
+  "Division" means the Division of Fish and Wildlife or its successor within the Department of Environmental
+Protection.
+
+  "Director" means the Director of Fish and Wildlife or his successor within the Department of Environmental
+Protection.
+
+   "Game animal" means any mammal for which a legal hunting or trapping season has been established in New
+Jersey, identified in this subchapter, or designated a game animal by the Fish and Game Council in the annual game
+code.
+
+   "Game bird" means any bird for which a legal hunting season has been established in New Jersey, identified in
+this subchapter, or designated a game bird by the Fish and Game Council in the annual game code.
+
+   "Person" shall include, but is not limited to, corporations, companies, associations, societies including nonprofit
+organizations, firms, partnerships, joint stock companies, individuals, and governmental entities.
+
+   "Qualified person" means a natural person presenting to the division the written testimonials from two well-
+known scientists certifying to the good character and fitness of the person to be entrusted with the privilege of
+holding the relevant permit.
+
+§ 7:25-10.5       Permit required
+    (a) Except as hereinafter provided, no person shall have in possession any game animal or game bird unless that
+person has first received a permit from the division. The permit form and permit application form shall be
+prescribed by and be obtainable from the division.
+
+   (b) No person shall liberate within this state any game animal or game bird unless that person has first received a
+permit therefor from the division.
+
+   (c) No person shall import into this state any game animal or game bird unless that person has first received a
+permit therefor from the division.
+
+    (d) The permit requirement pursuant to this section shall not apply to game animals and game birds legally taken
+or killed pursuant to the general hunting and fishing license statutes, N.J.S.A. 23:3-1 through 22, and during the
+season therefor.
+
+§ 7:25-10.6       Game animals and game birds for which a permit is required for possession
+
+  (a) A permit shall be required for possession of game animals including the following mammals:
+
+   1. Eastern cottontail rabbit (Sylvilagus floridanus);
+
+   2. Whitetail jackrabbit (Lepus townsendi);
+
+   3. Blacktail jackrabbit (Lepus californicus);
+
+   4. European hare (Lepus europaeus);
+
+   5. Eastern gray squirrel (Sciurus carolinensis);
+
+   6. Woodchuck (Marmota monax);
+
+   7. Beaver (Castor canadensis);
+
+   8. River otter (Lutra canadensis);
+
+   9. Muskrat (Ondatra zibethicus);
+
+   10. Nutria (Myocaster coypus);
+
+   11. Mink (Mustela vison);
+
+   12. Weasel (Mustela spp.);
+
+   13. Virginia opossum (Didelphis virginiana);
+
+   14. Striped skunk (Mephitis mephitis);
+
+   15. Raccoon (Procyon lotor);
+
+   16. Red fox (Vulpes vulpes);
+
+   17. Gray fox (Urocyon cinereoargenteus);
+
+   18. Coyote (Canis latrans);
+
+   19. Black bear (Ursus americanus);
+20. Bobcat (Felis rufus);
+
+21. Whitetail deer (Odocoileus virginianus).
+
+ (b) A permit shall be required for possession of the following game birds:
+
+1. Family Anatidae:
+
+  i. Geese;
+
+ ii. Brant;
+
+ iii. Tundra swans; and
+
+ iv. Whistling, dabbling, diving, and sea ducks;
+
+2. Family Rallidae:
+
+ i. Rails;
+
+ ii. Moorhens;
+
+ iii. Coots; and
+
+ iv. Mud hens;
+
+3. Family Charadriidae:
+
+ i. Plovers;
+
+ ii. Surf birds; and
+
+ iii. Shorebirds;
+
+4. Family Scolopacidae:
+
+ i. Sand pipers;
+
+ ii. Woodcock;
+
+ iii. Snipe;
+
+ iv. Curlews; and
+
+ v. Tattlers;
+
+5. Family Meleagrididae:
+
+  i. Wild turkeys;
+
+6. Family Tetraonidae:
+
+ i. Grouse; and
+
+ ii. Prairie chickens;
+   7. Family Phasianidae:
+
+     i. Pheasants;
+
+     ii. Partridges; and
+
+     iii. Quails;
+
+   8. Family Columbidae:
+
+     i. Mourning dove; and
+
+   9. Family Corvidae:
+
+     i. Common crow.
+
+    (c) The division may issue a permit for the possession of the mammals or birds listed in (a) and (b) above
+provided the applicant has satisfactorily met the criteria contained within 7:25-10.8.
+
+§ 7:25-10.7          Categories of permits, expiration, fees, sales receipt required, records and reports
+                     required
+
+  (a) The division, when it appears to be in the public interest, may issue the following permits:
+
+   1. "Individual Hobby" may be issued to persons holding game animals for hobby purposes or as pets;
+
+   2. "Scientific Holding" may be issued to qualified persons holding game animals or game birds for scientific
+observation, captive breeding attempts and other scientific or educational study;
+
+   3. "Zoological" may be issued to private and public institutions which exhibit game animals or game birds for
+possession, importation, exportation, and sale of species listed in the permit;
+
+   4. "Propagation and Sales" may be issued to persons engaged in the propagation and/or sale of game animals or
+game birds for importation, exportation, and sale of species listed in the permit;
+
+    5. "Animal Exhibitor" may be issued to exhibitors of game animals or game birds other than zoos, including
+traveling exhibits, small exhibitions not qualifying as zoos, and circuses;
+
+   6. "Animal Theatrical Agency" may be issued to persons owning game animals or game birds to be used for
+advertising, acting, or theatrical appearances, permitting importation, exportation, and sale of species listed in the
+permit;
+
+   7. "Fur Farming" may be issued to persons engaged in the business of fur farming the species listed at 7:25-
+10.6(a)7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, and 20; and
+
+    8. "Cooperator" may be issued to persons who are deemed qualified by the Division under the criteria set forth in
+the most current edition of the "Cooperator's Manual" or, in the absence of such manual, based on the need as
+determined by the Division to rear orphaned juvenile wildlife species and rehabilitate injured wildlife species listed
+under 7:25-10.6(a) and (b). Persons issued this permit must also maintain applicable federal permits where required.
+
+   (b) All possession permits shall expire on December 31 of the year of issue.
+
+   (c) The license fee for each permit shall be $ 5.00; provided, however, that there shall be no fee for the
+Cooperator permit.
+    (d) All permits must be displayed in a prominent place. The sale of game animals or game birds to any person
+must be accompanied by a "Game Animal or Game Bird Sales Receipt," the form of which shall be prescribed by
+and obtainable from the Division, and which shall serve as a temporary possession permit for a period of 20 days
+after the date of sale.
+
+   (e) Propagation and sales dealers shall submit to the Division an annual inventory of acquisitions, sales, and
+exchanges upon expiration or renewal of their permits.
+
+   (f) Zoological, Exhibitor, Theatrical, and Cooperator permit holders must submit quarterly reports of births,
+deaths, acquisitions, and disposals.
+
+    (g) Periodic inspections may be made by Division-designated personnel and shall consist of examination of game
+animal or game bird, their food, facilities, holding pen and exhibit area, and a review of relevant records pertaining
+to these species.
+
+   (h) Animal exhibitors and animal theatrical agencies shall notify the Division no less than two weeks prior to any
+scheduled activity in New Jersey covered by their permits in order to allow inspection of the activity by Division
+personnel.
+
+§ 7:25-10.8       General possession criteria
+
+  (a) Prior to the issuance of any permit under this subchapter, the applicant shall, on forms provided by the
+Division, demonstrate the following:
+
+    1. The origin of the animal is not from the wild stock of this State or any other state except where authorized by
+the Division for rehabilitative, scientific or other purposes consistent with the purposes of this subchapter as
+determined by the Division.
+
+   2. The animal will be fed an adequate diet;
+
+   3. The animal is housed or caged in a manner that:
+
+   i. Allows the animal to perform the normal behavior patterns of its species; and
+
+   ii. Prevents disease, liberation, or accidental injury to the animal and the public;
+
+   4. The method of acquisition did not violate the laws and regulations of this State, any other state, or the federal
+government;
+
+   5. Competent and adequate licensed veterinary services for the care and treatment of the animal are readily
+available; and
+
+    6. The animal is free of infectious diseases and parasites which may be dangerous to the animal, livestock, or
+people of the State. The Division may request certification from a licensed New Jersey veterinarian or a person
+recognized as qualified by the director to make such certification that the animal for which the permit is being
+sought is free from infectious diseases and parasites.
+
+§ 7:25-10.9       Emergency possession
+
+  (a) Persons may temporarily possess without permit a game animal or game bird, other than a potentially
+dangerous species defined at 7:25-10.10, which is orphaned, injured, or displaced provided that:
+
+    1. The Division law enforcement office of jurisdiction, DEP Emergency Hotline, or the Wildlife Control Unit is
+notified of such emergency possession within 12 hours of acquisition;
+    2. The Division Wildlife Control Unit reviews the case for the purpose of prescribing a course of action that is in
+the best interest of the animal or bird so possessed; and
+
+   3. The emergency possession of the game animal or game bird does not violate any local ordinances or
+requirements;
+
+   4. Contact phone numbers for cases of emergency possession are as follows:
+
+     i. Northern Region Law Enforcement Office (908) 735-8240;
+
+     ii. Central Region Law Enforcement Office (609) 259-2120
+
+     iii. Southern Region Law Enforcement Office (856) 629-0555;
+
+     iv. DEP Emergency Action Hotline (24 hours) 1-877-927-6337; and
+
+     v. Wildlife Control Unit (908) 735-8793.
+
+   (b) The game animal or bird held without a permit therefor shall be surrendered upon demand by the Division.
+
+ § 7:25-10.10 Potentially dangerous species
+
+   (a) "Potentially dangerous species" is defined as any game animal or game bird which, in the opinion of the
+Division, is potentially capable of inflicting serious or fatal injuries, of being an agricultural pest, of being
+detrimental to existing or future wild populations, or of being a menace to public health, including, but not limited
+to, the following:
+
+Order
+
+Family
+
+Carnivora Canidae--Nondomestic dogs
+
+ Ursidae--Bears
+
+ Felidae--Nondomestic cats
+
+Artiodactyla Cervidae--Deer
+
+    (b) The Division, in its discretion, may issue a permit for possession of a potentially dangerous game animal or
+game bird only after a clear showing that the criteria for the possession of such potentially dangerous game animal
+or game bird have been met.
+
+§ 7:25-10.11      Criteria for the possession of potentially dangerous species
+
+  (a) In addition to the general criteria enumerated in 7:25-10.8, every person applying for a permit to possess
+potentially dangerous species shall meet each of the following criteria to the satisfaction of the Division:
+
+   1. Education and background: Persons wishing to apply for a permit to possess a potentially dangerous species
+must have extensive experience in maintaining the species desired or related species;
+
+   2. Knowledge: Persons wishing to apply for a permit to possess potentially dangerous species must demonstrate
+a working knowledge and expertise in handling and caring for each of the species desired;
+
+    3. Other licenses and permits: Persons applying to possess potentially dangerous species must obtain, in addition
+to New Jersey Captive Game Animal or Game Bird Permit, all other applicable permits covering the possession of
+such species. Any permit issued for the possession of such animal by the Division shall not exempt an applicant
+from compliance with any other law of the State, or subDivision of the State, any municipality, or the Federal
+government, regarding construction necessary to house the animal, or other local requirements;
+
+    4. Purpose and intent: Persons applying to possess potentially dangerous species must submit a written statement
+of the purpose and intent of keeping the species;
+
+    5. Housing and feeding: Persons applying for a permit to possess a potentially dangerous species must supply a
+written description of the housing and caging facilities for the species required including a summary detailing a
+continuous source of food appropriate for the specific diet of the animals. Facilities must be constructed to prevent
+the possible escape of the animal. Division personnel may inspect the completed facilities to determine if the
+facilities are suitable for the game animal or game birds; and
+
+   6. Protection of the public: The housing facilities must also be constructed to prevent public access to, and
+contact with, the animal. The potentially dangerous species may not be kept as a household pet except when
+compelled by the infancy of the animal. The public must not be allowed access to the animal, including animals
+used for exhibition purposes.
+
+§ 7:25-10.12      Denial, suspension, revocation, and hearings
+
+  (a) The department may suspend the permits described in 7:25-10.7 and 7:25-10.10 for periods of time up to their
+duration upon the violation of any permit condition or any regulation appearing in this subchapter. The department
+may revoke the permits described in 7:25-10.7 and 7:25-10.10 upon finding in any five-year period two or more
+violations of any permit condition(s) or any regulation appearing in this subchapter. After revocation, no permit
+shall be issued to the violator within two years from the date of the second violation, or within three years from the
+date of the third or subsequent violation.
+
+   (b) In the event the department determines the necessity for denial of a permit application for, suspension of, or
+revocation of, any permit described in 7:25-10.7 and 7:25-10.10, the department shall issue a notice of intent to
+deny, suspend, or revoke, setting forth the reasons for such action. Where appropriate, a compliance directive shall
+accompany the notice of intent.
+
+     (c) The recipient of the notice of intent may request a contested case hearing in accordance with the
+Administrative Procedure Act, N.J.S.A. 52:14B-1 et seq., and the Uniform Administrative Procedure Rules, 1:1, by
+filing a written request with the Department therefor within 20 days from the receipt of the notice of intent described
+above at (b). The request for a hearing shall be sent to the Office of Legal Affairs, ATTENTION: Adjudicatory
+Hearing Requests, Department of Environmental Protection, PO Box 402, Trenton, New Jersey 08625-0402.
+
+   1. A request for a contested case hearing shall clearly state:
+
+    i. The name of the recipient;
+
+   ii. The departmental decision from which the recipient seeks relief;
+
+   iii. The details of how the departmental decision aggrieves the recipient; and
+
+   iv. The findings of fact incorporated within the notice of intent that the recipient contests.
+
+   2. The department shall review each hearing request and, upon a determination that the matter constitutes a
+contested case, grant a hearing. The denial of a request for a contested case hearing shall be considered to be final
+agency action on the matter.
+
+   3. The granting of a request for a contested case hearing shall not automatically stay the suspension or
+revocation.
+    (d) In the case of a notice of suspension or revocation of a permit issued pursuant to 7:25-10.10(b), the recipient
+of such notice shall immediately comply with any departmental directive as to disposal of the captive potentially
+dangerous species.
+
+    (e) Notwithstanding the provision at (c)3 above, in the case of a notice of suspension or revocation of a permit
+issued pursuant to 7:25-10.7, the recipient of such notice shall comply with any departmental directive as to
+disposal of the captive species upon final suspension or revocation.
+
+§ 7:25-10.13      Miscellaneous provisions
+
+  (a) Any person who transfers possession, as distinguished from ownership, or location of any game animal or
+game bird for which a permit has been issued, shall, within 48 hours, report in writing to the division exactly which
+animal(s) was transferred, the name and address of the person to whom the animal(s) was transferred and the
+location to which the animal(s) was transferred. No transfer shall be permitted without prior written approval of the
+division of a potentially dangerous species as defined at 7:25-10.10.
+
+    (b) Any person, issued a permit, who violates or fails to continually conform to the criteria established for the
+issuance of his permit, shall be considered to have violated an express condition of the permit and shall be deemed
+to be in possession of the animal or bird without a permit. Permit violators shall be subject to prosecution for
+possession of the animal or bird without a permit, and may be subject to the penalty prescribed by statute.
+
+   (c) No person shall acquire additional game animals or game birds under any one permit without prior written
+permission from the division. Progeny of permitted captive game animals or game birds are exempt from this
+requirement provided the permittee can biologically substantiate the increase in numbers from permitted captive
+game animals or game birds and reports the increase on the annual inventory report.
+
+   (d) As a condition of any permit issued under this subchapter the division may require the permitted game
+animal or game bird be quarantined for the period specified by the division.
+
+   (e) Any permittee shall allow division personnel, at any reasonable time, to inspect the housing facilities of the
+permitted species to determine compliance with the permit requirements and criteria.
+
+   (f) Nothing in this subchapter relative to the possession of Game Animals and Game Birds is intended to
+preempt any federal, state, or local requirement that is more stringent nor exempt any person from obtaining any
+permit required by these governmental entities.
+
+    (g) Game animals and birds possessed under these permits may be dispatched in a manner as directed by
+N.J.S.A. 23:3-31 for legitimate purpose, including, but not limited to, the following:
+
+    1. Euthanasia of sick, injured or surplus animals, in order to cull individuals to prevent overcrowding or spread
+of disease; such euthanasia can also be ordered by the Commissioner when necessary to prevent spread of disease;
+
+   2. To utilize as food, or to utilize the hide, skin, or other body parts; record-keeping and tagging requirements
+must comply with those described in N.J.S.A. 23:3-28 to 39;
+
+   3. Euthanasia by an agent of the Division or as ordered by the Commissioner;
+
+  4. When an animal creates a danger or serious threat to persons or other animals as determined by the
+Commissioner; or
+
+   5. Euthanasia of research animals held under the scientific holding permit.
+
+==== Captive game synopsis (captv_info.pdf) ====
+                             STATE OF NEW JERSEY
+                       Department of Environmental Protection
+                            Division of Fish and Wildlife
+
+                     CAPTIVE GAME INFORMATION SHEET
+The following is a synopsis of wildlife captivity laws relating to game species. Please refer to
+N.J.A.C. 7:25-10 for specific information. Additional information on the laws authorizing the
+regulations concerning the possession of game animals, as well as semi-wild and commercial
+shooting preserves, may be found in N.J.S.A. Title 23:3-28 to 39.
+
+PERMIT CATEGORIES
+Categories of permits include animal exhibitor, animal theatrical, cooperator, fur farming,
+individual hobby, propagation and sales, and zoological. Indicate the most appropriate permit
+category on your application based upon the primary purpose for possessing the game species. If
+you have different species for different purposes, you may require more than one permit. For
+example, if you wish to rehabilitate wildlife (cooperator/rehabilitation category) and maintain
+other individual wildlife education purposes, more than one permit is necessary. Applicants must
+be able to meet the necessary criteria for each category in which they apply for. If you have
+questions, please call the Captive Game Permit section at 908-735-7040.
+
+LEGALLY ACQUIRED GAME BIRDS OR ANIMALS
+Legally acquired wild animals are for the most part, wild animals which are not from wild origin.
+These animals are the offspring of animals that were legally held in captivity.
+It is important to remember the intent of regulations dealing with wildlife captivity are:
+     • To protect wildlife from exploitation. For example, taking animals from the wild for pets,
+        or to sell.
+     • To protect native wildlife populations from disease or competition. For example to
+        prevent diseased captive animals from escaping and introducing diseases to wild
+        populations; or to prevent exotic captive wildlife from escaping, introducing diseases into
+        the wild populations and/or preying upon or out competing native wildlife.
+     • To protect people from being injured by captive wildlife. For example, preventing wolves
+        and other carnivores from mauling children.
+     • To protect agricultural crops from damage from escaped exotic wildlife. For example,
+        escaped wild boars destroy agricultural crops and also prey on ground nesting bird eggs.
+
+Therefore, animals of wild origin are considered to be "legally acquired" only within strictly
+controlled guidelines. States generally restrict the possession of animals that originated in the
+wild, to the zoological and scientific holding categories. The educational and scientific
+knowledge gained justifies allowing an occasional taking of an animal of wild origin. Wildlife
+rehabilitators (cooperators) may temporarily possess native animals of wild origin, with the
+intention of returning that animal to the wild.
+MAMMALS
+Captive game mammals obtained for the purpose of wholesale, transport, research and exhibition
+require a NJ captive game permit and a permit from USDA-APHIS-Animal Care. The only
+exceptions are those animals held for the purpose of food and/or fiber. All NJ permit applicants
+are required to contact the USDA office and review their file with USDA-APHIS Animal Care.
+Applications and information can be obtained by contacting the USDA-APHIS, Animal Care
+office in Raleigh, North Carolina at (919) 855-7100. A copy of your USDA-APHIS permit must
+be submitted with your NJ Captive Game annual report and renewal form.
+
+POTENTIALY DANGEROUS SPECIES
+The Division does not currently issue new permits for the possession of potentially dangerous
+species within the hobby permit category. Authority for this decision is found in N.J.A.C. 7:25-
+10.10(b) & 7:25-10.11. Potentially dangerous wildlife are unsuitable and inappropriate species
+for hobbyists.
+
+Persons in the hobby category, who were issued permits several years ago and still currently hold
+potentially dangerous game animals, will be allowed to keep these animals. However, no
+additional acquisitions will be allowed.
+
+The possession of potentially dangerous species (non-domestic dogs, bears, non-domestic cats
+and deer) will be allowed only within the scientific holding, propagation and sales, zoological,
+animal exhibitor, animal theatrical and fur farming categories. Wildlife rehabilitators must have
+special permission from the Division to rehabilitate potentially dangerous species.
+
+The applicant must demonstrate knowledge and expertise in handling and caring for the
+potentially dangerous species; be able to provide adequate caging for the species which will also
+protect the public; and must clearly state in writing the purpose and intent for possessing the
+species. Based upon the above criteria, the Division may approve the applicant's request.
+
+TRANSFERS, ACQUISITIONS AND SALES (also see import/export)
+No sales (or permanent transfers of ownership) of potentially dangerous species are allowed
+within this state unless the buyer presents written approval from this Division to the seller.
+Division approval will be granted only after successful review of the potential buyer's application
+and successful inspection of facilities.
+
+Holders of all categories of permits are reminded that they must notify the Division within 48
+hours when the temporary transfer (e.g., temporary placement in another location NJAC 7:25-
+10.13) of any game bird or animal takes place. For example, if someone will be caring for your
+pet skunk in their home while you are on vacation, you must notify the Division of this
+temporary transfer. In the case of potentially dangerous species, prior written approval from the
+Division for the transfer is required.
+
+All permit categories, except hobby, may acquire additional quantities of the potentially
+dangerous species listed on their permit provided expansion of facilities is not required. Prior
+approval for additional acquisitions is necessary if your facilities must be expanded or upgraded
+(see also section on importation). For example, if you have a propagation and sales permit for
+deer and wish to acquire more deer, you do not need Division permission unless you need to
+increase your pen size. However, if you intend to buy wildlife from other states, you must have a
+DFW importation permit and corresponding health documents for this purchase.
+
+All permit holders acquiring species not classified as potentially dangerous, but are not listed on
+their current permit, must report the acquisition within twenty days. For example, if you have a
+permit for a skunk and then purchase a squirrel during the year, you must report the purchase of
+the squirrel to the Division within twenty days.
+
+The buyer must provide a receipt or letter of transfer and provide documentation to demonstrate
+that he/she meets the requirements to adequately care for the species in question before a
+permanent permit will be granted. Details such as species specific diet and photographs and
+diagrams of the caging must also be included.
+
+The receipts provided by holders of propagation and sales permits act as a temporary permit for
+game species not listed in the potentially dangerous category. Captive Game receipt books are
+available for $3.50 per book (25 receipts per book). Homemade receipts (or letters of transfers)
+can be used by other permit category holders. This documentation must indicate: the name,
+address, telephone number and permit number of the seller; the quantity and species of animals
+involved; the name, address, telephone number of the purchaser; and date of sale or transfer. This
+includes any change in ownership that does not involve a monetary transaction. These transfers
+of ownership must be reported on the annual report. The bottom line is that the seller should not
+sell animals to persons who are not likely to meet the criteria necessary to obtain a permit -
+unless they have a return policy.
+
+The sale of meat, hide, feathers and/or body parts of game animals raised under the propagation
+and sales permit category is allowed provided that the meat and/or part is tagged and copies of a
+receipt or record of transfer is possessed by both the buyer and seller. Tags are available from the
+Division at a cost of $0.15 per tag.
+
+IMPORTATION OF WILDLIFE
+Anyone seeking to import wildlife into New Jersey must first obtain an importation permit,
+which is available from the Division at no cost. Applicants must be able to prove that the
+animal(s) do not originate from the wild (by providing valid receipt with supplier information);
+the animal(s) are in good health (by providing a Certificate of Veterinary Inspection not more
+than 30 days old) and have not been exposed to any infectious diseases which may affect
+wildlife, domestic animals or people (include a copy of all required animal health test results).
+Importation of wildlife without this permit and supporting documents is a violation of state, and
+in some cases, federal law.
+
+CURRENT IMPORTATION RESTRICTIONS
+Attempts to address concerns regarding public health, wildlife disease outbreaks and disease
+transmittal often require intrastate or interstate transportation restrictions. Depending on the
+concern, these restrictions may last for just a few months as the concern subsides or the
+restriction may last indefinitely. Always contact the Division for up to date information and
+restrictions.
+
+Persons violating the importation laws are subject to stiff fines, suspension or loss of the
+captivity permit and may also incur costs associated with any necessary quarantine, civil liability
+for damage to others, and loss of the animal(s) imported illegally.
+
+Rabies Vector Species (RVS) include raccoons, skunks, woodchucks, fox and bats. The 2010
+CDC surveillance report identifies 5 variants of the rabies virus including raccoon, skunk, fox,
+bat, and mongoose. All the eastern coastal states as well as several neighboring states are
+endemic to the raccoon variant. NJ has placed a ban on the importation of any RVS from any
+state reported as having a variant of rabies other than the raccoon variant. For example, the skunk
+variant is found in Texas. Therefore, no one can import a RVS from Texas, even if the RVS
+originates from a captive breeder. The only exception will be for those animals held under the
+supervision of a licensed veterinarian for zoological purposes.
+
+Deer/Elk and other members of the Cervidae family: A ban on importing deer has been put
+into effect due to the growing concern over the spread of chronic wasting disease in wild and
+farmed herds of animals in the deer family throughout the United States. This ban will reduce the
+risk of chronic wasting disease entering our State and help to prevent our wild deer from being
+exposed to this deadly disease. The ban will remain in effect until further notice.
+
+EXPORTATION
+Anyone exporting wildlife to another state or country is advised to check with the wildlife
+agency in the receiving state or country. Generally, the laws are similar to NJ in that the spread
+of disease and the transfer of dangerous wildlife are of concern. Specific information regarding
+what species and diseases are of concern may vary between states and/or countries and each
+state/country may require different documentation reflecting animal health and/or test results
+prior to transport.
+
+Each year the DFW receives calls from other states seeking to verify transfers of wildlife alleged
+to be from New Jersey. When you export wildlife, make sure your receipt and/or bills of landing
+contain your contact information, New Jersey permit number, the species and the number of
+individuals being transported. All in-state and all out-of-state sales or transfers must be reported
+on your annual report forms.
+
+WILDLIFE REHABILITATION
+
+In general, legally acquired wildlife is not of wild origin. The exception that allows for the
+holding of wild origin wildlife involves wildlife rehabilitation. States recognize that their citizens
+wish to help sick, injured and orphaned native wildlife. In order to safeguard people and the
+animals, only persons who can demonstrate their ability to care for these animals to a point
+where they can be re-released back into the "wild" are given rehabilitator permits. In New Jersey,
+a one (1) year apprenticeship under a licensed rehabilitator and a facility inspection are just two
+of the prerequisites for obtaining a license to rehabilitate wildlife.
+Animals not able to be released back into the wild must be euthanized. Occasionally, animals
+that cannot be returned to the wild because of physical or behavioral problems are placed in the
+permanent care of a permit holder in the scientific or zoological category, if there is an
+educational need for such animals. Confiscated animals are likewise placed in scientific or
+educational facilities when possible.
+
+EMERGENCY POSSESSION OF WILDLIFE
+Because your neighbors may know you have a permit for wildlife, you may be contacted when
+an injured or orphaned wild animal is found. We understand that you may opt to take this animal
+from the person and offer it emergency care. Captive Game permit holders, except wildlife
+rehabilitators, must notify the Division within 12 hours (N.J.A.C. 7:25-10.9) when they are
+offered or receive an animal from wild origin under emergency circumstances. Note that the
+DFW must approve the transition prior to accepting a potentially dangerous species. Species of
+wild origin will be directed to licensed rehabilitators. An attempt will be made to place non-
+releasable wildlife in scientific or educational facilities. The Division is the final arbiter in
+deciding the placement of wildlife that cannot be returned to the wild.
+
+==== Policy on the importation of captive rabies vector species ====
+                                   State of New Jersey
+                              Department of Environmental Protection
+                                        Mail Code 501-03
+                                   Division of Fish and Wildlife
+                                  501 E. State St. / PO Box 420
+                                     Trenton, NJ 08625-0420
+
+                    POLICY ON THE IMPORTATION OF
+                    CAPTIVE RABIES VECTOR SPECIES
+BACKGROUND
+
+Under the authority of N.J.S.A. 23:4-63.3, N.J.S.A. 23:4-63.4, N.J.A.C 7:25 subchapters 4 and
+10, the Division of Fish and Wildlife has the responsibility of regulating the possession of wild
+mammals, birds, reptiles and amphibians and ensure that associated human activities do not
+negatively affect the health and/or safety of the citizens of New Jersey.
+
+Rabies is a deadly viral disease capable of infecting all mammals including domestic pets,
+livestock and wildlife species. While all mammals are potentially vulnerable to rabies, raccoons,
+skunks, fox, woodchucks and bats are vector wildlife species, and as such, rabies virus variants
+are adapted to efficient transfer within the adapted species. The mid-Atlantic region of the
+United States is endemic to the raccoon variant and NJ became exposed when an animal was
+imported to the area from the southeast region.
+
+The need to create this policy is the direct result of animal health, public health and safety
+concerns, the need to protect native wildlife, and the dangers associated with the possession and
+interstate transportation of these captive rabies vector species (RVS). Concerns regarding the
+relocation and release of NJ’s wild rabies vector species are addressed in the Division of Fish and
+Wildlife’s Policy on the Relocation of Wildlife.
+
+CERTIFICATE OF VETERINARY INSPECTION (CVI)
+
+Regulations N.J.A.C. 7:25-4.7 and 7:25-10.8 outline the criteria for permits to possess wildlife.
+Criteria for possession include demonstration that the animal is free of infectious diseases and
+parasites, which may be dangerous to the animals or people of the State.
+
+EXCEPTIONS
+
+Exceptions include facilities with wildlife held for zoological purposes as these facilities
+incorporate advanced animal health provisions and are subject to additional regulatory oversight
+by the American Zoological Association.
+
+SPECIFIC GUIDELINES
+Because the NJ DFW cannot regulate the practices of another state, the NJ DFW is immediately
+placing a ban on the importation of raccoons, skunks, fox, woodchucks and bats, into the State of
+New Jersey from any state that is endemic to a variant of rabies other than raccoon variant. The
+only exception will be RVS held under supervision of a licensed veterinarian for zoological
+purposes.
+
+The Division will refer to the Center for Disease Control’s surveillance of rabies and/or other
+information noting the current location of rabies in the United States.
+
+This ban has been placed in effect in response to the growing concern over human and animal
+exposure to the deadly viral disease rabies. Placing this ban on the importation of Rabies Vector
+Species (RVS) will reduce the risk of rabies entering our state and help prevent exposure to this
+deadly disease.
+
+This ban will remain in effect until this ban is rescinded.
+
+Approved 6/17/2009
+Revised 11/30/2011
+

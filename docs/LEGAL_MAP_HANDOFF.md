@@ -272,6 +272,42 @@ turned up on its way through.
 
 ## Loose ends
 
+- **Resolved 2026-10-08: the six Bengal cells, the ME serval and the three TN unclear cells.** Bengal
+  AZ and VA went to `legal`, WY and ND to `permit`, NH and DE to `conditional`, the ME serval to
+  `banned`, the TN serval and fennec to `legal` and the TN quaker parakeet to `banned` on
+  1660-01-18-.03(4)(b), with the Bengal, serval and quaker guides and the AZ, VA and TN state notes
+  corrected in the same commits.
+
+- **Resolved 2026-10-08: the eight fennec fox cells, the IA flying squirrel and the LA quote.** Fennec
+  ME, WA, AR, ID and LA went to `banned`, TX, MO and MS to `unclear` (TX on the same "wild ... fox"
+  question as the arctic fox), the expired wolf-dog quote was dropped, and the IA flying squirrel went
+  to `conditional`, with both guides and the WA, TX, LA and IA state notes corrected in the same commits.
+
+- **Resolved 2026-10-08: the Burmese python NC cell.** `conditional` on § 14-417.1, which names it
+  as Python molurus "or any of their subspecies", with the NC state note's Article 55 sentence
+  corrected.
+
+- **Resolved 2026-10-08: the Burmese python AR cell.** `restricted` on Addendum R1.03(A)(4) and its
+  21 May 2020 note, matching the reticulated python.
+
+- **Resolved 2026-10-08: the Burmese python ND cell.** `permit` on category 3's "nonvenomous
+  injurious reptiles", matching the reticulated python, with the guide's counts and table, the hub
+  line, and the Lacey Act sentences in the CA, PA, MN, DE and VT notes and the CA state note
+  corrected to USARK v. Zinke.
+
+- **Resolved 2026-10-08: the Ohio serval, black bear and Canada lynx cells.** All three went to
+  `banned` on R.C. 935.02(A) with the 2012 registration grandfather, matching the tiger and lion,
+  with the serval guide, the hub line and the OH state note corrected. The bobcat cell was left: it
+  rests on the § 1533.71 fur-bearer license.
+
+- **Resolved 2026-10-08: the Ohio and North Carolina fennec fox cells.** Both went to `unclear` on
+  the bare "fox" in R.C. 1531.01(W) and G.S. 113-129(7c), matching the arctic fox, with the fennec
+  guide's counts and table corrected.
+
+- **Resolved 2026-10-08: the Hawaii red-eared slider cell.** `banned` with permitFor
+  "commercial-exhibition-research" on Part B read with HAR § 4-71-2, matching the wallaby, with the
+  slider guide's Hawaii row corrected.
+
 - **Kansas answers a native herp in three regulations and the famous one is none of them. Priority 1
   is done and it moved nine cells.** K.S.A. 32-1301, the dangerous regulated animal statute the whole
   Kansas column had been written against, names six cats, bears and non-native venomous snakes.
@@ -594,10 +630,11 @@ turned up on its way through.
   tnsos.org. Anyone with a browser can settle three cells by opening one PDF. What rides on the
   first two is bigger than a fee: § 70-4-404(c)(1) closed personal possession of Class I
   wildlife in 1991, so an addition by rule means a flat no, not a permit.
-- **Vermont has three cells left**: quaker parakeet, African grey and rabbit. They depend
-  on the 2010 Domestic Species List, whose text is stored as glyph outlines and could not
-  be extracted by any method tried, WebFetch included. Everything else about Vermont is
-  cached and settled.
+- **Resolved 2026-10-08: the Vermont parrot cells and the Regulation 881 reading.** The Domestic
+  list is read (rabbit `legal`), and § 5.2's second sentence is a discretionary personal permit, so
+  the quaker, African grey and cockatoo moved from `banned` to `permit`, all 46 VT permit cells
+  resting on the restricted-animal permit carry permitFor "personal", and the Bengal, Savannah and
+  slider notes, scope line, source note, state note, hub rows and guides were corrected to match.
 - **Michigan's Part 413 prohibited species list** was never read. michigan.gov refuses this
   container on every path. It is an invasive species list and almost certainly names no pet
   reptile, but it is unverified and flagged in the cache.

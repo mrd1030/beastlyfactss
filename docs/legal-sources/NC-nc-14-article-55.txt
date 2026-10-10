@@ -1,0 +1,105 @@
+# N.C. Gen. Stat. Chapter 14, Article 55, Regulation of Certain Reptiles, §§ 14-416 to 14-422
+
+sourceId: nc-14-417
+jurisdiction: NC
+url: https://www.ncleg.gov/EnactedLegislation/Statutes/HTML/BySection/Chapter_14/GS_14-417.html (and 14-416 to 14-422)
+fetched: 2026-10-08
+fetch notes: ncleg.gov by plain curl, one section per page; tags stripped. § 14-417.1 names five large constricting snakes and § 14-417.2 every crocodilian but the American alligator.
+
+Extracted text follows verbatim. This is a cache of the primary source, not a
+substitute for it. Re-fetch before relying on it for a new verification date.
+
+----------------------------------------------------------------------
+
+G.S. 14-416 Article 55. Regulation of Certain Reptiles. § 14-416. Mishandling of certain reptiles declared 
+public nuisance and criminal offense. The intentional or negligent exposure of other human beings to unsafe 
+contact with venomous reptiles, large constricting snakes, or crocodilians is essentially dangerous and 
+injurious and detrimental to public health, safety and welfare, and is therefore declared to be a public 
+nuisance and a criminal offense, to be abated and punished as provided in this Article. (1949, c. 1084, s. 1; 
+2009-344, s. 1.)
+
+G.S. 14-417 § 14-417. Regulation of ownership or use of venomous reptiles. (a) It shall be unlawful for any 
+person to own, possess, use, transport, or traffic in any venomous reptile that is not housed in a sturdy and 
+secure enclosure. Enclosures shall be designed to be escape-proof, bite-proof, and have an operable lock. (b) 
+Each enclosure shall be clearly and visibly labeled "Venomous Reptile Inside" with scientific name, common 
+name, appropriate antivenin, and owner's identifying information noted on the container. A written bite 
+protocol that includes emergency contact information, local animal control office, the name and location of 
+suitable antivenin, first aid procedures, and treatment guidelines, as well as an escape recovery plan must 
+be within sight of permanent housing, and a copy must accompany the transport of any venomous reptile. (c) In 
+the event of an escape of a venomous reptile, the owner or possessor of the venomous reptile shall 
+immediately notify local law enforcement. (1949, c. 1084, s. 2; 2009-344, s. 1; 2013-413, s. 38(a); 2014-115, 
+s. 17; 2019-204, s. 10(a).)
+
+G.S. 14-417.1 § 14-417.1. Regulation of ownership or use of large constricting snakes. (a) As used in this 
+Article, large constricting snakes shall mean: Reticulated Python, Python reticulatus; Burmese Python, Python 
+molurus; African Rock Python, Python sebae; Amethystine Python, Morelia amethistina; and Green Anaconda, 
+Eunectes murinus; or any of their subspecies or hybrids. (b) It shall be unlawful for any person to own, 
+possess, use, transport, or traffic in any of the large constricting snakes that are not housed in a sturdy 
+and secure enclosure. Enclosures shall be designed to be escape-proof and shall have an operable lock. (c) 
+Each enclosure shall be labeled clearly and visibly with the scientific name, common name, number of 
+specimens, and owner's identifying information. A written safety protocol and escape recovery plan shall be 
+within sight of permanent housing, and a copy shall accompany the transport of any of the large constricting 
+snakes. The safety protocol shall include emergency contact information, identification of the local animal 
+control office, and first aid procedures. (d) In the event of an escape of a large constricting snake, the 
+owner or possessor shall immediately notify local law enforcement. (2009-344, s. 1; 2019-204, s. 10(b).)
+
+G.S. 14-417.2 § 14-417.2. Regulation of ownership or use of crocodilians. (a) All crocodilians, excluding 
+the American alligator, shall be regulated under this Article. It shall be unlawful for any person to own, 
+possess, use, transport, or traffic in any crocodilian that is not housed in a sturdy and secure enclosure. 
+Permanent enclosures shall be designed to be escape-proof and have a fence of sufficient strength to prevent 
+contact between an observer and the crocodilian and shall have an operable lock. Transport containers shall 
+be designed to be escape-proof and shall be locked. (b) A written safety protocol and escape recovery plan 
+shall be within sight of permanent housing, and a copy must accompany the transport of any crocodilian. (c) 
+In the event of the escape of a crocodilian, the owner or possessor shall immediately notify local law 
+enforcement. (2009-344, s. 1; 2019-204, s. 10(c).)
+
+G.S. 14-418 § 14-418. Prohibited handling of reptiles or suggesting or inducing others to handle. (a) It 
+shall be unlawful for any person to handle any reptile regulated under this Article in a manner that 
+intentionally or negligently exposes another person to unsafe contact with the reptile. (b) It shall be 
+unlawful for any person to intentionally or negligently suggest, entice, invite, challenge, intimidate, 
+exhort or otherwise induce or aid any person to handle or expose himself in an unsafe manner to any reptile 
+regulated under this Article. (c) Safe and responsible handling of reptiles for purposes of animal husbandry, 
+exhibition, training, transport, and education is permitted under this section. (1949, c. 1084, s. 3; 
+2009-344, s. 1.)
+
+G.S. 14-419 § 14-419. Investigation of suspected violations; seizure and examination of reptiles; 
+disposition of reptiles. (a) In any case in which a law-enforcement officer or animal control officer has 
+probable cause to believe that any of the provisions of this Article have been or are about to be violated, 
+the officer is authorized and empowered to immediately investigate the violation or impending violation and 
+to consult with representatives of the North Carolina Museum of Natural Sciences or the North Carolina 
+Zoological Park or a designated representative of the North Carolina Department of Natural and Cultural 
+Resources to identify the species, assist with determining interim disposition, and recommend appropriate and 
+safe methods to handle and seize the reptile or reptiles involved. In the case of escape, or if an officer, 
+with probable cause to believe that reptile is being owned, possessed, used, transported, or trafficked in 
+violation of this Article, determines that there is an immediate risk to officer safety or public safety, the 
+officer shall not be required to consult with representatives as provided by this subsection and may kill the 
+reptile. (b) If, based on available information, the officer, the Museum, the Zoological Park or a designated 
+representative of the Department of Natural and Cultural Resources finds that a seized reptile is a venomous 
+reptile, large constricting snake, or crocodilian regulated under this Article, the Museum or the Zoological 
+Park or a designated representative of the Department of Natural and Cultural Resources shall assist the 
+officer with determining an interim disposition of the reptile in a manner consistent with the safety of the 
+public, until a final disposition is determined by a court of competent jurisdiction. In the case of a 
+venomous reptile for which antivenin approved by the United States Food and Drug Administration is not 
+readily available, the reptile may be euthanized unless the species is protected under the federal Endangered 
+Species Act of 1973. Where euthanasia is determined to be the appropriate interim disposition, or where a 
+reptile seized pursuant to this Article dies of natural or unintended causes, the parties involved shall not 
+be liable to the reptile's owner. (b1) Upon conviction of any offense contained in this Article, the court 
+shall order a final disposition of the confiscated venomous reptiles, large constricting snakes, or 
+crocodilians, which may include the transfer of 
+
+G.S. 14-420 § 14-420: Repealed by Session Laws 2019-204, s. 10(e), effective December 1, 2019, and 
+applicable to offenses committed on or after that date.
+
+G.S. 14-422 § 14-422. Criminal penalties and civil remedies for violation. (a) Any person violating any of 
+the provisions of this Article shall be guilty of a Class 2 misdemeanor. (b) If any person, other than the 
+owner of a venomous reptile, large constricting snake, or crocodilian, the owner's agent, employee, or a 
+member of the owner's immediate family, suffers a life threatening injury or is killed as the result of a 
+violation of this Article, the owner of the reptile shall be guilty of a Class A1 misdemeanor. This 
+subsection shall not apply to violations that result from incidents that could not have been prevented or 
+avoided by the owner's exercise of due care or foresight, such as natural disasters or other acts of God, or 
+in the case of thefts of the reptile from the owner. (c) Any person intentionally releasing into the wild a 
+nonnative venomous reptile, a large constricting snake, or a crocodilian shall be guilty of a Class A1 
+misdemeanor. (d) Violations of this Article as set forth in subsections (b) or (c) of this section shall 
+constitute wanton conduct within the meaning of G.S. 1D-5(7) and subject the violator to punitive damages in 
+any civil action that may be filed as a result of the violator's actions. (1949, c. 1084, s. 7; 1969, c. 
+1224, s. 3; 1993, c. 539, s. 289; 1994, Ex. Sess., c. 24, s. 14(c); 2009-344, s. 1.)
