@@ -1,5 +1,5 @@
 ---
-description: Build a 7 day X calendar for @Beastly_Facts from repo content. Native posts with a card, no links anywhere: the profile link carries the click.
+description: Build a 7 day X calendar for @Beastly_Facts from facts.js. Fact posts only, each with a photo card, no links anywhere.
 argument-hint: "[blank = Phase 1 shortlist] [go = Phase 2 write] [cadence e.g. '2 facts 2 articles'] [notes to steer picks]"
 allowed-tools: Read, Glob, Grep, Bash(ls:*), Bash(sed:*), Bash(head:*), Bash(wc:*), Bash(sort:*), Bash(grep:*), Bash(awk:*)
 ---
@@ -7,6 +7,21 @@ allowed-tools: Read, Glob, Grep, Bash(ls:*), Bash(sed:*), Bash(head:*), Bash(wc:
 # X feed builder
 
 ARGUMENTS: $ARGUMENTS
+
+CURRENT SCOPE (owner, 2026-10-10). This overrides everything below that
+assumes two tracks.
+- FACT TRACK ONLY. No article posts, no threads from guides, no chronicles.
+  Wherever this file describes the article track, skip it.
+- Every post carries a fact photo card: scripts/generate-pins.mjs run with
+  `--4x5`, a spec of { out, image: the fact's own photo, kicker: "Weird animal
+  fact", title: a headline of six words or fewer }. The post text states the
+  fact, so the headline may state it too. Check the crop with
+  scripts/pin-crop-sheet.mjs, upload with scripts/upload-pins.mjs, and use
+  https://pins.beastlyfacts.com/<out>-4x5.jpg as the media url.
+- No url anywhere, post or replies. The card's footer names BeastlyFacts.com
+  and the profile link carries the click.
+- Default cadence: 2 facts a day. "3 facts" or similar in the arguments
+  overrides it. Any article count in the arguments is ignored.
 
 How to read the arguments:
 - Empty, or anything that is not "go": run PHASE 1 only, then stop.
@@ -374,15 +389,10 @@ failing calendar with a note attached.
   [ ] No banned phrase
   [ ] No url anywhere, main posts or replies
   [ ] Every main post under 280 chars
-  [ ] No species repeats, across BOTH tracks
+  [ ] No species repeats across the week
   [ ] No three reptiles in a row
   [ ] No post shape used twice consecutively
-  [ ] No two posts from the same track scheduled back to back
-  [ ] Every article QUOTE USED appears verbatim in its named file
   [ ] Every fact QUOTE USED appears verbatim in facts.js under that id
-  [ ] No image path used twice across the whole week
+  [ ] Every post has its own fact photo card, crop checked, no photo used twice
   [ ] A quarter or more of posts end on a real question, at least one a fact
-  [ ] The article track includes a chronicle and a standalone fact article
   [ ] Ledger section lists a mark command for every post
-  [ ] Every article url is /blog/{slug}/, never /guides/{article-slug}/
-  [ ] Every chronicles part number was derived from date order, not filename
