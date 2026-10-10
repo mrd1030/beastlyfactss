@@ -150,8 +150,8 @@
       "inbound": [
         {
           "file": "content/guides/hognose-snake-legal-guide.mdx",
-          "find": "Hognose snakes are mildly rear-fanged, with a weak venom used mostly to subdue toads, and case reports describe local effects, not systemic ones.",
-          "replace": "Hognose snakes are mildly rear-fanged, with a weak venom used mostly to subdue toads, and case reports describe local effects, not systemic ones; the [venomous snake laws by state](/blog/venomous-snake-laws-by-state/) guide covers the class rule the hognose mostly escapes."
+          "find": "Alabama and Kentucky both name Heterodon as an exception to their venomous-reptile bans.",
+          "replace": "Alabama and Kentucky both name Heterodon as an exception to their venomous-reptile bans, the class rule the [venomous snake laws by state](/blog/venomous-snake-laws-by-state/) guide reads for every jurisdiction and the hognose mostly escapes."
         }
       ],
       "hubName": "Venomous Snake Laws"
