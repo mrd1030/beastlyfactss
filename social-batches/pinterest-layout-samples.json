@@ -23,7 +23,64 @@
     "kicker": "Cost guide",
     "title": "What a Chinchilla Really Costs",
     "hook": "The chinchilla is the cheap part.",
-    "items": ["The cage", "Exercise wheel", "Dust bath", "Hay and pellets", "Vet checkups", "Air conditioning"],
+    "items": [
+      "The cage",
+      "Exercise wheel",
+      "Dust bath",
+      "Hay and pellets",
+      "Vet checkups",
+      "Air conditioning"
+    ],
     "cta": "Every price, line by line, at"
+  },
+  {
+    "layout": "numbered",
+    "out": "ball-python-enrichment-ideas",
+    "image": "public/assets/images/ball-python-enrichment.jpg",
+    "kicker": "Enrichment ideas",
+    "title": "Ball Python Enrichment Ideas",
+    "items": [
+      "Cover everywhere, not just a hide",
+      "A climbing branch, braced firm",
+      "A water bowl big enough to soak in"
+    ],
+    "more": "Plus the free one, and what not to do",
+    "cta": "How to set each one up at"
+  },
+  {
+    "layout": "legal",
+    "out": "fennec-fox-legal-question",
+    "image": "public/assets/guides/fennec-fox-legal.jpg",
+    "kicker": "Exotic pet laws",
+    "title": "Can You Own a Fennec Fox?",
+    "hook": "It depends on your state.",
+    "items": [
+      "Where it's banned",
+      "Where you need a permit",
+      "Why rabies decides it"
+    ],
+    "cta": "State by state at"
+  },
+  {
+    "layout": "feeding",
+    "out": "axolotl-what-they-eat",
+    "image": "public/assets/images/axolotl-feeding.jpg",
+    "kicker": "Feeding guide",
+    "title": "What Do Axolotls Eat?",
+    "tiers": [
+      {
+        "label": "Staple",
+        "foods": "Earthworms, nightcrawlers, axolotl sinking pellets"
+      },
+      {
+        "label": "Sometimes",
+        "foods": "Bloodworms, brine shrimp, daphnia"
+      },
+      {
+        "label": "Avoid",
+        "foods": "Feeder fish, beef or chicken, crickets, adult mealworms"
+      }
+    ],
+    "cta": "How much and how often at"
   }
 ]

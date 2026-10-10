@@ -30,6 +30,13 @@
 //     "hook": "The chinchilla is the cheap part.", -> a claim the guide makes
 //     "items": ["The cage", ...],                -> 4 or 6, no prices
 //     "cta": "Every price, line by line, at" }
+//   { "layout": "numbered", ..., "items": [3 entries],
+//     "more": "Plus the free one", "cta" }      -> fun facts, enrichment
+//   { "layout": "legal", ..., "title": "Can You Own a Fennec Fox?",
+//     "hook": "It depends on your state.", "items": [what the guide covers],
+//     "cta" }                                    -> never the verdict
+//   { "layout": "feeding", ..., "tiers": [{ "label": "Staple",
+//     "foods": "Earthworms, nightcrawlers" }, ...], "cta" }
 import fs from 'node:fs';
 import path from 'node:path';
 import sharp from 'sharp';
@@ -87,25 +94,99 @@ function panelHead(spec) {
 
 const footer = (cta) => `<text x="80" y="${H - 62}" font-family="Atkinson-Bold" font-size="34" fill="${INK}">${esc(cta)} <tspan fill="${ORANGE}">BeastlyFacts.com</tspan></text>`;
 
-function checklistSvg(spec) {
-  const head = panelHead(spec);
-  const rowH = 84;
-  const first = head.bottom + 100;
-  const rows = spec.items.map((item, i) => {
+const label = (text, y) => `<text x="80" y="${y}" font-family="Atkinson-Bold" font-size="30" letter-spacing="6" fill="${ORANGE}">${esc(text.toUpperCase())}</text>`;
+
+// An orange display line under the title (cost hook, legal answer-withheld).
+function hookLines(text, top) {
+  const fitSize = [64, 58, 52].find((s) => text.length <= Math.floor((W - 160) / (s * 0.58)));
+  const hook = fitSize ? { size: fitSize, lines: [text] } : layoutTitle(text, [64, 58, 52], 2);
+  const svg = hook.lines.map((l, i) => `<text x="80" y="${top + i * hook.size * 1.15}" font-family="Schibsted-Bold" font-size="${hook.size}" fill="${ORANGE}">${esc(l)}</text>`).join('\n');
+  return { svg, bottom: top + (hook.lines.length - 1) * hook.size * 1.15 };
+}
+
+// The footer baseline sits at H - 62; a row below this line collides with it.
+const PANEL_FLOOR = H - 128;
+
+function checkRows(items, first, rowH = 84) {
+  if (first + (items.length - 1) * rowH > PANEL_FLOOR) throw new Error(`${items.length} rows run into the footer, cut one`);
+  return items.map((item, i) => {
     const y = first + i * rowH;
     return `<rect x="80" y="${y - 36}" width="44" height="44" rx="8" fill="none" stroke="${ORANGE}" stroke-width="5"/>
     <path d="M90 ${y - 14} l10 10 l20 -22" fill="none" stroke="${INK}" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
     <text x="152" y="${y}" font-family="Atkinson-Bold" font-size="40" fill="${INK}">${esc(item)}</text>`;
-  });
-  return { svg: `${head.svg}\n${rows.join('\n')}\n${footer(spec.cta)}`, note: `${spec.items.length} rows` };
+  }).join('\n');
+}
+
+function checklistSvg(spec) {
+  const head = panelHead(spec);
+  const rows = checkRows(spec.items, head.bottom + 100);
+  return { svg: `${head.svg}\n${rows}\n${footer(spec.cta)}`, note: `${spec.items.length} rows` };
+}
+
+// Numbered: the first few entries of a longer list (fun facts, enrichment
+// ideas), then a line saying what the page still holds.
+function numberedSvg(spec) {
+  const head = panelHead(spec);
+  const rowH = 124;
+  const first = head.bottom + 130;
+  const rows = spec.items.map((item, i) => {
+    const y = first + i * rowH;
+    return `<circle cx="114" cy="${y - 14}" r="34" fill="${ORANGE}"/>
+    <text x="114" y="${y}" text-anchor="middle" font-family="Schibsted-Bold" font-size="42" fill="${CREAM}">${i + 1}</text>
+    <text x="176" y="${y}" font-family="Atkinson-Bold" font-size="40" fill="${INK}">${esc(item)}</text>`;
+  }).join('\n');
+  const moreY = first + spec.items.length * rowH + 10;
+  const svg = `${head.svg}
+    ${rows}
+    <text x="80" y="${moreY}" font-family="Schibsted-Bold" font-size="44" fill="${ORANGE}">${esc(spec.more)}</text>
+    ${footer(spec.cta)}`;
+  return { svg, note: `${spec.items.length} of the list` };
+}
+
+// Legal: the question, never the verdict. Laws move, so the pin names what
+// the guide settles and the answer stays on the page.
+function legalSvg(spec) {
+  const head = panelHead(spec);
+  const hook = hookLines(spec.hook, head.bottom + 120);
+  const dividerY = hook.bottom + 120;
+  const svg = `${head.svg}
+    ${hook.svg}
+    ${label('The guide covers', dividerY)}
+    ${checkRows(spec.items, dividerY + 90)}
+    ${footer(spec.cta)}`;
+  return { svg, note: `${spec.items.length} rows` };
+}
+
+// Feeding: food names by tier. Amounts and schedules stay on the page.
+function wrapText(text, size, width = W - 160) {
+  const maxChars = Math.floor(width / (size * 0.52));
+  const lines = [''];
+  for (const w of text.split(' ')) {
+    const probe = lines[lines.length - 1] ? `${lines[lines.length - 1]} ${w}` : w;
+    if (probe.length <= maxChars) lines[lines.length - 1] = probe;
+    else lines.push(w);
+  }
+  return lines;
+}
+
+function feedingSvg(spec) {
+  const head = panelHead(spec);
+  let y = head.bottom + 110;
+  const tiers = spec.tiers.map((tier) => {
+    const lines = wrapText(tier.foods, 40);
+    const out = `${label(tier.label, y)}
+    ${lines.map((l, i) => `<text x="80" y="${y + 58 + i * 50}" font-family="Atkinson-Bold" font-size="40" fill="${INK}">${esc(l)}</text>`).join('\n')}`;
+    y += 58 + (lines.length - 1) * 50 + 92;
+    return out;
+  }).join('\n');
+  if (y - 92 > PANEL_FLOOR) throw new Error('tiers run into the footer, shorten the food lists');
+  return { svg: `${head.svg}\n${tiers}\n${footer(spec.cta)}`, note: `${spec.tiers.length} tiers` };
 }
 
 function costSvg(spec) {
   const head = panelHead(spec);
-  const hook = layoutTitle(spec.hook, [64, 58, 52], 2);
-  const hookTop = head.bottom + 130;
-  const hookBottom = hookTop + (hook.lines.length - 1) * hook.size * 1.15;
-  const dividerY = hookBottom + 120;
+  const hook = hookLines(spec.hook, head.bottom + 130);
+  const dividerY = hook.bottom + 120;
   const half = Math.ceil(spec.items.length / 2);
   const rows = spec.items.map((item, i) => {
     const col = i < half ? 0 : 1;
@@ -115,8 +196,8 @@ function costSvg(spec) {
     <text x="${x + 36}" y="${y}" font-family="Atkinson-Bold" font-size="38" fill="${INK}">${esc(item)}</text>`;
   });
   const svg = `${head.svg}
-    ${hook.lines.map((l, i) => `<text x="80" y="${hookTop + i * hook.size * 1.15}" font-family="Schibsted-Bold" font-size="${hook.size}" fill="${ORANGE}">${esc(l)}</text>`).join('\n')}
-    <text x="80" y="${dividerY}" font-family="Atkinson-Bold" font-size="30" letter-spacing="6" fill="${ORANGE}">WHERE THE MONEY GOES</text>
+    ${hook.svg}
+    ${label('Where the money goes', dividerY)}
     ${rows.join('\n')}
     ${footer(spec.cta)}`;
   return { svg, note: `${spec.items.length} items` };
@@ -139,7 +220,7 @@ async function renderPanel(spec, build) {
   console.log(`pin: ${spec.out}.jpg (${spec.layout}, ${note}, ${kb}KB)`);
 }
 
-const LAYOUTS = { checklist: checklistSvg, cost: costSvg };
+const LAYOUTS = { checklist: checklistSvg, cost: costSvg, numbered: numberedSvg, legal: legalSvg, feeding: feedingSvg };
 
 for (const spec of specs) {
   if (LAYOUTS[spec.layout]) {
