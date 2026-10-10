@@ -100,6 +100,15 @@ function panelHead(spec) {
   return { svg, bottom: top + (lines.length - 1) * lineHeight, size, lines };
 }
 
+// Disclosure pill in the photo's bottom right corner. On by default because
+// most site images are generated; a spec using a real photo sets "ai": false.
+function aiTag(spec, photoBottom) {
+  if (spec.ai === false) return '';
+  const w = 230, h = 46, x = W - w - 24, y = photoBottom - h - 24;
+  return `<rect x="${x}" y="${y}" width="${w}" height="${h}" rx="23" fill="#000" fill-opacity="0.55"/>
+    <text x="${x + w / 2}" y="${y + 31}" text-anchor="middle" font-family="Atkinson-Bold" font-size="24" fill="#fff">AI illustration</text>`;
+}
+
 const footer = (cta) => `<text x="80" y="${H - 62}" font-family="Atkinson-Bold" font-size="34" fill="${INK}">${esc(cta)} <tspan fill="${ORANGE}">BeastlyFacts.com</tspan></text>`;
 
 const label = (text, y) => `<text x="80" y="${y}" font-family="Atkinson-Bold" font-size="30" letter-spacing="6" fill="${ORANGE}">${esc(text.toUpperCase())}</text>`;
@@ -231,7 +240,7 @@ async function renderPanel(spec, build) {
   await sharp({ create: { width: W, height: H, channels: 3, background: CREAM } })
     .composite([
       { input: strip, top: 0, left: 0 },
-      { input: Buffer.from(`<svg width="${W}" height="${H}" xmlns="http://www.w3.org/2000/svg">${svg}</svg>`), top: 0, left: 0 },
+      { input: Buffer.from(`<svg width="${W}" height="${H}" xmlns="http://www.w3.org/2000/svg">${svg}${aiTag(spec, STRIP_H)}</svg>`), top: 0, left: 0 },
     ])
     .jpeg({ quality: 78, mozjpeg: true })
     .toFile(file);
@@ -263,6 +272,7 @@ for (const spec of specs) {
     <rect x="0" y="${PHOTO_H}" width="${W}" height="14" fill="${ORANGE}"/>
     <text x="80" y="${PHOTO_H + 78}" font-family="Atkinson-Bold" font-size="30" letter-spacing="6" fill="${ORANGE}">${esc(spec.kicker.toUpperCase())}</text>
     ${titleSvg}
+    ${aiTag(spec, PHOTO_H)}
     <text x="80" y="${H - 62}" font-family="Atkinson-Bold" font-size="34" fill="${ORANGE}">BeastlyFacts.com</text>
   </svg>`;
 
