@@ -3,8 +3,8 @@
 // batch is importable into Publer the moment this finishes.
 //
 // Usage:
-//   node scripts/upload-pins.mjs <spec.json>
-// Takes the same spec file as generate-pins.mjs and uploads each
+//   node scripts/upload-pins.mjs <spec.json | batch.json>
+// Takes the same spec file as generate-pins.mjs (or a pinterest batch) and uploads each
 // social-batches/pins/<out>.jpg, then fetches every public url and fails
 // unless all of them answer 200.
 //
@@ -20,7 +20,11 @@ if (!specPath) {
   console.error('usage: node scripts/upload-pins.mjs <spec.json>');
   process.exit(1);
 }
-const specs = JSON.parse(fs.readFileSync(specPath, 'utf8'));
+// A Publer batch file works too: the cards are read off its media urls.
+const input = JSON.parse(fs.readFileSync(specPath, 'utf8'));
+const specs = input.posts
+  ? input.posts.flatMap((p) => p.media).filter((m) => m.startsWith(PUBLIC + '/')).map((m) => ({ out: m.slice(PUBLIC.length + 1).replace(/\.jpg$/, '') }))
+  : input;
 
 const missing = specs.filter((s) => !fs.existsSync(`social-batches/pins/${s.out}.jpg`));
 if (missing.length) {
