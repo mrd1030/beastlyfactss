@@ -3,7 +3,7 @@
 // batch is importable into Publer the moment this finishes.
 //
 // Usage:
-//   node scripts/upload-pins.mjs <spec.json | batch.json>
+//   node scripts/upload-pins.mjs <spec.json | batch.json> [--4x5]   (--4x5 with a spec uploads the feed cards)
 // Takes the same spec file as generate-pins.mjs (or a pinterest batch) and uploads each
 // social-batches/pins/<out>.jpg, then fetches every public url and fails
 // unless all of them answer 200.
@@ -24,7 +24,7 @@ if (!specPath) {
 const input = JSON.parse(fs.readFileSync(specPath, 'utf8'));
 const specs = input.posts
   ? input.posts.flatMap((p) => p.media).filter((m) => m.startsWith(PUBLIC + '/')).map((m) => ({ out: m.slice(PUBLIC.length + 1).replace(/\.jpg$/, '') }))
-  : input;
+  : input.map((s) => (process.argv.includes('--4x5') ? { ...s, out: `${s.out}-4x5` } : s));
 
 const missing = specs.filter((s) => !fs.existsSync(`social-batches/pins/${s.out}.jpg`));
 if (missing.length) {
