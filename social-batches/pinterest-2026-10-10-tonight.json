@@ -7,8 +7,12 @@
       "link": "https://beastlyfacts.com/blog/ball-python-enrichment-guide/",
       "title": "Ball Python Enrichment Ideas",
       "board": "Reptile Care & Setups",
-      "media": ["https://beastlyfacts.com/assets/pins/ball-python-enrichment-ideas.jpg"],
-      "alt": ["A ball python crossing a log in a planted enclosure with cork hides and a large water dish, above a numbered list of three enrichment ideas."]
+      "media": [
+        "https://pins.beastlyfacts.com/ball-python-enrichment-ideas.jpg"
+      ],
+      "alt": [
+        "A ball python crossing a log in a planted enclosure with cork hides and a large water dish, above a numbered list of three enrichment ideas."
+      ]
     },
     {
       "date": "2026-10-10 20:00",
@@ -16,8 +20,12 @@
       "link": "https://beastlyfacts.com/blog/chinchilla-cost-guide/",
       "title": "What a Chinchilla Really Costs",
       "board": "Small Pet Care",
-      "media": ["https://beastlyfacts.com/assets/pins/chinchilla-real-cost.jpg"],
-      "alt": ["A gray chinchilla beside a metal exercise wheel inside a wire cage, above a list of the costs of keeping one."]
+      "media": [
+        "https://pins.beastlyfacts.com/chinchilla-real-cost.jpg"
+      ],
+      "alt": [
+        "A gray chinchilla beside a metal exercise wheel inside a wire cage, above a list of the costs of keeping one."
+      ]
     }
   ]
 }
