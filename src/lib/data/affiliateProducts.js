@@ -1686,7 +1686,7 @@ export const AFFILIATE_PRODUCTS = [
 
   {
     slug: "dimming-thermostat-pt02t",
-    product: "2 in 1 Reptile Dimming Thermostat with 2 Socket for Timer & Heating Control, Thermostat for Reptile Heat Lamp Heat Pad, PID Temperature Controller, Memory Function (Model: PT02T)",
+    product: "2-in-1 Reptile Dimming Thermostat with 2 Sockets, PT02T",
     category: "Heating & Lighting",
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B0GFD5T3H7?tag=beastlyfacts-20",
@@ -1710,7 +1710,7 @@ export const AFFILIATE_PRODUCTS = [
   },
   {
     slug: "dimming-thermostat-reptizoo-pid",
-    product: "REPTIZOO Dimming Thermostat, PID Temperature Controller with Memory Function, Reptile Thermostat for Reptile Heat lamp, Specifically Designed for Light Heat Bulbs & Heaters",
+    product: "REPTIZOO Dimming Thermostat, PID Controller",
     category: "Heating & Lighting",
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B0BGS517FT?tag=beastlyfacts-20",
@@ -1723,7 +1723,7 @@ export const AFFILIATE_PRODUCTS = [
   },
   {
     slug: "calcium-miner-all-indoor-2pack",
-    product: "Miner-All Reptile Calcium Powder Supplement 6 oz Indoor (2 Pack) | Reptile Calcium with D3 Plus Trace Minerals, Ideal for Majority of Captive Insectivore Reptiles",
+    product: "Miner-All Reptile Calcium Powder with D3, Indoor, 6 oz (2 Pack)",
     category: "Food & Treats",
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B01IQMEZP4?tag=beastlyfacts-20",
@@ -1771,7 +1771,7 @@ export const AFFILIATE_PRODUCTS = [
   },
   {
     slug: "calcium-arcadia-earthpro-revitalised3",
-    product: "Arcadia EarthPro RevitaliseD3 Calcium Powder for Reptiles 100g – All-Natural Full Spectrum Mineral Supplement with Reptile Calcium Carbonate, Bee Pollen, and Magnesium for Complete Nutrition",
+    product: "Arcadia EarthPro RevitaliseD3 Calcium Powder, 100 g",
     category: "Food & Treats",
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B0884CJSPH?tag=beastlyfacts-20",
@@ -1936,7 +1936,7 @@ export const AFFILIATE_PRODUCTS = [
   },
   {
     slug: "hide-zoomed-habba-hut-medium",
-    product: "Zoomed Medium Habba Hut Reptile Hide - Half Natural Wood Log Hide for Reptiles & Includes DBDPet Pro-Tip Guide",
+    product: "Zoomed Habba Hut Reptile Hide, Medium",
     category: "Decor & Enrichment",
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B092HDK2S4?tag=beastlyfacts-20",
@@ -1948,7 +1948,7 @@ export const AFFILIATE_PRODUCTS = [
   },
   {
     slug: "feeding-tongs-lasnten-long-rubber-tip",
-    product: "Lasnten 2 Pcs Extra Long Stainless Steel Reptile Feeding Tongs with Rubber Tip 10 Inch, 10.5 Inch Bearded Dragon Aquarium Straight and Curved Long Tweezer Terrarium Feeder Tool for Tank(Silver)",
+    product: "Lasnten Long Stainless Steel Feeding Tongs with Rubber Tip, 2 Pack",
     category: "Feeding & Watering",
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B0CBKD64LP?tag=beastlyfacts-20",
@@ -1972,7 +1972,7 @@ export const AFFILIATE_PRODUCTS = [
   },
   {
     slug: "thermostat-bn-link-on-off",
-    product: "BN-LINK Reptile Thermostat Temperature Controller, Digital Heat Mat Thermostat for Seed Starting, Plant Germination, Greenhouse, Incubator, Brooder, Brewing, Reptiles Tank,40-108°F, 1000W, ETL Listed",
+    product: "BN-LINK Digital Heat Mat Thermostat, 1000W, 40 to 108°F",
     category: "Heating & Lighting",
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B01I15S6OM?tag=beastlyfacts-20",
@@ -1984,7 +1984,7 @@ export const AFFILIATE_PRODUCTS = [
   },
   {
     slug: "enclosure-repti-zoo-36x18x18-50gal",
-    product: "REPTI ZOO 50 Gallon PVC Reptile Enclosure, 36x18x18 inch Reptile Tank for Ball Python Bearded Dragon Snake Gecko, Reptile Terrarium Lounge Habitat with Glass Sliding Door & Top Screen Ventilation",
+    product: "REPTI ZOO 50 Gallon PVC Reptile Enclosure, 36 x 18 x 18 in",
     category: "Enclosures & Cages",
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B0CJB82285?tag=beastlyfacts-20",
@@ -1996,7 +1996,7 @@ export const AFFILIATE_PRODUCTS = [
   },
   {
     slug: "uvi-meter-solarmeter-6-5r",
-    product: "Solarmeter Model 6.5R Reptile UV Index Meter, Handheld Digital Radiometer for Measuring Ultraviolet Light, Measures 280-400 nm with Range from 0-199.9 UV Index, Made in USA, ABS Polymer, Black",
+    product: "Solarmeter Model 6.5R Reptile UV Index Meter",
     category: "Heating & Lighting",
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B076GXJFJG?tag=beastlyfacts-20",
@@ -2017,7 +2017,7 @@ export const AFFILIATE_PRODUCTS = [
 
   {
     slug: "calcium-sugar-glider-vitamin-combo",
-    product: "Exotic Nutrition Sugar Glider Vitamin Combo Pack - Powder Multivitamin & Powder Calcium Supplement for Pet Sugar Gliders",
+    product: "Exotic Nutrition Sugar Glider Vitamin and Calcium Combo Pack",
     category: "Food & Treats",
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B08DP3H5N9?tag=beastlyfacts-20",
@@ -2029,7 +2029,7 @@ export const AFFILIATE_PRODUCTS = [
   },
   {
     slug: "calcium-tortoise-turtle-herbivorous-sulcata",
-    product: "Sulcata Tortoise Calcium & Multivitamin Powder - Herpetologist Formulated Vitamin and Mineral Powder for Reptiles with High Fiber - 30 Day Supply in Shaker Bottle for Tortoise Lovers!",
+    product: "Sulcata Tortoise Calcium and Multivitamin Powder, 30 Day Supply",
     category: "Food & Treats",
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B0F79VJMKD?tag=beastlyfacts-20",
@@ -2041,7 +2041,7 @@ export const AFFILIATE_PRODUCTS = [
   },
   {
     slug: "feeding-tongs-entomology-forceps-fine-tip",
-    product: "Entomology Forceps Set by MMOBIEL [5 Pcs] – Stainless Steel Precision Instruments with Rubber Tip Forceps Tweezers for Entomology, Insect/Bug/Butterfly Pinning, Dissecting, Taxidermy and Delicate Work",
+    product: "MMOBIEL Rubber-Tip Entomology Forceps Set, 5 Pcs",
     category: "Feeding & Watering",
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B0DCJXXMCT?tag=beastlyfacts-20",
@@ -2053,7 +2053,7 @@ export const AFFILIATE_PRODUCTS = [
   },
   {
     slug: "feeding-tongs-short-soft-tip-4pack",
-    product: "4-Pack Reptile Feeding Tongs Set - Hygienic Anti-Slip Green Tweezers for Bearded Dragons, Lizards, Snakes, Aquariums & Small Animals (Five Colors to Choose from)",
+    product: "Reptile Feeding Tongs Set, Anti-Slip Soft Tip, 4 Pack",
     category: "Feeding & Watering",
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B0FB3PRD2Y?tag=beastlyfacts-20",
@@ -2065,7 +2065,7 @@ export const AFFILIATE_PRODUCTS = [
   },
   {
     slug: "substrate-zoo-med-reptisand-burrowing",
-    product: "Zoo Med ReptiSand, 10 Pounds, Desert White | Natural, For Bearded Dragons, Leopard Geckos & Desert Species, Chemical-Free, Ideal for Digging, Burrowing & Egg Laying",
+    product: "Zoo Med ReptiSand, Desert White, 10 lb",
     category: "Substrate",
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B0002DIZKC?tag=beastlyfacts-20",
@@ -2077,7 +2077,7 @@ export const AFFILIATE_PRODUCTS = [
   },
   {
     slug: "substrate-hermit-crab-flukers-sand-coco",
-    product: "Fluker's All Natural Premium Hermit Crab Sand Substrate, Sand Mixture with Coconut Fiber, For Hermit Crab Tanks, 12 lbs",
+    product: "Fluker's Hermit Crab Sand Substrate with Coconut Fiber, 12 lb",
     category: "Substrate",
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B0B52DC9VB?tag=beastlyfacts-20",
@@ -2090,7 +2090,7 @@ export const AFFILIATE_PRODUCTS = [
   },
   {
     slug: "substrate-tarantula-coconut-fiber-peat",
-    product: "VCEPJH Loose Coconut Fiber Substrate, 2 Pack Natural Coco Coir Reptile Bedding Tarantula Substrate Soil Habitat Accessories for Tortoise Snake Bearded Dragon Spiders Hermit Crabs",
+    product: "VCEPJH Loose Coconut Fiber Substrate, 2 Pack",
     category: "Substrate",
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B0CY23K32S?tag=beastlyfacts-20",
@@ -2114,7 +2114,7 @@ export const AFFILIATE_PRODUCTS = [
   },
   {
     slug: "bulb-mega-ray-mercury-vapor-basking-combo",
-    product: "Mega-Ray Mercury Vapor UV Light Bulb/Lamp for Reptile and Amphibian Use Tortoise Lizard, UVA UVB, High-Intensity Heat Bulb of UV and Basking - 160 Watts (120V)",
+    product: "Mega-Ray Mercury Vapor UVA/UVB Basking Bulb, 160 Watts",
     category: "Heating & Lighting",
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B00TRI4NPY?tag=beastlyfacts-20",
@@ -2138,7 +2138,7 @@ export const AFFILIATE_PRODUCTS = [
   },
   {
     slug: "soaking-tub-large-38in",
-    product: "Reptile Tray (38\"x38\") Bathing Pool basking Platform for Aquatic Turtle Bearded Dragon Lizard Gecko Frog, Plastic Outdoor Water Shallow Bowl Grey Large",
+    product: "Reptile Bathing Tray with Basking Platform, 38 x 38 in, Large",
     category: "Water & Humidity Care",
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B0FNVWJRQL?tag=beastlyfacts-20",
@@ -2174,7 +2174,7 @@ export const AFFILIATE_PRODUCTS = [
   },
   {
     slug: "cork-bark-bits-mini",
-    product: "Cork Bark Bits - for Orchids, Airplants, Reptiles, Frogs, Springtails, Isopods, Terrariums, and Crafts (8)",
+    product: "Cork Bark Bits for Terrariums, Mini",
     category: "Decor & Enrichment",
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B0C7D8XSJ9?tag=beastlyfacts-20",
@@ -2186,7 +2186,7 @@ export const AFFILIATE_PRODUCTS = [
   },
   {
     slug: "chew-chinchilla-mineral-lava-blocks",
-    product: "PINVNBY 9 Pcs Lava Blocks for Chinchillas, Hamster Chew Stones Square Mineral Calcium Bunny Teeth Pumice Grinding Chew Toys for Guinea Pig Rat Rodent",
+    product: "PINVNBY Lava Block Chew Stones, 9 Pcs",
     category: "Small Mammal & Exotic Pet Gear",
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B0F6V5ZZR6?tag=beastlyfacts-20",
@@ -2198,7 +2198,7 @@ export const AFFILIATE_PRODUCTS = [
   },
   {
     slug: "chew-guinea-pig-natural-sticks",
-    product: "Rabbit Chew Toys, Toys for Guinea Pigs & Hamsters - Natural Chew Sticks & Balls Set for Small Animals, Dental Care Treats for Chinchillas, Bunny - 20+ Toys for Teeth Health (32 Pieces)",
+    product: "Natural Chew Sticks and Balls Set for Small Animals, 32 Pieces",
     category: "Small Mammal & Exotic Pet Gear",
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B0G41RJPZJ?tag=beastlyfacts-20",
@@ -2210,7 +2210,7 @@ export const AFFILIATE_PRODUCTS = [
   },
   {
     slug: "chew-rabbit-bamboo-sticks",
-    product: "2.2Lb/1000g Natural Sweet Bamboo Chew Toys Chew Sticks Bamboo Sticks Teething Toy for Rabbit, Bunny, Guinea Pig, Hamster, Chinchilla, Bunny, Rat and Other Small Animals",
+    product: "Natural Bamboo Chew Sticks, 2.2 lb",
     category: "Small Mammal & Exotic Pet Gear",
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B0FNM64GL1?tag=beastlyfacts-20",
@@ -2222,7 +2222,7 @@ export const AFFILIATE_PRODUCTS = [
   },
   {
     slug: "dental-kit-cat-virbac-cet",
-    product: "Virbac C.E.T. Oral Hygiene Kit for Cats | Seafood Flavor Toothpaste | Fingerbrush and Pet Toothbrush",
+    product: "Virbac C.E.T. Oral Hygiene Kit for Cats, Seafood Flavor",
     category: "Dog & Cat Gear",
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B00D1YH3P2?tag=beastlyfacts-20",
@@ -2234,7 +2234,7 @@ export const AFFILIATE_PRODUCTS = [
   },
   {
     slug: "dental-kit-dog-virbac-cet",
-    product: "Virbac C.E.T. Oral Hygiene Kit for Dogs | Poultry-Flavor Toothpaste | Fingerbrush and Pet Toothbrush, (Pack of 2)",
+    product: "Virbac C.E.T. Oral Hygiene Kit for Dogs, Poultry Flavor, 2 Pack",
     category: "Dog & Cat Gear",
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B0GHDFXQDB?tag=beastlyfacts-20",
@@ -2246,7 +2246,7 @@ export const AFFILIATE_PRODUCTS = [
   },
   {
     slug: "litter-cat-purina-tidy-cats-clumping",
-    product: "Purina Tidy Cats Clumping Cat Litter Odor Control, Free and Clean Unscented Multi Cat Litter - 16 lb. Bag",
+    product: "Purina Tidy Cats Clumping Cat Litter, Free and Clean Unscented, 16 lb",
     category: "Dog & Cat Gear",
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B0D2FYM5T3?tag=beastlyfacts-20",
@@ -2258,7 +2258,7 @@ export const AFFILIATE_PRODUCTS = [
   },
   {
     slug: "carrier-cat-petmate-hard-sided",
-    product: "Petmate Dog Crates for Small Dogs & Cat Carriers, Two-Door Plastic Pet Kennel, Top & Front Loading, Made in USA, 19\", White",
+    product: "Petmate Two-Door Hard-Sided Pet Carrier, 19 in, White",
     category: "Dog & Cat Gear",
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B006060VCU?tag=beastlyfacts-20",
@@ -2270,7 +2270,7 @@ export const AFFILIATE_PRODUCTS = [
   },
   {
     slug: "bird-toys-katumo-small-parrot-variety",
-    product: "KATUMO Bird Toys, Parakeet Swing Parrot Ladder Cockatiel Perch Conure Hanging Bell Toys for Parakeet Conure Cockatiel Mynah Love Bird Small Birds",
+    product: "KATUMO Small Bird Toy Set with Swing, Ladder, Perch and Bell",
     category: "Decor & Enrichment",
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B095G51MZG?tag=beastlyfacts-20",
@@ -2282,7 +2282,7 @@ export const AFFILIATE_PRODUCTS = [
   },
   {
     slug: "nightlight-amber-plug-in",
-    product: "2 Pack Amber Night Light, Dusk to Dawn Sensor, Warm Glare-Free Reflected Glow, 3-Level Dimmer, Auto On/Off, Plug-in LED Nightlight for Bedroom, Kids, Bathroom, Sleep, Baby Nursery, Toddler",
+    product: "Amber Plug-In LED Night Light with Dusk to Dawn Sensor, 2 Pack",
     category: "Heating & Lighting",
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B0B1C8Q5Z2?tag=beastlyfacts-20",
@@ -2294,7 +2294,7 @@ export const AFFILIATE_PRODUCTS = [
   },
   {
     slug: "betta-tank-5-gallon-starter-kit",
-    product: "Vimvins 5 Gallon Glass Small Fish Tank with Filter Light and Lid, Betta Aquarium Starter Kits",
+    product: "Vimvins 5 Gallon Glass Aquarium Starter Kit with Filter, Light and Lid",
     category: "Aquarium Equipment",
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B0F1SLXRMH?tag=beastlyfacts-20",
@@ -2306,7 +2306,7 @@ export const AFFILIATE_PRODUCTS = [
   },
   {
     slug: "betta-substrate-caribsea-freshwater-sand",
-    product: "CaribSea Super Naturals Aquascape Sunset Gold - 10 lb - Natural Substrate for Freshwater Aquariums, Perfect for Aquascaping & Creating Vibrant Landscapes",
+    product: "CaribSea Super Naturals Sunset Gold Aquarium Sand, 10 lb",
     category: "Substrate",
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B0DQQZ69J6?tag=beastlyfacts-20",
@@ -2330,7 +2330,7 @@ export const AFFILIATE_PRODUCTS = [
   },
   {
     slug: "rabbit-carrier-petsfit",
-    product: "Petsfit 16 X 9 X 9 Inches Rabbit Carrier, Portable Bunny Carrier with Ventilation Holes, Guinea Pig Carrier for Small Animals, Chinchilla, Hedgehog, Squirrel",
+    product: "Petsfit Small Animal Carrier with Ventilation Holes, 16 x 9 x 9 in",
     category: "Small Mammal & Exotic Pet Gear",
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B00EN63LLM?tag=beastlyfacts-20",
@@ -2354,7 +2354,7 @@ export const AFFILIATE_PRODUCTS = [
   },
   {
     slug: "grooming-comb-hairbuster",
-    product: "Small Pet Select - Hair Buster Comb for Rabbits, Cats and Dogs, Metal Pet Comb for Shedding and Detangling, Grooming Tool for Small Pets with Long and Short Fur",
+    product: "Small Pet Select Hair Buster Metal Grooming Comb",
     category: "Small Mammal & Exotic Pet Gear",
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B06ZZXF81G?tag=beastlyfacts-20",
@@ -2366,7 +2366,7 @@ export const AFFILIATE_PRODUCTS = [
   },
   {
     slug: "rabbit-litter-box-pinvnby",
-    product: "PINVNBY Extra Large Corner Litter Box for Rabbits, Guinea Pigs, Ferrets | 18.3\" Fan-Shaped Potty Trainer with Anti-Spill Guard, Durable Plastic & Cage Clips | Easy-Clean Small Animal Toilet Pan (Blue)",
+    product: "PINVNBY Extra Large Corner Litter Box, 18.3 in",
     category: "Small Mammal & Exotic Pet Gear",
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B09F698GWQ?tag=beastlyfacts-20",
@@ -2378,7 +2378,7 @@ export const AFFILIATE_PRODUCTS = [
   },
   {
     slug: "small-mammal-play-pack-seagrass",
-    product: "Small Pet Select Tiny Paws Seagrass Play Pack, for Guinea Pig, Rabbit, Bunny, Toys, Hideout Tunnel, Cage Accessories",
+    product: "Small Pet Select Tiny Paws Seagrass Play Pack",
     category: "Small Mammal & Exotic Pet Gear",
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B0F37K1Z91?tag=beastlyfacts-20",
@@ -2390,7 +2390,7 @@ export const AFFILIATE_PRODUCTS = [
   },
   {
     slug: "rabbit-exercise-pen-midwest-folding-30in",
-    product: "MidWest Homes for Pets Folding Metal Puppy / Dog Exercise Pen, Indoor/Outdoor Playpen with No Door, Provides 16 Sq Feet of Play Space, 30-Inches Tall, Black E-Coated",
+    product: "MidWest Folding Metal Exercise Pen, 30 in, No Door, Black",
     category: "Small Mammal & Exotic Pet Gear",
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B000H8YTJI?tag=beastlyfacts-20",
@@ -2774,7 +2774,7 @@ export const AFFILIATE_PRODUCTS = [
   // --- Batch 9: veiled chameleon / ferret / hognose snake / hamster / blue tongue skink / white's tree frog / pacman frog ---
   {
     slug: "ferret-hammock-niteangel-nap-sack",
-    product: "Niteangel Hanging Hammock Nap Sack Swing Bag Pet Sleeper for Ferret Rat Sugar Glider and Other Small Animals",
+    product: "Niteangel Hanging Hammock Nap Sack",
     category: "Small Mammal & Exotic Pet Gear",
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B07N658NL6?tag=beastlyfacts-20",
@@ -3165,7 +3165,7 @@ export const AFFILIATE_PRODUCTS = [
   },
   {
     slug: "canary-shallow-bird-bath",
-    product: "Lixit Quick Lock Bird Cage Bath for Lovebirds, Canaries, Finches, Parakeets, and Cockatiels",
+    product: "Lixit Quick Lock Bird Cage Bath",
     category: "Water & Humidity Care",
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B000I6ORHS?tag=beastlyfacts-20",
@@ -3213,7 +3213,7 @@ export const AFFILIATE_PRODUCTS = [
   },
   {
     slug: "argentine-tegu-uvb-46in",
-    product: "LUCKY HERP T5 Reptile Light Fixture Combo Kit 54W, UVB Reptile Light Fixture with Desert UVB 10.0 46\" Fluorescent Tube",
+    product: "LUCKY HERP T5 Reptile Light Fixture Combo Kit, 54W, Desert UVB 10.0, 46 in",
     category: "Heating & Lighting",
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B0C7MTKC5S?tag=beastlyfacts-20",
@@ -3252,7 +3252,7 @@ export const AFFILIATE_PRODUCTS = [
   },
   {
     slug: "gutload-flukers-orange-cube-cricket-diet-12oz",
-    product: "Fluker's Orange Cube Complete Cricket Diet, Gut Load Food for Feeder Insects and Live Crickets, 12 oz",
+    product: "Fluker's Orange Cube Complete Cricket Diet, 12 oz",
     category: "Food & Supplements",
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B000634JJE?tag=beastlyfacts-20",
@@ -3320,7 +3320,7 @@ export const AFFILIATE_PRODUCTS = [
   },
   {
     slug: "bird-travel-carrier-perch",
-    product: "Bird Travel Carrier, Portable Small Parrot and Parakeet Carrier with Standing Perch and Mat",
+    product: "Portable Small Bird Travel Carrier with Standing Perch and Mat",
     category: "Enclosures & Cages",
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B0BG657ZV9?tag=beastlyfacts-20",
@@ -3439,7 +3439,7 @@ export const AFFILIATE_PRODUCTS = [
   },
   {
     slug: "small-pet-foraging-puzzle",
-    product: "Hamiledyi 3 Pack Guinea Pig Foraging Toys Interactive Wooden Rabbit Enrichment Toys Hamster Hide Treats Snuffle Puzzle Game for Chinchilla Bunny Rat Gerbil",
+    product: "Hamiledyi Wooden Foraging Toys, 3 Pack",
     category: "Small Mammal & Exotic Pet Gear",
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B0DPKP3JBX?tag=beastlyfacts-20",
@@ -3452,7 +3452,7 @@ export const AFFILIATE_PRODUCTS = [
   },
   {
     slug: "small-pet-snuffle-mat",
-    product: "Abizoo Bunny Snuffle Mat Toy, 11.8''x11.8'' Washable Skin Friendly Puzzle Fun Foraging Pad Treat Dispenser Consume Energy for Rabbit Guinea Pigs Ferrets Chinchillas Small Animal Toys Cage Supplies",
+    product: "Abizoo Washable Snuffle Mat, 11.8 x 11.8 in",
     category: "Small Mammal & Exotic Pet Gear",
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B09HBSZXT6?tag=beastlyfacts-20",
@@ -3477,7 +3477,7 @@ export const AFFILIATE_PRODUCTS = [
   },
   {
     slug: "tortoise-forage-seed-mix",
-    product: "Tortoise Forage Seed Mix – Grow Fresh Grazing Greens for Sulcata, Russian & Hermann's Tortoises – Oats, Rye & Alfalfa Blend for Indoor Trays or Outdoor Enclosures – Non-GMO Seed (1 lb)",
+    product: "Tortoise Forage Seed Mix, Oats, Rye and Alfalfa, 1 lb",
     category: "Food & Treats",
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B0H3R2RXFJ?tag=beastlyfacts-20",
@@ -3488,7 +3488,7 @@ export const AFFILIATE_PRODUCTS = [
   },
   {
     slug: "reptile-rolling-treat-dispenser",
-    product: "ALI2 Lizard Feeder Toys Bearded Dragon Enrichment Reptile Interactive Rugby Shape Toy for Bearded Dragon, Lizard, Gecko and Small Animals",
+    product: "ALI2 Rolling Treat Dispenser Toy for Lizards",
     category: "Feeding & Watering",
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B0BVFLSFHC?tag=beastlyfacts-20",
@@ -3513,7 +3513,7 @@ export const AFFILIATE_PRODUCTS = [
   },
   {
     slug: "burrow-tunnel-composable",
-    product: "Niteangel Creative & Composable Hamster Tunnel - DIY & Build Unique Tube Burrow as Hideout for Small Sized Animals Like Hamsters Mouse Gerbils Mice (Corner)",
+    product: "Niteangel Composable Hamster Tunnel, Corner",
     category: "Small Mammal & Exotic Pet Gear",
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B082FBW69F?tag=beastlyfacts-20",
@@ -3525,7 +3525,7 @@ export const AFFILIATE_PRODUCTS = [
   },
   {
     slug: "reptile-extraction-puzzle-board",
-    product: "FlidRunest Bearded Dragon Feeder Puzzle, Wooden Lizard Feeding Box, Reptile Interactive Enrichment Food Feeder Training Treat Dispenser for Lizard Bearded Dragon Frog Hamster",
+    product: "FlidRunest Wooden Feeder Puzzle for Lizards",
     category: "Feeding & Watering",
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B0CZHKGB3M?tag=beastlyfacts-20",
@@ -4700,7 +4700,7 @@ export const AFFILIATE_PRODUCTS = [
   },
   {
     slug: "nail-clippers-pet-republique-small-animal",
-    product: "Pet Republique Cat Nail Clippers, Stainless Steel, for Cats, Kittens, Hamsters, Rabbits, Birds and Small Breed Animals",
+    product: "Pet Republique Stainless Steel Nail Clippers for Small Animals",
     category: "Small Mammal & Exotic Pet Gear",
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B01GBSSKVU?tag=beastlyfacts-20",
