@@ -101,10 +101,12 @@ function panelHead(spec) {
 }
 
 // Quiet disclosure in the bottom right corner, where a photo credit would sit:
-// small, regular weight, muted ink. On by default because most site images
-// are generated; a spec using a real photo sets "ai": false.
+// small, regular weight, muted ink. X and Threads cards only (--4x5): the
+// owner keeps it off Pinterest pins, which Pinterest labels on its own. On
+// by default there because most site images are generated; a spec using a
+// real photo sets "ai": false.
 function aiTag(spec) {
-  if (spec.ai === false) return '';
+  if (!FEED || spec.ai === false) return '';
   return `<text x="${W - 40}" y="${H - 22}" text-anchor="end" font-family="Atkinson-Regular" font-size="20" fill="${INK}" fill-opacity="0.5">Illustrated with AI</text>`;
 }
 

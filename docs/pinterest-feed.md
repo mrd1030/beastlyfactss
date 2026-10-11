@@ -27,8 +27,8 @@ beats volume.
    sometimes, avoid). Panels refuse any "$" or cost token: a pin outlives the
    cost sheet and the law it would quote. Samples are in
    `social-batches/pinterest-layout-samples.json`.
-   Every card carries "Illustrated with AI" in small muted text in the bottom
-   right corner (owner, 2026-10-10: honest, and quiet enough not to read as
+   X and Threads cards (--4x5) carry "Illustrated with AI" in small muted text in the bottom
+   right corner; Pinterest pins do not (owner, 2026-10-10: quiet enough not to read as
    a warning). A card on a real licensed photo from IMAGE_CREDITS.md sets
    `"ai": false` in its spec and drops it. `"focusY"` (0 to 1) pins the crop
    when automatic cropping loses the animal.
