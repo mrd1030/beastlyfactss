@@ -76,7 +76,7 @@ own little search index:
 
 - Bearded Dragon Care
 - Reptile Care & Setups
-- Weird Animal Facts
+- Wild Animal Facts
 - Aquarium & Fish Keeping
 - Small Pet Care
 - Pet Bird Care
