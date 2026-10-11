@@ -34,18 +34,25 @@ if (missing.length) {
 
 for (const { out } of specs) {
   execFileSync('npx', ['wrangler', 'r2', 'object', 'put', `${BUCKET}/${out}.jpg`,
-    '--file', `social-batches/pins/${out}.jpg`, '--content-type', 'image/jpeg', '--remote'],
+    '--file', `social-batches/pins/${out}.jpg`, '--content-type', 'image/jpeg', '--cache-control', 'no-store', '--remote'],
   { stdio: ['ignore', 'ignore', 'inherit'], shell: process.platform === 'win32' });
   console.log(`uploaded ${out}.jpg`);
 }
 
+// Download each card and compare it byte for byte with the local file. A 200
+// alone proved nothing on 2026-10-10: Cloudflare's edge kept serving the
+// first upload of every overwritten card for over an hour. Uploads now carry
+// no-store so an overwrite shows at once, and a card already cached under its
+// old bytes needs a new file name.
 const bad = [];
 for (const { out } of specs) {
-  const res = await fetch(`${PUBLIC}/${out}.jpg`, { method: 'HEAD' });
+  const res = await fetch(`${PUBLIC}/${out}.jpg`, { cache: 'no-store' });
+  const served = Buffer.from(await res.arrayBuffer());
   if (res.status !== 200) bad.push(`${out}.jpg (${res.status})`);
+  else if (!served.equals(fs.readFileSync(`social-batches/pins/${out}.jpg`))) bad.push(`${out}.jpg (serving an old version, cache ${res.headers.get('cf-cache-status')}; give it a new name)`);
 }
 if (bad.length) {
-  console.error(`uploaded but not publicly reachable: ${bad.join(', ')}`);
+  console.error(`uploaded but not served correctly: ${bad.join(', ')}`);
   process.exit(1);
 }
 console.log(`${specs.length} pins live at ${PUBLIC}`);
