@@ -3069,7 +3069,7 @@
       },
       {
         "q": "Is an arctic fox legal in Pennsylvania?",
-        "a": "Unclear, and the opposite of the red fox. The Game Commission's canid line at 58 Pa. Code § 137.1(a)(2) names the coyote, the red and gray fox and the wolf, so the arctic fox is not on it. What arguably reaches it is § 137.1(a)(11), the catch-all for wildlife captive bred in another state, which depends on an agency reading of the word wildlife rather than on any text naming the animal."
+        "a": "Unclear. Pennsylvania names the red and gray fox on its prohibited list and not this one, so the only rule that could reach an arctic fox is the general bar on wildlife bred in another state, and whether a captive arctic fox counts as wildlife there is a question for the Game Commission. Ask in writing before buying."
       },
       {
         "q": "Is an arctic fox legally the same as a red fox?",
@@ -6444,6 +6444,85 @@
     "imageHeight": 1080
   },
   {
+    "path": "/content/guides/big-cat-legal-guide.mdx",
+    "slug": "big-cat-legal-guide",
+    "title": "Big Cat Laws by State After the Big Cat Public Safety Act",
+    "seoTitle": "Big Cat Laws by State After the Big Cat Public Safety Act",
+    "seoDescription": "Big cat laws by state after the 2022 Big Cat Public Safety Act: what the federal ban does, why Texas, Montana and Nevada still matter, and how cougars differ.",
+    "lastUpdated": "2026-10-11",
+    "noIndex": false,
+    "excerpt": "Since 20 December 2022 no private person may acquire a tiger, lion or cougar anywhere in the United States, and the owners who registered by 18 June 2023 may keep what they had and nothing more. The state table still matters, because the states set the conditions on those animals, and because the cougar is a native cat that game law reaches on its own.",
+    "date": "2026-10-11",
+    "category": "Legal",
+    "categories": [
+      "Legal",
+      "Cats"
+    ],
+    "tags": [
+      "Big Cats",
+      "Tiger",
+      "Lion",
+      "Cougar",
+      "Big Cat Public Safety Act",
+      "Legal",
+      "Exotic Pet Laws",
+      "Federal Law"
+    ],
+    "readTime": 12,
+    "difficulty": "Intermediate",
+    "image": "/assets/guides/big-cat-legal-guide.jpg",
+    "imageAlt": "Adult tiger walking through tall grass with its head low and eyes forward",
+    "emoji": "🐅",
+    "lastReviewed": "2026-10-11",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Can you own a tiger in Texas after the Big Cat Act?",
+        "a": "Not a new one. Texas still reads as a permit state, because Health and Safety Code § 822.101(4) names the tiger as a dangerous wild animal and § 822.103 lets a person keep one with a certificate of registration from local animal control and $100,000 of liability insurance. But 16 U.S.C. 3372(e) makes it unlawful for any person to breed or possess a tiger unless an exception applies, and the only private exception is an animal born before 20 December 2022 and registered with the Fish and Wildlife Service by 18 June 2023. A Texan who registered keeps the certificate, the insurance and the cat. Nobody in Texas may acquire another."
+      },
+      {
+        "q": "Is it legal to own a tiger in the US?",
+        "a": "Only if you already did. The Big Cat Public Safety Act, enacted 20 December 2022, bars breeding or possessing a tiger, lion, leopard, snow leopard, clouded leopard, jaguar, cheetah or cougar, or any hybrid of them, outside licensed exhibitors, sanctuaries, state institutions and veterinarians. A private owner could keep an animal held before that date by registering it with the Fish and Wildlife Service within 180 days, and that window closed on 18 June 2023. Registered owners may not breed, acquire or sell a big cat, and may not allow public contact with it."
+      },
+      {
+        "q": "What happens to big cats owned before the Act?",
+        "a": "They stay with their owners for life if they were registered by 18 June 2023. The Service's guidance says that only registered pre-Act big cats may stay privately owned, that a death, a move or a change in how breeding and public contact are prevented must be reported within 10 days, and that an unregistered animal places its owner in violation of the law unless another exception applies. State conditions continue on top: Texas's certificate and insurance, Kansas's $250,000 of insurance or bond, Michigan's local permit, Ohio's sterilization and caging rules."
+      },
+      {
+        "q": "Can you own a cougar or mountain lion as a pet?",
+        "a": "No new cougar may be acquired privately anywhere in the country, because Puma concolor is a prohibited wildlife species under the Act. The state rules differ from the tiger's because the cougar is native: Wisconsin designates it a harmful wild animal needing a captive wild animal farm license, Oklahoma puts a native cat over fifty pounds behind a commercial wildlife breeder's license, Alabama lists it as a game animal, Wyoming calls it trophy game and bars private ownership outright, and Oregon confines any cougar acquired after 20 January 2017 to accredited, exhibitor and sanctuary facilities."
+      },
+      {
+        "q": "Does the Big Cat Public Safety Act apply to servals, bobcats and lynx?",
+        "a": "No. The prohibited wildlife species are the lion, tiger, leopard, snow leopard, clouded leopard, jaguar, cheetah and cougar, with their hybrids. A serval, caracal, bobcat, lynx or ocelot is outside the Act and is decided entirely by state law, which is why the serval is a permit animal in Texas and South Dakota and a banned one in twenty states."
+      },
+      {
+        "q": "Can zoos and sanctuaries still keep big cats, and is cub petting legal?",
+        "a": "Licensed exhibitors keep their exception only if they allow no direct public contact with a big cat and keep the animal at least 15 feet from the public during exhibition unless a permanent barrier prevents contact. A sanctuary qualifies only if it does not commercially trade in big cats, does not breed them, allows no direct public contact and does not display them off site. Cub petting fails both tests, which is what the Act was written to end."
+      },
+      {
+        "q": "Which states had no big cat law before the Act?",
+        "a": "Five have no state rule reaching a tiger or lion even now: Wisconsin, Nevada, Alabama, Oklahoma and North Carolina. In each the federal Act is the whole answer. Only North Carolina is also silent on the cougar; the other four reach it as a native animal."
+      },
+      {
+        "q": "Is it legal to own a lion?",
+        "a": "The lion gets the tiger's answer everywhere, with one wrinkle. 50 CFR 17.11 lists Panthera leo leo as endangered and Panthera leo melanochaita as threatened. Wyoming bars a permit for anything on the federal list, threatened or endangered, so both are caught. Missouri's exemption for nonnative mammals carves out only federally endangered species, and the rule does not say how a lion of unrecorded subspecies is treated, so that cell is unclear. Federally, no new lion may be privately possessed in any case."
+      }
+    ],
+    "relatedProducts": [],
+    "factFile": false,
+    "animalDay": null,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 5,
+    "headingCount": 9,
+    "ledeMatchesExcerpt": false,
+    "imageWidth": 1168,
+    "imageHeight": 784
+  },
+  {
     "path": "/content/guides/bioactive-setups-bearded-dragons.mdx",
     "slug": "bioactive-setups-bearded-dragons",
     "title": "Bioactive Setups for Bearded Dragons",
@@ -8523,6 +8602,82 @@
     "truth": null,
     "sourceCount": 5,
     "headingCount": 6,
+    "ledeMatchesExcerpt": false,
+    "imageWidth": 1168,
+    "imageHeight": 784
+  },
+  {
+    "path": "/content/guides/bobcat-legal-guide.mdx",
+    "slug": "bobcat-legal-guide",
+    "title": "Are Bobcats Legal? A Native Cat Caught From Both Sides",
+    "seoTitle": "Are Bobcats Legal? 26 Bans, 20 Permit States, by State",
+    "seoDescription": "Bobcat laws by state: 26 bans, 20 permit states, 4 unclear. Why a native wild cat gets more permits than a serval, Texas registration, Ohio fur-bearer rule.",
+    "lastUpdated": "2026-10-11",
+    "noIndex": false,
+    "excerpt": "The bobcat is the one wild cat on this map that is both a felid, caught by every family-wide cat clause written for the serval, and a native furbearer, caught by the trapping chapters written for the raccoon. The surprise is the second half: twenty states issue a permit, more than for any other wild cat, because a furbearer license is a thing a keeper can hold.",
+    "date": "2026-10-11",
+    "category": "Legal",
+    "categories": [
+      "Legal",
+      "Cats"
+    ],
+    "tags": [
+      "Bobcat",
+      "Legal",
+      "Exotic Pet Laws",
+      "Wildlife Law",
+      "Pet Ownership"
+    ],
+    "readTime": 11,
+    "difficulty": "Intermediate",
+    "image": "/assets/guides/bobcat-legal.jpg",
+    "imageAlt": "Bobcat standing on a rock with its tufted ears, spotted coat and short tail in clear view",
+    "emoji": "🐈",
+    "lastReviewed": "2026-10-11",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Is it legal to own a bobcat in Texas?",
+        "a": "Yes, with the same paperwork as a tiger. Health and Safety Code § 822.101(4) names the bobcat at clause (H), two entries above the serval, so § 822.103 requires a certificate of registration from the local animal control office or the sheriff, at most $50 an animal, § 822.107 requires liability insurance of at least $100,000 per occurrence, and § 822.116(b) lets any city or county prohibit the animal outright. The bobcat is excluded from Texas's nongame rules and is not a fur-bearing animal there, so the dangerous wild animal chapter is its only state rule."
+      },
+      {
+        "q": "Can you own a bobcat in Florida?",
+        "a": "Yes, with a Class II permit. 68A-6.002 names 'Bobcats (Lynx rufus)' at Class II item 17, between the lynx and the caracal. The Permit to Possess Class II Wildlife for Personal Use costs $140 a year, requires the applicant to be 18 and to document experience with the species, and requires the facility and caging standards of 68A-6.004. A bobcat taken from the Florida wild is still barred by the general rule against possessing wildlife without a permit."
+      },
+      {
+        "q": "Is a bobcat legal in Ohio?",
+        "a": "Yes, with a $25 noncommercial propagating license, because Ohio treats it as a fur-bearer rather than a lynx. R.C. 1531.01(W) names bobcats among fur-bearing animals, and § 1533.71 licenses holding fur-bearing animals in captivity. The dangerous wild animal list at § 935.01(C)(7)(b) names 'Lynxes, including Canadian lynxes, Eurasian lynxes, and Iberian lynxes', and the bobcat, Lynx rufus, is not among them. If it were, no new keeper could have one at all."
+      },
+      {
+        "q": "Is a bobcat legal in California?",
+        "a": "No. 14 CCR § 671 restricts 'Family Felidae-All species', the order heading names bobcats, and only domestic cats and their hybrids are carved out. The bobcat is a California native furbearer, but § 671 reaches it whatever its origin, and no permit type covers keeping one as a pet."
+      },
+      {
+        "q": "Can you have a pet bobcat in Michigan?",
+        "a": "Yes, with a Permit to Hold Game in Captivity. The DNR's closed list of game that may be held names the bobcat, and the permit covers captive-bred animals only. Michigan's Large Carnivore Act names the lion, leopard, jaguar, tiger, cougar, panther and cheetah, so it does not reach the bobcat."
+      },
+      {
+        "q": "Is a bobcat a lynx under the law?",
+        "a": "It depends on who wrote the list. The bobcat is Lynx rufus, so a rule that says 'genus Lynx' reaches it: Kentucky's 301 KAR 2:082 does. Ohio and West Virginia both list 'Lynxes, including Canadian lynxes, Eurasian lynxes, and Iberian lynxes' and name the bobcat separately as a fur-bearer, which reads as a deliberate exclusion. Texas and Illinois name 'bobcat' and 'lynx' as separate entries on the same list, so the question never arises there."
+      },
+      {
+        "q": "Is it legal to own a bobcat in Pennsylvania?",
+        "a": "No. 58 Pa. Code § 137.1(a)(1) prohibits every felid but the house cat and then writes one bobcat exception: lawfully acquired bobcats may be possessed 'by licensed propagators specifically for propagation for fur farming purposes', and those bobcats and their progeny 'may not be sold or transferred for wildlife pet purposes'. The bobcat is also a Pennsylvania native, so the wild-caught route is closed by § 137.31."
+      },
+      {
+        "q": "Can I keep a bobcat in North Carolina?",
+        "a": "Not as a pet. The bobcat is a North Carolina game animal and a fur-bearer when trapped, so holding one alive needs a captivity license, and G.S. § 113-272.5(a) tells the Executive Director not to issue that license unless the animal 'was not acquired unlawfully or merely as a pet'. The license exists for exhibitors and researchers."
+      }
+    ],
+    "relatedProducts": [],
+    "factFile": false,
+    "animalDay": null,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 5,
+    "headingCount": 9,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
     "imageHeight": 784
@@ -10631,6 +10786,78 @@
     "truth": null,
     "sourceCount": 4,
     "headingCount": 10,
+    "ledeMatchesExcerpt": false,
+    "imageWidth": 1168,
+    "imageHeight": 784
+  },
+  {
+    "path": "/content/guides/canada-lynx-legal-guide.mdx",
+    "slug": "canada-lynx-legal-guide",
+    "title": "Are Canada Lynx Legal? A Threatened Cat, State by State",
+    "seoTitle": "Are Canada Lynx Legal? Federally Threatened, 27 State Bans",
+    "seoDescription": "Canada lynx laws by state: 27 bans, 13 permit states, 9 with no state rule. How the federal threatened listing decides Wisconsin, Wyoming and Oregon outright.",
+    "lastUpdated": "2026-10-11",
+    "noIndex": false,
+    "excerpt": "The Canada lynx is federally threatened in the lower 48, and that one listing decides a handful of state cells by reference and sits underneath every other. Twenty-seven jurisdictions ban it, thirteen issue a permit, nine have no state rule at all, and in every one of those nine a federal permit is still needed to move the cat across a state line in commerce.",
+    "date": "2026-10-11",
+    "category": "Legal",
+    "categories": [
+      "Legal",
+      "Cats"
+    ],
+    "tags": [
+      "Canada Lynx",
+      "Legal",
+      "Exotic Pet Laws",
+      "Wildlife Law",
+      "Pet Ownership"
+    ],
+    "readTime": 11,
+    "difficulty": "Intermediate",
+    "image": "/assets/guides/canada-lynx-legal.jpg",
+    "imageAlt": "Canada lynx standing in snow with its long ear tufts, gray winter coat and broad furred paws in clear view",
+    "emoji": "🐈",
+    "lastReviewed": "2026-10-11",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Can you own a Canada lynx in the United States?",
+        "a": "In nine states with no state permit, in eleven more with one, and nowhere in 27 jurisdictions. Nevada, Tennessee, North Carolina, Kansas, South Carolina, Alabama, Mississippi, Louisiana and Oklahoma place no state rule on it, because their cat rules stop at the big cats or at native cats. Federal law reaches it everywhere: the Canada lynx in the lower 48 is listed as threatened under the Endangered Species Act, so moving one across a state line in commerce needs a federal permit whatever the state says."
+      },
+      {
+        "q": "Is a lynx legal in Texas?",
+        "a": "Yes, with a certificate of registration and insurance. Health and Safety Code § 822.101(4) names 'a lynx' at clause (I), between the bobcat and the serval, so § 822.103 requires a certificate of registration from local animal control or the sheriff, § 822.107 requires liability insurance of at least $100,000 per occurrence, and § 822.116(b) lets any city or county prohibit the animal outright."
+      },
+      {
+        "q": "Can you have a lynx in Florida?",
+        "a": "Yes, with a Class II permit. 68A-6.002 lists 'European and Canadian lynx (Lynx lynx)' at Class II item 16, under the binomial from the years the Canada lynx was treated as a subspecies, and the class list covers taxonomic successors and subspecies. The Permit to Possess Class II Wildlife for Personal Use costs $140 a year and requires documented experience and the caging standards of 68A-6.004."
+      },
+      {
+        "q": "Is it legal to own a lynx in Ohio?",
+        "a": "No. Ohio Rev. Code § 935.01(C)(7)(b) lists 'Lynxes, including Canadian lynxes, Eurasian lynxes, and Iberian lynxes' among dangerous wild animals, and § 935.02(A) says no person shall possess one on or after 1 January 2014. Only someone who registered the animal in 2012 could apply for a permit, and the exemptions run to zoos, research facilities, circuses and sanctuaries. The bobcat, by contrast, is a fur-bearer in Ohio and can be held on a $25 license."
+      },
+      {
+        "q": "Does the Endangered Species Act stop me owning a Canada lynx?",
+        "a": "Not by itself, but it follows the cat everywhere. The contiguous United States population of the Canada lynx is listed as threatened, which bars taking one from the wild and requires a federal permit to move one across state lines in the course of a commercial activity. Several states then adopt that listing by reference: Wisconsin hands any federally listed species to its endangered species permits, Wyoming's regulation says no permit shall be issued for wildlife listed in 50 CFR 17.11, Oregon makes it unlawful to hold any federally listed species, and Pennsylvania's prohibited list reaches any animal the Interior Department lists as threatened."
+      },
+      {
+        "q": "Where is a lynx legal without a permit?",
+        "a": "Nevada, Tennessee, North Carolina, Kansas, South Carolina, Alabama, Mississippi, Louisiana and Oklahoma. Each has a cat rule drawn at the big cats or at its own native cats: Nevada clears 'all felines, except mountain lions and bobcats', South Carolina's ban is drawn at genus Panthera, Oklahoma exempts 'Cats (except native cats and bears)'. In every one of them the federal threatened listing still applies, and in Oklahoma § 7-502(A)(2) separately bars possessing a threatened species except as otherwise provided by law."
+      },
+      {
+        "q": "Is a Canada lynx treated the same as a bobcat?",
+        "a": "Rarely. Both are genus Lynx, but the bobcat is a native furbearer in most states and the Canada lynx is a non-native, federally threatened cat in most of them. Ohio and West Virginia name the Canadian lynx on their dangerous wild animal lists and leave the bobcat out, so the lynx is banned and the bobcat is permitted. Nebraska writes one fur-producer exception for both. Texas, Illinois and Florida name them as separate entries on the same list."
+      }
+    ],
+    "relatedProducts": [],
+    "factFile": false,
+    "animalDay": null,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 5,
+    "headingCount": 9,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
     "imageHeight": 784
@@ -18193,7 +18420,7 @@
     "title": "The Pet Bans That Are Real, and the Ones That Aren't",
     "seoTitle": "Exotic Pet Laws Guide: Every Species We Cover",
     "seoDescription": "No federal law decides exotic pet ownership, states do. This hub indexes every species legal guide, plus a state-by-state map across 50 states, DC and NYC.",
-    "lastUpdated": "2026-10-10",
+    "lastUpdated": "2026-10-11",
     "noIndex": false,
     "excerpt": "No federal law actually decides whether you can own most exotic pets, states and cities do. Here's what federal law really controls, how state law actually works, and a direct index of every species-specific legal guide.",
     "date": "2026-07-17",
@@ -18213,7 +18440,7 @@
     "image": "/assets/guides/exotic-pet-legal-hub.jpg",
     "imageAlt": "Gavel beside a variety of exotic pets representing US exotic pet law",
     "emoji": "⚖️",
-    "lastReviewed": "2026-10-10",
+    "lastReviewed": "2026-10-11",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -18260,7 +18487,7 @@
     "title": "The Federal Laws That Reach a Pet Owner",
     "seoTitle": "Federal Exotic Pet Laws: What Actually Applies",
     "seoDescription": "The six federal laws that touch exotic pets: the Lacey Act, injurious wildlife, CITES, the big cat bans, the FDA turtle rule and the Wild Bird Conservation Act.",
-    "lastUpdated": "2026-09-12",
+    "lastUpdated": "2026-10-11",
     "noIndex": false,
     "excerpt": "Six federal laws reach private exotic pet keeping in the US, and only one of them bans owning an animal. The rest decide what may cross a border, what may cross a state line, and who may sell it.",
     "date": "2026-09-12",
@@ -38967,7 +39194,7 @@
     "slug": "raccoon-legal-guide",
     "title": "Are Pet Raccoons Legal? The Rabies-Vector Rule, State by State",
     "seoTitle": "Are Pet Raccoons Legal? 26 Bans, 18 Permits, by State",
-    "seoDescription": "Pet raccoon laws by state: 26 bans, 18 permit states, 3 with a sourcing condition, and 1 with no rule. Why rabies and furbearer statutes decide it, read from the text.",
+    "seoDescription": "Pet raccoon laws by state: 26 bans, 18 permit states, 3 with a sourcing condition, 1 with no rule. Why rabies and furbearer statutes decide the answer.",
     "lastUpdated": "2026-10-10",
     "noIndex": false,
     "excerpt": "Twenty-six jurisdictions ban a pet raccoon and eighteen issue a permit, and almost none of those rules were written about pets. They are furbearer statutes and rabies laws aimed at the wild animal, which is why Kentucky files the raccoon under 'rabies vector species' and Utah hands it to an agricultural damage board.",
@@ -40554,7 +40781,7 @@
         "a": "Yes, with a Permit to Hold Game in Captivity. The DNR's closed list of game that may be held names 'red and gray fox', and the permit covers captive-bred animals only, so a fox taken from the wild cannot be brought under it. Importing one needs a certificate of veterinary inspection, and townships and cities may prohibit it."
       },
       {
-        "q": "Can I keep a red fox in Pennsylvania?",
+        "q": "Can you keep a red fox in Pennsylvania?",
         "a": "No. 58 Pa. Code § 137.1(a)(2) prohibits the coyote, the red and gray fox and the wolf, and its one exception is for licensed propagators 'specifically for propagation for fur farming purposes', whose foxes and their progeny 'may not be sold or transferred for wildlife pet purposes'. The only other live-fox permit lets a trapper hold five wild foxes for urine collection until the season ends and then requires them to be euthanized."
       },
       {
@@ -42036,6 +42263,78 @@
     "sourceCount": 5,
     "headingCount": 10,
     "ledeMatchesExcerpt": true,
+    "imageWidth": 1168,
+    "imageHeight": 784
+  },
+  {
+    "path": "/content/guides/savannah-cat-legal-guide.mdx",
+    "slug": "savannah-cat-legal-guide",
+    "title": "Are Savannah Cats Legal? The Serval Hybrid, State by State",
+    "seoTitle": "Are Savannah Cats Legal? F1 to F5 Rules by State",
+    "seoDescription": "Savannah cat laws by state: Texas treats it as a serval, Ohio clears it by name, New York needs five generations clear, Iowa F4, Maryland under 30 pounds.",
+    "lastUpdated": "2026-10-11",
+    "noIndex": false,
+    "excerpt": "Ohio frees the Savannah cat in the same line that restricts the serval, Georgia's wildlife agency names it as the hybrid it will not allow, and Texas treats it as the serval itself, certificate and $100,000 of insurance included. Six states count its generations and one weighs it.",
+    "date": "2026-10-11",
+    "category": "Legal",
+    "categories": [
+      "Legal",
+      "Cats"
+    ],
+    "tags": [
+      "Savannah Cat",
+      "Legal",
+      "Exotic Pet Laws",
+      "Cats",
+      "Pet Ownership"
+    ],
+    "readTime": 11,
+    "difficulty": "Intermediate",
+    "image": "/assets/guides/savannah-cat-legal.jpg",
+    "imageAlt": "Savannah cat with tall ears and a spotted golden coat standing on a wooden floor",
+    "emoji": "🐈",
+    "lastReviewed": "2026-10-11",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Is a Savannah cat legal in Texas?",
+        "a": "Only with paperwork most cat owners have never heard of. Texas Health and Safety Code § 822.101(4) lists the serval as a dangerous wild animal and then reaches 'any hybrid of an animal listed in this subdivision', so a Savannah of any generation is a dangerous wild animal. § 822.103 bars keeping one without a certificate of registration from the local animal control office, § 822.107 requires at least $100,000 of liability insurance per occurrence, and § 822.116(b) lets any city or county prohibit the animal outright."
+      },
+      {
+        "q": "What generation Savannah cat is legal in New York?",
+        "a": "Upstate, a cat registered with TICA or the American Cat Fanciers Association that is without any wild felid parentage for a minimum of five generations. Counted the way MassWildlife counts its own three-generation rule, that is an F6. Anything earlier is a wild animal under ECL § 11-0103(6)(e) and cannot be kept as a pet. New York City applies no generation exit at all, so no Savannah is lawful in the five boroughs."
+      },
+      {
+        "q": "Is an F1 Savannah cat legal anywhere?",
+        "a": "Yes, in more places than people expect, because most states that restrict cats never wrote a hybrid clause that reaches a serval cross. An F1 is lawful without a permit in Ohio by name, in Indiana by the exemption at the foot of its Class II list, in California, Colorado and Virginia because their domestic cat definitions include hybrids with wild felines, and in Arizona because a wildlife and domestic cross is not wildlife there. It needs a permit in Texas, South Dakota, North Dakota, Wyoming and Delaware, and it is barred in the generation states until it reaches their line."
+      },
+      {
+        "q": "Do I need to register a Savannah cat?",
+        "a": "In most states, no. Texas requires a certificate of registration from the local animal control office. South Dakota requires a ten-dollar possession permit from the Animal Industry Board, renewed each year. North Dakota requires a nontraditional livestock license in hand before the cat is acquired. Everywhere a generation rule applies, the registration that matters is the breed registry paper showing the filial generation, which is what the state will ask to see."
+      },
+      {
+        "q": "Is a Savannah cat legal in Ohio?",
+        "a": "Yes, and Ohio is the clearest yes in the country. Ohio Rev. Code § 935.01(C)(7)(e) lists 'Servals, excluding hybrids with domestic cats commonly known as savannah cats' among dangerous wild animals. The serval itself has been barred since 2014 for anyone who did not register one in 2012, and the Savannah, at any generation, needs nothing from the state. Cities and counties can still regulate it."
+      },
+      {
+        "q": "Is a Savannah cat legal in Georgia?",
+        "a": "No. Georgia's wild animal rule lists 'Family Felidae (cats) - All species' as inherently dangerous, the Department of Natural Resources says hybrids 'and all subsequent generations' need a license, and O.C.G.A. § 27-5-4(b)(1) issues wild animal licenses only to the wild animal trade and to public exhibitors. DNR's own guide names the Savannah as an exotic cat hybrid that is not a legal pet in Georgia."
+      },
+      {
+        "q": "Is a Savannah cat legal in Florida?",
+        "a": "Yes. The serval is a Class II animal in Florida and the rule regulates a hybrid that is indistinguishable from its wild parent at that parent's class, but the Fish and Wildlife Conservation Commission answers the question directly in its captive wildlife FAQ: Savannah cats, Bengal cats and Chausie cats are considered domesticated species and are not regulated by the Captive Wildlife Office."
+      }
+    ],
+    "relatedProducts": [],
+    "factFile": false,
+    "animalDay": null,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 6,
+    "headingCount": 10,
+    "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
     "imageHeight": 784
   },
