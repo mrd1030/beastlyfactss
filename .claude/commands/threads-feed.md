@@ -13,8 +13,9 @@ assumes two tracks.
 - FACT TRACK ONLY. No article posts, no threads from guides, no chronicles.
   Wherever this file describes the article track, skip it.
 - Every post carries a fact photo card: scripts/generate-pins.mjs run with
-  `--4x5`, a spec of { out, image: the fact's own photo, kicker: "Weird animal
-  fact", title: a headline of six words or fewer }. The post text states the
+  `--4x5`, a spec of { out, image: the fact's own photo, kicker: "Wild animal fact"
+  on every card (wild as in crazy, so pets too; never "weird"), title: a headline of
+  six words or fewer }. The post text states the
   fact, so the headline may state it too. Check the crop with
   scripts/pin-crop-sheet.mjs, upload with scripts/upload-pins.mjs, and use
   https://pins.beastlyfacts.com/<out>-4x5.jpg as the media url.
