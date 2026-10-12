@@ -134,7 +134,7 @@ export default function CarePackageProduct() {
   // InStock unconditionally because a PDF cannot run out. Shipping is a free,
   // same-day download. The return policy mirrors the FAQ and Terms: a refund
   // can be requested within 14 days, and nothing is sent back, so no return
-  // method or fee applies.
+  // method applies and the refund costs the buyer nothing.
   const productSchema = {
     '@context': 'https://schema.org',
     '@type': 'Product',
@@ -165,6 +165,7 @@ export default function CarePackageProduct() {
         applicableCountry: 'US',
         returnPolicyCategory: 'https://schema.org/MerchantReturnFiniteReturnWindow',
         merchantReturnDays: 14,
+        returnFees: 'https://schema.org/FreeReturn',
         merchantReturnLink: `${BASE}/terms/`,
       },
     },
