@@ -40,7 +40,7 @@ const FAQS = [
     // so an address in this string ships raw to every scraper. The contact page
     // carries it behind the obfuscation instead.
     q: 'What if it is not what I expected?',
-    a: 'Refunds within 30 days of purchase, no questions asked. Message me from the contact page and we will process it. A refund removes the package from your library and ends your licence to it, so we ask that you delete any copy you downloaded or printed.',
+    a: 'Refunds within 30 days of purchase, no questions asked. Message me from the contact page and I will process it. A refund removes the package from your library and ends your license to it, so I ask that you delete any copy you downloaded or printed.',
   },
   {
     q: 'Are these a substitute for a vet?',
