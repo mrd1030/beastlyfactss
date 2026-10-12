@@ -229,7 +229,7 @@ export default function Facts() {
   const pageDescription = linkedFact
     ? truncateDescription(`${linkedFact.emoji} ${linkedFact.fact}`)
     : activeCategory === 'All'
-      ? 'Browse hundreds of mind-blowing animal facts on Beastly Facts - from weird reptile behaviours to surprising dog science and wild animal trivia.'
+      ? 'Browse hundreds of mind-blowing animal facts on Beastly Facts - from weird reptile behaviors to surprising dog science and wild animal trivia.'
       : `Discover the most surprising and fascinating ${activeCategory} facts on Beastly Facts - curated, verified, and genuinely mind-blowing.`;
   const canonicalPath = linkedFact
     ? `https://beastlyfacts.com/facts/${slugify(linkedFact.title)}/`

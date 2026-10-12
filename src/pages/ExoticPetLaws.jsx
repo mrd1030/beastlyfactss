@@ -412,7 +412,7 @@ export default function ExoticPetLaws() {
                   <ol className="space-y-2 list-decimal pl-4 marker:text-muted-foreground/70">
                     <li>
                       <span className="font-semibold text-foreground">Click or tap any state</span>
-                      {' to see the rule behind its colour, the citation, and a link to the regulation itself. Tap it again to clear it. By keyboard, tab to a state and press Enter or space.'}
+                      {' to see the rule behind its color, the citation, and a link to the regulation itself. Tap it again to clear it. By keyboard, tab to a state and press Enter or space.'}
                     </li>
                     <li>
                       {'The answer appears '}
@@ -429,7 +429,7 @@ export default function ExoticPetLaws() {
                       {', grouped by kind and A to Z within each group. The map, the list and the counts all follow whichever one is selected.'}
                     </li>
                     <li>
-                      {'On the colours: flat gray was read and had no rule, dotted was never read for this animal, and hatched means the rule does not resolve either way. The first two are easy to confuse and mean very different things.'}
+                      {'On the colors: flat gray was read and had no rule, dotted was never read for this animal, and hatched means the rule does not resolve either way. The first two are easy to confuse and mean very different things.'}
                     </li>
                   </ol>
                   <a
@@ -452,7 +452,7 @@ export default function ExoticPetLaws() {
               {/* Assembled as one string for the same hydration reason as the
                   intro above: this caption was a static run followed by a fragment
                   of further text nodes. */}
-              {`Select a state for the rule behind its colour. Alaska, Hawaii and the District of Columbia are drawn out of position so they can be clicked.${cityEntries.length > 0
+              {`Select a state for the rule behind its color. Alaska, Hawaii and the District of Columbia are drawn out of position so they can be clicked.${cityEntries.length > 0
                 ? ` The counts include ${cityEntries.map(([code]) => jurisdictionName(code)).join(' and ')}, which ${cityEntries.length === 1 ? 'has' : 'have'} rules separate from the surrounding state and so cannot be shaded on a state map. Listed in full below.`
                 : ''}${uncheckedStates > 0 ? ' ' : ''}`}
               {uncheckedStates > 0 && (
@@ -594,7 +594,7 @@ export default function ExoticPetLaws() {
               ordering was contorting to produce anyway. */}
           <div className="flex flex-col gap-4">
             <div className="rounded-xl border border-border bg-card p-4">
-              <h2 className="font-display font-bold text-sm text-foreground mb-3">What the colours mean</h2>
+              <h2 className="font-display font-bold text-sm text-foreground mb-3">What the colors mean</h2>
               <ul className="space-y-2.5">
                 {BUCKET_ORDER.map((key) => {
                   const b = STATUS_BUCKETS[key];

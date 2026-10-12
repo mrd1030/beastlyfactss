@@ -42,7 +42,7 @@ const EVENT_NOTES = {
   'world-parrot-day':
     'Started by the World Parrot Trust in 2004, originally to push for an end to wild-caught bird imports into the EU.',
   'world-oceans-day':
-    'Proposed at the 1992 Earth Summit in Rio and formally recognised by the UN in 2008.',
+    'Proposed at the 1992 Earth Summit in Rio and formally recognized by the UN in 2008.',
   'world-sea-turtle-day':
     'The birthday of Archie Carr, the biologist whose work founded modern sea turtle conservation.',
   'world-giraffe-day':

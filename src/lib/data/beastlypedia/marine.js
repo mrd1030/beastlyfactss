@@ -11,7 +11,7 @@ export const marineBeastfiles = [
     habitat: 'Ocean',
     group: 'Marine Life',
     overview:
-      'The giant manta is the largest ray in the world, reaching around seven meters across the wings, and it eats some of the smallest food in the ocean. It swims with its mouth open, funnelling plankton in with a pair of forward-curling cephalic fins and straining it through gill plates. Despite the old name devil ray it has no sting and poses no danger to people. Mantas have the largest brain relative to body size of any fish, and one study reported behavior consistent with self-recognition in a mirror, which is rare outside a small set of mammals and birds.',
+      'The giant manta is the largest ray in the world, reaching around seven meters across the wings, and it eats some of the smallest food in the ocean. It swims with its mouth open, funneling plankton in with a pair of forward-curling cephalic fins and straining it through gill plates. Despite the old name devil ray it has no sting and poses no danger to people. Mantas have the largest brain relative to body size of any fish, and one study reported behavior consistent with self-recognition in a mirror, which is rare outside a small set of mammals and birds.',
     origin:
       'Tropical, subtropical and warm temperate waters worldwide, mostly offshore and oceanic, gathering at coastal cleaning stations and seasonal feeding grounds.',
     notableTraits: [
@@ -291,13 +291,13 @@ export const marineBeastfiles = [
       'A strike that accelerates like a bullet and cavitates the water',
       'Twelve or more photoreceptor types, against three in humans',
       'Poorer fine color discrimination than a human, despite that',
-      'Sees polarized light, including circular polarisation',
+      'Sees polarized light, including circular polarization',
       'Neither a mantis nor a shrimp; it is a stomatopod',
     ],
     conservation:
       'Not assessed. Reef degradation is the general pressure, and the brighter species are collected for aquariums, where they are notorious for cracking glass.',
     funFacts: [
-      'The strike is so fast the water beside the club vaporises, and the collapsing bubble lands a second hit.',
+      'The strike is so fast the water beside the club vaporizes, and the collapsing bubble lands a second hit.',
       'It is the only animal known to detect circularly polarized light.',
       'The 2014 work that overturned the color claim is a good reminder that more receptors does not mean better vision.',
     ],

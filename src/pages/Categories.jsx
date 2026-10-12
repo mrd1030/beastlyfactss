@@ -83,7 +83,7 @@ const SECTIONS = [
     id: 'guides',
     emoji: '📋',
     title: 'Care Guides',
-    blurb: 'Practical care and husbandry guides, organised by animal type.',
+    blurb: 'Practical care and husbandry guides, organized by animal type.',
     viewAll: { to: '/guides/', label: 'All guides' },
     items: GUIDE_CATEGORIES.map(c => ({
       key: c.slug, emoji: c.emoji, label: c.label, to: `/guides/category/${c.slug}/`,
@@ -138,7 +138,7 @@ export default function Categories() {
             <PageBadge icon={BadgeIcon} color="gold" />
             <h1 className="font-display font-bold text-3xl sm:text-4xl text-foreground mb-1">Browse by Category</h1>
             <p className="text-sm text-muted-foreground font-body max-w-lg">
-              Everything on Beastly Facts, organised by animal type. Fun facts, articles, care guides, and species profiles.
+              Everything on Beastly Facts, organized by animal type. Fun facts, articles, care guides, and species profiles.
             </p>
           </motion.div>
         </div>

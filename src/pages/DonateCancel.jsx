@@ -9,7 +9,7 @@ export default function DonateCancel() {
   return (
     <div className="min-h-screen flex items-center justify-center px-4">
       <Helmet>
-        <title>Donation Cancelled | Beastly Facts</title>
+        <title>Donation Canceled | Beastly Facts</title>
         <meta name="robots" content="noindex, nofollow" />
         <meta property="og:image" content="https://beastlyfacts.com/assets/og-default.jpg" />
         <meta property="og:image:width" content="1200" />
@@ -31,9 +31,9 @@ export default function DonateCancel() {
         >
           <XCircle className="w-20 h-20 text-destructive" />
         </motion.div>
-        <h1 className="font-display font-bold text-3xl text-foreground mb-3">Donation Cancelled</h1>
+        <h1 className="font-display font-bold text-3xl text-foreground mb-3">Donation Canceled</h1>
         <p className="text-muted-foreground font-body leading-relaxed mb-6">
-          No worries - your donation was cancelled. Feel free to try again whenever you're ready!
+          No worries - your donation was canceled. Feel free to try again whenever you're ready!
         </p>
         <Link to="/">
           <Button variant="outline" className="w-full font-display font-bold text-lg">Back to Home</Button>

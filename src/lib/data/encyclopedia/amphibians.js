@@ -38,7 +38,7 @@ export const amphibianEncyclopedia = [
       wildDiet: "Insects, worms, mice, other frogs, and small vertebrates",
       wildLifespan: "Not well documented in the wild; about 6 years is the usual figure given, with captive records reaching 14.7 years",
       conservation: "Least Concern (IUCN)",
-      history: "The species entered science through Darwin's voyage. Thomas Bell described it in 1843 as Uperodon ornatum, in the reptiles volume of the Zoology of the Voyage of H.M.S. Beagle, from a specimen labeled Buenos Ayres, with syntypes catalogued at the British Museum; the genus Ceratophrys, where it eventually landed, had been erected by Wied-Neuwied in 1824. Modern keeping rests on two species rather than one, since Cranwell's horned frog, Ceratophrys cranwelli, is bred and sold alongside the ornate. Breeders also cross Ceratophrys cranwelli with the Surinam horned frog to produce the captive hybrid marketed as the fantasy frog.",
+      history: "The species entered science through Darwin's voyage. Thomas Bell described it in 1843 as Uperodon ornatum, in the reptiles volume of the Zoology of the Voyage of H.M.S. Beagle, from a specimen labeled Buenos Ayres, with syntypes cataloged at the British Museum; the genus Ceratophrys, where it eventually landed, had been erected by Wied-Neuwied in 1824. Modern keeping rests on two species rather than one, since Cranwell's horned frog, Ceratophrys cranwelli, is bred and sold alongside the ornate. Breeders also cross Ceratophrys cranwelli with the Surinam horned frog to produce the captive hybrid marketed as the fantasy frog.",
     },
   },
   {
