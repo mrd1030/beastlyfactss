@@ -30,7 +30,7 @@ export default function Terms() {
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
             <PageBadge icon={BadgeIcon} color="teal" />
             <h1 className="font-display font-bold text-3xl sm:text-4xl text-foreground mb-2">Terms of Service</h1>
-            <p className="text-xs text-muted-foreground font-body">Last updated: September 12, 2026</p>
+            <p className="text-xs text-muted-foreground font-body">Last updated: October 12, 2026</p>
           </motion.div>
         </div>
       </div>
@@ -59,7 +59,7 @@ export default function Terms() {
           <Section title="4. Purchases, Donations & Payments">
             <p>Payments on BeastlyFacts.com, whether a purchase or a donation, are processed by Stripe on Stripe's own checkout pages. All transactions are subject to Stripe's Terms of Service. We never receive or store payment card details.</p>
             <p><strong className="text-foreground">Care packages.</strong> Care packages are digital products: a downloadable PDF, sold as a one time purchase with no recurring charge. The download is available on the confirmation page as soon as the payment clears. There is no account to create at checkout. The email address you pay with is what identifies the purchase, and signing in to the library with that address is how you reach it again later. If a package is revised, your purchase gives you the updated file at no extra cost, for as long as the library remains available.</p>
-            <p><strong className="text-foreground">Refunds on purchases.</strong> Care packages can be refunded within 30 days of purchase, no questions asked. Email hello@beastlyfacts.com and we will process it. Nothing here limits any refund or cancellation right you have under the consumer law that applies where you live, which in some places is broader than this.</p>
+            <p><strong className="text-foreground">Refunds on purchases.</strong> Refunds on care packages can be requested within 14 days of purchase. If you would like to request a refund, email hello@beastlyfacts.com or use the contact page, with the package you bought and the reason for the request. Each request is reviewed, and refunds are not automatic. We may decline a request made after 14 days, a request that does not name the package and a reason, or a request from anyone with a pattern of repeated refunds. Nothing here limits any refund or cancellation right you have under the consumer law that applies where you live, which in some places is broader than this.</p>
             <p><strong className="text-foreground">What a refund ends.</strong> A refund ends your licence to the package. We remove the purchase from your library, so it stops appearing there and can no longer be downloaded, and you are asked to delete any copies you have already downloaded or printed. We cannot take back a file that has already been saved, so this part relies on you, but continuing to use a package you have been refunded for is a breach of these Terms.</p>
             <p><strong className="text-foreground">Donations.</strong> Donations are voluntary and are not a purchase of anything. They are non-refundable unless applicable law requires otherwise. Monthly recurring donations can be cancelled at any time by contacting us at hello@beastlyfacts.com.</p>
           </Section>
