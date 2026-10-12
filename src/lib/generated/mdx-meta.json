@@ -3622,6 +3622,82 @@
     "imageHeight": 848
   },
   {
+    "path": "/content/guides/asian-small-clawed-otter-legal-guide.mdx",
+    "slug": "asian-small-clawed-otter-legal-guide",
+    "title": "Are Pet Otters Legal? The Mustelid Clause and the Word Otter",
+    "seoTitle": "Are Pet Otters Legal? 15 Bans, 12 Permits, by State",
+    "seoDescription": "Pet otter laws by state: 15 bans, 12 permit states, 15 with no rule, 7 unclear. Why CITES Appendix I means captive-bred only, and what 'otter' in fur law does.",
+    "lastUpdated": "2026-10-12",
+    "noIndex": false,
+    "excerpt": "Every pet otter in America is an Asian small-clawed otter, and since 2019 every lawful one is domestic captive-bred, because CITES Appendix I closed the border. Inside the country the family name Mustelidae does most of the work: it bans the otter in Maine and Connecticut, licenses it in South Dakota and Virginia, and frees only the ferret. Seven states name 'otter' in a furbearer list and never say which one.",
+    "date": "2026-10-12",
+    "category": "Legal",
+    "categories": [
+      "Legal"
+    ],
+    "tags": [
+      "Otter",
+      "Asian Small-Clawed Otter",
+      "Legal",
+      "Exotic Pet Laws",
+      "Wildlife Law",
+      "Pet Ownership"
+    ],
+    "readTime": 11,
+    "difficulty": "Intermediate",
+    "image": "/assets/guides/asian-small-clawed-otter-legal.jpg",
+    "imageAlt": "Asian small-clawed otter standing on a wet rock with its short-clawed front paws together and its whiskered face toward the camera",
+    "emoji": "🦦",
+    "lastReviewed": "2026-10-12",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Are pet otters legal in the US?",
+        "a": "In some states, for one species. The Asian small-clawed otter, the only otter bred for the trade, needs no state permit in 15 states, takes a permit in 12, is banned in 15 jurisdictions and is undecided in seven. Its 2019 CITES Appendix I listing stopped commercial imports, so a lawful pet otter comes from a domestic breeder working with animals already in the country. The native North American river otter is a furbearer, and each state answers it separately."
+      },
+      {
+        "q": "Is it legal to own an otter in Florida?",
+        "a": "Yes, with a free permit. Florida's rule 68A-6.002 names no otter in Class I or Class II, and its only listed mustelids are the badgers, which leaves the Asian small-clawed otter in Class III. Under 68A-6.003(8) a Class III animal kept as personal use wildlife needs a no-cost permit from the Executive Director, and the otter itself must come from a breeder inside the country, since imports are closed."
+      },
+      {
+        "q": "Can you own an otter in Texas?",
+        "a": "The text will not say. The Asian otter is not on the dangerous wild animal list. Parks and Wildlife Code § 71.001(1) defines a fur-bearing animal as 'wild beaver, otter, mink, ring-tailed cat, badger, skunk, raccoon, muskrat, opossum, fox, or nutria', with no species, and § 71.005(c) requires a propagation license to possess any live fur-bearing animal. Whether 'wild ... otter' reaches a captive-bred Asian otter or only the Texas river otter is a question no Texas text answers, so ask TPWD in writing before buying."
+      },
+      {
+        "q": "Is a pet otter legal in California?",
+        "a": "No. 14 CCR § 671(c)(2)(K)(5) restricts 'Family Mustelidae-All species (D)' and then writes one exception, 'Ambloynx cinerea (Oriental small-clawed otter)-(W)', naming this species under an old genus spelling. The exception only moves it from the detrimental category to the welfare category; it is still restricted, and no California permit type covers keeping one as a pet."
+      },
+      {
+        "q": "Is an otter legal in New York?",
+        "a": "In the state, unclear; in the city, banned. The only mustelids on New York's dangerous animal list are the wolverine and the badgers, so the exotic side is clear. The small game definition at ECL § 11-0103(2)(c) then names 'otter' with no species, and § 11-0107(2) bars possessing small game 'whether taken within the state or coming from without the state'. DEC has published nothing on whether that reaches an Asian otter. New York City Health Code § 161.01(b)(4) names 'otter' in its Mustelidae clause and bans it outright."
+      },
+      {
+        "q": "Do you need a permit for an otter in South Dakota?",
+        "a": "Yes, a $10 possession permit. ARSD 12:68:18:03(1)(d) requires a permit for all nondomestic members of the family Mustelidae, and an otter is a mustelid on every taxonomy. 12:68:18:03.03(4) prices the possession permit at ten dollars an animal to a maximum of one hundred, and a free entry permit covers bringing one in."
+      },
+      {
+        "q": "Can I import an otter from Indonesia or Japan?",
+        "a": "No. The Asian small-clawed otter moved from CITES Appendix II to Appendix I in 2019, and 50 C.F.R. part 23 bars import of an Appendix I specimen for primarily commercial purposes. A pet is a commercial purpose. The only lawful animals are bred domestically from stock already in the country, which is why a breeder's paperwork matters more for this species than for almost any other on the map."
+      },
+      {
+        "q": "Is an otter a ferret under the law?",
+        "a": "No, and the difference is the whole map. Both are mustelids, so every family-wide clause reaches both, and nearly every one of those clauses then writes an exception for the ferret by name: Georgia's Carnivora rule frees 'European ferret', Virginia's Mustelidae row frees 'Mustela putorius furo', Delaware and Vermont clear the ferret and no other mustelid. The otter is what the family clause means after the ferret is taken out of it."
+      }
+    ],
+    "relatedProducts": [],
+    "factFile": false,
+    "animalDay": null,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 5,
+    "headingCount": 9,
+    "ledeMatchesExcerpt": false,
+    "imageWidth": 1168,
+    "imageHeight": 784
+  },
+  {
     "path": "/content/guides/avian-gastric-yeast-guide.mdx",
     "slug": "avian-gastric-yeast-guide",
     "title": "Avian Gastric Yeast (Megabacteriosis): The Silent Weight-Loss Disease",
@@ -13375,6 +13451,77 @@
     "imageHeight": 784
   },
   {
+    "path": "/content/guides/coati-legal-guide.mdx",
+    "slug": "coati-legal-guide",
+    "title": "Are Coatis Legal? The Procyonid the Lists Name by Accident",
+    "seoTitle": "Are Coatis Legal? Legal in 24 States, 13 Bans, by State",
+    "seoDescription": "Coati laws by state: legal in 24 states, banned in 13 jurisdictions, 11 permit states. Oklahoma, Nebraska and Texas name it, and Arizona treats it as a native.",
+    "lastUpdated": "2026-10-12",
+    "noIndex": false,
+    "excerpt": "The coati shares the kinkajou's map almost line for line, with three differences that come from being named. Oklahoma's exemption list and Nebraska's import list carry the word 'coatimundi' and nothing for the kinkajou, which makes the coati the freer animal in both. Texas lists the white-nosed coati as state threatened, which makes it the banned one there.",
+    "date": "2026-10-12",
+    "category": "Legal",
+    "categories": [
+      "Legal"
+    ],
+    "tags": [
+      "Coati",
+      "Legal",
+      "Exotic Pet Laws",
+      "Wildlife Law",
+      "Pet Ownership"
+    ],
+    "readTime": 9,
+    "difficulty": "Intermediate",
+    "image": "/assets/guides/coati-legal.jpg",
+    "imageAlt": "White-nosed coati walking along a fallen trunk with its long banded tail held straight up and its pale snout toward the ground",
+    "emoji": "🐾",
+    "lastReviewed": "2026-10-12",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Is it legal to own a coati in Texas?",
+        "a": "No, not as a pet. The white-nosed coati is a Texas native at the edge of its range and is state threatened under 31 TAC § 65.175, and TPWD says its regulations prohibit the taking, possession, transportation or sale of a state threatened species without a permit. Those permits are issued for science, zoos, education and rehabilitation. The nongame possession caps cannot help, because § 65.325(b)(8) takes threatened species out of that subchapter."
+      },
+      {
+        "q": "Can you own a coati in Arizona?",
+        "a": "Only with a special license, and the fact that it lives there makes it harder, not easier. R12-4-406(F) restricts all species of the order Carnivora, so a coati needs a special license whatever its origin. The white-nosed coati is also an Arizona native, so a wild one falls under the live-take rules in R12-4-404, R12-4-405 and Commission Order 43, which require a hunting license and do not turn a captured animal into a lawful pet."
+      },
+      {
+        "q": "Is a coati legal in Florida?",
+        "a": "Yes, with a free permit. Florida's rule 68A-6.002 leaves the coati out of Class I and Class II, which puts it in Class III, and FWC's personal pet page names the coatimundi as a common Class III animal. Under 68A-6.003(8) a Class III animal kept as personal use wildlife needs a no-cost permit from the Executive Director."
+      },
+      {
+        "q": "Is a coati legal in Oklahoma?",
+        "a": "Yes, with no state license. OAC 800:25-25-3(a) lists the wildlife exempt from import and export permits and from commercial and noncommercial wildlife breeder's licenses, and item (36) is 'Coatimundi', on its own line two entries after the fennec fox. The kinkajou is not on that list and needs both the import permit and the breeder's license, so in Oklahoma the coati is the easier procyonid to keep."
+      },
+      {
+        "q": "Can I have a coati in Nebraska?",
+        "a": "Yes. Nebraska's 166 NAC 8 § 001.08A is a closed list of wildlife that may be imported, and it names 'Coatimundi, Nasua spp.', which takes the whole genus. The coati is not native, so it is not a wild mammal needing a Captive Wildlife Permit under § 37-246. The kinkajou is not on the import list, so it cannot be brought in at all."
+      },
+      {
+        "q": "Do you need a permit for a coati in New Jersey?",
+        "a": "Yes, an Individual Hobby permit. N.J.A.C. 7:25-4.3(a)2.iii names 'Coatimundi--Nasua spp.' on the list of exotic species requiring a permit for possession, right after the kinkajou. Procyonids are not among the species New Jersey treats as potentially dangerous, so the hobby route is open."
+      },
+      {
+        "q": "Which states ban coatis outright?",
+        "a": "Thirteen jurisdictions. California, Connecticut and New York City take the family Procyonidae; Georgia and Rhode Island take the order Carnivora with no pet license behind it; Hawaii takes the genus Nasua on its research-and-exhibition list; New Mexico lists the genus in Group IV as a state protected species; Texas lists the white-nosed coati as state threatened; New Hampshire prohibits any species its tables do not name; Colorado will not license a pet regulated mammal; Montana's white list of exotic wildlife does not carry it; Alaska cannot permit an unlisted game animal as a pet; and the District of Columbia's closed list has nothing a coati fits."
+      }
+    ],
+    "relatedProducts": [],
+    "factFile": false,
+    "animalDay": null,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 5,
+    "headingCount": 9,
+    "ledeMatchesExcerpt": false,
+    "imageWidth": 1168,
+    "imageHeight": 784
+  },
+  {
     "path": "/content/guides/cockatiel-cost-guide.mdx",
     "slug": "cockatiel-cost-guide",
     "title": "How Much Does a Cockatiel Really Cost?",
@@ -18420,7 +18567,7 @@
     "title": "The Pet Bans That Are Real, and the Ones That Aren't",
     "seoTitle": "Exotic Pet Laws Guide: Every Species We Cover",
     "seoDescription": "No federal law decides exotic pet ownership, states do. This hub indexes every species legal guide, plus a state-by-state map across 50 states, DC and NYC.",
-    "lastUpdated": "2026-10-11",
+    "lastUpdated": "2026-10-12",
     "noIndex": false,
     "excerpt": "No federal law actually decides whether you can own most exotic pets, states and cities do. Here's what federal law really controls, how state law actually works, and a direct index of every species-specific legal guide.",
     "date": "2026-07-17",
@@ -18440,7 +18587,7 @@
     "image": "/assets/guides/exotic-pet-legal-hub.jpg",
     "imageAlt": "Gavel beside a variety of exotic pets representing US exotic pet law",
     "emoji": "⚖️",
-    "lastReviewed": "2026-10-11",
+    "lastReviewed": "2026-10-12",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -30150,6 +30297,81 @@
     "ledeMatchesExcerpt": false,
     "imageWidth": 2400,
     "imageHeight": 1792
+  },
+  {
+    "path": "/content/guides/kinkajou-legal-guide.mdx",
+    "slug": "kinkajou-legal-guide",
+    "title": "Are Kinkajous Legal? The Procyonid the Law Reaches by Family",
+    "seoTitle": "Are Kinkajous Legal? Legal in 23 States, 14 Bans, by State",
+    "seoDescription": "Kinkajou laws by state: legal in 23 states, banned in 14, 11 permit states, 2 unclear. Why the raccoon's family decides it, and where the list stops short.",
+    "lastUpdated": "2026-10-12",
+    "noIndex": false,
+    "excerpt": "Almost no statute names the kinkajou. The law reaches it through the raccoon's family, Procyonidae, or through the whole order Carnivora, and where a list stops at the word raccoon the kinkajou walks past it. Read from the text, it is legal with no permit in 23 states, banned in 14 jurisdictions, and a permit animal in 11.",
+    "date": "2026-10-12",
+    "category": "Legal",
+    "categories": [
+      "Legal"
+    ],
+    "tags": [
+      "Kinkajou",
+      "Legal",
+      "Exotic Pet Laws",
+      "Wildlife Law",
+      "Pet Ownership"
+    ],
+    "readTime": 10,
+    "difficulty": "Intermediate",
+    "image": "/assets/guides/kinkajou-legal.jpg",
+    "imageAlt": "Kinkajou clinging to a branch at night with its prehensile tail wrapped around the limb and its large dark eyes toward the camera",
+    "emoji": "🐾",
+    "lastReviewed": "2026-10-12",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Is it legal to own a kinkajou in Florida?",
+        "a": "Yes, with a free permit. The kinkajou is not named in Class I or Class II under 68A-6.002, so it falls into Class III, 'all other wildlife not listed herein', and 68A-6.003(8) says persons possessing Class III wildlife as personal use wildlife shall obtain a no-cost permit from the Executive Director. It is not one of the 22 animals exempted from the permit at 68A-6.003(14), so the paperwork applies."
+      },
+      {
+        "q": "Is a kinkajou legal in Texas?",
+        "a": "Yes, and no state permit applies. The kinkajou is not one of the twenty clauses of the dangerous wild animal list at Health and Safety Code § 822.101(4), it is not a fur-bearing animal under Parks and Wildlife Code § 71.001(1), whose only procyonids are the raccoon and the ring-tailed cat, and it is not indigenous, so the nongame rules do not reach it. Cities and counties can still prohibit it, and some do."
+      },
+      {
+        "q": "Can you have a pet kinkajou in California?",
+        "a": "No. 14 CCR § 671(c)(2)(K)(4) lists 'Family Procyonidae-All species-(D)', the D marking the family as detrimental, and the order heading names kinkajous outright. The only exceptions under the family line are the two pandas, the ringtail and the cacomistle, which are moved to the welfare category rather than freed. No California permit type covers keeping one as a pet."
+      },
+      {
+        "q": "Is it legal to own a kinkajou in New York?",
+        "a": "In the state, yes; in the city, no. New York's procyonid entry at 6 NYCRR § 180.1(b)(5) reads 'Raccoons in the Genus Procyon', which reaches raccoons and stops, and the kinkajou appears nowhere else on the dangerous animal list. New York City Health Code § 161.01(b)(5) prohibits 'All Procyonidae' and names the kinkajou in the clause, so the animal that is unregulated in Albany is banned in Brooklyn."
+      },
+      {
+        "q": "Do you need a permit for a kinkajou in New Jersey?",
+        "a": "Yes, an Individual Hobby permit. N.J.A.C. 7:25-4.3(a)2.ii names 'Kinkajou--Potos flavus' on the list of exotic species requiring a permit for possession, the second mammal after the ferret. New Jersey does not treat procyonids as potentially dangerous, so the hobby permit route that is closed to foxes, bears and wild cats is open to the kinkajou."
+      },
+      {
+        "q": "Is a kinkajou legal in Ohio?",
+        "a": "Yes, with no state permit. It is not on the dangerous wild animal list at R.C. 935.01(C), and the Division of Wildlife's captivity license under § 1533.71 reaches game birds, game quadrupeds, reptiles, amphibians and fur-bearing animals, and the fur-bearing definition at § 1531.01(W) names the raccoon by common name and no other procyonid. Ohio says in terms that a municipality may regulate what the state does not."
+      },
+      {
+        "q": "Is a kinkajou a raccoon under the law?",
+        "a": "It depends on where the clause stops. California, Connecticut, Virginia, New York City and Hawaii take the family Procyonidae or name the kinkajou, so it is treated like a raccoon there. New York stops at the genus Procyon, Pennsylvania's family line says 'All species of raccoons', Texas and Ohio name the raccoon as a furbearer by common name, and Alabama bars 'species of raccoon'. In each of those the kinkajou is a procyonid but not a raccoon, and the rule written for the raccoon does not reach it."
+      },
+      {
+        "q": "Which states ban kinkajous outright?",
+        "a": "Fourteen jurisdictions. California, Connecticut and New York City take the family Procyonidae; Georgia and Rhode Island take the order Carnivora with no pet license behind it; Hawaii, Maine, New Hampshire and New Mexico name Potos flavus on a research-or-exhibition list; Nebraska's closed import list names the coati and not the kinkajou; Colorado will not license a pet regulated mammal; Montana's white list of exotic wildlife does not carry it; Alaska cannot permit an unlisted game animal as a pet; and the District of Columbia's closed list of seven pet categories has nothing a kinkajou fits."
+      }
+    ],
+    "relatedProducts": [],
+    "factFile": false,
+    "animalDay": null,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 5,
+    "headingCount": 10,
+    "ledeMatchesExcerpt": false,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/koi-conure-slider-scorpion-overview.mdx",
@@ -47973,6 +48195,82 @@
     "ledeMatchesExcerpt": false,
     "imageWidth": 1200,
     "imageHeight": 800
+  },
+  {
+    "path": "/content/guides/two-toed-sloth-legal-guide.mdx",
+    "slug": "two-toed-sloth-legal-guide",
+    "title": "Are Sloths Legal? Legal in 27 States, Banned by Name in a Few",
+    "seoTitle": "Are Pet Sloths Legal? Legal in 27 States, 11 Bans, by State",
+    "seoDescription": "Pet sloth laws by state: legal in 27, permit in 12, banned in 11, 1 restricted, 1 unclear. Which states name the two-toed sloth, and where silence means legal.",
+    "lastUpdated": "2026-10-12",
+    "noIndex": false,
+    "excerpt": "A two-toed sloth needs no state permit in 27 jurisdictions, because the dangerous-animal lists never mention it and the native-wildlife rules never reach it. Eleven ban it, seven of those by naming the order, the family or the genus, twelve issue a permit, Arizona restricts the whole order, and Pennsylvania's text will not decide.",
+    "date": "2026-10-12",
+    "category": "Legal",
+    "categories": [
+      "Legal"
+    ],
+    "tags": [
+      "Two-Toed Sloth",
+      "Sloth",
+      "Legal",
+      "Exotic Pet Laws",
+      "Wildlife Law",
+      "Pet Ownership"
+    ],
+    "readTime": 11,
+    "difficulty": "Intermediate",
+    "image": "/assets/guides/two-toed-sloth-legal.jpg",
+    "imageAlt": "Two-toed sloth hanging upside down from a branch",
+    "emoji": "🦥",
+    "lastReviewed": "2026-10-12",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Can you own a sloth in Florida?",
+        "a": "Yes, with a free permit. No sloth is on Florida's Class I or Class II lists or on the no-permit list, so it falls to Class III, 'All other wildlife not listed herein', and the no-cost Permit to Possess Class III Wildlife for Personal Use under 68A-6.003(8). Sloths have their own caging standard at 68A-6.0128, which the permit holder has to meet."
+      },
+      {
+        "q": "Is it legal to own a sloth in Texas?",
+        "a": "Yes, with no state permit. Texas's dangerous wild animal list at Health and Safety Code § 822.101(4) is a closed list of nineteen named mammals and their hybrids, from the lion to the gorilla, and no sloth is on it. Nothing in the Parks and Wildlife Code reaches a nonnative mammal of this kind. Cities and counties were not checked."
+      },
+      {
+        "q": "Are sloths legal in California?",
+        "a": "No. 14 CCR § 671(c)(2)(B) restricts 'Order Xenarthra-Sloths, Anteaters, Armadillos, etc. All species', and files sloths under Bradypodidae with a welfare marking. The order-wide 'All species' reaches the two-toed sloths whatever family they are now placed in, and no permit type covers pet keeping."
+      },
+      {
+        "q": "Can you have a pet sloth in New York?",
+        "a": "In the state, yes; in the city, no. ECL § 11-0103(6)(e) defines wild animal with the words 'includes, and is limited to', the list names no sloth, and none is among the dangerous animals in 6 NYCRR 180.1, so the state does not restrict one. New York City's Health Code § 161.01(b)(22) bars 'All sloth and armadillo (Edentala)'."
+      },
+      {
+        "q": "Which states ban sloths by name?",
+        "a": "Seven, at some taxonomic level. California restricts the order Xenarthra, Georgia the order Pilosa, Hawaii names both sloth genera on its research-and-exhibition list, New York City names 'All sloth and armadillo', Maine puts Hoffmann's two-toed sloth in Category 1, Colorado rules on 'Choloepodidae spp. Two-toed sloths' as regulated wildlife, and New Hampshire's controlled table marks the two-toed sloth for exhibitors only. Arizona restricts the order Xenarthra without quite banning it."
+      },
+      {
+        "q": "Do I need a permit for a sloth in Utah, Idaho or Wyoming?",
+        "a": "Yes, in all three. Utah's Table 3b-1 names 'Two-toed sloths Choloepus didactylus, Choloepus hoffmanni' as controlled mammals, so a certificate of registration is required before importation or possession. Idaho requires a captive possession license for any wildlife that is not a conventional pet, and no sloth is one. Wyoming's permit for other warm-blooded wildlife 'may be authorized upon approval', which is discretionary. Montana, by contrast, clears the Linnaeus's two-toed sloth on its noncontrolled list and names no Hoffmann's."
+      },
+      {
+        "q": "Is a sloth protected under federal law?",
+        "a": "Not a two-toed sloth. The federal endangered list at 50 CFR 17.11 carries one sloth, the Brazilian three-toed sloth, so the federal-list rules in Wyoming and New Mexico reach that species and leave Choloepus alone. A CITES listing, whichever appendix a seller cites, governs crossing a national border, not keeping the animal once it is here."
+      },
+      {
+        "q": "Where is a sloth legal with no permit at all?",
+        "a": "Twenty-seven jurisdictions on the text: Wisconsin, New York, Connecticut, Oregon, Washington, Ohio, Texas, Michigan, Illinois, Minnesota, Virginia, Maryland, Tennessee, North Carolina, Iowa, Kentucky, Missouri, Kansas, South Carolina, Montana, West Virginia, South Dakota, Alabama, Indiana, North Dakota, Mississippi and Louisiana. Oregon and Montana name it on an allow list; the rest never mention it. Kentucky still needs a transportation permit to bring one in, and local ordinances were not checked anywhere."
+      }
+    ],
+    "relatedProducts": [],
+    "factFile": false,
+    "animalDay": null,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 5,
+    "headingCount": 9,
+    "ledeMatchesExcerpt": false,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/ultimate-birdwatching-guide-best-places-times-tips-2026.mdx",

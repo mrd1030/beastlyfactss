@@ -30,6 +30,11 @@
     "excerpt": "The world's largest rodent is legal in 23 US jurisdictions, banned in 12, and needs a permit in 13. Almost none of those rules mention the capybara at all: they are rules about the order Rodentia..."
   },
   {
+    "slug": "coati-legal-guide",
+    "title": "Are Coatis Legal? The Procyonid the Lists Name by Accident",
+    "excerpt": "The coati shares the kinkajou's map almost line for line, with three differences that come from being named. Oklahoma's exemption list and Nebraska's import list carry the word 'coatimundi' and..."
+  },
+  {
     "slug": "emperor-scorpion-legal-guide",
     "title": "Are Emperor Scorpions Legal? Ten Places Restrict Them",
     "excerpt": "Montana clears the emperor scorpion by name while banning every pet tarantula. Maine does the reverse. The one rule that follows this species everywhere is federal and it is about export paperwork..."
@@ -50,9 +55,19 @@
     "excerpt": "Exactly one state bans hamsters, and it is not the one people guess. California, which restricts more animals than anywhere else, clears both the golden hamster and the dwarfs by name, then bans the..."
   },
   {
+    "slug": "kinkajou-legal-guide",
+    "title": "Are Kinkajous Legal? The Procyonid the Law Reaches by Family",
+    "excerpt": "Almost no statute names the kinkajou. The law reaches it through the raccoon's family, Procyonidae, or through the whole order Carnivora, and where a list stops at the word raccoon the kinkajou walks..."
+  },
+  {
     "slug": "madagascar-hissing-cockroach-legal-guide",
     "title": "Are Madagascar Hissing Cockroaches Legal to Own?",
     "excerpt": "Most state wildlife law was written for animals with a backbone, and the hissing cockroach lands in the hole that leaves. Four jurisdictions ban it, one requires an agriculture permit, and three..."
+  },
+  {
+    "slug": "asian-small-clawed-otter-legal-guide",
+    "title": "Are Pet Otters Legal? The Mustelid Clause and the Word Otter",
+    "excerpt": "Every pet otter in America is an Asian small-clawed otter, and since 2019 every lawful one is domestic captive-bred, because CITES Appendix I closed the border. Inside the country the family name..."
   },
   {
     "slug": "raccoon-legal-guide",
@@ -98,6 +113,11 @@
     "slug": "serval-legal-guide",
     "title": "Are Servals Legal? Why 20 Jurisdictions Ban This Cat",
     "excerpt": "Thirty-five of the 52 jurisdictions restrict the serval, twenty of them outright. Ohio bans the cat and expressly legalizes its hybrid, and Montana clears it by name."
+  },
+  {
+    "slug": "two-toed-sloth-legal-guide",
+    "title": "Are Sloths Legal? Legal in 27 States, Banned by Name in a Few",
+    "excerpt": "A two-toed sloth needs no state permit in 27 jurisdictions, because the dangerous-animal lists never mention it and the native-wildlife rules never reach it. Eleven ban it, seven of those by naming..."
   },
   {
     "slug": "snapping-turtle-legal-guide",
