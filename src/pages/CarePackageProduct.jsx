@@ -131,7 +131,10 @@ export default function CarePackageProduct() {
 
   // Product schema rather than the site-wide Article shape: this page is a
   // thing for sale, and the offer is what a rich result needs. availability is
-  // InStock unconditionally because a PDF cannot run out.
+  // InStock unconditionally because a PDF cannot run out. Shipping is a free,
+  // same-day download. The return policy mirrors the FAQ and Terms: a refund
+  // can be requested within 14 days, and nothing is sent back, so no return
+  // method or fee applies.
   const productSchema = {
     '@context': 'https://schema.org',
     '@type': 'Product',
@@ -147,6 +150,23 @@ export default function CarePackageProduct() {
       priceCurrency: 'USD',
       availability: 'https://schema.org/InStock',
       seller: { '@type': 'Organization', name: 'Beastly Facts' },
+      shippingDetails: {
+        '@type': 'OfferShippingDetails',
+        shippingRate: { '@type': 'MonetaryAmount', value: 0, currency: 'USD' },
+        shippingDestination: { '@type': 'DefinedRegion', addressCountry: 'US' },
+        deliveryTime: {
+          '@type': 'ShippingDeliveryTime',
+          handlingTime: { '@type': 'QuantitativeValue', minValue: 0, maxValue: 0, unitCode: 'DAY' },
+          transitTime: { '@type': 'QuantitativeValue', minValue: 0, maxValue: 0, unitCode: 'DAY' },
+        },
+      },
+      hasMerchantReturnPolicy: {
+        '@type': 'MerchantReturnPolicy',
+        applicableCountry: 'US',
+        returnPolicyCategory: 'https://schema.org/MerchantReturnFiniteReturnWindow',
+        merchantReturnDays: 14,
+        merchantReturnLink: `${BASE}/terms/`,
+      },
     },
   };
 
