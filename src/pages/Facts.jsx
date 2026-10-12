@@ -229,8 +229,8 @@ export default function Facts() {
   const pageDescription = linkedFact
     ? truncateDescription(`${linkedFact.emoji} ${linkedFact.fact}`)
     : activeCategory === 'All'
-      ? 'Browse hundreds of mind-blowing animal facts on Beastly Facts - from weird reptile behaviors to surprising dog science and wild animal trivia.'
-      : `Discover the most surprising and fascinating ${activeCategory} facts on Beastly Facts - curated, verified, and genuinely mind-blowing.`;
+      ? 'Browse hundreds of mind-blowing animal facts on Beastly Facts, from weird reptile behaviors to surprising dog science and wild animal trivia.'
+      : `Discover the most surprising and fascinating ${activeCategory} facts on Beastly Facts: curated, verified, and genuinely mind-blowing.`;
   const canonicalPath = linkedFact
     ? `https://beastlyfacts.com/facts/${slugify(linkedFact.title)}/`
     : activeCategory === 'All'
@@ -263,7 +263,7 @@ export default function Facts() {
         <meta property="og:image" content={pageImage} />
         {!factImage && <meta property="og:image:width" content="1200" />}
         {!factImage && <meta property="og:image:height" content="630" />}
-        <meta property="og:image:alt" content={linkedFact ? `${linkedFact.animal} - ${linkedFact.title}` : 'Beastly Facts - animal facts collection'} />
+        <meta property="og:image:alt" content={linkedFact ? `${linkedFact.animal}: ${linkedFact.title}` : 'Beastly Facts: animal facts collection'} />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content={pageTitle} />
         <meta name="twitter:description" content={pageDescription} />
