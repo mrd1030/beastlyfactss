@@ -85,7 +85,7 @@ export default function Privacy() {
           </Section>
 
           <Section title="4. Affiliate Marketing Disclosure">
-            <p>BeastlyFacts.com participates in affiliate marketing programs, including the Amazon Associates program. As an Amazon Associate, I earn from qualifying purchases. This means we may earn a commission when you click on or make purchases through our affiliate links. These commissions help support the research and content creation on this site. All affiliate links are clearly marked (e.g., "#ad" or "paid link"), and our participation does not influence the integrity of our advice or recommendations.</p>
+            <p>BeastlyFacts.com participates in affiliate marketing programs, including the Amazon Associates program. As an Amazon Associate, I earn from qualifying purchases. This means we may earn a commission when you click on or make purchases through our affiliate links. These commissions help support the research and content creation on this site. Every page with affiliate links carries a disclosure near those links, and our participation does not influence the integrity of our advice or recommendations.</p>
           </Section>
 
           <Section title="5. Third-Party Services">
