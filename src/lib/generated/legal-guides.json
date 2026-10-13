@@ -65,6 +65,11 @@
     "excerpt": "Most state wildlife law was written for animals with a backbone, and the hissing cockroach lands in the hole that leaves. Four jurisdictions ban it, one requires an agriculture permit, and three..."
   },
   {
+    "slug": "black-bear-legal-guide",
+    "title": "Are Pet Black Bears Legal? The Most Restricted Animal on the Map",
+    "excerpt": "Thirty-five jurisdictions ban a pet black bear and not one state allows it without a permit, which makes it the most restricted animal on this map. The surprise is the other fourteen. Because the..."
+  },
+  {
     "slug": "asian-small-clawed-otter-legal-guide",
     "title": "Are Pet Otters Legal? The Mustelid Clause and the Word Otter",
     "excerpt": "Every pet otter in America is an Asian small-clawed otter, and since 2019 every lawful one is domestic captive-bred, because CITES Appendix I closed the border. Inside the country the family name..."
@@ -78,6 +83,11 @@
     "slug": "skunk-legal-guide",
     "title": "Are Pet Skunks Legal? The Seventeen-State List, Checked",
     "excerpt": "Every pet skunk site repeats the same list of seventeen states where a skunk is legal, and the statutes do not agree with it. Alabama is on most versions and bars the animal in regulation. Descenting..."
+  },
+  {
+    "slug": "gray-squirrel-legal-guide",
+    "title": "Are Pet Squirrels Legal? The Eastern Gray Is a Game Animal, State by State",
+    "excerpt": "The eastern gray squirrel has a hunting season in most of the states where it lives, and that is the rule that decides whether you can keep one. Read across all 52 jurisdictions it comes to 19 bans..."
   },
   {
     "slug": "prairie-dog-legal-guide",
@@ -135,9 +145,19 @@
     "excerpt": "Two places will not let you keep a veiled chameleon, and neither one banned the species. Washington DC left every lizard off a list of seven allowed pets. Hawaii bars anything it has not approved..."
   },
   {
+    "slug": "wolfdog-legal-guide",
+    "title": "Are Wolfdogs Legal? Counted by Generation, by Percentage, or by the Word Wolf",
+    "excerpt": "No animal on this map splits the states five ways like the wolfdog: 12 bans, 5 permits, 8 conditional, 17 legal and 10 unclear. The reason is that statutes define the hybrid three different ways, by..."
+  },
+  {
     "slug": "big-cat-legal-guide",
     "title": "Big Cat Laws by State After the Big Cat Public Safety Act",
     "excerpt": "Since 20 December 2022 no private person may acquire a tiger, lion or cougar anywhere in the United States, and the owners who registered by 18 June 2023 may keep what they had and nothing more. The..."
+  },
+  {
+    "slug": "white-tailed-deer-legal-guide",
+    "title": "Is It Legal to Keep a Deer? Why No State Is a Clean Yes",
+    "excerpt": "A white-tailed deer is the one animal on this map with no clean legal state. It is big game everywhere it lives, and every state that allows a captive one routes it through a deer-farm license, an..."
   },
   {
     "slug": "ball-python-legal-guide",

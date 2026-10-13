@@ -7652,6 +7652,82 @@
     "imageHeight": 784
   },
   {
+    "path": "/content/guides/black-bear-legal-guide.mdx",
+    "slug": "black-bear-legal-guide",
+    "title": "Are Pet Black Bears Legal? The Most Restricted Animal on the Map",
+    "seoTitle": "Are Pet Black Bears Legal? 35 Bans, 14 Permits, by State",
+    "seoDescription": "Pet black bear laws by state: 35 bans, 14 permit states, none legal without one. Game-breeder and menagerie permits are the only route; West Virginia's is $2.",
+    "lastUpdated": "2026-10-13",
+    "noIndex": false,
+    "excerpt": "Thirty-five jurisdictions ban a pet black bear and not one state allows it without a permit, which makes it the most restricted animal on this map. The surprise is the other fourteen. Because the black bear is a native game animal across most of its range, the permits that exist are game-breeder and menagerie permits, and West Virginia's is two dollars.",
+    "date": "2026-10-13",
+    "category": "Legal",
+    "categories": [
+      "Legal"
+    ],
+    "tags": [
+      "Black Bear",
+      "Bear",
+      "Legal",
+      "Exotic Pet Laws",
+      "Wildlife Law",
+      "Pet Ownership"
+    ],
+    "readTime": 12,
+    "difficulty": "Advanced",
+    "image": "/assets/guides/black-bear-legal.jpg",
+    "imageAlt": "American black bear standing in a clearing with its black coat, rounded ears and pale muzzle in clear view",
+    "emoji": "🐻",
+    "lastReviewed": "2026-10-13",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Is it legal to own a black bear in the United States?",
+        "a": "Nowhere without a permit, and in 35 jurisdictions not at all. Fourteen states issue a permit, and it is almost never a pet permit: it is a game-breeder license, a menagerie permit or a wild-animal possession license written for exhibitors and breeders that happens not to exclude an individual. West Virginia, Montana, Oklahoma, South Dakota, North Dakota, Indiana and Wisconsin are the states where an individual can hold the paper; Pennsylvania, Massachusetts, Vermont, North Carolina, Idaho, Nevada and South Carolina issue theirs for other purposes or at the agency's discretion."
+      },
+      {
+        "q": "Can you own a black bear in Texas?",
+        "a": "No. Texas lists the black bear, Ursus americanus, as state threatened under 31 TAC § 65.175, and TPWD says its regulations prohibit the taking, possession, transportation or sale of a threatened species without a permit, which goes to science, zoos, education and rehabilitation. The dangerous wild animal statute at Health and Safety Code § 822.101(4)(M) also names 'a bear' and would require a county certificate, but a certificate does not authorize possessing a threatened animal."
+      },
+      {
+        "q": "Is a pet bear legal in Florida?",
+        "a": "No. 'Bears (family Ursidae)' is Class I item 13 under 68A-6.002, and 68A-6.003(6) says Class I wildlife shall not be possessed for personal use. The only exception is an animal already held on 1 August 1980, which was eligible for a permit on Class II terms. Exhibitor and commercial permits remain."
+      },
+      {
+        "q": "Can I keep a black bear in Ohio?",
+        "a": "No. Every bear is a dangerous wild animal under R.C. 935.01(C)(8), and § 935.02(A) says no person shall possess one on or after 1 January 2014. Only a keeper who registered the animal in 2012 and held it on 1 October 2013 could apply for a wildlife shelter permit, with sterilized males, insurance, caging standards and at least an acre. The black bear is also an Ohio game quadruped, but the Division of Wildlife's § 1533.71 license does not lift the Chapter 935 bar."
+      },
+      {
+        "q": "Is a black bear legal in West Virginia?",
+        "a": "On the statute's words, yes, with a two-dollar permit. The Dangerous Wild Animal Board's list at § 74-1-3.1.h reads 'Bears; (excluding black bears native to this state)', which hands the native bear back to Chapter 20, where § 20-2-4(a) bars captivity except as provided and § 20-2-51 says the director may issue a permit to keep as a pet a wild animal acquired from a commercial dealer or during the legal open season, fee $2. That reading puts a bear in the same position as a raccoon, which is surprising enough that the DNR's actual practice deserves a check before anyone relies on it."
+      },
+      {
+        "q": "Can you have a pet bear in Montana?",
+        "a": "Yes, under a wild animal menagerie permit. MCA § 87-4-801(3) defines a wild animal menagerie as any place where one or more bears or large cats are kept in captivity 'for use other than public exhibition', which is a private keeper. The application asks for the site, the species, the caging and information showing the applicant is responsible, the department inspects first, the menagerie is capped at ten animals, and § 87-4-804(4) says they must come captive-bred from a licensed zoo, menagerie, fur farm or similar source. A black bear may not be captured from the wild for it."
+      },
+      {
+        "q": "Is it legal to own a bear in Oklahoma?",
+        "a": "Yes, with a commercial wildlife breeder's license, despite the name. 29 O.S. § 7-502(A)(3) bars possessing 'any native bear or native cat that will grow to reach the weight of fifty (50) pounds or more' except as provided by law, and § 4-107(E) is the provision: anyone who keeps a native bear shall be licensed under the commercial wildlife breeder's section, keep it confined to the licensed premises, and allow no public contact. The license goes to anyone the Director believes is acting in good faith, at $48 a year."
+      },
+      {
+        "q": "Can I keep a bear in Mississippi?",
+        "a": "Not a black bear. Rule 8.3 lists every bear as inherently dangerous and offers a $200 personal possession permit, but Rule 8.4 separately defines the black bear as a game animal and says possession of live game and furbearing animals is prohibited, with exceptions for public zoos, veterinarians, transport to a vet and permitted deer enclosures. A Rule 8.3 permit is not among them, so the 8.3 route is for exotic bears and not for Mississippi's own."
+      }
+    ],
+    "relatedProducts": [],
+    "factFile": false,
+    "animalDay": null,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 5,
+    "headingCount": 9,
+    "ledeMatchesExcerpt": false,
+    "imageWidth": 1168,
+    "imageHeight": 784
+  },
+  {
     "path": "/content/guides/blue-tongue-skink-cost-guide.mdx",
     "slug": "blue-tongue-skink-cost-guide",
     "title": "How Much Does a Blue-Tongued Skink Really Cost?",
@@ -18567,7 +18643,7 @@
     "title": "The Pet Bans That Are Real, and the Ones That Aren't",
     "seoTitle": "Exotic Pet Laws Guide: Every Species We Cover",
     "seoDescription": "No federal law decides exotic pet ownership, states do. This hub indexes every species legal guide, plus a state-by-state map across 50 states, DC and NYC.",
-    "lastUpdated": "2026-10-12",
+    "lastUpdated": "2026-10-13",
     "noIndex": false,
     "excerpt": "No federal law actually decides whether you can own most exotic pets, states and cities do. Here's what federal law really controls, how state law actually works, and a direct index of every species-specific legal guide.",
     "date": "2026-07-17",
@@ -18587,7 +18663,7 @@
     "image": "/assets/guides/exotic-pet-legal-hub.jpg",
     "imageAlt": "Gavel beside a variety of exotic pets representing US exotic pet law",
     "emoji": "⚖️",
-    "lastReviewed": "2026-10-12",
+    "lastReviewed": "2026-10-13",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -24227,6 +24303,82 @@
     "ledeMatchesExcerpt": false,
     "imageWidth": 1620,
     "imageHeight": 1080
+  },
+  {
+    "path": "/content/guides/gray-squirrel-legal-guide.mdx",
+    "slug": "gray-squirrel-legal-guide",
+    "title": "Are Pet Squirrels Legal? The Eastern Gray Is a Game Animal, State by State",
+    "seoTitle": "Are Pet Squirrels Legal? 19 Bans, 20 Permits, by State",
+    "seoDescription": "Pet gray squirrel laws by state: 19 bans, 20 permit states, 6 legal, 3 conditional and 2 unclear. Why game seasons, not exotic pet lists, decide a squirrel.",
+    "lastUpdated": "2026-10-13",
+    "noIndex": false,
+    "excerpt": "The eastern gray squirrel has a hunting season in most of the states where it lives, and that is the rule that decides whether you can keep one. Read across all 52 jurisdictions it comes to 19 bans, 20 permits, six clean yeses, and a pair of open questions in Montana and Kansas that no statute answers.",
+    "date": "2026-10-13",
+    "category": "Legal",
+    "categories": [
+      "Legal"
+    ],
+    "tags": [
+      "Gray Squirrel",
+      "Squirrel",
+      "Legal",
+      "Exotic Pet Laws",
+      "Wildlife Law",
+      "Pet Ownership"
+    ],
+    "readTime": 12,
+    "difficulty": "Intermediate",
+    "image": "/assets/guides/gray-squirrel-legal.jpg",
+    "imageAlt": "Eastern gray squirrel sitting on a branch holding an acorn among autumn leaves",
+    "emoji": "🐿️",
+    "lastReviewed": "2026-10-13",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Is it legal to keep a baby squirrel you found?",
+        "a": "Almost nowhere, even in states that allow a pet squirrel. The permit states nearly all require the animal to come from a breeder: New Jersey's hobby permit excludes an animal of wild origin, Michigan's permit covers captive-bred game only, Nebraska bars a permit for an animal taken from the wild, and Louisiana's game breeder rule bars taking game quadrupeds from the wild at all. The exception is Arkansas, where a household may keep up to six hand-captured opossums, rabbits, raccoons and squirrels combined. Everywhere else a found squirrel goes to a licensed rehabilitator."
+      },
+      {
+        "q": "Can you have a pet squirrel in Texas?",
+        "a": "Only with a game breeder's license, and it is a breeder's license rather than a pet permit. The gray or cat squirrel is a Texas game animal under Parks and Wildlife Code § 63.001, § 63.002 bars possessing a live game animal for any purpose the code does not authorize, and § 44.002 says no person may place a game animal in captivity without a game breeder's license. The license lets the holder keep a squirrel 'for the purpose of propagation or sale'. No section authorizes holding one purely as a pet."
+      },
+      {
+        "q": "Are pet squirrels legal in Florida?",
+        "a": "Yes, with no permit. Florida's captive wildlife rule at 68A-6.003(14) lists wildlife that may be possessed for personal use with no permit, and (g) is 'Squirrels; chipmunks'. The gray squirrel is also a Florida game animal with a hunting season, so taking one from the wild is a hunting question rather than a pet question, and the animal in the cage has to come from a lawful source."
+      },
+      {
+        "q": "Is it illegal to have a pet squirrel in California?",
+        "a": "Yes. 14 CCR § 671(c)(2)(J) restricts the whole rodent order, 'Hamsters, Field Mice, Voles, Muskrats, Gerbils, Squirrels, Chipmunks, Woodchucks, and Prairie Dogs', marked (D) for detrimental, and the only exceptions are muskrats under a separate code section and domesticated hamsters, rats, mice, guinea pigs and chinchillas. No squirrel is among them, and no permit type covers a pet."
+      },
+      {
+        "q": "Can I own a gray squirrel in New York?",
+        "a": "No. ECL § 11-0103(2)(c) defines small game to begin with 'black, gray and fox squirrels', small game is protected wildlife, and § 11-0107(2) bars possessing protected wildlife 'whether taken within the state or coming from without the state', so a squirrel bred in another state is in the same position as one caught in a park. The only license, § 11-0515, is for propagation, banding, scientific or exhibition purposes. New York City adds its own bar on 'All squirrels (Sciuridae)'."
+      },
+      {
+        "q": "Why is a flying squirrel legal in states where a gray squirrel is not?",
+        "a": "Because the gray squirrel has a hunting season and the flying squirrel does not. Massachusetts exempts the southern flying squirrel by name and lists no gray squirrel. New Jersey exempts the flying squirrel and treats the gray as a game animal needing a hobby permit. Minnesota's small game definition catches the gray and not the flying squirrel. Texas caps a keeper at 25 flying squirrels as nongame and requires a game breeder's license for a gray. Same family, different chapter of the code."
+      },
+      {
+        "q": "Which states let you keep a pet squirrel with no permit?",
+        "a": "Six, on the text: Florida, Tennessee, Idaho, South Carolina, North Dakota and South Dakota. Florida and Tennessee name squirrels on their no-permit lists, Idaho treats rodents as conventional pets unless they were captured from the Idaho wild, South Carolina's possession chapters never reach a live squirrel, and the Dakotas regulate captive mammals by lists that stop at ground squirrels and carnivore families. In all six, taking a squirrel from the wild is still a hunting question, and city ordinances were not checked."
+      },
+      {
+        "q": "What does a squirrel permit cost?",
+        "a": "Between two and thirty dollars where a keeper can hold one. West Virginia's pet permit under § 20-2-51 is $2. Illinois's Class A noncommercial game breeders permit and Indiana's Class I permit are $10. Ohio's noncommercial propagating license is $25 a year. Nebraska's Captive Wildlife Permit is capped at $30 by statute. Minnesota's special permit is issued without a fee. Texas's game breeder's license starts at $10 but is written for propagation or sale, not pet keeping."
+      }
+    ],
+    "relatedProducts": [],
+    "factFile": false,
+    "animalDay": null,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 5,
+    "headingCount": 9,
+    "ledeMatchesExcerpt": false,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/green-anole-cost-guide.mdx",
@@ -49642,6 +49794,82 @@
     "imageHeight": 784
   },
   {
+    "path": "/content/guides/white-tailed-deer-legal-guide.mdx",
+    "slug": "white-tailed-deer-legal-guide",
+    "title": "Is It Legal to Keep a Deer? Why No State Is a Clean Yes",
+    "seoTitle": "Is It Legal to Keep a Deer? 28 Bans, 20 Permits, by State",
+    "seoDescription": "Pet deer laws by state: 28 bans, 20 permit states, 1 conditional, 2 restricted, 1 unclear. No clean yes: the permits are deer-farm licenses, not pet permits.",
+    "lastUpdated": "2026-10-13",
+    "noIndex": false,
+    "excerpt": "A white-tailed deer is the one animal on this map with no clean legal state. It is big game everywhere it lives, and every state that allows a captive one routes it through a deer-farm license, an eight-foot fence and a chronic wasting disease program. Across all 52 jurisdictions that comes to 28 bans, 20 permits that are mostly farm registrations, one condition, two restricted lists and Indiana's open question.",
+    "date": "2026-10-13",
+    "category": "Legal",
+    "categories": [
+      "Legal"
+    ],
+    "tags": [
+      "White-Tailed Deer",
+      "Deer",
+      "Legal",
+      "Exotic Pet Laws",
+      "Wildlife Law",
+      "Pet Ownership"
+    ],
+    "readTime": 12,
+    "difficulty": "Intermediate",
+    "image": "/assets/guides/white-tailed-deer-legal.jpg",
+    "imageAlt": "White-tailed doe standing at the edge of a forest meadow with her tail raised",
+    "emoji": "🦌",
+    "lastReviewed": "2026-10-13",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Is it legal to keep a deer as a pet?",
+        "a": "Nowhere cleanly. Twenty-eight jurisdictions ban a captive white-tailed deer outright, twenty issue a permit, and nearly every one of those permits is a deer-farm license or registration rather than a pet permit: Texas's deer breeder's permit, Ohio's captive white-tailed deer propagation license, Wisconsin's and Iowa's farm registrations, Michigan's cervidae livestock facility registration. The permits a private person can hold on something like pet terms are Florida's free Class III permit for a captive-bred animal, Kansas's domesticated deer permit, which names companionship, and the Dakotas' nontraditional livestock licenses."
+      },
+      {
+        "q": "Can I keep a fawn I found?",
+        "a": "No, in every state read. Florida's rule says 'whitetail deer taken from the wild shall not be possessed as personal use wildlife'. Minnesota bars a special permit 'to take or possess wild or native deer for exhibition, propagation, or as pets'. Oregon says a deer born in the wild is a wild cervid that may not be held. Louisiana bars taking game quadrupeds from the wild, Mississippi bars moving a deer from the wild into an enclosure, Kansas makes a wild deer big game that cannot be taken for a pet, and Arkansas closed its hand-capture route for deer on 1 July 2012. A found fawn goes to a licensed rehabilitator."
+      },
+      {
+        "q": "Can you own a deer in Texas?",
+        "a": "Only as a deer breeder. The white-tailed deer is a Texas game animal, § 63.002 bars possessing a live one except as the code authorizes, and the authorization is the deer breeder's permit in Chapter 43: 'The department shall issue a permit to a qualified person to possess live breeder deer in captivity.' The holder keeps breeder deer 'for the purpose of propagation or sale', in an enclosure that keeps other deer out, with records, tagging and disease testing on top. There is no pet permit."
+      },
+      {
+        "q": "Is a pet deer legal in Florida?",
+        "a": "A captive-bred one, yes, with a free permit. The white-tailed deer is not on Class I or Class II, so it falls to Class III and the no-cost personal use permit under 68A-6.003(8), with cervid caging standards at 68A-6.01210. 68A-6.003(13) then bars the wild animal by name: 'Fox, skunks, bats, raccoons, or whitetail deer taken from the wild shall not be possessed as personal use wildlife'. Florida's separate chronic wasting disease rules on importing live cervids were not read."
+      },
+      {
+        "q": "Why does chronic wasting disease matter for a pet deer?",
+        "a": "Because it is the reason the permits are farm licenses. Wisconsin's registration comes with fencing and CWD testing rules, Ohio's license needs a Department of Agriculture license on the disease side before deer are placed, Oregon requires every captive cervid that dies at six months or older to be tested, Idaho will not permit the import of any live cervid that is not a domestic cervid, New Jersey has banned importing any member of the deer family until further notice, and Arkansas's grandfathered deer must be tested when they die. A state that lets one person keep one deer in a backyard has no way to run that program, so none does."
+      },
+      {
+        "q": "What is a domesticated deer permit in Kansas?",
+        "a": "The closest thing on the map to a pet deer permit. K.S.A. 47-2101 makes it unlawful to possess domesticated deer without a permit from the animal health commissioner, and defines a domesticated deer as any legally obtained cervid being sold or raised in a confined area for breeding stock, parts, exhibition 'or companionship'. The permit is annual, under the Department of Agriculture's livestock law, at a fee of up to $400. A wild Kansas deer is big game and cannot be taken for one."
+      },
+      {
+        "q": "Which states ban a captive deer outright?",
+        "a": "Twenty-eight. The clearest are Wyoming, where there is 'no private ownership, private importation or private possession of live big or trophy game animals', Nevada, which prohibits 'All species in the family Cervidae', Washington, which names the white-tailed deer among cervids that may not be held, Utah, which lists it as a prohibited mammal, Tennessee, which puts it in Class IV for zoos and temporary exhibitors, Montana, which closed alternative livestock licensing in 2000, and Louisiana, which closed new deer licenses in 2002. New York, New Jersey, Minnesota, Colorado, Nebraska and the native-wildlife states make up the rest."
+      },
+      {
+        "q": "Is a deer legal in Indiana?",
+        "a": "The texts read do not say. No deer is on Indiana's game breeder species list at 312 IAC 9-10-4(b) or on any of the three wild animal possession permit classes, and the deer rules in 312 IAC 9-3 cover hunting, processing and disposal and say nothing about keeping a live deer. No Indiana statute on privately owned cervids was read, so whether and how a white-tailed deer may be kept is not settled. Ask the Department of Natural Resources in writing before buying one."
+      }
+    ],
+    "relatedProducts": [],
+    "factFile": false,
+    "animalDay": null,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 5,
+    "headingCount": 8,
+    "ledeMatchesExcerpt": false,
+    "imageWidth": 1168,
+    "imageHeight": 784
+  },
+  {
     "path": "/content/guides/whites-tree-frog-cost-guide.mdx",
     "slug": "whites-tree-frog-cost-guide",
     "title": "How Much Does a White's Tree Frog Really Cost?",
@@ -50378,6 +50606,83 @@
     "ledeMatchesExcerpt": false,
     "imageWidth": 1408,
     "imageHeight": 768
+  },
+  {
+    "path": "/content/guides/wolfdog-legal-guide.mdx",
+    "slug": "wolfdog-legal-guide",
+    "title": "Are Wolfdogs Legal? Counted by Generation, by Percentage, or by the Word Wolf",
+    "seoTitle": "Are Wolfdogs Legal? 12 Bans, 17 Legal, 10 Unclear, by State",
+    "seoDescription": "Wolfdog laws by state: 12 bans, 5 permits, 8 conditional, 17 legal, 10 unclear. Michigan's Wolf-dog Cross Act, Massachusetts § 77A, North Dakota's ear tattoo.",
+    "lastUpdated": "2026-10-13",
+    "noIndex": false,
+    "excerpt": "No animal on this map splits the states five ways like the wolfdog: 12 bans, 5 permits, 8 conditional, 17 legal and 10 unclear. The reason is that statutes define the hybrid three different ways, by generation, by percentage, or by the two words 'any wolf', and the same animal is a dog in Virginia, a wild animal in Michigan, and an open question in Illinois.",
+    "date": "2026-10-13",
+    "category": "Legal",
+    "categories": [
+      "Legal",
+      "Dogs"
+    ],
+    "tags": [
+      "Wolfdog",
+      "Wolf Hybrid",
+      "Legal",
+      "Exotic Pet Laws",
+      "Dogs",
+      "Pet Ownership"
+    ],
+    "readTime": 12,
+    "difficulty": "Advanced",
+    "image": "/assets/guides/wolfdog-legal.jpg",
+    "imageAlt": "Wolfdog standing in snow with a gray and cream coat, amber eyes and the long legs and narrow chest of its wolf parent",
+    "emoji": "🐺",
+    "lastReviewed": "2026-10-13",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Can you own a wolfdog in Michigan?",
+        "a": "Only one held since 2000. The Wolf-dog Cross Act, MCL 287.1004(1), says a person shall not possess a wolf-dog cross unless the owner had that individual animal on the act's effective date, 29 June 2000, applied for a local permit within four months, and obtained it. The act also bars breeding, transferring or receiving one, and its definition reaches a wolf-dog cross bred with a dog, so no generation of dilution takes an animal out. An owner who has represented a canid as a wolf-dog cross is presumed to have one."
+      },
+      {
+        "q": "Are wolfdogs legal in Texas?",
+        "a": "Yes, at the state level. Health and Safety Code § 822.101(4) lists the dangerous wild animals and reaches hybrids only of the animals it names, and its canids are the coyote and the jackal. The wolf is not listed, so a wolfdog is outside the statute at any generation, while a coydog is inside it. Texas cities and counties regulate dogs and may restrict wolf hybrids, and several do."
+      },
+      {
+        "q": "Is it legal to own a wolfdog in Florida?",
+        "a": "It depends on what the animal looks like. Florida's hybrid rule at 68A-6.002(1)(d) regulates a hybrid that is substantially similar in size, characteristics and behavior so as to be indistinguishable from the wild parent at the wild parent's class, and FWC says wolf-dog hybrids are regulated case by case. One that reads as a dog needs nothing from FWC; one considered indistinguishable from a wolf is a Class II canid and needs the $140 personal use permit with documented experience and caging."
+      },
+      {
+        "q": "Can I have a wolfdog in California?",
+        "a": "Not a first-generation one. 14 CCR § 671(c)(2)(K)(2)(a) says a Canis familiaris by Canis lupus cross is an F1 wolf hybrid and is restricted, with no permit type covering a pet. The same clause says no state permit is required to possess the progeny of F1 wolf hybrids, so anything bred from F1 animals onward is clear with the state, and then adds that cities and counties may prohibit possession or require a permit."
+      },
+      {
+        "q": "Are wolfdogs legal in Virginia?",
+        "a": "Yes. 4VAC15-20-50 defines the domestic animals and lists 'Domestic dog (Canis familiaris), including wolf hybrids', so a wolfdog is a domestic animal to the wildlife agency at any generation. The permit table for nonnative exotic animals names coyote hybrids and not wolf hybrids, and never reaches a domestic animal anyway. Virginia's dog laws apply, and localities regulate dogs and hybrids."
+      },
+      {
+        "q": "Do you need a permit for a wolfdog in Mississippi?",
+        "a": "Yes, and it is a hard one. Rule 8.3 lists genus Canis 'including crosses between wolves and domestic animals' as inherently dangerous with no generation cut-off. The personal possession permit costs $75 an animal, and the applicant must be at least 21, show two years' experience with the species or pass a written examination, file a recapture plan, carry $100,000 of liability insurance per animal, have the animal microchipped by the department and pass an inspection."
+      },
+      {
+        "q": "Is a wolfdog legal in Massachusetts?",
+        "a": "No. M.G.L. c. 131, § 77A says no person shall possess, sell, trade, breed, import, export or release a wild canid hybrid, and defines one to include any mammal that is the offspring of a wild canid or hybrid wild canid and a domestic dog, or that 'is represented by its owner to be a wolf hybrid'. There is no generation exit for dogs; the only later-generation exception in the section is written for registered cats. The grandfather closed on 31 July 1994."
+      },
+      {
+        "q": "What percentage wolf is legal?",
+        "a": "Almost no statute asks. North Dakota's Century Code defines a wolf hybrid as 'any animal that is any part wolf', which is the only percentage line on the map and it is set at zero. Iowa, California and Delaware count generations instead: Iowa excludes any generation with at least one dog parent, California frees everything after F1, Delaware's permit reaches an animal with a wolf parent and not one with a wolfdog parent. Everywhere else the question is whether the animal is a 'wolf' or a 'dog' under a statute that never imagined the one in between, which is why ten states are recorded unclear."
+      }
+    ],
+    "relatedProducts": [],
+    "factFile": false,
+    "animalDay": null,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 5,
+    "headingCount": 10,
+    "ledeMatchesExcerpt": false,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/wolverine-facts-the-toughest-animal-pound-for-pound.mdx",

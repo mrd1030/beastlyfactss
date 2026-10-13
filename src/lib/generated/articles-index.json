@@ -1367,6 +1367,18 @@
       "animalDay": null
     },
     {
+      "slug": "black-bear-legal-guide",
+      "title": "Are Pet Black Bears Legal? 35 Bans, 14 Permits, by State",
+      "excerpt": "Thirty-five jurisdictions ban a pet black bear and not one state allows it without a permit, which makes it the most",
+      "date": "2026-10-13",
+      "image": "/assets/guides/black-bear-legal.jpg",
+      "category": "Legal",
+      "categories": [
+        "Legal"
+      ],
+      "animalDay": null
+    },
+    {
       "slug": "blue-tongue-skink-cost-guide",
       "title": "Blue Tongue Skink Price: $100 to $700+, Setup $335 to $830",
       "excerpt": "Blue-tongued skinks split into two very different price and risk categories depending on where they come from, Northern",
@@ -4301,6 +4313,18 @@
       "category": "Fish",
       "categories": [
         "Fish"
+      ],
+      "animalDay": null
+    },
+    {
+      "slug": "gray-squirrel-legal-guide",
+      "title": "Are Pet Squirrels Legal? 19 Bans, 20 Permits, by State",
+      "excerpt": "The eastern gray squirrel has a hunting season in most of the states where it lives, and that is the rule that decides",
+      "date": "2026-10-13",
+      "image": "/assets/guides/gray-squirrel-legal.jpg",
+      "category": "Legal",
+      "categories": [
+        "Legal"
       ],
       "animalDay": null
     },
@@ -8868,6 +8892,18 @@
       "animalDay": null
     },
     {
+      "slug": "white-tailed-deer-legal-guide",
+      "title": "Is It Legal to Keep a Deer? 28 Bans, 20 Permits, by State",
+      "excerpt": "A white-tailed deer is the one animal on this map with no clean legal state. It is big game everywhere it lives, and",
+      "date": "2026-10-13",
+      "image": "/assets/guides/white-tailed-deer-legal.jpg",
+      "category": "Legal",
+      "categories": [
+        "Legal"
+      ],
+      "animalDay": null
+    },
+    {
       "slug": "whites-tree-frog-cost-guide",
       "title": "White's Tree Frog Price: $20 to $60, Plus $305 to $595 Setup",
       "excerpt": "White's tree frogs, sometimes called dumpy tree frogs for their round, waxy-skinned build, are one of the more",
@@ -9031,6 +9067,19 @@
       "image": "/assets/images/why-your-dog-needs-daily-exercise-0.jpg",
       "category": "Dogs",
       "categories": [
+        "Dogs"
+      ],
+      "animalDay": null
+    },
+    {
+      "slug": "wolfdog-legal-guide",
+      "title": "Are Wolfdogs Legal? 12 Bans, 17 Legal, 10 Unclear, by State",
+      "excerpt": "No animal on this map splits the states five ways like the wolfdog: 12 bans, 5 permits, 8 conditional, 17 legal and 10",
+      "date": "2026-10-13",
+      "image": "/assets/guides/wolfdog-legal.jpg",
+      "category": "Legal",
+      "categories": [
+        "Legal",
         "Dogs"
       ],
       "animalDay": null
