@@ -11,8 +11,6 @@ Category: Animals & Pets
 ```
 Beastly Facts - Wild facts.
 Real animals. Zero boredom.
-beastlyfacts.com
-No login needed
 ```
 
 Link: beastlyfacts.com
