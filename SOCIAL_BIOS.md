@@ -60,4 +60,8 @@ beastlyfacts.com
 @BeastlyFactsOfficial
 ```
 
-Links: BeastlyFacts Homepage, Beastlypedia, ... (list truncated in the screenshot; not all links verified)
+Links:
+- BeastlyFacts Homepage: beastlyfacts.com
+- Beastlypedia: beastlyfacts.com/beastlypedia/
+- FunFacts: beastlyfacts.com/facts/
+- Care Guides: beastlyfacts.com/guides/
