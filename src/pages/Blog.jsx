@@ -1185,8 +1185,8 @@ function PostView({ post, onBack, backLabel = 'Back to Critter Digest', factFile
                   <IconChip icon={ShoppingCart} color="orange" size="heading" />Recommended Gear
                 </h2>
                 <RecommendedGearGrid key={postSlug} products={relatedProducts} onSelect={setSelectedProduct} />
-                <p className="text-[11px] text-muted-foreground/70 font-body italic mt-3">
-                  As an Amazon Associate, we earn from qualifying purchases through the links above - at no extra cost to you.
+                <p className="text-sm text-muted-foreground font-body mt-3">
+                  As an Amazon Associate I earn from qualifying purchases through the links above, at no extra cost to you.
                 </p>
               </div>
             )}

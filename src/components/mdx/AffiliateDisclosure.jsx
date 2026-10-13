@@ -13,7 +13,7 @@ export default function AffiliateDisclosure({ children, className = '' }) {
             Affiliate Disclosure
           </div>
           <div className="text-foreground font-body text-[15px] leading-relaxed">
-            {children || 'This post contains affiliate links. We may earn a commission from qualifying purchases at no extra cost to you.'}
+            {children || 'As an Amazon Associate I earn from qualifying purchases. This post contains affiliate links, at no extra cost to you.'}
           </div>
         </div>
       </div>
