@@ -9,8 +9,9 @@ Amazon Associates status: no bio links to Amazon. Every profile links to beastly
 Category: Animals & Pets
 
 ```
-Beastly Facts - Wild facts.
-Real animals. Zero boredom.
+Wild facts. Real animals. Zero boredom.
+Exotic pet care guides, sourced and science-backed.
+New facts daily 🦎
 ```
 
 Link: beastlyfacts.com
