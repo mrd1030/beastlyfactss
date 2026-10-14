@@ -18643,7 +18643,7 @@
     "title": "The Pet Bans That Are Real, and the Ones That Aren't",
     "seoTitle": "Exotic Pet Laws Guide: Every Species We Cover",
     "seoDescription": "No federal law decides exotic pet ownership, states do. This hub indexes every species legal guide, plus a state-by-state map across 50 states, DC and NYC.",
-    "lastUpdated": "2026-10-13",
+    "lastUpdated": "2026-10-14",
     "noIndex": false,
     "excerpt": "No federal law actually decides whether you can own most exotic pets, states and cities do. Here's what federal law really controls, how state law actually works, and a direct index of every species-specific legal guide.",
     "date": "2026-07-17",
@@ -18663,7 +18663,7 @@
     "image": "/assets/guides/exotic-pet-legal-hub.jpg",
     "imageAlt": "Gavel beside a variety of exotic pets representing US exotic pet law",
     "emoji": "⚖️",
-    "lastReviewed": "2026-10-13",
+    "lastReviewed": "2026-10-14",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -18699,7 +18699,7 @@
     "myth": null,
     "truth": null,
     "sourceCount": 6,
-    "headingCount": 12,
+    "headingCount": 13,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
     "imageHeight": 784
@@ -37442,6 +37442,84 @@
     "imageHeight": 784
   },
   {
+    "path": "/content/guides/pet-monkey-legal-guide.mdx",
+    "slug": "pet-monkey-legal-guide",
+    "title": "Is It Legal to Own a Monkey? Primate Laws by State",
+    "seoTitle": "Is It Legal to Own a Monkey? Primate Laws by State",
+    "seoDescription": "Pet monkey laws by state: where capuchins, marmosets, squirrel monkeys and lemurs are banned, permitted or legal, plus the federal import ban behind the trade.",
+    "lastUpdated": "2026-10-14",
+    "noIndex": false,
+    "excerpt": "Most states never wrote a monkey law. They wrote 'nonhuman primates' and let the order do the work, which is why a capuchin, a marmoset, a squirrel monkey and a ring-tailed lemur get the same answer in 46 of 52 jurisdictions. The six where they part are the interesting ones.",
+    "date": "2026-10-14",
+    "category": "Legal",
+    "categories": [
+      "Legal",
+      "Small & Exotic Pets"
+    ],
+    "tags": [
+      "Monkey",
+      "Capuchin",
+      "Marmoset",
+      "Lemur",
+      "Legal",
+      "Exotic Pet Laws",
+      "Pet Ownership"
+    ],
+    "readTime": 12,
+    "difficulty": "Intermediate",
+    "image": "/assets/guides/pet-monkey-legal-guide.jpg",
+    "imageAlt": "Capuchin monkey with a pale face and dark cap sitting on a branch and looking at the camera",
+    "emoji": "🐒",
+    "lastReviewed": "2026-10-14",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Is it legal to own a monkey in Texas?",
+        "a": "At state level, yes. Texas Health and Safety Code § 822.101(4) lists only four primates among its dangerous wild animals, 'a baboon; a chimpanzee; an orangutan; a gorilla', so a capuchin, marmoset, squirrel monkey or lemur needs no certificate of registration and no insurance. Nothing in the Parks and Wildlife Code reaches a nonnative primate either. The city or county ordinance is the rule to check, because that is where Texas primates are most often regulated."
+      },
+      {
+        "q": "Is it legal to own a monkey in Florida?",
+        "a": "Yes, with a free permit. Florida writes its primate classes genus by genus: Class I takes the great apes, gibbons, baboons and drills, Class II takes macaques, guenons, vervets, howlers, colobus and langurs among others, and 68A-6.002(1)(c) sends everything else to Class III, 'All other wildlife not listed herein'. A capuchin, marmoset, squirrel monkey or lemur is Class III and needs a Permit to Possess Class III Wildlife for Personal Use, which costs nothing. Primates have their own caging standard at 68A-6.0121."
+      },
+      {
+        "q": "Can you own a monkey in Ohio?",
+        "a": "The statute points two ways. R.C. 935.01(C)(19) makes every nonhuman primate a dangerous wild animal except lemurs and a list of named New World species, and no dangerous wild animal may be newly acquired since 2012. But R.C. 935.041, passed in the same bill, tells anyone who possesses pygmy, white-tufted-ear, silvery or black-pencilled marmosets, squirrel monkeys, or brown, white-faced, weeping or white-fronted capuchins to register them with the Department of Agriculture, which only makes sense if they can be kept. A lemur is clear: it is written out of the definition and needs only the registration and a microchip. For the three monkeys, ask the department in writing before buying."
+      },
+      {
+        "q": "Is it legal to own a capuchin monkey in Georgia?",
+        "a": "Not as a pet. Georgia's wild animal rule puts the whole order Primates in the license tier, O.C.G.A. § 27-5-4(b)(1) issues wild animal licenses only to the wild animal trade and public exhibitors, and the DNR's own guide lists all primates among exotics that may not be held as pets. The one capuchin route is § 27-5-4(b)(2): a free permit for a capuchin trained by a nonprofit to assist a person with a permanent disability, kept only in that person's home."
+      },
+      {
+        "q": "Is it legal to own a lemur?",
+        "a": "In fewer places than a capuchin, because the whole family Lemuridae is listed as endangered under the federal Endangered Species Act at 50 CFR 17.11, and some states adopt that list. Missouri's free pass for nonnative mammals excludes federally endangered species, South Carolina bars possessing anything on the federal list of endangered foreign wildlife, New Jersey will not issue a permit for a federally endangered species outside a research project, and Idaho confines lemurs to AZA-accredited facilities. Ohio and West Virginia go the other way and treat the lemur more gently than the monkeys. Lemur catta is also on CITES Appendix I, so every pet lemur in the country descends from captive stock already here."
+      },
+      {
+        "q": "Which states allow pet monkeys with no permit?",
+        "a": "Twelve have no state rule reaching a capuchin, marmoset, squirrel monkey or lemur: Wisconsin, Texas, Michigan, Nevada, Virginia, Tennessee, North Carolina, Kansas, Alabama, Indiana, Mississippi and Oklahoma. South Carolina joins them for the three monkeys and bars the lemur; West Virginia bans the monkeys and clears the lemur. In every one of these, local ordinances were not checked and are the realistic risk."
+      },
+      {
+        "q": "Can I import a monkey as a pet?",
+        "a": "No. The CDC's rule at 42 CFR 71.53 lets live nonhuman primates into the United States only through registered importers and only for permitted purposes, and (d)(3) says an imported primate and its offspring may not be kept, sold or distributed 'for use as pets, as a hobby, or as an avocation with occasional display to the general public'. The pet trade has been excluded at the border since 1975, so every pet primate in the country descends from stock already here. A ring-tailed lemur carries a second layer: CITES Appendix I bars commercial international trade in the species."
+      },
+      {
+        "q": "Is it legal to own a monkey in California?",
+        "a": "No. 14 CCR § 671(c)(2)(A) restricts 'Order Primates-Monkeys, Apes: All species', marked (W) for welfare, and carves out only humans. No California permit covers pet keeping; the only possession permit, Animal Care, requires lawful possession in the state before January 1992. Cities and counties may add their own rules, but the state answer is already closed."
+      }
+    ],
+    "relatedProducts": [],
+    "factFile": false,
+    "animalDay": null,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 5,
+    "headingCount": 10,
+    "ledeMatchesExcerpt": false,
+    "imageWidth": 1168,
+    "imageHeight": 784
+  },
+  {
     "path": "/content/guides/pet-obesity-body-condition-guide.mdx",
     "slug": "pet-obesity-body-condition-guide",
     "title": "Body Condition Score: How to Tell if Your Pet Is Actually Overweight",
@@ -41727,6 +41805,83 @@
     "ledeMatchesExcerpt": false,
     "imageWidth": 1600,
     "imageHeight": 1067
+  },
+  {
+    "path": "/content/guides/ring-tailed-lemur-legal-guide.mdx",
+    "slug": "ring-tailed-lemur-legal-guide",
+    "title": "Are Ring-Tailed Lemurs Legal? The Primate on the Endangered List",
+    "seoTitle": "Are Lemurs Legal? 30 Bans, 7 Permits, by State",
+    "seoDescription": "Ring-tailed lemur laws by state: 30 bans, 7 permit states, 13 with no rule, Ohio by registration. The federal endangered listing, CITES Appendix I, Florida.",
+    "lastUpdated": "2026-10-14",
+    "noIndex": false,
+    "excerpt": "The ring-tailed lemur is the one small primate on the federal endangered list, and that listing decides three states by reference before any primate law is read. Missouri, South Carolina and New Jersey bar it for being endangered while clearing or registering the capuchin beside it; Ohio and West Virginia turn around and treat it as the gentlest primate in the statute.",
+    "date": "2026-10-14",
+    "category": "Legal",
+    "categories": [
+      "Legal",
+      "Small & Exotic Pets"
+    ],
+    "tags": [
+      "Ring-Tailed Lemur",
+      "Lemur",
+      "Legal",
+      "Exotic Pet Laws",
+      "Wildlife Law",
+      "Pet Ownership"
+    ],
+    "readTime": 10,
+    "difficulty": "Intermediate",
+    "image": "/assets/guides/ring-tailed-lemur-legal.jpg",
+    "imageAlt": "Ring-tailed lemur sitting upright on a rock with its banded tail curled beside it and its orange eyes toward the camera",
+    "emoji": "🐒",
+    "lastReviewed": "2026-10-14",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Is it legal to own a lemur in the United States?",
+        "a": "In fewer places than a capuchin. Read across all 52 jurisdictions the ring-tailed lemur is banned in 30, a permit animal in seven, legal with registration in Ohio, restricted in Arizona and unregulated at state level in 13. The whole family Lemuridae is listed as endangered under the Endangered Species Act at 50 CFR 17.11, and Missouri, South Carolina and New Jersey bar it by reference to that list while clearing or registering the other small primates. Federally, no primate may be imported for the pet trade, so every pet lemur descends from captive stock already in the country."
+      },
+      {
+        "q": "Is it legal to own a lemur in Florida?",
+        "a": "Yes, with a free permit. Florida writes its primate classes genus by genus, and the lemur, unlike the indri, is on neither the Class I list of apes, gibbons, baboons and drills nor the Class II list, so 68A-6.002(1)(c) sends it to Class III, 'All other wildlife not listed herein'. 68A-6.003(8) says a person possessing Class III wildlife for personal use 'shall obtain a no-cost permit from the Executive Director', and primates have their own caging standard at 68A-6.0121."
+      },
+      {
+        "q": "Can you own a lemur in Texas?",
+        "a": "At state level, yes, with no permit. Health and Safety Code § 822.101(4) lists only four primates among its dangerous wild animals, 'a baboon; a chimpanzee; an orangutan; a gorilla', so a lemur needs no certificate of registration and no insurance, and nothing in the Parks and Wildlife Code reaches a nonnative primate. Texas cities and counties regulate primates far more often than the state does, and the local ordinance is the rule to read before buying."
+      },
+      {
+        "q": "Are lemurs legal in North Carolina?",
+        "a": "At state level, yes, by silence. No statewide North Carolina rule names a primate, which is why Durham can host the Duke Lemur Center, the largest collection of lemurs outside Madagascar. § 153A-131 lets a county 'regulate, restrict, or prohibit the possession or harboring of animals which are dangerous to persons or property', and several counties have used it, so the county ordinance decides most cases."
+      },
+      {
+        "q": "Is a ring-tailed lemur endangered?",
+        "a": "Yes, on both lists that matter. 50 CFR 17.11 lists 'Lemurs | Lemuridae' as endangered wherever found, the whole family in one row, and Lemur catta is on CITES Appendix I, which bars commercial international trade in the species. The CITES listing is a border rule and says nothing about keeping one at home; the federal endangered listing matters inside a state only where that state adopted it, and Missouri, South Carolina and New Jersey did."
+      },
+      {
+        "q": "Is a lemur legal in Ohio?",
+        "a": "Yes, once registered. R.C. 935.01(C)(19) defines a dangerous wild animal as 'Nonhuman primates other than lemurs', so the possession bar in § 935.02 never reaches a lemur. R.C. 935.041(D) then requires anyone who possesses a lemur to register it with the Department of Agriculture in the same manner as a dangerous wild animal, which means a microchip implanted at registration. The lemur is the only primate Ohio's chapter treats this plainly; the capuchin, marmoset and squirrel monkey sit between two sections that disagree."
+      },
+      {
+        "q": "Why is a lemur banned in Missouri when a capuchin is not?",
+        "a": "Because of the federal list. 3 CSR 10-9.110(2) lets mammals not native to Missouri be possessed without a permit 'Except for federally-designated endangered species', and 50 CFR 17.11 lists the whole family Lemuridae as endangered. A capuchin falls inside the free pass and owes Missouri only the county registration that RSMo § 578.023 requires of a nonhuman primate; a lemur falls outside it, which leaves the general prohibition in 3 CSR 10-4.110(1) on possessing wildlife 'except as specifically permitted by these rules', and no permit read is a pet route."
+      },
+      {
+        "q": "Can I own a lemur in New Jersey?",
+        "a": "No. A lemur needs a permit in any case under N.J.A.C. 7:25-4.2(a), and 7:25-4.10(a) says 'no permit shall be issued for the possession of any species designated as endangered by the U.S. Department of the Interior', which 50 CFR 17.11 does for the whole family Lemuridae. The only exception is 4.10(b), a permit issued after a clear showing under 4.14 of a federal endangered species permit, a sponsoring organization and a written proposal for scientific research. That closes the individual hobby permit whatever the potentially dangerous table says."
+      }
+    ],
+    "relatedProducts": [],
+    "factFile": false,
+    "animalDay": null,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 5,
+    "headingCount": 10,
+    "ledeMatchesExcerpt": false,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/rosy-boa-cost-guide.mdx",
@@ -49665,6 +49820,160 @@
     "myth": null,
     "truth": null,
     "sourceCount": 3,
+    "headingCount": 9,
+    "ledeMatchesExcerpt": false,
+    "imageWidth": 1168,
+    "imageHeight": 784
+  },
+  {
+    "path": "/content/guides/virginia-opossum-legal-guide.mdx",
+    "slug": "virginia-opossum-legal-guide",
+    "title": "Are Pet Opossums Legal? A Native Marsupial Under Furbearer Law, State by State",
+    "seoTitle": "Are Pet Opossums Legal? 20 Bans, 20 Permits, by State",
+    "seoDescription": "Pet opossum laws by state: 20 bans, 20 permit states, 4 legal, 4 conditional, 3 unclear. Why furbearer chapters, not marsupial lists, decide a pet opossum.",
+    "lastUpdated": "2026-10-14",
+    "noIndex": false,
+    "excerpt": "The Virginia opossum is the only marsupial native to the United States, so two kinds of rule reach it: the marsupial clauses written for sugar gliders and wallabies, and the furbearer and game chapters written for the raccoon. Across all 52 jurisdictions that comes to 20 bans, 20 permits, four clean yeses, four conditions and three states whose text will not decide.",
+    "date": "2026-10-14",
+    "category": "Legal",
+    "categories": [
+      "Legal"
+    ],
+    "tags": [
+      "Virginia Opossum",
+      "Opossum",
+      "Marsupials",
+      "Legal",
+      "Exotic Pet Laws",
+      "Wildlife Law",
+      "Pet Ownership"
+    ],
+    "readTime": 12,
+    "difficulty": "Intermediate",
+    "image": "/assets/guides/virginia-opossum-legal.jpg",
+    "imageAlt": "Virginia opossum standing on a log at dusk, its white face and bare tail in clear view",
+    "emoji": "🐀",
+    "lastReviewed": "2026-10-14",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Can you have a pet opossum in Texas?",
+        "a": "Yes, with a fur-bearing animal propagation license. Parks and Wildlife Code § 71.001(1) defines a fur-bearing animal as 'wild beaver, otter, mink, ring-tailed cat, badger, skunk, raccoon, muskrat, opossum, fox, or nutria', and § 71.005(c) says no person may possess a live fur-bearing animal 'for any purpose' without that license, which costs $50.75 under § 71.010. 'For any purpose' makes it a keeper's license as well as a breeder's. The opossum is not on Texas's dangerous wild animal list."
+      },
+      {
+        "q": "Is it legal to own an opossum in Florida?",
+        "a": "Yes, with a free permit. No opossum is on Florida's Class I or Class II lists or on the no-permit list, which names honey possums and sugar gliders but not Didelphis, so the Virginia opossum falls to Class III, 'All other wildlife not listed herein', and the no-cost Permit to Possess Class III Wildlife for Personal Use under 68A-6.003(8). The wild-taken bar at 68A-6.003(13) names foxes, skunks, bats, raccoons and white-tailed deer and not opossums."
+      },
+      {
+        "q": "Are opossums legal in California?",
+        "a": "No. 14 CCR § 671(c)(2)(C) restricts 'Order Marsupialia-Marsupials or Pouched Animals: All species (W)', the welfare category, and the Virginia opossum is a marsupial. The animal has lived wild in California for a century, but § 671 reaches a listed order whatever the animal's origin, and no permit type covers pet keeping."
+      },
+      {
+        "q": "Is a Virginia opossum legal in Virginia?",
+        "a": "No, and the name is the species' name, not a clue about the state. Didelphis virginiana is on the Virginia department's list of native fauna, which puts it under Va. Code § 29.1-521(A)(10), the bar on possessing any wild animal 'except as specifically permitted by law', and the only permits are for exhibits and scientific collection. The one-per-address allowance for native wildlife reaches herps, aquatic invertebrates and nongame fish, not mammals."
+      },
+      {
+        "q": "Can I keep a baby opossum I found?",
+        "a": "In Arkansas, up to six per household of hand-captured opossums, rabbits, raccoons and squirrels combined, with no sale and no removal from the state. In Louisiana, for 90 days as a wildlife rescuer, one animal or litter, and for life only on a special purpose permit after a vet finds it non-releasable. Nearly everywhere else the permit states require a captive-bred animal: New Jersey, Michigan, Nebraska and Oklahoma all bar the wild-caught one, and Kentucky bars buying or selling a native taken from the wild."
+      },
+      {
+        "q": "Where is a pet opossum legal with no permit?",
+        "a": "Four states on the text: Wisconsin, Connecticut, Nevada and South Dakota. Wisconsin names opossums among the native animals exempt from its captive wildlife license. Nevada clears 'Marsupials' from any Department permit. Connecticut's four-category rule puts no opossum in any category, and South Dakota's possession permit list has no marsupial on it. In all four, county and city ordinances were not checked, and a wild-caught animal is a separate question."
+      },
+      {
+        "q": "Does being a marsupial make an opossum legal where sugar gliders are?",
+        "a": "Only in Nevada, which clears all marsupials. Everywhere else the two animals part company, because the sugar glider is an exotic and the opossum is a native. Massachusetts exempts the sugar glider by name and lists no opossum. Vermont's unrestricted list carries the sugar glider and the feathertail glider and no opossum. Florida's no-permit list names sugar gliders and honey possums and leaves the Virginia opossum in Class III. Georgia's marsupial entry covers two Australian orders and the opossum is caught by the native wildlife rule instead."
+      },
+      {
+        "q": "Is an opossum a rabies vector species in law?",
+        "a": "Not in any statute read for this map. New Jersey's rabies vector list names raccoons, skunks, woodchucks, foxes and bats. Louisiana's rescuer rule attaches rabies vector conditions to a raccoon or skunk and not to an opossum. Kentucky's prohibited rabies vector list is coyote, two foxes, raccoon and two skunks. The folklore about opossums and rabies has no legal effect either way: the rules that reach the opossum are furbearer, game and native-wildlife rules, and they would reach it whatever its disease profile."
+      }
+    ],
+    "relatedProducts": [],
+    "factFile": false,
+    "animalDay": null,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 5,
+    "headingCount": 9,
+    "ledeMatchesExcerpt": false,
+    "imageWidth": 1168,
+    "imageHeight": 784
+  },
+  {
+    "path": "/content/guides/wallaby-legal-guide.mdx",
+    "slug": "wallaby-legal-guide",
+    "title": "Are Wallabies Legal? Legal in 31 States, and Where 'Kangaroo' Catches One",
+    "seoTitle": "Are Wallabies Legal in the US? Legal in 31 States, by State",
+    "seoDescription": "Wallaby laws by state: legal in 31, permit in 10, banned in 9, unclear in 2. Where 'kangaroo' in a statute reaches a wallaby, and why New York has no ban.",
+    "lastUpdated": "2026-10-14",
+    "noIndex": false,
+    "excerpt": "A Bennett's wallaby is legal with no state permit in 31 jurisdictions, more than almost any other exotic mammal its size, because most dangerous-animal lists never mention a marsupial and most native-wildlife rules never reach an Australian one. Nine jurisdictions ban it, ten issue a permit, and Pennsylvania and Connecticut have text that will not decide.",
+    "date": "2026-10-14",
+    "category": "Legal",
+    "categories": [
+      "Legal"
+    ],
+    "tags": [
+      "Wallaby",
+      "Bennett's Wallaby",
+      "Marsupials",
+      "Legal",
+      "Exotic Pet Laws",
+      "Wildlife Law",
+      "Pet Ownership"
+    ],
+    "readTime": 11,
+    "difficulty": "Intermediate",
+    "image": "/assets/guides/wallaby-legal.jpg",
+    "imageAlt": "Bennett's wallaby standing upright in a grassy field",
+    "emoji": "🦘",
+    "lastReviewed": "2026-10-14",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Are wallabies legal in the US?",
+        "a": "In most of it. On the text read for the map, a Bennett's wallaby needs no state permit in 31 jurisdictions, needs a permit in 10, is banned in 9 and sits in text that will not decide in Pennsylvania and Connecticut. The bans are California, Georgia, Hawaii, Maine, New Mexico, New Hampshire, Alaska, the District of Columbia and New York City. Local ordinances were not checked anywhere, and North Carolina hands the whole question to its counties."
+      },
+      {
+        "q": "Can you own a wallaby in Texas?",
+        "a": "Yes, with no state permit. Texas's dangerous wild animal list at Health and Safety Code § 822.101(4) is a closed list of nineteen named mammals and their hybrids, from the lion to the gorilla, and no marsupial is on it. A wallaby is not a Texas native, so the nongame rules do not reach it either. Cities and counties were not checked."
+      },
+      {
+        "q": "Is a wallaby legal in Florida?",
+        "a": "Yes, with a free permit. No macropod is on Florida's Class I or Class II lists, and the no-permit list's only marsupials are honey possums and sugar gliders, so a wallaby falls to Class III, 'All other wildlife not listed herein', and the no-cost Permit to Possess Class III Wildlife for Personal Use under 68A-6.003(8). Marsupials have their own caging standard at 68A-6.0127."
+      },
+      {
+        "q": "Can I have a pet wallaby in California?",
+        "a": "No. 14 CCR § 671(c)(2)(C) restricts 'Order Marsupialia-Marsupials or Pouched Animals: All species (W)', and the welfare marking changes nothing for a keeper: the only possession permit, Animal Care, requires lawful possession in California before January 1992. There is no pet route."
+      },
+      {
+        "q": "Is a wallaby legal in New York?",
+        "a": "In the state, yes; in the city, no. ECL § 11-0103(6)(e) defines wild animal with the words 'includes, and is limited to', and the list runs to primates, cats, canids, bears, a set of reptiles and crocodilians, with no marsupial. None is among the dangerous animals in 6 NYCRR 180.1 either, so the state does not restrict a wallaby. New York City's Health Code § 161.01(b)(17) bars 'All marsupials' and names the wallaby."
+      },
+      {
+        "q": "Does a kangaroo ban cover a wallaby?",
+        "a": "When it names the family, yes. Georgia, New Mexico, Utah and Oregon all write 'Macropodidae', and the family holds every kangaroo and wallaby, so a wallaby is caught or cleared along with the red kangaroo. When a statute lists genera one by one, the answer can turn on taxonomy: Connecticut names the subgenera Osphranter and Macropus and never Notamacropus, where Bennett's wallaby now sits, which is why that cell is unclear rather than banned."
+      },
+      {
+        "q": "Which states name Bennett's wallaby by name?",
+        "a": "Colorado, Montana, Arkansas, Hawaii and New Hampshire, and three of the five under the older genus Macropus rufogriseus. Colorado's unregulated list and Montana's noncontrolled list clear it, Arkansas puts it on the permit list, Hawaii lists it for private and commercial use that by definition excludes a pet, and New Hampshire's controlled table marks it for exhibitors only."
+      },
+      {
+        "q": "Where does a wallaby need a permit a private keeper can get?",
+        "a": "Nine states: New Jersey's individual hobby permit, Florida's free Class III permit, Utah's certificate of registration for a controlled mammal, Delaware's three-year Individual Permit, Arkansas's permit-list route through a licensed breeder or importer, Idaho's captive possession license, Rhode Island's exotic animal possession permit, Wyoming's discretionary permit, which may be authorized rather than shall be issued, and Vermont's, issued only on the Commissioner's finding that the animal does not conflict with the regulation's purpose. Massachusetts has a license in the statute and an agency that will not issue it for a pet."
+      }
+    ],
+    "relatedProducts": [],
+    "factFile": false,
+    "animalDay": null,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 5,
     "headingCount": 9,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,

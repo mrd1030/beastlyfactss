@@ -6669,6 +6669,19 @@
       "animalDay": null
     },
     {
+      "slug": "pet-monkey-legal-guide",
+      "title": "Is It Legal to Own a Monkey? Primate Laws by State",
+      "excerpt": "Most states never wrote a monkey law. They wrote 'nonhuman primates' and let the order do the work, which is why a",
+      "date": "2026-10-14",
+      "image": "/assets/guides/pet-monkey-legal-guide.jpg",
+      "category": "Legal",
+      "categories": [
+        "Legal",
+        "Small & Exotic Pets"
+      ],
+      "animalDay": null
+    },
+    {
       "slug": "pet-obesity-body-condition-guide",
       "title": "Pet Obesity & Body Condition Score: The 9-Point Scale",
       "excerpt": "Fifty-nine percent of dogs and 61% of cats are overweight, and about a third of their owners believe those pets are a",
@@ -7429,6 +7442,19 @@
       "categories": [
         "Reptiles",
         "Turtles & Tortoises"
+      ],
+      "animalDay": null
+    },
+    {
+      "slug": "ring-tailed-lemur-legal-guide",
+      "title": "Are Lemurs Legal? 30 Bans, 7 Permits, by State",
+      "excerpt": "The ring-tailed lemur is the one small primate on the federal endangered list, and that listing decides three states by",
+      "date": "2026-10-14",
+      "image": "/assets/guides/ring-tailed-lemur-legal.jpg",
+      "category": "Legal",
+      "categories": [
+        "Legal",
+        "Small & Exotic Pets"
       ],
       "animalDay": null
     },
@@ -8851,6 +8877,30 @@
       "category": "Reptiles",
       "categories": [
         "Reptiles"
+      ],
+      "animalDay": null
+    },
+    {
+      "slug": "virginia-opossum-legal-guide",
+      "title": "Are Pet Opossums Legal? 20 Bans, 20 Permits, by State",
+      "excerpt": "The Virginia opossum is the only marsupial native to the United States, so two kinds of rule reach it: the marsupial",
+      "date": "2026-10-14",
+      "image": "/assets/guides/virginia-opossum-legal.jpg",
+      "category": "Legal",
+      "categories": [
+        "Legal"
+      ],
+      "animalDay": null
+    },
+    {
+      "slug": "wallaby-legal-guide",
+      "title": "Are Wallabies Legal in the US? Legal in 31 States, by State",
+      "excerpt": "A Bennett's wallaby is legal with no state permit in 31 jurisdictions, more than almost any other exotic mammal its",
+      "date": "2026-10-14",
+      "image": "/assets/guides/wallaby-legal.jpg",
+      "category": "Legal",
+      "categories": [
+        "Legal"
       ],
       "animalDay": null
     },
