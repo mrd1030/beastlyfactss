@@ -11431,6 +11431,83 @@
     "imageHeight": 784
   },
   {
+    "path": "/content/guides/capuchin-legal-guide.mdx",
+    "slug": "capuchin-legal-guide",
+    "title": "Are Capuchin Monkeys Legal? The Monkey the Statutes Name",
+    "seoTitle": "Are Capuchin Monkeys Legal? 28 Bans, 9 Permits, by State",
+    "seoDescription": "Capuchin monkey laws by state: 28 bans, 9 permit states, 13 with no rule, Ohio unclear. The service-monkey exceptions, Florida's free permit, and the CDC rule.",
+    "lastUpdated": "2026-10-15",
+    "noIndex": false,
+    "excerpt": "The capuchin is the organ-grinder's monkey and the service monkey, and that history is why it is the one small primate whose name appears in statutes. Georgia, New York and Maryland wrote a capuchin exception, Ohio wrote a capuchin registration, and every one of them sits under a primate rule that gives the capuchin the same answer as a gorilla in 46 jurisdictions.",
+    "date": "2026-10-15",
+    "category": "Legal",
+    "categories": [
+      "Legal",
+      "Small & Exotic Pets"
+    ],
+    "tags": [
+      "Capuchin",
+      "Monkey",
+      "Legal",
+      "Exotic Pet Laws",
+      "Wildlife Law",
+      "Pet Ownership"
+    ],
+    "readTime": 10,
+    "difficulty": "Intermediate",
+    "image": "/assets/guides/capuchin-legal.jpg",
+    "imageAlt": "White-faced capuchin monkey perched on a branch with its pale face and dark cap turned toward the camera",
+    "emoji": "🐒",
+    "lastReviewed": "2026-10-15",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Is it legal to own a capuchin monkey in Florida?",
+        "a": "Yes, with a free permit. Florida writes its primate classes genus by genus, and the capuchin is on neither the Class I list of apes, gibbons, baboons and drills nor the Class II list of macaques, guenons, howlers and langurs, so 68A-6.002(1)(c) sends it to Class III, 'All other wildlife not listed herein'. A Permit to Possess Class III Wildlife for Personal Use costs nothing, and primates have their own caging standard at 68A-6.0121."
+      },
+      {
+        "q": "Can you own a capuchin monkey in Texas?",
+        "a": "At state level, yes, with no permit. Health and Safety Code § 822.101(4) lists only four primates among its dangerous wild animals, 'a baboon; a chimpanzee; an orangutan; a gorilla', so a capuchin needs no certificate of registration and no insurance. Texas cities and counties regulate primates far more often than the state does, and the county or city ordinance is the rule to read before buying."
+      },
+      {
+        "q": "Is it legal to own a capuchin monkey in California?",
+        "a": "No. 14 CCR § 671(c)(2)(A) restricts 'Order Primates-Monkeys, Apes: All species' and carves out only humans. No California permit type covers keeping one as a pet; the only possession permit, Animal Care, requires lawful possession in the state before January 1992."
+      },
+      {
+        "q": "Are capuchin monkeys legal in Ohio?",
+        "a": "The statute points two ways and the map records it as unclear. R.C. 935.01(C)(19) makes every nonhuman primate a dangerous wild animal except lemurs and a list of named species that does not include a capuchin, and no dangerous wild animal may be acquired since 2012. But R.C. 935.041, passed in the same bill, tells anyone who possesses brown, white-faced, weeping or white-fronted capuchins to register them with the Department of Agriculture, which only makes sense if they can be kept. Ask the department in writing before buying."
+      },
+      {
+        "q": "Can you have a capuchin monkey in Georgia?",
+        "a": "Not as a pet. Georgia puts the whole order Primates in the license tier, and O.C.G.A. § 27-5-4(b)(1) issues wild animal licenses only to the wild animal trade and public exhibitors. The one capuchin route is § 27-5-4(b)(2): a free permit for an animal in the genus Cebus trained by a nonprofit to assist a person with a permanent disability, kept only in that person's home as their only wild animal."
+      },
+      {
+        "q": "What is a service capuchin, and can anyone get one?",
+        "a": "A capuchin trained by a nonprofit to fetch, open and operate things for a person with limited mobility. Three states wrote an exception for it into a primate ban: Georgia names the genus Cebus, New York covers a New World monkey trained for a person paralyzed from the neck down, and Maryland covers an animal trained for a person whose disability severely limits mobility. Each is an assistance-animal carve-out for a named person and a named use, not a pet route, and the federal ADA regulations define a service animal as a dog."
+      },
+      {
+        "q": "Can I import a capuchin monkey?",
+        "a": "No. The CDC's rule at 42 CFR 71.53 lets live nonhuman primates into the United States only through registered importers for scientific, educational or exhibition purposes, and (d)(3) bars keeping, selling or distributing an imported primate or its offspring as a pet. The pet trade has been shut at the border since 1975, so every capuchin sold lawfully in the country was bred here."
+      },
+      {
+        "q": "Is a capuchin legal in New York?",
+        "a": "No. ECL § 11-0103(6)(e)(1) makes 'Nonhuman primates and prosimians' wild animals, § 11-0512 bars keeping a wild animal as a pet, and 6 NYCRR § 180.1(b)(9) lists them again as dangerous animals. The one capuchin-shaped exception, § 11-0512(2)(j), covers a New World monkey trained by a 501(c) organization for a person paralyzed from the neck down. New York City bans every nonhuman primate separately under Health Code § 161.01(b)(8)."
+      }
+    ],
+    "relatedProducts": [],
+    "factFile": false,
+    "animalDay": null,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 5,
+    "headingCount": 10,
+    "ledeMatchesExcerpt": false,
+    "imageWidth": 1168,
+    "imageHeight": 784
+  },
+  {
     "path": "/content/guides/capybara-legal-guide.mdx",
     "slug": "capybara-legal-guide",
     "title": "Are Capybaras Legal? Twelve Bans and Thirteen Permits",
@@ -18643,7 +18720,7 @@
     "title": "The Pet Bans That Are Real, and the Ones That Aren't",
     "seoTitle": "Exotic Pet Laws Guide: Every Species We Cover",
     "seoDescription": "No federal law decides exotic pet ownership, states do. This hub indexes every species legal guide, plus a state-by-state map across 50 states, DC and NYC.",
-    "lastUpdated": "2026-10-14",
+    "lastUpdated": "2026-10-15",
     "noIndex": false,
     "excerpt": "No federal law actually decides whether you can own most exotic pets, states and cities do. Here's what federal law really controls, how state law actually works, and a direct index of every species-specific legal guide.",
     "date": "2026-07-17",
@@ -18663,7 +18740,7 @@
     "image": "/assets/guides/exotic-pet-legal-hub.jpg",
     "imageAlt": "Gavel beside a variety of exotic pets representing US exotic pet law",
     "emoji": "⚖️",
-    "lastReviewed": "2026-10-14",
+    "lastReviewed": "2026-10-15",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -28447,7 +28524,7 @@
     "title": "Is It Legal to Own a Hognose Snake? State-by-State Guide",
     "seoTitle": "Is a Hognose Snake Legal in Your State? Full Guide",
     "seoDescription": "Hognose snakes clear venomous-reptile laws almost everywhere. Six places ban them, Georgia and New York City among them, and Colorado's 2026 rule splits them.",
-    "lastUpdated": "2026-10-02",
+    "lastUpdated": "2026-10-15",
     "noIndex": false,
     "excerpt": "Hognose snakes are mildly rear-fanged, and New York City is the one place that regulates them for it. The restrictions to watch for are native-wildlife rules: Georgia, West Virginia and Kansas bar the hognose as their own wildlife, whatever the animal's origin.",
     "date": "2026-07-22",
@@ -33323,6 +33400,84 @@
     "ledeMatchesExcerpt": false,
     "imageWidth": 1408,
     "imageHeight": 768
+  },
+  {
+    "path": "/content/guides/marmoset-legal-guide.mdx",
+    "slug": "marmoset-legal-guide",
+    "title": "Are Marmosets Legal? The Finger Monkey and the Family Line",
+    "seoTitle": "Are Marmosets Legal? 27 Bans, 9 Permits, by State",
+    "seoDescription": "Marmoset laws by state: 27 bans, 9 permit states, 13 with no rule, Ohio and New Jersey unclear. Florida's free permit, the Callitrichidae clauses, finger monkey",
+    "lastUpdated": "2026-10-15",
+    "noIndex": false,
+    "excerpt": "The finger monkey of the sale ads is a marmoset, and the law reaches it through a family name most of the ads never use: Callitrichidae, the marmosets and tamarins. Where a state wrote that family down, or wrote 'all nonhuman primates', the common marmoset is banned. Where a state named the Cebidae and stopped, the question is whether a marmoset is one, and New Jersey cannot say.",
+    "date": "2026-10-15",
+    "category": "Legal",
+    "categories": [
+      "Legal",
+      "Small & Exotic Pets"
+    ],
+    "tags": [
+      "Marmoset",
+      "Finger Monkey",
+      "Monkey",
+      "Legal",
+      "Exotic Pet Laws",
+      "Wildlife Law",
+      "Pet Ownership"
+    ],
+    "readTime": 10,
+    "difficulty": "Intermediate",
+    "image": "/assets/guides/marmoset-legal.jpg",
+    "imageAlt": "Common marmoset clinging to a tree trunk with its white ear tufts and banded tail in view",
+    "emoji": "🐒",
+    "lastReviewed": "2026-10-15",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Are finger monkeys legal?",
+        "a": "A finger monkey is a marmoset, usually the pygmy marmoset or the common marmoset, and the answer is the marmoset's answer. Read across all 52 jurisdictions the common marmoset is banned in 27, a permit animal in nine, unregulated at state level in 13, restricted in Arizona and unclear in Ohio and New Jersey. The sale name changes nothing: a statute that says 'all nonhuman primates' or 'Callitrichidae' reaches a four-ounce marmoset the same way it reaches a baboon."
+      },
+      {
+        "q": "Is it legal to own a marmoset in Florida?",
+        "a": "Yes, with a free permit. Florida writes its primate classes genus by genus, and Callithrix is on neither the Class I list of apes, gibbons, baboons and drills nor the Class II list of macaques, guenons, howlers and langurs, so 68A-6.002(1)(c) sends it to Class III, 'All other wildlife not listed herein'. A Permit to Possess Class III Wildlife for Personal Use costs nothing, and primates have their own caging standard at 68A-6.0121."
+      },
+      {
+        "q": "Can you own a marmoset in Texas?",
+        "a": "At state level, yes, with no permit. Health and Safety Code § 822.101(4) lists only four primates among its dangerous wild animals, 'a baboon; a chimpanzee; an orangutan; a gorilla', so a marmoset needs no certificate of registration and no insurance, and nothing in the Parks and Wildlife Code reaches a nonnative primate. Texas cities and counties regulate primates far more often than the state does, and the local ordinance is the rule to read before buying."
+      },
+      {
+        "q": "Is a marmoset legal in California?",
+        "a": "No. 14 CCR § 671(c)(2)(A) restricts 'Order Primates-Monkeys, Apes: All species' and carves out only humans. The caging standards in the same section name marmosets among the species that must be given nest boxes, so the department has them in view, but no California permit type covers keeping one as a pet; the only possession permit, Animal Care, requires lawful possession in the state before January 1992."
+      },
+      {
+        "q": "Are marmosets legal in New Jersey?",
+        "a": "A permit is needed either way, and which permit is the open question. N.J.A.C. 7:25-4.2(a) bars possessing any exotic mammal without a permit. The potentially dangerous species table at 7:25-4.8(a) names 'Cebidae--New World Monkeys', and a potentially dangerous animal may not be kept as a pet under 4.9(a)3. The marmosets were their own family, Callitrichidae, when that table was written, and are now generally placed inside Cebidae. Read the first way, a marmoset takes the individual hobby permit at 4.6(a)1; read the second, it has no pet route. The map records New Jersey as unclear."
+      },
+      {
+        "q": "Are marmosets legal in Ohio?",
+        "a": "The statute points two ways. R.C. 935.01(C)(19) makes every nonhuman primate a dangerous wild animal except lemurs and a list of named species that includes no marmoset, and no dangerous wild animal may be acquired since 2012. But R.C. 935.041, passed in the same bill, tells anyone who possesses 'Pygmy, white-tufted-ear, silvery, and black-pencilled marmosets' to register them with the Department of Agriculture, and the white-tufted-ear marmoset is the common marmoset. A registration section only makes sense if the animal can be kept. The map records Ohio as unclear; ask the department in writing before buying."
+      },
+      {
+        "q": "Is the common marmoset an endangered species?",
+        "a": "Not under federal law. 50 CFR 17.11 lists the whole family Lemuridae as endangered, which is why a ring-tailed lemur is barred in Missouri, South Carolina and New Jersey by reference to that list, but the common marmoset, Callithrix jacchus, is not on it. That is why Missouri's free pass for nonnative mammals, which excludes federally endangered species, clears the marmoset and not the lemur."
+      },
+      {
+        "q": "Is it legal to own a marmoset in New York?",
+        "a": "No. ECL § 11-0103(6)(e)(1) makes 'Nonhuman primates and prosimians' wild animals, § 11-0512 bars keeping a wild animal as a pet, and 6 NYCRR § 180.1(b)(9) lists them again as dangerous animals. The only primate exception in § 11-0512(2)(j) covers a trained assistance monkey for a person paralyzed from the neck down. New York City bans every nonhuman primate separately under Health Code § 161.01(b)(8)."
+      }
+    ],
+    "relatedProducts": [],
+    "factFile": false,
+    "animalDay": null,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 5,
+    "headingCount": 11,
+    "ledeMatchesExcerpt": false,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/mike-the-headless-chicken-explained.mdx",
@@ -44575,6 +44730,79 @@
     "imageHeight": 784
   },
   {
+    "path": "/content/guides/squirrel-monkey-legal-guide.mdx",
+    "slug": "squirrel-monkey-legal-guide",
+    "title": "Are Squirrel Monkeys Legal? The Capuchin's Answer, Minus the Exceptions",
+    "seoTitle": "Are Squirrel Monkeys Legal? 28 Bans, 9 Permits, by State",
+    "seoDescription": "Squirrel monkey laws by state: 28 bans, 9 permit states, 13 with no rule, Ohio unclear. Florida's free permit, Texas's four-primate list, Ohio's R.C. 935.041.",
+    "lastUpdated": "2026-10-15",
+    "noIndex": false,
+    "excerpt": "A squirrel monkey gets the capuchin's answer in every one of the 52 jurisdictions, and the reason is that almost no statute looked at either. Both are Cebidae, both are nonhuman primates, and the rules were written at the family and the order. Four states wrote the squirrel monkey's name, and one of them, Ohio, made the law harder to read by doing it.",
+    "date": "2026-10-15",
+    "category": "Legal",
+    "categories": [
+      "Legal",
+      "Small & Exotic Pets"
+    ],
+    "tags": [
+      "Squirrel Monkey",
+      "Monkey",
+      "Legal",
+      "Exotic Pet Laws",
+      "Wildlife Law",
+      "Pet Ownership"
+    ],
+    "readTime": 9,
+    "difficulty": "Intermediate",
+    "image": "/assets/guides/squirrel-monkey-legal.jpg",
+    "imageAlt": "Squirrel monkey sitting on a branch with its yellow forearms and legs, gray back and black muzzle in view",
+    "emoji": "🐒",
+    "lastReviewed": "2026-10-15",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Is it legal to own a squirrel monkey?",
+        "a": "In 13 states with no state permit, in nine with one, and nowhere else. Read across all 52 jurisdictions the squirrel monkey is banned in 28, a permit animal in nine, restricted in Arizona, unclear in Ohio and unregulated at state level in 13. Those are the capuchin's numbers exactly, because the two animals are both Cebidae and both nonhuman primates, and the statutes were written at the family and the order rather than the species."
+      },
+      {
+        "q": "Can you own a squirrel monkey in Texas?",
+        "a": "At state level, yes, with no permit. Health and Safety Code § 822.101(4) lists only four primates among its dangerous wild animals, 'a baboon; a chimpanzee; an orangutan; a gorilla', so a squirrel monkey needs no certificate of registration and no insurance, and nothing in the Parks and Wildlife Code reaches a nonnative primate. Texas cities and counties regulate primates far more often than the state does, and the local ordinance is the rule to read before buying."
+      },
+      {
+        "q": "Is a squirrel monkey legal in Florida?",
+        "a": "Yes, with a free permit. Florida writes its primate classes genus by genus, and Saimiri is on neither the Class I list of apes, gibbons, baboons and drills nor the Class II list of macaques, guenons, howlers and langurs, so 68A-6.002(1)(c) sends it to Class III, 'All other wildlife not listed herein'. 68A-6.003(8) says a person possessing Class III wildlife for personal use 'shall obtain a no-cost permit from the Executive Director', and primates have their own caging standard at 68A-6.0121."
+      },
+      {
+        "q": "Are squirrel monkeys legal in Ohio?",
+        "a": "The statute points two ways and the map records it as unclear. R.C. 935.01(C)(19) makes every nonhuman primate a dangerous wild animal except lemurs and a list of named species that does not include a squirrel monkey, and no dangerous wild animal may be acquired since 2012. But R.C. 935.041, passed in the same bill, tells anyone who possesses squirrel monkeys to register them with the Department of Agriculture, which only makes sense if they can be kept. Ask the department in writing before buying."
+      },
+      {
+        "q": "Is it legal to own a squirrel monkey in California?",
+        "a": "No. 14 CCR § 671(c)(2)(A) restricts 'Order Primates-Monkeys, Apes: All species' and carves out only humans. The caging standards in the same section let New World monkeys 'such as squirrel, titis, and owl' that were held before 3 August 1989 stay in their approved housing, which is a housing allowance for old permittees and not a pet route. The only possession permit, Animal Care, requires lawful possession in the state before January 1992."
+      },
+      {
+        "q": "Do squirrel monkeys need a permit in Arkansas?",
+        "a": "Yes, and the owner registers as well. Addendum R1.02 lists 'Squirrel Monkeys (Genus Saimiri)' among species a permitted breeder or importer may supply, so a squirrel monkey may be kept if it came from a Commission-permitted breeder or dealer or in on an importation permit. Ark. Code Ann. § 20-19-605 then requires the owner to register it with the county sheriff within 30 days, and § 20-19-602 bars outdoor tethering and public contact. The state statute itself bars only apes, baboons and macaques."
+      },
+      {
+        "q": "Is a squirrel monkey legal in New York?",
+        "a": "No. ECL § 11-0103(6)(e)(1) makes 'Nonhuman primates and prosimians' wild animals, § 11-0512 bars keeping a wild animal as a pet, and 6 NYCRR § 180.1(b)(9) lists them again as dangerous animals. The one primate exception, § 11-0512(2)(j), covers a trained assistance monkey for a person paralyzed from the neck down. New York City bans every nonhuman primate separately under Health Code § 161.01(b)(8)."
+      }
+    ],
+    "relatedProducts": [],
+    "factFile": false,
+    "animalDay": null,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 5,
+    "headingCount": 10,
+    "ledeMatchesExcerpt": false,
+    "imageWidth": 1168,
+    "imageHeight": 784
+  },
+  {
     "path": "/content/guides/stick-insect-cost-guide.mdx",
     "slug": "stick-insect-cost-guide",
     "title": "How Much Does a Stick Insect Really Cost? (And a Legal Note to Read First)",
@@ -49820,6 +50048,84 @@
     "myth": null,
     "truth": null,
     "sourceCount": 3,
+    "headingCount": 9,
+    "ledeMatchesExcerpt": false,
+    "imageWidth": 1168,
+    "imageHeight": 784
+  },
+  {
+    "path": "/content/guides/venomous-snake-laws-by-state.mdx",
+    "slug": "venomous-snake-laws-by-state",
+    "title": "Venomous Snake Laws by State: Rattlesnakes, Cobras and the Class Rule",
+    "seoTitle": "Venomous Snake Laws by State: Rattlesnake and Cobra Rules",
+    "seoDescription": "Venomous snake laws by state: where rattlesnakes and cobras are banned, permitted or legal, which states exempt native rattlesnakes, and the five with no rule.",
+    "lastUpdated": "2026-10-15",
+    "noIndex": false,
+    "excerpt": "Most states regulate 'venomous reptiles' as a class, so a cobra and a rattlesnake get one answer. The rattlesnake then gets a second one, because across most of the country it is also a native animal with its own take rules, and those run from a two-snake bag limit in California to a bare 'do not possess' in Nebraska.",
+    "date": "2026-10-15",
+    "category": "Legal",
+    "categories": [
+      "Legal",
+      "Reptiles"
+    ],
+    "tags": [
+      "Venomous Snakes",
+      "Rattlesnake",
+      "Cobra",
+      "Legal",
+      "Exotic Pet Laws",
+      "Snake Care",
+      "State Laws"
+    ],
+    "readTime": 12,
+    "difficulty": "Intermediate",
+    "image": "/assets/guides/venomous-snake-laws-by-state.jpg",
+    "imageAlt": "Western diamondback rattlesnake coiled on sand with its rattle raised",
+    "emoji": "🐍",
+    "lastReviewed": "2026-10-15",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Is it legal to own a rattlesnake?",
+        "a": "It depends on the state and on where the snake came from. Seventeen jurisdictions ban the rattlesnake outright with no pet route, among them New York, Maryland, Tennessee, Iowa and Delaware. Twelve issue a personal permit, Florida, Ohio, Utah and Arkansas among them. North Carolina allows one in a locked, labeled, bite-proof enclosure. Then the native rules cut across all of that: a Texan may hold 25 western diamondbacks with no permit, a Californian may take two of most native species with no license, and a Nebraskan may keep ten prairie rattlesnakes but no timber rattlesnake at all."
+      },
+      {
+        "q": "Is it legal to own a cobra in the US?",
+        "a": "Federally, yes: CITES puts the king cobra and the Asian Naja species on Appendix II, which governs import and export and not keeping. At state level, 26 jurisdictions ban it, 11 issue a personal permit, Vermont a discretionary one and Massachusetts an institutional one, Arizona restricts it, Oregon answers species by species, North Carolina and Minnesota attach a condition, and nine states have no rule reaching it: Pennsylvania, Wisconsin, Michigan, Virginia, South Carolina, South Dakota, Mississippi, Oklahoma and Nebraska."
+      },
+      {
+        "q": "Is it legal to own a venomous snake in Texas?",
+        "a": "A nonnative one, with a permit. Parks and Wildlife Code § 43.851 has the commission issue controlled exotic snake permits for any 'live nonindigenous snake, including a hybrid of any kind, that is: (1) venomous', with separate recreational and commercial permits, so a cobra or a non-Texas rattlesnake takes the recreational permit. Five native rattlesnakes, the western diamondback, rock, blacktail, Mojave and prairie, are on the nongame list at 31 TAC 65.331(d), so a person may hold up to 25 of each with no permit, captive-bred animals included."
+      },
+      {
+        "q": "Is it legal to own a venomous snake in Florida?",
+        "a": "Yes, under a venomous reptile permit that an individual can hold. 68A-6.017 requires the applicant to be at least 18, to show one year and 1,000 hours of hands-on experience with the species or its family backed by two references, or to pass the Commission's written examination, and to have the facility inspected and approved before the snake arrives. A disaster and critical incident plan is required. That covers every rattlesnake, native or not, because Florida's no-permit list clears only nonvenomous reptiles."
+      },
+      {
+        "q": "Can you keep a venomous snake in North Carolina?",
+        "a": "Yes, if it is kept to the statute. G.S. § 14-417 makes it unlawful to own a venomous reptile 'that is not housed in a sturdy and secure enclosure' that is escape-proof, bite-proof and locked, labeled 'Venomous Reptile Inside' with the species, the appropriate antivenin and the owner's details, with a written bite protocol and escape recovery plan posted and an escape reported to law enforcement at once. Counties may go further, and several have."
+      },
+      {
+        "q": "Is a devenomized snake legal where venomous snakes are banned?",
+        "a": "Usually not, and New York City says so in terms: its Health Code prohibits 'all front-fanged venomous snakes, even if devenomized'. Every other ban on this map is written by family, Elapidae or Viperidae, and a surgically altered cobra is still an elapid. No statute read for this guide treats a venomoid differently."
+      },
+      {
+        "q": "Can I catch and keep a wild rattlesnake?",
+        "a": "In some states, within a limit. California allows two of most native species with no license and zero red diamond rattlesnakes. Kentucky allows five native reptiles for personal use. Kansas allows two per species and five reptiles in all, but excludes the timber rattlesnake. Oklahoma opens its three natives from 1 March to 30 June under a hunting license. Nebraska allows ten prairie rattlesnakes and no timber rattlesnake. Elsewhere the native snake is protected: Pennsylvania's timber rattlesnake needs a permit and is limited to one, Virginia's to one per address, and Wisconsin, Michigan, Maryland, West Virginia and Rhode Island bar taking theirs."
+      },
+      {
+        "q": "Is a king cobra legal anywhere?",
+        "a": "The rules that name it separately mostly say yes with conditions. Oregon lists the king cobra, Ophiophagus hannah, as a noncontrolled species that needs no ODFW permit. Arkansas puts 'King Cobras (Genus Ophiophagus)' on its permit list beside the Naja cobras, under the same Venomous Reptile Permit. Louisiana's 2025 prohibited list names the genus and bars it. Everywhere else it is an elapid and gets the cobra's answer."
+      }
+    ],
+    "relatedProducts": [],
+    "factFile": false,
+    "animalDay": null,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 5,
     "headingCount": 9,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,

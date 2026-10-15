@@ -25,6 +25,11 @@
     "excerpt": "The Canada lynx is federally threatened in the lower 48, and that one listing decides a handful of state cells by reference and sits underneath every other. Twenty-seven jurisdictions ban it..."
   },
   {
+    "slug": "capuchin-legal-guide",
+    "title": "Are Capuchin Monkeys Legal? The Monkey the Statutes Name",
+    "excerpt": "The capuchin is the organ-grinder's monkey and the service monkey, and that history is why it is the one small primate whose name appears in statutes. Georgia, New York and Maryland wrote a capuchin..."
+  },
+  {
     "slug": "capybara-legal-guide",
     "title": "Are Capybaras Legal? Twelve Bans and Thirteen Permits",
     "excerpt": "The world's largest rodent is legal in 23 US jurisdictions, banned in 12, and needs a permit in 13. Almost none of those rules mention the capybara at all: they are rules about the order Rodentia..."
@@ -63,6 +68,11 @@
     "slug": "madagascar-hissing-cockroach-legal-guide",
     "title": "Are Madagascar Hissing Cockroaches Legal to Own?",
     "excerpt": "Most state wildlife law was written for animals with a backbone, and the hissing cockroach lands in the hole that leaves. Four jurisdictions ban it, one requires an agriculture permit, and three..."
+  },
+  {
+    "slug": "marmoset-legal-guide",
+    "title": "Are Marmosets Legal? The Finger Monkey and the Family Line",
+    "excerpt": "The finger monkey of the sale ads is a marmoset, and the law reaches it through a family name most of the ads never use: Callitrichidae, the marmosets and tamarins. Where a state wrote that family..."
   },
   {
     "slug": "black-bear-legal-guide",
@@ -143,6 +153,11 @@
     "slug": "snapping-turtle-legal-guide",
     "title": "Are Snapping Turtles Legal? Seasons, Creel Limits and Bans",
     "excerpt": "The snapping turtle is the one native reptile a dozen states still let you take, and they answer it in the fishing regulations rather than the pet ones. Fourteen jurisdictions attach a season or a..."
+  },
+  {
+    "slug": "squirrel-monkey-legal-guide",
+    "title": "Are Squirrel Monkeys Legal? The Capuchin's Answer, Minus the Exceptions",
+    "excerpt": "A squirrel monkey gets the capuchin's answer in every one of the 52 jurisdictions, and the reason is that almost no statute looked at either. Both are Cebidae, both are nonhuman primates, and the..."
   },
   {
     "slug": "tarantula-legal-guide",
@@ -368,5 +383,10 @@
     "slug": "conformation-breeding-laws-guide",
     "title": "The Laws That Regulate How a Pet Is Built",
     "excerpt": "Our exotic pet map answers which species you may keep. This is the other axis: which shapes an animal is allowed to be. Europe regulates it, the US does not, and the gap is wider than almost anyone..."
+  },
+  {
+    "slug": "venomous-snake-laws-by-state",
+    "title": "Venomous Snake Laws by State: Rattlesnakes, Cobras and the Class Rule",
+    "excerpt": "Most states regulate 'venomous reptiles' as a class, so a cobra and a rattlesnake get one answer. The rattlesnake then gets a second one, because across most of the country it is also a native animal..."
   }
 ]
