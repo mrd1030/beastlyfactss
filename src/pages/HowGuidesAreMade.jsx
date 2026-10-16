@@ -101,7 +101,9 @@ function CorrectionsLog({ entries }) {
               <span>{g.key}</span>
               <span className="text-xs font-normal text-muted-foreground">{`${g.items.length} ${g.items.length === 1 ? 'entry' : 'entries'}`}</span>
             </summary>
-            <ul className="divide-y divide-border border-t border-border">
+            {/* An open month scrolls inside its own box, so a busy month never
+                runs the page a mile long. */}
+            <ul className="divide-y divide-border border-t border-border max-h-[28rem] overflow-y-auto overscroll-contain">
               {g.items.map((c, i) => (
                 <li key={`${c.page}-${c.date}-${i}`}>
                   <details className="group">
