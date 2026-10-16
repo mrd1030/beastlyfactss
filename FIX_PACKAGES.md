@@ -4,6 +4,8 @@ Open work for the 20 printable care packages only. Site fixes stay in FIX_PLAN.m
 
 Set up 2026-10-04 from the FIX_PLAN reconcile, the 2026-10-03 pricing and gear pass, and a scan of all 20 glossaries.
 
+Checked against the book sources on 2026-10-15: every item below is still open. Line numbers are as of 2026-10-04 and have drifted; search for the quoted text. The goldfish budget page already matches the site (3.1, $310 to $615); COST_CHECK.md's "needs fix" on it is stale.
+
 **Keep this file organized by animal (owner, 2026-10-04).** It will build up between rounds. Every new item goes under its animal's heading in section 3, tagged by kind (Book, Glossary, Gear, Store) with the file and line where the edit goes. Only rules and items that truly cover every package go in sections 2 and 4. When an animal has nothing open, its heading says "Nothing open."
 
 ## 1. Where each kind of edit goes
