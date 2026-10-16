@@ -954,19 +954,28 @@ export default function Beastle() {
   // the first manifest link and index.html already has one. Runs during
   // prerender too, so the baked /beastle/ HTML carries the Beastle manifest.
   useEffect(() => {
+    // Every matching element is swapped, not just the first: index.html
+    // declares two favicon links (the .ico and the 256px PNG), and a crawler
+    // that wants the bigger one would otherwise still get the site's badge.
+    // Directories such as dledex take a game's icon from these tags, and
+    // without the favicon swap they showed the BF badge for Beastle
+    // (2026-10-16). The sizes and type follow the file so the tag stays true.
     const swaps = [
-      ['link[rel="manifest"]', 'href', '/beastle-manifest.json'],
-      ['link[rel="apple-touch-icon"]', 'href', '/pwa/beastle-apple-touch-180.png'],
-      ['meta[name="apple-mobile-web-app-title"]', 'content', 'Beastle'],
+      ['link[rel="manifest"]', { href: '/beastle-manifest.json' }],
+      ['link[rel="apple-touch-icon"]', { href: '/pwa/beastle-apple-touch-180.png' }],
+      ['link[rel="icon"]', { href: '/pwa/beastle-192.png', type: 'image/png', sizes: '192x192' }],
+      ['meta[name="apple-mobile-web-app-title"]', { content: 'Beastle' }],
     ];
-    const previous = swaps.map(([sel, attr, value]) => {
-      const el = document.querySelector(sel);
-      if (!el) return null;
-      const old = el.getAttribute(attr);
-      el.setAttribute(attr, value);
-      return [el, attr, old];
-    });
-    return () => previous.forEach((p) => p && p[0].setAttribute(p[1], p[2]));
+    const previous = [];
+    for (const [sel, attrs] of swaps) {
+      for (const el of document.querySelectorAll(sel)) {
+        for (const [attr, value] of Object.entries(attrs)) {
+          previous.push([el, attr, el.getAttribute(attr)]);
+          el.setAttribute(attr, value);
+        }
+      }
+    }
+    return () => previous.forEach(([el, attr, old]) => (old == null ? el.removeAttribute(attr) : el.setAttribute(attr, old)));
   }, []);
 
   // The day is read after mount, never during prerender, so the baked HTML
