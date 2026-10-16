@@ -86,6 +86,7 @@ export default function Footer() {
                 { to: '/exotic-pet-laws/', label: 'Is it legal?' },
                 { to: '/categories/', label: 'All categories' },
                 { to: '/about/', label: 'About' },
+                { to: '/how-guides-are-made/', label: 'How guides are made' },
                 { to: '/contact/', label: 'Contact' },
                 { to: '/pack/', label: 'My Pack' },
                 { to: '/terms/', label: 'Terms' },

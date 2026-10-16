@@ -170,6 +170,10 @@ export default function About() {
             correct them as I learn more. If you spot an error, email me. I will fix it and note the change.
           </p>
           <p>
+            The full method, what a check consists of, which pages have had outside review, and the public log of
+            every correction are on <Link to="/how-guides-are-made/" className="text-secondary font-semibold hover:underline">how the guides are made</Link>.
+          </p>
+          <p>
             Nothing here replaces a vet. If your animal is sick, the right move is an exotic or reptile vet, and
             the guides will tell you when that moment has come.
           </p>

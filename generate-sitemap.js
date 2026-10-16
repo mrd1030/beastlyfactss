@@ -207,6 +207,7 @@ const factCategories = [
 const staticPages = [
   '/',
   '/about/',
+  '/how-guides-are-made/',
   '/contact/',
   '/facts/',
   '/animal-facts/',

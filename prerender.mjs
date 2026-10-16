@@ -221,6 +221,7 @@ const STATIC_ROUTES = [
   '/quiz/knowledge',
   ...themedQuizzes.map(q => `/quiz/${q.id}`),
   '/about',
+  '/how-guides-are-made',
   '/contact',
   '/glossary',
   '/animal-facts',

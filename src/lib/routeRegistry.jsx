@@ -31,6 +31,7 @@ export const ROUTE_LOADERS = {
   Blog: () => import('@/pages/Blog'),
   GuideDetail: () => import('@/pages/GuideDetail'),
   About: () => import('@/pages/About'),
+  HowGuidesAreMade: () => import('@/pages/HowGuidesAreMade'),
   Contact: () => import('@/pages/Contact'),
   AnimalFacts: () => import('@/pages/AnimalFacts'),
   Donate: () => import('@/pages/Donate'),

@@ -31,6 +31,7 @@ const Encyclopedia = hydratable('Encyclopedia');
 const Blog = hydratable('Blog');
 const GuideDetail = hydratable('GuideDetail');
 const About = hydratable('About');
+const HowGuidesAreMade = hydratable('HowGuidesAreMade');
 const Contact = hydratable('Contact');
 const AnimalFacts = hydratable('AnimalFacts');
 const Donate = hydratable('Donate');
@@ -123,6 +124,7 @@ const AuthenticatedApp = () => {
           <Route path="/quiz/:tab" element={<Quiz />} />
           <Route path="/pack" element={<Pack />} />
           <Route path="/about" element={<About />} />
+          <Route path="/how-guides-are-made" element={<HowGuidesAreMade />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/animal-facts" element={<AnimalFacts />} />
           <Route path="/fact-files" element={<FactFiles />} />
