@@ -14,9 +14,12 @@ assumes two tracks.
   Wherever this file describes the article track, skip it.
 - Every post carries a fact photo card: scripts/generate-pins.mjs run with
   `--4x5`, a spec of { out, image: the fact's own photo, kicker: "Wild animal fact"
-  on every card (wild as in crazy, so pets too; never "weird"), title: a headline of
-  six words or fewer }. The post text states the
-  fact, so the headline may state it too. Check the crop with
+  on every card (wild as in crazy, so pets too; never "weird"), title: the fact itself in
+  one plain sentence of up to twelve words, naming the animal or the body part
+  the number is about, so the card makes sense with no post text under it.
+  Never a teaser or a pun: "Its tongue pulls more G-force than a fighter pilot
+  can take", not "More G-force than a pilot" (owner, 2026-10-16: six-word
+  headlines read as riddles). Three lines fit the card. } Check the crop with
   scripts/pin-crop-sheet.mjs, upload with scripts/upload-pins.mjs, and use
   https://pins.beastlyfacts.com/<out>-4x5.jpg as the media url.
 - No url anywhere, post or replies. The card's footer names BeastlyFacts.com
