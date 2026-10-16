@@ -2422,6 +2422,19 @@
       "animalDay": null
     },
     {
+      "slug": "cobra-legal-guide",
+      "title": "Are Cobras Legal? 26 Bans, 13 Permit States, by State",
+      "excerpt": "A cobra is the cleanest venomous-snake question on the map, because no state has a native one. There is no hunting season to carve it out and no sport-take limit to let it in: 26 jurisdictions ban it, 13 issue a permit, three attach a condition, Arizona restricts it, and nine states have no rule at all. Federally the only law that touches it is CITES, which governs the border and not the cage.",
+      "date": "2026-10-16",
+      "image": "/assets/guides/cobra-legal.jpg",
+      "category": "Legal",
+      "categories": [
+        "Legal",
+        "Reptiles"
+      ],
+      "animalDay": null
+    },
+    {
       "slug": "cockatiel-cost-guide",
       "title": "Cockatiel Price: $75 to $250, $370 to $765 Full Setup",
       "excerpt": "Cockatiels are relatively affordable to buy, but the budgeting story here is how long you'll be caring for one. A 12 to 15 year lifespan means this is a long-term financial commitment even though the entry cost is modest.",
@@ -2877,6 +2890,19 @@
       "category": "Fish",
       "categories": [
         "Fish"
+      ],
+      "animalDay": null
+    },
+    {
+      "slug": "cougar-legal-guide",
+      "title": "Are Cougars Legal? 36 Bans, 14 Permit States, by State",
+      "excerpt": "The cougar is the only animal on the Big Cat Public Safety Act's list that is also native to the United States, so it is caught twice: once by the federal Act and every exotic cat clause written for the tiger, and again by the game codes of the states it lives in. The result is the most restricted animal on the map, with 36 bans, 14 permits and one state with no rule.",
+      "date": "2026-10-16",
+      "image": "/assets/guides/cougar-legal.jpg",
+      "category": "Legal",
+      "categories": [
+        "Legal",
+        "Cats"
       ],
       "animalDay": null
     },
@@ -5736,6 +5762,19 @@
       "animalDay": null
     },
     {
+      "slug": "lion-legal-guide",
+      "title": "Are Lions Legal? 35 Bans, 10 Permit States, by State",
+      "excerpt": "The lion gets the tiger's answer in 51 of 52 jurisdictions, and the one exception is a federal listing split down the middle. 50 CFR 17.11 lists one lion subspecies as endangered and the other as threatened, which is why Missouri cannot say whether its free pass for nonnative mammals reaches a lion, and why Wyoming, which bars both, can.",
+      "date": "2026-10-16",
+      "image": "/assets/guides/lion-legal.jpg",
+      "category": "Legal",
+      "categories": [
+        "Legal",
+        "Cats"
+      ],
+      "animalDay": null
+    },
+    {
       "slug": "lions-are-the-only-social-cat",
       "title": "Why Lions Live in Prides: Females Rule",
       "excerpt": "Every other big cat lives alone. Lions do not, and the reason is not teamwork on the hunt. The pride is a group of related females holding ground, and the males are temporary.",
@@ -7178,6 +7217,19 @@
       "animalDay": null
     },
     {
+      "slug": "rattlesnake-legal-guide",
+      "title": "Are Rattlesnakes Legal? 17 Bans, 14 Permits, 14 Conditions",
+      "excerpt": "No animal on the map has a more varied row than the rattlesnake: 17 bans, 14 permits, 14 conditions, one unclear, one restricted and five states with no rule. The venomous-reptile clause answers it once, and then the native-take rules answer it again, nearly everywhere, and usually differently.",
+      "date": "2026-10-16",
+      "image": "/assets/guides/rattlesnake-legal.jpg",
+      "category": "Legal",
+      "categories": [
+        "Legal",
+        "Reptiles"
+      ],
+      "animalDay": null
+    },
+    {
       "slug": "red-eared-slider-cost-guide",
       "title": "Red-Eared Slider Price: $10 to $200, Setup $590 to $1,410+",
       "excerpt": "Red-eared sliders are sold cheap and small, which is exactly what makes their real cost so easy to underestimate. The animal itself is inexpensive. What it grows into is not.",
@@ -8488,6 +8540,19 @@
       "category": "Wild Animals",
       "categories": [
         "Wild Animals"
+      ],
+      "animalDay": null
+    },
+    {
+      "slug": "tiger-legal-guide",
+      "title": "Are Tigers Legal? 36 Bans, 10 Permit States, by State",
+      "excerpt": "Since 20 December 2022 no private person may breed or possess a tiger anywhere in the United States, and the only private tigers left are the ones registered with the Fish and Wildlife Service by 18 June 2023. The state table still matters, because it sets the terms those animals live under, and because Texas, Montana and eight other states never repealed the permits they wrote.",
+      "date": "2026-10-16",
+      "image": "/assets/guides/tiger-legal.jpg",
+      "category": "Legal",
+      "categories": [
+        "Legal",
+        "Cats"
       ],
       "animalDay": null
     },
