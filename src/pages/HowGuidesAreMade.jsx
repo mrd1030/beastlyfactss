@@ -158,7 +158,10 @@ export default function HowGuidesAreMade() {
           </p>
           {REVIEWS.length === 0 ? (
             <p className="rounded-xl border border-dashed border-border bg-muted/40 px-4 py-3 text-foreground">
-              No outside reviews yet.
+              No outside reviews yet. If you are a veterinarian, a biologist or a keeper with real credentials
+              and would read one guide against its sources, say so on
+              the <A to="/contact/?reason=review">contact page</A>. Your name, what qualifies you, a link to
+              your practice or profile, and the date go on the guide and on this page.
             </p>
           ) : (
             <ul className="space-y-3">
@@ -167,7 +170,18 @@ export default function HowGuidesAreMade() {
                   <div className="font-semibold text-foreground">
                     <A to={r.page}>{r.title}</A>
                   </div>
-                  <div>Reviewed by {r.reviewer}. {r.credentials}.</div>
+                  {/* One string on each side of the link, never two adjacent
+                      text nodes: the prerendered HTML merges them and the
+                      client render would not match. */}
+                  {r.url ? (
+                    <div>
+                      {'Reviewed by '}
+                      <a href={r.url} target="_blank" rel="noopener" className="text-secondary font-semibold hover:underline">{r.reviewer}</a>
+                      {`. ${r.credentials}.`}
+                    </div>
+                  ) : (
+                    <div>{`Reviewed by ${r.reviewer}. ${r.credentials}.`}</div>
+                  )}
                   <div>Scope: {r.scope}</div>
                   <div className="text-xs mt-1">{formatDate(r.date)}</div>
                 </li>

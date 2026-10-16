@@ -69,7 +69,8 @@ export default function Contact() {
               Get in Touch
             </h1>
             <p className="text-sm text-muted-foreground font-body">
-              Got a question, a cool fact to share, or spotted an error? I'd like to hear from you.
+              Got a question, a cool fact to share, or spotted an error? I'd like to hear from you. If you are a vet,
+              a biologist or an experienced keeper who would read a guide for accuracy, pick that option below.
             </p>
           </motion.div>
         </div>

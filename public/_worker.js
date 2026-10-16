@@ -578,6 +578,9 @@ async function notifySubscriber(env) {
 // see and bots fill in, and a minimum time on the page before sending. Either
 // one tripping gets a normal-looking success, so a bot learns nothing.
 const CONTACT_LIMITS = { name: 80, email: 120, message: 2000, minMessage: 10, minMs: 3000 };
+// Why the person wrote, from the form's selector. Anything not on this list
+// falls back to the general label, so a crafted value never reaches the push.
+const CONTACT_REASONS = { general: 'Message', error: 'Error report', review: 'Review offer' };
 
 async function handleContact(request, env) {
   if (request.method !== 'POST') return storeJson({ error: 'Method not allowed.' }, 405);
@@ -590,6 +593,7 @@ async function handleContact(request, env) {
   const name = String(body?.name || '').trim();
   const email = String(body?.email || '').trim();
   const message = String(body?.message || '').trim();
+  const reason = CONTACT_REASONS[String(body?.reason || '')] || CONTACT_REASONS.general;
 
   if (String(body?.website || '') !== '' || Number(body?.elapsed) < CONTACT_LIMITS.minMs) {
     return storeJson({ ok: true });
@@ -611,7 +615,7 @@ async function handleContact(request, env) {
       headers: { 'content-type': 'application/json' },
       body: JSON.stringify({
         topic,
-        title: `Contact form: ${name}`,
+        title: `${reason}: ${name}`,
         message: `${email ? `From: ${email}\n\n` : 'No email given.\n\n'}${message}`,
         tags: ['envelope'],
         priority: 4,

@@ -4,6 +4,24 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { CircleCheck } from 'lucide-react';
 import IconChip from '@/components/shared/IconChip';
+import { useLocation } from 'react-router-dom';
+
+// Why the person is writing. One form, one selector: the choice goes into the
+// push title so an error report or a review offer is told apart from a
+// question at a glance, and the review option asks for what a reviewer has
+// to supply (what qualifies them and a page that shows it), which is the
+// filter against agencies offering "services". /contact/?reason=review
+// preselects it, which is how the methods page sends a would-be reviewer here.
+const REASONS = [
+  { value: 'general', label: 'A question, a fact to share, or anything else' },
+  { value: 'error', label: 'I spotted an error on a page' },
+  { value: 'review', label: 'I can review a guide for accuracy' },
+];
+const REASON_HINTS = {
+  general: 'Your question, a fact to share, anything...',
+  error: 'Which page, what it says, and what it should say. A source helps but is not required.',
+  review: 'What you practice or keep, a link to a page that shows it, and which guide you would read. Your name and credentials go on the page.',
+};
 
 // Posts to /api/contact in public/_worker.js, which forwards the message to
 // Mike as an ntfy push. Nothing is stored anywhere.
@@ -14,6 +32,9 @@ import IconChip from '@/components/shared/IconChip';
 // effect rather than during render so the prerendered HTML and the first
 // client render stay identical.
 export default function ContactForm() {
+  const { search } = useLocation();
+  const preset = new URLSearchParams(search).get('reason');
+  const [reason, setReason] = useState(REASONS.some(r => r.value === preset) ? preset : 'general');
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
@@ -34,7 +55,7 @@ export default function ContactForm() {
       const res = await fetch('/api/contact', {
         method: 'POST',
         headers: { 'content-type': 'application/json' },
-        body: JSON.stringify({ name, email, message, website, elapsed: Date.now() - startedAt.current }),
+        body: JSON.stringify({ name, email, message, reason, website, elapsed: Date.now() - startedAt.current }),
       });
       const data = await res.json().catch(() => ({}));
       if (!res.ok || !data.ok) throw new Error(data.error || 'The message did not go through.');
@@ -60,6 +81,14 @@ export default function ContactForm() {
   return (
     <form onSubmit={handleSubmit} className="space-y-3 bg-card border border-border rounded-2xl p-6">
       <p className="font-body font-bold text-base text-foreground">Send a message</p>
+      <select
+        aria-label="What is this about"
+        value={reason}
+        onChange={e => setReason(e.target.value)}
+        className="w-full rounded-lg border border-input bg-background px-3 py-2 text-sm font-body focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
+      >
+        {REASONS.map(r => <option key={r.value} value={r.value}>{r.label}</option>)}
+      </select>
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
         <Input
           placeholder="Your name *"
@@ -81,7 +110,7 @@ export default function ContactForm() {
         />
       </div>
       <textarea
-        placeholder="Your question, a correction, a fact to share..."
+        placeholder={REASON_HINTS[reason]}
         aria-label="Message"
         value={message}
         onChange={e => setMessage(e.target.value)}

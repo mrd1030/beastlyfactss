@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { useArticleMeta } from '@/lib/articleMeta';
+import { useLocation } from 'react-router-dom';
+import { REVIEWS } from '@/lib/data/corrections';
 
 const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 
@@ -97,6 +99,13 @@ export default function Sources({ children, className = '' }) {
   if (reviewed) parts.push(`Last reviewed ${reviewed}`);
   if (sourceCount > 0) parts.push(`${sourceCount} source${sourceCount === 1 ? '' : 's'}`);
 
+  // Outside review credit, from the register on /how-guides-are-made/. Keyed
+  // by the page path, so it appears only on the guide that was actually read.
+  // The newest review wins if a page has been read more than once.
+  const { pathname } = useLocation();
+  const page = pathname.endsWith('/') ? pathname : `${pathname}/`;
+  const review = REVIEWS.filter(r => r.page === page).sort((a, b) => (a.date < b.date ? 1 : -1))[0];
+
   // Counts only the linked list this toggle actually controls, so the label
   // never promises to reveal <AlsoConsulted> entries it does not touch.
   const listed = countDirectItems(findFirstList(children));
@@ -109,6 +118,16 @@ export default function Sources({ children, className = '' }) {
       {parts.length > 0 && (
         <p className="not-prose text-xs font-body text-muted-foreground mb-3">
           {parts.join(' · ')}
+        </p>
+      )}
+      {review && (
+        <p className="not-prose text-xs font-body text-muted-foreground mb-3">
+          {'Reviewed for accuracy by '}
+          {review.url
+            ? <a href={review.url} target="_blank" rel="noopener" className="font-semibold text-primary underline decoration-primary/30 underline-offset-2">{review.reviewer}</a>
+            : <span className="font-semibold">{review.reviewer}</span>}
+          {`, ${review.credentials}, ${formatReviewDate(review.date)}. `}
+          <a href="/how-guides-are-made/" className="underline decoration-primary/30 underline-offset-2">How reviews work</a>
         </p>
       )}
       <div className={collapsed ? OVERFLOW_HIDDEN : undefined}>{children}</div>

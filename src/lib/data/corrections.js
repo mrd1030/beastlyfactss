@@ -319,6 +319,7 @@ export const REVIEWS = [
   //   title: 'Bearded Dragon Care Guide',
   //   reviewer: 'Jane Doe, DVM',
   //   credentials: 'Exotic animal veterinarian, 12 years in reptile practice',
+  //   url: 'https://example-exotics-vet.com/our-team/',   // optional: practice, profile or paper; the name links there
   //   scope: 'Husbandry figures, diet by age, and the health red flags section',
   // },
 ];
