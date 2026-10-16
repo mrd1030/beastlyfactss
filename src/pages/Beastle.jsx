@@ -1,7 +1,7 @@
 import React, { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
-import { ArrowLeft, ArrowRight, BarChart3, Bell, BellOff, Check, Delete, HelpCircle, Image as ImageIcon, Lightbulb, Loader2, RotateCcw, Share2, BookOpen, CalendarDays, InfinityIcon, X } from 'lucide-react';
+import { ArrowLeft, ArrowRight, BarChart3, Bell, BellOff, Check, ChevronDown, Delete, HelpCircle, Image as ImageIcon, Lightbulb, Loader2, RotateCcw, Share2, BookOpen, CalendarDays, InfinityIcon, Star, X } from 'lucide-react';
 import {
   LEVELS, MAX_GUESSES, answerForDay, dayNumber, keyStates, lettersOf, loadWords, pickUnlimited,
   score, shapeOf, shareText, validate, byAnswer,
@@ -522,7 +522,7 @@ function Bonus({ today, dailyAnswer, bonus, setBonus, addToJournal }) {
   };
 
   return (
-    <div className="bg-card border border-border rounded-2xl p-5">
+    <div id="bonus-round" className="bg-card border border-border rounded-2xl p-5 scroll-mt-20">
       <p className="text-[10px] font-body font-bold uppercase tracking-widest text-secondary">Bonus round</p>
       <h2 className="font-display font-bold text-xl text-foreground">Who is this?</h2>
       <p className="text-xs text-muted-foreground font-body mt-1 mb-4">
@@ -1339,6 +1339,20 @@ export default function Beastle() {
                       <ShareButton onShare={() => share({ withImage: true })} icon={ImageIcon} label="Share result image" busyLabel="Making your image..." className="bg-muted text-foreground" />
                     )}
                   </div>
+                  {/* The bonus round sits below the reveal, which on a phone is a
+                      screen or two down, and players were finishing the daily
+                      without knowing it existed (owner, 2026-10-16). This is the
+                      pointer: shown until the three questions are answered. */}
+                  {!(bonus?.day === today && bonus.picks.length >= 3) && (
+                    <button
+                      type="button"
+                      onClick={() => document.getElementById('bonus-round')?.scrollIntoView({ behavior: 'smooth', block: 'start' })}
+                      className="mt-4 w-full inline-flex items-center justify-center gap-2 rounded-2xl border-2 border-secondary/40 bg-secondary/10 px-4 py-2.5 font-body font-bold text-sm text-secondary"
+                    >
+                      <ChevronDown className="w-4 h-4" aria-hidden="true" />
+                      {bonus?.day === today && bonus.picks.length > 0 ? `Bonus round: ${3 - bonus.picks.length} to go` : 'Bonus round: 3 more facts to guess'}
+                    </button>
+                  )}
                   <p className="text-xs text-muted-foreground font-body mt-3">
                     {'Next Beastle in '}<Countdown />
                     <span className="lg:hidden">
@@ -1346,10 +1360,18 @@ export default function Beastle() {
                       <button type="button" onClick={() => { setShowStats(true); window.scrollTo({ top: 0, behavior: 'smooth' }); }} className="font-bold text-secondary hover:underline">Your stats</button>
                     </span>
                   </p>
+                  {/* Beastle is listed on dledex, a daily-game directory whose
+                      score starts as an editor's guess and becomes the players'
+                      after 20 ratings. The listing links here with a utm tag. */}
+                  <p className="text-xs text-muted-foreground font-body mt-1">
+                    <a href="https://dledex.com/games/beastle" target="_blank" rel="noopener" className="inline-flex items-center gap-1 font-bold text-secondary hover:underline">
+                      <Star className="w-3.5 h-3.5" aria-hidden="true" />Rate Beastle on dledex
+                    </a>
+                  </p>
                 </ResultBox>
                 <Reveal entry={dailyEntry} won={dailyGame.won} guesses={dailyGame.guesses.length} kicker="Today's animal" />
-                <BeastleReminder />
                 <Bonus today={today} dailyAnswer={dailyEntry.answer} bonus={bonus} setBonus={setBonus} addToJournal={addToJournal} />
+                <BeastleReminder />
                 <button type="button" onClick={() => setMode('unlimited')} className="w-full inline-flex items-center justify-center gap-2 bg-primary text-primary-foreground font-body font-bold text-sm py-3 rounded-2xl">
                   Keep playing: Unlimited <ArrowRight className="w-4 h-4" />
                 </button>
