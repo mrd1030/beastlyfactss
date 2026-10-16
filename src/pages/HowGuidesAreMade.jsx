@@ -211,7 +211,10 @@ export default function HowGuidesAreMade() {
               were noted on the page they changed.
             </p>
           ) : (
-            <ul className="space-y-3">
+            // Capped and scrolling: 36 entries at launch, and the list only
+            // grows. The page is the method; the log is a reference a reader
+            // dips into, so it gets a box rather than a mile of page.
+            <ul className="space-y-3 max-h-[32rem] overflow-y-auto overscroll-contain pr-2 rounded-xl border border-border bg-muted/30 p-3">
               {CORRECTIONS.map((c, i) => (
                 <li key={`${c.page}-${c.date}-${i}`} className="rounded-xl border border-border bg-background px-4 py-3">
                   <div className="flex flex-wrap items-baseline justify-between gap-2">
