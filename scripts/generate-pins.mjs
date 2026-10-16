@@ -226,12 +226,65 @@ function costSvg(spec) {
 // "focusY": 0 to 1 in the spec pins the vertical center of the crop instead,
 // as a share of the photo's height, for both the pin and the 4x5 render.
 async function crop(spec, h) {
+  // focusX (0 to 1, left to right) does for a landscape photo what focusY does
+  // for a portrait one: a 4:5 feed card cut from a 3:2 photo loses the sides,
+  // and "attention" picks the busiest patch, which for the chameleon was the
+  // tongue and not the animal. Set it in the spec when the crop sheet shows
+  // the subject cut off.
+  if (spec.focusX != null) {
+    const meta = await sharp(spec.image).metadata();
+    const scaledW = Math.round(meta.width * (h / meta.height));
+    if (scaledW > W) {
+      const left = Math.min(scaledW - W, Math.max(0, Math.round(spec.focusX * scaledW - W / 2)));
+      return sharp(spec.image).resize(scaledW, h).extract({ left, top: 0, width: W, height: h }).toBuffer();
+    }
+  }
   if (spec.focusY == null) return sharp(spec.image).resize(W, h, { fit: 'cover', position: 'attention' }).toBuffer();
   const meta = await sharp(spec.image).metadata();
   const scaledH = Math.round(meta.height * (W / meta.width));
   if (scaledH <= h) return sharp(spec.image).resize(W, h, { fit: 'cover' }).toBuffer();
   const top = Math.min(scaledH - h, Math.max(0, Math.round(spec.focusY * scaledH - h / 2)));
   return sharp(spec.image).resize(W, scaledH).extract({ left: 0, top, width: W, height: h }).toBuffer();
+}
+
+// Mean brightness (0 to 255) of the bottom part of a rendered photo buffer,
+// where the overlay headline sits. Above BRIGHT_FLOOR the dark gradient has
+// nothing to blend into and turns to gray fog on a white studio shot, so
+// those cards keep the cream panel instead.
+const BRIGHT_FLOOR = 200;
+async function bottomBrightness(buf, h) {
+  const top = Math.round(h * 0.55);
+  const stats = await sharp(buf).extract({ left: 0, top, width: W, height: h - top }).greyscale().stats();
+  return stats.channels[0].mean;
+}
+
+// X and Threads fact card (--4x5 only): the photo fills the whole 4:5 frame
+// and the headline sits over its bottom on a dark gradient, so the animal
+// is the card rather than half of it. Pinterest keeps the panel below. The
+// headline here is the fact in one sentence (the feed skills' rule), so the
+// size steps start lower than the panel's and three lines always fit.
+async function renderOverlay(spec, photo) {
+  const { size, lines } = layoutTitle(spec.title, [72, 64, 58, 52]);
+  const lh = size * 1.12;
+  const baseline = H - 150;
+  const top = baseline - (lines.length - 1) * lh;
+  const gradTop = Math.max(0, top - size - 260);
+  const svg = `<svg width="${W}" height="${H}" xmlns="http://www.w3.org/2000/svg">
+    <defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#000" stop-opacity="0"/>
+      <stop offset="0.45" stop-color="#000" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#000" stop-opacity="0.82"/>
+    </linearGradient></defs>
+    <rect x="0" y="${gradTop}" width="${W}" height="${H - gradTop}" fill="url(#g)"/>
+    <text x="80" y="${top - size - 8}" font-family="Atkinson-Bold" font-size="28" letter-spacing="6" fill="#F2B38F">${esc(spec.kicker.toUpperCase())}</text>
+    ${lines.map((l, i) => `<text x="80" y="${top + i * lh}" font-family="Schibsted-Bold" font-size="${size}" fill="#FFFFFF">${esc(l)}</text>`).join('\n')}
+    <text x="80" y="${H - 60}" font-family="Atkinson-Bold" font-size="26" fill="#FFFFFF" fill-opacity="0.85">BeastlyFacts.com</text>
+    ${spec.ai === false ? '' : `<text x="${W - 40}" y="${H - 60}" text-anchor="end" font-family="Atkinson-Regular" font-size="20" fill="#FFFFFF" fill-opacity="0.55">Illustrated with AI</text>`}
+  </svg>`;
+  const file = path.join(outDir, `${spec.out}${SUFFIX}.jpg`);
+  await sharp(photo).composite([{ input: Buffer.from(svg), top: 0, left: 0 }]).jpeg({ quality: 80, mozjpeg: true }).toFile(file);
+  const kb = Math.round(fs.statSync(file).size / 1024);
+  console.log(`pin: ${spec.out}${SUFFIX}.jpg (overlay, ${size}px title, ${lines.length} lines, ${kb}KB)`);
 }
 
 async function renderPanel(spec, build) {
@@ -260,6 +313,15 @@ for (const spec of specs) {
     }
     await renderPanel(spec, LAYOUTS[spec.layout]);
     continue;
+  }
+  if (FEED && spec.overlay !== false) {
+    const full = await crop(spec, H);
+    const bright = await bottomBrightness(full, H);
+    if (bright <= BRIGHT_FLOOR) {
+      await renderOverlay(spec, full);
+      continue;
+    }
+    console.log(`${spec.out}: bottom brightness ${Math.round(bright)} over ${BRIGHT_FLOOR}, panel card instead of overlay`);
   }
   const { size, lines } = layoutTitle(spec.title);
   const lineHeight = size * 1.18;

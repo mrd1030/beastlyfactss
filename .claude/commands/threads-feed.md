@@ -19,7 +19,13 @@ assumes two tracks.
   the number is about, so the card makes sense with no post text under it.
   Never a teaser or a pun: "Its tongue pulls more G-force than a fighter pilot
   can take", not "More G-force than a pilot" (owner, 2026-10-16: six-word
-  headlines read as riddles). Three lines fit the card. } Check the crop with
+  headlines read as riddles). Three lines fit the card. }
+  Since 2026-10-16 the --4x5 fact card is the photo filling the whole frame
+  with the headline over its bottom on a dark gradient; the generator falls
+  back to the cream panel by itself when the bottom of the photo is bright
+  (white studio shots), so nothing to choose. A landscape photo cut to 4:5
+  loses its sides: when the crop sheet shows the animal cut off, add
+  "focusX": 0 to 1 (left to right) to the spec, as "focusY" does for tall ones. Check the crop with
   scripts/pin-crop-sheet.mjs, upload with scripts/upload-pins.mjs, and use
   https://pins.beastlyfacts.com/<out>-4x5.jpg as the media url.
 - No url anywhere, post or replies. The card's footer names BeastlyFacts.com
