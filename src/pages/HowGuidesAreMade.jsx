@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useMemo, useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { motion } from '@/lib/motion-safe';
 import { Link } from 'react-router-dom';
@@ -41,6 +41,94 @@ function formatDate(iso) {
   return new Date(Date.UTC(y, m - 1, d)).toLocaleDateString('en-US', {
     year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC',
   });
+}
+
+// The log as a reference, not a wall. Entries group by month, newest first,
+// with only the latest month open; each entry is one line (date, page, what
+// it says now) that opens to the full was, now, source and package. A filter
+// box narrows across every month and opens them all while it is in use, so
+// "chinchilla" or "UVB" lands on the right entries without scrolling. The
+// first sentence of `now` serves as the one-line label because every entry
+// leads with the corrected value.
+function monthKey(iso) {
+  const [y, m] = iso.split('-').map(Number);
+  return new Date(Date.UTC(y, m - 1, 1)).toLocaleDateString('en-US', { year: 'numeric', month: 'long', timeZone: 'UTC' });
+}
+function shortDate(iso) {
+  const [y, m, d] = iso.split('-').map(Number);
+  return new Date(Date.UTC(y, m - 1, d)).toLocaleDateString('en-US', { month: 'short', day: 'numeric', timeZone: 'UTC' });
+}
+function firstSentence(text) {
+  const m = text.match(/^(.+?[.!?])(\s|$)/);
+  return m ? m[1] : text;
+}
+function CorrectionsLog({ entries }) {
+  const [query, setQuery] = useState('');
+  const q = query.trim().toLowerCase();
+  const months = useMemo(() => {
+    const shown = q
+      ? entries.filter(e => [e.title, e.page, e.was, e.now, e.why, e.edition].filter(Boolean).join(' ').toLowerCase().includes(q))
+      : entries;
+    const groups = [];
+    for (const e of shown) {
+      const key = monthKey(e.date);
+      const last = groups[groups.length - 1];
+      if (last && last.key === key) last.items.push(e);
+      else groups.push({ key, items: [e] });
+    }
+    return groups;
+  }, [entries, q]);
+
+  return (
+    <div className="not-prose">
+      <label className="block mb-3">
+        <span className="sr-only">Filter the corrections log</span>
+        <input
+          type="search"
+          value={query}
+          onChange={e => setQuery(e.target.value)}
+          placeholder={`Filter ${entries.length} entries by animal, page or figure`}
+          className="w-full rounded-lg border border-input bg-background px-3 py-2 text-sm font-body placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
+        />
+      </label>
+      {months.length === 0 && (
+        <p className="text-sm text-muted-foreground">Nothing in the log matches that.</p>
+      )}
+      <div className="space-y-2">
+        {months.map((g, gi) => (
+          <details key={g.key} open={Boolean(q) || gi === 0} className="rounded-xl border border-border bg-muted/30">
+            <summary className="cursor-pointer select-none px-4 py-2.5 font-body font-semibold text-sm text-foreground flex items-center justify-between gap-3">
+              <span>{g.key}</span>
+              <span className="text-xs font-normal text-muted-foreground">{`${g.items.length} ${g.items.length === 1 ? 'entry' : 'entries'}`}</span>
+            </summary>
+            <ul className="divide-y divide-border border-t border-border">
+              {g.items.map((c, i) => (
+                <li key={`${c.page}-${c.date}-${i}`}>
+                  <details className="group">
+                    <summary className="cursor-pointer select-none px-4 py-2.5 text-sm font-body grid grid-cols-[3.25rem_1fr] gap-x-3 items-baseline">
+                      <span className="text-xs text-muted-foreground tabular-nums">{shortDate(c.date)}</span>
+                      <span>
+                        <span className="font-semibold text-foreground">{c.title}</span>
+                        <span className="text-muted-foreground">{` ${firstSentence(c.now)}`}</span>
+                      </span>
+                    </summary>
+                    <div className="px-4 pb-3 pl-[4.75rem] text-sm font-body text-muted-foreground space-y-1">
+                      <div><span className="font-semibold text-foreground">Page:</span> <A to={c.page}>{c.title}</A></div>
+                      <div><span className="font-semibold text-foreground">Was:</span> {c.was}</div>
+                      <div><span className="font-semibold text-foreground">Now:</span> {c.now}</div>
+                      {c.why && <div className="text-xs">Source: {c.why}</div>}
+                      {c.edition && <div className="text-xs">Package: {c.edition}</div>}
+                      {c.reportedBy && <div className="text-xs">Reported by {c.reportedBy}.</div>}
+                    </div>
+                  </details>
+                </li>
+              ))}
+            </ul>
+          </details>
+        ))}
+      </div>
+    </div>
+  );
 }
 
 export default function HowGuidesAreMade() {
@@ -225,24 +313,7 @@ export default function HowGuidesAreMade() {
               were noted on the page they changed.
             </p>
           ) : (
-            // Capped and scrolling: 36 entries at launch, and the list only
-            // grows. The page is the method; the log is a reference a reader
-            // dips into, so it gets a box rather than a mile of page.
-            <ul className="space-y-3 max-h-[32rem] overflow-y-auto overscroll-contain pr-2 rounded-xl border border-border bg-muted/30 p-3">
-              {CORRECTIONS.map((c, i) => (
-                <li key={`${c.page}-${c.date}-${i}`} className="rounded-xl border border-border bg-background px-4 py-3">
-                  <div className="flex flex-wrap items-baseline justify-between gap-2">
-                    <span className="font-semibold text-foreground"><A to={c.page}>{c.title}</A></span>
-                    <span className="text-xs">{formatDate(c.date)}</span>
-                  </div>
-                  <div className="mt-1"><span className="font-semibold text-foreground">Was:</span> {c.was}</div>
-                  <div><span className="font-semibold text-foreground">Now:</span> {c.now}</div>
-                  {c.why && <div className="text-xs mt-1">Source: {c.why}</div>}
-                  {c.edition && <div className="text-xs">Package: {c.edition}</div>}
-                  {c.reportedBy && <div className="text-xs">Reported by {c.reportedBy}.</div>}
-                </li>
-              ))}
-            </ul>
+            <CorrectionsLog entries={CORRECTIONS} />
           )}
         </Section>
 
