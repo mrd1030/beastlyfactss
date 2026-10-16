@@ -220,10 +220,12 @@ export default function HowGuidesAreMade() {
 
         <Section title="Found an error?" delay={0.5}>
           <p>
-            Email <a href="mailto:hello@beastlyfacts.com" className="text-secondary font-semibold hover:underline">hello@beastlyfacts.com</a> with
-            the page and what you think is wrong. A source helps but is not required. I read everything. If you
-            are right, the page changes and the fix is logged above. If I think the page is right, I will tell
-            you why and what it rests on. The <A to="/about/">About page</A> has the rest of the story.
+            Use the form on the <A to="/contact/">contact page</A>, or
+            email <a href="mailto:hello@beastlyfacts.com" className="text-secondary font-semibold hover:underline">hello@beastlyfacts.com</a>,
+            or message the site on any of the social accounts listed there. Tell me the page and what you think
+            is wrong. A source helps but is not required. I read everything. If you are right, the page changes
+            and the fix is logged above. If I think the page is right, I will tell you why and what it rests on.
+            The <A to="/about/">About page</A> has the rest of the story.
           </p>
         </Section>
       </div>
