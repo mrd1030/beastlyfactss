@@ -5,6 +5,7 @@ import { Input } from '@/components/ui/input';
 import { CircleCheck } from 'lucide-react';
 import IconChip from '@/components/shared/IconChip';
 import { useLocation } from 'react-router-dom';
+import TurnstileWidget, { isTurnstileEnabled } from '@/components/shared/TurnstileWidget';
 
 // Why the person is writing. One form, one selector: the choice goes into the
 // push title so an error report or a review offer is told apart from a
@@ -41,6 +42,13 @@ export default function ContactForm() {
   const [website, setWebsite] = useState('');
   const [status, setStatus] = useState('idle'); // idle | sending | sent | error
   const [error, setError] = useState('');
+  // Cloudflare Turnstile, the same widget the library sign-in uses. Inert
+  // until VITE_TURNSTILE_SITE_KEY is set; the Worker verifies the token only
+  // when TURNSTILE_SECRET_KEY is set there, so either half can ship first.
+  // The honeypot and the time-on-page check stay underneath it.
+  const [captchaToken, setCaptchaToken] = useState('');
+  const [captchaNonce, setCaptchaNonce] = useState(0);
+  const [captchaBlocked, setCaptchaBlocked] = useState(false);
   const startedAt = useRef(0);
 
   useEffect(() => {
@@ -49,13 +57,18 @@ export default function ContactForm() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    if (isTurnstileEnabled && !captchaToken && !captchaBlocked) {
+      setError('Tick the verification box below, then try again.');
+      setStatus('error');
+      return;
+    }
     setStatus('sending');
     setError('');
     try {
       const res = await fetch('/api/contact', {
         method: 'POST',
         headers: { 'content-type': 'application/json' },
-        body: JSON.stringify({ name, email, message, reason, website, elapsed: Date.now() - startedAt.current }),
+        body: JSON.stringify({ name, email, message, reason, website, captcha: captchaToken, elapsed: Date.now() - startedAt.current }),
       });
       const data = await res.json().catch(() => ({}));
       if (!res.ok || !data.ok) throw new Error(data.error || 'The message did not go through.');
@@ -63,6 +76,10 @@ export default function ContactForm() {
     } catch (err) {
       setError(err.message);
       setStatus('error');
+    } finally {
+      // A Turnstile token is single use: hand the next attempt a fresh one.
+      setCaptchaToken('');
+      setCaptchaNonce(n => n + 1);
     }
   };
 
@@ -127,6 +144,11 @@ export default function ContactForm() {
           <input type="text" tabIndex={-1} autoComplete="off" value={website} onChange={e => setWebsite(e.target.value)} />
         </label>
       </div>
+      <TurnstileWidget
+        onToken={setCaptchaToken}
+        onUnavailable={() => setCaptchaBlocked(true)}
+        resetSignal={captchaNonce}
+      />
       <Button
         type="submit"
         disabled={status === 'sending' || !name.trim() || message.trim().length < 10}

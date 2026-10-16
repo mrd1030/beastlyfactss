@@ -606,6 +606,31 @@ async function handleContact(request, env) {
     return storeJson({ error: `Messages run ${CONTACT_LIMITS.minMessage} to ${CONTACT_LIMITS.message} characters.` }, 400);
   }
 
+  // Turnstile, checked here because nothing else will: the library form's
+  // token is verified by Supabase, this one has only us. Skipped entirely
+  // until TURNSTILE_SECRET_KEY is set, so the form keeps working while the
+  // widget (VITE_TURNSTILE_SITE_KEY) is still off. With the secret set, a
+  // missing or bad token is refused with a sentence about the box, and a
+  // siteverify outage is treated as a pass rather than a dead form.
+  if (env?.TURNSTILE_SECRET_KEY) {
+    const token = String(body?.captcha || '');
+    if (!token) return storeJson({ error: 'Tick the verification box below, then try again.' }, 400);
+    try {
+      const form = new FormData();
+      form.append('secret', env.TURNSTILE_SECRET_KEY);
+      form.append('response', token);
+      const ip = request.headers.get('cf-connecting-ip');
+      if (ip) form.append('remoteip', ip);
+      const verify = await fetch('https://challenges.cloudflare.com/turnstile/v0/siteverify', { method: 'POST', body: form });
+      const result = await verify.json().catch(() => null);
+      if (result && result.success === false) {
+        return storeJson({ error: 'The verification did not pass. Tick the box again and resend.' }, 400);
+      }
+    } catch {
+      // siteverify unreachable: let the honeypot and timing checks carry it.
+    }
+  }
+
   const topic = env?.NTFY_CONTACT_NOTIF || env?.NTFY_SUBSCRIBER_NOTIF;
   if (!topic) return storeJson({ error: 'The form is not set up yet.' }, 503);
 
