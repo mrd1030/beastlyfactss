@@ -93,15 +93,16 @@ export default function HowGuidesAreMade() {
 
         <Section title="Where the AI is and where it is not" delay={0.15}>
           <p>
-            AI tools help me outline a guide, pull a first draft together from the sources I have gathered, and
-            keep wording consistent across a hundred-plus pages. They are good at that. They are also capable of
-            producing a confident sentence that is simply false, so no draft is published as drafted.
+            AI tools do a lot of the legwork. They search for sources, pull a first draft together from what they
+            find, and keep wording consistent across a hundred-plus pages. They are good at that. They are also
+            capable of producing a confident sentence that is simply false, and of citing a page that does not
+            say what the sentence claims, so no draft is published as drafted.
           </p>
           <p>
             Every figure and every claim of fact in a draft is traced back to a specific page in a specific
-            source before it ships. A claim I cannot find a source for is removed, not softened. No source means
-            no sentence. The AI never chooses the sources, never decides what the guide recommends, and never
-            publishes anything.
+            source before it ships, by me, with the source open. A claim I cannot find a source for is removed,
+            not softened. No source means no sentence. Every recommendation a guide makes is one I have read and
+            agreed with. The AI never publishes anything.
           </p>
         </Section>
 
@@ -109,8 +110,9 @@ export default function HowGuidesAreMade() {
           <p>
             A source is a page I actually opened that contains the specific claim it is cited for. Veterinary
             references, peer-reviewed papers, university extension pages, government and agency material, and
-            manufacturer specifications for equipment. Forums, social posts and other hobby sites are where I go
-            to find out what keepers argue about, not where a figure comes from.
+            manufacturer specifications for equipment. What a guide covers is driven by what people actually
+            search for about that animal. Where the figures come from is not: forums, social posts and other hobby
+            sites never supply a number.
           </p>
           <p>
             Each article lists its sources at the bottom along with the date it was last reviewed. Most guides
@@ -155,7 +157,7 @@ export default function HowGuidesAreMade() {
           </p>
           {REVIEWS.length === 0 ? (
             <p className="rounded-xl border border-dashed border-border bg-muted/40 px-4 py-3 text-foreground">
-              No outside reviews yet. The first ones will be the bearded dragon guides and the legal methodology.
+              No outside reviews yet.
             </p>
           ) : (
             <ul className="space-y-3">
