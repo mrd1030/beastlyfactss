@@ -626,6 +626,12 @@ export default function ExoticPetLaws() {
                         <span className="font-semibold text-foreground">
                           {`${b.label}${n ? ` (${n})` : ''}`}
                         </span>
+                        {/* The literal space is for text extraction, not layout. The
+                            blurb is a block, so the browser drops the whitespace, but
+                            Google's AI Overview card quoted this legend as
+                            "Banned (15)No legal way to keep one" because the two spans
+                            carried no separator in the text stream. */}
+                        {' '}
                         <span className="block text-muted-foreground leading-snug">{b.blurb}</span>
                       </span>
                     </li>
