@@ -28,6 +28,32 @@
 
 export const CORRECTIONS = [
   {
+    date: '2026-10-16',
+    page: '/blog/exotic-pet-legal-hub/',
+    title: 'Exotic Pet Legal Hub',
+    was: 'The axolotl summary said banned in California, New Jersey and Maine, and reportedly in Washington DC. The sugar glider summary said illegal in California, Alaska and Hawaii and unobtainable in Pennsylvania.',
+    now: 'Both summaries carry the full matrix: axolotl banned in seven jurisdictions with four permit and three conditional states; sugar glider banned in six including DC and New York City, permit-only in two, conditional in Georgia. The full guides were already right; the hub blurbs had not been updated with them.',
+    why: 'The site\'s own legal matrix.',
+    reportedBy: 'an outside review',
+  },
+  {
+    date: '2026-10-16',
+    page: '/blog/budgie-feeding-guide/',
+    title: 'Budgie Feeding',
+    was: 'Pellets 60 to 80 percent of daily intake with vegetables and fruit at 20 to 25 percent, which could add to more than 100. The hub and the tank setup guide said the same.',
+    now: 'Pellets 75 to 80 percent, vegetables and a little fruit the remaining 20 to 25 percent, seed an occasional extra, matching the other parrot guides.',
+    why: 'VCA Animal Hospitals, budgie feeding page.',
+    reportedBy: 'an outside review',
+  },
+  {
+    date: '2026-10-16',
+    page: '/facts/',
+    title: 'Animal Facts: Pangolin',
+    was: 'Said every pangolin\'s tongue stretches longer than its head and body combined.',
+    now: 'That is true of the giant pangolin, the largest species, which is what the Beastlypedia profile already said. The fact now says so. A second fact that repeated the only-scaled-mammal line was replaced with the trade ban.',
+    reportedBy: 'an outside review',
+  },
+  {
     date: '2026-10-06',
     page: '/blog/chinchilla-tank-setup-guide/',
     title: 'Chinchilla Tank Setup',

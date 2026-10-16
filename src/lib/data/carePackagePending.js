@@ -61,6 +61,13 @@ export const CARE_PACKAGE_PENDING = {
       fromLabel: 'Axolotl Legal Guide',
     },
   ],
+  'budgie': [
+    {
+      text: 'The diet shares change from 60 to 80 percent pellets with 20 to 25 percent produce, which could add to more than 100, to 75 to 80 percent pellets and the remaining 20 to 25 percent produce.',
+      from: '/blog/budgie-feeding-guide/',
+      fromLabel: 'Budgie Feeding',
+    },
+  ],
   'whites-tree-frog': [
     {
       text: 'The version history still describes the glove rule as powder-free nitrile; it will read vinyl first, nitrile as the fallback, never latex, as the book body and the site already do.',

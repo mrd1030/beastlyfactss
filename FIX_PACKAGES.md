@@ -109,6 +109,7 @@ Live editions (2026-10-04): bearded dragon 4.1; leopard gecko, crested gecko, ba
 - [ ] Gear: no valveless water bottle; the carrier is chewable EVA foam; the timothy hay bag (90 oz) is far too large.
 
 ### Budgie (3.0, `budgie-src`)
+- [ ] Book: diet shares read 60 to 80% pellets with 20 to 25% vegetables and fruit (`pages_1.html:109`, `pages_2.html:12`, `:35`, `:87`, `:48`), which can exceed 100%. The site moved to 75 to 80% pellets and the remaining 20 to 25% on 2026-10-16 (VCA), matching the other parrot guides. Match on the next edit. Listed on the product page under "Coming in the next edition".
 - [ ] Gear: no seed mix product; the UV lamp replacement (every 10 to 12 months) has no yearly row.
 - No fitting product: plain white unprinted tray paper with a non-Amazon price.
 - (Glossary meets the rule; VCA and NASPHV are spelled out on the Sources page.)
