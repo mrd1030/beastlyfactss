@@ -198,6 +198,13 @@ export default function HowGuidesAreMade() {
             basking temperature that was wrong is logged, a sentence reworded to say the same thing is not.
             Typos and link repairs are not logged. Entries are never deleted.
           </p>
+          <p>
+            This log opened on {formatDate(LAST_UPDATED)}. Before that, corrections were tracked in working
+            documents. The entries below from before that date are the fixes from that period that changed what
+            a reader would do, dated to the day the fix went live or was recorded as done. Consistency fixes and
+            link repairs from the same period are not listed. Where a fix also reached a printable care package,
+            the entry names the edition that carries it, and the package's own page lists every edition.
+          </p>
           {CORRECTIONS.length === 0 ? (
             <p className="rounded-xl border border-dashed border-border bg-muted/40 px-4 py-3 text-foreground">
               No corrections logged yet. This log began on {formatDate(LAST_UPDATED)}. Fixes made before that date
@@ -205,15 +212,17 @@ export default function HowGuidesAreMade() {
             </p>
           ) : (
             <ul className="space-y-3">
-              {CORRECTIONS.map((c) => (
-                <li key={`${c.page}-${c.date}`} className="rounded-xl border border-border bg-background px-4 py-3">
+              {CORRECTIONS.map((c, i) => (
+                <li key={`${c.page}-${c.date}-${i}`} className="rounded-xl border border-border bg-background px-4 py-3">
                   <div className="flex flex-wrap items-baseline justify-between gap-2">
                     <span className="font-semibold text-foreground"><A to={c.page}>{c.title}</A></span>
                     <span className="text-xs">{formatDate(c.date)}</span>
                   </div>
                   <div className="mt-1"><span className="font-semibold text-foreground">Was:</span> {c.was}</div>
                   <div><span className="font-semibold text-foreground">Now:</span> {c.now}</div>
-                  {c.reportedBy && <div className="text-xs mt-1">Reported by {c.reportedBy}.</div>}
+                  {c.why && <div className="text-xs mt-1">Source: {c.why}</div>}
+                  {c.edition && <div className="text-xs">Package: {c.edition}</div>}
+                  {c.reportedBy && <div className="text-xs">Reported by {c.reportedBy}.</div>}
                 </li>
               ))}
             </ul>
