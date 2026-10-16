@@ -306,14 +306,19 @@ third care sheet.
 
 ## Care package card
 
-- `<CarePackageBlock>` goes on exactly two guides per packaged species: the
-  tank setup guide with `variant="setup"` and the health issues guide with
-  `variant="health"`. It is the last thing in the file, after `</Sources>`, so
-  the article itself ends on the animal.
-- One card per article. Never on cost, handling, enrichment, feeding or any
-  other guide, and never on a shared or cross-species article. No lead-in
-  sentence pointing at it: the card speaks for itself.
-- A new package gets its two cards when it ships. The hub sidebar card is
+- `<CarePackageBlock>` goes on exactly four guides per packaged species: tank
+  setup (`variant="setup"`), health issues (`variant="health"`), feeding
+  (`variant="feeding"`) and cost (`variant="cost"`). It is the last thing in
+  the file, after `</Sources>`, so the article itself ends on the animal.
+  Each variant's hook names a section the package actually carries. Feeding
+  and cost were added 2026-10-15 on Search Console data: across the 20
+  packaged species, feeding and cost guides drew 166 clicks in three months
+  against 16 for tank setup and the hub sidebar together. The card had been
+  sitting on the least-read guides.
+- One card per article. Never on handling, enrichment, legal or any other
+  guide, and never on a shared or cross-species article. No lead-in sentence
+  pointing at it: the card speaks for itself.
+- A new package gets its four cards when it ships. The hub sidebar card is
   automatic and needs nothing.
 
 ## Images

@@ -9,13 +9,19 @@ import {
   carePackageSampleHref,
 } from '@/lib/data/carePackages';
 
-// The in-article card for the matching printable care package. It sits on two
-// guides per species only, the tank setup guide and the health issues guide,
-// as the last element after <Sources>, because those are the two guides the
-// package genuinely carries: the housing section with its setup checklist,
-// and the health section with its symptom table and emergency card. Never on
-// handling, enrichment, cost or shared articles (docs/RULES.md). The wording
-// follows the guide it sits on, and every card offers the free sample first.
+// The in-article card for the matching printable care package. It sits on
+// four guides per species, as the last element after <Sources>: tank setup
+// (the setup checklist), health issues (symptom table and emergency card),
+// feeding (the feeding section, owner log and pet-sitter sheet) and cost (the
+// budget sheet and shopping list). Each hook names something the package
+// actually carries. Never on handling, enrichment, legal or shared articles
+// (docs/RULES.md).
+//
+// Cost and feeding were added 2026-10-15 after three months of Search Console
+// data: for the 20 packaged species, feeding guides drew 118 clicks and cost
+// guides 48, against 14 for tank setup and 2 for the hub sidebar. The card
+// was sitting on the two least-read guide types. The wording follows the
+// guide it sits on, and every card offers the free sample first.
 export default function CarePackageBlock({ animal, variant = 'setup' }) {
   const pkg = CARE_PACKAGES.find(p => p.id === animal);
   // A package sold here (storefront: 'stripe') shows whatever its status
@@ -28,9 +34,13 @@ export default function CarePackageBlock({ animal, variant = 'setup' }) {
   const lead = variant === 'health'
     ? `A sick ${carePackageAnimalInSentence(pkg)} is no time to be scrolling. The `
     : 'The ';
-  const tail = variant === 'health'
-    ? ` puts these red flags, a symptom quick reference and an emergency card on paper, in a ${pkg.pages}-page PDF, ${pkg.price}.`
-    : ` carries this setup as a checklist with the targets to hit, in a ${pkg.pages}-page PDF you can keep by the ${carePackageHome(pkg)}, ${pkg.price}.`;
+  const TAILS = {
+    health: ` puts these red flags, a symptom quick reference and an emergency card on paper, in a ${pkg.pages}-page PDF, ${pkg.price}.`,
+    setup: ` carries this setup as a checklist with the targets to hit, in a ${pkg.pages}-page PDF you can keep by the ${carePackageHome(pkg)}, ${pkg.price}.`,
+    feeding: ` puts the feeding section, an owner log and a pet-sitter sheet on paper, in a ${pkg.pages}-page PDF you can keep by the ${carePackageHome(pkg)}, ${pkg.price}.`,
+    cost: ` adds one line to this budget: ${pkg.price} for a ${pkg.pages}-page PDF with the setup shopping list, the budget sheet and the whole care guide on paper.`,
+  };
+  const tail = TAILS[variant] || TAILS.setup;
 
   // not-prose: the article's typography would otherwise add paragraph and
   // image margins inside the card, which left a tall empty band under the

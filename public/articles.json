@@ -26,7 +26,7 @@
     },
     {
       "slug": "ackie-monitor-cost-guide",
-      "title": "Ackie Monitor Price: $150 to $450, Plus $850 to $2,150 Setup",
+      "title": "Ackie Monitor Price: $150 to $450, Plus $900 to $2,245 Setup",
       "excerpt": "Ackie monitors are a genuine step up in investment from most beginner lizards, both in what the animal costs and in what it takes to house one properly.",
       "date": "2026-07-16",
       "image": "/assets/images/ackie-monitor-cost.jpg",
@@ -182,7 +182,7 @@
     },
     {
       "slug": "african-grey-parrot-cost-guide",
-      "title": "African Grey Price: $1,000 to $4,000, Plus $500+ Setup",
+      "title": "African Grey Price: $1,000 to $4,000, Setup $560 to $1,305",
       "excerpt": "An African grey parrot is an expensive bird to buy, and the purchase price is just the entry fee for a decades-long commitment.",
       "date": "2026-07-17",
       "image": "/assets/images/african-grey-parrot-cost.jpg",
@@ -290,7 +290,7 @@
     },
     {
       "slug": "amano-shrimp-cost-guide",
-      "title": "Amano Shrimp Price: $5 to $12, Plus $45 to $170 Setup",
+      "title": "Amano Shrimp Price: $5 to $12, Plus $120 to $235 Setup",
       "excerpt": "Amano shrimp cost more than a basic cherry shrimp, and selective breeding has almost nothing to do with why. Almost every one sold is wild-caught, because this species can't complete its life cycle in freshwater.",
       "date": "2026-09-17",
       "image": "/assets/images/amano-shrimp-cost.jpg",
@@ -388,7 +388,7 @@
     },
     {
       "slug": "angelfish-cost-guide",
-      "title": "Angelfish Price: $3 to $50, Plus $395 to $640 Setup",
+      "title": "Angelfish Price: $3 to $50, Plus $555 to $845 Setup",
       "excerpt": "Angelfish are cheap to buy and expensive to house properly, the tank, not the fish, is where the budget goes with this species.",
       "date": "2026-07-17",
       "image": "/assets/images/angelfish-cost.jpg",
@@ -536,8 +536,20 @@
       "animalDay": null
     },
     {
+      "slug": "arctic-fox-legal-guide",
+      "title": "Are Arctic Foxes Legal? 24 Bans, 9 Permits, 8 Unclear",
+      "excerpt": "Most fox laws say 'fox' and stop, and the arctic fox is the animal that tests whether a non-native fox is inside the word. Twenty-four jurisdictions ban it, nine permit it, nine have no rule, and eight cannot be read either way, the most unclear cells of any fox on the map.",
+      "date": "2026-10-10",
+      "image": "/assets/guides/arctic-fox-legal.jpg",
+      "category": "Legal",
+      "categories": [
+        "Legal"
+      ],
+      "animalDay": null
+    },
+    {
       "slug": "argentine-tegu-cost-guide",
-      "title": "Argentine Tegu Price: $200 to $1,200, Plus $1,000+ Setup",
+      "title": "Argentine Tegu: $200 to $1,200, Setup $2,635 to $4,145",
       "excerpt": "Argentine tegus are one of the more expensive lizards in the pet trade to set up properly, a direct consequence of just how large this species grows.",
       "date": "2026-07-24",
       "image": "/assets/images/argentine-tegu-cost.jpg",
@@ -628,6 +640,18 @@
       "category": "Wild Animals",
       "categories": [
         "Wild Animals"
+      ],
+      "animalDay": null
+    },
+    {
+      "slug": "asian-small-clawed-otter-legal-guide",
+      "title": "Are Pet Otters Legal? 15 Bans, 12 Permits, by State",
+      "excerpt": "Every pet otter in America is an Asian small-clawed otter, and since 2019 every lawful one is domestic captive-bred, because CITES Appendix I closed the border. Inside the country the family name Mustelidae does most of the work: it bans the otter in Maine and Connecticut, licenses it in South Dakota and Virginia, and frees only the ferret. Seven states name 'otter' in a furbearer list and never say which one.",
+      "date": "2026-10-12",
+      "image": "/assets/guides/asian-small-clawed-otter-legal.jpg",
+      "category": "Legal",
+      "categories": [
+        "Legal"
       ],
       "animalDay": null
     },
@@ -742,7 +766,7 @@
     },
     {
       "slug": "ball-python-cost-guide",
-      "title": "How Much Does a Ball Python Really Cost?",
+      "title": "Ball Python Price: $40 to $100, Plus $560 to $1,395 Setup",
       "excerpt": "Ball pythons have one of the best cost-to-lifespan ratios of any commonly kept reptile: $510 to $1,245 to set up, then $290 to $635 a year for the 20-30 years after.",
       "date": "2026-07-07",
       "image": "/assets/images/ball-python-cost.jpg",
@@ -1130,12 +1154,25 @@
     {
       "slug": "betta-fish-water-parameters-guide",
       "title": "Betta Fish Water Parameters Guide",
-      "excerpt": "The betta water numbers that matter - temperature, pH, ammonia, nitrite, and nitrate targets - plus what to test, how often, and which are non-negotiable.",
+      "excerpt": "The betta water numbers that matter (temperature, pH, ammonia, nitrite, and nitrate targets), plus what to test, how often, and which are non-negotiable.",
       "date": "2026-06-16",
       "image": "/assets/images/betta-fish-water-parameters.jpg",
       "category": "Fish",
       "categories": [
         "Fish"
+      ],
+      "animalDay": null
+    },
+    {
+      "slug": "big-cat-legal-guide",
+      "title": "Big Cat Laws by State After the Big Cat Public Safety Act",
+      "excerpt": "Since 20 December 2022 no private person may acquire a tiger, lion or cougar anywhere in the United States, and the owners who registered by 18 June 2023 may keep what they had and nothing more. The state table still matters, because the states set the conditions on those animals, and because the cougar is a native cat that game law reaches on its own.",
+      "date": "2026-10-11",
+      "image": "/assets/guides/big-cat-legal-guide.jpg",
+      "category": "Legal",
+      "categories": [
+        "Legal",
+        "Cats"
       ],
       "animalDay": null
     },
@@ -1330,8 +1367,20 @@
       "animalDay": null
     },
     {
+      "slug": "black-bear-legal-guide",
+      "title": "Are Pet Black Bears Legal? 35 Bans, 14 Permits, by State",
+      "excerpt": "Thirty-five jurisdictions ban a pet black bear and not one state allows it without a permit, which makes it the most restricted animal on this map. The surprise is the other fourteen. Because the black bear is a native game animal across most of its range, the permits that exist are game-breeder and menagerie permits, and West Virginia's is two dollars.",
+      "date": "2026-10-13",
+      "image": "/assets/guides/black-bear-legal.jpg",
+      "category": "Legal",
+      "categories": [
+        "Legal"
+      ],
+      "animalDay": null
+    },
+    {
       "slug": "blue-tongue-skink-cost-guide",
-      "title": "Blue Tongue Skink Price: $100 to $700+, Setup $330 to $635",
+      "title": "Blue Tongue Skink Price: $100 to $700+, Setup $335 to $830",
       "excerpt": "Blue-tongued skinks split into two very different price and risk categories depending on where they come from, Northern versus Indonesian, and that gap matters more here than with almost any other reptile.",
       "date": "2026-07-13",
       "image": "/assets/images/blue-tongue-skink-cost.jpg",
@@ -1415,7 +1464,7 @@
     },
     {
       "slug": "boa-constrictor-cost-guide",
-      "title": "Boa Constrictor Price: $50 to $200, Setup $400 to $1,200",
+      "title": "Boa Constrictor Price: $50 to $200, Setup $640 to $810",
       "excerpt": "Boa constrictors are affordable at the entry level, and most of what's sold as a boa in the pet trade is a specific type worth understanding before you buy, since it affects both price and what you're getting.",
       "date": "2026-07-18",
       "image": "/assets/images/boa-constrictor-cost.jpg",
@@ -1498,6 +1547,19 @@
       "animalDay": null
     },
     {
+      "slug": "bobcat-legal-guide",
+      "title": "Are Bobcats Legal? 26 Bans, 20 Permit States, by State",
+      "excerpt": "The bobcat is the one wild cat on this map that is both a felid, caught by every family-wide cat clause written for the serval, and a native furbearer, caught by the trapping chapters written for the raccoon. The surprise is the second half: twenty states issue a permit, more than for any other wild cat, because a furbearer license is a thing a keeper can hold.",
+      "date": "2026-10-11",
+      "image": "/assets/guides/bobcat-legal.jpg",
+      "category": "Legal",
+      "categories": [
+        "Legal",
+        "Cats"
+      ],
+      "animalDay": null
+    },
+    {
       "slug": "border-collie-enrichment-guide",
       "title": "Border Collie Enrichment Guide",
       "excerpt": "The standard advice is more exercise. Run a border collie harder and you get a fitter border collie who still needs a job, and now needs a longer run to settle.",
@@ -1512,7 +1574,7 @@
     },
     {
       "slug": "box-turtle-cost-guide",
-      "title": "How Much Is a Box Turtle? Price, Setup and Legal Notes",
+      "title": "Box Turtle Cost: $370 to $515 Setup, Then $40 to $70 a Month",
       "excerpt": "Box turtles come with an important sourcing consideration that affects both cost and legality, worth understanding before anything else, on top of a lighting and heating setup that dominates the upfront budget.",
       "date": "2026-07-25",
       "image": "/assets/images/box-turtle-cost.jpg",
@@ -1610,7 +1672,7 @@
     },
     {
       "slug": "bristlenose-pleco-cost-guide",
-      "title": "Bristlenose Pleco Price: $7 to $25, Plus $150 to $310 Setup",
+      "title": "Bristlenose Pleco Price: $7 to $25, Plus $165 to $375 Setup",
       "excerpt": "A bristlenose pleco itself is cheap, but this is one of the few beginner fish where a single required item, driftwood, isn't optional decor. Skip it and you're not saving money, you're just deferring a problem.",
       "date": "2026-09-14",
       "image": "/assets/images/bristlenose-pleco-cost.jpg",
@@ -1792,7 +1854,7 @@
     {
       "slug": "burmese-python-legal-guide",
       "title": "Are Burmese Pythons Legal? Federal Rule vs States",
-      "excerpt": "The Burmese python has been federal injurious wildlife since 2012, and most people assume that settles it. A 2017 D.C. Circuit ruling took the interstate half of that ban away, which is why twenty-nine jurisdictions still have no rule of their own.",
+      "excerpt": "The Burmese python has been federal injurious wildlife since 2012, and most people assume that settles it. A 2017 D.C. Circuit ruling took the interstate half of that ban away, which is why twenty-seven jurisdictions still have no rule of their own.",
       "date": "2026-09-06",
       "image": "/assets/guides/burmese-python-legal.jpg",
       "category": "Legal",
@@ -1803,7 +1865,7 @@
     },
     {
       "slug": "california-kingsnake-cost-guide",
-      "title": "California Kingsnake Price: $45 to $300, Setup $200 to $500",
+      "title": "California Kingsnake Price: $45 to $300, Setup $380 to $575",
       "excerpt": "California kingsnakes are one of the more affordable pet snakes, with low monthly costs and a total lifetime investment more modest than a 20-plus year lifespan might suggest.",
       "date": "2026-07-25",
       "image": "/assets/images/california-kingsnake-cost.jpg",
@@ -1874,8 +1936,21 @@
       "animalDay": null
     },
     {
+      "slug": "canada-lynx-legal-guide",
+      "title": "Are Canada Lynx Legal? Federally Threatened, 27 State Bans",
+      "excerpt": "The Canada lynx is federally threatened in the lower 48, and that one listing decides a handful of state cells by reference and sits underneath every other. Twenty-seven jurisdictions ban it, thirteen issue a permit, nine have no state rule at all, and in every one of those nine a federal permit is still needed to move the cat across a state line in commerce.",
+      "date": "2026-10-11",
+      "image": "/assets/guides/canada-lynx-legal.jpg",
+      "category": "Legal",
+      "categories": [
+        "Legal",
+        "Cats"
+      ],
+      "animalDay": null
+    },
+    {
       "slug": "canary-cost-guide",
-      "title": "Canary Price: $25 to $500, Plus $195 to $345 Setup",
+      "title": "Canary Price: $25 to $500, Plus $285 to $460 Setup",
       "excerpt": "Canaries are one of the more affordable pet birds to buy, but the cost scales up meaningfully once you get into specialized song and show breeds, and the cost decision here isn't about money at all.",
       "date": "2026-07-26",
       "image": "/assets/images/canary-cost.jpg",
@@ -1946,6 +2021,19 @@
       "animalDay": null
     },
     {
+      "slug": "capuchin-legal-guide",
+      "title": "Are Capuchin Monkeys Legal? 28 Bans, 9 Permits, by State",
+      "excerpt": "The capuchin is the organ-grinder's monkey and the service monkey, and that history is why it is the one small primate whose name appears in statutes. Georgia, New York and Maryland wrote a capuchin exception, Ohio wrote a capuchin registration, and every one of them sits under a primate rule that gives the capuchin the same answer as a gorilla in 46 jurisdictions.",
+      "date": "2026-10-15",
+      "image": "/assets/guides/capuchin-legal.jpg",
+      "category": "Legal",
+      "categories": [
+        "Legal",
+        "Small & Exotic Pets"
+      ],
+      "animalDay": null
+    },
+    {
       "slug": "capybara-legal-guide",
       "title": "Are Capybaras Legal? State Bans and Permit Rules",
       "excerpt": "The world's largest rodent is legal in 23 US jurisdictions, banned in 12, and needs a permit in 13. Almost none of those rules mention the capybara at all: they are rules about the order Rodentia that happen to catch a 100 pound one.",
@@ -1959,7 +2047,7 @@
     },
     {
       "slug": "cardinal-tetra-cost-guide",
-      "title": "Cardinal Tetra Price: About $3 Each, Plus $55 to $260 Setup",
+      "title": "Cardinal Tetra Price: About $3 Each, Plus $95 to $345 Setup",
       "excerpt": "Cardinal tetras cost about the same as their neon tetra cousins, but they're typically kept in a slightly bigger school, and a real Amazon fishery of wild-caught fish sits behind part of the price.",
       "date": "2026-09-05",
       "image": "/assets/images/cardinal-tetra-cost.jpg",
@@ -2095,7 +2183,7 @@
     {
       "slug": "chameleon-hydration-drippers-misters-fogging",
       "title": "Chameleon Hydration: Drippers vs. Misters",
-      "excerpt": "Drippers, misters, and foggers compared for chameleon hydration - how each works, which fits your setup, and how to spot dehydration before it's serious.",
+      "excerpt": "Drippers, misters, and foggers compared for chameleon hydration: how each works, which fits your setup, and how to spot dehydration before it's serious.",
       "date": "2026-06-20",
       "image": "/assets/images/chameleon-hydration.jpg",
       "category": "Reptiles",
@@ -2130,7 +2218,7 @@
     },
     {
       "slug": "cherry-shrimp-cost-guide",
-      "title": "Cherry Shrimp Price: $4 to $8 Each, Plus $35 to $150 Setup",
+      "title": "Cherry Shrimp Price: $4 to $8 Each, Plus $95 to $235 Setup",
       "excerpt": "Cherry shrimp are cheap to buy, but the cost story isn't the shrimp, it's how fast a starting group turns into a colony you never budgeted for.",
       "date": "2026-09-16",
       "image": "/assets/images/cherry-shrimp-cost.jpg",
@@ -2202,7 +2290,7 @@
     },
     {
       "slug": "chinchilla-cost-guide",
-      "title": "Chinchilla Price: $75 to $700, Plus $455 to $1,225 Setup",
+      "title": "Chinchilla Price: $75 to $700, Plus $305 to $790 Setup",
       "excerpt": "Chinchillas are a genuine long-term commitment, both in years and in the specialized setup they need. The animal itself isn't the expensive part, the cage, the exercise wheel, and keeping the room the right temperature are where the budget goes.",
       "date": "2026-07-19",
       "image": "/assets/images/chinchilla-cost.jpg",
@@ -2318,6 +2406,18 @@
       "categories": [
         "Birds",
         "Pet Care"
+      ],
+      "animalDay": null
+    },
+    {
+      "slug": "coati-legal-guide",
+      "title": "Are Coatis Legal? Legal in 24 States, 13 Bans, by State",
+      "excerpt": "The coati shares the kinkajou's map almost line for line, with three differences that come from being named. Oklahoma's exemption list and Nebraska's import list carry the word 'coatimundi' and nothing for the kinkajou, which makes the coati the freer animal in both. Texas lists the white-nosed coati as state threatened, which makes it the banned one there.",
+      "date": "2026-10-12",
+      "image": "/assets/guides/coati-legal.jpg",
+      "category": "Legal",
+      "categories": [
+        "Legal"
       ],
       "animalDay": null
     },
@@ -2529,7 +2629,7 @@
     },
     {
       "slug": "conure-cost-guide",
-      "title": "How Much Does a Green Cheek Conure Really Cost?",
+      "title": "Green Cheek Conure: $250 to $700, Setup $305 to $530",
       "excerpt": "Green cheek conures sit at a moderate price point for a parrot, but color mutations and the wrong sales channel can both push that number up considerably, and a 20 to 25 year lifespan makes this a long-term investment.",
       "date": "2026-07-29",
       "image": "/assets/images/conure-cost.jpg",
@@ -2614,8 +2714,8 @@
     },
     {
       "slug": "corn-snake-cost-guide",
-      "title": "Corn Snake Price: $25 to $70, Plus $250 to $600 Setup",
-      "excerpt": "Corn snakes are one of the most budget-friendly beginner snakes: $250-600 for a solid setup, then low costs for the two decades after.",
+      "title": "Corn Snake Price: $25 to $70, Plus $190 to $720 Setup",
+      "excerpt": "Corn snakes are one of the most budget-friendly beginner snakes: $190 to $720 for a solid setup, then low costs for the two decades after.",
       "date": "2026-07-11",
       "image": "/assets/images/corn-snake-cost.jpg",
       "category": "Reptiles",
@@ -2710,7 +2810,7 @@
     },
     {
       "slug": "corydoras-catfish-cost-guide",
-      "title": "Corydoras Catfish Price: $3 to $30, Plus $140 to $250 Setup",
+      "title": "Corydoras Catfish Price: $3 to $30, Plus $110 to $255 Setup",
       "excerpt": "Corydoras catfish are inexpensive on their own, but the budgeting consideration isn't the individual fish, it's that you need to buy a whole school, not one or two.",
       "date": "2026-07-27",
       "image": "/assets/images/corydoras-catfish-cost.jpg",
@@ -2782,7 +2882,7 @@
     },
     {
       "slug": "crested-gecko-cost-guide",
-      "title": "Crested Gecko Price: $50 to $200, Plus $355 to $590 Setup",
+      "title": "Crested Gecko Price: $50 to $200, Plus $890 to $1,800 Setup",
       "excerpt": "Crested geckos sit near the affordable end of the reptile hobby, and unlike heat-hungry desert species, most of the ongoing cost is food and humidity, not electricity.",
       "date": "2026-07-12",
       "image": "/assets/images/crested-gecko-cost.jpg",
@@ -2916,7 +3016,7 @@
     },
     {
       "slug": "degu-cost-guide",
-      "title": "Degu Price: $10 to $50, Plus $395 to $525 Setup",
+      "title": "Degu Price: $10 to $50, Plus $415 to $675 Setup",
       "excerpt": "Degus are affordable individually, and the budgeting point with this species is that 'individually' isn't how you should be thinking about the purchase at all.",
       "date": "2026-08-08",
       "image": "/assets/images/degu-cost.jpg",
@@ -2977,7 +3077,7 @@
     {
       "slug": "degu-legal-guide",
       "title": "Are Degus Legal? Banned in 8 of 52 Jurisdictions",
-      "excerpt": "The degu is the most restricted small rodent kept as a pet in the US, and the reason repeats almost word for word from state to state: the cleared-rodent list names the chinchilla, guinea pig, gerbil, hamster, mouse and rat, and stops there.",
+      "excerpt": "The degu is barred in eight jurisdictions, and the reason repeats almost word for word from state to state: the cleared-rodent list names the chinchilla, guinea pig, gerbil, hamster, mouse and rat, and stops there.",
       "date": "2026-09-13",
       "image": "/assets/guides/degu-legal.jpg",
       "category": "Legal",
@@ -3012,7 +3112,7 @@
     },
     {
       "slug": "discus-cost-guide",
-      "title": "Discus Fish Price: $20 to $450, Plus $320 to $675 Setup",
+      "title": "Discus Fish Price: $20 to $450, Plus $330 to $860 Setup",
       "excerpt": "Discus are one of the pricier community fish you can keep, and the cost isn't the fish itself, it's the filtration and water-change routine this species demands.",
       "date": "2026-09-05",
       "image": "/assets/images/discus-cost.jpg",
@@ -3098,7 +3198,7 @@
     {
       "slug": "dog-bloat-gdv-guide",
       "title": "Dog Bloat (GDV): Warning Signs to Know",
-      "excerpt": "Bloat can kill a healthy dog within hours - the early signs, which breeds are most at risk, and why this is always a drive-to-the-vet-now emergency.",
+      "excerpt": "Bloat can kill a healthy dog within hours: the early signs, which breeds are most at risk, and why this is always a drive-to-the-vet-now emergency.",
       "date": "2026-07-09",
       "image": "/assets/images/dog-bloat-gdv.jpg",
       "category": "Dogs",
@@ -3147,7 +3247,7 @@
     },
     {
       "slug": "emperor-scorpion-cost-guide",
-      "title": "Emperor Scorpion Price: $25 to $100, Plus $80 to $250 Setup",
+      "title": "Emperor Scorpion Price: $25 to $100, Plus $120 to $290 Setup",
       "excerpt": "Emperor scorpions are one of the more affordable exotic pets to keep, both to buy and to maintain, and the scary invertebrate reputation doesn't come with a scary price tag.",
       "date": "2026-07-31",
       "image": "/assets/images/emperor-scorpion-cost.jpg",
@@ -3304,7 +3404,7 @@
     },
     {
       "slug": "ferret-cost-guide",
-      "title": "Ferret Price: $75 to $400, Plus $300 to $700 Setup",
+      "title": "Ferret Price: $75 to $400, Plus $315 to $820 Setup",
       "excerpt": "Ferrets are moderately priced to buy, but expensive to keep long-term, driven almost entirely by a near-inevitable pattern of costly age-related illness rather than day-to-day care.",
       "date": "2026-07-13",
       "image": "/assets/images/ferret-cost.jpg",
@@ -3388,7 +3488,7 @@
     },
     {
       "slug": "fire-bellied-toad-cost-guide",
-      "title": "Fire-Bellied Toad Price: $10 to $25, Plus $35 to $90 Setup",
+      "title": "Fire-Bellied Toad Price: $10 to $25, Plus $80 to $175 Setup",
       "excerpt": "Fire-bellied toads are inexpensive, and the setup cost here goes toward something a bit different than most amphibians need, real aquatic filtration, not just humidity control.",
       "date": "2026-07-27",
       "image": "/assets/images/fire-bellied-toad-cost.jpg",
@@ -3460,7 +3560,7 @@
     },
     {
       "slug": "fire-skink-cost-guide",
-      "title": "Fire Skink Price: $25 to $40, Plus Setup and Monthly Costs",
+      "title": "Fire Skink Price: $25 to $40, Plus $465 to $680 Setup",
       "excerpt": "Fire skinks are affordable, and the price gap between captive-bred and wild-caught animals is worth paying attention to for reasons beyond just cost.",
       "date": "2026-08-11",
       "image": "/assets/images/fire-skink-cost.jpg",
@@ -3545,7 +3645,7 @@
     },
     {
       "slug": "flying-squirrel-cost-guide",
-      "title": "Flying Squirrel Price: $200 to $450, Plus $200 to $500 Setup",
+      "title": "Flying Squirrel Price: $200 to $450, Plus $190 to $485 Setup",
       "excerpt": "Flying squirrels are native US wildlife, not an imported exotic, so the first real question isn't the price tag, it's your state's wildlife law. Once that's settled, budget for two from day one.",
       "date": "2026-09-05",
       "image": "/assets/images/flying-squirrel-cost.jpg",
@@ -3605,8 +3705,8 @@
     },
     {
       "slug": "flying-squirrel-legal-guide",
-      "title": "Are Flying Squirrels Legal? The Most Restricted Small Pet",
-      "excerpt": "A flying squirrel looks like a small, easy pet, but because it's native wildlife across most of the country, most states regulate it like protected wildlife instead of exotic-pet stock. Across all 52 jurisdictions only nine are a clean yes, nineteen require a permit, and eighteen are effective bans.",
+      "title": "Are Flying Squirrels Legal? Clear in Only 9 of 52 Places",
+      "excerpt": "A flying squirrel looks like a small, easy pet, but because it's native wildlife across most of the country, most states regulate it like protected wildlife instead of exotic-pet stock. Across all 52 jurisdictions only nine are a clean yes, eighteen require a permit, and eighteen are effective bans.",
       "date": "2026-08-29",
       "image": "/assets/guides/flying-squirrel-legal.jpg",
       "category": "Legal",
@@ -3679,7 +3779,7 @@
     },
     {
       "slug": "gargoyle-gecko-cost-guide",
-      "title": "Gargoyle Gecko Price: $50 to $1,000, Plus $335 to $630 Setup",
+      "title": "Gargoyle Gecko Price: $50 to $1,000, Plus $385 to $780 Setup",
       "excerpt": "Gargoyle geckos sit at an interesting price point: affordable for a common reticulated animal, but morphs and proven breeding lines can push the number into four figures.",
       "date": "2026-07-24",
       "image": "/assets/images/gargoyle-gecko-cost.jpg",
@@ -3751,7 +3851,7 @@
     },
     {
       "slug": "garter-snake-cost-guide",
-      "title": "Garter Snake Price: $20 to $50, Plus $200 to $400 Setup",
+      "title": "Garter Snake Price: $20 to $50, Plus $270 to $545 Setup",
       "excerpt": "Common garter snakes are some of the cheapest snakes to acquire, some keepers find one in the backyard for free, but a fish-and-earthworm diet makes the ongoing cost a little less predictable than a standard mouse-eating snake.",
       "date": "2026-09-24",
       "image": "/assets/images/garter-snake-cost.jpg",
@@ -3812,7 +3912,7 @@
     {
       "slug": "garter-snake-legal-guide",
       "title": "Is a Garter Snake Legal in Your State? Full Guide",
-      "excerpt": "Garter snakes are native almost everywhere, so most states regulate them as wildlife first and a pet second, often more strictly than an imported colubrid. New York is the standout: state guidance says its native-species law doesn't differentiate between wild-caught and captive-bred animals, so even a pet-store garter snake needs a permit there.",
+      "excerpt": "Garter snakes are native almost everywhere, so most states regulate them as wildlife first and a pet second, often more strictly than an imported colubrid. New York is the standout: state guidance says its native-species law doesn't differentiate between wild-caught and captive-bred animals, so even a pet-store garter snake has no lawful route there, because no pet permit exists.",
       "date": "2026-08-29",
       "image": "/assets/guides/garter-snake-legal.jpg",
       "category": "Legal",
@@ -3835,7 +3935,7 @@
     },
     {
       "slug": "gerbil-cost-guide",
-      "title": "Gerbil Price: $5 to $50 Each, Plus $145 to $385 Setup",
+      "title": "Gerbil Price: $5 to $50 Each, Plus $165 to $350 Setup",
       "excerpt": "Gerbils are one of the more affordable small pets, with one important caveat: like the degu, you're budgeting for two animals, not one.",
       "date": "2026-08-09",
       "image": "/assets/images/gerbil-cost.jpg",
@@ -3955,7 +4055,7 @@
     },
     {
       "slug": "ghost-shrimp-cost-guide",
-      "title": "Ghost Shrimp Price: Under $1 Each, Plus $50 to $180 Setup",
+      "title": "Ghost Shrimp Price: Under $1 Each, Plus $95 to $250 Setup",
       "excerpt": "Ghost shrimp are some of the cheapest livestock in the aquarium hobby, sold in bulk as feeder stock for other fish as often as they're kept as pets in their own right, and that split identity is the story behind the price tag.",
       "date": "2026-09-18",
       "image": "/assets/images/ghost-shrimp-cost.jpg",
@@ -4027,7 +4127,7 @@
     },
     {
       "slug": "giant-millipede-cost-guide",
-      "title": "Giant Millipede Price: $75 to $150, Plus $75 to $190 Setup",
+      "title": "Giant Millipede Price: $75 to $150, Plus $120 to $245 Setup",
       "excerpt": "Giant African millipedes are inexpensive to keep month to month, though the animal itself costs more than you might expect for an invertebrate, and there's a real reason behind that.",
       "date": "2026-07-28",
       "image": "/assets/images/giant-millipede-cost.jpg",
@@ -4230,8 +4330,20 @@
       "animalDay": null
     },
     {
+      "slug": "gray-squirrel-legal-guide",
+      "title": "Are Pet Squirrels Legal? 19 Bans, 20 Permits, by State",
+      "excerpt": "The eastern gray squirrel has a hunting season in most of the states where it lives, and that is the rule that decides whether you can keep one. Read across all 52 jurisdictions it comes to 19 bans, 20 permits, six clean yeses, and a pair of open questions in Montana and Kansas that no statute answers.",
+      "date": "2026-10-13",
+      "image": "/assets/guides/gray-squirrel-legal.jpg",
+      "category": "Legal",
+      "categories": [
+        "Legal"
+      ],
+      "animalDay": null
+    },
+    {
       "slug": "green-anole-cost-guide",
-      "title": "Green Anole Price: $5 to $30, Plus $350 to $520 Setup",
+      "title": "Green Anole Price: $5 to $30, Plus $355 to $510 Setup",
       "excerpt": "Green anoles are one of the cheapest reptiles you can buy, and that low price is exactly why this species is so often underestimated and under-housed.",
       "date": "2026-07-28",
       "image": "/assets/images/green-anole-cost.jpg",
@@ -4315,7 +4427,7 @@
     },
     {
       "slug": "green-iguana-cost-guide",
-      "title": "Green Iguana Price: $20 to $1,000, Kit About $1,000",
+      "title": "Green Iguana Price: $20 to $1,000, Setup $960 to $1,180",
       "excerpt": "Green iguanas are cheap to buy as babies, and that low starting price is exactly what leads so many owners to underestimate what they're taking on.",
       "date": "2026-08-11",
       "image": "/assets/images/green-iguana-cost.jpg",
@@ -4424,7 +4536,7 @@
     {
       "slug": "guinea-pig-enrichment-guide",
       "title": "Guinea Pig Enrichment Guide",
-      "excerpt": "Wild guinea pigs spend up to 80% of the day foraging. A cage with a bowl and nothing to hide in leaves a prey animal exposed and bored at the same time. Here's what fixes both.",
+      "excerpt": "Wild cavies, the guinea pig's closest relatives, spend up to 80% of the day foraging. A cage with a bowl and nothing to hide in leaves a prey animal exposed and bored at the same time. Here's what fixes both.",
       "date": "2026-08-23",
       "image": "/assets/images/guinea-pig-enrichment.jpg",
       "category": "Enrichment",
@@ -4507,7 +4619,7 @@
     },
     {
       "slug": "guppy-cost-guide",
-      "title": "Guppy Price: $2 to $20 Each, Plus $30 to $100 Setup",
+      "title": "Guppy Price: $2 to $20 Each, Plus $130 to $285 Setup",
       "excerpt": "Guppies are about as affordable as pets get on this entire site, cheap to buy and cheap to keep. The cost most new owners forget to budget for isn't money, it's more guppies than they planned on.",
       "date": "2026-07-18",
       "image": "/assets/images/guppy-cost.jpg",
@@ -4606,7 +4718,7 @@
     },
     {
       "slug": "hamster-cost-guide",
-      "title": "Hamster Cost: $165 to $550 to Set Up, Animal Included",
+      "title": "Hamster Price: $15 to $25, Plus $165 to $430 Setup",
       "excerpt": "Hamsters are one of the cheapest pets to buy and one of the easiest to underfund properly. The animal costs almost nothing, doing right by it costs considerably more.",
       "date": "2026-07-14",
       "image": "/assets/images/hamster-cost.jpg",
@@ -4702,7 +4814,7 @@
     },
     {
       "slug": "hedgehog-cost-guide",
-      "title": "Hedgehog Price: $100 to $300, Plus $200 to $400 Setup",
+      "title": "Hedgehog Price: $100 to $300, Plus $180 to $405 Setup",
       "excerpt": "Hedgehogs are moderately priced, but the first real decision with this species isn't financial at all, it's legal. Several states and cities ban or restrict ownership outright, and that has to be settled before a single dollar gets budgeted.",
       "date": "2026-07-19",
       "image": "/assets/images/hedgehog-cost.jpg",
@@ -4811,7 +4923,7 @@
     },
     {
       "slug": "hermit-crab-cost-guide",
-      "title": "Hermit Crab Price: $5 to $40 Each, Plus $90 to $350 Setup",
+      "title": "Hermit Crab Price: $5 to $40 Each, Plus $135 to $245 Setup",
       "excerpt": "Hermit crabs are often sold as an impulse buy at beach shops and boardwalk stands, which is exactly the wrong way to think about them. Done properly, they need a real setup, and they're social animals that shouldn't be kept alone.",
       "date": "2026-07-21",
       "image": "/assets/images/hermit-crab-cost.jpg",
@@ -4896,7 +5008,7 @@
     },
     {
       "slug": "hognose-snake-cost-guide",
-      "title": "Hognose Snake Price: $50 to $1,000+, Plus $390 to $850 Setup",
+      "title": "Hognose Snake Price: $50 to $1,000+, Setup $465 to $1,000",
       "excerpt": "Western hognose snakes are one of the more affordable pet snakes to keep long term, with a low ongoing cost that lands them close to a corn snake and well under a ball python.",
       "date": "2026-07-14",
       "image": "/assets/images/hognose-snake-cost.jpg",
@@ -5156,7 +5268,7 @@
     },
     {
       "slug": "jacksons-chameleon-cost-guide",
-      "title": "Jackson's Chameleon Price: $50 to $250, Setup $345 to $475",
+      "title": "Jackson's Chameleon Price: $50 to $250, Setup $350 to $530",
       "excerpt": "Jackson's chameleons sit in a comparable price range to the veiled chameleon, but the two species diverge in some important ways worth understanding before you buy.",
       "date": "2026-07-29",
       "image": "/assets/images/jacksons-chameleon-cost.jpg",
@@ -5252,7 +5364,7 @@
     },
     {
       "slug": "jumping-spider-cost-guide",
-      "title": "Jumping Spider Price: $15 to $60, Plus $75 to $180 Setup",
+      "title": "Jumping Spider Price: $15 to $60, Plus $80 to $210 Setup",
       "excerpt": "Jumping spiders, the regal jumping spider especially, are among the most affordable and space-efficient pets anyone can keep, accessible even on a tight budget.",
       "date": "2026-07-19",
       "image": "/assets/images/jumping-spider-cost.jpg",
@@ -5335,8 +5447,20 @@
       "animalDay": null
     },
     {
+      "slug": "kinkajou-legal-guide",
+      "title": "Are Kinkajous Legal? Legal in 23 States, 14 Bans, by State",
+      "excerpt": "Almost no statute names the kinkajou. The law reaches it through the raccoon's family, Procyonidae, or through the whole order Carnivora, and where a list stops at the word raccoon the kinkajou walks past it. Read from the text, it is legal with no permit in 23 states, banned in 14 jurisdictions, and a permit animal in 11.",
+      "date": "2026-10-12",
+      "image": "/assets/guides/kinkajou-legal.jpg",
+      "category": "Legal",
+      "categories": [
+        "Legal"
+      ],
+      "animalDay": null
+    },
+    {
       "slug": "koi-cost-guide",
-      "title": "Koi Fish Price: $10 to $50,000, Plus Pond Setup Costs",
+      "title": "Koi Fish Price: $10 to $100, Plus $2,275 to $9,255 in Gear",
       "excerpt": "The fish itself is often the smallest number in the whole equation. Koi ownership is pond ownership, and that's where the budget lives.",
       "date": "2026-07-28",
       "image": "/assets/images/koi-cost.jpg",
@@ -5433,7 +5557,7 @@
     },
     {
       "slug": "leaf-tailed-gecko-cost-guide",
-      "title": "Leaf-Tailed Gecko Price: $250 to $800+, Setup $300 to $600",
+      "title": "Leaf-Tailed Gecko Price: $250 to $800+, Setup $470 to $650",
       "excerpt": "Leaf-tailed geckos are among the most expensive geckos in the pet trade, and the price reflects both their striking camouflage and the skill involved in breeding them successfully.",
       "date": "2026-07-29",
       "image": "/assets/images/leaf-tailed-gecko-cost.jpg",
@@ -5505,7 +5629,7 @@
     },
     {
       "slug": "leopard-gecko-cost-guide",
-      "title": "Leopard Gecko Price: $20 to $150, Plus $315 to $760 Setup",
+      "title": "Leopard Gecko Price: $20 to $150, Plus $465 to $975 Setup",
       "excerpt": "Leopard geckos are one of the more budget-friendly reptiles to keep: $315 to $760 of equipment, $465 to $975 with the first vet exam, then $30 to $85 a month.",
       "date": "2026-07-06",
       "image": "/assets/images/leopard-gecko-cost.jpg",
@@ -5723,7 +5847,7 @@
     },
     {
       "slug": "madagascar-hissing-cockroach-cost-guide",
-      "title": "Hissing Cockroach Price: $3 to $65, Plus $40 to $100 Setup",
+      "title": "Hissing Cockroach Price: $3 to $65, Plus $100 to $205 Setup",
       "excerpt": "Madagascar hissing cockroaches are about as affordable as a pet gets, both to buy and to keep, and the tradeoff is a display and observation pet rather than a handling-focused one.",
       "date": "2026-07-20",
       "image": "/assets/images/madagascar-hissing-cockroach-cost.jpg",
@@ -5818,6 +5942,19 @@
       "animalDay": null
     },
     {
+      "slug": "marmoset-legal-guide",
+      "title": "Are Marmosets Legal? 27 Bans, 9 Permits, by State",
+      "excerpt": "The finger monkey of the sale ads is a marmoset, and the law reaches it through a family name most of the ads never use: Callitrichidae, the marmosets and tamarins. Where a state wrote that family down, or wrote 'all nonhuman primates', the common marmoset is banned. Where a state named the Cebidae and stopped, the question is whether a marmoset is one, and New Jersey cannot say.",
+      "date": "2026-10-15",
+      "image": "/assets/guides/marmoset-legal.jpg",
+      "category": "Legal",
+      "categories": [
+        "Legal",
+        "Small & Exotic Pets"
+      ],
+      "animalDay": null
+    },
+    {
       "slug": "mike-the-headless-chicken-explained",
       "title": "Mike the Headless Chicken: How He Survived 18 Months",
       "excerpt": "A chicken in Colorado lost its head in 1945 and lived another eighteen months. It is not a tall tale, it is documented, and the explanation is a lesson in what a head is actually for.",
@@ -5831,7 +5968,7 @@
     },
     {
       "slug": "milk-snake-cost-guide",
-      "title": "Milk Snake Price: $70 to $500, Plus $300 to $600 Setup",
+      "title": "Milk Snake Price: $70 to $500, Plus $400 to $605 Setup",
       "excerpt": "Milk snakes span a wide price range by subspecies and morph, $70 to $500 for the animal itself, but even the high end stays affordable next to many other pet reptiles.",
       "date": "2026-07-21",
       "image": "/assets/images/milk-snake-cost.jpg",
@@ -5927,7 +6064,7 @@
     },
     {
       "slug": "molly-cost-guide",
-      "title": "Molly Fish Price: $2 to $20 Each, Plus $135 to $280 Setup",
+      "title": "Molly Fish Price: $2 to $20 Each, Plus $190 to $410 Setup",
       "excerpt": "Mollies cost a little more upfront than guppies, mainly because they need a bigger tank and sturdier filtration from day one. Once that's sorted, keeping them is inexpensive.",
       "date": "2026-09-05",
       "image": "/assets/images/molly-cost.jpg",
@@ -5999,7 +6136,7 @@
     },
     {
       "slug": "mourning-gecko-cost-guide",
-      "title": "Mourning Gecko Price: $15 to $65, Plus $230 to $405 Setup",
+      "title": "Mourning Gecko Price: $15 to $65, Plus $245 to $475 Setup",
       "excerpt": "Mourning geckos are among the cheapest reptiles you can keep, and since they're typically sold and housed in small self-sustaining groups rather than one at a time, the usual cost math works a little differently.",
       "date": "2026-07-25",
       "image": "/assets/images/mourning-gecko-cost.jpg",
@@ -6071,7 +6208,7 @@
     },
     {
       "slug": "mouse-cost-guide",
-      "title": "Pet Mouse Price: $5 to $20 Each, Plus $100 to $225 Setup",
+      "title": "Pet Mouse Price: $5 to $20 Each, Plus $90 to $230 Setup",
       "excerpt": "A pet mouse is one of the cheapest animals to buy, but it's a group animal with a real housing complexity of its own, and that changes the honest budget more than the sticker price suggests.",
       "date": "2026-09-22",
       "image": "/assets/images/mouse-cost.jpg",
@@ -6167,7 +6304,7 @@
     },
     {
       "slug": "neon-tetra-cost-guide",
-      "title": "Neon Tetra Price: $1 to $5 Each, Plus $100 to $300 Setup",
+      "title": "Neon Tetra Price: $1 to $5 Each, Plus $95 to $315 Setup",
       "excerpt": "Neon tetras are one of the most affordable fish you can keep, cheap individually and cheap as a group. Cost planning here starts with buying several at once, not just one.",
       "date": "2026-07-21",
       "image": "/assets/images/neon-tetra-cost.jpg",
@@ -6251,7 +6388,7 @@
     },
     {
       "slug": "oscar-fish-cost-guide",
-      "title": "Oscar Fish Price: $7 to $35, Plus a $470+ Tank Setup",
+      "title": "Oscar Fish Price: $7 to $35, Plus $665 to $965 Tank Setup",
       "excerpt": "Oscars are cheap to buy and expensive to house properly. The tank and filtration, not the fish, are where this species' real budget goes.",
       "date": "2026-07-30",
       "image": "/assets/images/oscar-fish-cost.jpg",
@@ -6336,7 +6473,7 @@
     },
     {
       "slug": "pacman-frog-cost-guide",
-      "title": "Pacman Frog Price: $15 to $100, Plus $100 to $225 Setup",
+      "title": "Pacman Frog Price: $15 to $100, Plus $130 to $360 Setup",
       "excerpt": "Pacman frogs are one of the more affordable amphibians to keep, sedentary, low-maintenance, and cheap to set up. The financial risk isn't routine cost, it's a preventable vet bill.",
       "date": "2026-07-15",
       "image": "/assets/images/pacman-frog-cost.jpg",
@@ -6433,7 +6570,7 @@
     },
     {
       "slug": "parrotlet-cost-guide",
-      "title": "Parrotlet Price: $100 to $900, Plus $210 to $365 Setup",
+      "title": "Parrotlet Price: $100 to $900, Plus $180 to $495 Setup",
       "excerpt": "Parrotlets are the smallest commonly kept parrot, but the price tag and the personality both punch above that size, pricier than a budgie, cheaper than most larger parrots, and with the same one-bird-or-two decision that reshapes a lovebird budget.",
       "date": "2026-09-20",
       "image": "/assets/images/parrotlet-cost.jpg",
@@ -6558,6 +6695,19 @@
       "animalDay": null
     },
     {
+      "slug": "pet-monkey-legal-guide",
+      "title": "Is It Legal to Own a Monkey? Primate Laws by State",
+      "excerpt": "Most states never wrote a monkey law. They wrote 'nonhuman primates' and let the order do the work, which is why a capuchin, a marmoset, a squirrel monkey and a ring-tailed lemur get the same answer in 46 of 52 jurisdictions. The six where they part are the interesting ones.",
+      "date": "2026-10-14",
+      "image": "/assets/guides/pet-monkey-legal-guide.jpg",
+      "category": "Legal",
+      "categories": [
+        "Legal",
+        "Small & Exotic Pets"
+      ],
+      "animalDay": null
+    },
+    {
       "slug": "pet-obesity-body-condition-guide",
       "title": "Pet Obesity & Body Condition Score: The 9-Point Scale",
       "excerpt": "Fifty-nine percent of dogs and 61% of cats are overweight, and about a third of their owners believe those pets are a normal weight. The gap between those two numbers is the whole problem.",
@@ -6573,7 +6723,7 @@
     },
     {
       "slug": "platy-cost-guide",
-      "title": "Platy Fish Price: $2 to $6 Each, Plus $60 to $120 Setup",
+      "title": "Platy Fish Price: $2 to $6 Each, Plus $120 to $225 Setup",
       "excerpt": "Platies are about as close to guppy-cheap as a livebearer gets, a small tank and a modest setup that costs almost nothing to run day to day. The budget risk is the same one guppies and mollies carry: fry.",
       "date": "2026-09-10",
       "image": "/assets/images/platy-cost.jpg",
@@ -6669,7 +6819,7 @@
     },
     {
       "slug": "praying-mantis-cost-guide",
-      "title": "Praying Mantis Price: $15 to $75, Plus $65 to $165 Setup",
+      "title": "Praying Mantis Price: $15 to $150, Plus $90 to $195 Setup",
       "excerpt": "Praying mantises are one of the most affordable exotic pets available, cheap to buy and cheap to keep, with one important caveat about how long you'll have one.",
       "date": "2026-07-22",
       "image": "/assets/images/praying-mantis-cost.jpg",
@@ -6753,7 +6903,7 @@
     },
     {
       "slug": "quaker-parakeet-cost-guide",
-      "title": "Quaker Parakeet Price: $250 to $500, Plus $300 to $800 Setup",
+      "title": "Quaker Parakeet Price: $250 to $500, Plus $260 to $560 Setup",
       "excerpt": "Quaker parakeets sit in the middle of the pet-bird price range, and one detail has to be settled before you buy at all: whether it's even legal where you live.",
       "date": "2026-08-11",
       "image": "/assets/images/quaker-parakeet-cost.jpg",
@@ -6932,8 +7082,20 @@
       "animalDay": null
     },
     {
+      "slug": "raccoon-legal-guide",
+      "title": "Are Pet Raccoons Legal? 26 Bans, 18 Permits, by State",
+      "excerpt": "Twenty-six jurisdictions ban a pet raccoon and eighteen issue a permit, and almost none of those rules were written about pets. They are furbearer statutes and rabies laws aimed at the wild animal, which is why Kentucky files the raccoon under 'rabies vector species' and Utah hands it to an agricultural damage board.",
+      "date": "2026-10-10",
+      "image": "/assets/guides/raccoon-legal.jpg",
+      "category": "Legal",
+      "categories": [
+        "Legal"
+      ],
+      "animalDay": null
+    },
+    {
       "slug": "rat-cost-guide",
-      "title": "Pet Rat Price: $10 to $20 Each, Plus $230 to $550 Setup",
+      "title": "Pet Rat Price: $10 to $20 Each, Plus $205 to $565 Setup",
       "excerpt": "Rats are cheap to buy, but because they must be kept in pairs or small groups, the budget starts once you multiply that by two and add a large multi-level cage.",
       "date": "2026-09-21",
       "image": "/assets/images/rat-cost.jpg",
@@ -7017,7 +7179,7 @@
     },
     {
       "slug": "red-eared-slider-cost-guide",
-      "title": "Red-Eared Slider Price: $10 to $200, Setup $550 to $1,250+",
+      "title": "Red-Eared Slider Price: $10 to $200, Setup $590 to $1,410+",
       "excerpt": "Red-eared sliders are sold cheap and small, which is exactly what makes their real cost so easy to underestimate. The animal itself is inexpensive. What it grows into is not.",
       "date": "2026-07-30",
       "image": "/assets/images/red-eared-slider-cost.jpg",
@@ -7101,7 +7263,7 @@
     },
     {
       "slug": "red-footed-tortoise-cost-guide",
-      "title": "Red-Footed Tortoise Price: $150 to $900, Setup $500 to $950",
+      "title": "Red-Footed Tortoise: $150 to $900, Setup $570 to $1,260",
       "excerpt": "Red-footed tortoises land in a useful price bracket, pricier and more space-hungry than a Russian tortoise, but nowhere near the multi-thousand-dollar outdoor build a sulcata eventually demands.",
       "date": "2026-09-23",
       "image": "/assets/images/red-footed-tortoise-cost.jpg",
@@ -7192,6 +7354,18 @@
       "category": "Turtles & Tortoises",
       "categories": [
         "Turtles & Tortoises"
+      ],
+      "animalDay": null
+    },
+    {
+      "slug": "red-fox-legal-guide",
+      "title": "Are Red Foxes Legal? Fur-Farm Licenses, Bans and Permits",
+      "excerpt": "The red fox is native to nearly every state, so the law that answers a pet fox is almost never an exotic pet law. It is a furbearer chapter or a rabies statute, and the route it offers is a fur-farm license far more often than a pet permit: 28 bans, 18 permits, and three states that make the answer turn on the fox's pedigree.",
+      "date": "2026-10-10",
+      "image": "/assets/guides/red-fox-legal.jpg",
+      "category": "Legal",
+      "categories": [
+        "Legal"
       ],
       "animalDay": null
     },
@@ -7298,8 +7472,21 @@
       "animalDay": null
     },
     {
+      "slug": "ring-tailed-lemur-legal-guide",
+      "title": "Are Lemurs Legal? 30 Bans, 7 Permits, by State",
+      "excerpt": "The ring-tailed lemur is the one small primate on the federal endangered list, and that listing decides three states by reference before any primate law is read. Missouri, South Carolina and New Jersey bar it for being endangered while clearing or registering the capuchin beside it; Ohio and West Virginia turn around and treat it as the gentlest primate in the statute.",
+      "date": "2026-10-14",
+      "image": "/assets/guides/ring-tailed-lemur-legal.jpg",
+      "category": "Legal",
+      "categories": [
+        "Legal",
+        "Small & Exotic Pets"
+      ],
+      "animalDay": null
+    },
+    {
       "slug": "rosy-boa-cost-guide",
-      "title": "Rosy Boa Price: $150 to $400, Plus $150 to $250 Setup",
+      "title": "Rosy Boa Price: $150 to $400, Plus $150 to $270 Setup",
       "excerpt": "A rosy boa costs a fraction of what a boa constrictor does to buy and set up, a modest enclosure covers a snake that never gets past 3 or 4 feet, while the 18 to 22 year average lifespan, past 30 for some, stays just as serious a commitment.",
       "date": "2026-08-29",
       "image": "/assets/images/rosy-boa-cost.jpg",
@@ -7466,8 +7653,21 @@
       "animalDay": null
     },
     {
+      "slug": "savannah-cat-legal-guide",
+      "title": "Are Savannah Cats Legal? F1 to F5 Rules by State",
+      "excerpt": "Ohio frees the Savannah cat in the same line that restricts the serval, Georgia's wildlife agency names it as the hybrid it will not allow, and Texas treats it as the serval itself, certificate and $100,000 of insurance included. Six states count its generations and one weighs it.",
+      "date": "2026-10-11",
+      "image": "/assets/guides/savannah-cat-legal.jpg",
+      "category": "Legal",
+      "categories": [
+        "Legal",
+        "Cats"
+      ],
+      "animalDay": null
+    },
+    {
       "slug": "savannah-monitor-cost-guide",
-      "title": "Savannah Monitor Price: $150 to $800, Plus $1,000+ Setup",
+      "title": "Savannah Monitor: $150 to $800, Setup $2,620 to $4,035",
       "excerpt": "Savannah monitors are cheap to buy, and that low price is part of a genuine problem with how this species gets marketed and, too often, cared for.",
       "date": "2026-07-31",
       "image": "/assets/images/savannah-monitor-cost.jpg",
@@ -7576,8 +7776,8 @@
     },
     {
       "slug": "serval-legal-guide",
-      "title": "Are Servals Legal? Banned in 18 of 52 Jurisdictions",
-      "excerpt": "Thirty-five of the 52 jurisdictions restrict the serval, eighteen of them outright. Ohio bans the cat and expressly legalizes its hybrid, and Montana clears it by name.",
+      "title": "Are Servals Legal? Banned in 20 of 52 Jurisdictions",
+      "excerpt": "Thirty-five of the 52 jurisdictions restrict the serval, twenty of them outright. Ohio bans the cat and expressly legalizes its hybrid, and Montana clears it by name.",
       "date": "2026-08-19",
       "image": "/assets/guides/serval-legal.jpg",
       "category": "Legal",
@@ -7634,6 +7834,18 @@
       "categories": [
         "Dogs",
         "Enrichment"
+      ],
+      "animalDay": null
+    },
+    {
+      "slug": "skunk-legal-guide",
+      "title": "Are Pet Skunks Legal? 29 Bans, 14 Permits, by State",
+      "excerpt": "Every pet skunk site repeats the same list of seventeen states where a skunk is legal, and the statutes do not agree with it. Alabama is on most versions and bars the animal in regulation. Descenting changes nothing anywhere. Read from the text, the skunk gets 29 bans, 14 permits, one clean yes, and a South Dakota rule that still files it under the wrong family.",
+      "date": "2026-10-10",
+      "image": "/assets/guides/skunk-legal.jpg",
+      "category": "Legal",
+      "categories": [
+        "Legal"
       ],
       "animalDay": null
     },
@@ -7774,8 +7986,21 @@
       "animalDay": null
     },
     {
+      "slug": "squirrel-monkey-legal-guide",
+      "title": "Are Squirrel Monkeys Legal? 28 Bans, 9 Permits, by State",
+      "excerpt": "A squirrel monkey gets the capuchin's answer in every one of the 52 jurisdictions, and the reason is that almost no statute looked at either. Both are Cebidae, both are nonhuman primates, and the rules were written at the family and the order. Four states wrote the squirrel monkey's name, and one of them, Ohio, made the law harder to read by doing it.",
+      "date": "2026-10-15",
+      "image": "/assets/guides/squirrel-monkey-legal.jpg",
+      "category": "Legal",
+      "categories": [
+        "Legal",
+        "Small & Exotic Pets"
+      ],
+      "animalDay": null
+    },
+    {
       "slug": "stick-insect-cost-guide",
-      "title": "Stick Insect Price: A Few Dollars, Plus $60 to $125 Setup",
+      "title": "Stick Insect Price: A Few Dollars, Plus $80 to $160 Setup",
       "excerpt": "Stick insects are cheap to buy and cheap to keep. The catch in the US is legal: which species you have decides whether you can keep it at all, and most care advice branches on species too.",
       "date": "2026-07-31",
       "image": "/assets/images/stick-insect-cost.jpg",
@@ -7847,7 +8072,7 @@
     },
     {
       "slug": "sugar-glider-cost-guide",
-      "title": "Sugar Glider Price: $200 to $500, Plus $500 to $1,200 Setup",
+      "title": "Sugar Glider Price: $200 to $500, Plus $345 to $700 Setup",
       "excerpt": "Sugar gliders are illegal in several US states, and that has to be settled before cost even enters the conversation. Once it's settled, budget for a pair from day one, not just a single glider.",
       "date": "2026-07-22",
       "image": "/assets/images/sugar-glider-cost.jpg",
@@ -7931,7 +8156,7 @@
     },
     {
       "slug": "sulcata-tortoise-cost-guide",
-      "title": "Sulcata Tortoise Price: $100 to $600, Plus $300+ Setup",
+      "title": "Sulcata Tortoise: $100 to $600, Setup $315 to $670",
       "excerpt": "Sulcata tortoises are cheap to buy as hatchlings and one of the most expensive long-term commitments in the entire reptile hobby. The gap between those two facts is the whole story.",
       "date": "2026-07-23",
       "image": "/assets/images/sulcata-tortoise-cost.jpg",
@@ -7992,7 +8217,7 @@
     {
       "slug": "sulcata-tortoise-legal-guide",
       "title": "Is a Sulcata Tortoise Legal in Your State? Full Guide",
-      "excerpt": "No US state bans owning a sulcata tortoise. The legal fact is a federal import ban dating to 2000, and the practical problem is that these tortoises grow to about 200 pounds and overwhelm rescues nationwide.",
+      "excerpt": "No US state bans owning a sulcata tortoise. The legal fact is a federal import ban dating to 2000, and the practical problem is that these tortoises grow to 80 to 110 pounds, big males to 200, and overwhelm rescues nationwide.",
       "date": "2026-07-23",
       "image": "/assets/guides/sulcata-tortoise-legal.jpg",
       "category": "Legal",
@@ -8027,7 +8252,7 @@
     },
     {
       "slug": "swordtail-cost-guide",
-      "title": "Swordtail Price: $3 to $25 Each, Plus $120 to $255 Setup",
+      "title": "Swordtail Price: $3 to $25 Each, Plus $170 to $345 Setup",
       "excerpt": "Swordtails cost about the same per fish as a molly, but they're the common livebearer that outgrows a 20-gallon starting point the fastest.",
       "date": "2026-09-11",
       "image": "/assets/images/swordtail-cost.jpg",
@@ -8268,7 +8493,7 @@
     },
     {
       "slug": "tiger-salamander-cost-guide",
-      "title": "Tiger Salamander Price: $30 to $125, Plus $70 to $160 Setup",
+      "title": "Tiger Salamander Price: $30 to $125, Plus $120 to $250 Setup",
       "excerpt": "Tiger salamanders are affordable, and the budgeting story with this species is more about longevity than any single expensive line item.",
       "date": "2026-08-01",
       "image": "/assets/images/tiger-salamander-cost.jpg",
@@ -8364,7 +8589,7 @@
     },
     {
       "slug": "tokay-gecko-cost-guide",
-      "title": "Tokay Gecko Price: $15 to $400+, Plus $300 to $500 Setup",
+      "title": "Tokay Gecko Price: $15 to $400+, Plus $490 to $715 Setup",
       "excerpt": "Tokay geckos have a wide price range that reflects a real quality divide in this species: wild-caught animals are cheap and come with real downsides, while captive-bred animals cost more and are the meaningfully better choice.",
       "date": "2026-07-23",
       "image": "/assets/images/tokay-gecko-cost.jpg",
@@ -8486,6 +8711,18 @@
       "animalDay": null
     },
     {
+      "slug": "two-toed-sloth-legal-guide",
+      "title": "Are Pet Sloths Legal? Legal in 27 States, 11 Bans, by State",
+      "excerpt": "A two-toed sloth needs no state permit in 27 jurisdictions, because the dangerous-animal lists never mention it and the native-wildlife rules never reach it. Eleven ban it, seven of those by naming the order, the family or the genus, twelve issue a permit, Arizona restricts the whole order, and Pennsylvania's text will not decide.",
+      "date": "2026-10-12",
+      "image": "/assets/guides/two-toed-sloth-legal.jpg",
+      "category": "Legal",
+      "categories": [
+        "Legal"
+      ],
+      "animalDay": null
+    },
+    {
       "slug": "ultimate-birdwatching-guide-best-places-times-tips-2026",
       "title": "Ultimate Birdwatching Guide for Beginners (2026)",
       "excerpt": "Where to go birding, when to go, how to identify what lands in front of you, and how to build a yard that birds use instead of fly over.",
@@ -8500,8 +8737,8 @@
     },
     {
       "slug": "uromastyx-cost-guide",
-      "title": "Uromastyx Price: $150 to $400, Plus $515 to $1,210 Setup",
-      "excerpt": "Uromastyx sit in a familiar price range for the lizard itself, but a proper setup pushes the upfront cost to $515-1,210, driven by just how hot and specialized this species' enclosure needs to be.",
+      "title": "Uromastyx Price: $150 to $400, Plus $660 to $1,365 Setup",
+      "excerpt": "Uromastyx sit in a familiar price range for the lizard itself, but a proper setup pushes the upfront cost to $660 to $1,365, driven by just how hot and specialized this species' enclosure needs to be.",
       "date": "2026-07-24",
       "image": "/assets/images/uromastyx-cost.jpg",
       "category": "Reptiles",
@@ -8600,7 +8837,7 @@
     },
     {
       "slug": "veiled-chameleon-cost-guide",
-      "title": "Veiled Chameleon Price: $20 to $100, Plus $400 to $800 Setup",
+      "title": "Veiled Chameleon Price: $20 to $100, Plus $345 to $800 Setup",
       "excerpt": "Veiled chameleons are one of the cheapest chameleons to buy, but the setup and the vet bills, especially if you're keeping a female, are where the cost shows up.",
       "date": "2026-07-15",
       "image": "/assets/images/veiled-chameleon-cost.jpg",
@@ -8683,6 +8920,43 @@
       "animalDay": null
     },
     {
+      "slug": "venomous-snake-laws-by-state",
+      "title": "Venomous Snake Laws by State: Rattlesnake and Cobra Rules",
+      "excerpt": "Most states regulate 'venomous reptiles' as a class, so a cobra and a rattlesnake get one answer. The rattlesnake then gets a second one, because across most of the country it is also a native animal with its own take rules, and those run from a two-snake bag limit in California to a bare 'do not possess' in Nebraska.",
+      "date": "2026-10-15",
+      "image": "/assets/guides/venomous-snake-laws-by-state.jpg",
+      "category": "Legal",
+      "categories": [
+        "Legal",
+        "Reptiles"
+      ],
+      "animalDay": null
+    },
+    {
+      "slug": "virginia-opossum-legal-guide",
+      "title": "Are Pet Opossums Legal? 20 Bans, 20 Permits, by State",
+      "excerpt": "The Virginia opossum is the only marsupial native to the United States, so two kinds of rule reach it: the marsupial clauses written for sugar gliders and wallabies, and the furbearer and game chapters written for the raccoon. Across all 52 jurisdictions that comes to 20 bans, 20 permits, four clean yeses, four conditions and three states whose text will not decide.",
+      "date": "2026-10-14",
+      "image": "/assets/guides/virginia-opossum-legal.jpg",
+      "category": "Legal",
+      "categories": [
+        "Legal"
+      ],
+      "animalDay": null
+    },
+    {
+      "slug": "wallaby-legal-guide",
+      "title": "Are Wallabies Legal in the US? Legal in 31 States, by State",
+      "excerpt": "A Bennett's wallaby is legal with no state permit in 31 jurisdictions, more than almost any other exotic mammal its size, because most dangerous-animal lists never mention a marsupial and most native-wildlife rules never reach an Australian one. Nine jurisdictions ban it, ten issue a permit, and Pennsylvania and Connecticut have text that will not decide.",
+      "date": "2026-10-14",
+      "image": "/assets/guides/wallaby-legal.jpg",
+      "category": "Legal",
+      "categories": [
+        "Legal"
+      ],
+      "animalDay": null
+    },
+    {
       "slug": "weirdest-creatures-deep-sea-facts-that-will-blow-your-mind",
       "title": "Deep Sea Creatures: Anglerfish, Giant Squid & More",
       "excerpt": "Dive into the ocean's darkest depths and meet the strangest animals on Earth, from glowing jellyfish to anglerfish with a shocking secret.",
@@ -8716,6 +8990,18 @@
       "category": "Pet Care",
       "categories": [
         "Pet Care"
+      ],
+      "animalDay": null
+    },
+    {
+      "slug": "white-tailed-deer-legal-guide",
+      "title": "Is It Legal to Keep a Deer? 28 Bans, 20 Permits, by State",
+      "excerpt": "A white-tailed deer is the one animal on this map with no clean legal state. It is big game everywhere it lives, and every state that allows a captive one routes it through a deer-farm license, an eight-foot fence and a chronic wasting disease program. Across all 52 jurisdictions that comes to 28 bans, 20 permits that are mostly farm registrations, one condition, two restricted lists and Indiana's open question.",
+      "date": "2026-10-13",
+      "image": "/assets/guides/white-tailed-deer-legal.jpg",
+      "category": "Legal",
+      "categories": [
+        "Legal"
       ],
       "animalDay": null
     },
@@ -8888,6 +9174,19 @@
       "animalDay": null
     },
     {
+      "slug": "wolfdog-legal-guide",
+      "title": "Are Wolfdogs Legal? 12 Bans, 17 Legal, 10 Unclear, by State",
+      "excerpt": "No animal on this map splits the states five ways like the wolfdog: 12 bans, 5 permits, 8 conditional, 17 legal and 10 unclear. The reason is that statutes define the hybrid three different ways, by generation, by percentage, or by the two words 'any wolf', and the same animal is a dog in Virginia, a wild animal in Michigan, and an open question in Illinois.",
+      "date": "2026-10-13",
+      "image": "/assets/guides/wolfdog-legal.jpg",
+      "category": "Legal",
+      "categories": [
+        "Legal",
+        "Dogs"
+      ],
+      "animalDay": null
+    },
+    {
       "slug": "wolverine-facts-the-toughest-animal-pound-for-pound",
       "title": "Wolverine Facts: The Toughest Animal Pound for Pound",
       "excerpt": "Meet the wolverine: a mustelid under 40 pounds that ranges over 200 square miles, digs food out of the snow, and avoids the bears and wolves it supposedly chases off kills.",
@@ -8939,7 +9238,7 @@
     {
       "slug": "zebra-danio-bristlenose-pleco-discus-cardinal-tetra-overview",
       "title": "Zebra Danio, Pleco, Discus & Cardinal Tetra Compared",
-      "excerpt": "A hardy beginner schooler, a low-maintenance algae eater, an advanced centerpiece cichlid, and a small, vivid tetra often mistaken for its more famous cousin. Four fish, four completely different levels of commitment.",
+      "excerpt": "A hardy beginner schooler, an easygoing wood-rasping catfish, an advanced centerpiece cichlid, and a small, vivid tetra often mistaken for its more famous cousin. Four fish, four completely different levels of commitment.",
       "date": "2026-08-29",
       "image": "/assets/guides/zebra-danio-bristlenose-pleco-discus-cardinal-tetra-overview.jpg",
       "category": "Roundups",
@@ -8950,7 +9249,7 @@
     },
     {
       "slug": "zebra-danio-cost-guide",
-      "title": "Zebra Danio Price: $2 to $3 Each, Plus $50 to $170 Setup",
+      "title": "Zebra Danio Price: $2 to $3 Each, Plus $105 to $250 Setup",
       "excerpt": "Zebra danios are about as cheap as a starter fish gets, and one of the few community species where a heater is optional. The price story is the gap between the plain wild-type fish and its glow-in-the-dark GloFish cousin.",
       "date": "2026-09-13",
       "image": "/assets/images/zebra-danio-cost.jpg",
@@ -9022,7 +9321,7 @@
     },
     {
       "slug": "zebra-finch-cost-guide",
-      "title": "Zebra Finch Price: $30 to $120, Plus $225 to $465 Setup",
+      "title": "Zebra Finch Price: $30 to $120, Plus $155 to $550 Setup",
       "excerpt": "Zebra finches are among the cheapest pet birds you can buy, but the detail that reshapes the budget is that you can never buy just one.",
       "date": "2026-09-19",
       "image": "/assets/images/zebra-finch-cost.jpg",
