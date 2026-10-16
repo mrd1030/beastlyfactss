@@ -2,7 +2,7 @@ import React, { useMemo, useState } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { motion } from '@/lib/motion-safe';
 import { Link } from 'react-router-dom';
-import { ClipboardCheck as BadgeIcon } from 'lucide-react';
+import { ClipboardCheck as BadgeIcon, ChevronRight } from 'lucide-react';
 import { PageBadge } from '@/components/shared/IconChip';
 import { CORRECTIONS, REVIEWS } from '@/lib/data/corrections';
 
@@ -96,9 +96,12 @@ function CorrectionsLog({ entries }) {
       )}
       <div className="space-y-2">
         {months.map((g, gi) => (
-          <details key={g.key} open={Boolean(q) || gi === 0} className="rounded-xl border border-border bg-muted/30">
-            <summary className="cursor-pointer select-none px-4 py-2.5 font-body font-semibold text-sm text-foreground flex items-center justify-between gap-3">
-              <span>{g.key}</span>
+          <details key={g.key} open={Boolean(q) || gi === 0} className="group/month rounded-xl border border-border bg-muted/30">
+            <summary className="cursor-pointer select-none list-none [&::-webkit-details-marker]:hidden px-4 py-2.5 font-body font-semibold text-sm text-foreground flex items-center justify-between gap-3">
+              <span className="flex items-center gap-2">
+                <ChevronRight className="w-4 h-4 text-muted-foreground transition-transform group-open/month:rotate-90" aria-hidden="true" />
+                {g.key}
+              </span>
               <span className="text-xs font-normal text-muted-foreground">{`${g.items.length} ${g.items.length === 1 ? 'entry' : 'entries'}`}</span>
             </summary>
             {/* An open month scrolls inside its own box, so a busy month never
@@ -107,7 +110,7 @@ function CorrectionsLog({ entries }) {
               {g.items.map((c, i) => (
                 <li key={`${c.page}-${c.date}-${i}`}>
                   <details className="group">
-                    <summary className="cursor-pointer select-none px-4 py-2.5 text-sm font-body grid grid-cols-[3.25rem_1fr] gap-x-3 items-baseline">
+                    <summary className="cursor-pointer select-none list-none [&::-webkit-details-marker]:hidden px-4 py-2.5 text-sm font-body grid grid-cols-[3.25rem_1fr] gap-x-3 items-baseline">
                       <span className="text-xs text-muted-foreground tabular-nums">{shortDate(c.date)}</span>
                       <span>
                         <span className="font-semibold text-foreground">{c.title}</span>
