@@ -36,19 +36,31 @@ UVB tubes are replaced every 6 to 12 months on the maker's schedule.
 
 ## Safety
 
-- [ ] Gargoyle gecko: hub emergency card geckos.js:233 says a stuck toe band
+- [x] Gargoyle gecko: hub emergency card geckos.js:233 says a stuck toe band
   "is a same-day soak"; health guide :74 and package send a tight band or dark
-  toe to the vet. Owner: health guide.
-- [ ] Budgie/cockatiel: budgie-vs-cockatiel-guide.mdx:46 says cockatiels need
+  toe to the vet. Owner: health guide. Closed 2026-10-15: already fixed on
+  main; the hub vetLine reads "early stuck shed gets a warm soak, and a tight
+  band or a darkened toe goes to a vet", and "same-day soak" is gone.
+- [x] Budgie/cockatiel: budgie-vs-cockatiel-guide.mdx:46 says cockatiels need
   "larger... bar spacing"; both setup guides say half an inch or smaller.
-  Owner: cockatiel tank setup guide.
-- [ ] Jumping spider: hub FAQ invertebrates.js:639 says no prey "larger than
+  Owner: cockatiel tank setup guide. Closed 2026-10-15: already fixed on main;
+  line 46 reads "Bar spacing does not grow with the bird: it stays half an inch
+  or smaller for both".
+- [x] Jumping spider: hub FAQ invertebrates.js:639 says no prey "larger than
   the spider's own body"; feeding guide says no bigger than the abdomen.
-- [ ] Jumping spider: uromastyx-tokay-africangrey-jumpingspider-overview.mdx:83
+  Closed 2026-10-15: the feeding guide (owner) now reads "about half its body
+  length, three quarters at the most" and the hub FAQ already matched it. The
+  hub "What they eat" row still said "no bigger than the abdomen"; changed to
+  the feeding guide's rule.
+- [x] Jumping spider: uromastyx-tokay-africangrey-jumpingspider-overview.mdx:83
   says prey "half to three quarters of the spider's body". Owner: feeding guide.
-- [ ] Hamster: chinchilla-vs-hamster-guide.mdx:70 says "450+ sq in"; setup
+  Closed 2026-10-15: no conflict left; the feeding guide now gives the same
+  half to three quarters rule.
+- [x] Hamster: chinchilla-vs-hamster-guide.mdx:70 says "450+ sq in"; setup
   guide :64 says 700-775 (Syrian), about 600 (dwarf). Owner: tank setup.
-  (Filed factual by the reader; undersizes the cage by a third.)
+  (Filed factual by the reader; undersizes the cage by a third.) Closed
+  2026-10-15: already fixed on main; line 70 reads "about 600 sq in for a
+  dwarf, 700+ for a Syrian".
 
 ## Factual
 
