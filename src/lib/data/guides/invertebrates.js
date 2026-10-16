@@ -628,7 +628,7 @@ export const invertebrateGuides = fillCostTokens([
       { slug: "jumping-spider-enrichment-guide", line: "The cognition literature on this species, and what it actually asks you to put in the enclosure." },
     ],
     buyList: [
-      "A small vertical, front-opening enclosure, 4x4x7 inches at the least and taller if you can",
+      "A small vertical, front-opening enclosure, about 8 inches (20 cm) tall for an adult",
       "Coconut fiber, or a coconut fiber and sphagnum moss blend",
       "Mini cork bark flats, small branches, and artificial or live foliage",
       "A fine mist spray bottle and dechlorinated water",

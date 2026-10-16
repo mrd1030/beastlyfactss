@@ -854,7 +854,7 @@ export const fishGuides = fillCostTokens([
       vetLine: "Stress, unstable water, overcrowding, and skipped quarantine sit behind nearly every condition on this list.",
     },
     routes: [
-      { slug: "molly-cost-guide", line: "$2 to $8 a common molly, the $130 to $260 the tank costs around it, and the %%monthly:molly%% a month after that." },
+      { slug: "molly-cost-guide", line: "$2 to $8 a common molly, the %%setup:molly%% the tank costs around it, and the %%monthly:molly%% a month after that." },
       { slug: "molly-tank-setup-guide", line: "A real 20 gallons, 72 to 82\u00B0F, hard alkaline water, four-times turnover, and the salt question answered honestly." },
       { slug: "molly-feeding-guide", line: "Once or twice a day, blanched vegetables two to three times a week, and why an all-protein diet is the molly-specific mistake." },
       { slug: "molly-handling-guide", line: "A netting-only fish, gonopodium versus gravid spot, and the breeding plan you need before you buy." },

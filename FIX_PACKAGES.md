@@ -47,7 +47,8 @@ Live editions (2026-10-04): bearded dragon 4.1; leopard gecko, crested gecko, ba
 - [ ] Glossary: IUCN (`pages_07.html:40`) and VCA (`:58`) out; CITES (`:12`) moves to the law page mini glossary.
 - [ ] Gear: the fogger is left unlinked as the "or" alternative to the spray bottle (cost guide setup row).
 - [ ] Book: `pages_06.html:120` "If the room holds the range, skip the bulb and thermostat": add that the thermometer stays either way, as a safety check (owner, 2026-10-05; PetMD and Chicago Exotics both keep thermometers in with or without heat). The equipment page (`pages_02.html:92`) and daily check (`pages_06.html:342`) already have it, so this is one clause on the skip line.
-- [ ] Book: `pages_02.html:44` pair space "double the space of an 18×18×36 in" enclosure; the setup guide's single-adult minimum is 18x18x24 (the cost guide :85 says the same 18x18x36, so settle both). (Sweep 2026-10-05.)
+- [ ] Book: `pages_02.html:44` pair space "double the space of an 18×18×36 in" enclosure; the setup guide's single-adult minimum is 18x18x24. Settled 2026-10-15: the site cost guide now says double the 18x18x24 single-adult minimum; the book follows on the next edit. (Sweep 2026-10-05.)
+- [ ] Book: `pages_02.html` temperature table, "Floor, the cool area" reads 70 to 75°F. The site setup guide moved the floor to 72 to 75°F on 2026-10-15, since its own text puts lethargy at or below about 72°F. Match on the next edit.
 
 ### Gargoyle gecko (1.1, `gargoyle-gecko-src`)
 - [ ] Glossary: ARAV (`pages_5.html:8`) and IUCN (`:42`) out.

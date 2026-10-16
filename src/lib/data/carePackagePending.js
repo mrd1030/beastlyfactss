@@ -26,6 +26,16 @@ export const CARE_PACKAGE_PENDING = {
       from: '/blog/crested-gecko-tank-setup-guide/',
       fromLabel: 'Crested Gecko Tank Setup',
     },
+    {
+      text: 'The space for two females changes from double an 18x18x36 inch enclosure to double the 18x18x24 inch single-adult minimum.',
+      from: '/blog/crested-gecko-tank-setup-guide/',
+      fromLabel: 'Crested Gecko Tank Setup',
+    },
+    {
+      text: 'The cool area at the floor changes from 70 to 75 F to 72 to 75 F, so the floor sits at the line where lethargy sets in rather than below it.',
+      from: '/blog/crested-gecko-tank-setup-guide/',
+      fromLabel: 'Crested Gecko Tank Setup',
+    },
   ],
   'russian-tortoise': [
     {
