@@ -13675,6 +13675,84 @@
     "imageHeight": 784
   },
   {
+    "path": "/content/guides/cobra-legal-guide.mdx",
+    "slug": "cobra-legal-guide",
+    "title": "Are Cobras Legal? The Exotic Venomous Answer, State by State",
+    "seoTitle": "Are Cobras Legal? 26 Bans, 13 Permit States, by State",
+    "seoDescription": "Cobra laws by state: 26 bans, 13 permit states, 9 with no rule. CITES Appendix II, the class rule, where the king cobra is named, Oregon's list, Nebraska.",
+    "lastUpdated": "2026-10-16",
+    "noIndex": false,
+    "excerpt": "A cobra is the cleanest venomous-snake question on the map, because no state has a native one. There is no hunting season to carve it out and no sport-take limit to let it in: 26 jurisdictions ban it, 13 issue a permit, three attach a condition, Arizona restricts it, and nine states have no rule at all. Federally the only law that touches it is CITES, which governs the border and not the cage.",
+    "date": "2026-10-16",
+    "category": "Legal",
+    "categories": [
+      "Legal",
+      "Reptiles"
+    ],
+    "tags": [
+      "Cobra",
+      "King Cobra",
+      "Venomous Snakes",
+      "Legal",
+      "Exotic Pet Laws",
+      "Wildlife Law",
+      "Pet Ownership"
+    ],
+    "readTime": 10,
+    "difficulty": "Intermediate",
+    "image": "/assets/guides/cobra-legal.jpg",
+    "imageAlt": "Spectacled cobra with its hood spread on dry cracked ground",
+    "emoji": "🐍",
+    "lastReviewed": "2026-10-16",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Is it legal to own a cobra in the United States?",
+        "a": "Federally, yes: no cobra is on the injurious wildlife list, and the only federal rule that touches one is CITES, which puts the king cobra and the Asian Naja species on Appendix II and governs import and export rather than keeping. Under state law 26 jurisdictions ban it, 13 issue a permit, Oregon, North Carolina and Minnesota attach a condition, Arizona restricts the whole elapid family, and nine states have no rule reaching a cobra at all: Pennsylvania, Wisconsin, Michigan, Virginia, South Carolina, South Dakota, Mississippi, Oklahoma and Nebraska."
+      },
+      {
+        "q": "Can you own a king cobra?",
+        "a": "It gets the cobra's answer almost everywhere, because Ophiophagus hannah is an elapid and most statutes say 'Elapidae' or 'all venomous species'. Three rules name it separately. Oregon lists the king cobra among its noncontrolled species, which need no ODFW permit. Arkansas puts 'King Cobras (Genus Ophiophagus)' on its permit list beside 'Cobras (Genus Naja)', so both take the Venomous Reptile Permit. Louisiana's 2025 prohibited list names the genus and bars it with the rest."
+      },
+      {
+        "q": "Is a cobra legal in Florida?",
+        "a": "Yes, with the venomous reptile permit. 68A-6.017 requires an applicant of 18 with at least one year and 1,000 hours of documented experience with the species or its family, two references, a passed examination or the experience in its place, and a facility inspected before the snake arrives. It is a demanding permit, but it is a personal one, and it is the most demanding on the map."
+      },
+      {
+        "q": "Can you own a cobra in Texas?",
+        "a": "Yes, with a controlled exotic snake permit. Parks and Wildlife Code § 43.851 has the commission establish permits for 'a live nonindigenous snake, including a hybrid of any kind, that is: (1) venomous', with separate recreational and commercial permits, and every cobra is a nonindigenous venomous snake. The recreational permit runs 1 September to 31 August, and local ordinances were not checked."
+      },
+      {
+        "q": "Is a venomoid cobra legal where cobras are banned?",
+        "a": "No. A devenomized cobra is still an elapid, and the family clauses do not ask about the glands. New York City's Health Code says so in terms, prohibiting 'all front-fanged venomous snakes, even if devenomized, including, but not limited to, all Viperidae (viper, pit viper), all Elapidae (cobra, mamba, krait, coral snake)'. Everywhere else the rule reads 'Elapidae' or 'venomous species' and a surgically altered animal is the same species."
+      },
+      {
+        "q": "Which states have no cobra law?",
+        "a": "Nine. Pennsylvania, Wisconsin, Michigan, Virginia and South Dakota have no venomous snake rule of any kind, and their reptile rules reach only their own natives. South Carolina lets reptiles be imported for the pet trade without a permit, Mississippi's nongame rule and its inherently dangerous list both stop short of a cobra, Oklahoma exempts reptiles not indigenous to the state, and Nebraska regulates reptiles only where they are its own. Local ordinances were not checked in any of them."
+      },
+      {
+        "q": "Can you keep a cobra in Colorado?",
+        "a": "No. Appendix A of Chapter W-7 clears only nonvenomous snake families, so a cobra is regulated wildlife, and Colorado Parks and Wildlife says it 'will not issue a license for private possession (eg pet) of regulated wildlife'. The licenses Chapter W-11 does issue are commercial wildlife park licenses, which is why the map reads Colorado as banned rather than permitted."
+      },
+      {
+        "q": "Does CITES stop me from keeping a cobra?",
+        "a": "No. CITES governs international trade, and 50 CFR 23.5 defines that as 'the import, introduction from the sea, export, or re-export across jurisdictional or international boundaries'. An Appendix II listing means a king cobra or Indian cobra needs export papers to cross a border; it says nothing about keeping one in Ohio. The injurious wildlife list, which is the federal rule people usually mean, names no venomous snake."
+      }
+    ],
+    "relatedProducts": [],
+    "factFile": false,
+    "animalDay": null,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 5,
+    "headingCount": 8,
+    "ledeMatchesExcerpt": false,
+    "imageWidth": 1168,
+    "imageHeight": 784
+  },
+  {
     "path": "/content/guides/cockatiel-cost-guide.mdx",
     "slug": "cockatiel-cost-guide",
     "title": "How Much Does a Cockatiel Really Cost?",
@@ -16244,6 +16322,84 @@
     "imageHeight": 784
   },
   {
+    "path": "/content/guides/cougar-legal-guide.mdx",
+    "slug": "cougar-legal-guide",
+    "title": "Are Cougars Legal? The Native Cat the Big Cat Act Reached",
+    "seoTitle": "Are Cougars Legal? 36 Bans, 14 Permit States, by State",
+    "seoDescription": "Cougar and mountain lion laws by state: 36 bans, 14 permit states, one with no rule. Why a native cat is the most restricted on the map, and Texas's form.",
+    "lastUpdated": "2026-10-16",
+    "noIndex": false,
+    "excerpt": "The cougar is the only animal on the Big Cat Public Safety Act's list that is also native to the United States, so it is caught twice: once by the federal Act and every exotic cat clause written for the tiger, and again by the game codes of the states it lives in. The result is the most restricted animal on the map, with 36 bans, 14 permits and one state with no rule.",
+    "date": "2026-10-16",
+    "category": "Legal",
+    "categories": [
+      "Legal",
+      "Cats"
+    ],
+    "tags": [
+      "Cougar",
+      "Mountain Lion",
+      "Big Cats",
+      "Legal",
+      "Exotic Pet Laws",
+      "Wildlife Law",
+      "Pet Ownership"
+    ],
+    "readTime": 11,
+    "difficulty": "Intermediate",
+    "image": "/assets/guides/cougar-legal.jpg",
+    "imageAlt": "Cougar crouched on a rocky mountain slope with its tawny coat against the gray stone",
+    "emoji": "🐆",
+    "lastReviewed": "2026-10-16",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Is it legal to own a cougar?",
+        "a": "Not a new one, anywhere in the country. The Big Cat Public Safety Act lists Puma concolor as prohibited wildlife, and since 20 December 2022 16 U.S.C. 3372(e) has barred any private person from breeding or possessing one, except an animal born before that date and registered with the Fish and Wildlife Service by 18 June 2023. State law alone bans it in 36 jurisdictions, requires a permit in 14, restricts it in Arizona and leaves it unregulated only in North Carolina, where counties may regulate it."
+      },
+      {
+        "q": "Can you own a mountain lion in Texas?",
+        "a": "Under state law, with paperwork; under federal law, only if you already did. Health and Safety Code § 822.101(4) names the cougar at clause (D), so § 822.103 requires a certificate of registration from the local animal control office or the county sheriff, § 822.107 requires liability insurance of at least $100,000 per occurrence, and § 822.116(b) lets any city or county prohibit the animal outright. The federal Act then bars any private person from acquiring a cougar after 20 December 2022, so the Texas certificate now covers only animals registered with the Fish and Wildlife Service by 18 June 2023."
+      },
+      {
+        "q": "Is a cougar legal in Florida?",
+        "a": "No. 68A-6.002 names 'Cougars, panthers (Puma concolor)' at Class I item 23, and 68A-6.003(6) says Class I wildlife 'shall not be possessed for personal use', with one exception for an animal held on 1 August 1980. The Florida panther is also listed as endangered under the federal Endangered Species Act, in a row of 50 CFR 17.11 that dates to 1967, so a Florida-origin animal is federally protected before the Big Cat Act is even reached."
+      },
+      {
+        "q": "Are cougars, mountain lions, pumas and panthers the same animal under the law?",
+        "a": "Yes. All four names are Puma concolor, and the statutes that name it usually name it more than once. New York City's Health Code lists 'puma, panther, mountain lion' and 'cougar' in one clause, Ohio and West Virginia both write 'Cougars, also known as pumas or mountain lions', Michigan names 'a cougar, a panther', and Hawaii lists it under an older genus as 'Profelis concolor (=Felis concolor) puma, (cougar), (mountain lion)'. Whatever a seller calls the animal, the rule reaches it."
+      },
+      {
+        "q": "Why is a cougar banned in states that have no tiger law?",
+        "a": "Because it is a native animal and the tiger is not. Wisconsin, Nevada, Alabama and Oklahoma have no rule reaching a tiger, so under state law a tiger there was unregulated until the federal Act. Each of them reaches the cougar as its own wildlife: Wisconsin designates it a harmful wild animal that needs a captive wild animal farm license, Nevada writes mountain lions out of its no-permit list, Alabama names it among animals barred from outside the state and designates it a game animal, and Oklahoma bars any native cat over fifty pounds outside a commercial wildlife breeder's license."
+      },
+      {
+        "q": "Can you own a cougar in Wisconsin?",
+        "a": "Under state law, with a captive wild animal farm license. NR 16.11(2) designates 'Felidae. The species felis concolor commonly known as cougars' as a harmful wild animal, Wis. Stat. § 169.11(1)(b) bars possessing one 'unless specifically authorized to do so by the department', and the authorization is a farm license naming the species, with written assurance of local zoning compliance before a first license. The rule's own note adds that possession 'is heavily restricted federally' since the Big Cat Public Safety Act, which is the understatement of the chapter."
+      },
+      {
+        "q": "Is it legal to own a mountain lion in Colorado?",
+        "a": "No. The mountain lion is a Colorado game animal and no wild cat is on the domestic or unregulated lists, so it is regulated wildlife, and Colorado Parks and Wildlife's own guidance says it 'will not issue a license for private possession (eg pet) of regulated wildlife'. Chapter W-11 says noncommercial possession of regulated mammals has been barred since 1983."
+      },
+      {
+        "q": "Can you keep a cougar in Montana?",
+        "a": "Under state law, with a wild animal menagerie permit. MCA § 87-4-801(3) names 'cougars' and 'pumas' in the menagerie definition, § 87-4-406(1) sends the mountain lion to the same part, the permit is inspected and capped at ten animals, and they must come captive bred from a licensed zoo, menagerie or fur farm; a cougar may not be captured from the wild for it. The federal Act means no new animal can take the permit."
+      }
+    ],
+    "relatedProducts": [],
+    "factFile": false,
+    "animalDay": null,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 5,
+    "headingCount": 9,
+    "ledeMatchesExcerpt": false,
+    "imageWidth": 1168,
+    "imageHeight": 784
+  },
+  {
     "path": "/content/guides/crested-gecko-cost-guide.mdx",
     "slug": "crested-gecko-cost-guide",
     "title": "How Much Does a Crested Gecko Really Cost?",
@@ -18720,7 +18876,7 @@
     "title": "The Pet Bans That Are Real, and the Ones That Aren't",
     "seoTitle": "Exotic Pet Laws Guide: Every Species We Cover",
     "seoDescription": "No federal law decides exotic pet ownership, states do. This hub indexes every species legal guide, plus a state-by-state map across 50 states, DC and NYC.",
-    "lastUpdated": "2026-10-15",
+    "lastUpdated": "2026-10-16",
     "noIndex": false,
     "excerpt": "No federal law actually decides whether you can own most exotic pets, states and cities do. Here's what federal law really controls, how state law actually works, and a direct index of every species-specific legal guide.",
     "date": "2026-07-17",
@@ -18740,7 +18896,7 @@
     "image": "/assets/guides/exotic-pet-legal-hub.jpg",
     "imageAlt": "Gavel beside a variety of exotic pets representing US exotic pet law",
     "emoji": "⚖️",
-    "lastReviewed": "2026-10-15",
+    "lastReviewed": "2026-10-16",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -18776,7 +18932,7 @@
     "myth": null,
     "truth": null,
     "sourceCount": 6,
-    "headingCount": 13,
+    "headingCount": 14,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
     "imageHeight": 784
@@ -32310,6 +32466,83 @@
     "imageHeight": 784
   },
   {
+    "path": "/content/guides/lion-legal-guide.mdx",
+    "slug": "lion-legal-guide",
+    "title": "Are Lions Legal? The Tiger's Answer, Split by Subspecies",
+    "seoTitle": "Are Lions Legal? 35 Bans, 10 Permit States, by State",
+    "seoDescription": "Lion laws by state: 35 bans, 10 permit states, 5 with no rule, Missouri unclear, under the Big Cat Public Safety Act. The split federal listing, Texas's form.",
+    "lastUpdated": "2026-10-16",
+    "noIndex": false,
+    "excerpt": "The lion gets the tiger's answer in 51 of 52 jurisdictions, and the one exception is a federal listing split down the middle. 50 CFR 17.11 lists one lion subspecies as endangered and the other as threatened, which is why Missouri cannot say whether its free pass for nonnative mammals reaches a lion, and why Wyoming, which bars both, can.",
+    "date": "2026-10-16",
+    "category": "Legal",
+    "categories": [
+      "Legal",
+      "Cats"
+    ],
+    "tags": [
+      "Lion",
+      "Big Cats",
+      "Legal",
+      "Exotic Pet Laws",
+      "Wildlife Law",
+      "Pet Ownership"
+    ],
+    "readTime": 9,
+    "difficulty": "Intermediate",
+    "image": "/assets/guides/lion-legal.jpg",
+    "imageAlt": "Maned male lion lying on a grassy savanna rise with its head raised and the plain falling away behind it",
+    "emoji": "🦁",
+    "lastReviewed": "2026-10-16",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Is it legal to own a lion in the United States?",
+        "a": "Not a new one. The Big Cat Public Safety Act amended the Lacey Act so that 16 U.S.C. 3372(e) makes it unlawful to breed or possess a lion outside licensed exhibitors, sanctuaries, state institutions and veterinarians, and the lion is the first species the Fish and Wildlife Service lists. A private owner could keep a lion born before 20 December 2022 by registering it with the Service by 18 June 2023, and that window is closed. Under state law alone the lion is banned in 35 jurisdictions, a permit animal in ten, restricted in one, unclear in Missouri and unregulated in five."
+      },
+      {
+        "q": "Can you own a lion in Texas?",
+        "a": "Under state law, yes, with paperwork; under federal law, only if you already did. Health and Safety Code § 822.101(4) opens its dangerous wild animal list with '(A) a lion', so § 822.103 requires a certificate of registration from local animal control or the sheriff, § 822.107 requires liability insurance of at least $100,000 per occurrence, and § 822.116(b) lets any city or county prohibit the animal outright. The federal Act then bars any new lion, so the certificate now covers only animals registered with the Fish and Wildlife Service by 18 June 2023."
+      },
+      {
+        "q": "Is a lion an endangered species?",
+        "a": "Half of it is. 50 CFR 17.11 lists Panthera leo leo, the lions of India and West and Central Africa, as endangered, and Panthera leo melanochaita, the lions of eastern and southern Africa, as threatened, both since a rule published on 23 December 2015. The tiger is listed endangered wherever found in one row. That split is why the lion's map differs from the tiger's in exactly one state."
+      },
+      {
+        "q": "Why is a lion unclear in Missouri when a tiger is banned?",
+        "a": "Because Missouri's rule turns on the word endangered. 3 CSR 10-9.110(2) lets mammals not native to Missouri be possessed without a permit 'Except for federally-designated endangered species'. The tiger is endangered wherever found, so it is inside the carve-out and barred. A lion is endangered or threatened depending on its subspecies, and nothing in the rule says how a lion of unrecorded subspecies is treated. Inside the carve-out it is barred like the tiger; outside it, it needs only the county registration RSMo § 578.023 requires. The map records it as unclear rather than guess."
+      },
+      {
+        "q": "Is it legal to own a lion in Florida?",
+        "a": "No, and it has not been since 1980. 68A-6.002(1)(a) names 'Lions (Panthera leo)' at Class I item 12, one line below the tiger, and 68A-6.003(6) says 'Class I wildlife shall not be possessed for personal use', with one exception for an animal possessed for personal use on 1 August 1980. Class I animals may be held by licensed exhibitors and dealers under § 379.3761, F.S., not as pets."
+      },
+      {
+        "q": "Can you own a lion in Michigan?",
+        "a": "Only an animal owned in 2000. Michigan's Large Carnivore Act lists the lion first among its large carnivores, ahead of the leopard, jaguar, tiger, cougar, panther and cheetah. Under MCL 287.1104(1), possession is allowed only for the individual animal a person already owned when the act took effect in 2000, with a local permit applied for within 90 days, and that permit passes on only by will or descent."
+      },
+      {
+        "q": "Which states name the lion and not the tiger?",
+        "a": "Connecticut and New Mexico, in opposite directions. Connecticut's Category One felid clause lists 'lion, leopard, cheetah, jaguar, ocelot, jaguarundi cat, puma, lynx and bobcat' as its examples and leaves the tiger to the words 'including, but not limited to'. New Mexico's importation list names 'Panthera tigris | Tiger' outright and, for the lion, only 'Panthera leo persica | Lion, Asiatic', so an African lion is caught by the default clause that sends every unlisted species to Group IV. Neither difference changes the answer: both animals are banned in both states."
+      },
+      {
+        "q": "Which states have no lion law?",
+        "a": "Five: Wisconsin, Nevada, Alabama, Oklahoma and North Carolina, the tiger's five. Wisconsin frees every nonnative wild animal that is not harmful, and the only cat it designates harmful is the cougar; Nevada clears 'All felines, except mountain lions and bobcats'; Alabama's restricted list names only its own black bear, mountain lion and bobcat; Oklahoma exempts 'Cats (except native cats and bears)'; North Carolina hands the question to counties. In all five the federal Act is the whole answer."
+      }
+    ],
+    "relatedProducts": [],
+    "factFile": false,
+    "animalDay": null,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 5,
+    "headingCount": 9,
+    "ledeMatchesExcerpt": false,
+    "imageWidth": 1168,
+    "imageHeight": 784
+  },
+  {
     "path": "/content/guides/lions-are-the-only-social-cat.mdx",
     "slug": "lions-are-the-only-social-cat",
     "title": "Lions Are the Only Cat That Lives in Groups, and the Pride Belongs to the Females",
@@ -40339,6 +40572,83 @@
     "imageHeight": 784
   },
   {
+    "path": "/content/guides/rattlesnake-legal-guide.mdx",
+    "slug": "rattlesnake-legal-guide",
+    "title": "Are Rattlesnakes Legal? A Native Snake Answered Twice",
+    "seoTitle": "Are Rattlesnakes Legal? 17 Bans, 14 Permits, 14 Conditions",
+    "seoDescription": "Rattlesnake laws by state: 17 bans, 14 permit states, 14 conditional. Why native-take rules change the answer in Texas, California, Arizona, Georgia, Florida.",
+    "lastUpdated": "2026-10-16",
+    "noIndex": false,
+    "excerpt": "No animal on the map has a more varied row than the rattlesnake: 17 bans, 14 permits, 14 conditions, one unclear, one restricted and five states with no rule. The venomous-reptile clause answers it once, and then the native-take rules answer it again, nearly everywhere, and usually differently.",
+    "date": "2026-10-16",
+    "category": "Legal",
+    "categories": [
+      "Legal",
+      "Reptiles"
+    ],
+    "tags": [
+      "Rattlesnake",
+      "Venomous Snakes",
+      "Legal",
+      "Exotic Pet Laws",
+      "Wildlife Law",
+      "Pet Ownership"
+    ],
+    "readTime": 10,
+    "difficulty": "Intermediate",
+    "image": "/assets/guides/rattlesnake-legal.jpg",
+    "imageAlt": "Timber rattlesnake coiled on fallen autumn leaves with its rattle raised",
+    "emoji": "🐍",
+    "lastReviewed": "2026-10-16",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Is it legal to own a rattlesnake?",
+        "a": "It depends on the state and on where the snake came from. Seventeen jurisdictions ban every rattlesnake, fourteen issue a permit, fourteen allow one on a condition that is usually about nativity or caging, Arizona restricts the whole viper family, Montana's rule is silent on its own species, and five states have no venomous snake rule at all. The condition states are the interesting ones: Texas lets a keeper hold twenty-five western diamondbacks with no permit, California allows two of a native species under its sport-take rules, and both bar a rattlesnake from outside the state."
+      },
+      {
+        "q": "Can you own a rattlesnake in Texas?",
+        "a": "A native one, yes, with no permit. The western diamondback, rock, blacktail, Mojave and prairie rattlesnakes are on the nongame list at 31 TAC 65.331(d), which lets a person hold up to 25 of each without a permit, captive-bred animals included. A rattlesnake not native to Texas is a nonindigenous venomous snake under Parks and Wildlife Code § 43.851 and needs a controlled exotic snake permit, which is available to private keepers for recreational purposes. Local ordinances were not checked."
+      },
+      {
+        "q": "Is a rattlesnake legal in Florida?",
+        "a": "Yes, with the venomous reptile permit, and the permit is demanding. 68A-6.017 requires an applicant of 18 with at least one year and 1,000 hours of documented experience with the species or its family, backed by two references, or a passed examination, and the facility is inspected before the snake arrives. The no-permit list at 68A-6.003(14)(a) clears only nonvenomous reptiles, so every rattlesnake, native or not, needs the permit."
+      },
+      {
+        "q": "Can you keep a rattlesnake in Arizona?",
+        "a": "Not under the restricted live wildlife rule. R12-4-406 names 'The family Viperidae. Common names include: pit and true vipers, including rattlesnakes' as restricted live wildlife, held only under a special license, and none of the exemptions is a pet route. Live take of native reptiles under a hunting license runs through separate rules and Commission Order 43, which were not read for the map, and an exemption there would be the only keeper's route for a native snake."
+      },
+      {
+        "q": "Is it legal to own a rattlesnake in Georgia?",
+        "a": "The rule says no. Georgia puts 'Family Viperidae (vipers and pit vipers) - All species' in the inherently dangerous tier, licensed only to dealers and exhibitors, so a rattlesnake from outside the state has no pet route. The DNR's pet guide adds that Georgia law allows the taking of certain native species, venomous snakes among them, because of their nuisance status; whether a timber, eastern diamondback or pygmy rattlesnake caught in Georgia may then be held is a question for the Special Permit Unit. The map records Georgia as banned."
+      },
+      {
+        "q": "Can you own a rattlesnake in California?",
+        "a": "A native one, within the limit. 14 CCR § 671(c)(7)(E) restricts 'Family Crotalidae-Pitvipers: All nonnative species', so a rattlesnake from outside the state is barred with no pet route. The seven natives are sport-take animals under § 5.60, which says 'No sportfishing license is required for the sport take of any rattlesnake, but bag and possession limits do apply.' Six species carry the default limit of two; the red diamond rattlesnake's limit is zero."
+      },
+      {
+        "q": "Is a hognose snake a venomous snake under these laws?",
+        "a": "Almost never. The hognose is a rear-fanged colubrid with a weak venom, and the states that thought about it carved it out: Alabama's and Kentucky's venomous bans both except the genus Heterodon by name. Everywhere else the venomous-reptile rule names Elapidae and Viperidae, or 'front-fanged' snakes, and the hognose is in neither."
+      },
+      {
+        "q": "Which states have no rattlesnake law at all?",
+        "a": "Pennsylvania, Wisconsin, Michigan, Virginia and South Dakota have no rule reaching a rattlesnake from outside the state, and in four of them the only regulated rattlesnake is their own: Pennsylvania's timber rattlesnake needs a Venomous Snake Permit, Virginia's is limited to one per address, and Wisconsin's timber rattlesnake and Michigan's massasauga are protected animals. South Dakota's bar is written for mammals and the state has no reptile rule."
+      }
+    ],
+    "relatedProducts": [],
+    "factFile": false,
+    "animalDay": null,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 5,
+    "headingCount": 9,
+    "ledeMatchesExcerpt": false,
+    "imageWidth": 1168,
+    "imageHeight": 784
+  },
+  {
     "path": "/content/guides/red-eared-slider-cost-guide.mdx",
     "slug": "red-eared-slider-cost-guide",
     "title": "How Much Does a Red-Eared Slider Really Cost?",
@@ -47492,6 +47802,83 @@
     "ledeMatchesExcerpt": false,
     "imageWidth": 1408,
     "imageHeight": 768
+  },
+  {
+    "path": "/content/guides/tiger-legal-guide.mdx",
+    "slug": "tiger-legal-guide",
+    "title": "Are Tigers Legal? The State Rules Under a Federal No",
+    "seoTitle": "Are Tigers Legal? 36 Bans, 10 Permit States, by State",
+    "seoDescription": "Tiger laws by state: 36 bans, 10 permit states, 5 with no rule, all under the Big Cat Public Safety Act. Texas's certificate, ligers, Kansas's bond and more.",
+    "lastUpdated": "2026-10-16",
+    "noIndex": false,
+    "excerpt": "Since 20 December 2022 no private person may breed or possess a tiger anywhere in the United States, and the only private tigers left are the ones registered with the Fish and Wildlife Service by 18 June 2023. The state table still matters, because it sets the terms those animals live under, and because Texas, Montana and eight other states never repealed the permits they wrote.",
+    "date": "2026-10-16",
+    "category": "Legal",
+    "categories": [
+      "Legal",
+      "Cats"
+    ],
+    "tags": [
+      "Tiger",
+      "Big Cats",
+      "Legal",
+      "Exotic Pet Laws",
+      "Wildlife Law",
+      "Pet Ownership"
+    ],
+    "readTime": 10,
+    "difficulty": "Intermediate",
+    "image": "/assets/guides/tiger-legal.jpg",
+    "imageAlt": "Tiger walking toward the camera along a shallow forest stream with its stripes reflected in the water",
+    "emoji": "🐅",
+    "lastReviewed": "2026-10-16",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Can you own a tiger in Texas?",
+        "a": "Under state law, yes, with paperwork; under federal law, only if you already did. Health and Safety Code § 822.101(4) names the tiger at clause (B), so § 822.103 requires a certificate of registration from the local animal control office or the sheriff, § 822.107 requires liability insurance of at least $100,000 per occurrence, and § 822.116(b) lets any city or county prohibit the animal outright. The Big Cat Public Safety Act then bars any private person from acquiring a tiger after 20 December 2022, so the Texas certificate now covers only animals registered with the Fish and Wildlife Service by 18 June 2023."
+      },
+      {
+        "q": "Is it legal to own a tiger in the United States?",
+        "a": "Not a new one. The Big Cat Public Safety Act amended the Lacey Act so that 16 U.S.C. 3372(e) makes it unlawful to breed or possess a tiger outside licensed exhibitors, sanctuaries, state institutions and veterinarians. A private owner could keep a tiger born before 20 December 2022 by registering it with the Fish and Wildlife Service within 180 days, and that window closed on 18 June 2023. Registered owners may not breed, acquire or sell a big cat or allow public contact with it. Under state law alone the tiger is banned in 36 jurisdictions, a permit animal in ten, restricted in one and unregulated in five."
+      },
+      {
+        "q": "Is it legal to own a tiger in Florida?",
+        "a": "No, and it has not been since 1980. 68A-6.002(1)(a) names 'Tigers (Panthera tigris)' at Class I item 11, and 68A-6.003(6) says 'Class I wildlife shall not be possessed for personal use', with one exception for an animal possessed for personal use on 1 August 1980. Class I animals may be held by licensed exhibitors and dealers under § 379.3761, F.S., not as pets."
+      },
+      {
+        "q": "Is a liger or a tigon legal?",
+        "a": "It gets the tiger's answer. The federal Act reaches any hybrid of its listed species, and the state rules that name the tiger mostly name its hybrids too: Texas closes its list with 'any hybrid of an animal listed in this subdivision', Idaho lists 'All tigers and tiger-hybrids', Michigan's definition includes 'a hybrid cross with such a cat', Kansas reaches 'any hybrid thereof', Utah bars 'any hybrid of these species', and North Dakota's category 3 covers the big cats 'and their hybrids'. A liger is a lion-tiger hybrid on every one of those lists."
+      },
+      {
+        "q": "Can you own a tiger in Michigan?",
+        "a": "Only an animal owned in 2000. The Large Carnivore Act names the tiger among its large carnivores, and MCL 287.1104(1) lets a person possess one only if they owned that individual animal on the act's effective date in 2000 and applied for a local permit within 90 days. The permit covers only those animals and passes on only by will or descent, so no new tiger has been lawful in Michigan for a quarter century."
+      },
+      {
+        "q": "What does a registered tiger owner in Kansas have to carry?",
+        "a": "$250,000 of insurance or a bond. K.S.A. 32-1301 makes the tiger a dangerous regulated animal, no one may take possession of one since 1 July 2006 except a USDA licensee keeping up its inventory, and an animal held on that date stays only if it was registered with the local animal control authority, caged to K.S.A. 32-1306, not bred, and covered by liability insurance or a bond 'of not less than $250,000 for each occurrence'. The federal registration sits on top of that."
+      },
+      {
+        "q": "Does the Big Cat Public Safety Act cover servals and bobcats?",
+        "a": "No. The prohibited wildlife species are the lion, tiger, leopard, snow leopard, clouded leopard, jaguar, cheetah and cougar, with their hybrids. A serval, caracal, bobcat, lynx or ocelot is outside the Act and is decided entirely by state law, which is why Texas's certificate can still be used for a serval and cannot for a tiger."
+      },
+      {
+        "q": "Which states have no tiger law?",
+        "a": "Five: Wisconsin, Nevada, Alabama, Oklahoma and North Carolina. Wisconsin frees every nonnative wild animal that is not harmful, and the only cat it designates harmful is the cougar; Nevada clears 'All felines, except mountain lions and bobcats'; Alabama's restricted list names only its own black bear, mountain lion and bobcat; Oklahoma exempts 'Cats (except native cats and bears)'; North Carolina hands the question to counties. In all five the federal Act is the whole answer."
+      }
+    ],
+    "relatedProducts": [],
+    "factFile": false,
+    "animalDay": null,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 5,
+    "headingCount": 10,
+    "ledeMatchesExcerpt": false,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/tiger-salamander-cost-guide.mdx",

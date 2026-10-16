@@ -40,6 +40,16 @@
     "excerpt": "The coati shares the kinkajou's map almost line for line, with three differences that come from being named. Oklahoma's exemption list and Nebraska's import list carry the word 'coatimundi' and..."
   },
   {
+    "slug": "cobra-legal-guide",
+    "title": "Are Cobras Legal? The Exotic Venomous Answer, State by State",
+    "excerpt": "A cobra is the cleanest venomous-snake question on the map, because no state has a native one. There is no hunting season to carve it out and no sport-take limit to let it in: 26 jurisdictions ban..."
+  },
+  {
+    "slug": "cougar-legal-guide",
+    "title": "Are Cougars Legal? The Native Cat the Big Cat Act Reached",
+    "excerpt": "The cougar is the only animal on the Big Cat Public Safety Act's list that is also native to the United States, so it is caught twice: once by the federal Act and every exotic cat clause written for..."
+  },
+  {
     "slug": "emperor-scorpion-legal-guide",
     "title": "Are Emperor Scorpions Legal? Ten Places Restrict Them",
     "excerpt": "Montana clears the emperor scorpion by name while banning every pet tarantula. Maine does the reverse. The one rule that follows this species everywhere is federal and it is about export paperwork..."
@@ -63,6 +73,11 @@
     "slug": "kinkajou-legal-guide",
     "title": "Are Kinkajous Legal? The Procyonid the Law Reaches by Family",
     "excerpt": "Almost no statute names the kinkajou. The law reaches it through the raccoon's family, Procyonidae, or through the whole order Carnivora, and where a list stops at the word raccoon the kinkajou walks..."
+  },
+  {
+    "slug": "lion-legal-guide",
+    "title": "Are Lions Legal? The Tiger's Answer, Split by Subspecies",
+    "excerpt": "The lion gets the tiger's answer in 51 of 52 jurisdictions, and the one exception is a federal listing split down the middle. 50 CFR 17.11 lists one lion subspecies as endangered and the other as..."
   },
   {
     "slug": "madagascar-hissing-cockroach-legal-guide",
@@ -115,6 +130,11 @@
     "excerpt": "Fourteen states ban the quaker parrot, more than any other bird we have mapped, and not one of them does it because the bird is dangerous. Kansas puts it on a list with silver carp and zebra mussels."
   },
   {
+    "slug": "rattlesnake-legal-guide",
+    "title": "Are Rattlesnakes Legal? A Native Snake Answered Twice",
+    "excerpt": "No animal on the map has a more varied row than the rattlesnake: 17 bans, 14 permits, 14 conditions, one unclear, one restricted and five states with no rule. The venomous-reptile clause answers it..."
+  },
+  {
     "slug": "red-fox-legal-guide",
     "title": "Are Red Foxes Legal? Where a Pet Fox Is a Fur-Farm Animal",
     "excerpt": "The red fox is native to nearly every state, so the law that answers a pet fox is almost never an exotic pet law. It is a furbearer chapter or a rabies statute, and the route it offers is a fur-farm..."
@@ -163,6 +183,11 @@
     "slug": "tarantula-legal-guide",
     "title": "Are Tarantulas Legal? The Species Question Most States Never Ask",
     "excerpt": "Most states have no tarantula rule at all, because their wildlife laws stop at vertebrates. The places that do regulate one almost never mention spiders by name, and Maine clears exactly three..."
+  },
+  {
+    "slug": "tiger-legal-guide",
+    "title": "Are Tigers Legal? The State Rules Under a Federal No",
+    "excerpt": "Since 20 December 2022 no private person may breed or possess a tiger anywhere in the United States, and the only private tigers left are the ones registered with the Fish and Wildlife Service by 18..."
   },
   {
     "slug": "veiled-chameleon-legal-guide",
@@ -337,7 +362,7 @@
   {
     "slug": "sugar-glider-legal-guide",
     "title": "Is It Legal to Own a Sugar Glider? State-by-State Guide",
-    "excerpt": "Sugar gliders are banned in California, Alaska, Hawaii and Pennsylvania, plus the District of Columbia and New York City. Everywhere else they're generally legal, despite what several popular blog..."
+    "excerpt": "Sugar gliders are banned in California, Alaska, Hawaii and Pennsylvania, plus the District of Columbia and New York City. New Jersey and New Mexico want a permit, Georgia wants proof of a..."
   },
   {
     "slug": "sulcata-tortoise-legal-guide",
