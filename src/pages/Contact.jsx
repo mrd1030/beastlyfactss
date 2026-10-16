@@ -134,7 +134,7 @@ export default function Contact() {
           </div>
           <div>
             <p className="font-body font-bold text-base text-foreground group-hover:text-secondary transition-colors">X</p>
-            <p className="text-sm text-muted-foreground font-body">@beastly_facts</p>
+            <p className="text-sm text-muted-foreground font-body">@Beastly_Facts</p>
             <p className="text-xs text-muted-foreground font-body mt-0.5">Animal facts & wildlife content</p>
           </div>
         </motion.a>
