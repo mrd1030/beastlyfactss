@@ -101,8 +101,9 @@ export default function HowGuidesAreMade() {
           <p>
             Every figure and every claim of fact in a draft is traced back to a specific page in a specific
             source before it ships, by me, with the source open. A claim I cannot find a source for is removed,
-            not softened. No source means no sentence. Every recommendation a guide makes is one I have read and
-            agreed with. The AI never publishes anything.
+            not softened. No source means no sentence. When good sources disagree on a number, the guide gives
+            the range rather than picking one. Every recommendation a guide makes is one I have read and agreed
+            with. The AI never publishes anything.
           </p>
         </Section>
 
@@ -193,8 +194,9 @@ export default function HowGuidesAreMade() {
         <Section title="Corrections" delay={0.45}>
           <p>
             Every substantive fix to a published page is logged here, newest first: what the page said, what it
-            says now, and when it changed. A substantive fix is one that changes what a reader would do. Typos
-            and rewording are not logged. Entries are never deleted.
+            says now, and when it changed. A substantive fix is one that changes what a reader would do: a
+            basking temperature that was wrong is logged, a sentence reworded to say the same thing is not.
+            Typos and link repairs are not logged. Entries are never deleted.
           </p>
           {CORRECTIONS.length === 0 ? (
             <p className="rounded-xl border border-dashed border-border bg-muted/40 px-4 py-3 text-foreground">
