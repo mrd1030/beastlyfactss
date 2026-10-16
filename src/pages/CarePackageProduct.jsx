@@ -17,6 +17,7 @@ const INSIDE_ICONS = {
   '🐭': Rat, '🐍': Layers, '🌿': Leaf, '🌡️': Thermometer, '✂️': Scissors, '⚖️': Scale, '📄': FileText,
 };
 import { CARE_PACKAGES } from '@/lib/data/carePackages';
+import { carePackagePending } from '@/lib/data/carePackagePending';
 import { getCarePackageCopy } from '@/lib/data/carePackageCopy';
 import { getCarePackageTheme, carePackageThemeCss } from '@/lib/data/carePackageThemes';
 import CarePackagesNav from '@/components/shared/CarePackagesNav';
@@ -117,6 +118,11 @@ export default function CarePackageProduct() {
     .sort((a, b) => Number(b.badge === pkg.badge) - Number(a.badge === pkg.badge))
     .slice(0, 3);
   const editionDate = formatEditionDate(pkg.versionDate, { year: 'numeric', month: 'long', day: 'numeric' });
+  // Known edits waiting for the next edition, and that edition's number: a
+  // minor bump of the current one, which is what every changed book gets
+  // (FIX_PACKAGES.md, section 1).
+  const pending = carePackagePending(pkg.id);
+  const nextEdition = (() => { const [a, b] = String(pkg.version).split('.'); return `${a}.${Number(b || 0) + 1}`; })();
   const editionShort = formatEditionDate(pkg.versionDate, { year: 'numeric', month: 'short' });
   const amount = pkg.price?.replace(/[^\d.]/g, '') || '';
   // Lowercased for running text, except a possessive proper name: White's
@@ -415,6 +421,27 @@ export default function CarePackageProduct() {
                   </li>
                 ))}
               </ul>
+              {/* COMING NEXT: settled site corrections the book does not carry
+                  yet (src/lib/data/carePackagePending.js). The books are
+                  rebuilt in rounds, so this is the honest gap between the site
+                  and the PDF, with the page each fix comes from. A buyer gets
+                  the new edition free from the library when it ships. */}
+              {pending.length > 0 && (
+                <div className="mt-8 rounded-2xl border border-dashed border-current/30 p-5">
+                  <h3 className="font-display font-bold text-lg tracking-tight mb-1">Coming in the next edition</h3>
+                  <p className="cp-muted text-sm mb-4">
+                    {`The site has been corrected on the points below and the book has not caught up yet. They ship together in edition ${nextEdition}, free to anyone who already bought this one.`}
+                  </p>
+                  <ul className="space-y-3 text-sm">
+                    {pending.map((e, i) => (
+                      <li key={i}>
+                        {`${e.text} `}
+                        <Link to={e.from} className="underline">{`From: ${e.fromLabel}`}</Link>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              )}
             </div>
           </section>
         )}
