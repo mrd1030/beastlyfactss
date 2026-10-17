@@ -1,10 +1,10 @@
 # Where are we
 
-Saved 2026-10-03 22:21
+Saved 2026-10-17 02:06
 
 ## Done
 
-- Merge claude/store-audit-fixes to main
+Nothing.
 
 ## In progress
 
@@ -12,8 +12,15 @@ Nothing.
 
 ## Up next
 
-Nothing.
+- Cost rows: ackie hides, garter hides, Jackson's bulb show no link
+- Link check: remaining 157 full-URL links
+- Look over Chronicles again
+- Owner: request recrawl of the non-cost pages
+- Oct 19: recheck title test (only pages Google showed)
+- Early Nov: recheck Maine species list (mammal, bird, herp)
+- Then: verdict titles for the 25 comparisons
+- Later: legal guide sources (55)
 
 ## Waiting on your OK
 
-- Upload the 20 PDFs to the Supabase bucket
+- Owner reviews the Dex Part 1 rewrite
