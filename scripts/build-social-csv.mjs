@@ -252,13 +252,16 @@ function validate(batch, file) {
 
 function toCsv(batch) {
   const lines = [COLS.join(',')];
+  let held = 0;
   for (const p of batch.posts) {
     const row = {
       'Date': p.date,
-      // A held wallpaper slot carries a lone "." (owner, 2026-10-17): Publer
-      // drops a row whose Text is literally empty, and the dot is replaced
-      // in the app when the images go in.
-      'Text': isPlaceholder(p) ? '.' : isWallpaper(p) ? '' : p.text,
+      // A held wallpaper slot carries its number, "1", "2", ... in batch order
+      // (owner, 2026-10-17): Publer drops a row whose Text is literally
+      // empty, and identical placeholder texts read as duplicates when the
+      // rows are set to draft. The number is replaced in the app when the
+      // images go in.
+      'Text': isPlaceholder(p) ? String(++held) : isWallpaper(p) ? '' : p.text,
       // Empty everywhere except pinterest, where it is the outbound link.
       'Link(s)': isPin(batch) ? p.link : '',
       'Media URL(s)': (p.media ?? []).join(','),
