@@ -1,0 +1,13 @@
+import sharp from 'sharp';
+import fs from 'fs';
+const [specPath, out, suffix='', cols='7', wStr='300'] = process.argv.slice(2);
+const specs = JSON.parse(fs.readFileSync(specPath,'utf8'));
+const w = Number(wStr); const c = Number(cols);
+const files = specs.map(s => `social-batches/pins/${s.out || ('question-'+s.question)}${suffix}.jpg`);
+const metas = await Promise.all(files.map(f => sharp(f).metadata()));
+const h = Math.round(w * metas[0].height / metas[0].width);
+const rows = Math.ceil(files.length / c);
+const tiles = await Promise.all(files.map(f => sharp(f).resize(w, h).toBuffer()));
+const comp = tiles.map((b,i) => ({ input: b, left: (i % c) * (w+8), top: Math.floor(i / c) * (h+8) }));
+await sharp({ create: { width: c*(w+8), height: rows*(h+8), channels: 3, background: '#fff' } }).composite(comp).jpeg({ quality: 80 }).toFile(out);
+console.log(out, c*(w+8), rows*(h+8));

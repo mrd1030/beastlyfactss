@@ -17,6 +17,9 @@
 //     "image": "public/assets/images/....jpg", -> source photo (any aspect)
 //     "kicker": "CARE GUIDE",                  -> small orange eyebrow line
 //     "title": "The Buy-Once Bearded Dragon Setup" }
+//   Add "fullWidth": true when the photo is a wide two-animal comparison:
+//   the photo keeps its full width (shorter) and the title centers in the
+//   taller cream band, instead of a crop that keeps the gap between them.
 //
 // Two text-forward layouts sit beside that photo card, for care content that
 // reads better as a reference than as a picture. Both shrink the photo to a
@@ -365,21 +368,33 @@ for (let spec of specs) {
   }
   const { size, lines } = layoutTitle(spec.title);
   const lineHeight = size * 1.18;
-  const titleTop = PHOTO_H + 150;
+  // "fullWidth": true keeps a wide photo whole instead of cropping its sides:
+  // the comparison images are two animals side by side, and the default
+  // crop keeps the gap between them. The photo takes its full-width height
+  // and the cream band grows to fill the rest, with the title centered in it.
+  let photoH = PHOTO_H;
+  if (spec.fullWidth) {
+    const meta = await sharp(spec.image).metadata();
+    photoH = Math.min(PHOTO_H, Math.round(W * meta.height / meta.width));
+  }
+  const blockH = 72 + lines.length * lineHeight;
+  const titleTop = spec.fullWidth
+    ? photoH + Math.max(150, Math.round((H - 120 - photoH - blockH) / 2) + 72)
+    : photoH + 150;
   const titleSvg = lines
     .map((l, i) => `<text x="80" y="${titleTop + i * lineHeight}" font-family="Schibsted-Bold" font-size="${size}" fill="${INK}">${esc(l)}</text>`)
     .join('\n');
 
   const svg = `<svg width="${W}" height="${H}" xmlns="http://www.w3.org/2000/svg">
-    <rect x="0" y="${PHOTO_H}" width="${W}" height="${H - PHOTO_H}" fill="${CREAM}"/>
-    <rect x="0" y="${PHOTO_H}" width="${W}" height="14" fill="${ORANGE}"/>
-    <text x="80" y="${PHOTO_H + 78}" font-family="Atkinson-Bold" font-size="30" letter-spacing="6" fill="${ORANGE}">${esc(spec.kicker.toUpperCase())}</text>
+    <rect x="0" y="${photoH}" width="${W}" height="${H - photoH}" fill="${CREAM}"/>
+    <rect x="0" y="${photoH}" width="${W}" height="14" fill="${ORANGE}"/>
+    <text x="80" y="${titleTop - 72}" font-family="Atkinson-Bold" font-size="30" letter-spacing="6" fill="${ORANGE}">${esc(spec.kicker.toUpperCase())}</text>
     ${titleSvg}
     ${aiTag(spec)}
     <text x="80" y="${H - 62}" font-family="Atkinson-Bold" font-size="34" fill="${ORANGE}">BeastlyFacts.com</text>
   </svg>`;
 
-  const photo = await crop(spec, PHOTO_H);
+  const photo = await crop(spec, photoH);
 
   await sharp({ create: { width: W, height: H, channels: 3, background: CREAM } })
     .composite([
