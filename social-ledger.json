@@ -620,6 +620,62 @@
       {
         "id": 105,
         "date": "2026-10-10"
+      },
+      {
+        "id": 347,
+        "date": "2026-10-17"
+      },
+      {
+        "id": 201,
+        "date": "2026-10-17"
+      },
+      {
+        "id": 329,
+        "date": "2026-10-18"
+      },
+      {
+        "id": 285,
+        "date": "2026-10-18"
+      },
+      {
+        "id": 332,
+        "date": "2026-10-19"
+      },
+      {
+        "id": 264,
+        "date": "2026-10-19"
+      },
+      {
+        "id": 195,
+        "date": "2026-10-20"
+      },
+      {
+        "id": 338,
+        "date": "2026-10-20"
+      },
+      {
+        "id": 261,
+        "date": "2026-10-21"
+      },
+      {
+        "id": 343,
+        "date": "2026-10-21"
+      },
+      {
+        "id": 306,
+        "date": "2026-10-22"
+      },
+      {
+        "id": 333,
+        "date": "2026-10-22"
+      },
+      {
+        "id": 268,
+        "date": "2026-10-23"
+      },
+      {
+        "id": 346,
+        "date": "2026-10-23"
       }
     ],
     "articles": [
@@ -904,7 +960,7 @@
         "date": "2026-10-10"
       }
     ],
-    "nextStart": "2026-10-17"
+    "nextStart": "2026-10-24"
   },
   "ig": {
     "facts": [
@@ -1103,6 +1159,18 @@
       {
         "id": 294,
         "date": "2026-10-16"
+      },
+      {
+        "id": 347,
+        "date": "2026-10-17"
+      },
+      {
+        "id": 332,
+        "date": "2026-10-18"
+      },
+      {
+        "id": 329,
+        "date": "2026-10-21"
       }
     ],
     "articles": [
@@ -1665,9 +1733,57 @@
       {
         "file": "content/guides/praying-mantis-feeding-guide.mdx",
         "date": "2026-10-16"
+      },
+      {
+        "file": "content/guides/hognose-snake-handling-guide.mdx",
+        "date": "2026-10-19"
+      },
+      {
+        "file": "content/guides/hognose-snake-tank-setup-guide.mdx",
+        "date": "2026-10-19"
+      },
+      {
+        "file": "content/guides/hognose-snake-feeding-guide.mdx",
+        "date": "2026-10-19"
+      },
+      {
+        "file": "content/guides/hognose-snake-health-issues-guide.mdx",
+        "date": "2026-10-19"
+      },
+      {
+        "file": "content/guides/hognose-snake-enrichment-guide.mdx",
+        "date": "2026-10-19"
+      },
+      {
+        "file": "content/guides/hognose-snake-cost-guide.mdx",
+        "date": "2026-10-19"
+      },
+      {
+        "file": "content/guides/jumping-spider-enrichment-guide.mdx",
+        "date": "2026-10-23"
+      },
+      {
+        "file": "content/guides/jumping-spider-handling-guide.mdx",
+        "date": "2026-10-23"
+      },
+      {
+        "file": "content/guides/jumping-spider-tank-setup-guide.mdx",
+        "date": "2026-10-23"
+      },
+      {
+        "file": "content/guides/jumping-spider-feeding-guide.mdx",
+        "date": "2026-10-23"
+      },
+      {
+        "file": "content/guides/jumping-spider-health-issues-guide.mdx",
+        "date": "2026-10-23"
+      },
+      {
+        "file": "content/guides/jumping-spider-cost-guide.mdx",
+        "date": "2026-10-23"
       }
     ],
-    "nextStart": "2026-10-17"
+    "nextStart": "2026-10-24"
   },
   "threads": {
     "facts": [
@@ -2126,6 +2242,34 @@
       {
         "id": 105,
         "date": "2026-10-11"
+      },
+      {
+        "id": 347,
+        "date": "2026-10-17"
+      },
+      {
+        "id": 285,
+        "date": "2026-10-18"
+      },
+      {
+        "id": 264,
+        "date": "2026-10-19"
+      },
+      {
+        "id": 195,
+        "date": "2026-10-20"
+      },
+      {
+        "id": 261,
+        "date": "2026-10-21"
+      },
+      {
+        "id": 306,
+        "date": "2026-10-22"
+      },
+      {
+        "id": 268,
+        "date": "2026-10-23"
       }
     ],
     "articles": [
@@ -2334,7 +2478,7 @@
         "date": "2026-10-10"
       }
     ],
-    "nextStart": "2026-10-17"
+    "nextStart": "2026-10-24"
   },
   "pinterest": {
     "facts": [
@@ -2477,6 +2621,34 @@
       {
         "id": 248,
         "date": "2026-10-16"
+      },
+      {
+        "id": 94,
+        "date": "2026-10-17"
+      },
+      {
+        "id": 95,
+        "date": "2026-10-18"
+      },
+      {
+        "id": 329,
+        "date": "2026-10-19"
+      },
+      {
+        "id": 333,
+        "date": "2026-10-20"
+      },
+      {
+        "id": 90,
+        "date": "2026-10-21"
+      },
+      {
+        "id": 69,
+        "date": "2026-10-22"
+      },
+      {
+        "id": 91,
+        "date": "2026-10-23"
       }
     ],
     "articles": [
@@ -2675,8 +2847,93 @@
       {
         "file": "content/fun-facts/10-surprising-cockatoo-facts.mdx",
         "date": "2026-10-16"
+      },
+      {
+        "file": "content/guides/ferret-tank-setup-guide.mdx",
+        "date": "2026-10-17"
+      },
+      {
+        "file": "content/guides/blue-tongue-skink-legal-guide.mdx",
+        "date": "2026-10-17"
+      },
+      {
+        "file": "content/fun-facts/10-surprising-hedgehog-facts.mdx",
+        "date": "2026-10-17"
+      },
+      {
+        "file": "content/guides/tiger-salamander-tank-setup-guide.mdx",
+        "date": "2026-10-18"
+      },
+      {
+        "file": "content/guides/golden-retriever-vs-german-shepherd-guide.mdx",
+        "date": "2026-10-18"
+      },
+      {
+        "file": "content/guides/russian-tortoise-cost-guide.mdx",
+        "date": "2026-10-18"
+      },
+      {
+        "file": "content/guides/betta-fish-enrichment-guide.mdx",
+        "date": "2026-10-19"
+      },
+      {
+        "file": "content/guides/arctic-fox-legal-guide.mdx",
+        "date": "2026-10-19"
+      },
+      {
+        "file": "content/fun-facts/10-surprising-ball-python-facts.mdx",
+        "date": "2026-10-19"
+      },
+      {
+        "file": "content/guides/cherry-shrimp-feeding-guide.mdx",
+        "date": "2026-10-20"
+      },
+      {
+        "file": "content/guides/koi-vs-goldfish-guide.mdx",
+        "date": "2026-10-20"
+      },
+      {
+        "file": "content/guides/corydoras-catfish-cost-guide.mdx",
+        "date": "2026-10-20"
+      },
+      {
+        "file": "content/guides/cardinal-tetra-enrichment-guide.mdx",
+        "date": "2026-10-21"
+      },
+      {
+        "file": "content/guides/bobcat-legal-guide.mdx",
+        "date": "2026-10-21"
+      },
+      {
+        "file": "content/fun-facts/10-surprising-tarantula-facts.mdx",
+        "date": "2026-10-21"
+      },
+      {
+        "file": "content/guides/degu-feeding-guide.mdx",
+        "date": "2026-10-22"
+      },
+      {
+        "file": "content/guides/lovebird-vs-budgie-guide.mdx",
+        "date": "2026-10-22"
+      },
+      {
+        "file": "content/guides/axolotl-cost-guide.mdx",
+        "date": "2026-10-22"
+      },
+      {
+        "file": "content/guides/box-turtle-feeding-guide.mdx",
+        "date": "2026-10-23"
+      },
+      {
+        "file": "content/guides/gerbil-vs-hamster-guide.mdx",
+        "date": "2026-10-23"
+      },
+      {
+        "file": "content/fun-facts/10-surprising-hermit-crab-facts.mdx",
+        "date": "2026-10-23"
       }
     ],
-    "nextStart": "2026-10-17"
-  }
+    "nextStart": "2026-10-24"
+  },
+  "wallpapers": []
 }
