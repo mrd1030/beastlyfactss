@@ -361,6 +361,19 @@
       "animalDay": null
     },
     {
+      "slug": "american-alligator-legal-guide",
+      "title": "Are Alligators Legal? 30 Bans, 9 Permit States, by State",
+      "excerpt": "The American alligator is a native game animal in the states where it lives and a dangerous exotic everywhere else, and",
+      "date": "2026-10-17",
+      "image": "/assets/guides/american-alligator-legal.jpg",
+      "category": "Legal",
+      "categories": [
+        "Legal",
+        "Reptiles"
+      ],
+      "animalDay": null
+    },
+    {
       "slug": "amphibian-quarantine-and-water-guide",
       "title": "Amphibian Quarantine and Water Hardness Guide",
       "excerpt": "A new amphibian needs a container instead of a net, a temperature match before a chemistry match, and weeks of",
@@ -1860,6 +1873,19 @@
       "category": "Legal",
       "categories": [
         "Legal"
+      ],
+      "animalDay": null
+    },
+    {
+      "slug": "caiman-legal-guide",
+      "title": "Are Caimans Legal? 25 Bans, 7 Permit States, by State",
+      "excerpt": "A spectacled caiman is an exotic everywhere in the United States, so it gets the dangerous-animal answer and never the",
+      "date": "2026-10-17",
+      "image": "/assets/guides/caiman-legal.jpg",
+      "category": "Legal",
+      "categories": [
+        "Legal",
+        "Reptiles"
       ],
       "animalDay": null
     },
@@ -4364,6 +4390,19 @@
       "category": "Legal",
       "categories": [
         "Legal"
+      ],
+      "animalDay": null
+    },
+    {
+      "slug": "green-anaconda-legal-guide",
+      "title": "Are Green Anacondas Legal? 11 Bans, 10 Permits by State",
+      "excerpt": "The green anaconda was listed as federal injurious wildlife in 2015, three years after its yellow cousin, and most",
+      "date": "2026-10-17",
+      "image": "/assets/guides/green-anaconda-legal.jpg",
+      "category": "Legal",
+      "categories": [
+        "Legal",
+        "Reptiles"
       ],
       "animalDay": null
     },
@@ -7520,6 +7559,19 @@
       "categories": [
         "Reptiles",
         "Turtles & Tortoises"
+      ],
+      "animalDay": null
+    },
+    {
+      "slug": "reticulated-python-legal-guide",
+      "title": "Are Reticulated Pythons Legal? 11 Bans, 10 Permits by State",
+      "excerpt": "The reticulated python has been federal injurious wildlife since 2015, and that listing bars import and little else.",
+      "date": "2026-10-17",
+      "image": "/assets/guides/reticulated-python-legal.jpg",
+      "category": "Legal",
+      "categories": [
+        "Legal",
+        "Reptiles"
       ],
       "animalDay": null
     },

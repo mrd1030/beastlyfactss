@@ -2062,6 +2062,84 @@
     "imageHeight": 784
   },
   {
+    "path": "/content/guides/american-alligator-legal-guide.mdx",
+    "slug": "american-alligator-legal-guide",
+    "title": "Are Alligators Legal? A Native Reptile Under Game Law",
+    "seoTitle": "Are Alligators Legal? 30 Bans, 9 Permit States, by State",
+    "seoDescription": "Alligator laws by state: 30 bans, 9 permit states, 5 unclear. Florida's Class II permit, Louisiana's farmers, Texas's proclamation, Wyoming's federal-list ban.",
+    "lastUpdated": "2026-10-17",
+    "noIndex": false,
+    "excerpt": "The American alligator is a native game animal in the states where it lives and a dangerous exotic everywhere else, and both kinds of law reach it. The result is 30 bans, nine permits that are mostly for farmers and exhibitors, five states whose text will not decide, and a federal threatened listing that exists only because the alligator looks like a crocodile.",
+    "date": "2026-10-17",
+    "category": "Legal",
+    "categories": [
+      "Legal",
+      "Reptiles"
+    ],
+    "tags": [
+      "American Alligator",
+      "Alligator",
+      "Crocodilians",
+      "Legal",
+      "Exotic Pet Laws",
+      "Wildlife Law",
+      "Pet Ownership"
+    ],
+    "readTime": 12,
+    "difficulty": "Intermediate",
+    "image": "/assets/guides/american-alligator-legal.jpg",
+    "imageAlt": "American alligator resting on a muddy riverbank with its jaws closed and its back ridged in the sun",
+    "emoji": "🐊",
+    "lastReviewed": "2026-10-17",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Is it legal to own a pet alligator?",
+        "a": "In most of the country, no. Thirty jurisdictions ban the American alligator, nine issue a permit of some kind, and most of those permits are written for farmers, exhibitors, researchers and educators rather than keepers. Missouri registers one over eight feet with county law enforcement, Arizona restricts the whole crocodilian order, five states have text that will not decide, and six have no rule reaching it: Pennsylvania, Michigan, Minnesota, Kansas, Alaska and South Dakota. Local ordinances were not checked anywhere."
+      },
+      {
+        "q": "Can you own a pet alligator in Florida?",
+        "a": "On the text, with a Class II permit. 68A-25.002(1) bars possessing any American alligator 'except under permit from the executive director', and the captive wildlife rule puts 'Alligators, caimans (family Alligatoridae)' in Class II, whose Permit to Possess Class II Wildlife for Personal Use costs $140 a year and requires documented experience and caging. The alligator rule's own exceptions are for exhibitors and licensed sellers, so whether the Commission issues the personal permit for a native alligator rather than steering keepers to exhibitor licensing is worth confirming with the agency."
+      },
+      {
+        "q": "Is it legal to own an alligator in Texas?",
+        "a": "No. The alligator has its own chapter in Texas, and 31 TAC § 65.353(b) says that except as the subchapter or Parks and Wildlife Code Chapter 43, Subchapter C provides, 'no person may possess a live alligator'. The subchapter's permits are for alligator farmers, dealers and nuisance control hunters, and Subchapter C covers scientific research, zoological collection, rehabilitation and educational display. There is no pet route."
+      },
+      {
+        "q": "Can you own an alligator in Louisiana?",
+        "a": "Not as a pet. LAC 76:V.701 says 'No person other than a licensed alligator farmer or licensed nongame quadruped exhibitor shall possess live alligators', and the only other routes are department permits for displays, education and scientific work. Farming and exhibiting are business licenses, and a live alligator brought in from out of state needs written permission as well."
+      },
+      {
+        "q": "Is the American alligator an endangered species?",
+        "a": "No, and it has not been since 1987. It is listed in 50 CFR 17.11 as threatened 'due to similarity of appearance', because a live alligator or its hide is hard to tell from a protected crocodile or caiman, and the listing exists to keep the trade in those species honest. The practical effect is that any state whose rule points at the federal list catches the alligator: Wyoming refuses a permit for anything in 17.11, Nebraska treats every federally threatened species as threatened in the state, and North Carolina counts a federally listed reptile as a wild animal."
+      },
+      {
+        "q": "Why is an alligator banned in Alabama, where alligators live?",
+        "a": "Because Alabama designates it a game animal. Rule 220-2-.06 lists 'Alligator' among the animals 'hereby designated as game animals', and 220-2-.26(3) makes it unlawful to possess any live protected wild animal except under a permit issued before that amendment. The same reading bars a live black bear or raccoon there, and the alligator hunting season is the only lawful way to take one."
+      },
+      {
+        "q": "Can you own an alligator in Indiana?",
+        "a": "Yes, with a Class III permit once it reaches five feet. 312 IAC 9-11-8(a)(5) lists 'Crocodilians that are at least five (5) feet long' as Class III wild animals, so a smaller alligator needs no permit and a larger one needs a permit obtained before taking possession, with a recapture plan and a cage inspection. Indiana is the one state on the map that measures a crocodilian."
+      },
+      {
+        "q": "Which states have no alligator law?",
+        "a": "Six, on the text read for the map: Pennsylvania, Michigan, Minnesota, Kansas, Alaska and South Dakota. Alaska's clean list clears 'Any nonvenomous reptile' and names 'crocodile, alligator' in its own gloss, Kansas clears exotic wildlife legally obtained where it came from, Minnesota protects turtles, snakes and lizards and not crocodilians, and the other three have no text reaching a nonvenomous exotic reptile. Local ordinances were not checked in any of them."
+      }
+    ],
+    "relatedProducts": [],
+    "factFile": false,
+    "animalDay": null,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 6,
+    "headingCount": 9,
+    "ledeMatchesExcerpt": false,
+    "imageWidth": 1168,
+    "imageHeight": 784
+  },
+  {
     "path": "/content/guides/amphibian-quarantine-and-water-guide.mdx",
     "slug": "amphibian-quarantine-and-water-guide",
     "title": "Amphibian Quarantine, Acclimation, and Water Hardness: The Full Guide",
@@ -10522,6 +10600,84 @@
     "imageHeight": 784
   },
   {
+    "path": "/content/guides/caiman-legal-guide.mdx",
+    "slug": "caiman-legal-guide",
+    "title": "Are Caimans Legal? The Exotic Crocodilian, State by State",
+    "seoTitle": "Are Caimans Legal? 25 Bans, 7 Permit States, by State",
+    "seoDescription": "Caiman laws by state: 25 bans, 7 permit states, 14 with no rule. Where 'alligator' leaves the caiman out, Delaware's 903 list, Texas, the 50 CFR 17.11 listing.",
+    "lastUpdated": "2026-10-17",
+    "noIndex": false,
+    "excerpt": "A spectacled caiman is an exotic everywhere in the United States, so it gets the dangerous-animal answer and never the game-code one. That makes its row simpler than the alligator's and, in fourteen jurisdictions, more generous: 25 bans, seven permits, four states that cannot decide, and a federal threatened listing that exists because the caiman looks like something rarer.",
+    "date": "2026-10-17",
+    "category": "Legal",
+    "categories": [
+      "Legal",
+      "Reptiles"
+    ],
+    "tags": [
+      "Caiman",
+      "Spectacled Caiman",
+      "Crocodilians",
+      "Legal",
+      "Exotic Pet Laws",
+      "Wildlife Law",
+      "Pet Ownership"
+    ],
+    "readTime": 12,
+    "difficulty": "Intermediate",
+    "image": "/assets/guides/caiman-legal.jpg",
+    "imageAlt": "Spectacled caiman floating at the edge of a pond with only its eyes, bony brow ridge and snout above the water",
+    "emoji": "🐊",
+    "lastReviewed": "2026-10-17",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Is it legal to own a caiman?",
+        "a": "In 25 jurisdictions, no. Seven issue a permit, Missouri registers one over eight feet with county law enforcement, Arizona restricts the whole crocodilian order, four states have text that will not decide, and 14 have no rule reaching a caiman at all: Pennsylvania, Wisconsin, Colorado, Texas, Michigan, Minnesota, Tennessee, Kansas, South Carolina, Alaska, South Dakota, Alabama, Mississippi and Oklahoma. Local ordinances were not checked anywhere, and a crocodilian is on more city codes than most animals."
+      },
+      {
+        "q": "Is a caiman legal in Texas?",
+        "a": "Under state law, yes. Texas's alligator chapter defines its subject as 'a living or dead American alligator (Alligator mississippiensis)' and nothing else, the dangerous wild animal list at Health and Safety Code § 822.101 names no reptile, and the controlled exotic snake permit covers snakes. A spectacled caiman is reached by none of them. Local ordinances were not checked."
+      },
+      {
+        "q": "Can you own a caiman in Florida?",
+        "a": "Yes, with a Class II permit. 68A-6.002 names 'Alligators, caimans (family Alligatoridae)' at Class II item 33, and only the black caiman is Class I. The Permit to Possess Class II Wildlife for Personal Use costs $140 a year and requires documented experience with the species and caging that meets 68A-6.010 and 68A-6.011."
+      },
+      {
+        "q": "Is a caiman legal in Ohio?",
+        "a": "Not a spectacled caiman. Ohio's dangerous wild animal list, R.C. 935.01(C)(17), takes in 'Caimans, excluding dwarf caimans', and since 1 January 2014 § 935.02(A) has barred possession of one unless it was registered in 2012 and permitted. Only a dwarf caiman of the genus Paleosuchus falls outside that entry."
+      },
+      {
+        "q": "Is the spectacled caiman an endangered species?",
+        "a": "No. 50 CFR 17.11 lists the common caiman, Caiman crocodilus crocodilus, as threatened 'due to similarity of appearance', with the brown caiman alongside and only the Apaporis River caiman as endangered. The listing exists to keep the trade in rarer crocodilians from passing as caiman, and it does not reach a captive animal on its own. It reaches one wherever a state rule points at the federal list: Wyoming refuses a permit for anything in 17.11, Nebraska treats every federally threatened species as threatened in the state, and North Carolina counts a federally listed reptile as a wild animal."
+      },
+      {
+        "q": "Does Delaware allow caimans?",
+        "a": "With an Individual Permit. Delaware's reptile class expressly includes crocodilians and exempts none, so a caiman needs the per-animal, three-year Individual Permit under 3 Del. Admin. Code 903, issued after the Department is satisfied with a sturdy, escape-proof primary enclosure inside a secondary one that keeps the public out. Caimans are named in the rules only at 7.5.2.10, which bars Sales Permit holders from breeding 'All members of the Crocodilian group: Alligators, Caimans, Crocodiles, and Gharials'."
+      },
+      {
+        "q": "Why is a caiman legal in Alabama when an alligator is not?",
+        "a": "Because Alabama's rules stop at the one species. The alligator is a game animal under rule 220-2-.06, and 220-2-.26(3) bars keeping game alive. A caiman is neither venomous, federally injurious nor native, which keeps it clear of every restricted entry in 220-2-.26(1), and no other Alabama rule read for the map applies."
+      },
+      {
+        "q": "Can you own a caiman in Colorado?",
+        "a": "Yes, with no license. Appendix A of Chapter W-7 clears 'Any species from the subfamily Caimaninae (caimans)' outright, in the block of species that are not native only to the tropics, so the 26-degree range test does not apply. The alligator is the opposite: CPW rules it 'Not an authorized species for private possession'."
+      }
+    ],
+    "relatedProducts": [],
+    "factFile": false,
+    "animalDay": null,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 5,
+    "headingCount": 9,
+    "ledeMatchesExcerpt": false,
+    "imageWidth": 1168,
+    "imageHeight": 784
+  },
+  {
     "path": "/content/guides/california-kingsnake-cost-guide.mdx",
     "slug": "california-kingsnake-cost-guide",
     "title": "How Much Does a California Kingsnake Really Cost?",
@@ -18876,7 +19032,7 @@
     "title": "The Pet Bans That Are Real, and the Ones That Aren't",
     "seoTitle": "Exotic Pet Laws Guide: Every Species We Cover",
     "seoDescription": "No federal law decides exotic pet ownership, states do. This hub indexes every species legal guide, plus a state-by-state map across 50 states, DC and NYC.",
-    "lastUpdated": "2026-10-16",
+    "lastUpdated": "2026-10-17",
     "noIndex": false,
     "excerpt": "No federal law actually decides whether you can own most exotic pets, states and cities do. Here's what federal law really controls, how state law actually works, and a direct index of every species-specific legal guide.",
     "date": "2026-07-17",
@@ -18896,7 +19052,7 @@
     "image": "/assets/guides/exotic-pet-legal-hub.jpg",
     "imageAlt": "Gavel beside a variety of exotic pets representing US exotic pet law",
     "emoji": "⚖️",
-    "lastReviewed": "2026-10-16",
+    "lastReviewed": "2026-10-17",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -24608,6 +24764,85 @@
     "myth": null,
     "truth": null,
     "sourceCount": 5,
+    "headingCount": 9,
+    "ledeMatchesExcerpt": false,
+    "imageWidth": 1168,
+    "imageHeight": 784
+  },
+  {
+    "path": "/content/guides/green-anaconda-legal-guide.mdx",
+    "slug": "green-anaconda-legal-guide",
+    "title": "Are Green Anacondas Legal? The Heaviest Snake, State by State",
+    "seoTitle": "Are Green Anacondas Legal? 11 Bans, 10 Permits by State",
+    "seoDescription": "Green anaconda laws by state: 11 bans, 10 permit states, 24 with no rule. The 2012 yellow and 2015 green listings, Ohio's 12-foot rule, Delaware's 5 feet.",
+    "lastUpdated": "2026-10-17",
+    "noIndex": false,
+    "excerpt": "The green anaconda was listed as federal injurious wildlife in 2015, three years after its yellow cousin, and most state rules that reach one reach the whole genus. The result is a row that matches the reticulated python's in fifty cells: 11 bans, 10 permits, four conditions, Arkansas's closed list, two states that cannot decide, and 24 jurisdictions with no rule for the heaviest snake in the world.",
+    "date": "2026-10-17",
+    "category": "Legal",
+    "categories": [
+      "Legal",
+      "Reptiles"
+    ],
+    "tags": [
+      "Green Anaconda",
+      "Anaconda",
+      "Giant Constrictors",
+      "Lacey Act",
+      "Legal",
+      "Exotic Pet Laws",
+      "Wildlife Law",
+      "Pet Ownership"
+    ],
+    "readTime": 12,
+    "difficulty": "Intermediate",
+    "image": "/assets/guides/green-anaconda-legal.jpg",
+    "imageAlt": "Green anaconda half submerged in dark swamp water with its head and olive back above the surface",
+    "emoji": "🐍",
+    "lastReviewed": "2026-10-17",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Is it legal to own a green anaconda?",
+        "a": "Federally, yes: the 2015 injurious wildlife listing bars importing one into the United States and shipping one to Hawaii or a territory, and since USARK v. Zinke in 2017 it does not bar movement between the continental states or touch ownership. Under state law 11 jurisdictions ban it, 10 issue a permit, Ohio, Missouri, North Carolina and Minnesota attach a condition, Arkansas will issue no new breeder or import permit for one, Colorado and Idaho cannot decide, and 24 jurisdictions have no rule reaching it."
+      },
+      {
+        "q": "Is a green anaconda legal in Texas?",
+        "a": "Yes, with a controlled exotic snake permit. Parks and Wildlife Code § 43.851(a)(2)(D) names 'green anaconda, Eunectes murinus' as one of six constrictors that need the permit, and the commission issues a recreational version to private keepers. Local ordinances were not checked."
+      },
+      {
+        "q": "Can you own an anaconda in Florida?",
+        "a": "Not a new one. 68-5.006(4)(k) names 'Green anaconda (Eunectes murinus)' on the prohibited nonnative list with the three other anacondas, and 68-5.007 lets only a person in lawful possession before the species was listed keep that animal for its life, PIT-tagged, with no further specimens. The yellow anaconda has been on Florida's lists even longer."
+      },
+      {
+        "q": "Is the yellow anaconda legal where the green anaconda is?",
+        "a": "Almost always, and the two federal listings do not change that. The yellow anaconda was listed injurious on 23 January 2012 with the Burmese python, and the green anaconda on 9 April 2015 with the reticulated python, so both are barred from import and from shipment to Hawaii. State rules mostly reach the genus: Maine, Massachusetts, Rhode Island, Vermont, New Mexico and Louisiana write 'Eunectes' or 'all species of Anaconda', New York and Connecticut name both species, and Iowa bars 'anacondas'. Montana names only the green."
+      },
+      {
+        "q": "What is Ohio's 12-foot rule for anacondas?",
+        "a": "R.C. 935.01(L)(1) lists the constrictors that become restricted snakes 'that are twelve feet or longer', and the green anaconda is first at (a). Under twelve feet nothing is required. At twelve feet the keeper needs a restricted snake possession permit, with insurance, experience and caging. Adult females routinely pass twelve feet, so the rule is a deadline rather than an exemption."
+      },
+      {
+        "q": "Can you own a green anaconda in Colorado?",
+        "a": "The rule does not say. Appendix A of Chapter W-7 clears Boidae, but only species 'native only to the tropical and subtropical region', which Chapter W-11 fixes at 26 degrees north to 26 degrees south. CPW has ruled the reticulated python inside that band and has not ruled on the green anaconda, whose range is centered on the Amazon and Orinoco basins. The map records Colorado as unclear until CPW rules, and CPW takes questions on unlisted species by email."
+      },
+      {
+        "q": "Is a green anaconda legal in Arkansas?",
+        "a": "Not a new one. Addendum R1.03 lists 'Anacondas (Genus Eunectes)' among the species the Commission will not issue breeding, sale or importation permits for, and unlike the large pythons the entry carries no asterisk keeping permits for earlier holders. Possession under Code 09.02 needs an animal from a permitted breeder or an importation permit, and neither can now be had for an anaconda, so the map records Arkansas as restricted."
+      },
+      {
+        "q": "Which states have no green anaconda law?",
+        "a": "Twenty-four jurisdictions: California, Georgia, Pennsylvania, the District of Columbia, Wisconsin, Arizona, Oregon, Washington, Michigan, Illinois, Nevada, Virginia, Maryland, Utah, Tennessee, Kentucky, New Hampshire, Kansas, South Carolina, Alaska, South Dakota, Indiana, Mississippi and Nebraska. Illinois requires an escape-proof enclosure for any boa, python or anaconda, and local ordinances were not checked anywhere."
+      }
+    ],
+    "relatedProducts": [],
+    "factFile": false,
+    "animalDay": null,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 6,
     "headingCount": 9,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
@@ -42270,6 +42505,84 @@
     "ledeMatchesExcerpt": false,
     "imageWidth": 1600,
     "imageHeight": 1067
+  },
+  {
+    "path": "/content/guides/reticulated-python-legal-guide.mdx",
+    "slug": "reticulated-python-legal-guide",
+    "title": "Are Reticulated Pythons Legal? The Longest Snake, State by State",
+    "seoTitle": "Are Reticulated Pythons Legal? 11 Bans, 10 Permits by State",
+    "seoDescription": "Reticulated python laws by state: 11 bans, 10 permit states, 25 with no rule. The 2015 injurious listing, Ohio's 12-foot line, Florida's history, Arkansas.",
+    "lastUpdated": "2026-10-17",
+    "noIndex": false,
+    "excerpt": "The reticulated python has been federal injurious wildlife since 2015, and that listing bars import and little else. The state map is where the answer lives: 11 bans, 10 permits, four conditions, Arkansas's closed breeder list, Idaho's undefined word, and 25 jurisdictions with no rule for the longest snake in the world.",
+    "date": "2026-10-17",
+    "category": "Legal",
+    "categories": [
+      "Legal",
+      "Reptiles"
+    ],
+    "tags": [
+      "Reticulated Python",
+      "Giant Constrictors",
+      "Lacey Act",
+      "Legal",
+      "Exotic Pet Laws",
+      "Wildlife Law",
+      "Pet Ownership"
+    ],
+    "readTime": 12,
+    "difficulty": "Intermediate",
+    "image": "/assets/guides/reticulated-python-legal.jpg",
+    "imageAlt": "Reticulated python resting along a mossy log in dense jungle with its net pattern catching the light",
+    "emoji": "🐍",
+    "lastReviewed": "2026-10-17",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Is it legal to own a reticulated python?",
+        "a": "Federally, yes: the 2015 injurious wildlife listing bars importing one into the United States and shipping one to Hawaii or a territory, and since USARK v. Zinke in 2017 it does not bar movement between the continental states or say anything about keeping one. Under state law 11 jurisdictions ban it, 10 issue a permit, Ohio, Missouri, North Carolina and Minnesota attach a condition, Arkansas allows one only from a pre-2020 permit holder, Idaho's rule will not decide, and 25 jurisdictions have no rule reaching it at all."
+      },
+      {
+        "q": "Is a reticulated python legal in Texas?",
+        "a": "Yes, with a controlled exotic snake permit. Parks and Wildlife Code § 43.851(a)(2)(E) names 'reticulated python, Python reticulatus' as one of six constrictors that need the permit, and subsection (b) has the commission establish separate recreational and commercial versions, so a private keeper has a route. The recreational permit runs 1 September to 31 August and local ordinances were not checked."
+      },
+      {
+        "q": "Can you own a reticulated python in Florida?",
+        "a": "Not a new one. 68-5.006(4)(f) names 'Reticulated python (Python reticulatus)' on the prohibited nonnative list, with the opening words reaching 'taxonomic successors, subspecies, or hybrids' so the move to Malayopython changes nothing. Before the 2021 rewrite it was a conditional species held under permit, closed to new personal possession since 2010; now 68-5.007 lets only a person in lawful possession before the listing keep that animal for its life, PIT-tagged, with no further specimens."
+      },
+      {
+        "q": "What is the 12-foot rule in Ohio?",
+        "a": "R.C. 935.01(L)(1) defines a restricted snake as any of a list of constrictors 'that are twelve feet or longer', and the reticulated python is at (c). Under twelve feet nothing is required. At twelve feet the keeper needs a restricted snake possession permit, with insurance, experience and caging to the rules. A reticulated python passes twelve feet routinely, so Ohio's rule is a deadline with a delayed start rather than an exemption."
+      },
+      {
+        "q": "Is a reticulated python legal in Iowa?",
+        "a": "No. Iowa's constrictor clause at § 717F.1(5)(a)(9)(e) is limited to three animals, 'reticulated pythons, anacondas, and African rock pythons', and the reticulated python is the first. § 717F.3 bars owning, possessing, breeding or bringing one into the state, and the only private route was the registration of animals already held on 1 July 2007. The Burmese python, not named, stays legal in Iowa."
+      },
+      {
+        "q": "Can you still get a reticulated python in Arkansas?",
+        "a": "Only from a permit holder who had one before 21 May 2020. Addendum R1.03 lists 'Large Asian and African Pythons: Reticulated, Burmese, and Rock Pythons' among the species the Commission will not issue breeding, sale or importation permits for, and its note keeps those permits only for permittees who held them before that date. Possession under Code 09.02 is still open, but the animal must come from such a holder."
+      },
+      {
+        "q": "Did the 2015 federal listing ban reticulated pythons?",
+        "a": "No. 18 U.S.C. § 42 bars importing a listed species into the United States and shipping it between the continental United States, Hawaii, the District of Columbia, Puerto Rico and the territories. It has never prohibited ownership, and the D.C. Circuit held in USARK v. Zinke in 2017 that it does not prohibit transport between the continental states either. A reticulated python already in the country can be kept, bred and sold where state law allows."
+      },
+      {
+        "q": "Which states have no reticulated python law?",
+        "a": "Twenty-five jurisdictions: California, Georgia, Pennsylvania, the District of Columbia, Wisconsin, Colorado, Arizona, Oregon, Washington, Michigan, Illinois, Nevada, Virginia, Maryland, Utah, Tennessee, Kentucky, New Hampshire, Kansas, South Carolina, Alaska, South Dakota, Indiana, Mississippi and Nebraska. Illinois caps that with an escape-proof enclosure requirement for any boa or python, and local ordinances were not checked anywhere."
+      }
+    ],
+    "relatedProducts": [],
+    "factFile": false,
+    "animalDay": null,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 6,
+    "headingCount": 10,
+    "ledeMatchesExcerpt": false,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/ring-tailed-lemur-legal-guide.mdx",
