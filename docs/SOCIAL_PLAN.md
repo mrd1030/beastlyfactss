@@ -56,19 +56,25 @@ repo.
 
 ## The wallpaper slot
 
-The wallpapers come from the owner's Beastly Walls app, not the repo. At
-Phase 1 of the X and Threads build the owner supplies the week's seven
-pairs: two files each and the two animals shown.
+The wallpapers come from the owner's Beastly Walls app, not the repo. With
+the Phase 1 approval of the X and Threads build the owner supplies the
+week's seven pairs: the two animals per night and the images, so the reply
+can be written from what the art shows.
 
-- Files: `social-batches/pins/wallpapers/YYYY-MM-DD-a.jpg` and
-  `-b.jpg`, uploaded in the same `scripts/upload-pins.mjs` run as the
-  cards, served at `https://pins.beastlyfacts.com/wallpapers/YYYY-MM-DD-a.jpg`
-  and `-b.jpg`.
-- The post is the two images side by side with no caption. The Publer CSV
-  builder takes it as `"type": "wallpaper"` with two media urls and no text.
+- The post is the two images side by side with no caption.
 - One self reply per pair, posted right after the wallpapers: a short fact
   tied to what the art shows (the pose, the setting, the animal's look),
-  sourced from the repo like any other fact.
+  sourced from the repo like any other fact. Threads and X get the same
+  fact in different words.
+- Posted by hand (owner, 2026-10-17): the owner uploads the wallpaper posts
+  and the Instagram wallpaper carousels to Publer themselves. The build
+  hands over a wallpaper sheet, one block per night with the date, the
+  Threads slot (9:30 PM), the X slot (10:00 PM), the two animals and both
+  replies, and the Instagram carousels written in full in that calendar.
+  No wallpaper file is uploaded from the repo and no wallpaper row goes in
+  a CSV. The pieces for the day that changes are still there: the file
+  convention `social-batches/pins/wallpapers/YYYY-MM-DD-a.jpg` and `-b.jpg`
+  uploaded with the cards, and the CSV builder's `"type": "wallpaper"` row.
 - The pair is logged once in `social-ledger.json` with
   `node scripts/social-inventory.mjs mark --wallpaper "Animal A,Animal B" --date YYYY-MM-DD`,
   which refuses an animal that ran in a wallpaper post within six days
@@ -122,4 +128,4 @@ Replies on our own posts:
 | Proposing, marking, the 14-unused flag, the wallpaper log | `scripts/social-inventory.mjs` (`questions`, `wallpapers`, `plan --questions-per-day`, `mark --question`, `mark --wallpaper`) |
 | Question card | `scripts/generate-pins.mjs` with a spec of `{ "question": <id> }` and `--4x5` |
 | Wallpaper and question CSV rows | `scripts/build-social-csv.mjs` (`"type": "wallpaper"`, `"type": "question"`), documented in `docs/PUBLER_CSV_HOWTO.md` |
-| Wallpaper upload | `scripts/upload-pins.mjs` with the batch JSON, reads the files from `social-batches/pins/wallpapers/` |
+| Wallpaper upload (not in use while the owner posts by hand) | `scripts/upload-pins.mjs` with the batch JSON, reads the files from `social-batches/pins/wallpapers/` |

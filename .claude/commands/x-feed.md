@@ -27,14 +27,16 @@ with the reply rules, is docs/SOCIAL_PLAN.md.
     4:30 PM   FACT CARD.
    10:00 PM   WALLPAPER PAIR. Two images from the owner's Beastly Walls app,
               side by side, no caption. The owner supplies the week's seven
-              pairs at Phase 1: two files each and the two animals shown.
-              Files go in social-batches/pins/wallpapers/YYYY-MM-DD-a.jpg
-              and -b.jpg and ride the same scripts/upload-pins.mjs run as
-              the cards, so the media urls are
-              https://pins.beastlyfacts.com/wallpapers/YYYY-MM-DD-a.jpg and
-              -b.jpg. One self reply per pair, posted right after: a short
+              pairs with the Phase 1 approval: the two animals per night and
+              the images, so the reply can be written from what the art
+              shows. One self reply per pair, posted right after: a short
               fact tied to what the art shows (the pose, the setting, the
               animal's look), sourced from the repo like any other fact.
+              POSTED BY HAND (owner, 2026-10-17): the owner uploads the
+              wallpaper posts to Publer themselves. Do not upload wallpaper
+              files and do not put wallpaper rows in the CSV. The hand-off
+              is the WALLPAPER SHEET (see Publer CSV below), one block per
+              night with the slot times and the reply to paste.
 - FACTS: two a day, 14 a week. Threads needs one a day; mirror picks where
   it makes sense, same fact in a different register, never the same copy.
 - QUESTIONS: one a day from social/questions.json, never one the bank marks
@@ -45,9 +47,10 @@ with the reply rules, is docs/SOCIAL_PLAN.md.
   refuses a repeat within six days either side. `plan` prints the animals
   used in the last week so the new pairs stay off them.
 - WEIRD FIRST at Phase 1: see the shortlist rule under PHASE 1.
-- CSV: the wallpaper row is `"type": "wallpaper"` with two media urls, no
-  text and the self reply in comments. The question row is `"type":
-  "question"` with the card as its one media url. See Publer CSV below.
+- CSV: the question row is `"type": "question"` with the card as its one
+  media url. Wallpapers stay out of the CSV (posted by hand); the builder's
+  `"type": "wallpaper"` row exists for the day that changes. See Publer CSV
+  below.
 
 CURRENT SCOPE (owner, 2026-10-10). This overrides everything below that
 assumes two tracks.
@@ -209,10 +212,11 @@ For each QUESTION pick, output exactly:
   HEADLINE:    "<headline field>"
   X TEXT:      "<x field, verbatim>"
 
-For each WALLPAPER day, output exactly (from what the owner supplied):
+For each WALLPAPER day, output exactly (from what the owner supplied, so at
+Phase 1 this block is usually "pending the owner's pairs" and fills in with
+the approval):
   DATE:     YYYY-MM-DD
   ANIMALS:  <animal a> + <animal b>
-  FILES:    wallpapers/YYYY-MM-DD-a.jpg, wallpapers/YYYY-MM-DD-b.jpg
   CLEAR:    yes, or the animal that already ran in a wallpaper this week
 
 For each ARTICLE pick, output exactly:
@@ -408,7 +412,7 @@ or WALLPAPER (ARTICLE only when the owner asks for the article track back).
   FIRST REPLY
   <one added detail, no url. A wallpaper: the short fact tied to the art>
 
-  IMAGE:        <resolved path, or the two wallpaper files>
+  IMAGE:        <resolved path; a wallpaper: the two animals, files are the owner's>
   WHY THIS ONE: <one sentence>
 
 ## Publer CSV
@@ -439,13 +443,10 @@ CSV columns (Publer's 12-column bulk template, do not remove or reorder any):
                 Link(s) column is what makes the image attach natively.
   Media URL(s)  the card, https://pins.beastlyfacts.com/<out>-4x5.jpg (see
                 IMAGES). upload-pins.mjs confirms it is live before the CSV
-                is built. A wallpaper row carries two urls,
-                https://pins.beastlyfacts.com/wallpapers/YYYY-MM-DD-a.jpg
-                and -b.jpg, and nothing in Text: in the batch JSON it is
-                { "type": "wallpaper", "date", "media": [a, b],
-                "comments": [the self reply] }. The builder refuses a
-                wallpaper row with a caption, with one image, or with the
-                files anywhere but wallpapers/.
+                is built. No wallpaper rows: the owner posts those by hand
+                (the builder's "type": "wallpaper" row, two urls under
+                wallpapers/ and no text, is there for the day that
+                changes).
   Comment(s)    the first reply, no url (2026-10-10 rule). For a thread, every post
                 after the first goes here too, joined by ||, e.g.
                 "second post||third post||fourth post". Each
@@ -460,6 +461,19 @@ After the CSV is imported AND the user has confirmed it actually scheduled
 correctly in Publer, not just generated:
     node scripts/social-inventory.mjs set-next-start --platform x --through <last day used>
 so the next batch picks up automatically without re-asking what day it is.
+
+## Wallpaper sheet
+Hand this over with the CSVs. The owner uploads the wallpaper posts by hand
+and pastes from here, so it is one block per night, nothing else in it:
+
+  DATE:       YYYY-MM-DD
+  X:          10:00 PM        THREADS: 9:30 PM
+  ANIMALS:    <animal a> + <animal b>
+  X REPLY:    <the short fact tied to the art, no url>
+  THREADS REPLY: <the same fact rewritten for Threads, not copied>
+
+The Instagram Mon, Wed, Fri carousels built from these pairs are in the
+Instagram calendar, not here.
 
 ## Ledger
 The exact commands to run once the week is actually posted, one line per item,

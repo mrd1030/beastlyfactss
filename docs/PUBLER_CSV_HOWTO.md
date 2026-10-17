@@ -207,6 +207,10 @@ correct CSV and refuses to emit a broken one.
 
 ### Wallpaper and question rows (X and Threads, since 2026-10-17)
 
+For now the owner uploads the wallpaper posts to Publer by hand from the
+wallpaper sheet the build hands over (docs/SOCIAL_PLAN.md), so no batch
+carries a wallpaper row. The row type is here for the day that changes.
+
 The nightly wallpaper pair is the one post that goes out with no caption:
 two images from the Beastly Walls app side by side, and a self reply with a
 short fact about the art. The row type carries that exception so nothing

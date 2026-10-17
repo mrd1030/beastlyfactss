@@ -23,16 +23,17 @@ with the reply rules, is docs/SOCIAL_PLAN.md.
     4:00 PM   QUESTION. Same as 9:00 AM, a different entry.
     9:30 PM   WALLPAPER PAIR. Two images from the owner's Beastly Walls app,
               side by side, no caption. The owner supplies the week's seven
-              pairs at Phase 1: two files each and the two animals shown.
-              Files go in social-batches/pins/wallpapers/YYYY-MM-DD-a.jpg
-              and -b.jpg and ride the same scripts/upload-pins.mjs run as
-              the cards, so the media urls are
-              https://pins.beastlyfacts.com/wallpapers/YYYY-MM-DD-a.jpg and
-              -b.jpg. One self reply per pair, posted right after: a short
+              pairs with the Phase 1 approval: the two animals per night and
+              the images, so the reply can be written from what the art
+              shows. One self reply per pair, posted right after: a short
               fact tied to what the art shows (the pose, the setting, the
-              animal's look), sourced from the repo like any other fact.
-              The same pair runs on X at 10:00 PM; the reply is rewritten,
-              not copied.
+              animal's look), sourced from the repo like any other fact. The
+              same pair runs on X at 10:00 PM; the reply is rewritten, not
+              copied. POSTED BY HAND (owner, 2026-10-17): the owner uploads
+              the wallpaper posts to Publer themselves. Do not upload
+              wallpaper files and do not put wallpaper rows in the CSV. The
+              hand-off is the WALLPAPER SHEET in the X skill, which carries
+              both platforms' slots and replies.
 - FACTS: one a day, 7 a week. X needs two a day; mirror X's picks where it
   makes sense, same fact in a different register, never the same copy.
 - QUESTIONS: two a day from social/questions.json, never one the bank marks
@@ -44,9 +45,10 @@ with the reply rules, is docs/SOCIAL_PLAN.md.
   (shared with X, not per platform), which refuses a repeat within six days
   either side. `plan` prints the animals used in the last week.
 - WEIRD FIRST at Phase 1: see the shortlist rule under PHASE 1.
-- CSV: the wallpaper row is `"type": "wallpaper"` with two media urls, no
-  text and the self reply in comments. A question row is `"type":
-  "question"` with text, the self reply, and no media. See Publer CSV below.
+- CSV: a question row is `"type": "question"` with text, the self reply, and
+  no media. Wallpapers stay out of the CSV (posted by hand); the builder's
+  `"type": "wallpaper"` row exists for the day that changes. See Publer CSV
+  below.
 
 CURRENT SCOPE (owner, 2026-10-10). This overrides everything below that
 assumes two tracks.
@@ -185,10 +187,11 @@ For each QUESTION pick, output:
   ANIMAL:      <animal field>  TAG: #<tag field>
   THREADS:     "<threads field, verbatim>"
 
-For each WALLPAPER day, output (from what the owner supplied):
+For each WALLPAPER day, output (from what the owner supplied, so at Phase 1
+this block is usually "pending the owner's pairs" and fills in with the
+approval):
   DATE:     YYYY-MM-DD
   ANIMALS:  <animal a> + <animal b>
-  FILES:    wallpapers/YYYY-MM-DD-a.jpg, wallpapers/YYYY-MM-DD-b.jpg
   CLEAR:    yes, or the animal that already ran in a wallpaper this week
 
 For each ARTICLE pick, output:
@@ -384,7 +387,7 @@ or WALLPAPER (ARTICLE only when the owner asks for the article track back).
   <what we say back to the first responder>
 
   REPLY HOOK:     <one line: what opening this post leaves>
-  IMAGE:          <the card's photo, the two wallpaper files, or none for a question>
+  IMAGE:          <the card's photo, the two wallpaper animals (files are the owner's), or none for a question>
   WHY THIS ONE:   <one sentence>
 
 ## Publer CSV
@@ -420,12 +423,10 @@ CSV columns (Publer's 12-column bulk template, do not remove or reorder any):
                 URL. Confirmed working before use, never assumed correct
                 from the path alone. A question row ("type": "question" in
                 the batch JSON) leaves this EMPTY: text only, the one
-                exception to the every-post-a-card rule. A
-                wallpaper row carries two urls,
-                https://pins.beastlyfacts.com/wallpapers/YYYY-MM-DD-a.jpg
-                and -b.jpg, and nothing in Text: in the batch JSON it is
-                { "type": "wallpaper", "date", "media": [a, b],
-                "comments": [the self reply] }.
+                exception to the every-post-a-card rule. No wallpaper
+                rows: the owner posts those by hand from the wallpaper
+                sheet in the X skill (the builder's "type": "wallpaper"
+                row is there for the day that changes).
   Comment(s)    the SELF REPLY, no url. For a thread, every post after the
                 first goes here, joined by ||. The PLANNED REPLY is
                 different: it is for the account to send once someone

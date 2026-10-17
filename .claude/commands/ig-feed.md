@@ -22,11 +22,12 @@ day. The full plan across every platform is docs/SOCIAL_PLAN.md.
   wallpaper per slide: Monday carries Friday, Saturday and Sunday's pairs
   (6 slides), Wednesday carries Monday and Tuesday's (4), Friday carries
   Wednesday and Thursday's (4). The phone mockup from the app is the LAST
-  slide; the owner supplies it with the pairs as
-  wallpapers/YYYY-MM-DD-mockup.jpg for that carousel's date. Media urls are
-  https://pins.beastlyfacts.com/wallpapers/<file>.jpg, uploaded with the
-  cards. Caption, hashtag block, alt text and pinned comment as below; the
-  caption names the animals and says the art is from the Beastly Walls app.
+  slide. POSTED BY HAND (owner, 2026-10-17): the owner uploads the
+  wallpaper carousels to Publer themselves, so these three posts stay out
+  of the CSV and no wallpaper file is uploaded from the repo. Write them in
+  full in the calendar (slide order, caption, hashtag block, alt text per
+  slide, pinned comment) so the owner pastes from there; the caption names
+  the animals and says the art is from the Beastly Walls app.
 - TUE, THU, SAT, SUN: a FACT carousel or a PHOTO carousel as now (the
   LISTICLE and CROSS-GUIDE carousel specs below, or a single fact card when
   the image carries on its own). The fact track rules below still apply.
@@ -389,7 +390,8 @@ scheduled but never marked will be proposed again.
     node scripts/social-inventory.mjs mark --platform ig --fact <id> --date YYYY-MM-DD
     node scripts/social-inventory.mjs mark --platform ig --article content/.../file.mdx --date YYYY-MM-DD
 
-Wallpaper carousels are not marked here: the pairs are logged once, with
+Wallpaper carousels are not marked here and are not in the CSV: the owner
+posts them by hand from the calendar, and the pairs are logged once, with
 `mark --wallpaper`, when the X and Threads week is marked.
 
 ## Self check
