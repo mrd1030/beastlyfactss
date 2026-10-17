@@ -255,7 +255,10 @@ function toCsv(batch) {
   for (const p of batch.posts) {
     const row = {
       'Date': p.date,
-      'Text': isWallpaper(p) ? '' : p.text,
+      // A held wallpaper slot carries a lone "." (owner, 2026-10-17): Publer
+      // drops a row whose Text is literally empty, and the dot is replaced
+      // in the app when the images go in.
+      'Text': isPlaceholder(p) ? '.' : isWallpaper(p) ? '' : p.text,
       // Empty everywhere except pinterest, where it is the outbound link.
       'Link(s)': isPin(batch) ? p.link : '',
       'Media URL(s)': (p.media ?? []).join(','),
