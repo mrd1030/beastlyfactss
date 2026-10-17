@@ -1,0 +1,23 @@
+[
+  { "out": "fact-347-velvet-worm", "image": "public/assets/facts/velvet-worm.jpg", "kicker": "Wild animal fact", "title": "A velvet worm shoots slime a foot and it sets in seconds" },
+  { "out": "fact-201-jellyfish", "image": "public/assets/facts/jellyfish-3.jpg", "kicker": "Wild animal fact", "title": "The immortal jellyfish rebuilds itself as a polyp in 72 hours" },
+  { "out": "fact-329-hoatzin", "image": "public/assets/facts/hoatzin.jpg", "kicker": "Wild animal fact", "title": "Hoatzin chicks hatch with working claws on both wings" },
+  { "out": "fact-285-gaboon-viper", "image": "public/assets/facts/gaboon-viper-2.jpg", "kicker": "Wild animal fact", "title": "A Gaboon viper bites and holds on instead of letting go" },
+  { "out": "fact-332-yeti-crab", "image": "public/assets/facts/yeti-crab.jpg", "kicker": "Wild animal fact", "title": "A yeti crab farms bacteria on its own claws and eats them" },
+  { "out": "fact-264-dart-frog", "image": "public/assets/facts/blue-poison-dart-frog-2.jpg", "kicker": "Wild animal fact", "title": "A captive poison dart frog is harmless without its wild diet" },
+  { "out": "fact-195-pangolin", "image": "public/assets/facts/pangolin-4.jpg", "kicker": "Wild animal fact", "title": "A pangolin has no teeth, so its stomach does the chewing" },
+  { "out": "fact-338-frilled-shark", "image": "public/assets/facts/frilled-shark.jpg", "kicker": "Wild animal fact", "title": "A frilled shark stays pregnant for up to 42 months" },
+  { "out": "fact-343-hoopoe", "image": "public/assets/facts/hoopoe.jpg", "kicker": "Wild animal fact", "title": "Hoopoe chicks defend the nest by aiming droppings at intruders" },
+  { "out": "fact-261-anaconda", "image": "public/assets/facts/green-anaconda-2.jpg", "kicker": "Wild animal fact", "title": "A constricting anaconda stops the blood, it does not crush bones" },
+  { "out": "fact-306-amano-shrimp", "image": "public/assets/facts/amano-shrimp.jpg", "kicker": "Wild animal fact", "title": "Amano shrimp are born needing salt water that kills them as adults" },
+  { "out": "fact-333-marine-iguana", "image": "public/assets/facts/marine-iguana.jpg", "kicker": "Wild animal fact", "title": "A marine iguana sneezes the sea salt out of its blood" },
+  { "out": "fact-268-crowned-pigeon", "image": "public/assets/facts/victoria-crowned-pigeon-3.jpg", "kicker": "Wild animal fact", "title": "Both Victoria crowned pigeon parents make milk for the chick" },
+  { "out": "fact-346-fringehead", "image": "public/assets/facts/sarcastic-fringehead.jpg", "kicker": "Wild animal fact", "title": "Sarcastic fringeheads fight by pressing their gaping mouths together" },
+  { "question": 52, "out": "question-52-hognose" },
+  { "question": 51, "out": "question-51-canary", "focusX": 0.5 },
+  { "question": 50, "out": "question-50-small-dog" },
+  { "question": 8, "out": "question-8-siamese", "focusX": 0.42 },
+  { "question": 9, "out": "question-9-guinea-pig" },
+  { "question": 4, "out": "question-4-russian-tortoise" },
+  { "question": 5, "out": "question-5-rat" }
+]

@@ -53,6 +53,10 @@
 //
 // `text` stays out (or empty): the one row type allowed to post with no
 // caption. Exactly two images, both under wallpapers/ in the pins bucket.
+// While the owner posts the pairs by hand (2026-10-17), the row is a
+// placeholder instead: { "type": "wallpaper", "date": "2026-10-17 22:00" }
+// with no media and no comments. It imports with Date only, holds the slot,
+// and the owner adds the two images and the reply inside Publer.
 //
 // Question rows (same plan): on threads the question is text only, the one
 // row allowed to post with no image; on x it is the question card plus the
@@ -88,6 +92,8 @@ const PINS = 'https://pins.beastlyfacts.com';
 // the board has to already exist in Pinterest before the import runs.
 const isPin = (b) => b.platform === 'pinterest';
 const isWallpaper = (p) => p.type === 'wallpaper';
+// A wallpaper row with no media: the slot is held and the owner fills it in Publer.
+const isPlaceholder = (p) => isWallpaper(p) && !(p.media ?? []).length;
 const isQuestion = (p) => p.type === 'question';
 const WALLPAPER_PLATFORMS = ['x', 'threads'];
 const TYPES = ['wallpaper', 'question'];
@@ -141,6 +147,11 @@ function validate(batch, file) {
       // images are the post and the self reply carries the words.
       if (!WALLPAPER_PLATFORMS.includes(batch.platform)) err(i, `wallpaper rows run on ${WALLPAPER_PLATFORMS.join(' and ')} only; on ig the pairs go in the carousel with a caption`);
       if (p.text && String(p.text).trim()) err(i, 'a wallpaper post carries no caption, drop text and put the fact in comments');
+      // A placeholder (owner, 2026-10-17): no media and no comments. The row
+      // holds the slot in Publer with Date only, and the owner fills the two
+      // images and the reply in the app after import. Nothing else is
+      // allowed to post empty, so the type is still required.
+      if (isPlaceholder(p) && p.comments?.length) err(i, 'a wallpaper placeholder has no media, so it carries no comment either; the owner fills both in Publer');
     } else if (!p.text || !String(p.text).trim()) err(i, 'missing text');
 
     // No url in Text: it either gets stripped or turns the post into a link
@@ -169,6 +180,8 @@ function validate(batch, file) {
       if (media.length) err(i, 'a threads question is text only, no media');
     } else if (isQuestion(p) && media.length !== 1) {
       err(i, `an x question is the question card plus the text, exactly one image, got ${media.length}`);
+    } else if (isPlaceholder(p)) {
+      // held slot, see above
     } else if (!Array.isArray(media) || media.length === 0) err(i, 'missing media, expected at least one url');
     media.forEach(m => {
       if (!/^https:\/\//.test(m)) err(i, `media url must be a full https url, got ${JSON.stringify(m)}`);
@@ -176,7 +189,7 @@ function validate(batch, file) {
       if (seenMedia.has(m)) err(i, `image reused from post ${seenMedia.get(m) + 1}: ${m}`);
       else seenMedia.set(m, i);
     });
-    if (isWallpaper(p)) {
+    if (isWallpaper(p) && !isPlaceholder(p)) {
       if (media.length !== 2) err(i, `a wallpaper post is exactly two images, got ${media.length}`);
       media.forEach(m => {
         if (!m.startsWith(PINS + '/wallpapers/')) err(i, `wallpaper media lives at ${PINS}/wallpapers/YYYY-MM-DD-a.jpg and -b.jpg, got ${m}`);
@@ -209,7 +222,7 @@ function validate(batch, file) {
     // job. Every other platform gets at least one reply.
     if (isPin(batch)) {
       if (comments.length) err(i, 'pinterest has no reply mechanism, the outbound link does that job, leave comments out');
-    } else if (comments.length === 0) {
+    } else if (comments.length === 0 && !isPlaceholder(p)) {
       err(i, 'no comments, every post gets at least one reply');
     }
     comments.forEach(c => {
@@ -261,11 +274,13 @@ function summarize(batch) {
   let threads = 0;
   let carousels = 0;
   let wallpapers = 0;
+  let placeholders = 0;
   for (const p of batch.posts) {
     const day = p.date.slice(0, 10);
     byDay.set(day, (byDay.get(day) ?? 0) + 1);
     if ((p.comments ?? []).length > 1) threads++;
-    if (isWallpaper(p)) wallpapers++;
+    if (isPlaceholder(p)) placeholders++;
+    else if (isWallpaper(p)) wallpapers++;
     else if ((p.media ?? []).length > 1) carousels++;
   }
   console.log(`platform:  ${batch.platform}`);
@@ -274,6 +289,7 @@ function summarize(batch) {
   console.log(`chains:    ${threads} post(s) with more than one comment`);
   if (carousels) console.log(`carousels: ${carousels}`);
   if (wallpapers) console.log(`wallpapers: ${wallpapers} two-image post(s) with no caption`);
+  if (placeholders) console.log(`held slots: ${placeholders} wallpaper row(s) with date only, the owner fills them in Publer`);
 }
 
 const args = process.argv.slice(2);
