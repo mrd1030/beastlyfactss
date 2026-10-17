@@ -1,12 +1,52 @@
 ---
-description: Build a 7 day Threads calendar from facts.js. Take first, reply driven, fact posts only, each with a photo card, no links anywhere.
-argument-hint: "[blank = Phase 1 shortlist] [go = Phase 2 write] [cadence e.g. '2 facts 2 articles'] [mirror x]"
+description: Build a 7 day Threads calendar. Four posts a day at fixed slots (two questions, a fact card, a wallpaper pair), take first, reply driven, no links anywhere.
+argument-hint: "[blank = Phase 1 shortlist] [go = Phase 2 write] [cadence e.g. '1 fact'] [mirror x]"
 allowed-tools: Read, Glob, Grep, Bash(ls:*), Bash(sed:*), Bash(head:*), Bash(wc:*), Bash(sort:*), Bash(grep:*), Bash(awk:*)
 ---
 
 # Threads feed builder
 
 ARGUMENTS: $ARGUMENTS
+
+CURRENT SCOPE (owner, 2026-10-17, effective Friday 2026-10-17). Supersedes
+the 2026-10-10 note below wherever the two differ. The 2026-10-10 rules on
+the fact card and on links still hold. The full plan across every platform,
+with the reply rules, is docs/SOCIAL_PLAN.md.
+- DAY SHAPE: 4 posts a day at fixed slots, all times US Eastern. X runs the
+  same shape 30 minutes later with cards where Threads runs text.
+    9:00 AM   QUESTION. Text only, no image. The Threads version from
+              social/questions.json, verbatim: take first, one or two lines,
+              built to get a reply. One community tag as now, on the word
+              the entry's `tag` field names, which is already in the
+              sentence. PLANNED REPLY and SELF REPLY as for any post.
+   12:00 PM   FACT CARD. The fact card rules below, unchanged.
+    4:00 PM   QUESTION. Same as 9:00 AM, a different entry.
+    9:30 PM   WALLPAPER PAIR. Two images from the owner's Beastly Walls app,
+              side by side, no caption. The owner supplies the week's seven
+              pairs at Phase 1: two files each and the two animals shown.
+              Files go in social-batches/pins/wallpapers/YYYY-MM-DD-a.jpg
+              and -b.jpg and ride the same scripts/upload-pins.mjs run as
+              the cards, so the media urls are
+              https://pins.beastlyfacts.com/wallpapers/YYYY-MM-DD-a.jpg and
+              -b.jpg. One self reply per pair, posted right after: a short
+              fact tied to what the art shows (the pose, the setting, the
+              animal's look), sourced from the repo like any other fact.
+              The same pair runs on X at 10:00 PM; the reply is rewritten,
+              not copied.
+- FACTS: one a day, 7 a week. X needs two a day; mirror X's picks where it
+  makes sense, same fact in a different register, never the same copy.
+- QUESTIONS: two a day from social/questions.json, never one the bank marks
+  used on Threads. `plan` proposes them with the fact and warns when the
+  bank runs under 14 unused, which is one Threads week. `mark --platform
+  threads --question <id>` consumes one.
+- WALLPAPERS: no animal in two wallpaper posts in the same week. Log each
+  pair once with `mark --wallpaper "Animal A,Animal B" --date YYYY-MM-DD`
+  (shared with X, not per platform), which refuses a repeat within six days
+  either side. `plan` prints the animals used in the last week.
+- WEIRD FIRST at Phase 1: see the shortlist rule under PHASE 1.
+- CSV: the wallpaper row is `"type": "wallpaper"` with two media urls, no
+  text and the self reply in comments. A question row is `"type":
+  "question"` with text, the self reply, and no media. See Publer CSV below.
 
 CURRENT SCOPE (owner, 2026-10-10). This overrides everything below that
 assumes two tracks.
@@ -30,8 +70,10 @@ assumes two tracks.
   https://pins.beastlyfacts.com/<out>-4x5.jpg as the media url.
 - No url anywhere, post or replies. The card's footer names BeastlyFacts.com
   and the profile link carries the click.
-- Default cadence: 2 facts a day. "3 facts" or similar in the arguments
-  overrides it. Any article count in the arguments is ignored.
+- Default cadence: 2 facts a day (2026-10-10). Since 2026-10-17 it is 1 fact
+  a day at 12:00 PM, with two questions and the wallpaper pair making up the
+  four; "2 facts" in the arguments overrides it. Any article count in the
+  arguments is ignored.
 
 How to read the arguments:
 - Empty, or anything that is not "go": run PHASE 1 only, then stop.
@@ -90,7 +132,24 @@ Threads keeps its own ledger bucket, so a source that already ran on X is still
 unused here. That is deliberate: the same material is meant to run on all three
 in different registers. Always pass --platform threads.
 
+WEIRD FIRST (owner, 2026-10-17). Prefer facts a reader stops on: strange,
+gross, "wait, what", over pleasant ones. The sea cucumber organ fact did
+about three times the views of the clownfish lifespan fact in the week of
+2026-10-11. Those facts tend to come from the Ocean, Weird & Wonderful and
+Invertebrates pools (and the stranger end of Reptiles and Birds), not from
+the mammal default, so when `plan` hands back a pleasant mammal fact, swap it
+for the strangest unused one in those pools and say so. DISAGREES still
+gates: the best pick is strange and arguable.
+
+Questions come out of the same `plan` run (two a day on Threads by default,
+--questions-per-day overrides), drawn from social/questions.json and never
+one the bank marks used on Threads. Keep the two questions in one day on
+different kinds of pet (one for a dog or cat person, one a keeper can
+answer) so the morning and afternoon do not read as the same post.
+
 Useful when overriding:
+    node scripts/social-inventory.mjs questions --platform threads --unused
+    node scripts/social-inventory.mjs wallpapers
     node scripts/social-inventory.mjs facts --platform threads --unused --limit 40
     node scripts/social-inventory.mjs articles --platform threads --unused --kind guide
     node scripts/social-inventory.mjs articles --platform threads --unused --kind chronicle
@@ -120,6 +179,17 @@ For each FACT pick, output:
   ANGLE:      <one line>
   IMAGE:      <resolved photo path>
   URL:        <fact url from the inventory>
+
+For each QUESTION pick, output:
+  QUESTION ID: <id from social/questions.json>
+  ANIMAL:      <animal field>  TAG: #<tag field>
+  THREADS:     "<threads field, verbatim>"
+
+For each WALLPAPER day, output (from what the owner supplied):
+  DATE:     YYYY-MM-DD
+  ANIMALS:  <animal a> + <animal b>
+  FILES:    wallpapers/YYYY-MM-DD-a.jpg, wallpapers/YYYY-MM-DD-b.jpg
+  CLEAR:    yes, or the animal that already ran in a wallpaper this week
 
 For each ARTICLE pick, output:
   FILE:       content/.../slug.mdx
@@ -212,8 +282,14 @@ PHASE 2: WRITE (after approval only)
     Every post carries exactly that one comment (a thread carries its chain
     instead). It goes in Comment(s), so it fires within seconds of the main
     post, inside the 15-to-30-minute window that counts most.
-8.  Post the requested cadence, no more. Give each post its own slot, spaced
-    across the day, and never two from the same track back to back.
+8.  Post the requested cadence, no more. Since 2026-10-17 the slots are
+    fixed: 9:00 AM question, 12:00 PM fact card, 4:00 PM question, 9:30 PM
+    wallpaper pair, US Eastern. Do not move them.
+9.  A question post is the bank's Threads version verbatim, with the tag on
+    the word its `tag` field names. Its SELF REPLY is our own answer to the
+    question, or the first real example, so the thread is never empty when
+    the first person arrives. Its PLANNED REPLY keeps the back and forth
+    going: ask about their answer, never close it.
 
 --- POST SHAPES (rotate, never twice in a row) ---
   POSITION     A stance from the guide, stated flat. "X is not a beginner
@@ -284,20 +360,21 @@ OUTPUT FORMAT. Nothing outside these sections.
 =====================================================================
 
 ## Week at a glance
-Table: Day | Species | Shape | Card layout | Source file
+Table: Day | 9:00 question (id + animal) | 12:00 fact (id + animal) | 4:00 question (id + animal) | 9:30 wallpaper (animal pair)
 
 ## Day 1 through Day 7
-Repeat this block once per post, in posting order, labelled FACT or ARTICLE.
+Repeat this block once per post, in posting order, labelled QUESTION, FACT
+or WALLPAPER (ARTICLE only when the owner asks for the article track back).
 
   DAY / TIME:     one slot per post
-  TRACK:          fact | article
+  TRACK:          question | fact | wallpaper | article
   SHAPE:          position | number | confession | scene | ask | thread
-  SOURCE:         facts.js id=<n>   or   content/.../file.mdx
-  QUOTE USED:     "<verbatim>"
+  SOURCE:         facts.js id=<n>   or   questions.json id=<n>   or   content/.../file.mdx
+  QUOTE USED:     "<verbatim>"   (a question: its threads field; a wallpaper: the fact the reply uses)
   SUPPORTS:       <the one line in the post this backs>
 
   POST
-  <paste ready>
+  <paste ready. A wallpaper post: NONE, the pair posts with no caption>
   chars: <n>
 
   SELF REPLY
@@ -307,7 +384,7 @@ Repeat this block once per post, in posting order, labelled FACT or ARTICLE.
   <what we say back to the first responder>
 
   REPLY HOOK:     <one line: what opening this post leaves>
-  IMAGE:          <frontmatter path, or none>
+  IMAGE:          <the card's photo, the two wallpaper files, or none for a question>
   WHY THIS ONE:   <one sentence>
 
 ## Publer CSV
@@ -341,7 +418,14 @@ CSV columns (Publer's 12-column bulk template, do not remove or reorder any):
                 .claude/commands/x-feed.md. Upload before building the CSV,
                 not the relative frontmatter path. Must be a real, live, public
                 URL. Confirmed working before use, never assumed correct
-                from the path alone.
+                from the path alone. A question row ("type": "question" in
+                the batch JSON) leaves this EMPTY: text only, the one
+                exception to the every-post-a-card rule. A
+                wallpaper row carries two urls,
+                https://pins.beastlyfacts.com/wallpapers/YYYY-MM-DD-a.jpg
+                and -b.jpg, and nothing in Text: in the batch JSON it is
+                { "type": "wallpaper", "date", "media": [a, b],
+                "comments": [the self reply] }.
   Comment(s)    the SELF REPLY, no url. For a thread, every post after the
                 first goes here, joined by ||. The PLANNED REPLY is
                 different: it is for the account to send once someone
@@ -364,7 +448,12 @@ ready to paste. Nothing is consumed until these run, so a week that gets
 scheduled but never marked will be proposed again.
 
     node scripts/social-inventory.mjs mark --platform threads --fact <id> --date YYYY-MM-DD
+    node scripts/social-inventory.mjs mark --platform threads --question <id> --date YYYY-MM-DD
+    node scripts/social-inventory.mjs mark --wallpaper "Animal A,Animal B" --date YYYY-MM-DD
     node scripts/social-inventory.mjs mark --platform threads --article content/.../file.mdx --date YYYY-MM-DD
+
+The wallpaper line is shared with X: run it once per pair, not once per
+platform, and it refuses an animal that ran in a wallpaper within the week.
 
 ## Self check
 State pass or fail on each. Fix failures before outputting.
@@ -376,7 +465,10 @@ State pass or fail on each. Fix failures before outputting.
   [ ] No shape used twice consecutively
   [ ] No species repeats across the week
   [ ] Every fact QUOTE USED appears verbatim in facts.js under that id
-  [ ] Every post has its own fact photo card, crop checked, no photo used twice
+  [ ] Every fact post has its own fact photo card, crop checked, no photo used twice
+  [ ] Every day has the four slots at 9:00, 12:00, 4:00 and 9:30, nothing moved
+  [ ] Every question is unused on Threads in social/questions.json, text verbatim, tag on its named word
+  [ ] Every wallpaper pair is clear of this week's other pairs, and its reply is a fact from the repo
   [ ] Every post has a planned reply written
   [ ] Every post has one self reply (threads carry their chain), none a
       repeat of the main post, none with a url

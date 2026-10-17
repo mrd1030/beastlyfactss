@@ -1,6 +1,6 @@
 ---
-description: Build a 7 day Instagram calendar from repo content. Image first, carousel spec, hashtag blocks, alt text.
-argument-hint: "[blank = Phase 1 shortlist] [go = Phase 2 write] [cadence e.g. '2 facts 1 article'] [mirror x]"
+description: Build a 7 day Instagram calendar. One post a day at 12:00 PM, wallpaper carousels Mon, Wed and Fri, fact or photo carousels the other days. Hashtag blocks, alt text.
+argument-hint: "[blank = Phase 1 shortlist] [go = Phase 2 write] [mirror x]"
 allowed-tools: Read, Glob, Grep, Bash(ls:*), Bash(sed:*), Bash(head:*), Bash(wc:*), Bash(sort:*), Bash(grep:*), Bash(awk:*)
 ---
 
@@ -8,15 +8,38 @@ allowed-tools: Read, Glob, Grep, Bash(ls:*), Bash(sed:*), Bash(head:*), Bash(wc:
 
 ARGUMENTS: $ARGUMENTS
 
+CURRENT SCOPE (owner, 2026-10-17, effective Friday 2026-10-17). This
+overrides everything below that assumes two tracks or more than one post a
+day. The full plan across every platform is docs/SOCIAL_PLAN.md.
+- ONE POST A DAY at 12:00 PM US Eastern. The article post is dropped:
+  wherever this file describes the article track, skip it, and pass
+  --articles-per-day 0 to `plan`. Any article count in the arguments is
+  ignored.
+- MON, WED, FRI: a WALLPAPER CAROUSEL from that week's pairs, the ones
+  supplied by the owner at Phase 1 from the Beastly Walls app (two files and
+  the two animals per night, see the X and Threads skills). Each carousel
+  carries the pairs X and Threads ran since the previous carousel, one
+  wallpaper per slide: Monday carries Friday, Saturday and Sunday's pairs
+  (6 slides), Wednesday carries Monday and Tuesday's (4), Friday carries
+  Wednesday and Thursday's (4). The phone mockup from the app is the LAST
+  slide; the owner supplies it with the pairs as
+  wallpapers/YYYY-MM-DD-mockup.jpg for that carousel's date. Media urls are
+  https://pins.beastlyfacts.com/wallpapers/<file>.jpg, uploaded with the
+  cards. Caption, hashtag block, alt text and pinned comment as below; the
+  caption names the animals and says the art is from the Beastly Walls app.
+- TUE, THU, SAT, SUN: a FACT carousel or a PHOTO carousel as now (the
+  LISTICLE and CROSS-GUIDE carousel specs below, or a single fact card when
+  the image carries on its own). The fact track rules below still apply.
+- Captions, hashtag block, alt text and pinned comment: unchanged.
+
 How to read the arguments:
 - Empty, or anything that is not "go": run PHASE 1 only, then stop.
 - Starts with "go": run PHASE 2 using the shortlist already approved earlier in
   this conversation. If there is no approved shortlist in context, say so and
   run PHASE 1 instead. Never invent a shortlist you were not given.
-- CADENCE: if the arguments name a per-day volume ("2 facts 1 article"), use it
-  in both phases and pass it to the inventory script. Default 1 fact + 1
-  article per day. Carry the same cadence into Phase 2 that Phase 1 was
-  approved at.
+- CADENCE: one post a day since 2026-10-17 (see CURRENT SCOPE). Four fact
+  or photo days a week, so `plan 7 --platform ig --facts-per-day 1
+  --articles-per-day 0` and keep the four strongest for Tue, Thu, Sat, Sun.
 - MIRROR: "mirror x" or "mirror threads" means propose only what that platform
   has already posted, so this is a rewrite of proven material rather than a new
   seam of the library. Pass it through as --mirror.
@@ -187,8 +210,8 @@ PHASE 2: WRITE (after approval only)
 6.  End at least a quarter of the week's captions with a real question. Not
     "thoughts?". A question a keeper would answer with a specific setup or
     number. At least one on the fact track.
-7.  Post the requested cadence, no more. Give each post its own slot, spaced
-    across the day, and never two from the same track back to back.
+7.  One post a day at 12:00 PM, no more. Mon, Wed, Fri are the wallpaper
+    carousels; Tue, Thu, Sat, Sun are the fact or photo days.
 8.  Write a PINNED COMMENT for every post: one sentence that naturally extends
     the caption with more of the specific keywords the caption didn't fit,
     the same species/topic terms someone might actually search. Not a repeat
@@ -196,7 +219,17 @@ PHASE 2: WRITE (after approval only)
     is a semantic-search signal, not engagement bait, so it has to read as
     a genuine addition, not a search-term dump.
 
---- CAROUSEL SPEC, TWO KINDS ---
+--- CAROUSEL SPEC, THREE KINDS ---
+
+WALLPAPER CAROUSEL (Mon, Wed, Fri since 2026-10-17)
+  The pairs X and Threads ran since the previous carousel, one wallpaper per
+  slide in the order they posted, then the phone mockup as the last slide.
+  No text on the slides, the art is the slide. Caption: which animals are in
+  the set, in order, and that the art comes from the Beastly Walls app; one
+  fact about one of the animals, from the repo, if it fits in a line.
+  Alt text per slide: the animal and what the art shows (pose, setting).
+  Hashtags: the animals, plus one wallpaper tag. No url, no "link in bio"
+  for the app beyond the fixed bio link.
 
 LISTICLE CAROUSEL (the article has one photo total)
   3 to 6 slides. State the count.
@@ -261,15 +294,16 @@ OUTPUT FORMAT. Nothing outside these sections.
 =====================================================================
 
 ## Week at a glance
-Table: Day | Fact (id + animal) | Article (species + kind) | Formats | Photo-led or text-led
+Table: Day | 12:00 post (wallpaper set, or fact id + animal, or species photo carousel) | Format | Photo-led or text-led
 
 ## Day 1 through Day 7
-Repeat this block once per post, in posting order, labelled FACT or ARTICLE.
+Repeat this block once per post, in posting order, labelled WALLPAPER, FACT
+or PHOTO (ARTICLE only when the owner asks for the article track back).
 
-  DAY / TIME:     one slot per post
-  TRACK:          fact | article
+  DAY / TIME:     12:00 PM, one post
+  TRACK:          wallpaper | fact | photo | article
   FORMAT:         single | carousel (n slides)
-  SOURCE:         facts.js id=<n>   or   content/.../file.mdx
+  SOURCE:         facts.js id=<n>   or   the wallpaper dates it carries   or   content/.../file.mdx
   QUOTE USED:     "<verbatim>"
   SUPPORTS:       <the one line in the caption this backs>
 
@@ -355,6 +389,9 @@ scheduled but never marked will be proposed again.
     node scripts/social-inventory.mjs mark --platform ig --fact <id> --date YYYY-MM-DD
     node scripts/social-inventory.mjs mark --platform ig --article content/.../file.mdx --date YYYY-MM-DD
 
+Wallpaper carousels are not marked here: the pairs are logged once, with
+`mark --wallpaper`, when the X and Threads week is marked.
+
 ## Self check
 State pass or fail on each. Fix failures before outputting.
   [ ] No em or en dashes anywhere
@@ -364,9 +401,10 @@ State pass or fail on each. Fix failures before outputting.
   [ ] No hashtag block exceeds 5 tags or contains a banned tag
   [ ] Every post has a pinned comment, and none of them are a url or a
       restatement of the caption
-  [ ] No species repeats, across BOTH tracks
+  [ ] No species repeats across the fact and photo days
+  [ ] Mon, Wed and Fri are wallpaper carousels, each ending on the phone mockup, carrying every pair since the last one
   [ ] No 3 text-led posts consecutively
-  [ ] No two posts from the same track scheduled back to back
+  [ ] Every post is at 12:00 PM, one a day
   [ ] Every article QUOTE USED appears verbatim in its named file
   [ ] Every fact QUOTE USED appears verbatim in facts.js under that id
   [ ] No image path used twice across the whole week

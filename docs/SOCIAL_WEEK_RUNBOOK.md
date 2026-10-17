@@ -64,7 +64,9 @@ tracks.
 
 ## Step 3: pick sources and verify every claim
 
-Cadence in use:
+Cadence in use when this was written (the current day shape, with the
+question and wallpaper slots that replaced the article track on 2026-10-17,
+is docs/SOCIAL_PLAN.md):
 
 | Platform | Per day | Week total |
 |---|---|---|

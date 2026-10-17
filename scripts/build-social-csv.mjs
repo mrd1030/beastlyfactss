@@ -39,6 +39,28 @@
 //     "alt": ["what is actually in the image"]
 //   }
 //
+// Wallpaper rows (X and Threads, since 2026-10-17, docs/SOCIAL_PLAN.md): the
+// nightly pair from the owner's Beastly Walls app, two images side by side
+// with no caption, and one self reply carrying a short fact about the art.
+//
+//   {
+//     "type": "wallpaper",
+//     "date": "2026-10-17 22:00",
+//     "media": ["https://pins.beastlyfacts.com/wallpapers/2026-10-17-a.jpg",
+//               "https://pins.beastlyfacts.com/wallpapers/2026-10-17-b.jpg"],
+//     "comments": ["one short fact tied to what the art shows"]
+//   }
+//
+// `text` stays out (or empty): the one row type allowed to post with no
+// caption. Exactly two images, both under wallpapers/ in the pins bucket.
+//
+// Question rows (same plan): on threads the question is text only, the one
+// row allowed to post with no image; on x it is the question card plus the
+// one-line X text, so it needs exactly one image.
+//
+//   { "type": "question", "date": "2026-10-17 09:00",
+//     "text": "the Threads version, tag on its word", "comments": ["our own answer"] }
+//
 // `comments` is the whole reply mechanism. One entry is a single reply. Several
 // entries become a chain that fires in order seconds after the main post. An X
 // thread is one post object with its follow-ups in comments, not four objects.
@@ -65,6 +87,10 @@ const PINS = 'https://pins.beastlyfacts.com';
 // It also needs two columns nothing else touches, Title and Board/Album, and
 // the board has to already exist in Pinterest before the import runs.
 const isPin = (b) => b.platform === 'pinterest';
+const isWallpaper = (p) => p.type === 'wallpaper';
+const isQuestion = (p) => p.type === 'question';
+const WALLPAPER_PLATFORMS = ['x', 'threads'];
+const TYPES = ['wallpaper', 'question'];
 
 // Publer's bulk template. Fixed order, and the empty ones are not padding, they
 // hold the positions the importer expects.
@@ -108,7 +134,14 @@ function validate(batch, file) {
       seenSlot.set(p.date, i);
     }
 
-    if (!p.text || !String(p.text).trim()) err(i, 'missing text');
+    if (p.type && !TYPES.includes(p.type)) err(i, `unknown post type ${JSON.stringify(p.type)}, the named types are ${TYPES.join(' and ')}`);
+    if (isQuestion(p) && !WALLPAPER_PLATFORMS.includes(batch.platform)) err(i, `question rows run on ${WALLPAPER_PLATFORMS.join(' and ')} only`);
+    if (isWallpaper(p)) {
+      // The wallpaper pair is the one row that posts with no caption: the
+      // images are the post and the self reply carries the words.
+      if (!WALLPAPER_PLATFORMS.includes(batch.platform)) err(i, `wallpaper rows run on ${WALLPAPER_PLATFORMS.join(' and ')} only; on ig the pairs go in the carousel with a caption`);
+      if (p.text && String(p.text).trim()) err(i, 'a wallpaper post carries no caption, drop text and put the fact in comments');
+    } else if (!p.text || !String(p.text).trim()) err(i, 'missing text');
 
     // No url in Text: it either gets stripped or turns the post into a link
     // post, the low-reach format this whole approach exists to avoid.
@@ -130,13 +163,25 @@ function validate(batch, file) {
     }
 
     const media = p.media ?? [];
-    if (!Array.isArray(media) || media.length === 0) err(i, 'missing media, expected at least one url');
+    // A Threads question is the one text-only row; everywhere else every post
+    // carries an image. On X the question rides its card, exactly one image.
+    if (isQuestion(p) && batch.platform === 'threads') {
+      if (media.length) err(i, 'a threads question is text only, no media');
+    } else if (isQuestion(p) && media.length !== 1) {
+      err(i, `an x question is the question card plus the text, exactly one image, got ${media.length}`);
+    } else if (!Array.isArray(media) || media.length === 0) err(i, 'missing media, expected at least one url');
     media.forEach(m => {
       if (!/^https:\/\//.test(m)) err(i, `media url must be a full https url, got ${JSON.stringify(m)}`);
       else if (!m.startsWith(SITE + '/') && !m.startsWith(PINS + '/')) err(i, `media url is not on ${SITE} or ${PINS}: ${m}`);
       if (seenMedia.has(m)) err(i, `image reused from post ${seenMedia.get(m) + 1}: ${m}`);
       else seenMedia.set(m, i);
     });
+    if (isWallpaper(p)) {
+      if (media.length !== 2) err(i, `a wallpaper post is exactly two images, got ${media.length}`);
+      media.forEach(m => {
+        if (!m.startsWith(PINS + '/wallpapers/')) err(i, `wallpaper media lives at ${PINS}/wallpapers/YYYY-MM-DD-a.jpg and -b.jpg, got ${m}`);
+      });
+    }
     if (isPin(batch)) {
       if (media.length !== 1) err(i, `a pin is one image, got ${media.length}`);
       // Pins are generated 2:3 cards, not site photos reused straight, and
@@ -197,7 +242,7 @@ function toCsv(batch) {
   for (const p of batch.posts) {
     const row = {
       'Date': p.date,
-      'Text': p.text,
+      'Text': isWallpaper(p) ? '' : p.text,
       // Empty everywhere except pinterest, where it is the outbound link.
       'Link(s)': isPin(batch) ? p.link : '',
       'Media URL(s)': (p.media ?? []).join(','),
@@ -215,17 +260,20 @@ function summarize(batch) {
   const byDay = new Map();
   let threads = 0;
   let carousels = 0;
+  let wallpapers = 0;
   for (const p of batch.posts) {
     const day = p.date.slice(0, 10);
     byDay.set(day, (byDay.get(day) ?? 0) + 1);
     if ((p.comments ?? []).length > 1) threads++;
-    if ((p.media ?? []).length > 1) carousels++;
+    if (isWallpaper(p)) wallpapers++;
+    else if ((p.media ?? []).length > 1) carousels++;
   }
   console.log(`platform:  ${batch.platform}`);
   console.log(`posts:     ${batch.posts.length}`);
   console.log(`days:      ${byDay.size} (${[...byDay.entries()].map(([d, n]) => `${d}: ${n}`).join(', ')})`);
   console.log(`chains:    ${threads} post(s) with more than one comment`);
   if (carousels) console.log(`carousels: ${carousels}`);
+  if (wallpapers) console.log(`wallpapers: ${wallpapers} two-image post(s) with no caption`);
 }
 
 const args = process.argv.slice(2);

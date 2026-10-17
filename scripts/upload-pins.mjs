@@ -4,9 +4,11 @@
 //
 // Usage:
 //   node scripts/upload-pins.mjs <spec.json | batch.json> [--4x5]   (--4x5 with a spec uploads the feed cards)
-// Takes the same spec file as generate-pins.mjs (or a pinterest batch) and uploads each
+// Takes the same spec file as generate-pins.mjs (or a Publer batch) and uploads each
 // social-batches/pins/<out>.jpg, then fetches every public url and fails
-// unless all of them answer 200.
+// unless all of them answer 200. A batch's wallpaper rows upload the same way:
+// their media urls name wallpapers/YYYY-MM-DD-a.jpg, so the files sit at
+// social-batches/pins/wallpapers/ before this runs.
 //
 // Needs wrangler signed in (`npx wrangler login` once, in a real terminal).
 import fs from 'node:fs';
@@ -28,7 +30,7 @@ const specs = input.posts
 
 const missing = specs.filter((s) => !fs.existsSync(`social-batches/pins/${s.out}.jpg`));
 if (missing.length) {
-  console.error(`not rendered yet, run generate-pins.mjs first: ${missing.map((s) => s.out).join(', ')}`);
+  console.error(`not in social-batches/pins/ yet (cards: run generate-pins.mjs first; wallpapers: drop the pair in social-batches/pins/wallpapers/): ${missing.map((s) => s.out).join(', ')}`);
   process.exit(1);
 }
 

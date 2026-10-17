@@ -20,6 +20,18 @@
 //   node scripts/social-inventory.mjs next-start --platform x
 //   node scripts/social-inventory.mjs set-next-start --platform x --through 2026-08-28
 //   node scripts/social-inventory.mjs carousel-species [--min N] [--show-images]
+//   node scripts/social-inventory.mjs questions [--platform threads|x] [--unused]
+//   node scripts/social-inventory.mjs wallpapers [--since YYYY-MM-DD]
+//   node scripts/social-inventory.mjs mark --platform threads --question 12 --date 2026-10-17
+//   node scripts/social-inventory.mjs mark --wallpaper "Red Fox,Barn Owl" --date 2026-10-17
+//
+// Since 2026-10-17 (docs/SOCIAL_PLAN.md) Threads and X also run question
+// slots from social/questions.json and a nightly wallpaper pair. `plan`
+// proposes questions the same way it proposes facts (never one the bank marks
+// used on that platform, default 2 a day on threads and 1 on x) and warns when
+// fewer than 14 unused remain on a platform. Wallpaper pairs are logged in the
+// ledger's top-level `wallpapers` list so no animal shows in two wallpaper
+// posts within a week; `mark --wallpaper` refuses the repeat.
 //
 // A batch's real calendar dates are assigned outside this script (plan only
 // outputs relative Day N). next-start/set-next-start exist so that assignment
@@ -34,6 +46,7 @@ import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import { resolveCostTokens } from '../src/lib/costs.js';
+import { loadQuestions, saveQuestions, QUESTION_PLATFORMS } from './lib/social-questions.mjs';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.join(__dirname, '..');
@@ -74,7 +87,13 @@ const PLATFORMS = ['x', 'ig', 'threads', 'pinterest'];
 // the individual posts have been confirmed live yet. Continuing from this
 // value instead of "today" sidesteps clock drift entirely: it never depends
 // on knowing what day it actually is, only on what was scheduled last time.
-const emptyLedger = () => Object.fromEntries(PLATFORMS.map(p => [p, { facts: [], articles: [], nextStart: null }]));
+// wallpapers sits beside the platform buckets, not inside them: the same
+// pair goes out on Threads and X the same night and into the IG carousel that
+// week, so the no-repeat rule is one list, not four.
+const emptyLedger = () => ({
+  ...Object.fromEntries(PLATFORMS.map(p => [p, { facts: [], articles: [], nextStart: null }])),
+  wallpapers: [],
+});
 
 function readLedger() {
   if (!fs.existsSync(LEDGER)) return emptyLedger();
@@ -98,6 +117,7 @@ function readLedger() {
     out[p].articles = raw[p]?.articles || [];
     out[p].nextStart = raw[p]?.nextStart || null;
   }
+  out.wallpapers = Array.isArray(raw.wallpapers) ? raw.wallpapers : [];
   return out;
 }
 
@@ -126,6 +146,67 @@ function platformArg(required = false) {
 }
 
 const usedFactIds = (l, p) => new Set((l[p]?.facts || []).map(f => f.id));
+
+// ---------------------------------------------------------------- questions
+
+// Two a day on Threads and one on X (docs/SOCIAL_PLAN.md), so 14 is one
+// Threads week: below that the bank needs topping up before the next build.
+const QUESTION_FLOOR = 14;
+const QUESTIONS_PER_DAY = { threads: 2, x: 1 };
+const unusedQuestions = (list, p) => list.filter(q => !q.used?.[p]);
+
+function printQuestions() {
+  const plat = platformArg();
+  let list = loadQuestions();
+  if (flag('--unused')) list = unusedQuestions(list, plat);
+  console.log(`# ${list.length} questions${flag('--unused') ? ` unused on ${plat}` : ''}`);
+  console.log('# id\tanimal\theadline\tused threads\tused x');
+  for (const q of list) {
+    console.log([q.id, q.animal, q.headline, q.used.threads || '-', q.used.x || '-'].join('\t'));
+  }
+  for (const p of QUESTION_PLATFORMS) {
+    const left = unusedQuestions(loadQuestions(), p).length;
+    if (left < QUESTION_FLOOR) console.log(`# LOW ${p}: ${left} unused questions, under ${QUESTION_FLOOR}. Add to social/questions.json before the next build.`);
+  }
+}
+
+// ---------------------------------------------------------------- wallpapers
+
+// "Same week" is a 7 day window around the date rather than a calendar week,
+// so a Thursday and the following Friday still count as a repeat.
+const daysBetween = (a, b) => Math.abs(Math.round((Date.parse(a) - Date.parse(b)) / 86400000));
+const WALLPAPER_WINDOW = 6;
+const norm = (s) => String(s).trim().toLowerCase();
+
+function wallpaperConflicts(ledger, animals, date) {
+  const out = [];
+  for (const w of ledger.wallpapers) {
+    if (daysBetween(w.date, date) > WALLPAPER_WINDOW) continue;
+    for (const a of animals) {
+      if (w.animals.some(x => norm(x) === norm(a))) out.push(`${a} already ran in the ${w.date} wallpaper post`);
+    }
+  }
+  return out;
+}
+
+function recentWallpaperAnimals(ledger, date) {
+  return ledger.wallpapers
+    .filter(w => daysBetween(w.date, date) <= WALLPAPER_WINDOW)
+    .flatMap(w => w.animals.map(a => `${a} (${w.date})`));
+}
+
+function printWallpapers() {
+  const ledger = readLedger();
+  const since = arg('--since');
+  const list = ledger.wallpapers.filter(w => !since || w.date >= since).sort((a, b) => a.date.localeCompare(b.date));
+  console.log(`# ${list.length} wallpaper posts logged${since ? ` since ${since}` : ''}`);
+  console.log('# date\tanimals');
+  for (const w of list) console.log(`${w.date}\t${w.animals.join(', ')}`);
+  if (list.length) {
+    const last = list[list.length - 1].date;
+    console.log(`# within 6 days of ${last}: ${recentWallpaperAnimals(ledger, last).join(', ') || 'none'}`);
+  }
+}
 const usedArticlePaths = (l, p) => new Set((l[p]?.articles || []).map(a => a.file));
 
 // ---------------------------------------------------------------- facts
@@ -349,6 +430,15 @@ function printStats() {
       `   next batch starts ${ledger[p].nextStart || '(unset)'}`);
   }
 
+  const questions = loadQuestions();
+  console.log(`\nquestions    ${questions.length} total (social/questions.json)`);
+  for (const p of QUESTION_PLATFORMS) {
+    const left = unusedQuestions(questions, p).length;
+    const need = QUESTIONS_PER_DAY[p] * 7;
+    console.log(`  ${p.padEnd(8)} unused ${String(left).padStart(4)}   a week needs ${need}${left < QUESTION_FLOOR ? `   <- LOW, under ${QUESTION_FLOOR}, add questions` : ''}`);
+  }
+  console.log(`wallpapers   ${ledger.wallpapers.length} posts logged${ledger.wallpapers.length ? `, last ${ledger.wallpapers.map(w => w.date).sort().pop()}` : ''}`);
+
   // Overlap is the cross-post picture: what X has run that IG has not is
   // exactly the queue for `plan --platform ig --mirror x`.
   console.log('\ncross-post backlog (posted on row, not yet on column)');
@@ -462,6 +552,8 @@ function printPlan() {
 
   const ledger = readLedger();
   const plat = platformArg();
+  const perDayQuestions = Number(arg('--questions-per-day', QUESTIONS_PER_DAY[plat] || 0));
+  const wantQuestions = days * perDayQuestions;
   const fUsed = usedFactIds(ledger, plat), aUsed = usedArticlePaths(ledger, plat);
 
   // --mirror <other>: propose only what that platform has ALREADY posted and
@@ -521,14 +613,31 @@ function printPlan() {
     if (a.split) splitCount[a.split] = (splitCount[a.split] || 0) + 1;
   }
 
+  // Questions: same idea as facts, hash order over the unused bank for this
+  // platform, never one it has already run. One question a week per animal
+  // photo would be ideal but the bank is small, so only the used flag gates.
+  const questionPool = wantQuestions ? unusedQuestions(loadQuestions(), plat).sort((a, b) => hash(`q${a.id}`) - hash(`q${b.id}`)) : [];
+  const pickedQuestions = questionPool.slice(0, wantQuestions);
+
   const shortF = wantFacts - pickedFacts.length;
   const shortA = wantArticles - pickedArticles.length;
+  const shortQ = wantQuestions - pickedQuestions.length;
 
   console.log(`# platform=${plat}${mirror ? `  mirroring ${mirror}` : ''}`);
-  console.log(`# ${days} days at ${perDayFacts} fact + ${perDayArticles} article per day`);
-  console.log(`# ${pickedFacts.length}/${wantFacts} facts, ${pickedArticles.length}/${wantArticles} articles (nothing written - run 'mark' after posting)`);
+  console.log(`# ${days} days at ${perDayFacts} fact + ${perDayArticles} article${wantQuestions ? ` + ${perDayQuestions} question` : ''} per day`);
+  console.log(`# ${pickedFacts.length}/${wantFacts} facts, ${pickedArticles.length}/${wantArticles} articles${wantQuestions ? `, ${pickedQuestions.length}/${wantQuestions} questions` : ''} (nothing written - run 'mark' after posting)`);
   if (shortF > 0) console.log(`# SHORT ${shortF} facts: ${mirror ? `${mirror} has not posted enough yet` : 'pool exhausted or blocked by the photo rule'}`);
   if (shortA > 0) console.log(`# SHORT ${shortA} articles: ${mirror ? `${mirror} has not posted enough yet` : 'pool exhausted or blocked by species/photo rules'}`);
+  if (shortQ > 0) console.log(`# SHORT ${shortQ} questions: the bank has no more unused on ${plat}`);
+  if (wantQuestions) {
+    const left = questionPool.length - pickedQuestions.length;
+    if (questionPool.length < QUESTION_FLOOR) console.log(`# LOW questions: ${questionPool.length} unused on ${plat} before this run, under ${QUESTION_FLOOR}. Add to social/questions.json.`);
+    else if (left < QUESTION_FLOOR) console.log(`# LOW questions: ${left} unused on ${plat} after this run, under ${QUESTION_FLOOR}. Add to social/questions.json before the next build.`);
+  }
+  if (ledger.wallpapers.length) {
+    const last = ledger.wallpapers.map(w => w.date).sort().pop();
+    console.log(`# wallpaper animals used within 6 days of ${last}: ${recentWallpaperAnimals(ledger, last).join(', ')}. Keep the new pairs off these.`);
+  }
 
   // Stripe rather than block: day d takes picks d, d+days, d+2*days... Taking a
   // contiguous slice per day clumps the run (two tank-setup guides on the same
@@ -547,21 +656,77 @@ function printPlan() {
       console.log(`ARTICLE ${a.file}`);
       console.log(`        ${a.kind}\t${a.split || '-'}\t${a.image}\t${a.url}`);
     }
+    for (let k = 0; k < perDayQuestions; k++) {
+      const q = pickedQuestions[k * days + d];
+      if (!q) { console.log(`QUESTION EXHAUSTED`); continue; }
+      console.log(`QUESTION id=${q.id}\t${q.animal}\t${q.headline}`);
+      console.log(`        ${plat === 'x' ? q.x : q.threads}`);
+    }
   }
 }
 
 function mark() {
   const ledger = readLedger();
+  const date = arg('--date') || new Date().toISOString().slice(0, 10);
+  const factId = arg('--fact');
+  const articleFile = arg('--article');
+  const questionId = arg('--question');
+  const wallpaper = arg('--wallpaper');
+  if (!factId && !articleFile && !questionId && !wallpaper) {
+    console.error('mark needs --fact <id>, --article <content/path.mdx>, --question <id> and/or --wallpaper "Animal A,Animal B"');
+    process.exit(1);
+  }
+
+  // Wallpapers are shared across platforms, so this is the one mark that
+  // needs no --platform. The pair is refused outright when either animal ran
+  // in a wallpaper post within six days either side: nothing is written.
+  if (wallpaper) {
+    const animals = wallpaper.split(',').map(a => a.trim()).filter(Boolean);
+    if (animals.length !== 2) {
+      console.error(`--wallpaper wants exactly two animals separated by a comma, got ${JSON.stringify(wallpaper)}`);
+      process.exit(1);
+    }
+    if (!DATE_RE.test(date)) {
+      console.error(`bad date "${date}", expected YYYY-MM-DD`);
+      process.exit(1);
+    }
+    if (ledger.wallpapers.some(w => w.date === date)) {
+      console.error(`a wallpaper post is already logged for ${date}, one pair a night`);
+      process.exit(1);
+    }
+    const conflicts = wallpaperConflicts(ledger, animals, date);
+    if (conflicts.length) {
+      console.error(`refused, no animal in two wallpaper posts in the same week:\n  ${conflicts.join('\n  ')}`);
+      process.exit(1);
+    }
+    ledger.wallpapers.push({ date, animals });
+    fs.writeFileSync(LEDGER, JSON.stringify(ledger, null, 2) + '\n');
+    console.log(`wallpapers: ${ledger.wallpapers.length} posts logged, ${date}: ${animals.join(' + ')}`);
+    if (!factId && !articleFile && !questionId) return;
+  }
+
   // Required, not defaulted: marking against the wrong platform silently burns
   // a slot on a feed that never ran it, and nothing downstream would catch it.
   const plat = platformArg(true);
   const bucket = ledger[plat];
-  const date = arg('--date') || new Date().toISOString().slice(0, 10);
-  const factId = arg('--fact');
-  const articleFile = arg('--article');
-  if (!factId && !articleFile) {
-    console.error('mark needs --fact <id> and/or --article <content/path.mdx>');
-    process.exit(1);
+
+  // The used date lives in social/questions.json next to the question, not in
+  // the ledger, so the bank reads as its own record.
+  if (questionId) {
+    if (!QUESTION_PLATFORMS.includes(plat)) {
+      console.error(`questions run on ${QUESTION_PLATFORMS.join(' and ')} only, not ${plat}`);
+      process.exit(1);
+    }
+    const list = loadQuestions();
+    const q = list.find(x => x.id === Number(questionId));
+    if (!q) {
+      console.error(`no question with id ${questionId} in social/questions.json`);
+      process.exit(1);
+    }
+    if (q.used[plat]) console.error(`question ${q.id} already marked on ${plat} (${q.used[plat]}), skipping`);
+    else { q.used[plat] = date; saveQuestions(list); }
+    console.log(`${plat}: ${unusedQuestions(list, plat).length} questions still unused`);
+    if (!factId && !articleFile) return;
   }
   if (factId) {
     const id = Number(factId);
@@ -622,12 +787,17 @@ else if (cmd === 'mark') mark();
 else if (cmd === 'next-start') nextStart();
 else if (cmd === 'set-next-start') setNextStart();
 else if (cmd === 'carousel-species') printCarouselSpecies();
+else if (cmd === 'questions') printQuestions();
+else if (cmd === 'wallpapers') printWallpapers();
 else {
-  console.log('usage: node scripts/social-inventory.mjs <facts|articles|plan|stats|mark|next-start|set-next-start> [options]');
+  console.log('usage: node scripts/social-inventory.mjs <facts|articles|questions|wallpapers|plan|stats|mark|next-start|set-next-start|carousel-species> [options]');
   console.log(`platforms: ${PLATFORMS.join(', ')}  (--platform, required for mark/next-start/set-next-start)`);
   console.log('plan --mirror <platform>  propose what that platform already posted, for cross-posting');
   console.log('next-start --platform p                        read where the next batch should start');
   console.log('set-next-start --platform p --through <date>   set it, once a batch\'s dates are locked in');
   console.log('carousel-species [--min N] [--show-images]     species with enough real photos for an IG cross-guide carousel');
+  console.log('questions [--platform p] [--unused]            the question bank (social/questions.json), plan proposes from it');
+  console.log('wallpapers [--since date]                      wallpaper pairs logged so far');
+  console.log('mark --platform p --question <id>              consume a question; mark --wallpaper "A,B" --date d logs a pair');
   process.exit(1);
 }

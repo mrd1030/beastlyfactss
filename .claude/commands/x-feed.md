@@ -1,12 +1,53 @@
 ---
-description: Build a 7 day X calendar for @Beastly_Facts from facts.js. Fact posts only, each with a photo card, no links anywhere.
-argument-hint: "[blank = Phase 1 shortlist] [go = Phase 2 write] [cadence e.g. '2 facts 2 articles'] [notes to steer picks]"
+description: Build a 7 day X calendar for @Beastly_Facts. Four posts a day at fixed slots (two fact cards, a question card, a wallpaper pair), every post an image, no links anywhere.
+argument-hint: "[blank = Phase 1 shortlist] [go = Phase 2 write] [cadence e.g. '2 facts'] [notes to steer picks]"
 allowed-tools: Read, Glob, Grep, Bash(ls:*), Bash(sed:*), Bash(head:*), Bash(wc:*), Bash(sort:*), Bash(grep:*), Bash(awk:*)
 ---
 
 # X feed builder
 
 ARGUMENTS: $ARGUMENTS
+
+CURRENT SCOPE (owner, 2026-10-17, effective Friday 2026-10-17). Supersedes
+the 2026-10-10 note below wherever the two differ. The 2026-10-10 rules on
+the fact card and on links still hold. The full plan across every platform,
+with the reply rules, is docs/SOCIAL_PLAN.md.
+- DAY SHAPE: 4 posts a day at fixed slots, 30 minutes behind Threads, all
+  times US Eastern. X stays all images: every post carries an image.
+    9:30 AM   FACT CARD. The fact card rules below, unchanged: full-bleed
+              layout, full-sentence headline, first reply adds one detail
+              the post left out, no links in post or replies.
+   12:30 PM   QUESTION CARD. The "question" card from
+              scripts/generate-pins.mjs, spec { "question": <id> } run with
+              --4x5: the card headline from social/questions.json over a photo
+              of the question's suggested animal, no fact text. The post text
+              is the question's one-line X version, verbatim. First reply:
+              one line that keeps it going (our own answer, or the obvious
+              follow-up), no url.
+    4:30 PM   FACT CARD.
+   10:00 PM   WALLPAPER PAIR. Two images from the owner's Beastly Walls app,
+              side by side, no caption. The owner supplies the week's seven
+              pairs at Phase 1: two files each and the two animals shown.
+              Files go in social-batches/pins/wallpapers/YYYY-MM-DD-a.jpg
+              and -b.jpg and ride the same scripts/upload-pins.mjs run as
+              the cards, so the media urls are
+              https://pins.beastlyfacts.com/wallpapers/YYYY-MM-DD-a.jpg and
+              -b.jpg. One self reply per pair, posted right after: a short
+              fact tied to what the art shows (the pose, the setting, the
+              animal's look), sourced from the repo like any other fact.
+- FACTS: two a day, 14 a week. Threads needs one a day; mirror picks where
+  it makes sense, same fact in a different register, never the same copy.
+- QUESTIONS: one a day from social/questions.json, never one the bank marks
+  used on X. `plan` proposes them with the facts and warns when the bank
+  runs under 14 unused. `mark --platform x --question <id>` consumes one.
+- WALLPAPERS: no animal in two wallpaper posts in the same week. Log each
+  pair with `mark --wallpaper "Animal A,Animal B" --date YYYY-MM-DD`, which
+  refuses a repeat within six days either side. `plan` prints the animals
+  used in the last week so the new pairs stay off them.
+- WEIRD FIRST at Phase 1: see the shortlist rule under PHASE 1.
+- CSV: the wallpaper row is `"type": "wallpaper"` with two media urls, no
+  text and the self reply in comments. The question row is `"type":
+  "question"` with the card as its one media url. See Publer CSV below.
 
 CURRENT SCOPE (owner, 2026-10-10). This overrides everything below that
 assumes two tracks.
@@ -31,7 +72,9 @@ assumes two tracks.
 - No url anywhere, post or replies. The card's footer names BeastlyFacts.com
   and the profile link carries the click.
 - Default cadence: 2 facts a day. "3 facts" or similar in the arguments
-  overrides it. Any article count in the arguments is ignored.
+  overrides it. Any article count in the arguments is ignored. Since
+  2026-10-17 the two facts sit at 9:30 AM and 4:30 PM, with the question card
+  and the wallpaper pair making up the four.
 
 How to read the arguments:
 - Empty, or anything that is not "go": run PHASE 1 only, then stop.
@@ -64,13 +107,16 @@ compete with each other the way an over-stuffed Meta feed does, and higher
 frequency is a documented lever specifically on this platform while the
 account is small (under a few hundred followers).
 
-Current cadence, as of the week of 2026-09-12: 3 posts a day, 2 facts and
-1 article thread, counting a whole thread as one post toward that count the
-same way the ledger does. That is deliberately half of what the first three
-weeks ran at (6 a day, 4 facts and 2 threads). The higher rate was a growth
-push, and sustaining it burns through the strongest thread-shaped guides
-faster than the library refills. 21 posts a week is the standing default now,
-not a step down to apologize for.
+Cadence history:
+- Week of 2026-09-12: 3 posts a day, 2 facts and 1 article thread, counting a
+  whole thread as one post the same way the ledger does. Deliberately half of
+  what the first three weeks ran at (6 a day, 4 facts and 2 threads); the
+  higher rate burned through the strongest thread-shaped guides faster than
+  the library refilled.
+- 2026-10-10: facts only, 2 a day, every post a card, no links anywhere.
+- 2026-10-17: 4 posts a day at fixed slots, 9:30 AM fact card, 12:30 PM
+  question card, 4:30 PM fact card, 10:00 PM wallpaper pair. 28 posts a
+  week. See CURRENT SCOPE at the top and docs/SOCIAL_PLAN.md.
 
 Only raise it again if engagement is genuinely landing (real replies, not
 just views) and the guide pool can support the extra threads. Volume is
@@ -107,7 +153,24 @@ does not get two of the same kind. Treat its output as the starting shortlist,
 not a verdict. Override any pick whose source turns out to be weak, and say
 what you swapped and why.
 
+WEIRD FIRST (owner, 2026-10-17). Prefer facts a reader stops on: strange,
+gross, "wait, what", over pleasant ones. The sea cucumber organ fact did
+about three times the views of the clownfish lifespan fact in the week of
+2026-10-11. Those facts tend to come from the Ocean, Weird & Wonderful and
+Invertebrates pools (and the stranger end of Reptiles and Birds), not from
+the mammal default, so when `plan` hands back a pleasant mammal fact, swap it
+for the strangest unused one in those pools and say so. A fact with no
+"wait, what" in it is the one to cut when the week is over the count.
+
+Questions come out of the same `plan` run (one a day on X by default,
+--questions-per-day overrides), drawn from social/questions.json and never
+one the bank marks used on X. Check the suggested animal has a photo the
+card can use (the generator refuses one that does not) and that no two
+question cards in the week show the same animal.
+
 Useful when overriding:
+    node scripts/social-inventory.mjs questions --platform x --unused
+    node scripts/social-inventory.mjs wallpapers
     node scripts/social-inventory.mjs facts --platform x --unused --limit 40
     node scripts/social-inventory.mjs articles --platform x --unused --kind fact-article
     node scripts/social-inventory.mjs articles --platform x --unused --kind chronicle
@@ -139,6 +202,18 @@ For each FACT pick, output exactly:
   ANGLE:    <one line: what the post argues>
   IMAGE:    <resolved image path>  <own | SHARED>
   URL:      https://beastlyfacts.com/facts/{slugify(title)}/
+
+For each QUESTION pick, output exactly:
+  QUESTION ID: <id from social/questions.json>
+  ANIMAL:      <animal field>
+  HEADLINE:    "<headline field>"
+  X TEXT:      "<x field, verbatim>"
+
+For each WALLPAPER day, output exactly (from what the owner supplied):
+  DATE:     YYYY-MM-DD
+  ANIMALS:  <animal a> + <animal b>
+  FILES:    wallpapers/YYYY-MM-DD-a.jpg, wallpapers/YYYY-MM-DD-b.jpg
+  CLEAR:    yes, or the animal that already ran in a wallpaper this week
 
 For each ARTICLE pick, output exactly:
   FILE:   content/.../slug.mdx
@@ -227,10 +302,9 @@ PHASE 2: WRITE (after approval only)
 2.  The FIRST REPLY adds one real detail the main post left out: a number, a
     mechanism, a consequence from the same source. Never a url, never "more
     on the site". It exists to give a reader something to answer.
-3.  Post the requested cadence, no more. Give every post its own time slot and
-    space them across waking hours, never back to back. Two posts sit in
-    opposite halves of the day. Four or more should be at least 3 hours apart,
-    and no two posts from the same track run consecutively.
+3.  Post the requested cadence, no more. Since 2026-10-17 the slots are
+    fixed: 9:30 AM fact, 12:30 PM question, 4:30 PM fact, 10:00 PM
+    wallpaper pair, US Eastern. Do not move them.
 4.  Main post under 280 characters. Count it and show the count.
 5.  Zero hashtags unless exactly one genuinely fits.
 6.  One post, one take. Never the seoTitle.
@@ -314,26 +388,27 @@ OUTPUT FORMAT. Nothing outside these sections.
 =====================================================================
 
 ## Week at a glance
-Table: Day | Fact (id + animal) | Article (species + kind) | Shapes
+Table: Day | 9:30 fact (id + animal) | 12:30 question (id + animal) | 4:30 fact (id + animal) | 10:00 wallpaper (animal pair)
 
 ## Day 1 through Day 7
-Repeat this block once per post, in posting order, labelled FACT or ARTICLE.
+Repeat this block once per post, in posting order, labelled FACT, QUESTION
+or WALLPAPER (ARTICLE only when the owner asks for the article track back).
 
   DAY / TIME:   one slot per post, not three options
-  TRACK:        fact | article
+  TRACK:        fact | question | wallpaper | article
   SHAPE:        claim | correction | cost | scene | question | thread
-  SOURCE:       facts.js id=<n>   or   content/.../file.mdx
-  QUOTE USED:   "<verbatim>"
+  SOURCE:       facts.js id=<n>   or   questions.json id=<n>   or   content/.../file.mdx
+  QUOTE USED:   "<verbatim>"   (a question: its x field; a wallpaper: the fact the reply uses)
   SUPPORTS:     <the one sentence in the post this quote backs>
 
   MAIN POST
-  <paste ready, no url>
+  <paste ready, no url. A wallpaper post: NONE, the pair posts with no caption>
   chars: <n>
 
   FIRST REPLY
-  <one added detail, no url>
+  <one added detail, no url. A wallpaper: the short fact tied to the art>
 
-  IMAGE:        <resolved path>
+  IMAGE:        <resolved path, or the two wallpaper files>
   WHY THIS ONE: <one sentence>
 
 ## Publer CSV
@@ -364,7 +439,13 @@ CSV columns (Publer's 12-column bulk template, do not remove or reorder any):
                 Link(s) column is what makes the image attach natively.
   Media URL(s)  the card, https://pins.beastlyfacts.com/<out>-4x5.jpg (see
                 IMAGES). upload-pins.mjs confirms it is live before the CSV
-                is built.
+                is built. A wallpaper row carries two urls,
+                https://pins.beastlyfacts.com/wallpapers/YYYY-MM-DD-a.jpg
+                and -b.jpg, and nothing in Text: in the batch JSON it is
+                { "type": "wallpaper", "date", "media": [a, b],
+                "comments": [the self reply] }. The builder refuses a
+                wallpaper row with a caption, with one image, or with the
+                files anywhere but wallpapers/.
   Comment(s)    the first reply, no url (2026-10-10 rule). For a thread, every post
                 after the first goes here too, joined by ||, e.g.
                 "second post||third post||fourth post". Each
@@ -386,7 +467,12 @@ ready to paste. Nothing is consumed until these run, so a week that gets
 scheduled but not marked will be proposed again.
 
     node scripts/social-inventory.mjs mark --platform x --fact <id> --date YYYY-MM-DD
+    node scripts/social-inventory.mjs mark --platform x --question <id> --date YYYY-MM-DD
+    node scripts/social-inventory.mjs mark --wallpaper "Animal A,Animal B" --date YYYY-MM-DD
     node scripts/social-inventory.mjs mark --platform x --article content/.../file.mdx --date YYYY-MM-DD
+
+The wallpaper line is shared with Threads: run it once per pair, not once per
+platform, and it refuses an animal that ran in a wallpaper within the week.
 
 ## What to cancel
 Any queued seoTitle + excerpt + url posts still scheduled this week, and a one
@@ -404,5 +490,8 @@ failing calendar with a note attached.
   [ ] No post shape used twice consecutively
   [ ] Every fact QUOTE USED appears verbatim in facts.js under that id
   [ ] Every post has its own fact photo card, crop checked, no photo used twice
+  [ ] Every day has the four slots at 9:30, 12:30, 4:30 and 10:00, nothing moved
+  [ ] Every question is unused on X in social/questions.json, no animal on two question cards
+  [ ] Every wallpaper pair is clear of this week's other pairs, and its reply is a fact from the repo
   [ ] A quarter or more of posts end on a real question, at least one a fact
   [ ] Ledger section lists a mark command for every post

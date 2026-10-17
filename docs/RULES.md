@@ -340,6 +340,13 @@ third care sheet.
   numbers are permanent, every question needs a released source page, and a
   committed quiz is never future-dated.
 
+## Social
+
+- The day shape per platform, the slot times, the question bank, the
+  wallpaper slot and the reply rules are docs/SOCIAL_PLAN.md (in effect since
+  2026-10-17). The per-platform writing rules are the feed skills in
+  .claude/commands/ and docs/pinterest-feed.md.
+
 ## Placement quirks
 
 - Beastlypedia only surfaces articles filed under `category: "Wild Animals"`,

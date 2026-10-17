@@ -205,6 +205,34 @@ correct CSV and refuses to emit a broken one.
 - There is no `link` field on X, IG, or Threads, on purpose. `Link(s)` is
   always empty there, and passing one is a hard error.
 
+### Wallpaper and question rows (X and Threads, since 2026-10-17)
+
+The nightly wallpaper pair is the one post that goes out with no caption:
+two images from the Beastly Walls app side by side, and a self reply with a
+short fact about the art. The row type carries that exception so nothing
+else can post empty by accident.
+
+```json
+{
+  "type": "wallpaper",
+  "date": "2026-10-17 22:00",
+  "media": ["https://pins.beastlyfacts.com/wallpapers/2026-10-17-a.jpg",
+            "https://pins.beastlyfacts.com/wallpapers/2026-10-17-b.jpg"],
+  "comments": ["A red fox curls its tail over its nose to keep its face warm."]
+}
+```
+
+- `text` stays out, or empty. A caption on a wallpaper row is an error.
+- Exactly two images, both under `wallpapers/` on the pins bucket. Drop the
+  files in `social-batches/pins/wallpapers/` and `scripts/upload-pins.mjs`
+  with the batch JSON uploads them with the cards.
+- X and Threads only. On Instagram the pairs go in the Monday, Wednesday and
+  Friday carousels with a caption, as a normal post.
+
+A question row is `"type": "question"`. On Threads it is text only (no
+media, the one post allowed without an image); on X it is the question card
+plus the one-line text, exactly one image. See `docs/SOCIAL_PLAN.md`.
+
 ### Pinterest is the exception
 
 Pinterest inverts the central rule, so it gets its own shape. It is a search
@@ -250,6 +278,8 @@ worked:
 - a url in `text`
 - a relative or off-site media path
 - a post with no comments
+- a post with no media (except a Threads question), or a caption on a
+  wallpaper row, or a wallpaper row with anything but two images
 - two posts sharing a time slot, or sharing an image
 - IG alt count not matching image count
 - a url in an IG comment (not clickable, does nothing)

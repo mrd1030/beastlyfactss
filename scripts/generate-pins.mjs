@@ -37,9 +37,19 @@
 //     "cta" }                                    -> never the verdict
 //   { "layout": "feeding", ..., "tiers": [{ "label": "Staple",
 //     "foods": "Earthworms, nightcrawlers" }, ...], "cta" }
+//
+// Question card (X 12:30 PM slot since 2026-10-17, docs/SOCIAL_PLAN.md): the
+// same full-bleed layout as the fact card, the card headline from
+// social/questions.json over a photo of the question's suggested animal, no
+// fact text. Takes a question id instead of a fact id; everything else is
+// looked up. "image" and "kicker" in the spec override the lookups, and
+// "focusX"/"focusY" work as on any card.
+//   { "question": 12 }                        -> social-batches/pins/question-12-4x5.jpg
+//   { "question": 12, "out": "q12-ball-python", "focusX": 0.4 }
 import fs from 'node:fs';
 import path from 'node:path';
 import sharp from 'sharp';
+import { loadQuestions, resolveAnimalImage } from './lib/social-questions.mjs';
 
 const W = 1000;
 // --4x5 renders the same cards at 1000x1250 for X and Threads feeds, where a
@@ -62,6 +72,32 @@ if (!specPath) {
   process.exit(1);
 }
 const specs = JSON.parse(fs.readFileSync(specPath, 'utf8'));
+
+// Fill a question spec from the bank. The card then renders through the same
+// path as a fact card, so the overlay, the brightness fallback and the crop
+// helpers all apply unchanged.
+let questionBank = null;
+function resolveQuestion(spec) {
+  questionBank ??= loadQuestions();
+  const q = questionBank.find((x) => x.id === Number(spec.question));
+  if (!q) {
+    console.error(`${JSON.stringify(spec)}: no question with id ${spec.question} in social/questions.json`);
+    process.exit(1);
+  }
+  const image = spec.image || resolveAnimalImage(q.animal);
+  if (!image) {
+    console.error(`question ${q.id}: no photo found for "${q.animal}". Add a guide hero or ANIMAL_IMAGES entry, or give "image" in the spec`);
+    process.exit(1);
+  }
+  return {
+    ...spec,
+    out: spec.out || `question-${q.id}`,
+    image,
+    kicker: spec.kicker || 'Question for pet owners',
+    title: q.headline,
+    layout: undefined,
+  };
+}
 // Cards render outside public/ so they never ride a site deploy: they go to
 // the beastlyfacts-pins R2 bucket through scripts/upload-pins.mjs.
 const outDir = 'social-batches/pins';
@@ -304,7 +340,8 @@ async function renderPanel(spec, build) {
 
 const LAYOUTS = { checklist: checklistSvg, cost: costSvg, numbered: numberedSvg, legal: legalSvg, feeding: feedingSvg };
 
-for (const spec of specs) {
+for (let spec of specs) {
+  if (spec.question != null) spec = resolveQuestion(spec);
   if (LAYOUTS[spec.layout]) {
     const text = JSON.stringify({ ...spec, image: '', out: '' });
     if (/\$|%%/.test(text)) {

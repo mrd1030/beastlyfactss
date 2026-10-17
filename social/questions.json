@@ -1,0 +1,626 @@
+[
+  {
+    "id": 1,
+    "threads": "Every pet name has a story, and the boring ones are the best ones. What's the story behind your pet's name?",
+    "x": "What's the story behind your pet's name?",
+    "headline": "What's the story behind your pet's name?",
+    "animal": "Beagle",
+    "tag": "pet",
+    "used": {
+      "threads": "2026-10-14",
+      "x": null
+    }
+  },
+  {
+    "id": 2,
+    "threads": "Every pet has one. Show us your pet's best 'I did nothing wrong' face.",
+    "x": "Show us your pet's best 'I did nothing wrong' face.",
+    "headline": "Your pet's best 'I did nothing wrong' face",
+    "animal": "Labrador Retriever",
+    "tag": "pet",
+    "used": {
+      "threads": "2026-10-15",
+      "x": null
+    }
+  },
+  {
+    "id": 3,
+    "threads": "Trick or treat with this little mummy. Who's dressing up a pet this year, and as what?",
+    "x": "Is your pet wearing a costume this year? Show us.",
+    "headline": "Is your pet wearing a costume this year?",
+    "animal": "Dachshund",
+    "tag": "pet",
+    "used": {
+      "threads": "2026-10-16",
+      "x": null
+    }
+  },
+  {
+    "id": 4,
+    "threads": "Tortoise people will win this one, but go anyway: the oldest pet you've ever had, and how old it got.",
+    "x": "What's the oldest pet you've ever had, and how old did it get?",
+    "headline": "The oldest pet you have ever had",
+    "animal": "Russian Tortoise",
+    "tag": "pet",
+    "used": {
+      "threads": null,
+      "x": null
+    }
+  },
+  {
+    "id": 5,
+    "threads": "Weirdest thing your pet eats on purpose. Not stole once, eats, as a habit.",
+    "x": "What's the weirdest thing your pet eats on purpose?",
+    "headline": "Weirdest thing your pet eats on purpose",
+    "animal": "Rat",
+    "tag": "pet",
+    "used": {
+      "threads": null,
+      "x": null
+    }
+  },
+  {
+    "id": 6,
+    "threads": "The first pet that was actually your job, not the family dog your parents fed. What was it?",
+    "x": "What was the first pet that was actually your responsibility?",
+    "headline": "The first pet that was really yours",
+    "animal": "Hamster",
+    "tag": "pet",
+    "used": {
+      "threads": null,
+      "x": null
+    }
+  },
+  {
+    "id": 7,
+    "threads": "Pets are cheap until they aren't. The most you've spent at the vet in one visit, and was it worth it?",
+    "x": "Biggest single vet bill you've paid, and what was it for?",
+    "headline": "Your biggest vet bill, and what it bought",
+    "animal": "Golden Retriever",
+    "tag": "Pets",
+    "used": {
+      "threads": null,
+      "x": null
+    }
+  },
+  {
+    "id": 8,
+    "threads": "Some pets pick their person and it's never who paid for them. Who does your pet actually belong to?",
+    "x": "Who does your pet think it belongs to? Honest answers.",
+    "headline": "Who does your pet think its person is?",
+    "animal": "Siamese",
+    "tag": "pets",
+    "used": {
+      "threads": null,
+      "x": null
+    }
+  },
+  {
+    "id": 9,
+    "threads": "The sound your pet makes that nobody believes until they hear it. Describe it, badly.",
+    "x": "What noise does your pet make that nobody believes until they hear it?",
+    "headline": "The noise your pet makes that nobody believes",
+    "animal": "Guinea Pig",
+    "tag": "pet",
+    "used": {
+      "threads": null,
+      "x": null
+    }
+  },
+  {
+    "id": 10,
+    "threads": "Every pet has one spot it was never given and now owns. Where is yours sleeping right now?",
+    "x": "Where is your pet sleeping right now?",
+    "headline": "Where is your pet sleeping right now?",
+    "animal": "Ragdoll",
+    "tag": "pet",
+    "used": {
+      "threads": null,
+      "x": null
+    }
+  },
+  {
+    "id": 11,
+    "threads": "The pet upgrade you put off the longest and then wished you'd done on day one. Bigger tank, better lamp, a second litter box, what was it?",
+    "x": "What pet upgrade did you put off, then wish you'd done on day one?",
+    "headline": "The upgrade you wish you had done on day one",
+    "animal": "Leopard Gecko",
+    "tag": "pet",
+    "used": {
+      "threads": null,
+      "x": null
+    }
+  },
+  {
+    "id": 12,
+    "threads": "Everyone starts with a wrong idea about their pets. What did you believe about your pet's species that turned out to be completely wrong?",
+    "x": "What did you believe about your pet's species that turned out to be wrong?",
+    "headline": "The pet myth you believed before you knew better",
+    "animal": "Ball Python",
+    "tag": "pets",
+    "used": {
+      "threads": null,
+      "x": null
+    }
+  },
+  {
+    "id": 13,
+    "threads": "Every pet has a nemesis. The vacuum, the mail carrier, one specific squirrel. Who is your pet's?",
+    "x": "Who or what is your pet's sworn enemy?",
+    "headline": "Who is your pet's sworn enemy?",
+    "animal": "German Shepherd",
+    "tag": "pet",
+    "used": {
+      "threads": null,
+      "x": null
+    }
+  },
+  {
+    "id": 14,
+    "threads": "What is your pet irrationally afraid of? Bonus points if it's smaller than them.",
+    "x": "What is your pet irrationally afraid of?",
+    "headline": "What is your pet irrationally afraid of?",
+    "animal": "Siberian Husky",
+    "tag": "pet",
+    "used": {
+      "threads": null,
+      "x": null
+    }
+  },
+  {
+    "id": 15,
+    "threads": "Nobody calls their pet by its real name. How many nicknames does yours have, and which one does it actually answer to?",
+    "x": "How many nicknames does your pet have, and which one does it answer to?",
+    "headline": "Which nickname does your pet actually answer to?",
+    "animal": "Cockatiel",
+    "tag": "pet",
+    "used": {
+      "threads": null,
+      "x": null
+    }
+  },
+  {
+    "id": 16,
+    "threads": "The toy that outlasted every expensive one. Usually a bottle cap or a cardboard box. What is it for your pet?",
+    "x": "What cheap toy has outlasted every expensive one for your pet?",
+    "headline": "The free toy that beat every expensive one",
+    "animal": "Ferret",
+    "tag": "pet",
+    "used": {
+      "threads": null,
+      "x": null
+    }
+  },
+  {
+    "id": 17,
+    "threads": "The part of caring for your pet nobody warned you about. Not the cost, the thing you actually didn't see coming.",
+    "x": "What part of caring for your pet did nobody warn you about?",
+    "headline": "The part of pet care nobody warned you about",
+    "animal": "Rabbit",
+    "tag": "pet",
+    "used": {
+      "threads": null,
+      "x": null
+    }
+  },
+  {
+    "id": 18,
+    "threads": "Pets run on a schedule and you just live in it. What time does yours wake you up, and how?",
+    "x": "What time does your pet wake you up, and how?",
+    "headline": "What time does your pet wake you up?",
+    "animal": "Conure",
+    "tag": "Pets",
+    "used": {
+      "threads": null,
+      "x": null
+    }
+  },
+  {
+    "id": 19,
+    "threads": "How did your pet end up with you? Rescue, breeder, found in a parking lot, inherited from a roommate who moved out.",
+    "x": "How did your pet end up with you?",
+    "headline": "How did your pet end up with you?",
+    "animal": "Domestic Shorthair",
+    "tag": "pet",
+    "used": {
+      "threads": null,
+      "x": null
+    }
+  },
+  {
+    "id": 20,
+    "threads": "Mixed households are the real test. Which of your pets rules the house, and which one thinks it does?",
+    "x": "Which of your pets actually rules the house?",
+    "headline": "Which pet actually rules your house?",
+    "animal": "Maine Coon",
+    "tag": "pets",
+    "used": {
+      "threads": null,
+      "x": null
+    }
+  },
+  {
+    "id": 21,
+    "threads": "Pets hold grudges and everyone pretends they don't. What has yours never forgiven you for?",
+    "x": "What has your pet never forgiven you for?",
+    "headline": "What has your pet never forgiven you for?",
+    "animal": "Persian",
+    "tag": "Pets",
+    "used": {
+      "threads": null,
+      "x": null
+    }
+  },
+  {
+    "id": 22,
+    "threads": "The one human food your pet is allowed, and the one it would commit crimes for.",
+    "x": "What human food would your pet commit a crime for?",
+    "headline": "The food your pet would commit a crime for",
+    "animal": "Bulldog",
+    "tag": "pet",
+    "used": {
+      "threads": null,
+      "x": null
+    }
+  },
+  {
+    "id": 23,
+    "threads": "The smartest thing your pet has ever done, and whether it was on purpose.",
+    "x": "What's the smartest thing your pet has ever done?",
+    "headline": "The smartest thing your pet has ever done",
+    "animal": "Border Collie",
+    "tag": "pet",
+    "used": {
+      "threads": null,
+      "x": null
+    }
+  },
+  {
+    "id": 24,
+    "threads": "The dumbest thing your pet has done this week. Not ever, this week. There's always one.",
+    "x": "What's the dumbest thing your pet did this week?",
+    "headline": "The dumbest thing your pet did this week",
+    "animal": "French Bulldog",
+    "tag": "pet",
+    "used": {
+      "threads": null,
+      "x": null
+    }
+  },
+  {
+    "id": 25,
+    "threads": "Check your phone. How many photos of your pet are on it right now, and how many are basically the same photo?",
+    "x": "How many photos of your pet are on your phone right now?",
+    "headline": "How many pet photos are on your phone?",
+    "animal": "Sphynx",
+    "tag": "pet",
+    "used": {
+      "threads": null,
+      "x": null
+    }
+  },
+  {
+    "id": 26,
+    "threads": "Reptile keepers check the thermometer more than the weather. How many times a day do you check your temps?",
+    "x": "How many times a day do you check your reptile's temps? Be honest.",
+    "headline": "How often do you check your reptile's temps?",
+    "animal": "Bearded Dragon",
+    "tag": "Reptile",
+    "used": {
+      "threads": null,
+      "x": null
+    }
+  },
+  {
+    "id": 27,
+    "threads": "Fish keepers, how many tanks did you start with and how many do you have now? It's never the same number.",
+    "x": "Fish keepers: how many tanks did you start with, and how many now?",
+    "headline": "How many tanks did you start with, and how many now?",
+    "animal": "Betta Fish",
+    "tag": "Fish",
+    "used": {
+      "threads": null,
+      "x": null
+    }
+  },
+  {
+    "id": 28,
+    "threads": "Birds talk when nobody's listening. What does yours say that it should never have learned?",
+    "x": "What has your bird learned to say that it should not have?",
+    "headline": "What has your bird learned to say?",
+    "animal": "African Grey",
+    "tag": "Birds",
+    "used": {
+      "threads": null,
+      "x": null
+    }
+  },
+  {
+    "id": 29,
+    "threads": "Every small pet escapes once. Where did yours turn up, and how long was it gone?",
+    "x": "Where did your escaped pet turn up, and how long was it gone?",
+    "headline": "Where did your escaped pet turn up?",
+    "animal": "Gerbil",
+    "tag": "pet",
+    "used": {
+      "threads": null,
+      "x": null
+    }
+  },
+  {
+    "id": 30,
+    "threads": "Rain, snow, heat. Which weather turns your pet into a different animal?",
+    "x": "Which weather turns your pet into a different animal?",
+    "headline": "Which weather changes your pet completely?",
+    "animal": "Rottweiler",
+    "tag": "pet",
+    "used": {
+      "threads": null,
+      "x": null
+    }
+  },
+  {
+    "id": 31,
+    "threads": "Test for pet owners: say the name in a normal voice. Did it look up, ignore you, or leave the room?",
+    "x": "Say your pet's name right now. Did it look up, ignore you, or leave?",
+    "headline": "Does your pet come when you call?",
+    "animal": "Scottish Fold",
+    "tag": "pet",
+    "used": {
+      "threads": null,
+      "x": null
+    }
+  },
+  {
+    "id": 32,
+    "threads": "One sentence of advice for someone getting your kind of pet tomorrow. Just one.",
+    "x": "One sentence for someone getting your pet's species tomorrow.",
+    "headline": "One sentence for a first time owner",
+    "animal": "Crested Gecko",
+    "tag": "pet",
+    "used": {
+      "threads": null,
+      "x": null
+    }
+  },
+  {
+    "id": 33,
+    "threads": "How long can your pet hold a sulk? Cat people, we already know.",
+    "x": "How long can your pet hold a sulk?",
+    "headline": "How long can your pet hold a sulk?",
+    "animal": "American Shorthair",
+    "tag": "pet",
+    "used": {
+      "threads": null,
+      "x": null
+    }
+  },
+  {
+    "id": 34,
+    "threads": "Pets and closed doors. Does yours follow you into the bathroom, wait outside, or scream?",
+    "x": "Does your pet follow you into the bathroom, wait outside, or scream?",
+    "headline": "Does your pet follow you into the bathroom?",
+    "animal": "Bengal",
+    "tag": "Pets",
+    "used": {
+      "threads": null,
+      "x": null
+    }
+  },
+  {
+    "id": 35,
+    "threads": "The pet species you kept once and would never keep again, and why. Some animals are just not for everyone.",
+    "x": "Which pet species would you never keep again, and why?",
+    "headline": "The pet you would never keep again",
+    "animal": "Green Iguana",
+    "tag": "pet",
+    "used": {
+      "threads": null,
+      "x": null
+    }
+  },
+  {
+    "id": 36,
+    "threads": "The pet you'd keep if money, space and the law were no object. Then the one you'd actually get.",
+    "x": "What pet would you keep if money, space and the law were no object?",
+    "headline": "Your dream pet if nothing stood in the way",
+    "animal": "Sugar Glider",
+    "tag": "pet",
+    "used": {
+      "threads": null,
+      "x": null
+    }
+  },
+  {
+    "id": 37,
+    "threads": "Your pet likes someone else in the house more than you. Who, and what did they do to earn it?",
+    "x": "Who in your house does your pet like more than you?",
+    "headline": "Who does your pet like more than you?",
+    "animal": "Lovebird",
+    "tag": "pet",
+    "used": {
+      "threads": null,
+      "x": null
+    }
+  },
+  {
+    "id": 38,
+    "threads": "Nail trims, baths, beak checks. Which grooming job does your pet fight hardest?",
+    "x": "Which grooming job does your pet fight hardest?",
+    "headline": "Which grooming job does your pet fight hardest?",
+    "animal": "Chinchilla",
+    "tag": "pet",
+    "used": {
+      "threads": null,
+      "x": null
+    }
+  },
+  {
+    "id": 39,
+    "threads": "Does your pet travel with you or stay home with a sitter? And which one of you handles it worse?",
+    "x": "Does your pet travel with you or stay home? Who handles it worse?",
+    "headline": "Does your pet travel with you or stay home?",
+    "animal": "Medium dog",
+    "tag": "pet",
+    "used": {
+      "threads": null,
+      "x": null
+    }
+  },
+  {
+    "id": 40,
+    "threads": "Vets call it 'a little chunky'. Has your pet ever been put on a diet, and did it work?",
+    "x": "Has your pet ever been put on a diet? Did it work?",
+    "headline": "Has your pet ever been put on a diet?",
+    "animal": "Pacman Frog",
+    "tag": "pet",
+    "used": {
+      "threads": null,
+      "x": null
+    }
+  },
+  {
+    "id": 41,
+    "threads": "Rescue pets rarely come with a birthday. How did you guess your pet's age? Teeth, the shelter's estimate, a vibe?",
+    "x": "If you don't know your pet's exact age, how did you guess it?",
+    "headline": "How did you guess your pet's age?",
+    "animal": "Box Turtle",
+    "tag": "pets",
+    "used": {
+      "threads": null,
+      "x": null
+    }
+  },
+  {
+    "id": 42,
+    "threads": "The habit your pet has that you've stopped trying to fix. You've made peace with it.",
+    "x": "What habit of your pet's have you stopped trying to fix?",
+    "headline": "The pet habit you have given up fixing",
+    "animal": "Cockatoo",
+    "tag": "pet",
+    "used": {
+      "threads": null,
+      "x": null
+    }
+  },
+  {
+    "id": 43,
+    "threads": "Words your pet knows for sure. Dinner, walk, vet. Which one gets the biggest reaction?",
+    "x": "Which word gets the biggest reaction from your pet?",
+    "headline": "Which word gets the biggest reaction from your pet?",
+    "animal": "Large dog",
+    "tag": "pet",
+    "used": {
+      "threads": null,
+      "x": null
+    }
+  },
+  {
+    "id": 44,
+    "threads": "Pets take over rooms. Where does your pet's enclosure live, and did anyone else in the house agree to it?",
+    "x": "Where does your pet's enclosure live in your home?",
+    "headline": "Where does your pet's enclosure live?",
+    "animal": "Axolotl",
+    "tag": "Pets",
+    "used": {
+      "threads": null,
+      "x": null
+    }
+  },
+  {
+    "id": 45,
+    "threads": "Pets have a welcome home routine. Full body wiggle, a single glance, or nothing until the food bag moves. What's yours?",
+    "x": "What does your pet do when you walk in the door?",
+    "headline": "What does your pet do when you come home?",
+    "animal": "Budgie",
+    "tag": "Pets",
+    "used": {
+      "threads": null,
+      "x": null
+    }
+  },
+  {
+    "id": 46,
+    "threads": "How long are your pet sitter instructions? One text, one page, or a laminated binder?",
+    "x": "How long are your pet sitter instructions? One text or a binder?",
+    "headline": "How long are your pet sitter instructions?",
+    "animal": "Tarantula",
+    "tag": "pet",
+    "used": {
+      "threads": null,
+      "x": null
+    }
+  },
+  {
+    "id": 47,
+    "threads": "The smell you've gotten used to that visitors always notice. Every pet has one.",
+    "x": "Which pet smell have you stopped noticing that visitors never miss?",
+    "headline": "The pet smell you stopped noticing",
+    "animal": "Hedgehog",
+    "tag": "pet",
+    "used": {
+      "threads": null,
+      "x": null
+    }
+  },
+  {
+    "id": 48,
+    "threads": "Most expensive thing your pet has destroyed. Charger cables don't count, everyone has lost those.",
+    "x": "Most expensive thing your pet has destroyed?",
+    "headline": "The most expensive thing your pet destroyed",
+    "animal": "Degu",
+    "tag": "pet",
+    "used": {
+      "threads": null,
+      "x": null
+    }
+  },
+  {
+    "id": 49,
+    "threads": "Post the best photo you've ever taken of your pet. No new photos, the archive only.",
+    "x": "Post the best photo you've ever taken of your pet.",
+    "headline": "The best photo you have ever taken of your pet",
+    "animal": "Veiled Chameleon",
+    "tag": "pet",
+    "used": {
+      "threads": null,
+      "x": null
+    }
+  },
+  {
+    "id": 50,
+    "threads": "Pets and the furniture: allowed, not allowed, or 'not allowed' but currently on the couch?",
+    "x": "Is your pet allowed on the furniture? Be honest.",
+    "headline": "Is your pet allowed on the furniture?",
+    "animal": "Small dog",
+    "tag": "Pets",
+    "used": {
+      "threads": null,
+      "x": null
+    }
+  },
+  {
+    "id": 51,
+    "threads": "Bath day. Does your pet tolerate it, enjoy it, or treat it as a betrayal?",
+    "x": "Does your pet tolerate baths, enjoy them, or treat them as betrayal?",
+    "headline": "How does your pet feel about bath day?",
+    "animal": "Canary",
+    "tag": "pet",
+    "used": {
+      "threads": null,
+      "x": null
+    }
+  },
+  {
+    "id": 52,
+    "threads": "Shedding season hits pets with fur and pets with scales. What's the worst shed you've dealt with?",
+    "x": "Worst shed you've dealt with, fur or scales?",
+    "headline": "The worst shed you have dealt with",
+    "animal": "Hognose Snake",
+    "tag": "pets",
+    "used": {
+      "threads": null,
+      "x": null
+    }
+  }
+]
