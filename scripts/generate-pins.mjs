@@ -95,6 +95,9 @@ function resolveQuestion(spec) {
     image,
     kicker: spec.kicker || 'Question for pet owners',
     title: q.headline,
+    // A crop that loses the animal is fixed once, in the bank, not per spec.
+    focusX: spec.focusX ?? q.focusX,
+    focusY: spec.focusY ?? q.focusY,
     layout: undefined,
   };
 }

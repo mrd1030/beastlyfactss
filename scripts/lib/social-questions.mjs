@@ -7,6 +7,7 @@
 //     "headline": "short form for the question card",
 //     "animal": "Beagle",                    which photo the question card shows
 //     "tag": "pet",                          the word in `threads` that carries the one topic tag
+//     "focusX": 0.55,                        optional, as on any card spec: pins the crop
 //     "used": { "threads": null, "x": null } } date the platform ran it, or null
 //
 // Shared by scripts/social-inventory.mjs (propose, mark) and

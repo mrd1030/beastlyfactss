@@ -105,7 +105,8 @@
     "used": {
       "threads": null,
       "x": null
-    }
+    },
+    "focusX": 0.55
   },
   {
     "id": 10,
