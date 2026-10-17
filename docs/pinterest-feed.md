@@ -81,7 +81,7 @@ own little search index:
 - Small Pet Care
 - Pet Bird Care
 - Tarantula & Invertebrate Care
-- Turtle & Tortoise Care
+- Turtle and Tortoise Care
 - Frog & Amphibian Care
 - Exotic Pet Laws by State
 - Best Pets for Beginners
