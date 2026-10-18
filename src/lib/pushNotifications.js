@@ -116,13 +116,27 @@ export async function restorePushSubscription() {
   const existing = await reg.pushManager.getSubscription();
   if (existing) {
     setPushOptIn(true);
+    await syncBeastleReminder(existing);
     return existing;
   }
 
   if (!getPushOptIn()) return null;
   if (Notification.permission !== 'granted') return null;
 
-  return createSubscription(reg).catch(() => null);
+  const sub = await createSubscription(reg).catch(() => null);
+  if (sub) await syncBeastleReminder(sub);
+  return sub;
+}
+
+// A re-minted subscription is a new push_subscriptions row, and new rows start
+// with beastle_reminder off. The toggle still read "on" from localStorage, so
+// the fact pings kept arriving on the new endpoint while the Beastle ping went
+// to the dead one. Re-flag whatever endpoint this device holds now.
+async function syncBeastleReminder(sub) {
+  if (!isSupabaseConfigured || !getBeastleReminder()) return;
+  await supabase
+    .rpc('set_beastle_reminder', { p_endpoint: sub.toJSON().endpoint, p_on: true })
+    .then(() => {}, () => {});
 }
 
 export async function unsubscribeFromPush() {
