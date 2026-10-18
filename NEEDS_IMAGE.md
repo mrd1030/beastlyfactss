@@ -17,7 +17,7 @@ The five October heroes and the five parked facts all landed the same day.
 
 None. All 17 animal-day heroes (docs/NOV_DEC_ANIMAL_DAYS.md) landed on
 2026-10-18, owner-generated, installed at 1168x784 through mozjpeg at quality
-80. Five arrived at 1264x848 or 1728x1152 and were scaled down, never up.
+80. The 13 that arrived larger (1264x848 or 1728x1152) were scaled down, never up.
 
 ## Facts awaiting images
 
