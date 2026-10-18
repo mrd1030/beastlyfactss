@@ -22,13 +22,6 @@ Plan: docs/NOV_DEC_ANIMAL_DAYS.md.
 
 | Needed by | Slug | Subject |
 |---|---|---|
-| Tue 3 Nov | world-numbat-day | numbat |
-| Fri 6 Nov | fancy-rat-and-mouse-day | fancy rat |
-| Tue 10 Nov | steve-irwin-day | Galapagos tortoise |
-| Fri 13 Nov | world-falconry-day | peregrine falcon |
-| Fri 13 Nov | world-anteater-day | giant anteater |
-| Fri 20 Nov | evolution-day | Darwin's finch |
-| Tue 24 Nov | international-jaguar-day | jaguar |
 | Fri 27 Nov | national-mutt-day | mixed-breed dog |
 | Tue 1 Dec | international-cheetah-day | cheetah |
 | Fri 4 Dec | national-llama-day | llama |
