@@ -8,6 +8,31 @@ Newest first.
 
 ---
 
+## 2026-10-18: the 11 facts that were borrowing another page's photo
+
+Found 2026-10-04: these facts had no FACT_IMAGES entry and fell back to
+ANIMAL_IMAGES, showing a hub, encyclopedia or fun-facts hero. Photos generated
+by the owner from per-fact prompts, re-encoded through mozjpeg at quality 80,
+not cropped, not enlarged. Registered by id in `src/lib/data/factImages.js`
+and `public/_worker.js`. The ANIMAL_IMAGES fallbacks for these animals are
+still in place.
+
+| id | Fact | File | Size |
+|---|---|---|---|
+| 1 | Octopus, Three Hearts of Love | `octopus-5.jpg` | 1168x784 |
+| 2 | Hedgehog, Spiny Situation | `hedgehog-3.jpg` | 1168x784 |
+| 5 | Bearded Dragon, Mood Ring Lizards | `bearded-dragon-4.jpg` | 1264x848 |
+| 6 | Rabbit, Purring Bunnies | `rabbit-3.jpg` | 1264x848 |
+| 14 | Axolotl, Axolotl Superpowers | `axolotl-3.jpg` | 1168x784 |
+| 39 | Ball Python, Months Without Eating | `ball-python.jpg` | 1264x848 |
+| 41 | Leopard Gecko, Tail Fat Reserves | `leopard-gecko.jpg` | 1264x848 |
+| 42 | Crested Gecko, Rediscovered in 1994 | `crested-gecko.jpg` | 1168x784 |
+| 56 | Guinea Pig, Guinea Pigs Are Social | `guinea-pig-3.jpg` | 1168x784 |
+| 72 | Cuttlefish, Hypnotic Skin | `cuttlefish-3.jpg` | 1168x784 |
+| 149 | Boa Constrictor, Not a Suffocation Squeeze | `boa-constrictor.jpg` | 1264x848 |
+
+---
+
 ## 2026-10-05: the 2026-10-05 run, five facts
 
 Five fact photos, generated and accepted the day the prompts were written,

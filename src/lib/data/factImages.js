@@ -372,6 +372,18 @@ export const FACT_IMAGES = {
   345: '/assets/facts/maned-wolf.jpg', // "Not Really a Wolf"
   346: '/assets/facts/sarcastic-fringehead.jpg', // "Mouth to Mouth Combat"
   347: '/assets/facts/velvet-worm.jpg', // "The Slime Cannon"
+  // Own photos for the 11 facts that were borrowing another page's (2026-10-18).
+  1: '/assets/facts/octopus-5.jpg', // "Three Hearts of Love"
+  2: '/assets/facts/hedgehog-3.jpg', // "Spiny Situation"
+  5: '/assets/facts/bearded-dragon-4.jpg', // "Mood Ring Lizards"
+  6: '/assets/facts/rabbit-3.jpg', // "Purring Bunnies"
+  14: '/assets/facts/axolotl-3.jpg', // "Axolotl Superpowers"
+  39: '/assets/facts/ball-python.jpg', // "Months Without Eating"
+  41: '/assets/facts/leopard-gecko.jpg', // "Tail Fat Reserves"
+  42: '/assets/facts/crested-gecko.jpg', // "Rediscovered in 1994"
+  56: '/assets/facts/guinea-pig-3.jpg', // "Guinea Pigs Are Social"
+  72: '/assets/facts/cuttlefish-3.jpg', // "Hypnotic Skin"
+  149: '/assets/facts/boa-constrictor.jpg', // "Not a Suffocation Squeeze"
 };
 
 // Site-relative path for <img src>, or null if this fact has no dedicated photo yet.
