@@ -264,7 +264,11 @@ export const ANIMAL_EVENTS = [
   },
   {
     id: 'national-axolotl-day', name: 'National Axolotl Day', emoji: '🦎',
-    month: 11, day: 12,
+    // Mexico's Día Nacional del Ajolote, 1 February, declared by the Senate
+    // in 2018 and marking the axolotl genome paper (Nature, 1 Feb 2018). It sat
+    // on 12 November here until 2026-10-18; nothing anywhere supports that
+    // date. https://www.uaeh.edu.mx/suma/noticias/noticia/600
+    month: 2, day: 1,
     animals: ['Axolotl'],
     categories: ['Amphibians'],
     blurb: 'Permanently juvenile, endlessly regenerating, nearly extinct in the wild.',
@@ -292,5 +296,190 @@ export const ANIMAL_EVENTS = [
     animals: ['Shark'],
     categories: ['Aquatic Life'],
     blurb: 'Sharks are older than trees. That is the whole pitch.',
+  },
+
+  // November and December 2026, added 2026-10-18 so every week from late
+  // October to mid December carries at least two days. Each date was checked
+  // against the founding organization; the sources and the ones whose origin
+  // is unverified are in docs/NOV_DEC_ANIMAL_DAYS.md.
+  {
+    id: 'hagfish-day', name: 'Hagfish Day', emoji: '🐟',
+    // Floating: WhaleTimes, which created it in 2009, posts the date each
+    // year; it falls on the third Wednesday of October. https://whaletimes.org/
+    ranges: { 2026: { start: '10-21', end: '10-21' }, 2027: { start: '10-20', end: '10-20' } },
+    animals: ['Hagfish'],
+    categories: ['Aquatic Life'],
+    blurb: 'A pint of slime in under half a second.',
+  },
+  {
+    id: 'international-snow-leopard-day', name: 'International Snow Leopard Day', emoji: '🐆',
+    // Set by the 12 range-country governments in the Bishkek Declaration,
+    // 23 October 2013. https://snowleopard.org/the-silent-roar-heard-around-the-world-every-october/
+    month: 10, day: 23,
+    // Never the bare 'Leopard': it would pick up the leopard gecko.
+    animals: ['Snow Leopard'],
+    categories: ['Wild Animals'],
+    blurb: 'The big cat that cannot roar.',
+  },
+  {
+    id: 'national-black-cat-day', name: 'National Black Cat Day', emoji: '🐈‍⬛',
+    // Cats Protection (UK), launched 27 October 2011.
+    // https://www.cats.org.uk/cats-blog/history-of-national-black-cat-day
+    month: 10, day: 27,
+    animals: ['Cat'],
+    exclude: ['Lion', 'Big Cat'],
+    categories: ['Cats'],
+    blurb: 'The wait for a home got shorter. It took a campaign.',
+  },
+  {
+    id: 'world-lemur-day', name: 'World Lemur Day', emoji: '🐒',
+    // Floating: the last Friday in October, per the Lemur Conservation
+    // Network. https://www.lemurconservationnetwork.org/world-lemur-day/
+    ranges: { 2026: { start: '10-30', end: '10-30' }, 2027: { start: '10-29', end: '10-29' } },
+    animals: ['Lemur', 'Aye-Aye'],
+    categories: ['Wild Animals'],
+    blurb: 'The most threatened mammal group on Earth.',
+  },
+  {
+    id: 'polar-bear-week', name: 'Polar Bear Week', emoji: '🐻‍❄️',
+    // Polar Bears International sets the week each year ("the first week of
+    // November"); past runs do not follow a rule, so add 2027 when PBI posts it.
+    // https://polarbearsinternational.org/news-media/events/polar-bear-week/
+    ranges: { 2026: { start: '11-01', end: '11-07' } },
+    animals: ['Polar Bear'],
+    categories: ['Wild Animals'],
+    blurb: 'Waiting on Hudson Bay to freeze.',
+  },
+  {
+    id: 'world-jellyfish-day', name: 'World Jellyfish Day', emoji: '🪼',
+    // Date consistent across sources, no founder anywhere. Aquariums mark it.
+    month: 11, day: 3,
+    animals: ['Jellyfish'],
+    categories: ['Aquatic Life', 'Invertebrates'],
+    blurb: 'No brain, no heart, and one species that ages backwards.',
+  },
+  {
+    id: 'world-numbat-day', name: 'World Numbat Day', emoji: '🐜',
+    // Floating: the first Saturday in November, per Project Numbat, which
+    // started it at Perth Zoo in 2015.
+    // https://www.numbat.org.au/news/2015/10/15/celebrate-world-numbat-day-on-saturday-7-november
+    ranges: { 2026: { start: '11-07', end: '11-07' }, 2027: { start: '11-06', end: '11-06' } },
+    animals: ['Numbat'],
+    categories: ['Wild Animals'],
+    blurb: 'Down to about 300, and now off the endangered list.',
+  },
+  {
+    id: 'fancy-rat-and-mouse-day', name: 'Fancy Rat & Mouse Day', emoji: '🐀',
+    // The American Fancy Rat & Mouse Association. https://www.afrma.org/
+    month: 11, day: 12,
+    animals: ['Rat', 'Mouse'],
+    exclude: ['Naked Mole Rat', 'Mole Rat'],
+    categories: ['Small & Exotic Pets'],
+    blurb: 'Bred for temperament for over a century.',
+  },
+  {
+    id: 'steve-irwin-day', name: 'Steve Irwin Day', emoji: '🐊',
+    // Australia Zoo, since 2007, on the birthday of Harriet the Galapagos
+    // tortoise, not the anniversary of his death.
+    // https://www.australiazoo.com.au/whats-on/events/steve-irwin-day/
+    month: 11, day: 15,
+    animals: ['Crocodile', 'Tortoise'],
+    categories: ['Wild Animals'],
+    blurb: 'Set on a tortoise birthday, and the tortoise had a myth.',
+  },
+  {
+    id: 'world-falconry-day', name: 'World Falconry Day', emoji: '🦅',
+    // International Association for Falconry, marking UNESCO's listing of
+    // falconry on 16 November 2010. https://iaf.org/word-falconry-day/
+    month: 11, day: 16,
+    animals: ['Falcon', 'Hawk', 'Eagle'],
+    categories: ['Birds', 'Wild Animals'],
+    blurb: 'Falconers helped bring the peregrine back.',
+  },
+  {
+    id: 'world-anteater-day', name: 'World Anteater Day', emoji: '🐜',
+    // Instituto Jurumi and Instituto Tamanduá, 2014, moved from 29 to 19
+    // November in 2020. Many calendars still print the 29th.
+    // https://prefeitura.pbh.gov.br/fundacao-de-parques-e-zoobotanica/informacoes/educacao-ambiental/datas-comemorativas/dia-mundial-do-tamandua
+    month: 11, day: 19,
+    animals: ['Anteater'],
+    categories: ['Wild Animals'],
+    blurb: 'A tongue longer than its head, and roads it cannot cross.',
+  },
+  {
+    id: 'evolution-day', name: 'Evolution Day', emoji: '🧬',
+    // On the Origin of Species went on sale 24 November 1859. The date is
+    // settled; no organization claims the day.
+    // https://darwin-online.org.uk/DarwinCensus.html
+    month: 11, day: 24,
+    // Every animal, so it matches none, same as World Animal Day.
+    animals: [],
+    categories: ['Wild Animals'],
+    blurb: 'The book did not sell out the way the story says.',
+  },
+  {
+    id: 'international-jaguar-day', name: 'International Jaguar Day', emoji: '🐆',
+    // Jaguar 2030 Statement (14 range countries, 2018), launched at CBD COP14.
+    // https://www.internationaljaguarday.org/
+    month: 11, day: 29,
+    animals: ['Jaguar'],
+    categories: ['Wild Animals'],
+    blurb: 'Near Threatened overall. Nearly every population is worse.',
+  },
+  {
+    id: 'national-mutt-day', name: 'National Mutt Day', emoji: '🐕',
+    // 2 December (also 31 July). Date verified on the day's own site; the
+    // founder credit circulates only on aggregators.
+    // https://www.theholidayguild.com/nationalmuttday
+    month: 12, day: 2,
+    animals: ['Dog'],
+    categories: ['Dogs'],
+    blurb: 'Breed explains about a tenth of what a dog does.',
+  },
+  {
+    id: 'international-cheetah-day', name: 'International Cheetah Day', emoji: '🐆',
+    // Cheetah Conservation Fund, 2010, on the birthday of Khayam.
+    // https://cheetah.org/press-releases/cheetah-conservation-fund-conservation-leads-global-celebration-of-international-cheetah-day-4-december/
+    month: 12, day: 4,
+    animals: ['Cheetah'],
+    categories: ['Wild Animals'],
+    blurb: 'The fastest cat cannot roar, and cannot keep it up.',
+  },
+  {
+    id: 'national-llama-day', name: 'National Llama Day', emoji: '🦙',
+    // Date consistent across sources, no founder found.
+    month: 12, day: 9,
+    animals: ['Llama', 'Alpaca'],
+    categories: ['Pet Care'],
+    blurb: 'They mostly spit at each other.',
+  },
+  {
+    id: 'national-day-of-the-horse', name: 'National Day of the Horse', emoji: '🐴',
+    // S.Res.452 (2004) named 13 December 2004 only; the American Horse
+    // Council has kept it every year since.
+    // https://www.congress.gov/108/bills/sres452/BILLS-108sres452ats.pdf
+    month: 12, day: 13,
+    animals: ['Horse'],
+    categories: ['Pet Care'],
+    blurb: 'They doze standing up. They dream lying down.',
+  },
+  {
+    id: 'monkey-day', name: 'Monkey Day', emoji: '🐒',
+    // Casey Sorrow and Eric Millikin, 2000.
+    month: 12, day: 14,
+    animals: ['Monkey', 'Marmoset', 'Capuchin'],
+    categories: ['Wild Animals'],
+    blurb: 'Its founder says do not buy one.',
+  },
+  {
+    id: 'christmas-bird-count', name: 'Christmas Bird Count', emoji: '🐦',
+    // Audubon, 14 December to 5 January every year. activeWindow() cannot
+    // span New Year inside one year's range, so the run is declared to 31
+    // December and the article carries the full window.
+    // https://www.audubon.org/community-science/christmas-bird-count/join-christmas-bird-count
+    ranges: { 2026: { start: '12-14', end: '12-31' }, 2027: { start: '12-14', end: '12-31' } },
+    animals: ['Crow', 'Eagle', 'Cardinal'],
+    categories: ['Birds'],
+    blurb: 'It started as the alternative to a shooting contest.',
   },
 ];
