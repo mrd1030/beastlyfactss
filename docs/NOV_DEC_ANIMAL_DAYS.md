@@ -11,8 +11,10 @@ Awareness Day and International Wombat Day.
 
 Articles wait in `content/_scheduled-animal-days/` and ship through
 `scripts/release-queue.json` (`"hub": false`), which the morning workflow on
-main runs. Release is three days before the day, which is also when the homepage
-band (`EVENT_WINDOW_DAYS = 3`) starts showing it. **The queue holds any article
+main runs. Releases go out on Tuesdays and Fridays only (owner, 2026-10-18):
+each article ships on the last Tuesday or Friday at least three days before its
+day, so it is live before the homepage band (`EVENT_WINDOW_DAYS = 3`) starts
+showing it. **The queue holds any article
 whose hero is not in `public/` yet**, so a missing hero delays that article
 rather than breaking the deploy. This branch has to be on main before 20
 October for the first one to go out on time.
@@ -22,24 +24,24 @@ October for the first one to go out on time.
 | Oct 19-25 | Reptile Awareness Day | Wed 21 Oct | `reptile-awareness-day` | live | date only |
 | | Hagfish Day | Wed 21 Oct | `hagfish-slime-how-it-works` (existing) | live | WhaleTimes, 2009 |
 | | International Wombat Day | Thu 22 Oct | `international-wombat-day` | live | date only |
-| | International Snow Leopard Day | Fri 23 Oct | `international-snow-leopard-day` | 20 Oct | 12 range governments, Bishkek 2013 |
-| Oct 26-Nov 1 | National Black Cat Day | Tue 27 Oct | `national-black-cat-day` | 24 Oct | Cats Protection, 2011 |
-| | World Lemur Day | Fri 30 Oct | `world-lemur-day` | 27 Oct | Lemur Conservation Network (last Friday of Oct) |
-| | Polar Bear Week | Sun 1 to Sat 7 Nov | `polar-bear-week` | 29 Oct | Polar Bears International (set yearly) |
+| | International Snow Leopard Day | Fri 23 Oct | `international-snow-leopard-day` | Tue 20 Oct | 12 range governments, Bishkek 2013 |
+| Oct 26-Nov 1 | National Black Cat Day | Tue 27 Oct | `national-black-cat-day` | Fri 23 Oct | Cats Protection, 2011 |
+| | World Lemur Day | Fri 30 Oct | `world-lemur-day` | Tue 27 Oct | Lemur Conservation Network (last Friday of Oct) |
+| | Polar Bear Week | Sun 1 to Sat 7 Nov | `polar-bear-week` | Tue 27 Oct | Polar Bears International (set yearly) |
 | Nov 2-8 | World Jellyfish Day | Tue 3 Nov | `immortal-jellyfish-turritopsis-dohrnii-explained` (existing) | live | date only |
-| | World Numbat Day | Sat 7 Nov | `world-numbat-day` | 4 Nov | Project Numbat, 2015 (first Saturday of Nov) |
-| Nov 9-15 | Fancy Rat & Mouse Day | Thu 12 Nov | `fancy-rat-and-mouse-day` | 9 Nov | AFRMA, start year unknown |
-| | Steve Irwin Day | Sun 15 Nov | `steve-irwin-day` | 12 Nov | Australia Zoo, 2007 |
-| Nov 16-22 | World Falconry Day | Mon 16 Nov | `world-falconry-day` | 13 Nov | International Association for Falconry |
-| | World Anteater Day | Thu 19 Nov | `world-anteater-day` | 16 Nov | Instituto Jurumi and Instituto Tamanduá, 2014 |
-| Nov 23-29 | Evolution Day | Tue 24 Nov | `evolution-day` | 21 Nov | date only |
-| | International Jaguar Day | Sun 29 Nov | `international-jaguar-day` | 26 Nov | Jaguar 2030 Statement, 2018 |
-| Nov 30-Dec 6 | National Mutt Day | Wed 2 Dec | `national-mutt-day` | 29 Nov | date only |
-| | International Cheetah Day | Fri 4 Dec | `international-cheetah-day` | 1 Dec | Cheetah Conservation Fund, 2010 |
-| Dec 7-13 | National Llama Day | Wed 9 Dec | `national-llama-day` | 6 Dec | date only |
-| | National Day of the Horse | Sun 13 Dec | `national-day-of-the-horse` | 10 Dec | S.Res.452 (2004), kept by the American Horse Council |
-| Dec 14-20 | Monkey Day | Mon 14 Dec | `monkey-day` | 11 Dec | Casey Sorrow and Eric Millikin, 2000 |
-| | Christmas Bird Count | 14 Dec to 5 Jan | `christmas-bird-count` | 11 Dec | Audubon, 1900 |
+| | World Numbat Day | Sat 7 Nov | `world-numbat-day` | Tue 3 Nov | Project Numbat, 2015 (first Saturday of Nov) |
+| Nov 9-15 | Fancy Rat & Mouse Day | Thu 12 Nov | `fancy-rat-and-mouse-day` | Fri 6 Nov | AFRMA, start year unknown |
+| | Steve Irwin Day | Sun 15 Nov | `steve-irwin-day` | Tue 10 Nov | Australia Zoo, 2007 |
+| Nov 16-22 | World Falconry Day | Mon 16 Nov | `world-falconry-day` | Fri 13 Nov | International Association for Falconry |
+| | World Anteater Day | Thu 19 Nov | `world-anteater-day` | Fri 13 Nov | Instituto Jurumi and Instituto Tamanduá, 2014 |
+| Nov 23-29 | Evolution Day | Tue 24 Nov | `evolution-day` | Fri 20 Nov | date only |
+| | International Jaguar Day | Sun 29 Nov | `international-jaguar-day` | Tue 24 Nov | Jaguar 2030 Statement, 2018 |
+| Nov 30-Dec 6 | National Mutt Day | Wed 2 Dec | `national-mutt-day` | Fri 27 Nov | date only |
+| | International Cheetah Day | Fri 4 Dec | `international-cheetah-day` | Tue 1 Dec | Cheetah Conservation Fund, 2010 |
+| Dec 7-13 | National Llama Day | Wed 9 Dec | `national-llama-day` | Fri 4 Dec | date only |
+| | National Day of the Horse | Sun 13 Dec | `national-day-of-the-horse` | Tue 8 Dec | S.Res.452 (2004), kept by the American Horse Council |
+| Dec 14-20 | Monkey Day | Mon 14 Dec | `monkey-day` | Fri 11 Dec | Casey Sorrow and Eric Millikin, 2000 |
+| | Christmas Bird Count | 14 Dec to 5 Jan | `christmas-bird-count` | Fri 11 Dec | Audubon, 1900 |
 
 Hagfish Day and World Jellyfish Day reuse an article that is already live. Each
 one only got the `animalDay` flag.
