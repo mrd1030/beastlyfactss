@@ -68,10 +68,22 @@ function scheduledPath(slug) {
   return null;
 }
 
+// A page whose hero is not in public/ yet stays queued. check-images runs in
+// the build, not here, so shipping it would push a main that fails to deploy.
+function heroMissing(file) {
+  const m = fs.readFileSync(file, 'utf8').match(/^image: "(.*)"$/m);
+  return m && m[1].startsWith('/') && !fs.existsSync(path.join(ROOT, 'public', m[1].slice(1)));
+}
+
 const due = queue
   .filter((p) => p.date <= today)
   .map((p) => ({ ...p, from: scheduledPath(p.slug) }))
-  .filter((p) => p.from);
+  .filter((p) => p.from)
+  .filter((p) => {
+    if (!heroMissing(p.from)) return true;
+    console.log(`  held ${p.slug}: its hero image is not in public/ yet`);
+    return false;
+  });
 
 if (!due.length) {
   console.log(`Nothing due on ${today}.`);
@@ -187,16 +199,21 @@ for (const page of due) {
     }
   }
 
-  const excerpt = frontmatterValue(text, 'excerpt');
-  if (!excerpt) throw new Error(`${page.slug}: no excerpt for the hub line`);
-  hub = addToHub(hub, hubGroupFor(page), hubName(page, text), page.slug, excerpt);
+  // Pages that are not legal guides (animal days) set "hub": false.
+  if (page.hub !== false) {
+    const excerpt = frontmatterValue(text, 'excerpt');
+    if (!excerpt) throw new Error(`${page.slug}: no excerpt for the hub line`);
+    hub = addToHub(hub, hubGroupFor(page), hubName(page, text), page.slug, excerpt);
+  }
   shipped.push(page.slug);
   console.log(`  shipped ${page.slug} -> content/${page.dir}/`);
 }
 
-hub = setFrontmatter(hub, 'lastUpdated', today);
-hub = setFrontmatter(hub, 'lastReviewed', today);
-fs.writeFileSync(HUB, hub);
+if (hub !== fs.readFileSync(HUB, 'utf8')) {
+  hub = setFrontmatter(hub, 'lastUpdated', today);
+  hub = setFrontmatter(hub, 'lastReviewed', today);
+  fs.writeFileSync(HUB, hub);
+}
 
 const run = (file, ...a) => execFileSync('node', [path.join(ROOT, 'scripts', file), ...a], { cwd: ROOT, stdio: 'inherit' });
 run('sync-articles.js');

@@ -8,7 +8,9 @@
     "inbound lists edits to live articles that should carry a link to the page",
     "from the day it goes live: a file, an exact sentence to find, and its",
     "replacement. Pages that link each other must share a day or the target",
-    "ships first; the order below respects that, so change dates in pairs."
+    "ships first; the order below respects that, so change dates in pairs.",
+    "Pages that are not legal guides (animal days) set \"hub\": false and skip the hub index.",
+    "A page whose hero image is not in public/ yet is held until it is."
   ],
   "pages": [
     {
