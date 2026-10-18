@@ -52,10 +52,22 @@ export const ARTICLE_TOPIC = {
   'sea-otters-salt-marsh-erosion-elkhorn-slough': 'conservation',
 
   // Animal days: the awareness days and where they came from.
+  'christmas-bird-count': 'animal-days',
+  'evolution-day': 'animal-days',
+  'international-cheetah-day': 'animal-days',
+  'international-jaguar-day': 'animal-days',
   'international-sloth-day': 'animal-days',
+  'international-snow-leopard-day': 'animal-days',
   'international-wombat-day': 'animal-days',
+  'monkey-day': 'animal-days',
+  'polar-bear-week': 'animal-days',
   'reptile-awareness-day': 'animal-days',
+  'steve-irwin-day': 'animal-days',
   'world-animal-day': 'animal-days',
+  'world-anteater-day': 'animal-days',
+  'world-falconry-day': 'animal-days',
+  'world-lemur-day': 'animal-days',
+  'world-numbat-day': 'animal-days',
   'world-octopus-day': 'animal-days',
 
   // Spotlights: one animal, the whole picture.
