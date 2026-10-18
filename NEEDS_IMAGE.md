@@ -15,19 +15,9 @@ The five October heroes and the five parked facts all landed the same day.
 
 ## Guide heroes still needed
 
-The animal-day articles in `content/_scheduled-animal-days/` still without a hero, each at
-`/assets/images/<slug>.jpg`, 3:2 at 1168x784. The release queue holds an
-article until its hero is in, so the "needed by" date is its release morning.
-Plan: docs/NOV_DEC_ANIMAL_DAYS.md.
-
-| Needed by | Slug | Subject |
-|---|---|---|
-| Fri 27 Nov | national-mutt-day | mixed-breed dog |
-| Tue 1 Dec | international-cheetah-day | cheetah |
-| Fri 4 Dec | national-llama-day | llama |
-| Tue 8 Dec | national-day-of-the-horse | horse |
-| Fri 11 Dec | monkey-day | monkey |
-| Fri 11 Dec | christmas-bird-count | winter songbird at a feeder |
+None. All 17 animal-day heroes (docs/NOV_DEC_ANIMAL_DAYS.md) landed on
+2026-10-18, owner-generated, installed at 1168x784 through mozjpeg at quality
+80. Five arrived at 1264x848 or 1728x1152 and were scaled down, never up.
 
 ## Facts awaiting images
 
