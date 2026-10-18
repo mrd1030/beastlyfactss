@@ -15,17 +15,13 @@ The five October heroes and the five parked facts all landed the same day.
 
 ## Guide heroes still needed
 
-The 17 animal-day articles in `content/_scheduled-animal-days/`, each at
+The animal-day articles in `content/_scheduled-animal-days/` still without a hero, each at
 `/assets/images/<slug>.jpg`, 3:2 at 1168x784. The release queue holds an
 article until its hero is in, so the "needed by" date is its release morning.
 Plan: docs/NOV_DEC_ANIMAL_DAYS.md.
 
 | Needed by | Slug | Subject |
 |---|---|---|
-| Tue 20 Oct | international-snow-leopard-day | snow leopard |
-| Fri 23 Oct | national-black-cat-day | black domestic cat |
-| Tue 27 Oct | world-lemur-day | lemur |
-| Tue 27 Oct | polar-bear-week | polar bear |
 | Tue 3 Nov | world-numbat-day | numbat |
 | Fri 6 Nov | fancy-rat-and-mouse-day | fancy rat |
 | Tue 10 Nov | steve-irwin-day | Galapagos tortoise |
