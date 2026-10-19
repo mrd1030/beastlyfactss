@@ -92,6 +92,42 @@ none.
 - 49: "only" and "not at other cats", "They invented the meow" (source says they more probably repurposed existing calls) and "each cat develops its own unique vocabulary"
 - 50: "known to promote bone healing" (a hypothesis in a conference abstract), "reduce stress" and "for both the cat and the human nearby"
 
+## Batch D: facts 51 to 75
+
+Results: `docs/fact-sources/batchD.json`. 0 confirmed, 25 partly, 0 unconfirmed.
+
+**Unconfirmed:**
+
+none.
+
+**Partly (these details could not be confirmed):**
+
+- 51: "specialized collarbone", "always land on their feet", "kicks in within milliseconds"
+- 52: "Skip the milk bowl" (source says most adult cats tolerate a small amount)
+- 53: "up to 70% of their lives sleeping", "conserve energy the rest of the time"
+- 54: "need social interaction daily", "highly intelligent birds that thrive on engagement"
+- 55: "at least 3 hours of exercise" (3 hours at midday was the restricted condition that raised stress), "not low-maintenance pets"
+- 56: "lonely, anxious, and even depressed"
+- 57: "Tortoises" in general (source is Aldabra giant tortoises), "include them in your will"
+- 58: "Many parrots can mimic not just single words but full sentences, tones, and even laughs"
+- 59: "from over a meter away" (source says within a few inches)
+- 60: "to extract grubs from bark", "pass these techniques on to their young, making it a form of animal culture"
+- 61: "Scientists once thought it was blood" (source: an ancient myth), "oily", "nickname 'blood sweat'"
+- 62: "farming for over 50 million years" as said of leafcutters (66 million years is for fungus-farming ants as a group)
+- 63: "and elephants", "a sense of self-awareness"
+- 64: "They eat, sleep, and even mate in the sky"
+- 65: "or kills prey instantly"
+- 66: "like a fingerprint", "by their stripe pattern alone", "within hours of being born"
+- 67: "in 1995", "elk behavior changed", and the rivers link (the 2025 re-analysis is about willows)
+- 68: "up to an inch per day" (source: more than 2 cm), "velvet, a soft skin", "harden each autumn"
+- 69: "permanently", "Finding Nemo got it backwards!"
+- 70: "nearly immune", "filmed getting bitten by cobras, going limp for a few minutes, then waking up and continuing to eat the snake"
+- 71: "perfectly mimic almost any sound", "car alarms, camera shutters", "human voices", "entire construction sites"
+- 72: "hypnotize", "freezes crabs and shrimp in place", "dazzling light show", "at high speed"
+- 73: "over 15 different species", "lionfish, flatfish, and sea snakes", "changing color in real time"
+- 74: "see in full color" (contradicted: lens eyes are color-blind), "arranged in four clusters", "no brain"
+- 75: "regional" (accents are shared within social groups, not regions)
+
 ## Batch E: facts 76 to 100
 
 Results: `docs/fact-sources/batchE.json`. 4 confirmed, 19 partly, 2 unconfirmed.
@@ -161,14 +197,14 @@ Results: `docs/fact-sources/batchF.json`. 3 confirmed, 21 partly, 1 unconfirmed.
 |---|---|---|
 | B | 1 to 25 | done |
 | C | 26 to 50 | done |
-| D | 51 to 75 | running |
+| D | 51 to 75 | done |
 | E | 76 to 100 | done |
 | F | 101 to 125 | done |
 | G | 126 to 150 | running |
 | H | 151 to 175 | running |
 | I | 176 to 200 | running |
 | J | 201 to 225 | running |
-| K | 226 to 250 | waiting |
+| K | 226 to 250 | running |
 | L | 251 to 275 | waiting |
 | M | 276 to 306 | waiting |
 | N | 307 to 348 | waiting |
