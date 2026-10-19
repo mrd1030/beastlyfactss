@@ -131,6 +131,7 @@ Do not buy traffic. Tranco rank, and Gridinsoft's popularity reading with it, ri
 
 - **Kind / severity:** problem, medium
 - **Status:** Not checked yet
+- **Batch check (Oct 19):** confirmed, low. ScamAdviser scores beastlyfacts.com 71, labeled 'Likely Safe'. The negatives it lists are WHOIS privacy, a low Tranco rank and a very young domain. **Fix:** No action. The finder's own conclusion is to keep WHOIS privacy, and 71 already means Likely Safe, so the item is informational and should not be rated medium.
 - **Claim:** ScamAdviser scores the site 71, in its 'Likely Safe' band (61 to 80), and concludes 'we think beastlyfacts.com is legit'. Its three negatives are WHOIS privacy, a low Tranco rank and a young domain. Only WHOIS privacy is in the owner's hands, and removing it would publish the owner's personal details. The 'verified' badge needs company registration papers, and the site names no business entity.
 - **Scope:** One third-party report, visible to anyone who checks the site on ScamAdviser or through its app.
 - **Fix (owner-decision):** Keep WHOIS privacy. ScamAdviser itself says it costs only 'a slightly lower score', and the alternative publishes a solo owner's personal details. Pursue the verified badge only if a business entity is ever formed.
@@ -139,6 +140,7 @@ Do not buy traffic. Tranco rank, and Gridinsoft's popularity reading with it, ri
 
 - **Kind / severity:** problem, low
 - **Status:** Not checked yet
+- **Batch check (Oct 19):** unverifiable, low. I could not confirm that no Trustpilot profile exists, because plain curl to Trustpilot returns 403 from this sandbox. Even if no review profiles exist, that matters little for a young content site. **Fix:** Optional owner decision. Do not open a review profile only to feed scanners, and never solicit reviews.
 - **Claim:** There is no Trustpilot page for the domain, and Gridinsoft and Norton show zero user reviews. Both Gridinsoft and ScamAdviser name reviews as a scoring input, so this input currently contributes nothing.
 - **Scope:** Domain-level reputation on Gridinsoft, ScamAdviser and Norton.
 - **Fix (owner-decision):** Owner decides whether to open a free Trustpilot business profile and link it from /contact/. Never solicit or reward reviews.
@@ -147,6 +149,7 @@ Do not buy traffic. Tranco rank, and Gridinsoft's popularity reading with it, ri
 
 - **Kind / severity:** problem, low
 - **Status:** Not checked yet
+- **Batch check (Oct 19):** partly, low. Cloudflare email obfuscation hides hello@beastlyfacts.com from non-JS fetchers on more pages than /contact/ and /about/. It also hits /terms/ (3 obfuscated spans) and /privacy/ (2), including the refund instruction on Terms. The address appears in 7 source files: Contact, About, Terms, Privacy, Donate, HowGuidesAreMade and ContactForm. **Fix:** Turn off Scrape Shield Email Address Obfuscation for the zone. That is simpler and covers every page; a path rule for only /contact/ and /about/ would leave Terms and Privacy hidden.
 - **Claim:** The source code renders hello@beastlyfacts.com on /contact/ and /about/. Cloudflare's email obfuscation rewrites it in the served HTML, so any fetcher that does not run JavaScript sees '[email protected]' and no address. ScamAdviser names 'the availability of contact details on the website' as a scoring input. Visitors with JavaScript see the address normally, on mobile and desktop. Whether ScamAdviser's crawler runs JavaScript is not documented.
 - **Scope:** /contact/ and /about/ as seen by non-JavaScript fetchers: scanners and some crawlers.
 - **Fix (external-settings):** In the Cloudflare dashboard, turn off Scrape Shield Email Address Obfuscation, or add a Configuration Rule that disables it for /contact/ and /about/, so the plain address is in the HTML.
@@ -155,6 +158,7 @@ Do not buy traffic. Tranco rank, and Gridinsoft's popularity reading with it, ri
 
 - **Kind / severity:** problem, low
 - **Status:** Not checked yet
+- **Batch check (Oct 19):** confirmed, low. The WebSite JSON-LD name is 'BeastlyFacts'. The Organization name, the <title> and og:site_name are all 'Beastly Facts'. Organization sameAs lists 4 profiles, while SOCIAL_LINKS has 6; Facebook and Threads are missing. **Fix:** As proposed: set the WebSite name to 'Beastly Facts' with alternateName 'BeastlyFacts', and add the Facebook and Threads URLs to sameAs.
 - **Claim:** The WebSite structured data, the input Google says it uses for the site name, says 'BeastlyFacts'. The Organization schema, the <title> and og:site_name all say 'Beastly Facts'. The Organization sameAs lists 4 social profiles, but the site visibly links 6: Facebook and Threads are missing. Google only, not visible to visitors. On a brand search crowded by a similarly named book, consistent entity signals are the part the owner controls.
 - **Scope:** Site-wide structured data, injected from App.jsx on every page. Google only.
 - **Fix (code):** In src/App.jsx set the WebSite name to "Beastly Facts" with "alternateName": "BeastlyFacts", and add the Facebook and Threads URLs from SocialIcons.jsx to the Organization sameAs.
@@ -163,6 +167,7 @@ Do not buy traffic. Tranco rank, and Gridinsoft's popularity reading with it, ri
 
 - **Kind / severity:** problem, low
 - **Status:** Not checked yet
+- **Batch check (Oct 19):** confirmed, low. Sucuri rates the site B overall. Its only notes are csp_unsafe_inline and no_stapled_ocsp; the TLS and domain ratings are A. The homepage has 4 non-JSON-LD inline scripts, and one of them is Cloudflare's injected challenge script. **Fix:** Accept the B. Moving to nonces would need a Worker to inject them on a static site, which is not worth the effort for a scanner grade no visitor sees.
 - **Claim:** Sucuri's overall rating is B, not A, because of two minor recommendations: a CSP that allows 'unsafe-inline', and no OCSP stapling. Neither is a detection. The CSP is set by a Cloudflare Transform Rule, not by the repo. One of the four inline scripts on the homepage is injected by Cloudflare per request, so a hash-only CSP cannot cover it.
 - **Scope:** Header-level, whole site. Visible only on Sucuri, not to visitors.
 - **Fix (external-settings):** Optional: move the three site-owned inline scripts into /assets, then replace 'unsafe-inline' in the Transform Rule's script-src with a per-request nonce, or accept the B as a hardening note.
@@ -179,6 +184,7 @@ Do not buy traffic. Tranco rank, and Gridinsoft's popularity reading with it, ri
 
 - **Kind / severity:** problem, low
 - **Status:** Not checked yet
+- **Batch check (Oct 19):** confirmed, low. The Wayback availability API returns no snapshots for beastlyfacts.com. robots.txt does not block archive crawlers. **Fix:** Optional: the owner saves the homepage, /about/ and /contact/ at web.archive.org/save from a desktop.
 - **Claim:** The Internet Archive's availability API returns no snapshot for beastlyfacts.com, for the root URL as of Oct 19, or for www.beastlyfacts.com. robots.txt does not block archive crawlers. The CDX index could not be queried from this sandbox, so the earliest capture date is unconfirmed. No scanner documents archive history as an input. Gridinsoft lists 'historic behavior' without defining it.
 - **Scope:** Domain history as seen by anyone checking the Wayback Machine.
 - **Fix (owner-decision):** From a desktop, submit the homepage, /about/ and /contact/ to https://web.archive.org/save so a dated public record begins.
@@ -232,6 +238,7 @@ None of this is visible to a visitor on mobile or desktop. It shows only on thir
 
 - **Kind / severity:** problem, medium
 - **Status:** Not checked yet
+- **Batch check (Oct 19):** confirmed, low. The DMARC record is p=none, with rua going to Cloudflare DMARC reports. Terms.jsx:62 tells buyers to email hello@beastlyfacts.com for refunds. **Fix:** As proposed: check the Cloudflare DMARC reports, then move to p=quarantine and later to p=reject. I rate it low rather than medium because spoofing a small hobby site's domain is a low-likelihood risk and nothing visible to visitors breaks.
 - **Claim:** The DMARC policy is p=none. Receiving mail servers are told to deliver mail that fails SPF and DKIM alignment for beastlyfacts.com. Anyone can send mail as hello@beastlyfacts.com, the address the Terms page tells buyers to use for refunds, and receivers are not asked to quarantine or reject it. Reports already flow to Cloudflare DMARC Management, so the data needed to tighten the policy is being collected. Not visible on the site; affects inbox trust for subscribers and buyers.
 - **Scope:** All mail using the beastlyfacts.com From domain
 - **Fix (external-settings):** Check the Cloudflare DMARC Management reports to confirm Zoho (DKIM selector zmail) and any newsletter sender pass aligned. Then move the record to p=quarantine, and to p=reject after a clean month.
@@ -240,6 +247,7 @@ None of this is visible to a visitor on mobile or desktop. It shows only on thir
 
 - **Kind / severity:** problem, medium
 - **Status:** Not checked yet
+- **Batch check (Oct 19):** confirmed, low. The domain was registered 2026-05-18 and expires 2027-05-18. On Oct 19 that is 154 days old with 211 days left. The RDAP status is only 'active', with no clientTransferProhibited. **Fix:** Turn on the registrar transfer lock and auto-renew; that costs nothing. A multi-year extension is optional, since the effect of term length on scanner scores is speculative.
 - **Claim:** The domain was registered 154 days ago for a single year, so it expires in 211 days. Its registry status is only "active": it has no clientTransferProhibited lock. Automated trust scanners score young domains with short registration terms as riskier. Without a transfer lock, a compromised registrar account or social engineering could move the domain with fewer checks. Registrant data is privacy-redacted through Tucows' tiered-access service (individual, VA, US), which is normal and fine. Not visible to visitors or Google directly; read by trust scanners and WHOIS/RDAP lookups.
 - **Scope:** Domain-wide
 - **Fix (external-settings):** At the registrar (Tucows/OpenSRS reseller), turn on the transfer lock and extend the registration to several years with auto-renew on.
@@ -256,6 +264,7 @@ None of this is visible to a visitor on mobile or desktop. It shows only on thir
 
 - **Kind / severity:** problem, low
 - **Status:** Not checked yet
+- **Batch check (Oct 19):** confirmed, low. SPF uses 9 of the 10 allowed DNS lookups: a, mx, the dnssmarthost include, the nested mailspamprotection include, zohomail, the nested spf.zohomail.com, a, mx and mlsend. The record repeats a and mx, and includes the SiteGround-style mailspamprotection range and MailerLite. The repo never mentions them outside the review files. **Fix:** As proposed, once the owner confirms which senders are live. Keep include:zohomail.com and drop the rest that are not in use.
 - **Claim:** The SPF record needs 9 of the 10 DNS lookups RFC 7208 allows. Two more includes would cause a permerror that breaks SPF for all mail. It lists a and mx twice, and +a authorizes the apex A records, which are Cloudflare's shared proxy IPs. It also includes dnssmarthost.net (resolving to _spf.mailspamprotection.com, which a third-party SPF guide ties to SiteGround hosting) and MailerLite (_spf.mlsend.com, with a litesrv DKIM CNAME). No file in the repo mentions SiteGround, dnssmarthost or MailerLite, and the newsletter subdomain points at beehiiv. Not visible to visitors.
 - **Scope:** All outbound mail for the domain
 - **Fix (owner-decision):** Once the owner confirms which services still send as beastlyfacts.com, rewrite SPF to only those, e.g. "v=spf1 include:zohomail.com include:_spf.mlsend.com ~all" if MailerLite is still live, dropping +a, +mx, the duplicate a mx and the dnssmarthost include.
@@ -272,6 +281,7 @@ None of this is visible to a visitor on mobile or desktop. It shows only on thir
 
 - **Kind / severity:** problem, low
 - **Status:** Not checked yet
+- **Batch check (Oct 19):** confirmed, low. The HSTS header includes preload, but hstspreload.org reports the domain's status as 'unknown', meaning it was never submitted. **Fix:** Owner decides: submit at hstspreload.org or drop the preload token. Either is fine, and the 301 already covers nearly every visit.
 - **Claim:** Every HTML response sends the preload token, and hstspreload.org reports the domain as preloadable with no errors or warnings, but it was never submitted. A first-ever visit typed as http:// is still unprotected until the 301 arrives. Not visible to visitors.
 - **Scope:** Domain and all subdomains
 - **Fix (owner-decision):** Submit beastlyfacts.com at hstspreload.org, after the owner accepts that includeSubDomains preload is slow to undo and forces HTTPS on every future subdomain; otherwise drop the preload token.
@@ -280,6 +290,7 @@ None of this is visible to a visitor on mobile or desktop. It shows only on thir
 
 - **Kind / severity:** problem, low
 - **Status:** Not checked yet
+- **Batch check (Oct 19):** confirmed, low. http://www/ takes 2 hops, http://www/about takes 3, https://www/ takes 1, and an http apex URL without the trailing slash takes 2. **Fix:** Optional single Cloudflare redirect rule from www on any scheme to the https apex. The impact is tiny, since Google follows short chains and few links point at www or http.
 - **Claim:** http://www goes to https://www and then to the https apex: 2 hops, where 1 would do. A www URL without its trailing slash takes 3 hops. Each hop adds latency for visitors on old or typed links (worst on mobile networks) and dilutes link signals Google follows. The https://www to apex hop alone is a clean single 301.
 - **Scope:** Inbound links to www or http variants
 - **Fix (external-settings):** Add one Cloudflare Single Redirect rule matching host www.beastlyfacts.com on any scheme that sends a 301 straight to https://beastlyfacts.com with the same path, so it runs before Always Use HTTPS.
@@ -288,6 +299,7 @@ None of this is visible to a visitor on mobile or desktop. It shows only on thir
 
 - **Kind / severity:** problem, low
 - **Status:** Not checked yet
+- **Batch check (Oct 19):** confirmed, low. Line 5 of security.txt is 'Policy: https://beastlyfacts.com/security-policy', and that URL returns 404 with and without a trailing slash. **Fix:** Delete the Policy line from public/.well-known/security.txt.
 - **Claim:** The site publishes a valid security.txt, a good trust signal, but its Policy field links to /security-policy, which returns 404. Visible to security researchers and scanners that read the file, not to ordinary visitors.
 - **Scope:** 1 file
 - **Fix (code):** Delete line 5 of public/.well-known/security.txt (the Policy field is optional), or point it at an existing page such as /contact/.
@@ -381,6 +393,7 @@ While in there, correct the stale comments at author.js:49-52, Blog.jsx:948-955 
 
 - **Kind / severity:** problem, medium
 - **Status:** Not checked yet
+- **Batch check (Oct 19):** confirmed, low. There is no visible author name near the title of any of the 857 articles (1 blog, 800 guides, 20 fun-facts and 36 short-story files). The top meta row shows category, date and read time. The only visible byline is the AuthorBio card ('Written by Michael Ryan') near the end of the page, and it uses the Dex bearded dragon photo. The About page ProfilePage Person.image is the same dex-portrait.jpg, and every article uses the care-guide bio, the pangolin piece included. The Article JSON-LD near the top of each page does carry author Michael Ryan with @id /about/. **Fix:** Add a short 'By Michael Ryan' link to /about/ in the top meta row next to the date. A bottom author box is a normal pattern, and the structured author is already present, so this matters less than claimed. Leave the portrait to the owner, because the Dex photo is a documented owner choice. Changing the bio wording for wild-animal articles is optional.
 - **Claim:** No author name appears near the title of any article. The only byline is the AuthorBio card, which renders after the body, Sources, FAQ, the More-on list and Recommended Gear. Its photo is Dex the bearded dragon, and the same lizard photo is the Person.image in the About page's ProfilePage JSON-LD. The bio is the care-guide bio ("writes the care guides... He is not a veterinarian") even on wild-animal pieces.
 - **Scope:** All 857 article pages (and the About page schema). Visitors see it on mobile and desktop; Google sees the Person.image.
 - **Fix (owner-decision):** Add a one-line "By Michael Ryan" linked to /about/ in the top meta row, next to the date. Whether to swap the portrait for a photo of the owner is the owner's call.
@@ -389,6 +402,7 @@ While in there, correct the stale comments at author.js:49-52, Blog.jsx:948-955 
 
 - **Kind / severity:** problem, medium
 - **Status:** Not checked yet
+- **Batch check (Oct 19):** confirmed, medium. 795 articles (those with lastReviewed and a <Sources> block) show 'Last reviewed <date> · N sources'. The line names no reviewer and has no link. REVIEWS is empty except for a commented example, so the 'How reviews work' link never renders. AI-assisted drafting is disclosed on /how-guides-are-made/ and also in one sentence on /about/ ('I use AI tools to help draft and organize'). No sampled article, hub, gallery, facts or legal page mentions AI. On each of those pages the only link to /how-guides-are-made/ is the footer link. **Fix:** Link the 'Last reviewed' text to /how-guides-are-made/ and change it to 'Last reviewed by the author <date>'. One short AI-assisted drafting line in the AuthorBio card is reasonable. The finding should note that /about/ already discloses AI use.
 - **Claim:** Articles show "Last reviewed <date> · N sources" without saying who reviewed or what a review means. Every review is the owner's own reread: the outside-review register is empty. The /how-guides-are-made/ page explains this clearly and discloses that AI tools draft content, but no article or hub mentions AI. The "Last reviewed" line does not link to the methodology page, whose only link on article and hub pages is in the footer. On health articles a reader can take an unexplained "Last reviewed" as an expert review.
 - **Scope:** 795 articles show the Last reviewed line; all 857 articles and 108 hubs lack an on-page AI note. Visitors see it on mobile and desktop.
 - **Fix (code):** Change the line to "Last reviewed by the author <date>" and link it to /how-guides-are-made/. Add one short sentence about AI-assisted drafting to the AuthorBio card or the Sources line.
@@ -397,6 +411,7 @@ While in there, correct the stale comments at author.js:49-52, Blog.jsx:948-955 
 
 - **Kind / severity:** problem, medium
 - **Status:** Not checked yet
+- **Batch check (Oct 19):** confirmed, medium. 24 dog and cat hubs (10 cat, 14 dog) do not use layout 'router'. 21 of them have section text matching percent, study, data, research or survey. The exceptions are dog-medium-breed, dog-small-breed and dog-universal. The Labrador hub states the OFA figure ('324,780 hip evaluations shows 87.5 percent normal and 11.3 percent dysplastic') with no Sources block, date or byline on the page. It does link the sourced cross-breed hip-and-elbow-dysplasia guide, but only in a related list about 50KB further down, not next to the claim. **Fix:** Next to each statistic, link the deep dive the number came from (the hip guide for OFA figures, for example), or move these hubs to the router layout. Do not add a separate sources array to legacy data unless the router migration is far off. Any source added must come from real web research, per CLAUDE.md.
 - **Claim:** The 24 dog and cat hubs that still use the legacy layout carry their own housing, diet and health text in the data rather than routing to sourced deep dives. 21 of them cite percentages, studies or data with no visible source anywhere on the page.
 - **Scope:** 24 hubs (10 cat, 14 dog). Visitors see it on mobile and desktop.
 - **Fix (content):** Move these hubs to the router layout, where every figure links to the deep dive it came from. Until then, add a sources array to the legacy data and render it.
@@ -405,6 +420,7 @@ While in there, correct the stale comments at author.js:49-52, Blog.jsx:948-955 
 
 - **Kind / severity:** problem, low
 - **Status:** Not checked yet
+- **Batch check (Oct 19):** confirmed, low. The outside-review credit renders only inside the MDX Sources component, matched by pathname. GuideDetail.jsx imports neither Sources nor REVIEWS. The register's commented template targets '/guides/bearded-dragon/', a hub, so a hub review logged that way would not appear on the hub. This is latent while REVIEWS is empty. **Fix:** Render the REVIEWS lookup in GuideDetail.jsx when an entry matches. This can wait until the first outside review is logged.
 - **Claim:** The outside-review credit ("Reviewed for accuracy by <name>, <credentials>") renders only inside the MDX <Sources> component, matched by pathname. Hubs never render <Sources>, yet the register's own template example targets '/guides/bearded-dragon/'. The first hub review the owner logs would appear on /how-guides-are-made/ but not on the reviewed page.
 - **Scope:** Latent: affects any future review of the 108 hubs. Nothing is visible yet.
 - **Fix (code):** Render the same REVIEWS lookup in GuideDetail.jsx (and add reviewedBy to the hub JSON-LD when an entry exists).
@@ -455,6 +471,7 @@ While in there, correct the stale comments at author.js:49-52, Blog.jsx:948-955 
 
 - **Kind / severity:** problem, high
 - **Status:** Not checked yet
+- **Batch check (Oct 19):** confirmed, medium. facts.js exports 347 facts with fields id, title, emoji, animal, category, fact and image (crossCategories on 24) and no source field. The hero says 'Verified animal facts', every fact category meta description says 'curated, verified', and About links 'checked facts' to /facts/. FactCard and FactModal render no source. The corrections log entry about the pangolin tongue fact is real. Fact 13 ('Elephants hold funerals... They've even been seen crying.') is unsourced. **Fix:** First, soften 'Verified' in HeroSection.jsx:208 and 'verified' in Facts.jsx:233 (and possibly 'checked facts' on About). That is a two-line change. Sourcing all 347 facts is a separate research project that needs real, verifiable web sources per CLAUDE.md, so it should not be presented as the immediate fix. Medium rather than high, because short trivia cards rarely carry citations and the risk is the unsupported word 'verified', not a safety claim.
 - **Claim:** The site tells visitors its facts are verified: 'Verified animal facts' in the homepage hero, 'curated, verified' in every fact category meta description, and 'checked facts' on About. None of the 347 facts has a source, and no fact card, fact modal or gallery tile shows one. The site's own corrections log already records one fact that was overstated until 16 October.
 - **Scope:** All 347 facts as shown on /, /facts/, the 8 /facts/category/ pages, /gallery/ and the Fun Facts blocks on encyclopedia and Beastlypedia pages. Visible on mobile and desktop.
 - **Fix (content):** Add a source (URL plus publisher) to each fact in facts.js and render it as a small 'Source:' link in FactModal and the image lightbox. Until a fact has a source, remove 'verified' from HeroSection.jsx:208 and Facts.jsx:233.
@@ -495,6 +512,7 @@ While in there, correct the stale comments at author.js:49-52, Blog.jsx:948-955 
 
 - **Kind / severity:** problem, medium
 - **Status:** Not checked yet
+- **Batch check (Oct 19):** confirmed, medium. IMAGE_CREDITS.md lists 8 photos under CC BY or CC BY-SA: flamingo, flamingo-2, quokka, shoebill, leafy-sea-dragon, thorny-devil, glass-frog and coconut-crab. Its own header says they need visible credit and a public credits page. /credits/, /photo-credits/ and /image-credits/ all return 404, and the photographers' names appear nowhere in src, public or content. The live gallery serves flamingo.jpg and shoebill.jpg with 0 matches for 'photo credit', 'CC BY' or 'wikimedia'. **Fix:** Build a /credits/ page from the IMAGE_CREDITS.md rows (author, license with link, source, crop note) and link it from the footer. This meets both the license terms and the owner's CLAUDE.md photo rule. A per-image credit line in the lightbox is optional. Since this is a license obligation the owner already set, treat it as a priority among the medium items.
 - **Claim:** Photos licensed CC BY and CC BY-SA appear on the site without the attribution those licenses require. The public credits page that the owner's own rules call for does not exist.
 - **Scope:** 8 photos, in the gallery, the fact lightboxes and anywhere else those images appear. Visible on mobile and desktop.
 - **Fix (code):** Build a /credits/ page from the IMAGE_CREDITS.md table (author, license with link, source) and link it from the footer. Show a one-line credit in ImageLightbox for any image that has a credits entry.
@@ -503,6 +521,7 @@ While in there, correct the stale comments at author.js:49-52, Blog.jsx:948-955 
 
 - **Kind / severity:** problem, medium
 - **Status:** Not checked yet
+- **Batch check (Oct 19):** confirmed, medium. /exotic-pet-laws/ shows no review or verified date and says 'currently covering close to 800 species'. Its JSON-LD is only site-level WebSite and Organization, with no BreadcrumbList or WebPage. The per-animal pages (82: 84 sitemap URLs directly under /exotic-pet-laws/, less map and state index) show their date only in the cite box near the foot; on hedgehog it sits at byte 171903 of 192274. /exotic-pet-laws/map/ shows no date. The 52 state pages do show 'last checked 8 October 2026' and verified dates. No sampled legal page (hub, map, hedgehog, Texas) shows Michael Ryan, 'Written by' or 'Reviewed by'. Their JSON-LD has no dateModified or author, just WebSite, Organization and on most pages BreadcrumbList. **Fix:** Add a visible 'Last reviewed <date>' line under the H1 on the hub, map and per-animal pages, using the newest verifiedOn (the state pages already do this). Add a WebPage node with dateModified and author. A named byline is reasonable but secondary. Use real dates only, never a made-up constant.
 - **Claim:** Outside the state pages, the legal section gives weaker signals of freshness and accountability. The hub /exotic-pet-laws/ makes time-bound federal claims ('currently covering close to 800 species') with no visible date, and its summaries had drifted from the matrix until a 16 October correction. The 82 per-animal pages show their verified date only in a 'Cite this page' box near the bottom; the restriction rows show no date until a visitor clicks a state. No legal page names who checked it, and none carries a dateModified in its JSON-LD.
 - **Scope:** The legal hub (1 page) and 82 per-animal pages for dates; the map and all 52 state pages for the missing byline and schema.
 - **Fix (code):** Under the H1 of the hub, map, per-animal and state pages, add 'Last reviewed <date> by Michael Ryan' with a link to /how-guides-are-made/. Use the newest verifiedOn as the date, or a LAST_REVIEWED constant for the hub. Emit a WebPage node with dateModified and author: authorSchema() next to the existing BreadcrumbList.
@@ -581,6 +600,7 @@ The public log already says early entries are "dated to the day the fix went liv
 
 - **Kind / severity:** problem, medium
 - **Status:** Not checked yet
+- **Batch check (Oct 19):** partly, low. The homepage says 'A rotating pick from 108+ species guides', '103 species profiles' and '100+ species care guides' (hero plus meta, og and twitter descriptions). There are exactly 108 guides: 84 non-dog/cat, 14 dog (4 generic) and 10 cat (1 generic). The 103 encyclopedia profiles include 19 dog and cat breeds. The '+' on an exact count is a small overclaim, and 'species' is loose wording for breeds, but '100+ care guides' itself is true. **Fix:** Drop the '+' in GuideSpotlight.jsx:80 and say 'care guides' there; change '103 species profiles' to 'animal profiles'. Optional: 'species' to 'pet' in the hero and three meta tags. One-line copy edits, no structural work.
 - **Claim:** The homepage's guide and profile counts include dog and cat breeds and five generic dog and cat hubs under the word 'species'. GuideSpotlight also appends '+' to an exact count, so '108+ species guides' overstates what exists.
 - **Scope:** Homepage: 4 visible sentences (mobile and desktop) and 3 meta tags that Google uses for the snippet
 - **Fix (code):** Change GuideSpotlight to "A rotating pick from 108 care guides" (no '+'), and say "care guides" / "animal profiles" rather than "species" wherever the count includes breeds.
@@ -589,6 +609,7 @@ The public log already says early entries are "dated to the day the fix went liv
 
 - **Kind / severity:** problem, medium
 - **Status:** Not checked yet
+- **Batch check (Oct 19):** confirmed, medium. 837 of 857 articles carry lastReviewed over 93 distinct days; 2026-09-24 has 158, 09-15 has 77, 09-14 has 67, 09-16 has 48 (350 total). /how-guides-are-made/ defines the date as 'the last day I read the whole piece against its sources again'. Stamping 158 pages in one day is not plausibly a personal full reread of each. The READER_REVIEWS note does follow an actual edit pass, so it is a weaker example of misalignment than presented. **Fix:** Reword the /how-guides-are-made/ definition to what the date records (the last full check of the page against its sources, including assisted review passes) rather than re-dating 837 articles. Going forward, bump lastReviewed only after that check.
 - **Claim:** The site publicly defines the review date as the last day the owner reread the whole piece against its sources. The data shows the date stamped in batches and, at least once, aligned to match a set rather than an actual reread.
 - **Scope:** 837 articles show the line (visible on mobile and desktop); lastReviewed is not used for dateModified while lastUpdated is present (docs/RULES.md:15-16)
 - **Fix (owner-decision):** Either stamp lastReviewed only when the owner has reread the whole page, or change the /how-guides-are-made/ wording to say what the date actually records, for example the last full check, including agent-assisted passes.
@@ -597,6 +618,7 @@ The public log already says early entries are "dated to the day the fix went liv
 
 - **Kind / severity:** problem, medium
 - **Status:** Not checked yet
+- **Batch check (Oct 19):** partly, low. 148 of 857 articles are dated 2026-09-04 (75 Enrichment); 37 of 125 dates carry more than 5 articles, covering 628 articles. The parrotlet enrichment guide was recorded on 2026-09-15 as dated 2026-10-31 and now shows 2026-09-04, a date before that note was written, which breaks RULES.md 'never backdated'. The bursts themselves are not clearly a rule breach: the 4 to 5 per day rule is forward-looking and was written after future dating was dropped, so past batches predate it. **Fix:** Correct the backdated case where the true ship date is known (parrotlet enrichment and any other 2026-09-04 files whose READER_REVIEWS notes show a later date) and leave the rest. Keep future batches in content/_scheduled-* at 4 to 5 per day. Google does not penalize publish bursts, so a mass re-date is not warranted.
 - **Claim:** Publish dates come in large bursts that the owner's own 4 to 5 per day rule forbids. One article in the largest burst is on record as carrying a different, later date after the date it now shows.
 - **Scope:** 148 articles in one day and 628 in burst days; visible in bylines and /blog/ listings (mobile and desktop) and in datePublished
 - **Fix (owner-decision):** Record each article's true first-deploy date. If the 2026-09-04 batch genuinely shipped that day, note the batch in the docs; otherwise correct the dates. Either way, keep future batches in content/_scheduled-* and release 4 to 5 per day.
@@ -605,6 +627,7 @@ The public log already says early entries are "dated to the day the fix went liv
 
 - **Kind / severity:** problem, low
 - **Status:** Not checked yet
+- **Batch check (Oct 19):** confirmed, low. The species deep-dive series counts 509 articles (cost 84, handling 84, health-issues 84, tank-setup 84, feeding 87, legal 84, laws 2), 605 with 96 enrichment guides, against '400+ deep dives' on the homepage. '400+' is a true lower bound, so it understates rather than misleads. 'a hundred-plus pages' on /how-guides-are-made/ is also technically true against 857 articles. **Fix:** Change the hard-coded '400+' to '500+' in Home.jsx (3 meta tags), HeroSection.jsx:238 and FactsToGuidesBanner.jsx:33, or compute it from articles-index.json. 'Hundreds of pages' for the How guides sentence is optional.
 - **Claim:** By the code's own definition, the deep-dive series now has about 509 articles, or 605 with enrichment guides. The homepage still says 400+, and /how-guides-are-made/ describes the site as 'a hundred-plus pages'.
 - **Scope:** Homepage (3 meta tags and 2 visible lines) and one sentence on /how-guides-are-made/
 - **Fix (code):** Compute the count from the articles index (the standard series suffixes) instead of hard-coding it, and change the How guides sentence to 'across hundreds of pages'.
@@ -613,6 +636,7 @@ The public log already says early entries are "dated to the day the fix went liv
 
 - **Kind / severity:** problem, low
 - **Status:** Not checked yet
+- **Batch check (Oct 19):** confirmed, low. public/llms.txt matches the live file. It lists 77 /guides/ links; 76 match the 108 current guide ids, 32 ids are missing, and 'chameleon' 301s to /guides/jacksons-chameleon/. /encyclopedia/guides/ 301s to /guides/. No section for /exotic-pet-laws/, Beastlypedia or Beastle. It calls the mascot 'Dexter' while /about/ says 'His name is Dex'. **Fix:** Generating llms.txt at build time is more than needed; a one-time hand regeneration from guides-index.json plus legal, Beastlypedia and Chronicles lines, fixing the two redirecting URLs and 'Dex', is enough. Read only by AI crawlers.
 - **Claim:** The site's machine-readable summary for AI crawlers is stale. It omits 32 current guides and the legal section, links two URLs that 301-redirect, and names the mascot 'Dexter' where the About page says 'Dex'.
 - **Scope:** 1 file, read by AI crawlers only; not visible to visitors or used by Google ranking
 - **Fix (code):** Generate llms.txt at build time from guides-index.json plus fixed sections for legal, Beastlypedia and Chronicles, and use 'Dex' throughout.
@@ -621,6 +645,7 @@ The public log already says early entries are "dated to the day the fix went liv
 
 - **Kind / severity:** problem, low
 - **Status:** Not checked yet
+- **Batch check (Oct 19):** confirmed, low. The map meta description and state index say every entry quotes the statute or regulation. Of 4,264 entries (82 animals x 52 jurisdictions), 311 have no quote: legal 290, banned 10, permit 6, conditional 4, unclear 1, so 21 restricted entries rest on a note; 28 lack a cite. **Fix:** Reword to 'every restriction cites the statute or regulation' (true today). Adding quotes to the 21 restricted entries is a nice-to-have, not required for the corrected claim.
 - **Claim:** The legal map and state index say every entry quotes the statute or regulation itself. The data has no quote on 311 entries, 21 of them restricted (banned, permit, conditional or unclear) rather than plain 'legal'.
 - **Scope:** Legal map and state index copy (visible on mobile and desktop) and one meta description; 21 restricted entries rest on reasoning without a quote
 - **Fix (content):** Reword the claim to "every restriction cites the statute or regulation", and add the quoted closed-list text to the 21 restricted entries.
@@ -629,6 +654,7 @@ The public log already says early entries are "dated to the day the fix went liv
 
 - **Kind / severity:** problem, low
 - **Status:** Not checked yet
+- **Batch check (Oct 19):** confirmed, low. One non-ISO date (Dex Part 2: 2026-06-27T05:32:37.964Z), one lastReviewed earlier than date (snake-brumation-guide: date 2026-07-02, lastReviewed 2026-07-01, live shows 'Last reviewed 1 Jul 2026' beside datePublished 2026-07-02), and 20 articles without lastReviewed. **Fix:** As proposed: normalize the Dex date, set snake-brumation lastReviewed to 2026-07-02 or later, and add the two checks to scripts/check-publish-dates.mjs. Leave the 20 missing review dates alone unless the pages are actually rechecked.
 - **Claim:** A few individual date fields are malformed or inconsistent: one non-ISO date, one review dated before its publish date, and 20 articles with no review date.
 - **Scope:** 22 articles; the review line is visible on mobile and desktop
 - **Fix (content):** Normalize the Dex Part 2 date to "2026-06-27", set snake-brumation lastReviewed to 2026-07-02 or later, and have check-publish-dates.mjs reject non-ISO dates and any lastReviewed earlier than date.
@@ -655,6 +681,7 @@ The public log already says early entries are "dated to the day the fix went liv
 
 - **Kind / severity:** problem, high
 - **Status:** Not checked yet
+- **Batch check (Oct 19):** partly, medium. 302 of 3,358 linked Sources entries point at a bare site root, in 249 of 815 sourced articles; 281 carry real page titles after the homepage link; 8 articles cite only homepages (same 8 as listed). Both model articles do it (bearded-dragon-feeding-guide Hepper entry, goldfish-feeding-guide petmd.com and ask.ifas.ufl.edu roots). This pattern is how the five RULES.md 'overrun' articles got down to 4 or 5 sources: bearded-dragon-health-issues now cites vcahospitals.com/ and merckvetmanual.com/ roots. **Fix:** Expand each '[Publisher](homepage): Title; Title' line to real page URLs, keeping only the pages that carry claims, and add an MDX overrun comment where that pushes an article past 5 (the consolidation was done to hit the 4 to 5 target, so the target must yield here). Start with the 8 homepage-only articles and the two model articles. Add a root-path guard to scripts/check-source-links.mjs. Medium, not high: readers still see the page titles, and it does not affect ranking.
 - **Claim:** RULES.md bans homepage sources, but 301 of the 3,368 linked Sources entries (8.9%) point at a site root. They sit in 249 of the 815 articles that have a Sources block. 281 of the 301 use the same pattern: the link goes to the homepage and the real page titles follow as plain text, so a reader cannot open the page that actually holds the claim. In 8 articles every source is a homepage. Both articles RULES.md names as models do this.
 - **Scope:** 249 of 815 sourced articles (301 entries). Visitors see it in the Sources block on mobile and desktop. The "N sources" line undercounts these articles, for example "1 source" for seven consulted pages.
 - **Fix (content):** Replace each "[Publisher](homepage): Title; Title" line with one bullet per page, each linking that page's real URL. Add a guard to scripts/check-source-links.mjs that fails when a Sources link has an empty or "/" path.
@@ -672,6 +699,7 @@ The public log already says early entries are "dated to the day the fix went liv
 
 - **Kind / severity:** problem, medium
 - **Status:** Not checked yet
+- **Batch check (Oct 19):** partly, medium. Cost guides do cite price-listicle and affiliate pages against RULES.md 'Sources are for facts, not prices'. The mouse cost guide's 4 sources include Clawmate (an AI pet-art product site) and The Vet Desk price pages. The exact 47-in-35 count depends on which hosts are excluded; my looser regex found 61 cost or price entries in 43 cost guides, a total that includes vet clinic price pages (for example coloradoexoticanimalhospital.com, 6) which are defensible. Many of these hosts are also counted again in finding 10. **Fix:** Remove the price-listicle entries (Clawmate, The Vet Desk, a-z-animals, thepricer and similar) from cost-guide Sources; the prices come from costItems.js and need no citation. Keep vet clinic and rescue pages that support a non-price fact. Handle this together with finding 10 so the same entries are not edited twice.
 - **Claim:** RULES.md says Sources are for facts, not prices. A source must be a vet, university, government, manufacturer spec or husbandry reference. Even so, 47 Sources entries in 35 of the 84 cost guides are "how much does X cost" pages from affiliate listicle sites, seller blogs and an AI product company. On the mouse cost guide, 2 of the 4 sources are Clawmate and The Vet Desk price pages.
 - **Scope:** 35 of 84 cost guides (47 entries). Visible in Sources on mobile and desktop.
 - **Fix (content):** Drop the price-listicle entries from the cost guides' Sources blocks. The cost tables already print "Typical price ranges across retailers", so they need no citation. Keep only entries that support a non-price fact, and replace those with a vet, government or husbandry page.
@@ -680,6 +708,7 @@ The public log already says early entries are "dated to the day the fix went liv
 
 - **Kind / severity:** problem, medium
 - **Status:** Not checked yet
+- **Batch check (Oct 19):** confirmed, low. Six for-sale or product-listing entries in five articles, as listed. TikisGeckos returns 404. Several of these stores are also linked inline in the body to support specific prices (amano-shrimp-cost-guide.mdx:65 Aquatic Arts; cherry-shrimp-cost-guide.mdx:65 Flip Aquatics; cherry-shrimp-handling-guide.mdx:64 Flip Aquatics; plus a body mention in mourning-gecko-cost and flying-squirrel-cost). **Fix:** Remove all six Sources entries and also the inline body links that quote store prices, moving any price into costItems.js per RULES.md. Re-source or cut any non-price fact that depended on them.
 - **Claim:** RULES.md explicitly bans retailer product pages and for-sale listings as sources. Six Sources entries in five articles are exactly that, and the TikisGeckos listing cited by the mourning gecko cost guide now returns 404.
 - **Scope:** 5 articles (6 entries). Visible in Sources on mobile and desktop.
 - **Fix (content):** Remove all six. If a non-price fact depended on one of them (for example a size or locality detail), source that fact from a husbandry or academic page, or cut it.
@@ -688,6 +717,7 @@ The public log already says early entries are "dated to the day the fix went liv
 
 - **Kind / severity:** problem, medium
 - **Status:** Not checked yet
+- **Batch check (Oct 19):** partly, low. About 206 entries in 148 articles come from retailer-run sites (141 entries, 116 articles) or affiliate content sites (65 entries, 54 articles), close to the finder's 208/149. But RULES.md bans 'a retailer product page or a for-sale listing', not care articles written by a retailer. Aquarium Co-op (57), Zen Habitats and similar care sheets are not product pages, so most of this is an editorial judgment call rather than a rule breach. The affiliate content-site entries overlap heavily with findings 8 and 9. **Fix:** Ask the owner one question first: do seller-run care articles count as husbandry references? Until then, only replace the affiliate content-site entries (The Vet Desk, a-z-animals, aquariumsource, fishkeepingworld) with vet, academic or husbandry pages, and cite ReptiFiles directly where Zen Habitats republishes it. Do not mass-strip Aquarium Co-op.
 - **Claim:** Outside the cost-guide price pages, 208 Sources entries (6.2% of 3,368) come from stores with shopping carts or from affiliate content sites. They appear in 149 of the 815 sourced articles. RULES.md limits sources to vet, university, government, manufacturer spec or established husbandry reference. Hepper is a pet-furniture brand. Whether Aquarium Co-op's care articles count as an "established husbandry reference" is the owner's call, and it accounts for 57 of these entries.
 - **Scope:** 149 of 815 sourced articles (208 entries), concentrated in fish, shrimp and invertebrate guides. Visible in Sources on mobile and desktop.
 - **Fix (owner-decision):** Decide whether seller-run care sheets (Aquarium Co-op, Zen Habitats' republished ReptiFiles sheets) count as husbandry references and write that into RULES.md. Then replace the affiliate content-site entries with vet, academic or husbandry pages, citing ReptiFiles directly instead of the Zen Habitats republications.
@@ -696,6 +726,7 @@ The public log already says early entries are "dated to the day the fix went liv
 
 - **Kind / severity:** problem, medium
 - **Status:** Not checked yet
+- **Batch check (Oct 19):** partly, medium. Linked-source distribution: 1 link 12, 2 links 69, 3 links 184, 4 links 248, 5 links 220. 265 articles have fewer than 4. But the owner's CLAUDE.md says 'Aim for 3 to 5 source URLs per article', so the real shortfall is 81 articles under 3, and RULES.md's '4 to 5 is the target' is framed as a cap against URL libraries. 5 of 24 published overview roundups have no Sources block (the five named), and live platy-swordtail-molly-overview has no Sources text while stating '6.2 inches against a male's 5.5'. **Fix:** Fix the 5 unsourced overviews and the 12 one-link articles first, then the 69 two-link ones. Do not treat 3-source articles as defects; they meet CLAUDE.md.
 - **Claim:** RULES.md sets 4 to 5 linked sources as the target. 265 of the 815 sourced articles (32.5%) carry fewer than 4 linked entries: 12 have exactly one and 69 have two. Separately, 5 of the 24 published species overview roundups ship with no Sources block at all while stating specific measurements.
 - **Scope:** 265 of 815 sourced articles below target. 5 of 24 overview roundups unsourced. Visible to visitors on mobile and desktop.
 - **Fix (content):** Start with the 12 one-link and 5 zero-source articles. Add specific vet, academic or husbandry pages that state the figures already in the text, or cut the figures that cannot be sourced.
@@ -704,6 +735,7 @@ The public log already says early entries are "dated to the day the fix went liv
 
 - **Kind / severity:** problem, medium
 - **Status:** Not checked yet
+- **Batch check (Oct 19):** confirmed, low. No file in src/lib/data/encyclopedia/ or src/lib/data/beastlypedia/ contains an http URL. Live ackie-monitor encyclopedia and giraffe Beastlypedia pages link out only to social profiles and GTM. Of 1,424 hub rows, 79 have no source: Adult size 71, Lifespan 8, and the hub comment says those come from the encyclopedia entry. **Fix:** Start small: add a source to the 79 size and lifespan rows (a vet or husbandry page, or a deep dive that already cites it). A sources field on all 146 encyclopedia and Beastlypedia entries is a larger project for the owner to schedule. These figures are low-stakes and widely agreed.
 - **Claim:** The encyclopedia entries (which share a page with the care-guide hubs) and the Beastlypedia wild-animal entries carry no source links at all. The hub data says adult size and lifespan come from the encyclopedia entry, which no deep dive repeats. Those 79 hub rows link to nothing, and their figures trace to a page with no citations.
 - **Scope:** 103 encyclopedia entries, 43 Beastlypedia entries, and 79 hub rows. Visible on mobile and desktop.
 - **Fix (code):** Give each encyclopedia and Beastlypedia entry a short sources list, for example a `sources: [{title,url}]` field rendered under the facts. Start with the size and lifespan figures the hubs reuse.
@@ -712,6 +744,7 @@ The public log already says early entries are "dated to the day the fix went liv
 
 - **Kind / severity:** problem, low
 - **Status:** Not checked yet
+- **Batch check (Oct 19):** partly, low. 287 of 4,264 legal entries rest on third-party copies: animallaw.info (AZ 71, TN 62, DE 58, WI 38, MI 20, NV 16, AR 2), oregon.public.law 14, lawserver 4, onecle 1, findlaw 1. That conflicts with the file's 'Primary sources only' note. But the Delaware alternative is not shown to work: regulations.delaware.gov/AdminCode/title3/900/903.shtml returns 200 with a 65 KB page that contains neither '903' nor 'animal', so it looks like a shell or soft 404, not the regulation text. animallaw.info is Michigan State University College of Law's database, a reputable reproduction. **Fix:** Keep the animallaw.info links and add official URLs as primary only after the owner checks them in a desktop browser. Do not swap de-903 to the regulations.delaware.gov URL as given, because it does not carry the text.
 - **Claim:** Despite the primary-sources-only rule, the sources for whole states point at copies of the law hosted by others: animallaw.info, oregon.public.law, lawserver, FindLaw and Onecle. This covers Arizona, Tennessee, Delaware, Wisconsin, Michigan, Nevada and Oregon. Some official sites block automated access, but Delaware's official code page loaded fine from here.
 - **Scope:** About 287 of 4,264 legal entries across 7 states. The source link is visible to visitors.
 - **Fix (content):** Point de-903 at regulations.delaware.gov. For the others, keep the reproduction as a secondary link only, and add the official URL as the primary `url` once it is checked from a desktop browser.
@@ -720,6 +753,7 @@ The public log already says early entries are "dated to the day the fix went liv
 
 - **Kind / severity:** problem, low
 - **Status:** Not checked yet
+- **Batch check (Oct 19):** partly, low. By linked-entry count, 82 articles run over 5 sources and 49 have no MDX comment above <Sources>, 25 of them legal guides (finder: 87/53/28). The named examples check out (alpha-wolf 10, giraffe 10, naked-mole-rat 12, immortal-jellyfish 12, birdwatching 10, ball-python-cost 6, sulcata-cost 6, none commented). The RULES.md overrun list is stale: bearded-dragon-health 5, red-eared-slider-health 4, small-mammal-temperature 5, small-mammal-grooming 4, uvb-lighting 4, and they were trimmed partly by folding pages under homepage links (see finding 7). **Fix:** Update the RULES.md overrun list to current counts, and exempt legal guides by rule since statute-by-statute citation is their purpose. Add the justification comment to the remaining non-legal overruns. Reader-facing impact is nil, so this is author hygiene.
 - **Claim:** RULES.md asks for an MDX comment above <Sources> whenever an article goes over the 4 to 5 target. 53 of the 87 articles over 5 links have no such comment, 28 of them legal guides. Meanwhile the five articles RULES.md names as known overruns have since been trimmed to 4 or 5, so the documented list no longer matches the content.
 - **Scope:** 53 articles, plus docs/RULES.md. Only the authors see the comment, but over-long lists are visible to readers (collapsed after 6, per src/components/mdx/Sources.jsx SOURCES_VISIBLE = 6).
 - **Fix (content):** Update the overrun list in RULES.md:92-98 to the current counts. Either add the one-line justification comment to the 53 articles, or exempt legal guides by rule, since statute-by-statute citation is their purpose.
@@ -784,6 +818,7 @@ Every count comes from scripts in /tmp/claude-0/-home-user-beastlyfactss/c6c3a50
 
 - **Kind / severity:** problem, medium
 - **Status:** Not checked yet
+- **Batch check (Oct 19):** confirmed, medium. Live titles: /facts/ 'Fun Animal Facts' (347 facts found), /animal-facts/ 'Fun Animal Facts & Pet Care Tips' (indexable, in the sitemap, linked from the footer 'Animal facts hub' at Footer.jsx:64, route App.jsx:129), /fact-files/ 'Fact Files - Wild Animal Claims, Checked'. The 'Fun Facts' topic in categories.js:20 points to /fact-files/, while /categories/ also links /facts/. /gallery/ is noindex, so Google sees only the /facts/ vs /animal-facts/ pair. **Fix:** 301 /animal-facts/ to /facts/: remove the route at App.jsx:129, the footer entry and the sitemap entry, and add a redirect. Renaming the 'Fun Facts' topic to 'Fact files' is cheap. Gallery is noindex and already presented as the photo view, so leave it unless the owner wants a regroup.
 - **Claim:** Facts, Animal facts hub, Fact files, the 'Fun Facts' article topic and Gallery are five nav entries for three different things, and the names do not tell them apart. 'Fun Facts' points to two different places on the same page. /animal-facts/ is a thin legacy page whose title nearly duplicates /facts/ and which shows nine non-clickable keyword chips. Visitors on both desktop and mobile see the overlapping labels. Google sees two near-identical titles.
 - **Scope:** Menu 'Learn something wild' group (5 items), footer 'Learn something wild' column (7 items), menu Article topics, and /categories/
 - **Fix (owner-decision):** 301 /animal-facts/ to /facts/, then drop it from the footer and generate-sitemap.js. Rename the 'Fun Facts' topic label to 'Fact files' so one name means one place. Present Gallery as a view of Facts rather than a separate sibling.
@@ -792,6 +827,7 @@ Every count comes from scripts in /tmp/claude-0/-home-user-beastlyfactss/c6c3a50
 
 - **Kind / severity:** problem, medium
 - **Status:** Not checked yet
+- **Batch check (Oct 19):** partly, low. The titles are as stated: /guides/ 'Care Guides' (108 species links) and /encyclopedia/ 'Encyclopedia & Care Guides' (103 animal links), and they share a toggle. However, the owner's CLAUDE.md treats a care guide hub and its encyclopedia entry as deliberately 'one page with a toggle', so the two-tree split is intended design. Only the duplicated 'Care Guides' wording in the encyclopedia title is a real labeling issue. **Fix:** Drop '& Care Guides' from the /encyclopedia/ title and H1 (Encyclopedia.jsx:162, :177) and from the AnimalFacts CTA. Do not restructure the guide and encyclopedia split, which the owner chose on purpose. Renaming the nav items is optional.
 - **Claim:** The nav lists 'Care guides' and 'Encyclopedia' as separate siblings. The /encyclopedia/ index, however, is titled 'Encyclopedia & Care Guides' and shares a tab toggle with /guides/, which is titled 'Care Guides'. A third profile set, Beastlypedia, sits in a different nav group. A visitor cannot tell from the labels which '-pedia' covers pets and which covers wild animals, or why a species has two pages. Visitors see this on both desktop and mobile. Google sees two index titles both claiming 'Care Guides'.
 - **Scope:** /encyclopedia/, /guides/ and /beastlypedia/ indexes plus the menu and footer labels; 211 species URLs split across two trees
 - **Fix (owner-decision):** Retitle /encyclopedia/ as a pet species encyclopedia, without '& Care Guides'. Label the nav items so the split is explicit, for example 'Pet encyclopedia' and 'Wild animals (Beastlypedia)'.
@@ -800,6 +836,7 @@ Every count comes from scripts in /tmp/claude-0/-home-user-beastlyfactss/c6c3a50
 
 - **Kind / severity:** problem, medium
 - **Status:** Not checked yet
+- **Batch check (Oct 19):** partly, medium. The homepage has exactly 2 hrefs to /exotic-pet-laws/ (the header 'Laws', desktop only, and the footer) and 1 to /care-packages/ (the footer). The sitemap has 138 exotic-pet-laws URLs of 1,327, not 137. I did not reproduce the mobile pixel positions (12,012px document, quiz at 9,148px) or the menu fit count. **Fix:** Link 'the law' in the hero line to /exotic-pet-laws/ and add a legal entry to the homepage hub block. Reordering the whole mobile menu to put Tools first is more than needed. Moving only 'Is it legal?' up is enough.
 - **Claim:** The homepage body has no link to the exotic pet law tool or the care-package store. On mobile the header 'Laws' link is hidden, so from the homepage the legal tool takes three actions: open the menu, scroll inside it, tap 'Is it legal?'. Quizzes first appear about 10.8 screens down the mobile homepage. Real visitors see this, and it is worst on mobile. On desktop 'Laws' is one click from the header.
 - **Scope:** Homepage on mobile, plus the mobile header and menu on every page
 - **Fix (owner-decision):** Link 'the law' in the hero line to /exotic-pet-laws/, add a legal and store entry to the homepage 'Beastly Hub' block, and move the Tools group (Is it legal?, Search) to the top of the mobile menu.
@@ -808,6 +845,7 @@ Every count comes from scripts in /tmp/claude-0/-home-user-beastlyfactss/c6c3a50
 
 - **Kind / severity:** problem, medium
 - **Status:** Not checked yet
+- **Batch check (Oct 19):** confirmed, low. The bottom tabs are /guides/, /facts/, /blog/ and /pack/. For a new visitor, /pack/ shows 'Your pack is empty!'. No tab goes to Home or Laws. **Fix:** This is an owner decision. My Pack is the retention hook for returning users and is empty only on a first visit. If anything changes, swapping My Pack for Laws is the higher-value option. A Home tab overlaps with the logo, which only guide hubs hide.
 - **Claim:** The four mobile tabs are Guides, Facts, Articles and My Pack. For a first-time visitor My Pack is an empty collection. No tab reaches the homepage or the legal tool, and on guide hubs the logo is hidden too. This affects real visitors on mobile only.
 - **Scope:** Every page on mobile (under 768px)
 - **Fix (owner-decision):** Replace the My Pack tab with Laws or Home, and leave My Pack in the menu and footer.
@@ -816,6 +854,7 @@ Every count comes from scripts in /tmp/claude-0/-home-user-beastlyfactss/c6c3a50
 
 - **Kind / severity:** problem, medium
 - **Status:** Not checked yet
+- **Batch check (Oct 19):** confirmed, medium. normalizeQuery returns the whole query (or its alias form) as the only variants, and matches() is a plain includes(), so multi-word queries need an exact contiguous substring. searchLocalContent returns only guides, encyclopedia, glossary, beastlypedia and articles. There are no legal pages and no facts. The SearchAction target /search/gecko/ returns HTTP 404. **Fix:** Use AND matching on words across title, excerpt and tags, and add the legal animal and state pages to the index. The SearchAction 404 is low impact because Google retired the sitelinks search box in late 2024. Either prerender /search/ for any path or drop the SearchAction, but neither is urgent.
 - **Claim:** Search matches the whole query as one substring, so natural queries like 'octopus hearts' or 'fennec fox legal' return 0 results even though matching pages exist. The index also leaves out all 137 exotic-pet-law pages and the 347 facts. The homepage 'Beastly Hub' box calls itself the place 'Everything on the site starts here' but searches article titles only. Real visitors see this on both devices. Separately, and only Google sees it, the WebSite SearchAction target answers with HTTP 404.
 - **Scope:** /search/ on all devices, the desktop header popover, and the homepage hub search box
 - **Fix (code):** Split the query into words and require every word to match (AND) in title, excerpt or tags. Add the /exotic-pet-laws/ animal and state pages to the local index. Point the homepage hub box at /search/.
@@ -824,6 +863,7 @@ Every count comes from scripts in /tmp/claude-0/-home-user-beastlyfactss/c6c3a50
 
 - **Kind / severity:** problem, low
 - **Status:** Not checked yet
+- **Batch check (Oct 19):** confirmed, low. Labels differ by surface as described. Examples: /guides/ is 'Guides' in the header and tabs but 'Care guides' in the footer. /exotic-pet-laws/ is 'Laws' in the header but 'Is it legal?' in the footer and menu. /gear/ is 'Gear', 'Recommended gear' and 'Product Picks'. /feed/ is 'Feed' and 'The feed'. The home page uses 'Critter Digest' 2 times. **Fix:** Align labels where it costs nothing (Laws vs Is it legal?, Gear vs Recommended gear). Short labels in tabs and header versus longer ones in the footer are normal and need no change.
 - **Claim:** The same page often has different names depending on where it is linked from, and three items sit in different groups in the menu and the footer. Some page H1s match none of the nav labels. Visitors see this on both devices.
 - **Scope:** Header, menu, bottom tabs and footer on every page
 - **Fix (content):** Pick one label and one group per destination, use them on all four surfaces, and make the /blog/ H1 match the nav label or the other way round.
@@ -882,6 +922,7 @@ No build or content changes are needed.
 
 - **Kind / severity:** problem, medium
 - **Status:** Not checked yet
+- **Batch check (Oct 19):** confirmed, low. On guide hubs (regex /^\/guides\/(?!category\/).+/), the header logo is 'hidden md:flex'. Neither the menu nor the tabs include '/'. Live /guides/axolotl/ has exactly 2 href="/" anchors: the hidden header logo and the footer logo. **Fix:** Mobile visitors still have the Guides tab and the Back row, so the cost is small. The simplest fix is a Home item at the top of the mobile menu. Removing the centered Care Guide label is the owner's design call.
 - **Claim:** On a phone, the 108 care guide hubs hide the header logo. The mobile menu has no Home item, and the bottom tabs have no Home tab. The only link to / on those pages is the footer logo at the very bottom. Desktop is fine because the logo stays visible at md and up, and on every other mobile page the logo is visible.
 - **Scope:** 108 guide hub pages, mobile only
 - **Fix (code):** Keep the logo on mobile guide hubs: remove the isChildRoute logo swap and the centered Care Guide label at Navbar.jsx:192-218. The in-page Back to Guides row already covers going up.
@@ -890,6 +931,7 @@ No build or content changes are needed.
 
 - **Kind / severity:** problem, medium
 - **Status:** Not checked yet
+- **Batch check (Oct 19):** confirmed, medium. Bad URLs return 404 with a 40,904-byte page containing 0 <nav> elements and only the links / and /encyclopedia/. The catch-all at App.jsx:170 sits outside the AppLayout route. For /blog/<bad>/, findStaticPost returns null, so Blog renders the listing with no not-found state. **Fix:** Have Blog render PageNotFound when the slug has no post. Moving the catch-all inside AppLayout also requires regenerating 404.html with the layout chrome, or hydration will mismatch the served 404 body. Do both together.
 - **Claim:** Nonexistent URLs correctly return HTTP 404 with noindex. But the 404 page renders outside the app layout, so it has no header, menu, search, bottom tabs or footer. It offers only Go Home and Browse the Encyclopedia, even for a missed article or guide. From the code, once the app boots on /blog/<bad-slug>/, React Router matches /blog/:slug, finds no post and renders the Critter Digest listing with no not-found message. /guides/<bad>/ instead shows GuideDetail's 'Guide not found' card. Real visitors see this on both mobile and desktop.
 - **Scope:** Every mistyped or removed URL. The /blog/ fallback affects any dead article slug.
 - **Fix (code):** Move the catch-all route inside the AppLayout route (App.jsx:170 to before :169), and have Blog render <PageNotFound /> when a /blog/:slug resolves to no post.
@@ -898,6 +940,7 @@ No build or content changes are needed.
 
 - **Kind / severity:** problem, medium
 - **Status:** Not checked yet
+- **Batch check (Oct 19):** partly, low. Confirmed on the samples: the guide hub, encyclopedia and article pages each carry 1 BreadcrumbList and 0 visible aria-label="Breadcrumb" navs. <Breadcrumbs> is used only in the 3 legal page components. I did not recount the 1,056 total. The impact is overstated: Google does not penalize BreadcrumbList for a hierarchy that matches the URL path, and the SERP trail still shows. **Fix:** Optional UX improvement: render the existing Breadcrumbs component from the same trail arrays on the guide, encyclopedia, Beastfile and article views. It is not an SEO risk that needs urgency.
 - **Claim:** Articles, guide hubs, encyclopedia pages and Beastfiles all emit BreadcrumbList JSON-LD, but none shows a visible trail. Visible breadcrumbs appear only on the 136 legal pages. A shared Breadcrumbs component already exists, built to take the same [name, path] array as breadcrumbSchema(), but only the three legal page components use it. Google's structured data policy asks that markup describe content visible to readers. Visitors also miss the 'where am I' cue that Google shows in the result they clicked, for example Care Guides > Ball Python > Feeding guide.
 - **Scope:** 1056 of 1327 sitemap URLs. Visitors on mobile and desktop see the gap, and Google reads the markup.
 - **Fix (code):** Render <Breadcrumbs trail={...}> from the same trail arrays in GuideDetail, EncyclopediaAnimal, BeastfileDetail and the Blog article view, in place of or above the current Back row.
@@ -906,6 +949,7 @@ No build or content changes are needed.
 
 - **Kind / severity:** problem, medium
 - **Status:** Not checked yet
+- **Batch check (Oct 19):** confirmed, low. The GuideDetail Encyclopedia card passes returnTo location.state?.returnTo || '/guides/'. EncyclopediaAnimal's handleBack then navigates to that returnTo under a 'Back to Encyclopedia' label. The mirror case also holds: EncyclopediaAnimal.jsx:297 passes '/encyclopedia/' and GuideDetail.jsx:75-78 navigates to it. Live axolotl pages cross-link each way with 1 anchor. **Fix:** Do not forward returnTo across the cross-link. Pass no state, or the originating page path. The browser back button still works, so this only misleads in-app Back clicks.
 - **Claim:** From a guide hub, the sidebar Encyclopedia card passes returnTo '/guides/'. On the encyclopedia page, 'Back to Encyclopedia' then goes to the guides index instead of the encyclopedia or the hub the reader came from. The mirror case also happens: from an encyclopedia page, the Care Guide card passes returnTo '/encyclopedia/', and 'Back to Guides' on the hub goes to the encyclopedia index. Visitors see this on mobile and desktop.
 - **Scope:** 103 guide hubs and 103 encyclopedia pages, whenever the reader uses the cross-link
 - **Fix (code):** Stop forwarding returnTo across the guide/encyclopedia cross-link, so each page's back control goes where its label says.
@@ -914,6 +958,7 @@ No build or content changes are needed.
 
 - **Kind / severity:** problem, low
 - **Status:** Not checked yet
+- **Batch check (Oct 19):** confirmed, low. There is no skip link and no <main> id. The header nav has no aria-label. Sampled pages have 8 <nav> elements, of which 6 are unlabeled (only the Mobile and Beastle navs carry labels). CarePackageProduct.jsx:285 nests a second <main> inside the AppLayout <main>. **Fix:** As proposed: add a skip link and id on main, an aria-label on the header nav, and aria-current on active Navbar links. Also change the nested <main> in CarePackageProduct to a div.
 - **Claim:** No page offers a skip-to-content link, and <main> has no id to target. The header <nav> has no accessible name, and each page has 5 or 6 unlabeled navigation landmarks. The desktop header links and mobile menu links mark the active section only visually. The bottom tabs and the legal breadcrumbs do set aria-current. The header Search and dark mode buttons are 32x32px and the menu button is 36x36px, which passes WCAG 2.2 AA (24px) but falls short of 44px. Only keyboard and screen reader users notice the landmark and aria-current gaps; the tap-target size affects mobile.
 - **Scope:** All pages
 - **Fix (code):** Add a visually hidden 'Skip to content' link as the first child in AppLayout, targeting id="main-content" on its <main>. Set aria-label="Main" on the header nav, and set aria-current="page" on Navbar links where linkActive() is true.
@@ -922,6 +967,7 @@ No build or content changes are needed.
 
 - **Kind / severity:** problem, low
 - **Status:** Not checked yet
+- **Batch check (Oct 19):** confirmed, low. Served HTML has no heading ids. /blog/ball-python-feeding-guide/ has 16 h2 elements and none has an id. ScrollToTop returns early when a hash is present. Hash handlers exist only in Glossary, ExoticPetLaws and ExoticPetLawsState, so a shared #section link stays at the top. **Fix:** As proposed: after TableOfContents assigns ids, scroll to location.hash once. Updating the URL on a TOC click is optional. Low priority, because no in-content anchor links exist.
 - **Claim:** The On This Page table of contents scrolls smoothly, clears the fixed header and highlights the current section. But heading ids are assigned only in the browser, after load, so the served HTML has none. ScrollToTop deliberately ignores URLs with a hash, and no generic handler scrolls to one later, so a shared link to a section of an article or guide lands at the top. TOC clicks also do not update the URL or move keyboard focus. This affects visitors on both mobile and desktop who follow a shared section link. No in-content links currently use anchors.
 - **Scope:** Every article, guide hub, encyclopedia and Beastfile page with a TOC
 - **Fix (code):** In TableOfContents' scan, after assigning ids, scroll once to the element named by location.hash if it exists.
@@ -962,6 +1008,7 @@ No build or content changes are needed.
 
 - **Kind / severity:** problem, medium
 - **Status:** Not checked yet
+- **Batch check (Oct 19):** confirmed, medium. The 11 /encyclopedia/category/<x>/ pages list the same species as their /guides/category/<x>/ twins (amphibians 5/5/5 shared, fish 15/15/15 shared), both sets are in the sitemap and self-canonical with index,follow. The encyclopedia versions carry a template description and 82 (amphibians) to 142 (fish) words of main text, against 125 to 295 on the guide versions, which have hand-written descriptions. Titles differ only by '& Facts' and the H1s differ ('Encyclopedia & Care Guides for X' vs 'Care Guides for X'). **Fix:** As proposed: noindex,follow on the 11 /encyclopedia/category/ pages (non-guides tab, non-All) in Encyclopedia.jsx and drop line 270 from generate-sitemap.js, keeping /guides/category/ as the indexable listing. Leave the hubs /encyclopedia/ and /guides/ alone for now.
 - **Claim:** Each of the 11 /encyclopedia/category/<x>/ pages lists the same species as its /guides/category/<x>/ twin under a near-identical title, and the encyclopedia versions carry only 82 to 142 words of main content. Both sets of 11 are submitted in the sitemap and self-canonical, so Google gets 11 pairs of near-duplicate listing pages competing for '<group> care guides'. The two hubs repeat the pattern: /encyclopedia/ is titled 'Encyclopedia & Care Guides' and /guides/ 'Care Guides'.
 - **Scope:** 22 category URLs (11 pairs) plus the /encyclopedia/ and /guides/ hubs
 - **Fix (code):** Keep /guides/category/<x>/ as the indexable listing: give the 11 /encyclopedia/category/<x>/ pages noindex,follow in Encyclopedia.jsx and drop them from staticPages in generate-sitemap.js (line 270).
@@ -970,6 +1017,7 @@ No build or content changes are needed.
 
 - **Kind / severity:** problem, medium
 - **Status:** Not checked yet
+- **Batch check (Oct 19):** confirmed, low. /animal-facts/ ('Fun Animal Facts & Pet Care Tips', 483 main words, no robots meta so indexable, in the sitemap at priority 0.9) overlaps /facts/ ('Fun Animal Facts', 990 words). It renders a visible keyword tag row and is linked in the sitewide footer as 'Animal facts hub' right under 'Facts'. **Fix:** Owner decision as proposed: 301 /animal-facts/ to /facts/ in public/_redirects, remove the footer link, the staticPages entry and the isHighFreq entry. At minimum remove the visible keyword tag row. Impact is modest: Google normally picks one of two similar hubs, so this is cleanup, not a ranking emergency.
 - **Claim:** /facts/ and /animal-facts/ target the same query with near-identical titles and H1s. /animal-facts/ is an older page that renders a visible keyword list and unsourced bullet facts, has 2 outbound links, sits at sitemap priority 0.9, and is linked from every page's footer as 'Animal facts hub' directly under 'Facts'. Visitors on mobile and desktop see two footer links that seem to lead to the same thing, and Google sees two indexable hubs for 'fun animal facts'. The other fact-type index pages (/fact-files/, /beastlypedia/, /animal-days/) have distinct titles and intent. /gallery/ is noindex and not in the sitemap.
 - **Scope:** 2 index pages; footer link on all 1327 pages
 - **Fix (owner-decision):** Retire /animal-facts/: 301 it to /facts/ in public/_redirects, remove it from the footer, staticPages and the isHighFreq list in generate-sitemap.js.
@@ -978,6 +1026,7 @@ No build or content changes are needed.
 
 - **Kind / severity:** problem, medium
 - **Status:** Not checked yet
+- **Batch check (Oct 19):** confirmed, low. /exotic-pet-laws/, /exotic-pet-laws/map/ and /exotic-pet-laws/state/ all open their title with 'Exotic Pet Laws by State:' and carry no brand; the hub and map share the H1 'Exotic pet laws, state by state', the state index uses 'Exotic pet laws by state'. Each legal animal has both an /exotic-pet-laws/<id>/ page and a /blog/<id>-legal-guide/ page, both indexable with distinct text. **Fix:** As proposed: give the map and state index titles and H1s that lead with their job (interactive map; pick a state), keep 'Exotic Pet Laws by State' on the overview hub. Leave the 82 pairs untouched until Search Console shows cannibalization. Severity low because the pages are distinct and cross-linked; the cost is only possible impression splitting.
 - **Claim:** Three indexable hubs all open their title with 'Exotic Pet Laws by State:', and two of them share the same H1. Separately, each of the 82 animals in the legal matrix has two indexable, cross-linked pages answering 'is X legal in my state': /exotic-pet-laws/<id>/ and /blog/<id>-legal-guide/. Their body text is distinct, so this is not duplicate content. The risk is that Google splits impressions between near-synonymous titles. I could not confirm whether that is happening because Search Console is not available here.
 - **Scope:** 3 hub URLs and 164 animal-level URLs
 - **Fix (code):** Give the three hubs distinct titles and H1s by job (overview, map, pick a state). Lead the map with 'Interactive map' and the state index with 'Pick a state'. Leave the 82 pairs as they are until Search Console shows whether one URL of a pair is suppressing the other.
@@ -986,6 +1035,7 @@ No build or content changes are needed.
 
 - **Kind / severity:** problem, medium
 - **Status:** Not checked yet
+- **Batch check (Oct 19):** partly, low. Blog categories (H1 'The Critter Digest', slug-derived title, one-word-swap description), fact categories (H1 'Fun Animal Facts', template description) and Beastlypedia groups (H1 'Beastlypedia') keep the section H1. The 11 encyclopedia category pages do not: their H1 already names the category ('Encyclopedia & Care Guides for Amphibians'); only their description is a template. So the H1 problem covers 29 pages (16 + 8 + 5), the template-description problem 35 (16 + 8 + 11). **Fix:** Render the category name in the H1 for blog, fact and Beastlypedia listings (section name as kicker), and add hand-written description maps for blog and fact categories using real labels instead of slug-derived ones. Skip the encyclopedia categories if finding 0's noindex is adopted.
 - **Claim:** Category and group listing pages keep the section's generic H1 instead of naming the category, and their meta descriptions are one template with the category name swapped in. Visitors on mobile and desktop land on a 'Reptiles' page whose heading reads 'The Critter Digest'. Google gets 16 blog category descriptions that differ by one word. On the Wild Animals page the template reads 'care guides, deep dives, pet laws, wild animals and more', and two slug-derived titles read 'Small And Exotic Pets Articles' and 'Turtles And Tortoises Articles'.
 - **Scope:** 16 blog categories, 8 fact categories, 5 Beastlypedia groups, 11 encyclopedia categories
 - **Fix (code):** Render the category name in the H1 on these listing pages, keeping the section name as a kicker above it. Add a written description map for blog and fact categories, as categoryDescriptions.js does for guide categories, with labels taken from the real category names rather than the slug.
@@ -994,6 +1044,7 @@ No build or content changes are needed.
 
 - **Kind / severity:** problem, low
 - **Status:** Not checked yet
+- **Batch check (Oct 19):** confirmed, low. 802 of 1327 sitemap URLs carry lastmod (all blog articles); 525 do not, including about 82 legal animal pages and 52 state pages that have verifiedOn data, plus 120 guides URLs, 103 encyclopedia profiles, 49 Beastlypedia URLs and 38 Chronicles parts. **Fix:** As proposed: emit lastmod for /exotic-pet-laws/<id>/ and /exotic-pet-laws/state/<slug>/ from the newest verifiedOn among their entries, and for Chronicles parts from their MDX date. Do not stamp build dates on anything else, which matches the existing comment in generate-sitemap.js.
 - **Claim:** Only the 802 article URLs carry lastmod. The 108 guide hubs, 103 encyclopedia profiles, 83 legal animal pages, 53 state pages, 43 Beastfiles and 38 Chronicles parts have none. For the legal pages this wastes a real signal. Every jurisdiction entry has a verifiedOn date, and 52 of 53 state pages already show visitors a 'Last reviewed' line, but Google gets no hint from the sitemap when those time-sensitive pages are re-verified.
 - **Scope:** 525 of 1327 URLs; 136 legal pages are the ones with data ready
 - **Fix (code):** In generate-sitemap.js, emit lastmod for each /exotic-pet-laws/<id>/ and /exotic-pet-laws/state/<slug>/ URL from the newest verifiedOn among its entries, and for each Chronicles part from its MDX date.
@@ -1002,6 +1053,7 @@ No build or content changes are needed.
 
 - **Kind / severity:** problem, low
 - **Status:** Not checked yet
+- **Batch check (Oct 19):** confirmed, low. /care-packages/store/ has no robots meta (indexable) and is absent from the sitemap, while generate-sitemap.js says all three care-package subpages carry noindex,follow. FAQ and Why We Exist do carry it. **Fix:** Add <meta name="robots" content="noindex,follow" /> to CarePackagesStore.jsx's Helmet, matching the sitemap note and its siblings.
 - **Claim:** generate-sitemap.js says the store page carries noindex,follow and leaves it out for that reason, but the page component sets no robots tag. The live page is indexable, linked from 21 sitemap pages, and missing from the sitemap. It is the only one of 115 prerendered routes outside the sitemap that is indexable; the other 114 are noindex.
 - **Scope:** 1 page
 - **Fix (code):** Add <meta name="robots" content="noindex,follow" /> to the Helmet in CarePackagesStore.jsx, matching the sitemap note and the FAQ and Why We Exist pages.
@@ -1010,6 +1062,7 @@ No build or content changes are needed.
 
 - **Kind / severity:** problem, low
 - **Status:** Not checked yet
+- **Batch check (Oct 19):** confirmed, low. Encyclopedia profile descriptions fall back to a word cut plus an ellipsis when no sentence ends in the window (axolotl ends '...throughout its adult life, never…'); encyclopedia titles use '<Name> - Encyclopedia | Beastly Facts'; Beastlypedia titles use 'BeastlyFacts'. I reproduced the mechanism and examples but did not recount the 61 of 103, 32 of 43 and 50 of 1327 figures. **Fix:** Quick code fix now: change 'BeastlyFacts' to 'Beastly Facts' in BeastfileDetail.jsx:108 and Beastlypedia.jsx:81-82. Hand-written metaDescription fields for about 146 entries is a large content job; a cheaper interim step is to let truncate.js accept an earlier sentence end (lower MIN_SENTENCE_CUT) so fewer descriptions fall back to a mid-sentence cut. Google often rewrites snippets anyway.
 - **Claim:** Most encyclopedia profile and Beastfile meta descriptions are cut at a word boundary with an ellipsis, so search results show a broken sentence. Encyclopedia titles all follow a generic 'X - Encyclopedia' pattern, and every Beastlypedia title spells the brand 'BeastlyFacts' while the rest of the site uses 'Beastly Facts'.
 - **Scope:** 93 descriptions, 103 encyclopedia titles, 50 Beastlypedia titles
 - **Fix (content):** Add a hand-written metaDescription field (150 to 160 characters, complete sentences) to the encyclopedia and Beastfile data and use it before the truncated overview. Change 'BeastlyFacts' to 'Beastly Facts' in BeastfileDetail.jsx:108 and Beastlypedia.jsx:81-82.
@@ -1018,6 +1071,7 @@ No build or content changes are needed.
 
 - **Kind / severity:** problem, low
 - **Status:** Not checked yet
+- **Batch check (Oct 19):** confirmed, low. Themed quiz detail pages prerender only a start screen: /quiz/bearded-dragon-boss/ has 69 words of main text, while article and hub pages are well above 300 words. **Fix:** As proposed, prerender each themed quiz's questions with their source pages below the start button, or noindex the quiz detail pages if spoiling answers is unwanted. Low impact: these 8 URLs are a small share and are not the site's search targets.
 - **Claim:** Measured by words of prerendered <main> text, 38 of 1327 sitemap URLs are under 300 words. Every one is a listing, a quiz or a game, not an article. The weakest are the 8 quiz detail pages, which give Google only a title, a 'Start Quiz' button and a list of study links, because the questions load client-side. Content pages are healthy: articles start at 673 words, guide hubs at 1044, encyclopedia profiles at 1017 and legal animal pages at 1031. Beastfiles are the lightest content type (min 333, median 463).
 - **Scope:** 8 quiz pages plus 3 app pages; listing pages covered in other findings
 - **Fix (code):** Prerender each themed quiz's question list (questions plus the source page each answer comes from) below the start button, so the static HTML carries the substance the description promises.
@@ -1092,6 +1146,7 @@ No build or content changes are needed.
 
 - **Kind / severity:** problem, medium
 - **Status:** Not checked yet
+- **Batch check (Oct 19):** confirmed, medium. Most article heroes are under Google Discover's 1200 px large-image minimum: in mdx-meta.json 668 of 857 posts (including non-sitemap ones) use an image narrower than 1200 px, 652 of them at 1168x784; the finder's 642 of 802 sitemap articles is consistent. Some images are 512x382 (e.g. degu-feeding.jpg). **Fix:** Owner decision. The least disruptive route keeps the 1168x784 on-page hero standard from CLAUDE.md and generates a 1200 px wide og/schema variant only where the source photo is at least 1200 px wide (CLAUDE.md says never enlarge, so upscaling 1168 px files is not allowed). Replace the 512x382 images with new photos through the owner's normal image approval process.
 - **Claim:** The house hero size of 1168x784 is just below Google Discover's large-image minimum width. 642 of 802 articles have an og:image and BlogPosting.image narrower than 1200 px (626 at 1168x784 and 10 at 512x382), so most articles are ineligible for large Discover cards. That holds even though the max-image-preview:large header is set correctly. Only Google sees this.
 - **Scope:** 642 of 802 articles; 940 of 1327 pages overall
 - **Fix (owner-decision):** Owner decision: either move the hero standard to at least 1200 px wide (e.g. 1200x800), or keep the on-page hero and export a 1200 px-wide og/schema variant per article for og:image and BlogPosting.image. Re-shoot or replace the 10 images at 512x382.
@@ -1100,6 +1155,7 @@ No build or content changes are needed.
 
 - **Kind / severity:** problem, low
 - **Status:** Not checked yet
+- **Batch check (Oct 19):** partly, low. /animal-days/ emits a FAQPage with three hard-coded Q&As. The third ('Who decides what becomes an animal awareness day?') and the rabbit-day 'fourth Saturday' answer are not in the visible text. The first two topics (which days move each year, International Sloth Day) are covered in the page's visible content, though not as Q&A text, so the mismatch is partial, not total. **Fix:** Delete faqSchema from AnimalDays.jsx (simplest, since it earns nothing), or render the three Q&As visibly with the rabbit-day claim sourced.
 - **Claim:** /animal-days/ emits a FAQPage with three hard-coded questions and answers that appear nowhere in the visible page. That breaks Google's rule against marking up invisible content. One answer also states a fact (International Rabbit Day is the fourth Saturday in September) that exists only in the markup. FAQ rich results no longer exist, so this gains nothing and carries only manual-action risk. Only Google sees this.
 - **Scope:** 1 page
 - **Fix (code):** Either render the three Q&As as a visible section on the Animal Days page or delete faqSchema from AnimalDays.jsx.
@@ -1108,6 +1164,7 @@ No build or content changes are needed.
 
 - **Kind / severity:** problem, low
 - **Status:** Not checked yet
+- **Batch check (Oct 19):** confirmed, low. Blog, guide and encyclopedia pages take og:image:width/height from IMAGE_DIMENSIONS and fall back to 1200x630, so many pages declare the wrong size. Reproduced on the live example; the 752 of 1247 total was not recounted. **Fix:** As proposed: use post.imageWidth/post.imageHeight in Blog.jsx with the map as fallback; generate IMAGE_DIMENSIONS from public/ at build time for hubs and encyclopedia pages. Impact is small: share-card platforms read the actual file and mostly tolerate wrong hints.
 - **Claim:** 752 of the 1247 pages that declare og:image:width/height declare the wrong size, usually 1200x630 for a 1168x784 image. The pages look up dimensions in a hand-maintained IMAGE_DIMENSIONS map that covers only 135 article images and fall back to 1200x630 for the rest. Meanwhile, accurate per-article dimensions already exist in the generated metadata. Facebook, LinkedIn and Discord share cards see this on mobile and desktop. Google does not.
 - **Scope:** 752 of 1327 pages, mostly articles
 - **Fix (code):** In Blog.jsx use post.imageWidth/post.imageHeight for the og tags. For hubs and encyclopedia pages, generate IMAGE_DIMENSIONS at build time from public/ instead of maintaining it by hand.
@@ -1116,6 +1173,7 @@ No build or content changes are needed.
 
 - **Kind / severity:** problem, low
 - **Status:** Not checked yet
+- **Batch check (Oct 19):** partly, low. Hubs carry a HowTo block, the WebSite SearchAction targets /search/{term}/ which returns 404 (the working URL is /search/?q=), and the facts-listicle ItemList never renders because mdxPosts.js sets content to true or null. I did not verify the claimed May and June 2026 Google posts retiring FAQ rich results for all sites; the long-standing documented state is that FAQ rich results were limited to authoritative government and health sites in 2023. **Fix:** Drop HowTo from GuideDetail.jsx and potentialAction from the WebSite block in App.jsx (or at least fix its target to /search/?q={search_term_string}). Remove the dead factsListSchema or feed it the loaded content. Keep FAQPage where the answers are visible; it is harmless.
 - **Claim:** FAQPage runs on 828 pages and HowTo on 108 hubs, but Google has removed both rich results for every site, not just non-authoritative ones. The hub HowTo is really a table of contents: 554 of its 650 steps are links to other articles. The site-wide WebSite SearchAction points at a URL pattern that returns HTTP 404, for a feature Google retired in 2024. None of this is harmful (the FAQ answers are visible). It is dead weight, and the HowTo mislabels the hubs. Only Google sees this.
 - **Scope:** 828 FAQ pages, 108 hubs, site-wide WebSite block, 20 listicles
 - **Fix (code):** Drop the HowTo block from GuideDetail.jsx and the potentialAction from the WebSite block. Keep or drop FAQPage as the owner prefers (it is harmless where visible). Delete the dead factsListSchema code or feed it real list items.
@@ -1124,6 +1182,7 @@ No build or content changes are needed.
 
 - **Kind / severity:** problem, low
 - **Status:** Not checked yet
+- **Batch check (Oct 19):** confirmed, low. Every page sets twitter:site '@beastlyfacts', a handle that returns 404 on x.com, while the real account is @Beastly_Facts. The WebSite JSON-LD names the site 'BeastlyFacts' while og:site_name, the Organization block and the home title use 'Beastly Facts'. **Fix:** As proposed: index.html:101 to @Beastly_Facts, App.jsx:181 to 'Beastly Facts' with alternateName 'BeastlyFacts'.
 - **Claim:** All 1327 pages set twitter:site to '@beastlyfacts', but the site's X account is @Beastly_Facts, and x.com/beastlyfacts answers like a nonexistent handle, so X cards credit no account. The WebSite JSON-LD names the site 'BeastlyFacts', while the Organization block, og:site_name, the home title and the web manifest all say 'Beastly Facts'. Google's site-name system asks for one consistent name. X sees the handle on mobile and desktop share cards. Only Google sees the WebSite name.
 - **Scope:** Site-wide, 1327 pages
 - **Fix (code):** Change index.html:101 to @Beastly_Facts and App.jsx:181 to 'Beastly Facts' (optionally adding alternateName 'BeastlyFacts').
@@ -1233,6 +1292,7 @@ Severity is better stated as low. An About link in the footer of every page is t
 
 - **Kind / severity:** problem, medium
 - **Status:** Not checked yet
+- **Batch check (Oct 19):** confirmed, medium. The three named articles (aquarium-ich-treatment-guide, budgie-cere-color-guide, cockatoo-screaming-feather-plucking-explained) contain no <VetDisclaimer>, and the ich guide gives malachite green (5 ml per 10 gallons) and formalin (25 mg/L) doses. The live ich page has 0 'Not Veterinary Advice' blocks. The 17 of 144 overall count was not recounted. **Fix:** Add <VetDisclaimer /> above the opener in the three files, with fish-appropriate wording on the ich guide (confirm with an aquatic vet and the product label). Content edit only, no other changes.
 - **Claim:** The vet disclaimer is consistently placed above the body on health articles, but 17 of 144 health-tagged articles have none. Three are medical in substance, including the ich treatment guide, which gives formalin and malachite green doses with only the small site footer line as a caveat.
 - **Scope:** 3 articles visibly, on mobile and desktop; the other 14 are low-risk enrichment, breeding-law or lighting pages.
 - **Fix (content):** Add <VetDisclaimer /> above the opener in the three files named, worded for fish on the ich guide (for example, 'confirm the diagnosis and dose with an aquatic vet or the product label').
@@ -1249,6 +1309,7 @@ Severity is better stated as low. An About link in the footer of every page is t
 
 - **Kind / severity:** problem, low
 - **Status:** Not checked yet
+- **Batch check (Oct 19):** confirmed, low. Privacy.jsx line 41 names the operator only as 'BeastlyFacts.com ("we")' while line 48 says 'delivered to me'; section 6 'Data Retention & Your Rights' (lines 106 to 109) covers unsubscribe, access requests and GDPR rights but states no retention period. Terms.jsx has no governing-law clause and names no person or entity. 'Michael Ryan' appears on live /about/ (6 times in HTML) and as an article byline, but 0 times on /terms/ or /privacy/. **Fix:** Owner decision. Add one 'run by' line with the contact email to both pages and retention lines only as they match actual practice (the owner must confirm how long purchase records, comments and push subscriptions are kept). A governing-law clause should name the owner's actual state; do not invent one.
 - **Claim:** The Privacy Policy calls the operator 'BeastlyFacts.com ("we")' yet speaks as 'me' in places without naming who that is. Its 'Data Retention & Your Rights' section states no retention period, although purchase emails, comments and push endpoints are kept with no stated end. The Terms name no operator and no governing law.
 - **Scope:** /privacy/ and /terms/, mobile and desktop.
 - **Fix (owner-decision):** Add 'BeastlyFacts.com is run by Michael Ryan' (with the contact email) to the opening of both pages, and add retention lines: purchases kept while the library runs, comments until deleted on request, push subscriptions until opt-out.
@@ -1257,6 +1318,7 @@ Severity is better stated as low. An About link in the footer of every page is t
 
 - **Kind / severity:** problem, low
 - **Status:** Not checked yet
+- **Batch check (Oct 19):** confirmed, low. Privacy.jsx line 112 has the standard under-13 statement with no commitment to delete a child's data once discovered. The site is general-audience; the gap is the missing deletion sentence. **Fix:** Add the single sentence 'If we learn we have collected personal information from a child under 13, we delete it.' The 'ask a parent' note under the comment form is optional and excessive for a general-audience site; leave it to the owner.
 - **Claim:** The policy has a standard under-13 statement, which is appropriate for a general-audience site. But the site's games and quizzes are the kind of features children use, and the comment, contact and newsletter forms (plus the Critter Keeper pet name that is sent to the owner) take free text with no age note. The policy also does not say a child's data will be deleted once found.
 - **Scope:** /privacy/, plus comment, contact and game surfaces, mobile and desktop.
 - **Fix (content):** Add one sentence to Privacy.jsx:111: 'If we learn we have collected personal information from a child under 13, we delete it,' and a short 'Ask a parent before posting your name or email' note under the comment form.
@@ -1297,6 +1359,7 @@ Severity is better stated as low. An About link in the footer of every page is t
 
 - **Kind / severity:** problem, medium
 - **Status:** Not checked yet
+- **Batch check (Oct 19):** partly, low. No store, product, donate, Terms or Privacy page names the operator in visible text, and the live Product JSON-LD seller is only {"@type":"Organization","name":"Beastly Facts"}. But the pages are not without routes to contact or terms: every page's footer carries links to /contact/, /terms/, /privacy/ and /about/ (4 links in the footer on each page checked), and the Terms page does state the 14-day refund policy. Stripe Checkout also shows the account's own business name and support details, which the site code does not control, so 'pay without ever seeing the seller' overstates it. **Fix:** Add a short seller line near the final buy button in CarePackageProduct.jsx naming Beastly Facts and the owner, with real links to Contact and Terms, and optionally add url and email to the seller JSON-LD. Whether to show a personal name or a state is the owner's decision; do not publish a location without asking.
 - **Claim:** A buyer can pay without ever seeing the seller's name, location, or contact details. None of the store pages, the donate page, the Terms or the Privacy policy names the operator. None of those seven pages links to Contact, Terms, Privacy or About from the page body, so the only route is the site footer. The owner is named on /about/ only.
 - **Scope:** Visible to visitors on mobile and desktop on all 20 product pages, the store, the hub, the FAQ, thanks, the library and /donate/. Also the seller field in the Product structured data that Google reads.
 - **Fix (owner-decision):** Add a seller line under the final buy button in src/pages/CarePackageProduct.jsx (around line 462), for example 'Sold by Michael Ryan, Beastly Facts, [state], USA. Questions: Contact. Refunds: within 14 days, see Terms', with real links. Add a 'Who runs this site' sentence and a governing-law line to src/pages/Terms.jsx.
@@ -1305,6 +1368,7 @@ Severity is better stated as low. An About link in the footer of every page is t
 
 - **Kind / severity:** problem, medium
 - **Status:** Not checked yet
+- **Batch check (Oct 19):** confirmed, medium. 84 of 120 live /guides/ URLs contain Amazon links and 0 of them contain 'As an Amazon Associate'. The only disclosure is the 11px line from GuideDetail.jsx:541-544 ('Underlined items are paid Amazon links. We may earn a commission at no extra cost to you.'), rendered after the link list (on /guides/bearded-dragon/ the line sits at byte 115785, first amzn.to link at 92483). The footer does not carry the statement. **Fix:** Change the GuideDetail.jsx line to lead with 'As an Amazon Associate I earn from qualifying purchases.' when Amazon is among the retailers, and move it above the What to buy list at readable size. Reusing the existing AffiliateDisclosure component is the cleanest route. A site-wide footer line is a fine extra but does not replace the in-context statement.
 - **Claim:** Species care guide hubs carry Amazon affiliate links, but none of them shows the program statement Amazon requires. Their disclosure is a generic 11px commission line placed after the link list, not before it.
 - **Scope:** 84 of 120 guide hub URLs, the site's main care pages. Visible to visitors on mobile and desktop.
 - **Fix (code):** Change GuideDetail.jsx:543 to 'As an Amazon Associate I earn from qualifying purchases. Underlined items are paid Amazon links, at no extra cost to you.' and render it above the What to buy list (around line 520) at normal text size. Or add the statement to Footer.jsx so it appears on every page.
@@ -1340,6 +1404,7 @@ Severity is better stated as low. An About link in the footer of every page is t
 
 - **Kind / severity:** problem, medium
 - **Status:** Not checked yet
+- **Batch check (Oct 19):** confirmed, medium. '14 days' appears 0 times in the pre-footer body of the live product page checked (and the source template is shared across all 20). The FAQ (noindex) refund answer at CarePackagesFaq.jsx:43 says 'message me from the contact page' and points to the Terms, rendered as a plain string in a <p> at line 114 with 0 links to /contact/ or /terms/. The Terms page does hold the full 14-day policy and is linked from every footer, so the policy is reachable, just not from the FAQ text itself. **Fix:** Add 'Refunds on request within 14 days (Terms)' with a real link under the final buy button in CarePackageProduct.jsx, and render the FAQ refund answer with real links to /contact/ and /terms/ while keeping the plain string for the FAQ JSON-LD.
 - **Claim:** A product page never states the refund window. It links to a noindex FAQ, and the FAQ's refund answer points to 'the contact page' and 'the Terms' as plain text with no links.
 - **Scope:** All 20 product pages and the FAQ. Visible to visitors on mobile and desktop.
 - **Fix (code):** Add 'Refunds on request within 14 days (Terms)' to the small print under the final buy button (CarePackageProduct.jsx:463). Render the FAQ refund answer as JSX with real links to /contact/ and /terms/, keeping the plain string for the JSON-LD.
