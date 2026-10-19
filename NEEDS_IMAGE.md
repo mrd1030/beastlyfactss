@@ -36,15 +36,6 @@ Ready for the site owner to generate photos and add to facts.js.
 4. **Chambered Nautilus** (Ocean) - The Ancient Spiral Shell. Chambered nautiluses have barely changed in roughly 500 million years, making them one of the oldest living lineages in the ocean. Their spiral shell holds more than 30 gas-filled chambers connected by a thin tube called the siphuncle, which the animal uses to shift fluid in and out and control its buoyancy as it rises and sinks. Visual hook: a cross-section of a chambered nautilus shell showing its spiral chambers, with the live animal's tentacles visible at the shell's opening.
 5. **Paradise Flying Snake** (Reptiles) - Swimming Through the Air. The paradise flying snake spends most of its life round like any other snake, but to glide between trees it splays its ribs outward and pulls in its belly, flattening into a dome-shaped cross-section that generates lift. Once airborne it undulates side to side as if swimming, steering itself toward a landing branch. Visual hook: a flying snake mid-glide between trees, its body flattened and curved in an S-shape against the sky.
 
-## 2026-10-18 run: 1 fact held
-
-Four of the five landed on 2026-10-19 as ids 348 to 351. The jellyfish is held,
-not for lack of a photo (one was generated) but because existing fact 11
-"Immortal Jellyfish" already says the same thing. Decide whether to replace
-fact 11's text, drop this draft, or rewrite it around a different angle.
-
-1. **Immortal Jellyfish** (Ocean) - The Jellyfish That Rewinds. Turritopsis dohrnii, a jellyfish only a few millimeters wide, can respond to injury, starvation, or harsh temperature by collapsing its adult body into a cyst and regrowing as the juvenile polyp stage it started life as, a process called transdifferentiation where mature cells convert directly into different cell types instead of dying off. This does not make the species invincible since it can still be eaten or killed outright, but the ability to restart its own life cycle earned it the nickname the immortal jellyfish. Visual hook: a tiny, near transparent jellyfish beside a small polyp colony, showing both life stages side by side.
-
 ## How a blocked fact works
 
 A fact can be drafted and parked here when no verified photo exists. Parked

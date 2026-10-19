@@ -394,6 +394,7 @@ const FACT_IMAGES = {
   349: '/assets/facts/xoloitzcuintli.jpg', // "The Aztec Dog That Survived"
   350: '/assets/facts/binturong.jpg', // "The Scent of Popcorn"
   351: '/assets/facts/blue-tongued-skink.jpg', // "A Tongue Built to Startle"
+  352: '/assets/facts/immortal-jellyfish.jpg', // "Spare Copies of the Repair Kit"
   // Own photos for the 11 facts that were borrowing another page's (2026-10-18).
   1: '/assets/facts/octopus-5.jpg', // "Three Hearts of Love"
   2: '/assets/facts/hedgehog-3.jpg', // "Spiny Situation"
