@@ -33,6 +33,37 @@ Results: `docs/fact-sources/batchA.json`. 5 confirmed, 20 partly, 0 unconfirmed.
 - 350: "rubs it onto branches and its own feet with every step": the source says binturongs soak their feet and tails by squatting to pee, then drag their tails through the trees to leave a scent trail. Nothing about rubbing it on with every step.
 - 351: "A 2020 study": the study (Badiane et al., Behavioral Ecology and Sociobiology 72:104) was published in July 2018. "far more" overstates the source's "strongest".
 
+## Batch E: facts 76 to 100
+
+Results: `docs/fact-sources/batchE.json`. 4 confirmed, 19 partly, 2 unconfirmed.
+
+**Unconfirmed:**
+
+- 89 Frog Rainmakers: no source says its croaking brings rain or carries for miles; UF/IFAS EDIS shows the reverse (rain triggers breeding and calling). Searched rainmaker nickname and rain-calling links.
+- 93 Singing Spiders: no source found for house spiders 'singing' with vibrations to attract mates; searched Parasteatoda tepidariorum courtship vibration and stridulation, found only related species (Steatoda, black widows, Argiope).
+
+**Partly (these details could not be confirmed):**
+
+- 76: "with specialized receptors in their feet and trunk" (the release says elephants may sense vibrations through the feet, via bone conduction or foot receptors similar to those in the trunk) and "They can 'hear' messages from other elephants up to 20 miles away" (20 miles is a modeled travel distance for the signal, not a shown detection range)
+- 77: "with a rapid-fire popping sound" (not on the page); "up to 500 pulses per second" understates the page's 368 to 735 pulses per second
+- 78: "(a cleaner wrasse fish has since joined them)" (not in this paper) and "immediately" (the marked birds removed the mark after a few minutes, and the paper reports this for two birds, Gerti and Goldie)
+- 81: "depending on their mood" (the paper is about social signaling in male contests and courtship, not mood)
+- 82: "Their tireless work as pollinators helps produce about one-third of the food we eat" (not on the page)
+- 83: "or confuse predators" (the page says camouflage from predators and prey, not confusing them)
+- 84: "showcasing their fitness and charm" (the paper says the display's function still needs study) and the generalization to male crickets as a whole (the study is on the house cricket)
+- 85: "mimicking human speech with astonishing accuracy", "social skills" and "displaying personalities that can change depending on their environments" (none on the page)
+- 86: "all while going into a state of cryptobiosis" (not on the page)
+- 87: "can last for 20 minutes" (the page says about 15 minutes) and "or simply to communicate with their fellow swimmers"
+- 88: "it's not just for camouflage" and "masters of both disguise" (the page does not mention camouflage)
+- 90: "up to 5 hours" (the source says several hours, for sea turtles generally), "dive deep" and "one of the ocean's most efficient swimmers"
+- 91: "They cut leaves" (leafcutters are not named in the abstract) and "thousands of years before humans" (the source dates ant agriculture to about 66 million years ago)
+- 92: "three-toed" (the page says sloths generally) and "pulling themselves along with their long front arms"
+- 95: "can also temporarily impair a predator's sense of smell" (the review lists this only as a proposed function, not a shown one)
+- 96: "just like cats", "primarily to communicate with their family members" and "helps strengthen social bonds and keep everyone feeling safe" (for males the study finds the purr is used most in aggressive encounters)
+- 98: "cramming their entire mating season into just a week or two", "right as snowmelt fills" and "serenading females" (not on the page)
+- 99: "providing each other with protection and food" (the fish gets protection and food; the anemone's stated benefits are parasite removal and water circulation)
+- 100: "sometimes living just a few hours as adults" and "mating, and then dying in the same day" (the page gives one to four days for most adults)
+
 ## Batches B to N
 
 | Batch | Facts | Status |
@@ -40,7 +71,7 @@ Results: `docs/fact-sources/batchA.json`. 5 confirmed, 20 partly, 0 unconfirmed.
 | B | 1 to 25 | running |
 | C | 26 to 50 | running |
 | D | 51 to 75 | running |
-| E | 76 to 100 | running |
+| E | 76 to 100 | done |
 | F | 101 to 125 | running |
 | G | 126 to 150 | waiting |
 | H | 151 to 175 | waiting |
