@@ -1,4 +1,65 @@
-# Site review, Oct 19 2026
+# Site review, Oct 19 2026: combined view
+
+Duplicates merged, then ranked by importance. ✓ = a skeptic checked it (every check came back confirmed or partly; none refuted). Everything else is a finder's claim not yet checked, so check before fixing. Per-finding detail follows below this section.
+
+## Highest importance
+
+1. Trackers (GA, Ahrefs, Cloudflare) load with no consent step, and the Privacy Policy describes a consent flow that does not exist (visitor-privacy-0 ✓)
+2. Invisible toast layer eats taps on the mobile header and tablet bottom tabs, on every page (nav-surfaces-0)
+3. Legal state pages show visitors AI research notes ("refuses curl from this container") (content-sources-1)
+4. Donors land on a 404 page after paying (store-donate-3)
+5. Facts are called "verified" but none of the 347 carries a source (eeat-other-1)
+6. Hubs and encyclopedia pages have no author or date (group above) (eeat-articles-0 ✓)
+7. Back buttons send Google visitors off the site; no way home on mobile hubs (group above) (nav-behavior-0 ✓)
+8. Store and donate pages never say who is selling or receiving the money; unbacked 1% climate pledge (store-donate-0)
+9. CC BY and CC BY-SA photos shown without credit, and no credits page exists (eeat-other-7)
+10. Hub Amazon links come before a tiny disclosure without the required Amazon wording (group above) (visitor-privacy-2 ✓)
+11. Five articles dated before the domain existed; 148 share one publish date, one re-dated backward (content-dates-claims-0 ✓)
+12. Three medical articles lack the vet disclaimer, one with medication doses (visitor-privacy-7)
+13. 301 sources point at bare homepages; about 1 in 6 sourced articles cites retailers or affiliate blogs (content-sources-0)
+
+## Lowest importance
+
+- Scanner scores themselves (Gridinsoft, ScamAdviser, no reviews, no Wayback captures): no effect on Google, mostly fixed by time (domain-scanners-2 ✓)
+- DNSSEC DS record, CSP inline script, Sucuri B grade (domain-infra-4)
+- HSTS preload not submitted, www/http redirect hops, SPF near the lookup limit, security.txt policy 404 (domain-infra-9)
+- og:image dimensions wrong, hero images 32px under Discover minimum (seo-structured-6)
+- FAQ/HowTo markup Google no longer uses; Animal Days FAQPage marks up hidden text (easy delete) (seo-structured-7)
+- 525 sitemap URLs without lastmod; llms.txt stale; snippets cut mid-sentence; quiz pages thin (seo-crawl-6)
+- Skip link and aria-current missing; section anchors only work on in-page clicks (nav-behavior-7)
+- 53 articles over 5 sources without the rulebook note; small date-format slips (content-sources-11)
+
+Everything not listed in either section sits in the middle: real, but neither urgent nor trivial.
+
+## Duplicate groups
+
+First ID in each group is the one to keep.
+
+- **Hubs and encyclopedia pages: no author, no date, schema credits the Organization:** eeat-articles-0 ✓, content-dates-claims-2, seo-structured-1, eeat-other-0
+- **87 articles name "Mike" as author in schema, unlinked to the About page:** eeat-articles-2 ✓, eeat-other-2, seo-structured-2
+- **Visible date disagrees with the dateModified Google sees:** eeat-articles-1 ✓, seo-structured-0
+- **Corrections never show on the corrected page:** eeat-articles-3 ✓, content-dates-claims-1 ✓
+- **Brand identity split: BeastlyFacts vs Beastly Facts, scenery photo as logo, incomplete sameAs, wrong X handle:** domain-scanners-8, eeat-other-5, seo-structured-3, seo-structured-8
+- **Byline photo is Dex, no photo of the owner; byline sits at the end:** eeat-articles-4, eeat-other-4
+- **Contact email shows as "[email protected]" in served HTML:** domain-scanners-7, domain-infra-0, visitor-privacy-8
+- **DNSSEC half set up (no DS record at .com):** domain-scanners-10, domain-infra-4
+- **CSP allows inline script:** domain-scanners-9, domain-infra-8
+- **Hub affiliate disclosure tiny, after the links, missing Amazon wording:** visitor-privacy-2 ✓, eeat-articles-8, store-donate-1
+- **Homepage never says who runs the site or backs "Verified":** visitor-privacy-4 ✓, eeat-other-10
+- **Hub and encyclopedia Back buttons send search visitors back to Google; no way home on mobile hubs:** nav-behavior-0 ✓, nav-surfaces-1, nav-behavior-1
+- **Encyclopedia and guide indexes and category pages duplicate each other:** nav-surfaces-3, seo-crawl-1
+- **/animal-facts/ legacy page competes with /facts/; too many fact doors:** seo-crawl-2, nav-surfaces-2
+- **Store page indexable but left out of the sitemap:** seo-crawl-8, store-donate-10
+- **www and http take 2 to 3 redirect hops:** domain-infra-10, seo-crawl-11
+- **Encyclopedia and Beastlypedia entries cite no sources:** content-sources-6, eeat-other-6
+- **Strength: article affiliate disclosure comes first:** eeat-articles-9, visitor-privacy-3, store-donate-7
+- **Strength: breadcrumb JSON-LD is clean:** nav-behavior-4, seo-structured-10
+- **Strength: strong TLS and security headers:** domain-infra-5, visitor-privacy-11
+- **Strength: legal pages cite primary sources with check dates:** eeat-other-3, content-sources-8
+- **Strength: corrections log, methods page, honest About:** content-dates-claims-10, eeat-articles-11, eeat-other-9
+
+---
+## Per-finding detail
 
 Trust, audit and navigation review of beastlyfacts.com, stopped partway by the owner to save credits. Raw results, with full evidence for every finding and check, are in SITE_REVIEW_DATA.json.
 
