@@ -1,0 +1,346 @@
+[
+ {
+  "id": 126,
+  "status": "partly",
+  "publisher": "EDGE of Existence (ZSL)",
+  "url": "https://www.edgeofexistence.org/blog/x-frogs/",
+  "pageTitle": "X-Frogs",
+  "quote": "during the breeding season the males grow hair-like skin projections along the sides of their body, lending them a shaggy appearance. This is thought to enhance oxygen uptake from the water during this particularly energy-expensive time. The males sit guarding the eggs they have fertilised for long periods of time, and these \"hairs\" probably assist in respiration through the skin since they cannot use their lungs in the water.",
+  "unsupported": "\"packed with blood vessels\" (not on this page); \"and legs\" (the page says the sides of the body); \"fast-flowing, low-oxygen streams\" (the page gives no stream detail)",
+  "correctedFact": "During the breeding season, male hairy frogs grow hair-like skin projections along their sides, giving them a shaggy look. The males guard their eggs underwater for long stretches, and these \"hairs\" are thought to boost oxygen uptake through the skin, since the frogs cannot use their lungs underwater.",
+  "multiPoint": false,
+  "extraPoints": [],
+  "note": "The page hedges the oxygen role (\"thought to\", \"probably\"); the corrected fact keeps that hedge. AmphibiaWeb's species page (amphibiaweb.org/species/1506) was tried first but returned a bot check and 503 errors."
+ },
+ {
+  "id": 127,
+  "status": "partly",
+  "publisher": "Proceedings of the National Academy of Sciences (2008)",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2492458/",
+  "pageTitle": "Chronic intake of fermented floral nectar by wild treeshrews",
+  "quote": "We discovered that seven mammalian species in a West Malaysian rainforest consume alcoholic nectar daily from flower buds of the bertam palm (Eugeissona tristis), which they pollinate. The 3.8% maximum alcohol concentration (mean: 0.6%; median: 0.5%) that we recorded is among the highest ever reported in a natural food. ... Pentailed treeshrews (Ptilocercus lowii) frequently consume alcohol doses from the inflorescences that would intoxicate humans. Yet, the flower-visiting mammals showed no signs of intoxication. ... It is yet unclear to what extent treeshrews benefit from ingested alcohol per se and how they mitigate the risk of continuous high blood alcohol concentrations.",
+  "unsupported": "\"naturally about 3.8% alcohol\" (3.8% is the maximum; the mean is 0.6%); \"roughly beer strength\"; \"Special metabolic enzymes keep it perfectly sober\" (the paper says how they cope is unclear); \"starts every day\" (the paper says daily, with no time of day)",
+  "correctedFact": "Pen-tailed treeshrews in a Malaysian rainforest drink fermented nectar from bertam palm flowers daily, and its alcohol content can reach 3.8 percent. They often take in doses that would intoxicate a human, yet researchers saw no signs that they were drunk. How they cope with so much alcohol is still unclear.",
+  "multiPoint": false,
+  "extraPoints": [],
+  "note": "Abstract only (PubMed/PMC record). The enzyme explanation is press speculation; the paper explicitly leaves the mechanism open."
+ },
+ {
+  "id": 128,
+  "status": "unconfirmed",
+  "publisher": "Discover Wildlife (BBC Wildlife)",
+  "url": "https://www.discoverwildlife.com/animal-facts/birds/why-do-penguins-give-stones-to-each-other",
+  "pageTitle": "Do penguins really 'propose' with pebbles?",
+  "quote": "Pretty much the only things available to gentoo, Adélie and chinstrap penguins are pebbles, which at least serve to raise eggs off the frozen ground. Pebbles don't collect themselves and can be hard to find. The males tend to do the bulk of the work and will readily steal from their neighbours to fulfil their parental duties. ... The story goes that males try to woo a female by presenting her with a pebble, and she chooses the suitor that brings her the smoothest one. It's a lovely idea ... but any evidence that it's actually true is hard to come by.",
+  "unsupported": "The core claim (males select a perfect pebble and present it as a proposal that starts a pair bond) is called unproven by this source; \"often start a lifelong pair bond\" is also not supported",
+  "correctedFact": "Gentoo, Adélie and chinstrap penguins build their nests from pebbles, which help raise their eggs off the frozen ground. Good stones are hard to find, so males do most of the collecting and will readily steal pebbles from their neighbors' nests. The popular story of a perfect pebble proposal has little evidence behind it.",
+  "multiPoint": false,
+  "extraPoints": [],
+  "note": "The source actively debunks the card's premise, so the title \"Pebble-Proposing Love Birds\" would need to change. Australian Antarctic Program's Adélie page was checked first: it confirms pebble nests but says nothing about gifting."
+ },
+ {
+  "id": 129,
+  "status": "partly",
+  "publisher": "National Geographic",
+  "url": "https://www.nationalgeographic.com/animals/article/120912-albatross-flight-airplane-design-traugott-science",
+  "pageTitle": "Albatross's Effortless Flight Decoded: May Influence Future Planes",
+  "quote": "Through a method called dynamic soaring, the bird, with a wingspan of up to 12 feet (3.7 meters), can glide thousands of miles without flapping. ... The albatross has a special tendon in each shoulder that allows the bird to lock its wings in place, a quality it shares with fixed-wing aircraft.",
+  "unsupported": "\"Wandering\" (the article speaks of albatrosses generally); \"for hours\"; \"up to 11 feet\" (the source says up to 12 feet); \"the widest of any living bird\"; \"circle the globe on wind alone\"",
+  "correctedFact": "Albatrosses have a special tendon in each shoulder that lets them lock their wings in place, much like a fixed-wing aircraft. Using a technique called dynamic soaring, they ride the wind above the waves and can glide thousands of miles without flapping, on wings that can span up to 12 feet.",
+  "multiPoint": true,
+  "extraPoints": [
+   "Largest wingspan of any living bird",
+   "Circling the globe on wind alone"
+  ],
+  "note": "The quote has the article's em dashes replaced with commas. British Antarctic Survey's page redirected to a generic wildlife page and Te Ara blocked access, so National Geographic was the third page tried."
+ },
+ {
+  "id": 130,
+  "status": "partly",
+  "publisher": "Current Biology (2022)",
+  "url": "https://doi.org/10.1016/j.cub.2022.05.052",
+  "pageTitle": "Woodpeckers minimize cranial absorption of shocks",
+  "quote": "In vivo quantification of impact decelerations during pecking in three woodpecker species and biomechanical models now show that their cranial skeleton is used as a stiff hammer to enhance pecking performance, and not as a shock-absorbing system to protect the brain. Numerical simulations of the effect of braincase size and shape on intracranial pressure indicate that the woodpeckers' brains are still safe below the threshold of concussions known for primate brains.",
+  "unsupported": "\"up to 20 times per second\"; \"each impact is too brief to cause damage\" (the abstract credits braincase size and shape)",
+  "correctedFact": "Woodpeckers don't avoid concussions thanks to a shock-absorbing skull, a popular idea a 2022 study overturned. Measuring real pecks in three species, researchers found the skull works as a stiff hammer that makes each strike harder. Models showed their small braincases keep the brain below the pressure levels known to cause concussions in primates.",
+  "multiPoint": false,
+  "extraPoints": [],
+  "note": "Abstract only (PubMed). Core debunk and small-brain point are supported."
+ },
+ {
+  "id": 131,
+  "status": "partly",
+  "publisher": "NPR",
+  "url": "https://www.npr.org/2023/01/05/1147052902/migrating-bird-a-bar-tailed-godwit-flies-from-alaska-to-australia-without-stoppi",
+  "pageTitle": "Migrating bird, a bar-tailed godwit, flies from Alaska to Australia without stopping",
+  "quote": "But a bird named the bar-tailed godwit smashed the Guinness record by flying the 8,400-mile journey from Alaska to the Australian state of Tasmania nonstop. Tracked by a satellite tag, the bird began the migration on October 13 and flew for 11 days straight without stopping for food or rest.",
+  "unsupported": "\"drink\" (the source says food or rest only)",
+  "correctedFact": "A bar-tailed godwit tracked by satellite flew about 8,400 miles, more than 13,000 kilometers, from Alaska to Tasmania in Australia without stopping. It spent 11 straight days in the air with no break for food or rest, smashing the record for the longest nonstop flight by a bird.",
+  "multiPoint": false,
+  "extraPoints": [],
+  "note": "8,400 miles is about 13,500 km, so \"over 13,000 km\" fits. Guinness's record page URL returned 404. The only gap is \"drink\"; the owner may simply drop that word. The flight began October 13, 2022 (the article is dated January 2023)."
+ },
+ {
+  "id": 132,
+  "status": "confirmed",
+  "publisher": "Buffalo Bill Center of the West",
+  "url": "https://centerofthewest.org/2013/10/25/my-favorite-interesting-facts-about-peregrine-falcons/",
+  "pageTitle": "My favorite facts about Peregrine Falcons",
+  "quote": "When you see a peregrine falcon, you are looking at what is typically considered the fastest animal on the planet. ... Researchers have discovered that the peregrine can dive at speeds over 200 miles per hour. One group of researchers clocked their research falcon diving at an incredible 242 miles per hour. ... The peregrine falcon, however, has evolved with a nostril structure called a tubercle that deals with this problem. The tubercle is a bony conical structure that acts like a baffle",
+  "unsupported": "",
+  "correctedFact": "",
+  "multiPoint": false,
+  "extraPoints": [],
+  "note": "Written by staff of the museum's Draper Natural History Museum raptor program. The page itself hedges the lung danger (\"Some sources believe\"); the card's \"without damaging their lungs\" matches that framing."
+ },
+ {
+  "id": 133,
+  "status": "partly",
+  "publisher": "University of Illinois Chicago (UIC Today)",
+  "url": "https://today.uic.edu/naked-mole-rats-behave-like-plants-when-oxygen-is-low/",
+  "pageTitle": "Naked mole-rats behave like plants when oxygen is low",
+  "quote": "\"This is just the latest remarkable discovery about the naked mole-rat, a cold-blooded mammal that lives decades longer than other rodents, rarely gets cancer, and doesn't feel many types of pain,\" said Thomas Park ... But naked mole-rats have a backup: their brain cells start burning fructose, which produces energy anaerobically through a metabolic pathway that is only used by plants, or so scientists thought. ... At oxygen levels low enough to kill a human within minutes, naked mole-rats can survive for at least five hours, Park said.",
+  "unsupported": "\"up to 18 minutes without oxygen\" (the release gives at least five hours at low oxygen, no zero-oxygen figure); \"nearly immune to cancer\" (source: rarely gets cancer); \"one of the only mammals\" (source: a cold-blooded mammal, no uniqueness claim)",
+  "correctedFact": "When oxygen runs low, naked mole rats switch their brain cells to burning fructose, a pathway scientists thought only plants used. At oxygen levels that would kill a human within minutes, they can survive for at least five hours by slowing their pulse and breathing in a kind of suspended animation.",
+  "multiPoint": true,
+  "extraPoints": [
+   "Cancer resistance",
+   "Cannot regulate body temperature"
+  ],
+  "note": "The quote has the release's em dashes replaced with commas. The 18-minute figure comes from the Science paper (Park et al. 2017) on total anoxia, not this release. Smithsonian's National Zoo page was tried first and confirms only the cold-blooded point."
+ },
+ {
+  "id": 134,
+  "status": "partly",
+  "publisher": "University of Washington (UW News)",
+  "url": "https://www.washington.edu/news/2020/07/30/deep-sea-anglerfishes-have-evolved-a-new-type-of-immune-system/",
+  "pageTitle": "Deep-sea anglerfishes have evolved a new type of immune system",
+  "quote": "Tiny dwarfed males become permanently attached to relatively gigantic females, fuse their tissues and then establish a common blood circulation. In this way, the male becomes entirely dependent on the female for nutrient supply, like a developing fetus in the womb of a mother or a donated organ in a transplant patient.",
+  "unsupported": "\"little more than a built-in supply of sperm for life\" (the page does not mention sperm)",
+  "correctedFact": "In some deep-sea anglerfish, tiny dwarf males latch permanently onto females many times their size. Their tissues fuse and the pair share one blood circulation, leaving the male entirely dependent on the female for nutrients, much like a donated organ in a transplant patient.",
+  "multiPoint": false,
+  "extraPoints": [],
+  "note": "The page describes the strategy for deep-sea anglerfishes broadly; the card's \"in some species\" is the safer framing and is kept."
+ },
+ {
+  "id": 135,
+  "status": "partly",
+  "publisher": "Biology (Basel) (2022)",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9332576/",
+  "pageTitle": "A Review of Histocytological Events and Molecular Mechanisms Involved in Intestine Regeneration in Holothurians",
+  "quote": "Many species of sea cucumber in Echinodermata may eviscerate most of or even all internal organs when encountering predators or adverse environments, and can achieve regeneration within a certain time. ... Holothuriida and synallactida generally eviscerate through the cloaca ... For example, in Apostichopus japonicus, the newborn intestine recovers digestive function in 15 days and returns to the normal physiological state in 45 days. The digestive tract of Holothuria scabra regrows within 1 week",
+  "unsupported": "\"to confuse predators\" (the review gives predators as a trigger, not confusion as the purpose); \"a full set\" (the review says most of or even all organs, and the cloaca stays behind)",
+  "correctedFact": "When threatened by predators or other stress, many sea cucumbers can eject most of their internal organs, often through the cloaca at their rear end. Then they grow them back. Depending on the species, a new gut can regrow in as little as a week, and many species finish within three to six weeks.",
+  "multiPoint": false,
+  "extraPoints": [],
+  "note": "Some species eject organs from the front end instead; the card's \"some sea cucumbers\" covers that."
+ },
+ {
+  "id": 136,
+  "status": "partly",
+  "publisher": "Australian Museum",
+  "url": "https://australian.museum/about/organisation/media-centre/tiny-larval-mola-sunfish-/",
+  "pageTitle": "One of the World's largest fish develops from a tiny larval Mola Sunfish",
+  "quote": "Nyegaard said that sunfish hold the record of the highest potential fecundity of any vertebrate - 300 million ova in a 1.5 m long female Ocean Sunfish (Mola mola) ... \"Given sunfish are so incredibly fecund, it is an enigma why their eggs have never been found in the wild, and why sunfish larvae are so few and far between - where are they?\"",
+  "unsupported": "\"lay ... at once\" (the figure is potential fecundity, eggs counted in a female); \"almost none survive to adulthood\"",
+  "correctedFact": "Ocean sunfish hold the record for the highest potential fecundity of any vertebrate: one 1.5 meter female was carrying about 300 million eggs. Yet scientists have never found sunfish eggs in the wild, and their tiny larvae are rarely seen, which makes this huge output a lasting mystery.",
+  "multiPoint": false,
+  "extraPoints": [],
+  "note": "\"more eggs than any other vertebrate\" is supported only as potential fecundity."
+ },
+ {
+  "id": 137,
+  "status": "partly",
+  "publisher": "Current Biology (2012)",
+  "url": "https://doi.org/10.1016/j.cub.2012.02.031",
+  "pageTitle": "A unique advantage for giant eyes in giant squid",
+  "quote": "Giant and colossal deep-sea squid (Architeuthis and Mesonychoteuthis) have the largest eyes in the animal kingdom, but there is no explanation for why they would need eyes that are nearly three times the diameter of those of any other extant animal. ... such giant eyes are unlikely to evolve for detecting mates or prey at long distance but are instead uniquely suited for detecting very large predators, such as sperm whales. We also provide photographic documentation of an eyeball of about 27 cm with a 9 cm pupil in a giant squid",
+  "unsupported": "\"roughly the size of a dinner plate\"; \"built to catch the faintest flickers of bioluminescent light\" (the abstract says suited to spotting large predators such as sperm whales); giant squid share the record with colossal squid",
+  "correctedFact": "Giant and colossal squid have the largest eyes in the animal kingdom, nearly three times the width of any other living animal's. One giant squid eye measured about 27 cm across. Scientists think such huge eyes evolved to spot very large predators like sperm whales from more than 120 meters away in the deep sea.",
+  "multiPoint": false,
+  "extraPoints": [],
+  "note": "Abstract only (PubMed). The paper's full text links whale detection to bioluminescence the whales trigger, but that is not in the abstract fetched here."
+ },
+ {
+  "id": 138,
+  "status": "partly",
+  "publisher": "Scientific Reports (2016)",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4698635/",
+  "pageTitle": "Off like a shot: scaling of ballistic tongue projection reveals extremely high performance in small chameleons",
+  "quote": "Chameleons employ such a mechanism to ballistically project their tongue up to two body lengths, achieving power outputs nearly three times greater than those possible via muscle contraction. ... small species project their tongues proportionately further than large species, achieving projection distances of 2.5 body lengths. Furthermore, feedings with peak accelerations of 2,590 m s-2, or 264 g, and peak power output values of 14,040 W kg-1 are reported. These values represent the highest accelerations and power outputs reported for any amniote movement",
+  "unsupported": "\"more G-force than a human fighter pilot can withstand\" (the paper gives 264 g but makes no pilot comparison); \"snap back with its prey in a fraction of a second\"",
+  "correctedFact": "A chameleon's tongue is loaded like a spring with stretchy tissue. In small species it can shoot out 2.5 times the animal's body length, with peak accelerations of 264 g. That is the highest acceleration and power output ever recorded for any movement by a reptile, bird or mammal.",
+  "multiPoint": false,
+  "extraPoints": [],
+  "note": "264 g is far above what pilots tolerate, but the comparison itself is not in the source."
+ },
+ {
+  "id": 139,
+  "status": "partly",
+  "publisher": "New Zealand Department of Conservation",
+  "url": "https://www.doc.govt.nz/nature/native-animals/reptiles-and-frogs/tuatara/",
+  "pageTitle": "Tuatara: New Zealand reptiles",
+  "quote": "They are the last survivors of an order of reptiles that thrived in the age of the dinosaurs. ... Tuatara have one of the slowest growth rates of any reptile. ... A tuatara's average life span is about 60 years, but they can live up to 100 years. ... Tuatara are the only surviving members of the order Sphenodontia. This order was well represented by many species during the age of the dinosaurs, some 200 million years ago. All species except the tuatara declined and eventually became extinct about 60 million years ago.",
+  "unsupported": "\"light-sensing 'third eye' on top of their skull\" (not on this page); \"a metabolism so slow\" (the page says slow growth); \"live past 100\" (the page says up to 100); \"predates the dinosaurs\" (the page says thrived in the age of the dinosaurs)",
+  "correctedFact": "Tuatara are the last surviving members of Sphenodontia, a reptile order that thrived in the age of the dinosaurs some 200 million years ago. Every other species in the order died out about 60 million years ago. Tuatara also grow more slowly than almost any other reptile and can live up to 100 years.",
+  "multiPoint": true,
+  "extraPoints": [
+   "Third eye",
+   "Slow metabolism and long life"
+  ],
+  "note": "Title \"The Reptile With a Third Eye\" rests on the one claim this page lacks; the owner may want a different title or a second fact card for the parietal eye."
+ },
+ {
+  "id": 140,
+  "status": "partly",
+  "publisher": "University of Florida News",
+  "url": "https://archive.news.ufl.edu/articles/2003/09/research-alligator-is-animal-kingdoms-champion-chomper.html",
+  "pageTitle": "Research: Alligator Is Animal Kingdom's Champion Chomper",
+  "quote": "The largest, a nearly 12 1/2 -foot behemoth weighing 665 pounds named Hercules, bit down with a more than a ton of force, 2,125 pounds, to be exact, or nearly as much force as the weight of a small sedan. That's more forceful than all living animals measured, Vliet said. The lion, for example, has a bite force of about 940 pounds",
+  "unsupported": "\"nearly 3,000 pounds\" (the source gives 2,125 pounds); \"the muscles that open its jaw are so weak a person can hold its mouth shut with bare hands\" (not on this page)",
+  "correctedFact": "In a University of Florida study, a nearly 12.5 foot American alligator named Hercules bit down with 2,125 pounds of force, more than any other living animal measured at the time. That is more than double a lion's bite of about 940 pounds and roughly 13 times a human's.",
+  "multiPoint": true,
+  "extraPoints": [
+   "Weak jaw-opening muscles"
+  ],
+  "note": "The quote has the article's em dash replaced with a comma. Erickson et al. 2012 (PLoS ONE) was checked first: its maximum alligator bite is 9,452 N (about 2,125 lbf), so neither source supports nearly 3,000 pounds for an alligator. The title \"All Bite, No Bark\" still fits."
+ },
+ {
+  "id": 141,
+  "status": "partly",
+  "publisher": "National Geographic",
+  "url": "https://www.nationalgeographic.com/science/article/falling-leaf-flying-dragon",
+  "pageTitle": "Falling Leaf, Flying Dragon",
+  "quote": "Instead, it extends two flaps of skin from its flanks, supported by unusually long ribs. The flaps look and work like wings, allowing this lizard, the aptly named flying dragon, to glide to safety. They are so adept in the air that they almost never come to the ground. Why bother, when they can travel for 20 to 30 metres between treetops, without losing much altitude?",
+  "unsupported": "\"as far as 60 meters\" (the source says 20 to 30 meters)",
+  "correctedFact": "Draco lizards, or flying dragons, have unusually long ribs that support flaps of skin along their sides. Spread out, the flaps work like wings, letting the lizards glide 20 to 30 meters between treetops without losing much height. They are so good at it that they almost never come down to the ground.",
+  "multiPoint": false,
+  "extraPoints": [],
+  "note": "The quote has the article's em dashes replaced with commas. No source in the search gave 60 meters."
+ },
+ {
+  "id": 142,
+  "status": "confirmed",
+  "publisher": "Catania Lab, Vanderbilt University",
+  "url": "https://as.vanderbilt.edu/catanialab/?p=106",
+  "pageTitle": "Star-Nosed Mole | Catania Lab",
+  "quote": "1) Densely innervated nose with 25,000 touch organs ... The 22 nasal rays of the star ... Moles can identify and eat a small prey item in as little as 120 milliseconds, placing them in the Guinness Book of World Records as the fastest mammalian forager.",
+  "unsupported": "",
+  "correctedFact": "",
+  "multiPoint": false,
+  "extraPoints": [],
+  "note": "Minor: the card says \"over 25,000\"; the lab gives 25,000. \"about 120 milliseconds\" is the fastest time, not the average (227 ms in Catania and Remple 2005, Nature)."
+ },
+ {
+  "id": 143,
+  "status": "partly",
+  "publisher": "National Park Service",
+  "url": "https://www.nps.gov/subjects/bats/echolocation.htm",
+  "pageTitle": "Echolocation - Bats",
+  "quote": "Bats navigate and find insect prey using echolocation. They produce sound waves at frequencies above human hearing, called ultrasound. The sound waves emitted by bats bounce off objects in their environment. Then, the sounds return to the bats' ears ... When a bat detects an insect it wants to eat, it produces a rapid series of calls to pin-point the exact location of its prey",
+  "unsupported": "\"the only mammals capable of true, sustained flight\" (not on this page; NPS states it on its sibling page How Bats Fly); \"in total darkness\"; \"up to 200 calls per second\"; \"build a live map\"",
+  "correctedFact": "Many bats find their way and their food by echolocation. They send out ultrasound calls too high for human ears, and the echoes bouncing back reveal what is around them. When a bat detects an insect, it fires off a rapid series of calls, called a feeding buzz, to pinpoint its prey before swooping in.",
+  "multiPoint": true,
+  "extraPoints": [
+   "Only mammals capable of true flight"
+  ],
+  "note": "NPS How Bats Fly (nps.gov/subjects/bats/how-bats-fly.htm) says \"Bats are the only mammals capable of true flight\" if the owner keeps that point. The 200 calls per second figure appears only in a European acoustics paper turned up by search, not fetched."
+ },
+ {
+  "id": 144,
+  "status": "partly",
+  "publisher": "National Park Service (Point Reyes National Seashore)",
+  "url": "https://home.nps.gov/pore/learn/nature/elephant_seals.htm",
+  "pageTitle": "Elephant Seals - Point Reyes National Seashore",
+  "quote": "The average dive reaches 1,000 to 2,000 feet, lasts close to half an hour ... Before diving, elephant seals exhale; collapsing their lungs so there is little air to be compressed. ... Elephant seals prolong their dives by reducing their heart rate. A seal resting on land has a heart rate of 55-120 beats per minute, but when it dives, the heart slows to 4-15 beats per minute.",
+  "unsupported": "\"over 2,000 meters deep\"; \"up to two hours\"; \"longer than almost any other mammal\"",
+  "correctedFact": "Elephant seals breathe out before diving, collapsing their lungs so there is little air to squeeze, and carry their oxygen in their blood instead. Underwater, their heart rate drops from 55 to 120 beats per minute to just 4 to 15. A typical dive reaches 1,000 to 2,000 feet and lasts close to half an hour.",
+  "multiPoint": false,
+  "extraPoints": [],
+  "note": "Mechanism fully supported. The title \"Two-Hour Breath Holders\" rests on an unsupported number; a search result cited a 119-minute record for a northern elephant seal from a university page that was not fetched."
+ },
+ {
+  "id": 145,
+  "status": "partly",
+  "publisher": "PLoS Genetics (2005)",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1183522/",
+  "pageTitle": "Pseudogenization of a sweet-receptor gene accounts for cats' indifference toward sugar",
+  "quote": "We conclude that cat Tas1r3 is an apparently functional and expressed receptor but that cat Tas1r2 is an unexpressed pseudogene. A functional sweet-taste receptor heteromer cannot form, and thus the cat lacks the receptor likely necessary for detection of sweet stimuli. ... Tas1r2 in tiger and cheetah and in six healthy adult domestic cats all show the similar deletion and stop codons.",
+  "unsupported": "\"one of the only mammals\" (the paper contrasts cats with most omnivores, herbivores and dogs, but makes no rarity claim)",
+  "correctedFact": "Cats cannot taste sweetness. One of the two genes needed to build the sweet taste receptor is broken in cats, and the same defect shows up in tigers and cheetahs. This likely happened as their ancestors became strict meat eaters, which is why sugary treats don't tempt them the way they tempt dogs.",
+  "multiPoint": false,
+  "extraPoints": [],
+  "note": "Only the rarity framing is unsupported; the core is solid. Later studies found the same loss in other carnivores such as sea lions, so \"one of the only\" is risky."
+ },
+ {
+  "id": 146,
+  "status": "partly",
+  "publisher": "Basenji Club of America",
+  "url": "https://basenji.org/basenji/",
+  "pageTitle": "The Basenji",
+  "quote": "Short coats, moderate size, striking appearance, and the fact that they don't bark all add to the appeal. ... They don't bark. They do everything else. Basenjis are not mute. They growl, whimper, and whine. They have a hair-raising scream and a delightful yodel. They are often described as cat-like",
+  "unsupported": "\"an unusually shaped larynx\"; \"nicknamed the 'baroo'\"",
+  "correctedFact": "Basenjis, Africa's \"barkless dog,\" don't actually bark. That doesn't make them silent, though: they growl, whimper and whine, and they are known for a hair-raising scream and a delightful yodel. Owners often describe the breed as catlike.",
+  "multiPoint": false,
+  "extraPoints": [],
+  "note": "The AKC breed page was tried first and only gives the \"Barkless Dog\" nickname. The BCA homepage has the \"barkless dog\" phrase; the breed page cited here has the vocal detail."
+ },
+ {
+  "id": 147,
+  "status": "partly",
+  "publisher": "NOVA (PBS)",
+  "url": "https://www.pbs.org/wgbh/nova/article/dogs-sense-of-smell/",
+  "pageTitle": "Dogs' Dazzling Sense of Smell",
+  "quote": "Dogs' sense of smell overpowers our own by orders of magnitude, it's 10,000 to 100,000 times as acute, scientists say. ... For one thing, they possess up to 300 million olfactory receptors in their noses, compared to about six million in us.",
+  "unsupported": "\"Their wet nose actually helps by trapping scent chemicals\" (not on this page)",
+  "correctedFact": "A dog's sense of smell is an estimated 10,000 to 100,000 times as acute as ours. Dogs carry up to 300 million smell receptors in their noses, compared with about six million in humans, and could detect a teaspoon of sugar dissolved in a million gallons of water.",
+  "multiPoint": true,
+  "extraPoints": [
+   "Wet nose traps scent chemicals"
+  ],
+  "note": "The quote has the article's em dash replaced with a comma. The teaspoon comparison is on the same page, attributed to Alexandra Horowitz."
+ },
+ {
+  "id": 148,
+  "status": "partly",
+  "publisher": "The Cat Fanciers' Association",
+  "url": "https://cfa.org/cat-talk/the-fascinating-world-of-cat-whiskers/",
+  "pageTitle": "The Fascinating World of Cat Whiskers",
+  "quote": "The whiskers on their muzzle extend to about the width of their body, which is how they can squeeze through tight spaces without getting stuck, although this is not scientifically proven. ... By flexing whiskers back and forth, cats can detect subtle changes in air currents and vibrations, which helps them avoid objects like furniture and trees.",
+  "unsupported": "The card states the width rule and gap testing as fact; the source repeats them but says they are \"not scientifically proven\"",
+  "correctedFact": "A cat's muzzle whiskers are often said to reach about the width of its body, helping it judge tight spaces, though that idea is not scientifically proven. What is clear is that whiskers work as a built-in navigation aid, picking up air currents and vibrations so cats can steer around objects in the dark.",
+  "multiPoint": false,
+  "extraPoints": [],
+  "note": "The quote has the article's en dash replaced with a comma. No vet school or peer-reviewed source measuring whisker span against body width turned up in the search. Owner's call whether to keep a hedged version or retire the card."
+ },
+ {
+  "id": 149,
+  "status": "partly",
+  "publisher": "Journal of Experimental Biology (2015)",
+  "url": "https://doi.org/10.1242/jeb.121384",
+  "pageTitle": "Snake constriction rapidly induces circulatory arrest in rats",
+  "quote": "we examined the cardiovascular function of anesthetized rats before, during and after being constricted by boas (Boa constrictor) ... The results demonstrate that within 6 s of being constricted, peripheral arterial blood pressure (PBP) at the femoral artery dropped to 1/2 of baseline values while central venous pressure (CVP) increased 6-fold ... These results are the first to document the physiological response of prey to constriction and support the hypothesis that snake constriction induces rapid prey death due to circulatory arrest.",
+  "unsupported": "\"faints within seconds\" (the rats were already anesthetized; the paper reports blood pressure halving within 6 seconds); \"well before it would ever suffocate\" (no comparison with suffocation timing); \"tiny vestigial hind-leg spurs\" (not in this paper)",
+  "correctedFact": "Boa constrictors don't simply suffocate their prey. In a 2015 study led by Scott Boback, a boa's squeeze cut a rat's arterial blood pressure in half within six seconds and threw its heart into failure, supporting the idea that constriction kills fast by stopping blood circulation.",
+  "multiPoint": true,
+  "extraPoints": [
+   "Vestigial hind-leg spurs"
+  ],
+  "note": "Abstract only (PubMed). Scott Boback is named as first author on the paper."
+ },
+ {
+  "id": 150,
+  "status": "partly",
+  "publisher": "Merck Veterinary Manual",
+  "url": "https://www.merckvetmanual.com/all-other-pets/guinea-pigs/nutritional-problems-of-guinea-pigs",
+  "pageTitle": "Nutritional Problems of Guinea Pigs",
+  "quote": "One of the most common nutritional issues in guinea pigs is vitamin C deficiency (scurvy). Guinea pigs, like humans and some other mammals, can't make vitamin C and must get it from their diet. ... Guinea pigs need at least 10 milligrams (mg) of vitamin C per kilogram (kg) of body weight per day ... Prevention is best, by feeding guinea pig-specific, vitamin C-fortified pellets and vitamin C-rich vegetables and fruits.",
+  "unsupported": "\"'popcorn,' leaping straight up and twisting mid-air, when they're overjoyed\" (not on this page)",
+  "correctedFact": "Guinea pigs, like humans, can't make their own vitamin C, so they need it from their diet every day or they risk scurvy. The vitamin C in pellets breaks down with heat, light and moisture, so vets recommend vitamin C rich foods like bell peppers, kale and broccoli too.",
+  "multiPoint": true,
+  "extraPoints": [
+   "Popcorning when happy"
+  ],
+  "note": "Merck's general health problems page for guinea pigs was tried first and only mentions vitamin C in passing."
+ }
+]

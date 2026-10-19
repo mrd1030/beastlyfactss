@@ -191,6 +191,39 @@ Results: `docs/fact-sources/batchF.json`. 3 confirmed, 21 partly, 1 unconfirmed.
 - 124: "parachutes and rudders", "steer mid-air, control its descent" (no steering on the page); "distant" branches is loose (up to 15 meters)
 - 125: "up to a liter"; "in just 0.1 seconds" (paper: under 0.4 seconds); "perfect smoky getaway"
 
+## Batch G: facts 126 to 150
+
+Results: `docs/fact-sources/batchG.json`. 2 confirmed, 22 partly, 1 unconfirmed.
+
+**Unconfirmed:**
+
+- 128 Pebble-Proposing Love Birds: The pebble proposal and lifelong pair bond. Checked the Australian Antarctic Program Adélie page (pebble nests only) and Discover Wildlife, which says evidence for the proposal story is hard to come by; males do gather and steal pebbles for the nest.
+
+**Partly (these details could not be confirmed):**
+
+- 126: "packed with blood vessels" (not on this page); "and legs" (the page says the sides of the body); "fast-flowing, low-oxygen streams" (the page gives no stream detail)
+- 127: "naturally about 3.8% alcohol" (3.8% is the maximum; the mean is 0.6%); "roughly beer strength"; "Special metabolic enzymes keep it perfectly sober" (the paper says how they cope is unclear); "starts every day" (the paper says daily, with no time of day)
+- 129: "Wandering" (the article speaks of albatrosses generally); "for hours"; "up to 11 feet" (the source says up to 12 feet); "the widest of any living bird"; "circle the globe on wind alone"
+- 130: "up to 20 times per second"; "each impact is too brief to cause damage" (the abstract credits braincase size and shape)
+- 131: "drink" (the source says food or rest only)
+- 133: "up to 18 minutes without oxygen" (the release gives at least five hours at low oxygen, no zero-oxygen figure); "nearly immune to cancer" (source: rarely gets cancer); "one of the only mammals" (source: a cold-blooded mammal, no uniqueness claim)
+- 134: "little more than a built-in supply of sperm for life" (the page does not mention sperm)
+- 135: "to confuse predators" (the review gives predators as a trigger, not confusion as the purpose); "a full set" (the review says most of or even all organs, and the cloaca stays behind)
+- 136: "lay ... at once" (the figure is potential fecundity, eggs counted in a female); "almost none survive to adulthood"
+- 137: "roughly the size of a dinner plate"; "built to catch the faintest flickers of bioluminescent light" (the abstract says suited to spotting large predators such as sperm whales); giant squid share the record with colossal squid
+- 138: "more G-force than a human fighter pilot can withstand" (the paper gives 264 g but makes no pilot comparison); "snap back with its prey in a fraction of a second"
+- 139: "light-sensing 'third eye' on top of their skull" (not on this page); "a metabolism so slow" (the page says slow growth); "live past 100" (the page says up to 100); "predates the dinosaurs" (the page says thrived in the age of the dinosaurs)
+- 140: "nearly 3,000 pounds" (the source gives 2,125 pounds); "the muscles that open its jaw are so weak a person can hold its mouth shut with bare hands" (not on this page)
+- 141: "as far as 60 meters" (the source says 20 to 30 meters)
+- 143: "the only mammals capable of true, sustained flight" (not on this page; NPS states it on its sibling page How Bats Fly); "in total darkness"; "up to 200 calls per second"; "build a live map"
+- 144: "over 2,000 meters deep"; "up to two hours"; "longer than almost any other mammal"
+- 145: "one of the only mammals" (the paper contrasts cats with most omnivores, herbivores and dogs, but makes no rarity claim)
+- 146: "an unusually shaped larynx"; "nicknamed the 'baroo'"
+- 147: "Their wet nose actually helps by trapping scent chemicals" (not on this page)
+- 148: The card states the width rule and gap testing as fact; the source repeats them but says they are "not scientifically proven"
+- 149: "faints within seconds" (the rats were already anesthetized; the paper reports blood pressure halving within 6 seconds); "well before it would ever suffocate" (no comparison with suffocation timing); "tiny vestigial hind-leg spurs" (not in this paper)
+- 150: "'popcorn,' leaping straight up and twisting mid-air, when they're overjoyed" (not on this page)
+
 ## Batch H: facts 151 to 175
 
 Results: `docs/fact-sources/batchH.json`. 5 confirmed, 19 partly, 1 unconfirmed.
@@ -230,11 +263,11 @@ Results: `docs/fact-sources/batchH.json`. 5 confirmed, 19 partly, 1 unconfirmed.
 | D | 51 to 75 | done |
 | E | 76 to 100 | done |
 | F | 101 to 125 | done |
-| G | 126 to 150 | running |
+| G | 126 to 150 | done |
 | H | 151 to 175 | done |
 | I | 176 to 200 | running |
 | J | 201 to 225 | running |
 | K | 226 to 250 | running |
 | L | 251 to 275 | running |
-| M | 276 to 306 | waiting |
+| M | 276 to 306 | running |
 | N | 307 to 348 | waiting |
