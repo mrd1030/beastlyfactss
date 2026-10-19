@@ -92,6 +92,38 @@ Results: `docs/fact-sources/batchE.json`. 4 confirmed, 19 partly, 2 unconfirmed.
 - 99: "providing each other with protection and food" (the fish gets protection and food; the anemone's stated benefits are parasite removal and water circulation)
 - 100: "sometimes living just a few hours as adults" and "mating, and then dying in the same day" (the page gives one to four days for most adults)
 
+## Batch F: facts 101 to 125
+
+Results: `docs/fact-sources/batchF.json`. 3 confirmed, 21 partly, 1 unconfirmed.
+
+**Unconfirmed:**
+
+- 106 Mission Impossible Tails: Searched tamarin tail signaling. The only lead was Moynihan (1970), Smithsonian Contributions to Zoology 28, which has a tail-pattern section among many visual displays, but the Smithsonian repository PDF returned 403 and no other source was found.
+
+**Partly (these details could not be confirmed):**
+
+- 101: "born the size of a grape", "crawl into their mother's pouch", "up to 40 mph" (the source gives almost 35 mph)
+- 102: "When they swim," (the source ties the heart roles to no activity); "in deep ocean environments" (the source says cold, low-oxygen ocean conditions)
+- 104: "just as sensitive as ours" (source says delicate); "unique 'mustache' whiskers that contribute to their charming personality"; "naturally hairless" is overstated (source says not always totally hairless)
+- 105: "mainly single-celled" (the source lists dinoflagellates alongside ostracods and other plankton); "blue-green" (the source says blue)
+- 107: "thousands of miles" (the source says long distances)
+- 108: "taken for their scales and meat" (not on this page)
+- 109: "in the blink of an eye"; texture change is credited to chromatophores on the card, but the source credits papillae; "mesmerizing underwater performers"
+- 110: "up to 30 feet" (source: generally 13 to 26 feet); "see clearly underwater thanks to their unique eye structure"
+- 111: "one of the longest-living pets out there"; "survive for months without food" (the page describes months of brumation but says nothing about food)
+- 112: "up to 6 miles per hour" (6.5 feet per second is about 4.4 mph); "curl up into little balls for cuddles when they're feeling safe" (the source says they curl up when threatened)
+- 113: "up to 10 feet" (source says nine feet); "helping these mystical creatures navigate the frigid Arctic waters" (source suggests salinity sensing, possibly linked to ice formation, mating or food, not navigation)
+- 114: "echoing through the Australian outback at sunrise" (no timing on the page, and the species lives in eastern Australia rather than the outback)
+- 115: "up to 600 volts" (source says up to 800 volts); "enough to stun a horse"
+- 116: "even run on ceilings" (the paper quotes Aristotle on running down trees head first, not ceilings)
+- 117: "Unlike other big cats" and "the only large felines that never truly roar" (the source says cheetahs do not roar, not that they are the only ones)
+- 119: "It's nature's smart way to balance populations in hot climates!" (not in the source)
+- 121: "don't have round eyeballs like us - they have fixed eye tubes" (the source calls them eyeballs locked by the sclerotic ring and does not mention tube shape)
+- 122: "the only mammals known" (the paper says "may have a unique mechanism"); "eye color" (it is the reflective tapetum lucidum behind the retina, not the iris); "dim Arctic twilight" (paper says winter darkness)
+- 123: "Miracle" (the page names him Mike); "over 18 months" (page says eighteen months); "a famous traveling sideshow attraction" (page says Life magazine and fame, no sideshow)
+- 124: "parachutes and rudders", "steer mid-air, control its descent" (no steering on the page); "distant" branches is loose (up to 15 meters)
+- 125: "up to a liter"; "in just 0.1 seconds" (paper: under 0.4 seconds); "perfect smoky getaway"
+
 ## Batches B to N
 
 | Batch | Facts | Status |
@@ -100,10 +132,10 @@ Results: `docs/fact-sources/batchE.json`. 4 confirmed, 19 partly, 2 unconfirmed.
 | C | 26 to 50 | done |
 | D | 51 to 75 | running |
 | E | 76 to 100 | done |
-| F | 101 to 125 | running |
+| F | 101 to 125 | done |
 | G | 126 to 150 | running |
 | H | 151 to 175 | running |
-| I | 176 to 200 | waiting |
+| I | 176 to 200 | running |
 | J | 201 to 225 | waiting |
 | K | 226 to 250 | waiting |
 | L | 251 to 275 | waiting |
