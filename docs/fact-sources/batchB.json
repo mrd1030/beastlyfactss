@@ -1,0 +1,347 @@
+[
+ {
+  "id": 1,
+  "status": "confirmed",
+  "publisher": "Smithsonian Magazine",
+  "url": "https://www.smithsonianmag.com/science-nature/ten-curious-facts-about-octopuses-7625828/",
+  "pageTitle": "Ten Wild Facts About Octopuses: They Have Three Hearts, Big Brains and Blue Blood",
+  "quote": "Two of the hearts work exclusively to move blood past the animal's gills, where it releases carbon dioxide and gains oxygen. ... But the latter heart actually stops beating when the octopus swims,",
+  "unsupported": "",
+  "correctedFact": "",
+  "multiPoint": false,
+  "extraPoints": [],
+  "note": "By Rachel Nuwer (2013, updated 2024). Page blocks curl, so the text was read through WebFetch; the quoted sentence continues that this explains the species' penchant for crawling rather than swimming, which exhausts them. The third heart is described as pumping blood to the organs and muscles."
+ },
+ {
+  "id": 2,
+  "status": "partly",
+  "publisher": "Hedgehog Street (People's Trust for Endangered Species and British Hedgehog Preservation Society)",
+  "url": "https://www.hedgehogstreet.org/?p=21273",
+  "pageTitle": "Hedgehog biology",
+  "quote": "Hedgehogs shed their spines over time, with new ones growing in to replace them, just like our hair! ... An adult hedgehog has between 5,000 and 7,000 spines on it's body. ... Baby hedgehogs, or hoglets, are born with their spines concealed beneath their skin and shortly after birth, their spines 'come out'.",
+  "unsupported": "\"Each spine lasts about a year before it falls out\": the page says spines are shed and replaced over time but gives no lifespan per spine.",
+  "correctedFact": "An adult hedgehog carries between 5,000 and 7,000 spines, each about 2 to 3 cm long and made of keratin, the same material as our hair and nails. Like our hair, old spines are shed over time and new ones grow in to replace them.",
+  "multiPoint": true,
+  "extraPoints": [
+   "Baby hedgehogs are born with their spines concealed beneath the skin (also supported by this page)."
+  ],
+  "note": "Conservation charity page for the west European hedgehog. A one year spine lifespan appears only in a Somerset Wildlife Trust planner, which also gives a lower spine count (3,000 to 5,000)."
+ },
+ {
+  "id": 3,
+  "status": "partly",
+  "publisher": "Guinness World Records",
+  "url": "https://www.guinnessworldrecords.com/world-records/442525-oldest-parrot-ever",
+  "pageTitle": "Oldest parrot ever",
+  "quote": "The oldest parrot ever is Cookie, a Major Mitchell's cockatoo (Cacatua leadbeateri) who was at least 82 years and 88 days old when he passed away on 27 August 2016. ... The zoo gave him a \"hatch date\" of 30 June 1933, which would make Cookie 83 years 58 days old.",
+  "unsupported": "\"They can also learn over 100 words and even understand context.\"",
+  "correctedFact": "Some parrots can live past 80. The oldest parrot on record, Cookie, a Major Mitchell's cockatoo at Brookfield Zoo, was at least 82 years old when he died in 2016. Guinness World Records notes that the hatch date the zoo gave him would make him 83.",
+  "multiPoint": true,
+  "extraPoints": [
+   "Parrots can learn over 100 words and understand context."
+  ],
+  "note": "Guinness certifies at least 82 years 88 days; 83 comes from the zoo's assigned hatch date, so \"lived to be 83\" is defensible but softer than stated."
+ },
+ {
+  "id": 4,
+  "status": "partly",
+  "publisher": "Smithsonian's National Zoo and Conservation Biology Institute",
+  "url": "https://nationalzoo.si.edu/animals/red-panda",
+  "pageTitle": "Red panda",
+  "quote": "Despite these similarities and their shared name, the two species are not closely related. ... Molecular phylogenetic studies show that red pandas are an ancient species in the order Carnivora (superfamily Musteloidea ) and are probably most closely related to the group that includes skunks, raccoons and weasels.",
+  "unsupported": "\"They were named 'panda' nearly 50 years before the giant panda.\" Also \"NOT related\": the source says \"not closely related\" (both are carnivorans).",
+  "correctedFact": "Despite the shared name, red pandas and giant pandas are not closely related. The red panda is the only living member of its own family, Ailuridae, and genetic studies suggest its closest relatives are the group that includes skunks, raccoons and weasels.",
+  "multiPoint": true,
+  "extraPoints": [
+   "Red pandas were named panda nearly 50 years before the giant panda."
+  ],
+  "note": "The page says red pandas were first described in 1825 but gives no date for the giant panda or for the name."
+ },
+ {
+  "id": 5,
+  "status": "partly",
+  "publisher": "Proceedings of the Royal Society B (2016)",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4920320/",
+  "pageTitle": "Colour change on different body regions provides thermal and signalling advantages in bearded dragon lizards",
+  "quote": "Here, we show that wild-caught bearded dragon lizards ( Pogona vitticeps ) exhibit substantial UV–visible and NIR skin reflectance change in response to temperature for dorsal but not ventral (throat and upper chest) body regions. By contrast, lizards showed the greatest temperature-independent colour change on the beard and upper chest during social interactions and as a result of circadian colour change.",
+  "unsupported": "\"They darken when cold or stressed, and lighten up when warm and happy\" (the abstract gives no direction of change and no mood link) and \"Their 'beard' puffs out and turns black when they're showing off\" (the abstract says only that the beard changes color during social interactions).",
+  "correctedFact": "Bearded dragons change color in different ways on different parts of the body. A 2016 study of wild-caught dragons found their backs change color with temperature, which could save hours of basking, while the beard and upper chest change most during social interactions and on a daily cycle.",
+  "multiPoint": false,
+  "extraPoints": [],
+  "note": "Only the abstract is readable (PMC copy is not open access). The University of Melbourne press release on the same study returned 403."
+ },
+ {
+  "id": 6,
+  "status": "partly",
+  "publisher": "PDSA",
+  "url": "https://www.pdsa.org.uk/pet-help-and-advice/pet-health-hub/symptoms/why-do-rabbits-grind-their-teeth",
+  "pageTitle": "Why do rabbits grind their teeth?",
+  "quote": "Rabbits tend to quietly grind the front teeth when they are happy and relaxed (similar to a cat's purr), and when they wear down their front teeth (to keep them the right size and shape). This type of grinding is common when you stroke a rabbit that is extremely relaxed.",
+  "unsupported": "\"They also do 'binkies' (joyful leaps and twists in the air) when they're feeling playful.\"",
+  "correctedFact": "Rabbits have their own version of a purr. When they are happy and relaxed, they quietly grind their front teeth together, which vets compare to a cat's purr, and it is common while you stroke a very relaxed rabbit. Loud grinding is different: it can be a sign of pain or stress.",
+  "multiPoint": true,
+  "extraPoints": [
+   "Rabbits do binkies, joyful leaps and twists in the air."
+  ],
+  "note": "UK veterinary charity. No university or vet school page found for binkies."
+ },
+ {
+  "id": 7,
+  "status": "confirmed",
+  "publisher": "University of Chicago News",
+  "url": "https://news.uchicago.edu/story/dolphins-keep-lifelong-social-memories-longest-non-human-species",
+  "pageTitle": "Dolphins keep lifelong social memories, longest in a non-human species",
+  "quote": "Dolphins can recognize their old tank mates' whistles after being separated for more than 20 years—the longest social memory ever recorded for a non-human species. ... In recent years, other studies have established that each dolphin develops a unique signature whistle that appears to function as a name. ... a wild bottlenose dolphin can learn and repeat signatures belonging to other individuals, and answer when another dolphin mimics its unique call.",
+  "unsupported": "",
+  "correctedFact": "",
+  "multiPoint": false,
+  "extraPoints": [],
+  "note": "Reports Bruck (2013), Proceedings of the Royal Society B, doi 10.1098/rspb.2013.1726, whose abstract also says social recognition can last at least 20 years. The calling of specific individuals cites King and Janik (St Andrews). The 20 year figure comes from captive dolphins."
+ },
+ {
+  "id": 8,
+  "status": "partly",
+  "publisher": "The Conversation (Andrew Durso, Utah State University)",
+  "url": "https://theconversation.com/explainer-why-do-snakes-flick-their-tongues-29935",
+  "pageTitle": "Explainer: why do snakes flick their tongues?",
+  "quote": "Snakes use their tongues for collecting chemicals from the air or ground. The tongue does not have receptors to taste or smell. Instead, these receptors are in the vomeronasal, or Jacobson's Organ, which is in the roof of the mouth. ... But X-ray movies have revealed that the tongue does not move inside the closed mouth, it simply deposits the chemicals it has collected onto pads on the floor of the mouth as the mouth is closing.",
+  "unsupported": "\"then press it into the Jacobson's organ\": the source says that was once thought, but X-ray movies show the tongue leaves the chemicals on pads on the floor of the mouth, which deliver them to the organ.",
+  "correctedFact": "Snakes smell with help from their tongues. The forked tongue collects chemicals from the air and ground, then leaves them on pads on the floor of the mouth, which pass them up to the Jacobson's organ in the roof of the mouth. The tongue itself has no smell receptors.",
+  "multiPoint": false,
+  "extraPoints": [],
+  "note": "Written by a herpetologist and cites Kurt Schwenk's research. A Filoramo and Schwenk (2009) abstract was checked first but covers lizards with unforked tongues."
+ },
+ {
+  "id": 9,
+  "status": "partly",
+  "publisher": "VCA Animal Hospitals",
+  "url": "https://vcahospitals.com/resources/behavior-cat/communication/why-do-cats-headbutt-you",
+  "pageTitle": "Why do cats headbutt you?",
+  "quote": "Headbutts, or head bunts as they're also known, are a behavior that domestic cats share with their wild counterparts. ... Cats have glands on their cheeks, forehead and chin that contain pheromones. ... While it's true that headbutting isn't necessarily a sign of love, it is, however, a sign of trust. When your cat headbutts you, they're rubbing pheromones on you from the glands located just in front of their ears and accepting you into their inner circle.",
+  "unsupported": "\"it means they love\" (the source says it is not necessarily a sign of love, only of trust) and \"marking you as 'theirs'\" (the source says it accepts you into their inner circle).",
+  "correctedFact": "When your cat headbutts you, a move also called head bunting, it is a sign of trust. Cats have scent glands on their cheeks, forehead and chin, and a headbutt rubs pheromones from the glands just in front of the ears onto you, bringing you into their inner circle.",
+  "multiPoint": false,
+  "extraPoints": [],
+  "note": "Veterinary hospital group page. A Tufts Cummings School (Catnip) article on bunting was tried first but the link is dead."
+ },
+ {
+  "id": 10,
+  "status": "partly",
+  "publisher": "Proceedings of the Royal Society B (2012)",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3234554/",
+  "pageTitle": "Social learning spreads knowledge about dangerous humans among American crows",
+  "quote": "American crows ( Corvus brachyrhynchos ) use both sources of information to learn the facial features of a dangerous person. ... Later recognition of dangerous masks by lone crows that were never captured is consistent with horizontal social learning. Independent scolding by young crows, whose parents had conditioned them to scold the dangerous mask, demonstrates vertical social learning. ... Learning enabled scolding to double in frequency and spread at least 1.2 km from the place of origin over a 5 year period at one site.",
+  "unsupported": "\"'friend'\" (the study covers only dangerous faces) and \"They've been known to bring gifts to people who feed them, from shiny buttons to earrings!\"",
+  "correctedFact": "Crows remember the face of a person who threatened them, and they spread the word. In a Seattle study, crows learned a dangerous mask worn by researchers who trapped them, their young learned to scold it too, and over five years the scolding doubled and spread at least 1.2 km.",
+  "multiPoint": true,
+  "extraPoints": [
+   "Crows bring gifts such as shiny buttons and earrings to people who feed them."
+  ],
+  "note": "Abstract only. The faces were rubber masks worn by researchers. No study supporting the gift claim was checked in this pass."
+ },
+ {
+  "id": 11,
+  "status": "partly",
+  "publisher": "PNAS (2022)",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9459311/",
+  "pageTitle": "Comparative genomics of mortal and immortal cnidarians unveils novel keys behind rejuvenation",
+  "quote": "While aging affects most living organisms, the hydrozoan Turritopsis dohrnii is the only species able to rejuvenate repeatedly after sexual reproduction, becoming biologically immortal. ... In this process, the free swimming medusa shrinks until the cyst stage, where all structures from the medusa totally disappear into a homogeneous opaque mass. Later, a stolon starts growing from the cyst and polyp buds appear to become fully grown polyps afterward.",
+  "unsupported": "\"When it gets old or stressed\": this paper describes rejuvenation after the medusa reproduces and does not name age or stress as the trigger.",
+  "correctedFact": "The jellyfish Turritopsis dohrnii can rejuvenate again and again. After the adult medusa reproduces, it can shrink into a cyst and then regrow as young polyps, restarting its life cycle. That ability to reverse its aging repeatedly is why scientists call it biologically immortal.",
+  "multiPoint": false,
+  "extraPoints": [],
+  "note": "Same paper used in batch 1 for fact 352."
+ },
+ {
+  "id": 12,
+  "status": "partly",
+  "publisher": "Science (2014)",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/24458639/",
+  "pageTitle": "A different form of color vision in mantis shrimp",
+  "quote": "One of the most complex eyes in the animal kingdom can be found in species of stomatopod crustaceans (mantis shrimp), some of which have 12 different photoreceptor types, each sampling a narrow set of wavelengths ranging from deep ultraviolet to far red (300 to 720 nanometers). ... Why use 12 color channels when three or four are sufficient for fine color discrimination?",
+  "unsupported": "\"16 types of color receptors\" (the source says 12 photoreceptor types, which it calls 12 color channels), \"polarized light\", and \"They also punch with the force of a bullet!\"",
+  "correctedFact": "Some mantis shrimp have 12 different types of color photoreceptors, compared with our three, sampling light from deep ultraviolet to far red. Surprisingly, tests show they are poor at telling similar colors apart, so they seem to recognize colors quickly by scanning with their eyes instead.",
+  "multiPoint": true,
+  "extraPoints": [
+   "Mantis shrimp punch with the force of a bullet."
+  ],
+  "note": "Abstract (Thoen et al., Science 343:411). Polarization vision and strike force would each need their own source."
+ },
+ {
+  "id": 13,
+  "status": "partly",
+  "publisher": "Biology Letters (2006)",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1617198/",
+  "pageTitle": "African elephants show high levels of interest in the skulls and ivory of their own species",
+  "quote": "African elephants ( Loxodonta africana ) are unusual in that they not only give dramatic reactions to the dead bodies of other elephants, but are also reported to systematically investigate elephant bones and tusks that they encounter, and it has sometimes been suggested that they visit the bones of relatives. Here, we use systematic presentations of object arrays to demonstrate that African elephants show higher levels of interest in elephant skulls and ivory than in natural objects or the skulls of other large terrestrial mammals. However, they do not appear to specifically select the skulls of their own relatives for investigation",
+  "unsupported": "\"hold funerals\", \"of deceased family members\" (the study found they do not single out relatives' skulls), \"with their trunks\", \"stand vigil for hours\", and \"They've even been seen crying.\"",
+  "correctedFact": "Elephants are unusually drawn to their dead. African elephants react dramatically to the bodies of other elephants, and in tests they investigated elephant skulls and ivory more than other objects or other animals' skulls. They did not pick out their own relatives' skulls, so visits to dead kin likely reflect a wider attraction.",
+  "multiPoint": false,
+  "extraPoints": [],
+  "note": "Abstract only. Funeral, vigil and crying wording is anecdotal and not in this study."
+ },
+ {
+  "id": 14,
+  "status": "partly",
+  "publisher": "Marine Biological Laboratory",
+  "url": "https://www.mbl.edu/research/research-organisms/axolotl",
+  "pageTitle": "Axolotl",
+  "quote": "Axolotls can functionally regenerate multiple body parts—including limbs, spinal cord, and parts of the brain and heart—without forming scar tissue. ... scientists studying these animals hope to decipher how the cells of axolotls respond to injury in the spinal cord, limbs, and skin at the cellular and molecular level, and how that process differs from healing in humans, who can't regenerate.",
+  "unsupported": "\"their heart\": the source says parts of the heart, not the whole heart.",
+  "correctedFact": "Axolotls can regrow limbs, their spinal cord, and parts of their brain and heart without forming scar tissue. Scientists study how their cells respond to injury, and how that process differs from healing in humans, hoping to learn why we cannot regenerate the same way.",
+  "multiPoint": false,
+  "extraPoints": [],
+  "note": "Research institute page (MBL, affiliated with the University of Chicago)."
+ },
+ {
+  "id": 15,
+  "status": "partly",
+  "publisher": "Soft Matter (2021)",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/33289747/",
+  "pageTitle": "Intestines of non-uniform stiffness mold the corners of wombat feces",
+  "quote": "Wombat dissections show that cubes are formed within the last 17 percent of the intestine. Using histology and tensile testing, we discover that the cross-section of the intestine exhibits regions with a two-fold increase in thickness and a four-fold increase in stiffness, which we hypothesize facilitates the formation of corners by contractions of the intestine. ... The corners arise from faster contraction in the stiff regions and relatively slower movement in the center of the soft regions.",
+  "unsupported": "\"a very dry gut lets the corners hold\", \"The cubes sit on rocks and logs without rolling off\", \"where they work as scent messages carrying identity and breeding status\", and \"Despite the common claim, wombats are not territorial.\"",
+  "correctedFact": "Wombats produce cube-shaped poop, and the shaping happens inside the gut. Dissections show the cubes form in the last 17 percent of the intestine, where bands of stiffer and softer intestinal wall contract at different speeds, molding flat sides and sharp corners.",
+  "multiPoint": true,
+  "extraPoints": [
+   "The cubes sit on rocks and logs as scent messages carrying identity and breeding status.",
+   "Wombats are not territorial, despite the common claim."
+  ],
+  "note": "Abstract only; the RSC full text is behind a bot wall (403). The full paper may cover dryness and the rock and log placement; the scent and not territorial points would need their own source."
+ },
+ {
+  "id": 16,
+  "status": "partly",
+  "publisher": "Cornell Chronicle",
+  "url": "https://news.cornell.edu/stories/2006/04/honeybee-decision-making-ability-rivals-any-department-committee",
+  "pageTitle": "How 10,000 bees decide where to go when they fly the coop -- decision-making to rival any department committee",
+  "quote": "Seeley and his colleagues, however, have confirmed that they dance to report on real estate, too, as part of their group decision-making process. The better the housing site, the stronger the waggle dance, the researchers found, and that prompts other scouts to visit a recommended site. If they agree it's a good choice, they also dance to advertise the site and revisit it frequently. ... \"The bees' method, which is a product of disagreement and contest rather than consensus or compromise, consistently yields excellent collective decisions,\" said Seeley. ... As soon as about 15 bees were seen at one site, the swarm would take off for it, even though some scouts were still dancing strongly for the other site.",
+  "unsupported": "\"until consensus is reached\": the source says the swarm decides by quorum, \"rather than consensus or compromise\". The \"democratic vote\" wording is an analogy the article only floats.",
+  "correctedFact": "When a honeybee swarm needs a new home, scout bees waggle dance to advertise the sites they have found, dancing harder for better ones. Other scouts check the sites and join in, and as soon as about 15 scouts gather at one site, the swarm takes off for it.",
+  "multiPoint": false,
+  "extraPoints": [],
+  "note": "Reports Thomas Seeley's research at Cornell."
+ },
+ {
+  "id": 17,
+  "status": "partly",
+  "publisher": "Discover Magazine",
+  "url": "https://www.discovermagazine.com/sea-otters-hold-hands-while-sleeping-and-they-even-cuddle-46115",
+  "pageTitle": "Sea Otters Hold Hands While Sleeping and They Even Cuddle",
+  "quote": "It's quite rare to see sea otters holding paws, especially in the wild. However, otters are known to cuddle while sleeping, or at least to sleep close to each other, to prevent themselves from drifting apart in the open ocean. ... In the wild, sea otters typically travel and sleep in large groups known as 'rafts'. Rafts are typically segregated by gender, and otters stay connected to others in the raft through more casual physical contact, or by wrapping themselves in kelp.",
+  "unsupported": "\"or seagrass\" and \"wild otters mostly keep together by watching, listening\" (the source names casual physical contact, sleeping close, and kelp).",
+  "correctedFact": "Sea otters usually travel and sleep in groups called rafts. To avoid drifting apart while they nap, they stay in casual contact, sleep close together, or wrap themselves in kelp. Holding paws does happen, but it is quite rare, especially in the wild.",
+  "multiPoint": false,
+  "extraPoints": [],
+  "note": "Science magazine (Lily Carey, 2024). No aquarium or USGS page with the claim turned up in search."
+ },
+ {
+  "id": 18,
+  "status": "partly",
+  "publisher": "Nature (2000)",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/10864324/",
+  "pageTitle": "Adhesive force of a single gecko foot-hair",
+  "quote": "Geckos are exceptional in their ability to climb rapidly up smooth vertical surfaces. Microscopy has shown that a gecko's foot has nearly five hundred thousand keratinous hairs or setae. ... Adhesive force values support the hypothesis that individual seta operate by van der Waals forces.",
+  "unsupported": "\"and ceilings\": the abstract speaks of smooth vertical surfaces only.",
+  "correctedFact": "Geckos can run up smooth walls thanks to tiny hairs on their toes called setae. Each foot has nearly 500,000 of them, and each seta ends in hundreds of tiny spatula-shaped tips that grip surfaces through weak molecular attractions called van der Waals forces.",
+  "multiPoint": false,
+  "extraPoints": [],
+  "note": "Abstract (Autumn et al., Nature 405:681). Minor: the only gap is the word ceilings. Autumn et al. (2002, PNAS) was checked first and confirms van der Waals adhesion in \"the millions of setae on the toes of geckos\" but not the per-foot count."
+ },
+ {
+  "id": 19,
+  "status": "confirmed",
+  "publisher": "Nature News (2006)",
+  "url": "https://www.nature.com/news/2006/061218/full/news061218-7.html",
+  "pageTitle": "Dragon virgin births startle zoo keepers",
+  "quote": "The miraculous births, which are all males, could be a product of keeping this threatened species in captivity ... Their results, published in Nature this week, show that the dragon sons are not direct clones of their mothers, but that the babies' DNA contains half as much variation as is present in the mother's genes ... In dragons, the female carries two different sex chromosomes (ZW), while males are homozygous ZZ. As WW is not a viable combination, all surviving offspring created by doubling up half of the female's genes must be males.",
+  "unsupported": "",
+  "correctedFact": "",
+  "multiPoint": false,
+  "extraPoints": [],
+  "note": "News report on Watts et al. (2006), Nature 444:1021, whose abstract confirms parthenogenesis in two captive females."
+ },
+ {
+  "id": 20,
+  "status": "unconfirmed",
+  "publisher": "Smithsonian's National Zoo and Conservation Biology Institute",
+  "url": "https://nationalzoo.si.edu/animals/two-toed-sloth",
+  "pageTitle": "Two-toed sloth",
+  "quote": "Despite being nearly immobile on the forest floor—they drag their bodies across the ground—they are surprisingly competent swimmers.",
+  "unsupported": "\"hold their breath underwater for up to 40 minutes\" and \"slowing their heart rate to about a third of its normal pace\".",
+  "correctedFact": "",
+  "multiPoint": false,
+  "extraPoints": [],
+  "note": "Searched for the 40 minute and one third figures: they appear only on newsletters, blogs and a Scholastic kids page, with no study cited. The National Zoo page confirms only that sloths swim well; the Sloth Conservation Foundation page returned nothing on breath holding."
+ },
+ {
+  "id": 21,
+  "status": "confirmed",
+  "publisher": "San Diego Zoo Wildlife Alliance",
+  "url": "https://animals.sandiegozoo.org/animals/flamingo",
+  "pageTitle": "Flamingo",
+  "quote": "The flamingo's pink or reddish color comes from the rich sources of carotenoid pigments (like the pigments of carrots) in the algae and small crustaceans the birds eat. ... At hatching, a flamingo chick has gray down feathers and is the size of a tennis ball.",
+  "unsupported": "",
+  "correctedFact": "",
+  "multiPoint": false,
+  "extraPoints": [],
+  "note": "The page also lists shrimps among the foods of greater and Chilean flamingos."
+ },
+ {
+  "id": 22,
+  "status": "partly",
+  "publisher": "Frontiers in Endocrinology (2026)",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13672188/",
+  "pageTitle": "Sex-specific hormone signatures in four fish species with divergent reproductive strategies",
+  "quote": "Syngnathid fish, the pipefishes, seadragons, and seahorses, provide a powerful system for disentangling these effects, because males, rather than females, carry the developing embryos. ... They have evolved a range of brooding forms analogous to those found in mammalian maternal systems, with the female transferring eggs to the male before fertilization",
+  "unsupported": "\"Seahorses are the only animals where the male gives birth\" (pipefishes and seadragons share male pregnancy) and \"until they hatch\" (seahorse males carry the young to birth).",
+  "correctedFact": "Seahorse dads carry the babies. In seahorses and their relatives, the pipefishes and seadragons, the female transfers her eggs to the male before they are fertilized, and the male carries the developing embryos. Seahorses such as the big-bellied seahorse keep them in a fully enclosed brood pouch.",
+  "multiPoint": false,
+  "extraPoints": [],
+  "note": "Open access, peer reviewed. Whittington and Friesen (2020), Biological Reviews, was also checked: its abstract says syngnathids \"are among the few vertebrates in which pregnant males incubate developing embryos\" and release live young."
+ },
+ {
+  "id": 23,
+  "status": "partly",
+  "publisher": "Australian Museum",
+  "url": "https://australian.museum/learn/animals/mammals/platypus/",
+  "pageTitle": "Platypus",
+  "quote": "Along with echidnas, Platypuses are grouped in a separate order of mammals known as monotremes, which are distinguished from all other mammals because they lay eggs. In addition, males possess a horny spur on their ankles, which is connected to a venom gland in the upper leg, making the Platypus one of the few venomous mammals. ... its primary sense organ is the bill, equipped with receptors sensitive to pressure, and with electro-receptors.",
+  "unsupported": "\"It also has a venomous spur\": only males have the venomous spur.",
+  "correctedFact": "The platypus is one of only a few mammals that lay eggs. Along with echidnas it belongs to the monotremes, the mammals set apart from all others by egg-laying. A female lays 1 to 3 eggs, usually 2, and holds them against her belly with her tail while she incubates them.",
+  "multiPoint": true,
+  "extraPoints": [
+   "Male platypuses have a venomous spur on each ankle.",
+   "The platypus bill has electroreceptors."
+  ],
+  "note": "All three points are on this page; the only fix is that the spur is male only."
+ },
+ {
+  "id": 24,
+  "status": "partly",
+  "publisher": "San Diego Zoo Wildlife Alliance",
+  "url": "https://animals.sandiegozoo.org/animals/capybara",
+  "pageTitle": "Capybara",
+  "quote": "No, it's a capybara, the largest rodent in the world! ... Capys are found east of the Andes on Central and South American riverbanks, beside ponds, and in marshes or wherever standing water is available.",
+  "unsupported": "\"Capybaras are so relaxed they often let other animals sit on them: birds, monkeys, even caimans!\" (the headline claim; the page lists caimans only as predators of young capybaras) and \"native to South America\" (the source says Central and South America).",
+  "correctedFact": "Capybaras are the largest rodents in the world, standing about 2 feet tall at the shoulder. They live in Central and South America east of the Andes, on riverbanks, beside ponds and in marshes wherever there is standing water, and their slightly webbed feet make them good swimmers.",
+  "multiPoint": true,
+  "extraPoints": [
+   "Capybaras let birds, monkeys and caimans sit on them."
+  ],
+  "note": "The card's headline point is the unsupported one. A Biota Neotropica paper (Sazima) on birds perching on capybaras to pick off ticks was the second try but returned 403, so the sitting claim stays unverified. The caiman example looks doubtful."
+ },
+ {
+  "id": 25,
+  "status": "partly",
+  "publisher": "Life (2017)",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5492148/",
+  "pageTitle": "DNA Protection Protein, a Novel Mechanism of Radiation Tolerance: Lessons from Tardigrades",
+  "quote": "When the surrounding water evaporates, tolerant tardigrades lose almost all body water and enter a metabolically inactive dehydrated state called anhydrobiosis. The dehydrated tardigrades withstand various extreme conditions that normally disallow the survival of most other organisms; for example, low and high temperatures (from −273 °C to nearly 100 °C), high hydrostatic pressure (7.5 GPa), immersion in organic solvent, and exposure to a high dose of irradiation. ... Furthermore, tardigrades are the first animals to have revived after exposure to outer space for 10 days.",
+  "unsupported": "\"300 degrees F\" (the source says nearly 100 °C, about 212 degrees F) and \"for decades\" (no drying time is given; the paper cites a moss sample frozen, not dried, for over 30 years).",
+  "correctedFact": "Tardigrades can survive drying out almost completely. In that dried state they can withstand temperatures from about minus 459 degrees F up to nearly 212 degrees F, crushing pressure and strong radiation, and they were the first animals to revive after 10 days exposed to outer space.",
+  "multiPoint": false,
+  "extraPoints": [],
+  "note": "Peer-reviewed review (Hashimoto and Kunieda). The card's cold limit of minus 328 degrees F is within the supported range."
+ }
+]

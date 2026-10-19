@@ -33,6 +33,37 @@ Results: `docs/fact-sources/batchA.json`. 5 confirmed, 20 partly, 0 unconfirmed.
 - 350: "rubs it onto branches and its own feet with every step": the source says binturongs soak their feet and tails by squatting to pee, then drag their tails through the trees to leave a scent trail. Nothing about rubbing it on with every step.
 - 351: "A 2020 study": the study (Badiane et al., Behavioral Ecology and Sociobiology 72:104) was published in July 2018. "far more" overstates the source's "strongest".
 
+## Batch B: facts 1 to 25
+
+Results: `docs/fact-sources/batchB.json`. 4 confirmed, 20 partly, 1 unconfirmed.
+
+**Unconfirmed:**
+
+- 20 Breath-Holding Sloths: neither the 40 minute breath hold nor the heart rate slowing to a third could be confirmed; searched zoo, conservation and journal sources, and the figures appear only on blogs, newsletters and a kids' page with no study cited (the National Zoo page confirms only that sloths swim well).
+
+**Partly (these details could not be confirmed):**
+
+- 2: "Each spine lasts about a year before it falls out"
+- 3: "They can also learn over 100 words and even understand context"
+- 4: "named 'panda' nearly 50 years before the giant panda"; "NOT related" (source: not closely related)
+- 5: "darken when cold or stressed, and lighten up when warm and happy"; "beard puffs out and turns black when they're showing off"
+- 6: "binkies (joyful leaps and twists in the air)"
+- 8: "press it into the Jacobson's organ" (the tongue leaves chemicals on pads on the floor of the mouth)
+- 9: "it means they love" (source: trust, not necessarily love); "marking you as 'theirs'"
+- 10: "friend"; "bring gifts to people who feed them, from shiny buttons to earrings"
+- 11: "When it gets old or stressed" (source: rejuvenates after reproducing)
+- 12: "16 types of color receptors" (source: 12); "polarized light"; "punch with the force of a bullet"
+- 13: "hold funerals"; "deceased family members" (study: they do not single out relatives); "with their trunks"; "stand vigil for hours"; "seen crying"
+- 14: "their heart" (source: parts of the heart)
+- 15: "very dry gut lets the corners hold"; "sit on rocks and logs without rolling off"; "scent messages carrying identity and breeding status"; "wombats are not territorial"
+- 16: "until consensus is reached" (source: quorum, not consensus)
+- 17: "or seagrass"; "mostly keep together by watching, listening"
+- 18: "and ceilings"
+- 22: "the only animals where the male gives birth" (pipefishes and seadragons too); "until they hatch"
+- 23: "It also has a venomous spur" (males only)
+- 24: "so relaxed they often let other animals sit on them: birds, monkeys, even caimans" (the card's headline point); "native to South America" (source: Central and South America)
+- 25: "300 degrees F" (source: nearly 100 C, about 212 F); "for decades"
+
 ## Batch C: facts 26 to 50
 
 Results: `docs/fact-sources/batchC.json`. 8 confirmed, 17 partly, 0 unconfirmed.
@@ -128,7 +159,7 @@ Results: `docs/fact-sources/batchF.json`. 3 confirmed, 21 partly, 1 unconfirmed.
 
 | Batch | Facts | Status |
 |---|---|---|
-| B | 1 to 25 | running |
+| B | 1 to 25 | done |
 | C | 26 to 50 | done |
 | D | 51 to 75 | running |
 | E | 76 to 100 | done |
@@ -136,7 +167,7 @@ Results: `docs/fact-sources/batchF.json`. 3 confirmed, 21 partly, 1 unconfirmed.
 | G | 126 to 150 | running |
 | H | 151 to 175 | running |
 | I | 176 to 200 | running |
-| J | 201 to 225 | waiting |
+| J | 201 to 225 | running |
 | K | 226 to 250 | waiting |
 | L | 251 to 275 | waiting |
 | M | 276 to 306 | waiting |
