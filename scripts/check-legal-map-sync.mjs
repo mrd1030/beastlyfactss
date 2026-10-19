@@ -116,7 +116,10 @@ const MYTH_VERDICT = /^\s*(?:false|true|mostly|partly|myth|sort of)\b/i;
 // galah do not. The map records `permit`, for the birds the carve-out catches, and
 // the "smaller species" row would otherwise read as a flat contradiction. Rows
 // qualified this way are skipped and counted rather than compared.
-const SPECIES_SUBSET = /\((?=[^)]*\b(?:species|only|except|other than|excluding)\b)[^)]*\)/i;
+// A parenthetical list of names, like "Maine (cockatiel, galah, sulphur-crested,
+// Major Mitchell's)", is a subset too. Lowercase letters keep a list of state
+// codes such as "(ME, NH, VT)" from matching.
+const SPECIES_SUBSET = /\((?:(?=[^)]*\b(?:species|only|except|other than|excluding)\b)|(?=[^)]*,)(?=[^)]*[a-z]))[^)]*\)/i;
 
 function classify(text) {
   const cleaned = text.replace(NEGATED_PERMIT, ' ');
