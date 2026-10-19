@@ -18,6 +18,7 @@ import TableOfContents from '@/components/blog/TableOfContents';
 import AnimalQuiz from '@/components/encyclopedia/AnimalQuiz';
 import AnimalCompare from '@/components/encyclopedia/AnimalCompare';
 import { IMAGE_DIMENSIONS } from '@/lib/data/imageDimensions';
+import HubDateLine, { hubDateSchema } from '@/components/shared/HubDateLine';
 import { seriesForSlug, chroniclesPath } from '@/lib/chronicles';
 import BeehiivSubscribe from '@/components/blog/BeehiivSubscribe';
 // encyclopedia id -> the id the legal map uses, so a profile can link straight
@@ -146,6 +147,7 @@ export default function EncyclopediaAnimal() {
           "description": pageDescription,
           "image": ogImage,
           "url": canonicalUrl,
+          ...hubDateSchema(animal.guideId),
           "author": { "@type": "Organization", "name": "Beastly Facts", "url": "https://beastlyfacts.com" },
           "publisher": { "@type": "Organization", "name": "Beastly Facts", "url": "https://beastlyfacts.com" },
           "mainEntityOfPage": { "@type": "WebPage", "@id": canonicalUrl },
@@ -182,6 +184,7 @@ export default function EncyclopediaAnimal() {
             </h1>
           </div>
           <p className="text-sm text-muted-foreground font-body italic mt-1.5">{animal.scientific}</p>
+          <HubDateLine guideId={animal.guideId} className="mt-1" />
           <div className="flex flex-wrap items-center gap-2 mt-2">
             <span className="text-xs font-body font-semibold text-muted-foreground bg-muted px-2.5 py-0.5 rounded-full">
               {animal.category}

@@ -1,0 +1,338 @@
+{
+  "axolotl": {
+    "published": "2026-07-15",
+    "updated": "2026-10-08"
+  },
+  "fire-bellied-toad": {
+    "published": "2026-07-27",
+    "updated": "2026-10-06"
+  },
+  "pacman-frog": {
+    "published": "2026-07-15",
+    "updated": "2026-10-06"
+  },
+  "tiger-salamander": {
+    "published": "2026-07-18",
+    "updated": "2026-10-02"
+  },
+  "whites-tree-frog": {
+    "published": "2026-07-16",
+    "updated": "2026-10-06"
+  },
+  "african-grey": {
+    "published": "2026-07-13",
+    "updated": "2026-10-08"
+  },
+  "budgie": {
+    "published": "2026-06-19",
+    "updated": "2026-10-06"
+  },
+  "canary": {
+    "published": "2026-07-26",
+    "updated": "2026-10-06"
+  },
+  "cockatiel": {
+    "published": "2026-07-15",
+    "updated": "2026-10-06"
+  },
+  "cockatoo": {
+    "published": "2026-06-23",
+    "updated": "2026-10-08"
+  },
+  "conure": {
+    "published": "2026-07-29",
+    "updated": "2026-10-06"
+  },
+  "lovebird": {
+    "published": "2026-07-20",
+    "updated": "2026-10-06"
+  },
+  "parrotlet": {
+    "published": "2026-09-04",
+    "updated": "2026-10-06"
+  },
+  "quaker-parakeet": {
+    "published": "2026-08-11",
+    "updated": "2026-10-08"
+  },
+  "zebra-finch": {
+    "published": "2026-09-04",
+    "updated": "2026-10-06"
+  },
+  "angelfish": {
+    "published": "2026-07-17",
+    "updated": "2026-10-06"
+  },
+  "betta-fish": {
+    "published": "2026-06-16",
+    "updated": "2026-10-06"
+  },
+  "bristlenose-pleco": {
+    "published": "2026-09-04",
+    "updated": "2026-10-06"
+  },
+  "cardinal-tetra": {
+    "published": "2026-09-04",
+    "updated": "2026-10-06"
+  },
+  "corydoras-catfish": {
+    "published": "2026-07-27",
+    "updated": "2026-10-06"
+  },
+  "discus": {
+    "published": "2026-09-04",
+    "updated": "2026-10-06"
+  },
+  "goldfish": {
+    "published": "2026-06-26",
+    "updated": "2026-10-06"
+  },
+  "guppy": {
+    "published": "2026-07-18",
+    "updated": "2026-10-06"
+  },
+  "koi": {
+    "published": "2026-07-28",
+    "updated": "2026-10-06"
+  },
+  "molly": {
+    "published": "2026-09-04",
+    "updated": "2026-10-06"
+  },
+  "neon-tetra": {
+    "published": "2026-07-21",
+    "updated": "2026-10-06"
+  },
+  "oscar": {
+    "published": "2026-07-30",
+    "updated": "2026-10-06"
+  },
+  "platy": {
+    "published": "2026-09-04",
+    "updated": "2026-10-06"
+  },
+  "swordtail": {
+    "published": "2026-09-04",
+    "updated": "2026-10-06"
+  },
+  "zebra-danio": {
+    "published": "2026-09-04",
+    "updated": "2026-10-06"
+  },
+  "african-fat-tail": {
+    "published": "2026-07-26",
+    "updated": "2026-10-06"
+  },
+  "crested-gecko": {
+    "published": "2026-05-18",
+    "updated": "2026-10-06"
+  },
+  "gargoyle-gecko": {
+    "published": "2026-07-24",
+    "updated": "2026-10-06"
+  },
+  "leaf-tailed-gecko": {
+    "published": "2026-07-29",
+    "updated": "2026-10-02"
+  },
+  "leopard-gecko": {
+    "published": "2026-05-18",
+    "updated": "2026-10-06"
+  },
+  "mourning-gecko": {
+    "published": "2026-05-18",
+    "updated": "2026-10-06"
+  },
+  "tokay-gecko": {
+    "published": "2026-07-23",
+    "updated": "2026-10-02"
+  },
+  "amano-shrimp": {
+    "published": "2026-09-04",
+    "updated": "2026-10-06"
+  },
+  "cherry-shrimp": {
+    "published": "2026-09-04",
+    "updated": "2026-10-06"
+  },
+  "emperor-scorpion": {
+    "published": "2026-07-31",
+    "updated": "2026-10-06"
+  },
+  "ghost-shrimp": {
+    "published": "2026-09-04",
+    "updated": "2026-10-06"
+  },
+  "millipede": {
+    "published": "2026-07-23",
+    "updated": "2026-10-03"
+  },
+  "hermit-crab": {
+    "published": "2026-07-21",
+    "updated": "2026-10-06"
+  },
+  "jumping-spider": {
+    "published": "2026-06-28",
+    "updated": "2026-10-06"
+  },
+  "hissing-cockroach": {
+    "published": "2026-07-20",
+    "updated": "2026-09-25"
+  },
+  "praying-mantis": {
+    "published": "2026-06-28",
+    "updated": "2026-10-06"
+  },
+  "stick-insect": {
+    "published": "2026-07-31",
+    "updated": "2026-09-25"
+  },
+  "tarantula": {
+    "published": "2026-07-17",
+    "updated": "2026-10-06"
+  },
+  "ackie-monitor": {
+    "published": "2026-07-16",
+    "updated": "2026-10-06"
+  },
+  "tegu": {
+    "published": "2026-07-14",
+    "updated": "2026-10-06"
+  },
+  "bearded-dragon": {
+    "published": "2026-05-18",
+    "updated": "2026-10-06"
+  },
+  "blue-tongue-skink": {
+    "published": "2026-07-13",
+    "updated": "2026-10-06"
+  },
+  "fire-skink": {
+    "published": "2026-08-11",
+    "updated": "2026-10-06"
+  },
+  "green-anole": {
+    "published": "2026-07-28",
+    "updated": "2026-10-06"
+  },
+  "green-iguana": {
+    "published": "2026-08-11",
+    "updated": "2026-10-06"
+  },
+  "jacksons-chameleon": {
+    "published": "2026-07-29",
+    "updated": "2026-10-06"
+  },
+  "savannah-monitor": {
+    "published": "2026-07-31",
+    "updated": "2026-10-06"
+  },
+  "uromastyx": {
+    "published": "2026-07-24",
+    "updated": "2026-10-06"
+  },
+  "veiled-chameleon": {
+    "published": "2026-07-15",
+    "updated": "2026-10-06"
+  },
+  "chinchilla": {
+    "published": "2026-07-19",
+    "updated": "2026-10-06"
+  },
+  "degu": {
+    "published": "2026-08-08",
+    "updated": "2026-10-08"
+  },
+  "mouse": {
+    "published": "2026-09-04",
+    "updated": "2026-10-06"
+  },
+  "rat": {
+    "published": "2026-09-04",
+    "updated": "2026-10-06"
+  },
+  "ferret": {
+    "published": "2026-06-24",
+    "updated": "2026-10-06"
+  },
+  "flying-squirrel": {
+    "published": "2026-08-29",
+    "updated": "2026-10-08"
+  },
+  "gerbil": {
+    "published": "2026-08-09",
+    "updated": "2026-10-06"
+  },
+  "guinea-pig": {
+    "published": "2026-07-09",
+    "updated": "2026-10-06"
+  },
+  "hamster": {
+    "published": "2026-07-14",
+    "updated": "2026-10-06"
+  },
+  "hedgehog": {
+    "published": "2026-07-19",
+    "updated": "2026-10-06"
+  },
+  "rabbit": {
+    "published": "2026-07-01",
+    "updated": "2026-10-06"
+  },
+  "sugar-glider": {
+    "published": "2026-07-22",
+    "updated": "2026-10-06"
+  },
+  "ball-python": {
+    "published": "2026-05-18",
+    "updated": "2026-10-06"
+  },
+  "boa-constrictor": {
+    "published": "2026-07-16",
+    "updated": "2026-10-02"
+  },
+  "california-kingsnake": {
+    "published": "2026-07-25",
+    "updated": "2026-10-06"
+  },
+  "corn-snake": {
+    "published": "2026-07-11",
+    "updated": "2026-10-06"
+  },
+  "garter-snake": {
+    "published": "2026-08-29",
+    "updated": "2026-10-08"
+  },
+  "hognose-snake": {
+    "published": "2026-07-14",
+    "updated": "2026-10-15"
+  },
+  "milk-snake": {
+    "published": "2026-07-21",
+    "updated": "2026-10-02"
+  },
+  "rosy-boa": {
+    "published": "2026-08-29",
+    "updated": "2026-10-02"
+  },
+  "box-turtle": {
+    "published": "2026-07-23",
+    "updated": "2026-10-08"
+  },
+  "red-eared-slider": {
+    "published": "2026-07-22",
+    "updated": "2026-10-08"
+  },
+  "red-footed-tortoise": {
+    "published": "2026-09-04",
+    "updated": "2026-10-06"
+  },
+  "russian-tortoise": {
+    "published": "2026-07-30",
+    "updated": "2026-10-06"
+  },
+  "sulcata-tortoise": {
+    "published": "2026-07-23",
+    "updated": "2026-10-08"
+  }
+}

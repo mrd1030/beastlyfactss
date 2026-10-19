@@ -29,6 +29,7 @@ import { SearchX } from 'lucide-react';
 import IconChip from '@/components/shared/IconChip';
 import { CalendarDays, Siren, Newspaper, ShoppingCart, ListChecks, CircleHelp, Library, Scale, Sparkles, Lightbulb, House, Utensils, Gamepad2, Pill } from 'lucide-react';
 import { FeatherText } from '@/components/icons/labIcons';
+import HubDateLine, { hubDateSchema } from '@/components/shared/HubDateLine';
 
 const sectionMeta = [
   { key: 'housing',    icon: House, label: 'Housing & Setup' },
@@ -306,6 +307,7 @@ export default function GuideDetail() {
           "description": guideDescription,
           "image": ogImage,
           "url": canonicalUrl,
+          ...hubDateSchema(guide.id),
           "author": { "@type": "Organization", "name": "Beastly Facts", "url": "https://beastlyfacts.com" },
           "publisher": { "@type": "Organization", "name": "Beastly Facts", "url": "https://beastlyfacts.com", "logo": { "@type": "ImageObject", "url": "https://beastlyfacts.com/assets/og-default.jpg" } },
           "mainEntityOfPage": { "@type": "WebPage", "@id": canonicalUrl }
@@ -368,6 +370,7 @@ export default function GuideDetail() {
             </h1>
           </div>
           <p className="text-sm text-muted-foreground font-body mt-2">{guide.petType}</p>
+          <HubDateLine guideId={guide.id} className="mt-1" />
           <div className="flex items-center gap-2 mt-1.5 mb-4">
             <button
               ref={legendTriggerRef}
