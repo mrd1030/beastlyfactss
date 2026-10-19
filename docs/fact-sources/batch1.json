@@ -1,0 +1,357 @@
+[
+ {
+  "id": 352,
+  "status": "confirmed",
+  "publisher": "PNAS (2022)",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9459311/",
+  "pageTitle": "Comparative genomics of mortal and immortal cnidarians unveils novel keys behind rejuvenation",
+  "quote": "We present and compare whole-genome assemblies of T. dohrnii and the nonimmortal Turritopsis rubra using automatic and manual annotations, together with the transcriptome of life cycle reversal (LCR) process of T. dohrnii. We have identified variants and expansions of genes associated with replication, DNA repair, telomere maintenance, redox environment, stem cell population, and intercellular communication. ... For instance, the amplifications of POLD1 (encoding DNA polymerase delta) and POLA2 (encoding DNA polymerase alpha 2) in T. dohrnii (four and two copies, respectively, compared to one in T. rubra ) suggest enhanced replicative capabilities in this species.",
+  "unsupported": "",
+  "correctedFact": "",
+  "multiPoint": false,
+  "extraPoints": [],
+  "note": "Original paper, open in PMC. The four-copy gene is POLD1 (DNA polymerase delta)."
+ },
+ {
+  "id": 351,
+  "status": "partly",
+  "publisher": "Australian Geographic",
+  "url": "https://www.australiangeographic.com.au/topics/wildlife/2018/08/why-is-a-bluetongue-lizards-tongue-blue/",
+  "pageTitle": "Why is a bluetongue lizard's tongue blue?",
+  "quote": "The researchers then simulated attacks to show that the skinks attempted to remain camouflaged – taking advantage of their brown stripy body colouration – until the very last moment, when they opened their mouths wide to expose their tongues, flattening and expanding them. These full-tongue displays were strongest in response to simulated bird and fox attacks, rather than those meant to mimic snakes and goannas.",
+  "unsupported": "\"A 2020 study\": the study (Badiane et al., Behavioral Ecology and Sociobiology 72:104) was published in July 2018. \"far more\" overstates the source's \"strongest\".",
+  "correctedFact": "A cornered blue-tongued skink flashes its bright blue tongue as a last resort. A 2018 study found the lizards try to stay camouflaged until the very last moment, and their full-tongue displays were strongest against model birds and foxes rather than model snakes and goannas, which fits a startle display.",
+  "multiPoint": false,
+  "extraPoints": [],
+  "note": "Paper (doi 10.1007/s00265-018-2512-8) is paywalled; its abstract on the Macquarie University page confirms the last-moment deimatic display but not the predator comparison, so the quote comes from Australian Geographic's report of the study."
+ },
+ {
+  "id": 350,
+  "status": "partly",
+  "publisher": "Duke University",
+  "url": "https://today.duke.edu/2016/04/popcornscentedbinturong",
+  "pageTitle": "Why Bearcats Smell Like Buttered Popcorn",
+  "quote": "The one compound that emanated from every sample was 2-acetyl-1-pyrroline, or 2-AP -- the same compound that gives popcorn its tantalizing scent. Binturongs pee in a squatting position, soaking their feet and bushy tails in the process. They also drag their tails as they move about in the trees, leaving a scent trail on the branches and leaves behind them. Solitary animals that rarely come face to face, binturongs use their roasty, popcorn-like aroma as a calling card to say “this is my turf” and find potential mates.",
+  "unsupported": "\"rubs it onto branches and its own feet with every step\": the source says binturongs soak their feet and tails by squatting to pee, then drag their tails through the trees to leave a scent trail. Nothing about rubbing it on with every step.",
+  "correctedFact": "The binturong's urine contains 2-acetyl-1-pyrroline, the same chemical that gives popcorn its smell. The animal squats to pee, soaking its feet and bushy tail, then drags its tail through the trees, leaving a scent trail on branches that tells other binturongs this is its turf.",
+  "multiPoint": true,
+  "extraPoints": [
+   "Binturongs spread the urine on branches and their feet to mark territory."
+  ],
+  "note": "Duke press release on Greene et al. 2016, The Science of Nature."
+ },
+ {
+  "id": 349,
+  "status": "confirmed",
+  "publisher": "Xoloitzcuintli Club of America",
+  "url": "https://images.akc.org/judges/xolo.pdf",
+  "pageTitle": "Xoloitzcuintli Club of America judges' education presentation (hosted by the AKC)",
+  "quote": "The Xoloitzcuintli is now known to be one of the world’s oldest and rarest breeds, with statues identical to the hairless variety dating back over 3,000 years. These clay and ceramic effigies have been found in tombs of the Mayan, Colima and Aztec Indians.",
+  "unsupported": "",
+  "correctedFact": "",
+  "multiPoint": false,
+  "extraPoints": [],
+  "note": "Parent breed club material. The AKC breed page also calls it \"The 3,000-year-old Xoloitzcuintli\". Source says one of the world's oldest breeds, which covers the Americas wording; it says \"over 3,000 years\" where the card says roughly 3,000."
+ },
+ {
+  "id": 346,
+  "status": "partly",
+  "publisher": "Ecology (2022)",
+  "url": "https://repository.library.noaa.gov/view/noaa/62433/noaa_62433_DS1.pdf",
+  "pageTitle": "Function of an extraordinary display in Sarcastic Fringeheads (Neoclinus blanchardi) with comments on its evolution",
+  "quote": "In the case of physical contact, both fish swam at each other while holding a continuous gape and proceeded to collide with each other—mouth to mouth. The two fish—mouths still agape—then pushed each other, mouth to mouth, until one of the individuals terminated the attack by biting the other’s head (or other parts of the body). Sarcastic Fringeheads that have larger body size (and thus longer jaws) were more victorious during these bouts (N = 40 interactions, χ² = 29.66, p <0.001) (Figure 1C).",
+  "unsupported": "\"rarely longer than about 8 inches\" and \"stretch its mouth open to roughly four times its closed size\" are not in the paper (it calls this the largest species in the genus). \"the one with the smaller mouth backs down first\": the paper says the bigger fish usually wins and the bout ends when one bites the other.",
+  "correctedFact": "When a rival sarcastic fringehead strays too close to its shelter, the two fish gape their huge mouths, swim at each other and push mouth to mouth until one bites the other. A 2022 study of 40 such contests found the bigger fish, with the longer jaws, usually won.",
+  "multiPoint": true,
+  "extraPoints": [
+   "Rarely longer than about 8 inches.",
+   "Mouth stretches to about four times its closed size."
+  ],
+  "note": "Accepted author manuscript in the NOAA Institutional Repository; version of record is doi 10.1002/ecy.3878."
+ },
+ {
+  "id": 340,
+  "status": "confirmed",
+  "publisher": "San Diego Zoo Wildlife Alliance",
+  "url": "https://animals.sandiegozoo.org/animals/serval",
+  "pageTitle": "Serval | San Diego Zoo Animals & Plants",
+  "quote": "Standing on its hind legs, a serval can jump more than 9 feet (2.7 meters) straight up to grab a bird right out of the air!",
+  "unsupported": "",
+  "correctedFact": "",
+  "multiPoint": false,
+  "extraPoints": [],
+  "note": "Near verbatim match."
+ },
+ {
+  "id": 338,
+  "status": "partly",
+  "publisher": "Journal of Fish Biology (2020)",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7497067/",
+  "pageTitle": "Growth trajectories of prenatal embryos of the deep‐sea shark Chlamydoselachus anguineus (Chondrichthyes)",
+  "quote": "The gestation period of C. anguineus is the longest period known for all vertebrates, lasting 3.5 years, and the growth rate of the embryos is around 10–17 mm per month (Tanaka et al., 1990 ), although the gestation period estimation can be as low as 1–2 years (Compagno, 1984 ; Gudger & Smith, 1933 ).",
+  "unsupported": "\"roughly 300 trident-shaped teeth arranged in 25 rows\" and \"living fossil status, largely unchanged for tens of millions of years\" are not in this source. The paper notes the frilled shark is often treated as primitive but that some of its traits may be derived, and that some gestation estimates are only 1 to 2 years.",
+  "correctedFact": "Frilled sharks may stay pregnant for up to three and a half years, the longest gestation known for any vertebrate. The embryos grow only about 10 to 17 millimeters a month inside the mother, though some older estimates put the whole pregnancy at just one to two years.",
+  "multiPoint": true,
+  "extraPoints": [
+   "About 300 trident-shaped teeth in 25 rows.",
+   "Eel-like body and living fossil status, unchanged for tens of millions of years."
+  ],
+  "note": "Teeth figures appear only on ReefQuest and pop-science pages; living fossil claim is contested in the literature."
+ },
+ {
+  "id": 331,
+  "status": "partly",
+  "publisher": "Western Australian Department of Biodiversity, Conservation and Attractions",
+  "url": "https://library.dbca.wa.gov.au/FullTextFiles/926975.pdf",
+  "pageTitle": "Fauna Profile: Numbat Myrmecobius fasciatus",
+  "quote": "The numbat has a long, narrow face with a pointed nose, and an exceptionally long tongue that can extend to at least 5cm beyond the tip of its nose. ... Numbats, unlike most other marsupials, are diurnal, meaning they are active only during the day. ... Their daytime activity corresponds to the availability of their specialised diet of termites (Isoptera species). ... Captive animals have been observed consuming up to 20,000 termites each day, corresponding to approximately 10% of their body weight.",
+  "unsupported": "\"between 15,000 and 20,000\": the source gives up to 20,000, observed in captive animals. \"a tongue that stretches about 10 centimeters\": the source says it extends at least 5 cm beyond the nose. \"teeth ... small, blunt and barely used\" is not in this profile (a second DBCA sheet, 071540.pdf, says the teeth are poorly developed and many do not protrude above the gums). \"almost every other Australian marsupial\" is \"most other marsupials\" in the source.",
+  "correctedFact": "Captive numbats have been seen eating up to 20,000 termites a day, about a tenth of their body weight, using a tongue that reaches at least 5 centimeters past the tip of the nose. Unlike most other marsupials, the numbat is active only by day, because its hours follow when termites are available.",
+  "multiPoint": true,
+  "extraPoints": [
+   "Its teeth are small, blunt and barely used.",
+   "It is diurnal, unlike almost every other Australian marsupial, because termites move near the surface by day."
+  ],
+  "note": "State wildlife agency profile. Perth Zoo also gives up to 20,000 termites a day and calls it one of two strictly diurnal marsupials."
+ },
+ {
+  "id": 329,
+  "status": "partly",
+  "publisher": "Science Advances (2019)",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6530998/",
+  "pageTitle": "Hoatzin nestling locomotion: Acquisition of quadrupedal limb coordination in birds",
+  "quote": "Another unusual trait in hoatzin nestlings is to escape by jumping into the water below the nest and to swim back to the vegetation. ... Our observations show that hoatzin nestlings move with alternated walking coordination of the four limbs using the mobile claws on their wings to anchor themselves to the substrate.",
+  "unsupported": "\"two working claws on each wing\" and \"the claws disappear as the bird matures\" are not stated (the paper says only that adult claw proportions are quite different). Not in this source at all: the stinkbird nickname, crop fermentation like a cow, and \"up to 45 hours\" (Grajal and Parra 1995, Condor, give mean retention of about 45.7 hours for the largest marker particles, not a whole meal).",
+  "correctedFact": "Hoatzin chicks keep working claws on their wings, and they use them. A 2019 study filmed chicks hooking the claws onto branches and climbing with an alternating four-limb walk. To escape danger, a chick can also jump into the water below the nest and then swim back to the vegetation.",
+  "multiPoint": true,
+  "extraPoints": [
+   "Adults are called stinkbirds because they digest leaves by bacterial fermentation in an oversized crop, like a cow's stomach.",
+   "A meal can take up to 45 hours to pass."
+  ],
+  "note": "Britannica blocked. The digestion point needs its own source (Grajal et al. 1989 Science; Grajal and Parra 1995 Condor)."
+ },
+ {
+  "id": 327,
+  "status": "partly",
+  "publisher": "Journal of Experimental Biology (2000)",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/11076738/",
+  "pageTitle": "The deep fovea, sideways vision and spiral flight paths in raptors",
+  "quote": "Raptors - falcons, hawks and eagles in this study - have two regions of the retina in each eye that are specialized for acute vision: the deep fovea and the shallow fovea. The line of sight of the deep fovea points forwards and approximately 45 degrees to the right or left of the head axis, while that of the shallow fovea also points forwards but approximately 15 degrees to the right or left of the head axis. The anatomy of the foveae suggests that the deep fovea has the higher acuity. ... Raptors could resolve this conflict by diving along a logarithmic spiral path with their head straight and one eye looking sideways at the prey, rather than following the straight path to the prey with their head turned sideways.",
+  "unsupported": "The curved-dive behavior is not shown for bald eagles. The paper models an 'ideal falcon' (\"could resolve\"), and the field evidence (companion paper, Tucker et al. 2000) comes from peregrine falcons. \"single one humans have\" is not in the source.",
+  "correctedFact": "Each eye of a raptor, bald eagles included, has two foveae. The deep fovea, thought to give the sharpest vision, points about 45 degrees to the side, and the shallow one about 15 degrees. Turning the head to use it adds drag, so a diving falcon can keep its head straight and fly a curving spiral path toward prey.",
+  "multiPoint": false,
+  "extraPoints": [],
+  "note": "Bald eagles were among the birds studied for head movements; spiral flight was observed in wild peregrines (doi 10.1242/jeb.203.24.3755). The card's eagle framing needs reworking."
+ },
+ {
+  "id": 325,
+  "status": "partly",
+  "publisher": "National Park Service",
+  "url": "https://www.nps.gov/places/000/bald-eagle.htm",
+  "pageTitle": "Bald Eagle (U.S. National Park Service)",
+  "quote": "Bald eagles build some of the largest of all bird nests—typically5 to 6 feet in diameter and 2 to 4 feet tall and ranging in shape from cylindrical to conical to flat, depending on the supporting tree. ... Nests can take up to three months to build, and may be reused (and added to) year after year. ... The largest bald eagle nest on record, in St. Petersburg, Florida, was 10 feet in diameter and 20 feet tall. Another famous nest—in Vermilion,Ohio—was shaped like a wine glass and weighed over 2 tons. It was used for 34 years until the tree blew down.",
+  "unsupported": "\"Nothing else in North America builds a bigger nest in a tree\": the source says only \"some of the largest of all bird nests\". \"20 feet deep\" is \"20 feet tall\" in the source.",
+  "correctedFact": "A bald eagle pair may reuse and add to the same nest year after year, so a nest that typically starts 5 to 6 feet across keeps growing. The record, in St. Petersburg, Florida, was 10 feet across and 20 feet tall. One in Vermilion, Ohio, weighed over 2 tons and was used for 34 years before its tree blew down.",
+  "multiPoint": false,
+  "extraPoints": [],
+  "note": "USFWS and Guinness give the St. Petersburg nest as 9.5 feet wide; NPS says 10. Cornell All About Birds was blocked."
+ },
+ {
+  "id": 323,
+  "status": "partly",
+  "publisher": "Natural History Museum, London",
+  "url": "https://www.nhm.ac.uk/discover/what-is-a-dumbo-octopus.html",
+  "pageTitle": "Dumbo octopus: The murky world of the deepest octopus species",
+  "quote": "The Dumbo octopus is an elusive cephalopod that gets its name from its large ear-like fins, which resemble those of the lovable Disney elephant. ... Dumbo octopuses navigate the water by slowly flapping their ear-like fins, using their eight limbs to steer. ... The deepest confirmed sighting of a Dumbo octopus was made in 2020, when a one was spotted and captured on film almost 7,000 metres down in the Java Trench. This sighting suggests Dumbo octopuses could even live in the hadal zone, which is the deepest part of the ocean.",
+  "unsupported": "\"in the crushing cold of the hadal zone\": NHM says the sighting only suggests they could live there. (The original paper, Jamieson and Vecchione 2020, Marine Biology, uses a 6,000 m hadal boundary and calls 6,957 m hadal, so this hinges on the definition.)",
+  "correctedFact": "Dumbo octopuses get their name from the two ear-like fins they slowly flap to move through the water. They are the deepest-living octopuses known, and one was filmed almost 7,000 meters down in the Java Trench in 2020, a sighting that suggests they may reach the hadal zone.",
+  "multiPoint": true,
+  "extraPoints": [
+   "Deepest known octopus, confirmed at nearly 7,000 meters."
+  ],
+  "note": "Primary record: Marine Biology (2020) 167:82, 6,957 m, Grimpoteuthis sp."
+ },
+ {
+  "id": 318,
+  "status": "partly",
+  "publisher": "National Audubon Society",
+  "url": "https://www.audubon.org/news/till-death-do-them-part-8-birds-mate-life",
+  "pageTitle": "Till Death Do Them Part: 8 Birds that Mate for Life",
+  "quote": "Once they do, however, Atlantic Puffins stick with their partners for good, returning to the same burrow each season, sharing egg-incubating and parenting duties, even performing what’s known as billing, during which the birds rub together their beaks.",
+  "unsupported": "\"for 15 to 20 years\", \"the pair spends most of the year apart at sea\" and \"preen each other\" are not in the source. The page gives an average clutch of 1 egg rather than saying a single chick.",
+  "correctedFact": "Once Atlantic puffins pair up, they tend to stick with their partners for good, returning to the same burrow each season. The pair shares incubating their single egg and raising the chick, and they keep their bond with billing, a display in which the two birds rub their beaks together.",
+  "multiPoint": true,
+  "extraPoints": [
+   "Pairs tap bills and preen each other on reuniting.",
+   "They raise a single chick."
+  ],
+  "note": "Cornell All About Birds and Smithsonian Ocean pages were blocked or down at fetch time."
+ },
+ {
+  "id": 317,
+  "status": "partly",
+  "publisher": "San Diego Zoo Wildlife Alliance",
+  "url": "https://animals.sandiegozoo.org/animals/echidna",
+  "pageTitle": "Echidna | San Diego Zoo Animals & Plants",
+  "quote": "Like anteaters, the echidna has no teeth. ... Hard pads at the base of the tongue and on the roof of the mouth grind the food into a paste for swallowing. ... The rubbery snout is also sensitive to electrical signals from an insect’s body.",
+  "unsupported": "\"up to 100 times a minute\", \"underground\", and \"a sense usually only found in animals that live in water\" are not in the source.",
+  "correctedFact": "Echidnas have no teeth at all. Hard pads at the base of the tongue and on the roof of the mouth grind ants, termites and worms into a paste for swallowing. Their rubbery snout is also sensitive to the electrical signals given off by an insect's body, which helps them find prey.",
+  "multiPoint": true,
+  "extraPoints": [
+   "The snout carries electroreceptors, a sense usually found only in aquatic animals."
+  ],
+  "note": "The Australian Museum page has only the sticky-tongue flicking line."
+ },
+ {
+  "id": 316,
+  "status": "confirmed",
+  "publisher": "Science (2009)",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2748762/",
+  "pageTitle": "An Expressed Fgf4 Retrogene Is Associated with Breed-Defining Chondrodysplasia in Domestic Dogs",
+  "quote": "Utilizing a multi-breed association analysis in the domestic dog, we demonstrate that a recently acquired fgf4 retrogene causes chondrodysplasia, a short-legged phenotype that defines several common dog breeds including the dachshund, corgi and basset hound. ... The phenotype primarily affects the length of the long bones, with growth plates calcifying early in development, thus producing shortened bones with a curved appearance ... The discovery that a single evolutionary event underlies a breed-defining phenotype for 19 diverse dog breeds demonstrates the importance of unique mutational events in constraining and directing phenotypic diversity in the domestic dog.",
+  "unsupported": "",
+  "correctedFact": "",
+  "multiPoint": false,
+  "extraPoints": [],
+  "note": "Original paper, NIH author manuscript in PMC. The Pembroke Welsh corgi is pictured as a case breed."
+ },
+ {
+  "id": 313,
+  "status": "partly",
+  "publisher": "Journal of North American Herpetology (2014)",
+  "url": "https://journals.ku.edu/jnah/article/view/11892",
+  "pageTitle": "Effects of Sex, Environment, and Condition on the Musking Behavior of Sympatric Gartersnakes (Thamnophis spp.)",
+  "quote": "Additionally, we observed a positive correlation in body condition and musking propensity in Terrestrial Gartersnakes, suggesting resource-dependent behavior in this species.",
+  "unsupported": "The link held only in Terrestrial Gartersnakes, one of the two species studied, not garter snakes in general. \"genuinely costs the snake something\" goes beyond the source's \"suggesting resource-dependent behavior\". \"spray\" is not in the source.",
+  "correctedFact": "A garter snake's musky defense may not be a pure panic reflex. A 2014 study of two garter snake species caught by hand near Denver found that, in terrestrial garter snakes, individuals in better body condition were more likely to musk, which suggests the defense depends on the snake's resources.",
+  "multiPoint": false,
+  "extraPoints": [],
+  "note": "Original paper, open access."
+ },
+ {
+  "id": 311,
+  "status": "partly",
+  "publisher": "Experimental Animals (1986)",
+  "url": "https://www.jstage.jst.go.jp/article/expanim1978/35/4/35_4_381/_article",
+  "pageTitle": "Analyses of Constituents of Feces and the Effect of A Vitamin B12 Fortified Diet on Coprophagy in the Mouse",
+  "quote": "Mean frequency of coprophagy per animal per day was 9.6 when animals were fed on the basal diet, whereas the frequency was immediately and significantly (p<0.05-p<0.01) reduced to 4.7 after the diet had been replaced by the fortified one. Furthermore, under the fortified diet, the frequency of coprophagy increased gradually. ... This indicates that some nutrient (s) in feces other than vitamin B 12 might be of use to the host, and that otherwise, coprophagy might be a basically habitual form of behavior.",
+  "unsupported": "\"direct evidence the behavior responds to actual nutritional demand rather than instinct alone\": the authors found the behavior was only partly suppressed, crept back up on the fortified diet, and may be largely habitual.",
+  "correctedFact": "Mice eat their own droppings, and vitamin B12 is part of the reason. In a 1986 study, mice on a standard diet did it about 9.6 times a day, and that fell straight away to about 4.7 once the diet was fortified with B12. The habit never stopped, so other nutrients or plain habit may also play a part.",
+  "multiPoint": false,
+  "extraPoints": [],
+  "note": "Numbers confirmed; the card's conclusion overstates the paper."
+ },
+ {
+  "id": 310,
+  "status": "partly",
+  "publisher": "Clark University",
+  "url": "https://www.clarku.edu/news/2012/06/26/a-mazing-fact-first-ever-labyrinth-for-observing-rats-was-created-at-clark-in-1900/",
+  "pageTitle": "A-mazing fact: First-ever labyrinth for observing rats was created at Clark in 1900",
+  "quote": "Slate recounted that in 1900, Small, the lead researcher on the project, developed a contraption. It was “a platform about 6 feet long by 8 feet wide, covered with sawdust, and divided into galleries with walls of wire netting. [Willard] took the plan from a diagram of the hedge maze at Hampton Court [Palace in England], with an open space at the center, and six cul-de-sacs. The layout was selected with a natural setting in mind, he wrote, so that his experiments would be ‘couched in a familiar language of rodent burrows.’” ... Soon after, other researchers had adopted the maze as a research tool.",
+  "unsupported": "\"rats were chosen specifically because they learned routes quickly and consistently enough to be scientifically useful\" and \"a trait a well-socialized pet rat still shows off today\" are not in the source; it says the layout was chosen to echo rodent burrows. \"the origin of an entire field\" overstates \"other researchers had adopted the maze\". APA Monitor dates the start of the work to 1899.",
+  "correctedFact": "The rat maze was born at Clark University. Around 1900, graduate student Willard Small built a sawdust-floored maze copied from a diagram of the hedge maze at England's Hampton Court Palace, choosing the layout to echo the burrows rats know. Other researchers soon adopted the maze as a research tool.",
+  "multiPoint": true,
+  "extraPoints": [
+   "Rats were chosen because they learn routes quickly and consistently; pet rats still show this."
+  ],
+  "note": "University news page; Small's paper ran in the American Journal of Psychology, January 1900."
+ },
+ {
+  "id": 308,
+  "status": "confirmed",
+  "publisher": "Cold Spring Harbor Protocols (2014)",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4571486/",
+  "pageTitle": "The Zebra Finch, Taeniopygia guttata: An Avian Model for Investigating the Neurobiological Basis of Vocal Learning",
+  "quote": "Juvenile males learn to sing by imitating an adult male tutor, usually the father. ... This dimorphism is mirrored in behavior, as female finches produce unlearned calls, but do not sing. ... Songbirds share the vocal learning trait with humans, where it provides the basis for speech and language acquisition. There are marked similarities between birdsong and human speech acquisition, including the presence of “babbling”-like immature vocalizations, critical periods for learning, sensorimotor vocal development that is dependent on intact hearing and auditory feedback, and individual vocal variability and dialects.",
+  "unsupported": "",
+  "correctedFact": "",
+  "multiPoint": true,
+  "extraPoints": [
+   "The zebra finch is a leading lab model for vocal learning, with parallels to how children learn speech."
+  ],
+  "note": "Review by Claudio Mello; text read via the PMC API."
+ },
+ {
+  "id": 303,
+  "status": "partly",
+  "publisher": "National University of Singapore",
+  "url": "https://news.nus.edu.sg/nus-glowing-fish-goes-places/",
+  "pageTitle": "NUS’ glowing fish goes places",
+  "quote": "Almost 20 years after NUS Biological Sciences Professor Gong Zhiyuan first inserted a fluorescent jellyfish gene into zebrafish, the technology behind the iridescent fish is going places, most recently culminating in the sale of the US company behind GloFish, the first transgenic pet fish, for a reported US$50 million. ... Prof Gong, who is also with the NUS Environmental Research Institute, wanted to develop zebrafish that look just like its ordinary black-and-silver striped peers, but would glow in response to toxins in the waters as a means to detect and fight environmental pollution. ... Texas-based Yorktown Technologies soon came knocking on Prof Gong’s door and a licensing deal was struck for the use of NUS’ technology to create their proprietary GloFish. The first fluorescent zebrafish marketed was red, which incorporated a bright red gene from the sea anemone.",
+  "unsupported": "\"zebra danios with a jellyfish-derived fluorescent gene\": the first GloFish sold was red and used a sea anemone gene. The jellyfish gene was in Gong's original lab fish, not every GloFish.",
+  "correctedFact": "GloFish are zebra danios carrying an added fluorescent gene. The technology began at the National University of Singapore, where Professor Gong Zhiyuan put a jellyfish gene into zebrafish while trying to build fish that would glow in polluted water. A US company later licensed it, and the first GloFish sold was red, using a sea anemone gene.",
+  "multiPoint": false,
+  "extraPoints": [],
+  "note": "University news release."
+ },
+ {
+  "id": 302,
+  "status": "partly",
+  "publisher": "PLOS ONE (2011)",
+  "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0015837",
+  "pageTitle": "The Cost of the Sword: Escape Performance in Male Swordtails",
+  "quote": "Females prefer males with the longest swords as mates [13] . ... Still, we do not believe that the sword is cost-free altogether. Basolo and Alcaraz [15] demonstrated that the sword increases the energetic cost of both steady and courtship swimming.",
+  "unsupported": "\"plays no role in swimming, it's pure ornament\": the sword raises the energy cost of swimming (it had no effect on escape performance). \"a landmark 1990 study found the strength of that preference actually increases as the gap in sword length grows\": Basolo 1990 (Animal Behaviour 40:332) is paywalled and I could not open its abstract to confirm it. A search-engine copy of the abstract says preference strength rose with the length difference, but it was not verified on a page.",
+  "correctedFact": "A male swordtail's namesake sword is a sexual ornament, and it is not free to carry: research has shown it raises the energy cost of swimming. Females still prefer males with the longest swords, which makes the swordtail a classic case of sexual selection through female choice.",
+  "multiPoint": true,
+  "extraPoints": [
+   "The sword plays no role in swimming.",
+   "Preference strength grows with the gap in sword length (Basolo 1990)."
+  ],
+  "note": "If the owner can open Basolo 1990 (doi 10.1016/S0003-3472(05)80928-5), the gap-strength line can return. Text read via Europe PMC (PMC3017045)."
+ },
+ {
+  "id": 301,
+  "status": "partly",
+  "publisher": "Pigment Cell & Melanoma Research (2010)",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2881310/",
+  "pageTitle": "Genetic and environmental melanoma models in fish",
+  "quote": "Genetic hybrids between platyfish and swordtails, different species of the genus Xiphophorus , have been studied since the 1920s to identify genetic determinants of pigmentation and melanoma formation. ... these heavily pigmented hybrids, about 25% of total backcross progeny, spontaneously develop exophytic, nodular, invasive melanomas.",
+  "unsupported": "\"one of the oldest continuously studied animal models for any cancer, human or otherwise\" is not in the source. \"an ordinary pet-store platy has essentially no risk of developing it\" is not supported: the review notes the Xmrk oncogene can act in some non-hybrid Xiphophorus species too. \"over 70 years\" is true but understates it (since the 1920s).",
+  "correctedFact": "Platies and swordtails have been studied in melanoma research since the 1920s. Crossing the two species produces hybrids, and in the classic cross about a quarter of the backcrossed offspring are heavily pigmented and develop invasive melanomas on their own, which made these fish an early genetic model for the cancer.",
+  "multiPoint": true,
+  "extraPoints": [
+   "A pet-store platy has essentially no risk of developing melanoma."
+  ],
+  "note": "Text read via Europe PMC."
+ },
+ {
+  "id": 297,
+  "status": "partly",
+  "publisher": "Journal of Experimental Biology (2010)",
+  "url": "https://researchportal.plymouth.ac.uk/en/publications/biparental-mucus-feeding-a-unique-example-of-parental-care-in-an--2/",
+  "pageTitle": "Biparental mucus feeding: a unique example of parental care in an Amazonian cichlid",
+  "quote": "The Amazonian cichlid Symphysodon spp. (discus fish) is unusual among fish species, in that both parents provide offspring with mucus secretions to feed from after hatching. This extensive provision of care, which can last up to a month, imposes a physiological demand on both parents and gives rise to conflict between the parent and offspring. ... A peak in mucus antibody provision was seen as offspring reached the free-swimming stage, suggesting a role analogous to colostrum provision in mammals. Mucus protein content was lowest during the second and third weeks of free swimming, and a weaning period, similar to that seen in mammalian parental care, occurred when the offspring had been free swimming for ∼3 weeks.",
+  "unsupported": "\"bite at for minutes at a time\" is not in the abstract. \"a pattern the researchers compared to hormonally regulated mammalian milk\": they compared the antibody peak to colostrum and the behavior to mammalian weaning; no hormonal regulation claim. \"one of the only documented cases\" is \"unusual among fish species\" in the source.",
+  "correctedFact": "Discus fry feed directly off their parents. Both parents secrete mucus from their skin for the young to bite at, care that can last up to a month. A 2010 study found the mucus changes as the fry grow, with an antibody peak much like colostrum and a weaning period at about three weeks, as in mammals.",
+  "multiPoint": false,
+  "extraPoints": [],
+  "note": "University of Plymouth research portal record with the full abstract; paper doi 10.1242/jeb.042929."
+ },
+ {
+  "id": 296,
+  "status": "partly",
+  "publisher": "National Geographic",
+  "url": "https://www.nationalgeographic.com/animals/article/news-jesus-lizards-basilisks-walk-water",
+  "pageTitle": "How 'Jesus Lizards' Walk on Water",
+  "quote": "The lizard is often called the Jesus Christ lizard in Central America because of its seeming ability to walk on water. ... According to analysis of their video, the lizards generate force for support during the slap phase, in which the lizards' foot plunges straight down, pushing water down and away from the foot while creating a pocket of air surrounding the foot. ... Throughout their size range, they can run across water on their hind limbs at about 5 feet (1.5 meters) a second for a distance of approximately 15 feet (4.5 meters) before they sink to all fours and swim.",
+  "unsupported": "\"up to 20 steps per second\" is not found for basilisks (20 steps per second is a figure reported for grebes). \"roughly 20 meters\": the source gives about 4.5 meters. \"Fringed scales on its long toes unfurl\" is not in this source.",
+  "correctedFact": "The basilisk lizard, nicknamed the Jesus Christ lizard, can run across water on its hind legs. Each foot slaps straight down, pushing water away and opening a pocket of air around the foot, and the lizard can cover about 4.5 meters at roughly 1.5 meters per second before it sinks and swims.",
+  "multiPoint": false,
+  "extraPoints": [],
+  "note": "Reports Hsieh and Lauder 2004, PNAS (PMC534722), whose abstract does not give distance or step rate."
+ },
+ {
+  "id": 295,
+  "status": "partly",
+  "publisher": "Monterey Bay Aquarium Research Institute (MBARI)",
+  "url": "https://www.mbari.org/news/researchers-solve-mystery-of-deep-sea-fish-with-tubular-eyes-and-transparent-head/",
+  "pageTitle": "Researchers solve mystery of deep-sea fish with tubular eyes and transparent head",
+  "quote": "The barreleye ( Macropinna microstoma ) has extremely light-sensitive eyes that can rotate within a transparent, fluid-filled shield on its head. ... Furthermore, until now, most marine biologists believed that barreleye’s eyes were fixed in their heads, which would allow them to only look upward. ... They point forward when the fish is feeding. ... The fish’s eyes would rotate to help the fish keep its “eyes on the prize,” while its transparent shield would protect the fish’s eyes from the siphonophore’s stinging cells.",
+  "unsupported": "\"a 2009 study\": the paper is Robison and Reisenbichler, Copeia 2008(4):780-784; MBARI's press release came out February 23, 2009.",
+  "correctedFact": "The barreleye fish has a transparent, fluid-filled shield over its head, with its two tubular eyes visible inside. Scientists long assumed those eyes were fixed looking straight up, until a 2008 study showed they can rotate forward when the fish feeds. The shield may protect its eyes as it picks prey from siphonophore tentacles.",
+  "multiPoint": false,
+  "extraPoints": [],
+  "note": "Only the year is off; everything else is confirmed by the research institute's release."
+ }
+]
