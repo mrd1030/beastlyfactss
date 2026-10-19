@@ -39,6 +39,7 @@ const DonateSuccess = hydratable('DonateSuccess');
 const DonateCancel = hydratable('DonateCancel');
 const Terms = hydratable('Terms');
 const Privacy = hydratable('Privacy');
+const Credits = hydratable('Credits');
 const Categories = hydratable('Categories');
 const Search = hydratable('Search');
 const Glossary = hydratable('Glossary');
@@ -136,6 +137,7 @@ const AuthenticatedApp = () => {
           <Route path="/donate/cancel" element={<DonateCancel />} />
           <Route path="/terms" element={<Terms />} />
           <Route path="/privacy" element={<Privacy />} />
+          <Route path="/credits" element={<Credits />} />
           <Route path="/categories" element={<Categories />} />
           <Route path="/search" element={<Search />} />
           <Route path="/search/:query" element={<Search />} />

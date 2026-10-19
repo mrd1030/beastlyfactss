@@ -12,6 +12,7 @@ import ImageLightbox from '@/components/shared/ImageLightbox';
 import LocalImage from '@/components/shared/LocalImage';
 import TableOfContents from '@/components/blog/TableOfContents';
 import { truncateDescription } from '@/lib/utils/truncate';
+import { creditFor } from '@/lib/data/photoCredits';
 // Built by scripts/generate-beastlypedia-index.js: this Beastfile's fun facts
 // and its related article cards, both already resolved.
 //
@@ -93,6 +94,7 @@ export default function BeastfileDetail() {
   // animal is hoisted, since every fact matched to a Beastfile shares it. Put it
   // back on each fact so ImageLightbox can caption the photo.
   const linkedFacts = (content?.facts || []).map((f) => ({ ...f, animal: content.animal }));
+  const secondaryCredit = creditFor(secondaryImage);
   const relatedPosts = content?.related || [];
   const siblingIds = content?.siblings || [];
 
@@ -254,6 +256,15 @@ export default function BeastfileDetail() {
                 loading="lazy"
                 decoding="async"
               />
+              {/* A fact photo may stand in as the secondary image, and the
+                  CC BY and CC BY-SA ones carry their credit wherever shown. */}
+              {secondaryCredit && (
+                <p className="text-[11px] font-body text-muted-foreground mt-1.5">
+                  Photo:{' '}
+                  <a href={secondaryCredit.source} target="_blank" rel="noopener noreferrer" className="hover:underline">{secondaryCredit.author}</a>,{' '}
+                  <a href={secondaryCredit.licenseUrl} target="_blank" rel="noopener noreferrer" className="hover:underline">{secondaryCredit.license}</a>
+                </p>
+              )}
             </div>
           )}
 

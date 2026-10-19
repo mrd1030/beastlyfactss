@@ -414,6 +414,27 @@ function imageFor(fact) {
   return path ? `https://beastlyfacts.com${path}` : FALLBACK_IMAGE;
 }
 
+// Mirrors PHOTO_CREDITS in src/lib/data/photoCredits.js (author and license
+// only): the CC BY and CC BY-SA photos must be credited wherever they are shown,
+// and the feed shows them as the item enclosure. Keep in sync by hand, same as
+// FACT_IMAGES above.
+const PHOTO_CREDITS = {
+  '/assets/facts/flamingo.jpg': 'JeffreyGammon, CC BY 4.0',
+  '/assets/facts/flamingo-2.jpg': 'Giles Laurent, CC BY-SA 4.0',
+  '/assets/facts/quokka.jpg': 'Pikuan, CC BY-SA 3.0',
+  '/assets/facts/shoebill.jpg': 'Bob Owen, CC BY 2.0',
+  '/assets/facts/leafy-sea-dragon.jpg': 'James Rosindell, CC BY-SA 4.0',
+  '/assets/facts/thorny-devil.jpg': 'Bäras, CC BY-SA 3.0',
+  '/assets/facts/glass-frog.jpg': 'Mauricio Rivera Correa, CC BY-SA 2.5',
+  '/assets/facts/coconut-crab.jpg': 'Drew Avery, CC BY 2.0',
+};
+
+// " Photo: <author>, <license>." for a fact whose photo needs it, else "".
+function creditFor(fact) {
+  const credit = PHOTO_CREDITS[FACT_IMAGES[fact.id] || ANIMAL_IMAGES[fact.animal]];
+  return credit ? ` Photo: ${credit}.` : '';
+}
+
 function cdata(value) {
   return `<![CDATA[${String(value).replace(/]]>/g, ']]]]><![CDATA[>')}]]>`;
 }
@@ -452,7 +473,7 @@ async function buildFactsFeed(request) {
       <link>https://beastlyfacts.com/facts/${slugify(fact.title)}/</link>
       <guid isPermaLink="false">${guid}</guid>
       <pubDate>${pubDate.toUTCString()}</pubDate>
-      <description>${cdata(`${fact.emoji} ${fact.fact}`)}</description>
+      <description>${cdata(`${fact.emoji} ${fact.fact}${creditFor(fact)}`)}</description>
       <enclosure url="${imageFor(fact)}" type="image/jpeg" length="0" />
     </item>`
     )

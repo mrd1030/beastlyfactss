@@ -16,6 +16,8 @@ Tracks source, author, license, slot and any crop for every photo that came from
 | `shima-enaga-hero.jpg` (beastlypedia) | Shima Enaga, Asahikawa, Hokkaido | Craft GIN | CC0 | [Commons](https://commons.wikimedia.org/wiki/File:%E3%82%B7%E3%83%9E%E3%82%A8%E3%83%8A%E3%82%AC.jpg) |
 | `shima-enaga-snow-fairy-facts.jpg` (article) | Shima Enaga, Biei, Hokkaido | TOKUMI | Copyrighted free use (unrestricted, incl. commercial) | [Commons](https://commons.wikimedia.org/wiki/File:Wiki-simaenaga.jpg) |
 
+**Credit shown (2026-10-19):** the eight CC BY / CC BY-SA rows above are in `src/lib/data/photoCredits.js` and render as "Photo: author, license" in the fact lightbox, under a Beastfile's secondary image, on `/credits/`, in the RSS item description (`public/_worker.js`) and in the corner of any social card `scripts/generate-pins.mjs` builds from them.
+
 All 7 downloaded 2026-07-16, resized to max 1600px / JPEG quality 80 before committing (same
 pipeline as the Adobe Stock photos already in this folder). `coconut-crab.jpg` added
 2026-08-11 same way - it's the lead image on Wikipedia's own "Coconut crab" article, used

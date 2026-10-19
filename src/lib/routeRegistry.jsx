@@ -39,6 +39,7 @@ export const ROUTE_LOADERS = {
   DonateCancel: () => import('@/pages/DonateCancel'),
   Terms: () => import('@/pages/Terms'),
   Privacy: () => import('@/pages/Privacy'),
+  Credits: () => import('@/pages/Credits'),
   Categories: () => import('@/pages/Categories'),
   Search: () => import('@/pages/Search'),
   Glossary: () => import('@/pages/Glossary'),

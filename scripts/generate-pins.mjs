@@ -53,6 +53,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import sharp from 'sharp';
 import { loadQuestions, resolveAnimalImage } from './lib/social-questions.mjs';
+import { creditText } from '../src/lib/data/photoCredits.js';
 
 const W = 1000;
 // --4x5 renders the same cards at 1000x1250 for X and Threads feeds, where a
@@ -142,14 +143,23 @@ function panelHead(spec) {
   return { svg, bottom: top + (lines.length - 1) * lineHeight, size, lines };
 }
 
-// Quiet disclosure in the bottom right corner, where a photo credit would sit:
-// small, regular weight, muted ink. X and Threads cards only (--4x5): the
-// owner keeps it off Pinterest pins, which Pinterest labels on its own. On
-// by default there because most site images are generated; a spec using a
-// real photo sets "ai": false.
-function aiTag(spec) {
-  if (!FEED || spec.ai === false) return '';
-  return `<text x="${W - 40}" y="${H - 22}" text-anchor="end" font-family="Atkinson-Regular" font-size="20" fill="${INK}" fill-opacity="0.5">Illustrated with AI</text>`;
+// The CC BY and CC BY-SA photos (src/lib/data/photoCredits.js, keyed by site
+// path) carry "Photo: <author>, <license>" on every card they appear on,
+// Pinterest included. The spec names the file under public/, so strip that.
+function photoCredit(spec) {
+  return creditText(spec.image.replace(/^public/, '')) || '';
+}
+
+// Quiet line in the bottom right corner: the photo credit when the photo needs
+// one, otherwise the AI disclosure, small, regular weight, muted ink. The
+// disclosure is for X and Threads cards only (--4x5): the owner keeps it off
+// Pinterest pins, which Pinterest labels on its own. On by default there
+// because most site images are generated; a spec using a real photo sets
+// "ai": false.
+function cornerTag(spec, y = H - 22, fill = INK, opacity = 0.5) {
+  const credit = photoCredit(spec);
+  if (!credit && (!FEED || spec.ai === false)) return '';
+  return `<text x="${W - 40}" y="${y}" text-anchor="end" font-family="Atkinson-Regular" font-size="20" fill="${fill}" fill-opacity="${opacity}">${esc(credit || 'Illustrated with AI')}</text>`;
 }
 
 const footer = (cta) => `<text x="80" y="${H - 62}" font-family="Atkinson-Bold" font-size="34" fill="${INK}">${esc(cta)} <tspan fill="${ORANGE}">BeastlyFacts.com</tspan></text>`;
@@ -321,7 +331,7 @@ async function renderOverlay(spec, photo) {
     <text x="80" y="${top - size - 8}" font-family="Atkinson-Bold" font-size="28" letter-spacing="6" fill="#F2B38F">${esc(spec.kicker.toUpperCase())}</text>
     ${lines.map((l, i) => `<text x="80" y="${top + i * lh}" font-family="Schibsted-Bold" font-size="${size}" fill="#FFFFFF">${esc(l)}</text>`).join('\n')}
     <text x="80" y="${H - 60}" font-family="Atkinson-Bold" font-size="26" fill="#FFFFFF" fill-opacity="0.85">BeastlyFacts.com</text>
-    ${spec.ai === false ? '' : `<text x="${W - 40}" y="${H - 60}" text-anchor="end" font-family="Atkinson-Regular" font-size="20" fill="#FFFFFF" fill-opacity="0.55">Illustrated with AI</text>`}
+    ${cornerTag(spec, H - 60, '#FFFFFF', 0.55)}
   </svg>`;
   const file = path.join(outDir, `${spec.out}${SUFFIX}.jpg`);
   await sharp(photo).composite([{ input: Buffer.from(svg), top: 0, left: 0 }]).jpeg({ quality: 80, mozjpeg: true }).toFile(file);
@@ -336,7 +346,7 @@ async function renderPanel(spec, build) {
   await sharp({ create: { width: W, height: H, channels: 3, background: CREAM } })
     .composite([
       { input: strip, top: 0, left: 0 },
-      { input: Buffer.from(`<svg width="${W}" height="${H}" xmlns="http://www.w3.org/2000/svg">${svg}${aiTag(spec)}</svg>`), top: 0, left: 0 },
+      { input: Buffer.from(`<svg width="${W}" height="${H}" xmlns="http://www.w3.org/2000/svg">${svg}${cornerTag(spec)}</svg>`), top: 0, left: 0 },
     ])
     .jpeg({ quality: 78, mozjpeg: true })
     .toFile(file);
@@ -390,7 +400,7 @@ for (let spec of specs) {
     <rect x="0" y="${photoH}" width="${W}" height="14" fill="${ORANGE}"/>
     <text x="80" y="${titleTop - 72}" font-family="Atkinson-Bold" font-size="30" letter-spacing="6" fill="${ORANGE}">${esc(spec.kicker.toUpperCase())}</text>
     ${titleSvg}
-    ${aiTag(spec)}
+    ${cornerTag(spec)}
     <text x="80" y="${H - 62}" font-family="Atkinson-Bold" font-size="34" fill="${ORANGE}">BeastlyFacts.com</text>
   </svg>`;
 

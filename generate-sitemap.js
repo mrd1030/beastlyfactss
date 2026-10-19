@@ -197,8 +197,9 @@ const factCategories = [
 ];
 
 // Not listed here, on purpose: /gear/ and its five pet-type filters,
-// /gallery/, /categories/, and the three /care-packages/ subpages (store,
-// why-we-exist, faq). Each carries noindex,follow in its page component. Over
+// /gallery/, /categories/, /credits/ (noindex like /terms/ and /privacy/), and
+// the three /care-packages/ subpages (store, why-we-exist, faq). Each carries
+// noindex,follow in its page component. Over
 // three months of Search Console data they earned one click between them, and
 // listing a noindexed URL in a sitemap is a contradiction Google reports as an
 // error. They stay prerendered and linked for readers; they are just not

@@ -62,6 +62,7 @@ const ROUTE_PRELOADS = [
   [p => p.startsWith('/donate'), 'Donate'],
   [p => pathIs(p, '/terms'), 'Terms'],
   [p => pathIs(p, '/privacy'), 'Privacy'],
+  [p => pathIs(p, '/credits'), 'Credits'],
   [p => pathIs(p, '/categories'), 'Categories'],
   [p => p.startsWith('/search'), 'Search'],
   [p => pathIs(p, '/glossary'), 'Glossary'],

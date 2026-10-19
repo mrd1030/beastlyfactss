@@ -90,6 +90,7 @@ export default function Footer() {
                 { to: '/contact/', label: 'Contact' },
                 { to: '/pack/', label: 'My Pack' },
                 { to: '/terms/', label: 'Terms' },
+                { to: '/credits/', label: 'Photo credits' },
                 { to: '/privacy/', label: 'Privacy' },
               ]
             }

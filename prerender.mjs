@@ -234,6 +234,7 @@ const STATIC_ROUTES = [
   '/donate',
   '/terms',
   '/privacy',
+  '/credits',
   ...ENCYCLOPEDIA_CATEGORIES.map(s => `/encyclopedia/category/${s}`),
   ...ENCYCLOPEDIA_CATEGORIES.map(s => `/guides/category/${s}`),
   ...FACT_CATEGORIES.map(s => `/facts/category/${s}`),
