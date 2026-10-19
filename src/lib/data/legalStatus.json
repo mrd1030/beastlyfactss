@@ -793,7 +793,7 @@
     "al-220-2-26": {
       "title": "Ala. Admin. Code r. 220-2-.26, Restrictions On Possession, Sale, Importation And/Or Release Of Certain Animals And Fish",
       "url": "https://admincode.legislature.state.al.us/api/rule/220-2-.26",
-      "note": "Alabama's prohibited list, not a permitted one, so absence from it means an animal is unrestricted. The official code site is a React app that serves nothing to a fetcher, but /api/rule/<number> returns the current rule as a PDF; use it, because Cornell LII's copy is the 2020 version and the current one differs. Two clauses do most of the work: everything the U.S. Fish and Wildlife Service lists as injurious wildlife under the Lacey Act is banned by reference, and a block of mammals is banned when it comes from outside Alabama."
+      "note": "Alabama's prohibited list, not a permitted one, so absence from it means an animal is unrestricted. This is read from the current rule on Alabama's official code site, not Cornell LII's copy, which is the 2020 version and differs from it. Two clauses do most of the work: everything the U.S. Fish and Wildlife Service lists as injurious wildlife under the Lacey Act is banned by reference, and a block of mammals is banned when it comes from outside Alabama."
     },
     "in-312-9-11": {
       "title": "312 IAC 9-11, Wild Animal Possession Permits",
@@ -983,7 +983,7 @@
     "ut-r657-53": {
       "title": "Utah Admin. Code R657-53, Amphibian and Reptile Collection, Importation, Transportation and Possession",
       "url": "https://wildlife.utah.gov/rules/r657-53",
-      "note": "The whole of Utah's herp rule, self-hosted by the Division of Wildlife Resources because the Office of Administrative Rules site is a React app that serves nothing to a fetcher. Written for collection from the wild: 53-4(1) bars possession outright and 53-5 then gives it back, 53-12 is the only certificate of registration that attaches to possession and it covers native venomous reptiles only, and 53-8(1) lifts captive-bred and out-of-state animals out of the possession limits."
+      "note": "The whole of Utah's herp rule, read from the copy the Division of Wildlife Resources hosts. Written for collection from the wild: 53-4(1) bars possession outright and 53-5 then gives it back, 53-12 is the only certificate of registration that attaches to possession and it covers native venomous reptiles only, and 53-8(1) lifts captive-bred and out-of-state animals out of the possession limits."
     },
     "vt-10-app-18": {
       "title": "10 V.S.A. App. § 18",
@@ -1163,7 +1163,7 @@
     "de-903": {
       "title": "3 Del. Admin. Code 903, Exotic Animal Regulations, with Del. Code tit. 3 § 7201",
       "url": "https://www.animallaw.info/administrative/de-exotic-animals-chapter-903-exotic-animal-regulations",
-      "note": "The regulation that actually decides Delaware, and it is much narrower than the list circulating in secondary sources. § 7201 requires a permit before anyone brings in, possesses, sells or exhibits a live wild mammal, a hybrid of a wild mammal, or a live reptile not native to Delaware, and bans non-native venomous snakes outright with no permit available. Regulation 6.1 then exempts a named list of pets from the permit entirely, and 6.2 says everything else needs one. The only species the State Veterinarian may not permit at all are at 4.7: gila monsters, beaded lizards and komodo dragons. Pythons, anacondas and boas appear only at 7.5.2.10, a restriction on what Sales Permit holders may breed, not a possession ban. The Delaware regulations site is a single-page app that serves no text to a fetcher, so this was read from a full reproduction and cross-checked against the Department of Agriculture's own exotic animals page."
+      "note": "The regulation that actually decides Delaware, and it is much narrower than the list circulating in secondary sources. § 7201 requires a permit before anyone brings in, possesses, sells or exhibits a live wild mammal, a hybrid of a wild mammal, or a live reptile not native to Delaware, and bans non-native venomous snakes outright with no permit available. Regulation 6.1 then exempts a named list of pets from the permit entirely, and 6.2 says everything else needs one. The only species the State Veterinarian may not permit at all are at 4.7: gila monsters, beaded lizards and komodo dragons. Pythons, anacondas and boas appear only at 7.5.2.10, a restriction on what Sales Permit holders may breed, not a possession ban. This was read from a full reproduction and cross-checked against the Department of Agriculture's own exotic animals page."
     },
     "co-w7": {
       "title": "Colorado 2 CCR 406-7, Chapter W-7, Herpetofauna",
@@ -1408,7 +1408,7 @@
     "vt-domestic-list": {
       "title": "Vermont Fish and Wildlife Department, Domestic Species List, August 2010",
       "url": "https://www.vtfishandwildlife.com/sites/fishandwildlife/files/documents/Learn%20More/Living%20with%20Wildlife/Importation/Domestic_Species_List.pdf",
-      "note": "The third of Vermont's three lists and the one earlier sittings could not read; it extracts cleanly with pypdf from this URL, fetched with a browser User-Agent. It is what makes the domestic cat, the dog, the ferret and the domestic rabbit lawful in a state where anything unlisted is Restricted. Its bird section is a closed list of about thirty psittacines, every one marked Captive Bred Only, and it decides the parrot cells: budgerigar, cockatiel, lovebirds, rosellas and Psittacula are on it, and Cacatua, Psittacus and Myiopsitta are not."
+      "note": "The third of Vermont's three lists. It is what makes the domestic cat, the dog, the ferret and the domestic rabbit lawful in a state where anything unlisted is Restricted. Its bird section is a closed list of about thirty psittacines, every one marked Captive Bred Only, and it decides the parrot cells: budgerigar, cockatiel, lovebirds, rosellas and Psittacula are on it, and Cacatua, Psittacus and Myiopsitta are not."
     },
     "wi-169-04": {
       "title": "Wis. Stat. § 169.04, Possession of live wild animals, with § 169.01 definitions",

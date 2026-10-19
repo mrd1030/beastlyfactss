@@ -59,7 +59,9 @@ function collectSlugs(value, found) {
   } else if (Array.isArray(value)) {
     for (const v of value) collectSlugs(v, found);
   } else if (value && typeof value === 'object') {
-    for (const v of Object.values(value)) collectSlugs(v, found);
+    // relatedStory points at a Chronicles story, not a deep dive the hub
+    // copies from, so its edits must not move the hub's date.
+    for (const [k, v] of Object.entries(value)) if (k !== 'relatedStory') collectSlugs(v, found);
   }
 }
 
