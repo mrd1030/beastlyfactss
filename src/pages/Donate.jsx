@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet-async';
 import { Heart } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Label } from '@/components/ui/label';
-import { toast } from 'sonner';
+import { toast } from '@/components/ui/use-toast';
 import {
   DONATION_AMOUNTS,
   getDonationLink,
@@ -60,7 +60,7 @@ export default function Donate() {
   const handleDonate = () => {
     const link = getDonationLink(donationType, amount);
     if (!link) {
-      toast.error('That option is not available yet. Please try another amount.');
+      toast({ title: 'That option is not available yet. Please try another amount.', variant: 'destructive' });
       return;
     }
 

@@ -124,11 +124,6 @@ export default defineConfig({
             if (id.includes('canvas-confetti')) {
               return 'confetti-vendor';
             }
-            // sonner backs the toasts on /donate and the blog comment box
-            // only. In 'vendor' it shipped ~18KB raw on every page.
-            if (id.includes('/sonner/')) {
-              return 'sonner-vendor';
-            }
             // framer-motion is deliberately NOT pinned to a chunk. App.jsx
             // loads the domAnimation features synchronously and FactModal
             // loads domMax (drag + layout projection, ~41KB raw) on demand,

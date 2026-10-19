@@ -3,7 +3,7 @@ import { Heart, Share2, MessageCircle, Send, Check } from 'lucide-react';
 import { supabase, isSupabaseConfigured } from '@/api/supabaseClient';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
-import { toast } from 'sonner';
+import { toast } from '@/components/ui/use-toast';
 import { motion, AnimatePresence } from '@/lib/motion-safe';
 import { CircleCheck } from 'lucide-react';
 import IconChip from '@/components/shared/IconChip';
@@ -272,7 +272,7 @@ export default function PostEngagement({ postId, postTitle, postSlug }) {
     e.preventDefault();
     if (!name.trim() || !commentText.trim()) return;
     if (!isSupabaseConfigured) {
-      toast.error('Comments are unavailable right now. Please try again later.');
+      toast({ title: 'Comments are unavailable right now. Please try again later.', variant: 'destructive' });
       return;
     }
     setSubmitting(true);
@@ -296,11 +296,13 @@ export default function PostEngagement({ postId, postTitle, postSlug }) {
       // The length and link-count CHECK constraints surface here. Postgres
       // constraint text is not something to show a reader, so map it.
       const isConstraint = /violates check constraint|blog_comments_/i.test(err?.message || '');
-      toast.error(
-        isConstraint
-          ? 'That comment looks too short, too long, or has too many links.'
-          : err?.message || 'Failed to submit comment'
-      );
+      toast({
+        title:
+          isConstraint
+            ? 'That comment looks too short, too long, or has too many links.'
+            : err?.message || 'Failed to submit comment',
+        variant: 'destructive',
+      });
     } finally {
       setSubmitting(false);
     }
@@ -340,7 +342,7 @@ export default function PostEngagement({ postId, postTitle, postSlug }) {
     e.preventDefault();
     if (!replyName.trim() || !replyText.trim()) return;
     if (!isSupabaseConfigured) {
-      toast.error('Replies are unavailable right now. Please try again later.');
+      toast({ title: 'Replies are unavailable right now. Please try again later.', variant: 'destructive' });
       return;
     }
     setReplySubmitting(true);
@@ -364,11 +366,13 @@ export default function PostEngagement({ postId, postTitle, postSlug }) {
       setReplyToName('');
     } catch (err) {
       const isConstraint = /violates check constraint|blog_comments_/i.test(err?.message || '');
-      toast.error(
-        isConstraint
-          ? 'That reply looks too short, too long, or has too many links.'
-          : err?.message || 'Failed to submit reply'
-      );
+      toast({
+        title:
+          isConstraint
+            ? 'That reply looks too short, too long, or has too many links.'
+            : err?.message || 'Failed to submit reply',
+        variant: 'destructive',
+      });
     } finally {
       setReplySubmitting(false);
     }

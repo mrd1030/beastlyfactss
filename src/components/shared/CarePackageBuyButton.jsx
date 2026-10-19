@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { toast } from 'sonner';
+import { toast } from '@/components/ui/use-toast';
 import { Loader2, ShoppingBag } from 'lucide-react';
 import { startCarePackageCheckout } from '@/lib/careCheckout';
 
@@ -27,7 +27,7 @@ export default function CarePackageBuyButton({ pkg, className = '', label, appea
       // for the moment before the page unloads, which reads as a failed click
       // and invites a second one.
     } catch (err) {
-      toast.error(err?.message || 'Could not start checkout. Please try again.');
+      toast({ title: err?.message || 'Could not start checkout. Please try again.', variant: 'destructive' });
       setBusy(false);
     }
   };
