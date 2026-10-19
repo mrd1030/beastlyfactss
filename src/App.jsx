@@ -178,13 +178,9 @@ function App() {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    "name": "BeastlyFacts",
-    "url": "https://beastlyfacts.com/",
-    "potentialAction": {
-      "@type": "SearchAction",
-      "target": "https://beastlyfacts.com/search/{search_term_string}/",
-      "query-input": "required name=search_term_string"
-    }
+    "name": "Beastly Facts",
+    "alternateName": "BeastlyFacts",
+    "url": "https://beastlyfacts.com/"
   };
 
   // SEO: Sitewide Organization entity - kept in sync with the Article

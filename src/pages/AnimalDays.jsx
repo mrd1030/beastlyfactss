@@ -224,37 +224,6 @@ export default function AnimalDays() {
     })),
   };
 
-  const faqSchema = {
-    '@context': 'https://schema.org',
-    '@type': 'FAQPage',
-    mainEntity: [
-      {
-        '@type': 'Question',
-        name: 'Which animal awareness days change date every year?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'Three of the widely observed ones. World Pangolin Day is the third Saturday in February, International Sloth Day is the third Saturday in October, and International Rabbit Day is the fourth Saturday in September. Any calendar printing those as fixed numbers is wrong in most years.',
-        },
-      },
-      {
-        '@type': 'Question',
-        name: 'Is International Sloth Day on 20 October?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'No, though a great many calendars say so. AIUNAU, the Colombian foundation that created the day in 2010, sets it as the third Saturday in October. 20 October was the third Saturday in 2013 and has been reprinted ever since.',
-        },
-      },
-      {
-        '@type': 'Question',
-        name: 'Who decides what becomes an animal awareness day?',
-        acceptedAnswer: {
-          '@type': 'Answer',
-          text: 'Nobody centrally. Some are UN observances adopted by General Assembly resolution, such as World Wildlife Day. Others were started by a single conservation charity, a hobbyist forum, or an anonymous person with a web page. There is no registry, which is why the dates drift between sources.',
-        },
-      },
-    ],
-  };
-
   return (
     <div className="min-h-screen px-4 pb-16 pt-12 sm:px-6">
       <Helmet>
@@ -273,7 +242,6 @@ export default function AnimalDays() {
         <meta name="twitter:title" content={pageTitle} />
         <meta name="twitter:description" content={pageDescription} />
         <script type="application/ld+json">{JSON.stringify(itemListSchema)}</script>
-        <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
       </Helmet>
 
       <div className="mx-auto max-w-4xl">

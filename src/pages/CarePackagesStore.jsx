@@ -35,6 +35,7 @@ export default function CarePackagesStore() {
         <title>{TITLE}</title>
         <meta name="description" content={DESCRIPTION} />
         <link rel="canonical" href="https://beastlyfacts.com/care-packages/store/" />
+        <meta name="robots" content="noindex, follow" />
         <meta property="og:title" content={TITLE} />
         <meta property="og:description" content={DESCRIPTION} />
         <meta property="og:type" content="website" />

@@ -262,26 +262,6 @@ export default function GuideDetail() {
     [`${guide.name} Care Guide`, `/guides/${guide.id}/`],
   ]);
 
-  const howToSchema = {
-    "@context": "https://schema.org",
-    "@type": "HowTo",
-    "name": `How to Care for a ${guide.name}`,
-    "description": guideDescription,
-    "image": ogImage,
-    "step": isRouter
-      ? guide.routes.map(({ slug, line }) => ({
-        "@type": "HowToStep",
-        "name": titleOf(slug),
-        "text": line,
-        "url": `https://beastlyfacts.com/blog/${slug}/`,
-      }))
-      : sectionMeta.map(({ key, label }) => ({
-        "@type": "HowToStep",
-        "name": label,
-        "text": guide.sections[key],
-      })),
-  };
-
   return (
     <div className="min-h-screen">
       <Helmet>
@@ -313,7 +293,6 @@ export default function GuideDetail() {
           "mainEntityOfPage": { "@type": "WebPage", "@id": canonicalUrl }
         })}</script>
         <script type="application/ld+json">{JSON.stringify(crumbs)}</script>
-        <script type="application/ld+json">{JSON.stringify(howToSchema)}</script>
       </Helmet>
       {guide.faqs?.length > 0 && (
         <Helmet>
@@ -521,6 +500,19 @@ export default function GuideDetail() {
                 <h2 className="font-display font-bold text-sm text-foreground mb-4 flex items-center gap-2">
                   <IconChip icon={ShoppingCart} color="orange" size="heading" />What to buy
                 </h2>
+                {/* Before the links, not after: the Amazon Associates program wants the
+                    statement where a reader meets the paid links. */}
+                {(() => {
+                  const retailers = [...new Set(guide.buyList
+                    .map((item) => getAffiliateForItem(item))
+                    .filter(Boolean)
+                    .map((p) => RETAILERS[p.retailer]?.label || 'retailer'))];
+                  return retailers.length > 0 ? (
+                    <p className="text-xs text-muted-foreground font-body mb-3">
+                      {`${retailers.includes('Amazon') ? 'As an Amazon Associate I earn from qualifying purchases. ' : ''}Underlined items are paid ${retailers.join(' and ')} links, at no extra cost to you.`}
+                    </p>
+                  ) : null;
+                })()}
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                   {guide.buyList.map((item) => {
                     // Same exact `covers` match the old Cost Builder used, so a
@@ -536,17 +528,6 @@ export default function GuideDetail() {
                     );
                   })}
                 </div>
-                {(() => {
-                  const retailers = [...new Set(guide.buyList
-                    .map((item) => getAffiliateForItem(item))
-                    .filter(Boolean)
-                    .map((p) => RETAILERS[p.retailer]?.label || 'retailer'))];
-                  return retailers.length > 0 ? (
-                    <p className="text-[11px] text-muted-foreground/80 font-body mt-3">
-                      {`Underlined items are paid ${retailers.join(' and ')} links. We may earn a commission at no extra cost to you.`}
-                    </p>
-                  ) : null;
-                })()}
                 {(() => {
                   const costRoute = guide.routes.find(r => /-(cost-guide|shopping-list)$/.test(r.slug));
                   return costRoute ? (
