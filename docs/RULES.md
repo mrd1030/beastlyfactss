@@ -333,6 +333,9 @@ third care sheet.
   IMAGE_CREDITS.md.
 - Never renumber facts. A removed fact leaves an id gap, favorites are keyed by
   id in the app's frozen snapshot.
+- One fact, one point. A fact card makes a single claim, usually 30 to 60
+  words. A second point about the same animal becomes its own fact with its own
+  photo, never a longer card.
 
 ## Themed quizzes
 

@@ -36,6 +36,20 @@ Ready for the site owner to generate photos and add to facts.js.
 4. **Chambered Nautilus** (Ocean) - The Ancient Spiral Shell. Chambered nautiluses have barely changed in roughly 500 million years, making them one of the oldest living lineages in the ocean. Their spiral shell holds more than 30 gas-filled chambers connected by a thin tube called the siphuncle, which the animal uses to shift fluid in and out and control its buoyancy as it rises and sinks. Visual hook: a cross-section of a chambered nautilus shell showing its spiral chambers, with the live animal's tentacles visible at the shell's opening.
 5. **Paradise Flying Snake** (Reptiles) - Swimming Through the Air. The paradise flying snake spends most of its life round like any other snake, but to glide between trees it splays its ribs outward and pulls in its belly, flattening into a dome-shaped cross-section that generates lift. Once airborne it undulates side to side as if swimming, steering itself toward a landing branch. Visual hook: a flying snake mid-glide between trees, its body flattened and curved in an S-shape against the sky.
 
+## 2026-10-19 run: 6 facts split off, awaiting images
+
+Each of these was a second point bundled into facts 348 to 351. Under the one
+fact, one point rule they become their own cards, each needing its own photo.
+The claims come from the original 2026-10-18 drafts and have not been
+re-checked against sources yet.
+
+1. **Tawny Frogmouth** (Birds) - Plan B: Puffing Up. If a predator comes too close to a stumping tawny frogmouth anyway, the bird abandons the branch disguise and puffs up its feathers to look larger. Visual hook: a tawny frogmouth with feathers fluffed out wide and beak open, facing the camera.
+2. **Tawny Frogmouth** (Birds) - A Beak, Not Talons. Tawny frogmouths hunt mostly from dusk to dawn, waiting still on a perch until prey wanders close, then dropping down and snatching it with their wide beak rather than their feet. Visual hook: a tawny frogmouth dropping from a low branch at dusk, wide beak open toward an insect on the ground.
+3. **Xoloitzcuintli** (Dogs & Cats) - The Dog of Xolotl. The Aztecs linked the hairless Xoloitzcuintli to the god Xolotl and often buried the dogs alongside their owners. Visual hook: a Xoloitzcuintli resting beside carved stone in warm light, its smooth gray skin and tall ears in profile.
+4. **Xoloitzcuintli** (Dogs & Cats) - Saved by an Expedition. The Xoloitzcuintli nearly vanished after the Spanish conquest, surviving mainly in remote villages until a 1950s expedition tracked down enough dogs to rebuild the breed. Visual hook: a small group of Xoloitzcuintli in a dusty rural village lane.
+5. **Binturong** (Mammals) - Neither Bear Nor Cat. The binturong is often called the bearcat, but it is neither a bear nor a cat. It is a long tailed relative of civets, found in the forests of South and Southeast Asia. Visual hook: a binturong's face close up, white tufted ears and long white whiskers against dark fur.
+6. **Blue-Tongued Skink** (Reptiles) - A Tongue That Glows in UV. A blue-tongued skink's tongue reflects ultraviolet light, and the back of the tongue reflects almost twice as brightly as the tip. Visual hook: a blue-tongued skink's open mouth from the front, the tongue lit so its deep blue glows against the pink mouth.
+
 ## How a blocked fact works
 
 A fact can be drafted and parked here when no verified photo exists. Parked
