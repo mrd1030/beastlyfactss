@@ -285,6 +285,39 @@ Results: `docs/fact-sources/batchI.json`. 4 confirmed, 20 partly, 1 unconfirmed.
 - 199: "Pangolin scales are keratin, the same protein your fingernails and hair are made of" (not on this page)
 - 200: "including in the 1996 paper that made it famous" (the abstract names no 1996 paper; its reference list cites a 1992 paper on reversal in "Turritopsis nutricula")
 
+## Batch J: facts 201 to 225
+
+Results: `docs/fact-sources/batchJ.json`. 2 confirmed, 22 partly, 1 unconfirmed.
+
+**Unconfirmed:**
+
+- 221 Thirty Years in One Anemone: Searched for Buston and García (2007), Journal of Fish Biology 70: 1710-1719, which search snippets say estimates a 30-year female life expectancy, twice any other reef damselfish. The Buston Lab page lists only the citation and the CORE record returned 403.
+
+**Partly (these details could not be confirmed):**
+
+- 201: "collapses its bell into a small blob" (the paper says the medusa settles and transforms into a cyst, with no description of the bell)
+- 202: "such as muscle becoming nerve"; "One researcher described" (the page says the process "has been likened" to a butterfly turning back into a caterpillar and names no researcher)
+- 203: "with a bright red stomach glowing through a nearly transparent bell"; "ringed by dozens of white tentacles" (the page gives eight tentacles in Panama and 24 or more in the Mediterranean and Japan, with no color)
+- 204: "came back identical" (the sequences differed by an average of 0.31%, and only 15 animals from four of the countries shared one haplotype); "spread across the planet recently" (not stated); "One scientist called it" (the paper has two authors, Miglietta and Lessios, and uses the phrase as its title)
+- 205: "11 adult males" and "Shark Bay" (not in the abstract); "going on each male's track record across the population, not just their own encounters with him" (the abstract says females respond "based on their experience of individual male behavior")
+- 206: "so identity is most of the conversation" (the source says around 50%, which is half, not most)
+- 208: "stripping out every trace of the original animal's voice" (the copy stimuli were "predominantly synthetic", not all); "none responded to whistles that were not theirs" (the abstract says so, but the results report matching calls after two familiar-control playbacks, and none after unfamiliar ones)
+- 209: "What mirror behavior proves about self-awareness is still genuinely debated" (the paper does not discuss this)
+- 210: "it sits well inside human hearing" and "They were audible all along" (not stated); "That detail quietly kills a popular claim" (the paper says the infrasound idea lacks systematic evidence but does not say the hums disprove it); "Nobody had listened for 947 hours"
+- 211: "For over a century"; "Genetic work in 2016"; "do not interbreed in the wild"; "separated by differences comparable to those between polar and brown bears" (none on this page)
+- 212: "The textbook explanation, a siphon effect pulling it back, was rejected by a 2025 review because a collapsed vein cannot sustain a siphon" (the 2025 source is an experimental study, not a review, and does not mention a siphon)
+- 213: "anatomists have argued for decades" (the paper cites earlier studies on both sides but gives no time span); "The current view" (this is the 2016 study's finding, not a stated consensus)
+- 214: "dozens of non-breeders who are fertile but suppressed" (the abstract says all other females "remain infertile" and gives no colony size)
+- 215: "A mouse in a zero-oxygen chamber dies in under a minute"; "Plants use this pathway"; "No other mammal is known to deploy it as a whole-body rescue" (none in the abstract)
+- 216: "the whole colony's accent shifts when a new queen takes over" (the abstract says dialect cohesiveness drops when the queen is lost and re-emerges only when a new queen rises)
+- 218: "reabsorbing their own tissue" (the paper says it has no information on the mechanism and only suggests tissue resorption as a possibility)
+- 219: "because crossing open reef means being eaten and challenging a bigger fish means losing" (the paper says only that queuing beats dispersing or contesting); "They even limit their own growth to stay unthreatening"; "The wait can last decades"
+- 220: "extremely low" (the paper says lower, "substantially smaller" than in non-symbiotic damselfish); "They are not wearing a disguise" (the paper lists mucus mimicry as one of three hypotheses and does not rule it out)
+- 222: "in the southern part of their range" (the page says the upper Midwestern United States and southern Canada); "The gap comes mostly from urea" (the paper says the tolerance derives in part from a urea and glucose system); "roughly eight times the plasma urea of temperate ones" (the 8-fold rise compares winter-conditioned Alaskan frogs with Alaskan frogs in late summer, not with temperate frogs)
+- 223: "the instant freezing begins" (the paper says quickly after freezing begins); "at concentrations that would put a mammal in a diabetic coma"; "The ice forms outside the cells, and the sugar keeps what is left inside them dilute enough to survive" (the paper says both agents reduce the amount of ice forming in the body)
+- 224: "does not warm from the outside in" (not stated); "The heartbeat comes back within an hour and reaches near-normal function within a few hours" (the abstract gives no times for the heart, only that early heart rates were below normal and rose as the frog warmed)
+- 225: "It gets away with it by freezing rather than digging" (the page does not mention freezing); "not underground and not in water, so it sits through whatever the winter does" (the page says only beneath stumps, logs or leaf litter)
+
 ## Batches B to N
 
 | Batch | Facts | Status |
@@ -297,7 +330,7 @@ Results: `docs/fact-sources/batchI.json`. 4 confirmed, 20 partly, 1 unconfirmed.
 | G | 126 to 150 | done |
 | H | 151 to 175 | done |
 | I | 176 to 200 | done |
-| J | 201 to 225 | running |
+| J | 201 to 225 | done |
 | K | 226 to 250 | running |
 | L | 251 to 275 | running |
 | M | 276 to 306 | running |
