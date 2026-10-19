@@ -372,6 +372,10 @@ export const FACT_IMAGES = {
   345: '/assets/facts/maned-wolf.jpg', // "Not Really a Wolf"
   346: '/assets/facts/sarcastic-fringehead.jpg', // "Mouth to Mouth Combat"
   347: '/assets/facts/velvet-worm.jpg', // "The Slime Cannon"
+  348: '/assets/facts/tawny-frogmouth.jpg', // "The Branch That Wasn't"
+  349: '/assets/facts/xoloitzcuintli.jpg', // "The Aztec Dog That Survived"
+  350: '/assets/facts/binturong.jpg', // "The Scent of Popcorn"
+  351: '/assets/facts/blue-tongued-skink.jpg', // "A Tongue Built to Startle"
   // Own photos for the 11 facts that were borrowing another page's (2026-10-18).
   1: '/assets/facts/octopus-5.jpg', // "Three Hearts of Love"
   2: '/assets/facts/hedgehog-3.jpg', // "Spiny Situation"
