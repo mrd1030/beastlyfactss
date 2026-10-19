@@ -254,6 +254,37 @@ Results: `docs/fact-sources/batchH.json`. 5 confirmed, 19 partly, 1 unconfirmed.
 - 174: "2,000 to 3,000 teeth over a lifetime" (the paper gives no total; 80 teeth replaced about 50 times each implies about 4,000); "the moment it wears down or snaps off" (the paper says about once a year)
 - 175: "can destroy anthrax, botulism, and cholera bacteria" (the source credits disease resistance and a strong immune system along with acid, and says the acid destroys most bacteria); "bloodstream" (the source says intestines); "roadkill"
 
+## Batch I: facts 176 to 200
+
+Results: `docs/fact-sources/batchI.json`. 4 confirmed, 20 partly, 1 unconfirmed.
+
+**Unconfirmed:**
+
+- 192 Ocean's Biggest Brain: Searched for Ari and D'Agostino (2016), Journal of Ethology, the manta mirror study; Springer and ResearchGate both returned bot challenges and the publisher withholds the abstract, so neither the brain size claim nor the mirror results could be read.
+
+**Partly (these details could not be confirmed):**
+
+- 176: "usually only ones who" (the paper finds past food received is the best predictor, not a near-exclusive rule); "Skip your turn to share, and the colony remembers" (the paper favors long-term bonds over turn-taking and says nothing of colony-wide memory)
+- 178: "powerful enough to be felt in a diver's chest from meters away"; "hunt giant squid in total darkness thousands of feet down" (the paper says the clicks suit long-range biosonar but names no prey or depth)
+- 179: "thanks to the shape of their mouth"; "if food gets scarce, restarting it once conditions improve" (the source ties the paused embryo to whether the joey in the pouch survives, not to food)
+- 180: "for hours" (source: stand and wait); "snap a lungfish or baby crocodile in half" (source: prey is usually decapitated before swallowing, and young crocodiles are only occasional prey); "specifically for slicing through tough prey" (source: sharp edges aid in capturing and eating prey)
+- 181: "purely"; "nearly invisible"; "swim using" (the page names the fins but not their role); "look like drifting seaweed rather than a fish"
+- 182: "never need to drink with their mouths" (the paper says the water is swallowed at the mouth with jaw movements); "from any damp surface, including morning dew" (the paper discusses rain and moist sand, not dew); the false head defense (not in the paper)
+- 183: "watch their heart beating and blood moving through their organs" (the paper says bones and other organs are visible, and in the species studied the heart sits inside a reflective sac)
+- 184: "on a raised mound"; "eagles and jackals"; "roughly every hour"; "so everyone gets a turn to forage"; the whole scorpion venom and stinger point
+- 185: "resetting for another strike in a fraction of a second" (the paper measures 15 ms of foot contact, not time between strikes); "keep their body safely out of biting range" (the paper says long legs are assumed to be selected for rapid foot strikes, nothing on biting range); "up to five times" (the paper reports an average of 5.1 body weights from one bird)
+- 186: the inside-out defensive posture with "spiny projections" and "instead of fleeing" (not in the paper); "twilight zone" (the paper places them at 600 to 900 m in the oxygen minimum zone)
+- 187: "blow bubbles"; "underwater"; "needle-thin"; "built purely for snatching fish, too fragile to take down anything larger"
+- 188: "double-jointed" (the page says highly flexible); "up to eight times a second" (the page says continuously and rapidly); "a foraging trick found nowhere else in the animal kingdom"
+- 189: "more than a third of its body surface"
+- 190: "around 120 beagles working major airports nationwide" (the page gives over 180 agriculture canine teams, not a beagle count); "over bigger sniffer breeds" (the page says beagles are preferred at airports without comparing breeds)
+- 191: "the largest natural range of any wild carnivore on Earth, found across nearly the entire Northern Hemisphere" (not in the paper); "kill rate on that heading" (success was highest for attacks aimed north, 340 to 40 degrees, and 60 percent in the opposite southern segment; north-east is only the preferred jump direction)
+- 193: "tail held out for balance"
+- 196: "turns over organic matter and aerates the soil"; "the burrows they abandon get taken over by other animals looking for shelter"
+- 198: "Smithsonian-led" (the release says SCBI and partners, with an SCBI scientist as co-author); "used that deep split to build" (the split is a finding of the tree, not its basis); "a seized scale" (the release says products in marketplaces)
+- 199: "Pangolin scales are keratin, the same protein your fingernails and hair are made of" (not on this page)
+- 200: "including in the 1996 paper that made it famous" (the abstract names no 1996 paper; its reference list cites a 1992 paper on reversal in "Turritopsis nutricula")
+
 ## Batches B to N
 
 | Batch | Facts | Status |
@@ -265,9 +296,9 @@ Results: `docs/fact-sources/batchH.json`. 5 confirmed, 19 partly, 1 unconfirmed.
 | F | 101 to 125 | done |
 | G | 126 to 150 | done |
 | H | 151 to 175 | done |
-| I | 176 to 200 | running |
+| I | 176 to 200 | done |
 | J | 201 to 225 | running |
 | K | 226 to 250 | running |
 | L | 251 to 275 | running |
 | M | 276 to 306 | running |
-| N | 307 to 348 | waiting |
+| N | 307 to 348 | running |

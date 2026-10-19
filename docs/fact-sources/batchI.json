@@ -1,0 +1,347 @@
+[
+ {
+  "id": 176,
+  "status": "partly",
+  "publisher": "Proceedings of the Royal Society B (2013)",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3574350/",
+  "pageTitle": "Food sharing in vampire bats: reciprocal help predicts donations more than relatedness or harassment",
+  "quote": "Common vampire bats often regurgitate food to roost-mates that fail to feed. ... Food received was the best predictor of food given across dyads ... the food-sharing network was consistent and correlated with mutual allogrooming.",
+  "unsupported": "\"usually only ones who\" (the paper finds past food received is the best predictor, not a near-exclusive rule); \"Skip your turn to share, and the colony remembers\" (the paper favors long-term bonds over turn-taking and says nothing of colony-wide memory)",
+  "correctedFact": "Vampire bats that fail to find a meal often get regurgitated blood from a roost-mate. In a captive study, the best predictor of which bat a donor fed was whether that bat had fed it before, and the pairs that shared food also groomed each other more.",
+  "multiPoint": false,
+  "extraPoints": [],
+  "note": "Captive study of 20 bats. The authors read their results as long-term social bonds rather than strict turn-taking."
+ },
+ {
+  "id": 177,
+  "status": "confirmed",
+  "publisher": "Philosophical Transactions of the Royal Society B (2017)",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5312028/",
+  "pageTitle": "Stellar performance: mechanisms underlying Milky Way orientation in dung beetles",
+  "quote": "Nocturnal dung beetles (Scarabaeus satyrus) are currently the only animals that have been demonstrated to use the Milky Way for reliable orientation. ... performs a robust orientation behaviour on moonless nights when only the Milky Way is visible ... stores a snapshot of the positions of celestial cues during its orientation dance ... which they then roll in a straight line away from the dung pile and competing dung beetles",
+  "unsupported": "",
+  "correctedFact": "",
+  "multiPoint": false,
+  "extraPoints": [],
+  "note": "The paper says the only animals, which is stronger than the card's only known insect."
+ },
+ {
+  "id": 178,
+  "status": "partly",
+  "publisher": "Journal of the Acoustical Society of America (2003)",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/12942991/",
+  "pageTitle": "The monopulsed nature of sperm whale clicks",
+  "quote": "A limited number of assumed on-axis clicks were recorded and found to be essentially monopulsed clicks ... with source levels up to 236 dB re: 1 microPa (rms) ... Such clicks meet the requirements for long-range biosonar purposes. ... The sound levels measured make sperm whale clicks by far the loudest of sounds recorded from any biological source.",
+  "unsupported": "\"powerful enough to be felt in a diver's chest from meters away\"; \"hunt giant squid in total darkness thousands of feet down\" (the paper says the clicks suit long-range biosonar but names no prey or depth)",
+  "correctedFact": "Sperm whale clicks are the loudest sounds ever recorded from any animal. Measured head-on, single clicks reached source levels of 236 decibels underwater. They are short, highly directional pulses, exactly what a long-range biosonar needs.",
+  "multiPoint": false,
+  "extraPoints": [],
+  "note": "Card's 230 dB is below the measured 236 dB, so it is not wrong, but 236 is the documented figure. Underwater decibels are not comparable to airborne ones."
+ },
+ {
+  "id": 179,
+  "status": "partly",
+  "publisher": "Animal Diversity Web (University of Michigan)",
+  "url": "https://animaldiversity.org/accounts/Setonix_brachyurus/",
+  "pageTitle": "Setonix brachyurus (quokka)",
+  "quote": "Setonix brachyurus is among the smallest wallabies ... After giving birth, the mother mates again and embryonic diapause occurs. This new embryo remains dormant for approximately five months, when the body can detect if the first joey had survived or not. If the young dies, the embryo implants and develops, and if the joey is alive, the embryo disintegrates. ... The quokka is often referred to as “the happiest animal in the world” by humans. Frequently the focus of pictures, these animals often look as though they are smiling at the camera.",
+  "unsupported": "\"thanks to the shape of their mouth\"; \"if food gets scarce, restarting it once conditions improve\" (the source ties the paused embryo to whether the joey in the pouch survives, not to food)",
+  "correctedFact": "Quokkas are among the smallest wallabies, and people often call them \"the happiest animal in the world.\" They are a favorite subject for photos because they so often look as though they are smiling at the camera, and they are friendly and unafraid of humans.",
+  "multiPoint": true,
+  "extraPoints": [
+   "Smiling look and the happiest animal nickname",
+   "Embryonic diapause: a backup embryo that develops only if the pouch joey dies"
+  ],
+  "note": "The pregnancy pause on the card is described wrongly. The source says the dormant embryo develops if the joey dies and breaks down if it lives."
+ },
+ {
+  "id": 180,
+  "status": "partly",
+  "publisher": "Animal Diversity Web (University of Michigan)",
+  "url": "https://animaldiversity.org/accounts/Balaeniceps_rex/",
+  "pageTitle": "Balaeniceps rex (shoebill)",
+  "quote": "The mandibles have sharp edges that aid in capturing and eating prey. ... The main part of their carnivorous diet consists of lungfish (Protopterus), bichirs (Polypterus), catfish, tilapia (Tilapia) and watersnakes. On occasion, they will also consume frogs, monitor lizards, turtles, young crocodiles, mollusks and carrion. ... The two mechanisms by which shoebill storks hunt are \"stand and wait\" and \"wade and walk slowly.\" When a prey item is spotted, shoebill storks will begin the \"collapse\". The head and neck quickly stretch forward into the water causing the bird to over-balance and collapse forwards and downwards. ... Before swallowing, the prey is usually decapitated.",
+  "unsupported": "\"for hours\" (source: stand and wait); \"snap a lungfish or baby crocodile in half\" (source: prey is usually decapitated before swallowing, and young crocodiles are only occasional prey); \"specifically for slicing through tough prey\" (source: sharp edges aid in capturing and eating prey)",
+  "correctedFact": "Shoebills hunt by standing and waiting, then strike with a move called the collapse: the head and neck shoot forward into the water and the whole bird tips over onto its prey. Lungfish are a staple, and the sharp edges of the huge bill help it catch prey and usually decapitate it before swallowing.",
+  "multiPoint": false,
+  "extraPoints": [],
+  "note": "San Diego Zoo shoebill page returned access denied, so ADW was used."
+ },
+ {
+  "id": 181,
+  "status": "partly",
+  "publisher": "Australian Museum",
+  "url": "https://australian.museum/learn/animals/fishes/leafy-seadragon-phycodurus-eques/",
+  "pageTitle": "Leafy Seadragon, Phycodurus eques (Günther, 1865)",
+  "quote": "Its colouration and leafy appendages give it excellent camouflage on kelp-covered rocky reefs. ... It has a long tubular snout, a pectoral fin on its \"neck\" and a dorsal fin on its \"back\".",
+  "unsupported": "\"purely\"; \"nearly invisible\"; \"swim using\" (the page names the fins but not their role); \"look like drifting seaweed rather than a fish\"",
+  "correctedFact": "Leafy seadragons are covered in leafy appendages that, along with their coloring, give them excellent camouflage on the kelp-covered rocky reefs of Australia's temperate waters. Beneath the leaves they have ordinary fins: a pectoral fin on the \"neck\" and a dorsal fin on the \"back\".",
+  "multiPoint": false,
+  "extraPoints": [],
+  "note": "Second try, Monterey Bay Aquarium, returned page not found. The fins-do-the-swimming point is widely repeated but not on a preferred source found here."
+ },
+ {
+  "id": 182,
+  "status": "partly",
+  "publisher": "Royal Society Open Science (2017)",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5627102/",
+  "pageTitle": "Adsorption and movement of water by skin of the Australian thorny devil (Agamidae: Moloch horridus)",
+  "quote": "Their microstructured skin surface, with channels in between overlapping scales, enables them to collect water by capillarity and passively transport it to the mouth for ingestion. ... In particular, the channels enable a passive transport of collected water to the mouth by capillary action, where (active) ingestion occurs by jaw movements.",
+  "unsupported": "\"never need to drink with their mouths\" (the paper says the water is swallowed at the mouth with jaw movements); \"from any damp surface, including morning dew\" (the paper discusses rain and moist sand, not dew); the false head defense (not in the paper)",
+  "correctedFact": "Thorny devils collect drinking water with their skin. Tiny channels between their overlapping scales soak up water by capillary action and carry it passively to the mouth, where the lizard swallows it with jaw movements. Researchers link the system to rain and moist sand.",
+  "multiPoint": true,
+  "extraPoints": [
+   "False spiny head on the back of the neck used in defense"
+  ],
+  "note": ""
+ },
+ {
+  "id": 183,
+  "status": "partly",
+  "publisher": "Science (2022)",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9984244/",
+  "pageTitle": "Glassfrogs conceal blood in their liver to maintain transparency",
+  "quote": "Glassfrogs are well known for their highly transparent muscles and ventral skin, through which their bones and other organs are visible ... This transparency is adaptive because it camouflages glassfrogs from predators while they sleep on vegetation during the day ... we show that resting glassfrogs increase transparency two- to threefold by removing ~89% of their RBCs from circulation and packing them within their liver.",
+  "unsupported": "\"watch their heart beating and blood moving through their organs\" (the paper says bones and other organs are visible, and in the species studied the heart sits inside a reflective sac)",
+  "correctedFact": "Glassfrogs have such transparent muscles and belly skin that you can see their bones and organs. While they sleep on leaves by day, they pull about 89 percent of their red blood cells out of circulation and pack them into the liver, making themselves two to three times more transparent.",
+  "multiPoint": false,
+  "extraPoints": [],
+  "note": ""
+ },
+ {
+  "id": 184,
+  "status": "partly",
+  "publisher": "Smithsonian's National Zoo and Conservation Biology Institute",
+  "url": "https://nationalzoo.si.edu/animals/meerkat",
+  "pageTitle": "Meerkat",
+  "quote": "One member of the group will act as a sentinel, on the lookout for predators. Individuals rotate sentinel duty throughout the day.",
+  "unsupported": "\"on a raised mound\"; \"eagles and jackals\"; \"roughly every hour\"; \"so everyone gets a turn to forage\"; the whole scorpion venom and stinger point",
+  "correctedFact": "Meerkats live in mobs of up to 30, and one member acts as a sentinel, on the lookout for predators. The job rotates among individuals throughout the day. If a threat comes close, the whole mob can band together into a large, hissing mass to intimidate it.",
+  "multiPoint": true,
+  "extraPoints": [
+   "Partial immunity to scorpion venom, and biting off the stinger before eating"
+  ],
+  "note": ""
+ },
+ {
+  "id": 185,
+  "status": "partly",
+  "publisher": "Current Biology (2016)",
+  "url": "https://doi.org/10.1016/j.cub.2015.12.004",
+  "pageTitle": "The fast and forceful kicking strike of the secretary bird",
+  "quote": "They frequently kick and stamp on the prey’s head until it is killed or incapacitated, particularly when dispatching larger lizards and venomous snakes. ... We find that the peak force demands of secretary bird kicking strikes are remarkably high (Figure 1C), averaging 5.1 ± 0.9 body weights (195 ± 34 N, mean ± s.d.). ... the kick-strikes involve exceptionally fast impacts, lasting only 15 ± 4.4 ms duration in contact",
+  "unsupported": "\"resetting for another strike in a fraction of a second\" (the paper measures 15 ms of foot contact, not time between strikes); \"keep their body safely out of biting range\" (the paper says long legs are assumed to be selected for rapid foot strikes, nothing on biting range); \"up to five times\" (the paper reports an average of 5.1 body weights from one bird)",
+  "correctedFact": "Secretary birds kill snakes and lizards on foot by kicking and stamping on the head. Measurements from one trained bird showed kicks averaging about five times its body weight in force, with each strike touching the target for only about 15 milliseconds, too fast for the bird to adjust mid-kick.",
+  "multiPoint": false,
+  "extraPoints": [],
+  "note": "Data come from a single captive bird. Text read from the author's copy of the paper."
+ },
+ {
+  "id": 186,
+  "status": "partly",
+  "publisher": "Proceedings of the Royal Society B (2012)",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3479720/",
+  "pageTitle": "Vampire squid: detritivores in the oxygen minimum zone",
+  "quote": "Vampire squid were found to feed on detrital matter of various sizes, from small particles to larger marine aggregates. Ingested items included the remains of gelatinous zooplankton, discarded larvacean houses, crustacean remains, diatoms and faecal pellets. ... The most likely source of this eclectic mix is marine snow aggregates ... a unique adaptation that allows these animals to spend most of their life at depths where oxygen concentrations are very low, but where predators are few and typical cephalopod food is scarce.",
+  "unsupported": "the inside-out defensive posture with \"spiny projections\" and \"instead of fleeing\" (not in the paper); \"twilight zone\" (the paper places them at 600 to 900 m in the oxygen minimum zone)",
+  "correctedFact": "Despite the name, the vampire squid does not drink blood. It eats detritus, mostly marine snow: discarded larvacean houses, crustacean bits, diatoms and fecal pellets, gathered with two retractile filaments. That diet lets it live in the deep oxygen minimum zone, where predators are few and normal squid food is scarce.",
+  "multiPoint": true,
+  "extraPoints": [
+   "Inside-out defensive arm posture"
+  ],
+  "note": ""
+ },
+ {
+  "id": 187,
+  "status": "partly",
+  "publisher": "Smithsonian's National Zoo and Conservation Biology Institute",
+  "url": "https://nationalzoo.si.edu/animals/gharial",
+  "pageTitle": "Gharial",
+  "quote": "Adult males develop a bulbous growth at the tip of their snout, called a \"ghara\" after the Indian pot it resembles. The ghara has several functions. It partially covers the crocodiles nostrils and acts as a vocal resonator, creating a loud, buzzing sound when the gharial vocalizes. It is also a visual signal for females, helping males attract a mate. ... Many sharp, interlocking teeth line the gharial's elongated jaws. ... Adult gharials primarily eat fish",
+  "unsupported": "\"blow bubbles\"; \"underwater\"; \"needle-thin\"; \"built purely for snatching fish, too fragile to take down anything larger\"",
+  "correctedFact": "Adult male gharials grow a bulbous knob on the tip of the snout called a ghara, after the Indian pot it resembles. It partly covers the nostrils and works as a vocal resonator, making a loud buzzing sound, and it doubles as a visual signal that helps males attract females.",
+  "multiPoint": true,
+  "extraPoints": [
+   "Slender jaws with interlocking teeth for catching fish"
+  ],
+  "note": ""
+ },
+ {
+  "id": 188,
+  "status": "partly",
+  "publisher": "Duke Lemur Center",
+  "url": "https://lemur.duke.edu/discover/meet-the-lemurs/aye-aye/",
+  "pageTitle": "Aye-aye",
+  "quote": "... a middle finger which is skeletal in appearance, and is used by the animal as a primary sensory organ. ... As they walk along a branch, the animals continuously and rapidly tap it with their middle finger. Cupping their huge ears forward, the aye-aye listens intently to the echoing sounds coming from the tapped tree. Then the aye-aye inserts its slender and highly flexible third finger into the hole, and when the prey is located, it is hooked with the tip of the finger and removed.",
+  "unsupported": "\"double-jointed\" (the page says highly flexible); \"up to eight times a second\" (the page says continuously and rapidly); \"a foraging trick found nowhere else in the animal kingdom\"",
+  "correctedFact": "An aye-aye's middle finger is thin, skeletal looking and highly flexible. Walking along a branch, it taps the wood rapidly with that finger and cups its huge ears forward to listen for echoes from insect tunnels. Then it slides the same finger into the hole and hooks the larva out.",
+  "multiPoint": false,
+  "extraPoints": [],
+  "note": ""
+ },
+ {
+  "id": 189,
+  "status": "partly",
+  "publisher": "Revista Pesquisa FAPESP",
+  "url": "https://revistapesquisa.fapesp.br/en/natural-radiator/",
+  "pageTitle": "Natural radiator",
+  "quote": "The pictures showed in great detail that when the ambient temperature was cold, the toucan cut off the flow of heat to the beak, which then cooled down to retain warmth in its body. Inversely, when the heat in the laboratory vivarium was intense, the toucan increased blood flow to the beak, which was responsible for dispersing the excess heat into the environment. Depending on the situation, the beak was able to disperse 25-400% of all the heat produced by the bird at rest.",
+  "unsupported": "\"more than a third of its body surface\"",
+  "correctedFact": "A toco toucan's huge bill works as a built-in radiator. On hot days the bird sends more blood into the bill and can shed up to four times the heat its body makes at rest. When it gets cold, it cuts that flow so the bill cools and the body keeps its warmth.",
+  "multiPoint": false,
+  "extraPoints": [],
+  "note": "Reports the Science (2009) study by Tattersall, Andrade and Abe. The paper's abstract (pubmed.ncbi.nlm.nih.gov/19628866) has the radiator finding but no numbers."
+ },
+ {
+  "id": 190,
+  "status": "partly",
+  "publisher": "U.S. Customs and Border Protection",
+  "url": "https://www.cbp.gov/border-security/protecting-agriculture/agriculture-canine",
+  "pageTitle": "Agriculture Canine",
+  "quote": "In 1984, the U.S. Department of Agriculture (USDA) established its detector dog program ... Today, the agriculture canine program is growing to over 180 teams ... Beagles and beagle mixes are the preferred breed of dog at the airport because of their keen sense of smell ... non-threatening size, high food drive, and gentle disposition with the public.",
+  "unsupported": "\"around 120 beagles working major airports nationwide\" (the page gives over 180 agriculture canine teams, not a beagle count); \"over bigger sniffer breeds\" (the page says beagles are preferred at airports without comparing breeds)",
+  "correctedFact": "In 1984 the USDA started its detector dog program, the Beagle Brigade, at Los Angeles International Airport with a single beagle. Beagles are still the preferred airport breed for their keen noses, non-threatening size, high food drive and gentle way with travelers, and they sniff out prohibited fruit, plants and meat.",
+  "multiPoint": false,
+  "extraPoints": [],
+  "note": "CBP blocks direct downloads; quotes were taken through a page fetch tool and are excerpts. The program moved from USDA to CBP in 2003, so the card's USDA framing is historical."
+ },
+ {
+  "id": 191,
+  "status": "partly",
+  "publisher": "Biology Letters (2011)",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3097881/",
+  "pageTitle": "Directional preference may enhance hunting accuracy in foraging foxes",
+  "quote": "Foxes on the prowl tend to direct their jumps in a roughly north-eastern compass direction. When foxes are hunting in high vegetation and under snow cover, successful attacks are tightly clustered to the north, while attacks in other directions are largely unsuccessful. ... high cover attacks performed within the angular segment of 340°–40° were highly successful (72.5%) ... attacks initiated in other magnetic alignments had a success rate under 18 per cent ... we suggest that mousing red foxes may use the magnetic field as a 'range finder'",
+  "unsupported": "\"the largest natural range of any wild carnivore on Earth, found across nearly the entire Northern Hemisphere\" (not in the paper); \"kill rate on that heading\" (success was highest for attacks aimed north, 340 to 40 degrees, and 60 percent in the opposite southern segment; north-east is only the preferred jump direction)",
+  "correctedFact": "Mousing red foxes tend to aim their pounces roughly north-east. In tall grass and under snow, attacks aimed in a narrow northern band succeeded about 73 percent of the time, while attacks in most other directions succeeded less than 18 percent of the time. Researchers suggest foxes may use Earth's magnetic field as a rangefinder.",
+  "multiPoint": true,
+  "extraPoints": [
+   "Largest natural range of any wild carnivore"
+  ],
+  "note": "The card ties the four-fold success to the north-east heading; the paper ties it to a northern sector."
+ },
+ {
+  "id": 192,
+  "status": "unconfirmed",
+  "publisher": "",
+  "url": "",
+  "pageTitle": "",
+  "quote": "",
+  "unsupported": "the whole card: largest brain relative to body size of any fish; more time at a mirror than a blank panel; bubble blowing; self-awareness",
+  "correctedFact": "",
+  "multiPoint": true,
+  "extraPoints": [
+   "Largest relative brain size of any fish",
+   "Mirror test behavior"
+  ],
+  "note": "Source is Ari and D'Agostino (2016), Journal of Ethology 34:167-174, doi 10.1007/s10164-016-0462-z. Springer and ResearchGate both returned bot challenges and the abstract is withheld by the publisher, so the text could not be read. Secondary coverage matches the card."
+ },
+ {
+  "id": 193,
+  "status": "partly",
+  "publisher": "Denver Zoo",
+  "url": "https://denverzoo.org/animals/frilled-lizard/",
+  "pageTitle": "Frilled Lizard",
+  "quote": "When the lizard is alarmed or faced with a potential threat, it opens its mouth widely thus erecting the frill in a flash of startling orange color. ... The resulting surprise usually allows the frilled lizard to make a quick escape. But if necessary, the lizard may hiss, jump toward the potential threat and repeatedly lash its tail on the ground to add to the threat. ... When disturbed, the lizard rears up on its hind legs and dashes for the safety of the nearest tree.",
+  "unsupported": "\"tail held out for balance\"",
+  "correctedFact": "When threatened, a frilled lizard opens its mouth wide, which flares its neck frill in a startling flash of orange. If needed it hisses, jumps toward the threat and lashes its tail on the ground. Given the chance, it would rather run, rearing up on its hind legs and dashing for the nearest tree.",
+  "multiPoint": false,
+  "extraPoints": [],
+  "note": "Australian Museum and Taronga frilled lizard URLs both returned not found or redirected, so Denver Zoo was used. The page has the display before the escape, while the card has the bluff first and the sprint as a fallback."
+ },
+ {
+  "id": 194,
+  "status": "confirmed",
+  "publisher": "Journal of Venomous Animals and Toxins including Tropical Diseases (2013)",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3852360/",
+  "pageTitle": "Mad, bad and dangerous to know: the biochemistry, ecology and evolution of slow loris venom",
+  "quote": "Venom is activated by combining the oil from the brachial arm gland with saliva, and can cause death in small mammals and anaphylactic shock and death in humans. ... The slow lorises of Southeast Asia (Nycticebus spp.) are the final mammals, and the only primates, which harbour toxins. ... the mouth can quickly be moved to the brachial gland to combine the fluids, and the mixture applied to the top of the head for defence or kept in the mouth to bite",
+  "unsupported": "",
+  "correctedFact": "",
+  "multiPoint": false,
+  "extraPoints": [],
+  "note": ""
+ },
+ {
+  "id": 195,
+  "status": "confirmed",
+  "publisher": "Animal Diversity Web (University of Michigan)",
+  "url": "https://animaldiversity.org/accounts/Pholidota/",
+  "pageTitle": "Pholidota (pangolins)",
+  "quote": "Pangolins lack teeth. Instead, the the pyloric part of their stomach is thickened and muscular, with odd keratinous spines projecting into its interior. It usually contains pebbles and seems to be used for \"chewing\" in much the same way as a bird's gizzard.",
+  "unsupported": "",
+  "correctedFact": "",
+  "multiPoint": false,
+  "extraPoints": [],
+  "note": ""
+ },
+ {
+  "id": 196,
+  "status": "partly",
+  "publisher": "EarthDate (University of Texas at Austin)",
+  "url": "https://www.earthdate.org/episodes/plight-of-the-pangolin",
+  "pageTitle": "Plight of the Pangolin",
+  "quote": "An adult pangolin is 3 to 5 feet long and eats some 70 million ants and termites a year, using a tongue that’s longer than its body, covered in sticky saliva. ... Pangolins eat termites and ants—more than 70 million per year—like anteaters.",
+  "unsupported": "\"turns over organic matter and aerates the soil\"; \"the burrows they abandon get taken over by other animals looking for shelter\"",
+  "correctedFact": "An adult pangolin eats some 70 million ants and termites a year. It breaks into termite mounds and anthills, slurping insects up with a sticky tongue longer than its body, and it can close its ears and nostrils to keep the angry ants out.",
+  "multiPoint": true,
+  "extraPoints": [
+   "Digging aerates soil and old burrows shelter other animals"
+  ],
+  "note": "The 70 million figure is a widely repeated estimate; no source found names the study behind it."
+ },
+ {
+  "id": 197,
+  "status": "confirmed",
+  "publisher": "Smithsonian's National Zoo and Conservation Biology Institute",
+  "url": "https://nationalzoo.si.edu/news/smithsonian-scientists-aid-decoding-mammalian-mystery-genetics-pangolin",
+  "pageTitle": "Smithsonian Scientists Aid in Decoding a Mammalian Mystery: The Genetics of the Pangolin",
+  "quote": "The scientists learned that sets of pseudogenes (or copies of genes that no longer function) are responsible for some of pangolins' more curious characteristics, for example, their lack of teeth. Most surprisingly, the study found that unlike most other mammals a gene associated with the skin's ability to fight disease does not function in pangolins. This suggests that instead, their scales were developed to serve as armor to defend against predators.",
+  "unsupported": "",
+  "correctedFact": "",
+  "multiPoint": false,
+  "extraPoints": [],
+  "note": "News release dated August 30, 2016, on the Malayan and Chinese pangolin genome study in Genome Research."
+ },
+ {
+  "id": 198,
+  "status": "partly",
+  "publisher": "Smithsonian's National Zoo and Conservation Biology Institute",
+  "url": "https://nationalzoo.si.edu/news/latest-pangolin-family-tree-provides-key-tracking-worlds-most-trafficked-mammal",
+  "pageTitle": "Latest Pangolin Family Tree Provides Key To Tracking World’s Most Trafficked Mammal",
+  "quote": "A new study from the Smithsonian Conservation Biology Institute and partners presents the most comprehensive evolutionary family tree for the eight known species of pangolins and provides a tool that will help conservationists determine which species are being trafficked ... The Journal of Heredity paper outlines the evolutionary history of the eight known pangolin species, confirming that the genetic divergence among Asian and African pangolins occurred no later than 23 million years ago. The paper also identified genetic markers for each species that can be used to identify them in marketplaces, where pangolins come in various otherwise unrecognizable forms of byproducts.",
+  "unsupported": "\"Smithsonian-led\" (the release says SCBI and partners, with an SCBI scientist as co-author); \"used that deep split to build\" (the split is a finding of the tree, not its basis); \"a seized scale\" (the release says products in marketplaces)",
+  "correctedFact": "Asian and African pangolins split no later than 23 million years ago. A study from the Smithsonian Conservation Biology Institute and partners built a family tree of all eight pangolin species and found genetic markers for each one, so investigators can identify which species unrecognizable products in the trade came from.",
+  "multiPoint": false,
+  "extraPoints": [],
+  "note": ""
+ },
+ {
+  "id": 199,
+  "status": "partly",
+  "publisher": "IUCN",
+  "url": "https://iucn.org/press-release/202508/lack-data-and-reporting-gaps-hamper-global-efforts-protect-pangolins",
+  "pageTitle": "Lack of data and reporting gaps hamper global efforts to protect pangolins",
+  "quote": "Between 2016 to 2024, seizures of pangolin products involved more than an estimated half a million pangolins across 75 countries and 178 trade routes. Pangolin scales accounted for 99% of confiscated parts.",
+  "unsupported": "\"Pangolin scales are keratin, the same protein your fingernails and hair are made of\" (not on this page)",
+  "correctedFact": "When IUCN reviewed pangolin seizures for CITES, it found that between 2016 and 2024 they involved more than an estimated half a million pangolins across 75 countries and 178 trade routes. Scales made up 99 percent of every confiscated pangolin part.",
+  "multiPoint": true,
+  "extraPoints": [
+   "Scales are made of keratin, like fingernails and hair"
+  ],
+  "note": "Report was prepared by IUCN for the CITES Secretariat and announced 27 August 2025."
+ },
+ {
+  "id": 200,
+  "status": "partly",
+  "publisher": "Zootaxa (2026)",
+  "url": "https://mapress.com/zt/article/view/56670",
+  "pageTitle": "The Identity of Turritopsis nutricula McCrady 1857 (Hydrozoa, Cnidaria)",
+  "quote": "Turritopsis nutricula McCrady, 1857, the type species of the genus Turritopsis, has been historically misidentified. ... we provide definitive molecular evidence that distinguishes T. nutricula as a separate lineage within the Turritopsis clade. Our phylogenetic analyses reveal that this species is geographically restricted to the western Atlantic, contradicting earlier claims of its cosmopolitan distribution. Furthermore, we investigate the species’ ability to revert from medusa to polyp, a trait observed in T. dohrnii. Our findings indicate that T. nutricula does not possess this capability",
+  "unsupported": "\"including in the 1996 paper that made it famous\" (the abstract names no 1996 paper; its reference list cites a 1992 paper on reversal in \"Turritopsis nutricula\")",
+  "correctedFact": "For decades the immortal jellyfish went by the wrong name, Turritopsis nutricula. A 2026 study showed that T. nutricula is a separate lineage found only in the western Atlantic, and that it cannot revert from medusa to polyp at all. That trick belongs to Turritopsis dohrnii.",
+  "multiPoint": false,
+  "extraPoints": [],
+  "note": "Published 19 January 2026, Zootaxa 5750(1), doi 10.11646/zootaxa.5750.1.5."
+ }
+]
