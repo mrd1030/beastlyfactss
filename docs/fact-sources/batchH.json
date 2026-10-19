@@ -1,0 +1,349 @@
+[
+ {
+  "id": 151,
+  "status": "partly",
+  "publisher": "Biology Letters (2017)",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5454233/",
+  "pageTitle": "Mechanical evidence that flamingos can support their body on one leg with little active muscular force",
+  "quote": "Flamingos (Phoenicopteridae) often stand and sleep on one leg for long periods ... Flamingos are thought to stand on one leg to reduce muscle fatigue [1] or heat loss [1,2]. ... First, we demonstrated that flamingo cadavers could passively support body weight ... We therefore propose the hypothesis that rather than to reduce muscle fatigue or heat loss, flamingos stand on one leg to reduce muscular effort.",
+  "unsupported": "\"for hours\" (the paper says long periods); \"researchers believe helps them conserve body heat while wading in cold water\" (heat loss is one older hypothesis; this paper proposes reduced muscle effort instead); \"locking a joint\" (the paper describes a passive gravitational stay apparatus, not a lock); \"no extra muscle effort\" (the paper says little)",
+  "correctedFact": "Flamingos often stand, and even sleep, on one leg for long periods. In a 2017 study, dead flamingos stayed balanced on one leg with no muscle activity at all, held up by a passive support in the upper leg joints, so the pose likely takes very little muscular effort.",
+  "multiPoint": false,
+  "extraPoints": [],
+  "note": "The heat-saving explanation is presented as a hypothesis the authors argue against. The paper also notes a two-legged pose was not passively stable."
+ },
+ {
+  "id": 152,
+  "status": "partly",
+  "publisher": "The Conversation",
+  "url": "https://theconversation.com/nine-things-you-dont-know-about-seahorses-165650",
+  "pageTitle": "Nine things you don't know about seahorses",
+  "quote": "They are notoriously poor swimmers ... they propel themselves by fluttering their small dorsal fin at about 35 beats per second. ... Seahorses have no teeth and no stomach ... Food passes through their digestive tract so rapidly that they need to eat almost constantly to live and grow. A single seahorse can eat up to 3000 brine shrimp per day.",
+  "unsupported": "\"up to 35 times a second\" (the source says about 35 beats per second); \"some species\" (the source says a single seahorse, with no species split)",
+  "correctedFact": "Seahorses have no teeth and no stomach, so food passes through their gut so quickly that they need to eat almost constantly to live and grow. A single seahorse can eat up to 3,000 brine shrimp a day, sucking them up through its long, tubular snout.",
+  "multiPoint": true,
+  "extraPoints": [
+   "Seahorses are poor swimmers, fluttering a small dorsal fin about 35 times a second"
+  ],
+  "note": "Small wording fixes only; the core stomach point is fully supported."
+ },
+ {
+  "id": 153,
+  "status": "confirmed",
+  "publisher": "Owl Research Institute",
+  "url": "https://www.owlresearchinstitute.org/adaptations",
+  "pageTitle": "Owl Adaptations",
+  "quote": "Thanks to their special feathers, many owls fly almost silently. The outer edges of their forward wing feathers have a stiff fringe, like the teeth of a comb. The rear wing feathers have a soft, hairlike fringe. These fringed edges soften the flow of air as it moves over the wings. The fine velvety surface of the flight feathers absorbs the noise the feathers make as they slide over one another. ... the prey will not likely hear the owl coming in for the capture.",
+  "unsupported": "",
+  "correctedFact": "",
+  "multiPoint": false,
+  "extraPoints": [],
+  "note": "The source says many owls, not all. \"Break up turbulence\" is a fair reading of \"soften the flow of air\"."
+ },
+ {
+  "id": 154,
+  "status": "partly",
+  "publisher": "Animal Cognition (2017)",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5306232/",
+  "pageTitle": "Thinking chickens: a review of cognition, emotion, and behavior in the domestic chicken",
+  "quote": "Chickens, too, show notable abilities to recognize individuals in their social group, as well as the ability to keep track of the group's social hierarchy and the individuals within it ... domestic chickens have demonstrated the capacity to visually discriminate and recognize a large number of conspecifics ... Chicks as young as two days old master some, but not all, aspects of Stage 4 object permanence.",
+  "unsupported": "\"dozens\" (the source says a large number); \"and familiar humans\"; \"over long stretches of time\"",
+  "correctedFact": "Chickens are smarter than they get credit for. Hens can tell apart and recognize a large number of their flockmates by sight, and they keep track of their group's pecking order and where each bird stands in it.",
+  "multiPoint": true,
+  "extraPoints": [
+   "Chicks show early object permanence within days of hatching"
+  ],
+  "note": "The object permanence detail is supported (chicks as young as two days, some aspects of Stage 4)."
+ },
+ {
+  "id": 155,
+  "status": "confirmed",
+  "publisher": "PLOS ONE (2019)",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6382098/",
+  "pageTitle": "Benefits of zebra stripes: Behaviour of tabanid flies around zebras and horses",
+  "quote": "Observations showed that fewer tabanids landed on zebras than on horses per unit time, although rates of tabanid circling around or briefly touching zebra and horse pelage did not differ. ... tabanids approached zebras faster and failed to decelerate before contacting zebras ... striped surfaces prevented flies from making a controlled landing ... significantly fewer tabanids landed on zebras than on horses (0.26/min, 1.08/min)",
+  "unsupported": "",
+  "correctedFact": "",
+  "multiPoint": false,
+  "extraPoints": [],
+  "note": "0.26 vs 1.08 landings a minute is about 24 percent, so \"less than a quarter\" holds. Those landing counts came from direct observation; video was used for the flight-path analysis. Zebras and horses were kept in adjacent fields."
+ },
+ {
+  "id": 156,
+  "status": "partly",
+  "publisher": "San Diego Zoo Wildlife Alliance Library",
+  "url": "https://ielc.libguides.com/sdzg/factsheets/giraffes/characteristics",
+  "pageTitle": "Giraffes (Giraffa spp.) Fact Sheet: Physical Characteristics",
+  "quote": "Possess 7 cervical vertebrae, the same as other mammals (Wilson and Mittermeier 2011). Each of these vertebra is greatly elongated, producing the longest mammalian neck (Wilson and Mittermeier 2011).",
+  "unsupported": "the whole sleep sentence: \"as little as 10 minutes a night, taken in a couple of short bursts\" and \"giraffes in zoos ... sleep several hours more\"",
+  "correctedFact": "A giraffe's towering neck holds just seven vertebrae, the same number found in other mammals, humans included. Each one is greatly lengthened instead, giving the giraffe the longest neck of any mammal, backed by enlarged, strengthened ligaments that carry the weight of its neck and head.",
+  "multiPoint": true,
+  "extraPoints": [
+   "Wild giraffes sleep only minutes a night, far less than zoo giraffes"
+  ],
+  "note": "Not used as the source, but the sleep point has a paper behind it: Burger-Schulz et al. (2023), Frontiers in Mammal Science, found three wild Angolan giraffes averaged 8.6 minutes of sleep a night in about 2 bouts (abstract read). The zoo comparison was not found."
+ },
+ {
+  "id": 157,
+  "status": "confirmed",
+  "publisher": "NOVA (PBS)",
+  "url": "https://www.pbs.org/wgbh/nova/article/koala-fingerprints/",
+  "pageTitle": "Koalas have fingerprints almost identical to ours",
+  "quote": "Koalas are the only non-primates with fingerprints. ... As a biological anthropologist and forensic scientist, Henneberg knew this made koalas unique, the only non-primates with fingerprints. ... Henneberg's research indicated that not even careful analysis under a microscope could help distinguish",
+  "unsupported": "",
+  "correctedFact": "",
+  "multiPoint": false,
+  "extraPoints": [],
+  "note": "The microscope finding is Maciej Henneberg's (a forensic scientist), reported in his 1996 work."
+ },
+ {
+  "id": 158,
+  "status": "partly",
+  "publisher": "Smithsonian's National Zoo and Conservation Biology Institute",
+  "url": "https://nationalzoo.si.edu/animals/cheetah",
+  "pageTitle": "Cheetah",
+  "quote": "Cheetahs can accelerate from zero to 45 miles per hour (zero to 72 kilometers per hour) in just 2.5 seconds. ... That top speed averages between 60 and 70 miles per hour ... and can be maintained for only about 300 yards (274 meters). ... Full sprints last about 20 seconds. ... Special paw pads and semi-retractable claws provide great traction.",
+  "unsupported": "\"0 to 60 mph in about three seconds\" (the source says 0 to 45 mph in 2.5 seconds); \"faster than most sports cars\"; \"20-30 seconds before overheating\" (the source says full sprints last about 20 seconds and gives no overheating cause); \"Unlike other big cats\" (the source compares the claw-tipped footprints with a typical cat's, not other big cats)",
+  "correctedFact": "Cheetahs are the fastest land mammals, going from a standstill to 45 mph in just 2.5 seconds and topping out at 60 to 70 mph. They can only hold that top speed for about 300 yards, and a full sprint lasts about 20 seconds.",
+  "multiPoint": true,
+  "extraPoints": [
+   "Semi-retractable claws grip the ground like cleats"
+  ],
+  "note": "The card also uses a hyphen range (20-30); fine, but the figure itself is unsupported."
+ },
+ {
+  "id": 159,
+  "status": "partly",
+  "publisher": "South African National Biodiversity Institute (SANBI)",
+  "url": "https://www.sanbi.org/animal-of-the-week/honey-badger/",
+  "pageTitle": "Honey badger",
+  "quote": "The honey badger, also known as ratel, was named the 'most fearless animal in the world' in the 2002 edition of the Guinness Book of World Records. ... Their skin is thick, tough and loose, allowing the honey badger to twist and escape from the grip of their attacker. Furthermore, it also allows the honey badger to manoeuvre in tight spaces, and provides protection against bites from predators.",
+  "unsupported": "\"almost freely\"; \"spin around and bite an attacker even while pinned by the scruff of its neck\" (the source says twist and escape the grip)",
+  "correctedFact": "A honey badger's skin is thick, tough and so loose that the animal can twist inside it and escape the grip of an attacker. The same loose skin helps it squeeze through tight spaces and protects it from predators' bites.",
+  "multiPoint": true,
+  "extraPoints": [
+   "Guinness named it the most fearless animal in the world (2002 edition)"
+  ],
+  "note": "The Guinness title is supported (2002 edition)."
+ },
+ {
+  "id": 160,
+  "status": "unconfirmed",
+  "publisher": "The Cat Fanciers' Association",
+  "url": "https://cfa.org/breed/sphynx/",
+  "pageTitle": "Sphynx",
+  "quote": "these cats have very oily skin that requires regular bathing ... The body feels warm and soft to the touch",
+  "unsupported": "\"a noticeably higher body temperature and faster metabolism than other cats\"; \"seek out warm laps and sunny windowsills\"; \"often need sweaters in winter\"",
+  "correctedFact": "",
+  "multiPoint": true,
+  "extraPoints": [
+   "Sphynx cats need regular baths because of oily skin"
+  ],
+  "note": "The core claim (higher body temperature and metabolism) was searched on the CFA breed page and in a web search for veterinary sources; only pet blogs repeat it. The bathing detail is supported by CFA."
+ },
+ {
+  "id": 161,
+  "status": "partly",
+  "publisher": "University of California Museum of Paleontology",
+  "url": "https://ucmp.berkeley.edu/exhibits/aquarius/monogamy.php",
+  "pageTitle": "Secrets of the Stomatopod: An Underwater Research Adventure (Monogamy)",
+  "quote": "in lysiosquillids, one group of spearers, the males and females are monogamous (meaning they stay together and share a burrow). ... The male and female live in the same burrow, but have different \"jobs\"; the female takes care of the eggs and the male hunts for food for both of them!",
+  "unsupported": "\"Lysiosquillina maculata\" by name (the source says lysiosquillids as a group); \"mate for life\"; \"for up to 20 years\"",
+  "correctedFact": "Despite their fearsome reputation, some mantis shrimp are devoted partners. In the lysiosquillids, a group of spearing mantis shrimp, males and females pair up and share one burrow, splitting the work: the female cares for the eggs while the male hunts food for both of them.",
+  "multiPoint": false,
+  "extraPoints": [],
+  "note": "The 20-year pair traces to Roy Caldwell's field work as retold in Honolulu Magazine (not a usable source); a Berkeley alumni magazine piece checked as the second page did not have it. Title would need changing if the 20 years is cut."
+ },
+ {
+  "id": 162,
+  "status": "partly",
+  "publisher": "Monterey Bay Aquarium",
+  "url": "https://www.montereybayaquarium.org/animals-the-ocean/animals-a-to-z/sea-otter",
+  "pageTitle": "Sea otter",
+  "quote": "Unlike other marine mammals, the sea otter doesn't have a thick layer of blubber. To stay warm in chilly ocean waters, they have the world's densest fur; at its thickest, this two-layer fur is made up of more than a million hairs per square inch. ... To keep their luxurious coat waterproof, an otter spends many hours a day cleaning and grooming. Their grooming coats the fur with natural oils from their skin and fluffs it up with insulating air bubbles.",
+  "unsupported": "\"up to a million hairs\" (the source says more than a million at its thickest); \"their only insulation\" (the source also credits a high metabolism for staying warm)",
+  "correctedFact": "Sea otters have the densest fur in the world, more than a million hairs per square inch at its thickest. With no thick blubber layer, they spend many hours a day grooming, coating the fur with skin oils and fluffing it up with insulating air bubbles.",
+  "multiPoint": false,
+  "extraPoints": [],
+  "note": "Title \"A Million Hairs Per Inch\" still works. NPS gives 850,000 to one million, so sources differ on the exact count."
+ },
+ {
+  "id": 163,
+  "status": "partly",
+  "publisher": "U.S. National Park Service (Acadia National Park)",
+  "url": "https://www.nps.gov/articles/000/creaturefeatureacadiaseastar.htm",
+  "pageTitle": "Creature Feature: Sea Stars",
+  "quote": "They use a water-vascular system, which is like a network of canals and reservoirs. Water is pulled in through the madreporite ... and sent to the tube feet to make them move. ... When it catches its prey it will push its stomach out through its mouth and onto its meal. It will then digest and absorb its meal before pulling its stomach back into its body through its mouth",
+  "unsupported": "\"no brain and no blood\" (not on this page); \"hundreds of\" tube feet; \"too big to swallow\"",
+  "correctedFact": "Sea stars have a remarkable way of eating. When one catches prey, it pushes its own stomach out through its mouth and onto the meal, digests and absorbs it there, then pulls the stomach back inside. Its tube feet can even pry clam shells apart first.",
+  "multiPoint": true,
+  "extraPoints": [
+   "Sea stars have no brain or blood and move with a water-powered system of tube feet"
+  ],
+  "note": "NOAA's starfish page (checked first) supports seawater instead of blood and tube feet but not the stomach; a Smithsonian Ocean page returned 403."
+ },
+ {
+  "id": 164,
+  "status": "partly",
+  "publisher": "Smithsonian's National Zoo and Conservation Biology Institute",
+  "url": "https://nationalzoo.si.edu/animals/komodo-dragon",
+  "pageTitle": "Komodo dragon",
+  "quote": "Researchers have also documented a venom gland in the dragon's lower jaw. In addition to the harmful bacteria, the venom prevents the blood from clotting, which causes massive blood loss and induces shock. ... The dragon's stomach also easily expands, enabling an adult to consume up to 80 percent of its own body weight in a single meal.",
+  "unsupported": "\"For decades scientists believed toxic mouth bacteria killed\" ... \"research later revealed\" (the page still credits bacteria and venom together and does not frame the bacteria idea as overturned); \"crash the victim's blood pressure\" (the source says massive blood loss and shock)",
+  "correctedFact": "Komodo dragons have a venom gland in the lower jaw, and the venom stops a victim's blood from clotting, causing massive blood loss and shock. Bitten prey can take days to die, and the dragon then finds the body using its powerful sense of smell.",
+  "multiPoint": true,
+  "extraPoints": [
+   "Komodo dragons can eat up to 80 percent of their body weight in one meal"
+  ],
+  "note": "The 80 percent meal is supported."
+ },
+ {
+  "id": 165,
+  "status": "partly",
+  "publisher": "Smithsonian's National Zoo and Conservation Biology Institute",
+  "url": "https://nationalzoo.si.edu/animals/eastern-box-turtle",
+  "pageTitle": "Eastern box turtle",
+  "quote": "The underside of its shell, called its plastron, is dark brown and hinged. All box turtles have this bilobed plastron, which allows them to almost completely shut their shell. When threatened, the box turtle pulls its body into its shell and waits for the danger to pass. ... A homing instinct, an innate ability to navigate to a \"home base\" despite being in an unfamiliar area, helps this turtle find its way back home.",
+  "unsupported": "\"spend years trying to find their way back\"; \"wildlife experts say never to relocate one you find\"",
+  "correctedFact": "A box turtle's lower shell, the plastron, is hinged. When threatened, the turtle pulls its head, tail and legs inside and closes the shell almost completely, sealing itself up like a box until the danger passes. The shell can even regenerate after injury.",
+  "multiPoint": true,
+  "extraPoints": [
+   "Box turtles have a homing instinct, so they should not be relocated"
+  ],
+  "note": "The homing instinct is supported; the years-long search and the do-not-relocate advice are not on this page."
+ },
+ {
+  "id": 166,
+  "status": "confirmed",
+  "publisher": "Nature Communications (2016)",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5034306/",
+  "pageTitle": "Extremotolerant tardigrade genome and improved radiotolerance of human cultured cells by tardigrade-unique protein",
+  "quote": "Using human cultured cells, we demonstrate that a tardigrade-unique DNA-associating protein suppresses X-ray-induced DNA damage by ~40% and improves radiotolerance. ... Only one protein, termed Damage suppressor (Dsup), co-localized with nuclear DNA",
+  "unsupported": "",
+  "correctedFact": "",
+  "multiPoint": false,
+  "extraPoints": [],
+  "note": "The radiation tested was X-rays."
+ },
+ {
+  "id": 167,
+  "status": "partly",
+  "publisher": "Animal Diversity Web (University of Michigan)",
+  "url": "https://animaldiversity.org/accounts/Pholidota/",
+  "pageTitle": "Pholidota (pangolins)",
+  "quote": "Their tongue is extraordinarily long and muscular, arising from the pelvis and the last pair of ribs deep in the animal's chest. As a result, the tongue and associated muscles are longer than the animal's head and body, allowing the tongue to be extruded to an astonishing degree. Pangolins lack teeth.",
+  "unsupported": "\"termites by the thousands\" (the page says they feed mostly on ants); the page describes pangolins in general, not the giant pangolin specifically, and counts the tongue together with its muscles",
+  "correctedFact": "Pangolins have no teeth at all. Instead they rely on an extraordinarily long, muscular tongue that starts deep in the body, anchored at the pelvis and the last pair of ribs. Counting its muscles, the tongue is longer than the pangolin's head and body combined.",
+  "multiPoint": false,
+  "extraPoints": [],
+  "note": ""
+ },
+ {
+  "id": 168,
+  "status": "partly",
+  "publisher": "San Diego Zoo Wildlife Alliance",
+  "url": "https://animals.sandiegozoo.org/animals/axolotl",
+  "pageTitle": "Axolotl",
+  "quote": "Unlike other salamanders, axolotls are neotenic, meaning they keep juvenile characteristics into adulthood. Axolotls remain aquatic (like larvae) their entire life. ... Like youngsters, they retain external gills, a tail, and a body fin, and lack movable eyelids. ... axolotl populations now live in just three isolated sites in the southern part of Mexico City ... They occur in only two: Mexico's Lake Xochimilco and Lake Chalco",
+  "unsupported": "\"the wild population now survives in just one place, a shrinking canal system\" (the source says three isolated sites in two lakes, Xochimilco and Chalco)",
+  "correctedFact": "Axolotls never grow up in the usual salamander sense. They are neotenic, keeping juvenile traits such as feathery external gills, a tail and body fin, and no movable eyelids into adulthood, and they stay aquatic for their entire lives, though they also develop working lungs.",
+  "multiPoint": true,
+  "extraPoints": [
+   "Wild axolotls survive only in shrinking waters in and near Mexico City"
+  ],
+  "note": "The Marine Biological Lab page used in an earlier batch says one lake (Xochimilco); sources disagree on the range."
+ },
+ {
+  "id": 169,
+  "status": "partly",
+  "publisher": "Canadian Journal of Zoology (1999)",
+  "url": "https://wolf.org/wp-content/uploads/2013/09/267alphastatus_english.pdf",
+  "pageTitle": "Alpha Status, Dominance, and Division of Labor in Wolf Packs",
+  "quote": "Most research on the social dynamics of wolf packs, however, has been conducted on wolves in captivity. These captive packs were usually composed of an assortment of wolves from various sources placed together and allowed to breed at will (Schenkel 1947 ...). ... In captive packs, the unacquainted wolves formed dominance hierarchies featuring alpha, beta, omega animals, etc. ... In nature, however, the wolf pack is not such an assemblage. Rather, it is usually a family ... including a breeding pair and their offspring",
+  "unsupported": "\"1930s\" (the earliest captive study cited is Schenkel 1947); \"a bestselling 1970 book\" (Mech 1970 is only cited among works holding the prevailing view); \"the same biologist who coined the term\" (Mech did not coin it; the paper credits the alpha labels to Schenkel's 1947 captive study); \"spent years afterward trying to get the myth retracted\"",
+  "correctedFact": "The 'alpha wolf' idea came from studies of captive wolves: unrelated animals from different sources penned together, which formed dominance ladders. In 1999, biologist L. David Mech, after 13 summers watching a wild pack, concluded that a natural wolf pack is a family: a breeding pair and their offspring.",
+  "multiPoint": false,
+  "extraPoints": [],
+  "note": "Factual error on the card: Mech popularized the term in his 1970 book; he did not coin it. The PDF is the author's copy hosted by the International Wolf Center (USGS Northern Prairie version)."
+ },
+ {
+  "id": 170,
+  "status": "partly",
+  "publisher": "Australian Museum",
+  "url": "https://australian.museum/learn/animals/mammals/platypus/",
+  "pageTitle": "Platypus",
+  "quote": "When the young hatch, the female starts secreting milk and the young Platypuses suckle from the two milk patches covered by fur on the female's abdomen. ... Monotremes are different from other mammals because they lay eggs and have no teats.",
+  "unsupported": "\"sweat milk\"; \"it pools into little grooves for the babies to lap up\" (the source says the young suckle from the milk patches)",
+  "correctedFact": "Platypuses don't have nipples. Monotremes, the egg-laying mammals, lack them entirely, so after the young hatch, the mother secretes milk from two fur-covered milk patches on her belly, and the babies suckle the milk straight from there.",
+  "multiPoint": false,
+  "extraPoints": [],
+  "note": ""
+ },
+ {
+  "id": 171,
+  "status": "partly",
+  "publisher": "Smithsonian's National Zoo and Conservation Biology Institute",
+  "url": "https://nationalzoo.si.edu/migratory-birds/hummingbirds",
+  "pageTitle": "Hummingbirds",
+  "quote": "hummingbirds are the only vertebrates capable of sustained hovering (staying in one place during flight), and they can fly backward and upside-down as well. ... Hummingbirds are one of the few groups of birds that are known to go into torpor. Torpor is a very deep, sleep-like state in which metabolic functions are slowed to a minimum ... Their feathers offer poor insulation, and they have incredibly high metabolic demands.",
+  "unsupported": "\"the only birds that can fly backwards\" (the source says they can, not that they alone can); \"for a moment\"; \"a unique shoulder joint that lets their wings rotate in a full circle\"; \"slashing their heart rate by up to 95%\"",
+  "correctedFact": "Hummingbirds are the only vertebrates capable of sustained hovering, and they can fly backward and even upside down as well. Like swifts, they power both the downstroke and the upstroke of each wingbeat, which gives them their remarkable agility in the air.",
+  "multiPoint": true,
+  "extraPoints": [
+   "Hummingbirds drop into nightly torpor to save energy"
+  ],
+  "note": "Torpor and its energy reason are supported. A UNC Charlotte page (used earlier) gives torpor heart rate of 50 beats a minute against up to 1,260 in flight, about 96 percent lower, but it is not this source."
+ },
+ {
+  "id": 172,
+  "status": "partly",
+  "publisher": "Smithsonian's National Zoo and Conservation Biology Institute",
+  "url": "https://nationalzoo.si.edu/animals/red-panda",
+  "pageTitle": "Red panda",
+  "quote": "Red pandas, like giant pandas, are bamboo eaters native to Asia's high forests. Despite these similarities and their shared name, the two species are not closely related. ... Red pandas share the giant panda's pseudo-thumb, a modified wrist bone used to grasp bamboo when feeding.",
+  "unsupported": "\"independently evolved\" and \"a textbook case\" of convergence (the source says they share the feature and are not closely related, but does not say it evolved separately)",
+  "correctedFact": "Red pandas grip bamboo with a pseudo-thumb, a modified wrist bone that works like an extra digit. Giant pandas have the same feature, even though the two species are not closely related: the red panda is the only living member of its own family, Ailuridae.",
+  "multiPoint": false,
+  "extraPoints": [],
+  "note": ""
+ },
+ {
+  "id": 173,
+  "status": "confirmed",
+  "publisher": "San Diego Zoo Wildlife Alliance",
+  "url": "https://animals.sandiegozoo.org/animals/capybara",
+  "pageTitle": "Capybara",
+  "quote": "a capybara can stay underwater for up to five minutes at a time to hide from predators. ... its eyes, ears, and nostrils are all found near the top of the its head. A capybara can lift just those parts out of the water to learn everything it needs to know about its surroundings while the rest of its body remains hidden underwater. ... caimans ... Adult capybaras have one main natural predator, the jaguar",
+  "unsupported": "",
+  "correctedFact": "",
+  "multiPoint": false,
+  "extraPoints": [],
+  "note": "The page compares the head layout to a hippo's. It names caimans as predators of young capybaras."
+ },
+ {
+  "id": 174,
+  "status": "partly",
+  "publisher": "Proceedings of the National Academy of Sciences (2013)",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3670376/",
+  "pageTitle": "Specialized stem cell niche enables repetitive renewal of alligator teeth",
+  "quote": "Adult alligators have 20 teeth in each quadrant ... A small (replacement) tooth grows under each mature (functional) tooth ... each tooth is replaced about one time per year ... Because crocodilians are long-lived, they may replace each tooth about 50 times",
+  "unsupported": "\"2,000 to 3,000 teeth over a lifetime\" (the paper gives no total; 80 teeth replaced about 50 times each implies about 4,000); \"the moment it wears down or snaps off\" (the paper says about once a year)",
+  "correctedFact": "Alligators keep replacing their teeth for life. An adult has 80 teeth, 20 in each quarter of the jaws, and a small replacement tooth grows under each working one. Each tooth is replaced about once a year, and a long-lived alligator may replace each one about 50 times.",
+  "multiPoint": false,
+  "extraPoints": [],
+  "note": "PMC blocked curl, so the excerpts were read through WebFetch. The 2,000 to 3,000 figure appears only in dental trade news. Title \"2,000 Teeth and Counting\" would need a look."
+ },
+ {
+  "id": 175,
+  "status": "partly",
+  "publisher": "A Moment of Science, Indiana Public Media (Indiana University)",
+  "url": "https://www.ipm.org/amomentofscience/vultures-food-poisoning/",
+  "pageTitle": "Why Don't Vultures Get Food Poisoning?",
+  "quote": "Vultures can usually eat carcasses infected with such deadly pathogens as botulism, anthrax, cholera, and salmonella without getting sick. ... With stomach acid near zero pH, vulture guts are almost ten times more acidic than other carnivorous birds, like hawks. The extreme acid destroys most bacteria and parasites before they reach the vultures' intestines.",
+  "unsupported": "\"can destroy anthrax, botulism, and cholera bacteria\" (the source credits disease resistance and a strong immune system along with acid, and says the acid destroys most bacteria); \"bloodstream\" (the source says intestines); \"roadkill\"",
+  "correctedFact": "Vultures have extremely acidic stomachs, near zero pH and almost ten times more acidic than those of hawks. The acid destroys most bacteria and parasites before they reach the intestines, one reason vultures can eat carcasses infected with anthrax, botulism or cholera without getting sick.",
+  "multiPoint": false,
+  "extraPoints": [],
+  "note": "A San Diego Zoo Wildlife Alliance story (\"Vultures: The Gastronic Marvel\") that lists these pathogens now redirects to the homepage."
+ }
+]

@@ -191,6 +191,36 @@ Results: `docs/fact-sources/batchF.json`. 3 confirmed, 21 partly, 1 unconfirmed.
 - 124: "parachutes and rudders", "steer mid-air, control its descent" (no steering on the page); "distant" branches is loose (up to 15 meters)
 - 125: "up to a liter"; "in just 0.1 seconds" (paper: under 0.4 seconds); "perfect smoky getaway"
 
+## Batch H: facts 151 to 175
+
+Results: `docs/fact-sources/batchH.json`. 5 confirmed, 19 partly, 1 unconfirmed.
+
+**Unconfirmed:**
+
+- 160 Always Running Warm: The core claim (higher body temperature and metabolism) was searched on the CFA breed page and in a web search for veterinary sources; only pet blogs repeat it. The bathing detail is supported by CFA.
+
+**Partly (these details could not be confirmed):**
+
+- 151: "for hours" (the paper says long periods); "researchers believe helps them conserve body heat while wading in cold water" (heat loss is one older hypothesis; this paper proposes reduced muscle effort instead); "locking a joint" (the paper describes a passive gravitational stay apparatus, not a lock); "no extra muscle effort" (the paper says little)
+- 152: "up to 35 times a second" (the source says about 35 beats per second); "some species" (the source says a single seahorse, with no species split)
+- 154: "dozens" (the source says a large number); "and familiar humans"; "over long stretches of time"
+- 156: the whole sleep sentence: "as little as 10 minutes a night, taken in a couple of short bursts" and "giraffes in zoos ... sleep several hours more"
+- 158: "0 to 60 mph in about three seconds" (the source says 0 to 45 mph in 2.5 seconds); "faster than most sports cars"; "20-30 seconds before overheating" (the source says full sprints last about 20 seconds and gives no overheating cause); "Unlike other big cats" (the source compares the claw-tipped footprints with a typical cat's, not other big cats)
+- 159: "almost freely"; "spin around and bite an attacker even while pinned by the scruff of its neck" (the source says twist and escape the grip)
+- 161: "Lysiosquillina maculata" by name (the source says lysiosquillids as a group); "mate for life"; "for up to 20 years"
+- 162: "up to a million hairs" (the source says more than a million at its thickest); "their only insulation" (the source also credits a high metabolism for staying warm)
+- 163: "no brain and no blood" (not on this page); "hundreds of" tube feet; "too big to swallow"
+- 164: "For decades scientists believed toxic mouth bacteria killed" ... "research later revealed" (the page still credits bacteria and venom together and does not frame the bacteria idea as overturned); "crash the victim's blood pressure" (the source says massive blood loss and shock)
+- 165: "spend years trying to find their way back"; "wildlife experts say never to relocate one you find"
+- 167: "termites by the thousands" (the page says they feed mostly on ants); the page describes pangolins in general, not the giant pangolin specifically, and counts the tongue together with its muscles
+- 168: "the wild population now survives in just one place, a shrinking canal system" (the source says three isolated sites in two lakes, Xochimilco and Chalco)
+- 169: "1930s" (the earliest captive study cited is Schenkel 1947); "a bestselling 1970 book" (Mech 1970 is only cited among works holding the prevailing view); "the same biologist who coined the term" (Mech did not coin it; the paper credits the alpha labels to Schenkel's 1947 captive study); "spent years afterward trying to get the myth retracted"
+- 170: "sweat milk"; "it pools into little grooves for the babies to lap up" (the source says the young suckle from the milk patches)
+- 171: "the only birds that can fly backwards" (the source says they can, not that they alone can); "for a moment"; "a unique shoulder joint that lets their wings rotate in a full circle"; "slashing their heart rate by up to 95%"
+- 172: "independently evolved" and "a textbook case" of convergence (the source says they share the feature and are not closely related, but does not say it evolved separately)
+- 174: "2,000 to 3,000 teeth over a lifetime" (the paper gives no total; 80 teeth replaced about 50 times each implies about 4,000); "the moment it wears down or snaps off" (the paper says about once a year)
+- 175: "can destroy anthrax, botulism, and cholera bacteria" (the source credits disease resistance and a strong immune system along with acid, and says the acid destroys most bacteria); "bloodstream" (the source says intestines); "roadkill"
+
 ## Batches B to N
 
 | Batch | Facts | Status |
@@ -201,10 +231,10 @@ Results: `docs/fact-sources/batchF.json`. 3 confirmed, 21 partly, 1 unconfirmed.
 | E | 76 to 100 | done |
 | F | 101 to 125 | done |
 | G | 126 to 150 | running |
-| H | 151 to 175 | running |
+| H | 151 to 175 | done |
 | I | 176 to 200 | running |
 | J | 201 to 225 | running |
 | K | 226 to 250 | running |
-| L | 251 to 275 | waiting |
+| L | 251 to 275 | running |
 | M | 276 to 306 | waiting |
 | N | 307 to 348 | waiting |
