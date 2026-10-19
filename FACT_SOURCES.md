@@ -33,6 +33,34 @@ Results: `docs/fact-sources/batchA.json`. 5 confirmed, 20 partly, 0 unconfirmed.
 - 350: "rubs it onto branches and its own feet with every step": the source says binturongs soak their feet and tails by squatting to pee, then drag their tails through the trees to leave a scent trail. Nothing about rubbing it on with every step.
 - 351: "A 2020 study": the study (Badiane et al., Behavioral Ecology and Sociobiology 72:104) was published in July 2018. "far more" overstates the source's "strongest".
 
+## Batch C: facts 26 to 50
+
+Results: `docs/fact-sources/batchC.json`. 8 confirmed, 17 partly, 0 unconfirmed.
+
+**Unconfirmed:**
+
+none.
+
+**Partly (these details could not be confirmed):**
+
+- 26: "up to 10 feet" and "water temperature"
+- 29: the generalization "A single starfish arm can regenerate an entire new body" (only a few species, such as Linckia) and "Some species can even split in half and grow into two complete starfish"
+- 31: "competing for food", "It's their main defense mechanism" (source says their only defense is flight) and "can travel up to 10 feet"
+- 33: "the pressure keeps it looking like a normal fish" (curators credit the water's support) and "with a big nose" (the droopy nose forms only out of water)
+- 34: "twice that of humans" (source compares with mammals of similar size) and "6-foot neck"
+- 35: "(to absorb heat)" and "because it reflects visible light, like snow"
+- 38: "three times their normal size" and "1,200 times more deadly than cyanide"
+- 39: ball pythons specifically, and "months without eating" (source covers breeding snakes in general)
+- 40: "and a polite greeting in dragon language"
+- 42: "now one of the most popular gecko species in the hobby"
+- 43: "Color changes signal stress, excitement, readiness to mate" (paper shows dominance, submission and female rejection displays)
+- 44: "and moisten the eye" and "You can sometimes spot it when a dog is sleepy"
+- 45: "Some kennel clubs have started using nose prints" (the Canadian Kennel Club has accepted them since 1938)
+- 46: "Dogs dream just like humans do" as fact, "remarkably similar to ours" and "as they relive their day"
+- 47: "completely blind and deaf", "rely entirely on smell and touch" and "eyes open around 2 weeks" (source: 8 to 10 days)
+- 49: "only" and "not at other cats", "They invented the meow" (source says they more probably repurposed existing calls) and "each cat develops its own unique vocabulary"
+- 50: "known to promote bone healing" (a hypothesis in a conference abstract), "reduce stress" and "for both the cat and the human nearby"
+
 ## Batch E: facts 76 to 100
 
 Results: `docs/fact-sources/batchE.json`. 4 confirmed, 19 partly, 2 unconfirmed.
@@ -69,12 +97,12 @@ Results: `docs/fact-sources/batchE.json`. 4 confirmed, 19 partly, 2 unconfirmed.
 | Batch | Facts | Status |
 |---|---|---|
 | B | 1 to 25 | running |
-| C | 26 to 50 | running |
+| C | 26 to 50 | done |
 | D | 51 to 75 | running |
 | E | 76 to 100 | done |
 | F | 101 to 125 | running |
-| G | 126 to 150 | waiting |
-| H | 151 to 175 | waiting |
+| G | 126 to 150 | running |
+| H | 151 to 175 | running |
 | I | 176 to 200 | waiting |
 | J | 201 to 225 | waiting |
 | K | 226 to 250 | waiting |
