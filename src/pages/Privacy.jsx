@@ -30,7 +30,7 @@ export default function Privacy() {
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
             <PageBadge icon={BadgeIcon} color="teal" />
             <h1 className="font-display font-bold text-3xl sm:text-4xl text-foreground mb-2">Privacy Policy</h1>
-            <p className="text-xs text-muted-foreground font-body">Last updated: September 24, 2026</p>
+            <p className="text-xs text-muted-foreground font-body">Last updated: October 19, 2026</p>
           </motion.div>
         </div>
       </div>
@@ -63,7 +63,7 @@ export default function Privacy() {
               <li><strong className="text-foreground">Google Analytics</strong> - used to understand how visitors use the Site. You can opt-out using the <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener noreferrer" className="text-secondary hover:underline">Google Analytics Opt-out Browser Add-on</a>.</li>
               <li><strong className="text-foreground">Advertising</strong> - the Site does not currently serve advertising, and no advertising cookies are set by us or by an ad network. If advertising returns through Google AdSense, third-party vendors including Google would use cookies to serve ads based on your prior visits to this and other sites, and this policy will be updated to say so before that happens.</li>
               <li><strong className="text-foreground">Affiliate Tracking</strong> - third parties, including Amazon, may place cookies on your browser to track referrals and process performance data.</li>
-              <li><strong className="text-foreground">Local Storage</strong> - used to save favorite facts and quiz results locally in your browser. These stay on your device and are not sent to us. Local storage also holds the random identifier described above, which records that you have already liked or shared an article.</li>
+              <li><strong className="text-foreground">Local Storage</strong> - used to save favorite facts and quiz results locally in your browser. Quiz, Beastle and Critter Keeper results are also sent to us anonymously, without any name, account or device identifier, so we can see activity and show overall Beastle stats. Anything you type there, like a Critter Keeper pet name, is included in that anonymous note. Local storage also holds the random identifier described above, which records that you have already liked or shared an article.</li>
             </ul>
             <p className="mt-3">Donations are handled entirely on Stripe's own checkout pages, so no payment processing scripts or cookies run on this Site.</p>
             <p className="mt-3">You can choose to opt out of personalized advertising by visiting <a href="https://www.google.com/settings/ads" target="_blank" rel="noopener noreferrer" className="text-secondary hover:underline">Google Ads Settings</a>. Alternatively, you can opt out of a third-party vendor's use of cookies for personalized advertising by visiting <a href="https://www.aboutads.info" target="_blank" rel="noopener noreferrer" className="text-secondary hover:underline">www.aboutads.info</a>.</p>
