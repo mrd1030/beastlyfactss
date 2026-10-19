@@ -2,6 +2,22 @@
 
 Duplicates merged, then ranked by importance. ✓ = a skeptic checked it (every check came back confirmed or partly; none refuted). Everything else is a finder's claim not yet checked, so check before fixing. Per-finding detail follows below this section.
 
+## Dealt with since the review (Oct 19)
+
+- **nav-surfaces-0:** Fixed Oct 19: toast containers no longer catch taps.
+- **content-sources-1:** Fixed Oct 19: 39 legal notes rewritten, no research narration left.
+- **store-donate-3:** Low: Stripe shows its own confirmation page, so donors never reach /donate/success/.
+- **visitor-privacy-1:** Fixed Oct 19: policy now covers anonymous quiz/Beastle/Critter Keeper results, push subscriptions and Turnstile.
+- **visitor-privacy-0:** Partly fixed Oct 19: the false "with your consent" claim is removed. Trackers still load with no consent banner (open).
+- **store-donate-4:** Fixed Oct 19: donate page says who receives donations, what they fund, not tax-deductible, non-refundable, how to cancel monthly.
+- **store-donate-5:** Resolved Oct 19: owner confirmed Stripe Climate is on at 1% of revenue; donate page now links Stripe Climate.
+- **store-donate-9:** No change needed: markup (14 days, no fee, links Terms) now matches the Stripe checkout refund policy.
+- **eeat-articles-0:** Partly fixed Oct 19: hubs now show and emit Updated/Published dates derived from their deep dives. Author stays the Organization by owner choice. 24 dog and cat hubs still undated.
+- **content-dates-claims-2:** Fixed Oct 19 for 84 of 108 hubs (dates derived from deep dives); 24 dog and cat hubs still undated.
+- **seo-structured-1:** Partly fixed Oct 19: datePublished/dateModified added on hubs and encyclopedia pages; Organization author kept by owner choice.
+- **eeat-other-0:** Partly fixed Oct 19: encyclopedia entries share the hub date line; still no on-page sources.
+- **Not a review finding, also fixed:** six error messages (buy, comments, donate) never showed because sonner had no Toaster; moved to the site's own toaster and sonner removed. A legal sync check false positive on the Maine cockatoo row fixed.
+
 ## Highest importance
 
 1. Trackers (GA, Ahrefs, Cloudflare) load with no consent step, and the Privacy Policy describes a consent flow that does not exist (visitor-privacy-0 ✓)
@@ -305,6 +321,7 @@ None of this is visible to a visitor on mobile or desktop. It shows only on thir
 
 - **Kind / severity:** problem, high (checker says medium)
 - **Status:** Checked (repro: partly, impact: partly)
+- **Dealt with:** Partly fixed Oct 19: hubs now show and emit Updated/Published dates derived from their deep dives. Author stays the Organization by owner choice. 24 dog and cat hubs still undated.
 - **Claim:** None of the 108 species hubs at /guides/<id>/ shows a byline, a published, updated or reviewed date, or a sources list. Their Article JSON-LD gives author as the Organization, with no datePublished or dateModified. The hub data has no date or author field at all, and none of the 108 hubs gets a sitemap lastmod. Blog articles on the same subject get a Person author, two visible dates and a Sources block, so the most important page per species is the least attributed page on the site.
 - **As checked:** All 108 species hubs at /guides/<id>/ (84 router, 24 legacy dog/cat) carry no byline, no publish, update or reviewed date, and no external Sources list. Their Article JSON-LD names the Organization as author and has no datePublished or dateModified. The guide data has no top-level date, author or review field, and none of the 108 hub URLs in the live sitemap has a lastmod. Blog articles on the same species do get a Person author (Michael Ryan), a visible publish date plus a visible "Last reviewed" date, and a "Sources & Further Reading" block. Two details in the finding are wrong. First, the hubs are not uniquely "the least attributed page on the site": the 103 encyclopedia entries (/encyclopedia/animal/<id>/) have the same gap, with an Organization author at EncyclopediaAnimal.jsx:149, no dates, no byline, no sources and 0 of 103 with a sitemap lastmod. Second, the hub data is not free of source fields. firstWeek.rows[].source appears 1,345 times and emergencyCard.source appears 84 times. These hold slugs of the site's own articles, and 84 of 108 hubs show a visible "From <article title> →" link to the article the advice came from. Those are internal attribution links, not citations, so the core gap still stands. Every hub also links once to /about/ and once to /how-guides-are-made/, both in the footer. Visitors see the gap on mobile and desktop. Google sees it in the Article JSON-LD and in the sitemap.
 - **Scope:** All 108 hubs (84 router, 24 legacy dog/cat). Visitors see it on mobile and desktop; Google sees it in the Article JSON-LD and sitemap.
@@ -429,6 +446,7 @@ While in there, correct the stale comments at author.js:49-52, Blog.jsx:948-955 
 
 - **Kind / severity:** problem, high
 - **Status:** Not checked yet
+- **Dealt with:** Partly fixed Oct 19: encyclopedia entries share the hub date line; still no on-page sources.
 - **Claim:** All 103 encyclopedia entries (/encyclopedia/animal/<id>/) show no visible author, no visible date, no sources and no outbound links, while they make checkable claims such as IUCN status and wild lifespan. Their Article JSON-LD names an Organization as author, has no datePublished or dateModified, and uses the browser title, including the ' | Beastly Facts' suffix, as the headline. This breaks the About page's promise of 'Sources on the page' for 'species profiles'. It also contradicts the reasoning in author.js that an Organization author on pet content is the costly signal to be missing.
 - **Scope:** 103 of 103 encyclopedia entries. Visitors on mobile and desktop see no byline, date or sources. Google sees an Organization author and no dates.
 - **Fix (code):** In EncyclopediaAnimal.jsx, replace the hardcoded author with authorSchema() from src/lib/data/author.js and set headline to animal.name. Add datePublished and dateModified from a new per-entry lastReviewed field. Render a short Sources list and a 'Written by Michael Ryan, last reviewed <date>' line from a new sources array in src/lib/data/encyclopedia/*.js.
@@ -554,6 +572,7 @@ The public log already says early entries are "dated to the day the fix went liv
 
 - **Kind / severity:** problem, medium
 - **Status:** Not checked yet
+- **Dealt with:** Fixed Oct 19 for 84 of 108 hubs (dates derived from deep dives); 24 dog and cat hubs still undated.
 - **Claim:** Every species care guide hub under /guides/<id>/ ships Article JSON-LD with no datePublished or dateModified and shows no updated or reviewed date to readers. That includes hubs the corrections log lists as corrected.
 - **Scope:** All 108 care guide hubs, the site's main pages; affects visitors (no freshness signal) on mobile and desktop and Google (no Article dates, no sitemap lastmod)
 - **Fix (code):** Add a reviewed/updated date field to each guide object, render it under the hub title, emit it as datePublished/dateModified in the GuideDetail Article JSON-LD, and write it as <lastmod> in generate-sitemap.js.
@@ -644,6 +663,7 @@ The public log already says early entries are "dated to the day the fix went liv
 
 - **Kind / severity:** problem, high
 - **Status:** Not checked yet
+- **Dealt with:** Fixed Oct 19: 39 legal notes rewritten, no research narration left.
 - **Claim:** Some legal source notes and jurisdiction notes still contain the researcher's tooling log: "this container", curl, WebFetch, "this sitting", and an internal repo path. They render as "How this rule works:" prose inside the expandable animal rows on six live state law pages. A reader checking a legal answer sees that the rule text was read by an automated agent that could not reach the official site. The same text is in the prerendered HTML Google indexes.
 - **Scope:** 6 live state pages (OK, KS, CT, DE, MI, TN), 182 jurisdiction entries whose source note is affected plus 19 entries with their own affected note. Visible on mobile and desktop once a row is expanded, and in the HTML Google crawls.
 - **Fix (content):** Rewrite the 29 notes so they state only the legal substance and the citation, for example "read from Cornell LII's copy of OAC 800:25-25-3". Move tooling and provenance detail to a non-rendered field such as researchNote. Add a check that fails on /container|curl|WebFetch|this sitting|docs\// in any rendered legal note.
@@ -747,6 +767,7 @@ Every count comes from scripts in /tmp/claude-0/-home-user-beastlyfactss/c6c3a50
 
 - **Kind / severity:** problem, high
 - **Status:** Not checked yet
+- **Dealt with:** Fixed Oct 19: toast containers no longer catch taps.
 - **Claim:** An empty, invisible toast container sits above the site chrome on every page. On phones (under 640px wide) it covers the top 32px of the screen, so a tap on the center of the menu, search, dark-mode, logo or guide Back button does nothing. Only the bottom 12 to 14px of each control responds. Between 640 and 767px (small tablets in portrait) it moves to the bottom and covers the center of all four bottom tabs. Real visitors on phones and small tablets see this. Desktop users get a dead 420x32 strip at the bottom right.
 - **Scope:** Every page site-wide. Phones: header search, menu, dark mode, the logo (home link) and the guide-hub Back button. 640 to 767px: all 4 bottom tabs. Desktop: a 420x32 strip at the bottom right.
 - **Fix (code):** Add `pointer-events-none` to the ToastProvider and ToastViewport class strings in src/components/ui/toast.jsx (lines 9 and 18). Toasts keep `pointer-events-auto`, so they stay clickable.
@@ -1046,6 +1067,7 @@ No build or content changes are needed.
 
 - **Kind / severity:** problem, medium
 - **Status:** Not checked yet
+- **Dealt with:** Partly fixed Oct 19: datePublished/dateModified added on hubs and encyclopedia pages; Organization author kept by owner choice.
 - **Claim:** All 108 care guide hubs and all 103 encyclopedia animal pages declare Article with author = Organization 'Beastly Facts' and no datePublished or dateModified. The 802 articles under them credit Person 'Michael Ryan'. These are the site's top species pages, and they give Google no author entity and no freshness date. They also show no byline or date to visitors. On 102 of 103 encyclopedia pages the headline carries the title-tag suffix, and the publisher has no logo. Only Google sees the markup. The missing visible byline and date affect everyone.
 - **Scope:** 211 pages: 108 /guides/<species>/ hubs and 103 /encyclopedia/animal/<species>/ pages
 - **Fix (code):** Use authorSchema() from src/lib/data/author.js for both Article blocks, add datePublished and dateModified from the guide data (with a visible 'Last reviewed' line to match), use PUBLISHER for publisher, and use the bare species title as the encyclopedia headline.
@@ -1135,6 +1157,7 @@ No build or content changes are needed.
 
 - **Kind / severity:** problem, high (checker says medium)
 - **Status:** Checked (repro: partly, impact: partly)
+- **Dealt with:** Partly fixed Oct 19: the false "with your consent" claim is removed. Trackers still load with no consent banner (open).
 - **Claim:** Google Analytics (gtag.js), Ahrefs Web Analytics and the Cloudflare beacon run on every page for every visitor with no banner, no consent choice and no Consent Mode default, while the Privacy Policy tells visitors that hashed first-party data goes to Google Analytics 'with your consent' and separately invokes GDPR rights. No code sends hashed user data and no consent mechanism exists, so that bullet describes a practice and a choice the visitor never gets.
 - **As checked:** Google Analytics (gtag.js), Ahrefs Web Analytics and the Cloudflare beacon do load on every page for every visitor. There is no banner, no on-site consent choice and no gtag('consent','default',...) call. Meanwhile the Privacy Policy says hashed first-party data goes to Google Analytics "with your consent" and invokes GDPR rights. That much is true. The part that is wrong is "no code sends hashed user data, so the bullet describes a practice the visitor never gets." The practice is switched on, but in the GA property's Google tag settings rather than in repo code. The live tag for G-L0T3V8PPP7 has automatic user-provided data collection enabled for email, phone and address, attached to form_submit, page_view and conversion events. It also has Google signals ENABLED with no region exclusions. The site has native email forms on the page: contact, newsletter, comments and the care package library. So the bullet describes a practice that is configured to run, and the false part is "with your consent". Google's own User-provided data policy requires end-user consent for this, and the site never asks for it. I could not watch a hashed email actually leave a browser, because no browser can load external sites here. Ahrefs and Cloudflare are cookieless and are disclosed as such, so the cookie-consent part of the problem is mainly GA. Who sees it: the missing banner affects all visitors on mobile and desktop. The misleading bullet is visible on /privacy/ on mobile and desktop. The tag configuration is visible only to Google and in network traffic.
 - **Scope:** Site-wide: every page, mobile and desktop. Visitors see no banner; the misleading bullet is visible on /privacy/.
@@ -1157,6 +1180,7 @@ No build or content changes are needed.
 
 - **Kind / severity:** problem, medium (checker says low)
 - **Status:** Checked (repro: partly, impact: partly)
+- **Dealt with:** Fixed Oct 19: policy now covers anonymous quiz/Beastle/Critter Keeper results, push subscriptions and Turnstile.
 - **Claim:** Several data flows in the code are absent from the Privacy Policy, and one statement is false: the policy says quiz results stay on the device and are not sent to the site, but quiz, Beastle and Critter Keeper results are inserted into Supabase and pushed to the owner's phone. Web push subscriptions (endpoint and keys) are stored in Supabase and never mentioned. Cloudflare Turnstile is live on the contact form but Cloudflare is listed only as host and analytics.
 - **As checked:** The core of the finding holds. The live /privacy/ page tells visitors that "favorite facts and quiz results" in local storage "stay on your device and are not sent to us". That is false. In the deployed build, quiz scores, Beastle daily results and Critter Keeper adoptions (with the pet name the visitor typed) are inserted into Supabase table site_events, and each row is relayed to the owner's phone through ntfy. Every finished daily Beastle also writes a row to beastle_results. Web push opt-ins (on /pack/, plus the Beastle reminder toggle on /beastle/) store the subscription endpoint and the p256dh and auth keys in push_subscriptions, with a beastle_reminder flag. Neither the Supabase bullet nor the ntfy bullet mentions any of this; both describe only comments, likes, shares, purchases and contact form messages. Cloudflare Turnstile is live, but the finding understates where. It runs on the /contact/ form and also on the visitor-facing care package library sign-in at /care-packages/library, and on /composer/login, which is owner-only. Cloudflare is listed only as host and analytics, and the Library Sign-In bullet does not mention the challenge. Two corrections. First, the proposed fix wording "deleted on opt-out" would itself be false. Opting out only unsubscribes in the browser, and the row stays until a later send gets a 404 or 410 from the push service and deletes it. Second, the Supabase and ntfy bullets also need updating. None of these flows can be seen by a visitor, and none of them concern Google: the policy text is visible on /privacy/ (mobile and desktop alike), and that page is noindex.
 - **Scope:** /privacy/ (one page, mobile and desktop), covering push opt-in on /pack/ and /beastle/, all quizzes, Beastle, Critter Keeper and /contact/.
@@ -1289,6 +1313,7 @@ Severity is better stated as low. An About link in the footer of every page is t
 
 - **Kind / severity:** problem, medium
 - **Status:** Not checked yet
+- **Dealt with:** Low: Stripe shows its own confirmation page, so donors never reach /donate/success/.
 - **Claim:** The page Stripe sends donors back to, /donate/success, is served with HTTP 404 and 'Page Not Found' markup. In a real browser the 404 page shows until JavaScript swaps in 'Thank You!'. On a cold mobile load that took about 1.5 to 3 seconds. The stated reason for not prerendering the page is wrong: the page reads no query parameters.
 - **Scope:** Every completed or canceled donation. Visible to visitors on mobile and desktop. Google also sees 404s, but these pages are noindex anyway.
 - **Fix (code):** Add /donate/success and /donate/cancel to prerender.mjs's static routes so each ships its own noindex 200 page. Point the seven Stripe Payment Links' confirmation redirect at the trailing-slash URL.
@@ -1297,6 +1322,7 @@ Severity is better stated as low. An About link in the footer of every page is t
 
 - **Kind / severity:** problem, medium
 - **Status:** Not checked yet
+- **Dealt with:** Fixed Oct 19: donate page says who receives donations, what they fund, not tax-deductible, non-refundable, how to cancel monthly.
 - **Claim:** The donate page asks for one-time or monthly money without saying who receives it, what it pays for, that it is not tax-deductible, that it cannot be refunded, or how to cancel a monthly gift. Those terms exist only in the Terms page, which the donate page does not link.
 - **Scope:** /donate/ (noindex), visible to visitors on mobile and desktop.
 - **Fix (content):** Under the heading in Donate.jsx, add: 'Donations go to Michael Ryan, who runs Beastly Facts alone, and pay for hosting, research and photo licensing. Beastly Facts is not a charity, so donations are not tax-deductible. They are non-refundable; cancel a monthly gift any time from the Contact page.' Link Terms and Contact.
@@ -1305,6 +1331,7 @@ Severity is better stated as low. An About link in the footer of every page is t
 
 - **Kind / severity:** problem, medium
 - **Status:** Not checked yet
+- **Dealt with:** Resolved Oct 19: owner confirmed Stripe Climate is on at 1% of revenue; donate page now links Stripe Climate.
 - **Claim:** The donate page says 1% of every purchase or donation goes to CO2 removal. Nothing on the page backs this up, the store pages never mention it, and the owner's own storefront doc treats Stripe Climate as unconfirmed.
 - **Scope:** /donate/. Visible to visitors on mobile and desktop.
 - **Fix (external-settings):** Check Stripe Dashboard > Settings > Climate. If it is on, link Stripe's public Climate page for the account. If it is off, delete the box at Donate.jsx:205-210.
@@ -1321,6 +1348,7 @@ Severity is better stated as low. An About link in the footer of every page is t
 
 - **Kind / severity:** problem, low
 - **Status:** Not checked yet
+- **Dealt with:** No change needed: markup (14 days, no fee, links Terms) now matches the Stripe checkout refund policy.
 - **Claim:** The Product structured data tells Google there is a 14-day free return window. The visible policy says refunds are reviewed case by case and may be declined.
 - **Scope:** Google only (structured data on 20 product pages).
 - **Fix (owner-decision):** Make the visible policy match the markup, for example 'refunds within 14 days are granted, declined only for repeat refund abuse', or soften the markup so it does not promise more than the Terms.

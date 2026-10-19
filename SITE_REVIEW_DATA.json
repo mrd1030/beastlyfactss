@@ -412,7 +412,8 @@
        "severity": "medium",
        "fix": "1) Author, cheap and safe: replace the Organization author at GuideDetail.jsx:309 with authorSchema() from src/lib/data/author.js. Make the same one-line change at EncyclopediaAnimal.jsx:149, which has the same pattern. Ship it together with a visible byline so the page and the schema agree. Either reuse the articles' AuthorBio card at the foot of the page, where Blog.jsx:1194 puts it (not under the H1, as the finding says), or add a compact \"Written by Michael Ryan\" line linking /about/ beside the existing firsthand line at GuideDetail.jsx:381-386. 2) Dates: do not hand-stamp 108 lastUpdated values. No truthful hub date exists today, and an invented one would break the owner's no-fabricated-dates policy (generate-sitemap.js:154-157). This choice needs the owner, so ask one question. Option A: a hub-level lastReviewed set only when a hub is actually reviewed, in the owner's US Eastern date. Option B: a dateModified derived from the newest lastUpdated or lastReviewed among the deep dives the router rows cite. Add datePublished, dateModified and the sitemap lastmod only from that real date. 3) Sources: add no Sources block to the 84 router hubs, because every figure already links to a sourced deep dive, as RULES.md's Hubs section requires. The 24 legacy dog/cat hubs, which do carry unsourced care prose, get fixed through the router reconciliation RULES.md already plans (\"dogs and cats last\"), not through a Sources list bolted onto the legacy layout."
       }
-     }
+     },
+     "resolution": "Partly fixed Oct 19: hubs now show and emit Updated/Published dates derived from their deep dives. Author stays the Organization by owner choice. 24 dog and cat hubs still undated."
     },
     {
      "title": "Visible article dates disagree with JSON-LD dateModified on most articles",
@@ -611,7 +612,8 @@
      "fix": "In EncyclopediaAnimal.jsx, replace the hardcoded author with authorSchema() from src/lib/data/author.js and set headline to animal.name. Add datePublished and dateModified from a new per-entry lastReviewed field. Render a short Sources list and a 'Written by Michael Ryan, last reviewed <date>' line from a new sources array in src/lib/data/encyclopedia/*.js.",
      "fixOwner": "code",
      "id": "eeat-other-0",
-     "checks": {}
+     "checks": {},
+     "resolution": "Partly fixed Oct 19: encyclopedia entries share the hub date line; still no on-page sources."
     },
     {
      "title": "Facts are sold as 'verified' but none of the 347 carries a source",
@@ -815,7 +817,8 @@
      "fix": "Add a reviewed/updated date field to each guide object, render it under the hub title, emit it as datePublished/dateModified in the GuideDetail Article JSON-LD, and write it as <lastmod> in generate-sitemap.js.",
      "fixOwner": "code",
      "id": "content-dates-claims-2",
-     "checks": {}
+     "checks": {},
+     "resolution": "Fixed Oct 19 for 84 of 108 hubs (dates derived from deep dives); 24 dog and cat hubs still undated."
     },
     {
      "title": "Homepage counts call breeds and generic hubs 'species', and '108+' overclaims",
@@ -963,7 +966,8 @@
      "fix": "Rewrite the 29 notes so they state only the legal substance and the citation, for example \"read from Cornell LII's copy of OAC 800:25-25-3\". Move tooling and provenance detail to a non-rendered field such as researchNote. Add a check that fails on /container|curl|WebFetch|this sitting|docs\\// in any rendered legal note.",
      "fixOwner": "content",
      "id": "content-sources-1",
-     "checks": {}
+     "checks": {},
+     "resolution": "Fixed Oct 19: 39 legal notes rewritten, no research narration left."
     },
     {
      "title": "35 of 84 cost guides cite price-listicle sites, one of them an AI pet-portrait app",
@@ -1111,7 +1115,8 @@
      "fix": "Add `pointer-events-none` to the ToastProvider and ToastViewport class strings in src/components/ui/toast.jsx (lines 9 and 18). Toasts keep `pointer-events-auto`, so they stay clickable.",
      "fixOwner": "code",
      "id": "nav-surfaces-0",
-     "checks": {}
+     "checks": {},
+     "resolution": "Fixed Oct 19: toast containers no longer catch taps."
     },
     {
      "title": "Guide hubs and encyclopedia entries send search visitors back to Google, and mobile guide hubs hide the home link",
@@ -1596,7 +1601,8 @@
      "fix": "Use authorSchema() from src/lib/data/author.js for both Article blocks, add datePublished and dateModified from the guide data (with a visible 'Last reviewed' line to match), use PUBLISHER for publisher, and use the bare species title as the encyclopedia headline.",
      "fixOwner": "code",
      "id": "seo-structured-1",
-     "checks": {}
+     "checks": {},
+     "resolution": "Partly fixed Oct 19: datePublished/dateModified added on hubs and encyclopedia pages; Organization author kept by owner choice."
     },
     {
      "title": "87 articles name a bare 'Mike' as author",
@@ -1759,7 +1765,8 @@
        "severity": "medium",
        "fix": "Owner decision, in this order.\n\n1. Before touching the bullet, open GA4 Admin > Data collection and modification > Data collection. Check whether \"User-provided data collection\" is on, then check the Google tag's \"Allow user provided data capabilities\" and automatic detection.\n   - If they are on, turn them off. The site runs no ads (Privacy.jsx:64), so the feature has nothing to feed. Then delete the bullet at Privacy.jsx:51.\n   - If they are already off, delete the bullet straight away.\n   - Do not delete the disclosure while the feature is still on.\n\n2. For EEA, UK and CH visitors, the proportionate minimum is a region-scoped Consent Mode v2 default. Add it right after the gtag function definition at index.html:154 and before gtag('js') and gtag('config'): ad_storage, ad_user_data, ad_personalization and analytics_storage all 'denied', with a region list. With no banner, those visitors stay denied permanently. GA then gets cookieless modeled pings only for them, and that trade-off is acceptable. A banner is only needed if the owner wants full GA data from those regions. Ahrefs and Cloudflare need no change because they are cookieless.\n\n3. Reword Privacy.jsx:61-63 to match the choice made in step 2.\n\n4. Bump \"Last updated\" at Privacy.jsx:33 to the ship date in the owner's Eastern time, since section 8 promises an updated date.\n\n5. Keep the new text free of em and en dashes. The existing \" - \" hyphen separators are fine."
       }
-     }
+     },
+     "resolution": "Partly fixed Oct 19: the false \"with your consent\" claim is removed. Trackers still load with no consent banner (open)."
     },
     {
      "title": "Privacy Policy misses web push, game and quiz logging, and Turnstile, and contradicts itself on quiz results",
@@ -1787,7 +1794,8 @@
        "severity": "low",
        "fix": "Edit src/pages/Privacy.jsx only, and bump \"Last updated\" at line 33 to the ship date (owner's Eastern date).\n\n1. Rewrite line 66 so it no longer says results are not sent. Suggested wording: favorites and your own quiz history stay in your browser. When you finish a quiz, a Beastle daily or adopt a Critter Keeper beardie, an anonymous line goes to our database and is relayed to me through ntfy. That line holds the score or result, and for Critter Keeper the name you chose. It carries no identifier.\n\n2. Add a \"Push Notifications\" bullet to section 1. It should say that opting in stores your browser's push endpoint and encryption keys, and whether you want the Beastle reminder, in Supabase, with no other information attached. Do not say the row is deleted on opt-out, because it is not. Say instead that turning notifications off stops delivery in your browser, and the stored row is removed once the push service reports it as no longer valid. Alternatively, change the code to delete the row on unsubscribe and then say so.\n\n3. Widen the Supabase line (97) to include push subscriptions and anonymous quiz and game results. Widen the ntfy lines (48 and 98) to cover these activity pings as well as contact messages.\n\n4. Add Turnstile to the Cloudflare line (96): \"and runs Turnstile, a bot check, on the contact form and the library sign-in.\"\n\nNo new third parties need adding. Per the owner's CLAUDE.md, write it without em or en dashes. The existing \" - \" separators on lines 47-55 and 94-97 are hyphens, so leave them alone or switch them to colons the way lines 48 and 98 already do."
       }
-     }
+     },
+     "resolution": "Fixed Oct 19: policy now covers anonymous quiz/Beastle/Critter Keeper results, push subscriptions and Turnstile."
     },
     {
      "title": "On 84 of 84 hubs with affiliate links, the disclosure comes after every link, in 11px muted type",
@@ -1997,7 +2005,8 @@
      "fix": "Add /donate/success and /donate/cancel to prerender.mjs's static routes so each ships its own noindex 200 page. Point the seven Stripe Payment Links' confirmation redirect at the trailing-slash URL.",
      "fixOwner": "code",
      "id": "store-donate-3",
-     "checks": {}
+     "checks": {},
+     "resolution": "Low: Stripe shows its own confirmation page, so donors never reach /donate/success/."
     },
     {
      "title": "Donate page omits recipient, use and tax status",
@@ -2010,7 +2019,8 @@
      "fix": "Under the heading in Donate.jsx, add: 'Donations go to Michael Ryan, who runs Beastly Facts alone, and pay for hosting, research and photo licensing. Beastly Facts is not a charity, so donations are not tax-deductible. They are non-refundable; cancel a monthly gift any time from the Contact page.' Link Terms and Contact.",
      "fixOwner": "content",
      "id": "store-donate-4",
-     "checks": {}
+     "checks": {},
+     "resolution": "Fixed Oct 19: donate page says who receives donations, what they fund, not tax-deductible, non-refundable, how to cancel monthly."
     },
     {
      "title": "Unverified 1% climate pledge on donate page",
@@ -2023,7 +2033,8 @@
      "fix": "Check Stripe Dashboard > Settings > Climate. If it is on, link Stripe's public Climate page for the account. If it is off, delete the box at Donate.jsx:205-210.",
      "fixOwner": "external-settings",
      "id": "store-donate-5",
-     "checks": {}
+     "checks": {},
+     "resolution": "Resolved Oct 19: owner confirmed Stripe Climate is on at 1% of revenue; donate page now links Stripe Climate."
     },
     {
      "title": "Refund terms are two clicks away, with dead references",
@@ -2075,7 +2086,8 @@
      "fix": "Make the visible policy match the markup, for example 'refunds within 14 days are granted, declined only for repeat refund abuse', or soften the markup so it does not promise more than the Terms.",
      "fixOwner": "owner-decision",
      "id": "store-donate-9",
-     "checks": {}
+     "checks": {},
+     "resolution": "No change needed: markup (14 days, no fee, links Terms) now matches the Stripe checkout refund policy."
     },
     {
      "title": "Store page indexable but missing from sitemap",
