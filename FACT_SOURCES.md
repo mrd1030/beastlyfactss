@@ -318,6 +318,39 @@ Results: `docs/fact-sources/batchJ.json`. 2 confirmed, 22 partly, 1 unconfirmed.
 - 224: "does not warm from the outside in" (not stated); "The heartbeat comes back within an hour and reaches near-normal function within a few hours" (the abstract gives no times for the heart, only that early heart rates were below normal and rose as the frog warmed)
 - 225: "It gets away with it by freezing rather than digging" (the page does not mention freezing); "not underground and not in water, so it sits through whatever the winter does" (the page says only beneath stumps, logs or leaf litter)
 
+## Batch K: facts 226 to 250
+
+Results: `docs/fact-sources/batchK.json`. 2 confirmed, 22 partly, 1 unconfirmed.
+
+**Unconfirmed:**
+
+- 243 Calls Below Human Hearing: the 14 Hz floor, upper harmonics, carrying range and dusk inversion peak; Cornell Elephant Listening Project pages blocked (403) and Larom et al. 1997 not on PubMed or PMC.
+
+**Partly (these details could not be confirmed):**
+
+- 226: "The pouch seals shut"; "and feeding"; "a mammal's placenta grows from embryonic tissue". The paper calls the tissue a pseudoplacenta and says its skin origin is "considered", not proven.
+- 227: "they lost their spleen" (not in this paper); "A vertebrate missing all that should be defenseless" (the paper says other TLRs partly compensate).
+- 228: "lysozyme"; "When a female transfers her eggs, non-sterile seawater goes into the pouch with them" (the paper says the pouch is filled with seawater, not when it enters); "warm"; "handling bacteria the missing immune hardware no longer can".
+- 229: "It has no destination and no idea which way it is going".
+- 230: "two meter arena"; "With the Milky Way visible" (the source says a moonless, starry night); "That gap is also what light pollution costs an animal, measured directly".
+- 231: "they fell apart" (the source says they took much longer).
+- 234: "behind most human cat allergies"; "less a toxin evolved to attack nerves or blood"; "Much of the damage is done by the victim's own immune response" (the paper only links anaphylaxis in some people to allergen sensitivity).
+- 235: "nail clippers or pliers" (pliers appear only in a quoted YouTube comment); "without anesthetic"; "Infection and blood loss kill many before they reach a buyer"; "cannot eat its natural diet or defend itself".
+- 236: "The brain stem sits low ... angled into the neck"; "most of the skull"; "It also missed the jugular".
+- 237: "On 17 March 1947" (the source says spring 1947); "hotel" (the source says motel).
+- 238: "in the brain stem" (the source names spinal cord circuits); "flap"; "Mike was that ordinary phenomenon stretched to 18 months"; "including walking and balancing, was never consciously driven".
+- 239: "wild cats grow out of"; "Adult cats living together for years"; "relying on scent and body language instead".
+- 240: "without being told which is which" (implied by the playback test, not stated); "harder to ignore" (the source says less pleasant).
+- 241: "the only social cat out of roughly forty species" (the source says most social).
+- 242: "food per lion does not reliably improve with group size, because a kill split more ways feeds each one less"; "where prey must come to drink".
+- 244: "as a surface wave that outruns the airborne version" (the paper says seismic signals "travel at different rates"); "up the leg to the middle ear" (the paper names bone conduction only as a proposed pathway).
+- 245: "around 350 Hz"; "Enough of these and the rival dancer stops" (the source says the signals inhibit dancing).
+- 246: "fifteen to twenty" (the source says about 15); "about 80 percent of the time" (the source says almost always); "The queen does not participate".
+- 247: "Gentoos, by contrast, can exceed 90 percent"; "The difference is ... whether the species builds a nest: a fixed spot gives two birds somewhere to find each other again".
+- 248: "below minus 40 Celsius"; "for roughly 65 days"; "can lose close to half his body weight"; "to the middle" (the source has birds rejoining on the leeward side and passing through the warm center).
+- 249: "archosaurs" (term not used); "They are dinosaur relatives that lived while their cousins did not".
+- 250: "Being ectothermic cuts food needs roughly tenfold against a mammal the same size"; "fresh water" (the source says rivers, lakes and coasts).
+
 ## Batches B to N
 
 | Batch | Facts | Status |
@@ -331,7 +364,7 @@ Results: `docs/fact-sources/batchJ.json`. 2 confirmed, 22 partly, 1 unconfirmed.
 | H | 151 to 175 | done |
 | I | 176 to 200 | done |
 | J | 201 to 225 | done |
-| K | 226 to 250 | running |
+| K | 226 to 250 | done |
 | L | 251 to 275 | running |
 | M | 276 to 306 | running |
 | N | 307 to 348 | running |
