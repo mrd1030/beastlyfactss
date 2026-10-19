@@ -5,9 +5,9 @@ Duplicates merged, then ranked by importance. ✓ = a skeptic checked it (every 
 ## Highest importance
 
 1. Trackers (GA, Ahrefs, Cloudflare) load with no consent step, and the Privacy Policy describes a consent flow that does not exist (visitor-privacy-0 ✓)
-2. Invisible toast layer eats taps on the mobile header and tablet bottom tabs, on every page (nav-surfaces-0)
-3. Legal state pages show visitors AI research notes ("refuses curl from this container") (content-sources-1)
-4. Donors land on a 404 page after paying (store-donate-3)
+2. Invisible toast layer eats taps on the mobile header and tablet bottom tabs, on every page (nav-surfaces-0 ✓ confirmed Oct 19 from code and live HTML: two empty 32px fixed toast divs at z-100, no pointer-events-none, sit over the z-50 header. Fix: add pointer-events-none to ToastProvider and ToastViewport in src/components/ui/toast.jsx)
+3. Legal state pages show visitors AI research notes ("refuses curl from this container") (content-sources-1 ✓ confirmed Oct 19 live: Oklahoma 19 "this container", Kansas 5, Delaware 3 "refuses curl", Connecticut 3 plus "this sitting", Michigan names "docs/legal-sources". Fix: rewrite those notes in src/lib/data/legalStatus.json)
+4. Donors land on a 404 page after paying (store-donate-3 ✓ partly, Oct 19: /donate/success/ and /donate/cancel/ return HTTP 404 with a Page Not Found title; the Thank You screen only replaces it once JavaScript loads. Whether Stripe actually redirects there is a Stripe dashboard setting that cannot be checked from here. Fix: prerender both routes and serve them with 200)
 5. Facts are called "verified" but none of the 347 carries a source (eeat-other-1)
 6. Hubs and encyclopedia pages have no author or date (group above) (eeat-articles-0 ✓)
 7. Back buttons send Google visitors off the site; no way home on mobile hubs (group above) (nav-behavior-0 ✓)
