@@ -209,6 +209,10 @@ export default function Donate() {
             </p>
           </div>
 
+          <p className="text-xs text-muted-foreground font-body leading-relaxed">
+            <span className="font-semibold text-foreground">Where it goes.</span> Donations go to me, Michael Ryan, the one person who runs Beastly Facts. They help pay for running the site and keep every guide free to read. A donation is a gift, not a purchase: it is not tax-deductible, and it is non-refundable unless the law requires otherwise. Monthly donations can be canceled at any time by emailing <a href="mailto:hello@beastlyfacts.com" className="text-secondary hover:underline">hello@beastlyfacts.com</a>. See the <a href="/terms/" className="text-secondary hover:underline">Terms</a> for the details.
+          </p>
+
           <p className="text-xs text-muted-foreground font-body text-center">
             Payments are securely processed by Stripe. BeastlyFacts never stores your card details.
           </p>
