@@ -1,0 +1,103 @@
+[
+ {
+  "id": 4,
+  "title": "Not-So-Related Pandas",
+  "newTitle": null,
+  "publisher": "Smithsonian's National Zoo and Conservation Biology Institute",
+  "url": "https://nationalzoo.si.edu/animals/red-panda",
+  "quote": "Red pandas share the giant panda's pseudo-thumb, a modified wrist bone used to grasp bamboo when feeding. ... Despite these similarities and their shared name, the two species are not closely related. ... Molecular phylogenetic studies show that red pandas are an ancient species in the order Carnivora (superfamily Musteloidea) and are probably most closely related to the group that includes skunks, raccoons and weasels. ... Red pandas are the only living member of the family Ailuridae.",
+  "newFact": "Red pandas share a name and even a bamboo-grabbing \"thumb\" with giant pandas, but they are not close cousins! The red panda is the only living member of its own family, Ailuridae, and genetic studies suggest its nearest relatives are the gang that includes skunks, raccoons and weasels.",
+  "careAdvice": null,
+  "note": "\"NOT related\" softened to not closely related; added pseudo-thumb and Ailuridae. Dropped \"named panda 50 years first\" (no credible page found; Britannica blocked)."
+ },
+ {
+  "id": 8,
+  "title": "Tongue Sniffers",
+  "newTitle": null,
+  "publisher": "The Conversation (Andrew Durso, Utah State University)",
+  "url": "https://theconversation.com/explainer-why-do-snakes-flick-their-tongues-29935",
+  "quote": "Snakes use their tongues for collecting chemicals from the air or ground. The tongue does not have receptors to taste or smell. Instead, these receptors are in the vomeronasal, or Jacobson's Organ, which is in the roof of the mouth. ... But X-ray movies have revealed that the tongue does not move inside the closed mouth, it simply deposits the chemicals it has collected onto pads on the floor of the mouth as the mouth is closing. It is most likely that these pads deliver the sampled molecules",
+  "newFact": "Snakes smell with help from their tongues! Each flick of that forked tongue grabs chemicals from the air or ground. The tongue can't smell a thing itself, though: it drops its haul onto pads on the floor of the mouth, which most likely pass it up to the Jacobson's organ in the roof of the mouth.",
+  "careAdvice": null,
+  "note": "Tongue no longer presses into the Jacobson's organ; it leaves chemicals on mouth-floor pads that likely deliver them. Nothing dropped."
+ },
+ {
+  "id": 9,
+  "title": "Headbutt Means Love",
+  "newTitle": "Headbutt Means Trust",
+  "publisher": "VCA Animal Hospitals",
+  "url": "https://vcahospitals.com/resources/behavior-cat/communication/why-do-cats-headbutt-you",
+  "quote": "Headbutts, or head bunts as they're also known, are a behavior that domestic cats share with their wild counterparts. ... Cats have glands on their cheeks, forehead and chin that contain pheromones. ... While it's true that headbutting isn't necessarily a sign of love, it is, however, a sign of trust. When your cat headbutts you, they're rubbing pheromones on you from the glands located just in front of their ears and accepting you into their inner circle. In other words, they're creating a bond with you. You now smell like them, and they're reassured by that connection. Cats don't headbutt just anyone, so they must think very highly of you to mark you!",
+  "newFact": "When your cat headbutts you, a move called head bunting, it's a sign of trust! Cats have scent glands on their cheeks, forehead and chin, and a bunt rubs pheromones onto you from the glands just in front of their ears. Now you smell like them, and you're officially in their inner circle.",
+  "careAdvice": null,
+  "note": "\"Means love\" changed to trust; \"marking you as theirs\" reworded to the source's inner circle and smelling like them. Title changed."
+ },
+ {
+  "id": 12,
+  "title": "Mantis Shrimp Vision",
+  "newTitle": null,
+  "publisher": "Science (2014)",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/24458639/",
+  "quote": "One of the most complex eyes in the animal kingdom can be found in species of stomatopod crustaceans (mantis shrimp), some of which have 12 different photoreceptor types, each sampling a narrow set of wavelengths ranging from deep ultraviolet to far red (300 to 720 nanometers). ... Why use 12 color channels when three or four are sufficient for fine color discrimination?",
+  "url2": "https://news.uq.edu.au/2008-03-20-new-type-vision-found-shrimp",
+  "quote2": "\"Us humans only have three colour channels,\" he said. \"These little guys have 12, and can see both linear and circular polarized light - it is remarkable.\" He said humans could see the effect of linear polarisation through things such as polarised sunglasses, which cut out glare for driving and boating.",
+  "newFact": "Mantis shrimp have 12 types of color photoreceptors, while we humans get by with just 3! Their eyes sample light from deep ultraviolet all the way to far red. They can even see polarized light, the glare-cutting effect we humans only notice through polarized sunglasses.",
+  "careAdvice": null,
+  "note": "16 receptor types corrected to 12. Polarized light saved via University of Queensland news (2008). Dropped the bullet-force punch (second point)."
+ },
+ {
+  "id": 14,
+  "title": "Axolotl Superpowers",
+  "newTitle": null,
+  "publisher": "Marine Biological Laboratory",
+  "url": "https://www.mbl.edu/research/research-organisms/axolotl",
+  "quote": "The axolotl (Ambystoma mexicanum), also known as the \"Mexican salamander,\" is a superhero of regeneration. Axolotls can functionally regenerate multiple body parts, including limbs, spinal cord, and parts of the brain and heart, without forming scar tissue. ... scientists studying these animals hope to decipher how the cells of axolotls respond to injury in the spinal cord, limbs, and skin at the cellular and molecular level, and how that process differs from healing in humans, who can't regenerate.",
+  "newFact": "Axolotls are regeneration superheroes! They can regrow lost limbs, their spinal cord, and even parts of their brain and heart, all without forming scar tissue. Scientists study how their cells respond to injury, hoping to learn why healing in humans works so differently and why we can't pull off the same trick.",
+  "careAdvice": null,
+  "note": "Whole heart corrected to parts of the heart. Nothing dropped."
+ },
+ {
+  "id": 16,
+  "title": "Honeybee Democracy",
+  "newTitle": "Honeybee House Hunters",
+  "publisher": "Cornell Chronicle",
+  "url": "https://news.cornell.edu/stories/2006/04/honeybee-decision-making-ability-rivals-any-department-committee",
+  "quote": "Seeley and his colleagues, however, have confirmed that they dance to report on real estate, too, as part of their group decision-making process. The better the housing site, the stronger the waggle dance, the researchers found, and that prompts other scouts to visit a recommended site. If they agree it's a good choice, they also dance to advertise the site and revisit it frequently. ... The better the site, the longer the bees waggle danced -- making 100 circuits for a first-rate site versus 12 for a mediocre one. ... As soon as about 15 bees were seen at one site, the swarm would take off for it, even though some scouts were still dancing strongly for the other site.",
+  "newFact": "When a honeybee swarm needs a new home, scout bees waggle dance to advertise the real estate they've found, dancing longer for better spots: 100 circuits for a first-rate site versus 12 for a mediocre one. Other scouts check the sites out, and once about 15 gather at one, the swarm takes off!",
+  "careAdvice": null,
+  "note": "Consensus vote replaced with the quorum of about 15 scouts (source says contest, not consensus); added dance circuit counts. Title changed since \"democracy\" is only an analogy the article floats."
+ },
+ {
+  "id": 22,
+  "title": "Dads Give Birth",
+  "newTitle": "Pregnant Dads",
+  "publisher": "Frontiers in Endocrinology (2026)",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13672188/",
+  "quote": "Syngnathid fish, the pipefishes, seadragons, and seahorses, provide a powerful system for disentangling these effects, because males, rather than females, carry the developing embryos. ... They have evolved a range of brooding forms analogous to those found in mammalian maternal systems, with the female transferring eggs to the male before fertilization ... We included the big-bellied seahorse Hippocampus abdominalis, with a fully enclosed vascularised brood pouch",
+  "newFact": "In seahorses, it's the dads who get pregnant! The female hands her eggs to the male before they are fertilized, and he carries the developing embryos. The big-bellied seahorse keeps them in a fully enclosed pouch. Seahorses aren't the only ones, though: their relatives, the pipefishes and seadragons, do it too.",
+  "careAdvice": null,
+  "note": "Dropped \"only animals\" (pipefishes and seadragons share male pregnancy) and \"until they hatch\"; title changed since the source says carry embryos, not give birth."
+ },
+ {
+  "id": 23,
+  "title": "Egg-Laying Mammal",
+  "newTitle": null,
+  "publisher": "Australian Museum",
+  "url": "https://australian.museum/learn/animals/mammals/platypus/",
+  "quote": "Along with echidnas, Platypuses are grouped in a separate order of mammals known as monotremes, which are distinguished from all other mammals because they lay eggs. ... During the egg incubation period, a female holds the eggs pressed by her tail to her belly, while curled up. ... After mating, a female will lay 1-3 eggs (usually 2) following a 21-days gestation period.",
+  "newFact": "The platypus is one of the few mammals that lays eggs! A mother lays 1 to 3 eggs, usually 2, then curls up and holds them pressed against her belly with her tail to keep them warm. Along with echidnas, platypuses are monotremes, the mammals set apart from all others by egg-laying.",
+  "careAdvice": null,
+  "note": "Kept the egg-laying point with incubation details; cut the venomous spur (male only, second point) and electroreception (third point)."
+ },
+ {
+  "id": 25,
+  "title": "Indestructible Water Bears",
+  "newTitle": null,
+  "publisher": "Life (2017)",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5492148/",
+  "quote": "When the surrounding water evaporates, tolerant tardigrades lose almost all body water and enter a metabolically inactive dehydrated state called anhydrobiosis. The dehydrated tardigrades withstand various extreme conditions that normally disallow the survival of most other organisms; for example, low and high temperatures (from -273 °C to nearly 100 °C), high hydrostatic pressure (7.5 GPa), immersion in organic solvent, and exposure to a high dose of irradiation. ... Furthermore, tardigrades are the first animals to have revived after exposure to outer space for 10 days.",
+  "newFact": "Tardigrades are tiny survival champs! When they dry out, they lose almost all their body water and shut down, and in that state they can handle temperatures from about minus 459 degrees F to nearly 212 degrees F, crushing pressure and heavy radiation. They were even the first animals to revive after 10 days in outer space!",
+  "careAdvice": null,
+  "note": "Hot limit corrected from 300 to nearly 212 degrees F (cold limit widened to the source's minus 459). Dropped \"dried out for decades\" (no drying time on the page)."
+ }
+]
