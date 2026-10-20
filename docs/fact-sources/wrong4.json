@@ -1,0 +1,107 @@
+[
+ {
+  "id": 74,
+  "title": "24 Eyes, Full Color",
+  "newTitle": "24 Eyes, No Brain",
+  "publisher": "Frontiers in Neuroanatomy (2022)",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9389615/",
+  "quote": "Cubomedusae, or box jellyfish, have a complex visual system comprising 24 eyes of four types. ... These image-forming eyes, the upper and lower lens eyes, share many structural similarities with vertebrate camera-type eyes such as a hemisphere-shaped retina made of ciliary photoreceptors, a single spherical lens at least partly focusing the light onto the retina, and an adjustable pupil in the lower lens eye",
+  "url2": "https://www.nationalgeographic.com/science/article/why-box-jellyfish-always-have-four-eyes-on-the-sky",
+  "quote2": "It’s an active, manoeuvrable predator, and it finds its way around with no fewer than 24 eyes. The eyes are grouped into four clusters called rhopalia, each containing six eyes. ... “The box jellyfish solution may thus be linked to the absence of a central brain, but it defeats the idea that a central brain is a prerequisite for advanced behaviour”, writes Garm.",
+  "newFact": "Box jellyfish have 24 eyes, grouped into four clusters of six. In each cluster, two are lens eyes that form images much like our own camera-type eyes, with a curved retina, a single lens and, in one of them, an adjustable pupil. Not bad for an animal with no central brain!",
+  "careAdvice": null,
+  "note": "Removed the false full color claim (lens eyes are color-blind); saved four clusters of six and no central brain from National Geographic."
+ },
+ {
+  "id": 75,
+  "title": "Regional Accents",
+  "newTitle": "Playgroup Accents",
+  "publisher": "Queen Mary University of London",
+  "url": "https://www.qmul.ac.uk/media/news/2012/se/goat-kids-develop-accents.html",
+  "quote": "The team studied four groups of pygmy goats, who were all full or half siblings. ... But the calls of kids raised in the same social groups were also similar to each other, and became more similar as the kids grew older. This suggests that goat kids modify their calls according their social surroundings, developing similar ‘accents’. ... in most other mammals (except, for example, bats and whales) vocalisations were thought to be genetically determined",
+  "newFact": "Goat kids pick up accents from their friends! In a study of pygmy goats, kids raised in the same social group made calls that sounded more and more alike as they grew older. That surprised scientists, because most mammal calls were thought to be set by genes.",
+  "careAdvice": null,
+  "note": "Accents are shared within social groups, not regions; title and text changed to match. Nothing dropped."
+ },
+ {
+  "id": 77,
+  "title": "Boiling Chemical Spray",
+  "newTitle": null,
+  "publisher": "National Geographic",
+  "url": "https://www.nationalgeographic.com/science/article/how-this-beetle-creates-500-explosions-per-second-in-its-bum",
+  "quote": "The liquid can reach up to 22 miles per hour, at temperatures of around 100 degrees Celsius. ... The reservoir chamber contains a solution of hydrogen peroxide and hydroquinones ... The enzymes react with the incoming chemicals in a violently explosive reaction ... The spray isn’t continuous. Instead, the beetle fires between 368 and 735 pulses every second.",
+  "url2": "https://pmc.ncbi.nlm.nih.gov/articles/PMC22274/",
+  "quote2": "The discharges are accompanied by audible detonations, and they have been shown to be potently deterrent",
+  "newFact": "Bombardier beetles carry a chemistry set in their abdomen! Under attack, they mix hydrogen peroxide and hydroquinones with enzymes in a violently explosive reaction and fire a spray at around 100 degrees C. It comes out in a rapid burst of 368 to 735 pulses every second, with audible detonations.",
+  "careAdvice": null,
+  "note": "Pulse rate corrected from up to 500 to 368 to 735 per second; popping sound saved as audible detonations from Eisner and Aneshansley (PNAS 1999)."
+ },
+ {
+  "id": 78,
+  "title": "Magpie Self-Awareness",
+  "newTitle": null,
+  "publisher": "PLoS Biology (2008)",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2517622/",
+  "quote": "Our findings provide the first evidence of mirror self-recognition in a non-mammalian species. ... Handling and somesthetic input was thus identical for all marks, but the black mark was practically not visible on the black feathers of the throat. ... These quantitative data are rather conservative as Gerti and Goldie removed the mark after a few minutes on most of the trials with a color mark and a mirror, and after removal of the mark, no mark-directed behaviors occurred",
+  "newFact": "Magpies were the first non-mammals to show evidence of recognizing themselves in a mirror. Scientists put a yellow or red mark on a bird's throat feathers, visible only in the mirror. Two magpies, Gerti and Goldie, usually got the mark off within a few minutes, then lost interest in the spot.",
+  "careAdvice": null,
+  "note": "\"Immediately\" changed to within a few minutes for two named birds; dropped the cleaner wrasse aside (second point, other animal, not on this source)."
+ },
+ {
+  "id": 87,
+  "title": "Singers of the Sea",
+  "newTitle": null,
+  "publisher": "National Park Service (Glacier Bay National Park & Preserve)",
+  "url": "https://www.nps.gov/glba/learn/nature/humpback-whale-fact-sheet.htm",
+  "quote": "Mature males sing long songs (~15 minutes) in their tropical breeding grounds as a display related to mating. In quiet acoustic conditions, humpback song can be heard approximately 50 miles away from the singer.",
+  "newFact": "Humpback whales really are the singers of the sea! Mature males sing long songs, about 15 minutes each, on their tropical breeding grounds as a display related to mating. In quiet waters, a humpback's song can carry roughly 50 miles from the singer. That is one long-distance serenade!",
+  "careAdvice": null,
+  "note": "Song length corrected from 20 to about 15 minutes; vague vast distances made 50 miles; dropped \"simply to communicate with fellow swimmers\"."
+ },
+ {
+  "id": 89,
+  "title": "Frog Rainmakers",
+  "newTitle": "Rain Makes Them Sing",
+  "publisher": "UF/IFAS Extension (EDIS)",
+  "url": "https://edis.ifas.ufl.edu/publication/UW259",
+  "quote": "Reproduction is largely stimulated by rainfall, especially warm summer rains such as those associated with tropical weather systems and thunderstorms. ... Calls Male Cuban treefrogs have a distinct raspy call that sounds like a squeaking door. ... In addition to their breeding calls, individual males will call from daytime retreat sites to advertise their presence. This \"rain call,\" as it is sometimes called, can be triggered by light rainfall during the day.",
+  "newFact": "Cuban treefrogs don't make it rain. Rain makes them sing! Males have a raspy call that sounds like a squeaking door, and some call from their daytime hiding spots. This \"rain call,\" as it is sometimes known, can be set off by a light shower during the day.",
+  "careAdvice": null,
+  "note": "Rebuilt: calls do not cause rain, rain triggers calling (the page's rain call); dropped the rainmaker nickname and heard from miles away (not found)."
+ },
+ {
+  "id": 91,
+  "title": "The Snack Time Ant",
+  "newTitle": null,
+  "publisher": "Science (2024)",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/39361762/",
+  "quote": "Fungus-farming ants cultivate multiple lineages of fungi for food ... We found that fungus-ant agriculture originated ~66 million years ago when the end-of-Cretaceous asteroid impact temporarily interrupted photosynthesis",
+  "url2": "https://www.smithsonianmag.com/smithsonian-institution/ants-farmed-fungi-in-the-wake-of-dinosaurs-demise-66-million-years-ago-180985193/",
+  "quote2": "Leafcutter ants today, for example, snip off leaves to take back to their nests and deposit them as food for the fungus that they then eat.",
+  "newFact": "Leafcutter ants are farmers! They snip off leaves and carry them home to feed a fungus, then eat the fungus they grow. And ants got into farming early: a 2024 study traced fungus-ant agriculture back about 66 million years, to just after the asteroid impact that ended the Cretaceous.",
+  "careAdvice": null,
+  "note": "\"Thousands of years before humans\" corrected to about 66 million years ago; leaf cutting saved from Smithsonian magazine; dropped the human comparison."
+ },
+ {
+  "id": 96,
+  "title": "The Purring Lemur",
+  "newTitle": null,
+  "publisher": "Folia Primatologica (2014)",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/25139722/",
+  "quote": "In the ring-tailed lemur (Lemur catta), both males and females purr, but only males were observed purring in agonistic contexts. ... 480 h of focal data were collected on 25 adult males from Beza Mahafaly Special Reserve, Madagascar ... My results indicate that the male ring-tailed lemur purr is used most frequently as an agonistic vocalization in male-male encounters, in addition to being used less frequently in other social contexts, including during tail-waving at females, resting, scent-marking, feeding and copulation. Dominant males have higher purring rates across social situations",
+  "newFact": "Ring-tailed lemurs purr, but not always to say \"I'm cozy.\" Both males and females purr, yet a study in Madagascar found males purr most during tense standoffs with other males. Top-ranking males purr more in every situation, from resting and feeding to tail-waving at females.",
+  "careAdvice": null,
+  "note": "Bonding and family angle replaced with the study's male standoff purr; narrowed to ring-tailed lemurs; dropped \"just like cats\"."
+ },
+ {
+  "id": 99,
+  "title": "Fluffy Fish Friends",
+  "newTitle": null,
+  "publisher": "Florida Museum of Natural History",
+  "url": "https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/clown-anemonefish/",
+  "quote": "Each fish forms a relationship with a specific sea anemone, acclimating its protective mucous to the anemone’s stinging tentacles. ... Anemones provide protection for these fish as well as their nests. In return the anemone may benefit from fish consumption of parasites and increased water circulation from the fanning action of the fish’s fins. ... The anemonefish will eat the dead tentacles of the anemone and any uneaten prey that is captured by the stinging tentacles of the anemone.",
+  "newFact": "Clownfish live among a sea anemone's stinging tentacles, safe inside a protective mucus coat they tune to their own host. The anemone guards the fish and its nest and even serves up leftovers. In return, the clownfish may eat the anemone's parasites and fan fresh water through it. Great roommates!",
+  "careAdvice": null,
+  "note": "Fixed the two-way protection and food claim: fish gets shelter and leftovers, anemone gets parasite removal and water flow. Nothing dropped."
+ }
+]
