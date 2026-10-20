@@ -1,0 +1,103 @@
+[
+ {
+  "id": 276,
+  "title": "The Dagger Toe",
+  "newTitle": null,
+  "publisher": "San Diego Zoo Wildlife Alliance",
+  "url": "https://animals.sandiegozoo.org/animals/cassowary",
+  "quote": "Each of this powerful bird's 3-toed feet has a dagger-like claw on the inner toe that is up to 4 inches (10 centimeters) long! The cassowary can slice open any predator or potential threat with a single swift kick. ... That long claw also comes in handy when digging for fallen fruit in the leaf litter. ... Cassowaries are frugivores that feed on the fruits of several hundred rainforest plants.",
+  "newFact": "Each of a cassowary's three-toed feet packs a dagger-like claw on the inner toe up to 4 inches long, and one swift kick can slice open a predator or other threat. Yet that terrifying blade doubles as a garden trowel, helping the fruit-loving bird dig fallen fruit out of the rainforest leaf litter.",
+  "careAdvice": null,
+  "note": "Claw now 'up to 4 inches' (was 'over'); covers all cassowaries per the page. Dropped 'cornered', 'shy' and 'vanish into the undergrowth' (no credible page found; Queensland safety page 403'd); kept fun via the fruit-digging claw."
+ },
+ {
+  "id": 279,
+  "title": "Eighteen Venomous Spines",
+  "newTitle": null,
+  "publisher": "NOAA Flower Garden Banks National Marine Sanctuary",
+  "url": "https://flowergarden.noaa.gov/education/invasivelionfish.html",
+  "quote": "Lionfish have 18 venomous spines. Thirteen spines are found at the front of the dorsal fin, two at the front edge of each pelvic fin, and one at the front edge of the anal fin. An encounter with a lionfish can have painful consequences for people and potential predators.",
+  "newFact": "Lionfish come armed with 18 venomous spines, laid out like a well-planned security system: thirteen line the front of the dorsal fin, two guard the front edge of each pelvic fin, and one sits at the front of the anal fin. Brush against them and the encounter can be painful for people and predators alike.",
+  "careAdvice": null,
+  "note": "Cut to the spine point; dropped the wrong '70 reef species' count, plus 'rarely fatal', 'most damaging invasive' and the 1985 Florida invasion (second point)."
+ },
+ {
+  "id": 290,
+  "title": "Stolen Stingers",
+  "newTitle": null,
+  "publisher": "Frontiers in Zoology (2022)",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9016961/",
+  "quote": "One form of defensive sequestration involves animals that sequester stinging organelles (nematocysts) from their cnidarian prey. While it has been hypothesized that nematocysts are identified by specialized phagocytic cells for internalization and storage, little is known about the cellular and developmental mechanisms of this process in any metazoan lineage. ... Like other nudibranchs, B. stephanieae sequesters nematocysts in a structure called the cnidosac that is found at the tips of finger-like dorsal projections called cerata. ... Only nematocysts ... from the anemone tissue are sequestered inside cnidosacs, whereas spirocysts ... and dinoflagellates remain in the digestive gland in B. stephanieae.",
+  "newFact": "Some nudibranchs eat stinging sea anemones and keep the prey's stinging capsules as weapons instead of digesting them. The stolen stingers travel from the gut into sacs at the tips of finger-like projections on the slug's back, called cerata, and the slug is picky: other capsule types stay behind. How it selects and stores them is still poorly understood.",
+  "careAdvice": null,
+  "note": "Open question now selection and storage (not keeping them from firing); 'jellyfish' replaced with sea anemones; added the picky-sorting detail from the same paper."
+ },
+ {
+  "id": 295,
+  "title": "Eyes That Swivel Forward",
+  "newTitle": null,
+  "publisher": "Monterey Bay Aquarium Research Institute (MBARI)",
+  "url": "https://www.mbari.org/news/researchers-solve-mystery-of-deep-sea-fish-with-tubular-eyes-and-transparent-head/",
+  "quote": "The barreleye ( Macropinna microstoma ) has extremely light-sensitive eyes that can rotate within a transparent, fluid-filled shield on its head. ... Researchers at the Monterey Bay Aquarium Research Institute recently solved the half-century-old mystery of a fish with tubular eyes and a transparent head. ... Furthermore, until now, most marine biologists believed that barreleye's eyes were fixed in their heads, which would allow them to only look upward. ... The fish's eyes would rotate to help the fish keep its \"eyes on the prize,\" while its transparent shield would protect the fish's eyes from the siphonophore's stinging cells. ... Copeia, 2008(4): 780-784.",
+  "newFact": "The barreleye fish wears a transparent, fluid-filled shield over its head, with its two tubular eyes visible inside. For half a century, scientists thought those eyes were stuck staring straight up, until a 2008 study showed they rotate forward to keep its eyes on the prize. The shield may protect them as it picks prey from stinging siphonophore tentacles.",
+  "careAdvice": null,
+  "note": "Study year 2009 corrected to 2008 (Copeia paper; MBARI release was 2009); added the page's half-century mystery and 'eyes on the prize'."
+ },
+ {
+  "id": 296,
+  "title": "Sprinting Across the Surface",
+  "newTitle": null,
+  "publisher": "National Geographic",
+  "url": "https://www.nationalgeographic.com/animals/article/news-jesus-lizards-basilisks-walk-water",
+  "quote": "The lizard is often called the Jesus Christ lizard in Central America because of its seeming ability to walk on water. ... the lizards generate force for support during the slap phase, in which the lizards' foot plunges straight down, pushing water down and away from the foot while creating a pocket of air surrounding the foot. ... they can run across water on their hind limbs at about 5 feet (1.5 meters) a second for a distance of approximately 15 feet (4.5 meters) before they sink to all fours and swim.",
+  "url2": "https://www.nationalgeographic.com/animals/reptiles/facts/green-basilisk-lizard",
+  "quote2": "To accomplish this, they have long toes on their rear feet with fringes of skin that unfurl in the water, increasing surface area. As they rapidly churn their legs, they slap their splayed feet hard against the water, creating a tiny air pocket that keeps them from sinking, provided they maintain their speed.",
+  "newFact": "Nicknamed the Jesus Christ lizard, the basilisk can sprint across water on its hind legs. Fringes of skin on its long rear toes unfurl to add surface area, and each foot slaps straight down, trapping a pocket of air that holds it up. It covers about 4.5 meters at roughly 1.5 meters a second before sinking to swim.",
+  "careAdvice": null,
+  "note": "Distance 20 m corrected to about 4.5 m; toe fringes saved from NatGeo's green basilisk page (skin, not scales); dropped '20 steps per second' (a grebe figure)."
+ },
+ {
+  "id": 297,
+  "title": "Nursing Without Milk",
+  "newTitle": null,
+  "publisher": "Journal of Experimental Biology (2010)",
+  "url": "https://researchportal.plymouth.ac.uk/en/publications/biparental-mucus-feeding-a-unique-example-of-parental-care-in-an--2/",
+  "quote": "The Amazonian cichlid Symphysodon spp. (discus fish) is unusual among fish species, in that both parents provide offspring with mucus secretions to feed from after hatching. This extensive provision of care, which can last up to a month ... A peak in mucus antibody provision was seen as offspring reached the free-swimming stage, suggesting a role analogous to colostrum provision in mammals. Mucus protein content was lowest during the second and third weeks of free swimming, and a weaning period, similar to that seen in mammalian parental care, occurred when the offspring had been free swimming for ~3 weeks.",
+  "newFact": "Discus fry skip baby food and snack straight off Mom and Dad. Both parents ooze skin mucus for the young to bite, care that can last up to a month. A 2010 study found the mucus spikes with antibodies as fry start swimming, much like mammal colostrum, and the family even goes through a weaning period at about three weeks.",
+  "careAdvice": null,
+  "note": "Replaced the 'hormonally regulated milk' comparison with the colostrum and weaning comparisons; dropped 'minutes at a time' and 'one of the only documented cases'."
+ },
+ {
+  "id": 298,
+  "title": "A Stripe That Hides You",
+  "newTitle": "Neon on a Dimmer Switch",
+  "publisher": "Boletim do Instituto de Pesca (2018)",
+  "url": "https://institutodepesca.org/index.php/bip/article/view/1319",
+  "quote": "Loss of skin color was observed when cardinal tetra was exposed to intense light. The melanic and neon stripes became pale due to a reduction in melanophores densities. On the other hand, the color of the red stripe was intensified due to the proliferation of erythrophores. At low light levels (0 to 250 lux), the melanophores (with dispersed melanosomes) proliferate in the black and neon stripes resulting in a more vibrant skin color. We suggest that in nature, the paleness of the skin may represent a camouflage strategy during the hours of the day with greater luminosity in the black water of the Rio Negro. Fading the skin color can help this species to visually confuse potential predators.",
+  "newFact": "A cardinal tetra's famous stripes come with a dimmer switch. In low light its dark and neon blue stripes grow more vibrant, but under intense light they fade pale while the red stripe deepens. Researchers suggest that fading may be camouflage during the brightest hours in the Rio Negro's black water, helping the fish confuse predators.",
+  "careAdvice": null,
+  "note": "Camouflage is now the suggested fading of the stripes in bright light, not reflected light or false targets; 'actually' softened to a suggestion; title changed since the stripe itself is not shown to hide the fish."
+ },
+ {
+  "id": 300,
+  "title": "Two Gliders, No Relation",
+  "newTitle": null,
+  "publisher": "Nature (2024)",
+  "url": "https://doi.org/10.1038/s41586-024-07305-3",
+  "quote": "Patagia are specialized skin membranes that enable animals to glide ... patagia have arisen convergently among diverse mammals, including different species of rodents, bats, colugo and Australian marsupials. ... Notably, patagia have evolved independently in three closely related marsupial species, all members of the superfamily Petauroidea. ... Together, our results suggest that patagia repeatedly originated through a process of convergent genomic evolution, whereby regulation of Emx2 was altered by distinct cis-regulatory elements in independently evolved species.",
+  "newFact": "A flying squirrel and a sugar glider both ride the air on a stretchy skin membrane, yet each lineage built its own: gliding membranes evolved separately in rodents, bats, colugos and Australian marsupials. Even three marsupial gliders invented theirs independently, and a 2024 study found every one got there by rewiring the switches of the same gene, Emx2.",
+  "careAdvice": null,
+  "note": "Replaced 'different genetic path' with the Emx2 finding (same gene, different switches, marsupials only); dropped 'exact same way' and 'wrist to ankle'. Page says rodents, not flying squirrels by name."
+ },
+ {
+  "id": 301,
+  "title": "70 Years in Cancer Labs",
+  "newTitle": "Lab Stars Since the 1920s",
+  "publisher": "Pigment Cell & Melanoma Research (2010)",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2881310/",
+  "quote": "Genetic hybrids between platyfish and swordtails, different species of the genus Xiphophorus, have been studied since the 1920s to identify genetic determinants of pigmentation and melanoma formation. ... The most venerable experimental melanoma model, Xiphophorus, has been studied for over eight decades ... these heavily pigmented hybrids, about 25% of total backcross progeny, spontaneously develop exophytic, nodular, invasive melanomas.",
+  "newFact": "Platies have been melanoma lab stars since the 1920s, when scientists found that crossing spotted platyfish with swordtails produced hybrids that grew the cancer on their own. In the classic backcross, about a quarter of the offspring turn heavily pigmented and develop invasive melanomas, making these little fish the most venerable experimental melanoma model.",
+  "careAdvice": null,
+  "note": "Dropped the unsupported 'essentially no risk' for pet platies; 'over 70 years' now 'since the 1920s'; 'oldest model for any cancer' narrowed to the review's 'most venerable experimental melanoma model'."
+ }
+]
