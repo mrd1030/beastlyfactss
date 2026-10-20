@@ -13,6 +13,106 @@ borrowing another page's photo got their own on 2026-10-18.
 The five October heroes and the five parked facts all landed the same day.
 `check-images.mjs` passes on 1,674 referenced paths.
 
+## Replacing the Adobe Stock photos (started 2026-10-20)
+
+In July 2026 a session licensed 89 fact photos from Adobe Stock's free tier
+(commits eca5ff66, c5905311, 60e3779a, 3175517d, e6f22651, e1fbf1f4, b66218fb,
+715d9076). The license allows them on the site, but not offering them for reuse,
+and it may require a "[Contributor]/stock.adobe.com" credit for editorial use.
+The owner is replacing them with their own generated photos, five prompts at a
+time, saved over the same filename so no map changes. Take each line off this
+list when its photo lands.
+
+- 3 Parrot, "Parrots Past Eighty": `parrot.jpg`
+- 4 Red Panda, "Not-So-Related Pandas": `red-panda.jpg`
+- 7 Dolphin, "Dolphin Name Tags": `dolphin.jpg`
+- 8 Snake, "Tongue Sniffers": `snake.jpg`
+- 9 Cat, "Headbutt Means Trust": `cat.jpg`
+- 10 Crow, "Crow Detectives": `crow.jpg`
+- 11 Jellyfish, "Immortal Jellyfish": `jellyfish.jpg`
+- 12 Mantis Shrimp, "Mantis Shrimp Vision": `mantis-shrimp.jpg`
+- 13 Elephant, "Elephants Mourn": `elephant.jpg`
+- 15 Wombat, "Wombat Cube Poop": `wombat.jpg`
+- 16 Honeybee, "Honeybee House Hunters": `honeybee.jpg`
+- 17 Sea Otter, "Sea Otter Hand-Holding": `sea-otter.jpg`
+- 18 Gecko, "Gecko Toe Magic": `gecko.jpg`
+- 19 Komodo Dragon, "Virgin Birth Dragons": `komodo-dragon.jpg`
+- 20 Sloth, "The 40-Minute Myth": `sloth.jpg`
+- 22 Seahorse, "Pregnant Dads": `seahorse.jpg`
+- 23 Platypus, "Egg-Laying Mammal": `platypus.jpg`
+- 24 Capybara, "The Chillest Animal": `capybara.jpg`
+- 25 Tardigrade, "Indestructible Water Bears": `tardigrade.jpg`
+- 26 Narwhal, "Unicorn of the Sea": `narwhal.jpg`
+- 27 Koala, "22-Hour Sleepers": `koala.jpg`
+- 28 Butterfly, "Taste With Their Feet": `butterfly.jpg`
+- 29 Starfish, "Arm Regeneration Masters": `starfish.jpg`
+- 30 Hummingbird, "Super-Fast Hearts": `hummingbird.jpg`
+- 31 Alpaca, "Spit Happens": `alpaca.jpg`
+- 32 Pangolin, "Walking Pinecones": `pangolin.jpg`
+- 34 Giraffe, "The Big Heart Myth": `giraffe.jpg`
+- 35 Polar Bear, "Black Skin, Clear Fur": `polar-bear.jpg`
+- 36 Armadillo, "Identical Quadruplets": `armadillo.jpg`
+- 37 Wood Frog, "Frozen But Alive": `wood-frog.jpg`
+- 38 Pufferfish, "Balloon Defense": `pufferfish.jpg`
+- 43 Chameleon, "Color Means Communication": `chameleon.jpg`
+- 44 Dog, "Three Eyelids": `dog.jpg`
+- 57 Tortoise, "The Century Club": `tortoise.jpg`
+- 59 Shark, "Electric Sense": `shark.jpg`
+- 61 Hippo, "Hippo Sunscreen": `hippo.jpg`
+- 62 Leafcutter Ant, "Ants Farm Fungi": `leafcutter-ant.jpg`
+- 64 Swift, "Ten Months Aloft": `swift.jpg`
+- 65 Pistol Shrimp, "Finger-Snapping Shrimp": `pistol-shrimp.jpg`
+- 66 Zebra, "No Two Stripes Alike": `zebra.jpg`
+- 67 Wolf, "The Willow Story, Revisited": `wolf.jpg`
+- 68 Deer, "Antlers in a Hurry": `deer.jpg`
+- 69 Clownfish, "Every Clownfish Starts Male": `clownfish.jpg`
+- 70 Honey Badger, "Snake Venom? No Thanks": `honey-badger.jpg`
+- 71 Lyrebird, "Nature's Sound Thief": `lyrebird.jpg`
+- 73 Mimic Octopus, "The Ultimate Impostor": `mimic-octopus.jpg`
+- 75 Goat, "Playgroup Accents": `goat.jpg`
+- 78 Magpie, "Magpie Mirror Test": `magpie.jpg`
+- 84 Cricket, "Dancing Crickets": `cricket.jpg`
+- 85 African Grey Parrot, "The Bashful Parrot": `african-grey-parrot.jpg`
+- 87 Humpback Whale, "Singers of the Sea": `humpback-whale.jpg`
+- 90 Green Sea Turtle, "Reptile Alarm Clock": `green-sea-turtle.jpg`
+- 94 Sea Sponge, "Surprising Sea Sponges": `sea-sponge.jpg`
+- 96 Lemur, "The Purring Lemur": `lemur.jpg`
+- 100 Mayfly, "A Day in the Life": `mayfly.jpg`
+- 101 Kangaroo, "Bouncing Buddies": `kangaroo.jpg`
+- 103 Kangaroo Rat, "Swimmers in the Desert": `kangaroo-rat.jpg`
+- 104 Sphynx Cat, "No Mustache Required": `sphynx-cat.jpg`
+- 106 Tamarin Monkeys, "Daddy Day Care": `tamarin-monkeys.jpg`
+- 107 Sea Turtles, "Egg Layers of Mystery": `sea-turtles.jpg`
+- 110 Red-footed Booby, "Treetop Booby": `red-footed-booby.jpg`
+- 111 Box Turtle, "Survival Specialists": `box-turtle.jpg`
+- 114 Kookaburra, "No Laughing Matter": `kookaburra.jpg`
+- 115 Electric Eel, "Electric Eel Shock": `electric-eel.jpg`
+- 117 Cheetah, "Can't Stop Purring": `cheetah.jpg`
+- 120 California Sea Lion, "Rhythm-Keeping Sea Lion": `california-sea-lion.jpg`
+- 121 Owl, "Tube-Eyed Head Rotators": `owl.jpg`
+- 122 Reindeer, "Arctic Eye-Mirror Shifters": `reindeer.jpg`
+- 123 Chicken, "Miracle Mike the Headless Rooster": `chicken.jpg`
+- 124 Wallace's Flying Frog, "Gliding Rainforest Acrobat": `wallaces-flying-frog.jpg`
+- 128 Gentoo and Adélie Penguin, "Pebble-Pinching Penguins": `penguin.jpg`
+- 129 Wandering Albatross, "Locked-In Gliders": `wandering-albatross.jpg`
+- 130 Woodpecker, "Small Brain, Zero Concussions": `woodpecker.jpg`
+- 131 Bar-Tailed Godwit, "The Nonstop Flyer": `bar-tailed-godwit.jpg`
+- 132 Peregrine Falcon, "Fastest Animal Alive": `peregrine-falcon.jpg`
+- 133 Naked Mole Rat, "Cancer-Proof and Cold-Blooded": `naked-mole-rat.jpg`
+- 135 Sea Cucumber, "Self-Eviction Defense": `sea-cucumber.jpg`
+- 136 Ocean Sunfish, "300 Million Eggs, None Found": `ocean-sunfish.jpg`
+- 137 Giant Squid, "Eyes Built for Whale-Watching": `giant-squid.jpg`
+- 139 Tuatara, "The Reptile With a Third Eye": `tuatara.jpg`
+- 140 American Alligator, "All Bite, No Bark": `american-alligator.jpg`
+- 141 Draco Lizard, "The Flying Dragon": `draco-lizard.jpg`
+- 143 Bat, "Built-In Sonar": `bat.jpg`
+- 144 Elephant Seal, "Two-Hour Breath Holders": `elephant-seal.jpg`
+- 146 Basenji, "The Dog That Doesn't Bark": `basenji.jpg`
+- 175 Vulture, "A Hazmat Suit on the Inside": `vulture.jpg`
+- 177 Dung Beetle, "Steered By the Milky Way": `dung-beetle.jpg`
+- 178 Sperm Whale, "The Loudest Animal Alive": `sperm-whale.jpg`
+- 354 Orb Weaver Spider, "Eats Its Own Web": `common-house-spider.jpg`
+
 ## Guide heroes still needed
 
 None. All 17 animal-day heroes (docs/NOV_DEC_ANIMAL_DAYS.md) landed on
