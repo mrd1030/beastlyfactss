@@ -1,0 +1,101 @@
+[
+ {
+  "id": 149,
+  "title": "Not a Suffocation Squeeze",
+  "newTitle": "The Blood-Stopping Squeeze",
+  "publisher": "Journal of Experimental Biology (2015)",
+  "url": "https://doi.org/10.1242/jeb.121384",
+  "quote": "The results demonstrate that within 6 s of being constricted, peripheral arterial blood pressure (PBP) at the femoral artery dropped to 1/2 of baseline values while central venous pressure (CVP) increased 6-fold from baseline during the same time. ... These results are the first to document the physiological response of prey to constriction and support the hypothesis that snake constriction induces rapid prey death due to circulatory arrest.",
+  "newFact": "A boa's squeeze is a circulation crusher. In a 2015 study led by biologist Scott Boback, boa coils cut an anesthetized rat's arterial blood pressure in half within just six seconds, while pressure in its veins shot up sixfold. The results back the idea that constriction kills fast by shutting down blood circulation.",
+  "careAdvice": null,
+  "note": "Replaced 'faints within seconds' with the measured 6-second blood pressure drop in anesthetized rats; retitled since the paper never directly rules out suffocation; dropped 'well before it would ever suffocate' and the hind-leg spurs (unsupported, second point)."
+ },
+ {
+  "id": 151,
+  "title": "The One-Leg Trick",
+  "newTitle": null,
+  "publisher": "Biology Letters (2017)",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5454233/",
+  "quote": "Flamingos (Phoenicopteridae) often stand and sleep on one leg for long periods ... First, we demonstrated that flamingo cadavers could passively support body weight on one leg without any muscle activity ... By contrast, the cadaveric flamingo could not be stably held in a two-legged pose ... Our results suggest that flamingos engage a passively engaged gravitational stay apparatus (proximally located) for weight support during one-legged standing.",
+  "newFact": "Flamingos often stand, and even sleep, on one leg for long periods, and it may be the low-effort choice. In a 2017 study, flamingo bodies balanced on one leg without any muscle activity at all, held up by a passive support in the upper leg joints. Yet the same bodies couldn't be propped up stably on two legs!",
+  "careAdvice": null,
+  "note": "Swapped the heat-saving claim for the paper's reduced-muscle-effort finding and the joint lock for a passive stay apparatus; 'for hours' became 'long periods'; added the two-legs-fail twist from the same paper."
+ },
+ {
+  "id": 158,
+  "title": "Zero to Sixty in Seconds",
+  "newTitle": "Zero to 45 in 2.5 Seconds",
+  "publisher": "Smithsonian's National Zoo and Conservation Biology Institute",
+  "url": "https://nationalzoo.si.edu/animals/cheetah",
+  "quote": "Cheetahs can accelerate from zero to 45 miles per hour (zero to 72 kilometers per hour) in just 2.5 seconds. ... At top speed, they advance 23 feet (7 meters) in a single stride and complete four strides per second. That top speed averages between 60 and 70 miles per hour (96 and 112 kilometer per hour) and can be maintained for only about 300 yards (274 meters). ... Full sprints last about 20 seconds.",
+  "newFact": "Cheetahs are acceleration champions, going from a standstill to 45 mph in just 2.5 seconds. At top speed, 60 to 70 mph, they cover 23 feet in a single stride and take four strides every second. But the burst can't last: they hold that pace for only about 300 yards, and a full sprint lasts about 20 seconds.",
+  "careAdvice": null,
+  "note": "Fixed 0 to 60 in 3 s to 0 to 45 in 2.5 s and retitled; replaced '20-30 seconds before overheating' with 300 yards and about 20 seconds; dropped 'faster than most sports cars' and the claw comparison (unsupported, second point)."
+ },
+ {
+  "id": 162,
+  "title": "A Million Hairs Per Inch",
+  "newTitle": null,
+  "publisher": "Monterey Bay Aquarium",
+  "url": "https://www.montereybayaquarium.org/animals-the-ocean/animals-a-to-z/sea-otter",
+  "quote": "Unlike other marine mammals, the sea otter doesn't have a thick layer of blubber. To stay warm in chilly ocean waters, they have the world's densest fur, at its thickest, this two-layer fur is made up of more than a million hairs per square inch. For reference, you've probably got 100,000 hairs or less on your whole head! ... an otter spends many hours a day cleaning and grooming. Their grooming coats the fur with natural oils from their skin and fluffs it up with insulating air bubbles.",
+  "newFact": "Sea otters have the world's densest fur: at its thickest, more than a million hairs per square inch. For comparison, you've probably got 100,000 hairs or fewer on your whole head! With no thick blubber layer, otters spend many hours a day grooming, slicking it with skin oils and fluffing it up with insulating air bubbles.",
+  "careAdvice": null,
+  "note": "'Up to a million' became 'more than a million'; dropped 'their only insulation' (the page also credits a high metabolism); added the page's human-head comparison."
+ },
+ {
+  "id": 168,
+  "title": "Forever Young, Forever Underwater",
+  "newTitle": null,
+  "publisher": "San Diego Zoo Wildlife Alliance",
+  "url": "https://animals.sandiegozoo.org/animals/axolotl",
+  "quote": "Unlike other salamanders, axolotls are neotenic, meaning they keep juvenile characteristics into adulthood. Axolotls remain aquatic (like larvae) their entire life. Though they develop functional lungs, they use prominent, feathery gills to breathe underwater. Like youngsters, they retain external gills, a tail, and a body fin, and lack movable eyelids. ... While they use their gills to breathe underwater, they may pop up to the surface for a quick gulp of air from time to time.",
+  "newFact": "Axolotls never grow up in the usual salamander sense. They're neotenic, keeping baby features for life: feathery external gills, a tail, a body fin and no movable eyelids. They stay aquatic their whole lives too, and though they do develop working lungs, they breathe underwater with those frilly gills, popping up now and then for a quick gulp of air.",
+  "careAdvice": null,
+  "note": "Dropped the wrong 'one place, a shrinking canal system' range line (second point; the source says three sites in Xochimilco and Chalco); added the retained juvenile traits and the air-gulping detail."
+ },
+ {
+  "id": 169,
+  "title": "The Alpha Wolf Myth",
+  "newTitle": null,
+  "publisher": "Canadian Journal of Zoology (1999)",
+  "url": "https://wolf.org/wp-content/uploads/2013/09/267alphastatus_english.pdf",
+  "quote": "These captive packs were usually composed of an assortment of wolves from various sources placed together and allowed to breed at will (Schenkel 1947 ...). ... In captive packs, the unacquainted wolves formed dominance hierarchies featuring alpha, beta, omega animals, etc. ... In nature, however, the wolf pack is not such an assemblage. Rather, it is usually a family ... including a breeding pair and their offspring of the previous 1-3 years ... I conclude that the typical wolf pack is a family, with the adult parents guiding the activities of the group",
+  "newFact": "The famous 'alpha wolf' came from captive packs: unrelated wolves from various sources placed together, which formed ladders of alphas, betas and omegas. Wild packs are different. After 13 summers watching wolves on Ellesmere Island, biologist L. David Mech concluded the typical pack is simply a family, a breeding pair and their offspring, with the parents leading the way.",
+  "careAdvice": null,
+  "note": "Removed the '1930s' date, 'the same biologist who coined the term' (Mech did not coin it), the bestselling 1970 book and the retraction campaign (one search found only forum and conflicting reports, so dropped)."
+ },
+ {
+  "id": 170,
+  "title": "Milk Without Nipples",
+  "newTitle": null,
+  "publisher": "Australian Museum",
+  "url": "https://australian.museum/learn/animals/mammals/platypus/",
+  "quote": "When the young hatch, the female starts secreting milk and the young Platypuses suckle from the two milk patches covered by fur on the female's abdomen. ... She then incubates the eggs for possibly 10 days, after which the lactation period lasts for 3-4 months before the young emerge from the burrow. ... Monotremes are different from other mammals because they lay eggs and have no teats.",
+  "newFact": "Platypuses don't have nipples. Monotremes, the egg-laying mammals, have no teats at all, so once the eggs hatch, the mother starts secreting milk from two fur-covered milk patches on her belly, and the babies suckle right from those furry patches. The milk keeps flowing for three to four months before the youngsters leave the burrow.",
+  "careAdvice": null,
+  "note": "Replaced milk pooling in grooves to be lapped up with suckling from two fur-covered milk patches; dropped 'sweat' (one search showed it is only a figure of speech, no credible source); added the 3 to 4 month lactation."
+ },
+ {
+  "id": 174,
+  "title": "2,000 Teeth and Counting",
+  "newTitle": "Spare Teeth on Standby",
+  "publisher": "Proceedings of the National Academy of Sciences (2013)",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3670376/",
+  "quote": "Adult alligators have 20 teeth in each quadrant ... A small (replacement) tooth grows under each mature (functional) tooth ... Crocodilians frequently lose their teeth; each tooth is replaced about one time per year ... Because crocodilians are long-lived, they may replace each tooth about 50 times",
+  "newFact": "Alligators never run out of teeth. An adult has 80 of them, 20 in each quarter of the jaws, and a small replacement tooth is already growing under every working one. Each tooth gets swapped out about once a year, and because these reptiles live so long, each one may be replaced about 50 times!",
+  "careAdvice": null,
+  "note": "Dropped the unsupported '2,000 to 3,000 teeth' total and retitled; 'the moment it wears down or snaps off' became about once a year; added 20 per quarter and about 50 replacements per tooth."
+ },
+ {
+  "id": 176,
+  "title": "Bloody Generous",
+  "newTitle": null,
+  "publisher": "Proceedings of the Royal Society B (2013)",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3574350/",
+  "quote": "Common vampire bats often regurgitate food to roost-mates that fail to feed. ... Food received was the best predictor of food given across dyads ... dyads that share food performed more allogrooming on non-test days than non-sharing dyads. (Discussion favors long-term social bonds involving mutual exchange of both food and grooming rather than short-term turn-taking or calculated reciprocity.)",
+  "newFact": "Vampire bats that come home hungry often get bailed out by a roost-mate, who regurgitates a meal of blood for them. In a captive study, the best predictor of which bat a donor fed was whether that bat had fed it before, and sharing pairs groomed each other more. It looks less like keeping score and more like lasting friendship.",
+  "careAdvice": null,
+  "note": "Cut 'skip your turn and the colony remembers' (the paper favors long-term bonds over turn-taking, no colony memory); softened 'usually only' to 'best predictor'."
+ }
+]
