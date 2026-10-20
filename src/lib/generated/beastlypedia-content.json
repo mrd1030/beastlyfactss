@@ -102,7 +102,7 @@
       {
         "id": 259,
         "title": "Fur on the Soles of Its Feet",
-        "fact": "The undersides of a fennec's feet are covered in thick fur, right over the pads. It works as insulation on sand hot enough to burn an unprotected foot, and it spreads the animal's weight so it can move across a loose surface without sinking. The same feet dig fast. A fennec can put itself out of sight underground in a few seconds, and dens often run several meters with more than one way out.",
+        "fact": "The undersides of a fennec's feet are thickly furred, like a built-in pair of desert boots. On scorching sand that fur does two jobs at once: it shields the feet from the extreme heat of the ground, and it gives the fox grip when it sprints across a loose, shifting surface.",
         "category": "Mammals",
         "image": "/assets/facts/fennec-fox-3.jpg"
       }
@@ -242,7 +242,7 @@
       {
         "id": 213,
         "title": "The Eighth Neck Bone",
-        "fact": "Giraffes have seven neck vertebrae, the same as you. The part that gets left out is that anatomists have argued for decades over whether seven is the honest count. The current view is that the first thoracic vertebra has been functionally converted into a neck bone: it still carries ribs, so it is technically not cervical, but it moves with the neck and is built like one.",
+        "fact": "Giraffes have seven neck vertebrae, the same as you, but the bone right behind them moonlights as an eighth. The first thoracic vertebra still carries movable ribs, so officially it belongs to the chest. Yet it is shaped like a neck bone and bends far more than its chest neighbors, doing the job of an extra neck joint.",
         "category": "Mammals",
         "image": "/assets/facts/giraffe-6.jpg"
       }
@@ -747,7 +747,7 @@
       {
         "id": 274,
         "title": "The Molar That Turns Sideways",
-        "fact": "A wolverine has an upper molar set roughly 90 degrees inward, turning the back of its jaw into a shearing tool. That rotation is the difference between finding a carcass frozen solid in midwinter and being able to eat one. It lets an animal of about 15 kilograms open bone and take marrow that other scavengers walk away from, which is most of how a wolverine gets through a northern winter.",
+        "fact": "Peek inside a wolverine's mouth and you will find upper molars turned 90 degrees inward. That twist is the calling card of the whole weasel family, but in the wolverine it pays off big: it helps this scavenger crush bones and chew through frozen tissue from the carcasses it finds.",
         "category": "Mammals",
         "image": "/assets/facts/wolverine.jpg"
       },
@@ -869,14 +869,14 @@
       {
         "id": 285,
         "title": "It Bites and Holds On",
-        "fact": "Most vipers strike, inject and let go, then track the animal down once the venom has worked. The Gaboon viper often does not let go. It bites and keeps hold, which for an ambush predator on a forest floor means prey is less likely to stagger off somewhere it cannot follow. The same behavior is what makes a bite on a person so much worse than the fang length alone suggests.",
+        "fact": "The Gaboon viper is an ambush hunter that lies perfectly still under the leaf litter on the forest floor, waiting for prey to wander past. When it strikes, it bites, injects venom and then simply hangs on, holding its victim until it dies. After that, dinner goes down whole, headfirst.",
         "category": "Reptiles",
         "image": "/assets/facts/gaboon-viper-2.jpg"
       },
       {
         "id": 286,
         "title": "It Moves in a Straight Line",
-        "fact": "A Gaboon viper is heavy enough that the side-to-side motion most snakes use works badly for it, so it travels in a straight line instead, driving itself forward with the belly scales in slow waves. The effect is closer to a caterpillar than a snake. It is unhurried and almost silent, which suits an animal whose entire strategy is to be somewhere prey does not expect and to have been there for a long time already.",
+        "fact": "Gaboon vipers can skip the classic side-to-side slither and travel in a straight line instead, pushing forward with waves of muscle contraction along the belly, much like an earthworm. It is slow going, but a straight path makes less noise, which is exactly what you want when sneaking up on dinner.",
         "category": "Reptiles",
         "image": "/assets/facts/gaboon-viper-3.jpg"
       }
@@ -910,7 +910,7 @@
       {
         "id": 260,
         "title": "Heaviest, Not Longest",
-        "fact": "The green anaconda is the heaviest snake alive and routinely gets called the biggest, which is only half right. Reticulated pythons grow longer, past seven meters, but an anaconda is built on a completely different scale of thickness and can pass 100 kilograms where a python of similar length is nowhere near it. Reliable measurements are rarer than the stories suggest. Claims above nine meters have circulated for over a century without one being confirmed.",
+        "fact": "The green anaconda is the heaviest snake alive, but not the longest. Reticulated pythons grow longer and slimmer, while anacondas are pure bulk: a 5.2 meter anaconda weighs about as much as a 7.3 meter python. The heaviest anaconda on record tipped the scales at 227 kilograms, measuring 8.43 meters long and 1.11 meters around.",
         "category": "Reptiles",
         "image": "/assets/facts/green-anaconda.jpg"
       },
@@ -924,7 +924,7 @@
       {
         "id": 262,
         "title": "It Gives Birth, It Does Not Lay Eggs",
-        "fact": "Anacondas are viviparous. Females carry their young internally and give birth to live snakes, often twenty to forty at a time, each already around half a meter long and able to swim and hunt immediately. There is no parental care after that. Females are also far larger than males, which is unusual enough among snakes to be worth saying plainly: a big female can be several times the weight of any male she breeds with.",
+        "fact": "Green anacondas skip the eggs entirely. Females give birth to live young, and they do it in the water, usually 20 to 40 babies at a time. Bigger mothers tend to have bigger litters, and the largest on record was a whopping 82. Females breed only every other year, likely because all that effort is so draining.",
         "category": "Reptiles",
         "image": "/assets/facts/green-anaconda-3.jpg"
       }
@@ -992,7 +992,7 @@
       {
         "id": 263,
         "title": "It Is Not a Separate Species",
-        "fact": "The blue poison dart frog is one of the most photographed frogs on Earth and it is not its own species. It is a color morph of Dendrobates tinctorius, a widespread South American frog whose populations look startlingly different from one patch of forest to the next. The blue form comes from isolated forest islands in southern Suriname, cut off in savannah, and the name azureus it was given as a species is now treated as one of those local forms rather than a species boundary.",
+        "fact": "The blue poison dart frog is not its own species. Described in 1969 as Dendrobates azureus, it was later folded into Dendrobates tinctorius as a color morph. That electric blue turns up only on a few forest islands ringed by the Sipaliwini savanna in southern Suriname, little patches of woodland cut off by grassland.",
         "category": "Weird & Wonderful",
         "image": "/assets/facts/blue-poison-dart-frog.jpg"
       },
@@ -1006,7 +1006,7 @@
       {
         "id": 265,
         "title": "The Poison Dart Name Is Borrowed",
-        "fact": "Around 170 species get called poison dart frogs and only three were ever used that way, all in the genus Phyllobates, in a small area of western Colombia. Hunters wiped a dart tip across a frog's back and the coating stayed effective for months. Every other species picked the name up by association, this one included, and no hunter has ever tipped a dart with it.",
+        "fact": "Plenty of frogs are called poison dart frogs, but only three were ever reported to tip darts: Phyllobates terribilis, P. aurotaenia and P. bicolor, all from western Colombia. Indigenous Chocó hunters poisoned blowgun darts by rubbing them across a frog's back. Every other species, the blue poison dart frog included, just borrowed the name.",
         "category": "Weird & Wonderful",
         "image": "/assets/facts/blue-poison-dart-frog-3.jpg"
       }
@@ -1084,15 +1084,15 @@
     "facts": [
       {
         "id": 266,
-        "title": "A Pigeon the Size of a Turkey",
-        "fact": "The Victoria crowned pigeon is the largest pigeon in the world, around 75 centimeters long and up to roughly 2.5 kilograms, which is to say a pigeon you would notice from across a field. It is blue-gray with a maroon breast, a deep red eye, and a fan of crest feathers standing upright on its head. It spends nearly all of its time walking the forest floor of northern New Guinea, and flies up mainly to roost or to get away from something.",
+        "title": "Pigeon, Supersized",
+        "fact": "Forget the gray birds pecking at sidewalk crumbs. The crowned pigeons of New Guinea are the largest pigeons alive, and the Victoria crowned pigeon is one of them: a big blue-gray bird with deep maroon underparts. Add a showy crest on top and it is easy to see why they get called the peacocks of the pigeon family.",
         "category": "Birds",
         "image": "/assets/facts/victoria-crowned-pigeon.jpg"
       },
       {
         "id": 267,
         "title": "The Crest Is Lace, Not Spikes",
-        "fact": "Up close the crown is not the stiff fan it looks like at a distance. Each feather in it has a bare shaft for most of its length and opens into a small triangular tip of white barbs at the end, so the whole crest reads as an open mesh with a dotted white edge. Two other crowned pigeon species carry their own versions, and the white tips are the quickest way to tell this one apart from them.",
+        "fact": "Look closely at a Victoria crowned pigeon's crown: a big fan of upright, lacy feathers, each one tipped in white. That white edging is the quickest way to tell it from its close cousin, the common crowned pigeon, whose crest has no white tips at all. Same fancy hairdo, different trim.",
         "category": "Birds",
         "image": "/assets/facts/victoria-crowned-pigeon-2.jpg"
       },
@@ -1207,7 +1207,7 @@
       {
         "id": 282,
         "title": "A Nest Built to Stretch",
-        "fact": "Long-tailed tits, shima enaga included, build an enclosed nest from moss and lichen bound together with spider silk, and that silk gives the whole structure real elasticity. As the chicks inside grow, the nest stretches to fit them instead of the parents needing to rebuild it partway through raising a brood. The interior gets lined with well over a thousand small feathers, gathered one at a time, for insulation and cushioning.",
+        "fact": "A long-tailed tit's nest is built to grow with the family. The birds coat it in lichen and bind the whole thing together with spider silk, and that silk lets the nest stretch when it gets full. Think of it as a sleeping bag that makes room as the kids get bigger.",
         "category": "Birds",
         "image": "/assets/facts/shima-enaga-2.jpg"
       },
@@ -1255,7 +1255,7 @@
       {
         "id": 326,
         "title": "The White Head Is an Age, Not a Species",
-        "fact": "Immature bald eagles are mottled brown and white with a dark head and a dark bill, and they do not get the clean white head and tail until they are five or six years old. It makes them one of the most misidentified birds on the continent. A big dark raptor with irregular white blotching through the body is almost always a young bald eagle rather than a golden eagle or some unplaceable hawk.",
+        "fact": "A young bald eagle looks nothing like the national emblem. Juveniles wear a dark brown head, body, wings and tail with just some whitish mottling, and older juveniles may show a whiter body. That famous clean white head and tail don't fully arrive until the bird is about five and a half years old.",
         "category": "Birds",
         "image": "/assets/facts/bald-eagle-2.jpg"
       },

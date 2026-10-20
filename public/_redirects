@@ -471,6 +471,12 @@
 /facts/a-stripe-that-hides-you/ /facts/stripes-on-a-dimmer-switch/ 301
 /facts/70-years-in-cancer-labs /facts/lab-stars-since-the-1920s/ 301
 /facts/70-years-in-cancer-labs/ /facts/lab-stars-since-the-1920s/ 301
+/facts/a-pigeon-the-size-of-a-turkey /facts/pigeon-supersized/ 301
+/facts/a-pigeon-the-size-of-a-turkey/ /facts/pigeon-supersized/ 301
+/facts/the-fish-that-walks /facts/the-fish-that-breathes-through-its-skin/ 301
+/facts/the-fish-that-walks/ /facts/the-fish-that-breathes-through-its-skin/ 301
+/facts/too-high-to-hear /facts/1300-holes-in-one-tree/ 301
+/facts/too-high-to-hear/ /facts/1300-holes-in-one-tree/ 301
 
 # Splat rules live here, at the very bottom, and nothing goes below them. The
 # two exact-match /encyclopedia/guides rules above still win, since Cloudflare
