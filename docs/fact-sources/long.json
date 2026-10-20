@@ -1,0 +1,289 @@
+[
+ {
+  "id": 213,
+  "title": "The Eighth Neck Bone",
+  "newTitle": null,
+  "publisher": "Royal Society Open Science (2016)",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4785981/",
+  "newFact": "Giraffes have seven neck vertebrae, the same as you, but the bone right behind them moonlights as an eighth. The first thoracic vertebra still carries movable ribs, so officially it belongs to the chest. Yet it is shaped like a neck bone and bends far more than its chest neighbors, doing the job of an extra neck joint.",
+  "careAdvice": null,
+  "drafts": [],
+  "note": "Kept the T1-as-neck-bone point; cut 'argued for decades' and 'current view' (unsupported)."
+ },
+ {
+  "id": 239,
+  "title": "The Meow Is Aimed at Us",
+  "newTitle": null,
+  "publisher": "ASPCA",
+  "url": "https://www.aspca.org/pet-care/cat-care/common-cat-behavior-issues/meowing-and-yowling",
+  "newFact": "Meowing starts as a kitten's way of telling its mother it is cold or hungry. Once cats grow up, they stop meowing at other cats. Yet they keep meowing at people for their whole lives, probably because it works: the sound gets humans to do what cats want. The adult meow is a language saved just for us.",
+  "careAdvice": null,
+  "drafts": [],
+  "note": "Kept meow-for-humans point; cut wild cats, years-together housemates and scent/body language (unsupported)."
+ },
+ {
+  "id": 259,
+  "title": "Fur on the Soles of Its Feet",
+  "newTitle": null,
+  "publisher": "Smithsonian's National Zoo and Conservation Biology Institute",
+  "url": "https://nationalzoo.si.edu/animals/fennec-fox",
+  "newFact": "The undersides of a fennec's feet are covered in thick fur, right over the pads, like a built-in pair of desert boots. On scorching sand that fur does two jobs at once: it shields the feet from the extreme heat of the ground, and it gives the fox grip when it sprints across a loose, shifting surface.",
+  "careAdvice": null,
+  "drafts": [
+   {
+    "animal": "Fennec Fox",
+    "category": "Mammals",
+    "title": "A Den With Back Doors",
+    "text": "Fennec foxes dig their own homes, and they rarely stop at one hole. A den can be a whole series of tunnels reaching up to 10 meters, about 32 feet, with several entrances and exits. If trouble shows up at the front door, the fox simply slips out another one.",
+    "visualHook": "A fennec fox peeking out of a sandy burrow entrance with its huge ears up."
+   }
+  ],
+  "note": "Kept furred soles (heat + traction); cut weight-spreading and seconds-to-vanish (unsupported); dens moved to a draft."
+ },
+ {
+  "id": 260,
+  "title": "Heaviest, Not Longest",
+  "newTitle": null,
+  "publisher": "Natural History Museum, London",
+  "url": "https://www.nhm.ac.uk/discover/what-is-the-biggest-snake-in-the-world.html",
+  "newFact": "The green anaconda is the heaviest snake alive, but not the longest. Reticulated pythons grow longer and slimmer, while anacondas are pure bulk: a 5.2 meter anaconda weighs about as much as a 7.3 meter python. The heaviest anaconda on record tipped the scales at 227 kilograms, measuring 8.43 meters long and 1.11 meters around.",
+  "careAdvice": null,
+  "drafts": [],
+  "note": "Kept heaviest-not-longest with NHM figures; cut 9 m century-of-claims line (unsupported). Skipped the 24 m exaggeration point as overlapping."
+ },
+ {
+  "id": 262,
+  "title": "It Gives Birth, It Does Not Lay Eggs",
+  "newTitle": null,
+  "publisher": "Smithsonian's National Zoo and Conservation Biology Institute",
+  "url": "https://nationalzoo.si.edu/animals/green-anaconda",
+  "newFact": "Green anacondas skip the eggs entirely. Females give birth to live young, and they do it in the water, usually 20 to 40 babies at a time. Bigger mothers tend to have bigger litters, and the largest on record was a whopping 82. All that effort is so draining that females breed only every other year.",
+  "careAdvice": null,
+  "drafts": [
+   {
+    "animal": "Green Anaconda",
+    "category": "Reptiles",
+    "title": "The Breeding Ball Ends in Dinner",
+    "text": "Female green anacondas are considerably larger than males, and breeding season shows it. Up to 13 males wrap around one female in a writhing breeding ball. Afterward she may swallow one or more of the smaller males, stocking up for a seven month pregnancy during which she will not eat again.",
+    "visualHook": "A huge female green anaconda coiled in shallow water with a smaller male draped across her."
+   }
+  ],
+  "note": "Kept live birth + litter facts; cut newborn size, no parental care, several-times-heavier (unsupported). Female size became a draft with breeding ball and cannibalism, verified on refetched Smithsonian page."
+ },
+ {
+  "id": 263,
+  "title": "It Is Not a Separate Species",
+  "newTitle": null,
+  "publisher": "Amphibian & Reptile Conservation (2019)",
+  "url": "https://www.amphibian-reptile-conservation.org/pdfs/Volume/Vol_13_no_2/ARC_13_2_[General_Section]_259-264_e210.pdf",
+  "newFact": "The blue poison dart frog is not its own species. Described in 1969 as Dendrobates azureus, it was later folded into Dendrobates tinctorius as a color morph. That electric blue turns up only on a few forest islands ringed by the Sipaliwini savanna in southern Suriname, little patches of woodland cut off by grassland.",
+  "careAdvice": null,
+  "drafts": [],
+  "note": "Kept color-morph point with history and range; cut 'most photographed frog' (unsupported) and the patch-to-patch variety aside."
+ },
+ {
+  "id": 265,
+  "title": "The Poison Dart Name Is Borrowed",
+  "newTitle": null,
+  "publisher": "ZooKeys (2024)",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11420536/",
+  "newFact": "Plenty of frogs are called poison dart frogs, but only three were ever reported to tip darts: Phyllobates terribilis, P. aurotaenia and P. bicolor, all from western Colombia. Indigenous Chocó hunters poisoned blowgun darts by rubbing them across a frog's back. Every other species, the blue poison dart frog included, just borrowed the name.",
+  "careAdvice": null,
+  "drafts": [],
+  "note": "Kept only-three-dart-species point; cut 170-species count, 'small area' and months-long potency (unsupported)."
+ },
+ {
+  "id": 266,
+  "title": "A Pigeon the Size of a Turkey",
+  "newTitle": "Pigeon, Supersized",
+  "publisher": "Honolulu Zoo",
+  "url": "https://honoluluzoo.org/victoria-crowned-pigeon/",
+  "newFact": "Forget the gray birds pecking at sidewalk crumbs. The crowned pigeons of New Guinea are the largest pigeons alive, and the Victoria crowned pigeon is one of them: a big blue-gray bird with deep maroon underparts. Add a showy crest on top and it is easy to see why they get called the peacocks of the pigeon family.",
+  "careAdvice": null,
+  "drafts": [],
+  "note": "Kept the largest-pigeon point (shared with the common crowned pigeon, per source). Cut the length, weight, red eye, ground-walking and flight claims; crest detail left light since 267 covers it."
+ },
+ {
+  "id": 267,
+  "title": "The Crest Is Lace, Not Spikes",
+  "newTitle": null,
+  "publisher": "Honolulu Zoo",
+  "url": "https://honoluluzoo.org/victoria-crowned-pigeon/",
+  "newFact": "Look closely at a Victoria crowned pigeon's crown: a big fan of upright, lacy feathers, each one tipped in white. That white edging is the quickest way to tell it from its close cousin, the common crowned pigeon, whose crest has no white tips at all. Same fancy hairdo, different trim.",
+  "careAdvice": null,
+  "drafts": [],
+  "note": "Kept the white-tipped crest as the ID mark. Cut the bare-shaft feather anatomy and the 'two other species' count (source compares one); dropped the crest-hunting line to avoid overlap with 266."
+ },
+ {
+  "id": 273,
+  "title": "The Fish That Walks",
+  "newTitle": "The Fish That Breathes Through Its Skin",
+  "publisher": "Frontiers in Ecology and Evolution (2022)",
+  "url": "https://www.frontiersin.org/journals/ecology-and-evolution/articles/10.3389/fevo.2022.967067/full",
+  "newFact": "Mudskippers are fish that spend long stretches out of the water, and for some species the skin becomes a main way to breathe air. Their skin is packed with extra capillaries sitting close to the surface to soak up oxygen, while the gills and the chamber of the mouth and gill covers pitch in too.",
+  "careAdvice": null,
+  "drafts": [],
+  "note": "Kept skin breathing out of water. Cut 'for hours', the 60 percent figure, fin walking and mangrove climbing (none in source), so the walking title had to go; the walking extraPoint is unsupported, no draft."
+ },
+ {
+  "id": 274,
+  "title": "The Molar That Turns Sideways",
+  "newTitle": null,
+  "publisher": "The Wolverine Foundation",
+  "url": "https://wolverinefoundation.org/?p=338",
+  "newFact": "Peek inside a wolverine's mouth and you will find upper molars turned 90 degrees inward. That twist is the calling card of the whole weasel family, but in the wolverine it pays off big: it helps this scavenger crush bones and chew through frozen tissue from the carcasses it finds.",
+  "careAdvice": null,
+  "drafts": [],
+  "note": "Kept the rotated molar and its bone-crushing, frozen-meat payoff; noted it is shared by all mustelids. Cut the 15 kg weight, marrow claim and 'most of how it survives winter'."
+ },
+ {
+  "id": 282,
+  "title": "A Nest Built to Stretch",
+  "newTitle": null,
+  "publisher": "Natural History Museum, London",
+  "url": "https://www.nhm.ac.uk/discover/why-do-birds-nest.html",
+  "newFact": "A long-tailed tit's nest is built to grow with the family. The birds coat it in lichen and bind the whole thing together with spider silk, and that silk lets the nest stretch when it gets full. Think of it as a sleeping bag that makes room as the kids get bigger.",
+  "careAdvice": null,
+  "drafts": [
+   {
+    "animal": "Shima Enaga",
+    "category": "Birds",
+    "title": "2,000 Feathers, Then Spring Cleaning",
+    "text": "A long-tailed tit stuffs its nest with more than 2,000 feathers, a seriously plush duvet for the chilly start of spring. Then, as the weather warms, the birds gradually pull feathers back out of the nest, like swapping a winter comforter for a lighter blanket as the season heats up.",
+    "visualHook": "A long-tailed tit perched at the entrance of its lichen-covered nest with a small white feather in its beak."
+   }
+  ],
+  "note": "Kept the silk-bound stretchy nest; source covers long-tailed tits in general, so the shima enaga is not named. Cut moss, 'enclosed', the rebuild claim and 'one at a time'; the 2,000-feather lining and spring removal became a draft."
+ },
+ {
+  "id": 285,
+  "title": "It Bites and Holds On",
+  "newTitle": null,
+  "publisher": "Los Angeles Zoo and Botanical Gardens",
+  "url": "https://lazoo.org/explore-your-zoo/our-animals/reptiles/gaboon-viper/",
+  "newFact": "The Gaboon viper is an ambush hunter that lies perfectly still under the leaf litter on the forest floor, waiting for prey to wander past. When it strikes, it bites, injects venom and then simply hangs on, holding its victim until it dies. After that, dinner goes down whole, headfirst.",
+  "careAdvice": null,
+  "drafts": [],
+  "note": "Kept bite-and-hold ambush hunting. Cut the comparison with other vipers, the 'stagger off' reasoning and the human-bite severity claim (source says bites on people are rare)."
+ },
+ {
+  "id": 286,
+  "title": "It Moves in a Straight Line",
+  "newTitle": null,
+  "publisher": "Journal of the Royal Society Interface (2013)",
+  "url": "https://doi.org/10.1098/rsif.2013.0188",
+  "newFact": "Gaboon vipers can skip the classic side-to-side slither and travel in a straight line instead, pushing forward with waves of muscle contraction along the belly, much like an earthworm. It is slow going, but a straight path makes less noise, which is exactly what you want when sneaking up on dinner.",
+  "careAdvice": null,
+  "drafts": [],
+  "note": "Kept straight-line (rectilinear) travel and its quiet, stalking payoff. Cut the weight explanation and swapped caterpillar for the source's earthworm comparison."
+ },
+ {
+  "id": 293,
+  "title": "Built for the Burrow",
+  "newTitle": null,
+  "publisher": "American Kennel Club",
+  "url": "https://www.akc.org/expert-advice/dog-breeds/dachshund-history-badger-dog-breed/",
+  "newFact": "Dachshund means badger dog in German, and the breed was built for the job. By the 18th century, German foresters and hunters were breeding them consistently, with short legs to fit into badger holes. Facing a badger head-on in a tight tunnel, with no room to turn around, took a dog that was bold, independent and a little bit combative.",
+  "careAdvice": null,
+  "drafts": [
+   {
+    "animal": "Dachshund",
+    "category": "Dogs & Cats",
+    "title": "Armored Up for Badgers",
+    "text": "A dachshund's face was built for a fight underground. Badgers have thick skin, sharp teeth and claws, so the dog that met one head-on needed protection up front: a prominent bridge bone over the eyes, plus a strong, well-hinged underjaw packing surprisingly large teeth so it could give back as good as it got.",
+    "visualHook": "Close side profile of a dachshund's head showing the brow ridge above the eyes and its long jaw."
+   }
+  ],
+  "note": "Kept the badger-dog origin and burrow build; cut chondrodysplasia and the disc-problem line (unsupported). Draft from the AKC brow bone and jaw detail."
+ },
+ {
+  "id": 294,
+  "title": "Too High to Hear",
+  "newTitle": "1,300 Holes in One Tree",
+  "publisher": "San Diego Zoo Wildlife Alliance",
+  "url": "https://animals.sandiegozoo.org/animals/pygmy-marmoset",
+  "newFact": "The world's smallest monkey runs on tree sap. A pygmy marmoset scampers headfirst up a trunk, gouges a hole in the bark with its sharp lower teeth using an up-and-down sawing motion, then laps up the sap that puddles inside. It has favorite trees in its territory and can drill up to 1,300 holes in each one.",
+  "careAdvice": null,
+  "drafts": [
+   {
+    "animal": "Pygmy Marmoset",
+    "category": "Mammals",
+    "title": "Too High to Hear",
+    "text": "Pygmy marmosets keep in touch by chattering and trilling in high-pitched voices, and some of their sounds climb so high that human ears can't catch them at all. Stand under a troop of the world's smallest monkeys and you may only hear part of the conversation.",
+    "visualHook": "A tiny pygmy marmoset clinging to a tree trunk with its mouth open mid-call."
+   }
+  ],
+  "note": "Kept the sap-gouging point with the 1,300 holes; moved the inaudible calls to a draft (old title) and dropped the unsupported predator-avoidance reason. Size kept only as 'smallest monkey'."
+ },
+ {
+  "id": 310,
+  "title": "The First Rat Maze",
+  "newTitle": null,
+  "publisher": "Clark University",
+  "url": "https://www.clarku.edu/news/2012/06/26/a-mazing-fact-first-ever-labyrinth-for-observing-rats-was-created-at-clark-in-1900/",
+  "newFact": "The very first rat maze was copied from a royal garden. Around 1900 at Clark University, graduate student Willard Small built a sawdust-floored maze from a diagram of the hedge maze at England's Hampton Court Palace, picking the layout so his tests would feel like familiar rodent burrows. Other researchers soon adopted the maze as a research tool.",
+  "careAdvice": null,
+  "drafts": [],
+  "note": "Kept the Hampton Court origin story; cut 'origin of an entire field', the claim rats were chosen for fast route learning, and the pet-rat tie-in (all unsupported)."
+ },
+ {
+  "id": 326,
+  "title": "The White Head Is an Age, Not a Species",
+  "newTitle": null,
+  "publisher": "Audubon",
+  "url": "https://www.audubon.org/field-guide/bird/bald-eagle",
+  "newFact": "A young bald eagle looks nothing like the national emblem. Juveniles wear a dark brown head, body, wings and tail with just some whitish mottling, and older juveniles may show a whiter body. That famous clean white head and tail don't fully arrive until the bird is about five and a half years old.",
+  "careAdvice": null,
+  "drafts": [],
+  "note": "Kept the age-based plumage point; cut the dark bill, 'most misidentified' and golden eagle claims (unsupported)."
+ },
+ {
+  "id": 329,
+  "title": "Wing Claws at Birth",
+  "newTitle": null,
+  "publisher": "Science Advances (2019)",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6530998/",
+  "newFact": "Hoatzin chicks have working claws on their wings, and they climb with them. A 2019 study filmed nestlings hooking the wing claws onto a slope and crawling up on all fours with an alternating walk. When danger comes, a chick can even jump into the water below its nest and swim back to the branches.",
+  "careAdvice": null,
+  "drafts": [
+   {
+    "animal": "Hoatzin",
+    "category": "Birds",
+    "title": "Fossil Hands on a Baby Bird",
+    "text": "Baby hoatzins have wing claws in proportions strikingly similar to those of Archaeopteryx, the famous feathered fossil, while adult hoatzins look quite different. That makes the climbing chicks a living stand-in, helping scientists picture how early birds with clawed wings may have clambered through branches.",
+    "visualHook": "A fuzzy hoatzin chick gripping a branch with the small claws on its wings."
+   }
+  ],
+  "note": "Kept claw climbing and the jump-and-swim escape; cut 'two claws each wing', claws disappearing, stinkbird, crop fermentation and 45 hours (not in source). Draft on the Archaeopteryx comparison from the same paper."
+ },
+ {
+  "id": 332,
+  "title": "Farms On Its Own Arms",
+  "newTitle": null,
+  "publisher": "PLoS ONE (2011)",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3227565/",
+  "newFact": "The yeti crab Kiwa puravida grows its own dinner. Bacteria sprout on the dense bristles of its claws, the crab's main food source, and it harvests them with comb-like mouthparts. It also waves those claws in fluid seeping from the deep-sea floor, which researchers think keeps the bacterial crop growing.",
+  "careAdvice": null,
+  "drafts": [],
+  "note": "Kept the bacteria-farming point; waving now framed as a hypothesis, cut 'nothing else to eat' and the vent/seep habitat aside."
+ },
+ {
+  "id": 333,
+  "title": "Sneezes Out Salt",
+  "newTitle": null,
+  "publisher": "Natural History Museum, London",
+  "url": "https://www.nhm.ac.uk/discover/shrinking-galapagos-marine-iguanas.html",
+  "newFact": "The marine iguana is the only lizard known to forage in the ocean, grazing algae off rocks with its blunt nose and sharp teeth. All that seawater dining brings in a lot of salt, so a specially adapted gland removes it from the body, and the iguana forcefully blasts it out through its nostrils in a sneeze.",
+  "careAdvice": null,
+  "drafts": [
+   {
+    "animal": "Marine Iguana",
+    "category": "Reptiles",
+    "title": "The Shrinking Lizard",
+    "text": "When El Niño warms the Galapagos and their favorite algae vanish, marine iguanas do something wild: they shrink, losing not just weight but up to 20% of their body length. Shrunken iguanas survive longer, and when cool water brings food back, they grow again. Some do it several times in one life.",
+    "visualHook": "A marine iguana basking on black lava rock beside the surf."
+   }
+  ],
+  "note": "Kept the salt-sneeze point; cut kidneys, gland above each eye, bloodstream and white crust (unsupported). Draft on shrinking from the same NHM page, refetched."
+ }
+]
