@@ -423,6 +423,12 @@
 /facts/super-sneaky-narwhal/ /facts/one-big-sensitive-tooth/ 301
 /facts/rollercoaster-tails /facts/no-laughing-matter/ 301
 /facts/rollercoaster-tails/ /facts/no-laughing-matter/ 301
+/facts/blue-eyed-arctic-shifters /facts/arctic-eye-mirror-shifters/ 301
+/facts/blue-eyed-arctic-shifters/ /facts/arctic-eye-mirror-shifters/ 301
+/facts/pebble-proposing-love-birds /facts/pebble-pinching-penguins/ 301
+/facts/pebble-proposing-love-birds/ /facts/pebble-pinching-penguins/ 301
+/facts/natures-biggest-gamble /facts/300-million-eggs-none-found/ 301
+/facts/natures-biggest-gamble/ /facts/300-million-eggs-none-found/ 301
 
 # Splat rules live here, at the very bottom, and nothing goes below them. The
 # two exact-match /encyclopedia/guides rules above still win, since Cloudflare
