@@ -1,0 +1,1085 @@
+{
+ "search": [
+  {
+   "id": 10,
+   "title": "Crow Detectives",
+   "animal": "Crow",
+   "detail": "bring gifts like shiny buttons and earrings to people who feed them",
+   "cardText": "Crows can recognize individual human faces for years and will teach other crows who is 'friend' or 'foe.' They've been known to bring gifts to people who feed them, from shiny buttons to earrings!"
+  },
+  {
+   "id": 15,
+   "title": "Wombat Cube Poop",
+   "animal": "Wombat",
+   "detail": "cubes sit on rocks and logs without rolling off, as scent messages with identity and breeding status",
+   "cardText": "Wombats produce cube-shaped poop. Stiff and soft bands in the last stretch of the intestine shape the pellets into cubes, and a very dry gut lets the corners hold. The cubes sit on rocks and logs without rolling off, where they work as scent messages carrying identity and breeding status. Despite the common claim, wombats are not territorial."
+  },
+  {
+   "id": 35,
+   "title": "Black Skin, Clear Fur",
+   "animal": "Polar Bear",
+   "detail": "fur looks white because it reflects visible light, like snow",
+   "cardText": "Polar bears have black skin (to absorb heat) and transparent fur! Their fur only appears white because it reflects visible light, like snow."
+  },
+  {
+   "id": 38,
+   "title": "Balloon Defense",
+   "animal": "Pufferfish",
+   "detail": "inflate to three times normal size",
+   "cardText": "Pufferfish can inflate to three times their normal size when threatened! They also contain a toxin 1,200 times more deadly than cyanide."
+  },
+  {
+   "id": 38,
+   "title": "Balloon Defense",
+   "animal": "Pufferfish",
+   "detail": "toxin 1,200 times deadlier than cyanide (a food safety page says over 1,000 per some authorities)",
+   "cardText": "Pufferfish can inflate to three times their normal size when threatened! They also contain a toxin 1,200 times more deadly than cyanide."
+  },
+  {
+   "id": 54,
+   "title": "Parrots Need Company",
+   "animal": "Parrot",
+   "detail": "need social interaction daily (study: time alone did not itself change the odds)",
+   "cardText": "Parrots need social interaction daily. Isolation can cause feather plucking and behavioral issues. They're highly intelligent birds that thrive on engagement."
+  },
+  {
+   "id": 58,
+   "title": "Mimics Everything",
+   "animal": "Parrot",
+   "detail": "many parrots mimic full sentences, tones and laughs",
+   "cardText": "Many parrots can mimic not just single words but full sentences, tones, and even laughs. The record for the largest bird vocabulary ever documented doesn't belong to a big exotic species. It belongs to a budgerigar named Puck, credited by Guinness World Records with an estimated 1,728 words."
+  },
+  {
+   "id": 64,
+   "title": "Sky-High Sleepers",
+   "animal": "Swift",
+   "detail": "eat, sleep and even mate in the sky (Lund: how they sleep is unknown)",
+   "cardText": "Common swifts can stay airborne for up to 10 months without landing. They eat, sleep, and even mate in the sky. They only land to breed!"
+  },
+  {
+   "id": 71,
+   "title": "Nature's Sound Thief",
+   "animal": "Lyrebird",
+   "detail": "car alarms, camera shutters, human voices, entire construction sites",
+   "cardText": "The lyrebird can perfectly mimic almost any sound it hears: chainsaws, car alarms, camera shutters, other bird species, and even human voices. They've been recorded mimicking entire construction sites."
+  },
+  {
+   "id": 76,
+   "title": "Hear With Their Feet",
+   "animal": "Elephant",
+   "detail": "\"specialized receptors in their feet and trunk\" (source hedges: may sense via bone conduction or foot receptors)",
+   "cardText": "Elephants communicate through seismic vibrations in the ground, detecting low-frequency rumbles with specialized receptors in their feet and trunk. They can 'hear' messages from other elephants up to 20 miles away."
+  },
+  {
+   "id": 125,
+   "title": "Instant Slime Escape Artist",
+   "animal": "Hagfish",
+   "detail": "\"up to a liter\" of slime",
+   "cardText": "The hagfish is the undisputed slime champion. When threatened, it can release up to a liter of thick, sticky goo in just 0.1 seconds - enough to expand in water and completely clog a predator's gills for a perfect smoky getaway!"
+  },
+  {
+   "id": 133,
+   "title": "Cancer-Proof and Cold-Blooded",
+   "animal": "Naked Mole Rat",
+   "detail": "\"nearly immune to cancer\" (source: rarely gets cancer); \"one of the only mammals\" that cannot regulate temperature",
+   "cardText": "Naked mole rats are nearly immune to cancer and can survive up to 18 minutes without oxygen by switching their metabolism to run on fructose, like a plant. They're also one of the only mammals that can't regulate their own body temperature."
+  },
+  {
+   "id": 137,
+   "title": "Dinner-Plate Eyes",
+   "animal": "Giant Squid",
+   "detail": "\"roughly the size of a dinner plate\"; record held alone (shared with colossal squid)",
+   "cardText": "Giant squid have the largest eyes in the animal kingdom, up to 27 cm across, roughly the size of a dinner plate, built to catch the faintest flickers of bioluminescent light in the deep sea."
+  },
+  {
+   "id": 146,
+   "title": "The Dog That Doesn't Bark",
+   "animal": "Basenji",
+   "detail": "\"an unusually shaped larynx\"; the \"baroo\" nickname",
+   "cardText": "Basenjis have an unusually shaped larynx that keeps them from barking like other dogs. Instead they make a yodel-like sound nicknamed the 'baroo,' earning them the nickname 'the barkless dog.'"
+  },
+  {
+   "id": 154,
+   "title": "Never Forgets a Flockmate",
+   "animal": "Chicken",
+   "detail": "\"dozens\" of flockmates; \"and familiar humans\"; \"over long stretches of time\"",
+   "cardText": "Chickens are far smarter than they get credit for. Hens can recognize and remember dozens of individual flock members, and familiar humans, by sight over long stretches of time, and newborn chicks show early signs of 'object permanence' (understanding something still exists once it's hidden from view) within just days of hatching."
+  },
+  {
+   "id": 159,
+   "title": "The Loose-Skin Escape Artist",
+   "animal": "Honey Badger",
+   "detail": "twists \"almost freely\"; spins and bites \"while pinned by the scruff\"",
+   "cardText": "A honey badger's skin is so thick and loose that it can twist almost freely inside it, letting the animal spin around and bite an attacker even while pinned by the scruff of its neck. That fearlessness earned it a Guinness World Records title for most fearless animal on the planet."
+  },
+  {
+   "id": 167,
+   "title": "A Tongue Longer Than Its Body",
+   "animal": "Pangolin",
+   "detail": "giant pangolin specifically; tongue alone longer than head and body (source counts its muscles too)",
+   "cardText": "Pangolins have no teeth at all. Instead they rely on a sticky tongue that, in the giant pangolin, stretches longer than its head and body combined, anchored all the way back near the pelvis, to slurp up ants and termites by the thousands."
+  },
+  {
+   "id": 175,
+   "title": "Stomach Acid That Kills Anthrax",
+   "animal": "Vulture",
+   "detail": "acid destroys \"anthrax, botulism, and cholera\" (source: most bacteria, plus a strong immune system)",
+   "cardText": "A vulture's stomach acid is so corrosive, with a pH near zero, that it can destroy anthrax, botulism, and cholera bacteria before they ever reach the bloodstream. It's basically a built-in hazmat suit for eating roadkill."
+  },
+  {
+   "id": 180,
+   "title": "The Statue That Hunts",
+   "animal": "Shoebill",
+   "detail": "motionless \"for hours\"; \"snap a lungfish or baby crocodile in half\" (source: usually decapitates; crocodiles occasional)",
+   "cardText": "Shoebills can stand completely motionless for hours while hunting, then explode into a violent strike so fast it can snap a lungfish or baby crocodile in half. Their clog-shaped bill has sharp edges specifically for slicing through tough prey."
+  },
+  {
+   "id": 184,
+   "title": "The Rotating Lookout",
+   "animal": "Meerkat",
+   "detail": "lookout \"on a raised mound\" for \"eagles and jackals\", swapping \"roughly every hour\" so all can forage",
+   "cardText": "Meerkat mobs post a dedicated lookout on a raised mound to watch for eagles and jackals, swapping the job roughly every hour so everyone gets a turn to forage. They're also partly immune to scorpion venom, letting them safely eat scorpions that would drop most other animals, after carefully biting off the stinger first."
+  },
+  {
+   "id": 187,
+   "title": "The Nose Knows Best",
+   "animal": "Gharial",
+   "detail": "ghara used to \"blow bubbles\" \"underwater\" (source: a vocal resonator and visual signal)",
+   "cardText": "Male gharials grow a bulbous knob on the tip of their snout called a 'ghara,' which they use to blow bubbles and buzz underwater to attract mates. Their needle-thin jaws are packed with interlocking teeth built purely for snatching fish, too fragile to take down anything larger."
+  },
+  {
+   "id": 199,
+   "title": "Fingernails, Basically",
+   "animal": "Pangolin",
+   "detail": "scales are keratin, like fingernails and hair",
+   "cardText": "Pangolin scales are keratin, the same protein your fingernails and hair are made of. That has done nothing to slow demand: when the IUCN reviewed seizures logged between 2016 and 2024, scales made up 99 percent of every confiscated pangolin part."
+  },
+  {
+   "id": 200,
+   "title": "Famous Under the Wrong Name",
+   "animal": "Jellyfish",
+   "detail": "\"the 1996 paper that made it famous\" used T. nutricula (abstract names no 1996 paper; cites a 1992 one)",
+   "cardText": "For decades the immortal jellyfish was filed under the name Turritopsis nutricula, including in the 1996 paper that made it famous. That name was wrong. A 2026 study confirmed T. nutricula is a separate western Atlantic lineage that cannot reverse its life cycle at all. The species that actually resets itself is Turritopsis dohrnii."
+  },
+  {
+   "id": 210,
+   "title": "They Hum After Dark",
+   "animal": "Giraffe",
+   "detail": "92 Hz is \"well inside human hearing\", \"audible all along\", \"quietly kills a popular claim\", \"Nobody had listened\"",
+   "cardText": "Giraffes were long thought to be nearly silent. Then researchers recorded over 947 hours of audio across three European zoos and found sustained, harmonic humming that happens only at night, averaging 92 Hz. That detail quietly kills a popular claim: 92 Hz is not infrasound, it sits well inside human hearing. They were audible all along. Nobody had listened for 947 hours."
+  },
+  {
+   "id": 211,
+   "title": "Four Giraffes, Not One",
+   "animal": "Giraffe",
+   "detail": "\"for over a century\"; \"Genetic work in 2016\"; \"do not interbreed in the wild\"; \"comparable to ... polar and brown bears\" (Fennessy 2016, not read)",
+   "cardText": "For over a century every giraffe was filed under one species. Genetic work in 2016 found four deeply distinct lineages that do not interbreed in the wild, separated by differences comparable to those between polar and brown bears. In August 2025 the IUCN formally recognized all four: northern, reticulated, Masai and southern giraffe."
+  },
+  {
+   "id": 234,
+   "title": "Built Like the Cat Allergen",
+   "animal": "Slow Loris",
+   "detail": "Fel d1 is \"behind most human cat allergies\"; \"less a toxin\"; \"damage is done by the victim's own immune response\"",
+   "cardText": "The protein in slow loris venom structurally resembles Fel d1, the cat allergen behind most human cat allergies, sharing the same disulphide-bridged heterodimeric arrangement. That reframes the whole thing: this is less a toxin evolved to attack nerves or blood, and more an allergen weaponized. Much of the damage is done by the victim's own immune response."
+  },
+  {
+   "id": 235,
+   "title": "Teeth Removed With Pliers",
+   "animal": "Slow Loris",
+   "detail": "\"nail clippers or pliers\" (pliers only in a quoted YouTube comment); \"without anesthetic\"",
+   "cardText": "Because a venomous bite makes an animal unsaleable, traders cut out a slow loris's teeth before sale using nail clippers or pliers, without anesthetic. Infection and blood loss kill many before they reach a buyer. For survivors it is permanent: a loris without teeth cannot eat its natural diet or defend itself, so even confiscated animals can never be released."
+  },
+  {
+   "id": 309,
+   "title": "A Beak Built to Skip the Grit",
+   "animal": "Parrotlet",
+   "detail": "\"upper beak has small ridges that hold a seed in place while the lower beak cracks\" it",
+   "cardText": "A parrotlet's upper beak has small ridges that hold a seed in place while the lower beak cracks and removes the hull before the seed is ever swallowed. That's exactly why this species doesn't need dietary grit the way some other birds do, there's no whole hull left over for a gizzard to grind down."
+  },
+  {
+   "id": 314,
+   "title": "The Same Defense, a Very Different Snake",
+   "animal": "Rosy Boa",
+   "detail": "\"share their signature defensive move ... with the far larger ball python\"",
+   "cardText": "Rosy boas share their signature defensive move, balling up nose-first into a tight coil, with the far larger ball python. It's a strategy built for a wild predator's benefit, not a display of temper, and on a rosy boa it's rarely triggered at all, this species tends to simply try to move away first."
+  },
+  {
+   "id": 317,
+   "title": "The Land Animal That Senses Electricity",
+   "animal": "Short-Beaked Echidna",
+   "detail": "electroreception \"usually only found in animals that live in water\"",
+   "cardText": "Echidnas have no teeth at all and grind up ants and termites with hard pads in their mouth after flicking a sticky tongue in and out up to 100 times a minute. Their snout is also packed with electroreceptors that pick up the faint electrical signals of prey underground, a sense usually only found in animals that live in water."
+  },
+  {
+   "id": 318,
+   "title": "Same Burrow, Same Mate",
+   "animal": "Atlantic Puffin",
+   "detail": "same partner \"for 15 to 20 years\"; pair \"spends most of the year apart at sea\"; \"preen each other\"",
+   "cardText": "Atlantic puffins come back to the exact same burrow year after year, often reuniting with the same partner for 15 to 20 years even though the pair spends most of the year apart at sea. When they find each other again they tap bills and preen each other before settling back in to raise a single chick."
+  }
+ ],
+ "trim": [
+  {
+   "id": 2,
+   "title": "Spiny Situation",
+   "details": [
+    "each spine lasts about a year"
+   ]
+  },
+  {
+   "id": 3,
+   "title": "Century Talkers",
+   "details": [
+    "learn over 100 words and understand context"
+   ]
+  },
+  {
+   "id": 6,
+   "title": "Purring Bunnies",
+   "details": [
+    "binkies, joyful leaps and twists"
+   ]
+  },
+  {
+   "id": 10,
+   "title": "Crow Detectives",
+   "details": [
+    "teach other crows who is \"friend\" (study covers dangerous faces only)"
+   ]
+  },
+  {
+   "id": 11,
+   "title": "Immortal Jellyfish",
+   "details": [
+    "reverts \"when it gets old or stressed\" (source describes rejuvenation after reproduction)"
+   ]
+  },
+  {
+   "id": 15,
+   "title": "Wombat Cube Poop",
+   "details": [
+    "very dry gut lets the corners hold",
+    "wombats are not territorial"
+   ]
+  },
+  {
+   "id": 17,
+   "title": "Sea Otter Hand-Holding",
+   "details": [
+    "wrap in \"seagrass\"",
+    "keep together mostly by watching and listening (source: casual contact, sleeping close, kelp)"
+   ]
+  },
+  {
+   "id": 18,
+   "title": "Gecko Toe Magic",
+   "details": [
+    "walk on ceilings"
+   ]
+  },
+  {
+   "id": 26,
+   "title": "Unicorn of the Sea",
+   "details": [
+    "tusk \"up to 10 feet\" (press coverage of the team says about 9)",
+    "senses water temperature"
+   ]
+  },
+  {
+   "id": 35,
+   "title": "Black Skin, Clear Fur",
+   "details": [
+    "black skin is there \"to absorb heat\""
+   ]
+  },
+  {
+   "id": 42,
+   "title": "Rediscovered in 1994",
+   "details": [
+    "one of the most popular gecko species in the hobby"
+   ]
+  },
+  {
+   "id": 43,
+   "title": "Color Means Communication",
+   "details": [
+    "colors signal stress, excitement, readiness to mate (paper shows dominance, submission, female rejection)"
+   ]
+  },
+  {
+   "id": 44,
+   "title": "Three Eyelids",
+   "details": [
+    "third eyelid moistens the eye",
+    "you can spot it when a dog is sleepy"
+   ]
+  },
+  {
+   "id": 54,
+   "title": "Parrots Need Company",
+   "details": [
+    "highly intelligent, thrive on engagement"
+   ]
+  },
+  {
+   "id": 56,
+   "title": "Guinea Pigs Are Social",
+   "details": [
+    "a lone guinea pig becomes lonely, anxious, depressed"
+   ]
+  },
+  {
+   "id": 60,
+   "title": "Crow Tool Users",
+   "details": [
+    "use the tools to extract grubs from bark",
+    "pass techniques to their young as animal culture"
+   ]
+  },
+  {
+   "id": 63,
+   "title": "Mirror Test Passers",
+   "details": [
+    "\"and elephants\" pass too (this 2001 paper predates the elephant study)",
+    "mirror test shows \"self-awareness\""
+   ]
+  },
+  {
+   "id": 65,
+   "title": "Finger-Snapping Shrimp",
+   "details": [
+    "snap kills prey instantly"
+   ]
+  },
+  {
+   "id": 66,
+   "title": "No Two Stripes Alike",
+   "details": [
+    "unique \"like a fingerprint\"",
+    "foals know mothers by stripe pattern alone, within hours of birth"
+   ]
+  },
+  {
+   "id": 68,
+   "title": "Velvet Antlers Grow Fast",
+   "details": [
+    "\"up to an inch per day\" (source: more than 2 cm, about 0.8 inch)",
+    "velvet is a soft skin; antlers harden each autumn"
+   ]
+  },
+  {
+   "id": 69,
+   "title": "Born Male, Die Female",
+   "details": [
+    "changes sex \"permanently\"",
+    "\"Finding Nemo got it backwards\""
+   ]
+  },
+  {
+   "id": 71,
+   "title": "Nature's Sound Thief",
+   "details": [
+    "mimics \"almost any sound\" \"perfectly\""
+   ]
+  },
+  {
+   "id": 76,
+   "title": "Hear With Their Feet",
+   "details": [
+    "\"hear\" messages \"up to 20 miles away\" (20 miles is how far the waves travel, not a shown detection range)"
+   ]
+  },
+  {
+   "id": 81,
+   "title": "Color-Changing Camouflage",
+   "details": [
+    "colors change \"depending on their mood\" (paper covers contests and courtship)"
+   ]
+  },
+  {
+   "id": 82,
+   "title": "The Tiny Yet Mighty",
+   "details": [
+    "pollinators help produce one-third of our food"
+   ]
+  },
+  {
+   "id": 83,
+   "title": "Silent Signals",
+   "details": [
+    "color change to \"confuse predators\" (source: camouflage)"
+   ]
+  },
+  {
+   "id": 84,
+   "title": "Dancing Crickets",
+   "details": [
+    "display shows \"fitness and charm\"",
+    "male crickets in general (study is on the house cricket)"
+   ]
+  },
+  {
+   "id": 86,
+   "title": "The Tardigrade Resilience",
+   "details": [
+    "all while in cryptobiosis"
+   ]
+  },
+  {
+   "id": 88,
+   "title": "Chameleon Color Change",
+   "details": [
+    "\"not just for camouflage\", \"masters of disguise\""
+   ]
+  },
+  {
+   "id": 92,
+   "title": "Sloth Speedsters",
+   "details": [
+    "three-toed specifically (source: sloths generally)",
+    "pull themselves along with long front arms"
+   ]
+  },
+  {
+   "id": 98,
+   "title": "Quacks Like a Duck, Hops Like a Frog",
+   "details": [
+    "mating season \"just a week or two\"; \"right as snowmelt fills\"; \"serenading females\""
+   ]
+  },
+  {
+   "id": 107,
+   "title": "Egg Layers of Mystery",
+   "details": [
+    "travel \"thousands of miles\" (source: long distances)"
+   ]
+  },
+  {
+   "id": 108,
+   "title": "The Most Trafficked Mammal",
+   "details": [
+    "taken for their scales and meat"
+   ]
+  },
+  {
+   "id": 116,
+   "title": "Climbing the Walls",
+   "details": [
+    "\"even run on ceilings\""
+   ]
+  },
+  {
+   "id": 117,
+   "title": "Can't Stop Purring",
+   "details": [
+    "\"unlike other big cats\", \"the only large felines that never truly roar\""
+   ]
+  },
+  {
+   "id": 119,
+   "title": "Temperature-Switch Dragons",
+   "details": [
+    "\"nature's smart way to balance populations in hot climates\""
+   ]
+  },
+  {
+   "id": 124,
+   "title": "Gliding Rainforest Acrobat",
+   "details": [
+    "feet as \"parachutes and rudders\", steer mid-air, control descent"
+   ]
+  },
+  {
+   "id": 125,
+   "title": "Instant Slime Escape Artist",
+   "details": [
+    "\"in just 0.1 seconds\" (paper: under 0.4 seconds)"
+   ]
+  },
+  {
+   "id": 126,
+   "title": "Hairy Oxygen-Boosting Dads",
+   "details": [
+    "fringes \"packed with blood vessels\"; \"and legs\"; \"fast-flowing, low-oxygen streams\""
+   ]
+  },
+  {
+   "id": 130,
+   "title": "Small Brain, Zero Concussions",
+   "details": [
+    "peck \"up to 20 times per second\"",
+    "\"each impact is too brief to cause damage\" (abstract credits braincase size and shape)"
+   ]
+  },
+  {
+   "id": 131,
+   "title": "The Nonstop Flyer",
+   "details": [
+    "no stop to \"drink\" (source: food or rest)"
+   ]
+  },
+  {
+   "id": 133,
+   "title": "Cancer-Proof and Cold-Blooded",
+   "details": [
+    "\"up to 18 minutes without oxygen\" (in Park et al. 2017, not this release)"
+   ]
+  },
+  {
+   "id": 134,
+   "title": "The Ultimate Clingy Partner",
+   "details": [
+    "male becomes \"a built-in supply of sperm for life\""
+   ]
+  },
+  {
+   "id": 135,
+   "title": "Self-Eviction Defense",
+   "details": [
+    "expel organs \"to confuse predators\"; regrow \"a full set\""
+   ]
+  },
+  {
+   "id": 137,
+   "title": "Dinner-Plate Eyes",
+   "details": [
+    "eyes \"built to catch the faintest flickers of bioluminescent light\" (abstract: to spot sperm whales)"
+   ]
+  },
+  {
+   "id": 143,
+   "title": "Built-In Sonar",
+   "details": [
+    "\"the only mammals capable of true, sustained flight\" (on NPS sibling page How Bats Fly)",
+    "\"in total darkness\"; \"up to 200 calls per second\"; \"build a live map\""
+   ]
+  },
+  {
+   "id": 145,
+   "title": "Can't Taste Sugar",
+   "details": [
+    "\"one of the only mammals\" that cannot taste sweet (later studies find it in other carnivores)"
+   ]
+  },
+  {
+   "id": 147,
+   "title": "A Nose Built Different",
+   "details": [
+    "wet nose traps scent chemicals"
+   ]
+  },
+  {
+   "id": 150,
+   "title": "The Vitamin C Shortage",
+   "details": [
+    "\"popcorn\" leaps when overjoyed"
+   ]
+  },
+  {
+   "id": 152,
+   "title": "No Stomach, No Problem",
+   "details": [
+    "\"up to\" 35 fin beats a second (source: about 35); \"some species\" eat thousands (source: a single seahorse)"
+   ]
+  },
+  {
+   "id": 156,
+   "title": "Same Neck Bones as You",
+   "details": [
+    "wild giraffes sleep \"as little as 10 minutes a night\" in a couple of bursts (Burger-Schulz 2023 gives 8.6 minutes in about 2 bouts)",
+    "zoo giraffes \"sleep several hours more\""
+   ]
+  },
+  {
+   "id": 163,
+   "title": "Stomach on the Outside",
+   "details": [
+    "\"no brain and no blood\" (NOAA page supports seawater instead of blood)",
+    "\"hundreds of\" tube feet; prey \"too big to swallow\""
+   ]
+  },
+  {
+   "id": 164,
+   "title": "A Bite That Won't Clot",
+   "details": [
+    "\"for decades scientists believed\" bacteria, \"research later revealed\" venom (page credits both together)",
+    "venom \"crash[es] the victim's blood pressure\" (source: blood loss and shock)"
+   ]
+  },
+  {
+   "id": 165,
+   "title": "Sealed Shut Like a Box",
+   "details": [
+    "\"spend years trying to find their way back\"; experts say \"never relocate\""
+   ]
+  },
+  {
+   "id": 167,
+   "title": "A Tongue Longer Than Its Body",
+   "details": [
+    "\"termites by the thousands\" (source: mostly ants)"
+   ]
+  },
+  {
+   "id": 172,
+   "title": "A Thumb That Isn't a Thumb",
+   "details": [
+    "giant pandas \"independently evolved\" the false thumb, \"a textbook case\" of convergence"
+   ]
+  },
+  {
+   "id": 175,
+   "title": "Stomach Acid That Kills Anthrax",
+   "details": [
+    "before \"the bloodstream\" (source: intestines); \"roadkill\""
+   ]
+  },
+  {
+   "id": 178,
+   "title": "The Loudest Animal Alive",
+   "details": [
+    "\"felt in a diver's chest from meters away\"",
+    "\"hunt giant squid in total darkness thousands of feet down\""
+   ]
+  },
+  {
+   "id": 180,
+   "title": "The Statue That Hunts",
+   "details": [
+    "edges \"specifically for slicing through tough prey\""
+   ]
+  },
+  {
+   "id": 181,
+   "title": "Leaves That Learned to Swim",
+   "details": [
+    "flaps \"purely\" camouflage; swims with \"nearly invisible\" fins; \"look like drifting seaweed\""
+   ]
+  },
+  {
+   "id": 183,
+   "title": "See-Through Bellies",
+   "details": [
+    "\"watch their heart beating and blood moving\" (paper: bones and organs visible; heart in a reflective sac in the species studied)"
+   ]
+  },
+  {
+   "id": 184,
+   "title": "The Rotating Lookout",
+   "details": [
+    "partly immune to scorpion venom; bites off the stinger first"
+   ]
+  },
+  {
+   "id": 185,
+   "title": "The Snake-Stomping Kickboxer",
+   "details": [
+    "\"resetting for another strike in a fraction of a second\" (paper: 15 ms foot contact)",
+    "legs keep body \"out of biting range\"; \"up to five times\" (average 5.1, one bird)"
+   ]
+  },
+  {
+   "id": 186,
+   "title": "Not a Vampire At All",
+   "details": [
+    "flips webbed arms inside out to show spiny projections \"instead of fleeing\"",
+    "\"twilight zone\" (paper: 600 to 900 m oxygen minimum zone)"
+   ]
+  },
+  {
+   "id": 187,
+   "title": "The Nose Knows Best",
+   "details": [
+    "\"needle-thin\" jaws \"built purely for snatching fish, too fragile to take down anything larger\""
+   ]
+  },
+  {
+   "id": 188,
+   "title": "The Finger That Finds Grubs",
+   "details": [
+    "\"double-jointed\" (source: highly flexible); taps \"up to eight times a second\"",
+    "\"a foraging trick found nowhere else in the animal kingdom\""
+   ]
+  },
+  {
+   "id": 189,
+   "title": "A Built-In Radiator",
+   "details": [
+    "bill is \"more than a third of its body surface\""
+   ]
+  },
+  {
+   "id": 190,
+   "title": "The USDA's Nose Squad",
+   "details": [
+    "\"around 120 beagles\" (page: over 180 agriculture canine teams, no beagle count)",
+    "chosen \"over bigger sniffer breeds\""
+   ]
+  },
+  {
+   "id": 193,
+   "title": "All Bluff, All Bark",
+   "details": [
+    "\"tail held out for balance\""
+   ]
+  },
+  {
+   "id": 196,
+   "title": "70 Million Insects a Year",
+   "details": [
+    "digging aerates the soil; abandoned burrows shelter other animals"
+   ]
+  },
+  {
+   "id": 201,
+   "title": "A 72-Hour Rebuild",
+   "details": [
+    "\"collapses its bell into a small blob\""
+   ]
+  },
+  {
+   "id": 202,
+   "title": "Cells That Switch Careers",
+   "details": [
+    "\"such as muscle becoming nerve\"",
+    "\"One researcher described\" the butterfly comparison (page: \"has been likened\"; search credits Boero or Kubota)"
+   ]
+  },
+  {
+   "id": 203,
+   "title": "Smaller Than a Pinky Nail",
+   "details": [
+    "\"bright red stomach glowing through a nearly transparent bell\"; \"dozens of white tentacles\" (page: 8 in Panama, 24 or more elsewhere, no color)"
+   ]
+  },
+  {
+   "id": 209,
+   "title": "Mirror Babies",
+   "details": [
+    "\"what mirror behavior proves ... is still genuinely debated\""
+   ]
+  },
+  {
+   "id": 215,
+   "title": "Eighteen Minutes, No Oxygen",
+   "details": [
+    "\"A mouse ... dies in under a minute\"; \"Plants use this pathway\"; \"No other mammal is known\" to use it"
+   ]
+  },
+  {
+   "id": 218,
+   "title": "Shrinking to Survive a Heatwave",
+   "details": [
+    "\"reabsorbing their own tissue\" (paper: mechanism unknown, resorption only suggested)"
+   ]
+  },
+  {
+   "id": 219,
+   "title": "The Queue Nobody Jumps",
+   "details": [
+    "\"crossing open reef means being eaten and challenging a bigger fish means losing\"",
+    "\"They even limit their own growth\" (Buston 2003, not read); \"The wait can last decades\""
+   ]
+  },
+  {
+   "id": 223,
+   "title": "Two Antifreezes, Two Schedules",
+   "details": [
+    "\"the instant freezing begins\"; levels \"would put a mammal in a diabetic coma\"",
+    "ice forms outside the cells and sugar keeps the inside dilute (paper: both agents reduce total ice)"
+   ]
+  },
+  {
+   "id": 224,
+   "title": "It Restarts From the Middle",
+   "details": [
+    "\"does not warm from the outside in\"; heartbeat back \"within an hour\", near-normal \"within a few hours\""
+   ]
+  },
+  {
+   "id": 225,
+   "title": "The Only Frog Above the Arctic Circle",
+   "details": [
+    "survives \"by freezing rather than digging\"; \"not underground and not in water\""
+   ]
+  },
+  {
+   "id": 228,
+   "title": "Seawater Comes In With the Eggs",
+   "details": [
+    "\"lysozyme\" runs high (paper only searched the gene family)",
+    "seawater enters \"when a female transfers her eggs\"; \"warm\"; handles bacteria \"the missing immune hardware no longer can\""
+   ]
+  },
+  {
+   "id": 229,
+   "title": "The Dance Before the Roll",
+   "details": [
+    "\"no destination and no idea which way it is going\""
+   ]
+  },
+  {
+   "id": 230,
+   "title": "Forty Seconds Versus Two Minutes",
+   "details": [
+    "\"two meter arena\"; \"With the Milky Way visible\" (source: moonless starry night)",
+    "\"what light pollution costs an animal, measured directly\""
+   ]
+  },
+  {
+   "id": 231,
+   "title": "Tested in a Planetarium",
+   "details": [
+    "\"they fell apart\" (source: took much longer)"
+   ]
+  },
+  {
+   "id": 235,
+   "title": "Teeth Removed With Pliers",
+   "details": [
+    "\"Infection and blood loss kill many before they reach a buyer\"; \"cannot eat its natural diet or defend itself\""
+   ]
+  },
+  {
+   "id": 240,
+   "title": "A Baby Cry Hidden in the Purr",
+   "details": [
+    "\"harder to ignore\" (source: less pleasant); \"without being told which is which\""
+   ]
+  },
+  {
+   "id": 242,
+   "title": "Group Hunting Is Not the Reason",
+   "details": [
+    "food per lion does not improve \"because a kill split more ways feeds each one less\" (source: hunting success dips at 2 to 4 females, then rises)",
+    "confluences \"where prey must come to drink\""
+   ]
+  },
+  {
+   "id": 244,
+   "title": "Listening Through Their Feet",
+   "details": [
+    "seismic \"surface wave that outruns the airborne version\" (paper: travel at different rates)",
+    "bone conduction \"up the leg to the middle ear\" (paper: proposed only)"
+   ]
+  },
+  {
+   "id": 245,
+   "title": "Bees Silence the Opposition",
+   "details": [
+    "stop signal \"around 350 Hz\"; \"Enough of these and the rival dancer stops\""
+   ]
+  },
+  {
+   "id": 247,
+   "title": "Emperors Rarely Reunite",
+   "details": [
+    "\"Gentoos ... can exceed 90 percent\" (source: 59 to 89 percent across most species)",
+    "the difference is \"whether the species builds a nest\""
+   ]
+  },
+  {
+   "id": 249,
+   "title": "Closer to Birds Than Lizards",
+   "details": [
+    "\"archosaurs\" (term not used); \"dinosaur relatives that lived while their cousins did not\""
+   ]
+  },
+  {
+   "id": 253,
+   "title": "Horn Is Not Bone or Ivory",
+   "details": [
+    "horn \"structurally closer to an enormous callus\" (page: like hooves, baleen, beak tips)"
+   ]
+  },
+  {
+   "id": 254,
+   "title": "It Grows Back",
+   "details": [
+    "regrows \"because there is no bone in it\", \"cut above the growth plate\", \"every couple of years\"",
+    "\"the horn is used for defense and in disputes\""
+   ]
+  },
+  {
+   "id": 261,
+   "title": "Constriction Is About Blood, Not Bones",
+   "details": [
+    "\"tightens as its prey breathes out\"; \"far faster than suffocation\"; study used boas, not anacondas"
+   ]
+  },
+  {
+   "id": 271,
+   "title": "The Biggest Tree Dweller",
+   "details": [
+    "arm span \"up to 7 feet\"; \"more than 95 percent of their time\" in the canopy; freer shoulder and hip joints",
+    "\"largest tree-dwelling animals on Earth\" (page: mammals)"
+   ]
+  },
+  {
+   "id": 272,
+   "title": "The Living Metal Detector",
+   "details": [
+    "\"thousands of electroreceptor pores\"; finds prey \"buried in sand or mud\""
+   ]
+  },
+  {
+   "id": 277,
+   "title": "A Thousand-Word Vocabulary",
+   "details": [
+    "\"pick a specific one out of a huge pile\""
+   ]
+  },
+  {
+   "id": 278,
+   "title": "Built to Outrun a Ghost",
+   "details": [
+    "\"the second fastest land animal on Earth after the cheetah\" (source: fastest in North America)",
+    "cheetah \"extinct for thousands of years\"; \"Scientists believe\" (source: possibly)"
+   ]
+  },
+  {
+   "id": 283,
+   "title": "Half Bird, Half Tail",
+   "details": [
+    "name \"comes from hishaku, a long-handled ladle\""
+   ]
+  },
+  {
+   "id": 284,
+   "title": "The Longest Fangs of Any Snake",
+   "details": [
+    "venom yield \"a function of simply being a very large-headed, heavy-bodied snake\"",
+    "\"The venom is not the most potent by weight\""
+   ]
+  },
+  {
+   "id": 287,
+   "title": "A Parrot That Forgot to Fly",
+   "details": [
+    "\"the world's only flightless parrot\" (source: flightless); nocturnal \"unusual among parrots\"",
+    "booming call \"can carry for miles\"",
+    "\"individuals recorded living past 80 years\" (source: estimated lifespan 60 to 90)"
+   ]
+  },
+  {
+   "id": 288,
+   "title": "Gentle Giant of Cats",
+   "details": [
+    "\"males often weighing 15 to 25 pounds\" (source: often 20 or more); \"40-plus inches\"",
+    "Stewie, longest on record at 48.5 inches"
+   ]
+  },
+  {
+   "id": 289,
+   "title": "The Giraffe's Only Cousin",
+   "details": [
+    "tongue \"14 to 18 inches long\"; \"lick its own eyes and ears clean\" (source: reach)"
+   ]
+  },
+  {
+   "id": 299,
+   "title": "At Home in Two Kinds of Water",
+   "details": [
+    "\"coastal saltwater lagoons\" (source: estuaries); \"unusually wide ... for an aquarium fish\"; \"sometimes just a short distance apart\""
+   ]
+  },
+  {
+   "id": 314,
+   "title": "The Same Defense, a Very Different Snake",
+   "details": [
+    "\"rarely triggered at all\" (page: used when hiding is not an option)"
+   ]
+  },
+  {
+   "id": 317,
+   "title": "The Land Animal That Senses Electricity",
+   "details": [
+    "tongue flicks \"up to 100 times a minute\"; prey \"underground\""
+   ]
+  },
+  {
+   "id": 320,
+   "title": "The Blue Collector",
+   "details": [
+    "steals blue items \"from rival bowers\"; \"females favor males whose bowers are bluer\""
+   ]
+  },
+  {
+   "id": 322,
+   "title": "Teeth Like Tubes",
+   "details": [
+    "teeth have \"no roots\", \"keep growing throughout life\", \"hexagonal\", \"unlike any other mammal's\"",
+    "tongue \"roughly a foot long\"; ants and termites \"by the thousands\""
+   ]
+  },
+  {
+   "id": 323,
+   "title": "The Deepest Swimmer",
+   "details": [
+    "lives \"in the crushing cold of the hadal zone\" (NHM: sighting only suggests it; Jamieson 2020 calls 6,957 m hadal)"
+   ]
+  },
+  {
+   "id": 328,
+   "title": "Not Bald, Just Old English",
+   "details": [
+    "piebald \"used of a horse or a bird\" (page: any mix of dark and white)"
+   ]
+  },
+  {
+   "id": 331,
+   "title": "The Termite Marathon",
+   "details": [
+    "\"between 15,000 and 20,000\" termites (source: up to 20,000, captive); tongue \"about 10 centimeters\" (source: at least 5 cm past the nose)",
+    "teeth \"small, blunt and barely used\" (a second DBCA sheet: poorly developed); \"almost every other Australian marsupial\" nocturnal (source: most other marsupials)"
+   ]
+  },
+  {
+   "id": 334,
+   "title": "Biggest Bite, Smallest Body",
+   "details": [
+    "\"of any living mammal\" (study: living predators sampled); \"higher than lions or tigers\"",
+    "crunches \"entire carcasses, bones, fur and all\"; teeth worn \"to blunt nubs\""
+   ]
+  },
+  {
+   "id": 336,
+   "title": "Sleeping With Eyes Open",
+   "details": [
+    "night call a wail like \"poor me one\"",
+    "stump pose \"by day\" (page: when disturbed)"
+   ]
+  },
+  {
+   "id": 339,
+   "title": "Ears Tuned to Mice",
+   "details": [
+    "\"largest ears of any cat for their body size\" (on a SDZWA caption, not this page)",
+    "\"each ear can swivel on its own\"; \"calls rodents use to talk to each other\"; \"hidden in tall grass\" (page: underground)"
+   ]
+  },
+  {
+   "id": 341,
+   "title": "An Arm Down the Burrow",
+   "details": [
+    "\"the longest legs for its body size of any cat\" (on the SDZWA fact sheet, not this page)"
+   ]
+  },
+  {
+   "id": 344,
+   "title": "Born Without a Tail",
+   "details": [
+    "\"responsible breeders never pair two tailless Manx cats\"",
+    "gene \"can shorten the spine itself\" (page: disrupts tail and sacral vertebrae and the cord)"
+   ]
+  },
+  {
+   "id": 348,
+   "title": "The Branch That Wasn't",
+   "details": [
+    "pose \"called stumping\"; \"eyes narrowed to slits\" (page: closed); \"snapped off\" branch; \"By day\" (page: if disturbed)"
+   ]
+  }
+ ],
+ "clean": []
+}
