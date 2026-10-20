@@ -1,0 +1,107 @@
+[
+ {
+  "id": 115,
+  "title": "Electric Eel Shock",
+  "newTitle": null,
+  "publisher": "Smithsonian's National Zoo and Conservation Biology Institute",
+  "url": "https://nationalzoo.si.edu/animals/electric-eel",
+  "quote": "They are capable of generating up to 800 volts of electricity!",
+  "url2": "https://www.sciencenews.org/blog/wild-things/electric-eels-play-defense-mighty-leap",
+  "quote2": "In 1807, German naturalist Alexander von Humboldt described seeing it on a trip to the Amazon in 1800. Humboldt had hired a group of local fishermen to collect electric eels for his research on the animals. The fishermen led about 30 horses and mules into a muddy pond, where eels then leapt up, pressing themselves against the large mammals and delivering a mighty shock.",
+  "newFact": "Electric eels can crank out up to 800 volts, and they know where to aim it! When fishermen led horses and mules into an eel pond for explorer Alexander von Humboldt in 1800, the eels leapt up, pressed against the big animals and delivered a mighty shock. Talk about a shocking welcome!",
+  "careAdvice": null,
+  "note": "600 volts fixed to 800; \"stun a horse\" saved via Science News on Humboldt's 1800 horse account; hunting/defense line and Amazon superlative dropped."
+ },
+ {
+  "id": 122,
+  "title": "Blue-Eyed Arctic Shifters",
+  "newTitle": "Arctic Eye-Mirror Shifters",
+  "publisher": "Proceedings of the Royal Society B (2013)",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3826237/",
+  "quote": "Here, we show that they may have a unique mechanism to cope with winter darkness by changing the wavelength reflection from their tapetum lucidum (TL). In summer, it is golden with most light reflected back directly through the retina, whereas in winter it is deep blue with less light reflected out of the eye. ... Increased sensitivity occurs at the cost of reduced acuity, but may be an important adaptation in reindeer to detect moving predators in the dark Arctic winter.",
+  "newFact": "Reindeer eyes get a seasonal makeover! The reflective mirror at the back of each eye shines golden in summer, then turns deep blue in the dark Arctic winter. The blue mirror trades a little sharpness for extra sensitivity to dim light, which may help reindeer spot moving predators. Nature's own winter night-vision upgrade!",
+  "careAdvice": null,
+  "note": "Eye color changed to the reflective tapetum lucidum behind the retina; \"only mammals known\" dropped (paper says \"may have a unique mechanism\"); twilight changed to winter darkness; title no longer claims blue eyes."
+ },
+ {
+  "id": 123,
+  "title": "Miracle Mike the Headless Rooster",
+  "newTitle": null,
+  "publisher": "History Colorado",
+  "url": "https://www.historycolorado.org/grant-news/2003/09/01/headless-chicken-inspires-fruitas-preservation",
+  "quote": "On September 10, 1945, Lloyd Olsen ... chopping the head off a chicken named Mike. ... They explained that Mike's reflexes were controlled by his brain stem, which was located almost entirely in his still-intact neck. Further, a blood clot in Mike's severed jugular kept him from bleeding to death. ... Mike lived another eighteen months, got his picture in Life magazine, and made his erstwhile executioner, and his town, famous.",
+  "url2": "https://www.bbc.com/news/magazine-34198390",
+  "quote2": "He took this rooster with him ... a sideshow promoter called Hope Wade travelled nearly 300 miles from Salt Lake City, Utah. He had a simple proposition: take the chicken on to the sideshow circuit ... It was here that Life Magazine came to marvel over the story of Miracle Mike the Headless Chicken, as he had by now been branded by Hope Wade. Then Lloyd, Clara and Mike set off on a tour of the US.",
+  "newFact": "In 1945, a Colorado farmer chopped the head off a rooster named Mike, and Mike refused to die! His brain stem sat almost entirely in his intact neck, and a blood clot stopped the bleeding. Fed with an eyedropper, Miracle Mike lived another 18 months and toured the US with a sideshow promoter.",
+  "careAdvice": null,
+  "note": "\"Over 18 months\" fixed to 18 months; axe line reworded to the brain stem sitting in the intact neck; \"Miracle\" name, rooster and sideshow tour saved via BBC."
+ },
+ {
+  "id": 127,
+  "title": "Boozy Nectar-Loving Shrew",
+  "newTitle": null,
+  "publisher": "Proceedings of the National Academy of Sciences (2008)",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2492458/",
+  "quote": "We discovered that seven mammalian species in a West Malaysian rainforest consume alcoholic nectar daily from flower buds of the bertam palm (Eugeissona tristis), which they pollinate. The 3.8% maximum alcohol concentration (mean: 0.6%; median: 0.5%) that we recorded is among the highest ever reported in a natural food. ... Pentailed treeshrews (Ptilocercus lowii) frequently consume alcohol doses from the inflorescences that would intoxicate humans. Yet, the flower-visiting mammals showed no signs of intoxication. ... It is yet unclear to what extent treeshrews benefit from ingested alcohol per se and how they mitigate the risk of continuous high blood alcohol concentrations.",
+  "newFact": "Pen-tailed treeshrews in a Malaysian rainforest hit the bar every single day! They sip fermented nectar from bertam palm flowers that can reach 3.8 percent alcohol, often downing doses that would intoxicate a human. Yet researchers saw no signs that they ever got drunk. How they hold their liquor is still a mystery!",
+  "careAdvice": null,
+  "note": "3.8% now framed as the maximum; enzyme explanation replaced with the paper's open question; \"beer strength\" and \"starts every day\" dropped (only Discover Magazine and similar non-listed outlets make the beer comparison)."
+ },
+ {
+  "id": 128,
+  "title": "Pebble-Proposing Love Birds",
+  "newTitle": "Pebble-Pinching Penguins",
+  "publisher": "Discover Wildlife (BBC Wildlife)",
+  "url": "https://www.discoverwildlife.com/animal-facts/birds/why-do-penguins-give-stones-to-each-other",
+  "quote": "Pretty much the only things available to gentoo, Adélie and chinstrap penguins are pebbles, which at least serve to raise eggs off the frozen ground. Pebbles don't collect themselves and can be hard to find. The males tend to do the bulk of the work and will readily steal from their neighbours to fulfil their parental duties.",
+  "newFact": "Gentoo and Adélie penguins build their nests out of pebbles, which lift their eggs off the frozen ground. Good stones are hard to find, so the males do most of the collecting, and they will happily pinch pebbles from the neighbors' nests to get the job done. Less love letter, more pebble heist!",
+  "careAdvice": null,
+  "note": "Pebble-proposal premise dropped (source says evidence is hard to come by); rebuilt on nest building and pebble theft from the same page; lifelong pair bond dropped; title changed."
+ },
+ {
+  "id": 129,
+  "title": "Locked-In Gliders",
+  "newTitle": null,
+  "publisher": "National Geographic",
+  "url": "https://www.nationalgeographic.com/animals/article/120912-albatross-flight-airplane-design-traugott-science",
+  "quote": "The albatross has a special tendon in each shoulder that allows the bird to lock its wings in place, a quality it shares with fixed-wing aircraft.",
+  "url2": "https://www.sciencelearn.org.nz/resources/3364-toroa-our-giants-of-the-skies",
+  "quote2": "Toroa have physiological and behavioural adaptations that allow them to fly for almost 1,000 kilometres per day without flapping their wings. Tendons in their shoulders lock the wings in place when fully extended, letting them glide effortlessly. ... The wandering albatross (Diomedea exulans) is also called the snowy albatross. It has the widest wingspan of any bird.",
+  "newFact": "Wandering albatrosses have tendons in their shoulders that lock their wings open, so they can glide without flapping, much like a fixed-wing airplane. With the widest wingspan of any bird, these ocean nomads can ride the wind for almost 1,000 kilometers a day without a single flap!",
+  "careAdvice": null,
+  "note": "11-foot figure removed (NatGeo gives 12 ft for albatrosses generally, Science Learning Hub gives up to 3.5 m for the wandering albatross, so no number is stated); \"Wandering\", \"widest wingspan\" and no-flap distance saved via Science Learning Hub; \"for hours\" and \"circle the globe\" dropped."
+ },
+ {
+  "id": 136,
+  "title": "Nature's Biggest Gamble",
+  "newTitle": null,
+  "publisher": "Australian Museum",
+  "url": "https://australian.museum/about/organisation/media-centre/tiny-larval-mola-sunfish-/",
+  "quote": "Nyegaard said that sunfish hold the record of the highest potential fecundity of any vertebrate - 300 million ova in a 1.5 m long female Ocean Sunfish (Mola mola) ... \"Given sunfish are so incredibly fecund, it is an enigma why their eggs have never been found in the wild, and why sunfish larvae are so few and far between - where are they?\"",
+  "newFact": "Ocean sunfish hold a backbone-busting record: one 1.5 meter female was carrying about 300 million eggs, the highest potential egg count of any vertebrate! Yet scientists have never found sunfish eggs in the wild, and their tiny larvae are few and far between. Where do they all go? It's a fishy mystery!",
+  "careAdvice": null,
+  "note": "\"Lay up to 300 million at once\" changed to eggs counted inside one female (potential fecundity); \"almost none survive\" dropped, replaced by the page's missing-eggs enigma."
+ },
+ {
+  "id": 140,
+  "title": "All Bite, No Bark",
+  "newTitle": null,
+  "publisher": "University of Florida News",
+  "url": "https://archive.news.ufl.edu/articles/2003/09/research-alligator-is-animal-kingdoms-champion-chomper.html",
+  "quote": "The largest, a nearly 12 1/2 -foot behemoth weighing 665 pounds named Hercules, bit down with a more than a ton of force, 2,125 pounds, to be exact, or nearly as much force as the weight of a small sedan. That's more forceful than all living animals measured, Vliet said. The lion, for example, has a bite force of about 940 pounds",
+  "newFact": "In a University of Florida study, a nearly 12.5 foot American alligator named Hercules chomped down with 2,125 pounds of force, more than any living animal the researchers measured. That's more than double a lion's bite of about 940 pounds and nearly the weight of a small sedan. Talk about a champion chomper!",
+  "careAdvice": null,
+  "note": "\"Nearly 3,000 pounds\" fixed to 2,125 pounds (Hercules); weak jaw-opening muscles dropped (not on UF, NPS Everglades or National Zoo pages)."
+ },
+ {
+  "id": 141,
+  "title": "The Flying Dragon",
+  "newTitle": null,
+  "publisher": "National Geographic",
+  "url": "https://www.nationalgeographic.com/science/article/falling-leaf-flying-dragon",
+  "quote": "Instead, it extends two flaps of skin from its flanks, supported by unusually long ribs. The flaps look and work like wings, allowing this lizard, the aptly named flying dragon, to glide to safety. They are so adept in the air that they almost never come to the ground. Why bother, when they can travel for 20 to 30 metres between treetops, without losing much altitude?",
+  "newFact": "Draco lizards have unusually long ribs that hold up flaps of skin along their sides. Spread out, the flaps work like wings, letting these flying dragons glide 20 to 30 meters between treetops without losing much height. They are such good gliders that they almost never touch the ground!",
+  "careAdvice": null,
+  "note": "Glide distance fixed from 60 meters to 20 to 30 meters; added the almost-never-lands detail from the same page."
+ }
+]
