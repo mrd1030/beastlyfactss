@@ -395,6 +395,12 @@
 /facts/born-blank-colored-by-cold/ /facts/colored-by-cold/ 301
 /facts/the-shiba-scream /facts/a-sound-all-its-own/ 301
 /facts/the-shiba-scream/ /facts/a-sound-all-its-own/ 301
+/facts/headbutt-means-love /facts/headbutt-means-trust/ 301
+/facts/headbutt-means-love/ /facts/headbutt-means-trust/ 301
+/facts/honeybee-democracy /facts/honeybee-house-hunters/ 301
+/facts/honeybee-democracy/ /facts/honeybee-house-hunters/ 301
+/facts/dads-give-birth /facts/pregnant-dads/ 301
+/facts/dads-give-birth/ /facts/pregnant-dads/ 301
 
 # Splat rules live here, at the very bottom, and nothing goes below them. The
 # two exact-match /encyclopedia/guides rules above still win, since Cloudflare

@@ -706,7 +706,7 @@
       {
         "id": 23,
         "title": "Egg-Laying Mammal",
-        "fact": "The platypus is one of the few mammals that lays eggs! It also has a venomous spur on its hind legs and can detect electric fields with its bill.",
+        "fact": "The platypus is one of the few mammals that lays eggs! A mother lays 1 to 3 eggs, usually 2, then curls up and incubates them by holding them pressed to her belly with her tail. Along with echidnas, platypuses are monotremes, the mammals set apart from all others by egg-laying.",
         "category": "Weird & Wonderful",
         "image": "/assets/facts/platypus.jpg"
       },
@@ -1025,7 +1025,7 @@
       {
         "id": 14,
         "title": "Axolotl Superpowers",
-        "fact": "Axolotls can regenerate entire limbs, their heart, spinal cord, and even parts of their brain with zero scarring! Scientists study them hoping to unlock regeneration secrets for humans.",
+        "fact": "Axolotls are regeneration superheroes! They can regrow lost limbs, their spinal cord, and even parts of their brain and heart, all without forming scar tissue. Scientists study how their cells respond to injury, hoping to learn why healing in humans works so differently and why we can't pull off the same trick.",
         "category": "Weird & Wonderful",
         "image": "/assets/facts/axolotl-3.jpg"
       },
@@ -1577,8 +1577,8 @@
     "facts": [
       {
         "id": 22,
-        "title": "Dads Give Birth",
-        "fact": "Seahorses are the only animals where the male gives birth! The female deposits eggs into the male's pouch, where he fertilizes and carries them until they hatch.",
+        "title": "Pregnant Dads",
+        "fact": "In seahorses, it's the dads who get pregnant! The female hands her eggs to the male before they are fertilized, and he carries the developing embryos. The big-bellied seahorse keeps them in a fully enclosed pouch. Seahorses aren't the only ones, though: their relatives, the pipefishes and seadragons, do it too.",
         "category": "Ocean",
         "image": "/assets/facts/seahorse.jpg"
       },
@@ -1752,7 +1752,7 @@
       {
         "id": 12,
         "title": "Mantis Shrimp Vision",
-        "fact": "Mantis shrimp have 16 types of color receptors (humans have just 3). They can see ultraviolet AND polarized light. They also punch with the force of a bullet!",
+        "fact": "Some mantis shrimp have 12 types of color photoreceptors, while we humans get by with just 3! Their eyes sample light from deep ultraviolet all the way to far red. They can even see polarized light, an effect we only notice through the glare-cutting lenses of polarized sunglasses.",
         "category": "Ocean",
         "image": "/assets/facts/mantis-shrimp.jpg"
       },
