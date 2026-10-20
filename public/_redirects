@@ -477,6 +477,10 @@
 /facts/the-fish-that-walks/ /facts/the-fish-that-breathes-through-its-skin/ 301
 /facts/too-high-to-hear /facts/1300-holes-in-one-tree/ 301
 /facts/too-high-to-hear/ /facts/1300-holes-in-one-tree/ 301
+/facts/century-talkers /facts/parrots-past-eighty/ 301
+/facts/century-talkers/ /facts/parrots-past-eighty/ 301
+/facts/sky-high-sleepers /facts/ten-months-aloft/ 301
+/facts/sky-high-sleepers/ /facts/ten-months-aloft/ 301
 
 # Splat rules live here, at the very bottom, and nothing goes below them. The
 # two exact-match /encyclopedia/guides rules above still win, since Cloudflare

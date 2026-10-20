@@ -214,7 +214,7 @@
       {
         "id": 156,
         "title": "Same Neck Bones as You",
-        "fact": "A giraffe's towering neck contains exactly seven vertebrae, the same number found in a human neck, just enormously stretched out. In the wild they also get by on remarkably little sleep, one tracking study recording as little as 10 minutes a night, taken in a couple of short bursts; giraffes in zoos, with no predators to worry about, sleep several hours more.",
+        "fact": "A giraffe's towering neck contains exactly seven vertebrae, the same number found in a human neck and in other mammals. Each one is just enormously stretched out, giving the giraffe the longest neck of any mammal.",
         "category": "Mammals",
         "image": "/assets/facts/giraffe-2.jpg"
       },
@@ -338,7 +338,7 @@
       {
         "id": 76,
         "title": "Hear With Their Feet",
-        "fact": "Elephants communicate through seismic vibrations in the ground, detecting low-frequency rumbles with specialized receptors in their feet and trunk. They can 'hear' messages from other elephants up to 20 miles away.",
+        "fact": "Elephant rumbles and foot stomps send seismic waves through the ground, and other elephants seem to pick them up, probably with pressure-sensitive receptors packed into their feet and trunk tip, and possibly by vibrations traveling up the bones to the ear. Those ground waves can travel 10 to 20 miles.",
         "category": "Mammals",
         "image": "/assets/facts/elephant-2.jpg"
       },
@@ -482,7 +482,7 @@
       {
         "id": 242,
         "title": "Group Hunting Is Not the Reason",
-        "fact": "The obvious explanation for lion prides is cooperative hunting, and decades of Serengeti data do not support it: food per lion does not reliably improve with group size, because a kill split more ways feeds each one less. What group size does track is territory quality. The best ground, river confluences where prey must come to drink, can only be held by numbers.",
+        "fact": "The obvious explanation for lion prides is cooperative hunting, and decades of Serengeti data do not support it: a female eats fine on her own, and hunting success actually dips in groups of two to four. What pride size does track is territory quality. The best ground, river confluences where kills cluster, takes numbers to hold.",
         "category": "Mammals",
         "image": "/assets/facts/lion-2.jpg"
       }
@@ -571,7 +571,7 @@
       {
         "id": 341,
         "title": "An Arm Down the Burrow",
-        "fact": "The serval has the longest legs for its body size of any cat, and they are not just for running. When a rodent bolts underground, a serval will reach a long foreleg straight down the burrow and hook its meal out of the tunnel.",
+        "fact": "The serval's long legs are not just for running. When a mouse, rat or shrew bolts underground, a serval will reach a long foreleg straight down the burrow and hook its meal out of the tunnel with its sharp claws.",
         "category": "Mammals",
         "image": "/assets/facts/serval-burrow.jpg"
       }
@@ -597,7 +597,7 @@
       {
         "id": 254,
         "title": "It Grows Back",
-        "fact": "Because there is no bone in it and it grows continuously from the base, a rhino horn regrows after being cut above the growth plate. That is what makes dehorning possible as an anti-poaching measure, repeated every couple of years. It is not a clean fix: dehorned rhinos are still killed, and the horn is used for defense and in disputes.",
+        "fact": "A rhino horn grows back after being cut, and that is what makes dehorning possible as an anti-poaching measure. Dehorning 2,284 rhinos across eight reserves cut poaching by 78%, using just 1.2% of the protection budget. It is not a clean fix: poachers still killed some dehorned rhinos for their horn stumps and regrowth.",
         "category": "Mammals",
         "image": "/assets/facts/rhino-2.jpg"
       }
@@ -821,7 +821,7 @@
       {
         "id": 88,
         "title": "Chameleon Color Change",
-        "fact": "Chameleons are famous for their color-changing abilities, but it's not just for camouflage! They change colors in response to mood, temperature, and even social signals, making them masters of both disguise and emotion!",
+        "fact": "Chameleons are famous for their color-changing abilities. They change colors in response to mood, such as fear or anger, plus light, temperature and humidity. Color also sends social signals: brighter males are more dominant and attract more females, while a submissive male shows brown or gray.",
         "category": "Reptiles",
         "image": "/assets/facts/chameleon-3.jpg"
       },
@@ -1214,7 +1214,7 @@
       {
         "id": 283,
         "title": "Half Bird, Half Tail",
-        "fact": "A shima enaga is a genuinely tiny bird, roughly 14 centimeters from beak to tail tip, and close to half of that length is tail. Its name comes from hishaku, a long-handled ladle traditionally used in Japan, a nod to the silhouette of a small round body trailing a long, thin handle.",
+        "fact": "A shima enaga is a genuinely tiny bird, roughly 14 centimeters from beak to tail tip, and close to half of that length is tail. It is smaller than a sparrow and weighs less than 10 grams.",
         "category": "Birds",
         "image": "/assets/facts/shima-enaga-3.jpg"
       }
@@ -1447,7 +1447,7 @@
       {
         "id": 218,
         "title": "Shrinking to Survive a Heatwave",
-        "fact": "During a marine heatwave that ran 4C above average, researchers measuring 134 clownfish found they got shorter. Not thinner, shorter, reabsorbing their own tissue. Around three quarters of the dominant fish shrank at least once, and a single shrinking event raised survival odds by 78%. Every fish that shrank more than once survived.",
+        "fact": "During a marine heatwave that ran 4C above average, researchers measuring 134 clownfish found they got shorter. Not thinner, shorter. Around three quarters of the dominant fish shrank at least once, and a single shrinking event raised survival odds by 78%. Every fish that shrank more than once survived.",
         "category": "Ocean",
         "image": "/assets/facts/clownfish-4.jpg"
       },
@@ -1523,7 +1523,7 @@
       {
         "id": 202,
         "title": "Cells That Switch Careers",
-        "fact": "The immortal jellyfish rebuilds itself through transdifferentiation, where a fully mature cell converts straight into a different mature cell type, such as muscle becoming nerve. One researcher described the scale of it as a butterfly going back to being a caterpillar.",
+        "fact": "The immortal jellyfish rebuilds itself through transdifferentiation, an extremely rare trick where a fully mature cell converts straight into a different mature cell type. The whole reversal has been likened to a butterfly that, instead of dying, turns back into a caterpillar.",
         "category": "Ocean",
         "image": "/assets/facts/jellyfish-4.jpg"
       },
