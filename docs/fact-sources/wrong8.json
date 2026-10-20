@@ -1,0 +1,101 @@
+[
+ {
+  "id": 179,
+  "title": "The World's Happiest Selfie",
+  "newTitle": null,
+  "publisher": "Animal Diversity Web (University of Michigan)",
+  "url": "https://animaldiversity.org/accounts/Setonix_brachyurus/",
+  "quote": "Setonix brachyurus is among the smallest wallabies and is commonly referred to as the quokka. ... The quokka is often referred to as “the happiest animal in the world” by humans. They are very friendly and are a big tourist attraction. Frequently the focus of pictures, these animals often look as though they are smiling at the camera.",
+  "newFact": "Quokkas are among the smallest wallabies, and people often call them \"the happiest animal in the world.\" These friendly little hoppers are a big tourist attraction and frequently the focus of pictures, because they so often look as though they are smiling right at the camera. Natural-born selfie stars.",
+  "careAdvice": null,
+  "note": "Kept the smile point; dropped the mouth-shape cause (no credible source found; NatGeo checked, no mechanism) and the pregnancy pause (wrong trigger, and a second point)."
+ },
+ {
+  "id": 182,
+  "title": "Drinks Through Its Skin",
+  "newTitle": "Scales That Work Like Straws",
+  "publisher": "Royal Society Open Science (2017)",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5627102/",
+  "quote": "Their microstructured skin surface, with channels in between overlapping scales, enables them to collect water by capillarity and passively transport it to the mouth for ingestion. ... The phenomenon of collecting environmental water after rain fall using the skin has previously been termed ‘water absorption’ ... ‘blotting paper effect’ ... and ‘rain-harvesting’ ... In particular, the channels enable a passive transport of collected water to the mouth by capillary action, where (active) ingestion occurs by jaw movements. ... A ventral contact to moist sand could require smaller main capillary channels to overcome the sand water potential",
+  "newFact": "Thorny devils come with built-in plumbing. Tiny channels between their overlapping scales soak up water by capillary action after rain, or even from moist sand, then carry it passively all the way to the mouth. Once it arrives, the lizard simply swallows it with a few jaw movements. No bending down to a puddle required.",
+  "careAdvice": null,
+  "note": "Fixed: water is swallowed at the mouth, so title changed; dew swapped for rain and moist sand; false-head defense cut as a second point."
+ },
+ {
+  "id": 191,
+  "title": "Hunting By Compass",
+  "newTitle": null,
+  "publisher": "Biology Letters (2011)",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3097881/",
+  "quote": "Foxes on the prowl tend to direct their jumps in a roughly north-eastern compass direction. When foxes are hunting in high vegetation and under snow cover, successful attacks are tightly clustered to the north, while attacks in other directions are largely unsuccessful. ... high cover attacks performed within the angular segment of 340°–40° were highly successful (72.5%) ... attacks initiated in other magnetic alignments had a success rate under 18 per cent ... we suggest that mousing red foxes may use the magnetic field as a 'range finder'",
+  "newFact": "When a red fox dives into snow or tall grass after hidden prey, it tends to aim roughly northeast. Direction really matters: pounces aimed into a narrow northern band succeeded about 73 percent of the time, while most other headings succeeded under 18 percent. Researchers suspect foxes use Earth's magnetic field as a built-in rangefinder.",
+  "careAdvice": null,
+  "note": "Fixed: success peaks in a northern sector (340 to 40 degrees), not on the northeast heading; dropped the largest-range claim as unsourced and a second point."
+ },
+ {
+  "id": 198,
+  "title": "Scales With a Return Address",
+  "newTitle": "A DNA Tag for Every Species",
+  "publisher": "Smithsonian's National Zoo and Conservation Biology Institute",
+  "url": "https://nationalzoo.si.edu/news/latest-pangolin-family-tree-provides-key-tracking-worlds-most-trafficked-mammal",
+  "quote": "A new study from the Smithsonian Conservation Biology Institute and partners presents the most comprehensive evolutionary family tree for the eight known species of pangolins and provides a tool that will help conservationists determine which species are being trafficked ... confirming that the genetic divergence among Asian and African pangolins occurred no later than 23 million years ago. The paper also identified genetic markers for each species that can be used to identify them in marketplaces, where pangolins come in various otherwise unrecognizable forms of byproducts.",
+  "newFact": "Pangolins are the world's most trafficked mammal, but their own DNA is fighting back. Smithsonian scientists and partners built a family tree of all eight species, confirming Asian and African pangolins split at least 23 million years ago, and found genetic markers for each one. Now even unrecognizable products in markets can be traced to their species.",
+  "careAdvice": null,
+  "note": "Fixed: the split is a finding of the tree, not its basis; Smithsonian-led became Smithsonian and partners; seized scale became unrecognizable market products, so title changed."
+ },
+ {
+  "id": 204,
+  "title": "A Silent Worldwide Invasion",
+  "newTitle": null,
+  "publisher": "Biological Invasions (2008)",
+  "url": "https://doi.org/10.1007/s10530-008-9296-0",
+  "quote": "Here we identify a human mediated, worldwide introduction of the hydrozoan species Turritopsis dohrnii. ... Medusae of Turritopsis, however, when starved or damaged, are able to revert their life cycle ... They can thus easily survive through long journeys in cargo ships and ballast waters. We have identified a clade of the mitochondrial 16S gene in Turritopsis which contains individuals collected from Japan, the Pacific and Atlantic coasts of Panama, Florida, Spain, and Italy differing from each other in only an average of 0.31% of their base-pairs. Fifteen individuals from Japan, Atlantic Panama, Spain, and Italy shared the same haplotype. ... contributes to making this grand scale invasion a silent one.",
+  "newFact": "Immortal jellyfish from Japan, both coasts of Panama, Florida, Spain and Italy are near genetic twins: one gene differed by just 0.31% on average, and 15 of them shared the exact same sequence. Their likely ride? Cargo ships and ballast water, which these life-rewinding jellies easily survive. The researchers titled their paper \"A silent invasion.\"",
+  "careAdvice": null,
+  "note": "Fixed: sequences were near-identical (0.31%), not identical; phrase is the two authors' paper title, not one scientist's quote; dropped \"spread recently\" (not stated)."
+ },
+ {
+  "id": 205,
+  "title": "Names on a Watchlist",
+  "newTitle": null,
+  "publisher": "PNAS (2026)",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/42224502/",
+  "quote": "we investigated how females assess males by conducting 34 sound playbacks to 17 females and using drone-mounted video to analyze their behavioral responses to individual male identity signals. ... Females who were reproductively available showed a significantly stronger aversive response to the identity signals of males who coerced females at higher rates, suggesting that females track male behavior across time and use individual vocal labels to guide reproductive decision-making based on their experience of individual male behavior.",
+  "newFact": "In a 2026 study, researchers played 17 wild female dolphins the vocal name tags of individual males and filmed their reactions by drone. Females who could conceive reacted with far stronger avoidance to the calls of males who coerced females more often. They seem to track each male's behavior over time, based on their own experience of him.",
+  "careAdvice": null,
+  "note": "Fixed: females go on their own experience of each male, not a population-wide record; dropped Shark Bay and \"11 adult males\" (not in the abstract)."
+ },
+ {
+  "id": 206,
+  "title": "Half the Conversation",
+  "newTitle": null,
+  "publisher": "PLoS ONE (2014)",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4159226/",
+  "quote": "The signature whistle is learned within the first year of life [15] ... Once formed, the frequency modulation pattern remains stable over decades [9], [19] ... Since signature whistles make up around 50% of the whistle repertoire in freely interacting animals [22]",
+  "newFact": "A dolphin isn't born with its signature whistle. Calves learn theirs within the first year of life, and once the pattern forms it stays stable for decades. Signature whistles also make up around half of all the whistles freely interacting dolphins produce, so identity really is half the conversation.",
+  "careAdvice": null,
+  "note": "Fixed: \"most of the conversation\" became half, matching the title and the source's 50%; nothing dropped."
+ },
+ {
+  "id": 208,
+  "title": "Your Name in Someone Else's Voice",
+  "newTitle": "Your Name, Minus the Voice",
+  "publisher": "PNAS (2013)",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3740840/",
+  "quote": "We investigated this in experiments on wild, free-ranging bottlenose dolphins off the east coast of Scotland. ... This whistle encodes individual identity independently of voice features. ... We played back either a synthetic version of the animal’s signature whistle that we had just recorded, thereby producing a copy to address the animal that had the animal’s voice features removed ... Animals responded to hearing their signature whistle by calling back for 8 of the 12 copy playback treatments.",
+  "newFact": "Off the coast of Scotland, researchers played wild bottlenose dolphins synthetic copies of their own signature whistles, built with the original caller's voice features removed. In 8 of 12 playbacks, the dolphins called right back. A dolphin's identity is coded in the whistle itself, independent of the voice that whistles it.",
+  "careAdvice": null,
+  "note": "Fixed: stimuli were synthetic copies with voice features removed (predominantly synthetic), not every trace stripped; dropped \"none responded to other whistles\" (two familiar controls drew matching calls); title changed."
+ },
+ {
+  "id": 212,
+  "title": "Drinking Is Harder Than It Looks",
+  "newTitle": null,
+  "publisher": "Acta Physiologica (2025)",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12012874/",
+  "quote": "In our slightly larger animals, this corresponds to about 1.4 L or ≈5% of measured blood volume. ... When heads were lowered for drinking ... (iii) heart rate fell ... the jugular veins possess valves ... It seems most likely, therefore, that esophageal peristalsis drives jugular venous blood towards the heart during drinking ... It seems surprising that the act of swallowing increases venous return and consequently increases blood pressure.",
+  "newFact": "When a giraffe lowers its head to drink, about 1.4 liters of blood, roughly 5% of its supply, pools in its neck veins and its heart rate falls. A 2025 study found a surprising fix: the waves of swallowing squeeze the valved jugular veins and push that blood back toward the heart.",
+  "careAdvice": null,
+  "note": "Fixed: the 2025 source is an experimental study, not a review; dropped the siphon-rejection claim (not in the study)."
+ }
+]
