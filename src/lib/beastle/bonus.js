@@ -47,6 +47,9 @@ const nameWords = (name) => name.toLowerCase().split(/[\s-]+/).filter((w) => w.l
 // leftover pieces of the name; add to it when a new animal joins the pool.
 const ALSO_MASK = {
   LION: ['lioness'],
+  ORCA: ['killer whale'],
+  CAT: ['kitten'],
+  DOG: ['puppy', 'doggy'],
   RHINOCEROS: ['rhino'],
   MANTIS: ['Mantodea'],
   'PRAYING MANTIS': ['Mantodea'],
