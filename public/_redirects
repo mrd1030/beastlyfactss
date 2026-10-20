@@ -447,6 +447,14 @@
 /facts/zero-to-sixty-in-seconds/ /facts/zero-to-45-in-25-seconds/ 301
 /facts/2000-teeth-and-counting /facts/spare-teeth-on-standby/ 301
 /facts/2000-teeth-and-counting/ /facts/spare-teeth-on-standby/ 301
+/facts/not-immune-just-unsalted /facts/a-trojan-horse-in-slime/ 301
+/facts/not-immune-just-unsalted/ /facts/a-trojan-horse-in-slime/ 301
+/facts/a-placenta-made-of-skin /facts/dads-pouch-plays-placenta/ 301
+/facts/a-placenta-made-of-skin/ /facts/dads-pouch-plays-placenta/ 301
+/facts/he-broke-his-immune-system-first /facts/he-traded-away-immune-parts/ 301
+/facts/he-broke-his-immune-system-first/ /facts/he-traded-away-immune-parts/ 301
+/facts/the-brain-stem-sits-low /facts/the-brain-hides-in-back/ 301
+/facts/the-brain-stem-sits-low/ /facts/the-brain-hides-in-back/ 301
 
 # Splat rules live here, at the very bottom, and nothing goes below them. The
 # two exact-match /encyclopedia/guides rules above still win, since Cloudflare

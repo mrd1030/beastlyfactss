@@ -1460,8 +1460,8 @@
       },
       {
         "id": 220,
-        "title": "Not Immune, Just Unsalted",
-        "fact": "The old explanation was that clownfish coat themselves in anemone slime as a disguise. Research published in 2025 found something more precise: anemone stinging cells are triggered by sugars called sialic acids, and clownfish keep those at normal levels internally while holding them extremely low in their skin mucus alone. They are not wearing a disguise, they removed the trigger.",
+        "title": "A Trojan Horse in Slime",
+        "fact": "Anemone stings fire when they sense sugars called sialic acids. A 2025 study found clownfish keep normal levels in their organs but turn them down in their skin mucus alone. The anemone's own mucus has almost none, so the fish may be a Trojan horse, borrowing the trick the anemone likely uses to avoid stinging itself.",
         "category": "Ocean",
         "image": "/assets/facts/clownfish-6.jpg"
       },
@@ -1591,15 +1591,15 @@
       },
       {
         "id": 226,
-        "title": "A Placenta Made of Skin",
-        "fact": "The male seahorse does not just carry eggs, he gestates them. The pouch seals shut, the embryos become embedded in his tissue, and the heavily vascularised wall handles gas exchange and feeding like a placenta. The difference is what it is built from: a mammal's placenta grows from embryonic tissue, a seahorse's is converted skin.",
+        "title": "Dad's Pouch Plays Placenta",
+        "fact": "A male seahorse does more than carry eggs. Inside his brood pouch, each embryo ends up tucked into its own little compartment in a lining rich in blood vessels. Like a mammal's placenta, the pouch handles gas exchange, waste removal and salt balance, and its inner lining is thought to come from the same layer that covers the outside of his body.",
         "category": "Ocean",
         "image": "/assets/facts/seahorse-3.jpg"
       },
       {
         "id": 227,
-        "title": "He Broke His Immune System First",
-        "fact": "Carrying young means carrying tissue your immune system reads as foreign. Seahorses solved it by demolition rather than regulation: they lost their spleen, their MHC II pathway was lost or rearranged, and three Toll-like receptors conserved across the other vertebrates are simply gone. A vertebrate missing all that should be defenseless.",
+        "title": "He Traded Away Immune Parts",
+        "fact": "Carrying young means carrying tissue the immune system could read as foreign. Seahorses travel light: they have no spleen, they lost three Toll-like receptors that other vertebrates kept, and a key gene in their MHC II pathway has gone highly divergent. They are not defenseless, though: three stand-in receptors seem to partly fill the gap.",
         "category": "Ocean",
         "image": "/assets/facts/seahorse-4.jpg"
       },
