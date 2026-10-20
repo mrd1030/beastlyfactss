@@ -421,6 +421,41 @@ Results: `docs/fact-sources/batchM.json`. 0 confirmed, 22 partly, 3 unconfirmed.
 - 299: "coastal saltwater lagoons" (the source says estuaries); "unusually wide range of salinities for an aquarium fish"; "sometimes just a short distance apart"
 - 300: "glide the exact same way, a furred membrane stretched from wrist to ankle"; "each arriving at a similar structure through a different genetic path" (the paper studied marsupials only, and found separate gliders changed control of the same gene, Emx2)
 
+## Batch N: facts 307 to 348
+
+Results: `docs/fact-sources/batchN.json`. 2 confirmed, 21 partly, 4 unconfirmed.
+
+**Unconfirmed:**
+
+- 307 Same Shelf, Different Families: Searched for a taxonomic page placing Palaemonetes apart from Neocaridina and Caridina multidentata. The Smithsonian repository PDF (De Grave, Cai and Anker 2008) returned 403, and a second search found only hobby and retailer pages. Hobby pages also note that "ghost shrimp" is a loose trade name covering several species.
+- 321 Born Blank, Colored by Cold: Searched for the colorpoint mechanism. The UC Davis Veterinary Genetics Laboratory colorpoint page returned a Cloudflare block, and the CFA Siamese breed page says only that Siamese darken with age. A genetics paper on the cat tyrosinase gene would be the place to source it.
+- 324 The Eyes That Bleed on Command: Searched for the Middendorf and Sherbrooke canid blood-squirting studies. The author page has been retired, the Texas Parks and Wildlife URL redirected to an unrelated page, and the BioOne abstract of the 2005 coyote study returned no text.
+- 343 The Rotten Nest Trick: Searched for the hoopoe nest defense. The Soler et al. 2008 Functional Ecology PDF at the University of Granada repository was blocked, and the one paper reached (Journal of Experimental Biology 2009, "Symbiotic bacteria living in the hoopoe's uropygial gland prevent feather degradation", abstract only) covers gland bacteria that protect feathers, not smell, egg coating or droppings.
+
+**Partly (these details could not be confirmed):**
+
+- 309: "upper beak has small ridges that hold a seed in place while the lower beak cracks and removes the hull" (the page says parrots remove hulls but not how the beak does it)
+- 314: "share their signature defensive move ... with the far larger ball python" (the page does not mention ball pythons); "rarely triggered at all" (the page says it balls up when hiding is not an option)
+- 315: "led by a matriarch, the oldest female" (the paper describes maternal lines, not leadership); "clicks and whistles" (the dialects are discrete pulsed calls); "calves spend years learning" (the paper treats learning as likely but does not measure it)
+- 319: "the only snake known to build a nest"; "spending days"; "compacting them into a waterproof mound"; "almost a meter tall"
+- 320: "even stealing blue items from rival bowers" (the page calls them stolen items without saying from where); "females favor males whose bowers are bluer"
+- 322: "no roots"; "keep growing throughout life"; "hexagonal"; "unlike any other mammal's"; "roughly a foot long"; "by the thousands"
+- 326: "and a dark bill"; "one of the most misidentified birds on the continent"; "almost always a young bald eagle rather than a golden eagle or some unplaceable hawk"
+- 328: "used of a horse or a bird marked in white patches" (the page defines piebald as a mix of dark and white coloration and names no animals)
+- 330: "extra joints in its shoulders" (the page says an extremely flexible shoulder joint); "neck vertebrae" (the page describes the bend, not the vertebrae)
+- 332: "where there is nothing else to eat"; the waving is stated as fact, but the paper offers it as a hypothesis
+- 333: "cannot process it through the kidneys alone"; "a gland above each eye"; "straight out of the bloodstream"; "a white crust dried across the snout and the top of the head"
+- 334: "of any living mammal" (the ranking covers the living predators in the study sample); "higher than lions or tigers" (not named in the abstract); "crunch through entire carcasses, bones, fur and all"; "wears their teeth down to blunt nubs over a lifetime"
+- 335: "bark-like skin flaps make it nearly invisible" (the page credits algae on the shell for the camouflage and says the flaps' function is uncertain); "on a muddy riverbed"
+- 336: the "poor me one" call; "by day" (the page describes the pose as a response to disturbance)
+- 337: "famous for the Shiba scream, a piercing, high-pitched shriek"; "during nail trims, baths, or vet visits" (the page mentions screaming only during leash training); "grooms itself like a cat, licking its paws and coat clean"
+- 339: "the largest ears of any cat for their body size" (not on this page); "each ear can swivel on its own" (the page says the ears rotate, not independently); "calls rodents use to talk to each other" (the page says high-pitched sounds rodents produce); "hidden in tall grass" (the page says even underground)
+- 341: "the longest legs for its body size of any cat" (not on this page)
+- 344: "which is why responsible breeders never pair two tailless Manx cats together" (the page gives no breeding advice; it says completely tailless rumpy cats are most often affected by spina bifida); "shorten the spine itself" (the page says the gene disrupts the tail and sacral vertebrae and the spinal cord)
+- 345: "raise pups together" (the page says females raise the pups, with evidence that males bring them food)
+- 347: "up to a foot away" (the longest squirt filmed in the study reached 0.54 m, about 21 inches); "hardening in seconds"; "basic body plan has barely changed in hundreds of millions of years"; "one of the closest things alive to a true living fossil"
+- 348: "called stumping"; "eyes narrowed to slits" (the page says closing eyes); "snapped off" (the page says a tree branch)
+
 ## Batches B to N
 
 | Batch | Facts | Status |
@@ -437,4 +472,4 @@ Results: `docs/fact-sources/batchM.json`. 0 confirmed, 22 partly, 3 unconfirmed.
 | K | 226 to 250 | done |
 | L | 251 to 275 | done |
 | M | 276 to 306 | done |
-| N | 307 to 348 | running |
+| N | 307 to 348 | done |
