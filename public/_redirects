@@ -377,6 +377,16 @@
 /facts/calls-below-human-hearing/ /facts/calls-that-carry-after-dark/ 301
 /facts/always-running-warm /facts/same-gene-different-hairdo/ 301
 /facts/always-running-warm/ /facts/same-gene-different-hairdo/ 301
+/facts/sixty-five-days-without-food /facts/four-months-without-food/ 301
+/facts/sixty-five-days-without-food/ /facts/four-months-without-food/ 301
+/facts/captive-ones-are-harmless /facts/captive-ones-lose-their-poison/ 301
+/facts/captive-ones-are-harmless/ /facts/captive-ones-lose-their-poison/ 301
+/facts/it-takes-food-from-animals-twice-its-size /facts/it-bullies-bears-off-a-carcass/ 301
+/facts/it-takes-food-from-animals-twice-its-size/ /facts/it-bullies-bears-off-a-carcass/ 301
+/facts/japans-living-snowball /facts/japans-living-snowman/ 301
+/facts/japans-living-snowball/ /facts/japans-living-snowman/ 301
+/facts/from-venom-to-ozempic /facts/the-lizard-behind-the-glp-1-drugs/ 301
+/facts/from-venom-to-ozempic/ /facts/the-lizard-behind-the-glp-1-drugs/ 301
 
 # Splat rules live here, at the very bottom, and nothing goes below them. The
 # two exact-match /encyclopedia/guides rules above still win, since Cloudflare

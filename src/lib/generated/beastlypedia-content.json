@@ -95,7 +95,7 @@
       {
         "id": 258,
         "title": "It Can Live Without Drinking",
-        "fact": "A fennec can go its whole life without drinking free water. It takes moisture from what it eats, and its kidneys concentrate urine far enough to keep the loss on the other side very small. Burrowing does the rest, since the air down in the den stays cooler and far more humid than the surface. Given water a fennec will drink it, but in most of its range there is nothing to drink.",
+        "fact": "A wild fennec can get by indefinitely without ever drinking. Fruit, leaves and roots supply all the moisture it needs, and it sleeps out the hot day in a burrow. Offer one a bowl of water, though, and it will drink happily.",
         "category": "Mammals",
         "image": "/assets/facts/fennec-fox-2.jpg"
       },
@@ -516,7 +516,7 @@
       {
         "id": 251,
         "title": "A Species That Fits in a Town",
-        "fact": "Around 5,500 tigers remain in the wild, across thirteen countries, for the entire species. A century ago the estimate was near 100,000. They have lost roughly 93 to 95 percent of their historic range, and three subspecies are already gone: the Bali, Caspian and Javan tigers.",
+        "fact": "Count every wild tiger on Earth and you get about 5,574, by the Global Tiger Forum's latest estimate. That is the entire species, fewer tigers than people in a small town.",
         "category": "Mammals",
         "image": "/assets/facts/tiger.jpg"
       },
@@ -753,8 +753,8 @@
       },
       {
         "id": 275,
-        "title": "It Takes Food From Animals Twice Its Size",
-        "fact": "A wolverine weighs somewhere around 12 to 18 kilograms, about the same as a medium dog, and there are repeated accounts of one driving wolves and even bears off a carcass. It is not routine and it does not always work. What makes it possible at all is that a wolverine is built far heavier than its size suggests, with a thick hide, long claws and no apparent reverse gear, and a larger animal often decides the meal is not worth the trouble.",
+        "title": "It Bullies Bears Off a Carcass",
+        "fact": "A 1923 Sequoia National Park bulletin records a single wolverine in 1906 taking a cow carcass from two adult bears, which gave it up in great haste. Two years later a pair of mountain lions abandoned their fresh deer kill as one wolverine approached. The author crowned it king beast of the Sierras.",
         "category": "Mammals",
         "image": "/assets/facts/wolverine-2.jpg"
       }
@@ -998,8 +998,8 @@
       },
       {
         "id": 264,
-        "title": "Captive Ones Are Harmless",
-        "fact": "These frogs do not make their toxins. They accumulate them from what they eat in the wild, mainly mites and ants carrying alkaloids of their own, and concentrate the compounds in glands in the skin. Take that diet away and the toxicity goes with it. Captive-bred frogs raised on fruit flies and springtails are effectively non-toxic, which is why keeping one is possible at all and why a wild-caught animal is a completely different proposition.",
+        "title": "Captive Ones Lose Their Poison",
+        "fact": "A blue poison dart frog does not make its own poison. The alkaloids in its skin glands come from its wild prey, especially ants. In captivity it lives mostly on crickets and fruit flies, and without those toxic meals it loses its poisonous properties.",
         "category": "Weird & Wonderful",
         "image": "/assets/facts/blue-poison-dart-frog-2.jpg"
       },
@@ -1124,8 +1124,8 @@
       },
       {
         "id": 248,
-        "title": "Sixty Five Days Without Food",
-        "fact": "A male emperor penguin incubates the egg balanced on his feet through the Antarctic winter, standing in temperatures below minus 40 Celsius in winds over 100 mph, without eating for roughly 65 days. He can lose close to half his body weight. The colony huddle rotates, so birds on the freezing outer edge slowly work their way back to the middle.",
+        "title": "Four Months Without Food",
+        "fact": "A male emperor penguin spends the Antarctic winter with an egg balanced on his feet while temperatures drop well below minus 35 Celsius. The egg takes 65 to 75 days to hatch, and by then he has gone about four months without a meal, living on summer fat and losing nearly half his body mass.",
         "category": "Birds",
         "image": "/assets/facts/penguin-3.jpg"
       }
@@ -1199,8 +1199,8 @@
     "facts": [
       {
         "id": 281,
-        "title": "Japan's Living Snowball",
-        "fact": "The shima enaga is a real wild bird, a Hokkaido-only subspecies of long-tailed tit nicknamed Japan's \"snow fairy.\" Adults lose the dark eye markings juveniles have and end up with a completely white face, and in winter they fluff their feathers for insulation until they look like a round white snowball with a long tail stuck on the back.",
+        "title": "Japan's Living Snowman",
+        "fact": "The shima enaga is a real wild bird, the Hokkaido subspecies of long-tailed tit, and it weighs about 8 grams. Its face is white, and when it faces you its round, fluffy body looks like a tiny snowman, which is how it earned the nickname snow fairy.",
         "category": "Birds",
         "image": "/assets/facts/shima-enaga.jpg"
       },

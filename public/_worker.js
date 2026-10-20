@@ -172,7 +172,7 @@ const ANIMAL_IMAGES = {
 // photo the first fact for that animal used.
 const FACT_IMAGES = {
   247: '/assets/facts/penguin-2.jpg', // "Emperors Rarely Reunite"
-  248: '/assets/facts/penguin-3.jpg', // "Sixty Five Days Without Food"
+  248: '/assets/facts/penguin-3.jpg', // "Four Months Without Food"
   249: '/assets/facts/crocodile.jpg', // "Closer to Birds Than Lizards"
   250: '/assets/facts/crocodile-2.jpg', // "Barely Eating Saved Them"
   251: '/assets/facts/tiger.jpg', // "A Species That Fits in a Town"

@@ -17,13 +17,13 @@
   "title": "A Species That Fits in a Town",
   "newTitle": null,
   "verdict": "saved-adjusted",
-  "publisher": "National Geographic",
-  "url": "https://www.nationalgeographic.com/animals/article/tiger-conservation-asher-jay",
-  "pageTitle": "Pictures: Activist's Art Puts Spotlight on Tiger Threats",
-  "quote": "A century ago 100,000 tigers roamed across Asia from Turkey to the Russian Far East, and south to the islands of Indonesia, across the borders of 30 nations. Since then the big cats have vanished from almost 95 percent of their former range, and just 3,000 or so survive in fragmented pockets of tiger territory scattered across 13 countries.",
-  "correctedFact": "Around 5,500 tigers are left in the wild, and that is the entire species. A century ago an estimated 100,000 roamed Asia, from Turkey to the Russian Far East and south to the islands of Indonesia. Since then tigers have vanished from almost 95 percent of their former range.",
+  "publisher": "WWF Tigers Alive Annual Report 2023 (Global Tiger Forum estimate)",
+  "url": "https://wwftigers.shorthandstories.com/tigers-alive-annual-report-2023/",
+  "pageTitle": "Tigers Alive Annual Report 2023",
+  "quote": "the Global Tiger Forum that there are estimated to be 5,574 tigers in the wild",
+  "correctedFact": "Count every wild tiger on Earth and you get about 5,574, by the Global Tiger Forum's latest estimate. That is the entire species, fewer tigers than people in a small town.",
   "careAdvice": null,
-  "note": "The 5,574 figure is from another page, WWF Tigers Alive Annual Report 2023 (https://wwftigers.shorthandstories.com/tigers-alive-annual-report-2023/): 'the Global Tiger Forum that there are estimated to be 5,574 tigers in the wild'. Nat Geo's 13 countries is tied to its older ~3,000 count, so 'thirteen countries' dropped; extinct subspecies cut as a second point."
+  "note": "Source swapped to WWF per review: the Nat Geo page's own count is older (about 3,000). 100,000 history line dropped."
  },
  {
   "id": 252,
