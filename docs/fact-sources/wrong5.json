@@ -1,0 +1,105 @@
+[
+ {
+  "id": 100,
+  "title": "Butterfly Birthdays",
+  "newTitle": "A Day in the Life",
+  "publisher": "Amateur Entomologists' Society",
+  "url": "https://www.amentsoc.org/insects/fact-files/orders/ephemeroptera.html",
+  "quote": "Mayflies are very shortlived as adults. Most only live between one and four days. ... The name comes from a Greek word meaning 'living a day' due to the adults having very short lives, usually between one and four days only. ... No food is taken ... Some are able to produce up to 3 generations a year, whilst others may take up to 3 years to mature",
+  "newFact": "Mayflies get their scientific name from a Greek word meaning \"living a day.\" That is a little harsh: most adults last one to four days. Still, it's a sprint. Some spend up to three years growing underwater as nymphs, then emerge as winged adults that never eat a single bite.",
+  "careAdvice": null,
+  "note": "Adult life fixed from \"a few hours / same day\" to one to four days; added the Greek 'living a day' name from the same page; new title since a mayfly is not a butterfly."
+ },
+ {
+  "id": 101,
+  "title": "Bouncing Buddies",
+  "newTitle": null,
+  "publisher": "San Diego Zoo Wildlife Alliance",
+  "url": "https://animals.sandiegozoo.org/animals/kangaroo-and-wallaby",
+  "quote": "The red kangaroo is the fastest jumper in mammal land, bouncing up to almost 35 miles (56 kilometers) per hour. ... The larger kangaroos can cover over 23 feet (7 meters) per hop when cruising at top speed ... kangaroos actually burn less energy the faster they hop, at least up to their cruising speed of 20 miles (32 kilometers) per hour.",
+  "newFact": "The red kangaroo is the fastest jumper in mammal land, bouncing along at almost 35 miles per hour. Big kangaroos can cover more than 23 feet in a single hop, and here's the weird part: they burn less energy the faster they hop, at least up to a cruising speed of 20 mph.",
+  "careAdvice": null,
+  "note": "Speed fixed from 40 mph and 'fastest in the animal kingdom' to almost 35 mph, fastest jumper among mammals; dropped the birth and pouch point (one point rule; source says rice grain to honeybee size, not grape)."
+ },
+ {
+  "id": 102,
+  "title": "Silent Swimmers",
+  "newTitle": null,
+  "publisher": "Natural History Museum (London)",
+  "url": "https://www.nhm.ac.uk/discover/octopuses-keep-surprising-us-here-are-eight-examples-how.html",
+  "quote": "An octopus's three hearts have slightly different roles. One heart circulates blood around the body, while the other two pump it past the gills, to pick up oxygen.",
+  "newFact": "An octopus runs on three hearts, and they split the work full time. One heart pumps blood around the body, while the other two push it past the gills to pick up oxygen. Swimming or not, that's the job split. Who needs one heart when you can have a whole crew?",
+  "careAdvice": null,
+  "note": "Heart roles now apply all the time, not only 'when they swim'; dropped the blue blood and 'deep ocean' aside to keep one point."
+ },
+ {
+  "id": 105,
+  "title": "Glowing Oceans, No Joke!",
+  "newTitle": null,
+  "publisher": "Monterey Bay Aquarium Research Institute (MBARI)",
+  "url": "https://www.mbari.org/news/gulf-of-california-2015-leg-3-biodiversity-and-biooptics-log-6/",
+  "quote": "Looking over the stern of the boat, I see a streak of water glow intensely blue, stimulated by the churning of the propellers. Bioluminescent dinoflagellates, ostracods, and other planktonic organisms glow after being disturbed by turbulence from the boat. ... The bioluminescent zooplankton in the water light up when they come in contact with the dolphins, and illuminate a perfect outline of dolphin snouts, fins, bodies, and tails. As the dolphins swim along, the bioluminescent lights stream behind them like shooting stars",
+  "newFact": "Dolphins do not glow, but they can look like they do. Tiny plankton such as dinoflagellates flash blue when the water around them is disturbed. Researchers at sea have watched dolphins swim through them at night, lit up in a perfect outline of snouts, fins and tails, trailing light behind them like shooting stars.",
+  "careAdvice": null,
+  "note": "Glow color fixed from blue-green to blue; dropped 'mainly single-celled' (source lists ostracods and other plankton too)."
+ },
+ {
+  "id": 109,
+  "title": "Underwater Fireworks",
+  "newTitle": null,
+  "publisher": "Marine Biological Laboratory",
+  "url": "https://www.mbl.edu/research/research-organisms/common-cuttlefish",
+  "quote": "Their camouflage abilities are due to special color-changing organs in their skin called chromatophores. Chromatophores act as pixels across the cuttlefish's body, changing their size to alter the pattern and color on the animal's skin. ... the skin-morphing papillae in cuttlefish that allow the animal to change the 3D texture of its skin.",
+  "url2": "https://www.nationalgeographic.com/animals/article/cuttlefish-shape-color-predators",
+  "quote2": "It seems the cuttlefish can assess the color, contrast, even the texture, of their surroundings and emulate it—in seconds and in total darkness.",
+  "newFact": "Cuttlefish can copy the color, contrast and even the texture of their surroundings in seconds. Pigment organs called chromatophores act like pixels, growing and shrinking to repaint the skin, while tiny bumps called papillae reshape it in 3D. Same animal, sandy seafloor one minute, algae-covered rock the next!",
+  "careAdvice": null,
+  "note": "Texture change credited to papillae, not chromatophores; 'blink of an eye' saved as 'in seconds' via National Geographic (Hanlon research); dropped 'mesmerizing underwater performers'."
+ },
+ {
+  "id": 111,
+  "title": "Survival Specialists",
+  "newTitle": null,
+  "publisher": "Smithsonian's National Zoo and Conservation Biology Institute",
+  "url": "https://nationalzoo.si.edu/animals/eastern-box-turtle",
+  "quote": "Box turtles generally live for 25-35 years but have been known to survive to over 100 years old! ... When threatened, the box turtle pulls its body into its shell and waits for the danger to pass.",
+  "newFact": "Box turtles usually live 25 to 35 years, which is already a long run for a small forest turtle. A few go way beyond that and have survived past 100 years old! When danger shows up, these patient survivors simply pull into their shells and wait for it to pass.",
+  "careAdvice": null,
+  "note": "Lifespan fixed: 25 to 35 years is typical, 100+ is rare, and 'longest-living pets' cut; dropped 'months without food' (not on page, not attempted) and the brumation point."
+ },
+ {
+  "id": 112,
+  "title": "Cuddle Drones",
+  "newTitle": "Panic Pincushions",
+  "publisher": "San Diego Zoo Wildlife Alliance",
+  "url": "https://animals.sandiegozoo.org/animals/hedgehog",
+  "quote": "When threatened, the hedgehog raises its quills upright in a crisscross pattern, making its body pointy and sharp. It uses its belly muscles, back muscles, and extra skin to tuck in its head, legs, and tail to curl into a complete ball, protecting its soft belly. The solid ball of spikes is hard for predators to open. ... they cannot roll along when curled into a ball.",
+  "newFact": "A hedgehog curled into a ball isn't asking for cuddles, it's on high alert. When threatened, it raises its quills in a crisscross pattern, then uses belly muscles, back muscles and extra skin to tuck in its head, legs and tail. The result is a ball of spikes predators struggle to open. No Sonic rolling, though!",
+  "careAdvice": null,
+  "note": "Curling reversed from 'cuddles when safe' to a defense when threatened; dropped the speed point (6 mph was wrong, source gives 6.5 ft/s); new title since 'Cuddle Drones' rested on the cuddle claim."
+ },
+ {
+  "id": 113,
+  "title": "Super Sneaky Narwhal",
+  "newTitle": null,
+  "publisher": "Harvard Gazette",
+  "url": "https://news.harvard.edu/gazette/story/2014/03/secrets-of-the-narwhal-tusk/",
+  "quote": "One spiral tooth projects through the upper lip, jutting nine feet out from only one side of the male's head. It is a tooth, not an antler ... Nweeia and his colleagues have mapped a sensory pathway between that spiral tooth and the narwhal brain, along the way showing how the animal may use its tusk to suss out its environment. ... found significant changes depending on water salinity.",
+  "newFact": "The unicorn of the sea's famous tusk is actually a spiral tooth, jutting up to nine feet from one side of a male narwhal's head. Researchers have mapped a sensory pathway from that tooth to the brain, and a narwhal's heart rate shifts when water of different saltiness washes over it. It's a giant sensing tooth!",
+  "careAdvice": null,
+  "note": "Tusk length fixed from 10 to nine feet; 'helps them navigate' replaced with the source's salinity sensing."
+ },
+ {
+  "id": 114,
+  "title": "Rollercoaster Tails",
+  "newTitle": "No Laughing Matter",
+  "publisher": "Australian Museum",
+  "url": "https://australian.museum/learn/animals/birds/laughing-kookaburra/",
+  "quote": "The Laughing Kookaburra is not really laughing when it makes its familiar call. The cackle of the Laughing Kookaburra is actually a territorial call to warn other birds to stay away. ... Laughing Kookaburras are found throughout eastern Australia ... The loud 'koo-koo-koo-koo-koo-kaa-kaa-kaa' is often sung in a chorus with other individuals.",
+  "url2": "https://riverbanks.org/animals/birds/laughing-kookaburra",
+  "quote2": "The kookaburra's call announces a family group's territory near dawn and dusk. ... Because their calls are so loud and predictable, kookaburras are called \"the bushman's alarm clock\".",
+  "newFact": "That hearty \"koo-koo-koo-kaa-kaa-kaa\" across eastern Australia isn't a joke. It's a territorial call telling other birds to stay away, often sung in a chorus with the rest of the family. Kookaburras belt it out so loudly and predictably near dawn and dusk that they're nicknamed \"the bushman's alarm clock.\"",
+  "careAdvice": null,
+  "note": "'Australian outback' fixed to eastern Australia; 'at sunrise' saved as near dawn and dusk via Riverbanks Zoo; new title since the old one had nothing to do with the card."
+ }
+]
