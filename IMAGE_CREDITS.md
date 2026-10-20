@@ -40,3 +40,20 @@ per photo - verify each one.
 owner-generated one-leg photo (`flamingo-3.jpg`), and `flamingo-2.jpg`, a male and female in
 mating season, moved to the new fact 355 "Head-Flagging Season" on flamingo courtship. The
 credit line follows the file, so it still shows wherever the photo does.
+
+## Which tool made each AI image (from 2026-10-20)
+
+Grok's terms ask for "Created with Grok" wherever a Grok image is published, and
+Adobe Stock and Firefly have their own rules, so new images record their tool
+here. The owner's uploads tell them apart: Grok images arrive as .jpg, Firefly
+images (Adobe's own model or its partner models) as .png. Older images were not
+logged; known ones are Grok Imagine for the seven fact photos added 2026-07-06
+(blobfish, bombardier beetle, box jellyfish, Cuban tree frog, hagfish, hairy
+frog, pen-tailed tree shrew) and Adobe Firefly for ids 287 to 296.
+
+| File | Tool | Date |
+|---|---|---|
+| `chicken-2.jpg` | Grok Imagine | 2026-10-20 |
+| `rabbit-4.jpg`, `common-house-spider-2.jpg`, `flamingo-3.jpg`, `kea-2.jpg`, `shiba-inu-2.jpg` | Adobe Firefly | 2026-10-20 |
+| `anglerfish.jpg`, `star-nosed-mole.jpg`, `vampire-bat.jpg` | Adobe Firefly | 2026-10-20 |
+| `cat.jpg`, `snake.jpg` (replacing Adobe Stock) | Adobe Firefly | 2026-10-20 |

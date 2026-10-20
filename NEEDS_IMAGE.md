@@ -26,8 +26,6 @@ list when its photo lands.
 - 3 Parrot, "Parrots Past Eighty": `parrot.jpg`
 - 4 Red Panda, "Not-So-Related Pandas": `red-panda.jpg`
 - 7 Dolphin, "Dolphin Name Tags": `dolphin.jpg`
-- 8 Snake, "Tongue Sniffers": `snake.jpg`
-- 9 Cat, "Headbutt Means Trust": `cat.jpg`
 - 10 Crow, "Crow Detectives": `crow.jpg`
 - 11 Jellyfish, "Immortal Jellyfish": `jellyfish.jpg`
 - 12 Mantis Shrimp, "Mantis Shrimp Vision": `mantis-shrimp.jpg`
