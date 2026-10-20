@@ -491,6 +491,16 @@
 /facts/color-changing-camouflage/ /facts/color-talk-not-camouflage/ 301
 /facts/stomach-acid-that-kills-anthrax /facts/a-hazmat-suit-on-the-inside/ 301
 /facts/stomach-acid-that-kills-anthrax/ /facts/a-hazmat-suit-on-the-inside/ 301
+/facts/born-male-die-female /facts/every-clownfish-starts-male/ 301
+/facts/born-male-die-female/ /facts/every-clownfish-starts-male/ 301
+/facts/dinner-plate-eyes /facts/eyes-built-for-whale-watching/ 301
+/facts/dinner-plate-eyes/ /facts/eyes-built-for-whale-watching/ 301
+/facts/the-only-frog-above-the-arctic-circle /facts/the-frog-that-reaches-the-arctic/ 301
+/facts/the-only-frog-above-the-arctic-circle/ /facts/the-frog-that-reaches-the-arctic/ 301
+/facts/teeth-removed-with-pliers /facts/teeth-clipped-for-sale/ 301
+/facts/teeth-removed-with-pliers/ /facts/teeth-clipped-for-sale/ 301
+/facts/sleeping-with-eyes-open /facts/watching-with-eyes-shut/ 301
+/facts/sleeping-with-eyes-open/ /facts/watching-with-eyes-shut/ 301
 
 # Splat rules live here, at the very bottom, and nothing goes below them. The
 # two exact-match /encyclopedia/guides rules above still win, since Cloudflare

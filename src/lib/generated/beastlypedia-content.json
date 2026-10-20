@@ -12,7 +12,7 @@
       {
         "id": 108,
         "title": "The Most Trafficked Mammal",
-        "fact": "Pangolins are the most trafficked wild mammals on Earth, taken for their scales and meat. All eight species are threatened, and since 2017 every one of them has been under a global ban on commercial trade.",
+        "fact": "Pangolins are the most trafficked wild mammals on Earth, with more than a million traded illegally across borders since 2000. All eight species are threatened, and since 2017 every one of them has been under a global ban on commercial trade.",
         "category": "Weird & Wonderful",
         "image": "/assets/facts/pangolin-2.jpg"
       },
@@ -188,7 +188,7 @@
       {
         "id": 188,
         "title": "The Finger That Finds Grubs",
-        "fact": "An aye-aye's middle finger is thin, skeletal, and double-jointed, built to tap on tree bark up to eight times a second and listen for hollow spots where grubs are hiding. Once it finds one, that same finger reaches in and hooks the grub out, a foraging trick found nowhere else in the animal kingdom.",
+        "fact": "An aye-aye's middle finger is thin, skeletal, and highly flexible, used to tap rapidly on branches while its huge ears listen for hollow spots where grubs are hiding. Once it finds one, that same finger reaches in and hooks the grub out.",
         "category": "Weird & Wonderful",
         "image": "/assets/facts/aye-aye.jpg"
       }
@@ -296,8 +296,8 @@
       },
       {
         "id": 235,
-        "title": "Teeth Removed With Pliers",
-        "fact": "Because a venomous bite makes an animal unsaleable, traders cut out a slow loris's teeth before sale using nail clippers or pliers, without anesthetic. Infection and blood loss kill many before they reach a buyer. For survivors it is permanent: a loris without teeth cannot eat its natural diet or defend itself, so even confiscated animals can never be released.",
+        "title": "Teeth Clipped for Sale",
+        "fact": "To stop them biting buyers, traders routinely clip out a slow loris's front teeth before sale. The practice often kills them, and for survivors it is permanent: at one Indonesian rescue center, 64 percent of 180 confiscated lorises had lost their teeth, ending any hope of release to the wild.",
         "category": "Mammals",
         "image": "/assets/facts/slow-loris-4.jpg"
       }
@@ -631,7 +631,7 @@
       {
         "id": 15,
         "title": "Wombat Cube Poop",
-        "fact": "Wombats produce cube-shaped poop. Stiff and soft bands in the last stretch of the intestine shape the pellets into cubes, and a very dry gut lets the corners hold. The cubes sit on rocks and logs without rolling off, where they work as scent messages carrying identity and breeding status. Despite the common claim, wombats are not territorial.",
+        "fact": "Wombats produce cube-shaped poop. Stiff and soft bands in the last stretch of the intestine shape the pellets into cubes. The cubes sit on rocks and logs without rolling off, where they work as scent messages: wombats can tell droppings apart, and males can read from them when a female is most fertile.",
         "category": "Weird & Wonderful",
         "image": "/assets/facts/wombat.jpg"
       }
@@ -1166,7 +1166,7 @@
       {
         "id": 60,
         "title": "Crow Tool Users",
-        "fact": "New Caledonian crows craft hooked tools from twigs and leaves to extract grubs from bark, and they pass these techniques on to their young, making it a form of animal culture.",
+        "fact": "New Caledonian crows craft an impressive range of tools from sticks and leaves, including hooked tools made from leafy twigs. Researchers described an adult crow and its dependent juvenile making 10 of these hooked-twig tools.",
         "category": "Birds",
         "image": "/assets/facts/crow-2.jpg"
       }
@@ -1317,7 +1317,7 @@
       {
         "id": 181,
         "title": "Leaves That Learned to Swim",
-        "fact": "Leafy sea dragons are covered in leaf-shaped skin flaps that serve purely as camouflage. They actually swim using nearly invisible fins on their neck and back, so from a distance they look like drifting seaweed rather than a fish at all.",
+        "fact": "Leafy sea dragons are covered in leaf-shaped skin flaps that, along with their coloring, give them excellent camouflage on kelp-covered rocky reefs. They actually swim using a fin on their \"neck\" and another on their \"back\".",
         "category": "Ocean",
         "image": "/assets/facts/leafy-sea-dragon.jpg"
       }
@@ -1425,8 +1425,8 @@
     "facts": [
       {
         "id": 69,
-        "title": "Born Male, Die Female",
-        "fact": "All clownfish are born male. When the dominant female of a group dies, the largest male changes sex to become female permanently. Finding Nemo got it backwards!",
+        "title": "Every Clownfish Starts Male",
+        "fact": "Every clownfish starts out male. When the dominant female of a group dies, the largest male changes sex to become female, and the rest of the group moves up the pecking order.",
         "category": "Ocean",
         "image": "/assets/facts/clownfish.jpg"
       },
@@ -1509,7 +1509,7 @@
       {
         "id": 200,
         "title": "Famous Under the Wrong Name",
-        "fact": "For decades the immortal jellyfish was filed under the name Turritopsis nutricula, including in the 1996 paper that made it famous. That name was wrong. A 2026 study confirmed T. nutricula is a separate western Atlantic lineage that cannot reverse its life cycle at all. The species that actually resets itself is Turritopsis dohrnii.",
+        "fact": "For decades the immortal jellyfish was filed under the name Turritopsis nutricula, including in the 1996 paper that called it potentially immortal. That name was wrong. A 2026 study confirmed T. nutricula is a separate western Atlantic lineage that cannot reverse its life cycle at all. The species that actually resets itself is Turritopsis dohrnii.",
         "category": "Ocean",
         "image": "/assets/facts/jellyfish-2.jpg"
       },
@@ -1585,7 +1585,7 @@
       {
         "id": 152,
         "title": "No Stomach, No Problem",
-        "fact": "Seahorses have no stomach at all, so food passes through them so quickly that they must graze almost constantly, some species eating thousands of tiny shrimp a day just to survive. They're also famously bad swimmers, fluttering a tiny dorsal fin up to 35 times a second just to inch forward.",
+        "fact": "Seahorses have no stomach at all, so food passes through them so quickly that they must graze almost constantly just to live and grow. A single seahorse can gobble up to 3,000 brine shrimp a day.",
         "category": "Ocean",
         "image": "/assets/facts/seahorse-2.jpg"
       },

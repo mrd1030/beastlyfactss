@@ -360,7 +360,7 @@ export const FACT_IMAGES = {
   333: '/assets/facts/marine-iguana.jpg',
   334: '/assets/facts/tasmanian-devil.jpg', // "Biggest Bite, Smallest Body"
   335: '/assets/facts/matamata.jpg', // "Sucks First, Asks Later"
-  336: '/assets/facts/potoo.jpg', // "Sleeping With Eyes Open"
+  336: '/assets/facts/potoo.jpg', // "Watching With Eyes Shut"
   337: '/assets/facts/shiba-inu.jpg', // "A Sound All Its Own"
   338: '/assets/facts/frilled-shark.jpg', // "Three and a Half Year Wait"
   339: '/assets/facts/serval-ears.jpg', // "Ears Tuned to Mice"
