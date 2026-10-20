@@ -386,6 +386,41 @@ Results: `docs/fact-sources/batchL.json`. 0 confirmed, 23 partly, 2 unconfirmed.
 - 274: "about 15 kilograms"; "take marrow that other scavengers walk away from"; "which is most of how a wolverine gets through a northern winter"
 - 275: "driving wolves ... off a carcass" (the chapter says wolves sometimes kill wolverines); "repeated accounts" (bear driving is cited only as reputation); "thick hide"; "no apparent reverse gear"; "a larger animal often decides the meal is not worth the trouble"; "12 to 18 kilograms" applies to adult males only (females 8 to 12)
 
+## Batch M: facts 276 to 306
+
+Results: `docs/fact-sources/batchM.json`. 0 confirmed, 22 partly, 3 unconfirmed.
+
+**Unconfirmed:**
+
+- 304 Not Actually Whiskers: the bristles are not odontodes; the 1999 Ancistrus paper (Sabaj, Armbruster and Page) says they are fleshy tentacles grown from the skin sheath around an odontode, and the cheek spines, not the tentacles, are used in fights.
+- 305 Recycling Its Own Shell: no source for shrimp eating their own molt to reclaim calcium; searched Neocaridina and freshwater shrimp exuviae and calcium, found only hobbyist pages and an isopod study.
+- 306 Needs Salt Water to Be Born, Dies From It as an Adult: the adult half (a small dose of salt kills an adult) is not in the 2021 Crustacean Research larval study, which supports only the larvae needing brackish to sea water; no other source found.
+
+**Partly (these details could not be confirmed):**
+
+- 276: "over 4 inches" (the source says up to 4 inches); "if the bird feels cornered"; "shy" and "would much rather vanish into the undergrowth than confront a person"
+- 277: "pick a specific one out of a huge pile just by hearing its name" (the release says she was tested under controlled conditions but does not describe the test setup)
+- 278: "the second fastest land animal on Earth after the cheetah" (the source says fastest in North America); "extinct for thousands of years"; "Scientists believe" (the source says possibly)
+- 279: "rarely fatal to humans"; "one of the most damaging invasive species" (the source says they are the first invasive fish to establish in the Western Atlantic); "preying on more than 70 different reef species" (the source says they eat any fish or invertebrate that fits in their mouths)
+- 280: "largest land dwelling arthropod" (the paper says largest terrestrial crustacean); "rivals a lion's bite" (no lion comparison in the paper); "Researchers measured the biggest crabs pinching with over 3,000 newtons" (the highest measured force was about 1,765 N; 3,300 N is an estimate for a 4 kg crab); "easily enough to crack open a coconut shell"
+- 281: "in winter they fluff their feathers for insulation until they look like a round white snowball with a long tail stuck on the back" (the source only says it is likened to a snow fairy in winter)
+- 282: "shima enaga included" (the page covers the long-tailed tit in general); "enclosed"; "moss"; "instead of the parents needing to rebuild it partway through raising a brood"; "gathered one at a time"
+- 283: "Its name comes from hishaku, a long-handled ladle" (no name origin on this page; the shima enaga page on the same site says "shima" means island, for Hokkaido)
+- 284: "a function of simply being a very large-headed, heavy-bodied snake" (the page does not link yield to body size); "The venom is not the most potent by weight"
+- 285: "Most vipers strike, inject and let go, then track the animal down"; "prey is less likely to stagger off somewhere it cannot follow"; "what makes a bite on a person so much worse than the fang length alone suggests"
+- 286: "heavy enough that the side-to-side motion most snakes use works badly for it" (the paper does not give weight as the reason); "closer to a caterpillar" (the paper compares it to earthworms)
+- 287: "the world's only flightless parrot" (the source says flightless, not the only one); "unusual among parrots"; "a deep booming call that can carry for miles"; "individuals recorded living past 80 years" (the source gives a possible lifespan of 60 to 90 years)
+- 288: "males often weighing 15 to 25 pounds" (the source says a mature male often reaches or exceeds 20 pounds); "measuring 40-plus inches from nose to tail"; "The longest Maine Coon on record, a cat named Stewie, measured 48.5 inches"
+- 289: "14 to 18 inches long" (the source gives no length); "lick its own eyes and ears clean" (the source says reach)
+- 290: "jellyfish" (the paper says cnidarian prey; its study species eats sea anemones); "Scientists are still working out exactly how it keeps the stolen stingers from firing along the way" (the open question in the paper is how the stingers are selected and stored)
+- 291: "its slow metabolism lets it get by on just a few meals a year, living off fat stored in its tail"; "later helped inspire the GLP-1 medications behind Ozempic"
+- 292: "the world's only alpine parrots"; "can outperform some primates in lab tests"; "stripping rubber from cars and snatching gloves, wallets, and food from tourists at ski resorts" (the source says damage to cars and buildings); "Researchers think this constant tinkering with new objects is how kea learn about their world"
+- 293: "chondrodysplasia, a form of dwarfism that keeps the leg bones short while the rest of the body grows normally"; "That same long spine is why the breed is prone to disc problems later in life"
+- 294: "letting them coordinate with their group without alerting nearby predators"
+- 298: "the metallic stripe actually functions as camouflage, reflecting available light in a way that creates false or confusing targets" (the paper suggests the fading of the stripes in bright light may be camouflage, and does not describe reflected light or false targets); "actually" (the paper offers it as a suggestion)
+- 299: "coastal saltwater lagoons" (the source says estuaries); "unusually wide range of salinities for an aquarium fish"; "sometimes just a short distance apart"
+- 300: "glide the exact same way, a furred membrane stretched from wrist to ankle"; "each arriving at a similar structure through a different genetic path" (the paper studied marsupials only, and found separate gliders changed control of the same gene, Emx2)
+
 ## Batches B to N
 
 | Batch | Facts | Status |
@@ -401,5 +436,5 @@ Results: `docs/fact-sources/batchL.json`. 0 confirmed, 23 partly, 2 unconfirmed.
 | J | 201 to 225 | done |
 | K | 226 to 250 | done |
 | L | 251 to 275 | done |
-| M | 276 to 306 | running |
+| M | 276 to 306 | done |
 | N | 307 to 348 | running |
