@@ -1,0 +1,101 @@
+[
+ {
+  "id": 241,
+  "title": "The Pride Belongs to the Females",
+  "newTitle": null,
+  "publisher": "Smithsonian's National Zoo and Conservation Biology Institute",
+  "url": "https://nationalzoo.si.edu/animals/lion",
+  "quote": "Lions are the world's most social felines. They live in groups of related females, called prides ... Females usually stay in their mothers' prides for life, unless food scarcity forces them out. ... They create coalitions, usually with brothers and cousins, and search for a pride to take over. ... Adult males that are fortunate enough to achieve residency within a pride hold tenure for an average of two years, often leaving due to eviction by another coalition of males.",
+  "newFact": "Lions are the world's most social cats, and the pride is built on related females who usually stay in their mothers' prides for life. The males are just tenants. A coalition, often brothers and cousins, moves in, holds the pride for about two years on average, and is often evicted by the next coalition.",
+  "careAdvice": null,
+  "note": "Changed 'only social cat out of roughly forty species' to 'most social'; tenure set to the page's two-year average; dropped the fifteen-year lioness line."
+ },
+ {
+  "id": 246,
+  "title": "Nobody Counts the Votes",
+  "newTitle": null,
+  "publisher": "Cornell Chronicle (Cornell University)",
+  "url": "https://news.cornell.edu/stories/2006/04/honeybee-decision-making-ability-rivals-any-department-committee",
+  "quote": "As soon as 15 or more bees are at any one site, the researchers found, the scouts signal to the waiting bees in the swarm that it's time to warm up their flight muscles in preparation for takeoff. ... As soon as about 15 bees were seen at one site, the swarm would take off for it, even though some scouts were still dancing strongly for the other site. ... the researchers offered swarms four small and one superior site in size. Although the superior site was never the first one found, it was almost always chosen.",
+  "newFact": "A swarm never counts votes. Once about 15 scouts are at one candidate cavity at the same time, they signal the waiting swarm to warm up its flight muscles for takeoff, even while other scouts still dance for a rival site. And it works: offered one superior site among four small ones, swarms almost always picked the best.",
+  "careAdvice": null,
+  "note": "Changed '80 percent' to 'almost always' and 'fifteen to twenty' to about 15; dropped 'the queen does not participate' (one search found no page stating it)."
+ },
+ {
+  "id": 250,
+  "title": "Barely Eating Saved Them",
+  "newTitle": null,
+  "publisher": "The Conversation",
+  "url": "https://theconversation.com/curious-kids-how-did-crocodiles-survive-the-asteroid-that-killed-the-dinosaurs-172390",
+  "quote": "Firstly, crocodile bodies use very little energy. They lie around a lot, breathe slowly and even have a very slow heartbeat. ... It also means they can go without food for months, and sometimes more than a year. This would have been very helpful when food (such as other animals) became hard to find once the asteroid hit.",
+  "newFact": "Crocodiles came through the asteroid that ended the dinosaurs partly by barely needing to eat. Their bodies use very little energy: they lie around a lot, breathe slowly and have a very slow heartbeat. That lets them go months without food, sometimes more than a year, which helped a lot once prey got scarce.",
+  "careAdvice": null,
+  "note": "Replaced the unsupported tenfold ectotherm figure with the page's months-without-food line; cut the habitat point (where the 'fresh water' error sat) to keep one point."
+ },
+ {
+  "id": 255,
+  "title": "The Weekly Trip That Kills Them",
+  "newTitle": null,
+  "publisher": "Proceedings of the Royal Society B (2014)",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3906947/",
+  "quote": "About once a week, three-toed sloths descend from the canopy to the base of their modal tree ... and deposit their dung. After defecation, sloths cover their latrine with leaf litter and ascend to the canopy. ... Descending a tree is both risky and energetically costly for any sloth. Indeed, it is the leading cause of mortality for a sloth; more than one-half of all adult sloth mortalities we have documented were depredation events when sloths were at or near the ground",
+  "newFact": "About once a week, a three-toed sloth climbs all the way down to the base of its tree to poop, then climbs back up. It is a deadly commute. In one study, more than half of all documented adult sloth deaths were predator kills made while the sloth was at or near the ground.",
+  "careAdvice": null,
+  "note": "Fixed the share to more than half of all documented adult deaths; dropped 'drags itself by its front claws' (only found on a two-toed sloth page) and 'fifty times a year'."
+ },
+ {
+  "id": 256,
+  "title": "The Fur Is an Ecosystem",
+  "newTitle": null,
+  "publisher": "Proceedings of the Royal Society B (2014)",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3906947/",
+  "quote": "Individual hairs of three-toed sloths possess unique transverse cracks, which allow the hair shaft to become saturated with rainwater, and which algae then colonize and grow hydroponically ... When a sloth descends a tree and defecates, gravid female moths leave the sloth and oviposit in the fresh excrement. ... Moths are portals for nutrients, increasing nitrogen levels in sloth fur, which fuels algal growth. Sloths consume these algae-gardens, presumably to augment their limited diet. ... this symbiotic alga is only known to inhabit the fur of sloths",
+  "newFact": "A three-toed sloth's hairs have tiny cracks that soak up rainwater, and algae known only from sloth fur grow in them. Moths ride in the coat and lay eggs in the sloth's dung. The moths raise nitrogen in the fur, which feeds the algae, and the sloth eats its own algae garden, presumably to boost a poor leaf diet.",
+  "careAdvice": null,
+  "note": "Changed 'grooves' to cracks; dropped 'tints wild sloths green' and the unsourced 'contested' line."
+ },
+ {
+  "id": 257,
+  "title": "Ears That Work as Radiators",
+  "newTitle": null,
+  "publisher": "Smithsonian's National Zoo and Conservation Biology Institute",
+  "url": "https://nationalzoo.si.edu/animals/fennec-fox",
+  "quote": "They have the largest ears relative to their body size of any member of the canid family, which they use to dispel heat and track down prey underneath the sand. ... The smallest of all canids, fennec foxes ... They usually weigh between 2 and 3 pounds (0.9 to 1.4 kilograms). Perhaps their most notable characteristic is their ears, which can grow to between 4 to 6 inches (10.2 to 15.2 centimeters) in length.",
+  "newFact": "A fennec's ears can grow to about 15 centimeters on a fox weighing roughly a kilogram, the largest ears for body size of any member of the dog family. They are not just for listening. The fox uses them to dump heat, which helps the smallest canid of all keep its cool in the desert.",
+  "careAdvice": null,
+  "note": "Changed 'any carnivore' to the dog family; cut the 'without panting' claim (the page says it pants hard), the blood vessel detail (no credible non-retail page saved it) and the second point on hunting by ear."
+ },
+ {
+  "id": 268,
+  "title": "Both Parents Make Milk",
+  "newTitle": null,
+  "publisher": "Honolulu Zoo",
+  "url": "https://honoluluzoo.org/victoria-crowned-pigeon/",
+  "quote": "Pigeons are unusual among birds in that they produce a milk which has a chemical composition similar to that produced by mammals. Flamingos are the only other birds to share this feature. Pigeon or crop milk is a secretion of the adult crop which forms the complete diet of nestlings for the first few days of life. Crop milk is produced by both sexes.",
+  "newFact": "Pigeons pull off a trick almost no other bird can: they make milk. Crop milk is a secretion of the adult's crop with a chemical makeup similar to mammal milk, and both the male and the female produce it. A crowned pigeon chick lives on nothing else for its first few days. Only flamingos share the feat.",
+  "careAdvice": null,
+  "note": "Reversed 'not milk in any mammalian sense' to the page's 'chemically similar to mammal milk'; dropped protein and fat, no lactose and the day and night incubation shifts; added the flamingo line from the same page."
+ },
+ {
+  "id": 269,
+  "title": "The Impossible Egg",
+  "newTitle": null,
+  "publisher": "Smithsonian's National Zoo and Conservation Biology Institute",
+  "url": "https://nationalzoo.si.edu/animals/north-island-brown-kiwi",
+  "quote": "They have the second largest egg per body weight of any bird. ... The female lays a single extremely large egg — an average of 15 percent of her body weight. Producing such a large (about 1 pound) and energy-rich (over 60 percent yolk) eggs depletes the female's energy reserves.",
+  "newFact": "A female kiwi lays a single egg averaging 15 percent of her body weight. That is about a pound of egg, and over 60 percent of it is yolk, so making it drains her energy reserves. Relative to body size, it is the second largest egg of any bird alive.",
+  "careAdvice": null,
+  "note": "Changed 'largest' to second largest and 'a fifth' to an average of 15 percent; dropped the ostrich 2 percent line (Smithsonian Magazine page returned 403) and the nostril point."
+ },
+ {
+  "id": 270,
+  "title": "The Sprinting Specialist",
+  "newTitle": null,
+  "publisher": "American Kennel Club",
+  "url": "https://www.akc.org/expert-advice/lifestyle/fun-facts-greyhound/",
+  "quote": "In addition to being the fastest dog breed, Greyhounds are one of the fastest animals, period. In fact, Greyhounds have been clocked at more than 35 miles per hour, with the world record sitting at 41.83 miles per hour. (Section heading: Cheetahs Are the Only Land Mammal Faster Than a Greyhound)",
+  "newFact": "Greyhounds are the fastest dog breed and one of the fastest animals, period. They have been clocked at more than 35 miles per hour, and the world record sits at 41.83. The American Kennel Club notes that the cheetah is the only land mammal that can outrun one.",
+  "careAdvice": null,
+  "note": "Changed 45 mph to the 41.83 mph world record; cut the sighthound point to keep one point; added the cheetah line from the same page."
+ }
+]
