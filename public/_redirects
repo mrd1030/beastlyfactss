@@ -467,6 +467,10 @@
 /facts/the-biggest-nest-in-the-tree/ /facts/the-nest-that-keeps-growing/ 301
 /facts/it-dives-in-a-curve-on-purpose /facts/its-sharpest-sight-points-sideways/ 301
 /facts/it-dives-in-a-curve-on-purpose/ /facts/its-sharpest-sight-points-sideways/ 301
+/facts/a-stripe-that-hides-you /facts/stripes-on-a-dimmer-switch/ 301
+/facts/a-stripe-that-hides-you/ /facts/stripes-on-a-dimmer-switch/ 301
+/facts/70-years-in-cancer-labs /facts/lab-stars-since-the-1920s/ 301
+/facts/70-years-in-cancer-labs/ /facts/lab-stars-since-the-1920s/ 301
 
 # Splat rules live here, at the very bottom, and nothing goes below them. The
 # two exact-match /encyclopedia/guides rules above still win, since Cloudflare
