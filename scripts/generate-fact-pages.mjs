@@ -49,6 +49,7 @@ const { facts } = await import('../src/lib/data/facts.js');
 const { slugify } = await import('../src/lib/utils/slugify.js');
 const { truncateDescription } = await import('../src/lib/utils/truncate.js');
 const { absoluteImageFor } = await import('../src/lib/data/factImages.js');
+const { sourceFor } = await import('../src/lib/data/factSources.js');
 
 const HERO = `${SITE}/assets/hero-1200.jpg`;
 
@@ -64,7 +65,11 @@ const attr = (s) =>
 function headFor(fact) {
   const url = `${SITE}/facts/${slugify(fact.title)}/`;
   const title = `${fact.animal}: ${fact.title} | Beastly Facts`;
-  const description = truncateDescription(`${fact.emoji} ${fact.fact}`);
+  // The source rides at the end, so the fact is cut short enough to leave it
+  // room inside the 160-character snippet.
+  const publisher = sourceFor(fact);
+  const sourceNote = publisher ? ` Source: ${publisher}.` : '';
+  const description = truncateDescription(`${fact.emoji} ${fact.fact}`, 160 - sourceNote.length) + sourceNote;
   const factImage = absoluteImageFor(fact);
   const image = factImage || HERO;
   const alt = `${fact.animal} - ${fact.title}`;

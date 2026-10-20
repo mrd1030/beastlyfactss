@@ -4,6 +4,7 @@ import { X, Heart, Share2, Check } from 'lucide-react';
 import { useFavoritesCtx } from '@/lib/FavoritesContext';
 import { slugify } from '@/lib/utils/slugify';
 import { creditFor } from '@/lib/data/photoCredits';
+import { sourceFor } from '@/lib/data/factSources';
 
 // Full-size photo popup for a fact - opened from the "Image" action on
 // FactCard/FactModal, from gallery tiles, and from a Beastfile's fun facts.
@@ -26,6 +27,7 @@ export default function ImageLightbox({ fact, imagePath, onClose }) {
   const fav = factId ? isFavorite(factId) : false;
   // CC BY and CC BY-SA photos carry their credit wherever they are shown.
   const credit = creditFor(imagePath);
+  const source = sourceFor(fact);
 
   const handleShare = () => {
     if (!fact) return;
@@ -99,6 +101,11 @@ export default function ImageLightbox({ fact, imagePath, onClose }) {
                   <p className="font-body font-bold text-sm text-foreground mt-0.5">
                     {fact.title}
                   </p>
+                  {source && (
+                    <p className="text-[11px] font-body text-muted-foreground mt-1">
+                      {`Source: ${source}`}
+                    </p>
+                  )}
                   {credit && (
                     <p className="text-[11px] font-body text-muted-foreground mt-1">
                       Photo:{' '}

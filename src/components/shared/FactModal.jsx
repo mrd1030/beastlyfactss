@@ -5,6 +5,7 @@ import { X, Heart, Share2, Image as ImageIcon } from 'lucide-react';
 import { useFavoritesCtx } from '@/lib/FavoritesContext';
 import { slugify } from '@/lib/utils/slugify';
 import { imagePathFor } from '@/lib/data/factImages';
+import { sourceFor } from '@/lib/data/factSources';
 // 2.8KB of {normalised animal name -> {id, name}}, built by
 // scripts/generate-beastlypedia-index.js. Not the beastfile data itself, which
 // is 94KB, and not the full index at 56KB: this component is imported by Home,
@@ -74,6 +75,9 @@ export default function FactModal({ fact, onClose, onOpenImage }) {
     : beastfileMatch
       ? { to: `/beastlypedia/${beastfileMatch.id}/`, name: beastfileMatch.name }
       : null;
+
+  // Publisher name only, no link; the url and quote stay in the docs record.
+  const source = sourceFor(fact);
 
   useEffect(() => {
     if (!fact) return;
@@ -211,6 +215,12 @@ export default function FactModal({ fact, onClose, onOpenImage }) {
             <p className="text-sm text-muted-foreground leading-relaxed font-body">
               {fact.fact}
             </p>
+
+            {source && (
+              <p className="text-[11px] font-body text-muted-foreground mt-2">
+                {`Source: ${source}`}
+              </p>
+            )}
 
             {profileLink && (
               <Link
