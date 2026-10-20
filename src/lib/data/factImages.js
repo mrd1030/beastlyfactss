@@ -388,7 +388,7 @@ export const FACT_IMAGES = {
   42: '/assets/facts/crested-gecko.jpg', // "Rediscovered in 1994"
   56: '/assets/facts/guinea-pig-3.jpg', // "Guinea Pigs Are Social"
   72: '/assets/facts/cuttlefish-3.jpg', // "Stealth Stripes"
-  149: '/assets/facts/boa-constrictor.jpg', // "Not a Suffocation Squeeze"
+  149: '/assets/facts/boa-constrictor.jpg', // "The Blood-Stopping Squeeze"
 };
 
 // Site-relative path for <img src>, or null if this fact has no dedicated photo yet.

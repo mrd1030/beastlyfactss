@@ -279,7 +279,7 @@ const FACT_IMAGES = {
   164: '/assets/facts/komodo-dragon-2.jpg', // "A Bite That Won't Clot"
   116: '/assets/facts/gecko-2.jpg', // "Climbing the Walls"
   165: '/assets/facts/box-turtle-2.jpg', // "Sealed Shut Like a Box"
-  174: '/assets/facts/american-alligator-2.jpg', // "2,000 Teeth and Counting"
+  174: '/assets/facts/american-alligator-2.jpg', // "Spare Teeth on Standby"
   168: '/assets/facts/axolotl-2.jpg', // "Forever Young, Forever Underwater"
   82: '/assets/facts/honeybee-2.jpg', // "The Tiny Yet Mighty"
   91: '/assets/facts/leafcutter-ant-2.jpg', // "Ancient Ant Farmers"
@@ -287,7 +287,7 @@ const FACT_IMAGES = {
   159: '/assets/facts/honey-badger-2.jpg', // "The Loose-Skin Escape Artist"
   55: '/assets/facts/rabbit-2.jpg', // "Rabbits Need Exercise"
   112: '/assets/facts/hedgehog-2.jpg', // "Panic Pincushions"
-  158: '/assets/facts/cheetah-2.jpg', // "Zero to Sixty in Seconds"
+  158: '/assets/facts/cheetah-2.jpg', // "Zero to 45 in 2.5 Seconds"
   156: '/assets/facts/giraffe-2.jpg', // "Same Neck Bones as You"
   157: '/assets/facts/koala-2.jpg', // "Fingerprints Like Ours"
   173: '/assets/facts/capybara-2.jpg', // "Built-In Snorkel Mode"
@@ -406,7 +406,7 @@ const FACT_IMAGES = {
   42: '/assets/facts/crested-gecko.jpg', // "Rediscovered in 1994"
   56: '/assets/facts/guinea-pig-3.jpg', // "Guinea Pigs Are Social"
   72: '/assets/facts/cuttlefish-3.jpg', // "Stealth Stripes"
-  149: '/assets/facts/boa-constrictor.jpg', // "Not a Suffocation Squeeze"
+  149: '/assets/facts/boa-constrictor.jpg', // "The Blood-Stopping Squeeze"
 };
 
 function imageFor(fact) {

@@ -441,6 +441,12 @@
 /facts/the-snack-time-ant/ /facts/ancient-ant-farmers/ 301
 /facts/fluffy-fish-friends /facts/stinging-roommates/ 301
 /facts/fluffy-fish-friends/ /facts/stinging-roommates/ 301
+/facts/not-a-suffocation-squeeze /facts/the-blood-stopping-squeeze/ 301
+/facts/not-a-suffocation-squeeze/ /facts/the-blood-stopping-squeeze/ 301
+/facts/zero-to-sixty-in-seconds /facts/zero-to-45-in-25-seconds/ 301
+/facts/zero-to-sixty-in-seconds/ /facts/zero-to-45-in-25-seconds/ 301
+/facts/2000-teeth-and-counting /facts/spare-teeth-on-standby/ 301
+/facts/2000-teeth-and-counting/ /facts/spare-teeth-on-standby/ 301
 
 # Splat rules live here, at the very bottom, and nothing goes below them. The
 # two exact-match /encyclopedia/guides rules above still win, since Cloudflare

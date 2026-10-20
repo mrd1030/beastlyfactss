@@ -441,7 +441,7 @@
       {
         "id": 169,
         "title": "The Alpha Wolf Myth",
-        "fact": "The famous 'alpha wolf' idea traces back to 1930s and 1940s zoo studies of unrelated wolves penned together, which triggered artificial power struggles, and a bestselling 1970 book carried it into the mainstream. Decades later, the same biologist who coined the term studied wild wolf packs and found they're simply family units, a breeding pair and their pups, not a rank ladder fought over. He spent years afterward trying to get the myth retracted.",
+        "fact": "The famous 'alpha wolf' came from captive packs: unrelated wolves from various sources placed together, which formed ladders of alphas, betas and omegas. Wild packs are different. After 13 summers watching wolves on Ellesmere Island, biologist L. David Mech concluded the typical pack is simply a family, a breeding pair and their offspring, with the parents leading the way.",
         "category": "Mammals",
         "image": "/assets/facts/wolf-2.jpg"
       }
@@ -713,7 +713,7 @@
       {
         "id": 170,
         "title": "Milk Without Nipples",
-        "fact": "Platypuses don't have nipples. Instead, mothers sweat milk through specialized patches of skin on their belly, and it pools into little grooves for the babies to lap up. It's one of several oddities that come from being a mammal that also lays eggs.",
+        "fact": "Platypuses don't have nipples. Monotremes, the egg-laying mammals, have no teats at all, so once the eggs hatch, the mother starts secreting milk from two fur-covered milk patches on her belly, and the babies suckle right from those furry patches. The milk keeps flowing for three to four months before the youngsters leave the burrow.",
         "category": "Weird & Wonderful",
         "image": "/assets/facts/platypus-2.jpg"
       }
@@ -1032,7 +1032,7 @@
       {
         "id": 168,
         "title": "Forever Young, Forever Underwater",
-        "fact": "Axolotls never grow up in the usual salamander sense. Thanks to a trait called neoteny, they keep their feathery gills and stay fully aquatic for their entire lives, reaching adulthood without ever setting foot on land. Sadly, the wild population now survives in just one place, a shrinking canal system near Mexico City.",
+        "fact": "Axolotls never grow up in the usual salamander sense. They're neotenic, keeping baby features for life: feathery external gills, a tail, a body fin and no movable eyelids. They stay aquatic their whole lives too, and though they do develop working lungs, they breathe underwater with those frilly gills, popping up now and then for a quick gulp of air.",
         "category": "Weird & Wonderful",
         "image": "/assets/facts/axolotl-2.jpg"
       }
@@ -1865,7 +1865,7 @@
       {
         "id": 162,
         "title": "A Million Hairs Per Inch",
-        "fact": "Sea otters have the densest fur of any animal on Earth, up to a million hairs packed into a single square inch. With no blubber to keep them warm, that fur trapping air bubbles is their only insulation, so they spend hours every day grooming to keep it in top shape.",
+        "fact": "Sea otters have the world's densest fur: at its thickest, more than a million hairs per square inch. For comparison, you've probably got 100,000 hairs or fewer on your whole head! With no thick blubber layer, otters spend many hours a day grooming, slicking it with skin oils and fluffing it up with insulating air bubbles.",
         "category": "Ocean",
         "image": "/assets/facts/sea-otter-2.jpg"
       },
