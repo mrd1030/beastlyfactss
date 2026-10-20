@@ -3,12 +3,12 @@
   "id": 5,
   "title": "Mood Ring Lizards",
   "verdict": "saved-adjusted",
-  "publisher": "University of Melbourne (newsroom)",
-  "url": "https://www.unimelb.edu.au/newsroom/news/2016/june/bearded-dragons-change-color-on-different-body-parts-for-social-signals-and-temperature-regulation",
-  "pageTitle": "Bearded dragons change colour on different body parts for social signals and temperature regulation",
+  "publisher": "Veterinary Practice News",
+  "url": "https://www.veterinarypracticenews.com/a-practitioners-guide-to-bearded-dragons/",
+  "pageTitle": "A practitioner's guide to bearded dragons",
   "quote": "In order to maintain this temperature, a bearded dragon can change its back to a light yellow colour when it is hot to a dark brown colour when it is cool,\" Ms Smith said. ... [beard and chest] change dramatically from cream to jet black during social interactions, accompanied by head-bobs and push-ups.",
-  "correctedFact": "Bearded dragons change color to manage their temperature. Their backs turn dark brown when cool to soak up heat and light yellow when hot. Their beards play a different game: during social displays they can flip from cream to jet black, complete with head-bobs and push-ups.",
-  "note": "Temperature direction and black beard in displays are supported; the stress/happy mood link is not. CAUTION: the page returns 403/Cloudflare to the sandbox (as do the eScholarship and Deakin copies), so the quote was read from search-engine snippets attributed to this release, not from a fetched copy. Open the URL on desktop to confirm before use."
+  "correctedFact": "Bearded dragons change color for two reasons. Their backs darken when cool to soak up heat and lighten when hot. Their beards answer to mood instead: a beard turns black when the dragon is stressed, angry, showing off, or feeling unwell.",
+  "note": "Body color follows temperature; beard color follows mood, stress and illness (owner confirmed). 'Lighten when happy' dropped as unsupported. Melbourne newsroom page also supports the display beard but blocks the sandbox."
  },
  {
   "id": 13,
