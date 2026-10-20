@@ -401,6 +401,10 @@
 /facts/honeybee-democracy/ /facts/honeybee-house-hunters/ 301
 /facts/dads-give-birth /facts/pregnant-dads/ 301
 /facts/dads-give-birth/ /facts/pregnant-dads/ 301
+/facts/born-blind-and-deaf /facts/touch-smell-and-taste-first/ 301
+/facts/born-blind-and-deaf/ /facts/touch-smell-and-taste-first/ 301
+/facts/meow-is-just-for-us /facts/meow-is-mostly-for-us/ 301
+/facts/meow-is-just-for-us/ /facts/meow-is-mostly-for-us/ 301
 
 # Splat rules live here, at the very bottom, and nothing goes below them. The
 # two exact-match /encyclopedia/guides rules above still win, since Cloudflare
