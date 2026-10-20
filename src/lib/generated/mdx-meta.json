@@ -26946,7 +26946,7 @@
     "faqs": [],
     "relatedProducts": [],
     "factFile": true,
-    "animalDay": null,
+    "animalDay": "hagfish-day",
     "animal": "Hagfish",
     "myth": "A hagfish produces a liter of slime.",
     "truth": "It produces a teaspoon of protein and thread. The rest of that liter is seawater, recruited in 400 milliseconds.",
@@ -29296,7 +29296,7 @@
     "faqs": [],
     "relatedProducts": [],
     "factFile": true,
-    "animalDay": null,
+    "animalDay": "world-jellyfish-day",
     "animal": "Immortal Jellyfish",
     "myth": "The immortal jellyfish lives forever.",
     "truth": "It can reverse its life cycle back to a polyp, which is not the same as not dying. Most get eaten long before they get the chance.",
@@ -29432,6 +29432,66 @@
     "truth": null,
     "sourceCount": 4,
     "headingCount": 6,
+    "ledeMatchesExcerpt": false,
+    "imageWidth": 1168,
+    "imageHeight": 784
+  },
+  {
+    "path": "/content/guides/international-snow-leopard-day.mdx",
+    "slug": "international-snow-leopard-day",
+    "title": "International Snow Leopard Day Was Signed Into Being by Twelve Governments",
+    "seoTitle": "International Snow Leopard Day: 23 October",
+    "seoDescription": "International Snow Leopard Day is 23 October, set in the 2013 Bishkek Declaration by 12 governments. Why the cat cannot roar and what Vulnerable means.",
+    "lastUpdated": "2026-10-20",
+    "noIndex": false,
+    "excerpt": "23 October comes from a signed intergovernmental text, the Bishkek Declaration of 2013. The cat it honors cannot roar, and its 2017 move from Endangered to Vulnerable was a reassessment of the data, with no recovery behind it.",
+    "date": "2026-10-20",
+    "category": "Wild Animals",
+    "categories": [
+      "Wild Animals"
+    ],
+    "tags": [
+      "Snow Leopard",
+      "International Snow Leopard Day",
+      "Conservation",
+      "Big Cats",
+      "Central Asia",
+      "Wild Animals"
+    ],
+    "readTime": 5,
+    "difficulty": "Beginner",
+    "image": "/assets/images/international-snow-leopard-day.jpg",
+    "imageAlt": "A snow leopard resting on a rocky mountain ledge in light snow, its long thick tail curled beside it and pale green eyes facing the camera",
+    "emoji": "🐆",
+    "lastReviewed": "2026-10-20",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "When is International Snow Leopard Day?",
+        "a": "23 October, every year. The date is the second day of the 2013 forum in Kyrgyzstan where the range countries adopted the Bishkek Declaration, and that document fixes it as an annual observance."
+      },
+      {
+        "q": "Who created International Snow Leopard Day?",
+        "a": "The governments of the twelve countries where snow leopards live: Afghanistan, Bhutan, China, India, Kazakhstan, Kyrgyzstan, Mongolia, Nepal, Pakistan, Russia, Tajikistan and Uzbekistan. They wrote it into the Bishkek Declaration alongside an annual conservation award."
+      },
+      {
+        "q": "Can snow leopards roar?",
+        "a": "No. They purr, hiss, growl, moan and yowl like other large cats, but the anatomy of the throat rules out a roar. Its friendly call is a soft puff of breath known as a chuff."
+      },
+      {
+        "q": "How many snow leopards are left in the wild?",
+        "a": "Estimates run from about 3,920 to 6,390 animals. The figure is uncertain because so little of the mountain range has been surveyed with reliable methods, and the IUCN lists the species as Vulnerable."
+      }
+    ],
+    "relatedProducts": [],
+    "factFile": false,
+    "animalDay": "international-snow-leopard-day",
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 5,
+    "headingCount": 5,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
     "imageHeight": 784
@@ -54624,7 +54684,7 @@
     "title": "Chronicles of Dex the Bearded Dragon: The Sun, the Glass, and the Cricket That Got Away",
     "seoTitle": null,
     "seoDescription": "Meet Dex: a bearded dragon with opinions, ambitions, and a cricket problem. The first story in a funny, warm animal fiction series.",
-    "lastUpdated": "2026-06-27",
+    "lastUpdated": "2026-10-06",
     "noIndex": false,
     "excerpt": "Meet Dex: a bearded dragon with opinions, ambitions, and a cricket problem. This bearded dragon short story kicks off a charming, witty animal fiction series.",
     "date": "2026-06-27",
@@ -54640,12 +54700,12 @@
       "short-fiction-series",
       "funny-short-stories"
     ],
-    "readTime": 4,
+    "readTime": 5,
     "difficulty": null,
     "image": "/assets/images/dex/dex-chron1.jpg",
     "imageAlt": "Bearded dragon basking regally under golden terrarium light, eyes commanding",
     "emoji": "🦎",
-    "lastReviewed": "2026-06-27",
+    "lastReviewed": "2026-10-06",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [],

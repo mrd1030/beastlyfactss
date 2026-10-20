@@ -4779,7 +4779,7 @@
         "Aquatic Life",
         "Wild Animals"
       ],
-      "animalDay": null
+      "animalDay": "hagfish-day"
     },
     {
       "slug": "hamster-cost-guide",
@@ -5215,7 +5215,7 @@
         "Aquatic Life",
         "Wild Animals"
       ],
-      "animalDay": null
+      "animalDay": "world-jellyfish-day"
     },
     {
       "slug": "inherited-eye-disease-dogs-cats-guide",
@@ -5242,6 +5242,18 @@
         "Wild Animals"
       ],
       "animalDay": "international-sloth-day"
+    },
+    {
+      "slug": "international-snow-leopard-day",
+      "title": "International Snow Leopard Day: 23 October",
+      "excerpt": "23 October comes from a signed intergovernmental text, the Bishkek Declaration of 2013. The cat it honors cannot roar,",
+      "date": "2026-10-20",
+      "image": "/assets/images/international-snow-leopard-day.jpg",
+      "category": "Wild Animals",
+      "categories": [
+        "Wild Animals"
+      ],
+      "animalDay": "international-snow-leopard-day"
     },
     {
       "slug": "international-wombat-day",
