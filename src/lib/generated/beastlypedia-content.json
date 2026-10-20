@@ -433,8 +433,8 @@
     "facts": [
       {
         "id": 67,
-        "title": "The River Story, Revisited",
-        "fact": "When wolves returned to Yellowstone in 1995, elk behavior changed and some vegetation recovered, a real ecological effect called a trophic cascade. But the popular claim that wolves single-handedly reshaped the park's rivers has been challenged by a 2025 scientific re-analysis, which found the original evidence was overstated and relied on flawed methodology.",
+        "title": "The Willow Story, Revisited",
+        "fact": "Gray wolves returned to Yellowstone in 1995, and a 2025 study claimed willow crown volume there jumped about 1,500% from 2001 to 2020, calling it one of the world's strongest trophic cascades. A published reply said the methods were fundamentally flawed and sided with earlier work that found only a relatively weak cascade. The wolf debate rolls on.",
         "category": "Mammals",
         "image": "/assets/facts/wolf.jpg"
       },
@@ -1640,7 +1640,7 @@
       {
         "id": 59,
         "title": "Electric Sense",
-        "fact": "Sharks have special jelly-filled pores called ampullae of Lorenzini that detect the tiny electrical fields produced by other animals' heartbeats. They can sense a heartbeat from over a meter away!",
+        "fact": "Sharks sense electricity with organs called ampullae of Lorenzini: hundreds or thousands of pores on the head, each leading down a canal to a gel-filled chamber lined with nerve cells. They pick up the tiny electrical impulses of a nearby animal's muscles and can even detect a beating heart, but only within a few inches.",
         "category": "Ocean",
         "image": "/assets/facts/shark.jpg"
       }
@@ -1792,8 +1792,8 @@
     "facts": [
       {
         "id": 72,
-        "title": "Hypnotic Skin",
-        "fact": "Cuttlefish hypnotize prey by rippling hypnotic patterns across their skin at high speed. The dazzling light show freezes crabs and shrimp in place just long enough to strike.",
+        "title": "Stealth Stripes",
+        "fact": "Broadclub cuttlefish sneak up on crabs by rippling dark stripes down their head and arms. To us it looks flashy, but a 2025 University of Bristol study found the moving stripes seem to overwhelm a crab's vision, so it fails to notice the predator looming closer. Sneaky!",
         "category": "Ocean",
         "image": "/assets/facts/cuttlefish-3.jpg"
       },

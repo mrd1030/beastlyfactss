@@ -405,6 +405,14 @@
 /facts/born-blind-and-deaf/ /facts/touch-smell-and-taste-first/ 301
 /facts/meow-is-just-for-us /facts/meow-is-mostly-for-us/ 301
 /facts/meow-is-just-for-us/ /facts/meow-is-mostly-for-us/ 301
+/facts/healing-purr /facts/healing-purr/ 301
+/facts/healing-purr/ /facts/healing-purr/ 301
+/facts/100-year-commitment /facts/the-century-club/ 301
+/facts/100-year-commitment/ /facts/the-century-club/ 301
+/facts/the-river-story-revisited /facts/the-willow-story-revisited/ 301
+/facts/the-river-story-revisited/ /facts/the-willow-story-revisited/ 301
+/facts/hypnotic-skin /facts/stealth-stripes/ 301
+/facts/hypnotic-skin/ /facts/stealth-stripes/ 301
 
 # Splat rules live here, at the very bottom, and nothing goes below them. The
 # two exact-match /encyclopedia/guides rules above still win, since Cloudflare

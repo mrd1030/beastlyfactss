@@ -227,7 +227,7 @@ const FACT_IMAGES = {
   79: '/assets/facts/dolphin-3.jpg', // "Secrets in the Sound"
   105: '/assets/facts/dolphin-4.jpg', // "Glowing Oceans, No Joke!"
   49: '/assets/facts/cat-3.jpg', // "Meow is Mostly for Us"
-  50: '/assets/facts/cat-6.jpg', // "Healing Purr"
+  50: '/assets/facts/cat-6.jpg', // "Healing Purr?"
   51: '/assets/facts/cat-7.jpg', // "The Righting Reflex"
   52: '/assets/facts/cat-5.jpg', // "Lactose Intolerant Cats"
   53: '/assets/facts/cat-4.jpg', // "Two-Thirds Downtime"
@@ -405,7 +405,7 @@ const FACT_IMAGES = {
   41: '/assets/facts/leopard-gecko.jpg', // "Tail Fat Reserves"
   42: '/assets/facts/crested-gecko.jpg', // "Rediscovered in 1994"
   56: '/assets/facts/guinea-pig-3.jpg', // "Guinea Pigs Are Social"
-  72: '/assets/facts/cuttlefish-3.jpg', // "Hypnotic Skin"
+  72: '/assets/facts/cuttlefish-3.jpg', // "Stealth Stripes"
   149: '/assets/facts/boa-constrictor.jpg', // "Not a Suffocation Squeeze"
 };
 

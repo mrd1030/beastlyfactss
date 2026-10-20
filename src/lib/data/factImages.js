@@ -387,7 +387,7 @@ export const FACT_IMAGES = {
   41: '/assets/facts/leopard-gecko.jpg', // "Tail Fat Reserves"
   42: '/assets/facts/crested-gecko.jpg', // "Rediscovered in 1994"
   56: '/assets/facts/guinea-pig-3.jpg', // "Guinea Pigs Are Social"
-  72: '/assets/facts/cuttlefish-3.jpg', // "Hypnotic Skin"
+  72: '/assets/facts/cuttlefish-3.jpg', // "Stealth Stripes"
   149: '/assets/facts/boa-constrictor.jpg', // "Not a Suffocation Squeeze"
 };
 
