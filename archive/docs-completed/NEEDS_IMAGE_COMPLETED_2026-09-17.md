@@ -8,6 +8,16 @@ Newest first.
 
 ---
 
+## 2026-10-20: three Canva title cards replaced with photos
+
+Facts 134 (anglerfish), 142 (star-nosed mole) and 176 (vampire bat) showed
+Canva-made title cards (the animal's name on a plain background), added in
+July 2026 when no stock photo was found. The owner generated real-looking
+photos matching each card: a female anglerfish with an attached male, a
+star-nosed mole touching a worm, and two vampire bats grooming. Re-encoded
+through mozjpeg at quality 80, not cropped, 1408x768, saved over the same
+filenames, so the id maps are unchanged.
+
 ## 2026-10-20: five mismatched photos swapped, five new facts
 
 After the sourcing pass rewrote these cards, their photos no longer matched.
