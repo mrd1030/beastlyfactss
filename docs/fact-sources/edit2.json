@@ -1,0 +1,220 @@
+[
+ {
+  "id": 3,
+  "title": "Century Talkers",
+  "newTitle": "Parrots Past Eighty",
+  "newFact": "Some parrot species can live over 80 years! The oldest known parrot, Cookie, a Major Mitchell's cockatoo, was at least 82 when he died in 2016, and the hatch date his zoo gave him would make him 83.",
+  "extraSources": [],
+  "careAdvice": null,
+  "note": "Cut the 100 words and context claim; added Cookie's species, death year and the at-least-82 detail from Guinness; title dropped the talking angle."
+ },
+ {
+  "id": 18,
+  "title": "Gecko Toe Magic",
+  "newTitle": null,
+  "newFact": "Geckos can walk on walls thanks to millions of tiny hair-like structures on their toes called setae. Each foot has about 500,000 of them, using molecular forces to stick to surfaces!",
+  "extraSources": [],
+  "careAdvice": null,
+  "note": "Dropped ceilings."
+ },
+ {
+  "id": 44,
+  "title": "Three Eyelids",
+  "newTitle": null,
+  "newFact": "Dogs have three eyelids. A third one called a nictitating membrane helps protect the eye. It is whitish pink, tucked under the lower lid near the nose, and it slides across the eyeball when needed, guarding it from scratches as a dog pushes through brush.",
+  "extraSources": [],
+  "careAdvice": null,
+  "note": "Cut moistening and the sleepy-dog sighting; added color, position and scratch protection from Merck."
+ },
+ {
+  "id": 64,
+  "title": "Sky-High Sleepers",
+  "newTitle": "Ten Months Aloft",
+  "newFact": "Common swifts can stay airborne for up to 10 months without landing. They feed and even mate in the air, and they don't seem to need to land to sleep. They only land to breed!",
+  "extraSources": [
+   {
+    "publisher": "NPR (reporting the Lund University study in Current Biology, quoting Susanne Akesson via National Geographic)",
+    "url": "https://www.npr.org/sections/thetwo-way/2016/10/27/499635084/this-bird-can-remain-airborne-for-10-months-straight"
+   }
+  ],
+  "careAdvice": null,
+  "note": "Eat/sleep/mate line rewritten to the supported wording; title no longer claims they sleep in the sky."
+ },
+ {
+  "id": 76,
+  "title": "Hear With Their Feet",
+  "newTitle": null,
+  "newFact": "Elephants communicate through seismic vibrations in the ground, picking up low-frequency rumbles probably with pressure-sensitive receptors packed into their feet and trunk tip, and possibly by vibrations traveling up the bones to the ear. Those ground waves can travel 10 to 20 miles.",
+  "extraSources": [
+   {
+    "publisher": "Journal of Anatomy (Bouley, Alarcon, Hildebrandt, O'Connell-Rodwell 2007), via PMC; ScienceDaily / Stanford University 2001",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2375831/"
+   }
+  ],
+  "careAdvice": null,
+  "note": "Receptor claim hedged to supported wording; 20 miles reframed as how far the waves travel, not a hearing range."
+ },
+ {
+  "id": 88,
+  "title": "Chameleon Color Change",
+  "newTitle": null,
+  "newFact": "Chameleons are famous for their color-changing abilities. They change colors in response to mood, such as fear or anger, plus light, temperature and humidity. Color also sends social signals: brighter males are more dominant and attract more females, while a submissive male shows brown or gray.",
+  "extraSources": [],
+  "careAdvice": null,
+  "note": "Cut the not-just-camouflage and masters-of-disguise framing; added mood, light, humidity and dominance details from SDZWA."
+ },
+ {
+  "id": 117,
+  "title": "Can't Stop Purring",
+  "newTitle": null,
+  "newFact": "Cheetahs can't roar, but they purr continuously, both while inhaling and exhaling, creating a soothing sound that can go on for minutes! Much like a house cat's purr, this close-range vocalization may signal contentment and can be heard between mothers and cubs.",
+  "extraSources": [],
+  "careAdvice": null,
+  "note": "Cut the big cat comparison and only-nonroaring-feline claim; kept can't roar; added inhale, minutes, house cat and cubs from the zoo page."
+ },
+ {
+  "id": 131,
+  "title": "The Nonstop Flyer",
+  "newTitle": null,
+  "newFact": "A bar-tailed godwit was once tracked flying over 13,000 km from Alaska to Australia without a single stop to eat or rest, the longest nonstop flight ever recorded for any bird.",
+  "extraSources": [],
+  "careAdvice": null,
+  "note": "Dropped drink."
+ },
+ {
+  "id": 145,
+  "title": "Can't Taste Sugar",
+  "newTitle": null,
+  "newFact": "Cats physically cannot taste sweetness. A mutation disabled their sugar taste receptor long ago, so that slice of cake means nothing to your cat, no matter how much they beg. The same broken gene shows up in tigers and cheetahs.",
+  "extraSources": [],
+  "careAdvice": null,
+  "note": "Cut one-of-the-only-mammals; added the tiger and cheetah gene detail from the paper."
+ },
+ {
+  "id": 156,
+  "title": "Same Neck Bones as You",
+  "newTitle": null,
+  "newFact": "A giraffe's towering neck contains exactly seven vertebrae, the same number found in a human neck and in other mammals. Each one is just enormously stretched out, giving the giraffe the longest neck of any mammal.",
+  "extraSources": [],
+  "careAdvice": null,
+  "note": "Cut the sleep sentence; added other mammals and longest mammalian neck from the SDZWA fact sheet."
+ },
+ {
+  "id": 172,
+  "title": "A Thumb That Isn't a Thumb",
+  "newTitle": null,
+  "newFact": "Red pandas grip bamboo with a 'false thumb,' an extended wrist bone that works like an extra digit. Giant pandas share the same trick despite not being closely related to red pandas at all.",
+  "extraSources": [],
+  "careAdvice": null,
+  "note": "Cut independent evolution and the textbook case line; giant pandas now just share the trick."
+ },
+ {
+  "id": 184,
+  "title": "The Rotating Lookout",
+  "newTitle": null,
+  "newFact": "Meerkat mobs post a lookout on a raised perch, like a bush, log or tree, to watch for birds of prey and jackals while the rest of the group forages. Members rotate sentinel duty throughout the day, and a sentinel only goes on guard once its belly is full.",
+  "extraSources": [
+   {
+    "publisher": "Science in School (EIROforum), by Mico Tatalovic, University of Cambridge",
+    "url": "https://scienceinschool.org/article/2008/meerkats/"
+   }
+  ],
+  "careAdvice": null,
+  "note": "Cut scorpion immunity; lookout line set to supported wording; hourly even rotation replaced with Smithsonian rotation plus full-belly detail."
+ },
+ {
+  "id": 190,
+  "title": "The USDA's Nose Squad",
+  "newTitle": null,
+  "newFact": "Since 1984, the USDA's Beagle Brigade has used beagles to sniff out smuggled fruit, meat, and plants in airport luggage, starting with a single dog in Los Angeles. Beagles get the job partly because their friendly, non-threatening size doesn't intimidate travelers waiting in line.",
+  "extraSources": [],
+  "careAdvice": null,
+  "note": "Cut the 120 beagle count and bigger-breeds comparison."
+ },
+ {
+  "id": 202,
+  "title": "Cells That Switch Careers",
+  "newTitle": null,
+  "newFact": "The immortal jellyfish rebuilds itself through transdifferentiation, where a fully mature cell converts straight into a different mature cell type. The process has been likened to a butterfly going back to being a caterpillar.",
+  "extraSources": [],
+  "careAdvice": null,
+  "note": "Cut muscle-to-nerve example and the one-researcher attribution."
+ },
+ {
+  "id": 218,
+  "title": "Shrinking to Survive a Heatwave",
+  "newTitle": null,
+  "newFact": "During a marine heatwave that ran 4C above average, researchers measuring 134 clownfish found they got shorter. Not thinner, shorter. Around three quarters of the dominant fish shrank at least once, and a single shrinking event raised survival odds by 78%. Every fish that shrank more than once survived.",
+  "extraSources": [],
+  "careAdvice": null,
+  "note": "Dropped reabsorbing tissue."
+ },
+ {
+  "id": 229,
+  "title": "The Dance Before the Roll",
+  "newTitle": null,
+  "newFact": "Before rolling, a dung beetle climbs on top of its ball and turns in place. That dance is not celebration, it is a reading. The beetle takes a snapshot of the sky, fixes a heading from it, then rolls while holding that angle constant.",
+  "extraSources": [],
+  "careAdvice": null,
+  "note": "Cut the no-destination closing line."
+ },
+ {
+  "id": 242,
+  "title": "Group Hunting Is Not the Reason",
+  "newTitle": null,
+  "newFact": "The obvious explanation for lion prides is cooperative hunting, and decades of Serengeti data do not support it: food per lion does not reliably improve with group size, and hunting success dips in groups of two to four females. What group size does track is territory quality. The best ground, river confluences where kills cluster, takes numbers to hold.",
+  "extraSources": [],
+  "careAdvice": null,
+  "note": "Kill-split reasoning replaced with the dip at two to four females; confluences now where kills cluster, not where prey drinks."
+ },
+ {
+  "id": 254,
+  "title": "It Grows Back",
+  "newTitle": null,
+  "newFact": "A rhino horn grows back after being cut, and that is what makes dehorning possible as an anti-poaching measure. Dehorning 2,284 rhinos across eight reserves cut poaching by 78%, using just 1.2% of the protection budget. It is not a clean fix: poachers still killed some dehorned rhinos for their horn stumps and regrowth.",
+  "extraSources": [],
+  "careAdvice": null,
+  "note": "Cut no-bone, growth plate, every couple of years and the defense line; added the UCT dehorning numbers."
+ },
+ {
+  "id": 283,
+  "title": "Half Bird, Half Tail",
+  "newTitle": null,
+  "newFact": "A shima enaga is a genuinely tiny bird, roughly 14 centimeters from beak to tail tip, and close to half of that length is tail. It is smaller than a sparrow and weighs less than 10 grams.",
+  "extraSources": [],
+  "careAdvice": null,
+  "note": "Cut the hishaku name origin; added sparrow size and weight from Canon."
+ },
+ {
+  "id": 309,
+  "title": "A Beak Built to Skip the Grit",
+  "newTitle": null,
+  "newFact": "A parrotlet's upper beak has a ridged inner surface, and the sharp cutting edge of its lower beak shells each seed by pressing on the seams of the seed coat before the seed is ever swallowed. That's why parrotlets don't need grit the way some other birds do: there's no whole hull left for a gizzard to grind.",
+  "extraSources": [
+   {
+    "publisher": "Society for Integrative and Comparative Biology (meeting abstract by Dominique Homberger, Louisiana State University)",
+    "url": "https://sicb.org/?p=35036"
+   }
+  ],
+  "careAdvice": null,
+  "note": "Beak line set to supported wording; grit sentence tightened. No-grit is stated as biology (Merck), not a feeding instruction, so kept."
+ },
+ {
+  "id": 323,
+  "title": "The Deepest Swimmer",
+  "newTitle": null,
+  "newFact": "Dumbo octopuses get their name from the two ear-like fins on their mantle that flap to propel them through the water. They live deeper than any other known octopus, with one filmed nearly 7,000 meters down in the Java Trench in 2020.",
+  "extraSources": [],
+  "careAdvice": null,
+  "note": "Cut hadal zone claim; added Java Trench 2020 sighting."
+ },
+ {
+  "id": 341,
+  "title": "An Arm Down the Burrow",
+  "newTitle": null,
+  "newFact": "The serval's long legs are not just for running. When a mouse, rat or shrew bolts underground, a serval will reach a long foreleg straight down the burrow and hook its meal out of the tunnel with its sharp claws.",
+  "extraSources": [],
+  "careAdvice": null,
+  "note": "Cut longest legs for body size; added prey types and claws from LA Zoo."
+ }
+]
