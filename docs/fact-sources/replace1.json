@@ -1,0 +1,35 @@
+[
+ {
+  "id": 93,
+  "oldTitle": "Singing Spiders",
+  "newTitle": "Not Here for the Heat",
+  "publisher": "Burke Museum (University of Washington), Rod Crawford, Spider Myths",
+  "url": "https://www.burkemuseum.org/collections-and-research/biology/arachnology-and-entomology/spider-myths/myth-spiders-come-indoors",
+  "pageTitle": "Myth: Spiders come indoors in the fall | Burke Museum",
+  "quote": "House spiders belong to a small number of species specially adapted for indoor conditions (constant climate, poor food supply, very poor water supply). Some house spider species have been living indoors at least since the days of the Roman Empire, and are seldom to be found outside, even in their native countries (usually Europe). ... If a large number appear at a specific season, it is usually late summer (August and September) ... and their appearance coincides with the mating season of the given species. What you are seeing is sexually mature males wandering in search of mates. ... Generally fewer than 5% of the spiders you see indoors have ever been outdoors.",
+  "newFact": "That spider in your house probably didn't move in to escape the cold. House spiders are a crowd of their own, adapted to indoor life and seldom found outside. Fewer than 5% of the spiders you see indoors have ever been outdoors, and the late summer 'invasion' is just grown males wandering in search of mates!",
+  "note": "Lead angle used. Quote elides an aside set off by dashes on the source page. Photo is an orb weaver silhouette in a window; the card speaks of house spiders in general, so it fits. Cache: cache/R1_spider_burke.txt."
+ },
+ {
+  "id": 106,
+  "oldTitle": "Mission Impossible Tails",
+  "newTitle": "Daddy Day Care",
+  "publisher": "Smithsonian's National Zoo and Conservation Biology Institute",
+  "url": "https://nationalzoo.si.edu/animals/golden-lion-tamarin",
+  "pageTitle": "Golden lion tamarin | Smithsonian's National Zoo and Conservation Biology Institute",
+  "quote": "After a gestation period of about four and a half months, the female usually gives birth to twins. Golden lion tamarins are born fully furred with their eyes open. They cling to their mothers for the first few weeks. All members of the group will carry and care for the infants, but the adult male usually does the largest share. The mother only takes the babies to nurse them.",
+  "newFact": "Golden lion tamarin moms usually give birth to twins, and the babies arrive fully furred with their eyes already open. Then the whole family pitches in on carrying duty, but the adult male usually does the largest share. Mom mostly takes the twins back just to nurse them!",
+  "note": "Lead angle used. The page also says infants cling to their mothers for the first few weeks, so the card avoids claiming dad carries them from birth. Animal field reads 'Tamarin Monkeys'; text names the golden lion tamarin to match the photo. Backup (about 200 wild in the early 1970s, about 2,500 today) is on the same page. Cache: cache/R1_tamarin_nzp.txt."
+ },
+ {
+  "id": 110,
+  "oldTitle": "Invisible Wings",
+  "newTitle": "Treetop Booby",
+  "publisher": "Hawaii Department of Land and Natural Resources, Division of Forestry and Wildlife",
+  "url": "https://dlnr.hawaii.gov/wildlife/birds/a-red-footed-booby/",
+  "pageTitle": "ʻĀ (Red-footed Booby) – Division of Forestry and Wildlife: Wildlife Program",
+  "quote": "The ‘ā or red-footed booby is the smallest booby (Family: Sulidae), and like its Hawaiian relative, they live in tropical regions of both hemispheres. ... pairs generally retain mates throughout several breeding seasons. Unlike other boobies, ‘ā (red-footed booby) roost and build nests in shrubs or trees. ... Nest in bushes or trees, including beach magnolia ( Scaevola sericea ) and beach heliotrope ( Tournefortia argentea ).",
+  "newFact": "The red-footed booby is the smallest booby of all, and it does things its own way. Unlike other boobies, it roosts and builds its nests in shrubs or trees, like beach magnolia and beach heliotrope.",
+  "note": "Lead angle used, sourced from Hawaii DLNR (government) rather than Cornell or Audubon; the page states both points directly and suits the perched photo. Page title contains the publisher's own en dash, kept verbatim. Cache: cache/F_booby_dlnr.txt (fetched in an earlier batch, reused)."
+ }
+]

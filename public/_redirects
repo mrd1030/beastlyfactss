@@ -357,6 +357,12 @@
 /facts/feline-mustache/ /facts/no-mustache-required/ 301
 /facts/faster-than-a-fighter-pilot /facts/more-gs-than-a-fighter-jet/ 301
 /facts/faster-than-a-fighter-pilot/ /facts/more-gs-than-a-fighter-jet/ 301
+/facts/singing-spiders /facts/not-here-for-the-heat/ 301
+/facts/singing-spiders/ /facts/not-here-for-the-heat/ 301
+/facts/mission-impossible-tails /facts/daddy-day-care/ 301
+/facts/mission-impossible-tails/ /facts/daddy-day-care/ 301
+/facts/invisible-wings /facts/treetop-booby/ 301
+/facts/invisible-wings/ /facts/treetop-booby/ 301
 
 # Splat rules live here, at the very bottom, and nothing goes below them. The
 # two exact-match /encyclopedia/guides rules above still win, since Cloudflare
