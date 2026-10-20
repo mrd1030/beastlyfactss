@@ -1,0 +1,215 @@
+[
+ {
+  "id": 10,
+  "title": "Crow Detectives",
+  "newTitle": null,
+  "newFact": "Crows can recognize individual human faces for years and will teach other crows which faces are dangerous. They've been known to bring gifts to people who feed them, from buttons to earrings!",
+  "extraSources": [
+   {
+    "publisher": "BBC News",
+    "url": "https://www.bbc.com/news/magazine-31604026"
+   }
+  ],
+  "careAdvice": null,
+  "note": "Swapped friend-or-foe teaching for the supported dangerous-face learning; dropped 'shiny' before buttons per the gift source."
+ },
+ {
+  "id": 35,
+  "title": "Black Skin, Clear Fur",
+  "newTitle": null,
+  "newFact": "Polar bears have black skin and transparent fur! Their fur only appears white because it reflects visible light. Each hair has no pigment at all, and the bear's nose and claws are black, just like its skin.",
+  "extraSources": [
+   {
+    "publisher": "Live Science",
+    "url": "https://www.livescience.com/43673-weird-facts-about-polar-bears.html"
+   }
+  ],
+  "careAdvice": null,
+  "note": "Cut 'to absorb heat' and 'like snow'; added no-pigment hair and black nose and claws from the firstPass quote."
+ },
+ {
+  "id": 56,
+  "title": "Guinea Pigs Are Social",
+  "newTitle": null,
+  "newFact": "Guinea pigs are highly social animals. They are so social, in fact, that keeping one completely by itself is against the law in Austria and Switzerland, and researchers say individual housing must be avoided.",
+  "extraSources": [],
+  "careAdvice": "Original says guinea pigs should ideally be kept in pairs or small groups; left out of the card.",
+  "note": "Cut the lonely/anxious/depressed claim and the pairs advice; added the Austria and Switzerland ban from the quote."
+ },
+ {
+  "id": 66,
+  "title": "No Two Stripes Alike",
+  "newTitle": null,
+  "newFact": "Every zebra's stripe pattern is completely unique, which helps researchers tell individual zebras apart. Foals put the pattern to use too: a newborn must recognize its mother from birth to survive, so it learns her stripe pattern to stay close to her.",
+  "extraSources": [],
+  "careAdvice": null,
+  "note": "Cut the fingerprint simile and 'within hours'; foal now learns the mother's pattern, as the source says."
+ },
+ {
+  "id": 82,
+  "title": "The Tiny Yet Mighty",
+  "newTitle": null,
+  "newFact": "A single honey bee can visit up to 2,000 flowers in one day, making them key players in our ecosystem! Each bee's pollen baskets only hold so much, though, so she visits about 50 to 100 flowers per trip before flying back to the hive to unload.",
+  "extraSources": [],
+  "careAdvice": null,
+  "note": "Cut the one-third-of-our-food line; added the 50 to 100 flowers per trip detail from the quote."
+ },
+ {
+  "id": 98,
+  "title": "Quacks Like a Duck, Hops Like a Frog",
+  "newTitle": null,
+  "newFact": "Wood frogs are explosive breeders that often get started in late winter or early spring, laying eggs in temporary woodland pools with no fish. Instead of a typical frog croak, males call with a soft, duck-like quack, sometimes from pools still rimmed with ice.",
+  "extraSources": [],
+  "careAdvice": null,
+  "note": "Cut 'a week or two', 'right as snowmelt fills' and 'serenading females'; timing now late winter or early spring."
+ },
+ {
+  "id": 124,
+  "title": "Gliding Rainforest Acrobat",
+  "newTitle": null,
+  "newFact": "Wallace's flying frog doesn't just leap: it glides like a tiny amphibian paraglider! Using its enormous webbed feet, it can travel up to 15 meters (about 50 feet) between rainforest trees, and large toe pads give it a soft landing and help it stick to tree trunks.",
+  "extraSources": [],
+  "careAdvice": null,
+  "note": "Cut parachutes, rudders, steering and descent control; added 15 m glide and toe pads from the quote; hyphen dash fixed."
+ },
+ {
+  "id": 134,
+  "title": "The Ultimate Clingy Partner",
+  "newTitle": null,
+  "newFact": "Male anglerfish are a fraction of the female's size, and in some species he fuses permanently to her body, their skin and blood vessels merging until he depends on her entirely for nutrients, like a donated organ in a transplant patient.",
+  "extraSources": [],
+  "careAdvice": null,
+  "note": "Replaced the sperm-supply ending with the supported nutrient dependence and transplant comparison."
+ },
+ {
+  "id": 147,
+  "title": "A Nose Built Different",
+  "newTitle": null,
+  "newFact": "A dog's sense of smell is estimated to be 10,000 to 100,000 times more sensitive than a human's. Their noses hold up to 300 million smell receptors, compared with about six million in ours.",
+  "extraSources": [],
+  "careAdvice": null,
+  "note": "Cut the wet-nose claim; added the 300 million vs six million receptor count from the quote."
+ },
+ {
+  "id": 163,
+  "title": "Stomach on the Outside",
+  "newTitle": null,
+  "newFact": "Starfish move with a water-powered hydraulic system that pumps seawater through tiny tube feet. When they catch prey, they simply push their own stomach out through their mouth onto the meal and digest it externally, then pull the stomach back inside.",
+  "extraSources": [],
+  "careAdvice": null,
+  "note": "Cut 'no brain and no blood', 'hundreds of' and 'too big to swallow'; added pulling the stomach back in."
+ },
+ {
+  "id": 178,
+  "title": "The Loudest Animal Alive",
+  "newTitle": null,
+  "newFact": "Sperm whale echolocation clicks can reach 236 decibels underwater when measured head-on, by far the loudest sound recorded from any animal. Each click is a short, single pulse, exactly what a long-range biosonar needs.",
+  "extraSources": [],
+  "careAdvice": null,
+  "note": "Cut the diver's chest and giant squid lines; raised 230 to the measured 236 dB and added the biosonar pulse detail."
+ },
+ {
+  "id": 186,
+  "title": "Not a Vampire At All",
+  "newTitle": null,
+  "newFact": "Despite the name, the vampire squid doesn't drink blood. It survives on marine snow drifting down through the deep ocean: bits of jellylike plankton, crustacean remains, diatoms and fecal pellets. That odd diet lets it live where oxygen is very low, predators are few and typical squid food is scarce.",
+  "extraSources": [],
+  "careAdvice": null,
+  "note": "Cut the umbrella display and 'twilight zone'; filled with the marine snow contents and low-oxygen payoff from the quote."
+ },
+ {
+  "id": 196,
+  "title": "70 Million Insects a Year",
+  "newTitle": null,
+  "newFact": "One adult pangolin can eat more than 70 million insects in a single year, almost all of them ants and termites. It gathers them with a tongue covered in sticky saliva that is longer than its own body.",
+  "extraSources": [],
+  "careAdvice": null,
+  "note": "Cut the soil and burrow lines; added the sticky tongue longer than its body from the quote."
+ },
+ {
+  "id": 209,
+  "title": "Mirror Babies",
+  "newTitle": null,
+  "newFact": "Two dolphin calves at the National Aquarium in Baltimore were tracked at a mirror over three years. One began showing self-directed behavior at 5.5 months old, earlier than human children usually manage (about 12 to 15 months) and much earlier than chimpanzees.",
+  "extraSources": [],
+  "careAdvice": null,
+  "note": "Cut the closing 'still genuinely debated' sentence."
+ },
+ {
+  "id": 223,
+  "title": "Two Antifreezes, Two Schedules",
+  "newTitle": null,
+  "newFact": "Freezing solid needs two chemicals on opposite timetables. Urea accumulates through autumn, before any ice forms, as preparation. Glucose is a reaction: once freezing begins, the liver quickly dumps its glycogen and blood sugar soars. Both work by reducing how much of the frog's body turns to ice.",
+  "extraSources": [],
+  "careAdvice": null,
+  "note": "Cut 'the instant', the diabetic coma comparison and the inside-the-cells mechanism; ending now says both reduce ice, per the paper."
+ },
+ {
+  "id": 231,
+  "title": "Tested in a Planetarium",
+  "newTitle": null,
+  "newFact": "To prove which part of the sky mattered, researchers took beetles into a Johannesburg planetarium. With only the Milky Way projected and every individual star removed, they still got out reasonably quickly. With only scattered bright stars and no Milky Way, they took much longer. Their eyes cannot resolve single stars: they steer by the band.",
+  "extraSources": [],
+  "careAdvice": null,
+  "note": "'Fell apart' became 'took much longer'; dropped the full-starfield sentence to stay under 60 words; comma splice fixed."
+ },
+ {
+  "id": 245,
+  "title": "Bees Silence the Opposition",
+  "newTitle": null,
+  "newFact": "When a swarm is choosing a new home, scout bees advertise sites by dancing. To stop the vote deadlocking, a scout committed to one site will head-butt a bee dancing for a rival site and deliver a short buzz. These stop signals inhibit the rival's dance, and they are aimed at competitors, not delivered at random.",
+  "extraSources": [],
+  "careAdvice": null,
+  "note": "Cut '350 Hz' and the stops-after-enough line; buzz now 'short', with the inhibition from the quote."
+ },
+ {
+  "id": 271,
+  "title": "The Biggest Tree Dweller",
+  "newTitle": null,
+  "newFact": "Orangutans are the largest tree-dwelling mammals on Earth, with arms much longer than their legs and grasping hands and feet with long, curved fingers and toes. They live at every level of the forest, from the floor to the canopy, and are very well adapted to life in the trees.",
+  "extraSources": [],
+  "careAdvice": null,
+  "note": "Cut 7-foot span, 95 percent and joint claims; 'animals' became 'mammals'; rebuilt from the zoo quote."
+ },
+ {
+  "id": 287,
+  "title": "A Parrot That Forgot to Fly",
+  "newTitle": null,
+  "newFact": "The kakapo is a flightless parrot and the heaviest parrot species alive, with males weighing up to 4 kg. It's also nocturnal, and during mating season males make a deep booming call. Kakapos may be the longest-lived bird species, with an estimated lifespan of 60 to 90 years.",
+  "extraSources": [],
+  "careAdvice": null,
+  "note": "Cut 'world's only', 'unusual among parrots' and 'carry for miles'; 'past 80 years' became an estimated 60 to 90."
+ },
+ {
+  "id": 317,
+  "title": "The Land Animal That Senses Electricity",
+  "newTitle": null,
+  "newFact": "Echidnas have no teeth and grind up ants and termites with hard pads in their mouth after flicking a sticky tongue in and out. Their snout is also packed with electroreceptors that pick up the faint electrical signals of prey, and when this was found in 1989 it was the first known case of electroreception in a land animal.",
+  "extraSources": [
+   {
+    "publisher": "Journal of Physiology (Gregory, Iggo, McIntyre, Proske 1989), via PMC",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1189155/"
+   }
+  ],
+  "careAdvice": null,
+  "note": "Cut the 100-a-minute rate and 'underground'; electroreception line rewritten to the supported 'first in a land animal'."
+ },
+ {
+  "id": 331,
+  "title": "The Termite Marathon",
+  "newTitle": null,
+  "newFact": "Captive numbats have been seen eating up to 20,000 termites a day, taken with a tongue that stretches at least 5 centimeters past the tip of its nose to reach down their tunnels. Another oddity is the schedule: unlike most other marsupials, the numbat hunts in daylight, because that is when termites move near the surface.",
+  "extraSources": [],
+  "careAdvice": null,
+  "note": "Termite count, tongue length and 'most other marsupials' set to the source; teeth sentence cut (not in a quote)."
+ },
+ {
+  "id": 348,
+  "title": "The Branch That Wasn't",
+  "newTitle": null,
+  "newFact": "When disturbed at its daytime roost, a tawny frogmouth stretches its head and body into one straight line and freezes, with its feathers flattened and its eyes closed. The pose makes the bird look like a tree branch, which likely hides it from daytime bird predators.",
+  "extraSources": [],
+  "careAdvice": null,
+  "note": "Cut 'stumping', slit eyes, 'snapped off' and 'by day'; added the straight-line stretch and predator purpose from the quote."
+ }
+]
