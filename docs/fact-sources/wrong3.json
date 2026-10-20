@@ -1,0 +1,103 @@
+[
+ {
+  "id": 50,
+  "title": "Healing Purr",
+  "newTitle": "Healing Purr?",
+  "publisher": "The Journal of the Acoustical Society of America (2001)",
+  "url": "https://doi.org/10.1121/1.4777098",
+  "quote": "Forty-four felids were recorded including cheetahs, ocelots, pumas, domestic cats, and servals. ... Every felid in the study generated strong frequencies between 25 and 150 Hz. Purr frequencies correspond to vibrational/electrical frequencies used in treatment for bone growth/fractures, pain, edema, muscle growth/strain, joint flexibility, dyspnea, and wounds. ... An internal healing mechanism would be advantageous, increasing recovery time and keeping muscles and bone strong when sedentary.",
+  "newFact": "Every cat in one acoustic study, from house cats and servals to cheetahs and pumas, purred with strong frequencies between 25 and 150 Hz. That range matches vibrations used in therapy for healing bones, so the study proposed the purr might be a built-in repair kit. It's still just a hypothesis!",
+  "careAdvice": null,
+  "note": "Healing reframed as a proposed hypothesis, title gets a question mark; dropped stress relief and the human-benefit claim (not on the source, not attempted: no credible support expected)."
+ },
+ {
+  "id": 52,
+  "title": "Lactose Intolerant Cats",
+  "newTitle": null,
+  "publisher": "VetAgro Sup Animal Welfare Chair",
+  "url": "https://chaire-bea.vetagro-sup.fr/en/cats-can-drink-cows-milk-true-or-false/",
+  "quote": "In kittens, lactase activity decreases after 4 to 7 weeks [1]. ... All cats are lactose intolerant, it's just a matter of quantity! In the study mentioned above, cats tolerated 1.3g of lactose per kilo but not 4.5g/kg. It is the state of the stools that informs us about their tolerance.",
+  "newFact": "Every cat is lactose intolerant, it's just a matter of quantity! Kittens' milk-digesting enzyme winds down between 4 and 7 weeks old, but in one study adult cats still handled 1.3 g of lactose per kilo of body weight. Push it to 4.5 g and the litter box tells the story.",
+  "careAdvice": "Card's \"Skip the milk bowl\" is feeding advice the source contradicts (it says most adult cats can drink a small amount, ideally diluted in water, and unweaned kittens need cat formula, not cow's milk). Left out of newFact.",
+  "note": "Removed the skip-the-milk advice; card now says tolerance is a matter of dose (1.3 g/kg fine, 4.5 g/kg not). Dropped the cartoon aside."
+ },
+ {
+  "id": 55,
+  "title": "Rabbits Need Exercise",
+  "newTitle": null,
+  "publisher": "University of Bristol",
+  "url": "https://www.bristol.ac.uk/news/2023/april/pet-rabbits-exercise.html",
+  "quote": "Irrespective of the hutch size, physical activity including play jumps increased significantly when the pairs with restricted access were released into the run. The researchers suggest this activity rebound demonstrates the rabbits' need to move every day, and their welfare is compromised when they can only do so at midday. The research team found there is a significant interaction between hutch size and run access on activity and stress hormone levels, which were highest in the pairs kept in small hutches with restricted run access. When rabbits had unrestricted access to the run, midday was the rabbits' least active time.",
+  "newFact": "Rabbits need room to move every day. In a University of Bristol study, rabbit pairs allowed into their run for only three hours at midday burst into play jumps once released, and pairs in small hutches with that routine had the highest stress hormone levels. Midday is naturally their laziest time!",
+  "careAdvice": "Card's \"at least 3 hours of exercise outside their enclosure every day\" is husbandry advice (and the study found 3 hours at midday was the restricted condition). The source's own advice: allow exercise in the morning and afternoon, avoid hutches of about 0.75 square meter for pairs. Left out of newFact.",
+  "note": "Replaced the 3 hour minimum with the study's finding that 3 hours at midday raised stress; dropped \"not low-maintenance pets\" (not on the page)."
+ },
+ {
+  "id": 57,
+  "title": "100-Year Commitment",
+  "newTitle": "The Century Club",
+  "publisher": "Smithsonian's National Zoo and Conservation Biology Institute",
+  "url": "https://nationalzoo.si.edu/node/8835",
+  "quote": "Sable arrived at the Zoo in 1956 along with a male Aldabra tortoise named Alex, who still resides at the Zoo. Both were adults and at least 30 years old when they arrived. Aldabra tortoises have extraordinary long lifespans, and can live for more than 100 years. Keepers estimate that Sable was at least 87 years old and possibly could have been closer to 100 years old",
+  "newFact": "Aldabra tortoises can live for more than 100 years. At the Smithsonian's National Zoo, a tortoise named Sable arrived in 1956 already at least 30 years old. When she died in 2013, keepers estimated she was at least 87, and possibly closer to 100!",
+  "careAdvice": "Card's \"adopting one is genuinely a lifelong commitment\" and \"include them in your will\" are pet-ownership advice, not sourced. Left out of newFact.",
+  "note": "Narrowed \"tortoises\" to Aldabra tortoises and built on Sable's story; dropped the will line and adoption framing; title no longer about adoption."
+ },
+ {
+  "id": 59,
+  "title": "Electric Sense",
+  "newTitle": null,
+  "publisher": "University of Texas Marine Science Institute",
+  "url": "https://utmsi.utexas.edu/science-and-the-sea/radio-program/ampullae-of-lorenzini/",
+  "quote": "The network consists of hundreds or thousands of pores on the shark's head that are big enough to see with the naked eye. The pores open onto canals that are lined with small hairs like those inside the human ear. Each canal leads to a small gel-filled chamber, the ampulla, that's lined with nerve cells. These organs detect the electrical impulses generated by the muscle contractions of nearby fish, seals, or other creatures. They're so sensitive that they can even detect a beating heart. But they only work at close range, within a few inches.",
+  "newFact": "Sharks have hundreds or thousands of pores on their heads, called ampullae of Lorenzini, each opening onto a canal that leads to a gel-filled chamber lined with nerve cells. They pick up the tiny electrical impulses of a nearby animal's muscles and can even detect a beating heart, but only within a few inches.",
+  "careAdvice": null,
+  "note": "Range fixed from \"over a meter\" to \"within a few inches\"; signal source corrected to muscle contractions; \"jelly\" now \"gel\" per source."
+ },
+ {
+  "id": 61,
+  "title": "Hippo Sunscreen",
+  "newTitle": null,
+  "publisher": "Nature News (2004)",
+  "url": "https://www.nature.com/news/2004/040524/full/news040524-7.html",
+  "quote": "Researchers have identified the chemicals responsible for the ancient myth that the beasts sweat blood. In reality, hippos' secretions are neither blood nor precisely sweat, but a mixture of pigments that function as both sunscreen and antibiotic ... found two pigments, one red and one orange ... they conclude that the compound would indeed shield hippos from harmful ultraviolet rays. And the red pigment also restricts the growth of the disease-causing Pseudomonas aeruginosa and Klebsiella pneumoniae",
+  "newFact": "Hippos ooze a blood-red secretion behind the ancient myth that they sweat blood. It's neither blood nor true sweat, but a mix of red and orange pigments that blocks harmful ultraviolet rays like sunscreen. The red one even holds back disease-causing bacteria!",
+  "careAdvice": null,
+  "note": "\"Scientists once thought it was blood\" corrected to an ancient myth; dropped \"oily\" and the \"blood sweat\" nickname (not on the page, not fetched)."
+ },
+ {
+  "id": 62,
+  "title": "Ants Farm Fungi",
+  "newTitle": null,
+  "publisher": "Smithsonian magazine",
+  "url": "https://www.smithsonianmag.com/smithsonian-institution/ants-farmed-fungi-in-the-wake-of-dinosaurs-demise-66-million-years-ago-180985193/",
+  "quote": "Leafcutter ants today, for example, snip off leaves to take back to their nests and deposit them as food for the fungus that they then eat. ... Agricultural ants evolved about 66.65 million years ago, the researchers found, just about the time that life was struggling to recover from the asteroid's aftermath.",
+  "newFact": "Leafcutter ants don't eat the leaves they carry. They snip them off and haul them home as food for a fungus, and the fungus is what they eat. Fungus-farming ants got their start about 66 million years ago, just after the asteroid that doomed the dinosaurs!",
+  "careAdvice": null,
+  "note": "Farming age now credited to fungus-farming ants as a group (about 66 million years), not leafcutters specifically; nothing dropped."
+ },
+ {
+  "id": 67,
+  "title": "The River Story, Revisited",
+  "newTitle": "The Willow Story, Revisited",
+  "publisher": "Global Ecology and Conservation (2025)",
+  "url": "https://doi.org/10.1016/j.gecco.2025.e03899",
+  "quote": "Ripple et al. (2025) recently argued that large carnivore recovery in Yellowstone National Park triggered one of the world's strongest trophic cascades, citing a ~1500% increase in willow crown volume derived from plant height data. In this comment, we show that their conclusion is invalid due to fundamental methodological flaws. ... These shortcomings explain the apparent conflict with Hobbs et al. (2024), who found evidence for a relatively weak trophic cascade ... they reported a ~1500% increase in willow crown volume from 2001 to 2020",
+  "url2": "https://www.nps.gov/yell/learn/historyculture/wolf-management.htm",
+  "quote2": "Gray wolves, restored in 1995, freely roam the park.",
+  "newFact": "Gray wolves returned to Yellowstone in 1995, and a 2025 study claimed willow crown volume there jumped about 1,500% from 2001 to 2020, one of the world's strongest trophic cascades. Researchers from Utah State and Colorado State answered that the methods were fundamentally flawed, siding with earlier work that found only a relatively weak cascade.",
+  "careAdvice": null,
+  "note": "Re-pointed the critique from rivers to the willow regrowth claim; saved \"1995\" from NPS; dropped \"elk behavior changed\" and the river story."
+ },
+ {
+  "id": 72,
+  "title": "Hypnotic Skin",
+  "newTitle": "Stealth Stripes",
+  "publisher": "University of Bristol",
+  "url": "https://www.bristol.ac.uk/biology/news/2025/cuttlefish-mesmerise-their-prey-with-a-moving-skin-pattern-study-finds.html",
+  "quote": "the team uncovered a novel form of motion camouflage, whereby the broadclub cuttlefish pass dark stripes downwards across their head and arms to disguise their hunting manoeuvres. ... Their findings suggest that the visual system of the prey may be overwhelmed by the strong motion produced by the stripes, causing them to fail to detect the looming cues of the approaching predator. ... \"To our eyes this dynamic display looks very conspicuous, standing out strongly from the background\"",
+  "newFact": "Broadclub cuttlefish sneak up on crabs by rippling dark stripes down their head and arms. To us it looks flashy, but a 2025 University of Bristol study found the moving stripes seem to overwhelm a crab's vision, so it fails to notice the predator looming closer. Sneaky!",
+  "careAdvice": null,
+  "note": "Hypnosis and freezing prey replaced with motion camouflage that hides the approach; dropped \"at high speed\" and \"dazzling light show\"; new title."
+ }
+]
