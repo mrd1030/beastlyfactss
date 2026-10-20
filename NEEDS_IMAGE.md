@@ -28,6 +28,29 @@ photo is ever shared:
    ("When your rabbits are happy, you might notice them do a little 'binky'. This
    is when they hop in the air, twist a little bit, then land back on the ground.")
 
+**Photo swaps for four more mismatched facts, each freeing a photo for a new fact**:
+found 2026-10-20. After the sourcing pass rewrote these cards, their photos no
+longer match. Each card gets a new photo, and the old photo moves to a new,
+already sourced fact. Do each swap in one install so no photo is ever shared.
+Prompts were given in chat on 2026-10-20.
+
+| Card now | Photo now | Why it no longer fits | Old photo goes to |
+|---|---|---|---|
+| 93 Common House Spider, "Not Here for the Heat" | `common-house-spider.jpg` | an orb weaver, not a house spider | new fact 354 |
+| 151 Flamingo, "The One-Leg Trick" | `flamingo-2.jpg` | two flamingos on two legs | new fact 355 |
+| 292 Kea, "The Rubber-Chewing Parrot" | `kea.jpg` | holds a glove; glove theft was cut as unsourced | new fact 356 |
+| 337 Shiba Inu, "A Sound All Its Own" | `shiba-inu.jpg` | nail clippers in a bathroom; nail-trim scream was cut | new fact 357 |
+
+New facts for the freed photos (sourced 2026-10-20):
+
+- **354 Orb Weaver Spider** (Weird & Wonderful) - Eats Its Own Web. Some orb-weaver spiders remake their webs every day, even when nothing is broken. Spinning all that silk takes a lot of protein, so the spider eats the old web as it takes it down. The silk protein travels from its gut back to its silk glands to be spun into the new one. Source: Indiana Public Media (A Moment of Science), https://indianapublicmedia.org/amomentofscience/spiders-recycling/ ("When the orb-weaver takes apart an old web, it actually eats the silk.")
+- **355 Flamingo** (Birds) - Head-Flagging Season. Flamingo dating starts with head flagging. Birds stretch their necks as tall as they can and swing their heads side to side, looking like flags blowing in the wind. At the Houston Zoo, the Chilean flamingos start head flagging around January and February, one of the first breeding behaviors of the year. Source: Houston Zoo, https://houstonzoo.org/blog/march-flamingos-look-flamingo-dating ("The flamingos will elongate their necks as much as possible and move their heads side to side, looking a lot like flags blowing in the wind.")
+- **356 Kea** (Birds) - The Only Alpine Parrot. The kea is found only in New Zealand's Southern Alps, which makes it the world's only mountain parrot, according to New Zealand's Department of Conservation. Even its name comes from the mountains: the Maori named it for the sound of its call. Source: New Zealand Department of Conservation, https://blog.doc.govt.nz/2014/09/17/photo-of-the-week-kea/ ("The kea, named by Maori for the sound of its call, is endemic to the Southern Alps of New Zealand and is the world's only mountain parrot.")
+- **357 Shiba Inu** (Dogs & Cats) - The Cat-Dog. Vets at VCA Animal Hospitals nickname the Shiba Inu "the cat-dog." Its small ears point upward much like a cat's, and these naturally fastidious dogs tend to take to housetraining quite easily. Source: VCA Animal Hospitals, https://vcahospitals.com/know-your-pet/shiba-inu ("Housetraining comes quite easily to these naturally fastidious dogs.")
+
+Fact 100 (Mayfly) also showed a butterfly emoji; it was changed to a fly on
+2026-10-20, so it needs nothing more.
+
 ## Guide heroes still needed
 
 None. All 17 animal-day heroes (docs/NOV_DEC_ANIMAL_DAYS.md) landed on
@@ -82,6 +105,32 @@ public/_redirects when the draft is promoted, or give the draft a new title.
 5. **Pygmy Marmoset** (Mammals) - Too High to Hear. Pygmy marmosets keep in touch by chattering and trilling in high-pitched voices, and some of their sounds climb so high that human ears can't catch them at all. Stand under a troop of the world's smallest monkeys and you may only hear part of the conversation. Visual hook: A tiny pygmy marmoset clinging to a tree trunk with its mouth open mid-call. Source: San Diego Zoo Wildlife Alliance, https://animals.sandiegozoo.org/animals/pygmy-marmoset
 6. **Hoatzin** (Birds) - Fossil Hands on a Baby Bird. Baby hoatzins have wing claws in proportions strikingly similar to those of Archaeopteryx, the famous feathered fossil, while adult hoatzins look quite different. That makes the climbing chicks a living stand-in, helping scientists picture how early birds with clawed wings may have clambered through branches. Visual hook: A fuzzy hoatzin chick gripping a branch with the small claws on its wings. Source: Science Advances (2019), https://pmc.ncbi.nlm.nih.gov/articles/PMC6530998/
 7. **Marine Iguana** (Reptiles) - The Shrinking Lizard. When El Niño warms the Galapagos and their favorite algae vanish, marine iguanas do something wild: they shrink, losing not just weight but up to 20% of their body length. Shrunken iguanas survive longer, and when cool water brings food back, they grow again. Some do it several times in one life. Visual hook: A marine iguana basking on black lava rock beside the surf. Source: Natural History Museum, London, https://www.nhm.ac.uk/discover/shrinking-galapagos-marine-iguanas.html
+
+## Possible future facts: second points cut in the 2026-10-19 sourcing pass
+
+Each was cut from a card to keep it to one point, or because the card's one
+source did not cover it. None is sourced yet. Before any becomes a fact it needs
+its own credible source and its own photo, and it must not repeat a card already
+on the site. The full notes are in `docs/fact-sources/` (wrong*.json, edit*.json).
+
+- 12 Mantis Shrimp: the punch, often compared to a bullet (the bullet comparison was unsourced).
+- 23 Platypus: males carry a venomous ankle spur; platypuses also find prey by electroreception.
+- 29 Starfish: some species reproduce by splitting in half.
+- 40 Bearded Dragon: females wave to show they are receptive.
+- 78 Cleaner wrasse: a fish that has also been reported to pass the mirror test.
+- 101 Kangaroo: birth and the journey to the pouch.
+- 154 Chicken: newly hatched chicks show signs of object permanence within days.
+- 163 Starfish: how tube feet move a sea star.
+- 168 Axolotl: the wild range is down to three sites in Xochimilco and Chalco.
+- 179 Quokka: a pregnancy can pause, depending on whether the pouch joey survives.
+- 182 Thorny Devil: the knob on its neck works as a false head.
+- 198 Pangolin: when the pangolin lineages split.
+- 279 Lionfish: the invasion of the western Atlantic since the 1980s.
+- 289 Okapi: found in the wild only in the Democratic Republic of the Congo (unverified).
+- 315 Orca: matriarch-led family groups, and calves learning their pod's calls.
+- 317 Echidna: it has no teeth.
+- 338 Frilled Shark: about 300 teeth in rows (unsourced).
+- 345 Maned Wolf: females raise the pups, and males may bring food.
 
 ## How a blocked fact works
 
