@@ -1,0 +1,103 @@
+[
+ {
+  "id": 214,
+  "title": "A Queen Ruling by Smell",
+  "newTitle": null,
+  "publisher": "Nature (2026)",
+  "url": "https://www.mdc-berlin.de/node/105697",
+  "quote": "Naked mole-rats provide a striking example, with reproduction restricted to a single queen, while all other females remain infertile. ... Isopropyl myristate is a low-volatility ester that is enriched in queens and nearly absent from non-breeding animals. ... Exposure alters levels of prolactin and progesterone in non-breeders to suppress reproduction. Daily addition of isopropyl myristate to a queenless colony prevented queen succession, whereas withdrawal triggered aggression and reproductive competition.",
+  "newFact": "A naked mole rat colony has one breeding queen, and every other female stays infertile. A 2026 study found a scent that helps keep it that way: isopropyl myristate, an ester rich in queens and nearly absent in non-breeders. Add it daily to a queenless colony and no successor rises. Withdraw it and the fighting starts.",
+  "careAdvice": null,
+  "note": "Fixed 'fertile but suppressed' to 'stays infertile' per the abstract; dropped 'dozens' of non-breeders (no colony size on the page)."
+ },
+ {
+  "id": 216,
+  "title": "Every Colony Has an Accent",
+  "newTitle": null,
+  "publisher": "Science (2021)",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/33510025/",
+  "quote": "Here we show that the most common naked mole-rat vocalization, the soft chirp, is used to transmit information about group membership, creating distinctive colony dialects. ... Pups fostered in foreign colonies in early postnatal life learn the vocal dialect of their adoptive colonies, which suggests vertical transmission and flexibility of vocal signatures. Dialect integrity is partly controlled by the queen: Dialect cohesiveness decreases with queen loss and remerges only with the ascendance of a new queen.",
+  "newFact": "The naked mole rat's most common call, a soft chirp, carries a colony-specific dialect. It is learned, not inherited: pups fostered into a foreign colony early in life grow up chirping their adoptive colony's dialect. The queen holds it all together. Lose her and the accent gets sloppy, tightening up again only when a new queen rises.",
+  "careAdvice": null,
+  "note": "Replaced 'accent shifts with a new queen' with the source's version: dialect loosens when the queen is lost and re-forms when a new one rises. Nothing dropped."
+ },
+ {
+  "id": 220,
+  "title": "Not Immune, Just Unsalted",
+  "newTitle": "A Trojan Horse in Slime",
+  "publisher": "BMC Biology (2025)",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11829568/",
+  "quote": "sialic acid levels are specifically decreased in anemonefish mucus but not in other organs, including skin ... One relevant possibility would be that giant sea anemones also use the lack of sialic acid to avoid stinging themselves and in that view, anemonefish may in fact behave as Trojan horse high jacking the very same strategy to avoid triggering nematocyst discharge. ... We conclude that anemonefish regulates the level of sialic acids in their mucus to avoid nematocyst discharge.",
+  "newFact": "Anemone stings fire when they sense sugars called sialic acids. A 2025 study found clownfish keep normal levels in their organs but turn them down in their skin mucus alone. The anemone's own mucus has almost none, so the fish may be a Trojan horse, borrowing the trick the anemone likely uses to avoid stinging itself.",
+  "careAdvice": null,
+  "note": "Changed 'removed the trigger' to lowered levels; dropped 'extremely low' and 'not a disguise' (paper keeps mimicry open); added the paper's Trojan horse angle; new title since 'unsalted' implied none at all."
+ },
+ {
+  "id": 222,
+  "title": "Alaska Rewrote the Limit",
+  "newTitle": null,
+  "publisher": "PLoS ONE (2015)",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4331536/",
+  "quote": "Whereas frogs indigenous to the upper Midwestern United States and southern Canada tolerate freezing only to temperatures as low as -3 to -6°C, frogs from Interior Alaska readily survived experimental freezing to -16°C. We hypothesize that extreme freeze tolerance in this northern phenotype derives in part from an enhanced cryoprotectant system that uses urea, which accumulates in autumn and early winter, before freezing occurs, and glucose ... Alaskan frogs collected in late summer had plasma urea levels near 10 μmol ml-1, but this level rose during preparation for winter to 85.5 ± 2.9 μmol ml-1 ... uremic levels in HYD frogs, which reached 86 μmol ml-1, were elevated 8-fold.",
+  "newFact": "Wood frogs from the upper Midwest and southern Canada survive freezing only to about -3C to -6C. Wood frogs from Interior Alaska, the very same species, readily survive -16C. Part of their secret is urea banked before any ice forms: as winter nears, Alaskan frogs push their plasma urea up about eightfold over their late summer level.",
+  "careAdvice": null,
+  "note": "Fixed range to upper Midwest and southern Canada; eightfold is now Alaskan late summer vs winter, not vs temperate frogs; 'mostly from urea' softened to 'part of'."
+ },
+ {
+  "id": 226,
+  "title": "A Placenta Made of Skin",
+  "newTitle": "Dad's Pouch Plays Placenta",
+  "publisher": "Zoological Letters (2017)",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5646163/",
+  "quote": "Embryos are finally embedded within individual compartments formed in pseudoplacenta, and there, the number of blood vessels increases. The brood pouch, like the mammalian placenta, performs the functions of gas exchange, waste removal, and osmoregulation. ... The epithelium facing the lumen of the pouch is considered to be derived from epithelium that covers the outser surface of the body.",
+  "newFact": "A male seahorse does more than carry eggs. Inside his brood pouch, each embryo ends up tucked into its own little compartment in a lining rich in blood vessels. Like a mammal's placenta, the pouch handles gas exchange, waste removal and salt balance, and its inner lining is thought to come from the same layer that covers his outside.",
+  "careAdvice": null,
+  "note": "Replaced 'feeding' with waste removal and salt balance; dropped 'seals shut' and the mammal-placenta-origin contrast; skin origin now hedged as 'thought to', so the title changed."
+ },
+ {
+  "id": 227,
+  "title": "He Broke His Immune System First",
+  "newTitle": "He Traded Away Immune Parts",
+  "publisher": "Frontiers in Immunology (2023)",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10426278/",
+  "quote": "In this study, comparative genomic analysis revealed that all syngnathid species lost three vertebrate-conserved Toll-like receptors (TLR1, TLR2, and TLR9), of which all play essential roles in immune protection and immune tolerance in the uterus and placenta during pregnancy. ... with the loss of several MHC II pathway genes in the pipefishes and a highly divergent invariant chain (CD74) in seahorses ... Thus, we suggest that the immune function of the lost vertebrate-conserved TLRs (TLR1, TLR2, and TLR9) is at least partially compensated for by TLR18, TLR21, and TLR25.",
+  "url2": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9734139/",
+  "quote2": "As a rare exception, the spleen is absent in seahorses (Family Syngnathidae). ... In addition to the spleen, some other important parts of the adaptive immune system's genetic repertoire are absent in seahorses, and these secondary losses have been hypothesized to be linked to the evolutionary novelty that is male pregnancy.",
+  "newFact": "Carrying young means carrying tissue the immune system could read as foreign. Seahorses travel light: they have no spleen, they lack TLR1, TLR2 and TLR9, three Toll-like receptors other vertebrates kept, and a key MHC II pathway gene has gone highly divergent. They are not defenseless, though: three fish-only TLRs partly fill the gap.",
+  "careAdvice": null,
+  "note": "Replaced 'should be defenseless' with partial compensation by TLR18, TLR21 and TLR25; MHC II now 'highly divergent' in seahorses; spleen loss saved from Nature Communications 2022; 'demolition rather than regulation' and 'first' dropped."
+ },
+ {
+  "id": 236,
+  "title": "The Brain Stem Sits Low",
+  "newTitle": "The Brain Hides in Back",
+  "publisher": "BBC News",
+  "url": "https://www.bbc.com/news/magazine-34198390",
+  "quote": "\"You'd be amazed how little brain there is in the front of the head of a chicken,\" says Smulders. It is mostly concentrated at the back of the skull, behind the eyes, he explains. Reports indicate that Mike's beak, face, eyes and an ear were removed with the hatchet blow. But Smulders estimates that up to 80% of his brain by mass ... remained untouched. ... a timely blood clot luckily prevented him bleeding to death.",
+  "newFact": "Mike the Headless Chicken survived because a chicken's brain is not where you would guess. Most of it sits at the back of the skull, behind the eyes, so the hatchet took his beak, face, eyes and an ear but left up to 80 percent of his brain untouched. A timely blood clot kept him from bleeding to death.",
+  "careAdvice": null,
+  "note": "Dropped 'missed the jugular' (History Colorado says the clot was in his severed jugular), 'angled into the neck' and 'most of the skull'; brain stem framing replaced since the BBC says that label is outdated, so the title changed."
+ },
+ {
+  "id": 237,
+  "title": "Killed by a Missing Syringe",
+  "newTitle": null,
+  "publisher": "BBC News",
+  "url": "https://www.bbc.com/news/magazine-34198390",
+  "quote": "Mike was fed with liquid food and water that the Olsens dropped directly into his oesophagus. ... They fed him with a dropper, and cleared his throat with a syringe. The night Mike died, they were woken in their motel room by the sound of the bird choking. When they looked for the syringe they realised they had left it at the sideshow, and before they could find an alternative, Mike suffocated. (Earlier: the Olsens took Mike the Headless Chicken to Phoenix, Arizona, where disaster struck in the spring of 1947.)",
+  "newFact": "With no beak, Mike got liquid food and water by dropper straight into his esophagus, and his owners cleared mucus from his throat with a syringe. One spring night in 1947, in a Phoenix motel room, he began choking. The syringe had been left at the sideshow. Mike outlived the hatchet by 18 months, then lost to a forgotten syringe.",
+  "careAdvice": null,
+  "note": "Hotel corrected to motel; '17 March 1947' replaced with spring 1947; 'not the axe or infection' recast without the infection claim."
+ },
+ {
+  "id": 238,
+  "title": "Running Headless Is Real",
+  "newTitle": null,
+  "publisher": "BBC News",
+  "url": "https://www.bbc.com/news/magazine-34198390",
+  "quote": "Beheading disconnects the brain from the rest of the body, but for a short period the spinal cord circuits still have residual oxygen. Without input from the brain these circuits start spontaneously. \"The neurons become active, the legs start moving,\" says Dr Tom Smulders of Newcastle University. Usually the chicken is lying down when this happens, but in rare cases, neurons will fire a motor programme of running. \"The chicken will indeed run for a little while,\" says Smulders. \"But not for 18 months, more like 15 minutes or so.\"",
+  "newFact": "Running around like a headless chicken is real. Beheading cuts the brain off from the body, but spinal cord circuits keep some oxygen for a short while and start firing on their own. Usually the legs just kick while the bird lies down, but sometimes it really runs. Not for 18 months, though: more like 15 minutes.",
+  "careAdvice": null,
+  "note": "Brain stem corrected to spinal cord circuits; dropped the claim that Mike was this reflex stretched to 18 months (BBC says most of his brain survived), plus 'flap' and the 'never consciously driven' line."
+ }
+]
