@@ -344,8 +344,8 @@
       },
       {
         "id": 243,
-        "title": "Calls Below Human Hearing",
-        "fact": "Elephant rumbles drop to around 14 Hz, below the roughly 20 Hz floor of human hearing, so what people standing nearby actually hear is only the upper harmonics. Low frequencies bend around obstacles and lose energy slowly, letting these calls carry for kilometers. At dusk, temperature inversions channel the sound rather than letting it escape upward, and calling activity peaks.",
+        "title": "Calls That Carry After Dark",
+        "fact": "Elephant calls travel farther after dark. Strong temperature inversions form near the ground just before sunset, and the range over which elephants can communicate more than doubles at night. The best conditions arrive 1 to 2 hours after sunset on clear, calm nights, when calls likely reach over 10 kilometers.",
         "category": "Mammals",
         "image": "/assets/facts/elephant-3.jpg"
       },
@@ -1297,8 +1297,8 @@
     "facts": [
       {
         "id": 192,
-        "title": "Ocean's Biggest Brain",
-        "fact": "Giant manta rays have the largest brain relative to body size of any fish, rivaling the ratios seen in some mammals. In mirror tests, they spend far more time in front of a real mirror than a blank panel and repeatedly perform unusual movements like blowing bubbles while watching themselves, behavior researchers think hints at some level of self-awareness.",
+        "title": "The Fish World's Biggest Brain",
+        "fact": "Manta rays, giant mantas included, have the largest brain of any fish. Faced with a mirror, two captive giant mantas did not treat the reflection as another ray. Instead they made unusual, repetitive movements in front of it and showed odd self-directed behaviors, responses researchers call a prerequisite of self-awareness.",
         "category": "Ocean",
         "image": "/assets/facts/giant-manta-ray.jpg"
       }
@@ -1467,8 +1467,8 @@
       },
       {
         "id": 221,
-        "title": "Thirty Years in One Anemone",
-        "fact": "A clownfish is small enough to sit in your palm, and the oldest females are estimated to live around 30 years, roughly twice the longevity estimated for any other coral reef damselfish. That is why the waiting game works: when a rank-four fish queues for a breeding slot, it may genuinely be queuing for decades.",
+        "title": "The Thirty-Year Clownfish",
+        "fact": "Female clown anemonefish, the oldest fish in their population, have an estimated life expectancy of 30 years. That is twice the longevity estimated for any other coral reef damselfish, and six times what you would expect from a fish that small.",
         "category": "Ocean",
         "image": "/assets/facts/clownfish-7.jpg"
       }
@@ -1758,8 +1758,8 @@
       },
       {
         "id": 161,
-        "title": "Married for Twenty Years",
-        "fact": "Despite their fearsome punch, some mantis shrimp species are surprisingly devoted partners. Pairs like Lysiosquillina maculata mate for life, sharing the same burrow together for up to 20 years.",
+        "title": "Couples Who Share a Burrow",
+        "fact": "Some mantis shrimp are long-term couples. A Lysiosquillina maculata pair shares one extensive, mucus-lined burrow and splits the chores: the male forages and brings food home to the female. Leaving is risky, because a big adult that deserts and finds no new mate with a burrow cannot make enough mucus to build a stable one.",
         "category": "Ocean",
         "image": "/assets/facts/mantis-shrimp-2.jpg"
       }

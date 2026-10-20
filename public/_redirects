@@ -363,6 +363,18 @@
 /facts/mission-impossible-tails/ /facts/daddy-day-care/ 301
 /facts/invisible-wings /facts/treetop-booby/ 301
 /facts/invisible-wings/ /facts/treetop-booby/ 301
+/facts/built-in-measuring-tape /facts/whiskers-check-the-gap/ 301
+/facts/built-in-measuring-tape/ /facts/whiskers-check-the-gap/ 301
+/facts/married-for-twenty-years /facts/couples-who-share-a-burrow/ 301
+/facts/married-for-twenty-years/ /facts/couples-who-share-a-burrow/ 301
+/facts/flying-backwards-sleeping-like-the-dead /facts/backing-up-on-the-cheap/ 301
+/facts/flying-backwards-sleeping-like-the-dead/ /facts/backing-up-on-the-cheap/ 301
+/facts/oceans-biggest-brain /facts/the-fish-worlds-biggest-brain/ 301
+/facts/oceans-biggest-brain/ /facts/the-fish-worlds-biggest-brain/ 301
+/facts/thirty-years-in-one-anemone /facts/the-thirty-year-clownfish/ 301
+/facts/thirty-years-in-one-anemone/ /facts/the-thirty-year-clownfish/ 301
+/facts/calls-below-human-hearing /facts/calls-that-carry-after-dark/ 301
+/facts/calls-below-human-hearing/ /facts/calls-that-carry-after-dark/ 301
 
 # Splat rules live here, at the very bottom, and nothing goes below them. The
 # two exact-match /encyclopedia/guides rules above still win, since Cloudflare
