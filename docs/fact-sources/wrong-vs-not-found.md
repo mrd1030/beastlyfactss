@@ -1,0 +1,562 @@
+# Fact sourcing: wrong vs not found
+
+311 facts sorted (293 partly, 18 unconfirmed). Wrong: 140 details across 122 facts. Not found: 388 details across 280 facts, 45 starred. 91 facts appear in both. Unconfirmed: 18.
+
+## Wrong (fix these)
+
+- 4 Red Panda: "NOT related" to giant pandas → not closely related (both carnivorans)
+- 8 Snake: "press it into the Jacobson's organ" → tongue leaves chemicals on pads on the mouth floor, which pass them to the organ
+- 9 Cat: "it means they love" you → not necessarily love, a sign of trust
+- 12 Mantis Shrimp: "16 types of color receptors" → 12 photoreceptor types
+- 13 Elephant: touch bones of "deceased family members" → they do not single out relatives' skulls
+- 14 Axolotl: regenerate "their heart" → parts of the heart
+- 16 Honeybee: vote "until consensus is reached" → quorum, "rather than consensus or compromise"
+- 22 Seahorse: "the only animals where the male gives birth" → pipefishes and seadragons share male pregnancy
+- 22 Seahorse: carries them "until they hatch" → carries embryos to birth of live young
+- 23 Platypus: "It also has a venomous spur" → males only
+- 24 Capybara: "native to South America" → Central and South America
+- 25 Tardigrade: survive "300 degrees F" → nearly 100 °C, about 212 degrees F
+- 29 Starfish: "a single starfish arm can regenerate an entire new body" → only a few species, such as Linckia
+- 31 Alpaca: "their main defense mechanism" → their only defense is flight
+- 33 Blobfish: "the pressure keeps it looking like a normal fish" → the water's support, not pressure
+- 33 Blobfish: "with a big nose" at depth → the drooping nose forms only out of water
+- 34 Giraffe: blood pressure "twice that of humans" → nearly twice that of similar-sized mammals
+- 40 Bearded Dragon: "a polite greeting" → submission, or a female's interest in a male
+- 45 Dog: kennel clubs "have started using" nose prints → Canadian Kennel Club since 1938
+- 46 Dog: "Dogs dream just like humans do" → likely, but we cannot know
+- 47 Dog: "completely blind and deaf" → sight and hearing partly functional at birth
+- 47 Dog: "rely entirely on smell and touch" → primarily touch, smell and taste
+- 47 Dog: eyes open "around 2 weeks" → 8 to 10 days (ear canals 12 to 13)
+- 49 Cat: "They invented the meow" → more probably repurposed existing calls
+- 49 Cat: "only meow at humans, not at other cats" → "it seems", and kittens call their mothers
+- 50 Cat: "a frequency known to promote bone healing" → only a proposed hypothesis
+- 51 Cat: "always land on their feet" → only 3.7% of fallen cats in the study escaped injury
+- 52 Cat: "Skip the milk bowl" → most adult cats tolerate a small amount
+- 55 Rabbit: "at least 3 hours of exercise" → 3 hours at midday was the restricted condition that raised stress
+- 57 Tortoise: "Tortoises" live over 100 years → Aldabra giant tortoises; most pet species do not
+- 59 Shark: sense a heartbeat "from over a meter away" → only within a few inches
+- 61 Hippo: "Scientists once thought it was blood" → an ancient myth, not a scientific view
+- 62 Leafcutter Ant: leafcutters farming "over 50 million years" → 66 million is fungus-farming ants overall; leafcutter farming came about 40 million years later
+- 67 Wolf: ties the 2025 re-analysis to "rivers" → it critiques a willow regrowth study
+- 72 Cuttlefish: "hypnotize prey" and "freezes crabs and shrimp in place" → motion camouflage that hides the approach so crabs fail to notice
+- 74 Box Jellyfish: "see in full color" → lens eyes are slow and color-blind
+- 75 Goat: "regional accents" → accents are shared within social groups, not regions
+- 77 Bombardier Beetle: "up to 500 pulses per second" → 368 to 735 per second
+- 78 Magpie: "immediately" remove the dot → after a few minutes, two birds
+- 87 Humpback Whale: songs "last for 20 minutes" → about 15 minutes
+- 89 Cuban Tree Frog: croaking "can stimulate rainfall" → the reverse: rain stimulates breeding and calling
+- 91 Leafcutter Ant: farming "thousands of years before humans" → about 66 million years ago
+- 96 Lemur: purr "primarily to communicate with family" and "strengthen social bonds" → males purr most in aggressive male-male encounters
+- 99 Clownfish: "providing each other with protection and food" → anemone gets parasite removal and water circulation
+- 100 Mayfly: "just a few hours as adults", "dying in the same day" → most adults live one to four days
+- 101 Kangaroo: "up to 40 mph", fastest in the animal kingdom → almost 35 mph, fastest jumper among mammals
+- 102 Octopus: "When they swim" the hearts split roles → the roles apply all the time
+- 104 Sphynx Cat: "naturally hairless" → not always totally hairless; short hair on nose, ears, tail
+- 105 Dolphin: plankton flash "blue-green" → blue
+- 109 Cuttlefish: texture change credited to chromatophores → papillae change texture
+- 111 Box Turtle: over 100 years framed as normal, "longest-living pets" → usually 25 to 35 years, a few past 100
+- 112 Hedgehog: "up to 6 miles per hour" → 6.5 feet per second, about 4.4 mph
+- 112 Hedgehog: curl up "for cuddles when they're feeling safe" → they curl up when threatened
+- 113 Narwhal: tusk "up to 10 feet" → nine feet
+- 114 Kookaburra: "Australian outback" → eastern Australia
+- 115 Electric Eel: "up to 600 volts" → up to 800 volts
+- 122 Reindeer: "change their eye color" → the tapetum lucidum behind the retina changes, not the iris
+- 123 Chicken: lived "over 18 months" → eighteen months
+- 127 Pen-tailed Tree Shrew: nectar "naturally about 3.8% alcohol" → 3.8% is the maximum, mean 0.6%
+- 128 Gentoo and Adélie Penguin: males present "the perfect smooth pebble" as a proposal → source calls the pebble-courtship story a nice idea with little evidence; males mostly collect and steal pebbles for the nest
+- 129 Wandering Albatross: wingspan "up to 11 feet" → up to 12 feet
+- 136 Ocean Sunfish: "lay ... up to 300 million at once" → 300 million is potential fecundity, eggs counted inside one female
+- 139 Tuatara: "live past 100" → up to 100, average about 60
+- 140 American Alligator: "nearly 3,000 pounds" of bite force → 2,125 pounds
+- 141 Draco Lizard: glide "as far as 60 meters" → 20 to 30 meters
+- 149 Boa Constrictor: prey "faints within seconds" → rats were already anesthetized; blood pressure halved within 6 seconds
+- 151 Flamingo: "helps them conserve body heat" → paper argues against heat loss and proposes reduced muscle effort
+- 151 Flamingo: "locking a joint" → a passive stay apparatus, not a lock
+- 158 Cheetah: "0 to 60 mph in about three seconds" → 0 to 45 mph in 2.5 seconds
+- 162 Sea Otter: "up to a million hairs" → more than a million at its thickest
+- 162 Sea Otter: fur is "their only insulation" → a high metabolism also keeps them warm
+- 168 Axolotl: survives "in just one place, a shrinking canal system" → three isolated sites in two lakes, Xochimilco and Chalco
+- 169 Wolf: "1930s" zoo studies → earliest cited captive study is Schenkel 1947
+- 169 Wolf: "the same biologist who coined the term" → Mech did not coin it; the alpha labels come from Schenkel
+- 170 Platypus: milk "pools into little grooves for the babies to lap up" → young suckle from two fur-covered milk patches
+- 174 Alligator: "2,000 to 3,000 teeth over a lifetime" → 80 teeth replaced about 50 times each, about 4,000
+- 174 Alligator: replaced "the moment it wears down or snaps off" → about once a year
+- 176 Vampire Bat: "Skip your turn to share, and the colony remembers" → long-term bonds, not turn-taking; no colony memory
+- 179 Quokka: pause pregnancy "if food gets scarce" → backup embryo develops only if the pouch joey dies
+- 182 Thorny Devil: "never need to drink with their mouths" → water is swallowed at the mouth with jaw movements
+- 191 Red Fox: four times higher "kill rate on that heading" (northeast) → success clusters in a northern sector, 340 to 40 degrees (72.5% vs under 18%)
+- 198 Pangolin: "used that deep split to build" the tree → the split is a finding of the tree, not its basis
+- 204 Jellyfish: sequences "came back identical" → differed by 0.31% on average; 15 animals from four countries shared one sequence
+- 204 Jellyfish: "One scientist called it" → two authors, used as their paper title
+- 205 Dolphin: females go "on each male's track record across the population, not just their own encounters" → abstract: "based on their experience of individual male behavior"
+- 206 Dolphin: "identity is most of the conversation" → around 50%, half
+- 208 Dolphin: "stripping out every trace of the original animal's voice" → "predominantly synthetic"
+- 208 Dolphin: "none responded to whistles that were not theirs" → results report matching calls after two familiar-control playbacks
+- 212 Giraffe: "rejected by a 2025 review" → the 2025 source is an experimental study
+- 214 Naked Mole Rat: non-breeders "fertile but suppressed" → all other females "remain infertile"
+- 216 Naked Mole Rat: "accent shifts when a new queen takes over" → cohesiveness drops with queen loss and re-forms only when a new queen rises
+- 220 Clownfish: "they removed the trigger" → sialic acids are lowered, not removed; a second 2025 study found them still present in symbiont mucus
+- 222 Wood Frog: "roughly eight times the plasma urea of temperate ones" → eightfold is Alaskan late summer vs winter; vs Ohio frogs about four times
+- 222 Wood Frog: "in the southern part of their range" → upper Midwest and southern Canada
+- 226 Seahorse: pouch wall handles "feeding" → gas exchange, waste removal and osmoregulation
+- 227 Seahorse: "should be defenseless" → other TLRs partly compensate
+- 236 Chicken: "It also missed the jugular" → History Colorado: the clot formed in his severed jugular
+- 237 Chicken: "a Phoenix hotel room" → motel room
+- 238 Chicken: "Mike was that ordinary phenomenon stretched to 18 months" → BBC: most of his brain survived, so he was not the reflex phenomenon
+- 238 Chicken: reflex circuits "in the brain stem" → spinal cord circuits
+- 241 Lion: "the only social cat out of roughly forty species" → "the world's most social felines"
+- 246 Honeybee: swarms pick the best site "about 80 percent of the time" → almost always
+- 250 Crocodile: "they lived in fresh water" → rivers, lakes and coasts
+- 255 Sloth: "on the order of half" of predation deaths happen on trips → more than half of all documented adult deaths were predation at or near the ground
+- 256 Sloth: hair "grooves" → transverse cracks
+- 257 Fennec Fox: largest ears "of any carnivore" → of any canid
+- 257 Fennec Fox: cools "without panting away water" → extreme panting is one of its cooling methods
+- 268 Victoria Crowned Pigeon: "not milk in any mammalian sense" → page says crop milk is chemically similar to mammal milk
+- 269 Kiwi: "the largest egg to body ratio of any bird alive" → second largest
+- 270 Greyhound: "up to 45 miles per hour" → world record 41.83 mph
+- 275 Wolverine: "driving wolves ... off a carcass" → wolves sometimes kill wolverines
+- 275 Wolverine: "12 to 18 kilograms" for the species → adult males only; females 8 to 12
+- 276 Cassowary: claw "over 4 inches" → up to 4 inches
+- 279 Lionfish: "preying on more than 70 different reef species" → NOAA Ocean Service: over 50 fish species
+- 280 Coconut Crab: "Researchers measured the biggest crabs pinching with over 3,000 newtons" → highest measured about 1,765 N; 3,300 N is an estimate for a 4 kg crab
+- 290 Nudibranch: scientists still working out how it keeps stingers "from firing along the way" → the open question is how they are selected and stored
+- 295 Barreleye Fish: "a 2009 study" → Copeia 2008 paper (MBARI release was 2009)
+- 296 Basilisk Lizard: runs "roughly 20 meters" → about 4.5 meters
+- 297 Discus: "compared to hormonally regulated mammalian milk" → antibody peak compared to colostrum, behavior to weaning; no hormone claim
+- 298 Cardinal Tetra: stripe works as camouflage by "reflecting available light ... false or confusing targets" → paper suggests the stripes fading in bright light may be camouflage
+- 300 Flying Squirrel: "each arriving ... through a different genetic path" → separate marsupial gliders altered control of the same gene, Emx2
+- 301 Platy: pet platy has "essentially no risk" → the Xmrk oncogene can act in some non-hybrid Xiphophorus too
+- 302 Swordtail: sword "plays no role in swimming, it's pure ornament" → it raises the energy cost of swimming
+- 303 Zebra Danio: GloFish carry "a jellyfish-derived fluorescent gene" → the first GloFish sold was red, using a sea anemone gene
+- 304 Bristlenose Pleco: bristles "they're odontodes" → fleshy tentacles from the skin sheath around an odontode
+- 304 Bristlenose Pleco: "on the gill covers of both sexes" → smaller tentacles on the snout margin of females and juveniles
+- 304 Bristlenose Pleco: used "to spar with rival males" → the cheek spines are the combat tool
+- 311 Fancy Mouse: "direct evidence the behavior responds to actual nutritional demand rather than instinct alone" → only partly suppressed, crept back up, may be largely habitual
+- 313 Garter Snake: "wild garter snakes" in general → held only in terrestrial gartersnakes, one of the two species
+- 315 Orca: dialects "of clicks and whistles" → discrete pulsed calls
+- 325 Bald Eagle: record nest "20 feet deep" → 20 feet tall
+- 327 Bald Eagle: "a diving eagle" flies a curving path → modeled for an ideal falcon; field evidence is from peregrine falcons
+- 330 Norwegian Lundehund: "extra joints in its shoulders" → an extremely flexible shoulder joint
+- 335 Matamata Turtle: "bark-like skin flaps make it nearly invisible" → algae on the shell gives the camouflage; flaps' function uncertain
+- 338 Frilled Shark: "living fossil status, largely unchanged for tens of millions of years" → paper notes some of its traits may be derived
+- 345 Maned Wolf: pairs "raise pups together" → females raise the pups; males may bring food
+- 346 Sarcastic Fringehead: "the one with the smaller mouth backs down first" → the bigger fish usually wins; the bout ends when one bites the other
+- 347 Velvet Worm: slime reaches "up to a foot away" → longest filmed squirt 0.54 m, about 21 inches
+- 350 Binturong: "rubs it onto branches and its own feet with every step" → soaks feet and tail by squatting to pee, then drags the tail through the trees
+- 351 Blue-Tongued Skink: "A 2020 study" → published 2018
+
+## Not found (candidates for a deeper second search)
+
+★ marks the card's fun hook or title claim.
+
+- 2 Hedgehog: each spine lasts about a year
+- 3 Parrot: learn over 100 words and understand context
+- 4 Red Panda: named "panda" nearly 50 years before the giant panda
+- ★ 5 Bearded Dragon: darken when cold or stressed, lighten when warm and happy (no direction or mood link given)
+- 5 Bearded Dragon: beard puffs out and turns black when showing off
+- 6 Rabbit: binkies, joyful leaps and twists
+- 9 Cat: bunting marks you as "theirs" (source: accepts you into their inner circle)
+- 10 Crow: teach other crows who is "friend" (study covers dangerous faces only)
+- 10 Crow: bring gifts like shiny buttons and earrings to people who feed them
+- 11 Jellyfish: reverts "when it gets old or stressed" (source describes rejuvenation after reproduction)
+- 12 Mantis Shrimp: sees polarized light
+- 12 Mantis Shrimp: punches with the force of a bullet
+- ★ 13 Elephant: hold funerals, stand vigil for hours
+- 13 Elephant: touch bones with their trunks; seen crying
+- 15 Wombat: very dry gut lets the corners hold
+- 15 Wombat: cubes sit on rocks and logs without rolling off, as scent messages with identity and breeding status
+- 15 Wombat: wombats are not territorial
+- 17 Sea Otter: wrap in "seagrass"
+- 17 Sea Otter: keep together mostly by watching and listening (source: casual contact, sleeping close, kelp)
+- 18 Gecko: walk on ceilings
+- ★ 20 Sloth: hold breath underwater up to 40 minutes by slowing heart rate to a third
+- ★ 24 Capybara: let birds, monkeys and caimans sit on them (page lists caimans only as predators of young)
+- 25 Tardigrade: dried out "for decades" (no drying time given)
+- 26 Narwhal: tusk "up to 10 feet" (press coverage of the team says about 9)
+- 26 Narwhal: senses water temperature
+- 29 Starfish: some species split in half and grow into two
+- 31 Alpaca: spit when competing for food
+- 31 Alpaca: spit travels up to 10 feet
+- 34 Giraffe: 6-foot neck
+- 35 Polar Bear: black skin is there "to absorb heat"
+- 35 Polar Bear: fur looks white because it reflects visible light, like snow
+- 38 Pufferfish: inflate to three times normal size
+- 38 Pufferfish: toxin 1,200 times deadlier than cyanide (a food safety page says over 1,000 per some authorities)
+- ★ 39 Ball Python: ball pythons specifically go months without eating (source covers snakes in general)
+- 42 Crested Gecko: one of the most popular gecko species in the hobby
+- 43 Chameleon: colors signal stress, excitement, readiness to mate (paper shows dominance, submission, female rejection)
+- 44 Dog: third eyelid moistens the eye
+- 44 Dog: you can spot it when a dog is sleepy
+- 46 Dog: REM "remarkably similar to ours"; "relive their day"
+- 49 Cat: each cat develops its own unique vocabulary
+- 50 Cat: purr reduces stress, for the cat and the human nearby
+- ★ 51 Cat: a specialized collarbone is what lets them land on their feet
+- 51 Cat: reflex kicks in within milliseconds
+- ★ 53 Cat: sleep up to 70% of their lives (traced only to pet sites; may be a misread shelter figure for time alert)
+- 53 Cat: conserve energy the rest of the time
+- 54 Parrot: need social interaction daily (study: time alone did not itself change the odds)
+- 54 Parrot: highly intelligent, thrive on engagement
+- 55 Rabbit: not low-maintenance pets
+- 56 Guinea Pig: a lone guinea pig becomes lonely, anxious, depressed
+- 57 Tortoise: include them in your will
+- 58 Parrot: many parrots mimic full sentences, tones and laughs
+- 60 Crow: use the tools to extract grubs from bark
+- 60 Crow: pass techniques to their young as animal culture
+- 61 Hippo: fluid is "oily"
+- 63 Dolphin: "and elephants" pass too (this 2001 paper predates the elephant study)
+- 63 Dolphin: mirror test shows "self-awareness"
+- 64 Swift: eat, sleep and even mate in the sky (Lund: how they sleep is unknown)
+- 65 Pistol Shrimp: snap kills prey instantly
+- 66 Zebra: unique "like a fingerprint"
+- 66 Zebra: foals know mothers by stripe pattern alone, within hours of birth
+- 67 Wolf: returned "in 1995"; "elk behavior changed"
+- 68 Deer: "up to an inch per day" (source: more than 2 cm, about 0.8 inch)
+- 68 Deer: velvet is a soft skin; antlers harden each autumn
+- 69 Clownfish: changes sex "permanently"
+- 69 Clownfish: "Finding Nemo got it backwards"
+- ★ 70 Honey Badger: filmed bitten by cobras, going limp, waking and eating on (wildlife TV only)
+- 70 Honey Badger: "nearly immune"
+- 71 Lyrebird: mimics "almost any sound" "perfectly"
+- 71 Lyrebird: car alarms, camera shutters, human voices, entire construction sites
+- 72 Cuttlefish: "dazzling light show" "at high speed"
+- ★ 73 Mimic Octopus: impersonates "over 15 different species" (traced only to popular sites)
+- 73 Mimic Octopus: lionfish, flatfish, sea snakes; color change in real time
+- 74 Box Jellyfish: eyes "arranged in four clusters"; "having no brain"
+- 76 Elephant: "hear" messages "up to 20 miles away" (20 miles is how far the waves travel, not a shown detection range)
+- 76 Elephant: "specialized receptors in their feet and trunk" (source hedges: may sense via bone conduction or foot receptors)
+- 77 Bombardier Beetle: rapid-fire popping sound
+- 78 Magpie: cleaner wrasse has since joined them (Kohda 2019 has it, not this source)
+- 81 Chameleon: colors change "depending on their mood" (paper covers contests and courtship)
+- 82 Honey Bee: pollinators help produce one-third of our food
+- 83 Octopus: color change to "confuse predators" (source: camouflage)
+- 84 Cricket: display shows "fitness and charm"
+- 84 Cricket: male crickets in general (study is on the house cricket)
+- ★ 85 African Grey Parrot: personalities that change with their environments (title rests on it)
+- 85 African Grey Parrot: mimics speech "with astonishing accuracy"; "social skills"
+- 86 Tardigrade: all while in cryptobiosis
+- 87 Humpback Whale: sing "simply to communicate with fellow swimmers"
+- 88 Chameleon: "not just for camouflage", "masters of disguise"
+- 89 Cuban Tree Frog: "rainmaker" nickname; heard from miles away
+- ★ 90 Green Sea Turtle: hold breath "up to 5 hours" (source: several hours, sea turtles generally)
+- 90 Green Sea Turtle: "dive deep"; "one of the ocean's most efficient swimmers"
+- 91 Leafcutter Ant: "They cut leaves" (leafcutters not named in the abstract)
+- 92 Three-Toed Sloth: three-toed specifically (source: sloths generally)
+- 92 Three-Toed Sloth: pull themselves along with long front arms
+- ★ 93 Common House Spider: house spiders "sing" with low-frequency vibrations to attract mates
+- ★ 95 Octopus: ink impairs a predator's sense of smell (only a proposed function)
+- 96 Lemur: "just like cats"; lemurs generally (study is ring-tailed lemurs)
+- 98 Wood Frog: mating season "just a week or two"; "right as snowmelt fills"; "serenading females"
+- 101 Kangaroo: "born the size of a grape"; "crawl into their mother's pouch"
+- 102 Octopus: edge "in deep ocean environments" (source: cold, low-oxygen water)
+- ★ 104 Sphynx Cat: "mustache" whiskers (title rests on it)
+- 104 Sphynx Cat: skin "just as sensitive as ours" (source: delicate)
+- 105 Dolphin: "mainly single-celled" dinoflagellates (source lists ostracods too)
+- ★ 106 Tamarin Monkeys: tail movements convey complex messages to the troop
+- 107 Sea Turtles: travel "thousands of miles" (source: long distances)
+- 108 Pangolin: taken for their scales and meat
+- 109 Cuttlefish: "in the blink of an eye"; "mesmerizing underwater performers"
+- 110 Red-footed Booby: dive "from heights of up to 30 feet" (source: generally 13 to 26 feet)
+- ★ 110 Red-footed Booby: see clearly underwater thanks to unique eye structure
+- 111 Box Turtle: survive months without food
+- 113 Narwhal: tusk helps them "navigate" Arctic waters (source: salinity sensing)
+- 114 Kookaburra: chortles "at sunrise"
+- 115 Electric Eel: "enough to stun a horse"
+- 116 Gecko: "even run on ceilings"
+- 117 Cheetah: "unlike other big cats", "the only large felines that never truly roar"
+- 119 Bearded Dragon: "nature's smart way to balance populations in hot climates"
+- ★ 121 Owl: "fixed eye tubes" instead of round eyeballs (source: eyeballs locked by the sclerotic ring)
+- 122 Reindeer: "the only mammals known" (paper: "may have a unique mechanism")
+- 123 Chicken: the name "Miracle"; "a famous traveling sideshow attraction"
+- 124 Wallace's Flying Frog: feet as "parachutes and rudders", steer mid-air, control descent
+- 125 Hagfish: "up to a liter" of slime
+- 125 Hagfish: "in just 0.1 seconds" (paper: under 0.4 seconds)
+- 126 Hairy Frog: fringes "packed with blood vessels"; "and legs"; "fast-flowing, low-oxygen streams"
+- 127 Pen-tailed Tree Shrew: "special metabolic enzymes keep it perfectly sober" (paper: mechanism unclear)
+- 127 Pen-tailed Tree Shrew: "roughly beer strength"; "starts every day"
+- 128 Gentoo and Adélie Penguin: "often start a lifelong pair bond"
+- 129 Wandering Albatross: "Wandering" specifically; glide "for hours"; "widest of any living bird"; "circle the globe on wind alone"
+- 130 Woodpecker: peck "up to 20 times per second"
+- 130 Woodpecker: "each impact is too brief to cause damage" (abstract credits braincase size and shape)
+- 131 Bar-Tailed Godwit: no stop to "drink" (source: food or rest)
+- 133 Naked Mole Rat: "up to 18 minutes without oxygen" (in Park et al. 2017, not this release)
+- 133 Naked Mole Rat: "nearly immune to cancer" (source: rarely gets cancer); "one of the only mammals" that cannot regulate temperature
+- 134 Anglerfish: male becomes "a built-in supply of sperm for life"
+- 135 Sea Cucumber: expel organs "to confuse predators"; regrow "a full set"
+- 136 Ocean Sunfish: "almost none survive to adulthood"
+- 137 Giant Squid: eyes "built to catch the faintest flickers of bioluminescent light" (abstract: to spot sperm whales)
+- 137 Giant Squid: "roughly the size of a dinner plate"; record held alone (shared with colossal squid)
+- ★ 138 Chameleon: "more G-force than a human fighter pilot can withstand" (paper gives 264 g, no pilot comparison)
+- 138 Chameleon: "snap back with its prey in a fraction of a second"
+- ★ 139 Tuatara: light-sensing "third eye" on top of the skull (title)
+- 139 Tuatara: "metabolism so slow" (source: slow growth); lineage "predates the dinosaurs" (source: thrived in their age)
+- 140 American Alligator: jaw-opening muscles so weak a person can hold the mouth shut
+- 143 Bat: "the only mammals capable of true, sustained flight" (on NPS sibling page How Bats Fly)
+- 143 Bat: "in total darkness"; "up to 200 calls per second"; "build a live map"
+- ★ 144 Elephant Seal: hold breath "up to two hours" (title; a 119 minute record was seen in search, not fetched)
+- 144 Elephant Seal: dive "over 2,000 meters"; "longer than almost any other mammal"
+- 145 Cat: "one of the only mammals" that cannot taste sweet (later studies find it in other carnivores)
+- 146 Basenji: "an unusually shaped larynx"; the "baroo" nickname
+- 147 Dog: wet nose traps scent chemicals
+- ★ 148 Cat: whiskers as wide as the body, used to judge gaps (source repeats it but says "not scientifically proven")
+- 149 Boa Constrictor: "well before it would ever suffocate"
+- 149 Boa Constrictor: vestigial hind-leg spurs
+- 150 Guinea Pig: "popcorn" leaps when overjoyed
+- 151 Flamingo: "for hours"
+- 152 Seahorse: "up to" 35 fin beats a second (source: about 35); "some species" eat thousands (source: a single seahorse)
+- 154 Chicken: "dozens" of flockmates; "and familiar humans"; "over long stretches of time"
+- 156 Giraffe: wild giraffes sleep "as little as 10 minutes a night" in a couple of bursts (Burger-Schulz 2023 gives 8.6 minutes in about 2 bouts)
+- 156 Giraffe: zoo giraffes "sleep several hours more"
+- 158 Cheetah: "faster than most sports cars"; top speed "20-30 seconds before overheating" (source: sprints last about 20 seconds, no overheating)
+- 158 Cheetah: claws "unlike other big cats"
+- 159 Honey Badger: twists "almost freely"; spins and bites "while pinned by the scruff"
+- ★ 160 Sphynx Cat: "noticeably higher body temperature and faster metabolism than other cats"
+- 160 Sphynx Cat: seek warm laps and sunny windowsills; need sweaters in winter
+- ★ 161 Mantis Shrimp: pairs share a burrow "for up to 20 years" (title; traced only to a magazine retelling of Roy Caldwell's work)
+- 161 Mantis Shrimp: "mate for life"; Lysiosquillina maculata by name (source: lysiosquillids)
+- 163 Starfish: "no brain and no blood" (NOAA page supports seawater instead of blood)
+- 163 Starfish: "hundreds of" tube feet; prey "too big to swallow"
+- 164 Komodo Dragon: "for decades scientists believed" bacteria, "research later revealed" venom (page credits both together)
+- 164 Komodo Dragon: venom "crash[es] the victim's blood pressure" (source: blood loss and shock)
+- 165 Box Turtle: "spend years trying to find their way back"; experts say "never relocate"
+- 167 Pangolin: "termites by the thousands" (source: mostly ants)
+- 167 Pangolin: giant pangolin specifically; tongue alone longer than head and body (source counts its muscles too)
+- 169 Wolf: "a bestselling 1970 book"; "spent years afterward trying to get the myth retracted"
+- 170 Platypus: mothers "sweat" milk
+- ★ 171 Hummingbird: "the only birds that can fly backwards" (source: they can, not that only they can)
+- 171 Hummingbird: "a unique shoulder joint" rotating wings "in a full circle"; upside down "for a moment"
+- 171 Hummingbird: torpor slashes heart rate "up to 95%" (a UNC Charlotte page implies about 96%)
+- 172 Red Panda: giant pandas "independently evolved" the false thumb, "a textbook case" of convergence
+- 175 Vulture: acid destroys "anthrax, botulism, and cholera" (source: most bacteria, plus a strong immune system)
+- 175 Vulture: before "the bloodstream" (source: intestines); "roadkill"
+- 176 Vampire Bat: "usually only ones who" shared before (source: best predictor, not a rule)
+- 178 Sperm Whale: "felt in a diver's chest from meters away"
+- 178 Sperm Whale: "hunt giant squid in total darkness thousands of feet down"
+- 179 Quokka: smile is "thanks to the shape of their mouth"
+- 180 Shoebill: motionless "for hours"; "snap a lungfish or baby crocodile in half" (source: usually decapitates; crocodiles occasional)
+- 180 Shoebill: edges "specifically for slicing through tough prey"
+- 181 Leafy Sea Dragon: flaps "purely" camouflage; swims with "nearly invisible" fins; "look like drifting seaweed"
+- 182 Thorny Devil: "from any damp surface, including morning dew" (paper: rain and moist sand)
+- 182 Thorny Devil: tucks head and shows a fake spiked "head"
+- 183 Glass Frog: "watch their heart beating and blood moving" (paper: bones and organs visible; heart in a reflective sac in the species studied)
+- 184 Meerkat: lookout "on a raised mound" for "eagles and jackals", swapping "roughly every hour" so all can forage
+- 184 Meerkat: partly immune to scorpion venom; bites off the stinger first
+- 185 Secretary Bird: "resetting for another strike in a fraction of a second" (paper: 15 ms foot contact)
+- 185 Secretary Bird: legs keep body "out of biting range"; "up to five times" (average 5.1, one bird)
+- 186 Vampire Squid: flips webbed arms inside out to show spiny projections "instead of fleeing"
+- 186 Vampire Squid: "twilight zone" (paper: 600 to 900 m oxygen minimum zone)
+- 187 Gharial: ghara used to "blow bubbles" "underwater" (source: a vocal resonator and visual signal)
+- 187 Gharial: "needle-thin" jaws "built purely for snatching fish, too fragile to take down anything larger"
+- 188 Aye-aye: "double-jointed" (source: highly flexible); taps "up to eight times a second"
+- 188 Aye-aye: "a foraging trick found nowhere else in the animal kingdom"
+- 189 Toco Toucan: bill is "more than a third of its body surface"
+- 190 Beagle: "around 120 beagles" (page: over 180 agriculture canine teams, no beagle count)
+- 190 Beagle: chosen "over bigger sniffer breeds"
+- 191 Red Fox: "the largest natural range of any wild carnivore on Earth"
+- ★ 192 Giant Manta Ray: largest brain for body size of any fish; more time at a mirror than a blank panel; bubble blowing
+- 193 Frilled-necked Lizard: "tail held out for balance"
+- 196 Pangolin: digging aerates the soil; abandoned burrows shelter other animals
+- 198 Pangolin: "Smithsonian-led" (release: SCBI and partners); "a seized scale" (release: products in the trade)
+- 199 Pangolin: scales are keratin, like fingernails and hair
+- 200 Jellyfish: "the 1996 paper that made it famous" used T. nutricula (abstract names no 1996 paper; cites a 1992 one)
+- 201 Jellyfish: "collapses its bell into a small blob"
+- 202 Jellyfish: "such as muscle becoming nerve"
+- 202 Jellyfish: "One researcher described" the butterfly comparison (page: "has been likened"; search credits Boero or Kubota)
+- 203 Jellyfish: "bright red stomach glowing through a nearly transparent bell"; "dozens of white tentacles" (page: 8 in Panama, 24 or more elsewhere, no color)
+- 204 Jellyfish: "spread across the planet recently"
+- 205 Dolphin: "11 adult males"; "Shark Bay" (news coverage places it there)
+- 209 Dolphin: "what mirror behavior proves ... is still genuinely debated"
+- 210 Giraffe: 92 Hz is "well inside human hearing", "audible all along", "quietly kills a popular claim", "Nobody had listened"
+- 211 Giraffe: "for over a century"; "Genetic work in 2016"; "do not interbreed in the wild"; "comparable to ... polar and brown bears" (Fennessy 2016, not read)
+- 212 Giraffe: siphon theory rejected "because a collapsed vein cannot sustain a siphon" (study does not mention a siphon)
+- 213 Giraffe: "anatomists have argued for decades"; "The current view" (one 2016 study's finding)
+- 214 Naked Mole Rat: "dozens" of non-breeders
+- 215 Naked Mole Rat: "A mouse ... dies in under a minute"; "Plants use this pathway"; "No other mammal is known" to use it
+- 218 Clownfish: "reabsorbing their own tissue" (paper: mechanism unknown, resorption only suggested)
+- 219 Clownfish: "crossing open reef means being eaten and challenging a bigger fish means losing"
+- 219 Clownfish: "They even limit their own growth" (Buston 2003, not read); "The wait can last decades"
+- 220 Clownfish: "They are not wearing a disguise" (paper does not rule out mucus mimicry); "extremely low"
+- ★ 221 Clownfish: oldest females live around 30 years, twice any other reef damselfish; queue for decades
+- 222 Wood Frog: gap "comes mostly from urea" (paper: in part, urea plus glucose)
+- 223 Wood Frog: "the instant freezing begins"; levels "would put a mammal in a diabetic coma"
+- 223 Wood Frog: ice forms outside the cells and sugar keeps the inside dilute (paper: both agents reduce total ice)
+- 224 Wood Frog: "does not warm from the outside in"; heartbeat back "within an hour", near-normal "within a few hours"
+- 225 Wood Frog: survives "by freezing rather than digging"; "not underground and not in water"
+- 226 Seahorse: "The pouch seals shut"; "a mammal's placenta grows from embryonic tissue"; skin origin stated as fact (paper: "considered")
+- 227 Seahorse: "they lost their spleen" (in Nature Communications 2022, not this paper)
+- 228 Seahorse: "lysozyme" runs high (paper only searched the gene family)
+- 228 Seahorse: seawater enters "when a female transfers her eggs"; "warm"; handles bacteria "the missing immune hardware no longer can"
+- 229 Dung Beetle: "no destination and no idea which way it is going"
+- 230 Dung Beetle: "two meter arena"; "With the Milky Way visible" (source: moonless starry night)
+- 230 Dung Beetle: "what light pollution costs an animal, measured directly"
+- 231 Dung Beetle: "they fell apart" (source: took much longer)
+- 234 Slow Loris: Fel d1 is "behind most human cat allergies"; "less a toxin"; "damage is done by the victim's own immune response"
+- 235 Slow Loris: "nail clippers or pliers" (pliers only in a quoted YouTube comment); "without anesthetic"
+- 235 Slow Loris: "Infection and blood loss kill many before they reach a buyer"; "cannot eat its natural diet or defend itself"
+- 236 Chicken: brain stem "sits low ... angled into the neck"; axe took "most of the skull"
+- 237 Chicken: "On 17 March 1947" (source: spring 1947)
+- 238 Chicken: birds "flap"; "walking and balancing ... never consciously driven"
+- 239 Cat: "wild cats grow out of" it; "Adult cats living together for years"; "relying on scent and body language"
+- 240 Cat: "harder to ignore" (source: less pleasant); "without being told which is which"
+- 242 Lion: food per lion does not improve "because a kill split more ways feeds each one less" (source: hunting success dips at 2 to 4 females, then rises)
+- 242 Lion: confluences "where prey must come to drink"
+- ★ 243 Elephant: rumbles drop to 14 Hz, people hear only the harmonics, dusk inversions channel the sound and calling peaks
+- 244 Elephant: seismic "surface wave that outruns the airborne version" (paper: travel at different rates)
+- 244 Elephant: bone conduction "up the leg to the middle ear" (paper: proposed only)
+- 245 Honeybee: stop signal "around 350 Hz"; "Enough of these and the rival dancer stops"
+- 246 Honeybee: "fifteen to twenty" scouts (source: about 15); "The queen does not participate"
+- 247 Penguin: "Gentoos ... can exceed 90 percent" (source: 59 to 89 percent across most species)
+- 247 Penguin: the difference is "whether the species builds a nest"
+- ★ 248 Penguin: fasts "for roughly 65 days" (title)
+- 248 Penguin: "below minus 40 Celsius"; "lose close to half his body weight"; outer birds work back "to the middle" (source: rejoin on the leeward side)
+- 249 Crocodile: "archosaurs" (term not used); "dinosaur relatives that lived while their cousins did not"
+- 250 Crocodile: "ectothermic cuts food needs roughly tenfold against a mammal"
+- ★ 251 Tiger: "Around 5,500 tigers remain in the wild, across thirteen countries"; "a century ago ... near 100,000"
+- ★ 252 Tiger: stripes are in the skin, "a shaved tiger is still striped" (title)
+- 252 Tiger: "much of what we know about remaining numbers comes from" stripe ID
+- 253 Rhino: horn "structurally closer to an enormous callus" (page: like hooves, baleen, beak tips)
+- 254 Rhino: regrows "because there is no bone in it", "cut above the growth plate", "every couple of years"
+- 254 Rhino: "the horn is used for defense and in disputes"
+- 255 Sloth: "cannot walk and drags itself by its front claws"; "roughly fifty times a year"
+- 256 Sloth: algae "tints wild sloths green"; "contested but nothing better has replaced it"
+- 257 Fennec Fox: "a dense network of shallow blood vessels" in the ears
+- ★ 258 Fennec Fox: "go its whole life without drinking free water" (page: long periods; title)
+- 258 Fennec Fox: kidneys concentrate urine; den air "cooler and far more humid"; "nothing to drink" in most of its range
+- 259 Fennec Fox: foot fur "spreads the animal's weight" (page: traction)
+- 259 Fennec Fox: "out of sight underground in a few seconds"
+- 260 Green Anaconda: claims above nine meters "for over a century without one being confirmed" (Smithsonian says adults reach 9 m)
+- 261 Green Anaconda: "tightens as its prey breathes out"; "far faster than suffocation"; study used boas, not anacondas
+- 262 Green Anaconda: newborns "around half a meter long and able to swim and hunt immediately"; "no parental care"
+- 262 Green Anaconda: female "several times the weight of any male" (page: considerably larger)
+- 263 Blue Poison Dart Frog: "one of the most photographed frogs on Earth"
+- ★ 264 Blue Poison Dart Frog: captive-bred frogs on fruit flies and springtails "are effectively non-toxic" (title)
+- 264 Blue Poison Dart Frog: "Take that diet away and the toxicity goes with it"
+- 265 Blue Poison Dart Frog: "Around 170 species"; "in a small area"; coating "effective for months"
+- 266 Victoria Crowned Pigeon: "around 75 centimeters long and up to roughly 2.5 kilograms"; "a deep red eye"
+- 266 Victoria Crowned Pigeon: "nearly all of its time walking the forest floor"; "northern" New Guinea; "flies up mainly to roost"
+- 266 Victoria Crowned Pigeon: largest pigeon alone (page credits both crowned pigeon species)
+- 267 Victoria Crowned Pigeon: feathers have "a bare shaft" ending in "a small triangular tip of white barbs"
+- 267 Victoria Crowned Pigeon: "Two other crowned pigeon species" (page compares with one)
+- 268 Victoria Crowned Pigeon: "protein and fat rich"; "no lactose"; "the male through the day and the female overnight"
+- 269 Kiwi: "up to a fifth" of body weight (page: average 15 percent); ostrich egg "about 2 percent"
+- 271 Orangutan: arm span "up to 7 feet"; "more than 95 percent of their time" in the canopy; freer shoulder and hip joints
+- 271 Orangutan: "largest tree-dwelling animals on Earth" (page: mammals)
+- 272 Sawfish: "thousands of electroreceptor pores"; finds prey "buried in sand or mud"
+- 273 Mudskipper: out of water "for hours"; skin supplies "up to 60 percent" of oxygen
+- 273 Mudskipper: prop on front fins to hop and climb mangrove roots; "as long as their skin stays wet"
+- 274 Wolverine: "about 15 kilograms"; marrow "other scavengers walk away from"; "most of how a wolverine gets through a northern winter"
+- ★ 275 Wolverine: "repeated accounts" of driving bears off a carcass (source: reputation only; title)
+- 275 Wolverine: "thick hide", "no apparent reverse gear", larger animals decide "not worth the trouble"
+- 276 Cassowary: "if the bird feels cornered"; "shy", would "rather vanish into the undergrowth"
+- 277 Border Collie: "pick a specific one out of a huge pile"
+- 278 Pronghorn: "the second fastest land animal on Earth after the cheetah" (source: fastest in North America)
+- 278 Pronghorn: cheetah "extinct for thousands of years"; "Scientists believe" (source: possibly)
+- 279 Lionfish: "rarely fatal to humans"; "one of the most damaging invasive species"
+- ★ 280 Coconut Crab: pinch "rivals a lion's bite" (no lion comparison; title)
+- 280 Coconut Crab: "largest land dwelling arthropod" (paper: terrestrial crustacean); "easily enough to crack open a coconut"
+- ★ 281 Shima Enaga: in winter fluffs into "a round white snowball with a long tail" (source: likened to a snow fairy; title)
+- 282 Shima Enaga: "shima enaga included"; "enclosed"; "moss"; no mid-brood rebuild; feathers "gathered one at a time"
+- 283 Shima Enaga: name "comes from hishaku, a long-handled ladle"
+- 284 Gaboon Viper: venom yield "a function of simply being a very large-headed, heavy-bodied snake"
+- 284 Gaboon Viper: "The venom is not the most potent by weight"
+- 285 Gaboon Viper: "Most vipers strike, inject and let go, then track"; prey "less likely to stagger off"
+- 285 Gaboon Viper: holding on makes a bite on a person "so much worse"
+- 286 Gaboon Viper: "heavy enough that the side-to-side motion ... works badly"; "closer to a caterpillar" (paper: earthworms)
+- 287 Kakapo: "the world's only flightless parrot" (source: flightless); nocturnal "unusual among parrots"
+- 287 Kakapo: booming call "can carry for miles"
+- 287 Kakapo: "individuals recorded living past 80 years" (source: estimated lifespan 60 to 90)
+- 288 Maine Coon: "males often weighing 15 to 25 pounds" (source: often 20 or more); "40-plus inches"
+- 288 Maine Coon: Stewie, longest on record at 48.5 inches
+- 289 Okapi: tongue "14 to 18 inches long"; "lick its own eyes and ears clean" (source: reach)
+- 290 Nudibranch: feeds on "jellyfish" (paper: cnidarians; study species eats anemones)
+- 291 Gila Monster: "just a few meals a year, living off fat stored in its tail"
+- ★ 291 Gila Monster: exendin-4 "helped inspire the GLP-1 medications behind Ozempic" (title)
+- 292 Kea: "the world's only alpine parrots" (source: alpine to sea level); "outperform some primates in lab tests"
+- ★ 292 Kea: "stripping rubber from cars and snatching gloves, wallets, and food from tourists at ski resorts" (source: damage to cars and buildings; title)
+- 292 Kea: "tinkering with new objects is how kea learn about their world"
+- 293 Dachshund: "chondrodysplasia" keeps legs short; long spine causes disc problems
+- 294 Pygmy Marmoset: high calls let them "coordinate ... without alerting nearby predators"
+- 296 Basilisk Lizard: "up to 20 steps per second" (a figure reported for grebes); "fringed scales ... unfurl"
+- 297 Discus: fry "bite at for minutes at a time"; "one of the only documented cases" (source: unusual among fish)
+- 299 Molly: "coastal saltwater lagoons" (source: estuaries); "unusually wide ... for an aquarium fish"; "sometimes just a short distance apart"
+- 300 Flying Squirrel: "glide the exact same way, a furred membrane stretched from wrist to ankle"
+- 301 Platy: "one of the oldest continuously studied animal models for any cancer"
+- 302 Swordtail: "a landmark 1990 study" found preference grows with the length gap (Basolo 1990 paywalled; unverified search copy agrees)
+- 304 Bristlenose Pleco: bristles "signal breeding readiness" (paper: likely sensory, covered in taste buds)
+- ★ 305 Cherry Shrimp: eats its own shed molt to reclaim calcium; keepers leave the molt in
+- ★ 306 Amano Shrimp: "a small, accidental dose of salt can kill a mature amano shrimp outright" (title)
+- 306 Amano Shrimp: larvae must reach salt water "within their first days of life"
+- ★ 307 Ghost Shrimp: ghost shrimp (Palaemonidae) sit in a separate family from cherry and Amano shrimp (Atyidae)
+- 309 Parrotlet: "upper beak has small ridges that hold a seed in place while the lower beak cracks" it
+- 310 Fancy Rat: rats "chosen specifically because they learned routes quickly"; "a trait a well-socialized pet rat still shows"
+- 310 Fancy Rat: "the origin of an entire field" (source: other researchers adopted it); "in 1900" (APA Monitor: work began 1899)
+- 313 Garter Snake: "genuinely costs the snake something"; "spray"
+- 314 Rosy Boa: "share their signature defensive move ... with the far larger ball python"
+- 314 Rosy Boa: "rarely triggered at all" (page: used when hiding is not an option)
+- 315 Orca: "led by a matriarch, the oldest female" (paper: maternal lines, no leadership); "calves spend years learning"
+- 317 Short-Beaked Echidna: tongue flicks "up to 100 times a minute"; prey "underground"
+- 317 Short-Beaked Echidna: electroreception "usually only found in animals that live in water"
+- 318 Atlantic Puffin: same partner "for 15 to 20 years"; pair "spends most of the year apart at sea"; "preen each other"
+- ★ 319 King Cobra: "the only snake known to build a nest"
+- 319 King Cobra: "spending days"; "compacting them into a waterproof mound"; "almost a meter tall"
+- 320 Satin Bowerbird: steals blue items "from rival bowers"; "females favor males whose bowers are bluer"
+- ★ 321 Siamese Cat: temperature-sensitive pigment enzyme: kittens born nearly white, cool extremities darken (title)
+- 322 Aardvark: teeth have "no roots", "keep growing throughout life", "hexagonal", "unlike any other mammal's"
+- 322 Aardvark: tongue "roughly a foot long"; ants and termites "by the thousands"
+- 323 Dumbo Octopus: lives "in the crushing cold of the hadal zone" (NHM: sighting only suggests it; Jamieson 2020 calls 6,957 m hadal)
+- ★ 324 Horned Lizard: squirts blood from the eyes at canines, ant-derived chemicals, several feet, barely works on birds
+- 325 Bald Eagle: "Nothing else in North America builds a bigger nest in a tree" (source: some of the largest bird nests)
+- 326 Bald Eagle: immatures have "a dark bill"; "one of the most misidentified birds"; dark blotchy raptor "almost always a young bald eagle"
+- 327 Bald Eagle: "the single one humans have"
+- 328 Bald Eagle: piebald "used of a horse or a bird" (page: any mix of dark and white)
+- 329 Hoatzin: "two working claws on each wing"; claws "disappear as the bird matures"
+- 329 Hoatzin: "stinkbird" nickname; crop fermentation "the same trick a cow's stomach uses"
+- 329 Hoatzin: meal takes "up to 45 hours to pass" (Grajal and Parra 1995: mean retention about 45.7 h for the largest marker particles)
+- 330 Norwegian Lundehund: "neck vertebrae" bend (page describes the bend only)
+- 331 Numbat: "between 15,000 and 20,000" termites (source: up to 20,000, captive); tongue "about 10 centimeters" (source: at least 5 cm past the nose)
+- 331 Numbat: teeth "small, blunt and barely used" (a second DBCA sheet: poorly developed); "almost every other Australian marsupial" nocturnal (source: most other marsupials)
+- 332 Yeti Crab: "where there is nothing else to eat"
+- 332 Yeti Crab: claw waving stated as fact (paper: hypothesis)
+- 333 Marine Iguana: "cannot process it through the kidneys alone"; "a gland above each eye"; "straight out of the bloodstream"
+- 333 Marine Iguana: "a white crust dried across the snout and the top of the head"
+- 334 Tasmanian Devil: "of any living mammal" (study: living predators sampled); "higher than lions or tigers"
+- 334 Tasmanian Devil: crunches "entire carcasses, bones, fur and all"; teeth worn "to blunt nubs"
+- 335 Matamata Turtle: "on a muddy riverbed"
+- 336 Potoo: night call a wail like "poor me one"
+- 336 Potoo: stump pose "by day" (page: when disturbed)
+- ★ 337 Shiba Inu: "famous for the Shiba scream" during "nail trims, baths, or vet visits" (page: a puppy may scream a little at leash training; title)
+- 337 Shiba Inu: "grooms itself like a cat, licking its paws and coat clean"
+- 338 Frilled Shark: "roughly 300 trident-shaped teeth arranged in 25 rows" (only ReefQuest and pop-science)
+- 339 Serval: "largest ears of any cat for their body size" (on a SDZWA caption, not this page)
+- 339 Serval: "each ear can swivel on its own"; "calls rodents use to talk to each other"; "hidden in tall grass" (page: underground)
+- 341 Serval: "the longest legs for its body size of any cat" (on the SDZWA fact sheet, not this page)
+- ★ 343 Hoopoe: mothers coat eggs in a foul secretion; chicks aim droppings at intruders; rotting meat smell
+- 344 Manx Cat: "responsible breeders never pair two tailless Manx cats"
+- 344 Manx Cat: gene "can shorten the spine itself" (page: disrupts tail and sacral vertebrae and the cord)
+- 346 Sarcastic Fringehead: "rarely longer than about 8 inches"; mouth opens "roughly four times its closed size"
+- 347 Velvet Worm: slime "hardening in seconds"
+- 347 Velvet Worm: body plan "barely changed in hundreds of millions of years", "living fossil"
+- 348 Tawny Frogmouth: pose "called stumping"; "eyes narrowed to slits" (page: closed); "snapped off" branch; "By day" (page: if disturbed)
+- 351 Blue-Tongued Skink: flashes "far more" at birds and foxes (source: strongest)
+
+## Unconfirmed, blocked source
+
+Also listed above under Not found or Wrong. 89, 128 and 304 were not blocked: a readable source contradicts them.
+
+- 20 Sloth: 40 minute and one third figures found only on blogs, newsletters and a kids page, no study
+- 89 Cuban Tree Frog: no rainmaker source found; the one readable page shows rain triggers calling; needs rewrite or removal
+- 93 Common House Spider: never located; searches found only related species (Steatoda, black widows, Argiope)
+- 106 Tamarin Monkeys: only lead (Moynihan 1970, Smithsonian PDF) returned 403
+- 128 Gentoo and Adélie Penguin: core claim debunked by the one readable source; Australian Antarctic Program page has pebble nests only
+- 160 Sphynx Cat: core claim only on pet blogs; CFA breed page silent
+- 192 Giant Manta Ray: Ari and D'Agostino 2016: Springer and ResearchGate bot walls, abstract withheld
+- 221 Clownfish: Buston and García 2007: lab page has citation only, CORE returned 403
+- 243 Elephant: Cornell Elephant Listening Project pages 403; Larom et al. 1997 not indexed
+- 251 Tiger: Smithsonian page has an outdated 1,500 to 3,200 estimate; WWF 2023 estimate page returned 403
+- 252 Tiger: skin claim absent from both Smithsonian and San Diego Zoo pages
+- 304 Bristlenose Pleco: not blocked: the one source (Sabaj, Armbruster and Page) contradicts the central claim
+- 305 Cherry Shrimp: only hobbyist sources and an isopod study found
+- 306 Amano Shrimp: larval half supported by a 2021 rearing study; adult half found nowhere
+- 307 Ghost Shrimp: Smithsonian PDF (De Grave, Cai and Anker 2008) returned 403; only hobby pages found
+- 321 Siamese Cat: UC Davis VGL page blocked by Cloudflare; CFA says only that Siamese darken with age
+- 324 Horned Lizard: author page retired, Texas Parks and Wildlife URL redirects, BioOne 2005 abstract empty
+- 343 Hoopoe: Soler et al. 2008 PDF blocked; the one paper reached covers feather bacteria only
