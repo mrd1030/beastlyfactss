@@ -1,0 +1,238 @@
+[
+ {
+  "id": 6,
+  "title": "Purring Bunnies",
+  "newTitle": null,
+  "newFact": "Rabbits purr when they're happy! Unlike cats, they do it by softly grinding their front teeth together. It's a quiet sound, and it's most common when you stroke a rabbit that is extremely relaxed.",
+  "extraSources": [],
+  "careAdvice": null,
+  "note": "Cut the binkies sentence; added the stroking detail from the PDSA quote to reach length."
+ },
+ {
+  "id": 26,
+  "title": "Unicorn of the Sea",
+  "newTitle": null,
+  "newFact": "Narwhals have a long spiral tusk that is actually a tooth. Scientists believe they use it to sense salinity: when researchers washed tusks with alternating salty and fresh water, the narwhals' heart rates changed significantly.",
+  "extraSources": [],
+  "careAdvice": null,
+  "note": "Cut the 10 foot length and water temperature; added the heart rate test from the paper's quote."
+ },
+ {
+  "id": 54,
+  "title": "Parrots Need Company",
+  "newTitle": null,
+  "newFact": "Parrots are highly social animals, and they need regular social contact. Too little interaction with people or other birds leaves them bored, and boredom is one of several causes of feather picking, alongside loneliness and stress.",
+  "extraSources": [
+   {
+    "publisher": "UC Davis School of Veterinary Medicine",
+    "url": "https://www.vetmed.ucdavis.edu/sites/g/files/dgvnsk491/files/inline-files/Feather-picking_in_Birds.pdf"
+   }
+  ],
+  "careAdvice": "Borderline: 'need regular social contact' is kept as a fact about the species (required wording). UC Davis owner tips ('make sure your bird is getting enough attention') left out.",
+  "note": "Swapped 'daily' and the isolation claim for the UC Davis wording; cut 'highly intelligent'; loneliness and stress from the PLOS ONE quote."
+ },
+ {
+  "id": 65,
+  "title": "Finger-Snapping Shrimp",
+  "newTitle": null,
+  "newFact": "Pistol shrimp snap their claws so fast it creates a cavitation bubble that reaches the temperature of the sun's surface (briefly!) and collapses with a loud pop and a flash of light. They use the snap to fight rivals, find mates and even stun prey.",
+  "extraSources": [],
+  "careAdvice": null,
+  "note": "Cut 'kills prey instantly'; added pop, flash and snap uses from the Science News quote."
+ },
+ {
+  "id": 81,
+  "title": "Color-Changing Camouflage",
+  "newTitle": "Color Talk, Not Camouflage",
+  "newFact": "Chameleons are famous for their ability to change color, but did you know it's primarily a way to communicate? They alter their hues to send social signals in male contests and courtship, rather than just blending into their surroundings!",
+  "extraSources": [],
+  "careAdvice": null,
+  "note": "Cut 'depending on their mood'; named contests and courtship. Old title called it camouflage, which the card denies."
+ },
+ {
+  "id": 92,
+  "title": "Sloth Speedsters",
+  "newTitle": null,
+  "newFact": "Despite their slow reputation, sloths are surprisingly good swimmers. In the water they can move up to three times faster than they do on land, says zoologist Becky Cliffe of the Sloth Conservation Foundation. What's more, they float.",
+  "extraSources": [],
+  "careAdvice": null,
+  "note": "Made it sloths in general and cut the front-arms stroke; added Cliffe attribution and floating. Animal field still says Three-Toed Sloth."
+ },
+ {
+  "id": 119,
+  "title": "Temperature-Switch Dragons",
+  "newTitle": null,
+  "newFact": "Bearded dragons have a clever built-in trick: while genetics set their sex at conception, incubating eggs above 32°C (about 90°F) can turn genetic males into fully functional females, both in the lab and in the wild.",
+  "extraSources": [],
+  "careAdvice": null,
+  "note": "Cut the 'balance populations' sentence; added lab and wild from the quote."
+ },
+ {
+  "id": 133,
+  "title": "Cancer-Proof and Cold-Blooded",
+  "newTitle": null,
+  "newFact": "Naked mole rats are nearly immune to cancer, and when oxygen runs low they can survive by switching their metabolism to run on fructose, like a plant. They're also one of the only mammals that can't regulate their own body temperature.",
+  "extraSources": [
+   {
+    "publisher": "University of Cambridge",
+    "url": "https://www.cam.ac.uk/research/news/secrets-of-naked-mole-rat-cancer-resistance-unearthed"
+   }
+  ],
+  "careAdvice": null,
+  "note": "Cut the 18 minutes figure; cancer and cold-blooded lines kept per Cambridge."
+ },
+ {
+  "id": 146,
+  "title": "The Dog That Doesn't Bark",
+  "newTitle": null,
+  "newFact": "Basenjis don't bark like other dogs, but they are far from silent: they growl, whine, scream and make a yodel-like sound, which is why the AKC calls the breed Africa's 'Barkless Dog.'",
+  "extraSources": [
+   {
+    "publisher": "Basenji Club of America",
+    "url": "https://basenji.org/basenji/"
+   },
+   {
+    "publisher": "American Kennel Club",
+    "url": "https://www.akc.org/dog-breeds/basenji/"
+   }
+  ],
+  "careAdvice": null,
+  "note": "Replaced the larynx and 'baroo' claims with the supported wording."
+ },
+ {
+  "id": 159,
+  "title": "The Loose-Skin Escape Artist",
+  "newTitle": null,
+  "newFact": "A honey badger's skin is so tough and loose that it can turn around inside it and bite its attacker. That fearlessness earned it a Guinness World Records title for most fearless animal on the planet.",
+  "extraSources": [
+   {
+    "publisher": "San Diego Zoo Wildlife Alliance",
+    "url": "https://kids.sandiegozoo.org/animals/honey-badger-ratel"
+   }
+  ],
+  "careAdvice": null,
+  "note": "Dropped 'almost freely' and the scruff pin for the San Diego Zoo wording; Guinness line kept."
+ },
+ {
+  "id": 175,
+  "title": "Stomach Acid That Kills Anthrax",
+  "newTitle": "A Hazmat Suit on the Inside",
+  "newFact": "A vulture's stomach acid, with a pH near zero, destroys most bacteria before they reach the gut, and together with a very strong immune system it lets vultures eat carcasses infected with anthrax, botulism and cholera without getting sick. It's basically a built-in hazmat suit.",
+  "extraSources": [
+   {
+    "publisher": "Indiana Public Media (A Moment of Science)",
+    "url": "https://indianapublicmedia.org/amomentofscience/vultures-food-poisoning/"
+   }
+  ],
+  "careAdvice": null,
+  "note": "Acid plus immunity now credited, not acid killing anthrax; cut bloodstream and roadkill. Old title claimed the acid kills anthrax."
+ },
+ {
+  "id": 185,
+  "title": "The Snake-Stomping Kickboxer",
+  "newTitle": null,
+  "newFact": "Secretary birds hunt venomous snakes on foot, stomping prey into submission. In tests with one trained bird, its kicks averaged about five times its own body weight in force, and each strike touched the target for only about 15 milliseconds.",
+  "extraSources": [],
+  "careAdvice": null,
+  "note": "Cut 'up to five times', the fast reset and the biting-range legs; added the one-bird average and 15 ms contact."
+ },
+ {
+  "id": 193,
+  "title": "All Bluff, All Bark",
+  "newTitle": null,
+  "newFact": "When threatened, a frilled-necked lizard snaps open a huge collar of skin around its neck, hisses, and gapes its brightly colored mouth to look as intimidating as possible. If that bluff doesn't work, it pivots and sprints away on just its back legs, looking for all the world like a tiny dinosaur making a run for it.",
+  "extraSources": [],
+  "careAdvice": null,
+  "note": "Cut 'tail held out for balance'."
+ },
+ {
+  "id": 203,
+  "title": "Smaller Than a Pinky Nail",
+  "newTitle": null,
+  "newFact": "For all its fame, Turritopsis dohrnii is easy to miss. A fully grown adult is only about 4.5 mm across, roughly the size of a human pinky nail, and its tiny body is translucent.",
+  "extraSources": [],
+  "careAdvice": null,
+  "note": "Cut the red stomach, transparent bell and white tentacles; 'translucent' from the NHM quote."
+ },
+ {
+  "id": 219,
+  "title": "The Queue Nobody Jumps",
+  "newTitle": null,
+  "newFact": "A clownfish group is a strict size ladder: breeding female on top, breeding male below her, then non-breeders in descending size. The small ones form a near-perfect queue where nobody leaves and nobody fights, probably because waiting gives each fish a better shot at breeding than leaving or fighting would.",
+  "extraSources": [],
+  "careAdvice": null,
+  "note": "Swapped the eaten/losing reason for the paper's queuing rationale; cut growth limiting and 'decades'."
+ },
+ {
+  "id": 230,
+  "title": "Forty Seconds Versus Two Minutes",
+  "newTitle": null,
+  "newFact": "Researchers timed dung beetles rolling across an arena. Under a moonless, starry sky they took about 40 seconds. Under cloud the same crossing took close to two minutes, because a beetle that keeps turning covers far more ground for the same distance.",
+  "extraSources": [],
+  "careAdvice": null,
+  "note": "Cut the two meter arena and the light pollution line; Milky Way became moonless starry sky."
+ },
+ {
+  "id": 244,
+  "title": "Listening Through Their Feet",
+  "newTitle": null,
+  "newFact": "A loud rumble does not only move air, it also travels through the ground as seismic waves. Elephant feet are packed with Pacinian corpuscles, the receptors mammals use to sense vibration. Played ground-only signals, elephants freeze, lean forward and lift a foot.",
+  "extraSources": [],
+  "careAdvice": null,
+  "note": "Cut the 'outruns the airborne version' claim and the bone conduction path."
+ },
+ {
+  "id": 261,
+  "title": "Constriction Is About Blood, Not Bones",
+  "newTitle": null,
+  "newFact": "The old description of constriction is that the snake crushes its prey or suffocates it. Measurements on constricting boas point somewhere else: the pressure a large constrictor applies is enough to stop blood circulating, and circulatory arrest kills fast. Within six seconds, the prey's arterial blood pressure dropped by half.",
+  "extraSources": [],
+  "careAdvice": null,
+  "note": "Study animal is now boas; cut exhale tightening and 'faster than suffocation'; added the six second drop. Card is still filed under Green Anaconda."
+ },
+ {
+  "id": 284,
+  "title": "The Longest Fangs of Any Snake",
+  "newTitle": null,
+  "newFact": "A Gaboon viper's fangs reach around five centimeters, longer than any other snake's, folded back against the roof of the mouth until the strike swings them forward. It also delivers more venom per bite than almost anything else. The dose is what makes it serious.",
+  "extraSources": [],
+  "careAdvice": null,
+  "note": "Cut the body-size explanation and the potency sentence."
+ },
+ {
+  "id": 314,
+  "title": "The Same Defense, a Very Different Snake",
+  "newTitle": null,
+  "newFact": "Rosy boas share their signature defensive move, balling up nose-first into a tight coil, with the far larger ball python. It's a strategy built for a wild predator's benefit, not a display of temper, and a rosy boa saves it for when hiding isn't an option.",
+  "extraSources": [
+   {
+    "publisher": "Zoo New England (Stone Zoo)",
+    "url": "https://zoonewengland.org/stone-zoo/animals/reptiles-amphibians/rosy-boa/"
+   },
+   {
+    "publisher": "Connecticut's Beardsley Zoo",
+    "url": "https://beardsleyzoo.org/animals/ball-python/"
+   }
+  ],
+  "careAdvice": null,
+  "note": "Replaced 'rarely triggered' and 'move away first' with the LA Zoo's 'when hiding is not an option'."
+ },
+ {
+  "id": 328,
+  "title": "Not Bald, Just Old English",
+  "newTitle": null,
+  "newFact": "The bald eagle has a full head of feathers and never had anything else. The name comes from balde, an old word for white, so the bird is white-headed rather than hairless. It is the same root that survives in piebald, which describes anything marked in a mix of dark and white.",
+  "extraSources": [],
+  "careAdvice": null,
+  "note": "Piebald now means any dark and white mix, not horses or birds."
+ },
+ {
+  "id": 344,
+  "title": "Born Without a Tail",
+  "newTitle": null,
+  "newFact": "A single dominant gene shortens the tail bones in Manx cats, so litters range from normal-tailed kittens to completely tailless ones. A kitten that inherits two copies of it dies early in development, which is why every Manx cat carries just one copy.",
+  "extraSources": [],
+  "careAdvice": "Breeding advice ('responsible breeders never pair two tailless Manx cats') removed from the card.",
+  "note": "Cut the spine claim and the breeder line; added 'every Manx carries one copy' from the UFAW quote."
+ }
+]
