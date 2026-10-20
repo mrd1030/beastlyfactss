@@ -1,0 +1,81 @@
+[
+ {
+  "id": 335,
+  "title": "Sucks First, Asks Later",
+  "newTitle": null,
+  "publisher": "Animal Diversity Web (University of Michigan)",
+  "url": "https://animaldiversity.org/accounts/Chelus_fimbriatus/",
+  "quote": "Algae may cover much of the carapace causing the animal to virtually disappear into its surroundings. ... Chelus fimbriatus is almost surreal in appearance, and at first glance may resemble a pile of debris. ... Soft muddy bottoms are prefered. ... The mandibles are not attached medially, and the relatively weak jaws are unsuited for seizing and chewing prey. ... When a potential prey item comes within range of the turtle, the turtle will strike out and open its mouth. Large amounts of water, and the prey item, are sucked in by the low pressure that is created. The mouth is then closed and excess water is expelled. The prey item is swallowed whole.",
+  "newFact": "Algae can cover a matamata's knobby shell until the turtle looks like a pile of debris on the muddy bottom. When a fish wanders close, it strikes and throws its mouth open. Its jaws are too weak to grab or chew, so low pressure does the work, sucking in water and fish together. The fish goes down whole.",
+  "careAdvice": null,
+  "note": "Camouflage now credited to algae on the shell (pile of debris look), not the skin flaps, whose function the page calls uncertain; muddy bottom saved from the same page."
+ },
+ {
+  "id": 338,
+  "title": "Three and a Half Year Wait",
+  "newTitle": null,
+  "publisher": "Journal of Fish Biology (2020)",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7497067/",
+  "quote": "The gestation period of C. anguineus is the longest period known for all vertebrates, lasting 3.5 years, and the growth rate of the embryos is around 10–17 mm per month (Tanaka et al., 1990 ), although the gestation period estimation can be as low as 1–2 years (Compagno, 1984 ; Gudger & Smith, 1933 ).",
+  "newFact": "Frilled sharks may stay pregnant for three and a half years, the longest gestation known for any vertebrate. The embryos take their time, growing only about 10 to 17 millimeters a month inside their mother. Some older estimates put the whole pregnancy at just one to two years, so the record comes with an asterisk.",
+  "careAdvice": null,
+  "note": "Dropped the living fossil claim (the paper says some traits may be derived) and the 300 teeth in 25 rows (unsourced, and a second point); added embryo growth rate and the 1 to 2 year low estimate."
+ },
+ {
+  "id": 345,
+  "title": "Not Really a Wolf",
+  "newTitle": null,
+  "publisher": "Smithsonian's National Zoo and Conservation Biology Institute",
+  "url": "https://nationalzoo.si.edu/animals/maned-wolf",
+  "quote": "It looks more like a long-legged fox than a wolf. Genetic studies show that it is neither fox nor true wolf, but a distinct species. It is the only member of its genus, Chrysocyon. ... They eat seasonally abundant fruits and vegetables and are particularly interested in lobeira, whose name means \"fruit of the wolf.\" It is a small tomato-like berry that, along with other fruits and vegetables, makes up 50 percent of the maned wolf's diet.",
+  "newFact": "The maned wolf looks like a long-legged fox, is called a wolf, and is neither. Genetic studies make it a distinct species, the only member of its own genus. It doesn't eat like a wolf either: about half its diet is fruit and vegetables, especially lobeira, a small tomato-like berry whose name means \"fruit of the wolf.\"",
+  "careAdvice": null,
+  "note": "Dropped the pairs sentence (wrong 'raise pups together': females raise pups, males may bring food) as a second point; kept not-a-wolf plus fruit diet."
+ },
+ {
+  "id": 346,
+  "title": "Mouth to Mouth Combat",
+  "newTitle": null,
+  "publisher": "Ecology (2022)",
+  "url": "https://repository.library.noaa.gov/view/noaa/62433/noaa_62433_DS1.pdf",
+  "quote": "The display starts with an individual opening its mouth, bending its head backward, and flaring its large upper jaw laterally exposing its colorful buccopalatal membranes to another individual. ... In response, intruders would either retreat or return a gaping display. The gaping display was always performed before physical contact (i.e., fighting, including biting). In the case of physical contact, both fish swam at each other while holding a continuous gape and proceeded to collide with each other—mouth to mouth. The two fish—mouths still agape—then pushed each other, mouth to mouth, until one of the individuals terminated the attack by biting the other’s head (or other parts of the body). Sarcastic Fringeheads that have larger body size (and thus longer jaws) were more victorious during these bouts (N = 40 interactions, χ² = 29.66, p <0.001) (Figure 1C).",
+  "newFact": "When a rival sarcastic fringehead comes near its shelter, the fish flares its huge upper jaw sideways into a gaping display. If neither backs off, the two swim at each other and shove mouth to mouth until one bites the other. In 40 recorded bouts, the bigger fish with the longer jaws usually won.",
+  "careAdvice": null,
+  "note": "Ending fixed: the bout ends with a bite and the bigger, longer-jawed fish usually wins; dropped 'rarely longer than 8 inches' and 'four times its closed size' (not on the paper)."
+ },
+ {
+  "id": 347,
+  "title": "The Slime Cannon",
+  "newTitle": null,
+  "publisher": "Nature Communications (2015)",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4382676/",
+  "quote": "The rapid squirt of a proteinaceous slime jet endows velvet worms (Onychophora) with a unique mechanism for defence from predators and for capturing prey by entangling them in a disordered web that immobilizes their target. ... the largest shoot recorded by us was produced. In this case the maximum shooting distance was 0.54 m.",
+  "url2": "https://www.mpg.de/11550818/velvet-worms-recyclable-polymer",
+  "quote2": "These small worm-like animals, which look like a cross between an earthworm and a caterpillar, spray a sticky liquid to ward off enemies or catch prey that is particularly deadly for prey such as woodlice, crickets and spiders: As soon as they try to wriggle out of the slimy threads, their struggles cause the threads to harden, leaving no hope of escape. ... They then shoot the slime at their prey or foe through two glands located on either side of their head by means of muscular contractions.",
+  "newFact": "A velvet worm hunts with a slime cannon. It squirts a fast jet of sticky protein slime from two nozzles on either side of its head, and the longest shot filmed in one study flew about 21 inches. The cruel twist: as trapped prey struggles to wriggle free, its own thrashing makes the slime harden into stiff threads.",
+  "careAdvice": null,
+  "note": "Range fixed to the 0.54 m (about 21 inch) record; 'hardening in seconds' reframed as prey struggles hardening the threads (Max Planck page, no timing given); dropped the living fossil point."
+ },
+ {
+  "id": 350,
+  "title": "The Scent of Popcorn",
+  "newTitle": null,
+  "publisher": "Duke University",
+  "url": "https://today.duke.edu/2016/04/popcornscentedbinturong",
+  "quote": "Most describe it as hot buttered popcorn. ... Solitary animals that rarely come face to face, binturongs use their roasty, popcorn-like aroma as a calling card to say “this is my turf” and find potential mates. ... Binturongs pee in a squatting position, soaking their feet and bushy tails in the process. They also drag their tails as they move about in the trees, leaving a scent trail on the branches and leaves behind them. ... The one compound that emanated from every sample was 2-acetyl-1-pyrroline, or 2-AP -- the same compound that gives popcorn its tantalizing scent.",
+  "newFact": "Binturongs smell like buttered popcorn, and the scent comes from their pee. Their urine carries 2-acetyl-1-pyrroline, the same compound that gives popcorn its aroma. A binturong squats to pee, soaking its feet and bushy tail, then drags that tail through the trees, leaving a popcorn trail on the branches that says \"this is my turf.\"",
+  "careAdvice": null,
+  "note": "Replaced 'rubs it onto branches and its own feet with every step' with squatting to pee (soaking feet and tail) and dragging the tail through the trees."
+ },
+ {
+  "id": 351,
+  "title": "A Tongue Built to Startle",
+  "newTitle": null,
+  "publisher": "Australian Geographic",
+  "url": "https://www.australiangeographic.com.au/topics/wildlife/2018/08/why-is-a-bluetongue-lizards-tongue-blue/",
+  "quote": "The researchers then simulated attacks to show that the skinks attempted to remain camouflaged – taking advantage of their brown stripy body colouration – until the very last moment, when they opened their mouths wide to expose their tongues, flattening and expanding them. These full-tongue displays were strongest in response to simulated bird and fox attacks, rather than those meant to mimic snakes and goannas. ... These kinds of displays are intended to induce a startle response in a predator, such as an eagle or a hawk, overloading its senses and causing it to pause, slow or stop its attack.",
+  "newFact": "A cornered blue-tongued skink trusts its brown stripes first, staying camouflaged until the very last moment. Then it throws its mouth wide and flattens out its bright blue tongue. A 2018 study of northern blue-tongues found these full-tongue displays were strongest against fake bird and fox attacks, a startle trick meant to make an attacker pause.",
+  "careAdvice": null,
+  "note": "Study year fixed from 2020 to 2018; 'far more' softened to the source's 'strongest'; named the species studied (northern blue-tongue); dropped the snake comparison."
+ }
+]
