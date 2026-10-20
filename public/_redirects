@@ -340,6 +340,18 @@
 
 
 
+# A fact's URL is its slugified title, so renaming a fact moves it. Fact pages
+# are noindex, but pins and posts link to them, so a renamed fact keeps its old
+# URL as a redirect. (Fact sourcing pass, Oct 2026.)
+/facts/breath-holding-sloths /facts/the-40-minute-myth/ 301
+/facts/breath-holding-sloths/ /facts/the-40-minute-myth/ 301
+/facts/months-without-eating /facts/famous-meal-skippers/ 301
+/facts/months-without-eating/ /facts/famous-meal-skippers/ 301
+/facts/always-landing-right /facts/the-righting-reflex/ 301
+/facts/always-landing-right/ /facts/the-righting-reflex/ 301
+/facts/70-of-life-asleep /facts/two-thirds-downtime/ 301
+/facts/70-of-life-asleep/ /facts/two-thirds-downtime/ 301
+
 # Splat rules live here, at the very bottom, and nothing goes below them. The
 # two exact-match /encyclopedia/guides rules above still win, since Cloudflare
 # takes the first match.

@@ -121,7 +121,7 @@
       {
         "id": 24,
         "title": "The Chillest Animal",
-        "fact": "Capybaras are so relaxed they often let other animals sit on them: birds, monkeys, even caimans! They're the largest rodents in the world and native to South America.",
+        "fact": "Capybaras are so laid-back that birds use them as perches. In Brazil, a scientist watched smooth-billed anis hop onto resting capybaras and pick off their ticks while the giant rodents barely noticed. When the cleaning was done, two birds stayed to sunbathe on a capybara's back.",
         "category": "Mammals",
         "image": "/assets/facts/capybara.jpg"
       },
@@ -331,7 +331,7 @@
       {
         "id": 13,
         "title": "Elephants Mourn",
-        "fact": "Elephants hold funerals for their dead. They'll gently touch the bones of deceased family members with their trunks and stand vigil for hours. They've even been seen crying.",
+        "fact": "Elephants pay close attention to their dead. They approach, touch and sniff carcasses, and some keep coming back. In India, Asian elephant herds were seen burying dead calves and calling out loudly for up to 40 minutes, which researchers think may be mourning.",
         "category": "Mammals",
         "image": "/assets/facts/elephant.jpg"
       },
@@ -385,8 +385,8 @@
     "facts": [
       {
         "id": 20,
-        "title": "Breath-Holding Sloths",
-        "fact": "Sloths can hold their breath underwater for up to 40 minutes. The trick is slowing their heart rate to about a third of its normal pace, which makes the oxygen in each breath last far longer.",
+        "title": "The 40-Minute Myth",
+        "fact": "The famous claim that sloths hold their breath for 40 minutes is a myth. It traces back to a 1942 lab study in which three-toed sloths lasted about 15 minutes without breathing, and two-toed sloths even less. Still pretty impressive for a tree dweller!",
         "category": "Mammals",
         "image": "/assets/facts/sloth.jpg"
       },
@@ -665,7 +665,7 @@
       {
         "id": 70,
         "title": "Snake Venom? No Thanks",
-        "fact": "Honey badgers are nearly immune to snake venom. They've been filmed getting bitten by cobras, going limp for a few minutes, then waking up and continuing to eat the snake.",
+        "fact": "Honey badgers eat venomous snakes like puff adders and Cape cobras. Researcher Colleen Begg saw one bitten on the face by a puff adder: despite a big swollen cheek, he was back up and chasing snakes just five hours later. Scientists think they build up some venom resistance over a lifetime of bites.",
         "category": "Mammals",
         "image": "/assets/facts/honey-badger.jpg"
       },

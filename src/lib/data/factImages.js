@@ -383,7 +383,7 @@ export const FACT_IMAGES = {
   5: '/assets/facts/bearded-dragon-4.jpg', // "Mood Ring Lizards"
   6: '/assets/facts/rabbit-3.jpg', // "Purring Bunnies"
   14: '/assets/facts/axolotl-3.jpg', // "Axolotl Superpowers"
-  39: '/assets/facts/ball-python.jpg', // "Months Without Eating"
+  39: '/assets/facts/ball-python.jpg', // "Famous Meal Skippers"
   41: '/assets/facts/leopard-gecko.jpg', // "Tail Fat Reserves"
   42: '/assets/facts/crested-gecko.jpg', // "Rediscovered in 1994"
   56: '/assets/facts/guinea-pig-3.jpg', // "Guinea Pigs Are Social"
