@@ -23,9 +23,6 @@ The owner is replacing them with their own generated photos, five prompts at a
 time, saved over the same filename so no map changes. Take each line off this
 list when its photo lands.
 
-- 3 Parrot, "Parrots Past Eighty": `parrot.jpg`
-- 4 Red Panda, "Not-So-Related Pandas": `red-panda.jpg`
-- 7 Dolphin, "Dolphin Name Tags": `dolphin.jpg`
 - 10 Crow, "Crow Detectives": `crow.jpg`
 - 11 Jellyfish, "Immortal Jellyfish": `jellyfish.jpg`
 - 12 Mantis Shrimp, "Mantis Shrimp Vision": `mantis-shrimp.jpg`

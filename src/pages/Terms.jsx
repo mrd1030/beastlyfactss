@@ -42,8 +42,8 @@ export default function Terms() {
           </Section>
 
           <Section title="2. Use of Content">
-            <p>All content on BeastlyFacts.com - including animal facts, care guides, articles, images, and quizzes - is provided for educational and entertainment purposes only. You may share individual facts for non-commercial purposes with clear attribution to BeastlyFacts.com.</p>
-            <p>Photos and illustrations on the Site belong to Beastly Facts unless they carry their own credit line. You're welcome to share them with friends, in class, or on social media. A credit or a link back to BeastlyFacts.com is always appreciated, but we won't chase you for it. Photos that do carry a credit line belong to their photographers, so please follow the license shown with them.</p>
+            <p>All content on BeastlyFacts.com, including animal facts, care guides, articles, images, and quizzes, is provided for educational and entertainment purposes only. You may share individual facts for non-commercial purposes; a link back to BeastlyFacts.com is appreciated.</p>
+            <p>Many images on the Site were created with AI tools: created with Grok, or with Adobe Firefly. Others are licensed to us, including some from Adobe Stock. You're welcome to share our fact cards, and a link back is always appreciated, though we won't chase you for it. Please just don't save and reuse the photos on their own. Photos that carry a credit line belong to their photographers, so follow the license shown with them.</p>
             <p>You may not reproduce, republish, scrape, or redistribute the Site's content in bulk without prior written permission.</p>
           </Section>
 
