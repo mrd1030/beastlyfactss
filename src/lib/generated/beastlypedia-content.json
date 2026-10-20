@@ -46,8 +46,8 @@
       },
       {
         "id": 198,
-        "title": "Scales With a Return Address",
-        "fact": "Asian and African pangolins have been on separate evolutionary paths for at least 23 million years. A Smithsonian-led team used that deep split to build a genetic family tree covering all eight species, giving investigators markers that can trace a seized scale back to the species it came from.",
+        "title": "A DNA Tag for Every Species",
+        "fact": "Pangolins are the world's most trafficked mammal, but their own DNA is fighting back. Smithsonian scientists and partners built a family tree of all eight species and found genetic markers for each one. Now even the unrecognizable pangolin products sold in markets can be traced back to the species they came from.",
         "category": "Weird & Wonderful",
         "image": "/assets/facts/pangolin-7.jpg"
       },
@@ -235,7 +235,7 @@
       {
         "id": 212,
         "title": "Drinking Is Harder Than It Looks",
-        "fact": "When a giraffe lowers its head to drink, roughly 1.4 liters of blood, about 5% of its total supply, pools in the neck veins and the heart rate drops. The textbook explanation, a siphon effect pulling it back, was rejected by a 2025 review because a collapsed vein cannot sustain a siphon. The new proposal: swallowing itself squeezes the neck veins and pumps the blood home.",
+        "fact": "When a giraffe lowers its head to drink, about 1.4 liters of blood, roughly 5% of its supply, pools in its neck veins and its heart rate falls. A 2025 study proposes a surprising fix: the waves of swallowing squeeze the valved jugular veins and push that blood back toward the heart.",
         "category": "Mammals",
         "image": "/assets/facts/giraffe-5.jpg"
       },
@@ -787,8 +787,8 @@
     "facts": [
       {
         "id": 182,
-        "title": "Drinks Through Its Skin",
-        "fact": "Thorny devils never need to drink with their mouths. Grooves between their spiky scales pull water in by capillary action from any damp surface, including morning dew, channeling it straight to their mouth. When threatened, they also tuck their real head down and present a fake spiked 'head' on the back of their neck instead.",
+        "title": "Scales That Work Like Straws",
+        "fact": "Thorny devils come with built-in plumbing. Tiny channels between their overlapping scales soak up rainwater by capillary action, then carry it passively all the way to the mouth. Once it arrives, the lizard simply swallows it with a few jaw movements. Rain on the back becomes a drink in the mouth, no lapping required.",
         "category": "Reptiles",
         "image": "/assets/facts/thorny-devil.jpg"
       }
@@ -1364,14 +1364,14 @@
       {
         "id": 205,
         "title": "Names on a Watchlist",
-        "fact": "In a 2026 Shark Bay study, researchers played 17 female dolphins the signature whistles of 11 adult males and watched the response by drone. Females likely to be fertile swam away from the whistles of males known for aggressively herding females, going on each male's track record across the population, not just their own encounters with him.",
+        "fact": "In a 2026 study, researchers played 17 wild female dolphins the vocal name tags of individual males and filmed their reactions by drone. Females who could conceive showed significantly stronger avoidance of the calls of males who coerced females more often. They seem to track each male's behavior over time, based on their own experience of him.",
         "category": "Ocean",
         "image": "/assets/facts/dolphin-5.jpg"
       },
       {
         "id": 206,
         "title": "Half the Conversation",
-        "fact": "A dolphin's signature whistle is not something it is born with. Calves learn theirs during the first year of life, and once the pattern is set it stays stable for decades. Signature whistles also make up around half of everything a freely interacting dolphin whistles, so identity is most of the conversation.",
+        "fact": "A dolphin isn't born with its signature whistle. Calves learn theirs within the first year of life, and once the pattern forms it stays stable for decades. Signature whistles also make up around half of all the whistles freely interacting dolphins produce, so identity really is half the conversation.",
         "category": "Ocean",
         "image": "/assets/facts/dolphin-6.jpg"
       },
@@ -1384,8 +1384,8 @@
       },
       {
         "id": 208,
-        "title": "Your Name in Someone Else's Voice",
-        "fact": "Off the coast of Scotland, researchers rebuilt wild dolphins' signature whistles synthetically, stripping out every trace of the original animal's voice, then played them back. Eight of 12 dolphins called back on hearing their own whistle, and none responded to whistles that were not theirs. The identity is in the shape of the sound, not in who says it.",
+        "title": "Your Name, Minus the Voice",
+        "fact": "Off the coast of Scotland, researchers played wild bottlenose dolphins synthetic copies of their own signature whistles, built with the original caller's voice features removed. In 8 of 12 playbacks, the dolphins called right back. A dolphin's identity is coded in the whistle itself, independent of the voice that whistles it.",
         "category": "Ocean",
         "image": "/assets/facts/dolphin-8.jpg"
       },
@@ -1537,7 +1537,7 @@
       {
         "id": 204,
         "title": "A Silent Worldwide Invasion",
-        "fact": "When researchers compared immortal jellyfish collected from Spain, Italy, Japan, Panama, and Florida, the genetic sequences came back identical, a sign they had spread across the planet recently. They are thought to hitchhike in the ballast water of cargo ships. One scientist called it a worldwide silent invasion.",
+        "fact": "Immortal jellyfish from Japan, both coasts of Panama, Florida, Spain and Italy are near genetic twins: one gene differed by just 0.31% on average, and 15 of them shared the exact same sequence. Their likely ride? Cargo ships and ballast water, which these life-rewinding jellies easily survive. The researchers titled their paper \"A silent invasion.\"",
         "category": "Ocean",
         "image": "/assets/facts/jellyfish-6.jpg"
       },

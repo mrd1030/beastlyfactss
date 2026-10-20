@@ -455,6 +455,12 @@
 /facts/he-broke-his-immune-system-first/ /facts/he-traded-away-immune-parts/ 301
 /facts/the-brain-stem-sits-low /facts/the-brain-hides-in-back/ 301
 /facts/the-brain-stem-sits-low/ /facts/the-brain-hides-in-back/ 301
+/facts/drinks-through-its-skin /facts/scales-that-work-like-straws/ 301
+/facts/drinks-through-its-skin/ /facts/scales-that-work-like-straws/ 301
+/facts/scales-with-a-return-address /facts/a-dna-tag-for-every-species/ 301
+/facts/scales-with-a-return-address/ /facts/a-dna-tag-for-every-species/ 301
+/facts/your-name-in-someone-elses-voice /facts/your-name-minus-the-voice/ 301
+/facts/your-name-in-someone-elses-voice/ /facts/your-name-minus-the-voice/ 301
 
 # Splat rules live here, at the very bottom, and nothing goes below them. The
 # two exact-match /encyclopedia/guides rules above still win, since Cloudflare
