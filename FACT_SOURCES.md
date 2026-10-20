@@ -351,6 +351,41 @@ Results: `docs/fact-sources/batchK.json`. 2 confirmed, 22 partly, 1 unconfirmed.
 - 249: "archosaurs" (term not used); "They are dinosaur relatives that lived while their cousins did not".
 - 250: "Being ectothermic cuts food needs roughly tenfold against a mammal the same size"; "fresh water" (the source says rivers, lakes and coasts).
 
+## Batch L: facts 251 to 275
+
+Results: `docs/fact-sources/batchL.json`. 0 confirmed, 23 partly, 2 unconfirmed.
+
+**Unconfirmed:**
+
+- 251 A Species That Fits in a Town: the population figure (about 5,500 across thirteen countries, from near 100,000 a century ago); the Smithsonian tiger page has only an outdated 1,500 to 3,200 estimate and WWF's Global Tiger Forum story could not be fetched (403). Range loss and the extinct subspecies are supported.
+- 252 Striped to the Skin: the stripes being in the skin, so a shaved tiger stays striped; searched the Smithsonian National Zoo and San Diego Zoo tiger pages, which cover unique stripe patterns only.
+
+**Partly (these details could not be confirmed):**
+
+- 253: "structurally closer to an enormous callus" (the page compares horn tissue to hooves, baleen and bird beak tips, not a callus)
+- 254: "Because there is no bone in it"; "cut above the growth plate"; "repeated every couple of years"; "the horn is used for defense and in disputes"
+- 255: "On the ground it cannot walk and drags itself by its front claws"; "roughly fifty times a year" (follows from weekly but is not stated); "half of sloth predation deaths" (the paper says more than half of all documented adult deaths were predation at or near the ground)
+- 256: "grooves" (the paper says transverse cracks); "tints wild sloths green"; "It is contested but nothing better has replaced it"
+- 257: "of any carnivore" (the page says any member of the canid family); "a dense network of shallow blood vessels"; "without panting away water it cannot spare" (the same page says extreme panting helps fennecs regulate temperature, up to 690 breaths a minute)
+- 258: "go its whole life without drinking free water" (the page says long periods); "its kidneys concentrate urine"; "the air down in the den stays cooler and far more humid"; "in most of its range there is nothing to drink"
+- 259: "spreads the animal's weight so it can move across a loose surface without sinking" (the page says traction); "put itself out of sight underground in a few seconds"
+- 260: "Claims above nine meters have circulated for over a century without one being confirmed" (the page cites alleged sightings over 24 meters and a record 8.43 meter animal, with no time span)
+- 261: "The snake tightens as its prey breathes out, so each exhalation gives away a little more room and never gets it back"; "far faster than suffocation would" (the abstract makes no comparison); the study used boas, not anacondas
+- 262: "each already around half a meter long and able to swim and hunt immediately"; "There is no parental care after that"; "a big female can be several times the weight of any male" (the page says considerably larger)
+- 263: "one of the most photographed frogs on Earth"
+- 264: "Take that diet away and the toxicity goes with it"; "Captive-bred frogs raised on fruit flies and springtails are effectively non-toxic, which is why keeping one is possible at all and why a wild-caught animal is a completely different proposition"
+- 265: "Around 170 species get called poison dart frogs"; "in a small area"; "the coating stayed effective for months"
+- 266: "around 75 centimeters long and up to roughly 2.5 kilograms"; "a deep red eye"; "spends nearly all of its time walking the forest floor"; "northern" New Guinea (the page says New Guinea); "flies up mainly to roost or to get away from something"
+- 267: "Each feather in it has a bare shaft for most of its length and opens into a small triangular tip of white barbs at the end"; "Two other crowned pigeon species" (the page compares it with one, the common crowned pigeon)
+- 268: "protein and fat rich"; "It is not milk in any mammalian sense and contains no lactose" (the page says pigeon milk has a chemical composition similar to mammal milk); "the male through the day and the female overnight"
+- 269: "up to a fifth of the mother's body weight" (the page says an average of 15 percent); "the largest egg to body ratio of any bird alive" (the page says second largest); "the ostrich, whose egg is only about 2 percent of her weight"
+- 270: "up to 45 miles per hour" (the AKC gives a world record of 41.83 mph)
+- 271: "arm span can stretch up to 7 feet"; "more than 95 percent of their time up in the canopy"; "Shoulder and hip joints that rotate more freely than a human's"; "largest tree-dwelling animals on Earth" (the page says mammals)
+- 272: "packed with thousands of electroreceptor pores"; "find prey buried in sand or mud without ever seeing it"
+- 273: "for hours"; "up to 60 percent of the oxygen they need on land"; "prop themselves up on their front fins like little arms to hop across mudflats and even climb mangrove roots"; "as long as their skin stays wet"
+- 274: "about 15 kilograms"; "take marrow that other scavengers walk away from"; "which is most of how a wolverine gets through a northern winter"
+- 275: "driving wolves ... off a carcass" (the chapter says wolves sometimes kill wolverines); "repeated accounts" (bear driving is cited only as reputation); "thick hide"; "no apparent reverse gear"; "a larger animal often decides the meal is not worth the trouble"; "12 to 18 kilograms" applies to adult males only (females 8 to 12)
+
 ## Batches B to N
 
 | Batch | Facts | Status |
@@ -365,6 +400,6 @@ Results: `docs/fact-sources/batchK.json`. 2 confirmed, 22 partly, 1 unconfirmed.
 | I | 176 to 200 | done |
 | J | 201 to 225 | done |
 | K | 226 to 250 | done |
-| L | 251 to 275 | running |
+| L | 251 to 275 | done |
 | M | 276 to 306 | running |
 | N | 307 to 348 | running |
