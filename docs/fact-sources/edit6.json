@@ -1,0 +1,215 @@
+[
+ {
+  "id": 15,
+  "title": "Wombat Cube Poop",
+  "newTitle": null,
+  "newFact": "Wombats produce cube-shaped poop. Stiff and soft bands in the last stretch of the intestine shape the pellets into cubes. The cubes sit on rocks and logs without rolling off, where they work as scent messages carrying identity and breeding status.",
+  "extraSources": [
+   {
+    "publisher": "The Conversation (Louise Gentle, Nottingham Trent University)",
+    "url": "https://theconversation.com/why-do-wombats-do-cube-shaped-poo-55975"
+   }
+  ],
+  "careAdvice": null,
+  "note": "Cut the dry-gut corners clause and the not-territorial line; scent-message detail kept as saved."
+ },
+ {
+  "id": 42,
+  "title": "Rediscovered in 1994",
+  "newTitle": null,
+  "newFact": "Crested geckos were thought to be extinct for many years until they were rediscovered in 1994 in New Caledonia! These little lizards had been living quietly all along in the canopies of the islands' rainforests.",
+  "extraSources": [],
+  "careAdvice": null,
+  "note": "Cut the hobby-popularity line; added the rainforest canopy habitat from the source to reach length."
+ },
+ {
+  "id": 60,
+  "title": "Crow Tool Users",
+  "newTitle": null,
+  "newFact": "New Caledonian crows craft an impressive range of tools from sticks and leaves, including hooked tools made from leafy twigs. Researchers described an adult crow and its dependent juvenile making 10 of these hooked-twig tools.",
+  "extraSources": [],
+  "careAdvice": null,
+  "note": "Cut grubs-from-bark and the animal-culture claim; refilled with the toolkit range and the adult-plus-juvenile observation."
+ },
+ {
+  "id": 69,
+  "title": "Born Male, Die Female",
+  "newTitle": "Every Clownfish Starts Male",
+  "newFact": "All clownfish are born male. When the dominant female of a group dies, the largest male changes sex to become female, and the rest of the group moves up the pecking order.",
+  "extraSources": [],
+  "careAdvice": null,
+  "note": "Cut 'permanently' and the Finding Nemo line; added the hierarchy shift. Old title implied permanence."
+ },
+ {
+  "id": 84,
+  "title": "Dancing Crickets",
+  "newTitle": null,
+  "newFact": "House crickets don't just chirp; they dance too! While singing to court females, males shake their bodies and drum their legs against the ground at the same time, a long, elaborate display that researchers call unique among insects.",
+  "extraSources": [],
+  "careAdvice": null,
+  "note": "Narrowed to house crickets, cut 'fitness and charm' and the ballet flourish; added tremulation, drumming and unique-among-insects."
+ },
+ {
+  "id": 108,
+  "title": "The Most Trafficked Mammal",
+  "newTitle": null,
+  "newFact": "Pangolins are the most trafficked wild mammals on Earth, with more than a million traded illegally across borders since 2000. All eight species are threatened, and since 2017 every one of them has been under a global ban on commercial trade.",
+  "extraSources": [],
+  "careAdvice": null,
+  "note": "Cut 'taken for their scales and meat'; added the million-since-2000 figure to stay above 30 words."
+ },
+ {
+  "id": 126,
+  "title": "Hairy Oxygen-Boosting Dads",
+  "newTitle": null,
+  "newFact": "During breeding season, male hairy frogs grow temporary 'hair' along their sides. It's really frilly fringes of skin, thought to help the devoted dads absorb extra oxygen while guarding their eggs underwater, where they cannot use their lungs.",
+  "extraSources": [],
+  "careAdvice": null,
+  "note": "Cut blood vessels, legs and fast low-oxygen streams; removed the hyphen-dashes, hedged with 'thought to' and added the no-lungs-underwater reason."
+ },
+ {
+  "id": 137,
+  "title": "Dinner-Plate Eyes",
+  "newTitle": "Eyes Built for Whale-Watching",
+  "newFact": "Giant squid share the record for the largest eyes of any living animal with the colossal squid: up to 27 cm across. Scientists think eyes this huge are uniquely suited to spotting very large predators, such as sperm whales, in the deep sea.",
+  "extraSources": [
+   {
+    "publisher": "Guinness World Records",
+    "url": "https://www.guinnessworldrecords.com/world-records/70673-largest-eye"
+   }
+  ],
+  "careAdvice": null,
+  "note": "Record now shared with colossal squid; cut unconfirmed dinner-plate comparison and the bioluminescence purpose, replaced with the sperm-whale explanation from the paper."
+ },
+ {
+  "id": 152,
+  "title": "No Stomach, No Problem",
+  "newTitle": null,
+  "newFact": "Seahorses have no stomach at all, so food passes through them so quickly that they must graze almost constantly just to live and grow. A single seahorse can gobble up to 3,000 brine shrimp a day.",
+  "extraSources": [],
+  "careAdvice": null,
+  "note": "Fixed to 'a single seahorse' and 3,000 brine shrimp; dropped the swimming sentence to keep one point (it also carried the 'up to 35' error)."
+ },
+ {
+  "id": 165,
+  "title": "Sealed Shut Like a Box",
+  "newTitle": null,
+  "newFact": "A box turtle's bottom shell has a hinge that lets it close up almost completely, sealing itself inside like, well, a box. When threatened, it pulls its body into its shell and waits for the danger to pass.",
+  "extraSources": [],
+  "careAdvice": "Original said wildlife experts say never to relocate a box turtle you find; unsupported and removed.",
+  "note": "Cut the years-long homing claim and the relocation advice; added the threatened-and-wait behavior to keep one point."
+ },
+ {
+  "id": 181,
+  "title": "Leaves That Learned to Swim",
+  "newTitle": null,
+  "newFact": "Leafy sea dragons are covered in leaf-shaped skin flaps that, along with their coloring, give them excellent camouflage on kelp-covered rocky reefs. They actually swim using a fin on their \"neck\" and another on their \"back\".",
+  "extraSources": [],
+  "careAdvice": null,
+  "note": "Cut 'purely', 'nearly invisible' and the drifting-seaweed line; added coloring and kelp reef habitat."
+ },
+ {
+  "id": 188,
+  "title": "The Finger That Finds Grubs",
+  "newTitle": null,
+  "newFact": "An aye-aye's middle finger is thin, skeletal, and highly flexible, used to tap rapidly on branches while its huge ears listen for hollow spots where grubs are hiding. Once it finds one, that same finger reaches in and hooks the grub out.",
+  "extraSources": [],
+  "careAdvice": null,
+  "note": "'Double-jointed' became 'highly flexible'; cut eight-taps-a-second and found-nowhere-else; added the ears."
+ },
+ {
+  "id": 200,
+  "title": "Famous Under the Wrong Name",
+  "newTitle": null,
+  "newFact": "For decades the immortal jellyfish was filed under the name Turritopsis nutricula, including in the 1996 paper that first called it potentially immortal. That name was wrong. A 2026 study confirmed T. nutricula is a separate western Atlantic lineage that cannot reverse its life cycle at all. The species that actually resets itself is Turritopsis dohrnii.",
+  "extraSources": [
+   {
+    "publisher": "The Biological Bulletin (Piraino, Boero, Aeschbach and Schmid 1996), via PubMed",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/29227703/"
+   }
+  ],
+  "careAdvice": null,
+  "note": "'The 1996 paper that made it famous' became 'that first called it potentially immortal'."
+ },
+ {
+  "id": 211,
+  "title": "Four Giraffes, Not One",
+  "newTitle": null,
+  "newFact": "For over a century every giraffe was filed under one species. Genetic work in 2016 found four deeply distinct lineages that do not interbreed in the wild, separated by differences comparable to those between polar and brown bears. In August 2025 the IUCN formally recognized all four: northern, reticulated, Masai and southern giraffe.",
+  "extraSources": [
+   {
+    "publisher": "Current Biology (Fennessy et al. 2016)",
+    "url": "https://www.zoology.ubc.ca/~jankowsk/Fennessy_et_al_2016.pdf"
+   },
+   {
+    "publisher": "Wildlife Conservation Society",
+    "url": "https://blog.wcs.org/photo/?p=2412"
+   }
+  ],
+  "careAdvice": null,
+  "note": "Unchanged; the 2016 genetics details were saved."
+ },
+ {
+  "id": 225,
+  "title": "The Only Frog Above the Arctic Circle",
+  "newTitle": "The Frog That Reaches the Arctic",
+  "newFact": "The wood frog lives farther north than any other amphibian in North America, above the Arctic Circle in Alaska, and its range runs all the way south to Georgia. It overwinters under leaf litter, logs or stumps, sitting out whatever the winter throws at it.",
+  "extraSources": [],
+  "careAdvice": null,
+  "note": "Cut freezing-not-digging and not-underground-not-in-water; added logs and stumps. Title changed: source supports Western Hemisphere only, not the only frog above the Arctic Circle."
+ },
+ {
+  "id": 235,
+  "title": "Teeth Removed With Pliers",
+  "newTitle": "Teeth Clipped for Sale",
+  "newFact": "Because a venomous bite makes an animal unsalable, traders routinely clip out a slow loris's front teeth before sale. The practice often kills them, and for survivors it is permanent: at one Indonesian rescue center, 64 percent of 180 confiscated lorises had lost their teeth, ending any hope of release to the wild.",
+  "extraSources": [],
+  "careAdvice": null,
+  "note": "Cut pliers, clippers, no anesthetic, infection and diet/defense claims; used the peer-reviewed clipping, death and 64 percent rescue figures. Pliers title dropped."
+ },
+ {
+  "id": 249,
+  "title": "Closer to Birds Than Lizards",
+  "newTitle": null,
+  "newFact": "Crocodilians sit closer to birds and dinosaurs on the family tree than to any other living reptile. A crocodile is more closely related to a sparrow than to a monitor lizard, and the resemblance to lizards is body plan rather than ancestry.",
+  "extraSources": [],
+  "careAdvice": null,
+  "note": "Cut 'archosaurs' and the surviving-cousins line; opener now uses the museum's birds-and-dinosaurs wording."
+ },
+ {
+  "id": 277,
+  "title": "A Thousand-Word Vocabulary",
+  "newTitle": null,
+  "newFact": "A border collie named Chaser learned the names of 1,022 different toys over three years of patient training. She could even work out the name of a brand new toy by noticing it was the only object in the group she didn't already have a name for.",
+  "extraSources": [],
+  "careAdvice": null,
+  "note": "Cut the pick-from-a-huge-pile clause."
+ },
+ {
+  "id": 289,
+  "title": "The Giraffe's Only Cousin",
+  "newTitle": null,
+  "newFact": "The okapi is the only close living relative of the giraffe, despite the zebra-like stripes on its legs and rear. Its tongue is long enough to reach its own eyes and ears. It lives only in the rainforests of the Democratic Republic of the Congo, where its stripes work as camouflage in dappled light.",
+  "extraSources": [],
+  "careAdvice": null,
+  "note": "Cut the 14 to 18 inch figure and 'lick clean' (now 'reach'); 'sole' became 'only close' to match the source."
+ },
+ {
+  "id": 320,
+  "title": "The Blue Collector",
+  "newTitle": null,
+  "newFact": "Male satin bowerbirds build a twig avenue called a bower purely to impress mates. It is not a nest. They decorate it with objects and show a strong preference for blue, even stealing blue items like clothespins, drinking straws and bottle tops.",
+  "extraSources": [],
+  "careAdvice": null,
+  "note": "Cut rival-bower theft and the female-preference line; added the source's stolen items and fixed the comma splice."
+ },
+ {
+  "id": 336,
+  "title": "Sleeping With Eyes Open",
+  "newTitle": "Watching With Eyes Shut",
+  "newFact": "Potoos perch upright and hold still, looking exactly like a broken tree stump. Tiny notches in their eyelids stay open even when the eyes are shut, letting them watch for danger while looking fast asleep.",
+  "extraSources": [],
+  "careAdvice": null,
+  "note": "Cut 'by day' and the 'poor me one' call. Old title said eyes open; the card says they are shut."
+ }
+]
