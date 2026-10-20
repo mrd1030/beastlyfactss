@@ -292,7 +292,7 @@ const FACT_IMAGES = {
   157: '/assets/facts/koala-2.jpg', // "Fingerprints Like Ours"
   173: '/assets/facts/capybara-2.jpg', // "Built-In Snorkel Mode"
   172: '/assets/facts/red-panda-2.jpg', // "A Thumb That Isn't a Thumb"
-  160: '/assets/facts/sphynx-cat-2.jpg', // "Always Running Warm"
+  160: '/assets/facts/sphynx-cat-2.jpg', // "Same Gene, Different Hairdo"
   170: '/assets/facts/platypus-2.jpg', // "Milk Without Nipples"
   76: '/assets/facts/elephant-2.jpg', // "Hear With Their Feet"
   155: '/assets/facts/zebra-2.jpg', // "Stripes That Repel Flies"

@@ -375,6 +375,8 @@
 /facts/thirty-years-in-one-anemone/ /facts/the-thirty-year-clownfish/ 301
 /facts/calls-below-human-hearing /facts/calls-that-carry-after-dark/ 301
 /facts/calls-below-human-hearing/ /facts/calls-that-carry-after-dark/ 301
+/facts/always-running-warm /facts/same-gene-different-hairdo/ 301
+/facts/always-running-warm/ /facts/same-gene-different-hairdo/ 301
 
 # Splat rules live here, at the very bottom, and nothing goes below them. The
 # two exact-match /encyclopedia/guides rules above still win, since Cloudflare
