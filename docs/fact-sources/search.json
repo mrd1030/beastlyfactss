@@ -1,0 +1,312 @@
+[
+ {
+  "id": 10,
+  "detail": "bring gifts like shiny buttons and earrings to people who feed them",
+  "verdict": "saved",
+  "publisher": "BBC News",
+  "url": "https://www.bbc.com/news/magazine-31604026",
+  "quote": "The crows would clear the feeder of peanuts, and leave shiny trinkets on the empty tray; an earring, a hinge, a polished rock. ... There's a miniature silver ball, a black button, a blue paper clip, a yellow bead ... But crow gifts are not guaranteed. \"I can't say they always will (give presents),\" Marzluff admits, ... \"but I have seen an awful lot of things crows have brought people.\"",
+  "supportedWording": "They've been known to bring gifts to people who feed them, from buttons to earrings!",
+  "note": "Documented case is Gabi Mann's family in Seattle; John Marzluff (University of Washington) confirms crows bring things to people but says gifts are not guaranteed. The button in her collection is described as black, so drop 'shiny' before buttons; the trinkets as a whole are called shiny. Cache: cache/S1_10_bbc_gabi_mann.txt"
+ },
+ {
+  "id": 38,
+  "detail": "toxin 1,200 times deadlier than cyanide (a food safety page says over 1,000 per some authorities)",
+  "verdict": "saved",
+  "publisher": "National Geographic",
+  "url": "https://www.nationalgeographic.com/animals/fish/facts/pufferfish",
+  "quote": "Almost all pufferfish contain tetrodotoxin, a substance that makes them foul tasting and often lethal to fish. To humans, tetrodotoxin is deadly, up to 1,200 times more poisonous than cyanide.",
+  "supportedWording": "They also contain a toxin up to 1,200 times more poisonous than cyanide.",
+  "note": "NatGeo says 'up to 1,200 times', so add 'up to'. The Hong Kong Centre for Food Safety figure (over 1,000 times, per some authorities) is consistent. Cache: cache/S1_38_natgeo_pufferfish.txt"
+ },
+ {
+  "id": 71,
+  "detail": "car alarms, camera shutters, human voices, entire construction sites",
+  "verdict": "saved-adjusted",
+  "publisher": "The Conversation (Hollis Taylor)",
+  "url": "https://theconversation.com/lyrebirds-mimicking-chainsaws-fact-or-lie-22529",
+  "quote": "We see compelling footage of a bird imitating a camera's motor drive, a car alarm, and a chainsaw. ... He fails to mention that two of his three lyrebirds were captives, one from Healesville Wildlife Sanctuary and the other from Adelaide Zoo. This latter individual, Chook, was famed for his hammers, drills, and saws, sounds he reputedly acquired when the Zoo's panda enclosure was built. Hand-raised from a chick, he was also known to do a car alarm, as well as a human voice intoning \"hello, Chook!\" ... there is no known recording of a lyrebird in the wild mimicking man-made mechanical sounds.",
+  "supportedWording": "Lyrebirds are master mimics. Captive birds have copied a camera's motor drive, car alarms, chainsaws and even a human voice, and one Adelaide Zoo lyrebird picked up hammers, drills and saws while the zoo's panda enclosure was being built. Wild lyrebirds mostly copy other birds.",
+  "note": "'Entire construction sites' is an overstatement: the source supports hammer, drill and saw sounds learned near one zoo building project. The mechanical sounds are from captive birds; the source says no wild lyrebird has been recorded mimicking machinery. 'Camera shutters' should be 'a camera's motor drive' per the source. Cache: cache/S1_71_conversation_lyrebird.txt"
+ },
+ {
+  "id": 137,
+  "detail": "\"roughly the size of a dinner plate\"; record held alone (shared with colossal squid)",
+  "verdict": "saved-adjusted",
+  "publisher": "Guinness World Records",
+  "url": "https://www.guinnessworldrecords.com/world-records/70673-largest-eye",
+  "quote": "Giant squid (Architeuthis spp.) and colossal squid (Mesonychoteuthis spp.) have the largest eyes of any living animal. One photographed specimen of giant squid caught in February 1981 off Hawaii, USA, had a 9-cm pupil with a total eye diameter of at least 27 cm (10.6 in). A similar diameter of 27-28 cm (10.6-11 in) was measured for the eyes of a colossal squid in New Zealand collected in 2007.",
+  "supportedWording": "Giant squid share the record for the largest eyes of any living animal with the colossal squid: up to 27 cm across, built to catch the faintest flickers of bioluminescent light in the deep sea.",
+  "note": "The record is shared with the colossal squid, so 'have the largest eyes in the animal kingdom' alone overstates it. The dinner plate comparison was not confirmed from a fetched page: a search snippet attributes it to the Smithsonian Ocean Portal, but both Smithsonian pages returned 403 or 'temporarily unavailable'. Bioluminescence clause not checked here. Cache: cache/S1_137_guinness_largest_eye.txt"
+ },
+ {
+  "id": 167,
+  "detail": "giant pangolin specifically; tongue alone longer than head and body (source counts its muscles too)",
+  "verdict": "saved-adjusted",
+  "publisher": "The Gale Encyclopedia of Science (via Encyclopedia.com)",
+  "url": "https://www.encyclopedia.com/science/encyclopedias-almanacs-transcripts-and-maps/pangolins-0",
+  "quote": "The largest pangolin is the giant pangolin (M. gigantea) of Africa. It may reach a total length of more than 5 ft (1.5 m), of which about half is scale-covered tail. Its amazing tongue is almost as long as its body. This tongue can be 27 in (69 cm) long, though probably only half that length is extended beyond its sheath and into ant nests. The tongue is anchored to an attachment point on the animal's pelvis and is kept sticky by a huge salivary gland located in the chest.",
+  "supportedWording": "Pangolins have no teeth at all. Instead they rely on a sticky tongue that, in the giant pangolin, reaches up to 69 cm, almost as long as its body, anchored all the way back at the pelvis, to slurp up ants and termites by the thousands.",
+  "note": "This source says 'almost as long as its body', not longer than head and body, so the 'longer' claim is not supported for the tongue alone. Pelvis anchoring is supported. National Geographic's giant pangolin page only says 'very long tongue'. 'No teeth' and 'by the thousands' not checked here. Cache: cache/S1_167_encyclopediacom_pangolins.txt, cache/S1_167_natgeo_giant_pangolin.txt"
+ },
+ {
+  "id": 187,
+  "detail": "ghara used to \"blow bubbles\" \"underwater\" (source: a vocal resonator and visual signal)",
+  "verdict": "saved-adjusted",
+  "publisher": "Live Science; Smithsonian's National Zoo and Conservation Biology Institute",
+  "url": "https://www.livescience.com/animals/alligators-crocodiles/gharial-the-prehistoric-crocodilian-that-buzzes-and-blows-bubbles-to-find-a-mate",
+  "quote": "An adult male has a \"ghara\" at the end of its snout: a lightbulb-shaped bump, named after a bulbous Indian pot. This bizarre lump looks attractive to females and helps males woo their mates by blowing bubbles and creating a strange love song. (National Zoo, https://nationalzoo.si.edu/animals/gharial: \"It partially covers the crocodiles nostrils and acts as a vocal resonator, creating a loud, buzzing sound when the gharial vocalizes.\")",
+  "supportedWording": "Male gharials grow a bulbous knob on the tip of their snout called a 'ghara,' which helps them blow bubbles and make a loud buzzing call to attract mates.",
+  "note": "Bubbles are supported by Live Science (credible list), buzzing by the National Zoo. Neither says the buzzing happens underwater, so drop 'underwater'. Cache: cache/S1_187_livescience_gharial.txt, cache/S1_187_nationalzoo_gharial.txt"
+ },
+ {
+  "id": 211,
+  "detail": "\"for over a century\"; \"Genetic work in 2016\"; \"do not interbreed in the wild\"; \"comparable to ... polar and brown bears\" (Fennessy 2016, not read)",
+  "verdict": "saved",
+  "publisher": "Fennessy et al. 2016, Current Biology; Wildlife Conservation Society",
+  "url": "https://www.zoology.ubc.ca/~jankowsk/Fennessy_et_al_2016.pdf",
+  "quote": "Traditionally, one giraffe species and up to eleven subspecies have been recognized ... Even after a century of research, the distinctness of each giraffe subspecies remains unclear ... The giraffe was first described in 1758 in Linnaeus' Systema Naturae ... Concordance between maternally inherited mitochondrial and biparentally inherited nuclear markers indicates reproductive isolation for at least four giraffe groups. This lack of gene flow is unexpected, because wild giraffes are highly mobile and can interbreed in captivity. (WCS, https://blog.wcs.org/photo/?p=2412: \"For comparison, the genetic differences among giraffe species are at least as great as those between polar and brown bears. The unexpected findings reported in Current Biology on September 8, 2016 ...\")",
+  "supportedWording": "For over a century every giraffe was filed under one species. Genetic work in 2016 found four deeply distinct lineages that show no sign of interbreeding in the wild, separated by genetic differences at least as great as those between polar and brown bears.",
+  "note": "Card wording is supported. The paper itself does not make the bear comparison; it comes from the WCS (study partner) write-up. The paper notes giraffes can interbreed in captivity, which is consistent with 'in the wild'. Single-species status dates to Linnaeus 1758, so 'over a century' is an understatement, not an error. August 2025 IUCN line not checked here. Cache: cache/S1_211_Fennessy2016.txt, cache/S1_211_wcs_blog_giraffe.txt"
+ },
+ {
+  "id": 314,
+  "detail": "\"share their signature defensive move ... with the far larger ball python\"",
+  "verdict": "saved",
+  "publisher": "Zoo New England (Stone Zoo); Connecticut's Beardsley Zoo",
+  "url": "https://zoonewengland.org/stone-zoo/animals/reptiles-amphibians/rosy-boa/",
+  "quote": "The rosy boa compensates for its vulnerable size with a clever way of warding off predators: rolling itself into a ball with its head in the center, and then releasing a foul-smelling musk from a gland in its tail. ... Length: 22.4-35.4 inches. (Beardsley Zoo, https://beardsleyzoo.org/animals/ball-python/: \"Ball Pythons typically grow between 3 and 5 feet long ... When they feel threatened, Ball Pythons curl into a tight ball with their head tucked safely inside, a behavior that gives them their name.\")",
+  "supportedWording": "Rosy boas share their signature defensive move, rolling into a tight ball with the head hidden in the center, with the larger ball python.",
+  "note": "Both zoos describe the same head-in-center balling defense. Sizes: rosy boa 22 to 35 inches vs ball python 3 to 5 feet, so 'larger' is safe; 'far larger' is a mild stretch. The rest of the card (rarely triggered, tends to move away first) was not checked. Cache: cache/S1_314_zoonewengland_rosy_boa.txt, cache/S1_314_beardsleyzoo_ball_python.txt"
+ },
+ {
+  "id": 15,
+  "detail": "cubes sit on rocks and logs without rolling off, as scent messages with identity and breeding status",
+  "verdict": "saved",
+  "publisher": "The Conversation (Louise Gentle, Nottingham Trent University)",
+  "url": "https://theconversation.com/why-do-wombats-do-cube-shaped-poo-55975",
+  "quote": "Wombats deposit poo outside their burrows and on the tops of rocks and logs, where they are more easily found by other wombats. The distinctive shape is an advantage as the flat sides of the cubes ensure they do not roll off their precarious locations. ... Wombats have been found to differentiate between various poos and show avoidance behaviour when presented with poo produced by predators and other male wombats. The hormonal content of poo can also be examined, for example so that males can tell when females are most fertile.",
+  "supportedWording": "The cubes sit on rocks and logs without rolling off, where they work as scent messages: wombats can tell droppings apart, and males can read from them when a female is most fertile.",
+  "note": "Rocks/logs and not rolling: direct. Breeding status: direct (hormonal content, female fertility). 'Identity' is only implied (wombats tell other males' poo apart), so the adjusted wording avoids a bare 'identity' claim. Caution: the same article calls wombats 'highly territorial', which the card disputes; do not cite it for the territoriality line."
+ },
+ {
+  "id": 54,
+  "detail": "need social interaction daily (study: time alone did not itself change the odds)",
+  "verdict": "saved-adjusted",
+  "publisher": "UC Davis School of Veterinary Medicine (Feather-Picking in Parrots client handout)",
+  "url": "https://www.vetmed.ucdavis.edu/sites/g/files/dgvnsk491/files/inline-files/Feather-picking_in_Birds.pdf",
+  "quote": "Boredom may result from lack of appropriate toys, not enough foraging opportunities, or not enough interaction with other individuals (human or avian). ... Make sure your bird is getting enough attention during the day. ... try to spend more time interacting with your bird when you are home - interaction with people is one of the best forms of entertainment for birds!",
+  "supportedWording": "Parrots need regular social contact. Too little interaction with people or other birds leaves them bored, and boredom is one of several causes of feather picking.",
+  "note": "No credible source found stating a strict 'daily' requirement; UC Davis says 'enough attention during the day'. The handout was written by vet students as a class exercise. Plucking also has medical causes, so avoid implying isolation alone causes it, which also fits the first source's finding that time alone did not itself change the odds."
+ },
+ {
+  "id": 76,
+  "detail": "\"specialized receptors in their feet and trunk\" (source hedges: may sense via bone conduction or foot receptors)",
+  "verdict": "saved-adjusted",
+  "publisher": "Journal of Anatomy (Bouley, Alarcon, Hildebrandt, O'Connell-Rodwell 2007), via PMC; ScienceDaily / Stanford University 2001",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2375831/",
+  "quote": "we propose that Pacinian corpuscles are one possible anatomic mechanism used by elephants to detect seismic waves. ... Other anatomic structures may contribute to elephants' ability to detect seismic waves including conduction of ground vibrations through the toe bones to stimulate the over-sized malleus of the middle ear, or laying of the trunk, which is highly invested with PCs and Meissner's corpuscles, on the ground. ... Proposed pathways for elephant detection of these vibrations include bone conduction, somatosensory reception or both. [Stanford, ScienceDaily 2001: 'Seismic waves could travel from their toenails to the ear via bone conduction, or through somatosensory receptors in the foot similar to ones found in the trunk. We think it may be a combination of both.']",
+  "supportedWording": "Elephants pick up low-frequency rumbles through the ground, probably with pressure-sensitive receptors packed into their feet and trunk tip, and possibly by vibrations traveling up the bones to the ear.",
+  "note": "Receptors in feet and trunk are real (Pacinian corpuscles), but their role in seismic detection is proposed, not proven, so hedge with 'probably'. Second source: https://www.sciencedaily.com/releases/2001/03/010312071729.htm. The '20 miles' figure was not checked in this pass."
+ },
+ {
+  "id": 146,
+  "detail": "\"an unusually shaped larynx\"; the \"baroo\" nickname",
+  "verdict": "saved-adjusted",
+  "publisher": "Basenji Club of America",
+  "url": "https://basenji.org/basenji/",
+  "quote": "They don't bark. They do everything else. Basenjis are not mute. They growl, whimper, and whine. They have a hair-raising scream and a delightful yodel.",
+  "supportedWording": "Basenjis don't bark like other dogs, but they are far from silent: they growl, whine, scream and make a yodel-like sound, which is why the AKC calls the breed Africa's 'Barkless Dog.'",
+  "note": "Neither the larynx explanation nor the word 'baroo' was found on a credible source. The larynx claim traces to a pop-science book (Wikipedia's citation) and to small 1970s anatomy work (shallow laryngeal ventricle) whose own author called it inconclusive, reported only secondhand by hoaxes.org. 'Baroo' appears only on blogs and forums. AKC breed page (https://www.akc.org/dog-breeds/basenji/) supports 'Africa's \"Barkless Dog\"'. Britannica blocked (403)."
+ },
+ {
+  "id": 175,
+  "detail": "acid destroys \"anthrax, botulism, and cholera\" (source: most bacteria, plus a strong immune system)",
+  "verdict": "saved-adjusted",
+  "publisher": "Indiana Public Media (WFIU, A Moment of Science)",
+  "url": "https://indianapublicmedia.org/amomentofscience/vultures-food-poisoning/",
+  "quote": "Vultures can usually eat carcasses infected with such deadly pathogens as botulism, anthrax, cholera, and salmonella without getting sick. ... With stomach acid near zero pH, vulture guts are almost ten times more acidic than other carnivorous birds, like hawks. The extreme acid destroys most bacteria and parasites before they reach the vultures' intestines. Besides their strong stomach acid, healthy vultures develop a very strong immune system, with the ability to fight off the commonly ingested microbes.",
+  "supportedWording": "A vulture's stomach acid, with a pH near zero, destroys most bacteria before they reach the gut, and together with a very strong immune system it lets vultures eat carcasses infected with anthrax, botulism and cholera without getting sick.",
+  "note": "The source credits disease resistance to acid plus immunity, not to acid alone killing these three pathogens, so the card should not say the acid destroys anthrax specifically. Also 'before they reach the bloodstream' should be 'before they reach the intestines'. Publisher is a public-radio science segment; a zoo or peer-reviewed page was not found within the fetch budget."
+ },
+ {
+  "id": 199,
+  "detail": "scales are keratin, like fingernails and hair",
+  "verdict": "saved",
+  "publisher": "Minnesota Zoo",
+  "url": "https://mnzoo.org/blog/pangolin-rehabilitation-in-namibia/",
+  "quote": "These hardened scales cover their body and are simply made of keratin, the same protein that makes up human hair and fingernails.",
+  "supportedWording": "Pangolin scales are keratin, the same protein your fingernails and hair are made of.",
+  "note": "Also EarthDate (UT Austin Bureau of Economic Geology) in cache: 'These scales are made of keratin, just like our fingernails.'"
+ },
+ {
+  "id": 234,
+  "detail": "Fel d1 is \"behind most human cat allergies\"; \"less a toxin\"; \"damage is done by the victim's own immune response\"",
+  "verdict": "saved-adjusted",
+  "publisher": "Allergy, Asthma & Clinical Immunology (Bonnet et al. 2018), via PMC; Journal of Venomous Animals and Toxins incl. Tropical Diseases (Nekaris et al. 2013)",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5891966/",
+  "quote": "The major allergen responsible for symptoms is Fel d 1 ... Fel d 1 is the major allergen of domestic cats. Anti-Fel d 1 specific IgE is found in the serum of more than 80-95% of patients allergic to cats. [Nekaris 2013, https://pmc.ncbi.nlm.nih.gov/articles/PMC3852360/: 'They interpreted the propensity of only some individuals to suffer anaphylaxis from loris bites as consistent with variable sensitivity to a protein allergen.' ... 'slow loris bites are intensely painful, and in both humans and loris conspecifics can cause oedema, fester, take weeks to heal']",
+  "supportedWording": "The protein in slow loris venom structurally resembles Fel d 1, the main cat allergen, which 80 to 95 percent of cat-allergic people react to. That may explain why only some bite victims go into anaphylactic shock: the reaction looks like an allergy, driven by the victim's own immune system.",
+  "note": "Fel d 1 part: supported. 'Less a toxin' and 'much of the damage is done by the victim's own immune response': not supported as written. The allergen idea only explains why some people suffer anaphylaxis; bites also cause swelling and festering wounds in other lorises, and a later Oxford Brookes cell study (Gardiner et al. 2018, PMC6055083, not fetched) found loris saliva alone is cytotoxic. Drop the 'less a toxin' framing."
+ },
+ {
+  "id": 317,
+  "detail": "electroreception \"usually only found in animals that live in water\"",
+  "verdict": "saved-adjusted",
+  "publisher": "Journal of Physiology (Gregory, Iggo, McIntyre, Proske 1989), via PMC",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1189155/",
+  "quote": "It is the first known example of electroreception in a terrestrial animal. ... Similar glands in skin of the platypus have previously been shown to be the sites of electroreceptors.",
+  "supportedWording": "Their snout is also packed with electroreceptors that pick up the faint electrical signals of prey, and when this was found in 1989 it was the first known case of electroreception in a land animal.",
+  "note": "The paper supports 'first known in a terrestrial animal', which implies the rest were aquatic or semi-aquatic, but no fetched credible page states the 'usually only in water' line outright. Proske et al. 1998 (Phil Trans R Soc B, PMC1692308) says the electric sense may detect prey 'in moist soil'. 'Underground' is fine as soil prey."
+ },
+ {
+  "id": 35,
+  "detail": "fur looks white because it reflects visible light, like snow",
+  "verdict": "saved",
+  "publisher": "Live Science",
+  "url": "https://www.livescience.com/43673-weird-facts-about-polar-bears.html",
+  "quote": "Although polar bears appear white, their fur is actually transparent. It only appears white, because it reflects visible light. Under their fur, polar bear skin is actually black.",
+  "supportedWording": "Their fur only appears white because it reflects visible light.",
+  "note": "Live Science matches the card nearly word for word, but does not make the snow comparison. The snow comparison appears only on lower-grade pages (Cornell Expert Voices blog, popular sites); Polar Bears International and Britannica pages blocked fetching. Drop 'like snow' or keep it as plain analogy. Cache: cache/S3_35_livescience_weird.txt"
+ },
+ {
+  "id": 58,
+  "detail": "many parrots mimic full sentences, tones and laughs",
+  "verdict": "saved-adjusted",
+  "publisher": "Live Science; Audubon",
+  "url": "https://www.livescience.com/59912-parrot-murder-witness-voice-mimicking-ability.html",
+  "quote": "the birds' ability to not only mimic words and sounds, but to also do so in an individual person's voice. ... The birds can also mimic the pitch and inflection of human voices.",
+  "supportedWording": "Many parrots can mimic not just single words but whole phrases, even copying the pitch and inflection of a particular person's voice.",
+  "note": "Phrases: Audubon (https://www.audubon.org/magazine/why-do-parrots-talk) 'Parrots are also drawn to phrases and sounds associated with excitement and commotion'; the 2022 Sci Rep survey of 877 companion parrots (PMC9722931) counts mimicked 'phrases' with median 5, max 500. Tones: Live Science quote. Laughs: not found in any credible source (only viral news and a children's Q&A). Cache: S3_58_livescience_parrot_mimic.txt, S3_58_audubon_why_parrots_talk.txt, S3_58_PMC9722931_survey.txt"
+ },
+ {
+  "id": 125,
+  "detail": "\"up to a liter\" of slime",
+  "verdict": "saved-adjusted",
+  "publisher": "Science News",
+  "url": "https://www.sciencenews.org/article/ingredients-hagfish-slime-revealed",
+  "quote": "A hagfish can bloop out a liter or so in less than a second, says marine biologist Douglas Fudge of the University of Guelph in Canada.",
+  "supportedWording": "it can release about a liter of slime in under a second",
+  "note": "The source says 'a liter or so', an expert estimate, not a maximum, so 'about a liter' is safer than 'up to a liter'. Separately, the card's '0.1 seconds' is not what this source says ('less than a second'); the Chaudhary, Ewoldt and Thiffeault 2019 J R Soc Interface paper reports secretion and slime formation in under 0.4 s. Cache: S3_125_sciencenews_hagfish.txt"
+ },
+ {
+  "id": 154,
+  "detail": "\"dozens\" of flockmates; \"and familiar humans\"; \"over long stretches of time\"",
+  "verdict": "saved-adjusted",
+  "publisher": "Animal Cognition (Marino 2017, peer-reviewed review); Poultry Science (Ferreira et al. 2025)",
+  "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5306232/",
+  "quote": "Not only do chickens recognize who is and is not a member of their social group, but they differentiate individuals within their own group. Under various experimental conditions, domestic chickens have demonstrated the capacity to visually discriminate and recognize a large number of conspecifics presented live (Bradshaw 1991, 1992; D'Eath and Stone 1999) and in color slides",
+  "supportedWording": "Hens can recognize a large number of individual flockmates by sight, and chickens can tell people apart by their physical features.",
+  "note": "'Dozens' is close to Marino's 'a large number'. Humans: Ferreira et al. 2025, Poult Sci 104:105203 (https://pmc.ncbi.nlm.nih.gov/articles/PMC12434278/): 'chickens have been shown to differentiate between humans based on physical characteristics and can also discriminate between familiar and unfamiliar human voices'. 'Over long stretches of time' not found in any credible source (the 'up to 100 faces, for months' claim is only on blogs). Cache: S3_154_PMC5306232_Marino2017.txt, S3_154_PMC12434278.txt"
+ },
+ {
+  "id": 180,
+  "detail": "motionless \"for hours\"; \"snap a lungfish or baby crocodile in half\"",
+  "verdict": "saved-adjusted",
+  "publisher": "National Geographic; Audubon",
+  "url": "https://www.nationalgeographic.com/animals/birds/facts/shoebill",
+  "quote": "Shoebills can stay motionless for hours, so when a hapless lungfish comes up for air, it might not notice this lethal prehistoric-looking bird looming until it's too late. (Audubon: When there's nothing but lungfish or crocodile left, the Shoebill will give it a quick decapitation with the sharp edges of the bill (because of course it does) and swallow away.)",
+  "supportedWording": "Shoebills can stand motionless for hours while hunting, then lunge forward on their prey. The sharp edges of the bill can behead a lungfish or even a baby crocodile before the bird swallows it.",
+  "note": "'For hours' saved (National Geographic). 'Snap in half' is not supported; sources say decapitate/behead. NatGeo also says it 'even snacks on baby crocodiles'. Audubon URL: https://www.audubon.org/magazine/shoebill-or-most-terrifying-bird-world (a light-toned magazine piece). Cache: S3_180_natgeo_shoebill.txt, S3_180_audubon_shoebill.txt"
+ },
+ {
+  "id": 200,
+  "detail": "\"the 1996 paper that made it famous\" used T. nutricula",
+  "verdict": "saved-adjusted",
+  "publisher": "The Biological Bulletin (Piraino, Boero, Aeschbach and Schmid 1996), via Europe PMC/PubMed",
+  "url": "https://pubmed.ncbi.nlm.nih.gov/29227703/",
+  "quote": "All stages of the medusa Turritopsis nutricula, from newly liberated to fully mature individuals, can transform back into colonial hydroids, either directly or through a resting period, thus escaping death and achieving potential immortality. This is the first metazoan known to revert to a colonial, juvenile morph after having achieved sexual maturity in a solitary stage.",
+  "supportedWording": "including in the 1996 paper that first called it potentially immortal",
+  "note": "The paper exists (Biol Bull 190(3):302-312, DOI 10.2307/1543022) and its title and abstract use T. nutricula and the phrase 'potential immortality'. 'Made it famous' is an editorial judgment no credible page states directly; tying it to the 'potential immortality' wording is safe. Do not call it the first report: Bavestrello et al. 1992 described the reversal earlier. Cache: S3_200_Piraino1996_BiolBull_abstract.txt"
+ },
+ {
+  "id": 235,
+  "detail": "\"nail clippers or pliers\"; \"without anesthetic\"",
+  "verdict": "not-found",
+  "publisher": "PLOS ONE (Nekaris et al. 2013, peer-reviewed)",
+  "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0069215",
+  "quote": "Illegally-traded animals routinely have their anterior teeth inhumanely clipped out by vendors, a practice that inhibits release of animals back to the wild and often results in their death.",
+  "supportedWording": "traders routinely clip out a slow loris's front teeth before sale",
+  "note": "The tools and the lack of anesthetic were not found in any credible source. In the PLOS ONE paper 'pliers' appears only in quoted YouTube comments. Mongabay news (https://news.mongabay.com/2012/12/new-species-of-cute-but-venomous-primate-discovered-in-borneo/) says 'pliers or fingernail clippers, without the use of an anesthetic', but it is environmental journalism, not on the credible list. The peer-reviewed text supports clipping, inhumane, death and no release. Also: Nekaris et al. 2013 Toxicon review (PMC3852360) says traders 'routinely cut out the lorises' front teeth to prevent their biting potential purchasers'. Cache: S3_235_PLoSONE_Nekaris2013_tickled.txt, S3_235_PMC3852360_Nekaris2013_venom.txt, S3_235_Fuller2018_JAAWS_brookes.txt"
+ },
+ {
+  "id": 318,
+  "detail": "same partner \"for 15 to 20 years\"; pair \"spends most of the year apart at sea\"; \"preen each other\"",
+  "verdict": "saved-adjusted",
+  "publisher": "Marine Ecology Progress Series (Fayet et al. 2017, Oxford); Animal Diversity Web (Univ. of Michigan)",
+  "url": "https://www.int-res.com/abstracts/meps/v569/p243-252",
+  "quote": "While pair members migrated separately, their routes were similar in the first part of the non-breeding season but diverged later on; nonetheless, pairs showed synchrony in their return to the breeding colony in spring.",
+  "supportedWording": "often reuniting with the same partner year after year, even though the pair migrates separately and spends the winter apart at sea. When they find each other again they tap bills before settling back in to raise a single chick.",
+  "note": "Apart at sea: supported (MEPS). ADW (https://animaldiversity.org/accounts/Fratercula_arctica/): 'The Atlantic puffin is a monogamous species, keeping the same partner for a lifetime' and the non-breeding period runs 'late summer until spring'. '15 to 20 years' as a pair duration: not found (ADW gives only average lifespan of 20 years). 'Preen each other': not found; billing is supported. Cache: S3_318_Fayet2017_MEPS_abstract.txt, S3_318_ADW_puffin.txt"
+ },
+ {
+  "id": 38,
+  "detail": "inflate to three times normal size",
+  "verdict": "saved-adjusted",
+  "publisher": "Marine Science Institute, The University of Texas at Austin (Science and the Sea)",
+  "url": "https://utmsi.utexas.edu/science-and-the-sea/print-article/a-swell-adaptation/",
+  "quote": "One spiny puffer species, called the balloonfish, swells to about 3 times its usual volume. Most of that increase is thanks to the stomach, whose many folds let it expand by 50 to 100 times!",
+  "supportedWording": "Some pufferfish, like the balloonfish, can swell to about three times their usual volume when threatened.",
+  "note": "Source gives volume, not size, and names one species. Other secondary sources range from two to four times, so keep it to 'about three times their usual volume' or hedge with 'some pufferfish'. Cached as cache/D4_38_utmsi_swell.txt."
+ },
+ {
+  "id": 64,
+  "detail": "eat, sleep and even mate in the sky (Lund: how they sleep is unknown)",
+  "verdict": "saved-adjusted",
+  "publisher": "NPR (reporting the Lund University study in Current Biology, quoting Susanne Akesson via National Geographic)",
+  "url": "https://www.npr.org/sections/thetwo-way/2016/10/27/499635084/this-bird-can-remain-airborne-for-10-months-straight",
+  "quote": "The fact that some birds fly continuously during nonbreeding periods indicates that the species may not actually need to land for sleep. In fact, it's unclear \"when and to what extent swifts need to sleep,\" the paper states. \"They feed in the air, they mate in the air, they get nest material in the air,\" researcher Susanne Akesson from Lund University in Sweden tells National Geographic.",
+  "supportedWording": "They feed and even mate in the air, and they don't seem to need to land to sleep.",
+  "note": "Eating and mating in the air are directly supported. Sleeping in the air is implied (they stay aloft for months) but the paper says when and how much they sleep is unclear, so avoid stating flatly that they sleep in the sky. Cached as cache/D4_64_npr_swift.txt."
+ },
+ {
+  "id": 133,
+  "detail": "\"nearly immune to cancer\" (source: rarely gets cancer); \"one of the only mammals\" that cannot regulate temperature",
+  "verdict": "saved",
+  "publisher": "University of Cambridge (research news on Hill et al., Nature 2020)",
+  "url": "https://www.cam.ac.uk/research/news/secrets-of-naked-mole-rat-cancer-resistance-unearthed",
+  "quote": "Understanding how these remarkable animals are almost completely immune to cancer could improve our understanding of the early stages of the disease in people... They can live for up to 37 years and are highly cancer resistant, with only a few cases ever observed in captive animals. Other unusual traits that have made them of interest to science include being the only cold-blooded mammal...",
+  "supportedWording": "Naked mole rats are nearly immune to cancer, and they're the only cold-blooded mammal.",
+  "note": "Both halves supported by the same page; Cambridge says 'the only cold-blooded mammal', so 'one of the only' is a safe softening. Caveat: a 2025/2026 study (PNAS) finds colony animals keep a steady temperature by huddling and moving between warmer and cooler burrows, so the thermoconformer label applies to isolated animals. Cached as cache/D4_133_cam_nmr_cancer.txt."
+ },
+ {
+  "id": 159,
+  "detail": "twists \"almost freely\"; spins and bites \"while pinned by the scruff\"",
+  "verdict": "saved-adjusted",
+  "publisher": "San Diego Zoo Wildlife Alliance (San Diego Zoo Kids)",
+  "url": "https://kids.sandiegozoo.org/animals/honey-badger-ratel",
+  "quote": "Not only is its skin tough, it's loose enough that a honey badger can turn around in it and bite its attacker.",
+  "supportedWording": "A honey badger's skin is so tough and loose that it can turn around inside it and bite its attacker.",
+  "note": "'Almost freely' and 'pinned by the scruff of its neck' are not in any credible source found; drop them. BBC Wildlife (Discover Wildlife) says the same in similar words: 'Even if a badger is caught, its loose skin enables it to twist round and bite its attacker.' Cached as cache/D4_159_sdzoo_honeybadger.txt."
+ },
+ {
+  "id": 184,
+  "detail": "lookout \"on a raised mound\" for \"eagles and jackals\", swapping \"roughly every hour\" so all can forage",
+  "verdict": "saved-adjusted",
+  "publisher": "Science in School (EIROforum), by Mico Tatalovic, University of Cambridge",
+  "url": "https://scienceinschool.org/article/2008/meerkats/",
+  "quote": "Birds of prey, wild cats, jackals, snakes.... If it's bigger than a meerkat and it eats meat, it's probably a threat... meerkats have evolved an even more sophisticated strategy to avoid predation: posting sentinels, usually one but sometimes several at the time... Flower keeps guard from trees, logs, bushes, grass tufts or even human heads... Having a sentinel on guard reduces the possibility of surprise attacks and allows the rest of the group to be less vigilant... Some sentinels will go on guard more often, and guard longer and from higher posts... meerkat sentinels guard from safe sites, and only once their bellies are full (Clutton-Brock et al, 1999).",
+  "supportedWording": "Meerkat mobs post a lookout on a raised perch, like a bush, log or tree, to watch for birds of prey and jackals while the rest of the group forages.",
+  "note": "'Roughly every hour' and 'so everyone gets a turn' are not supported. Research (Clutton-Brock 1999, Science) shows sentinels go on guard once they have eaten their fill, and some 'supersentinels' guard more often and longer, so duty is not an even rotation. Popular sources give shift lengths from 20 minutes to an hour, none credible. 'Mound' narrowed to raised perch; source lists trees, logs, bushes and grass tufts. Britannica returned 403. Cached as cache/D4_184_scienceinschool_meerkat.txt."
+ },
+ {
+  "id": 210,
+  "detail": "92 Hz is \"well inside human hearing\", \"audible all along\", \"quietly kills a popular claim\", \"Nobody had listened\"",
+  "verdict": "saved-adjusted",
+  "publisher": "PBS NOVA (with the primary paper: Baotic, Sicks and Stoeger 2015, BMC Research Notes)",
+  "url": "https://www.pbs.org/wgbh/nova/article/giraffes-hum-to-each-other-throughout-the-night-and-zookeepers-never-noticed/",
+  "quote": "Scientists assumed that, if anything, giraffes, like elephants, might produce infrasonic (ultra-low) sounds below the range of human hearing... Not only were they humming, but these vocalizations were within the frequency range that humans can hear (albeit on the low side, at an average of 92 Hertz). Paper (https://pmc.ncbi.nlm.nih.gov/articles/PMC4565008/): \"Despite inconclusive evidence to date, it is widely assumed that giraffes produce infrasonic vocalizations similar to elephants.\" \"None of the recorded vocalizations were within the infrasonic range.\" \"This call type was recorded only during the nocturnal recording sessions.\" \"During 700 h of vocal recordings (by day) of giraffes in three zoological institutions, Hurgitsch recorded 72 vocalizations, mostly snorts.\"",
+  "supportedWording": "That overturns a popular assumption: 92 Hz is not infrasound. It sits within human hearing, if on the low side. Earlier studies had recorded giraffes by day, and the hums only came at night.",
+  "note": "'Well inside human hearing' overstates it; NOVA says 'on the low side'. 'Nobody had listened' is not accurate: a prior study logged 700 hours of daytime recordings and missed the hums because they occur only at night. The widely held infrasound assumption is confirmed by the paper. Cached as cache/D4_210_PMC4565008_giraffe.txt and cache/D4_210_nova_giraffe.txt."
+ },
+ {
+  "id": 309,
+  "detail": "\"upper beak has small ridges that hold a seed in place while the lower beak cracks\" it",
+  "verdict": "saved-adjusted",
+  "publisher": "Society for Integrative and Comparative Biology (meeting abstract by Dominique Homberger, Louisiana State University)",
+  "url": "https://sicb.org/?p=35036",
+  "quote": "The psittacid bill type (of the majority of Psittaciformes) has a projecting upper bill tip with a corrugated internal surface, a transverse step on the corneous palate, and a lower bill tip fashioned into a transverse cutting edge. It enables them to shell seeds by exerting pressure on preformed suture lines of seed coats with the mandibular cutting edge, which remains aligned with the upper bill.",
+  "supportedWording": "A parrotlet's upper beak has a ridged inner surface, and the sharp cutting edge of its lower beak shells each seed by pressing on the seams of the seed coat before the seed is ever swallowed.",
+  "note": "Ridges on the inner upper beak and shelling with the lower beak's cutting edge are supported for the typical parrot bill type (parrotlets are psittacids). No source says the ridges specifically 'hold the seed in place', so do not state that function outright. The no-grit tie-in was not part of this detail; a University of Liverpool vet school diet handout surfaced in search says parrots don't need grit because they dehusk seed with their beaks, but it was not fetched. Cached as cache/D4_309_sicb_homberger.txt."
+ }
+]
