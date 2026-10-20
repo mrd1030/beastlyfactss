@@ -13,6 +13,21 @@ borrowing another page's photo got their own on 2026-10-18.
 The five October heroes and the five parked facts all landed the same day.
 `check-images.mjs` passes on 1,674 referenced paths.
 
+**Photo swap for fact 6 (Rabbit, "Purring Bunnies") plus a new binky fact**:
+found 2026-10-20. Fact 6's photo, `rabbit-3.jpg`, shows a binky, but the card is
+now only about purring (the binky line was cut in the sourcing pass: a second
+point, and its source never mentioned it). The plan, done in one install so no
+photo is ever shared:
+
+1. Fact 6 gets a new photo: a relaxed rabbit being stroked, eyes half closed.
+2. `rabbit-3.jpg` moves to a new fact, id 353, Rabbit (Mammals), "The Binky":
+   Happy rabbits have their own little victory dance, called a binky. The rabbit
+   hops up into the air, gives a quick twist, then lands back on the ground. Vets
+   at the PDSA list it under "happy hopping", one of the signs of a happy bunny.
+   Source: PDSA, https://www.pdsa.org.uk/pet-help-and-advice/looking-after-your-pet/rabbits/rabbit-body-language
+   ("When your rabbits are happy, you might notice them do a little 'binky'. This
+   is when they hop in the air, twist a little bit, then land back on the ground.")
+
 ## Guide heroes still needed
 
 None. All 17 animal-day heroes (docs/NOV_DEC_ANIMAL_DAYS.md) landed on
