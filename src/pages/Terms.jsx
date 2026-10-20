@@ -30,7 +30,7 @@ export default function Terms() {
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
             <PageBadge icon={BadgeIcon} color="teal" />
             <h1 className="font-display font-bold text-3xl sm:text-4xl text-foreground mb-2">Terms of Service</h1>
-            <p className="text-xs text-muted-foreground font-body">Last updated: October 12, 2026</p>
+            <p className="text-xs text-muted-foreground font-body">Last updated: October 20, 2026</p>
           </motion.div>
         </div>
       </div>
@@ -43,6 +43,7 @@ export default function Terms() {
 
           <Section title="2. Use of Content">
             <p>All content on BeastlyFacts.com - including animal facts, care guides, articles, images, and quizzes - is provided for educational and entertainment purposes only. You may share individual facts for non-commercial purposes with clear attribution to BeastlyFacts.com.</p>
+            <p>Photos and illustrations on the Site belong to Beastly Facts unless they carry their own credit line. You're welcome to share them with friends, in class, or on social media. A credit or a link back to BeastlyFacts.com is always appreciated, but we won't chase you for it. Photos that do carry a credit line belong to their photographers, so please follow the license shown with them.</p>
             <p>You may not reproduce, republish, scrape, or redistribute the Site's content in bulk without prior written permission.</p>
           </Section>
 
