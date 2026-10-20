@@ -23,11 +23,6 @@ The owner is replacing them with their own generated photos, five prompts at a
 time, saved over the same filename so no map changes. Take each line off this
 list when its photo lands.
 
-- 22 Seahorse, "Pregnant Dads": `seahorse.jpg`
-- 23 Platypus, "Egg-Laying Mammal": `platypus.jpg`
-- 24 Capybara, "The Chillest Animal": `capybara.jpg`
-- 25 Tardigrade, "Indestructible Water Bears": `tardigrade.jpg`
-- 26 Narwhal, "Unicorn of the Sea": `narwhal.jpg`
 - 27 Koala, "22-Hour Sleepers": `koala.jpg`
 - 28 Butterfly, "Taste With Their Feet": `butterfly.jpg`
 - 29 Starfish, "Arm Regeneration Masters": `starfish.jpg`
