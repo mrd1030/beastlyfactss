@@ -63,3 +63,4 @@ frog, pen-tailed tree shrew) and Adobe Firefly for ids 287 to 296.
 | `crow.jpg`, `jellyfish.jpg`, `mantis-shrimp.jpg` (replacing Adobe Stock) | Adobe Firefly, partner model Gemini 3.1 (Nano Banana 2) | 2026-10-20 |
 | `elephant.jpg` (replacing Adobe Stock) | Adobe Firefly, partner model GPT Image 2.5 Flare | 2026-10-20 |
 | `wombat.jpg` (replacing Adobe Stock) | Adobe Firefly, partner model GPT Image 2.5 Sunburst | 2026-10-20 |
+| `honeybee.jpg`, `sea-otter.jpg`, `gecko.jpg`, `komodo-dragon.jpg`, `sloth.jpg` (replacing Adobe Stock) | Adobe Firefly, partner model GPT Image 2.5 Flare | 2026-10-20 |

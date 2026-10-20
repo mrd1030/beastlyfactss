@@ -23,11 +23,6 @@ The owner is replacing them with their own generated photos, five prompts at a
 time, saved over the same filename so no map changes. Take each line off this
 list when its photo lands.
 
-- 16 Honeybee, "Honeybee House Hunters": `honeybee.jpg`
-- 17 Sea Otter, "Sea Otter Hand-Holding": `sea-otter.jpg`
-- 18 Gecko, "Gecko Toe Magic": `gecko.jpg`
-- 19 Komodo Dragon, "Virgin Birth Dragons": `komodo-dragon.jpg`
-- 20 Sloth, "The 40-Minute Myth": `sloth.jpg`
 - 22 Seahorse, "Pregnant Dads": `seahorse.jpg`
 - 23 Platypus, "Egg-Laying Mammal": `platypus.jpg`
 - 24 Capybara, "The Chillest Animal": `capybara.jpg`
