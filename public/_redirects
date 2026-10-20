@@ -351,6 +351,12 @@
 /facts/always-landing-right/ /facts/the-righting-reflex/ 301
 /facts/70-of-life-asleep /facts/two-thirds-downtime/ 301
 /facts/70-of-life-asleep/ /facts/two-thirds-downtime/ 301
+/facts/multiple-personality-parrots /facts/the-bashful-parrot/ 301
+/facts/multiple-personality-parrots/ /facts/the-bashful-parrot/ 301
+/facts/feline-mustache /facts/no-mustache-required/ 301
+/facts/feline-mustache/ /facts/no-mustache-required/ 301
+/facts/faster-than-a-fighter-pilot /facts/more-gs-than-a-fighter-jet/ 301
+/facts/faster-than-a-fighter-pilot/ /facts/more-gs-than-a-fighter-jet/ 301
 
 # Splat rules live here, at the very bottom, and nothing goes below them. The
 # two exact-match /encyclopedia/guides rules above still win, since Cloudflare

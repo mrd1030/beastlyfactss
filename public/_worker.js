@@ -222,7 +222,7 @@ const FACT_IMAGES = {
   151: '/assets/facts/flamingo-2.jpg', // "The One-Leg Trick" - id 21 keeps flamingo.jpg
   81: '/assets/facts/chameleon-2.jpg', // "Color-Changing Camouflage"
   88: '/assets/facts/chameleon-3.jpg', // "Chameleon Color Change"
-  138: '/assets/facts/chameleon-4.jpg', // "Faster Than a Fighter Pilot"
+  138: '/assets/facts/chameleon-4.jpg', // "More G's Than a Fighter Jet"
   63: '/assets/facts/dolphin-2.jpg', // "Mirror Test Passers"
   79: '/assets/facts/dolphin-3.jpg', // "Secrets in the Sound"
   105: '/assets/facts/dolphin-4.jpg', // "Glowing Oceans, No Joke!"
