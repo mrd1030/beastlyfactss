@@ -219,7 +219,7 @@ const FACT_IMAGES = {
   244: '/assets/facts/elephant-4.jpg',
   245: '/assets/facts/honeybee-3.jpg',
   246: '/assets/facts/honeybee-4.jpg',
-  151: '/assets/facts/flamingo-2.jpg', // "The One-Leg Trick" - id 21 keeps flamingo.jpg
+  151: '/assets/facts/flamingo-3.jpg', // "The One-Leg Trick"; id 21 keeps flamingo.jpg
   81: '/assets/facts/chameleon-2.jpg', // "Color Talk, Not Camouflage"
   88: '/assets/facts/chameleon-3.jpg', // "Chameleon Color Change"
   138: '/assets/facts/chameleon-4.jpg', // "More G's Than a Fighter Jet"
@@ -334,7 +334,7 @@ const FACT_IMAGES = {
   289: '/assets/facts/okapi.jpg',
   290: '/assets/facts/nudibranch.jpg',
   291: '/assets/facts/gila-monster.jpg',
-  292: '/assets/facts/kea.jpg',
+  292: '/assets/facts/kea-2.jpg',
   293: '/assets/facts/dachshund.jpg',
   294: '/assets/facts/pygmy-marmoset.jpg',
   295: '/assets/facts/barreleye-fish.jpg',
@@ -379,7 +379,7 @@ const FACT_IMAGES = {
   334: '/assets/facts/tasmanian-devil.jpg', // "Biggest Bite for Its Size"
   335: '/assets/facts/matamata.jpg', // "Sucks First, Asks Later"
   336: '/assets/facts/potoo.jpg', // "Watching With Eyes Shut"
-  337: '/assets/facts/shiba-inu.jpg', // "A Sound All Its Own"
+  337: '/assets/facts/shiba-inu-2.jpg', // "A Sound All Its Own"
   338: '/assets/facts/frilled-shark.jpg', // "Three and a Half Year Wait"
   339: '/assets/facts/serval-ears.jpg', // "Ears Tuned to Mice"
   340: '/assets/facts/serval-leap.jpg', // "Plucks Birds From the Air"
@@ -395,11 +395,17 @@ const FACT_IMAGES = {
   350: '/assets/facts/binturong.jpg', // "The Scent of Popcorn"
   351: '/assets/facts/blue-tongued-skink.jpg', // "A Tongue Built to Startle"
   352: '/assets/facts/immortal-jellyfish.jpg', // "Spare Copies of the Repair Kit"
+  93: '/assets/facts/common-house-spider-2.jpg', // "Not Here for the Heat"
+  353: '/assets/facts/rabbit-3.jpg', // "The Binky"
+  354: '/assets/facts/common-house-spider.jpg', // "Eats Its Own Web"
+  355: '/assets/facts/flamingo-2.jpg', // "Head-Flagging Season"
+  356: '/assets/facts/kea.jpg', // "The Only Alpine Parrot"
+  357: '/assets/facts/shiba-inu.jpg', // "The Cat-Dog"
   // Own photos for the 11 facts that were borrowing another page's (2026-10-18).
   1: '/assets/facts/octopus-5.jpg', // "Three Hearts of Love"
   2: '/assets/facts/hedgehog-3.jpg', // "Spiny Situation"
   5: '/assets/facts/bearded-dragon-4.jpg', // "Mood Ring Lizards"
-  6: '/assets/facts/rabbit-3.jpg', // "Purring Bunnies"
+  6: '/assets/facts/rabbit-4.jpg', // "Purring Bunnies"
   14: '/assets/facts/axolotl-3.jpg', // "Axolotl Superpowers"
   39: '/assets/facts/ball-python.jpg', // "Famous Meal Skippers"
   41: '/assets/facts/leopard-gecko.jpg', // "Tail Fat Reserves"

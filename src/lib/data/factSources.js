@@ -359,6 +359,11 @@ export const FACT_SOURCES = {
   350: "Duke University",
   351: "Australian Geographic",
   352: "PNAS (2022)",
+  353: "PDSA",
+  354: "Indiana Public Media",
+  355: "Houston Zoo",
+  356: "New Zealand Department of Conservation",
+  357: "VCA Animal Hospitals",
 };
 
 // The publisher a fact is sourced to, or null when none has been recorded.

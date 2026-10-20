@@ -134,6 +134,7 @@ const rank = (name) => {
   if (name.startsWith('wrong')) return 3;
   if (name === 'long.json') return 4;
   if (name.startsWith('edit')) return 5;
+  if (name.startsWith('new')) return 6; // new facts, sourced when written
   return -1; // search.json, triage.json: extra confirmation only, never the card's source
 };
 

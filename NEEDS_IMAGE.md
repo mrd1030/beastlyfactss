@@ -13,44 +13,6 @@ borrowing another page's photo got their own on 2026-10-18.
 The five October heroes and the five parked facts all landed the same day.
 `check-images.mjs` passes on 1,674 referenced paths.
 
-**Photo swap for fact 6 (Rabbit, "Purring Bunnies") plus a new binky fact**:
-found 2026-10-20. Fact 6's photo, `rabbit-3.jpg`, shows a binky, but the card is
-now only about purring (the binky line was cut in the sourcing pass: a second
-point, and its source never mentioned it). The plan, done in one install so no
-photo is ever shared:
-
-1. Fact 6 gets a new photo: a relaxed rabbit being stroked, eyes half closed.
-2. `rabbit-3.jpg` moves to a new fact, id 353, Rabbit (Mammals), "The Binky":
-   Happy rabbits have their own little victory dance, called a binky. The rabbit
-   hops up into the air, gives a quick twist, then lands back on the ground. Vets
-   at the PDSA list it under "happy hopping", one of the signs of a happy bunny.
-   Source: PDSA, https://www.pdsa.org.uk/pet-help-and-advice/looking-after-your-pet/rabbits/rabbit-body-language
-   ("When your rabbits are happy, you might notice them do a little 'binky'. This
-   is when they hop in the air, twist a little bit, then land back on the ground.")
-
-**Photo swaps for four more mismatched facts, each freeing a photo for a new fact**:
-found 2026-10-20. After the sourcing pass rewrote these cards, their photos no
-longer match. Each card gets a new photo, and the old photo moves to a new,
-already sourced fact. Do each swap in one install so no photo is ever shared.
-Prompts were given in chat on 2026-10-20.
-
-| Card now | Photo now | Why it no longer fits | Old photo goes to |
-|---|---|---|---|
-| 93 Common House Spider, "Not Here for the Heat" | `common-house-spider.jpg` | an orb weaver, not a house spider | new fact 354 |
-| 151 Flamingo, "The One-Leg Trick" | `flamingo-2.jpg` | two flamingos on two legs | new fact 355 |
-| 292 Kea, "The Rubber-Chewing Parrot" | `kea.jpg` | holds a glove; glove theft was cut as unsourced | new fact 356 |
-| 337 Shiba Inu, "A Sound All Its Own" | `shiba-inu.jpg` | nail clippers in a bathroom; nail-trim scream was cut | new fact 357 |
-
-New facts for the freed photos (sourced 2026-10-20):
-
-- **354 Orb Weaver Spider** (Weird & Wonderful) - Eats Its Own Web. Some orb-weaver spiders remake their webs every day, even when nothing is broken. Spinning all that silk takes a lot of protein, so the spider eats the old web as it takes it down. The silk protein travels from its gut back to its silk glands to be spun into the new one. Source: Indiana Public Media (A Moment of Science), https://indianapublicmedia.org/amomentofscience/spiders-recycling/ ("When the orb-weaver takes apart an old web, it actually eats the silk.")
-- **355 Flamingo** (Birds) - Head-Flagging Season. Flamingo dating starts with head flagging. Birds stretch their necks as tall as they can and swing their heads side to side, looking like flags blowing in the wind. At the Houston Zoo, the Chilean flamingos start head flagging around January and February, one of the first breeding behaviors of the year. Source: Houston Zoo, https://houstonzoo.org/blog/march-flamingos-look-flamingo-dating ("The flamingos will elongate their necks as much as possible and move their heads side to side, looking a lot like flags blowing in the wind.")
-- **356 Kea** (Birds) - The Only Alpine Parrot. The kea is found only in New Zealand's Southern Alps, which makes it the world's only mountain parrot, according to New Zealand's Department of Conservation. Even its name comes from the mountains: the Maori named it for the sound of its call. Source: New Zealand Department of Conservation, https://blog.doc.govt.nz/2014/09/17/photo-of-the-week-kea/ ("The kea, named by Maori for the sound of its call, is endemic to the Southern Alps of New Zealand and is the world's only mountain parrot.")
-- **357 Shiba Inu** (Dogs & Cats) - The Cat-Dog. Vets at VCA Animal Hospitals nickname the Shiba Inu "the cat-dog." Its small ears point upward much like a cat's, and these naturally fastidious dogs tend to take to housetraining quite easily. Source: VCA Animal Hospitals, https://vcahospitals.com/know-your-pet/shiba-inu ("Housetraining comes quite easily to these naturally fastidious dogs.")
-
-Fact 100 (Mayfly) also showed a butterfly emoji; it was changed to a fly on
-2026-10-20, so it needs nothing more.
-
 ## Guide heroes still needed
 
 None. All 17 animal-day heroes (docs/NOV_DEC_ANIMAL_DAYS.md) landed on

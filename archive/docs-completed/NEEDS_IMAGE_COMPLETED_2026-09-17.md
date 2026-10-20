@@ -8,6 +8,21 @@ Newest first.
 
 ---
 
+## 2026-10-20: five mismatched photos swapped, five new facts
+
+After the sourcing pass rewrote these cards, their photos no longer matched.
+Each got a new owner-generated photo (mozjpeg quality 80, not cropped, not
+enlarged, 1408x768), and its old photo moved to a new fact sourced the same
+day (docs/fact-sources/new-2026-10-20.json). No photo is shared.
+
+| Card | New photo | Old photo now on |
+|---|---|---|
+| 6 Rabbit, Purring Bunnies | `rabbit-4.jpg` | 353 The Binky (`rabbit-3.jpg`), PDSA |
+| 93 Common House Spider, Not Here for the Heat | `common-house-spider-2.jpg` | 354 Orb Weaver Spider, Eats Its Own Web (`common-house-spider.jpg`), Indiana Public Media |
+| 151 Flamingo, The One-Leg Trick | `flamingo-3.jpg` | 355 Head-Flagging Season (`flamingo-2.jpg`, CC BY-SA, credit kept), Houston Zoo |
+| 292 Kea, The Rubber-Chewing Parrot | `kea-2.jpg` | 356 The Only Alpine Parrot (`kea.jpg`), NZ Department of Conservation |
+| 337 Shiba Inu, A Sound All Its Own | `shiba-inu-2.jpg` | 357 The Cat-Dog (`shiba-inu.jpg`), VCA Animal Hospitals |
+
 ## 2026-10-20: fact 154's photo replaced
 
 Fact 154 (Chicken, "Who's Who in the Flock") was showing a seahorse:

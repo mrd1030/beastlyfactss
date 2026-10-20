@@ -35,8 +35,8 @@ bird. Swapped for the same author's other Commons upload above, which clearly ma
 species. Worth remembering: same uploader, same nominal subject, does not mean same reliability
 per photo - verify each one.
 
-**Note on `flamingo-2.jpg`:** two existing facts (id 21 "Pink From Shrimp" and id 151 "The
-One-Leg Trick") are both about Flamingos and previously shared the single `flamingo.jpg`
-image. Fact 151 now overrides to `flamingo-2.jpg` via `FACT_IMAGES` in `public/_worker.js`, so
-the two facts show visibly different photos in the RSS feed instead of looking like duplicate
-content.
+**Note on `flamingo-2.jpg`:** it went to fact 151 "The One-Leg Trick" so that fact and id 21
+"Pink From Shrimp" would not share `flamingo.jpg`. On 2026-10-20 fact 151 got its own
+owner-generated one-leg photo (`flamingo-3.jpg`), and `flamingo-2.jpg`, a male and female in
+mating season, moved to the new fact 355 "Head-Flagging Season" on flamingo courtship. The
+credit line follows the file, so it still shows wherever the photo does.
