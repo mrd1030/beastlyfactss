@@ -1,0 +1,101 @@
+[
+ {
+  "id": 5,
+  "title": "Mood Ring Lizards",
+  "verdict": "saved-adjusted",
+  "publisher": "University of Melbourne (newsroom)",
+  "url": "https://www.unimelb.edu.au/newsroom/news/2016/june/bearded-dragons-change-color-on-different-body-parts-for-social-signals-and-temperature-regulation",
+  "pageTitle": "Bearded dragons change colour on different body parts for social signals and temperature regulation",
+  "quote": "In order to maintain this temperature, a bearded dragon can change its back to a light yellow colour when it is hot to a dark brown colour when it is cool,\" Ms Smith said. ... [beard and chest] change dramatically from cream to jet black during social interactions, accompanied by head-bobs and push-ups.",
+  "correctedFact": "Bearded dragons change color to manage their temperature. Their backs turn dark brown when cool to soak up heat and light yellow when hot. Their beards play a different game: during social displays they can flip from cream to jet black, complete with head-bobs and push-ups.",
+  "note": "Temperature direction and black beard in displays are supported; the stress/happy mood link is not. CAUTION: the page returns 403/Cloudflare to the sandbox (as do the eScholarship and Deakin copies), so the quote was read from search-engine snippets attributed to this release, not from a fetched copy. Open the URL on desktop to confirm before use."
+ },
+ {
+  "id": 13,
+  "title": "Elephants Mourn",
+  "verdict": "saved-adjusted",
+  "publisher": "Smithsonian Magazine",
+  "url": "https://www.smithsonianmag.com/smart-news/asian-elephants-bury-their-dead-new-research-suggests-180983929/",
+  "pageTitle": "Asian Elephants Bury Their Dead, New Research Suggests (Sarah Kuta, March 11, 2024)",
+  "quote": "Villagers and tea estate managers heard the elephants vocalizing loudly ... for up to 30 or 40 minutes ... which researchers say may indicate the herds were mourning.",
+  "correctedFact": "Elephants pay close attention to their dead. They approach, touch and sniff carcasses, even of elephants they were not close to, and some keep coming back. In India, Asian elephant herds buried dead calves and called out loudly for up to 40 minutes, which researchers think may be mourning.",
+  "note": "No credible page supports 'stand vigil for hours' or crying; best supported versions are 30 to 40 minutes of loud calling (Smithsonian) and touching, investigating and repeat visits (San Diego Zoo Wildlife Alliance science blog, Goldenberg and Wittemyer review, also cached). The burial study has skeptics."
+ },
+ {
+  "id": 20,
+  "title": "Breath-Holding Sloths",
+  "verdict": "wrong",
+  "publisher": "The Sloth Conservation Foundation",
+  "url": "https://www.slothconservation.org/blog/myths-11-things-you-think-you-know-about-sloths",
+  "pageTitle": "Sloth Myths: 14 Things You Think You Know About Sloths",
+  "quote": "Sloths are rumored to hold their breath underwater for more than 40 minutes ... the origin of this 'fact' can be traced back to a 1942 paper where scientists were studying sloth respiration. During the experiment, they induced a state of arrested respiration in sloths and found that three-fingered sloths could hold their breath for around 15 minutes (which is still impressive), and two-fingered sloths for even less.",
+  "correctedFact": "Sloths are surprisingly good swimmers, but the famous 40 minute breath-hold is a myth. It traces back to a 1942 lab study in which three-toed sloths lasted about 15 minutes without breathing, and two-toed sloths even less. Still pretty impressive for a tree dweller!",
+  "note": "The 40 minute figure is explicitly called a myth by a sloth research charity founded by researcher Dr. Rebecca Cliffe; the 1942 paper is Irving, Scholander and Grinnell, 'Experimental studies of the respiration of sloths'. No credible source found for the heart rate to a third claim."
+ },
+ {
+  "id": 24,
+  "title": "The Chillest Animal",
+  "verdict": "saved-adjusted",
+  "publisher": "Biota Neotropica (Sazima 2008, via Redalyc)",
+  "url": "https://www.redalyc.org/pdf/1991/199114297021.pdf",
+  "pageTitle": "Validated cleaner: the cuculid bird Crotophaga ani picks ticks and pecks at sores of capybaras in southeastern Brazil",
+  "quote": "When I reached the capybaras' place the anis were already perched on, and on the vegetation or the ground around, their two resting clients ... The capybaras appeared oblivious to the birds' activity. ... When the cleaning session ended, two anis remained a few minutes sunning themselves perched on the male capybara's back.",
+  "correctedFact": "Capybaras are so laid-back that birds use them as perches. In Brazil, a scientist watched smooth-billed anis hop onto resting capybaras and pick off their ticks while the giant rodents barely noticed. When the cleaning was done, two birds stayed to sunbathe on a capybara's back.",
+  "note": "Birds perching is supported (other Sazima papers add black vultures, caracaras and jacanas). Monkeys and caimans riding capybaras are not supported by any credible source found; caimans are predators of young capybaras."
+ },
+ {
+  "id": 39,
+  "title": "Months Without Eating",
+  "verdict": "saved-adjusted",
+  "publisher": "VCA Animal Hospitals",
+  "url": "https://vcahospitals.com/know-your-pet/snakes-problems",
+  "pageTitle": "Common Problems in Pet Snakes",
+  "quote": "Anorexia is a common complaint among pet snake owners. Some species, like ball pythons, are more prone to it than others. Anorexia can be a normal condition associated with reproduction (the breeding season), egg bearing (a pregnant snake), or shedding.",
+  "correctedFact": "Ball pythons are famous for skipping meals. Vets say these shy snakes often go long periods without eating, and turning down food during breeding season can be completely normal. Other causes, like a too-cold enclosure or illness, are still worth ruling out with a vet.",
+  "note": "Ball python specific and breeding season supported; 'months' is not stated on any vet page found (VCA's constrictor page says ball pythons 'often go long periods without eating'; cached). Month figures appear only on breeder sites and forums."
+ },
+ {
+  "id": 51,
+  "title": "Always Landing Right",
+  "verdict": "saved-adjusted",
+  "publisher": "Washington State University (Ask Dr. Universe)",
+  "url": "https://askdruniverse.wsu.edu/2016/10/31/how-do-cats-land-on-their-feet/",
+  "pageTitle": "How do cats land on their feet?",
+  "quote": "Scientists call it the air-righting reflex. It's what helps us go from free falling to feet on the floor, often in less than a second. Our flexible spine and lack of a collarbone also make it possible for us to arch our backs in mid-air.",
+  "correctedFact": "Cats land on their feet thanks to the air-righting reflex. They figure out which way is up, twist the head first and the rear second, and often go from free fall to feet down in under a second. A bendy spine and no real collarbone help them arch mid-air. It does not always work, though!",
+  "note": "The source credits the lack of a collarbone (plus a flexible spine), not a specialized one, and says under a second, not milliseconds; 'always' is contradicted (vets name high-rise syndrome; the JFMS study found only 3.7% uninjured)."
+ },
+ {
+  "id": 53,
+  "title": "70% of Life Asleep",
+  "verdict": "wrong",
+  "publisher": "Merck Veterinary Manual",
+  "url": "https://www.merckvetmanual.com/behavior/behavior-of-cats/social-behavior-of-cats",
+  "pageTitle": "Social Behavior of Cats",
+  "quote": "Cats are crepuscular. They sleep 40% of the day, rest 22% of the day, and groom 15% of the day.",
+  "correctedFact": "Cats sleep about 40% of the day, then spend another 22% just resting, so nearly two-thirds of their day is downtime. They are crepuscular, saving their big bursts of energy for dawn and dusk.",
+  "note": "Peer-reviewed vet manual gives 40% asleep, contradicting 70%. Britannica's cat sleep story (13 to 16 hours a day) was 403 in the sandbox. The card title needs to change too."
+ },
+ {
+  "id": 70,
+  "title": "Snake Venom? No Thanks",
+  "verdict": "saved-adjusted",
+  "publisher": "BBC Wildlife / Discover Wildlife (answer by honey badger researcher Colleen Begg)",
+  "url": "https://www.discoverwildlife.com/animal-facts/mammals/why-are-honey-badgers-so-aggressive",
+  "pageTitle": "Why are honey badgers so aggressive?",
+  "quote": "Many of their prey species are venomous, including the puff adder and Cape cobra, and the badgers are thought to develop some immunity to venom over a lifetime of bites and stings. I encountered one individual that was bitten on the face by a puff adder. Despite a large swelling on his cheek, he was up and chasing snakes again just five hours later.",
+  "correctedFact": "Honey badgers eat venomous snakes like puff adders and Cape cobras. Researcher Colleen Begg saw one bitten on the face by a puff adder: despite a big swollen cheek, he was back up and chasing snakes just five hours later. Scientists think they build up some venom resistance over a lifetime of bites.",
+  "note": "The filmed limp-then-eat scene involved a puff adder in a National Geographic documentary, not a cobra, and no credible page describing it was found; the field observation by the leading honey badger researcher is the supported version. 'Nearly immune' softened to 'some resistance'."
+ },
+ {
+  "id": 73,
+  "title": "The Ultimate Impostor",
+  "verdict": "saved-adjusted",
+  "publisher": "Biological Journal of the Linnean Society (Hanlon, Conroy & Forsythe 2008, abstract via marineinfo.org)",
+  "url": "https://marineinfo.org/id/publication/119198",
+  "pageTitle": "Mimicry and foraging behaviour of two tropical sand-flat octopus species off North Sulawesi, Indonesia",
+  "quote": "The so-called 'mimic octopuses' of tropical Indonesia are reputed to mimic up to 13 species of other local marine organisms. ... Mimicry of a local, abundant flounder occurred commonly during 5 days of natural foraging: nearly 500 episodes were analysed. Both octopus species mimicked the shape, swimming actions, speed, duration, and sometimes the coloration of swimming flounders.",
+  "correctedFact": "The mimic octopus is reputed to impersonate up to 13 local sea creatures, including lionfish and sea snakes. Scientists filming it in Indonesia logged nearly 500 flounder impressions, with the octopus copying a flatfish's shape, swimming style and speed, and sometimes even its colors.",
+  "note": "Peer-reviewed count is 'reputed up to 13', not over 15. Lionfish and sea snake from National Geographic's mimic octopus page (cached), which lists lionfish, jellyfish, sea snake, shrimp and crab. AMNH page hit a CAPTCHA."
+ }
+]
