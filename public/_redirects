@@ -387,6 +387,14 @@
 /facts/japans-living-snowball/ /facts/japans-living-snowman/ 301
 /facts/from-venom-to-ozempic /facts/the-lizard-behind-the-glp-1-drugs/ 301
 /facts/from-venom-to-ozempic/ /facts/the-lizard-behind-the-glp-1-drugs/ 301
+/facts/the-alpine-kleptomaniac /facts/the-rubber-chewing-parrot/ 301
+/facts/the-alpine-kleptomaniac/ /facts/the-rubber-chewing-parrot/ 301
+/facts/needs-salt-water-to-be-born-dies-from-it-as-an-adult /facts/a-sea-going-childhood/ 301
+/facts/needs-salt-water-to-be-born-dies-from-it-as-an-adult/ /facts/a-sea-going-childhood/ 301
+/facts/born-blank-colored-by-cold /facts/colored-by-cold/ 301
+/facts/born-blank-colored-by-cold/ /facts/colored-by-cold/ 301
+/facts/the-shiba-scream /facts/a-sound-all-its-own/ 301
+/facts/the-shiba-scream/ /facts/a-sound-all-its-own/ 301
 
 # Splat rules live here, at the very bottom, and nothing goes below them. The
 # two exact-match /encyclopedia/guides rules above still win, since Cloudflare
