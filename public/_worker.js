@@ -220,7 +220,7 @@ const FACT_IMAGES = {
   245: '/assets/facts/honeybee-3.jpg',
   246: '/assets/facts/honeybee-4.jpg',
   151: '/assets/facts/flamingo-2.jpg', // "The One-Leg Trick" - id 21 keeps flamingo.jpg
-  81: '/assets/facts/chameleon-2.jpg', // "Color-Changing Camouflage"
+  81: '/assets/facts/chameleon-2.jpg', // "Color Talk, Not Camouflage"
   88: '/assets/facts/chameleon-3.jpg', // "Chameleon Color Change"
   138: '/assets/facts/chameleon-4.jpg', // "More G's Than a Fighter Jet"
   63: '/assets/facts/dolphin-2.jpg', // "Mirror Test Passers"

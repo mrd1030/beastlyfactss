@@ -147,7 +147,7 @@
       {
         "id": 26,
         "title": "Unicorn of the Sea",
-        "fact": "Narwhals have a long spiral tusk (up to 10 feet!) that is actually a tooth. Scientists believe they use it to sense water temperature and salinity.",
+        "fact": "Narwhals have a long spiral tusk that is actually a tooth. Scientists believe they use it to sense salinity: when researchers washed tusks with alternating salty and fresh water, the narwhals' heart rates changed significantly.",
         "category": "Ocean",
         "image": "/assets/facts/narwhal.jpg"
       },
@@ -352,7 +352,7 @@
       {
         "id": 244,
         "title": "Listening Through Their Feet",
-        "fact": "A loud rumble does not only move air, it couples into the ground as a surface wave that outruns the airborne version. Elephant feet are packed with Pacinian corpuscles, the receptors mammals use to sense vibration, and there is a bone conduction path up the leg to the middle ear. Played ground-only signals, elephants freeze, lean forward and lift a foot.",
+        "fact": "A loud elephant rumble does not only move air, it also travels through the ground as seismic waves. Elephant feet are packed with Pacinian corpuscles, the receptors mammals use to sense vibration. When researchers play rumbles through the ground alone, elephants freeze, lean forward and lift a foot.",
         "category": "Mammals",
         "image": "/assets/facts/elephant-4.jpg"
       }
@@ -672,7 +672,7 @@
       {
         "id": 159,
         "title": "The Loose-Skin Escape Artist",
-        "fact": "A honey badger's skin is so thick and loose that it can twist almost freely inside it, letting the animal spin around and bite an attacker even while pinned by the scruff of its neck. That fearlessness earned it a Guinness World Records title for most fearless animal on the planet.",
+        "fact": "A honey badger's skin is so tough and loose that it can turn around inside it and bite its attacker. That fearlessness earned it a Guinness World Records title for most fearless animal on the planet.",
         "category": "Mammals",
         "image": "/assets/facts/honey-badger-2.jpg"
       }
@@ -813,8 +813,8 @@
       },
       {
         "id": 81,
-        "title": "Color-Changing Camouflage",
-        "fact": "Chameleons are famous for their ability to change color, but did you know it's primarily a way to communicate? They alter their hues depending on their mood and social signals, rather than just blending into their surroundings!",
+        "title": "Color Talk, Not Camouflage",
+        "fact": "Chameleons are famous for changing color, but did you know it's less about hiding than about talking? A study of southern African dwarf chameleons found that the species with the boldest color changes use them to flash social signals in male contests and courtship, and found no evidence the trick evolved for camouflage.",
         "category": "Reptiles",
         "image": "/assets/facts/chameleon-2.jpg"
       },
@@ -862,7 +862,7 @@
       {
         "id": 284,
         "title": "The Longest Fangs of Any Snake",
-        "fact": "A Gaboon viper's fangs reach around five centimeters, longer than any other snake's, folded back against the roof of the mouth until the strike swings them forward. It also delivers more venom per bite than almost anything else, a function of simply being a very large-headed, heavy-bodied snake. The venom is not the most potent by weight. The dose is what makes it serious.",
+        "fact": "A Gaboon viper's fangs reach five centimeters or more, the longest of any venomous snake, and fold back against the roof of the mouth until the strike swings them forward. It also holds more venom in its glands than any other venomous snake. The dose is what makes it serious.",
         "category": "Reptiles",
         "image": "/assets/facts/gaboon-viper.jpg"
       },
@@ -917,7 +917,7 @@
       {
         "id": 261,
         "title": "Constriction Is About Blood, Not Bones",
-        "fact": "The old description of constriction is that the snake crushes its prey or suffocates it. Measurements on constricting snakes point somewhere else: the pressure a large constrictor applies is enough to stop blood circulating, and circulatory arrest kills far faster than suffocation would. The snake tightens as its prey breathes out, so each exhalation gives away a little more room and never gets it back.",
+        "fact": "The old description of constriction is that the snake crushes its prey or suffocates it. Measurements on constricting boas, the anaconda's own family, point somewhere else: the pressure a large constrictor applies is enough to stop blood circulating, and circulatory arrest kills fast. Within six seconds, the prey's arterial blood pressure dropped by half.",
         "category": "Reptiles",
         "image": "/assets/facts/green-anaconda-2.jpg"
       },
@@ -1269,7 +1269,7 @@
       {
         "id": 328,
         "title": "Not Bald, Just Old English",
-        "fact": "The bald eagle has a full head of feathers and never had anything else. The name comes from balde, an old word for white, so the bird is white-headed rather than hairless. It is the same root that survives in piebald, used of a horse or a bird marked in white patches.",
+        "fact": "The bald eagle has a full head of feathers and never had anything else. The name comes from balde, an old word for white, so the bird is white-headed rather than hairless. It is the same root that survives in piebald, which describes anything marked in a mix of dark and white.",
         "category": "Birds",
         "image": "/assets/facts/bald-eagle-4.jpg"
       }
@@ -1454,7 +1454,7 @@
       {
         "id": 219,
         "title": "The Queue Nobody Jumps",
-        "fact": "A clownfish group is a strict size ladder: breeding female on top, breeding male below her, then non-breeders in descending size. The small ones form a near-perfect queue where nobody leaves and nobody fights, because crossing open reef means being eaten and challenging a bigger fish means losing. They even limit their own growth to stay unthreatening. The wait can last decades.",
+        "fact": "A clownfish group is a strict size ladder: breeding female on top, breeding male below her, then non-breeders in descending size. The small ones form a near-perfect queue where nobody leaves and nobody fights, probably because waiting gives each fish a better shot at breeding than leaving or fighting would.",
         "category": "Ocean",
         "image": "/assets/facts/clownfish-5.jpg"
       },
@@ -1530,7 +1530,7 @@
       {
         "id": 203,
         "title": "Smaller Than a Pinky Nail",
-        "fact": "For all its fame, Turritopsis dohrnii is easy to miss. A fully grown adult is only about 4.5 mm across, roughly the size of a human pinky nail, with a bright red stomach glowing through a nearly transparent bell ringed by dozens of white tentacles.",
+        "fact": "For all its fame, Turritopsis dohrnii is easy to miss. A fully grown adult is only about 4.5 mm across, roughly the size of a human pinky nail, and its tiny body is translucent.",
         "category": "Ocean",
         "image": "/assets/facts/jellyfish-5.jpg"
       },
