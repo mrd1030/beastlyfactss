@@ -501,6 +501,12 @@
 /facts/teeth-removed-with-pliers/ /facts/teeth-clipped-for-sale/ 301
 /facts/sleeping-with-eyes-open /facts/watching-with-eyes-shut/ 301
 /facts/sleeping-with-eyes-open/ /facts/watching-with-eyes-shut/ 301
+/facts/velvet-antlers-grow-fast /facts/antlers-in-a-hurry/ 301
+/facts/velvet-antlers-grow-fast/ /facts/antlers-in-a-hurry/ 301
+/facts/it-restarts-from-the-middle /facts/heart-first-legs-later/ 301
+/facts/it-restarts-from-the-middle/ /facts/heart-first-legs-later/ 301
+/facts/biggest-bite-smallest-body /facts/biggest-bite-for-its-size/ 301
+/facts/biggest-bite-smallest-body/ /facts/biggest-bite-for-its-size/ 301
 
 # Splat rules live here, at the very bottom, and nothing goes below them. The
 # two exact-match /encyclopedia/guides rules above still win, since Cloudflare

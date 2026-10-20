@@ -358,7 +358,7 @@ export const FACT_IMAGES = {
   331: '/assets/facts/numbat.jpg',
   332: '/assets/facts/yeti-crab.jpg',
   333: '/assets/facts/marine-iguana.jpg',
-  334: '/assets/facts/tasmanian-devil.jpg', // "Biggest Bite, Smallest Body"
+  334: '/assets/facts/tasmanian-devil.jpg', // "Biggest Bite for Its Size"
   335: '/assets/facts/matamata.jpg', // "Sucks First, Asks Later"
   336: '/assets/facts/potoo.jpg', // "Watching With Eyes Shut"
   337: '/assets/facts/shiba-inu.jpg', // "A Sound All Its Own"

@@ -314,7 +314,7 @@ const FACT_IMAGES = {
   221: '/assets/facts/clownfish-7.jpg', // "The Thirty-Year Clownfish"
   222: '/assets/facts/wood-frog-3.jpg', // "Alaska Rewrote the Limit"
   223: '/assets/facts/wood-frog-4.jpg', // "Two Antifreezes, Two Schedules"
-  224: '/assets/facts/wood-frog-5.jpg', // "It Restarts From the Middle"
+  224: '/assets/facts/wood-frog-5.jpg', // "Heart First, Legs Later"
   225: '/assets/facts/wood-frog-6.jpg', // "The Frog That Reaches the Arctic"
   226: '/assets/facts/seahorse-3.jpg', // "Dad's Pouch Plays Placenta"
   227: '/assets/facts/seahorse-4.jpg', // "He Traded Away Immune Parts"
@@ -376,7 +376,7 @@ const FACT_IMAGES = {
   331: '/assets/facts/numbat.jpg',
   332: '/assets/facts/yeti-crab.jpg',
   333: '/assets/facts/marine-iguana.jpg',
-  334: '/assets/facts/tasmanian-devil.jpg', // "Biggest Bite, Smallest Body"
+  334: '/assets/facts/tasmanian-devil.jpg', // "Biggest Bite for Its Size"
   335: '/assets/facts/matamata.jpg', // "Sucks First, Asks Later"
   336: '/assets/facts/potoo.jpg', // "Watching With Eyes Shut"
   337: '/assets/facts/shiba-inu.jpg', // "A Sound All Its Own"

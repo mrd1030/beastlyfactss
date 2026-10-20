@@ -221,7 +221,7 @@
       {
         "id": 210,
         "title": "They Hum After Dark",
-        "fact": "Giraffes were long thought to be nearly silent. Then researchers recorded over 947 hours of audio across three European zoos and found sustained, harmonic humming that happens only at night, averaging 92 Hz. That detail quietly kills a popular claim: 92 Hz is not infrasound, it sits well inside human hearing. They were audible all along. Nobody had listened for 947 hours.",
+        "fact": "Giraffes were long thought to be nearly silent, maybe rumbling in infrasound like elephants. Then researchers recorded over 947 hours of audio across three European zoos and found deep, harmonic humming averaging 92 Hz, within human hearing if on the low side. The hums came only at night, and even the giraffes' own keepers said they had never heard them.",
         "category": "Mammals",
         "image": "/assets/facts/giraffe-3.jpg"
       },
@@ -290,7 +290,7 @@
       {
         "id": 234,
         "title": "Built Like the Cat Allergen",
-        "fact": "The protein in slow loris venom structurally resembles Fel d1, the cat allergen behind most human cat allergies, sharing the same disulphide-bridged heterodimeric arrangement. That reframes the whole thing: this is less a toxin evolved to attack nerves or blood, and more an allergen weaponized. Much of the damage is done by the victim's own immune response.",
+        "fact": "The protein in slow loris venom structurally resembles Fel d 1, the main cat allergen, sharing the same disulfide-bridged heterodimeric arrangement. That may explain why only some bite victims go into anaphylactic shock: as with a cat allergy, the reaction seems to depend on how sensitive the victim's own immune system is.",
         "category": "Mammals",
         "image": "/assets/facts/slow-loris-3.jpg"
       },
@@ -1066,7 +1066,7 @@
       {
         "id": 180,
         "title": "The Statue That Hunts",
-        "fact": "Shoebills can stand completely motionless for hours while hunting, then explode into a violent strike so fast it can snap a lungfish or baby crocodile in half. Their clog-shaped bill has sharp edges specifically for slicing through tough prey.",
+        "fact": "Shoebills can stand motionless for hours while hunting, then topple forward onto their prey in a move called the collapse. The sharp edges of their clog-shaped bill can behead a lungfish or even a baby crocodile before the bird swallows it.",
         "category": "Birds",
         "image": "/assets/facts/shoebill.jpg"
       }
@@ -1118,7 +1118,7 @@
       {
         "id": 247,
         "title": "Emperors Rarely Reunite",
-        "fact": "The lifelong penguin romance is mostly myth. Emperor penguins pair with the same partner in consecutive seasons only about 15 percent of the time. Gentoos, by contrast, can exceed 90 percent. The difference is not devotion, it is whether the species builds a nest: a fixed spot gives two birds somewhere to find each other again.",
+        "fact": "The lifelong penguin romance is mostly myth. Emperor penguins pair with the same partner in consecutive seasons only about 15 percent of the time. Most species return to the same partner at least somewhat consistently, but even their fidelity rates run only 59 to 89 percent.",
         "category": "Birds",
         "image": "/assets/facts/penguin-2.jpg"
       },
@@ -1502,7 +1502,7 @@
       {
         "id": 11,
         "title": "Immortal Jellyfish",
-        "fact": "The Turritopsis dohrnii jellyfish is biologically immortal! When it gets old or stressed, it can revert its cells back to a younger state, essentially hitting the reset button on aging.",
+        "fact": "The Turritopsis dohrnii jellyfish is biologically immortal! After it reproduces, it can revert its cells back to a younger state, essentially hitting the reset button on aging. It shrinks into a cyst, then regrows as young polyps, again and again.",
         "category": "Ocean",
         "image": "/assets/facts/jellyfish.jpg"
       },
@@ -1695,7 +1695,7 @@
       {
         "id": 83,
         "title": "Silent Signals",
-        "fact": "Octopuses have an extraordinary ability to communicate through color and texture! They can rapidly change their skin color and pattern to send signals to each other or confuse predators, making them masters of disguise.",
+        "fact": "Octopuses have an extraordinary ability to communicate through color and texture! They can rapidly change their skin color and pattern to signal mating, aggression or danger to each other, or to hide from predators as masters of disguise.",
         "category": "Ocean",
         "image": "/assets/facts/octopus-2.jpg"
       },
