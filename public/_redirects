@@ -429,6 +429,18 @@
 /facts/pebble-proposing-love-birds/ /facts/pebble-pinching-penguins/ 301
 /facts/natures-biggest-gamble /facts/300-million-eggs-none-found/ 301
 /facts/natures-biggest-gamble/ /facts/300-million-eggs-none-found/ 301
+/facts/24-eyes-full-color /facts/24-eyes-no-central-brain/ 301
+/facts/24-eyes-full-color/ /facts/24-eyes-no-central-brain/ 301
+/facts/regional-accents /facts/playgroup-accents/ 301
+/facts/regional-accents/ /facts/playgroup-accents/ 301
+/facts/magpie-self-awareness /facts/magpie-mirror-test/ 301
+/facts/magpie-self-awareness/ /facts/magpie-mirror-test/ 301
+/facts/frog-rainmakers /facts/rain-makes-them-sing/ 301
+/facts/frog-rainmakers/ /facts/rain-makes-them-sing/ 301
+/facts/the-snack-time-ant /facts/ancient-ant-farmers/ 301
+/facts/the-snack-time-ant/ /facts/ancient-ant-farmers/ 301
+/facts/fluffy-fish-friends /facts/stinging-roommates/ 301
+/facts/fluffy-fish-friends/ /facts/stinging-roommates/ 301
 
 # Splat rules live here, at the very bottom, and nothing goes below them. The
 # two exact-match /encyclopedia/guides rules above still win, since Cloudflare

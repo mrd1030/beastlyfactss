@@ -1432,8 +1432,8 @@
       },
       {
         "id": 99,
-        "title": "Fluffy Fish Friends",
-        "fact": "Clownfish have a unique symbiotic relationship with sea anemones, providing each other with protection and food. The clownfish's mucus coating allows them to thrive among the anemone's stinging tentacles without harm!",
+        "title": "Stinging Roommates",
+        "fact": "Clownfish live among a sea anemone's stinging tentacles, safe inside a protective mucus coat they tune to their own host. The anemone guards the fish and its nest and even serves up leftovers. In return, the clownfish may eat the anemone's parasites and fan fresh water through it. Great roommates!",
         "category": "Ocean",
         "image": "/assets/facts/clownfish-2.jpg"
       },
@@ -1829,7 +1829,7 @@
       {
         "id": 87,
         "title": "Singers of the Sea",
-        "fact": "Humpback Whales are not just majestic giants; they're also the singers of the sea! Males produce complex songs that can last for 20 minutes and can be heard over vast distances, possibly for mating purposes or simply to communicate with their fellow swimmers.",
+        "fact": "Humpback whales really are the singers of the sea! Mature males sing long songs, about 15 minutes each, on their tropical breeding grounds as a display related to mating. In quiet waters, a humpback's song can carry roughly 50 miles from the singer. That is one long-distance serenade!",
         "category": "Ocean",
         "image": "/assets/facts/humpback-whale.jpg"
       }
