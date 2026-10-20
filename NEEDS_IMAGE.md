@@ -23,11 +23,6 @@ The owner is replacing them with their own generated photos, five prompts at a
 time, saved over the same filename so no map changes. Take each line off this
 list when its photo lands.
 
-- 10 Crow, "Crow Detectives": `crow.jpg`
-- 11 Jellyfish, "Immortal Jellyfish": `jellyfish.jpg`
-- 12 Mantis Shrimp, "Mantis Shrimp Vision": `mantis-shrimp.jpg`
-- 13 Elephant, "Elephants Mourn": `elephant.jpg`
-- 15 Wombat, "Wombat Cube Poop": `wombat.jpg`
 - 16 Honeybee, "Honeybee House Hunters": `honeybee.jpg`
 - 17 Sea Otter, "Sea Otter Hand-Holding": `sea-otter.jpg`
 - 18 Gecko, "Gecko Toe Magic": `gecko.jpg`

@@ -47,7 +47,8 @@ New images record their tool here. Owner decision 2026-10-20: Grok's attribution
 is met with one line on the Terms and Image Credits pages ("created with Grok, or
 with Adobe Firefly"), not a label on each image, and the per-image record lives
 only in this file. The owner's uploads tell them apart: Grok images arrive as .jpg, Firefly
-images (Adobe's own model or its partner models) as .png. Older images were not
+images (Adobe's own model or its partner models) as .png. From 2026-10-20 the
+row names the Firefly model when it is a partner model (Gemini, GPT Image). Older images were not
 logged; known ones are Grok Imagine for the seven fact photos added 2026-07-06
 (blobfish, bombardier beetle, box jellyfish, Cuban tree frog, hagfish, hairy
 frog, pen-tailed tree shrew) and Adobe Firefly for ids 287 to 296.
@@ -59,3 +60,6 @@ frog, pen-tailed tree shrew) and Adobe Firefly for ids 287 to 296.
 | `anglerfish.jpg`, `star-nosed-mole.jpg`, `vampire-bat.jpg` | Adobe Firefly | 2026-10-20 |
 | `cat.jpg`, `snake.jpg` (replacing Adobe Stock) | Adobe Firefly | 2026-10-20 |
 | `parrot.jpg`, `red-panda.jpg`, `dolphin.jpg` (replacing Adobe Stock) | Grok Imagine | 2026-10-20 |
+| `crow.jpg`, `jellyfish.jpg`, `mantis-shrimp.jpg` (replacing Adobe Stock) | Adobe Firefly, partner model Gemini 3.1 (Nano Banana 2) | 2026-10-20 |
+| `elephant.jpg` (replacing Adobe Stock) | Adobe Firefly, partner model GPT Image 2.5 Flare | 2026-10-20 |
+| `wombat.jpg` (replacing Adobe Stock) | Adobe Firefly, partner model GPT Image 2.5 Sunburst | 2026-10-20 |
