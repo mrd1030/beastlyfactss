@@ -88,7 +88,7 @@
       {
         "id": 257,
         "title": "Ears That Work as Radiators",
-        "fact": "A fennec's ears run to about 15 centimeters on an animal that weighs under two kilograms, the largest ears relative to body size of any carnivore. They are not only for listening. They carry a dense network of shallow blood vessels, and the fox dumps heat through them into the air, which lets it hold its temperature down without panting away water it cannot spare. The hearing is real too: a fennec can track insects and small rodents moving under the sand and dig straight down onto them.",
+        "fact": "A fennec's ears can grow to about 15 centimeters on a fox weighing roughly a kilogram, the largest ears for body size of any member of the dog family. They are not just for listening. The fox uses them to dump heat, which helps the smallest canid of all keep its cool in the desert.",
         "category": "Mammals",
         "image": "/assets/facts/fennec-fox.jpg"
       },
@@ -393,14 +393,14 @@
       {
         "id": 255,
         "title": "The Weekly Trip That Kills Them",
-        "fact": "A three-toed sloth climbs all the way down to the forest floor about once a week to defecate, then climbs back. On the ground it cannot walk and drags itself by its front claws. A very large share of sloth predation deaths, on the order of half, happens during these trips, which it makes roughly fifty times a year.",
+        "fact": "About once a week, a three-toed sloth climbs all the way down to the base of its tree to poop, then climbs back up. It is a deadly commute. In one study, more than half of all documented adult sloth deaths were predator kills made while the sloth was at or near the ground.",
         "category": "Mammals",
         "image": "/assets/facts/sloth-3.jpg"
       },
       {
         "id": 256,
         "title": "The Fur Is an Ecosystem",
-        "fact": "Sloth hair has grooves that trap moisture and grow algae found almost nowhere else, which tints wild sloths green. Moths live in the coat too, and lay their eggs in the dung during the weekly descent. One proposal is that the moths fertilize the algae and the sloth eats some of it, supplementing a poor leaf diet. It is contested but nothing better has replaced it.",
+        "fact": "A three-toed sloth's hairs have tiny cracks that soak up rainwater, and algae known only from sloth fur grow in them. Moths ride in the coat and lay eggs in the sloth's dung. The moths raise nitrogen in the fur, which feeds the algae, and the sloth eats its own algae garden, presumably to boost a poor leaf diet.",
         "category": "Mammals",
         "image": "/assets/facts/sloth-4.jpg"
       }
@@ -475,7 +475,7 @@
       {
         "id": 241,
         "title": "The Pride Belongs to the Females",
-        "fact": "Lions are the only social cat out of roughly forty species, and the group is built on related females who often stay in their birth pride for life. Males are not part of that lineage. They arrive as a coalition, hold the pride for perhaps two or three years, then get driven out by a stronger group. A lioness may spend fifteen years on ground the males only lease.",
+        "fact": "Lions are the world's most social cats, and the pride is built on related females who usually stay in their mothers' prides for life. The males are just tenants. A coalition, often brothers and cousins, moves in, holds the pride for about two years on average, and is often evicted by the next coalition.",
         "category": "Mammals",
         "image": "/assets/facts/lion.jpg"
       },
@@ -1099,7 +1099,7 @@
       {
         "id": 268,
         "title": "Both Parents Make Milk",
-        "fact": "Pigeons feed their chicks on crop milk, a thick protein and fat rich secretion produced by cells lining the crop, and both the male and the female make it. It is not milk in any mammalian sense and contains no lactose, but it does the same job, and a crowned pigeon chick lives on nothing else for its first days. Pairs usually raise a single chick, and both birds sit the egg, the male through the day and the female overnight.",
+        "fact": "Pigeons pull off a trick almost no other bird can: they make milk. Crop milk is a secretion of the adult's crop with a chemical makeup similar to mammal milk, and both the male and the female produce it. A crowned pigeon chick lives on nothing else for its first few days. Flamingos are among the very few other birds that manage it.",
         "category": "Birds",
         "image": "/assets/facts/victoria-crowned-pigeon-3.jpg"
       }
