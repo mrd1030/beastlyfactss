@@ -461,6 +461,12 @@
 /facts/scales-with-a-return-address/ /facts/a-dna-tag-for-every-species/ 301
 /facts/your-name-in-someone-elses-voice /facts/your-name-minus-the-voice/ 301
 /facts/your-name-in-someone-elses-voice/ /facts/your-name-minus-the-voice/ 301
+/facts/musking-takes-real-energy /facts/snakes-in-good-shape-stink-more/ 301
+/facts/musking-takes-real-energy/ /facts/snakes-in-good-shape-stink-more/ 301
+/facts/the-biggest-nest-in-the-tree /facts/the-nest-that-keeps-growing/ 301
+/facts/the-biggest-nest-in-the-tree/ /facts/the-nest-that-keeps-growing/ 301
+/facts/it-dives-in-a-curve-on-purpose /facts/its-sharpest-sight-points-sideways/ 301
+/facts/it-dives-in-a-curve-on-purpose/ /facts/its-sharpest-sight-points-sideways/ 301
 
 # Splat rules live here, at the very bottom, and nothing goes below them. The
 # two exact-match /encyclopedia/guides rules above still win, since Cloudflare
