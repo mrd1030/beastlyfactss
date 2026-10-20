@@ -13,6 +13,11 @@ borrowing another page's photo got their own on 2026-10-18.
 The five October heroes and the five parked facts all landed the same day.
 `check-images.mjs` passes on 1,674 referenced paths.
 
+**Wrong photo on fact 154 (chicken, "Who's Who in the Flock")**: found 2026-10-19
+during the fact sourcing pass. `public/assets/facts/chicken-2.jpg` is a seahorse on
+seagrass, not a chicken. It needs a real chicken photo; the file is mapped in both
+`src/lib/data/factImages.js` and `public/_worker.js`.
+
 ## Guide heroes still needed
 
 None. All 17 animal-day heroes (docs/NOV_DEC_ANIMAL_DAYS.md) landed on

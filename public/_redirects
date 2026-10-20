@@ -481,6 +481,12 @@
 /facts/century-talkers/ /facts/parrots-past-eighty/ 301
 /facts/sky-high-sleepers /facts/ten-months-aloft/ 301
 /facts/sky-high-sleepers/ /facts/ten-months-aloft/ 301
+/facts/never-forgets-a-flockmate /facts/whos-who-in-the-flock/ 301
+/facts/never-forgets-a-flockmate/ /facts/whos-who-in-the-flock/ 301
+/facts/a-tongue-longer-than-its-body /facts/a-tongue-nearly-as-long-as-its-body/ 301
+/facts/a-tongue-longer-than-its-body/ /facts/a-tongue-nearly-as-long-as-its-body/ 301
+/facts/seawater-comes-in-with-the-eggs /facts/a-pouch-full-of-seawater/ 301
+/facts/seawater-comes-in-with-the-eggs/ /facts/a-pouch-full-of-seawater/ 301
 
 # Splat rules live here, at the very bottom, and nothing goes below them. The
 # two exact-match /encyclopedia/guides rules above still win, since Cloudflare

@@ -18,8 +18,8 @@
       },
       {
         "id": 167,
-        "title": "A Tongue Longer Than Its Body",
-        "fact": "Pangolins have no teeth at all. Instead they rely on a sticky tongue that, in the giant pangolin, stretches longer than its head and body combined, anchored all the way back near the pelvis, to slurp up ants and termites by the thousands.",
+        "title": "A Tongue Nearly as Long as Its Body",
+        "fact": "Pangolins have no teeth at all. They rely on a sticky tongue instead, anchored all the way back at the pelvis. In the giant pangolin it can reach 27 inches (69 cm), almost as long as the animal's body, and it slurps ants straight out of their nests.",
         "category": "Weird & Wonderful",
         "image": "/assets/facts/pangolin-3.jpg"
       },
@@ -557,7 +557,7 @@
       {
         "id": 339,
         "title": "Ears Tuned to Mice",
-        "fact": "Servals have the largest ears of any cat for their body size, and each ear can swivel on its own to pinpoint a sound. Their hearing reaches into the ultrasonic range, so they can pick up the high-pitched calls rodents use to talk to each other, even when the prey is hidden in tall grass.",
+        "fact": "Servals have large ears that rotate like radar dishes to pinpoint a sound. Their hearing reaches into the ultrasonic range, so they can pick up the high-pitched sounds rodents make, even when the prey is hidden underground.",
         "category": "Mammals",
         "image": "/assets/facts/serval-ears.jpg"
       },
@@ -590,7 +590,7 @@
       {
         "id": 253,
         "title": "Horn Is Not Bone or Ivory",
-        "fact": "A rhino horn has no bony core at all. It grows from the skin and is compacted keratin the whole way through, the same protein as fingernails, hair and hooves. That makes it structurally closer to an enormous callus than to a cow's horn, which is a bony core in a keratin sheath.",
+        "fact": "A rhino horn has no bony core at all. It grows from the skin and is compacted keratin the whole way through, the same protein as fingernails and hair. That makes its tissue closer to a horse's hoof than to a cow's horn, which is a bony core in a keratin sheath.",
         "category": "Mammals",
         "image": "/assets/facts/rhino.jpg"
       },
@@ -807,7 +807,7 @@
       {
         "id": 43,
         "title": "Color Means Communication",
-        "fact": "Chameleons don't change color primarily for camouflage. They do it to communicate mood and temperature. Color changes signal stress, excitement, readiness to mate, and more.",
+        "fact": "Chameleons don't change color mainly to hide. A study of dwarf chameleons found their most striking color shifts evolved for social signaling to other chameleons, not camouflage, while smaller changes in brightness help with temperature control and, yes, sometimes blending in.",
         "category": "Reptiles",
         "image": "/assets/facts/chameleon.jpg"
       },
@@ -958,7 +958,7 @@
       {
         "id": 183,
         "title": "See-Through Bellies",
-        "fact": "Some glass frogs have skin on their underside so transparent you can watch their heart beating and blood moving through their organs. While they sleep, they pack nearly all their red blood cells into their liver, making themselves even harder for predators to spot against a leaf.",
+        "fact": "Some glass frogs have belly skin so transparent you can see their bones and organs. While they sleep, they pack about 89 percent of their red blood cells into their liver, becoming two to three times more transparent and even harder for predators to spot on a leaf.",
         "category": "Weird & Wonderful",
         "image": "/assets/facts/glass-frog.jpg"
       }
@@ -1343,7 +1343,7 @@
       {
         "id": 63,
         "title": "Mirror Test Passers",
-        "fact": "Dolphins are one of only a handful of animals that pass the mirror self-recognition test, placing them alongside humans, great apes, and elephants as animals with a sense of self-awareness.",
+        "fact": "Dolphins are one of only a handful of animals that pass the mirror self-recognition test, placing them alongside humans and great apes. In a 2001 study, two dolphins used a mirror to investigate marks placed on their own bodies.",
         "category": "Ocean",
         "image": "/assets/facts/dolphin-2.jpg"
       },
@@ -1516,7 +1516,7 @@
       {
         "id": 201,
         "title": "A 72-Hour Rebuild",
-        "fact": "The reset is not instant. A stressed or dying Turritopsis dohrnii settles onto a surface, collapses its bell into a small blob called a cyst, and within 24 to 72 hours rebuilds itself as a juvenile polyp. That polyp then buds off brand new jellyfish.",
+        "fact": "The reset is not instant. A stressed, damaged or aging Turritopsis dohrnii settles onto a surface, transforms into a cyst, and within 24 to 72 hours rebuilds itself as a juvenile polyp. That polyp then grows into a colony that releases brand new jellyfish.",
         "category": "Ocean",
         "image": "/assets/facts/jellyfish-3.jpg"
       },
@@ -1605,8 +1605,8 @@
       },
       {
         "id": 228,
-        "title": "Seawater Comes In With the Eggs",
-        "fact": "When a female transfers her eggs, non-sterile seawater goes into the pouch with them, which then seals: a warm, nutrient-rich, enclosed space inside an animal that has just dismantled much of its immunity. The fix is chemical, not cellular. Hepcidin and lysozyme run high inside the pouch, handling bacteria the missing immune hardware no longer can.",
+        "title": "A Pouch Full of Seawater",
+        "fact": "A seahorse's sealed brood pouch is filled with non-sterile seawater and nutrient-rich fluid: an enclosed space ideal for bacteria, inside an animal that has just dismantled much of its immunity. Part of the answer is chemical. Genes for hepcidin, an antimicrobial peptide, run high in the pouch lining during pregnancy, helping keep bacteria in check.",
         "category": "Ocean",
         "image": "/assets/facts/seahorse-5.jpg"
       }
@@ -1858,7 +1858,7 @@
       {
         "id": 17,
         "title": "Sea Otter Hand-Holding",
-        "fact": "Sea otters usually rest in groups called rafts, and to keep from drifting while they sleep they wrap themselves in strands of kelp or seagrass. They do sometimes hold paws, but far less often than the famous photos suggest: wild otters mostly keep together by watching, listening and staying close.",
+        "fact": "Sea otters usually rest in groups called rafts, and to keep from drifting while they sleep they wrap themselves in strands of kelp. They do sometimes hold paws, but far less often than the famous photos suggest: wild otters more often stay together by cuddling up close or keeping casual contact.",
         "category": "Ocean",
         "image": "/assets/facts/sea-otter.jpg"
       },
