@@ -153,8 +153,8 @@
       },
       {
         "id": 113,
-        "title": "Super Sneaky Narwhal",
-        "fact": "Narwhals are often called the unicorns of the sea, thanks to their long, spiral tusks that can grow up to 10 feet long! Surprisingly, this tusk is actually an elongated tooth, and scientists believe it can detect changes in the environment, helping these mystical creatures navigate the frigid Arctic waters.",
+        "title": "One Big Sensitive Tooth",
+        "fact": "The unicorn of the sea's famous tusk is actually a spiral tooth, jutting up to nine feet from one side of a male narwhal's head. Researchers have mapped a sensory pathway from that tooth to the brain, and narwhals respond measurably when water of different saltiness washes over it. It's a giant sensing tooth!",
         "category": "Ocean",
         "image": "/assets/facts/narwhal-2.jpg"
       }
@@ -1357,7 +1357,7 @@
       {
         "id": 105,
         "title": "Glowing Oceans, No Joke!",
-        "fact": "Dolphins do not glow, but they can look like they do. Some plankton, mainly single-celled dinoflagellates, flash blue-green when the water around them is disturbed. A dolphin cutting through a bloom of them at night sets off that light as it goes, outlining its whole body in a glowing trail.",
+        "fact": "Dolphins do not glow, but they can look like they do. Tiny plankton such as dinoflagellates flash blue when the water around them is disturbed. Researchers at sea have watched dolphins swim through them at night, lit up in a perfect outline of snouts, fins and tails, trailing light behind them like shooting stars.",
         "category": "Ocean",
         "image": "/assets/facts/dolphin-4.jpg"
       },
@@ -1708,8 +1708,8 @@
       },
       {
         "id": 102,
-        "title": "Silent Swimmers",
-        "fact": "Octopuses have three hearts and blue blood, giving them a unique physiological edge in deep ocean environments. When they swim, one heart pumps blood to their body, while the other two focus on their gills!",
+        "title": "Three-Heart Crew",
+        "fact": "An octopus runs on three hearts, and they split the work full time. One heart pumps blood around the body, while the other two push it past the gills to pick up oxygen. Swimming or not, that's the job split. Who needs one heart when you can have a whole crew?",
         "category": "Ocean",
         "image": "/assets/facts/octopus-4.jpg"
       }
@@ -1799,8 +1799,8 @@
       },
       {
         "id": 109,
-        "title": "Underwater Fireworks",
-        "fact": "Cuttlefish can change color and texture in the blink of an eye, using specialized skin cells called chromatophores. This makes them not only masters of camouflage but also mesmerizing underwater performers!",
+        "title": "Living Pixels",
+        "fact": "Cuttlefish can copy the color, contrast and even the texture of their surroundings in seconds. Pigment organs called chromatophores act like pixels, growing and shrinking to repaint the skin, while tiny bumps called papillae reshape it in 3D. Same animal, sandy seafloor one minute, algae-covered rock the next!",
         "category": "Ocean",
         "image": "/assets/facts/cuttlefish-2.jpg"
       }

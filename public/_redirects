@@ -411,6 +411,18 @@
 /facts/the-river-story-revisited/ /facts/the-willow-story-revisited/ 301
 /facts/hypnotic-skin /facts/stealth-stripes/ 301
 /facts/hypnotic-skin/ /facts/stealth-stripes/ 301
+/facts/butterfly-birthdays /facts/a-day-in-the-life/ 301
+/facts/butterfly-birthdays/ /facts/a-day-in-the-life/ 301
+/facts/silent-swimmers /facts/three-heart-crew/ 301
+/facts/silent-swimmers/ /facts/three-heart-crew/ 301
+/facts/underwater-fireworks /facts/living-pixels/ 301
+/facts/underwater-fireworks/ /facts/living-pixels/ 301
+/facts/cuddle-drones /facts/panic-pincushions/ 301
+/facts/cuddle-drones/ /facts/panic-pincushions/ 301
+/facts/super-sneaky-narwhal /facts/one-big-sensitive-tooth/ 301
+/facts/super-sneaky-narwhal/ /facts/one-big-sensitive-tooth/ 301
+/facts/rollercoaster-tails /facts/no-laughing-matter/ 301
+/facts/rollercoaster-tails/ /facts/no-laughing-matter/ 301
 
 # Splat rules live here, at the very bottom, and nothing goes below them. The
 # two exact-match /encyclopedia/guides rules above still win, since Cloudflare
