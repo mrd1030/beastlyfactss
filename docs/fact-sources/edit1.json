@@ -1,0 +1,219 @@
+[
+ {
+  "id": 2,
+  "title": "Spiny Situation",
+  "newTitle": null,
+  "newFact": "Hedgehogs have between 5,000 and 7,000 spines on their back! Old spines fall out over time and new ones grow in to replace them. Baby hedgehogs are born with their spines just below the skin.",
+  "extraSources": [],
+  "careAdvice": null,
+  "note": "Swapped the unsupported one-year spine lifespan for the source's shed-and-replace wording."
+ },
+ {
+  "id": 17,
+  "title": "Sea Otter Hand-Holding",
+  "newTitle": null,
+  "newFact": "Sea otters usually rest in groups called rafts, and to keep from drifting while they sleep they wrap themselves in strands of kelp. They do sometimes hold paws, but far less often than the famous photos suggest: wild otters more often stay together by sleeping close and keeping casual contact.",
+  "extraSources": [],
+  "careAdvice": null,
+  "note": "Dropped seagrass; replaced watching and listening with the source's casual contact and sleeping close."
+ },
+ {
+  "id": 43,
+  "title": "Color Means Communication",
+  "newTitle": null,
+  "newFact": "Chameleons don't change color primarily for camouflage. They do it mostly to communicate. A study of dwarf chameleons found their most striking color shifts evolved for social signaling with other chameleons, while smaller changes in brightness help with temperature control and, yes, sometimes camouflage.",
+  "extraSources": [],
+  "careAdvice": null,
+  "note": "Cut the stress/excitement/mating list and the mood/temperature line; added the paper's social signaling and brightness findings."
+ },
+ {
+  "id": 63,
+  "title": "Mirror Test Passers",
+  "newTitle": null,
+  "newFact": "Dolphins are one of only a handful of animals that pass the mirror self-recognition test, placing them alongside humans and great apes. In a 2001 study, two dolphins used a mirror to investigate marks placed on their own bodies.",
+  "extraSources": [],
+  "careAdvice": null,
+  "note": "Removed elephants and the self-awareness claim; added the 2001 study's mark test detail."
+ },
+ {
+  "id": 71,
+  "title": "Nature's Sound Thief",
+  "newTitle": null,
+  "newFact": "The lyrebird is a master mimic, copying other bird species, and captive birds have added chainsaws, car alarms, a camera's motor drive and even a human voice. One at Adelaide Zoo picked up hammers, drills and saws while the zoo's panda enclosure was being built.",
+  "extraSources": [
+   {
+    "publisher": "The Conversation (Hollis Taylor)",
+    "url": "https://theconversation.com/lyrebirds-mimicking-chainsaws-fact-or-lie-22529"
+   }
+  ],
+  "careAdvice": null,
+  "note": "Cut 'perfectly' and 'almost any sound'; mechanical sounds now credited to captive birds, construction site narrowed to the Adelaide Zoo bird."
+ },
+ {
+  "id": 86,
+  "title": "The Tardigrade Resilience",
+  "newTitle": null,
+  "newFact": "Tardigrades, also known as water bears, can survive extreme conditions that would obliterate most life forms! They can endure boiling water, freezing temperatures, radiation, years of dehydration and even the vacuum of space.",
+  "extraSources": [],
+  "careAdvice": null,
+  "note": "Removed the cryptobiosis clause and its dash; added radiation and dehydration from the NPR quote."
+ },
+ {
+  "id": 116,
+  "title": "Climbing the Walls",
+  "newTitle": null,
+  "newFact": "Geckos have millions of microscopic hairs on their feet that allow them to stick to even molecularly smooth surfaces! This amazing ability comes from van der Waals forces, making them one of nature's great climbers.",
+  "extraSources": [],
+  "careAdvice": null,
+  "note": "Cut running on ceilings; added millions of hairs and molecularly smooth surfaces from the quote."
+ },
+ {
+  "id": 130,
+  "title": "Small Brain, Zero Concussions",
+  "newTitle": null,
+  "newFact": "Woodpeckers peck at wood without getting concussions, but not because of a cushioned, shock-absorbing skull, a popular idea a 2022 study debunked. Their skull actually stays rigid to hammer harder. They avoid injury because their small braincase keeps the brain below the pressure levels known to cause concussions in primates.",
+  "extraSources": [],
+  "careAdvice": null,
+  "note": "Cut 20 pecks per second and impact brevity; injury avoidance now credited to braincase size per the abstract."
+ },
+ {
+  "id": 143,
+  "title": "Built-In Sonar",
+  "newTitle": null,
+  "newFact": "Many bat species navigate using echolocation, sending out ultrasound calls too high for human ears and reading the echoes that bounce back off objects around them. When a bat detects an insect it wants to eat, it fires off a rapid series of calls to pinpoint its prey.",
+  "extraSources": [],
+  "careAdvice": null,
+  "note": "Removed only-flying-mammal, total darkness, 200 calls per second and live map; rebuilt from the NPS quote."
+ },
+ {
+  "id": 154,
+  "title": "Never Forgets a Flockmate",
+  "newTitle": "Who's Who in the Flock",
+  "newFact": "Chickens are far smarter than they get credit for. Hens can recognize a large number of individual flockmates by sight and tell people apart by their physical features, and newborn chicks show early signs of 'object permanence' (understanding something still exists once it's hidden from view) within just days of hatching.",
+  "extraSources": [
+   {
+    "publisher": "Animal Cognition (Marino 2017)",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5306232/"
+   },
+   {
+    "publisher": "Poultry Science (Ferreira et al. 2025)",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12434278/"
+   }
+  ],
+  "careAdvice": null,
+  "note": "Dozens became a large number, humans reworded to physical features, long-term memory cut; title changed since 'never forgets' was unsupported."
+ },
+ {
+  "id": 167,
+  "title": "A Tongue Longer Than Its Body",
+  "newTitle": "A Tongue Nearly as Long as Its Body",
+  "newFact": "Pangolins have no teeth at all. Instead they rely on a sticky tongue that, in the giant pangolin, reaches up to 27 inches (69 cm), almost as long as its body, anchored all the way back at the pelvis, to slurp ants out of their nests.",
+  "extraSources": [
+   {
+    "publisher": "The Gale Encyclopedia of Science (via Encyclopedia.com)",
+    "url": "https://www.encyclopedia.com/science/encyclopedias-almanacs-transcripts-and-maps/pangolins-0"
+   }
+  ],
+  "careAdvice": null,
+  "note": "Tongue now 'almost as long as its body' at 69 cm; cut termites by the thousands; title adjusted."
+ },
+ {
+  "id": 183,
+  "title": "See-Through Bellies",
+  "newTitle": null,
+  "newFact": "Some glass frogs have skin on their underside so transparent you can see their bones and organs. While they sleep, they pack nearly all their red blood cells into their liver, making themselves even harder for predators to spot against a leaf.",
+  "extraSources": [],
+  "careAdvice": null,
+  "note": "Replaced watching the heart and blood with the paper's visible bones and organs."
+ },
+ {
+  "id": 189,
+  "title": "A Built-In Radiator",
+  "newTitle": null,
+  "newFact": "A toco toucan's massive bill works as a built-in radiator. By adjusting blood flow through the bill, a toucan can dump up to four times its resting heat production through it on a hot day, then clamp that blood flow down to conserve warmth when it's cold.",
+  "extraSources": [],
+  "careAdvice": null,
+  "note": "Removed the 'more than a third of its body surface' claim."
+ },
+ {
+  "id": 201,
+  "title": "A 72-Hour Rebuild",
+  "newTitle": null,
+  "newFact": "The reset is not instant. A stressed or dying Turritopsis dohrnii settles onto a surface, transforms into a cyst, and within 24 to 72 hours rebuilds itself as a juvenile polyp. That polyp then buds off brand new jellyfish.",
+  "extraSources": [],
+  "careAdvice": null,
+  "note": "Replaced 'collapses its bell into a small blob' with the paper's 'transforms into a cyst'."
+ },
+ {
+  "id": 215,
+  "title": "Eighteen Minutes, No Oxygen",
+  "newTitle": null,
+  "newFact": "A naked mole rat can survive 18 minutes in a zero-oxygen chamber and walk away without apparent injury. It switches to anaerobic metabolism running on fructose instead of glucose, which sidesteps the exact step where normal glycolysis stalls without oxygen.",
+  "extraSources": [],
+  "careAdvice": null,
+  "note": "Cut the mouse comparison, plants pathway and no-other-mammal claims."
+ },
+ {
+  "id": 228,
+  "title": "Seawater Comes In With the Eggs",
+  "newTitle": "A Pouch Full of Seawater",
+  "newFact": "A seahorse's sealed brood pouch is filled with non-sterile seawater and nutrient-rich fluid: an enclosed space ideal for bacteria, inside an animal that has just dismantled much of its immunity. The fix is chemical, not cellular. Hepcidin genes run high in the pouch lining during pregnancy, helping keep bacteria in check.",
+  "extraSources": [],
+  "careAdvice": null,
+  "note": "Cut lysozyme, egg-transfer timing, 'warm' and the immune hardware line; hepcidin now as gene expression; title no longer ties seawater to egg transfer."
+ },
+ {
+  "id": 240,
+  "title": "A Baby Cry Hidden in the Purr",
+  "newTitle": null,
+  "newFact": "Cats asking for food produce a variant researchers call the solicitation purr, with an unusually high frequency component buried inside the normal low rumble. It sits in roughly the same acoustic range as a human infant cry. Listeners rate these purrs as more urgent and less pleasant than ordinary purring, even people who have never owned a cat.",
+  "extraSources": [],
+  "careAdvice": null,
+  "note": "'Harder to ignore' became 'less pleasant'; blind-listening claim replaced with the non-owner detail from the quote."
+ },
+ {
+  "id": 253,
+  "title": "Horn Is Not Bone or Ivory",
+  "newTitle": null,
+  "newFact": "A rhino horn has no bony core at all. It grows from the skin and is compacted keratin the whole way through, the same protein as fingernails and hair. That makes its tissue closer to a horse's hoof than to a cow's horn, which is a bony core in a keratin sheath.",
+  "extraSources": [],
+  "careAdvice": null,
+  "note": "Swapped the callus comparison for the page's horse hoof comparison; moved hooves out of the first list to avoid repeating."
+ },
+ {
+  "id": 278,
+  "title": "Built to Outrun a Ghost",
+  "newTitle": null,
+  "newFact": "The pronghorn can run close to 55 miles per hour, making it the fastest land animal in North America. That speed may have evolved to outrun the American cheetah, a predator that is now extinct, so it may still be built to escape a chase that no longer happens.",
+  "extraSources": [],
+  "careAdvice": null,
+  "note": "Second fastest on Earth became fastest in North America; 'scientists believe' softened to 'may have'; cut 'thousands of years'."
+ },
+ {
+  "id": 299,
+  "title": "At Home in Two Kinds of Water",
+  "newTitle": null,
+  "newFact": "Mollies are \"euryhaline,\" meaning they can tolerate a wide range of salinities. Wild populations turn up in everything from coastal estuaries to freshwater roadside ditches, and they are widely tolerant of temperature and low oxygen levels too.",
+  "extraSources": [],
+  "careAdvice": null,
+  "note": "Lagoons became estuaries; cut the aquarium-fish comparison and 'a short distance apart'; added temperature and oxygen tolerance."
+ },
+ {
+  "id": 322,
+  "title": "Teeth Like Tubes",
+  "newTitle": null,
+  "newFact": "Aardvarks are the only living species in their entire mammalian order, and their teeth are just as odd: they have no enamel and are made of densely packed tiny tubes of modified dentin, held in a sleeve of dental cement. At night they use a long sticky tongue to sweep up ants and termites.",
+  "extraSources": [],
+  "careAdvice": null,
+  "note": "Cut no roots, lifelong growth, hexagonal, unlike any mammal, foot-long tongue and 'by the thousands'; added dentin tubes and cement sleeve."
+ },
+ {
+  "id": 339,
+  "title": "Ears Tuned to Mice",
+  "newTitle": null,
+  "newFact": "Servals have large ears that rotate like radar dishes to pinpoint a sound. Their hearing reaches into the ultrasonic range, so they can pick up the high-pitched sounds rodents make, even when the prey is hidden underground.",
+  "extraSources": [],
+  "careAdvice": null,
+  "note": "Cut largest ears for size, independent swivel, rodent 'talk' and tall grass; ears now rotate like radar dishes, prey underground."
+ }
+]

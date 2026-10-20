@@ -1,0 +1,252 @@
+[
+ {
+  "id": 11,
+  "title": "Immortal Jellyfish",
+  "newTitle": null,
+  "newFact": "The Turritopsis dohrnii jellyfish is biologically immortal! After it reproduces, it can revert its cells back to a younger state, essentially hitting the reset button on aging. It shrinks into a cyst, then regrows as young polyps, again and again.",
+  "extraSources": [],
+  "careAdvice": null,
+  "note": "Swapped 'when it gets old or stressed' for 'after it reproduces'; added the cyst-to-polyp detail from the PNAS quote to reach length."
+ },
+ {
+  "id": 38,
+  "title": "Balloon Defense",
+  "newTitle": null,
+  "newFact": "Some pufferfish, like the balloonfish, can swell to about three times their usual volume when threatened! And almost all pufferfish carry tetrodotoxin, a toxin up to 1,200 times more poisonous than cyanide.",
+  "extraSources": [
+   {
+    "publisher": "National Geographic",
+    "url": "https://www.nationalgeographic.com/animals/fish/facts/pufferfish"
+   },
+   {
+    "publisher": "Marine Science Institute, The University of Texas at Austin (Science and the Sea)",
+    "url": "https://utmsi.utexas.edu/science-and-the-sea/print-article/a-swell-adaptation/"
+   }
+  ],
+  "careAdvice": null,
+  "note": "Inflation hedged to 'some pufferfish... about three times their usual volume'; toxin now 'up to 1,200 times' per NatGeo."
+ },
+ {
+  "id": 58,
+  "title": "Mimics Everything",
+  "newTitle": null,
+  "newFact": "Many parrots can mimic not just single words but whole phrases, even copying the pitch and inflection of a particular person's voice. The record for the largest bird vocabulary ever documented doesn't belong to a big exotic species. It belongs to a budgerigar named Puck, credited by Guinness World Records with an estimated 1,728 words.",
+  "extraSources": [
+   {
+    "publisher": "Live Science",
+    "url": "https://www.livescience.com/59912-parrot-murder-witness-voice-mimicking-ability.html"
+   },
+   {
+    "publisher": "Audubon",
+    "url": "https://www.audubon.org/magazine/why-do-parrots-talk"
+   }
+  ],
+  "careAdvice": null,
+  "note": "Opening rewritten to supported wording: phrases and voice pitch/inflection replace sentences, tones and laughs (laughs not found)."
+ },
+ {
+  "id": 68,
+  "title": "Velvet Antlers Grow Fast",
+  "newTitle": "Antlers in a Hurry",
+  "newFact": "Deer antlers are the fastest-growing tissue in the animal kingdom, adding more than 2 centimeters, about 0.8 inch, per day! While they grow, antlers are packed with blood vessels and nerves.",
+  "extraSources": [],
+  "careAdvice": null,
+  "note": "'Up to an inch' corrected to the paper's 'more than 2 cm (0.8 inch)'; velvet and autumn hardening cut, so title no longer mentions velvet; blood vessels and nerves from the quote."
+ },
+ {
+  "id": 83,
+  "title": "Silent Signals",
+  "newTitle": null,
+  "newFact": "Octopuses have an extraordinary ability to communicate through color and texture! They can rapidly change their skin color and pattern to signal mating, aggression or danger to each other, or to hide from predators as masters of disguise.",
+  "extraSources": [],
+  "careAdvice": null,
+  "note": "'Confuse predators' replaced with hiding (camouflage); signal content (mating, aggression, danger) added from the UTMSI quote."
+ },
+ {
+  "id": 107,
+  "title": "Egg Layers of Mystery",
+  "newTitle": null,
+  "newFact": "Did you know that female sea turtles can travel long distances from their feeding grounds to return to the beach where they were born to lay their eggs? This incredible homing ability, combined with their long migrations, makes them one of the most fascinating ocean explorers!",
+  "extraSources": [],
+  "careAdvice": null,
+  "note": "'Thousands of miles' changed to 'long distances from their feeding grounds' per NOAA."
+ },
+ {
+  "id": 125,
+  "title": "Instant Slime Escape Artist",
+  "newTitle": null,
+  "newFact": "The hagfish is the undisputed slime champion. When threatened, it can release about a liter of thick, sticky goo in under a second. That's enough to expand in water and completely clog a predator's gills for a perfect smoky getaway!",
+  "extraSources": [
+   {
+    "publisher": "Science News",
+    "url": "https://www.sciencenews.org/article/ingredients-hagfish-slime-revealed"
+   }
+  ],
+  "careAdvice": null,
+  "note": "'Up to a liter in 0.1 seconds' now 'about a liter in under a second'; hyphen-dash replaced with a sentence break."
+ },
+ {
+  "id": 135,
+  "title": "Self-Eviction Defense",
+  "newTitle": null,
+  "newFact": "When threatened, some sea cucumbers can expel their own internal organs through their rear end, then simply regrow them within weeks. In one species, Holothuria scabra, the digestive tract grows back within a single week!",
+  "extraSources": [],
+  "careAdvice": null,
+  "note": "Cut 'to confuse predators' and 'a full set'; added the Holothuria scabra one-week regrowth from the quote."
+ },
+ {
+  "id": 150,
+  "title": "The Vitamin C Shortage",
+  "newTitle": null,
+  "newFact": "Like humans and some other mammals, guinea pigs can't make their own vitamin C! They must get it from their diet every day, or they risk scurvy, one of the most common nutritional problems guinea pigs face.",
+  "extraSources": [],
+  "careAdvice": "Original said their diet needs a daily dose of fresh veggies to avoid scurvy (feeding advice); left out.",
+  "note": "Popcorning removed; veggie feeding advice flagged and dropped; scurvy framed as the Merck 'most common nutritional issue'."
+ },
+ {
+  "id": 164,
+  "title": "A Bite That Won't Clot",
+  "newTitle": null,
+  "newFact": "Komodo dragons have a venom gland in their lower jaw that works alongside harmful mouth bacteria. The venom stops blood from clotting, causing massive blood loss and shock in the victim. When they do get a meal, they can eat up to 80% of their own body weight in one sitting.",
+  "extraSources": [],
+  "careAdvice": null,
+  "note": "Dropped the 'decades of belief, later revealed' story (zoo credits both together); blood pressure crash now blood loss and shock."
+ },
+ {
+  "id": 180,
+  "title": "The Statue That Hunts",
+  "newTitle": null,
+  "newFact": "Shoebills can stand motionless for hours while hunting, then lunge forward onto their prey. The sharp edges of their clog-shaped bill can behead a lungfish or even a baby crocodile before the bird swallows it.",
+  "extraSources": [
+   {
+    "publisher": "National Geographic",
+    "url": "https://www.nationalgeographic.com/animals/birds/facts/shoebill"
+   },
+   {
+    "publisher": "Audubon",
+    "url": "https://www.audubon.org/magazine/shoebill-or-most-terrifying-bird-world"
+   }
+  ],
+  "careAdvice": null,
+  "note": "'Snap in half' now 'behead'; 'specifically for slicing' and the 'explode into a violent strike' wording replaced by supported lunge wording."
+ },
+ {
+  "id": 187,
+  "title": "The Nose Knows Best",
+  "newTitle": null,
+  "newFact": "Male gharials grow a bulbous knob on the tip of their snout called a 'ghara,' which helps them blow bubbles and make a loud buzzing call to attract mates. It's named after the Indian pot it resembles and doubles as an eye-catching signal for females.",
+  "extraSources": [
+   {
+    "publisher": "Live Science",
+    "url": "https://www.livescience.com/animals/alligators-crocodiles/gharial-the-prehistoric-crocodilian-that-buzzes-and-blows-bubbles-to-find-a-mate"
+   }
+  ],
+  "careAdvice": null,
+  "note": "Dropped 'underwater' and the fragile needle-thin jaws sentence; added the pot name and visual signal from the National Zoo quote (already firstPass, so not listed as extra)."
+ },
+ {
+  "id": 199,
+  "title": "Fingernails, Basically",
+  "newTitle": null,
+  "newFact": "Pangolin scales are keratin, the same protein your fingernails and hair are made of. That has done nothing to slow demand: when the IUCN reviewed seizures logged between 2016 and 2024, scales made up 99 percent of every confiscated pangolin part.",
+  "extraSources": [
+   {
+    "publisher": "Minnesota Zoo",
+    "url": "https://mnzoo.org/blog/pangolin-rehabilitation-in-namibia/"
+   }
+  ],
+  "careAdvice": null,
+  "note": "No change; keratin detail saved."
+ },
+ {
+  "id": 210,
+  "title": "They Hum After Dark",
+  "newTitle": null,
+  "newFact": "Giraffes were long thought to be nearly silent. Then researchers recorded over 947 hours of audio across three European zoos and found harmonic humming averaging 92 Hz. That overturns a popular assumption: 92 Hz is not infrasound. It sits within human hearing, if on the low side. Earlier studies recorded by day, but the hums came only at night.",
+  "extraSources": [
+   {
+    "publisher": "PBS NOVA",
+    "url": "https://www.pbs.org/wgbh/nova/article/giraffes-hum-to-each-other-throughout-the-night-and-zookeepers-never-noticed/"
+   }
+  ],
+  "careAdvice": null,
+  "note": "'Well inside human hearing' now 'within, if on the low side'; 'nobody had listened' replaced by the daytime-recording explanation; trimmed to fit 60 words."
+ },
+ {
+  "id": 224,
+  "title": "It Restarts From the Middle",
+  "newTitle": "Heart First, Legs Later",
+  "newFact": "A thawing wood frog does not restart all at once. The heartbeat comes back first, slow at the start and speeding up as the body warms. Breathing and hind leg reflexes return only afterward, and not in every frog even three to four hours later. Circulation is restored before the legs work at all.",
+  "extraSources": [],
+  "careAdvice": null,
+  "note": "Cut 'outside in' and the hour timings; heart-first order kept from the quote; title no longer implies inside-out warming; 'afterwards' to US 'afterward'."
+ },
+ {
+  "id": 234,
+  "title": "Built Like the Cat Allergen",
+  "newTitle": null,
+  "newFact": "The protein in slow loris venom structurally resembles Fel d 1, the main cat allergen, sharing the same disulfide-bridged heterodimeric arrangement. Between 80 and 95 percent of cat-allergic people react to Fel d 1. That may explain why only some bite victims go into anaphylactic shock: the reaction looks like an allergy, driven by the victim's own immune system.",
+  "extraSources": [
+   {
+    "publisher": "Allergy, Asthma & Clinical Immunology (Bonnet et al. 2018)",
+    "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5891966/"
+   }
+  ],
+  "careAdvice": null,
+  "note": "'Less a toxin' framing dropped; immune angle limited to why only some victims get anaphylaxis; 'disulphide' to US 'disulfide'."
+ },
+ {
+  "id": 247,
+  "title": "Emperors Rarely Reunite",
+  "newTitle": null,
+  "newFact": "The lifelong penguin romance is mostly myth. Emperor penguins pair with the same partner in consecutive seasons only about 15 percent of the time. Most species return to the same partner at least somewhat consistently, but even their fidelity rates run only 59 to 89 percent.",
+  "extraSources": [],
+  "careAdvice": null,
+  "note": "Gentoo 90 percent and the nest-building explanation cut; replaced with the 59 to 89 percent range from Live Science."
+ },
+ {
+  "id": 272,
+  "title": "The Living Metal Detector",
+  "newTitle": null,
+  "newFact": "Despite their shark-like shape, sawfish are actually rays. Their long, tooth-studded snout, called a rostrum, carries an electrosensory system that picks up the faint electrical fields given off by other animals, letting a sawfish know when prey is nearby.",
+  "extraSources": [],
+  "careAdvice": null,
+  "note": "Cut 'thousands of pores' and 'buried in sand or mud, without ever seeing it'; now 'know when prey is nearby' per NOAA."
+ },
+ {
+  "id": 288,
+  "title": "Gentle Giant of Cats",
+  "newTitle": null,
+  "newFact": "Maine Coons are the largest of all pedigreed cats, known as the gentle giants of the cat fancy. It's not unusual for a mature male to reach 20 pounds or more, and unlike most cats, they can take up to three years to reach their full adult size.",
+  "extraSources": [],
+  "careAdvice": null,
+  "note": "Weights, 40-plus inches and Stewie cut; CFA's 20-pound male figure and gentle giant line added."
+ },
+ {
+  "id": 318,
+  "title": "Same Burrow, Same Mate",
+  "newTitle": null,
+  "newFact": "Atlantic puffins come back to the exact same burrow each season, often reuniting with the same partner year after year, even though the pair migrates separately and spends the winter apart at sea. When they find each other again they tap bills before settling back in to raise a single chick.",
+  "extraSources": [
+   {
+    "publisher": "Marine Ecology Progress Series (Fayet et al. 2017)",
+    "url": "https://www.int-res.com/abstracts/meps/v569/p243-252"
+   },
+   {
+    "publisher": "Animal Diversity Web (University of Michigan)",
+    "url": "https://animaldiversity.org/accounts/Fratercula_arctica/"
+   }
+  ],
+  "careAdvice": null,
+  "note": "'15 to 20 years' and mutual preening cut; separate migration wording applied."
+ },
+ {
+  "id": 334,
+  "title": "Biggest Bite, Smallest Body",
+  "newTitle": "Biggest Bite for Its Size",
+  "newFact": "Tasmanian devils have the strongest bite force relative to body size of any living predator studied in a landmark comparison. Once bite strength was adjusted for body mass, marsupials as a group outscored placental mammals, and the devil came out on top.",
+  "extraSources": [],
+  "careAdvice": null,
+  "note": "'Any living mammal' narrowed to living predators studied; lions/tigers, carcass crunching and worn teeth cut; title no longer claims the smallest body."
+ }
+]
