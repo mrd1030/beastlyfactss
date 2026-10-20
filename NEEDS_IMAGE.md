@@ -56,6 +56,10 @@ Each was a second point inside one of the 21 fact cards that ran past 65
 words. The cards were cut to one point and these became their own drafts.
 Unlike the run above, each is already checked against the source named.
 
+The marmoset draft reuses the old title of fact 294, whose URL
+/facts/too-high-to-hear/ now redirects to 294. Delete those two lines from
+public/_redirects when the draft is promoted, or give the draft a new title.
+
 1. **Fennec Fox** (Mammals) - A Den With Back Doors. Fennec foxes dig their own homes, and they often do not stop at one door. A den can be a whole series of tunnels reaching up to 10 meters, about 32 feet, with several entrances and exits. If trouble shows up at the front door, the fox simply slips out another one. Visual hook: A fennec fox peeking out of a sandy burrow entrance with its huge ears up. Source: Smithsonian's National Zoo and Conservation Biology Institute, https://nationalzoo.si.edu/animals/fennec-fox
 2. **Green Anaconda** (Reptiles) - The Breeding Ball Ends in Dinner. Female green anacondas are considerably larger than males, and breeding season shows it. Up to 13 males wrap around one female in a writhing breeding ball. Afterward she may swallow one or more of the smaller males, stocking up for a seven month pregnancy during which she will not eat again. Visual hook: A huge female green anaconda coiled in shallow water with a smaller male draped across her. Source: Smithsonian's National Zoo and Conservation Biology Institute, https://nationalzoo.si.edu/animals/green-anaconda
 3. **Shima Enaga** (Birds) - 2,000 Feathers, Then Spring Cleaning. A long-tailed tit stuffs its nest with more than 2,000 feathers, a seriously plush duvet for the chilly start of spring. Then, as the weather warms, the birds gradually pull feathers back out of the nest, like swapping a winter comforter for a lighter blanket as the season heats up. Visual hook: A long-tailed tit perched at the entrance of its lichen-covered nest with a small white feather in its beak. Source: Natural History Museum, London, https://www.nhm.ac.uk/discover/why-do-birds-nest.html
