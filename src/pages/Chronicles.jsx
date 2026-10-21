@@ -92,8 +92,10 @@ export default function Chronicles() {
           <script type="application/ld+json">{JSON.stringify(articleSchema({
             headline: story.seoTitle || story.title,
             description: pageDescription,
+            image: story.image ? `https://beastlyfacts.com${story.image}` : undefined,
             url: canonicalUrl,
             datePublished: String(story.publishedAt || '').slice(0, 10) || undefined,
+            dateModified: story.lastUpdated || undefined,
           }))}</script>
         )}
       </Helmet>
