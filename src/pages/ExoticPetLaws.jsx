@@ -12,6 +12,7 @@ import { CODE_TO_SLUG, SLUG_TO_CODE } from '@/lib/data/stateSlugs';
 // Shared with the state pages, which need the same mid-sentence casing.
 import { inSentence, inTitle } from '@/lib/utils/animalNames';
 import { breadcrumbSchema } from '@/lib/utils/breadcrumbs';
+import { articleSchema, newestDate } from '@/lib/utils/articleSchema';
 import Breadcrumbs from '@/components/shared/Breadcrumbs';
 import { aggregateVerified, describeVerified, formatDay } from '@/lib/utils/verifiedDates';
 import CitationBox from '@/components/legal/CitationBox';
@@ -286,6 +287,13 @@ export default function ExoticPetLaws() {
       [`${inTitle(animal.name)} Laws by State`, `/exotic-pet-laws/${activeId}/`],
     ];
   const crumbs = breadcrumbSchema(trail);
+  const article = articleSchema({
+    headline: withBrand(title),
+    description,
+    image: `${SITE}/assets/guides/exotic-pet-legal-hub.jpg`,
+    url: canonical,
+    dateModified: newestDate(Object.values(statuses).map((e) => e.verifiedOn)),
+  });
 
   // Only when this hub really is the previous history entry, which the stamp
   // it puts on its own links is what tells us. A reader who arrived from a
@@ -303,6 +311,7 @@ export default function ExoticPetLaws() {
         <meta name="robots" content={nothingToReport ? 'noindex,follow' : 'index,follow'} />
         <link rel="canonical" href={canonical} />
         <script type="application/ld+json">{JSON.stringify(crumbs)}</script>
+        <script type="application/ld+json">{JSON.stringify(article)}</script>
         <meta property="og:title" content={withBrand(title)} />
         <meta property="og:description" content={description} />
         <meta property="og:type" content="website" />

@@ -7,6 +7,7 @@ import { CHRONICLES_SERIES, chroniclesPath } from '@/lib/chronicles';
 import { mdxChroniclesPosts, groupChronicles } from '@/lib/chroniclesPosts';
 import { truncateDescription } from '@/lib/utils/truncate';
 import { getDisplayDate } from '@/lib/utils/date';
+import { articleSchema } from '@/lib/utils/articleSchema';
 import * as MdxComponents from '@/components/mdx';
 import MdxArticleBody from '@/components/shared/MdxArticleBody';
 import PostEngagement from '@/components/blog/PostEngagement';
@@ -87,6 +88,14 @@ export default function Chronicles() {
         <meta name="twitter:title" content={(isReader && (story?.seoTitle || story?.title)) || `Chronicles of ${series.character}`} />
         <meta name="twitter:description" content={pageDescription} />
         <meta name="twitter:image" content="https://beastlyfacts.com/assets/og-default.jpg" />
+        {isReader && story && (
+          <script type="application/ld+json">{JSON.stringify(articleSchema({
+            headline: story.seoTitle || story.title,
+            description: pageDescription,
+            url: canonicalUrl,
+            datePublished: String(story.publishedAt || '').slice(0, 10) || undefined,
+          }))}</script>
+        )}
       </Helmet>
 
       {/* Header + series tabs */}

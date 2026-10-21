@@ -10,6 +10,7 @@ import CitationBox from '@/components/legal/CitationBox';
 import { SLUG_TO_CODE, CODE_TO_SLUG } from '@/lib/data/stateSlugs';
 import { inSentence, joinList } from '@/lib/utils/animalNames';
 import { breadcrumbSchema } from '@/lib/utils/breadcrumbs';
+import { articleSchema, newestDate } from '@/lib/utils/articleSchema';
 import Breadcrumbs from '@/components/shared/Breadcrumbs';
 import LegalDisclaimer from '@/components/mdx/LegalDisclaimer';
 import { SourceNoticeBox } from '@/components/mdx/SourceNotice';
@@ -160,6 +161,13 @@ export default function ExoticPetLawsState() {
     [j.name, `/exotic-pet-laws/state/${CODE_TO_SLUG[code]}/`],
   ];
   const crumbs = breadcrumbSchema(trail);
+  const article = articleSchema({
+    headline: withBrand(title),
+    description,
+    image: `${SITE}/assets/guides/exotic-pet-legal-hub.jpg`,
+    url: canonical,
+    dateModified: newestDate(j.rows.map((r) => r.entry?.verifiedOn)),
+  });
 
 
   // The opening sentence is derived, not templated: it names the actual banned
@@ -213,6 +221,7 @@ export default function ExoticPetLawsState() {
         <meta name="description" content={description} />
         <link rel="canonical" href={canonical} />
         <script type="application/ld+json">{JSON.stringify(crumbs)}</script>
+        <script type="application/ld+json">{JSON.stringify(article)}</script>
         <meta property="og:title" content={withBrand(title)} />
         <meta property="og:description" content={description} />
         <meta property="og:type" content="website" />

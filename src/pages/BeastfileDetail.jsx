@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { breadcrumbSchema } from '@/lib/utils/breadcrumbs';
+import { articleSchema } from '@/lib/utils/articleSchema';
 import { useParams, Link, useSearchParams } from 'react-router-dom';
 import { MapPin, Globe2, ShieldAlert, Sparkles, ArrowLeft, Image as ImageIcon } from 'lucide-react';
 import { getBeastfile } from '@/lib/data/beastlypedia';
@@ -114,17 +115,16 @@ export default function BeastfileDetail() {
   // an unfinished Beastfile would unfurl blank.
   const shareImage = `${SITE}${heroImage || secondaryImage || '/assets/og-default.jpg'}`;
 
-  // schema.org has no Animal type. Thing is the honest choice; the binomial
-  // goes in alternateName, which is what a Taxon extension would map to anyway.
-  const schema = {
-    '@context': 'https://schema.org',
-    '@type': 'Thing',
-    name,
-    alternateName: [scientific, ...(alsoKnownAs || [])],
+  // An Article about the animal. schema.org has no Animal type, so the animal
+  // itself is a Thing; the binomial goes in alternateName, which is what a
+  // Taxon extension would map to anyway.
+  const schema = articleSchema({
+    headline: title,
     description: tagline,
     image: shareImage,
     url: canonical,
-  };
+    about: { '@type': 'Thing', name, alternateName: [scientific, ...(alsoKnownAs || [])] },
+  });
 
   return (
     <div className="min-h-screen pb-16">
