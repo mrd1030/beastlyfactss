@@ -361,6 +361,19 @@
       "animalDay": null
     },
     {
+      "slug": "american-alligator-legal-guide",
+      "title": "Are Alligators Legal? 30 Bans, 9 Permit States, by State",
+      "excerpt": "The American alligator is a native game animal in the states where it lives and a dangerous exotic everywhere else, and both kinds of law reach it. The result is 30 bans, nine permits that are mostly for farmers and exhibitors, five states whose text will not decide, and a federal threatened listing that exists only because the alligator looks like a crocodile.",
+      "date": "2026-10-17",
+      "image": "/assets/guides/american-alligator-legal.jpg",
+      "category": "Legal",
+      "categories": [
+        "Legal",
+        "Reptiles"
+      ],
+      "animalDay": null
+    },
+    {
       "slug": "amphibian-quarantine-and-water-guide",
       "title": "Amphibian Quarantine and Water Hardness Guide",
       "excerpt": "A new amphibian needs a container instead of a net, a temperature match before a chemistry match, and weeks of quarantine, and the water it goes into afterward has a real, honest gap in what's actually known about hardness.",
@@ -1166,7 +1179,7 @@
     {
       "slug": "big-cat-legal-guide",
       "title": "Big Cat Laws by State After the Big Cat Public Safety Act",
-      "excerpt": "Since 20 December 2022 no private person may acquire a tiger, lion or cougar anywhere in the United States, and the owners who registered by 18 June 2023 may keep what they had and nothing more. The state table still matters, because the states set the conditions on those animals, and because the cougar is a native cat that game law reaches on its own.",
+      "excerpt": "Since December 20, 2022, no private person may acquire a tiger, lion or cougar anywhere in the United States, and the owners who registered by June 18, 2023, may keep what they had and nothing more. The state table still matters, because the states set the conditions on those animals, and because the cougar is a native cat that game law reaches on its own.",
       "date": "2026-10-11",
       "image": "/assets/guides/big-cat-legal-guide.jpg",
       "category": "Legal",
@@ -1860,6 +1873,19 @@
       "category": "Legal",
       "categories": [
         "Legal"
+      ],
+      "animalDay": null
+    },
+    {
+      "slug": "caiman-legal-guide",
+      "title": "Are Caimans Legal? 25 Bans, 7 Permit States, by State",
+      "excerpt": "A spectacled caiman is an exotic everywhere in the United States, so it gets the dangerous-animal answer and never the game-code one. That makes its row simpler than the alligator's and, in fourteen jurisdictions, more generous: 25 bans, seven permits, four states that cannot decide, and a federal threatened listing that exists because the caiman looks like something rarer.",
+      "date": "2026-10-17",
+      "image": "/assets/guides/caiman-legal.jpg",
+      "category": "Legal",
+      "categories": [
+        "Legal",
+        "Reptiles"
       ],
       "animalDay": null
     },
@@ -4368,6 +4394,19 @@
       "animalDay": null
     },
     {
+      "slug": "green-anaconda-legal-guide",
+      "title": "Are Green Anacondas Legal? 11 Bans, 10 Permits by State",
+      "excerpt": "The green anaconda was listed as federal injurious wildlife in 2015, three years after its yellow cousin, and most state rules that reach one reach the whole genus. The result is a row that matches the reticulated python's in fifty cells: 11 bans, 10 permits, four conditions, Arkansas's closed list, two states that cannot decide, and 24 jurisdictions with no rule for the heaviest snake in the world.",
+      "date": "2026-10-17",
+      "image": "/assets/guides/green-anaconda-legal.jpg",
+      "category": "Legal",
+      "categories": [
+        "Legal",
+        "Reptiles"
+      ],
+      "animalDay": null
+    },
+    {
       "slug": "green-anole-cost-guide",
       "title": "Green Anole Price: $5 to $30, Plus $355 to $510 Setup",
       "excerpt": "Green anoles are one of the cheapest reptiles you can buy, and that low price is exactly why this species is so often underestimated and under-housed.",
@@ -4740,7 +4779,7 @@
         "Aquatic Life",
         "Wild Animals"
       ],
-      "animalDay": null
+      "animalDay": "hagfish-day"
     },
     {
       "slug": "hamster-cost-guide",
@@ -5176,7 +5215,7 @@
         "Aquatic Life",
         "Wild Animals"
       ],
-      "animalDay": null
+      "animalDay": "world-jellyfish-day"
     },
     {
       "slug": "inherited-eye-disease-dogs-cats-guide",
@@ -5195,7 +5234,7 @@
     {
       "slug": "international-sloth-day",
       "title": "International Sloth Day: The Real Date",
-      "excerpt": "The foundation that created International Sloth Day set it as the third Saturday in October. Most published calendars print 20 October, which was the third Saturday in 2013 and has been copied forward ever since.",
+      "excerpt": "The foundation that created International Sloth Day set it as the third Saturday in October. Most published calendars print October 20th, which was the third Saturday in 2013 and has been copied forward ever since.",
       "date": "2026-09-22",
       "image": "/assets/images/international-sloth-day.jpg",
       "category": "Wild Animals",
@@ -5205,9 +5244,21 @@
       "animalDay": "international-sloth-day"
     },
     {
+      "slug": "international-snow-leopard-day",
+      "title": "International Snow Leopard Day: October 23rd",
+      "excerpt": "October 23rd comes from a signed intergovernmental text, the Bishkek Declaration of 2013. The cat it honors cannot roar, and its 2017 move from Endangered to Vulnerable was a reassessment of the data, with no recovery behind it.",
+      "date": "2026-10-20",
+      "image": "/assets/images/international-snow-leopard-day.jpg",
+      "category": "Wild Animals",
+      "categories": [
+        "Wild Animals"
+      ],
+      "animalDay": "international-snow-leopard-day"
+    },
+    {
       "slug": "international-wombat-day",
-      "title": "International Wombat Day: 22 October",
-      "excerpt": "22 October, no named founder, and a species that was down to around 35 animals in one Queensland paddock. The cubes get the attention and the northern hairy-nosed wombat is the reason the day is worth keeping.",
+      "title": "International Wombat Day: October 22nd",
+      "excerpt": "October 22nd, no named founder, and a species that was down to around 35 animals in one Queensland paddock. The cubes get the attention and the northern hairy-nosed wombat is the reason the day is worth keeping.",
       "date": "2026-09-22",
       "image": "/assets/images/international-wombat-day.jpg",
       "category": "Wild Animals",
@@ -7436,8 +7487,8 @@
     },
     {
       "slug": "reptile-awareness-day",
-      "title": "Reptile Awareness Day: 21 October, and Its Origins",
-      "excerpt": "21 October is the settled date and nobody can say who set it. No organization claims Reptile Awareness Day, which is a strange footing for the one observance covering a group that went uncounted until 2022.",
+      "title": "Reptile Awareness Day: October 21st, and Its Origins",
+      "excerpt": "October 21st is the settled date and nobody can say who set it. No organization claims Reptile Awareness Day, which is a strange footing for the one observance covering a group that went uncounted until 2022.",
       "date": "2026-09-22",
       "image": "/assets/images/reptile-awareness-day.jpg",
       "category": "Wild Animals",
@@ -7520,6 +7571,19 @@
       "categories": [
         "Reptiles",
         "Turtles & Tortoises"
+      ],
+      "animalDay": null
+    },
+    {
+      "slug": "reticulated-python-legal-guide",
+      "title": "Are Reticulated Pythons Legal? 11 Bans, 10 Permits by State",
+      "excerpt": "The reticulated python has been federal injurious wildlife since 2015, and that listing bars import and little else. The state map is where the answer lives: 11 bans, 10 permits, four conditions, Arkansas's closed breeder list, Idaho's undefined word, and 25 jurisdictions with no rule for the longest snake in the world.",
+      "date": "2026-10-17",
+      "image": "/assets/guides/reticulated-python-legal.jpg",
+      "category": "Legal",
+      "categories": [
+        "Legal",
+        "Reptiles"
       ],
       "animalDay": null
     },
@@ -8546,7 +8610,7 @@
     {
       "slug": "tiger-legal-guide",
       "title": "Are Tigers Legal? 36 Bans, 10 Permit States, by State",
-      "excerpt": "Since 20 December 2022 no private person may breed or possess a tiger anywhere in the United States, and the only private tigers left are the ones registered with the Fish and Wildlife Service by 18 June 2023. The state table still matters, because it sets the terms those animals live under, and because Texas, Montana and eight other states never repealed the permits they wrote.",
+      "excerpt": "Since December 20, 2022, no private person may breed or possess a tiger anywhere in the United States, and the only private tigers left are the ones registered with the Fish and Wildlife Service by June 18, 2023. The state table still matters, because it sets the terms those animals live under, and because Texas, Montana and eight other states never repealed the permits they wrote.",
       "date": "2026-10-16",
       "image": "/assets/guides/tiger-legal.jpg",
       "category": "Legal",
@@ -9278,8 +9342,8 @@
     },
     {
       "slug": "world-animal-day",
-      "title": "World Animal Day: Why It Is on 4 October",
-      "excerpt": "World Animal Day is 4 October because a Berlin hall was booked. The first one, in 1925, ran on 24 March instead, and it took four years to get the date its founder wanted.",
+      "title": "World Animal Day: Why It Is on October 4th",
+      "excerpt": "World Animal Day is October 4th because a Berlin hall was booked. The first one, in 1925, ran on March 24th instead, and it took four years to get the date its founder wanted.",
       "date": "2026-09-24",
       "image": "/assets/images/world-animal-day.jpg",
       "category": "Wild Animals",
@@ -9290,7 +9354,7 @@
     },
     {
       "slug": "world-octopus-day",
-      "title": "World Octopus Day: 8 October, and Who Started It",
+      "title": "World Octopus Day: October 8th, and Who Started It",
       "excerpt": "Eight arms, eighth day of the month. World Octopus Day has no charity and no UN resolution behind it. A group of octopus enthusiasts on a message board picked the date in 2007 and it stuck.",
       "date": "2026-09-22",
       "image": "/assets/images/world-octopus-day.jpg",

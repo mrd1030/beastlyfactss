@@ -29,7 +29,7 @@ export function formatDay(iso) {
   const [, y, mo, d] = m;
   const month = MONTHS[Number(mo) - 1];
   if (!month) return null;
-  return `${Number(d)} ${month} ${y}`;
+  return `${month} ${Number(d)}, ${y}`;
 }
 
 // The span of a set of dates, ignoring blanks. Null when there is nothing to
@@ -40,14 +40,14 @@ export function verifiedRange(dates) {
   return { from: sorted[0], to: sorted[sorted.length - 1] };
 }
 
-// "4 August to 5 September 2026", with the year said once when both ends share it.
+// "August 4 to September 5, 2026", with the year said once when both ends share it.
 function formatSpan(from, to) {
   const a = formatDay(from);
   const b = formatDay(to);
   if (!a || !b) return null;
   if (from === to) return b;
   const sameYear = from.slice(0, 4) === to.slice(0, 4);
-  return `${sameYear ? a.replace(` ${from.slice(0, 4)}`, '') : a} to ${b}`;
+  return `${sameYear ? a.replace(`, ${from.slice(0, 4)}`, '') : a} to ${b}`;
 }
 
 function joinNames(names) {
@@ -81,9 +81,9 @@ export function aggregateVerified(items) {
 // Returns { line, citation }, both starting with lowercase "verified" or
 // "entries verified" so a caller can prefix them.
 //   line      the full sentence for the page:
-//             "verified 1 October 2026 for 51 of 52 jurisdictions; Maine last checked 5 August 2026"
+//             "verified October 1, 2026, for 51 of 52 jurisdictions; Maine last checked August 5, 2026"
 //   citation  short enough to sit inside a quoted reference:
-//             "verified 1 October 2026 (Maine 5 August 2026)"
+//             "verified October 1, 2026 (Maine August 5, 2026)"
 export function describeVerified(agg, { unit = 'jurisdictions' } = {}) {
   if (!agg || !agg.total) return null;
   const { total, modal, modalCount, others = [], from, to } = agg;
@@ -105,7 +105,7 @@ export function describeVerified(agg, { unit = 'jurisdictions' } = {}) {
   // newer than the modal date, as on a state page where most rows are old.
   const when = dates[0] === dates[dates.length - 1] ? otherSpan : `between ${otherSpan.replace(' to ', ' and ')}`;
   const names = [...new Set(others.map((o) => o[1]).filter(Boolean))];
-  const lead = `verified ${headline} for ${count(modalCount)} of ${count(total)} ${unit}`;
+  const lead = `verified ${headline}, for ${count(modalCount)} of ${count(total)} ${unit}`;
   if (names.length && names.length <= 3) {
     return {
       line: `${lead}; ${joinNames(names)} last checked ${when}`,

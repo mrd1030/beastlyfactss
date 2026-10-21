@@ -4,7 +4,7 @@
 // Dates checked 2026-08-01 against a compiled 2026 calendar (World Animal
 // Protection, National Today, National Day Calendar, Awareness Days). Every
 // fixed date below was confirmed. Shark Week was corrected from a guessed
-// 12-19 July to its real 26 July - 1 August run.
+// 12-19 July to its real July 26th - August 1st run.
 //
 // Two exceptions are NOT from that source and are the commonly cited dates:
 // International Cat Day (8 Aug) and International Dog Day (26 Aug). That
@@ -159,9 +159,9 @@ export const ANIMAL_EVENTS = [
   {
     id: 'international-sloth-day', name: 'International Sloth Day', emoji: '🦥',
     // Floating: the third Saturday in October, per AIUNAU, the Colombian
-    // foundation that created the day in 2010. It was hardcoded to 20 October
+    // foundation that created the day in 2010. It was hardcoded to October 20th
     // here until 2026-09-22, which is the same error most published calendars
-    // carry: 20 October was the third Saturday in 2013 and got copied forward.
+    // carry: October 20th was the third Saturday in 2013 and got copied forward.
     // https://aiunau.org/en/activities/sloth-international-day/
     ranges: { 2026: { start: '10-17', end: '10-17' }, 2027: { start: '10-16', end: '10-16' } },
     animals: ['Sloth'],
@@ -264,9 +264,9 @@ export const ANIMAL_EVENTS = [
   },
   {
     id: 'national-axolotl-day', name: 'National Axolotl Day', emoji: '🦎',
-    // Mexico's Día Nacional del Ajolote, 1 February, declared by the Senate
+    // Mexico's Día Nacional del Ajolote, February 1st, declared by the Senate
     // in 2018 and marking the axolotl genome paper (Nature, 1 Feb 2018). It sat
-    // on 12 November here until 2026-10-18; nothing anywhere supports that
+    // on November 12th here until 2026-10-18; nothing anywhere supports that
     // date. https://www.uaeh.edu.mx/suma/noticias/noticia/600
     month: 2, day: 1,
     animals: ['Axolotl'],
@@ -287,7 +287,7 @@ export const ANIMAL_EVENTS = [
     // Discovery schedules this and it moves every year, so there is no formula
     // to derive it from. Add each year as it is announced; an unlisted year
     // simply never matches rather than showing a wrong window. The 2026 run is
-    // 26 July to 1 August, which puts International Tiger Day (29 July) inside
+    // July 26th to August 1st, which puts International Tiger Day (July 29th) inside
     // it - the exact-date tier keeps that day for the tiger.
     id: 'shark-week', name: 'Shark Week', emoji: '🦈',
     ranges: {
@@ -314,7 +314,7 @@ export const ANIMAL_EVENTS = [
   {
     id: 'international-snow-leopard-day', name: 'International Snow Leopard Day', emoji: '🐆',
     // Set by the 12 range-country governments in the Bishkek Declaration,
-    // 23 October 2013. https://snowleopard.org/the-silent-roar-heard-around-the-world-every-october/
+    // October 23, 2013. https://snowleopard.org/the-silent-roar-heard-around-the-world-every-october/
     month: 10, day: 23,
     // Never the bare 'Leopard': it would pick up the leopard gecko.
     animals: ['Snow Leopard'],
@@ -323,7 +323,7 @@ export const ANIMAL_EVENTS = [
   },
   {
     id: 'national-black-cat-day', name: 'National Black Cat Day', emoji: '🐈‍⬛',
-    // Cats Protection (UK), launched 27 October 2011.
+    // Cats Protection (UK), launched October 27, 2011.
     // https://www.cats.org.uk/cats-blog/history-of-national-black-cat-day
     month: 10, day: 27,
     animals: ['Cat'],
@@ -390,7 +390,7 @@ export const ANIMAL_EVENTS = [
   {
     id: 'world-falconry-day', name: 'World Falconry Day', emoji: '🦅',
     // International Association for Falconry, marking UNESCO's listing of
-    // falconry on 16 November 2010. https://iaf.org/word-falconry-day/
+    // falconry on November 16, 2010. https://iaf.org/word-falconry-day/
     month: 11, day: 16,
     animals: ['Falcon', 'Hawk', 'Eagle'],
     categories: ['Birds', 'Wild Animals'],
@@ -408,7 +408,7 @@ export const ANIMAL_EVENTS = [
   },
   {
     id: 'evolution-day', name: 'Evolution Day', emoji: '🧬',
-    // On the Origin of Species went on sale 24 November 1859. The date is
+    // On the Origin of Species went on sale November 24, 1859. The date is
     // settled; no organization claims the day.
     // https://darwin-online.org.uk/DarwinCensus.html
     month: 11, day: 24,
@@ -428,7 +428,7 @@ export const ANIMAL_EVENTS = [
   },
   {
     id: 'national-mutt-day', name: 'National Mutt Day', emoji: '🐕',
-    // 2 December (also 31 July). Date verified on the day's own site; the
+    // December 2nd (also July 31st). Date verified on the day's own site; the
     // founder credit circulates only on aggregators.
     // https://www.theholidayguild.com/nationalmuttday
     month: 12, day: 2,
@@ -455,7 +455,7 @@ export const ANIMAL_EVENTS = [
   },
   {
     id: 'national-day-of-the-horse', name: 'National Day of the Horse', emoji: '🐴',
-    // S.Res.452 (2004) named 13 December 2004 only; the American Horse
+    // S.Res.452 (2004) named December 13, 2004, only; the American Horse
     // Council has kept it every year since.
     // https://www.congress.gov/108/bills/sres452/BILLS-108sres452ats.pdf
     month: 12, day: 13,
@@ -473,7 +473,7 @@ export const ANIMAL_EVENTS = [
   },
   {
     id: 'christmas-bird-count', name: 'Christmas Bird Count', emoji: '🐦',
-    // Audubon, 14 December to 5 January every year. activeWindow() cannot
+    // Audubon, December 14th to January 5th every year. activeWindow() cannot
     // span New Year inside one year's range, so the run is declared to 31
     // December and the article carries the full window.
     // https://www.audubon.org/community-science/christmas-bird-count/join-christmas-bird-count

@@ -55,7 +55,7 @@ const EVENT_NOTES = {
   'world-rhino-day':
     'Started by WWF South Africa in 2010. All five surviving species are covered by it.',
   'world-animal-day':
-    'The oldest of them, founded in 1925. The reason it sits on 4 October is a booking problem rather than anything to do with animals.',
+    'The oldest of them, founded in 1925. The reason it sits on October 4th is a booking problem rather than anything to do with animals.',
   'world-octopus-day':
     'Started in 2007 by members of TONMO, an octopus enthusiast forum, as the opening day of Cephalopod Awareness Days. The date was chosen for the eight arms.',
   'international-sloth-day':
@@ -219,7 +219,7 @@ export default function AnimalDays() {
     itemListElement: dated.map((row, i) => ({
       '@type': 'ListItem',
       position: i + 1,
-      name: `${row.event.name}, ${row.date.day} ${MONTHS[row.date.month - 1]}`,
+      name: `${row.event.name}, ${MONTHS[row.date.month - 1]} ${ordinal(row.date.day)}`,
       ...(row.article ? { url: `https://beastlyfacts.com/blog/${row.article.slug.current}/` } : {}),
     })),
   };
@@ -261,7 +261,7 @@ export default function AnimalDays() {
               That decides who you believe about the date. When the UN sets an observance, the date
               is in a resolution and it does not move. When a Colombian sloth foundation sets one,
               the foundation&rsquo;s own site is the record, and if it says the third Saturday in
-              October then that is the date, no matter how many calendars have copied 20 October off
+              October then that is the date, no matter how many calendars have copied October 20th off
               each other.
             </p>
           </div>
@@ -280,8 +280,9 @@ export default function AnimalDays() {
                   <span aria-hidden="true">{row.event.emoji}</span>
                   <span className="font-semibold text-foreground">{row.event.name}</span>
                   <span className="text-muted-foreground">
-                    {`${ordinal(row.date.day)} ${MONTHS[row.date.month - 1]}`}
-                    {onYear !== year ? ` ${onYear}` : ''}
+                    {onYear !== year
+                      ? `${MONTHS[row.date.month - 1]} ${row.date.day}, ${onYear}`
+                      : `${MONTHS[row.date.month - 1]} ${ordinal(row.date.day)}`}
                   </span>
                   {row.article && (
                     <Link
@@ -316,7 +317,7 @@ export default function AnimalDays() {
                 <span className="text-muted-foreground">{row.rule}</span>
                 {row.date && (
                   <span className="rounded-md bg-secondary/10 px-2 py-0.5 text-xs font-semibold text-secondary">
-                    {`${ordinal(row.date.day)} ${MONTHS[row.date.month - 1]} ${year}`}
+                    {`${MONTHS[row.date.month - 1]} ${row.date.day}, ${year}`}
                   </span>
                 )}
               </li>
@@ -391,7 +392,7 @@ export default function AnimalDays() {
               Aggregator calendars are where the errors breed. They copy each other, a floating date
               gets flattened into whatever number it fell on the year someone transcribed it, and the
               wrong figure then appears in fifty places and looks corroborated. The sloth day error is
-              exactly this: 20 October was the third Saturday in 2013, and it has been reprinted ever
+              exactly this: October 20th was the third Saturday in 2013, and it has been reprinted ever
               since.
             </p>
           </div>

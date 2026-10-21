@@ -142,6 +142,7 @@ Live editions (2026-10-04): bearded dragon 4.1; leopard gecko, crested gecko, ba
 
 - Replacement UVB tubes in the catalog: deferred by the owner, kept as an option for later (nine UVB species; prices in COST_CHECK.md).
 - "Prices checked" / "as of" lines: the owner dropped them from the site on 2026-10-06 (every cost guide and the other guides that had one). Some books still carry one on the budget or sources page (ball python "Prices checked in October 2026 at ...", leopard gecko, others); remove at each book's next rebuild, never as a standalone edit.
+- US date order (owner, 2026-10-21): the site switched from "21 October" to "October 21st", and "21 October 2026" to "October 21, 2026" (no ordinal when a year follows). The books still write dates day first: about 90 in `source/` across 13 animals (axolotl, ball python, bearded dragon, crested gecko, guinea pig, hamster, hognose snake, leopard gecko, rabbit, Russian tortoise, tarantula, and the `-src` READMEs). Convert at each book's next rebuild, never as a standalone edit.
 - US spelling (owner, 2026-10-12): no British spelling in book prose, same as the site. Scanned all 20 books in `source/` on 2026-10-12 and they are clean; every hit is a title or name and stays (Applied Animal Behaviour Science, World Budgerigar Organisation, AnAge's "animal ageing and longevity database", African grey). Keep it that way in every new or rebuilt page. The superseded `care-packages/` folder still has "levelled" (`hamster.html:551`) but builds nothing.
 
 ## 5. Decisions made

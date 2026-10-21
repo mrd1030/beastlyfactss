@@ -140,7 +140,7 @@ export function getEventArticle(event, articles) {
   // And an article written for a DIFFERENT day never stands in for this one.
   // Without this, World Oceans Day picked up the World Octopus Day piece: it
   // is the newest article with "Octopus" in the title, so it won the ocean
-  // match outright and 8 June would have led with another day's article.
+  // match outright and June 8th would have led with another day's article.
   const pool = articles.filter((a) => !a.animalDay || a.animalDay === event.id);
 
   if (event.animals?.length) {

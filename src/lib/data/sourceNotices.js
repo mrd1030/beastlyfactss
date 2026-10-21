@@ -16,7 +16,7 @@
 // `body` is shared. `guideTail` closes the box in a legal guide, `pageTail` on
 // a state page, where it covers every row resting on the source. In all three,
 // {changed}, {status} and {when} are filled with formatted dates ({when} reads
-// "on 5 August 2026" or "between 4 August and 5 September 2026"), and {count}
+// "on August 5, 2026" or "between August 4 and September 5, 2026"), and {count}
 // with the number of rows.
 export const SOURCE_NOTICES = {
   'me-unrestricted': {
@@ -27,11 +27,11 @@ export const SOURCE_NOTICES = {
     // The last full copy anyone can still read: the Internet Archive's capture of
     // the list before Maine replaced it. Rendered as a link after the text.
     archive: {
-      label: 'See the last full list, saved by the Internet Archive on 12 February 2026',
+      label: 'See the last full list, saved by the Internet Archive on February 12, 2026',
       url: 'https://web.archive.org/web/20260212233615/https://www.maine.gov/IFW/docs/unrestrictedspecies.pdf',
     },
     body:
-      "On {changed}, Maine's Department of Inland Fisheries and Wildlife replaced its Unrestricted Species List with a version that covers fish only; the mammal, bird, reptile and invertebrate pages were removed. The department told us on {status} that only the fish section has been revised so far, that the mammal, bird and reptile sections have not yet been updated, and that it is working on merging the old and new documents in the meantime.",
+      "On {changed}, Maine's Department of Inland Fisheries and Wildlife replaced its Unrestricted Species List with a version that covers fish only; the mammal, bird, reptile and invertebrate pages were removed. The department told us on {status}, that only the fish section has been revised so far, that the mammal, bird and reptile sections have not yet been updated, and that it is working on merging the old and new documents in the meantime.",
     guideTail:
       'The Maine details in this guide come from the full list and were accurate when we checked it {when}. Confirm with the department before relying on them.',
     pageTail:
@@ -51,7 +51,7 @@ export function noticeText(id, { surface, dates, count, formatDay }) {
   const sameYear = sorted[0].slice(0, 4) === sorted[sorted.length - 1].slice(0, 4);
   const when = sorted.length === 1
     ? `on ${to}`
-    : `between ${sameYear ? from.replace(` ${sorted[0].slice(0, 4)}`, '') : from} and ${to}`;
+    : `between ${sameYear ? from.replace(`, ${sorted[0].slice(0, 4)}`, '') : from} and ${to}`;
   const tail = surface === 'page' ? notice.pageTail : notice.guideTail;
   return {
     title: notice.title,
