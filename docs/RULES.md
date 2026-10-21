@@ -45,6 +45,13 @@ working checklist.
   both halves are full clauses, they get a period.
 - US spelling, including "gray" for the color. "Grey" stays only inside names spelled that way (African grey, greyhound, grey kangaroo) and in quoted text, titles and product names. Species whose American name uses gray are written gray: gray wolf, great gray owl. No AI-tell phrasing ("nature's ultimate X",
   "let that sink in", "delve into").
+- Dates in US order (owner, 2026-10-21). Without a year, month first with an
+  ordinal: "October 21st", "from November 1st to 7th". With a year, no
+  ordinal and a comma after the year when the sentence runs on: "on December
+  20, 2022, by rule". A span sharing a year names it once: "August 4 to
+  September 5, 2026". Never day first ("21 October"), except inside quoted
+  text and titles. Code that prints dates goes through formatDay in
+  src/lib/utils/verifiedDates.js.
 - Intensifiers are rationed, not banned. "genuinely", "actually", "really",
   and "the real X" are fine in Mike's mouth once in a while. They are not
   fine as the thing that makes a claim sound credible. Limits: at most one per
