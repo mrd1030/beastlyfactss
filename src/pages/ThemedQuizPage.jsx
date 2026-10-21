@@ -28,7 +28,12 @@ import { BookCheck, CircleHelp, Heart } from 'lucide-react';
 const factForSource = (to) => {
   const match = /^\/facts\/([^/]+)\/?$/.exec(to || '');
   if (!match) return null;
-  return facts.find(f => slugify(f.title) === match[1]) || null;
+  const fact = facts.find(f => slugify(f.title) === match[1]) || null;
+  // A stale slug falls back to a plain link to a redirect, which is how six
+  // quiz sources went unnoticed after the 2026-10 fact renames. The build
+  // catches it (scripts/check-link-targets.mjs); this says so in dev too.
+  if (!fact && import.meta.env.DEV) console.error(`Quiz source ${to} matches no fact title.`);
+  return fact;
 };
 
 // Fact sources pop up in place; blog sources leave the quiz, so they say so.
