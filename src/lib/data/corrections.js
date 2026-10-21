@@ -47,7 +47,7 @@ export const CORRECTIONS = [
   },
   {
     date: '2026-10-16',
-    page: '/blog/exotic-pet-legal-hub/',
+    page: '/exotic-pet-laws/',
     title: 'Exotic Pet Legal Hub',
     was: 'The axolotl summary said banned in California, New Jersey and Maine, and reportedly in Washington DC. The sugar glider summary said illegal in California, Alaska and Hawaii and unobtainable in Pennsylvania.',
     now: 'Both summaries carry the full matrix: axolotl banned in seven jurisdictions with four permit and three conditional states; sugar glider banned in six including DC and New York City, permit-only in two, conditional in Georgia. The full guides were already right; the hub blurbs had not been updated with them.',

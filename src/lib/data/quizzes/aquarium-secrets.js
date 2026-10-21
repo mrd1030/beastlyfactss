@@ -24,7 +24,7 @@ export default {
       options: ['Attracting mates', 'Camouflage in dark blackwater streams', 'Warning predators it is toxic', 'Absorbing sunlight for warmth'],
       answer: 1,
       explain: 'In the dim, tannin-stained water it evolved in, the metallic stripe reflects light in ways that create false and confusing targets for predators. The showiest feature in your tank is defensive gear.',
-      source: { label: 'A Stripe That Hides You', to: '/facts/a-stripe-that-hides-you/' },
+      source: { label: 'Stripes on a Dimmer Switch', to: '/facts/stripes-on-a-dimmer-switch/' },
     },
     {
       q: 'Wild mollies have been found living in which combination of places?',
@@ -52,7 +52,7 @@ export default {
       options: ['Regrowing fins', 'Over 70 years of melanoma research', 'Producing antivenom', 'Sleeping with one eye open'],
       answer: 1,
       explain: 'Platies and their relatives are one of the oldest continuously studied animal models for any cancer, over 70 years of melanoma research, though an ordinary aquarium platy has essentially no risk of developing it.',
-      source: { label: '70 Years in Cancer Labs', to: '/facts/70-years-in-cancer-labs/' },
+      source: { label: 'Lab Stars Since the 1920s', to: '/facts/lab-stars-since-the-1920s/' },
     },
     {
       q: 'The "bristles" on a male bristlenose pleco’s snout are really...',

@@ -173,7 +173,7 @@ export const knowledgeQuiz = {
       options: ['Red', 'Blue', 'Green', 'Clear'],
       answer: 1,
       explain: 'Octopus blood is blue, part of the unusual physiology that goes with their three hearts.',
-      source: { label: 'Silent Swimmers', to: '/facts/silent-swimmers/' },
+      source: { label: 'Three-Heart Crew', to: '/facts/three-heart-crew/' },
     },
     {
       q: 'Which is the only mammal covered in scales?',
@@ -187,7 +187,7 @@ export const knowledgeQuiz = {
       options: ['The pronghorn', 'The cheetah', 'The greyhound', 'The lion'],
       answer: 1,
       explain: 'Cheetahs accelerate faster than most sports cars, but they can only hold top speed for around 20 to 30 seconds before overheating. The pronghorn is the second fastest land animal.',
-      source: { label: 'Zero to Sixty in Seconds', to: '/facts/zero-to-sixty-in-seconds/' },
+      source: { label: 'Zero to 45 in 2.5 Seconds', to: '/facts/zero-to-45-in-25-seconds/' },
     },
     {
       q: 'Roughly how much bite force can an American alligator clamp down with?',
@@ -201,14 +201,14 @@ export const knowledgeQuiz = {
       options: ['Female', 'Male', 'Both at once', 'Neither until adulthood'],
       answer: 1,
       explain: 'Every clownfish starts out male. When the dominant female of a group dies, the largest male changes sex and becomes the new female, for good.',
-      source: { label: 'Born Male, Die Female', to: '/facts/born-male-die-female/' },
+      source: { label: 'Every Clownfish Starts Male', to: '/facts/every-clownfish-starts-male/' },
     },
     {
       q: 'Which is the only bird that can fly backwards?',
       options: ['The hummingbird', 'The swift', 'The kingfisher', 'The woodpecker'],
       answer: 0,
       explain: 'A unique shoulder joint lets a hummingbird rotate its wings in a full circle, so it can fly backwards and even hover upside down for a moment.',
-      source: { label: 'Flying Backwards, Sleeping Like the Dead', to: '/facts/flying-backwards-sleeping-like-the-dead/' },
+      source: { label: 'Backing Up on the Cheap', to: '/facts/backing-up-on-the-cheap/' },
     },
   ],
 };
