@@ -1,0 +1,222 @@
+[
+ {
+  "draft": "manta-belly-spots",
+  "beastfile": "manta-ray",
+  "animal": "Giant Manta Ray",
+  "category": "Ocean",
+  "emoji": "🐠",
+  "title": "Belly Spots Tell Who's Who",
+  "fact": "A giant manta ray carries a pattern of spots on its belly, and those patterns are distinct enough that scientists use them to tell one manta from another. Anyone can help: NOAA asks people who see a giant manta to send in photos, which can be used to identify individual rays.",
+  "photo": "/assets/facts/manta-belly-spots.jpg",
+  "publisher": "NOAA Fisheries",
+  "url": "https://www.fisheries.noaa.gov/species/giant-manta-ray",
+  "quote": "They also have distinct spot patterns on their bellies that can be used to identify individuals. ... If you encounter a giant manta ray, email us at manta.ray@noaa.gov . Photos are very helpful and can be used to identify individual manta rays.",
+  "status": "confirmed",
+  "note": "NOAA says 'distinct', not 'unique', so the card does too. Some giant mantas are almost entirely black on both sides."
+ },
+ {
+  "draft": "manta-cleaning-stations",
+  "beastfile": "manta-ray",
+  "animal": "Giant Manta Ray",
+  "category": "Ocean",
+  "emoji": "🐠",
+  "title": "A Spa Day on the Reef",
+  "fact": "Giant manta rays drop by coral reef cleaning stations, where they hover while small cleaner fish pick parasites off their bodies. In Indonesia, scientists who tagged 41 of these mantas found they kept coming back to the same favorite stations, and the visits happened mostly in daylight.",
+  "photo": "/assets/facts/manta-cleaning.jpg",
+  "publisher": "Frontiers in Fish Science (2024)",
+  "url": "https://www.frontiersin.org/journals/fish-science/articles/10.3389/frish.2024.1432244/full",
+  "quote": "At cleaning stations, manta rays hover over reef patches and interact with cleaner fish species (e.g., Chaetodon kleinii, Thalassoma lunare, Labroides bicolor, and L. dimidiatus) that feed not only on ectoparasites on their bodies but may also feed on their mucus and skin, particularly around wounds ... The analysis of visitation events made by the tagged oceanic manta rays resulted in a total of 421 visitation events from 37 of the 41 tagged individuals ... The tagged oceanic manta rays exhibited site fidelity to cleaning stations, particularly those located in central and southern Raja Ampat, with acoustic detections at these stations occurring predominantly during daylight hours.",
+  "status": "confirmed",
+  "note": "Setyawan et al. 2024, Raja Ampat. 'Oceanic manta ray' is the giant manta (Mobula birostris)."
+ },
+ {
+  "draft": "leafy-sea-dragon-eggs",
+  "beastfile": "leafy-sea-dragon",
+  "animal": "Leafy Sea Dragon",
+  "category": "Ocean",
+  "emoji": "🐉",
+  "title": "Dad Carries the Eggs",
+  "fact": "In leafy sea dragons, the dad does the carrying. A female lays 250 to 300 eggs and pushes them into the soft skin under the male's tail. His skin hardens into a cup around each egg, holding it safe for six to eight weeks until the babies hatch.",
+  "photo": "/assets/facts/leafy-sea-dragon-eggs.jpg",
+  "publisher": "Aquarium of the Pacific",
+  "url": "https://www.aquariumofpacific.org/onlinelearningcenter/species/leafy_seadragon",
+  "quote": "Like their seahorse relatives, male seadragons brood the eggs, which are incubated on a brood pouch on the underside of the tail. The female lays 250 to 300 eggs that are 4 mm (0.16 in) in diameter and 7 mm (0.3 in) long. She pushes them into the skin of the male to be fertilized, covering most of the under surface and sides of his tail immediately behind his anus. His skin, soft at the time the eggs are first embedded, becomes hardened to form a cup around each egg to hold it securely for the six- to eight-week incubation.",
+  "status": "partly",
+  "note": "Sources disagree on time: the South Australian government fact sheet says four to six weeks. 'Bright pink' and 'about 250' from the old fun fact are not supported (this source says 250 to 300)."
+ },
+ {
+  "draft": "leafy-sea-dragon-homing",
+  "beastfile": "leafy-sea-dragon",
+  "animal": "Leafy Sea Dragon",
+  "category": "Ocean",
+  "emoji": "🐉",
+  "title": "Always Finds Its Way Home",
+  "fact": "A leafy sea dragon is a slow mover, but it has a great sense of direction. It can travel hundreds of meters away from home and still return to exactly the same place, like a tiny homing beacon in the seaweed.",
+  "photo": "/assets/facts/leafy-sea-dragon-seagrass.jpg",
+  "publisher": "Government of South Australia, Department for Environment and Water",
+  "url": "https://cdn.environment.sa.gov.au/landscape/docs/hf/leafy-seadragon-bio-region-fact.pdf",
+  "quote": "Leafy Seadragons are slow moving, and rely on their excellent camouflage to protect them from predators ... Homing beacons…..Leafy Seadragons are able to travel hundreds of metres from home and return to exactly the same place!",
+  "status": "confirmed",
+  "note": "Government education fact sheet; it does not cite the tracking study behind the claim."
+ },
+ {
+  "draft": "humpback-fluke-id",
+  "beastfile": "humpback-whale",
+  "animal": "Humpback Whale",
+  "category": "Ocean",
+  "emoji": "🐋",
+  "title": "Tails Like Fingerprints",
+  "fact": "Every humpback whale carries an ID card on its tail. The black and white pattern under its flukes, together with their shape and any scars, is unique to each animal. Scientists photograph these tails like fingerprints to identify individual whales and track them over time.",
+  "photo": "/assets/facts/humpback-fluke-pattern.jpg",
+  "publisher": "NOAA Fisheries",
+  "url": "https://www.fisheries.noaa.gov/species/humpback-whale",
+  "quote": "Fluke pigmentation patterns, in combination with varying shapes and sizes of whales' flukes and/or prominent scars, are unique to each animal. They are distinctive enough to be used like \"fingerprints\" to identify individuals. When photographed, scientists can often identify individual whales —a process called photo-identification - and catalog occurrences of individual whales and use this information to track them over time.",
+  "status": "confirmed",
+  "note": ""
+ },
+ {
+  "draft": "humpback-lobtail",
+  "beastfile": "humpback-whale",
+  "animal": "Humpback Whale",
+  "category": "Ocean",
+  "emoji": "🐋",
+  "title": "A Fishing Trick That Spread",
+  "fact": "In 1980, a humpback in the Gulf of Maine was first seen slapping the water with its tail one to four times before diving to blow a bubble net. This lobtail feeding spread through the Gulf's humpbacks, and a whale was more likely to pick it up if it spent time with one that already did it.",
+  "photo": "/assets/facts/humpback-lobtail.jpg",
+  "publisher": "National Geographic",
+  "url": "https://www.nationalgeographic.com/animals/article/130425-humpback-whale-culture-behavior-science-animals",
+  "quote": "That behavior, called lobtail feeding, was first recorded in one whale in the Gulf of Maine in 1980. ... In lobtail feeding, the humpback slaps the surface of the water one to four times with the underside of its tail before diving down and blowing the bubble net. ... Basically, a naive whale—an individual who didn't exhibit lobtailing behavior—was more likely to start lobtailing if it associated with a whale that did use the new technique.",
+  "status": "confirmed",
+  "note": "Coverage of Allen, Weinrich, Hoppitt and Rendell, Science 2013 (doi 10.1126/science.1231976)."
+ },
+ {
+  "draft": "shark-denticles",
+  "beastfile": "shark",
+  "animal": "Shark",
+  "category": "Ocean",
+  "emoji": "🦈",
+  "title": "Skin Made of Teeth",
+  "fact": "A shark's skin is covered in tiny scales called dermal denticles, which are more like teeth than skin. Made of dentin and enamel, they overlap like roof shingles. Stroke a shark from head to tail and it feels smooth. Go the other way and it is rough like sandpaper. Their ribbed pattern cuts friction and drag.",
+  "photo": "/assets/facts/shark-skin.jpg",
+  "publisher": "Smithsonian Magazine",
+  "url": "https://www.smithsonianmag.com/innovation/shark-skin-inspired-materials-have-a-long-way-to-go-before-they-work-like-the-real-thing-180980973/",
+  "quote": "Shark skin is made of tiny, stiff segments of overlapping, textured dentin and enamel. ... If you could run your hand from a shark's head to its tail— not that you should —it would feel smooth, almost like suede. Reverse direction and it's rough like sandpaper. Viewed under a microscope, shark skin is composed of ribbed, dragonesque scales layered over each other like shingles on a roof. These structures, called dermal denticles, are more like teeth than skin. Made of dentin and enamel, they are innervated, and their ribbed and layered pattern guides water across the shark's back, reducing friction and drag.",
+  "status": "partly",
+  "note": "Hakai Magazine piece republished by Smithsonian, 2022. 'Pulp' cut: not on the page."
+ },
+ {
+  "draft": "shark-greenland-age",
+  "beastfile": "shark",
+  "animal": "Shark",
+  "category": "Ocean",
+  "emoji": "🦈",
+  "title": "Centuries-Old Sharks",
+  "fact": "Greenland sharks are the longest-lived vertebrates known. Scientists radiocarbon-dated the eye lenses of 28 females and found a life span of at least 272 years. The biggest, at 502 centimeters long, was estimated at 392 years old, give or take 120 years.",
+  "photo": "/assets/facts/shark-greenland.jpg",
+  "publisher": "Science (2016)",
+  "url": "https://www.science.org/doi/10.1126/science.aaf1703",
+  "quote": "Radiocarbon dating of eye lens nuclei from 28 female Greenland sharks (81 to 502 cm in total length) revealed a life span of at least 272 years. ... The age ranges of prebomb sharks (reported as midpoint and extent of the 95.4% probability range) revealed the age at sexual maturity to be at least 156 ± 22 years, and the largest animal (502 cm) to be 392 ± 120 years old. Our results show that the Greenland shark is the longest-lived vertebrate known, and they raise concerns about species conservation.",
+  "status": "confirmed",
+  "note": "Nielsen et al. 2016, Science 353(6300):702-704. Abstract read via the Europe PMC API (PMID 27516602). The old fun fact's 'centuries' holds; 'possibly about 400' is the 392 plus or minus 120 figure."
+ },
+ {
+  "draft": "mantis-shrimp-double-punch",
+  "beastfile": "mantis-shrimp",
+  "animal": "Mantis Shrimp",
+  "category": "Ocean",
+  "emoji": "🦐",
+  "title": "The Double Punch",
+  "fact": "A peacock mantis shrimp swings its club so fast underwater that cavitation bubbles form between club and shell. Each strike hits twice: first the club, then the collapsing bubbles, typically 390 to 480 millionths of a second later. The impact can be thousands of times the shrimp's body weight.",
+  "photo": "/assets/facts/mantis-shrimp-strike.jpg",
+  "publisher": "Journal of Experimental Biology (2005)",
+  "url": "https://doi.org/10.1242/jeb.01831",
+  "quote": "Due to the extreme speeds of these strikes underwater, cavitation occurs between their appendages and hard-shelled prey. ... We present the surprising finding that each strike generates two brief, high-amplitude force peaks, typically 390-480 micros apart. Based on high-speed imaging, force measurements and acoustic analyses, it is evident that the first force peak is caused by the limb's impact and the second force peak is due to the collapse of cavitation bubbles. ... Despite their small size, O. scyllarus can generate impact forces thousands of times their body weight.",
+  "status": "confirmed",
+  "note": "Patek and Caldwell 2005, JEB 208:3655-3664. Abstract via the Europe PMC API (PMID 16169943); 'micros' is the API's rendering of microseconds. The old fun fact said the water 'vaporizes': it forms cavitation bubbles."
+ },
+ {
+  "draft": "cuttlefish-two-faced",
+  "beastfile": "cuttlefish",
+  "animal": "Cuttlefish",
+  "category": "Ocean",
+  "emoji": "🦑",
+  "title": "Two-Faced Flirting",
+  "fact": "A male mourning cuttlefish can court a female and fool a rival at the same time. He shows pulsating male stripes on the side facing her and mottled female colors on the side facing the rival, which keeps him from disrupting the courtship. He usually saves this trick for when just one female and one male can see him.",
+  "photo": "/assets/facts/cuttlefish-two-faced.jpg",
+  "publisher": "The Royal Society",
+  "url": "https://royalsociety.org/news/2012/cheating-courting-cuttlefish",
+  "quote": "Culum Brown and his team at Macquarie University, Sydney, observed male cuttlefish deceiving rival males by displaying male courtship patterns to receptive females on one side of their bodies, and simultaneously displaying female patterns to rival males on the other, thus preventing the rivals from disrupting courtship. ... The Mourning cuttlefish (Sepia plangon) in the study are found along the east coast of Australia. Males generally exhibit a pattern of pulsating stripes, whereas females have mottled coloration. During the observed courtship behaviour, the males coloured themselves distinctly half and half. ... this is usually when he can only be seen by one female and one male, making dual-camouflage a lot easier.",
+  "status": "confirmed",
+  "note": "Press release for Brown, Garwood and Williamson, Biology Letters 2012. The 39% figure was cut as ambiguous."
+ },
+ {
+  "animal": "Giant Manta Ray",
+  "rejected": "It breaches clear of the water, and nobody is certain why.",
+  "reason": "Only a 2021 CNN story quoting the Marine Megafauna Foundation, reachable through reposts; not used."
+ },
+ {
+  "animal": "Giant Manta Ray",
+  "rejected": "Every manta has a unique belly spot pattern.",
+  "reason": "NOAA says 'distinct', not 'unique'; some giant mantas are almost all black."
+ },
+ {
+  "animal": "Leafy Sea Dragon",
+  "rejected": "Unlike seahorses it cannot grip with its tail, so a storm can carry one a long way.",
+  "reason": "Tail half sourced (Aquarium of the Pacific: 'a tail that cannot be coiled'); the storm sources are about weedy sea dragons, not leafies."
+ },
+ {
+  "animal": "Leafy Sea Dragon",
+  "rejected": "The male carries around 250 bright pink eggs.",
+  "reason": "Source gives 250 to 300; no source gives the color."
+ },
+ {
+  "animal": "Leafy Sea Dragon",
+  "rejected": "Its camouflage is so effective that it is often found only when it moves.",
+  "reason": "Not researched; overlaps card 181."
+ },
+ {
+  "animal": "Humpback Whale",
+  "rejected": "Only males sing, and nobody is certain what the song is for.",
+  "reason": "Not researched; overlaps card 87."
+ },
+ {
+  "animal": "Humpback Whale",
+  "rejected": "Bubble-net feeding is learned, and different groups do it differently.",
+  "reason": "Bubble-net feeding confirmed by NOAA; dropped because the lobtail card covers it."
+ },
+ {
+  "animal": "Shark",
+  "rejected": "The number of people killed by sharks each year is consistently in the single digits worldwide.",
+  "reason": "Not researched; a spare."
+ },
+ {
+  "animal": "Shark",
+  "rejected": "Greenland sharks are estimated to live for centuries.",
+  "reason": "Kept as a card: at least 272 years; largest 392 plus or minus 120."
+ },
+ {
+  "animal": "Mantis Shrimp",
+  "rejected": "The water beside the club vaporizes.",
+  "reason": "It forms cavitation bubbles; the card uses the paper's wording."
+ },
+ {
+  "animal": "Mantis Shrimp",
+  "rejected": "It is the only animal known to detect circularly polarized light.",
+  "reason": "Not researched; overlaps card 12."
+ },
+ {
+  "animal": "Mantis Shrimp",
+  "rejected": "The 2014 work that overturned the color claim.",
+  "reason": "Not researched."
+ },
+ {
+  "animal": "Cuttlefish",
+  "rejected": "The cuttlebone is a gas-filled internal shell it floods and empties to sink and rise.",
+  "reason": "Not researched; a spare."
+ },
+ {
+  "animal": "Cuttlefish",
+  "rejected": "It has eight arms and two longer feeding tentacles.",
+  "reason": "Not researched; a spare."
+ }
+]
