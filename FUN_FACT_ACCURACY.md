@@ -11,30 +11,45 @@ Two sets were checked:
 - **Article fun fact boxes (697):** every `<FunFact>` callout across 675
   articles in `content/`.
 
-Each finding was backed by a source the checker fetched or saw quoted in a
+The first pass ran out of search budget, so a second pass went back over every
+claim it could not confirm and every box it did not finish (56 items). Findings
+from that second pass are marked *(recheck)*. Every box has now been checked.
+
+Each finding is backed by a source the checker fetched or saw quoted in a
 search result. Severity:
 
 - **wrong:** a credible source contradicts it.
-- **outdated:** it was true, newer data differs.
+- **outdated:** it was true, newer data or a newer law differs.
 - **overstated:** the core is right, but a superlative, number or certainty goes
   past the source.
-- **unverified:** a specific claim the checker searched for and could not
-  confirm on any credible page. Not proof it is wrong.
+- **unverified:** searched for twice and still not confirmed on any credible
+  page. Not proof it is wrong, but it has nothing behind it.
 
 Suggested fixes are a starting point, not final copy. Recheck each against its
-source before applying it, and read the box in its article first.
+source before applying it, and read the box in its article first. Line numbers
+were taken on 2026-10-22 and can drift as files change.
 
-**68 findings:** 23 wrong, 3 outdated, 23 overstated, 19 unverified. 37 boxes with checkable claims were not finished because the search budget ran out; they are listed at the end.
+**108 findings:** 34 wrong, 4 outdated, 51 overstated, 19 unverified. 77 more claims were confirmed on recheck and are listed at the end.
 
-## Guide fun facts (16)
+## Guide fun facts (23)
 
-### Wrong (4)
+### Wrong (6)
 
+- `src/lib/data/guides/amphibians.js:261` *(recheck)*
+  - **Says:** They are also among the most cold-tolerant amphibians on the continent, naturally overwintering underground in frozen soil across much of the US and Canada.
+  - **Problem:** Tiger salamanders do not overwinter in frozen soil. They avoid freezing by using burrows, often small mammal tunnels, that reach below the frost line. Ambystoma salamanders are not among the freeze-tolerant amphibians (wood frog, chorus frogs, gray treefrogs).
+  - **Source:** "tiger salamanders often find suitable conditions in small mammal burrows, such as those of northern pocket gophers, where they can get below the frost line" (https://www.ab-conservation.com/avamp/publications/elusive-terrestrial-tigers-in-the-underground-scene)
+  - **Suggested fix:** They range far into the north, getting through the winter in burrows deep enough to sit below the frost line, often borrowed from pocket gophers and other small mammals.
 - `src/lib/data/guides/birds.js:662`
   - **Says:** The quaker is the only parrot that does not nest in a tree cavity.
   - **Problem:** Other parrots do not use tree cavities either: the burrowing parrot digs its nests in cliffs, in colonies of tens of thousands of burrows. What is unique to the quaker (shared only with its close relative the cliff parakeet) is building a stick nest.
   - **Source:** "the colony extended along 9 km of a sandstone cliff facing the Altantic Ocean, in the province of Río Negro, Patagonia, Argentina, and contained 51412 burrows, an estimated 37527 of which were active." (https://sedici.unlp.edu.ar/bitstream/handle/10915/127056/Documento_completo.pdf-PDFA.pdf?sequence=1)
   - **Suggested fix:** The quaker is the only common pet parrot that builds its own nest instead of using a cavity.
+- `src/lib/data/guides/dogs.js:132` *(recheck)*
+  - **Says:** Studies show they tend to score higher on trainability assessments
+  - **Problem:** The main study of size and behavior (McGreevy et al. 2013, 8,301 dogs, 49 breeds, C-BARQ) found trainability rises with breed height, so taller breeds scored higher, not medium ones. No study found shows a medium-size peak. The 'bred for working roles' explanation is unsupported.
+  - **Source:** "Apart from trainability, all regression coefficients with height were negative indicating that, across the breeds, behavior becomes more problematic as height decreases." (https://doi.org/10.1371/journal.pone.0080529)
+  - **Suggested fix:** A 2013 study of more than 8,000 dogs found owners of taller breeds rated them as more trainable, and owners of shorter breeds reported more behavior problems.
 - `src/lib/data/guides/smallMammals.js:391`
   - **Says:** also called the 'dooking.' Dooking means your ferret is having the time of their life!
   - **Problem:** Dooking is the soft clucking sound ferrets make, not another name for the war dance. The two often happen together.
@@ -59,13 +74,23 @@ source before applying it, and read the box in its article first.
   - **Source:** "In the largest DNA-based study of domestic cats to date, 11,036 individuals (10,419 pedigreed cats and 617 non-pedigreed cats) were genotyped" (https://pmc.ncbi.nlm.nih.gov/articles/PMC9202916/)
   - **Suggested fix:** In a 2008 genetic survey of 22 cat breeds its observed heterozygosity measured 0.57
 
-### Overstated (8)
+### Overstated (11)
 
+- `src/lib/data/guides/cats.js:14` *(recheck)*
+  - **Says:** Cats spend approximately 30 to 50% of their waking hours grooming themselves.
+  - **Problem:** The 30 to 50% range appears only on pet sites. A peer-reviewed feline study puts it at about 25 to 30% of their time, with some cats reaching one third of waking time.
+  - **Source:** "A cat can spend approximately 25–30% of its time grooming. ... Some cats have been observed to spend up to one-third of their time awake grooming" (https://pmc.ncbi.nlm.nih.gov/articles/PMC10814636)
+  - **Suggested fix:** Cats spend roughly a quarter of their time grooming, and some spend up to a third of their waking hours at it.
 - `src/lib/data/guides/cats.js:131`
   - **Says:** 17.24 percent among 2,230 Bengals tested across the US and UK, a rate beaten only by the Singapura at 41.4 percent
   - **Problem:** The 2,230 Bengals at 17.24 percent are samples submitted specifically for PK testing (the paper's 'biased' set), and the Singapura's 41.4 percent is the UK subset only; the Singapura's overall figure in the same table is 32.7 percent.
   - **Source:** "Bengal Total 2230 1510 671 39 0.1724 ... Singapura (UK) 168 60 77 31 0.414 ... Singapura Total 318 148 132 38 0.327" (https://pmc.ncbi.nlm.nih.gov/articles/PMC3534511/)
   - **Suggested fix:** 17.24 percent among 2,230 Bengals submitted for PK testing in the US and UK, a rate beaten only by the Singapura at 32.7 percent (41.4 percent in UK samples)
+- `src/lib/data/guides/dogs.js:247` *(recheck)*
+  - **Says:** Dogs carry roughly 800 to 1,200 functional olfactory receptor genes
+  - **Problem:** A 2025 genome study of 643 dogs and wolves counts 779 to 807 functional olfactory receptor genes per animal. The 1,100 to 1,200 figures are older totals that include pseudogenes, so the upper end does not apply to functional genes.
+  - **Source:** "The number of functional OR genes varied substantially among individuals (779 to 807)." (https://pmc.ncbi.nlm.nih.gov/articles/PMC12703715/)
+  - **Suggested fix:** Dogs carry roughly 800 functional olfactory receptor genes, about twice as many as people
 - `src/lib/data/guides/dogs.js:422`
   - **Says:** They come from an FGF4 retrogene, a copied gene that reinserted itself on chromosome 12, and it sits at a frequency of about 0.99 in the breed.
   - **Problem:** Dachshunds carry two FGF4 retrogenes, on chromosomes 18 and 12, both at about 0.99 frequency. The chromosome 18 copy was the first one shown to cause the Dachshund's short legs; the chromosome 12 copy is the one tied to disc disease (odds ratio 51.23).
@@ -96,39 +121,64 @@ source before applying it, and read the box in its article first.
   - **Problem:** The describing paper calls it the first true millipede with more than 1,000 legs, not the only one that can ever exist.
   - **Source:** "the first true millipede with more than 1000 legs" (https://pmc.ncbi.nlm.nih.gov/articles/PMC8677783/)
   - **Suggested fix:** making it the first known true millipede
+- `src/lib/data/guides/invertebrates.js:482` *(recheck)*
+  - **Says:** In the wild, land hermit crabs can live 20 to 30+ years
+  - **Problem:** Animal Diversity Web (University of Michigan) gives a wild range of 25 to 30 years for one species, Coenobita perlatus, and Vogt's 2019 longevity review lists it at 30 years from that entry. Nothing credible supports more than 30 years in the wild; the 42 and 45 year crabs were captive pets.
+  - **Source:** "Coenobita perlatus can live up to 25-30 years in the wild, but once in captivity they typically live from 1-4 years." (https://animaldiversity.org/accounts/Coenobita_perlatus/)
+  - **Suggested fix:** In the wild, some land hermit crabs are thought to live 25 to 30 years
 - `src/lib/data/guides/smallMammals.js:899`
   - **Says:** Rabbits can jump up to 4 feet high
   - **Problem:** The Guinness record for a rabbit high jump is 99.5 cm (39.2 in), just over 3 feet.
   - **Source:** "The world record for the highest rabbit jump is 99.5 cm (39.2 in) and was achieved by Mimrelunds Tösen." (https://www.guinnessworldrecords.com/world-records/highest-jump-by-a-rabbit)
   - **Suggested fix:** Rabbits can jump more than 3 feet high (the record is 39.2 inches)
 
-### Unverified (3)
+### Unverified (5)
 
-- `src/lib/data/guides/cats.js:288`
-  - **Says:** submissions to the UK lab that runs it went from 29 percent positive in 2005 to 10 percent in 2009
-  - **Problem:** Langford's own PKD page confirms the test began in April 2005 and that the positive rate declined, but gives the trend only as a graph with no stated figures. Searches for the 29 percent and 10 percent values (Langford, GCCF, VIN, Royal Canin pages) found no page stating them.
-  - **Source:** "The following graph shows the percentage of PKD Affected cats detected by the Molecular Diagnostic Unit between 2005 and 2018. This clearly shows a decline in the percentage of cats testing positive for the AD-PKD genetic mutation" (https://langfordvets.co.uk/media/bunbx0in/polycystic-kidney-disease.pdf)
-  - **Suggested fix:** the share of cats testing positive at the UK lab that runs it fell steadily after the test launched in 2005
-- `src/lib/data/guides/dogs.js:705`
+- `src/lib/data/guides/cats.js:14` *(recheck)*
+  - **Says:** stimulates circulation
+  - **Problem:** Only pet-care sites make this claim; no veterinary or peer-reviewed source found. Queries: cat grooming circulation veterinary, Cornell feline grooming functions.
+  - **Source:** "One source says grooming supports good circulation (pet-care site only)" (https://resources.pangovet.com/pet-behavior/cats/why-do-cats-groom-and-lick-themselves-so-much)
+  - **Suggested fix:** cut
+- `src/lib/data/guides/dogs.js:247` *(recheck)*
+  - **Says:** which is why a 20 minute scent game tires one out more thoroughly than a 20 minute jog
+  - **Problem:** No study compares fatigue from scent work with fatigue from running. The research on nosework covers mood (Duranton and Horowitz 2019) and executive function, not tiredness. Queries: nosework fatigue vs physical exercise study, sniffing heart rate fatigue dogs.
+  - **Source:** "Fitness scores did not differ between groups (nose work/non-nose work) in dogs or in people (2025 pilot; no fatigue comparison)" (https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12896905/)
+  - **Suggested fix:** which is why a scent game suits a Beagle better than a jog does
+- `src/lib/data/guides/dogs.js:705` *(recheck)*
   - **Says:** Rottweilers were among the first dogs used as guide dogs for the blind
-  - **Problem:** Searched for Rottweilers in early guide dog history; the credible histories found describe the first guide dog school (Germany, 1916) and German Shepherds as the early breed, with no mention of Rottweilers. The AKC and American Rottweiler Club pages could not be retrieved.
-  - **Source:** "The modern guide dog story started in Germany in 1916-1917, when dogs were trained to lead soldiers blinded in World War I." (https://www.unmc.edu/newsroom/2002/06/27/dogs-began-as-guides-during-world-war-i/)
-  - **Suggested fix:** cut, or replace with: Rottweilers have worked as police dogs, service dogs and guide dogs
-- `src/lib/data/guides/invertebrates.js:482`
-  - **Says:** In the wild, land hermit crabs can live 20 to 30+ years
-  - **Problem:** Searched for wild lifespan data on Coenobita; found no credible wild figure. The long lifespans on record come from captive crabs, including one kept more than 42 years.
-  - **Source:** "the oldest decapod aged with a direct method is a hermit crab that was reared in captivity for more than 42 years" (https://www.scielo.br/j/nau/a/Cf6qbGDR4hJ9TgXMTjCwgvt/?lang=en)
-  - **Suggested fix:** Well-kept land hermit crabs have lived 20 to 30+ years in captivity, and one passed 40
+  - **Problem:** Only pet-company and breed-marketing pages (Purina, iHeartDogs) say this, with no dates or sources. The American Rottweiler Club history lists police, military, search and rescue, and service and therapy work but says nothing about early guide dogs. The AKC article lists guide dogs only as one modern job. Early guide-dog histories (the Oldenburg school of 1916, The Seeing Eye) name Collies and German Shepherds. Queries: 'Rottweiler history guide dogs first breeds used blind AKC'; 'American Rottweiler Club breed history guide dog blind search and rescue Oklahoma City World Trade Center'; 'Rottweiler earliest guide dog breeds Oldenburg 1916 German guide dog school breeds used shepherd'; plus direct reads of the AKC and ARC pages.
+  - **Source:** "They adapted to new roles, serving as: Police and Military Dogs ... Search and Rescue Dogs ... Service and Therapy Dogs ... Family Protectors (American Rottweiler Club history, no mention of early guide work)" (https://www.amrottclub.org/about-the-rottweiler/history)
+  - **Suggested fix:** Rottweilers have also worked as guide dogs for the blind
+- `src/lib/data/guides/dogs.js:705` *(recheck)*
+  - **Says:** Rottweilers were among the first dogs used as guide dogs for the blind
+  - **Problem:** Histories of the first guide dog programs (Germany 1916 to 1917, Eustis in Switzerland, The Seeing Eye) name German Shepherds; none names Rottweilers. Only pet-food and breed-blog pages make the claim. Queries: Rottweiler early guide dogs history, Seeing Eye early breeds Rottweiler, AKC Rottweiler history (no mention).
+  - **Source:** "The history of The Seeing Eye began in Europe in the 1920s when Dorothy Harrison Eustis moved to Vevey, Switzerland ... to set up a breeding and training facility for German shepherds." (https://www.seeingeye.org/about-us/history.html)
+  - **Suggested fix:** cut
+- `src/lib/data/guides/dogs.js:705` *(recheck)*
+  - **Says:** and the World Trade Center disaster sites
+  - **Problem:** The 9/11 Memorial and AKC accounts of Ground Zero search dogs name German Shepherds, Labradors, Golden Retrievers, a Belgian Malinois and a Rat Terrier, but no Rottweiler. Queries: Rottweiler search dog World Trade Center, Rottweiler Ground Zero handler.
+  - **Source:** "more than 300 specialized canine search and rescue (SAR) teams responded (no Rottweiler named among the dogs profiled)" (https://911memorial.org/connect/blog/rescue-recovery-20-four-legged-heroes)
+  - **Suggested fix:** Despite the guarding reputation, a Rottweiler named Gator found the last survivor in the rubble of the 1995 Oklahoma City bombing.
 
-## Article fun fact boxes (52)
+## Article fun fact boxes (85)
 
-### Wrong (19)
+### Wrong (28)
 
 - `content/guides/amano-shrimp-cost-guide.mdx:69`
   - **Says:** resting on a species that still can't be farmed commercially
   - **Problem:** Amano shrimp are now bred at scale on commercial farms, mainly in Taiwan, alongside seasonal wild collection. Larval rearing is hard and costly, which keeps the price up, but commercial breeding does happen. Note: both sources are trade wholesalers, the only kind found that address supply.
   - **Source:** "bred in huge numbers on commercial farms" (https://www.qualitymarine.com/news/japanese-algae-eating-shrimp-caridina-multidentata/)
   - **Suggested fix:** resting on a species whose saltwater larvae are hard and costly to raise, even on the commercial farms that now breed it
+- `content/guides/american-alligator-legal-guide.mdx:130` *(recheck)*
+  - **Says:** The state with the most alligators and the state with the fewest answer the question in opposite directions
+  - **Problem:** Texas does not have the most alligators. A 2023 Louisiana House resolution puts Louisiana at over two million wild alligators and Florida at about 1.3 million; Texas is usually ranked third. (The paragraph sits at line 131 in the current file.)
+  - **Source:** "today Louisiana has an estimated population of over two million wild alligators and another one million farm-raised alligators; and WHEREAS, by comparison, Florida has an estimated population of one million three" (https://legis.la.gov/legis/ViewDocument.aspx?d=1328063)
+  - **Suggested fix:** A state with hundreds of thousands of wild alligators and a state with none answer the question in opposite directions
+- `content/guides/aquarium-stocking-and-tankmates-guide.mdx:108` *(recheck)*
+  - **Says:** In the group-size study, the loneliest fish were not the worst off.
+  - **Problem:** The study's lead scientist grouped single fish with pairs as the most aggressive. Nothing in the study or its press coverage says lone fish fared better than pairs.
+  - **Source:** "fish kept alone or in pairs show higher levels of aggression than those kept in groups of ten or more" (https://www.sciencedaily.com/releases/2009/06/090629100649.htm)
+  - **Suggested fix:** cut
 - `content/guides/bearded-dragon-tank-setup-guide.mdx:95`
   - **Says:** A bearded dragon's basking spot at a UVI of 4.0-4.5 is roughly equivalent to the UV intensity of full, direct desert sun
   - **Problem:** Full midday sun in the Australian summer reaches UVI 11 or more, more than double 4.5. A UVI of 4 to 4.5 matches the moderate exposure bearded dragons take while basking (Ferguson zone 3 to 4, about 2.9 to 7.4), not full desert sun.
@@ -139,6 +189,11 @@ source before applying it, and read the box in its article first.
   - **Problem:** Agency sources give clutches of roughly one to eight eggs, and a female can lay more than one clutch a season, so 'three or four a year' understates it and states a fixed number that does not exist.
   - **Source:** "A clutch is usually 2–8 eggs, which hatch in about 3 months. ... There may be multiple clutches each season." (https://mdc.mo.gov/discover-nature/field-guide/three-toed-box-turtle)
   - **Suggested fix:** lay small clutches, usually just a handful of eggs
+- `content/guides/box-turtle-legal-guide.mdx:125` *(recheck)*
+  - **Says:** Wildlife agencies describe this as a species where "removing even a few adult turtles can destabilize a local population for decades,"
+  - **Problem:** No agency page uses these words; an exact-phrase search finds nothing, so the quotation marks put invented words in an agency's mouth. South Carolina DNR's state herpetologist makes the same point in a real, quotable line.
+  - **Source:** "the removal of even a single adult can initiate the downward trajectory of an otherwise healthy population" (https://www.riverbanks.org/media-center/releases-2023/0727)
+  - **Suggested fix:** South Carolina's state herpetologist puts it plainly: "the removal of even a single adult can initiate the downward trajectory of an otherwise healthy population."
 - `content/guides/cherry-shrimp-health-issues-guide.mdx:78`
   - **Says:** with copper's 96-hour lethal concentration measured at roughly one-tenth the level of the next most toxic metal
   - **Problem:** The paper's 96-h LC50 for copper is 0.0313 mg/L and for cadmium, the next most toxic, 0.0539 mg/L. Copper's value is a little over half of cadmium's, not one-tenth.
@@ -159,6 +214,11 @@ source before applying it, and read the box in its article first.
   - **Problem:** The study reports the earliest self-directed mirror behavior at 7 months, not 5.5 months. The 12 to 15 month figure for children is correct.
   - **Source:** "One dolphin first showed self-directed behavior indicative of mirror self-recognition at 7 months of age" (https://phys.org/news/2018-01-dolphins-humans-chimps-early-self-awareness.html)
   - **Suggested fix:** One showed self-directed behavior at a mirror at 7 months old.
+- `content/guides/dog-enrichment-guide.mdx:77` *(recheck)*
+  - **Says:** Both groups got twenty minutes of activity with a person.
+  - **Problem:** The full paper describes two group classes plus one daily home session of about five minutes for two weeks, with the control procedure matched for time with the owner. There is no twenty-minute figure; 'twenty' is the number of dogs.
+  - **Source:** "During two consecutive weeks, owners engaged in one daily session of nosework with their dogs ... three consecutive times maximum (approximatively five minutes)." (https://www.ethodog.fr/wp-content/uploads/2020/06/Let-me-sniff-FINAL.pdf)
+  - **Suggested fix:** Both groups got the same time with their owners: two group classes, then a short daily session at home, about five minutes, for two weeks.
 - `content/guides/dung-beetles-navigate-by-the-milky-way.mdx:55`
   - **Says:** The wombat cube study won the same prize six years later.
   - **Problem:** The dung beetle work won the 2013 Joint Prize in Biology and Astronomy, but the wombat study won the 2019 Physics Prize. It was an Ig Nobel, but not the same prize.
@@ -184,6 +244,16 @@ source before applying it, and read the box in its article first.
   - **Problem:** The study covered 16,605 hamsters, and the disorder and mortality analysis used a random sample of 3,998. The number 4,504 does not appear in the paper. The 7.33% and 6.27% figures check out.
   - **Source:** "The EPRs of a random sample of 3998/16,605 (24.08%) hamsters were manually examined" (https://pmc.ncbi.nlm.nih.gov/articles/PMC9796486/)
   - **Suggested fix:** O'Neill and colleagues reviewed the records of a random sample of 3,998 pet hamsters under UK veterinary care
+- `content/guides/hedgehog-legal-guide.mdx:78` *(recheck)*
+  - **Says:** Chapter 169 regulates wild animals and a defined set of harmful ones, and a hedgehog is neither
+  - **Problem:** Under Wis. Stat. 169.01(37) a hedgehog is a wild animal (an animal of a wild nature, not domestic), so it is a nonnative wild animal. The reason no license is needed is the 169.04(4)(b) exemption for nonnative wild animals that are not harmful, and NR 16.11 does not list hedgehogs as harmful. The conclusion (no permit) is right; the reasoning is not.
+  - **Source:** ""Wild animal" means any animal of a wild nature that is normally found in the wild and that is not a domestic animal." (https://docs.legis.wisconsin.gov/statutes/statutes/169/01)
+  - **Suggested fix:** Wisconsin does not reach them either: Chapter 169 exempts nonnative wild animals from its licenses unless they are designated harmful, and the hedgehog is not on the harmful list.
+- `content/guides/immortal-jellyfish-turritopsis-dohrnii-explained.mdx:50` *(recheck)*
+  - **Says:** Maria Pia Miglietta, one of the researchers who has spent the most time on this animal, put the scale of it simply: "This is equivalent to a butterfly that goes back to a caterpillar."
+  - **Problem:** The quote is misattributed and its wording is invented. The Scientist, which the article cites, gives the butterfly comparison to Stefano Piraino, in different words; none of its Miglietta quotes uses the image.
+  - **Source:** "Piraino said it "might be comparable to a butterfly that would be able to revert to the caterpillar stage."" (https://www.the-scientist.com/an-immortal-jellyfish-offers-clues-into-biological-aging-73346)
+  - **Suggested fix:** Stefano Piraino, who led the 1996 study, put the scale of it simply: the process "might be comparable to a butterfly that would be able to revert to the caterpillar stage."
 - `content/guides/kingsnake-legal-guide.mdx:82`
   - **Says:** its unprotected-reptile category, NAC 503.090, specifically singles out California kingsnakes that lack a continuous banded or ringed pattern from head to vent as the unprotected form
   - **Problem:** NAC 503.090 is the open and closed seasons rule and says nothing about kingsnakes. The pattern-based kingsnake entry sits in NAC 503.140, the list of species that may be possessed without a Department permit or license, not in a reptile protection category.
@@ -204,6 +274,11 @@ source before applying it, and read the box in its article first.
   - **Problem:** The two numbers contradict each other: an enclosure only three body lengths tall cannot hold a drop of four body lengths below the perch. The care source the article cites sets four body lengths of drop as the minimum, so the enclosure must be taller than that.
   - **Source:** "the distance from the top of the branch to the floor must be at least four times the length of the insect." (https://www.amentsoc.org/insects/caresheets/praying-mantids.html)
   - **Suggested fix:** A mantis needs at least four times its own body length in clear drop from the top of its perch to the floor, so the enclosure has to stand taller than that
+- `content/guides/reticulated-python-legal-guide.mdx:106` *(recheck)*
+  - **Says:** Two states have the species on their books under a name science has retired, and two more under a spelling that was never right.
+  - **Problem:** The counts do not match the box or the rules. The box itself names three states using the retired genus Python (New York, Texas, Florida), and Montana's ARM 12.6.2215(6)(o) also prohibits 'Reticulated python - Python reticulatus'. Only one misspelling (Connecticut's 'reticulates') is identified.
+  - **Source:** "(n) Red-eared slider - Trachemys scripta elegans; and (o) Reticulated python - Python reticulatus." (https://www.animallaw.info/administrative/mt-exotic-pets-sub-chapter-22-exotic-wildlife)
+  - **Suggested fix:** Several states still list the species under a genus science has retired, and one spells it wrong.
 - `content/guides/savannah-monitor-legal-guide.mdx:84`
   - **Says:** Every species in the genus *Varanus* is on CITES Appendix II, and has been since 1975.
   - **Problem:** Five monitor species are on Appendix I, not Appendix II: the Bengal, yellow, desert and clouded monitors and the Komodo dragon. The rest of the genus is covered by the Appendix II "Varanus spp." listing.
@@ -219,21 +294,36 @@ source before applying it, and read the box in its article first.
   - **Problem:** The to-kay call is the male's territorial and mating call, not a defensive display. The bioacoustics study lists a separate bark of intimidation for defense.
   - **Source:** "The "long sequence" is considered to be a territorial proclamation which also functions as a mating-call." (https://bioacoustics.info/article/acoustic-signals-nocturnal-lizard-gekko-gecko-analysis-long-complex-sequence)
   - **Suggested fix:** the loud, distinctive "to-KAY" call males use to claim territory and attract mates
+- `content/guides/tortoise-soaking-guide.mdx:115` *(recheck)*
+  - **Says:** A tortoise drinks with both ends. The cloaca takes up water during a soak
+  - **Problem:** A board-certified reptile veterinarian (Douglas Mader) calls cloacal drinking an old wives' tale; a study he supervised soaked six red-footed tortoises for 30 minutes and found no rehydration, only weight loss from urinating. Some turtles exchange electrolytes across the cloaca, which is not drinking.
+  - **Source:** "There is an old wives' tale that a herp will suck fluid up through its cloaca. ... I have seen no proof that herps in general are able to absorb enough water through their cloacas to replace fluid deficits." (https://reptilesmagazine.com/?p=8674)
+  - **Suggested fix:** A soak is a chance to drink, not a drink in itself. Watch for the head going down: a tortoise that never drinks during a soak has not rehydrated, even if it passes urine.
+- `content/guides/whites-tree-frog-tank-setup-guide.mdx:82` *(recheck)*
+  - **Says:** the bulb gets replaced every 6 to 8 months on a schedule
+  - **Problem:** Baines et al. 2016 tested Arcadia and ZooMed tubes over 4,000 hours and concluded some brands need no replacement for at least a year. Both makers' T5 HO guidance is 12 months.
+  - **Source:** "These results suggest that some brands may not need replacement for at least one year." (https://jzar.org/jzar/article/download/150/89)
+  - **Suggested fix:** the bulb gets replaced on a schedule, about every 12 months for a quality T5 tube, or sooner if a UV meter shows a drop
 
-### Outdated (2)
+### Outdated (3)
 
 - `content/guides/amphibian-quarantine-and-water-guide.mdx:102`
   - **Says:** Bd's host range crossing 200 documented amphibian species, per the USGS
   - **Problem:** The USGS Bsal page does say Bd affects more than 200 species, but that figure is stale. A 2019 global study in Science tied chytrid to declines in more than 500 species, 90 of them presumed extinct.
   - **Source:** "has caused dramatic population declines in more than 500 amphibian species" (https://cmns.umd.edu/news-events/news/fungal-disease-threatens-hundreds-amphibian-species-worldwide)
   - **Suggested fix:** Bd's link to declines in more than 500 amphibian species, per a 2019 global study in Science,
+- `content/guides/platy-health-issues-guide.mdx:85` *(recheck)*
+  - **Says:** Xiphophorus fish have been used in melanoma research for over 70 years
+  - **Problem:** The model dates to Gordon, Häussler and Kosswig in 1927 and 1928, so it is now almost a century old. 'Over 70 years' is technically true but stale and undersells it.
+  - **Source:** "Almost a century ago, it was discovered that certain platyfish and swordtail hybrids, which belong to different Xiphophorus species, develop highly malignant melanoma (Gordon, 1931; Häussler, 1928; Kosswig, 1928)." (https://doi.org/10.1242/dmm.050382)
+  - **Suggested fix:** Xiphophorus fish have been used in melanoma research for nearly 100 years
 - `content/guides/why-your-dog-needs-daily-exercise.mdx:27`
   - **Says:** over 56% of dogs in the United States are classified as overweight or obese
   - **Problem:** The 56% figure comes from APOP's 2018 survey. Its 2022 survey found 59% of dogs overweight or obese.
   - **Source:** "in 2022, 59% of dogs and 61% of cats were classified as overweight or having obesity." (https://www.petobesityprevention.org/articlesandnews/new-survey-reveals-alarming-rates-of-pet-obesity-in-the-us)
   - **Suggested fix:** 59% of dogs in the United States were classified as overweight or obese in its 2022 survey
 
-### Overstated (15)
+### Overstated (40)
 
 - `content/guides/angelfish-cost-guide.mdx:68`
   - **Says:** commonly $150 to $1,500
@@ -245,21 +335,66 @@ source before applying it, and read the box in its article first.
   - **Problem:** The research that busts the three-second myth shows goldfish retaining learned tasks and feeding cues for months. Owner recognition lasting months is not what those studies tested.
   - **Source:** "goldfish can retain memories for at least three months." (https://www.discoverwildlife.com/animal-facts/fish/goldfish-memory)
   - **Suggested fix:** research showing goldfish can learn tasks and feeding routines and remember them for at least three months
+- `content/guides/blue-tongue-skink-cost-guide.mdx:86` *(recheck)*
+  - **Says:** documented living more than 32 years
+  - **Problem:** No credible source documents a 32 year blue-tongued skink. The Aquarium of the Pacific says some live more than thirty years, and AnAge's documented maximum for Tiliqua scincoides is 26.6 years in captivity.
+  - **Source:** "Blue-tongued skinks live approximately twenty years in human care, with some living to more than thirty years old." (https://aquariumofpacific.org/onlinelearningcenter/species/blue_tongued_skink)
+  - **Suggested fix:** known to live more than 30 years in human care
 - `content/guides/boa-constrictor-legal-guide.mdx:62`
   - **Says:** part of why the agency concluded a federal ban would do little beyond inconveniencing existing legal owners
   - **Problem:** FWS said widespread ownership and domestic breeding made import and interstate transport bans less effective. It did not say a ban would only inconvenience owners.
   - **Source:** "the circumstances surrounding the species, which include widespread private ownership and domestic breeding, ... render importation and interstate transport prohibitions less effective" (https://www.fws.gov/press-release/2015-03/service-lists-four-nonnative-large-constrictor-snakes-injurious-wildlife)
   - **Suggested fix:** part of why the agency concluded that import and interstate transport bans would be less effective for this species
+- `content/guides/box-turtle-handling-guide.mdx:64` *(recheck)*
+  - **Says:** a design very few other turtle species share
+  - **Problem:** Hinged plastrons are not rare. Mud turtles (Kinosternon) have a double-hinged plastron, and musk turtles and Blanding's turtles are hinged too. What sets box turtles apart is how tightly the shell shuts.
+  - **Source:** "The large double-hinged plastron (lower shell) is yellowish-brown with dark markings. (Eastern Mud Turtle)" (https://www.tn.gov/twra/wildlife/reptiles/turtle/eastern-mud-turtle.html)
+  - **Suggested fix:** and few other turtles shut their shells as tightly
+- `content/guides/california-kingsnake-enrichment-guide.mdx:75` *(recheck)*
+  - **Says:** The snakes chose the larger enclosure.
+  - **Problem:** The corn snakes preferred the large enclosure only while active; the preference did not show while they were resting.
+  - **Source:** "snakes showed a clear preference for the large enclosure whilst active, although this preference was not observed while resting" (https://czaw.org/?p=12473)
+  - **Suggested fix:** While active, the snakes chose the larger enclosure; at rest they showed no preference.
+- `content/guides/california-kingsnake-handling-guide.mdx:61` *(recheck)*
+  - **Says:** Research on serum from the kingsnake genus found meaningful resistance to rattlesnake venom specifically.
+  - **Problem:** The primary study (Philpot and Smith 1950, Tulane) found king snake serum protected mice against pit viper venom, and its strongest result was against water moccasin venom, with rattlesnake protection also shown. "Specifically" wrongly narrows it to rattlesnakes.
+  - **Source:** "King snake serum, detoxicated by heating, and in doses well below toxic levels protected white mice against as high as 7 LD50's of moccasin venom ... A protective action against rattlesnake venom was also demonstrated." (https://www.ebm-journal.org/journals/experimental-biology-and-medicine/articles/10.3181/00379727-74-17959/full)
+  - **Suggested fix:** Research on kingsnake serum found meaningful protection against pit viper venom, including rattlesnake and water moccasin venom.
+- `content/guides/cherry-amano-ghost-shrimp-overview.mdx:69` *(recheck)*
+  - **Says:** which is why almost every one sold is wild-caught rather than bred
+  - **Problem:** The NTU thesis calls wild-caught the major source, not nearly all, and captive-bred Amano shrimp are now sold (for example German farm-bred stock). No source gives a share near 100 percent.
+  - **Source:** "The major source of Amano shrimp Caridina multidentata ... is wild-caught." (https://tdr.lib.ntu.edu.tw/handle/123456789/42451?locale=en)
+  - **Suggested fix:** which is why most of those sold are wild-caught rather than bred
 - `content/guides/cherry-shrimp-cost-guide.mdx:100`
   - **Says:** In Europe, the agency notes established wild populations are currently limited to thermally polluted waterways
   - **Problem:** The screening says many European populations, not all, are confined to thermal or thermally polluted waters.
   - **Source:** "many of those in Europe are restricted to thermal or thermally polluted waters" (https://www.fws.gov/media/ecological-risk-screening-summary-cherry-shrimp-neocaridina-davidi-high-risk)
   - **Suggested fix:** In Europe, the agency notes many established wild populations are restricted to thermal or thermally polluted waters
+- `content/guides/cockatoo-enrichment-guide.mdx:73` *(recheck)*
+  - **Says:** van Zeeland and colleagues trace feather damaging behavior partly to inadequate environmental stimuli, early weaning and social isolation
+  - **Problem:** That exact trio comes from Costa et al. 2016 (PeerJ), who cite Garner et al. 2006, Schmid et al. 2006 and a 2013 van Zeeland feather scoring paper. The article's van Zeeland source is the 2009 review, whose full text could not be retrieved to confirm it lists the same three factors, so crediting van Zeeland alone goes past what was verified.
+  - **Source:** "these patterns may represent an exaggeration or expansion of normal behavior, resulting from inadequate environmental stimuli and/or early weaning and/or social isolation (Garner et al., 2006; Schmid, Doherr & Steiger, 2006; Van Zeeland et al., 2013)." (https://peerj.com/articles/2462/)
+  - **Suggested fix:** the parrot literature traces feather damaging behavior partly to inadequate environmental stimuli, early weaning and social isolation (Costa and colleagues, citing Garner, Schmid and van Zeeland)
+- `content/guides/cockatoo-enrichment-guide.mdx:73` *(recheck)*
+  - **Says:** Two of those three are decided before the bird ever reaches its owner.
+  - **Problem:** Only early weaning is clearly fixed before purchase. Inadequate environmental stimuli and social isolation, as the cited literature uses them, describe the bird's captive living conditions, which the owner controls. Schmid et al. 2006 does link rearing method to adult behavior, but that is one factor, not two.
+  - **Source:** "resulting from inadequate environmental stimuli and/or early weaning and/or social isolation" (https://peerj.com/articles/2462/)
+  - **Suggested fix:** Early weaning, at least, is decided before the bird ever reaches its owner.
 - `content/guides/cockatoo-legal-guide.mdx:92`
   - **Says:** Goffin's, the smallest cockatoo commonly kept
   - **Problem:** The cockatiel, which this same paragraph names, is a true cockatoo and the smallest one, and it is far more commonly kept than the Goffin's. The superlative only holds if cockatiels are excluded.
   - **Source:** ""The smallest species of cockatoo" is the cockatiel. ... recent molecular and biochemical studies have confirmed it is a true cockatoo" (https://www.guinnessworldrecords.com/world-records/447056-smallest-cockatoo)
   - **Suggested fix:** Goffin's, one of the smallest of the large cockatoos commonly kept
+- `content/guides/cougar-legal-guide.mdx:131` *(recheck)*
+  - **Says:** the Act bars possession of any cougar
+  - **Problem:** 16 U.S.C. 3371(h) defines prohibited wildlife species to include any cougar, and 3372(e) bars breeding or possessing one, but 3372(e)(2) carves out exemptions (licensed exhibitors, sanctuaries, universities, and registered pre-Act owners).
+  - **Source:** "The term "prohibited wildlife species" means any live species of lion, tiger, leopard, cheetah, jaguar, or cougar or any hybrid of such species." (https://www.law.cornell.edu/uscode/text/16/3371)
+  - **Suggested fix:** the Act bars private possession of any cougar outside its narrow exemptions
+- `content/guides/ferret-legal-guide.mdx:82` *(recheck)*
+  - **Says:** In June 2025 the Fish and Game Commission voted unanimously to accept Petition 2025-003
+  - **Problem:** Commission records confirm the ferret petition (tracked as 2025-03 and 2025-003) was referred to CDFW for evaluation at the June 11-12, 2025 meeting. The Commission's own word is "Referred", and the "unanimously" detail appears only in the petitioner's press releases; no official minutes confirming the vote count were found.
+  - **Source:** "2025-03  03/11/2025  Restricted species  Request to remove ferrets from the restricted species list  Referred  06/11-12/2025" (https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=225406&inline=)
+  - **Suggested fix:** In June 2025 the Fish and Game Commission referred Petition 2025-003, which asks the state to strike domestic ferrets from its restricted species list, to the Department of Fish and Wildlife for evaluation.
 - `content/guides/gargoyle-gecko-handling-guide.mdx:68`
   - **Says:** A 2024 genome study confirmed gargoyle geckos regenerate their tails while crested geckos have permanently lost that ability.
   - **Problem:** The 2024 study is a crested gecko genome assembly. It describes the crested gecko as non-regenerating and lists the gargoyle gecko among its regenerating relatives, but it did not test or confirm gargoyle regeneration.
@@ -275,11 +410,41 @@ source before applying it, and read the box in its article first.
   - **Problem:** In the paper, 'a mechanism unique to this species' describes the neck-vein blood pooling response. About the swallowing pump, the authors only say they know of no other animal where it has been described, and they hedge it as 'most likely'.
   - **Source:** "We are not aware that this mechanism has been described for any other animal." (https://pmc.ncbi.nlm.nih.gov/articles/PMC12012874/)
   - **Suggested fix:** The authors say they know of no other animal in which this has been described.
+- `content/guides/gray-squirrel-legal-guide.mdx:100` *(recheck)*
+  - **Says:** the only authorization is the game breeder's license in Chapter 44
+  - **Problem:** Chapter 44 does cover red and gray squirrels, but it is not the only authorization in the code. Wildlife rehabilitation permits (31 TAC ch. 69, subch. C) and scientific permits also authorize holding live wildlife. For a pet keeper, the game breeder's license is the route.
+  - **Source:** ""Game animal" means a pronghorn antelope, a collared peccary or javelina, or a red or gray squirrel." (https://statutes.capitol.texas.gov/Docs/PW/htm/PW.44.htm)
+  - **Suggested fix:** and the only authorization open to a pet keeper is the game breeder's license in Chapter 44
+- `content/guides/green-iguana-health-issues-guide.mdx:58` *(recheck)*
+  - **Says:** This single condition is both the most common health problem in the species
+  - **Problem:** Merck calls nutritional secondary hyperparathyroidism the most common bone disease in reptile practice, not the most common health problem of any kind in green iguanas.
+  - **Source:** "Secondary nutritional hyperparathyroidism is the most common bone disease encountered in reptile practice." (https://www.merckvetmanual.com/exotic-and-laboratory-animals/reptiles/nutritional-metabolic-and-endocrine-diseases-of-reptiles)
+  - **Suggested fix:** This single condition is one of the most common health problems in the species
+- `content/guides/hedgehog-legal-guide.mdx:78` *(recheck)*
+  - **Says:** New Jersey is the only genuine permit state in the country.
+  - **Problem:** New Jersey's permit list (N.J.A.C. 7:25-4.3) names only the European hedgehog, though it says "include, but are not limited to". A nationwide superlative was not verified, and Nebraska's closed import list names only Eurasian hedgehogs (Erinaceus spp.), not Atelerix, which complicates any clean state count.
+  - **Source:** "iv. European hedgehog - Erinaceus europeaus;" (https://www.nj.gov/dep/fgw/pdf/xotic_permreq.pdf)
+  - **Suggested fix:** New Jersey is the state that genuinely runs hedgehogs through a permit.
 - `content/guides/how-dangerous-are-sharks-really.mdx:42`
   - **Says:** The 2025 total of 65 unprovoked bites was actually **below** the recent 10-year average of 72. The nine deaths were above the 10-year average of six
   - **Problem:** The article's own cited source, the ISAF 2025 summary, does not use a 10-year average. It calls 65 bites in line with the five-year average of 61, which puts this year slightly above average rather than below it, and it calls nine unprovoked deaths in line with the five-year average of eight. The 72 and 6 figures come from press coverage, not from ISAF.
   - **Source:** "in line with the most recent five-year (2020-2024) average of 61 incidents annually ... in line with the most recent five-year annual global average of eight unprovoked fatalities per year" (https://www.floridamuseum.ufl.edu/shark-attacks/yearly-worldwide-summary/)
   - **Suggested fix:** The 2025 total of 65 unprovoked bites was in line with the recent five-year average of 61, and the nine unprovoked deaths were close to the five-year average of eight.
+- `content/guides/iguana-fireskink-quaker-overview.mdx:73` *(recheck)*
+  - **Says:** twenty-pound
+  - **Problem:** SeaWorld puts adults at 10 to 15 pounds and National Geographic gives an average of about 11 pounds. Twenty pounds is past typical adult weight.
+  - **Source:** "Weight 4.5-6.75 kg (10-15 lb.)" (https://seaworld.org/animals/facts/reptiles/green-iguana/)
+  - **Suggested fix:** fifteen-pound
+- `content/guides/leaftailedgecko-kingsnake-boxturtle-oscar-overview.mdx:84` *(recheck)*
+  - **Says:** Research on serum from the kingsnake genus found real, documented resistance to rattlesnake venom specifically
+  - **Problem:** Philpot and Smith 1950 tested serum from Florida and speckled kingsnakes mainly against cottonmouth venom, with rattlesnake venom as a second test. Resistance to rattlesnake venom is real, but it is not 'specifically' rattlesnake. The study also used eastern kingsnakes, not California kingsnakes.
+  - **Source:** "King snake serum, detoxicated by heating ... protected white mice against as high as 7 LD50's of moccasin venom ... A protective action against rattlesnake venom was also demonstrated." (https://www.ebm-journal.org/journals/experimental-biology-and-medicine/articles/10.3181/00379727-74-17959/full)
+  - **Suggested fix:** A 1950 study found that kingsnake serum protected mice against pit viper venom, both cottonmouth and rattlesnake
+- `content/guides/leaftailedgecko-kingsnake-boxturtle-oscar-overview.mdx:84` *(recheck)*
+  - **Says:** though it offers little to no protection against a coral snake's neurotoxin
+  - **Problem:** No serum study tested coral snake venom. A Gopher Tortoise Council fact sheet says kingsnakes do not appear to resist coral snake venom and that the reason is unclear, so the point is an observation, not a research finding.
+  - **Source:** "Kingsnakes, however, do not appear to have a resistance to coral snake venom, although the reason for this is unclear." (https://gophertortoisecouncil.org/pdf/GTC%20Kingsnakes%20Draft%20_032020.pdf)
+  - **Suggested fix:** though kingsnakes do not appear to share that resistance to coral snake venom
 - `content/guides/milk-snake-legal-guide.mdx:96`
   - **Says:** the one written for keepers covers captive-bred color variants acquired from a legal source ... in Wisconsin a milk snake that is not a captive-bred color morph is on its way out of private hands.
   - **Problem:** The adopted rule defines 'color variant' narrowly: albino, fully melanistic, piebald with 10% or more pure white, and for milk snakes patternless animals. Most pet-trade milk snake morphs fall outside that definition, so being a captive-bred morph is not enough.
@@ -290,6 +455,36 @@ source before applying it, and read the box in its article first.
   - **Problem:** The belly-pattern origin is one of several proposed explanations, alongside the snake's habit of living around corn cribs and fields. The Smithsonian's National Zoo presents it only as a possibility.
   - **Source:** "The name corn snake may have originated from the markings on this snake's belly, which resemble maize, or Indian corn." (https://nationalzoo.si.edu/animals/corn-snake)
   - **Suggested fix:** A corn snake's name most likely comes from its belly, a checkerboard pattern of black and white marks resembling kernels of maize, though some trace it to the snake's habit of hunting around corn cribs.
+- `content/guides/molly-handling-guide.mdx:66` *(recheck)*
+  - **Says:** Gestation runs roughly 4 to 6 weeks
+  - **Problem:** The Florida Museum gives about 3 to 4 weeks depending on temperature, and FishBase and a sailfin molly study give about 28 days. Six weeks is past the cited range.
+  - **Source:** "The gestation period for this species is approximately 3-4 weeks, depending upon temperature" (https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/sailfin-molly/)
+  - **Suggested fix:** Gestation runs roughly 3 to 4 weeks, depending on water temperature
+- `content/guides/mouse-handling-guide.mdx:68` *(recheck)*
+  - **Says:** Mice can jump roughly 13 inches straight up from a standstill
+  - **Problem:** UC IPM and NC State Extension say about 12 inches, and a USDA lab study (Pitt et al. 2011) measured a maximum of 25 cm, about 10 inches. The earlier pass also noted a standard 5-gallon bucket is about 14.5 inches tall, not 12, so the bucket premise needs rewording too.
+  - **Source:** "They will run horizontally along wire cables or ropes and can jump up to 12 inches from the floor onto a flat surface." (https://ipm.ucanr.edu/home-and-landscape/house-mouse/)
+  - **Suggested fix:** Mice can jump about 10 to 12 inches straight up
+- `content/guides/pet-monkey-legal-guide.mdx:138` *(recheck)*
+  - **Says:** Since every lemur in the country comes from captive stock
+  - **Problem:** The Duke Lemur Center says most pet lemurs sold in the US are bred in the US, not all lemurs in the country. Duke also reports lemur imports from Madagascar, rare but not zero.
+  - **Source:** "most pet lemurs that are sold in the U.S. are bred in the U.S." (https://lemur.duke.edu/about/position-statement-on-pet-lemurs/)
+  - **Suggested fix:** Since pet lemurs in the US come from captive-bred stock
+- `content/guides/platy-health-issues-guide.mdx:85` *(recheck)*
+  - **Says:** making them one of the oldest continuously studied animal models for any cancer, human or otherwise
+  - **Problem:** The 2024 review calls Xiphophorus one of the oldest animal systems for studying melanoma. It does not rank it against models for every cancer, and says nothing about continuous study.
+  - **Source:** "Xiphophorus is the one of the oldest animal systems for studying melanoma." (https://doi.org/10.1242/dmm.050382)
+  - **Suggested fix:** making them one of the oldest animal models in melanoma research
+- `content/guides/platy-health-issues-guide.mdx:85` *(recheck)*
+  - **Says:** an ordinary pet-store platy has essentially no risk of developing it under normal aquarium conditions
+  - **Problem:** The review the article cites says melanoma is rare in purebred fish but does occur, mostly in old males. It does not say pet-store platies carry essentially no risk, and many trade platies are hybrids.
+  - **Source:** "The occurrence of melanoma in Xiphophorus is not restricted to hybrids. Although rarely observed, melanoma can develop in purebred species (Fernandez and Morris, 2008; Kazianis and Borowsky, 1995; Schartl et al., 1995). Those tumors develop from the nevus-like spots and are almost exclusively seen in mature males of advanced age." (https://doi.org/10.1242/dmm.050382)
+  - **Suggested fix:** an ordinary pet-store platy rarely develops it, and when purebred fish do, it is almost always an older male
+- `content/guides/quaker-parakeet-enrichment-guide.mdx:72` *(recheck)*
+  - **Says:** which is the actual reason the species is banned in several states. The enrichment behavior and the legal restriction are the same behavior.
+  - **Problem:** State bans rest mainly on fears that the birds would become crop pests (California listed it as an agricultural pest in 1974). Power-line damage is one concern among several, not 'the actual reason'.
+  - **Source:** "Concerns arose that the feral birds "would eat U.S. agriculture out of house and home," ... a "prophesy that has failed to come true." ... Ownership rules "remained at the discretion of individual states."" (https://earthsky.org/earth/lifeform-of-the-week-the-mystery-of-the-monk-parakeets/)
+  - **Suggested fix:** which is one reason some states restrict them, alongside long-standing fears that escaped flocks would become crop pests.
 - `content/guides/rabbit-cost-guide.mdx:82`
   - **Says:** In some rabbit strains, 80% of unspayed females develop uterine cancer by 3 years of age.
   - **Problem:** Merck repeats this line, but the underlying colony data put rates near 80% in does aged 5 to 6, not 3; Greene's own 1941 colony study reported 16.7% of all females over 2. Other vet-school sources give up to 50% at 5 years or older.
@@ -300,138 +495,180 @@ source before applying it, and read the box in its article first.
   - **Problem:** Same figure as entry 14. The high rates in the research colonies came from does aged 5 to 6, and Greene's 1941 study found 16.7% of all females over 2. The risk climbs with age and does not reach 80% by 3.
   - **Source:** "an incidence of 16.7 per cent in the total female population over 2 years of age" (https://pmc.ncbi.nlm.nih.gov/articles/PMC2135129)
   - **Suggested fix:** That risk climbs steeply from middle age onward, well within a pet rabbit's normal lifespan.
+- `content/guides/snapping-turtle-legal-guide.mdx:101` *(recheck)*
+  - **Says:** the threatened species rule bars taking, possessing, transporting, importing, exporting or selling it altogether
+  - **Problem:** 65.171(b)(2) bars those acts, but it opens with 'Except as otherwise provided', and subsection (d) lets anyone possess or transport lawfully obtained live specimens, including ones acquired in another state, with documentation. So the bar is not total.
+  - **Source:** "(d) Any person may possess or transport lawfully obtained live, mounted, or preserved specimens of threatened or endangered species, including specimens acquired in another state, provided the person complies with the provisions of subsection (c)(1)-(3) of this section." (https://www.law.cornell.edu/regulations/texas/31-Tex-Admin-Code-SS-65-171)
+  - **Suggested fix:** the threatened species rule bars taking, possessing, transporting, importing, exporting or selling it, except for lawfully obtained specimens backed by an out-of-state permit, bill of sale or notarized affidavit
 - `content/guides/sulcata-tortoise-vs-russian-tortoise-guide.mdx:79`
   - **Says:** emerged from an egg smaller than a golf ball
   - **Problem:** Sulcata eggs measure 41 to 44 mm across, which is about the same size as a golf ball (42.7 mm), not smaller.
   - **Source:** "the white eggs are almost spherical (41-44 mm)" (https://turtles.linnaeus.naturalis.nl/linnaeus_ng/app/views/species/taxon.php?id=8156)
   - **Suggested fix:** emerged from an egg about the size of a golf ball
+- `content/guides/the-octopus-has-three-hearts-and-uses-all-of-them.mdx:101` *(recheck)*
+  - **Says:** though death usually comes 4 to 8 hours after exposure rather than immediately
+  - **Problem:** Divers Alert Network gives the 4 to 8 hour figure, but as a window: most deaths happen within the first 4 to 8 hours, and death can come as early as 20 minutes. The box reads it as death arriving at 4 to 8 hours. The two documented Australian deaths came about 90 minutes after the bite.
+  - **Source:** "Death may occur as early as 20 minutes or as late as 24 hours after exposure ... it usually occurs within the first 4 to 8 hours." (https://dan.org/health-medicine/health-resources/diseases-conditions/blue-ringed-octopus/)
+  - **Suggested fix:** though most deaths happen within the first 4 to 8 hours rather than instantly
+- `content/guides/two-toed-sloth-legal-guide.mdx:97` *(recheck)*
+  - **Says:** Maine runs the same split the other way, naming Hoffmann's and leaving Linnaeus's uncategorized
+  - **Problem:** Maine names Hoffmann's, but under 7.18 Category 1 Restricted, which needs a permit. So Maine does not clear it the way Montana clears Linnaeus's, and 'the same split the other way' misleads.
+  - **Source:** "Category 1 Restricted Species: The following species are listed as Category 1 Restricted species ... F. Mammalia (Mammals) (1) Callosciurus prevostii Prevost's Squirrel (2) Choloepus hoffmanni Hoffmann's Two-toed Sloth" (https://www.animallaw.info/administrative/me-exotic-pets-chapter-7-regulations-wildlife-captivity)
+  - **Suggested fix:** Maine names Hoffmann's, but only as a Category 1 Restricted species that needs a permit, and does not list Linnaeus's at all
 - `content/guides/veiled-chameleon-tank-setup-guide.mdx:90`
   - **Says:** It channels droplets down toward the mouth as an extra natural adaptation
   - **Problem:** Casque water channeling is a widely repeated hypothesis, but no study measuring it was found. A university herpetarium states it only as a belief.
   - **Source:** "It is believed in the wild that this collects dew at night and directs it to their mouths." (https://www.bgsu.edu/arts-and-sciences/biological-sciences/facilities-and-resources/bgsu-herpetarium/animals/reptiles/veiled-chameleon.html)
   - **Suggested fix:** The casque is believed to collect dew and direct it toward the mouth, on top of the drinking the chameleon does from misted leaves and branches.
+- `content/guides/whites-tree-frog-tank-setup-guide.mdx:82` *(recheck)*
+  - **Says:** A T5 UVB bulb can keep glowing visibly long after its actual UVB output has crashed
+  - **Problem:** UVB output does decay with use while the lamp still lights. But Baines et al. 2016 found quality T5 and T8 tubes lose only about 40% after a full year, so 'crashed' overstates it for most brands.
+  - **Source:** "UV-B output also decays with use, primarily due to solarisation of the glass envelope under UV bombardment ... At the end of 4000 hours the mean reduction in UVI, from new, was only 39.9% (range 30–48%)." (https://jzar.org/jzar/article/download/150/89)
+  - **Suggested fix:** A UVB bulb keeps glowing long after its UVB output has started to fade
 
-### Unverified (16)
+### Unverified (14)
 
-- `content/guides/ackie-monitor-handling-guide.mdx:60`
-  - **Says:** A wild ackie digs burrows as deep as about 1.3 feet. When it retreats into one, it inflates its lungs and plugs the entrance behind it with its spiny tail as a defense.
-  - **Problem:** Searched for V. acanthurus burrow depth and lung inflation plus tail plugging; no credible page gave a 1.3 foot depth or the inflate-and-plug behavior. The documented behavior is the lizard wedging its spiny tail into rock crevices so a predator cannot pull it out. The article's cited sources (ReptiFiles handling page checked) do not mention it.
-  - **Source:** "This monitor wedges its spiny tail into rocks so it cannot be pried out by predators." (https://www.nczoo.org/wildlife/animals/spiny-tailed-monitor)
-  - **Suggested fix:** A wild ackie retreats into rock crevices and burrows to escape predators, and it wedges its spiny tail into the rock so it cannot be pried out.
-- `content/guides/aquarium-stocking-and-tankmates-guide.mdx:108`
-  - **Says:** In the group-size study, the loneliest fish were not the worst off. Neon tetras were more aggressive in twos and fives than in a proper school
-  - **Problem:** The Saxby et al. 2010 abstract reports that aggression fell as groups grew. It says nothing about single fish faring better than pairs. A lone fish has no tankmate to be aggressive toward, so 'not the worst off' goes beyond the published finding.
-  - **Source:** "Neon tetras and white cloud mountain minnows displayed reduced aggression and darting" (https://research-portal.uws.ac.uk/en/publications/the-effect-of-group-size-on-the-behaviour-and-welfare-of-four-fis/)
-  - **Suggested fix:** In the group-size study, neon tetras kept in twos and fives were more aggressive and darted more than those in groups of 10
-- `content/guides/blue-tongue-skink-cost-guide.mdx:86`
-  - **Says:** documented living more than 32 years
-  - **Problem:** The 32-year figure shows up only on pet-care pages. AnAge lists a maximum of 26.6 years for Tiliqua scincoides, and the Aquarium of the Pacific says more than thirty.
-  - **Source:** "Blue-tongued skinks live approximately twenty years in human care, with some living to more than thirty years old." (https://aquariumofpacific.org/onlinelearningcenter/species/blue_tongued_skink)
-  - **Suggested fix:** reported living more than 30 years in human care
-- `content/guides/boa-constrictor-cost-guide.mdx:82`
+- `content/guides/boa-constrictor-cost-guide.mdx:82` *(recheck)*
   - **Says:** before being euthanized due to age-related health problems in 1977
-  - **Problem:** Guinness confirms the age and the death at Philadelphia Zoo, but the euthanasia detail appears only on listicle sites. I found no credible source for it.
+  - **Problem:** Guinness confirms the age and that Popeye died at Philadelphia Zoo in 1977. The euthanasia detail appears only on listicles (Snake Radar) and on BeastlyFacts itself; no zoo record, newspaper or Guinness text mentions it. Queries: 'Popeye boa constrictor Philadelphia Zoo 1977 died 40 years euthanized'; '"Popeye" boa "Philadelphia Zoo" 1977 oldest snake "put to sleep" OR "destroyed" OR "euthanized" OR "died"' (extended); Utah digital newspaper archive hits could not be read.
   - **Source:** "Greatest reliable age recorded for a snake is 40 yrs 3 months 14 days - a male boa constrictor who died at Philadelphia Zoo." (https://x.com/GWR/status/427790694237749248)
-  - **Suggested fix:** who lived 40 years and 3 months before dying there in 1977
-- `content/guides/box-turtle-legal-guide.mdx:125`
-  - **Says:** Wildlife agencies describe this as a species where "removing even a few adult turtles can destabilize a local population for decades,"
-  - **Problem:** This is presented as a direct quote from wildlife agencies, but it does not appear on the agency pages the article cites (Indiana DNR FAQ checked) and an exact-phrase web search returned nothing. The Indiana page makes a similar point in different words.
-  - **Source:** "Continued collection of wild box turtles greatly reduces another box turtle's chance of reproduction." (https://www.in.gov/dnr/fish-and-wildlife/wildlife-resources/animals/eastern-box-turtle/)
-  - **Suggested fix:** Indiana's wildlife agency warns that "continued collection of wild box turtles greatly reduces another box turtle's chance of reproduction,"
-- `content/guides/box-turtle-legal-guide.mdx:125`
-  - **Says:** long-term field studies have documented population crashes of 70 to 80 percent in some intensively studied areas over several decades
-  - **Problem:** No study is named and the article's cited agency pages (Indiana DNR, Missouri MDC) give no percentage, only that populations are declining. I could not reach a primary study confirming the 70 to 80 percent figure.
-  - **Source:** "Populations are declining throughout their range." (https://www.in.gov/dnr/fish-and-wildlife/wildlife-resources/animals/eastern-box-turtle/)
-  - **Suggested fix:** and wildlife agencies report populations declining throughout the range
-- `content/guides/dog-enrichment-guide.mdx:77`
-  - **Says:** Both groups got twenty minutes of activity with a person.
-  - **Problem:** No account of the Duranton and Horowitz design gives a 20 minute figure; they describe two group classes plus daily home practice over two weeks. The number may come from the study's 20 dogs. Searched secondary accounts and tried the ScienceDirect, Crossref and Europe PMC abstracts, which were blocked or empty.
-  - **Source:** "The 10 dog/owner pairs in this group attended two weekly group classes. ... The owners practiced the assigned heel work exercises on a daily basis." (https://thesciencedog.com/2019/01/28/science-says-nose-work-is-good-for-your-dog/)
-  - **Suggested fix:** Both groups got the same structure: group classes and daily practice with their owner for two weeks.
-- `content/guides/hedgehog-health-issues-guide.mdx:66`
-  - **Says:** found a considerably lower confirmed rate, closer to 3%
-  - **Problem:** The study is Gonzalez et al. 2023 (JAVMA 261, 49 hedgehogs from 7 US institutions, 2000 to 2020). It enrolled only hedgehogs with WHS confirmed at postmortem, so the abstract gives no population prevalence and no 3% figure. The full text is paywalled, and searches for a 3% figure found nothing. The 3.3-year mean onset is confirmed. The same 3% claim also appears in the seoDescription and FAQ (lines 18 and 43).
-  - **Source:** "Inclusion criteria were hedgehogs of any sex or age with postmortem CNS histopathology consistent with WHS. ... the mean ± SD age at onset was 3.3 ± 1.5 years" (https://europepmc.org/article/MED/37217171)
-  - **Suggested fix:** A 2023 retrospective of 49 confirmed cases across seven US veterinary institutions put the average age of onset around 3.3 years, older than earlier estimates suggested. (Cut the 3% rate unless the full text supports it.)
-- `content/guides/immortal-jellyfish-turritopsis-dohrnii-explained.mdx:50`
-  - **Says:** Maria Pia Miglietta, one of the researchers who has spent the most time on this animal, put the scale of it simply: "This is equivalent to a butterfly that goes back to a caterpillar."
-  - **Problem:** An exact-phrase search for the quote found nothing. The Scientist, which the article cites, gives a similar line but attributes it to Stefano Piraino. Mother Jones uses the butterfly comparison only in its own narration, not as a direct quote from Miglietta.
-  - **Source:** "it might be comparable to a butterfly that would be able to revert to the caterpillar stage" (https://www.the-scientist.com/an-immortal-jellyfish-offers-clues-into-biological-aging-73346)
-  - **Suggested fix:** Stefano Piraino, a marine zoologist at the University of Salento, put the scale of it simply: it "might be comparable to a butterfly that would be able to revert to the caterpillar stage."
-- `content/guides/leaftailedgecko-kingsnake-boxturtle-oscar-overview.mdx:84`
-  - **Says:** Research on serum from the kingsnake genus found real, documented resistance to rattlesnake venom specifically, though it offers little to no protection against a coral snake's neurotoxin.
-  - **Problem:** The classic serum study (Philpot and Smith 1950) tested pit viper venoms, mainly cottonmouth with rattlesnake as a secondary test, so 'rattlesnake specifically' misdescribes it. Searches for kingsnake serum or resistance against coral snake (Micrurus) venom found no study supporting 'little to no protection', and the article cites none.
-  - **Source:** "King snake serum, detoxicated by heating, and in doses well below toxic levels protected white mice against as high as 7 LD50's of moccasin venom injected intraperitoneally ... A protective action against rattlesnake venom was also demonstrated." (https://www.ebm-journal.org/journals/experimental-biology-and-medicine/articles/10.3181/00379727-74-17959/full)
-  - **Suggested fix:** Research on kingsnake serum found real, documented protection against pit viper venoms, including cottonmouth and rattlesnake venom.
-- `content/guides/mouse-handling-guide.mdx:68`
-  - **Says:** Mice can jump roughly 13 inches straight up from a standstill, and some have been recorded escaping containers as tall as 24 inches by combining a jump with a bit of climbing along the way.
-  - **Problem:** A USDA lab study of rodent abilities measured a maximum jump of 25 cm (about 10 inches) for house mice, and extension figures run about 12 inches. I found no credible record of mice escaping 24 inch containers; with the bucket at 14.5 inches, the 'not tall enough' premise also needs rethinking.
-  - **Source:** "House Mice jumped a maximum of 25 cm." (https://digitalcommons.unl.edu/icwdm_usdanwrc/1341)
-  - **Suggested fix:** Mice can jump about 10 to 12 inches straight up, so a lidless container needs real height and a smooth inner wall to hold one.
-- `content/guides/the-best-dog-toys-for-big-and-small-dogs-a-2026-guide.mdx:67`
-  - **Says:** A Mastiff's bite force of around 550 PSI actually exceeds that of a wolf, which averages around 400 PSI.
-  - **Problem:** The 550 PSI Mastiff and 400 PSI wolf figures trace to pop-culture breed lists, not measured studies. A veterinary review of measured dog bite force reports wide variation and says no representative value can be fixed. Searched for a primary source for both numbers and found none.
-  - **Source:** "Due to the wide range of the reported bite forces and the high variability, a representative value is difficult to determine" (https://www.frontiersin.org/articles/10.3389/fvets.2018.00076/full)
+  - **Suggested fix:** before dying in 1977
+- `content/guides/california-kingsnake-enrichment-guide.mdx:75` *(recheck)*
+  - **Says:** it has been tested once, in a close relative of this animal, with a preference test
+  - **Problem:** Hoehfurtner et al. 2021 is the only enclosure-size preference test on a colubrid found, but a 2025 NSW government review speaks of 'preference studies' in the plural, and a 2026 paper on enclosure complexity exists. 'Once' can't be confirmed. Queries: snake enclosure size preference test, Pantherophis guttatus enclosure study, Hutchings 2025 spatial needs review.
+  - **Source:** "Preference studies indicate that captive snakes utilise a considerable amount of space if it is available to them." (https://onlinelibrary.wiley.com/doi/10.1155/ijz/3548045)
+  - **Suggested fix:** it has rarely been tested, and the clearest test, in a close relative of this animal, was a preference test
+- `content/guides/california-kingsnake-handling-guide.mdx:61` *(recheck)*
+  - **Says:** the exact degree of resistance varies by population
+  - **Problem:** No credible source found that measures geographic or population variation in kingsnake venom resistance. Queries: 'kingsnake venom resistance varies among populations sympatric rattlesnakes Lampropeltis getula study'; 'Lampropeltis serum neutralization rattlesnake venom Weinstein Toxicon'; '"kingsnake" "coral snake" venom resistance study university'.
   - **Suggested fix:** cut
-- `content/guides/the-best-dog-toys-for-big-and-small-dogs-a-2026-guide.mdx:81`
+- `content/guides/ferret-legal-guide.mdx:82` *(recheck)*
+  - **Says:** the petitioners had filed a writ action in Sacramento County Superior Court seeking to force one
+  - **Problem:** Only the petitioner's own Send2Press releases, syndicated on newswire pages, report the writ action (Wright v. California Fish and Game Commission). No court record or Commission document mentioning it was found. Queries: 'Fish and Game Commission petition 2025-003 ferret restricted species accepted June 2025'; 'fgc.ca.gov ferret petition 2025-003 referred to department'; 'California Fish and Game Commission June 11 2025 meeting minutes petition ferrets'.
+- `content/guides/green-iguana-health-issues-guide.mdx:58` *(recheck)*
+  - **Says:** Many captive green iguanas die young, and inadequate diet, lighting, and housing ... are named as the leading cause.
+  - **Problem:** Cornell's veterinary paper says most MBD cases come from owners failing to provide a proper diet and environment, but no credible source ranks husbandry as the leading cause of early death. The article's own source (Reptiles Magazine) blames early deaths mainly on kidney disease and lack of water. Queries: 'green iguana captive die young improper diet lighting housing leading cause metabolic bone disease'; 'merckvetmanual reptiles nutritional secondary hyperparathyroidism iguanas'.
+  - **Source:** "most cases are the result of failure of the owner to provide a proper diet and environment" (https://ecommons.cornell.edu/entities/publication/01b31ff7-a607-4875-836b-03fc69e71b9d)
+  - **Suggested fix:** Metabolic bone disease affects a great number of captive green iguanas, and most cases trace back to inadequate diet, lighting and housing.
+- `content/guides/hedgehog-health-issues-guide.mdx:66` *(recheck)*
+  - **Says:** found a considerably lower confirmed rate, closer to 3%
+  - **Problem:** The Gonzalez et al. 2023 JAVMA abstract (49 hedgehogs, 7 US institutions, 2000 to 2020) enrolled only hedgehogs with WHS confirmed at postmortem and reports no population rate. Its percentages are 31 percent subclinical and 63 percent with concurrent cancer, neither of which is a prevalence. The full text is paywalled (403). Queries: 'wobbly hedgehog syndrome prevalence retrospective study African pygmy hedgehogs "3%" OR "3.3%" necropsy'; '"wobbly hedgehog syndrome" 49 hedgehogs 2000-2020 JAVMA prevalence percent of hedgehogs necropsied institutions' (extended); Europe PMC abstract read; AVMA full text blocked. Also applies to lines 18 and 43.
+  - **Source:** "Inclusion criteria were hedgehogs of any sex or age with postmortem CNS histopathology consistent with WHS." (https://pubmed.ncbi.nlm.nih.gov/37217171/)
+  - **Suggested fix:** cut the 3% figure; keep the 20-year, 49-hedgehog study and its 3.3-year average onset
+- `content/guides/molly-handling-guide.mdx:66` *(recheck)*
+  - **Says:** a typical brood lands somewhere between 20 and 60 fry
+  - **Problem:** No credible source gives a typical range of 20 to 60. Queries: 'Poecilia sphenops OR latipinna molly gestation days brood size UF IFAS extension livebearer culture'; Florida Museum sailfin molly profile (gives only the full range).
+  - **Suggested fix:** cut
+- `content/guides/mouse-handling-guide.mdx:68` *(recheck)*
+  - **Says:** some have been recorded escaping containers as tall as 24 inches by combining a jump with a bit of climbing along the way
+  - **Problem:** No credible record of a 24 inch container escape turned up; the 18 to 24 inch figure appears only as a barrier recommendation on a low-quality pest site. Queries: 'house mice jump vertically 12 inches extension rodent control jump height UC IPM OR USDA'; 'house mouse escape container jump "24 inches" OR "61 cm" OR "60 cm" laboratory study jumping ability Mus musculus'. The USDA lab maximum was 25 cm, and UC IPM notes mice can run up any rough vertical surface.
+  - **Source:** "The maximum jumping heights achieved by the three rat species was 40 cm; House Mice jumped a maximum of 25 cm." (https://digitalcommons.unl.edu/icwdm_usdanwrc/1341)
+  - **Suggested fix:** and they climb any rough vertical surface, so a smooth-sided container needs real height
+- `content/guides/stick-insect-cost-guide.mdx:101` *(recheck)*
+  - **Says:** Rare giant stick insect species can command prices exceeding $1,000 for a single adult
+  - **Problem:** The only source for the $1,000 figure is an A-Z Animals piece syndicated on AOL, which is a content farm. Queries tried: 'rare stick insect sold for over $1,000 phasmid price collectors'; 'stick insect price dollars rare species trade news smuggling phasmid'. No dealer list, auction record or reputable journalism found.
+  - **Suggested fix:** cut
+- `content/guides/stick-insect-cost-guide.mdx:101` *(recheck)*
+  - **Says:** the common Indian stick insect, which often costs just a few dollars per nymph and sometimes gets given away free
+  - **Problem:** A 2026 JoVE rearing protocol says Carausius morosus husbandry is cost-effective, but no credible source gives a per-nymph price or says they are given away. Query tried: 'Indian stick insect Carausius morosus pet cheap easy to obtain schools parthenogenetic'.
+  - **Suggested fix:** the common Indian stick insect, which is cheap and easy to breed
+- `content/guides/the-best-dog-toys-for-big-and-small-dogs-a-2026-guide.mdx:67` *(recheck)*
+  - **Says:** A Mastiff's bite force of around 550 PSI actually exceeds that of a wolf, which averages around 400 PSI.
+  - **Problem:** No measured source gives a Mastiff PSI or a wolf PSI; both numbers trace to breed lists. The veterinary review of measured dog bite force finds values spread so widely that no representative figure can be fixed, and published wolf figures are skull-model estimates in newtons, not PSI. Queries: measured dog bite force by breed (Kim 2018 review), Ellis 2009 biting force large dogs, gray wolf bite force Christiansen and Wroe 2007 / Wroe 2005.
+  - **Source:** "Because of the wide spread and high variability, "a representative value is difficult to determine." (Kim et al. 2018; mastiff, PSI and wolves not mentioned)" (https://www.frontiersin.org/articles/10.3389/fvets.2018.00076/full)
+  - **Suggested fix:** Big guarding breeds can bite hard enough to wreck most toys, though measured dog bite force varies too much between individual dogs to pin a single number on any breed.
+- `content/guides/the-best-dog-toys-for-big-and-small-dogs-a-2026-guide.mdx:81` *(recheck)*
   - **Says:** A Mastiff's bite force can exceed 550 PSI
-  - **Problem:** Same unsourced breed-list figure as entry 22. Measured studies of dog bite force do not support a breed-specific PSI number.
-  - **Source:** "bite force was found to range from 13 to 1,394 Newtons (N), with a mean value of 256 N." (https://www.frontiersin.org/articles/10.3389/fvets.2018.00076/full)
-  - **Suggested fix:** A Mastiff's powerful jaws can destroy most standard dog toys in minutes.
-- `content/guides/the-octopus-has-three-hearts-and-uses-all-of-them.mdx:101`
-  - **Says:** though death usually comes 4 to 8 hours after exposure rather than immediately
-  - **Problem:** Searched clinical and case-report sources for a typical time to death and found no 4 to 8 hour figure. A pediatric case report instead warns an untreated bite could kill within minutes, and none of the article's cited sources covers this.
-  - **Source:** "an untreated bite of this animal could have lead to death within minutes" (https://www.qxmd.com/r/19238736)
-  - **Suggested fix:** Symptoms begin within minutes, and without breathing support the paralysis can progress to fatal respiratory failure
-- `content/guides/tortoise-soaking-guide.mdx:115`
-  - **Says:** A tortoise drinks with both ends. The cloaca takes up water during a soak
-  - **Problem:** Searched for evidence that tortoises take up water through the cloaca during a soak. Cloacal uptake is documented for ions and oxygen in some aquatic turtles, but no credible source confirms it as drinking in tortoises. The article's own vet sources say only that soaking encourages drinking.
-  - **Source:** "Soaking encourages drinking, urination, and defecation." (https://lafeber.com/vet/basic-information-sheet-mediterranean-tortoises/)
-  - **Suggested fix:** A soak gets a tortoise drinking and then emptying itself, which is why one can go from bone dry to passing urine in twenty minutes.
-- `content/guides/zebra-danio-handling-guide.mdx:75`
+  - **Problem:** Same unsourced breed-list figure as item 1. Measured studies report a 13 to 1,394 N range across dogs and no breed-specific PSI. Queries as in item 1.
+  - **Source:** "bite force was found to range from 13 to 1,394 Newtons (N), with a mean value of 256 N" (https://www.frontiersin.org/articles/10.3389/fvets.2018.00076/full)
+  - **Suggested fix:** A Mastiff's jaws can destroy most standard dog toys in minutes
+- `content/guides/virginia-opossum-legal-guide.mdx:95` *(recheck)*
+  - **Says:** New Mexico puts it in Group II as captive bred
+  - **Problem:** The group assignment is set in the director's Species Importation List, not in 19.35.7 NMAC. The only copy found dates to 2010, and no current list was reachable. Queries tried: 'New Mexico 19.35.7 Group II Monodelphis domestica captive bred'; 'New Mexico Department of Game and Fish species importation list pdf short-tailed opossum group'.
+- `content/guides/zebra-danio-handling-guide.mdx:75` *(recheck)*
   - **Says:** They can clear 20 to 30cm (roughly 8 to 12 inches)
-  - **Problem:** Searched for a measured zebrafish jump height and found none; the only source for the figure is a pet blog (HousedPet) cited by the article. The article's credible species source, Seriously Fish, does not mention jumping at all.
-  - **Source:** "No credible page found giving a jump height for Danio rerio; the Seriously Fish species profile has no mention of jumping, jump height or lids." (https://www.seriouslyfish.com/species/danio-rerio/)
-  - **Suggested fix:** They are known to jump from uncovered tanks, an impressive feat for a fish that tops out around 2 inches long.
+  - **Problem:** No measured zebrafish jump height exists in the literature found. The jumping studies (Gibb lab, Northern Arizona University) cover jumps on land, rank zebrafish as weaker jumpers than mosquitofish, and give no height. An NIH zebrafish facility paper shows fish escaping through a lid hole, which supports keeping a lid on but gives no height. Queries: zebrafish jump height study, Danio rerio terrestrial jumping, zebrafish facility lid escape.
+  - **Source:** "Zebrafish rarely leave water in the wild ... mosquitofish jumped farther and showed better stability and control (search summary of Gibb lab work; no height reported)" (https://sicb.org/abstracts/how-do-small-teleost-fishes-respond-to-being-stranded-on-land-terrestrial-movements-by-danio-rerio-and-gambusia-affinis)
+  - **Suggested fix:** They are capable jumpers, and a spooked danio can clear the waterline easily.
 
-## Not checked (search budget ran out)
+## Confirmed on recheck (77)
 
-These boxes contain checkable claims the checkers did not finish verifying. They are not cleared.
+These were open after the first pass and a source now backs them. Nothing to do.
 
-- `src/lib/data/guides/dogs.js:705`: Despite the guarding reputation, Rottweilers were among the first dogs used as guide dogs for the blind, and in more recent decades they worked search and...
-- `src/lib/data/guides/dogs.js:247`: A Beagle's enrichment needs are olfactory, not athletic. Dogs carry roughly 800 to 1,200 functional olfactory receptor genes, and scenthounds like the...
-- `src/lib/data/guides/amphibians.js:261`: Tiger salamanders are one of North America's largest terrestrial salamanders, reaching 13 inches. They are also among the most cold-tolerant amphibians on...
-- `src/lib/data/guides/dogs.js:132`: Medium-sized dogs (roughly 20 to 60 lbs) often show the most behavioral versatility. Studies show they tend to score higher on trainability assessments,...
-- `src/lib/data/guides/cats.js:14`: Cats spend approximately 30 to 50% of their waking hours grooming themselves. This is not just cleanliness: grooming regulates body temperature, stimulates...
-- `content/fun-facts/10-surprising-argentine-tegu-facts.mdx:46`: Generating your own body heat overnight with no outside source is normally filed under birds and mammals. The tegu does it only in the breeding season,...
-- `content/guides/american-alligator-legal-guide.mdx:130`: The alligator is the one animal on this map that is banned in Texas and unregulated in Alaska. Texas's alligator proclamation bars possessing a live one...
-- `content/guides/box-turtle-handling-guide.mdx:64`: The hinge in a box turtle's plastron closes the shell almost completely, sealing out most predators, and it's the literal source of the name "box" turtle, a...
-- `content/guides/california-kingsnake-enrichment-guide.mdx:75`: "Snakes feel secure in small spaces" is the most repeated claim in snake keeping and it has been tested once, in a close relative of this animal, with a...
-- `content/guides/california-kingsnake-handling-guide.mdx:61`: Research on serum from the kingsnake genus found meaningful resistance to rattlesnake venom specifically. That resistance isn't universal, though,...
-- `content/guides/cherry-amano-ghost-shrimp-overview.mdx:69`: All three of these shrimp get lumped together as "cleanup crew," but they come from two different shrimp families and don't even agree on how to reproduce....
-- `content/guides/cockatoo-enrichment-guide.mdx:73`: The uncomfortable part of this literature is not which intervention wins, it is that van Zeeland and colleagues trace feather damaging behavior partly to...
-- `content/guides/cougar-legal-guide.mdx:131`: The Florida panther has been on the federal endangered list since 1967, before the Endangered Species Act existed, under the list's predecessor statute. Its...
-- `content/guides/ferret-legal-guide.mdx:82`: California's ban is the one that has been challenged hardest. In June 2025 the Fish and Game Commission voted unanimously to accept Petition 2025-003, which...
-- `content/guides/giant-millipede-legal-guide.mdx:71`: A specific story circulates on hobbyist forums claiming all millipede imports were banned in 2006 over concerns about mites damaging cotton crops. We...
-- `content/guides/gray-squirrel-legal-guide.mdx:100`: Texas is the state most often listed as squirrel-friendly, and the squirrel it is friendly to is the [flying squirrel](/blog/flying-squirrel-legal-guide/),...
-- `content/guides/green-anole-legal-guide.mdx:105`: Arkansas wrote its exception for exactly this animal. Its unrestricted species list clears the anoline lizards by naming eight genera, and then adds:...
-- `content/guides/hedgehog-legal-guide.mdx:78`: Two states are routinely listed as hedgehog permit states and neither one is. Maine's Department of Inland Fisheries and Wildlife publishes an Unrestricted...
-- `content/guides/green-iguana-health-issues-guide.mdx:58`: Many captive green iguanas die young, and inadequate diet, lighting, and housing (the exact same three factors behind metabolic bone disease) are named as...
-- `content/guides/iguana-fireskink-quaker-overview.mdx:73`: Line these three up by first impression and the mismatch holds for every one of them. The iguana's price tag says nothing about the six-foot, twenty-pound,...
-- `content/guides/kinkajou-legal-guide.mdx:102`: Nebraska and Oklahoma both draw the line between the kinkajou and the coati, and they draw it in opposite directions from the same fact. Both states' lists...
-- `content/guides/pet-monkey-legal-guide.mdx:138`: Oklahoma catches the lemur's federal listing and lets it go in the next sentence. 29 O.S. § 7-502(A)(2) bars possessing an endangered species, which the...
-- `content/guides/molly-handling-guide.mdx:66`: A single mating can be enough to keep a female molly producing fry for a long stretch afterward, since females can store sperm internally and don't need a...
-- `content/guides/platy-health-issues-guide.mdx:85`: Xiphophorus fish have been used in melanoma research for over 70 years, making them one of the oldest continuously studied animal models for any cancer,...
-- `content/guides/quaker-parakeet-enrichment-guide.mdx:72`: Feral quaker colonies in the United States and Europe build their communal nests on electricity pylons and transformers, which is the actual reason the...
-- `content/guides/stick-insect-cost-guide.mdx:101`: Rare giant stick insect species can command prices exceeding $1,000 for a single adult, a striking contrast to the common Indian stick insect, which often...
-- `content/guides/sugar-glider-legal-guide.mdx:78`: A few states are frequently listed as banning sugar gliders by pet blogs, but don't hold up against the actual rule text. Georgia explicitly permits...
-- `content/guides/snapping-turtle-legal-guide.mdx:101`: Texas has two snapping turtles and two completely different answers. The common snapping turtle, *Chelydra serpentina*, is on the nongame list at six per...
-- `content/guides/reticulated-python-legal-guide.mdx:106`: Two states have the species on their books under a name science has retired, and two more under a spelling that was never right. Connecticut's Category Two...
-- `content/guides/red-eared-slider-legal-guide.mdx:98`: This one moved fast. Colorado Parks and Wildlife approved a full herpetofauna rule overhaul (Chapter W-7) in March 2026, effective May 1, 2026, which...
-- `content/guides/whites-tree-frog-tank-setup-guide.mdx:82`: A T5 UVB bulb can keep glowing visibly long after its actual UVB output has crashed. That's exactly why the bulb gets replaced every 6 to 8 months on a...
-- `content/guides/tiger-legal-guide.mdx:96`: Michigan dated its tiger window to the day, twenty-two years before Congress did. The Large Carnivore Act, which took effect in 2000, lets a person possess...
-- `content/guides/two-toed-sloth-legal-guide.mdx:97`: Montana clears one two-toed sloth and not the other. ARM 12.6.2205(1)(f) puts "Two-toed sloth - Choloepus didoctylus" on the noncontrolled list, a...
-- `content/guides/venomous-snake-laws-by-state.mdx:135`: Oregon is the one state that answers cobras one species at a time. OAR 635-056-0060 lists the Egyptian cobra, the black and white cobra, the Indian cobra,...
-- `content/guides/virginia-opossum-legal-guide.mdx:95`: The gray short-tailed opossum, Monodelphis domestica, is the opossum that turns up on pet lists, and the states treat it as a different animal from the one...
-- `content/guides/white-tailed-deer-legal-guide.mdx:96`: Kansas is the one state whose statute says the word. K.S.A. 47-2101 defines a domesticated deer as any legally obtained cervid "being sold or raised in a...
-- `content/guides/wolfdog-legal-guide.mdx:104`: Louisiana's rule bans the wolfdog and says the ban is over, in the same section. LAC 76:V.115.C.1 still prints "f. wolf dog hybrid (Canis lupus or Canis...
+- `content/fun-facts/10-surprising-argentine-tegu-facts.mdx:46`: The tegu does it only in the breeding season, which is why researchers call it facultative endothermy and treat it as a living model of how warm-bloodedness may first have evolved. A 2-kilogram lizard running warm in a dark burrow (https://doi.org/10.1126/sciadv.1500951)
+- `content/guides/ackie-monitor-handling-guide.mdx:60`: A wild ackie digs burrows as deep as about 1.3 feet. When it retreats into one, it inflates its lungs and plugs the entrance behind it with its spiny tail as a defense. (https://wpvet.com/reptile-rounds/ackie-monitor-husbandry-article/)
+- `content/guides/american-alligator-legal-guide.mdx:130`: Texas's alligator proclamation bars possessing a live one outside farming, dealing, control hunting, research and display (https://www.law.cornell.edu/regulations/texas/31-Tex-Admin-Code-SS-65-353)
+- `content/guides/american-alligator-legal-guide.mdx:130`: Alaska's clean list at 5 AAC 92.029(b) clears "Any nonvenomous reptile" and glosses the class as "crocodile, alligator, snake, turtle, or lizard", so an American alligator may be possessed, imported and sold there without a permit, with the only caveat that an endangered species still needs a federal permit, and the alligator is not one. (https://www.law.cornell.edu/regulations/alaska/5-AAC-92.029_v2)
+- `content/guides/aquarium-stocking-and-tankmates-guide.mdx:108`: Neon tetras were more aggressive in twos and fives than in a proper school (https://www.sciencedaily.com/releases/2009/06/090629100649.htm)
+- `content/guides/box-turtle-handling-guide.mdx:64`: it's the literal source of the name "box" turtle (https://www.mass.gov/info-details/eastern-box-turtle)
+- `content/guides/box-turtle-legal-guide.mdx:125`: long-term field studies have documented population crashes of 70 to 80 percent in some intensively studied areas over several decades (https://www.usgs.gov/publications/fifty-year-trends-a-box-turtle-population-maryland)
+- `content/guides/california-kingsnake-handling-guide.mdx:61`: kingsnakes have little to no protection against the neurotoxic venom of coral snakes (https://gophertortoisecouncil.org/pdf/GTC%20Kingsnakes%20Draft%20_032020.pdf)
+- `content/guides/cherry-amano-ghost-shrimp-overview.mdx:69`: they come from two different shrimp families (https://www.marinespecies.org/aphia.php?p=taxdetails&id=932400)
+- `content/guides/cherry-amano-ghost-shrimp-overview.mdx:69`: Cherry shrimp breed readily in plain freshwater and will turn a handful of shrimp into a colony on their own. (https://ask.ifas.ufl.edu/publication/IN1301)
+- `content/guides/cherry-amano-ghost-shrimp-overview.mdx:69`: Amano shrimp need their larvae to develop in brackish or full-strength salt water (https://tdr.lib.ntu.edu.tw/handle/123456789/42451?locale=en)
+- `content/guides/cougar-legal-guide.mdx:131`: The Florida panther has been on the federal endangered list since 1967 (https://www.ecfr.gov/current/title-50/chapter-I/subchapter-B/part-17/subpart-B/section-17.11)
+- `content/guides/cougar-legal-guide.mdx:131`: Its row in 50 CFR 17.11 reads "Puma (=Felis) concolor coryi", endangered wherever found. (https://www.ecfr.gov/current/title-50/chapter-I/subchapter-B/part-17/subpart-B/section-17.11)
+- `content/guides/cougar-legal-guide.mdx:131`: New Mexico's importation list marks the whole species "Federally Threatened", which is a reference to the Florida similarity-of-appearance rule rather than to the panther itself, and files Puma concolor in Group IV either way. (https://sfreporter.com/downloads/45527/download/Directors-Species-Importation-List-08_03_2010)
+- `content/guides/cougar-legal-guide.mdx:131`: answered three times: by Class I (https://www.law.cornell.edu/regulations/florida/Fla-Admin-Code-Ann-R-68A-6-002)
+- `content/guides/ferret-legal-guide.mdx:82`: No decision had followed by late September 2026 (https://nrm.dfg.ca.gov/FileHandler.ashx?DocumentID=245537)
+- `content/guides/giant-millipede-legal-guide.mdx:71`: it's an unrelated notice about grape imports from Namibia (https://www.federalregister.gov/documents/2006/06/26/E6-10017/importation-of-table-grapes-from-namibia)
+- `content/guides/giant-millipede-legal-guide.mdx:71`: a live giant African millipede intercepted in a traveler's suitcase at the Atlanta airport (https://www.foxnews.com/travel/huge-insect-discovered-inside-suitcase-at-atlanta-airport)
+- `content/guides/giant-millipede-legal-guide.mdx:71`: twenty more seized at a West Coast airport after being mislabeled as toy car models in a shipment from Germany (https://www.cbp.gov/newsroom/local-media-release/cbp-intercepts-giant-millipedes-sfo-mail-facility)
+- `content/guides/gray-squirrel-legal-guide.mdx:100`: the nongame rule lets a keeper hold 25 of with no permit (https://www.law.cornell.edu/regulations/texas/31-Tex-Admin-Code-SS-65-327)
+- `content/guides/gray-squirrel-legal-guide.mdx:100`: § 63.001 makes "gray or cat squirrels" game animals (https://statutes.capitol.texas.gov/Docs/PW/htm/PW.63.htm)
+- `content/guides/gray-squirrel-legal-guide.mdx:100`: § 63.002 says "No person may possess a live game animal in this state for any purpose not authorized by this code" (https://statutes.capitol.texas.gov/Docs/PW/htm/PW.63.htm)
+- `content/guides/green-anole-legal-guide.mdx:105`: Its unrestricted species list clears the anoline lizards by naming eight genera, and then adds: "except Brown Anoles (Anolis sagrei) or species native to Arkansas." (https://agfc-omnibus.s3.amazonaws.com/eregs/regulation_pdfs/large/agfc_regulations_codebook_large.pdf)
+- `content/guides/green-anole-legal-guide.mdx:105`: the green anole is not simply cleared in Arkansas the way a crested gecko is (https://agfc-omnibus.s3.amazonaws.com/eregs/regulation_pdfs/large/agfc_regulations_codebook_large.pdf)
+- `content/guides/hedgehog-legal-guide.mdx:78`: Maine's Department of Inland Fisheries and Wildlife publishes an Unrestricted Species List ... and *Atelerix albiventris* is on it by name (https://wgme.com/news/local/you-can-now-have-a-hedgehog-as-a-pet-in-maine)
+- `content/guides/iguana-fireskink-quaker-overview.mdx:73`: six-foot (https://seaworld.org/animals/facts/reptiles/green-iguana/)
+- `content/guides/iguana-fireskink-quaker-overview.mdx:73`: potentially-dangerous-for-a-season adult (https://lafeber.com/vet/wp-content/uploads/2024/08/Aggressive-Behavior-in-Captive-Reptiles-FINAL2.pdf)
+- `content/guides/iguana-fireskink-quaker-overview.mdx:73`: how rarely you'll actually see it out and visible (https://reptilesmagazine.com/old/listings/lizard-species/fire-skink.html)
+- `content/guides/iguana-fireskink-quaker-overview.mdx:73`: its talking ability (https://birdnote.org/node/17609)
+- `content/guides/iguana-fireskink-quaker-overview.mdx:73`: its unique nest-building instinct (https://allaboutbirds.org/guide/Monk_Parakeet/lifehistory)
+- `content/guides/iguana-fireskink-quaker-overview.mdx:73`: whether you're even allowed to own one where you live (https://www.butlereagle.com/?p=282331)
+- `content/guides/kinkajou-legal-guide.mdx:102`: Both states' lists name the coatimundi and not the kinkajou. In Oklahoma, the list is an exemption list, so the coati needs no license and the kinkajou does. (https://www.law.cornell.edu/regulations/oklahoma/OAC-800-25-25-3)
+- `content/guides/kinkajou-legal-guide.mdx:102`: In Nebraska, the list is a closed import list, so the coati may be brought in and the kinkajou may not. (https://law.cornell.edu/regulations/nebraska/163-Neb-Admin-Code-ch-4-SS-008)
+- `content/guides/molly-handling-guide.mdx:66`: females can store sperm internally and don't need a male present again for each new brood (https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/sailfin-molly/)
+- `content/guides/molly-handling-guide.mdx:66`: the documented range runs as wide as 10 to over 100 (https://www.floridamuseum.ufl.edu/discover-fish/species-profiles/sailfin-molly/)
+- `content/guides/pet-monkey-legal-guide.mdx:138`: 29 O.S. § 7-502(A)(2) bars possessing an endangered species (https://www.animallaw.info/statute/ok-wildlife-part-5-possession-wildlife)
+- `content/guides/pet-monkey-legal-guide.mdx:138`: which the family Lemuridae is (https://www.ecfr.gov/current/title-50/chapter-I/subchapter-B/part-17/subpart-B/section-17.11)
+- `content/guides/pet-monkey-legal-guide.mdx:138`: § 7-502(B)(4) exempts legally obtained wildlife from a source other than the wild that is kept as a pet (https://www.animallaw.info/statute/ok-wildlife-part-5-possession-wildlife)
+- `content/guides/pet-monkey-legal-guide.mdx:138`: Oklahoma's exemption list closes with "(37) Primates" (https://www.law.cornell.edu/regulations/oklahoma/OAC-800-25-25-3)
+- `content/guides/quaker-parakeet-enrichment-guide.mdx:72`: Feral quaker colonies in the United States and Europe build their communal nests on electricity pylons and transformers (https://pmc.ncbi.nlm.nih.gov/articles/PMC4183950/)
+- `content/guides/red-eared-slider-legal-guide.mdx:98`: Colorado Parks and Wildlife approved a full herpetofauna rule overhaul (Chapter W-7) in March 2026, effective May 1, 2026, which formally classifies red-eared sliders as an "Invasive Herptile" for the first time (https://usark.org/wp-content/uploads/2026/03/26-Colorado-Herp-Rule-final.pdf)
+- `content/guides/red-eared-slider-legal-guide.mdx:98`: Anyone may now take unlimited red-eared sliders from the wild, and wild-caught invasive herptiles must normally be killed, except sliders, which may be kept alive for the animal's life with no breeding (https://usark.org/wp-content/uploads/2026/03/26-Colorado-Herp-Rule-final.pdf)
+- `content/guides/red-eared-slider-legal-guide.mdx:98`: the turtle sits on none of the appendices that allow possession, so the wild-caught Colorado turtle is the only slider anyone may keep (https://usark.org/wp-content/uploads/2026/03/26-Colorado-Herp-Rule-final.pdf)
+- `content/guides/red-eared-slider-legal-guide.mdx:98`: The same rule set up a CPW Legacy Report, due July 30, 2026, but it covers captive-bred corn, rat, king, milk and hognose snakes, native species collected before May 1, and Gila monsters and Mexican beaded lizards. Sliders are not on it. (https://usark.org/wp-content/uploads/2026/03/26-Colorado-Herp-Rule-final.pdf)
+- `content/guides/reticulated-python-legal-guide.mdx:106`: Connecticut's Category Two lists "reticulated python (Python reticulates)", with an "e" where an "u" belongs, and opens its definition "notwithstanding changes in taxonomic nomenclature" (https://www.law.cornell.edu/regulations/connecticut/Regs-Conn-State-Agencies-SS-26-55-6)
+- `content/guides/reticulated-python-legal-guide.mdx:106`: New York names "Reticulated Python (Python reticulatus)" in the statute itself (https://legislation.nysenate.gov/pdf/bills/2025/A1804)
+- `content/guides/reticulated-python-legal-guide.mdx:106`: Texas names "Python reticulatus" at § 43.851 (https://statutes.capitol.texas.gov/Docs/PW/htm/PW.43.htm)
+- `content/guides/reticulated-python-legal-guide.mdx:106`: Florida's rule reaches "taxonomic successors" so that *Malayopython reticulatus* is caught by a row that spells it the old way (https://www.law.cornell.edu/regulations/florida/Fla-Admin-Code-Ann-R-68-5-006)
+- `content/guides/reticulated-python-legal-guide.mdx:106`: Arkansas is the only state on the map that wrote the new genus into its list (https://agfc-omnibus.s3.amazonaws.com/eregs/regulation_pdfs/large/agfc_regulations_codebook_large.pdf)
+- `content/guides/snapping-turtle-legal-guide.mdx:101`: The common snapping turtle, *Chelydra serpentina*, is on the nongame list at six per person without a permit (https://www.law.cornell.edu/regulations/texas/31-Tex-Admin-Code-SS-65-327)
+- `content/guides/snapping-turtle-legal-guide.mdx:101`: The alligator snapping turtle, *Macrochelys temminckii*, is listed as threatened (https://tpwd.texas.gov/landwater/land/habitats/faq/fisheries/f12.phtml)
+- `content/guides/sugar-glider-legal-guide.mdx:78`: Georgia explicitly permits ownership with proof the animal came from a USDA-regulated source (https://gadnrle.org/exotics)
+- `content/guides/sugar-glider-legal-guide.mdx:78`: Massachusetts added sugar gliders to its no-permit-needed exemption list back in 2014 (https://www.mass.gov/files/documents/2017/12/14/New%20Requirements%20for%20Exotic%20Animals%20Sold%20in%20Pet%20Shops.pdf)
+- `content/guides/sugar-glider-legal-guide.mdx:78`: Wyoming classifies sugar gliders as a "domesticated animal" by name, which puts them outside the wildlife-permit system entirely (https://wgfd.wyo.gov/media/27666/download)
+- `content/guides/tiger-legal-guide.mdx:96`: Michigan dated its tiger window to the day, twenty-two years before Congress did. The Large Carnivore Act, which took effect in 2000 (https://www.legislature.mi.gov/Laws/MCL?objectName=MCL-287-1104)
+- `content/guides/tiger-legal-guide.mdx:96`: lets a person possess a tiger only if they owned that individual animal on the effective date and applied for a local permit within 90 days, and MCL 287.1104(1) says the permit "is not transferable to another person except through testate or intestate succession" (https://www.legislature.mi.gov/Laws/MCL?objectName=MCL-287-1104)
+- `content/guides/two-toed-sloth-legal-guide.mdx:97`: ARM 12.6.2205(1)(f) puts "Two-toed sloth - Choloepus didoctylus" on the noncontrolled list (https://www.animallaw.info/administrative/mt-exotic-pets-sub-chapter-22-exotic-wildlife)
+- `content/guides/two-toed-sloth-legal-guide.mdx:97`: Hoffmann's two-toed sloth, Choloepus hoffmanni, is named nowhere, and in a white-list state an unnamed exotic is barred (https://archive.legmt.gov/bills/mca/title_0870/chapter_0050/part_0070/section_0050/0870-0050-0070-0050.html)
+- `content/guides/venomous-snake-laws-by-state.mdx:135`: OAR 635-056-0060 lists the Egyptian cobra, the black and white cobra, the Indian cobra, the red spitting cobra and the king cobra as noncontrolled species that need no ODFW permit at all. The black-necked spitting cobra and the Cape cobra are prohibited. (https://www.dfw.state.or.us/OARs/perm/Permanent%20Filing_Div%2056_Tracked%20Changes_Filed%208-19-25.pdf)
+- `content/guides/venomous-snake-laws-by-state.mdx:135`: Any other cobra is unlisted, which 635-056-0130(1) treats as barred (https://oregon.public.law/rules/oar_635-056-0130)
+- `content/guides/venomous-snake-laws-by-state.mdx:135`: every nonnative species is prohibited except ten Mexican, Central and South American ones named one by one, so under state law a Mexican west coast rattlesnake is lawful and a western diamondback is not (https://www.dfw.state.or.us/OARs/perm/Permanent%20Filing_Div%2056_Tracked%20Changes_Filed%208-19-25.pdf)
+- `content/guides/virginia-opossum-legal-guide.mdx:95`: Maine puts it in Category 1 (https://www.animallaw.info/administrative/me-exotic-pets-chapter-7-regulations-wildlife-captivity)
+- `content/guides/virginia-opossum-legal-guide.mdx:95`: Colorado lists it as unregulated (https://usark.org/wp-content/uploads/2026/03/26-Colorado-Herp-Rule-final.pdf)
+- `content/guides/virginia-opossum-legal-guide.mdx:95`: Utah lists it as noncontrolled (https://wildlife.utah.gov/pdf/cor/bird_and_mammal_classification_table_3b-1.pdf)
+- `content/guides/virginia-opossum-legal-guide.mdx:95`: Oregon as noncontrolled, while each of those states bars or defaults the Virginia opossum (https://www.dfw.state.or.us/OARs/perm/Permanent%20Filing_Div%2056_Tracked%20Changes_Filed%208-19-25.pdf)
+- `content/guides/white-tailed-deer-legal-guide.mdx:96`: K.S.A. 47-2101 defines a domesticated deer as any legally obtained cervid "being sold or raised in a confined area for" breeding stock, parts, exhibition "or companionship", and subsection (a) says "It shall be unlawful for any person to possess domesticated deer unless such person has obtained from the animal health commissioner a domesticated deer permit." (https://www.ksrevisor.gov/statutes/chapters/ch47/047_021_0001.html)
+- `content/guides/white-tailed-deer-legal-guide.mdx:96`: The permit is annual, under the Department of Agriculture's livestock law rather than the wildlife code, at a fee of up to $400 (https://www.ksrevisor.gov/statutes/chapters/ch47/047_021_0001.html)
+- `content/guides/white-tailed-deer-legal-guide.mdx:96`: A wild Kansas deer is still big game under K.S.A. 32-701(a) (https://www.ksrevisor.gov/statutes/chapters/ch32/032_007_0001.html)
+- `content/guides/wolfdog-legal-guide.mdx:104`: LAC 76:V.115.C.1 still prints "f. wolf dog hybrid (Canis lupus or Canis rufus x Canis familiarus)" in its list of animals that may not be imported, possessed, bought or sold (https://www.law.cornell.edu/regulations/louisiana/La-Admin-Code-tit-76-SS-V-115)
+- `content/guides/wolfdog-legal-guide.mdx:104`: Subsection D.1 then reads: "Wolf-Dog Hybrids. The prohibition against wolf-dog hybrids expired January 1, 1997. Persons are cautioned that local ordinances or other state regulations may prohibit possession of these animals. Any animal which appears indistinguishable from a wolf, or is in any way represented to be a wolf shall be considered to be a wolf in the absence of bona fide documentation to the contrary." (https://www.law.cornell.edu/regulations/louisiana/La-Admin-Code-tit-76-SS-V-115)
+- `src/lib/data/guides/amphibians.js:261`: Tiger salamanders are one of North America's largest terrestrial salamanders, reaching 13 inches. (https://herpetology.inhs.illinois.edu/resources/species-lists/ilspecies/tiger-salamander/)
+- `src/lib/data/guides/cats.js:14`: grooming regulates body temperature (https://pmc.ncbi.nlm.nih.gov/articles/PMC10814636)
+- `src/lib/data/guides/cats.js:14`: distributes natural oils (https://pmc.ncbi.nlm.nih.gov/articles/PMC10814636)
+- `src/lib/data/guides/cats.js:14`: and is a bonding behavior between cats (https://dspace.library.uu.nl/bitstream/handle/1874/309787/Van_den_Bos_and_de_Vries_1996.pdf?sequence=1)
+- `src/lib/data/guides/cats.js:288`: submissions to the UK lab that runs it went from 29 percent positive in 2005 to 10 percent in 2009 (https://langfordvets.co.uk/media/bunbx0in/polycystic-kidney-disease.pdf)
+- `src/lib/data/guides/dogs.js:247`: scenthounds like the Beagle were specifically selected for olfactory performance (https://pmc.ncbi.nlm.nih.gov/articles/PMC12703715/)
+- `src/lib/data/guides/dogs.js:705`: they worked search and rescue at the Oklahoma City bombing (https://www.wglt.org/1996-06-20/hero-dog-dies)
