@@ -212,6 +212,110 @@ Not a bear cub or a badger: dark brown coat with a pale band along the flank.
 No carcass visible, no people, no text. Landscape 3:2.
 **Check:** boulders and snow both in frame; the pale flank band reads.
 
+## Batch 2: reptiles, amphibians and birds, 9 cards (researched 2026-10-22)
+
+Same rules as batch 1. Research and dropped fun facts: `docs/fact-sources/drafts-beastfile-2.json`.
+
+**Thorny devil: The Decoy Head Trick** (Reptiles, 🦎) → `/assets/facts/thorny-devil-decoy.jpg`
+A thorny devil carries a decoy. The knobby bump on the back of its neck works as a fake head. When threatened, the lizard tucks its real head down between its front legs, leaving the decoy on show while the real one stays protected.
+Source: Live Science
+
+A thorny devil in its defensive pose on a clump of spinifex grass, real head
+tucked down between its front legs so the round spiny knob on its neck sits
+highest and reads as the head. Seen from the side at ground level. Tan, rust
+and cream patterned spines. Overcast soft light, gray-green spinifex, not red
+sand (the hero already uses that). No people, no text. Landscape 3:2.
+**Check:** the real head is down and hidden, the neck knob is the highest point.
+
+**Thorny devil: 750 Ants a Day** (Reptiles, 🦎) → `/assets/facts/thorny-devil-ants.jpg`
+Thorny devils eat nothing but ants. A devil settles beside an ant trail and picks them off as they march past. Ants are not very nourishing, so it takes an estimated 750 a day. Feeding averages 2.9 ants a minute, and devils have been clocked at up to one ant per second.
+Source: Animal Diversity Web, University of Michigan Museum of Zoology
+
+Macro at ground level: a thorny devil crouched beside a line of small black
+ants marching across pale sand, its head turned to an ant at the edge of the
+trail. Spines sharp in the foreground, ant trail running diagonally through
+the frame. Low morning light, warm palette. 100mm macro. No people, no text.
+Landscape 3:2.
+**Check:** the ant trail is clearly visible and close to the lizard's mouth.
+
+**Glass frog: Blurry on Purpose** (Weird & Wonderful, 🐸) → `/assets/facts/glass-frog-edge.jpg`
+Glass frogs are always green, but they look brighter or darker to match the leaf they sit on. Their legs are more see-through than their bodies, so with the legs tucked in at rest, the frog's outline fades gradually into the leaf instead of making a sharp edge. Scientists call this edge diffusion.
+Source: University of Bristol
+
+Top-down view of a glass frog resting on a broad green leaf in daylight, legs
+tucked tight against its sides. The body is lime green, the tucked legs paler
+and more translucent so the outline fades into the leaf. Front lit, not
+backlit (the hero is backlit), no organs showing. Soft diffused rainforest
+light, all greens. 100mm macro. No people, no text. Portrait.
+**Check:** the frog's edge looks soft against the leaf; the legs are tucked.
+
+**Glass frog: Night Shift Parents** (Weird & Wonderful, 🐸) → `/assets/facts/glass-frog-eggs.jpg`
+Glass frog eggs hang on leaves over streams, a tasty snack for snakes and insects. A study of at least 40 species found parental care in every one sampled. In many species the mother broods the eggs on their first night. In almost a third, the father stands guard far longer, even after the eggs start hatching.
+Source: Boston University
+
+Night photograph of a male glass frog sitting beside a clutch of clear jelly
+eggs on the underside of a leaf hanging over a dark stream, small dark embryos
+visible in the eggs. Lime green frog, gold-flecked eyes. Side flash, black
+background, water faintly visible below. 100mm macro. No people, no text.
+Landscape 3:2.
+**Check:** the frog is next to the eggs, and the eggs are on a leaf over water.
+
+**Axolotl: Last Stand in the Canals** (Weird & Wonderful, 🦎) → `/assets/facts/axolotl-wild.jpg`
+Wild axolotls live in just one place on Earth: the canals and wetlands of Xochimilco in Mexico City. Surveys counted an estimated 6,000 per square kilometer in 1998 and just 36 in 2014, a 99 percent drop. A newer survey netted none at all, though DNA traces in the water show some still survive.
+Source: Conservation International
+
+Underwater photograph of a wild axolotl in a murky green Xochimilco canal,
+dark mottled olive and brown skin, feathery dark gills, resting among water
+plants and roots. Not pink, not white, not gold: this is the wild color.
+Dim green water, particles in the light, chinampa roots behind. No people, no
+boats, no text. Landscape 3:2.
+**Check:** the animal is dark and mottled, and the water looks like a real canal,
+not an aquarium.
+
+**Shoebill: A Nest Built for One** (Birds, 🦢) → `/assets/facts/shoebill-chick.jpg`
+A shoebill can lay one to three eggs, five days apart, but usually only one chick survives to fly. The reason is grim: the older chick kills the younger one. It is called siblicide, and it has been caught on film in Zambia's Bangweulu Wetlands.
+Source: NatureUganda and ZSL EDGE of Existence
+
+A shoebill parent standing over a flattened reed nest in a papyrus swamp,
+looking down at a single fluffy gray chick with an oversized bill. One chick
+only, no second chick, no violence. Overcast humid light, green and gray
+palette, 400mm from the side. Not a heron or a stork. No people, no text.
+Landscape 3:2.
+**Check:** one chick, and both birds have the shoe-shaped bill.
+
+**Shoebill: Cooling Off by the Billful** (Birds, 🦢) → `/assets/facts/shoebill-water.jpg`
+Both shoebill parents tend the eggs: they incubate them, turn them and even cool them down, using water they carry to the nest in their huge bills. It works like a built-in bucket for nest-side air conditioning. The eggs hatch in about a month.
+Source: National Geographic
+
+A shoebill walking through shallow water toward its reed nest, bill tilted
+down, water spilling from the bill tip in a bright stream. Mid-stride, wings
+folded. Morning backlight makes the dripping water glow. Not in profile
+standing still (the hero already does that). No people, no text. Portrait.
+**Check:** water is visibly pouring from the bill.
+
+**Emperor penguin: The Penguin Wave** (Birds, 🐧) → `/assets/facts/penguin-huddle.jpg`
+Emperor penguins in a winter huddle are packed so tightly that no bird can move on its own. So every 30 to 60 seconds, they all take small steps together, and the movement travels through the huddle like a wave. Over time these shuffles reorganize the whole huddle, giving each penguin a chance at time inside it.
+Source: PLoS ONE (2011)
+
+High elevated view over a dense emperor penguin huddle in a blizzard on
+Antarctic sea ice, hundreds of adults packed shoulder to shoulder, snow
+streaming sideways, a slight ripple running through the backs of the birds.
+Blue polar twilight, white and slate palette. No chicks, no people, no text.
+Landscape 3:2.
+**Check:** emperors (orange ear patches on the nearest birds), packed tight,
+seen from above.
+
+**Crow: Counting Crows** (Birds, 🐦‍⬛) → `/assets/facts/crow-calling.jpg`
+Carrion crows can plan how many calls to make. In a lab study, three crows saw a numeral or heard a cue sound, then called one to four times to match it and pecked an enter key when done. All three succeeded, and the sound of the first call even predicted how many would follow.
+Source: University of Tübingen
+
+A carrion crow perched on a weathered fence post in a misty European field,
+beak wide open mid-call, throat feathers puffed. All black, heavy bill, square
+tail. Not a raven (no shaggy throat, no wedge tail) and not a hooded crow (no
+gray body). Pale gray morning mist, soft light, 400mm. No numbers, screens,
+people or text. Portrait.
+**Check:** the beak is open, the bird is all black.
+
 ## Every authored fun fact, and where it stands
 
 Recorded 2026-10-22 before any `funFacts` array is deleted, so nothing is lost.
@@ -273,9 +377,9 @@ candidates: unsourced, so they need research before they become cards.
 | Cuttlefish | 2 | 1 | 3 |
 | Humpback whale | 1 | 2 | 3 |
 
-Their authored fun facts are the starting candidates for each batch. Batch 1
-(mammals, 13 cards) is drafted above. Batches 2 (reptiles, amphibians and
-birds, 9 cards) and 3 (marine, 10 cards) are next.
+Their authored fun facts are the starting candidates for each batch. Batches 1
+(mammals, 13 cards) and 2 (reptiles, amphibians and birds, 9 cards) are
+drafted above. Batch 3 (marine, 10 cards) is next.
 
 Shipped entries are not kept here. They live in
 `archive/docs-completed/BEASTLYPEDIA_FACT_GAPS_COMPLETED_2026-09-17.md`.
