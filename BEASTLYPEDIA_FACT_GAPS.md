@@ -316,6 +316,117 @@ gray body). Pale gray morning mist, soft light, 400mm. No numbers, screens,
 people or text. Portrait.
 **Check:** the beak is open, the bird is all black.
 
+## Batch 3: marine, 10 cards (researched 2026-10-22)
+
+Same rules as batch 1. Research and dropped fun facts: `docs/fact-sources/drafts-beastfile-3.json`.
+
+**Giant manta ray: Belly Spots Tell Who's Who** (Ocean, 🐠) → `/assets/facts/manta-belly-spots.jpg`
+A giant manta ray carries a pattern of spots on its belly, and those patterns are distinct enough that scientists use them to tell one manta from another. Anyone can help: NOAA asks people who see a giant manta to send in photos, which can be used to identify individual rays.
+Source: NOAA Fisheries
+
+A giant manta ray banking low over white sand, close to the camera, its pale
+underside turned toward the lens so the scattered black spots on its belly
+fill most of the frame. Wingtips curving up, gill slits visible. Not seen from
+far below against the sun (the hero already does that). Clear turquoise water,
+bright even light. No divers, no people, no text. Landscape 3:2.
+**Check:** the belly spots are sharp and readable.
+
+**Giant manta ray: A Spa Day on the Reef** (Ocean, 🐠) → `/assets/facts/manta-cleaning.jpg`
+Giant manta rays drop by coral reef cleaning stations, where they hover while small cleaner fish pick parasites off their bodies. In Indonesia, scientists who tagged 41 of these mantas found they kept coming back to the same favorite stations, and the visits happened mostly in daylight.
+Source: Frontiers in Fish Science (2024)
+
+A giant manta ray hovering motionless just above a coral bommie, small
+blue-and-yellow cleaner wrasse darting at its gill slits and wing edges.
+Seen from the side and slightly above, coral in sharp focus below. Soft blue
+light, warm coral tones. No divers, no people, no text. Landscape 3:2.
+**Check:** the little cleaner fish are visibly on or next to the manta.
+
+**Leafy sea dragon: Dad Carries the Eggs** (Ocean, 🐉) → `/assets/facts/leafy-sea-dragon-eggs.jpg`
+In leafy sea dragons, the dad does the carrying. A female lays 250 to 300 eggs and pushes them into the soft skin under the male's tail. His skin hardens into a cup around each egg, holding it safe for six to eight weeks until the babies hatch.
+Source: Aquarium of the Pacific
+
+A male leafy sea dragon drifting near kelp, side view, a dense patch of small
+round eggs embedded along the underside of his tail. Leaf-shaped lobes, long
+tube snout, gold and olive body. Not a seahorse: the tail is straight, not
+curled. Dappled green-gold light, soft focus kelp behind. No divers, no text.
+Landscape 3:2.
+**Check:** the egg patch under the tail is clearly visible.
+
+**Leafy sea dragon: Always Finds Its Way Home** (Ocean, 🐉) → `/assets/facts/leafy-sea-dragon-seagrass.jpg`
+A leafy sea dragon is a slow mover, but it has a great sense of direction. It can travel hundreds of meters away from home and still return to exactly the same place, like a tiny homing beacon in the seaweed.
+Source: Government of South Australia, Department for Environment and Water
+
+Wide shot of a single leafy sea dragon hovering above a broad seagrass meadow
+on a sandy seabed, small in the frame, the meadow stretching away into blue
+water. Gold and green leafy lobes, long snout. Not among kelp (the hero already
+is). Calm, spacious, soft daylight from above. No divers, no text. Landscape 3:2.
+**Check:** it reads as a leafy, not a weedy sea dragon (big leaf lobes).
+
+**Humpback whale: Tails Like Fingerprints** (Ocean, 🐋) → `/assets/facts/humpback-fluke-pattern.jpg`
+Every humpback whale carries an ID card on its tail. The black and white pattern under its flukes, together with their shape and any scars, is unique to each animal. Scientists photograph these tails like fingerprints to identify individual whales and track them over time.
+Source: NOAA Fisheries
+
+A humpback whale's tail flukes rising straight up as it dives, shot from
+directly behind and close, so the underside fills the frame and shows a bold,
+irregular black and white pattern with a few pale scratch scars and a ragged
+trailing edge. Water sheeting off the edges. Not a distant fluke silhouette
+(the Beastfile secondary already shows a raised fluke from the side). Overcast
+light, gray-blue sea. No boats, no people, no text. Landscape 3:2.
+**Check:** the underside pattern is sharp and fills the frame.
+
+**Humpback whale: A Fishing Trick That Spread** (Ocean, 🐋) → `/assets/facts/humpback-lobtail.jpg`
+In 1980, a humpback in the Gulf of Maine was first seen slapping the water with its tail one to four times before diving to blow a bubble net. This lobtail feeding spread through the Gulf's humpbacks, and a whale was more likely to pick it up if it spent time with one that already did it.
+Source: National Geographic
+
+A humpback whale slapping the sea surface with its tail flukes, a burst of
+white spray, and a faint ring of rising bubbles breaking the surface a short
+distance away. Cold gray-green North Atlantic water, low cloud. Wide, from a
+low angle at the waterline. No boats, no people, no text. Landscape 3:2.
+**Check:** the tail is hitting the water, and the bubble ring is visible.
+
+**Shark: Skin Made of Teeth** (Ocean, 🦈) → `/assets/facts/shark-skin.jpg`
+A shark's skin is covered in tiny scales called dermal denticles, which are more like teeth than skin. Made of dentin and enamel, they overlap like roof shingles. Stroke a shark from head to tail and it feels smooth. Go the other way and it is rough like sandpaper. Their ribbed pattern cuts friction and drag.
+Source: Smithsonian Magazine
+
+Extreme macro of a shark's skin seen at a low raking angle, showing rows of
+tiny overlapping ribbed scales like shingles, the texture catching the light.
+Gray-blue tones, part of a gill slit at the edge of the frame for scale. Must
+read as skin, not fabric or a fish scale pattern. Underwater, soft light.
+No people, no text. Landscape 3:2.
+**Check:** the tiny ribbed scales are visible, and a gill slit anchors it as a shark.
+
+**Shark: Centuries-Old Sharks** (Ocean, 🦈) → `/assets/facts/shark-greenland.jpg`
+Greenland sharks are the longest-lived vertebrates known. Scientists radiocarbon-dated the eye lenses of 28 females and found a life span of at least 272 years. The biggest, at 502 centimeters long, was estimated at 392 years old, give or take 120 years.
+Source: Science (2016)
+
+A Greenland shark gliding slowly through dark, cold Arctic water under a
+ceiling of sea ice, seen from the side. Thick gray-brown body, small dorsal
+fins, blunt rounded snout, a small cloudy eye. Not a great white or a blue
+shark: no tall dorsal fin, no pointed snout. Dim blue-green light filtering
+through the ice. No divers, no text. Landscape 3:2.
+**Check:** the blunt snout and small fins read as a Greenland shark.
+
+**Mantis shrimp: The Double Punch** (Ocean, 🦐) → `/assets/facts/mantis-shrimp-strike.jpg`
+A peacock mantis shrimp swings its club so fast underwater that cavitation bubbles form between club and shell. Each strike hits twice: first the club, then the collapsing bubbles, typically 390 to 480 millionths of a second later. The impact can be thousands of times the shrimp's body weight.
+Source: Journal of Experimental Biology (2005)
+
+Macro of a peacock mantis shrimp striking a small snail shell on a reef
+ledge, clubs extended, a cluster of tiny bubbles at the point of impact.
+Green body, orange legs, leopard-spotted front, stalked eyes. Frozen high-speed
+moment. Dark reef background, strobe lighting. No hands, no text. Landscape 3:2.
+**Check:** the clubs are in contact with the shell, and the bubbles show.
+
+**Cuttlefish: Two-Faced Flirting** (Ocean, 🦑) → `/assets/facts/cuttlefish-two-faced.jpg`
+A male mourning cuttlefish can court a female and fool a rival at the same time. He shows pulsating male stripes on the side facing her and mottled female colors on the side facing the rival, which keeps him from disrupting the courtship. He usually saves this trick for when just one female and one male can see him.
+Source: The Royal Society
+
+A male mourning cuttlefish seen from above over sand, its body split down the
+middle in two different patterns: bold pulsing dark stripes on the left half,
+plain mottled brown and cream on the right half. A second cuttlefish faces
+each side at the edges of the frame. Clear shallow water, bright daylight.
+No divers, no text. Landscape 3:2.
+**Check:** the two halves of the middle cuttlefish clearly differ.
+
 ## Every authored fun fact, and where it stands
 
 Recorded 2026-10-22 before any `funFacts` array is deleted, so nothing is lost.
@@ -377,9 +488,9 @@ candidates: unsourced, so they need research before they become cards.
 | Cuttlefish | 2 | 1 | 3 |
 | Humpback whale | 1 | 2 | 3 |
 
-Their authored fun facts are the starting candidates for each batch. Batches 1
-(mammals, 13 cards) and 2 (reptiles, amphibians and birds, 9 cards) are
-drafted above. Batch 3 (marine, 10 cards) is next.
+Their authored fun facts are the starting candidates for each batch. All three batches
+are drafted above: 1 (mammals, 13 cards), 2 (reptiles, amphibians and birds,
+9 cards) and 3 (marine, 10 cards).
 
 Shipped entries are not kept here. They live in
 `archive/docs-completed/BEASTLYPEDIA_FACT_GAPS_COMPLETED_2026-09-17.md`.
