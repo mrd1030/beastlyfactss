@@ -1,0 +1,277 @@
+[
+ {
+  "draft": "capybara-teeth",
+  "beastfile": "capybara",
+  "animal": "Capybara",
+  "category": "Mammals",
+  "emoji": "🦫",
+  "title": "Teeth That Keep Growing",
+  "fact": "Like other rodents, capybaras have long, sharp front teeth for slicing through plants. All that chewing on vegetation wears them down, so the teeth keep growing throughout a capybara's life. Steady wear plus steady growth keeps them sharp.",
+  "photo": "/assets/facts/capybara-teeth.jpg",
+  "publisher": "Columbus Zoo and Aquarium",
+  "url": "https://www.columbuszoo.org/animals/capybara",
+  "quote": "Like other rodents, capybaras have long, sharp front teeth that help them slice through plants. These teeth wear down as they chew on vegetation, which is why they keep growing throughout their lives to stay sharp.",
+  "status": "confirmed",
+  "note": "Backup: San Diego Zoo factsheet (ielc.libguides.com/sdzg/factsheets/capybaras/characteristics): 'Teeth of capybara grow throughout life in all dimensions'."
+ },
+ {
+  "draft": "narwhal-ridge",
+  "beastfile": "narwhal",
+  "animal": "Narwhal",
+  "category": "Ocean",
+  "emoji": "🐳",
+  "title": "No Fin, No Problem",
+  "fact": "A narwhal has no dorsal fin. Instead, a low ridge about 5 cm high runs along about half of its back. Scientists think going finless helps it move among sea ice, and the ridge has a second use: researchers can tell one narwhal from another by it.",
+  "photo": "/assets/facts/narwhal-ridge.jpg",
+  "publisher": "Hinterland Who's Who",
+  "url": "https://www.hww.ca/wildlife/mammals/narwhal/",
+  "quote": "Narwhals lack a dorsal fin on their backs, but they do have a dorsal ridge about 5 cm high that covers about half their backs. This ridge can be used by researchers to differentiate one narwhal from another. It is thought that the absence of dorsal fin actually helps the narwhal navigate among sea ice.",
+  "status": "confirmed",
+  "note": "Ridge sentence re-checked verbatim 2026-10-22. Same page confirms a rare second tusk ('it rarely but on occasion develops into a second tusk'), a spare candidate."
+ },
+ {
+  "draft": "aye-aye-pseudothumb",
+  "beastfile": "aye-aye",
+  "animal": "Aye-aye",
+  "category": "Weird & Wonderful",
+  "emoji": "🐒",
+  "title": "A Hidden Extra Thumb",
+  "fact": "Aye-ayes have a tiny extra thumb on each hand, called a pseudothumb, complete with its own fingerprints. It has a bone, a cartilage extension and three muscles to move it, and it can push with a force equal to almost half the aye-aye's body weight. It is the first extra digit ever found in a primate.",
+  "photo": "/assets/facts/aye-aye-pseudothumb.jpg",
+  "publisher": "North Carolina State University",
+  "url": "https://www.newswise.com/articles/gimme-six-researchers-discover-aye-aye-s-extra-finger",
+  "quote": "A study led by researchers from North Carolina State University has found that aye-ayes possess small \"pseudothumbs\" – complete with their own fingerprints – that may help them grip objects and branches as they move through trees. This is the first accessory digit ever found in a primate. ... \"It has both a bone and cartilaginous extension and three distinct muscles that move it. The pseudothumb can wriggle in space and exert an amount of force equivalent to almost half the aye-aye's body weight.\"",
+  "status": "confirmed",
+  "note": "NCSU press release (study: American Journal of Physical Anthropology, October 2019) via Newswise; the NCSU original returned 503. The old candidate called it a 2022 discovery: wrong, 2019."
+ },
+ {
+  "draft": "aye-aye-squirrel",
+  "beastfile": "aye-aye",
+  "animal": "Aye-aye",
+  "category": "Weird & Wonderful",
+  "emoji": "🐒",
+  "title": "Mistaken for a Squirrel",
+  "fact": "When French explorers brought two aye-ayes to Europe in 1780, naturalists ranked them with the rodents, as close cousins of squirrels. It was an easy mistake: aye-ayes have ever-growing front teeth like a rodent's and a squirrel-like skull. By the mid-1800s they had been correctly identified as primates.",
+  "photo": "/assets/facts/aye-aye-gnawing.jpg",
+  "publisher": "University of York",
+  "url": "https://www.york.ac.uk/archaeology/about/news/2018/scientists-discover-aye-aye-unusual-features/",
+  "quote": "When two aye-ayes were first brought back to Europe from their native Madagascar by French explorers in 1780, they were \"ranked with the rodents\" and believed to be \"more closely allied to the genus of squirrel than any other\". ... have not only led to the aye-aye evolving the ever-growing incisors characteristic of rodents, but has also given it a squirrel-like skull and jaw. ... By the mid-19th Century the aye-aye had been correctly identified as a primate",
+  "status": "confirmed",
+  "note": "2018 York news release on a Biology Letters study. The page does not say the teeth caused the 1780 ranking, so the card says 'an easy mistake' rather than giving a reason."
+ },
+ {
+  "draft": "wolf-pups",
+  "beastfile": "gray-wolf",
+  "animal": "Wolf",
+  "category": "Mammals",
+  "emoji": "🐺",
+  "title": "Raised by the Whole Pack",
+  "fact": "Wolf pups are born in early spring, and the whole pack helps raise them. For the first month they live on their mother's milk. After that, other pack members feed them meat carried home in their stomachs and brought back up. By 7 to 8 months old, the pups are traveling with the adults.",
+  "photo": "/assets/facts/wolf-pups.jpg",
+  "publisher": "National Park Service",
+  "url": "https://www.nps.gov/articles/life-of-a-wolf.htm",
+  "quote": "Pups are born in early spring and are cared for by the entire pack. They depend on their mother's milk for the first month, and then they are gradually weaned and fed regurgitated meat by other pack members. ... By 7 to 8 months of age, when almost fully grown, the pups begin traveling with the adults.",
+  "status": "confirmed",
+  "note": "Animal is 'Wolf' to match the Beastfile's factAnimal."
+ },
+ {
+  "draft": "lion-mane",
+  "beastfile": "lion",
+  "animal": "Lion",
+  "category": "Mammals",
+  "emoji": "🦁",
+  "title": "The Mane Is a Message",
+  "fact": "A lion's mane does not seem to be mainly a neck shield: neck wounds turn out to be no more common or deadly than wounds anywhere else. It works more like a signal. Males with darker manes have more testosterone and better cub survival, and lionesses find dark manes far more attractive than blond ones.",
+  "photo": "/assets/facts/lion-dark-mane.jpg",
+  "publisher": "The Lion Center, University of Minnesota",
+  "url": "https://lioncenter.umn.edu/our-work/mane-research",
+  "quote": "If the mane primarily serves as a shield, the neck should be a special target of attacks or wounds to the neck should be particularly dangerous. However, wounds in adult males and in females and sub-adult males (whose neck areas are bare) were no more common on the neck than on other parts of the body nor were wounds to the neck more likely to be fatal. ... In contrast, females were indifferent to mane length, but they found darker manes much more attractive than blonds. ... Males with darker manes had higher testosterone levels, were more likely to recover from injury, spent more time resident with prides, and had higher offspring survival.",
+  "status": "confirmed",
+  "note": "Packer lab summary of West and Packer, Science 2002. Quote re-checked verbatim 2026-10-22."
+ },
+ {
+  "draft": "tiger-swimming",
+  "beastfile": "tiger",
+  "animal": "Tiger",
+  "category": "Mammals",
+  "emoji": "🐅",
+  "title": "Stripes Go Swimming",
+  "fact": "Tigers are strong swimmers. They often slip into the water to cool off or to escape biting flies, and they can easily cross rivers and lakes 5 miles (8 km) wide. Some have even been recorded hunting in the water.",
+  "photo": "/assets/facts/tiger-swimming.jpg",
+  "publisher": "Smithsonian's National Zoo and Conservation Biology Institute",
+  "url": "https://nationalzoo.si.edu/animals/tiger",
+  "quote": "Tigers are adept swimmers and have even been recorded hunting in the water. ... Tigers are adept swimmers. They often go into the water to escape flies or cool off, and can easily cross rivers and lakes 5 miles (8 km) wide.",
+  "status": "confirmed",
+  "note": "'Unlike most cats' cut: not on this page."
+ },
+ {
+  "draft": "rhino-last-two",
+  "beastfile": "rhinoceros",
+  "animal": "Rhino",
+  "category": "Mammals",
+  "emoji": "🦏",
+  "title": "Down to the Last Two",
+  "fact": "Only two northern white rhinos are left on Earth, Najin and Fatu, and both are females. Scientists have now produced 39 northern white rhino embryos. In late 2025 they transferred three into southern white rhino surrogate mothers, but none became a lasting pregnancy. The team keeps trying.",
+  "photo": "/assets/facts/rhino-white-pair.jpg",
+  "publisher": "Ol Pejeta Conservancy",
+  "url": "https://www.olpejetaconservancy.org/2026/04/22/new-embryo-boosts-survival-chances-for-the-northern-white-rhino/",
+  "quote": "This brings the total number of pure Northern White Rhino embryos produced so far to 39, boosting our hopes for the future of this imperiled subspecies. With only two females left on Earth, the Northern White Rhino is functionally extinct from a natural breeding standpoint ... In the second half of 2025, the team of experts ... successfully conducted three Northern White Rhino embryo transfers into Southern White Rhino surrogate mothers at Ol Pejeta Conservancy in the hope of a pregnancy down the line. Unfortunately none of these attempts have turned into a long term pregnancy. ... both remaining females, Najin and Fatu, were born here.",
+  "status": "confirmed",
+  "note": "Dated claim (BioRescue update of 2026-04-22). Recheck the embryo count and transfers on the day it ships. The 2024 'first rhino IVF pregnancy' was a southern white embryo in a southern white surrogate, not a northern white pregnancy."
+ },
+ {
+  "draft": "honey-badger-receptor",
+  "beastfile": "honey-badger",
+  "animal": "Honey Badger",
+  "category": "Mammals",
+  "emoji": "🦡",
+  "title": "A Lock Venom Can't Pick",
+  "fact": "A honey badger is born with a defense against snake venom. Toxins from cobras and their relatives attack a receptor on muscle, and in honey badgers that receptor carries a swapped building block that stops the toxin from latching on. Hedgehogs and pigs evolved the same fix on their own. Mongooses use a different change at the very same spot.",
+  "photo": "/assets/facts/honey-badger-cobra.jpg",
+  "publisher": "Toxicon (2015)",
+  "url": "https://experts.umn.edu/en/publications/why-the-honey-badger-dont-care-convergent-evolution-of-venom-targ/",
+  "quote": "Honey badgers (Mellivora capensis) prey upon and survive bites from venomous snakes (Family: Elapidae), but the molecular basis of their venom resistance is unknown. The muscular nicotinic cholinergic receptor (nAChR), targeted by snake α-neurotoxins, has evolved in some venom-resistant mammals to no longer bind these toxins. Through phylogenetic analysis of mammalian nAChR sequences, we show that honey badgers, hedgehogs, and pigs have independently acquired functionally equivalent amino acid replacements in the toxin-binding site of this receptor. ... In venom-resistant mongooses, different replacements at these same sites are glycosylated, which is thought to disrupt binding through steric effects.",
+  "status": "confirmed",
+  "note": "Drabeck, Dean and Jansa 2015, Toxicon 99:68-72 (not Toxins). The old fun fact said the mongoose has the same kind of change: wrong, it is a different change at the same sites. Conflicts with card 70's 'build up some venom resistance over a lifetime'."
+ },
+ {
+  "draft": "wombat-rump",
+  "beastfile": "wombat",
+  "animal": "Wombat",
+  "category": "Weird & Wonderful",
+  "emoji": "🐻",
+  "title": "A Bottom Built Like a Shield",
+  "fact": "A threatened wombat can block its burrow entrance with its backside. The rump holds a large plate of fascia, a tough connective tissue, and has very few nerve endings, so a fox or dog biting at it generally does little harm. The fur there is short, giving a predator nothing to grab.",
+  "photo": "/assets/facts/wombat-rump.jpg",
+  "publisher": "IFLScience",
+  "url": "https://www.iflscience.com/wombat-butts-weapons-of-destruction-obstruction-and-seduction-57688",
+  "quote": "\"[They] have a large fascia plate in their rump area. This allows them to block the entrance to their burrows if they feel threatened. The area has very little nerve endings, so even if a predator (such as a dog, fox or dingo) scratches or bites, they generally won't be harmed.\" ... The fur that covers the fascia plate is short to avoid being used as a means of pulling the wombat from its burrow",
+  "status": "partly",
+  "note": "Weak source: a 2020 science news piece quoting Bonorong Wildlife Sanctuary staff. Carver et al. 2024 (Annual Review of Animal Biosciences) is the better one but annualreviews.org returns 403 and the PDF mirror is gone. Australian Geographic (2020) instead says 'four fused plates surrounded by cartilage', so the popular press is split. 'A tough connective tissue' is a gloss, not quoted. Crushing left out: contested."
+ },
+ {
+  "draft": "wombat-energy",
+  "beastfile": "wombat",
+  "animal": "Wombat",
+  "category": "Weird & Wonderful",
+  "emoji": "🐻",
+  "title": "Running on Low Battery",
+  "fact": "Wombats live on a tiny energy budget. When scientists measured wild wombats of all three species, every one burned less energy than other marsupials and far less than expected for a plant-eating mammal. In lean seasons, wombats cut their energy use to about half of what they spend when food is plentiful.",
+  "photo": "/assets/facts/wombat-sleeping.jpg",
+  "publisher": "Oecologia (2003)",
+  "url": "https://europepmc.org/article/MED/12883985",
+  "quote": "We measured seasonal field metabolic rates (FMR) and water fluxes in the three species of free-living wombat using the doubly labelled water technique ... Seasonal FMRs for all wombat species were lower than that recorded for other marsupials and well below that predicted for herbivorous mammals. ... Wombats maintained energy balance during the poor season by reducing FMR to about half that of the good season. ... We conclude that the energetically frugal lifestyle of the Vombatidae is amongst the most extreme for mammals.",
+  "status": "partly",
+  "note": "Evans, Green and Newgrain 2003, Oecologia, doi 10.1007/s00442-003-1322-4. Quote read from the Europe PMC API record (the europepmc.org page returns 403 to fetch). The 40 to 60 percent figure is not in this abstract (it gives 40% for the northern hairy-nosed wombat in the dry season), so it is left out. 40 to 80 hour gut passage could not be confirmed on any fetchable page."
+ },
+ {
+  "draft": "platypus-chromosomes",
+  "beastfile": "platypus",
+  "animal": "Platypus",
+  "category": "Weird & Wonderful",
+  "emoji": "🦫",
+  "title": "Ten Sex Chromosomes",
+  "fact": "A male platypus carries ten sex chromosomes: five X and five Y. Females carry two copies of each of the five X's. When sperm form, all ten link up in a single chain, then split so that each sperm carries either all five X's or all five Y's.",
+  "photo": "/assets/facts/platypus-diving.jpg",
+  "publisher": "Nature (2004)",
+  "url": "https://europepmc.org/article/MED/15502814",
+  "quote": "Here we demonstrate that platypus have five male-specific chromosomes (Y chromosomes) and five chromosomes present in one copy in males and two copies in females (X chromosomes). These ten chromosomes form a multivalent chain at male meiosis, adopting an alternating pattern to segregate into XXXXX-bearing and YYYYY-bearing sperm.",
+  "status": "confirmed",
+  "note": "Grutzner et al. 2004, Nature, doi 10.1038/nature03021. Quote read from the Europe PMC API record. Spare candidate confirmed by the Australian Museum: it closes its eyes, ears and nostrils underwater and hunts with pressure receptors and electroreceptors in the bill (the 40,000 figure is not on that page)."
+ },
+ {
+  "draft": "wolverine-cache",
+  "beastfile": "wolverine",
+  "animal": "Wolverine",
+  "category": "Mammals",
+  "emoji": "🦡",
+  "title": "Nature's Deep Freezer",
+  "fact": "Wolverines stash food in snow and in cold cracks between mountain boulders. Researchers think these icy hiding spots work like a refrigerator, guarding carrion from scavengers, insects and bacteria. The stored food helps nursing mothers from February through April, when fresh meals are scarce.",
+  "photo": "/assets/facts/wolverine-cache.jpg",
+  "publisher": "Wildlife Conservation Society",
+  "url": "https://www.sciencedaily.com/releases/2012/07/120712141518.htm",
+  "quote": "The paper suggests wolverines take advantage of the crevices and boulders of the mountainous terrain, as well as the snow cover to cache and \"refrigerate\" food sources such as elk, caribou, moose and mountain goat carrion, ground squirrels and other food collected during more plentiful times of year. These cold, structured chambers provide protection of the food supply from scavengers, insects and bacteria. ... the lactation phase in females (February through April) corresponds to a period of low availability of food resources.",
+  "status": "confirmed",
+  "note": "WCS release on Inman et al. 2012, Journal of Mammalogy 93(3):634, via ScienceDaily."
+ },
+ {
+  "animal": "Capybara",
+  "rejected": "It can sleep in water, keeping only its nose above the surface.",
+  "reason": "Columbus Zoo says only that capybaras 'may occasionally sleep in the water'; the nose detail is unconfirmed."
+ },
+ {
+  "animal": "Narwhal",
+  "rejected": "Medieval traders sold narwhal tusks as unicorn horn, at prices that could exceed their weight in gold.",
+  "reason": "Unicorn horn trade confirmed (Hinterland Who's Who); the weight-in-gold value is not."
+ },
+ {
+  "animal": "Aye-aye",
+  "rejected": "It fills the ecological role woodpeckers occupy elsewhere. Madagascar has no woodpeckers.",
+  "reason": "A long-standing hypothesis, not a settled fact, and no credible fetched page states it."
+ },
+ {
+  "animal": "Aye-aye",
+  "rejected": "The middle finger has a ball-and-socket joint, so it rotates almost freely while probing.",
+  "reason": "Not researched: overlaps card 188."
+ },
+ {
+  "animal": "Wolf",
+  "rejected": "The researcher most responsible for the alpha idea asked his own publisher to stop reprinting the book.",
+  "reason": "Not researched: the alpha topic is card 169."
+ },
+ {
+  "animal": "Lion",
+  "rejected": "Lionesses in a pride often give birth around the same time and raise the cubs as one group.",
+  "reason": "Not researched yet; a spare candidate."
+ },
+ {
+  "animal": "Lion",
+  "rejected": "A male coalition that takes over a pride will usually kill the cubs of the previous males.",
+  "reason": "Not researched; 'usually' needs a source."
+ },
+ {
+  "animal": "Tiger",
+  "rejected": "More tigers live in captivity in some countries than exist in the wild worldwide.",
+  "reason": "US captive estimates range from about 5,000 to over 10,000 and are disputed; cannot be stated cleanly."
+ },
+ {
+  "animal": "Rhino",
+  "rejected": "The northern white rhino is down to two females, both unable to carry a pregnancy.",
+  "reason": "Two females confirmed (used on the card); 'unable to carry a pregnancy' is not on the source page."
+ },
+ {
+  "animal": "Honey Badger",
+  "rejected": "Its venom resistance comes from the same kind of receptor change that protects the mongoose.",
+  "reason": "Wrong: the mongoose has a different change at the same sites. Hedgehogs and pigs match the honey badger."
+ },
+ {
+  "animal": "Honey Badger",
+  "rejected": "One studied individual repeatedly stacked objects to escape an enclosure.",
+  "reason": "Documentary only (Stoffel, Moholoholo); not researched."
+ },
+ {
+  "animal": "Wombat",
+  "rejected": "It can block a burrow with its rump and crush a predator against the roof.",
+  "reason": "Crushing is contested: speculation per Australian Geographic, 'no evidence' per a University of Adelaide biologist in Mental Floss."
+ },
+ {
+  "animal": "Wombat",
+  "rejected": "Food takes about 40 to 80 hours to pass (Beastfile notable trait).",
+  "reason": "Not confirmed on any fetchable page; attributed to Carver et al. 2024, which is behind a 403."
+ },
+ {
+  "animal": "Platypus",
+  "rejected": "The venom will not kill a person but the pain is severe and can last for weeks.",
+  "reason": "Not researched; a spare candidate."
+ },
+ {
+  "animal": "Wolverine",
+  "rejected": "Its fur resists frost build-up, which is why it was traditionally used to trim parka hoods.",
+  "reason": "Not researched; known to be questioned."
+ },
+ {
+  "animal": "Wolverine",
+  "rejected": "The species name Gulo gulo means glutton twice over.",
+  "reason": "Not researched; a spare candidate."
+ }
+]
