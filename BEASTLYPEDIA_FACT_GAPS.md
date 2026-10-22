@@ -21,19 +21,29 @@ reuse, including from the Beastfile hero or secondary images already on disk.
 
 ## Promoting a fact once its photo exists
 
-1. Drop the photo into `public/assets/facts/` under the filename in the table.
-2. Append the fact to `src/lib/data/facts.js` with the next free id, title,
-   emoji, animal, category and text. Keep ids contiguous and never renumber.
-3. Add the id to `FACT_IMAGES` in **both** `src/lib/data/factImages.js` and
-   `public/_worker.js`. The worker cannot import the module, and it is what
-   drives `og:image`, so the two copies are synced by hand.
+1. Drop the photo into `public/assets/facts/` under the filename in the table
+   (mozjpeg at quality 80, never enlarged).
+2. Log it in `IMAGE_CREDITS.md` under "Which tool made each AI image", with
+   the tool and the date.
+3. Append the fact to `src/lib/data/facts.js` with the next free id, title,
+   emoji, animal, category and text, and add the id to `FACT_IMAGES` in
+   **both** `src/lib/data/factImages.js` and `public/_worker.js`, all in the
+   same commit. Keep ids contiguous and never renumber. The worker cannot
+   import the module, and it is what drives `og:image`, so the two copies are
+   synced by hand. A fact without its `FACT_IMAGES` entry silently falls back
+   to the animal-level photo, which is already another fact's photo, and no
+   check catches it.
 4. `node scripts/generate-thumbnails.js`
 5. `node scripts/generate-beastlypedia-index.js`
-6. Move its research entry from `docs/fact-sources/drafts-*.json` into a
+6. `node scripts/generate-beastle.mjs`. The build does not run it, and without
+   it the new id never reaches Beastle (`src/lib/data/beastle/pool.json`).
+7. `node scripts/sync-facts.js`, so the tracked `public/facts.json` that the
+   social scripts read stays current.
+8. Move its research entry from `docs/fact-sources/drafts-*.json` into a
    `docs/fact-sources/new-<date>.json` pass under its new id, then
    `node scripts/generate-fact-sources.mjs`. The build fails on a fact with no
    source. Drafts files are ignored by the generator until then.
-7. Delete the fact from this file.
+9. Delete the fact from this file.
 
 Step 5 is what moves the Beastfile off its authored fallback. The script prints
 which Beastfiles still have no facts.
