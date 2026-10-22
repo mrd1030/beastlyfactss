@@ -275,7 +275,7 @@ candidates: unsourced, so they need research before they become cards.
 
 Their authored fun facts are the starting candidates for each batch. Batch 1
 (mammals, 13 cards) is drafted above. Batches 2 (reptiles, amphibians and
-birds, 10 cards) and 3 (marine, 9 cards) are next.
+birds, 9 cards) and 3 (marine, 10 cards) are next.
 
 Shipped entries are not kept here. They live in
 `archive/docs-completed/BEASTLYPEDIA_FACT_GAPS_COMPLETED_2026-09-17.md`.
