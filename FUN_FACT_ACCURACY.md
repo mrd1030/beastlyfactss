@@ -29,7 +29,7 @@ Suggested fixes are a starting point, not final copy. Recheck each against its
 source before applying it, and read the box in its article first. Line numbers
 were taken on 2026-10-22 and can drift as files change.
 
-**108 findings:** 34 wrong, 4 outdated, 51 overstated, 19 unverified. 77 more claims were confirmed on recheck and are listed at the end.
+**106 findings:** 33 wrong, 4 outdated, 50 overstated, 19 unverified. 77 more claims were confirmed on recheck and are listed at the end.
 
 ## Guide fun facts (23)
 
@@ -160,9 +160,9 @@ were taken on 2026-10-22 and can drift as files change.
   - **Source:** "more than 300 specialized canine search and rescue (SAR) teams responded (no Rottweiler named among the dogs profiled)" (https://911memorial.org/connect/blog/rescue-recovery-20-four-legged-heroes)
   - **Suggested fix:** Despite the guarding reputation, a Rottweiler named Gator found the last survivor in the rubble of the 1995 Oklahoma City bombing.
 
-## Article fun fact boxes (85)
+## Article fun fact boxes (83)
 
-### Wrong (28)
+### Wrong (27)
 
 - `content/guides/amano-shrimp-cost-guide.mdx:69`
   - **Says:** resting on a species that still can't be farmed commercially
@@ -299,11 +299,6 @@ were taken on 2026-10-22 and can drift as files change.
   - **Problem:** A board-certified reptile veterinarian (Douglas Mader) calls cloacal drinking an old wives' tale; a study he supervised soaked six red-footed tortoises for 30 minutes and found no rehydration, only weight loss from urinating. Some turtles exchange electrolytes across the cloaca, which is not drinking.
   - **Source:** "There is an old wives' tale that a herp will suck fluid up through its cloaca. ... I have seen no proof that herps in general are able to absorb enough water through their cloacas to replace fluid deficits." (https://reptilesmagazine.com/?p=8674)
   - **Suggested fix:** A soak is a chance to drink, not a drink in itself. Watch for the head going down: a tortoise that never drinks during a soak has not rehydrated, even if it passes urine.
-- `content/guides/whites-tree-frog-tank-setup-guide.mdx:82` *(recheck)*
-  - **Says:** the bulb gets replaced every 6 to 8 months on a schedule
-  - **Problem:** Baines et al. 2016 tested Arcadia and ZooMed tubes over 4,000 hours and concluded some brands need no replacement for at least a year. Both makers' T5 HO guidance is 12 months.
-  - **Source:** "These results suggest that some brands may not need replacement for at least one year." (https://jzar.org/jzar/article/download/150/89)
-  - **Suggested fix:** the bulb gets replaced on a schedule, about every 12 months for a quality T5 tube, or sooner if a UV meter shows a drop
 
 ### Outdated (3)
 
@@ -323,7 +318,7 @@ were taken on 2026-10-22 and can drift as files change.
   - **Source:** "in 2022, 59% of dogs and 61% of cats were classified as overweight or having obesity." (https://www.petobesityprevention.org/articlesandnews/new-survey-reveals-alarming-rates-of-pet-obesity-in-the-us)
   - **Suggested fix:** 59% of dogs in the United States were classified as overweight or obese in its 2022 survey
 
-### Overstated (40)
+### Overstated (39)
 
 - `content/guides/angelfish-cost-guide.mdx:68`
   - **Says:** commonly $150 to $1,500
@@ -520,11 +515,6 @@ were taken on 2026-10-22 and can drift as files change.
   - **Problem:** Casque water channeling is a widely repeated hypothesis, but no study measuring it was found. A university herpetarium states it only as a belief.
   - **Source:** "It is believed in the wild that this collects dew at night and directs it to their mouths." (https://www.bgsu.edu/arts-and-sciences/biological-sciences/facilities-and-resources/bgsu-herpetarium/animals/reptiles/veiled-chameleon.html)
   - **Suggested fix:** The casque is believed to collect dew and direct it toward the mouth, on top of the drinking the chameleon does from misted leaves and branches.
-- `content/guides/whites-tree-frog-tank-setup-guide.mdx:82` *(recheck)*
-  - **Says:** A T5 UVB bulb can keep glowing visibly long after its actual UVB output has crashed
-  - **Problem:** UVB output does decay with use while the lamp still lights. But Baines et al. 2016 found quality T5 and T8 tubes lose only about 40% after a full year, so 'crashed' overstates it for most brands.
-  - **Source:** "UV-B output also decays with use, primarily due to solarisation of the glass envelope under UV bombardment ... At the end of 4000 hours the mean reduction in UVI, from new, was only 39.9% (range 30–48%)." (https://jzar.org/jzar/article/download/150/89)
-  - **Suggested fix:** A UVB bulb keeps glowing long after its UVB output has started to fade
 
 ### Unverified (14)
 
