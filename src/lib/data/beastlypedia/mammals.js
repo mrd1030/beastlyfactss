@@ -467,22 +467,22 @@ export const mammalBeastfiles = [
     habitat: 'Forest',
     group: 'Mammals',
     overview:
-      'The wombat is the only animal known to produce cubic feces, and the mechanism was worked out only recently. The last stretch of intestine has walls of varying stiffness, so as the very dry contents are squeezed along, the flexible sections push outward and the rigid sections hold, forming flat faces and corners. The point appears to be that cubes do not roll: a wombat marks territory by leaving droppings on rocks and logs, and a round one would fall off. The rest of the animal is built for digging, including a rump reinforced with cartilage that it uses to block a burrow entrance and crush anything that follows it in.',
+      'The wombat is the only animal known to produce cubic feces, and the mechanism was worked out only recently. The last stretch of intestine has walls of varying stiffness, so as the very dry contents are squeezed along, the flexible sections push outward and the rigid sections hold, forming flat faces and corners. The point appears to be that cubes do not roll: a wombat leaves its droppings on rocks and logs as scent posts, and a round one would fall off. The rest of the animal is built for digging, including a rump of tough, fibrous tissue that it uses as a shield at the burrow entrance.',
     origin:
       'Forest, heath and mountain country in southeastern Australia and Tasmania, in extensive burrow systems.',
     notableTraits: [
       'Produces cube-shaped droppings, unique among animals',
-      'A cartilage-reinforced rump used to block burrows',
-      'A backward-facing pouch so digging does not fill it with soil',
-      'Digests for up to two weeks, producing very dry waste',
+      'A tough, fibrous rump it uses to block its burrow',
+      'A pouch that opens toward the back legs, not the head',
+      'Food takes about 40 to 80 hours to pass, leaving very dry waste',
       'Burrow systems that can run tens of meters',
     ],
     conservation:
       'Least Concern for the common wombat, though the northern hairy-nosed wombat is Critically Endangered and confined to a tiny area. Vehicle strikes and mange are the practical pressures.',
     funFacts: [
       'Cubes do not roll off the rocks and logs a wombat uses as scent posts, which appears to be the point.',
-      'Its pouch opens backwards, so it does not fill with dirt while digging.',
-      'It can block a burrow with its rump and crush a predator against the roof.',
+      'Its pouch opens toward its back legs instead of its head, unlike a kangaroo’s.',
+      'It blocks its burrow entrance with its tough rump, using it as a shield.',
     ],
     heroImage: '/assets/beastlypedia/wombat-hero.jpg',
     heroAlt:
