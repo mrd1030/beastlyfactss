@@ -220,12 +220,14 @@ Same rules as batch 1. Research and dropped fun facts: `docs/fact-sources/drafts
 A thorny devil carries a decoy. The knobby bump on the back of its neck works as a fake head. When threatened, the lizard tucks its real head down between its front legs, leaving the decoy on show while the real one stays protected.
 Source: Live Science
 
-A thorny devil in its defensive pose on a clump of spinifex grass, real head
-tucked down between its front legs so the round spiny knob on its neck sits
-highest and reads as the head. Seen from the side at ground level. Tan, rust
-and cream patterned spines. Overcast soft light, gray-green spinifex, not red
-sand (the hero already uses that). No people, no text. Landscape 3:2.
-**Check:** the real head is down and hidden, the neck knob is the highest point.
+A thorny devil in its defensive pose among gray-green spinifex litter, seen
+from the front three-quarter at ground level, real head pushed down out of
+sight between its front legs, so the round spiny knob on its neck stands
+highest and faces the camera like a head. Tan, rust and cream spines. Not a
+side view and not on open red sand (the existing photos are both). Overcast
+soft light. No people, no text. Landscape 3:2.
+**Check:** the real head is hidden, the neck knob is the highest point, shot
+from the front at ground level.
 
 **Thorny devil: 750 Ants a Day** (Reptiles, 🦎) → `/assets/facts/thorny-devil-ants.jpg`
 Thorny devils eat nothing but ants. A devil settles beside an ant trail and picks them off as they march past. Ants are not very nourishing, so it takes an estimated 750 a day. Feeding averages 2.9 ants a minute, and devils have been clocked at up to one ant per second.
@@ -242,12 +244,15 @@ Landscape 3:2.
 Glass frogs are always green, but they look brighter or darker to match the leaf they sit on. Their legs are more see-through than their bodies, so with the legs tucked in at rest, the frog's outline fades gradually into the leaf instead of making a sharp edge. Scientists call this edge diffusion.
 Source: University of Bristol
 
-Top-down view of a glass frog resting on a broad green leaf in daylight, legs
-tucked tight against its sides. The body is lime green, the tucked legs paler
-and more translucent so the outline fades into the leaf. Front lit, not
-backlit (the hero is backlit), no organs showing. Soft diffused rainforest
+Looking straight down from above in bright daylight onto a broad green leaf
+that fills the frame, a glass frog sitting off-center with all four legs
+tucked tight against its sides. Lime green body, paler and more translucent
+legs, so the frog's outline fades softly into the leaf rather than showing a
+hard edge. Leaf veins sharp around it. Not a side view, not at night, no black
+background (the Beastfile photo is all three). No organs showing. Soft diffused
 light, all greens. 100mm macro. No people, no text. Portrait.
-**Check:** the frog's edge looks soft against the leaf; the legs are tucked.
+**Check:** shot from directly above in daylight; the frog's edge looks soft
+against the leaf.
 
 **Glass frog: Night Shift Parents** (Weird & Wonderful, 🐸) → `/assets/facts/glass-frog-eggs.jpg`
 Glass frog eggs hang on leaves over streams, a tasty snack for snakes and insects. A study of at least 40 species found parental care in every one sampled. In many species the mother broods the eggs on their first night. In almost a third, the father stands guard far longer, even after the eggs start hatching.
@@ -309,12 +314,14 @@ seen from above.
 Carrion crows can plan how many calls to make. In a lab study, three crows saw a numeral or heard a cue sound, then called one to four times to match it and pecked an enter key when done. All three succeeded, and the sound of the first call even predicted how many would follow.
 Source: University of Tübingen
 
-A carrion crow perched on a weathered fence post in a misty European field,
-beak wide open mid-call, throat feathers puffed. All black, heavy bill, square
-tail. Not a raven (no shaggy throat, no wedge tail) and not a hooded crow (no
-gray body). Pale gray morning mist, soft light, 400mm. No numbers, screens,
-people or text. Portrait.
-**Check:** the beak is open, the bird is all black.
+A carrion crow standing on frosty short grass, facing the camera head-on at
+ground level, beak wide open mid-call, throat feathers puffed, wings slightly
+lifted. All black, heavy bill. Not a raven (no shaggy throat) and not a hooded
+crow (no gray body). Not perched and not in profile (the existing crow photos
+are a bird on a rail in profile and two crows in woodland). Pale gray morning
+mist, soft light, 400mm lying on the ground. No numbers, screens, people or
+text. Portrait.
+**Check:** the crow is on the ground, facing the camera, beak open.
 
 ## Batch 3: marine, 10 cards (researched 2026-10-22)
 
@@ -324,12 +331,13 @@ Same rules as batch 1. Research and dropped fun facts: `docs/fact-sources/drafts
 A giant manta ray carries a pattern of spots on its belly, and those patterns are distinct enough that scientists use them to tell one manta from another. Anyone can help: NOAA asks people who see a giant manta to send in photos, which can be used to identify individual rays.
 Source: NOAA Fisheries
 
-A giant manta ray banking low over white sand, close to the camera, its pale
-underside turned toward the lens so the scattered black spots on its belly
-fill most of the frame. Wingtips curving up, gill slits visible. Not seen from
-far below against the sun (the hero already does that). Clear turquoise water,
-bright even light. No divers, no people, no text. Landscape 3:2.
-**Check:** the belly spots are sharp and readable.
+A giant manta ray banking steeply a meter above a white sand seabed, seen from
+the side at its own level, so its pale spotted belly faces the camera and fills
+most of the frame. Wingtip curving up, gill slits visible. Sand and a little
+blue water behind it only: no water surface, no sun, no sunbeams in the shot
+(the hero is shot from below toward the sun). Bright even light. No divers, no
+people, no text. Landscape 3:2.
+**Check:** the belly spots are sharp, and there is no surface or sun in frame.
 
 **Giant manta ray: A Spa Day on the Reef** (Ocean, 🐠) → `/assets/facts/manta-cleaning.jpg`
 Giant manta rays drop by coral reef cleaning stations, where they hover while small cleaner fish pick parasites off their bodies. In Indonesia, scientists who tagged 41 of these mantas found they kept coming back to the same favorite stations, and the visits happened mostly in daylight.
