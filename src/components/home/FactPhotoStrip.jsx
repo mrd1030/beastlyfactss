@@ -60,7 +60,7 @@ export default function FactPhotoStrip({ onOpenFact }) {
                   Fact Photos
                 </h2>
                 <p className="text-sm text-muted-foreground font-body mt-1">
-                  {`Every fact has its own photo. All ${withPhotos.length} of them are in the gallery.`}
+                  {`Every fact has its own image. All ${withPhotos.length} of them are in the gallery.`}
                 </p>
               </div>
             </div>

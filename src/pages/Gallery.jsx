@@ -181,11 +181,11 @@ export default function Gallery() {
     <div className="min-h-screen">
       <Helmet>
         <title>Photo Gallery | Beastly Facts</title>
-        <meta name="description" content="Browse every real animal photo from Beastly Facts in one gallery - hover to preview, click to read the fact behind it." />
+        <meta name="description" content="Browse every animal image from Beastly Facts in one gallery - hover to preview, click to read the fact behind it." />
         <link rel="canonical" href="https://beastlyfacts.com/gallery/" />
         <meta name="robots" content="noindex,follow" />
         <meta property="og:title" content="Photo Gallery | Beastly Facts" />
-        <meta property="og:description" content="Browse every real animal photo from Beastly Facts in one gallery - hover to preview, click to read the fact behind it." />
+        <meta property="og:description" content="Browse every animal image from Beastly Facts in one gallery - hover to preview, click to read the fact behind it." />
         <meta property="og:url" content="https://beastlyfacts.com/gallery/" />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="https://beastlyfacts.com/assets/og-default.jpg" />
@@ -193,7 +193,7 @@ export default function Gallery() {
         <meta property="og:image:height" content="630" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Photo Gallery | Beastly Facts" />
-        <meta name="twitter:description" content="Browse every real animal photo from Beastly Facts in one gallery - hover to preview, click to read the fact behind it." />
+        <meta name="twitter:description" content="Browse every animal image from Beastly Facts in one gallery - hover to preview, click to read the fact behind it." />
         <meta name="twitter:image" content="https://beastlyfacts.com/assets/og-default.jpg" />
       </Helmet>
 
@@ -205,7 +205,7 @@ export default function Gallery() {
               Photo Gallery
             </h1>
             <p className="text-sm text-muted-foreground font-body max-w-lg">
-              Every real animal photo behind our facts, in one place. Hover to preview, click to read the fact.
+              Every animal image behind our facts, in one place. Hover to preview, click to read the fact.
             </p>
           </motion.div>
 
