@@ -35941,6 +35941,66 @@
     "imageHeight": 784
   },
   {
+    "path": "/content/guides/national-black-cat-day.mdx",
+    "slug": "national-black-cat-day",
+    "title": "National Black Cat Day Is a Campaign That Worked",
+    "seoTitle": "National Black Cat Day: October 27th",
+    "seoDescription": "National Black Cat Day is October 27th. Cats Protection began it in 2011, when black cats waited a week longer for homes. By 2019 the gap was down to two days.",
+    "lastUpdated": "2026-10-23",
+    "noIndex": false,
+    "excerpt": "A UK cat charity started National Black Cat Day in 2011 because its black cats waited about a week longer for a home. By 2019 the gap was two days. The coat itself comes down to two missing letters of DNA.",
+    "date": "2026-10-23",
+    "category": "Cats",
+    "categories": [
+      "Cats"
+    ],
+    "tags": [
+      "Cat",
+      "Black Cats",
+      "National Black Cat Day",
+      "Cats Protection",
+      "Cat Genetics",
+      "Cats"
+    ],
+    "readTime": 6,
+    "difficulty": "Beginner",
+    "image": "/assets/images/national-black-cat-day.jpg",
+    "imageAlt": "A short-haired black cat sitting upright on a pale wooden floor in soft window light, amber eyes turned toward the camera",
+    "emoji": "🐈‍⬛",
+    "lastReviewed": "2026-10-23",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "When is National Black Cat Day?",
+        "a": "October 27th, every year. The date is fixed. It was set by Cats Protection, the UK charity that launched the day in 2011."
+      },
+      {
+        "q": "Is National Black Cat Day the same as Black Cat Appreciation Day?",
+        "a": "No. Black Cat Appreciation Day is an American observance held in August. National Black Cat Day is the British charity campaign in October. The two are often blended together online."
+      },
+      {
+        "q": "What makes a domestic cat black?",
+        "a": "A small deletion in the agouti gene, ASIP, which normally lets each hair carry bands of lighter pigment. The trait is recessive, so a cat needs the deletion from both parents, and two tabby parents can still have a black kitten."
+      },
+      {
+        "q": "Are black cats adopted less often?",
+        "a": "Where it has been measured, they have tended to wait longer. Cats Protection recorded a gap of about a week in 2011 that had shrunk to two days by 2019, and a study of online shelter listings in New York found black cats drew fewer views."
+      }
+    ],
+    "relatedProducts": [],
+    "factFile": false,
+    "animalDay": "national-black-cat-day",
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 5,
+    "headingCount": 7,
+    "ledeMatchesExcerpt": false,
+    "imageWidth": 1168,
+    "imageHeight": 784
+  },
+  {
     "path": "/content/guides/neon-tetra-cost-guide.mdx",
     "slug": "neon-tetra-cost-guide",
     "title": "How Much Does Neon Tetra Ownership Really Cost?",
