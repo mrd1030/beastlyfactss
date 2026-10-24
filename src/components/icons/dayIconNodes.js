@@ -4,20 +4,17 @@
 // Plain data (no JSX) so scripts/icon-sheet.mjs can render a contact sheet of
 // them beside real lucide icons; labIcons.jsx wraps each one as a component.
 
-// Ring-tailed lemur sitting: face on top of a round body, the tail an
-// outlined band rising from the body's right side like a question mark,
-// with two rings bridging it (owner's sketch, 2026-10-24).
+// Ring-tailed lemur sitting, one outline: the tufted head flows into the
+// body with no break, and the tail, an outlined band with two rings bridging
+// it, rises off the back like a question mark (owner, 2026-10-24: the head
+// must look attached to the body, and the tail attached behind it).
 export const lemur = [
-  ['path', { key: 'l1', d: 'M9.5 7.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z' }],
-  ['path', { key: 'l2', d: 'M3.4 5.3C2.5 4.3 2.2 2.8 3 1.8c1.1.4 2 1.1 2.7 2.2' }],
-  ['path', { key: 'l3', d: 'M8.6 5.3c.9-1 1.2-2.5.4-3.5-1.1.4-2 1.1-2.7 2.2' }],
-  ['path', { key: 'l4', d: 'M4.8 7.1v.5' }],
-  ['path', { key: 'l5', d: 'M7.2 7.1v.5' }],
-  ['path', { key: 'l6', d: 'm5.5 9.3.5.5.5-.5' }],
-  ['path', { key: 'l7', d: 'M14 15.5a5.5 4.5 0 1 1-11 0 5.5 4.5 0 0 1 11 0Z' }],
-  ['path', { key: 'l8', d: 'M12 18.9c5.5.3 9-3.4 9-8.4V5.5a1.75 1.75 0 0 0-3.5 0v5c0 3-1.7 5.2-3.7 5.8' }],
-  ['path', { key: 'l9', d: 'M17.5 7.5h3.5' }],
-  ['path', { key: 'l10', d: 'm16.8 13.7 2.6 2' }],
+  ['path', { key: 'l1', d: 'M3.6 9.2C2.4 7.8 2 5.2 3 3.6c1.4.5 2.6 1.4 3.3 2.7C7.2 6.1 8 6.1 8.9 6.3c.7-1.3 1.9-2.2 3.3-2.7 1 1.6.6 4.2-.6 5.6C13 10.5 14.5 12.5 15 15c.3-1.8 1.5-3 2.5-4V5.5a1.75 1.75 0 0 1 3.5 0v6c0 4.5-3 8-7.5 8C10 19.5 6 19.5 4.5 18 3.2 16.5 3 13 3.6 9.2Z' }],
+  ['path', { key: 'l2', d: 'M17.5 7.5h3.5' }],
+  ['path', { key: 'l3', d: 'M17.5 10.5h3.5' }],
+  ['path', { key: 'l4', d: 'M5.8 8.1v.5' }],
+  ['path', { key: 'l5', d: 'M8.8 8.1v.5' }],
+  ['path', { key: 'l6', d: 'm6.8 10.2.5.5.5-.5' }],
 ];
 
 // Numbat: side view, long thin snout to the right, three stripes across the
