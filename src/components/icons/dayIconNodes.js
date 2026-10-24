@@ -84,15 +84,16 @@ export const llama = [
   ['path', { key: 'll2', d: 'M14 8.2h.01' }],
 ];
 
-// Crocodile, side view: ridged back, the long jaw with a tooth zigzag, short
-// legs. A thinner body vanished into a sliver at 16px.
+// Crocodile head from above: eye bumps on top, the long flat snout toward
+// the viewer, nostrils at the tip and a tooth notch on each jaw.
 export const crocodile = [
-  ['path', { key: 'c1', d: 'M2 10c2.5-.5 4.5-3 7-4 2-.8 4-1 6-.5l1-2 1.3 2.5 4.5 1.5c.7.3.9 1.2.3 1.8L17 11.5l-2 1c-3 1.2-5 2-8 2-2.5 0-4-1.5-5-4.5Z' }],
-  ['path', { key: 'c2', d: 'm15 12.3 1-2 1 2 1-2 1 2' }],
-  ['path', { key: 'c3', d: 'M7.5 7.3 8.3 5.5l.8 1.5' }],
-  ['path', { key: 'c4', d: 'M10.8 6.2l.8-1.7.8 1.5' }],
-  ['path', { key: 'c5', d: 'M6.5 14.5v3' }],
-  ['path', { key: 'c6', d: 'M12 14.2v3.3' }],
+  ['path', { key: 'c1', d: 'M5 11V8.5a2 2 0 0 1 4 0V9h6v-.5a2 2 0 0 1 4 0V11c0 2-.5 4-1.5 6.5-.5 1.5-1.5 2.5-3 2.5h-5c-1.5 0-2.5-1-3-2.5C5.5 15 5 13 5 11Z' }],
+  ['path', { key: 'c2', d: 'M7 8.5h.01' }],
+  ['path', { key: 'c3', d: 'M17 8.5h.01' }],
+  ['path', { key: 'c4', d: 'M10.5 17.5h.01' }],
+  ['path', { key: 'c5', d: 'M13.5 17.5h.01' }],
+  ['path', { key: 'c6', d: 'm6.5 13 1 1 1-1' }],
+  ['path', { key: 'c7', d: 'm15.5 13 1 1 1-1' }],
 ];
 
 // Pangolin, side view: domed body tapering to the tail, small pointed head,
@@ -119,19 +120,20 @@ export const otter = [
   ['path', { key: 'o8', d: 'M3.6 7.2 2.8 5.3l1.9.8M6.4 7.2l.8-1.9-1.9.8' }],
 ];
 
-// Snake: an S with a rounded head, eye and forked tongue.
+// Coiled snake: the care packages' cover icon (the ball python book),
+// every third point of its sampled spiral, tail in the middle and the head
+// at the outer end with a filled eye.
 export const snake = [
-  ['path', { key: 'n1', d: 'M3 20c0-2 1.5-3.5 3.5-3.5h8c2 0 3.5-1.5 3.5-3.5s-1.5-3.5-3.5-3.5h-7C5.5 9.5 4 8 4 6s1.5-3.5 3.5-3.5H15a3 3 0 0 1 0 6' }],
-  ['path', { key: 'n2', d: 'M16.5 4h.01' }],
-  ['path', { key: 'n3', d: 'm18.3 5.5 2.2-.5M18.3 5.5l1.7 1.5' }],
+  ['path', { key: 'n1', d: 'M13.24 12.98 13.53 12.62 13.72 12.12 13.75 11.53 13.61 10.89 13.27 10.27 12.73 9.72 12.01 9.29 11.16 9.04 10.2 9.02 9.2 9.24 8.24 9.73 7.38 10.49 6.68 11.48 6.22 12.67 6.05 13.99 6.2 15.39 6.72 16.75 7.61 17.98 8.8 19 10.23 19.74 11.85 20.14 13.56 20.16 15.28 19.78 16.91 18.99 18.36 17.81 19.53 16.3 20.34 14.51 20.73 12.53 20.66 10.47 20.13 8.48 18.6 4.46 15.99 6.97 17.68 9.93 17.95 11.36 17.89 12.77 17.52 14.07 16.89 15.21 16.05 16.14 15.07 16.83 14 17.25 12.91 17.4 11.86 17.31 10.92 16.99 10.12 16.5 9.48 15.86 9.05 15.14 8.75 14.4 8.62 13.65 8.67 12.92 8.88 12.25 9.21 11.69 9.65 11.24 10.15 10.93 10.67 10.75 11.19 10.7 11.67 10.78 12.09 10.95 12.42 11.2 12.66 11.5 12.81 11.82 12.86 12.14 12.83 12.44 12.76 12.62' }],
+  ['circle', { key: 'n2', cx: '18.47', cy: '5.88', r: '.55', fill: 'currentColor', stroke: 'none' }],
 ];
 
-// Rhinoceros head, side view: the big front horn, the small second horn,
-// an ear, eye and nostril.
+// Rhinoceros head, side view: the big front horn, a small second horn, an
+// ear, eye and nostril.
 export const rhino = [
-  ['path', { key: 'r1', d: 'M4 18c0-5 3-9 8-9h1.5l1.5-6.5 1.5 6.8c1.5.5 2.5 1.5 3 3l1 3.5c.3 1-.3 2-1.5 2H4Z' }],
-  ['path', { key: 'r2', d: 'm8.5 9.5-.8-2.8 2.8 1.3' }],
-  ['path', { key: 'r3', d: 'M12.5 13h.01' }],
-  ['path', { key: 'r4', d: 'M18.5 16h.01' }],
-  ['path', { key: 'r5', d: 'M17 9.5l.8-1.8.7 2.3' }],
+  ['path', { key: 'r1', d: 'M3 18c0-4 1.5-8 4-10l1-.5 1 .5c1.5-.5 3-.5 4.5 0l.5-.5c.5-2.5 1-4 2.5-5.5.5 2 .5 4 0 5.5l1.5.5c1.5 1 2.5 2.5 3 4.5l.5 2.5c.3 1-.5 1.5-1.5 1.5H3Z' }],
+  ['path', { key: 'r2', d: 'm7 7.5-.5-2.5 2.5 1' }],
+  ['path', { key: 'r3', d: 'm12 8 .5-2 .5 2' }],
+  ['path', { key: 'r4', d: 'M13 12h.01' }],
+  ['path', { key: 'r5', d: 'M19.5 15h.01' }],
 ];

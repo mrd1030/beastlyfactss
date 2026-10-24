@@ -18,6 +18,7 @@ const ours = await import(pathToFileURL(path.resolve(process.argv[3] || 'src/com
 const icons = [...Object.entries(ours), ['bat (lab)', lab.bat], ['catBig (lab)', lab.catBig]];
 
 const svgOf = (nodes, size) => {
+  nodes = nodes.map(([t, a]) => [t, Object.fromEntries(Object.entries(a).map(([k, v]) => [k, v === "currentColor" ? "#113b30" : v]))]);
   const body = nodes.map(([tag, attrs]) => {
     const a = Object.entries(attrs).filter(([k]) => k !== 'key').map(([k, v]) => `${k.replace(/[A-Z]/g, (c) => `-${c.toLowerCase()}`)}="${v}"`).join(' ');
     return `<${tag} ${a}/>`;
