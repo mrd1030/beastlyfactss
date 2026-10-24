@@ -5007,19 +5007,19 @@
     "faqs": [
       {
         "q": "When is Bat Week?",
-        "a": "October 24th to 31st, every year. Government agencies and conservation groups across North America mark it together, and in 2021 the National Park Service reported partners across Latin America joining."
+        "a": "October 24th to 31st, the same dates every year."
       },
       {
         "q": "Are bats blind?",
-        "a": "No. Bats can see. Some small bats that hunt by echolocation carry cone cells sensitive to ultraviolet light, and many fruit bats rely heavily on their eyes."
+        "a": "No. They can see, and some small bats even have cone cells tuned to ultraviolet light."
       },
       {
         "q": "If bats can see, why do they echolocate?",
-        "a": "Sound appears to give them a sharper read on distance. Egyptian fruit bats filmed in daylight in Tel Aviv kept calling as they came in to land on trees and to drink from a pool, even when they could plainly see."
+        "a": "Sound seems to measure distance more precisely than sight, so bats use both at once, even in daylight."
       },
       {
         "q": "What is white-nose syndrome?",
-        "a": "A disease caused by the fungus Pseudogymnoascus destructans, which grows on bats while they hibernate. Since 2006 it has killed millions of North American bats, and as of December 2025 it had been confirmed in 41 states and five Canadian provinces."
+        "a": "A fungal disease that attacks bats during hibernation. It has killed millions of bats in North America since 2006."
       }
     ],
     "relatedProducts": [],
