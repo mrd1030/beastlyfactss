@@ -5007,7 +5007,7 @@
     "faqs": [
       {
         "q": "When is Bat Week?",
-        "a": "October 24th to 31st, every year. Government agencies and conservation groups mark it together, and partners across Latin America joined in 2021."
+        "a": "October 24th to 31st, every year. Government agencies and conservation groups across North America mark it together, and in 2021 the National Park Service reported partners across Latin America joining."
       },
       {
         "q": "Are bats blind?",
@@ -5028,9 +5028,11 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 5,
+    "sourceCount": 6,
     "headingCount": 5,
-    "ledeMatchesExcerpt": false
+    "ledeMatchesExcerpt": false,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/beagle-enrichment-guide.mdx",
