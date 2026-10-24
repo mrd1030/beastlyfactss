@@ -4,19 +4,22 @@
 // size the band actually shows it (14px) and not only blown up.
 //
 // Usage:
-//   node scripts/icon-sheet.mjs [out.png]      -> social-batches/pins/_icon-sheet.png
+//   node scripts/icon-sheet.mjs [out.png] [nodes.js]   -> social-batches/pins/_icon-sheet.png
+// A second argument renders that module's exports instead, for trying variants
+// outside the source tree before one is kept.
 import fs from 'node:fs';
 import path from 'node:path';
 import sharp from 'sharp';
 import * as lab from '@lucide/lab';
-import * as ours from '../src/components/icons/dayIconNodes.js';
+import { pathToFileURL } from 'node:url';
 
 const out = process.argv[2] || 'social-batches/pins/_icon-sheet.png';
+const ours = await import(pathToFileURL(path.resolve(process.argv[3] || 'src/components/icons/dayIconNodes.js')).href);
 const icons = [...Object.entries(ours), ['bat (lab)', lab.bat], ['catBig (lab)', lab.catBig]];
 
 const svgOf = (nodes, size) => {
   const body = nodes.map(([tag, attrs]) => {
-    const a = Object.entries(attrs).filter(([k]) => k !== 'key').map(([k, v]) => `${k}="${v}"`).join(' ');
+    const a = Object.entries(attrs).filter(([k]) => k !== 'key').map(([k, v]) => `${k.replace(/[A-Z]/g, (c) => `-${c.toLowerCase()}`)}="${v}"`).join(' ');
     return `<${tag} ${a}/>`;
   }).join('');
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${size}" height="${size}" viewBox="0 0 24 24" fill="none" stroke="#113b30" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">${body}</svg>`;

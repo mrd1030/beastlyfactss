@@ -4,19 +4,21 @@
 // Plain data (no JSX) so scripts/icon-sheet.mjs can render a contact sheet of
 // them beside real lucide icons; labIcons.jsx wraps each one as a component.
 
-// Ring-tailed lemur: round face with tufted ears on the left, the banded tail
-// curling up beside it like a question mark. The bands cross the tail.
+// Ring-tailed lemur: small round face with tufted ears on the left, the
+// tail an outlined band curling up beside it like a question mark, with
+// three rings bridging the band. Strokes across a single-line tail read as a
+// caterpillar, and a dashed tail as beads; the band is what survives 16px.
 export const lemur = [
-  ['path', { key: 'l1', d: 'M12 13a4.5 4.5 0 1 1-9 0 4.5 4.5 0 0 1 9 0Z' }],
-  ['path', { key: 'l2', d: 'M4.3 9.8C2.8 8.4 2.4 6 3.4 4.4c1.6.5 3 1.6 3.8 3.2' }],
-  ['path', { key: 'l3', d: 'M10.7 9.8c1.5-1.4 1.9-3.8.9-5.4-1.6.5-3 1.6-3.8 3.2' }],
-  ['path', { key: 'l4', d: 'M6 12.5v.5' }],
-  ['path', { key: 'l5', d: 'M9 12.5v.5' }],
-  ['path', { key: 'l6', d: 'm7 15.3.5.5.5-.5' }],
-  ['path', { key: 'l7', d: 'M11 18a8.5 8.5 0 0 0 9-8.5V4.5' }],
-  ['path', { key: 'l8', d: 'm15 15.6 1.5 2.6' }],
-  ['path', { key: 'l9', d: 'm17.6 13 2.6 1.5' }],
-  ['path', { key: 'l10', d: 'M18.5 7h3' }],
+  ['path', { key: 'l1', d: 'M10.5 12.5a4 4 0 1 1-8 0 4 4 0 0 1 8 0Z' }],
+  ['path', { key: 'l2', d: 'M3.6 9.6C2.3 8.3 2 6 3 4.5c1.4.5 2.6 1.4 3.4 2.8' }],
+  ['path', { key: 'l3', d: 'M9.4 9.6c1.3-1.3 1.6-3.6.6-5.1-1.4.5-2.6 1.4-3.4 2.8' }],
+  ['path', { key: 'l4', d: 'M5.2 12v.5' }],
+  ['path', { key: 'l5', d: 'M7.8 12v.5' }],
+  ['path', { key: 'l6', d: 'm6 14.5.5.5.5-.5' }],
+  ['path', { key: 'l7', d: 'M9.5 19c6.5 0 11.5-4 11.5-10V4.5a1.75 1.75 0 0 0-3.5 0V9c0 3.5-3 6.5-7 6.5' }],
+  ['path', { key: 'l8', d: 'M17.5 7h3.5' }],
+  ['path', { key: 'l9', d: 'm15.5 13.6 2.2 2.7' }],
+  ['path', { key: 'l10', d: 'm12.8 15.2.4 3.3' }],
 ];
 
 // Numbat: side view, long thin snout to the right, three stripes across the
