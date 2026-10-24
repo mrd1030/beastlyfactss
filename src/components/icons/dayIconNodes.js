@@ -84,16 +84,15 @@ export const llama = [
   ['path', { key: 'll2', d: 'M14 8.2h.01' }],
 ];
 
-// Crocodile head from above: eye bumps on top, the long flat snout toward
-// the viewer, nostrils at the tip and a tooth notch on each jaw.
+// Crocodile head in profile, jaws open: the upper jaw with the eye bump
+// angled up, the lower jaw angled down, two teeth on each (owner,
+// 2026-10-24: a side view with the mouth open).
 export const crocodile = [
-  ['path', { key: 'c1', d: 'M5 11V8.5a2 2 0 0 1 4 0V9h6v-.5a2 2 0 0 1 4 0V11c0 2-.5 4-1.5 6.5-.5 1.5-1.5 2.5-3 2.5h-5c-1.5 0-2.5-1-3-2.5C5.5 15 5 13 5 11Z' }],
-  ['path', { key: 'c2', d: 'M7 8.5h.01' }],
-  ['path', { key: 'c3', d: 'M17 8.5h.01' }],
-  ['path', { key: 'c4', d: 'M10.5 17.5h.01' }],
-  ['path', { key: 'c5', d: 'M13.5 17.5h.01' }],
-  ['path', { key: 'c6', d: 'm6.5 13 1 1 1-1' }],
-  ['path', { key: 'c7', d: 'm15.5 13 1 1 1-1' }],
+  ['path', { key: 'c1', d: 'M4.5 12.5C4 10 5 8 7.5 7.5l1-1.5 1.5 1.2C13 6.5 17 5.5 21 4.5l-.3 2.6C15.5 9.3 10 10.8 4.5 12.5Z' }],
+  ['path', { key: 'c2', d: 'M4.5 13.5C10 14.3 15.5 15.8 20.7 17.5l.3 2.5C17 19 13 18 7.5 17.5 5 17 4 15.5 4.5 13.5Z' }],
+  ['path', { key: 'c3', d: 'm12 10 1 1.4 1-1.8M16 8.6l1 1.4 1-1.8' }],
+  ['path', { key: 'c4', d: 'm12 15.2 1-1.4 1 1.8M16 16.3l1-1.4 1 1.8' }],
+  ['path', { key: 'c5', d: 'M8.5 8.3h.01' }],
 ];
 
 // Pangolin, side view: domed body tapering to the tail, small pointed head,
