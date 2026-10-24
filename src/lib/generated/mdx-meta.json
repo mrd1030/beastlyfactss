@@ -4975,6 +4975,66 @@
     "imageHeight": 832
   },
   {
+    "path": "/content/guides/bat-week.mdx",
+    "slug": "bat-week",
+    "title": "Bat Week and the Bats That Were Never Blind",
+    "seoTitle": "Bat Week: Are Bats Really Blind?",
+    "seoDescription": "Bat Week runs October 24 to 31. Bats are not blind: some see ultraviolet, and fruit bats pair sight with sonar. White-nose syndrome is the real threat.",
+    "lastUpdated": "2026-10-24",
+    "noIndex": false,
+    "excerpt": "Bats are not blind. Some carry ultraviolet-sensitive cones, and fruit bats keep echolocating in broad daylight to judge distance. The bigger threat to North American bats is a fungus that strikes while they hibernate.",
+    "date": "2026-10-24",
+    "category": "Wild Animals",
+    "categories": [
+      "Wild Animals"
+    ],
+    "tags": [
+      "Bat",
+      "Bat Week",
+      "Conservation",
+      "Echolocation",
+      "White-Nose Syndrome",
+      "Wild Animals"
+    ],
+    "readTime": 5,
+    "difficulty": "Beginner",
+    "image": "/assets/images/bat-week.jpg",
+    "imageAlt": "A bat in flight at dusk against an orange and violet sky, wings spread, with dark tree silhouettes below",
+    "emoji": "🦇",
+    "lastReviewed": "2026-10-24",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "When is Bat Week?",
+        "a": "October 24th to 31st, every year. Government agencies and conservation groups across North America mark it together, and in 2021 the National Park Service reported partners across Latin America joining."
+      },
+      {
+        "q": "Are bats blind?",
+        "a": "No. Bats can see. Some small bats that hunt by echolocation carry cone cells sensitive to ultraviolet light, and many fruit bats rely heavily on their eyes."
+      },
+      {
+        "q": "If bats can see, why do they echolocate?",
+        "a": "Sound appears to give them a sharper read on distance. Egyptian fruit bats filmed in daylight in Tel Aviv kept calling as they came in to land on trees and to drink from a pool, even when they could plainly see."
+      },
+      {
+        "q": "What is white-nose syndrome?",
+        "a": "A disease caused by the fungus Pseudogymnoascus destructans, which grows on bats while they hibernate. Since 2006 it has killed millions of North American bats, and as of December 2025 it had been confirmed in 41 states and five Canadian provinces."
+      }
+    ],
+    "relatedProducts": [],
+    "factFile": false,
+    "animalDay": "bat-week",
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 6,
+    "headingCount": 5,
+    "ledeMatchesExcerpt": false,
+    "imageWidth": 1168,
+    "imageHeight": 784
+  },
+  {
     "path": "/content/guides/beagle-enrichment-guide.mdx",
     "slug": "beagle-enrichment-guide",
     "title": "Beagle Enrichment: The Study That Explains the Whole Breed",

@@ -52,6 +52,7 @@ export const ARTICLE_TOPIC = {
   'sea-otters-salt-marsh-erosion-elkhorn-slough': 'conservation',
 
   // Animal days: the awareness days and where they came from.
+  'bat-week': 'animal-days',
   'christmas-bird-count': 'animal-days',
   'evolution-day': 'animal-days',
   'international-cheetah-day': 'animal-days',

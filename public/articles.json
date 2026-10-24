@@ -886,6 +886,18 @@
       "animalDay": null
     },
     {
+      "slug": "bat-week",
+      "title": "Bat Week: Are Bats Really Blind?",
+      "excerpt": "Bats are not blind. Some carry ultraviolet-sensitive cones, and fruit bats keep echolocating in broad daylight to judge distance. The bigger threat to North American bats is a fungus that strikes while they hibernate.",
+      "date": "2026-10-24",
+      "image": "/assets/images/bat-week.jpg",
+      "category": "Wild Animals",
+      "categories": [
+        "Wild Animals"
+      ],
+      "animalDay": "bat-week"
+    },
+    {
       "slug": "beagle-enrichment-guide",
       "title": "Beagle Enrichment Guide",
       "excerpt": "Dogs allowed to use their noses became measurably more optimistic. For a breed built around exactly that, the finding stops being interesting and starts being a care plan.",
@@ -6391,6 +6403,18 @@
         "Aquatic Life"
       ],
       "animalDay": null
+    },
+    {
+      "slug": "national-black-cat-day",
+      "title": "National Black Cat Day: October 27th",
+      "excerpt": "A UK cat charity started National Black Cat Day in 2011 because its black cats waited about a week longer for a home. By 2019 the gap was two days. The coat itself comes down to two missing letters of DNA.",
+      "date": "2026-10-23",
+      "image": "/assets/images/national-black-cat-day.jpg",
+      "category": "Cats",
+      "categories": [
+        "Cats"
+      ],
+      "animalDay": "national-black-cat-day"
     },
     {
       "slug": "neon-tetra-cost-guide",

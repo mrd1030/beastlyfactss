@@ -322,6 +322,16 @@ export const ANIMAL_EVENTS = [
     blurb: 'The big cat that cannot roar.',
   },
   {
+    id: 'bat-week', name: 'Bat Week', emoji: '🦇',
+    // October 24th to 31st every year, per the National Park Service and BLM,
+    // both Bat Week partners.
+    // https://www.nps.gov/articles/000/bat-week-international.htm
+    ranges: { 2026: { start: '10-24', end: '10-31' }, 2027: { start: '10-24', end: '10-31' } },
+    animals: ['Bat'],
+    categories: ['Wild Animals'],
+    blurb: 'Not blind, and in trouble every winter.',
+  },
+  {
     id: 'national-black-cat-day', name: 'National Black Cat Day', emoji: '🐈‍⬛',
     // Cats Protection (UK), launched October 27, 2011.
     // https://www.cats.org.uk/cats-blog/history-of-national-black-cat-day

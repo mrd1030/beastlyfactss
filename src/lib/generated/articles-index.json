@@ -886,6 +886,18 @@
       "animalDay": null
     },
     {
+      "slug": "bat-week",
+      "title": "Bat Week: Are Bats Really Blind?",
+      "excerpt": "Bats are not blind. Some carry ultraviolet-sensitive cones, and fruit bats keep echolocating in broad daylight to judge",
+      "date": "2026-10-24",
+      "image": "/assets/images/bat-week.jpg",
+      "category": "Wild Animals",
+      "categories": [
+        "Wild Animals"
+      ],
+      "animalDay": "bat-week"
+    },
+    {
       "slug": "beagle-enrichment-guide",
       "title": "Beagle Enrichment Guide",
       "excerpt": "Dogs allowed to use their noses became measurably more optimistic. For a breed built around exactly that, the finding",
