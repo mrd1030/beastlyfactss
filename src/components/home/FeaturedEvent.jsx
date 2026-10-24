@@ -3,13 +3,17 @@ import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
 import LocalImage from '@/components/shared/LocalImage';
 import articlesIndex from '@/lib/generated/articles-index.json';
-import { getFeaturedEvent } from '@/lib/animalEvent';
+import { getFeaturedEvents } from '@/lib/animalEvent';
+import { eventIcon } from '@/lib/data/eventIcons';
 
 // Surfaces a topical article while an animal awareness day is running, and
-// renders nothing the rest of the year.
+// renders nothing the rest of the year. When several days overlap (Bat Week
+// runs through Black Cat Day and World Lemur Day), the top-ranked one keeps
+// the full card and the others stack under it as slim rows, never a swipe row.
+// With one live event the band looks exactly as it always has.
 //
-// Deliberately starts as null and fills in after mount, rather than computing
-// the event during render. Whichever day prerender.mjs happens to build on gets
+// Deliberately starts empty and fills in after mount, rather than computing
+// the events during render. Whichever day prerender.mjs happens to build on gets
 // baked into the static HTML, and this page is not rebuilt daily, so a visitor
 // arriving a week later would compute a different event than the one in the
 // prerendered markup - a structural mismatch severe enough to make React
@@ -19,54 +23,92 @@ import { getFeaturedEvent } from '@/lib/animalEvent';
 // Sitting directly after the hero keeps the reveal off the CLS books: the hero
 // fills the viewport on load, so this band appears below the fold and shifts
 // only content nobody is looking at yet.
+const MAX_EVENTS = 3;
+
+function EventPill({ event }) {
+  const Icon = eventIcon(event);
+  return (
+    <span className="inline-flex items-center gap-1.5 text-[11px] font-body font-bold uppercase tracking-wider text-secondary bg-secondary/10 px-2 py-0.5 rounded-full">
+      <Icon aria-hidden="true" className="w-3.5 h-3.5 flex-shrink-0" strokeWidth={2.25} />{event.name}
+    </span>
+  );
+}
+
+function LeadCard({ event, article }) {
+  return (
+    <Link
+      to={`/blog/${article.slug}/`}
+      className="group flex flex-col sm:flex-row gap-4 sm:items-center bg-card border border-secondary/30 rounded-2xl p-4 sm:p-5 hover:border-secondary/60 hover:shadow-md transition-all"
+    >
+      {article.image && (
+        <div className="sm:w-44 sm:flex-shrink-0 aspect-[16/9] sm:aspect-[4/3] rounded-xl overflow-hidden bg-muted">
+          <LocalImage
+            src={article.image}
+            alt={article.title}
+            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+            width={352}
+            height={264}
+            variant="card"
+          />
+        </div>
+      )}
+
+      <div className="min-w-0 flex-1">
+        <div className="mb-2"><EventPill event={event} /></div>
+        <h2 className="font-display font-bold text-lg sm:text-xl text-foreground leading-snug group-hover:text-secondary transition-colors line-clamp-2">
+          {article.title}
+        </h2>
+        {event.blurb && (
+          <p className="text-xs sm:text-sm text-muted-foreground font-body mt-1 line-clamp-2">
+            {event.blurb}
+          </p>
+        )}
+        <span className="inline-flex items-center gap-1 mt-2 text-xs font-body font-bold text-secondary">
+          Read it <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" />
+        </span>
+      </div>
+    </Link>
+  );
+}
+
+function EventRow({ event, article }) {
+  return (
+    <Link
+      to={`/blog/${article.slug}/`}
+      className="group flex items-center gap-3 bg-card border border-secondary/30 rounded-xl px-4 py-3 hover:border-secondary/60 hover:shadow-sm transition-all"
+    >
+      <div className="min-w-0 flex-1">
+        <EventPill event={event} />
+        <p className="font-display font-bold text-sm sm:text-base text-foreground leading-snug mt-1 truncate group-hover:text-secondary transition-colors">
+          {article.title}
+        </p>
+      </div>
+      <ArrowRight aria-hidden="true" className="w-4 h-4 flex-shrink-0 text-secondary group-hover:translate-x-0.5 transition-transform" />
+    </Link>
+  );
+}
+
 export default function FeaturedEvent() {
-  const [featured, setFeatured] = useState(null);
+  const [featured, setFeatured] = useState({ items: [], more: false });
 
   useEffect(() => {
     if (window.__IS_PRERENDER__) return;
-    setFeatured(getFeaturedEvent(articlesIndex.articles));
+    setFeatured(getFeaturedEvents(articlesIndex.articles, new Date(), MAX_EVENTS));
   }, []);
 
-  if (!featured) return null;
-  const { event, article } = featured;
+  const [lead, ...rest] = featured.items;
+  if (!lead) return null;
 
   return (
     <section className="px-4 sm:px-6 pt-8">
-      <div className="max-w-6xl mx-auto">
-        <Link
-          to={`/blog/${article.slug}/`}
-          className="group flex flex-col sm:flex-row gap-4 sm:items-center bg-card border border-secondary/30 rounded-2xl p-4 sm:p-5 hover:border-secondary/60 hover:shadow-md transition-all"
-        >
-          {article.image && (
-            <div className="sm:w-44 sm:flex-shrink-0 aspect-[16/9] sm:aspect-[4/3] rounded-xl overflow-hidden bg-muted">
-              <LocalImage
-                src={article.image}
-                alt={article.title}
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                width={352}
-                height={264}
-                variant="card"
-              />
-            </div>
-          )}
-
-          <div className="min-w-0 flex-1">
-            <span className="inline-flex items-center gap-1.5 text-[11px] font-body font-bold uppercase tracking-wider text-secondary bg-secondary/10 px-2 py-0.5 rounded-full mb-2">
-              <span aria-hidden="true">{event.emoji}</span>{event.name}
-            </span>
-            <h2 className="font-display font-bold text-lg sm:text-xl text-foreground leading-snug group-hover:text-secondary transition-colors line-clamp-2">
-              {article.title}
-            </h2>
-            {event.blurb && (
-              <p className="text-xs sm:text-sm text-muted-foreground font-body mt-1 line-clamp-2">
-                {event.blurb}
-              </p>
-            )}
-            <span className="inline-flex items-center gap-1 mt-2 text-xs font-body font-bold text-secondary">
-              Read it <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" />
-            </span>
-          </div>
-        </Link>
+      <div className="max-w-6xl mx-auto space-y-2">
+        <LeadCard {...lead} />
+        {rest.map((item) => <EventRow key={item.event.id} {...item} />)}
+        {featured.more && (
+          <Link to="/animal-days/" className="inline-flex items-center gap-1 px-1 text-xs font-body font-bold text-secondary hover:underline">
+            All animal days this week <ArrowRight className="w-3.5 h-3.5" />
+          </Link>
+        )}
       </div>
     </section>
   );

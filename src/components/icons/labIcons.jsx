@@ -1,6 +1,6 @@
 import React from 'react';
 import { Icon } from 'lucide-react';
-import { chameleon, elephantFace, featherText, foxFaceTail, frogFace, hedgehog, spider, targetArrow, whale } from '@lucide/lab';
+import { bat, bearFace, bee, catBig, chameleon, elephant, elephantFace, featherText, foxFaceTail, frogFace, hedgehog, horseHead, penguin, shark, spider, targetArrow, whale } from '@lucide/lab';
 
 // Icons lucide itself doesn't draw, from lucide's own lab set (same line
 // style and license). Wrapped as components so they drop in anywhere a
@@ -27,3 +27,11 @@ export const Hedgehog = (props) => <Icon iconNode={hedgehog} {...props} />;
 export const Spider = (props) => <Icon iconNode={spider} {...props} />;
 export const TargetArrow = (props) => <Icon iconNode={targetArrow} {...props} />;
 export const Whale = (props) => <Icon iconNode={whale} {...props} />;
+export const Bat = (props) => <Icon iconNode={bat} {...props} />;
+export const BearFace = (props) => <Icon iconNode={bearFace} {...props} />;
+export const Bee = (props) => <Icon iconNode={bee} {...props} />;
+export const CatBig = (props) => <Icon iconNode={catBig} {...props} />;
+export const Elephant = (props) => <Icon iconNode={elephant} {...props} />;
+export const HorseHead = (props) => <Icon iconNode={horseHead} {...props} />;
+export const Penguin = (props) => <Icon iconNode={penguin} {...props} />;
+export const Shark = (props) => <Icon iconNode={shark} {...props} />;

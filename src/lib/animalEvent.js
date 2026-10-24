@@ -170,11 +170,25 @@ export function getEventArticle(event, articles) {
 // Convenience for the component: null when there is nothing to show, which is
 // most of the year.
 export function getFeaturedEvent(articles, now = new Date()) {
+  return getFeaturedEvents(articles, now, 1).items[0] ?? null;
+}
+
+// Every running event that has an article, best first, up to `limit`. Bat Week,
+// Black Cat Day and World Lemur Day overlap in late October, and showing only
+// the winner hid the other two. An article never shows twice: a cat piece can
+// match two cat days. `more` is true when a live event was cut by the limit.
+export function getFeaturedEvents(articles, now = new Date(), limit = 3) {
+  const items = [];
+  const used = new Set();
+  let more = false;
   for (const event of getActiveEvents(now)) {
     const article = getEventArticle(event, articles);
-    if (article) return { event, article };
+    if (!article || used.has(article.slug)) continue;
+    if (items.length === limit) { more = true; break; }
+    used.add(article.slug);
+    items.push({ event, article });
   }
-  return null;
+  return { items, more };
 }
 
 // The date an event falls on in a given year, as { month, day }, or null when
