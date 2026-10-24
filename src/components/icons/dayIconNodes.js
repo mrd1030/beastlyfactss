@@ -83,3 +83,55 @@ export const llama = [
   ['path', { key: 'll1', d: 'M5 21c0-5 .5-9 2.5-12.5C8.5 6.5 9.5 5.5 11 5.5l1-3 1 3h1l1-3 1 3c1.5 0 2.5 1 3 2.5l1 2c.3 1-.3 1.8-1.3 2l-2.5.5c-.5 2.2-1.8 3.5-3.7 4-.8 2-1 4-1 6.5' }],
   ['path', { key: 'll2', d: 'M14 8.2h.01' }],
 ];
+
+// Crocodile, side view: ridged back, the long jaw with a tooth zigzag, short
+// legs. A thinner body vanished into a sliver at 16px.
+export const crocodile = [
+  ['path', { key: 'c1', d: 'M2 10c2.5-.5 4.5-3 7-4 2-.8 4-1 6-.5l1-2 1.3 2.5 4.5 1.5c.7.3.9 1.2.3 1.8L17 11.5l-2 1c-3 1.2-5 2-8 2-2.5 0-4-1.5-5-4.5Z' }],
+  ['path', { key: 'c2', d: 'm15 12.3 1-2 1 2 1-2 1 2' }],
+  ['path', { key: 'c3', d: 'M7.5 7.3 8.3 5.5l.8 1.5' }],
+  ['path', { key: 'c4', d: 'M10.8 6.2l.8-1.7.8 1.5' }],
+  ['path', { key: 'c5', d: 'M6.5 14.5v3' }],
+  ['path', { key: 'c6', d: 'M12 14.2v3.3' }],
+];
+
+// Pangolin, side view: domed body tapering to the tail, small pointed head,
+// three scale arcs along the back.
+export const pangolin = [
+  ['path', { key: 'p1', d: 'M21 12.5l-3.5-1c-1.5-2.5-4-3.5-7-3.5-4 0-7 3-8 7l-.5 2.5c3-1.5 6-1 9-1h2c2.5 0 4.5-1 5.5-3Z' }],
+  ['path', { key: 'p2', d: 'M6 12a1.8 1.8 0 0 1 3 0' }],
+  ['path', { key: 'p3', d: 'M9 9.5a1.8 1.8 0 0 1 3 0' }],
+  ['path', { key: 'p4', d: 'M12 11.5a1.8 1.8 0 0 1 3 0' }],
+  ['path', { key: 'p5', d: 'M8 15v.5' }],
+  ['path', { key: 'p6', d: 'M14.5 15.5v.5' }],
+];
+
+// Sea otter floating on its back: head up at the left, paws raised on the
+// belly, a wave underneath. A face-on head read as a seal.
+export const otter = [
+  ['path', { key: 'o1', d: 'M2 19c2-1.5 4-1.5 6 0s4 1.5 6 0 4-1.5 6 0 2 .8 2 .8' }],
+  ['path', { key: 'o2', d: 'M8 9.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z' }],
+  ['path', { key: 'o3', d: 'M7.5 11.5c3-1 7-1 11 0 1.8.5 3 1.5 3 2.8 0 1.2-1.2 1.9-3 1.7-4-.4-8 .3-11-.5' }],
+  ['path', { key: 'o4', d: 'M11.5 11.3V9' }],
+  ['path', { key: 'o5', d: 'M14.5 11.3V9' }],
+  ['path', { key: 'o6', d: 'M4 9h.5' }],
+  ['path', { key: 'o7', d: 'M6 9h.5' }],
+  ['path', { key: 'o8', d: 'M3.6 7.2 2.8 5.3l1.9.8M6.4 7.2l.8-1.9-1.9.8' }],
+];
+
+// Snake: an S with a rounded head, eye and forked tongue.
+export const snake = [
+  ['path', { key: 'n1', d: 'M3 20c0-2 1.5-3.5 3.5-3.5h8c2 0 3.5-1.5 3.5-3.5s-1.5-3.5-3.5-3.5h-7C5.5 9.5 4 8 4 6s1.5-3.5 3.5-3.5H15a3 3 0 0 1 0 6' }],
+  ['path', { key: 'n2', d: 'M16.5 4h.01' }],
+  ['path', { key: 'n3', d: 'm18.3 5.5 2.2-.5M18.3 5.5l1.7 1.5' }],
+];
+
+// Rhinoceros head, side view: the big front horn, the small second horn,
+// an ear, eye and nostril.
+export const rhino = [
+  ['path', { key: 'r1', d: 'M4 18c0-5 3-9 8-9h1.5l1.5-6.5 1.5 6.8c1.5.5 2.5 1.5 3 3l1 3.5c.3 1-.3 2-1.5 2H4Z' }],
+  ['path', { key: 'r2', d: 'm8.5 9.5-.8-2.8 2.8 1.3' }],
+  ['path', { key: 'r3', d: 'M12.5 13h.01' }],
+  ['path', { key: 'r4', d: 'M18.5 16h.01' }],
+  ['path', { key: 'r5', d: 'M17 9.5l.8-1.8.7 2.3' }],
+];
