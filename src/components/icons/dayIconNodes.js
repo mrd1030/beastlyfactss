@@ -4,20 +4,20 @@
 // Plain data (no JSX) so scripts/icon-sheet.mjs can render a contact sheet of
 // them beside real lucide icons; labIcons.jsx wraps each one as a component.
 
-// Ring-tailed lemur sitting: face top left, the body curving down under it
-// and round to the rump, the tail an outlined band rising from the rump like
-// a question mark, with two rings bridging it. Face and tail with no body
-// between them read as something else entirely (owner, 2026-10-24).
+// Ring-tailed lemur sitting: face on top of a round body, the tail an
+// outlined band rising from the body's right side like a question mark,
+// with two rings bridging it (owner's sketch, 2026-10-24).
 export const lemur = [
-  ['path', { key: 'l1', d: 'M9.5 8a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z' }],
-  ['path', { key: 'l2', d: 'M3.4 5.8C2.5 4.8 2.2 3.3 3 2.2c1.1.4 2 1.1 2.7 2.2' }],
-  ['path', { key: 'l3', d: 'M8.6 5.8c.9-1 1.2-2.5.4-3.6-1.1.4-2 1.1-2.7 2.2' }],
-  ['path', { key: 'l4', d: 'M4.8 7.6v.5' }],
-  ['path', { key: 'l5', d: 'M7.2 7.6v.5' }],
-  ['path', { key: 'l6', d: 'm5.5 9.8.5.5.5-.5' }],
-  ['path', { key: 'l7', d: 'M3.5 11c-1 3-.7 6 1.5 7.8C6.6 20 8.8 20.2 11 20c6 0 10-4 10-9.5V5.5a1.75 1.75 0 0 0-3.5 0v5c0 3-1.5 5-3.5 6C12.5 17 10 14.5 9 11.5' }],
-  ['path', { key: 'l8', d: 'M17.5 7.5h3.5' }],
-  ['path', { key: 'l9', d: 'm17.2 12.6 3.1 1.7' }],
+  ['path', { key: 'l1', d: 'M9.5 7.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z' }],
+  ['path', { key: 'l2', d: 'M3.4 5.3C2.5 4.3 2.2 2.8 3 1.8c1.1.4 2 1.1 2.7 2.2' }],
+  ['path', { key: 'l3', d: 'M8.6 5.3c.9-1 1.2-2.5.4-3.5-1.1.4-2 1.1-2.7 2.2' }],
+  ['path', { key: 'l4', d: 'M4.8 7.1v.5' }],
+  ['path', { key: 'l5', d: 'M7.2 7.1v.5' }],
+  ['path', { key: 'l6', d: 'm5.5 9.3.5.5.5-.5' }],
+  ['path', { key: 'l7', d: 'M14 15.5a5.5 4.5 0 1 1-11 0 5.5 4.5 0 0 1 11 0Z' }],
+  ['path', { key: 'l8', d: 'M12 18.9c5.5.3 9-3.4 9-8.4V5.5a1.75 1.75 0 0 0-3.5 0v5c0 3-1.7 5.2-3.7 5.8' }],
+  ['path', { key: 'l9', d: 'M17.5 7.5h3.5' }],
+  ['path', { key: 'l10', d: 'm16.8 13.7 2.6 2' }],
 ];
 
 // Numbat: side view, long thin snout to the right, three stripes across the
