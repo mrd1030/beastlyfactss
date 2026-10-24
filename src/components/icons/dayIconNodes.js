@@ -136,3 +136,22 @@ export const rhino = [
   ['path', { key: 'r4', d: 'M13 12h.01' }],
   ['path', { key: 'r5', d: 'M19.5 15h.01' }],
 ];
+
+// Giraffe: head and neck in profile with the knobbed ossicones, an ear back,
+// and spots down the neck. Same pose as the llama; the knobs and spots are
+// what tell them apart.
+export const giraffe = [
+  ['path', { key: 'g1', d: 'M5 21c0-5 1-9.5 3.5-13 .8-1.2 2-2 3.5-2.3l.2-2.4a.5.5 0 0 1 1 0l.2 2.3h1.2l.2-2.3a.5.5 0 0 1 1 0l.2 2.5c1.5.3 2.6 1.3 3.2 2.8l.8 1.8c.3.9-.3 1.7-1.2 1.9l-2.2.4c-.4 2-1.6 3.4-3.6 3.9-.8 2-1 4-1 6.3' }],
+  ['path', { key: 'g2', d: 'M14.5 9h.01' }],
+  ['path', { key: 'g3', d: 'M8 13.5h.01M9.5 10.5h.01M7.3 17h.01' }],
+  ['path', { key: 'g4', d: 'm11.3 7.5-2.5-1.2' }],
+];
+
+// Axolotl: the care packages' cover icon (the axolotl book), unchanged.
+export const axolotl = [
+  ['path', { key: 'x1', d: 'M2.5 13c0-3.3 2.4-5.6 5.4-5.6 2.6 0 4.2 1.4 6.2 2.6 2.6 1.5 5.4 1.8 8.4 1-1.6 3.8-5.8 6-10.4 6H7.4c-2.8 0-4.9-1.6-4.9-4z' }],
+  ['path', { key: 'x2', d: 'M8 7.6 6.6 3.6M10.4 8.2l.8-4.2M12.6 9.4l3-3.4' }],
+  ['path', { key: 'x3', d: 'M3.4 14.6c.9.5 2 .6 2.8.2' }],
+  ['path', { key: 'x4', d: 'm8 17-.7 3M15 16.6l.8 3' }],
+  ['circle', { key: 'x5', cx: '5.8', cy: '11.6', r: '.8', fill: 'currentColor', stroke: 'none' }],
+];

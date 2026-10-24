@@ -1,6 +1,6 @@
 import React from 'react';
 import { Icon } from 'lucide-react';
-import { anteater, crocodile, lemur, llama, monkey, numbat, otter, pangolin, rhino, sloth, snake, wombat } from './dayIconNodes';
+import { anteater, axolotl, crocodile, giraffe, lemur, llama, monkey, numbat, otter, pangolin, rhino, sloth, snake, wombat } from './dayIconNodes';
 import { bat, bearFace, bee, catBig, chameleon, elephant, elephantFace, featherText, foxFaceTail, frogFace, hedgehog, horseHead, penguin, shark, spider, targetArrow, whale } from '@lucide/lab';
 
 // Icons lucide itself doesn't draw, from lucide's own lab set (same line
@@ -50,3 +50,5 @@ export const Pangolin = (props) => <Icon iconNode={pangolin} {...props} />;
 export const Otter = (props) => <Icon iconNode={otter} {...props} />;
 export const Snake = (props) => <Icon iconNode={snake} {...props} />;
 export const Rhino = (props) => <Icon iconNode={rhino} {...props} />;
+export const Giraffe = (props) => <Icon iconNode={giraffe} {...props} />;
+export const Axolotl = (props) => <Icon iconNode={axolotl} {...props} />;
