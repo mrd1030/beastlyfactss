@@ -1,5 +1,5 @@
 import { Bird, Cat, Dog, Fish, PawPrint, Rabbit, Rat, Sprout, Turtle, Waves } from 'lucide-react';
-import { Bat, BearFace, Bee, CatBig, Chameleon, Elephant, FrogFace, Gecko, HorseHead, Lemur, Numbat, Penguin, Shark, Whale } from '@/components/icons/labIcons';
+import { Anteater, Bat, BearFace, Bee, CatBig, Chameleon, Elephant, FrogFace, Gecko, HorseHead, Lemur, Llama, Monkey, Numbat, Penguin, Shark, Sloth, Whale, Wombat } from '@/components/icons/labIcons';
 
 // Line icons for the homepage animal-day band, in place of each event's emoji.
 // Lucide's core set plus its lab set (src/components/icons/labIcons.jsx). An
@@ -43,6 +43,11 @@ export const EVENT_ICONS = {
   'evolution-day': Sprout,
   'world-lemur-day': Lemur,
   'world-numbat-day': Numbat,
+  'international-sloth-day': Sloth,
+  'international-wombat-day': Wombat,
+  'world-anteater-day': Anteater,
+  'monkey-day': Monkey,
+  'national-llama-day': Llama,
 };
 
 export const eventIcon = (event) => EVENT_ICONS[event.id] ?? PawPrint;

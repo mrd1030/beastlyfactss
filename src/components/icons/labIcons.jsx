@@ -1,6 +1,6 @@
 import React from 'react';
 import { Icon } from 'lucide-react';
-import { lemur, numbat } from './dayIconNodes';
+import { anteater, lemur, llama, monkey, numbat, sloth, wombat } from './dayIconNodes';
 import { bat, bearFace, bee, catBig, chameleon, elephant, elephantFace, featherText, foxFaceTail, frogFace, hedgehog, horseHead, penguin, shark, spider, targetArrow, whale } from '@lucide/lab';
 
 // Icons lucide itself doesn't draw, from lucide's own lab set (same line
@@ -40,3 +40,8 @@ export const Shark = (props) => <Icon iconNode={shark} {...props} />;
 // Animal-day icons drawn in dayIconNodes.js (see scripts/icon-sheet.mjs).
 export const Lemur = (props) => <Icon iconNode={lemur} {...props} />;
 export const Numbat = (props) => <Icon iconNode={numbat} {...props} />;
+export const Sloth = (props) => <Icon iconNode={sloth} {...props} />;
+export const Wombat = (props) => <Icon iconNode={wombat} {...props} />;
+export const Anteater = (props) => <Icon iconNode={anteater} {...props} />;
+export const Monkey = (props) => <Icon iconNode={monkey} {...props} />;
+export const Llama = (props) => <Icon iconNode={llama} {...props} />;
