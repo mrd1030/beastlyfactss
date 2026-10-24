@@ -4,6 +4,7 @@ import { ArrowRight } from 'lucide-react';
 import LocalImage from '@/components/shared/LocalImage';
 import articlesIndex from '@/lib/generated/articles-index.json';
 import { getFeaturedEvents } from '@/lib/animalEvent';
+import { eventIcon } from '@/lib/data/eventIcons';
 
 // Surfaces a topical article while an animal awareness day is running, and
 // renders nothing the rest of the year. When several days overlap (Bat Week
@@ -25,9 +26,10 @@ import { getFeaturedEvents } from '@/lib/animalEvent';
 const MAX_EVENTS = 3;
 
 function EventPill({ event }) {
+  const Icon = eventIcon(event);
   return (
     <span className="inline-flex items-center gap-1.5 text-[11px] font-body font-bold uppercase tracking-wider text-secondary bg-secondary/10 px-2 py-0.5 rounded-full">
-      <span aria-hidden="true">{event.emoji}</span>{event.name}
+      <Icon aria-hidden="true" className="w-3.5 h-3.5 flex-shrink-0" strokeWidth={2.25} />{event.name}
     </span>
   );
 }
