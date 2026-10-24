@@ -1,5 +1,6 @@
 import { facts } from '@/lib/data/facts';
 import { pool } from '@/lib/beastle/engine';
+import { KIN, DECOY_OVERRIDES } from '@/lib/data/beastle/decoys';
 
 // The bonus round after the daily Beastle: fact clues with the animal's name
 // blanked out, four choices each. Seeded by day, so a reload shows the same
@@ -120,21 +121,48 @@ export const maskFact = (text, names) => maskParts(text, names).map((p) => p.tex
 // (no second chameleon on a chameleon fact) and is never named in the fact.
 const DECOYS = pool.filter((e) => e.level !== 'hard' && !e.dailyOnly);
 
-function decoysFor(entry, fact, exclude, rand) {
+// From this day on, wrong answers come from close kin first (src/lib/data/
+// beastle/decoys.js), and a few animals get hand-picked ones. Beastle #27
+// (2026-10-24) showed a squid answered against a cockroach, a dung beetle
+// and a koi. Earlier days keep the draw they were played with.
+const KIN_FROM_DAY = 28;
+// Kin decoys may be hard-level animals: an octopus beats a koi on a squid
+// clue even when the octopus is the obscure dumbo.
+const KIN_DECOYS = pool.filter((e) => !e.dailyOnly);
+const byName = new Map(KIN_DECOYS.flatMap((e) => [[e.answer.toLowerCase(), e], [e.name.toLowerCase(), e]]));
+
+function decoysFor(entry, fact, exclude, rand, day) {
   const banned = new Set([entry.name, entry.answer, fact.animal].flatMap(nameWords));
   const factText = fact.fact.toLowerCase();
   const fits = (o) => o.answer !== entry.answer
     && o.answer !== exclude
     && !nameWords(o.name).some((w) => banned.has(w) || new RegExp(`\\b${escape(w)}(?:es|s)?\\b`).test(factText));
+  // The fact may name a two-word decoy as one word ("seadragons" for Leafy
+  // Sea Dragon); from KIN_FROM_DAY on that counts as named too.
+  const joined = (o) => factText.includes(nameWords(o.name).slice(-2).join(''));
   const draw = (list, n, taken) => {
-    const open = list.filter((o) => fits(o) && !taken.includes(o));
+    const open = list.filter((o) => fits(o) && !(day >= KIN_FROM_DAY && joined(o)) && !taken.some((t) => t.answer === o.answer));
     const out = [];
     while (out.length < n && open.length) out.push(open.splice(Math.floor(rand() * open.length), 1)[0]);
     return out;
   };
-  const same = draw(DECOYS.filter((o) => o.group && o.group === entry.group), 2, []);
-  const other = draw(DECOYS.filter((o) => o.group !== entry.group), 3 - same.length, same);
-  return [...same, ...other];
+  if (day < KIN_FROM_DAY) {
+    const same = draw(DECOYS.filter((o) => o.group && o.group === entry.group), 2, []);
+    const other = draw(DECOYS.filter((o) => o.group !== entry.group), 3 - same.length, same);
+    return [...same, ...other];
+  }
+  // Two close calls and one obvious miss (owner, 2026-10-24: keep one wrong
+  // answer easy so the round is not too hard). The close calls come from the
+  // hand-picked list, then kin, then the broad group; the miss is always from
+  // another group. A hand-picked name not in the pool becomes a plain choice.
+  const picked = (DECOY_OVERRIDES[entry.answer] || [])
+    .map((n) => byName.get(n.toLowerCase()) ?? { answer: n.toUpperCase(), name: n });
+  const out = draw(picked, 2, []);
+  const kin = KIN[entry.answer];
+  if (kin) out.push(...draw(KIN_DECOYS.filter((o) => KIN[o.answer] === kin), 2 - out.length, out));
+  out.push(...draw(DECOYS.filter((o) => o.group && o.group === entry.group), 2 - out.length, out));
+  out.push(...draw(DECOYS.filter((o) => o.group !== entry.group), 3 - out.length, out));
+  return out;
 }
 
 // From this day on, the round walks one fixed shuffled order of every fact
@@ -179,7 +207,7 @@ export function bonusRound(day, excludeAnswer) {
   const picked = pickAnimals(day, excludeAnswer, rand);
   return picked.map((entry) => {
     const fact = factById.get(entry.factIds[Math.floor(rand() * entry.factIds.length)]);
-    const options = [entry, ...decoysFor(entry, fact, excludeAnswer, rand)]
+    const options = [entry, ...decoysFor(entry, fact, excludeAnswer, rand, day)]
       .map((o) => ({ o, k: rand() }))
       .sort((a, b) => a.k - b.k)
       .map(({ o }) => ({ answer: o.answer, name: o.name }));
