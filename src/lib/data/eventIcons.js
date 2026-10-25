@@ -1,9 +1,10 @@
-import { Bird, Cat, Dog, Fish, PawPrint, Rabbit, Rat, Sprout, Turtle, Waves } from 'lucide-react';
-import { Bat, BearFace, Bee, CatBig, Chameleon, Elephant, FrogFace, Gecko, HorseHead, Penguin, Shark, Whale } from '@/components/icons/labIcons';
+import { Bird, Cat, Dog, Earth, Fish, PawPrint, Rabbit, Rat, Sprout, Turtle, Waves } from 'lucide-react';
+import { Anteater, Axolotl, Bat, BearFace, Bee, CatBig, Chameleon, Crocodile, Elephant, FrogFace, Gecko, Giraffe, HorseHead, Lemur, Llama, Monkey, Numbat, Otter, Pangolin, Penguin, Rhino, Shark, Sloth, Snake, Whale, Wombat } from '@/components/icons/labIcons';
 
 // Line icons for the homepage animal-day band, in place of each event's emoji.
 // Lucide's core set plus its lab set (src/components/icons/labIcons.jsx). An
-// event missing here, or one no icon draws (a snake, a sloth), gets the paw.
+// event missing here gets the paw. Every event in animalEvents.js had one by
+// 2026-10-24; keep it that way when adding a day.
 export const EVENT_ICONS = {
   'bat-week': Bat,
   'national-black-cat-day': Cat,
@@ -41,6 +42,24 @@ export const EVENT_ICONS = {
   'fancy-rat-and-mouse-day': Rat,
   'national-day-of-the-horse': HorseHead,
   'evolution-day': Sprout,
+  'world-lemur-day': Lemur,
+  'world-numbat-day': Numbat,
+  'international-sloth-day': Sloth,
+  'international-wombat-day': Wombat,
+  'world-anteater-day': Anteater,
+  'monkey-day': Monkey,
+  'national-llama-day': Llama,
+  'world-croc-day': Crocodile,
+  'steve-irwin-day': Crocodile,
+  'world-pangolin-day': Pangolin,
+  'world-wildlife-day': Pangolin,
+  'world-otter-day': Otter,
+  'sea-otter-awareness-week': Otter,
+  'world-snake-day': Snake,
+  'world-rhino-day': Rhino,
+  'world-giraffe-day': Giraffe,
+  'national-axolotl-day': Axolotl,
+  'world-animal-day': Earth,
 };
 
 export const eventIcon = (event) => EVENT_ICONS[event.id] ?? PawPrint;
