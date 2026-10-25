@@ -65,3 +65,4 @@ frog, pen-tailed tree shrew) and Adobe Firefly for ids 287 to 296.
 | `wombat.jpg` (replacing Adobe Stock) | Adobe Firefly, partner model GPT Image 2.5 Sunburst | 2026-10-20 |
 | `honeybee.jpg`, `sea-otter.jpg`, `gecko.jpg`, `komodo-dragon.jpg`, `sloth.jpg` (replacing Adobe Stock) | Adobe Firefly, partner model GPT Image 2.5 Flare | 2026-10-20 |
 | `seahorse.jpg`, `platypus.jpg`, `capybara.jpg`, `tardigrade.jpg`, `narwhal.jpg` (replacing Adobe Stock) | Adobe Firefly, partner model GPT Image 2.5 Flare | 2026-10-20 |
+| `halloween-pet-safety-guide.jpg` (guide hero, `public/assets/images/`) | Adobe Firefly | 2026-10-25 |

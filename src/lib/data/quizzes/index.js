@@ -8,8 +8,9 @@ import aquariumSecrets from './aquarium-secrets.js';
 import isThatEvenLegal from './is-that-even-legal.js';
 import cleanupCrewCheck from './cleanup-crew-check.js';
 import ratsVsMice from './rats-vs-mice.js';
+import halloweenHazardCheck from './halloween-hazard-check.js';
 
-export const themedQuizzes = [ratsVsMice, cleanupCrewCheck, isThatEvenLegal, aquariumSecrets, beardedDragonBoss]
+export const themedQuizzes = [halloweenHazardCheck, ratsVsMice, cleanupCrewCheck, isThatEvenLegal, aquariumSecrets, beardedDragonBoss]
   .sort((a, b) => b.date.localeCompare(a.date) || b.number - a.number);
 
 // The three tab ids on /quiz/:tab that are NOT themed quizzes. A themed quiz

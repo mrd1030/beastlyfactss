@@ -4794,6 +4794,22 @@
       "animalDay": "hagfish-day"
     },
     {
+      "slug": "halloween-pet-safety-guide",
+      "title": "Halloween Pet Safety: Candy, Candles, Costumes, Door",
+      "excerpt": "A dog can smell a candy bowl through a cabinet door, a kitten will test a candle flame, and a rabbit hears forty",
+      "date": "2026-10-25",
+      "image": "/assets/images/halloween-pet-safety-guide.jpg",
+      "category": "Pet Care",
+      "categories": [
+        "Pet Care",
+        "Dogs",
+        "Cats",
+        "Birds",
+        "Small & Exotic Pets"
+      ],
+      "animalDay": null
+    },
+    {
       "slug": "hamster-cost-guide",
       "title": "Hamster Price: $15 to $25, Plus $165 to $430 Setup",
       "excerpt": "Hamsters are one of the cheapest pets to buy and one of the easiest to underfund properly. The animal costs almost",
