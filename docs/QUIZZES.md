@@ -39,7 +39,7 @@ export default {
   emoji: '🦎',
   tagline: 'One hooky sentence, no URL.',
   reward: { emoji: '🏆', title: 'Two Words', blurb: 'One playful sentence.' },
-  questions: [ /* exactly 8 */
+  questions: [ /* 8 is the norm; up to 12 when a week carries more than one theme (owner, 2026-10-25) */
     {
       q: 'The question?',
       options: ['A', 'B', 'C', 'D'],  // exactly 4, one clearly correct

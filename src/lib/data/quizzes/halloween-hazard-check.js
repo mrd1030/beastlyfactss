@@ -1,18 +1,21 @@
-// Themed quiz #6. Format documented in docs/QUIZZES.md. Every question is
-// answerable from the Halloween pet safety guide and links to it. Ids are
-// permanent, never reuse or renumber. Shipped off the Monday cadence on
-// purpose: Halloween 2026 is a Saturday and the guide went out the same day.
+// Themed quiz #6. Format documented in docs/QUIZZES.md. Eight questions come
+// from the Halloween pet safety guide, four from the Bat Week and National
+// Black Cat Day articles that share the week. Ids are permanent, never reuse
+// or renumber. Shipped off the Monday cadence on purpose: Halloween 2026 is
+// a Saturday and the guide went out the same day. First quiz over eight
+// questions (owner, 2026-10-25): the page and the share card size from
+// questions.length, so nothing else needed changing.
 export default {
   id: 'halloween-hazard-check',
   number: 6,
   date: '2026-10-25',
   title: 'Halloween Hazard Check',
   emoji: '🎃',
-  tagline: 'Candy, candles, costumes and the front door. Do you know what actually sends pets to the vet on October 31st?',
+  tagline: 'Candy, candles, costumes and the front door, plus the bats and black cats that own the week. Twelve questions.',
   reward: {
     emoji: '🍬',
     title: 'Candy Guardian',
-    blurb: 'Your dog may smell the bowl through the cabinet, but it is never getting in.',
+    blurb: 'Your dog may smell the bowl through the cabinet, but it is never getting in. You also know a bat is not blind.',
   },
   questions: [
     {
@@ -30,6 +33,13 @@ export default {
       source: { label: 'Halloween Pet Safety Guide', to: '/blog/halloween-pet-safety-guide/' },
     },
     {
+      q: '"Blind as a bat." What did researchers find when they finally looked inside the eyes of two small nectar-feeding bats in 2009?',
+      options: ['Rod cells only, so the saying is right', 'Cone cells, including a kind tuned to ultraviolet light', 'Eyes with no lens at all', 'A mirror layer like a cat\'s'],
+      answer: 1,
+      explain: 'Both species had cones, rare at about 3 percent of the light-sensing cells, but real, and one kind was tuned to ultraviolet. The likely uses are getting around at twilight, spotting predators and, for nectar feeders, finding flowers that reflect ultraviolet. Bats can see, and some see colors we cannot.',
+      source: { label: 'Bat Week', to: '/blog/bat-week/' },
+    },
+    {
       q: 'A dog ate chocolate at 7 pm and looks completely normal at 9 pm. What does that tell you?',
       options: ['It was not enough to matter', 'Nothing yet, signs usually start 6 to 12 hours after eating', 'The dog vomited it up unnoticed', 'Milk chocolate never causes signs'],
       answer: 1,
@@ -44,11 +54,25 @@ export default {
       source: { label: 'Halloween Pet Safety Guide', to: '/blog/halloween-pet-safety-guide/' },
     },
     {
+      q: 'Genetically, what is a black domestic cat?',
+      options: ['A separate breed with its own gene', 'A tabby with the striped pattern switched off', 'An albino in reverse', 'A cat with extra copies of the pigment gene'],
+      answer: 1,
+      explain: 'The stripes are still in its genes. Two letters of DNA missing from the agouti gene, ASIP, stop each hair from carrying bands of lighter pigment, so the whole coat goes dark. Many black kittens show faint ghost tabby markings that sink into the background as they grow. The trait is recessive, so two tabby parents can produce a black kitten.',
+      source: { label: 'National Black Cat Day', to: '/blog/national-black-cat-day/' },
+    },
+    {
       q: 'The doorbell rang forty times last night and this morning your rabbit has not touched its hay or left droppings since the evening. What is that?',
       options: ['Normal after a late night, give it until tomorrow', 'A sign it needs fresh greens', 'A possible GI stasis emergency once it passes 8 to 12 hours', 'Sulking, rabbits do this when ignored'],
       answer: 2,
       explain: 'A rabbit reads each doorbell as a predator at the burrow mouth, and a frightened rabbit freezes and stops eating. No food and no droppings for 8 to 12 hours is GI stasis territory, an emergency, and stress is one of the things that starts it. The quiet room farthest from the door, with the hay topped up, is how you prevent it.',
       source: { label: 'Halloween Pet Safety Guide', to: '/blog/halloween-pet-safety-guide/' },
+    },
+    {
+      q: 'An Egyptian fruit bat has big eyes and sees well. When does it echolocate?',
+      options: ['Only in full darkness', 'Only inside caves', 'In broad daylight too, calling faster right before it dips to drink', 'Never, fruit bats cannot echolocate'],
+      answer: 2,
+      explain: 'A Tel Aviv University team followed the bats through the city in daylight and they kept calling, more as they came in to land and faster still just before dipping to a pool. Sound seems to measure distance more sharply than sight, so the bat uses both at once rather than choosing.',
+      source: { label: 'Bat Week', to: '/blog/bat-week/' },
     },
     {
       q: 'For years nobody knew why a few raisins kill one dog and leave another fine. What do ASPCA toxicologists now point to?',
@@ -63,6 +87,13 @@ export default {
       answer: 2,
       explain: 'Ferrets can develop low blood sugar and seizures after xylitol products, and they already carry a high rate of insulinoma, a tumor that drives blood sugar down on its own. A ferret loose on the floor during a party is the one to watch around dropped gum and mints.',
       source: { label: 'Halloween Pet Safety Guide', to: '/blog/halloween-pet-safety-guide/' },
+    },
+    {
+      q: 'A 2015 survey asked who still thinks black cats are unlucky. Which age group said yes most often?',
+      options: ['Over 55s, at 12 percent', '18 to 24 year olds, at 12 percent', 'Both groups, about evenly', 'Nobody over 2 percent in any group'],
+      answer: 1,
+      explain: 'Twelve percent of 18 to 24 year olds thought black cats were unlucky, against 2 percent of people over 55. Whatever slows a black cat down in a rehoming pen, it is not confined to older people with older beliefs. The charity that ran the survey, Cats Protection, started National Black Cat Day in 2011 because its black cats waited about a week longer for a home.',
+      source: { label: 'National Black Cat Day', to: '/blog/national-black-cat-day/' },
     },
     {
       q: 'You find the empty candy bag and the dog looks fine. What is the right first move?',
