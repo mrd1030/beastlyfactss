@@ -256,27 +256,3 @@ spray. No people, no boardwalk, no hands, no text, no watermark. Landscape 3:2.
 **Check:** the spray is visible and comes from the nostrils, salt crust is on
 the snout, and the animal is black with a blunt snout rather than a green
 iguana.
-
-## Halloween pet safety, 2026-10-25
-
-One guide hero, 3:2 at 1168x784, for `halloween-pet-safety-guide.mdx`. The
-article shipped with this path in its frontmatter and no file on disk, so the
-build fails on check-images until the frame lands. Follows the illness rule
-above: show the thing standing next to the hazard, never the hazard happening.
-The dog is a firsthand species, so breed accuracy matters.
-
-**`/assets/images/halloween-pet-safety-guide.jpg`**
-
-An adult golden retriever lying flat on a kitchen floor, chin on its paws,
-looking up at a clear glass bowl of individually wrapped candy sitting well back
-on a high counter it cannot reach. Beside the bowl an uncarved or carved but
-unlit pumpkin. Golden retriever features: long feathered cream to gold coat,
-broad head, dark pendant ears, soft dark eyes, no tail docking. Not a Labrador:
-the coat is long and feathered on the chest, legs and tail, never short and
-dense. Warm evening kitchen light from one window, autumn palette of amber,
-cream and dull orange, the floor in shadow and the counter lit. Shot low at dog
-eye level, 35mm, f/2.8, the dog sharp and the bowl soft but readable. The
-wrappers carry no lettering or logos. No people, no hands, no lit flame, no
-text, no watermark. 3:2.
-**Check:** the dog is clearly a golden retriever rather than a Labrador, the
-candy is out of reach and unopened, and no flame is lit anywhere in the frame.
