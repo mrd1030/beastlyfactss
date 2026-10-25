@@ -35,6 +35,13 @@ Solo developer passion project. Prefer fast, decisive work over exploration.
 
 ## Technical Notes & Commands
 - Always Read a file before making changes to it.
+- Search Console stats live in BigQuery (bulk data export, active since
+  2026-08-13). Project `project-4d5f7e39-70e7-4cda-87f`, dataset `searchconsole`,
+  location US. Tables: searchdata_site_impression (query level),
+  searchdata_url_impression (page level), ExportLog. Query them with the
+  Google_Cloud_BigQuery MCP tools (execute_sql_readonly); the bq CLI has no
+  credentials here. Data lags about two days. Snapshots go in
+  docs/SEARCH_STATS.md, newest first.
 - "Research" means web search with real, verifiable sources. Never write research-shaped content from memory, and never hand me citations flagged as unverified. Aim for 3 to 5 source URLs per article, and go to 6 only when every source is quoted in the body and trimming one would orphan a cited claim. Never pad a Sources block to hit a number.
 - Photos (owner, 2026-10-04): images under CC0, public domain, CC BY, CC BY-SA or Wikimedia Commons' "copyrighted free use" (any use, commercial included) may be fetched. Never NC, ND, editorial-only, "for Wikipedia only" or fair-use files, and check the uploader is the author or the file carries a license review. Prefer CC0, CC BY or my own photos for anything sold (packages, books). No identifiable people, logos or private property. Before installing, show me the image with its source URL, author, license and the slot it fills, and wait for my yes. Record it in IMAGE_CREDITS.md with license, source, slot and any crop, and give the credit publicly (the site's credits page; a credits page in any PDF or book). One source photo appears once across the site, the packages and the books, in any crop. Exceptions (owner, 2026-10-04): Beastle and the store's package cards may show a photo already on the site, a fact photo may be a Beastlypedia entry's secondary image, never its head; and an animal's care guide hub and encyclopedia entry are one page with a toggle, so they share one photo; the legal section (hub, map and state pages) shares one hero. `python tools/image-audit/find_repeats.py` lists repeats. Never source new affiliate products yourself. Grep affiliateProducts.js for exact existing links, never from memory.
 - Infographic/content installs must stop at the image and internal-link checks. Do not run `npm run build` unless explicitly asked.
