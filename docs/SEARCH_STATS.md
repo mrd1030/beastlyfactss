@@ -79,6 +79,23 @@ get almost no clicks despite 56,000 impressions.
 | /blog/corydoras-catfish-cost-guide/ | 5,143 | 6 | 37.3 |
 | /blog/cockatiel-feeding-guide/ | 4,801 | 14 | 17.9 |
 
+### Cost guides, window over window
+
+| Window | Impressions | Clicks | CTR | Avg pos |
+| --- | --- | --- | --- | --- |
+| 2026-09-26 to 2026-10-23 | 83,664 | 212 | 0.25% | 17.9 |
+| 2026-08-29 to 2026-09-25 | 37,656 | 91 | 0.24% | 18.5 |
+| 2026-08-23 to 2026-09-19 (first export window) | 26,515 | 70 | 0.26% | 15.8 |
+
+The 0.32% quoted in docs/TODO.md for the first export came from the Search
+Console UI, which counts differently from the BigQuery URL table; BigQuery
+puts that same window at 0.26%. Volume is up 2.2x, CTR is flat, position
+slipped two spots. Biggest movers by impressions: chinchilla (53 to 3,500),
+rosy boa (326 to 3,563), mourning gecko (290 to 3,014), guinea pig (305 to
+3,350), rat (259 to 2,574). Top clicks: flying squirrel 10, boa constrictor 10,
+then mourning gecko, California kingsnake, guinea pig, rosy boa, ghost shrimp
+and ackie monitor at 7 each.
+
 ### Queries
 
 Clicks are long tail: 25,006 distinct queries and no single query above 7
