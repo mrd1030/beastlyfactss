@@ -935,7 +935,7 @@ function PostView({ post, onBack, backLabel = 'Back to Critter Digest', factFile
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
-    "headline": post.title,
+    "headline": post.seoTitle || post.title,
     "description": postDescription,
     "url": canonicalUrl,
     "image": ogImage,
