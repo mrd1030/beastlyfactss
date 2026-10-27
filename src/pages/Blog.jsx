@@ -56,6 +56,7 @@ import CompactPostCard from '@/components/shared/CompactPostCard';
 import Pagination from '@/components/shared/Pagination';
 import YouMayAlsoLike from '@/components/blog/YouMayAlsoLike';
 import MoreOnSpecies from '@/components/blog/MoreOnSpecies';
+import AnimalDayNeighbors from '@/components/blog/AnimalDayNeighbors';
 import { getDeepDiveSiblings } from '@/lib/data/relatedArticles';
 import ProductCard from '@/components/shared/ProductCard';
 import ProductModal from '@/components/shared/ProductModal';
@@ -1178,6 +1179,8 @@ function PostView({ post, onBack, backLabel = 'Back to Critter Digest', factFile
             )}
 
             <MoreOnSpecies currentSlug={postSlug} articles={moreOnArticles} onSelectPost={onSelectPost} />
+
+            <AnimalDayNeighbors post={post} posts={allPosts} />
 
             {relatedProducts.length > 0 && (
               <div className="mt-8">
