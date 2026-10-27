@@ -6936,6 +6936,18 @@
       "animalDay": null
     },
     {
+      "slug": "polar-bear-week",
+      "title": "Polar Bear Week: The Fiber Optic Hair Myth",
+      "excerpt": "Polar bear hairs do not pipe sunlight down to the black skin. A physicist measured it in 1998 and found almost nothing",
+      "date": "2026-10-27",
+      "image": "/assets/images/polar-bear-week.jpg",
+      "category": "Wild Animals",
+      "categories": [
+        "Wild Animals"
+      ],
+      "animalDay": "polar-bear-week"
+    },
+    {
       "slug": "prairie-dog-legal-guide",
       "title": "Are Prairie Dogs Legal? 15 States Still Say No",
       "excerpt": "For five years it was federally illegal to sell or move a prairie dog across state lines, because of a monkeypox",
@@ -9391,6 +9403,18 @@
         "Wild Animals"
       ],
       "animalDay": "world-animal-day"
+    },
+    {
+      "slug": "world-lemur-day",
+      "title": "World Lemur Day: Last Friday of October",
+      "excerpt": "The last Friday of October, a festival that began in Antananarivo in 2014, and a group of primates in which 103 of 107",
+      "date": "2026-10-27",
+      "image": "/assets/images/world-lemur-day.jpg",
+      "category": "Wild Animals",
+      "categories": [
+        "Wild Animals"
+      ],
+      "animalDay": "world-lemur-day"
     },
     {
       "slug": "world-octopus-day",

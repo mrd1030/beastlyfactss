@@ -27078,7 +27078,9 @@
     "truth": null,
     "sourceCount": 5,
     "headingCount": 11,
-    "ledeMatchesExcerpt": false
+    "ledeMatchesExcerpt": false,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/hamster-cost-guide.mdx",
@@ -38916,6 +38918,67 @@
     "truth": null,
     "sourceCount": 4,
     "headingCount": 9,
+    "ledeMatchesExcerpt": false,
+    "imageWidth": 1168,
+    "imageHeight": 784
+  },
+  {
+    "path": "/content/guides/polar-bear-week.mdx",
+    "slug": "polar-bear-week",
+    "title": "Polar Bear Week and the Fiber Optic Fur That Never Worked",
+    "seoTitle": "Polar Bear Week: The Fiber Optic Hair Myth",
+    "seoDescription": "Polar Bear Week is the first week of November. Polar bear hairs are not fiber optics, and the Hudson Bay ice the week is timed to is freezing later each fall.",
+    "lastUpdated": "2026-10-27",
+    "noIndex": false,
+    "excerpt": "Polar bear hairs do not pipe sunlight down to the black skin. A physicist measured it in 1998 and found almost nothing gets through. The week is timed to something more pressing: bears waiting on Hudson Bay to freeze.",
+    "date": "2026-10-27",
+    "category": "Wild Animals",
+    "categories": [
+      "Wild Animals"
+    ],
+    "tags": [
+      "Polar Bear",
+      "Polar Bear Week",
+      "Conservation",
+      "Sea Ice",
+      "Hudson Bay",
+      "Arctic",
+      "Wild Animals"
+    ],
+    "readTime": 5,
+    "difficulty": "Beginner",
+    "image": "/assets/images/polar-bear-week.jpg",
+    "imageAlt": "A polar bear standing on snowy tundra at the edge of Hudson Bay in late autumn, thin new ice forming along the shoreline behind it",
+    "emoji": "🐻‍❄️",
+    "lastReviewed": "2026-10-27",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "When is Polar Bear Week?",
+        "a": "The first week of November. Polar Bears International sets the dates each year, and in 2026 the week runs from November 1st to 7th."
+      },
+      {
+        "q": "What color is a polar bear's skin?",
+        "a": "Black. The coat over it looks white, and the hairs themselves are close to transparent, but the skin underneath is dark."
+      },
+      {
+        "q": "Do polar bear hairs carry light like fiber optic cables?",
+        "a": "No. When the transmission was measured in 1998, an inch of hair passed less than a thousandth of a percent of red light, and ultraviolet fared worse still. The idea had circulated for years before anyone tested it."
+      },
+      {
+        "q": "Why do the Churchill polar bears come ashore?",
+        "a": "Hudson Bay melts completely each summer, so the bears that hunt seals on its ice have to spend those months on land, living mostly off stored fat. In the fall they gather near Churchill to wait for the sea ice to come back so they can return to hunting."
+      }
+    ],
+    "relatedProducts": [],
+    "factFile": false,
+    "animalDay": "polar-bear-week",
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 5,
+    "headingCount": 5,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
     "imageHeight": 784
@@ -52381,6 +52444,67 @@
     "myth": null,
     "truth": null,
     "sourceCount": 4,
+    "headingCount": 6,
+    "ledeMatchesExcerpt": false,
+    "imageWidth": 1168,
+    "imageHeight": 784
+  },
+  {
+    "path": "/content/guides/world-lemur-day.mdx",
+    "slug": "world-lemur-day",
+    "title": "World Lemur Day and the Primates Running Out of Forest",
+    "seoTitle": "World Lemur Day: Last Friday of October",
+    "seoDescription": "World Lemur Day is the last Friday of October. Of 107 lemur species on the IUCN Red List, 103 are threatened, including the aye-aye, which hunts by knocking.",
+    "lastUpdated": "2026-10-27",
+    "noIndex": false,
+    "excerpt": "The last Friday of October, a festival that began in Antananarivo in 2014, and a group of primates in which 103 of 107 species are threatened. One of them hunts by knocking on wood.",
+    "date": "2026-10-27",
+    "category": "Wild Animals",
+    "categories": [
+      "Wild Animals"
+    ],
+    "tags": [
+      "Lemur",
+      "Aye-Aye",
+      "World Lemur Day",
+      "Madagascar",
+      "Conservation",
+      "Primates",
+      "Wild Animals"
+    ],
+    "readTime": 6,
+    "difficulty": "Beginner",
+    "image": "/assets/images/world-lemur-day.jpg",
+    "imageAlt": "A ring-tailed lemur sitting upright on a tree branch in dry Madagascar forest, its black and white banded tail hanging below it",
+    "emoji": "🐒",
+    "lastReviewed": "2026-10-27",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "When is World Lemur Day?",
+        "a": "The last Friday of October, so the date moves. It is October 30th in 2026, October 29th in 2027 and October 27th in 2028."
+      },
+      {
+        "q": "Who started World Lemur Day?",
+        "a": "No founder of the day itself is on record. The festival around it began in 2014 in Antananarivo, organized by Professor Jonah Ratsimbazafy of GERP Madagascar, and went international in 2015."
+      },
+      {
+        "q": "How many lemur species are endangered?",
+        "a": "The IUCN Red List update of July 2020 rates 103 of 107 lemur species as threatened. Thirty-three are Critically Endangered, the highest category short of extinction in the wild."
+      },
+      {
+        "q": "Is the aye-aye a lemur?",
+        "a": "Yes. It looks like a cross between a rodent and a bat, but it is a lemur, endemic to Madagascar, and the largest primate that is active at night. It is listed as Endangered."
+      }
+    ],
+    "relatedProducts": [],
+    "factFile": false,
+    "animalDay": "world-lemur-day",
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 5,
     "headingCount": 6,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
