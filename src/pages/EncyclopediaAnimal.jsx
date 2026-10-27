@@ -19,6 +19,7 @@ import AnimalQuiz from '@/components/encyclopedia/AnimalQuiz';
 import AnimalCompare from '@/components/encyclopedia/AnimalCompare';
 import { IMAGE_DIMENSIONS } from '@/lib/data/imageDimensions';
 import HubDateLine, { hubDateSchema } from '@/components/shared/HubDateLine';
+import { PUBLISHER } from '@/lib/data/author';
 import { seriesForSlug, chroniclesPath } from '@/lib/chronicles';
 import BeehiivSubscribe from '@/components/blog/BeehiivSubscribe';
 // encyclopedia id -> the id the legal map uses, so a profile can link straight
@@ -149,7 +150,7 @@ export default function EncyclopediaAnimal() {
           "url": canonicalUrl,
           ...hubDateSchema(animal.guideId),
           "author": { "@type": "Organization", "name": "Beastly Facts", "url": "https://beastlyfacts.com" },
-          "publisher": { "@type": "Organization", "name": "Beastly Facts", "url": "https://beastlyfacts.com" },
+          "publisher": PUBLISHER,
           "mainEntityOfPage": { "@type": "WebPage", "@id": canonicalUrl },
         })}</script>
       </Helmet>

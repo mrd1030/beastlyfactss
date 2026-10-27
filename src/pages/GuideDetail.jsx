@@ -30,6 +30,7 @@ import IconChip from '@/components/shared/IconChip';
 import { CalendarDays, Siren, Newspaper, ShoppingCart, ListChecks, CircleHelp, Library, Scale, Sparkles, Lightbulb, House, Utensils, Gamepad2, Pill } from 'lucide-react';
 import { FeatherText } from '@/components/icons/labIcons';
 import HubDateLine, { hubDateSchema } from '@/components/shared/HubDateLine';
+import { PUBLISHER } from '@/lib/data/author';
 
 const sectionMeta = [
   { key: 'housing',    icon: House, label: 'Housing & Setup' },
@@ -289,7 +290,7 @@ export default function GuideDetail() {
           "url": canonicalUrl,
           ...hubDateSchema(guide.id),
           "author": { "@type": "Organization", "name": "Beastly Facts", "url": "https://beastlyfacts.com" },
-          "publisher": { "@type": "Organization", "name": "Beastly Facts", "url": "https://beastlyfacts.com", "logo": { "@type": "ImageObject", "url": "https://beastlyfacts.com/assets/og-default.jpg" } },
+          "publisher": PUBLISHER,
           "mainEntityOfPage": { "@type": "WebPage", "@id": canonicalUrl }
         })}</script>
         <script type="application/ld+json">{JSON.stringify(crumbs)}</script>

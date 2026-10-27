@@ -40,9 +40,14 @@ export const PUBLISHER = {
   '@type': 'Organization',
   name: 'Beastly Facts',
   url: 'https://beastlyfacts.com',
+  // The BF mark, not the share card: og-default.jpg is the 1200x630 social
+  // banner, and Google wants an actual logo here (at least 112px a side). This
+  // is the same image as the favicon, in its largest copy.
   logo: {
     '@type': 'ImageObject',
-    url: 'https://beastlyfacts.com/assets/og-default.jpg',
+    url: 'https://beastlyfacts.com/pwa/icon-512.png',
+    width: 512,
+    height: 512,
   },
 };
 
