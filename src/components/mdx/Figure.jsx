@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Share2, Download, Check, Maximize2, X } from 'lucide-react';
 import { motion, AnimatePresence } from '@/lib/motion-safe';
+import { IMAGE_DIMENSIONS } from '@/lib/data/imageDimensions';
 
 export default function Figure({
   src,
@@ -12,6 +13,11 @@ export default function Figure({
   const [copied, setCopied] = useState(false);
   const [downloaded, setDownloaded] = useState(false);
   const [lightboxOpen, setLightboxOpen] = useState(false);
+  // Real pixel size from the build-time table so the browser can reserve the
+  // slot before the file arrives. The CSS is w-full with Tailwind's
+  // height:auto preflight, so the attributes only fix the aspect ratio; they
+  // never force the rendered size. Unknown paths just ship without them.
+  const dims = (typeof src === 'string' && IMAGE_DIMENSIONS[src]) || null;
 
   // Escape-to-close and a scroll-locked background while open, same pattern
   // ImageLightbox.jsx uses. Scoped to lightboxOpen so nothing runs, and
@@ -157,6 +163,8 @@ export default function Figure({
             alt={alt}
             className="w-full rounded-xl border border-border shadow-sm"
             loading="lazy"
+            width={dims?.width}
+            height={dims?.height}
           />
         </button>
         {/* Purely decorative, pointer-events-none so it can never intercept a
