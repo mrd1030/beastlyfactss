@@ -45,6 +45,13 @@ working checklist.
   both halves are full clauses, they get a period.
 - US spelling, including "gray" for the color. "Grey" stays only inside names spelled that way (African grey, greyhound, grey kangaroo) and in quoted text, titles and product names. Species whose American name uses gray are written gray: gray wolf, great gray owl. No AI-tell phrasing ("nature's ultimate X",
   "let that sink in", "delve into").
+- US customary units (owner, 2026-10-28): pounds and ounces, feet and
+  inches, miles, acres, gallons, degrees Fahrenheit, miles per hour. Convert
+  a metric figure from a source before it goes in, and round to what the
+  source supports ("about 6 pounds", not "6.17 pounds"). The one exception
+  is a veterinary dose a source gives per kilogram: keep the mg/kg figure
+  and put the per-pound figure beside it. Metric stays inside quoted text,
+  paper titles and product names.
 - Dates in US order (owner, 2026-10-21). Without a year, month first with an
   ordinal: "October 21st", "from November 1st to 7th". With a year, no
   ordinal and a comma after the year when the sentence runs on: "on December
