@@ -1565,6 +1565,7 @@ export const IMAGE_DIMENSIONS = {
   "/assets/images/platy-swordtail-molly-overview-1.jpg": { "width": 784, "height": 1168 },
   "/assets/images/platy-tank-setup.jpg": { "width": 1168, "height": 784 },
   "/assets/images/polar-bear-week.jpg": { "width": 1168, "height": 784 },
+  "/assets/images/power-outage-pets-guide.jpg": { "width": 1168, "height": 784 },
   "/assets/images/praying-mantis-cost.jpg": { "width": 1168, "height": 784 },
   "/assets/images/praying-mantis-enrichment.jpg": { "width": 1168, "height": 784 },
   "/assets/images/praying-mantis-feeding.jpg": { "width": 1200, "height": 800 },
