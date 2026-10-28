@@ -1190,7 +1190,7 @@
     },
     {
       "slug": "big-cat-legal-guide",
-      "title": "Big Cat Laws by State After the Big Cat Public Safety Act",
+      "title": "Are Big Cats Legal? State Rules After the Federal Ban",
       "excerpt": "Since December 20, 2022, no private person may acquire a tiger, lion or cougar anywhere in the United States, and the owners who registered by June 18, 2023, may keep what they had and nothing more. The state table still matters, because the states set the conditions on those animals, and because the cougar is a native cat that game law reaches on its own.",
       "date": "2026-10-11",
       "image": "/assets/guides/big-cat-legal-guide.jpg",
@@ -1203,7 +1203,7 @@
     },
     {
       "slug": "bioactive-setups-bearded-dragons",
-      "title": "Bioactive Setups for Bearded Dragons",
+      "title": "Bioactive Bearded Dragon Setup Guide",
       "excerpt": "A complete guide to building a self-sustaining bioactive terrarium for bearded dragons with live plants and a cleanup crew.",
       "date": "2026-06-03",
       "image": "/assets/images/bioactive-bearded-dragon.jpg",
@@ -1393,7 +1393,7 @@
     },
     {
       "slug": "black-bear-legal-guide",
-      "title": "Are Pet Black Bears Legal? 35 Bans, 14 Permits, by State",
+      "title": "Are Pet Black Bears Legal in Your State? Permit Rules",
       "excerpt": "Thirty-five jurisdictions ban a pet black bear and not one state allows it without a permit, which makes it the most restricted animal on this map. The surprise is the other fourteen. Because the black bear is a native game animal across most of its range, the permits that exist are game-breeder and menagerie permits, and West Virginia's is two dollars.",
       "date": "2026-10-13",
       "image": "/assets/guides/black-bear-legal.jpg",
@@ -1573,7 +1573,7 @@
     },
     {
       "slug": "bobcat-legal-guide",
-      "title": "Are Bobcats Legal? 26 Bans, 20 Permit States, by State",
+      "title": "Are Bobcats Legal in Your State? Bans and Permit Rules",
       "excerpt": "The bobcat is the one wild cat on this map that is both a felid, caught by every family-wide cat clause written for the serval, and a native furbearer, caught by the trapping chapters written for the raccoon. The surprise is the second half: twenty states issue a permit, more than for any other wild cat, because a furbearer license is a thing a keeper can hold.",
       "date": "2026-10-11",
       "image": "/assets/guides/bobcat-legal.jpg",
@@ -2073,7 +2073,7 @@
     },
     {
       "slug": "capybara-legal-guide",
-      "title": "Are Capybaras Legal? State Bans and Permit Rules",
+      "title": "Are Capybaras Legal in Your State? Bans and Permits",
       "excerpt": "The world's largest rodent is legal in 23 US jurisdictions, banned in 12, and needs a permit in 13. Almost none of those rules mention the capybara at all: they are rules about the order Rodentia that happen to catch a 100 pound one.",
       "date": "2026-09-06",
       "image": "/assets/guides/capybara-legal.jpg",
@@ -3006,7 +3006,7 @@
     },
     {
       "slug": "crested-gecko-humidity-guide",
-      "title": "Why Humidity Is Everything for Crested Geckos",
+      "title": "Crested Gecko Humidity: Targets, Misting and Shed",
       "excerpt": "Crested geckos need a daily humidity swing, not constant dampness: a spike after the evening mist, a dry-down by afternoon. Here is the cycle, the schedule, and what goes wrong at both ends.",
       "date": "2026-05-10",
       "image": "/assets/images/crested-gecko-humidity.jpg",
@@ -3444,7 +3444,7 @@
     },
     {
       "slug": "fennec-fox-legal-guide",
-      "title": "Are Fennec Foxes Legal? Where the Smallest Fox Is Banned",
+      "title": "Are Fennec Foxes Legal in Your State? Bans and Permits",
       "excerpt": "A three pound desert fox gets caught by rules written about rabies vectors and coyotes. Maryland bans it with the single word fox, and Nevada names it twice under two different genus names.",
       "date": "2026-08-20",
       "image": "/assets/guides/fennec-fox-legal.jpg",
@@ -5818,7 +5818,7 @@
     },
     {
       "slug": "leopard-gecko-temperature-guide",
-      "title": "The Complete Leopard Gecko Temperature Guide",
+      "title": "Leopard Gecko Temperature Guide: Heat and Gradient",
       "excerpt": "A leopard gecko digests on its belly, so the warm hide floor is the number that matters. Here is the gradient zone by zone, the thermostat rule, how to measure, and what too cold and too hot look like.",
       "date": "2026-05-03",
       "image": "/assets/images/leopard-gecko-temperature.jpg",
@@ -6936,6 +6936,18 @@
       "animalDay": null
     },
     {
+      "slug": "polar-bear-week",
+      "title": "Polar Bear Week: The Fiber Optic Hair Myth",
+      "excerpt": "Polar bear hairs do not pipe sunlight down to the black skin. A physicist measured it in 1998 and found almost nothing gets through. The week is timed to something more pressing: bears waiting on Hudson Bay to freeze.",
+      "date": "2026-10-27",
+      "image": "/assets/images/polar-bear-week.jpg",
+      "category": "Wild Animals",
+      "categories": [
+        "Wild Animals"
+      ],
+      "animalDay": "polar-bear-week"
+    },
+    {
       "slug": "prairie-dog-legal-guide",
       "title": "Are Prairie Dogs Legal? 15 States Still Say No",
       "excerpt": "For five years it was federally illegal to sell or move a prairie dog across state lines, because of a monkeypox outbreak traced to a Texas pet distributor. The FDA lifted that in 2008. Fifteen states did not follow, and one of them is Colorado.",
@@ -7213,7 +7225,7 @@
     },
     {
       "slug": "raccoon-legal-guide",
-      "title": "Are Pet Raccoons Legal? 26 Bans, 18 Permits, by State",
+      "title": "Are Pet Raccoons Legal in Your State? Bans and Permits",
       "excerpt": "Twenty-six jurisdictions ban a pet raccoon and eighteen issue a permit, and almost none of those rules were written about pets. They are furbearer statutes and rabies laws aimed at the wild animal, which is why Kentucky files the raccoon under 'rabies vector species' and Utah hands it to an agricultural damage board.",
       "date": "2026-10-10",
       "image": "/assets/guides/raccoon-legal.jpg",
@@ -7591,7 +7603,7 @@
     },
     {
       "slug": "reptile-shedding-complete-guide",
-      "title": "Understanding Reptile Shedding (Ecdysis)",
+      "title": "Reptile Shedding: Stages, Stuck Shed and Humidity",
       "excerpt": "Shedding is one of the most misunderstood aspects of reptile care. Here's what's actually happening, what's normal, and when you need to step in.",
       "date": "2026-04-05",
       "image": "/assets/images/reptile-shedding.jpg",
@@ -8599,6 +8611,22 @@
       "animalDay": null
     },
     {
+      "slug": "thanksgiving-pet-safety-guide",
+      "title": "Thanksgiving Pet Safety: Turkey, Bones, Onions, Dough",
+      "excerpt": "The turkey skin, the onion in the stuffing and the roll dough rising on the counter each hurt a different pet in a different way, and most of the damage shows up days after the guests leave. Thanksgiving hazards species by species, and the call to make before symptoms start.",
+      "date": "2026-10-28",
+      "image": "/assets/images/thanksgiving-pet-safety-guide.jpg",
+      "category": "Pet Care",
+      "categories": [
+        "Pet Care",
+        "Dogs",
+        "Cats",
+        "Birds",
+        "Small & Exotic Pets"
+      ],
+      "animalDay": null
+    },
+    {
       "slug": "the-best-dog-toys-for-big-and-small-dogs-a-2026-guide",
       "title": "Best Dog Toys for Big and Small Dogs",
       "excerpt": "Size really matters with dog toys. Our 2026 guide picks the best toys for big and small dogs. Durability, safety, and mental stimulation.",
@@ -8990,7 +9018,7 @@
     },
     {
       "slug": "uvb-lighting-complete-guide",
-      "title": "UVB Lighting: Why It Matters More Than You Think",
+      "title": "UVB Lighting for Reptiles: Why It Matters",
       "excerpt": "Lack of UVB is behind the most common bone disease in reptile practice, an African grey emergency vets see regularly, and a deformity that turns up in captive frogs. One lighting decision, three very different animals.",
       "date": "2026-04-12",
       "image": "/assets/images/uvb-lighting.jpg",
@@ -9391,6 +9419,18 @@
         "Wild Animals"
       ],
       "animalDay": "world-animal-day"
+    },
+    {
+      "slug": "world-lemur-day",
+      "title": "World Lemur Day: Last Friday of October",
+      "excerpt": "The last Friday of October, a festival that began in Antananarivo in 2014, and a group of primates in which 103 of 107 species are threatened. One of them hunts by knocking on wood.",
+      "date": "2026-10-27",
+      "image": "/assets/images/world-lemur-day.jpg",
+      "category": "Wild Animals",
+      "categories": [
+        "Wild Animals"
+      ],
+      "animalDay": "world-lemur-day"
     },
     {
       "slug": "world-octopus-day",

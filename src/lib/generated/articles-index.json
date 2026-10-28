@@ -1190,7 +1190,7 @@
     },
     {
       "slug": "big-cat-legal-guide",
-      "title": "Big Cat Laws by State After the Big Cat Public Safety Act",
+      "title": "Are Big Cats Legal? State Rules After the Federal Ban",
       "excerpt": "Since December 20, 2022, no private person may acquire a tiger, lion or cougar anywhere in the United States, and the",
       "date": "2026-10-11",
       "image": "/assets/guides/big-cat-legal-guide.jpg",
@@ -1203,7 +1203,7 @@
     },
     {
       "slug": "bioactive-setups-bearded-dragons",
-      "title": "Bioactive Setups for Bearded Dragons",
+      "title": "Bioactive Bearded Dragon Setup Guide",
       "excerpt": "A complete guide to building a self-sustaining bioactive terrarium for bearded dragons with live plants and a cleanup",
       "date": "2026-06-03",
       "image": "/assets/images/bioactive-bearded-dragon.jpg",
@@ -1393,7 +1393,7 @@
     },
     {
       "slug": "black-bear-legal-guide",
-      "title": "Are Pet Black Bears Legal? 35 Bans, 14 Permits, by State",
+      "title": "Are Pet Black Bears Legal in Your State? Permit Rules",
       "excerpt": "Thirty-five jurisdictions ban a pet black bear and not one state allows it without a permit, which makes it the most",
       "date": "2026-10-13",
       "image": "/assets/guides/black-bear-legal.jpg",
@@ -1573,7 +1573,7 @@
     },
     {
       "slug": "bobcat-legal-guide",
-      "title": "Are Bobcats Legal? 26 Bans, 20 Permit States, by State",
+      "title": "Are Bobcats Legal in Your State? Bans and Permit Rules",
       "excerpt": "The bobcat is the one wild cat on this map that is both a felid, caught by every family-wide cat clause written for the",
       "date": "2026-10-11",
       "image": "/assets/guides/bobcat-legal.jpg",
@@ -2073,7 +2073,7 @@
     },
     {
       "slug": "capybara-legal-guide",
-      "title": "Are Capybaras Legal? State Bans and Permit Rules",
+      "title": "Are Capybaras Legal in Your State? Bans and Permits",
       "excerpt": "The world's largest rodent is legal in 23 US jurisdictions, banned in 12, and needs a permit in 13. Almost none of",
       "date": "2026-09-06",
       "image": "/assets/guides/capybara-legal.jpg",
@@ -3006,7 +3006,7 @@
     },
     {
       "slug": "crested-gecko-humidity-guide",
-      "title": "Why Humidity Is Everything for Crested Geckos",
+      "title": "Crested Gecko Humidity: Targets, Misting and Shed",
       "excerpt": "Crested geckos need a daily humidity swing, not constant dampness: a spike after the evening mist, a dry-down by",
       "date": "2026-05-10",
       "image": "/assets/images/crested-gecko-humidity.jpg",
@@ -3444,7 +3444,7 @@
     },
     {
       "slug": "fennec-fox-legal-guide",
-      "title": "Are Fennec Foxes Legal? Where the Smallest Fox Is Banned",
+      "title": "Are Fennec Foxes Legal in Your State? Bans and Permits",
       "excerpt": "A three pound desert fox gets caught by rules written about rabies vectors and coyotes. Maryland bans it with the",
       "date": "2026-08-20",
       "image": "/assets/guides/fennec-fox-legal.jpg",
@@ -5818,7 +5818,7 @@
     },
     {
       "slug": "leopard-gecko-temperature-guide",
-      "title": "The Complete Leopard Gecko Temperature Guide",
+      "title": "Leopard Gecko Temperature Guide: Heat and Gradient",
       "excerpt": "A leopard gecko digests on its belly, so the warm hide floor is the number that matters. Here is the gradient zone by",
       "date": "2026-05-03",
       "image": "/assets/images/leopard-gecko-temperature.jpg",
@@ -7225,7 +7225,7 @@
     },
     {
       "slug": "raccoon-legal-guide",
-      "title": "Are Pet Raccoons Legal? 26 Bans, 18 Permits, by State",
+      "title": "Are Pet Raccoons Legal in Your State? Bans and Permits",
       "excerpt": "Twenty-six jurisdictions ban a pet raccoon and eighteen issue a permit, and almost none of those rules were written",
       "date": "2026-10-10",
       "image": "/assets/guides/raccoon-legal.jpg",
@@ -7603,7 +7603,7 @@
     },
     {
       "slug": "reptile-shedding-complete-guide",
-      "title": "Understanding Reptile Shedding (Ecdysis)",
+      "title": "Reptile Shedding: Stages, Stuck Shed and Humidity",
       "excerpt": "Shedding is one of the most misunderstood aspects of reptile care. Here's what's actually happening, what's normal, and",
       "date": "2026-04-05",
       "image": "/assets/images/reptile-shedding.jpg",
@@ -8611,6 +8611,22 @@
       "animalDay": null
     },
     {
+      "slug": "thanksgiving-pet-safety-guide",
+      "title": "Thanksgiving Pet Safety: Turkey, Bones, Onions, Dough",
+      "excerpt": "The turkey skin, the onion in the stuffing and the roll dough rising on the counter each hurt a different pet in a",
+      "date": "2026-10-28",
+      "image": "/assets/images/thanksgiving-pet-safety-guide.jpg",
+      "category": "Pet Care",
+      "categories": [
+        "Pet Care",
+        "Dogs",
+        "Cats",
+        "Birds",
+        "Small & Exotic Pets"
+      ],
+      "animalDay": null
+    },
+    {
       "slug": "the-best-dog-toys-for-big-and-small-dogs-a-2026-guide",
       "title": "Best Dog Toys for Big and Small Dogs",
       "excerpt": "Size really matters with dog toys. Our 2026 guide picks the best toys for big and small dogs. Durability, safety, and",
@@ -9002,7 +9018,7 @@
     },
     {
       "slug": "uvb-lighting-complete-guide",
-      "title": "UVB Lighting: Why It Matters More Than You Think",
+      "title": "UVB Lighting for Reptiles: Why It Matters",
       "excerpt": "Lack of UVB is behind the most common bone disease in reptile practice, an African grey emergency vets see regularly,",
       "date": "2026-04-12",
       "image": "/assets/images/uvb-lighting.jpg",
