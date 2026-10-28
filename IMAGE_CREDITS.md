@@ -65,7 +65,11 @@ frog, pen-tailed tree shrew) and Adobe Firefly for ids 287 to 296.
 | `wombat.jpg` (replacing Adobe Stock) | Adobe Firefly, partner model GPT Image 2.5 Sunburst | 2026-10-20 |
 | `honeybee.jpg`, `sea-otter.jpg`, `gecko.jpg`, `komodo-dragon.jpg`, `sloth.jpg` (replacing Adobe Stock) | Adobe Firefly, partner model GPT Image 2.5 Flare | 2026-10-20 |
 | `seahorse.jpg`, `platypus.jpg`, `capybara.jpg`, `tardigrade.jpg`, `narwhal.jpg` (replacing Adobe Stock) | Adobe Firefly, partner model GPT Image 2.5 Flare | 2026-10-20 |
+| `international-snow-leopard-day.jpg` (guide hero, `public/assets/images/`) | Adobe Firefly | 2026-10-20 |
+| `national-black-cat-day.jpg` (guide hero, `public/assets/images/`) | Adobe Firefly | 2026-10-23 |
+| `bat-week.jpg` (guide hero, `public/assets/images/`) | Adobe Firefly | 2026-10-24 |
 | `halloween-pet-safety-guide.jpg` (guide hero, `public/assets/images/`) | Adobe Firefly | 2026-10-25 |
+| `polar-bear-week.jpg`, `world-lemur-day.jpg` (guide heroes, `public/assets/images/`) | Adobe Firefly | 2026-10-27 |
 | `thanksgiving-pet-safety-guide.jpg` (guide hero, `public/assets/images/`) | Adobe Firefly | 2026-10-28 |
 | `christmas-pet-safety-guide.jpg` (guide hero, `public/assets/images/`) | Adobe Firefly | 2026-10-28 |
 | `new-years-eve-pet-safety-guide.jpg` (guide hero, `public/assets/images/`) | Adobe Firefly | 2026-10-28 |
