@@ -13869,8 +13869,12 @@
         "a": "Mostly, with three fixes. Tie it to the wall or ceiling so it cannot come down on an animal. Cover the water in the stand, because it grows bacteria and can carry fertilizer or preservative from a treated tree, and a dog or cat that drinks it gets sick. And keep the lower branches bare of glass and tinsel. An untreated, unpainted tree is safe for a rabbit to chew, and the needles may turn its urine orange, which is harmless."
       },
       {
+        "q": "Can dogs eat fruitcake or Christmas pudding?",
+        "a": "No. Both carry raisins and currants, which have no known safe amount for a dog and can cause kidney failure, and both are usually soaked in enough alcohol to matter on its own, which drops blood sugar, blood pressure and body temperature. The fat and sugar on top can set off pancreatitis. A dog that gets a slice is a poison line call that evening, before any sign, because the kidney damage from raisins does not show for days."
+      },
+      {
         "q": "Why is tinsel dangerous for cats?",
-        "a": "It is not a poison, it is a string. A cat that swallows a strand can end up with one end anchored in the stomach or under the tongue while the gut tries to move the rest along, and the intestine bunches and tears along the strand. That is an abdominal surgery, and the signs are vomiting, refusing food, a painful belly and lethargy in the days after. Ribbon, curling ribbon and gift string do the same thing. A house with a cat skips tinsel altogether."
+        "a": "It is a string, and the string is the problem. A cat that swallows a strand can end up with one end anchored in the stomach or under the tongue while the gut tries to move the rest along, and the intestine bunches and tears along the strand. That is an abdominal surgery, and the signs are vomiting, refusing food, a painful belly and lethargy in the days after. Ribbon, curling ribbon and gift string do the same thing. A house with a cat skips tinsel altogether."
       }
     ],
     "relatedProducts": [],
@@ -13879,7 +13883,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 6,
+    "sourceCount": 7,
     "headingCount": 10,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
@@ -36644,7 +36648,7 @@
     "seoDescription": "Fireworks fear by the numbers, the quiet room, what helps and what is placebo, the midnight door, birds and night frights, and the casings on the morning walk.",
     "lastUpdated": "2026-10-28",
     "noIndex": false,
-    "excerpt": "One dog in four is afraid of fireworks and three cats in four hide from them. What the fear looks like, what helps on the night and what does not, the midnight door, the bird that thrashes in the dark, and the spent fireworks on the morning walk.",
+    "excerpt": "One dog in four is afraid of fireworks, and three cats in four show fear of them, most by hiding. What the fear looks like, what helps on the night and what does not, the midnight door, the bird that thrashes in the dark, and the spent fireworks on the morning walk.",
     "date": "2026-10-28",
     "category": "Pet Care",
     "categories": [
@@ -36682,8 +36686,8 @@
         "a": "Mostly no. In the same survey, pheromones, nutraceuticals, herbal and homeopathic products and essential oils were no more effective than placebo. Dutch owners reported a lasting effect from pheromone products in 6 percent of cats. A dog with a real phobia, one that drools, shakes and tries to dig out of the house, needs a vet appointment in December and a prescription. A collar bought on the 31st will not do it."
       },
       {
-        "q": "My cockatiel thrashes around its cage at night. What is happening?",
-        "a": "A night fright. Cockatiels are light sleepers wired to watch for predators, and a bump in the dark, a light switched on during sleep hours or someone entering the room sets off a panic in which the bird throws itself around the cage. On New Year's Eve the bangs do it. Keep the bird's room closed and dark with nobody going in, and leave a night light on so it can find its way back to the perch instead of crashing into the bars."
+        "q": "Can I leave my dog home alone on New Year's Eve?",
+        "a": "Not if the dog is afraid of fireworks, and most owners do not know until the first year. In the Dutch survey of 3,000 dog owners, the most common thing a fearful dog did during the bangs was seek its owner: eye contact in 74 percent, moving close in 69 percent, pressing against them in 63 percent. A dog alone has none of that, and a dog that panics alone can hurt itself trying to get out. If someone has to go out, the dog goes to a house with a person in it, or the person stays."
       },
       {
         "q": "What should I check for on the New Year's Day walk?",
@@ -36697,7 +36701,7 @@
     "myth": null,
     "truth": null,
     "sourceCount": 8,
-    "headingCount": 10,
+    "headingCount": 11,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
     "imageHeight": 784
@@ -39176,7 +39180,7 @@
     "faqs": [
       {
         "q": "How long can aquarium fish survive a power outage?",
-        "a": "Hours, and how many depends on stocking and temperature. A lightly stocked, cool tank with a tight lid may go most of a day before oxygen falls below 5 mg/L, where fish stress, and toward 4 mg/L, where they start to die, large fish first. A crowded or warm tank gets there much faster. Do nothing for the first hour or two except stop feeding. From about eight hours in, run a battery air pump for an hour every eight hours, every four if the fish are gulping at the surface."
+        "a": "Hours, and how many depends on stocking and temperature. A lightly stocked, cool tank with a tight lid may go most of a day before oxygen falls below 5 mg/L, where fish stress, and toward 4 mg/L, where they start to die, large fish first. A crowded or warm tank gets there much faster. Stop feeding at once, and if there is a battery air pump, start it. To ration one charge, run it an hour every eight hours, every four if the fish are gulping at the surface, and agitate the surface by hand between runs."
       },
       {
         "q": "Can I run a generator in the garage with the door open?",
@@ -39187,8 +39191,12 @@
         "a": "It depends on the animal, and the answers run in opposite directions. Fish: no, neither during the outage nor for 24 hours after power returns, because uneaten food and waste feed the ammonia spike that follows a stopped filter. Reptiles: no, a cold gut cannot digest prey. Rabbits, guinea pigs and the other small mammals: yes, keep feeding, because a hindgut fermenter that stops eating is in more danger than one that is a few degrees cool. Birds: yes, they burn through food fast and need it to stay warm."
       },
       {
+        "q": "How long can a bearded dragon go without heat?",
+        "a": "A day or two at the most below its floor, and the floor is 65°F, with 60°F tolerated for no more than a day or two. Insulated and moved to the warmest interior room, with a hand warmer beside it, a healthy adult will usually sit above that for a while. It is not fed while it is cold, because the gut stops, and if the room cannot be held above the floor by the second day it goes to a vet, a reptile shop or a friend with power."
+      },
+      {
         "q": "What is the first thing to do when the power goes out?",
-        "a": "Check the clock and the thermometer, then go to the fish. Note the time, because the aquarium and the reptile tank are both on a timeline you will need to judge. Stop every feeder. Put the lid on the aquarium and a blanket over it and over the reptile enclosure. Then decide, by the species list, who moves to the warmest interior room and who is fine where they are. Nothing gets lit. If the outage is going to be long, the call to a friend with power or a boarder happens at hour two."
+        "a": "Check the clock and the thermometer, then go to the fish. Note the time, because the aquarium and the reptile tank are both on a timeline you will need to judge. Stop every feeder. Put the lid on the aquarium and a blanket over it and over the reptile enclosure. Then decide, by the species list, who moves to the warmest interior room and who is fine where they are. Nothing gets lit. In a summer outage with a rabbit or guinea pig in the house, the call to a friend with power happens at hour two. For a reptile the clock is a day or two below its floor."
       }
     ],
     "relatedProducts": [],
@@ -39199,7 +39207,9 @@
     "truth": null,
     "sourceCount": 5,
     "headingCount": 10,
-    "ledeMatchesExcerpt": false
+    "ledeMatchesExcerpt": false,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/prairie-dog-legal-guide.mdx",
@@ -48499,7 +48509,7 @@
     "faqs": [
       {
         "q": "Can my dog have some turkey on Thanksgiving?",
-        "a": "Plain turkey meat, cooked through, with the skin and bones off, in a small amount. The skin, the drippings, the gravy and the stuffing are where the trouble is. Fat that rich can set off pancreatitis, and the onion and garlic in the stuffing and gravy damage red blood cells with a delay of several days. A cooked poultry bone can choke a dog or splinter and cut the gut. Raw or undercooked turkey can carry salmonella."
+        "a": "Plain turkey meat, cooked through, with the skin and bones off, in a small amount, or a spoon of plain pumpkin or sweet potato with a little chopped apple and white meat on top. The skin, the drippings, the gravy and the stuffing are where the trouble is. Fat that rich can set off pancreatitis, and the onion and garlic in the stuffing and gravy damage red blood cells with a delay of several days. A cooked poultry bone can choke a dog or splinter and cut the gut. Raw or undercooked turkey can carry salmonella."
       },
       {
         "q": "My dog ate the roll dough that was rising on the counter. Is that an emergency?",
@@ -48507,7 +48517,11 @@
       },
       {
         "q": "How much onion is dangerous for a cat?",
-        "a": "Less than a teaspoon of cooked onion, by the veterinary figure. Cats are the most sensitive species, dogs next, and onion powder, dried flakes and dry soup mix are more concentrated than the fresh vegetable. Garlic is three to five times more potent than onion. Signs come three to five days later, when the damaged red cells break down: lethargy, pale or yellow gums, fast breathing, weakness and dark urine. Call the day it happens, not the day the signs show."
+        "a": "About 5 grams of raw onion per kilogram of body weight, which is less than a teaspoon once it is cooked down. Cats are the most sensitive species, dogs next, and onion powder, dried flakes and dry soup mix are more concentrated than the fresh vegetable. Garlic is three to five times more potent than onion. Signs come three to five days later, when the damaged red cells break down: lethargy, pale or yellow gums, fast breathing, weakness and dark urine. Call the day it happens, not the day the signs show."
+      },
+      {
+        "q": "My dog swallowed a turkey bone. What do I do?",
+        "a": "Call your vet or a poison line now, and do not make the dog vomit at home unless they tell you to, since a bone coming back up can do as much damage as one going down. A cooked poultry bone can choke a dog, cut the mouth or gut, or lodge and block it, and a blockage is a surgery. Watch over the next days for vomiting, refusing food, a painful belly, and straining or not passing stool, and go in the same day if any of them show."
       },
       {
         "q": "What do I do if my pet eats something from the table?",
@@ -48520,7 +48534,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 6,
+    "sourceCount": 7,
     "headingCount": 11,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
