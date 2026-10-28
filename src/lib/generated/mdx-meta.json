@@ -13824,7 +13824,7 @@
     "slug": "christmas-pet-safety-guide",
     "title": "Christmas Pet Safety: The Tree, the Lilies and the Wrapping Paper",
     "seoTitle": "Christmas Pet Safety: Tree, Lilies, Tinsel, Cords",
-    "seoDescription": "Lilies and cats, the tree and its water, tinsel, light cords, ornaments, snow globes, holly and mistletoe, potpourri and the guests, species by species, with the poison lines.",
+    "seoDescription": "Lilies and cats, the tree water, tinsel, light cords, snow globes, holly, mistletoe, potpourri and the guests, species by species, plus the poison lines.",
     "lastUpdated": "2026-10-28",
     "noIndex": false,
     "excerpt": "A cat can go into kidney failure from licking lily pollen off its fur, a rabbit will chew through a light cord, and a strand of tinsel can take a cat to surgery. What goes wrong for pets at Christmas, species by species, and the call to make before the signs show.",
@@ -13881,7 +13881,9 @@
     "truth": null,
     "sourceCount": 6,
     "headingCount": 10,
-    "ledeMatchesExcerpt": false
+    "ledeMatchesExcerpt": false,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/coati-legal-guide.mdx",
@@ -36635,6 +36637,70 @@
     "imageHeight": 784
   },
   {
+    "path": "/content/guides/new-years-eve-pet-safety-guide.mdx",
+    "slug": "new-years-eve-pet-safety-guide",
+    "title": "New Year's Eve Pet Safety: The Fireworks, the Door and the Morning After",
+    "seoTitle": "New Year's Eve Pet Safety: Fireworks, Noise, the Door",
+    "seoDescription": "Fireworks fear by the numbers, the quiet room, what helps and what is placebo, the midnight door, birds and night frights, and the spent casings on the morning walk.",
+    "lastUpdated": "2026-10-28",
+    "noIndex": false,
+    "excerpt": "One dog in four is afraid of fireworks and three cats in four hide from them. What the fear looks like, what helps on the night and what does not, the midnight door, the bird that thrashes in the dark, and the spent fireworks on the morning walk.",
+    "date": "2026-10-28",
+    "category": "Pet Care",
+    "categories": [
+      "Pet Care",
+      "Dogs",
+      "Cats",
+      "Birds",
+      "Small & Exotic Pets"
+    ],
+    "tags": [
+      "New Year's Eve",
+      "Fireworks",
+      "Pet Safety",
+      "Dog Health",
+      "Cat Health",
+      "Noise Anxiety",
+      "Bird Safety",
+      "Seasonal"
+    ],
+    "readTime": 10,
+    "difficulty": "Beginner",
+    "image": "/assets/images/new-years-eve-pet-safety-guide.jpg",
+    "imageAlt": "A border collie lying under a dining table at night with its ears back and eyes wide, a window behind it showing fireworks bursting over rooftops",
+    "emoji": "🎆",
+    "lastReviewed": "2026-10-28",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Should I comfort my dog during fireworks, or does that reward the fear?",
+        "a": "Comfort it. In an owner survey of over 1,200 dogs, giving the dog something it loves straight after each bang, a treat or a game, was rated effective in more than two thirds of cases, and so was cueing a relaxation the dog had already been taught. Sit with the dog in the quiet room, keep your own voice flat, and hand over the good stuff as the noise lands."
+      },
+      {
+        "q": "Do calming collars, supplements and pheromones work for fireworks?",
+        "a": "Mostly no. In the same survey, pheromones, nutraceuticals, herbal and homeopathic products and essential oils were no more effective than placebo. Dutch owners reported a lasting effect from pheromone products in 6 percent of cats. A dog with a real phobia, one that drools, shakes and tries to dig out of the house, needs a vet appointment in December and a prescription. A collar bought on the 31st will not do it."
+      },
+      {
+        "q": "My cockatiel thrashes around its cage at night. What is happening?",
+        "a": "A night fright. Cockatiels are light sleepers wired to watch for predators, and a bump in the dark, a light switched on during sleep hours or someone entering the room sets off a panic in which the bird throws itself around the cage. On New Year's Eve the bangs do it. Keep the bird's room closed and dark with nobody going in, and leave a night light on so it can find its way back to the perch instead of crashing into the bars."
+      },
+      {
+        "q": "What should I check for on the New Year's Day walk?",
+        "a": "Spent fireworks. Casings and unexploded pieces are everywhere on the morning of January 1st, and a dog that eats one can get stomach upset, organ injury to the kidneys, liver or bone marrow, and seizures, depending on what was in it. A recently lit one can burn a curious nose. Keep the dog on a leash, steer around debris, and wash feet and belly at home, because ice melt licked off paws and a sweet puddle of antifreeze are the other two January hazards."
+      }
+    ],
+    "relatedProducts": [],
+    "factFile": false,
+    "animalDay": null,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 8,
+    "headingCount": 10,
+    "ledeMatchesExcerpt": false
+  },
+  {
     "path": "/content/guides/nile-monitor-legal-guide.mdx",
     "slug": "nile-monitor-legal-guide",
     "title": "Is It Legal to Own a Nile Monitor? State-by-State Guide",
@@ -48388,7 +48454,9 @@
     "truth": null,
     "sourceCount": 6,
     "headingCount": 11,
-    "ledeMatchesExcerpt": false
+    "ledeMatchesExcerpt": false,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/the-best-dog-toys-for-big-and-small-dogs-a-2026-guide.mdx",
