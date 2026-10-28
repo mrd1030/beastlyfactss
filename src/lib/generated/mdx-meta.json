@@ -39140,7 +39140,7 @@
     "slug": "power-outage-pets-guide",
     "title": "Power Outage With Pets: Which Animal Needs You First",
     "seoTitle": "Power Outage With Pets: Who Needs Air, Heat or Nothing",
-    "seoDescription": "The order to work in when the power fails: fish first for oxygen, reptiles for heat, birds for the air you do not foul, small mammals for summer heat, and the CO rules.",
+    "seoDescription": "The order to work in when the power fails: fish first for oxygen, reptiles for heat, birds for the air you must not foul, small mammals in summer, and CO rules.",
     "lastUpdated": "2026-10-28",
     "noIndex": false,
     "excerpt": "When the power goes out, the fish tank is on a clock measured in hours, the reptile tank in hours to a day, and the bird is in no danger at all until someone lights a stove. The order to work in, species by species, and the one rule that keeps everyone alive.",
@@ -39184,11 +39184,11 @@
       },
       {
         "q": "Should I feed my pets during a power outage?",
-        "a": "It depends on the animal, and the answers run in opposite directions. Fish: no, not during and not for 24 hours after power returns, because uneaten food and waste feed the ammonia spike that follows a stopped filter. Reptiles: no, a cold gut cannot digest prey. Rabbits, guinea pigs and the other small mammals: yes, keep feeding, because a hindgut fermenter that stops eating is in more danger than one that is a few degrees cool. Birds: yes, they burn through food fast and need it to stay warm."
+        "a": "It depends on the animal, and the answers run in opposite directions. Fish: no, neither during the outage nor for 24 hours after power returns, because uneaten food and waste feed the ammonia spike that follows a stopped filter. Reptiles: no, a cold gut cannot digest prey. Rabbits, guinea pigs and the other small mammals: yes, keep feeding, because a hindgut fermenter that stops eating is in more danger than one that is a few degrees cool. Birds: yes, they burn through food fast and need it to stay warm."
       },
       {
         "q": "What is the first thing to do when the power goes out?",
-        "a": "Check the clock and the thermometer, then go to the fish. Note the time, because the aquarium and the reptile tank are both on a timeline you will need to judge. Stop every feeder. Put the lid on the aquarium and a blanket over it and over the reptile enclosure. Then decide, by the species list, who moves to the warmest interior room and who is fine where they are. Nothing gets lit. If the outage is going to be long, the call to a friend with power or a boarder happens at hour two, not hour eight."
+        "a": "Check the clock and the thermometer, then go to the fish. Note the time, because the aquarium and the reptile tank are both on a timeline you will need to judge. Stop every feeder. Put the lid on the aquarium and a blanket over it and over the reptile enclosure. Then decide, by the species list, who moves to the warmest interior room and who is fine where they are. Nothing gets lit. If the outage is going to be long, the call to a friend with power or a boarder happens at hour two."
       }
     ],
     "relatedProducts": [],
@@ -39198,7 +39198,7 @@
     "myth": null,
     "truth": null,
     "sourceCount": 5,
-    "headingCount": 14,
+    "headingCount": 10,
     "ledeMatchesExcerpt": false
   },
   {
