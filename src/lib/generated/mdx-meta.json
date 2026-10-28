@@ -4978,8 +4978,8 @@
     "path": "/content/guides/bat-week.mdx",
     "slug": "bat-week",
     "title": "Bat Week and the Bats That Were Never Blind",
-    "seoTitle": "Bat Week: Are Bats Really Blind?",
-    "seoDescription": "Bat Week runs October 24 to 31. Bats are not blind: some see ultraviolet, and fruit bats pair sight with sonar. White-nose syndrome is the real threat.",
+    "seoTitle": "Bat Week: Are Bats Blind?",
+    "seoDescription": "Bat Week runs October 24th to 31st. Bats are not blind: some see ultraviolet, and fruit bats pair sight with sonar. A fungus is the threat that matters.",
     "lastUpdated": "2026-10-24",
     "noIndex": false,
     "excerpt": "Bats are not blind. Some carry ultraviolet-sensitive cones, and fruit bats keep echolocating in broad daylight to judge distance. The bigger threat to North American bats is a fungus that strikes while they hibernate.",
@@ -5014,12 +5014,12 @@
         "a": "No. They can see, and some small bats even have cone cells tuned to ultraviolet light."
       },
       {
-        "q": "If bats can see, why do they echolocate?",
-        "a": "Sound seems to measure distance more precisely than sight, so bats use both at once, even in daylight."
+        "q": "Who runs Bat Week, and why does it end on Halloween?",
+        "a": "A group of North American government agencies and conservation organizations, among them the U.S. Fish and Wildlife Service, the Forest Service, the National Park Service, the Bureau of Land Management and Bat Conservation International. None of them has published a reason for the dates, but the week ends on the one night a year when bats are already on everyone's mind."
       },
       {
         "q": "What is white-nose syndrome?",
-        "a": "A fungal disease that attacks bats during hibernation. It has killed millions of bats in North America since 2006."
+        "a": "A fungal disease that attacks bats during hibernation. It has killed millions of bats in North America since it was first seen in the winter of 2006 to 2007."
       }
     ],
     "relatedProducts": [],
@@ -5029,7 +5029,7 @@
     "myth": null,
     "truth": null,
     "sourceCount": 6,
-    "headingCount": 5,
+    "headingCount": 6,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
     "imageHeight": 784
@@ -27125,15 +27125,15 @@
     "faqs": [
       {
         "q": "My dog ate Halloween candy. What do I do first?",
-        "a": "Phone a poison line while the dog still looks fine. Have the packaging, a guess at the amount, the time and the dog's weight ready. The ASPCA Animal Poison Control Center is 888-426-4435 and the Pet Poison Helpline is 855-764-7661, 24 hours a day, each with a fee. Chocolate and xylitol both have delays built in, so a normal-looking dog is not a cleared dog. No home vomiting unless told."
+        "a": "Phone a poison line while the dog still looks fine. Have the packaging, a guess at the amount, the time and the dog's weight ready. The ASPCA Animal Poison Control Center is 888-426-4435 and the Pet Poison Helpline is 855-764-7661, 24 hours a day, and both may charge a fee. Chocolate and xylitol both have delays built in, so a normal-looking dog is not a cleared dog. No home vomiting unless told."
       },
       {
         "q": "How much chocolate is dangerous for a dog?",
-        "a": "Milk chocolate needs about 3 ounces to start mild signs in a 10 kg dog. Baking chocolate needs under half an ounce, and cocoa powder less still. The thresholds are 20 mg of methylxanthines per kilogram for mild signs, 40 to 50 for heart effects and 60 or more for seizures. White chocolate is nearly stimulant-free but fatty enough to cause stomach upset or pancreatitis."
+        "a": "Milk chocolate needs about 3 ounces to start mild signs in a 22 pound dog. Baking chocolate needs under half an ounce, and cocoa powder less still. The thresholds are 20 mg of methylxanthines per kilogram for mild signs, 40 to 50 for heart effects and 60 or more for seizures. White chocolate is nearly stimulant-free but fatty enough to cause stomach upset or pancreatitis."
       },
       {
         "q": "Are glow sticks poisonous to cats?",
-        "a": "Not usually, but the reaction is dramatic. The bitter liquid inside stings the mouth and brings on drooling and foam, and a cat that bites a stick then spreads the liquid by grooming, which is why cats dominate these calls. Serious outcomes are rare. Still ring the helpline or your vet so someone with the product data confirms that for your cat."
+        "a": "Not usually, but the reaction is dramatic. The bitter liquid inside stings the mouth and brings on drooling and foam, and a cat that bites a stick then spreads the liquid by grooming, which is why cats dominate these calls. Serious outcomes are rare. Still call the helpline or your vet so someone with the product data confirms that for your cat."
       },
       {
         "q": "Should I put a costume on my pet?",
@@ -39108,15 +39108,15 @@
     "faqs": [
       {
         "q": "When is Polar Bear Week?",
-        "a": "The first week of November. Polar Bears International sets the dates each year, and in 2026 the week runs from November 1st to 7th."
+        "a": "The first week of November. Polar Bears International sets the exact dates each year and posts them on its Polar Bear Week page."
       },
       {
         "q": "What color is a polar bear's skin?",
         "a": "Black. The coat over it looks white, and the hairs themselves are close to transparent, but the skin underneath is dark."
       },
       {
-        "q": "Do polar bear hairs carry light like fiber optic cables?",
-        "a": "No. When the transmission was measured in 1998, an inch of hair passed less than a thousandth of a percent of red light, and ultraviolet fared worse still. The idea had circulated for years before anyone tested it."
+        "q": "Is polar bear fur transparent?",
+        "a": "Close to it. The hairs carry no pigment, and the coat looks white because they scatter light, the way snow does. They are not fiber optics, though: when that was measured in 1998, an inch of hair passed less than a thousandth of a percent of red light, and ultraviolet fared worse still."
       },
       {
         "q": "Why do the Churchill polar bears come ashore?",
@@ -52744,7 +52744,7 @@
     "slug": "world-lemur-day",
     "title": "World Lemur Day and the Primates Running Out of Forest",
     "seoTitle": "World Lemur Day: Last Friday of October",
-    "seoDescription": "World Lemur Day is the last Friday of October. Of 107 lemur species on the IUCN Red List, 103 are threatened, including the aye-aye, which hunts by knocking.",
+    "seoDescription": "World Lemur Day is the last Friday of October. The 2020 Red List rates 103 of 107 lemur species threatened, among them the aye-aye, which hunts by knocking.",
     "lastUpdated": "2026-10-27",
     "noIndex": false,
     "excerpt": "The last Friday of October, a festival that began in Antananarivo in 2014, and a group of primates in which 103 of 107 species are threatened. One of them hunts by knocking on wood.",
@@ -52776,8 +52776,8 @@
         "a": "The last Friday of October, so the date moves. It is October 30th in 2026, October 29th in 2027 and October 27th in 2028."
       },
       {
-        "q": "Who started World Lemur Day?",
-        "a": "No founder of the day itself is on record. The festival around it began in 2014 in Antananarivo, organized by Professor Jonah Ratsimbazafy of GERP Madagascar, and went international in 2015."
+        "q": "Why are lemurs endangered?",
+        "a": "Forest loss, first of all. Slash-and-burn farming and logging for charcoal and fuelwood keep clearing the Madagascar forest that every lemur species depends on, and hunting for meat and the pet trade adds to it. Lemurs live nowhere else, so there is no second population to fall back on."
       },
       {
         "q": "How many lemur species are endangered?",
@@ -52795,7 +52795,7 @@
     "myth": null,
     "truth": null,
     "sourceCount": 5,
-    "headingCount": 6,
+    "headingCount": 5,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
     "imageHeight": 784
