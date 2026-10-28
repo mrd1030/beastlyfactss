@@ -1508,6 +1508,7 @@ export const IMAGE_DIMENSIONS = {
   "/assets/images/neon-tetra-health-issues.jpg": { "width": 1168, "height": 784 },
   "/assets/images/neon-tetra-tank-setup-guide-1.jpg": { "width": 1792, "height": 1008 },
   "/assets/images/neon-tetra-tank-setup.jpg": { "width": 1168, "height": 784 },
+  "/assets/images/new-years-eve-pet-safety-guide.jpg": { "width": 1168, "height": 784 },
   "/assets/images/oscar-fish-cost.jpg": { "width": 1168, "height": 784 },
   "/assets/images/oscar-fish-enrichment.jpg": { "width": 1168, "height": 784 },
   "/assets/images/oscar-fish-feeding.jpg": { "width": 1376, "height": 768 },

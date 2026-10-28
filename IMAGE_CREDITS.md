@@ -68,3 +68,4 @@ frog, pen-tailed tree shrew) and Adobe Firefly for ids 287 to 296.
 | `halloween-pet-safety-guide.jpg` (guide hero, `public/assets/images/`) | Adobe Firefly | 2026-10-25 |
 | `thanksgiving-pet-safety-guide.jpg` (guide hero, `public/assets/images/`) | Adobe Firefly | 2026-10-28 |
 | `christmas-pet-safety-guide.jpg` (guide hero, `public/assets/images/`) | Adobe Firefly | 2026-10-28 |
+| `new-years-eve-pet-safety-guide.jpg` (guide hero, `public/assets/images/`) | Adobe Firefly | 2026-10-28 |
