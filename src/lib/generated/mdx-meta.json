@@ -36698,7 +36698,9 @@
     "truth": null,
     "sourceCount": 8,
     "headingCount": 10,
-    "ledeMatchesExcerpt": false
+    "ledeMatchesExcerpt": false,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/nile-monitor-legal-guide.mdx",
@@ -39132,6 +39134,72 @@
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
     "imageHeight": 784
+  },
+  {
+    "path": "/content/guides/power-outage-pets-guide.mdx",
+    "slug": "power-outage-pets-guide",
+    "title": "Power Outage With Pets: Which Animal Needs You First",
+    "seoTitle": "Power Outage With Pets: Who Needs Air, Heat or Nothing",
+    "seoDescription": "The order to work in when the power fails: fish first for oxygen, reptiles for heat, birds for the air you do not foul, small mammals for summer heat, and the CO rules.",
+    "lastUpdated": "2026-10-28",
+    "noIndex": false,
+    "excerpt": "When the power goes out, the fish tank is on a clock measured in hours, the reptile tank in hours to a day, and the bird is in no danger at all until someone lights a stove. The order to work in, species by species, and the one rule that keeps everyone alive.",
+    "date": "2026-10-28",
+    "category": "Pet Care",
+    "categories": [
+      "Pet Care",
+      "Aquatic Life",
+      "Reptiles",
+      "Birds",
+      "Small & Exotic Pets",
+      "Dogs",
+      "Cats"
+    ],
+    "tags": [
+      "Power Outage",
+      "Emergency Prep",
+      "Aquarium Care",
+      "Reptile Care",
+      "Bird Safety",
+      "Small Mammal Care",
+      "Seasonal",
+      "Winter"
+    ],
+    "readTime": 11,
+    "difficulty": "Beginner",
+    "image": "/assets/images/power-outage-pets-guide.jpg",
+    "imageAlt": "A dark living room during a power outage lit by a single flashlight, an aquarium wrapped in a blanket on its stand and a towel-covered reptile enclosure beside it",
+    "emoji": "🔌",
+    "lastReviewed": "2026-10-28",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "How long can aquarium fish survive a power outage?",
+        "a": "Hours, and how many depends on stocking and temperature. A lightly stocked, cool tank with a tight lid may go most of a day before oxygen falls below 5 mg/L, where fish stress, and toward 4 mg/L, where they start to die, large fish first. A crowded or warm tank gets there much faster. Do nothing for the first hour or two except stop feeding. From about eight hours in, run a battery air pump for an hour every eight hours, every four if the fish are gulping at the surface."
+      },
+      {
+        "q": "Can I run a generator in the garage with the door open?",
+        "a": "No. The CDC's rule is never inside a home or garage, even with doors and windows open, and more than 20 feet from any window, door or vent when it runs outside. A generator produces carbon monoxide that is odorless and colorless, and a bird or a small mammal in the house has far less buffer against it than a person does. The same rule covers gas ovens used for heat, charcoal indoors and camp stoves indoors. Battery CO detectors go near every sleeping area."
+      },
+      {
+        "q": "Should I feed my pets during a power outage?",
+        "a": "It depends on the animal, and the answers run in opposite directions. Fish: no, not during and not for 24 hours after power returns, because uneaten food and waste feed the ammonia spike that follows a stopped filter. Reptiles: no, a cold gut cannot digest prey. Rabbits, guinea pigs and the other small mammals: yes, keep feeding, because a hindgut fermenter that stops eating is in more danger than one that is a few degrees cool. Birds: yes, they burn through food fast and need it to stay warm."
+      },
+      {
+        "q": "What is the first thing to do when the power goes out?",
+        "a": "Check the clock and the thermometer, then go to the fish. Note the time, because the aquarium and the reptile tank are both on a timeline you will need to judge. Stop every feeder. Put the lid on the aquarium and a blanket over it and over the reptile enclosure. Then decide, by the species list, who moves to the warmest interior room and who is fine where they are. Nothing gets lit. If the outage is going to be long, the call to a friend with power or a boarder happens at hour two, not hour eight."
+      }
+    ],
+    "relatedProducts": [],
+    "factFile": false,
+    "animalDay": null,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 5,
+    "headingCount": 14,
+    "ledeMatchesExcerpt": false
   },
   {
     "path": "/content/guides/prairie-dog-legal-guide.mdx",

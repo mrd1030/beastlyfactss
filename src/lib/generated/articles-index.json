@@ -6980,6 +6980,24 @@
       "animalDay": "polar-bear-week"
     },
     {
+      "slug": "power-outage-pets-guide",
+      "title": "Power Outage With Pets: Who Needs Air, Heat or Nothing",
+      "excerpt": "When the power goes out, the fish tank is on a clock measured in hours, the reptile tank in hours to a day, and the",
+      "date": "2026-10-28",
+      "image": "/assets/images/power-outage-pets-guide.jpg",
+      "category": "Pet Care",
+      "categories": [
+        "Pet Care",
+        "Aquatic Life",
+        "Reptiles",
+        "Birds",
+        "Small & Exotic Pets",
+        "Dogs",
+        "Cats"
+      ],
+      "animalDay": null
+    },
+    {
       "slug": "prairie-dog-legal-guide",
       "title": "Are Prairie Dogs Legal? 15 States Still Say No",
       "excerpt": "For five years it was federally illegal to sell or move a prairie dog across state lines, because of a monkeypox",
