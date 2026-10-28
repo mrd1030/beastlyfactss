@@ -2448,6 +2448,22 @@
       "animalDay": null
     },
     {
+      "slug": "christmas-pet-safety-guide",
+      "title": "Christmas Pet Safety: Tree, Lilies, Tinsel, Cords",
+      "excerpt": "A cat can go into kidney failure from licking lily pollen off its fur, a rabbit will chew through a light cord, and a",
+      "date": "2026-10-28",
+      "image": "/assets/images/christmas-pet-safety-guide.jpg",
+      "category": "Pet Care",
+      "categories": [
+        "Pet Care",
+        "Dogs",
+        "Cats",
+        "Birds",
+        "Small & Exotic Pets"
+      ],
+      "animalDay": null
+    },
+    {
       "slug": "coati-legal-guide",
       "title": "Are Coatis Legal? Legal in 24 States, 13 Bans, by State",
       "excerpt": "The coati shares the kinkajou's map almost line for line, with three differences that come from being named. Oklahoma's",

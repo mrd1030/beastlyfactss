@@ -13820,6 +13820,70 @@
     "imageHeight": 784
   },
   {
+    "path": "/content/guides/christmas-pet-safety-guide.mdx",
+    "slug": "christmas-pet-safety-guide",
+    "title": "Christmas Pet Safety: The Tree, the Lilies and the Wrapping Paper",
+    "seoTitle": "Christmas Pet Safety: Tree, Lilies, Tinsel, Cords",
+    "seoDescription": "Lilies and cats, the tree and its water, tinsel, light cords, ornaments, snow globes, holly and mistletoe, potpourri and the guests, species by species, with the poison lines.",
+    "lastUpdated": "2026-10-28",
+    "noIndex": false,
+    "excerpt": "A cat can go into kidney failure from licking lily pollen off its fur, a rabbit will chew through a light cord, and a strand of tinsel can take a cat to surgery. What goes wrong for pets at Christmas, species by species, and the call to make before the signs show.",
+    "date": "2026-10-28",
+    "category": "Pet Care",
+    "categories": [
+      "Pet Care",
+      "Dogs",
+      "Cats",
+      "Birds",
+      "Small & Exotic Pets"
+    ],
+    "tags": [
+      "Christmas",
+      "Pet Safety",
+      "Dog Health",
+      "Cat Health",
+      "Toxic Plants",
+      "Bird Safety",
+      "Rabbit Care",
+      "Seasonal"
+    ],
+    "readTime": 11,
+    "difficulty": "Beginner",
+    "image": "/assets/images/christmas-pet-safety-guide.jpg",
+    "imageAlt": "A gray tabby cat crouched under a lit Christmas tree reaching a paw toward a low glass ornament, a strand of silver tinsel trailing from the branch above it",
+    "emoji": "🎄",
+    "lastReviewed": "2026-10-28",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Are poinsettias poisonous to cats and dogs?",
+        "a": "Only mildly. The milky sap irritates the mouth and stomach, so a pet that chews a leaf may drool and vomit, and most recover within a day or two. No deaths are recorded from it. The plants that matter at Christmas are the lilies, which cause kidney failure in cats, and mistletoe, which can cause collapse. The poinsettia's reputation is bigger than its bite, but it still goes out of reach."
+      },
+      {
+        "q": "My cat chewed a lily. What do I do?",
+        "a": "Go now. Any part of a true lily, including the pollen and the water in the vase, can cause fatal kidney failure in a cat, and the window for treatment closes around 18 hours after exposure. Early signs in the first 12 hours are drooling, vomiting, going quiet and refusing food. The kidneys fail between 24 and 72 hours. Bring the plant or a photo of it. Dogs that eat lilies get only mild stomach upset."
+      },
+      {
+        "q": "Is a real Christmas tree safe for pets?",
+        "a": "Mostly, with three fixes. Tie it to the wall or ceiling so it cannot come down on an animal. Cover the water in the stand, because it grows bacteria and can carry fertilizer or preservative from a treated tree, and a dog or cat that drinks it gets sick. And keep the lower branches bare of glass and tinsel. An untreated, unpainted tree is safe for a rabbit to chew, and the needles may turn its urine orange, which is harmless."
+      },
+      {
+        "q": "Why is tinsel dangerous for cats?",
+        "a": "It is not a poison, it is a string. A cat that swallows a strand can end up with one end anchored in the stomach or under the tongue while the gut tries to move the rest along, and the intestine bunches and tears along the strand. That is an abdominal surgery, and the signs are vomiting, refusing food, a painful belly and lethargy in the days after. Ribbon, curling ribbon and gift string do the same thing. A house with a cat skips tinsel altogether."
+      }
+    ],
+    "relatedProducts": [],
+    "factFile": false,
+    "animalDay": null,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 6,
+    "headingCount": 10,
+    "ledeMatchesExcerpt": false
+  },
+  {
     "path": "/content/guides/coati-legal-guide.mdx",
     "slug": "coati-legal-guide",
     "title": "Are Coatis Legal? The Procyonid the Lists Name by Accident",
@@ -48267,7 +48331,7 @@
     "slug": "thanksgiving-pet-safety-guide",
     "title": "Thanksgiving Pet Safety: The Table, the Kitchen and the Guests",
     "seoTitle": "Thanksgiving Pet Safety: Turkey, Bones, Onions, Dough",
-    "seoDescription": "Turkey skin and pancreatitis, cooked bones, onion and garlic in stuffing, rising dough, desserts, the stove and the door, species by species, with the poison lines.",
+    "seoDescription": "Turkey skin and pancreatitis, cooked bones, onion in the stuffing, rising dough, desserts, the stove and the door, species by species, plus the poison lines.",
     "lastUpdated": "2026-10-28",
     "noIndex": false,
     "excerpt": "The turkey skin, the onion in the stuffing and the roll dough rising on the counter each hurt a different pet in a different way, and most of the damage shows up days after the guests leave. Thanksgiving hazards species by species, and the call to make before symptoms start.",
