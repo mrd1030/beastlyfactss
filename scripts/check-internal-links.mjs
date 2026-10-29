@@ -10,6 +10,13 @@
 // makes an orphaned article look fine. An earlier audit of the built output
 // reported zero articles below three links for exactly that reason. Only
 // markdown links written into the prose count here.
+//
+// One valve, decided 2026-10-29: an article whose honest count is zero can
+// opt out with `internalLinks: "none"` in its frontmatter, but only alongside
+// a non-empty `internalLinksReason` string saying why no page on the site
+// fits. The flag without the reason still fails. Every exemption is printed on
+// every run, pass or fail, so the list cannot grow quietly the way the
+// MIN_INTERNAL_LINKS=0 bypass would let it.
 import fs from 'node:fs';
 import path from 'node:path';
 
@@ -25,31 +32,68 @@ function walk(dir, out = []) {
   return out;
 }
 
+// Reads one top-level scalar out of the frontmatter block. Enough for the two
+// opt-out fields. Nothing here needs a YAML parser.
+function frontmatterField(fm, key) {
+  const m = fm.match(new RegExp(`^${key}:[ \\t]*(.*)$`, 'm'));
+  if (!m) return undefined;
+  return m[1].trim().replace(/^(["'])(.*)\1$/, '$2').trim();
+}
+
 const files = walk(CONTENT);
 const offenders = [];
+const exempt = [];
+const flaggedWithoutReason = [];
 
 for (const f of files) {
   const raw = fs.readFileSync(f, 'utf8');
+  const fmMatch = raw.match(/^---\r?\n([\s\S]*?)\r?\n---\r?\n/);
+  const fm = fmMatch ? fmMatch[1] : '';
   const body = raw.replace(/^---[\s\S]*?\r?\n---\r?\n/, '');
+  const file = f.replace(/\\/g, '/');
+
+  if (frontmatterField(fm, 'internalLinks') === 'none') {
+    const reason = frontmatterField(fm, 'internalLinksReason');
+    if (reason) {
+      exempt.push({ file, reason });
+      continue;
+    }
+    flaggedWithoutReason.push(file);
+  }
   // A markdown link whose target is site-relative. Excludes external links,
   // anchors and image embeds.
   const links = [...body.matchAll(/(?<!!)\[[^\]]+\]\((\/[^)#]*)\)/g)].map((m) => m[1]);
   const unique = new Set(links);
   if (unique.size < MIN) {
-    offenders.push({ file: f.replace(/\\/g, '/'), count: unique.size });
+    offenders.push({ file, count: unique.size });
   }
 }
 
-if (offenders.length === 0) {
-  console.log(`Internal links: all ${files.length} articles carry at least ${MIN} in-body link.`);
+if (exempt.length > 0) {
+  console.log(`Internal links: ${exempt.length} article(s) opted out of the floor with a stated reason:`);
+  for (const e of exempt) console.log(`  ${e.file}\n      ${e.reason}`);
+}
+
+if (offenders.length === 0 && flaggedWithoutReason.length === 0) {
+  const checked = files.length - exempt.length;
+  console.log(`Internal links: all ${checked} checked articles carry at least ${MIN} in-body link.`);
   process.exit(0);
 }
 
 console.error('');
-console.error(`Internal link check FAILED: ${offenders.length} of ${files.length} articles have fewer than ${MIN} in-body internal link(s).`);
-console.error('');
-for (const o of offenders) console.error(`  ${String(o.count).padStart(2)}  ${o.file}`);
-console.error('');
+if (flaggedWithoutReason.length > 0) {
+  console.error(`Internal link check FAILED: ${flaggedWithoutReason.length} article(s) set internalLinks: "none" without an internalLinksReason.`);
+  console.error('The opt-out needs a non-empty internalLinksReason string saying why no page on the site fits.');
+  console.error('');
+  for (const f of flaggedWithoutReason) console.error(`      ${f}`);
+  console.error('');
+}
+if (offenders.length > 0) {
+  console.error(`Internal link check FAILED: ${offenders.length} of ${files.length} articles have fewer than ${MIN} in-body internal link(s).`);
+  console.error('');
+  for (const o of offenders) console.error(`  ${String(o.count).padStart(2)}  ${o.file}`);
+  console.error('');
+}
 console.error('Every article needs at least one link into another page on the site, written');
 console.error('into the prose rather than left to the Related Files component. House style is');
 console.error('a sentence that earns the link, for example:');

@@ -165,6 +165,11 @@ priced table, and a dated line only ages.
   is a floor, not a target: with this many guides on the site, an article
   links wherever another page is the real answer to something it raised.
   The build gates on the floor, but the check is a net, not the author.
+  Exception (owner, 2026-10-29): when no page on the site is a genuine fit,
+  the article opts out with `internalLinks: "none"` plus a non-empty
+  `internalLinksReason` string in its frontmatter, and no link is written
+  rather than a forced one. The flag without the reason fails the build, and
+  `scripts/check-internal-links.mjs` prints every exemption on every run.
 - A link rides inside a sentence that says something. No "see our", "check
   out our", "read our", "head over to our": the sentence names what the
   other page settles and links it there ("the same impaction risk the
