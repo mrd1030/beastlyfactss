@@ -350,10 +350,11 @@ function EncyclopediaTab({ search, setSearch, activeCategory, setActiveCategory,
             <h2 className="font-display font-bold text-base text-foreground mb-3 flex items-center gap-2">
               <GroupIcon name={group.name} className="w-4 h-4 text-secondary" />{group.name}
             </h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
-              {/* A group's species sit in an always-open folder under a
-                  header row that opens the group hub (the encyclopedia has
-                  no entry for a group, so the header points at the hub). */}
+            <div className="grid grid-flow-row-dense grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
+              {/* A group's species sit in an accordion row; its panel opens
+                  with the group hub first (the encyclopedia has no entry for
+                  a group, so the hub's row is the way into it), then the
+                  species. */}
               {nestByHub(group.animals, (a) => a.guideId).map((entry) => {
                 const rowFor = (animal) => ({
                   to: `/encyclopedia/animal/${animal.id}/`,
@@ -370,14 +371,18 @@ function EncyclopediaTab({ search, setSearch, activeCategory, setActiveCategory,
                 return entry.hub ? (
                   <BrowseGroup
                     key={entry.hub.id}
-                    header={{
-                      to: `/guides/${entry.hub.id}/`,
-                      name: entry.hub.branches.groupName || entry.hub.name,
-                      subtitle: entry.hub.name,
-                      emoji: entry.hub.emoji,
-                      returnTo: currentListPath,
-                    }}
+                    name={entry.hub.branches.groupName || entry.hub.name}
+                    subtitle={`${entry.members.length} species`}
+                    emoji={entry.hub.emoji}
+                    defaultOpen={!!search.trim()}
                   >
+                    <BrowseRow
+                      to={`/guides/${entry.hub.id}/`}
+                      name={entry.hub.name}
+                      subtitle={entry.hub.tagline}
+                      emoji={entry.hub.emoji}
+                      returnTo={currentListPath}
+                    />
                     {entry.members.map((animal) => <BrowseRow key={animal.id} {...rowFor(animal)} />)}
                   </BrowseGroup>
                 ) : (
@@ -473,7 +478,7 @@ function GuidesTab({ activeFilter, setActiveFilter, dogSize, setDogSize, activeS
               <h2 className="font-display font-bold text-base text-foreground mb-3 flex items-center gap-2">
                 <GroupIcon name={group.name} className="w-4 h-4 text-secondary" />{group.name}
               </h2>
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
+              <div className="grid grid-flow-row-dense grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
                 {nestByHub(group.guides, (g) => g.id).map((entry) => {
                   const rowFor = (guide) => ({
                     to: `/guides/${guide.id}/`,
@@ -487,7 +492,14 @@ function GuidesTab({ activeFilter, setActiveFilter, dogSize, setDogSize, activeS
                     returnTo: currentListPath,
                   });
                   return entry.hub ? (
-                    <BrowseGroup key={entry.hub.id} header={rowFor(entry.hub)}>
+                    <BrowseGroup
+                      key={entry.hub.id}
+                      name={entry.hub.branches.groupName || entry.hub.name}
+                      subtitle={`${entry.members.length} species`}
+                      emoji={entry.hub.emoji}
+                      defaultOpen={!!activeSubtype}
+                    >
+                      <BrowseRow {...rowFor(entry.hub)} />
                       {entry.members.map((guide) => <BrowseRow key={guide.id} {...rowFor(guide)} />)}
                     </BrowseGroup>
                   ) : (

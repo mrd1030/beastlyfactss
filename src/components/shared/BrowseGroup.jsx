@@ -1,18 +1,50 @@
-import React from 'react';
-import BrowseRow from '@/components/shared/BrowseRow';
+import React, { useEffect, useId, useState } from 'react';
+import { ChevronDown } from 'lucide-react';
 
-// A group of species inside a browse list (the tetras under their group hub),
-// shown as an always-open folder: the hub's row on top, the species indented
-// beneath it behind a rule. It never collapses, so every species keeps its
-// name, chip and link on screen and in the prerendered HTML, and it spans the
-// full width of the list's grid so the indented rows get their own columns.
-export default function BrowseGroup({ header, children }) {
+// A group of species inside a browse list (the tetras), shown as an accordion
+// row that sits in the grid like any other row and opens a panel beneath it.
+//
+// The panel is a sibling grid item spanning the full width, not part of the
+// row, so the row keeps its normal cell size. The list grid uses dense packing
+// (grid-flow-row-dense), which lets the rows after the group fill the cells
+// beside it when it opens, so the panel lands under the row the group sits in
+// rather than leaving a hole. Closed, the panel is hidden, not unmounted (the
+// class toggles too, since Tailwind's `grid` would override the attribute):
+// every species link stays in the DOM and so in the prerendered HTML.
+//
+// `defaultOpen` opens it while a search or a filter is narrowing the list, so
+// a species found by name is on screen without a click.
+export default function BrowseGroup({ name, subtitle, emoji, defaultOpen = false, children }) {
+  const [open, setOpen] = useState(defaultOpen);
+  const panelId = useId();
+
+  useEffect(() => { setOpen(defaultOpen); }, [defaultOpen]);
+
   return (
-    <div className="col-span-full">
-      <BrowseRow {...header} />
-      <div className="mt-2 ml-3 pl-3 border-l-2 border-border grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
+    <>
+      <button
+        type="button"
+        onClick={() => setOpen((o) => !o)}
+        aria-expanded={open}
+        aria-controls={panelId}
+        className={`flex items-center justify-between w-full text-left bg-card border rounded-xl px-4 py-3 hover:border-secondary/40 hover:shadow-sm transition-all group cursor-pointer ${open ? 'border-secondary/40' : 'border-border'}`}
+      >
+        <span className="flex items-center gap-3 min-w-0">
+          <span className="text-xl flex-shrink-0">{emoji}</span>
+          <span className="min-w-0">
+            <span className="block font-body font-semibold text-sm text-foreground line-clamp-2 break-words">{name}</span>
+            {subtitle && <span className="block text-xs text-muted-foreground font-body italic truncate">{subtitle}</span>}
+          </span>
+        </span>
+        <ChevronDown className={`w-3.5 h-3.5 flex-shrink-0 text-muted-foreground group-hover:text-secondary transition-transform ${open ? 'rotate-180' : ''}`} />
+      </button>
+      <div
+        id={panelId}
+        hidden={!open}
+        className={`col-span-full ml-3 pl-3 border-l-2 border-secondary/30 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 ${open ? 'grid' : 'hidden'}`}
+      >
         {children}
       </div>
-    </div>
+    </>
   );
 }
