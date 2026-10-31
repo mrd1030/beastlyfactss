@@ -501,6 +501,8 @@ export default function GuideDetail() {
 
             {/* Keeping tetras together: one short line per pair of species,
                 plus one for the whole group once there are three or more,
+                with a "Only just" verdict for a band under 3°F and any
+                species caution (a fin nipper) printed under the line,
                 worked out from their temperature and pH ranges at render time.
                 It prints no number: a shared band is a figure no guide states,
                 so the line names which species sets each edge of it, and the
@@ -525,10 +527,17 @@ export default function GuideDetail() {
                 if (top) return { sp: top, where: 'top' };
                 return { sp: set.find((sp) => sp.ranges[key][0] === lo), where: 'bottom' };
               };
+              // A shared band narrower than MIN_BAND_F degrees is "Only just":
+              // the ranges touch, but a heater drifting a degree or two takes
+              // one species out of its range. The band's width is worked out
+              // here and never printed, since no guide states it.
+              const MIN_BAND_F = 3;
+              const tempWidth = (set) => Math.min(...set.map((sp) => sp.ranges.tempF[1])) - Math.max(...set.map((sp) => sp.ranges.tempF[0]));
               const fit = (set) => {
                 const t = band(set, 'tempF');
                 const p = band(set, 'ph');
                 if (!t || !p) return `No: no shared ${!t ? 'temperature' : 'pH'}.`;
+                const verdict = tempWidth(set) < MIN_BAND_F ? 'Only just' : 'Yes';
                 const they = set.length === 2 ? 'both' : 'they all';
                 const tempText = t.all ? `any temperature ${they} list`
                   : t.where === 'within' ? `within the ${short(t.sp)}'s temperature range`
@@ -537,8 +546,12 @@ export default function GuideDetail() {
                 const phText = p.all ? `at any pH ${they} list`
                   : p.where === 'within' ? `within ${owner(p.sp)} pH range`
                   : `at the ${p.where === 'top' ? 'less acidic' : 'acidic'} end of ${owner(p.sp)} pH range`;
-                return `Yes: ${tempText}, ${phText}.`;
+                return `${verdict}: ${tempText}, ${phText}.`;
               };
+              // Water is not the whole answer. A species can carry a
+              // `caution` (copied from its own handling guide, for example a
+              // fin nipper), printed on every line that includes it.
+              const cautions = (set) => set.filter((sp) => sp.caution).map((sp) => sp.caution);
               const sets = [];
               for (let i = 0; i < live.length; i++) for (let j = i + 1; j < live.length; j++) sets.push([live[i], live[j]]);
               if (live.length > 2) sets.push(live);
@@ -552,7 +565,12 @@ export default function GuideDetail() {
                     {sets.map((set) => (
                       <div key={set.map((sp) => sp.id).join('-')} className="py-2 grid grid-cols-1 sm:grid-cols-[11rem_1fr] gap-x-4 gap-y-0.5">
                         <dt className="text-sm font-body font-bold text-foreground">{set.length === live.length && live.length > 2 ? `All ${live.length === 3 ? 'three' : live.length}` : label(set)}</dt>
-                        <dd className="text-sm text-muted-foreground font-body">{fit(set)}</dd>
+                        <dd className="text-sm text-muted-foreground font-body">
+                          {fit(set)}
+                          {cautions(set).map((c) => (
+                            <span key={c} className="block mt-0.5 text-foreground"><span className="font-semibold">Caution:</span> {c}</span>
+                          ))}
+                        </dd>
                       </div>
                     ))}
                   </dl>

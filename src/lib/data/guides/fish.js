@@ -24,7 +24,9 @@ export const fishGuides = fillCostTokens([
     // each rule tile copies its figure from the guide in its `source`. The
     // keeping-together lines are worked out from the species' `ranges` at
     // render time and print no number, since the overlap of two ranges is a
-    // figure no guide states. Planned species show as one "Coming" line until
+    // figure no guide states; a band under 3°F reads "Only just", and a
+    // species' optional `caution` (from its handling guide, such as a fin
+    // nipper) prints on every line it appears in. Planned species show as one "Coming" line until
     // their guide set ships. Drafted 2026-10-31 as a preview, not yet live.
     layout: "group",
     // Intro research, with quotes and URLs: TETRA_GROUP_RESEARCH.md
