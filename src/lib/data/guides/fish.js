@@ -26,19 +26,15 @@ export const fishGuides = fillCostTokens([
     // figure no guide states. Planned species show as one "Coming" line until
     // their guide set ships. Drafted 2026-10-31 as a preview, not yet live.
     layout: "group",
-    // Intro sources and quotes: TETRA_GROUP_RESEARCH.md. The name comes from
-    // the old genus, not "four fins" (no dictionary supports that), and the
-    // schooling line is the predator finding only: in the neon tetra work,
-    // food shortened shoaling rather than holding the school together.
+    // Intro research, with quotes and URLs: TETRA_GROUP_RESEARCH.md
+    // (Merriam-Webster for the name, Gonzalez, Patrick and Val 2024 for the
+    // water, Romano and Stefanini 2021 for schooling). Not cited on the page,
+    // matching the encyclopedia entries, which carry no citations either. The
+    // name comes from the old genus, not "four fins" (no dictionary supports
+    // that), and the schooling line is the predator finding only: in the neon
+    // tetra work, food shortened shoaling rather than holding the school.
     intro: {
-      text: "Tetra is a common name rather than one scientific group. The word is short for Tetragonopterus, an old genus name, and it now covers small characins spread across several families in South and Central America, Mexico and Africa. Most South American tetras come from soft, acidic streams, either clear or stained the color of tea, and many characins keep their salt balance in water that acidic. They school mainly for safety: when a predator appears, neon tetras move toward the middle of the group, where any one fish is least likely to be the one caught.",
-      sources: [
-        { title: "Merriam-Webster: tetra", url: "https://www.merriam-webster.com/dictionary/tetra" },
-        { title: "Melo et al. 2024, Phylogenomics of Characidae", url: "https://academic.oup.com/zoolinnean/article/202/1/zlae101/7739515" },
-        { title: "FishBase: Congo tetra", url: "https://www.fishbase.se/summary/Phenacogrammus-interruptus.html" },
-        { title: "Gonzalez, Patrick and Val 2024, Ion uptake in naturally acidic water", url: "https://pmc.ncbi.nlm.nih.gov/articles/PMC11486802" },
-        { title: "Romano and Stefanini 2021, neon tetras in a fish-robot school", url: "https://iris.santannapisa.it/handle/11382/536590" },
-      ],
+      text: "Tetra is a common name rather than one scientific group: the word is short for Tetragonopterus, an old genus name. Most South American tetras come from soft, acidic streams, either clear or stained the color of tea. They school mainly for safety: when a predator appears, neon tetras move toward the middle of the group, where any one fish is least likely to be the one caught.",
     },
     branches: {
       groupName: "Tetras",

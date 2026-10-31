@@ -434,8 +434,9 @@ export default function GuideDetail() {
               </div>
             )}
 
-            {/* Group hub intro: the only prose on a group page, with its own
-                sources, since no deep dive carries it. */}
+            {/* Group hub intro: the only prose on a group page. Uncited, like
+                the encyclopedia entries; its research notes are named in the
+                hub's data entry. A `sources` list still renders if one is set. */}
             {isGroup && guide.intro && (
               <div className="bg-card border border-border rounded-2xl p-5">
                 <p className="text-sm text-foreground font-body leading-relaxed">{guide.intro.text}</p>
