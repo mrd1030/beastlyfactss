@@ -27,7 +27,7 @@ import { seriesForSlug, chroniclesPath } from '@/lib/chronicles';
 import BeehiivSubscribe from '@/components/blog/BeehiivSubscribe';
 import { SearchX } from 'lucide-react';
 import IconChip from '@/components/shared/IconChip';
-import { CalendarDays, Siren, Newspaper, ShoppingCart, ListChecks, CircleHelp, Library, Scale, Sparkles, Lightbulb, House, Utensils, Gamepad2, Pill } from 'lucide-react';
+import { CalendarDays, Siren, Newspaper, ShoppingCart, ListChecks, CircleHelp, Library, Scale, Sparkles, Lightbulb, House, Utensils, Gamepad2, Pill, Fish } from 'lucide-react';
 import { FeatherText } from '@/components/icons/labIcons';
 import HubDateLine, { hubDateSchema } from '@/components/shared/HubDateLine';
 import { PUBLISHER } from '@/lib/data/author';
@@ -425,6 +425,43 @@ export default function GuideDetail() {
                     </div>
                   ))}
                 </dl>
+              </div>
+            )}
+
+            {/* Group hub (tetra-universal): one card per species, each opening
+                that species' own hub. A planned species has no guide yet, so it
+                renders as a placeholder with no link and no numbers. */}
+            {isRouter && guide.branches && (
+              <div className="bg-card border border-border rounded-2xl p-5">
+                <h2 className="font-display font-bold text-base text-foreground mb-2 flex items-center gap-2">
+                  <IconChip icon={Fish} color="orange" size="heading" />{guide.branches.heading}
+                </h2>
+                {guide.branches.intro && (
+                  <p className="text-sm text-muted-foreground font-body mb-4">{guide.branches.intro}</p>
+                )}
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                  {guide.branches.species.map((sp) => sp.planned ? (
+                    <div key={sp.name} className="border border-dashed border-border rounded-xl p-4 flex items-center justify-between gap-2">
+                      <p className="text-sm font-body font-bold text-muted-foreground">{sp.name}</p>
+                      <span className="text-xs font-body font-semibold text-muted-foreground bg-muted px-2 py-0.5 rounded-full">Guide coming</span>
+                    </div>
+                  ) : (
+                    <Link key={sp.id} to={`/guides/${sp.id}/`} className="group block border border-border rounded-xl p-4 hover:border-secondary transition-colors">
+                      <p className="text-sm font-body font-bold text-foreground group-hover:text-secondary transition-colors flex items-center gap-1.5 mb-2">
+                        <span className="flex-1">{sp.name}</span>
+                        <ChevronRight className="w-4 h-4 flex-shrink-0 text-muted-foreground group-hover:text-secondary" />
+                      </p>
+                      <dl className="space-y-1">
+                        {guide.branches.fields.map((field, i) => (
+                          <div key={field} className="grid grid-cols-[6.5rem_1fr] gap-x-2 text-xs font-body">
+                            <dt className="font-semibold text-foreground">{field}</dt>
+                            <dd className="text-muted-foreground">{sp.values[i]}</dd>
+                          </div>
+                        ))}
+                      </dl>
+                    </Link>
+                  ))}
+                </div>
               </div>
             )}
 

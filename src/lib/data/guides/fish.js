@@ -4,6 +4,89 @@ import { fillCostTokens } from '../../costs.js';
 
 export const fishGuides = fillCostTokens([
   {
+    id: "tetra-universal",
+    name: "Tetra Care: The Essentials",
+    emoji: "🐟",
+    difficulty: "Beginner",
+    petType: "Fish",
+    tagline: "The small schooling fish that share one set of rules and differ on almost every number!",
+    seoTitle: "Tetra Care Guide: Schools, Water, and Tankmates",
+    seoDescription: "Every tetra needs a school, a cycled tank and soft water, but the numbers change by species. Compare neon and cardinal tetras and the rules they both share.",
+    funFact: "Neon and cardinal tetras are easy to mix up in a shop tank, but the cardinal's red stripe runs the full length of its body, where the neon's covers only half of it.",
+    // Group hub, the tetra counterpart of dog-universal: the rules every tetra
+    // shares, then one card per species routing to that species' own hub. It
+    // is a router (docs/RULES.md, Hubs) with no figure of its own. The shared
+    // rows cite the class guides in the sidebar's Health and More list; a row
+    // that names one species cites that species' deep dive. The `branches`
+    // cards copy each species' figures from the deep dive named on the card,
+    // and change there. No emergency card: the signs differ by species (neon
+    // tetra disease against ich a cardinal can be heated through), so each
+    // species hub keeps its own. Planned species render as placeholders until
+    // their guide set ships. Drafted 2026-10-31 as a preview, not yet live.
+    layout: "router",
+    firstWeek: {
+      intro: "The rules every tetra shares, each from the article it links to. The numbers that change by species are in the cards below.",
+      rows: [
+        { label: "How many", value: "Ten of one species. Six is the floor most species pages give, groups of 10 shoaled the most in the group-size study, and ten of one species beats five each of two.", source: "aquarium-stocking-and-tankmates-guide" },
+        { label: "Cycle first", value: "Cycle the tank before any tetra goes in. Most fishless cycles finish in four to six weeks at a stable warm temperature.", source: "aquarium-cycling-guide" },
+        { label: "Water chemistry", value: "Soft and acidic for every species here, with the exact pH on each card below. KH holds pH in place, and dosing pH-up or pH-down against it is how keepers crash a tank.", source: "freshwater-ph-gh-kh-guide" },
+        { label: "Temperature", value: "Set it by species, not by the word tetra. Cardinals take water up to 86°F, past the roughly 77°F neons are comfortable with, so mixing them means a setting inside both ranges.", source: "cardinal-tetra-tank-setup-guide" },
+        { label: "Food size", value: "A micro-pellet or a flake crushed fine. A neon's mouth is only about 1 to 2mm across, and food too large gets spat out, which starves the fish while the tank looks fed.", source: "neon-tetra-feeding-guide" },
+        { label: "Tankmates", value: "Four checks: temperature ranges overlap, water chemistry overlaps, neither adult fits in the other's mouth, and neither nips or bullies the other's body shape. A pairing passes all four.", source: "aquarium-stocking-and-tankmates-guide" },
+        { label: "Quarantine", value: "At least 30 days in a separate tank, and 30 to 60 days for a valuable fish. Thirty days is the floor, not the target.", source: "fish-quarantine-and-treatment-guide" },
+        { label: "Ich", value: "86°F held for two weeks kills most strains, and only some tetras can live there. Cardinals can; neons cannot, so a neon tank gets salt or medication to do the killing.", source: "aquarium-ich-treatment-guide" },
+        { label: "A dead fish", value: "Never leave one in the tank. Neon tetra disease spreads when fish eat infected tissue, reaches cardinal tetras and guppies too, and has no cure.", source: "neon-tetra-health-issues-guide" },
+        { label: "Water changes", value: "25 to 30% weekly from the substrate, with conditioned water at tank temperature. Test nitrate first: under 20 ppm the routine is right, past 40 ppm the next change is 50%.", source: "aquarium-water-changes-guide" },
+        { label: "Power outage", value: "Oxygen is the threat, not darkness. Unplug the filter rather than letting it sit dead in the water, and keep the surface moving.", source: "aquarium-power-outage-and-transport-guide" },
+      ],
+    },
+    branches: {
+      heading: "Pick your tetra",
+      intro: "Same rules, different numbers. Each card is copied from that species' own guides, and opens its full care guide.",
+      fields: ["School", "Starter tank", "Temperature", "pH", "Adult size", "Ich by heat"],
+      species: [
+        {
+          id: "neon-tetra",
+          name: "Neon Tetra",
+          values: ["Ten, six the floor", "10 gallons for 6, a 20-gallon long for 10 to 15", "72 to 78°F", "6.0 to 7.0", "1 to 1.5 in", "No, below its ceiling"],
+        },
+        {
+          id: "cardinal-tetra",
+          name: "Cardinal Tetra",
+          values: ["Ten or more", "A 20-gallon long for 10", "77 to 82°F, takes 86°F", "5.0 to 7.0", "2 in", "Yes"],
+        },
+        { name: "Ember Tetra", planned: true },
+        { name: "Rummy-Nose Tetra", planned: true },
+        { name: "Black Skirt Tetra", planned: true },
+        { name: "Glowlight Tetra", planned: true },
+      ],
+    },
+    routes: [
+      { slug: "aquarium-stocking-and-tankmates-guide", line: "Why inch per gallon fails past small fish, the four checks before two species share a tank, and the group sizes the research supports." },
+      { slug: "aquarium-cycling-guide", line: "Fishless and fish-in cycling with real ammonia numbers, the four to six weeks most cycles take, and why a cycle stalls." },
+      { slug: "freshwater-ph-gh-kh-guide", line: "What pH, GH and KH each mean for a soft-water fish, and why chasing pH with chemicals crashes a tank." },
+      { slug: "aquarium-water-changes-guide", line: "How much to change and how often, read off a nitrate test rather than the calendar." },
+      { slug: "fish-quarantine-and-treatment-guide", line: "The 30-day quarantine tank, why medication goes in a hospital tank, and pulling the carbon before you dose." },
+      { slug: "aquarium-ich-treatment-guide", line: "Heat, salt or medication, and the temperature ceiling that decides which one a tetra gets." },
+    ],
+    buyList: [
+      "Aquarium heater",
+      "Sponge filter, or a hang-on-back unit you can baffle",
+      "Liquid water test kit",
+      "Water conditioner",
+      "Separate quarantine tank",
+      "Driftwood and Indian almond leaves",
+      "Dense midground live plants and floating plants",
+      "Micro or nano pellet, or a tropical flake to crush",
+      "Frozen baby brine shrimp, daphnia, or bloodworms",
+    ],
+    faqs: [
+      { q: "How many of a schooling fish do I need?", a: "Six is the floor most species pages give, and the research points higher. In the group-size study behind that advice, neon tetras and white cloud mountain minnows showed the least aggression and darting in the larger groups, and groups of 10 shoaled the most. Ten of one species beats five each of two." },
+      { q: "Can I treat ich with heat alone?", a: "Only if your fish can live at 86°F for two weeks, because that is the temperature most ich strains cannot survive, and it must be held with extra aeration since warm water carries less oxygen. Discus and cardinal tetras can. Goldfish, koi, zebra danios, neon tetras and bristlenose plecos cannot, and for them heat goes only as high as the species ceiling, to speed the cycle, while salt or medication does the killing." },
+      { q: "How long does it take to cycle a fish tank?", a: "Most fishless cycles finish in four to six weeks at a stable warm temperature, though a gene-sequencing study of real home aquarium biofilters found two tanks reaching undetectable ammonia and nitrite by week three while a third took until week eight. Cold water, no seeding, and an inconsistent ammonia dose all push a cycle toward the slower end of that range." },
+    ],
+  },
+  {
     id: "angelfish",
     name: "Angelfish",
     emoji: "🐠",
