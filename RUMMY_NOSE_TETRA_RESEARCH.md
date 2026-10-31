@@ -328,21 +328,124 @@ Observed 2026-10-31 on US retailer listings. These are observations for the cost
 - Observed range: about $4 to $6.50 per fish online before shipping where the unit is clear or implied; a school of 12 runs about $48 to $75 before shipping. Live-fish shipping was not checked and is often the larger cost online. Roughly 1.5 to 2 times the ember tetra's per-fish price in the ember notes.
 - LiveAquaria and Petco: pages could not be opened (404, 403). A search snippet showed LiveAquaria lists "Brilliant Rummynose Tetra Group - Captive-Bred EXPERT ONLY (Hemigrammus bleheri)", but no price was read.
 
+## Follow-up research (2026-10-31)
+
+Same rules as above: every item was opened in this session, quotes are short extracts, and nothing blocked is cited. API reads are labeled as such (a JSON record, not a rendered page).
+
+New sources added by this pass:
+
+| # | Source | Tier | URL |
+|---|--------|------|-----|
+| S34 | WoRMS (World Register of Marine Species) REST records, AphiaIDs 1605393 ([RHO]), 1605392 ([BLE]), 1013290 ([GEO]), 1016402 (Hemigrammus rhodostomus) and 1383817 (Hemigrammus bleheri). Read via API; the rendered taxdetails pages show only "The taxon you have searched for is non-marine." | Taxonomic database (freshwater records sourced from FishBase, so not independent of S14 to S16) | https://www.marinespecies.org/rest/AphiaRecordByAphiaID/1605393 |
+| S35 | Catalogue of Life, release of 2026-10-14 (dataset 3LR), name search for Petitella. Read via the ChecklistBank API. Its fish sector is attached from WoRMS (sector 60427, subject dataset 1010), so it is not independent either. | Taxonomic database | https://api.checklistbank.org/dataset/3LR/nameusage/search?q=Petitella |
+| S36 | Crossref metadata for the IUCN Red List DOIs (prefix 10.2305). Confirms that each assessment record exists, its assessor and its date; it does not carry the category. | DOI registry metadata | https://api.crossref.org/works/10.2305/IUCN.UK.2023-1.RLTS.T164583297A164583301.en |
+| S37 | Merck Veterinary Manual: "Nutritional Diseases of Fish" (Barbara D. Petty, DVM; Ruth Francis-Floyd, DVM, DACZM; Roy P. E. Yanong, VMD; full review May 2022, last updated Jun 2026) | Veterinary manual | https://www.merckvetmanual.com/exotic-and-laboratory-animals/aquarium-fish/nutritional-diseases-of-fish |
+| S38 | Seriously Fish: Symphysodon aequifasciatus (discus) | Established husbandry reference | https://www.seriouslyfish.com/species/symphysodon-aequifasciatus/ |
+| S39 | Aquarium Co-Op: "Top 7 Warm Water Fish That Aren't Afraid of a Little Heat" (no author or date shown). Same publisher as S31, so it is not an independent second source. | Husbandry reference (retailer-published) | https://www.aquariumcoop.com/blogs/aquarium/warm-water-fish |
+| S40 | FishProfiles.com: Hemigrammus bleheri profile (submitted by "Adam", contributor "Doedogg", no date) | Hobby database, low tier | https://fishprofiles.com/profiles/freshwater/Characins/Hemigrammus_bleheri |
+| S41 | TropicalFreshwaterFish.com: Hemigrammus bleheri (no author; footer "© TropicalFreshwaterFish 2021") | Hobby site, low tier | https://tropicalfreshwaterfish.com/species/Hemigrammus_bleheri.html |
+| S42 | Aqua-Fish.Net: Rummy nose tetra, Hemigrammus bleheri ("Document last modified: 2024-09-27") | Hobby site, low tier | https://en.aqua-fish.net/fish/rummy-nose-tetra |
+| S43 | Wikipedia: Petitella bleheri and Petitella georgiae (for their IUCN references only) | Not citable on its own | https://en.wikipedia.org/wiki/Petitella_bleheri ; https://en.wikipedia.org/wiki/Petitella_georgiae |
+
+Blocked in this pass (nothing read, nothing cited): Eschmeyer's Catalog of Fishes on both hosts (researcharchive.calacademy.org and research.calacademy.org, 403 to the fetch tool; a plain command-line request also got 403), IUCN Red List species pages (403), Petco content and category pages (403), Microcosm Aquarium Explorer (503 again), reefs.com (403), AnAge returned no Hemigrammus or Petitella entry.
+
+### 1. Spelling and current name
+
+- Catalog of Fishes: NOT opened. Both hosts returned 403. A search engine summary of the species page (spid=55018) said it reads "Valid as Petitella rhodostoma (Ahl 1924)" and places the genus in "Acestrorhamphidae: Megalamphodinae", but that is a search snippet, not a page read. Do not cite it. Open https://researcharchive.calacademy.org/research/ichthyology/catalog/fishcatget.asp?spid=55018 on the desktop to confirm.
+- WoRMS (S34), via API:
+  - [RHO]: "scientificname":"Petitella rhodostoma","authority":"(Ahl, 1924)","status":"accepted", "family":"Acestrorhamphidae", "isFreshwater":1. Its citation line reads "Froese, R. and D. Pauly. Editors. (2026). FishBase. Petitella rhodostoma (Ahl, 1924)", so this is FishBase's name carried into WoRMS. https://www.marinespecies.org/rest/AphiaRecordByAphiaID/1605393
+  - "Hemigrammus rhodostomus Ahl, 1924": "status":"unaccepted", "valid_name":"Petitella rhodostoma". https://www.marinespecies.org/rest/AphiaRecordsByName/Hemigrammus%20rhodostomus?like=false&marine_only=false
+  - "Petitella rhodostomus": no record at all (the name search returned empty). https://www.marinespecies.org/rest/AphiaRecordsByName/Petitella%20rhodostomus?like=false&marine_only=false
+  - [BLE]: "Petitella bleheri","authority":"(Géry & Mahnert, 1986)","status":"accepted"; synonym "Hemigrammus bleheri" "unaccepted". https://www.marinespecies.org/rest/AphiaSynonymsByAphiaID/1605392
+  - [GEO]: "Petitella georgiae","authority":"Géry & Boutière, 1964","status":"accepted"; basis of record "Froese, R. & D. Pauly (Editors). (2026). FishBase." https://www.marinespecies.org/rest/AphiaSourcesByAphiaID/1013290
+  - Classification for [RHO]: "Family:Acestrorhamphidae > Subfamily:Pristellinae > Genus:Petitella". https://www.marinespecies.org/rest/AphiaClassificationByAphiaID/1605393
+- Catalogue of Life 2026-10-14 (S35), via API: "Petitella rhodostoma (Ahl, 1924) accepted"; "Hemigrammus rhodostomus Ahl, 1924 synonym", accepted name Petitella rhodostoma; "Petitella bleheri (Géry & Mahnert, 1986) accepted"; "Hemigrammus bleheri Géry & Mahnert, 1986 synonym"; "Petitella georgiae Géry & Boutière, 1964 accepted". Classification: "Acestrorhamphidae Eigenmann, 1907" > "Pristellinae Géry & Boutière, 1964" > "Petitella Géry & Boutière, 1964". https://api.checklistbank.org/dataset/3LR/nameusage/search?q=Petitella
+- Reading: every database that has adopted the genus move (FishBase, WoRMS, Catalogue of Life, ETYFish) spells it rhodostoma. None lists "Petitella rhodostomus". ITIS and GBIF (S11 to S13, S18) still file the species as Hemigrammus rhodostomus. WoRMS and Catalogue of Life both draw on FishBase for these fish, so they add reach, not independent confirmation.
+- NEW DISAGREEMENT, subfamily: WoRMS and Catalogue of Life put Petitella in Pristellinae; FishBase and ETYFish (S14 to S17) put it in Megalamphodinae. The family, Acestrorhamphidae, is agreed. A care guide does not need the subfamily; leave it out.
+
+### 2. IUCN Red List status
+
+- IUCN pages: NOT opened. https://www.iucnredlist.org/species/49830150/135058450 and https://www.iucnredlist.org/species/164583297/164583301 both returned 403. The category below therefore still comes from secondary records, not from IUCN.
+- Crossref metadata for the IUCN DOIs (S36) confirms the assessments exist and dates them, but carries no category:
+  - [BLE]: DOI 10.2305/iucn.uk.2023-1.rlts.t164583297a164583301.en, title "Petitella bleheri: Lima, F.", date 2021-03-04. https://api.crossref.org/works/10.2305/IUCN.UK.2023-1.RLTS.T164583297A164583301.en
+  - [GEO]: DOI 10.2305/iucn.uk.2023-1.rlts.t49829663a160188179.en, title "Petitella georgiae: Lima, F.", date 2021-03-04. https://api.crossref.org/works/10.2305/IUCN.UK.2023-1.RLTS.T49829663A160188179.en
+  - [RHO]: the English DOI that Wikipedia gives (10.2305/IUCN.UK.2022-1.RLTS.T49830150A135058450.en) returned "Resource not found". Crossref does hold a Portuguese-language record, DOI 10.2305/iucn.uk.2022-1.rlts.t49830150a135058450.pt, title "Hemigrammus rhodostomus: Instituto Chico Mendes de Conservação da Biodiversidade (ICMBio)", date 2018-11-07. https://api.crossref.org/works?query.bibliographic=Hemigrammus+rhodostomus&filter=prefix:10.2305&rows=5
+- Category, secondary only: Wikipedia gives "Least Concern (IUCN 3.1)" for both [BLE] and [GEO], citing Lima, F. (2023) (S43); FishBase gives Least Concern assessed 04 March 2021 for both (S14, S16); GBIF's API gives LEAST_CONCERN for all three (S18).
+- Reading: [BLE] and [GEO] were assessed by F. Lima on 4 March 2021 and published in Red List version 2023-1; [RHO] was assessed by ICMBio on 7 November 2018 under the old name Hemigrammus rhodostomus and published in 2022-1. That explains FishBase's "Not Evaluated" for Petitella rhodostoma: the assessment sits under the old name. Least Concern for all three is consistent across FishBase, GBIF and Wikipedia but is not confirmed from an IUCN page.
+
+### 3. Lifespan above hobby tier
+
+- No source above hobby tier found. Searches for a scientific paper, public aquarium, university or museum figure returned only hobby, retail and Wikipedia pages. AnAge (Human Ageing Genomic Resources), the university-run longevity database, has no entry: "Sorry, no matching results found." for Hemigrammus. https://genomics.senescence.info/species/query.php?search=Hemigrammus
+- FishBase (S14 to S16), Seriously Fish (S21 to S23) and Fishkeeper (S30) give no lifespan (recorded in 3.3). The figure stays hobby-tier.
+
+### 4. Feeding frequency above Aquarium Source
+
+- Merck Veterinary Manual (S37), general to aquarium fish, not species-specific: "Most aquarium fish should be fed at least daily, except for carnivorous fish that ingest large meals." Amount: "Ideally, adult fish should be fed 3% of their body weight daily for maintenance." Young fish: "Fry and fingerlings can be fed up to 5% of their body weight daily." https://www.merckvetmanual.com/exotic-and-laboratory-animals/aquarium-fish/nutritional-diseases-of-fish
+- Reading: Merck sets the floor (at least daily) and the daily ration; Aquarium Source's "two small meals a day" (S32) sits inside it. No source above hobby tier gives a rummy-nose-specific number of meals. The site's other tetra feeding guides use twice daily with no frequency source above hobby tier either.
+
+### 5. Second sources for claims resting on Aquarium Co-Op (S31)
+
+- Playing dead in the bag: no second source found. Searches returned only forum threads about fish dying in transport. The nearest independent point is FishProfiles (S40): "Ideally Rummy-Noses should be kept in darkness during transit from dealer to home", which is about transport, not playing dead. Keep the claim attributed to one source or drop it.
+- Red nose fading as a water-quality warning ("canary in the coal mine"):
+  - That the red fades under stress or poor conditions already has independent support in the file: Seriously Fish, "if the fish are not in good condition the red colour can fade considerably" (S21, S22), and Fishkeeper, nitrate in alkaline water "may cause a significant loss of colour as a first symptom of stress" (S30).
+  - The "canary in the coal mine" framing itself: no second source above hobby tier found. Other hits were a verbatim reprint of the Co-Op article on microaquaticshop.com.au, low-tier care blogs, and Wikipedia's uncited line. Co-Op's own second page (S39, same publisher, not independent): "their ruddy snout fades in color when they are stressed". Microcosm Aquarium Explorer, which a search summary says ties the nose to discus water problems, returned 503 again.
+- 20-gallon minimum:
+  - Aquarium Source (S32, already in file): "should not be kept in a tank smaller than 20 gallons." Independent of Co-Op, lower tier.
+  - TropicalFreshwaterFish (S41): "28" (70 cm) or 20 gallons (75 L)". Independent, low tier.
+  - Against it: Aqua-Fish.Net (S42) "A minimum tank size of 60 liters (15 gallons) is recommended."; That Pet Place's listing gives 10 gallons (see 6). The higher-tier sources set length instead: 80 cm (FishBase) or 90 cm (Seriously Fish), section 5.1.
+- 84°F:
+  - Aquarium Source (S32, already in file): "75°F to 84°F (aim for the middle)". Independent, lower tier.
+  - Next highest independent ceilings: TropicalFreshwaterFish "72-82°F (22-28°C)" (S41); Fishkeeper "22-28°C" (S30). FishProfiles gives "73°F - 79°F" (S40); Aqua-Fish.Net "22-26°C (71.6-78.8°F)" (S42).
+  - Co-Op repeats "74-84°F (23-29°C)" on S39, same publisher.
+- "5 years or more":
+  - Aquarium Source (S32, already in file): "5 to 6 years in captivity." Independent, lower tier.
+  - Aqua-Fish.Net (S42): "Rummy Nose Tetras can live for 5-6 years in captivity", adding that some have reportedly lived up to 8 years. Independent, low tier.
+  - So "about 5 years" has two independent hobby sources beside Co-Op; nothing higher (item 3).
+
+### 6. Store prices (price observations, NOT sources, do not cite)
+
+Observed 2026-10-31.
+- Petco: blocked (403) on the category page and content pages. A search engine summary claimed Petco listings "starting around $3.99" for a standard rummy-nose and "about $7.99 for a Brilliant Head variety"; that is a snippet, not a page read. Check on the desktop before using.
+- PetSmart: no PetSmart rummy-nose listing turned up in search; nothing read.
+- That Pet Place (independent store; this listing is in-store only): "Rummynose Tetra - Hemigrammus rhodostomus" $8.99, unit not stated, "RETAIL STORE ONLY, not available for shipping", and it says to call to confirm availability and price. The page does not give the store's address. The URL slug says bleheri but the listing names rhodostomus. https://www.thatpetplace.com/Rummynose-Tetra-Hemigrammus-bleheri-213635
+- The Ifish Store (walk-ins welcome; location not on the page): "Tetra - Rummy-Nose Tetra", listed as Hemigrammus bleheri, "Regular price $ 4.99", unit not stated, sold out. https://theifishstore.com/products/rummy-nose-tetra
+- Aquahuna (Northwest importer and wholesaler, ships only): "Rummynose Tetra (Medium)" $4.00, "Pricing and Quantity is for each INDIVIDUAL animal", sold in multiples of 6. https://aquahuna.com/products/rummynose-tetra-medium-7-pack
+- JL Aquatics (Burnaby, BC, Canada; in store): $6.45 CAD, unit not stated, sold out. Not a US price; do not use for the US range. https://jlaquatics.com/rummy-nose-tetra.html
+- Reading: one US in-store price ($8.99) sits above the online range in section 12 ($4 to $6.50 per fish), consistent with store prices running a little over online prices before shipping. A US cost table could give about $4 to $9 per fish. No big-box price was read.
+
+### 7. Rummy-noses at discus temperatures (82 to 86°F)
+
+- No source says rummy-nose tetras suit 85 to 86°F. The highest ceiling any source gives is 84°F (Aquarium Co-Op S31 and S39; Aquarium Source S32).
+- Sources that pair them with discus: Seriously Fish [BLE] "Many discus enthusiasts keep a shoal of rummy noses in their show tanks, too." (S21); Fishkeeper "mix well with discus in large aquaria" (S30), with its own ceiling of 22-28°C, about 82°F.
+- Aquarium Co-Op (S39) lists the rummy-nose as a "warm water fish" next to discus, but gives discus "84-86°F (29-30°C)" and rummy-noses "74-84°F (23-29°C)" on the same page. So the overlap even in that source is 84°F, not 86.
+- Seriously Fish's discus page (S38) gives discus "26-30°C" (79-86°F) and names no tankmates.
+- Reading: the sources support rummy-noses as discus tankmates at the cool end of discus keeping, about 82°F (Fishkeeper) to 84°F (Co-Op). Nothing supports them at 86°F, and the stronger sources (Seriously Fish, FishBase) cap [BLE] at 79°F. The discus handling guide (content/guides/discus-handling-guide.mdx line 76) frames rummy-noses with cardinals as fish that tolerate "sustained 82 to 86°F water"; the sources back the pairing, not the 86°F end. src/lib/data/guides/fish.js line 572 ("Cardinal and rummynose tetras are named consistently") states the pairing only and is supported. Owner decision on the discus guide sentence.
+
 ## Gaps
 
-- Captive lifespan: no authoritative source. Only hobby-tier figures (up to 5 years or more, 5 to 6 years); the 8-plus-year claim is uncited.
+Updated 2026-10-31 after the follow-up pass.
+
+- Closed: [RHO] spelling. Every database that uses Petitella (FishBase, WoRMS, Catalogue of Life, ETYFish) spells it rhodostoma, and no database lists "Petitella rhodostomus". Catalog of Fishes itself is still unread (403); see below.
+- Closed: why FishBase shows [RHO] as "Not Evaluated". The IUCN record is an ICMBio assessment of Hemigrammus rhodostomus (assessed 2018-11-07, Red List 2022-1), per Crossref.
+- Closed: feeding frequency now has a veterinary floor (Merck: at least daily, 3% of body weight). There is still no species-specific number of meals above hobby tier.
+- Closed: second independent (hobby-tier) sources for the 20-gallon minimum, 84°F and about 5 years (section 5 of the follow-up).
+- Closed: whether any source supports rummy-noses at 86°F. None does; the highest ceiling is 84°F (follow-up 7).
+- Captive lifespan: no source above hobby tier exists that could be found (checked AnAge, FishBase, Seriously Fish, Fishkeeper). Hobby figures: up to 5 years or more, 5 to 6 years; the 8-plus-year claim is uncited.
 - Wild lifespan: no source found.
 - Upper thermal limit or CTmax: no study for any of the three. No source supports holding rummy-noses at 86°F for ich treatment. This also undercuts the discus guide's warmth framing (8.3).
 - Neon tetra disease in rummy-noses specifically: no source found.
 - Fin nipping: no established source either way.
-- Red nose as a water-quality signal: sourced as a stress signal only; no threshold or "earlier than a test kit" evidence.
+- Red nose as a water-quality signal: sourced as a stress signal only (Seriously Fish, Fishkeeper, Co-Op); no threshold or "earlier than a test kit" evidence. The "canary in the coal mine" framing has no second source above hobby tier.
+- Playing dead in the bag: Aquarium Co-Op only; no second source found.
 - Flow requirement for adults: no source found.
 - KH: no reliable figure.
 - Measured wild water chemistry (pH, conductivity, temperature) at rummy-nose sites: not obtained. Lead: Küchler, Miekeley and Forsberg (2000), "A contribution to the chemical characterization of rivers in the Rio Negro Basin, Brazil", Journal of the Brazilian Chemical Society 11(3): 286-292, DOI 10.1590/S0103-50532000000300015 (metadata confirmed via Crossref; full text not opened, so no figures quoted).
-- Feeding frequency for adults: only a lower-tier source (Aquarium Source, two small meals a day).
-- [RHO] conservation status: FishBase "Not Evaluated" vs Least Concern in GBIF and Wikipedia's ICMBio 2022 citation. The IUCN page could not be opened.
-- Naming: [RHO] spelling (rhodostoma vs rhodostomus) and family (Acestrorhamphidae vs Characidae) are owner decisions; ITIS and GBIF have not adopted the genus move for [RHO].
+- Feeding frequency for adults: Merck gives "at least daily" for aquarium fish in general; the two-meals figure is still only Aquarium Source.
+- IUCN category for all three: still unconfirmed from an IUCN page (403). Least Concern rests on FishBase, GBIF and Wikipedia; Crossref confirms the assessments and dates only.
+- Naming: family (Acestrorhamphidae vs Characidae) remains an owner decision; ITIS and GBIF have not adopted the genus move for [RHO]. New: subfamily splits (Pristellinae in WoRMS and Catalogue of Life, Megalamphodinae in FishBase and ETYFish); leave it out of copy.
 - Adult size: FishBase (3.6 cm SL [BLE], 3.9 cm SL [GEO]) vs Seriously Fish (50 mm SL for all three).
-- Catalog of Fishes could not be opened (403); its current treatment of the three names is unconfirmed except as cited by Wikipedia.
+- Catalog of Fishes could not be opened (403 on both hosts, twice); its current treatment of the three names is unconfirmed except as a search snippet and as cited by Wikipedia. Open spid=55018 on the desktop.
+- Big-box prices: Petco blocked (403), no PetSmart listing found. Only one US in-store price read (That Pet Place, $8.99).
+- Discus guide: the sentence putting rummy-noses in "sustained 82 to 86°F water" is unsupported above 84°F (follow-up 7). Owner decision.
 - Lab-species identity: the collective-motion papers name H. rhodostomus but used commercially bought fish; whether any were [BLE] is unknown.
 - Lead not opened: Microcosm Aquarium Explorer "Rummynose Tetra" (503), which a search snippet says links the nose to discus water-quality warnings. Open on the desktop before citing.
