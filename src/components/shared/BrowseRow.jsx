@@ -130,7 +130,7 @@ export default function BrowseRow({
             {label}
             {trailing}
           </div>
-          <dl className="mt-2 pl-[3.25rem] flex flex-wrap gap-x-3 gap-y-0.5 text-[11px] font-body leading-snug">
+          <dl className="mt-2 pl-0 sm:pl-[3.25rem] flex flex-wrap gap-x-3 gap-y-0.5 text-xs font-body leading-snug">
             {facts.map((f) => (
               <div key={f.label} className="flex gap-1 whitespace-nowrap">
                 <dt className="font-semibold text-foreground">{f.label}</dt>

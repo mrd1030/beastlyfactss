@@ -22,8 +22,9 @@ export const fishGuides = fillCostTokens([
     // dives, and they change there. School size and ich by heat stay off the
     // strips: the How many and Ich rows above already carry both. No
     // emergency card: the signs differ by species (neon tetra disease against
-    // ich a cardinal can be heated through), so each species hub keeps its own. Planned species render as placeholders until
-    // their guide set ships. Drafted 2026-10-31 as a preview, not yet live.
+    // ich a cardinal can be heated through), so each species hub keeps its
+    // own. Planned species render as placeholders until their guide set
+    // ships. Drafted 2026-10-31 as a preview, not yet live.
     layout: "router",
     firstWeek: {
       intro: "The rules every tetra shares, each from the article it links to. The numbers that change by species are under each species below.",
