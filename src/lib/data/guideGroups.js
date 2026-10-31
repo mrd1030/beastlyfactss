@@ -56,31 +56,38 @@ export const hubOf = Object.fromEntries(
 );
 const hubIds = new Set(Object.values(hubOf).map((hub) => hub.id));
 
-// Folds a browse list so each group's species sit together under their hub,
-// in list order: [{ hub, members }] for a group, { item } for everything
-// else. idOf maps an item to a guide id (a guide's own id, an encyclopedia
-// animal's guideId). A block appears where its first member or its hub does.
-// The hub's own row, when the list carries it (the guides list), is absorbed
-// as the block header; a hub whose members were all filtered out falls back
-// to a plain row, and a search that keeps a member but not the hub still
-// shows the header so the species reads as part of its group.
-export function nestByHub(items, idOf) {
-  const out = [];
+// Folds a browse list so each group's species sit together under their hub:
+// [{ hub, members }] for a group, { item } for everything else. idOf maps an
+// item to a guide id (a guide's own id, an encyclopedia animal's guideId) and
+// nameOf to its display name. The group is filed by its own name ("Tetras")
+// among the other rows, before the first row whose name sorts after it, so
+// it sits alphabetically wherever the hub entry or its members happen to be
+// in the data; the rest of the list keeps its order. The hub's own row, when
+// the list carries it (the guides list), is absorbed into the group; a hub
+// whose members were all filtered out falls back to a plain row, and a
+// search that keeps a member but not the hub still shows the group so the
+// species reads as part of it.
+export function nestByHub(items, idOf, nameOf) {
+  const loose = [];
   const blocks = new Map();
   const blockFor = (hub) => {
-    let block = blocks.get(hub.id);
-    if (!block) {
-      block = { hub, members: [], hubItem: null };
-      blocks.set(hub.id, block);
-      out.push(block);
-    }
-    return block;
+    if (!blocks.has(hub.id)) blocks.set(hub.id, { hub, members: [], hubItem: null });
+    return blocks.get(hub.id);
   };
   for (const item of items) {
     const id = idOf(item);
     if (hubOf[id]) blockFor(hubOf[id]).members.push(item);
     else if (hubIds.has(id)) blockFor(allGuides.find((g) => g.id === id)).hubItem = item;
-    else out.push({ item });
+    else loose.push({ item });
   }
-  return out.map((entry) => (entry.hub && entry.members.length === 0 ? { item: entry.hubItem } : entry));
+  const out = [...loose];
+  const file = (entry, key) => {
+    const at = out.findIndex((e) => e.item && nameOf(e.item).localeCompare(key) > 0);
+    out.splice(at === -1 ? out.length : at, 0, entry);
+  };
+  for (const block of blocks.values()) {
+    if (block.members.length > 0) file(block, block.hub.branches.groupName || block.hub.name);
+    else if (block.hubItem) file({ item: block.hubItem }, nameOf(block.hubItem));
+  }
+  return out;
 }

@@ -60,6 +60,10 @@ export default function GuideDetail() {
   // enrichment, health, checklist, cost builder, FAQ) and still renders for
   // every species that has not been reconciled yet.
   const isRouter = guide?.layout === 'router';
+  // A group hub (the tetras) is a chooser for someone who has not picked a
+  // species yet: intro, species rows, keeping them together, shared rules,
+  // shared guides, FAQ. See the tetras entry in guides/fish.js.
+  const isGroup = guide?.layout === 'group';
   const titleOf = (slug) => relatedPosts.find(p => p._id === slug)?.title || slug;
   // The first-week rows cite their source as a short tag ("Feeding guide")
   // rather than the full article title, which runs to a line on its own.
@@ -430,44 +434,144 @@ export default function GuideDetail() {
               </div>
             )}
 
-            {/* Group hub (tetras): the species list uses the same
-                BrowseRow as the guides and encyclopedia lists, so a species
-                looks the same here as everywhere else it is browsed. Name,
-                photo, tagline and difficulty come from that species' own guide
-                entry; its figures ride in a strip under the row, so a new
-                species adds a row rather than a table column. A planned species
-                has no guide yet, so it renders as the dimmed, unlinked
-                placeholder row with no figures. One column at every width:
-                rows carrying a figure strip wrap badly side by side. */}
-            {isRouter && guide.branches && (
+            {/* Group hub intro: the only prose on a group page, with its own
+                sources, since no deep dive carries it. */}
+            {isGroup && guide.intro && (
               <div className="bg-card border border-border rounded-2xl p-5">
-                <h2 className="font-display font-bold text-base text-foreground mb-2 flex items-center gap-2">
-                  <IconChip icon={Fish} color="orange" size="heading" />{guide.branches.heading}
-                </h2>
-                {guide.branches.intro && (
-                  <p className="text-sm text-muted-foreground font-body mb-4">{guide.branches.intro}</p>
+                <p className="text-sm text-foreground font-body leading-relaxed">{guide.intro.text}</p>
+                {guide.intro.sources?.length > 0 && (
+                  <p className="text-xs text-muted-foreground font-body mt-3">
+                    {'Sources: '}
+                    {guide.intro.sources.map((src, i) => (
+                      <React.Fragment key={src.url}>
+                        {i > 0 && ', '}
+                        <a href={src.url} target="_blank" rel="noopener noreferrer" className="underline hover:text-secondary">{src.title}</a>
+                      </React.Fragment>
+                    ))}
+                  </p>
                 )}
-                <div className="grid grid-cols-1 gap-2">
-                  {guide.branches.species.map((sp) => {
-                    const entry = sp.planned ? null : allGuides.find((g) => g.id === sp.id);
-                    return entry ? (
-                      <BrowseRow
-                        key={sp.id}
-                        to={`/guides/${entry.id}/`}
-                        name={entry.name}
-                        subtitle={entry.tagline}
-                        image={entry.image}
-                        emoji={entry.emoji}
-                        difficulty={entry.difficulty}
-                        difficultyClass={difficultyColor[entry.difficulty]}
-                        onOpenLegend={() => setIsLegendOpen(true)}
-                        returnTo={`/guides/${guide.id}/`}
-                        facts={guide.branches.fields.map((label, i) => ({ label, value: sp.values[i] }))}
-                      />
-                    ) : (
-                      <BrowseRow key={sp.name} name={sp.name} subtitle="Guide coming" emoji={guide.emoji} available={false} />
-                    );
-                  })}
+              </div>
+            )}
+
+            {/* Group hub: the species list uses the same BrowseRow as the
+                guides and encyclopedia lists, so a species looks the same here
+                as everywhere else it is browsed. Name, photo, tagline and
+                difficulty come from that species' own guide entry; its figures
+                ride in a strip under the row. Planned species fold into one
+                "Coming" line rather than a run of dimmed rows. */}
+            {isGroup && guide.branches && (() => {
+              const planned = guide.branches.species.filter((sp) => sp.planned).map((sp) => sp.name);
+              return (
+                <div className="bg-card border border-border rounded-2xl p-5">
+                  <h2 className="font-display font-bold text-base text-foreground mb-2 flex items-center gap-2">
+                    <IconChip icon={Fish} color="orange" size="heading" />{guide.branches.heading}
+                  </h2>
+                  {guide.branches.intro && (
+                    <p className="text-sm text-muted-foreground font-body mb-4">{guide.branches.intro}</p>
+                  )}
+                  <div className="grid grid-cols-1 gap-2">
+                    {guide.branches.species.filter((sp) => !sp.planned).map((sp) => {
+                      const entry = allGuides.find((g) => g.id === sp.id);
+                      return entry ? (
+                        <BrowseRow
+                          key={sp.id}
+                          to={`/guides/${entry.id}/`}
+                          name={entry.name}
+                          subtitle={entry.tagline}
+                          image={entry.image}
+                          emoji={entry.emoji}
+                          difficulty={entry.difficulty}
+                          difficultyClass={difficultyColor[entry.difficulty]}
+                          onOpenLegend={() => setIsLegendOpen(true)}
+                          returnTo={`/guides/${guide.id}/`}
+                          facts={guide.branches.fields.map((label, i) => ({ label, value: sp.values[i] }))}
+                        />
+                      ) : null;
+                    })}
+                  </div>
+                  {planned.length > 0 && (
+                    <p className="text-xs text-muted-foreground font-body mt-3">
+                      <span className="font-semibold text-foreground">Coming:</span> {planned.join(', ')}
+                    </p>
+                  )}
+                </div>
+              );
+            })()}
+
+            {/* Keeping tetras together: one line per pair of species, worked
+                out from their temperature and pH ranges at render time. It
+                prints no number: the overlap of two ranges is a figure no
+                guide states, so the line names where in each range the shared
+                tank sits and the species rows above carry the figures. */}
+            {isGroup && guide.branches && (() => {
+              const live = guide.branches.species.filter((sp) => !sp.planned && sp.ranges);
+              if (live.length < 2) return null;
+              const short = (sp) => sp.name.replace(/ Tetra$/, '').toLowerCase();
+              // Where the overlap [lo, hi] sits inside one species' range.
+              const where = ([a, b], [lo, hi], low, high) => {
+                if (lo <= a && hi >= b) return 'anywhere in';
+                if (lo <= a) return `the ${low} end of`;
+                if (hi >= b) return `the ${high} end of`;
+                return 'the middle of';
+              };
+              const lines = [];
+              for (let i = 0; i < live.length; i++) for (let j = i + 1; j < live.length; j++) {
+                const a = live[i], b = live[j];
+                const t = [Math.max(a.ranges.tempF[0], b.ranges.tempF[0]), Math.min(a.ranges.tempF[1], b.ranges.tempF[1])];
+                const p = [Math.max(a.ranges.ph[0], b.ranges.ph[0]), Math.min(a.ranges.ph[1], b.ranges.ph[1])];
+                const lower = (sp) => sp.name.toLowerCase();
+                const pair = `${lower(a).charAt(0).toUpperCase()}${lower(a).slice(1)}s and ${lower(b)}s`;
+                if (t[0] > t[1] || p[0] > p[1]) {
+                  lines.push({ key: `${a.id}-${b.id}`, text: `${pair} do not share a temperature or pH range, so they need separate tanks.` });
+                  continue;
+                }
+                const tempA = where(a.ranges.tempF, t, 'cool', 'warm');
+                const tempB = where(b.ranges.tempF, t, 'cool', 'warm');
+                const phA = where(a.ranges.ph, p, 'acidic', 'less acidic');
+                const phB = where(b.ranges.ph, p, 'acidic', 'less acidic');
+                const temp = tempA === 'anywhere in' && tempB === 'anywhere in'
+                  ? 'any temperature both list'
+                  : `${tempA === 'anywhere in' ? `anywhere in the ${short(a)}'s range` : `${tempA} the ${short(a)}'s temperature range`}, which is ${tempB === 'anywhere in' ? `inside the ${short(b)}'s` : `${tempB} the ${short(b)}'s`}`;
+                const ph = phA === 'anywhere in'
+                  ? `the ${short(a)}'s full pH range, which is ${phB} the ${short(b)}'s`
+                  : phB === 'anywhere in'
+                    ? `the ${short(b)}'s full pH range, which is ${phA} the ${short(a)}'s`
+                    : `${phA} the ${short(a)}'s pH range and ${phB} the ${short(b)}'s`;
+                lines.push({ key: `${a.id}-${b.id}`, text: `${pair} can share a tank kept at ${temp}, with water in ${ph}.` });
+              }
+              return (
+                <div className="bg-card border border-border rounded-2xl p-5">
+                  <h2 className="font-display font-bold text-base text-foreground mb-2 flex items-center gap-2">
+                    <IconChip icon={Scale} color="orange" size="heading" />Keeping tetras together
+                  </h2>
+                  <p className="text-sm text-muted-foreground font-body mb-3">Worked out from the ranges under each species above. The figures themselves are in each species' tank setup guide.</p>
+                  <ul className="space-y-2">
+                    {lines.map((l) => (
+                      <li key={l.key} className="flex items-start gap-2 text-sm text-foreground font-body leading-relaxed">
+                        <span aria-hidden="true" className="mt-2 w-1.5 h-1.5 rounded-full bg-secondary flex-shrink-0" />
+                        {l.text}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              );
+            })()}
+
+            {/* What every tetra needs: six tiles, one sentence each, the
+                figure copied from the shared guide the tile links to. */}
+            {isGroup && guide.rules?.length > 0 && (
+              <div className="bg-card border border-border rounded-2xl p-5">
+                <h2 className="font-display font-bold text-base text-foreground mb-3 flex items-center gap-2">
+                  <IconChip icon={ListChecks} color="orange" size="heading" />{`What every ${(guide.branches?.groupName || 'species').replace(/s$/, '').toLowerCase()} needs`}
+                </h2>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
+                  {guide.rules.map((rule) => (
+                    <Link key={rule.label} to={`/blog/${rule.source}/`} state={hubReturn} className="group block bg-muted/50 rounded-xl p-3 hover:bg-muted transition-colors">
+                      <p className="text-xs font-body font-bold text-foreground uppercase tracking-wide mb-1">{rule.label}</p>
+                      <p className="text-sm text-muted-foreground font-body leading-relaxed">{rule.value}</p>
+                      <p className="text-xs font-body font-semibold text-secondary mt-1.5 group-hover:underline">{`${shortLabel(rule.source)} →`}</p>
+                    </Link>
+                  ))}
                 </div>
               </div>
             )}
@@ -521,7 +625,7 @@ export default function GuideDetail() {
               </div>
             )}
 
-            {isRouter && (
+            {(isRouter || isGroup) && (
               <div className="bg-card border border-border rounded-2xl p-5">
                 <h2 className="font-display font-bold text-base text-foreground mb-3 flex items-center gap-2">
                   <IconChip icon={Newspaper} color="orange" size="heading" />Where to go next
@@ -597,7 +701,7 @@ export default function GuideDetail() {
             )}
 
             {/* Legacy hub: the full care sheet */}
-            {!isRouter && sectionMeta.map(({ key, icon, label }) => (
+            {!isRouter && !isGroup && sectionMeta.map(({ key, icon, label }) => (
               <div key={key} className="bg-card border border-border rounded-2xl p-5">
                 <h2 className="font-display font-bold text-base text-foreground mb-3 flex items-center gap-2">
                   <IconChip icon={icon} color="orange" size="heading" />{label}
@@ -611,7 +715,7 @@ export default function GuideDetail() {
             ))}
 
             {/* Checklist */}
-            {!isRouter && (
+            {!isRouter && !isGroup && (
             <div className="bg-card border border-border rounded-2xl p-5">
               <h2 className="font-display font-bold text-sm text-foreground mb-4 flex items-center gap-2">
                 <IconChip icon={ListChecks} color="orange" size="heading" />Complete Care Checklist
@@ -628,7 +732,7 @@ export default function GuideDetail() {
             )}
 
             {/* Cost builder */}
-            {!isRouter && <CostBuilder guide={guide} />}
+            {!isRouter && !isGroup && <CostBuilder guide={guide} />}
 
             {/* FAQ */}
             {guide.faqs?.length > 0 && (

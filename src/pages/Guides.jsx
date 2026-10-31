@@ -280,7 +280,7 @@ export default function Guides() {
                 <GroupIcon name={group.name} className="w-4 h-4 text-secondary" />{group.name}
               </h2>
               <div className="grid grid-flow-row-dense grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
-                {nestByHub(group.guides, (g) => g.id).map((entry) => {
+                {nestByHub(group.guides, (g) => g.id, (g) => g.name).map((entry) => {
                   const returnTo = activeFilter === 'All' ? '/guides/' : `/guides/category/${toSlug(activeFilter)}/`;
                   const rowFor = (guide) => ({
                     to: `/guides/${guide.id}/`,
@@ -298,7 +298,7 @@ export default function Guides() {
                       key={entry.hub.id}
                       name={entry.hub.branches.groupName || entry.hub.name}
                       subtitle={`${entry.members.length} species`}
-                      emoji={entry.hub.emoji}
+                      count={entry.members.length}
                       defaultOpen={!!search.trim() || !!activeSubtype}
                     >
                       <BrowseRow {...rowFor(entry.hub)} />

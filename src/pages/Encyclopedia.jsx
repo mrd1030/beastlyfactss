@@ -355,7 +355,7 @@ function EncyclopediaTab({ search, setSearch, activeCategory, setActiveCategory,
                   with the group hub first (the encyclopedia has no entry for
                   a group, so the hub's row is the way into it), then the
                   species. */}
-              {nestByHub(group.animals, (a) => a.guideId).map((entry) => {
+              {nestByHub(group.animals, (a) => a.guideId, (a) => a.name).map((entry) => {
                 const rowFor = (animal) => ({
                   to: `/encyclopedia/animal/${animal.id}/`,
                   name: animal.name,
@@ -373,7 +373,7 @@ function EncyclopediaTab({ search, setSearch, activeCategory, setActiveCategory,
                     key={entry.hub.id}
                     name={entry.hub.branches.groupName || entry.hub.name}
                     subtitle={`${entry.members.length} species`}
-                    emoji={entry.hub.emoji}
+                    count={entry.members.length}
                     defaultOpen={!!search.trim()}
                   >
                     <BrowseRow
@@ -479,7 +479,7 @@ function GuidesTab({ activeFilter, setActiveFilter, dogSize, setDogSize, activeS
                 <GroupIcon name={group.name} className="w-4 h-4 text-secondary" />{group.name}
               </h2>
               <div className="grid grid-flow-row-dense grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
-                {nestByHub(group.guides, (g) => g.id).map((entry) => {
+                {nestByHub(group.guides, (g) => g.id, (g) => g.name).map((entry) => {
                   const rowFor = (guide) => ({
                     to: `/guides/${guide.id}/`,
                     name: guide.name,
@@ -496,7 +496,7 @@ function GuidesTab({ activeFilter, setActiveFilter, dogSize, setDogSize, activeS
                       key={entry.hub.id}
                       name={entry.hub.branches.groupName || entry.hub.name}
                       subtitle={`${entry.members.length} species`}
-                      emoji={entry.hub.emoji}
+                      count={entry.members.length}
                       defaultOpen={!!activeSubtype}
                     >
                       <BrowseRow {...rowFor(entry.hub)} />

@@ -40,7 +40,7 @@ function unesc(s) {
 const rows = [];
 for (const [file, list] of Object.entries(mods)) {
   for (const g of list) {
-    if (!g.firstWeek) continue; // router hubs only
+    if (!g.firstWeek && g.layout !== 'group') continue; // router and group hubs
     const own = (g.routes || []).map(r => r.slug);
     const pool = [];
     for (const s of own) for (const f of ddFaqs(s)) pool.push({ ...f, slug: s });

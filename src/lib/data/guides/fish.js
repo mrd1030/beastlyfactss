@@ -13,35 +13,20 @@ export const fishGuides = fillCostTokens([
     seoTitle: "Tetra Care Guide: Schools, Water, and Tankmates",
     seoDescription: "Every tetra needs a school, a cycled tank and soft water, but the numbers change by species. Compare neon and cardinal tetras and the rules they both share.",
     funFact: "Neon and cardinal tetras are easy to mix up in a shop tank, but the cardinal's red stripe runs the full length of its body, where the neon's covers only half of it.",
-    // Group hub for the tetras: the rules every tetra
-    // shares, then one browse row per species routing to that species' own
-    // hub. It is a router (docs/RULES.md, Hubs) with no figure of its own. The
-    // shared rows cite the class guides in the sidebar's Health and More list;
-    // a row that names one species cites that species' deep dive. The
-    // `branches` figure strips copy each species' figures from its own deep
-    // dives, and they change there. School size and ich by heat stay off the
-    // strips: the How many and Ich rows above already carry both. No
-    // emergency card: the signs differ by species (neon tetra disease against
-    // ich a cardinal can be heated through), so each species hub keeps its
-    // own. Planned species render as placeholders until their guide set
-    // ships. Drafted 2026-10-31 as a preview, not yet live.
-    layout: "router",
-    firstWeek: {
-      intro: "The rules every tetra shares, each from the article it links to. The numbers that change by species are under each species below.",
-      rows: [
-        { label: "How many", value: "Ten of one species. Six is the floor most species pages give, groups of 10 shoaled the most in the group-size study, and ten of one species beats five each of two.", source: "aquarium-stocking-and-tankmates-guide" },
-        { label: "Cycle first", value: "Cycle the tank before any tetra goes in. Most fishless cycles finish in four to six weeks at a stable warm temperature.", source: "aquarium-cycling-guide" },
-        { label: "Water chemistry", value: "Soft and acidic for every species here, with the exact pH under each species below. KH holds pH in place, and dosing pH-up or pH-down against it is how keepers crash a tank.", source: "freshwater-ph-gh-kh-guide" },
-        { label: "Temperature", value: "Set it by species, not by the word tetra. Cardinals take water up to 86°F, past the roughly 77°F neons are comfortable with, so mixing them means a setting inside both ranges.", source: "cardinal-tetra-tank-setup-guide" },
-        { label: "Food size", value: "A micro-pellet or a flake crushed fine. A neon's mouth is only about 1 to 2mm across, and food too large gets spat out, which starves the fish while the tank looks fed.", source: "neon-tetra-feeding-guide" },
-        { label: "Tankmates", value: "Four checks: temperature ranges overlap, water chemistry overlaps, neither adult fits in the other's mouth, and neither nips or bullies the other's body shape. A pairing passes all four.", source: "aquarium-stocking-and-tankmates-guide" },
-        { label: "Quarantine", value: "At least 30 days in a separate tank, and 30 to 60 days for a valuable fish. Thirty days is the floor, not the target.", source: "fish-quarantine-and-treatment-guide" },
-        { label: "Ich", value: "86°F held for two weeks kills most strains, and only some tetras can live there. Cardinals can; neons cannot, so a neon tank gets salt or medication to do the killing.", source: "aquarium-ich-treatment-guide" },
-        { label: "A dead fish", value: "Never leave one in the tank. Neon tetra disease spreads when fish eat infected tissue, reaches cardinal tetras and guppies too, and has no cure.", source: "neon-tetra-health-issues-guide" },
-        { label: "Water changes", value: "25 to 30% weekly from the substrate, with conditioned water at tank temperature. Test nitrate first: under 20 ppm the routine is right, past 40 ppm the next change is 50%.", source: "aquarium-water-changes-guide" },
-        { label: "Power outage", value: "Oxygen is the threat, not darkness. Unplug the filter rather than letting it sit dead in the water, and keep the surface moving.", source: "aquarium-power-outage-and-transport-guide" },
-      ],
-    },
+    // Group hub for the tetras (layout "group", rendered by GuideDetail.jsx).
+    // Someone here has not picked a fish yet, so it is a chooser, not a
+    // species checklist: no first-week card, no buy list, no emergency card.
+    // Order: intro, Pick your tetra, keeping tetras together, the six rules
+    // every tetra shares, the shared guides, FAQ. It keeps no figure of its
+    // own. Each species' strip copies its figures from the deep dive named in
+    // `sources` (null: the encyclopedia entry, which no deep dive repeats);
+    // each rule tile copies its figure from the guide in its `source`. The
+    // keeping-together lines are worked out from the species' `ranges` at
+    // render time and print no number, since the overlap of two ranges is a
+    // figure no guide states. Planned species show as one "Coming" line until
+    // their guide set ships. Drafted 2026-10-31 as a preview, not yet live.
+    layout: "group",
+    intro: null,
     branches: {
       groupName: "Tetras",
       heading: "Pick your tetra",
@@ -52,11 +37,15 @@ export const fishGuides = fillCostTokens([
           id: "neon-tetra",
           name: "Neon Tetra",
           values: ["20-gallon long for 10 to 15", "72 to 78°F", "6.0 to 7.0", "1 to 1.5 in"],
+          sources: ["neon-tetra-tank-setup-guide", "neon-tetra-tank-setup-guide", "neon-tetra-tank-setup-guide", null],
+          ranges: { tempF: [72, 78], ph: [6.0, 7.0] },
         },
         {
           id: "cardinal-tetra",
           name: "Cardinal Tetra",
           values: ["20-gallon long for 10", "77 to 82°F", "5.0 to 7.0", "2 in"],
+          sources: ["cardinal-tetra-tank-setup-guide", "cardinal-tetra-tank-setup-guide", "cardinal-tetra-tank-setup-guide", null],
+          ranges: { tempF: [77, 82], ph: [5.0, 7.0] },
         },
         { name: "Ember Tetra", planned: true },
         { name: "Rummy-Nose Tetra", planned: true },
@@ -64,6 +53,14 @@ export const fishGuides = fillCostTokens([
         { name: "Glowlight Tetra", planned: true },
       ],
     },
+    rules: [
+      { label: "School", value: "Ten of one species. Groups of 10 shoaled the most in the group-size study, and ten of one species beats five each of two.", source: "aquarium-stocking-and-tankmates-guide" },
+      { label: "Cycle first", value: "Most fishless cycles finish in four to six weeks. No tetra goes in until ammonia and nitrite read zero.", source: "aquarium-cycling-guide" },
+      { label: "Soft water", value: "Every tetra here wants soft, acidic water. Work with what your tap gives you: dosing pH-up or pH-down against KH is how keepers crash a tank.", source: "freshwater-ph-gh-kh-guide" },
+      { label: "Food size", value: "A neon's mouth is only about 1 to 2mm across, so micro-pellets or flake crushed fine. Food too large gets spat out.", source: "neon-tetra-feeding-guide" },
+      { label: "Quarantine", value: "At least 30 days in a separate tank before a new fish joins the school.", source: "fish-quarantine-and-treatment-guide" },
+      { label: "Ich", value: "86°F held for two weeks kills most strains, but only some tetras survive it. Cardinals can; neons cannot.", source: "aquarium-ich-treatment-guide" },
+    ],
     routes: [
       { slug: "aquarium-stocking-and-tankmates-guide", line: "Why inch per gallon fails past small fish, the four checks before two species share a tank, and the group sizes the research supports." },
       { slug: "aquarium-cycling-guide", line: "Fishless and fish-in cycling with real ammonia numbers, the four to six weeks most cycles take, and why a cycle stalls." },
@@ -71,17 +68,6 @@ export const fishGuides = fillCostTokens([
       { slug: "aquarium-water-changes-guide", line: "How much to change and how often, read off a nitrate test rather than the calendar." },
       { slug: "fish-quarantine-and-treatment-guide", line: "The 30-day quarantine tank, why medication goes in a hospital tank, and pulling the carbon before you dose." },
       { slug: "aquarium-ich-treatment-guide", line: "Heat, salt or medication, and the temperature ceiling that decides which one a tetra gets." },
-    ],
-    buyList: [
-      "Aquarium heater",
-      "Sponge filter, or a hang-on-back unit you can baffle",
-      "Liquid water test kit",
-      "Water conditioner",
-      "Separate quarantine tank",
-      "Driftwood and Indian almond leaves",
-      "Dense midground live plants and floating plants",
-      "Micro or nano pellet, or a tropical flake to crush",
-      "Frozen baby brine shrimp, daphnia, or bloodworms",
     ],
     faqs: [
       { q: "How many of a schooling fish do I need?", a: "Six is the floor most species pages give, and the research points higher. In the group-size study behind that advice, neon tetras and white cloud mountain minnows showed the least aggression and darting in the larger groups, and groups of 10 shoaled the most. Ten of one species beats five each of two." },

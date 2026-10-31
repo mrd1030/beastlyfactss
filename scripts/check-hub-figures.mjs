@@ -95,7 +95,18 @@ for (const f of files) {
   const m = await import(path.resolve('src/lib/data/guides', f));
   for (const k of Object.keys(m)) {
     if (!Array.isArray(m[k])) continue;
-    for (const g of m[k]) if (g && g.layout === 'router' && g.firstWeek) hubs.push({ file: f, guide: g });
+    for (const g of m[k]) {
+      if (g && g.layout === 'router' && g.firstWeek) hubs.push({ file: f, guide: g });
+      // A group hub (the tetras) has no first-week card, but its rule tiles
+      // and each species' figure strip cite a source the same way, so they
+      // are checked as rows. A strip figure with a null source comes from the
+      // encyclopedia entry and counts as a row with no source.
+      if (g && g.layout === 'group') {
+        const strips = (g.branches?.species || []).filter((sp) => !sp.planned && sp.values).flatMap((sp) =>
+          sp.values.map((value, i) => ({ label: `${sp.name} ${g.branches.fields[i]}`, value, source: sp.sources?.[i] || null })));
+        hubs.push({ file: f, guide: { ...g, firstWeek: { rows: [...(g.rules || []), ...strips] } } });
+      }
+    }
   }
 }
 
