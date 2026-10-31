@@ -115,6 +115,26 @@ export const fishSheets = {
       { item: "fish-food-discus", text: "First supply of [discus pellets]" },
     ],
   },
+  // animal is a school of 10: $2.50 to $3.50 a fish online before shipping
+  // (retailer observations, 2026-10-31), rounded outward to $5.
+  'ember-tetra': {
+    animal: [25, 35],
+    necessities: [
+      { item: "guppy-10-gallon-tank", text: "[10 gallon tank] with an 18 x 12 inch footprint" },
+      { item: "guppy-aquarium-heater", text: "[Aquarium heater]" },
+      { item: "neon-tetra-gentle-filter", text: "[Gentle filter]" },
+      { item: "neon-tetra-dense-live-silk-plants", text: "[Dense live plants]" },
+      { item: "sand-caribsea-10lb", qty: 1, text: "Dark fine [sand] (check the quantity against your tank's floor)" },
+      { item: "water-test-kit-liquid", text: "Liquid [water test kit]" },
+      { item: "water-conditioner", text: "[Water conditioner] that neutralizes chlorine and chloramine" },
+      { item: "fish-food-micro-pellets", text: "First supply of [micro pellets]" },
+    ],
+    extras: [
+      { item: "goldfish-bare-10-gallon-tank", text: "Bare [10 gallon tank] for quarantine, with no substrate or decor" },
+      { item: "guppy-aquarium-heater", text: "[Heater] for the quarantine tank" },
+      { item: "neon-tetra-gentle-filter", text: "[Sponge filter] for the quarantine tank" },
+    ],
+  },
   'guppy': {
     animal: [2, 20],
     necessities: [
