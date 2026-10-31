@@ -564,7 +564,7 @@ export default function GuideDetail() {
                   <dl className="divide-y divide-border/60">
                     {sets.map((set) => (
                       <div key={set.map((sp) => sp.id).join('-')} className="py-2 grid grid-cols-1 sm:grid-cols-[11rem_1fr] gap-x-4 gap-y-0.5">
-                        <dt className="text-sm font-body font-bold text-foreground">{set.length === live.length && live.length > 2 ? `All ${live.length === 3 ? 'three' : live.length}` : label(set)}</dt>
+                        <dt className="text-sm font-body font-bold text-foreground">{set.length === live.length && live.length > 2 ? `All ${['', '', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight'][live.length] || live.length}` : label(set)}</dt>
                         <dd className="text-sm text-muted-foreground font-body">
                           {fit(set)}
                           {cautions(set).map((c) => (

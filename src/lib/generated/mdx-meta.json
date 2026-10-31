@@ -2873,7 +2873,7 @@
     "faqs": [
       {
         "q": "Can I treat ich with heat alone?",
-        "a": "Only if your fish can live at 86°F for two weeks, because that is the temperature most ich strains cannot survive, and it must be held with extra aeration since warm water carries less oxygen. Discus and cardinal tetras can. Goldfish, koi, zebra danios, neon tetras, ember tetras and bristlenose plecos cannot, and for them heat goes only as high as the species ceiling, to speed the cycle, while salt or medication does the killing."
+        "a": "Only if your fish can live at 86°F for two weeks, because that is the temperature most ich strains cannot survive, and it must be held with extra aeration since warm water carries less oxygen. Discus and cardinal tetras can. Goldfish, koi, zebra danios, neon, ember, rummy-nose and black skirt tetras, and bristlenose plecos cannot, and for them heat goes only as high as the species ceiling, to speed the cycle, while salt or medication does the killing."
       },
       {
         "q": "How long does ich treatment take?",
@@ -7881,6 +7881,413 @@
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
     "imageHeight": 784
+  },
+  {
+    "path": "/content/guides/black-skirt-tetra-cost-guide.mdx",
+    "slug": "black-skirt-tetra-cost-guide",
+    "title": "How Much Does Black Skirt Tetra Ownership Cost?",
+    "seoTitle": "Black Skirt Tetra Cost: $3 to $6 a Fish, $125 to $300 Setup",
+    "seoDescription": "Black skirt tetra cost: $3 to $6 a fish, $35 to $75 for a school of 12, $125 to $300 for a 20 gallon long setup, and GloFish skirts at $12 to $13 each.",
+    "lastUpdated": "2026-10-31",
+    "noIndex": false,
+    "excerpt": "A school of 12 black skirt tetras costs less than the 20 gallon long it swims in. GloFish skirts are the one way to make the fish the expensive part.",
+    "date": "2026-10-31",
+    "category": "Fish",
+    "categories": [
+      "Fish"
+    ],
+    "tags": [
+      "Black Skirt Tetra",
+      "Cost",
+      "Pet Ownership Cost",
+      "Tank Setup Cost",
+      "Care Tips",
+      "Fish Care"
+    ],
+    "readTime": 5,
+    "difficulty": "Beginner",
+    "image": "/assets/images/black-skirt-tetra-cost.jpg",
+    "imageAlt": "A school of black skirt tetras swimming in open water in front of aquarium plants",
+    "emoji": "🐠",
+    "lastReviewed": "2026-10-31",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "How much does a black skirt tetra cost?",
+        "a": "About $3 to $6 each at a pet store, and white skirts and long-fins cost the same. Twelve of them come to $35 to $75."
+      },
+      {
+        "q": "How much are GloFish skirt tetras?",
+        "a": "About $12 to $13 a fish in stores, so a school of 12 runs roughly $144 to $156. They need nothing in the tank that a plain black skirt does not."
+      },
+      {
+        "q": "What does a black skirt tetra tank setup cost?",
+        "a": "Plan on $125 to $300 for a 20 gallon long with a heater, a gentle filter, live plants, sand, a liquid test kit, water conditioner and the first food. A bare quarantine tank with its own heater and filter is extra."
+      },
+      {
+        "q": "How many black skirt tetras should I buy?",
+        "a": "Twelve. In a group that size their nipping stays among themselves, so slower tankmates keep their fins."
+      },
+      {
+        "q": "How long do black skirt tetras live?",
+        "a": "About 3 to 5 years, so one well-kept setup can house more than one school."
+      }
+    ],
+    "relatedProducts": [
+      "tank-20-gallon-long",
+      "submersible-aquarium-heater",
+      "sponge-filter",
+      "neon-tetra-food-hikari-micro-pellets",
+      "water-conditioner",
+      "water-test-kit"
+    ],
+    "factFile": false,
+    "animalDay": null,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 5,
+    "headingCount": 8,
+    "ledeMatchesExcerpt": false
+  },
+  {
+    "path": "/content/guides/black-skirt-tetra-enrichment-guide.mdx",
+    "slug": "black-skirt-tetra-enrichment-guide",
+    "title": "Black Skirt Tetra Enrichment: A School That Moves as One",
+    "seoTitle": "Black Skirt Tetra Enrichment Guide",
+    "seoDescription": "Black skirt tetras pass alarm through the school as a wave. A school of 12, plant thickets with open water and live or frozen food keep this busy fish occupied.",
+    "lastUpdated": "2026-10-31",
+    "noIndex": false,
+    "excerpt": "When something frightens a black skirt tetra school, the alarm rolls through it as a wave. A school of 12, thickets to retreat into and open water to cross keep that school busy.",
+    "date": "2026-10-31",
+    "category": "Enrichment",
+    "categories": [
+      "Enrichment"
+    ],
+    "tags": [
+      "Black Skirt Tetra",
+      "Enrichment",
+      "Care Tips",
+      "Fish Enrichment",
+      "Fish Welfare",
+      "Tetras"
+    ],
+    "readTime": 5,
+    "difficulty": "Beginner",
+    "image": "/assets/images/black-skirt-tetra-enrichment.jpg",
+    "imageAlt": "A school of black skirt tetras swimming in open water in front of dense aquarium plants",
+    "emoji": "🐠",
+    "lastReviewed": "2026-10-31",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "How many black skirt tetras should be kept together?",
+        "a": "Twelve. A school that size keeps its own squabbles in house, which is what stops the species from turning on the fins of other fish."
+      },
+      {
+        "q": "Do black skirt tetras need live plants?",
+        "a": "They are not fussy about decor, but yes, they do better with them. Thick clumps plus a few floating plants give them a place to retreat and bring out their best color."
+      },
+      {
+        "q": "What size tank does a school of black skirt tetras need?",
+        "a": "A 20-gallon long, 30 x 12 inches, for a school of 12. That length fits plant thickets at both ends with open water between them."
+      },
+      {
+        "q": "What live or frozen foods do black skirt tetras like?",
+        "a": "Daphnia and bloodworm, offered regularly beside a flake or granule staple. Wild black skirts eat worms, small crustaceans and insects."
+      },
+      {
+        "q": "Why does a black skirt tetra school scatter all at once?",
+        "a": "The fright spreads fish to fish as a wave. In startle tests on this species, the signal crossed large schools faster than copying the nearest neighbor would allow."
+      }
+    ],
+    "relatedProducts": [
+      "neon-tetra-food-hikari-micro-pellets"
+    ],
+    "factFile": false,
+    "animalDay": null,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 5,
+    "headingCount": 9,
+    "ledeMatchesExcerpt": false
+  },
+  {
+    "path": "/content/guides/black-skirt-tetra-feeding-guide.mdx",
+    "slug": "black-skirt-tetra-feeding-guide",
+    "title": "Black Skirt Tetra Feeding: Diet, Food Size, and How Often to Feed",
+    "seoTitle": "What Do Black Skirt Tetras Eat? Diet and Feeding Guide",
+    "seoDescription": "Black skirt tetra feeding: flake or granules as the staple, daphnia and bloodworm as live and frozen extras, one small meal a day, and infusoria for new fry.",
+    "lastUpdated": "2026-10-31",
+    "noIndex": false,
+    "excerpt": "A black skirt tetra is an unfussy omnivore that takes ordinary flake and granules, so feeding one well comes down to small live foods and a portion the school can finish.",
+    "date": "2026-10-31",
+    "category": "Fish",
+    "categories": [
+      "Fish"
+    ],
+    "tags": [
+      "Black Skirt Tetra",
+      "Feeding",
+      "Diet",
+      "Care Tips",
+      "Fish Diet",
+      "Feeding Schedule",
+      "Live Food"
+    ],
+    "readTime": 5,
+    "difficulty": "Beginner",
+    "image": "/assets/images/black-skirt-tetra-feeding.jpg",
+    "imageAlt": "A school of black skirt tetras feeding in an aquarium",
+    "emoji": "🐠",
+    "lastReviewed": "2026-10-31",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What do black skirt tetras eat?",
+        "a": "Flake or granules as the daily staple, with small live or frozen foods such as daphnia and bloodworm offered on a regular basis. Black skirts are omnivores, and captive-bred fish accept ordinary community fish food."
+      },
+      {
+        "q": "How often should I feed black skirt tetras?",
+        "a": "Once a day for adults. Keep the meal small enough that none of it is left lying on the bottom, because overfeeding is the usual mistake and it fouls the water."
+      },
+      {
+        "q": "Can black skirt tetras go a day without food?",
+        "a": "Yes. Pet fish do well when fed on at least five days a week, so a healthy adult school misses nothing important on the odd day without a meal."
+      },
+      {
+        "q": "Do black skirt tetras eat algae?",
+        "a": "Only a little. Wild fish pick up small amounts of algae and plant matter, but worms, small crustaceans and insects make up most of what they eat, so this is no algae eater."
+      },
+      {
+        "q": "What do black skirt tetra fry eat?",
+        "a": "Infusoria for their first few days of free swimming, then microworm or baby brine shrimp once they have grown big enough to take it. Adults eat their own eggs, so they leave the spawning tank as soon as eggs appear."
+      }
+    ],
+    "relatedProducts": [
+      "neon-tetra-food-hikari-micro-pellets"
+    ],
+    "factFile": false,
+    "animalDay": null,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 5,
+    "headingCount": 8,
+    "ledeMatchesExcerpt": false
+  },
+  {
+    "path": "/content/guides/black-skirt-tetra-handling-guide.mdx",
+    "slug": "black-skirt-tetra-handling-guide",
+    "title": "Black Skirt Tetras Nip Fins, So the School and the Tankmates Come First",
+    "seoTitle": "Black Skirt Tetra Handling: Fin Nipping and Tankmates",
+    "seoDescription": "Why black skirt tetras nip fins and how a school of 12 fixes it, which tankmates to skip, plus netting, bagging, acclimation and what to check in the shop.",
+    "lastUpdated": "2026-10-31",
+    "noIndex": false,
+    "excerpt": "A black skirt tetra is peaceful with most fish and hard on long fins. A school of 12 keeps the nipping inside the group, and the tankmate list does the rest.",
+    "date": "2026-10-31",
+    "category": "Fish",
+    "categories": [
+      "Fish"
+    ],
+    "tags": [
+      "Black Skirt Tetra",
+      "Handling",
+      "Fin Nipping",
+      "Tankmates",
+      "Acclimation",
+      "Fish Care"
+    ],
+    "readTime": 6,
+    "difficulty": "Beginner",
+    "image": "/assets/images/black-skirt-tetra-handling.jpg",
+    "imageAlt": "A group of black skirt tetras swimming in an aquarium",
+    "emoji": "🐠",
+    "lastReviewed": "2026-10-31",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Do black skirt tetras nip fins?",
+        "a": "Yes, and slow fish with long fins take the worst of it. Kept in a group of 12 or more, they turn most of that energy on each other, where it does no harm."
+      },
+      {
+        "q": "Can a black skirt tetra live with a betta?",
+        "a": "No. A betta is slow and trails exactly the kind of fins black skirts go after, so the two belong in separate tanks."
+      },
+      {
+        "q": "What fish can live with black skirt tetras?",
+        "a": "Livebearers, danios, rasboras, other tetras, Corydoras and smaller plecos all suit them, and so does a sturdy dwarf cichlid such as the kribensis."
+      },
+      {
+        "q": "How many black skirt tetras should be kept together?",
+        "a": "Twelve. That school fits a 20-gallon long tank, whose base measures 30 by 12 inches."
+      },
+      {
+        "q": "How long does it take to acclimate black skirt tetras?",
+        "a": "Allow 30 to 60 minutes of adding tank water to the bag in small amounts with the lights off. Net the fish into the tank at the end and throw the bag water away."
+      },
+      {
+        "q": "How can you tell a male black skirt tetra from a female?",
+        "a": "Look at the body and the fins. A male is slimmer and slightly smaller, with dorsal and anal fins that come to a sharper point."
+      }
+    ],
+    "relatedProducts": [],
+    "factFile": false,
+    "animalDay": null,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 5,
+    "headingCount": 10,
+    "ledeMatchesExcerpt": false
+  },
+  {
+    "path": "/content/guides/black-skirt-tetra-health-issues-guide.mdx",
+    "slug": "black-skirt-tetra-health-issues-guide",
+    "title": "Common Black Skirt Tetra Health Issues (and Why Ich Heat Stops at 79°F)",
+    "seoTitle": "Black Skirt Tetra Health Issues: Ich, Fins and Signs",
+    "seoDescription": "Black skirt tetra health issues: the signs that need action today, ich treatment that stops at 79°F, torn fins and fin rot, cold limits and a 30-day quarantine.",
+    "lastUpdated": "2026-10-31",
+    "noIndex": false,
+    "excerpt": "Black skirt tetras are tough, captive-bred fish, but ich can kill one within two days of the first signs. Here is what to watch for, what to test, and why the ich heat stops at 79°F.",
+    "date": "2026-10-31",
+    "category": "Fish",
+    "categories": [
+      "Fish"
+    ],
+    "tags": [
+      "Black Skirt Tetra",
+      "Health",
+      "Water Quality",
+      "Fish Disease",
+      "Ich",
+      "Fin Rot",
+      "Care Tips",
+      "Fish Care"
+    ],
+    "readTime": 7,
+    "difficulty": "Beginner",
+    "image": "/assets/images/black-skirt-tetra-health-issues.jpg",
+    "imageAlt": "A healthy black skirt tetra with dark vertical bars and a black fin skirt swimming in an aquarium",
+    "emoji": "🐠",
+    "lastReviewed": "2026-10-31",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Can black skirt tetras take the 86°F ich heat treatment?",
+        "a": "Not as a plan. 86°F is 7°F past the 79°F top of the species' range, so the tank goes only to 79°F, with an air stone running, and aquarium salt or an ich medication kills the parasite."
+      },
+      {
+        "q": "How fast can ich kill a black skirt tetra?",
+        "a": "Within about two days. Infected fish in a recorded outbreak died inside 48 hours of their first symptoms, in water at an ordinary 73°F, so treatment begins the same day spots show."
+      },
+      {
+        "q": "Do black skirt tetras need a heater?",
+        "a": "Yes, unless the room keeps the tank at 68°F or warmer all year. They feed and move less once the water cools to about 63°F (17°C), and stop eating near 54°F (12°C)."
+      },
+      {
+        "q": "Why are my black skirt tetra's fins ragged?",
+        "a": "Nipping and fin rot are the two usual causes in this species. A fin that keeps fraying needs treatment, and ragged fins on a fish that also carries white spots point to ich."
+      },
+      {
+        "q": "Is my black skirt tetra losing its color because it is sick?",
+        "a": "Usually not. Young fish carry the deepest black and turn paler as they mature. A fish that goes darker and sits apart from the school is the one to check for ich."
+      },
+      {
+        "q": "How long should new black skirt tetras be quarantined?",
+        "a": "At least 30 days in their own tank. A month gives ich, and slower problems like a microsporidian infection, time to show before the new fish meet the school."
+      }
+    ],
+    "relatedProducts": [
+      "tank-10-gallon",
+      "submersible-aquarium-heater",
+      "sponge-filter"
+    ],
+    "factFile": false,
+    "animalDay": null,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 6,
+    "headingCount": 9,
+    "ledeMatchesExcerpt": false
+  },
+  {
+    "path": "/content/guides/black-skirt-tetra-tank-setup-guide.mdx",
+    "slug": "black-skirt-tetra-tank-setup-guide",
+    "title": "Black Skirt Tetra Tank Setup: A 20-Gallon Long, Cooler Water, and Room to Swim",
+    "seoTitle": "Black Skirt Tetra Tank Setup Guide",
+    "seoDescription": "Black skirt tetra tank setup: a 20-gallon long for a school of 12, 68 to 79°F, pH 6.0 to 7.5 at 5 to 19 dGH, plants around open water, and a cycled tank first.",
+    "lastUpdated": "2026-10-31",
+    "noIndex": false,
+    "excerpt": "Black skirt tetras are captive-bred, adaptable fish that run cooler than embers or cardinals, and a tank for a school of 12 is a 20-gallon long at 68 to 79°F with open water and planted edges.",
+    "date": "2026-10-31",
+    "category": "Fish",
+    "categories": [
+      "Fish"
+    ],
+    "tags": [
+      "Black Skirt Tetra",
+      "Tank Setup",
+      "Filtration",
+      "Aquarium Care",
+      "Care Tips",
+      "Fish Care"
+    ],
+    "readTime": 6,
+    "difficulty": "Beginner",
+    "image": "/assets/images/black-skirt-tetra-tank-setup.jpg",
+    "imageAlt": "A planted aquarium with open water in the middle and a school of black skirt tetras swimming near the surface",
+    "emoji": "🐠",
+    "lastReviewed": "2026-10-31",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What size tank do black skirt tetras need?",
+        "a": "A 20-gallon long, 30 x 12 inches (75 x 30 cm) across the base, for a school of 12. The length is the part that counts, because the school uses the open middle of the tank to swim."
+      },
+      {
+        "q": "What temperature do black skirt tetras need?",
+        "a": "68 to 79°F (20 to 26°C). That tops out below an ember or cardinal tank, so the heater should never be set past 79°F."
+      },
+      {
+        "q": "Do black skirt tetras need a heater?",
+        "a": "Yes, in any room that drops below 68°F. Black skirts already eat and move less by about 63°F, so the heater is what keeps a cool house from pulling the tank under its range."
+      },
+      {
+        "q": "What pH and hardness do black skirt tetras need?",
+        "a": "pH 6.0 to 7.5 and 5 to 19 dGH. Captive-bred stock adapts well, so tap water that tests inside both bands only needs dechlorinating."
+      },
+      {
+        "q": "Can black skirt tetras live in a 10-gallon tank?",
+        "a": "No. An adult reaches 2 to 2.5 inches, sometimes 3, and a school of 12 that size needs the 30-inch run of a 20-gallon long."
+      },
+      {
+        "q": "Do GloFish Skirt Tetras need a different tank?",
+        "a": "The same tank, run warmer. They are black skirt tetras, but adult GloFish handle cold poorly, so set the heater between 76 and 79°F and leave it on all year."
+      }
+    ],
+    "relatedProducts": [
+      "tank-20-gallon-long",
+      "submersible-aquarium-heater",
+      "sponge-filter",
+      "water-conditioner"
+    ],
+    "factFile": false,
+    "animalDay": null,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 5,
+    "headingCount": 10,
+    "ledeMatchesExcerpt": false
   },
   {
     "path": "/content/guides/blue-tongue-skink-cost-guide.mdx",
@@ -44152,6 +44559,414 @@
     "ledeMatchesExcerpt": false,
     "imageWidth": 1200,
     "imageHeight": 896
+  },
+  {
+    "path": "/content/guides/rummy-nose-tetra-cost-guide.mdx",
+    "slug": "rummy-nose-tetra-cost-guide",
+    "title": "How Much Does Rummy-Nose Tetra Ownership Cost?",
+    "seoTitle": "Rummy-Nose Tetra Cost: $170 to $375 Setup, $45 to $80 Fish",
+    "seoDescription": "Rummy-nose tetra cost: $4 to $6.50 a fish, $45 to $80 for a school of 12, $170 to $375 for a 36-inch, 30 to 40 gallon setup, and the quarantine tank to add.",
+    "lastUpdated": "2026-10-31",
+    "noIndex": false,
+    "excerpt": "Rummy-nose tetras are bought as a school, and the school needs a tank at least 36 inches long. That tank, not the fish, is where most of the money goes.",
+    "date": "2026-10-31",
+    "category": "Fish",
+    "categories": [
+      "Fish"
+    ],
+    "tags": [
+      "Rummy-Nose Tetra",
+      "Cost",
+      "Pet Ownership Cost",
+      "Tank Setup Cost",
+      "Care Tips",
+      "Fish Care"
+    ],
+    "readTime": 5,
+    "difficulty": "Intermediate",
+    "image": "/assets/images/rummy-nose-tetra-cost.jpg",
+    "imageAlt": "A school of rummy-nose tetras with red heads swimming in an aquarium",
+    "emoji": "🐠",
+    "lastReviewed": "2026-10-31",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "How much do rummy-nose tetras cost?",
+        "a": "About $4 to $6.50 a fish from online sellers before shipping, and a local store can charge closer to $9. Twelve fish come to $45 to $80 before shipping."
+      },
+      {
+        "q": "What does a rummy-nose tetra tank setup cost?",
+        "a": "Plan on $170 to $375 for a 36-inch, 30 to 40 gallon tank, a heater, a gentle filter, live plants, fine sand, a liquid test kit, water conditioner and the first micro pellets. A bare quarantine tank with its own heater and filter is extra."
+      },
+      {
+        "q": "What size tank do rummy-nose tetras need?",
+        "a": "One at least 36 inches (90 cm) long for a school of 10, which works out to a 30 gallon or a 40 gallon breeder. Length matters more than gallons for a fish that swims laps."
+      },
+      {
+        "q": "Do rummy-nose tetras need a heater?",
+        "a": "Yes. They are tropical fish that belong at 73 to 79°F (23 to 26°C), so the heater is a required purchase and stays set inside that range."
+      },
+      {
+        "q": "How long do rummy-nose tetras live?",
+        "a": "About 5 years in a well-kept tank, so a school bought today shares its tank and equipment for half a decade."
+      }
+    ],
+    "relatedProducts": [
+      "tank-aqueon-40-breeder",
+      "submersible-aquarium-heater",
+      "sponge-filter",
+      "neon-tetra-food-hikari-micro-pellets",
+      "water-conditioner",
+      "water-test-kit"
+    ],
+    "factFile": false,
+    "animalDay": null,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 5,
+    "headingCount": 8,
+    "ledeMatchesExcerpt": false
+  },
+  {
+    "path": "/content/guides/rummy-nose-tetra-enrichment-guide.mdx",
+    "slug": "rummy-nose-tetra-enrichment-guide",
+    "title": "Rummy-Nose Tetra Enrichment: The School Physicists Study",
+    "seoTitle": "Rummy-Nose Tetra Enrichment Guide",
+    "seoDescription": "Lab studies of rummy-nose tetra schools show why a group of 10 holds its course and why the school needs light. A long tank and a blackwater layout fit them.",
+    "lastUpdated": "2026-10-31",
+    "noIndex": false,
+    "excerpt": "Rummy-nose tetras school so tightly that physics labs use them to study how a group moves as one. What those labs found about group size and light is a plan for the tank.",
+    "date": "2026-10-31",
+    "category": "Enrichment",
+    "categories": [
+      "Enrichment"
+    ],
+    "tags": [
+      "Rummy-Nose Tetra",
+      "Enrichment",
+      "Care Tips",
+      "Fish Enrichment",
+      "Fish Welfare",
+      "Tetras"
+    ],
+    "readTime": 7,
+    "difficulty": "Intermediate",
+    "image": "/assets/images/rummy-nose-tetra-enrichment.jpg",
+    "imageAlt": "A tight school of red-headed rummy-nose tetras swimming over sand and driftwood",
+    "emoji": "🐠",
+    "lastReviewed": "2026-10-31",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "How many rummy-nose tetras should be kept together?",
+        "a": "Ten or more of the one species. In a ring-shaped test tank, groups of 10 reversed direction about once every 20 minutes, while pairs turned around about every 12 seconds."
+      },
+      {
+        "q": "Do rummy-nose tetras like dim light?",
+        "a": "Fairly dim, yes, but never dark. A school of five stopped schooling once the light fell to about 1.5 lux, so shade the tank with wood and leaves and keep the light itself on."
+      },
+      {
+        "q": "Why does my rummy-nose tetra school spread out at night?",
+        "a": "It is too dark for the fish to track each other. Rummy-noses coordinate mainly by sight, and in near darkness a school cannot stay coherent, so a loose group after lights out is normal."
+      },
+      {
+        "q": "Do rummy-nose tetras need live plants?",
+        "a": "No. A bare-sand layout with roots and leaves is closer to their home rivers than a planted tank. Plants are fine to add, but they raise the upkeep to a weekly partial change."
+      },
+      {
+        "q": "How long should a rummy-nose tetra tank be?",
+        "a": "At least 36 inches (90 cm) for a school of 10, which in volume is a 30 to 40 gallon tank. Buy for length, because the school swims from one end to the other and back."
+      },
+      {
+        "q": "Why has my rummy-nose tetra lost its red nose?",
+        "a": "The red fades when the fish is stressed or kept in poor conditions, so test the water before anything else."
+      }
+    ],
+    "relatedProducts": [
+      "driftwood",
+      "catappa-leaves-sungrow-50"
+    ],
+    "factFile": false,
+    "animalDay": null,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 6,
+    "headingCount": 11,
+    "ledeMatchesExcerpt": false
+  },
+  {
+    "path": "/content/guides/rummy-nose-tetra-feeding-guide.mdx",
+    "slug": "rummy-nose-tetra-feeding-guide",
+    "title": "Rummy-Nose Tetra Feeding: Wild Diet, Staples, and How Often to Feed",
+    "seoTitle": "What Do Rummy-Nose Tetras Eat? Diet and Feeding Schedule",
+    "seoDescription": "Rummy-nose tetra feeding: what wild fish eat, micro-pellets and crushed flake for a small mouth, live and frozen foods, and small portions at least once a day.",
+    "lastUpdated": "2026-10-31",
+    "noIndex": false,
+    "excerpt": "Wild rummy-nose tetras are omnivores that eat tiny crustaceans, midge larvae and algae, and a tank diet copies that with small dried staples and small live and frozen prey.",
+    "date": "2026-10-31",
+    "category": "Fish",
+    "categories": [
+      "Fish"
+    ],
+    "tags": [
+      "Rummy-Nose Tetra",
+      "Feeding",
+      "Diet",
+      "Care Tips",
+      "Fish Diet",
+      "Feeding Schedule",
+      "Live Food"
+    ],
+    "readTime": 5,
+    "difficulty": "Intermediate",
+    "image": "/assets/images/rummy-nose-tetra-feeding.jpg",
+    "imageAlt": "A school of rummy-nose tetras feeding in a planted aquarium",
+    "emoji": "🐠",
+    "lastReviewed": "2026-10-31",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What do rummy-nose tetras eat?",
+        "a": "They are omnivores. A small dried food such as micro-pellets, granules or crushed flake makes the base, with baby brine shrimp, daphnia and mosquito larvae added live or frozen."
+      },
+      {
+        "q": "How often should I feed rummy-nose tetras?",
+        "a": "At least once a day. Keep each portion small enough that the school clears it before any reaches the substrate."
+      },
+      {
+        "q": "Can rummy-nose tetras eat flakes?",
+        "a": "Yes. Flake works as a staple once it is crumbled down to suit a fish of 1.5 to 2 inches (4 to 5 cm) with a small mouth."
+      },
+      {
+        "q": "What do rummy-nose tetras eat in the wild?",
+        "a": "A study of 177 wild fish from the middle Rio Negro found microcrustaceans, chironomid larvae, filamentous algae and plant fragments, with the mix changing between the flood and the dry season."
+      },
+      {
+        "q": "What do baby rummy-nose tetras eat?",
+        "a": "Infusoria first, then live vinegar eels or a powdered fry food. Adults eat eggs, so fry are raised without them."
+      }
+    ],
+    "relatedProducts": [
+      "neon-tetra-food-hikari-micro-pellets"
+    ],
+    "factFile": false,
+    "animalDay": null,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 5,
+    "headingCount": 7,
+    "ledeMatchesExcerpt": false
+  },
+  {
+    "path": "/content/guides/rummy-nose-tetra-handling-guide.mdx",
+    "slug": "rummy-nose-tetra-handling-guide",
+    "title": "Rummy-Nose Tetra Handling Comes Down to One Stressful Trip Home",
+    "seoTitle": "Rummy-Nose Tetra Handling: Acclimation and Tankmates",
+    "seoDescription": "How to choose, bag and acclimate rummy-nose tetras over 30 to 60 minutes, why they go in before an angelfish, and which tankmates suit a school of 10 or more.",
+    "lastUpdated": "2026-10-31",
+    "noIndex": false,
+    "excerpt": "A rummy-nose tetra is never picked up, but it reacts badly to stress, so the net, the bag, the hour of acclimation and the order fish go into the tank all count.",
+    "date": "2026-10-31",
+    "category": "Fish",
+    "categories": [
+      "Fish"
+    ],
+    "tags": [
+      "Rummy-Nose Tetra",
+      "Handling",
+      "Acclimation",
+      "Tankmates",
+      "Fish Behavior",
+      "Fish Care"
+    ],
+    "readTime": 7,
+    "difficulty": "Intermediate",
+    "image": "/assets/images/rummy-nose-tetra-handling.jpg",
+    "imageAlt": "A school of silver rummy-nose tetras with bright red heads swimming together in an aquarium",
+    "emoji": "🐠",
+    "lastReviewed": "2026-10-31",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "How do you acclimate rummy-nose tetras?",
+        "a": "With the tank lights off, add small amounts of tank water to the bag every few minutes for 30 to 60 minutes, until the bag is mostly tank water. Net the fish into the tank and throw the bag water away."
+      },
+      {
+        "q": "Why is my rummy-nose tetra lying still in the bag?",
+        "a": "Rummy-noses often play dead in a fish bag. Set the bag down on something solid and they right themselves."
+      },
+      {
+        "q": "How many rummy-nose tetras should be kept together?",
+        "a": "Plan on a school of 10 or more. That many rummy-noses need a tank measuring 36 inches (90 cm) or more from end to end."
+      },
+      {
+        "q": "Can rummy-nose tetras live with angelfish?",
+        "a": "Yes, if the tetras go in first. An angelfish that already holds the tank can bully a newly added school into hiding."
+      },
+      {
+        "q": "Can rummy-nose tetras live with discus?",
+        "a": "Discus keepers often pair them, but rummy-noses top out at 79°F (26°C), below the 82 to 86°F most discus tanks run at, so the pairing leaves the rummy-noses no margin."
+      },
+      {
+        "q": "How do you tell male and female rummy-nose tetras apart?",
+        "a": "Only by shape, and only in grown fish. An adult female has a fuller, rounder build, while a male stays a little slimmer."
+      }
+    ],
+    "relatedProducts": [],
+    "factFile": false,
+    "animalDay": null,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 5,
+    "headingCount": 10,
+    "ledeMatchesExcerpt": false
+  },
+  {
+    "path": "/content/guides/rummy-nose-tetra-health-issues-guide.mdx",
+    "slug": "rummy-nose-tetra-health-issues-guide",
+    "title": "Common Rummy-Nose Tetra Health Issues (and What a Fading Red Nose Is Telling You)",
+    "seoTitle": "Rummy-Nose Tetra Health Issues: Red Nose, Ich, Signs",
+    "seoDescription": "Rummy-nose tetra health issues: what a pale red nose means, the signs that need action today, ich treatment that stops at 79°F, and a 30-day quarantine plan.",
+    "lastUpdated": "2026-10-31",
+    "noIndex": false,
+    "excerpt": "A rummy-nose tetra wears its condition on its face: the red nose pales when something is wrong. Most of what goes wrong starts in the water, and ich has to be treated without the usual heat cure.",
+    "date": "2026-10-31",
+    "category": "Fish",
+    "categories": [
+      "Fish"
+    ],
+    "tags": [
+      "Rummy-Nose Tetra",
+      "Health",
+      "Water Quality",
+      "Fish Disease",
+      "Ich",
+      "Care Tips",
+      "Fish Care"
+    ],
+    "readTime": 6,
+    "difficulty": "Intermediate",
+    "image": "/assets/images/rummy-nose-tetra-health-issues.jpg",
+    "imageAlt": "A school of rummy-nose tetras with bright red heads swimming in a planted aquarium",
+    "emoji": "🐠",
+    "lastReviewed": "2026-10-31",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Why is my rummy-nose tetra's red nose fading?",
+        "a": "A paler nose means the fish is under stress or its conditions have slipped, so run ammonia, nitrite and pH tests before anything else. Alkaline water alone can dull the red, and a nose that stays pale once the water tests clean points to tankmates, diet or early illness."
+      },
+      {
+        "q": "Can you treat ich in rummy-nose tetras with heat?",
+        "a": "Not with heat alone. Ich strains mostly die above 86°F, seven degrees past the rummy-nose's 79°F ceiling. Warm the tank slowly to 79°F with extra aeration and let aquarium salt or an ich medication clear the parasite."
+      },
+      {
+        "q": "How long should new rummy-nose tetras be quarantined?",
+        "a": "A full 30 days in their own tank before they meet the main school. New rummy-noses sometimes come home already carrying ich, and a month gives it time to surface where only the newcomers need treating."
+      },
+      {
+        "q": "Are rummy-nose tetras hard to keep healthy?",
+        "a": "They react to stress more than most tetras, which is why many keepers steer beginners toward hardier fish. A cycled tank held steady at 73 to 79°F, pH 5.5 to 7.0 and 2 to 12 dGH, with a school of 10 or more, prevents most of their problems."
+      },
+      {
+        "q": "What does it mean when several rummy-nose tetras look sick at once?",
+        "a": "Two or more fish showing the same sign together usually means the water, so test ammonia and nitrite straight away. If the readings are clean and white specks appear, start ich treatment that day."
+      }
+    ],
+    "relatedProducts": [
+      "water-test-kit",
+      "submersible-aquarium-heater",
+      "tank-10-gallon",
+      "sponge-filter"
+    ],
+    "factFile": false,
+    "animalDay": null,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 5,
+    "headingCount": 8,
+    "ledeMatchesExcerpt": false
+  },
+  {
+    "path": "/content/guides/rummy-nose-tetra-tank-setup-guide.mdx",
+    "slug": "rummy-nose-tetra-tank-setup-guide",
+    "title": "Rummy-Nose Tetra Tank Setup: A 36-Inch Run, Soft Acidic Water, and Dim Light",
+    "seoTitle": "Rummy-Nose Tetra Tank Setup Guide",
+    "seoDescription": "Rummy-nose tetra tank setup: a 36-inch tank for a school of 10, 73 to 79°F, pH 5.5 to 7.0 at 2 to 12 dGH, fairly dim light, and a fully cycled tank first.",
+    "lastUpdated": "2026-10-31",
+    "noIndex": false,
+    "excerpt": "Rummy-nose tetras swim in fast bursts as one tight school, so their tank is set by its length: 36 inches for a school of 10, held at 73 to 79°F in soft, acidic water under fairly dim light.",
+    "date": "2026-10-31",
+    "category": "Fish",
+    "categories": [
+      "Fish"
+    ],
+    "tags": [
+      "Rummy-Nose Tetra",
+      "Tank Setup",
+      "Filtration",
+      "Aquarium Care",
+      "Care Tips",
+      "Fish Care"
+    ],
+    "readTime": 6,
+    "difficulty": "Intermediate",
+    "image": "/assets/images/rummy-nose-tetra-tank-setup.jpg",
+    "imageAlt": "A long aquarium with sand, driftwood and plants, and a tight school of silver tetras with red heads",
+    "emoji": "🐠",
+    "lastReviewed": "2026-10-31",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What size tank do rummy-nose tetras need?",
+        "a": "One that is at least 36 inches (90 cm) long for a school of 10, which puts it in the 30 to 40 gallon range. Measure the front glass before reading the gallons on the label."
+      },
+      {
+        "q": "Is a 20-gallon tank big enough for rummy-nose tetras?",
+        "a": "No. A 20-gallon long is only 30 inches from end to end, which leaves a school of 10 six inches short of the 36-inch minimum."
+      },
+      {
+        "q": "What temperature do rummy-nose tetras need?",
+        "a": "73 to 79°F (23 to 26°C). A heater set in the middle of that band keeps the tank clear of 79°F, the top of the range."
+      },
+      {
+        "q": "What pH and hardness do rummy-nose tetras need?",
+        "a": "pH 5.5 to 7.0 with a general hardness of 2 to 12 dGH. Soft, acidic water suits them best, and their color dulls when the water turns alkaline."
+      },
+      {
+        "q": "Do rummy-nose tetras need a planted tank?",
+        "a": "No. A planted tank and a sparse layout of sand, wood and dried leaves both suit them, and plants are scarce in the rivers they come from."
+      },
+      {
+        "q": "Can rummy-nose tetras go into a new tank?",
+        "a": "Not until it has finished cycling, with ammonia and nitrite both at zero. Rummy-noses are sensitive to stress, and a tank still cycling is a steady source of it."
+      }
+    ],
+    "relatedProducts": [
+      "tank-aqueon-40-breeder",
+      "submersible-aquarium-heater",
+      "sponge-filter",
+      "driftwood"
+    ],
+    "factFile": false,
+    "animalDay": null,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 5,
+    "headingCount": 9,
+    "ledeMatchesExcerpt": false
   },
   {
     "path": "/content/guides/russian-tortoise-cost-guide.mdx",
