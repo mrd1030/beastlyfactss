@@ -1698,6 +1698,13 @@ export const COST_ITEMS = {
     spec: "",
     low: 15, high: 60, product: "tank-10-gallon", checked: '2026-10',
   },
+  // A 30 gallon (36x12 in) to a 40 gallon breeder (36x18 in), tank only.
+  // 40 breeder listings about $90 to $165 (2026-10-31), rounded outward.
+  'tank-36in-30-40-gallon': {
+    label: "36-inch tank, 30 to 40 gallons",
+    spec: "36 in long, 30 to 40 gal",
+    low: 70, high: 165, product: "tank-aqueon-40-breeder", checked: '2026-10',
+  },
   'water-test-kit-liquid': {
     label: "Liquid-reagent water test kit",
     spec: "ammonia, nitrite, nitrate, pH",
