@@ -234,7 +234,7 @@ Peer-reviewed coverage is unusually good for a tetra: five papers use rummy-nose
 ## 7. Behavior and tankmates
 
 - Temperament: "It's a very peaceful species that won't compete well with very boisterous or much larger tankmates." (S21, S22; S23 same for [GEO]). Fishkeeper: "extremely peaceful". (S30)
-- Good companions, Seriously Fish [BLE] (paraphrase): other Hemigrammus or Hyphessobryon tetras, pencilfish, Apistogramma, Corydoras, small loricariids; in a general community, smaller rasboras, barbs, anabantoids and West African dwarf cichlids such as Pelvicachromis. (S21)
+- Good companions, Seriously Fish [BLE] (paraphrase): other Hemigrammus or Hyphessobrycon tetras, pencilfish, Apistogramma, Corydoras, small loricariids; in a general community, smaller rasboras, barbs, anabantoids and West African dwarf cichlids such as Pelvicachromis. (S21)
 - Aquarium Co-Op: "They get along with any peaceful community fish that are similar-sized, such as other tetras, rasboras, and corydoras." (S31)
 - Aquarium Source: "The best tank mate for Rummy Nose Tetras is more Rummy Nose Tetras." (S32)
 - Discus: "Many discus enthusiasts keep a shoal of rummy noses in their show tanks, too." (S21). Fishkeeper: they "mix well with discus in large aquaria." (S30). See 8.2 for the temperature conflict this creates.
