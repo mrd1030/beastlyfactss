@@ -350,45 +350,26 @@ function EncyclopediaTab({ search, setSearch, activeCategory, setActiveCategory,
             <h2 className="font-display font-bold text-base text-foreground mb-3 flex items-center gap-2">
               <GroupIcon name={group.name} className="w-4 h-4 text-secondary" />{group.name}
             </h2>
-            <div className="grid grid-flow-row-dense grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
-              {/* A group's species sit in an accordion row; its panel opens
-                  with the group hub first (the encyclopedia has no entry for
-                  a group, so the hub's row is the way into it), then the
-                  species. */}
-              {nestByHub(group.animals, (a) => a.guideId, (a) => a.name).map((entry) => {
-                const rowFor = (animal) => ({
-                  to: `/encyclopedia/animal/${animal.id}/`,
-                  name: animal.name,
-                  subtitle: animal.scientific,
-                  image: animal.image,
-                  emoji: animal.emoji,
-                  difficulty: animal.difficulty,
-                  difficultyClass: difficultyColor[animal.difficulty],
-                  onOpenLegend,
-                  returnTo: currentListPath,
-                  available: animal.available,
-                });
-                return entry.hub ? (
-                  <BrowseGroup
-                    key={entry.hub.id}
-                    name={entry.hub.branches.groupName || entry.hub.name}
-                    subtitle={`${entry.members.length} species`}
-                    count={entry.members.length}
-                    defaultOpen={!!search.trim()}
-                  >
-                    <BrowseRow
-                      to={`/guides/${entry.hub.id}/`}
-                      name={entry.hub.name}
-                      subtitle={entry.hub.tagline}
-                      emoji={entry.hub.emoji}
-                      returnTo={currentListPath}
-                    />
-                    {entry.members.map((animal) => <BrowseRow key={animal.id} {...rowFor(animal)} />)}
-                  </BrowseGroup>
-                ) : (
-                  <BrowseRow key={entry.item.id} {...rowFor(entry.item)} />
-                );
-              })}
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
+              {/* One row per animal, alphabetical. Group hubs (the tetras)
+                  never appear here: the encyclopedia lists animals only, and a
+                  species reaches its group hub from its own entry's care guide
+                  card. The guides lists nest groups; this list does not. */}
+              {group.animals.map((animal) => (
+                <BrowseRow
+                  key={animal.id}
+                  to={`/encyclopedia/animal/${animal.id}/`}
+                  name={animal.name}
+                  subtitle={animal.scientific}
+                  image={animal.image}
+                  emoji={animal.emoji}
+                  difficulty={animal.difficulty}
+                  difficultyClass={difficultyColor[animal.difficulty]}
+                  onOpenLegend={onOpenLegend}
+                  returnTo={currentListPath}
+                  available={animal.available}
+                />
+              ))}
             </div>
           </motion.div>
         ))}
