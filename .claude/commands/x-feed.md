@@ -1,5 +1,5 @@
 ---
-description: Build a 7 day X calendar for @Beastly_Facts. Four posts a day at fixed slots (two fact cards, a question card, a wallpaper pair), every post an image, no links anywhere.
+description: Build a 7 day X calendar for @Beastly_Facts. Five posts a day at fixed slots (two fact cards, a question card, two looked-up evening facts as text), no links anywhere.
 argument-hint: "[blank = Phase 1 shortlist] [go = Phase 2 write] [cadence e.g. '2 facts'] [notes to steer picks]"
 allowed-tools: Read, Glob, Grep, Bash(ls:*), Bash(sed:*), Bash(head:*), Bash(wc:*), Bash(sort:*), Bash(grep:*), Bash(awk:*)
 ---
@@ -8,7 +8,30 @@ allowed-tools: Read, Glob, Grep, Bash(ls:*), Bash(sed:*), Bash(head:*), Bash(wc:
 
 ARGUMENTS: $ARGUMENTS
 
-CURRENT SCOPE (owner, 2026-10-17, effective Friday 2026-10-17). Supersedes
+CURRENT SCOPE (owner, 2026-10-31, effective Saturday 2026-10-31). Supersedes
+the 2026-10-17 and 2026-10-10 notes below wherever they differ. The full plan
+across every platform is docs/SOCIAL_PLAN.md.
+- DAY SHAPE: 5 posts a day at fixed slots, 30 minutes behind Threads, all
+  times US Eastern. The three daytime posts carry cards as before; the two
+  evening posts are text only, the one exception to every-post-an-image.
+    9:30 AM   FACT CARD, unchanged.
+   12:30 PM   QUESTION CARD, unchanged.
+    4:30 PM   FACT CARD, unchanged.
+    8:30 PM   "Did you know?" A LOOKED-UP fact, text only, no image, no
+              reply. Rules under LOOKED-UP FACTS in docs/SOCIAL_PLAN.md.
+   10:30 PM   "Fun Fact:" A LOOKED-UP fact, same rules.
+- LOOKED-UP FACTS: 14 a week, one per evening slot, researched with a real
+  primary source each, the URL in the batch JSON as `source` and never in
+  the post. The same looked-up fact runs on Threads in different wording.
+  Log them in social/looked-up-facts.json when the week is marked; read the
+  log and grep facts.js first so nothing repeats. Under 280 characters, the
+  prefix exact, no tag, no hashtag.
+- WALLPAPERS: gone from the schedule (owner, 2026-10-31). No wallpaper
+  rows, replies, sheet or ledger lines. The Beastly Walls art runs where the
+  owner posts it by hand.
+- CSV: a looked-up row is text with no media url and no comment.
+
+CURRENT SCOPE (owner, 2026-10-17, effective Friday 2026-10-17). Superseded by the 2026-10-31 scope above. Supersedes
 the 2026-10-10 note below wherever the two differ. The 2026-10-10 rules on
 the fact card and on links still hold. The full plan across every platform,
 with the reply rules, is docs/SOCIAL_PLAN.md.
@@ -306,9 +329,10 @@ PHASE 2: WRITE (after approval only)
 2.  The FIRST REPLY adds one real detail the main post left out: a number, a
     mechanism, a consequence from the same source. Never a url, never "more
     on the site". It exists to give a reader something to answer.
-3.  Post the requested cadence, no more. Since 2026-10-17 the slots are
-    fixed: 9:30 AM fact, 12:30 PM question, 4:30 PM fact, 10:00 PM
-    wallpaper pair, US Eastern. Do not move them.
+3.  Post the requested cadence, no more. Since 2026-10-31 the slots are
+    fixed: 9:30 AM fact, 12:30 PM question, 4:30 PM fact, 8:30 PM "Did you
+    know?", 10:30 PM "Fun Fact:", US Eastern. Do not move them. The two
+    evening posts are text only, with no reply.
 4.  Main post under 280 characters. Count it and show the count.
 5.  Zero hashtags unless exactly one genuinely fits.
 6.  One post, one take. Never the seoTitle.
@@ -392,27 +416,27 @@ OUTPUT FORMAT. Nothing outside these sections.
 =====================================================================
 
 ## Week at a glance
-Table: Day | 9:30 fact (id + animal) | 12:30 question (id + animal) | 4:30 fact (id + animal) | 10:00 wallpaper (animal pair)
+Table: Day | 9:30 fact (id + animal) | 12:30 question (id + animal) | 4:30 fact (id + animal) | 8:30 did you know (animal) | 10:30 fun fact (animal)
 
 ## Day 1 through Day 7
 Repeat this block once per post, in posting order, labelled FACT, QUESTION
-or WALLPAPER (ARTICLE only when the owner asks for the article track back).
+or LOOKED-UP (ARTICLE only when the owner asks for the article track back).
 
   DAY / TIME:   one slot per post, not three options
-  TRACK:        fact | question | wallpaper | article
+  TRACK:        fact | question | looked-up | article
   SHAPE:        claim | correction | cost | scene | question | thread
-  SOURCE:       facts.js id=<n>   or   questions.json id=<n>   or   content/.../file.mdx
-  QUOTE USED:   "<verbatim>"   (a question: its x field; a wallpaper: the fact the reply uses)
+  SOURCE:       facts.js id=<n>   or   questions.json id=<n>   or   content/.../file.mdx   or   a looked-up fact's source URL
+  QUOTE USED:   "<verbatim>"   (a question: its x field; a looked-up fact: the sentence from the source it rests on)
   SUPPORTS:     <the one sentence in the post this quote backs>
 
   MAIN POST
-  <paste ready, no url. A wallpaper post: NONE, the pair posts with no caption>
+  <paste ready, no url>
   chars: <n>
 
   FIRST REPLY
-  <one added detail, no url. A wallpaper: the short fact tied to the art>
+  <one added detail, no url. A looked-up fact: NONE>
 
-  IMAGE:        <resolved path; a wallpaper: the two animals, files are the owner's>
+  IMAGE:        <resolved path; a looked-up fact: none>
   WHY THIS ONE: <one sentence>
 
 ## Publer CSV
@@ -462,19 +486,6 @@ correctly in Publer, not just generated:
     node scripts/social-inventory.mjs set-next-start --platform x --through <last day used>
 so the next batch picks up automatically without re-asking what day it is.
 
-## Wallpaper sheet
-Hand this over with the CSVs. The owner uploads the wallpaper posts by hand
-and pastes from here, so it is one block per night, nothing else in it:
-
-  DATE:       YYYY-MM-DD
-  X:          10:00 PM        THREADS: 9:30 PM
-  ANIMALS:    <animal a> + <animal b>
-  X REPLY:    <the short fact tied to the art, no url>
-  THREADS REPLY: <the same fact rewritten for Threads, not copied>
-
-The Instagram Mon, Wed, Fri carousels built from these pairs are in the
-Instagram calendar, not here.
-
 ## Ledger
 The exact commands to run once the week is actually posted, one line per item,
 ready to paste. Nothing is consumed until these run, so a week that gets
@@ -482,11 +493,10 @@ scheduled but not marked will be proposed again.
 
     node scripts/social-inventory.mjs mark --platform x --fact <id> --date YYYY-MM-DD
     node scripts/social-inventory.mjs mark --platform x --question <id> --date YYYY-MM-DD
-    node scripts/social-inventory.mjs mark --wallpaper "Animal A,Animal B" --date YYYY-MM-DD
     node scripts/social-inventory.mjs mark --platform x --article content/.../file.mdx --date YYYY-MM-DD
 
-The wallpaper line is shared with Threads: run it once per pair, not once per
-platform, and it refuses an animal that ran in a wallpaper within the week.
+Looked-up facts have no id: append each to social/looked-up-facts.json
+(date, slot, platform, text, source) when the week is marked.
 
 ## What to cancel
 Any queued seoTitle + excerpt + url posts still scheduled this week, and a one
@@ -503,9 +513,9 @@ failing calendar with a note attached.
   [ ] No three reptiles in a row
   [ ] No post shape used twice consecutively
   [ ] Every fact QUOTE USED appears verbatim in facts.js under that id
-  [ ] Every post has its own fact photo card, crop checked, no photo used twice
-  [ ] Every day has the four slots at 9:30, 12:30, 4:30 and 10:00, nothing moved
+  [ ] Every fact and question post has its own card, crop checked, no photo used twice; the two evening posts have none
+  [ ] Every day has the five slots at 9:30, 12:30, 4:30, 8:30 and 10:30, nothing moved
   [ ] Every question is unused on X in social/questions.json, no animal on two question cards
-  [ ] Every wallpaper pair is clear of this week's other pairs, and its reply is a fact from the repo
+  [ ] Every looked-up fact opens with its exact prefix, has a primary source URL in the batch JSON, is not in facts.js and not in social/looked-up-facts.json
   [ ] A quarter or more of posts end on a real question, at least one a fact
   [ ] Ledger section lists a mark command for every post

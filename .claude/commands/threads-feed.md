@@ -1,5 +1,5 @@
 ---
-description: Build a 7 day Threads calendar. Four posts a day at fixed slots (two questions, a fact card, a wallpaper pair), take first, reply driven, no links anywhere.
+description: Build a 7 day Threads calendar. Five posts a day at fixed slots (a question, two text facts with the card in the reply, two looked-up evening facts) plus one-line facts between them, take first, reply driven, no links anywhere.
 argument-hint: "[blank = Phase 1 shortlist] [go = Phase 2 write] [cadence e.g. '1 fact'] [mirror x]"
 allowed-tools: Read, Glob, Grep, Bash(ls:*), Bash(sed:*), Bash(head:*), Bash(wc:*), Bash(sort:*), Bash(grep:*), Bash(awk:*)
 ---
@@ -8,7 +8,48 @@ allowed-tools: Read, Glob, Grep, Bash(ls:*), Bash(sed:*), Bash(head:*), Bash(wc:
 
 ARGUMENTS: $ARGUMENTS
 
-CURRENT SCOPE (owner, 2026-10-17, effective Friday 2026-10-17). Supersedes
+CURRENT SCOPE (owner, 2026-10-31, effective Saturday 2026-10-31). Supersedes
+the 2026-10-17 and 2026-10-10 notes below wherever they differ. The full plan
+across every platform is docs/SOCIAL_PLAN.md.
+- DAY SHAPE: 5 posts a day at fixed slots plus one-liners, all times US
+  Eastern. X runs the same shape 30 minutes later with cards where Threads
+  runs text.
+    9:00 AM   QUESTION. Text only, no image. The bank's Threads version
+              verbatim, take first. The tag inside the sentence. SELF REPLY
+              is our own answer; PLANNED REPLY as for any post.
+   12:00 PM   FACT AS TEXT. The fact in Threads register, different wording
+              from X's version of the same fact, no image on the post, the
+              tag inside the sentence. The REPLY is the fact card (the --4x5
+              card below) with no text. No self reply detail and no lead-in
+              line: the card is the reply.
+    4:00 PM   FACT AS TEXT. Same rules, a different fact.
+    8:00 PM   "Did you know?" A LOOKED-UP fact, text only, no image, no
+              reply. Rules under LOOKED-UP FACTS in docs/SOCIAL_PLAN.md.
+   10:00 PM   "Fun Fact:" A LOOKED-UP fact, same rules.
+   BETWEEN    "Animal:" ONE-LINERS: one-line facts from the repo, no image,
+              no reply, the tag inline, placed between the anchor posts. How
+              many is set at Phase 1 with the shortlist.
+- FACTS: two a day from the repo, 14 a week, plus the one-liners. X runs the
+  same two; mirror where it makes sense, never the same copy.
+- QUESTIONS: one a day from social/questions.json, never one the bank marks
+  used on Threads. `mark --platform threads --question <id>` consumes one.
+- LOOKED-UP FACTS: 14 a week, one per evening slot, researched with a real
+  primary source each, the URL in the batch JSON as `source` and never in
+  the post. The same looked-up fact runs on X in different wording. Log them
+  in social/looked-up-facts.json when the week is marked; read the log and
+  grep facts.js first so nothing repeats.
+- TAGS: one per post on a word already in the sentence, on facts and
+  one-liners as well as questions. Common words only (#turtle, #fish, #bird,
+  #frog), never the species name (#matamata).
+- WALLPAPERS: gone from the schedule (owner, 2026-10-31). No wallpaper
+  rows, replies or ledger lines.
+- CSV: a question row is `"type": "question"` with text, the self reply and
+  no media. A fact row has the text and NO media url; the card goes on the
+  reply, and the CSV Comment(s) column is text only, so the card reply is
+  attached in Publer by hand after import. Looked-up and one-liner rows are
+  text with no media and no comment.
+
+CURRENT SCOPE (owner, 2026-10-17, effective Friday 2026-10-17). Superseded by the 2026-10-31 scope above. Supersedes
 the 2026-10-10 note below wherever the two differ. The 2026-10-10 rules on
 the fact card and on links still hold. The full plan across every platform,
 with the reply rules, is docs/SOCIAL_PLAN.md.
@@ -285,9 +326,15 @@ PHASE 2: WRITE (after approval only)
     Every post carries exactly that one comment (a thread carries its chain
     instead). It goes in Comment(s), so it fires within seconds of the main
     post, inside the 15-to-30-minute window that counts most.
-8.  Post the requested cadence, no more. Since 2026-10-17 the slots are
-    fixed: 9:00 AM question, 12:00 PM fact card, 4:00 PM question, 9:30 PM
-    wallpaper pair, US Eastern. Do not move them.
+8.  Post the requested cadence, no more. Since 2026-10-31 the slots are
+    fixed: 9:00 AM question, 12:00 PM fact as text, 4:00 PM fact as text,
+    8:00 PM "Did you know?", 10:00 PM "Fun Fact:", US Eastern, with the
+    "Animal:" one-liners between them. Do not move them.
+10. A fact post is text; its reply is the fact card with no text. Rule 7's
+    self reply does not apply to fact posts, looked-up posts or one-liners.
+11. A looked-up post opens with its prefix exactly ("Did you know?" or
+    "Fun Fact:"), then one or two sentences under 200 characters, text only,
+    no reply. Its source URL goes in the batch JSON, never in the post.
 9.  A question post is the bank's Threads version verbatim, with the tag on
     the word its `tag` field names. Its SELF REPLY is our own answer to the
     question, or the first real example, so the thread is never empty when
@@ -363,31 +410,32 @@ OUTPUT FORMAT. Nothing outside these sections.
 =====================================================================
 
 ## Week at a glance
-Table: Day | 9:00 question (id + animal) | 12:00 fact (id + animal) | 4:00 question (id + animal) | 9:30 wallpaper (animal pair)
+Table: Day | 9:00 question (id + animal) | 12:00 fact (id + animal) | 4:00 fact (id + animal) | one-liners (ids) | 8:00 did you know (animal) | 10:00 fun fact (animal)
 
 ## Day 1 through Day 7
-Repeat this block once per post, in posting order, labelled QUESTION, FACT
-or WALLPAPER (ARTICLE only when the owner asks for the article track back).
+Repeat this block once per post, in posting order, labelled QUESTION, FACT,
+ONE-LINER or LOOKED-UP (ARTICLE only when the owner asks for the article
+track back).
 
   DAY / TIME:     one slot per post
-  TRACK:          question | fact | wallpaper | article
+  TRACK:          question | fact | one-liner | looked-up | article
   SHAPE:          position | number | confession | scene | ask | thread
-  SOURCE:         facts.js id=<n>   or   questions.json id=<n>   or   content/.../file.mdx
-  QUOTE USED:     "<verbatim>"   (a question: its threads field; a wallpaper: the fact the reply uses)
+  SOURCE:         facts.js id=<n>   or   questions.json id=<n>   or   content/.../file.mdx   or   a looked-up fact's source URL
+  QUOTE USED:     "<verbatim>"   (a question: its threads field; a looked-up fact: the sentence from the source it rests on)
   SUPPORTS:       <the one line in the post this backs>
 
   POST
-  <paste ready. A wallpaper post: NONE, the pair posts with no caption>
+  <paste ready>
   chars: <n>
 
   SELF REPLY
-  <one added detail, stat, or angle, not a repeat of the post, no url>
+  <a question: our own answer. A fact: THE CARD, no text. A one-liner or a looked-up fact: NONE>
 
   PLANNED REPLY
   <what we say back to the first responder>
 
   REPLY HOOK:     <one line: what opening this post leaves>
-  IMAGE:          <the card's photo, the two wallpaper animals (files are the owner's), or none for a question>
+  IMAGE:          <a fact: the card's photo, in the reply. Everything else: none>
   WHY THIS ONE:   <one sentence>
 
 ## Publer CSV
@@ -421,14 +469,16 @@ CSV columns (Publer's 12-column bulk template, do not remove or reorder any):
                 .claude/commands/x-feed.md. Upload before building the CSV,
                 not the relative frontmatter path. Must be a real, live, public
                 URL. Confirmed working before use, never assumed correct
-                from the path alone. A question row ("type": "question" in
-                the batch JSON) leaves this EMPTY: text only, the one
-                exception to the every-post-a-card rule. No wallpaper
-                rows: the owner posts those by hand from the wallpaper
-                sheet in the X skill (the builder's "type": "wallpaper"
-                row is there for the day that changes).
-  Comment(s)    the SELF REPLY, no url. For a thread, every post after the
-                first goes here, joined by ||. The PLANNED REPLY is
+                from the path alone. Since 2026-10-31 a Threads FACT row
+                also leaves this EMPTY: the card goes on the reply, attached
+                in Publer by hand after import, because Comment(s) carries
+                text only. Question, one-liner and looked-up rows are text
+                with no media. No wallpaper rows (the builder's "type":
+                "wallpaper" row is there for the day that changes).
+  Comment(s)    a question's SELF REPLY, no url. Empty for a fact row (the
+                card reply is added by hand), a one-liner or a looked-up
+                fact. For a thread, every post after the first goes here,
+                joined by ||. The PLANNED REPLY is
                 different: it is for the account to send once someone
                 actually responds, and it does not belong in the CSV. Each
                 comment fires automatically in order once the main post goes
@@ -450,11 +500,11 @@ scheduled but never marked will be proposed again.
 
     node scripts/social-inventory.mjs mark --platform threads --fact <id> --date YYYY-MM-DD
     node scripts/social-inventory.mjs mark --platform threads --question <id> --date YYYY-MM-DD
-    node scripts/social-inventory.mjs mark --wallpaper "Animal A,Animal B" --date YYYY-MM-DD
     node scripts/social-inventory.mjs mark --platform threads --article content/.../file.mdx --date YYYY-MM-DD
 
-The wallpaper line is shared with X: run it once per pair, not once per
-platform, and it refuses an animal that ran in a wallpaper within the week.
+One-liners are marked like any fact. Looked-up facts have no id: append each
+to social/looked-up-facts.json (date, slot, platform, text, source) when the
+week is marked.
 
 ## Self check
 State pass or fail on each. Fix failures before outputting.
@@ -466,12 +516,12 @@ State pass or fail on each. Fix failures before outputting.
   [ ] No shape used twice consecutively
   [ ] No species repeats across the week
   [ ] Every fact QUOTE USED appears verbatim in facts.js under that id
-  [ ] Every fact post has its own fact photo card, crop checked, no photo used twice
-  [ ] Every day has the four slots at 9:00, 12:00, 4:00 and 9:30, nothing moved
+  [ ] Every fact post is text with its own fact photo card as the reply, crop checked, no photo used twice
+  [ ] Every day has the five slots at 9:00, 12:00, 4:00, 8:00 and 10:00, nothing moved, one-liners between them
   [ ] Every question is unused on Threads in social/questions.json, text verbatim, tag on its named word
-  [ ] Every wallpaper pair is clear of this week's other pairs, and its reply is a fact from the repo
-  [ ] Every post has a planned reply written
-  [ ] Every post has one self reply (threads carry their chain), none a
-      repeat of the main post, none with a url
+  [ ] Every tag is a common word, never a species name
+  [ ] Every looked-up fact opens with its exact prefix, has a primary source URL in the batch JSON, is not in facts.js and not in social/looked-up-facts.json
+  [ ] Every question and fact post has a planned reply written
+  [ ] Every question has one self reply with our answer, no url; no other post carries a text reply
   [ ] No copy identical to the X or IG calendar
   [ ] Ledger section lists a mark command for every post
