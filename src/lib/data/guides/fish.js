@@ -14,22 +14,22 @@ export const fishGuides = fillCostTokens([
     seoDescription: "Every tetra needs a school, a cycled tank and soft water, but the numbers change by species. Compare neon and cardinal tetras and the rules they both share.",
     funFact: "Neon and cardinal tetras are easy to mix up in a shop tank, but the cardinal's red stripe runs the full length of its body, where the neon's covers only half of it.",
     // Group hub, the tetra counterpart of dog-universal: the rules every tetra
-    // shares, then one card per species routing to that species' own hub. It
-    // is a router (docs/RULES.md, Hubs) with no figure of its own. The shared
-    // rows cite the class guides in the sidebar's Health and More list; a row
-    // that names one species cites that species' deep dive. The `branches`
-    // cards copy each species' figures from the deep dive named on the card,
-    // and change there. No emergency card: the signs differ by species (neon
+    // shares, then one browse row per species routing to that species' own
+    // hub. It is a router (docs/RULES.md, Hubs) with no figure of its own. The
+    // shared rows cite the class guides in the sidebar's Health and More list;
+    // a row that names one species cites that species' deep dive. The
+    // `branches` table copies each species' figures from its own deep dives,
+    // and they change there. No emergency card: the signs differ by species (neon
     // tetra disease against ich a cardinal can be heated through), so each
     // species hub keeps its own. Planned species render as placeholders until
     // their guide set ships. Drafted 2026-10-31 as a preview, not yet live.
     layout: "router",
     firstWeek: {
-      intro: "The rules every tetra shares, each from the article it links to. The numbers that change by species are in the cards below.",
+      intro: "The rules every tetra shares, each from the article it links to. The numbers that change by species are in the table below.",
       rows: [
         { label: "How many", value: "Ten of one species. Six is the floor most species pages give, groups of 10 shoaled the most in the group-size study, and ten of one species beats five each of two.", source: "aquarium-stocking-and-tankmates-guide" },
         { label: "Cycle first", value: "Cycle the tank before any tetra goes in. Most fishless cycles finish in four to six weeks at a stable warm temperature.", source: "aquarium-cycling-guide" },
-        { label: "Water chemistry", value: "Soft and acidic for every species here, with the exact pH on each card below. KH holds pH in place, and dosing pH-up or pH-down against it is how keepers crash a tank.", source: "freshwater-ph-gh-kh-guide" },
+        { label: "Water chemistry", value: "Soft and acidic for every species here, with the exact pH for each species in the table below. KH holds pH in place, and dosing pH-up or pH-down against it is how keepers crash a tank.", source: "freshwater-ph-gh-kh-guide" },
         { label: "Temperature", value: "Set it by species, not by the word tetra. Cardinals take water up to 86°F, past the roughly 77°F neons are comfortable with, so mixing them means a setting inside both ranges.", source: "cardinal-tetra-tank-setup-guide" },
         { label: "Food size", value: "A micro-pellet or a flake crushed fine. A neon's mouth is only about 1 to 2mm across, and food too large gets spat out, which starves the fish while the tank looks fed.", source: "neon-tetra-feeding-guide" },
         { label: "Tankmates", value: "Four checks: temperature ranges overlap, water chemistry overlaps, neither adult fits in the other's mouth, and neither nips or bullies the other's body shape. A pairing passes all four.", source: "aquarium-stocking-and-tankmates-guide" },
@@ -42,7 +42,7 @@ export const fishGuides = fillCostTokens([
     },
     branches: {
       heading: "Pick your tetra",
-      intro: "Same rules, different numbers. Each card is copied from that species' own guides, and opens its full care guide.",
+      intro: "Same rules, different numbers. Each species opens its full care guide, and the table below compares the figures from each one's own guides.",
       fields: ["School", "Starter tank", "Temperature", "pH", "Adult size", "Ich by heat"],
       species: [
         {

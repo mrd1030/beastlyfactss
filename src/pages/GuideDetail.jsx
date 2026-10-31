@@ -13,6 +13,7 @@ import { getRelatedFacts } from '@/lib/utils/matchAnimal';
 import { relatedPosts } from '@/lib/relatedPosts';
 import { getRelatedArticleSlugs } from '@/lib/data/relatedArticles';
 import DeepDiveList from '@/components/shared/DeepDiveList';
+import BrowseRow from '@/components/shared/BrowseRow';
 import AffiliateLink from '@/components/mdx/AffiliateLink';
 import { getAffiliateForItem, RETAILERS } from '@/lib/data/affiliateProducts';
 import { CARE_PACKAGES, carePackageBookCover, carePackageSampleHref, isCarePackageBuyable } from '@/lib/data/carePackages';
@@ -428,42 +429,78 @@ export default function GuideDetail() {
               </div>
             )}
 
-            {/* Group hub (tetra-universal): one card per species, each opening
-                that species' own hub. A planned species has no guide yet, so it
-                renders as a placeholder with no link and no numbers. */}
-            {isRouter && guide.branches && (
-              <div className="bg-card border border-border rounded-2xl p-5">
-                <h2 className="font-display font-bold text-base text-foreground mb-2 flex items-center gap-2">
-                  <IconChip icon={Fish} color="orange" size="heading" />{guide.branches.heading}
-                </h2>
-                {guide.branches.intro && (
-                  <p className="text-sm text-muted-foreground font-body mb-4">{guide.branches.intro}</p>
-                )}
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                  {guide.branches.species.map((sp) => sp.planned ? (
-                    <div key={sp.name} className="border border-dashed border-border rounded-xl p-4 flex items-center justify-between gap-2">
-                      <p className="text-sm font-body font-bold text-muted-foreground">{sp.name}</p>
-                      <span className="text-xs font-body font-semibold text-muted-foreground bg-muted px-2 py-0.5 rounded-full">Guide coming</span>
+            {/* Group hub (tetra-universal): the species list uses the same
+                BrowseRow as the guides and encyclopedia lists, so a species
+                looks the same here as everywhere else it is browsed. Name,
+                photo, tagline and difficulty come from that species' own guide
+                entry. A planned species has no guide yet, so it renders as the
+                dimmed, unlinked placeholder row. The figures sit in a table
+                under the rows, one column per species with a guide. */}
+            {isRouter && guide.branches && (() => {
+              const live = guide.branches.species
+                .filter((sp) => !sp.planned)
+                .map((sp) => ({ ...sp, entry: allGuides.find((g) => g.id === sp.id) }))
+                .filter((sp) => sp.entry);
+              return (
+                <div className="bg-card border border-border rounded-2xl p-5">
+                  <h2 className="font-display font-bold text-base text-foreground mb-2 flex items-center gap-2">
+                    <IconChip icon={Fish} color="orange" size="heading" />{guide.branches.heading}
+                  </h2>
+                  {guide.branches.intro && (
+                    <p className="text-sm text-muted-foreground font-body mb-4">{guide.branches.intro}</p>
+                  )}
+                  {/* Two columns on a tablet, one from lg up: the hub's main
+                      column is two thirds of the page there, and two rows side
+                      by side cut "Cardinal Tetra" to "Cardin al..." beside the
+                      full difficulty chip. */}
+                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-2">
+                    {guide.branches.species.map((sp) => {
+                      const entry = sp.planned ? null : allGuides.find((g) => g.id === sp.id);
+                      return entry ? (
+                        <BrowseRow
+                          key={sp.id}
+                          to={`/guides/${entry.id}/`}
+                          name={entry.name}
+                          subtitle={entry.tagline}
+                          image={entry.image}
+                          emoji={entry.emoji}
+                          difficulty={entry.difficulty}
+                          difficultyClass={difficultyColor[entry.difficulty]}
+                          onOpenLegend={() => setIsLegendOpen(true)}
+                          returnTo={`/guides/${guide.id}/`}
+                        />
+                      ) : (
+                        <BrowseRow key={sp.name} name={sp.name} subtitle="Guide coming" emoji={guide.emoji} available={false} />
+                      );
+                    })}
+                  </div>
+                  {live.length > 0 && (
+                    <div className="mt-5 overflow-x-auto">
+                      <table className="w-full text-xs font-body border-collapse">
+                        <thead>
+                          <tr className="border-b border-border">
+                            <th className="text-left font-semibold text-muted-foreground py-2 pr-3 w-28" scope="col"><span className="sr-only">Figure</span></th>
+                            {live.map((sp) => (
+                              <th key={sp.id} scope="col" className="text-left font-bold text-foreground py-2 pr-3">{sp.entry.name}</th>
+                            ))}
+                          </tr>
+                        </thead>
+                        <tbody className="divide-y divide-border/60">
+                          {guide.branches.fields.map((field, i) => (
+                            <tr key={field}>
+                              <th scope="row" className="text-left font-semibold text-foreground py-2 pr-3 align-top">{field}</th>
+                              {live.map((sp) => (
+                                <td key={sp.id} className="text-muted-foreground py-2 pr-3 align-top">{sp.values[i]}</td>
+                              ))}
+                            </tr>
+                          ))}
+                        </tbody>
+                      </table>
                     </div>
-                  ) : (
-                    <Link key={sp.id} to={`/guides/${sp.id}/`} className="group block border border-border rounded-xl p-4 hover:border-secondary transition-colors">
-                      <p className="text-sm font-body font-bold text-foreground group-hover:text-secondary transition-colors flex items-center gap-1.5 mb-2">
-                        <span className="flex-1">{sp.name}</span>
-                        <ChevronRight className="w-4 h-4 flex-shrink-0 text-muted-foreground group-hover:text-secondary" />
-                      </p>
-                      <dl className="space-y-1">
-                        {guide.branches.fields.map((field, i) => (
-                          <div key={field} className="grid grid-cols-[6.5rem_1fr] gap-x-2 text-xs font-body">
-                            <dt className="font-semibold text-foreground">{field}</dt>
-                            <dd className="text-muted-foreground">{sp.values[i]}</dd>
-                          </div>
-                        ))}
-                      </dl>
-                    </Link>
-                  ))}
+                  )}
                 </div>
-              </div>
-            )}
+              );
+            })()}
 
             {isRouter && guide.emergencyCard && (
               <div className="bg-destructive/5 border border-destructive/20 rounded-2xl p-5">
