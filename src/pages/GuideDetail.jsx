@@ -526,19 +526,21 @@ export default function GuideDetail() {
                   lines.push({ key: `${a.id}-${b.id}`, text: `${pair} do not share a temperature or pH range, so they need separate tanks.` });
                   continue;
                 }
-                const tempA = where(a.ranges.tempF, t, 'cool', 'warm');
-                const tempB = where(b.ranges.tempF, t, 'cool', 'warm');
-                const phA = where(a.ranges.ph, p, 'acidic', 'less acidic');
-                const phB = where(b.ranges.ph, p, 'acidic', 'less acidic');
-                const temp = tempA === 'anywhere in' && tempB === 'anywhere in'
-                  ? 'any temperature both list'
-                  : `${tempA === 'anywhere in' ? `anywhere in the ${short(a)}'s range` : `${tempA} the ${short(a)}'s temperature range`}, which is ${tempB === 'anywhere in' ? `inside the ${short(b)}'s` : `${tempB} the ${short(b)}'s`}`;
-                const ph = phA === 'anywhere in'
-                  ? `the ${short(a)}'s full pH range, which is ${phB} the ${short(b)}'s`
-                  : phB === 'anywhere in'
-                    ? `the ${short(b)}'s full pH range, which is ${phA} the ${short(a)}'s`
-                    : `${phA} the ${short(a)}'s pH range and ${phB} the ${short(b)}'s`;
-                lines.push({ key: `${a.id}-${b.id}`, text: `${pair} can share a tank kept at ${temp}, with water in ${ph}.` });
+                // Each half names where the shared band sits in each species'
+                // range. When the band is one species' whole range, the line
+                // says "anywhere in" that one and names the end of the other;
+                // when it is both whole ranges, it says so once.
+                const describe = (rangeA, rangeB, band, low, high, what) => {
+                  const inA = where(rangeA, band, low, high);
+                  const inB = where(rangeB, band, low, high);
+                  if (inA === 'anywhere in' && inB === 'anywhere in') return `anywhere in the ${what} range both share`;
+                  if (inA === 'anywhere in') return `anywhere in the ${short(a)}'s ${what} range, which is ${inB} the ${short(b)}'s`;
+                  if (inB === 'anywhere in') return `anywhere in the ${short(b)}'s ${what} range, which is ${inA} the ${short(a)}'s`;
+                  return `at ${inA} the ${short(a)}'s ${what} range, which is ${inB} the ${short(b)}'s`;
+                };
+                const temp = describe(a.ranges.tempF, b.ranges.tempF, t, 'cool', 'warm', 'temperature');
+                const ph = describe(a.ranges.ph, b.ranges.ph, p, 'acidic', 'less acidic', 'pH');
+                lines.push({ key: `${a.id}-${b.id}`, text: `${pair} can share a tank kept ${temp}, with water ${ph}.` });
               }
               return (
                 <div className="bg-card border border-border rounded-2xl p-5">

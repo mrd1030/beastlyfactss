@@ -18653,6 +18653,376 @@
     "imageHeight": 784
   },
   {
+    "path": "/content/guides/ember-tetra-cost-guide.mdx",
+    "slug": "ember-tetra-cost-guide",
+    "title": "How Much Does Ember Tetra Ownership Cost?",
+    "seoTitle": "Ember Tetra Cost: $25 to $35 for 10, $95 to $245 Setup",
+    "seoDescription": "Ember tetra cost: $2.50 to $3.50 a fish, $25 to $35 for a school of 10, $95 to $245 for a planted 10 gallon setup, and the quarantine tank worth adding.",
+    "lastUpdated": "2026-10-31",
+    "noIndex": false,
+    "excerpt": "Ember tetras are bought ten at a time, and the whole school costs a fraction of the tank it lives in. The money goes into a planted 10 gallon setup and a spare tank for quarantine.",
+    "date": "2026-10-31",
+    "category": "Fish",
+    "categories": [
+      "Fish"
+    ],
+    "tags": [
+      "Ember Tetra",
+      "Cost",
+      "Pet Ownership Cost",
+      "Tank Setup Cost",
+      "Care Tips",
+      "Fish Care"
+    ],
+    "readTime": 5,
+    "difficulty": "Beginner",
+    "image": "/assets/images/ember-tetra-cost.jpg",
+    "imageAlt": "A school of ember tetras swimming over a dark substrate in a planted aquarium",
+    "emoji": "🐠",
+    "lastReviewed": "2026-10-31",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "How much do ember tetras cost?",
+        "a": "About $2.50 to $3.50 a fish from online sellers before shipping, a little less per fish in bigger packs. They are bought as a school of 10 or more, and 10 fish come to $25 to $35 before shipping."
+      },
+      {
+        "q": "What does an ember tetra tank setup cost?",
+        "a": "Expect $95 to $245 for a 10 gallon tank with an 18 x 12 inch footprint, a heater, a gentle filter, dense live plants, dark sand, a liquid test kit, water conditioner and the first micro pellets. A bare quarantine tank with its own heater and filter comes on top."
+      },
+      {
+        "q": "Do ember tetras need a heater?",
+        "a": "Yes. Ember tetras are tropical fish kept at 75 to 82°F (24 to 28°C), so a heater belongs in the setup. 82°F is also their ceiling, so an ich outbreak is treated with salt or medication and the heater goes no higher than 82°F."
+      },
+      {
+        "q": "How long do ember tetras live?",
+        "a": "About 2 to 4 years in captivity. The tank, heater and filter bought for the first school can house the next one."
+      }
+    ],
+    "relatedProducts": [
+      "tank-10-gallon",
+      "submersible-aquarium-heater",
+      "sponge-filter",
+      "neon-tetra-food-hikari-micro-pellets",
+      "water-conditioner",
+      "water-test-kit"
+    ],
+    "factFile": false,
+    "animalDay": null,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 5,
+    "headingCount": 9,
+    "ledeMatchesExcerpt": false
+  },
+  {
+    "path": "/content/guides/ember-tetra-enrichment-guide.mdx",
+    "slug": "ember-tetra-enrichment-guide",
+    "title": "Ember Tetra Enrichment: Bright Orange, Built to Vanish",
+    "seoTitle": "Ember Tetra Enrichment Guide",
+    "seoDescription": "Wild ember tetras shoal in clear, sunlit water, hide from above and keep moving near pike cichlids. A school of 10, dense plants and live food fit that life.",
+    "lastUpdated": "2026-10-31",
+    "noIndex": false,
+    "excerpt": "In clear Brazilian water an ember tetra shoal hides from above with its dark backs and moves every few minutes while pike cichlids hunt nearby. The tank should give it the same cover.",
+    "date": "2026-10-31",
+    "category": "Enrichment",
+    "categories": [
+      "Enrichment"
+    ],
+    "tags": [
+      "Ember Tetra",
+      "Enrichment",
+      "Care Tips",
+      "Fish Enrichment",
+      "Fish Welfare",
+      "Tetras"
+    ],
+    "readTime": 6,
+    "difficulty": "Beginner",
+    "image": "/assets/images/ember-tetra-enrichment.jpg",
+    "imageAlt": "A school of orange ember tetras swimming among dense green aquarium plants",
+    "emoji": "🐠",
+    "lastReviewed": "2026-10-31",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "How many ember tetras should be kept together?",
+        "a": "Ten or more. The recommended purchase is a minimum of 8 to 10 ember tetras. No study has tested group size in this species, so the figure comes from the care references, backed by group size research on neon tetras, another small tetra."
+      },
+      {
+        "q": "What tank do ember tetras need to behave naturally?",
+        "a": "A 10-gallon tank with an 18 x 12 inch footprint for a school of 10, heavily planted over a dark substrate, with floating plants, gentle filtration and soft water at 75 to 82°F."
+      },
+      {
+        "q": "What should ember tetras eat for enrichment?",
+        "a": "Daily small live or frozen foods such as baby brine shrimp and moina, alongside micro-pellets or finely crushed flake. Ember tetras are about 0.8 inch long with small mouths, so food has to be tiny and slow-sinking."
+      },
+      {
+        "q": "Why are ember tetras called little fires?",
+        "a": "In the Araguaia River basin of central Brazil, local people call them foguinhos, from fogo, the Portuguese for fire. The scientific name Hyphessobrycon amandae, given in 1987, honors Amanda Bleher, a German limnologist."
+      }
+    ],
+    "relatedProducts": [
+      "neon-tetra-food-hikari-micro-pellets"
+    ],
+    "factFile": false,
+    "animalDay": null,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 5,
+    "headingCount": 9,
+    "ledeMatchesExcerpt": false
+  },
+  {
+    "path": "/content/guides/ember-tetra-feeding-guide.mdx",
+    "slug": "ember-tetra-feeding-guide",
+    "title": "Ember Tetra Feeding: Diet, Food Size, and How Often to Feed",
+    "seoTitle": "What Do Ember Tetras Eat? Diet and Feeding Schedule",
+    "seoDescription": "Ember tetra feeding: crushed flake or micro-pellets for a 0.8 inch fish, live and frozen foods like baby brine shrimp, and small portions once or twice a day.",
+    "lastUpdated": "2026-10-31",
+    "noIndex": false,
+    "excerpt": "An ember tetra is about 0.8 inch long, and its diet is sized to match: tiny slow-sinking staples, small live and frozen prey, and portions the school can clear.",
+    "date": "2026-10-31",
+    "category": "Fish",
+    "categories": [
+      "Fish"
+    ],
+    "tags": [
+      "Ember Tetra",
+      "Feeding",
+      "Diet",
+      "Care Tips",
+      "Fish Diet",
+      "Feeding Schedule",
+      "Live Food"
+    ],
+    "readTime": 5,
+    "difficulty": "Beginner",
+    "image": "/assets/images/ember-tetra-feeding.jpg",
+    "imageAlt": "A school of ember tetras feeding in a planted aquarium",
+    "emoji": "🐠",
+    "lastReviewed": "2026-10-31",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What do ember tetras eat?",
+        "a": "Micro-pellets or flake crushed fine as the staple, plus small live or frozen foods such as baby brine shrimp, daphnia, cyclops and moina. Wild ember tetras are probably micropredators of tiny invertebrates and zooplankton, and at about 0.8 inch (2 cm) long they need tiny, slow-sinking food."
+      },
+      {
+        "q": "How often should I feed ember tetras?",
+        "a": "Once or twice a day, a small pinch each time that the school finishes before it settles on the substrate. Small live or frozen food can be one of those meals every day."
+      },
+      {
+        "q": "How small should ember tetra food be?",
+        "a": "Very small. An adult ember tetra is about 0.8 inch (2 cm) long with a little mouth, so use the smallest micro-pellet grade, flake crushed fine, and live foods the size of baby brine shrimp or daphnia. Slow-sinking food gives the fish time to catch it."
+      },
+      {
+        "q": "What do you feed ember tetra fry?",
+        "a": "Paramecium or a dry fry food of 5 to 50 micron grade as the first food. Ember tetras scatter their eggs and give no parental care, and adults will eat their own eggs and fry, so fry are raised apart from the adults."
+      }
+    ],
+    "relatedProducts": [
+      "neon-tetra-food-hikari-micro-pellets"
+    ],
+    "factFile": false,
+    "animalDay": null,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 5,
+    "headingCount": 7,
+    "ledeMatchesExcerpt": false
+  },
+  {
+    "path": "/content/guides/ember-tetra-handling-guide.mdx",
+    "slug": "ember-tetra-handling-guide",
+    "title": "Ember Tetras Are Never Handled, So the Trip Home Is the Part to Get Right",
+    "seoTitle": "Ember Tetra Handling: Netting, Acclimation, School Size",
+    "seoDescription": "How to net a 0.8-inch ember tetra, bag it one part water to three parts air, acclimate it over 30 to 60 minutes, and pick a school of 10 and safe tankmates.",
+    "lastUpdated": "2026-10-31",
+    "noIndex": false,
+    "excerpt": "Nobody picks up an ember tetra. The handling this 0.8-inch fish gets is a net, a bag and an hour of acclimation, and each step has its own way to go wrong.",
+    "date": "2026-10-31",
+    "category": "Fish",
+    "categories": [
+      "Fish"
+    ],
+    "tags": [
+      "Ember Tetra",
+      "Handling",
+      "Acclimation",
+      "Schooling",
+      "Fish Behavior",
+      "Fish Care"
+    ],
+    "readTime": 6,
+    "difficulty": "Beginner",
+    "image": "/assets/images/ember-tetra-handling.jpg",
+    "imageAlt": "A school of small orange ember tetras swimming among aquarium plants",
+    "emoji": "🐠",
+    "lastReviewed": "2026-10-31",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "How do you acclimate ember tetras to a new tank?",
+        "a": "Turn off the tank lights and mix tank water into the bag a little at a time over 30 to 60 minutes, until tank water outweighs shop water. Then net the fish across, discard the bag water, and look over the bag, net and floor for a missing fish."
+      },
+      {
+        "q": "How many ember tetras should you keep together?",
+        "a": "Ten is the target, with 8 to 10 as the least to buy. Housing that group takes a 10-gallon tank whose base measures 18 by 12 inches."
+      },
+      {
+        "q": "Can ember tetras live with shrimp?",
+        "a": "With adult dwarf shrimp, yes: embers ignore grown shrimp. Baby shrimp are a different story, since embers, like nearly every fish, will pick off shrimplets whenever they get the chance."
+      },
+      {
+        "q": "How should ember tetras be bagged for the trip home?",
+        "a": "Use a ratio of one part water to three parts air, since the oxygen sits in the air. For the ride, put the bag inside a dark box or cover it with a towel or newspaper."
+      }
+    ],
+    "relatedProducts": [],
+    "factFile": false,
+    "animalDay": null,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 5,
+    "headingCount": 9,
+    "ledeMatchesExcerpt": false
+  },
+  {
+    "path": "/content/guides/ember-tetra-health-issues-guide.mdx",
+    "slug": "ember-tetra-health-issues-guide",
+    "title": "Common Ember Tetra Health Issues (and Why the Ich Heat Cure Stops at 82°F)",
+    "seoTitle": "Ember Tetra Health Issues: Ich, Water and Signs",
+    "seoDescription": "Ember tetra health issues: the signs that need action today, why the 86°F ich heat cure is too hot for embers, and the 30-day quarantine that keeps ich out.",
+    "lastUpdated": "2026-10-31",
+    "noIndex": false,
+    "excerpt": "No disease belongs to the ember tetra in particular. Most of what goes wrong starts in the water or arrives with a new fish, and ich is treated differently here because the heat cure runs too hot.",
+    "date": "2026-10-31",
+    "category": "Fish",
+    "categories": [
+      "Fish"
+    ],
+    "tags": [
+      "Ember Tetra",
+      "Health",
+      "Water Quality",
+      "Fish Disease",
+      "Ich",
+      "Care Tips",
+      "Fish Care"
+    ],
+    "readTime": 6,
+    "difficulty": "Beginner",
+    "image": "/assets/images/ember-tetra-health-issues.jpg",
+    "imageAlt": "A healthy orange ember tetra swimming among plants in a planted aquarium",
+    "emoji": "🐠",
+    "lastReviewed": "2026-10-31",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Can you treat ich in ember tetras with heat?",
+        "a": "Not with heat alone. Most ich strains die above 86°F, and the ember tetra's range tops out at 82°F. Warm the tank slowly to 82°F with an air stone running, which speeds up the parasite's cycle, and let aquarium salt at about a tablespoon per 5 gallons or an ich medication do the killing."
+      },
+      {
+        "q": "How long should new ember tetras be quarantined?",
+        "a": "At least 30 days in a separate tank before they join an established school. New fish and water carried in with them are how ich usually reaches a tank, and a month gives a hidden infection time to show where it can be treated without exposing every other fish."
+      },
+      {
+        "q": "Do ember tetras get any species-specific diseases?",
+        "a": "None are known. Embers get the same problems as any small soft-water tetra, and poor diet and poor water quality raise the risk of all of them. Steady water at 75 to 82°F, pH 5.0 to 7.0 and 1 to 10 dGH, tested once or twice a week, plus a school of 10 or more, prevents most of it."
+      },
+      {
+        "q": "What signs mean an ember tetra needs help today?",
+        "a": "Gasping at the surface or fast breathing, two or more fish showing the same sign, or a dead fish all call for an ammonia and nitrite test straight away. White spots on the body or fins mean ich treatment starts the same day, and so does fast breathing that continues once the water tests clean."
+      }
+    ],
+    "relatedProducts": [
+      "tank-10-gallon",
+      "submersible-aquarium-heater",
+      "sponge-filter"
+    ],
+    "factFile": false,
+    "animalDay": null,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 5,
+    "headingCount": 7,
+    "ledeMatchesExcerpt": false
+  },
+  {
+    "path": "/content/guides/ember-tetra-tank-setup-guide.mdx",
+    "slug": "ember-tetra-tank-setup-guide",
+    "title": "Ember Tetra Tank Setup: A 10-Gallon School, Soft Water, and Dense Plants",
+    "seoTitle": "Ember Tetra Tank Setup Guide",
+    "seoDescription": "Ember tetra tank setup: a 10-gallon tank for a school of 10, 75 to 82°F, pH 5.0 to 7.0 in soft water, gentle filtration, dense plants, and a cycled tank first.",
+    "lastUpdated": "2026-10-31",
+    "noIndex": false,
+    "excerpt": "Ember tetras come from soft, weakly acidic backwaters in central Brazil, and a tank for a school of 10 recreates that water: 10 gallons, 75 to 82°F, gentle flow and dense plants.",
+    "date": "2026-10-31",
+    "category": "Fish",
+    "categories": [
+      "Fish"
+    ],
+    "tags": [
+      "Ember Tetra",
+      "Tank Setup",
+      "Filtration",
+      "Aquarium Care",
+      "Care Tips",
+      "Fish Care"
+    ],
+    "readTime": 6,
+    "difficulty": "Beginner",
+    "image": "/assets/images/ember-tetra-tank-setup.jpg",
+    "imageAlt": "A heavily planted aquarium with a dark substrate and a school of small orange ember tetras",
+    "emoji": "🐠",
+    "lastReviewed": "2026-10-31",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What size tank do ember tetras need?",
+        "a": "A 10-gallon tank for a school of 10, on a base of roughly 18 x 12 inches (45 x 30 cm) or the equivalent. A 5-gallon only works with a smaller school, and 10 or more is the group to aim for."
+      },
+      {
+        "q": "What temperature do ember tetras need?",
+        "a": "75 to 82°F (24 to 28°C), held steady by a heater. 82°F is the top of the range, so set the heater inside it and never above it."
+      },
+      {
+        "q": "What water chemistry do ember tetras need?",
+        "a": "Soft, acidic to neutral water: pH 5.0 to 7.0 and a hardness of 1 to 10 dGH. Ammonia and nitrite both need to read zero in a fully cycled tank before the school goes in."
+      },
+      {
+        "q": "Do ember tetras need a planted tank?",
+        "a": "Yes. Ember tetras are best kept in a heavily planted tank over a dark substrate, with floating plants as a useful addition and filtration kept gentle."
+      }
+    ],
+    "relatedProducts": [
+      "tank-10-gallon",
+      "submersible-aquarium-heater",
+      "sponge-filter",
+      "water-conditioner"
+    ],
+    "factFile": false,
+    "animalDay": null,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 5,
+    "headingCount": 8,
+    "ledeMatchesExcerpt": false
+  },
+  {
     "path": "/content/guides/emperor-scorpion-cost-guide.mdx",
     "slug": "emperor-scorpion-cost-guide",
     "title": "How Much Does an Emperor Scorpion Really Cost?",

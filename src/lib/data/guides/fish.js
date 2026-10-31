@@ -58,7 +58,13 @@ export const fishGuides = fillCostTokens([
           sources: ["cardinal-tetra-tank-setup-guide", "cardinal-tetra-tank-setup-guide", "cardinal-tetra-tank-setup-guide", null],
           ranges: { tempF: [77, 82], ph: [5.0, 7.0] },
         },
-        { name: "Ember Tetra", planned: true },
+        {
+          id: "ember-tetra",
+          name: "Ember Tetra",
+          values: ["10-gallon for 10", "75 to 82°F", "5.0 to 7.0", "0.8 in"],
+          sources: ["ember-tetra-tank-setup-guide", "ember-tetra-tank-setup-guide", "ember-tetra-tank-setup-guide", null],
+          ranges: { tempF: [75, 82], ph: [5.0, 7.0] },
+        },
         { name: "Rummy-Nose Tetra", planned: true },
         { name: "Black Skirt Tetra", planned: true },
         { name: "Glowlight Tetra", planned: true },
@@ -606,6 +612,93 @@ export const fishGuides = fillCostTokens([
       { q: "What size tank does a discus need?", a: "55 gallons is commonly cited as the practical minimum for a small group, though several experienced sources push that to 75 gallons or more, since a 55-gallon tank forces noticeably more frequent water changes to keep pace with this species' bioload. Taller tanks are preferred over long, low ones given this fish's body shape." },
       { q: "What temperature do discus need?", a: "82 to 86\u00B0F, warmer than nearly every other common community fish, warm enough that it narrows the tankmate list. Wild Heckel discus take water closer to 90\u00B0F, but 82 to 86\u00B0F is the standard target for captive-bred fish." },
       { q: "How often should I feed my discus?", a: "Adults 2 to 3 times a day, in small amounts they clear within a few minutes, rather than one large daily meal. Discus have a short gut for their body size, and smaller, more frequent meals suit that digestive setup better than a single big feeding." },
+    ],
+  },
+  {
+    id: "ember-tetra",
+    name: "Ember Tetra",
+    emoji: "🐠",
+    difficulty: "Beginner",
+    petType: "Fish",
+    image: "/assets/guides/ember-tetra.jpg",
+    tagline: "The tiny orange schooler that glows like a coal against dark plants!",
+    seoTitle: "Ember Tetra Care Guide: Tank, School, and Health",
+    seoDescription: "Ember tetras need a school of ten in a planted 10-gallon tank. Set up soft water at 75 to 82°F, feed a tiny mouth, and treat ich without the heat cure.",
+    funFact: "Ember tetras are named for Amanda Bleher, a German limnologist whose son collected the first specimens, and in the Araguaia basin of central Brazil where they live, people call them foguinhos: little fires.",
+    // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
+    // deep dive named in its `source`, and that article is where it changes; the
+    // hub keeps no number of its own. Adult size comes from the encyclopedia
+    // entry, which no deep dive repeats. Water changes and the power outage
+    // rule cite the shared aquarium guides. The emergency card follows the
+    // health guide's own three groups: test the water first and start ich
+    // treatment today (callNow), watch and recheck tomorrow (soon). Built
+    // 2026-10-31 with the ember tetra set (research: EMBER_TETRA_RESEARCH.md).
+    layout: "router",
+    firstWeek: {
+      intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
+      rows: [
+        { label: "How many", value: "Ten is the target, with 8 to 10 as the least to buy.", source: "ember-tetra-handling-guide" },
+        { label: "Tank size", value: "A 10-gallon tank on a base of roughly 18 x 12 inches (45 x 30 cm) for a school of 10. A 5-gallon only works with a smaller school.", source: "ember-tetra-tank-setup-guide" },
+        { label: "Temperature", value: "75 to 82°F (24 to 28°C), held steady by a heater. 82°F is the top of the range, so set the heater inside it and never above it.", source: "ember-tetra-tank-setup-guide" },
+        { label: "Water chemistry", value: "Soft, acidic to neutral water: pH 5.0 to 7.0 and a hardness of 1 to 10 dGH.", source: "ember-tetra-tank-setup-guide" },
+        { label: "Cycle first", value: "Ammonia and nitrite both read zero in a fully cycled tank before the school goes in.", source: "ember-tetra-tank-setup-guide" },
+        { label: "Plants and filtration", value: "Heavily planted over a dark substrate, with floating plants as a useful addition and filtration kept gentle.", source: "ember-tetra-tank-setup-guide" },
+        { label: "Diet", value: "Micro-pellets or flake crushed fine as the staple, plus small live or frozen foods such as baby brine shrimp, daphnia, cyclops and moina. At about 0.8 inch, they need tiny, slow-sinking food.", source: "ember-tetra-feeding-guide" },
+        { label: "Feeding schedule", value: "Once or twice a day, a small pinch the school finishes before it settles on the substrate.", source: "ember-tetra-feeding-guide" },
+        { label: "Acclimation", value: "Lights off, then mix tank water into the bag over 30 to 60 minutes. Net the fish across, discard the bag water, and check the bag, net and floor for a missing fish.", source: "ember-tetra-handling-guide" },
+        { label: "Tankmates", value: "Very peaceful, and easily outcompeted by boisterous or much larger fish. Adult dwarf shrimp are safe; shrimplets are not.", source: "ember-tetra-handling-guide" },
+        { label: "Quarantine", value: "At least 30 days in a separate tank before new fish join an established school.", source: "ember-tetra-health-issues-guide" },
+        { label: "Ich", value: "No heat cure: most strains die above 86°F and the ember's range tops out at 82°F. Warm only to 82°F and let salt, about a tablespoon per 5 gallons, or an ich medication do the killing.", source: "ember-tetra-health-issues-guide" },
+        { label: "Water changes", value: "25 to 30% weekly from the substrate, with conditioned water at tank temperature. Test nitrate first: under 20 ppm the routine is right, past 40 ppm the next change is 50%.", source: "aquarium-water-changes-guide" },
+        { label: "Budget", value: "About $2.50 to $3.50 a fish, %%animal:ember-tetra%% for a school of 10 before shipping. Setup roughly %%setup:ember-tetra%%.", source: "ember-tetra-cost-guide" },
+        { label: "Lifespan", value: "About 2 to 4 years in captivity.", source: "ember-tetra-cost-guide" },
+        { label: "Adult size", value: "About 0.8 inch (2 cm) standard length." },
+        { label: "Power outage", value: "Oxygen is the threat, not darkness. Unplug the filter rather than letting it sit dead in the water, and keep the surface moving.", source: "aquarium-power-outage-and-transport-guide" },
+      ],
+    },
+    emergencyCard: {
+      source: "ember-tetra-health-issues-guide",
+      heading: "Test ammonia and nitrite first, then act on these today.",
+      callNow: [
+        "Gasping at the surface or breathing fast",
+        "Two or more fish showing the same sign at once",
+        "A fish found dead: take the body out before anything else",
+        "White spots like grains of salt on the body or fins: start ich treatment today",
+        "Fast breathing that continues once the water tests clean: ich can infect the gills",
+      ],
+      soonHeading: "Watch closely and check again tomorrow.",
+      soon: [
+        "Flashing: rubbing against plants, glass or substrate",
+        "A fish off its food or hanging listless",
+        "Extra mucus on the skin",
+        "Color fading to dull",
+      ],
+      vetLine: "Most of what goes wrong starts in the water or arrives with a new fish, so test first and quarantine every newcomer.",
+    },
+    routes: [
+      { slug: "ember-tetra-cost-guide", line: "$2.50 to $3.50 a fish, why the school is bought ten at a time, and the %%setup:ember-tetra%% that goes into the tank around them." },
+      { slug: "ember-tetra-tank-setup-guide", line: "Ten gallons for ten fish, soft water at 75 to 82°F, gentle flow, and the dense planting this species is kept in." },
+      { slug: "ember-tetra-feeding-guide", line: "Food for a 0.8-inch fish, once or twice a day, and what fry eat first." },
+      { slug: "ember-tetra-handling-guide", line: "Netting, bagging and an acclimation that takes 30 to 60 minutes, plus the school size and the tankmates that work." },
+      { slug: "ember-tetra-health-issues-guide", line: "Why the ich heat cure stops at 82°F, the 30-day quarantine, and the signs that need action today." },
+      { slug: "ember-tetra-enrichment-guide", line: "How a shoal hides from above in clear Brazilian water, and the cover and food that bring the same behavior out in a tank." },
+    ],
+    buyList: [
+      "10-gallon tank for a school of ten",
+      "Ten ember tetras",
+      "Aquarium heater",
+      "Sponge filter or a baffled hang-on-back",
+      "Dark sand",
+      "Dense live plants and floating plants",
+      "Liquid water test kit",
+      "Water conditioner",
+      "Micro or nano pellet, or a tropical flake to crush",
+      "Frozen baby brine shrimp or daphnia",
+    ],
+    faqs: [
+      { q: "What size tank do ember tetras need?", a: "A 10-gallon tank for a school of 10, on a base of roughly 18 x 12 inches (45 x 30 cm) or the equivalent. A 5-gallon only works with a smaller school, and 10 or more is the group to aim for." },
+      { q: "How often should I feed ember tetras?", a: "Once or twice a day, a small pinch each time that the school finishes before it settles on the substrate. Small live or frozen food can be one of those meals every day." },
+      { q: "Can you treat ich in ember tetras with heat?", a: "Not with heat alone. Most ich strains die above 86°F, and the ember tetra's range tops out at 82°F. Warm the tank slowly to 82°F with an air stone running, which speeds up the parasite's cycle, and let aquarium salt at about a tablespoon per 5 gallons or an ich medication do the killing." },
     ],
   },
   {

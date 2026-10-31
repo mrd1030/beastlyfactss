@@ -11,7 +11,21 @@ Every fact on the site resolves its own photo. The 11 facts that were
 borrowing another page's photo got their own on 2026-10-18.
 
 The five October heroes and the five parked facts all landed the same day.
-`check-images.mjs` passes on 1,674 referenced paths.
+
+### Ember tetra set (added 2026-10-31, branch claude/sudden-spike-investigation-8xhpsf)
+
+The ember tetra hub, encyclopedia entry and six guides reference seven photos
+that do not exist yet. The set does not merge to main until every one is on
+disk and the owner has approved each (source, author, license, slot).
+One source photo per slot; the hub and encyclopedia entry share one.
+
+- Hub and encyclopedia head (3:2, 1168x784): `/assets/guides/ember-tetra.jpg`
+- Cost guide hero (3:2, 1600x1067): `/assets/images/ember-tetra-cost.jpg`
+- Tank setup guide hero: `/assets/images/ember-tetra-tank-setup.jpg`
+- Feeding guide hero: `/assets/images/ember-tetra-feeding.jpg`
+- Handling guide hero: `/assets/images/ember-tetra-handling.jpg`
+- Health issues guide hero: `/assets/images/ember-tetra-health-issues.jpg`
+- Enrichment guide hero: `/assets/images/ember-tetra-enrichment.jpg`
 
 ## Replacing the Adobe Stock photos (started 2026-10-20)
 
