@@ -84,6 +84,20 @@ export const fishEncyclopedia = [
     },
   },
   {
+    id: "ember-tetra", name: "Ember Tetra", scientific: "Hyphessobrycon amandae",
+    category: "Fish", emoji: "🐠", difficulty: "Beginner", guideId: "ember-tetra", available: true, image: "/assets/guides/ember-tetra.jpg",
+    bio: {
+      overview: "The ember tetra is a tiny orange-red schooling fish from the Araguaia River basin in central Brazil, reaching only about 0.8 inch. It is very peaceful and does poorly beside boisterous or much larger fish, which makes it a natural fit for small, densely planted tanks and a calm dither fish for dwarf cichlids. It is also sold as the fire tetra and the red tetra.",
+      origin: "Araguaia River basin, central Brazil",
+      habitat: "Thought to favor minor tributaries, backwaters and oxbow lakes over main channels, in soft, weakly acidic water among dense plants",
+      adultSize: "About 0.8 inch (2 cm) standard length",
+      wildDiet: "Probably tiny invertebrates and other zooplankton",
+      wildLifespan: "Not documented in the wild; about 2-4 years in captivity",
+      conservation: "Least Concern (IUCN)",
+      history: "Géry and Uj described the species in 1987 from the Rio das Mortes, a tributary of the Araguaia, where the ornamental fish wholesaler Heiko Bleher collected the type specimen. They named it for his mother, Amanda Bleher, a German limnologist who lived from 1910 to 1991, which is why the name ends in -ae rather than -i. In the Araguaia basin its local name is foguinho, Portuguese for little fire.",
+    },
+  },
+  {
     id: "goldfish", name: "Goldfish", scientific: "Carassius auratus",
     category: "Fish", emoji: "🐟", difficulty: "Beginner", guideId: "goldfish", available: true, image: "/assets/guides/goldfish.jpg",
     bio: {
