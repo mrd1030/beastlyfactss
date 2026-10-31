@@ -1,0 +1,23 @@
+[
+  { "out": "fact-295-barreleye", "image": "public/assets/facts/barreleye-fish.jpg", "kicker": "Wild animal fact", "title": "A barreleye fish can see out through its own transparent head" },
+  { "out": "fact-220-clownfish", "image": "public/assets/facts/clownfish-6.jpg", "kicker": "Wild animal fact", "title": "A clownfish turns down a sugar in its slime so anemones never sting it" },
+  { "out": "fact-296-basilisk", "image": "public/assets/facts/basilisk-lizard.jpg", "kicker": "Wild animal fact", "title": "A basilisk lizard sprints 15 feet across water on its hind legs" },
+  { "out": "fact-297-discus", "image": "public/assets/facts/discus.jpg", "kicker": "Wild animal fact", "title": "Baby discus fish eat the slime off their parents' skin" },
+  { "out": "fact-231-dung-beetle", "image": "public/assets/facts/dung-beetle-4.jpg", "kicker": "Wild animal fact", "title": "Dung beetles steer by the Milky Way, tested in a planetarium" },
+  { "out": "fact-262-anaconda", "image": "public/assets/facts/green-anaconda-3.jpg", "kicker": "Wild animal fact", "title": "A green anaconda gives birth to up to 40 live babies in the water" },
+  { "out": "fact-240-cat", "image": "public/assets/facts/cat-10.jpg", "kicker": "Wild animal fact", "title": "A hungry cat hides a baby's cry inside its purr" },
+  { "out": "fact-305-cherry-shrimp", "image": "public/assets/facts/cherry-shrimp.jpg", "kicker": "Wild animal fact", "title": "A cherry shrimp eats its own shed shell to get the nutrients back" },
+  { "out": "fact-252-tiger", "image": "public/assets/facts/tiger-2.jpg", "kicker": "Wild animal fact", "title": "A shaved tiger is still striped, the pattern is in its skin" },
+  { "out": "fact-246-honeybee", "image": "public/assets/facts/honeybee-4.jpg", "kicker": "Wild animal fact", "title": "A honeybee swarm picks a new home without counting any votes" },
+  { "out": "fact-312-red-footed-tortoise", "image": "public/assets/facts/red-footed-tortoise.jpg", "kicker": "Wild animal fact", "title": "A male red-footed tortoise clucks like a chicken when courting" },
+  { "out": "fact-342-sea-otter", "image": "public/assets/facts/sea-otter-3.jpg", "kicker": "Wild animal fact", "title": "A sea otter has a skin pocket under each arm for carrying clams" },
+  { "out": "fact-331-numbat", "image": "public/assets/facts/numbat.jpg", "kicker": "Wild animal fact", "title": "A numbat can eat 20,000 termites in a single day" },
+  { "out": "fact-113-narwhal", "image": "public/assets/facts/narwhal-2.jpg", "kicker": "Wild animal fact", "title": "A narwhal's tusk is a nine-foot tooth that senses the water" },
+  { "question": 16, "out": "question-16-ferret" },
+  { "question": 49, "out": "question-49-veiled-chameleon" },
+  { "question": 15, "out": "question-15-cockatiel" },
+  { "question": 14, "out": "question-14-husky" },
+  { "question": 13, "out": "question-13-german-shepherd" },
+  { "question": 12, "out": "question-12-ball-python" },
+  { "question": 28, "out": "question-28-african-grey" }
+]

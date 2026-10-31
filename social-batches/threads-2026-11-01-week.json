@@ -1,0 +1,250 @@
+{
+  "platform": "threads",
+  "posts": [
+    {
+      "type": "question",
+      "date": "2026-11-01 09:00",
+      "text": "The first #pet that was actually your job, not the family dog your parents fed. What was it?",
+      "comments": [
+        "Mine was a hamster that I was sure would live forever. It did not, and I learned more from that than from any dog."
+      ],
+      "planned_reply": "What did it teach you that the next pet benefited from?"
+    },
+    {
+      "type": "text",
+      "date": "2026-11-01 12:00",
+      "text": "The barreleye #fish has a clear head and eyes that sit inside it like two green tubes. Everyone assumed they pointed straight up, forever. Turns out they swivel.",
+      "reply_card": "https://pins.beastlyfacts.com/fact-295-barreleye-4x5.jpg",
+      "planned_reply": "Deep sea, about 2,000 feet down. The dome may be armor for stealing prey from stinging tentacles."
+    },
+    {
+      "type": "text",
+      "date": "2026-11-01 16:00",
+      "text": "Clownfish do not get stung because they cheat. Anemones fire at a sugar, and the #fish turns that sugar down in its skin slime only. Everywhere else in its body, normal levels.",
+      "reply_card": "https://pins.beastlyfacts.com/fact-220-clownfish-4x5.jpg",
+      "planned_reply": "Anemone slime has almost none of the sugar either. The fish seems to be copying the anemone's own trick."
+    },
+    {
+      "type": "text",
+      "date": "2026-11-01 20:00",
+      "text": "Did you know? A bull #moose regrows its antlers from scratch every year: three to five months of growth, up to five feet across and 77 pounds, then they drop.",
+      "source": "https://www.nps.gov/romo/learn/nature/moose.htm"
+    },
+    {
+      "type": "text",
+      "date": "2026-11-01 22:00",
+      "text": "Fun Fact: A #walrus gets out of the water with its teeth. It jams its tusks into the ice and hauls itself up onto the floe.",
+      "source": "https://www.noaa.gov/office-education/celc/podcast/episode3"
+    },
+    {
+      "type": "question",
+      "date": "2026-11-02 09:00",
+      "text": "The #pet upgrade you put off the longest and then wished you'd done on day one. Bigger tank, better lamp, a second litter box, what was it?",
+      "comments": [
+        "A thermostat on the heat mat. Should have been bought with the mat, not a year later."
+      ],
+      "planned_reply": "How long did you put it off, and what finally made you do it?"
+    },
+    {
+      "type": "text",
+      "date": "2026-11-02 12:00",
+      "text": "A basilisk #lizard runs across water for about 15 feet before it sinks. Each foot slaps down, traps a pocket of air, and the lizard is gone before the pocket closes.",
+      "reply_card": "https://pins.beastlyfacts.com/fact-296-basilisk-4x5.jpg",
+      "planned_reply": "About 5 feet a second, on its hind legs only. Then it swims the rest."
+    },
+    {
+      "type": "text",
+      "date": "2026-11-02 16:00",
+      "text": "Discus parents feed their fry with their own skin. Both of them ooze a mucus the babies bite off, for up to a month, and it carries antibodies like a mammal's first milk. #aquarium",
+      "reply_card": "https://pins.beastlyfacts.com/fact-297-discus-4x5.jpg",
+      "planned_reply": "Then they wean them, about three weeks after the fry go free-swimming. Keepers who breed discus have seen the shaking-off."
+    },
+    {
+      "type": "text",
+      "date": "2026-11-02 20:00",
+      "text": "Did you know? A #tapir's nose is a mini trunk and a snorkel. It strips leaves with it on land, and underwater it stays down for minutes with just the tip poking up.",
+      "source": "https://lazoo.org/explore-your-zoo/our-animals/mammals/bairds-tapir/"
+    },
+    {
+      "type": "text",
+      "date": "2026-11-02 22:00",
+      "text": "Fun Fact: A #porcupine has about 30,000 quills with 700 to 800 tiny barbs on each, plus an antibiotic in its skin for the days it falls out of a tree and quills itself.",
+      "source": "https://www.smithsonianmag.com/blogs/national-zoo-conservation-biology-institute/2026/10/06/11-fascinating-facts-about-north-american-porcupines/"
+    },
+    {
+      "type": "question",
+      "date": "2026-11-03 09:00",
+      "text": "The toy that outlasted every expensive one. Usually a bottle cap or a cardboard box. What is it for your #pet?",
+      "comments": [
+        "A crumpled receipt. Three years, still the favorite."
+      ],
+      "planned_reply": "What did the expensive one cost, and how long did it last?"
+    },
+    {
+      "type": "text",
+      "date": "2026-11-03 12:00",
+      "text": "Dung #beetles steer by the Milky Way, and we know because someone took them into a planetarium. Milky Way on, stars off: they found the exit fast. Stars on, Milky Way off: lost.",
+      "reply_card": "https://pins.beastlyfacts.com/fact-231-dung-beetle-4x5.jpg",
+      "planned_reply": "Their eyes cannot pick out single stars at all. The whole galaxy reads as one bright smear, and that is enough."
+    },
+    {
+      "type": "text",
+      "date": "2026-11-03 16:00",
+      "text": "No eggs for a green anaconda. The female gives birth in the water, 20 to 40 live #snakes at once, record 82, and then takes a year off.",
+      "reply_card": "https://pins.beastlyfacts.com/fact-262-anaconda-4x5.jpg",
+      "planned_reply": "Bigger females, bigger litters. The females are much larger than the males to start with."
+    },
+    {
+      "type": "text",
+      "date": "2026-11-03 20:00",
+      "text": "Did you know? A beluga #whale can change the shape of its forehead. The melon is a lump of fat it reshapes, and scientists think that aims the sonar it uses to find breathing holes in the ice.",
+      "source": "https://oceantoday.noaa.gov/animalsoftheice_belugawhale"
+    },
+    {
+      "type": "text",
+      "date": "2026-11-03 22:00",
+      "text": "Fun Fact: The northern short-tailed #shrew is venomous. Its saliva carries a toxin strong enough to subdue prey bigger than the shrew, the most potent venom known in its whole group.",
+      "source": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7486961"
+    },
+    {
+      "type": "question",
+      "date": "2026-11-04 09:00",
+      "text": "Post the best photo you've ever taken of your #pet. No new photos, the archive only.",
+      "comments": [
+        "Ours is a bearded dragon mid-yawn, taken by accident while checking the thermometer."
+      ],
+      "planned_reply": "What were you actually trying to photograph when you got it?"
+    },
+    {
+      "type": "text",
+      "date": "2026-11-04 12:00",
+      "text": "Your #cat has a second purr for when it wants food. Same low rumble, with a high note hidden inside, right where a human baby cries. People hear it as urgent even if they have never owned a cat.",
+      "reply_card": "https://pins.beastlyfacts.com/fact-240-cat-4x5.jpg",
+      "planned_reply": "Does yours do it at the same time every morning? The study cats only used it when asking for food."
+    },
+    {
+      "type": "text",
+      "date": "2026-11-04 16:00",
+      "text": "A cherry #shrimp sheds its shell to grow, then eats the shell. Nothing in that molt goes to waste, so leave it in the tank.",
+      "reply_card": "https://pins.beastlyfacts.com/fact-305-cherry-shrimp-4x5.jpg",
+      "planned_reply": "Every arthropod grows that way. The shrimp just happens to recycle the leftovers."
+    },
+    {
+      "type": "text",
+      "date": "2026-11-04 20:00",
+      "text": "Did you know? A #beaver's front teeth never stop growing, and the enamel has iron built into it. Gnawing all day is what keeps them the right length.",
+      "source": "https://nationalzoo.si.edu/animals/news/8-facts-celebrate-international-beaver-day"
+    },
+    {
+      "type": "text",
+      "date": "2026-11-04 22:00",
+      "text": "Fun Fact: A #raccoon's paws get more sensitive when they are wet. In nerve recordings, a wet paw fired more readily and felt lighter touches.",
+      "source": "https://pubmed.ncbi.nlm.nih.gov/3797915/"
+    },
+    {
+      "type": "question",
+      "date": "2026-11-05 09:00",
+      "text": "Nobody calls their #pet by its real name. How many nicknames does yours have, and which one does it actually answer to?",
+      "comments": [
+        "Four here. He answers to none of them, but he does answer to the fridge door."
+      ],
+      "planned_reply": "Does it ever answer to the real one anymore?"
+    },
+    {
+      "type": "text",
+      "date": "2026-11-05 12:00",
+      "text": "Shave a #tiger and the stripes are still there. The pattern is in the skin. Vets who do it for surgery say it looks tattooed.",
+      "reply_card": "https://pins.beastlyfacts.com/fact-252-tiger-4x5.jpg",
+      "planned_reply": "No two tigers match, which is how camera traps count them in the wild: stripe pattern as fingerprint."
+    },
+    {
+      "type": "text",
+      "date": "2026-11-05 16:00",
+      "text": "A #honeybee swarm never counts votes. The moment about 15 scouts are at one site together, they tell the swarm to warm up for takeoff, even with other scouts still dancing for somewhere else.",
+      "reply_card": "https://pins.beastlyfacts.com/fact-246-honeybee-4x5.jpg",
+      "planned_reply": "And it works. Given one good site among four bad ones, the swarms almost always chose the good one."
+    },
+    {
+      "type": "text",
+      "date": "2026-11-05 20:00",
+      "text": "Did you know? The streaked tenrec talks with its quills. Muscles under the skin rub a patch of spines together, at pitches from 2 to 80 kilohertz, mostly above what any human can hear. #mammal",
+      "source": "https://repository.si.edu/server/api/core/bitstreams/989d5517-81c5-4257-9305-9371617a7375/content"
+    },
+    {
+      "type": "text",
+      "date": "2026-11-05 22:00",
+      "text": "Fun Fact: The hellbender, North America's biggest #salamander, breathes through its skin. The loose folds down its sides pull oxygen from the water; the lungs mostly keep it afloat.",
+      "source": "https://www.smithsonianmag.com/blogs/national-zoo-conservation-biology-institute/2026/08/06/11-fascinating-facts-about-the-hellbender-north-americas-largest-amphibian/"
+    },
+    {
+      "type": "question",
+      "date": "2026-11-06 09:00",
+      "text": "Everyone starts with a wrong idea about their #pets. What did you believe about your pet's species that turned out to be completely wrong?",
+      "comments": [
+        "That a snake skipping meals was an emergency. A healthy ball python can skip for months."
+      ],
+      "planned_reply": "Where did the wrong idea come from, a pet store or the internet?"
+    },
+    {
+      "type": "text",
+      "date": "2026-11-06 12:00",
+      "text": "Male red-footed tortoises cluck. During courtship it sounds like a chicken, from a #tortoise everyone assumes is silent.",
+      "reply_card": "https://pins.beastlyfacts.com/fact-312-red-footed-tortoise-4x5.jpg",
+      "planned_reply": "Keepers at San Francisco Zoo hear it every breeding season. Has anyone here heard their own do it?"
+    },
+    {
+      "type": "text",
+      "date": "2026-11-06 16:00",
+      "text": "A sea #otter has pockets. Loose skin under each arm, so one dive can bring up several clams at once, and the paws stay free to keep hunting.",
+      "reply_card": "https://pins.beastlyfacts.com/fact-342-sea-otter-4x5.jpg",
+      "planned_reply": "Then it floats on its back and uses its chest as the dinner table."
+    },
+    {
+      "type": "text",
+      "date": "2026-11-06 20:00",
+      "text": "Did you know? Bull #elk bugle in September and October, a loud wailing call that opens the mating season. Dawn and dusk are when you hear it.",
+      "source": "https://www.nps.gov/wica/learn/nature/elk.htm"
+    },
+    {
+      "type": "text",
+      "date": "2026-11-06 22:00",
+      "text": "Fun Fact: A giant #anteater has no teeth and a two-foot tongue anchored to its breastbone, flicked up to 150 times a minute. It takes about 140 insects from a mound, then moves on.",
+      "source": "https://nationalzoo.si.edu/animals/giant-anteater"
+    },
+    {
+      "type": "question",
+      "date": "2026-11-07 09:00",
+      "text": "#Birds talk when nobody's listening. What does yours say that it should never have learned?",
+      "comments": [
+        "A friend's grey does the microwave beep so well the family keeps checking the kitchen."
+      ],
+      "planned_reply": "Who taught it, and do they admit it?"
+    },
+    {
+      "type": "text",
+      "date": "2026-11-07 12:00",
+      "text": "A numbat eats up to 20,000 termites a day, a tenth of its own weight, with a tongue that reaches 5 cm past its nose. World Numbat Day, and a few hundred of these #marsupials are left.",
+      "reply_card": "https://pins.beastlyfacts.com/fact-331-numbat-4x5.jpg",
+      "planned_reply": "It is the only marsupial awake all day and asleep all night, because that is when termites are up."
+    },
+    {
+      "type": "text",
+      "date": "2026-11-07 16:00",
+      "text": "The narwhal's tusk is a tooth, nine feet long, growing out of one side of its face, and it can feel. Different saltiness in the water changes the #whale's heart rate.",
+      "reply_card": "https://pins.beastlyfacts.com/fact-113-narwhal-4x5.jpg",
+      "planned_reply": "Researchers mapped the nerve path from tusk to brain. A tooth, not a horn."
+    },
+    {
+      "type": "text",
+      "date": "2026-11-07 20:00",
+      "text": "Did you know? The colugo is the best glider of any #mammal. It drops out of the canopy, sails more than two football fields, and can turn 90 degrees in the air before landing on a trunk.",
+      "source": "https://newsarchive.berkeley.edu/news/media/releases/2008/02/07_colugo.shtml"
+    },
+    {
+      "type": "text",
+      "date": "2026-11-07 22:00",
+      "text": "Fun Fact: A #muskrat chews underwater with its mouth sealed. Its lips close behind the front teeth, and it can stay under for up to 20 minutes.",
+      "source": "https://portal.ct.gov/-/media/deep/wildlife/pdf_files/outreach/fact_sheets/muskratpdf.pdf"
+    }
+  ]
+}

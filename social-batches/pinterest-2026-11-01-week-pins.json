@@ -1,0 +1,321 @@
+[
+  {
+    "out": "fact-seahorse-dads-pregnant",
+    "image": "public/assets/facts/seahorse.jpg",
+    "kicker": "Wild animal fact",
+    "title": "Seahorse Dads Do the Pregnancy"
+  },
+  {
+    "out": "fact-platypus-lays-eggs",
+    "image": "public/assets/facts/platypus.jpg",
+    "kicker": "Wild animal fact",
+    "title": "A Mammal That Lays Eggs"
+  },
+  {
+    "out": "fact-pangolin-only-scaled-mammal",
+    "image": "public/assets/facts/pangolin.jpg",
+    "kicker": "Wild animal fact",
+    "title": "The Only Mammal With Scales"
+  },
+  {
+    "out": "fact-sea-otters-rarely-hold-paws",
+    "image": "public/assets/facts/sea-otter.jpg",
+    "kicker": "Wild animal fact",
+    "title": "Sea Otters Rarely Hold Paws"
+  },
+  {
+    "out": "fact-tardigrade-minus-459",
+    "image": "public/assets/facts/tardigrade.jpg",
+    "kicker": "Wild animal fact",
+    "title": "Water Bears Survive Minus 459 F"
+  },
+  {
+    "out": "fact-numbat-20000-termites",
+    "image": "public/assets/facts/numbat.jpg",
+    "kicker": "Wild animal fact",
+    "title": "A Numbat Eats 20,000 Termites Daily"
+  },
+  {
+    "layout": "checklist",
+    "out": "mouse-cage-checklist",
+    "image": "public/assets/images/mouse-tank-setup.jpg",
+    "kicker": "Cage checklist",
+    "title": "Pet Mouse Cage Checklist",
+    "items": [
+      "A wire cage, not a glass tank",
+      "Bar spacing checked first",
+      "Bedding shallower than you'd guess",
+      "A solid-surface wheel",
+      "Nest material and a hide, two jobs",
+      "A draft-free, room-temp spot"
+    ],
+    "cta": "Sizes and spacing at"
+  },
+  {
+    "layout": "checklist",
+    "out": "parrotlet-cage-checklist",
+    "image": "public/assets/images/parrotlet-tank-setup.jpg",
+    "kicker": "Cage checklist",
+    "title": "Parrotlet Cage Checklist",
+    "items": [
+      "A cage sized for a bigger bird",
+      "Bars tighter than a lovebird's",
+      "Safe cage materials",
+      "Steady room temperature",
+      "Paper lining, not sand",
+      "A real day and night cycle",
+      "Perches, toys and foraging"
+    ],
+    "cta": "Sizes and spacing at"
+  },
+  {
+    "layout": "feeding",
+    "out": "hognose-what-they-eat",
+    "image": "public/assets/images/hognose-snake-feeding.jpg",
+    "kicker": "Feeding guide",
+    "title": "What Do Hognose Snakes Eat?",
+    "tiers": [
+      {
+        "label": "Staple",
+        "foods": "Thawed mice sized to the snake"
+      },
+      {
+        "label": "Sometimes",
+        "foods": "Small rats for big adults, chicks for a refuser"
+      },
+      {
+        "label": "Avoid",
+        "foods": "Live prey, a hatchling schedule for an adult"
+      }
+    ],
+    "cta": "Sizes and schedules at"
+  },
+  {
+    "layout": "checklist",
+    "out": "zebra-finch-cage-checklist",
+    "image": "public/assets/images/zebra-finch-tank-setup.jpg",
+    "kicker": "Cage checklist",
+    "title": "Zebra Finch Cage Checklist",
+    "items": [
+      "A pair or small group, never solo",
+      "A wide cage, not a tall one",
+      "Bar spacing for a tiny bird",
+      "Steady room temperature",
+      "A real light and dark cycle",
+      "Perches at several heights",
+      "A shallow bath dish"
+    ],
+    "cta": "Sizes and the group rule at"
+  },
+  {
+    "layout": "checklist",
+    "out": "ghost-shrimp-tank-checklist",
+    "image": "public/assets/images/ghost-shrimp-tank-setup.jpg",
+    "kicker": "Tank checklist",
+    "title": "Ghost Shrimp Tank Checklist",
+    "items": [
+      "A small tank, cycled first",
+      "Heater for a steady temperature",
+      "Stable, tested water chemistry",
+      "A sponge filter, no open intake",
+      "Fine substrate",
+      "Plants and hiding spots",
+      "Tankmates that cannot eat them"
+    ],
+    "cta": "Temps and tankmates at"
+  },
+  {
+    "layout": "checklist",
+    "out": "flying-squirrel-cage-checklist",
+    "image": "public/assets/images/flying-squirrel-tank-setup.jpg",
+    "kicker": "Cage checklist",
+    "title": "Flying Squirrel Cage Checklist",
+    "items": [
+      "A tall cage, height over floor",
+      "Bar spacing for a tiny body",
+      "Warm, steady temperature",
+      "A nest box up high",
+      "Climbing branches top to bottom",
+      "Bedding that handles moisture",
+      "Dim light for a night animal"
+    ],
+    "cta": "Sizes and temps at"
+  },
+  {
+    "layout": "legal",
+    "out": "two-toed-sloth-legal-question",
+    "image": "public/assets/guides/two-toed-sloth-legal.jpg",
+    "kicker": "Exotic pet laws",
+    "title": "Can You Own a Two-Toed Sloth?",
+    "hook": "Most lists never mention it.",
+    "items": [
+      "Where it's banned by name",
+      "Where you need a permit",
+      "Where it's legal by silence"
+    ],
+    "cta": "State by state at"
+  },
+  {
+    "layout": "legal",
+    "out": "asian-otter-legal-question",
+    "image": "public/assets/guides/asian-small-clawed-otter-legal.jpg",
+    "kicker": "Exotic pet laws",
+    "title": "Can You Own an Otter?",
+    "hook": "The border closed in 2019.",
+    "items": [
+      "Where the family name bans it",
+      "Where you need a permit",
+      "Why every pet otter is captive-bred"
+    ],
+    "cta": "State by state at"
+  },
+  {
+    "layout": "legal",
+    "out": "wallaby-legal-question",
+    "image": "public/assets/guides/wallaby-legal.jpg",
+    "kicker": "Exotic pet laws",
+    "title": "Can You Own a Wallaby?",
+    "hook": "A marsupial slips most lists.",
+    "items": [
+      "Where it's banned",
+      "Where you need a permit",
+      "Where kangaroo rules reach it"
+    ],
+    "cta": "State by state at"
+  },
+  {
+    "layout": "legal",
+    "out": "red-fox-legal-question",
+    "image": "public/assets/guides/red-fox-legal.jpg",
+    "kicker": "Exotic pet laws",
+    "title": "Can You Own a Red Fox?",
+    "hook": "It is a fur law, not a pet law.",
+    "items": [
+      "Where fur farms can and you cannot",
+      "Where you need a permit",
+      "Where the pedigree decides"
+    ],
+    "cta": "State by state at"
+  },
+  {
+    "layout": "legal",
+    "out": "skunk-legal-question",
+    "image": "public/assets/guides/skunk-legal.jpg",
+    "kicker": "Exotic pet laws",
+    "title": "Can You Own a Skunk?",
+    "hook": "Descenting changes nothing.",
+    "items": [
+      "Where it's banned by name",
+      "Where the rabies list rules",
+      "Where you need a permit"
+    ],
+    "cta": "State by state at"
+  },
+  {
+    "layout": "legal",
+    "out": "black-bear-legal-question",
+    "image": "public/assets/guides/black-bear-legal.jpg",
+    "kicker": "Exotic pet laws",
+    "title": "Can You Own a Black Bear?",
+    "hook": "It is a game animal first.",
+    "items": [
+      "Where it's named with the big cats",
+      "Where the native game bar applies",
+      "What the permits really are"
+    ],
+    "cta": "State by state at"
+  },
+  {
+    "layout": "numbered",
+    "out": "tegu-surprising-facts",
+    "image": "public/assets/images/fun-facts-argentine-tegu.jpg",
+    "kicker": "Fun facts",
+    "title": "10 Surprising Tegu Facts",
+    "items": [
+      "It warms itself like a mammal",
+      "Even in a pitch-dark burrow",
+      "Heart rate more than sextuples"
+    ],
+    "more": "Plus what its muscles are doing",
+    "cta": "All ten, with reasons, at"
+  },
+  {
+    "layout": "cost",
+    "out": "rat-real-cost",
+    "image": "public/assets/images/rat-cost.jpg",
+    "kicker": "Cost guide",
+    "title": "What Pet Rats Really Cost",
+    "hook": "The rats are the cheap part.",
+    "items": [
+      "The cage",
+      "Hammocks",
+      "Hideouts",
+      "A wheel",
+      "Bedding",
+      "Chew toys"
+    ],
+    "cta": "Every price, line by line, at"
+  },
+  {
+    "layout": "numbered",
+    "out": "hissing-cockroach-surprising-facts",
+    "image": "public/assets/images/fun-facts-hissing-cockroach.jpg",
+    "kicker": "Fun facts",
+    "title": "10 Surprising Hissing Cockroach Facts",
+    "items": [
+      "They hiss through the abdomen",
+      "Up to 90 decibels, 12 feet away",
+      "Four different hisses"
+    ],
+    "more": "Plus the horns the males fight with",
+    "cta": "All ten, with reasons, at"
+  },
+  {
+    "layout": "cost",
+    "out": "discus-real-cost",
+    "image": "public/assets/images/discus-cost.jpg",
+    "kicker": "Cost guide",
+    "title": "What Discus Really Cost",
+    "hook": "The fish is not the expensive part.",
+    "items": [
+      "The big tank",
+      "Canister filter",
+      "Heater",
+      "Test kit",
+      "Driftwood, plants",
+      "Pellets"
+    ],
+    "cta": "Every price, line by line, at"
+  },
+  {
+    "layout": "numbered",
+    "out": "betta-surprising-facts",
+    "image": "public/assets/images/fun-facts-betta-fish.jpg",
+    "kicker": "Fun facts",
+    "title": "10 Surprising Betta Fish Facts",
+    "items": [
+      "They breathe air at the surface",
+      "Males build bubble nests",
+      "Named after a warrior clan"
+    ],
+    "more": "Plus why wild bettas look plain",
+    "cta": "All ten, with reasons, at"
+  },
+  {
+    "layout": "cost",
+    "out": "cardinal-tetra-real-cost",
+    "image": "public/assets/images/cardinal-tetra-cost.jpg",
+    "kicker": "Cost guide",
+    "title": "What Cardinal Tetras Really Cost",
+    "hook": "The school is the cost, not the fish.",
+    "items": [
+      "The tank",
+      "Heater",
+      "Gentle filter",
+      "Live plants",
+      "Dark sand",
+      "Test kit"
+    ],
+    "cta": "Every price, line by line, at"
+  }
+]

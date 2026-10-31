@@ -1,0 +1,53 @@
+[
+  {
+    "out": "fact-wombat-cube-poop",
+    "image": "public/assets/facts/wombat.jpg",
+    "kicker": "Wild animal fact",
+    "title": "Wombat Poop Comes Out as Cubes"
+  },
+  {
+    "layout": "checklist",
+    "out": "garter-snake-setup-checklist",
+    "image": "public/assets/images/garter-snake-tank-setup.jpg",
+    "kicker": "Tank checklist",
+    "title": "Garter Snake Setup Checklist",
+    "items": [
+      "36x18x18 inch enclosure, one snake",
+      "A water basin it can swim in",
+      "Thermostat on every heat source",
+      "Basking spot and a cool side",
+      "Coconut fiber or cypress mulch",
+      "Hides on both sides",
+      "Locking lid, every gap sealed"
+    ],
+    "cta": "Sizes, temps and water at"
+  },
+  {
+    "layout": "legal",
+    "out": "kinkajou-legal-question",
+    "image": "public/assets/guides/kinkajou-legal.jpg",
+    "kicker": "Exotic pet laws",
+    "title": "Can You Own a Kinkajou?",
+    "hook": "The raccoon's family decides it.",
+    "items": [
+      "Where it's banned",
+      "Where you need a permit",
+      "Where raccoon rules cover it"
+    ],
+    "cta": "State by state at"
+  },
+  {
+    "layout": "numbered",
+    "out": "octopus-surprising-facts",
+    "image": "public/assets/images/fun-facts-octopus.jpg",
+    "kicker": "Fun facts",
+    "title": "10 Surprising Octopus Facts",
+    "items": [
+      "Three hearts, one stops to swim",
+      "A head brain, a mini one per arm",
+      "A detached arm keeps moving"
+    ],
+    "more": "Plus the one that walks on two arms",
+    "cta": "All ten, with reasons, at"
+  }
+]

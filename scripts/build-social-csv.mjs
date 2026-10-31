@@ -95,8 +95,11 @@ const isWallpaper = (p) => p.type === 'wallpaper';
 // A wallpaper row with no media: the slot is held and the owner fills it in Publer.
 const isPlaceholder = (p) => isWallpaper(p) && !(p.media ?? []).length;
 const isQuestion = (p) => p.type === 'question';
+// A text row (owner, 2026-10-31): the looked-up evening facts on X and
+// Threads, and a Threads fact whose card goes on the reply by hand. No media.
+const isText = (p) => p.type === 'text';
 const WALLPAPER_PLATFORMS = ['x', 'threads'];
-const TYPES = ['wallpaper', 'question'];
+const TYPES = ['wallpaper', 'question', 'text'];
 
 // Publer's bulk template. Fixed order, and the empty ones are not padding, they
 // hold the positions the importer expects.
@@ -178,6 +181,9 @@ function validate(batch, file) {
     // carries an image. On X the question rides its card, exactly one image.
     if (isQuestion(p) && batch.platform === 'threads') {
       if (media.length) err(i, 'a threads question is text only, no media');
+    } else if (isText(p)) {
+      if (media.length) err(i, 'a text row carries no media; drop the type if the post has a card');
+      if (isPin(batch)) err(i, 'text rows run on x and threads only, a pin is always an image');
     } else if (isQuestion(p) && media.length !== 1) {
       err(i, `an x question is the question card plus the text, exactly one image, got ${media.length}`);
     } else if (isPlaceholder(p)) {
@@ -222,7 +228,7 @@ function validate(batch, file) {
     // job. Every other platform gets at least one reply.
     if (isPin(batch)) {
       if (comments.length) err(i, 'pinterest has no reply mechanism, the outbound link does that job, leave comments out');
-    } else if (comments.length === 0 && !isPlaceholder(p)) {
+    } else if (!isText(p) && comments.length === 0 && !isPlaceholder(p)) {
       err(i, 'no comments, every post gets at least one reply');
     }
     comments.forEach(c => {
