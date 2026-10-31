@@ -499,63 +499,63 @@ export default function GuideDetail() {
               );
             })()}
 
-            {/* Keeping tetras together: one line per pair of species, worked
-                out from their temperature and pH ranges at render time. It
-                prints no number: the overlap of two ranges is a figure no
-                guide states, so the line names where in each range the shared
-                tank sits and the species rows above carry the figures. */}
+            {/* Keeping tetras together: one short line per pair of species,
+                plus one for the whole group once there are three or more,
+                worked out from their temperature and pH ranges at render time.
+                It prints no number: a shared band is a figure no guide states,
+                so the line names which species sets each edge of it, and the
+                species rows above carry the figures. */}
             {isGroup && guide.branches && (() => {
               const live = guide.branches.species.filter((sp) => !sp.planned && sp.ranges);
               if (live.length < 2) return null;
               const short = (sp) => sp.name.replace(/ Tetra$/, '').toLowerCase();
-              // Where the overlap [lo, hi] sits inside one species' range.
-              const where = ([a, b], [lo, hi], low, high) => {
-                if (lo <= a && hi >= b) return 'anywhere in';
-                if (lo <= a) return `the ${low} end of`;
-                if (hi >= b) return `the ${high} end of`;
-                return 'the middle of';
+              const label = (set) => set.map((sp) => sp.name.replace(/ Tetra$/, '')).join(' + ');
+              // Where the band all of `set` share sits, in one phrase named
+              // after one species: inside a species' whole range if the band is
+              // exactly that range, otherwise the end of the first species'
+              // range it falls at. The figures are in the rows above.
+              const band = (set, key) => {
+                const lo = Math.max(...set.map((sp) => sp.ranges[key][0]));
+                const hi = Math.min(...set.map((sp) => sp.ranges[key][1]));
+                if (lo > hi) return null;
+                if (set.every((sp) => sp.ranges[key][0] === lo && sp.ranges[key][1] === hi)) return { all: true };
+                const whole = set.find((sp) => sp.ranges[key][0] === lo && sp.ranges[key][1] === hi);
+                if (whole) return { sp: whole, where: 'within' };
+                const top = set.find((sp) => sp.ranges[key][1] === hi && sp.ranges[key][0] < lo);
+                if (top) return { sp: top, where: 'top' };
+                return { sp: set.find((sp) => sp.ranges[key][0] === lo), where: 'bottom' };
               };
-              const lines = [];
-              for (let i = 0; i < live.length; i++) for (let j = i + 1; j < live.length; j++) {
-                const a = live[i], b = live[j];
-                const t = [Math.max(a.ranges.tempF[0], b.ranges.tempF[0]), Math.min(a.ranges.tempF[1], b.ranges.tempF[1])];
-                const p = [Math.max(a.ranges.ph[0], b.ranges.ph[0]), Math.min(a.ranges.ph[1], b.ranges.ph[1])];
-                const lower = (sp) => sp.name.toLowerCase();
-                const pair = `${lower(a).charAt(0).toUpperCase()}${lower(a).slice(1)}s and ${lower(b)}s`;
-                if (t[0] > t[1] || p[0] > p[1]) {
-                  lines.push({ key: `${a.id}-${b.id}`, text: `${pair} do not share a temperature or pH range, so they need separate tanks.` });
-                  continue;
-                }
-                // Each half names where the shared band sits in each species'
-                // range. When the band is one species' whole range, the line
-                // says "anywhere in" that one and names the end of the other;
-                // when it is both whole ranges, it says so once.
-                const describe = (rangeA, rangeB, band, low, high, what) => {
-                  const inA = where(rangeA, band, low, high);
-                  const inB = where(rangeB, band, low, high);
-                  if (inA === 'anywhere in' && inB === 'anywhere in') return `anywhere in the ${what} range both share`;
-                  if (inA === 'anywhere in') return `anywhere in the ${short(a)}'s ${what} range, which is ${inB} the ${short(b)}'s`;
-                  if (inB === 'anywhere in') return `anywhere in the ${short(b)}'s ${what} range, which is ${inA} the ${short(a)}'s`;
-                  return `at ${inA} the ${short(a)}'s ${what} range, which is ${inB} the ${short(b)}'s`;
-                };
-                const temp = describe(a.ranges.tempF, b.ranges.tempF, t, 'cool', 'warm', 'temperature');
-                const ph = describe(a.ranges.ph, b.ranges.ph, p, 'acidic', 'less acidic', 'pH');
-                lines.push({ key: `${a.id}-${b.id}`, text: `${pair} can share a tank kept ${temp}, with water ${ph}.` });
-              }
+              const fit = (set) => {
+                const t = band(set, 'tempF');
+                const p = band(set, 'ph');
+                if (!t || !p) return `No: no shared ${!t ? 'temperature' : 'pH'}.`;
+                const they = set.length === 2 ? 'both' : 'they all';
+                const tempText = t.all ? `any temperature ${they} list`
+                  : t.where === 'within' ? `within the ${short(t.sp)}'s temperature range`
+                  : `the ${t.where === 'top' ? 'warm' : 'cool'} end of the ${short(t.sp)}'s temperature range`;
+                const owner = (sp) => (t.sp && t.sp.id === sp.id ? 'its' : `the ${short(sp)}'s`);
+                const phText = p.all ? `at any pH ${they} list`
+                  : p.where === 'within' ? `within ${owner(p.sp)} pH range`
+                  : `at the ${p.where === 'top' ? 'less acidic' : 'acidic'} end of ${owner(p.sp)} pH range`;
+                return `Yes: ${tempText}, ${phText}.`;
+              };
+              const sets = [];
+              for (let i = 0; i < live.length; i++) for (let j = i + 1; j < live.length; j++) sets.push([live[i], live[j]]);
+              if (live.length > 2) sets.push(live);
               return (
                 <div className="bg-card border border-border rounded-2xl p-5">
                   <h2 className="font-display font-bold text-base text-foreground mb-2 flex items-center gap-2">
                     <IconChip icon={Scale} color="orange" size="heading" />Keeping tetras together
                   </h2>
-                  <p className="text-sm text-muted-foreground font-body mb-3">Worked out from the ranges under each species above. The figures themselves are in each species' tank setup guide.</p>
-                  <ul className="space-y-2">
-                    {lines.map((l) => (
-                      <li key={l.key} className="flex items-start gap-2 text-sm text-foreground font-body leading-relaxed">
-                        <span aria-hidden="true" className="mt-2 w-1.5 h-1.5 rounded-full bg-secondary flex-shrink-0" />
-                        {l.text}
-                      </li>
+                  <p className="text-sm text-muted-foreground font-body mb-3">Which species can share a tank, from the ranges above.</p>
+                  <dl className="divide-y divide-border/60">
+                    {sets.map((set) => (
+                      <div key={set.map((sp) => sp.id).join('-')} className="py-2 grid grid-cols-1 sm:grid-cols-[11rem_1fr] gap-x-4 gap-y-0.5">
+                        <dt className="text-sm font-body font-bold text-foreground">{set.length === live.length && live.length > 2 ? `All ${live.length === 3 ? 'three' : live.length}` : label(set)}</dt>
+                        <dd className="text-sm text-muted-foreground font-body">{fit(set)}</dd>
+                      </div>
                     ))}
-                  </ul>
+                  </dl>
                 </div>
               );
             })()}
