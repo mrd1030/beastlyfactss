@@ -33,7 +33,8 @@ export default function BrowseGroup({ name, subtitle, count, defaultOpen = false
         onClick={() => setOpen((o) => !o)}
         aria-expanded={open}
         aria-controls={panelId}
-        aria-label={`${name}, ${count} species, ${open ? 'collapse' : 'expand'}`}
+        aria-label={`${name}, ${count} species: ${subtitle}. ${open ? 'Collapse' : 'Expand'}`}
+        title={subtitle}
         className={`flex items-center justify-between w-full text-left bg-card border rounded-xl px-4 py-3 hover:border-secondary/40 hover:shadow-sm transition-all group cursor-pointer ${open ? 'border-secondary/40' : 'border-border'}`}
       >
         <span className="flex items-center gap-3 min-w-0">

@@ -6,7 +6,7 @@ import { motion } from '@/lib/motion-safe';
 import { Search, Info } from 'lucide-react';
 import { encyclopediaAnimals, encyclopediaCategories, difficultyColor } from '@/lib/data/encyclopedia';
 import BrowseRow from '@/components/shared/BrowseRow';
-import { groupGuides, nestByHub } from '@/lib/data/guideGroups';
+import { groupGuides, nestByHub, memberLabel, groupChips, matchesSubtype } from '@/lib/data/guideGroups';
 import BrowseGroup from '@/components/shared/BrowseGroup';
 import { guideCategoryDescription } from '@/lib/seo/categoryDescriptions';
 import { allGuides } from '@/lib/data/guides';
@@ -59,7 +59,16 @@ const subtypes = {
   Cats: ['Domestic Shorthair', 'Maine Coon', 'Siamese', 'Ragdoll', 'Bengal', 'Persian'],
   Invertebrates: ['Emperor Scorpion', 'Giant African Millipede', 'Hermit Crab', 'Jumping Spider', 'Madagascar Hissing Cockroach', 'Praying Mantis', 'Stick Insect', 'Tarantula'],
   Amphibians: ['Axolotl', 'Fire-Bellied Toad', 'Pacman Frog', 'Tiger Salamander', "White's Tree Frog"],
-  Fish: ['Angelfish', 'Betta Fish', 'Corydoras Catfish', 'Goldfish', 'Guppy', 'Koi', 'Oscar', 'Tetra'],
+  Fish: ['Angelfish', 'Betta Fish', 'Corydoras Catfish', 'Goldfish', 'Guppy', 'Koi', 'Oscar'],
+};
+
+// The fixed chips plus one per group hub in the category ("Tetras"), which
+// filters by group membership rather than by name. A category that gains a
+// group chip lists its chips alphabetically.
+const chipsFor = (category) => {
+  const groups = groupChips(category);
+  const fixed = subtypes[category] || [];
+  return groups.length ? [...fixed, ...groups].sort((a, b) => a.localeCompare(b)) : fixed;
 };
 
 export default function Encyclopedia() {
@@ -151,7 +160,7 @@ export default function Encyclopedia() {
     }
     if (directMatchCategories.has(activeFilter)) {
       const byType = allGuides.filter(g => g.petType === activeFilter);
-      if (activeSubtype) return byType.filter(g => g.name.includes(activeSubtype));
+      if (activeSubtype) return byType.filter(g => matchesSubtype(g, activeSubtype));
       return byType;
     }
     return allGuides;
@@ -431,13 +440,13 @@ function GuidesTab({ activeFilter, setActiveFilter, dogSize, setDogSize, activeS
         )}
 
         {/* Subtype filter */}
-        {activeFilter !== 'All' && subtypes[activeFilter] && (
+        {activeFilter !== 'All' && chipsFor(activeFilter).length > 0 && (
           <div className="flex flex-wrap gap-1.5 mb-4">
             <button onClick={() => setActiveSubtype(null)}
               className={`px-2.5 py-1 rounded-full text-xs font-body font-semibold transition-all ${activeSubtype === null ? 'bg-primary/20 text-primary' : 'text-muted-foreground hover:text-foreground'}`}>
               All
             </button>
-            {subtypes[activeFilter].map(sub => (
+            {chipsFor(activeFilter).map(sub => (
               <button key={sub} onClick={() => { const next = activeSubtype === sub ? null : sub; setActiveSubtype(next); if (next) trackEvent('guides_subtype_filter_clicked', { subtype: sub, category: activeFilter }); }}
                 className={`px-2.5 py-1 rounded-full text-xs font-body font-semibold transition-all ${activeSubtype === sub ? 'bg-primary/20 text-primary' : 'text-muted-foreground hover:text-foreground'}`}>
                 {sub}
@@ -476,7 +485,7 @@ function GuidesTab({ activeFilter, setActiveFilter, dogSize, setDogSize, activeS
                     <BrowseGroup
                       key={entry.hub.id}
                       name={entry.hub.branches.groupName || entry.hub.name}
-                      subtitle={`${entry.members.length} species`}
+                      subtitle={memberLabel(entry.members)}
                       count={entry.members.length}
                       defaultOpen={!!activeSubtype}
                     >

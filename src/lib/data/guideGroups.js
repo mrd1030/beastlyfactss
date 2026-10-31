@@ -91,3 +91,35 @@ export function nestByHub(items, idOf, nameOf) {
   }
   return out;
 }
+
+const groupHubs = [...new Set(Object.values(hubOf))];
+
+// The folder's second line names its members, so a group whose species share
+// no name (guppy, molly, platy and swordtail) still shows what is inside. A
+// last word every member shares is dropped ("Cardinal, Neon" for the tetras);
+// otherwise the names stay whole. List order, which the lists keep
+// alphabetical.
+export function memberLabel(members) {
+  const names = members.map((m) => m.name);
+  const tail = ` ${names[0]?.split(' ').pop()}`;
+  const shared = names.length > 1 && names.every((n) => n.endsWith(tail));
+  return (shared ? names.map((n) => n.slice(0, -tail.length)) : names).join(', ');
+}
+
+// The group a guide belongs to, by name ("Tetras"), for search: typing the
+// group name finds every member even when no member's own name contains it.
+export function groupNameOf(guideId) {
+  return hubOf[guideId]?.branches.groupName || '';
+}
+
+// One subtype chip per group hub in a category, named after the group. A
+// group chip filters by membership (the hub and every species on its roster);
+// any other chip keeps matching by name.
+export function groupChips(petType) {
+  return groupHubs.filter((hub) => hub.petType === petType).map((hub) => hub.branches.groupName);
+}
+
+export function matchesSubtype(guide, sub) {
+  const hub = groupHubs.find((h) => h.branches.groupName === sub);
+  return hub ? guide.id === hub.id || hubOf[guide.id]?.id === hub.id : guide.name.includes(sub);
+}
