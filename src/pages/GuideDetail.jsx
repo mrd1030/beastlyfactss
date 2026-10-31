@@ -558,8 +558,9 @@ export default function GuideDetail() {
               );
             })()}
 
-            {/* What every tetra needs: six tiles, one sentence each, the
-                figure copied from the shared guide the tile links to. */}
+            {/* What every tetra needs: one tile per rule, one sentence each,
+                the figure copied from the shared guide the tile links to. The
+                tiles are the group page's only links to the shared guides. */}
             {isGroup && guide.rules?.length > 0 && (
               <div className="bg-card border border-border rounded-2xl p-5">
                 <h2 className="font-display font-bold text-base text-foreground mb-3 flex items-center gap-2">
@@ -626,7 +627,7 @@ export default function GuideDetail() {
               </div>
             )}
 
-            {(isRouter || isGroup) && (
+            {isRouter && (
               <div className="bg-card border border-border rounded-2xl p-5">
                 <h2 className="font-display font-bold text-base text-foreground mb-3 flex items-center gap-2">
                   <IconChip icon={Newspaper} color="orange" size="heading" />Where to go next

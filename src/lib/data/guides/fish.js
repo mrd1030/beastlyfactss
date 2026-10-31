@@ -16,8 +16,9 @@ export const fishGuides = fillCostTokens([
     // Group hub for the tetras (layout "group", rendered by GuideDetail.jsx).
     // Someone here has not picked a fish yet, so it is a chooser, not a
     // species checklist: no first-week card, no buy list, no emergency card.
-    // Order: intro, Pick your tetra, keeping tetras together, the six rules
-    // every tetra shares, the shared guides, FAQ. It keeps no figure of its
+    // Order: intro, Pick your tetra, keeping tetras together, the eight
+    // rules every tetra shares, FAQ. Each rule tile links its shared guide,
+    // so there is no separate list of shared guides. It keeps no figure of its
     // own. Each species' strip copies its figures from the deep dive named in
     // `sources` (null: the encyclopedia entry, which no deep dive repeats);
     // each rule tile copies its figure from the guide in its `source`. The
@@ -27,14 +28,15 @@ export const fishGuides = fillCostTokens([
     // their guide set ships. Drafted 2026-10-31 as a preview, not yet live.
     layout: "group",
     // Intro research, with quotes and URLs: TETRA_GROUP_RESEARCH.md
-    // (Merriam-Webster for the name, Gonzalez, Patrick and Val 2024 for the
+    // (Merriam-Webster for the name, Melo et al. 2024 for the families,
+    // FishBase for Africa and Mexico, Gonzalez, Patrick and Val 2024 for the
     // water, Romano and Stefanini 2021 for schooling). Not cited on the page,
     // matching the encyclopedia entries, which carry no citations either. The
     // name comes from the old genus, not "four fins" (no dictionary supports
     // that), and the schooling line is the predator finding only: in the neon
     // tetra work, food shortened shoaling rather than holding the school.
     intro: {
-      text: "Tetra is a common name rather than one scientific group: the word is short for Tetragonopterus, an old genus name. Most South American tetras come from soft, acidic streams, either clear or stained the color of tea. They school mainly for safety: when a predator appears, neon tetras move toward the middle of the group, where any one fish is least likely to be the one caught.",
+      text: "Tetra is a common name rather than one scientific group. The word is short for Tetragonopterus, an old genus name, and it now covers small characins spread across several families in South and Central America, Mexico and Africa. Most South American tetras come from soft, acidic streams, either clear or stained the color of tea, and many characins keep their salt balance in water that acidic. They school mainly for safety: when a predator appears, neon tetras move toward the middle of the group, where any one fish is least likely to be the one caught.",
     },
     branches: {
       groupName: "Tetras",
@@ -69,14 +71,8 @@ export const fishGuides = fillCostTokens([
       { label: "Food size", value: "A neon's mouth is only about 1 to 2mm across, so micro-pellets or flake crushed fine. Food too large gets spat out.", source: "neon-tetra-feeding-guide" },
       { label: "Quarantine", value: "At least 30 days in a separate tank before a new fish joins the school.", source: "fish-quarantine-and-treatment-guide" },
       { label: "Ich", value: "86°F held for two weeks kills most strains, but only some tetras survive it. Cardinals can; neons cannot.", source: "aquarium-ich-treatment-guide" },
-    ],
-    routes: [
-      { slug: "aquarium-stocking-and-tankmates-guide", line: "Why inch per gallon fails past small fish, the four checks before two species share a tank, and the group sizes the research supports." },
-      { slug: "aquarium-cycling-guide", line: "Fishless and fish-in cycling with real ammonia numbers, the four to six weeks most cycles take, and why a cycle stalls." },
-      { slug: "freshwater-ph-gh-kh-guide", line: "What pH, GH and KH each mean for a soft-water fish, and why chasing pH with chemicals crashes a tank." },
-      { slug: "aquarium-water-changes-guide", line: "How much to change and how often, read off a nitrate test rather than the calendar." },
-      { slug: "fish-quarantine-and-treatment-guide", line: "The 30-day quarantine tank, why medication goes in a hospital tank, and pulling the carbon before you dose." },
-      { slug: "aquarium-ich-treatment-guide", line: "Heat, salt or medication, and the temperature ceiling that decides which one a tetra gets." },
+      { label: "Water changes", value: "25 to 30% weekly. Test nitrate first: under 20 ppm the routine is right, past 40 ppm the next change is 50%.", source: "aquarium-water-changes-guide" },
+      { label: "Power outage", value: "Oxygen is the threat, not darkness. Unplug the filter rather than letting it sit dead in the water, and keep the surface moving.", source: "aquarium-power-outage-and-transport-guide" },
     ],
     faqs: [
       { q: "How many of a schooling fish do I need?", a: "Six is the floor most species pages give, and the research points higher. In the group-size study behind that advice, neon tetras and white cloud mountain minnows showed the least aggression and darting in the larger groups, and groups of 10 shoaled the most. Ten of one species beats five each of two." },

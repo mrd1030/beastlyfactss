@@ -41,7 +41,8 @@ const rows = [];
 for (const [file, list] of Object.entries(mods)) {
   for (const g of list) {
     if (!g.firstWeek && g.layout !== 'group') continue; // router and group hubs
-    const own = (g.routes || []).map(r => r.slug);
+    // A group hub has no routes; its rule tiles link the shared guides.
+    const own = (g.routes || g.rules || []).map(r => r.slug || r.source);
     const pool = [];
     for (const s of own) for (const f of ddFaqs(s)) pool.push({ ...f, slug: s });
     const res = (g.faqs || []).map(h => {
