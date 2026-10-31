@@ -372,22 +372,140 @@ Observed 2026-10-31 on US listings, before shipping. For the cost guide's typica
 
 ## Gaps
 
-- Captive lifespan: no authoritative source. Only hobby-tier figures (3 to 5 years, Aquarium Source; 3 to 6 years, DFO relaying Aqua-Fish Net).
+- Captive lifespan: STILL OPEN (rechecked 2026-10-31, see F4). No source above hobby tier exists that I could find; AnAge has no entry for the species. Only hobby-tier figures (3 to 5 years, Aquarium Source; 3 to 6 years, DFO relaying Aqua-Fish Net) and a retailer's 2 to 3 years for GloFish (PetSmart).
 - Wild lifespan: no source found.
-- Group-size welfare study: Priestley et al. 2006 (J Nutr) exists but was not read; its findings are unknown. Open on the desktop.
-- Fin nipping: no peer-reviewed study; husbandry consensus only (group of about 12).
-- Upper thermal limit or CTmax: no study found. No source says black skirts tolerate a sustained 86°F ich treatment. Kuhn et al. 2023 held them at 32°C for 2 weeks, but survival was not in the abstract and the full text was not read.
+- Group-size welfare study: STILL OPEN (see F1). Priestley et al. 2006 (J Nutr) could not be opened from any copy (publisher, ScienceDirect, journal site, PubMed, Europe PMC, OpenAlex all lack an openable abstract or text here). A search-engine summary says group size did not significantly affect growth in groups of up to 16 tetras in a 50 L tank; that is NOT a source. Open on the desktop before citing anything from it.
+- Fin nipping: CONFIRMED OPEN (see F5). No paper, university or public aquarium source found. The claim and the group-of-12 fix rest on Seriously Fish (S21) and TFH (S22) only.
+- Upper thermal limit or CTmax: STILL OPEN (see F2). No study found. No source says black skirts tolerate a sustained 86°F ich treatment. Kuhn et al. 2023 full text is closed access (no repository copy; ScienceDirect blocked); its abstract says nothing on survival, mortality or thermal limits.
 - Neon tetra disease (Pleistophora) in black skirt tetras: no source names it as a host.
 - Wild water chemistry: one secondhand figure only (22 to 24°C, pH 5.5 to 6.3, via the GloFish notification quoted by DFO).
 - KH: only lower-tier and retailer figures.
 - Lighting intensity, photoperiod and flow: no species-specific source.
-- Feeding frequency: only the GloFish manufacturer's "two to three times daily".
+- Feeding frequency: PARTLY CLOSED (see F4). UF/IFAS Extension (EDIS FA096, a veterinarian author) says "One feeding per day is plenty for most pet animals" and more frequent small meals for young stock. General pet fish guidance, not species-specific. It disagrees with the GloFish manufacturer's "two to three times daily".
 - Clutch size: only hobby figures relayed by DFO ("up to 2000").
 - Age at maturity: hobby sources say 1 to 2 years; the gonad study and GloFish say 4 to 6 months.
-- IUCN assessment date: 2021 (FishBase) vs a 2023 Red List citation (Wikipedia). The IUCN page could not be opened.
+- IUCN assessment date: MOSTLY CLOSED (see F3). The IUCN page and API both return 403. GBIF's mirror of the IUCN Red List checklist gives Least Concern and the citation "Lima, F. 2023 ... The IUCN Red List of Threatened Species 2023" (DOI suffix 2023-1). With FishBase's "Date assessed: 04 March 2021", the reading is: assessed 2021, published in Red List 2023-1. Write "Least Concern (IUCN)" and avoid a year, or say "assessed 2021" citing FishBase.
 - Family: Acestrorhamphidae (FishBase, ETYFish, Wikipedia) vs Characidae (ITIS, GBIF, Seriously Fish, DFO, Benine 2015). Owner decision.
 - Native range: Rio Paraguay basin (Benine 2015, DFO) vs "Amazon River" (Gonzalez 1997 title). Guaporé is added by Seriously Fish, FishBase and TFH.
 - Dyed fish legality (US, UK, EU): no source opened.
 - GloFish legality outside the US and Canada assessment: no source opened. The California 2015 approval is sourced only through DFO's citation of the Commission.
-- GloFish "Pristella Tetra" species: only a URL slug and Wikipedia; open a GloFish species statement before writing it.
+- GloFish "Pristella Tetra" species: CLOSED (see F6). DFO Science Advisory Report 2024/017 names it Pristella maxillaris (the X-ray tetra), a different species. GloFish's own product pages give no scientific names in their text (only in URL slugs), but call the skirt line "GloFish® White Skirt Tetras".
 - Tank minimum: no source supports a 10 gallon except a retailer spec; a 20 gallon long (75 x 30 cm) is the best-referenced footprint.
+- Local store prices: PARTLY CLOSED (see F7). PetSmart and That Pet Place observed. Petco and Pet Supermarket pages returned 403. No PetSmart white skirt listing was found (it sells a "Golden Skirt Tetra" instead).
+
+## Follow-up research (2026-10-31)
+
+Reviewer gaps, rechecked the same day. Same rules as above: every quote is from a page opened in this pass. Pages were downloaded with curl and their text extracted unless marked "(read via fetch tool)". Items are numbered F1 to F7 to match the reviewer's list. Where a source used an en dash in a range, it is rewritten here with "to".
+
+New sources added in this pass:
+
+| # | Source | Tier | URL |
+|---|--------|------|-----|
+| S38 | Francis-Floyd, R., "Fish Nutrition", UF/IFAS Extension EDIS publication VM114 (FA096), DOI 10.32473/edis-fa096-2002, original March 2002, revised May 2022, reviewed 06/2025 (PDF, full text read; the link redirects to ask.ifas.ufl.edu) | University extension (author is an extension veterinarian) | https://edis.ifas.ufl.edu/publication/FA096/pdf |
+| S39 | DFO (2024), "Environmental and Indirect Human Health Risk Assessment of Glofish® Electric Green®, Starfire Red®, Sunburst Orange®, and Galactic Purple® Pristella Tetras (Pristella maxillaris): Transgenic Ornamental Fishes", DFO Can. Sci. Advis. Sec. Sci. Advis. Rep. 2024/017 (PDF, full text read) | .gov (Fisheries and Oceans Canada) | https://waves-vagues.dfo-mpo.gc.ca/library-bibliotheque/41239970.pdf |
+| S40 | Dugan, Ali and Demissie (2024), "Indirect Human Health Risk Assessment of GloFish® ... Pristella Tetras (Pristella maxillaris)", CSAS Research Document 2024/044, Health Canada (PDF, title page read) | .gov (Health Canada via DFO) | https://waves-vagues.dfo-mpo.gc.ca/library-bibliotheque/41249306.pdf |
+| S41 | GBIF API: the IUCN Red List checklist dataset's record for Gymnocorymbus ternetzi (key 258088910), distributions endpoint | Biodiversity database relaying IUCN | https://api.gbif.org/v1/species/258088910/distributions |
+| S42 | AnAge (Human Ageing Genomic Resources), species lookup for Gymnocorymbus ternetzi | University database (negative result only) | https://genomics.senescence.info/species/entry.php?species=Gymnocorymbus_ternetzi |
+| S43 | GloFish shop product pages for each tetra line (listed in F6) | Manufacturer statements about its own products | see F6 |
+
+### F1. Priestley et al. 2006 (group size): NOT OPENED
+
+Every route tried this pass failed, so its findings are still unverified here.
+- Publisher page (academic.oup.com): HTTP 403 to curl, 404 to the fetch tool. Journal site full text (https://jn.nutrition.org/article/S0022-3166(22)08392-4/fulltext): 403 to both. ScienceDirect (the journal's current host, PII S0022316622083924): 403 to the fetch tool. Elsevier's text-mining API: needs an API key.
+- PubMed and Europe PMC records carry no abstract ("isOpenAccess":"N", "inPMC":"N"). OpenAlex has no abstract and "any_repository_has_fulltext": False. Semantic Scholar: "The following paper fields have been elided by the publisher: {'abstract'}". No university repository copy found.
+- Papers that cite it do not describe its results. Zhu et al. 2022 (https://pmc.ncbi.nlm.nih.gov/articles/PMC8676682/) cites it only for range: "a peaceful shoaling tropical freshwater fish distributed in the rivers of southern Brazil (Priestley et al., 2006)". Clark et al. 2018 (https://pmc.ncbi.nlm.nih.gov/articles/PMC6241379/) cites it only as an example of fish body condition indices.
+- Lead only, NOT a source: a web search summary (not a page opened) says "Group size did not significantly affect growth rate in either Common Goldfish or Black Widow Tetras when housed in groups of up to 12 (Goldfish) or 16 (Black Widow Tetras) individuals in a 50-L tank", and that individually housed fish "tended to show a greater growth rate", not significantly. If the desktop check confirms this, note that it is a growth study by a pet food company's research center, not a welfare or behavior study, and it does not support any minimum group number.
+- Also found: the same authors' companion paper, "Methods for Predicting Food Allowances from Body Length in Tropical and Temperate Ornamental Fish Species", J Nutr 136(7 Suppl):2081S-2083S. Not opened either.
+
+### F2. Kuhn, Azari and Volkoff 2023 (32°C): FULL TEXT NOT OPENED
+
+- Closed access. OpenAlex: "oa_status": "closed", "any_repository_has_fulltext": False. Europe PMC lists only "Subscription required". The DOI resolves to ScienceDirect (PII S109564332200191X), which returned 403 to the fetch tool. No thesis or repository copy found (Volkoff lab, Memorial University of Newfoundland). https://pubmed.ncbi.nlm.nih.gov/36244591/
+- What the abstract (Europe PMC copy) says, in full on this point: the fish were examined "by submitting them to four different temperatures for 2 weeks (20°C, 24°C, 28°C, 32°C). In all species, food intake increased with increasing temperature." It says nothing about survival, mortality, acclimation rate, a thermal ceiling or ich treatment.
+- So: survival at 32°C, how fast the fish were brought up to it, and any thermal limit remain unknown. The only defensible reading is that a lab group chose 32°C as a two-week treatment level for this species; it cannot be cited as "black skirts survive 32°C" or as support for the 86°F ich method. Section 8.2 stands as written.
+
+### F3. IUCN Red List status
+
+- IUCN page https://www.iucnredlist.org/species/49829723/197221365: HTTP 403 to curl and to the fetch tool. The IUCN API (api.iucnredlist.org) also returned 403. IUCN blocks this session; nothing is quoted from IUCN itself.
+- GBIF's copy of the IUCN Red List checklist (S41) lists "threatStatus":"LEAST_CONCERN" and gives as its source: "Lima, F. 2023. Gymnocorymbus ternetzi (Boulenger, 1895). The IUCN Red List of Threatened Species 2023: https://doi.org/10.2305/IUCN.UK.2023-1.RLTS.T49829723A197221365.en". The record's "references" field points to the IUCN page above.
+- Combined with FishBase's "Least Concern (LC) ; Date assessed: 04 March 2021" (S17): category Least Concern; assessed 2021 (FishBase), published in Red List version 2023-1 (GBIF's IUCN citation). Category confirmed by three relays; the year is a relay reading, not seen on IUCN.
+
+### F4. Lifespan and feeding frequency above hobby tier
+
+Lifespan: NONE FOUND.
+- AnAge, the university-run longevity database: "AnAge entry not found." (S42)
+- FishBase, Seriously Fish and TFH give no lifespan (rechecked from the main notes). No peer-reviewed, .gov or university source with a captive or wild lifespan was found in searches.
+- Lower tier, for completeness only: PetSmart's GloFish tetra pages list "Average Lifespan: 2 to 3 years, potentially longer in ideal conditions" (retailer spec, e.g. https://www.petsmart.com/fish/live-fish/goldfish-betta-and-more/glofish-moonrise-pink-tetra-22832.html). This is shorter than the hobby figures of 3 to 5 or 3 to 6 years and is not citable.
+- Plain statement for the guide: the lifespan figure rests on hobby sources only.
+
+Feeding frequency: ONE GENERAL SOURCE FOUND, above the manufacturer.
+- UF/IFAS Extension, Francis-Floyd (S38): "Fish should be fed based on a percentage of body weight. For maintenance, 0.5 to 1.0% body weight per day is adequate. Fish should probably be fed at least 5 days per week. The most common mistake made by pet owners is over-feeding their fish, often with resulting degradation of water quality." And: "One feeding per day is plenty for most pet animals. Rearing of young stock does require small meals fed more frequently." (The source writes the range with an en dash.)
+- Scope: general guidance for pet fish, not a black skirt tetra study. It also notes "Most successfully reared ornamental fish are omnivores, and these are the species that have adapted best to captive conditions", which fits this species (S13, S21).
+- DISAGREEMENT: once a day (UF/IFAS) vs "two to three times daily, in small amounts" (GloFish, S30). Reading: once a day is enough for adults; small extra meals are for growing fish.
+
+### F5. Fin nipping above hobby tier: NONE FOUND
+
+- Searches for papers, university pages and public aquarium pages on fin nipping in Gymnocorymbus ternetzi, or in tetras generally, returned only hobby care sheets. The only peer-reviewed behavior result for this species remains Leggatt and Devlin 2020 (S1), which measured aggression within the species (GloFish vs white tetras), not nipping of other fish.
+- The nipping claim and its fix (a school of about a dozen keeps squabbling inside the group) rest on the husbandry references already in the notes: Seriously Fish (S21) and TFH (S22), with Aquarium Source (S32) as a lower tier echo. Write it as husbandry consensus, not as a studied fact.
+
+### F6. Which species each GloFish "tetra" product is
+
+GloFish's own pages, opened 2026-10-31. None of the product descriptions states a scientific name in its text; the scientific names appear only in some product URL handles. What the text does say is the common name.
+
+Skirt tetra line (Gymnocorymbus ternetzi):
+- GloFish® Skirt Tetra Mixed Set (3ct): "GloFish® White Skirt Tetra Mixed Set (3ct) are hardy, easy-to-care-for fish"; "Three GloFish® Skirt Tetras in three different colors"; colors "Starfire Red®, Sunburst Orange®, Electric Green®, Cosmic Blue®, Moonrise Pink® and Galactic Purple®". URL handle ends "gymnocorymbus-ternetzi". https://shop.glofish.com/products/glofish-white-skirt-tetra-assorted-add-on-collections-3pk-gymnocorymbus-ternetzi
+- GloFish® Skirt Tetra Single Color Set (3ct): "you can choose 3 GloFish® White Skirt Tetras of the same color", same six colors. https://shop.glofish.com/products/glofish-tetra-add-on-collections
+- GloFish® Skirt Tetra Basic Set (6ct): "This set includes 6 GloFish® White Skirt Tetras in assorted colors." https://shop.glofish.com/products/glofish-tetra-package
+- GloFish® Skirt Tetra Tulip Set (6ct): "3 Electric Green® Skirt Tetras 3 Moonrise Pink® Skirt Tetras". https://shop.glofish.com/products/tulip-glofish-tetra-collection
+- GloFish® Long-Fin Skirt Tetra Mixed Set (3ct): "three Long-Fin GloFish® Tetras in assorted colors", six colors including Cosmic Blue and Moonrise Pink. URL handle ends "gymnocorymbus-ternetzi". https://shop.glofish.com/products/glofish-long-fin-white-skirt-tetra-assorted-add-on-collections-3pk-gymnocorymbus-ternetzi
+- GloFish® Long-Fin Skirt Tetra Single Color Set (3ct): "you'll receive 3 tetras of the same color". https://shop.glofish.com/products/glofish-long-fin-tetra-add-on-collections
+- GloFish® Eclipse Tetra Set (9ct): "3x Sunburst Orange® White Skirt Tetras", "3x Galactic Purple® White Skirt Tetras" and "3x Starlight White Tetras (Non-GloFish)". URL handle ends "gymnocorymbus-ternetzi". https://shop.glofish.com/products/glofish-eclipse-tetra-collection-9ct-gymnocorymbus-ternetzi
+- Starlight White Long-Fin Tetras (5ct): "non-fluorescent companion fish". No species named on the page; do not assume. (The page title says 5ct but the text says "You get 3".) https://shop.glofish.com/products/starlight-white-tetras-5ct
+- Government confirmation of the species: DFO 2024 (S39): "notifications have been previously submitted and assessments conducted for six lines of GloFish® Tetra (Gymnocorymbus ternetzi, DFO 2018, 2019)". DFO 2018 (S14) covers the Electric Green and Long-Fin Electric Green lines specifically.
+
+Pristella line (Pristella maxillaris, the X-ray tetra, a different species):
+- GloFish® Pristella Tetra Mixed Set (3ct): "Three GloFish® Pristellas in three different colors"; "You may get a variety of: Starfire Red®, Sunburst Orange®, Electric Green®, and Galactic Purple®." URL handle ends "pristella-maxilaris" (sic). https://shop.glofish.com/products/glofish-pristella-tetra-assorted-add-on-3pk-pristella-maxilaris
+- GloFish® Pristella Tetra Single Color Set (3ct): "Choose from: Starfire Red®, Sunburst Orange®, Electric Green®, and Galactic Purple®." https://shop.glofish.com/products/glofish-pristella-tetra-add-on
+- DFO 2024 (S39), title: "...Pristella Tetras (Pristella maxillaris): Transgenic Ornamental Fishes". On the species: "The accepted scientific name is Pristella maxillaris", with common names "Pristella Tetra, X-ray Fish or Tetra, Golden Pristella Tetra, Blushing Tetra, and Water Goldfinch". The four notified lines are "GloFish® Electric Green® Pristella Tetra (GPM2021), Starfire Red® Pristella Tetra (RPM2022), Sunburst Orange® Pristella Tetra (OPM2021), and Galactic Purple® Pristella Tetra (PPM2021)". Conclusion: they "pose a low risk to the Canadian environment and to the indirect human health of Canadians." Health Canada's companion document (S40) carries the same species in its title.
+
+Other "tetra-like" GloFish lines on the shop's navigation are not tetras: Tiger Barb (URL handle "puntius-tetrazona"), Danios, Corydoras, Sharks, Angelfish, Pearl Gourami.
+
+What this means for the site:
+- Safe: "GloFish Skirt Tetras and Long-Fin Skirt Tetras are this species (Gymnocorymbus ternetzi)." GloFish's own text calls them "White Skirt Tetras" and DFO names the species.
+- Safe: "GloFish Pristella Tetras are a different fish, the X-ray tetra (Pristella maxillaris)." (S39)
+- Color is not a reliable tell. Cosmic Blue and Moonrise Pink are sold only in the skirt line on GloFish's shop; Starfire Red, Sunburst Orange, Electric Green and Galactic Purple come in both species. At stores the label matters: PetSmart titles its skirt tetras just "GloFish® Electric Green® Tetra" and similar (no "skirt"), while its Pristellas say "Pristella Tetra" (F7). That Pet Place labels them "GloFish Tetra - Gymnocorymbus ternetzi" and "GloFish Pristella Tetra - Pristella maxillaris" (F7).
+- PetSmart's own copy supports the general point: "Because the term "GloFish" refers to their appearance rather than a species, they span different categories of fish behavior" (retailer, not a source).
+
+### F7. Local store prices (retailer observations, NOT sources, do not cite)
+
+Observed 2026-10-31, US listings, before tax. For the cost guide's typical-range table only. Store prices vary by location.
+
+PetSmart (all "Live pet - Available in-store only"; a "Buy 4, get the 5th FREE ALL community fish & GloFish® thru 11/1, in-store only" promotion was running):
+- Black Skirt Tetra, Item # 4032166: $2.99. Spec block: "Scientific Name: Gymnocorymbus sp.", "Tank Size - 10 gallons". https://www.petsmart.com/fish/live-fish/goldfish-betta-and-more/skirt-tetra-4032166.html
+- Long-Finned Black Skirt Tetra, Item # 4032931: $2.99. https://www.petsmart.com/fish/live-fish/goldfish-betta-and-more/long-finned-skirt-tetra-15191.html
+- Golden Skirt Tetra, Item # 4032648: $2.99 ("Gold Skirt Tetra", "Gymnocorymbus sp."). No PetSmart listing called "white skirt tetra" was found; this pale form is the nearest. https://www.petsmart.com/fish/live-fish/goldfish-betta-and-more/skirt-tetra-4032648.html
+- GloFish® Electric Green® Tetra, Item # 5177092: $11.99. https://www.petsmart.com/fish/live-fish/goldfish-betta-and-more/glofish-electric-green-tetras-28636.html
+- GloFish® Moonrise Pink® Tetra, Item # 5202815: $11.99. https://www.petsmart.com/fish/live-fish/goldfish-betta-and-more/glofish-moonrise-pink-tetra-22832.html
+- GloFish® Galactic Purple Tetra, Item # 5211869: $11.99. https://www.petsmart.com/fish/live-fish/goldfish-betta-and-more/glofish-galactic-purple-tetra-5211869.html
+- GloFish® Starfire Red® Long Fin Tetra, Item # 5369675: $12.99. https://www.petsmart.com/fish/live-fish/goldfish-betta-and-more/glofish-starfire-red-long-fin-tetra-94300.html
+- GloFish® Electric Green® Longfin Tetra, Item # 5251856: $12.99. https://www.petsmart.com/fish/live-fish/goldfish-betta-and-more/glofish-electric-green-longfin-tetra-5251856.html
+- For contrast, not this species: GloFish® Galactic Purple® Pristella Tetra, Item # 5328812: $11.99. https://www.petsmart.com/fish/live-fish/goldfish-betta-and-more/glofish-galactic-purple-pristella-tetra-72153.html
+
+That Pet Place (independent retailer):
+- Black Skirt Tetra: $3.99. https://www.thatpetplace.com/Gymnocorymbus-ternetzi-black-skirt-tetra-213760
+- White Skirt Tetra: $4.99, "currently out of stock". https://www.thatpetplace.com/Gymnocorymbus-ternetzi-white-skirt-tetra-208460
+- Longfin Black Skirt Tetra: $5.99 (tetra category page). https://www.thatpetplace.com/aquarium-livestock/freshwater-fish/tetras
+- GloFish Tetra (Gymnocorymbus ternetzi), Cosmic Blue, Electric Green, Galactic Purple, Moonrise Pink, Starfire Red and Sunburst Orange: $12.99 each; GloFish Pristella Tetra (Pristella maxillaris): $7.99 to $8.99. https://www.thatpetplace.com/aquarium-livestock/freshwater-fish/glofish
+
+GloFish shop, direct (manufacturer; prices as shown on each product page in F6):
+- Skirt Tetra Single Color Set (3ct) $33.99; Skirt Tetra Mixed Set (3ct) $38.99; Skirt Tetra Basic Set (6ct) $68.99; Skirt Tetra Tulip Set (6ct) $68.99.
+- Long-Fin Skirt Tetra Single Color Set (3ct) $39.99; Long-Fin Skirt Tetra Mixed Set (3ct) $44.99; Long-Fin Skirt Tetra Mixed Set (6 ct) $77.99 (https://shop.glofish.com/products/glofish-assorted-long-fin-tetra-collection).
+- Pristella Single Color Set (3ct) $35.49; Pristella Mixed Set (3ct) $40.49 (different species).
+
+Blocked, nothing observed: Petco (https://www.petco.com/shop/en/petcostore/product/black-skirt-tetra returned 403 to curl and to the fetch tool) and Pet Supermarket (403).
+
+Observed store range for the cost table:
+- Plain black skirt: $2.99 (PetSmart) to $3.99 (That Pet Place) each in store.
+- White or golden skirt: $2.99 (PetSmart golden) to $4.99 (That Pet Place white).
+- Long-fin black skirt: $2.99 (PetSmart) to $5.99 (That Pet Place).
+- GloFish skirt tetra: $11.99 to $12.99 each in store (PetSmart, That Pet Place); about $11.33 to $13 each direct from GloFish in 3-packs. A school of 12 GloFish skirts is about $144 to $156 in store before any promotion.
+- So a school of 12 plain black skirts costs about $36 to $48 in store, versus about $22 to $30 online before shipping (section 13).
