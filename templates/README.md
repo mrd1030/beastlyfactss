@@ -17,7 +17,7 @@ This folder contains starter templates for creating new content on BeastlyFacts.
 Use this for longer, in-depth guides (cost breakdowns, handling, health issues, tank setup, comparisons, legal-to-own, etc.).
 
 **Includes:**
-- Full frontmatter schema, including `seoTitle`, `emoji`, and `faqs` (every real guide has 2-4 FAQs, not optional in practice)
+- Full frontmatter schema, including `seoTitle`, `emoji`, and `faqs` (every real guide has 2 to 8 FAQs, not optional in practice; see docs/RULES.md)
 - `<AffiliateDisclosure />` placement (required immediately after the H1 whenever `affiliate: true` - all 67 current affiliate articles pair the two)
 - Examples of `ComparisonTable`, `AffiliateLink`, `FunFact`, and `Sources`
 - Notes on `<VetDisclaimer />` and `<LegalDisclaimer />` for medical/legal content
@@ -41,7 +41,7 @@ Use this *before* `GUIDE_TEMPLATE.mdx` when starting a new species' cost / handl
 - `category` is fully dynamic (no hardcoded list in code - see `src/lib/data/glossaryTerms.js` for the same pattern applied to glossary terms), but stick to a real existing value unless you're deliberately introducing a new content-type category the way "Comparisons", "Legal", and "Roundups" were added. Current values in use: `Reptiles`, `Amphibians`, `Aquatic Life`, `Birds`, `Small & Exotic Pets`, `Invertebrates`, `Cats`, `Dogs`, `Comparisons`, `Legal`, `Roundups`, `Fun Facts`.
 - Add good `image` + `imageAlt` for social sharing. Most guides use `/assets/images/<slug>.jpg`; check what sibling articles in the same series already use before picking a folder.
 - Set `affiliate: true` if the post contains `<AffiliateLink>` usage, and pair it with `<AffiliateDisclosure />` right after the H1 - always, not optionally.
-- Add `faqs` to guides (2-4 is typical). Skip on fun-facts articles.
+- Add `faqs` to guides (2 to 8). Skip on fun-facts articles.
 - Use `difficulty` (Beginner / Beginner-Intermediate / Intermediate / Intermediate-Advanced / Advanced / Self-Sufficient) on guides.
 - Fill in `lastReviewed` to show content is up to date.
 - `readingTime` is optional but helpful for readers.

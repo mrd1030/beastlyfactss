@@ -9,8 +9,14 @@ working checklist.
 ## Writing an article
 
 - Start from the template. Guides carry `seoTitle`, `seoDescription`, `emoji`,
-  `difficulty`, `author`, and 2 to 4 `faqs`. Fun facts skip those and are one
+  `difficulty`, `author`, and 2 to 8 `faqs`. Fun facts skip those and are one
   flowing numbered list, no `## Fact 1` headings.
+- FAQs serve the reader who skims to the end without finding the answer, so a
+  guide can carry up to 8 (owner, 2026-10-31; raised from 2 to 4, which most
+  guides already ran past). Each one is a question a keeper actually asks, the
+  answer is 1 to 3 sentences, and no two answers in the same guide make the
+  same point. A FAQ a router hub copies is frozen once the hub ships: change it
+  in both places or not at all (scripts/check-hub-faqs.mjs).
 - Complete frontmatter IS the structured data. BlogPosting, BreadcrumbList, and
   FAQPage JSON-LD are generated automatically from it, the author byline ties to
   /about via `sameAs`, `dateModified` comes from `lastUpdated` (falling back to `lastReviewed`), and
