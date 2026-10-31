@@ -13,7 +13,7 @@ export const fishGuides = fillCostTokens([
     seoTitle: "Tetra Care Guide: Schools, Water, and Tankmates",
     seoDescription: "Every tetra needs a school, a cycled tank and soft water, but the numbers change by species. Compare neon and cardinal tetras and the rules they both share.",
     funFact: "Neon and cardinal tetras are easy to mix up in a shop tank, but the cardinal's red stripe runs the full length of its body, where the neon's covers only half of it.",
-    // Group hub, the tetra counterpart of dog-universal: the rules every tetra
+    // Group hub for the tetras: the rules every tetra
     // shares, then one browse row per species routing to that species' own
     // hub. It is a router (docs/RULES.md, Hubs) with no figure of its own. The
     // shared rows cite the class guides in the sidebar's Health and More list;
