@@ -501,7 +501,7 @@ export default function GuideDetail() {
 
             {/* Keeping tetras together: one short line per pair of species,
                 plus one for the whole group once there are three or more,
-                with a "Only just" verdict for a band under 3°F and any
+                with a "Yes, but with limits" verdict for a band under 3°F and any
                 species caution (a fin nipper) printed under the line,
                 worked out from their temperature and pH ranges at render time.
                 It prints no number: a shared band is a figure no guide states,
@@ -527,7 +527,7 @@ export default function GuideDetail() {
                 if (top) return { sp: top, where: 'top' };
                 return { sp: set.find((sp) => sp.ranges[key][0] === lo), where: 'bottom' };
               };
-              // A shared band narrower than MIN_BAND_F degrees is "Only just":
+              // A shared band narrower than MIN_BAND_F degrees is "Yes, but with limits":
               // the ranges touch, but a heater drifting a degree or two takes
               // one species out of its range. The band's width is worked out
               // here and never printed, since no guide states it.
@@ -537,7 +537,7 @@ export default function GuideDetail() {
                 const t = band(set, 'tempF');
                 const p = band(set, 'ph');
                 if (!t || !p) return `No: no shared ${!t ? 'temperature' : 'pH'}.`;
-                const verdict = tempWidth(set) < MIN_BAND_F ? 'Only just' : 'Yes';
+                const verdict = tempWidth(set) < MIN_BAND_F ? 'Yes, but with limits' : 'Yes';
                 const they = set.length === 2 ? 'both' : 'they all';
                 const tempText = t.all ? `any temperature ${they} list`
                   : t.where === 'within' ? `within the ${short(t.sp)}'s temperature range`
