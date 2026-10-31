@@ -28,6 +28,20 @@ export const fishEncyclopedia = [
     },
   },
   {
+    id: "black-skirt-tetra", name: "Black Skirt Tetra", scientific: "Gymnocorymbus ternetzi",
+    category: "Fish", emoji: "🐠", difficulty: "Beginner", guideId: "black-skirt-tetra", available: true, image: "/assets/guides/black-skirt-tetra.jpg",
+    bio: {
+      overview: "The black skirt tetra is a hardy, deep-bodied schooling fish from the Rio Paraguay basin in South America, also sold as the black widow tetra. It eats almost anything and handles a wide range of water, but it nips fins, so it is kept in a school of 12 and away from slow, long-finned fish. The white skirt and long-fin forms are the same species, and so are fluorescent GloFish Skirt Tetras.",
+      origin: "Rio Paraguay and Guaporé basins (Brazil, Bolivia, Argentina)",
+      habitat: "Small, slow-moving creeks and streams under dense overhanging vegetation, and plant beds in floodplain oxbow lakes",
+      adultSize: "About 2-2.5 inches (5-6 cm) in aquariums; up to 3 inches (7.5 cm)",
+      wildDiet: "Worms, small crustaceans and insects",
+      wildLifespan: "Not documented in the wild; about 3-5 years in captivity",
+      conservation: "Least Concern (IUCN)",
+      history: "George Albert Boulenger described the species in 1895 as Tetragonopterus ternetzi, from fish collected at Descalvados in Mato Grosso, Brazil, and named it for the Swiss-born naturalist Carl Ternetz, who assembled the collection. Carl Eigenmann moved it into the genus Gymnocorymbus in 1910. A relative in the same genus, Gymnocorymbus bondi, honors Frank Bond, father of the ornithologist James Bond, whose name Ian Fleming borrowed for his spy.",
+    },
+  },
+  {
     id: "bristlenose-pleco", name: "Bristlenose Pleco", scientific: "Ancistrus sp.",
     category: "Fish", emoji: "🐟", difficulty: "Beginner", guideId: "bristlenose-pleco", available: true, image: "/assets/guides/bristlenose-pleco.jpg",
     bio: {
@@ -193,6 +207,20 @@ export const fishEncyclopedia = [
       wildLifespan: "3-5 years",
       conservation: "Data Deficient (IUCN, X. maculatus); Least Concern (X. variatus)",
       history: "The platy has a second career with nothing to do with ornamental color. Between 1928 and 1931, working independently, Haussler, Kosswig and Myron Gordon each found that crossing a platy with a swordtail and then backcrossing the hybrids produced offspring that developed malignant melanoma, about a quarter of the backcross fish in the classic scheme. That cross, now known as the Gordon-Kosswig cross, became one of the oldest animal systems for cancer research still in use. In 1989 Wittbrodt and colleagues traced the tumors to Xmrk, a mutated and duplicated copy of the epidermal growth factor receptor gene.",
+    },
+  },
+  {
+    id: "rummy-nose-tetra", name: "Rummy-Nose Tetra", scientific: "Petitella bleheri (formerly Hemigrammus bleheri)",
+    category: "Fish", emoji: "🐠", difficulty: "Intermediate", guideId: "rummy-nose-tetra", available: true, image: "/assets/guides/rummy-nose-tetra.jpg",
+    bio: {
+      overview: "The rummy-nose tetra is a slim schooling fish from the blackwater rivers of the Rio Negro and Rio Meta basins, named for the bright red that covers its head. It schools so tightly that physicists use it to study how groups of animals move together, and the red fades when a fish is stressed or kept in poor conditions. Most fish sold under the name are Petitella bleheri; two close look-alikes, P. rhodostoma and P. georgiae, are sometimes sold under the same label.",
+      origin: "Rio Negro and Rio Meta basins (Brazil and Colombia)",
+      habitat: "Tannin-stained, very acidic blackwater rivers and flooded forest streams, with few aquatic plants",
+      adultSize: "About 1.5-2 inches (4-5 cm)",
+      wildDiet: "Omnivorous: microcrustaceans, insect larvae, filamentous algae and plant fragments, shifting with the flood season",
+      wildLifespan: "Not documented in the wild; about 5 years in captivity",
+      conservation: "Least Concern (IUCN)",
+      history: "Géry and Mahnert described the species in 1986 from the Rio Negro in Brazil and named it for Heiko Bleher, the explorer and ornamental fish wholesaler who collected specimens there. It sat in the genus Hemigrammus until a 2020 study moved it, along with the original rummy-nose tetra described by Ahl in 1924, into Petitella. In Brazil's Amazonas state it ranks second among exported aquarium fish, behind only the cardinal tetra.",
     },
   },
   {
