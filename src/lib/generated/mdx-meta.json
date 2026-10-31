@@ -2846,7 +2846,7 @@
     "title": "Treating Ich: Heat, Salt or Medication, and the Temperature Ceiling That Decides",
     "seoTitle": "Treating Ich: Heat, Salt or Medication",
     "seoDescription": "How to treat ich: the 86°F that stops it, the species whose ceiling is lower, salt for scaled fish, malachite green for the rest, and how long to keep going.",
-    "lastUpdated": "2026-09-25",
+    "lastUpdated": "2026-10-31",
     "noIndex": false,
     "excerpt": "Every fish health guide here says to treat ich by raising the temperature, and half of them say it about a species whose ceiling is below the number that works. This is the page that settles which fish can take the heat, which get salt, which get medication, and how long.",
     "date": "2026-09-16",
@@ -2873,7 +2873,7 @@
     "faqs": [
       {
         "q": "Can I treat ich with heat alone?",
-        "a": "Only if your fish can live at 86°F for two weeks, because that is the temperature most ich strains cannot survive, and it must be held with extra aeration since warm water carries less oxygen. Discus and cardinal tetras can. Goldfish, koi, zebra danios, neon tetras and bristlenose plecos cannot, and for them heat goes only as high as the species ceiling, to speed the cycle, while salt or medication does the killing."
+        "a": "Only if your fish can live at 86°F for two weeks, because that is the temperature most ich strains cannot survive, and it must be held with extra aeration since warm water carries less oxygen. Discus and cardinal tetras can. Goldfish, koi, zebra danios, neon tetras, ember tetras and bristlenose plecos cannot, and for them heat goes only as high as the species ceiling, to speed the cycle, while salt or medication does the killing."
       },
       {
         "q": "How long does ich treatment take?",
@@ -2977,7 +2977,7 @@
     "title": "Aquarium Stocking and Tankmates: How Many Fish, and Which Ones Go Together",
     "seoTitle": "Aquarium Stocking and Tankmates: How Many Fish Fit",
     "seoDescription": "How many fish fit in a tank and which species go together: why inch per gallon fails, the three real limits, the four compatibility checks, and group sizes.",
-    "lastUpdated": "2026-09-25",
+    "lastUpdated": "2026-10-31",
     "noIndex": false,
     "excerpt": "Every species page gives a minimum tank size and stops. This is the page after the minimum: what the inch-per-gallon rule gets wrong, the three things that set how many fish a tank holds, the four checks that decide whether two species can share it, and the group sizes the research supports.",
     "date": "2026-09-16",

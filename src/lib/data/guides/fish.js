@@ -11,7 +11,7 @@ export const fishGuides = fillCostTokens([
     petType: "Fish",
     tagline: "The small schooling fish that share one set of rules and differ on almost every number!",
     seoTitle: "Tetra Care Guide: Schools, Water, and Tankmates",
-    seoDescription: "Every tetra needs a school, a cycled tank and soft water, but the numbers change by species. Compare neon and cardinal tetras and the rules they both share.",
+    seoDescription: "Every tetra needs a school, a cycled tank and soft water, but the numbers change by species. Compare neon, cardinal and ember tetras and the rules they share.",
     funFact: "Neon and cardinal tetras are easy to mix up in a shop tank, but the cardinal's red stripe runs the full length of its body, where the neon's covers only half of it.",
     // Group hub for the tetras (layout "group", rendered by GuideDetail.jsx).
     // Someone here has not picked a fish yet, so it is a chooser, not a
@@ -76,13 +76,13 @@ export const fishGuides = fillCostTokens([
       { label: "Soft water", value: "Every tetra here wants soft, acidic water. Work with what your tap gives you: dosing pH-up or pH-down against KH is how keepers crash a tank.", source: "freshwater-ph-gh-kh-guide" },
       { label: "Food size", value: "A neon's mouth is only about 1 to 2mm across, so micro-pellets or flake crushed fine. Food too large gets spat out.", source: "neon-tetra-feeding-guide" },
       { label: "Quarantine", value: "At least 30 days in a separate tank before a new fish joins the school.", source: "fish-quarantine-and-treatment-guide" },
-      { label: "Ich", value: "86°F held for two weeks kills most strains, but only some tetras survive it. Cardinals can; neons cannot.", source: "aquarium-ich-treatment-guide" },
+      { label: "Ich", value: "86°F held for two weeks kills most strains, but only some tetras survive it. Cardinals can; neons and embers cannot.", source: "aquarium-ich-treatment-guide" },
       { label: "Water changes", value: "25 to 30% weekly. Test nitrate first: under 20 ppm the routine is right, past 40 ppm the next change is 50%.", source: "aquarium-water-changes-guide" },
       { label: "Power outage", value: "Oxygen is the threat, not darkness. Unplug the filter rather than letting it sit dead in the water, and keep the surface moving.", source: "aquarium-power-outage-and-transport-guide" },
     ],
     faqs: [
       { q: "How many of a schooling fish do I need?", a: "Six is the floor most species pages give, and the research points higher. In the group-size study behind that advice, neon tetras and white cloud mountain minnows showed the least aggression and darting in the larger groups, and groups of 10 shoaled the most. Ten of one species beats five each of two." },
-      { q: "Can I treat ich with heat alone?", a: "Only if your fish can live at 86°F for two weeks, because that is the temperature most ich strains cannot survive, and it must be held with extra aeration since warm water carries less oxygen. Discus and cardinal tetras can. Goldfish, koi, zebra danios, neon tetras and bristlenose plecos cannot, and for them heat goes only as high as the species ceiling, to speed the cycle, while salt or medication does the killing." },
+      { q: "Can I treat ich with heat alone?", a: "Only if your fish can live at 86°F for two weeks, because that is the temperature most ich strains cannot survive, and it must be held with extra aeration since warm water carries less oxygen. Discus and cardinal tetras can. Goldfish, koi, zebra danios, neon tetras, ember tetras and bristlenose plecos cannot, and for them heat goes only as high as the species ceiling, to speed the cycle, while salt or medication does the killing." },
       { q: "How long does it take to cycle a fish tank?", a: "Most fishless cycles finish in four to six weeks at a stable warm temperature, though a gene-sequencing study of real home aquarium biofilters found two tanks reaching undetectable ammonia and nitrite by week three while a third took until week eight. Cold water, no seeding, and an inconsistent ammonia dose all push a cycle toward the slower end of that range." },
     ],
   },
