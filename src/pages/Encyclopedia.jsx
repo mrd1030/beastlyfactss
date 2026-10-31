@@ -6,7 +6,8 @@ import { motion } from '@/lib/motion-safe';
 import { Search, Info } from 'lucide-react';
 import { encyclopediaAnimals, encyclopediaCategories, difficultyColor } from '@/lib/data/encyclopedia';
 import BrowseRow from '@/components/shared/BrowseRow';
-import { groupGuides } from '@/lib/data/guideGroups';
+import { groupGuides, nestByHub } from '@/lib/data/guideGroups';
+import BrowseGroup from '@/components/shared/BrowseGroup';
 import { guideCategoryDescription } from '@/lib/seo/categoryDescriptions';
 import { allGuides } from '@/lib/data/guides';
 import { dogGuides } from '@/lib/data/guides/dogs';
@@ -58,7 +59,7 @@ const subtypes = {
   Cats: ['Domestic Shorthair', 'Maine Coon', 'Siamese', 'Ragdoll', 'Bengal', 'Persian'],
   Invertebrates: ['Emperor Scorpion', 'Giant African Millipede', 'Hermit Crab', 'Jumping Spider', 'Madagascar Hissing Cockroach', 'Praying Mantis', 'Stick Insect', 'Tarantula'],
   Amphibians: ['Axolotl', 'Fire-Bellied Toad', 'Pacman Frog', 'Tiger Salamander', "White's Tree Frog"],
-  Fish: ['Angelfish', 'Betta Fish', 'Corydoras Catfish', 'Goldfish', 'Guppy', 'Koi', 'Neon Tetra', 'Oscar'],
+  Fish: ['Angelfish', 'Betta Fish', 'Corydoras Catfish', 'Goldfish', 'Guppy', 'Koi', 'Oscar', 'Tetra'],
 };
 
 export default function Encyclopedia() {
@@ -350,21 +351,39 @@ function EncyclopediaTab({ search, setSearch, activeCategory, setActiveCategory,
               <GroupIcon name={group.name} className="w-4 h-4 text-secondary" />{group.name}
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
-              {group.animals.map((animal) => (
-                <BrowseRow
-                  key={animal.id}
-                  to={`/encyclopedia/animal/${animal.id}/`}
-                  name={animal.name}
-                  subtitle={animal.scientific}
-                  image={animal.image}
-                  emoji={animal.emoji}
-                  difficulty={animal.difficulty}
-                  difficultyClass={difficultyColor[animal.difficulty]}
-                  onOpenLegend={onOpenLegend}
-                  returnTo={currentListPath}
-                  available={animal.available}
-                />
-              ))}
+              {/* A group's species sit in an always-open folder under a
+                  header row that opens the group hub (the encyclopedia has
+                  no entry for a group, so the header points at the hub). */}
+              {nestByHub(group.animals, (a) => a.guideId).map((entry) => {
+                const rowFor = (animal) => ({
+                  to: `/encyclopedia/animal/${animal.id}/`,
+                  name: animal.name,
+                  subtitle: animal.scientific,
+                  image: animal.image,
+                  emoji: animal.emoji,
+                  difficulty: animal.difficulty,
+                  difficultyClass: difficultyColor[animal.difficulty],
+                  onOpenLegend,
+                  returnTo: currentListPath,
+                  available: animal.available,
+                });
+                return entry.hub ? (
+                  <BrowseGroup
+                    key={entry.hub.id}
+                    header={{
+                      to: `/guides/${entry.hub.id}/`,
+                      name: entry.hub.branches.groupName || entry.hub.name,
+                      subtitle: entry.hub.name,
+                      emoji: entry.hub.emoji,
+                      returnTo: currentListPath,
+                    }}
+                  >
+                    {entry.members.map((animal) => <BrowseRow key={animal.id} {...rowFor(animal)} />)}
+                  </BrowseGroup>
+                ) : (
+                  <BrowseRow key={entry.item.id} {...rowFor(entry.item)} />
+                );
+              })}
             </div>
           </motion.div>
         ))}
@@ -455,20 +474,26 @@ function GuidesTab({ activeFilter, setActiveFilter, dogSize, setDogSize, activeS
                 <GroupIcon name={group.name} className="w-4 h-4 text-secondary" />{group.name}
               </h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
-                {group.guides.map((guide) => (
-                  <BrowseRow
-                    key={guide.id}
-                    to={`/guides/${guide.id}/`}
-                    name={guide.name}
-                    subtitle={guide.tagline}
-                    image={guide.image}
-                    emoji={guide.emoji}
-                    difficulty={guide.difficulty}
-                    difficultyClass={difficultyColor[guide.difficulty]}
-                    onOpenLegend={onOpenLegend}
-                    returnTo={currentListPath}
-                  />
-                ))}
+                {nestByHub(group.guides, (g) => g.id).map((entry) => {
+                  const rowFor = (guide) => ({
+                    to: `/guides/${guide.id}/`,
+                    name: guide.name,
+                    subtitle: guide.tagline,
+                    image: guide.image,
+                    emoji: guide.emoji,
+                    difficulty: guide.difficulty,
+                    difficultyClass: difficultyColor[guide.difficulty],
+                    onOpenLegend,
+                    returnTo: currentListPath,
+                  });
+                  return entry.hub ? (
+                    <BrowseGroup key={entry.hub.id} header={rowFor(entry.hub)}>
+                      {entry.members.map((guide) => <BrowseRow key={guide.id} {...rowFor(guide)} />)}
+                    </BrowseGroup>
+                  ) : (
+                    <BrowseRow key={entry.item.id} {...rowFor(entry.item)} />
+                  );
+                })}
               </div>
             </motion.div>
           ))

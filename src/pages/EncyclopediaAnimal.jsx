@@ -7,6 +7,7 @@ import { ArrowLeft, BookOpen, ChevronRight, ClipboardList, Globe, History, Spark
 import IconChip from '@/components/shared/IconChip';
 import { encyclopediaAnimals, difficultyColor } from '@/lib/data/encyclopedia';
 import { allGuides } from '@/lib/data/guides';
+import { hubOf } from '@/lib/data/guideGroups';
 import { facts } from '@/lib/data/facts';
 import { getRelatedFacts } from '@/lib/utils/matchAnimal';
 import { truncateDescription } from '@/lib/utils/truncate';
@@ -312,6 +313,17 @@ export default function EncyclopediaAnimal() {
                     View full guide <ChevronRight className="w-3.5 h-3.5" />
                   </div>
                 </Link>
+                {/* A species in a group (the tetras) also points at the group
+                    hub, which carries the rules the whole group shares. */}
+                {hubOf[guide.id] && (
+                  <Link
+                    to={`/guides/${hubOf[guide.id].id}/`}
+                    state={{ returnTo: location.state?.returnTo || '/encyclopedia/' }}
+                    className="mt-3 pt-3 border-t border-border/60 flex items-center gap-1 text-xs font-body font-semibold text-secondary hover:underline"
+                  >
+                    {`Group guide: ${hubOf[guide.id].name}`} <ChevronRight className="w-3.5 h-3.5 flex-shrink-0" />
+                  </Link>
+                )}
               </div>
             )}
 

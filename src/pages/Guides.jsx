@@ -10,7 +10,8 @@ import { dogGuides } from '@/lib/data/guides/dogs';
 import { catGuides } from '@/lib/data/guides/cats';
 import { difficultyColor } from '@/lib/data/encyclopedia';
 import BrowseRow from '@/components/shared/BrowseRow';
-import { groupGuides } from '@/lib/data/guideGroups';
+import { groupGuides, nestByHub } from '@/lib/data/guideGroups';
+import BrowseGroup from '@/components/shared/BrowseGroup';
 import { DifficultyLegend } from '@/components/shared/DifficultyLegend';
 import { trackEvent } from '@/lib/analytics';
 import { BookOpen, BookOpen as BadgeIcon } from 'lucide-react';
@@ -51,7 +52,7 @@ const subtypes = {
   Cats: ['Domestic Shorthair', 'Maine Coon', 'Siamese', 'Ragdoll', 'Bengal', 'Persian'],
   Invertebrates: ['Emperor Scorpion', 'Giant African Millipede', 'Hermit Crab', 'Jumping Spider', 'Madagascar Hissing Cockroach', 'Praying Mantis', 'Stick Insect', 'Tarantula'],
   Amphibians: ['Axolotl', 'Fire-Bellied Toad', 'Pacman Frog', 'Tiger Salamander', "White's Tree Frog"],
-  Fish: ['Angelfish', 'Betta Fish', 'Corydoras Catfish', 'Goldfish', 'Guppy', 'Koi', 'Neon Tetra', 'Oscar'],
+  Fish: ['Angelfish', 'Betta Fish', 'Corydoras Catfish', 'Goldfish', 'Guppy', 'Koi', 'Oscar', 'Tetra'],
 };
 
 const resolveFilter = (slug) => {
@@ -279,20 +280,27 @@ export default function Guides() {
                 <GroupIcon name={group.name} className="w-4 h-4 text-secondary" />{group.name}
               </h2>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
-                {group.guides.map((guide) => (
-                  <BrowseRow
-                    key={guide.id}
-                    to={`/guides/${guide.id}/`}
-                    name={guide.name}
-                    subtitle={guide.tagline}
-                    image={guide.image}
-                    emoji={guide.emoji}
-                    difficulty={guide.difficulty}
-                    difficultyClass={difficultyColor[guide.difficulty]}
-                    onOpenLegend={() => setIsLegendOpen(true)}
-                    returnTo={activeFilter === 'All' ? '/guides/' : `/guides/category/${toSlug(activeFilter)}/`}
-                  />
-                ))}
+                {nestByHub(group.guides, (g) => g.id).map((entry) => {
+                  const returnTo = activeFilter === 'All' ? '/guides/' : `/guides/category/${toSlug(activeFilter)}/`;
+                  const rowFor = (guide) => ({
+                    to: `/guides/${guide.id}/`,
+                    name: guide.name,
+                    subtitle: guide.tagline,
+                    image: guide.image,
+                    emoji: guide.emoji,
+                    difficulty: guide.difficulty,
+                    difficultyClass: difficultyColor[guide.difficulty],
+                    onOpenLegend: () => setIsLegendOpen(true),
+                    returnTo,
+                  });
+                  return entry.hub ? (
+                    <BrowseGroup key={entry.hub.id} header={rowFor(entry.hub)}>
+                      {entry.members.map((guide) => <BrowseRow key={guide.id} {...rowFor(guide)} />)}
+                    </BrowseGroup>
+                  ) : (
+                    <BrowseRow key={entry.item.id} {...rowFor(entry.item)} />
+                  );
+                })}
               </div>
             </motion.div>
           ))

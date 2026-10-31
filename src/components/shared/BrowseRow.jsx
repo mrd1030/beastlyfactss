@@ -115,7 +115,7 @@ export default function BrowseRow({
   );
 
   // Optional figure strip under the row, used by a group hub's species list
-  // (tetra-universal) so each species carries its own numbers instead of a
+  // (tetras) so each species carries its own numbers instead of a
   // comparison table that grows a column per species. The browse lists pass no
   // facts and render exactly as before. Each label and value pair is kept on
   // one line so "72 to 78°F" never splits across a wrap.

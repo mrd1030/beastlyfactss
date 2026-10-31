@@ -14,6 +14,7 @@ import { relatedPosts } from '@/lib/relatedPosts';
 import { getRelatedArticleSlugs } from '@/lib/data/relatedArticles';
 import DeepDiveList from '@/components/shared/DeepDiveList';
 import BrowseRow from '@/components/shared/BrowseRow';
+import { hubOf } from '@/lib/data/guideGroups';
 import AffiliateLink from '@/components/mdx/AffiliateLink';
 import { getAffiliateForItem, RETAILERS } from '@/lib/data/affiliateProducts';
 import { CARE_PACKAGES, carePackageBookCover, carePackageSampleHref, isCarePackageBuyable } from '@/lib/data/carePackages';
@@ -429,7 +430,7 @@ export default function GuideDetail() {
               </div>
             )}
 
-            {/* Group hub (tetra-universal): the species list uses the same
+            {/* Group hub (tetras): the species list uses the same
                 BrowseRow as the guides and encyclopedia lists, so a species
                 looks the same here as everywhere else it is browsed. Name,
                 photo, tagline and difficulty come from that species' own guide
@@ -669,6 +670,64 @@ export default function GuideDetail() {
             </div>
 
             {/* Encyclopedia link */}
+            {/* Group hub sidebar: a group has no encyclopedia entry of its
+                own, so this card lists each member species' entry instead. */}
+            {guide.branches && (() => {
+              const entries = guide.branches.species
+                .filter((sp) => sp.id && !sp.planned)
+                .map((sp) => encyclopediaAnimals.find((a) => a.guideId === sp.id))
+                .filter(Boolean);
+              return entries.length > 0 ? (
+                <div className="bg-card border border-border rounded-2xl p-5">
+                  <p className="text-xs font-body font-semibold text-muted-foreground uppercase tracking-wide mb-3 flex items-center gap-1.5">
+                    <Library className="w-3.5 h-3.5" aria-hidden="true" />Encyclopedia
+                  </p>
+                  <div className="divide-y divide-border/60">
+                    {entries.map((a) => (
+                      <Link key={a.id} to={`/encyclopedia/animal/${a.id}/`} state={{ returnTo: `/guides/${guide.id}/` }} className="group flex items-center gap-3 py-2.5 first:pt-0 last:pb-0">
+                        <span className="text-xl flex-shrink-0">{a.emoji}</span>
+                        <span className="flex-1 min-w-0">
+                          <span className="block font-body font-bold text-sm text-foreground group-hover:text-secondary transition-colors leading-snug">{a.name}</span>
+                          <span className="block text-xs text-muted-foreground font-body italic">{a.scientific}</span>
+                        </span>
+                        <ChevronRight className="w-3.5 h-3.5 flex-shrink-0 text-muted-foreground group-hover:text-secondary" />
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              ) : null;
+            })()}
+
+            {/* Species in a group: the group hub, then the other species in
+                it, so the members cross-link through the hub's roster. */}
+            {hubOf[guide.id] && (() => {
+              const hub = hubOf[guide.id];
+              const siblings = hub.branches.species
+                .filter((sp) => sp.id && !sp.planned && sp.id !== guide.id)
+                .map((sp) => allGuides.find((g) => g.id === sp.id))
+                .filter(Boolean);
+              return (
+                <div className="bg-card border border-border rounded-2xl p-5">
+                  <p className="text-xs font-body font-semibold text-muted-foreground uppercase tracking-wide mb-3 flex items-center gap-1.5">
+                    <Fish className="w-3.5 h-3.5" aria-hidden="true" />{hub.branches.groupName || 'Group'}
+                  </p>
+                  <Link to={`/guides/${hub.id}/`} state={hubReturn} className="group block">
+                    <p className="font-body font-bold text-sm text-foreground group-hover:text-secondary transition-colors leading-snug">{hub.name}</p>
+                    <p className="text-xs text-muted-foreground font-body mt-1 leading-relaxed">{hub.tagline}</p>
+                  </Link>
+                  {siblings.length > 0 && (
+                    <div className="mt-3 pt-3 border-t border-border/60 flex flex-wrap gap-x-3 gap-y-1">
+                      {siblings.map((g) => (
+                        <Link key={g.id} to={`/guides/${g.id}/`} className="inline-flex items-center gap-0.5 text-xs font-body font-semibold text-secondary hover:underline">
+                          {g.name} <ChevronRight className="w-3 h-3" />
+                        </Link>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              );
+            })()}
+
             {encAnimal && (
               <div className="bg-card border border-border rounded-2xl p-5">
                 <p className="text-xs font-body font-semibold text-muted-foreground uppercase tracking-wide mb-3 flex items-center gap-1.5">

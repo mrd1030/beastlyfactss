@@ -4,7 +4,7 @@ import { fillCostTokens } from '../../costs.js';
 
 export const fishGuides = fillCostTokens([
   {
-    id: "tetra-universal",
+    id: "tetras",
     name: "Tetra Care: The Essentials",
     emoji: "🐟",
     difficulty: "Beginner",
@@ -43,6 +43,7 @@ export const fishGuides = fillCostTokens([
       ],
     },
     branches: {
+      groupName: "Tetras",
       heading: "Pick your tetra",
       intro: "Same rules, different numbers. The figures under each species come from its own guides, and the row opens its full care guide.",
       fields: ["Tank", "Temp", "pH", "Size"],
