@@ -38,6 +38,9 @@ across every platform is docs/SOCIAL_PLAN.md.
   the post. The same looked-up fact runs on X in different wording. Log them
   in social/looked-up-facts.json when the week is marked; read the log and
   grep facts.js first so nothing repeats.
+- QUESTIONS NEVER PROMISE (owner, 2026-10-31): no "best one wins", no
+  prize, feature, repost or shoutout for answering, in the post or in any
+  reply. A question asks; it never offers.
 - TAGS: one per post on a word already in the sentence, on facts and
   one-liners as well as questions. Common words only (#turtle, #fish, #bird,
   #frog), never the species name (#matamata).

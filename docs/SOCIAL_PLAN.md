@@ -113,8 +113,9 @@ repo.
 
 `social/questions.json` holds about fifty questions for pet owners: the
 story behind a name, the best "I did nothing wrong" face, the oldest pet
-they have had, the weirdest thing their pet eats, and so on. No "comment
-YES" style bait. Each entry carries a Threads version (one or two lines,
+they have had, the weirdest thing their pet eats, and so on. No "comment YES" style bait, and nothing that sounds like a promise (owner,
+2026-10-31): no "best one wins", no prize, feature, repost or shoutout
+offered for answering. A question asks; it never offers. Each entry carries a Threads version (one or two lines,
 take first), an X version (one line), a card headline, a suggested animal
 for the card photo, the word that carries the Threads tag, and a used date
 per platform.

@@ -26,6 +26,9 @@ across every platform is docs/SOCIAL_PLAN.md.
   Log them in social/looked-up-facts.json when the week is marked; read the
   log and grep facts.js first so nothing repeats. Under 280 characters, the
   prefix exact, no tag, no hashtag.
+- QUESTIONS NEVER PROMISE (owner, 2026-10-31): no "best one wins", no
+  prize, feature, repost or shoutout for answering, in the post or in any
+  reply. A question asks; it never offers.
 - WALLPAPERS: gone from the schedule (owner, 2026-10-31). No wallpaper
   rows, replies, sheet or ledger lines. The Beastly Walls art runs where the
   owner posts it by hand.
