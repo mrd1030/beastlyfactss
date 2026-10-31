@@ -433,74 +433,43 @@ export default function GuideDetail() {
                 BrowseRow as the guides and encyclopedia lists, so a species
                 looks the same here as everywhere else it is browsed. Name,
                 photo, tagline and difficulty come from that species' own guide
-                entry. A planned species has no guide yet, so it renders as the
-                dimmed, unlinked placeholder row. The figures sit in a table
-                under the rows, one column per species with a guide. */}
-            {isRouter && guide.branches && (() => {
-              const live = guide.branches.species
-                .filter((sp) => !sp.planned)
-                .map((sp) => ({ ...sp, entry: allGuides.find((g) => g.id === sp.id) }))
-                .filter((sp) => sp.entry);
-              return (
-                <div className="bg-card border border-border rounded-2xl p-5">
-                  <h2 className="font-display font-bold text-base text-foreground mb-2 flex items-center gap-2">
-                    <IconChip icon={Fish} color="orange" size="heading" />{guide.branches.heading}
-                  </h2>
-                  {guide.branches.intro && (
-                    <p className="text-sm text-muted-foreground font-body mb-4">{guide.branches.intro}</p>
-                  )}
-                  {/* Two columns on a tablet, one from lg up: the hub's main
-                      column is two thirds of the page there, and two rows side
-                      by side cut "Cardinal Tetra" to "Cardin al..." beside the
-                      full difficulty chip. */}
-                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-2">
-                    {guide.branches.species.map((sp) => {
-                      const entry = sp.planned ? null : allGuides.find((g) => g.id === sp.id);
-                      return entry ? (
-                        <BrowseRow
-                          key={sp.id}
-                          to={`/guides/${entry.id}/`}
-                          name={entry.name}
-                          subtitle={entry.tagline}
-                          image={entry.image}
-                          emoji={entry.emoji}
-                          difficulty={entry.difficulty}
-                          difficultyClass={difficultyColor[entry.difficulty]}
-                          onOpenLegend={() => setIsLegendOpen(true)}
-                          returnTo={`/guides/${guide.id}/`}
-                        />
-                      ) : (
-                        <BrowseRow key={sp.name} name={sp.name} subtitle="Guide coming" emoji={guide.emoji} available={false} />
-                      );
-                    })}
-                  </div>
-                  {live.length > 0 && (
-                    <div className="mt-5 overflow-x-auto">
-                      <table className="w-full text-xs font-body border-collapse">
-                        <thead>
-                          <tr className="border-b border-border">
-                            <th className="text-left font-semibold text-muted-foreground py-2 pr-3 w-28" scope="col"><span className="sr-only">Figure</span></th>
-                            {live.map((sp) => (
-                              <th key={sp.id} scope="col" className="text-left font-bold text-foreground py-2 pr-3">{sp.entry.name}</th>
-                            ))}
-                          </tr>
-                        </thead>
-                        <tbody className="divide-y divide-border/60">
-                          {guide.branches.fields.map((field, i) => (
-                            <tr key={field}>
-                              <th scope="row" className="text-left font-semibold text-foreground py-2 pr-3 align-top">{field}</th>
-                              {live.map((sp) => (
-                                <td key={sp.id} className="text-muted-foreground py-2 pr-3 align-top">{sp.values[i]}</td>
-                              ))}
-                            </tr>
-                          ))}
-                        </tbody>
-                      </table>
-                    </div>
-                  )}
+                entry; its figures ride in a strip under the row, so a new
+                species adds a row rather than a table column. A planned species
+                has no guide yet, so it renders as the dimmed, unlinked
+                placeholder row with no figures. One column at every width:
+                rows carrying a figure strip wrap badly side by side. */}
+            {isRouter && guide.branches && (
+              <div className="bg-card border border-border rounded-2xl p-5">
+                <h2 className="font-display font-bold text-base text-foreground mb-2 flex items-center gap-2">
+                  <IconChip icon={Fish} color="orange" size="heading" />{guide.branches.heading}
+                </h2>
+                {guide.branches.intro && (
+                  <p className="text-sm text-muted-foreground font-body mb-4">{guide.branches.intro}</p>
+                )}
+                <div className="grid grid-cols-1 gap-2">
+                  {guide.branches.species.map((sp) => {
+                    const entry = sp.planned ? null : allGuides.find((g) => g.id === sp.id);
+                    return entry ? (
+                      <BrowseRow
+                        key={sp.id}
+                        to={`/guides/${entry.id}/`}
+                        name={entry.name}
+                        subtitle={entry.tagline}
+                        image={entry.image}
+                        emoji={entry.emoji}
+                        difficulty={entry.difficulty}
+                        difficultyClass={difficultyColor[entry.difficulty]}
+                        onOpenLegend={() => setIsLegendOpen(true)}
+                        returnTo={`/guides/${guide.id}/`}
+                        facts={guide.branches.fields.map((label, i) => ({ label, value: sp.values[i] }))}
+                      />
+                    ) : (
+                      <BrowseRow key={sp.name} name={sp.name} subtitle="Guide coming" emoji={guide.emoji} available={false} />
+                    );
+                  })}
                 </div>
-              );
-            })()}
+              </div>
+            )}
 
             {isRouter && guide.emergencyCard && (
               <div className="bg-destructive/5 border border-destructive/20 rounded-2xl p-5">

@@ -44,6 +44,7 @@ export default function BrowseRow({
   onOpenLegend,
   returnTo,
   available = true,
+  facts,
 }) {
   const diffClass = difficultyClass || difficultyFallback;
 
@@ -106,6 +107,42 @@ export default function BrowseRow({
     );
   }
 
+  const trailing = (
+    <div className="flex items-center gap-2 flex-shrink-0">
+      {chip}
+      <ChevronRight className="w-3.5 h-3.5 text-muted-foreground group-hover:text-secondary transition-colors" />
+    </div>
+  );
+
+  // Optional figure strip under the row, used by a group hub's species list
+  // (tetra-universal) so each species carries its own numbers instead of a
+  // comparison table that grows a column per species. The browse lists pass no
+  // facts and render exactly as before. Each label and value pair is kept on
+  // one line so "72 to 78°F" never splits across a wrap.
+  if (facts?.length) {
+    return (
+      <Link to={to} state={{ returnTo }}>
+        <motion.div
+          whileHover={{ x: 3 }}
+          className="bg-card border border-border rounded-xl px-4 py-3 hover:border-secondary/40 hover:shadow-sm transition-all group cursor-pointer"
+        >
+          <div className="flex items-center justify-between">
+            {label}
+            {trailing}
+          </div>
+          <dl className="mt-2 pl-[3.25rem] flex flex-wrap gap-x-3 gap-y-0.5 text-[11px] font-body leading-snug">
+            {facts.map((f) => (
+              <div key={f.label} className="flex gap-1 whitespace-nowrap">
+                <dt className="font-semibold text-foreground">{f.label}</dt>
+                <dd className="text-muted-foreground">{f.value}</dd>
+              </div>
+            ))}
+          </dl>
+        </motion.div>
+      </Link>
+    );
+  }
+
   return (
     <Link to={to} state={{ returnTo }}>
       <motion.div
@@ -113,10 +150,7 @@ export default function BrowseRow({
         className="flex items-center justify-between bg-card border border-border rounded-xl px-4 py-3 hover:border-secondary/40 hover:shadow-sm transition-all group cursor-pointer"
       >
         {label}
-        <div className="flex items-center gap-2 flex-shrink-0">
-          {chip}
-          <ChevronRight className="w-3.5 h-3.5 text-muted-foreground group-hover:text-secondary transition-colors" />
-        </div>
+        {trailing}
       </motion.div>
     </Link>
   );
