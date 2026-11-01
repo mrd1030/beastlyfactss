@@ -499,23 +499,28 @@ export default function GuideDetail() {
               );
             })()}
 
-            {/* Keeping tetras together: one short line per pair of species,
-                plus one for the whole group once there are three or more,
-                with a "Yes, but with limits" verdict for a band under 3°F and any
-                species caution (a fin nipper) printed under the line,
+            {/* Keeping tetras together: a grid of every pair of species,
                 worked out from their temperature and pH ranges at render time.
-                It prints no number: a shared band is a figure no guide states,
-                so the line names which species sets each edge of it, and the
-                species rows above carry the figures. */}
+                Each cell holds one word: Yes when the ranges overlap, Limits
+                when the shared temperature band is under MIN_BAND_F degrees, No
+                when the ranges miss or only touch at a single degree. The cell
+                prints no number, since a shared band is a figure no guide
+                states; its title and aria-label carry a sentence naming which
+                species sets each edge, and the species rows above carry the
+                figures. A species `caution` (a fin nipper) belongs to the
+                species, not to a pairing, so it is marked with a dagger on its
+                row and column and printed once under the key. Below sm the
+                rows are numbered and the numbers head the columns, so six
+                species fit a phone without sideways scrolling. */}
             {isGroup && guide.branches && (() => {
               const live = guide.branches.species.filter((sp) => !sp.planned && sp.ranges);
               if (live.length < 2) return null;
               const short = (sp) => sp.name.replace(/ Tetra$/, '').toLowerCase();
-              const label = (set) => set.map((sp) => sp.name.replace(/ Tetra$/, '')).join(' + ');
+              const display = (sp) => { const n = sp.name.replace(/ Tetra$/, ''); return n.charAt(0) + n.slice(1).toLowerCase(); };
               // Where the band all of `set` share sits, in one phrase named
               // after one species: inside a species' whole range if the band is
               // exactly that range, otherwise the end of the first species'
-              // range it falls at. The figures are in the rows above.
+              // range it falls at.
               const band = (set, key) => {
                 const lo = Math.max(...set.map((sp) => sp.ranges[key][0]));
                 const hi = Math.min(...set.map((sp) => sp.ranges[key][1]));
@@ -527,17 +532,18 @@ export default function GuideDetail() {
                 if (top) return { sp: top, where: 'top' };
                 return { sp: set.find((sp) => sp.ranges[key][0] === lo), where: 'bottom' };
               };
-              // A shared band narrower than MIN_BAND_F degrees is "Yes, but with limits":
-              // the ranges touch, but a heater drifting a degree or two takes
-              // one species out of its range. The band's width is worked out
-              // here and never printed, since no guide states it.
               const MIN_BAND_F = 3;
               const tempWidth = (set) => Math.min(...set.map((sp) => sp.ranges.tempF[1])) - Math.max(...set.map((sp) => sp.ranges.tempF[0]));
+              const verdict = (set) => {
+                if (!band(set, 'tempF') || !band(set, 'ph') || tempWidth(set) <= 0) return 'No';
+                return tempWidth(set) < MIN_BAND_F ? 'Limits' : 'Yes';
+              };
               const fit = (set) => {
                 const t = band(set, 'tempF');
                 const p = band(set, 'ph');
                 if (!t || !p) return `No: no shared ${!t ? 'temperature' : 'pH'}.`;
-                const verdict = tempWidth(set) < MIN_BAND_F ? 'Yes, but with limits' : 'Yes';
+                if (tempWidth(set) <= 0) return 'No: the temperature ranges only meet at a single degree.';
+                const lead = verdict(set) === 'Limits' ? 'Yes, but with limits' : 'Yes';
                 const they = set.length === 2 ? 'both' : 'they all';
                 const tempText = t.all ? `any temperature ${they} list`
                   : t.where === 'within' ? `within the ${short(t.sp)}'s temperature range`
@@ -546,34 +552,71 @@ export default function GuideDetail() {
                 const phText = p.all ? `at any pH ${they} list`
                   : p.where === 'within' ? `within ${owner(p.sp)} pH range`
                   : `at the ${p.where === 'top' ? 'less acidic' : 'acidic'} end of ${owner(p.sp)} pH range`;
-                return `${verdict}: ${tempText}, ${phText}.`;
+                return `${lead}: ${tempText}, ${phText}.`;
               };
-              // Water is not the whole answer. A species can carry a
-              // `caution` (copied from its own handling guide, for example a
-              // fin nipper), printed on every line that includes it.
-              const cautions = (set) => set.filter((sp) => sp.caution).map((sp) => sp.caution);
-              const sets = [];
-              for (let i = 0; i < live.length; i++) for (let j = i + 1; j < live.length; j++) sets.push([live[i], live[j]]);
-              if (live.length > 2) sets.push(live);
+              const markClass = {
+                Yes: difficultyColor.Beginner,
+                Limits: difficultyColor.Intermediate,
+                No: difficultyColor.Advanced,
+              };
+              const cautioned = live.filter((sp) => sp.caution);
+              const dagger = (sp) => (sp.caution ? <span aria-hidden="true">{'\u2020'}</span> : null);
+              const count = ['', '', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight'][live.length] || String(live.length);
+              const allFit = live.length > 2 ? fit(live) : null;
               return (
                 <div className="bg-card border border-border rounded-2xl p-5">
                   <h2 className="font-display font-bold text-base text-foreground mb-2 flex items-center gap-2">
-                    <IconChip icon={Scale} color="orange" size="heading" />Keeping tetras together
+                    <IconChip icon={Scale} color="orange" size="heading" />{`Keeping ${(guide.branches.groupName || 'species').toLowerCase()} together`}
                   </h2>
-                  <p className="text-sm text-muted-foreground font-body mb-3">Which species can share a tank, from the ranges above.</p>
-                  <dl className="divide-y divide-border/60">
-                    {sets.map((set) => (
-                      <div key={set.map((sp) => sp.id).join('-')} className="py-2 grid grid-cols-1 sm:grid-cols-[11rem_1fr] gap-x-4 gap-y-0.5">
-                        <dt className="text-sm font-body font-bold text-foreground">{set.length === live.length && live.length > 2 ? `All ${['', '', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight'][live.length] || live.length}` : label(set)}</dt>
-                        <dd className="text-sm text-muted-foreground font-body">
-                          {fit(set)}
-                          {cautions(set).map((c) => (
-                            <span key={c} className="block mt-0.5 text-foreground"><span className="font-semibold">Caution:</span> {c}</span>
-                          ))}
-                        </dd>
-                      </div>
-                    ))}
-                  </dl>
+                  <p className="text-sm text-muted-foreground font-body mb-3">{`Which ${(guide.branches.groupName || 'species').toLowerCase()} can share one tank on water alone, worked out from the ranges above.`}</p>
+                  <table className="w-full table-fixed border-separate border-spacing-1 text-xs font-body">
+                    <thead>
+                      <tr>
+                        <th scope="col" className="w-[4.75rem] sm:w-28"><span className="sr-only">Species</span></th>
+                        {live.map((sp, i) => (
+                          <th key={sp.id} scope="col" className="font-semibold text-foreground text-center align-bottom leading-tight pb-1">
+                            <span className="sm:hidden">{i + 1}{dagger(sp)}</span>
+                            <span className="hidden sm:inline">{display(sp)}{dagger(sp)}</span>
+                          </th>
+                        ))}
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {live.map((row, r) => (
+                        <tr key={row.id}>
+                          <th scope="row" className="text-left font-semibold text-foreground leading-tight pr-1">
+                            <span className="sm:hidden">{`${r + 1} `}</span>{display(row)}{dagger(row)}
+                          </th>
+                          {live.map((col, c) => {
+                            if (r === c) return <td key={col.id} className="bg-muted/50 rounded-md" aria-label="Same species" />;
+                            const pair = [row, col];
+                            const v = verdict(pair);
+                            const sentence = `${display(row)} and ${display(col).toLowerCase()}: ${fit(pair)}`;
+                            return (
+                              <td key={col.id} className={`text-center font-semibold rounded-md py-1.5 px-0 text-[10.5px] sm:text-xs ${markClass[v]}`} title={sentence} aria-label={sentence}>
+                                {v}
+                              </td>
+                            );
+                          })}
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                  <p className="text-xs text-muted-foreground font-body mt-3">
+                    <span className="font-semibold text-foreground">Yes:</span> temperature and pH ranges overlap.{' '}
+                    <span className="font-semibold text-foreground">Limits:</span> they overlap, but the shared temperature band is under {MIN_BAND_F}°F, so a heater drifting a degree can take one species out of range.{' '}
+                    {live.some((a, i) => live.some((b, j) => j > i && verdict([a, b]) === 'No')) && (
+                      <><span className="font-semibold text-foreground">No:</span> the ranges miss, or meet at a single degree.</>
+                    )}
+                  </p>
+                  {cautioned.map((sp) => (
+                    <p key={sp.id} className="text-xs text-foreground font-body mt-1.5">{'\u2020 '}{sp.caution}</p>
+                  ))}
+                  {allFit && (
+                    <p className="text-sm text-muted-foreground font-body mt-3">
+                      <span className="font-semibold text-foreground">{`All ${count} together. `}</span>{allFit}
+                    </p>
+                  )}
                 </div>
               );
             })()}

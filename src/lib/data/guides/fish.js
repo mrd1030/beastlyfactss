@@ -57,9 +57,12 @@ export const fishGuides = fillCostTokens([
         {
           id: "cardinal-tetra",
           name: "Cardinal Tetra",
-          values: ["20-gallon long for 10", "77 to 82°F", "5.0 to 7.0", "2 in"],
+          // The species' whole keeping range, like every other row, not its
+          // 77 to 82°F everyday target: comparing a target with full ranges
+          // made neon and cardinal look like they met at a single degree.
+          values: ["20-gallon long for 10", "73 to 84°F", "5.0 to 7.0", "2 in"],
           sources: ["cardinal-tetra-tank-setup-guide", "cardinal-tetra-tank-setup-guide", "cardinal-tetra-tank-setup-guide", null],
-          ranges: { tempF: [77, 82], ph: [5.0, 7.0] },
+          ranges: { tempF: [73, 84], ph: [5.0, 7.0] },
         },
         {
           id: "ember-tetra",
