@@ -88,3 +88,4 @@ frog, pen-tailed tree shrew) and Adobe Firefly for ids 287 to 296.
 | `glowlight-tetra.jpg` (hub and encyclopedia head, `public/assets/guides/`), resized to 1168x784, not cropped | Adobe Firefly, partner model Gemini 3.1 (Nano Banana 2) | 2026-11-01 |
 | `glowlight-tetra-cost.jpg` (guide hero, `public/assets/images/`), resized to 1168x784, not cropped | Adobe Firefly, partner model Gemini 3.1 (Nano Banana 2) | 2026-11-01 |
 | `glowlight-tetra-tank-setup.jpg` (guide hero, `public/assets/images/`), resized to 1168x784, not cropped | Adobe Firefly, partner model Gemini 3.1 (Nano Banana 2) | 2026-11-01 |
+| `glowlight-tetra-feeding.jpg` (guide hero, `public/assets/images/`), resized to 1168x784, not cropped | Adobe Firefly, partner model Gemini 3.1 (Nano Banana 2) | 2026-11-01 |

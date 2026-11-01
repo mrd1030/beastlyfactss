@@ -8,6 +8,15 @@ Newest first.
 
 ---
 
+## 2026-11-01: glowlight feeding hero
+
+`/assets/images/glowlight-tetra-feeding.jpg`, Adobe Firefly with Nano Banana 2,
+owner approved on the third try (the first showed a cloud of white daphnia, an
+overfeeding the guide warns against; the second drew each daphnia near the
+size of a fish's head): about two dozen live daphnia, each about the size of a
+fish's eye. 3:2, resized to 1168x784 through mozjpeg at quality 80. Recorded in
+IMAGE_CREDITS.md.
+
 ## 2026-11-01: glowlight tank setup hero
 
 `/assets/images/glowlight-tetra-tank-setup.jpg`, Adobe Firefly with Nano
