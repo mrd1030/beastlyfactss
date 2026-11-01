@@ -491,7 +491,7 @@ export const fishGuides = fillCostTokens([
         { label: "Water chemistry", value: "Soft and acidic, pH 5.0 to 7.0 and toward the low end. Test your source water first rather than assuming it fits, and ammonia and nitrite read zero before stocking.", source: "cardinal-tetra-tank-setup-guide" },
         { label: "Filtration and substrate", value: "Gentle flow, a sponge filter is the usual pick, over fine gravel or sand.", source: "cardinal-tetra-tank-setup-guide" },
         { label: "Light and blackwater", value: "Dim light, driftwood and Indian almond leaves for tannins, dense planting. In a lab test, intense light faded the stripes, while fish kept at 250 lux or less looked more vivid.", source: "cardinal-tetra-tank-setup-guide" },
-        { label: "Mostly wild caught", value: "Still largely collected from the Rio Negro, and wild-caught fish cope worse with deteriorating water than bred ones, so the first weeks decide a lot. Buy from a shop that has held them a while, acclimate slowly, and keep the tank dim and quiet.", source: "cardinal-tetra-enrichment-guide" },
+        { label: "Often wild caught", value: "Many are still collected from the Rio Negro, and wild-caught fish cope worse with deteriorating water than bred ones, so the first weeks decide a lot. Buy from a shop that has held them a while, acclimate slowly, and keep the tank dim and quiet.", source: "cardinal-tetra-enrichment-guide" },
         { label: "Diet", value: "A micro-pellet or crushed flake as the staple, with live or frozen bloodworms, mosquito larvae, daphnia or moina. Whole flakes and standard pellets are too big for the mouth and get spat out, which starves the fish.", source: "cardinal-tetra-feeding-guide" },
         { label: "Feeding schedule", value: "Twice a day, what the school finishes in a couple of minutes, or split into three or four smaller feeds. Food still visible after that means cut back, since cardinals are sensitive to nitrite.", source: "cardinal-tetra-feeding-guide" },
         { label: "Water changes", value: "25 to 30% weekly from the substrate, with conditioned water at tank temperature. Test nitrate first: under 20 ppm the routine is right, past 40 ppm the next change is 50%.", source: "aquarium-water-changes-guide" },
@@ -521,7 +521,7 @@ export const fishGuides = fillCostTokens([
       { slug: "cardinal-tetra-feeding-guide", line: "Micro-pellet portions, the two-minute rule, and why removing a dead fish immediately is the real defense against an incurable disease." },
       { slug: "cardinal-tetra-handling-guide", line: "Why this is an observation fish, the ten-fish minimum that functions as a welfare need, and the stripe that tells it from a neon." },
       { slug: "cardinal-tetra-health-issues-guide", line: "Neon tetra disease, ich, fin rot, swim bladder trouble, and the 2008 study that found this species sensitive to nitrite." },
-      { slug: "cardinal-tetra-enrichment-guide", line: "Most of them are still wild caught, what that means for the first weeks, and the borrowed neon tetra finding that says ten." },
+      { slug: "cardinal-tetra-enrichment-guide", line: "Many are still wild caught, what that means for the first weeks, and the borrowed neon tetra finding that says ten." },
     ],
     buyList: [
       "20-gallon long tank, a base of at least 24 x 12 inches",
