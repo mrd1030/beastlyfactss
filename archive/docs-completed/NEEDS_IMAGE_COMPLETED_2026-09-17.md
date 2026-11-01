@@ -8,6 +8,15 @@ Newest first.
 
 ---
 
+## 2026-11-01: glowlight enrichment hero (all four new tetra sets complete)
+
+`/assets/images/glowlight-tetra-enrichment.jpg`, Adobe Firefly with Nano Banana
+2, owner approved: a school of glowlights in a dark, tannin-stained forest
+stream among roots and leaf litter. With it the ember, rummy-nose, black skirt
+and glowlight sets (hub heads and six heroes each) and the tetras group page
+photo are all on disk, and NEEDS_IMAGE.md holds no tetra items. 3:2, resized to
+1168x784 through mozjpeg at quality 80. Recorded in IMAGE_CREDITS.md.
+
 ## 2026-11-01: glowlight health issues hero
 
 `/assets/images/glowlight-tetra-health-issues.jpg`, Adobe Firefly with Nano
