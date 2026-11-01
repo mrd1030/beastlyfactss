@@ -97,7 +97,7 @@ export const fishSheets = {
   },
   'cardinal-tetra': {
     necessities: [
-      { item: "cardinal-tetra-10-20-gallon-tank", text: "[10-20 gallon tank]" },
+      { item: "bristlenose-pleco-20-gallon-long-tank", text: "[20 gallon long tank] for a school of 10" },
       { item: "angelfish-aquarium-heater", text: "[Aquarium heater]" },
       { item: "fire-bellied-toad-small-aquarium-filter-water", text: "[Gentle filter]" },
       { item: "angelfish-dense-live-silk-plants", text: "[Dense live plants]" },

@@ -838,7 +838,7 @@ export const fishGuides = fillCostTokens([
         { label: "Cycle first", value: "Cycle the tank fully before the school goes in.", source: "glowlight-tetra-tank-setup-guide" },
         { label: "Plants", value: "A good spread of fine-leaved plants at several heights, with a clear stretch of open water in the middle for the school.", source: "glowlight-tetra-tank-setup-guide" },
         { label: "Diet", value: "Micropellets or small flakes day to day, with bloodworm, daphnia and brine shrimp as live or frozen extras. They take almost anything offered.", source: "glowlight-tetra-feeding-guide" },
-        { label: "Feeding schedule", value: "Two or three light feedings a day, each only what the school finishes.", source: "glowlight-tetra-feeding-guide" },
+        { label: "Feeding schedule", value: "Once or twice a day, each feeding light: only what the school finishes.", source: "glowlight-tetra-feeding-guide" },
         { label: "Acclimation", value: "Dim the room, then add a little tank water to the bag every few minutes for 30 to 60 minutes. Net the fish across and leave the bag water behind.", source: "glowlight-tetra-handling-guide" },
         { label: "Tankmates", value: "Lively and peaceful, at home with other small, calm fish. Not with angelfish: a full-grown angelfish treats a 1.6-inch tetra as food.", source: "glowlight-tetra-handling-guide" },
         { label: "Quarantine", value: "At least 30 days in a separate tank before new fish meet the school.", source: "glowlight-tetra-health-issues-guide" },
@@ -873,7 +873,7 @@ export const fishGuides = fillCostTokens([
     routes: [
       { slug: "glowlight-tetra-cost-guide", line: "$3 to $5 a fish, the school of ten to price, and the %%setup:glowlight-tetra%% for the tank around them." },
       { slug: "glowlight-tetra-tank-setup-guide", line: "A 24 x 15 inch base for ten, 75 to 82°F, acidic water for color, and planted cover around open water." },
-      { slug: "glowlight-tetra-feeding-guide", line: "Two or three light feedings a day, an easy eater, and food for fry." },
+      { slug: "glowlight-tetra-feeding-guide", line: "Once or twice a day, kept light, an easy eater, and food for fry." },
       { slug: "glowlight-tetra-handling-guide", line: "Acclimation over 30 to 60 minutes, the school of ten, and why angelfish are off the list." },
       { slug: "glowlight-tetra-health-issues-guide", line: "Why the ich heat cure stops at 82°F, the 30-day quarantine, and the signs that need action today." },
       { slug: "glowlight-tetra-enrichment-guide", line: "Tannins, leaf litter and planting that bring out the stripe and settle the school." },
@@ -892,7 +892,7 @@ export const fishGuides = fillCostTokens([
     ],
     faqs: [
       { q: "What size tank do glowlight tetras need?", a: "A tank with a base of at least 24 x 15 inches (60 x 38 cm), roughly 18 to 20 gallons, for a school of 10. A 20-gallon long has the same floor area." },
-      { q: "How often should glowlight tetras be fed?", a: "Two or three light feedings a day. Each one is only what the school finishes, since uneaten food fouls the water." },
+      { q: "How often should glowlight tetras be fed?", a: "Once or twice a day, keeping each feeding light. Give only what the school finishes, since uneaten food fouls the water." },
       { q: "Can you cure ich in glowlight tetras with heat?", a: "Heat alone will not do it. The temperature that kills most ich strains is 86°F, and a glowlight's range stops at 82°F. Warm the tank slowly up to 82°F with an air stone running to speed the parasite's cycle, and treat with aquarium salt or an ich medication." },
     ],
   },
