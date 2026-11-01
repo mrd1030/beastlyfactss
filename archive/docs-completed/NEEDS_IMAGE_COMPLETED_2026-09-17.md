@@ -8,6 +8,14 @@ Newest first.
 
 ---
 
+## 2026-11-01: glowlight handling hero
+
+`/assets/images/glowlight-tetra-handling.jpg`, Adobe Firefly with Nano Banana
+2, owner approved on the second try (the first bag was two thirds water,
+against the guide's one part water to three parts air): a mostly-air bag of
+glowlights in a cardboard box on a car seat. 3:2, resized to 1168x784 through
+mozjpeg at quality 80. Recorded in IMAGE_CREDITS.md.
+
 ## 2026-11-01: glowlight feeding hero
 
 `/assets/images/glowlight-tetra-feeding.jpg`, Adobe Firefly with Nano Banana 2,
