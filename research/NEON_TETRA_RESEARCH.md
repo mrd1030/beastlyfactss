@@ -288,3 +288,28 @@ Added 2026-11-01 after the restore pass. The first fact-check passes cut the ite
 - FunFact block "NTD is easy to misidentify. It gets mistaken for columnaris and costia, because all three can put a whitish film over the fish, but in NTD the film forms under the skin, not on top of it. Confirming it takes a microscope with good lenses, and the spores turn up in muscle, liver and spleen." Restored. Columnaris as a lookalike is supported (Seriously Fish: columnaris "can mimic NTD"); costia, the film "under the skin" and spores in "liver and spleen" were not found in any opened source (Merck and Sanders say skeletal muscle).
 
 Not restored: the neon feeding, handling and tank-setup guides had no pure removals. Their cuts sit inside lines the corrections changed (for example the fry feeding schedule, "1 to 2mm" mouths and the darker-substrate line) and stay as corrected.
+
+**Second restore round (clauses cut inside corrected lines, added back as their own sentences; corrected wording unchanged)**
+
+neon-tetra-feeding-guide.mdx
+- "In the wild their diet runs roughly 20 to 30% plant matter and algae alongside insect larvae and small invertebrates." Restored. FishBase says only "plant matter"; no percentage in any opened source.
+- "They are only about 1 to 2mm across." (mouth size, after "Their mouths are very small."). Restored. No measurement found (Gaps).
+- "Fry and juveniles need 3 to 4 small feedings a day until about 6 months old." (FAQ) and "Fry and juveniles need 3 to 4 small feedings a day, transitioning from infusoria or baby brine shrimp to crushed flake as they grow, and adults from about 6 months do well on twice daily." (body). Restored. No opened source gives a fry schedule.
+
+neon-tetra-handling-guide.mdx
+- "The fuller belly makes a female's blue stripe look slightly bent, while a male's stripe runs straight." (FAQ) and the body equivalent. Restored. "Bent stripe" not found in any opened source; not contradicted.
+- "though some batches take up to 36, and the fry swim free 3 to 4 days after that." Restored, figure aligned to correction (the corrected line says about 24 hours, so the old "24 to 36 hours" became "about 24 hours, though some batches take up to 36"). FishBase supports about 24 hours; the 3 to 4 day swim-free figure is FishBase for the cardinal only, so it is unsourced for the neon.
+- "Neons react more to a change in water chemistry than most community fish." and "and it reacts badly to swings" / "and they react badly to swings" (guppy comparison, FAQ and body). Restored. No source found.
+
+neon-tetra-tank-setup-guide.mdx
+- "A darker color makes neon coloring pop more against the background." Restored. No source.
+- "Dim to moderate light, roughly 8 to 10 hours a day, suits them." Restored. No neon source for the hours or the dim-to-moderate range.
+- "this species is more sensitive to water quality instability than many hardier community fish" and "Neons are not hardy fish, and they react to shifts in water chemistry more than most community species." Restored. No source.
+
+neon-tetra-cost-guide.mdx
+- "Neons react to shifts in water chemistry more than most community fish." (under "Buying too soon"). Restored. No source.
+
+neon-tetra-enrichment-guide.mdx
+- "Blackwater fish under a bright aquarium light spend their time hiding." Restored. No neon source.
+
+Cut clauses in corrected neon lines NOT restored, awaiting the owner's call: "deformities" and "morphological defects" widespread in farmed neons (cost and health guides; research finds no source and Seriously Fish supports only a weaker "genetic vigour somewhat affected"); "open bright tanks make them pale and skittish" and "staying pale and hugging the edges"; "gets fish that color up"; "a shaded, planted tank brings out both" (enrichment); "aquatic specialists recommend humane euthanasia" and "cardinal tetras" as an NTD host (health); the 81°F ich range and "stress or temperature instability sets it off" (contradicted by the lab and reference ranges); "hard tap water comes down by blending with RO" (tank setup; the same advice survives in the FunFact).

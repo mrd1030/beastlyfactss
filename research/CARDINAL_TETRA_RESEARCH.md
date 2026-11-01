@@ -246,3 +246,23 @@ Added 2026-11-01 after the restore pass. The first fact-check passes cut the ite
 - "The cardinal tetra also shows up alongside the zebra danio, bristlenose pleco, and discus in [Four Fish, Four Completely Different Difficulty Levels](/blog/zebra-danio-bristlenose-pleco-discus-cardinal-tetra-overview/)." Restored. A cross-reference to a sibling overview, not a factual claim, so no source applies; it sits after the "Why the School Sets the Bill" paragraph, as it did under the old heading.
 
 Not restored: the other cardinal guides had no pure removals. Their cuts (for example the dry-season stranding cause, "30 to 60 days" quarantine, the "contested" wording and the color-from-cover lines) sit inside lines the corrections changed and stay as corrected.
+
+**Second restore round (clauses cut inside corrected lines, added back as their own sentences; corrected wording unchanged)**
+
+cardinal-tetra-handling-guide.mdx
+- "Smaller groups turn pale, hide, and get sick more often from the stress." (FAQ) and "A group that is too small produces fish that are pale, constantly hiding, and more vulnerable to illness." (body). Restored. No cardinal group-size study (Saxby did not test cardinals); not contradicted. The old "workable minimum is 10" stays out: Seriously Fish says at least 8 to 10 and the guide now says eight.
+
+cardinal-tetra-enrichment-guide.mdx
+- "Cardinals shoal more tightly and color up better in bigger groups." (FAQ) and "Cardinals shoal more tightly and color more strongly in numbers." (body). Restored. No source.
+- "Cardinals in tea-colored water look like different animals from cardinals under a bright light in clear water." Restored. Linhares 2018 supports pale stripes under intense light, not this comparison.
+- "Blackwater fish under a bright aquarium light spend their time near the bottom and stay pale." Restored. Linhares supports pale stripes, not the near-the-bottom behavior.
+
+cardinal-tetra-health-issues-guide.mdx
+- Staged fin rot: "It progresses in stages: discoloration on the fin edges first, then fraying, and in advanced untreated cases the infection spreading to the body itself." (body, "fraying as infected tissue dies off" shortened because the corrected sentence just before it already says it) and the FAQ version "It starts as discoloration on the fin edges and progresses to fraying and tissue loss if untreated. Caught early, it is very treatable ...". Restored. No fin rot source found (Gaps).
+- "Most fish recover within one to two weeks with consistent care." Restored. No source.
+- "Thirty to 60 days suits a fish worth being sure of." Restored. The 30 to 60 range is not in an opened source here, but fish-quarantine-and-treatment-guide.mdx states it.
+
+cardinal-tetra-cost-guide.mdx
+- "During the dry season, the shallow pools these fish live in shrink and strand huge numbers of them, and most don't survive to see a second year." Restored, QUESTIONABLE: Chao (2001) says wild cardinals "probably die after spawning" and Walker puts spawning in the early rising-water phase (February to April); no opened source mentions dry-season stranding as the cause. It is not directly contradicted, but it sits beside, and competes with, the Chao explanation in the same paragraph. Owner to confirm or drop.
+
+Cut clauses in corrected cardinal lines NOT restored: "nitrite is the compound this species tolerates worst" and "shrug off more ammonia than most expect" (Oliveira's LC50s make the ranking depend on which ammonia figure is used; the corrected wording avoids ranking); "some individuals reach ten" (ADW only); heat-hold for two weeks at 86°F and the 33.7°C mortality note (unsupported as written, tested only for 96 hours on juveniles); "darker substrate makes the stripe stand out" and "dim to moderate" lighting (cardinal guide, unsourced, awaiting the owner's call).
