@@ -89,6 +89,7 @@ Live editions (2026-10-04): bearded dragon 4.1; leopard gecko, crested gecko, ba
 
 ### Betta fish (3.1, `betta-fish-src`)
 - [ ] Glossary: IUCN (`pages_08.html:45`) and VCA (`:78`) out.
+- [ ] Book: temperature, owner rule 2026-11-01 (the overlap of FishBase 75 to 86°F and Seriously Fish 72 to 86°F, no invented target). Every "76 to 82°F" becomes "75 to 86°F" (24 to 30°C) and every "78 to 80°F" sweet spot or target goes, holding the temperature steady anywhere in the range instead. Search the `betta-fish-src` pages for "76 to 82" and "78 to 80": the budget/specs table (`pages_01.html`), `pages_02.html`, the not-eating list (`pages_03.html`), the setup checklist (`pages_05.html`), the heat-method ich note (`pages_06.html`, 86°F is now the top of the range) and the checklist table (`pages_07.html`). Add UF/IFAS FA212's point that an unheated container needs a room no colder than about 72°F (22°C). Matches the site's betta guides.
 
 ### Goldfish (3.1, `goldfish-src`)
 - [ ] Glossary: NYCRR (`pages_07.html:45`) moves to the law page mini glossary.

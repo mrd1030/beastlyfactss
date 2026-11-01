@@ -303,7 +303,7 @@ export const fishGuides = fillCostTokens([
       intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
         { label: "Tank size", value: "5 gallons, heated and filtered, is the real minimum. Not the bowls or unheated cups bettas are often sold in.", source: "betta-fish-tank-setup-guide" },
-        { label: "Heater and filter", value: "A 15 to 25 watt adjustable heater holding a stable 76 to 82°F, 78 to 80°F the sweet spot. A gentle, low-flow filter such as a sponge filter, since a betta's long fins can't handle strong current.", source: "betta-fish-tank-setup-guide" },
+        { label: "Heater and filter", value: "A 15 to 25 watt adjustable heater holding a stable temperature anywhere in 75 to 86°F. A gentle, low-flow filter such as a sponge filter, since a betta's long fins can't handle strong current.", source: "betta-fish-tank-setup-guide" },
         { label: "Water parameters", value: "Ammonia and nitrite at 0 ppm with no safe nonzero reading for either, nitrate under 20 ppm, pH 6.5 to 7.8. Weekly water changes of 25 to 30%, always with a dechlorinator.", source: "betta-fish-water-parameters-guide" },
         { label: "Cycling", value: "Cycle the tank before adding the fish. A fishless cycle typically takes 4 to 6 weeks at a stable warm temperature.", source: "aquarium-cycling-guide" },
         { label: "Feeding schedule", value: "2 to 4 small, high-protein betta pellets a meal, no more than would fit in the size of the fish's eye. Once or twice a day, or up to three smaller meals; a consistent routine matters more than the count. Fast one day a week.", source: "betta-fish-feeding-guide" },
@@ -313,7 +313,7 @@ export const fishGuides = fillCostTokens([
         { label: "Adult size", value: "2.5 to 3 inches." },
         { label: "Lifespan", value: "2 to 4 years typical, up to 5 years in captivity with excellent care." },
         { label: "Tankmates", value: "One male, alone or with corydoras, mystery snails, ghost shrimp or small tetras, in 10 to 20 gallons or more, and ghost shrimp only past 1.5 inches. Never tiger barbs, any nipper, or a long-finned fish. A female sorority needs 10 gallons and cover.", source: "betta-fish-handling-guide" },
-        { label: "Ich", value: "White spots: raise the tank slowly to 86°F with an air stone and hold it two weeks. That is a treatment ceiling for the course only, above the 76 to 82°F a betta lives at. Or aquarium salt at 4 to 5 grams per liter. Quarantine 30 days after.", source: "aquarium-ich-treatment-guide" },
+        { label: "Ich", value: "White spots: raise the tank slowly to 86°F with an air stone and hold it two weeks. 86°F is the top of the betta's 75 to 86°F range, held for the course only. Or aquarium salt at 4 to 5 grams per liter. Quarantine 30 days after.", source: "aquarium-ich-treatment-guide" },
         { label: "Quarantine", value: "At least 30 days in a bare hospital tank before joining others. Thirty days is the floor, not the target.", source: "fish-quarantine-and-treatment-guide" },
         { label: "Power outage", value: "Oxygen loss is the fast danger, not the cold or the dark. Aerate right away with a battery air pump, or agitate the surface by hand roughly every 10 to 15 minutes in a small tank. A betta's transport bag needs far more air than a typical fish bag, since it breathes air directly through its labyrinth organ.", source: "aquarium-power-outage-and-transport-guide" },
       ],
@@ -358,7 +358,7 @@ export const fishGuides = fillCostTokens([
     ],
     faqs: [
       { q: "What size tank does a betta fish need?", a: "Five gallons is the current standard minimum, a genuine improvement over older bowl-based advice. Bettas can technically survive in smaller volumes, but bigger tanks are easier to keep stable since temperature and water chemistry swing less in more water. Always use a lid, bettas are surprisingly good jumpers." },
-      { q: "Why won't my betta eat?", a: "Most commonly it's stress from a recent move or tank change, pickiness about a new food, or water that's too cold or of poor quality. Bettas need water in the roughly 76 to 82°F range, cooler water slows their metabolism and appetite noticeably. Check water quality and temperature before assuming anything more serious." },
+      { q: "Why won't my betta eat?", a: "Most commonly it's stress from a recent move or tank change, pickiness about a new food, or water that's too cold or of poor quality. Bettas need water in the roughly 75 to 86°F range, cooler water slows their metabolism and appetite noticeably. Check water quality and temperature before assuming anything more serious." },
       { q: "What should I do before reaching for medication?", a: "Test and correct water quality and temperature first. A heated, filtered tank on a consistent water-change schedule is what makes a huge share of betta illness resolve or never start. Most cases never need an aquatic vet, though one is worth finding for a serious or unclear illness." },
     ],
   },
