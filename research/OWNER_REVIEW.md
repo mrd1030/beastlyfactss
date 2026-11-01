@@ -65,10 +65,10 @@ Format: claim | guide | why it needs review | suggested decision. Live guides (c
 - "Barbels can regrow over 4 to 8 weeks" (body and FAQ; also the corydoras hub row) | corydoras-catfish-health-issues-guide.mdx | number and health: no corydoras source; studies in other species report faster regrowth | soften to "can regrow once conditions improve", or find a source
 
 ### Goldfish
-- Gravel "at least 1/2 inch across" (also goldfish-enrichment-guide.mdx and the care package) | goldfish-tank-setup-guide.mdx | number, and leaned against: only EWASH (weak) supports it; the Practical Fishkeeping page allows very small rounded gravel | keep (safe direction) or soften to "too big to fit in the mouth"
+- Gravel "at least 1/2 inch across" (also goldfish-enrichment-guide.mdx and the care package) | goldfish-tank-setup-guide.mdx | number, and leaned against: only EWASH (weak) supports it; the Practical Fishkeeping page allows very small rounded gravel | keep (safe direction) or soften to "too big to fit in the mouth" **DONE: Owner, 2026-11-01: keep as written (the safe direction). Softening to "too big to fit in the mouth" stays open as an option to look over later.**
 
 ### Discus
-- Fine sand as "the common middle ground", with gravel cast as where food is missed (also aquarium-substrate-guide.mdx) | discus-tank-setup-guide.mdx | leaned against: its only source, Discus.com, also allows small gravel with regular vacuuming | soften to what the source supports
+- Fine sand as "the common middle ground", with gravel cast as where food is missed (also aquarium-substrate-guide.mdx) | discus-tank-setup-guide.mdx | leaned against: its only source, Discus.com, also allows small gravel with regular vacuuming | soften to what the source supports **DONE: Owner, 2026-11-01: softened to what Discus.com supports (many keepers prefer bare, breeding tanks must be bare, sand shows uneaten food, small gravel works with regular vacuuming), in the discus guide and the substrate guide.**
 
 ### Glowlight tetra (held)
 - Ich: "Heat and salt are weaker than a chemical treatment, because resistant strains can develop" | glowlight-tetra-health-issues-guide.mdx (held) | health: rests on a fetch-tool paraphrase of VCA, not confirmed wording | find a source (re-read VCA), or remove the reason clause **DONE: Owner, 2026-11-01: reason clause removed.**
