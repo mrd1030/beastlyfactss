@@ -434,9 +434,9 @@ Added 2026-11-01 after the correction pass. Left in place as written (owner rule
 **platy-cost-guide.mdx**
 - "with a six-pack landing around $30" (body and FAQ): $5 a fish, top of the $2 to $6 range; no multi-pack listing seen.
 - "Less common varieties like tiger ruby platies can reach $8 to $9" / "Premium or less common strains like tiger ruby platies can reach $8 to $9": not on the linked listing page (one tiger variety at $5.99).
-- "2 to 4 years, with 3 to 4 achievable under stable conditions and excellent, consistent water quality pushing a fish toward 5" (body and FAQ, including "close to a guppy's lifespan, and noticeably shorter than a molly's, which commonly reaches 3 to 5 years"): no authoritative platy lifespan found; the Aquarium Co-Op link was dropped from the sentence.
+- "2 to 4 years, with 3 to 4 achievable under stable conditions and excellent, consistent water quality pushing a fish toward 5" (body and FAQ, including "close to a guppy's lifespan, and noticeably shorter than a molly's, which commonly reaches 3 to 5 years"): no authoritative platy lifespan found; the Aquarium Co-Op link was dropped from the sentence. **[conflict fixed: "close to a guppy's lifespan, and noticeably shorter than a molly's, which commonly reaches 3 to 5 years" to "well past a guppy's lab-study average of about 13 months, and a little shorter than a molly's 2 to 5 years" (body and FAQ)]**
 - "A typical brood runs 20 to 50 fry, with a documented range up to 80 ... roughly every 4 to 6 weeks": "typical 20 to 50" has no source (FishBase says 20 to 80); the interval is only PARTLY supported (measured 30 to 36 days).
-- "A 10-gallon tank holds a small group of about five": no source gives a group size for a volume.
+- "A 10-gallon tank holds a small group of about five": no source gives a group size for a volume. **[wording merged: five fit a 10 gallon by volume; the 24 by 12 inch footprint points to a 20 long, now a separate sentence]**
 - "Full monthly upkeep ... $15 to $20", "close to what a guppy setup costs": no source (price and setup figures live in the cost sheet).
 - "Most platy health issues ... get managed at home with water quality correction and over-the-counter medication": no source.
 
@@ -444,54 +444,54 @@ Added 2026-11-01 after the correction pass. Left in place as written (owner rule
 - "holds about five", "a fuller group of six or more": no stocking source.
 - "platies are capable jumpers": no source.
 - "swings over about 2°F in a day are the problem" and "temperature instability is one of the more commonly cited triggers behind the livebearer shimmy": no source gives a swing threshold or a temperature link to shimmy.
-- "Variatus-line platies handle the cool end better than most tropical fish": PARTLY (FishBase gives variatus a lower floor, 15 vs 18 °C; Seriously Fish gives both the same range; "than most tropical fish" is in no source).
+- "Variatus-line platies handle the cool end better than most tropical fish": PARTLY (FishBase gives variatus a lower floor, 15 vs 18 °C; Seriously Fish gives both the same range; "than most tropical fish" is in no source). **[wording merged: "better than the southern platy does" replaces "than most tropical fish" (FAQ and body)]**
 - "platies tolerate 6.8 to 8.5": nearest sources end at 8.0 and 8.2.
 - Crushed coral or a buffering product for soft tap water: reasonable, no source.
 - "cory catfish, bristlenose plecos, rainbowfish, small rasboras, and snails": no source lists tankmates by name (Seriously Fish: "most community species").
 - "mollies want pH 7.5 to 8.5 ... the shared tank runs at about 7.5 to 8.2" and neon and cardinal tetras as soft-water fish: reasoning from other species' files, not from this one.
-- "platies don't need aggressive flow": PARTLY (Seriously Fish suggests a turnover of four to five times the volume an hour).
+- "platies don't need aggressive flow": PARTLY (Seriously Fish suggests a turnover of four to five times the volume an hour). **[wording merged: "a strong current" replaces "aggressive flow" and "aggressive turnover" (FAQ and body)]**
 - "Fine gravel or sand both work well", "avoid sharp or coarse gravel", "darker substrate tends to make platy coloring stand out", "8 to 10 hour daily cycle": no source.
 - "less with a bottled bacteria product" (cycling, FAQ and body): PARTLY (Practical Fishkeeping says bottled bacteria influence the cycle length, not that it is shorter).
 - "Skipping this step is one of the most common beginner mistakes in the hobby" and "ammonia-driven stress that shows up as shimmy": no source.
-- "skipping dense cover lets normal predation keep numbers in check": the keeper's inference.
+- "skipping dense cover lets normal predation keep numbers in check": the keeper's inference. **[wording merged: "predation by tankmates"]**
 
 **platy-feeding-guide.mdx**
 - "in the wild their diet already mixes algae and plant matter with small crustaceans, insects, and worms": "algae" is not in FishBase's diet line.
-- "Juveniles: Two to three smaller meals a day" (and FAQ): Seriously Fish's 2 to 3 times a day is for fry.
+- "Juveniles: Two to three smaller meals a day" (and FAQ): Seriously Fish's 2 to 3 times a day is for fry. **[wording merged: "two or three smaller meals a day, the top of the adult range" (body and FAQ)]**
 - "feed only what's fully cleared within a minute or two": no source gives a time.
 - "3 to 4 times a day" and "roughly 2 months" for fry (body and FAQ): PARTLY (Seriously Fish 2 to 3 times, Practical Fishkeeping three times, neither gives a duration). "no infusoria stage needed" is an inference from "accept brine shrimp nauplii or powdered flake from birth".
 - "Unlike mollies ... platies aren't as strictly dependent on a big vegetable ratio" and "still supports better color and digestion": no source compares plant content across species or ties vegetables to color.
-- "platies genuinely do better on variety than most fish": the "than most fish" comparison has no source (Merck supports variety in general).
+- "platies genuinely do better on variety than most fish": the "than most fish" comparison has no source (Merck supports variety in general). **[wording merged: "than most fish" dropped]**
 - "Platies will keep eating past the point of being full", "overfeeding drives constipation and swim bladder problems directly", "a long, stringy trail of waste ... a well-documented sign the portion was too large" (FAQ, FunFact, body): no source; "well-documented" is not backed.
-- "a ratio of roughly two to three females per male, the breeders' standard": the numeral and "breeders' standard" have no source (Seriously Fish: "several females to every male").
+- "a ratio of roughly two to three females per male, the breeders' standard": the numeral and "breeders' standard" have no source (Seriously Fish: "several females to every male"). **[wording merged: "the breeders' standard" dropped]**
 - "cold water slows metabolism ... weakened immune response": PARTLY (Merck: body temperature follows the water; immune response not covered).
 - "A female close to giving birth may eat less": no source.
 - "a guppy is similarly unfussy and similarly prone to being overfed": no source in this file.
 
 **platy-handling-guide.mdx**
-- "about as forgiving as community fish get": hardiness comparison, no source.
+- "about as forgiving as community fish get": hardiness comparison, no source. **[conflict fixed: "about as forgiving as community fish get" to "a beginner fish when the water is hard enough"]**
 - "the variatus the better pick for a room-temperature tank": PARTLY (see tank setup).
-- "appearing as the fish matures anywhere from about two to six and a half months" for the species: supported for males only; females range 11 to 73 weeks.
+- "appearing as the fish matures anywhere from about two to six and a half months" for the species: supported for males only; females range 11 to 73 weeks. **[wording merged: FAQ now says "appearing in males anywhere from about two to six and a half months after birth"]**
 - "often show a dark 'gravid spot' near the vent" (FAQ): Practical Fishkeeping says "on the bellies".
-- "hobbyist sources routinely describe it as something you can't prevent by accident": no source.
+- "hobbyist sources routinely describe it as something you can't prevent by accident": no source. **[wording merged: "something that happens unless you separate the sexes"]**
 - "A typical brood lands between 20 and 50 fry ... Gestation runs roughly 4 to 6 weeks ... roughly every 4 to 6 weeks" (FunFact, FAQ): same as the cost guide; FishBase gestation is 24 to 30 days.
 - "a ratio of roughly two to three females per male" (FAQ and body): numeral is the guides' own.
-- "natural predation will keep numbers in check": inference.
+- "natural predation will keep numbers in check": inference. **[wording merged: "predation by tankmates"]**
 - Shop outlet "expect little or nothing in exchange, and shops favor well-colored, matching fish": Practical Fishkeeping covers saturation, the preferences are not confirmed.
 - "A local aquarium society. Livebearer breeders sell to clubs as well as shops ... the likeliest home": Aquarium Co-Op was the only source and was removed from the block; no replacement found.
-- "Released platies have established wild populations": USGS hedges ("locally established, or possibly established locally").
+- "Released platies have established wild populations": USGS hedges ("locally established, or possibly established locally"). **[wording merged: "formed local populations"]**
 - "a small starting group of 5 or 6 platies can grow within two or three months": no source.
-- "Platy broods tend to run a bit larger than a guppy's but smaller than a molly's, and platies need less room to start than a molly does while asking for a touch more than a guppy": no source; "the guppy is the one that can be sexed within weeks of birth" and "the molly the one whose males fight hardest in an all-male group" belong to those species' files.
+- "Platy broods tend to run a bit larger than a guppy's but smaller than a molly's, and platies need less room to start than a molly does while asking for a touch more than a guppy": no source; "the guppy is the one that can be sexed within weeks of birth" and "the molly the one whose males fight hardest in an all-male group" belong to those species' files. **[conflict fixed: brood ranking against guppy and molly dropped; the tank-size comparison kept ("the platy is the middle ground on tank size")]**
 - "all three store sperm internally, all three produce repeat broods": platy only is sourced here.
 
 **platy-health-issues-guide.mdx**
-- Fin rot: "a broad-spectrum antibacterial medication" (Merck: choose by sensitivity testing) and "caught early, most cases resolve fully" (no source; Merck calls columnaris hard to control once seen); "the root trigger is almost always environmental" is close to Merck but "almost always" is not stated.
+- Fin rot: "a broad-spectrum antibacterial medication" (Merck: choose by sensitivity testing) and "caught early, most cases resolve fully" (no source; Merck calls columnaris hard to control once seen); "the root trigger is almost always environmental" is close to Merck but "almost always" is not stated. **[wording merged: "almost always environmental" to "usually environmental"; "most cases resolve fully" to "it usually clears"]**
 - Dropsy: "usually/typically ... a systemic Aeromonas bacterial infection", "the hardest condition on this list to treat successfully", "pinecone-like": the one case report (a goldfish) calls dropsy a sign, not a disease.
 - Swim bladder: "most often from overfeeding or constipation, though low water temperature and internal parasites can contribute", "a short fast, sometimes paired with a blanched, deshelled pea": no veterinary or extension source found; the old source was Wikipedia (removed from the block).
 - Shimmy: "seen across livebearers generally, mollies, platies, swordtails, and guppies alike", "a sign the fish has lost some nerve and muscle control", "low water temperature" as a trigger, "raise the temperature toward the mid-to-upper 70s", "resolves most cases without medication": only soft or acidic water and poor water quality are supported, and only via the molly pages.
 - Ich: "a single organism can produce hundreds of new ones" is supported by Merck; "aquarium salt" is named with no dose, and the VCA and UF/IFAS salt doses differ several-fold.
-- "well-understood mechanism" (melanoma, FAQ and body): PARTLY (the regulating locus is still debated); "a pigment-cell gene ... kept in check by a separate tumor-suppressor gene": PARTLY for the same reason.
-- "stress, poor or unstable water quality, overcrowding, and skipping quarantine are the common thread behind nearly every condition on this list": Merck supports the pattern for many disorders, not "nearly every condition".
+- "well-understood mechanism" (melanoma, FAQ and body): PARTLY (the regulating locus is still debated); "a pigment-cell gene ... kept in check by a separate tumor-suppressor gene": PARTLY for the same reason. **[wording merged: "well-studied mechanism" (FAQ; the body never used the phrase)]**
+- "stress, poor or unstable water quality, overcrowding, and skipping quarantine are the common thread behind nearly every condition on this list": Merck supports the pattern for many disorders, not "nearly every condition". **[wording merged: "most conditions on this list"]**
 - "prevent far more than any medication does after the fact", "Uneaten food is a common and avoidable driver of the water-quality decline behind most of these conditions": no source.
 - "a modest separate tank ... doubles as a place to isolate a sick fish or a female about to give birth": no source.
 
@@ -505,6 +505,6 @@ Added 2026-11-01 after the correction pass. Left in place as written (owner rule
 - "A platy will live through an uncycled tank. It will do so while being exposed to ammonia.": no source.
 - "platies take more plant matter than guppies do": no source.
 - "Within a year an unmanaged tank is overstocked": inference from the brood interval.
-- "The smallest and the least demanding of the three" (overview link sentence): no source.
+- "The smallest and the least demanding of the three" (overview link sentence): no source. **[wording merged: "the smallest and the simplest to house of the three"]**
 - "tank mates that will predate fry": supported in kind (Practical Fishkeeping, larger fish eat fry), not platy-specific.
-- "A 10 gallon tank is a reasonable starting point for a small group": below Seriously Fish's 24 by 12 inch base footprint.
+- "A 10 gallon tank is a reasonable starting point for a small group": below Seriously Fish's 24 by 12 inch base footprint. **[wording merged: "by volume" caveat added with the 20 by 10 inch base against the 24 by 12 inch footprint, linked to the tank guide]**
