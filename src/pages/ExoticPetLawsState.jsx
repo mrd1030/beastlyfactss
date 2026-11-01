@@ -15,6 +15,7 @@ import Breadcrumbs from '@/components/shared/Breadcrumbs';
 import LegalDisclaimer from '@/components/mdx/LegalDisclaimer';
 import { SourceNoticeBox } from '@/components/mdx/SourceNotice';
 import { SOURCE_NOTICES, noticeText } from '@/lib/data/sourceNotices';
+import { fileLabel } from '@/lib/utils/fileLinks';
 import { withBrand, pickWithinLimit, plural, TITLE_MAX, DESCRIPTION_MAX, BRAND } from '@/lib/utils/seo';
 
 const SITE = 'https://beastlyfacts.com';
@@ -380,7 +381,7 @@ export default function ExoticPetLawsState() {
                               rel="noopener noreferrer"
                               className="text-xs font-body text-primary hover:underline"
                             >
-                              {`${source.title} →`}
+                              {`${source.title}${fileLabel(source.url) ? ` ${fileLabel(source.url)}` : ''} →`}
                             </a>
                           )}
                           {/* Back into the other axis of the matrix. These are

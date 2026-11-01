@@ -21,6 +21,7 @@ Solo developer passion project. Prefer fast, decisive work over exploration.
 
 ## Writing & Content Rules
 - The full consolidated rulebook is docs/RULES.md. Read it before writing or editing content. The rules below are the non-negotiables.
+- Every legal guide and its matrix cells are reviewed at the start of every month (owner, 2026-11-01): the legal sources workflow runs on the 1st and files the work order, a session works every flagged source, I run the checker with `--browser` on my desktop for the sites a cloud runner cannot reach, and the guides are synced to the matrix. `verifiedOn` and `lastReviewed` move only for what was actually checked. The steps are in docs/RULES.md under "Legal guides: the monthly review".
 - Never use em or en dashes. Say it another way: split the sentence, use a colon, or cut the aside. A comma is not a dash substitute.
 - Use US spelling in prose. British variants are fine in SEO tags. The color is "gray". Keep "grey" only where it is part of a name that is spelled that way: African grey, greyhound, grey kangaroo, and quoted text, titles and product names.
 - Keep the existing split structure for care guides (cost / handling / health / tank setup). Do not turn them into long-form pillar pages.

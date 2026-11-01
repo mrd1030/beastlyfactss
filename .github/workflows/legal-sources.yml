@@ -100,6 +100,7 @@ jobs:
           name: legal-source-report
           path: |
             docs/legal-source-report.md
+            docs/legal-checks/
             report.txt
 
   # Reads only the sources the check flagged, decides each cell against the live

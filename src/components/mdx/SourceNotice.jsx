@@ -4,6 +4,7 @@ import { useArticleMeta } from '@/lib/articleMeta';
 import { formatDay } from '@/lib/utils/verifiedDates';
 import { noticeText } from '@/lib/data/sourceNotices';
 import NOTICE_DATES from '@/lib/generated/legal-source-notices.json';
+import { fileLabel } from '@/lib/utils/fileLinks';
 
 // A box saying a source this guide relies on has changed under it, placed where
 // the guide first turns to that source. The wording and the agency dates live
@@ -36,7 +37,7 @@ export function SourceNoticeBox({ title, text, archive = null, className = '' })
           <div className="text-foreground font-body text-[15px] leading-relaxed">{text}</div>
           {archive && (
             <a href={archive.url} target="_blank" rel="noopener noreferrer" className="mt-2 inline-block font-body text-[15px] font-semibold text-amber-700 underline dark:text-amber-400">
-              {archive.label}
+              {fileLabel(archive.url) ? `${archive.label} ${fileLabel(archive.url)}` : archive.label}
             </a>
           )}
         </div>

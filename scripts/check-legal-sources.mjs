@@ -234,17 +234,17 @@ function checkQuotes(text, cells) {
   const flat = flatten(text);
   const checked = [];
   const missing = [];
+  const found = [];
   for (const c of cells) {
     if (!c.quote) continue;
     const probes = probesFor(c.quote);
     if (!probes.length) continue;
     checked.push(c);
-    if (probes.some((p) => flat.includes(p))) continue;
-    if (spanMatch(flat, c.quote)) continue;
+    if (probes.some((p) => flat.includes(p)) || spanMatch(flat, c.quote)) { found.push(c.id); continue; }
     missing.push(c);
   }
   if (!checked.length) return null;
-  return { checked: checked.length, missing };
+  return { checked: checked.length, missing, found };
 }
 
 // A .docx is a zip holding word/document.xml. Node has no zip reader but it
@@ -564,6 +564,61 @@ for (const r of results) {
     continue;
   }
   changed.push({ ...r, prevLength: prev.length, drift });
+}
+
+// ---------------------------------------------------------------------------
+// The per-cell record: what this run could vouch for, one line per cell, kept
+// by month in docs/legal-checks/. scripts/legal-stamp-reviewed.mjs reads it to
+// move verifiedOn and a guide's lastReviewed for what was actually checked and
+// nothing else. A fetch run and a desktop --browser run write separate files
+// and the stamp script reads both.
+//
+// A cell with a quote is vouched for when the quote is on the live page. A
+// cell with no quote (310 of them, mostly "nothing here restricts it") can
+// only be vouched for by its page being readable and unchanged since the
+// baseline. The quote is recorded as a hash, so a result stops counting the
+// moment someone edits the cell it was checked for.
+// ---------------------------------------------------------------------------
+{
+  const stateOf = new Map();
+  for (const r of unchanged) stateOf.set(r.id, 'unchanged');
+  // Furniture, as the report defines it below: the page moved under 1% and
+  // every quote on it still verifies. Not worth a read, so not a blocker.
+  for (const r of changed) stateOf.set(r.id, r.drift >= MIN_DRIFT || !r.quotes ? 'changed' : 'furniture');
+  for (const r of unstable) stateOf.set(r.id, 'unstable');
+  for (const r of fresh) stateOf.set(r.id, 'new');
+  for (const r of opaque) stateOf.set(r.id, 'opaque');
+  for (const r of browserOnly) stateOf.set(r.id, 'unreadable');
+  for (const r of unreachable) stateOf.set(r.id, 'unreachable');
+
+  const today = new Intl.DateTimeFormat('en-CA', { timeZone: 'America/New_York' }).format(new Date());
+  const via = BROWSER ? 'browser' : 'fetch';
+  const file = path.join(ROOT, 'docs/legal-checks', `${today.slice(0, 7)}-${via}.json`);
+  const prev = fs.existsSync(file) ? JSON.parse(fs.readFileSync(file, 'utf8')).cells : {};
+  const good = (x) => x && (x.result === 'found' || x.result === 'unchanged');
+  const cells = { ...prev };
+  for (const r of results) {
+    const state = stateOf.get(r.id) || 'unreadable';
+    const found = new Set(r.quotes?.found || []);
+    const missing = new Set((r.quotes?.missing || []).map((c) => c.id));
+    for (const c of citedBy.get(r.id) || []) {
+      let result;
+      if (state === 'unreachable' || state === 'opaque' || state === 'unreadable') result = state;
+      else if (found.has(c.id)) result = 'found';
+      else if (missing.has(c.id)) result = 'missing';
+      else result = state === 'unchanged' || state === 'furniture' ? 'unchanged' : `page-${state}`;
+      const next = { result, state, sourceId: r.id, quoteHash: hash(c.quote || ''), on: today };
+      // A good result earlier in the month is not undone by a flaky fetch
+      // later. It still has to match the cell's current quote to count.
+      if (good(cells[c.id]) && !good(next) && cells[c.id].quoteHash === next.quoteHash) continue;
+      cells[c.id] = next;
+    }
+  }
+  fs.mkdirSync(path.dirname(file), { recursive: true });
+  const sorted = Object.fromEntries(Object.entries(cells).sort(([a], [b]) => a.localeCompare(b)));
+  fs.writeFileSync(file, `${JSON.stringify({ month: today.slice(0, 7), via, cells: sorted }, null, 1)}\n`);
+  const n = Object.values(sorted).filter(good).length;
+  console.log(`Cell record: ${n} of ${Object.keys(sorted).length} cells vouched for, in ${path.relative(ROOT, file)}.\n`);
 }
 
 if (WRITE) {

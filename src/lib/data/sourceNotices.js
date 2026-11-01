@@ -18,26 +18,10 @@
 // {changed}, {status} and {when} are filled with formatted dates ({when} reads
 // "on August 5, 2026" or "between August 4 and September 5, 2026"), and {count}
 // with the number of rows.
-export const SOURCE_NOTICES = {
-  'me-unrestricted': {
-    title: "Maine's species list is offline",
-    // When the agency replaced the file, and when the replacement was last looked at.
-    changedOn: '2026-09-08',
-    statusCheckedOn: '2026-10-06',
-    // The last full copy anyone can still read: the Internet Archive's capture of
-    // the list before Maine replaced it. Rendered as a link after the text.
-    archive: {
-      label: 'See the last full list, saved by the Internet Archive on February 12, 2026',
-      url: 'https://web.archive.org/web/20260212233615/https://www.maine.gov/IFW/docs/unrestrictedspecies.pdf',
-    },
-    body:
-      "On {changed}, Maine's Department of Inland Fisheries and Wildlife replaced its Unrestricted Species List with a version that covers fish only; the mammal, bird, reptile and invertebrate pages were removed. The department told us on {status}, that only the fish section has been revised so far, that the mammal, bird and reptile sections have not yet been updated, and that it is working on merging the old and new documents in the meantime.",
-    guideTail:
-      'The Maine details in this guide come from the full list and were accurate when we checked it {when}. Confirm with the department before relying on them.',
-    pageTail:
-      'The {count} entries below that rest on it come from the full list and were accurate when we checked them {when}. Confirm with the department before relying on them.',
-  },
-};
+// Retired: me-unrestricted (Maine's list was fish-only from September 8, 2026;
+// the full list came back in October 2026 and its 48 cells were re-verified
+// on November 1, 2026).
+export const SOURCE_NOTICES = {};
 
 // The finished text of a notice: body plus the tail for its surface. `dates`
 // are the verifiedOn values the box speaks for; `count` is only used on pages.

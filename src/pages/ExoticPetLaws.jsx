@@ -16,6 +16,7 @@ import { articleSchema, newestDate } from '@/lib/utils/articleSchema';
 import Breadcrumbs from '@/components/shared/Breadcrumbs';
 import { aggregateVerified, describeVerified, formatDay } from '@/lib/utils/verifiedDates';
 import CitationBox from '@/components/legal/CitationBox';
+import { fileLabel } from '@/lib/utils/fileLinks';
 import { withBrand, pickWithinLimit, plural, TITLE_MAX, DESCRIPTION_MAX, BRAND } from '@/lib/utils/seo';
 import LegalStatusMap, { STATUS_BUCKETS, BUCKET_ORDER, bucketFor } from '@/components/legal/LegalStatusMap';
 
@@ -543,7 +544,7 @@ export default function ExoticPetLaws() {
                         rel="noopener noreferrer"
                         className="mt-3 inline-block text-xs font-body text-primary hover:underline"
                       >
-                        {`${LEGAL.sources[detail.entry.sourceId].title} →`}
+                        {`${LEGAL.sources[detail.entry.sourceId].title}${fileLabel(LEGAL.sources[detail.entry.sourceId].url) ? ` ${fileLabel(LEGAL.sources[detail.entry.sourceId].url)}` : ''} →`}
                       </a>
                     )}
                   </>
@@ -744,7 +745,7 @@ export default function ExoticPetLaws() {
                       rel="noopener noreferrer"
                       className="mt-2 inline-block text-xs font-body text-primary hover:underline"
                     >
-                      {`${LEGAL.sources[entry.sourceId].title} →`}
+                      {`${LEGAL.sources[entry.sourceId].title}${fileLabel(LEGAL.sources[entry.sourceId].url) ? ` ${fileLabel(LEGAL.sources[entry.sourceId].url)}` : ''} →`}
                     </a>
                   )}
                 </div>

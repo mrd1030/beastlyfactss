@@ -131,6 +131,19 @@ fs.writeFileSync(coveragePath, `${JSON.stringify(coverage, null, 2)}\n`);
 fs.writeFileSync(verifiedPath, `${JSON.stringify(verified, null, 2)}\n`);
 fs.writeFileSync(noticesPath, `${JSON.stringify(notices, null, 2)}\n`);
 
+// Which source links are files rather than pages, so the link can say it
+// downloads. The legal checker already opened every source and recorded what
+// came back, which catches the PDFs whose URL never says so (Alabama's rule
+// API, Colorado's GenerateRulePdf.do, California's FileHandler.ashx). Only
+// the files are kept, so the map stays a few KB.
+const fileLinksPath = path.join(root, 'src/lib/generated/file-links.json');
+const hashes = JSON.parse(fs.readFileSync(path.join(root, 'docs/legal-source-hashes.json'), 'utf8')).sources;
+const fileLinks = {};
+for (const s of Object.values(hashes)) {
+  if (s.url && (s.kind === 'pdf' || s.kind === 'docx')) fileLinks[s.url] = s.kind;
+}
+fs.writeFileSync(fileLinksPath, `${JSON.stringify(fileLinks, null, 2)}\n`);
+
 const count = Object.keys(summary).length;
 const bytes = fs.statSync(outPath).size;
 console.log(`Legal summary: ${count} animals, ${bytes} bytes.`);
