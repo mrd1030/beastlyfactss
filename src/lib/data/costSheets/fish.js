@@ -146,7 +146,7 @@ export const fishSheets = {
       { item: "guppy-aquarium-heater", text: "[Aquarium heater]" },
       { item: "neon-tetra-gentle-filter", text: "[Gentle filter]" },
       { item: "neon-tetra-dense-live-silk-plants", text: "[Dense live plants]" },
-      { item: "sand-caribsea-10lb", qty: 1, text: "Dark fine [sand] (check the quantity against your tank's floor)" },
+      { item: "sand-black-20lb", text: "One 20 lb bag of black fine [sand] (check the quantity against your tank's floor)" },
       { item: "water-test-kit-liquid", text: "Liquid [water test kit]" },
       { item: "water-conditioner", text: "[Water conditioner] that neutralizes chlorine and chloramine" },
       { item: "fish-food-micro-pellets", text: "First supply of [micro pellets]" },
