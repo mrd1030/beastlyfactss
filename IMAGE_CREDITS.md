@@ -46,8 +46,8 @@ credit line follows the file, so it still shows wherever the photo does.
 New images record their tool here. Owner decision 2026-10-20: Grok's attribution
 is met with one line on the Terms and Image Credits pages ("created with Grok, or
 with Adobe Firefly"), not a label on each image, and the per-image record lives
-only in this file. The owner's uploads tell them apart: Grok images arrive as .jpg, Firefly
-images (Adobe's own model or its partner models) as .png. From 2026-10-20 the
+only in this file. The file type does not tell them apart: Firefly Image 4 also
+delivers .jpg (2026-11-01), so ask the owner which tool and model made each image. From 2026-10-20 the
 row names the Firefly model when it is a partner model (Gemini, GPT Image). Older images were not
 logged; known ones are Grok Imagine for the seven fact photos added 2026-07-06
 (blobfish, bombardier beetle, box jellyfish, Cuban tree frog, hagfish, hairy
