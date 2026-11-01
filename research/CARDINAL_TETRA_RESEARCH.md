@@ -597,3 +597,4 @@ Distinct new URLs opened and used today: 33 (C17 to C23 and C25 to C50, counting
 - No medication is ever called shrimp-safe.
 
 - Owner decision (2026-11-01): juvenile feeding is three to four small meals a day, tapering to the adult schedule, in all three tetra feeding guides (matches the neon guide's existing FAQ and the only figure found).
+- Owner decision (2026-11-01): the cardinal cost FAQ keeps "difficult to breed at commercial scale" as written, although Seriously Fish now says the species is "commercially-bred on a large scale" (FishBase still says breeding is "possible but difficult").
