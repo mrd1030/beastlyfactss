@@ -174,7 +174,9 @@ FishBase carries it; Practical Fishkeeping, named-author articles only and only
 where no peer-reviewed, extension, vet or Seriously Fish source covers the
 claim, never its news items that report a study (cite the study) and never its
 course pages. A claim whose only source was a hobby site stays in the article
-and goes on that species' owner review list. Cost guides carry no "Prices last checked" or "as of"
+and goes on that species' owner review list. One exception (owner, 2026-11-01): when removing hobby
+sites would leave a guide with fewer than 3 sources, those hobby sources stay
+to bring it back up, never past 6. Cost guides carry no "Prices last checked" or "as of"
 line (owner, 2026-10-06): the table component already prints "Typical
 price ranges across retailers." under every
 priced table, and a dated line only ages.
