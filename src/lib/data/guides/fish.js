@@ -9,6 +9,7 @@ export const fishGuides = fillCostTokens([
     emoji: "🐟",
     difficulty: "Beginner",
     petType: "Fish",
+    image: "/assets/guides/livebearers.jpg",
     tagline: "The fish that give birth to swimming young, and the four everyone starts with!",
     seoTitle: "Livebearer Care Guide: Guppies, Mollies, Platies",
     seoDescription: "Guppies, mollies, platies and swordtails share one set of rules: hard water, the right sex ratio and a plan for fry. Compare all four of them side by side.",
