@@ -38,7 +38,7 @@ export const lizardGuides = fillCostTokens([
     firstWeek: {
       intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
-        { label: "Legal", value: "40 of 52 jurisdictions place no restriction. Washington DC, Hawaii, New York City, and New Mexico rule it out as a lizard or a monitor generally; New Jersey, Rhode Island, Maine, and West Virginia want a permit.", source: "ackie-monitor-legal-guide" },
+        { label: "Legal", value: "41 of 52 jurisdictions place no restriction. Washington DC, Hawaii, New York City, and New Mexico rule it out as a lizard or a monitor generally; New Jersey, Rhode Island, and West Virginia want a permit.", source: "ackie-monitor-legal-guide" },
         { label: "Day one", value: "Quarantine a new ackie until it has cleared two separate clean fecal checks before it joins an established collection.", source: "ackie-monitor-health-issues-guide" },
         { label: "Enclosure", value: "5 feet long by 2.5 wide by 4 tall minimum for a single adult, larger than the old 4x2x2 standard, because this is one of the most active lizards kept.", source: "ackie-monitor-tank-setup-guide" },
         { label: "Basking surface", value: "158 to 172°F on the stone, measured with an infrared thermometer. Below about 130°F is too cool to synthesize vitamin D, and most keepers under-heat, so the hotter end is the safer mistake. Cool side 75 to 80°F.", source: "ackie-monitor-tank-setup-guide" },

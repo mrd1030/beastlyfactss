@@ -1812,7 +1812,7 @@
     },
     "oh-935-02": {
       "title": "Ohio Rev. Code §§ 935.02 to 935.101, Dangerous Wild Animals and Restricted Snakes: possession, registration and permits",
-      "url": "https://codes.ohio.gov/ohio-revised-code/section-935.02",
+      "url": "https://codes.ohio.gov/ohio-revised-code/chapter-935",
       "note": "The operative half of Chapter 935. § 935.02(A) bars possessing a dangerous wild animal on or after January 1, 2014, and (B)(1) bars acquiring one after the chapter took effect; the wildlife shelter and propagation permits at §§ 935.05 and 935.07 are open only to someone who possessed a registered animal on October 1, 2013. § 935.041 sends four marmosets, squirrel monkeys, four capuchins and lemurs to registration with the director of agriculture. The restricted snake permits at §§ 935.08 and 935.10 remain open to a snake acquired after January 1, 2014, within 120 days of acquiring it."
     },
     "ar-20-19-501": {
@@ -1924,6 +1924,26 @@
       "title": "Tenn. Code Ann. § 70-4-208, Skunks, importation, possession, sale prohibited",
       "url": "https://codes.findlaw.com/tn/title-70-wildlife-resources/tn-code-sect-70-4-208/",
       "note": "A one-section statute in the hunting and trapping part, outside the five-class exotic animal scheme. (a) makes it unlawful to import, possess, sell, barter, exchange or otherwise transfer any live skunk, with bona fide zoological parks and research institutions the only exemption; (b) lets a permitted wildlife rehabilitator receive skunks from the wild for rehabilitation and release only; (c) makes a violation a Class C misdemeanor. Tennessee has no free official code, so this is read from FindLaw's reproduction (current as of January 2, 2024) and cited by section number."
+    },
+    "oh-1533-71": {
+      "title": "Ohio Rev. Code § 1533.71, License to raise or keep game birds and animals",
+      "url": "https://codes.ohio.gov/ohio-revised-code/section-1533.71"
+    },
+    "wa-wac-220-450-030": {
+      "title": "WAC 220-450-030, Live wildlife: taking from the wild, importation, possession, transfer and holding in captivity",
+      "url": "https://app.leg.wa.gov/WAC/default.aspx?cite=220-450-030"
+    },
+    "ok-800-25-7-7": {
+      "title": "OAC 800:25-7-7, Reptiles and amphibians: general provisions",
+      "url": "https://www.law.cornell.edu/regulations/oklahoma/OAC-800-25-7-7"
+    },
+    "sc-50-15": {
+      "title": "S.C. Code Title 50, Chapter 15, Nongame and Endangered Species",
+      "url": "https://www.scstatehouse.gov/code/t50c015.php"
+    },
+    "ks-32-1302": {
+      "title": "K.S.A. 32-1302, Dangerous regulated animals: unlawful acts; compliance with USDA regulations",
+      "url": "https://www.ksrevisor.gov/statutes/chapters/ch32/032_013_0002.html"
     }
   },
   "animals": {
@@ -8173,8 +8193,8 @@
           "cite": "Unrestricted Species list",
           "status": "legal",
           "quote": "Varanus exanthematicus",
-          "note": "The savannah monitor is the only Varanus on the list, so the clearance is specific to this species rather than to monitors generally.",
-          "verifiedOn": "2026-08-05"
+          "note": "Maine clears nine monitors by species, the savannah monitor among them, so the clearance is specific to the species named rather than to monitors generally.",
+          "verifiedOn": "2026-11-01"
         },
         "AR": {
           "sourceId": "ar-unrestricted",
@@ -9421,11 +9441,11 @@
         },
         "TN": {
           "status": "legal",
-          "sourceId": "tn-1660-01-18",
+          "sourceId": "tn-70-4-403",
           "cite": "Tenn. Code Ann. § 70-4-403(3); Tenn. Comp. R. & Regs. 1660-01-18-.03",
           "quote": "Class III--This class requires no permits except those required by the department of agriculture, and includes all species not listed in other classes and includes, but is not limited to, those listed in subdivisions (3)(A)-(Q).",
           "note": "The only canids in Class I are the wolves, \"all species\", and the fennec fox is a Vulpes rather than a Canis, so it falls into the Class III catch-all, which needs no permit. The commission's rule chapter, where § 70-4-403(1) lets it add species to Class I, adds no mammal except hybrids of two Class I species, and the furbearers it moves to Class II are native ones only. Rule .01(4) asks every keeper of live wildlife to be able to prove legal ownership, a purchase receipt from a licensed propagator among the accepted forms.",
-          "verifiedOn": "2026-10-08"
+          "verifiedOn": "2026-11-01"
         },
         "ID": {
           "status": "banned",
@@ -9907,11 +9927,11 @@
         },
         "TN": {
           "status": "legal",
-          "sourceId": "tn-1660-01-18",
+          "sourceId": "tn-70-4-403",
           "cite": "Tenn. Code Ann. § 70-4-403(1)(A)(ii)(c), (3); Tenn. Comp. R. & Regs. 1660-01-18-.03(1)",
           "quote": "Class III--This class requires no permits except those required by the department of agriculture, and includes all species not listed in other classes and includes, but is not limited to, those listed in subdivisions (3)(A)-(Q).",
           "note": "The Class I cat entry names six kinds and the serval is none of them: lions, tigers, leopards, jaguars, cheetahs and cougars, each \"all species\". Leptailurus serval is not a Panthera, an Acinonyx or a Puma, so it falls into the Class III catch-all, which needs no permit. Section 70-4-403(1) lets the commission add species to Class I by rule, and its rule chapter adds only hybrids of two Class I species, at 1660-01-18-.03(1). The statute points the same way two subdivisions later by putting bobcat and domestic cat hybrids in Class III expressly. Rule .01(4) asks every keeper of live wildlife to be able to prove legal ownership, a purchase receipt from a licensed propagator among the accepted forms.",
-          "verifiedOn": "2026-10-08"
+          "verifiedOn": "2026-11-01"
         },
         "ID": {
           "status": "permit",
@@ -13023,8 +13043,8 @@
           "cite": "Unrestricted Species list",
           "status": "permit",
           "quote": "Varanus exanthematicus",
-          "note": "The savannah monitor is the only Varanus on the list. The Nile monitor is absent and therefore restricted, which fits its treatment in Florida and Louisiana for different reasons.",
-          "verifiedOn": "2026-08-05"
+          "note": "Maine clears nine monitors by species, and the Nile monitor is not one of them, so it is restricted. That fits its treatment in Florida and Louisiana for different reasons.",
+          "verifiedOn": "2026-11-01"
         },
         "AR": {
           "sourceId": "ar-unrestricted",
@@ -18475,9 +18495,9 @@
           "status": "conditional",
           "sourceId": "me-unrestricted",
           "cite": "Unrestricted Species List, Reptilia, Serpentes",
-          "quote": "Rosy Boa Lichanur trivirgata",
+          "quote": "Lichanur trivirgata Rosy Boa",
           "note": "Named by species, with the genus misprinted as Lichanur for Lichanura. The whole Reptilia section of the list sits under the heading \"Captive Bred Origin Only\", which is the condition on the clearance: a wild-caught animal of the same species is not unrestricted and falls back to § 7.06(4), under which an uncategorized animal may not be possessed at all. A species-level entry carries no asterisk, so the conservation-status filter that qualifies the genus entries does not apply, and Lichanura trivirgata is IUCN Least Concern in any event.",
-          "verifiedOn": "2026-09-05"
+          "verifiedOn": "2026-11-01"
         }
       },
       "article": "/blog/rosy-boa-legal-guide/"
@@ -19179,11 +19199,12 @@
           "verifiedOn": "2026-10-01"
         },
         "ME": {
-          "status": "permit",
+          "status": "legal",
           "sourceId": "me-unrestricted",
-          "cite": "Unrestricted Species List",
-          "note": "Maine's clean list names only Varanus exanthematicus (savannah monitor) among monitors (documented in this site's savannah-monitor research). Varanus acanthurus is absent, so it falls back to Maine's general importation/possession permit requirement rather than the no-permit list. Whether an individual permit is actually issued for a pet Ackie was not separately confirmed.",
-          "verifiedOn": "2026-08-27"
+          "cite": "Unrestricted Species List, Reptilia, Sauria",
+          "note": "Maine's unrestricted species list, as updated in October 2026, names Varanus acanthurus by species, one of nine monitors it now clears. Unrestricted species need no Maine permit to import or possess. An earlier version of the list named only the savannah monitor, which is why the Ackie used to need a permit here.",
+          "verifiedOn": "2026-11-01",
+          "quote": "Varanus acanthurus Spiny-tailed Monitor"
         },
         "WI": {
           "sourceId": "wi-import-permit",
@@ -22608,9 +22629,9 @@
           "status": "conditional",
           "sourceId": "me-unrestricted",
           "cite": "Unrestricted Species List, Reptilia, Sauria",
-          "quote": "All Species in Family Scincidae (Skinks) Family Scincidae*",
+          "quote": "Family Scincidae* All Species in Family Scincidae (Skinks)",
           "note": "A family-wide clearance with no species excepted. Tiliqua scincoides is IUCN Least Concern and on none of the four lists the asterisk points at. The whole Reptilia section of the list sits under the heading \"Captive Bred Origin Only\", which is the condition on the clearance: a wild-caught animal of the same species is not unrestricted and falls back to § 7.06(4), under which an uncategorized animal may not be possessed at all.",
-          "verifiedOn": "2026-09-05"
+          "verifiedOn": "2026-11-01"
         },
         "MO": {
           "status": "legal",
@@ -23467,9 +23488,9 @@
           "status": "conditional",
           "sourceId": "me-unrestricted",
           "cite": "Unrestricted Species List, Reptilia, Sauria",
-          "quote": "All Species in Genus Anolis (Anoles) Anolis spp.*",
+          "quote": "Anolis spp.* All Species in Genus Anolis (Anoles)",
           "note": "The genus is cleared outright. The green anole is not native to Maine, so the native-reptile provisions at 12 M.R.S. § 12152(1-B) and § 7.01 do not come into it, and Anolis carolinensis is IUCN Least Concern, so the asterisk does not remove it. The whole Reptilia section of the list sits under the heading \"Captive Bred Origin Only\", which is the condition on the clearance: a wild-caught animal of the same species is not unrestricted and falls back to § 7.06(4), under which an uncategorized animal may not be possessed at all.",
-          "verifiedOn": "2026-09-05"
+          "verifiedOn": "2026-11-01"
         },
         "MO": {
           "status": "legal",
@@ -25084,13 +25105,13 @@
         },
         "OH": {
           "status": "permit",
-          "sourceId": "oh-1531-01",
+          "sourceId": "oh-1533-71",
           "cite": "R.C. 1531.01(W); § 1533.71(A)(2)",
           "quote": "\"Noncommercial propagating license\" permitting the licensee to propagate game birds, game quadrupeds except captive white-tailed deer, reptiles, amphibians, or fur-bearing animals and to hold the animals in captivity. Game birds, game quadrupeds except captive white-tailed deer, reptiles, amphibians, and fur-bearing animals propagated or held in captivity by authority of a noncommercial propagating license are for the licensee's own use and shall not be sold. The fee for such a license is twenty-five dollars per annum.",
           "note": "Ohio names the raccoon as a fur-bearing animal in R.C. 1531.01(W), and § 1533.71(A) requires anyone who wants \"to have ... fur-bearing animals in captivity\" to hold a license. The noncommercial propagating license is the one written for a keeper: $25 a year, for the licensee's own use, no sales. It is not on the § 935.01 dangerous wild animal list.",
           "localOverride": true,
           "permitFor": "personal",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-11-01"
         },
         "TX": {
           "status": "permit",
@@ -25556,13 +25577,13 @@
         },
         "OH": {
           "status": "permit",
-          "sourceId": "oh-1531-01",
+          "sourceId": "oh-1533-71",
           "cite": "R.C. 1531.01(W); § 1533.71(A)(2)",
           "quote": "\"Noncommercial propagating license\" permitting the licensee to propagate game birds, game quadrupeds except captive white-tailed deer, reptiles, amphibians, or fur-bearing animals and to hold the animals in captivity. Game birds, game quadrupeds except captive white-tailed deer, reptiles, amphibians, and fur-bearing animals propagated or held in captivity by authority of a noncommercial propagating license are for the licensee's own use and shall not be sold. The fee for such a license is twenty-five dollars per annum.",
           "note": "\"Fox\" is a fur-bearing animal under R.C. 1531.01(W), so holding one needs a § 1533.71 license, and the noncommercial propagating license covers a keeper's own animal for $25 a year. The § 935.01 canid entries are gray wolves and African wild dogs only.",
           "localOverride": true,
           "permitFor": "personal",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-11-01"
         },
         "TX": {
           "status": "permit",
@@ -26045,13 +26066,13 @@
         },
         "OH": {
           "status": "permit",
-          "sourceId": "oh-1531-01",
+          "sourceId": "oh-1533-71",
           "cite": "R.C. 1531.01(W); § 1533.71(A)(2)",
           "quote": "\"Noncommercial propagating license\" permitting the licensee to propagate game birds, game quadrupeds except captive white-tailed deer, reptiles, amphibians, or fur-bearing animals and to hold the animals in captivity. Game birds, game quadrupeds except captive white-tailed deer, reptiles, amphibians, and fur-bearing animals propagated or held in captivity by authority of a noncommercial propagating license are for the licensee's own use and shall not be sold. The fee for such a license is twenty-five dollars per annum.",
           "note": "Skunks are named fur-bearing animals under R.C. 1531.01(W), so a pet skunk needs the $25 noncommercial propagating license under § 1533.71(A)(2), for the licensee's own use and not for sale.",
           "localOverride": true,
           "permitFor": "personal",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-11-01"
         },
         "TX": {
           "status": "permit",
@@ -26513,12 +26534,12 @@
         },
         "OH": {
           "status": "legal",
-          "sourceId": "oh-935-01",
+          "sourceId": "oh-1531-01",
           "cite": "R.C. 935.01(C); 1531.01(V), (W)",
           "quote": "\"Fur-bearing animals\" includes minks, weasels, raccoons, skunks, opossums, muskrats, fox, beavers, badgers, otters, coyotes, and bobcats.",
           "note": "Read and nothing found. The kinkajou is not on the § 935.01 dangerous wild animal list, and the Division of Wildlife's captivity license in § 1533.71 reaches game birds, game quadrupeds, reptiles, amphibians and fur-bearing animals, whose definitions name the raccoon by common name and no other procyonid.",
           "localOverride": true,
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-11-01"
         },
         "TX": {
           "status": "legal",
@@ -26624,11 +26645,11 @@
         },
         "TN": {
           "status": "legal",
-          "sourceId": "tn-1660-01-18",
+          "sourceId": "tn-70-4-403",
           "cite": "Tenn. Code Ann. § 70-4-403(3); Tenn. Comp. R. & Regs. 1660-01-18-.03",
           "quote": "Class III--This class requires no permits except those required by the department of agriculture, and includes all species not listed in other classes and includes, but is not limited to, those listed in subdivisions (3)(A)-(Q).",
           "note": "The kinkajou is not native and is not named in Class I, IV or V, so it falls into the Class III catch-all, which needs no TWRA permit. The commission's rule chapter adds no mammal to Class I except hybrids of two Class I species. Rule .01(4) asks every keeper of live wildlife to be able to prove legal ownership, a purchase receipt from a licensed propagator among the accepted forms.",
-          "verifiedOn": "2026-10-08"
+          "verifiedOn": "2026-11-01"
         },
         "NC": {
           "status": "legal",
@@ -26726,12 +26747,12 @@
         },
         "WV": {
           "status": "legal",
-          "sourceId": "wv-74-1",
+          "sourceId": "wv-20-1-2",
           "cite": "W. Va. C.S.R. § 74-1-3.1; W. Va. Code § 20-1-2",
           "quote": "\"Wild animals\" means all mammals native to the State of West Virginia occurring either in a natural state or in captivity",
           "note": "Same reasoning as the fennec fox. The Dangerous Wild Animal list names no procyonid, and Chapter 20 reaches only mammals native to West Virginia, so a kinkajou is on neither list. Local ordinances may still apply.",
           "localOverride": true,
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-11-01"
         },
         "AK": {
           "status": "banned",
@@ -26972,12 +26993,12 @@
         },
         "OH": {
           "status": "legal",
-          "sourceId": "oh-935-01",
+          "sourceId": "oh-1531-01",
           "cite": "R.C. 935.01(C); 1531.01(V), (W)",
           "quote": "\"Fur-bearing animals\" includes minks, weasels, raccoons, skunks, opossums, muskrats, fox, beavers, badgers, otters, coyotes, and bobcats.",
           "note": "Read and nothing found. Not on the dangerous wild animal list, and not a game quadruped or fur-bearing animal, whose definitions name the raccoon and no other procyonid, so § 1533.71's captivity license does not attach.",
           "localOverride": true,
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-11-01"
         },
         "TX": {
           "status": "banned",
@@ -27083,11 +27104,11 @@
         },
         "TN": {
           "status": "legal",
-          "sourceId": "tn-1660-01-18",
+          "sourceId": "tn-70-4-403",
           "cite": "Tenn. Code Ann. § 70-4-403(3); Tenn. Comp. R. & Regs. 1660-01-18-.03",
           "quote": "Class III--This class requires no permits except those required by the department of agriculture, and includes all species not listed in other classes and includes, but is not limited to, those listed in subdivisions (3)(A)-(Q).",
           "note": "The coati is not native to Tennessee and is named in no restrictive class, so it is Class III and needs no TWRA permit. The commission's rule chapter adds no mammal to Class I except hybrids of two Class I species. Rule .01(4) asks every keeper of live wildlife to be able to prove legal ownership, a purchase receipt from a licensed propagator among the accepted forms.",
-          "verifiedOn": "2026-10-08"
+          "verifiedOn": "2026-11-01"
         },
         "NC": {
           "status": "legal",
@@ -27184,12 +27205,12 @@
         },
         "WV": {
           "status": "legal",
-          "sourceId": "wv-74-1",
+          "sourceId": "wv-20-1-2",
           "cite": "W. Va. C.S.R. § 74-1-3.1; W. Va. Code § 20-1-2",
           "quote": "\"Wild animals\" means all mammals native to the State of West Virginia occurring either in a natural state or in captivity",
           "note": "The board's list names no procyonid, and the coati is not native, so it is not a \"wild animal\" under Chapter 20 and the § 20-2-13 import permit does not reach it on the reading the fennec cell records.",
           "localOverride": true,
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-11-01"
         },
         "AK": {
           "status": "banned",
@@ -27428,22 +27449,22 @@
         },
         "WA": {
           "status": "conditional",
-          "sourceId": "wa-rcw-77-08-010",
+          "sourceId": "wa-wac-220-450-030",
           "cite": "WAC 220-450-030(1), (3), (4), (5); RCW 16.30.020(1)(k)",
           "quote": "It is unlawful to possess or hold in captivity live wild animals, wild birds, or game fish unless lawfully acquired. Any person possessing or holding wild animals, wild birds, or game fish in captivity must provide proof of lawful acquisition and possession for inspection if asked to do so by a department employee.",
           "note": "The bobcat is a Washington wild animal, so RCW 16.30, which exempts native wildlife subject to Title 77 and lists only big cats anyway, does not reach it. Title 77 does not ban keeping one: WAC 220-450-030 requires a permit to take one from the wild, a health certificate to import one, and proof of lawful acquisition naming species, origin and source for any held animal, and bars selling a captive one or its progeny except as department rule allows. A captive-bred bobcat lawfully acquired and documented is the condition.",
           "localOverride": true,
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-11-01"
         },
         "OH": {
           "status": "permit",
-          "sourceId": "oh-1531-01",
+          "sourceId": "oh-1533-71",
           "cite": "R.C. 1531.01(W); § 1533.71(A)(2); § 935.01(C)(7)(b)",
           "quote": "\"Noncommercial propagating license\" permitting the licensee to propagate game birds, game quadrupeds except captive white-tailed deer, reptiles, amphibians, or fur-bearing animals and to hold the animals in captivity. Game birds, game quadrupeds except captive white-tailed deer, reptiles, amphibians, and fur-bearing animals propagated or held in captivity by authority of a noncommercial propagating license are for the licensee's own use and shall not be sold. The fee for such a license is twenty-five dollars per annum.",
           "note": "Bobcats are named fur-bearing animals under R.C. 1531.01(W), which puts them under the § 1533.71 captivity license. The dangerous wild animal list at § 935.01(C)(7)(b) names \"Lynxes, including Canadian lynxes, Eurasian lynxes, and Iberian lynxes\", and the bobcat is Lynx rufus but is not among them, while the same definitions section names bobcats separately as fur-bearing animals. That separate naming is the better reading. If the bobcat were a lynx under Chapter 935, no new keeper could have one at all, since § 935.02 closed dangerous wild animals to new owners as it did the serval.",
           "localOverride": true,
           "permitFor": "personal",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-11-01"
         },
         "TX": {
           "status": "permit",
@@ -27546,11 +27567,11 @@
         },
         "DE": {
           "status": "unclear",
-          "sourceId": "de-903",
+          "sourceId": "de-nonnative-reptile-permit",
           "cite": "Del. Code tit. 3 § 7201; tit. 7 ch. 7",
           "quote": "No person shall bring into this State, possess, sell or exhibit any live wild mammal or hybrid of a wild mammal or live reptile not native to or generally found in Delaware without first securing a permit under this chapter.",
           "note": "Which agency answers the bobcat depends on whether it is \"native to or generally found in Delaware\". It is historically native and was long gone from the state, with only occasional records now. If it counts as native, it belongs to DNREC, which says state regulations forbid owning native wildlife, and the answer is no. If not, it is an exotic under the Agriculture chapter and needs the $25 Individual permit, like the serval. Neither agency has published which.",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-11-01"
         },
         "TN": {
           "status": "permit",
@@ -28033,11 +28054,11 @@
         },
         "TN": {
           "status": "legal",
-          "sourceId": "tn-1660-01-18",
+          "sourceId": "tn-70-4-403",
           "cite": "Tenn. Code Ann. § 70-4-403(3); Tenn. Comp. R. & Regs. 1660-01-18-.03",
           "quote": "Class III--This class requires no permits except those required by the department of agriculture, and includes all species not listed in other classes and includes, but is not limited to, those listed in subdivisions (3)(A)-(Q).",
           "note": "The only canids in Class I are the wolves, and the arctic fox is not native, so it falls into the Class III catch-all. The commission's rule chapter adds no mammal to Class I except hybrids of two Class I species. Rule .01(4) asks every keeper of live wildlife to be able to prove legal ownership, a purchase receipt from a licensed propagator among the accepted forms.",
-          "verifiedOn": "2026-10-08"
+          "verifiedOn": "2026-11-01"
         },
         "NC": {
           "status": "unclear",
@@ -28518,11 +28539,11 @@
         },
         "TN": {
           "status": "legal",
-          "sourceId": "tn-1660-01-18",
+          "sourceId": "tn-70-4-403",
           "cite": "Tenn. Code Ann. § 70-4-403(3); Tenn. Comp. R. & Regs. 1660-01-18-.03",
           "quote": "Class III--This class requires no permits except those required by the department of agriculture, and includes all species not listed in other classes and includes, but is not limited to, those listed in subdivisions (3)(A)-(Q).",
           "note": "Class I's cats are lions, tigers, leopards, jaguars, cheetahs and cougars, and the Canada lynx is none of them and not a Tennessee animal, so it is Class III. The Canada lynx is federally threatened in the lower 48, which does not bar keeping one but requires a federal permit to move one across state lines in commerce. Rule .01(2) requires a threatened species to have been legally obtained where it came from. The commission's rule chapter adds no mammal to Class I except hybrids of two Class I species. Rule .01(4) asks every keeper of live wildlife to be able to prove legal ownership, a purchase receipt from a licensed propagator among the accepted forms.",
-          "verifiedOn": "2026-10-08"
+          "verifiedOn": "2026-11-01"
         },
         "NC": {
           "status": "legal",
@@ -28626,7 +28647,7 @@
         },
         "WV": {
           "status": "banned",
-          "sourceId": "wv-19-34",
+          "sourceId": "wv-74-1",
           "cite": "W. Va. Code § 19-34-4; W. Va. C.S.R. § 74-1-3.1.g.2",
           "quote": "3.1.g.2. Lynxes, including Canadian lynxes, Eurasian lynxes, and Iberian lynxes;",
           "note": "Named on the Dangerous Wild Animal list, and § 19-34-4(a) bars possessing a listed animal. The only permit in § 19-34-4(b) is for someone who already lawfully had the animal before the rules took effect, and § 19-34-6(b)(1) then bars breeding, receiving or replacing one.",
@@ -28634,7 +28655,7 @@
             "before": "2022-04-05",
             "detail": "Lawfully possessed before the board's rules took effect, then permitted annually by the board, with no breeding, acquiring or replacing."
           },
-          "verifiedOn": "2026-10-08"
+          "verifiedOn": "2026-11-01"
         },
         "AK": {
           "status": "banned",
@@ -28990,11 +29011,11 @@
         },
         "TN": {
           "status": "legal",
-          "sourceId": "tn-1660-01-18",
+          "sourceId": "tn-70-4-403",
           "cite": "Tenn. Code Ann. § 70-4-403(3); Tenn. Comp. R. & Regs. 1660-01-18-.03",
           "quote": "Class III--This class requires no permits except those required by the department of agriculture, and includes all species not listed in other classes and includes, but is not limited to, those listed in subdivisions (3)(A)-(Q).",
           "note": "The rule moves only NATIVE furbearing mammals into Class II, and the Asian otter is not native, so it is Class III. CITES Appendix I since 2019 governs international trade separately. The commission's rule chapter adds no mammal to Class I except hybrids of two Class I species. Rule .01(4) asks every keeper of live wildlife to be able to prove legal ownership, a purchase receipt from a licensed propagator among the accepted forms.",
-          "verifiedOn": "2026-10-08"
+          "verifiedOn": "2026-11-01"
         },
         "NC": {
           "status": "unclear",
@@ -29032,12 +29053,12 @@
         },
         "KY": {
           "status": "legal",
-          "sourceId": "ky-301-2-082",
+          "sourceId": "ky-301-2-081",
           "cite": "301 KAR 2:082 §§ 4, 7; 301 KAR 2:081 § 6(1)(i)",
           "quote": "(i) Otter (Lontra canadensis);",
           "note": "Read and nothing found. It is on neither of the two exotic possession bars in 301 KAR 2:082 § 4, the potentially injurious list and the inherently dangerous list, nor on the § 7 permit-exempt list, so it may be possessed, but a transportation permit is needed to bring it into Kentucky. The prohibited natives list names the river otter by binomial, so it does not reach an Asian otter. CITES Appendix I since 2019 governs international trade separately.",
           "localOverride": true,
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-11-01"
         },
         "RI": {
           "status": "banned",
@@ -29092,12 +29113,12 @@
         },
         "WV": {
           "status": "legal",
-          "sourceId": "wv-74-1",
+          "sourceId": "wv-20-1-2",
           "cite": "W. Va. C.S.R. § 74-1-3.1; W. Va. Code § 20-1-2",
           "quote": "\"Wild animals\" means all mammals native to the State of West Virginia occurring either in a natural state or in captivity",
           "note": "No mustelid is on the board's list, and this Asian otter is not native, so Chapter 20 does not reach it. The native river otter would be a different answer. CITES Appendix I since 2019 bars commercial international trade.",
           "localOverride": true,
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-11-01"
         },
         "AK": {
           "status": "banned",
@@ -29342,12 +29363,12 @@
         },
         "WA": {
           "status": "conditional",
-          "sourceId": "wa-rcw-77-08-010",
+          "sourceId": "wa-wac-220-450-030",
           "cite": "WAC 220-450-030(1), (3), (4), (5); RCW 16.30.010(2)(a)(i)(C), 16.30.020(1)(k)",
           "quote": "It is unlawful to possess or hold in captivity live wild animals, wild birds, or game fish unless lawfully acquired. Any person possessing or holding wild animals, wild birds, or game fish in captivity must provide proof of lawful acquisition and possession for inspection if asked to do so by a department employee.",
           "note": "RCW 16.30 lists \"Family ursidae, all bears\" as potentially dangerous, but 16.30.020(1)(k) exempts \"native wildlife subject to Title 77 RCW\", and the black bear is a Washington animal, so the dangerous animal ban does not reach it. Title 77 then asks only for lawful acquisition: no taking from the wild without a permit, a health certificate to import, documented proof of source, and no sale of a captive animal or its progeny except as rule allows. That is a thin answer for a bear and turns on the native-wildlife exemption doing what it says.",
           "localOverride": true,
-          "verifiedOn": "2026-10-08"
+          "verifiedOn": "2026-11-01"
         },
         "OH": {
           "status": "banned",
@@ -29463,11 +29484,11 @@
         },
         "DE": {
           "status": "unclear",
-          "sourceId": "de-903",
+          "sourceId": "de-nonnative-reptile-permit",
           "cite": "Del. Code tit. 3 § 7201; tit. 7 ch. 7",
           "quote": "No person shall bring into this State, possess, sell or exhibit any live wild mammal or hybrid of a wild mammal or live reptile not native to or generally found in Delaware without first securing a permit under this chapter.",
           "note": "The same question as the bobcat. The black bear is historically native to Delaware and has no resident population now. Treated as native, it is DNREC's, and DNREC says native wildlife may not be owned. Treated as not generally found here, it is an Agriculture exotic that needs the Individual permit, and nothing in 903 refuses a bear by name. Neither agency has said which.",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-11-01"
         },
         "TN": {
           "status": "banned",
@@ -29558,7 +29579,7 @@
         },
         "KS": {
           "status": "banned",
-          "sourceId": "ks-32-1301",
+          "sourceId": "ks-32-1302",
           "cite": "K.S.A. 32-1301(d)(2), 32-1302(a), (c), (d); K.A.R. 115-20-4",
           "quote": "(c) Except as provided in subsection (d), a person shall not take possession of a dangerous regulated animal or allow dangerous regulated animals in such person's possession to breed.",
           "note": "Bears are dangerous regulated animals, and since July 1, 2006, no one may take possession of one except a USDA licensee keeping up the inventory it held that day. K.A.R. 115-20-4 offers any individual a possession permit for a black bear, but it is a wildlife permit that cannot override the statute. Animals held on July 1, 2006, had to be registered with local animal control and insured for $250,000.",
@@ -29567,7 +29588,7 @@
             "detail": "A bear possessed on July 1, 2006, may be kept if registered with the local animal control authority, caged to K.S.A. 32-1306, covered by $250,000 liability insurance or bond, and not bred."
           },
           "permitFor": "commercial-exhibition-research",
-          "verifiedOn": "2026-10-08"
+          "verifiedOn": "2026-11-01"
         },
         "SC": {
           "status": "permit",
@@ -29587,12 +29608,12 @@
         },
         "WV": {
           "status": "permit",
-          "sourceId": "wv-20-2-51",
+          "sourceId": "wv-74-1",
           "cite": "W. Va. C.S.R. § 74-1-3.1.h; W. Va. Code § 20-1-2, § 20-2-4(a), § 20-2-51",
           "quote": "3.1.h. Bears; (excluding black bears native to this state);",
           "note": "The board's list carves the native black bear out of its bear entry in terms, and the black bear is a game animal by name in § 20-1-2. That leaves Chapter 20, where § 20-2-4(a) bars captivity except as provided and § 20-2-51 provides a pet permit for an animal from a commercial dealer or the open season. On the words a black bear is in the same position as a raccoon, which is surprising enough that the DNR's practice deserves a check before anyone relies on it.",
           "permitFor": "personal",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-11-01"
         },
         "AK": {
           "status": "banned",
@@ -30552,7 +30573,7 @@
         },
         "WV": {
           "status": "banned",
-          "sourceId": "wv-19-34",
+          "sourceId": "wv-74-1",
           "cite": "W. Va. Code § 19-34-4; W. Va. C.S.R. § 74-1-3.1.o",
           "quote": "3.1.o. Nonhuman primates, excluding: 3.1.o.1. Lemurs; 3.1.o.2. Golden lion, black faced lion, golden-rumped lion, cotton top, emperor, saddlebacked, blackmantled, and Geoffroys tamarins;",
           "note": "Every nonhuman primate is on the Dangerous Wild Animal list unless one of eleven exclusions names it, and none names a capuchin. § 19-34-4(a) bars possessing a listed animal, and the only permit in § 19-34-4(b) is for someone who already lawfully had it before the rules took effect, with § 19-34-6(b)(1) barring breeding, receiving or replacing one.",
@@ -30560,7 +30581,7 @@
             "before": "2022-04-05",
             "detail": "Lawfully possessed before the board's rules took effect, then permitted by the board, with no breeding, acquiring or replacing."
           },
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-11-01"
         },
         "AK": {
           "status": "banned",
@@ -31044,7 +31065,7 @@
         },
         "WV": {
           "status": "banned",
-          "sourceId": "wv-19-34",
+          "sourceId": "wv-74-1",
           "cite": "W. Va. Code § 19-34-4; W. Va. C.S.R. § 74-1-3.1.o",
           "quote": "3.1.o. Nonhuman primates, excluding: 3.1.o.1. Lemurs; 3.1.o.2. Golden lion, black faced lion, golden-rumped lion, cotton top, emperor, saddlebacked, blackmantled, and Geoffroys tamarins;",
           "note": "Every nonhuman primate is on the Dangerous Wild Animal list unless one of eleven exclusions names it. The exclusions name eight tamarins and Goeldi's monkey but no marmoset. § 19-34-4(a) bars possessing a listed animal, and the only permit in § 19-34-4(b) is for someone who already lawfully had it before the rules took effect, with § 19-34-6(b)(1) barring breeding, receiving or replacing one.",
@@ -31052,7 +31073,7 @@
             "before": "2022-04-05",
             "detail": "Lawfully possessed before the board's rules took effect, then permitted by the board, with no breeding, acquiring or replacing."
           },
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-11-01"
         },
         "AK": {
           "status": "banned",
@@ -31519,12 +31540,12 @@
         },
         "SC": {
           "status": "banned",
-          "sourceId": "sc-47-2",
+          "sourceId": "sc-50-15",
           "cite": "S.C. Code §§ 50-15-30(C)(3), 50-15-40(D); § 47-2-10(2)(c)",
           "quote": "(C) Except as otherwise provided in this article, it shall be unlawful for any person to take, possess, transport, export, process, sell or offer for sale, or ship, and for any common or contract carrier knowingly to transport or receive for shipment any species or subspecies of wildlife appearing on any of the following lists: ... (3) the United States' List of Endangered Foreign Fish and Wildlife (Part 17 of Title 50, Code of Federal Regulations, Appendix A, 50 C.F.R. Section 17.11), as such list may be modified hereafter;",
           "note": "South Carolina's 2018 ban reaches primates only through the great apes, but § 50-15-30(C)(3) separately bars possessing any species on the federal list of endangered foreign wildlife, and 50 CFR 17.11 lists the whole family Lemuridae, Lemur included, as endangered. § 50-15-40(D) lets the Department permit possession only for scientific, zoological, educational, propagation or other special purposes. Lemur catta is on CITES Appendix I, which bars commercial international trade, so a pet lemur here can only come from captive breeding inside the country, and the whole family Lemuridae is listed endangered under the Endangered Species Act (50 CFR 17.11).",
           "permitFor": "commercial-exhibition-research",
-          "verifiedOn": "2026-10-08"
+          "verifiedOn": "2026-11-01"
         },
         "MT": {
           "status": "banned",
@@ -31536,11 +31557,11 @@
         },
         "WV": {
           "status": "legal",
-          "sourceId": "wv-19-34",
+          "sourceId": "wv-74-1",
           "cite": "W. Va. C.S.R. § 74-1-3.1.o.1; W. Va. Code § 20-1-2",
           "quote": "3.1.o. Nonhuman primates, excluding: 3.1.o.1. Lemurs; 3.1.o.2. Golden lion, black faced lion, golden-rumped lion, cotton top, emperor, saddlebacked, blackmantled, and Geoffroys tamarins;",
           "note": "Lemurs are the first exclusion from the primate entry, so a ring-tailed lemur is not a dangerous wild animal. It is not native, so it is not a \"wild animal\" under § 20-1-2, which means native mammals, and no other West Virginia rule reaches it. Lemur catta is on CITES Appendix I, which bars commercial international trade, so a pet lemur here can only come from captive breeding inside the country, and the whole family Lemuridae is listed endangered under the Endangered Species Act (50 CFR 17.11).",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-11-01"
         },
         "AK": {
           "status": "banned",
@@ -32025,7 +32046,7 @@
         },
         "WV": {
           "status": "banned",
-          "sourceId": "wv-19-34",
+          "sourceId": "wv-74-1",
           "cite": "W. Va. Code § 19-34-4; W. Va. C.S.R. § 74-1-3.1.o",
           "quote": "3.1.o. Nonhuman primates, excluding: 3.1.o.1. Lemurs; 3.1.o.2. Golden lion, black faced lion, golden-rumped lion, cotton top, emperor, saddlebacked, blackmantled, and Geoffroys tamarins;",
           "note": "Every nonhuman primate is on the Dangerous Wild Animal list unless one of eleven exclusions names it, and none names a squirrel monkey. § 19-34-4(a) bars possessing a listed animal, and the only permit in § 19-34-4(b) is for someone who already lawfully had it before the rules took effect, with § 19-34-6(b)(1) barring breeding, receiving or replacing one.",
@@ -32033,7 +32054,7 @@
             "before": "2022-04-05",
             "detail": "Lawfully possessed before the board's rules took effect, then permitted by the board, with no breeding, acquiring or replacing."
           },
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-11-01"
         },
         "AK": {
           "status": "banned",
@@ -32545,7 +32566,7 @@
         },
         "WV": {
           "status": "banned",
-          "sourceId": "wv-19-34",
+          "sourceId": "wv-74-1",
           "cite": "W. Va. Code § 19-34-4; W. Va. C.S.R. § 74-1-3.1.d",
           "quote": "3.1.c. Lions; 3.1.d. Tigers; ... 3.1.g. All of the following, including hybrids with domestic cats unless otherwise specified: ... 3.1.g.3. Cougars, also known as pumas or mountain lions;",
           "note": "Tigers are named on the Dangerous Wild Animal list. § 19-34-4(a) bars possessing a listed animal, and the only permit in § 19-34-4(b) is for someone who already lawfully had it before the rules took effect, with § 19-34-6(b)(1) barring breeding, receiving or replacing one. Federally, the Big Cat Public Safety Act of 2022 (16 U.S.C. § 3372(e)) bars any person outside a licensed exhibitor, sanctuary or state institution from breeding or possessing a tiger unless the animal was born before December 20, 2022, and registered with the U.S. Fish and Wildlife Service within 180 days, so no new pet is lawful anywhere in the country whatever the state rule says.",
@@ -32553,7 +32574,7 @@
             "before": "2022-04-05",
             "detail": "Lawfully possessed before the board's rules took effect, then permitted by the board, with no breeding, acquiring or replacing."
           },
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-11-01"
         },
         "AK": {
           "status": "banned",
@@ -33075,7 +33096,7 @@
         },
         "WV": {
           "status": "banned",
-          "sourceId": "wv-19-34",
+          "sourceId": "wv-74-1",
           "cite": "W. Va. Code § 19-34-4; W. Va. C.S.R. § 74-1-3.1.c",
           "quote": "3.1.c. Lions; 3.1.d. Tigers; ... 3.1.g. All of the following, including hybrids with domestic cats unless otherwise specified: ... 3.1.g.3. Cougars, also known as pumas or mountain lions;",
           "note": "Lions are named on the Dangerous Wild Animal list. § 19-34-4(a) bars possessing a listed animal, and the only permit in § 19-34-4(b) is for someone who already lawfully had it before the rules took effect, with § 19-34-6(b)(1) barring breeding, receiving or replacing one. Federally, the Big Cat Public Safety Act of 2022 (16 U.S.C. § 3372(e)) bars any person outside a licensed exhibitor, sanctuary or state institution from breeding or possessing a lion unless the animal was born before December 20, 2022, and registered with the U.S. Fish and Wildlife Service within 180 days, so no new pet is lawful anywhere in the country whatever the state rule says.",
@@ -33083,7 +33104,7 @@
             "before": "2022-04-05",
             "detail": "Lawfully possessed before the board's rules took effect, then permitted by the board, with no breeding, acquiring or replacing."
           },
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-11-01"
         },
         "AK": {
           "status": "banned",
@@ -33603,7 +33624,7 @@
         },
         "WV": {
           "status": "banned",
-          "sourceId": "wv-19-34",
+          "sourceId": "wv-74-1",
           "cite": "W. Va. Code § 19-34-4; W. Va. C.S.R. § 74-1-3.1.g.3",
           "quote": "3.1.c. Lions; 3.1.d. Tigers; ... 3.1.g. All of the following, including hybrids with domestic cats unless otherwise specified: ... 3.1.g.3. Cougars, also known as pumas or mountain lions;",
           "note": "Cougars are named on the Dangerous Wild Animal list, \"also known as pumas or mountain lions\". § 19-34-4(a) bars possessing a listed animal, and the only permit in § 19-34-4(b) is for someone who already lawfully had it before the rules took effect, with § 19-34-6(b)(1) barring breeding, receiving or replacing one. Federally, the Big Cat Public Safety Act of 2022 (16 U.S.C. § 3372(e)) bars any person outside a licensed exhibitor, sanctuary or state institution from breeding or possessing a cougar unless the animal was born before December 20, 2022, and registered with the U.S. Fish and Wildlife Service within 180 days, so no new pet is lawful anywhere in the country whatever the state rule says. The Florida panther subspecies is also endangered under the federal Endangered Species Act.",
@@ -33611,7 +33632,7 @@
             "before": "2022-04-05",
             "detail": "Lawfully possessed before the board's rules took effect, then permitted by the board, with no breeding, acquiring or replacing."
           },
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-11-01"
         },
         "AK": {
           "status": "banned",
@@ -33945,10 +33966,10 @@
           "status": "banned",
           "sourceId": "nm-importation-list",
           "cite": "Director's Species Importation List, 2023",
-          "quote": "Snake | Viperidae | any venomous species | IV",
+          "quote": "Snake | Viperidae | any venomous species | any venomous species | IV",
           "note": "Every venomous viper is in Group IV, and two rattlesnakes are named on their own rows. New Mexico's own rattlesnakes are a separate question: the importation rule does not reach an animal already in the state, and the native reptile rules were not read here. Group IV importation is prohibited for the general public and allowed only for scientific study, department approved restoration, zoological display, temporary events, use as a service animal, or by a qualified expert. 19.35.7 NMAC is an importation rule, so it governs bringing the animal into New Mexico rather than keeping one already here.",
           "permitFor": "commercial-exhibition-research",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-11-01"
         },
         "VT": {
           "status": "permit",
@@ -34794,11 +34815,11 @@
         },
         "CO": {
           "status": "legal",
-          "sourceId": "co-cpw-species-list",
-          "cite": "CPW species determinations; 2 CCR 406-7 Appendix A(A)(5), #703(A)",
-          "quote": "Snake Malayopython reticulatus Reticulated python -> W-07, Appendix A, A, 5: Family Pythonidae (giant snakes) native to tropical/subtropical only",
+          "sourceId": "co-w7",
+          "cite": "2 CCR 406-7 Appendix A(A)(5), #703(A)",
+          "quote": "A. Any species of snake native only to the tropical and subtropical region from the following families: ... 5. Pythonidae (giant snakes)",
           "note": "Appendix A clears pythons \"native only to the tropical and subtropical region\", which #700(G) fixes at 26 degrees north to 26 degrees south, and CPW has ruled the reticulated python inside it. No license or documentation is needed. Federally, the reticulated python has been injurious wildlife under the Lacey Act since 2015 (50 CFR 16.15(a)), which bars importing one into the country or shipping one to Hawaii or a territory; USARK v. Zinke (D.C. Cir. 2017) held it does not bar shipment between the continental states.",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-11-01"
         },
         "AZ": {
           "status": "legal",
@@ -34886,12 +34907,12 @@
         },
         "MD": {
           "status": "legal",
-          "sourceId": "md-10-621",
+          "sourceId": "md-10-902",
           "cite": "Crim. Law § 10-621(b)(1); Nat. Res. §§ 10-902(a), 10-903",
           "quote": "Any person desiring to possess, import, export, breed, raise, protect, rehabilitate, hunt, kill, trap, capture, purchase, or sell any wildlife native to Maryland, shall first obtain a permit or license from the Department.",
           "note": "§ 10-621 reaches cats, dogs, primates, the rabies vector mammals, crocodilians and venomous snakes, and § 10-902's permit attaches only to wildlife native to Maryland. A reticulated python is neither, and Maryland has used its power over nonnative wildlife in § 10-903 only for aquatic organisms, so the state does not restrict it. Subsection (e) of § 10-621 preserves stricter county and municipal rules. Federally, the reticulated python has been injurious wildlife under the Lacey Act since 2015 (50 CFR 16.15(a)), which bars importing one into the country or shipping one to Hawaii or a territory; USARK v. Zinke (D.C. Cir. 2017) held it does not bar shipment between the continental states.",
           "localOverride": true,
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-11-01"
         },
         "NM": {
           "status": "banned",
@@ -35339,12 +35360,12 @@
         },
         "MD": {
           "status": "legal",
-          "sourceId": "md-10-621",
+          "sourceId": "md-10-902",
           "cite": "Crim. Law § 10-621(b)(1); Nat. Res. §§ 10-902(a), 10-903",
           "quote": "Any person desiring to possess, import, export, breed, raise, protect, rehabilitate, hunt, kill, trap, capture, purchase, or sell any wildlife native to Maryland, shall first obtain a permit or license from the Department.",
           "note": "§ 10-621 reaches cats, dogs, primates, the rabies vector mammals, crocodilians and venomous snakes, and § 10-902's permit attaches only to wildlife native to Maryland. A green anaconda is neither, and Maryland has used its power over nonnative wildlife in § 10-903 only for aquatic organisms, so the state does not restrict it. Subsection (e) of § 10-621 preserves stricter county and municipal rules. Federally, the green anaconda has been injurious wildlife under the Lacey Act since 2015 (50 CFR 16.15(a)), which bars importing one into the country or shipping one to Hawaii or a territory; USARK v. Zinke (D.C. Cir. 2017) held it does not bar shipment between the continental states.",
           "localOverride": true,
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-11-01"
         },
         "NM": {
           "status": "banned",
@@ -35697,11 +35718,11 @@
         },
         "CO": {
           "status": "banned",
-          "sourceId": "co-cpw-species-list",
-          "cite": "CPW species determinations; 2 CCR 406-7 #701",
-          "quote": "Crocodilia Alligator mississippiensis American Alligator Common alligator, gator -> W-07: Not an authorized species for private possession. CPW license required.",
+          "sourceId": "co-w7",
+          "cite": "2 CCR 406-7 #701(A); Appendix A",
+          "quote": "it is unlawful for any person to take, possess, sell, offer for sale, purchase, import, export, transport, or release any live herpetofauna in Colorado.",
           "note": "CPW rules on the alligator by name. Only the caimans are cleared, by Appendix A's other-species block, so an alligator is regulated wildlife with no pet license.",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-11-01"
         },
         "AZ": {
           "status": "restricted",
@@ -35776,11 +35797,11 @@
         },
         "MN": {
           "status": "legal",
-          "sourceId": "mn-97a-401",
+          "sourceId": "mn-97a-015",
           "cite": "§ 97A.015, subds. 39, 53, 55; § 97A.501, subd. 1; § 346.155, subd. 1(e)",
           "quote": "\"Unprotected wild animals\" means wild animals that are not protected wild animals including coyote, plains pocket gopher, porcupine, striped skunk, and unprotected birds, except any animal species listed as endangered, threatened, or of special concern in Minnesota Rules, chapter 6134.",
           "note": "Minnesota's possession bar in § 97A.501 reaches protected wild animals, and subd. 39 names the reptile groups it protects: turtles, snakes and lizards. Crocodilians are not among them and are not on the state's chapter 6134 list, so an alligator is a wild animal under subd. 55 but an unprotected one, outside the bar. It is not a regulated animal under § 346.155 either. The state does not restrict it; local ordinances were not checked.",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-11-01"
         },
         "NV": {
           "status": "banned",
@@ -36045,11 +36066,11 @@
         },
         "OK": {
           "status": "permit",
-          "sourceId": "ok-800-25-7",
+          "sourceId": "ok-800-25-7-7",
           "cite": "OAC 800:25-7-7(8); 800:25-7-8(5)(D)",
           "quote": "(8) It is unlawful to possess an American Alligator without appropriate permit from the Department.",
           "note": "Oklahoma requires a Department permit by name for the American alligator and keeps a statewide closed season on it, so one may not be taken from the wild. The rule does not say which permit or who may hold it.",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-11-01"
         },
         "NE": {
           "status": "unclear",
@@ -36257,11 +36278,11 @@
         },
         "MN": {
           "status": "legal",
-          "sourceId": "mn-97a-401",
+          "sourceId": "mn-97a-015",
           "cite": "§ 97A.015, subds. 39, 53, 55; § 97A.501, subd. 1; § 346.155, subd. 1(e)",
           "quote": "\"Unprotected wild animals\" means wild animals that are not protected wild animals including coyote, plains pocket gopher, porcupine, striped skunk, and unprotected birds, except any animal species listed as endangered, threatened, or of special concern in Minnesota Rules, chapter 6134.",
           "note": "Subd. 39 protects turtles, snakes and lizards and not crocodilians, so a caiman is an unprotected wild animal outside the § 97A.501 possession bar, and § 346.155 regulates only cats, bears and primates. The state does not restrict it; local ordinances were not checked.",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-11-01"
         },
         "NV": {
           "status": "banned",
@@ -36681,20 +36702,20 @@
         },
         "WA": {
           "status": "conditional",
-          "sourceId": "wa-rcw-77-08-010",
+          "sourceId": "wa-wac-220-450-030",
           "cite": "RCW 77.08.010(72), (74); WAC 220-450-030(1), (3), (4), (5)",
           "quote": "It is unlawful to possess or hold in captivity live wild animals, wild birds, or game fish unless lawfully acquired. Lawful acquisition and possession include department permits and any other applicable authorization.",
           "note": "The eastern gray squirrel is an introduced animal that lives wild in Washington, so it is a \"wild animal\" under RCW 77.08.010(72), which turns on whether a species exists in Washington in a wild state rather than on where it came from. Title 77 then asks for lawful acquisition: no taking from the wild without a director's permit, a health certificate to import, documented proof of source, and no commercial use of a captive animal or its young except as rule allows. RCW 16.30 names no rodent.",
-          "verifiedOn": "2026-10-08"
+          "verifiedOn": "2026-11-01"
         },
         "OH": {
           "status": "permit",
-          "sourceId": "oh-1531-01",
+          "sourceId": "oh-1533-71",
           "cite": "R.C. 1531.01(V); § 1533.71(A)(2)",
           "quote": "\"Noncommercial propagating license\" permitting the licensee to propagate game birds, game quadrupeds except captive white-tailed deer, reptiles, amphibians, or fur-bearing animals and to hold the animals in captivity. Game birds, game quadrupeds except captive white-tailed deer, reptiles, amphibians, and fur-bearing animals propagated or held in captivity by authority of a noncommercial propagating license are for the licensee's own use and shall not be sold. The fee for such a license is twenty-five dollars per annum.",
           "note": "Ohio names gray squirrels among its game quadrupeds in R.C. 1531.01(V), and § 1533.71(A) requires anyone who wants to have game quadrupeds in captivity to hold a license. The noncommercial propagating license is the keeper's one: $25 a year, for the licensee's own use, no sales.",
           "permitFor": "personal",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-11-01"
         },
         "TX": {
           "status": "permit",
@@ -37136,20 +37157,20 @@
         },
         "WA": {
           "status": "conditional",
-          "sourceId": "wa-rcw-77-08-010",
+          "sourceId": "wa-wac-220-450-030",
           "cite": "RCW 77.08.010(72), (74); WAC 220-450-030(1), (3), (4), (5)",
           "quote": "It is unlawful to possess or hold in captivity live wild animals, wild birds, or game fish unless lawfully acquired. Lawful acquisition and possession include department permits and any other applicable authorization.",
           "note": "The Virginia opossum is an introduced animal that lives wild in Washington, so it is a \"wild animal\" under RCW 77.08.010(72). Title 77 asks for lawful acquisition: no taking from the wild without a director's permit, a health certificate to import, documented proof of source, and no commercial use of a captive animal or its young except as rule allows. RCW 16.30 names no marsupial.",
-          "verifiedOn": "2026-10-08"
+          "verifiedOn": "2026-11-01"
         },
         "OH": {
           "status": "permit",
-          "sourceId": "oh-1531-01",
+          "sourceId": "oh-1533-71",
           "cite": "R.C. 1531.01(W); § 1533.71(A)(2)",
           "quote": "\"Noncommercial propagating license\" permitting the licensee to propagate game birds, game quadrupeds except captive white-tailed deer, reptiles, amphibians, or fur-bearing animals and to hold the animals in captivity. Game birds, game quadrupeds except captive white-tailed deer, reptiles, amphibians, and fur-bearing animals propagated or held in captivity by authority of a noncommercial propagating license are for the licensee's own use and shall not be sold. The fee for such a license is twenty-five dollars per annum.",
           "note": "Ohio names opossums among its fur-bearing animals in R.C. 1531.01(W), and § 1533.71(A) requires a license to hold fur-bearing animals in captivity. The noncommercial propagating license is the keeper's one: $25 a year, own use, no sales.",
           "permitFor": "personal",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-11-01"
         },
         "TX": {
           "status": "permit",
@@ -37219,10 +37240,10 @@
           "status": "banned",
           "sourceId": "nm-importation-list",
           "cite": "Director's Species Importation List, 2023; 19.35.7 NMAC",
-          "quote": "Marsupial | Didelphidae | Monodelphis domestica | Shorttail Oppossum | II | Captive Bred",
+          "quote": "Marsupial | Didelphidae | Monodelphis domestica | Short tail Oppossum | II | Captive Bred",
           "note": "The only opossum on the list is the short-tailed opossum, Group II. The Virginia opossum is not on it, so it falls to Group IV by default. The Director's list is not exhaustive, and 19.35.7 NMAC says \"Any species of live non-domesticated animal not currently on the species importation list will be designated group IV until such time as another determination is made by the director.\" Group IV importation is prohibited for the general public and allowed only for scientific study, department approved restoration, zoological display, temporary events, use as a service animal, or by a qualified expert. 19.35.7 NMAC is an importation rule, so it governs bringing the animal into New Mexico rather than keeping one already here.",
           "permitFor": "commercial-exhibition-research",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-11-01"
         },
         "VT": {
           "status": "permit",
@@ -37633,11 +37654,11 @@
         },
         "MN": {
           "status": "legal",
-          "sourceId": "mn-97a-401",
+          "sourceId": "mn-97a-015",
           "cite": "§ 97A.015, subds. 39, 53; § 346.155, subd. 1(e)",
           "quote": "\"Unprotected wild animals\" means wild animals that are not protected wild animals including coyote, plains pocket gopher, porcupine, striped skunk, and unprotected birds, except any animal species listed as endangered, threatened, or of special concern in Minnesota Rules, chapter 6134.",
           "note": "A wallaby is a wild animal under subd. 55 but not a protected one: it is not game, not one of the protected groups and not on the state list. That leaves it outside the § 97A.501 bar, and § 346.155 regulates only cats, bears and primates. The state does not restrict it; local ordinances were not checked.",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-11-01"
         },
         "NV": {
           "status": "legal",
@@ -37658,12 +37679,12 @@
         },
         "MD": {
           "status": "legal",
-          "sourceId": "md-10-621",
+          "sourceId": "md-10-902",
           "cite": "Crim. Law § 10-621(b)(1); Nat. Res. §§ 10-902(a), 10-903",
           "quote": "Any person desiring to possess, import, export, breed, raise, protect, rehabilitate, hunt, kill, trap, capture, purchase, or sell any wildlife native to Maryland, shall first obtain a permit or license from the Department.",
           "note": "§ 10-621 reaches cats, dogs, primates, the rabies vector mammals, crocodilians and venomous snakes, and § 10-902's permit attaches only to wildlife native to Maryland. A wallaby is neither, and Maryland has used its power over nonnative wildlife in § 10-903 only for aquatic organisms, so the state does not restrict it. Subsection (e) of § 10-621 preserves stricter county and municipal rules.",
           "localOverride": true,
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-11-01"
         },
         "NM": {
           "status": "banned",
@@ -38077,11 +38098,11 @@
         },
         "MN": {
           "status": "legal",
-          "sourceId": "mn-97a-401",
+          "sourceId": "mn-97a-015",
           "cite": "§ 97A.015, subds. 39, 53; § 346.155, subd. 1(e)",
           "quote": "\"Unprotected wild animals\" means wild animals that are not protected wild animals including coyote, plains pocket gopher, porcupine, striped skunk, and unprotected birds, except any animal species listed as endangered, threatened, or of special concern in Minnesota Rules, chapter 6134.",
           "note": "A sloth is an unprotected wild animal, outside the § 97A.501 bar, and § 346.155 regulates only cats, bears and primates. The state does not restrict it; local ordinances were not checked.",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-11-01"
         },
         "NV": {
           "status": "permit",
@@ -38103,12 +38124,12 @@
         },
         "MD": {
           "status": "legal",
-          "sourceId": "md-10-621",
+          "sourceId": "md-10-902",
           "cite": "Crim. Law § 10-621(b)(1); Nat. Res. §§ 10-902(a), 10-903",
           "quote": "Any person desiring to possess, import, export, breed, raise, protect, rehabilitate, hunt, kill, trap, capture, purchase, or sell any wildlife native to Maryland, shall first obtain a permit or license from the Department.",
           "note": "§ 10-621 reaches cats, dogs, primates, the rabies vector mammals, crocodilians and venomous snakes, and § 10-902's permit attaches only to wildlife native to Maryland. A sloth is neither, and Maryland has used its power over nonnative wildlife in § 10-903 only for aquatic organisms, so the state does not restrict it. Subsection (e) of § 10-621 preserves stricter county and municipal rules.",
           "localOverride": true,
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-11-01"
         },
         "NM": {
           "status": "banned",
@@ -38398,7 +38419,7 @@
         },
         "NJ": {
           "status": "banned",
-          "sourceId": "nj-7-25-10",
+          "sourceId": "nj-captive-game-info",
           "cite": "N.J.A.C. 7:25-10.6(a)21, 10.10(a); Division captive game synopsis",
           "quote": "The possession of potentially dangerous species (non-domestic dogs, bears, non-domestic cats and deer) will be allowed only within the scientific holding, propagation and sales, zoological, animal exhibitor, animal theatrical and fur farming categories.",
           "note": "The white-tailed deer is a game animal needing a possession permit under 10.6(a)21, and Cervidae is on the potentially dangerous table at 10.10(a). The Division's synopsis closes the hobby category to every potentially dangerous species and lets only hobbyists already holding one keep it, with no new acquisitions. The same document announces a ban on importing any member of the deer family because of chronic wasting disease, in effect until further notice.",
@@ -38407,7 +38428,7 @@
             "detail": "Hobby permittees who were issued permits several years ago and still hold potentially dangerous game animals may keep them, but no additional acquisitions are allowed."
           },
           "permitFor": "commercial-exhibition-research",
-          "verifiedOn": "2026-10-08"
+          "verifiedOn": "2026-11-01"
         },
         "ME": {
           "status": "banned",
@@ -38487,20 +38508,20 @@
         },
         "WA": {
           "status": "banned",
-          "sourceId": "wa-rcw-77-08-010",
+          "sourceId": "wa-wac-220-450-030",
           "cite": "WAC 220-450-030(2), (8)",
           "quote": "It is unlawful to import into the state, hold, possess, propagate, offer for sale, sell, transfer, or release live specimens of or the gametes and/or embryos of the following species in the family Cervidae . ... White-tailed deer Odocoileus virginianus",
           "note": "Washington names the white-tailed deer among its native cervids that may not be imported, held, possessed or propagated. The only route the rule writes is subsection (8), written department approval for scientific research by an approved institution or display by an AZA, ZAA or similarly accredited member, and (9) for federally listed species does not apply. No pet route.",
           "permitFor": "commercial-exhibition-research",
-          "verifiedOn": "2026-10-08"
+          "verifiedOn": "2026-11-01"
         },
         "OH": {
           "status": "permit",
-          "sourceId": "oh-1531-01",
+          "sourceId": "oh-1533-71",
           "cite": "R.C. 1531.01(V), (YY), (GGG); § 1533.71(A)(3), (B)",
           "quote": "\"Captive white-tailed deer propagation license\" permitting the licensee to propagate captive white-tailed deer, hold the animals in captivity, and sell the animals and carcasses.",
           "note": "Ohio carves captive white-tailed deer out of the ordinary noncommercial license and gives them their own, which needs an enclosure surrounded by an eight-foot fence built before applying, and a Department of Agriculture license under R.C. 943.03 or 943.031, the chronic wasting disease side of the scheme, before deer are placed. R.C. 1531.01(GGG) defines a captive white-tailed deer as one held at a facility licensed under both. That is a deer farm, not a pet license, but it is the only lawful way to hold one.",
-          "verifiedOn": "2026-10-01"
+          "verifiedOn": "2026-11-01"
         },
         "TX": {
           "status": "permit",
