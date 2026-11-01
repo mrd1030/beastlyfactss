@@ -1583,10 +1583,13 @@ async function handleAsk(request, env, ctx) {
 
   const log = (result, slugs = []) => askLog(env, ctx, question, slugs, result);
 
-  // Reader test pass: with ASK_TEST_KEY set (test site only) a request that
-  // carries it in x-ask-test skips the per-visitor limit and gets back the
-  // chunks the model saw, for the source check. The daily cap still applies.
-  const testing = Boolean(env.ASK_TEST_KEY) && request.headers.get('x-ask-test') === env.ASK_TEST_KEY;
+  // The sharetest project (beastlyfactss-sharetest.pages.dev) is where Ask
+  // Beastly is built and tested: there the per-visitor hourly limit is off
+  // and answers carry the chunks the model saw, for the source check. Keyed
+  // on the host, so beastlyfacts.com always has the limit and never returns
+  // sources, with nothing to switch back at launch. The daily cap still
+  // applies everywhere.
+  const testing = new URL(request.url).hostname.endsWith('beastlyfactss-sharetest.pages.dev');
 
   if (!testing && !(await askLimit(env, request)).ok) {
     log('capped');
