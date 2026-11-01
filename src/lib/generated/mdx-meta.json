@@ -27148,7 +27148,7 @@
       },
       {
         "q": "What are those costs?",
-        "a": "A number of studies identify direct costs of sexual harassment including energy expenditure and reduced foraging ability. Reduced feeding and a forced change in where females live. Across nine livebearer species including the guppy, females spent less time feeding with a male present, and in wild guppies harassment pushes females into habitats they would otherwise avoid. Females faced with persistent male attention become more vigilant and flee, which means less feeding. In a related livebearer, males attempt to mate almost constantly while females are mostly non-responsive."
+        "a": "Harassment costs females feeding time and a say in where they live. Across nine livebearer species including the guppy, females spent less time feeding with a male present, and in wild guppies harassment pushes females into habitats they would otherwise avoid. In a related livebearer, females stay more vigilant around males and flee, which costs them more feeding time."
       },
       {
         "q": "Does it affect the offspring?",
@@ -27221,11 +27221,11 @@
       },
       {
         "q": "What should guppy fry eat?",
-        "a": "Food small enough for their mouths, such as flake crushed fine. Fry can take up to about 5% of their body weight a day, split into small feeds. Infusoria or liquid fry food suits the first few days. Move to newly hatched baby brine shrimp and microworms as they grow past about one to two weeks, and feed them far more often than adults, some sources say every 2 to 3 hours in the earliest days."
+        "a": "Guppies are livebearers, so fry are born able to take newly hatched baby brine shrimp or flake crushed fine from the first day. Fry can take up to about 5% of their body weight a day, split into small feeds, and they eat far more often than adults, as often as every 2 to 3 hours in the earliest days."
       },
       {
         "q": "Can I feed guppies goldfish food?",
-        "a": "No, it's specifically flagged as nutritionally mismatched, goldfish food has a different, lower-protein profile than what guppies need. Use a flake or small pellet formulated for tropical community fish instead."
+        "a": "No, goldfish food is made for a different fish and is a poor match for what guppies need. Use a flake or small pellet formulated for tropical community fish instead."
       },
       {
         "q": "What do guppies eat in the wild?",
@@ -27237,7 +27237,7 @@
       },
       {
         "q": "How long can a guppy safely go without eating?",
-        "a": "There's no agreed number, but decreased appetite that runs past one day is a reason to contact a vet. Hobbyist consensus is looser, treating a skipped meal, or a full day, as not inherently concerning while the fish otherwise looks and behaves normally."
+        "a": "There's no agreed number, but decreased appetite that runs past one day is a reason to contact a vet. Many hobbyists are looser, treating a skipped meal, or a full day, as not inherently concerning while the fish otherwise looks and behaves normally."
       },
       {
         "q": "What symptoms alongside not eating mean trouble?",
@@ -27301,7 +27301,7 @@
       },
       {
         "q": "How do you tell a male guppy from a female?",
-        "a": "By the anal fin. A female's is a broad triangle. A male's becomes the gonopodium, a narrow, stick-like rod that looks like a spike under the belly, about 10mm long. Pregnant females also show a dark gravid spot at the rear of the belly beside that fin."
+        "a": "By the anal fin. A female's is a broad triangle. A male's becomes the gonopodium, a narrow, stick-like rod that looks like a spike under the belly. Pregnant females also show a dark gravid spot at the rear of the belly beside that fin."
       },
       {
         "q": "What's the most common guppy-keeping mistake?",
@@ -27361,11 +27361,11 @@
       },
       {
         "q": "What is ich and how do you treat it in guppies?",
-        "a": "White dots like grains of salt on the skin and fins, often after flashing, extra mucus, rapid breathing, lethargy, and loss of appetite. Raise the tank gradually toward 82°F, the top of the guppy's range, and dose a commercial ich medication daily for about 3 to 7 treatments, following the label. Guppies handle salt better than most freshwater fish, so a salt course is an alternative to medication."
+        "a": "White dots like grains of salt on the skin and fins, often after flashing, extra mucus, rapid breathing, lethargy, and loss of appetite. Raise the tank gradually toward 82°F, the top of the guppy's range, and dose a commercial ich medication daily for about 3 to 7 treatments, following the label. Guppies have a wide salinity range, so a salt course is an alternative to medication."
       },
       {
         "q": "What is velvet and is it contagious?",
-        "a": "Small golden or rust-colored spots or a fine dusty coat, often with clamped fins and scratching against decor. Copper-based medication is the standard treatment, a vet may use chloroquine instead, and a recheck after 7 to 10 days may be needed. It spreads between fish, so quarantine affected individuals if possible. It comes from poor water conditions or low temperature, so raise the temperature slightly and dim the lights during treatment."
+        "a": "Small golden or rust-colored spots or a fine dusty coat, often with clamped fins and scratching against decor. Copper-based medication is the standard treatment, a vet may use chloroquine instead, and a recheck after 7 to 10 days may be needed. It spreads between fish, so quarantine affected individuals if possible. Velvet is a parasite, and raising the temperature slightly and dimming the lights during treatment is common practice."
       },
       {
         "q": "What is dropsy and can it be treated?",
@@ -35429,11 +35429,11 @@
     "faqs": [
       {
         "q": "Is there research relevant to molly welfare?",
-        "a": "Yes, and some of it was done on a molly. In surface-dwelling Atlantic mollies (Poecilia mexicana), females are more vigilant when a male is present, which takes time away from feeding. Cave-dwelling females, which face less sexual activity, were less vigilant and did not lose feeding time. Work on Poecilia mexicana also reported that males attempt to mate almost constantly while females are largely non-responsive, so females flee."
+        "a": "Yes, and some of it was done on a molly. In surface-dwelling Atlantic mollies (Poecilia mexicana), females are more vigilant when a male is present, which takes time away from feeding, and they flee the harassment. Cave-dwelling females, which face less sexual activity, were less vigilant and did not lose feeding time."
       },
       {
         "q": "What sex ratio should I keep?",
-        "a": "At least two to three females per male, and more females is better. An all-male group is the other clean answer, though male sailfin mollies can be aggressive toward each other, so it needs space. Male mollies squabble among themselves more than male guppies do."
+        "a": "At least two to three females per male, and more females is better. An all-male group is the other clean answer, though male sailfin mollies can be aggressive toward each other, so it needs space."
       },
       {
         "q": "Why does grazing matter so much for mollies?",
@@ -35506,7 +35506,7 @@
       },
       {
         "q": "How often should I feed my molly?",
-        "a": "At least once a day, feeding only what's fully cleared within a minute or two. Small meals suit a fish that grazes. Once or twice a day is the most commonly cited range. Mollies have fast metabolisms and do fine with small, frequent meals rather than one large one."
+        "a": "At least once a day, feeding only what's fully cleared within a minute or two. Small meals suit a fish that grazes, and once or twice a day is a common range."
       },
       {
         "q": "Why do mollies need so much plant food?",
@@ -35522,7 +35522,7 @@
       },
       {
         "q": "Can I overfeed a molly?",
-        "a": "Yes. Uneaten food rotting in the tank fouls water quality, which then opens the door to most other molly health issues. It is a more common real mistake than underfeeding, and overfeeding drives constipation and swim bladder problems directly."
+        "a": "Yes. Uneaten food rotting in the tank fouls water quality, which then opens the door to most other molly health issues. It is an easier mistake to make than underfeeding, and overfeeding can lead to constipation and swim bladder problems."
       }
     ],
     "relatedProducts": [],
@@ -35639,11 +35639,11 @@
     "faqs": [
       {
         "q": "What is \"molly shimmy\" and what causes it?",
-        "a": "A distinctive side-to-side, snake-like rocking swim. It's a symptom of stress rather than a disease on its own, seen in mollies kept in soft or acidic water and in tanks with even small amounts of ammonia. Fancy mollies bred overseas in salted farm water and sold into soft home tap water may also suffer osmotic shock and seem especially prone to it. Shimmy signals the fish has lost some nerve and muscle control. The most commonly cited triggers are low temperature, low pH or mineral hardness, unstable or poor water quality, and chlorine exposure."
+        "a": "A distinctive side-to-side, snake-like rocking swim. It's a symptom of stress rather than a disease on its own, seen in mollies kept in soft or acidic water and in tanks with even small amounts of ammonia. Fancy mollies bred overseas in salted farm water and sold into soft home tap water may also suffer osmotic shock and seem especially prone to it."
       },
       {
         "q": "Do mollies need aquarium salt to prevent or treat shimmy?",
-        "a": "It's disputed. Mollies tolerate salt well, so modest doses don't harm them, and some keepers use it during treatment. Others hold that hard water, consistent water changes and stable parameters fix shimmy without salt, and that leaning on salt can mask poor tank maintenance while hindering live plants. Correcting hardness, pH and ammonia first is the step both camps share. Mollies are a brackish-tolerant species, so salt isn't harmful in modest doses the way it would be for many other freshwater fish, though it can harm snails at higher concentrations."
+        "a": "It's disputed. Mollies tolerate salt well and some keepers use it during treatment, while others hold that hard water, consistent water changes and stable parameters fix shimmy without it, and that salt can mask poor maintenance, hinder live plants and harm snails at higher concentrations. Correcting hardness, pH and ammonia first is the step both camps share."
       },
       {
         "q": "What is ich and how do you treat it in mollies?",
@@ -35651,7 +35651,7 @@
       },
       {
         "q": "What is dropsy and can it be treated?",
-        "a": "Dropsy is swelling of the abdomen that pushes the scales out like a pinecone. It is commonly linked to a bacterial infection that thrives when water quality is poor or fish are stressed, so correcting the water comes first. It is the hardest condition on this list to treat successfully and often carries a poor outlook by the time it's visibly obvious."
+        "a": "Dropsy is swelling of the abdomen that pushes the scales out like a pinecone. It is a sign with several causes, one of them a bacterial infection that thrives when water quality is poor or fish are stressed, so correcting the water comes first. Some causes respond to treatment, but the outlook is often poor once the scales have lifted."
       },
       {
         "q": "How do I prevent most molly health issues in the first place?",
@@ -39158,7 +39158,7 @@
     "faqs": [
       {
         "q": "How much does a platy fish cost?",
-        "a": "Most standard varieties run $2 to $6 each, with a six-pack around $30. Premium or less common strains like tiger ruby platies can reach $8 to $9."
+        "a": "Most standard varieties run $2 to $6 each, with a six-pack around $30. Premium or less common strains like tiger platies run toward the top of that range, around $6."
       },
       {
         "q": "What does a basic platy tank setup cost?",
@@ -39174,7 +39174,7 @@
       },
       {
         "q": "What's the cost new platy owners usually forget to plan for?",
-        "a": "More platies than they started with. A single female can store sperm from one mating for months and go on to produce repeat broods of 20 to 50 fry, occasionally up to 80, roughly every 4 to 6 weeks. Mixing males and females with no population plan means more tank space and more of every ongoing cost above within a couple of months."
+        "a": "More platies than they started with. A single female can store sperm from one mating for months and go on to produce repeat broods of 20 to 80 fry, roughly every 30 to 36 days. Mixing males and females with no population plan means more tank space and more of every ongoing cost above within a couple of months."
       }
     ],
     "relatedProducts": [
@@ -39229,7 +39229,7 @@
     "faqs": [
       {
         "q": "Is there research relevant to platy welfare?",
-        "a": "Yes, in part. One comparison of nine livebearing species included the variatus platy and found females fed significantly less with a male present. The wider evidence is the livebearer harassment literature, which found direct costs to females from constant male pursuit including energy expenditure, reduced foraging and increased vigilance."
+        "a": "Yes, in part. One comparison of nine livebearing species included the variatus platy and found females fed significantly less with a male present. The wider livebearer harassment research points the same way: females under male pursuit stay vigilant and lose time feeding."
       },
       {
         "q": "What sex ratio should I keep?",
@@ -39302,7 +39302,7 @@
     "faqs": [
       {
         "q": "What do platies eat?",
-        "a": "Platies are true omnivores and unfussy eaters. A high-quality flake or small pellet works as the staple, with vegetable matter like blanched spinach, cucumber, or zucchini, plus occasional live or frozen protein like brine shrimp or bloodworms, rounding out a complete diet. Unlike mollies, platies don't lean as heavily herbivorous, so the vegetable side of the diet matters less strictly here."
+        "a": "Platies are true omnivores and unfussy eaters. A high-quality flake or small pellet works as the staple, with vegetable matter like blanched spinach, cucumber, or zucchini, plus occasional live or frozen protein like brine shrimp or bloodworms, rounding out a complete diet. Platies take plant matter as part of a mixed diet, so blanched vegetables earn a regular place in the rotation."
       },
       {
         "q": "How often should I feed my platy?",
@@ -39314,7 +39314,7 @@
       },
       {
         "q": "Can platies overeat?",
-        "a": "Easily, and it's a far more common real problem than underfeeding. Platies will keep eating past the point of being full, and overfeeding drives constipation and swim bladder problems directly. Watch for a long, stringy trail of waste hanging from the fish after a meal, a well-documented sign the portion was too large. Uneaten food rotting in the tank also fouls water quality fast in a tank this small, which opens the door to several other health issues."
+        "a": "Easily, and it's a far more common real problem than underfeeding. Platies will keep eating past the point of being full, and overfeeding can lead to constipation and swim bladder problems. Watch for a long, stringy trail of waste hanging from the fish after a meal, which keepers often read as a sign the portion was too large. Uneaten food rotting in the tank also fouls water quality fast in a tank this small, which opens the door to several other health issues."
       },
       {
         "q": "Why has my platy stopped eating?",
@@ -39374,7 +39374,7 @@
       },
       {
         "q": "How do platies breed?",
-        "a": "Platies are livebearers, females give birth to free-swimming fry directly rather than laying eggs. Female platies store sperm in the folds of their ovarian tissue after mating, sometimes for months, which lets one encounter fertilize several separate broods without a male present again. A typical brood runs 20 to 50 fry, with a documented range up to 80, roughly every 4 to 6 weeks after a gestation period of about the same length."
+        "a": "Platies are livebearers, females give birth to free-swimming fry directly rather than laying eggs. Female platies store sperm in the folds of their ovarian tissue after mating, sometimes for months, which lets one encounter fertilize several separate broods without a male present again. A brood runs 20 to 80 fry, about every 30 to 36 days, after a gestation of roughly 24 to 30 days."
       },
       {
         "q": "How do I manage platy population if I don't want constant breeding?",
@@ -39434,11 +39434,11 @@
       },
       {
         "q": "What is dropsy and can it be treated?",
-        "a": "Fluid buildup in the abdomen that makes the scales stand out in a pinecone-like pattern, usually from a systemic Aeromonas bacterial infection. It's the hardest condition on this list to treat successfully and often carries a poor outlook by the time it's visibly obvious."
+        "a": "Fluid buildup in the abdomen that makes the scales stand out in a pinecone-like pattern, a sign with several possible causes, a systemic bacterial infection among them. Some causes respond to treatment, but the outlook is often poor once the scales lift."
       },
       {
         "q": "Do platies get 'shimmy' like mollies?",
-        "a": "Yes. Shimmy is a side-to-side, snake-like rocking motion tied to low temperature, low pH or mineral hardness, and unstable water quality, and it shows up across livebearers generally, mollies, platies, swordtails, and guppies alike. Correcting temperature, pH, and hardness toward the platy's preferred range resolves most cases without medication."
+        "a": "Yes. Shimmy is a side-to-side, snake-like rocking motion linked to soft or acidic water, ammonia, and sudden changes in water chemistry, and it shows up across livebearers, mollies, platies, swordtails, and guppies alike. Correcting pH, hardness, and water quality toward the platy's preferred range is the first step, and medication is rarely the answer."
       },
       {
         "q": "Is it true that platies can get tumors?",
@@ -39473,7 +39473,7 @@
     "title": "Three Livebearers That Breed Whether You Plan to or Not",
     "seoTitle": "Platy, Swordtail & Molly: 3 Livebearer Fish Compared",
     "seoDescription": "Platy, swordtail, and molly compared: easy livebearers, the platy's man-made colors, the swordtail's mating sword, and the molly's rare salt tolerance.",
-    "lastUpdated": "2026-09-14",
+    "lastUpdated": "2026-11-01",
     "noIndex": false,
     "excerpt": "Platies, swordtails, and mollies are three of the easiest aquarium fish to keep, and three of the easiest to accidentally breed. All three are livebearers, and each brings its own twist to that same surprise.",
     "date": "2026-08-29",
@@ -39561,7 +39561,7 @@
       },
       {
         "q": "What water chemistry do platies need?",
-        "a": "7.0 to 8.2 is the ideal band, and platies tolerate 6.8 to 8.5. They prefer medium-hard to hard water, roughly 10 to 30 dGH, and won't do as well in very soft, acidic water. A mineral supplement like crushed coral or a commercial buffering product helps if your tap water runs soft."
+        "a": "7.0 to 8.2 is the range to hold. They prefer medium-hard to hard water, roughly 10 to 30 dGH, and won't do as well in very soft, acidic water. A mineral supplement like crushed coral or a commercial buffering product helps if your tap water runs soft."
       },
       {
         "q": "What kind of filtration is best for a platy tank?",
@@ -48084,12 +48084,12 @@
   {
     "path": "/content/guides/swordtail-enrichment-guide.mdx",
     "slug": "swordtail-enrichment-guide",
-    "title": "Swordtail Enrichment: Two Males Is the Number That Causes Trouble",
+    "title": "Swordtail Enrichment: One Male, or Space for Several",
     "seoTitle": "Swordtail Enrichment Guide",
-    "seoDescription": "Male swordtails fight each other and pursue females constantly. One male, or several, but not two, and plenty of length to swim.",
+    "seoDescription": "Male swordtails fight each other and pursue females constantly. Keep one male in a small tank, several only with space, and give them length to swim.",
     "lastUpdated": "2026-11-01",
     "noIndex": false,
-    "excerpt": "Male swordtails compete with each other as hard as they pursue females. Two males in one tank is the arrangement that reliably produces a loser.",
+    "excerpt": "Male swordtails compete with each other as hard as they pursue females. In a small tank, more than one male tends to produce a hounded loser.",
     "date": "2026-09-04",
     "category": "Enrichment",
     "categories": [
@@ -48114,11 +48114,11 @@
     "faqs": [
       {
         "q": "Is there research relevant to swordtail welfare?",
-        "a": "Not on swordtails directly. The applicable evidence is the livebearer harassment literature, which documents costs to females from constant male pursuit: energy expenditure, reduced foraging and increased vigilance."
+        "a": "Not on swordtails directly. The applicable evidence is the livebearer harassment research, which finds that females under constant male pursuit stay vigilant and lose time feeding."
       },
       {
-        "q": "Why is two males the problem number?",
-        "a": "Because with two, all the competition lands on one fish. Male swordtails can be aggressive toward each other, and a single subordinate male with nowhere to go gets pursued relentlessly. One male, or enough males that it spreads, but not two."
+        "q": "Why avoid more than one male in a small tank?",
+        "a": "Because with two, all the competition lands on one fish. Male swordtails can be aggressive toward each other, and a subordinate male with nowhere to go gets pursued. In a small tank keep one male, and add more only in a large, planted tank where the aggression can spread."
       },
       {
         "q": "What sex ratio should I keep?",
@@ -48134,7 +48134,7 @@
       },
       {
         "q": "What is the most common mistake?",
-        "a": "A small tank with two males in it. That combination concentrates aggression and gives the loser nowhere to go, and it is by far the most common way a swordtail tank goes wrong."
+        "a": "A small tank with more than one male in it. That concentrates aggression and gives the loser nowhere to go."
       }
     ],
     "relatedProducts": [
@@ -48159,7 +48159,7 @@
     "title": "Swordtail Feeding: Schedule, Diet, and Why They Stop Eating",
     "seoTitle": "What Do Swordtail Fish Eat? Diet and Feeding Schedule",
     "seoDescription": "Swordtail feeding guide: schedule by life stage, a genuine omnivore diet, safe foods, fry feeding, and why swordtails stop eating.",
-    "lastUpdated": "2026-09-15",
+    "lastUpdated": "2026-11-01",
     "noIndex": false,
     "excerpt": "Swordtails are true dietary generalists, more balanced between plant and animal food than a molly's heavier plant lean. Here's a real schedule and what to feed.",
     "date": "2026-09-11",
@@ -48191,7 +48191,7 @@
       },
       {
         "q": "How often should I feed my swordtail?",
-        "a": "Once or twice a day is the most commonly cited range for adults, though some sources recommend two to three smaller meals. Either way, feed only what's fully cleared within about 2 minutes, swordtails are active enough that overfeeding is the more common real mistake."
+        "a": "Once or twice a day is the usual range for adults, though some sources recommend two to three smaller meals. Either way, feed only what's fully cleared within about 2 minutes, swordtails are active enough that overfeeding is the more common real mistake."
       },
       {
         "q": "What should swordtail fry eat?",
@@ -48203,7 +48203,7 @@
       },
       {
         "q": "Can I overfeed a swordtail?",
-        "a": "Easily, and it's a more common real mistake than underfeeding. Overfeeding drives constipation and swim bladder problems directly, and uneaten food rotting in the tank fouls water quality, which opens the door to most other swordtail health issues."
+        "a": "Easily, and it's a more common real mistake than underfeeding. Overfeeding can lead to constipation and swim bladder problems, and uneaten food rotting in the tank fouls water quality, which opens the door to most other swordtail health issues."
       }
     ],
     "relatedProducts": [],
@@ -48259,7 +48259,7 @@
       },
       {
         "q": "How can I tell if my swordtail is male or female?",
-        "a": "Males carry the namesake sword, a colorful extension of the lower tail fin, along with a modified anal fin called a gonopodium used to fertilize females internally. Females lack the sword, with rare exceptions, have a fuller fan-shaped anal fin, and are the larger sex, an unusual reversal for a fish where the male carries the flashier ornament."
+        "a": "Males carry the namesake sword, a colorful extension of the lower tail fin, along with a modified anal fin called a gonopodium used to fertilize females internally. Females lack the sword, with rare exceptions, have a fuller fan-shaped anal fin, and are the larger sex, as is normal in livebearers, while the male carries the flashier ornament."
       },
       {
         "q": "Why does male-to-female ratio matter so much with swordtails?",
@@ -48323,7 +48323,7 @@
       },
       {
         "q": "What is dropsy and can it be treated?",
-        "a": "Fluid buildup in the abdomen that makes the scales stand out in a pinecone-like pattern, usually from a systemic Aeromonas bacterial infection. It's the hardest condition on this list to treat successfully and often carries a poor outlook by the time it's visibly obvious."
+        "a": "Fluid buildup in the abdomen that makes the scales stand out in a pinecone-like pattern, a sign with several possible causes, a systemic bacterial infection among them. Some causes respond to treatment, but the outlook is often poor once the scales lift."
       },
       {
         "q": "Is male aggression a swordtail health issue?",
