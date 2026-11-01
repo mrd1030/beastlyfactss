@@ -112,6 +112,20 @@ export const fishEncyclopedia = [
     },
   },
   {
+    id: "glowlight-tetra", name: "Glowlight Tetra", scientific: "Hemigrammus erythrozonus",
+    category: "Fish", emoji: "🐠", difficulty: "Beginner", guideId: "glowlight-tetra", available: true, image: "/assets/guides/glowlight-tetra.jpg",
+    bio: {
+      overview: "The glowlight tetra is a slim, translucent schooling fish from the Essequibo River in Guyana, named for the glowing red-orange stripe that runs from its head to its tail. It is peaceful, easy to feed and adaptable, and it shows its best color in soft, acidic water and a group of 10 or more.",
+      origin: "Essequibo River basin, Guyana",
+      habitat: "Forest tributaries off the main river channel, in water stained dark brown with tannins",
+      adultSize: "About 1.6 inches (4 cm)",
+      wildDiet: "Worms, small crustaceans and plants",
+      wildLifespan: "Not documented in the wild; about 2-4 years in captivity",
+      conservation: "Least Concern (IUCN)",
+      history: "Marion Durbin described the species in 1909 from fish collected on the 1908 Indiana University and Carnegie Museum expedition to British Guiana. Its name, erythrozonus, means red-banded, for the stripe along its side. The glowlight reached the aquarium trade from Guyana in the 1930s, and an early identification as Hyphessobrycon gracilis was later rejected.",
+    },
+  },
+  {
     id: "goldfish", name: "Goldfish", scientific: "Carassius auratus",
     category: "Fish", emoji: "🐟", difficulty: "Beginner", guideId: "goldfish", available: true, image: "/assets/guides/goldfish.jpg",
     bio: {
