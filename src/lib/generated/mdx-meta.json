@@ -11924,7 +11924,7 @@
       },
       {
         "q": "How many should I keep?",
-        "a": "Ten is the number to plan for. Eight is the least to buy."
+        "a": "Ten is the number to plan for. Eight is the least to buy. Cardinals shoal more tightly and color up better in bigger groups."
       },
       {
         "q": "What water do they need?",
@@ -12051,7 +12051,7 @@
       },
       {
         "q": "How many cardinal tetras should I keep together?",
-        "a": "Ten is the number to plan for, and eight is the least to buy. Cardinals are schooling fish that do best in a large group."
+        "a": "Ten is the number to plan for, and eight is the least to buy. Cardinals are schooling fish that do best in a large group. Smaller groups turn pale, hide, and get sick more often from the stress."
       },
       {
         "q": "What does a properly schooled group look like?",
@@ -12123,7 +12123,7 @@
       },
       {
         "q": "What is fin rot and how serious is it?",
-        "a": "A bacterial infection that frays the fin edges, usually from poor water quality, fin-nipping tankmates, or stress. It is treatable with improved water conditions and an antibacterial medication."
+        "a": "A bacterial infection that frays the fin edges, usually from poor water quality, fin-nipping tankmates, or stress. It starts as discoloration on the fin edges and progresses to fraying and tissue loss if untreated. Caught early, it is very treatable with improved water conditions and an antibacterial medication."
       },
       {
         "q": "How do I prevent most cardinal tetra health issues?",
@@ -27073,7 +27073,7 @@
     "faqs": [
       {
         "q": "How much does a guppy fish cost?",
-        "a": "$2 to $20 each, depending on the fish. Named fancy strains from specialty breeders ran about $12 to $17 per fish and $23 to $28 per pair, with live-fish shipping on top."
+        "a": "$2 to $20 each, depending on the fish. Named fancy strains from specialty breeders ran about $12 to $17 per fish and $23 to $28 per pair, with live-fish shipping on top. Rare selectively-bred strains such as Purple Moscow, 24k Gold, Dragon, and Koi can run $25 and up, occasionally reaching hundreds from specialty breeders."
       },
       {
         "q": "What does a basic guppy tank setup cost?",
@@ -27085,7 +27085,7 @@
       },
       {
         "q": "How long do guppies live?",
-        "a": "Not long. In a lab study of females, the average was roughly 13 months after the experiment began, and the last survivor died at about 27 months. Those counts begin with the experiment, not at birth."
+        "a": "Not long. In a lab study of females, the average was roughly 13 months after the experiment began, and the last survivor died at about 27 months. Those counts begin with the experiment, not at birth. On average 2 to 3 years, and 4 or 5 with excellent care. Female fertility falls off after about age 2, which matters if you are planning a breeding population instead of a display tank."
       },
       {
         "q": "What's the cost new guppy owners usually forget to plan for?",
@@ -27148,7 +27148,7 @@
       },
       {
         "q": "What are those costs?",
-        "a": "Reduced feeding and a forced change in where females live. Across nine livebearer species including the guppy, females spent less time feeding with a male present, and in wild guppies harassment pushes females into habitats they would otherwise avoid."
+        "a": "A number of studies identify direct costs of sexual harassment including energy expenditure and reduced foraging ability. Reduced feeding and a forced change in where females live. Across nine livebearer species including the guppy, females spent less time feeding with a male present, and in wild guppies harassment pushes females into habitats they would otherwise avoid. Females faced with persistent male attention become more vigilant and flee, which means less feeding. In a related livebearer, males attempt to mate almost constantly while females are mostly non-responsive."
       },
       {
         "q": "Does it affect the offspring?",
@@ -27156,7 +27156,7 @@
       },
       {
         "q": "What sex ratio should I keep?",
-        "a": "Several females to each male, and more females is better. Keeping males only is the other workable answer and avoids the problem entirely, along with the endless fry."
+        "a": "Several females to each male, and more females is better. Two to three females per male at minimum. Keeping males only is the other workable answer and avoids the problem entirely, along with the endless fry."
       },
       {
         "q": "Why do people end up with too many males?",
@@ -27164,7 +27164,7 @@
       },
       {
         "q": "Do guppies need planting?",
-        "a": "Yes, and for a specific reason here. Dense planting offers females a refuge from pursuit, as wild females seek out, and it gives fry somewhere to hide from the adults."
+        "a": "Yes, and for a specific reason here. Dense planting offers females a refuge from pursuit, as wild females seek out, and it gives fry somewhere to hide from the adults. Dense planting also gives females somewhere to break line of sight and rest. In a livebearer tank, cover is a social tool rather than decoration."
       }
     ],
     "relatedProducts": [
@@ -27217,11 +27217,15 @@
     "faqs": [
       {
         "q": "How often should I feed my guppy?",
-        "a": "At least once a day, in small portions that add up to about 3% of body weight. Guppies take food readily, so too much is the easier mistake, and uneaten food left to rot fouls the water."
+        "a": "At least once a day, in small portions that add up to about 3% of body weight. Guppies take food readily, so too much is the easier mistake, and uneaten food left to rot fouls the water. Adults land somewhere between once and three times a day. Only offer what's fully cleared in about 1 to 2 minutes, because guppies beg regardless of actual hunger."
       },
       {
         "q": "What should guppy fry eat?",
-        "a": "Food small enough for their mouths, such as flake crushed fine. Fry can take up to about 5% of their body weight a day, split into small feeds."
+        "a": "Food small enough for their mouths, such as flake crushed fine. Fry can take up to about 5% of their body weight a day, split into small feeds. Infusoria or liquid fry food suits the first few days. Move to newly hatched baby brine shrimp and microworms as they grow past about one to two weeks, and feed them far more often than adults, some sources say every 2 to 3 hours in the earliest days."
+      },
+      {
+        "q": "Can I feed guppies goldfish food?",
+        "a": "No, it's specifically flagged as nutritionally mismatched, goldfish food has a different, lower-protein profile than what guppies need. Use a flake or small pellet formulated for tropical community fish instead."
       },
       {
         "q": "What do guppies eat in the wild?",
@@ -27229,7 +27233,11 @@
       },
       {
         "q": "Why has my guppy stopped eating?",
-        "a": "Stress from a new tank, tank cleaning or too many males chasing the females is a common cause, along with poor water quality, water outside the 72 to 82°F range, and illness. Test the water first."
+        "a": "For a female close to giving birth, this is often completely normal, reduced stomach capacity and a shift in focus toward finding a place to deliver. Stress from a new tank, tank cleaning or too many males chasing the females is a common cause, along with poor water quality, cold water, water outside the 72 to 82°F range, and illness. Test the water first."
+      },
+      {
+        "q": "How long can a guppy safely go without eating?",
+        "a": "There's no agreed number. A vet-affiliated source says to contact a vet when decreased appetite runs past one day. Hobbyist consensus is looser, treating a skipped meal, or a full day, as not inherently concerning while the fish otherwise looks and behaves normally."
       },
       {
         "q": "What symptoms alongside not eating mean trouble?",
@@ -27243,7 +27251,7 @@
     "myth": null,
     "truth": null,
     "sourceCount": 5,
-    "headingCount": 7,
+    "headingCount": 8,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
     "imageHeight": 784
@@ -27289,11 +27297,11 @@
       },
       {
         "q": "How do I manage guppy population if I don't want constant breeding?",
-        "a": "Keep males and females in separate tanks to avoid breeding entirely, or keep males only for a colorful, breeding-free tank. If you do want controlled breeding, keep several females to each male so no single female takes all the mating attempts."
+        "a": "Keep males and females in separate tanks to avoid breeding entirely, or keep males only for a colorful, breeding-free tank. If you do want controlled breeding, keep several females to each male so no single female takes all the mating attempts. A ratio of roughly one male to two or three females reduces females getting harassed too heavily by mating attempts."
       },
       {
         "q": "How do you tell a male guppy from a female?",
-        "a": "By the anal fin. A female's is a broad triangle. A male's becomes the gonopodium, a narrow, stick-like rod that looks like a spike under the belly. Pregnant females also show a dark gravid spot at the rear of the belly beside that fin."
+        "a": "By the anal fin. A female's is a broad triangle. A male's becomes the gonopodium, a narrow, stick-like rod that looks like a spike under the belly, about 10mm long. Pregnant females also show a dark gravid spot at the rear of the belly beside that fin."
       },
       {
         "q": "What's the most common guppy-keeping mistake?",
@@ -27353,19 +27361,19 @@
       },
       {
         "q": "What is ich and how do you treat it in guppies?",
-        "a": "White dots like grains of salt on the skin and fins, often after flashing, extra mucus, and loss of appetite. Raise the tank gradually toward 82°F, the top of the guppy's range, and dose a commercial ich medication daily for about 3 to 7 treatments, following the label."
+        "a": "White dots like grains of salt on the skin and fins, often after flashing, extra mucus, and loss of appetite. Raise the tank gradually toward 82°F, the top of the guppy's range, and dose a commercial ich medication daily for about 3 to 7 treatments, following the label. Fish may also show rapid breathing and lethargy. Guppies handle salt better than most freshwater fish, so a salt course is an alternative to medication."
       },
       {
         "q": "What is velvet and is it contagious?",
-        "a": "Small golden or rust-colored spots or a fine dusty coat, often with clamped fins and scratching against decor. Copper-based medication is the standard treatment, a vet may use chloroquine instead, and a recheck after 7 to 10 days may be needed. It spreads between fish, so quarantine affected individuals if possible."
+        "a": "Small golden or rust-colored spots or a fine dusty coat, often with clamped fins and scratching against decor. Copper-based medication is the standard treatment, a vet may use chloroquine instead, and a recheck after 7 to 10 days may be needed. It spreads between fish, so quarantine affected individuals if possible. It comes from poor water conditions or low temperature, so raise the temperature slightly and dim the lights during treatment."
       },
       {
         "q": "What is dropsy and can it be treated?",
-        "a": "Bloating, with the scales raised into a pinecone pattern. It is a sign with several causes: a bacterial infection may respond to antibiotics once lab testing picks the drug, while some kidney-related causes have no practical treatment."
+        "a": "Bloating, with the scales raised into a pinecone pattern. It is a sign with several causes: a bacterial infection may respond to antibiotics once lab testing picks the drug, while some kidney-related causes have no practical treatment. It signals advanced internal or organ failure, and it is the hardest condition on this list to treat successfully, often carrying a poor outlook by the time it's visibly obvious."
       },
       {
         "q": "How do I prevent most guppy health issues in the first place?",
-        "a": "A cycled tank, steady temperature, and regular partial water changes address stress and water quality. Quarantining new fish for at least 30 days keeps problems out of an established tank."
+        "a": "A cycled tank, steady temperature, and regular partial water changes address stress and water quality. Quarantining new fish for at least 30 days keeps problems out of an established tank. A properly cycled tank, steady temperature, and regular partial water changes prevent far more than medication does after the fact, and quarantine catches most problems before they spread."
       }
     ],
     "relatedProducts": [
@@ -27380,7 +27388,7 @@
     "myth": null,
     "truth": null,
     "sourceCount": 5,
-    "headingCount": 9,
+    "headingCount": 10,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
     "imageHeight": 784
@@ -27418,23 +27426,23 @@
     "faqs": [
       {
         "q": "What size tank does a guppy need?",
-        "a": "A base of at least 18 by 12 inches, about 11 gallons, is the minimum, and a tank at least 24 inches long suits a group of 5 or more. Guppies breed readily, so a 20-gallon holds up better long term unless you separate males and females."
+        "a": "A base of at least 18 by 12 inches, about 11 gallons, is the minimum, and a tank at least 24 inches long suits a group of 5 or more. Guppies breed readily, so a 20-gallon holds up better long term unless you separate males and females. Go long and rectangular rather than tall, and use a lid, guppies are capable jumpers."
       },
       {
         "q": "What temperature do guppies need?",
-        "a": "A tropical species, comfortable from 72 to 82°F, with 82°F as the ceiling. Unless the room stays warm year-round, run a heater sized to the tank."
+        "a": "A tropical species, comfortable from 72 to 82°F, with 82°F as the ceiling. Unless the room stays warm year-round, run a heater sized to the tank. Aim for 76 to 78°F as the target, and budget roughly 3 to 5 watts per gallon, so 25 to 50 watts on a 10-gallon."
       },
       {
         "q": "What water chemistry do guppies need?",
-        "a": "A pH of 7.0 to 8.5 and moderately hard to hard water, roughly 8 to 30 dGH. Guppies may manage in soft, acidic water, but long-term they belong in harder water."
+        "a": "A pH of 7.0 to 8.5 and moderately hard to hard water, roughly 8 to 30 dGH. Guppies may manage in soft, acidic water, but long-term they belong in harder water. Good calcium and magnesium content helps, and soft tap water can be buffered up with a mineral supplement, a wonder shell or similar."
       },
       {
         "q": "What kind of filtration is best for a guppy tank?",
-        "a": "Gentle flow, since strong currents should be avoided. A sponge filter is the safer choice if you're letting them breed, since it won't pull fry into the current, and a hang-on-back with adjustable flow suits a non-breeding tank."
+        "a": "Gentle flow, since strong currents should be avoided. A sponge filter is the safer choice if you're letting them breed, since it won't pull fry into the current, and a hang-on-back with adjustable flow suits a non-breeding tank. Filtration built for bigger, messier fish is more than guppies need, and the current itself can stress them."
       },
       {
         "q": "Do I need to cycle a guppy tank before adding fish?",
-        "a": "Yes. Most aquariums take four to six weeks to cycle fully, which is how long the bacteria colony that processes waste takes to establish. Skipping it is among the most common beginner mistakes in the hobby, guppies or not."
+        "a": "Yes. Most aquariums take four to six weeks to cycle fully, which is how long the bacteria colony that processes waste takes to establish. Skipping it is among the most common beginner mistakes in the hobby, guppies or not. A fishless cycle can take less with a bottled bacteria product."
       }
     ],
     "relatedProducts": [
@@ -27450,7 +27458,7 @@
     "myth": null,
     "truth": null,
     "sourceCount": 4,
-    "headingCount": 7,
+    "headingCount": 9,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
     "imageHeight": 784
@@ -36905,7 +36913,7 @@
       },
       {
         "q": "How often should I feed neon tetras?",
-        "a": "Twice a day for adults, morning and evening, only as much as they finish in a couple of minutes."
+        "a": "Twice a day for adults, morning and evening, only as much as they finish in a couple of minutes. Fry and juveniles need 3 to 4 small feedings a day until about 6 months old."
       },
       {
         "q": "How do I know if I'm overfeeding my neon tetras?",
@@ -36987,11 +36995,11 @@
       },
       {
         "q": "How can you tell a male neon tetra from a female?",
-        "a": "Only once they're adults. Females are rounder-bodied and a little larger than males, who stay slimmer."
+        "a": "Only once they're adults. Females are rounder-bodied and a little larger than males, who stay slimmer. The fuller belly makes a female's blue stripe look slightly bent, while a male's stripe runs straight."
       },
       {
         "q": "How do neon tetras compare to guppies?",
-        "a": "They look interchangeable on a shopping list and aren't. A guppy is a hardy livebearer that tolerates harder, alkaline water and breeds without much intervention. A neon tetra is an egg-scatterer that wants soft, slightly acidic, steady water."
+        "a": "They look interchangeable on a shopping list and aren't. A guppy is a hardy livebearer that tolerates harder, alkaline water and breeds without much intervention. A neon tetra is an egg-scatterer that wants soft, slightly acidic, steady water, and it reacts badly to swings."
       }
     ],
     "relatedProducts": [],
