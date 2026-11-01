@@ -20,16 +20,15 @@ export const fishGuides = fillCostTokens([
     // dive named in `sources` (null: the encyclopedia entry); each rule tile
     // copies its figure from the guide in its `source`; the FAQs are copied
     // verbatim from those guides. Ranges are each species' full range as its
-    // tank setup guide states it. The guppy guide gives pH "7.0 or above" with
-    // no top, so its upper bound is set above every other member's and never
-    // sets an edge of a shared band. Drafted 2026-11-01, not yet live.
+    // tank setup guide states it, the guppy's pH included (7.0 to 8.5). Drafted
+    // 2026-11-01, not yet live.
     layout: "group",
     // Intro research, with quotes and URLs: research/LIVEBEARER_GROUP_RESEARCH.md
     // (FishBase species and family pages, Helmstetter et al. 2016, Schlupp
     // 2018, Gasparini et al. 2018, Seriously Fish). Not cited on the page,
     // matching the tetras group.
     intro: {
-      text: "Livebearer is a common name rather than one scientific group: fish in several families give birth to free-swimming young, from the splitfins of Mexico to the surfperches of the North Pacific. Guppies, mollies, platies and swordtails all belong to one family, the Poeciliidae, and all four come from the Americas: the guppy from northeastern South America and the nearby Caribbean islands, the others from Mexico and Central America. Fertilization is internal, and a male uses his gonopodium, an anal fin modified into a mating organ, to transfer sperm. A female can store that sperm for months, so one mating can fertilize several broods and a tank can fill with fry long after the last male is gone. All four want hard, alkaline water, and mollies tolerate brackish water and even full marine conditions.",
+      text: "Livebearer is a common name rather than one scientific group: fish in several families give birth to free-swimming young, from the splitfins of Mexico to the surfperches of the North Pacific. Guppies, mollies, platies and swordtails all belong to one family, the Poeciliidae, and all four come from the Americas: the guppy from northeastern South America and the nearby Caribbean islands, the others mainly from Mexico and Central America, with mollies ranging from the southern United States to northern South America. Fertilization is internal, and a male uses his gonopodium, an anal fin modified into a mating organ, to transfer sperm. A female can store that sperm for months, so one mating can fertilize several broods and a tank can fill with fry long after the last male is gone. All four want hard, alkaline water, and mollies tolerate brackish water and even full marine conditions.",
     },
     branches: {
       groupName: "Livebearers",
@@ -40,37 +39,37 @@ export const fishGuides = fillCostTokens([
         {
           id: "guppy",
           name: "Guppy",
-          values: ["10 gallons for 5 or 6", "72 to 82°F", "7.0 and up", "1 to 2.4 in"],
+          values: ["18 x 12 in base", "72 to 82°F", "7.0 to 8.5", "1 to 2.4 in"],
           sources: ["guppy-tank-setup-guide", "guppy-tank-setup-guide", "guppy-tank-setup-guide", null],
-          ranges: { tempF: [72, 82], ph: [7.0, 9.0] },
+          ranges: { tempF: [72, 82], ph: [7.0, 8.5] },
         },
         {
           id: "molly",
           name: "Molly",
-          values: ["20 gallons for a small group", "72 to 82°F", "7.5 to 8.5", "3 to 4.5 in"],
+          values: ["20 gallons for a small group", "70 to 82°F", "7.5 to 8.5", "3 to 6 in"],
           sources: ["molly-tank-setup-guide", "molly-tank-setup-guide", "molly-tank-setup-guide", null],
-          ranges: { tempF: [72, 82], ph: [7.5, 8.5] },
+          ranges: { tempF: [70, 82], ph: [7.5, 8.5] },
         },
         {
           id: "platy",
           name: "Platy",
-          values: ["24 x 12 in base", "68 to 79°F", "7.0 to 8.2", "2 to 3 in"],
+          values: ["24 x 12 in base", "68 to 79°F", "7.0 to 8.2", "1.6 to 2.4 in"],
           sources: ["platy-tank-setup-guide", "platy-tank-setup-guide", "platy-tank-setup-guide", null],
           ranges: { tempF: [68, 79], ph: [7.0, 8.2] },
         },
         {
           id: "swordtail",
           name: "Swordtail",
-          values: ["20 gallons for a trio", "65 to 82°F", "7.0 to 8.4", "Up to 6.2 in"],
+          values: ["36-inch tank or longer", "72 to 82°F", "7.0 to 8.0", "Up to 6.3 in"],
           sources: ["swordtail-tank-setup-guide", "swordtail-tank-setup-guide", "swordtail-tank-setup-guide", null],
-          ranges: { tempF: [65, 82], ph: [7.0, 8.4] },
-          caution: "Swordtails and platies interbreed readily: keep one or the other unless hybrid fry are fine.",
+          ranges: { tempF: [72, 82], ph: [7.0, 8.0] },
+          caution: "Swordtails and platies can hybridize: keep one or the other unless hybrid fry are fine.",
         },
       ],
     },
     rules: [
       { label: "Fry", value: "One mating can give a female guppy up to about 8 broods. Adults eat fry, so dense cover decides how many survive.", source: "guppy-handling-guide" },
-      { label: "Sex ratio", value: "Two to three females per male cuts the chasing. Keeping the sexes in separate tanks is the only way to stop breeding.", source: "platy-handling-guide" },
+      { label: "Sex ratio", value: "Two to three females per male cuts the chasing. Separate tanks for the sexes, or a single-sex group, is the only way to stop breeding.", source: "platy-handling-guide" },
       { label: "Hard water", value: "Livebearers want hard, alkaline water, the opposite of a tetra. GH and pH are separate measurements, so test both before buying fish.", source: "freshwater-ph-gh-kh-guide" },
       { label: "Cycle first", value: "Most fishless cycles finish in four to six weeks. No fish goes in until ammonia and nitrite read zero.", source: "aquarium-cycling-guide" },
       { label: "Quarantine", value: "At least 30 days in a separate tank before a new fish joins the group.", source: "fish-quarantine-and-treatment-guide" },
