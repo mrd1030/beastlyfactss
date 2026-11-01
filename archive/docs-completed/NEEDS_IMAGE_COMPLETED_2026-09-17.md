@@ -8,6 +8,13 @@ Newest first.
 
 ---
 
+## 2026-11-01: glowlight hub head
+
+`/assets/guides/glowlight-tetra.jpg`, shared by the hub and the encyclopedia
+entry. Adobe Firefly with Nano Banana 2, owner approved: clear bodies with the
+single glowing line, red upper eye and white fin tips. 3:2, resized to
+1168x784 through mozjpeg at quality 80. Recorded in IMAGE_CREDITS.md.
+
 ## 2026-11-01: black skirt handling hero (black skirt set complete)
 
 `/assets/images/black-skirt-tetra-handling.jpg`, Adobe Firefly with Nano Banana
