@@ -588,3 +588,10 @@ These seem true and useful; no opened source supports them. Not to be dropped si
 ### Source count
 
 Distinct new URLs opened and used today: 33 (C17 to C23 and C25 to C50, counting C36 as one organization; C24 seen in search only and not counted). Re-fetched today and used: 4 (C2, C3, C8, C11). Quoted from this file without re-fetching: C1, C4, C10, C13, N7. Observation URLs (not sources): 4 opened plus 3 seen in search.
+
+## Owner decisions on the expansion research (2026-11-01)
+
+- Fable's layout changes are approved: health merges Fin Rot and Fungus and the two vet sections, "Copper, Soft Water and Shrimp" replaces "Medication and Shrimp", the blackwater debate gets one home per species (tank setup: how; enrichment: why), "Feeding Among Faster Fish" stays only for neon, "Adding Fish Later" folds into the quarantine section. Swim Bladder is kept where a guide already has it (never dropped) and stays on the owner review list.
+- Unsourced items written into the guides anyway (owner review): lighting, juvenile feeding frequency, lifespan.
+- Unsourced items NOT written into the guides: days a tetra can go without food (vacation), heater and light wattages for an electricity estimate, small-fish netting technique where unsourced, and every other new unsourced item from the expansion research. They stay listed in this file.
+- No medication is ever called shrimp-safe.

@@ -624,3 +624,10 @@ Seems true and useful, but no source found that could be cited:
 - Gaps lead "Practical Fishkeeping Q&A answers by Neale Monks ... open before citing": opened as S48 and S49.
 - Section 5.7 can add S8's dark substrate and background color observation and S1's tannin line (13.1.2, 13.1.7).
 - Sources disagree on light hours for a new planted tank (S54: 5 to 6 hours; S56: 6 to 8 hours), both from Aquarium Co-Op.
+
+## Owner decisions on the expansion research (2026-11-01)
+
+- Fable's layout changes are approved: health merges Fin Rot and Fungus and the two vet sections, "Copper, Soft Water and Shrimp" replaces "Medication and Shrimp", the blackwater debate gets one home per species (tank setup: how; enrichment: why), "Feeding Among Faster Fish" stays only for neon, "Adding Fish Later" folds into the quarantine section. Swim Bladder is kept where a guide already has it (never dropped) and stays on the owner review list.
+- Unsourced items written into the guides anyway (owner review): lighting, juvenile feeding frequency, lifespan.
+- Unsourced items NOT written into the guides: days a tetra can go without food (vacation), heater and light wattages for an electricity estimate, small-fish netting technique where unsourced, and every other new unsourced item from the expansion research. They stay listed in this file.
+- No medication is ever called shrimp-safe.

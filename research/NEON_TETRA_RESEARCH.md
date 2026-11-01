@@ -596,3 +596,10 @@ Observed 2026-11-01 on retailer pages or in the site's own data. For cost tables
 - Reading: a school of 9 to 12 neons at about $17 to $25 (section 10) adds about $47 in shipping and packaging at AquariumFish.com rates (about $62 to Alaska, Florida or Maine), so shipping roughly doubles or triples the cost of the fish.
 - Site's own costItems.js (checked 2026-10): 10 to 20 gallon tank $15 to $60 (zebra-danio-10-20-gallon-tank), sponge filter $5 to $20 (neon-tetra-gentle-filter), liquid test kit $25 to $40 (water-test-kit-liquid). A basic quarantine setup (10 gallon tank, sponge filter, heater) can be priced from these rows plus the existing heater row.
 - UF/IFAS 2001 farm-gate price: about 30 cents a neon, up from 11 cents when farms competed with imports (E9). This is a sourced historical figure, but a price, so it belongs here rather than in a Sources block.
+
+## Owner decisions on the expansion research (2026-11-01)
+
+- Fable's layout changes are approved: health merges Fin Rot and Fungus and the two vet sections, "Copper, Soft Water and Shrimp" replaces "Medication and Shrimp", the blackwater debate gets one home per species (tank setup: how; enrichment: why), "Feeding Among Faster Fish" stays only for neon, "Adding Fish Later" folds into the quarantine section. Swim Bladder is kept where a guide already has it (never dropped) and stays on the owner review list.
+- Unsourced items written into the guides anyway (owner review): lighting, juvenile feeding frequency, lifespan.
+- Unsourced items NOT written into the guides: days a tetra can go without food (vacation), heater and light wattages for an electricity estimate, small-fish netting technique where unsourced, and every other new unsourced item from the expansion research. They stay listed in this file.
+- No medication is ever called shrimp-safe.
