@@ -1056,8 +1056,11 @@ function PostView({ post, onBack, backLabel = 'Back to Critter Digest', factFile
 
             {/* The whole article sits in one block, from the title down, rather
                 than the body alone - the header floating outside it was what
-                made the page feel like it was spilling. */}
-            <div className="rounded-2xl border border-border bg-card p-5 sm:p-8">
+                made the page feel like it was spilling. The block is a card
+                from md up only: on a phone the border, background and padding
+                cost the text about 37px a side, so there the article reads edge
+                to edge inside the page gutter (owner, 2026-11-01). */}
+            <div className="md:rounded-2xl md:border md:border-border md:bg-card md:p-8">
 
             {/* Was `post.emoji || '🦎'`. 83 posts set no emoji in frontmatter,
                 so the dolphin, shark, octopus and birdwatching articles all

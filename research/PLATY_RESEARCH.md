@@ -519,3 +519,13 @@ Owner rule (docs/RULES.md, "No hobby sites"): retailer care pages and blogs, hob
 - platy-handling-guide.mdx: other fish will eat fry given the chance. Was P22. (also elsewhere: yes)
 - platy-tank-setup-guide.mdx: a fishless cycle takes 4 to 6 weeks, less with a bottled bacteria product (FAQ and body). Was Practical Fishkeeping "How to Cycle a Fish Tank" (P24, no byline). (also elsewhere: yes)
 - platy-cost-guide.mdx also lost P22; its brood interval and sperm storage stay on Siciliano 1972. Nothing listed.
+
+## Kept without a source (owner review): Substrate section, 2026-11-01
+
+Edit pass on platy-tank-setup-guide.mdx: the one-line Substrate section grew a sourced paragraph on buffering floors. The existing lines stay as written.
+
+Sources used (opened 2026-11-01): Matt Clarke, "Frequently asked questions on aquarium substrates," Practical Fishkeeping, https://www.practicalfishkeeping.co.uk/features/frequently-asked-questions-on-aquarium-substrates/ (named author; no peer-reviewed, extension, vet or Seriously Fish page covers coral sand in an aquarium). Extracts: "Coral sand and gravel is calcareous, so you should only use it in situations where you want the pH and hardness to be kept high"; coral sand will "make your water rock hard and increase the pH of your water to over 8.0"; calcareous substrates "contain calcium and other minerals that increase the hardness and pH"; "Even standard pea gravel contains sufficient calcium to boost the pH and hardness"; those in very soft water areas "use small amounts to stop the pH of their aquaria from dropping naturally"; dolomite is "a naturally occurring mineral rich in calcium and magnesium", sold uncolored for marine or Rift Lake cichlid tanks. Hardness and pH ranges from the guide's own Seriously Fish entry. (AQUARIUM_SUBSTRATE_RESEARCH.md id SB1.)
+
+- Substrate: "Fine gravel or sand both work well", "Avoid sharp or coarse gravel, which can damage fins", and "darker substrate tends to make platy coloring stand out more in the tank": kept as written, no source. (fin and grain lines also elsewhere: yes, the guppy, molly and swordtail tank guides; color line also elsewhere: no)
+Silt bottoms and weedy banks from FishBase (P18); "will not thrive in soft, acidic water" and planted tank from Seriously Fish (P20). Clarke added to the existing Practical Fishkeeping main-site entry; block stays at 3 entries.
+Left out for want of an allowed source: a crushed coral dose per gallon (Aquarium Co-Op product page only, hobby site).

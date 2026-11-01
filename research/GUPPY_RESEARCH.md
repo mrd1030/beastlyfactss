@@ -491,3 +491,13 @@ Added 2026-11-01 after the restore pass. The first correction pass cut these uns
 Owner rule (docs/RULES.md, "No hobby sites"): retailer care pages and blogs, hobby blogs, hobby magazines, Practical Fishkeeping pages without a named author, its news items and course pages left the Sources blocks. The claims below lost their only cited source in that guide's block and stay in the body as written; the owner decides.
 
 - guppy-tank-setup-guide.mdx: most aquariums take four to six weeks to cycle fully (FAQ and body). Was Practical Fishkeeping "How to Cycle a Fish Tank" (G24, no byline). (also elsewhere: yes)
+
+## Kept without a source (owner review): Substrate section, 2026-11-01
+
+Edit pass on guppy-tank-setup-guide.mdx: the one-line Substrate section grew a sourced paragraph on buffering floors. The existing lines stay as written.
+
+Sources used (opened 2026-11-01): Matt Clarke, "Frequently asked questions on aquarium substrates," Practical Fishkeeping, https://www.practicalfishkeeping.co.uk/features/frequently-asked-questions-on-aquarium-substrates/ (named author; no peer-reviewed, extension, vet or Seriously Fish page covers coral sand in an aquarium). Extracts: "Coral sand and gravel is calcareous, so you should only use it in situations where you want the pH and hardness to be kept high"; coral sand will "make your water rock hard and increase the pH of your water to over 8.0"; calcareous substrates "contain calcium and other minerals that increase the hardness and pH"; "Even standard pea gravel contains sufficient calcium to boost the pH and hardness"; those in very soft water areas "use small amounts to stop the pH of their aquaria from dropping naturally"; dolomite is "a naturally occurring mineral rich in calcium and magnesium", sold uncolored for marine or Rift Lake cichlid tanks. Hardness and pH ranges from the guide's own Seriously Fish entry. (AQUARIUM_SUBSTRATE_RESEARCH.md id SB1.)
+
+- Substrate: "Fine gravel or sand both work well" and "Avoid sharp or coarse gravel, which can damage delicate fins": kept as written, no source. (also elsewhere: yes, the molly, platy and swordtail tank guides)
+- Substrate: "darker substrate colors tend to make guppy coloring stand out more": kept as written; dark-floor color sources exist only for tetras, zebra danio, swordtail and ember. (also elsewhere: no)
+Left out for want of an allowed source: a crushed coral dose per gallon (Aquarium Co-Op product page only, hobby site). "mineral block" in Water Chemistry and the FAQ still has no source (unchanged, already listed above).

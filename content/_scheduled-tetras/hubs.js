@@ -128,7 +128,7 @@ export const scheduledTetraGuides = [
         { label: "Acclimation", value: "Dim the room, then add a little tank water to the bag every few minutes for 30 to 60 minutes. Net the fish across and leave the bag water behind.", source: "glowlight-tetra-handling-guide" },
         { label: "Tankmates", value: "Lively and peaceful, at home with other small, calm fish. Not with angelfish: a full-grown angelfish treats a 1.6-inch tetra as food.", source: "glowlight-tetra-handling-guide" },
         { label: "Quarantine", value: "At least 30 days in a separate tank before new fish meet the school.", source: "glowlight-tetra-health-issues-guide" },
-        { label: "Ich", value: "No heat cure: most strains die above 86°F and the glowlight's range stops at 82°F. Warm slowly to 82°F with an air stone and treat with aquarium salt or an ich medication, in soft water one without copper.", source: "glowlight-tetra-health-issues-guide" },
+        { label: "Ich", value: "No heat cure: most strains die above 86°F and the glowlight's range stops at 82°F. Warm slowly to 82°F with an air stone and treat with an ich medication, in soft water one without copper. Salt is unproven for this species at the 4 to 5 grams per liter that kills ich.", source: "glowlight-tetra-health-issues-guide" },
         { label: "Water changes", value: "25 to 30% weekly from the substrate, with conditioned water at tank temperature. Test nitrate first: under 20 ppm the routine is right, past 40 ppm the next change is 50%.", source: "aquarium-water-changes-guide" },
         { label: "Budget", value: "About $3 to $5 a fish; ten come to %%animal:glowlight-tetra%%. Setup roughly %%setup:glowlight-tetra%%.", source: "glowlight-tetra-cost-guide" },
         { label: "Lifespan", value: "About 2 to 4 years.", source: "glowlight-tetra-cost-guide" },
@@ -179,7 +179,7 @@ export const scheduledTetraGuides = [
     faqs: [
       { q: "What size tank do glowlight tetras need?", a: "A tank with a base of at least 24 x 15 inches (60 x 38 cm), roughly 18 to 20 gallons, for a school of 10. A 20-gallon long has the same floor area." },
       { q: "How often should glowlight tetras be fed?", a: "Once or twice a day, keeping each feeding light. Give only what the school finishes, since uneaten food fouls the water." },
-      { q: "Can you cure ich in glowlight tetras with heat?", a: "Heat alone will not do it. The temperature that kills most ich strains is 86°F, and a glowlight's range stops at 82°F. Warm the tank slowly up to 82°F with an air stone running to speed the parasite's cycle, and treat with aquarium salt or an ich medication." },
+      { q: "Can you cure ich in glowlight tetras with heat?", a: "Heat alone will not do it. The temperature that kills most ich strains is 86°F, and a glowlight's range stops at 82°F. Warm the tank slowly up to 82°F with an air stone running to speed the parasite's cycle, and treat with an ich medication. Salt is unproven for this species at the 4 to 5 grams per liter that kills ich." },
     ],
   },
   {
@@ -216,7 +216,7 @@ export const scheduledTetraGuides = [
         { label: "Tankmates", value: "Peaceful. Add them before an angelfish so a resident fish does not bully the new school, and keep them out of discus tanks run above their 79°F top.", source: "rummy-nose-tetra-handling-guide" },
         { label: "The red nose", value: "A paler nose means stress or slipping conditions: test ammonia, nitrite and pH before anything else.", source: "rummy-nose-tetra-health-issues-guide" },
         { label: "Quarantine", value: "At least 30 days in their own tank, longer if anything shows, before new fish meet the main school.", source: "rummy-nose-tetra-health-issues-guide" },
-        { label: "Ich", value: "No heat cure: most strains die above 86°F, past the 79°F ceiling. Warm slowly to 79°F with extra aeration and let aquarium salt or a copper-free ich medication clear it.", source: "rummy-nose-tetra-health-issues-guide" },
+        { label: "Ich", value: "No heat cure: most strains die above 86°F, past the 79°F ceiling. Warm slowly to 79°F with extra aeration and let a copper-free ich medication clear it. Salt is unproven for this species at the 4 to 5 grams per liter that kills ich.", source: "rummy-nose-tetra-health-issues-guide" },
         { label: "Water changes", value: "25 to 30% weekly from the substrate, with conditioned water at tank temperature. Test nitrate first: under 20 ppm the routine is right, past 40 ppm the next change is 50%.", source: "aquarium-water-changes-guide" },
         { label: "Budget", value: "About $4 to $6.50 a fish online, closer to $9 in a local store; twelve come to %%animal:rummy-nose-tetra%% before shipping. Setup roughly %%setup:rummy-nose-tetra%%.", source: "rummy-nose-tetra-cost-guide" },
         { label: "Lifespan", value: "About 5 years in a well-kept tank.", source: "rummy-nose-tetra-cost-guide" },
@@ -267,7 +267,7 @@ export const scheduledTetraGuides = [
     faqs: [
       { q: "What size tank do rummy-nose tetras need?", a: "One that is at least 36 inches (90 cm) long for a school of 10, which puts it in the 30 to 40 gallon range. Measure the front glass before reading the gallons on the label." },
       { q: "How often should I feed rummy-nose tetras?", a: "At least once a day. Keep each portion small enough that the school clears it before any reaches the substrate." },
-      { q: "Can you treat ich in rummy-nose tetras with heat?", a: "Not with heat alone. Ich strains mostly die above 86°F, seven degrees past the rummy-nose's 79°F ceiling. Warm the tank slowly to 79°F with extra aeration and let aquarium salt or a copper-free ich medication clear the parasite." },
+      { q: "Can you treat ich in rummy-nose tetras with heat?", a: "Not with heat alone. Ich strains mostly die above 86°F, seven degrees past the rummy-nose's 79°F ceiling. Warm the tank slowly to 79°F with extra aeration and let a copper-free ich medication clear the parasite. Salt is unproven for this species at the 4 to 5 grams per liter that kills ich." },
     ],
   },
 ];
