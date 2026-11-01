@@ -133,7 +133,7 @@ export const fishSheets = {
     necessities: [
       { item: "discus-55-gallon-tank-75", text: "[55-gallon tank] (or 75-gallon-plus for a larger group)" },
       { item: "discus-canister-filter-sized-well", text: "[Canister filter, sized well above the tank's actual volume]" },
-      { item: "angelfish-aquarium-heater", text: "[Aquarium heater] (budget toward the higher wattage end, or run two, for a tank held at 82-86\u00b0F)" },
+      { item: "angelfish-aquarium-heater", text: "[Aquarium heater] (budget toward the higher wattage end, or run two, for a tank held at 79-86\u00b0F)" },
       { item: "red-eared-slider-water-quality-test-kit", text: "[Water test kit]" },
       { item: "angelfish-substrate-sand-smooth-gravel", text: "[Fine sand substrate] (skip entirely for a bare-bottom setup)" },
       { item: "angelfish-driftwood-tall-plants", text: "[Driftwood]" },
