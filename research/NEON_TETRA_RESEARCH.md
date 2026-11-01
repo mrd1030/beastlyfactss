@@ -278,7 +278,7 @@ Current Sources: Ocean Action Hub; Fishstores; Aquarium Source.
 Added 2026-11-01 after the restore pass. The first fact-check passes cut the items below with no source contradicting them; they are put back verbatim at their old spots (owner rule: fact-check passes never drop content). Each is UNSUPPORTED: no page opened in this file states it. Lines the corrections and the Fable regrades changed were left as corrected.
 
 **neon-tetra-cost-guide.mdx**
-- "## Lifespan" section, restored: "Around 5 years is achievable with good, stable care, though average conditions often see neon tetras live closer to 2 to 3 years. Water stability matters more for lifespan in this species than in some hardier fish ... A guppy averages 2 to 3 years and up to 4 or 5 with excellent care ..." No authoritative neon lifespan found (see Gaps, section 3); the "leans on stable water" reasoning and the guppy comparison are also unsourced.
+- "## Lifespan" section, restored: "Around 5 years is achievable with good, stable care, though average conditions often see neon tetras live closer to 2 to 3 years. Water stability matters more for lifespan in this species than in some hardier fish ... A guppy averages 2 to 3 years and up to 4 or 5 with excellent care ..." No authoritative neon lifespan found (see Gaps, section 3); the "leans on stable water" reasoning and the guppy comparison are also unsourced. [Review applied 2026-11-01: conflict fixed: "A guppy averages 2 to 3 years and up to 4 or 5" to "a guppy is shorter-lived still, with females averaging about 13 months in one lab study", linked to the guppy cost guide]
 - FAQ "How long do neon tetras live?" ("About 5 years with good, stable care. In average conditions they often live closer to 2 to 3 years ..."), restored beside the corrected FAQ that replaced it. Same reason as the Lifespan section.
 
 **neon-tetra-enrichment-guide.mdx**
@@ -304,7 +304,7 @@ neon-tetra-handling-guide.mdx
 neon-tetra-tank-setup-guide.mdx
 - "A darker color makes neon coloring pop more against the background." Restored. No source.
 - "Dim to moderate light, roughly 8 to 10 hours a day, suits them." Restored. No neon source for the hours or the dim-to-moderate range.
-- "this species is more sensitive to water quality instability than many hardier community fish" and "Neons are not hardy fish, and they react to shifts in water chemistry more than most community species." Restored. No source.
+- "this species is more sensitive to water quality instability than many hardier community fish" and "Neons are not hardy fish, and they react to shifts in water chemistry more than most community species." Restored. No source. [Review applied 2026-11-01: wording merged: Water Chemistry duplicate cut, Let the Tank Mature sentence kept]
 
 neon-tetra-cost-guide.mdx
 - "Neons react to shifts in water chemistry more than most community fish." (under "Buying too soon"). Restored. No source.

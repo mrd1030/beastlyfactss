@@ -250,12 +250,12 @@ Not restored: the other cardinal guides had no pure removals. Their cuts (for ex
 **Second restore round (clauses cut inside corrected lines, added back as their own sentences; corrected wording unchanged)**
 
 cardinal-tetra-handling-guide.mdx
-- "Smaller groups turn pale, hide, and get sick more often from the stress." (FAQ) and "A group that is too small produces fish that are pale, constantly hiding, and more vulnerable to illness." (body). Restored. No cardinal group-size study (Saxby did not test cardinals); not contradicted. The old "workable minimum is 10" stays out: Seriously Fish says at least 8 to 10 and the guide now says eight.
+- "Smaller groups turn pale, hide, and get sick more often from the stress." (FAQ) and "A group that is too small produces fish that are pale, constantly hiding, and more vulnerable to illness." (body). Restored. No cardinal group-size study (Saxby did not test cardinals); not contradicted. The old "workable minimum is 10" stays out: Seriously Fish says at least 8 to 10 and the guide now says eight. [Review applied 2026-11-01: wording merged (handling body)]
 
 cardinal-tetra-enrichment-guide.mdx
-- "Cardinals shoal more tightly and color up better in bigger groups." (FAQ) and "Cardinals shoal more tightly and color more strongly in numbers." (body). Restored. No source.
+- "Cardinals shoal more tightly and color up better in bigger groups." (FAQ) and "Cardinals shoal more tightly and color more strongly in numbers." (body). Restored. No source. [Review applied 2026-11-01: wording merged (enrichment body)]
 - "Cardinals in tea-colored water look like different animals from cardinals under a bright light in clear water." Restored. Linhares 2018 supports pale stripes under intense light, not this comparison.
-- "Blackwater fish under a bright aquarium light spend their time near the bottom and stay pale." Restored. Linhares supports pale stripes, not the near-the-bottom behavior.
+- "Blackwater fish under a bright aquarium light spend their time near the bottom and stay pale." Restored. Linhares supports pale stripes, not the near-the-bottom behavior. [Review applied 2026-11-01: wording merged: "stay pale" cut]
 
 cardinal-tetra-health-issues-guide.mdx
 - Staged fin rot: "It progresses in stages: discoloration on the fin edges first, then fraying, and in advanced untreated cases the infection spreading to the body itself." (body, "fraying as infected tissue dies off" shortened because the corrected sentence just before it already says it) and the FAQ version "It starts as discoloration on the fin edges and progresses to fraying and tissue loss if untreated. Caught early, it is very treatable ...". Restored. No fin rot source found (Gaps).
@@ -263,6 +263,6 @@ cardinal-tetra-health-issues-guide.mdx
 - "Thirty to 60 days suits a fish worth being sure of." Restored. The 30 to 60 range is not in an opened source here, but fish-quarantine-and-treatment-guide.mdx states it.
 
 cardinal-tetra-cost-guide.mdx
-- "During the dry season, the shallow pools these fish live in shrink and strand huge numbers of them, and most don't survive to see a second year." Restored, QUESTIONABLE: Chao (2001) says wild cardinals "probably die after spawning" and Walker puts spawning in the early rising-water phase (February to April); no opened source mentions dry-season stranding as the cause. It is not directly contradicted, but it sits beside, and competes with, the Chao explanation in the same paragraph. Owner to confirm or drop.
+- "During the dry season, the shallow pools these fish live in shrink and strand huge numbers of them, and most don't survive to see a second year." Restored, QUESTIONABLE: Chao (2001) says wild cardinals "probably die after spawning" and Walker puts spawning in the early rising-water phase (February to April); no opened source mentions dry-season stranding as the cause. It is not directly contradicted, but it sits beside, and competes with, the Chao explanation in the same paragraph. Owner to confirm or drop. [Review applied 2026-11-01: conflict fixed: dry-season stranding sentence replaced by "so most don't survive to see a second year" following Chao]
 
 Cut clauses in corrected cardinal lines NOT restored: "nitrite is the compound this species tolerates worst" and "shrug off more ammonia than most expect" (Oliveira's LC50s make the ranking depend on which ammonia figure is used; the corrected wording avoids ranking); "some individuals reach ten" (ADW only); heat-hold for two weeks at 86°F and the 33.7°C mortality note (unsupported as written, tested only for 96 hours on juveniles); "darker substrate makes the stripe stand out" and "dim to moderate" lighting (cardinal guide, unsourced, awaiting the owner's call).
