@@ -24,6 +24,7 @@
 // unchanged; the sentence around them can be shorter than the article's.
 import fs from 'node:fs';
 import path from 'node:path';
+import { pathToFileURL } from 'node:url';
 import { resolveCostTokens, costTableText } from '../src/lib/costs.js';
 
 const args = process.argv.slice(2);
@@ -92,7 +93,8 @@ function readArticle(slug) {
 const files = fs.readdirSync('src/lib/data/guides').filter((f) => f.endsWith('.js') && f !== 'index.js');
 const hubs = [];
 for (const f of files) {
-  const m = await import(path.resolve('src/lib/data/guides', f));
+  // A file URL, not a bare path: on Windows "C:\..." reads as a URL scheme.
+  const m = await import(pathToFileURL(path.resolve('src/lib/data/guides', f)).href);
   for (const k of Object.keys(m)) {
     if (!Array.isArray(m[k])) continue;
     for (const g of m[k]) {

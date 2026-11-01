@@ -283,7 +283,9 @@ let pdfWorks = true;
 function pdfText(buf) {
   if (!pdfWorks) return '';
   try {
-    return execFileSync('python3', [PDF_TEXT], {
+    // Windows has no real python3: that name is the Microsoft Store stub, which
+    // exits 49, so every PDF fell back to its bytes and read as changed.
+    return execFileSync(process.platform === 'win32' ? 'python' : 'python3', [PDF_TEXT], {
       input: buf,
       maxBuffer: 512 * 1024 * 1024,
       stdio: ['pipe', 'pipe', 'ignore'],
