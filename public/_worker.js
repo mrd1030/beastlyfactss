@@ -1583,7 +1583,12 @@ async function handleAsk(request, env, ctx) {
 
   const log = (result, slugs = []) => askLog(env, ctx, question, slugs, result);
 
-  if (!(await askLimit(env, request)).ok) {
+  // Reader test pass: with ASK_TEST_KEY set (test site only) a request that
+  // carries it in x-ask-test skips the per-visitor limit and gets back the
+  // chunks the model saw, for the source check. The daily cap still applies.
+  const testing = Boolean(env.ASK_TEST_KEY) && request.headers.get('x-ask-test') === env.ASK_TEST_KEY;
+
+  if (!testing && !(await askLimit(env, request)).ok) {
     log('capped');
     return quiet('capped');
   }
@@ -1649,6 +1654,7 @@ async function handleAsk(request, env, ctx) {
     links: askLinks(found.chunks, reply.best),
     emergency,
     species,
+    ...(testing && { sources: found.chunks.map((c) => ({ url: c.url, title: askSourceTitle(c), text: c.text })) }),
   });
 }
 
