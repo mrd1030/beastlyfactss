@@ -397,15 +397,8 @@ export default function GuideDetail() {
           {/* ── Main content ── */}
           <div className="lg:col-span-2 space-y-5" ref={contentRef}>
 
-            {/* Fun fact */}
-            <div className="bg-secondary/5 border border-secondary/20 rounded-xl px-4 py-3">
-              <p className="text-sm font-body text-foreground">
-                <span className="inline-flex items-center gap-1.5 font-body font-bold text-secondary"><Lightbulb className="w-3.5 h-3.5" aria-hidden="true" />Did you know?</span>
-                {` ${guide.funFact}`}
-              </p>
-            </div>
-
-            {/* Hero image */}
+            {/* Hero image first, so it shows on a phone without scrolling,
+                as on the encyclopedia pages; the fun fact follows it. */}
             {guide.image && (
               <div className="rounded-2xl overflow-hidden aspect-video">
                 <HeroImage
@@ -415,6 +408,14 @@ export default function GuideDetail() {
                 />
               </div>
             )}
+
+            {/* Fun fact */}
+            <div className="bg-secondary/5 border border-secondary/20 rounded-xl px-4 py-3">
+              <p className="text-sm font-body text-foreground">
+                <span className="inline-flex items-center gap-1.5 font-body font-bold text-secondary"><Lightbulb className="w-3.5 h-3.5" aria-hidden="true" />Did you know?</span>
+                {` ${guide.funFact}`}
+              </p>
+            </div>
 
             {/* Router hub: first week, emergency card, routes, buy list */}
             {isRouter && (
