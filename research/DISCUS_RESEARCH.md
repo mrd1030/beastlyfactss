@@ -12,6 +12,6 @@ Bare bottoms: the existing bare-bottom and sand lines stay as written; their onl
 
 ## Kept without a source (owner review), 2026-11-01
 
-- "Bare-bottom tanks are the standard choice among breeders and serious keepers ... nothing traps waste that then has to be vacuumed out from between gravel." (Substrate): kept. Discus.com only (WEAK). (also elsewhere: yes, aquarium-substrate-guide.mdx)
-- "A layer of fine sand is the common middle ground ... unlike gravel, where food settles between pieces and is easy to miss." (Substrate): kept. Discus.com only (WEAK); Discus.com also allows small gravel with regular vacuuming, so the guide leans harder against gravel than its source. (also elsewhere: yes, aquarium-substrate-guide.mdx)
-- "Grow-out tanks are usually bare-bottom for the same reason breeders keep adults that way" (Growing Out Juveniles): kept. Discus.com only (WEAK). (also elsewhere: no)
+- "Bare-bottom tanks are the standard choice among breeders and serious keepers ... nothing traps waste that then has to be vacuumed out from between gravel." (Substrate): kept. Discus.com only (WEAK). (also elsewhere: yes, aquarium-substrate-guide.mdx) [no review needed: weak but uncontroversial]
+- "A layer of fine sand is the common middle ground ... unlike gravel, where food settles between pieces and is easy to miss." (Substrate): kept. Discus.com only (WEAK); Discus.com also allows small gravel with regular vacuuming, so the guide leans harder against gravel than its source. (also elsewhere: yes, aquarium-substrate-guide.mdx) [review]
+- "Grow-out tanks are usually bare-bottom for the same reason breeders keep adults that way" (Growing Out Juveniles): kept. Discus.com only (WEAK). (also elsewhere: no) [no review needed: weak but uncontroversial]

@@ -404,21 +404,21 @@ Seems true and useful; no opened source supports it. Nothing dropped.
 ## Kept without a source (owner review)
 
 Edit pass 2026-11-01 on content/guides/aquarium-substrate-guide.mdx. These existing claims stay in the guide as written (de-attributed only where the body narrated a source); each rests on a WEAK source, a search snippet or no opened source. Nothing was cut.
-- Aquasoil figures: pH 5.0 to 6.0, a lot of ammonium at first, fish after two to three weeks, usable about two to three years (table row and FAQ). SB37 only (WEAK retailer restating ADA); direction confirmed by SB34. (also elsewhere: no)
-- Capped soil row: 1/8 to 1/4 inch of dirt under a gravel cap of at least 2 inches, gas erupting under sand, cloudy mess when plants move or fish dig, ammonia spikes or algae. SB36 only (WEAK). (also elsewhere: no)
-- Root tabs beside root-feeding plants "such as Cryptocoryne": Cryptocoryne comes from SB35's search snippet only. (also elsewhere: no; the ember guide has root tabs beside root feeders without the genus)
-- Carbonate hardness neutralizing acid first, so a mild acid source moves pH more in soft water. No source opened for this file; it is the linked pH, GH and KH guide's own claim. (also elsewhere: yes, freshwater-ph-gh-kh-guide.mdx)
-- "Breeding discus calls for" a bare tank. SB43 only (WEAK). (also elsewhere: yes, discus-tank-setup-guide.mdx)
-- Sand as "the middle ground" for discus, food in plain view. SB43 only (WEAK). (also elsewhere: yes, discus-tank-setup-guide.mdx)
-- Leaves bringing pH down "usually short of blackwater." SB67 only (WEAK). (also elsewhere: no)
-- Nothing on the floor softens hard tap water. SB68 only (WEAK). (also elsewhere: yes, ember-tetra-tank-setup-guide.mdx)
-- Catappa leaves growing a biofilm fry graze on. SB66 only (WEAK). (also elsewhere: yes, ember-tetra-enrichment-guide.mdx)
+- Aquasoil figures: pH 5.0 to 6.0, a lot of ammonium at first, fish after two to three weeks, usable about two to three years (table row and FAQ). SB37 only (WEAK retailer restating ADA); direction confirmed by SB34. (also elsewhere: no) [review]
+- Capped soil row: 1/8 to 1/4 inch of dirt under a gravel cap of at least 2 inches, gas erupting under sand, cloudy mess when plants move or fish dig, ammonia spikes or algae. SB36 only (WEAK). (also elsewhere: no) [review]
+- Root tabs beside root-feeding plants "such as Cryptocoryne": Cryptocoryne comes from SB35's search snippet only. (also elsewhere: no; the ember guide has root tabs beside root feeders without the genus) [no review needed: weak but uncontroversial]
+- Carbonate hardness neutralizing acid first, so a mild acid source moves pH more in soft water. No source opened for this file; it is the linked pH, GH and KH guide's own claim. (also elsewhere: yes, freshwater-ph-gh-kh-guide.mdx) [no review needed: weak but uncontroversial]
+- "Breeding discus calls for" a bare tank. SB43 only (WEAK). (also elsewhere: yes, discus-tank-setup-guide.mdx) [no review needed: weak but uncontroversial]
+- Sand as "the middle ground" for discus, food in plain view. SB43 only (WEAK). (also elsewhere: yes, discus-tank-setup-guide.mdx) [no review needed: duplicate]
+- Leaves bringing pH down "usually short of blackwater." SB67 only (WEAK). (also elsewhere: no) [no review needed: weak but uncontroversial]
+- Nothing on the floor softens hard tap water. SB68 only (WEAK). (also elsewhere: yes, ember-tetra-tank-setup-guide.mdx) [no review needed: weak but uncontroversial]
+- Catappa leaves growing a biofilm fry graze on. SB66 only (WEAK). (also elsewhere: yes, ember-tetra-enrichment-guide.mdx) [no review needed: weak but uncontroversial]
 
 ## Kept without a source (owner review): hobby-site Sources removal, 2026-11-01
 
 Owner rule (docs/RULES.md, "No hobby sites"): retailer care pages and blogs, hobby blogs, hobby magazines, Practical Fishkeeping pages without a named author, its news items and course pages left the Sources blocks. The claims below lost their only cited source in that guide's block and stay in the body as written; the owner decides.
 
-- The wrong grain size and texture can damage barbels and skin. Was Practical Fishkeeping Diploma (SB4, course page). (also elsewhere: yes)
-- Coarse gravel is a poor medium for roots. Was SB4. (also elsewhere: no)
-- Unplanted community tank: stop at about 2 inches of coarse gravel, because deeper beds hold more waste and are likelier to turn anaerobic (body and FAQ). Was SB4; the 1 inch for sand stays on Matt Clarke (SB1). (also elsewhere: yes)
-- Bare floors: waste shows at once and dormant pathogens are easier to clear; substrate hides feces and uneaten food and harbors parasites and pathogens (body and FAQ). Was SB4; Merck still carries the quarantine build and its breakdown and disinfection. (also elsewhere: yes)
+- The wrong grain size and texture can damage barbels and skin. Was Practical Fishkeeping Diploma (SB4, course page). (also elsewhere: yes) [no review needed: weak but uncontroversial]
+- Coarse gravel is a poor medium for roots. Was SB4. (also elsewhere: no) [no review needed: weak but uncontroversial]
+- Unplanted community tank: stop at about 2 inches of coarse gravel, because deeper beds hold more waste and are likelier to turn anaerobic (body and FAQ). Was SB4; the 1 inch for sand stays on Matt Clarke (SB1). (also elsewhere: yes) [review]
+- Bare floors: waste shows at once and dormant pathogens are easier to clear; substrate hides feces and uneaten food and harbors parasites and pathogens (body and FAQ). Was SB4; Merck still carries the quarantine build and its breakdown and disinfection. (also elsewhere: yes) [no review needed: weak but uncontroversial]

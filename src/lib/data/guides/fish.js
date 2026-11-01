@@ -39,9 +39,9 @@ export const fishGuides = fillCostTokens([
         {
           id: "guppy",
           name: "Guppy",
-          values: ["18 x 12 in base", "72 to 82°F", "7.0 to 8.5", "1 to 2.4 in"],
+          values: ["18 x 12 in base", "64 to 82°F", "7.0 to 8.5", "1 to 2.4 in"],
           sources: ["guppy-tank-setup-guide", "guppy-tank-setup-guide", "guppy-tank-setup-guide", null],
-          ranges: { tempF: [72, 82], ph: [7.0, 8.5] },
+          ranges: { tempF: [64, 82], ph: [7.0, 8.5] },
         },
         {
           id: "molly",
@@ -53,9 +53,9 @@ export const fishGuides = fillCostTokens([
         {
           id: "platy",
           name: "Platy",
-          values: ["24 x 12 in base", "68 to 79°F", "7.0 to 8.2", "1.6 to 2.4 in"],
+          values: ["24 x 12 in base", "68 to 77°F", "7.0 to 8.2", "1.6 to 2.4 in"],
           sources: ["platy-tank-setup-guide", "platy-tank-setup-guide", "platy-tank-setup-guide", null],
-          ranges: { tempF: [68, 79], ph: [7.0, 8.2] },
+          ranges: { tempF: [68, 77], ph: [7.0, 8.2] },
         },
         {
           id: "swordtail",
@@ -69,7 +69,7 @@ export const fishGuides = fillCostTokens([
     },
     rules: [
       { label: "Fry", value: "One mating can give a female guppy up to about 8 broods. Adults eat fry, so dense cover decides how many survive.", source: "guppy-handling-guide" },
-      { label: "Sex ratio", value: "Two to three females per male cuts the chasing. Separate tanks for the sexes, or a single-sex group, is the only way to stop breeding.", source: "platy-handling-guide" },
+      { label: "Sex ratio", value: "Several females per male cuts the chasing. Separate tanks for the sexes, or a single-sex group, is the only way to stop breeding.", source: "platy-handling-guide" },
       { label: "Hard water", value: "Livebearers want hard, alkaline water, the opposite of a tetra. GH and pH are separate measurements, so test both before buying fish.", source: "freshwater-ph-gh-kh-guide" },
       { label: "Cycle first", value: "Most fishless cycles finish in four to six weeks. No fish goes in until ammonia and nitrite read zero.", source: "aquarium-cycling-guide" },
       { label: "Quarantine", value: "At least 30 days in a separate tank before a new fish joins the group.", source: "fish-quarantine-and-treatment-guide" },
@@ -78,7 +78,7 @@ export const fishGuides = fillCostTokens([
       { label: "Power outage", value: "Oxygen is the threat, not darkness. Unplug the filter rather than letting it sit dead in the water, and keep the surface moving.", source: "aquarium-power-outage-and-transport-guide" },
     ],
     faqs: [
-      { q: "How do I manage platy population if I don't want constant breeding?", a: "Keep males and females in separate tanks to avoid breeding entirely, or keep a males-only group for a colorful, breeding-free tank. If you do want controlled breeding, a ratio of roughly two to three females per male cuts down on how much the females get chased and stressed by mating attempts." },
+      { q: "How do I manage platy population if I don't want constant breeding?", a: "Keep males and females in separate tanks to avoid breeding entirely, or keep a males-only group for a colorful, breeding-free tank. If you do want controlled breeding, keeping several females per male cuts down on how much the females get chased and stressed by mating attempts." },
       { q: "How long should I quarantine a new fish before adding it to my main tank?", a: "At least 30 days, and 30 to 60 days for a valuable fish you want to be sure about. Thirty days is the floor, not the target, since some parasites and infections take that long to show themselves." },
       { q: "How long does it take to cycle a fish tank?", a: "Most fishless cycles finish in four to six weeks at a stable warm temperature, though a gene-sequencing study of real home aquarium biofilters found two tanks reaching undetectable ammonia and nitrite by week three while a third took until week eight. Cold water, no seeding, and an inconsistent ammonia dose all push a cycle toward the slower end of that range." },
     ],
@@ -138,12 +138,12 @@ export const fishGuides = fillCostTokens([
         {
           id: "cardinal-tetra",
           name: "Cardinal Tetra",
-          // The species' whole keeping range, like every other row, not its
-          // 77 to 82°F everyday target: comparing a target with full ranges
-          // made neon and cardinal look like they met at a single degree.
-          values: ["20-gallon long for 10", "73 to 84°F", "5.0 to 7.0", "2 in"],
+          // The species' whole keeping range, like every other row: 73 to
+          // 81°F (FishBase and Seriously Fish overlap, owner rule 2026-11-01),
+          // which shares 73 to 77°F with neon.
+          values: ["20-gallon long for 10", "73 to 81°F", "5.0 to 7.0", "2 in"],
           sources: ["cardinal-tetra-tank-setup-guide", "cardinal-tetra-tank-setup-guide", "cardinal-tetra-tank-setup-guide", null],
-          ranges: { tempF: [73, 84], ph: [5.0, 7.0] },
+          ranges: { tempF: [73, 81], ph: [5.0, 7.0] },
         },
         {
           id: "ember-tetra",
@@ -185,13 +185,13 @@ export const fishGuides = fillCostTokens([
       { label: "Soft water", value: "Every tetra here wants soft, acidic water. Work with what your tap gives you: dosing pH-up or pH-down against KH is how keepers crash a tank.", source: "freshwater-ph-gh-kh-guide" },
       { label: "Food size", value: "Tetra mouths are tiny, so micro-pellets or flake crushed fine. Food too large gets spat out, and the fish starve in a tank that looks fed.", source: "neon-tetra-feeding-guide" },
       { label: "Quarantine", value: "At least 30 days in a separate tank before a new fish joins the school.", source: "fish-quarantine-and-treatment-guide" },
-      { label: "Ich", value: "86°F held for two weeks kills most strains, and it sits above every tetra here but one. Cardinals tolerate it in short spells, so heat is possible only with strong aeration and close watching; for the rest, heat goes only to the top of their range and medication does the killing.", source: "aquarium-ich-treatment-guide" },
+      { label: "Ich", value: "86°F held for two weeks kills most strains, and it sits above every tetra here. Heat goes only to the top of each species' range, and medication does the killing.", source: "aquarium-ich-treatment-guide" },
       { label: "Water changes", value: "25 to 30% weekly. Test nitrate first: under 20 ppm the routine is right, past 40 ppm the next change is 50%.", source: "aquarium-water-changes-guide" },
       { label: "Power outage", value: "Oxygen is the threat, not darkness. Unplug the filter rather than letting it sit dead in the water, and keep the surface moving.", source: "aquarium-power-outage-and-transport-guide" },
     ],
     faqs: [
       { q: "How many of a schooling fish do I need?", a: "Six is the floor most species pages give, eight is the least to buy for neon tetras, and the research points higher. In the group-size study behind that advice, neon tetras and white cloud mountain minnows showed the least aggression and darting in the larger groups, and groups of 10 shoaled the most. Ten of one species beats five each of two." },
-      { q: "Can I treat ich with heat alone?", a: "Only if your fish can live at 86°F for two weeks, because that is the temperature most ich strains cannot survive, and it must be held with extra aeration since warm water carries less oxygen. Discus can, and cardinal tetras tolerate water reaching 86°F in short spells, so for them the heat method is possible only with strong aeration and the fish watched closely. Goldfish, koi, zebra danios, neon, ember, rummy-nose, black skirt and glowlight tetras, and bristlenose plecos cannot, and for them heat goes only as high as the species ceiling, to speed the cycle, while salt or medication does the killing." },
+      { q: "Can I treat ich with heat alone?", a: "Only if your fish can live at 86°F for two weeks, because that is the temperature most ich strains cannot survive, and it must be held with extra aeration since warm water carries less oxygen. Discus can. Goldfish, koi, zebra danios, cardinal, neon, ember, rummy-nose, black skirt and glowlight tetras, and bristlenose plecos cannot, and for them heat goes only as high as the species ceiling, to speed the cycle, while salt or medication does the killing." },
       { q: "Can different tetra species school together?", a: "Not as one school. Two neons, four embers and four cardinals are three small groups, each well below the eight to ten a tetra school needs, rather than one school of 10. Give each species its own full school in a tank and water that suit all of them, or keep a single species." },
       { q: "How long does it take to cycle a fish tank?", a: "Most fishless cycles finish in four to six weeks at a stable warm temperature, though a gene-sequencing study of real home aquarium biofilters found two tanks reaching undetectable ammonia and nitrite by week three while a third took until week eight. Cold water, no seeding, and an inconsistent ammonia dose all push a cycle toward the slower end of that range." },
     ],
@@ -303,7 +303,7 @@ export const fishGuides = fillCostTokens([
       intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
         { label: "Tank size", value: "5 gallons, heated and filtered, is the real minimum. Not the bowls or unheated cups bettas are often sold in.", source: "betta-fish-tank-setup-guide" },
-        { label: "Heater and filter", value: "A 15 to 25 watt adjustable heater holding a stable 76 to 82°F, 78 to 80°F the sweet spot. A gentle, low-flow filter such as a sponge filter, since a betta's long fins can't handle strong current.", source: "betta-fish-tank-setup-guide" },
+        { label: "Heater and filter", value: "A 15 to 25 watt adjustable heater holding a stable temperature anywhere in 75 to 86°F. A gentle, low-flow filter such as a sponge filter, since a betta's long fins can't handle strong current.", source: "betta-fish-tank-setup-guide" },
         { label: "Water parameters", value: "Ammonia and nitrite at 0 ppm with no safe nonzero reading for either, nitrate under 20 ppm, pH 6.5 to 7.8. Weekly water changes of 25 to 30%, always with a dechlorinator.", source: "betta-fish-water-parameters-guide" },
         { label: "Cycling", value: "Cycle the tank before adding the fish. A fishless cycle typically takes 4 to 6 weeks at a stable warm temperature.", source: "aquarium-cycling-guide" },
         { label: "Feeding schedule", value: "2 to 4 small, high-protein betta pellets a meal, no more than would fit in the size of the fish's eye. Once or twice a day, or up to three smaller meals; a consistent routine matters more than the count. Fast one day a week.", source: "betta-fish-feeding-guide" },
@@ -313,7 +313,7 @@ export const fishGuides = fillCostTokens([
         { label: "Adult size", value: "2.5 to 3 inches." },
         { label: "Lifespan", value: "2 to 4 years typical, up to 5 years in captivity with excellent care." },
         { label: "Tankmates", value: "One male, alone or with corydoras, mystery snails, ghost shrimp or small tetras, in 10 to 20 gallons or more, and ghost shrimp only past 1.5 inches. Never tiger barbs, any nipper, or a long-finned fish. A female sorority needs 10 gallons and cover.", source: "betta-fish-handling-guide" },
-        { label: "Ich", value: "White spots: raise the tank slowly to 86°F with an air stone and hold it two weeks. That is a treatment ceiling for the course only, above the 76 to 82°F a betta lives at. Or aquarium salt at 4 to 5 grams per liter. Quarantine 30 days after.", source: "aquarium-ich-treatment-guide" },
+        { label: "Ich", value: "White spots: raise the tank slowly to 86°F with an air stone and hold it two weeks. 86°F is the top of the betta's 75 to 86°F range, held for the course only. Or aquarium salt at 4 to 5 grams per liter. Quarantine 30 days after.", source: "aquarium-ich-treatment-guide" },
         { label: "Quarantine", value: "At least 30 days in a bare hospital tank before joining others. Thirty days is the floor, not the target.", source: "fish-quarantine-and-treatment-guide" },
         { label: "Power outage", value: "Oxygen loss is the fast danger, not the cold or the dark. Aerate right away with a battery air pump, or agitate the surface by hand roughly every 10 to 15 minutes in a small tank. A betta's transport bag needs far more air than a typical fish bag, since it breathes air directly through its labyrinth organ.", source: "aquarium-power-outage-and-transport-guide" },
       ],
@@ -358,7 +358,7 @@ export const fishGuides = fillCostTokens([
     ],
     faqs: [
       { q: "What size tank does a betta fish need?", a: "Five gallons is the current standard minimum, a genuine improvement over older bowl-based advice. Bettas can technically survive in smaller volumes, but bigger tanks are easier to keep stable since temperature and water chemistry swing less in more water. Always use a lid, bettas are surprisingly good jumpers." },
-      { q: "Why won't my betta eat?", a: "Most commonly it's stress from a recent move or tank change, pickiness about a new food, or water that's too cold or of poor quality. Bettas need water in the roughly 76 to 82°F range, cooler water slows their metabolism and appetite noticeably. Check water quality and temperature before assuming anything more serious." },
+      { q: "Why won't my betta eat?", a: "Most commonly it's stress from a recent move or tank change, pickiness about a new food, or water that's too cold or of poor quality. Bettas need water in the roughly 75 to 86°F range, cooler water slows their metabolism and appetite noticeably. Check water quality and temperature before assuming anything more serious." },
       { q: "What should I do before reaching for medication?", a: "Test and correct water quality and temperature first. A heated, filtered tank on a consistent water-change schedule is what makes a huge share of betta illness resolve or never start. Most cases never need an aquatic vet, though one is worth finding for a serious or unclear illness." },
     ],
   },
@@ -488,7 +488,7 @@ export const fishGuides = fillCostTokens([
         { label: "Before any fish", value: "A 2008 study on this species found it sensitive to nitrite, so ammonia and nitrite both read zero and a finished cycle before stocking is the single most important step when the tank is first set up.", source: "cardinal-tetra-health-issues-guide" },
         { label: "School size", value: "Plan for ten, with eight the least to buy. Cardinals are obligate schooling fish and need the group to feel secure.", source: "cardinal-tetra-handling-guide" },
         { label: "Tank size", value: "A 20-gallon long, roughly 24x12 inches of base, for the school of 10. A standard 10-gallon does not meet that footprint.", source: "cardinal-tetra-tank-setup-guide" },
-        { label: "Temperature", value: "77 to 82°F for general care, inside a tolerated 73 to 84°F. Cardinals tolerate water reaching 86°F in short spells, past the roughly 77°F neons are comfortable with, so they suit a warmer community tank.", source: "cardinal-tetra-tank-setup-guide" },
+        { label: "Temperature", value: "73 to 81°F, held steady anywhere inside it. Keepers run them to 84°F, past the roughly 77°F neons are comfortable with, so they suit a warmer community tank.", source: "cardinal-tetra-tank-setup-guide" },
         { label: "Water chemistry", value: "Soft and acidic, pH 5.0 to 7.0 and toward the low end. Test your source water first rather than assuming it fits, and ammonia and nitrite read zero before stocking.", source: "cardinal-tetra-tank-setup-guide" },
         { label: "Filtration and substrate", value: "Gentle flow, a sponge filter is the usual pick, over fine gravel or sand.", source: "cardinal-tetra-tank-setup-guide" },
         { label: "Light and blackwater", value: "Dim light, driftwood and Indian almond leaves for tannins, dense planting. In a lab test, intense light faded the stripes, while fish kept at 250 lux or less looked more vivid.", source: "cardinal-tetra-tank-setup-guide" },
@@ -509,7 +509,7 @@ export const fishGuides = fillCostTokens([
       source: "cardinal-tetra-health-issues-guide",
       heading: "Test the water first, then act on these today. Aquatic vets are rare, so nearly all of this is handled at home.",
       callNow: [
-        "Small white spots like grains of salt, flashing against decor, rapid breathing: ich, treated with medication and daily partial water changes; a slow rise toward 86°F is possible with strong aeration and the fish watched closely",
+        "Small white spots like grains of salt, flashing against decor, rapid breathing: ich, treated with medication and daily partial water changes, warming slowly to 81°F with strong aeration; heat alone is not a treatment for cardinals",
         "Discoloration on the fin edges, then fraying: fin rot, treatable",
         "Floating at the surface unable to swim down, or struggling to rise: poor water quality first, then overfeeding",
         "Restless or erratic swimming at night, fading or patchy color, lumps under the skin, a curved spine: neon tetra disease, no cure, and the fish is separated so the others cannot eat it",
@@ -518,7 +518,7 @@ export const fishGuides = fillCostTokens([
     },
     routes: [
       { slug: "cardinal-tetra-cost-guide", line: "$3.30 to $8 a fish, the %%setup:cardinal-tetra%% setup, and the Rio Negro fishery behind why this one prices above a neon." },
-      { slug: "cardinal-tetra-tank-setup-guide", line: "The 20-gallon long, 73 to 84°F, soft acidic water, gentle flow, and the blackwater tannins that change the fish." },
+      { slug: "cardinal-tetra-tank-setup-guide", line: "The 20-gallon long, 73 to 81°F, soft acidic water, gentle flow, and the blackwater tannins that change the fish." },
       { slug: "cardinal-tetra-feeding-guide", line: "Micro-pellet portions, the two-minute rule, and why removing a dead fish immediately is the real defense against an incurable disease." },
       { slug: "cardinal-tetra-handling-guide", line: "Why this is an observation fish, the ten-fish minimum, acclimation after long shipping, and the stripe that tells it from a neon." },
       { slug: "cardinal-tetra-health-issues-guide", line: "Neon tetra disease, ich, fin rot, swim bladder trouble, and the 2008 study that found this species sensitive to nitrite." },
@@ -580,7 +580,7 @@ export const fishGuides = fillCostTokens([
         { label: "Staple food", value: "A sinking pellet or wafer for bottom feeders, around 30 to 40% protein, with worms in the rotation: live blackworms, frozen bloodworms, Vibra Bites. Flakes get eaten before they reach the floor.", source: "corydoras-catfish-feeding-guide" },
         { label: "Portion", value: "Once or twice daily, cleared in 2 to 3 minutes: one wafer per 3 to 4 fish or 2 to 3 small pellets each, cut back if food sits 20 to 30 minutes. A new cory may take up to a week to eat normally.", source: "corydoras-catfish-feeding-guide" },
         { label: "Feeding after dark", value: "Sinking food fed for them after lights out, if faster tankmates are taking it.", source: "corydoras-catfish-enrichment-guide" },
-        { label: "Barbel erosion", value: "Shortened, red or missing barbels, the signature cory problem. No study pins the cause; manage a dirty substrate first. Move to soft sand, do a big water change and hold nitrate under 20 ppm; barbels can regrow over 4 to 8 weeks.", source: "corydoras-catfish-health-issues-guide" },
+        { label: "Barbel erosion", value: "Shortened, red or missing barbels, the signature cory problem. No study pins the cause; manage a dirty substrate first. Move to soft sand, do a big water change and hold nitrate under 20 ppm; barbels can regrow once conditions improve.", source: "corydoras-catfish-health-issues-guide" },
         { label: "Medication", value: "Naked bellies make them more sensitive than most community fish: reduced doses, sometimes half or a quarter, and no full-strength copper, malachite green or formalin. For ich, warm slowly to 78°F for most cories, 82°F for a sterbai, with strong aeration, and treat at a reduced dose.", source: "corydoras-catfish-health-issues-guide" },
         { label: "Water changes", value: "25 to 30% weekly from the substrate, with conditioned water at tank temperature. Test nitrate first: under 20 ppm the routine is right, past 40 ppm the next change is 50%.", source: "aquarium-water-changes-guide" },
         { label: "Budget", value: "$3 to $8 each, and six or more is the requirement, so price the school. Roughly %%setup:corydoras-catfish%% for the equipment, then %%monthly:corydoras-catfish%% a month. Aquatic vets are uncommon; water quality handles most problems.", source: "corydoras-catfish-cost-guide" },
@@ -748,7 +748,7 @@ export const fishGuides = fillCostTokens([
       intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
         { label: "How many", value: "Ten is the target, with 8 to 10 as the least to buy.", source: "ember-tetra-handling-guide" },
-        { label: "Tank size", value: "A 10-gallon tank on a base of roughly 18 x 12 inches (45 x 30 cm) for a school of 10. A 5-gallon only works with a smaller school.", source: "ember-tetra-tank-setup-guide" },
+        { label: "Tank size", value: "A 10-gallon tank on a base of roughly 18 x 12 inches (45 x 30 cm) for a school of 10.", source: "ember-tetra-tank-setup-guide" },
         { label: "Temperature", value: "75 to 82°F (24 to 28°C), held steady by a heater. 82°F is the top of the range, so set the heater inside it and never above it.", source: "ember-tetra-tank-setup-guide" },
         { label: "Water chemistry", value: "Soft, acidic to neutral water: pH 5.0 to 7.0 and a hardness of 1 to 10 dGH.", source: "ember-tetra-tank-setup-guide" },
         { label: "Cycle first", value: "Ammonia and nitrite both read zero in a fully cycled tank before the school goes in.", source: "ember-tetra-tank-setup-guide" },
@@ -808,7 +808,7 @@ export const fishGuides = fillCostTokens([
       "Frozen baby brine shrimp or daphnia",
     ],
     faqs: [
-      { q: "What size tank do ember tetras need?", a: "A 10-gallon tank for a school of 10, on a base of roughly 18 x 12 inches (45 x 30 cm) or the equivalent. A 5-gallon only works with a smaller school, and 10 or more is the group to aim for." },
+      { q: "What size tank do ember tetras need?", a: "A 10-gallon tank for a school of 10, on a base of roughly 18 x 12 inches (45 x 30 cm) or the equivalent. Ten or more is the group to aim for." },
       { q: "How often should I feed ember tetras?", a: "Once or twice a day, a small pinch each time that the school finishes before it settles on the substrate. Small live or frozen food can be one of those meals every day." },
       { q: "Can you treat ich in ember tetras with heat?", a: "Not with heat alone. Most ich strains die above 86°F, and the ember tetra's range tops out at 82°F. Warm the tank slowly to 82°F with an air stone running, which speeds up the parasite's cycle, and let an ich medication do the killing. Salt is unproven for this species at the 4 to 5 grams per liter that kills ich; use an ich medication instead." },
     ],
@@ -923,11 +923,11 @@ export const fishGuides = fillCostTokens([
       intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
         { label: "Tank size", value: "A base of at least 18 by 12 inches, about 11 gallons, is the minimum, and a tank at least 24 inches long suits a group of 5 or more. A 20-gallon is the better long-term choice if males and females share a tank.", source: "guppy-tank-setup-guide" },
-        { label: "Temperature", value: "76 to 78°F as the target inside 72 to 82°F. A heater unless the room stays warm year-round, at 3 to 5 watts per gallon, so 25 to 50 watts on a 10-gallon.", source: "guppy-tank-setup-guide" },
+        { label: "Temperature", value: "64 to 82°F, held steady anywhere inside it. A heater unless the room stays warm year-round, sized to the tank, about 50 watts for a 10-gallon.", source: "guppy-tank-setup-guide" },
         { label: "Water chemistry", value: "pH 7.0 to 8.5 and moderately hard to hard water, roughly 8 to 30 dGH. Soft tap water gets a mineral block or crushed coral.", source: "guppy-tank-setup-guide" },
         { label: "Filtration and substrate", value: "Gentle flow, a sponge filter if fry are wanted, an adjustable hang-on-back if not. Fine gravel or sand, darker for color, nothing sharp near those fins.", source: "guppy-tank-setup-guide" },
         { label: "Lighting", value: "A basic LED on an 8 to 10 hour cycle.", source: "guppy-tank-setup-guide" },
-        { label: "Sex ratio", value: "Two to three females per male minimum, six or more is common and fine. Or males only, which ends the harassment question and the endless fry, and keeps the color.", source: "guppy-enrichment-guide" },
+        { label: "Sex ratio", value: "Several females per male, and more is better. Or males only, which ends the harassment question and the endless fry, and keeps the color.", source: "guppy-enrichment-guide" },
         { label: "Feeding schedule", value: "Adults at least once a day, in small portions of about 3% of body weight; sources range from once to three times. Only what clears in about 1 to 2 minutes. Fry 3 to 5 times a day, juveniles around 3 to 4.", source: "guppy-feeding-guide" },
         { label: "Diet", value: "A tropical flake or small pellet for community fish, not goldfish food, with live or frozen protein and small blanched vegetable matter in rotation.", source: "guppy-feeding-guide" },
         { label: "Tankmates", value: "Not bettas, not goldfish. Past the floor, add fish only while nitrate holds under 20 ppm before the weekly change; count every fish at adult size.", source: "aquarium-stocking-and-tankmates-guide" },
@@ -956,7 +956,7 @@ export const fishGuides = fillCostTokens([
     },
     routes: [
       { slug: "guppy-cost-guide", line: "$2 to $5 for a standard fish, $12 to $17 a fish for named fancy strains, a modest setup, a short lifespan, and the cost nobody budgets for: more guppies than you started with." },
-      { slug: "guppy-tank-setup-guide", line: "The minimum base and when to go bigger, the temperature target and heater math, water chemistry, gentle filtration, and cycling before the fish go in." },
+      { slug: "guppy-tank-setup-guide", line: "The minimum base and when to go bigger, the temperature range and heater math, water chemistry, gentle filtration, and cycling before the fish go in." },
       { slug: "guppy-feeding-guide", line: "Frequency by life stage, the 1 to 2 minute portion rule, what to feed and what to skip, and six reasons a guppy stops eating." },
       { slug: "guppy-handling-guide", line: "Why this is a watching pet rather than a handling one, telling males from females by the fin, how livebearer breeding works, and what to do when fry appear." },
       { slug: "guppy-health-issues-guide", line: "Ich, velvet, fin and tail rot, dropsy, swim bladder disorder, and Camallanus, each with its visible signs and treatment, plus the salt course as an alternative to medication, since guppies have a wide salinity range." },
@@ -976,7 +976,7 @@ export const fishGuides = fillCostTokens([
     ],
     faqs: [
       { q: "What size tank does a guppy need?", a: "A base of at least 18 by 12 inches, about 11 gallons, is the minimum, and a tank at least 24 inches long suits a group of 5 or more. Guppies breed readily, so a 20-gallon holds up better long term unless you separate males and females. Go long and rectangular rather than tall, and use a lid, guppies are capable jumpers." },
-      { q: "How do I manage guppy population if I don't want constant breeding?", a: "Keep males and females in separate tanks to avoid breeding entirely, or keep males only for a colorful, breeding-free tank. If you do want controlled breeding, keep several females to each male, roughly two or three per male, so no single female takes all the mating attempts." },
+      { q: "How do I manage guppy population if I don't want constant breeding?", a: "Keep males and females in separate tanks to avoid breeding entirely, or keep males only for a colorful, breeding-free tank. If you do want controlled breeding, keep several females to each male, so no single female takes all the mating attempts." },
       { q: "How often should I feed my guppy?", a: "At least once a day, in small portions that add up to about 3% of body weight. Guppies take food readily, so too much is the easier mistake, and uneaten food left to rot fouls the water. Adults land somewhere between once and three times a day. Only offer what's fully cleared in about 1 to 2 minutes, because guppies beg regardless of actual hunger." },
     ],
   },
@@ -1091,9 +1091,10 @@ export const fishGuides = fillCostTokens([
     //
     // Three hub-only figures are retired rather than moved. "Keep water
     // between 72 and 78 degrees F" sat below the health guide's own shimmy
-    // fix of 76 to 80; the species range is now 72 to 82 across every page,
-    // from the vet-authored care sheet both the setup and health guides
-    // cite. The salt dose of "roughly a tablespoon per 5 gallons" appeared
+    // fix of 76 to 80; the short-fin range is now 70 to 82 across every page
+    // (FishBase and Seriously Fish overlap, owner rule 2026-11-01; it was
+    // 72 to 82 from the vet-authored care sheet both the setup and health
+    // guides cite). The salt dose of "roughly a tablespoon per 5 gallons" appeared
     // here as standing practice where the tank setup guide gives it as a
     // hospital-tank treatment dose only. And "weekly 20-25% water changes"
     // is a schedule no molly deep dive carries, so it is retired here and
@@ -1103,7 +1104,7 @@ export const fishGuides = fillCostTokens([
       intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
         { label: "Tank size", value: "20 gallons is the minimum for a small group; 30 gallons is the cautious choice for sailfins or a growing colony. Long rather than tall, with a lid.", source: "molly-tank-setup-guide" },
-        { label: "Temperature", value: "72 to 82°F for short-fins, sailfins nearer 70 to 79°F, held steady: swings over about 2°F in 24 hours add to the stress behind shimmy. A heater unless the room stays warm year-round.", source: "molly-tank-setup-guide" },
+        { label: "Temperature", value: "70 to 82°F for short-fins, sailfins nearer 70 to 79°F, held steady: swings over about 2°F in 24 hours add to the stress behind shimmy. A heater unless the room stays warm year-round.", source: "molly-tank-setup-guide" },
         { label: "Water chemistry", value: "pH 7.5 to 8.5 and medium-hard to hard water. Soft tap water gets crushed coral or a buffering product to bring it into range.", source: "molly-tank-setup-guide" },
         { label: "Salt", value: "Disputed, and not a standing requirement; there is no agreed shimmy dose. The one firm figure is the ich bath, 4 to 5 grams per liter for 7 to 10 days. Plain aquarium salt only, never marine mix or table salt.", source: "molly-tank-setup-guide" },
         { label: "Filtration", value: "A hang-on-back or canister turning over the full volume at least four times an hour; a sponge filter for a nursery tank.", source: "molly-tank-setup-guide" },
@@ -1112,7 +1113,7 @@ export const fishGuides = fillCostTokens([
         { label: "Plants, a population lever", value: "Parents eat their fry. Dense live plants hide them and survival climbs; skip the cover and predation keeps numbers down.", source: "molly-tank-setup-guide" },
         { label: "Feeding schedule", value: "Adults at least once a day, once or twice the common range, only what clears in a minute or two. Fry need small amounts at least 3 to 5 times a day.", source: "molly-feeding-guide" },
         { label: "Diet", value: "Tropical flake or pellet as the base with a large share of plant food: blanched zucchini, spinach, cucumber, lettuce or peas two to three times a week. Bloodworms once or twice a week at most. An all-protein diet is the classic mistake.", source: "molly-feeding-guide" },
-        { label: "Sex ratio", value: "Two to three females per male, and more is better. An all-male group avoids fry but needs space and numbers, since male mollies squabble.", source: "molly-enrichment-guide" },
+        { label: "Sex ratio", value: "Several females per male, and more is better. An all-male group avoids fry but needs space and numbers, since male mollies squabble.", source: "molly-enrichment-guide" },
         { label: "Fry are coming", value: "Gestation about 4 weeks, broods averaging roughly 20 to 35 fry in lab conditions, about 5 weeks apart. Females store sperm, so store-bought females keep producing without a male.", source: "molly-handling-guide" },
         { label: "Quarantine", value: "At least 30 days in a separate tank before new fish join the display. It catches most problems, shimmy included.", source: "molly-health-issues-guide" },
         { label: "Shimmy", value: "A side-to-side rocking swim, a sign of stress rather than a disease. Correct the water first: temperature toward the upper 70s, pH toward 7.5 to 8.5, hardness up if the water runs soft.", source: "molly-health-issues-guide" },
@@ -1137,7 +1138,7 @@ export const fishGuides = fillCostTokens([
     },
     routes: [
       { slug: "molly-cost-guide", line: "$2 to $8 a common molly, the %%setup:molly%% the tank costs around it, and the %%monthly:molly%% a month after that." },
-      { slug: "molly-tank-setup-guide", line: "A real 20 gallons and 30 for sailfins, 72 to 82\u00B0F for short-fins, hard alkaline water, four-times turnover, and the salt question answered honestly." },
+      { slug: "molly-tank-setup-guide", line: "A real 20 gallons and 30 for sailfins, 70 to 82\u00B0F for short-fins, hard alkaline water, four-times turnover, and the salt question answered honestly." },
       { slug: "molly-feeding-guide", line: "Once or twice a day, blanched vegetables two to three times a week, and why an all-protein diet is the molly-specific mistake." },
       { slug: "molly-handling-guide", line: "A netting-only fish, gonopodium versus gravid spot, and the breeding plan you need before you buy." },
       { slug: "molly-health-issues-guide", line: "The shimmy protocol, ich, velvet, fin rot and dropsy, and the quarantine window that stops most of it." },
@@ -1163,7 +1164,7 @@ export const fishGuides = fillCostTokens([
     faqs: [
       { q: "What size tank does a molly need?", a: "20 gallons is the minimum for a small group, noticeably more than the 10-gallon starting point that works for guppies. A 30-gallon tank is the cautious choice for sailfin varieties or any growing colony. Go long and rectangular over tall. Use a lid, mollies can jump." },
       { q: "Do mollies need aquarium salt in their tank setup?", a: "Not strictly, and this is more debated than most molly care advice lets on. Mollies are a real brackish-tolerant species biologically, but whether a healthy freshwater tank needs salt added is disputed among experienced keepers, some argue good water changes and stable parameters do the same job without the downsides salt carries for live plants. Hard, alkaline water matters more than salt. Salt can also harm snails at higher concentrations." },
-      { q: "How do I manage molly population if I don't want constant breeding?", a: "Keep males and females in separate tanks to avoid breeding entirely, or keep a males-only group for a colorful, breeding-free tank, which needs space and numbers rather than a trio because males squabble among themselves. If you do want controlled breeding, a ratio of roughly one male to two or three females cuts down on females getting chased and stressed by mating attempts." },
+      { q: "How do I manage molly population if I don't want constant breeding?", a: "Keep males and females in separate tanks to avoid breeding entirely, or keep a males-only group for a colorful, breeding-free tank, which needs space and numbers rather than a trio because males squabble among themselves. If you do want controlled breeding, keeping several females per male cuts down on females getting chased and stressed by mating attempts." },
     ],
   },
   {
@@ -1377,15 +1378,15 @@ export const fishGuides = fillCostTokens([
       intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
         { label: "Tank size", value: "10 gallons holds a small group of about five, though its 20 by 10 inch base misses the stricter 24 by 12 footprint. A 20 gallon long meets it, and is the size for six or more or a breeding group.", source: "platy-tank-setup-guide" },
-        { label: "Temperature", value: "68 to 79°F, the mid-70s the usual target, held steady: swings over about 2°F in 24 hours are a cited shimmy trigger. A heater is the safer default even for cool-tolerant variatus lines.", source: "platy-tank-setup-guide" },
+        { label: "Temperature", value: "68 to 77°F, held steady anywhere inside it: swings over about 2°F in 24 hours are a cited shimmy trigger. A heater is the safer default even for cool-tolerant variatus lines.", source: "platy-tank-setup-guide" },
         { label: "Water chemistry", value: "pH 7.0 to 8.2, in medium-hard to hard water of roughly 10 to 30 dGH. They will not thrive in very soft, acidic water.", source: "platy-tank-setup-guide" },
         { label: "Cycle first", value: "4 to 6 weeks fishless, less with bottled bacteria. A platy survives an uncycled tank, which is exactly why this step gets skipped, and it does so while breathing ammonia.", source: "platy-tank-setup-guide" },
         { label: "A group", value: "Five or more. Numbers spread any chasing instead of focusing it on one fish.", source: "platy-enrichment-guide" },
-        { label: "Sex ratio", value: "Two to three females per male at minimum, or an all-male group. Buying on color alone produces a male-heavy tank without anyone deciding to make one.", source: "platy-enrichment-guide" },
+        { label: "Sex ratio", value: "Several females per male, or an all-male group. Buying on color alone produces a male-heavy tank without anyone deciding to make one.", source: "platy-enrichment-guide" },
         { label: "Cover", value: "Dense live plants along the sides and back plus floating plants, with open water through the middle. Cover lets a chased female stop being chased and gives fry a survival rate you can manage.", source: "platy-enrichment-guide" },
         { label: "Feeding schedule", value: "Adults once or twice a day, cleared within a minute or two. Juveniles two to three smaller meals a day. Spread the food out so chased females still eat.", source: "platy-feeding-guide" },
         { label: "Diet", value: "A quality flake or small pellet as the staple, with blanched spinach, cucumber, zucchini or peas a couple of times a week. Platies need less vegetable than mollies.", source: "platy-feeding-guide" },
-        { label: "The portion sign", value: "A long stringy trail of waste after a meal means the portion was too large. Overfeeding drives constipation and swim bladder trouble, and is far more common than underfeeding.", source: "platy-feeding-guide" },
+        { label: "The portion sign", value: "A long stringy trail of waste after a meal means the portion was too large. Keepers commonly link overfeeding to constipation and swim bladder trouble, and it is far more common than underfeeding.", source: "platy-feeding-guide" },
         { label: "Fry are coming", value: "Broods of 20 to 80, roughly every 30 to 36 days, and a female stores sperm for months, so an all-female group bought from a mixed tank still produces fry.", source: "platy-cost-guide" },
         { label: "Sexing", value: "Males grow a rod-like anal fin, the gonopodium, at anywhere from about two to six and a half months. Females keep the fan-shaped fin and often show a dark gravid spot near the vent.", source: "platy-handling-guide" },
         { label: "Quarantine", value: "At least 30 days in a separate tank before new fish join the display, which catches most problems, shimmy included, before they spread.", source: "platy-health-issues-guide" },
@@ -1400,7 +1401,7 @@ export const fishGuides = fillCostTokens([
       source: "platy-health-issues-guide",
       heading: "Test the water first, then act on these today. Platies rarely see a vet; nearly all of this is handled at home.",
       callNow: [
-        "Small white spots like grains of salt across the body and fins: ich, treated by warming the tank slowly to 79°F, then aquarium salt or an ich medication, plus the water fix that let it in",
+        "Small white spots like grains of salt across the body and fins: ich, treated by warming the tank slowly to 77°F, then aquarium salt or an ich medication, plus the water fix that let it in",
         "Fin edges turning white, ragged, or frayed from the tips inward",
         "Buoyancy problems: floating, sinking, or swimming at an odd angle",
         "A side-to-side, snake-like rocking as the fish swims: shimmy, fixed by correcting the water",
@@ -1430,7 +1431,7 @@ export const fishGuides = fillCostTokens([
       "Frozen brine shrimp, bloodworms or daphnia",
     ],
     faqs: [
-      { q: "What temperature do platies need?", a: "68 to 79°F, with the mid-70s the usual target. Hold it steady rather than chasing a number: swings over about 2°F in a day are the problem. Variatus-line platies handle the cool end better than the southern platy does, though a heater is still the safer default unless the room stays warm all year." },
+      { q: "What temperature do platies need?", a: "68 to 77°F. Hold it steady anywhere inside that range rather than chasing a number: swings over about 2°F in a day are the problem. Variatus-line platies handle the cool end better than the southern platy does, though a heater is still the safer default unless the room stays warm all year." },
       { q: "How often should I feed my platy?", a: "Adults do well fed once or twice a day, sometimes stretched to three times for very small portions, feeding only what's fully cleared within a minute or two. Juveniles need two or three smaller meals a day, the top of the adult range, to keep pace with faster growth." },
       { q: "Is it true that platies can get tumors?", a: "Yes, and it's one of the most studied facts in the species, but keep it in perspective. Certain platy and swordtail genetic lines develop melanoma through a well-studied mechanism, and Xiphophorus fish have been used as a cancer research model for almost a century. Importantly, in a purebred pet-store platy it is rare, appearing almost exclusively in mature males of advanced age, and it is unmasked far more readily by deliberate cross-breeding between platies and swordtails in a lab setting. If you find a lump or dark growth on your own platy, it's far more likely to be an injury, a cyst, or an unrelated growth than that specific research-famous condition, a vet or fish-health specialist can help rule out the more common, more treatable causes." },
     ],
@@ -1479,7 +1480,7 @@ export const fishGuides = fillCostTokens([
         { label: "Not two males", value: "The single most useful stocking rule. With two, every contest is the same pair and the loser has nowhere to be. One male with a group of females, or several males in a large planted tank.", source: "swordtail-enrichment-guide" },
         { label: "Tank size", value: "Go by length: at least 36 inches, so a 30-gallon or 40-gallon breeder is the smallest worth buying, and 48 inches (a 33-gallon long or a 55) is better. The tank sold as a 29 is only 30 inches long.", source: "swordtail-tank-setup-guide" },
         { label: "Water chemistry", value: "pH 7.0 to 8.0 in moderately hard to hard water, roughly 10 to 25 dGH. Soft tap water gets crushed coral or a buffering product.", source: "swordtail-tank-setup-guide" },
-        { label: "Temperature", value: "Roughly 72 to 82°F, down to the mid 60s if it must, with 75 to 79°F the steadier target. Avoid sudden swings.", source: "swordtail-tank-setup-guide" },
+        { label: "Temperature", value: "72 to 82°F, held steady anywhere inside it; keepers report them tolerating cooler water. Avoid sudden swings.", source: "swordtail-tank-setup-guide" },
         { label: "The lid", value: "They escape through gaps well under an inch. A full mesh or glass lid, a feeding hatch no larger than necessary, and a check after any rearranging.", source: "swordtail-tank-setup-guide" },
         { label: "Filtration", value: "Not especially strong, but some water movement: flow of 4 to 5 times the tank volume an hour, from a hang-on-back or canister. A sponge filter only if fry survival is the priority.", source: "swordtail-tank-setup-guide" },
         { label: "Cover", value: "Dense live plants along the sides and back, open water through the middle: cover for pursued females and broken sight lines for subordinate males.", source: "swordtail-enrichment-guide" },
@@ -1487,7 +1488,7 @@ export const fishGuides = fillCostTokens([
         { label: "Acclimation", value: "Float the sealed bag, then add tank water over 30 to 60 minutes; drip a couple of hours only if your water is soft or acidic. Net the fish in; bag water carries transport ammonia.", source: "swordtail-handling-guide" },
         { label: "Quarantine", value: "At least 30 days in a separate tank before a new fish joins the display.", source: "swordtail-handling-guide" },
         { label: "Sexing", value: "Males carry the sword and a rod-like anal fin. Females have neither and are the larger sex.", source: "swordtail-handling-guide" },
-        { label: "Sex ratio", value: "At least two or three females per male, three or four where the tank allows. Chewed fins or a clamped, listless fish in a male-heavy tank: move it to a recovery tank and fix the ratio.", source: "swordtail-health-issues-guide" },
+        { label: "Sex ratio", value: "Several females per male, more where the tank allows. Chewed fins or a clamped, listless fish in a male-heavy tank: move it to a recovery tank and fix the ratio.", source: "swordtail-health-issues-guide" },
         { label: "Budget", value: "%%animal:swordtail%% a fish, more for lyretails. Setup %%setup:swordtail%% for a tank 36 inches long, more for the 48 a group wants, then %%monthly:swordtail%% a month. Rarely a vet.", source: "swordtail-cost-guide" },
         { label: "Lifespan", value: "About 3 to 5 years with stable water quality.", source: "swordtail-cost-guide" },
         { label: "Adult size", value: "Males reach about 5.5 inches; females, which lack a sword with rare exceptions, grow slightly longer, up to about 6.3 inches.", source: "swordtail-handling-guide" },
@@ -1502,7 +1503,7 @@ export const fishGuides = fillCostTokens([
       callNow: [
         "Small white spots like grains of salt across the body and fins",
         "Ragged, frayed, or discolored fin edges",
-        "Buoyancy problems, usually from overfeeding or constipation",
+        "Buoyancy problems, which keepers commonly link to overfeeding or constipation",
         "Chewed fins or a clamped, listless fish in a male-heavy tank: move it and fix the ratio",
         "Scales standing out in a raised, pinecone pattern: dropsy, the hardest condition here to treat",
       ],
@@ -1523,7 +1524,7 @@ export const fishGuides = fillCostTokens([
       "Filter rated for 4 to 5 times the tank volume per hour",
       "Sponge filter, if fry survival matters",
       "Dense live plants along the sides and back, open water through the middle",
-      "One male and three or four females, or a single-sex group",
+      "One male and several females, or a single-sex group",
       "Liquid water test kit",
       "Water conditioner",
       "Staple flake or pellet",
@@ -1531,8 +1532,8 @@ export const fishGuides = fillCostTokens([
     ],
     faqs: [
       { q: "What size tank does a swordtail need?", a: "Go by length. A swordtail tank should be at least 36 inches long, so a 30-gallon or 40-gallon breeder is the smallest worth buying, and 48 inches (a 33-gallon long or a 55) is better. The tank sold as a 29 is only 30 inches long, so it falls short. Pick length over height, and add a lid, since swordtails are capable jumpers." },
-      { q: "What temperature do swordtails need?", a: "Tropical, roughly 72 to 82°F, down to the mid 60s if it must, with 75 to 79°F the steadier target. Hold it steady rather than chasing a number, and avoid sudden swings. A submersible heater is necessary unless the room stays warm all year." },
-      { q: "Why does male-to-female ratio matter so much with swordtails?", a: "Because males can be persistent toward females and combative toward each other. Keep at least two or three females per male, and three or four where the tank allows: the higher end spreads out mating attempts more effectively and reduces the fin damage and stress that come with a single female fielding constant attention." },
+      { q: "What temperature do swordtails need?", a: "Tropical, 72 to 82°F, and keepers report them tolerating cooler water. Hold it steady anywhere inside that range rather than chasing a number, and avoid sudden swings. A submersible heater is necessary unless the room stays warm all year." },
+      { q: "Why does male-to-female ratio matter so much with swordtails?", a: "Because males can be persistent toward females and combative toward each other. Keep several females per male, and more where the tank allows: extra females spread out mating attempts more effectively and reduce the fin damage and stress that come with a single female fielding constant attention." },
     ],
   },
   {

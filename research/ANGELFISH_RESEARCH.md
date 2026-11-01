@@ -12,5 +12,5 @@ Left out: "can be kept in a wide variety of setups, such as bare tanks, communit
 
 ## Kept without a source (owner review)
 
-- "Avoid sharp or coarse gravel entirely, angelfish have genuinely delicate fins that tear easily against rough substrate": no source; the species spawns on vertical surfaces (SB49), so substrate contact may be low. (also elsewhere: yes, the angelfish hub row in src/lib/data/guides/fish.js, "nothing sharp against those fins")
-- "Fine sand or small, smooth gravel": no species source names a substrate. (also elsewhere: yes, same hub row)
+- "Avoid sharp or coarse gravel entirely, angelfish have genuinely delicate fins that tear easily against rough substrate": no source; the species spawns on vertical surfaces (SB49), so substrate contact may be low. (also elsewhere: yes, the angelfish hub row in src/lib/data/guides/fish.js, "nothing sharp against those fins") [no review needed: common sense]
+- "Fine sand or small, smooth gravel": no species source names a substrate. (also elsewhere: yes, same hub row) [no review needed: weak but uncontroversial]

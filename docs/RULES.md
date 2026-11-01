@@ -124,6 +124,15 @@ working checklist.
   Prefer peer-reviewed papers with DOI, then .gov agencies, then museums and
   universities, then established science journalism. Name the actual paper
   title and credit the authors, not just the journal.
+- Temperature ranges (owner, 2026-11-01). A fish's keeping range is the
+  overlap of FishBase and Seriously Fish (species page), rounded to whole °F;
+  where only one gives a figure, use it. Widen it only on a peer-reviewed or
+  extension source named in the species' research file. A "target" inside the
+  range appears only when a source states one; otherwise the guide says to hold
+  the temperature steady anywhere inside the range, with no invented middle.
+  The ich ceiling is the top of the keeping range. Survival figures (96-hour
+  tests, breeding spikes) are written as survival, never as a ceiling, and
+  never grant a species the ich heat method.
 - "No source found, claim removed" is a good outcome. A fabricated citation is
   the worst outcome because it survives review.
 - Every superlative gets verified. Mechanisms must match claims, species-specific

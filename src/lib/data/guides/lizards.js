@@ -152,9 +152,9 @@ export const lizardGuides = fillCostTokens([
     firstWeek: {
       intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
-        { label: "Check the law first", value: "Florida banned new pet tegus on April 29, 2021. Georgia, Alabama, Louisiana, Hawaii, DC, and New York City ban one; New Mexico and New Jersey want permits; Minnesota allows a permitted breeder's only; Maine clears it only if captive bred.", source: "argentine-tegu-legal-guide" },
-        { label: "Day one", value: "Quarantine 3 to 6 months on plain paper towel with dedicated tools, the quarantined animal serviced last.", source: "reptile-quarantine-guide" },
-        { label: "Enclosure", value: "8 by 4 by 4 feet minimum for an adult male, many keepers go to 10 by 5 by 5 or a room. A hatchling starts around 40 gallons and outgrows it inside a year. The ready-made 8-foot PVC unit is 8x2x2, so adult housing is a DIY build.", source: "argentine-tegu-tank-setup-guide" },
+        { label: "Check the law first", value: "Florida banned new pet tegus on April 29, 2021. Georgia, Alabama, Louisiana, Hawaii, DC, and New York City ban one; New Mexico and New Jersey want permits; Minnesota allows only a permitted breeder's, and Maine only a captive-bred one.", source: "argentine-tegu-legal-guide" },
+        { label: "Day one", value: "Quarantine 3 to 6 months on plain paper towel with dedicated tools, and service it last.", source: "reptile-quarantine-guide" },
+        { label: "Enclosure", value: "8x4x4 feet minimum for an adult male; many keepers go to 10x5x5 or a room. A hatchling starts around 40 gallons and outgrows it inside a year. The ready-made 8-foot PVC unit is 8x2x2, so adult housing is a DIY build.", source: "argentine-tegu-tank-setup-guide" },
         { label: "Temperature", value: "Basking 95 to 100F, warm side 85 to 95F, cool side around 75F, nights no lower than 75F. A cluster of basking bulbs or a radiant heat panel on a heavy-duty thermostat rated for the wattage.", source: "argentine-tegu-tank-setup-guide" },
         { label: "Humidity and substrate", value: "70 to 80%, from 12 to 18 inches or more of cypress mulch, coconut fiber, or topsoil that holds a burrow, a large water tub, and usually an automatic mister. Tegus dig and brumate in that burrow.", source: "argentine-tegu-tank-setup-guide" },
         { label: "UVB", value: "A 46-inch T5 HO at 12 to 14%, over a quarter to half the length on the warm side, targeting a UVI of 3.0 to 4.0, with a 6500K LED, on a 12 to 14 hour day.", source: "argentine-tegu-tank-setup-guide" },
@@ -167,7 +167,7 @@ export const lizardGuides = fillCostTokens([
         { label: "Brumation", value: "Roughly 2 to 4 months of slowing, eating less, and burrowing from mid-September, even indoors. Harmless to skip, and handling is closed for that season.", source: "argentine-tegu-handling-guide" },
         { label: "Adult size", value: "3 to 5 feet (90 to 150 cm)." },
         { label: "Budget", value: "$200 to $500 for a black and white, blue, or Chacoan tegu, $700 to $1,200 for rare morphs. Setup %%setup:argentine-tegu%%, then %%monthly:argentine-tegu%% a month. A routine exam is $50 to $135.", source: "argentine-tegu-cost-guide" },
-        { label: "Lifespan", value: "15 to 20 years on average with good care.", source: "argentine-tegu-cost-guide" },
+        { label: "Lifespan", value: "15 to 20 years with good care.", source: "argentine-tegu-cost-guide" },
         { label: "Salmonella", value: "Never clean the enclosure in a kitchen sink or a shared bathtub, and children under 5 do not touch reptiles.", source: "reptile-salmonella-hygiene-guide" },
         { label: "Power outage", value: "A healthy adult tolerates one cool night. A day or two below the normal night low is when cold stress and respiratory infection become real.", source: "reptile-emergency-plan-guide" },
       ],

@@ -12,6 +12,6 @@ Not used: POND Trade Magazine (SB19, trade magazine) on bare floors and rock cre
 
 ## Kept without a source (owner review)
 
-- A bare-bottom pond is free of "pump damage": no source ties substrate to pump damage. (also elsewhere: no)
-- Sharp or jagged material "can injure mouths and gills during foraging": no source; PetMD's "smooth-sided" supports the direction only. (also elsewhere: no)
-- "skip very fine material that clogs equipment": only an aquarium-context Merck line on dust clogging filters and pumps (SB9); nothing pond-specific. (also elsewhere: no)
+- A bare-bottom pond is free of "pump damage": no source ties substrate to pump damage. (also elsewhere: no) [no review needed: weak but uncontroversial]
+- Sharp or jagged material "can injure mouths and gills during foraging": no source; PetMD's "smooth-sided" supports the direction only. (also elsewhere: no) [no review needed: common sense]
+- "skip very fine material that clogs equipment": only an aquarium-context Merck line on dust clogging filters and pumps (SB9); nothing pond-specific. (also elsewhere: no) [no review needed: weak but uncontroversial]

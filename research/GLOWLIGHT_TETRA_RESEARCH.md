@@ -674,44 +674,44 @@ Per guide, enough to support 3 to 5 URLs each:
 ### Kept without a source (owner review)
 
 Added 2026-11-01 in the contradiction and duplicate pass. Kept as written; the owner decides.
-- Feeding guide, Foods to Avoid: "Tubificid worms are the host of the parasite behind whirling disease, and keeping fish away from them is how that disease is prevented." This file records no whirling disease quote. The clause is kept because Merck's "Parasitic Diseases of Fish" (S44 here, cited in the feeding guide) says whirling disease is prevented by keeping fish free of "the definitive hosts (tubeficid worms)", as quoted from the same page in the rummy-nose file (its S59). Whirling disease is a salmonid disease, so its place in a glowlight guide is the owner's call; the tetra-relevant risk is S57 (6 of 7 shop tubifex samples infected), which the feeding guide does not cite. (also elsewhere: yes, rummy-nose feeding guide)
-- Feeding guide, adult portions: "Watching also shows whether every fish is getting a share." Restored after the rewrite dropped it. Common-sense husbandry; no source opened says it. (also elsewhere: no)
+- Feeding guide, Foods to Avoid: "Tubificid worms are the host of the parasite behind whirling disease, and keeping fish away from them is how that disease is prevented." This file records no whirling disease quote. The clause is kept because Merck's "Parasitic Diseases of Fish" (S44 here, cited in the feeding guide) says whirling disease is prevented by keeping fish free of "the definitive hosts (tubeficid worms)", as quoted from the same page in the rummy-nose file (its S59). Whirling disease is a salmonid disease, so its place in a glowlight guide is the owner's call; the tetra-relevant risk is S57 (6 of 7 shop tubifex samples infected), which the feeding guide does not cite. (also elsewhere: yes, rummy-nose feeding guide) [no review needed: stale]
+- Feeding guide, adult portions: "Watching also shows whether every fish is getting a share." Restored after the rewrite dropped it. Common-sense husbandry; no source opened says it. (also elsewhere: no) [no review needed: common sense]
 
 Added 2026-11-01 in the health guide Sources trim (health guides cap at 8). Aquarium Source (S10) and Fishkeeper (S19) left the health guide's Sources block; the claims below lost their only cited source there and stay as written.
-- Health guide, healthy table: "Bright red-orange, with white fin tips in strong contrast". The white fin tips and "bright orange" were S19; red is the 1917 description (S4, via FWS, still cited). (also elsewhere: no)
-- Health guide: "glowlights show the most in acidic, dimly lit, tea-tinted water". Acidic and dim rest on Seriously Fish (S1); the tea tint was S19. (also elsewhere: yes, tank setup guide)
-- Health guide: "The albino strain, widely sold". "Widely sold" was S19; identical care rests on S1. (also elsewhere: yes, cost guide)
-- Health guide, water: "A glowlight takes micropellets or small flakes, and light portions keep uneaten food from fouling the water." Was S10; Seriously Fish gives dried flakes and granules. (also elsewhere: yes, feeding and enrichment guides)
-- Health guide, ich: "Heat and salt are weaker than a chemical treatment, because resistant strains can develop." VCA (S13) is still cited, but this line rests on a fetch-tool paraphrase of the VCA page, not on wording confirmed there. (also elsewhere: no)
+- Health guide, healthy table: "Bright red-orange, with white fin tips in strong contrast". The white fin tips and "bright orange" were S19; red is the 1917 description (S4, via FWS, still cited). (also elsewhere: no) [no review needed: weak but uncontroversial]
+- Health guide: "glowlights show the most in acidic, dimly lit, tea-tinted water". Acidic and dim rest on Seriously Fish (S1); the tea tint was S19. (also elsewhere: yes, tank setup guide) [no review needed: weak but uncontroversial]
+- Health guide: "The albino strain, widely sold". "Widely sold" was S19; identical care rests on S1. (also elsewhere: yes, cost guide) [no review needed: weak but uncontroversial]
+- Health guide, water: "A glowlight takes micropellets or small flakes, and light portions keep uneaten food from fouling the water." Was S10; Seriously Fish gives dried flakes and granules. (also elsewhere: yes, feeding and enrichment guides) [no review needed: common sense]
+- Health guide, ich: "Heat and salt are weaker than a chemical treatment, because resistant strains can develop." VCA (S13) is still cited, but this line rests on a fetch-tool paraphrase of the VCA page, not on wording confirmed there. (also elsewhere: no) [review]
 
 ## Kept without a source (owner review): hobby-site Sources removal, 2026-11-01
 
 Owner rule (docs/RULES.md, "No hobby sites"): retailer care pages and blogs, hobby blogs, hobby magazines, Practical Fishkeeping pages without a named author, its news items and course pages left the Sources blocks. The claims below lost their only cited source in that guide's block and stay in the body as written; the owner decides.
 
-- Cost guide: lifespan about 2 to 4 years (FAQ and Lifespan). Was Aquarium Source (S10). (also elsewhere: yes)
-- Cost guide: six as the least that works, and the 10 gallon sometimes sold for the species (FAQ and body). Was S10. (also elsewhere: yes)
-- Enrichment guide: six as the floor (FAQ and body). Was S10. (also elsewhere: yes)
-- Enrichment guide: larger shoals settle into the lower reaches of the tank. Was Fishkeeper (S19). (also elsewhere: yes)
-- Enrichment guide: fine-leaved plants at several heights, open water in the center, fine sand on the bottom (FAQ, body, checklist). Was S10. (also elsewhere: yes)
-- Enrichment guide: all glowlights in the trade are mass bred and wild ones are seldom seen. Was S19. (also elsewhere: yes)
-- Enrichment guide: captive-bred glowlights are hardy and adaptable and thrive in ordinary tap water. Was S19. (also elsewhere: yes)
-- Enrichment guide: best color with a tannin tint (acidic, soft and dim stay on Seriously Fish). Was S19. (also elsewhere: yes)
-- Enrichment guide: peaceful, sometimes slightly shy. Was S19. (also elsewhere: yes)
-- Enrichment guide FAQ and body: a small bag of aquarium-safe peat in the filter as the older way to stain the water. Was S10. (also elsewhere: no)
-- Enrichment guide: micropellets or small flakes as the staple. Was S10. (also elsewhere: yes)
-- Feeding guide: micropellets or small flake as the staple (FAQ, table, body). Was S10. (also elsewhere: yes)
-- Feeding guide: freshly hatched baby brine shrimp as an occasional treat, and freeze-dried tubifex sold as an occasional treat. Was S10. (also elsewhere: no)
-- Feeding guide: glowlights in small or lonely groups spend most of their time hiding, away from the food. Was S10. (also elsewhere: no)
-- Feeding guide FAQ: overfeeding, not refusal, is the risk with this species. Was S10. (also elsewhere: no)
-- Handling guide: six as the floor, and the 10 gallons sometimes sold for the species. Was S10. (also elsewhere: yes)
-- Handling guide, tankmates: guppies and mollies; danios, rasboras and cherry barbs; corydoras, kuhli loaches and clown loaches. Was S10. (also elsewhere: yes)
-- Handling guide: larger shoals sitting low in the tank. Was S19. (also elsewhere: yes)
-- Handling guide, acclimation: lights off for the whole process; 30 to 60 minutes of mixing; check bag, net and floor for strays; an hour or two in the dark to settle; the first meal a day or two later; drip acclimation meant for sensitive animals such as Caridina; the long-shipment exception; quarantine most of all for fish bought online. Was Practical Fishkeeping acclimatising (S15, no named author). (also elsewhere: yes)
-- Tank setup guide FAQ and body: a 10-gallon holds six at most. Was S10. (also elsewhere: yes)
-- Tank setup guide: a thin layer of fine sand is all the bed needs (river sand and driftwood stay on Seriously Fish). Was S10. (also elsewhere: no)
-- Tank setup guide: a wide variety of plants, fine-leaved species at several heights, open water in the middle (FAQ and body). Was S10. (also elsewhere: yes)
-- Tank setup guide: every glowlight sold is farm-bred and settles in a wide range of conditions, plain tap water included (FAQ and body). Was S19. (also elsewhere: yes)
-- Tank setup guide: a tea-colored tint brings out the stripe (FAQ and body). Was S19. (also elsewhere: yes)
-- Tank setup guide: peaceful and sometimes a little shy. Was S19. (also elsewhere: yes)
-- Tank setup guide, tankmates: livebearers, danios, rasboras, Corydoras, kuhli loaches, cherry barbs. Was S10. (also elsewhere: yes)
-- Tank setup guide: glowlights leave slow, long-finned fish alone, aggression is rarely a problem, and angelfish are "notorious" for eating them (the angelfish warning itself stays on Seriously Fish). Was S10. (also elsewhere: yes)
+- Cost guide: lifespan about 2 to 4 years (FAQ and Lifespan). Was Aquarium Source (S10). (also elsewhere: yes) [no review needed: owner-approved]
+- Cost guide: six as the least that works, and the 10 gallon sometimes sold for the species (FAQ and body). Was S10. (also elsewhere: yes) [no review needed: duplicate]
+- Enrichment guide: six as the floor (FAQ and body). Was S10. (also elsewhere: yes) [no review needed: duplicate]
+- Enrichment guide: larger shoals settle into the lower reaches of the tank. Was Fishkeeper (S19). (also elsewhere: yes) [no review needed: weak but uncontroversial]
+- Enrichment guide: fine-leaved plants at several heights, open water in the center, fine sand on the bottom (FAQ, body, checklist). Was S10. (also elsewhere: yes) [no review needed: weak but uncontroversial]
+- Enrichment guide: all glowlights in the trade are mass bred and wild ones are seldom seen. Was S19. (also elsewhere: yes) [no review needed: weak but uncontroversial]
+- Enrichment guide: captive-bred glowlights are hardy and adaptable and thrive in ordinary tap water. Was S19. (also elsewhere: yes) [no review needed: weak but uncontroversial]
+- Enrichment guide: best color with a tannin tint (acidic, soft and dim stay on Seriously Fish). Was S19. (also elsewhere: yes) [no review needed: duplicate]
+- Enrichment guide: peaceful, sometimes slightly shy. Was S19. (also elsewhere: yes) [no review needed: weak but uncontroversial]
+- Enrichment guide FAQ and body: a small bag of aquarium-safe peat in the filter as the older way to stain the water. Was S10. (also elsewhere: no) [no review needed: stale]
+- Enrichment guide: micropellets or small flakes as the staple. Was S10. (also elsewhere: yes) [no review needed: weak but uncontroversial]
+- Feeding guide: micropellets or small flake as the staple (FAQ, table, body). Was S10. (also elsewhere: yes) [no review needed: duplicate]
+- Feeding guide: freshly hatched baby brine shrimp as an occasional treat, and freeze-dried tubifex sold as an occasional treat. Was S10. (also elsewhere: no) [no review needed: weak but uncontroversial]
+- Feeding guide: glowlights in small or lonely groups spend most of their time hiding, away from the food. Was S10. (also elsewhere: no) [no review needed: weak but uncontroversial]
+- Feeding guide FAQ: overfeeding, not refusal, is the risk with this species. Was S10. (also elsewhere: no) [no review needed: common sense]
+- Handling guide: six as the floor, and the 10 gallons sometimes sold for the species. Was S10. (also elsewhere: yes) [no review needed: duplicate]
+- Handling guide, tankmates: guppies and mollies; danios, rasboras and cherry barbs; corydoras, kuhli loaches and clown loaches. Was S10. (also elsewhere: yes) [no review needed: weak but uncontroversial]
+- Handling guide: larger shoals sitting low in the tank. Was S19. (also elsewhere: yes) [no review needed: duplicate]
+- Handling guide, acclimation: lights off for the whole process; 30 to 60 minutes of mixing; check bag, net and floor for strays; an hour or two in the dark to settle; the first meal a day or two later; drip acclimation meant for sensitive animals such as Caridina; the long-shipment exception; quarantine most of all for fish bought online. Was Practical Fishkeeping acclimatising (S15, no named author). (also elsewhere: yes) [no review needed: common sense]
+- Tank setup guide FAQ and body: a 10-gallon holds six at most. Was S10. (also elsewhere: yes) [review]
+- Tank setup guide: a thin layer of fine sand is all the bed needs (river sand and driftwood stay on Seriously Fish). Was S10. (also elsewhere: no) [no review needed: weak but uncontroversial]
+- Tank setup guide: a wide variety of plants, fine-leaved species at several heights, open water in the middle (FAQ and body). Was S10. (also elsewhere: yes) [no review needed: duplicate]
+- Tank setup guide: every glowlight sold is farm-bred and settles in a wide range of conditions, plain tap water included (FAQ and body). Was S19. (also elsewhere: yes) [no review needed: duplicate]
+- Tank setup guide: a tea-colored tint brings out the stripe (FAQ and body). Was S19. (also elsewhere: yes) [no review needed: duplicate]
+- Tank setup guide: peaceful and sometimes a little shy. Was S19. (also elsewhere: yes) [no review needed: duplicate]
+- Tank setup guide, tankmates: livebearers, danios, rasboras, Corydoras, kuhli loaches, cherry barbs. Was S10. (also elsewhere: yes) [no review needed: duplicate]
+- Tank setup guide: glowlights leave slow, long-finned fish alone, aggression is rarely a problem, and angelfish are "notorious" for eating them (the angelfish warning itself stays on Seriously Fish). Was S10. (also elsewhere: yes) [no review needed: weak but uncontroversial]
