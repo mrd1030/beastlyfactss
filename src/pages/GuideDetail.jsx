@@ -533,9 +533,10 @@ export default function GuideDetail() {
                 return { sp: set.find((sp) => sp.ranges[key][0] === lo), where: 'bottom' };
               };
               const MIN_BAND_F = 3;
+              const phWidth = (set) => Math.min(...set.map((sp) => sp.ranges.ph[1])) - Math.max(...set.map((sp) => sp.ranges.ph[0]));
               const tempWidth = (set) => Math.min(...set.map((sp) => sp.ranges.tempF[1])) - Math.max(...set.map((sp) => sp.ranges.tempF[0]));
               const verdict = (set) => {
-                if (!band(set, 'tempF') || !band(set, 'ph') || tempWidth(set) <= 0) return 'No';
+                if (!band(set, 'tempF') || !band(set, 'ph') || tempWidth(set) <= 0 || phWidth(set) <= 0) return 'No';
                 return tempWidth(set) < MIN_BAND_F ? 'Limits' : 'Yes';
               };
               const fit = (set) => {
@@ -543,6 +544,7 @@ export default function GuideDetail() {
                 const p = band(set, 'ph');
                 if (!t || !p) return `No: no shared ${!t ? 'temperature' : 'pH'}.`;
                 if (tempWidth(set) <= 0) return 'No: the temperature ranges only meet at a single degree.';
+                if (phWidth(set) <= 0) return 'No: the pH ranges only meet at a single value.';
                 const lead = verdict(set) === 'Limits' ? 'Yes, but with limits' : 'Yes';
                 const they = set.length === 2 ? 'both' : 'they all';
                 const tempText = t.all ? `any temperature ${they} list`
@@ -572,7 +574,7 @@ export default function GuideDetail() {
                   <table className="w-full table-fixed border-separate border-spacing-1 text-xs font-body">
                     <thead>
                       <tr>
-                        <th scope="col" className="w-[4.75rem] sm:w-28"><span className="sr-only">Species</span></th>
+                        <th scope="col" className="w-[5.25rem] sm:w-28"><span className="sr-only">Species</span></th>
                         {live.map((sp, i) => (
                           <th key={sp.id} scope="col" className="font-semibold text-foreground text-center align-bottom leading-tight pb-1">
                             <span className="sm:hidden">{i + 1}{dagger(sp)}</span>
@@ -591,7 +593,7 @@ export default function GuideDetail() {
                             if (r === c) return <td key={col.id} className="bg-muted/50 rounded-md" aria-label="Same species" />;
                             const pair = [row, col];
                             const v = verdict(pair);
-                            const sentence = `${display(row)} and ${display(col).toLowerCase()}: ${fit(pair)}`;
+                            const sentence = `${display(row)} and ${display(col).toLowerCase()}. ${fit(pair)}`;
                             return (
                               <td key={col.id} className={`text-center font-semibold rounded-md py-1.5 px-0 text-[10.5px] sm:text-xs ${markClass[v]}`} title={sentence} aria-label={sentence}>
                                 {v}
@@ -606,7 +608,7 @@ export default function GuideDetail() {
                     <span className="font-semibold text-foreground">Yes:</span> temperature and pH ranges overlap.{' '}
                     <span className="font-semibold text-foreground">Limits:</span> they overlap, but the shared temperature band is under {MIN_BAND_F}°F, so a heater drifting a degree can take one species out of range.{' '}
                     {live.some((a, i) => live.some((b, j) => j > i && verdict([a, b]) === 'No')) && (
-                      <><span className="font-semibold text-foreground">No:</span> the ranges miss, or meet at a single degree.</>
+                      <><span className="font-semibold text-foreground">No:</span> the ranges miss, or only meet at a single point.</>
                     )}
                   </p>
                   {cautioned.map((sp) => (
