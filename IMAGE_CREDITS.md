@@ -84,3 +84,4 @@ frog, pen-tailed tree shrew) and Adobe Firefly for ids 287 to 296.
 | `black-skirt-tetra-cost.jpg` (guide hero, `public/assets/images/`), resized to 1168x784, not cropped | Adobe Firefly, partner model Gemini 3.1 (Nano Banana 2) | 2026-11-01 |
 | `black-skirt-tetra-feeding.jpg` (guide hero, `public/assets/images/`), resized to 1168x784, not cropped | Adobe Firefly, partner model Gemini 3.1 (Nano Banana 2) | 2026-11-01 |
 | `black-skirt-tetra-tank-setup.jpg` (guide hero, `public/assets/images/`), resized to 1168x784, not cropped | Adobe Firefly, partner model Gemini 3.1 (Nano Banana 2) | 2026-11-01 |
+| `black-skirt-tetra-handling.jpg` (guide hero, `public/assets/images/`), resized to 1168x784, not cropped | Adobe Firefly, partner model Gemini 3.1 (Nano Banana 2) | 2026-11-01 |
