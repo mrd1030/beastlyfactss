@@ -8,6 +8,15 @@ Newest first.
 
 ---
 
+## 2026-11-01: glowlight tank setup hero
+
+`/assets/images/glowlight-tetra-tank-setup.jpg`, Adobe Firefly with Nano
+Banana 2, owner approved on the third try (the first drew orange-bodied,
+identical fish; the second showed the tank's side panels, which made it read
+narrow): framed inside the front glass, sand edge to edge, open middle,
+clear-bodied fish. 3:2, resized to 1168x784 through mozjpeg at quality 80.
+Recorded in IMAGE_CREDITS.md.
+
 ## 2026-11-01: glowlight cost hero
 
 `/assets/images/glowlight-tetra-cost.jpg`, Adobe Firefly with Nano Banana 2,
