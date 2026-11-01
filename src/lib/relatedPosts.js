@@ -1,6 +1,6 @@
 // The slim article index for pages that only LINK to articles: GuideDetail and
-// EncyclopediaAnimal render a related-article list from slug, title, emoji and
-// category, nothing else. They used to import mdxPosts for that, which drags
+// EncyclopediaAnimal render a related-article list from slug, title, emoji,
+// category and image (the Deep Dive thumbnail), nothing else. They used to import mdxPosts for that, which drags
 // the whole of mdx-meta.json (every article's excerpt, tags, FAQs and product
 // lists, ~450 KB on the wire) into every guide and encyclopedia page. This
 // index is the same rows with only those four fields, written by
@@ -14,4 +14,5 @@ export const relatedPosts = related.map(m => ({
   title: m.title,
   emoji: m.emoji,
   category: m.category,
+  image: m.image,
 }));
