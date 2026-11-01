@@ -8,6 +8,16 @@ Newest first.
 
 ---
 
+## 2026-10-31: ember tetra set
+
+Seven Adobe Firefly images from the prompts in IMAGE_PROMPTS.md, approved by
+the owner one by one (the health hero was regenerated once: the first had gold
+fish and a heater with a printed scale). Hub and encyclopedia head
+`/assets/guides/ember-tetra.jpg`, and guide heroes
+`/assets/images/ember-tetra-{cost,tank-setup,feeding,handling,health-issues,enrichment}.jpg`.
+All 3:2 at 1168x784 through mozjpeg at quality 80; the hub and feeding frames
+arrived 4:3 and were cropped. Recorded in IMAGE_CREDITS.md.
+
 ## 2026-10-20: three Canva title cards replaced with photos
 
 Facts 134 (anglerfish), 142 (star-nosed mole) and 176 (vampire bat) showed
