@@ -670,3 +670,9 @@ Per guide, enough to support 3 to 5 URLs each:
 - Cost: S1, S19, S29, S30, S47.
 - Handling: S19, S15, S29, S50, S20.
 - Enrichment: S1, S19, S20, S21, S55.
+
+### Kept without a source (owner review)
+
+Added 2026-11-01 in the contradiction and duplicate pass. Kept as written; the owner decides.
+- Feeding guide, Foods to Avoid: "Tubificid worms are the host of the parasite behind whirling disease, and keeping fish away from them is how that disease is prevented." This file records no whirling disease quote. The clause is kept because Merck's "Parasitic Diseases of Fish" (S44 here, cited in the feeding guide) says whirling disease is prevented by keeping fish free of "the definitive hosts (tubeficid worms)", as quoted from the same page in the rummy-nose file (its S59). Whirling disease is a salmonid disease, so its place in a glowlight guide is the owner's call; the tetra-relevant risk is S57 (6 of 7 shop tubifex samples infected), which the feeding guide does not cite. (also elsewhere: yes, rummy-nose feeding guide)
+- Feeding guide, adult portions: "Watching also shows whether every fish is getting a share." Restored after the rewrite dropped it. Common-sense husbandry; no source opened says it. (also elsewhere: no)

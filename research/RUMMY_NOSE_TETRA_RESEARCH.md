@@ -868,3 +868,11 @@ Not dropped; no opened source supports these.
 ### Source count
 
 New sources opened today: 16 (S44 to S59; S58 and S59 were in other tetra files and are new to this one). Re-opened: S2, S14 to S16, S20 to S23, S27, S30, S31, S37. Carried over without re-opening, for general points: 25 (S60 to S84). Observation URLs (not sources): 2 opened today.
+
+### Kept without a source (owner review)
+
+Added 2026-11-01 in the contradiction and duplicate pass. Kept as written; the owner decides.
+- Feeding guide, adult portions: "Watching also shows whether the rummy-noses are eating at all." Restored after the rewrite dropped it. Common-sense husbandry; no source opened says it. (also elsewhere: no)
+- Enrichment guide, Light: 14 hours of light to 10 of dark offered as a tank timer setting. S9 gives 14:10 only as the photoperiod its lab schools were kept on; lighting hours are on the owner-allowed unsourced list. (also elsewhere: no)
+- Enrichment guide FunFact: "a trade of about 14 million fish a year" is arithmetic on S44 (142,552,253 fish over 2006 to 2015), not a figure the paper prints. The earlier S3 figures (second, about 6%, 20 to 30 million a year) left the FunFact so it matches the cost guide; Conflicts 4 still stands as a source-vs-source split. (also elsewhere: no)
+- Feeding guide, Foods to Avoid: the whirling disease clause on live tubifex rests on S59 (Merck, general); whirling disease is a salmonid disease, so its relevance to a tetra is the owner's call. The tetra-relevant tubifex risk is S83 (6 of 7 shop samples carried infected worms), which the guide does not cite. (also elsewhere: yes, glowlight feeding guide)
