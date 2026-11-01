@@ -153,12 +153,13 @@ export default function Facts() {
   // the modal returns to the same filtered view.
   const handleOpenFact = (fact) => {
     navigate(`/facts/${slugify(fact.title)}/`, {
-      state: { from: `${location.pathname}${location.search}` },
+      state: { from: `${location.pathname}${location.search}`, keepScroll: true },
     });
   };
 
+  // keepScroll on both: the list stays where the reader left it (ScrollToTop).
   const handleCloseFact = () => {
-    navigate(location.state?.from || '/facts/');
+    navigate(location.state?.from || '/facts/', { state: { keepScroll: true } });
   };
 
   const filtered = useMemo(() => {
