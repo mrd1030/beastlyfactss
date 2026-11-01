@@ -12,7 +12,8 @@ Newest first.
 
 `/assets/images/rummy-nose-tetra-cost.jpg` completes the rummy-nose set, and
 `/assets/images/ember-tetra-cost.jpg` replaces the 2026-10-31 frame, which
-showed no filter or heater on a guide about setup costs. Both show the working
+showed no filter or heater on a guide about setup costs. The ember frame was swapped the same day for a
+second Nano Banana 2 frame from a shorter prompt, preferred by the owner. Both show the working
 equipment with no lettering, on a stand against the wall with the cords out of
 sight. Adobe Firefly with Nano Banana 2 (Flare drew headless, two-tailed fish on
 these prompts), owner approved. 3:2, resized to 1168x784 through mozjpeg at
