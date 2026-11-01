@@ -8,6 +8,17 @@ Newest first.
 
 ---
 
+## 2026-11-01: black skirt hub head, enrichment and health issues heroes
+
+`/assets/guides/black-skirt-tetra.jpg` (hub and encyclopedia entry) and
+`/assets/images/black-skirt-tetra-{enrichment,health-issues}.jpg`, Adobe
+Firefly with Nano Banana 2, owner approved. The hub frame came from a prompt
+that names the species' marks (two bold bars, black rear half, skirt-like anal
+fin, clear tail) after a first frame drew three thin bars. The health frame
+shows two fish with full fins and dark tails, closer to the long-fin form,
+which suits a page about fin damage. 3:2, resized to 1168x784 through mozjpeg
+at quality 80. Recorded in IMAGE_CREDITS.md.
+
 ## 2026-11-01: rummy-nose cost hero, ember cost hero replaced
 
 `/assets/images/rummy-nose-tetra-cost.jpg` completes the rummy-nose set, and
