@@ -266,3 +266,325 @@ cardinal-tetra-cost-guide.mdx
 - "During the dry season, the shallow pools these fish live in shrink and strand huge numbers of them, and most don't survive to see a second year." Restored, QUESTIONABLE: Chao (2001) says wild cardinals "probably die after spawning" and Walker puts spawning in the early rising-water phase (February to April); no opened source mentions dry-season stranding as the cause. It is not directly contradicted, but it sits beside, and competes with, the Chao explanation in the same paragraph. Owner to confirm or drop. [Review applied 2026-11-01: conflict fixed: dry-season stranding sentence replaced by "so most don't survive to see a second year" following Chao] (also elsewhere: no)
 
 Cut clauses in corrected cardinal lines NOT restored: "nitrite is the compound this species tolerates worst" and "shrug off more ammonia than most expect" (Oliveira's LC50s make the ranking depend on which ammonia figure is used; the corrected wording avoids ranking); "some individuals reach ten" (ADW only); heat-hold for two weeks at 86°F and the 33.7°C mortality note (unsupported as written, tested only for 96 hours on juveniles); "darker substrate makes the stripe stand out" and "dim to moderate" lighting (cardinal guide, unsourced, awaiting the owner's call).
+
+
+---
+
+## Expansion research (2026-11-01)
+
+Research only, for a later rewrite of the six cardinal guides up to the tiger salamander standard. Nothing here is article copy, and nothing above this heading was changed. Every claim below comes from a page or PDF opened in this session, except where a line says "search result only". Quotes are short extracts. Ranges that a source wrote with an en dash are written here with "to". New source ids run C17 onward; C2, C3, C8, C10, C11 and C13 are the ids already listed above, re-read today where noted.
+
+### New sources and tier
+
+| # | Source | Tier | URL |
+|---|--------|------|-----|
+| C17 | Clarke M. "Frequently asked questions on aquarium substrates." Practical Fishkeeping (no date on page) | Fishkeeping magazine | https://www.practicalfishkeeping.co.uk/features/frequently-asked-questions-on-aquarium-substrates/ |
+| C18 | Gay J. "Which substrate should I use?" Practical Fishkeeping (no date on page) | Fishkeeping magazine | https://www.practicalfishkeeping.co.uk/fishkeeping-answers/which-substrate-should-i-use/ |
+| C19 | University of Kansas Biodiversity Institute. "Fizzy Fossils" (classroom activity sheet) | University outreach | https://biodiversity.ku.edu/sites/biodiversity/files/files/FizzyFossils.pdf (PDF read) |
+| C20 | Papoutsoglou SE (2001). "Color of indoor tanks can affect stress and performance." Global Aquaculture Advocate, Feb 2001 (Agricultural University of Athens) | Aquaculture trade feature by a professor; summarizes studies on food fish, not tetras | https://www.globalseafood.org/advocate/color-of-indoor-tanks-can-affect-stress-and-performance/ |
+| C21 | Aquasabi: ADA Aqua Soil Amazonia Ver.2 product page | Retailer, WEAK (manufacturer-style claims) | https://www.aquasabi.de/ADA-Aqua-Soil-Amazonia-Ver2_1 |
+| C22 | Aquasabi: Tropica Aquarium Soil product page | Retailer, WEAK | https://www.aquasabi.de/Tropica-Aquarium-Soil_1 |
+| C23 | Duarte RM, Smith DS, Val AL, Wood CM (2016). "Dissolved organic carbon from the upper Rio Negro protects zebrafish (Danio rerio) against ionoregulatory disturbances caused by low pH exposure." Scientific Reports 6:20377 | Peer-reviewed | https://pmc.ncbi.nlm.nih.gov/articles/PMC4745052 |
+| C24 | Wood CM, Robertson LM, Johannsson OE, Val AL (2014). "Mechanisms of Na+ uptake, ammonia excretion, and their potential linkage in native Rio Negro tetras." J Comp Physiol B 184(7):877-890. DOI 10.1007/s00360-014-0847-7 | Peer-reviewed, SEARCH RESULT ONLY (abstract text seen in search, not opened) | https://dx.doi.org/10.1007/s00360-014-0847-7 |
+| C25 | Gomes LC, Brinn RP, Marcon JL, et al. (2009). "Benefits of using the probiotic Efinol L during transportation of cardinal tetra, Paracheirodon axelrodi (Schultz), in the Amazon." Aquaculture Research 40:157-165. DOI 10.1111/j.1365-2109.2008.02077.x | Peer-reviewed (PDF read) | https://projectpiaba.org/wp-content/uploads/2024/08/Probiotics_CardinalTetra_Transport.pdf |
+| C26 | Waichman AV, Pinheiro M, Marcon JL. "Water quality monitoring during the transport of Amazonian ornamental fish." Universidade do Amazonas (Project Piaba volume; the PDF prints no year; Gomes et al. cite a Waichman, Silva and Marcon 2001) | Project report with data, peer-reviewed volume (PDF read) | https://projectpiaba.org/wp-content/uploads/2024/08/Waichman-Pinheiro-and-Marcon-water-quality-monitoring-during-the-traansport-of-amazonian-ornamental-fish.pdf |
+| C27 | Anjos HDB, Anjos CR (2006). "Reproductive biology and embryonic and larval development of the cardinal tetra, Paracheirodon axelrodi Schultz, 1956, in laboratory." Boletim do Instituto de Pesca 32(2):151-160 | Peer-reviewed (English abstract read; the full-text link returned an empty file) | https://institutodepesca.org/index.php/bip/article/view/725 |
+| C28 | Thongsupa W (2026). "An overview of the biology, reproductive techniques, and larval management of Cardinal Tetra (Paracheirodon axelrodi)." Science, Research, Technology and Agriculture Journal 7(1):49-61 (Thai) | Regional review (abstract read, in Thai, translated by the fetch tool) | https://ph02.tci-thaijo.org/index.php/ScienceRERU/article/view/261743 |
+| C29 | Merck Veterinary Manual: "Nutritional Diseases of Fish" (same page as N9 in the neon file, re-read today) | Veterinary reference | https://www.merckvetmanual.com/exotic-and-laboratory-animals/aquarium-fish/nutritional-diseases-of-fish |
+| C30 | Francis-Floyd R, Stilwell NK, Yanong RPE. "Introduction to Fish Health Management." UF/IFAS Extension CIR921 (EDIS FA004) | University extension (PDF read) | https://ask.ifas.ufl.edu/publication/FA004/pdf |
+| C31 | Klinger R, Francis-Floyd R. "Submission of Fish for Diagnostic Evaluation." UF/IFAS FA55 (2001, rev. 2010, reviewed 2013) | University extension (copy hosted by Texas A&M extension, PDF read) | https://extension.rwfm.tamu.edu/wp-content/uploads/sites/8/2013/09/Submission-of-Fish-for-Diagnostic-Evaluation.pdf |
+| C32 | Yanong RPE. "Use of Copper in Marine Aquaculture and Aquarium Systems." UF/IFAS FA165 | University extension (PDF read) | https://edis.ifas.ufl.edu/publication/FA165/pdf |
+| C33 | Watson C, Yanong RPE. "Use of Copper in Freshwater Aquaculture and Farm Ponds." UF/IFAS FA-13 (EDIS FA008) | University extension (PDF read) | https://edis.ifas.ufl.edu/publication/FA008/pdf |
+| C34 | Francis-Floyd R, Watson C, Petty D, Pouder DB. "Ammonia in Aquatic Systems." UF/IFAS FA16, DOI 10.32473/edis-fa031-2022 | University extension (PDF read) | https://edis.ifas.ufl.edu/publication/FA031/pdf |
+| C35 | Merck Veterinary Manual: "Parasitic Diseases of Fish" (N8 in the neon file; re-read today for internal parasites) | Veterinary reference | https://www.merckvetmanual.com/exotic-and-laboratory-animals/aquarium-fish/parasitic-diseases-of-fish |
+| C36 | American Association of Fish Veterinarians (AAFV): home page and "Find a Fish Vet" tool | Professional veterinary association | https://fishvets.org/ and https://fishvets.org/find-a-fish-vet/ |
+| C37 | World Aquatic Veterinary Medical Association (WAVMA): member welcome page naming its "Find a Fish Vet Directory" | Professional veterinary association | https://www.wavma.org/welcome |
+| C38 | CDC Healthy Pets: Fish | US government health agency | https://www.cdc.gov/healthy-pets/about/fish.html |
+| C39 | Krooks J, Weatherall A, Markowitz S (2018). "Complete Resolution of Mycobacterium marinum Infection with Clarithromycin and Ethambutol: A Case Report and a Review of the Literature." J Clin Aesthet Dermatol 11(12):48-51 | Peer-reviewed case report and review | https://pmc.ncbi.nlm.nih.gov/articles/PMC6334835 |
+| C40 | Francis-Floyd R (2011). "Mycobacterial Infections of Fish." SRAC Publication 4706 (UF College of Veterinary Medicine) | University extension (PDF read) | https://www.srac.msstate.edu/pdfs/Fact%20Sheets/4706%20Myobacterial%20Infections%20of%20Fish.pdf |
+| C41 | Sanders J, DVM, DABVP (Fish Practice). "New Tank Syndrome." PetMD, 1 May 2026 | Veterinarian-written pet health site | https://www.petmd.com/fish/conditions/systemic/new-tank-syndrome-fish |
+| C42 | Dr. Tim's Aquatics: "Fishless Cycling" library page | Manufacturer of nitrifying bacteria products, WEAK to moderate (commercial interest) | https://www.drtimsaquatics.com/resources/library/fishless-cycling/ |
+| C43 | Boyd CE (2007). "Nitrification: an important process in aquaculture." Global Aquaculture Advocate, 1 May 2007 (Auburn University) | Aquaculture trade feature by a professor | https://www.globalseafood.org/advocate/nitrification-an-important-process-in-aquaculture/ |
+| C44 | Practical Fishkeeping: "A guide to acclimatising your new fish or shrimp" (credited "Alex", no date). Same as N15 | Fishkeeping magazine | https://www.practicalfishkeeping.co.uk/features/how-to-acclimatise-your-new-fish-or-shrimp/ |
+| C45 | Hill N. "What you need to know about bagging fish." Practical Fishkeeping (no date). Same as N16 | Fishkeeping magazine | https://www.practicalfishkeeping.co.uk/features/articles/what-you-need-to-know-about-bagging-fish |
+| C46 | Aquarium Science: "17.2.1. Blackwater Biotope" (anonymous author, "Something Smells Fishy") | Hobby site, WEAK (contrarian, unsigned, few citations) | https://aquariumscience.org/index.php/17-2-1-blackwater-biotope/ |
+| C47 | Shrimp Science: "The Simple Guide to Tannins & Blackwater Shrimp Tanks" (no author, 2023 footer) | Hobby site, WEAK | https://www.shrimpscience.com/articles/blackwater-shrimp-tanks/ |
+| C48 | BRS Fresh: "Tannins: The Pros & Cons of Blackwater for Beginners" (no author, updated 24 Oct 2025) | Retailer blog, WEAK | https://fresh.bulkreefsupply.com/content/post/tannins-the-pros-and-cons-of-blackwater-for-beginners |
+| C49 | US Energy Information Administration, Electric Power Monthly Table 5.6.A (average retail price, residential) | US government statistics | https://www.eia.gov/electricity/monthly/epm_table_grapher.php?t=epmt_5_6_a |
+| C50 | Aquarium Co-Op blog: "Neon Tetras and Cardinal Tetras" | Retailer blog, WEAK | https://www.aquariumcoop.com/blogs/aquarium/neon-tetras-and-cardinal-tetras |
+
+Re-read today (ids from the table above): C2 Walker 2004 (full PDF re-read), C3 Oliveira et al. 2008 (methods re-read), C8 Merck Mycotic, C11 Seriously Fish (re-read for substrate, litter, fry food).
+
+---
+
+### E1. Substrate (owner's top priority)
+
+What the guide has now: one sentence, "Fine gravel or sand suits them, the same as for the closely related neon tetra." The cost sheet (src/lib/data/costSheets/fish.js) lists "Dark fine [sand] or gravel".
+
+**E1.1 Sand vs gravel, grain size, and whether cardinals use the bottom**
+- Seriously Fish describes a natural-style tank "comprising a sandy substrate plus some driftwood roots and branches." Gravel is not mentioned. In the Orinoco the species is found in habitats "which tend to contain transparent, clear water and sandy substrates." (C11, re-read)
+- FishBase: "Occurs mainly in shoals in the middle water layers." (C10, already in this file) So the fish is not a bottom sifter.
+- But it does feed off the bottom layer of litter. Walker: the cardinal is "essentially a predator, feeding on the mesofauna that adheres to submerged litter, roots and waterplants"; habitats include "the litter-covered bottoms of streams and rivers, and the forest floor during the months of inundation (March/April to July/Aug)"; small detritus particles enter the stomach "when the fish are browsing for small prey over the surface of plants, litter and woods"; the copepods eaten "were mostly the benthonic Harpacticidae." (C2, PDF re-read) Fair summary: a mid-water fish that picks prey off leaves, wood and plants, not one that digs in sand.
+- Grain size and dirt: "The gaps, or interstices, between gravel grains increase as the grains get bigger, so more dirt may get trapped in the substrate if you use a larger grain size. In contrast, very fine substrates, such as sand, don't allow much dirt to be trapped, so detritus tends to sit on top, where it can be sucked into the filter or syphoned off." (C17)
+- No source opened gives a cardinal-specific grain size in millimeters. See Unsourced.
+
+**E1.2 Color: dark vs light**
+- Seriously Fish (Notes section): the fish's colors become "lighter in bright conditions with pale substrate or background and clear water." (C11, re-read) This is the only cardinal-specific line found tying substrate color to fish color. It partly supports the cut line "darker substrate makes the stripe stand out" (see the Kept list above) and the restored enrichment line about tea-colored vs clear water.
+- Linhares et al. 2018 (C4, already in this file) covers light intensity, not substrate color.
+- Counterpoint on stress: Papoutsoglou (food-fish aquaculture): all teleost species studied so far "have shown skin darkening on a black background," which "in most cases and under certain conditions" was associated with increased cortisol; white backgrounds went with skin lightening and lower cortisol; "black tank color increases stress sensitivity, at least in those fish species studied so far"; reactions "vary with the species and life stage." (C20) The species were eel, brown trout, winter flounder, rainbow trout, tilapia and Zacco, with carp in the author's own work. So the common hobby claim that a dark bottom "reduces stress" has no support in what was opened, and the food-fish literature points the other way. Safe framing: a dark bottom makes cardinals look darker and more saturated (Seriously Fish); no source shows it lowers stress in tetras.
+
+**E1.3 Depth: bare layer vs rooted plants**
+- PFK FAQ: "For sand, most people go for a depth of around 2.5cm/1", but with gravel the norm is to go for a deeper layer of say 5cm/2" or more." And: "In freshwater tanks, generally only a thin layer of sand is used, since it is so fine that it tends to stagnate if used in a deep layer. About 2.5cm/1" should be plenty in most cases." (C17)
+- For plants in an inert bed: "Use a 7.5cm layer of any inert aquarium gravel or grit, plant it and then use a complete liquid fertiliser instead." (C18) That is about 3 inches.
+- The shade plants Seriously Fish names for this fish (Microsorum, Taxiphyllum, Cryptocoryne, floating Ceratopteris; C11 paraphrase) are mostly epiphytes or floaters except Cryptocoryne, so only the crypts need the deeper rooted layer. That last inference is mine: see Unsourced.
+
+**E1.4 Planted options: aquasoil, capped soil, inert plus root tabs**
+- Aquasoil (retailer, WEAK): ADA Amazonia Ver.2 gives "Reduction of the pH-value to 5.5 - 6.5, the optimal range for plants" and "Helps to lower the hardness level of the water"; also "Contains less nitrogen compared to ADA Aqua Soil Amazonia" and "Less cloudy water during initial set-up period (without supplement)." (C21)
+- Tropica Aquarium Soil (retailer, WEAK): "slightly lowers the pH and has a weak influence on the chemistry of the water"; soils "also release larger amounts of ammonium in the beginning," which can raise nitrite and, at high pH, form ammonia; recommends "at least two water changes per week during the first three weeks." (C22)
+- Capped soil: "You will need gravel on top of it to stop it stirring up and making a mess" (pond soil as a bottom layer); substrate fertilizer should be "topped with gravel or grit." (C18) Peat-based planting substrates: "Sera, Tetra and the Dennerle formulations contain peat, so should bring pH down if required." (C18)
+- Inert plus fertilizer: "You can try not using any planting substrate at all," with gravel and a complete liquid fertilizer. (C18)
+- Root tabs: no source opened that I would cite (results were retailer blogs). See Unsourced.
+
+**E1.5 Effect on water chemistry**
+- Inert vs calcareous: "Inert substrates and rocks don't alter the water chemistry, while non-inert, calcareous substrates do. These contain calcium and other minerals that increase the hardness and pH." "Inert substrates are of particular importance to those keeping fishes that like soft water, such as Discus. Even standard pea gravel contains sufficient calcium to boost the pH and hardness, so don't use it unless you want hard water." (C17)
+- Coral sand: asked whether white coral sand is safe in a tropical tank, "Not unless you want to make your water rock hard and increase the pH of your water to over 8.0. Coral sand and gravel is calcareous, so you should only use it in situations where you want the pH and hardness to be kept high." (C17)
+- Fit with the cardinal range: Seriously Fish pH 3.5 to 7.5, 1 to 12 dGH "toward the lower end for wild fish or breeding"; breeding water pH 5.5 to 6.5, gH 1 to 5 (C11). Walker's wild sites pH 3.35 to 5.82 (C2). A calcareous substrate pushes the tank above pH 8 (C17), outside every cardinal range in this file. Aquasoil's stated 5.5 to 6.5 (C21) sits inside it.
+- Tannins in hard water: "Hard water with a high KH will buffer away most of the pH change." and "It's a common myth that adding botanicals like alder cones will soften your water." (C47, WEAK) So leaves and wood lower pH only where KH is already low.
+
+**E1.6 Leaf litter and botanicals (Rio Negro context)**
+- The wild food web starts on the leaves. Walker: "These foodwebs start essentially with litter decomposition by aquatic fungi ... which are ingested by a larger variety of small (mesofaunal) organisms associated with submerged litter, principally by chironomid larvae. Thus, single litter leaves, submerged between 2 days and 4 months, are occupied, on the average, by 7-36 chironomid larvae," besides oligochaetes, microcrustacea and rotifers (citing Walker's earlier work near Manaus; the paper says the middle Rio Negro still "needs confirmation by quantitative sampling"). (C2)
+- Seriously Fish: "The addition of dried leaf litter would further emphasise the natural feel," "with alder cones also useful in this respect," and the microbe colonies on decaying leaves "can provide a valuable secondary food source for fry." "There's no need to use natural peat, the collection of which is both unsustainable and environmentally-destructive." (C11)
+- Thongsupa (Thai review, abstract): rearing cardinal larvae with dried tropical almond leaves "can help optimize water quality" and raises larval survival (translated). (C28)
+- Caution side: see E7 (enrichment debate) for C40 and C46.
+
+**E1.7 Cleaning: sand vs gravel, planted beds**
+- Gravel: syphon cleaners "remove dirt-laden water from within the substrate when you're doing your partial water change each week"; the author vacuums "once each week." (C17)
+- Sand: "Once it's in the tank it's a doddle to keep clean. I tend to give it a gentle stir with my index finger while holding a syphon hose ... It's impossible to avoid removing some of the sand during maintenance ... so you'll need to top it up occasionally." (C17)
+- Planted beds: "If you use a gravel cleaner in a tank containing a costly planting substrate, such as laterite, you risk sucking it out." (C17) "Laterite substrates are impossible to wash." (C17)
+
+**E1.8 What to avoid**
+- Coated gravel: "Many coloured gravels, particularly the rough textured angular ones with a powdery colour coating, are made from white dolomite. This is a naturally occurring mineral rich in calcium and magnesium," sold uncoated for marine or Rift Lake tanks "to keep the pH, alkalinity or hardness high." (C17) Also very dusty to rinse. (C17)
+- Calcareous rock and gravel: C17 as above. Home test: limestone in vinegar shows "the fizzing and the bubbles being released"; "Testing different rocks to see if they fizz or not will show you if those rocks contains calcium carbonate." (C19)
+- Sharp gravel: no source opened. See Unsourced.
+
+---
+
+### E2. Tank setup: cycling before stocking
+
+The tank guide has no cycling section; the cost and handling guides link the cycling guide.
+
+- Why it matters: "New tank syndrome is the most common cause of death for fish in new fish tanks." Signs: lethargy, decreased appetite, increased slime coat or cloudiness, death. "It can take between four to six weeks for your filtration to becoming fully established or mature." Speed-up: "using established filter media from a healthy, cycled tank with similar species." Stock in steps: "Start with a small percentage of the total number of fish you plan to keep." Fix: partial water changes, not more than 50% at once. (C41)
+- Fishless cycling (manufacturer, WEAK to moderate): "establishing the nitrifying bacteria in a newly set-up aquarium without using fish"; dose ammonia-nitrogen to 2 to 3 mg/L, "Do not go above 5 mg/L"; natural establishment "30 to 45 days"; done when the tank turns a full dose to nitrate "with no trace of nitrite within 24 hours before adding fish"; keep nitrite-nitrogen below 5 mg/L. (C42)
+- Low pH slows the cycle, which matters for a soft acidic cardinal tank: Dr. Tim's says stalls are "Usually this is due to a low pH value (less than 7.0)" and "If the pH gets too low, however, the nitrification (cycling) process will stop." (C42) Boyd: "Nitrification can occur at low pH, but it proceeds best at a pH near 8," and nitrification "releases hydrogen ions," making it "a source of acidity." (C43) Practical consequence (inference, see Unsourced): cycle the filter before driving pH down with soil, wood or leaves, and expect a soft-water tank to cycle slower.
+- Why ammonia readings must be read with pH: un-ionized NH3 is "approximately 100 times more toxic to fish than the ionized (NH4+) form," and its share "increases with increasing pH and/or temperature." (C34) At pH 7.0 and 78.8°F the un-ionized fraction is 0.0060; at pH 8.0 it is 0.0574 (FA16 Table 1). (C34) An acidic tank masks some ammonia toxicity; a pH rise unmasks it. Test ammonia "immediately any time fish appearance or behavior changes (including reduced feeding)." (C34)
+- Why cardinals in particular need a mature tank: wild fish "are less tolerant of deteriorating water conditions than commercially-produced ones" (C11); the species' 96-hour nitrite LC50 is 1.1 mg/L (C3, already in this file); and imported fish arrive already worn down by transport (Waichman: "a progressive decline in general fish health and perhaps a lowered resistance to diseases"; "The high mortality rates reported by the importers were probably caused by the inability of fishes to recover after the transport-induced stress.") (C26).
+- Aquasoil adds an ammonium pulse of its own at setup (C22, WEAK), so a soil tank needs its cycle confirmed after the soil's early weeks, not just a filter that was seeded.
+
+---
+
+### E3. Feeding (biggest gap)
+
+**E3.1 Wild diet (Rio Negro), deeper than section 6.1**
+- Sample: 80 fish from 14 rivers and streams over about 450 km of the middle Rio Negro, July to October 1999, which Walker calls "the post-reproductive period." (C2)
+- Volume of prey: some stomachs were "stuffed full of small Cladocera," "twice more than 50, and once more than 200!"; "Frequently, several chironomid larvae were found in the same stomach," and "single large prey items, such as ephemeropteran nymphs, are probably picked up by choice." (C2)
+- Detritus: Walker says counting incidental detritus as "detritus feeding" "would be misleading as regards the feeding behavior of the cardinals." An earlier study (Goulding et al. 1988) found "only detritus" in 23 dissected cardinals; Walker puts the difference down to identification methods. (C2) A minor tension with the feeding guide's "with some algae and detritus" (see Conflicts).
+- Growth: Walker argues the small size of wild fish comes from "the annual migrations imposed by the inundation cycles, rather than to resource limitation," and that "Cardinals raised in captivity are larger and have higher rates of growth." (C2)
+- In the export chain, wild fish are fed people food and then commercial feed: at the fishing camps fish were held "24 hours to three weeks, and were fed pieces of cooked fish and eggs" (C26); in Gomes et al., wild-caught fish were held up to 10 days and "fed with a commercial feed for omnivorous fish (32% crude protein ...) twice a day" (C25). Linhares held store fish on a 38% protein commercial feed twice daily (C4). So wild cardinals in the trade are already eating prepared food before they reach a shop.
+
+**E3.2 Life-stage table (sources per row)**
+
+| Stage | Size and age | Food | Source |
+|---|---|---|---|
+| Egg to hatch | Hatch 19 to 20 h after fertilization at 26°C (Anjos); 24 to 36 h (Seriously Fish); 24 to 30 h (FishBase) | None. "The eggs and fry are light sensitive in the early stages of life and the tank should be kept in darkness if possible." Adults "will eat the eggs given the chance." | C27, C11, C10 |
+| Yolk-sac larva | 2.9 mm at hatch, unpigmented; yolk absorbed in 5 to 6 days (Thongsupa); free-swimming 3 to 4 days after hatch (Seriously Fish, FishBase) | None until free-swimming | C27, C28, C11, C10 |
+| Fry, first feeding | 4.1 mm at day 5 | "an infusoria-type food for the first few days," then "microworm or brine shrimp nauplii" once large enough. Leaf-litter microbes are "a valuable secondary food source for fry." Feeding rate: "Fry and fingerlings can be fed up to 5% of their body weight daily." | C27, C11, C29 |
+| Late larva | Red pigment from day 12; "On the 22nd day of life, all fins were formed," 11.0 mm, "very similar to the adult" | Nauplii and microworm continuing (Seriously Fish), sizes up per mouth | C27, C11 |
+| Juvenile and adult | Wild fish captured at 12 to 35 mm SL, mostly about 18 mm (Chao, C1); max 35 mm SL (C11) | Dry staple plus live and frozen bloodworm, mosquito larvae, Daphnia, Moina (C11). Adults "3% of their body weight daily for maintenance"; "Most aquarium fish should be fed at least daily." Crush flakes: "Flaked feeds may be too large for a small-mouthed fish." | C1, C11, C29 |
+
+No source gives a cardinal-specific number of feeds per day by stage.
+
+**E3.3 Feeding among faster fish**
+- Merck, on bottom feeders living on leftovers: the practice is unacceptable and targeted feeding is recommended (C29, paraphrase). That is about catfish, not cardinals.
+- No source opened says cardinals specifically lose food to faster tankmates. The enrichment guide's "Small mouths that lose out to faster fish" stays unsourced. See Unsourced.
+
+**E3.4 Why cardinals stop eating, and when to worry**
+- Sick fish stop eating first: "the careful observer can usually tell that fish are sick before they start dying because sick fish often stop feeding and may appear lethargic. Healthy fish should eat aggressively if fed at regularly scheduled times." (C30)
+- First step: "If you suspect that fish are getting sick, the first thing to do is check the water quality." (C30) Test ammonia whenever feeding drops (C34).
+- New tank: decreased appetite is a listed sign of new tank syndrome (C41).
+- Cold: deaths begin below about 19.6°C (C3); a failed heater is a feeding-stopper before it is a killer (inference).
+- Internal parasite: Spironucleus signs are "Weight loss (anorexia), mortality of fry and juveniles"; "The only treatment available for spironucleosis is metronidazole (use only in ornamental species)," which "can be administered as a bath if fish are anorectic." (C35)
+- Old food: "A feed container kept at room temperature should be discarded after 2 months of opening"; frozen feeds after 1 year. (C29) Not a cause of refusal by any source, but a storage rule the guide lacks.
+- Record when feeding stopped: a fish health lab will ask "Are the fish eating? If not, when did they stop?" and "What type and size of feed is fed?" (C31)
+
+**E3.5 Wild-caught fish refusing prepared food**
+- Only forum posts were found for this (not cited). The peer-reviewed and report evidence above (C25, C26, C4) shows wild cardinals taking commercial feed during holding. So the stronger claim is that a wild cardinal that will not eat after settling is more likely sick or stressed than fussy. The live-food bridge (offer live or frozen first, then mix in dry) is unsourced. See Unsourced.
+
+---
+
+### E4. Health
+
+**E4.1 Fungal infections**
+- Merck: "Saprolegnia and other members of the Oomycota are fungus-like protists"; aquatic fungi are "secondary tissue invaders that follow traumatic injuries, infectious agents," commonly linked to poor water quality or low temperatures. (C8, re-read)
+- UF/IFAS: "Fungal spores are common in the aquatic environment, but do not usually cause disease in healthy fish." After a parasite, bacterial infection or handling injury, "the fungus or water mold can colonize damaged tissue," appearing as "a cottony growth or may appear as brown matted areas." "Formalin or potassium permanganate can be effective against most fungal infections, if not too severe. Since fungi are usually a secondary problem, it is important to diagnose the original problem and correct it as well." (C30)
+- Cardinal link: low temperature is a named trigger (C8), and cold is this species' documented weak point (C3).
+
+**E4.2 Internal parasites**
+- Wild fish: "apparently healthy wild fish often carry heavy parasite burdens" and "heavy parasite burdens seem to be more common in fish originating from wild sources." (C35)
+- Spironucleus: signs and metronidazole as above (C35).
+- Nematodes: Camallanus shows as worms "protruding from anus"; treatment "Fenbendazole, levamisole." Capillaria: fenbendazole or levamisole. (C35)
+- Tapeworms: "heavy cestode infestations can inhibit growth, and cause coelomic distension and intestinal impactions"; "The anthelmintic of choice is praziquantel." (C35) (Merck gives mg/kg in-feed doses; per RULES the mg/kg figure is the one form a dose may take, if a guide ever uses it.)
+- A characin-specific drug warning: organophosphates "should be avoided in systems containing elasmobranchs and some characins and cichlids." (C35) Cardinals are characins.
+
+**E4.3 Shrimp-safe vs invertebrate-harmful medications (copper)**
+
+**Owner decision (2026-11-01): the guides never list any medication as shrimp-safe.** They keep the rule that shrimp come out before any medication goes in, plus the sourced point that copper is toxic to invertebrates.
+- "Most invertebrates are highly sensitive to copper and will not survive a copper treatment." Move them out and do not return them "until Cu2+ concentrations are 0.01 mg/L or less, but ideally zero." Copper bound to substrate, shells and decor "may be released if pH drops." (C32)
+- Copper "can also damage the beneficial bacteria in the biofilter" and "will depress the immune system." (C32)
+- Soft water raises the risk to the fish: in freshwater, measure total alkalinity "(NOT HARDNESS OR pH), since the toxicity of copper to fish increases as the total alkalinity decreases"; "If the total alkalinity is less than 50 ppm, copper treatments are not recommended because of the high risk of killing fish." (C33) A soft-water cardinal tank (1 to 12 dGH, low KH) will usually sit below that line. No opened source gave a KH figure for wild Rio Negro water (see Gaps above), so the "usually" is an inference.
+- Shrimp-safe alternatives: no source opened lists which common aquarium medications are shrimp-safe. Merck does not say whether praziquantel, levamisole or fenbendazole harm snails or shrimp (C35). See Unsourced.
+
+**E4.4 Finding a fish vet**
+- AAFV: "Looking for a Fish Vet? Use our Find a Fish Vet tool to find a fish vet in your area." Link: https://fishvets.org/find-a-fish-vet/ (C36; page read with curl, WebFetch got 403).
+- WAVMA: members choose whether to be "listed in the WAVMA Find a Fish Vet Directory and/or WAVMA Members Directory." (C37) Its online directory is at https://www.wavma.org/directory (link seen on the page; not opened).
+- What to bring (UF/IFAS FA55): water sampled "as soon as the fish begin to act abnormally and before water changes are initiated," in a clean container of about one quart, kept cold; the water the fish travel in "will not correctly reflect what is occurring in your system" because pH drops and ammonia rises in transit. Best fish samples are those "near death (moribund) or showing signs of distress. Dead fish are rarely acceptable"; "It is important not to freeze the sample." Have records ready: tank size and age, species and numbers, recent additions, when signs began, feed type and amount, last water change, last treatment and dose. (C31)
+- Why not just medicate: "fish are often incorrectly treated with over-the-counter medications. A vicious cycle arises when the first treatment doesn't work and another one is tried ... it usually does more harm than good." (C31)
+
+**E4.5 What a healthy cardinal looks like**
+- Eats "aggressively" at regular feeding times (C30).
+- The lab question list doubles as a checklist of what is abnormal: thin or bloated body; sunken or popped eyes; fins "clamped down, frayed, or bloody"; gills "discolored, bloody, or frayed"; lesions or growths; flashing, fast breathing, lethargy; hanging at the surface or lying on the bottom. (C31) Sores, ragged fins, dropsy, popeye (C30).
+- Color: dims under bright light (C4) and on pale substrate in clear water (C11), so pallor alone is not a disease sign. NTD shows as "abnormal locomotion caused by muscle damage" (C8).
+- Night color fading: no source opened. See Unsourced.
+
+**E4.6 Wild-caught import stress and losses**
+- Waichman et al. (three species including P. axelrodi, seven trips to Barcelos): "High mortality rates have been reported in the capture and transport of ornamental fishes from the Amazon basin, and much of it was probably stress induced." Water quality was good at capture and fishing camps but poor at Barcelos facilities and on the boat to Manaus, with "major differences" in dissolved oxygen, ammonia, sodium and chloride. Partial water renewal and table salt "did not effective improving water quality." (C26)
+- Densities: 600 to 1,000 cardinals per tub in about 8 liters of stream water for the leg to Barcelos. (C26)
+- pH climbs along the chain: from 4.62 to 6.15 between capture and the Manaus exporters. (C26) A fish raised in pH 4 to 5 water meets pH 6 before export.
+- Pre-export baths: "Nitrofurazone, Tetracycline, Acriflavine, malachite green, methylene blue, potassium permanganate, or table salt," for one to 24 hours. (C26)
+- Estimates of loss vary widely: exporters claimed up to 70% in capture and transport but under 10% in their quarantine; middlemen said about 2% to Manaus; a US case study (Chapman et al. 1997, 1998, cited secondhand) "reported that 40 of 50 boxes of neon tetras (Paracheirodon innesi) or cardinal tetras (P. axelrodii) imported from South America to US, are lost as a result of mortality." "There is a general agreement that higher mortality rates occur during capture and the transport, with lesser rates during the quarantine period." (C26)
+- Gomes et al.: on a 24-hour Barcelos to Manaus run, survival was 94.62% in controls and 99.71% with a probiotic; dissolved oxygen fell "close to or below 2 mg L-1 after 3 h"; water temperature 28.5 to 30.2°C; control fish had cortisol at least fourfold higher than basal. (C25) Chao's "less than 5%" mortality (C1) matches the control figure.
+- This is the first sourced support for the gap line "losses in the first fortnight are common" (Gaps above), but only indirectly: no source measures losses in the buyer's tank.
+
+**E4.7 Mycobacteria and tetras (fish side)**
+- "Fish in the families Anabantidae (bettas and gouramis), Characidae (tetras), Cyprinidae ... and some members of the Cichlidae ... may be more prone to the infection." Chronic wasting, scale loss, skin ulcers. "There is no effective treatment for infected fish, so prevention through the use of quarantine and disinfection protocols is critically important." "Acquiring wild fish is risky; if there is a need to bring wild stock in, they should be put through a rigorous quarantine." (C40)
+
+---
+
+### E5. Cost
+
+**E5.1 Buying checklist**
+- Use the abnormal-signs list in E4.5 (C30, C31) as the red flags. Ask how long the shop has held them: losses concentrate in capture and transport, less in quarantine (C26), and wild fish "are less tolerant of deteriorating water" (C11). That supports the enrichment guide's "Buy from a shop that has held them a while."
+- Buy from trusted sources and quarantine wild stock (C40).
+- Shop-side red flags beyond the fish (dead fish in the tank, shared systems): only hobby blogs found. See Unsourced.
+
+**E5.2 Wild-caught vs captive-bred**
+- Already in this file: FishBase "possible but difficult" (C10); Seriously Fish "a significant proportion of trade fish are still wild caught or come from community-led projects such as Project Piaba" (C11); PFK UK "Most on sale here are captive-bred" (C13).
+- Gomes et al. 2009: "Some 12 to 15 million wild specimens are legally exported annually" (citing Chao 2001); Chao and Prada-Pedreros (1995) "estimate that at least 24 to 32 million cardinals are taken from the Rio Negro tributaries each year"; "Wild-caught fish represent only 10% of the freshwater ornamental fish commerce in the world (Tlusty 2002)." (C25)
+- Aquarium Co-Op (retailer, WEAK): "The Cardinal Tetra is typically wild caught, though you can find some that are captive raised nowadays." (C50)
+- Price gap: no source compares wild and bred prices. Observations below show wild listings inside the bred range, so no premium either way was observed.
+
+**E5.3 Shipping live fish online**
+- Risks in transit: shipping water drops in pH and rises in ammonia (C31, C44); oxygen falls fast in sealed boxes (C25, boat transport); cold below about 19.6°C kills (C3).
+- PFK for online orders: check for a Dead On Arrival guarantee, photograph problems before opening, contact the seller promptly. (C44)
+- Costs: retail observations only (below).
+
+**E5.4 Realistic monthly running cost**
+- The guide's annual table (food $15 to $30, conditioner $10 to $15, test kit $15 to $40) has no electricity line. US average residential electricity: 18.16 cents per kWh for August 2026 (preliminary). (C49) Heater wattage and duty cycle: no source. See Unsourced for a worked example the owner can accept or drop.
+- Food storage rule that affects cost: discard opened dry food after 2 months at room temperature (C29). A 0.77 oz pot for one school is likely to outlast that, so buy small. (Inference.)
+
+**E5.5 Quarantine tank cost, and the cost of adding fish later**
+- Quarantine 30 days minimum (UF/IFAS, N7). Wild stock "should be put through a rigorous quarantine before being allowed contact with the regular population." (C40)
+- Adding fish later means another quarantine run each time, because a mycobacteria-positive group is best kept closed, "meaning that no new animals will be added" (C40), and NTD spreads by eating infected tissue (C8). Cost logic for "buy the whole school at once" is in the cost guide already; these give it a disease reason.
+- Kit prices: the site's own affiliate data (observations below).
+
+**E5.6 Observations, NOT sources, do not cite**
+Observed 2026-11-01 unless marked. For the cost table only.
+- Nu Aqua, "Cardinal Tetra- WILD": from $4.99 (single), packs of 3, 6, 12 at "up to 20% off"; "Shipping starts at $22.99 depending on your location"; "Live arrival guarantee" listed; sold out. https://nuaquashop.com/products/cardinal-tetra-wild
+- Reach.dog (Global Fish Co), "WC Cardinal Tetra (.75-1")": $5.00. SEARCH RESULT ONLY. https://reach.dog/shop/global-fish-co/products/large-cardinal-tetra-1-1-25
+- GCShop (Singapore), "Wild / Columbia": $3.50 (currency not confirmed). SEARCH RESULT ONLY. https://www.gcshop-sg.com/collections/all/products/cardinal-tetra
+- Aquarium Co-Op blog: "In most stores, the common price is $3-$4 per fish." (undated) https://www.aquariumcoop.com/blogs/aquarium/neon-tetras-and-cardinal-tetras
+- LiveAquaria shipping page: live fish Overnight flat $24.99; FedEx Priority Overnight $29.99 (Monday to Thursday); "Optional Overnight" $35.98 under $49 and $29.99 at $49 and over; a $9.99 non-refundable box fee once per order; free UPS Next Day Air on aquatic-life-only orders of $229 or more. https://www.liveaquaria.com/pages/shipping-information Guarantee: a 7-day Arrive Alive, Stay Alive guarantee per search result text; guarantee page not opened.
+- So a school of 10 shipped from one seller adds roughly $23 to $45 in shipping and fees on top of the fish (Nu Aqua minimum vs LiveAquaria overnight plus box fee). Arithmetic on observations, not a source.
+- Site affiliate data (src/lib/data/affiliateProducts.js): 10 gallon tank $18 to $30, sponge filter $8 to $15, submersible heater $18 to $30. A bare quarantine tank from these three runs about $44 to $75, using the test kit and conditioner already bought.
+
+---
+
+### E6. Handling
+
+**E6.1 Netting and acclimation for a soft-water fish**
+- Arrival: keep fish "in fairly dark conditions"; float to match temperature; add tank water "every few minutes until the bag contains more water from your aquarium than the shop," which "could take anywhere from 30-60 minutes"; net the fish across and do not pour the bag in. (C44)
+- Drip method: suited to "sensitive species like" Caridina shrimp, corals and some specialist fish; 1 to 2 drips per second; "a couple of hours"; stop when the two waters read similar TDS. (C44)
+- The catch for shipped fish: "Ammonia levels can increase due to fish waste and pH can drop due to increased CO2." After a long transport, slow acclimation can be risky, so move the fish into the tank right after temperature matching, or add an ammonia detoxifier such as Seachem Prime to the bag. (C44, partly paraphrase) The chemistry behind it: more of the ammonia turns into the toxic un-ionized form as pH rises (C34). Mixing alkaline tank water into an acidic, ammonia-laden bag raises both at once. For a cardinal going into a soft acidic tank, the pH rise is small, so a slow mix carries less of this risk than it does for a fish going into hard alkaline water (inference from C34; see Unsourced).
+- pH shock: the lab tolerance numbers do not measure it. Oliveira et al. changed the bath pH gradually: "An alkaline or acid solution was added to the bath at 1-h intervals until the desired pH was achieved." The methods do not report the holding water's pH or hardness. (C3, methods re-read) See Conflicts.
+- Wild fish pass through a pH 4.62 to 6.15 climb in the export chain (C26), so an imported cardinal has already lived through a slow pH rise of about 1.5 units.
+- Bagging: "one part water, three parts air" (the same article later says four or five parts air; it contradicts itself); a dark, wrapped container calms the fish and holds warmth; float the bag open and net the fish straight in rather than having a helper hold it. (C45)
+- Netting technique for small fish (net size, two-net herding, a cup instead of a net): no source opened. See Unsourced.
+
+**E6.2 Fish tank granuloma (Mycobacterium marinum)**
+- CDC lists "Mycobacteriosis (Fish Tank Granuloma, Swimming Pool Granuloma)" among diseases pet fish can spread. Prevention: wear gloves when cleaning or caring for the aquarium, "especially if you have cuts or wounds on your hands"; wash scratches right away and seek care if a wound turns red, painful, warm or swollen; wash hands before and after; children under 5 should not clean or handle aquarium items; dump tank water in a bathtub, laundry sink or outside rather than a kitchen sink, then disinfect the sink. Higher-risk groups: under 5, 65 or older, weakened immune systems. (C38, paraphrased by the fetch tool)
+- Clinical picture: "infection is attributed to aquarium exposure in the majority of cases (84%)"; "Lesions most commonly present on the upper extremity (95%)"; "Most reported cases have incubation periods of less than four weeks"; antibiotic therapy "may range from one to 25 months (median duration: 3.5 months)." (C39)
+- Fish side: tetras among the families "more prone to the infection"; "Mycobacterial diseases are zoonotic"; organisms thrive with "warm water temperatures, low dissolved oxygen levels, acidic pH, high soluble zinc, high fulvic acid, and high humic acid." (C40) Every one of those but zinc describes a warm blackwater cardinal tank, which is a reason for gloves in this species' tank in particular. No source measures M. marinum risk in home blackwater tanks.
+
+---
+
+### E7. Enrichment: clear water vs tannin-stained water
+
+What each side says, with source strength.
+
+**For tannins and blackwater**
+- Native water is stained: "stained brownish due to the presence of humic substances released by decomposing organic matter." (C11) Rio Negro dissolved organic carbon is "typically 8-12 mg C L-1, but up to 35 mg C L-1 in small streams." (C23)
+- Physiology (peer-reviewed, but in zebrafish): Rio Negro DOC "provided almost perfect protection against ionoregulatory disturbances associated with acute exposure to pH 4.0 in ion-poor water," and prior DOC exposure at neutral pH protected fish "even if the DOC was no longer present." The authors frame Rio Negro DOC as having "unique protective properties" as a hypothesis; no cardinals were tested. (C23)
+- Wild cardinals measured in native water showed higher Na+ and Cl- uptake and ammonia excretion "than in previous reports on tetras obtained from the North America aquarium trade and/or studied in low DOM water." (C24, SEARCH RESULT ONLY) Suggests aquarium-trade tetras in clear water are physiologically different from wild ones, not that they suffer.
+- Color: less light means more vivid stripes (C4); pale substrate plus clear water and bright light means lighter fish (C11). Tannin staining cuts light (inference).
+- Leaf litter grows fry food (C11) and in a Thai review raises larval survival (C28).
+
+**Against, or "not needed"**
+- The species is not blackwater-only: in the Orinoco it lives in habitats "which tend to contain transparent, clear water and sandy substrates," and a Seriously Fish photo caption says "this species is also found in habitats with clear, transparent water." (C11)
+- Peat is unnecessary and destructive to collect (C11).
+- Captive-bred stock dominates some markets: PFK UK "Most on sale here are captive-bred" (C13), and Seriously Fish's tolerance range runs to pH 7.5 (C11).
+- Chemistry limits: tannins do not soften water, and high KH "will buffer away most of the pH change." (C47, WEAK)
+- Wood and leaves are not true blackwater: blackwater is dark from humic and fulvic acids, not tannic acid; the "botanical style" is "an aesthetic rather than a methodology"; decaying leaves add carbohydrates that "cause an increase in the bacterial count of the water," and the author claims antibacterial tannin benefits are "popular social media mythology" (tannic acid needs ">2,000 ppm" to kill bacteria, and harms fish at about 40 ppm). (C46, WEAK, unsigned)
+- Mycobacteria thrive in "acidic pH ... high fulvic acid, and high humic acid" and "an organically rich environment." (C40) The extension sheet is about aquaculture systems, but it is the one authoritative caution against a heavily loaded botanical tank.
+- Clarity is not health either way: "clear water does not equal healthy water"; "Some hobbyists prefer clear water, others love the amber tint." (C48, WEAK)
+
+**Where they agree:** soft, low-KH water is the precondition for tannins to change anything (C47, C17 by implication); dim light helps color (C4, C11); peat is out (C11, C46). The disagreement is over whether the stain itself (as opposed to softness, low pH and dim light) does the fish any good, and over how much rotting plant matter is safe. No study opened tests cardinals in stained vs clear water.
+
+---
+
+### Conflicts with current guides
+
+1. **cardinal-tetra-handling-guide.mdx**, current line: "pH is less of a danger than its reputation. In laboratory tolerance testing, every cardinal survived 96 hours at any pH from 4.0 to 8.5." Source: Oliveira et al. (C3, methods) raised or lowered bath pH gradually, "at 1-h intervals until the desired pH was achieved." The test shows tolerance of a pH reached slowly, not of an abrupt bag-to-tank jump, so it cannot carry "less of a danger" for acclimation. The health guide's version ("Every fish survived 96 hours anywhere from pH 4.0 to 8.5") is accurate as written.
+2. **cardinal-tetra-handling-guide.mdx**, current line: "a batch going from soft shop water into hard tap water is the chemistry mismatch that calls for the slow method." Source: PFK (C44) says that after long transport, when bag ammonia has risen and pH has dropped, slow acclimation can be risky, and recommends moving the fish after temperature matching or dosing an ammonia detoxifier. For shipped cardinals the guide's advice needs that exception.
+3. **cardinal-tetra-cost-guide.mdx**, current line (Vet Costs): "Not applicable in the traditional sense. Fish health management here is entirely about water quality and, when needed, over-the-counter treatments, not veterinary visits." Sources: AAFV runs a public "Find a Fish Vet" tool (C36) and WAVMA a "Find a Fish Vet Directory" (C37); UF/IFAS says fish "are often incorrectly treated with over-the-counter medications" and that this "usually does more harm than good" (C31). It also clashes with the health guide's own "a fish vet is the first choice" for euthanasia.
+4. **src/lib/data/costSheets/fish.js** (cardinal-tetra necessities), current text: "Dark fine [sand] or gravel". The item it links, sand-caribsea-10lb, points to "CaribSea Super Naturals Sunset Gold Aquarium Sand", which Chewy's listing title calls "Beige" (search result). A data mismatch, not a guide line; it matters if the substrate rewrite recommends a dark bottom (C11). Not a source contradiction of a fact.
+5. **cardinal-tetra-feeding-guide.mdx**, current line: "Cardinal tetras eat mostly small invertebrates, with some algae and detritus." Mild: Walker (C2) found detritus in 40% of stomachs but says calling it "detritus feeding" "would be misleading," since it is picked up incidentally while browsing for prey. Not wrong; the rewrite could say the detritus comes in with the prey.
+6. **cardinal-tetra-tank-setup-guide.mdx**, current line (Water Chemistry): "Aim for roughly pH 5.0 to 7.0 ... Ammonia and nitrite both need to read zero before stocking." Not a contradiction, a sequencing issue: nitrification "proceeds best at a pH near 8" (C43) and stalls below about 7.0 (C42, WEAK to moderate). A tank brought to pH 5 to 6 before cycling may take much longer to read zero. The guide gives no order of operations.
+
+No source contradicted the substrate sentence; it is thin, not wrong. Sand is the better-supported choice (C11).
+
+### New support for lines listed above as gaps or kept without a source
+
+- "darker substrate makes the stripe stand out" (cut, Kept list) and "Cardinals in tea-colored water look like different animals from cardinals under a bright light in clear water" (restored): Seriously Fish's "lighter in bright conditions with pale substrate or background and clear water" (C11) now supports the direction of both.
+- "Losses in the first fortnight are common" (Gaps): indirect support only. Waichman (C26) on importer losses "probably caused by the inability of fishes to recover after the transport-induced stress," and the secondhand Chapman case of 40 of 50 boxes lost. No buyer-tank data.
+- "Buy from a shop that has held them a while" (enrichment guide): supported by C26 (losses lower once in quarantine) and C11.
+
+### Unsourced (owner review)
+
+These seem true and useful; no opened source supports them. Not to be dropped silently.
+- Sand grain size for cardinals (for example, fine sand under about 1 mm). Retailer pages give 0.25 to 1.0 mm for one CaribSea sand (search result only).
+- Sharp or rough gravel harming cardinals. They are mid-water fish (C10), so the risk is probably low; no source either way.
+- Root tabs for Cryptocoryne in an inert bed, and how often to replace them. Only retailer blogs found.
+- Only the crypts among Seriously Fish's suggested plants need a deep rooted layer; the ferns and moss grow on wood (my inference from the plant list in C11).
+- Cycle the filter before lowering pH with soil, wood or leaves (inference from C42 and C43).
+- Cardinals lose food to faster tankmates; spread food across the surface (enrichment guide line, still unsourced).
+- Bridge a reluctant wild fish with live or frozen food, then mix in dry food. Forum advice only; C25 and C26 suggest most wild cardinals already take prepared food.
+- Which aquarium medications are shrimp-safe. No authoritative list found; Merck is silent on invertebrate safety of praziquantel, levamisole and fenbendazole.
+- Cardinals fade at night. Widely repeated; no source opened.
+- Shop red flags beyond the fish themselves (dead fish in the display, shared filtration across tanks, asking the arrival date). Hobby blogs only.
+- Heater electricity: a 50 to 100 W heater in a 20 gallon, running a fraction of the time, at 18.16 cents per kWh (C49). Example only: 100 W for 6 hours a day is 18 kWh a month, about $3.30. Wattage and hours are assumptions.
+- A soft acidic destination tank makes slow acclimation of shipped fish safer than a hard alkaline one (inference from C34 and C44).
+- Netting technique for small fish: a fine soft net, herding with two nets, or scooping with a cup.
+- Fin rot recovery in one to two weeks, staged fin rot progression (already on the Kept list above): still no source found today.
+
+### Source count
+
+Distinct new URLs opened and used today: 33 (C17 to C23 and C25 to C50, counting C36 as one organization; C24 seen in search only and not counted). Re-fetched today and used: 4 (C2, C3, C8, C11). Quoted from this file without re-fetching: C1, C4, C10, C13, N7. Observation URLs (not sources): 4 opened plus 3 seen in search.
