@@ -29,6 +29,22 @@
 export const CORRECTIONS = [
   {
     date: '2026-11-01',
+    page: '/blog/discus-tank-setup-guide/',
+    title: 'Discus Tank Setup',
+    was: '82 to 86°F, given as the standard target for captive-bred discus.',
+    now: '79 to 86°F, held steady anywhere inside it, with no single target. 86°F is still the top of the range, so discus can still take the ich heat method. The cost, health and handling guides, the discus hub, the ich treatment guide and the water changes guide say the same.',
+    why: 'FishBase (Symphysodon aequifasciatus and S. discus, 26 to 30°C) and Seriously Fish (26 to 30°C); the keeping range is where the two overlap (owner rule, 2026-11-01).',
+  },
+  {
+    date: '2026-11-01',
+    page: '/blog/discus-handling-guide/',
+    title: 'Discus Handling',
+    was: 'Discus need sustained 82 to 86°F water, and cardinal tetras tolerate that warmth more reliably than most small tetras.',
+    now: 'Discus need 79 to 86°F. Cardinal tetras are kept at 73 to 81°F, so a discus tank shared with them runs at 79 to 81°F; rummy-nose tetras (73 to 79°F) meet discus only at 79°F; neons (70 to 77°F) never reach discus water. The discus hub and the stocking and tankmates guide say the same, and the stocking guide no longer calls 86°F a cardinal keeping temperature.',
+    why: 'FishBase and Seriously Fish (owner rule, 2026-11-01).',
+  },
+  {
+    date: '2026-11-01',
     page: '/blog/cardinal-tetra-tank-setup-guide/',
     title: 'Cardinal Tetra Tank Setup',
     was: '73 to 84°F, with 77 to 82°F as the everyday target, and water reaching 86°F tolerated in short spells.',
