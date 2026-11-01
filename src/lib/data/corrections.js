@@ -29,6 +29,33 @@
 export const CORRECTIONS = [
   {
     date: '2026-11-01',
+    page: '/blog/oscar-fish-tank-setup-guide/',
+    title: 'Oscar Fish Tank Setup',
+    was: 'Sand or smooth gravel at pea size or larger both worked well.',
+    now: 'Sand is the floor to choose for a fish that digs this much. Gravel works only when every piece is too large to swallow, since pea gravel is the size a grubbing fish can swallow and it can block the esophagus. The oscar hub and cost guide say the same.',
+    why: 'Practical Fishkeeping; Seriously Fish.',
+    reportedBy: 'an AI-assisted audit',
+  },
+  {
+    date: '2026-11-01',
+    page: '/blog/corydoras-catfish-tank-setup-guide/',
+    title: 'Corydoras Catfish Tank Setup',
+    was: 'About 2 inches of sand or fine gravel.',
+    now: 'A thin layer under an inch deep, about 0.6 inch at most, shallow enough for the fish to reach through to the glass. The corydoras hub says the same.',
+    why: 'Ian Fuller, Corydoras World; Practical Fishkeeping.',
+    reportedBy: 'an AI-assisted audit',
+  },
+  {
+    date: '2026-11-01',
+    page: '/blog/corydoras-catfish-enrichment-guide/',
+    title: 'Corydoras Catfish Enrichment',
+    was: 'A corydoras on gravel could not do its characteristic foraging behavior, and the substrate bacteria study read as if it covered corydoras.',
+    now: 'Coarse or sharp gravel stops the foraging; fine, smooth gravel is acceptable and corydoras breed over it, with sand still the first choice. The bacteria study is named as a zebrafish study.',
+    why: 'Seriously Fish; Aquarium Co-Op; Vanderzwalmen et al. (2022).',
+    reportedBy: 'an AI-assisted audit',
+  },
+  {
+    date: '2026-11-01',
     page: '/blog/guppy-tank-setup-guide/',
     title: 'Guppy Tank Setup',
     was: '5 gallons was the bare minimum for a trio and 10 gallons the start for 5 or 6.',

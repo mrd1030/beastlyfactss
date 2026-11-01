@@ -4226,7 +4226,7 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B007R55QUU?tag=beastlyfacts-20",
     description: "Fine black sand that makes small colorful fish like neon and cardinal tetras show up, and is soft on corydoras barbels.",
-    covers: ["Dark fine gravel or sand", "Sand, or smooth pea-sized or larger gravel", "Fine gravel or sand", "Sand or fine gravel substrate", "Smooth substrate, sand or rounded gravel", "Fine gravel or sand substrate", "Fine gravel or sand in a darker color", "Fine sand or small, smooth gravel", "Soft sand, about 2 inches deep"],
+    covers: ["Dark fine gravel or sand", "Sand, or smooth gravel too large to swallow", "Fine gravel or sand", "Sand or fine gravel substrate", "Smooth substrate, sand or rounded gravel", "Fine gravel or sand substrate", "Fine gravel or sand in a darker color", "Fine sand or small, smooth gravel", "Soft sand, a thin layer under an inch deep"],
     pets: ["fish"],
   },
   {

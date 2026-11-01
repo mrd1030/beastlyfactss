@@ -252,7 +252,7 @@ export const fishSheets = {
       { item: "angelfish-aquarium-heater", text: "[Submersible heater]" },
       { item: "oscar-fish-75-gallon-glass-aquarium", text: "75-gallon glass aquarium, tank only" },
       { item: "glass-canopy-48x18", text: "Tight, secure [glass canopy] (the link fits a 75 gallon)" },
-      { item: "sand-caribsea-10lb", qty: 4, text: "Four 10 lb bags of [sand] or smooth pea-sized gravel (check the quantity against your tank's floor)" },
+      { item: "sand-caribsea-10lb", qty: 4, text: "Four 10 lb bags of [sand] or smooth gravel too large to swallow (check the quantity against your tank's floor)" },
       { item: "water-test-kit-liquid", text: "Liquid [water test kit]" },
       { item: "water-conditioner", text: "[Water conditioner] that neutralizes chlorine and chloramine" },
       { item: "goldfish-gravel-vacuum-sized-20", text: "[Gravel vacuum]" },
