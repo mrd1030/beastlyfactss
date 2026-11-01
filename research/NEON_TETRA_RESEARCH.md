@@ -605,3 +605,4 @@ Observed 2026-11-01 on retailer pages or in the site's own data. For cost tables
 - No medication is ever called shrimp-safe.
 
 - Owner decision (2026-11-01): juvenile feeding is three to four small meals a day, tapering to the adult schedule, in all three tetra feeding guides (matches the neon guide's existing FAQ and the only figure found).
+- Owner decision (2026-11-01): a finished cycle is the single most important step when a tank is first set up; quarantine is the single most important step for every fish added after that.
