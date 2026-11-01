@@ -871,3 +871,11 @@ These seem true and useful; no opened source supports them. Not to be dropped si
 ### Source count
 
 New sources opened and used today: 17 (S44 to S60). Reused from other research files and cited to their original URLs, not re-opened: 16 (S61 to S76). Re-read today from this file's earlier table: 9 (S4, S14, S21, S22, S25, S28, S29, S31, S38). Observation URLs (not sources): 4 opened, 1 search result only.
+
+### Kept without a source (owner review)
+
+Added 2026-11-01 in the health guide Sources trim (health guides cap at 8). FishBase's disease list (S18), TFH Magazine (S22) and Aquarium Source (S32) left the health guide's Sources block; the claims below lost their only cited source there and stay as written.
+- Health guide, fin rot: "Fin rot affects this species at both an early and a late stage", and fin rot in the opener's list "It gets ich, fin rot and dactylogyrid gill flukes". Was S18. (also elsewhere: no)
+- Health guide, healthy section: "the black can fade or deepen from day to day with the fish's mood". Was S22. (also elsewhere: yes, handling guide)
+- Health guide, dyed fish: "applied by stripping the slime coat with acid and then soaking the fish in dye" and "The color fades with time anyway." Was S22; Seriously Fish (S21) supports injection, the stress and the shortened lives. (also elsewhere: yes, handling guide)
+- Health guide, varieties: "long, trailing fins draw fin nippers, so a long-fin form gets the same calm company any long-finned fish needs." Was S32. (also elsewhere: yes, handling and tank setup guides)

@@ -599,3 +599,8 @@ Distinct new URLs opened and used today: 33 (C17 to C23 and C25 to C50, counting
 - Owner decision (2026-11-01): juvenile feeding is three to four small meals a day, tapering to the adult schedule, in all three tetra feeding guides (matches the neon guide's existing FAQ and the only figure found).
 - Owner decision (2026-11-01): the cardinal cost FAQ keeps "difficult to breed at commercial scale" as written, although Seriously Fish now says the species is "commercially-bred on a large scale" (FishBase still says breeding is "possible but difficult").
 - Owner decision (2026-11-01): a finished cycle is the single most important step when a tank is first set up; quarantine is the single most important step for every fish added after that.
+
+## Kept without a source (owner review): health guide Sources trim, 2026-11-01
+
+Health guides cap at 8 sources. Sanders et al. 2010 (C7, PMC4155925) left the health guide's Sources block, since Merck (C8, still cited) supports the host range, the muscle infection and that horizontal transmission is likely. One claim lost its only cited source there and stays as written.
+- Health guide, neon tetra disease: "spreading when fish consume infected tissue, including from a fish that's already died", the FAQ "it spreads when fish eat infected tissue, so a dead fish left in the tank keeps it moving", and the two lines that the body "is what spreads" the parasite (Signs and euthanasia). Merck gives horizontal transmission, not the ingestion route. (also elsewhere: yes, neon and glowlight health guides)
