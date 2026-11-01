@@ -1617,16 +1617,114 @@ async function handleAsk(request, env, ctx) {
     return quiet('capped', { species, emergency });
   }
 
-  // Step 4 replaces this with the model call. Until then a match returns the
-  // matched pages as links so the route can be tested end to end.
-  log('no_match', slugs);
+  // Any failure from here on is 'refused': the reader gets the matched pages
+  // as plain links and the search results the page already shows.
+  const fallback = () => storeJson({ result: 'refused', answer: '', links: askLinks(found.chunks), emergency, species });
+  if (!env.ANTHROPIC_API_KEY) {
+    log('refused', slugs);
+    return fallback();
+  }
+
+  let reply;
+  try {
+    await askCountAnswer(env);
+    reply = await askHaiku(env, question, found.chunks);
+  } catch {
+    log('refused', slugs);
+    return fallback();
+  }
+  if (reply.kind === 'refused') {
+    log('refused', slugs);
+    return fallback();
+  }
+  if (reply.kind === 'no_answer') {
+    log('no_match', slugs);
+    return quiet('no_match', { species });
+  }
+
+  log('answered', slugs);
   return storeJson({
-    result: 'sources',
-    answer: '',
-    links: askLinks(found.chunks),
+    result: 'answered',
+    answer: reply.answer,
+    links: askLinks(found.chunks, reply.best),
     emergency,
     species,
   });
+}
+
+// ---------------------------------------------------------------------------
+// The model call. Plain fetch, no SDK: this file ships unbundled.
+// ---------------------------------------------------------------------------
+// Claude Haiku 5.5 rejects any non-default temperature with a 400, so none is
+// sent. Thinking is turned off (allowed at its default medium effort) so all
+// 300 tokens go to the answer. The system prompt carries a cache marker; at
+// about 150 tokens it is under the 512 token minimum and simply does not
+// cache, which costs nothing.
+const ASK_MODEL = 'claude-haiku-5-5';
+const ASK_SYSTEM = `You answer animal and pet care questions for Beastly Facts using ONLY the text inside <sources>.
+Rules:
+- 2 to 3 short sentences. Plain words. No em or en dashes.
+- If the sources do not answer the question, reply exactly: NO_ANSWER
+- Never add facts, numbers, doses, or brands that are not in the sources.
+- Keep hedges from the sources (can, may, often). Do not make them stronger.
+- Never give medication doses. Never say a symptom is fine to wait out.
+- End with the title of the one source that answers best, in the form: READ: <title>`;
+
+const askSourceTitle = (c) => (c.heading ? `${c.title}: ${c.heading}` : c.title);
+const askEscape = (t) => String(t).replace(/</g, '&lt;').replace(/>/g, '&gt;');
+
+async function askHaiku(env, question, chunks) {
+  const sources = chunks
+    .map((c, i) => `<source index="${i + 1}" title="${askEscape(askSourceTitle(c)).replace(/"/g, "'")}">\n${askEscape(c.text)}\n</source>`)
+    .join('\n');
+  const res = await fetch('https://api.anthropic.com/v1/messages', {
+    method: 'POST',
+    headers: {
+      'x-api-key': env.ANTHROPIC_API_KEY,
+      'anthropic-version': '2026-10-21',
+      'content-type': 'application/json',
+    },
+    body: JSON.stringify({
+      model: ASK_MODEL,
+      max_tokens: 300,
+      thinking: { type: 'disabled' },
+      system: [{ type: 'text', text: ASK_SYSTEM, cache_control: { type: 'ephemeral' } }],
+      messages: [{ role: 'user', content: `<sources>\n${sources}\n</sources>\n\nQuestion: ${askEscape(question)}` }],
+    }),
+  });
+  if (!res.ok) throw new Error(`anthropic ${res.status}`);
+  const msg = await res.json();
+  if (msg.stop_reason === 'refusal') return { kind: 'refused' };
+  const text = (msg.content || []).filter((b) => b.type === 'text').map((b) => b.text).join('').trim();
+  return askParseReply(text, chunks, msg.stop_reason);
+}
+
+// Splits the model's reply into the answer and the source it named, and
+// cleans the answer: no dashes (number ranges become "to"), no half sentence
+// left by a max_tokens cut.
+function askParseReply(text, chunks, stopReason) {
+  if (!text || /^NO_ANSWER\b/.test(text) || /\bNO_ANSWER\s*$/.test(text)) return { kind: 'no_answer' };
+  let answer = text;
+  let best = null;
+  const read = answer.match(/\n?\s*READ:\s*(.+?)\s*$/i);
+  if (read) {
+    answer = answer.slice(0, read.index).trim();
+    const named = read[1].toLowerCase().replace(/[*_"]/g, '').trim();
+    best = chunks.find((c) => askSourceTitle(c).toLowerCase() === named)
+      || chunks.find((c) => named.includes(c.title.toLowerCase()) || c.title.toLowerCase().includes(named))
+      || null;
+  }
+  answer = answer
+    .replace(/(\d)\s*[\u2013\u2014]\s*(\d)/g, '$1 to $2')
+    .replace(/\s*[\u2013\u2014]\s*/g, ', ')
+    .replace(/\s+/g, ' ')
+    .trim();
+  if (stopReason === 'max_tokens') {
+    const end = Math.max(answer.lastIndexOf('. '), answer.lastIndexOf('! '), answer.lastIndexOf('? '));
+    answer = end > 0 ? answer.slice(0, end + 1) : answer;
+  }
+  if (!answer) return { kind: 'no_answer' };
+  return { kind: 'answer', answer, best };
 }
 
 // One link per page, in the order the chunks ranked.
