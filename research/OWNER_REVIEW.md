@@ -57,12 +57,12 @@ Format: claim | guide | why it needs review | suggested decision. Live guides (c
 
 ### Aquarium substrate (shared guide)
 - Aquasoil: "pH 5.0 to 6.0", fish "after two to three weeks", usable "about two to three years" (table row and FAQ) | aquarium-substrate-guide.mdx | number: one retailer page restating ADA | find a source (ADA's own product page)
-- Capped soil: "1/8 to 1/4 inch" of dirt under "at least 2 inches" of cap | aquarium-substrate-guide.mdx | number: depths from a weak source only | find a source, or soften
-- Unplanted community tank: stop at "about 2 inches" of coarse gravel (body and FAQ) | aquarium-substrate-guide.mdx | number: its Practical Fishkeeping course page left the block | find a source, or soften
+- Capped soil: "1/8 to 1/4 inch" of dirt under "at least 2 inches" of cap | aquarium-substrate-guide.mdx | number: depths from a weak source only | find a source, or soften **DONE: Owner, 2026-11-01: softened to "a thin layer of soil, just covering the glass, under a deeper cap of gravel", no fixed depths.**
+- Unplanted community tank: stop at "about 2 inches" of coarse gravel (body and FAQ) | aquarium-substrate-guide.mdx | number: its Practical Fishkeeping course page left the block | find a source, or soften **DONE: Owner, 2026-11-01: softened to "a shallow bed, a thin layer of sand or a couple of inches of gravel".**
 
 ### Corydoras catfish
-- "Sharp substrate is a secondary factor. Not ideal, and not the primary cause." (body and FAQ) | corydoras-catfish-enrichment-guide.mdx | leaned against: Bleher, Fuller and Practical Fishkeeping hold the sharp-grain view; no study settles it | soften to "both sharp grains and dirty substrate are suspected"
-- "Barbels can regrow over 4 to 8 weeks" (body and FAQ; also the corydoras hub row) | corydoras-catfish-health-issues-guide.mdx | number and health: no corydoras source; studies in other species report faster regrowth | soften to "can regrow once conditions improve", or find a source
+- "Sharp substrate is a secondary factor. Not ideal, and not the primary cause." (body and FAQ) | corydoras-catfish-enrichment-guide.mdx | leaned against: Bleher, Fuller and Practical Fishkeeping hold the sharp-grain view; no study settles it | soften to "both sharp grains and dirty substrate are suspected" **DONE: Owner, 2026-11-01: softened in body and FAQ: sharp grains and a dirty substrate are both suspected, and no study settles which matters more.**
+- "Barbels can regrow over 4 to 8 weeks" (body and FAQ; also the corydoras hub row) | corydoras-catfish-health-issues-guide.mdx | number and health: no corydoras source; studies in other species report faster regrowth | soften to "can regrow once conditions improve", or find a source **DONE: Owner, 2026-11-01: softened to "can regrow once conditions improve" in the health guide (body and FAQ) and the hub row.**
 
 ### Goldfish
 - Gravel "at least 1/2 inch across" (also goldfish-enrichment-guide.mdx and the care package) | goldfish-tank-setup-guide.mdx | number, and leaned against: only EWASH (weak) supports it; the Practical Fishkeeping page allows very small rounded gravel | keep (safe direction) or soften to "too big to fit in the mouth" **DONE: Owner, 2026-11-01: keep as written (the safe direction). Softening to "too big to fit in the mouth" stays open as an option to look over later.**
