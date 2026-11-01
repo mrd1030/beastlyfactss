@@ -604,13 +604,13 @@ export default function GuideDetail() {
                       ))}
                     </tbody>
                   </table>
-                  <p className="text-xs text-muted-foreground font-body mt-3">
-                    <span className="font-semibold text-foreground">Yes:</span> temperature and pH ranges overlap.{' '}
-                    <span className="font-semibold text-foreground">Limits:</span> they overlap, but the shared temperature band is under {MIN_BAND_F}°F, so a heater drifting a degree can take one species out of range.{' '}
+                  <div className="text-xs text-muted-foreground font-body mt-3 space-y-1">
+                    <p><span className="font-semibold text-foreground">Yes:</span> temperature and pH ranges overlap.</p>
+                    <p><span className="font-semibold text-foreground">Limits:</span> they overlap, but the shared temperature band is under {MIN_BAND_F}°F, so a heater drifting a degree can take one species out of range.</p>
                     {live.some((a, i) => live.some((b, j) => j > i && verdict([a, b]) === 'No')) && (
-                      <><span className="font-semibold text-foreground">No:</span> the ranges miss, or only meet at a single point.</>
+                      <p><span className="font-semibold text-foreground">No:</span> the ranges miss, or only meet at a single point.</p>
                     )}
-                  </p>
+                  </div>
                   {cautioned.map((sp) => (
                     <p key={sp.id} className="text-xs text-foreground font-body mt-1.5"><sup aria-hidden="true" className="mr-0.5 text-[0.75em] text-muted-foreground">{'\u2020'}</sup>{sp.caution}</p>
                   ))}
