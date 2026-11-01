@@ -2846,7 +2846,7 @@
     "title": "Treating Ich: Heat, Salt or Medication, and the Temperature Ceiling That Decides",
     "seoTitle": "Treating Ich: Heat, Salt or Medication",
     "seoDescription": "How to treat ich: the 86°F that stops it, the species whose ceiling is lower, salt for scaled fish, malachite green for the rest, and how long to keep going.",
-    "lastUpdated": "2026-10-31",
+    "lastUpdated": "2026-11-01",
     "noIndex": false,
     "excerpt": "Every fish health guide here says to treat ich by raising the temperature, and half of them say it about a species whose ceiling is below the number that works. This is the page that settles which fish can take the heat, which get salt, which get medication, and how long.",
     "date": "2026-09-16",
@@ -2873,7 +2873,7 @@
     "faqs": [
       {
         "q": "Can I treat ich with heat alone?",
-        "a": "Only if your fish can live at 86°F for two weeks, because that is the temperature most ich strains cannot survive, and it must be held with extra aeration since warm water carries less oxygen. Discus can, and cardinal tetras tolerate it in short spells, so for them it is possible with strong aeration, watched closely. Goldfish, koi, zebra danios, neon, ember, rummy-nose, black skirt and glowlight tetras, and bristlenose plecos cannot, and for them heat goes only as high as the species ceiling, to speed the cycle, while salt or medication does the killing."
+        "a": "Only if your fish can live at 86°F for two weeks, because that is the temperature most ich strains cannot survive, and it must be held with extra aeration since warm water carries less oxygen. Discus can, and cardinal tetras tolerate water reaching 86°F in short spells, so for them the heat method is possible only with strong aeration and the fish watched closely. Goldfish, koi, zebra danios, neon, ember, rummy-nose, black skirt and glowlight tetras, and bristlenose plecos cannot, and for them heat goes only as high as the species ceiling, to speed the cycle, while salt or medication does the killing."
       },
       {
         "q": "How long does ich treatment take?",
@@ -2977,7 +2977,7 @@
     "title": "Aquarium Stocking and Tankmates: How Many Fish, and Which Ones Go Together",
     "seoTitle": "Aquarium Stocking and Tankmates: How Many Fish Fit",
     "seoDescription": "How many fish fit in a tank and which species go together: why inch per gallon fails, the three real limits, the four compatibility checks, and group sizes.",
-    "lastUpdated": "2026-10-31",
+    "lastUpdated": "2026-11-01",
     "noIndex": false,
     "excerpt": "Every species page gives a minimum tank size and stops. This is the page after the minimum: what the inch-per-gallon rule gets wrong, the three things that set how many fish a tank holds, the four checks that decide whether two species can share it, and the group sizes the research supports.",
     "date": "2026-09-16",
@@ -3013,7 +3013,7 @@
       },
       {
         "q": "How many of a schooling fish do I need?",
-        "a": "Six is the floor most species pages give, and the research points higher. In the group-size study behind that advice, neon tetras and white cloud mountain minnows showed the least aggression and darting in the larger groups, and groups of 10 shoaled the most. Ten of one species beats five each of two."
+        "a": "Six is the floor most species pages give, eight is the least to buy for neon tetras, and the research points higher. In the group-size study behind that advice, neon tetras and white cloud mountain minnows showed the least aggression and darting in the larger groups, and groups of 10 shoaled the most. Ten of one species beats five each of two."
       },
       {
         "q": "My tank is at the minimum for its species. Can I add more fish?",
@@ -3021,7 +3021,7 @@
       },
       {
         "q": "Can different tetra species school together?",
-        "a": "Not as one school. Two neons, four embers and four cardinals are three small groups, each below the floor of six, rather than one school of 10. Give each species its own full school in a tank and water that suit all of them, or keep a single species."
+        "a": "Not as one school. Two neons, four embers and four cardinals are three small groups, each well below the eight to ten a tetra school needs, rather than one school of 10. Give each species its own full school in a tank and water that suit all of them, or keep a single species."
       }
     ],
     "relatedProducts": [
@@ -8858,8 +8858,8 @@
     "slug": "boa-glider-mantis-tetra-overview",
     "title": "Four Pets, Four Different Right Numbers",
     "seoTitle": "Boa Constrictor, Sugar Glider, Mantis & Tetra Compared",
-    "seoDescription": "Four pets, four right numbers: a boa needing a second handler past 6 feet, sugar gliders needing a pair always, one mantis only, and six neon tetras minimum.",
-    "lastUpdated": "2026-09-25",
+    "seoDescription": "Four pets, four right numbers: a boa needing a second handler past 6 feet, sugar gliders needing a pair always, one mantis only, and eight neon tetras minimum.",
+    "lastUpdated": "2026-11-01",
     "noIndex": true,
     "excerpt": "Ask how many you need and each of these gives you a completely different answer, and getting that number wrong is the single biggest mistake you can make with any of them.",
     "date": "2026-07-22",
@@ -8898,7 +8898,7 @@
       },
       {
         "q": "How many neon tetras do you need?",
-        "a": "Six is the floor, not a suggestion. Neon tetras are obligate schooling fish that need a group to feel secure and behave normally. A group smaller than six produces fish that are pale, stressed, and constantly hiding, ten to twelve or more is considerably better if your tank allows it."
+        "a": "Eight is the floor, not a suggestion. Neon tetras are obligate schooling fish that need a group to feel secure and behave normally. A group smaller than eight produces fish that are pale, stressed, and constantly hiding, ten to twelve or more is considerably better if your tank allows it."
       },
       {
         "q": "Which of these four pets lives the shortest amount of time?",
@@ -39472,7 +39472,7 @@
     "slug": "platy-swordtail-molly-overview",
     "title": "Three Livebearers That Breed Whether You Plan to or Not",
     "seoTitle": "Platy, Swordtail & Molly: 3 Livebearer Fish Compared",
-    "seoDescription": "Platy, swordtail, and molly compared: easy livebearers, the platy's man-made colors, the swordtail's mating sword, and the molly's rare salt tolerance.",
+    "seoDescription": "Platy, swordtail, and molly compared: easy livebearers, the platy's wide color range, the swordtail's mating sword, and the molly's rare salt tolerance.",
     "lastUpdated": "2026-11-01",
     "noIndex": false,
     "excerpt": "Platies, swordtails, and mollies are three of the easiest aquarium fish to keep, and three of the easiest to accidentally breed. All three are livebearers, and each brings its own twist to that same surprise.",
@@ -47407,7 +47407,7 @@
     "title": "Four Pets Decided Before You Ever Set Up the Tank",
     "seoTitle": "Sulcata Tortoise, Hedgehog, Lovebird & Guppy Compared",
     "seoDescription": "Sulcata tortoise, hedgehog, lovebird and guppy compared: the one decision that determines success with each, made before or at purchase, never after setup.",
-    "lastUpdated": "2026-10-03",
+    "lastUpdated": "2026-11-01",
     "noIndex": true,
     "excerpt": "Each of these has one decision that matters more than anything in the care sheet, and it happens before or at the moment of purchase, not after.",
     "date": "2026-07-20",
@@ -47446,7 +47446,7 @@
       },
       {
         "q": "How fast can a guppy population grow if I don't plan for it?",
-        "a": "Faster than most new owners expect. A female guppy can store sperm for 5 to 10 months after a single mating and produce up to about 8 separate broods from it without a male present again. A tank stocked with no population plan rarely stays the size it started at."
+        "a": "Faster than most new owners expect. A female guppy can store sperm from a single mating and produce up to about 8 monthly broods from it without a male present again. A tank stocked with no population plan rarely stays the size it started at."
       }
     ],
     "relatedProducts": [],
