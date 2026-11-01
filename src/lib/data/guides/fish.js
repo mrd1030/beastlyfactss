@@ -4,6 +4,83 @@ import { fillCostTokens } from '../../costs.js';
 
 export const fishGuides = fillCostTokens([
   {
+    id: "livebearers",
+    name: "Livebearer Care: The Essentials",
+    emoji: "🐟",
+    difficulty: "Beginner",
+    petType: "Fish",
+    tagline: "The fish that give birth to swimming young, and the four everyone starts with!",
+    seoTitle: "Livebearer Care Guide: Guppies, Mollies, Platies",
+    seoDescription: "Guppies, mollies, platies and swordtails share one set of rules: hard water, the right sex ratio and a plan for fry. Compare all four of them side by side.",
+    funFact: "Swordtails share a genus with platies, Xiphophorus, Greek for \"sword bearer\", and the two are close enough that they have been crossed on purpose for almost a century.",
+    // Group hub for the livebearers (layout "group", rendered by
+    // GuideDetail.jsx), built on the tetras group pattern: a chooser, not a
+    // species checklist. Each species' strip copies its figures from the deep
+    // dive named in `sources` (null: the encyclopedia entry); each rule tile
+    // copies its figure from the guide in its `source`; the FAQs are copied
+    // verbatim from those guides. Ranges are each species' full range as its
+    // tank setup guide states it. The guppy guide gives pH "7.0 or above" with
+    // no top, so its upper bound is set above every other member's and never
+    // sets an edge of a shared band. Drafted 2026-11-01, not yet live.
+    layout: "group",
+    intro: {
+      text: "INTRO PENDING RESEARCH",
+    },
+    branches: {
+      groupName: "Livebearers",
+      heading: "Pick your livebearer",
+      intro: "Same rules, different numbers. The figures under each species come from its own guides, and the row opens its full care guide.",
+      fields: ["Tank", "Temp", "pH", "Size"],
+      species: [
+        {
+          id: "guppy",
+          name: "Guppy",
+          values: ["10 gallons for 5 or 6", "72 to 82°F", "7.0 and up", "1 to 2.4 in"],
+          sources: ["guppy-tank-setup-guide", "guppy-tank-setup-guide", "guppy-tank-setup-guide", null],
+          ranges: { tempF: [72, 82], ph: [7.0, 9.0] },
+        },
+        {
+          id: "molly",
+          name: "Molly",
+          values: ["20 gallons for a small group", "72 to 82°F", "7.5 to 8.5", "3 to 4.5 in"],
+          sources: ["molly-tank-setup-guide", "molly-tank-setup-guide", "molly-tank-setup-guide", null],
+          ranges: { tempF: [72, 82], ph: [7.5, 8.5] },
+        },
+        {
+          id: "platy",
+          name: "Platy",
+          values: ["24 x 12 in base", "68 to 79°F", "7.0 to 8.2", "2 to 3 in"],
+          sources: ["platy-tank-setup-guide", "platy-tank-setup-guide", "platy-tank-setup-guide", null],
+          ranges: { tempF: [68, 79], ph: [7.0, 8.2] },
+        },
+        {
+          id: "swordtail",
+          name: "Swordtail",
+          values: ["20 gallons for a trio", "65 to 82°F", "7.0 to 8.4", "Up to 6.2 in"],
+          sources: ["swordtail-tank-setup-guide", "swordtail-tank-setup-guide", "swordtail-tank-setup-guide", null],
+          ranges: { tempF: [65, 82], ph: [7.0, 8.4] },
+          caution: "Swordtails and platies interbreed readily: keep one or the other unless hybrid fry are fine.",
+        },
+      ],
+    },
+    rules: [
+      { label: "Fry", value: "A female guppy can hold sperm from one mating for 5 to 10 months and drop up to about 8 broods. Adults eat fry, so dense cover decides how many survive.", source: "guppy-handling-guide" },
+      { label: "Sex ratio", value: "Two to three females per male cuts the chasing. Keeping the sexes in separate tanks is the only way to stop breeding.", source: "platy-handling-guide" },
+      { label: "Hard water", value: "Livebearers want hard, alkaline water, the opposite of a tetra. GH and pH are separate measurements, so test both before buying fish.", source: "freshwater-ph-gh-kh-guide" },
+      { label: "Cycle first", value: "Most fishless cycles finish in four to six weeks. No fish goes in until ammonia and nitrite read zero.", source: "aquarium-cycling-guide" },
+      { label: "Quarantine", value: "At least 30 days in a separate tank before a new fish joins the group.", source: "fish-quarantine-and-treatment-guide" },
+      { label: "Ich", value: "86°F held for two weeks kills most strains, and it sits above every livebearer here. Warm only to the top of the species' range and let medication do the killing.", source: "aquarium-ich-treatment-guide" },
+      { label: "Water changes", value: "25 to 30% weekly. Test nitrate first: under 20 ppm the routine is right, past 40 ppm the next change is 50%.", source: "aquarium-water-changes-guide" },
+      { label: "Power outage", value: "Oxygen is the threat, not darkness. Unplug the filter rather than letting it sit dead in the water, and keep the surface moving.", source: "aquarium-power-outage-and-transport-guide" },
+    ],
+    faqs: [
+      { q: "How do guppies breed?", a: "As livebearers. A female drops free-swimming young instead of laying eggs, and she can hold sperm from one mating for 5 to 10 months, producing up to about 8 broods from that single encounter with no male present again. Fry survival runs high wherever there is cover for them to hide in." },
+      { q: "How do I manage platy population if I don't want constant breeding?", a: "Keep males and females in separate tanks to avoid breeding entirely, or keep a males-only group for a colorful, breeding-free tank. If you do want controlled breeding, a ratio of roughly two to three females per male cuts down on how much the females get chased and stressed by mating attempts." },
+      { q: "How long should I quarantine a new fish before adding it to my main tank?", a: "At least 30 days, and 30 to 60 days for a valuable fish you want to be sure about. Thirty days is the floor, not the target, since some parasites and infections take that long to show themselves." },
+      { q: "How long does it take to cycle a fish tank?", a: "Most fishless cycles finish in four to six weeks at a stable warm temperature, though a gene-sequencing study of real home aquarium biofilters found two tanks reaching undetectable ammonia and nitrite by week three while a third took until week eight. Cold water, no seeding, and an inconsistent ammonia dose all push a cycle toward the slower end of that range." },
+    ],
+  },
+  {
     id: "tetras",
     name: "Tetra Care: The Essentials",
     emoji: "🐟",
