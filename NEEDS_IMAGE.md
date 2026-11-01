@@ -11,7 +11,6 @@ Every fact on the site resolves its own photo. The 11 facts that were
 borrowing another page's photo got their own on 2026-10-18.
 
 The five October heroes and the five parked facts all landed the same day.
-`check-images.mjs` passes on 1,674 referenced paths.
 
 ## Replacing the Adobe Stock photos (started 2026-10-20)
 

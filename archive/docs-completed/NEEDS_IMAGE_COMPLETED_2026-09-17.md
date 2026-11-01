@@ -8,6 +8,155 @@ Newest first.
 
 ---
 
+## 2026-11-01: glowlight enrichment hero (all four new tetra sets complete)
+
+`/assets/images/glowlight-tetra-enrichment.jpg`, Adobe Firefly with Nano Banana
+2, owner approved: a school of glowlights in a dark, tannin-stained forest
+stream among roots and leaf litter. With it the ember, rummy-nose, black skirt
+and glowlight sets (hub heads and six heroes each) and the tetras group page
+photo are all on disk, and NEEDS_IMAGE.md holds no tetra items. 3:2, resized to
+1168x784 through mozjpeg at quality 80. Recorded in IMAGE_CREDITS.md.
+
+## 2026-11-01: glowlight health issues hero
+
+`/assets/images/glowlight-tetra-health-issues.jpg`, Adobe Firefly with Nano
+Banana 2, owner approved: a rack of blank water test tubes with clean
+readings in front of a planted tank, the school soft behind. 3:2, resized to
+1168x784 through mozjpeg at quality 80. Recorded in IMAGE_CREDITS.md.
+
+## 2026-11-01: glowlight handling hero
+
+`/assets/images/glowlight-tetra-handling.jpg`, Adobe Firefly with Nano Banana
+2, owner approved on the second try (the first bag was two thirds water,
+against the guide's one part water to three parts air): a mostly-air bag of
+glowlights in a cardboard box on a car seat. 3:2, resized to 1168x784 through
+mozjpeg at quality 80. Recorded in IMAGE_CREDITS.md.
+
+## 2026-11-01: glowlight feeding hero
+
+`/assets/images/glowlight-tetra-feeding.jpg`, Adobe Firefly with Nano Banana 2,
+owner approved on the third try (the first showed a cloud of white daphnia, an
+overfeeding the guide warns against; the second drew each daphnia near the
+size of a fish's head): about two dozen live daphnia, each about the size of a
+fish's eye. 3:2, resized to 1168x784 through mozjpeg at quality 80. Recorded in
+IMAGE_CREDITS.md.
+
+## 2026-11-01: glowlight tank setup hero
+
+`/assets/images/glowlight-tetra-tank-setup.jpg`, Adobe Firefly with Nano
+Banana 2, owner approved on the third try (the first drew orange-bodied,
+identical fish; the second showed the tank's side panels, which made it read
+narrow): framed inside the front glass, sand edge to edge, open middle,
+clear-bodied fish. 3:2, resized to 1168x784 through mozjpeg at quality 80.
+Recorded in IMAGE_CREDITS.md.
+
+## 2026-11-01: glowlight cost hero
+
+`/assets/images/glowlight-tetra-cost.jpg`, Adobe Firefly with Nano Banana 2,
+owner approved on the second try (the first put printing on the heater and
+readable book spines in frame): a 20-gallon on a stand against the wall with
+sponge filters, heater and light showing. 3:2, resized to 1168x784 through
+mozjpeg at quality 80. Recorded in IMAGE_CREDITS.md.
+
+## 2026-11-01: glowlight hub head
+
+`/assets/guides/glowlight-tetra.jpg`, shared by the hub and the encyclopedia
+entry. Adobe Firefly with Nano Banana 2, owner approved: clear bodies with the
+single glowing line, red upper eye and white fin tips. 3:2, resized to
+1168x784 through mozjpeg at quality 80. Recorded in IMAGE_CREDITS.md.
+
+## 2026-11-01: black skirt handling hero (black skirt set complete)
+
+`/assets/images/black-skirt-tetra-handling.jpg`, Adobe Firefly with Nano Banana
+2, owner approved: one fish nipping at another's tail end while the school
+chases around them. With it the black skirt set (hub head and six heroes) is
+done. 3:2, resized to 1168x784 through mozjpeg at quality 80. Recorded in
+IMAGE_CREDITS.md.
+
+## 2026-11-01: black skirt tank setup hero
+
+`/assets/images/black-skirt-tetra-tank-setup.jpg`, Adobe Firefly with Nano
+Banana 2, owner approved on the second try (the first drew a tank nearly as
+tall as it was wide and a school of identical poses): a long, low tank with
+plants at both ends and open water in the middle. 3:2, resized to 1168x784
+through mozjpeg at quality 80. Recorded in IMAGE_CREDITS.md.
+
+## 2026-11-01: black skirt feeding hero
+
+`/assets/images/black-skirt-tetra-feeding.jpg`, Adobe Firefly with Nano Banana
+2, owner approved: four fish taking bloodworm, the grayer coloring of older
+fish. 3:2, resized to 1168x784 through mozjpeg at quality 80. Recorded in
+IMAGE_CREDITS.md.
+
+## 2026-11-01: black skirt cost hero
+
+`/assets/images/black-skirt-tetra-cost.jpg`, Adobe Firefly with Nano Banana 2,
+owner approved: a 20-gallon long against the wall with the filter, heater and
+light showing. 3:2, resized to 1168x784 through mozjpeg at quality 80.
+Recorded in IMAGE_CREDITS.md.
+
+## 2026-11-01: black skirt hub head, enrichment and health issues heroes
+
+`/assets/guides/black-skirt-tetra.jpg` (hub and encyclopedia entry) and
+`/assets/images/black-skirt-tetra-{enrichment,health-issues}.jpg`, Adobe
+Firefly with Nano Banana 2, owner approved. The hub frame came from a prompt
+that names the species' marks (two bold bars, black rear half, skirt-like anal
+fin, clear tail) after a first frame drew three thin bars. The health frame
+shows two fish with full fins and dark tails, closer to the long-fin form,
+which suits a page about fin damage. 3:2, resized to 1168x784 through mozjpeg
+at quality 80. Recorded in IMAGE_CREDITS.md.
+
+## 2026-11-01: rummy-nose cost hero, ember cost hero replaced
+
+`/assets/images/rummy-nose-tetra-cost.jpg` completes the rummy-nose set, and
+`/assets/images/ember-tetra-cost.jpg` replaces the 2026-10-31 frame, which
+showed no filter or heater on a guide about setup costs. The ember frame was swapped the same day for a
+second Nano Banana 2 frame from a shorter prompt, preferred by the owner. Both show the working
+equipment with no lettering, on a stand against the wall with the cords out of
+sight. Adobe Firefly with Nano Banana 2 (Flare drew headless, two-tailed fish on
+these prompts), owner approved. 3:2, resized to 1168x784 through mozjpeg at
+quality 80. Recorded in IMAGE_CREDITS.md.
+
+## 2026-11-01: rummy-nose tank setup and handling heroes
+
+`/assets/images/rummy-nose-tetra-{tank-setup,handling}.jpg`, Adobe Firefly
+with GPT Image 2.5 Flare, owner approved, after the Nano Banana 2 versions drew
+the schools as identical copies. 3:2, resized to 1168x784 through mozjpeg at
+quality 80. Recorded in IMAGE_CREDITS.md.
+
+## 2026-11-01: rummy-nose feeding, health issues and enrichment heroes
+
+`/assets/images/rummy-nose-tetra-{feeding,health-issues,enrichment}.jpg`, Adobe
+Firefly with Nano Banana 2, owner approved. 3:2, resized to 1168x784 through
+mozjpeg at quality 80. The cost, tank setup and handling frames were sent back
+(a malformed tank, and schools drawn as identical copies) and stay open in
+NEEDS_IMAGE.md. Recorded in IMAGE_CREDITS.md.
+
+## 2026-11-01: tetras group page head
+
+`/assets/guides/tetras.jpg`, the photo for "Tetra Care: The Essentials". Four
+Nano Banana 2 attempts came back with fish that looked pasted on, or with one
+species only (that one became the rummy-nose hub head); the accepted frame is
+GPT Image 2.5 Flare. It shows cardinal, rummy-nose and black skirt tetras. 3:2,
+resized to 1168x784 through mozjpeg at quality 80. Recorded in IMAGE_CREDITS.md.
+
+## 2026-11-01: rummy-nose tetra hub head
+
+`/assets/guides/rummy-nose-tetra.jpg`, shared by the hub and the encyclopedia
+entry. An Adobe Firefly frame first generated for the tetras group page, which
+the owner turned down there as one species and placed here instead. 3:2,
+resized to 1168x784 through mozjpeg at quality 80. Recorded in IMAGE_CREDITS.md.
+
+## 2026-10-31: ember tetra set
+
+Seven Adobe Firefly images from the prompts in IMAGE_PROMPTS.md, approved by
+the owner one by one (the health hero was regenerated once: the first had gold
+fish and a heater with a printed scale). Hub and encyclopedia head
+`/assets/guides/ember-tetra.jpg`, and guide heroes
+`/assets/images/ember-tetra-{cost,tank-setup,feeding,handling,health-issues,enrichment}.jpg`.
+All 3:2 at 1168x784 through mozjpeg at quality 80; the hub and feeding frames
+arrived 4:3 and were cropped. Recorded in IMAGE_CREDITS.md.
+
 ## 2026-10-20: three Canva title cards replaced with photos
 
 Facts 134 (anglerfish), 142 (star-nosed mole) and 176 (vampire bat) showed

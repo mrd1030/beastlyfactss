@@ -352,6 +352,15 @@
       "tagline": "The escape artist sled dog that needs a job and a secure fence."
     },
     {
+      "id": "tetras",
+      "name": "Tetra Care: The Essentials",
+      "emoji": "🐟",
+      "difficulty": "Beginner",
+      "petType": "Fish",
+      "image": "/assets/guides/tetras.jpg",
+      "tagline": "The small schooling fish that share one set of rules and differ on almost every number!"
+    },
+    {
       "id": "angelfish",
       "name": "Angelfish",
       "emoji": "🐠",
@@ -404,6 +413,15 @@
       "petType": "Fish",
       "image": "/assets/guides/discus.jpg",
       "tagline": "The king of the aquarium, and it knows exactly how good it looks!"
+    },
+    {
+      "id": "ember-tetra",
+      "name": "Ember Tetra",
+      "emoji": "🐠",
+      "difficulty": "Beginner",
+      "petType": "Fish",
+      "image": "/assets/guides/ember-tetra.jpg",
+      "tagline": "The tiny orange schooler that glows like a coal against dark plants!"
     },
     {
       "id": "goldfish",

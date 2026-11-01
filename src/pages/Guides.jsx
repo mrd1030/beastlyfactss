@@ -10,7 +10,8 @@ import { dogGuides } from '@/lib/data/guides/dogs';
 import { catGuides } from '@/lib/data/guides/cats';
 import { difficultyColor } from '@/lib/data/encyclopedia';
 import BrowseRow from '@/components/shared/BrowseRow';
-import { groupGuides } from '@/lib/data/guideGroups';
+import { groupGuides, nestByHub, memberLabel, groupNameOf, groupChips, matchesSubtype } from '@/lib/data/guideGroups';
+import BrowseGroup from '@/components/shared/BrowseGroup';
 import { DifficultyLegend } from '@/components/shared/DifficultyLegend';
 import { trackEvent } from '@/lib/analytics';
 import { BookOpen, BookOpen as BadgeIcon } from 'lucide-react';
@@ -51,7 +52,16 @@ const subtypes = {
   Cats: ['Domestic Shorthair', 'Maine Coon', 'Siamese', 'Ragdoll', 'Bengal', 'Persian'],
   Invertebrates: ['Emperor Scorpion', 'Giant African Millipede', 'Hermit Crab', 'Jumping Spider', 'Madagascar Hissing Cockroach', 'Praying Mantis', 'Stick Insect', 'Tarantula'],
   Amphibians: ['Axolotl', 'Fire-Bellied Toad', 'Pacman Frog', 'Tiger Salamander', "White's Tree Frog"],
-  Fish: ['Angelfish', 'Betta Fish', 'Corydoras Catfish', 'Goldfish', 'Guppy', 'Koi', 'Neon Tetra', 'Oscar'],
+  Fish: ['Angelfish', 'Betta Fish', 'Corydoras Catfish', 'Goldfish', 'Guppy', 'Koi', 'Oscar'],
+};
+
+// The fixed chips plus one per group hub in the category ("Tetras"), which
+// filters by group membership rather than by name. A category that gains a
+// group chip lists its chips alphabetically.
+const chipsFor = (category) => {
+  const groups = groupChips(category);
+  const fixed = subtypes[category] || [];
+  return groups.length ? [...fixed, ...groups].sort((a, b) => a.localeCompare(b)) : fixed;
 };
 
 const resolveFilter = (slug) => {
@@ -92,14 +102,14 @@ export default function Guides() {
       base = activeSubtype ? catGuides.filter(g => g.name.includes(activeSubtype)) : catGuides;
     } else if (directMatchCategories.has(activeFilter)) {
       const byType = allGuides.filter(g => g.petType === activeFilter);
-      base = activeSubtype ? byType.filter(g => g.name.includes(activeSubtype)) : byType;
+      base = activeSubtype ? byType.filter(g => matchesSubtype(g, activeSubtype)) : byType;
     } else {
       base = allGuides;
     }
 
     const q = search.trim().toLowerCase();
     if (!q) return base;
-    return base.filter(g => g.name.toLowerCase().includes(q) || g.petType.toLowerCase().includes(q));
+    return base.filter(g => g.name.toLowerCase().includes(q) || g.petType.toLowerCase().includes(q) || groupNameOf(g.id).toLowerCase().includes(q));
   }, [activeFilter, dogSize, activeSubtype, search]);
 
   // The rows carry no picture big enough to signal what a guide is about, so
@@ -245,13 +255,13 @@ export default function Guides() {
           </div>
         )}
 
-        {activeFilter !== 'All' && subtypes[activeFilter] && (
+        {activeFilter !== 'All' && chipsFor(activeFilter).length > 0 && (
           <div className="flex flex-wrap gap-1.5 mb-4">
             <button onClick={() => setActiveSubtype(null)}
               className={`px-2.5 py-1 rounded-full text-xs font-body font-semibold transition-all ${activeSubtype === null ? 'bg-primary/20 text-primary' : 'text-muted-foreground hover:text-foreground'}`}>
               All
             </button>
-            {subtypes[activeFilter].map(sub => (
+            {chipsFor(activeFilter).map(sub => (
               <button key={sub}
                 onClick={() => {
                   const next = activeSubtype === sub ? null : sub;
@@ -278,21 +288,35 @@ export default function Guides() {
               <h2 className="font-display font-bold text-base text-foreground mb-3 flex items-center gap-2">
                 <GroupIcon name={group.name} className="w-4 h-4 text-secondary" />{group.name}
               </h2>
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
-                {group.guides.map((guide) => (
-                  <BrowseRow
-                    key={guide.id}
-                    to={`/guides/${guide.id}/`}
-                    name={guide.name}
-                    subtitle={guide.tagline}
-                    image={guide.image}
-                    emoji={guide.emoji}
-                    difficulty={guide.difficulty}
-                    difficultyClass={difficultyColor[guide.difficulty]}
-                    onOpenLegend={() => setIsLegendOpen(true)}
-                    returnTo={activeFilter === 'All' ? '/guides/' : `/guides/category/${toSlug(activeFilter)}/`}
-                  />
-                ))}
+              <div className="grid grid-flow-row-dense grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
+                {nestByHub(group.guides, (g) => g.id, (g) => g.name).map((entry) => {
+                  const returnTo = activeFilter === 'All' ? '/guides/' : `/guides/category/${toSlug(activeFilter)}/`;
+                  const rowFor = (guide) => ({
+                    to: `/guides/${guide.id}/`,
+                    name: guide.name,
+                    subtitle: guide.tagline,
+                    image: guide.image,
+                    emoji: guide.emoji,
+                    difficulty: guide.difficulty,
+                    difficultyClass: difficultyColor[guide.difficulty],
+                    onOpenLegend: () => setIsLegendOpen(true),
+                    returnTo,
+                  });
+                  return entry.hub ? (
+                    <BrowseGroup
+                      key={entry.hub.id}
+                      name={entry.hub.branches.groupName || entry.hub.name}
+                      subtitle={memberLabel(entry.members)}
+                      count={entry.members.length}
+                      defaultOpen={!!search.trim() || !!activeSubtype}
+                    >
+                      <BrowseRow {...rowFor(entry.hub)} />
+                      {entry.members.map((guide) => <BrowseRow key={guide.id} {...rowFor(guide)} />)}
+                    </BrowseGroup>
+                  ) : (
+                    <BrowseRow key={entry.item.id} {...rowFor(entry.item)} />
+                  );
+                })}
               </div>
             </motion.div>
           ))

@@ -2085,8 +2085,8 @@
     },
     {
       "slug": "cardinal-tetra-cost-guide",
-      "title": "Cardinal Tetra Price: About $3 Each, Plus $95 to $345 Setup",
-      "excerpt": "Cardinal tetras cost about the same as their neon tetra cousins, but they're typically kept in a slightly bigger school, and a real Amazon fishery of wild-caught fish sits behind part of the price.",
+      "title": "Cardinal Tetra Price: $3.30 to $8 Each, $115 to $275 Setup",
+      "excerpt": "Cardinal tetras cost a little more than their neon tetra cousins, and an Amazon fishery of wild-caught fish sits behind part of the price. They are bought as a school of 10, not one fish.",
       "date": "2026-09-05",
       "image": "/assets/images/cardinal-tetra-cost.jpg",
       "category": "Fish",
@@ -2098,7 +2098,7 @@
     {
       "slug": "cardinal-tetra-enrichment-guide",
       "title": "Cardinal Tetra Enrichment Guide",
-      "excerpt": "Unlike almost everything else in the shop, most cardinal tetras are caught in the Rio Negro rather than bred. That changes what the first month should look like.",
+      "excerpt": "Unlike almost everything else in the shop, a large share of cardinal tetras are caught in the Rio Negro rather than bred. That changes what the first month should look like.",
       "date": "2026-09-04",
       "image": "/assets/images/cardinal-tetra-enrichment.jpg",
       "category": "Enrichment",
@@ -2110,7 +2110,7 @@
     {
       "slug": "cardinal-tetra-feeding-guide",
       "title": "What Do Cardinal Tetras Eat? Diet and Feeding Schedule",
-      "excerpt": "Cardinal tetra feeding is simple in principle, small food in small amounts, but the rule that protects the school has nothing to do with portions: never leave a dead fish in the tank.",
+      "excerpt": "Cardinal tetra feeding is simple in principle: small food in small amounts. But the rule that protects the school has nothing to do with portions: never leave a dead fish in the tank.",
       "date": "2026-09-06",
       "image": "/assets/images/cardinal-tetra-feeding.jpg",
       "category": "Fish",
@@ -2122,7 +2122,7 @@
     {
       "slug": "cardinal-tetra-handling-guide",
       "title": "Handling Cardinal Tetras: School Size Matters",
-      "excerpt": "Cardinal tetras are an observation pet, not a hands-on one. The welfare consideration isn't handling technique, it's group size, and this species wants a bigger group than most beginners expect.",
+      "excerpt": "Cardinal tetras are an observation pet, not a hands-on one. The welfare consideration isn't handling technique: it's group size, and ten is the number to plan for.",
       "date": "2026-09-07",
       "image": "/assets/images/cardinal-tetra-handling.jpg",
       "category": "Fish",
@@ -2146,7 +2146,7 @@
     {
       "slug": "cardinal-tetra-tank-setup-guide",
       "title": "Cardinal Tetra Tank Setup Guide",
-      "excerpt": "Cardinal tetras come from soft, dim, tannin-stained blackwater streams, the same origin as neon tetra, but they run warmer and want a slightly bigger group once the tank is set up right.",
+      "excerpt": "Cardinal tetras come from soft, dim, tannin-stained blackwater streams, the same origin as neon tetra, but they run warmer and want a tank set up right for a school of 10.",
       "date": "2026-09-09",
       "image": "/assets/images/cardinal-tetra-tank-setup.jpg",
       "category": "Fish",
@@ -3322,6 +3322,78 @@
       "category": "Wild Animals",
       "categories": [
         "Wild Animals"
+      ],
+      "animalDay": null
+    },
+    {
+      "slug": "ember-tetra-cost-guide",
+      "title": "Ember Tetra Cost: $25 to $35 for 10, $95 to $245 Setup",
+      "excerpt": "Ember tetras are bought ten at a time, and the whole school costs a fraction of the tank it lives in. The money goes into a planted 10 gallon setup and a spare tank for quarantine.",
+      "date": "2026-11-01",
+      "image": "/assets/images/ember-tetra-cost.jpg",
+      "category": "Fish",
+      "categories": [
+        "Fish"
+      ],
+      "animalDay": null
+    },
+    {
+      "slug": "ember-tetra-enrichment-guide",
+      "title": "Ember Tetra Enrichment Guide",
+      "excerpt": "In clear Brazilian water an ember tetra shoal hides from above with its dark backs and moves every few minutes while pike cichlids hunt nearby. The tank should give it the same cover.",
+      "date": "2026-11-01",
+      "image": "/assets/images/ember-tetra-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
+      ],
+      "animalDay": null
+    },
+    {
+      "slug": "ember-tetra-feeding-guide",
+      "title": "What Do Ember Tetras Eat? Diet and Feeding Schedule",
+      "excerpt": "An ember tetra is about 0.8 inch long, and its diet is sized to match: tiny slow-sinking staples, small live and frozen prey, and portions the school can clear.",
+      "date": "2026-11-01",
+      "image": "/assets/images/ember-tetra-feeding.jpg",
+      "category": "Fish",
+      "categories": [
+        "Fish"
+      ],
+      "animalDay": null
+    },
+    {
+      "slug": "ember-tetra-handling-guide",
+      "title": "Ember Tetra Handling: Netting, Acclimation, School Size",
+      "excerpt": "Nobody picks up an ember tetra. The handling this 0.8-inch fish gets is a net, a bag and an hour of acclimation, and each step has its own way to go wrong.",
+      "date": "2026-11-01",
+      "image": "/assets/images/ember-tetra-handling.jpg",
+      "category": "Fish",
+      "categories": [
+        "Fish"
+      ],
+      "animalDay": null
+    },
+    {
+      "slug": "ember-tetra-health-issues-guide",
+      "title": "Ember Tetra Health Issues: Ich, Water and Signs",
+      "excerpt": "No disease belongs to the ember tetra in particular. Most of what goes wrong starts in the water or arrives with a new fish, and ich is treated differently here because the heat cure runs too hot.",
+      "date": "2026-11-01",
+      "image": "/assets/images/ember-tetra-health-issues.jpg",
+      "category": "Fish",
+      "categories": [
+        "Fish"
+      ],
+      "animalDay": null
+    },
+    {
+      "slug": "ember-tetra-tank-setup-guide",
+      "title": "Ember Tetra Tank Setup Guide",
+      "excerpt": "Ember tetras come from soft, weakly acidic backwaters in central Brazil, and a tank for a school of 10 recreates that water: 10 gallons, 75 to 82°F, gentle flow and dense plants.",
+      "date": "2026-11-01",
+      "image": "/assets/images/ember-tetra-tank-setup.jpg",
+      "category": "Fish",
+      "categories": [
+        "Fish"
       ],
       "animalDay": null
     },
@@ -6450,7 +6522,7 @@
     },
     {
       "slug": "neon-tetra-cost-guide",
-      "title": "Neon Tetra Price: $1 to $5 Each, Plus $95 to $315 Setup",
+      "title": "Neon Tetra Price: $1 to $5 Each, Plus $115 to $245 Setup",
       "excerpt": "Neon tetras are one of the most affordable fish you can keep, cheap individually and cheap as a group. Cost planning here starts with buying several at once, not just one.",
       "date": "2026-07-21",
       "image": "/assets/images/neon-tetra-cost.jpg",
@@ -6475,7 +6547,7 @@
     {
       "slug": "neon-tetra-feeding-guide",
       "title": "What Do Neon Tetras Eat? Diet and Feeding Schedule",
-      "excerpt": "Neon tetra feeding is simple in principle, small food in small amounts, but the one rule that protects the school has nothing to do with portions: never leave a dead fish in the tank.",
+      "excerpt": "Neon tetra feeding is simple in principle: small food in small amounts. But the one rule that protects the school has nothing to do with portions: never leave a dead fish in the tank.",
       "date": "2026-08-13",
       "image": "/assets/images/neon-tetra-feeding.jpg",
       "category": "Fish",

@@ -74,9 +74,31 @@ export const fishSheets = {
       { item: "fish-food-sinking-wafers", text: "First supply of [sinking wafers]" },
     ],
   },
-  'cardinal-tetra': {
+  // animal is a school of 12: plain, white and long-fin skirts at $3 to $6 a
+  // fish in stores (retailer observations, 2026-10-31), rounded outward to $5.
+  // GloFish skirts ($12 to $13 each) are priced in the guide's prose only.
+  'black-skirt-tetra': {
+    animal: [35, 75],
     necessities: [
-      { item: "cardinal-tetra-10-20-gallon-tank", text: "[10-20 gallon tank]" },
+      { item: "bristlenose-pleco-20-gallon-long-tank", text: "[20 gallon long tank] with a 30 x 12 inch footprint" },
+      { item: "angelfish-aquarium-heater", text: "[Aquarium heater]" },
+      { item: "neon-tetra-gentle-filter", text: "[Gentle filter]" },
+      { item: "angelfish-dense-live-silk-plants", text: "[Live plants] in dense clumps, with floating plants on top" },
+      { item: "sand-caribsea-10lb", qty: 2, text: "Two 10 lb bags of [sand] (check the quantity against your tank's floor)" },
+      { item: "water-test-kit-liquid", text: "Liquid [water test kit]" },
+      { item: "water-conditioner", text: "[Water conditioner] that neutralizes chlorine and chloramine" },
+      { item: "fish-food-micro-pellets", text: "First supply of [micro pellets]" },
+    ],
+    extras: [
+      { item: "bristlenose-pleco-20-gallon-long-tank", text: "Bare [20 gallon long tank] for quarantine, with no substrate or decor" },
+      { item: "angelfish-aquarium-heater", text: "[Heater] for the quarantine tank" },
+      { item: "neon-tetra-gentle-filter", text: "[Sponge filter] for the quarantine tank" },
+    ],
+  },
+  'cardinal-tetra': {
+    animal: [35, 80],
+    necessities: [
+      { item: "bristlenose-pleco-20-gallon-long-tank", text: "[20 gallon long tank] for a school of 10" },
       { item: "angelfish-aquarium-heater", text: "[Aquarium heater]" },
       { item: "fire-bellied-toad-small-aquarium-filter-water", text: "[Gentle filter]" },
       { item: "angelfish-dense-live-silk-plants", text: "[Dense live plants]" },
@@ -113,6 +135,44 @@ export const fishSheets = {
       { item: "angelfish-dense-live-silk-plants", text: "[Broad-leafed live plants]" },
       { item: "water-conditioner", text: "[Water conditioner] that neutralizes chlorine and chloramine" },
       { item: "fish-food-discus", text: "First supply of [discus pellets]" },
+    ],
+  },
+  // animal is a school of 10: $2.50 to $3.50 a fish online before shipping
+  // (retailer observations, 2026-10-31), rounded outward to $5.
+  'ember-tetra': {
+    animal: [25, 35],
+    necessities: [
+      { item: "guppy-10-gallon-tank", text: "[10 gallon tank] with an 18 x 12 inch footprint" },
+      { item: "guppy-aquarium-heater", text: "[Aquarium heater]" },
+      { item: "neon-tetra-gentle-filter", text: "[Gentle filter]" },
+      { item: "neon-tetra-dense-live-silk-plants", text: "[Dense live plants]" },
+      { item: "sand-caribsea-10lb", qty: 1, text: "Dark fine [sand] (check the quantity against your tank's floor)" },
+      { item: "water-test-kit-liquid", text: "Liquid [water test kit]" },
+      { item: "water-conditioner", text: "[Water conditioner] that neutralizes chlorine and chloramine" },
+      { item: "fish-food-micro-pellets", text: "First supply of [micro pellets]" },
+    ],
+    extras: [
+      { item: "goldfish-bare-10-gallon-tank", text: "Bare [10 gallon tank] for quarantine, with no substrate or decor" },
+      { item: "guppy-aquarium-heater", text: "[Heater] for the quarantine tank" },
+      { item: "neon-tetra-gentle-filter", text: "[Sponge filter] for the quarantine tank" },
+    ],
+  },
+  'glowlight-tetra': {
+    animal: [30, 50],
+    necessities: [
+      { item: "molly-20-gallon-tank", text: "[20 gallon tank] with a base of at least 24 x 15 inches" },
+      { item: "angelfish-aquarium-heater", text: "[Aquarium heater]" },
+      { item: "neon-tetra-gentle-filter", text: "[Sponge filter]" },
+      { item: "neon-tetra-dense-live-silk-plants", text: "[Live plants] in varied heights, with floating plants on top" },
+      { item: "sand-caribsea-10lb", qty: 1, text: "Fine [sand] (check the quantity against your tank's floor)" },
+      { item: "water-test-kit-liquid", text: "Liquid [water test kit]" },
+      { item: "water-conditioner", text: "[Water conditioner] that neutralizes chlorine and chloramine" },
+      { item: "fish-food-micro-pellets", text: "First supply of [micro pellets]" },
+    ],
+    extras: [
+      { item: "goldfish-bare-10-gallon-tank", text: "Bare [10 gallon tank] for quarantine, with no substrate or decor" },
+      { item: "guppy-aquarium-heater", text: "[Heater] for the quarantine tank" },
+      { item: "neon-tetra-gentle-filter", text: "[Sponge filter] for the quarantine tank" },
     ],
   },
   'guppy': {
@@ -164,7 +224,7 @@ export const fishSheets = {
   'neon-tetra': {
     animal: [1, 5],
     necessities: [
-      { item: "cardinal-tetra-10-20-gallon-tank", text: "[10+ gallon tank]" },
+      { item: "bristlenose-pleco-20-gallon-long-tank", text: "[20 gallon long tank], at least 24 inches long, for a school of 10" },
       { item: "guppy-aquarium-heater", text: "[Aquarium heater]" },
       { item: "neon-tetra-gentle-filter", text: "[Gentle filter]" },
       { item: "neon-tetra-dense-live-silk-plants", text: "[Dense live or silk plants]" },
@@ -204,6 +264,26 @@ export const fishSheets = {
       { item: "water-test-kit-liquid", text: "Liquid [water test kit]" },
       { item: "water-conditioner", text: "[Water conditioner] that neutralizes chlorine and chloramine" },
       { item: "fish-food-micro-pellets", text: "First supply of [small pellets]" },
+    ],
+  },
+  // animal is a school of 12: about $4 to $6.50 a fish online before shipping
+  // (retailer observations, 2026-10-31), $48 to $75 a school, rounded outward to $5.
+  'rummy-nose-tetra': {
+    animal: [45, 80],
+    necessities: [
+      { item: "tank-36in-30-40-gallon", text: "[36-inch tank], 30 to 40 gallons (check the length before you buy)" },
+      { item: "angelfish-aquarium-heater", text: "[Aquarium heater] (check the wattage against your tank's volume)" },
+      { item: "neon-tetra-gentle-filter", text: "[Gentle filter] (check its rating against your tank's volume)" },
+      { item: "neon-tetra-dense-live-silk-plants", text: "[Live plants]" },
+      { item: "sand-caribsea-10lb", qty: 3, text: "Three 10 lb bags of fine [sand] (check the quantity against your tank's floor)" },
+      { item: "water-test-kit-liquid", text: "Liquid [water test kit]" },
+      { item: "water-conditioner", text: "[Water conditioner] that neutralizes chlorine and chloramine" },
+      { item: "fish-food-micro-pellets", text: "First supply of [micro pellets]" },
+    ],
+    extras: [
+      { item: "goldfish-bare-10-gallon-tank", text: "Bare [10 gallon tank] for quarantine, with no substrate or decor" },
+      { item: "guppy-aquarium-heater", text: "[Heater] for the quarantine tank" },
+      { item: "neon-tetra-gentle-filter", text: "[Sponge filter] for the quarantine tank" },
     ],
   },
   'swordtail': {

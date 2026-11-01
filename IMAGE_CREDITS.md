@@ -46,8 +46,8 @@ credit line follows the file, so it still shows wherever the photo does.
 New images record their tool here. Owner decision 2026-10-20: Grok's attribution
 is met with one line on the Terms and Image Credits pages ("created with Grok, or
 with Adobe Firefly"), not a label on each image, and the per-image record lives
-only in this file. The owner's uploads tell them apart: Grok images arrive as .jpg, Firefly
-images (Adobe's own model or its partner models) as .png. From 2026-10-20 the
+only in this file. The file type does not tell them apart: Firefly Image 4 also
+delivers .jpg (2026-11-01), so ask the owner which tool and model made each image. From 2026-10-20 the
 row names the Firefly model when it is a partner model (Gemini, GPT Image). Older images were not
 logged; known ones are Grok Imagine for the seven fact photos added 2026-07-06
 (blobfish, bombardier beetle, box jellyfish, Cuban tree frog, hagfish, hairy
@@ -74,3 +74,21 @@ frog, pen-tailed tree shrew) and Adobe Firefly for ids 287 to 296.
 | `christmas-pet-safety-guide.jpg` (guide hero, `public/assets/images/`) | Adobe Firefly | 2026-10-28 |
 | `new-years-eve-pet-safety-guide.jpg` (guide hero, `public/assets/images/`) | Adobe Firefly | 2026-10-28 |
 | `power-outage-pets-guide.jpg` (guide hero, `public/assets/images/`) | Adobe Firefly | 2026-10-28 |
+| `ember-tetra.jpg` (hub and encyclopedia head, `public/assets/guides/`); `ember-tetra-cost.jpg`, `-tank-setup.jpg`, `-feeding.jpg`, `-handling.jpg`, `-health-issues.jpg`, `-enrichment.jpg` (guide heroes, `public/assets/images/`). Hub and feeding cropped from 4:3 to 3:2 (hub centered, feeding kept to the top for the water surface); all resized to 1168x784 | Adobe Firefly, partner model Gemini 3.1 (Nano Banana 2) | 2026-10-31 |
+| `rummy-nose-tetra.jpg` (hub and encyclopedia head, `public/assets/guides/`), resized to 1168x784, not cropped. Generated from a prompt written for the tetras group page and moved to this slot by the owner | Adobe Firefly, partner model Gemini 3.1 (Nano Banana 2) | 2026-11-01 |
+| `tetras.jpg` (tetras group page head, `public/assets/guides/`), resized to 1168x784, not cropped. Shows cardinal, rummy-nose and black skirt tetras (the prompt asked for neons; the generator drew cardinals) | Adobe Firefly, partner model GPT Image 2.5 Flare | 2026-11-01 |
+| `rummy-nose-tetra-feeding.jpg`, `rummy-nose-tetra-health-issues.jpg`, `rummy-nose-tetra-enrichment.jpg` (guide heroes, `public/assets/images/`), resized to 1168x784, not cropped | Adobe Firefly, partner model Gemini 3.1 (Nano Banana 2) | 2026-11-01 |
+| `rummy-nose-tetra-tank-setup.jpg`, `rummy-nose-tetra-handling.jpg` (guide heroes, `public/assets/images/`), resized to 1168x784, not cropped | Adobe Firefly, partner model GPT Image 2.5 Flare | 2026-11-01 |
+| `rummy-nose-tetra-cost.jpg` (guide hero) and `ember-tetra-cost.jpg` (guide hero, replacing the 2026-10-31 frame, which showed no filter or heater), `public/assets/images/`, resized to 1168x784, not cropped | Adobe Firefly, partner model Gemini 3.1 (Nano Banana 2) | 2026-11-01 |
+| `black-skirt-tetra.jpg` (hub and encyclopedia head, `public/assets/guides/`); `black-skirt-tetra-enrichment.jpg`, `black-skirt-tetra-health-issues.jpg` (guide heroes, `public/assets/images/`), resized to 1168x784, not cropped | Adobe Firefly, partner model Gemini 3.1 (Nano Banana 2) | 2026-11-01 |
+| `black-skirt-tetra-cost.jpg` (guide hero, `public/assets/images/`), resized to 1168x784, not cropped | Adobe Firefly, partner model Gemini 3.1 (Nano Banana 2) | 2026-11-01 |
+| `black-skirt-tetra-feeding.jpg` (guide hero, `public/assets/images/`), resized to 1168x784, not cropped | Adobe Firefly, partner model Gemini 3.1 (Nano Banana 2) | 2026-11-01 |
+| `black-skirt-tetra-tank-setup.jpg` (guide hero, `public/assets/images/`), resized to 1168x784, not cropped | Adobe Firefly, partner model Gemini 3.1 (Nano Banana 2) | 2026-11-01 |
+| `black-skirt-tetra-handling.jpg` (guide hero, `public/assets/images/`), resized to 1168x784, not cropped | Adobe Firefly, partner model Gemini 3.1 (Nano Banana 2) | 2026-11-01 |
+| `glowlight-tetra.jpg` (hub and encyclopedia head, `public/assets/guides/`), resized to 1168x784, not cropped | Adobe Firefly, partner model Gemini 3.1 (Nano Banana 2) | 2026-11-01 |
+| `glowlight-tetra-cost.jpg` (guide hero, `public/assets/images/`), resized to 1168x784, not cropped | Adobe Firefly, partner model Gemini 3.1 (Nano Banana 2) | 2026-11-01 |
+| `glowlight-tetra-tank-setup.jpg` (guide hero, `public/assets/images/`), resized to 1168x784, not cropped | Adobe Firefly, partner model Gemini 3.1 (Nano Banana 2) | 2026-11-01 |
+| `glowlight-tetra-feeding.jpg` (guide hero, `public/assets/images/`), resized to 1168x784, not cropped | Adobe Firefly, partner model Gemini 3.1 (Nano Banana 2) | 2026-11-01 |
+| `glowlight-tetra-handling.jpg` (guide hero, `public/assets/images/`), resized to 1168x784, not cropped | Adobe Firefly, partner model Gemini 3.1 (Nano Banana 2) | 2026-11-01 |
+| `glowlight-tetra-health-issues.jpg` (guide hero, `public/assets/images/`), resized to 1168x784, not cropped | Adobe Firefly, partner model Gemini 3.1 (Nano Banana 2) | 2026-11-01 |
+| `glowlight-tetra-enrichment.jpg` (guide hero, `public/assets/images/`), resized to 1168x784, not cropped | Adobe Firefly, partner model Gemini 3.1 (Nano Banana 2) | 2026-11-01 |

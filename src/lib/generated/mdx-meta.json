@@ -2846,7 +2846,7 @@
     "title": "Treating Ich: Heat, Salt or Medication, and the Temperature Ceiling That Decides",
     "seoTitle": "Treating Ich: Heat, Salt or Medication",
     "seoDescription": "How to treat ich: the 86°F that stops it, the species whose ceiling is lower, salt for scaled fish, malachite green for the rest, and how long to keep going.",
-    "lastUpdated": "2026-09-25",
+    "lastUpdated": "2026-10-31",
     "noIndex": false,
     "excerpt": "Every fish health guide here says to treat ich by raising the temperature, and half of them say it about a species whose ceiling is below the number that works. This is the page that settles which fish can take the heat, which get salt, which get medication, and how long.",
     "date": "2026-09-16",
@@ -2873,7 +2873,7 @@
     "faqs": [
       {
         "q": "Can I treat ich with heat alone?",
-        "a": "Only if your fish can live at 86°F for two weeks, because that is the temperature most ich strains cannot survive, and it must be held with extra aeration since warm water carries less oxygen. Discus and cardinal tetras can. Goldfish, koi, zebra danios, neon tetras and bristlenose plecos cannot, and for them heat goes only as high as the species ceiling, to speed the cycle, while salt or medication does the killing."
+        "a": "Only if your fish can live at 86°F for two weeks, because that is the temperature most ich strains cannot survive, and it must be held with extra aeration since warm water carries less oxygen. Discus can, and cardinal tetras tolerate it in short spells, so for them it is possible with strong aeration, watched closely. Goldfish, koi, zebra danios, neon, ember, rummy-nose, black skirt and glowlight tetras, and bristlenose plecos cannot, and for them heat goes only as high as the species ceiling, to speed the cycle, while salt or medication does the killing."
       },
       {
         "q": "How long does ich treatment take?",
@@ -2977,7 +2977,7 @@
     "title": "Aquarium Stocking and Tankmates: How Many Fish, and Which Ones Go Together",
     "seoTitle": "Aquarium Stocking and Tankmates: How Many Fish Fit",
     "seoDescription": "How many fish fit in a tank and which species go together: why inch per gallon fails, the three real limits, the four compatibility checks, and group sizes.",
-    "lastUpdated": "2026-09-25",
+    "lastUpdated": "2026-10-31",
     "noIndex": false,
     "excerpt": "Every species page gives a minimum tank size and stops. This is the page after the minimum: what the inch-per-gallon rule gets wrong, the three things that set how many fish a tank holds, the four checks that decide whether two species can share it, and the group sizes the research supports.",
     "date": "2026-09-16",
@@ -3018,6 +3018,10 @@
       {
         "q": "My tank is at the minimum for its species. Can I add more fish?",
         "a": "Only if the nitrate test says the filter and the water changes are keeping up: under 20 ppm before the weekly change, with room in the tank for every fish at adult size. Add a few at a time, retest for two weeks, and stop at the first reading that creeps. Understocked and growing into it is the version that works."
+      },
+      {
+        "q": "Can different tetra species school together?",
+        "a": "Not as one school. Two neons, four embers and four cardinals are three small groups, each below the floor of six, rather than one school of 10. Give each species its own full school in a tank and water that suit all of them, or keep a single species."
       }
     ],
     "relatedProducts": [
@@ -6087,7 +6091,24 @@
     "lastReviewed": "2026-10-08",
     "author": "Michael Ryan",
     "canonicalUrl": null,
-    "faqs": [],
+    "faqs": [
+      {
+        "q": "Is it legal to own a Bengal cat in the US?",
+        "a": "In most of the country, yes. Nearly thirty states have no rule that reaches a Bengal, usually because their cat restrictions are written by genus and the Asian leopard cat is not on them. Where a rule does reach it, the answer turns on filial generation, on weight, or on a blanket hybrid ban, so it depends on the state and on the cat's paperwork."
+      },
+      {
+        "q": "What do F1, F4 and F5 mean for a Bengal?",
+        "a": "F1 is the first cross between a domestic cat and an Asian leopard cat, and each generation bred back to a domestic cat adds one. By F4 the cat is fifteen sixteenths domestic on paper, which is the point from which Bengals are generally sold as pets, and that number is what most state laws turn on even when they never say the word Bengal."
+      },
+      {
+        "q": "Which states ban Bengal cats with no exception?",
+        "a": "New York City, Alaska, Hawaii and Georgia have no version of the cat you can legally keep: no generation rule, no weight test, no registry carve-out. Minnesota reads as a ban on one sentence of its definition and as an exemption on another, so treat it as a no until your own animal control authority says otherwise in writing."
+      },
+      {
+        "q": "Are Bengal cats legal in New York?",
+        "a": "In New York State an F5 or later Bengal is a domestic cat under Environmental Conservation Law § 11-0103(6)(e), and F1 to F4 are wild animals. New York City is separate: Health Code 161.01(b) bans any hybrid offspring of a wild cat and a domestic cat, so the five-generation carve-out that works in Buffalo does not help in the five boroughs."
+      }
+    ],
     "relatedProducts": [],
     "factFile": false,
     "animalDay": null,
@@ -11785,12 +11806,12 @@
   {
     "path": "/content/guides/cardinal-tetra-cost-guide.mdx",
     "slug": "cardinal-tetra-cost-guide",
-    "title": "How Much Does Cardinal Tetra Ownership Really Cost?",
-    "seoTitle": "Cardinal Tetra Price: About $3 Each, Plus $95 to $345 Setup",
-    "seoDescription": "Cardinal tetra cost breakdown: about $3 per fish, $95 to $345 for a starter setup, and why the school runs 8-10 rather than 6.",
-    "lastUpdated": "2026-10-06",
+    "title": "How Much Does Cardinal Tetra Ownership Cost?",
+    "seoTitle": "Cardinal Tetra Price: $3.30 to $8 Each, $115 to $275 Setup",
+    "seoDescription": "Cardinal tetra cost breakdown: $3.30 to $8 per fish, about $35 to $80 for a school of 10, and $115 to $275 for a starter setup on a 20-gallon long tank.",
+    "lastUpdated": "2026-11-01",
     "noIndex": false,
-    "excerpt": "Cardinal tetras cost about the same as their neon tetra cousins, but they're typically kept in a slightly bigger school, and a real Amazon fishery of wild-caught fish sits behind part of the price.",
+    "excerpt": "Cardinal tetras cost a little more than their neon tetra cousins, and an Amazon fishery of wild-caught fish sits behind part of the price. They are bought as a school of 10, not one fish.",
     "date": "2026-09-05",
     "category": "Fish",
     "categories": [
@@ -11815,27 +11836,26 @@
     "faqs": [
       {
         "q": "How much does a cardinal tetra cost?",
-        "a": "Around $3 each online, and the per-fish price drops in bigger packs. You buy a school, not one fish: 8 to 10 comes to roughly $25 to $30."
+        "a": "About $3.30 to $8 each for tank-bred stock, and the per-fish price drops in bigger packs. You buy a school, not one fish: a school of 10 comes to about $35 to $80 before shipping."
       },
       {
         "q": "What does a basic cardinal tetra tank setup cost?",
-        "a": "Roughly $95 to $345 for a 10 to 20 gallon tank, a heater, a gentle filter, live plants, dark substrate, a water test kit, water conditioner and the first food. Basic decor comes on top."
+        "a": "Roughly $115 to $275 for a 20-gallon long tank, a heater, a gentle filter, live plants, dark substrate, a water test kit, water conditioner and the first food. Basic decor comes on top."
       },
       {
         "q": "What are the ongoing costs of keeping cardinal tetras?",
-        "a": "Low. A micro-pellet food runs roughly $15 to $30 a year, water conditioner $10 to $15 a year, and a water test kit is a $15 to $40 purchase you'll rely on more than once given how sensitive this species is to an incomplete nitrogen cycle."
+        "a": "Low. A micro-pellet food runs roughly $15 to $30 a year, water conditioner $10 to $15 a year, and a water test kit is a $15 to $40 purchase you'll rely on more than once given how sensitive this species is to nitrite and an incomplete nitrogen cycle."
       },
       {
-        "q": "Why do cardinal tetras sometimes cost slightly more than neon tetras?",
-        "a": "Historically, more of the cardinal tetra supply has come from a real, documented wild fishery on Brazil's Rio Negro rather than a farm, since the species is difficult to breed in captivity at commercial scale. Neon tetra, by comparison, is widely bred at commercial hatcheries with much less reliance on wild collection. That supply difference is part of why cardinal tetra prices sit at the higher end of the budget-tetra range rather than the very bottom of it."
+        "q": "Why do cardinal tetras cost more than neon tetras?",
+        "a": "A meaningful share of the cardinal tetra supply still comes from a documented wild fishery on Brazil's Rio Negro, since the species is difficult to breed at commercial scale. Neon tetra is widely bred at hatcheries with much less wild collection, and that difference is part of why cardinal prices sit higher in the budget-tetra range."
       },
       {
         "q": "How long do cardinal tetras live, and how does that affect budgeting?",
-        "a": "About five years in captivity under good, stable conditions, and individuals may reach ten. Budget for the equipment that keeps water stable over that whole span, not just the initial setup."
+        "a": "About five years in captivity under good, stable conditions. Budget for the equipment that keeps water stable over that whole span, not just the initial setup."
       }
     ],
     "relatedProducts": [
-      "tank-10-gallon",
       "tank-20-gallon-long",
       "submersible-aquarium-heater",
       "sponge-filter",
@@ -11858,12 +11878,12 @@
   {
     "path": "/content/guides/cardinal-tetra-enrichment-guide.mdx",
     "slug": "cardinal-tetra-enrichment-guide",
-    "title": "Cardinal Tetra Enrichment: Most of Them Are Still Wild",
+    "title": "Cardinal Tetra Enrichment: Many Are Still Wild",
     "seoTitle": "Cardinal Tetra Enrichment Guide",
-    "seoDescription": "Most cardinal tetras are wild caught from the Rio Negro. Blackwater conditions and a group of ten are what the fish is built for.",
-    "lastUpdated": "2026-09-14",
+    "seoDescription": "A large share of cardinal tetras are wild caught from the Rio Negro. Settle them slowly, keep a group of ten, and give them soft, tannin-stained water.",
+    "lastUpdated": "2026-11-01",
     "noIndex": false,
-    "excerpt": "Unlike almost everything else in the shop, most cardinal tetras are caught in the Rio Negro rather than bred. That changes what the first month should look like.",
+    "excerpt": "Unlike almost everything else in the shop, a large share of cardinal tetras are caught in the Rio Negro rather than bred. That changes what the first month should look like.",
     "date": "2026-09-04",
     "category": "Enrichment",
     "categories": [
@@ -11887,12 +11907,12 @@
     "canonicalUrl": null,
     "faqs": [
       {
-        "q": "Is there enrichment research on cardinal tetras?",
-        "a": "Not on the species. The closest evidence is the 2010 home aquarium study by Saxby and colleagues, which found groups of ten neon tetras showed improved welfare over smaller groups, with lower aggression and darting and faster feeding."
+        "q": "How long do wild-caught cardinal tetras take to settle?",
+        "a": "The first weeks are the risky stretch, because wild-caught fish cope worse with deteriorating water than commercially bred ones. Buying from a shop that has held them a while and keeping the tank dim and quiet in those weeks gives them the best start."
       },
       {
         "q": "How are cardinals different from neon tetras?",
-        "a": "Larger, longer lived, more expensive, and considerably more demanding on water. The red stripe runs the full length of the body rather than half of it. They also want softer, warmer, more acidic water than neons tolerate."
+        "a": "Larger, more expensive, and considerably more demanding on water. The red stripe runs the full length of the body, where a neon's covers only the back half. They also want warmer, more acidic water than neons tolerate."
       },
       {
         "q": "How many cardinal tetras are wild caught?",
@@ -11900,15 +11920,15 @@
       },
       {
         "q": "Is buying wild caught fish a problem?",
-        "a": "It is more complicated than it sounds here. The Rio Negro ornamental fishery is frequently cited as a case where the trade gives local communities an economic reason to keep the forest and river intact. That is a genuine argument and not a blanket endorsement of wild collection."
+        "a": "It is more complicated than it sounds here. The Rio Negro ornamental fishery is frequently cited as a case where the trade gives local communities an economic reason to keep the forest and river intact. That is a fair argument, and it falls short of an endorsement of wild collection."
       },
       {
         "q": "How many should I keep?",
-        "a": "Ten or more, following the neon tetra finding, and cardinals shoal more tightly and color up better in bigger groups. Six is a floor rather than a target."
+        "a": "Ten is the number to plan for. Eight is the least to buy."
       },
       {
         "q": "What water do they need?",
-        "a": "Soft, warm and acidic, ideally tannin-stained by wood and leaf litter. They tolerate harder water and they do not thrive in it, and this is the main reason cardinals fail in tanks where neons would have been fine."
+        "a": "Soft, warm and acidic, ideally tannin-stained by wood and leaf litter. Wild-caught fish cope worse with deteriorating water than tank-bred ones, so stability matters more here than it does for a neon."
       }
     ],
     "relatedProducts": [
@@ -11921,7 +11941,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2,
+    "sourceCount": 5,
     "headingCount": 10,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
@@ -11932,10 +11952,10 @@
     "slug": "cardinal-tetra-feeding-guide",
     "title": "Cardinal Tetra Feeding: Schedule, Diet, and the Rule That Prevents an Outbreak",
     "seoTitle": "What Do Cardinal Tetras Eat? Diet and Feeding Schedule",
-    "seoDescription": "Cardinal tetra feeding guide: micro-pellet portions, a twice-daily schedule, and the removal rule that guards against an incurable disease.",
-    "lastUpdated": "2026-09-25",
+    "seoDescription": "Cardinal tetra feeding guide: micro-pellet portions, a twice-daily schedule, and the one removal rule that guards the school against an incurable disease.",
+    "lastUpdated": "2026-11-01",
     "noIndex": false,
-    "excerpt": "Cardinal tetra feeding is simple in principle, small food in small amounts, but the rule that protects the school has nothing to do with portions: never leave a dead fish in the tank.",
+    "excerpt": "Cardinal tetra feeding is simple in principle: small food in small amounts. But the rule that protects the school has nothing to do with portions: never leave a dead fish in the tank.",
     "date": "2026-09-06",
     "category": "Fish",
     "categories": [
@@ -11961,23 +11981,23 @@
     "faqs": [
       {
         "q": "What do cardinal tetras eat?",
-        "a": "A high-quality micro-pellet or crushed flake as the staple, supplemented with live or frozen bloodworms, mosquito larvae, and daphnia. Moina is a good live option too. Cardinal tetras are small-mouthed fish, so food needs to be sized down, whole flakes and standard pellets are usually too large."
+        "a": "Mostly a good micro-pellet or finely crushed flake, with live or frozen bloodworms, mosquito larvae, daphnia and moina as extras. The mouth is small, so whole flakes and standard pellets are too big."
       },
       {
         "q": "How often should I feed cardinal tetras?",
-        "a": "Twice a day is the practical standard, offering only what the school finishes in a couple of minutes. This species feeds almost constantly in the wild, so some keepers split that into three or four smaller feedings a day instead."
+        "a": "Small feeds more than once a day, such as twice, giving only what the school clears in a couple of minutes. The fish grazes small prey through the day in the wild, so three or four smaller feeds also work."
       },
       {
         "q": "How do I know if I'm overfeeding my cardinal tetras?",
-        "a": "If food is still visible in the tank after a couple of minutes, cut back. Uneaten food decays and spikes ammonia and nitrite, and nitrite is the compound cardinal tetras tolerate worst, so overfeeding is a more direct threat to this fish than to a hardier species."
+        "a": "Leftover food after a couple of minutes means the portion was too big. Rotting scraps raise ammonia and nitrite, and cardinals are sensitive to nitrite while ammonia must read zero."
       },
       {
         "q": "What is neon tetra disease and how does feeding relate to it?",
-        "a": "An incurable parasite infection that cardinals catch despite the name. Fish contract it by eating infected tissue, often a tankmate's body. Removing any dead or visibly sick fish immediately is the only control available."
+        "a": "A parasitic infection with no cure, named for the neon but a risk for cardinals too. It passes on when tankmates nibble a dead or sick fish, so pulling that fish out at once is the only protection."
       },
       {
         "q": "Do cardinal tetras need vitamin supplements?",
-        "a": "No specific supplement is required beyond a varied diet. A mix of pellets and occasional live or frozen food covers their nutritional needs without anything extra."
+        "a": "No. Rotating live and frozen foods through the pellet staple supplies what the fish needs, so no vitamin or mineral additive is called for."
       }
     ],
     "relatedProducts": [
@@ -11988,7 +12008,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4,
+    "sourceCount": 5,
     "headingCount": 7,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
@@ -11997,12 +12017,12 @@
   {
     "path": "/content/guides/cardinal-tetra-handling-guide.mdx",
     "slug": "cardinal-tetra-handling-guide",
-    "title": "Cardinal Tetras Aren't Handled Either, But the School Size Rule Is Even Stricter",
+    "title": "Cardinal Tetras Aren't Handled Either, and School Size Is the Rule That Counts",
     "seoTitle": "Handling Cardinal Tetras: School Size Matters",
-    "seoDescription": "Cardinal tetras aren't hand-handled. The real welfare factor is school size, and most sources put the workable minimum at 8 to 10 fish.",
-    "lastUpdated": "2026-09-25",
+    "seoDescription": "Cardinal tetras aren't hand-handled. School size is the welfare factor that counts: buy at least eight, plan for ten, and bring them home slowly and dim.",
+    "lastUpdated": "2026-11-01",
     "noIndex": false,
-    "excerpt": "Cardinal tetras are an observation pet, not a hands-on one. The welfare consideration isn't handling technique, it's group size, and this species wants a bigger group than most beginners expect.",
+    "excerpt": "Cardinal tetras are an observation pet, not a hands-on one. The welfare consideration isn't handling technique: it's group size, and ten is the number to plan for.",
     "date": "2026-09-07",
     "category": "Fish",
     "categories": [
@@ -12031,7 +12051,7 @@
       },
       {
         "q": "How many cardinal tetras should I keep together?",
-        "a": "Ten is the number to plan for. Smaller groups turn pale, hide, and get sick more often from the stress."
+        "a": "Ten is the number to plan for, and eight is the least to buy. Cardinals are schooling fish that do best in a large group."
       },
       {
         "q": "What does a properly schooled group look like?",
@@ -12063,8 +12083,8 @@
     "slug": "cardinal-tetra-health-issues-guide",
     "title": "Common Cardinal Tetra Health Issues (Including a Disease Named After a Different Fish)",
     "seoTitle": "Cardinal Tetra Health Issues: Signs & Causes",
-    "seoDescription": "Common cardinal tetra health issues: neon tetra disease, ich, fin rot, and swim bladder disorder, with real symptoms, causes, and treatment.",
-    "lastUpdated": "2026-09-25",
+    "seoDescription": "Common cardinal tetra health issues: neon tetra disease, ich, fin rot, and swim bladder disorder, with symptoms, causes, treatment, and the water limits.",
+    "lastUpdated": "2026-11-01",
     "noIndex": false,
     "excerpt": "Most cardinal tetra health problems are treatable and trace back to water quality. One isn't, and it's named after a different, closely related fish entirely.",
     "date": "2026-09-08",
@@ -12091,23 +12111,23 @@
     "faqs": [
       {
         "q": "Can cardinal tetras get neon tetra disease?",
-        "a": "Yes. It's named after neon tetra specifically, but the parasite affects tetras broadly, along with angelfish, rasboras, barbs, and zebrafish, so cardinal tetra falls within that group. It's caused by a microsporidian parasite, Pleistophora hyphessobryconis, that invades muscle tissue. Watch for restless or erratic swimming, fading or patchy color, visible lumps under the skin, and a curved spine in advanced cases."
+        "a": "Yes. It is named for the neon, but the microsporidian parasite behind it, Pleistophora hyphessobryconis, affects tetras broadly, along with angelfish, rasboras, barbs, and zebrafish. Watch for restless or erratic swimming, fading or patchy color, visible lumps under the skin, and a curved spine in advanced cases."
       },
       {
         "q": "Is neon tetra disease contagious, and can it be cured?",
-        "a": "Highly contagious, and there is no cure. It spreads when fish eat infected tissue, including from one that has already died, so a dead fish left in the tank keeps it moving. Aquatic specialists recommend humane euthanasia for a confirmed case, to end suffering and protect the rest of the tank. It is not transmissible to humans."
+        "a": "Highly contagious and incurable: it spreads when fish eat infected tissue, so a dead fish left in the tank keeps it moving. Humane euthanasia for a confirmed case ends suffering and protects the rest of the tank. It is not transmissible to humans."
       },
       {
         "q": "What is ich and how do you treat it in cardinal tetras?",
-        "a": "Small white spots resembling salt grains, caused by the parasite Ichthyophthirius multifiliis, along with flashing against decor, rapid breathing, and lethargy. It's treatable with medication and a partial water change each day, or with heat, since this species tolerates water reaching 86°F, the temperature most ich strains cannot survive. Raise the tank slowly with strong aeration and hold it there two weeks. The heat stops at 86°F: this species hits 50% mortality near 33.7°C (about 93°F)."
+        "a": "Small white spots like grains of salt, plus flashing against decor and rapid breathing, mean ich, caused by the parasite Ichthyophthirius multifiliis. Treat it with medication and a daily partial water change. Cardinals tolerate water reaching 86°F, which most ich strains do not survive, so a slow rise to the top of their range with strong aeration is possible if the fish are watched closely."
       },
       {
         "q": "What is fin rot and how serious is it?",
-        "a": "A bacterial infection that starts as discoloration on the fin edges and progresses to fraying and tissue loss if untreated. It stems from poor water quality, fin-nipping tankmates, or stress. Caught early, it's very treatable with improved water conditions and an antibacterial medication."
+        "a": "A bacterial infection that frays the fin edges, usually from poor water quality, fin-nipping tankmates, or stress. It is treatable with improved water conditions and an antibacterial medication."
       },
       {
         "q": "How do I prevent most cardinal tetra health issues?",
-        "a": "Nearly everything treatable on this list traces back to water quality and stability. A 2008 study on this exact species found cardinal tetra tolerates ammonia better than many keepers assume, but is sensitive to nitrite, which makes confirming a completed nitrogen cycle before stocking the single most useful habit for keeping this species healthy long-term."
+        "a": "Nearly everything treatable on this list traces back to water quality and stability. Half the fish in a 96-hour test died at 1.1 mg/L nitrite, so ammonia and nitrite both need to read zero, which makes confirming a completed nitrogen cycle before stocking the single most useful habit for keeping this species healthy long-term."
       }
     ],
     "relatedProducts": [
@@ -12121,7 +12141,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4,
+    "sourceCount": 5,
     "headingCount": 9,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
@@ -12132,10 +12152,10 @@
     "slug": "cardinal-tetra-tank-setup-guide",
     "title": "Cardinal Tetra Tank Setup: Soft Water, Warmer Temps, and a Blackwater Feel",
     "seoTitle": "Cardinal Tetra Tank Setup Guide",
-    "seoDescription": "Cardinal tetra tank setup guide: size, temperature, soft acidic water, gentle filtration, and the blackwater conditions this species evolved in.",
-    "lastUpdated": "2026-09-25",
+    "seoDescription": "Cardinal tetra tank setup guide: a 20-gallon long, 77 to 82°F, soft acidic water, gentle filtration, and the blackwater conditions this species evolved in.",
+    "lastUpdated": "2026-11-01",
     "noIndex": false,
-    "excerpt": "Cardinal tetras come from soft, dim, tannin-stained blackwater streams, the same origin as neon tetra, but they run warmer and want a slightly bigger group once the tank is set up right.",
+    "excerpt": "Cardinal tetras come from soft, dim, tannin-stained blackwater streams, the same origin as neon tetra, but they run warmer and want a tank set up right for a school of 10.",
     "date": "2026-09-09",
     "category": "Fish",
     "categories": [
@@ -12160,23 +12180,23 @@
     "faqs": [
       {
         "q": "What size tank does a school of cardinal tetras need?",
-        "a": "Plan on a 20-gallon long. The recommended footprint, roughly 24x12 inches of base, lines up with it, and it holds the school of 10 this species needs to settle; a 10-gallon is too tight for that."
+        "a": "A 20-gallon long. Its base meets the 24x12 inch (60x30 cm) base recommended for the species, and it has room for the school of 10 that a 10-gallon cannot hold."
       },
       {
         "q": "What temperature do cardinal tetras need?",
-        "a": "73 to 84°F is the range for this species, with 77 to 82°F as the everyday target. Cardinal tetra tolerates water reaching 86°F, against the roughly 77°F neon tetra is comfortable with, so cardinal is the better fit for a warmer community tank."
+        "a": "Aim for 77 to 82°F day to day, inside a tolerated 73 to 84°F. Cardinals tolerate water reaching 86°F in short spells, well past the roughly 77°F neons are comfortable with, which suits them to a warmer community tank."
       },
       {
         "q": "What water chemistry do cardinal tetras need?",
-        "a": "Soft and acidic: roughly pH 5.0 to 7.0, and toward the lower end where possible. Test your source water first rather than assuming it suits the species. Ammonia and nitrite both need to read zero before stocking."
+        "a": "Soft, acidic water at about pH 5.0 to 7.0, leaning to the low end when you can. Test the tap before buying fish, and make sure ammonia and nitrite both read zero before stocking."
       },
       {
         "q": "What kind of filtration is best for a cardinal tetra tank?",
-        "a": "Keep the flow gentle. This species comes from slow-moving forest streams full of fallen branches and leaf litter rather than open current. A sponge filter is a common, effective choice."
+        "a": "Gentle flow, because the native streams are slow and forested. A sponge filter is the usual pick, and a hang-on-back works when its output is baffled."
       },
       {
         "q": "What's the non-obvious detail that makes the biggest difference in a cardinal tetra tank?",
-        "a": "Recreating blackwater conditions. Driftwood and Indian almond leaves release natural tannins that stain the water and lower pH, mimicking the shaded, leaf-litter-covered streams this species evolved in. Pair that with dense planting and dim lighting, and color and confidence both improve noticeably."
+        "a": "Blackwater conditions. As driftwood and Indian almond leaves release tannins, the water tints and the pH eases down, which copies the shaded, leaf-strewn streams the fish comes from. Add dense planting and dim light, and color and confidence both improve noticeably."
       }
     ],
     "relatedProducts": [
@@ -12194,7 +12214,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4,
+    "sourceCount": 5,
     "headingCount": 9,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
@@ -18180,7 +18200,7 @@
     "title": "Discus Aren't Handled, But They Are Surprisingly Social for a Cichlid",
     "seoTitle": "Discus Behavior: Social Life & Stress Triggers",
     "seoDescription": "Discus behavior guide: why they need a real group, stress triggers, acclimation, sexing, and tankmate compatibility, from real aquarium sources.",
-    "lastUpdated": "2026-09-07",
+    "lastUpdated": "2026-10-31",
     "noIndex": false,
     "excerpt": "Discus aren't a hands-on pet, but there's an important behavioral fact to understand before stocking a tank with them: unlike most cichlids, which pair off and defend territory, this one wants company.",
     "date": "2026-09-07",
@@ -18232,7 +18252,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4,
+    "sourceCount": 5,
     "headingCount": 9,
     "ledeMatchesExcerpt": true,
     "imageWidth": 1168,
@@ -18653,6 +18673,420 @@
     "imageHeight": 784
   },
   {
+    "path": "/content/guides/ember-tetra-cost-guide.mdx",
+    "slug": "ember-tetra-cost-guide",
+    "title": "How Much Does Ember Tetra Ownership Cost?",
+    "seoTitle": "Ember Tetra Cost: $25 to $35 for 10, $95 to $245 Setup",
+    "seoDescription": "Ember tetra cost: $2.50 to $3.50 a fish, $25 to $35 for a school of 10, $95 to $245 for a planted 10 gallon setup, and the quarantine tank worth adding.",
+    "lastUpdated": "2026-11-01",
+    "noIndex": false,
+    "excerpt": "Ember tetras are bought ten at a time, and the whole school costs a fraction of the tank it lives in. The money goes into a planted 10 gallon setup and a spare tank for quarantine.",
+    "date": "2026-11-01",
+    "category": "Fish",
+    "categories": [
+      "Fish"
+    ],
+    "tags": [
+      "Ember Tetra",
+      "Cost",
+      "Pet Ownership Cost",
+      "Tank Setup Cost",
+      "Care Tips",
+      "Fish Care"
+    ],
+    "readTime": 5,
+    "difficulty": "Beginner",
+    "image": "/assets/images/ember-tetra-cost.jpg",
+    "imageAlt": "A school of ember tetras swimming over a dark substrate in a planted aquarium",
+    "emoji": "🐠",
+    "lastReviewed": "2026-11-01",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "How much do ember tetras cost?",
+        "a": "About $2.50 to $3.50 a fish from online sellers before shipping, a little less per fish in bigger packs. They are bought as a school of 10 or more, and 10 fish come to $25 to $35 before shipping."
+      },
+      {
+        "q": "What does an ember tetra tank setup cost?",
+        "a": "Expect $95 to $245 for a 10 gallon tank with an 18 x 12 inch footprint, a heater, a gentle filter, dense live plants, dark sand, a liquid test kit, water conditioner and the first micro pellets. A bare quarantine tank with its own heater and filter comes on top."
+      },
+      {
+        "q": "Do ember tetras need a heater?",
+        "a": "Yes. Ember tetras are tropical fish kept at 75 to 82°F (24 to 28°C), so a heater belongs in the setup. 82°F is also their ceiling, so an ich outbreak is treated with salt or medication and the heater goes no higher than 82°F."
+      },
+      {
+        "q": "How long do ember tetras live?",
+        "a": "About 2 to 4 years in captivity. The tank, heater and filter bought for the first school can house the next one."
+      },
+      {
+        "q": "Do ember tetras need a quarantine tank?",
+        "a": "Yes. New fish spend 30 days in a bare 10 gallon tank with its own heater and sponge filter before joining the display, and the same tank becomes the hospital tank when ich turns up, since embers are treated with salt or medication rather than heat."
+      }
+    ],
+    "relatedProducts": [
+      "tank-10-gallon",
+      "submersible-aquarium-heater",
+      "sponge-filter",
+      "neon-tetra-food-hikari-micro-pellets",
+      "water-conditioner",
+      "water-test-kit"
+    ],
+    "factFile": false,
+    "animalDay": null,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 5,
+    "headingCount": 8,
+    "ledeMatchesExcerpt": false,
+    "imageWidth": 1168,
+    "imageHeight": 784
+  },
+  {
+    "path": "/content/guides/ember-tetra-enrichment-guide.mdx",
+    "slug": "ember-tetra-enrichment-guide",
+    "title": "Ember Tetra Enrichment: Bright Orange, Built to Vanish",
+    "seoTitle": "Ember Tetra Enrichment Guide",
+    "seoDescription": "Wild ember tetras shoal in clear, sunlit water, hide from above and keep moving near pike cichlids. A school of 10, dense plants and live food fit that life.",
+    "lastUpdated": "2026-11-01",
+    "noIndex": false,
+    "excerpt": "In clear Brazilian water an ember tetra shoal hides from above with its dark backs and moves every few minutes while pike cichlids hunt nearby. The tank should give it the same cover.",
+    "date": "2026-11-01",
+    "category": "Enrichment",
+    "categories": [
+      "Enrichment"
+    ],
+    "tags": [
+      "Ember Tetra",
+      "Enrichment",
+      "Care Tips",
+      "Fish Enrichment",
+      "Fish Welfare",
+      "Tetras"
+    ],
+    "readTime": 6,
+    "difficulty": "Beginner",
+    "image": "/assets/images/ember-tetra-enrichment.jpg",
+    "imageAlt": "A school of orange ember tetras swimming among dense green aquarium plants",
+    "emoji": "🐠",
+    "lastReviewed": "2026-11-01",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "How many ember tetras should be kept together?",
+        "a": "Ten or more. The recommended purchase is a minimum of 8 to 10 ember tetras, and in the closest research, a group-size study on neon tetras, groups of 10 shoaled the most."
+      },
+      {
+        "q": "What tank do ember tetras need to behave naturally?",
+        "a": "A 10-gallon tank with an 18 x 12 inch footprint for a school of 10, heavily planted over a dark substrate, with floating plants, gentle filtration and soft water at 75 to 82°F."
+      },
+      {
+        "q": "What should ember tetras eat for enrichment?",
+        "a": "Daily small live or frozen foods such as baby brine shrimp and moina, alongside micro-pellets or finely crushed flake. Ember tetras are about 0.8 inch long with small mouths, so food has to be tiny and slow-sinking."
+      },
+      {
+        "q": "Why are ember tetras called little fires?",
+        "a": "In the Araguaia River basin of central Brazil, local people call them foguinhos, from fogo, the Portuguese for fire. The name fits a fish that is bright orange at close range yet hard to see from above in its own river."
+      },
+      {
+        "q": "Can ember tetras live with Apistogramma?",
+        "a": "Yes, and they help. Embers are an ideal dither fish for Apistogramma and other dwarf cichlids, and a school of 10 or more swimming in the open is what gives the cichlids confidence."
+      }
+    ],
+    "relatedProducts": [
+      "neon-tetra-food-hikari-micro-pellets"
+    ],
+    "factFile": false,
+    "animalDay": null,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 5,
+    "headingCount": 9,
+    "ledeMatchesExcerpt": false,
+    "imageWidth": 1168,
+    "imageHeight": 784
+  },
+  {
+    "path": "/content/guides/ember-tetra-feeding-guide.mdx",
+    "slug": "ember-tetra-feeding-guide",
+    "title": "Ember Tetra Feeding: Diet, Food Size, and How Often to Feed",
+    "seoTitle": "What Do Ember Tetras Eat? Diet and Feeding Schedule",
+    "seoDescription": "Ember tetra feeding: crushed flake or micro-pellets for a 0.8 inch fish, live and frozen foods like baby brine shrimp, and small portions once or twice a day.",
+    "lastUpdated": "2026-11-01",
+    "noIndex": false,
+    "excerpt": "An ember tetra is about 0.8 inch long, and its diet is sized to match: tiny slow-sinking staples, small live and frozen prey, and portions the school can clear.",
+    "date": "2026-11-01",
+    "category": "Fish",
+    "categories": [
+      "Fish"
+    ],
+    "tags": [
+      "Ember Tetra",
+      "Feeding",
+      "Diet",
+      "Care Tips",
+      "Fish Diet",
+      "Feeding Schedule",
+      "Live Food"
+    ],
+    "readTime": 5,
+    "difficulty": "Beginner",
+    "image": "/assets/images/ember-tetra-feeding.jpg",
+    "imageAlt": "A school of ember tetras feeding in a planted aquarium",
+    "emoji": "🐠",
+    "lastReviewed": "2026-11-01",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What do ember tetras eat?",
+        "a": "Micro-pellets or flake crushed fine as the staple, plus small live or frozen foods such as baby brine shrimp, daphnia, cyclops and moina. Wild ember tetras are probably micropredators of tiny invertebrates and zooplankton, and at about 0.8 inch (2 cm) long they need tiny, slow-sinking food."
+      },
+      {
+        "q": "How often should I feed ember tetras?",
+        "a": "Once or twice a day, a small pinch each time that the school finishes before it settles on the substrate. Small live or frozen food can be one of those meals every day."
+      },
+      {
+        "q": "How small should ember tetra food be?",
+        "a": "Very small. An adult ember tetra is about 0.8 inch (2 cm) long with a little mouth, so use the smallest micro-pellet grade, flake crushed fine, and live foods the size of baby brine shrimp or daphnia. Slow-sinking food gives the fish time to catch it."
+      },
+      {
+        "q": "What do you feed ember tetra fry?",
+        "a": "Paramecium or a dry fry food of 5 to 50 micron grade as the first food. Ember tetras scatter their eggs and give no parental care, and adults will eat their own eggs and fry, so fry are raised apart from the adults."
+      },
+      {
+        "q": "Do ember tetras need live food?",
+        "a": "Daily small live or frozen food is part of the diet for this species, alongside the dried staple. Baby brine shrimp and daphnia are the right size."
+      }
+    ],
+    "relatedProducts": [
+      "neon-tetra-food-hikari-micro-pellets"
+    ],
+    "factFile": false,
+    "animalDay": null,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 5,
+    "headingCount": 7,
+    "ledeMatchesExcerpt": false,
+    "imageWidth": 1168,
+    "imageHeight": 784
+  },
+  {
+    "path": "/content/guides/ember-tetra-handling-guide.mdx",
+    "slug": "ember-tetra-handling-guide",
+    "title": "Ember Tetras Are Never Handled, So the Trip Home Is the Part to Get Right",
+    "seoTitle": "Ember Tetra Handling: Netting, Acclimation, School Size",
+    "seoDescription": "How to net a 0.8-inch ember tetra, bag it one part water to three parts air, acclimate it over 30 to 60 minutes, and pick a school of 10 and safe tankmates.",
+    "lastUpdated": "2026-11-01",
+    "noIndex": false,
+    "excerpt": "Nobody picks up an ember tetra. The handling this 0.8-inch fish gets is a net, a bag and an hour of acclimation, and each step has its own way to go wrong.",
+    "date": "2026-11-01",
+    "category": "Fish",
+    "categories": [
+      "Fish"
+    ],
+    "tags": [
+      "Ember Tetra",
+      "Handling",
+      "Acclimation",
+      "Schooling",
+      "Fish Behavior",
+      "Fish Care"
+    ],
+    "readTime": 6,
+    "difficulty": "Beginner",
+    "image": "/assets/images/ember-tetra-handling.jpg",
+    "imageAlt": "A school of small orange ember tetras swimming among aquarium plants",
+    "emoji": "🐠",
+    "lastReviewed": "2026-11-01",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "How do you acclimate ember tetras to a new tank?",
+        "a": "Turn off the tank lights and mix tank water into the bag a little at a time over 30 to 60 minutes, until tank water outweighs shop water. Then net the fish across, discard the bag water, and look over the bag, net and floor for a missing fish."
+      },
+      {
+        "q": "How many ember tetras should you keep together?",
+        "a": "Ten is the target, with 8 to 10 as the least to buy. Housing that group takes a 10-gallon tank whose base measures 18 by 12 inches."
+      },
+      {
+        "q": "Can ember tetras live with shrimp?",
+        "a": "With adult dwarf shrimp, yes: embers ignore grown shrimp. Baby shrimp are a different story, since embers, like nearly every fish, will pick off shrimplets whenever they get the chance."
+      },
+      {
+        "q": "How should ember tetras be bagged for the trip home?",
+        "a": "Use a ratio of one part water to three parts air, since the oxygen sits in the air. For the ride, put the bag inside a dark box or cover it with a towel or newspaper."
+      },
+      {
+        "q": "Can ember tetras live with a betta?",
+        "a": "Think twice. Bettas and dwarf gouramis may turn territorial, and an ember loses out to any tankmate that is rowdy or much bigger, so a peaceful fish of similar size is the safer companion."
+      },
+      {
+        "q": "How do you tell male and female ember tetras apart?",
+        "a": "Males carry stronger color and a slender profile; females are rounder, clearest from above."
+      }
+    ],
+    "relatedProducts": [],
+    "factFile": false,
+    "animalDay": null,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 5,
+    "headingCount": 9,
+    "ledeMatchesExcerpt": false,
+    "imageWidth": 1168,
+    "imageHeight": 784
+  },
+  {
+    "path": "/content/guides/ember-tetra-health-issues-guide.mdx",
+    "slug": "ember-tetra-health-issues-guide",
+    "title": "Common Ember Tetra Health Issues (and Why the Ich Heat Cure Stops at 82°F)",
+    "seoTitle": "Ember Tetra Health Issues: Ich, Water and Signs",
+    "seoDescription": "Ember tetra health issues: the signs that need action today, why the 86°F ich heat cure is too hot for embers, and the 30-day quarantine that keeps ich out.",
+    "lastUpdated": "2026-11-01",
+    "noIndex": false,
+    "excerpt": "No disease belongs to the ember tetra in particular. Most of what goes wrong starts in the water or arrives with a new fish, and ich is treated differently here because the heat cure runs too hot.",
+    "date": "2026-11-01",
+    "category": "Fish",
+    "categories": [
+      "Fish"
+    ],
+    "tags": [
+      "Ember Tetra",
+      "Health",
+      "Water Quality",
+      "Fish Disease",
+      "Ich",
+      "Care Tips",
+      "Fish Care"
+    ],
+    "readTime": 6,
+    "difficulty": "Beginner",
+    "image": "/assets/images/ember-tetra-health-issues.jpg",
+    "imageAlt": "A healthy orange ember tetra swimming among plants in a planted aquarium",
+    "emoji": "🐠",
+    "lastReviewed": "2026-11-01",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Can you treat ich in ember tetras with heat?",
+        "a": "Not with heat alone. Most ich strains die above 86°F, and the ember tetra's range tops out at 82°F. Warm the tank slowly to 82°F with an air stone running, which speeds up the parasite's cycle, and let aquarium salt at about a tablespoon per 5 gallons or an ich medication do the killing."
+      },
+      {
+        "q": "How long should new ember tetras be quarantined?",
+        "a": "At least 30 days in a separate tank before they join an established school. New fish and water carried in with them are how ich usually reaches a tank, and a month gives a hidden infection time to show where it can be treated without exposing every other fish."
+      },
+      {
+        "q": "Do ember tetras get any species-specific diseases?",
+        "a": "None are known. Embers get the same problems as any small soft-water tetra, and poor diet and poor water quality raise the risk of all of them. Steady water at 75 to 82°F, pH 5.0 to 7.0 and 1 to 10 dGH, tested once or twice a week, plus a school of 10 or more, prevents most of it."
+      },
+      {
+        "q": "What signs mean an ember tetra needs help today?",
+        "a": "Gasping at the surface or fast breathing, two or more fish showing the same sign, or a dead fish all call for an ammonia and nitrite test straight away. White spots on the body or fins mean ich treatment starts the same day, and so does fast breathing that continues once the water tests clean."
+      },
+      {
+        "q": "Why is my ember tetra losing its color?",
+        "a": "Fading color is an early sign of ich and also what a fish shows when water or diet has slipped, so test ammonia and nitrite first, then check the fish daily for white spots."
+      }
+    ],
+    "relatedProducts": [
+      "tank-10-gallon",
+      "submersible-aquarium-heater",
+      "sponge-filter"
+    ],
+    "factFile": false,
+    "animalDay": null,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 5,
+    "headingCount": 7,
+    "ledeMatchesExcerpt": false,
+    "imageWidth": 1168,
+    "imageHeight": 784
+  },
+  {
+    "path": "/content/guides/ember-tetra-tank-setup-guide.mdx",
+    "slug": "ember-tetra-tank-setup-guide",
+    "title": "Ember Tetra Tank Setup: A 10-Gallon School, Soft Water, and Dense Plants",
+    "seoTitle": "Ember Tetra Tank Setup Guide",
+    "seoDescription": "Ember tetra tank setup: a 10-gallon tank for a school of 10, 75 to 82°F, pH 5.0 to 7.0 in soft water, gentle filtration, dense plants, and a cycled tank first.",
+    "lastUpdated": "2026-11-01",
+    "noIndex": false,
+    "excerpt": "Ember tetras come from soft, weakly acidic backwaters in central Brazil, and a tank for a school of 10 recreates that water: 10 gallons, 75 to 82°F, gentle flow and dense plants.",
+    "date": "2026-11-01",
+    "category": "Fish",
+    "categories": [
+      "Fish"
+    ],
+    "tags": [
+      "Ember Tetra",
+      "Tank Setup",
+      "Filtration",
+      "Aquarium Care",
+      "Care Tips",
+      "Fish Care"
+    ],
+    "readTime": 6,
+    "difficulty": "Beginner",
+    "image": "/assets/images/ember-tetra-tank-setup.jpg",
+    "imageAlt": "A heavily planted aquarium with a dark substrate and a school of small orange ember tetras",
+    "emoji": "🐠",
+    "lastReviewed": "2026-11-01",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What size tank do ember tetras need?",
+        "a": "A 10-gallon tank for a school of 10, on a base of roughly 18 x 12 inches (45 x 30 cm) or the equivalent. A 5-gallon only works with a smaller school, and 10 or more is the group to aim for."
+      },
+      {
+        "q": "What temperature do ember tetras need?",
+        "a": "75 to 82°F (24 to 28°C), held steady by a heater. 82°F is the top of the range, so set the heater inside it and never above it."
+      },
+      {
+        "q": "What water chemistry do ember tetras need?",
+        "a": "Soft, acidic to neutral water: pH 5.0 to 7.0 and a hardness of 1 to 10 dGH. Ammonia and nitrite both need to read zero in a fully cycled tank before the school goes in."
+      },
+      {
+        "q": "Do ember tetras need a planted tank?",
+        "a": "Yes. Ember tetras are best kept in a heavily planted tank over a dark substrate, with floating plants as a useful addition and filtration kept gentle."
+      },
+      {
+        "q": "Can ember tetras live in a 5-gallon tank?",
+        "a": "Only with a smaller school. A 5-gallon nano is sometimes suggested for a fish this small, but the group of 10 the species is kept in needs 10 gallons on an 18 x 12 inch base."
+      },
+      {
+        "q": "Do ember tetras need a filter?",
+        "a": "Yes, a gentle one. A sponge filter fits a species that wants little water movement and is the safest intake where dwarf shrimp share the tank; a hang-on-back works once its output is baffled."
+      }
+    ],
+    "relatedProducts": [
+      "tank-10-gallon",
+      "submersible-aquarium-heater",
+      "sponge-filter",
+      "water-conditioner"
+    ],
+    "factFile": false,
+    "animalDay": null,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 5,
+    "headingCount": 8,
+    "ledeMatchesExcerpt": false,
+    "imageWidth": 1168,
+    "imageHeight": 784
+  },
+  {
     "path": "/content/guides/emperor-scorpion-cost-guide.mdx",
     "slug": "emperor-scorpion-cost-guide",
     "title": "How Much Does an Emperor Scorpion Really Cost?",
@@ -19030,7 +19464,24 @@
     "lastReviewed": "2026-10-02",
     "author": "Michael Ryan",
     "canonicalUrl": null,
-    "faqs": [],
+    "faqs": [
+      {
+        "q": "Are emperor scorpions legal in the US?",
+        "a": "In forty-two of the 52 jurisdictions nothing restricts one, because most state wildlife definitions stop at vertebrates. Three places ban it outright, two require a permit, Oregon attaches a condition, and in four the text does not resolve it."
+      },
+      {
+        "q": "Where are emperor scorpions banned?",
+        "a": "New York City, Hawaii and the District of Columbia. New York City's Health Code bans scorpions and all venomous arthropods, Hawaii prohibits anything not on an approved list, and DC's seven permitted pet categories include no invertebrate."
+      },
+      {
+        "q": "Do I need a permit to keep an emperor scorpion?",
+        "a": "In Maine and Rhode Island. Maine's unrestricted list clears three tarantulas and no scorpion, so the scorpion needs a permit there. Rhode Island's invertebrate exemption is written for the class Insecta, and a scorpion is an arachnid."
+      },
+      {
+        "q": "Does the CITES listing mean I need paperwork to own one?",
+        "a": "No. Pandinus imperator has been on CITES Appendix II since 1995, but Appendix II requires an export permit from the country of origin, and that obligation falls on the exporter. For someone buying a captive-bred scorpion from a US breeder it changes nothing."
+      }
+    ],
     "relatedProducts": [],
     "factFile": false,
     "animalDay": null,
@@ -19381,7 +19832,24 @@
     "lastReviewed": "2026-10-08",
     "author": "Michael Ryan",
     "canonicalUrl": null,
-    "faqs": [],
+    "faqs": [
+      {
+        "q": "Are fennec foxes legal in the US?",
+        "a": "Thirty-four of the 52 jurisdictions restrict one: 24 bans, 9 permit states and Arizona's whole-order restriction. Eleven place no restriction, and in seven the text does not settle it."
+      },
+      {
+        "q": "Which states ban fennec foxes outright?",
+        "a": "The article's ban column runs CA, GA, DC, NYC, CT, OR, NV, MD, NM, IA, KY, RI, NH, MT, AK, AL, HI, CO, NJ, ME, WA, AR, ID and LA. In almost every one, the rule says \"fox\" or \"Canidae\" and stops there."
+      },
+      {
+        "q": "Where is a fennec fox legal without a permit?",
+        "a": "New York State, Illinois, Minnesota, Kansas, West Virginia, Indiana, Oklahoma, Nebraska, Wisconsin, Michigan and Tennessee show no state restriction. County and city exotic animal ordinances still catch foxes routinely, often in the same clause as skunks and raccoons."
+      },
+      {
+        "q": "Can a fennec fox be vaccinated against rabies?",
+        "a": "Not in a way any health department recognizes. There is no USDA licensed rabies vaccine for any fox species, so a vet can give a dog vaccine off label but the animal is never treated as vaccinated. If a fennec bites someone, the protocol for an unvaccinated wild carnivore applies, and it ends with euthanasia and testing."
+      }
+    ],
     "relatedProducts": [],
     "factFile": false,
     "animalDay": null,
@@ -27024,7 +27492,24 @@
     "lastReviewed": "2026-08-07",
     "author": "Michael Ryan",
     "canonicalUrl": null,
-    "faqs": [],
+    "faqs": [
+      {
+        "q": "How long before feeding should I gut-load insects?",
+        "a": "24 to 72 hours, with 48 the most commonly cited. Too short and the gut is not full; longer does not help because gut-loading is not cumulative. Feed the insects out within a few hours of taking them off the diet, since they begin voiding gut contents once removed from food."
+      },
+      {
+        "q": "Does gut-loading replace calcium dusting?",
+        "a": "No. Do both and treat them as separate jobs. A properly formulated high-calcium gut-load can reach an acceptable ratio in trials, but commercial products vary, insects do not always eat enough, and gut contents void while powder on the outside does not. Gut-loading is also a poor route for vitamin D3."
+      },
+      {
+        "q": "What should I feed crickets to gut-load them?",
+        "a": "A commercial dry diet sold on its calcium content, or collard, mustard, turnip and dandelion greens and butternut squash. Carrot, potato and apple keep insects alive and hydrated but do not move the calcium to phosphorus ratio."
+      },
+      {
+        "q": "Which vegetables should I avoid for gut-loading?",
+        "a": "Spinach, beet greens and Swiss chard. They contain calcium, but they are high in oxalic acid, which binds it into a form that cannot be absorbed, so feeding them as a gut-load is close to self-defeating."
+      }
+    ],
     "relatedProducts": [
       "gutload-flukers-high-calcium-dubia-roach-diet-7oz",
       "gutload-flukers-cricket-quencher-calcium-3pack",
@@ -27533,7 +28018,24 @@
     "lastReviewed": "2026-10-02",
     "author": "Michael Ryan",
     "canonicalUrl": null,
-    "faqs": [],
+    "faqs": [
+      {
+        "q": "Are hamsters legal in every state?",
+        "a": "In every state except Hawaii. Forty-eight states, DC and New York City clear them, Hawaii bans them with no permit route, and Oregon's rule is unclear."
+      },
+      {
+        "q": "Why are hamsters illegal in Hawaii?",
+        "a": "Hawaii prohibits any animal not on an approved list, and the only list carrying Mesocricetus auratus is Part A of the restricted animals list, headed \"FOR RESEARCH AND EXHIBITION.\" Universities and licensed exhibitors can bring one in under permit; there is no pet permit to apply for. The concern is escape and establishment, not hamsters in particular."
+      },
+      {
+        "q": "Are hamsters legal in California?",
+        "a": "Yes, by name. Title 14 § 671 restricts the order Rodentia and then excepts domesticated golden hamsters and domesticated dwarf hamsters of the genus Phodopus. Gerbils are not among the exceptions and remain banned."
+      },
+      {
+        "q": "Are dwarf hamsters legal everywhere a Syrian is?",
+        "a": "Not on a strict reading. Alaska and Wyoming work from closed lists that name only Mesocricetus auratus, so a Roborovski or a winter white is not the animal the rule cleared. California and Rhode Island name both groups."
+      }
+    ],
     "relatedProducts": [],
     "factFile": false,
     "animalDay": null,
@@ -28119,7 +28621,24 @@
     "lastReviewed": "2026-10-02",
     "author": "Michael Ryan",
     "canonicalUrl": null,
-    "faqs": [],
+    "faqs": [
+      {
+        "q": "Where are hedgehogs illegal in the US?",
+        "a": "California, Georgia, Hawaii, Pennsylvania, Washington DC and New York City. In none of the six is there a permit to apply for."
+      },
+      {
+        "q": "Do I need a permit to own a hedgehog?",
+        "a": "Only in New Jersey, the one genuine permit state. Maine and Wisconsin are routinely listed as permit states and neither is: Maine's Unrestricted Species List names Atelerix albiventris, and Wisconsin's Chapter 169 does not reach hedgehogs."
+      },
+      {
+        "q": "Are hedgehogs legal in Pennsylvania?",
+        "a": "No law names them. The Game Commission reads the \"includes, but is not limited to\" language in 34 Pa.C.S. § 2961 to cover them, and a sitting legislator describes the ban the same way. Bills to legalize hedgehogs have been introduced every session since 2017, and House Bill 692 was still in committee as of September 2026."
+      },
+      {
+        "q": "Why can't I keep a hedgehog in Washington DC when a hamster is fine?",
+        "a": "D.C. Code § 8-1808(j) allows seven categories of pet, one of which is \"Domesticated rodents and rabbits.\" A hedgehog is not a rodent, it is in the order Eulipotyphla with moles and shrews, and no other category fits."
+      }
+    ],
     "relatedProducts": [],
     "factFile": false,
     "animalDay": null,
@@ -36215,10 +36734,10 @@
   {
     "path": "/content/guides/neon-tetra-cost-guide.mdx",
     "slug": "neon-tetra-cost-guide",
-    "title": "How Much Does Neon Tetra Ownership Really Cost?",
-    "seoTitle": "Neon Tetra Price: $1 to $5 Each, Plus $95 to $315 Setup",
-    "seoDescription": "Full neon tetra cost breakdown: $1 to $5 per fish, $95 to $315 for the setup, and why schooling size is the real budget variable.",
-    "lastUpdated": "2026-10-06",
+    "title": "How Much Does Neon Tetra Ownership Cost?",
+    "seoTitle": "Neon Tetra Price: $1 to $5 Each, Plus $115 to $245 Setup",
+    "seoDescription": "Full neon tetra cost breakdown: $1 to $5 per fish, $115 to $245 for the setup, and why buying a school of 10 makes group size the main budget variable.",
+    "lastUpdated": "2026-11-01",
     "noIndex": false,
     "excerpt": "Neon tetras are one of the most affordable fish you can keep, cheap individually and cheap as a group. Cost planning here starts with buying several at once, not just one.",
     "date": "2026-07-21",
@@ -36245,27 +36764,27 @@
     "faqs": [
       {
         "q": "How much does a neon tetra cost?",
-        "a": "$1 to $3 each for most, occasionally $5 depending on the source. They school, so the purchase is a group and not a single fish: 6 to 12 of them come to $10 to $40, among the cheapest ways to stock a community tank."
+        "a": "$1 to $3 each for most, occasionally $5 depending on the source. They school, so the purchase is a group and not a single fish: 8 to 12 of them come to $15 to $40, among the cheapest ways to stock a community tank."
       },
       {
         "q": "What does a basic neon tetra tank setup cost?",
-        "a": "Roughly $95 to $315 for a 10 to 20 gallon tank sized for a proper school, plus a filter, heater, substrate, plants, water care and the first food. A complete starter kit at this size commonly runs $50 to $200; buying the tank on its own is $20 to $150 by size and material."
+        "a": "Roughly $115 to $245 for a 20-gallon long tank sized for a school of 10, plus a filter, heater, substrate, plants, water care and the first food. A complete starter kit at this size commonly runs $50 to $200; buying the tank on its own is $20 to $150 by size and material."
       },
       {
         "q": "What are the ongoing costs of keeping neon tetras?",
         "a": "Low. The monthly total is food, water conditioner, and a little electricity for the heater and filter, modest for a planted community tank this size."
       },
       {
-        "q": "How long do neon tetras live?",
-        "a": "About 5 years with good, stable care. In average conditions they often live closer to 2 to 3 years, since lifespan here leans on water stability more than it does in some hardier fish."
+        "q": "What keeps neon tetras going once they are home?",
+        "a": "Good water and a varied diet. That is why the budget goes to the filter, heater, test kit and water conditioner more than to the fish themselves."
       },
       {
         "q": "Why does the schooling requirement matter for budgeting?",
-        "a": "They're cheap one at a time, but the minimum group is six or more, so you're never buying just one or two. Paying for a full school up front, rather than starting small and adding later, is the more humane approach and the cheaper one, since a stressed, understocked school runs into costly health issues."
+        "a": "Because the least to buy is a group of eight, and ten is better. At $1 to $3 a fish that is a small bill, and an understocked school is the one that develops stress-related illness, which costs more to treat than a full group would have to buy."
       }
     ],
     "relatedProducts": [
-      "tank-10-gallon",
+      "tank-20-gallon-long",
       "submersible-aquarium-heater",
       "sponge-filter",
       "live-terrarium-plants",
@@ -36278,8 +36797,8 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4,
-    "headingCount": 9,
+    "sourceCount": 5,
+    "headingCount": 8,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
     "imageHeight": 784
@@ -36289,8 +36808,8 @@
     "slug": "neon-tetra-enrichment-guide",
     "title": "Neon Tetra Enrichment: Someone Counted, and the Number Is Ten",
     "seoTitle": "Neon Tetra Enrichment Guide",
-    "seoDescription": "A home aquarium study found groups of ten neon tetras showed improved welfare over smaller groups, with less darting and aggression.",
-    "lastUpdated": "2026-09-16",
+    "seoDescription": "A home aquarium study found groups of ten neon tetras showed improved welfare over smaller groups, with less darting. Cover and stable water matter too.",
+    "lastUpdated": "2026-11-01",
     "noIndex": false,
     "excerpt": "The usual advice is six. A study that measured darting, aggression, shoaling and feeding latency in home aquarium species found ten was better.",
     "date": "2026-09-04",
@@ -36316,24 +36835,16 @@
     "canonicalUrl": null,
     "faqs": [
       {
-        "q": "Is there research on neon tetra group size?",
-        "a": "Yes, and it is unusually direct. Saxby, Adams, Snellgrove, Wilson and Sloman studied group size in four species commonly kept in home aquaria, neon tetras among them, and published it in Applied Animal Behaviour Science in 2010."
-      },
-      {
-        "q": "What did it find?",
-        "a": "Single species groups of ten neon tetras showed improved welfare compared with smaller groups. Darting, aggression, shoaling and latency to feed all varied with group size, and a principal components analysis pointed at the larger groups."
+        "q": "How can I tell if my neon tetras are doing well?",
+        "a": "Watch how they feed. Fish that come out to eat at once are doing better than fish that hang at the back for a minute. Strong color and use of the whole tank are the other signs."
       },
       {
         "q": "So is six enough?",
-        "a": "Six is the number most care sheets give and the study found ten better. The smallest functioning shoaling unit is often put at six to eight, so six is a floor rather than a target. If you can house ten, house ten."
-      },
-      {
-        "q": "What does latency to feed tell you?",
-        "a": "How long the fish waits before eating. A fish that hangs back is a fish that does not feel safe enough to come out, and feeding latency dropping in larger groups is one of the clearer welfare signals in the study."
+        "a": "No. Eight is the least to buy and ten is better, since groups of ten showed less darting and aggression than smaller ones. The right number does differ by species: the same 2010 study found no group size effect on angelfish."
       },
       {
         "q": "Does planting matter as much as numbers?",
-        "a": "It matters a great deal and differently. Neon tetras come from blackwater streams shaded by dense vegetation, and open bright tanks make them pale and skittish. Planting and cover give a shoal somewhere to feel unexposed."
+        "a": "It matters a great deal and differently. Neon tetras come from forest streams shaded by dense vegetation, and an open, bright tank is the opposite of that. Planting and cover give a shoal somewhere to feel unexposed."
       },
       {
         "q": "What is the most common reason neon tetras die?",
@@ -36350,7 +36861,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 3,
+    "sourceCount": 4,
     "headingCount": 10,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
@@ -36362,9 +36873,9 @@
     "title": "Neon Tetra Feeding: Schedule, Diet, and the Rule That Prevents an Outbreak",
     "seoTitle": "What Do Neon Tetras Eat? Diet and Feeding Schedule",
     "seoDescription": "Neon tetra feeding: crushed micro-pellets twice daily, and why pulling a dead fish out immediately is the only defense against incurable neon tetra disease.",
-    "lastUpdated": "2026-09-25",
+    "lastUpdated": "2026-11-01",
     "noIndex": false,
-    "excerpt": "Neon tetra feeding is simple in principle, small food in small amounts, but the one rule that protects the school has nothing to do with portions: never leave a dead fish in the tank.",
+    "excerpt": "Neon tetra feeding is simple in principle: small food in small amounts. But the one rule that protects the school has nothing to do with portions: never leave a dead fish in the tank.",
     "date": "2026-08-13",
     "category": "Fish",
     "categories": [
@@ -36390,19 +36901,19 @@
     "faqs": [
       {
         "q": "What do neon tetras eat?",
-        "a": "A high-quality tropical flake or micro-pellet designed for small fish, supplemented several times a week with small frozen or live foods like baby brine shrimp, daphnia, or finely chopped bloodworms. Because their mouths are only about 1 to 2mm across, flakes should be crushed and pellets should be micro or nano sized, food that's too large just gets taken and spat back out."
+        "a": "A high-quality tropical flake or micro-pellet designed for small fish, supplemented several times a week with small frozen or live foods like baby brine shrimp, daphnia, or finely chopped bloodworms. Size every food to a very small mouth."
       },
       {
         "q": "How often should I feed neon tetras?",
-        "a": "Twice a day for adults, morning and evening, only as much as they finish in about 2 to 3 minutes. Fry and juveniles need 3 to 4 small feedings a day until about 6 months old."
+        "a": "Twice a day for adults, morning and evening, only as much as they finish in a couple of minutes."
       },
       {
         "q": "How do I know if I'm overfeeding my neon tetras?",
-        "a": "If food is still visible in the tank after 2 to 3 minutes, you're offering too much. Uneaten food decays and spikes ammonia and nitrite, and neons are sensitive to both."
+        "a": "If food is still visible in the tank after a couple of minutes, you're offering too much. Uneaten food decays and spikes ammonia and nitrite, and neons are sensitive to both."
       },
       {
         "q": "Why do my neon tetras spit out their food?",
-        "a": "The food is too large. At 1 to 2mm mouths, anything not crushed fine enough gets taken and rejected repeatedly, which functionally starves the fish even though food is going into the tank."
+        "a": "The pieces are too big. Crush the flake finer or switch to a nano pellet and the spitting stops; left as it is, the school goes hungry while the rejected food rots on the bottom."
       },
       {
         "q": "What is neon tetra disease and how does feeding relate to it?",
@@ -36421,7 +36932,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2,
+    "sourceCount": 5,
     "headingCount": 9,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1376,
@@ -36432,8 +36943,8 @@
     "slug": "neon-tetra-handling-guide",
     "title": "Neon Tetras Aren't Handled, But the School Size Isn't Optional",
     "seoTitle": "Handling Neon Tetras: School Size Matters",
-    "seoDescription": "Neon tetras aren't handled, but six is the hard minimum school size, ten to twelve is better. Fewer than six means pale, stressed, constantly hiding fish.",
-    "lastUpdated": "2026-09-25",
+    "seoDescription": "Neon tetras are never handled by hand, but school size is not optional: buy at least eight and aim for ten. Smaller groups dart, squabble and feed late.",
+    "lastUpdated": "2026-11-01",
     "noIndex": false,
     "excerpt": "Neon tetras are an observation pet, not a hands-on one. The welfare consideration with this species isn't handling technique at all, it's group size, and getting that number right changes everything.",
     "date": "2026-07-21",
@@ -36464,7 +36975,7 @@
       },
       {
         "q": "How many neon tetras should I keep together?",
-        "a": "Six at the very least, and ten to twelve if the tank allows. Below six you get pale, stressed fish that hide constantly and fall ill more easily. Treat the number as a welfare requirement."
+        "a": "Ten, with eight as the least to buy. Smaller groups show more darting and aggression and are slower to come out to feed, so treat the number as a welfare requirement."
       },
       {
         "q": "What does a properly schooled group look like?",
@@ -36476,11 +36987,11 @@
       },
       {
         "q": "How can you tell a male neon tetra from a female?",
-        "a": "Only once they're adults. Females are rounder-bodied and a little larger, and the fuller belly makes the blue stripe look slightly bent. Males stay slim with a straight stripe."
+        "a": "Only once they're adults. Females are rounder-bodied and a little larger than males, who stay slimmer."
       },
       {
         "q": "How do neon tetras compare to guppies?",
-        "a": "They look interchangeable on a shopping list and aren't. A guppy is a hardy livebearer that tolerates harder, alkaline water and breeds without much intervention. A neon tetra is an egg-scatterer that needs soft, acidic, stable water, and it reacts badly to swings."
+        "a": "They look interchangeable on a shopping list and aren't. A guppy is a hardy livebearer that tolerates harder, alkaline water and breeds without much intervention. A neon tetra is an egg-scatterer that wants soft, slightly acidic, steady water."
       }
     ],
     "relatedProducts": [],
@@ -36501,7 +37012,7 @@
     "title": "Common Neon Tetra Health Issues (Including the Disease Named After This Fish)",
     "seoTitle": "Neon Tetra Health Issues: Signs & Causes",
     "seoDescription": "Neon tetra disease has no cure and spreads when tankmates eat a dead fish. Ich, fin rot, and swim bladder are treatable. A 30-day quarantine keeps NTD out.",
-    "lastUpdated": "2026-09-25",
+    "lastUpdated": "2026-11-01",
     "noIndex": false,
     "excerpt": "Most neon tetra health problems are treatable and trace back to water quality. One, though, is different, incurable, and named after this species specifically.",
     "date": "2026-07-21",
@@ -36532,15 +37043,15 @@
       },
       {
         "q": "Is NTD contagious, and can it be cured?",
-        "a": "Yes, highly so. It moves through a tank when fish eat infected tissue, including from one that has already died, and it can reach other species too, cardinal tetras and guppies among them. No cure exists. Once symptoms show, the fish will not recover, and aquatic specialists recommend humane euthanasia for a confirmed case. Humans can't catch it."
+        "a": "Yes, highly so. It moves through a tank when fish eat infected tissue, including from one that has already died, and it can reach other species too, guppies, barbs and angelfish among them. No cure exists. Once symptoms show, the fish will not recover, and humane euthanasia ends its suffering and protects the rest of the tank. Humans can't catch it."
       },
       {
         "q": "Is every pale, restless neon a case of NTD?",
-        "a": "No. NTD is often mistaken for columnaris or costia, since all three can lay a whitish film over the fish. In NTD the film sits under the skin rather than on it, and only a microscope confirms the spores. Treat a suspect fish as bacterial in a hospital tank first: one that improves did not have NTD."
+        "a": "No. NTD is often mistaken for columnaris, since both can leave pale patches on the fish, and only a microscope confirms the spores in the muscle. Treat a suspect fish as bacterial in a hospital tank first: one that improves did not have NTD."
       },
       {
         "q": "What is ich and how do you treat it in neon tetras?",
-        "a": "White spots like grains of salt, plus flashing against decor and fast breathing. Stress or temperature instability sets it off. It's treatable: raise the temperature gradually to about 81°F, no higher, and use a standard commercial ich medication, since the 86°F heat cure is beyond a neon's range."
+        "a": "White spots like grains of salt, plus flashing against decor and fast breathing. It's treatable: raise the temperature gradually to 77°F, the top of a neon's range, to speed the parasite's cycle, then use an ich medication or aquarium salt to kill it. The 86°F that most ich strains cannot survive is well outside a neon's range."
       },
       {
         "q": "How do I prevent most neon tetra health issues, including NTD?",
@@ -36558,7 +37069,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 3,
+    "sourceCount": 5,
     "headingCount": 9,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
@@ -36569,8 +37080,8 @@
     "slug": "neon-tetra-tank-setup-guide",
     "title": "Neon Tetra Tank Setup: Soft Water, Dim Light, and a Blackwater Feel",
     "seoTitle": "Neon Tetra Tank Setup Guide",
-    "seoDescription": "Neon tetra tank setup: 10 gallons minimum for a school of 6, pH 6.0-7.0 soft water, 72-78F, and driftwood tannins that mimic their native blackwater streams.",
-    "lastUpdated": "2026-09-25",
+    "seoDescription": "Neon tetra tank setup: a tank 24 inches long and 14 gallons or more for a school of 10, pH 6.0-7.0 soft water, 70-77F, and driftwood tannins for blackwater.",
+    "lastUpdated": "2026-11-01",
     "noIndex": false,
     "excerpt": "Neon tetras come from soft, dim, tannin-stained blackwater streams, and the closer your tank setup gets to that origin, the better this fish looks and behaves.",
     "date": "2026-07-21",
@@ -36597,15 +37108,15 @@
     "faqs": [
       {
         "q": "What size tank does a school of neon tetras need?",
-        "a": "10 gallons for a school of 6, which is the practical floor. For the better group of 10 to 15, move up to a 20-gallon long. Schooling happens sideways, so favor length over height."
+        "a": "Length decides it: 24 inches (60 cm) or more, and about 14 gallons, for a school of 10. A 20-gallon long meets that and a standard 10-gallon does not."
       },
       {
         "q": "What temperature do neon tetras need?",
-        "a": "70 to 81°F works, and 72 to 78°F is the usual target. A heater is necessary in any tank of 10 gallons or more, and holding the temperature steady matters as much as the number itself, since swings stress this fish more than a slightly imperfect setting."
+        "a": "70 to 77°F (21 to 25°C). A heater is necessary in any tank this size, and holding the temperature steady matters as much as the number itself, since swings stress this fish more than a slightly imperfect setting."
       },
       {
         "q": "What water chemistry do neon tetras need?",
-        "a": "Soft and slightly acidic: pH 6.0 to 7.0, low hardness. That's a real step away from the harder, more alkaline water species like guppies tolerate, so test your source water before assuming it fits. Ammonia and nitrite both need to read zero."
+        "a": "Slightly acidic and on the soft side: pH 6.0 to 7.0, with hardness between 1 and 12 dGH. That's a real step away from the harder, more alkaline water species like guppies tolerate, so test your source water before assuming it fits. Ammonia and nitrite both need to read zero."
       },
       {
         "q": "What kind of filtration is best for a neon tetra tank?",
@@ -36613,11 +37124,11 @@
       },
       {
         "q": "What's the non-obvious detail that makes the biggest difference in a neon tetra tank?",
-        "a": "Recreating blackwater conditions. Driftwood and Indian almond leaves release tannins that tint the water and lower pH, which is the habitat this species evolved in, and fish kept that way show better color and confidence. Add dense midground plants and floating plants to dim the light."
+        "a": "Recreating blackwater conditions. Driftwood and Indian almond leaves release tannins that tint the water and lower pH, which mimics the habitat this species evolved in. Add dense midground plants and floating plants to dim the light."
       }
     ],
     "relatedProducts": [
-      "tank-10-gallon",
+      "tank-20-gallon-long",
       "submersible-aquarium-heater",
       "sponge-filter",
       "live-terrarium-plants",
@@ -36630,7 +37141,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 3,
+    "sourceCount": 4,
     "headingCount": 10,
     "ledeMatchesExcerpt": true,
     "imageWidth": 1168,
@@ -44012,7 +44523,24 @@
     "lastReviewed": "2026-10-02",
     "author": "Michael Ryan",
     "canonicalUrl": null,
-    "faqs": [],
+    "faqs": [
+      {
+        "q": "Is it legal to own a Russian tortoise?",
+        "a": "In every state but Colorado. Forty-two jurisdictions place no rule on it, five require a permit, four attach a condition, and Hawaii expressly allows the genus Testudo."
+      },
+      {
+        "q": "Is it illegal to buy a Russian tortoise under four inches?",
+        "a": "The FDA rule, 21 CFR 1240.62, bars selling, holding for sale or distributing turtles under four inches of carapace, and says nothing about owning one. An exception covers sales \"not in connection with a business,\" so a private keeper rehoming a hatchling is inside the rule and a shop doing the same thing is not."
+      },
+      {
+        "q": "Why does Colorado ban Russian tortoises?",
+        "a": "Colorado clears tortoises only if native to the tropical and subtropical region, which CPW fixes at 26 degrees north to 26 degrees south. The Russian tortoise is a Central Asian steppe animal from far north of that line, which makes it regulated wildlife, and CPW issues no license for a pet."
+      },
+      {
+        "q": "Which states need a permit for a Russian tortoise?",
+        "a": "New Jersey (a personal possession permit, since the species is not on the exempt list), Massachusetts (a permit always, because Testudo horsfieldii is assessed as vulnerable), New Mexico and Delaware (importation permits, Delaware's a $25 Individual permit) and West Virginia (an importation permit that exists on paper only)."
+      }
+    ],
     "relatedProducts": [],
     "factFile": false,
     "animalDay": null,
@@ -44549,7 +45077,24 @@
     "lastReviewed": "2026-10-02",
     "author": "Michael Ryan",
     "canonicalUrl": null,
-    "faqs": [],
+    "faqs": [
+      {
+        "q": "Are savannah monitors legal in the US?",
+        "a": "In 40 of the 52 jurisdictions nothing restricts one, because most monitor rules reach only the giant species. Of the twelve that do, five are outright bans and seven are paperwork."
+      },
+      {
+        "q": "Where are savannah monitors banned?",
+        "a": "Louisiana names Varanus exanthematicus on its prohibited nonnative list, New York City bans the whole family Varanidae and names this species, Hawaii lists it for research and exhibition only, DC permits no lizard at all, and New Mexico's default clause puts every unlisted monitor in group IV, which is barred to the general public."
+      },
+      {
+        "q": "Which states require a permit for a savannah monitor?",
+        "a": "Rhode Island (all monitors), Arkansas (ten monitors are cleared by name and this is not one), New Jersey (the genus Varanus whole), Massachusetts, Delaware (a $25 Individual permit) and West Virginia (an importation permit). Minnesota allows one from a permitted breeder."
+      },
+      {
+        "q": "Why does Louisiana ban the savannah monitor specifically?",
+        "a": "Deliberately. The prohibited nonnative list at LAC 76:XV.101 names Varanus exanthematicus by binomial, and that list is short, built around species with a record of establishing in the Gulf states, with the tegu and the green iguana beside it. Only one other monitor appears on it."
+      }
+    ],
     "relatedProducts": [],
     "factFile": false,
     "animalDay": null,
@@ -44841,7 +45386,24 @@
     "lastReviewed": "2026-10-08",
     "author": "Michael Ryan",
     "canonicalUrl": null,
-    "faqs": [],
+    "faqs": [
+      {
+        "q": "Is it legal to own a serval in the US?",
+        "a": "Thirty-five of the 52 jurisdictions restrict it and twenty ban it outright with no permit to apply for. Seventeen states place no restriction, and in those the county or city very well might."
+      },
+      {
+        "q": "Which states ban servals?",
+        "a": "CA, GA, DC, NYC, NY, CT, OR, MN, MD, NM, IA, RI, NH, AK, NE, HI, CO, NJ, ME and OH. Almost every one regulates cats by family, and the word Felidae does not care how big the cat is."
+      },
+      {
+        "q": "Which states allow a serval with a permit, and what does the permit involve?",
+        "a": "TX, VA, ID, SD, IN, ND, WY, AR, PA, VT, DE, MA and FL, and the permits are not interchangeable. Texas wants a certificate of registration plus $100,000 of liability insurance, South Dakota charges ten dollars a year, Indiana's Class II permit is applied for within five days of taking possession, and Wyoming's \"may be authorized\" is discretionary."
+      },
+      {
+        "q": "Is a savannah cat legal where a serval is not?",
+        "a": "In Ohio, yes and by name: § 935.01(C)(7)(e) bans servals \"excluding hybrids with domestic cats commonly known as savannah cats,\" with no generation cutoff. Iowa writes a filial generation rule for the savannah into the same statute that bans the serval. Most states have not addressed the hybrid at all."
+      }
+    ],
     "relatedProducts": [],
     "factFile": false,
     "animalDay": null,
@@ -48275,7 +48837,24 @@
     "lastReviewed": "2026-10-02",
     "author": "Michael Ryan",
     "canonicalUrl": null,
-    "faqs": [],
+    "faqs": [
+      {
+        "q": "Are tarantulas legal in the US?",
+        "a": "In forty-one of the 52 jurisdictions the answer is a clean yes, usually because the state's wildlife definition stops at mammals, birds, fish, reptiles and amphibians, so a spider is invisible to it. That silence is not a promise: it holds until a state writes a broader definition, and a handful have."
+      },
+      {
+        "q": "Where are tarantulas banned?",
+        "a": "New York City (named under venomous spiders in Health Code Article 161), Hawaii (no theraphosid on any approved list), Montana (a white list whose arachnid rule clears two scorpions and no spider) and the District of Columbia (no invertebrate among seven permitted categories)."
+      },
+      {
+        "q": "Which tarantulas are legal in Maine?",
+        "a": "Three: Grammostola pulchra, the Brazilian black; Grammostola pulchripes, the Chaco golden knee; and Grammostola rosea, the Chilean rose. Every other species, including the curly hair and any Aphonopelma, needs a permit."
+      },
+      {
+        "q": "Do I need a permit for a tarantula in Rhode Island?",
+        "a": "On the wording, yes. Rhode Island's invertebrate exemption covers \"animals of the class Insecta,\" and spiders are Arachnida, so a tarantula stays inside the definition of an exotic animal and inside the permit requirement."
+      }
+    ],
     "relatedProducts": [],
     "factFile": false,
     "animalDay": null,
@@ -48557,7 +49136,24 @@
     "lastReviewed": null,
     "author": "Michael Ryan",
     "canonicalUrl": null,
-    "faqs": [],
+    "faqs": [
+      {
+        "q": "How do I know if a toy is too small for my dog?",
+        "a": "The fist test: if a toy fits inside your closed fist, it is too small for a large dog and a choking risk. Buy toys rated for your dog's size or larger, and err on the side of bigger."
+      },
+      {
+        "q": "What is the best toy for a power chewer?",
+        "a": "Natural rubber that flexes under bite pressure, the material in the KONG Extreme and West Paw Zogoflex. Skip hard nylon for aggressive chewers: it is designed for gnawing and can crack teeth, and any piece that breaks off should be removed immediately."
+      },
+      {
+        "q": "How do I check whether a chew toy is too hard?",
+        "a": "The thumbnail test: press a thumbnail firmly into the surface. A small indent means it is soft enough not to crack a tooth, no dent at all means it may fracture one, and crumbling or tearing means it will not survive a power chewer."
+      },
+      {
+        "q": "Are rope toys safe for dogs?",
+        "a": "Only supervised. Swallowed rope fibers can wrap around the intestines, a linear foreign body obstruction that is a surgical emergency and sometimes fatal, so retire a rope toy as soon as it starts to fray."
+      }
+    ],
     "relatedProducts": [
       "kong-extreme-dog-toy-large",
       "chuckit-ultra-ball-2-pack",
@@ -51267,7 +51863,24 @@
     "lastReviewed": "2026-10-02",
     "author": "Michael Ryan",
     "canonicalUrl": null,
-    "faqs": [],
+    "faqs": [
+      {
+        "q": "Are veiled chameleons legal in the US?",
+        "a": "Legal in forty-six states with no paperwork. Hawaii and Washington DC say no, New Jersey and West Virginia want a permit, and Minnesota wants one from a permitted breeder."
+      },
+      {
+        "q": "Why are veiled chameleons illegal in Hawaii?",
+        "a": "Hawaii prohibits any animal not on an approved list and Chamaeleo calyptratus is on none of them. Escaped and released animals have established breeding populations on Maui and Oahu, which makes an addition to an approved list vanishingly unlikely."
+      },
+      {
+        "q": "Why does Washington DC ban veiled chameleons?",
+        "a": "D.C. Code § 8-1808(j) allows seven pet categories, and the reptile category reads \"Non-venomous snakes, fish, and turtles.\" Lizards are simply absent, so a veiled chameleon, a bearded dragon and a leopard gecko are all outside the list and prohibited."
+      },
+      {
+        "q": "Do I need a permit for a veiled chameleon in New Jersey?",
+        "a": "Yes. The species is not on the exempt list at N.J.A.C. 7:25-4.4, so 7:25-4.5 requires a personal possession permit from Fish and Wildlife before the animal arrives."
+      }
+    ],
     "relatedProducts": [],
     "factFile": false,
     "animalDay": null,
@@ -51692,7 +52305,24 @@
     "lastReviewed": null,
     "author": "Michael Ryan",
     "canonicalUrl": null,
-    "faqs": [],
+    "faqs": [
+      {
+        "q": "Why does my dog pace back and forth?",
+        "a": "Pacing is a self-soothing behavior. Repetition brings a small, temporary drop in the stress load, which is why it sticks. In dogs it most often points to separation anxiety, unmet exercise needs or a specific fear trigger."
+      },
+      {
+        "q": "Why is my cat hiding and not eating?",
+        "a": "Extended hiding with food refusal usually signals overstimulation, an environmental change, or fear of a new person or animal in the home. For indoor cats, an environment with nothing to hunt or solve is a frequent unseen cause."
+      },
+      {
+        "q": "What are the physical signs of a stressed dog or cat?",
+        "a": "Dogs: dilated pupils, rapid blinking and visible white around the eye, giving a wide, startled look. Cats: dilated pupils, ears flat to the head and a hunched, low posture. Trembling and a low body posture in either means an acute fear state that needs space, not correction."
+      },
+      {
+        "q": "Will blocking the behavior fix the anxiety?",
+        "a": "Usually not. Blocking the fence or the furniture often shifts the anxiety somewhere else, because the behavior was the animal's solution to a problem that has not been addressed."
+      }
+    ],
     "relatedProducts": [],
     "factFile": false,
     "animalDay": null,
@@ -52260,7 +52890,24 @@
     "lastReviewed": null,
     "author": "Michael Ryan",
     "canonicalUrl": null,
-    "faqs": [],
+    "faqs": [
+      {
+        "q": "What temperature should axolotl water be?",
+        "a": "60 to 64°F (15.6 to 17.8°C). Act above 72°F. Above 75°F axolotls go off their food, develop fluid swelling, float and cannot stay down, and often pick up secondary bacterial infections."
+      },
+      {
+        "q": "Why does warm water hurt an axolotl?",
+        "a": "Two effects stack. Warm water holds less oxygen at the moment a warmer animal is burning more of it, and warm water raises the share of ammonia in its un-ionized form, which is roughly 100 times more toxic. Heat turns every other small water problem into a bigger one."
+      },
+      {
+        "q": "What should ammonia, nitrite and nitrate read in an axolotl tank?",
+        "a": "Ammonia and nitrite 0 ppm, nitrate under 10 ppm. Any ammonia or nitrite reading means a water change of at least a third with dechlorinated, temperature-matched water, a skipped or cut feeding, and a retest the next day until both read zero."
+      },
+      {
+        "q": "How often should I change axolotl water?",
+        "a": "20 to 30 percent each week in a cycled home aquarium, more if nitrate climbs. A lab colony keeping adults in half a gallon each changes water at least every other day instead. What fails is the middle ground: a small tank with no cycled filter and weekly changes."
+      }
+    ],
     "relatedProducts": [],
     "factFile": false,
     "animalDay": null,
@@ -52301,7 +52948,24 @@
     "lastReviewed": null,
     "author": "Michael Ryan",
     "canonicalUrl": null,
-    "faqs": [],
+    "faqs": [
+      {
+        "q": "Do bearded dragons need UVB?",
+        "a": "Yes. UVB on the skin makes vitamin D3, D3 lets the gut absorb calcium, and without it a growing dragon pulls calcium from its own skeleton. In a 2010 study, hatchlings under UVB had 18 times the circulating vitamin D3 of orally supplemented dragons."
+      },
+      {
+        "q": "Can I use a D3 supplement instead of a UVB bulb?",
+        "a": "No. In that trial, even four times the standard oral D3 dose came nowhere near the levels that 2 hours of UVB a day produced. A dusting of D3 is a backup, never the plan."
+      },
+      {
+        "q": "How far should the UVB tube be from a bearded dragon?",
+        "a": "For a 12% T5 HO tube, about 16 to 18 inches above the basking spot with nothing in between and about 11 to 12 inches through mesh, aiming for a UV index of 4.0 to 4.5 at the basking spot and no more than 3.0 for hypomelanistic, translucent and similar morphs."
+      },
+      {
+        "q": "How often should I replace a UVB bulb?",
+        "a": "Every 6 to 12 months depending on the model, even while it still glows, because UVB output fades long before the visible light does. Arcadia rates its T5 HO and T8 Desert tubes at 12 months. Write the install date on the fixture, or check with a UV meter."
+      }
+    ],
     "relatedProducts": [],
     "factFile": false,
     "animalDay": null,
@@ -52341,7 +53005,24 @@
     "lastReviewed": null,
     "author": "Michael Ryan",
     "canonicalUrl": null,
-    "faqs": [],
+    "faqs": [
+      {
+        "q": "What are the signs of a bored cat?",
+        "a": "Excessive furniture scratching, unprovoked aggression toward people or other pets, overeating and weight gain, repetitive behaviors like pacing or over-grooming, and yowling at odd hours. Chronic boredom can feed anxiety disorders if it goes unaddressed."
+      },
+      {
+        "q": "How much playtime does an indoor cat need each day?",
+        "a": "The article's working figure is 10 to 20 minutes of wand-toy play daily, in short sessions rather than one long one, because cats hunt in brief bursts. A puzzle feeder at mealtime and a window perch cover the hours nobody is playing."
+      },
+      {
+        "q": "Do puzzle feeders help cats?",
+        "a": "Yes. Food puzzles have been tied to weight loss and calmer behavior in cats that use them, and they stretch a meal that would otherwise take 30 seconds from a bowl."
+      },
+      {
+        "q": "Should I let my cat outside for enrichment?",
+        "a": "Outdoor access is the richest stimulation but carries traffic, predator, disease and parasite risk. A catio or leash training gives the sights, sounds and smells without those dangers."
+      }
+    ],
     "relatedProducts": [],
     "factFile": false,
     "animalDay": null,
@@ -52381,7 +53062,24 @@
     "lastReviewed": null,
     "author": "Michael Ryan",
     "canonicalUrl": null,
-    "faqs": [],
+    "faqs": [
+      {
+        "q": "How many hours a day does a parrot need with its owner?",
+        "a": "There is no proven number of hours; the common two to four a day, or four to six for large species, are rules of thumb. What helps is daily, predictable contact, foraging to do when the bird is alone, and a bird that learns to settle by itself."
+      },
+      {
+        "q": "What are the signs of a lonely parrot?",
+        "a": "Feather damaging, screaming and biting, the short list vets give. Feather damaging needs a vet workup first, because skin infection, wider disease, cancer, malnutrition and toxins all produce the same picture."
+      },
+      {
+        "q": "Does loneliness physically harm a parrot?",
+        "a": "A 2014 study of 45 captive African greys found single-housed birds had significantly shorter telomeres than pair-housed birds of the same age; nine-year-old singles matched pair-housed birds 23 years older. It shows isolation registers as long-term physiological stress, not that a lonely grey dies 23 years sooner."
+      },
+      {
+        "q": "Should I get a second parrot so mine is not lonely?",
+        "a": "Pair-housed greys fared better in the telomere study, which argues for company but does not guarantee two birds will get along. Ask a vet whether they should share a cage, finish quarantine first, and expect a second bird to add company rather than replace daily human time."
+      }
+    ],
     "relatedProducts": [],
     "factFile": false,
     "animalDay": null,
@@ -52421,7 +53119,24 @@
     "lastReviewed": null,
     "author": "Michael Ryan",
     "canonicalUrl": null,
-    "faqs": [],
+    "faqs": [
+      {
+        "q": "How much hay should a rabbit eat a day?",
+        "a": "As much grass hay as it will eat, refreshed every day; a pile about the size of the rabbit is a fair guide to one day's worth. Hay makes up 80 to 85 percent of what a rabbit eats."
+      },
+      {
+        "q": "Why does a rabbit need hay rather than pellets?",
+        "a": "Rabbit teeth grow about a centimeter a month, and only long stretches of grinding hay wear them down as fast as they grow. Pellets are concentrated food that does not provide that wear, and a rabbit that fills up on them eats less hay."
+      },
+      {
+        "q": "What are the signs of overgrown teeth in a rabbit?",
+        "a": "Drooling, difficulty eating, dropping food, weight loss, mouth sores and pawing at the mouth. Treatment is skull X-rays and trimming under anesthesia, often every 4 to 12 weeks for life, and switching to hay afterward does not undo it."
+      },
+      {
+        "q": "Which hay is best for an adult rabbit?",
+        "a": "Grass hay. Timothy and orchard grass are the common ones, and bluegrass, brome, fescue, oat and ryegrass also work; mixing types keeps a picky rabbit eating. Alfalfa is a legume hay too high in calcium and protein for a mature rabbit, reserved for rabbits under about six months and nursing does."
+      }
+    ],
     "relatedProducts": [],
     "factFile": false,
     "animalDay": null,
@@ -52504,7 +53219,24 @@
     "lastReviewed": null,
     "author": "Michael Ryan",
     "canonicalUrl": null,
-    "faqs": [],
+    "faqs": [
+      {
+        "q": "How much exercise does a dog need each day?",
+        "a": "It depends on breed, age and size. The article's table runs from 1 to 2+ hours for working breeds like huskies and border collies, 1 to 2 hours for sporting breeds, 1 to 1.5 for hounds, 30 to 45 minutes for toy breeds, and 20 to 30 minutes of low-intensity activity for brachycephalic breeds like bulldogs and pugs."
+      },
+      {
+        "q": "Is a backyard enough exercise for a dog?",
+        "a": "No. The assumption that a yard is \"enough\" is one of the reasons the article gives for under-exercised dogs. A walk adds the sniffing, the new dogs and the changing surroundings that keep a dog's brain engaged, and a yard does not."
+      },
+      {
+        "q": "What happens if a dog does not get enough exercise?",
+        "a": "Destructive behavior (chewing, digging, scratching doors), obesity with its diabetes, heart, respiratory and cancer risks, and psychological signs such as excessive barking, whining, withdrawal and compulsive licking or tail-chasing. The AKC estimates obesity can cut a dog's life expectancy by up to two and a half years."
+      },
+      {
+        "q": "Can a dog get too much exercise?",
+        "a": "Yes. A bulldog pushed hard on a hot afternoon can end up in a veterinary emergency, and injury risk rises when exercise is too intense, too sudden or wrong for the dog's age and fitness level."
+      }
+    ],
     "relatedProducts": [
       "chuckit-ultra-ball-2-pack"
     ],

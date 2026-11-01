@@ -4,6 +4,119 @@ import { fillCostTokens } from '../../costs.js';
 
 export const fishGuides = fillCostTokens([
   {
+    id: "tetras",
+    name: "Tetra Care: The Essentials",
+    emoji: "🐟",
+    difficulty: "Beginner",
+    petType: "Fish",
+    image: "/assets/guides/tetras.jpg",
+    tagline: "The small schooling fish that share one set of rules and differ on almost every number!",
+    seoTitle: "Tetra Care Guide: Schools, Water, and Tankmates",
+    seoDescription: "Every tetra needs a school, a cycled tank and soft water, but the numbers change by species. Compare six popular tetras and the rules they all share.",
+    funFact: "Neon and cardinal tetras are easy to mix up in a shop tank, but the cardinal's red stripe runs the full length of its body, where the neon's covers only half of it.",
+    // Group hub for the tetras (layout "group", rendered by GuideDetail.jsx).
+    // Someone here has not picked a fish yet, so it is a chooser, not a
+    // species checklist: no first-week card, no buy list, no emergency card.
+    // Order: intro, Pick your tetra, keeping tetras together, the eight
+    // rules every tetra shares, FAQ. Each rule tile links its shared guide,
+    // so there is no separate list of shared guides. It keeps no figure of its
+    // own. Each species' strip copies its figures from the deep dive named in
+    // `sources` (null: the encyclopedia entry, which no deep dive repeats);
+    // each rule tile copies its figure from the guide in its `source`. The
+    // keeping-together grid is worked out from the species' `ranges` at
+    // render time and prints no number, since the overlap of two ranges is a
+    // figure no guide states; a band under 3°F reads "Limits", a single-point touch reads "No", and a
+    // species' optional `caution` (from its handling guide, such as a fin
+    // nipper) is marked with a dagger and printed once under the key. Planned species show as one "Coming" line until
+    // their guide set ships. Live 2026-11-01 with ember; rummy-nose, black
+    // skirt and glowlight follow one species a day (content/_scheduled-tetras/).
+    layout: "group",
+    // Intro research, with quotes and URLs: TETRA_GROUP_RESEARCH.md
+    // (Merriam-Webster for the name, Melo et al. 2024 for the families,
+    // FishBase for Africa and Mexico, Gonzalez, Patrick and Val 2024 for the
+    // water, Romano and Stefanini 2021 for schooling). Not cited on the page,
+    // matching the encyclopedia entries, which carry no citations either. The
+    // name comes from the old genus, not "four fins" (no dictionary supports
+    // that), and the schooling line is the predator finding only: in the neon
+    // tetra work, food shortened shoaling rather than holding the school.
+    intro: {
+      text: "Tetra is a common name rather than one scientific group. The word is short for Tetragonopterus, an old genus name, and it now covers small characins spread across several families in South and Central America, Mexico and Africa. Most South American tetras come from soft, acidic streams, either clear or stained the color of tea, and many characins keep their salt balance in water that acidic. They school mainly for safety: when a predator appears, neon tetras move toward the middle of the group, where any one fish is least likely to be the one caught.",
+    },
+    branches: {
+      groupName: "Tetras",
+      heading: "Pick your tetra",
+      intro: "Same rules, different numbers. The figures under each species come from its own guides, and the row opens its full care guide.",
+      fields: ["Tank", "Temp", "pH", "Size"],
+      species: [
+        {
+          id: "neon-tetra",
+          name: "Neon Tetra",
+          values: ["24-inch tank for 10", "70 to 77°F", "6.0 to 7.0", "1 to 1.5 in"],
+          sources: ["neon-tetra-tank-setup-guide", "neon-tetra-tank-setup-guide", "neon-tetra-tank-setup-guide", null],
+          ranges: { tempF: [70, 77], ph: [6.0, 7.0] },
+        },
+        {
+          id: "cardinal-tetra",
+          name: "Cardinal Tetra",
+          // The species' whole keeping range, like every other row, not its
+          // 77 to 82°F everyday target: comparing a target with full ranges
+          // made neon and cardinal look like they met at a single degree.
+          values: ["20-gallon long for 10", "73 to 84°F", "5.0 to 7.0", "2 in"],
+          sources: ["cardinal-tetra-tank-setup-guide", "cardinal-tetra-tank-setup-guide", "cardinal-tetra-tank-setup-guide", null],
+          ranges: { tempF: [73, 84], ph: [5.0, 7.0] },
+        },
+        {
+          id: "ember-tetra",
+          name: "Ember Tetra",
+          values: ["10-gallon for 10", "75 to 82°F", "5.0 to 7.0", "0.8 in"],
+          sources: ["ember-tetra-tank-setup-guide", "ember-tetra-tank-setup-guide", "ember-tetra-tank-setup-guide", null],
+          ranges: { tempF: [75, 82], ph: [5.0, 7.0] },
+        },
+        {
+          id: "rummy-nose-tetra",
+          planned: true,
+          name: "Rummy-Nose Tetra",
+          values: ["36-inch tank for 10", "73 to 79°F", "5.5 to 7.0", "1.5 to 2 in"],
+          sources: ["rummy-nose-tetra-tank-setup-guide", "rummy-nose-tetra-tank-setup-guide", "rummy-nose-tetra-tank-setup-guide", null],
+          ranges: { tempF: [73, 79], ph: [5.5, 7.0] },
+        },
+        {
+          id: "black-skirt-tetra",
+          planned: true,
+          name: "Black Skirt Tetra",
+          values: ["20-gallon long for 12", "68 to 79°F", "6.0 to 7.5", "2 to 2.5 in"],
+          sources: ["black-skirt-tetra-tank-setup-guide", "black-skirt-tetra-tank-setup-guide", "black-skirt-tetra-tank-setup-guide", null],
+          ranges: { tempF: [68, 79], ph: [6.0, 7.5] },
+          caution: "Black skirts nip fins: keep a school of 12 and skip slow or long-finned tankmates.",
+        },
+        {
+          id: "glowlight-tetra",
+          planned: true,
+          name: "Glowlight Tetra",
+          values: ["24 x 15 in base for 10", "75 to 82°F", "5.5 to 7.5", "1.6 in"],
+          sources: ["glowlight-tetra-tank-setup-guide", "glowlight-tetra-tank-setup-guide", "glowlight-tetra-tank-setup-guide", null],
+          ranges: { tempF: [75, 82], ph: [5.5, 7.5] },
+        },
+      ],
+    },
+    rules: [
+      { label: "School", value: "Ten of one species. Groups of 10 shoaled the most in the group-size study, and ten of one species beats five each of two.", source: "aquarium-stocking-and-tankmates-guide" },
+      { label: "Cycle first", value: "Most fishless cycles finish in four to six weeks. No tetra goes in until ammonia and nitrite read zero.", source: "aquarium-cycling-guide" },
+      { label: "Soft water", value: "Every tetra here wants soft, acidic water. Work with what your tap gives you: dosing pH-up or pH-down against KH is how keepers crash a tank.", source: "freshwater-ph-gh-kh-guide" },
+      { label: "Food size", value: "Tetra mouths are tiny, so micro-pellets or flake crushed fine. Food too large gets spat out, and the fish starve in a tank that looks fed.", source: "neon-tetra-feeding-guide" },
+      { label: "Quarantine", value: "At least 30 days in a separate tank before a new fish joins the school.", source: "fish-quarantine-and-treatment-guide" },
+      { label: "Ich", value: "86°F held for two weeks kills most strains, and it sits above every tetra here but one. Cardinals tolerate it in short spells, with strong aeration; for the rest, heat goes only to the top of their range and medication does the killing.", source: "aquarium-ich-treatment-guide" },
+      { label: "Water changes", value: "25 to 30% weekly. Test nitrate first: under 20 ppm the routine is right, past 40 ppm the next change is 50%.", source: "aquarium-water-changes-guide" },
+      { label: "Power outage", value: "Oxygen is the threat, not darkness. Unplug the filter rather than letting it sit dead in the water, and keep the surface moving.", source: "aquarium-power-outage-and-transport-guide" },
+    ],
+    faqs: [
+      { q: "How many of a schooling fish do I need?", a: "Six is the floor most species pages give, and the research points higher. In the group-size study behind that advice, neon tetras and white cloud mountain minnows showed the least aggression and darting in the larger groups, and groups of 10 shoaled the most. Ten of one species beats five each of two." },
+      { q: "Can I treat ich with heat alone?", a: "Only if your fish can live at 86°F for two weeks, because that is the temperature most ich strains cannot survive, and it must be held with extra aeration since warm water carries less oxygen. Discus can, and cardinal tetras tolerate it in short spells, so for them it is possible with strong aeration, watched closely. Goldfish, koi, zebra danios, neon, ember, rummy-nose, black skirt and glowlight tetras, and bristlenose plecos cannot, and for them heat goes only as high as the species ceiling, to speed the cycle, while salt or medication does the killing." },
+      { q: "Can different tetra species school together?", a: "Not as one school. Two neons, four embers and four cardinals are three small groups, each below the floor of six, rather than one school of 10. Give each species its own full school in a tank and water that suit all of them, or keep a single species." },
+      { q: "How long does it take to cycle a fish tank?", a: "Most fishless cycles finish in four to six weeks at a stable warm temperature, though a gene-sequencing study of real home aquarium biofilters found two tanks reaching undetectable ammonia and nitrite by week three while a third took until week eight. Cold water, no seeding, and an inconsistent ammonia dose all push a cycle toward the slower end of that range." },
+    ],
+  },
+  {
     id: "angelfish",
     name: "Angelfish",
     emoji: "🐠",
@@ -292,21 +405,21 @@ export const fishGuides = fillCostTokens([
     firstWeek: {
       intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
-        { label: "Before any fish", value: "A 2008 study on this species found it tolerates ammonia better than assumed but is sensitive to nitrite, so a finished cycle before stocking is the single most useful habit.", source: "cardinal-tetra-health-issues-guide" },
-        { label: "School size", value: "Ten or more. Smaller groups develop stress sickness, and cardinals shoal tighter and color up better in bigger groups. Six is a floor, not a target.", source: "cardinal-tetra-handling-guide" },
+        { label: "Before any fish", value: "A 2008 study on this species found it sensitive to nitrite, so ammonia and nitrite both read zero and a finished cycle before stocking is the single most useful habit.", source: "cardinal-tetra-health-issues-guide" },
+        { label: "School size", value: "Plan for ten, with eight the least to buy. Cardinals are obligate schooling fish and need the group to feel secure.", source: "cardinal-tetra-handling-guide" },
         { label: "Tank size", value: "A 20-gallon long, roughly 24x12 inches of base, for the school of 10. A standard 10-gallon does not meet that footprint.", source: "cardinal-tetra-tank-setup-guide" },
-        { label: "Temperature", value: "77 to 82°F for general care, inside a tolerated 73 to 84°F. Cardinals take water up to 86°F, past the roughly 77°F neons are comfortable with, so they suit a warmer community tank.", source: "cardinal-tetra-tank-setup-guide" },
+        { label: "Temperature", value: "77 to 82°F for general care, inside a tolerated 73 to 84°F. Cardinals tolerate water reaching 86°F in short spells, past the roughly 77°F neons are comfortable with, so they suit a warmer community tank.", source: "cardinal-tetra-tank-setup-guide" },
         { label: "Water chemistry", value: "Soft and acidic, pH 5.0 to 7.0 and toward the low end. Test your source water first rather than assuming it fits, and ammonia and nitrite read zero before stocking.", source: "cardinal-tetra-tank-setup-guide" },
-        { label: "Filtration and substrate", value: "Gentle flow, a sponge filter is the common choice, over fine gravel or sand. A darker substrate makes the red and blue stripe stand out.", source: "cardinal-tetra-tank-setup-guide" },
-        { label: "Light and blackwater", value: "Dim to moderate light, driftwood and Indian almond leaves for tannins, dense planting. Bright light over bare glass leaves them pale and near the bottom.", source: "cardinal-tetra-tank-setup-guide" },
-        { label: "Mostly wild caught", value: "Still largely collected from the Rio Negro, and losses in the first fortnight are common. Buy from a shop that has held them a while, acclimate slowly, dim the lights and leave them alone.", source: "cardinal-tetra-enrichment-guide" },
-        { label: "Diet", value: "A micro-pellet or crushed flake as the staple, with live or frozen bloodworms, mosquito larvae or daphnia. Whole flakes and standard pellets are too big for the mouth and get spat out, which starves the fish.", source: "cardinal-tetra-feeding-guide" },
-        { label: "Feeding schedule", value: "Twice a day, what the school finishes in a couple of minutes, or split into three or four smaller feeds. Food still visible after that means cut back: nitrite is the parameter they tolerate worst.", source: "cardinal-tetra-feeding-guide" },
+        { label: "Filtration and substrate", value: "Gentle flow, a sponge filter is the usual pick, over fine gravel or sand.", source: "cardinal-tetra-tank-setup-guide" },
+        { label: "Light and blackwater", value: "Dim light, driftwood and Indian almond leaves for tannins, dense planting. In a lab test, intense light faded the stripes, while fish kept at 250 lux or less looked more vivid.", source: "cardinal-tetra-tank-setup-guide" },
+        { label: "Often wild caught", value: "Many are still collected from the Rio Negro, and wild-caught fish cope worse with deteriorating water than bred ones, so the first weeks decide a lot. Buy from a shop that has held them a while, acclimate slowly, and keep the tank dim and quiet.", source: "cardinal-tetra-enrichment-guide" },
+        { label: "Diet", value: "A micro-pellet or crushed flake as the staple, with live or frozen bloodworms, mosquito larvae, daphnia or moina. Whole flakes and standard pellets are too big for the mouth and get spat out, which starves the fish.", source: "cardinal-tetra-feeding-guide" },
+        { label: "Feeding schedule", value: "Twice a day, what the school finishes in a couple of minutes, or split into three or four smaller feeds. Food still visible after that means cut back, since cardinals are sensitive to nitrite.", source: "cardinal-tetra-feeding-guide" },
         { label: "Water changes", value: "25 to 30% weekly from the substrate, with conditioned water at tank temperature. Test nitrate first: under 20 ppm the routine is right, past 40 ppm the next change is 50%.", source: "aquarium-water-changes-guide" },
         { label: "A dead fish", value: "Never leave one in the tank or let the others scavenge it. There is no cure for neon tetra disease, and fish that eat an infected body contract it.", source: "cardinal-tetra-feeding-guide" },
         { label: "Quarantine", value: "A full 30 days for any new fish, the most effective way to keep ich out of an established tank.", source: "cardinal-tetra-health-issues-guide" },
-        { label: "Budget", value: "About $3 a fish, roughly $25 to $30 for the school. Setup roughly %%setup:cardinal-tetra%%. Vet care does not apply; water quality and over-the-counter treatment are the whole of it.", source: "cardinal-tetra-cost-guide" },
-        { label: "Lifespan", value: "About five years, some to ten. In the wild it is close to an annual fish.", source: "cardinal-tetra-cost-guide" },
+        { label: "Budget", value: "$3.30 to $8 a fish, about $35 to $80 for a school of 10. Setup roughly %%setup:cardinal-tetra%%. Vet care does not apply; water quality and over-the-counter treatment are the whole of it.", source: "cardinal-tetra-cost-guide" },
+        { label: "Lifespan", value: "About five years in a well-kept tank. In the wild it lives about a year.", source: "cardinal-tetra-cost-guide" },
         { label: "Adult size", value: "2 inches (5 cm)." },
         { label: "Water chemistry, the wider picture", value: "KH holds pH in place, and dosing pH-up or pH-down against it is how keepers crash a tank. Work with what the source water gives you.", source: "freshwater-ph-gh-kh-guide" },
         { label: "Power outage", value: "Oxygen is the threat, not darkness. Unplug the filter rather than letting it sit dead in the water, and keep the surface moving.", source: "aquarium-power-outage-and-transport-guide" },
@@ -316,7 +429,7 @@ export const fishGuides = fillCostTokens([
       source: "cardinal-tetra-health-issues-guide",
       heading: "Test the water first, then act on these today. Aquatic vets are rare, so nearly all of this is handled at home.",
       callNow: [
-        "Small white spots like grains of salt, flashing against decor, rapid breathing: ich, treated with medication, or with heat raised slowly to 86°F and no higher, since this species dies near 33.7°C",
+        "Small white spots like grains of salt, flashing against decor, rapid breathing: ich, treated with medication and daily partial water changes; a slow rise toward 86°F is possible with strong aeration and the fish watched closely",
         "Discoloration on the fin edges, then fraying: fin rot, treatable",
         "Floating at the surface unable to swim down, or struggling to rise: poor water quality first, then overfeeding",
         "Restless or erratic swimming at night, fading or patchy color, lumps under the skin, a curved spine: neon tetra disease, no cure, and the fish is separated so the others cannot eat it",
@@ -324,15 +437,15 @@ export const fishGuides = fillCostTokens([
       vetLine: "Everything treatable here traces back to water quality and stability. The untreatable one is prevented by quarantine.",
     },
     routes: [
-      { slug: "cardinal-tetra-cost-guide", line: "About $3 a fish, the %%setup:cardinal-tetra%% setup, and the Rio Negro fishery behind why this one prices above a neon." },
+      { slug: "cardinal-tetra-cost-guide", line: "$3.30 to $8 a fish, the %%setup:cardinal-tetra%% setup, and the Rio Negro fishery behind why this one prices above a neon." },
       { slug: "cardinal-tetra-tank-setup-guide", line: "The 20-gallon long, 73 to 84°F, soft acidic water, gentle flow, and the blackwater tannins that change the fish." },
       { slug: "cardinal-tetra-feeding-guide", line: "Micro-pellet portions, the two-minute rule, and why removing a dead fish immediately is the real defense against an incurable disease." },
       { slug: "cardinal-tetra-handling-guide", line: "Why this is an observation fish, the ten-fish minimum that functions as a welfare need, and the stripe that tells it from a neon." },
-      { slug: "cardinal-tetra-health-issues-guide", line: "Neon tetra disease, ich, fin rot, swim bladder trouble, and the 2008 study that says nitrite, not ammonia, is the number to watch." },
-      { slug: "cardinal-tetra-enrichment-guide", line: "Most of them are still wild caught, what that means for the first fortnight, and the borrowed neon tetra finding that says ten." },
+      { slug: "cardinal-tetra-health-issues-guide", line: "Neon tetra disease, ich, fin rot, swim bladder trouble, and the 2008 study that found this species sensitive to nitrite." },
+      { slug: "cardinal-tetra-enrichment-guide", line: "Many are still wild caught, what that means for the first weeks, and the borrowed neon tetra finding that says ten." },
     ],
     buyList: [
-      "20-gallon long tank (10-gallon for a bare minimum school of 6)",
+      "20-gallon long tank, a base of at least 24 x 12 inches",
       "Aquarium heater",
       "Sponge filter or a baffled hang-on-back",
       "Water test kit",
@@ -345,9 +458,9 @@ export const fishGuides = fillCostTokens([
       "A separate bare tank with its own sponge filter, for quarantine",
     ],
     faqs: [
-      { q: "How many cardinal tetras should I keep together?", a: "Ten is the number to plan for. Smaller groups turn pale, hide, and get sick more often from the stress." },
-      { q: "Can cardinal tetras get neon tetra disease?", a: "Yes. It's named after neon tetra specifically, but the parasite affects tetras broadly, along with angelfish, rasboras, barbs, and zebrafish, so cardinal tetra falls within that group. It's caused by a microsporidian parasite, Pleistophora hyphessobryconis, that invades muscle tissue. Watch for restless or erratic swimming, fading or patchy color, visible lumps under the skin, and a curved spine in advanced cases." },
-      { q: "What's the non-obvious detail that makes the biggest difference in a cardinal tetra tank?", a: "Recreating blackwater conditions. Driftwood and Indian almond leaves release natural tannins that stain the water and lower pH, mimicking the shaded, leaf-litter-covered streams this species evolved in. Pair that with dense planting and dim lighting, and color and confidence both improve noticeably." },
+      { q: "How many cardinal tetras should I keep together?", a: "Ten is the number to plan for, and eight is the least to buy. Cardinals are schooling fish that do best in a large group." },
+      { q: "Can cardinal tetras get neon tetra disease?", a: "Yes. It is named for the neon, but the microsporidian parasite behind it, Pleistophora hyphessobryconis, affects tetras broadly, along with angelfish, rasboras, barbs, and zebrafish. Watch for restless or erratic swimming, fading or patchy color, visible lumps under the skin, and a curved spine in advanced cases." },
+      { q: "What's the non-obvious detail that makes the biggest difference in a cardinal tetra tank?", a: "Blackwater conditions. As driftwood and Indian almond leaves release tannins, the water tints and the pH eases down, which copies the shaded, leaf-strewn streams the fish comes from. Add dense planting and dim light, and color and confidence both improve noticeably." },
     ],
   },
   {
@@ -484,7 +597,7 @@ export const fishGuides = fillCostTokens([
         { label: "Feeding schedule", value: "Adults 2 to 3 times a day, small amounts cleared within a few minutes. A short gut suits frequent small meals over one large one.", source: "discus-feeding-guide" },
         { label: "Diet", value: "A discus-formulated pellet or granule sized for a small mouth, with frozen or live bloodworms and brine shrimp regularly. Beef-heart mix as a supplement, not the staple.", source: "discus-feeding-guide" },
         { label: "Acclimation", value: "A slow drip of 60 to 90 minutes is the default; one breeder argues for a fast temperature and pH match, since shipping water runs out of oxygen. Either way, lights off and no food on day one.", source: "discus-handling-guide" },
-        { label: "Tankmates", value: "Cardinal and rummynose tetras are named consistently. Sterbai cories fit only a tank held near 82°F, the top of their range; a bristlenose is a compromise past its 80°F comfort. Neons are disputed at 82 to 86°F, so cardinals are the safer tetra.", source: "discus-handling-guide" },
+        { label: "Tankmates", value: "Cardinal tetras are named consistently; rummy-nose tetras, kept at 73 to 79°F, sit below discus water. Sterbai cories fit only a tank held near 82°F, the top of their range; a bristlenose is a compromise past its 80°F comfort. Neons are disputed at 82 to 86°F, so cardinals are the safer tetra.", source: "discus-handling-guide" },
         { label: "Sexing", value: "Difficult outside of breeding. Raise a group and let pairs reveal themselves.", source: "discus-handling-guide" },
         { label: "Budget", value: "$20 to $40 for young common-strain fish, so a group of 5 to 6 starts at $150 to $250 even at the budget end; premium strains reach $200 to $450 a fish. Setup roughly %%setup:discus%%, then %%monthly:discus%% a month.", source: "discus-cost-guide" },
         { label: "Lifespan", value: "8 to 10 years typical in captivity, up to 15 with excellent, stable care.", source: "discus-cost-guide" },
@@ -529,6 +642,93 @@ export const fishGuides = fillCostTokens([
       { q: "What size tank does a discus need?", a: "55 gallons is commonly cited as the practical minimum for a small group, though several experienced sources push that to 75 gallons or more, since a 55-gallon tank forces noticeably more frequent water changes to keep pace with this species' bioload. Taller tanks are preferred over long, low ones given this fish's body shape." },
       { q: "What temperature do discus need?", a: "82 to 86\u00B0F, warmer than nearly every other common community fish, warm enough that it narrows the tankmate list. Wild Heckel discus take water closer to 90\u00B0F, but 82 to 86\u00B0F is the standard target for captive-bred fish." },
       { q: "How often should I feed my discus?", a: "Adults 2 to 3 times a day, in small amounts they clear within a few minutes, rather than one large daily meal. Discus have a short gut for their body size, and smaller, more frequent meals suit that digestive setup better than a single big feeding." },
+    ],
+  },
+  {
+    id: "ember-tetra",
+    name: "Ember Tetra",
+    emoji: "🐠",
+    difficulty: "Beginner",
+    petType: "Fish",
+    image: "/assets/guides/ember-tetra.jpg",
+    tagline: "The tiny orange schooler that glows like a coal against dark plants!",
+    seoTitle: "Ember Tetra Care Guide: Tank, School, and Health",
+    seoDescription: "Ember tetras need a school of ten in a planted 10-gallon tank. Set up soft water at 75 to 82°F, feed a tiny mouth, and treat ich without the heat cure.",
+    funFact: "Ember tetras are named for Amanda Bleher, a German limnologist whose son collected the first specimens, and in the Araguaia basin of central Brazil where they live, people call them foguinhos: little fires.",
+    // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
+    // deep dive named in its `source`, and that article is where it changes; the
+    // hub keeps no number of its own. Adult size comes from the encyclopedia
+    // entry, which no deep dive repeats. Water changes and the power outage
+    // rule cite the shared aquarium guides. The emergency card follows the
+    // health guide's own three groups: test the water first and start ich
+    // treatment today (callNow), watch and recheck tomorrow (soon). Built
+    // 2026-10-31 with the ember tetra set (research: EMBER_TETRA_RESEARCH.md).
+    layout: "router",
+    firstWeek: {
+      intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
+      rows: [
+        { label: "How many", value: "Ten is the target, with 8 to 10 as the least to buy.", source: "ember-tetra-handling-guide" },
+        { label: "Tank size", value: "A 10-gallon tank on a base of roughly 18 x 12 inches (45 x 30 cm) for a school of 10. A 5-gallon only works with a smaller school.", source: "ember-tetra-tank-setup-guide" },
+        { label: "Temperature", value: "75 to 82°F (24 to 28°C), held steady by a heater. 82°F is the top of the range, so set the heater inside it and never above it.", source: "ember-tetra-tank-setup-guide" },
+        { label: "Water chemistry", value: "Soft, acidic to neutral water: pH 5.0 to 7.0 and a hardness of 1 to 10 dGH.", source: "ember-tetra-tank-setup-guide" },
+        { label: "Cycle first", value: "Ammonia and nitrite both read zero in a fully cycled tank before the school goes in.", source: "ember-tetra-tank-setup-guide" },
+        { label: "Plants and filtration", value: "Heavily planted over a dark substrate, with floating plants as a useful addition and filtration kept gentle.", source: "ember-tetra-tank-setup-guide" },
+        { label: "Diet", value: "Micro-pellets or flake crushed fine as the staple, plus small live or frozen foods such as baby brine shrimp, daphnia, cyclops and moina. At about 0.8 inch, they need tiny, slow-sinking food.", source: "ember-tetra-feeding-guide" },
+        { label: "Feeding schedule", value: "Once or twice a day, a small pinch the school finishes before it settles on the substrate.", source: "ember-tetra-feeding-guide" },
+        { label: "Acclimation", value: "Lights off, then mix tank water into the bag over 30 to 60 minutes. Net the fish across, discard the bag water, and check the bag, net and floor for a missing fish.", source: "ember-tetra-handling-guide" },
+        { label: "Tankmates", value: "Very peaceful, and they lose out to any tankmate that is rowdy or much bigger. Adult dwarf shrimp are safe; shrimplets are not.", source: "ember-tetra-handling-guide" },
+        { label: "Quarantine", value: "At least 30 days in a separate tank before new fish join an established school.", source: "ember-tetra-health-issues-guide" },
+        { label: "Ich", value: "No heat cure: most strains die above 86°F and the ember's range tops out at 82°F. Warm only to 82°F and let salt, about a tablespoon per 5 gallons, or an ich medication do the killing.", source: "ember-tetra-health-issues-guide" },
+        { label: "Water changes", value: "25 to 30% weekly from the substrate, with conditioned water at tank temperature. Test nitrate first: under 20 ppm the routine is right, past 40 ppm the next change is 50%.", source: "aquarium-water-changes-guide" },
+        { label: "Budget", value: "About $2.50 to $3.50 a fish, %%animal:ember-tetra%% for a school of 10 before shipping. Setup roughly %%setup:ember-tetra%%.", source: "ember-tetra-cost-guide" },
+        { label: "Lifespan", value: "About 2 to 4 years in captivity.", source: "ember-tetra-cost-guide" },
+        { label: "Adult size", value: "About 0.8 inch (2 cm) standard length." },
+        { label: "Power outage", value: "Oxygen is the threat, not darkness. Unplug the filter rather than letting it sit dead in the water, and keep the surface moving.", source: "aquarium-power-outage-and-transport-guide" },
+      ],
+    },
+    emergencyCard: {
+      source: "ember-tetra-health-issues-guide",
+      heading: "Test ammonia and nitrite first, then act on these today.",
+      callNow: [
+        "Gasping at the surface or breathing fast",
+        "Two or more fish showing the same sign at once",
+        "A fish found dead: take the body out before anything else",
+        "White spots like grains of salt on the body or fins: start ich treatment today",
+        "Fast breathing that continues once the water tests clean: ich can infect the gills",
+      ],
+      soonHeading: "Watch closely and check again tomorrow.",
+      soon: [
+        "Flashing: rubbing against plants, glass or substrate",
+        "A fish off its food or hanging listless",
+        "Extra mucus on the skin",
+        "Color fading to dull",
+      ],
+      vetLine: "Most of what goes wrong starts in the water or arrives with a new fish, so test first and quarantine every newcomer.",
+    },
+    routes: [
+      { slug: "ember-tetra-cost-guide", line: "$2.50 to $3.50 a fish, why the school is bought ten at a time, and the %%setup:ember-tetra%% that goes into the tank around them." },
+      { slug: "ember-tetra-tank-setup-guide", line: "Ten gallons for ten fish, soft water at 75 to 82°F, gentle flow, and the dense planting this species is kept in." },
+      { slug: "ember-tetra-feeding-guide", line: "Food for a 0.8-inch fish, once or twice a day, and what fry eat first." },
+      { slug: "ember-tetra-handling-guide", line: "Netting, bagging and an acclimation that takes 30 to 60 minutes, plus the school size and the tankmates that work." },
+      { slug: "ember-tetra-health-issues-guide", line: "Why the ich heat cure stops at 82°F, the 30-day quarantine, and the signs that need action today." },
+      { slug: "ember-tetra-enrichment-guide", line: "How a shoal hides from above in clear Brazilian water, and the cover and food that bring the same behavior out in a tank." },
+    ],
+    buyList: [
+      "10-gallon tank for a school of ten",
+      "Ten ember tetras",
+      "Aquarium heater",
+      "Sponge filter or a baffled hang-on-back",
+      "Dark sand",
+      "Dense live plants and floating plants",
+      "Liquid water test kit",
+      "Water conditioner",
+      "Micro or nano pellet, or a tropical flake to crush",
+      "Frozen baby brine shrimp or daphnia",
+    ],
+    faqs: [
+      { q: "What size tank do ember tetras need?", a: "A 10-gallon tank for a school of 10, on a base of roughly 18 x 12 inches (45 x 30 cm) or the equivalent. A 5-gallon only works with a smaller school, and 10 or more is the group to aim for." },
+      { q: "How often should I feed ember tetras?", a: "Once or twice a day, a small pinch each time that the school finishes before it settles on the substrate. Small live or frozen food can be one of those meals every day." },
+      { q: "Can you treat ich in ember tetras with heat?", a: "Not with heat alone. Most ich strains die above 86°F, and the ember tetra's range tops out at 82°F. Warm the tank slowly to 82°F with an air stone running, which speeds up the parasite's cycle, and let aquarium salt at about a tablespoon per 5 gallons or an ich medication do the killing." },
     ],
   },
   {
@@ -893,7 +1093,7 @@ export const fishGuides = fillCostTokens([
     image: "/assets/guides/neon-tetra.jpg",
     tagline: "The tiny electric-blue schooler that turns any planted tank into a shimmering river scene!",
     seoTitle: "Neon Tetra Care Guide: Tank, School, and Health",
-    seoDescription: "Neon tetras settle down in a school of ten. Set up soft, dim water, feed a mouth only 1 to 2mm across, and see why a pale neon is not always neon tetra disease.",
+    seoDescription: "Neon tetras settle in a school of ten in a tank at least 24 inches long. Set up soft, shaded water, crush food fine, and learn why a pale neon may not have NTD.",
     funFact: "A neon tetra's iridescent blue stripe isn't pigment - it's produced by light-reflecting cells called iridophores. That stripe actually dims or goes nearly dark while the fish sleeps at night, a completely natural nocturnal color change rather than a sign of illness.",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes; the
@@ -909,20 +1109,19 @@ export const fishGuides = fillCostTokens([
     firstWeek: {
       intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
-        { label: "How many", value: "Ten. Groups of ten showed less aggression and darting and fed sooner than smaller groups. Six is the floor, and one species of ten beats two species of five.", source: "neon-tetra-enrichment-guide" },
-        { label: "Tank size", value: "10 gallons for a school of 6, a 20-gallon long for the better 10 to 15. Schooling plays out horizontally, so long beats tall.", source: "neon-tetra-tank-setup-guide" },
-        { label: "Temperature", value: "72 to 78°F as the target inside a workable 70 to 81°F, held steady: swings stress them more than a slightly imperfect setting. A heater on any tank of 10 gallons or more.", source: "neon-tetra-tank-setup-guide" },
-        { label: "Water chemistry", value: "Soft and slightly acidic, pH 6.0 to 7.0 with low hardness, which is a different water from what a guppy tolerates. Test your source water first. Ammonia and nitrite read zero.", source: "neon-tetra-tank-setup-guide" },
-        { label: "Filtration and substrate", value: "Gentle flow, a sponge filter or a baffled hang-on-back, over fine gravel or sand. A darker substrate makes the neon stripe pop.", source: "neon-tetra-tank-setup-guide" },
-        { label: "Light and blackwater", value: "Dim to moderate for 8 to 10 hours a day. Driftwood and Indian almond leaves for tannins, dense plants and floating cover; bright light stresses a fish from shaded streams.", source: "neon-tetra-tank-setup-guide" },
-        { label: "Feeding schedule", value: "Twice daily, what the school finishes in about 2 to 3 minutes. Fry and juveniles 3 to 4 small feeds a day, adults from about 6 months on twice.", source: "neon-tetra-feeding-guide" },
-        { label: "Diet", value: "A quality tropical flake crushed fine, or a micro-pellet, for a mouth only 1 to 2mm across. Baby brine shrimp, daphnia or chopped bloodworms 2 to 3 feeds a week. Food too large is spat out, which starves the fish while the tank looks fed.", source: "neon-tetra-feeding-guide" },
+        { label: "How many", value: "Ten, with eight the least to buy. In a 2010 study, groups of ten showed less darting and aggression than smaller ones, and one species of ten beats two species of five.", source: "neon-tetra-enrichment-guide" },
+        { label: "Tank size", value: "At least 24 inches (60 cm) long, about 14 gallons or more, for ten. A standard 10-gallon is only 20 inches long and falls short. Schooling plays out horizontally, so long beats tall.", source: "neon-tetra-tank-setup-guide" },
+        { label: "Temperature", value: "70 to 77°F (21 to 25°C), held steady: swings stress them more than a slightly imperfect setting. A heater on any tank this size.", source: "neon-tetra-tank-setup-guide" },
+        { label: "Water chemistry", value: "Soft and slightly acidic, pH 6.0 to 7.0 at 1 to 12 dGH, which is a different water from what a guppy tolerates. Test your source water first.", source: "neon-tetra-tank-setup-guide" },
+        { label: "Filtration and substrate", value: "Gentle flow, a sponge filter or a baffled hang-on-back, over fine gravel or sand.", source: "neon-tetra-tank-setup-guide" },
+        { label: "Light and blackwater", value: "Soft light under dense and floating plants, since bright light over an open tank is the opposite of their shaded streams. Driftwood and Indian almond leaves stain the water with tannins and lower the pH.", source: "neon-tetra-tank-setup-guide" },
+        { label: "Feeding schedule", value: "Twice daily, morning and evening, only what the school finishes in a couple of minutes. Small, frequent feeds protect the water better than one large one.", source: "neon-tetra-feeding-guide" },
+        { label: "Diet", value: "A quality tropical flake crushed fine, or a micro-pellet, for a very small mouth, with baby brine shrimp, daphnia, cyclops or chopped bloodworm several times a week. Food too large is spat out, which starves the fish while the tank looks fed.", source: "neon-tetra-feeding-guide" },
         { label: "A dead fish", value: "Never leave one in the tank or let the others scavenge it. Neon tetra disease has no cure, and fish that eat an infected body contract it.", source: "neon-tetra-feeding-guide" },
         { label: "Quarantine", value: "At least 30 days in a separate tank before a new fish joins the school, given the disease risk this species carries.", source: "neon-tetra-tank-setup-guide" },
         { label: "Tankmates", value: "Peaceful, similarly sized community fish. Nothing with a mouth big enough for a neon, and no fin nippers.", source: "neon-tetra-handling-guide" },
         { label: "Water changes", value: "25 to 30% weekly from the substrate, with conditioned water at tank temperature. Test nitrate first: under 20 ppm the routine is right, past 40 ppm the next change is 50%.", source: "aquarium-water-changes-guide" },
-        { label: "Budget", value: "$1 to $3 a fish, occasionally $5, a school of 6 to 12 for $10 to $40. Setup roughly %%setup:neon-tetra%%. Vet care does not apply; water quality and over-the-counter treatment are the whole of it.", source: "neon-tetra-cost-guide" },
-        { label: "Lifespan", value: "Around 5 years with stable care; average conditions see closer to 2 to 3.", source: "neon-tetra-cost-guide" },
+        { label: "Budget", value: "$1 to $3 a fish, occasionally $5, a school of 8 to 12 for $15 to $40. Setup roughly %%setup:neon-tetra%%. Vet care is rarely a line item; water quality and over-the-counter treatment cover most of it.", source: "neon-tetra-cost-guide" },
         { label: "Adult size", value: "1 to 1.5 inches (2.5 to 4 cm)." },
         { label: "Water chemistry, the wider picture", value: "KH holds pH in place, and dosing pH-up or pH-down against it is how keepers crash a tank. Work with what the source water gives you.", source: "freshwater-ph-gh-kh-guide" },
         { label: "Cycle first", value: "Cycle the tank fully before any neon goes in. A fish this small has no margin for an ammonia spike, and the treatable conditions on the health list all trace to water.", source: "neon-tetra-enrichment-guide" },
@@ -940,31 +1139,30 @@ export const fishGuides = fillCostTokens([
       vetLine: "Everything treatable here traces back to water quality and stability. Neon tetra disease is often mistaken for columnaris, which is treatable, so treat a suspect fish as bacterial first.",
     },
     routes: [
-      { slug: "neon-tetra-cost-guide", line: "$1 to $3 a fish, why the purchase is a group, and the %%setup:neon-tetra%% that goes into the tank around them." },
-      { slug: "neon-tetra-tank-setup-guide", line: "10 gallons for six and a 20 long for ten, soft acidic water, gentle flow, dim light, and the blackwater detail." },
-      { slug: "neon-tetra-feeding-guide", line: "Twice a day in 2 to 3 minutes, why a 1 to 2mm mouth changes what you buy, and the rule that stops an outbreak." },
+      { slug: "neon-tetra-cost-guide", line: "$1 to $3 a fish, why the purchase is a group of 8 to 12, and the %%setup:neon-tetra%% that goes into the tank around them." },
+      { slug: "neon-tetra-tank-setup-guide", line: "A tank at least 24 inches long for ten, 70 to 77°F, soft acidic water, gentle flow, and the blackwater detail." },
+      { slug: "neon-tetra-feeding-guide", line: "Twice a day in a couple of minutes, why a very small mouth changes what you buy, and the rule that stops an outbreak." },
       { slug: "neon-tetra-handling-guide", line: "Why this is a netting-only fish, the school floor, and the tankmates that turn a shoal into lunch." },
       { slug: "neon-tetra-health-issues-guide", line: "Neon tetra disease and the treatable lookalike it gets mistaken for, plus ich, fin rot, and swim bladder trouble." },
-      { slug: "neon-tetra-enrichment-guide", line: "The 2010 study that tested group size properly, and why the answer came back ten rather than six." },
+      { slug: "neon-tetra-enrichment-guide", line: "Why a school of ten settles better than a smaller one, and how to read whether the school is doing well." },
     ],
     buyList: [
-      "10-gallon tank for a school of six, or a 20-gallon long for ten to fifteen",
-      "Ten neon tetras rather than six, where the tank supports it",
+      "A 20-gallon long, or any tank at least 24 inches long",
+      "Ten neon tetras, eight at the least",
       "Aquarium heater",
       "Sponge filter, or a hang-on-back unit you can baffle",
       "Fine gravel or sand in a darker color",
       "Driftwood and Indian almond leaves",
       "Dense midground live plants and floating plants",
-      "Dim to moderate aquarium light on a timer",
       "Liquid water test kit",
       "Water conditioner",
       "Micro or nano pellet, or a tropical flake to crush",
       "Frozen baby brine shrimp, daphnia, or bloodworms",
     ],
     faqs: [
-      { q: "How can you tell a male neon tetra from a female?", a: "Only once they're adults. Females are rounder-bodied and a little larger, and the fuller belly makes the blue stripe look slightly bent. Males stay slim with a straight stripe." },
-      { q: "How often should I feed neon tetras?", a: "Twice a day for adults, morning and evening, only as much as they finish in about 2 to 3 minutes. Fry and juveniles need 3 to 4 small feedings a day until about 6 months old." },
-      { q: "So is six enough?", a: "Six is the number most care sheets give and the study found ten better. The smallest functioning shoaling unit is often put at six to eight, so six is a floor rather than a target. If you can house ten, house ten." },
+      { q: "How can you tell a male neon tetra from a female?", a: "Only once they're adults. Females are rounder-bodied and a little larger than males, who stay slimmer." },
+      { q: "How often should I feed neon tetras?", a: "Twice a day for adults, morning and evening, only as much as they finish in a couple of minutes." },
+      { q: "So is six enough?", a: "No. Eight is the least to buy and ten is better, since groups of ten showed less darting and aggression than smaller ones. The right number does differ by species: the same 2010 study found no group size effect on angelfish." },
     ],
   },
   {
