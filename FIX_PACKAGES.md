@@ -93,6 +93,7 @@ Live editions (2026-10-04): bearded dragon 4.1; leopard gecko, crested gecko, ba
 ### Goldfish (3.1, `goldfish-src`)
 - [ ] Glossary: NYCRR (`pages_07.html:45`) moves to the law page mini glossary.
 - [ ] Gear: no product for the two buckets.
+- [ ] Book: "block the gut" (`pages_02.html:266`, the gravel-swallowing line) becomes "block the esophagus" to match the site's goldfish tank setup guide and the aquarium substrate guide (owner, 2026-11-01; Practical Fishkeeping says the oesophagus).
 
 ### Rabbit (3.0, `rabbit-src`)
 - [ ] Glossary: APOP (`pages_07.html:7`), IUCN (`:45`), PDSA (`:56`), RSPCA (`:60`) and VCA (`:67`) out.
