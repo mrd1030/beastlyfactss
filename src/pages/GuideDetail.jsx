@@ -33,6 +33,7 @@ import { CalendarDays, Siren, Newspaper, ShoppingCart, ListChecks, CircleHelp, L
 import { FeatherText } from '@/components/icons/labIcons';
 import HubDateLine, { hubDateSchema } from '@/components/shared/HubDateLine';
 import { PUBLISHER } from '@/lib/data/author';
+import { fileLabel } from '@/lib/utils/fileLinks';
 
 const sectionMeta = [
   { key: 'housing',    icon: House, label: 'Housing & Setup' },
@@ -456,7 +457,7 @@ export default function GuideDetail() {
                     {guide.intro.sources.map((src, i) => (
                       <React.Fragment key={src.url}>
                         {i > 0 && ', '}
-                        <a href={src.url} target="_blank" rel="noopener noreferrer" className="underline hover:text-secondary">{src.title}</a>
+                        <a href={src.url} target="_blank" rel="noopener noreferrer" className="underline hover:text-secondary">{fileLabel(src.url) ? `${src.title} ${fileLabel(src.url)}` : src.title}</a>
                       </React.Fragment>
                     ))}
                   </p>
