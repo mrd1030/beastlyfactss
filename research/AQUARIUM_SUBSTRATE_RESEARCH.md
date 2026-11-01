@@ -398,3 +398,18 @@ Seems true and useful; no opened source supports it. Nothing dropped.
 - That a soft, acidic tank holds more of any sulfide as toxic H2S: my inference from SB16's pH table, not stated for aquariums.
 - Corydoras barbel regrowth time (the cory health guide's 4 to 8 weeks): no cory source; amputation studies in other species (search result only) report faster regrowth.
 - Never call any medication shrimp-safe: standing owner rule, restated; nothing here touches medication.
+
+---
+
+## Kept without a source (owner review)
+
+Edit pass 2026-11-01 on content/guides/aquarium-substrate-guide.mdx. These existing claims stay in the guide as written (de-attributed only where the body narrated a source); each rests on a WEAK source, a search snippet or no opened source. Nothing was cut.
+- Aquasoil figures: pH 5.0 to 6.0, a lot of ammonium at first, fish after two to three weeks, usable about two to three years (table row and FAQ). SB37 only (WEAK retailer restating ADA); direction confirmed by SB34. (also elsewhere: no)
+- Capped soil row: 1/8 to 1/4 inch of dirt under a gravel cap of at least 2 inches, gas erupting under sand, cloudy mess when plants move or fish dig, ammonia spikes or algae. SB36 only (WEAK). (also elsewhere: no)
+- Root tabs beside root-feeding plants "such as Cryptocoryne": Cryptocoryne comes from SB35's search snippet only. (also elsewhere: no; the ember guide has root tabs beside root feeders without the genus)
+- Carbonate hardness neutralizing acid first, so a mild acid source moves pH more in soft water. No source opened for this file; it is the linked pH, GH and KH guide's own claim. (also elsewhere: yes, freshwater-ph-gh-kh-guide.mdx)
+- "Breeding discus calls for" a bare tank. SB43 only (WEAK). (also elsewhere: yes, discus-tank-setup-guide.mdx)
+- Sand as "the middle ground" for discus, food in plain view. SB43 only (WEAK). (also elsewhere: yes, discus-tank-setup-guide.mdx)
+- Leaves bringing pH down "usually short of blackwater." SB67 only (WEAK). (also elsewhere: no)
+- Nothing on the floor softens hard tap water. SB68 only (WEAK). (also elsewhere: yes, ember-tetra-tank-setup-guide.mdx)
+- Catappa leaves growing a biofilm fry graze on. SB66 only (WEAK). (also elsewhere: yes, ember-tetra-enrichment-guide.mdx)
