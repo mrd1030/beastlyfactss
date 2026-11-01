@@ -29,6 +29,14 @@
 export const CORRECTIONS = [
   {
     date: '2026-11-01',
+    page: '/blog/angelfish-tank-setup-guide/',
+    title: 'Angelfish Tank Setup',
+    was: '78 to 82°F, tolerating down to about 75°F.',
+    now: '75 to 86°F, held steady anywhere inside it, with no single target. 86°F is the top of the range, so angelfish can still take the ich heat method. The angelfish hub, the ich treatment guide and the cross-species overview say the same.',
+    why: 'FishBase (Pterophyllum scalare, 24 to 30°C) and Seriously Fish (24 to 30°C); the keeping range is where the two overlap (owner rule, 2026-11-01).',
+  },
+  {
+    date: '2026-11-01',
     page: '/blog/discus-tank-setup-guide/',
     title: 'Discus Tank Setup',
     was: '82 to 86°F, given as the standard target for captive-bred discus.',
