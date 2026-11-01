@@ -449,3 +449,422 @@ Updated 2026-10-31 after the follow-up pass.
 - Discus guide: the sentence putting rummy-noses in "sustained 82 to 86°F water" is unsupported above 84°F (follow-up 7). Owner decision.
 - Lab-species identity: the collective-motion papers name H. rhodostomus but used commercially bought fish; whether any were [BLE] is unknown.
 - Lead not opened: Microcosm Aquarium Explorer "Rummynose Tetra" (503), which a search snippet says links the nose to discus water-quality warnings. Open on the desktop before citing.
+
+## Expansion research (2026-11-01)
+
+Research only, for the rebuild of the six scheduled rummy-nose guides (content/_scheduled-tetras/rummy-nose-tetra-*-guide.mdx) to the layouts the ember, neon and cardinal guides now use. Nothing above this heading was changed. Every claim below comes from a page, PDF or PubMed abstract opened in this session, or is carried over from another tetra research file where the line says so (those carry the original URL and the other file's id). Quotes are short extracts. Ranges a source wrote with an en dash are written here with "to". New source ids continue from S43. Species tags ([BLE], [RHO], [GEO], [ALL]) as defined at the top of this file.
+
+Species caveat for the new papers: S45, S46 and S47 name their fish Hemigrammus rhodostomus but collected them from the Rio Negro, which FishBase (S15) and Seriously Fish (S22) do not list in the [RHO] range (lower Amazon and Orinoco); the Rio Negro fish is [BLE] (S14, S21). Same caveat as 1.6: write these findings as "rummy-nose tetras", not as one species.
+
+### New sources (S44 onward)
+
+Opened this session:
+
+| # | Source | Tier | URL |
+|---|--------|------|-----|
+| S44 | Tribuzy-Neto IA, Beltrão H, Benzaken ZS, Yamamoto KC (2020). "Analysis of the ornamental fish exports from the Amazon State, Brazil." Boletim do Instituto de Pesca 46(4): e554. DOI 10.20950/1678-2305.2020.46.4.554 | Peer-reviewed (PDF text read) | https://institutodepesca.org/index.php/bip/article/view/1470 (PDF: https://institutodepesca.org/index.php/bip/article/download/1470/1479) |
+| S45 | Duarte RM, Menezes AC, da Silveira Rodrigues L, de Almeida-Val VM, Val AL (2009). "Copper sensitivity of wild ornamental fish of the Amazon." Ecotoxicology and Environmental Safety 72(3): 693-698. DOI 10.1016/j.ecoenv.2008.10.003 | Peer-reviewed (abstract read via PubMed) | https://pubmed.ncbi.nlm.nih.gov/19058850/ |
+| S46 | Duarte RM, Crémazy A, Wood CM, Almeida-Val VMF, Val AL (2024). "The biotic ligand model as a promising tool to predict Cu toxicity in amazon blackwaters." Environmental Pollution 341: 122988. DOI 10.1016/j.envpol.2023.122988 | Peer-reviewed (abstract read via PubMed) | https://pubmed.ncbi.nlm.nih.gov/37992954/ |
+| S47 | Wood CM, Robertson LM, Johannsson OE, Val AL (2014). "Mechanisms of Na+ uptake, ammonia excretion, and their potential linkage in native Rio Negro tetras (Paracheirodon axelrodi, Hemigrammus rhodostomus, and Moenkhausia diktyota)." J Comp Physiol B 184(7): 877-890. DOI 10.1007/s00360-014-0847-7 (the cardinal file's C24, there "search result only"; abstract now read) | Peer-reviewed (abstract read via PubMed) | https://pubmed.ncbi.nlm.nih.gov/25106686/ |
+| S48 | LaDouceur EEB, Cartoceti AN, St Leger J, Holder K, Yanong RP, Kim R (2019). "Endocardiosis in Tetras (Family Characiformes)." Journal of Comparative Pathology 171: 19-23. DOI 10.1016/j.jcpa.2019.07.004 | Peer-reviewed case series (abstract read via PubMed) | https://pubmed.ncbi.nlm.nih.gov/31540621/ |
+| S49 | Lecheval V, Theraulaz G (2025). "Conditioning a collective avoidance response in rummy-nose tetra." Journal of Fish Biology 107(4): 1159-1169. DOI 10.1111/jfb.16051 | Peer-reviewed pilot study (abstract read via PubMed) | https://pubmed.ncbi.nlm.nih.gov/39817489/ |
+| S50 | Peterson AN, Swanson N, McHenry MJ (2024). "Fish communicate with water flow to enhance a school's social network." Journal of Experimental Biology 227(17): jeb247507. DOI 10.1242/jeb.247507 | Peer-reviewed (abstract read via PubMed) | https://pubmed.ncbi.nlm.nih.gov/39109661/ |
+| S51 | Peterson AN, Zhou J, Mittal R, McHenry MJ (2026). "The Lateral Line Facilitates Rapid Responses in Accelerating Fish Schools." Integrative and Comparative Biology 66: icag151. DOI 10.1093/icb/icag151 | Peer-reviewed (abstract read via PubMed) | https://pubmed.ncbi.nlm.nih.gov/42612998/ |
+| S52 | Lafoux B, Bernard P, Thiria B, Godoy-Diana R (2024). "Confinement-driven state transition and bistability in schooling fish." Physical Review E 110(3-1): 034613. DOI 10.1103/PhysRevE.110.034613 | Peer-reviewed (abstract read via PubMed) | https://pubmed.ncbi.nlm.nih.gov/39425373/ |
+| S53 | Xue T, Li X, Lin G, Escobedo R, Han Z, Chen X, Sire C, Theraulaz G (2023). "Tuning social interactions' strength drives collective response to light intensity in schooling fish." PLoS Computational Biology 19(11): e1011636. DOI 10.1371/journal.pcbi.1011636 | Peer-reviewed (open access; first 100,000 characters of the PMC page read) | https://pmc.ncbi.nlm.nih.gov/articles/PMC10691717/ |
+| S54 | Ashraf I, Van Wassenbergh S, Verma S (2020). "Burst-and-coast swimming is not always energetically beneficial in fish (Hemigrammus bleheri)." Bioinspiration and Biomimetics 16(1): 016002. DOI 10.1088/1748-3190/abb521 | Peer-reviewed (abstract read via PubMed) | https://pubmed.ncbi.nlm.nih.gov/33164910/ |
+| S55 | Robertson LM, Val AL, Almeida-Val VF, Wood CM (2015). "Ionoregulatory Aspects of the Osmorespiratory Compromise during Acute Environmental Hypoxia in 12 Tropical and Temperate Teleosts." Physiological and Biochemical Zoology 88(4): 357-370. DOI 10.1086/681265 | Peer-reviewed (abstract read via PubMed) | https://pubmed.ncbi.nlm.nih.gov/26052633/ |
+| S56 | Francis-Floyd R, Yanong RPE, Pouder DB. "Ichthyophthirius multifiliis (White Spot) Infections in Fish." UF/IFAS Extension CIR920 (EDIS FA006), orig. March 1991, revised Dec 2016, Feb 2023 and May 2026. DOI 10.32473/EDIS-fa006-1991 | University extension (PDF text read) | https://edis.ifas.ufl.edu/publication/FA006/pdf |
+| S57 | Aquatropic Staff (Quality Marine). "The Rundown on Rummynose." 19 August 2024 | WEAK (wholesaler blog; sells the fish) | https://qualitymarine.com/news/the-rundown-on-rummynose |
+| S58 | Seachem: Cupramine product page (the neon file's E21, re-opened today) | Manufacturer spec for its own product | https://www.seachem.com/cupramine.php |
+| S59 | Petty BD, Francis-Floyd R, Yanong RPE. Merck Veterinary Manual: "Parasitic Diseases of Fish" (full review May 2022, last updated Jun 2026; the cardinal file's C35, re-opened today) | Veterinary reference | https://www.merckvetmanual.com/exotic-and-laboratory-animals/aquarium-fish/parasitic-diseases-of-fish |
+
+Re-opened this session and re-quoted below: S2 (dos Anjos abstract), S14 to S16 (FishBase), S20 (VCA), S21 to S23 (Seriously Fish, all three pages, read in full as text), S27 (PFK acclimatising, read in full as text), S30 (Fishkeeper, read in full as text), S31 (Aquarium Co-Op, read in full as text), S37 (Merck nutritional).
+
+Carried over from other research files for general (non-species) points. Not re-opened today; quotes are as recorded in those files. Cite the original URL.
+
+| # | Source (id in the other file) | Tier | URL |
+|---|--------|------|-----|
+| S60 | Francis-Floyd R, Stilwell NK, Yanong RPE. "Introduction to Fish Health Management." UF/IFAS CIR921 (cardinal C30) | University extension | https://ask.ifas.ufl.edu/publication/FA004/pdf |
+| S61 | Klinger R, Francis-Floyd R. "Submission of Fish for Diagnostic Evaluation." UF/IFAS FA55 (cardinal C31) | University extension | https://extension.rwfm.tamu.edu/wp-content/uploads/sites/8/2013/09/Submission-of-Fish-for-Diagnostic-Evaluation.pdf |
+| S62 | Watson C, Yanong RPE. "Use of Copper in Freshwater Aquaculture and Farm Ponds." UF/IFAS FA-13 (cardinal C33, neon E19) | University extension | https://edis.ifas.ufl.edu/publication/FA008/pdf |
+| S63 | Francis-Floyd R, Watson C, Petty D, Pouder DB. "Ammonia in Aquatic Systems." UF/IFAS FA16 (cardinal C34) | University extension | https://edis.ifas.ufl.edu/publication/FA031/pdf |
+| S64 | Merck Veterinary Manual: "Bacterial Diseases of Fish" (neon E15) | Veterinary reference | https://www.merckvetmanual.com/exotic-and-laboratory-animals/aquarium-fish/bacterial-diseases-of-fish |
+| S65 | Merck Veterinary Manual: "Mycotic Diseases of Fish" (cardinal C8) | Veterinary reference | https://www.merckvetmanual.com/exotic-and-laboratory-animals/aquarium-fish/mycotic-diseases-of-fish |
+| S66 | Merck Veterinary Manual: "Management of Aquarium Fish" (neon E14, ember S32) | Veterinary reference | https://www.merckvetmanual.com/exotic-and-laboratory-animals/aquarium-fish/management-of-aquarium-fish |
+| S67 | Francis-Floyd R, Petty BD. Merck Veterinary Manual (pet owner): "Selection of Fish" (neon E16) | Veterinary reference | https://www.merckvetmanual.com/all-other-pets/fish/selection-of-fish |
+| S68 | Merck Veterinary Manual (pet owner): "Routine Health Care of Fish" (neon E13) | Veterinary reference | https://www.merckvetmanual.com/all-other-pets/fish/routine-health-care-of-fish |
+| S69 | Francis-Floyd R (2011). "Mycobacterial Infections of Fish." SRAC Publication 4706 (cardinal C40) | University extension | https://www.srac.msstate.edu/pdfs/Fact%20Sheets/4706%20Myobacterial%20Infections%20of%20Fish.pdf |
+| S70 | Sanders J, DVM. "New Tank Syndrome." PetMD, 1 May 2026 (cardinal C41) | Veterinarian-written pet health site | https://www.petmd.com/fish/conditions/systemic/new-tank-syndrome-fish |
+| S71 | Dr. Tim's Aquatics: "Fishless Cycling" (cardinal C42) | WEAK to moderate (manufacturer) | https://www.drtimsaquatics.com/resources/library/fishless-cycling/ |
+| S72 | Boyd CE (2007). "Nitrification: an important process in aquaculture." Global Aquaculture Advocate (cardinal C43) | Aquaculture trade feature by a professor | https://www.globalseafood.org/advocate/nitrification-an-important-process-in-aquaculture/ |
+| S73 | American Association of Fish Veterinarians: Find a Fish Vet (cardinal C36) | Professional veterinary association | https://fishvets.org/find-a-fish-vet/ |
+| S74 | World Aquatic Veterinary Medical Association: welcome page (cardinal C37, neon E24) | Professional veterinary association | https://www.wavma.org/welcome |
+| S75 | UF/IFAS Tropical Aquaculture Laboratory: "How to collect and prepare samples" (neon E25) | University diagnostic lab | https://tal.ifas.ufl.edu/extension-and-outreach/disease-diagnostic-laboratory/how-to-collect-and-prepare-samples/ |
+| S76 | CDC Healthy Pets: Fish (cardinal C38) | US government health agency | https://www.cdc.gov/healthy-pets/about/fish.html |
+| S77 | MedlinePlus: "Mycobacterium marinum infection" (neon E27) | .gov | https://medlineplus.gov/ency/article/001357.htm |
+| S78 | Center for Food Security and Public Health, Iowa State University (2013): Mycobacterium marinum fact sheet (neon E28) | University | https://www.cfsph.iastate.edu/FastFacts/pdfs/mycobacterium_marinum_F.pdf |
+| S79 | Crosby TC et al. "Preparation of Ornamental Fish for Shipping." UF/IFAS FA-120 (neon E29) | University extension | https://ask.ifas.ufl.edu/publication/FA120/pdf |
+| S80 | Clarke M. "Frequently asked questions on aquarium substrates." Practical Fishkeeping (cardinal C17, substrate SB1) | Fishkeeping magazine | https://www.practicalfishkeeping.co.uk/features/frequently-asked-questions-on-aquarium-substrates/ |
+| S81 | Gay J. "Which substrate should I use?" Practical Fishkeeping (cardinal C18, substrate SB3) | Fishkeeping magazine | https://www.practicalfishkeeping.co.uk/fishkeeping-answers/which-substrate-should-i-use/ |
+| S82 | Duarte RM, Smith DS, Val AL, Wood CM (2016). "Dissolved organic carbon from the upper Rio Negro protects zebrafish (Danio rerio) against ionoregulatory disturbances caused by low pH exposure." Scientific Reports 6: 20377 (cardinal C23, neon E6) | Peer-reviewed | https://pmc.ncbi.nlm.nih.gov/articles/PMC4745052/ |
+| S83 | Practical Fishkeeping news: "Study highlights dangers of tubifex to fish" (reports Hallett et al. 2005; ember S46) | Magazine reporting a peer-reviewed study | https://www.practicalfishkeeping.co.uk/fishkeeping-news/study-highlights-dangers-of-tubifex-to-fish/ |
+| S84 | ANGFA: Fin and Tail Rot (ember S53) | Hobby society reference, moderate | https://rainbowfish.angfa.org.au/disease_prevention_and_control/fin_and_tail_rot.html |
+
+Blocked this session (nothing cited from them): Microcosm Aquarium Explorer "Rummynose Tetra" (WebFetch 503; curl HTTP/2 protocol error on two hosts; a search summary of it is not cited), the dos Anjos 2017 full-text PDF (connection reset; abstract re-read instead). Searched with no usable result above hobby tier: rummy-nose fading at night, rummy-nose fin nipping, a rummy-nose host record for Pleistophora, rummy-nose disease case reports (PubMed search of "Hemigrammus bleheri", "Hemigrammus rhodostomus", "Petitella" and "rummy-nose tetra" returned 37 records; the only pathology paper is S48).
+
+---
+
+### X1. Tank setup
+
+**X1.1 Tank Size**
+- Re-read: "its active swimming nature requires a tank length of 36 inches/90 cm minimum" and "groups numbering 10 or preferably more", unchanged on all three Seriously Fish pages (S21 to S23). FishBase: "minimum aquarium size 80 cm" ([RHO], [GEO]; S15, S16).
+- Wholesaler (WEAK): "while this school likes to move around, they do not need a massive amount of space. A group of a 10-15 could easily be kept in a 30-gallon tank." (S57) A standard 30 gallon is 36 in long, so this agrees with the 36 in figure.
+- Research on space: in groups of rummy-nose tetras, "confinement density (i.e., the number of individuals in a group per unit area of available space)" controls a "continuous state transition" between a polarized school and a milling one, with a "bistable state" in between (S52). This shows that space per fish changes how the school moves; it does not set an aquarium minimum.
+
+**X1.2 Temperature**
+- Re-read: [BLE] "23 to 26°C, 73 to 79°F" (S21); [RHO] "24 to 27°C, 75 to 81°F" (S22); [GEO] "22 to 26°C, 72 to 79°F" (S23).
+- Wholesaler (WEAK): "aim to keep your display between 75 and 82 degrees" Fahrenheit (S57).
+- NEW, breeding temperatures above the keeping range: Seriously Fish's [BLE] pair method keeps the spawning tank "a few degrees higher than the main tank, say around 28 to 30°C, 82 to 86°F", with conditioning at "24 to 25.5°C, 75 to 78°F" (S21). [RHO] spawning water "around 26.5 to 29°C, 80 to 84°F" (S22); [GEO] "24 to 26.5°C, 75 to 80°F" (S23). Fishkeeper breeding "a temperature of 28°C" (S30). This is the first source in this file that puts [BLE] at 86°F, and it is for a short spawning stay, not keeping. See Conflicts 2.
+- Do not mix with cool-water fish: "do not put them with cooler water fish because of the mismatched temperature requirements." (S31)
+
+**X1.3 Water Chemistry**
+- Hardness re-read: [BLE] and [RHO] "Hardness 2 to 15 dGH" (S21, S22); [GEO] "1 to 12 dGH" (S23). FishBase [BLE] "dH range: 5 to 12" (S14). See Conflicts 3: the guides say 2 to 12 dGH.
+- pH re-read: "pH 5.5 to 7.0" and "Its colours will become faded if kept in alkaline conditions." (S21, S22) FishBase [BLE] "pH range: 5.0 to 6.0" (S14).
+- Store fish vs wild: "Although the fish seen in our stores are tank bred in less extreme conditions, "rummies" are at their best in acidic water and will show their best colours when the pH is low." "Aquarium bred fish are less demanding pH: 5.5 to 7.5, dH: 1 to 18 degrees". (S30)
+- Bacteria in hard water (Fishkeeper, retailer-published): "As with many blackwater species, the higher background bacterial populations in hard, alkaline water may be challenging for them, making good maintenance and hygiene very important." (S30)
+- Wholesaler (WEAK): "we suggest trying to keep your pH between 6.0 and 7.0"; "Keep up the regular water changes and maintain nitrates under 10 to 15ppm." (S57) The only nitrate figure found; one weak source.
+- NEW, measured wild water: rummy-nose tetras "collected directly from the Rio Negro" were studied "in their native "blackwater" which is acidic (pH 4.5), ion-poor (Na+, Cl- ~20 µM), and rich in dissolved organic matter (DOM 11.5 mg C l-1)." (S47) This closes the "measured wild water chemistry" gap for one site. Species caveat above. No KH figure.
+- Ammonia and pH (general, S63): un-ionized ammonia is about 100 times more toxic and its share rises with pH and temperature, so a soft acidic tank masks some ammonia and a pH rise unmasks it (as recorded in the cardinal file, E2).
+
+**X1.4 Filtration**
+- Adult flow: still no source (searched again; none of S21 to S23, S30, S31, S57 gives one). The lab swim-channel study used "an imposed inflow" for kinematics only (S54); not husbandry.
+- Breeding tank: "A small air-powered sponge filter bubbling away very gently is all that is needed in terms of filtration." ([RHO], [GEO]; S22, S23). Co-Op: "a sponge filter with gentle flow that won't suck up the babies." (S31)
+- Maintenance: "A good maintenance regime is essential with this species as it will lose colour in unfavourable conditions. Weekly partial water changes are therefore a must." (S21, S22) The earlier note (5.7) tied the weekly changes to the planted tank only; on re-reading, the sentence follows the planted-tank sentence but states a general rule for the species.
+
+**X1.5 Substrate (short, species-specific only)**
+- What the species uses: "Use a substrate of river sand and add a few driftwood branches" (all three Seriously Fish pages, S21 to S23).
+- Does the fish use the bottom? FishBase: [BLE] "Freshwater; benthopelagic"; [RHO] "Freshwater; benthopelagic"; [GEO] "Freshwater; pelagic" (S14 to S16). Wild [BLE] stomachs held "filamentous algae, chironomid larvae, and plant fragments" in the dry season (S2, abstract), which are bottom and surface items. Reading (inference, owner review): a fish that feeds low in the water and off surfaces, not a digger. No source says it sifts sand.
+- Color effect: [GEO] "Prefers dim lighting and will show its colours better over a dark substrate." (S23) No equivalent line on the [BLE] or [RHO] page. So "dark substrate shows the color" is sourced for the false rummy-nose only.
+- Inert vs calcareous (general, S80): "Inert substrates and rocks don't alter the water chemistry, while non-inert, calcareous substrates do"; "Even standard pea gravel contains sufficient calcium to boost the pH and hardness"; coral sand can "increase the pH of your water to over 8.0". Against this species' 5.5 to 7.0 pH and the color loss in alkaline water (S21), the bed must be inert.
+- Depth (general): sand "around 2.5cm/1"" (S80); for plants in an inert bed, "a 7.5cm layer of any inert aquarium gravel or grit" with liquid fertilizer (S81).
+
+**X1.6 Plants**
+- "Alternatively it also does well in a more standard, well-planted tank." (S21, S22) "Aquatic plants are not a feature of this species' natural waters." (S21)
+- Where the wild shade comes from: "Aquatic plants are rare in their natural environment, but dead leaves carpet the ground; most shade and shelter is provided by bankside growth or floating plants." (S30; the source joins the clauses with a dash, rewritten here). [GEO]: "perhaps with a layer of surface vegetation to further diffuse the lighting." (S23)
+- Plant safety: "They won't bother plants" (S57, WEAK).
+- Salt and plants: "Plants in an aquarium or small ornamental pond may not tolerate increased salinity." (S56) Relevant if salt is used for ich in the display.
+
+**X1.7 Lighting**
+- Re-read: "Use fairly dim lighting. Under these conditions the true beauty of the fish will be revealed." (S21) Fishkeeper: "Lighting No special requirements" (S30).
+- NEW research: rummy-nose tetras tested at "5 illumination levels (0.5, 1, 1.5, 5, and 50 lx)": "the higher the light intensity, the closer the fish is to the wall", and for pairs "the mean distance between the 2 fish was consistently decreasing with increasing light." (S53) The authors: "light intensity strongly modulates social interactions between fish and their reactions to obstacles" (S53 abstract). Housing in that lab: "16 L aquariums on a 12:12 hour, dark:light photoperiod, at 24.9°C (±0.8°C)", "fed ad libitum with fish flakes" (S53).
+- Lighting hours stay unsourced (owner allows). Lab photoperiods found: 12:12 (S5, S53), 14:10 (S9).
+
+**X1.8 Tankmates**
+- Re-read list (S21): other Hemigrammus or Hyphessobrycon, pencilfish, Apistogramma, Corydoras, small loricariids; in a general community smaller rasboras, barbs, anabantoids, Pelvicachromis; discus.
+- Dither role: "Their bold personality makes them great dither fish for shy or territorial fish like Apistogramma dwarf cichlids." (S31)
+- Shrimp and fry: "Like most fish, they will opportunistically snack on baby shrimp and fry, but they tend to leave the adult dwarf shrimp and snails alone." (S31)
+- Avoid: "They will not do well with very aggressive fish like most Rift Lake Cichlids." (S57, WEAK); cooler-water fish (S31, X1.2).
+- Mixing the three species: "at least 12 of them should be other Rummynose Tetras and yes, you can mix species." (S57, WEAK)
+- Leftovers and catfish (general, S37): Merck calls it unacceptable for Corydoras and loricariids to be "expected to survive on the leftovers from the other fish" (paraphrase) and recommends targeted feeding. Relevant because Corydoras and small loricariids are on the tankmate list.
+
+**X1.9 Blackwater or Clear Water (how)**
+- Blackwater method (S21, S22): river sand, driftwood, dried beech or oak leaves; "Allow the wood and leaves to stain the water the colour of weak tea, removing old leaves and replacing them every few weeks so they don't rot and foul the water." "A small net bag filled with aquarium-safe peat can be added to the filter to aid in the simulation of black water conditions."
+- Peat, source vs source: Seriously Fish's rummy-nose pages still suggest peat (S21 to S23), while its neon and cardinal pages call peat collection "unsustainable and environmentally-destructive" (cardinal C11, neon N12). The ember, neon and cardinal guides left peat out. Owner decision whether the rummy-nose guide keeps the peat bag (it is in the current tank setup and enrichment guides).
+- Clear water: [GEO] is "Mainly found in clear water tributaries and small rivers" (S23), and store fish are "tank bred in less extreme conditions" (S30). Clear water works; the why is in X6.1.
+
+**X1.10 Cycle the tank first**
+- General, carried over: new tank syndrome is "the most common cause of death for fish in new fish tanks"; signs include lethargy and decreased appetite; maturity takes "between four to six weeks" (S70). Low pH slows or stops nitrification (S71, WEAK to moderate; S72: "proceeds best at a pH near 8"). So: cycle before lowering pH with leaves, wood or peat (inference, already on the cardinal unsourced list).
+- Species line: Co-Op's lifespan is for fish "kept in a seasoned aquarium with good husbandry" (S31).
+- Owner decision applies: cycling first is the single most important step at setup.
+
+---
+
+### X2. Feeding
+
+**X2.1 Life-stage table**
+
+| Stage | What | How often | Source |
+|---|---|---|---|
+| Egg | None. Adults "will eat the eggs given the chance"; eggs "hatch in 24 to 36 hours" (all three); Fishkeeper "After 36 hours, the eggs will hatch" | n/a | S21 to S23, S30 |
+| Yolk-sac to free swimming | None until "free swimming a 3 to 4 days later" (source's wording); "The eggs and fry are light sensitive in the early stages of life" | n/a | S21 to S23 |
+| Fry, first food | "an infusoria-type food for the first few days" (S21); "tiny foods like infusoria, live vinegar eels, and powdered fry food" (S31); "the fry being so very tiny are notoriously difficult to feed. Infusoria is the recommended first choice." (S30). A "mature, 10-gallon aquarium" breeding tank "has plenty of mulm and microfauna for the fry to feed on" (S31) | No species figure. Merck: "Fry and fingerlings can be fed up to 5% of their body weight daily." | S21, S30, S31, S37 |
+| Fry, next food | "microworm or brine shrimp nauplii" once large enough (S21); "switch them over to live baby brine shrimp as soon as they're big enough to increase their growth and survival rate" (S31) | Same | S21, S31 |
+| Juvenile | Adult foods at small size | Owner decision: three to four small meals a day, tapering to the adult schedule (unsourced, allowed). Size marker: wild [BLE] mature at "2.8 cm for females and 2.6 cm for males" (S2) | Owner decision; S2 |
+| Adult | "a mixture of dried flakes and granules and small live and frozen foods" (S21); [GEO]: dried foods "of a small grade or ground down", with "a good proportion" small live and frozen foods "such as Daphnia or Artemia" (S23) | "Most aquarium fish should be fed at least daily"; adults "3% of their body weight daily for maintenance" (S37). Wholesaler: "In house we feed these fish twice a day" (S57, WEAK) | S21, S23, S37, S57 |
+
+**X2.2 What they eat**
+- Wild [BLE] (re-read abstract): "omnivorous, consuming a large part of the food of autochthonous origin"; 177 stomachs; microcrustaceans more important in the flood; filamentous algae, chironomid larvae and plant fragments in the dry season; stomachs fuller in the flood (S2).
+- Staple and size: "It does have a small mouth, though, so correspondingly sized foods are best." (S21) "Flaked feeds may be too large for a small-mouthed fish to easily ingest." (S37)
+- Appetite (retailer): "they'll swim all over the tank to chase down almost any community fish food you drop in the tank. In fact, since they are such eager eaters, we always use them to test out new foods in our retail fish store." (S31)
+- Variety: "A varied diet such as this is essential for the best colour development." (S21) "The key is to provide a variety of different options to avoid potential nutrient deficiencies in their diet." (S31) Wholesaler feeds frozen "Brine Shrimp ... Copepods, Cyclops, and Daphnia" plus flake or pellet (S57, WEAK).
+- Live and frozen disease risk (general, S59 re-opened): "Cyclops and Daphnia spp are common intermediate hosts for Camallanus spp." Whirling disease is prevented by keeping fish free of "the definitive hosts (tubeficid worms)" (source's spelling). Tubifex shop samples: "6 contained infected oligochaetes" of 7 (S83, carried over). No source found says freezing removes the Camallanus risk (ember file 13.9, still open).
+- Merck storage rule (S37, re-opened): "A feed container kept at room temperature should be discarded after 2 months of opening." "Commercial feeds stored in the freezer should be discarded after 6 months." Frozen brine shrimp, bloodworms and similar "should be discarded after 1 year." "If thawed, these feeds should not be refrozen."
+
+**X2.3 Foods to Avoid**
+- Oversized food: S21, S23 ("must be small enough for its tiny mouth"), S37.
+- Live tubifex and live-collected crustaceans: S59, S83.
+- No rummy-nose-specific food warning found. Krill and salmon foods are fed for color by Co-Op (S31), not a warning.
+
+**X2.4 Why they stop eating**
+- New arrivals (general, PFK S27, re-opened): "Don't be surprised if it takes a day or two for the new arrivals to begin to feed, but if they continue to not feed you may need to switch up the food you are offering." CAUTION for writers: this is time to first meal after a move, not how long a fish can go without food. The owner rule (never state days without food) still applies; owner to decide whether this line is usable.
+- New tank: decreased appetite is a sign of new tank syndrome (S70).
+- Water first: "If you suspect that fish are getting sick, the first thing to do is check the water quality." (S60) Test ammonia when feeding drops (S63).
+- Competition: "a very peaceful species that won't compete well with very boisterous or much larger tankmates." (S21)
+- Cold: Co-Op lists "low temperatures" among causes of a faded nose (S31, quoted in X3.11); a failed heater is a likely appetite stopper (inference).
+- Internal parasites: Spironucleus signs "Weight loss (anorexia), mortality of fry and juveniles"; "The only treatment available for spironucleosis is metronidazole (use only in ornamental species)." (S59)
+
+**X2.5 When to Worry (well fed vs underfed)**
+- Well fed: Co-Op's buying check asks for "slightly rounded bellies" and "good activity level" (S31). Mature females are "noticeably rounder in the body than males" (S21), so a round female is not overfed (reading).
+- Healthy fish "should eat aggressively if fed at regularly scheduled times"; sick fish "often stop feeding and may appear lethargic." (S60)
+- Thin fish: wasting points to internal parasites (S59) or mycobacteriosis, whose signs include "emaciation" and "paleness" (S64). In a rummy-nose, paleness is also the ordinary stress signal (X3.11), so a pale fish that is also thin is the one to worry about (inference).
+
+**X2.6 When You Go Away**
+- No source. The vacation steps are on the owner's allowed-unsourced list. No days figure (owner rule).
+
+---
+
+### X3. Health
+
+**X3.1 Signs That Need Action Today**
+- Lab and vet sign lists (general, carried over in the cardinal file E4.5 from S60, S61): fins "clamped down, frayed, or bloody"; gills "discolored, bloody, or frayed"; flashing, fast breathing, lethargy; hanging at the surface or lying on the bottom; thin or bloated body.
+- Ich signs (S56): "white dots, blisters, or salt grains on the skin or fins".
+- Species: the nose (X3.11) and the school breaking apart (the species is "one of the more tightly shoaling small tetras", S21).
+
+**X3.2 What a healthy rummy-nose looks like**
+- "Look for fish that have red noses, slightly rounded bellies, good activity level, and no white spots or other symptoms." (S31)
+- In a group: tight shoal (S21); "Because they do shoal so closely, they actually look far more effective when maintained like this anyway." (S21)
+- General (S67): smooth unblemished skin and fins, bright eyes, steady swimming.
+- Not a sign of illness on its own: a pale nose on a fish that just arrived or was just netted (S31, S57; see X5.1).
+
+**X3.3 Water Quality**
+- "it will lose colour in unfavourable conditions. Weekly partial water changes are therefore a must." (S21)
+- Nitrate: "When kept in more alkaline conditions, parameters such as nitrate become more problematic and may cause a significant loss of colour as a first symptom of stress." (S30) "if nitrates start to get too high, they are likely to start losing color"; "maintain nitrates under 10 to 15ppm" (S57, WEAK).
+- Testing interval (general, S68): test pH, alkalinity, ammonia, nitrite and nitrate every two weeks (as recorded in the neon file).
+
+**X3.4 Ich (and copper in soft water)**
+- Life cycle and timing (S56): "At warm temperatures (75°F to 79°F), the life cycle is completed in about 3 to 6 days. At these temperatures, chemical treatments should be applied daily, and a minimum of 3 to 5 treatments are required." "Treatments should never be discontinued until all mortality from Ich has stopped". Only the free-swimming theronts are killed by treatment, so a single dose misses later emergers (paraphrase). This band is the rummy-nose's keeping range, so the guide can give the 3 to 6 day cycle and daily dosing directly.
+- After shipping (S56): "At the warm water temperatures required for many aquarium fish, active disease will often become evident 1 to 3 weeks after shipping. For this reason, a minimum 30-day quarantine period is recommended for new fish." Fits Co-Op: rummy-noses "sometimes arrive with ich (white spot disease) or bacterial infections" (S31).
+- Recovery (S56): survivors "may also serve as reservoirs of infection"; watch for "a secondary bacterial infection."
+- Heat: VCA "Most strains of ich cannot survive in water temperatures above 86ºF", only for fish that tolerate it, with added oxygen (S20, re-read). New: Seriously Fish spawns [BLE] pairs at 82 to 86°F (S21, X1.2); no source says rummy-noses tolerate a sustained 86°F hold. See Conflicts 2.
+- Salt (S56): "at warmer water temperatures (75 to 79°F), use of 4 to 5 g/L (= 4 to 5 ppt) salt (sodium chloride) in a prolonged bath for 7 to 10 days is another effective treatment in smaller systems, provided the fish species can handle the increased salt concentration." "it is important to know the specific tolerances for each species to be treated." No rummy-nose salt tolerance source found. VCA's home figure is "about a tablespoon of salt per 5 gallons of water" (S20, re-read). The two are different regimes (VCA's is roughly a fifth of UF's 4 to 5 g/L by my arithmetic: a level tablespoon of salt is about 17 to 18 g, 5 gallons is about 18.9 L); see Conflicts 7.
+- Formalin (S56): "Formalin is usually applied at a concentration of 25 mg/L"; "For formalin-sensitive species, a "half-dose" of 12.5 mg/L ... may be used"; "Vigorous aeration should be supplied during chemical treatments"; "Sick fish may be unable to tolerate a full treatment." Per RULES, doses stay in research.
+- COPPER, species-specific and the strongest new finding:
+  - Rummy-nose tetras were the most copper-sensitive of 10 wild Rio Negro species tested: in ion-poor water without Rio Negro DOC, "all four characid fish species were more sensitive to copper than the catfish and the cichlids. LC50 values ranged from 12.8 µg Cu/l for the characid Hemigrammus rhodostomus to 74.1 µg Cu/l" for a catfish. (S45, abstract)
+  - In natural Rio Negro water and dilutions: "The three most sensitive species (Hemigrammus rhodostomus, Carnegiella strigatta and Hyphessobrycon socolofi) were Characiformes"; toxicity fell as Rio Negro water (and its DOC) rose. (S46, abstract)
+  - Treatment dose for comparison: Seachem Cupramine "Final copper concentration is 0.5 mg/L (0.25 mg/L in freshwater)"; "the minimal therapeutic dose (0.2 mg/L)". (S58) 0.25 mg/L is 250 µg/L, about 20 times the 12.8 µg/L LC50 (my arithmetic). Caveats: the LC50 used copper chloride in DOC-free lab water, not a chelated product in a home tank; the abstracts do not give exposure time.
+  - Soft water (S56, S62): copper sulfate "is extremely toxic to fish, particularly in water of low alkalinity"; "Do not use copper sulfate if the total alkalinity is less than 50 mg/L."
+  - Reading for the guide: an ich treatment for rummy-noses should be copper-free, on two grounds (species sensitivity and soft water). This is the cardinal layout's "Ich: Medicate Without Copper" with a species-specific source behind it. See Conflicts 1.
+
+**X3.5 Fin Rot and Fungus (general, carried over)**
+- Fungus is a secondary invader after injury, parasites or poor water; low temperature is a named trigger (S65; S60: "Fungal spores are common in the aquatic environment, but do not usually cause disease in healthy fish", cottony growth, "it is important to diagnose the original problem").
+- Fin rot: Aeromonas, Pseudomonas, Flavobacterium; fin tip turns gray, then erodes (paraphrase); linked to poor conditions and fights (S84, ember 13.4.1).
+- No rummy-nose-specific source. The Co-Op line that store fish "sometimes arrive with ... bacterial infections" (S31) is the only species link.
+
+**X3.6 Internal Parasites (S59, re-opened)**
+- "apparently healthy wild fish often carry heavy parasite burdens."
+- Camallanus via Cyclops and Daphnia; Spironucleus and metronidazole (X2.4); tapeworms: "The anthelmintic of choice is praziquantel" (mg/kg in-feed dose on the page).
+- Characin warning: "Organophosphates should be avoided in systems containing elasmobranchs and some characins and cichlids."
+- Supply context: most store rummy-noses are aquacultured (S57, S30), but wild [BLE] are still exported (S44, X4.2), so a wild batch carries the wild-fish parasite risk.
+
+**X3.7 Neon Tetra Disease and lookalikes**
+- NTD host range: as in 8.4 (S10, S19). No rummy-nose host record found again today.
+- Mycobacteriosis (general, S64): signs "variable and nonspecific", including "emaciation, ascites, skin ulceration and hemorrhages, exophthalmos, paleness, and skeletal deformities"; "There are no effective treatments that eliminate mycobacteria in fish"; predisposing "low dissolved oxygen, low pH, and high organic load." SRAC: tetras (Characidae) among families "more prone"; organisms favored by "acidic pH ... high fulvic acid, and high humic acid" (S69).
+- Species point (reading): in a rummy-nose, "paleness" overlaps the normal stress fade, so a pale fish that is also wasting, ulcerated or bent needs a lab, not a guess (S61, S75).
+
+**X3.8 Endocardiosis (NEW, species-relevant)**
+- A heart-valve disease found in tetras including a rummy-nose: "Proliferative, myxomatous change was identified in the cardiac valves ... of five tetras (four neon tetras [Paracheirodon innesi] and one rummynose tetra [Hemigrammus rhodostomus])." Prevalence in tetra cardiac sections at two diagnostic labs "4.3% and 5.7%"; in four cases it "was considered the primary cause of death". "endocardiosis is a significant concern in fish of the family Characiformes." (S48)
+- Use: a sudden death with no outward sign can be a heart lesion only a necropsy finds; supports the vet and lab section. No signs in the living fish are given in the abstract.
+
+**X3.9 Copper, medication and shrimp**
+- Owner decision binds: no medication is ever called shrimp-safe.
+- Copper: invertebrates "are extremely sensitive to copper" and are removed first (S58); copper also harms the fish here (X3.4).
+- Shrimp in a rummy-nose tank: the fish "tend to leave the adult dwarf shrimp and snails alone" but eat baby shrimp (S31). So shrimp do share these tanks, which makes the "shrimp out before any medication" rule relevant.
+
+**X3.10 Quarantine**
+- "a minimum 30-day quarantine period is recommended for new fish" (S56). "A 30-day period is the minimum time for quarantine, but longer periods may be necessary." (S66) The earlier note in 8.5 (VCA's 30 days was about infected fish) is now covered by S56 for new fish.
+- Equipment: "nets, siphon hoses, and other equipment that have not been disinfected should not be shared between tanks, especially in a quarantine area." (S56)
+- Co-Op: "Make sure to quarantine them in a separate hospital tank and consider proactively treating them with broad-spectrum medications." (S31) Source vs source: UF says fish "are often incorrectly treated with over-the-counter medications" and that this "usually does more harm than good" (S61). The guides should keep quarantine and drop the preventive dosing.
+- Owner decision applies: quarantine is the single most important step for every fish added.
+
+**X3.11 Species-specific: the red nose as a condition signal (re-read, fuller wording)**
+- Co-Op, full sentence now read: "they often get called the "canary in the coal mine" of aquariums because their noses lose their color when stressed. This visible indicator can help warn you of bad water quality, low temperatures, disease, bullying, or other problems in the aquarium." (S31) So the retailer's own list goes beyond water: cold, disease and bullying too.
+- Seriously Fish: "the red fades in fish in poor condition" (summary line, S21); "it will lose colour in unfavourable conditions" (S21, S22).
+- Fishkeeper: nitrate in alkaline water "may cause a significant loss of colour as a first symptom of stress." (S30)
+- Pale but fine: "If their noses are pale, they may have just arrived a couple days ago or were recently chased around with a net, so wait half an hour or come back another day to see if they color up again." (S31) "Frequently newly shipped fish won't show the brilliant red heads, if you see them like this in your local fish store, you needn't be concerned, they will color up in short order." (S57, WEAK)
+- Still no threshold, no "before the test kit" evidence, and no night-fading source (see Unsourced).
+- Color forms: "a number of aquarium forms have been produced, including a platinum form with increased iridescence, an albino and a golden xanthic strain." (S30) Variants "labeled as Platinum or Albino, etc, ... could be any of the above species" and "will not necessarily show the traits we've spoken of here." (S57, WEAK) Whether a gold or albino fish's head still works as a stress gauge: no source (see Unsourced).
+
+**X3.12 When a Fish Vet Is Worth It, and How to Find One (general, carried over)**
+- AAFV "Find a Fish Vet" (S73); WAVMA opt-in directory (S74).
+- What to bring: live sick fish before treatment, a quart of tank water (not bag water), history (S75, S61).
+- Why: OTC misuse "usually does more harm than good" (S61); S48 shows causes of death only a lab finds.
+
+**X3.13 Hypoxia (minor)**
+- Under 2 hours at 20 to 30% oxygen saturation, rummy-nose tetras were among four species that "exhibited no marked flux changes during hypoxia" (S55). Physiology only; it says nothing about survival or how long. Not for the guides unless the owner wants it.
+
+---
+
+### X4. Cost
+
+**X4.1 Buying checklist**
+- Species checklist (S31): "red noses, slightly rounded bellies, good activity level, and no white spots or other symptoms"; pale noses can mean recent arrival or netting, so "wait half an hour or come back another day" (S31). Wholesaler: newly shipped fish color up "in short order" (S57, WEAK).
+- Whole tank (general, S67): "The aquarium itself should be clean, and other fish in the environment should also appear healthy."
+- Buy the school at once: "Always buy a group of at least 10 of these, preferably more. They are one of the more tightly shoaling small tetras, and will not do well if kept in insufficient numbers." (S21)
+
+**X4.2 Captive-bred vs wild**
+- Mostly farmed: "Most of the Rummynose Tetras you see in your local fish store have been aquacultured" (S57, WEAK); "the fish seen in our stores are tank bred" (S30, UK retailer); [BLE] is "the most widely kept and bred of the three rummynose species" (S30).
+- Wild exports continue: Amazonas exported "142,552,253 specimens" from 2006 to 2015; Hemigrammus bleheri "7,178,906" of them, "5.04" percent (table), third behind P. axelrodi (64.6%) and P. simulans (7.5%). (S44, PDF) Export markets lost ground to "stronger competition from fish bred in Asia (Taipei, Thailand, Indonesia and Hong Kong)", and the authors expect exports to "concentrate on species that are not reproduced in big quantities in captivity (for example, Paracheirodon axelrodi, P. simulans and Hemigrammus bleheri)". (S44) That last line conflicts mildly with S57 and S30 on how much of the supply is farmed; for US stores the retail sources say farmed.
+- Retail listing (observation): Aquatic Arts sells [BLE] as "Tank-Bred" (below).
+- Wild fish risks: heavier parasite burdens (S59); a "rigorous quarantine" for wild stock (S69, carried over).
+- Price gap wild vs bred: no source.
+
+**X4.3 Shipping risks (transit only)**
+- Bag water: "Ammonia levels can increase due to fish waste and pH can drop due to increased CO2." (S27) Fish ship in oxygenated bags inside insulated boxes, fasted 1 to 3 days first; water quality "will become degraded" during shipment (S79, carried over).
+- Species: playing dead in the bag (S31, existing 9); pale heads on arrival (S57); ich showing "1 to 3 weeks after shipping" (S56); dark transport "Ideally Rummy-Noses should be kept in darkness during transit" (S40, low tier, existing).
+- DOA claims: "Online sellers often have a Dead On Arrival guarantee, should you see any issues take photos before opening the bag and send these to them ASAP." (S27)
+
+**X4.4 Ongoing costs (no electricity figures, owner rule)**
+- Food replaced on Merck's 2-month rule for opened dry food (S37), so a small pot is the economical buy (inference).
+- Conditioner is driven by weekly water changes, which Seriously Fish calls "a must" for this species (S21).
+- Test kit refills: testing every two weeks (S68). Hardness needs its own GH test (existing guide line).
+
+**X4.5 Vet costs**
+- No vet price source found. AAFV and WAVMA for finding one (S73, S74). See Conflicts 5 on the current "Seldom a line item" line.
+
+**X4.6 Quarantine tank and adding fish later**
+- 30-day minimum for new fish (S56, S66); no shared nets or siphons with the display (S56). Adding fish later means another full quarantine run each time (same logic as the cardinal and neon files).
+- Shipping is per order (observations below), so topping up a few fish online costs nearly as much in shipping as the first school (arithmetic on observations, not a source).
+
+**X4.7 Observations, NOT sources, do not cite**
+Observed 2026-11-01.
+- Aquatic Arts, "Rummy Nose Tetra (Hemigrammus bleheri), Tank-Bred": school of 3 $12.99, 6 $25.99, 9 $37.99, 12 $47.99, 24 $89.99 (unchanged from section 12). Stock flag not returned by the product feed. https://aquaticarts.com/products/rummy-nose-tetra
+- LiveAquaria shipping page (aquatic life): UPS Next Day Air $29.99 under $229, free at $229 and over; "Overnight Flat $24.99"; "FedEx Priority Overnight Flat $29.99 (any quantity, Mon-Thu shipping only)"; Optional Overnight $35.98 under $49, $29.99 at $49 and over; Saturday "+$15". "Acclimation procedures must be followed for all new arrivals in order to be covered under our Live Arrival, 7-Day "Arrive Alive, Stay Alive®", and 30-Day Guarantees." https://www.liveaquaria.com/pages/shipping-information
+- Reading: a school of 12 at about $48 plus $25 to $36 overnight shipping; shipping adds roughly half to three quarters of the fish price. Arithmetic on observations.
+- Older observations (section 12 and follow-up 6) still stand for the per-fish range of about $4 to $9.
+
+---
+
+### X5. Handling
+
+**X5.1 Netting**
+- Netting shows in the nose: pale noses after fish "were recently chased around with a net" (S31).
+- "Don't be tempted to get a friend to hold a half-filled bag open beside you while you try to tip fish in from a net." (S28, existing)
+- Small-fish netting technique: still unsourced.
+
+**X5.2 The drive home**
+- "one part water, three parts air"; "Place the fish bags into a dark container, or wrap them in a towel or some newspapers." (S28, existing) Darkness in transit for rummy-noses (S40, low tier).
+- Playing dead: "it is quite normal for them to "play dead" in the fish bag, but once you place the bag on a solid surface, they will easily right themselves again." (S31, re-read; still one source)
+
+**X5.3 Acclimation: float vs drip, and the shipped-fish catch (S27, re-read in full)**
+- Float: lights off, float the unopened bag for temperature, then roll the bag into a collar and add tank water "every few minutes until the bag contains more water from your aquarium than the shop. This could take anywhere from 30 to 60 minutes." Then net the fish across.
+- Drip: "a more gradual change in water chemistry ideal for sensitive species like Caridina shrimp, corals and some specialist fish"; "The whole process is likely to take a couple of hours"; "1 to 2 drips per second"; compare TDS of bag and tank.
+- Catch for long trips and shipped fish: "Ammonia levels can increase due to fish waste and pH can drop due to increased CO2. This can create a ticking time bomb if you were to acclimate the fish slowly as outlined above. Instead transfer the fish out of the bag into your tank immediately after temperature acclimation. Or, alternatively, you can add an ammonia detoxifier like SeaChem Prime to the bag and follow normal procedures."
+- Chemistry (S63): the toxic un-ionized share of ammonia rises with pH. A rummy-nose tank is soft and acidic (5.5 to 7.0), so mixing tank water into an acidic, ammonia-laden bag raises pH less than it would for a hard-water fish (inference, owner review; same point on the cardinal unsourced list).
+- After release (S27): "Give it an hour or two before you turn the lights back on"; check that residents are not bullying newcomers. Rummy-noses go in before boisterous or territorial fish (S25, existing).
+
+**X5.4 How many**
+- "at least 10" (S21 to S23); "at least a dozen" (S57, WEAK); "particularly striking when kept as a shoal of twenty or more" (S30); breeding group "at least six fish" (S31).
+- Why a group (research): "highly social fish or obligate schoolers have a tendency to not respond well or to freeze when tested in experimental setups designed for single individuals." (S49)
+
+**X5.5 Sexing**
+- "Mature females are noticeably rounder in the body than males." (S21 to S23) "the males are slenderer in shape and the females tend to have rounder bodies, especially when full of eggs." (S31) "Difficult to distinguish. Males are usually slightly slimmer than females." (S30)
+
+**X5.6 Fish tank granuloma (general, carried over)**
+- Gloves over cuts, wash hands and arms, children under 5 should not clean aquarium items, dump tank water away from the kitchen sink (S76). Bump 2 to 3 weeks after exposure; months of antibiotics (S77, S78).
+- Why it is worth a paragraph in this guide: mycobacteria are favored by "acidic pH ... high fulvic acid, and high humic acid" (S69), the conditions of a blackwater rummy-nose tank. No source measures the risk in home blackwater tanks.
+
+**X5.7 First-timer mistakes (each sourced separately; no single list found)**
+- Uncycled tank (S70). Too few fish: "will not do well if kept in insufficient numbers" (S21). Alkaline water fades them (S21). Cool-water tankmates (S31). Copper ich medication (S45, S46, S56). Skipping quarantine (S56). Walking past a whole tank of pale fresh arrivals versus buying a tank of sick ones: wait and recheck (S31). Pouring the bag in (S27). Bare hands with cuts in tank water (S76).
+- Beginner suitability, source vs source: "Because of their sensitivity to sources of stress, many people do not recommend them for new fishkeepers." (S31) against "Rummynose Tetras often get called sensitive, but we think this is mostly a misnomer. They are not a difficult fish to have in your tank as long as you feed well and keep up with basic maintenance." (S57, WEAK) Seriously Fish's difficulty box now reads "Easy" with "Hardiness unknown" (S21). Per RULES, state the instruction (stable, cycled, maintained tank), not the debate.
+
+---
+
+### X6. Enrichment
+
+**X6.1 Clear vs tannin water (the why)**
+- For tannins:
+  - Native water: "stained brown with tannins from decaying organic material and is very acidic as a result" (S21, S22). Measured at one Rio Negro site: pH 4.5, Na and Cl about 20 µM, DOM 11.5 mg C/L (S47).
+  - Wild physiology: in native blackwater, sodium and chloride uptake and ammonia excretion "were higher than in previous reports on tetras obtained from the North America aquarium trade and/or studied in low DOM water." (S47) Shows that wild and trade fish differ; does not show trade fish suffer in clear water.
+  - Rio Negro DOC protects against copper for rummy-noses specifically: "acute Cu toxicity decreased (i.e. 96 h LC50 values increase) with increasing RNW content" (S46). And against low-pH ion loss in zebrafish (S82). So the dissolved organic matter in blackwater does chemical work, not only color (reading).
+  - Color: "Under these conditions the true beauty of the fish will be revealed." (S21)
+  - Fishkeeper: blackwater species may find "the higher background bacterial populations in hard, alkaline water" challenging (S30). Note this is about hard alkaline water, not clear soft water.
+- For clear water, or "not needed":
+  - [GEO] lives "Mainly found in clear water tributaries" (S23).
+  - Store fish are tank bred "in less extreme conditions" (S30); aquarium-bred pH 5.5 to 7.5, dH 1 to 18 (S30).
+  - Mycobacteria favored by acidic, humic, organically rich water (S69); a heavily loaded leaf tank is the one authoritative caution (as in the cardinal file).
+  - Seriously Fish: leaves are removed and replaced "every few weeks so they don't rot and foul the water" (S21).
+- Agreement: soft acidic water and dim light help color (S21, S30); no study tests rummy-noses in stained vs clear water.
+
+**X6.2 Schooling**
+- New research on how the school is built:
+  - Flow sensing: compromising the lateral line "reduced the mutual information between individuals by ~13%", which "propagated through schools of varying size to reduce the degree and connectivity of the social network by more than half." (S50)
+  - Speed of reaction: in schools of 60 [BLE], flow-sensing fish "responded with a latency that was one-third less" during accelerations; "the lateral line serves not as a redundant channel to vision, but as a fast sensory pathway" (S51). This settles the mild disagreement in 5.2 (S4 vs S8): vision carries the school, the lateral line makes it fast and tight.
+  - Burst-and-coast is not an energy saver: continuous swimming "require[s] considerably less mechanical energy"; the intermittent gait may be for "improved sensing" (S54).
+  - Learning as a group: aversive conditioning "can (i) be successfully used in this schooling species, (ii) trigger collective escape responses, and (iii) be transferred from the training setup to a new environment" (S49, pilot, small sample).
+  - Space: confinement density switches the school between polarized and milling states (S52).
+- Husbandry: "Always buy a group of at least 10" (S21).
+
+**X6.3 Cover**
+- Shade in the wild from "bankside growth or floating plants"; leaf-carpeted floor (S30). Surface vegetation to diffuse light ([GEO], S23).
+- More light pushes fish toward the walls (S53), so shade inside a lit tank is consistent with the research (reading).
+- New arrivals "will likely find shelter and hide while they get used to their new surroundings" (S27).
+
+**X6.4 Feeding as enrichment**
+- They "swim all over the tank to chase down almost any community fish food" (S31). Wild diet shifts with the season (S2). Variety for color (S21). Small live foods such as baby brine shrimp and daphnia (S31) give a chase; live-food disease risks in X2.2.
+- Catfish tankmates need their own food (S37).
+
+**X6.5 Fin nipping**
+- Re-checked today: S21 to S23, S30, S31 and S57 say nothing about rummy-noses nipping. Still no source either way. The only predation note: baby shrimp and fry (S31). Not a nipper risk to write about; nothing to add for tankmate consequences.
+
+---
+
+### Conflicts with current guides
+
+1. **rummy-nose-tetra-health-issues-guide.mdx line 103**: "An ich medication, dosed to the label or a vet's instructions. Vets usually treat the water with formalin or copper sulfate over several rounds." Sources: rummy-nose tetras were the most copper-sensitive of 10 Rio Negro species, LC50 12.8 µg/L (S45), and among the three most sensitive in Rio Negro water (S46); copper sulfate should not be used below 50 mg/L total alkalinity (S56, S62), which a soft rummy-nose tank will often be below; Cupramine's freshwater dose is 0.25 mg/L (S58), about 20 times that LC50. The FAQ at line 45 ("let aquarium salt or an ich medication clear the parasite") needs the same copper-free steer.
+2. **rummy-nose-tetra-health-issues-guide.mdx line 100**: "The rummy-nose's range ends at 79°F, seven degrees short, so the heat method is not an option for it." Partial: Seriously Fish spawns [BLE] pairs at "around 28 to 30°C, 82 to 86°F" (S21). That is a short spawning stay, not a tolerance study, and no source supports holding a school at 86°F, so the guide's advice still stands; but "seven degrees short" and "not an option" are stronger than the sources. Owner review. (Same 79°F framing in the cost guide line 85 and the FAQ at line 45.)
+3. **2 to 12 dGH** in tank-setup lines 18, 49, 75; cost line 79; handling line 73; health lines 49, 92; enrichment line 110. Seriously Fish gives "2 to 15 dGH" for [BLE] and [RHO] (S21, S22, re-read); FishBase [BLE] gives 5 to 12 (S14); Fishkeeper aquarium-bred 1 to 18 (S30). The guide's 2 to 12 combines Seriously Fish's floor with FishBase's ceiling. Not wrong in direction, but no single source gives it. Owner decision.
+4. **rummy-nose-tetra-cost-guide.mdx line 68** (FunFact) "it ranks second, behind only the cardinal tetra, at roughly 6%" and **rummy-nose-tetra-enrichment-guide.mdx line 73** "After the cardinal tetra, the rummy-nose is the fish Amazonas state exports most ... about 6%". Source: IBAMA export data for 2006 to 2015 put H. bleheri third at 5.0%, behind P. axelrodi (64.6%) and P. simulans (7.5%) (S44). The existing S3 (da Silva Ladislau 2021) says second at about 6%. Two peer-reviewed papers disagree; S44 gives the data table. Owner decision (for example "among the top three").
+5. **rummy-nose-tetra-cost-guide.mdx line 95**: "Seldom a line item. A rummy-nose school stays healthy on stable water and, when needed, over-the-counter treatment." Sources: UF/IFAS says fish "are often incorrectly treated with over-the-counter medications" and that this "usually does more harm than good" (S61); AAFV and WAVMA run fish-vet finders (S73, S74). Same conflict the cardinal file logged (its Conflicts 3).
+6. **rummy-nose-tetra-handling-guide.mdx line 73**: "When the shop's figures and the home tank's sit far apart, drip acclimation is the slower method experienced keepers often use instead." Incomplete: PFK says slow acclimation after long transport is "a ticking time bomb" and to move fish right after temperature matching or dose an ammonia detoxifier (S27). Needs the shipped-fish exception.
+7. **rummy-nose-tetra-health-issues-guide.mdx line 102**: "Aquarium salt ... at roughly a tablespoon per 5 gallons". Sourced to VCA (S20) and accurate to it. UF/IFAS gives a different regime, 4 to 5 g/L for 7 to 10 days at 75 to 79°F "provided the fish species can handle" it (S56), roughly five times stronger. Source vs source; no rummy-nose salt tolerance found. Owner decision on which, if either, to give; plants may not tolerate salt (S56).
+8. **rummy-nose-tetra-handling-guide.mdx line 54**: "a tank where most of the noses look washed out is a tank to walk past." Partial: pale noses can mean the fish "just arrived a couple days ago or were recently chased around with a net, so wait half an hour or come back another day" (S31); newly shipped fish "will color up in short order" (S57, WEAK). The advice should be to wait and recheck, then walk past if they stay pale.
+9. **Peat** in rummy-nose-tetra-tank-setup-guide.mdx line 85 and rummy-nose-tetra-enrichment-guide.mdx line 106: supported by the rummy-nose pages (S21 to S23) but Seriously Fish's own neon and cardinal pages call peat collection unsustainable, and the three rebuilt tetra guides dropped peat. Not a factual conflict; a consistency decision for the owner.
+10. Not a guide line, carried for the record: the discus handling guide sentence (8.3, follow-up 7) is unchanged by today's finding. S21's 82 to 86°F is a spawning tank for rummy-noses, not discus-tank keeping.
+
+### Resolves earlier gaps
+
+- Measured wild water chemistry: pH 4.5, Na and Cl about 20 µM, DOM 11.5 mg C/L at a Rio Negro collection site (S47). Species caveat applies.
+- Quarantine length for new fish (8.5 note): UF/IFAS gives "a minimum 30-day quarantine period ... for new fish" because ich shows "1 to 3 weeks after shipping" (S56).
+- Lateral line vs vision disagreement (5.2): S50 and S51 show vision carries schooling and the lateral line speeds and tightens it.
+- Neon tetra disease in rummy-noses: still no host record; a different tetra heart disease is now documented in a rummy-nose (S48).
+- Second source for the red nose as a water signal: still only retailer and wholesaler tier for the "indicator" framing (S31, S57); stress fading is independently sourced (S21, S30).
+
+### Unsourced (owner review)
+
+Not dropped; no opened source supports these.
+- Rummy-noses fade at night and color up after lights on. Hobby pages and forums only (searched today).
+- Whether albino, golden or platinum forms still show stress through the head color.
+- Flow requirement for adult fish.
+- KH figure for the species or its wild water.
+- Rummy-nose salt tolerance (the 4 to 5 g/L regime in S56 depends on the species tolerating it).
+- A sustained 86°F hold for ich in rummy-noses (only a short spawning stay at 82 to 86°F is sourced, S21).
+- Freezing removing the Camallanus risk from Cyclops and Daphnia.
+- Rummy-noses as bottom-and-surface feeders (inference from benthopelagic plus the wild diet; no source says they pick food off sand).
+- A soft acidic destination tank makes slow acclimation of shipped fish safer than a hard alkaline one (inference from S63 and S27).
+- Cycle the filter before lowering pH with leaves, wood or peat (inference from S71 and S72).
+- Small-fish netting technique.
+- Pale and thin together as the worrying combination (inference from S64 and S31).
+- Owner-allowed unsourced items for the guides: lighting hours, juvenile feeding (three to four small meals a day, tapering), lifespan, vacation steps. No days-without-food figure and no wattage or electricity figure anywhere.
+
+### Layout sections the research cannot fill
+
+- Filtration for adults: no flow source; only breeding-tank sponge filters (S22, S23, S31).
+- When You Go Away: no source (owner-allowed unsourced steps only).
+- Vet costs: no price source.
+- Fin nipping (enrichment): no source either way; the section is not relevant to this species beyond "no".
+- Swim Bladder: the rummy-nose health guide does not have one, and no rummy-nose source was found.
+
+### Source count
+
+New sources opened today: 16 (S44 to S59; S58 and S59 were in other tetra files and are new to this one). Re-opened: S2, S14 to S16, S20 to S23, S27, S30, S31, S37. Carried over without re-opening, for general points: 25 (S60 to S84). Observation URLs (not sources): 2 opened today.
