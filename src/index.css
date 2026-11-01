@@ -443,3 +443,11 @@ html, body {
   .page-badge ~ :is(h1, .page-title, :has(h1)) { padding-top: 4px; }
   .page-badge ~ :not(h1):not(.page-title):not(:has(h1)) { clear: left; }
 }
+
+/* The mobile bottom tabs slide away while reading an article (BottomTabs.jsx);
+   the critter bubble that sits above them drops down with them. */
+@media (max-width: 767px) {
+  html[data-tabs-hidden] [data-follows-tabs] {
+    transform: translateY(calc(56px + var(--safe-area-inset-bottom, 0px)));
+  }
+}

@@ -10,10 +10,56 @@ const tabs = [
   { to: '/pack/',   label: 'My Pack',  icon: Heart },
 ];
 
+// Article pages only: /blog/<slug>/, not the /blog/ index or its category
+// views, which are lists the tabs help navigate.
+const isArticle = (pathname) => /^\/blog\/(?!category\/)[^/]+\/?$/.test(pathname);
+
 export default function BottomTabs() {
   const { pathname } = useLocation();
   const rowRef = useRef(null);
   const [tabWidth, setTabWidth] = useState(0);
+  // On an article the bar slides down out of the way while the reader scrolls
+  // down, and slides back on a tap anywhere on the page, on scrolling back near
+  // the top, or on reaching the end. Owner request 2026-11-01: more room to
+  // read on a phone. Starts shown, so prerendered HTML and the first client
+  // render agree.
+  const [hidden, setHidden] = useState(false);
+
+  useEffect(() => {
+    setHidden(false);
+    if (window.__IS_PRERENDER__ || !isArticle(pathname)) return;
+    let lastY = window.scrollY;
+    let ticking = false;
+    const onScroll = () => {
+      if (ticking) return;
+      ticking = true;
+      requestAnimationFrame(() => {
+        const y = window.scrollY;
+        const nearTop = y < 80;
+        const nearEnd = window.innerHeight + y >= document.documentElement.scrollHeight - 40;
+        if (nearTop || nearEnd) setHidden(false);
+        else if (y - lastY > 8) setHidden(true);
+        lastY = y;
+        ticking = false;
+      });
+    };
+    // A tap fires click; a scroll gesture does not.
+    const onTap = () => setHidden(false);
+    window.addEventListener('scroll', onScroll, { passive: true });
+    document.addEventListener('click', onTap);
+    return () => {
+      window.removeEventListener('scroll', onScroll);
+      document.removeEventListener('click', onTap);
+    };
+  }, [pathname]);
+
+  // Lets fixed elements that sit above the bar (the critter bubble) follow it.
+  useEffect(() => {
+    const root = document.documentElement;
+    if (hidden) root.setAttribute('data-tabs-hidden', '');
+    else root.removeAttribute('data-tabs-hidden');
+    return () => root.removeAttribute('data-tabs-hidden');
+  }, [hidden]);
 
   // Measured in pixels (not left:"X%") because animating a percentage-based
   // `left` via Framer Motion's `animate` prop silently never updated here -
@@ -60,8 +106,9 @@ export default function BottomTabs() {
   return (
     /* md:hidden = only visible on mobile */
     <nav
-      className="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-card/95 backdrop-blur-xl border-t border-border no-select"
+      className={`md:hidden fixed bottom-0 left-0 right-0 z-50 bg-card/95 backdrop-blur-xl border-t border-border no-select transition-transform duration-300 ease-out ${hidden ? 'translate-y-full' : 'translate-y-0'}`}
       style={{ paddingBottom: 'var(--safe-area-inset-bottom)' }}
+      onFocus={() => setHidden(false)}
       aria-label="Mobile navigation"
       data-site-chrome
     >

@@ -84,7 +84,8 @@ export default function CritterBubble() {
       aria-expanded={open}
       aria-label={`${live.name}: ${md.text}. Open quick care.`}
       title={`${live.name}: ${md.text}`}
-      className="fixed right-4 z-40 w-14 h-14 md:w-16 md:h-16 rounded-full bg-card border-2 border-foreground/80 shadow-lg flex items-center justify-center hover:scale-105 transition-transform bottom-[calc(56px+var(--safe-area-inset-bottom,0px)+12px)] md:bottom-6"
+      data-follows-tabs
+      className="fixed right-4 z-40 w-14 h-14 md:w-16 md:h-16 rounded-full bg-card border-2 border-foreground/80 shadow-lg flex items-center justify-center hover:scale-105 transition-transform duration-300 bottom-[calc(56px+var(--safe-area-inset-bottom,0px)+12px)] md:bottom-6"
     >
       <canvas ref={canvasRef} width={DRAGON_W} height={DRAGON_H} className="w-10 md:w-12" style={{ imageRendering: 'pixelated' }} aria-hidden="true" />
       {alert && (
