@@ -315,6 +315,7 @@ export default function Facts() {
                 {i > 0 && <span className="text-muted-foreground/40 mx-2.5" aria-hidden="true">&middot;</span>}
                 <Link
                   to={slugify(cat) === 'all' ? '/facts/' : `/facts/category/${slugify(cat)}/`}
+                  state={{ keepScroll: true }}
                   onClick={() => { setOrder(o => (o === 'random' ? 'daily' : o)); setRandomOrder([]); }}
                   className={`inline-flex items-center gap-1.5 pb-1 border-b-2 whitespace-nowrap transition-colors ${
                     activeCategory === cat
