@@ -108,19 +108,31 @@ function placeTip(tooltip) {
 // wrapped, which used to leave them tied to a listener that was gone).
 const openState = { current: null };
 if (typeof document !== 'undefined') {
+  // A box can also be showing only because its term holds focus (some phone
+  // browsers focus the link on touch and keep it), which openState never
+  // sees. Both handlers below drop that focus too.
+  const dropFocusedTerm = (target) => {
+    const a = document.activeElement;
+    if (a && a.closest && a.closest('.group\\/gloss') && !(target && a.closest('.group\\/gloss').contains(target))) a.blur();
+  };
   document.addEventListener('pointerdown', (e) => {
     if (openState.current && !openState.current.contains(e.target)) {
       closeTip(openState.current);
       openState.current = null;
     }
+    dropFocusedTerm(e.target);
   }, true);
-  // Scrolling away is a way of saying done with it.
-  window.addEventListener('scroll', () => {
+  // Scrolling away is a way of saying done with it. Only a finger drag drops
+  // a focused term: a keyboard user tabbing to a term makes the browser scroll
+  // it into view, and blurring on that scroll would throw their focus away.
+  const closeOpen = () => {
     if (openState.current) {
       closeTip(openState.current);
       openState.current = null;
     }
-  }, { passive: true });
+  };
+  window.addEventListener('scroll', closeOpen, { passive: true });
+  window.addEventListener('touchmove', () => { closeOpen(); dropFocusedTerm(null); }, { passive: true });
 }
 
 function closeTip(wrapper) {
