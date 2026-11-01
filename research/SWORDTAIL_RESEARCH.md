@@ -374,3 +374,83 @@ The hub copies the deep-dive figures; fix them once the guides change. Rows to c
 - Line 45 "mollies and swordtails commonly live 3 to 5 years": U1, no strong source.
 - Line 57: "plays no role in swimming at all" (C5); "6.2 inches" to 6.3 (C16); "females show measurable preferences for males with longer swords and bolder patterning" (Basolo W4, Seriously Fish W20); "favor faster-flowing streams than platies" is SUPPORTED (FishBase W19, group file S1); "intentionally crossed for almost a century" SUPPORTED (W15).
 - Line 68: "a swordtail, close enough to a platy to interbreed with one, isn't any harder to breed by accident": see C9; "easy to breed" is SUPPORTED by Fedder 2023 ("very easy to breed in freshwater aquaria").
+
+---
+
+## Kept without a source (owner review)
+
+Added 2026-11-01 after the correction pass on content/guides/swordtail-*.mdx. Per the owner's rule, only claims the sources contradict were changed; every unsupported claim below was left as written. "No source yet" means no page opened for this file states it. Items marked (partly) have a source for part of the claim.
+
+### swordtail-cost-guide.mdx
+- FAQ and body: "Hi-fin and lyretail varieties cost a bit more, roughly $6 to $10 each, and rarer patterns like koi or neon swordtails can reach $15 to $25 or more from specialty sellers." No retailer observation covers hi-fin, koi or neon pricing (U28).
+- Body: "A six-pack of assorted swordtails sells for about $29.99, roughly $5 per fish" and "a hi-fin lyretail six-pack runs about $37.99, about $6.30 per fish". Not re-observed on 2026-11-01.
+- FAQ and body: "Full monthly upkeep on a properly sized setup commonly lands around $20 to $35". The site's own price system, no outside observation (U28).
+- Body: "a little higher than a molly's, mainly because a bigger, more active fish in a bigger tank eats a bit more and runs a stronger filter" (U30).
+- FAQ and Lifespan section: "3 to 5 years on average" and "the same range as a molly or platy despite the size difference". Only a Questionable AnAge record (5 years, hobby-site citation) exists (U1).
+- FAQ and body: "swordtails are noticeably more active swimmers than a molly or platy" and "more active, open-water swimmers than a molly or platy of similar size". No source compares activity across livebearers (U27).
+- Body: "Retail listings give a 20-gallon minimum for standard swordtails, but recommend at least 30 gallons ... for hi-fin lyretails". A retailer claim; the sources give 29 gallons for all forms.
+- FunFact: "it's a genuine part of why the fancier, longer-finned varieties cost more at the store". Inference (U29).
+- Vet Costs: "swordtails rarely see a vet" and "uncommon and rarely necessary for a species this hardy" (U22).
+- Body: "A male swordtail can be a persistent, near-constant presence around a female he's courting". Behavioral claim, no swordtail-specific source (the Practical Fishkeeping pages say only that males bicker and losers are picked on).
+- FAQ and body: "fry that aren't cleanly one species or the other" as the consequence of keeping platies and swordtails together; hybrids are attested but the community-tank outcome is not (partly, C9).
+- Body: "Swordtails are also true dietary generalists rather than the more herbivore-leaning molly" (partly; supported for the sailfin molly only).
+- Table: the setup table prices a 20-gallon long tank (cost sheet item, src/lib/data/costSheets/fish.js), which the research puts below the 29 gallon, 48 inch floor. The glass lid link note also says it fits a 20 gallon long.
+- Excerpt and opener: "the common livebearer that outgrows a 20-gallon starting point the fastest". The superlative has no source.
+
+### swordtail-tank-setup-guide.mdx
+- FAQ and Temperature: "75 to 79°F the steadier target" (U2).
+- FAQ and Water Chemistry: "Soft tap water can be brought up with crushed coral or a commercial buffering product" (U23).
+- Water Chemistry section: the tankmate list "platies, mollies, cory catfish, rosy barbs, kuhli loaches and otocinclus all fit", and "a swordtail does not defend itself and turns timid around them" (U5).
+- FAQ, Jumping section and FunFact: "Swordtails are powerful jumpers", "gaps of well under an inch", "a few inches at the back of a lid is often enough". Hobbyist reports only (U24).
+- FAQ and Filtration: "a gentle sponge filter is the better call specifically if you're prioritizing fry survival" and "it won't pull small fry into strong current the way a power filter can" (U15).
+- Filtration: "a bigger, more active fish in a bigger tank produces a bigger bioload to match".
+- Substrate: "Fine gravel or sand both work well. Avoid sharp or coarse gravel, which can damage fins" (U26; Seriously Fish says only that the species looks best over a dark substrate).
+- Lighting: "A basic LED light on an 8 to 10 hour daily cycle" (U25).
+- Tank Size and FAQ: "swordtails are noticeably more active, open-water swimmers than a molly or platy" (U27).
+- Cycling: "or somewhat less with a bottled bacteria product" and "one of the most common beginner mistakes in the hobby generally". No source in this file.
+- Planting: "planting gives females somewhere to physically break line of sight from a persistent male"; the plant specs (Vallisneria 'Tiger' 30 to 50 cm, hornwort, Anubias) rest on a plant producer. The Tropica Sources entry is a site homepage, not a specific page, and the research file has no Tropica page.
+- The linked product is a 20-gallon long tank, now described as a stopgap for a pair; the research gives no length for a 20 long (general knowledge says about 30 inches, which is under the 48 inch floor).
+
+### swordtail-feeding-guide.mdx (no fact was contradicted; only the Sources block changed)
+- FAQ and body: "in fairly even measure" and "in roughly even measure" for the wild diet; "genuinely balanced mix"; "splits far more evenly between plant matter and small invertebrates" (U6, FunFact). "Considerably more herbivorous" for the molly is supported for the sailfin molly only.
+- FAQ and body: "feed only what's fully cleared within about 2 minutes" (U7).
+- FAQ and body: "Overfeeding drives constipation and swim bladder problems directly" (U8).
+- FAQ and Fry bullet: "born larger and more developed than egg-layer fry", "the infusoria stage is usually unnecessary", "at least 3 to 5 times a day" (U9; Practical Fishkeeping says three times a day).
+- Juveniles bullet: "More frequent, higher-protein feeding than adults" (U11, self-flagged).
+- Why Swordtails Stop Eating: stress from a male-heavy ratio, cold water slowing metabolism, "Impending birth" (U10).
+- "Avoid an all-flake diet with no vegetable content at all ... digestive trouble over time"; "don't refeed frozen food that's already thawed". General husbandry.
+
+### swordtail-handling-guide.mdx
+- FAQ and Sexing: "have a fuller fan-shaped anal fin" for females, and "Females also tend to develop a dark gravid spot near the vent" (U12). "Females lack the sword entirely" and "carry no sword at all" hold for the wild form only; Seriously Fish says extended fins occur in some ornamental females (partly).
+- Sexing: "individual swordtails that spend months looking and acting like a female before eventually developing a sword, male coloring, and even fathering broods of their own" and "hobbyists have reported, for generations" (U13). The "disputed question" wording is supported by Fedder 2023 and FishBase.
+- FAQ and Ratio: "three or four where the tank allows: the higher end spreads out mating attempts more effectively and reduces the fin damage and stress" (U3). Practical Fishkeeping supports "more females than males" and two or three per male.
+- Ratio section: "shows real, measurable stress", "Persistent chasing leads to fin damage" (U18).
+- Intro: "an unbalanced tank causes more real stress here than with a molly or platy"; What Swordtails Are Like: "noticeably more vigorous open-water swimmers than a molly or platy" (U4, U27).
+- Males "about 5.5 inches including the sword". FishBase does not say whether its male figure includes the sword (inference).
+- Acclimation: "inside the swordtail's hard, alkaline range, the float is enough", "bag water ... can carry ammonia the fish produced during transport", and "if your water is soft or acidic, drip acclimate". Practical Fishkeeping supports netting and the 30 to 60 minute and couple of hours timings, not the chemistry rule.
+- Quarantine: "A modest tank with a gentle sponge filter is enough, and it catches most problems, ich and fin rot included" and FAQ "catches most problems before they spread".
+- Managing Population: "exactly two males is the one combination to avoid" (C10, partly: Practical Fishkeeping advises one male, no source names two).
+- Comparison section: "Mollies and guppies get by on a looser one-to-two-or-three ratio" and "swordtail males are consistently described as more combative with each other and more persistent with females" (U4).
+- "an unusual size reversal for a fish where the male carries the more elaborate ornament". Framing, no source.
+
+### swordtail-health-issues-guide.mdx (no fact was contradicted; only the Sources block changed)
+- Ich: "An 82°F tank is as warm as a swordtail goes, short of the heat that kills ich on its own" and the heat-plus-salt-or-medication plan (partly: 82°F is the husbandry ceiling and VCA supports heat, but Merck and UF/IFAS give chemical and salt protocols only) (U36). Daily treatment at warm temperatures is not stated on the page (UF/IFAS and Merck say it).
+- Ich: "a single organism can produce hundreds of new ones". UF/IFAS gives up to 1024; "hundreds" understates it but is not wrong.
+- Fin rot: "Improving water quality alongside an antibacterial treatment resolves most cases caught early" (U17); "fin damage from male chasing is a real, documented trigger" (U18).
+- Dropsy (FAQ and body): "the hardest condition on this list to treat successfully, often carrying a poor outlook" (U16).
+- Swim bladder: "usually from overfeeding or constipation. Often manageable at home with a short fast" (U19).
+- Sex ratio FunFact and FAQ: "measurably raises the odds of the pathogen-driven conditions" and "takes real fin damage from chasing and nipping" (U20, U18). Also "three or four where the tank allows" (U3).
+- Pattern section: "feeding only what the group clears in about two minutes" (U7); "a livebearer-specific shimmy that occasionally turns up in swordtails too" (U21).
+- Hub/FAQ-linked: "Dedicated aquatic vets" lines are not on this page; the hub says "Swordtails rarely see a vet" (U22).
+
+### swordtail-enrichment-guide.mdx
+- Title, excerpt, KeyTakeaway, FAQ, Not Two Males, What Not to Do: "two males in one tank is the arrangement that reliably produces a hounded loser", "exactly two males is the one combination to avoid", "by far the most common way a swordtail tank goes wrong" (C10, partly). Practical Fishkeeping Quick guide advises avoiding more than one male; Seriously Fish says groups of males form dominance hierarchies; no source names two as the problem number. The reasoning (all contests fall on one pair) is the guide's own.
+- FAQ: "Male swordtails are more aggressive toward each other than guppies or platies are" and "which is not true of the other common livebearers" (U4).
+- FAQ: "three or four is better"; Priority Order and Sex Ratio: "three or four better" (U3).
+- FAQ, Length, What Not to Do: "the largest and most active of the common livebearers" ("largest" narrowly supported by FishBase; "most active" has no source) (U27). "Do not use a small tank for the largest common livebearer".
+- Research section: "males attempt to mate almost constantly, females are largely non-responsive". Plath 2008 supports vigilance and hampered feeding in surface Atlantic mollies, not this wording, and notes cave mollies are the exception.
+- Flow: "Aim the outflow along the length so there is a faster end and a slower end" (U32); "messy enough to need real filtration".
+- Feeding: "swordtails graze more than guppies" (U31).
+- Plan for the Fry: "the fish are large enough that overstocking hits water quality quickly" (U35).
+- The jumping line "They are also excellent jumpers. A tank without a lid will lose fish" (U24).
+- The Sources entry for Gasparini et al. 2012 is kept; the Koehler et al. 2011 record was not added because its abstract was never read.

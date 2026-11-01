@@ -39119,7 +39119,7 @@
     "title": "How Much Does Platy Fish Ownership Really Cost?",
     "seoTitle": "Platy Fish Price: $2 to $6 Each, Plus $120 to $225 Setup",
     "seoDescription": "Full platy fish cost breakdown: $2 to $6 per fish, $120 to $225 for a 10-gallon setup, low upkeep, and why fry can multiply your costs fast.",
-    "lastUpdated": "2026-10-06",
+    "lastUpdated": "2026-11-01",
     "noIndex": false,
     "excerpt": "Platies are about as close to guppy-cheap as a livebearer gets, a small tank and a modest setup that costs almost nothing to run day to day. The budget risk is the same one guppies and mollies carry: fry.",
     "date": "2026-09-10",
@@ -39187,12 +39187,12 @@
   {
     "path": "/content/guides/platy-enrichment-guide.mdx",
     "slug": "platy-enrichment-guide",
-    "title": "Platy Enrichment: Hardy Is Not the Same as Unaffected",
+    "title": "Platy Enrichment: Forgiving Is Not the Same as Unaffected",
     "seoTitle": "Platy Enrichment Guide",
-    "seoDescription": "Platies tolerate poor setups, which is why they get them. Sex ratio, cover and a group still change what the fish actually does.",
-    "lastUpdated": "2026-09-14",
+    "seoDescription": "Platies are sold as beginner fish, which is why they get poor setups. Sex ratio, cover and a group still change what the fish actually does.",
+    "lastUpdated": "2026-11-01",
     "noIndex": false,
-    "excerpt": "Platies are the fish people put in the tank that is too small, too bare or not quite cycled, because platies survive it. Surviving something is not evidence it was fine.",
+    "excerpt": "Platies are the fish people put in the tank that is too small, too bare or not quite cycled, because platies are sold as beginner fish. Surviving something is not evidence it was fine.",
     "date": "2026-09-04",
     "category": "Enrichment",
     "categories": [
@@ -39217,19 +39217,19 @@
     "faqs": [
       {
         "q": "Is there research relevant to platy welfare?",
-        "a": "Not on platies directly. The applicable evidence is the livebearer harassment literature, which found direct costs to females from constant male pursuit including energy expenditure, reduced foraging and increased vigilance."
+        "a": "Yes, in part. One comparison of nine livebearing species included the variatus platy and found females fed significantly less with a male present. The wider evidence is the livebearer harassment literature, which found direct costs to females from constant male pursuit including energy expenditure, reduced foraging and increased vigilance."
       },
       {
         "q": "What sex ratio should I keep?",
-        "a": "At least two to three females per male, and more females is better. Platy males are less relentless than guppy males but the same dynamic applies, and a male-heavy tank produces females that spend their time avoiding rather than feeding."
+        "a": "At least two to three females per male, and more females is better. Platy males can be relentless and the same dynamic applies, and a male-heavy tank produces females that spend their time avoiding rather than feeding."
       },
       {
         "q": "Are platies that hardy?",
-        "a": "Yes, comparatively, and that is the problem. They tolerate small tanks, hard water, temperature swings and undercycled setups better than most community fish, which is exactly why they end up in all of them."
+        "a": "Not reliably. They suit beginners as long as the water is moderately hard or harder, but many commercially bred platies are weak from inbreeding and over-production and prone to disease and premature death, so a poor setup costs them more than it looks."
       },
       {
         "q": "So what does a platy need?",
-        "a": "A group, a sex ratio that is not male-heavy, planting to break line of sight, and a cycled tank of a reasonable size. None of it is demanding, and none of it is what a hardy fish typically gets."
+        "a": "A group, a sex ratio that is not male-heavy, planting to break line of sight, and a cycled tank of a reasonable size. None of it is demanding, and none of it is what a beginner fish typically gets."
       },
       {
         "q": "Do platies need to be in groups?",
@@ -39250,7 +39250,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 3,
+    "sourceCount": 5,
     "headingCount": 11,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
@@ -39262,7 +39262,7 @@
     "title": "Platy Feeding: Schedule, Diet, and Why Overfeeding Is the Real Risk",
     "seoTitle": "What Do Platy Fish Eat? Diet and Feeding Schedule",
     "seoDescription": "Platy feeding guide: schedule by life stage, what unfussy omnivores actually need, safe foods, and why overfeeding is the real risk with this fish.",
-    "lastUpdated": "2026-09-25",
+    "lastUpdated": "2026-11-01",
     "noIndex": false,
     "excerpt": "Platies are unfussy true omnivores that will eat almost anything offered, which flips the usual worry. With a fish this small, overfeeding, not pickiness, is the mistake that causes problems.",
     "date": "2026-09-10",
@@ -39326,8 +39326,8 @@
     "slug": "platy-handling-guide",
     "title": "Platies Aren't Handled Either, But They Do Need a Breeding Plan",
     "seoTitle": "How to Handle Platy Fish (and Manage Breeding)",
-    "seoDescription": "How platy fish are actually handled (rarely), how they breed via superfetation, sexing by gonopodium and gravid spot, and managing a mixed tank.",
-    "lastUpdated": "2026-09-25",
+    "seoDescription": "How platy fish are actually handled (rarely), how females store sperm, sexing by gonopodium and gravid spot, and managing a mixed tank.",
+    "lastUpdated": "2026-11-01",
     "noIndex": false,
     "excerpt": "Platies are an observation pet, not a hands-on one. What matters is understanding just how easily this livebearer breeds, since that's what decides whether your tank stays the size you set it up to be.",
     "date": "2026-09-10",
@@ -39362,7 +39362,7 @@
       },
       {
         "q": "How do platies breed?",
-        "a": "Platies are livebearers, females give birth to free-swimming fry directly rather than laying eggs. Female platies store sperm in the folds of their oviduct after mating, sometimes for months, which lets one encounter fertilize several separate broods without a male present again. A typical brood runs 20 to 50 fry, with a documented range up to 80, roughly every 4 to 6 weeks after a gestation period of about the same length."
+        "a": "Platies are livebearers, females give birth to free-swimming fry directly rather than laying eggs. Female platies store sperm in the folds of their ovarian tissue after mating, sometimes for months, which lets one encounter fertilize several separate broods without a male present again. A typical brood runs 20 to 50 fry, with a documented range up to 80, roughly every 4 to 6 weeks after a gestation period of about the same length."
       },
       {
         "q": "How do I manage platy population if I don't want constant breeding?",
@@ -39391,7 +39391,7 @@
     "title": "Common Platy Health Issues (And the Truth About 'Platy Tumors')",
     "seoTitle": "Platy Fish Health Issues: Signs, Causes & Tumors",
     "seoDescription": "Common platy health issues: ich, fin rot, dropsy, swim bladder, shimmy, plus the honest science on melanoma research and platy tumors.",
-    "lastUpdated": "2026-09-25",
+    "lastUpdated": "2026-11-01",
     "noIndex": false,
     "excerpt": "Ich, fin rot, dropsy, and shimmy are the everyday risks. Platies are also famous in cancer genetics for melanoma research, and it's worth knowing exactly what that does and doesn't mean for your fish.",
     "date": "2026-09-10",
@@ -39430,7 +39430,7 @@
       },
       {
         "q": "Is it true that platies can get tumors?",
-        "a": "Yes, and it's one of the most studied facts in the species, but keep it in perspective. Certain platy and swordtail genetic lines develop melanoma through a well-understood mechanism, and Xiphophorus fish have been used as a cancer research model for over 70 years. Importantly, this does not happen spontaneously in an ordinary pet-store platy under normal conditions, it requires deliberate cross-breeding between platies and swordtails in a lab setting to unmask the trait. If you find a lump or dark growth on your own platy, it's far more likely to be an injury, a cyst, or an unrelated growth than that specific research-famous condition, a vet or fish-health specialist can help rule out the more common, more treatable causes."
+        "a": "Yes, and it's one of the most studied facts in the species, but keep it in perspective. Certain platy and swordtail genetic lines develop melanoma through a well-understood mechanism, and Xiphophorus fish have been used as a cancer research model for almost a century. Importantly, in a purebred pet-store platy it is rare, appearing almost exclusively in mature males of advanced age, and it is unmasked far more readily by deliberate cross-breeding between platies and swordtails in a lab setting. If you find a lump or dark growth on your own platy, it's far more likely to be an injury, a cyst, or an unrelated growth than that specific research-famous condition, a vet or fish-health specialist can help rule out the more common, more treatable causes."
       },
       {
         "q": "How do I prevent most platy health issues in the first place?",
@@ -39513,7 +39513,7 @@
     "title": "Platy Tank Setup: A Real 10 Gallons, Hard Water, and a Plan for Fry",
     "seoTitle": "Platy Fish Tank Setup Guide",
     "seoDescription": "Platy fish tank setup guide covering tank size, temperature, hard/alkaline water chemistry, filtration, planting, and planning for fry.",
-    "lastUpdated": "2026-09-25",
+    "lastUpdated": "2026-11-01",
     "noIndex": false,
     "excerpt": "Platies are easy to house well. A real 10 gallons, water on the harder and more alkaline side, and a filter that won't shred fry covers most of what this species needs.",
     "date": "2026-09-11",
@@ -39575,7 +39575,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4,
+    "sourceCount": 5,
     "headingCount": 9,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
@@ -48004,7 +48004,7 @@
     "title": "How Much Does Swordtail Fish Ownership Really Cost?",
     "seoTitle": "Swordtail Price: $3 to $25 Each, Plus $170 to $345 Setup",
     "seoDescription": "Full swordtail fish cost breakdown: $3 to $25 per fish, $170 to $345 for the setup, modest upkeep, and why sizing up past 20 gallons pays off.",
-    "lastUpdated": "2026-10-06",
+    "lastUpdated": "2026-11-01",
     "noIndex": false,
     "excerpt": "Swordtails cost about the same per fish as a molly, but they're the common livebearer that outgrows a 20-gallon starting point the fastest.",
     "date": "2026-09-11",
@@ -48035,7 +48035,7 @@
       },
       {
         "q": "What does a basic swordtail tank setup cost?",
-        "a": "A tank and lid, filter, heater, live plants and water care run $170 to $345 using a 20-gallon long tank as the base. That 20-gallon figure is the floor for a small trio, but a group wants 30 gallons or more, since swordtails are noticeably more active swimmers than a molly or platy, which pushes the cost somewhat past the table above."
+        "a": "A tank and lid, filter, heater, live plants and water care run $170 to $345 using a 20-gallon long tank as the base. That 20-gallon tank is a stopgap, since about 29 gallons is the floor for a small trio and a group wants 30 gallons or more, since swordtails are noticeably more active swimmers than a molly or platy, which pushes the cost somewhat past the table above."
       },
       {
         "q": "What are the ongoing costs of keeping swordtails?",
@@ -48047,7 +48047,7 @@
       },
       {
         "q": "What's the cost new swordtail owners usually forget to plan for?",
-        "a": "Two things, and both come down to livebearer biology. First, more swordtails than you started with, a single female can produce 20 to 100 or more fry roughly every 4 weeks without a fresh mating each time. Second, and more specific to this species, accidental hybrids: swordtails and platies share a genus and interbreed readily, so an unplanned mix of the two can leave you with fry that aren't cleanly one species or the other."
+        "a": "Two things, and both come down to livebearer biology. First, more swordtails than you started with, a single female can produce 20 to 200 fry, with about 30 common, roughly every 4 weeks without a fresh mating each time. Second, and more specific to this species, accidental hybrids: swordtails and platies share a genus and can hybridize, so an unplanned mix of the two can leave you with fry that aren't cleanly one species or the other."
       }
     ],
     "relatedProducts": [
@@ -48063,7 +48063,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 3,
+    "sourceCount": 5,
     "headingCount": 8,
     "ledeMatchesExcerpt": true,
     "imageWidth": 1200,
@@ -48075,7 +48075,7 @@
     "title": "Swordtail Enrichment: Two Males Is the Number That Causes Trouble",
     "seoTitle": "Swordtail Enrichment Guide",
     "seoDescription": "Male swordtails fight each other and pursue females constantly. One male, or several, but not two, and plenty of length to swim.",
-    "lastUpdated": "2026-09-24",
+    "lastUpdated": "2026-11-01",
     "noIndex": false,
     "excerpt": "Male swordtails compete with each other as hard as they pursue females. Two males in one tank is the arrangement that reliably produces a loser.",
     "date": "2026-09-04",
@@ -48118,7 +48118,7 @@
       },
       {
         "q": "Do female swordtails ever grow swords?",
-        "a": "Occasionally. Older females sometimes develop a sword and male-like features, which is a well-known quirk of the species. It is not a health problem and it does surprise people."
+        "a": "Occasionally, it is reported. Some females seem to develop a sword and male-like features, and whether that is genuine sex change or a male that matured late is not settled. It is not a health problem and it does surprise people."
       },
       {
         "q": "What is the most common mistake?",
@@ -48135,7 +48135,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 3,
+    "sourceCount": 5,
     "headingCount": 12,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
@@ -48200,7 +48200,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 3,
+    "sourceCount": 5,
     "headingCount": 6,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1200,
@@ -48212,7 +48212,7 @@
     "title": "Swordtails Aren't Handled Either, But Ratio Is a Real Handling Decision",
     "seoTitle": "How to Handle Swordtail Fish (Ratio & Breeding)",
     "seoDescription": "How swordtail fish are actually handled, safe transfer and acclimation, sexing, breeding, and why male-to-female ratio is a real handling decision.",
-    "lastUpdated": "2026-09-25",
+    "lastUpdated": "2026-11-01",
     "noIndex": false,
     "excerpt": "Swordtails are an observation pet, not a hands-on one. What counts as handling here is getting a new fish home safely and getting the male-to-female ratio right.",
     "date": "2026-09-11",
@@ -48243,7 +48243,7 @@
       },
       {
         "q": "How do I safely bring home and acclimate a new swordtail?",
-        "a": "Float the sealed bag in your tank for 15 to 20 minutes to equalize temperature, and if your water is soft or acidic, drip acclimate over 45 to 60 minutes so the fish adjusts gradually; inside the swordtail's hard, alkaline range, the float is enough. Net the fish into the tank rather than pouring in any bag water, since it can carry ammonia the fish produced during transport."
+        "a": "Float the sealed bag in your tank to equalize temperature, add tank water to the bag in stages over 30 to 60 minutes, and if your water is soft or acidic, drip acclimate fully (a couple of hours) so the fish adjusts gradually; inside the swordtail's hard, alkaline range, the float is enough. Net the fish into the tank rather than pouring in any bag water, since it can carry ammonia the fish produced during transport."
       },
       {
         "q": "How can I tell if my swordtail is male or female?",
@@ -48264,7 +48264,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4,
+    "sourceCount": 5,
     "headingCount": 9,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1200,
@@ -48334,7 +48334,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4,
+    "sourceCount": 5,
     "headingCount": 8,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1200,
@@ -48346,9 +48346,9 @@
     "title": "Swordtail Tank Setup: A Real 29 to 30 Gallons and a Lid That Actually Seals",
     "seoTitle": "Swordtail Fish Tank Setup Guide",
     "seoDescription": "Swordtail fish tank setup guide covering real tank size, temperature, water chemistry, filtration, the jumping risk, and planting for female refuge.",
-    "lastUpdated": "2026-09-25",
+    "lastUpdated": "2026-11-01",
     "noIndex": false,
-    "excerpt": "Swordtails need more room than a guppy or molly, sturdier filtration to match, and a lid that seals, since this species is a capable jumper.",
+    "excerpt": "Swordtails need more room than a guppy or molly, a filter that keeps some water moving, and a lid that seals, since this species is a capable jumper.",
     "date": "2026-09-12",
     "category": "Fish",
     "categories": [
@@ -48373,15 +48373,15 @@
     "faqs": [
       {
         "q": "What size tank does a swordtail need?",
-        "a": "20 gallons is the genuine floor for a small trio, one male and two or three females, but a group wants 30 gallons or more, since swordtails are more active, open-water swimmers than a molly or platy. Choose length over height, and use a lid, swordtails are capable jumpers."
+        "a": "About 29 gallons (48 by 12 inches) is the genuine floor for a small trio, one male and two or three females, but a group wants 30 gallons or more, since swordtails are more active, open-water swimmers than a molly or platy. Choose length over height, and use a lid, swordtails are capable jumpers."
       },
       {
         "q": "What temperature do swordtails need?",
-        "a": "Tropical, roughly 65 to 82°F, with 75 to 79°F the steadier target. Hold it steady rather than chasing a number, and avoid sudden swings. A submersible heater is necessary unless the room stays warm all year."
+        "a": "Tropical, roughly 72 to 82°F, down to the mid 60s if it must, with 75 to 79°F the steadier target. Hold it steady rather than chasing a number, and avoid sudden swings. A submersible heater is necessary unless the room stays warm all year."
       },
       {
         "q": "What water chemistry do swordtails need?",
-        "a": "pH 7.0 to 8.4 in moderately hard to hard water, roughly 10 to 25 dGH. Soft tap water can be brought up with crushed coral or a commercial buffering product."
+        "a": "pH 7.0 to 8.0 in moderately hard to hard water, roughly 10 to 25 dGH. Soft tap water can be brought up with crushed coral or a commercial buffering product."
       },
       {
         "q": "Do swordtail tanks need a secure lid?",
@@ -48389,7 +48389,7 @@
       },
       {
         "q": "What kind of filtration is best for a swordtail tank?",
-        "a": "Something with real turnover capacity: filter flow at 4 to 5 times the tank's volume per hour for this species, more than a molly or guppy typically needs. A hang-on-back or canister filter suits a standard or growing group; a gentle sponge filter is the better call specifically if you're prioritizing fry survival."
+        "a": "Filtration doesn't need to be particularly strong, but swordtails appreciate some water movement: filter flow at 4 to 5 times the tank's volume per hour is the working target for this species. A hang-on-back or canister filter suits a standard or growing group; a gentle sponge filter is the better call specifically if you're prioritizing fry survival."
       }
     ],
     "relatedProducts": [
@@ -48407,7 +48407,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 3,
+    "sourceCount": 5,
     "headingCount": 11,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1200,
