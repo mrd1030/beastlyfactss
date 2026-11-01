@@ -560,7 +560,7 @@ export default function GuideDetail() {
                 No: difficultyColor.Advanced,
               };
               const cautioned = live.filter((sp) => sp.caution);
-              const dagger = (sp) => (sp.caution ? <span aria-hidden="true">{'\u2020'}</span> : null);
+              const dagger = (sp) => (sp.caution ? <sup aria-hidden="true" className="ml-px text-[0.65em] font-normal text-muted-foreground">{'\u2020'}</sup> : null);
               const count = ['', '', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight'][live.length] || String(live.length);
               const allFit = live.length > 2 ? fit(live) : null;
               return (
@@ -610,7 +610,7 @@ export default function GuideDetail() {
                     )}
                   </p>
                   {cautioned.map((sp) => (
-                    <p key={sp.id} className="text-xs text-foreground font-body mt-1.5">{'\u2020 '}{sp.caution}</p>
+                    <p key={sp.id} className="text-xs text-foreground font-body mt-1.5"><sup aria-hidden="true" className="mr-0.5 text-[0.75em] text-muted-foreground">{'\u2020'}</sup>{sp.caution}</p>
                   ))}
                   {allFit && (
                     <p className="text-sm text-muted-foreground font-body mt-3">
