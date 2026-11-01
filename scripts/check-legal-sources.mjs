@@ -34,6 +34,7 @@
 //   node scripts/check-legal-sources.mjs --write      write/refresh the baseline
 //   node scripts/check-legal-sources.mjs --only NV    limit to one jurisdiction
 //   node scripts/check-legal-sources.mjs --browser     render what a fetch cannot read
+//                                                      (puppeteer if installed, else the machine's Edge or Chrome)
 //
 // --browser is for running on a desktop. See the note on the flag below: what
 // it buys is not a better parser, it is a different place to make the request
@@ -59,7 +60,8 @@
 // or block a datacentre IP on any given day and a checker that fails for that
 // reason gets muted within two months.
 
-import { execFileSync } from 'node:child_process';
+import { execFile, execFileSync } from 'node:child_process';
+import os from 'node:os';
 import { createHash } from 'node:crypto';
 import fs from 'node:fs';
 import path from 'node:path';
@@ -346,10 +348,56 @@ async function fetchOne(url, cells) {
 // imported here rather than at the top: a CI run must never touch this path.
 let browser = null;
 let browserDead = false;
+let systemBrowser = null;
+
+// Without puppeteer (a Windows desktop that never ran npm ci, say), use the
+// browser the machine already has. Edge ships with Windows. Run headless with
+// --dump-dom it prints the page after its scripts have run, which is the whole
+// of what this flag needs, and it needs no package at all. It reads the top
+// document only, so a frameset (Alaska) still wants puppeteer.
+function findSystemBrowser() {
+  const env = process.env;
+  const candidates = [
+    env.CHROME_BIN,
+    env['ProgramFiles(x86)'] && path.join(env['ProgramFiles(x86)'], 'Microsoft/Edge/Application/msedge.exe'),
+    env.ProgramFiles && path.join(env.ProgramFiles, 'Microsoft/Edge/Application/msedge.exe'),
+    env.ProgramFiles && path.join(env.ProgramFiles, 'Google/Chrome/Application/chrome.exe'),
+    env.LOCALAPPDATA && path.join(env.LOCALAPPDATA, 'Google/Chrome/Application/chrome.exe'),
+    '/Applications/Microsoft Edge.app/Contents/MacOS/Microsoft Edge',
+    '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',
+    '/usr/bin/microsoft-edge',
+    '/usr/bin/google-chrome',
+    '/usr/bin/chromium',
+  ].filter(Boolean);
+  return candidates.find((c) => { try { return fs.statSync(c).isFile(); } catch { return false; } }) || null;
+}
+
+function dumpDom(exe, url) {
+  const args = [
+    '--headless=new', '--disable-gpu', '--no-first-run', '--no-default-browser-check',
+    // Its own profile, so an Edge window already open on the desktop is left alone.
+    `--user-data-dir=${path.join(os.tmpdir(), 'beastlyfacts-legal-headless')}`,
+    `--user-agent=${UA}`, '--virtual-time-budget=20000', '--dump-dom', url,
+  ];
+  return new Promise((resolve) => {
+    execFile(exe, args, { timeout: TIMEOUT_MS * 3, maxBuffer: 256 * 1024 * 1024, windowsHide: true }, (err, stdout) => {
+      resolve(err && !stdout ? { error: `browser: ${String(err.message || err).split('\n')[0].slice(0, 50)}` } : { html: String(stdout || '') });
+    });
+  });
+}
+
 async function getBrowser() {
   if (browserDead) throw new Error('browser unavailable');
   if (browser) return browser;
-  const { default: puppeteer } = await import('puppeteer');
+  if (systemBrowser) return { dumpDom: systemBrowser };
+  let puppeteer = null;
+  try { ({ default: puppeteer } = await import('puppeteer')); } catch { /* not installed */ }
+  if (!puppeteer) {
+    systemBrowser = findSystemBrowser();
+    if (!systemBrowser) throw new Error('no puppeteer and no Edge or Chrome found; set CHROME_BIN');
+    console.log(`No puppeteer here, so rendering with ${systemBrowser}.\n`);
+    return { dumpDom: systemBrowser };
+  }
   browser = await puppeteer.launch({
     headless: true,
     executablePath: process.env.CHROME_BIN || undefined,
@@ -365,6 +413,20 @@ async function renderOne(url, cells) {
   let page;
   try {
     const b = await getBrowser();
+    if (b.dumpDom) {
+      const got = await dumpDom(b.dumpDom, url);
+      if (got.error) return got;
+      const body = got.html
+        .replace(/<script\b[\s\S]*?<\/script>/gi, ' ')
+        .replace(/<style\b[\s\S]*?<\/style>/gi, ' ')
+        .replace(/<[^>]+>/g, ' ')
+        .replace(/&[a-z]+;|&#\d+;/gi, ' ');
+      if (normalize(body).length < SHELL_CHARS) return { error: `rendered but empty, ${normalize(body).length} chars` };
+      const text = normalize(body);
+      const out = { hash: hash(text), length: text.length, kind: 'html', via: 'browser' };
+      if (cells?.length) out.quotes = checkQuotes(body, cells);
+      return out;
+    }
     page = await b.newPage();
     await page.setUserAgent(UA);
     await page.goto(url, { waitUntil: 'networkidle2', timeout: TIMEOUT_MS });
