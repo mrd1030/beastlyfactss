@@ -104,12 +104,15 @@ working checklist.
 ## Sources
 
 - A source is a page actually opened that contains the specific claim. Never a
-  homepage, never a search results page, never a constructed URL.
-- Keep the `<Sources>` block curated: 4 to 5 links is the target, not a hard cap,
-  and never a URL library. Going over is allowed when every extra link carries a
-  claim nothing else in the block supports; when it does, say why in an MDX
-  comment directly above `<Sources>` so the next audit doesn't trim it. Current
-  overruns: `bearded-dragon-health-issues-guide.mdx` runs 9 (the prolapse, ADV and vet-finding
+  bare homepage, never a search results page, never a constructed URL. One
+  exception (owner, 2026-11-01): several pages from the same site or school are
+  combined into one entry that links the site's main page and lists each page
+  that was opened, the way the Merck Veterinary Manual entry does.
+- Keep the `<Sources>` block curated, never a URL library: 3 to 5 is the target,
+  6 is a hard cap, and health guides have a hard cap of 8 (owner, 2026-11-01).
+  Going past a cap is the owner's decision, never the writer's: stop and ask.
+  An approved overrun says why in an MDX comment directly above `<Sources>` so
+  the next audit doesn't trim it. Approved overruns: `bearded-dragon-health-issues-guide.mdx` runs 9 (the prolapse, ADV and vet-finding
   material), `red-eared-slider-health-issues-guide.mdx` runs 6 (the pyramiding
   correction needs both the Stancel feeding trial and a cause list),
   `small-mammal-temperature-heat-stress-guide.mdx` runs 10 and
@@ -158,9 +161,20 @@ exists to state it.
 
 ### Sources are for facts, not prices
 
-A `<Sources>` entry is a vet, university, government, manufacturer spec, or
-established husbandry reference. Never a retailer product page or a
-for-sale listing. Cost guides carry no "Prices last checked" or "as of"
+A `<Sources>` entry is a vet, university, government, peer-reviewed paper,
+manufacturer spec, or established husbandry reference. Never a retailer product
+page or a for-sale listing.
+
+No hobby sites (owner, 2026-11-01): retailer blogs and care pages (Aquarium
+Co-Op, Fishkeeper and the like), hobby blogs (Aquarium Source and the like),
+hobby societies (ANGFA and the like), forums, and hobby magazines such as TFH
+never go in a Sources block. Two borderline references stay, on conditions:
+Seriously Fish, species pages only, and where FishBase states the same figure
+FishBase carries it; Practical Fishkeeping, named-author articles only and only
+where no peer-reviewed, extension, vet or Seriously Fish source covers the
+claim, never its news items that report a study (cite the study) and never its
+course pages. A claim whose only source was a hobby site stays in the article
+and goes on that species' owner review list. Cost guides carry no "Prices last checked" or "as of"
 line (owner, 2026-10-06): the table component already prints "Typical
 price ranges across retailers." under every
 priced table, and a dated line only ages.
