@@ -45,7 +45,7 @@ export const fishEncyclopedia = [
     id: "cardinal-tetra", name: "Cardinal Tetra", scientific: "Paracheirodon axelrodi",
     category: "Fish", emoji: "🐠", difficulty: "Beginner-Intermediate", guideId: "cardinal-tetra", available: true, image: "/assets/guides/cardinal-tetra.jpg",
     bio: {
-      overview: "The cardinal tetra is a small schooling fish from the blackwater tributaries of the Amazon and Orinoco basins, closely resembling the neon tetra but with its iridescent red stripe running the full length of the body rather than just the rear half. Large numbers are still wild-caught from the Rio Negro each year through community-based fisheries. The trade is often argued to support conservation by giving local communities an economic reason to keep the forest and the river intact, though that claim is contested.",
+      overview: "The cardinal tetra is a small schooling fish from the blackwater tributaries of the Amazon and Orinoco basins, closely resembling the neon tetra but with its iridescent red stripe running the full length of the body rather than just the rear half. Large numbers are still wild-caught from the Rio Negro each year through community-based fisheries. The trade is often argued to support conservation by giving local communities an economic reason to keep the forest and the river intact, though the catch could fall if fishing pressure rises.",
       origin: "Amazon and Orinoco Basins (Brazil, Colombia, Venezuela)",
       habitat: "Blackwater forest streams and tributaries",
       adultSize: "2 inches (5 cm)",
