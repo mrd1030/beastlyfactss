@@ -207,6 +207,9 @@ priced table, and a dated line only ages.
   The checker warns on the phrases (`self-reference`).
 - Articles end on the animal: the last body paragraph is a point, not a
   list of places to go next. One encyclopedia or overview sentence is fine.
+- A health guide's FunFact is never about disease, symptoms or treatment
+  (owner, 2026-11-01): it is a real fact about the animal, sourced like any
+  other claim. Disease material belongs in the body.
 - Navigation-only edits (links added, moved, or removed) and FunFact
   rewrites do not bump lastUpdated or lastReviewed. Only a fact added or
   reviewed does.

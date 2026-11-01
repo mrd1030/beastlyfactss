@@ -51,7 +51,7 @@ export default {
       q: 'The humble pet-store platy is famous in medical research for what?',
       options: ['Regrowing fins', 'Melanoma research going back to the 1920s', 'Producing antivenom', 'Sleeping with one eye open'],
       answer: 1,
-      explain: 'In the 1920s scientists found that crossing platyfish with swordtails produced hybrids that grew melanoma on their own. In the classic backcross about a quarter of the offspring develop invasive melanomas, making these little fish the most venerable experimental melanoma model.',
+      explain: 'In the 1920s scientists found that crossing platyfish with swordtails produced hybrids that grew melanoma on their own. In the classic backcross a fraction of the offspring develop invasive melanomas, making these little fish the most venerable experimental melanoma model.',
       source: { label: 'Lab Stars Since the 1920s', to: '/facts/lab-stars-since-the-1920s/' },
     },
     {

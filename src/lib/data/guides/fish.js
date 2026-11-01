@@ -538,7 +538,7 @@ export const fishGuides = fillCostTokens([
       "A separate bare tank with its own sponge filter, for quarantine",
     ],
     faqs: [
-      { q: "How many cardinal tetras should I keep together?", a: "Ten is the number to plan for, and eight is the least to buy. Cardinals are schooling fish that do best in a large group." },
+      { q: "How many cardinal tetras should I keep together?", a: "Ten is the number to plan for, and eight is the least to buy. Cardinals are schooling fish that do best in a large group. Smaller groups turn pale, hide, and get sick more often from the stress." },
       { q: "Can cardinal tetras get neon tetra disease?", a: "Yes. It is named for the neon, but the microsporidian parasite behind it, Pleistophora hyphessobryconis, affects tetras broadly, along with angelfish, rasboras, barbs, and zebrafish. Watch for restless or erratic swimming, fading or patchy color, visible lumps under the skin, and a curved spine in advanced cases." },
       { q: "What's the non-obvious detail that makes the biggest difference in a cardinal tetra tank?", a: "Blackwater conditions. As driftwood and Indian almond leaves release tannins, the water tints and the pH eases down, which copies the shaded, leaf-strewn streams the fish comes from. Add dense planting and dim light, and color and confidence both improve noticeably." },
     ],

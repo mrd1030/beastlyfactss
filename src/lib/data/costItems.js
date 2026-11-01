@@ -1671,7 +1671,7 @@ export const COST_ITEMS = {
   'molly-aquarium-salt-optional-long': {
     label: "Aquarium salt (optional, long-lasting)",
     spec: "",
-    low: 20, high: 25, product: "aquarium-salt-api-33oz", checked: '2026-10',
+    low: 12, high: 12, product: "aquarium-salt-api-33oz", checked: '2026-10',
   },
   'neon-tetra-gentle-filter': {
     label: "Gentle filter",
