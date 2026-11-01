@@ -615,7 +615,9 @@ export default function GuideDetail() {
                   </table>
                   <div className="text-xs text-muted-foreground font-body mt-3 space-y-1">
                     <p><span className="font-semibold text-foreground">Yes:</span> temperature and pH ranges overlap.</p>
-                    <p><span className="font-semibold text-foreground">Limits:</span> they overlap, but the shared temperature band is under {MIN_BAND_F}°F, so a heater drifting a degree can take one species out of range.</p>
+                    {live.some((a, i) => live.some((b, j) => j > i && verdict([a, b]) === 'Limits')) && (
+                      <p><span className="font-semibold text-foreground">Limits:</span> they overlap, but the shared temperature band is under {MIN_BAND_F}°F, so a heater drifting a degree can take one species out of range.</p>
+                    )}
                     {live.some((a, i) => live.some((b, j) => j > i && verdict([a, b]) === 'No')) && (
                       <p><span className="font-semibold text-foreground">No:</span> the ranges miss, or only meet at a single point.</p>
                     )}
