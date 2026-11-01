@@ -1113,14 +1113,16 @@
           ]
         },
         {
-          "slug": "betta-substrate-caribsea-freshwater-sand",
+          "slug": "sand-seachem-flourite-black-15lb",
           "from": [
-            "Cost guide"
+            "Cost guide",
+            "Setup guide"
           ]
         },
         {
           "slug": "tank-10-gallon",
           "from": [
+            "Cost guide",
             "Health guide",
             "Setup guide"
           ]
@@ -1793,9 +1795,10 @@
           ]
         },
         {
-          "slug": "betta-substrate-caribsea-freshwater-sand",
+          "slug": "sand-seachem-flourite-black-15lb",
           "from": [
-            "Cost guide"
+            "Cost guide",
+            "Setup guide"
           ]
         }
       ],
@@ -3469,7 +3472,6 @@
       "name": "Molly",
       "emoji": "🐠",
       "essentials": [
-        "tank-20-gallon-long",
         "submersible-aquarium-heater",
         "canister-filter",
         "sponge-filter",
@@ -3482,6 +3484,15 @@
         "aquarium-salt-api-33oz"
       ],
       "recommended": [
+        {
+          "slug": "tank-20-gallon-long",
+          "from": [
+            "Cost guide",
+            "Health guide",
+            "Setup guide",
+            "Enrichment guide"
+          ]
+        },
         {
           "slug": "hob-filter-aquaclear-70",
           "from": [
@@ -3670,9 +3681,17 @@
           ]
         },
         {
-          "slug": "betta-substrate-caribsea-freshwater-sand",
+          "slug": "sand-seachem-flourite-black-15lb",
           "from": [
-            "Cost guide"
+            "Cost guide",
+            "Setup guide"
+          ]
+        },
+        {
+          "slug": "tank-10-gallon",
+          "from": [
+            "Cost guide",
+            "Health guide"
           ]
         },
         {
@@ -3681,12 +3700,6 @@
             "Cost guide",
             "Setup guide",
             "Enrichment guide"
-          ]
-        },
-        {
-          "slug": "tank-10-gallon",
-          "from": [
-            "Health guide"
           ]
         }
       ],
@@ -4679,7 +4692,6 @@
       "name": "Swordtail",
       "emoji": "🐠",
       "essentials": [
-        "tank-tetra-29-gallon",
         "glass-lid-aqueon-versa-top-30in",
         "submersible-aquarium-heater",
         "canister-filter",
@@ -4689,10 +4701,9 @@
       ],
       "recommended": [
         {
-          "slug": "tank-20-gallon-long",
+          "slug": "tank-aqueon-40-breeder",
           "from": [
             "Cost guide",
-            "Health guide",
             "Setup guide",
             "Enrichment guide"
           ]
@@ -4709,6 +4720,14 @@
           "slug": "aquarium-plant-anubias-nana-potted",
           "from": [
             "Cost guide",
+            "Enrichment guide"
+          ]
+        },
+        {
+          "slug": "tank-20-gallon-long",
+          "from": [
+            "Health guide",
+            "Setup guide",
             "Enrichment guide"
           ]
         }

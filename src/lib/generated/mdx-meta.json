@@ -12166,7 +12166,7 @@
       },
       {
         "q": "How do I prevent most cardinal tetra health issues?",
-        "a": "Nearly everything treatable on this list traces back to water quality and stability. Half the fish in a 96-hour test died at 1.1 mg/L nitrite, so ammonia and nitrite both need to read zero, which makes confirming a completed nitrogen cycle before stocking the single most useful habit for keeping this species healthy long-term."
+        "a": "Nearly everything treatable on this list traces back to water quality and stability. Half the fish in a 96-hour test died at 1.1 mg/L nitrite, so ammonia and nitrite both need to read zero, which makes confirming a completed nitrogen cycle before stocking the single most important step when the tank is first set up. For every fish added after that, the single most important step is quarantine."
       },
       {
         "q": "Are wild-caught cardinal tetras more likely to get sick?",
@@ -12193,7 +12193,7 @@
     "myth": null,
     "truth": null,
     "sourceCount": 13,
-    "headingCount": 16,
+    "headingCount": 15,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
     "imageHeight": 784
@@ -16350,7 +16350,7 @@
     "title": "Corydoras Enrichment: Sand for the Sifting, Not for the Barbels",
     "seoTitle": "Corydoras Catfish Enrichment Guide",
     "seoDescription": "No study establishes what causes corydoras barbel erosion. Substrate of any kind harbors bacteria. Sand still wins, for the foraging.",
-    "lastUpdated": "2026-09-16",
+    "lastUpdated": "2026-11-01",
     "noIndex": false,
     "excerpt": "Everyone says gravel wears down cory barbels. No study establishes the cause, and substrate of any kind is a documented home for pathogenic bacteria.",
     "date": "2026-09-04",
@@ -16410,7 +16410,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4,
+    "sourceCount": 5,
     "headingCount": 10,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
@@ -16623,7 +16623,7 @@
     "title": "Corydoras Catfish Tank Setup: Substrate Is the Detail That Actually Matters",
     "seoTitle": "Corydoras Catfish Tank Setup Guide",
     "seoDescription": "Corydoras catfish need a 20-gallon long tank, 72-82°F water, and soft sand they can sift with their barbels, kept clean: dirty substrate is the barbel risk.",
-    "lastUpdated": "2026-09-25",
+    "lastUpdated": "2026-11-01",
     "noIndex": false,
     "excerpt": "Corydoras catfish are easy to house well once you get one specific decision right, what's on the bottom of the tank. Everything else about this species' care is fairly standard community-fish practice.",
     "date": "2026-07-27",
@@ -16662,7 +16662,7 @@
       },
       {
         "q": "What substrate is safe for corydoras catfish?",
-        "a": "Soft sand, or smooth, fine, rounded gravel, about 2 inches deep. Sharp or coarse gravel is out, and so are certain specialty planted-tank sands: manufacturers flag some sharp-grained options as unsuitable for bottom-dwellers like cories."
+        "a": "Soft sand, or smooth, fine, rounded gravel, in a thin layer under an inch deep. Sharp or coarse gravel is out, and so are certain specialty planted-tank sands: manufacturers flag some sharp-grained options as unsuitable for bottom-dwellers like cories."
       },
       {
         "q": "Do corydoras catfish need special lighting?",
@@ -16685,7 +16685,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2,
+    "sourceCount": 4,
     "headingCount": 10,
     "ledeMatchesExcerpt": true,
     "imageWidth": 1168,
@@ -37231,7 +37231,7 @@
     "myth": null,
     "truth": null,
     "sourceCount": 9,
-    "headingCount": 17,
+    "headingCount": 16,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
     "imageHeight": 784
@@ -37805,7 +37805,7 @@
     "title": "Oscar Fish Tank Setup: Bigger and More Filtered Than You Expect",
     "seoTitle": "Oscar Fish Tank Setup Guide",
     "seoDescription": "Oscar fish tank setup: the 75-gallon minimum, the heavy-duty filtration a messy cichlid needs, temperature, substrate, water chemistry, and what beginners miss.",
-    "lastUpdated": "2026-09-25",
+    "lastUpdated": "2026-11-01",
     "noIndex": false,
     "excerpt": "Oscars get large and messy, and the setup needs to reflect that from day one, not grow into it gradually.",
     "date": "2026-07-30",
@@ -37844,7 +37844,7 @@
       },
       {
         "q": "What substrate is best for an oscar tank?",
-        "a": "Sand, which oscars enjoy sifting through, or smooth gravel at pea size or larger. Sharp or coarse substrate can injure the mouth of a fish that works the tank floor this much."
+        "a": "Sand, which oscars enjoy sifting through, or smooth gravel too large to swallow. Pea gravel is the size a fish digging through the bottom can swallow. Sharp or coarse substrate can injure the mouth of a fish that works the tank floor this much."
       },
       {
         "q": "What water changes does an oscar tank need?",

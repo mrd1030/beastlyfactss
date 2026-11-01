@@ -59,6 +59,10 @@
     "published": "2026-09-04",
     "updated": "2026-10-06"
   },
+  "livebearers": {
+    "published": "2026-07-18",
+    "updated": "2026-11-01"
+  },
   "tetras": {
     "published": "2026-07-21",
     "updated": "2026-11-01"
@@ -69,7 +73,7 @@
   },
   "betta-fish": {
     "published": "2026-06-16",
-    "updated": "2026-10-31"
+    "updated": "2026-11-01"
   },
   "bristlenose-pleco": {
     "published": "2026-09-04",
@@ -81,7 +85,7 @@
   },
   "corydoras-catfish": {
     "published": "2026-07-27",
-    "updated": "2026-10-06"
+    "updated": "2026-11-01"
   },
   "discus": {
     "published": "2026-09-04",
@@ -93,11 +97,11 @@
   },
   "goldfish": {
     "published": "2026-06-26",
-    "updated": "2026-10-31"
+    "updated": "2026-11-01"
   },
   "guppy": {
     "published": "2026-07-18",
-    "updated": "2026-10-31"
+    "updated": "2026-11-01"
   },
   "koi": {
     "published": "2026-07-28",
@@ -105,7 +109,7 @@
   },
   "molly": {
     "published": "2026-09-04",
-    "updated": "2026-10-06"
+    "updated": "2026-11-01"
   },
   "neon-tetra": {
     "published": "2026-07-21",
@@ -113,15 +117,15 @@
   },
   "oscar": {
     "published": "2026-07-30",
-    "updated": "2026-10-06"
+    "updated": "2026-11-01"
   },
   "platy": {
     "published": "2026-09-04",
-    "updated": "2026-10-06"
+    "updated": "2026-11-01"
   },
   "swordtail": {
     "published": "2026-09-04",
-    "updated": "2026-10-06"
+    "updated": "2026-11-01"
   },
   "zebra-danio": {
     "published": "2026-09-04",

@@ -548,6 +548,7 @@ export const IMAGE_DIMENSIONS = {
   "/assets/guides/leopard-gecko-legal.jpg": { "width": 1168, "height": 784 },
   "/assets/guides/leopard-gecko.jpg": { "width": 1168, "height": 784 },
   "/assets/guides/lion-legal.jpg": { "width": 1168, "height": 784 },
+  "/assets/guides/livebearers.jpg": { "width": 1168, "height": 784 },
   "/assets/guides/lovebird.jpg": { "width": 1280, "height": 720 },
   "/assets/guides/marbled-crayfish-legal.jpg": { "width": 1168, "height": 784 },
   "/assets/guides/marmoset-legal.jpg": { "width": 1168, "height": 784 },
