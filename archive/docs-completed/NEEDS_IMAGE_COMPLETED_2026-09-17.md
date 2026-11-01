@@ -8,6 +8,13 @@ Newest first.
 
 ---
 
+## 2026-11-01: rummy-nose tank setup and handling heroes
+
+`/assets/images/rummy-nose-tetra-{tank-setup,handling}.jpg`, Adobe Firefly
+with GPT Image 2.5 Flare, owner approved, after the Nano Banana 2 versions drew
+the schools as identical copies. 3:2, resized to 1168x784 through mozjpeg at
+quality 80. Recorded in IMAGE_CREDITS.md.
+
 ## 2026-11-01: rummy-nose feeding, health issues and enrichment heroes
 
 `/assets/images/rummy-nose-tetra-{feeding,health-issues,enrichment}.jpg`, Adobe
