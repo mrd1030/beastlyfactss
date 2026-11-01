@@ -12213,7 +12213,7 @@
   {
     "path": "/content/guides/cardinal-tetra-cost-guide.mdx",
     "slug": "cardinal-tetra-cost-guide",
-    "title": "How Much Does Cardinal Tetra Ownership Really Cost?",
+    "title": "How Much Does Cardinal Tetra Ownership Cost?",
     "seoTitle": "Cardinal Tetra Price: $3.30 to $8 Each, $115 to $275 Setup",
     "seoDescription": "Cardinal tetra cost breakdown: $3.30 to $8 per fish, about $35 to $80 for a school of 10, and $115 to $275 for a starter setup on a 20-gallon long tank.",
     "lastUpdated": "2026-10-31",
@@ -12255,7 +12255,7 @@
       },
       {
         "q": "Why do cardinal tetras sometimes cost slightly more than neon tetras?",
-        "a": "More of the cardinal tetra supply has come from a documented wild fishery on Brazil's Rio Negro than from farms, since the species is difficult to breed at commercial scale. Neon tetra is widely bred at hatcheries with much less wild collection, and that difference is part of why cardinal prices sit higher in the budget-tetra range."
+        "a": "A meaningful share of the cardinal tetra supply still comes from a documented wild fishery on Brazil's Rio Negro, since the species is difficult to breed at commercial scale. Neon tetra is widely bred at hatcheries with much less wild collection, and that difference is part of why cardinal prices sit higher in the budget-tetra range."
       },
       {
         "q": "How long do cardinal tetras live, and how does that affect budgeting?",
@@ -12263,7 +12263,6 @@
       }
     ],
     "relatedProducts": [
-      "tank-20-gallon-long",
       "tank-20-gallon-long",
       "submersible-aquarium-heater",
       "sponge-filter",
@@ -12286,12 +12285,12 @@
   {
     "path": "/content/guides/cardinal-tetra-enrichment-guide.mdx",
     "slug": "cardinal-tetra-enrichment-guide",
-    "title": "Cardinal Tetra Enrichment: Most of Them Are Still Wild",
+    "title": "Cardinal Tetra Enrichment: Many Are Still Wild",
     "seoTitle": "Cardinal Tetra Enrichment Guide",
-    "seoDescription": "Most cardinal tetras are wild caught from the Rio Negro. Blackwater conditions and a group of ten are what the fish is built for.",
+    "seoDescription": "A large share of cardinal tetras are wild caught from the Rio Negro. Settle them slowly, keep a group of ten, and give them soft, tannin-stained water.",
     "lastUpdated": "2026-10-31",
     "noIndex": false,
-    "excerpt": "Unlike almost everything else in the shop, most cardinal tetras are caught in the Rio Negro rather than bred. That changes what the first month should look like.",
+    "excerpt": "Unlike almost everything else in the shop, a large share of cardinal tetras are caught in the Rio Negro rather than bred. That changes what the first month should look like.",
     "date": "2026-09-04",
     "category": "Enrichment",
     "categories": [
@@ -12320,7 +12319,7 @@
       },
       {
         "q": "How are cardinals different from neon tetras?",
-        "a": "Larger, more expensive, and considerably more demanding on water. The red stripe runs the full length of the body, where a neon's covers only the back half. They also want softer, warmer, more acidic water than neons tolerate."
+        "a": "Larger, more expensive, and considerably more demanding on water. The red stripe runs the full length of the body, where a neon's covers only the back half. They also want warmer, more acidic water than neons tolerate."
       },
       {
         "q": "How many cardinal tetras are wild caught?",
@@ -12332,7 +12331,7 @@
       },
       {
         "q": "How many should I keep?",
-        "a": "Ten is the number to plan for, following the neon tetra finding and the 8 to 10 usually advised for cardinals. Eight is the least to buy."
+        "a": "Ten is the number to plan for. Eight is the least to buy."
       },
       {
         "q": "What water do they need?",
@@ -12360,10 +12359,10 @@
     "slug": "cardinal-tetra-feeding-guide",
     "title": "Cardinal Tetra Feeding: Schedule, Diet, and the Rule That Prevents an Outbreak",
     "seoTitle": "What Do Cardinal Tetras Eat? Diet and Feeding Schedule",
-    "seoDescription": "Cardinal tetra feeding guide: micro-pellet portions, a twice-daily schedule, and the removal rule that guards against an incurable disease.",
+    "seoDescription": "Cardinal tetra feeding guide: micro-pellet portions, a twice-daily schedule, and the one removal rule that guards the school against an incurable disease.",
     "lastUpdated": "2026-10-31",
     "noIndex": false,
-    "excerpt": "Cardinal tetra feeding is simple in principle, small food in small amounts, but the rule that protects the school has nothing to do with portions: never leave a dead fish in the tank.",
+    "excerpt": "Cardinal tetra feeding is simple in principle: small food in small amounts. But the rule that protects the school has nothing to do with portions: never leave a dead fish in the tank.",
     "date": "2026-09-06",
     "category": "Fish",
     "categories": [
@@ -12401,7 +12400,7 @@
       },
       {
         "q": "What is neon tetra disease and how does feeding relate to it?",
-        "a": "A parasitic infection with no cure, named for the neon but common to cardinals too. It passes on when tankmates nibble a dead or sick fish, so pulling that fish out at once is the only protection."
+        "a": "A parasitic infection with no cure, named for the neon but a risk for cardinals too. It passes on when tankmates nibble a dead or sick fish, so pulling that fish out at once is the only protection."
       },
       {
         "q": "Do cardinal tetras need vitamin supplements?",
@@ -12427,7 +12426,7 @@
     "slug": "cardinal-tetra-handling-guide",
     "title": "Cardinal Tetras Aren't Handled Either, and School Size Is the Rule That Counts",
     "seoTitle": "Handling Cardinal Tetras: School Size Matters",
-    "seoDescription": "Cardinal tetras aren't hand-handled. The real welfare factor is school size, and most sources put the workable minimum at 8 to 10 fish.",
+    "seoDescription": "Cardinal tetras aren't hand-handled. School size is the welfare factor that counts: buy at least eight, plan for ten, and bring them home slowly and dim.",
     "lastUpdated": "2026-10-31",
     "noIndex": false,
     "excerpt": "Cardinal tetras are an observation pet, not a hands-on one. The welfare consideration isn't handling technique, it's group size, and ten is the number to plan for.",
@@ -12491,7 +12490,7 @@
     "slug": "cardinal-tetra-health-issues-guide",
     "title": "Common Cardinal Tetra Health Issues (Including a Disease Named After a Different Fish)",
     "seoTitle": "Cardinal Tetra Health Issues: Signs & Causes",
-    "seoDescription": "Common cardinal tetra health issues: neon tetra disease, ich, fin rot, and swim bladder disorder, with real symptoms, causes, and treatment.",
+    "seoDescription": "Common cardinal tetra health issues: neon tetra disease, ich, fin rot, and swim bladder disorder, with symptoms, causes, treatment, and the water limits.",
     "lastUpdated": "2026-10-31",
     "noIndex": false,
     "excerpt": "Most cardinal tetra health problems are treatable and trace back to water quality. One isn't, and it's named after a different, closely related fish entirely.",
@@ -12535,7 +12534,7 @@
       },
       {
         "q": "How do I prevent most cardinal tetra health issues?",
-        "a": "Nearly everything treatable on this list traces back to water quality and stability. A 2008 study on this exact species found it sensitive to nitrite, so ammonia and nitrite both need to read zero, which makes confirming a completed nitrogen cycle before stocking the single most useful habit for keeping this species healthy long-term."
+        "a": "Nearly everything treatable on this list traces back to water quality and stability. Half the fish in a 96-hour test died at 1.1 mg/L nitrite, so ammonia and nitrite both need to read zero, which makes confirming a completed nitrogen cycle before stocking the single most useful habit for keeping this species healthy long-term."
       }
     ],
     "relatedProducts": [
@@ -12560,7 +12559,7 @@
     "slug": "cardinal-tetra-tank-setup-guide",
     "title": "Cardinal Tetra Tank Setup: Soft Water, Warmer Temps, and a Blackwater Feel",
     "seoTitle": "Cardinal Tetra Tank Setup Guide",
-    "seoDescription": "Cardinal tetra tank setup guide: size, temperature, soft acidic water, gentle filtration, and the blackwater conditions this species evolved in.",
+    "seoDescription": "Cardinal tetra tank setup guide: a 20-gallon long, 77 to 82°F, soft acidic water, gentle filtration, and the blackwater conditions this species evolved in.",
     "lastUpdated": "2026-10-31",
     "noIndex": false,
     "excerpt": "Cardinal tetras come from soft, dim, tannin-stained blackwater streams, the same origin as neon tetra, but they run warmer and want a tank set up right for a school of 10.",
@@ -19147,7 +19146,9 @@
     "truth": null,
     "sourceCount": 5,
     "headingCount": 8,
-    "ledeMatchesExcerpt": false
+    "ledeMatchesExcerpt": false,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/ember-tetra-enrichment-guide.mdx",
@@ -19211,7 +19212,9 @@
     "truth": null,
     "sourceCount": 5,
     "headingCount": 9,
-    "ledeMatchesExcerpt": false
+    "ledeMatchesExcerpt": false,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/ember-tetra-feeding-guide.mdx",
@@ -19276,7 +19279,9 @@
     "truth": null,
     "sourceCount": 5,
     "headingCount": 7,
-    "ledeMatchesExcerpt": false
+    "ledeMatchesExcerpt": false,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/ember-tetra-handling-guide.mdx",
@@ -19342,7 +19347,9 @@
     "truth": null,
     "sourceCount": 5,
     "headingCount": 9,
-    "ledeMatchesExcerpt": false
+    "ledeMatchesExcerpt": false,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/ember-tetra-health-issues-guide.mdx",
@@ -19409,7 +19416,9 @@
     "truth": null,
     "sourceCount": 5,
     "headingCount": 7,
-    "ledeMatchesExcerpt": false
+    "ledeMatchesExcerpt": false,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/ember-tetra-tank-setup-guide.mdx",
@@ -19480,7 +19489,9 @@
     "truth": null,
     "sourceCount": 5,
     "headingCount": 8,
-    "ledeMatchesExcerpt": false
+    "ledeMatchesExcerpt": false,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/emperor-scorpion-cost-guide.mdx",
@@ -37598,7 +37609,7 @@
     "slug": "neon-tetra-enrichment-guide",
     "title": "Neon Tetra Enrichment: Someone Counted, and the Number Is Ten",
     "seoTitle": "Neon Tetra Enrichment Guide",
-    "seoDescription": "A home aquarium study found groups of ten neon tetras showed improved welfare over smaller groups, with less darting and aggression.",
+    "seoDescription": "A home aquarium study found groups of ten neon tetras showed improved welfare over smaller groups, with less darting. Cover and stable water matter too.",
     "lastUpdated": "2026-10-31",
     "noIndex": false,
     "excerpt": "The usual advice is six. A study that measured darting, aggression, shoaling and feeding latency in home aquarium species found ten was better.",
@@ -37630,11 +37641,7 @@
       },
       {
         "q": "So is six enough?",
-        "a": "No. Eight is the least to buy, and ten is better. Groups of ten showed less darting and aggression than smaller ones in the study, so if the tank can hold ten, buy ten."
-      },
-      {
-        "q": "Does every schooling fish need a group of ten?",
-        "a": "No. The same 2010 study found no group size effect on angelfish welfare, so the right number differs by species. For neon tetras, groups of ten showed less darting and aggression than smaller ones."
+        "a": "No. Eight is the least to buy and ten is better, since groups of ten showed less darting and aggression than smaller ones. The right number does differ by species: the same 2010 study found no group size effect on angelfish."
       },
       {
         "q": "Does planting matter as much as numbers?",
@@ -37669,7 +37676,7 @@
     "seoDescription": "Neon tetra feeding: crushed micro-pellets twice daily, and why pulling a dead fish out immediately is the only defense against incurable neon tetra disease.",
     "lastUpdated": "2026-10-31",
     "noIndex": false,
-    "excerpt": "Neon tetra feeding is simple in principle, small food in small amounts, but the one rule that protects the school has nothing to do with portions: never leave a dead fish in the tank.",
+    "excerpt": "Neon tetra feeding is simple in principle: small food in small amounts. But the one rule that protects the school has nothing to do with portions: never leave a dead fish in the tank.",
     "date": "2026-08-13",
     "category": "Fish",
     "categories": [
@@ -37699,11 +37706,11 @@
       },
       {
         "q": "How often should I feed neon tetras?",
-        "a": "Twice a day for adults, morning and evening, only as much as they finish in about 2 to 3 minutes. Fry and juveniles need 3 to 4 small feedings a day until about 6 months old."
+        "a": "Twice a day for adults, morning and evening, only as much as they finish in a couple of minutes."
       },
       {
         "q": "How do I know if I'm overfeeding my neon tetras?",
-        "a": "If food is still visible in the tank after 2 to 3 minutes, you're offering too much. Uneaten food decays and spikes ammonia and nitrite, and neons are sensitive to both."
+        "a": "If food is still visible in the tank after a couple of minutes, you're offering too much. Uneaten food decays and spikes ammonia and nitrite, and neons are sensitive to both."
       },
       {
         "q": "Why do my neon tetras spit out their food?",
@@ -37837,7 +37844,7 @@
       },
       {
         "q": "Is NTD contagious, and can it be cured?",
-        "a": "Yes, highly so. It moves through a tank when fish eat infected tissue, including from one that has already died, and it can reach other species too, cardinal tetras and guppies among them. No cure exists. Once symptoms show, the fish will not recover, and humane euthanasia ends its suffering and protects the rest of the tank. Humans can't catch it."
+        "a": "Yes, highly so. It moves through a tank when fish eat infected tissue, including from one that has already died, and it can reach other species too, guppies, barbs and angelfish among them. No cure exists. Once symptoms show, the fish will not recover, and humane euthanasia ends its suffering and protects the rest of the tank. Humans can't catch it."
       },
       {
         "q": "Is every pale, restless neon a case of NTD?",
@@ -37935,7 +37942,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 5,
+    "sourceCount": 4,
     "headingCount": 10,
     "ledeMatchesExcerpt": true,
     "imageWidth": 1168,
