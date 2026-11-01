@@ -264,10 +264,19 @@ export default function GuideDetail() {
     : truncateDescription(`Complete care guide for ${guide.name} - covering housing, diet, enrichment, and health. Evidence-based advice for ${guide.petType} keepers.`));
   const canonicalUrl = `https://beastlyfacts.com/guides/${guide.id}/`;
 
+  // A species in a group hub (tetras, livebearers) keeps its flat URL, so the
+  // trail states the parent the URL does not: Care Guides > the group hub >
+  // the species. Google may still show the URL path instead; nothing is lost.
+  const groupHub = hubOf[guide.id];
   const crumbs = breadcrumbSchema([
     ['Care Guides', '/guides/'],
+    ...(groupHub ? [[groupHub.name, `/guides/${groupHub.id}/`]] : []),
     [`${guide.name} Care Guide`, `/guides/${guide.id}/`],
   ]);
+  // The back button names where it goes: the group when the reader came from
+  // its page, the guide list otherwise.
+  const backToGroup = groupHub && location.state?.returnTo === `/guides/${groupHub.id}/`;
+  const backLabel = backToGroup ? `Back to ${groupHub.branches.groupName}` : 'Back to Guides';
 
   return (
     <div className="min-h-screen">
@@ -323,7 +332,7 @@ export default function GuideDetail() {
             onClick={handleBack}
             className="inline-flex items-center gap-1.5 text-sm font-body font-semibold text-muted-foreground hover:text-foreground transition-colors p-2 -mx-2 -mt-2"
           >
-            <ArrowLeft className="w-4 h-4" /> Back to Guides
+            <ArrowLeft className="w-4 h-4" /> {backLabel}
           </button>
             <div className="flex-shrink-0 flex items-center gap-2">
               <SaveButton
