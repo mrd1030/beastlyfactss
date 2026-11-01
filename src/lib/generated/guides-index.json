@@ -352,6 +352,15 @@
       "tagline": "The escape artist sled dog that needs a job and a secure fence."
     },
     {
+      "id": "livebearers",
+      "name": "Livebearer Care: The Essentials",
+      "emoji": "🐟",
+      "difficulty": "Beginner",
+      "petType": "Fish",
+      "image": "/assets/guides/livebearers.jpg",
+      "tagline": "The fish that give birth to swimming young, and the four everyone starts with!"
+    },
+    {
       "id": "tetras",
       "name": "Tetra Care: The Essentials",
       "emoji": "🐟",
@@ -457,7 +466,7 @@
       "difficulty": "Beginner",
       "petType": "Fish",
       "image": "/assets/guides/molly.jpg",
-      "tagline": "The easygoing livebearer that shrugs at water most fish would sulk in!"
+      "tagline": "The big, grazing livebearer that thrives in hard, alkaline water and wants its greens!"
     },
     {
       "id": "neon-tetra",
@@ -484,7 +493,7 @@
       "difficulty": "Beginner",
       "petType": "Fish",
       "image": "/assets/guides/platy.jpg",
-      "tagline": "The endlessly colorful beginner livebearer that's about as close to foolproof as fish get!"
+      "tagline": "The endlessly colorful beginner livebearer that thrives when the water is hard enough!"
     },
     {
       "id": "swordtail",
