@@ -8,6 +8,13 @@ Newest first.
 
 ---
 
+## 2026-11-01: glowlight health issues hero
+
+`/assets/images/glowlight-tetra-health-issues.jpg`, Adobe Firefly with Nano
+Banana 2, owner approved: a rack of blank water test tubes with clean
+readings in front of a planted tank, the school soft behind. 3:2, resized to
+1168x784 through mozjpeg at quality 80. Recorded in IMAGE_CREDITS.md.
+
 ## 2026-11-01: glowlight handling hero
 
 `/assets/images/glowlight-tetra-handling.jpg`, Adobe Firefly with Nano Banana
