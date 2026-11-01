@@ -361,6 +361,15 @@
       "image": "/assets/guides/discus.jpg"
     },
     {
+      "id": "ember-tetra",
+      "name": "Ember Tetra",
+      "emoji": "🐠",
+      "category": "Fish",
+      "difficulty": "Beginner",
+      "guideId": "ember-tetra",
+      "image": "/assets/guides/ember-tetra.jpg"
+    },
+    {
       "id": "goldfish",
       "name": "Goldfish",
       "emoji": "🐟",

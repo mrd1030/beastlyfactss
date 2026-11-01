@@ -58,8 +58,11 @@ for (const [guide, sheet] of Object.entries(COST_SHEETS)) {
     const v = sheet[k];
     if (v && (v.length !== 2 || v[0] > v[1])) errors.push(`sheet ${guide}: ${k} must be [low, high]`);
   }
-  const file = path.join('content/guides', `${guide}-cost-guide.mdx`);
-  if (!fs.existsSync(file)) { errors.push(`sheet ${guide}: no ${file}`); continue; }
+  // A cost guide queued in content/_scheduled-* counts: its sheet has to be
+  // in place before the day it moves into content/guides/.
+  const scheduled = fs.readdirSync('content').filter((d) => d.startsWith('_scheduled')).map((d) => path.join('content', d, `${guide}-cost-guide.mdx`));
+  const file = [path.join('content/guides', `${guide}-cost-guide.mdx`), ...scheduled].find((f) => fs.existsSync(f));
+  if (!file) { errors.push(`sheet ${guide}: no content/guides/${guide}-cost-guide.mdx`); continue; }
   if (!fs.readFileSync(file, 'utf8').includes(`<CostTable guide="${guide}" section="necessities"`)) {
     errors.push(`${file}: setup table is not drawn from its sheet (<CostTable guide="${guide}" section="necessities" />)`);
   }
