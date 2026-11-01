@@ -118,7 +118,7 @@ export const scheduledTetraGuides = [
       intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
         { label: "How many", value: "Ten or more, with six the least that counts as a school.", source: "glowlight-tetra-handling-guide" },
-        { label: "Tank size", value: "A base of at least 24 x 15 inches (60 x 38 cm), roughly 18 to 20 gallons, for a school of 10. A 10-gallon holds six at most.", source: "glowlight-tetra-tank-setup-guide" },
+        { label: "Tank size", value: "A base of at least 24 x 15 inches (60 x 38 cm), roughly 18 to 20 gallons, for a school of 10. A 10-gallon falls short of that base.", source: "glowlight-tetra-tank-setup-guide" },
         { label: "Temperature", value: "75 to 82°F (24 to 28°C), held steady with a heater set inside the range. 82°F is the top.", source: "glowlight-tetra-tank-setup-guide" },
         { label: "Water chemistry", value: "pH 5.5 to 7.5 and 2 to 15 dGH. Fish kept on the acidic side of that pH range show more color.", source: "glowlight-tetra-tank-setup-guide" },
         { label: "Cycle first", value: "Cycle the tank fully before the school goes in.", source: "glowlight-tetra-tank-setup-guide" },
@@ -220,7 +220,7 @@ export const scheduledTetraGuides = [
         { label: "Water changes", value: "25 to 30% weekly from the substrate, with conditioned water at tank temperature. Test nitrate first: under 20 ppm the routine is right, past 40 ppm the next change is 50%.", source: "aquarium-water-changes-guide" },
         { label: "Budget", value: "About $4 to $6.50 a fish online, closer to $9 in a local store; twelve come to %%animal:rummy-nose-tetra%% before shipping. Setup roughly %%setup:rummy-nose-tetra%%.", source: "rummy-nose-tetra-cost-guide" },
         { label: "Lifespan", value: "About 5 years in a well-kept tank.", source: "rummy-nose-tetra-cost-guide" },
-        { label: "Adult size", value: "About 1.5 to 2 inches (4 to 5 cm)." },
+        { label: "Adult size", value: "About 2 inches (5 cm)." },
         { label: "Power outage", value: "Oxygen is the threat, not darkness. Unplug the filter rather than letting it sit dead in the water, and keep the surface moving.", source: "aquarium-power-outage-and-transport-guide" },
       ],
     },
