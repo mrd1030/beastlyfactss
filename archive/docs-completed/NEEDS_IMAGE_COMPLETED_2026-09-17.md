@@ -8,6 +8,14 @@ Newest first.
 
 ---
 
+## 2026-11-01: tetras group page head
+
+`/assets/guides/tetras.jpg`, the photo for "Tetra Care: The Essentials". Four
+Nano Banana 2 attempts came back with fish that looked pasted on, or with one
+species only (that one became the rummy-nose hub head); the accepted frame is
+GPT Image 2.5 Flare. It shows cardinal, rummy-nose and black skirt tetras. 3:2,
+resized to 1168x784 through mozjpeg at quality 80. Recorded in IMAGE_CREDITS.md.
+
 ## 2026-11-01: rummy-nose tetra hub head
 
 `/assets/guides/rummy-nose-tetra.jpg`, shared by the hub and the encyclopedia

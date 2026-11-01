@@ -9,6 +9,7 @@ export const fishGuides = fillCostTokens([
     emoji: "🐟",
     difficulty: "Beginner",
     petType: "Fish",
+    image: "/assets/guides/tetras.jpg",
     tagline: "The small schooling fish that share one set of rules and differ on almost every number!",
     seoTitle: "Tetra Care Guide: Schools, Water, and Tankmates",
     seoDescription: "Every tetra needs a school, a cycled tank and soft water, but the numbers change by species. Compare six popular tetras and the rules they all share.",
