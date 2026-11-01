@@ -369,3 +369,80 @@ Current Sources: Cross-generational (PubMed, guppy); ResearchGate guppy harassme
 - Encyclopedia `wildLifespan: "3-5 years"`: replace with "probably 2 to 3 years for the sailfin; males often under a year past maturity" (NEMESIS M6, Florida Museum M10) or "not well documented".
 - Encyclopedia `conservation`: "Least Concern (IUCN, for wild Poecilia sphenops)" is SUPPORTED (FishBase, assessed 22 March 2018); add P. latipinna (Least Concern, 3 February 2019).
 - Encyclopedia `history`: name and Mollien SUPPORTED (ETYFish M11); "1963 revision" PARTLY; "around 1905" and the Schomberg account UNSUPPORTED (Wikipedia only); "at least four wild species" SUPPORTED (USGS M9).
+
+---
+
+## Kept without a source (owner review), 2026-11-01
+
+Added 2026-11-01 after the restore pass. The first correction pass cut these unsupported items; they are back, added as their own sentences next to the corrected wording (the corrected sentences are untouched). Each is UNSUPPORTED or only PARTLY supported by the pages in this file; the reason is "no opened page states it" unless a different reason is given. "Restored" means the old text went back as written. "Restored, figure aligned" means it went back with one figure or word changed to match the correction.
+
+**molly-cost-guide.mdx**
+- The Ongoing Costs table (Flake/pellet food with real vegetable content "$25 - $50", Water conditioner "$10 - $15", Water test kit "$15 - $40"): restored whole in place of the bulleted list, which a mid-pass edit had left with stray table fragments. No source for the figures (research item B18); the cost sheet carries the monthly basis.
+- "A 20-gallon setup's full monthly upkeep, food, conditioner, and electricity combined, commonly lands around $20 to $30." (FAQ and body): restored. Matches the cost sheet's monthly range (20 to 30) and %%monthly:molly%%; no outside source.
+- "Skimping on the plant side of the diet is one of the most common molly-specific mistakes." (body): restored, figure aligned ("real vegetable content" became "plant side" to follow the corrected sentence). No source.
+- "or about $6 a fish in a six-pack" (balloon and lyretail): restored, figure aligned to the corrected $5 to $10 range. Single listings only.
+- "fancier fin shapes tend to need a bit more swimming room" (FunFact): restored. No source.
+- "and a container treats up to 434 gallons, so it is effectively a multi-year supply for one tank" (salt): restored. The 434 figure was not on the PetSmart page opened (research section 13); the price beside it was corrected to $12.
+- "As with most aquarium fish, mollies rarely see a vet in any traditional sense. Most molly health issues, things like ich, fin rot, and the species' well-known 'shimmy,' get managed at home with water quality correction and over-the-counter medication rather than a clinic visit. Dedicated aquatic vets exist but are uncommon and rarely necessary." (Vet Costs): restored, "for a species this hardy" left out. No source for the vet claims (B17).
+- "A typical brood runs roughly 20 to 60 fry, with a documented range as wide as 10 to over 100 depending on the female's age." (body) and "Dozens of fry per brood is common." (FAQ): restored. The range is supported by FishBase, Florida Museum and NEMESIS; "typical 20 to 60" has no source (lab means are 21 to 35).
+- "Mollies get there on a bigger, somewhat pricier setup than a guppy." (Lifespan body and FAQ): restored, "similar range to guppies" left out. No source.
+
+**molly-enrichment-guide.mdx**
+- "Work on Poecilia mexicana also reported that males attempt to mate almost constantly while females are largely non-responsive, so females flee." (FAQ) and the body version "males also attempt to mate almost constantly while females are mostly non-responsive to male approaches, and females flee from this harassment": restored. The wording is not confirmed by anything readable (B20).
+- "The wider guppy literature identifies energy expenditure and reduced foraging ability as direct costs to females.": restored. See the guppy list for the Killen caveat.
+- "Two to three females per male minimum, and more females is better." (body) and "At least two to three, and more females is better." (FAQ): restored. Supported by Practical Fishkeeping and Seriously Fish in substance; the "more is better" wording is the keeper's.
+- "Male mollies squabble among themselves more than male guppies do." (FAQ and body): restored. Squabbling is supported for sailfin males; the guppy comparison is not (B7).
+- "Mollies graze algae and biofilm more or less continuously, and a spotless tank removes most of what a molly does with its day." (FAQ) and "Mollies work surfaces all day." (body): restored. No source.
+- "Mollies have a reputation for being delicate that mostly traces back to being kept in conditions suited to a guppy." (FAQ) and "Most of this species' reputation for being delicate traces to being kept in water suited to a soft-water fish." (body): restored. Consistent with Seriously Fish on soft water; the reputation claim itself is unsourced.
+- "Mollies are big enough that overstocking hits water quality faster than it does with guppies.": restored. Inference from size (B21).
+
+**molly-feeding-guide.mdx**
+- Fry bullet ("...fry are born larger and more developed... Feed small amounts at least 3 to 5 times a day...") and Juveniles bullet ("More frequent, higher-protein feeding than adults..."): restored whole above the corrected "Fry and juveniles" bullet; the same 3 to 5 feedings sentence is in the fry FAQ. No source for the counts (B8); Merck gives only a body-weight ration.
+- "Once or twice a day is the most commonly cited range." (Adults bullet and FAQ) and "Mollies have fast metabolisms and do fine with small, frequent meals rather than one large one.": restored. Merck says "at least daily" (B10).
+- "Rotate in blanched vegetables two to three times a week: zucchini, spinach, cucumber, lettuce, and peas all work well, cut small and left in the tank only long enough to be grazed on." (body), "Blanched zucchini or spinach several times a week suit them." (FAQ), and "Algae wafers and blanched zucchini, spinach, cucumber, lettuce, and peas are safe too." (Safe list): restored. Spinach and lettuce are in Practical Fishkeeping; the frequency, zucchini, cucumber and peas are not (B9).
+- "Pelleted food generally holds its nutritional value better than flake... a quality pellet or algae wafer is often a more reliable staple than flake alone." (FunFact): restored. No source (B11).
+- "This is the single most repeated molly-specific mistake across care sources, and it's tied directly to digestive and bloating problems over time." (Avoid paragraph), the FAQ version, and "Skipping the vegetable side of that diet is the single most common molly-specific feeding mistake." (intro): restored. No source for "most repeated" or the digestive link.
+- "A pregnant female may also eat less in the day or so before giving birth." (FAQ) and list item 4 "Impending birth" (whole): restored. No source (B12).
+- "...overfeeding drives constipation and swim bladder problems directly" (FAQ and closing paragraph), "It is a more common real mistake than underfeeding", and "A guppy tolerates a more protein-leaning diet than a molly does." (with its link to the guppy feeding guide): restored. No source (B13); Seriously Fish ties molly swim bladder trouble to the balloon body shape.
+
+**molly-handling-guide.mdx**
+- "Females have a fuller, rounder body. It's one of the more straightforward sexing calls in the livebearer family." (sexing FAQ): restored. Supported in kind only, from other livebearers.
+- "A typical brood runs roughly 20 to 60 fry, with a documented range as wide as 10 to over 100." (breeding FAQ) and the FunFact version "...depending on the female's age and condition.": restored. Typical figure unsourced. The old gestation "4 to 6 weeks" and "every 4 to 6 weeks" stay out (see below).
+- "Mollies also run larger broods on average." (guppy-comparison FAQ) and "Mollies can also produce noticeably larger broods, so an unmanaged mixed-sex molly tank tends to outgrow itself faster and more dramatically than a guppy tank does." (body): restored. No source (B21).
+- "Male mollies squabble among themselves more than male guppies do." (Managing Population): restored (B7).
+- "A lot of the water-quality-driven stress mollies show, including the shimmy, traces back to that last mistake more than anything else." and "Buying a mixed-sex group with no population plan is the single most common mistake with this species.": restored. No source; Coletti names three shimmy causes.
+
+**molly-health-issues-guide.mdx**
+- Shimmy: "Shimmy signals the fish has lost some nerve and muscle control." / "livebearers, mollies, platies, swordtails, and guppies, are especially prone to it" / "The most commonly cited triggers are low temperature, low pH or mineral hardness, unstable or poor water quality, and chlorine exposure." (body, FAQ) / "Raise the temperature toward the 76 to 80°F range." (treatment): restored (B2, B3). Only soft or acidic water (Seriously Fish) and ammonia and osmotic shock (Coletti) are sourced.
+- "Fancy mollies bred overseas in harder, more mineral-rich water and then sold into soft home tap water seem especially prone to it." (FAQ) and "Much of the fancy-molly supply is bred overseas in harder, more mineral-rich, brackish-leaning water, then shipped and sold into home tanks running softer, more neutral freshwater. That mismatch alone can be enough to trigger shimmy..." (FunFact): restored. PARTLY: Seriously Fish says mass-produced in the Far East; Coletti says osmotic shock from salted farm water; "harder", "mineral-rich" and "brackish-leaning" are not stated.
+- Salt: "one commonly cited hospital-tank dose is 1 tablespoon of aquarium salt per 5 gallons of water" (shimmy treatment): restored. That dose is VCA's ich dose, not a shimmy source (B4). "Salt can harm snails at higher concentrations" (FAQ and body): restored (B5, no source). "Mollies are a brackish-tolerant species, so salt isn't harmful in modest doses the way it would be for many other freshwater fish": restored.
+- "Peer-reviewed research on sailfin mollies shows they can tightly regulate their internal salt and water balance up to roughly 65 parts per thousand, well past typical seawater, with a higher oxygen cost as salinity rises.": restored, figure aligned (Gonzalez 2005 reported oxygen use rising with salinity, so the old "without major physiological stress" gloss is replaced). The Gonzalez source was dropped from this guide's Sources in the swap, so the sentence has no Sources entry here.
+- "Table salt contains iodine and anti-caking agents that aren't meant for aquarium use." (FAQ and body) and "Marine or reef salt mixes contain buffers and trace minerals formulated for full saltwater tanks, so they aren't a substitute for aquarium salt in a freshwater tank.": restored, figure aligned (the old "can harm freshwater fish" is left out, see below). The iodine claim rests on the dropped Tankarium page only (B6).
+- Velvet: "It shows as a fine, gold or rust-colored dusty coating on the body. Symptoms include appetite loss, lethargy, and scratching against decor, and death rates can run high if it isn't caught early. It's contagious between fish, so isolate affected individuals where possible.": restored (B14).
+- Fin rot: "It is bacterial in origin and usually tied to poor water quality, ammonia buildup, or an untreated injury, and improving water quality alongside an antibacterial treatment resolves most cases caught early.": restored (B16).
+- Dropsy: "It's typically the visible endpoint of a systemic Aeromonas bacterial infection, and it's the hardest condition on this list to treat successfully, often carrying a poor outlook by the time it's obvious." (body, FAQ): restored (B15). Merck says only to use antimicrobials if fish are dying.
+- Swim bladder: "Buoyancy problems are also usually from overfeeding or constipation, and are often manageable at home with a short fast and a return to normal, appropriately portioned feeding afterward.": restored (B13).
+
+**molly-tank-setup-guide.mdx**
+- "Use a lid, mollies can jump." (FAQ) and "and use a lid, mollies are capable jumpers" (body): restored (B1).
+- "Temperature instability is one of the more commonly cited triggers behind the molly 'shimmy.'" and "Chlorine exposure specifically is one of the recognized shimmy triggers.": restored (B3).
+- "Cory catfish, danios and loaches also make good company when they share its water and come close to its size.": restored. Seriously Fish lists rainbowfish, catfish, barbs and tetras; danios and loaches have no source.
+- FunFact add-on: "Mollies are one of the more striking examples of it among common aquarium fish, and wild populations turn up in everything from coastal saltwater lagoons to freshwater roadside ditches, sometimes just a short distance apart.": restored. FishBase supports fresh, brackish and marine occurrence; the ditch and lagoon detail is unsourced.
+- Salt: "Salt can also harm snails at higher concentrations." (FAQ and body) and "Salt does show up specifically in shimmy treatment, a commonly cited dose there is 1 tablespoon of aquarium salt per 5 gallons in a hospital tank, but that's a targeted treatment context...": restored (B4, B5).
+- "In a freshwater tank, never use table salt, which contains iodine and anti-caking agents that aren't meant for fish.": restored (B6).
+- "it's among the most common beginner mistakes in the hobby" (cycling FAQ) and "It is one of the most common beginner mistakes in the hobby generally." (body): restored. No source.
+
+**Left out as contradicted (molly)**
+- Lifespan "3 to 5 years on average, and 5 to 7 with excellent water" (no source gives 5 to 7; NEMESIS 2 to 3 for the wild sailfin, PetMD 2 to 5).
+- Gestation "roughly 4 to 6 weeks" and brood interval "every 4 to 6 weeks" (FishBase, NEMESIS, Florida Museum: about 28 days; Hankison: mean 34 to 38 days, range 28 to 64).
+- "Sailfin varieties need 30 gallons or more" and "72 to 82°F" for all mollies (Seriously Fish sailfin aquarium about 23 US gal; sailfin 70 to 79°F).
+- "Bloodworms around three feedings a week" (Practical Fishkeeping: once or twice a week at most).
+- "Lean heavily herbivorous", "primarily algae and plant material" and "the most herbivorous of the common livebearers" for all mollies (Seriously Fish: short-finned molly is an omnivore; only the sailfin is almost exclusively herbivorous).
+- Norton quoted for "adapt to, not demand" (the words are Ted Coletti's in the TFH article).
+- "Mollies are the largest of the common livebearers" and the title phrase "the Biggest Livebearer" (FishBase: swordtail females 16.0 cm against the sailfin's 15.0 cm).
+- "Peaceful, active, and hardy", "widely considered one of the more forgiving species", "a species this hardy" (Seriously Fish: weak and prone to disease when inbred or kept in soft water; Practical Fishkeeping: "somewhat delicate"; sailfins may pick on smaller fish).
+- "Naturally a brackish-water species" (Seriously Fish: can live perfectly well in fresh water if not soft or acidic).
+- Short-fin size "3 to 4.5 inches" (no source above about 4 inches) and balloon and lyretail "$6 to $7" (listings $5 to $10).
+- Marine mix "can harm freshwater fish" and "never" a substitute (Practical Fishkeeping recommends a marine mix for a brackish molly tank); restored only with the "in a freshwater tank" qualifier.
+- Salt "$22" a container (observed $12.48).
+- "without major physiological stress" at 65 ppt (Gonzalez: oxygen use rose with salinity).
