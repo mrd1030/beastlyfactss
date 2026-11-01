@@ -631,3 +631,20 @@ Seems true and useful, but no source found that could be cited:
 - Unsourced items written into the guides anyway (owner review): lighting, juvenile feeding frequency, lifespan.
 - Unsourced items NOT written into the guides: days a tetra can go without food (vacation), heater and light wattages for an electricity estimate, small-fish netting technique where unsourced, and every other new unsourced item from the expansion research. They stay listed in this file.
 - No medication is ever called shrimp-safe.
+
+## Kept without a source (owner review)
+
+From the 2026-11-01 rewrite of the six ember guides. "In research" means a source exists in this file but is not in that guide's Sources block (block cap).
+
+- Feeding: juvenile frequency, two to three small meals a day (owner-approved; the only figure found was 3 to 4, from a weak hobby blog). (also elsewhere: no)
+- Feeding: the vacation steps (pre-portioned meals in a pill organizer, show the sitter once, leave your number, test an automatic feeder for several days). Owner-approved. (also elsewhere: no)
+- Feeding: "once or twice a day", flake and granules, cyclops as a food (Fishkeeper and Aquarium Source dropped from the block; claims kept). (also elsewhere: yes)
+- Feeding: uneaten food breaks down into ammonia; fry portions "cleared before the next meal". (also elsewhere: yes)
+- Tank setup: lighting hours (owner-approved). (also elsewhere: no)
+- Tank setup: neon 70 to 77°F and cardinal 86°F comparisons; "one of the two safe ways to stock". (also elsewhere: yes)
+- Tank setup, in research but not in the block: capped soil (S55), fin nippers (S40, S41), aquasoil (S58), new tank syndrome (S32), shrimplets hiding and "not known as fin nippers" (S10, weak), the Aruana field site (S6).
+- Cost: the 75°F floor of 75 to 82°F (FishBase dropped from the block; Seriously Fish gives 68 to 82); the small-mouth slow-sinking food line and the 5 gallon nano mention (Co-Op dropped); the $2.50 to $3.50 fish price (retailer observation); lifespan 2 to 4 years (hobby tier only). (also elsewhere: yes)
+- Handling: the neon group-size study line; the 30-day quarantine figure (VCA not in this block); "running for a while since" after cycling. (also elsewhere: yes)
+- Health: "overfeeding brings a run of health problems"; "a dull ember usually means its care slipped"; the closing line. (also elsewhere: no)
+- Enrichment: "the embers lose" (betta); the closing paragraph. (also elsewhere: no)
+- Removed in review as unsourced new additions (retailer observations marked do not cite): "overnight shipping can come to about as much as the school itself" and "shipping is charged per order" in the cost guide.
