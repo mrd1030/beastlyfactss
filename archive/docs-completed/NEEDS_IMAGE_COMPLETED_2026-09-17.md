@@ -8,6 +8,14 @@ Newest first.
 
 ---
 
+## 2026-11-01: glowlight cost hero
+
+`/assets/images/glowlight-tetra-cost.jpg`, Adobe Firefly with Nano Banana 2,
+owner approved on the second try (the first put printing on the heater and
+readable book spines in frame): a 20-gallon on a stand against the wall with
+sponge filters, heater and light showing. 3:2, resized to 1168x784 through
+mozjpeg at quality 80. Recorded in IMAGE_CREDITS.md.
+
 ## 2026-11-01: glowlight hub head
 
 `/assets/guides/glowlight-tetra.jpg`, shared by the hub and the encyclopedia
