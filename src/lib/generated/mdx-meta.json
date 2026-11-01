@@ -36771,6 +36771,10 @@
         "a": "Low. The monthly total is food, water conditioner, and a little electricity for the heater and filter, modest for a planted community tank this size."
       },
       {
+        "q": "How long do neon tetras live?",
+        "a": "About 5 years with good, stable care. In average conditions they often live closer to 2 to 3 years, since lifespan here leans on water stability more than it does in some hardier fish."
+      },
+      {
         "q": "What keeps neon tetras going once they are home?",
         "a": "Good water and a varied diet. That is why the budget goes to the filter, heater, test kit and water conditioner more than to the fish themselves."
       },
@@ -36794,7 +36798,7 @@
     "myth": null,
     "truth": null,
     "sourceCount": 5,
-    "headingCount": 8,
+    "headingCount": 9,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
     "imageHeight": 784

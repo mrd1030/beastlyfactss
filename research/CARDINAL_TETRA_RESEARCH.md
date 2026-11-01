@@ -237,3 +237,12 @@ Current Sources: Seriously Fish; Practical Fishkeeping; Acta Amazonica; Sanchez-
 - PeerJ C5: keep for "blackwater, ion-poor, acidic."
 - Dim light: Linhares C4 (add).
 - Weekly 25 to 30% change, nitrate thresholds: no cardinal source; belongs to the general water change guide.
+
+## Kept without a source (owner review), 2026-11-01
+
+Added 2026-11-01 after the restore pass. The first fact-check passes cut the item below with no source contradicting it; it is put back verbatim at its old spot (owner rule: fact-check passes never drop content). Lines the corrections and the Fable regrades changed were left as corrected.
+
+**cardinal-tetra-cost-guide.mdx**
+- "The cardinal tetra also shows up alongside the zebra danio, bristlenose pleco, and discus in [Four Fish, Four Completely Different Difficulty Levels](/blog/zebra-danio-bristlenose-pleco-discus-cardinal-tetra-overview/)." Restored. A cross-reference to a sibling overview, not a factual claim, so no source applies; it sits after the "Why the School Sets the Bill" paragraph, as it did under the old heading.
+
+Not restored: the other cardinal guides had no pure removals. Their cuts (for example the dry-season stranding cause, "30 to 60 days" quarantine, the "contested" wording and the color-from-cover lines) sit inside lines the corrections changed and stay as corrected.

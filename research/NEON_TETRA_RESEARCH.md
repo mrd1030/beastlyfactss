@@ -272,3 +272,19 @@ Current Sources: Ocean Action Hub; Fishstores; Aquarium Source.
 - Quarantine 30 days: UF/IFAS N7.
 - Lighting hours, dark substrate, tannin "better color and confidence" FunFact: no neon source. Cardinal tannin and light evidence cannot be borrowed as neon fact without saying so.
 - Gentle flow: no opened neon source.
+
+## Kept without a source (owner review), 2026-11-01
+
+Added 2026-11-01 after the restore pass. The first fact-check passes cut the items below with no source contradicting them; they are put back verbatim at their old spots (owner rule: fact-check passes never drop content). Each is UNSUPPORTED: no page opened in this file states it. Lines the corrections and the Fable regrades changed were left as corrected.
+
+**neon-tetra-cost-guide.mdx**
+- "## Lifespan" section, restored: "Around 5 years is achievable with good, stable care, though average conditions often see neon tetras live closer to 2 to 3 years. Water stability matters more for lifespan in this species than in some hardier fish ... A guppy averages 2 to 3 years and up to 4 or 5 with excellent care ..." No authoritative neon lifespan found (see Gaps, section 3); the "leans on stable water" reasoning and the guppy comparison are also unsourced.
+- FAQ "How long do neon tetras live?" ("About 5 years with good, stable care. In average conditions they often live closer to 2 to 3 years ..."), restored beside the corrected FAQ that replaced it. Same reason as the Lifespan section.
+
+**neon-tetra-enrichment-guide.mdx**
+- "The visible result is color. A neon tetra that feels covered is a brighter fish than one that feels exposed, which makes this the rare welfare improvement you can see immediately." Restored. No neon source for dim light or cover brightening color; the only light-and-color study found is on cardinal tetras (Linhares 2018) and must not be stated as neon fact.
+
+**neon-tetra-health-issues-guide.mdx**
+- FunFact block "NTD is easy to misidentify. It gets mistaken for columnaris and costia, because all three can put a whitish film over the fish, but in NTD the film forms under the skin, not on top of it. Confirming it takes a microscope with good lenses, and the spores turn up in muscle, liver and spleen." Restored. Columnaris as a lookalike is supported (Seriously Fish: columnaris "can mimic NTD"); costia, the film "under the skin" and spores in "liver and spleen" were not found in any opened source (Merck and Sanders say skeletal muscle).
+
+Not restored: the neon feeding, handling and tank-setup guides had no pure removals. Their cuts sit inside lines the corrections changed (for example the fry feeding schedule, "1 to 2mm" mouths and the darker-substrate line) and stay as corrected.
