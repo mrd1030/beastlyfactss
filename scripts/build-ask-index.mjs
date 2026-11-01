@@ -31,6 +31,7 @@ import { resolveCostTokens, costTableText } from '../src/lib/costs.js';
 import { facts } from '../src/lib/data/facts.js';
 import { FACT_SOURCES } from '../src/lib/data/factSources.js';
 import { CATEGORIES as GLOSSARY } from '../src/lib/data/glossaryTerms.js';
+import { SEARCH_ALIASES } from '../src/lib/data/searchAliases.js';
 import { mammalBeastfiles } from '../src/lib/data/beastlypedia/mammals.js';
 import { reptileBeastfiles } from '../src/lib/data/beastlypedia/reptiles.js';
 import { amphibianBeastfiles } from '../src/lib/data/beastlypedia/amphibians.js';
@@ -69,6 +70,12 @@ const guidesIndex = JSON.parse(
 const guidesById = [...guidesIndex].sort((a, b) => b.id.length - a.id.length);
 const guideNames = new Map(guidesIndex.map((g) => [g.name.toLowerCase(), g.name]));
 
+const guideNameById = new Map(guidesIndex.map((g) => [g.id, g.name]));
+
+// The species an article is about: a care guide id at the front of its slug,
+// then a tag that is a care guide name, then its `animal` field (mapped to the
+// guide name when it is written as a guide id). Topic tags ("Legal", "UVB",
+// "Christmas") never count, so an article with none of these has no species.
 function speciesFor(fm) {
   const slug = fm.slug || '';
   for (const g of guidesById) {
@@ -78,7 +85,8 @@ function speciesFor(fm) {
     const hit = guideNames.get(String(tag).toLowerCase());
     if (hit) return hit;
   }
-  return fm.animal || (fm.tags && fm.tags[0]) || null;
+  if (fm.animal) return guideNameById.get(String(fm.animal)) || String(fm.animal);
+  return null;
 }
 
 // ---------------------------------------------------------------- MDX to text
@@ -402,8 +410,32 @@ chunks.forEach((c, i) => {
   c.words = wordCount(c.text);
 });
 
+// Lookup data the worker reads from ask_meta, since it cannot import modules:
+//   aliases   SEARCH_ALIASES, nickname -> canonical name
+//   species   every species a chunk carries, with its care guide id when it has
+//             one (the UI pulls that hub's emergency card)
+//   states    the legal matrix jurisdictions, name -> /exotic-pet-laws/state/<slug>/
+//   legal     the legal matrix animals, for /exotic-pet-laws/<id>/
+const LEGAL = JSON.parse(fs.readFileSync(path.join(ROOT, 'src/lib/data/legalStatus.json'), 'utf8'));
+const stateSlug = (name) => name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+const guideIdByName = new Map(guidesIndex.map((g) => [g.name.toLowerCase(), g.id]));
+const speciesNames = [...new Set(chunks.map((c) => c.species).filter(Boolean))];
+const meta = {
+  aliases: SEARCH_ALIASES,
+  species: speciesNames
+    .map((name) => ({ name, guideId: guideIdByName.get(name.toLowerCase()) || null }))
+    .sort((a, b) => b.name.length - a.name.length),
+  states: Object.values(LEGAL.jurisdictions)
+    .map((j) => ({ name: j.name, slug: stateSlug(j.name) }))
+    .sort((a, b) => b.name.length - a.name.length),
+  legal: Object.entries(LEGAL.animals)
+    .map(([id, a]) => ({ id, name: a.name, article: a.article || null }))
+    .sort((a, b) => b.name.length - a.name.length),
+};
+
 fs.mkdirSync(OUT_DIR, { recursive: true });
 fs.writeFileSync(OUT_FILE, JSON.stringify(chunks));
+fs.writeFileSync(path.join(OUT_DIR, 'meta.json'), JSON.stringify(meta));
 
 // ---------------------------------------------------------------- report
 
@@ -415,6 +447,7 @@ for (const [type, n] of Object.entries(byType).sort((a, b) => b[1] - a[1])) {
 }
 const totalWords = chunks.reduce((s, c) => s + c.words, 0);
 console.log(`  total words   ${totalWords}`);
+console.log(`  meta          ${Object.keys(meta.aliases).length} aliases, ${meta.species.length} species, ${meta.states.length} jurisdictions, ${meta.legal.length} legal animals`);
 console.log('5 largest chunks:');
 for (const c of [...chunks].sort((a, b) => b.words - a.words).slice(0, 5)) {
   console.log(`  ${String(c.words).padStart(5)} words  ${c.type}  ${c.url}  ${c.heading}`);

@@ -1304,9 +1304,363 @@ async function handleCarePackageStore(request, env, pathname) {
   return storeJson({ error: 'Not found.' }, 404);
 }
 
+// ===========================================================================
+// Ask Beastly: POST /api/ask  (docs/ASK_BEASTLY.md)
+// ===========================================================================
+// A reader question answered ONLY from our own content. The search index is
+// the ask-index D1 database (binding ASK_DB), loaded at build time by
+// scripts/load-ask-index.mjs: chunks_a / chunks_b with FTS5 tables, and
+// ask_meta naming the live slot plus the lookups this file cannot import
+// (searchAliases.js, the species list, the legal matrix jurisdictions).
+//
+// Order of checks, cheapest first, and none of them ever shows the reader an
+// error: anything that is not an answer comes back as a result the page
+// handles by showing the plain search results it already has.
+//   1. Turnstile (TURNSTILE_SECRET_KEY, same as the contact form)
+//   2. 5 questions per visitor per hour (ASK_KV; the visitor key is a hash of
+//      the IP and the Eastern date, and the IP itself is never stored)
+//   3. legal questions never reach the model: link the legal pages instead
+//   4. search; a weak best match returns no_match without calling the model
+//   5. 300 answers per day (ASK_KV, resets at midnight Eastern)
+//   6. the model call (step 4 of the build)
+
+const ASK = {
+  maxQuestion: 300,
+  perVisitorPerHour: 5,
+  answersPerDay: 300,
+  candidates: 40,
+  topK: 4,
+  tokenBudget: 3000,
+  tokensPerWord: 1.35,
+  // A best match must clear both to count. Tuned against the reader test.
+  minScore: 4,
+  minCoverage: 0.5,
+  // With no animal named there is nothing to anchor the search, so more of
+  // the question has to be in the chunk.
+  minCoverageNoSpecies: 0.67,
+};
+
+const ASK_STOPWORDS = new Set((
+  'a about after again all am an and any are as at be because been before being below between both but by can ' +
+  'could did do does doing down during each few for from further had has have having he her here hers him his how ' +
+  'i if in into is it its itself just me more most my myself no nor not now of off on once only or other our ours ' +
+  'out over own same she should so some such than that the their theirs them then there these they this those ' +
+  'through to too under until up very was we were what when where which while who whom why will with would you ' +
+  'your yours yourself im ive id dont doesnt isnt cant wont thing things get got getting really much many lot ' +
+  'pet pets ok okay need want know tell please one ones also best good ideal right proper stop start make way ways'
+).split(' '));
+
+// Care words: when the question has one, guide sections outrank fact cards.
+// Words readers use for the same thing the guides call something else. A
+// question word matches its whole group, in the search and in coverage.
+const ASK_SYNONYMS = [
+  ['tank', 'enclosure', 'cage', 'terrarium', 'vivarium', 'habitat', 'aquarium'],
+  ['eat', 'eating', 'feed', 'feeding', 'food', 'diet', 'appetite'],
+  ['cost', 'price', 'expensive', 'cheap', 'budget'],
+  ['temperature', 'temp', 'heat', 'warm', 'basking'],
+  ['sick', 'ill', 'illness', 'disease', 'symptoms'],
+  ['big', 'size', 'large', 'length'],
+  ['live', 'lifespan', 'old', 'age'],
+];
+const ASK_SYNONYM_OF = new Map(ASK_SYNONYMS.flatMap((g) => g.map((w) => [w, g])));
+
+// Care guides are split by topic (cost / feeding / handling / health / tank
+// setup / enrichment), so a question about one topic should favor that guide.
+const ASK_GUIDE_TOPICS = [
+  [/\b(tank\w*|enclosure\w*|cage\w*|terrarium|vivarium|aquarium|setup|set up|temperature\w*|temp|heat\w*|basking|humid\w*|lamp\w*|uvb|light\w*|substrate|bedding|clean\w*)\b/, 'tank-setup'],
+  [/\b(eat\w*|feed\w*|fed|food\w*|diet|treat\w*|appetite)\b/, 'feeding'],
+  [/\b(cost\w*|price\w*|expensive|cheap|budget|afford\w*)\b/, 'cost'],
+  [/\b(sick\w*|ill|illness|disease\w*|vet|symptom\w*|infection\w*|parasite\w*|swollen|letharg\w*)\b/, 'health'],
+  [/\b(handl\w*|hold\w*|pick\w* up|bite\w*|biting|tame|taming)\b/, 'handling'],
+  [/\b(enrich\w*|bored\w*|toy\w*|play\w*)\b/, 'enrichment'],
+];
+
+const ASK_CARE_RE = /\b(feed\w*|fed|food|foods|eat\w*|diet|tank\w*|enclosure\w*|cage\w*|setup|set up|habitat|vivarium|terrarium|aquarium|sick\w*|ill|illness|disease\w*|vet|vets|health\w*|symptom\w*|temperature\w*|temp|temps|heat\w*|humid\w*|lamp\w*|uvb|light\w*|cost\w*|price\w*|expensive|cheap|budget|substrate|bedding|clean\w*|handl\w*)\b/;
+const ASK_LEGAL_RE = /\b(legal|illegal|legally|allowed to (own|have|keep|buy)|permit|permits|permitted|licen[cs]e\w*|banned|outlawed|laws?)\b/;
+// Health words in the question or the sources sent turn on the emergency card.
+const ASK_HEALTH_RE = /\b(not eating|won'?t eat|stopped eating|refus\w* (to eat|food)|letharg\w*|bleed\w*|prolaps\w*|swollen|swelling|breathing|gasping|wheez\w*|seizure\w*|convuls\w*)\b/;
+
+function easternDate(now = new Date()) {
+  return new Intl.DateTimeFormat('en-CA', { timeZone: 'America/New_York' }).format(now);
+}
+
+async function sha256Hex(text) {
+  const buf = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(text));
+  return [...new Uint8Array(buf)].map((b) => b.toString(16).padStart(2, '0')).join('');
+}
+
+const escapeRe = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+
+// Lookups change only when a build loads a new slot, so one isolate keeps
+// them for a few minutes instead of reading ask_meta on every question.
+let askMetaCache = null;
+async function askMeta(db) {
+  if (askMetaCache && Date.now() - askMetaCache.at < 300000) return askMetaCache;
+  const { results } = await db.prepare('SELECT key, value FROM ask_meta').all();
+  const m = Object.fromEntries(results.map((r) => [r.key, r.value]));
+  if (m.slot !== 'a' && m.slot !== 'b') throw new Error('ask index has no live slot');
+  const parse = (v, fallback) => { try { return JSON.parse(v); } catch { return fallback; } };
+  const aliases = Object.entries(parse(m.aliases, {})).sort((x, y) => y[0].length - x[0].length);
+  askMetaCache = {
+    at: Date.now(),
+    slot: m.slot,
+    aliases: aliases.map(([from, to]) => [new RegExp(`\\b${escapeRe(from)}\\b`, 'g'), to.toLowerCase()]),
+    species: parse(m.species, []),
+    states: parse(m.states, []),
+    legal: parse(m.legal, []),
+  };
+  return askMetaCache;
+}
+
+function askNormalize(text) {
+  return String(text)
+    .toLowerCase()
+    .replace(/[‘’]/g, "'")
+    .replace(/[^a-z0-9'\- ]+/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+// First name in `list` (longest first) found as whole words in q, plural ok.
+function askFindName(q, list) {
+  for (const item of list) {
+    const name = item.name.toLowerCase();
+    if (new RegExp(`\\b${escapeRe(name)}(e?s)?\\b`).test(q)) return item;
+  }
+  return null;
+}
+
+// Legal questions get links, never a model summary: the matrix cells change
+// monthly and quote statutes.
+function askLegalLinks(q, meta) {
+  const links = [];
+  const state = askFindName(q, meta.states);
+  const animal = askFindName(q, meta.legal);
+  if (state) links.push({ title: `${state.name} exotic pet laws`, url: `/exotic-pet-laws/state/${state.slug}/` });
+  if (animal) {
+    links.push({ title: `${animal.name} laws in every state`, url: `/exotic-pet-laws/${animal.id}/` });
+    if (animal.article) links.push({ title: `Is a ${animal.name.toLowerCase()} legal? The full guide`, url: animal.article });
+  }
+  if (!links.length) links.push({ title: 'Exotic pet laws by state', url: '/exotic-pet-laws/' });
+  return links;
+}
+
+// A rough stem for the coverage check, close enough to the index's porter
+// stemming that "biting" finds "bite" and "feeding" finds "feed".
+const askStem = (t) => {
+  const base = t.length > 4 ? t.replace(/(ing|ed|es|s)$/, '') : t;
+  return base.slice(0, 5);
+};
+
+// Finds the chunks that answer q. Returns { chunks, species, best } where
+// chunks is empty when the best match is too weak to send anywhere.
+async function askRetrieve(db, question) {
+  const meta = await askMeta(db);
+  let q = askNormalize(question);
+  for (const [re, to] of meta.aliases) q = q.replace(re, to);
+
+  const species = askFindName(q, meta.species);
+  const speciesWords = new Set(species ? askNormalize(species.name).split(/[\s-]+/) : []);
+  const tokens = [...new Set(
+    q.split(/[\s-]+/).map((t) => t.replace(/'s$|'/g, '')).filter((t) => t.length > 1 && !ASK_STOPWORDS.has(t)),
+  )];
+  if (!tokens.length) return { chunks: [], species, best: null, legal: false, meta, q };
+
+  const legal = ASK_LEGAL_RE.test(q);
+  const table = `chunks_${meta.slot}`;
+  const fts = `${table}_fts`;
+  // With a species named, the species filter does that work, so only the
+  // question's other words are matched, and only against title, heading and
+  // text; otherwise every chunk about the animal ranks on its name alone.
+  const content = tokens.filter((t) => !speciesWords.has(t));
+  const expand = (list) => [...new Set(list.flatMap((t) => ASK_SYNONYM_OF.get(t) || [t]))];
+  const quote = (list) => expand(list).map((t) => `"${t.replace(/"/g, '')}"`).join(' OR ');
+  const speciesMatch = content.length ? `{title heading text} : (${quote(content)})` : quote(tokens);
+  const match = quote(tokens);
+  const sql = `SELECT c.id, c.slug, c.title, c.heading, c.url, c.species, c.type, c.text, c.words,
+      bm25(${fts}, 4.0, 4.0, 3.0, 1.0) AS rank
+    FROM ${fts} JOIN ${table} c ON c.id = ${fts}.rowid
+    WHERE ${fts} MATCH ?1 AND c.type != 'legal' __SPECIES__
+    ORDER BY rank LIMIT ${ASK.candidates}`;
+  let rows = [];
+  if (species) {
+    // "Tortoise" also reaches "Sulcata Tortoise" and "Russian Tortoise".
+    const filter = "AND (c.species = ?2 OR c.species LIKE '% ' || ?2)";
+    rows = (await db.prepare(sql.replace('__SPECIES__', filter)).bind(speciesMatch, species.name).all()).results;
+  }
+  if (!rows.length) rows = (await db.prepare(sql.replace('__SPECIES__', '')).bind(match).all()).results;
+
+  // Coverage: the share of the question's own words (not the species name)
+  // that a chunk contains, matched on a short stem.
+  const care = ASK_CARE_RE.test(q);
+  const topics = ASK_GUIDE_TOPICS.filter(([re]) => re.test(q)).map(([, suffix]) => suffix);
+  const scored = rows.map((r) => {
+    const has = (text) => (t) => (ASK_SYNONYM_OF.get(t) || [t]).some((v) => text.includes(askStem(v)));
+    const hay = `${r.title} ${r.heading} ${r.text}`.toLowerCase();
+    const coverage = content.length ? content.filter(has(hay)).length / content.length : 1;
+    // A section whose heading names what was asked is usually the answer.
+    const heading = (r.heading || '').toLowerCase();
+    const headingCoverage = content.length && heading ? content.filter(has(heading)).length / content.length : 0;
+    let boost = 1;
+    if (care) boost = r.type === 'guide' || r.type === 'faq' ? 1.3 : r.type === 'fact' ? 0.6 : 0.85;
+    if (topics.some((t) => r.slug.includes(`-${t}`))) boost *= 1.6;
+    return { ...r, coverage, score: -r.rank * (0.5 + coverage) * (1 + 0.5 * headingCoverage) * boost };
+  }).sort((a, b) => b.score - a.score);
+
+  const best = scored[0] || null;
+  const minCoverage = species ? ASK.minCoverage : ASK.minCoverageNoSpecies;
+  if (!best || best.coverage < minCoverage || best.score < ASK.minScore) {
+    return { chunks: [], species, best, legal, meta, q };
+  }
+  const chunks = [];
+  let budget = ASK.tokenBudget;
+  for (const r of scored) {
+    const cost = Math.ceil((r.words || 0) * ASK.tokensPerWord);
+    if (cost > budget && chunks.length) continue;
+    chunks.push(r);
+    budget -= cost;
+    if (chunks.length === ASK.topK) break;
+  }
+  return { chunks, species, best, legal, meta, q, ranked: scored.slice(0, 8) };
+}
+
+async function askLimit(env, request) {
+  if (!env.ASK_KV) return { ok: true };
+  const ip = request.headers.get('cf-connecting-ip') || 'unknown';
+  const day = easternDate();
+  const visitor = (await sha256Hex(`${ip}|${day}`)).slice(0, 24);
+  const hour = Math.floor(Date.now() / 3600000);
+  const key = `ask:v:${visitor}:${hour}`;
+  const used = Number(await env.ASK_KV.get(key)) || 0;
+  if (used >= ASK.perVisitorPerHour) return { ok: false };
+  await env.ASK_KV.put(key, String(used + 1), { expirationTtl: 3700 });
+  return { ok: true };
+}
+
+const askDayKey = () => `ask:day:${easternDate()}`;
+async function askDailyUsed(env) {
+  if (!env.ASK_KV) return 0;
+  return Number(await env.ASK_KV.get(askDayKey())) || 0;
+}
+async function askCountAnswer(env) {
+  if (!env.ASK_KV) return;
+  const used = await askDailyUsed(env);
+  await env.ASK_KV.put(askDayKey(), String(used + 1), { expirationTtl: 172800 });
+}
+
+async function askVerifyTurnstile(env, request, token) {
+  if (!env?.TURNSTILE_SECRET_KEY) return true;
+  if (!token) return false;
+  try {
+    const form = new FormData();
+    form.append('secret', env.TURNSTILE_SECRET_KEY);
+    form.append('response', token);
+    const ip = request.headers.get('cf-connecting-ip');
+    if (ip) form.append('remoteip', ip);
+    const res = await fetch('https://challenges.cloudflare.com/turnstile/v0/siteverify', { method: 'POST', body: form });
+    const out = await res.json().catch(() => null);
+    return !(out && out.success === false);
+  } catch {
+    return true; // siteverify unreachable: the per-visitor limit still holds
+  }
+}
+
+async function handleAsk(request, env, ctx) {
+  if (request.method !== 'POST') return storeJson({ error: 'Method not allowed.' }, 405);
+  const quiet = (result, extra = {}) => storeJson({ result, answer: '', links: [], emergency: false, ...extra });
+
+  let body;
+  try {
+    body = await request.json();
+  } catch {
+    return quiet('unavailable');
+  }
+  const question = String(body?.question || '').replace(/\s+/g, ' ').trim().slice(0, ASK.maxQuestion);
+  if (question.length < 3) return quiet('unavailable');
+  if (!env.ASK_DB) return quiet('unavailable');
+
+  if (!(await askVerifyTurnstile(env, request, String(body?.captcha || '')))) return quiet('unavailable');
+
+  const log = (result, slugs = []) => askLog(env, ctx, question, slugs, result);
+
+  if (!(await askLimit(env, request)).ok) {
+    log('capped');
+    return quiet('capped');
+  }
+
+  let found;
+  try {
+    found = await askRetrieve(env.ASK_DB, question);
+  } catch {
+    return quiet('unavailable');
+  }
+
+  const species = found.species
+    ? { name: found.species.name, guideId: found.species.guideId || null }
+    : null;
+
+  if (found.legal) {
+    log('legal');
+    return storeJson({ result: 'legal', answer: '', links: askLegalLinks(found.q, found.meta), emergency: false, species });
+  }
+
+  if (!found.chunks.length) {
+    log('no_match', found.best ? [found.best.slug] : []);
+    return quiet('no_match', { species });
+  }
+
+  const slugs = [...new Set(found.chunks.map((c) => c.slug))];
+  const emergency = ASK_HEALTH_RE.test(found.q) || found.chunks.some((c) => ASK_HEALTH_RE.test(c.text.toLowerCase()));
+
+  if ((await askDailyUsed(env)) >= ASK.answersPerDay) {
+    log('capped', slugs);
+    return quiet('capped', { species, emergency });
+  }
+
+  // Step 4 replaces this with the model call. Until then a match returns the
+  // matched pages as links so the route can be tested end to end.
+  log('no_match', slugs);
+  return storeJson({
+    result: 'sources',
+    answer: '',
+    links: askLinks(found.chunks),
+    emergency,
+    species,
+  });
+}
+
+// One link per page, in the order the chunks ranked.
+function askLinks(chunks, first = null) {
+  const ordered = first ? [first, ...chunks.filter((c) => c !== first)] : chunks;
+  const seen = new Set();
+  const links = [];
+  for (const c of ordered) {
+    if (seen.has(c.slug)) continue;
+    seen.add(c.slug);
+    links.push({ title: c.title, url: c.url });
+  }
+  return links.slice(0, 3);
+}
+
+// Every request goes to Supabase ask_log: the question, the slugs matched and
+// the result. No IP address, no visitor key. Never blocks or breaks the reply.
+function askLog(env, ctx, question, matchedSlugs, result) {
+  if (!hasSupabaseEnv(env)) return;
+  const write = supabaseFetch(env, '/rest/v1/ask_log', {
+    method: 'POST',
+    headers: { Prefer: 'return=minimal' },
+    body: JSON.stringify({ question, matched_slugs: matchedSlugs, result }),
+  }).catch(() => {});
+  if (ctx?.waitUntil) ctx.waitUntil(write);
+}
+
 export default {
   async fetch(request, env, ctx) {
     const { pathname } = new URL(request.url);
+
+    if (pathname === '/api/ask' || pathname === '/api/ask/') {
+      return handleAsk(request, env, ctx);
+    }
 
     if (pathname.startsWith('/api/care-packages/')) {
       return handleCarePackageStore(request, env, pathname);

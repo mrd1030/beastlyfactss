@@ -12,7 +12,8 @@
 // using. The load fills the idle slot, builds its full text table, then flips
 // ask_meta.slot. The worker reads the slot on every request.
 //
-//   ask_meta(key PRIMARY KEY, value)                 slot = 'a' | 'b', loaded_at, chunks
+//   ask_meta(key PRIMARY KEY, value)   slot = 'a' | 'b', loaded_at, chunks, and
+//                                      the JSON lookups aliases, species, states, legal
 //   chunks_<slot>(id INTEGER PRIMARY KEY, slug, title, heading, anchor, url,
 //                 species, type, text, words)
 //   chunks_<slot>_fts  FTS5 over title, heading, species, text, external
@@ -26,6 +27,7 @@ import path from 'node:path';
 
 const ROOT = path.resolve(path.dirname(new URL(import.meta.url).pathname), '..');
 const CHUNKS = path.join(ROOT, '.ask-index', 'chunks.json');
+const META = path.join(ROOT, '.ask-index', 'meta.json');
 const DEFAULT_DB_ID = 'dff48e70-8f70-419b-848e-89252aedb81c'; // ask-index
 const API = 'https://api.cloudflare.com/client/v4';
 // D1 caps one SQL statement at 100 KB. Stay well under it.
@@ -66,6 +68,7 @@ const sqlString = (v) => (v == null ? 'NULL' : `'${String(v).replace(/'/g, "''")
 
 async function main() {
   const chunks = JSON.parse(fs.readFileSync(CHUNKS, 'utf8'));
+  const meta = JSON.parse(fs.readFileSync(META, 'utf8'));
   const acct = await accountId();
   const db = process.env.ASK_D1_DATABASE_ID || DEFAULT_DB_ID;
   const query = (sql) => cf(`/accounts/${acct}/d1/database/${db}/query`, {
@@ -121,9 +124,14 @@ async function main() {
   const [{ n }] = await rows(`SELECT COUNT(*) AS n FROM ${table}`);
   if (n !== chunks.length) throw new Error(`loaded ${n} rows, expected ${chunks.length}`);
 
+  // Lookup data (aliases, species, states, legal animals) goes in with the
+  // slot flip, in one statement, so the worker never pairs an index with
+  // another load's lookups.
   const now = new Date().toISOString();
+  const metaRows = [['slot', slot], ['loaded_at', now], ['chunks', String(n)],
+    ...Object.entries(meta).map(([k, v]) => [k, JSON.stringify(v)])];
   await query(`INSERT INTO ask_meta (key, value) VALUES
-    ('slot', '${slot}'), ('loaded_at', '${now}'), ('chunks', '${n}')
+    ${metaRows.map(([k, v]) => `(${sqlString(k)}, ${sqlString(v)})`).join(', ')}
     ON CONFLICT(key) DO UPDATE SET value = excluded.value`);
 
   console.log(`Ask index load: ${n} chunks into slot ${slot} in ${statements} statements; slot ${slot} is live.`);
