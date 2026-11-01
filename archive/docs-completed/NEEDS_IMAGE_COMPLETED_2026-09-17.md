@@ -8,6 +8,13 @@ Newest first.
 
 ---
 
+## 2026-11-01: rummy-nose tetra hub head
+
+`/assets/guides/rummy-nose-tetra.jpg`, shared by the hub and the encyclopedia
+entry. An Adobe Firefly frame first generated for the tetras group page, which
+the owner turned down there as one species and placed here instead. 3:2,
+resized to 1168x784 through mozjpeg at quality 80. Recorded in IMAGE_CREDITS.md.
+
 ## 2026-10-31: ember tetra set
 
 Seven Adobe Firefly images from the prompts in IMAGE_PROMPTS.md, approved by

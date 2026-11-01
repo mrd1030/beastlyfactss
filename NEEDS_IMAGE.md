@@ -14,10 +14,9 @@ The five October heroes and the five parked facts all landed the same day.
 
 ### Rummy-nose, black skirt and glowlight tetra sets (added 2026-10-31, same branch)
 
-Twenty-one more photos, same rules as the ember set (done, see the completed file): a hub head shared with the
+Twenty more photos (the rummy-nose hub head is done), same rules as the ember set (done, see the completed file): a hub head shared with the
 encyclopedia entry (3:2, 1168x784) and six guide heroes per species.
 
-- Rummy-nose hub and encyclopedia head: `/assets/guides/rummy-nose-tetra.jpg`
 - Rummy-nose heroes: `/assets/images/rummy-nose-tetra-{cost,tank-setup,feeding,handling,health-issues,enrichment}.jpg`
 - Black skirt hub and encyclopedia head: `/assets/guides/black-skirt-tetra.jpg`
 - Black skirt heroes: `/assets/images/black-skirt-tetra-{cost,tank-setup,feeding,handling,health-issues,enrichment}.jpg`

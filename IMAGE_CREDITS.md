@@ -75,3 +75,4 @@ frog, pen-tailed tree shrew) and Adobe Firefly for ids 287 to 296.
 | `new-years-eve-pet-safety-guide.jpg` (guide hero, `public/assets/images/`) | Adobe Firefly | 2026-10-28 |
 | `power-outage-pets-guide.jpg` (guide hero, `public/assets/images/`) | Adobe Firefly | 2026-10-28 |
 | `ember-tetra.jpg` (hub and encyclopedia head, `public/assets/guides/`); `ember-tetra-cost.jpg`, `-tank-setup.jpg`, `-feeding.jpg`, `-handling.jpg`, `-health-issues.jpg`, `-enrichment.jpg` (guide heroes, `public/assets/images/`). Hub and feeding cropped from 4:3 to 3:2 (hub centered, feeding kept to the top for the water surface); all resized to 1168x784 | Adobe Firefly | 2026-10-31 |
+| `rummy-nose-tetra.jpg` (hub and encyclopedia head, `public/assets/guides/`), resized to 1168x784, not cropped. Generated from a prompt written for the tetras group page and moved to this slot by the owner | Adobe Firefly | 2026-11-01 |
