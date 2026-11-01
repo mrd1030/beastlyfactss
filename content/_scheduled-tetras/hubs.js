@@ -3,7 +3,10 @@
 // folders the build checks scan. The cost sheets stay live in costSheets/fish.js. On a species' ship day, move its object back into
 // the live array in src/lib/data/guides/fish.js (alphabetical by id), move its six guides from
 // content/_scheduled-tetras/ into content/guides/ with the ship date, and drop `planned: true` from its row
-// in the tetras group entry in src/lib/data/guides/fish.js.
+// in the tetras group entry in src/lib/data/guides/fish.js. Then add its line to
+// RELATED_ARTICLES in src/lib/data/relatedArticles.js, copied from 'ember-tetra'
+// (the nine shared aquarium guides plus power-outage-pets-guide), so its hub
+// sidebar carries the shared guides.
 export const scheduledTetraGuides = [
   {
     id: "black-skirt-tetra",
@@ -23,7 +26,7 @@ export const scheduledTetraGuides = [
     // guides. The emergency card follows the health guide's three groups. The
     // fin-nipping caution is also carried on the tetras group page
     // (branches.species[].caution), copied from the handling guide
-    // (research: BLACK_SKIRT_TETRA_RESEARCH.md). Built 2026-10-31.
+    // (research: research/BLACK_SKIRT_TETRA_RESEARCH.md). Built 2026-10-31.
     layout: "router",
     firstWeek: {
       intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
@@ -108,7 +111,7 @@ export const scheduledTetraGuides = [
     // hub keeps no number of its own. Adult size comes from the encyclopedia
     // entry. Water changes and the power outage rule cite the shared aquarium
     // guides. The emergency card follows the health guide's three groups
-    // (research: GLOWLIGHT_TETRA_RESEARCH.md). Built 2026-10-31.
+    // (research: research/GLOWLIGHT_TETRA_RESEARCH.md). Built 2026-10-31.
     layout: "router",
     firstWeek: {
       intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
@@ -195,7 +198,7 @@ export const scheduledTetraGuides = [
     // entry. Water changes and the power outage rule cite the shared aquarium
     // guides. The emergency card follows the health guide's three groups. The
     // fish written about is Petitella bleheri, the species sold under the name
-    // (research: RUMMY_NOSE_TETRA_RESEARCH.md). Built 2026-10-31.
+    // (research: research/RUMMY_NOSE_TETRA_RESEARCH.md). Built 2026-10-31.
     layout: "router",
     firstWeek: {
       intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",

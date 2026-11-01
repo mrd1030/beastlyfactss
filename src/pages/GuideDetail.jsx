@@ -264,10 +264,19 @@ export default function GuideDetail() {
     : truncateDescription(`Complete care guide for ${guide.name} - covering housing, diet, enrichment, and health. Evidence-based advice for ${guide.petType} keepers.`));
   const canonicalUrl = `https://beastlyfacts.com/guides/${guide.id}/`;
 
+  // A species in a group hub (tetras, livebearers) keeps its flat URL, so the
+  // trail states the parent the URL does not: Care Guides > the group hub >
+  // the species. Google may still show the URL path instead; nothing is lost.
+  const groupHub = hubOf[guide.id];
   const crumbs = breadcrumbSchema([
     ['Care Guides', '/guides/'],
+    ...(groupHub ? [[groupHub.name, `/guides/${groupHub.id}/`]] : []),
     [`${guide.name} Care Guide`, `/guides/${guide.id}/`],
   ]);
+  // The back button names where it goes: the group when the reader came from
+  // its page, the guide list otherwise.
+  const backToGroup = groupHub && location.state?.returnTo === `/guides/${groupHub.id}/`;
+  const backLabel = backToGroup ? `Back to ${groupHub.branches.groupName}` : 'Back to Guides';
 
   return (
     <div className="min-h-screen">
@@ -323,7 +332,7 @@ export default function GuideDetail() {
             onClick={handleBack}
             className="inline-flex items-center gap-1.5 text-sm font-body font-semibold text-muted-foreground hover:text-foreground transition-colors p-2 -mx-2 -mt-2"
           >
-            <ArrowLeft className="w-4 h-4" /> Back to Guides
+            <ArrowLeft className="w-4 h-4" /> {backLabel}
           </button>
             <div className="flex-shrink-0 flex items-center gap-2">
               <SaveButton
@@ -388,15 +397,8 @@ export default function GuideDetail() {
           {/* ── Main content ── */}
           <div className="lg:col-span-2 space-y-5" ref={contentRef}>
 
-            {/* Fun fact */}
-            <div className="bg-secondary/5 border border-secondary/20 rounded-xl px-4 py-3">
-              <p className="text-sm font-body text-foreground">
-                <span className="inline-flex items-center gap-1.5 font-body font-bold text-secondary"><Lightbulb className="w-3.5 h-3.5" aria-hidden="true" />Did you know?</span>
-                {` ${guide.funFact}`}
-              </p>
-            </div>
-
-            {/* Hero image */}
+            {/* Hero image first, so it shows on a phone without scrolling,
+                as on the encyclopedia pages; the fun fact follows it. */}
             {guide.image && (
               <div className="rounded-2xl overflow-hidden aspect-video">
                 <HeroImage
@@ -406,6 +408,14 @@ export default function GuideDetail() {
                 />
               </div>
             )}
+
+            {/* Fun fact */}
+            <div className="bg-secondary/5 border border-secondary/20 rounded-xl px-4 py-3">
+              <p className="text-sm font-body text-foreground">
+                <span className="inline-flex items-center gap-1.5 font-body font-bold text-secondary"><Lightbulb className="w-3.5 h-3.5" aria-hidden="true" />Did you know?</span>
+                {` ${guide.funFact}`}
+              </p>
+            </div>
 
             {/* Router hub: first week, emergency card, routes, buy list */}
             {isRouter && (
@@ -606,7 +616,9 @@ export default function GuideDetail() {
                   </table>
                   <div className="text-xs text-muted-foreground font-body mt-3 space-y-1">
                     <p><span className="font-semibold text-foreground">Yes:</span> temperature and pH ranges overlap.</p>
-                    <p><span className="font-semibold text-foreground">Limits:</span> they overlap, but the shared temperature band is under {MIN_BAND_F}°F, so a heater drifting a degree can take one species out of range.</p>
+                    {live.some((a, i) => live.some((b, j) => j > i && verdict([a, b]) === 'Limits')) && (
+                      <p><span className="font-semibold text-foreground">Limits:</span> they overlap, but the shared temperature band is under {MIN_BAND_F}°F, so a heater drifting a degree can take one species out of range.</p>
+                    )}
                     {live.some((a, i) => live.some((b, j) => j > i && verdict([a, b]) === 'No')) && (
                       <p><span className="font-semibold text-foreground">No:</span> the ranges miss, or only meet at a single point.</p>
                     )}

@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { rememberDeepDiveGuide } from '@/lib/data/deepDiveContext';
 import { DEEP_DIVE_LIMIT, isSharedDeepDiveArticle } from '@/lib/data/relatedArticles';
 import { BookOpen, HeartPulse, Microscope } from 'lucide-react';
+import LocalImage from '@/components/shared/LocalImage';
 
 // The Deep Dive sidebar, shared by GuideDetail, EncyclopediaAnimal and the blog
 // sidebar, which all built the same list from the same data and rendered it
@@ -98,8 +99,35 @@ export default function DeepDiveList({ articles, guideId, onSelect, ownTitle = O
   const own = articles.filter(a => !isSharedDeepDiveArticle(slugOf(a)));
   const shared = articles.filter(a => isSharedDeepDiveArticle(slugOf(a)));
 
-  const label = article => (article.emoji ? `${article.emoji} ` : '') + article.title;
   const textClass = 'text-xs font-body font-bold text-foreground group-hover:text-secondary transition-colors leading-snug';
+  // A row is the article's own photo (the 240x240 -thumb tier, shown at 44px)
+  // beside its title. Every deep dive has its own photo, so the thumbnails
+  // tell a species' list apart where the emoji, mostly the same one down the
+  // list, could not. An article with no image keeps its emoji in the photo's
+  // slot. Overflow rows are hidden, and loading="lazy" keeps their images from
+  // loading until "Show all" opens them.
+  const rowContent = article => (
+    <span className="flex items-center gap-3">
+      {article.image ? (
+        // LocalImage renders <picture><img/></picture>, and the <picture> is the
+        // flex item, so the fixed square goes on a wrapper or the row squeezes it.
+        <span className="w-11 h-11 rounded-lg overflow-hidden flex-shrink-0 bg-muted block">
+          <LocalImage
+            src={article.image}
+            alt=""
+            width={44}
+            height={44}
+            className="w-full h-full object-cover block"
+          />
+        </span>
+      ) : (
+        <span className="w-11 h-11 rounded-lg bg-muted flex items-center justify-center flex-shrink-0 text-lg" aria-hidden="true">
+          {article.emoji || '📖'}
+        </span>
+      )}
+      <span className={textClass}>{article.title}</span>
+    </span>
+  );
 
   const renderLink = article => {
     const href = `/blog/${slugOf(article)}/`;
@@ -117,20 +145,25 @@ export default function DeepDiveList({ articles, guideId, onSelect, ownTitle = O
           onClick={(e) => { e.preventDefault(); remember(); onSelect(article); }}
           className="group block"
         >
-          <p className={textClass}>{label(article)}</p>
+          {rowContent(article)}
         </a>
       );
     }
     return (
       <Link key={article._id || article.id} to={href} onClick={remember} className="group block">
-        <p className={textClass}>{label(article)}</p>
+        {rowContent(article)}
       </Link>
     );
   };
 
   const hubRow = hub ? (
     <Link key="hub" to={`/guides/${hub.id}/`} className="group block">
-      <p className={`${textClass} flex items-center gap-1.5`}><BookOpen className="w-3.5 h-3.5 flex-shrink-0" aria-hidden="true" />{`${hub.name} care guide`}</p>
+      <span className="flex items-center gap-3">
+        <span className="w-11 h-11 rounded-lg bg-muted flex items-center justify-center flex-shrink-0" aria-hidden="true">
+          <BookOpen className="w-4 h-4 text-muted-foreground" />
+        </span>
+        <span className={textClass}>{`${hub.name} care guide`}</span>
+      </span>
     </Link>
   ) : null;
   const ownRows = hubRow ? [{ _hub: true }, ...own] : own;

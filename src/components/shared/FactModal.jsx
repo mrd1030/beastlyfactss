@@ -231,21 +231,21 @@ export default function FactModal({ fact, onClose, onOpenImage }) {
               </Link>
             )}
 
-            <div className="flex items-center gap-3 mt-6 pt-4 border-t border-border">
+            <div className="flex flex-wrap items-center gap-2 sm:gap-3 mt-6 pt-4 border-t border-border">
               <button
                 onClick={() => toggleFavorite(fact.id)}
-                className={`flex items-center gap-2 px-4 py-2 rounded-full text-sm font-semibold transition-all focus:ring-2 focus:ring-secondary focus:outline-none ${
+                className={`flex items-center gap-2 px-4 py-2 rounded-full text-sm font-semibold whitespace-nowrap transition-all focus:ring-2 focus:ring-secondary focus:outline-none ${
                   fav ? 'bg-hotpink/10 text-hotpink' : 'bg-muted text-muted-foreground hover:bg-muted/80'
                 }`}
               >
-                <Heart className={`w-4 h-4 ${fav ? 'fill-hotpink' : ''}`} />
+                <Heart className={`w-4 h-4 shrink-0 ${fav ? 'fill-hotpink' : ''}`} />
                 {fav ? 'Saved to Pack' : 'Save to Pack'}
               </button>
               
               {/* FIX: Dynamic text and color feedback based on state */}
               <button
                 onClick={handleShare}
-                className={`flex items-center gap-2 px-4 py-2 rounded-full text-sm font-semibold transition-all focus:ring-2 focus:ring-secondary focus:outline-none ${
+                className={`flex items-center gap-2 px-4 py-2 rounded-full text-sm font-semibold whitespace-nowrap transition-all focus:ring-2 focus:ring-secondary focus:outline-none ${
                   copied
                     ? 'bg-secondary/10 text-secondary font-bold'
                     : 'bg-muted text-muted-foreground hover:bg-muted/80'
@@ -258,7 +258,7 @@ export default function FactModal({ fact, onClose, onOpenImage }) {
               {imagePath && onOpenImage && (
                 <button
                   onClick={() => onOpenImage(fact)}
-                  className="flex items-center gap-2 px-4 py-2 rounded-full text-sm font-semibold bg-muted text-muted-foreground hover:bg-muted/80 transition-all focus:ring-2 focus:ring-secondary focus:outline-none"
+                  className="flex items-center gap-2 px-4 py-2 rounded-full text-sm font-semibold whitespace-nowrap bg-muted text-muted-foreground hover:bg-muted/80 transition-all focus:ring-2 focus:ring-secondary focus:outline-none"
                 >
                   <ImageIcon className="w-4 h-4" />
                   <span>Image</span>

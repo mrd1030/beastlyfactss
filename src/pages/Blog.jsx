@@ -545,6 +545,7 @@ export default function Blog() {
                   <Link
                     key={item.slug}
                     to={item.to}
+                    state={{ keepScroll: true }}
                     className={`inline-flex items-center gap-1 pb-1 border-b-2 whitespace-nowrap transition-colors ${
                       slugify(activeCategory) === item.slug ? 'border-secondary text-foreground font-semibold' : 'border-transparent text-muted-foreground font-medium hover:text-foreground'
                     }`}
@@ -567,6 +568,7 @@ export default function Blog() {
                     <Link
                       key={t.slug}
                       to={t.slug === 'all' ? '/blog/category/wild-animals/' : `/blog/category/wild-animals/${t.slug}/`}
+                      state={{ keepScroll: true }}
                       className={`inline-flex items-center gap-1 pb-1 border-b-2 whitespace-nowrap transition-colors ${
                         topic === t.slug ? 'border-secondary text-foreground font-semibold' : 'border-transparent text-muted-foreground font-medium hover:text-foreground'
                       }`}
@@ -648,7 +650,7 @@ export default function Blog() {
                 <h3 className="font-display font-bold text-sm text-foreground mb-3">Categories</h3>
                 <div className="space-y-1">
                   {categories.map(cat => (
-                    <Link key={cat.slug} to={`/blog/category/${cat.slug}/`} className="flex items-center justify-between w-full px-2 py-1.5 rounded-lg text-xs font-body hover:bg-muted transition-colors group">
+                    <Link key={cat.slug} to={`/blog/category/${cat.slug}/`} state={{ keepScroll: true }} className="flex items-center justify-between w-full px-2 py-1.5 rounded-lg text-xs font-body hover:bg-muted transition-colors group">
                       <span className="inline-flex items-center gap-2 text-foreground group-hover:text-secondary transition-colors font-semibold">
                         {CATEGORY_ICONS[cat.slug] && React.createElement(CATEGORY_ICONS[cat.slug], { className: 'w-4 h-4 text-secondary', 'aria-hidden': true })}
                         {cat.title}

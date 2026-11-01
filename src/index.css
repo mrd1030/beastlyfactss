@@ -191,6 +191,11 @@
 }
 
 @layer base {
+  /* Nothing may push the page sideways on a phone (a glossary box near the
+     edge once did). clip, not hidden: it makes no scroll container, so
+     position: sticky keeps working. */
+  html, body { overflow-x: clip; }
+
   :root {
     --font-display: 'Schibsted Grotesk', 'Schibsted Grotesk Fallback', sans-serif;
     --font-body: 'Atkinson Hyperlegible Next', 'Atkinson Hyperlegible Next Fallback', sans-serif;

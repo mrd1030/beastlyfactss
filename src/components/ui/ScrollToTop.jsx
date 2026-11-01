@@ -55,6 +55,10 @@ export default function ScrollToTop() {
         // here would win the race and undo that, since this component has no
         // way to know what the target position should be.
         if (hash) return;
+        // Opening or closing an overlay that has its own URL (a fact on the
+        // facts page) changes the route without leaving the page underneath,
+        // so the reader stays where they were.
+        if (location.state?.keepScroll) return;
         // A new page (PUSH) or a replaced one starts at the top.
         if (navigationType !== 'POP') {
             window.scrollTo(0, 0);

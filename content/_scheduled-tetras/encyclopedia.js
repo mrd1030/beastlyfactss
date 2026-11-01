@@ -3,7 +3,10 @@
 // folders the build checks scan. The cost sheets stay live in costSheets/fish.js. On a species' ship day, move its object back into
 // the live array in src/lib/data/encyclopedia/fish.js (alphabetical by id), move its six guides from
 // content/_scheduled-tetras/ into content/guides/ with the ship date, and drop `planned: true` from its row
-// in the tetras group entry in src/lib/data/guides/fish.js.
+// in the tetras group entry in src/lib/data/guides/fish.js. Then add its line to
+// RELATED_ARTICLES in src/lib/data/relatedArticles.js, copied from 'ember-tetra'
+// (the nine shared aquarium guides plus power-outage-pets-guide), so its hub
+// sidebar carries the shared guides.
 export const scheduledTetraAnimals = [
   {
     id: "black-skirt-tetra", name: "Black Skirt Tetra", scientific: "Gymnocorymbus ternetzi",

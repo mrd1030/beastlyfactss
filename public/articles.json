@@ -2085,8 +2085,8 @@
     },
     {
       "slug": "cardinal-tetra-cost-guide",
-      "title": "Cardinal Tetra Price: $3.30 to $8 Each, $115 to $275 Setup",
-      "excerpt": "Cardinal tetras cost a little more than their neon tetra cousins, and an Amazon fishery of wild-caught fish sits behind part of the price. They are bought as a school of 10, not one fish.",
+      "title": "Cardinal Tetra Price: $3.30 to $8 Each, $165 to $335 Setup",
+      "excerpt": "Cardinal tetras cost a little more than their neon tetra cousins, and an Amazon fishery of wild-caught fish sits behind part of the price. They are bought as a school of 10, with a spare tank for quarantine beside the display.",
       "date": "2026-09-05",
       "image": "/assets/images/cardinal-tetra-cost.jpg",
       "category": "Fish",
@@ -2098,7 +2098,7 @@
     {
       "slug": "cardinal-tetra-enrichment-guide",
       "title": "Cardinal Tetra Enrichment Guide",
-      "excerpt": "Unlike almost everything else in the shop, a large share of cardinal tetras are caught in the Rio Negro rather than bred. That changes what the first month should look like.",
+      "excerpt": "Unlike almost everything else in the shop, a large share of cardinal tetras are caught in the Rio Negro rather than bred. That changes what the first month should look like, and dim light does more for their stripes than any stain.",
       "date": "2026-09-04",
       "image": "/assets/images/cardinal-tetra-enrichment.jpg",
       "category": "Enrichment",
@@ -2110,7 +2110,7 @@
     {
       "slug": "cardinal-tetra-feeding-guide",
       "title": "What Do Cardinal Tetras Eat? Diet and Feeding Schedule",
-      "excerpt": "Cardinal tetra feeding is simple in principle: small food in small amounts. But the rule that protects the school has nothing to do with portions: never leave a dead fish in the tank.",
+      "excerpt": "A wild cardinal tetra picks tiny crustaceans and midge larvae off drowned leaves and wood. A schedule from fry to adult, the foods that copy that diet, why cardinals stop eating, and the rule that stops an outbreak.",
       "date": "2026-09-06",
       "image": "/assets/images/cardinal-tetra-feeding.jpg",
       "category": "Fish",
@@ -2121,8 +2121,8 @@
     },
     {
       "slug": "cardinal-tetra-handling-guide",
-      "title": "Handling Cardinal Tetras: School Size Matters",
-      "excerpt": "Cardinal tetras are an observation pet, not a hands-on one. The welfare consideration isn't handling technique: it's group size, and ten is the number to plan for.",
+      "title": "Cardinal Tetra Handling: School Size and Acclimation",
+      "excerpt": "Cardinal tetras are an observation pet, not a hands-on one. Ten is the school to plan for, and the trip from shop bag to tank is where cold, ammonia and a fast pH change do their damage.",
       "date": "2026-09-07",
       "image": "/assets/images/cardinal-tetra-handling.jpg",
       "category": "Fish",
@@ -2134,7 +2134,7 @@
     {
       "slug": "cardinal-tetra-health-issues-guide",
       "title": "Cardinal Tetra Health Issues: Signs & Causes",
-      "excerpt": "Most cardinal tetra health problems are treatable and trace back to water quality. One isn't, and it's named after a different, closely related fish entirely.",
+      "excerpt": "Most cardinal tetra health problems are treatable and trace back to water quality. One isn't, and it's named after a different, closely related fish entirely. Many cardinals are still caught wild, and the trip to the shop is where their troubles start.",
       "date": "2026-09-08",
       "image": "/assets/images/cardinal-tetra-health-issues.jpg",
       "category": "Fish",
@@ -2146,7 +2146,7 @@
     {
       "slug": "cardinal-tetra-tank-setup-guide",
       "title": "Cardinal Tetra Tank Setup Guide",
-      "excerpt": "Cardinal tetras come from soft, dim, tannin-stained blackwater streams, the same origin as neon tetra, but they run warmer and want a tank set up right for a school of 10.",
+      "excerpt": "Cardinal tetras come from the soft, acidic blackwater of the Rio Negro and the clearer streams of the Orinoco, and they run warmer than neons. A tank for a school of 10 is a 20-gallon long at 77 to 82°F, cycled first and acidified after.",
       "date": "2026-09-09",
       "image": "/assets/images/cardinal-tetra-tank-setup.jpg",
       "category": "Fish",
@@ -3327,8 +3327,8 @@
     },
     {
       "slug": "ember-tetra-cost-guide",
-      "title": "Ember Tetra Cost: $25 to $35 for 10, $95 to $245 Setup",
-      "excerpt": "Ember tetras are bought ten at a time, and the whole school costs a fraction of the tank it lives in. The money goes into a planted 10 gallon setup and a spare tank for quarantine.",
+      "title": "Ember Tetra Cost: $25 to $35 for 10, $115 to $265 Setup",
+      "excerpt": "Ten ember tetras cost less than the tank they swim in. The money goes into a planted 10 gallon setup, a spare tank for quarantine, and the shipping when the fish come from online.",
       "date": "2026-11-01",
       "image": "/assets/images/ember-tetra-cost.jpg",
       "category": "Fish",
@@ -3340,7 +3340,7 @@
     {
       "slug": "ember-tetra-enrichment-guide",
       "title": "Ember Tetra Enrichment Guide",
-      "excerpt": "In clear Brazilian water an ember tetra shoal hides from above with its dark backs and moves every few minutes while pike cichlids hunt nearby. The tank should give it the same cover.",
+      "excerpt": "In clear Brazilian water an ember tetra shoal hides from above with its dark backs and moves every few minutes while pike cichlids hunt nearby. A school of 10, dense plants and small live food give it the same life in a tank.",
       "date": "2026-11-01",
       "image": "/assets/images/ember-tetra-enrichment.jpg",
       "category": "Enrichment",
@@ -3352,7 +3352,7 @@
     {
       "slug": "ember-tetra-feeding-guide",
       "title": "What Do Ember Tetras Eat? Diet and Feeding Schedule",
-      "excerpt": "An ember tetra is about 0.8 inch long, and its diet is sized to match: tiny slow-sinking staples, small live and frozen prey, and portions the school can clear.",
+      "excerpt": "An ember tetra is about 0.8 inch long, and its diet is sized to match: a schedule from fry to adult, tiny staples, live foods that are worth the risk, and why an ember stops eating.",
       "date": "2026-11-01",
       "image": "/assets/images/ember-tetra-feeding.jpg",
       "category": "Fish",
@@ -3376,7 +3376,7 @@
     {
       "slug": "ember-tetra-health-issues-guide",
       "title": "Ember Tetra Health Issues: Ich, Water and Signs",
-      "excerpt": "No disease belongs to the ember tetra in particular. Most of what goes wrong starts in the water or arrives with a new fish, and ich is treated differently here because the heat cure runs too hot.",
+      "excerpt": "No disease belongs to the ember tetra in particular. Most of what goes wrong starts in the water or arrives with a new fish, ich is treated differently because the heat cure runs too hot, and copper is a poor fit for soft ember water.",
       "date": "2026-11-01",
       "image": "/assets/images/ember-tetra-health-issues.jpg",
       "category": "Fish",
@@ -3388,7 +3388,7 @@
     {
       "slug": "ember-tetra-tank-setup-guide",
       "title": "Ember Tetra Tank Setup Guide",
-      "excerpt": "Ember tetras come from soft, weakly acidic backwaters in central Brazil, and a tank for a school of 10 recreates that water: 10 gallons, 75 to 82°F, gentle flow and dense plants.",
+      "excerpt": "Ember tetras come from soft, weakly acidic backwaters in central Brazil. A tank for a school of 10 recreates that water over a dark, inert floor: 10 gallons, 75 to 82°F, gentle flow, dense plants and calm tankmates.",
       "date": "2026-11-01",
       "image": "/assets/images/ember-tetra-tank-setup.jpg",
       "category": "Fish",
@@ -4797,7 +4797,7 @@
     {
       "slug": "guppy-enrichment-guide",
       "title": "Guppy Enrichment Guide",
-      "excerpt": "Male guppies pursue females almost continuously. The research on that harassment found costs to feeding, to vigilance, and even to the next generation.",
+      "excerpt": "Male guppies pursue females almost continuously. The research on that harassment found costs to feeding, to where females can live, and even to the next generation.",
       "date": "2026-09-04",
       "image": "/assets/images/guppy-enrichment.jpg",
       "category": "Enrichment",
@@ -4809,7 +4809,7 @@
     {
       "slug": "guppy-feeding-guide",
       "title": "What Do Guppies Eat? Diet and Feeding Schedule",
-      "excerpt": "Guppies beg for food regardless of hunger, so overfeeding, not underfeeding, is the risk here. Here's a real schedule, what to feed, and when refusal matters.",
+      "excerpt": "Guppies take food readily, so too much is an easier mistake than too little. Feeding by life stage, what to put in the bowl, and what a refused meal can mean.",
       "date": "2026-08-01",
       "image": "/assets/images/guppy-feeding.jpg",
       "category": "Fish",
@@ -4833,7 +4833,7 @@
     {
       "slug": "guppy-health-issues-guide",
       "title": "Guppy Health Issues: Signs & Causes",
-      "excerpt": "Nearly everything on this list connects back to one root cause: water quality. Guppies are hardy fish, but stressed, poorly maintained water opens the door to every condition below.",
+      "excerpt": "Most guppy illness traces back to stress, poor water quality, overcrowding, or skipped quarantine. Signs and treatment for ich, velvet, dropsy, Camallanus, and more.",
       "date": "2026-07-18",
       "image": "/assets/images/guppy-health-issues.jpg",
       "category": "Fish",
@@ -6283,7 +6283,7 @@
     {
       "slug": "molly-enrichment-guide",
       "title": "Molly Enrichment Guide",
-      "excerpt": "The harassment research that shapes guppy stocking was partly done on a molly. They also graze algae all day and get sold into tanks with none in them.",
+      "excerpt": "The harassment research that shapes livebearer stocking was partly done on a molly. They also graze algae and plants, and get sold into tanks with none in them.",
       "date": "2026-09-04",
       "image": "/assets/images/molly-enrichment.jpg",
       "category": "Enrichment",
@@ -6295,7 +6295,7 @@
     {
       "slug": "molly-feeding-guide",
       "title": "What Do Molly Fish Eat? Diet and Feeding Schedule",
-      "excerpt": "Mollies lean more herbivorous than most livebearers, and a protein-heavy, no-vegetables diet is the single most common molly-specific feeding mistake. Here's a real schedule and what to feed.",
+      "excerpt": "The sailfin molly eats almost entirely plants in the wild, and the short-finned molly takes a large share of them. Here's a feeding schedule and what to put in the bowl.",
       "date": "2026-09-06",
       "image": "/assets/images/molly-feeding.jpg",
       "category": "Fish",
@@ -6522,8 +6522,8 @@
     },
     {
       "slug": "neon-tetra-cost-guide",
-      "title": "Neon Tetra Price: $1 to $5 Each, Plus $115 to $245 Setup",
-      "excerpt": "Neon tetras are one of the most affordable fish you can keep, cheap individually and cheap as a group. Cost planning here starts with buying several at once, not just one.",
+      "title": "Neon Tetra Price: $1 to $5 Each, Plus $165 to $305 Setup",
+      "excerpt": "Neon tetras are one of the most affordable fish you can keep, and they are bought as a school. The budget goes into a 20 gallon long, a spare tank for quarantine, and the shipping when the fish come from online.",
       "date": "2026-07-21",
       "image": "/assets/images/neon-tetra-cost.jpg",
       "category": "Fish",
@@ -6535,7 +6535,7 @@
     {
       "slug": "neon-tetra-enrichment-guide",
       "title": "Neon Tetra Enrichment Guide",
-      "excerpt": "The usual advice is six. A study that measured darting, aggression, shoaling and feeding latency in home aquarium species found ten was better.",
+      "excerpt": "The usual advice is six. A study that measured darting, aggression, shoaling and feeding latency in home aquarium species found ten was better, and dim light and cover matter more than tea-colored water.",
       "date": "2026-09-04",
       "image": "/assets/images/neon-tetra-enrichment.jpg",
       "category": "Enrichment",
@@ -6547,7 +6547,7 @@
     {
       "slug": "neon-tetra-feeding-guide",
       "title": "What Do Neon Tetras Eat? Diet and Feeding Schedule",
-      "excerpt": "Neon tetra feeding is simple in principle: small food in small amounts. But the one rule that protects the school has nothing to do with portions: never leave a dead fish in the tank.",
+      "excerpt": "A neon tetra takes its food in small bites from the middle of the water: a schedule from fry to adult, foods sized for a tiny mouth, live foods and their risks, and the rule that stops an outbreak.",
       "date": "2026-08-13",
       "image": "/assets/images/neon-tetra-feeding.jpg",
       "category": "Fish",
@@ -6558,8 +6558,8 @@
     },
     {
       "slug": "neon-tetra-handling-guide",
-      "title": "Handling Neon Tetras: School Size Matters",
-      "excerpt": "Neon tetras are an observation pet, not a hands-on one. The welfare consideration with this species isn't handling technique at all, it's group size, and getting that number right changes everything.",
+      "title": "Neon Tetra Handling: School Size, Bagging, Acclimation",
+      "excerpt": "Nobody holds a neon tetra. What it gets is a net, a bag and an hour of slow mixing, and the number of neons in that bag decides more about their welfare than any of the three.",
       "date": "2026-07-21",
       "image": "/assets/images/neon-tetra-handling.jpg",
       "category": "Fish",
@@ -6571,7 +6571,7 @@
     {
       "slug": "neon-tetra-health-issues-guide",
       "title": "Neon Tetra Health Issues: Signs & Causes",
-      "excerpt": "Most neon tetra health problems are treatable and trace back to water quality. One, though, is different, incurable, and named after this species specifically.",
+      "excerpt": "Most neon tetra health problems are treatable and trace back to water quality. One is incurable and named after this species, and a failed antibacterial course does not prove it, because mycobacteriosis looks the same and cannot be cured either.",
       "date": "2026-07-21",
       "image": "/assets/images/neon-tetra-health-issues.jpg",
       "category": "Fish",
@@ -6583,7 +6583,7 @@
     {
       "slug": "neon-tetra-tank-setup-guide",
       "title": "Neon Tetra Tank Setup Guide",
-      "excerpt": "Neon tetras come from soft, dim, tannin-stained blackwater streams, and the closer your tank setup gets to that origin, the better this fish looks and behaves.",
+      "excerpt": "Neon tetras come from soft Amazon forest streams, some stained brown with tannins and some clear. A tank for a school of 10 is 24 inches long, 70 to 77°F and pH 6.0 to 7.0, over an inert floor with dense plants, dim light and a mature cycle.",
       "date": "2026-07-21",
       "image": "/assets/images/neon-tetra-tank-setup.jpg",
       "category": "Fish",
@@ -6970,7 +6970,7 @@
     {
       "slug": "platy-enrichment-guide",
       "title": "Platy Enrichment Guide",
-      "excerpt": "Platies are the fish people put in the tank that is too small, too bare or not quite cycled, because platies survive it. Surviving something is not evidence it was fine.",
+      "excerpt": "Platies are the fish people put in the tank that is too small, too bare or not quite cycled, because platies are sold as beginner fish. Surviving something is not evidence it was fine.",
       "date": "2026-09-04",
       "image": "/assets/images/platy-enrichment.jpg",
       "category": "Enrichment",
@@ -8542,8 +8542,8 @@
     },
     {
       "slug": "swordtail-cost-guide",
-      "title": "Swordtail Price: $3 to $25 Each, Plus $170 to $345 Setup",
-      "excerpt": "Swordtails cost about the same per fish as a molly, but they're the common livebearer that outgrows a 20-gallon starting point the fastest.",
+      "title": "Swordtail Price: $3 to $25 Each, Plus $205 to $430 Setup",
+      "excerpt": "Swordtails cost about the same per fish as a molly, but they're the common livebearer that needs the most tank from day one.",
       "date": "2026-09-11",
       "image": "/assets/images/swordtail-cost.jpg",
       "category": "Fish",
@@ -8555,7 +8555,7 @@
     {
       "slug": "swordtail-enrichment-guide",
       "title": "Swordtail Enrichment Guide",
-      "excerpt": "Male swordtails compete with each other as hard as they pursue females. Two males in one tank is the arrangement that reliably produces a loser.",
+      "excerpt": "Male swordtails compete with each other as hard as they pursue females. In a small tank, more than one male tends to produce a hounded loser.",
       "date": "2026-09-04",
       "image": "/assets/images/swordtail-enrichment.jpg",
       "category": "Enrichment",
@@ -8602,8 +8602,8 @@
     },
     {
       "slug": "swordtail-tank-setup-guide",
-      "title": "Swordtail Fish Tank Setup Guide",
-      "excerpt": "Swordtails need more room than a guppy or molly, sturdier filtration to match, and a lid that seals, since this species is a capable jumper.",
+      "title": "Swordtail Tank Size: Length, Not Gallons",
+      "excerpt": "Swordtails need more room than a guppy or molly, a filter that keeps some water moving, and a lid that seals, since this species is a capable jumper.",
       "date": "2026-09-12",
       "image": "/assets/images/swordtail-tank-setup.jpg",
       "category": "Fish",

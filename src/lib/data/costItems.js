@@ -1671,7 +1671,7 @@ export const COST_ITEMS = {
   'molly-aquarium-salt-optional-long': {
     label: "Aquarium salt (optional, long-lasting)",
     spec: "",
-    low: 20, high: 25, product: "aquarium-salt-api-33oz", checked: '2026-10',
+    low: 10, high: 15, product: "aquarium-salt-api-33oz", checked: '2026-10',
   },
   'neon-tetra-gentle-filter': {
     label: "Gentle filter",
@@ -1714,6 +1714,15 @@ export const COST_ITEMS = {
     label: "Aquarium sand, 10 lb bag",
     spec: "",
     low: 10, high: 20, product: "betta-substrate-caribsea-freshwater-sand", checked: '2026-10',
+  },
+  // Black sand, one 20 lb bag. Tahitian Moon 20 lb seen at $38 (JZX Online,
+  // sold out, 2026-11-01); the Amazon listing showed "Currently unavailable"
+  // that day. Other CaribSea Super Naturals 20 lb bags listed about $30 to
+  // $45. Rounded outward around the Tahitian Moon figure.
+  'sand-black-15lb': {
+    label: "Black aquarium sand, 15.4 lb bag",
+    spec: "15.4 lb",
+    low: 30, high: 40, product: "sand-seachem-flourite-black-15lb", checked: '2026-11',
   },
   // 2026-10
   'glass-lid-48in-versa-top': {

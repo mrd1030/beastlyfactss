@@ -4226,7 +4226,19 @@ export const AFFILIATE_PRODUCTS = [
     retailer: "amazon",
     link: "https://www.amazon.com/dp/B007R55QUU?tag=beastlyfacts-20",
     description: "Fine black sand that makes small colorful fish like neon and cardinal tetras show up, and is soft on corydoras barbels.",
-    covers: ["Dark fine gravel or sand", "Sand, or smooth pea-sized or larger gravel", "Fine gravel or sand", "Sand or fine gravel substrate", "Smooth substrate, sand or rounded gravel", "Fine gravel or sand substrate", "Fine gravel or sand in a darker color", "Fine sand or small, smooth gravel", "Soft sand, about 2 inches deep"],
+    covers: ["Dark fine gravel or sand", "Sand, or smooth gravel too large to swallow", "Fine gravel or sand", "Sand or fine gravel substrate", "Smooth substrate, sand or rounded gravel", "Fine gravel or sand substrate", "Fine gravel or sand in a darker color", "Fine sand or small, smooth gravel", "Soft sand, a thin layer under an inch deep"],
+    pets: ["fish"],
+  },
+  {
+    // Added 2026-11-01 by Claude (owner rule of 2026-11-01): Tahitian Moon was
+    // "Currently unavailable". Listing opened 2026-11-01, sold by Amazon.com.
+    slug: "sand-seachem-flourite-black-15lb",
+    product: "Seachem Flourite Black Sand, 7 kg (15.4 lb)",
+    category: "Substrate",
+    retailer: "amazon",
+    link: "https://www.amazon.com/dp/B0018CLX3C?tag=beastlyfacts-20",
+    description: "Natural black clay sand for planted tanks. Seachem says it is not chemically coated or treated and will not alter the pH, so it suits soft-water tetras.",
+    covers: [],
     pets: ["fish"],
   },
   {

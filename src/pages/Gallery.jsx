@@ -153,17 +153,17 @@ export default function Gallery() {
   const safePage = Math.min(Math.max(1, page), Math.max(1, totalPages));
   const paginated = displayPhotos.slice((safePage - 1) * PAGE_SIZE, safePage * PAGE_SIZE);
 
-  const setPageParam = (newPage) => {
+  const setPageParam = (newPage, keepScroll = false) => {
     const params = new URLSearchParams(location.search);
     if (newPage > 1) params.set('page', String(newPage));
     else params.delete('page');
-    navigate({ search: params.toString() }, { replace: false });
+    navigate({ search: params.toString() }, { replace: false, state: keepScroll ? { keepScroll: true } : undefined });
   };
 
+  // A category chip sits at the top of the list already, so switching stays put.
   const handleCategoryChange = (cat) => {
     setActiveCategory(cat);
-    setPageParam(1);
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    setPageParam(1, true);
   };
 
   // Back to page 1 on every keystroke: without it, typing while on page 4 of a

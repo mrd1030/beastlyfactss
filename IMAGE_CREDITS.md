@@ -92,3 +92,5 @@ frog, pen-tailed tree shrew) and Adobe Firefly for ids 287 to 296.
 | `glowlight-tetra-handling.jpg` (guide hero, `public/assets/images/`), resized to 1168x784, not cropped | Adobe Firefly, partner model Gemini 3.1 (Nano Banana 2) | 2026-11-01 |
 | `glowlight-tetra-health-issues.jpg` (guide hero, `public/assets/images/`), resized to 1168x784, not cropped | Adobe Firefly, partner model Gemini 3.1 (Nano Banana 2) | 2026-11-01 |
 | `glowlight-tetra-enrichment.jpg` (guide hero, `public/assets/images/`), resized to 1168x784, not cropped | Adobe Firefly, partner model Gemini 3.1 (Nano Banana 2) | 2026-11-01 |
+| `livebearers.jpg` (livebearer group page head, `public/assets/guides/`), resized to 1168x784, not cropped. Shows guppies, black mollies and swordtails, no platies | Adobe Firefly, partner model Nano Banana 2.1 | 2026-11-01 |
+| `neon-tetra.jpg` (neon tetra hub and encyclopedia head, `public/assets/guides/`, replacing the earlier photo), resized to 1168x784, not cropped | Adobe Firefly, partner model Nano Banana 2.1 | 2026-11-01 |

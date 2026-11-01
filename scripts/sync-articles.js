@@ -331,9 +331,9 @@ fs.mkdirSync('./src/lib/generated', { recursive: true });
 fs.writeFileSync('./src/lib/generated/mdx-meta.json', JSON.stringify(mdxMeta, null, 2));
 console.log(`Synced ${mdxMeta.length} MDX post metadata entries to src/lib/generated/mdx-meta.json`);
 
-// The four-field companion index for pages that only link to articles. See
+// The five-field companion index for pages that only link to articles. See
 // src/lib/relatedPosts.js for why it exists.
-const mdxRelated = mdxMeta.map(({ slug, title, emoji, category }) => ({ slug, title, emoji: emoji || null, category: category || null }));
+const mdxRelated = mdxMeta.map(({ slug, title, emoji, category, image }) => ({ slug, title, emoji: emoji || null, category: category || null, image: image || null }));
 fs.writeFileSync('./src/lib/generated/mdx-related.json', JSON.stringify(mdxRelated));
 
 // The build date, as a bundle constant, for anything that depends on the day

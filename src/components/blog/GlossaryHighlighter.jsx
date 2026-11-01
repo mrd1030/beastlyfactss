@@ -82,6 +82,15 @@ function openTip(wrapper, tooltip) {
   wrapper.dataset.open = 'true';
   wrapper.firstChild.setAttribute('aria-expanded', 'true');
   Object.assign(tooltip.style, { display: 'block', pointerEvents: 'auto', left: '', top: '', bottom: '' });
+  placeTip(tooltip);
+}
+
+// Every way the box can appear (tap, hover, keyboard focus) runs this, so it
+// never hangs off the side of the screen and pushes the page sideways.
+function placeTip(tooltip) {
+  Object.assign(tooltip.style, { left: '', top: '', bottom: '', marginTop: '' });
+  const shown = getComputedStyle(tooltip).display !== 'none';
+  if (!shown) { tooltip.style.visibility = 'hidden'; tooltip.style.display = 'block'; }
   // Keep it on screen: a term near the right edge would push a 16rem box off
   // the side, and one near the top of the viewport has no room above.
   const r = tooltip.getBoundingClientRect();
@@ -90,6 +99,7 @@ function openTip(wrapper, tooltip) {
   const overflowRight = r.right - (document.documentElement.clientWidth - 8);
   if (overflowRight > 0) tooltip.style.left = `${-Math.min(overflowRight, r.left - 8)}px`;
   if (r.top < 8) Object.assign(tooltip.style, { top: '100%', bottom: 'auto', marginTop: '6px' });
+  if (!shown) { tooltip.style.visibility = ''; tooltip.style.display = ''; }
 }
 
 // The one tap-opened definition, if any. Module-level with a single
@@ -98,12 +108,31 @@ function openTip(wrapper, tooltip) {
 // wrapped, which used to leave them tied to a listener that was gone).
 const openState = { current: null };
 if (typeof document !== 'undefined') {
+  // A box can also be showing only because its term holds focus (some phone
+  // browsers focus the link on touch and keep it), which openState never
+  // sees. Both handlers below drop that focus too.
+  const dropFocusedTerm = (target) => {
+    const a = document.activeElement;
+    if (a && a.closest && a.closest('.group\\/gloss') && !(target && a.closest('.group\\/gloss').contains(target))) a.blur();
+  };
   document.addEventListener('pointerdown', (e) => {
     if (openState.current && !openState.current.contains(e.target)) {
       closeTip(openState.current);
       openState.current = null;
     }
+    dropFocusedTerm(e.target);
   }, true);
+  // Scrolling away is a way of saying done with it. Only a finger drag drops
+  // a focused term: a keyboard user tabbing to a term makes the browser scroll
+  // it into view, and blurring on that scroll would throw their focus away.
+  const closeOpen = () => {
+    if (openState.current) {
+      closeTip(openState.current);
+      openState.current = null;
+    }
+  };
+  window.addEventListener('scroll', closeOpen, { passive: true });
+  window.addEventListener('touchmove', () => { closeOpen(); dropFocusedTerm(null); }, { passive: true });
 }
 
 function closeTip(wrapper) {
@@ -148,7 +177,7 @@ function buildHighlightNode(matchedText, info, navigate) {
   const tooltip = document.createElement('span');
   tooltip.id = `gloss-tip-${info.slug}`;
   tooltip.setAttribute('role', 'tooltip');
-  tooltip.className = 'pointer-events-none absolute left-0 bottom-full mb-1.5 z-20 hidden [@media(hover:hover)]:group-hover/gloss:block group-focus-within/gloss:block w-64 max-w-[80vw]';
+  tooltip.className = 'pointer-events-none absolute left-0 bottom-full mb-1.5 z-20 hidden [@media(hover:hover)_and_(pointer:fine)]:group-hover/gloss:block group-focus-within/gloss:block w-64 max-w-[80vw]';
   tooltip.innerHTML = `<span class="block bg-card border border-border rounded-xl shadow-lg px-3 py-2 text-xs leading-relaxed text-muted-foreground text-left">` +
     `<span class="block font-body font-bold text-foreground mb-0.5">${escapeHtml(info.displayTerm)}</span>` +
     `${escapeHtml(info.definition)}` +
@@ -158,6 +187,8 @@ function buildHighlightNode(matchedText, info, navigate) {
   // pointer-events-none so they never block the text under them.
   tooltip.addEventListener('click', (e) => { e.preventDefault(); go(); });
   wrapper.appendChild(tooltip);
+  wrapper.addEventListener('pointerenter', () => placeTip(tooltip));
+  wrapper.addEventListener('focusin', () => placeTip(tooltip));
 
   return wrapper;
 }

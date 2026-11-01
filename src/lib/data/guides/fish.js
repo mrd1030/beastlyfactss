@@ -4,6 +4,86 @@ import { fillCostTokens } from '../../costs.js';
 
 export const fishGuides = fillCostTokens([
   {
+    id: "livebearers",
+    name: "Livebearer Care: The Essentials",
+    emoji: "🐟",
+    difficulty: "Beginner",
+    petType: "Fish",
+    image: "/assets/guides/livebearers.jpg",
+    tagline: "The fish that give birth to swimming young, and the four everyone starts with!",
+    seoTitle: "Livebearer Care Guide: Guppies, Mollies, Platies",
+    seoDescription: "Guppies, mollies, platies and swordtails share one set of rules: hard water, the right sex ratio and a plan for fry. Compare all four of them side by side.",
+    funFact: "Swordtails share a genus with platies, Xiphophorus, Greek for \"sword bearer\", and the two are close enough that they have been crossed on purpose for almost a century.",
+    // Group hub for the livebearers (layout "group", rendered by
+    // GuideDetail.jsx), built on the tetras group pattern: a chooser, not a
+    // species checklist. Each species' strip copies its figures from the deep
+    // dive named in `sources` (null: the encyclopedia entry); each rule tile
+    // copies its figure from the guide in its `source`; the FAQs are copied
+    // verbatim from those guides. Ranges are each species' full range as its
+    // tank setup guide states it, the guppy's pH included (7.0 to 8.5). Drafted
+    // 2026-11-01, not yet live.
+    layout: "group",
+    // Intro research, with quotes and URLs: research/LIVEBEARER_GROUP_RESEARCH.md
+    // (FishBase species and family pages, Helmstetter et al. 2016, Schlupp
+    // 2018, Gasparini et al. 2018, Seriously Fish). Not cited on the page,
+    // matching the tetras group.
+    intro: {
+      text: "Livebearer is a common name rather than one scientific group: fish in several families give birth to free-swimming young, from the splitfins of Mexico to the surfperches of the North Pacific. Guppies, mollies, platies and swordtails all belong to one family, the Poeciliidae, and all four come from the Americas: the guppy from northeastern South America and the nearby Caribbean islands, the others mainly from Mexico and Central America, with mollies ranging from the southern United States to northern South America. Fertilization is internal, and a male uses his gonopodium, an anal fin modified into a mating organ, to transfer sperm. A female can store that sperm for months, so one mating can fertilize several broods and a tank can fill with fry long after the last male is gone. All four want hard, alkaline water, and mollies tolerate brackish water and even full marine conditions.",
+    },
+    branches: {
+      groupName: "Livebearers",
+      heading: "Pick your livebearer",
+      intro: "Same rules, different numbers. The figures under each species come from its own guides, and the row opens its full care guide.",
+      fields: ["Tank", "Temp", "pH", "Size"],
+      species: [
+        {
+          id: "guppy",
+          name: "Guppy",
+          values: ["18 x 12 in base", "72 to 82°F", "7.0 to 8.5", "1 to 2.4 in"],
+          sources: ["guppy-tank-setup-guide", "guppy-tank-setup-guide", "guppy-tank-setup-guide", null],
+          ranges: { tempF: [72, 82], ph: [7.0, 8.5] },
+        },
+        {
+          id: "molly",
+          name: "Molly",
+          values: ["20 gallons for a small group", "70 to 82°F", "7.5 to 8.5", "3 to 6 in"],
+          sources: ["molly-tank-setup-guide", "molly-tank-setup-guide", "molly-tank-setup-guide", null],
+          ranges: { tempF: [70, 82], ph: [7.5, 8.5] },
+        },
+        {
+          id: "platy",
+          name: "Platy",
+          values: ["24 x 12 in base", "68 to 79°F", "7.0 to 8.2", "1.6 to 2.4 in"],
+          sources: ["platy-tank-setup-guide", "platy-tank-setup-guide", "platy-tank-setup-guide", null],
+          ranges: { tempF: [68, 79], ph: [7.0, 8.2] },
+        },
+        {
+          id: "swordtail",
+          name: "Swordtail",
+          values: ["36-inch tank or longer", "72 to 82°F", "7.0 to 8.0", "Up to 6.3 in"],
+          sources: ["swordtail-tank-setup-guide", "swordtail-tank-setup-guide", "swordtail-tank-setup-guide", null],
+          ranges: { tempF: [72, 82], ph: [7.0, 8.0] },
+          caution: "Swordtails and platies can hybridize: keep one or the other unless hybrid fry are fine.",
+        },
+      ],
+    },
+    rules: [
+      { label: "Fry", value: "One mating can give a female guppy up to about 8 broods. Adults eat fry, so dense cover decides how many survive.", source: "guppy-handling-guide" },
+      { label: "Sex ratio", value: "Two to three females per male cuts the chasing. Separate tanks for the sexes, or a single-sex group, is the only way to stop breeding.", source: "platy-handling-guide" },
+      { label: "Hard water", value: "Livebearers want hard, alkaline water, the opposite of a tetra. GH and pH are separate measurements, so test both before buying fish.", source: "freshwater-ph-gh-kh-guide" },
+      { label: "Cycle first", value: "Most fishless cycles finish in four to six weeks. No fish goes in until ammonia and nitrite read zero.", source: "aquarium-cycling-guide" },
+      { label: "Quarantine", value: "At least 30 days in a separate tank before a new fish joins the group.", source: "fish-quarantine-and-treatment-guide" },
+      { label: "Ich", value: "86°F held for two weeks kills most strains, and it sits above every livebearer here. Warm only to the top of the species' range and let medication do the killing.", source: "aquarium-ich-treatment-guide" },
+      { label: "Water changes", value: "25 to 30% weekly. Test nitrate first: under 20 ppm the routine is right, past 40 ppm the next change is 50%.", source: "aquarium-water-changes-guide" },
+      { label: "Power outage", value: "Oxygen is the threat, not darkness. Unplug the filter rather than letting it sit dead in the water, and keep the surface moving.", source: "aquarium-power-outage-and-transport-guide" },
+    ],
+    faqs: [
+      { q: "How do I manage platy population if I don't want constant breeding?", a: "Keep males and females in separate tanks to avoid breeding entirely, or keep a males-only group for a colorful, breeding-free tank. If you do want controlled breeding, a ratio of roughly two to three females per male cuts down on how much the females get chased and stressed by mating attempts." },
+      { q: "How long should I quarantine a new fish before adding it to my main tank?", a: "At least 30 days, and 30 to 60 days for a valuable fish you want to be sure about. Thirty days is the floor, not the target, since some parasites and infections take that long to show themselves." },
+      { q: "How long does it take to cycle a fish tank?", a: "Most fishless cycles finish in four to six weeks at a stable warm temperature, though a gene-sequencing study of real home aquarium biofilters found two tanks reaching undetectable ammonia and nitrite by week three while a third took until week eight. Cold water, no seeding, and an inconsistent ammonia dose all push a cycle toward the slower end of that range." },
+    ],
+  },
+  {
     id: "tetras",
     name: "Tetra Care: The Essentials",
     emoji: "🐟",
@@ -31,7 +111,7 @@ export const fishGuides = fillCostTokens([
     // their guide set ships. Live 2026-11-01 with ember; rummy-nose, black
     // skirt and glowlight follow one species a day (content/_scheduled-tetras/).
     layout: "group",
-    // Intro research, with quotes and URLs: TETRA_GROUP_RESEARCH.md
+    // Intro research, with quotes and URLs: research/TETRA_GROUP_RESEARCH.md
     // (Merriam-Webster for the name, Melo et al. 2024 for the families,
     // FishBase for Africa and Mexico, Gonzalez, Patrick and Val 2024 for the
     // water, Romano and Stefanini 2021 for schooling). Not cited on the page,
@@ -105,14 +185,14 @@ export const fishGuides = fillCostTokens([
       { label: "Soft water", value: "Every tetra here wants soft, acidic water. Work with what your tap gives you: dosing pH-up or pH-down against KH is how keepers crash a tank.", source: "freshwater-ph-gh-kh-guide" },
       { label: "Food size", value: "Tetra mouths are tiny, so micro-pellets or flake crushed fine. Food too large gets spat out, and the fish starve in a tank that looks fed.", source: "neon-tetra-feeding-guide" },
       { label: "Quarantine", value: "At least 30 days in a separate tank before a new fish joins the school.", source: "fish-quarantine-and-treatment-guide" },
-      { label: "Ich", value: "86°F held for two weeks kills most strains, and it sits above every tetra here but one. Cardinals tolerate it in short spells, with strong aeration; for the rest, heat goes only to the top of their range and medication does the killing.", source: "aquarium-ich-treatment-guide" },
+      { label: "Ich", value: "86°F held for two weeks kills most strains, and it sits above every tetra here but one. Cardinals tolerate it in short spells, so heat is possible only with strong aeration and close watching; for the rest, heat goes only to the top of their range and medication does the killing.", source: "aquarium-ich-treatment-guide" },
       { label: "Water changes", value: "25 to 30% weekly. Test nitrate first: under 20 ppm the routine is right, past 40 ppm the next change is 50%.", source: "aquarium-water-changes-guide" },
       { label: "Power outage", value: "Oxygen is the threat, not darkness. Unplug the filter rather than letting it sit dead in the water, and keep the surface moving.", source: "aquarium-power-outage-and-transport-guide" },
     ],
     faqs: [
-      { q: "How many of a schooling fish do I need?", a: "Six is the floor most species pages give, and the research points higher. In the group-size study behind that advice, neon tetras and white cloud mountain minnows showed the least aggression and darting in the larger groups, and groups of 10 shoaled the most. Ten of one species beats five each of two." },
-      { q: "Can I treat ich with heat alone?", a: "Only if your fish can live at 86°F for two weeks, because that is the temperature most ich strains cannot survive, and it must be held with extra aeration since warm water carries less oxygen. Discus can, and cardinal tetras tolerate it in short spells, so for them it is possible with strong aeration, watched closely. Goldfish, koi, zebra danios, neon, ember, rummy-nose, black skirt and glowlight tetras, and bristlenose plecos cannot, and for them heat goes only as high as the species ceiling, to speed the cycle, while salt or medication does the killing." },
-      { q: "Can different tetra species school together?", a: "Not as one school. Two neons, four embers and four cardinals are three small groups, each below the floor of six, rather than one school of 10. Give each species its own full school in a tank and water that suit all of them, or keep a single species." },
+      { q: "How many of a schooling fish do I need?", a: "Six is the floor most species pages give, eight is the least to buy for neon tetras, and the research points higher. In the group-size study behind that advice, neon tetras and white cloud mountain minnows showed the least aggression and darting in the larger groups, and groups of 10 shoaled the most. Ten of one species beats five each of two." },
+      { q: "Can I treat ich with heat alone?", a: "Only if your fish can live at 86°F for two weeks, because that is the temperature most ich strains cannot survive, and it must be held with extra aeration since warm water carries less oxygen. Discus can, and cardinal tetras tolerate water reaching 86°F in short spells, so for them the heat method is possible only with strong aeration and the fish watched closely. Goldfish, koi, zebra danios, neon, ember, rummy-nose, black skirt and glowlight tetras, and bristlenose plecos cannot, and for them heat goes only as high as the species ceiling, to speed the cycle, while salt or medication does the killing." },
+      { q: "Can different tetra species school together?", a: "Not as one school. Two neons, four embers and four cardinals are three small groups, each well below the eight to ten a tetra school needs, rather than one school of 10. Give each species its own full school in a tank and water that suit all of them, or keep a single species." },
       { q: "How long does it take to cycle a fish tank?", a: "Most fishless cycles finish in four to six weeks at a stable warm temperature, though a gene-sequencing study of real home aquarium biofilters found two tanks reaching undetectable ammonia and nitrite by week three while a third took until week eight. Cold water, no seeding, and an inconsistent ammonia dose all push a cycle toward the slower end of that range." },
     ],
   },
@@ -389,7 +469,7 @@ export const fishGuides = fillCostTokens([
     tagline: "The neon tetra's flashier cousin, lit up red from nose to tail!",
     seoTitle: "Cardinal Tetra Care Guide: Tank, Water, and Health",
     seoDescription: "Cardinal tetras want soft, acidic water and a school of ten or more. Set up the tank, feed a tiny mouth, and get wild-caught fish through the first two weeks.",
-    funFact: "Many cardinal tetras are still wild-caught every year on Brazil's Rio Negro through community-based fisheries. The trade is often argued to be a conservation positive, since a living fishery gives river communities an economic reason to keep the forest standing, though that claim is contested.",
+    funFact: "Many cardinal tetras are still wild-caught every year on Brazil's Rio Negro through community-based fisheries. The trade is often argued to be a conservation positive, since a living fishery gives river communities an economic reason to keep the forest standing, though the catch could fall if fishing pressure rises.",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
     // the hub keeps no number of its own. Adult size comes from the
@@ -405,7 +485,7 @@ export const fishGuides = fillCostTokens([
     firstWeek: {
       intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
-        { label: "Before any fish", value: "A 2008 study on this species found it sensitive to nitrite, so ammonia and nitrite both read zero and a finished cycle before stocking is the single most useful habit.", source: "cardinal-tetra-health-issues-guide" },
+        { label: "Before any fish", value: "A 2008 study on this species found it sensitive to nitrite, so ammonia and nitrite both read zero and a finished cycle before stocking is the single most important step when the tank is first set up.", source: "cardinal-tetra-health-issues-guide" },
         { label: "School size", value: "Plan for ten, with eight the least to buy. Cardinals are obligate schooling fish and need the group to feel secure.", source: "cardinal-tetra-handling-guide" },
         { label: "Tank size", value: "A 20-gallon long, roughly 24x12 inches of base, for the school of 10. A standard 10-gallon does not meet that footprint.", source: "cardinal-tetra-tank-setup-guide" },
         { label: "Temperature", value: "77 to 82°F for general care, inside a tolerated 73 to 84°F. Cardinals tolerate water reaching 86°F in short spells, past the roughly 77°F neons are comfortable with, so they suit a warmer community tank.", source: "cardinal-tetra-tank-setup-guide" },
@@ -458,7 +538,7 @@ export const fishGuides = fillCostTokens([
       "A separate bare tank with its own sponge filter, for quarantine",
     ],
     faqs: [
-      { q: "How many cardinal tetras should I keep together?", a: "Ten is the number to plan for, and eight is the least to buy. Cardinals are schooling fish that do best in a large group." },
+      { q: "How many cardinal tetras should I keep together?", a: "Ten is the number to plan for, and eight is the least to buy. Cardinals are schooling fish that do best in a large group. Smaller groups turn pale, hide, and get sick more often from the stress." },
       { q: "Can cardinal tetras get neon tetra disease?", a: "Yes. It is named for the neon, but the microsporidian parasite behind it, Pleistophora hyphessobryconis, affects tetras broadly, along with angelfish, rasboras, barbs, and zebrafish. Watch for restless or erratic swimming, fading or patchy color, visible lumps under the skin, and a curved spine in advanced cases." },
       { q: "What's the non-obvious detail that makes the biggest difference in a cardinal tetra tank?", a: "Blackwater conditions. As driftwood and Indian almond leaves release tannins, the water tints and the pH eases down, which copies the shaded, leaf-strewn streams the fish comes from. Add dense planting and dim light, and color and confidence both improve noticeably." },
     ],
@@ -493,7 +573,7 @@ export const fishGuides = fillCostTokens([
         { label: "Group size", value: "Six of the same species, minimum, and more is better. A lone or paired cory hides, darts and goes off its food.", source: "corydoras-catfish-handling-guide" },
         { label: "Temperature", value: "72 to 82°F covers most species in the hobby. Run a heater unless the room stays warm year-round, and hold the number steady rather than chasing a precise one.", source: "corydoras-catfish-tank-setup-guide" },
         { label: "Water chemistry", value: "pH 7.0 to 7.8 for captive-bred cories, which is most of the trade. Ammonia and nitrite at zero, nitrate low through regular water changes.", source: "corydoras-catfish-tank-setup-guide" },
-        { label: "Substrate", value: "Soft sand, or smooth rounded gravel, about 2 inches deep. No sharp or coarse gravel, and some sharp-grained planted-tank sands are flagged unsuitable for bottom-dwellers.", source: "corydoras-catfish-tank-setup-guide" },
+        { label: "Substrate", value: "Soft sand, or smooth rounded gravel, in a thin layer under an inch deep. No sharp or coarse gravel, and some sharp-grained planted-tank sands are flagged unsuitable for bottom-dwellers.", source: "corydoras-catfish-tank-setup-guide" },
         { label: "Surface access", value: "Gulping air is normal breathing; keep the surface clear. An occasional dash up is fine; constant dashes mean the water is short of oxygen or fouled.", source: "corydoras-catfish-enrichment-guide" },
         { label: "Quarantine", value: "At least 30 days in a bare tank before new cories join; 30 to 60 for a fish worth being sure of.", source: "fish-quarantine-and-treatment-guide" },
         { label: "Not algae eaters", value: "The cleanup-crew reputation is wrong. Cories pick leftovers off the bottom and need sinking food of their own; algae and scraps will not keep them alive.", source: "corydoras-catfish-feeding-guide" },
@@ -533,7 +613,7 @@ export const fishGuides = fillCostTokens([
       "Gentle-flow filter",
       "Water test kit",
       "Water conditioner",
-      "Soft sand, about 2 inches deep",
+      "Soft sand, a thin layer under an inch deep",
       "Plants and hides for shaded cover",
       "Sinking pellets or wafers for bottom feeders",
       "Frozen or live worms for the rotation",
@@ -662,7 +742,7 @@ export const fishGuides = fillCostTokens([
     // rule cite the shared aquarium guides. The emergency card follows the
     // health guide's own three groups: test the water first and start ich
     // treatment today (callNow), watch and recheck tomorrow (soon). Built
-    // 2026-10-31 with the ember tetra set (research: EMBER_TETRA_RESEARCH.md).
+    // 2026-10-31 with the ember tetra set (research: research/EMBER_TETRA_RESEARCH.md).
     layout: "router",
     firstWeek: {
       intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
@@ -676,7 +756,7 @@ export const fishGuides = fillCostTokens([
         { label: "Diet", value: "Micro-pellets or flake crushed fine as the staple, plus small live or frozen foods such as baby brine shrimp, daphnia, cyclops and moina. At about 0.8 inch, they need tiny, slow-sinking food.", source: "ember-tetra-feeding-guide" },
         { label: "Feeding schedule", value: "Once or twice a day, a small pinch the school finishes before it settles on the substrate.", source: "ember-tetra-feeding-guide" },
         { label: "Acclimation", value: "Lights off, then mix tank water into the bag over 30 to 60 minutes. Net the fish across, discard the bag water, and check the bag, net and floor for a missing fish.", source: "ember-tetra-handling-guide" },
-        { label: "Tankmates", value: "Very peaceful, and they lose out to any tankmate that is rowdy or much bigger. Adult dwarf shrimp are safe; shrimplets are not.", source: "ember-tetra-handling-guide" },
+        { label: "Tankmates", value: "Very peaceful, and they lose out to any tankmate that is rowdy or much bigger. Adult dwarf shrimp are safe; shrimplets are not.", source: "ember-tetra-tank-setup-guide" },
         { label: "Quarantine", value: "At least 30 days in a separate tank before new fish join an established school.", source: "ember-tetra-health-issues-guide" },
         { label: "Ich", value: "No heat cure: most strains die above 86°F and the ember's range tops out at 82°F. Warm only to 82°F and let salt, about a tablespoon per 5 gallons, or an ich medication do the killing.", source: "ember-tetra-health-issues-guide" },
         { label: "Water changes", value: "25 to 30% weekly from the substrate, with conditioned water at tank temperature. Test nitrate first: under 20 ppm the routine is right, past 40 ppm the next change is 50%.", source: "aquarium-water-changes-guide" },
@@ -702,14 +782,16 @@ export const fishGuides = fillCostTokens([
         "A fish off its food or hanging listless",
         "Extra mucus on the skin",
         "Color fading to dull",
+        "Ragged fin edges, or a cotton-like tuft on the skin or fins",
+        "A fish growing thin while it keeps eating",
       ],
       vetLine: "Most of what goes wrong starts in the water or arrives with a new fish, so test first and quarantine every newcomer.",
     },
     routes: [
       { slug: "ember-tetra-cost-guide", line: "$2.50 to $3.50 a fish, why the school is bought ten at a time, and the %%setup:ember-tetra%% that goes into the tank around them." },
-      { slug: "ember-tetra-tank-setup-guide", line: "Ten gallons for ten fish, soft water at 75 to 82°F, gentle flow, and the dense planting this species is kept in." },
+      { slug: "ember-tetra-tank-setup-guide", line: "Ten gallons for ten fish, soft water at 75 to 82°F, a dark floor that keeps it soft, dense planting, and the tankmates that work." },
       { slug: "ember-tetra-feeding-guide", line: "Food for a 0.8-inch fish, once or twice a day, and what fry eat first." },
-      { slug: "ember-tetra-handling-guide", line: "Netting, bagging and an acclimation that takes 30 to 60 minutes, plus the school size and the tankmates that work." },
+      { slug: "ember-tetra-handling-guide", line: "Netting, bagging and an acclimation that takes 30 to 60 minutes, plus the school size and the gloves that keep fish tank granuloma out of a cut." },
       { slug: "ember-tetra-health-issues-guide", line: "Why the ich heat cure stops at 82°F, the 30-day quarantine, and the signs that need action today." },
       { slug: "ember-tetra-enrichment-guide", line: "How a shoal hides from above in clear Brazilian water, and the cover and food that bring the same behavior out in a tank." },
     ],
@@ -827,7 +909,7 @@ export const fishGuides = fillCostTokens([
     tagline: "The colorful, prolific livebearer that turns a starter tank into a thriving colony fast!",
     seoTitle: "Guppy Care Guide: Tank, Breeding, and Health",
     seoDescription: "Guppies are easy until they multiply. Set up a heated, hard-water tank, pick the sex ratio that stops harassment, and choose a population plan before fry come.",
-    funFact: "Guppies are livebearers, meaning females give birth to free-swimming fry rather than laying eggs, and a single female can store sperm from one mating to produce several broods of 20 to 50+ fry over the following months. The species is named after Robert John Lechmere Guppy, who submitted specimens from Trinidad to the British Museum in the 1860s.",
+    funFact: "Guppies are livebearers, meaning females give birth to free-swimming fry rather than laying eggs, and a single female can store sperm from one mating to produce up to about 8 monthly broods, each usually 20 to 40 young. The common name honors Robert John Lechmere Guppy, a Trinidad naturalist.",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes; the
     // hub keeps no number of its own, which is why there is no feeding frequency
@@ -840,20 +922,20 @@ export const fishGuides = fillCostTokens([
     firstWeek: {
       intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
-        { label: "Tank size", value: "5 gallons is a bare minimum for a trio; 10 gallons is the practical start for 5 or 6, and 20 the better long-term choice if males and females share a tank.", source: "guppy-tank-setup-guide" },
+        { label: "Tank size", value: "A base of at least 18 by 12 inches, about 11 gallons, is the minimum, and a tank at least 24 inches long suits a group of 5 or more. A 20-gallon is the better long-term choice if males and females share a tank.", source: "guppy-tank-setup-guide" },
         { label: "Temperature", value: "76 to 78°F as the target inside 72 to 82°F. A heater unless the room stays warm year-round, at 3 to 5 watts per gallon, so 25 to 50 watts on a 10-gallon.", source: "guppy-tank-setup-guide" },
-        { label: "Water chemistry", value: "pH 7.0 or above and moderately hard water. Soft tap water gets a mineral supplement.", source: "guppy-tank-setup-guide" },
+        { label: "Water chemistry", value: "pH 7.0 to 8.5 and moderately hard to hard water, roughly 8 to 30 dGH. Soft tap water gets a mineral block or crushed coral.", source: "guppy-tank-setup-guide" },
         { label: "Filtration and substrate", value: "Gentle flow, a sponge filter if fry are wanted, an adjustable hang-on-back if not. Fine gravel or sand, darker for color, nothing sharp near those fins.", source: "guppy-tank-setup-guide" },
         { label: "Lighting", value: "A basic LED on an 8 to 10 hour cycle.", source: "guppy-tank-setup-guide" },
         { label: "Sex ratio", value: "Two to three females per male minimum, six or more is common and fine. Or males only, which ends the harassment question and the endless fry, and keeps the color.", source: "guppy-enrichment-guide" },
-        { label: "Feeding schedule", value: "Adults once to three times a day, only what clears in about 1 to 2 minutes. Fry 3 to 5 times a day, juveniles around 3 to 4.", source: "guppy-feeding-guide" },
+        { label: "Feeding schedule", value: "Adults at least once a day, in small portions of about 3% of body weight; sources range from once to three times. Only what clears in about 1 to 2 minutes. Fry 3 to 5 times a day, juveniles around 3 to 4.", source: "guppy-feeding-guide" },
         { label: "Diet", value: "A tropical flake or small pellet for community fish, not goldfish food, with live or frozen protein and small blanched vegetable matter in rotation.", source: "guppy-feeding-guide" },
         { label: "Tankmates", value: "Not bettas, not goldfish. Past the floor, add fish only while nitrate holds under 20 ppm before the weekly change; count every fish at adult size.", source: "aquarium-stocking-and-tankmates-guide" },
         { label: "Population plan", value: "Separate the sexes, keep males only, or let it happen and plan to rehome fry or let predation control numbers. Decide before the first brood.", source: "guppy-handling-guide" },
         { label: "Handling", value: "An observation pet. Guide with a net rather than touching.", source: "guppy-handling-guide" },
-        { label: "Adult size", value: "Males around an inch and a half; females larger and plainer, up to about 2.4 inches.", source: "guppy-handling-guide" },
-        { label: "Budget", value: "$2 to $5 for a wild-type guppy, $10 to $20 a pair for fancy varieties. A basic 10-gallon kit runs $30 to $100.", source: "guppy-cost-guide" },
-        { label: "Lifespan", value: "2 to 3 years, up to 4 or 5 with excellent care.", source: "guppy-cost-guide" },
+        { label: "Adult size", value: "Males around 1 to 2 inches, typically about an inch and a half; females larger and plainer, up to about 2.4 inches.", source: "guppy-handling-guide" },
+        { label: "Budget", value: "$2 to $5 for a standard guppy, about $12 to $17 a fish or $23 to $28 a pair for named fancy strains. A basic 10-gallon kit runs $30 to $100.", source: "guppy-cost-guide" },
+        { label: "Lifespan", value: "Short-lived. In one lab study, females averaged about 13 months from the start of the experiment and the longest-lived reached about 27 months; a well-kept aquarium fish may live longer.", source: "guppy-cost-guide" },
         { label: "Cycling", value: "Four to six weeks fishless, sometimes three weeks to two months. A water change once ammonia or nitrite passes roughly 0.1 to 0.25 ppm.", source: "aquarium-cycling-guide" },
         { label: "Quarantine", value: "At least 30 days in a bare hospital tank, 30 to 60 for a fish you want to be sure about. Thirty is the floor.", source: "fish-quarantine-and-treatment-guide" },
         { label: "Power outage", value: "Aerate right away with a battery air pump, or agitate the surface by hand every 10 to 15 minutes in a small tank and every 20 to 30 in a larger one.", source: "aquarium-power-outage-and-transport-guide" },
@@ -873,11 +955,11 @@ export const fishGuides = fillCostTokens([
       vetLine: "Any of these spreading to other fish means test the water immediately and consider a fish-health specialist rather than waiting.",
     },
     routes: [
-      { slug: "guppy-cost-guide", line: "$2 to $5 for a standard fish, $10 to $20 a pair for fancy strains, a modest setup, and the cost nobody budgets for: more guppies than you started with." },
-      { slug: "guppy-tank-setup-guide", line: "Tank size by group, the temperature target and heater math, water chemistry, gentle filtration, and cycling before the fish go in." },
+      { slug: "guppy-cost-guide", line: "$2 to $5 for a standard fish, $12 to $17 a fish for named fancy strains, a modest setup, a short lifespan, and the cost nobody budgets for: more guppies than you started with." },
+      { slug: "guppy-tank-setup-guide", line: "The minimum base and when to go bigger, the temperature target and heater math, water chemistry, gentle filtration, and cycling before the fish go in." },
       { slug: "guppy-feeding-guide", line: "Frequency by life stage, the 1 to 2 minute portion rule, what to feed and what to skip, and six reasons a guppy stops eating." },
-      { slug: "guppy-handling-guide", line: "Why this is a watching pet rather than a handling one, how livebearer breeding actually works, and the four ways to manage the population." },
-      { slug: "guppy-health-issues-guide", line: "Ich, velvet, fin and tail rot, dropsy, and swim bladder disorder, each with its visible signs and treatment, plus why heavy salting is a bad idea with this species." },
+      { slug: "guppy-handling-guide", line: "Why this is a watching pet rather than a handling one, telling males from females by the fin, how livebearer breeding works, and what to do when fry appear." },
+      { slug: "guppy-health-issues-guide", line: "Ich, velvet, fin and tail rot, dropsy, swim bladder disorder, and Camallanus, each with its visible signs and treatment, plus the salt course as an alternative to medication, since guppies have a wide salinity range." },
       { slug: "guppy-enrichment-guide", line: "What the harassment research says about sex ratio, why dense cover is a social tool rather than decor, and the priority order that follows from both." },
     ],
     buyList: [
@@ -893,9 +975,9 @@ export const fishGuides = fillCostTokens([
       "Frozen or live brine shrimp and daphnia for variety",
     ],
     faqs: [
-      { q: "What size tank does a guppy need?", a: "5 gallons is the bare minimum for a trio; 10 gallons is the practical starting point for a group of 5 or 6. Guppies breed readily, so a 20-gallon holds up better long term unless you separate males and females." },
-      { q: "How do I manage guppy population if I don't want constant breeding?", a: "Keep males and females in separate tanks to avoid breeding entirely, or keep males only for a colorful, breeding-free tank. If you do want controlled breeding, a ratio of roughly one male to two or three females reduces females getting harassed too heavily by mating attempts." },
-      { q: "How often should I feed my guppy?", a: "Adults land somewhere between once and three times a day. The portion rule is the part that does not vary: only offer what's fully cleared in about 1 to 2 minutes. Overfeeding, not underfeeding, is the more common real mistake, guppies beg regardless of actual hunger." },
+      { q: "What size tank does a guppy need?", a: "A base of at least 18 by 12 inches, about 11 gallons, is the minimum, and a tank at least 24 inches long suits a group of 5 or more. Guppies breed readily, so a 20-gallon holds up better long term unless you separate males and females. Go long and rectangular rather than tall, and use a lid, guppies are capable jumpers." },
+      { q: "How do I manage guppy population if I don't want constant breeding?", a: "Keep males and females in separate tanks to avoid breeding entirely, or keep males only for a colorful, breeding-free tank. If you do want controlled breeding, keep several females to each male, roughly two or three per male, so no single female takes all the mating attempts." },
+      { q: "How often should I feed my guppy?", a: "At least once a day, in small portions that add up to about 3% of body weight. Guppies take food readily, so too much is the easier mistake, and uneaten food left to rot fouls the water. Adults land somewhere between once and three times a day. Only offer what's fully cleared in about 1 to 2 minutes, because guppies beg regardless of actual hunger." },
     ],
   },
   {
@@ -995,10 +1077,10 @@ export const fishGuides = fillCostTokens([
     difficulty: "Beginner",
     petType: "Fish",
     image: "/assets/guides/molly.jpg",
-    tagline: "The easygoing livebearer that shrugs at water most fish would sulk in!",
+    tagline: "The big, grazing livebearer that thrives in hard, alkaline water and wants its greens!",
     seoTitle: "Molly Fish Care Guide: Tank, Diet, Breeding, and Health",
     seoDescription: "Mollies need hard, alkaline water and real vegetables. Set up a true 20-gallon tank, settle the salt question, stop the shimmy, and plan for fry before buying.",
-    funFact: "Unlike most freshwater aquarium fish, mollies are naturally a brackish-water species that can tightly regulate their salt and water balance well past normal seawater concentration. Whether a healthy freshwater tank needs aquarium salt added is genuinely disputed among experienced keepers though, some use it routinely, others argue consistent water changes do the same job without salt's downsides for live plants and snails.",
+    funFact: "Mollies are euryhaline, found in fresh, brackish and coastal water, and sailfin mollies can tightly regulate their salt balance up to roughly 65 parts per thousand, nearly twice seawater strength. Whether a healthy freshwater tank needs aquarium salt added is genuinely disputed among experienced keepers though, some use it routinely, others argue consistent water changes do the same job without salt's downsides for live plants and snails.",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
     // the hub keeps no number of its own. Adult size comes from the handling
@@ -1020,23 +1102,23 @@ export const fishGuides = fillCostTokens([
     firstWeek: {
       intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
-        { label: "Tank size", value: "20 gallons for a small group, 30 or more for sailfins or any group that has started breeding. Long rather than tall, with a lid, since mollies jump.", source: "molly-tank-setup-guide" },
-        { label: "Temperature", value: "72 to 82°F, held steady: a swing of more than about 2°F in 24 hours is one of the commonly cited shimmy triggers. A heater unless the room stays warm year-round.", source: "molly-tank-setup-guide" },
+        { label: "Tank size", value: "20 gallons is the minimum for a small group; 30 gallons is the cautious choice for sailfins or a growing colony. Long rather than tall, with a lid.", source: "molly-tank-setup-guide" },
+        { label: "Temperature", value: "72 to 82°F for short-fins, sailfins nearer 70 to 79°F, held steady: swings over about 2°F in 24 hours add to the stress behind shimmy. A heater unless the room stays warm year-round.", source: "molly-tank-setup-guide" },
         { label: "Water chemistry", value: "pH 7.5 to 8.5 and medium-hard to hard water. Soft tap water gets crushed coral or a buffering product to bring it into range.", source: "molly-tank-setup-guide" },
-        { label: "Salt", value: "Not a standing requirement. Its place is shimmy treatment, 1 tablespoon of aquarium salt per 5 gallons in a hospital tank, and only plain aquarium salt, never marine mix or table salt.", source: "molly-tank-setup-guide" },
-        { label: "Filtration", value: "A hang-on-back or canister turning over the full volume at least four times an hour. A sponge filter for a breeding or nursery tank, so fry are not pulled into the current.", source: "molly-tank-setup-guide" },
-        { label: "Cycle first", value: "4 to 6 weeks fishless, less with bottled bacteria, and a conditioner on every bucket of tap water. Ammonia and chlorine are both recognized shimmy triggers.", source: "molly-tank-setup-guide" },
+        { label: "Salt", value: "Disputed, and not a standing requirement; there is no agreed shimmy dose. The one firm figure is the ich bath, 4 to 5 grams per liter for 7 to 10 days. Plain aquarium salt only, never marine mix or table salt.", source: "molly-tank-setup-guide" },
+        { label: "Filtration", value: "A hang-on-back or canister turning over the full volume at least four times an hour; a sponge filter for a nursery tank.", source: "molly-tank-setup-guide" },
+        { label: "Cycle first", value: "4 to 6 weeks fishless, less with bottled bacteria, and a conditioner on every bucket of tap water. Ammonia and chlorine both add to the stress behind shimmy.", source: "molly-tank-setup-guide" },
         { label: "Water changes", value: "25 to 30% weekly from the substrate, with conditioned water at tank temperature. Test nitrate first: under 20 ppm the routine is right, past 40 ppm the next change is 50%.", source: "aquarium-water-changes-guide" },
-        { label: "Plants, a population lever", value: "Parents eat their fry. Dense live plants hide them and survival climbs; skip the cover and predation keeps the numbers down instead.", source: "molly-tank-setup-guide" },
-        { label: "Feeding schedule", value: "Adults once or twice a day, only what clears in a minute or two. Fry need small amounts at least 3 to 5 times a day.", source: "molly-feeding-guide" },
-        { label: "Diet", value: "Tropical flake or pellet as the base with real vegetable content on top: blanched zucchini, spinach, cucumber, lettuce or peas two to three times a week. An all-protein diet is the most repeated molly mistake.", source: "molly-feeding-guide" },
-        { label: "Sex ratio", value: "Two to three females per male, and more is better. An all-male group avoids fry entirely but needs space and numbers, since male mollies squabble more than male guppies.", source: "molly-enrichment-guide" },
-        { label: "Fry are coming", value: "Gestation 4 to 6 weeks and broods of 20 to 60. Females store sperm, so store-bought females keep producing without a male present.", source: "molly-handling-guide" },
-        { label: "Quarantine", value: "At least 30 days in a separate tank before new fish join the display. It catches most problems, shimmy included, before they spread.", source: "molly-health-issues-guide" },
-        { label: "Shimmy", value: "A side-to-side rocking as the fish swims, a sign of lost nerve and muscle control rather than a disease. Correct the water first: temperature toward 76 to 80°F, pH toward 7.5 to 8.5, hardness up if the water runs soft.", source: "molly-health-issues-guide" },
-        { label: "Budget", value: "$2 to $8 a fish for common short-fins, $15 to $20 for specialty strains. A 20-gallon setup runs %%setup:molly%% and upkeep %%monthly:molly%% a month. Mollies rarely see a vet.", source: "molly-cost-guide" },
-        { label: "Lifespan", value: "3 to 5 years, up to 5 to 7 with stable water.", source: "molly-cost-guide" },
-        { label: "Adult size", value: "3 to 4.5 inches for short-fin varieties, 4 to 6 inches for sailfins.", source: "molly-handling-guide" },
+        { label: "Plants, a population lever", value: "Parents eat their fry. Dense live plants hide them and survival climbs; skip the cover and predation keeps numbers down.", source: "molly-tank-setup-guide" },
+        { label: "Feeding schedule", value: "Adults at least once a day, once or twice the common range, only what clears in a minute or two. Fry need small amounts at least 3 to 5 times a day.", source: "molly-feeding-guide" },
+        { label: "Diet", value: "Tropical flake or pellet as the base with a large share of plant food: blanched zucchini, spinach, cucumber, lettuce or peas two to three times a week. Bloodworms once or twice a week at most. An all-protein diet is the classic mistake.", source: "molly-feeding-guide" },
+        { label: "Sex ratio", value: "Two to three females per male, and more is better. An all-male group avoids fry but needs space and numbers, since male mollies squabble.", source: "molly-enrichment-guide" },
+        { label: "Fry are coming", value: "Gestation about 4 weeks, broods averaging roughly 20 to 35 fry in lab conditions, about 5 weeks apart. Females store sperm, so store-bought females keep producing without a male.", source: "molly-handling-guide" },
+        { label: "Quarantine", value: "At least 30 days in a separate tank before new fish join the display. It catches most problems, shimmy included.", source: "molly-health-issues-guide" },
+        { label: "Shimmy", value: "A side-to-side rocking swim, a sign of stress rather than a disease. Correct the water first: temperature toward the upper 70s, pH toward 7.5 to 8.5, hardness up if the water runs soft.", source: "molly-health-issues-guide" },
+        { label: "Budget", value: "$2 to $8 a fish for common short-fins, $15 to $20 for specialty strains. A 20-gallon setup runs %%setup:molly%% and upkeep %%monthly:molly%% a month.", source: "molly-cost-guide" },
+        { label: "Lifespan", value: "About 2 to 5 years. Wild sailfin mollies probably live 2 to 3, so a pet molly that reaches 5 has had steady water and a good diet.", source: "molly-cost-guide" },
+        { label: "Adult size", value: "Roughly 3 to 4 inches for most common short-fin varieties, 4 to 6 inches for sailfins.", source: "molly-handling-guide" },
         { label: "Power outage", value: "Oxygen is the threat, not darkness. Unplug the filter rather than letting it sit dead in the water, and keep the surface moving.", source: "aquarium-power-outage-and-transport-guide" },
       ],
     },
@@ -1055,14 +1137,14 @@ export const fishGuides = fillCostTokens([
     },
     routes: [
       { slug: "molly-cost-guide", line: "$2 to $8 a common molly, the %%setup:molly%% the tank costs around it, and the %%monthly:molly%% a month after that." },
-      { slug: "molly-tank-setup-guide", line: "A real 20 gallons, 72 to 82\u00B0F, hard alkaline water, four-times turnover, and the salt question answered honestly." },
+      { slug: "molly-tank-setup-guide", line: "A real 20 gallons and 30 for sailfins, 72 to 82\u00B0F for short-fins, hard alkaline water, four-times turnover, and the salt question answered honestly." },
       { slug: "molly-feeding-guide", line: "Once or twice a day, blanched vegetables two to three times a week, and why an all-protein diet is the molly-specific mistake." },
       { slug: "molly-handling-guide", line: "A netting-only fish, gonopodium versus gravid spot, and the breeding plan you need before you buy." },
       { slug: "molly-health-issues-guide", line: "The shimmy protocol, ich, velvet, fin rot and dropsy, and the quarantine window that stops most of it." },
       { slug: "molly-enrichment-guide", line: "The harassment research done on a molly, the sex ratio it implies, and why a spotless tank starves a grazer." },
     ],
     buyList: [
-      "20-gallon long tank, or 30-plus for sailfin varieties or a growing colony",
+      "20-gallon long tank, or 30 gallons for sailfin varieties or a growing colony",
       "Tight-fitting lid",
       "Submersible aquarium heater",
       "Hang-on-back or canister filter rated to turn the tank over four times an hour",
@@ -1079,8 +1161,8 @@ export const fishGuides = fillCostTokens([
       "Plain additive-free aquarium salt, only if you decide to use it",
     ],
     faqs: [
-      { q: "What size tank does a molly need?", a: "20 gallons is the minimum for a small group, noticeably more than the 10-gallon starting point that works for guppies. Sailfin varieties, or any growing colony, do better in 30 gallons or more. Go long and rectangular over tall, and use a lid, mollies can jump." },
-      { q: "Do mollies need aquarium salt in their tank setup?", a: "Not strictly, and this is more debated than most molly care advice lets on. Mollies are a real brackish-tolerant species biologically, but whether a healthy freshwater tank needs salt added is disputed among experienced keepers, some argue good water changes and stable parameters do the same job without the downsides salt carries for live plants and snails." },
+      { q: "What size tank does a molly need?", a: "20 gallons is the minimum for a small group, noticeably more than the 10-gallon starting point that works for guppies. A 30-gallon tank is the cautious choice for sailfin varieties or any growing colony. Go long and rectangular over tall. Use a lid, mollies can jump." },
+      { q: "Do mollies need aquarium salt in their tank setup?", a: "Not strictly, and this is more debated than most molly care advice lets on. Mollies are a real brackish-tolerant species biologically, but whether a healthy freshwater tank needs salt added is disputed among experienced keepers, some argue good water changes and stable parameters do the same job without the downsides salt carries for live plants. Hard, alkaline water matters more than salt. Salt can also harm snails at higher concentrations." },
       { q: "How do I manage molly population if I don't want constant breeding?", a: "Keep males and females in separate tanks to avoid breeding entirely, or keep a males-only group for a colorful, breeding-free tank, which needs space and numbers rather than a trio because males squabble among themselves. If you do want controlled breeding, a ratio of roughly one male to two or three females cuts down on females getting chased and stressed by mating attempts." },
     ],
   },
@@ -1160,8 +1242,8 @@ export const fishGuides = fillCostTokens([
       "Frozen baby brine shrimp, daphnia, or bloodworms",
     ],
     faqs: [
-      { q: "How can you tell a male neon tetra from a female?", a: "Only once they're adults. Females are rounder-bodied and a little larger than males, who stay slimmer." },
-      { q: "How often should I feed neon tetras?", a: "Twice a day for adults, morning and evening, only as much as they finish in a couple of minutes." },
+      { q: "How can you tell a male neon tetra from a female?", a: "Only once they're adults. Females are rounder-bodied and a little larger than males, who stay slimmer. The fuller belly makes a female's blue stripe look slightly bent, while a male's stripe runs straight." },
+      { q: "How often should I feed neon tetras?", a: "Twice a day for adults, morning and evening, only as much as they finish in a couple of minutes. Fry and juveniles need 3 to 4 small feedings a day until about 6 months old." },
       { q: "So is six enough?", a: "No. Eight is the least to buy and ten is better, since groups of ten showed less darting and aggression than smaller ones. The right number does differ by species: the same 2010 study found no group size effect on angelfish." },
     ],
   },
@@ -1204,7 +1286,7 @@ export const fishGuides = fillCostTokens([
         { label: "Filtration", value: "A canister sized to 4 to 5 times the tank volume an hour, often with a second hang-on-back for redundancy, which in oscar keeping is the baseline rather than overkill.", source: "oscar-fish-tank-setup-guide" },
         { label: "Temperature", value: "74 to 81°F, kept stable, from a reliable submersible heater. No cold tolerance at all.", source: "oscar-fish-tank-setup-guide" },
         { label: "Water chemistry and changes", value: "pH 6 to 8 and soft to moderately hard water both suit them. Weekly changes of 25 to 30% are mandatory, and tie directly to preventing hole-in-the-head.", source: "oscar-fish-tank-setup-guide" },
-        { label: "Substrate and decor", value: "Sand to sift, or smooth pea-sized gravel; nothing sharp near a mouth that works the floor. Anchor everything, consider thicker glass, and fit a tight lid, since they jump.", source: "oscar-fish-tank-setup-guide" },
+        { label: "Substrate and decor", value: "Sand to sift, or smooth gravel too large to swallow; nothing sharp near a mouth that works the floor. Anchor everything, consider thicker glass, and fit a tight lid, since they jump.", source: "oscar-fish-tank-setup-guide" },
         { label: "Let them move things", value: "They dig, shift decor and uproot plants on purpose. Give movable furniture: smooth stones, big driftwood, a deep sand bed. The layout will not stay put, and that is the point.", source: "oscar-fish-enrichment-guide" },
         { label: "Staple food", value: "A cichlid pellet at 35 to 45% protein for roughly 80% of the diet, the rest frozen or fresh: shrimp, krill, earthworms, mysis, occasional peas or zucchini.", source: "oscar-fish-feeding-guide" },
         { label: "Feeding frequency", value: "Under 3 to 4 inches, 3 times daily. 3 to 8 inches, twice. Adults over about 8 inches once, at most twice, cleared in 2 to 3 minutes. Many keepers fast adults one day a week.", source: "oscar-fish-feeding-guide" },
@@ -1245,7 +1327,7 @@ export const fishGuides = fillCostTokens([
       "Submersible heater with a built-in thermometer",
       "Water test kit",
       "Water conditioner",
-      "Sand, or smooth pea-sized or larger gravel",
+      "Sand, or smooth gravel too large to swallow",
       "Heavy driftwood and smooth stones, anchored",
       "A tight, secure lid",
       "Gravel vacuum and buckets for weekly changes",
@@ -1266,10 +1348,10 @@ export const fishGuides = fillCostTokens([
     difficulty: "Beginner",
     petType: "Fish",
     image: "/assets/guides/platy.jpg",
-    tagline: "The endlessly colorful beginner livebearer that's about as close to foolproof as fish get!",
+    tagline: "The endlessly colorful beginner livebearer that thrives when the water is hard enough!",
     seoTitle: "Platy Care Guide: Tank, Breeding, and Health",
     seoDescription: "Platies are simple fish that make more platies. Set up hard, alkaline water, get the sex ratio and plant cover right, spot overfeeding, and plan for the fry.",
-    funFact: "Nearly every color and pattern of platy in the hobby, from Mickey Mouse to tuxedo to bumblebee, comes from generations of selective breeding and repeated hybridization between two closely related species, Xiphophorus maculatus and X. variatus, and even the swordtail. Wild platies are actually a fairly drab olive-brown; the huge color range sold today simply doesn't exist in nature.",
+    funFact: "The named varieties of platy in the hobby, from Mickey Mouse to tuxedo to bumblebee, come from generations of selective breeding and repeated hybridization between two closely related species, Xiphophorus maculatus and X. variatus, and even the swordtail. Wild southern platies are far from plain: the species is one of the most color-variable fish known, with black spotting in many patterns and, in some fish, red, orange or yellow pigment.",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
     // the hub keeps no number of its own. Adult size comes from the
@@ -1296,7 +1378,7 @@ export const fishGuides = fillCostTokens([
       rows: [
         { label: "Tank size", value: "10 gallons holds a small group of about five, though its 20 by 10 inch base misses the stricter 24 by 12 footprint. A 20 gallon long meets it, and is the size for six or more or a breeding group.", source: "platy-tank-setup-guide" },
         { label: "Temperature", value: "68 to 79°F, the mid-70s the usual target, held steady: swings over about 2°F in 24 hours are a cited shimmy trigger. A heater is the safer default even for cool-tolerant variatus lines.", source: "platy-tank-setup-guide" },
-        { label: "Water chemistry", value: "pH 7.0 to 8.2, tolerating 6.8 to 8.5, in medium-hard to hard water of roughly 10 to 30 dGH. They will not thrive in very soft, acidic water.", source: "platy-tank-setup-guide" },
+        { label: "Water chemistry", value: "pH 7.0 to 8.2, in medium-hard to hard water of roughly 10 to 30 dGH. They will not thrive in very soft, acidic water.", source: "platy-tank-setup-guide" },
         { label: "Cycle first", value: "4 to 6 weeks fishless, less with bottled bacteria. A platy survives an uncycled tank, which is exactly why this step gets skipped, and it does so while breathing ammonia.", source: "platy-tank-setup-guide" },
         { label: "A group", value: "Five or more. Numbers spread any chasing instead of focusing it on one fish.", source: "platy-enrichment-guide" },
         { label: "Sex ratio", value: "Two to three females per male at minimum, or an all-male group. Buying on color alone produces a male-heavy tank without anyone deciding to make one.", source: "platy-enrichment-guide" },
@@ -1304,13 +1386,13 @@ export const fishGuides = fillCostTokens([
         { label: "Feeding schedule", value: "Adults once or twice a day, cleared within a minute or two. Juveniles two to three smaller meals a day. Spread the food out so chased females still eat.", source: "platy-feeding-guide" },
         { label: "Diet", value: "A quality flake or small pellet as the staple, with blanched spinach, cucumber, zucchini or peas a couple of times a week. Platies need less vegetable than mollies.", source: "platy-feeding-guide" },
         { label: "The portion sign", value: "A long stringy trail of waste after a meal means the portion was too large. Overfeeding drives constipation and swim bladder trouble, and is far more common than underfeeding.", source: "platy-feeding-guide" },
-        { label: "Fry are coming", value: "Broods of 20 to 50 roughly every 4 to 6 weeks, and a female stores sperm for months, so an all-female group bought from a mixed tank still produces fry.", source: "platy-cost-guide" },
+        { label: "Fry are coming", value: "Broods of 20 to 80, roughly every 30 to 36 days, and a female stores sperm for months, so an all-female group bought from a mixed tank still produces fry.", source: "platy-cost-guide" },
         { label: "Sexing", value: "Males grow a rod-like anal fin, the gonopodium, at anywhere from about two to six and a half months. Females keep the fan-shaped fin and often show a dark gravid spot near the vent.", source: "platy-handling-guide" },
         { label: "Quarantine", value: "At least 30 days in a separate tank before new fish join the display, which catches most problems, shimmy included, before they spread.", source: "platy-health-issues-guide" },
         { label: "Water changes", value: "25 to 30% weekly from the substrate, with conditioned water at tank temperature. Test nitrate first: under 20 ppm the routine is right, past 40 ppm the next change is 50%.", source: "aquarium-water-changes-guide" },
         { label: "Budget", value: "%%animal:platy%% a fish, a six-pack around $30. A basic setup runs %%setup:platy%%, and a 10-gallon costs about %%monthly:platy%% a month to run. Vet care does not apply.", source: "platy-cost-guide" },
         { label: "Lifespan", value: "2 to 4 years, with excellent water pushing a fish toward 5.", source: "platy-cost-guide" },
-        { label: "Adult size", value: "2 to 3 inches (5 to 7.5 cm), females larger than males." },
+        { label: "Adult size", value: "About 1.6 inches for males and up to about 2.4 inches for females in the southern platy; the variatus is a little longer.", source: "platy-handling-guide" },
         { label: "Power outage", value: "Oxygen is the threat, not darkness. Unplug the filter rather than letting it sit dead in the water, and keep the surface moving.", source: "aquarium-power-outage-and-transport-guide" },
       ],
     },
@@ -1330,7 +1412,7 @@ export const fishGuides = fillCostTokens([
       { slug: "platy-cost-guide", line: "%%animal:platy%% a fish, %%setup:platy%% for the tank around them, and the fry cost nobody budgets for." },
       { slug: "platy-tank-setup-guide", line: "A real 10 gallons and why a 20 long meets the stricter footprint, hard alkaline water, and a filter that won't shred fry." },
       { slug: "platy-feeding-guide", line: "Once or twice a day, why the vegetable side matters less here than for a molly, and the stringy-waste sign you overfed." },
-      { slug: "platy-handling-guide", line: "Gonopodium versus gravid spot, when a platy is old enough to sex, and four concrete ways to manage the population." },
+      { slug: "platy-handling-guide", line: "Gonopodium versus gravid spot, when a platy is old enough to sex, and where surplus fry can and cannot go." },
       { slug: "platy-health-issues-guide", line: "Ich, fin rot, dropsy, swim bladder and shimmy, plus the melanoma story told honestly in both directions." },
       { slug: "platy-enrichment-guide", line: "The livebearer harassment research, the sex ratio it implies, and what cover actually does in a tank full of fry." },
     ],
@@ -1348,9 +1430,9 @@ export const fishGuides = fillCostTokens([
       "Frozen brine shrimp, bloodworms or daphnia",
     ],
     faqs: [
-      { q: "What temperature do platies need?", a: "68 to 79\u00B0F, with the mid-70s the usual target. Hold it steady rather than chasing a number: swings over about 2\u00B0F in a day are the problem. Variatus-line platies handle the cool end better than most tropical fish, though a heater is still the safer default unless the room stays warm all year." },
-      { q: "How often should I feed my platy?", a: "Adults do well fed once or twice a day, sometimes stretched to three times for very small portions, feeding only what's fully cleared within a minute or two. Juveniles need two to three smaller meals a day to keep pace with faster growth." },
-      { q: "Is it true that platies can get tumors?", a: "Yes, and it's one of the most studied facts in the species, but keep it in perspective. Certain platy and swordtail genetic lines develop melanoma through a well-understood mechanism, and Xiphophorus fish have been used as a cancer research model for over 70 years. Importantly, this does not happen spontaneously in an ordinary pet-store platy under normal conditions, it requires deliberate cross-breeding between platies and swordtails in a lab setting to unmask the trait. If you find a lump or dark growth on your own platy, it's far more likely to be an injury, a cyst, or an unrelated growth than that specific research-famous condition, a vet or fish-health specialist can help rule out the more common, more treatable causes." },
+      { q: "What temperature do platies need?", a: "68 to 79°F, with the mid-70s the usual target. Hold it steady rather than chasing a number: swings over about 2°F in a day are the problem. Variatus-line platies handle the cool end better than the southern platy does, though a heater is still the safer default unless the room stays warm all year." },
+      { q: "How often should I feed my platy?", a: "Adults do well fed once or twice a day, sometimes stretched to three times for very small portions, feeding only what's fully cleared within a minute or two. Juveniles need two or three smaller meals a day, the top of the adult range, to keep pace with faster growth." },
+      { q: "Is it true that platies can get tumors?", a: "Yes, and it's one of the most studied facts in the species, but keep it in perspective. Certain platy and swordtail genetic lines develop melanoma through a well-studied mechanism, and Xiphophorus fish have been used as a cancer research model for almost a century. Importantly, in a purebred pet-store platy it is rare, appearing almost exclusively in mature males of advanced age, and it is unmasked far more readily by deliberate cross-breeding between platies and swordtails in a lab setting. If you find a lump or dark growth on your own platy, it's far more likely to be an injury, a cyst, or an unrelated growth than that specific research-famous condition, a vet or fish-health specialist can help rule out the more common, more treatable causes." },
     ],
   },
   {
@@ -1362,8 +1444,8 @@ export const fishGuides = fillCostTokens([
     image: "/assets/guides/swordtail.jpg",
     tagline: "The active, sword-tailed livebearer that's basically a guppy's bigger, livelier cousin!",
     seoTitle: "Swordtail Fish Care Guide: Stocking, Breeding, and Health",
-    seoDescription: "Two males is the classic swordtail stocking mistake. Set up a 29-gallon tank with a sealed lid, pick the ratio that keeps fins intact, and plan for the fry.",
-    funFact: "Female swordtails that have already given birth can sometimes go on to develop a sword, male coloring, and even father broods of their own later in life. Hobbyists have reported the switch for generations, and scientists have studied it since the 1930s, though researchers still debate whether it's a true sex reversal or male traits simply emerging late in a fish that was missexed as a juvenile.",
+    seoDescription: "Two males is the classic swordtail stocking mistake. Buy a tank at least 36 inches long with a lid, pick the ratio that keeps fins intact, and plan for the fry.",
+    funFact: "Hobbyists have reported for generations swordtails that spend months looking and acting like females before developing a sword, male coloring, and even fathering broods of their own. Scientists have studied it since the 1920s, though researchers still debate whether it's a true sex reversal or male traits simply emerging late in a fish that was missexed as a juvenile.",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in its `source`, and that article is where it changes;
     // the hub keeps no number of its own. Adult size comes from the
@@ -1394,22 +1476,22 @@ export const fishGuides = fillCostTokens([
     firstWeek: {
       intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
-        { label: "Not two males", value: "The single most useful stocking rule. With two, every contest is the same pair and the loser has nowhere to be. One male with a group of females, or several males in a large planted tank where the aggression spreads.", source: "swordtail-enrichment-guide" },
-        { label: "Tank size", value: "20 gallons is the floor for a small trio; 29 to 30 gallons is the realistic starting point for an active, open-water fish. Long rather than tall, over fine gravel or sand, nothing sharp near a lyretail's fins.", source: "swordtail-tank-setup-guide" },
-        { label: "Water chemistry", value: "pH 7.0 to 8.4 in moderately hard to hard water, roughly 10 to 25 dGH. Soft tap water gets crushed coral or a buffering product.", source: "swordtail-tank-setup-guide" },
-        { label: "Temperature", value: "75 to 79°F is the steady target inside a workable 65 to 82°F. Avoid sudden swings.", source: "swordtail-tank-setup-guide" },
+        { label: "Not two males", value: "The single most useful stocking rule. With two, every contest is the same pair and the loser has nowhere to be. One male with a group of females, or several males in a large planted tank.", source: "swordtail-enrichment-guide" },
+        { label: "Tank size", value: "Go by length: at least 36 inches, so a 30-gallon or 40-gallon breeder is the smallest worth buying, and 48 inches (a 33-gallon long or a 55) is better. The tank sold as a 29 is only 30 inches long.", source: "swordtail-tank-setup-guide" },
+        { label: "Water chemistry", value: "pH 7.0 to 8.0 in moderately hard to hard water, roughly 10 to 25 dGH. Soft tap water gets crushed coral or a buffering product.", source: "swordtail-tank-setup-guide" },
+        { label: "Temperature", value: "Roughly 72 to 82°F, down to the mid 60s if it must, with 75 to 79°F the steadier target. Avoid sudden swings.", source: "swordtail-tank-setup-guide" },
         { label: "The lid", value: "They escape through gaps well under an inch. A full mesh or glass lid, a feeding hatch no larger than necessary, and a check after any rearranging.", source: "swordtail-tank-setup-guide" },
-        { label: "Filtration", value: "Flow of 4 to 5 times the tank volume an hour, from a hang-on-back or canister. A sponge filter only if fry survival is the priority.", source: "swordtail-tank-setup-guide" },
-        { label: "Cover", value: "Dense live plants along the sides and back, open water through the middle. Cover for pursued females, and broken sight lines that stop a dominant male tracking a subordinate across the tank.", source: "swordtail-enrichment-guide" },
-        { label: "Feeding", value: "Once or twice a day, or two to three smaller meals; the count matters less than clearing each one within about 2 minutes. Overfeeding is the common mistake. Vegetable content a few times a week, and bloodworms, brine shrimp or daphnia in regular rotation.", source: "swordtail-feeding-guide" },
-        { label: "Acclimation", value: "Float the sealed bag 15 to 20 minutes; drip over 45 to 60 minutes only if your water is soft or acidic. Net the fish in; bag water carries transport ammonia.", source: "swordtail-handling-guide" },
+        { label: "Filtration", value: "Not especially strong, but some water movement: flow of 4 to 5 times the tank volume an hour, from a hang-on-back or canister. A sponge filter only if fry survival is the priority.", source: "swordtail-tank-setup-guide" },
+        { label: "Cover", value: "Dense live plants along the sides and back, open water through the middle: cover for pursued females and broken sight lines for subordinate males.", source: "swordtail-enrichment-guide" },
+        { label: "Feeding", value: "Once or twice a day, or two to three smaller meals; clear each within about 2 minutes. Overfeeding is the common mistake. Vegetables a few times a week, with bloodworms, brine shrimp or daphnia in regular rotation.", source: "swordtail-feeding-guide" },
+        { label: "Acclimation", value: "Float the sealed bag, then add tank water over 30 to 60 minutes; drip a couple of hours only if your water is soft or acidic. Net the fish in; bag water carries transport ammonia.", source: "swordtail-handling-guide" },
         { label: "Quarantine", value: "At least 30 days in a separate tank before a new fish joins the display.", source: "swordtail-handling-guide" },
         { label: "Sexing", value: "Males carry the sword and a rod-like anal fin. Females have neither and are the larger sex.", source: "swordtail-handling-guide" },
-        { label: "Sex ratio", value: "At least two or three females per male, and three or four where the tank allows. Chewed fins or a clamped, listless fish in a male-heavy tank means move it to a recovery tank and fix the ratio at the same time.", source: "swordtail-health-issues-guide" },
-        { label: "Budget", value: "%%animal:swordtail%% a fish, more for lyretails. Setup %%setup:swordtail%%, more at 29 or 30 gallons, then %%monthly:swordtail%% a month. Swordtails rarely see a vet.", source: "swordtail-cost-guide" },
-        { label: "Lifespan", value: "3 to 5 years with stable water.", source: "swordtail-cost-guide" },
-        { label: "Adult size", value: "Males up to 5.5 inches (14 cm) including the sword; females up to 6.2 inches (16 cm)." },
-        { label: "Fry are coming", value: "A single female produces 20 to 100 or more fry roughly every 4 weeks without a fresh mating. Swordtails and platies interbreed readily, so a mixed livebearer tank breeds hybrids.", source: "swordtail-cost-guide" },
+        { label: "Sex ratio", value: "At least two or three females per male, three or four where the tank allows. Chewed fins or a clamped, listless fish in a male-heavy tank: move it to a recovery tank and fix the ratio.", source: "swordtail-health-issues-guide" },
+        { label: "Budget", value: "%%animal:swordtail%% a fish, more for lyretails. Setup %%setup:swordtail%% for a tank 36 inches long, more for the 48 a group wants, then %%monthly:swordtail%% a month. Rarely a vet.", source: "swordtail-cost-guide" },
+        { label: "Lifespan", value: "About 3 to 5 years with stable water quality.", source: "swordtail-cost-guide" },
+        { label: "Adult size", value: "Males reach about 5.5 inches; females, which lack a sword with rare exceptions, grow slightly longer, up to about 6.3 inches.", source: "swordtail-handling-guide" },
+        { label: "Fry are coming", value: "A female can produce 20 to 200 fry, about 30 common, roughly every 4 weeks without a fresh mating. Swordtails and platies can hybridize, so mixed livebearer tanks can breed hybrids.", source: "swordtail-cost-guide" },
         { label: "Power outage", value: "Oxygen is the threat, not darkness. Unplug the filter rather than letting it sit dead in the water, and keep the surface moving.", source: "aquarium-power-outage-and-transport-guide" },
         { label: "Water changes", value: "25 to 30% weekly from the substrate, with conditioned water at tank temperature. Test nitrate first: under 20 ppm the routine is right, past 40 ppm the next change is 50%.", source: "aquarium-water-changes-guide" },
       ],
@@ -1428,14 +1510,14 @@ export const fishGuides = fillCostTokens([
     },
     routes: [
       { slug: "swordtail-cost-guide", line: "%%animal:swordtail%% a fish, %%setup:swordtail%% for the tank, and why sizing up costs more than the table says." },
-      { slug: "swordtail-tank-setup-guide", line: "A real 29 to 30 gallons, 65 to 82F, four to five times turnover, and a lid that actually seals." },
+      { slug: "swordtail-tank-setup-guide", line: "Tank length in inches rather than gallons, 72 to 82°F, four to five times turnover, and a lid that actually seals." },
       { slug: "swordtail-feeding-guide", line: "The two-minute rule, vegetables a few times a week, and the five reasons a swordtail goes off its food." },
       { slug: "swordtail-handling-guide", line: "Float then drip, net rather than pour, quarantine at least 30 days, and sexing by the sword." },
       { slug: "swordtail-health-issues-guide", line: "Ich, fin rot, dropsy and swim bladder, plus the sex ratio treated as the health issue it is." },
       { slug: "swordtail-enrichment-guide", line: "Why two males is the problem number, the ratio that follows from it, and what planting actually does." },
     ],
     buyList: [
-      "20-gallon long as a floor, 29 or 30 gallons as the real target",
+      "Tank at least 36 inches long, such as a 30-gallon or 40-gallon breeder, with 48 inches (a 33-gallon long or a 55) better",
       "Lid that seals, with no gaps at the back or around cutouts",
       "Submersible aquarium heater",
       "Filter rated for 4 to 5 times the tank volume per hour",
@@ -1448,8 +1530,8 @@ export const fishGuides = fillCostTokens([
       "Zucchini, spinach or peas to blanch",
     ],
     faqs: [
-      { q: "What size tank does a swordtail need?", a: "20 gallons is the genuine floor for a small trio, one male and two or three females, but a group wants 30 gallons or more, since swordtails are more active, open-water swimmers than a molly or platy. Choose length over height, and use a lid, swordtails are capable jumpers." },
-      { q: "What temperature do swordtails need?", a: "Tropical, roughly 65 to 82\u00B0F, with 75 to 79\u00B0F the steadier target. Hold it steady rather than chasing a number, and avoid sudden swings. A submersible heater is necessary unless the room stays warm all year." },
+      { q: "What size tank does a swordtail need?", a: "Go by length. A swordtail tank should be at least 36 inches long, so a 30-gallon or 40-gallon breeder is the smallest worth buying, and 48 inches (a 33-gallon long or a 55) is better. The tank sold as a 29 is only 30 inches long, so it falls short. Pick length over height, and add a lid, since swordtails are capable jumpers." },
+      { q: "What temperature do swordtails need?", a: "Tropical, roughly 72 to 82°F, down to the mid 60s if it must, with 75 to 79°F the steadier target. Hold it steady rather than chasing a number, and avoid sudden swings. A submersible heater is necessary unless the room stays warm all year." },
       { q: "Why does male-to-female ratio matter so much with swordtails?", a: "Because males can be persistent toward females and combative toward each other. Keep at least two or three females per male, and three or four where the tank allows: the higher end spreads out mating attempts more effectively and reduces the fin damage and stress that come with a single female fielding constant attention." },
     ],
   },
