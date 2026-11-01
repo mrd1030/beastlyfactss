@@ -10,7 +10,7 @@ Newest first.
 
 ## 2026-11-01: aquarium substrate guide hero
 
-`/assets/images/aquarium-substrate-guide.jpg`, the hero for `content/guides/aquarium-substrate-guide.mdx`, made with GPT Image 2 (owner-generated): fine dark sand beside rounded pea gravel, a planted Cryptocoryne and sword, Indian almond leaves and a gravel vacuum, no fish. Contrast and midtones lifted, resized from 1264x848 to 1168x784 through mozjpeg at quality 80, not cropped. The frontmatter `image` line is live. Credited in IMAGE_CREDITS.md.
+`/assets/images/aquarium-substrate-guide.jpg`, the hero for `content/guides/aquarium-substrate-guide.mdx`, made in Adobe Firefly with partner model GPT Image 2 (owner-generated): fine dark sand beside rounded pea gravel, a planted Cryptocoryne and sword, Indian almond leaves and a gravel vacuum, no fish. Contrast and midtones lifted, resized from 1264x848 to 1168x784 through mozjpeg at quality 80, not cropped. The frontmatter `image` line is live. Credited in IMAGE_CREDITS.md.
 
 ---
 
