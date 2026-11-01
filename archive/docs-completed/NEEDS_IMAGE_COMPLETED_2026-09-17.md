@@ -8,6 +8,14 @@ Newest first.
 
 ---
 
+## 2026-11-01: neon tetra hub head replaced
+
+`/assets/guides/neon-tetra.jpg`, shared by the neon tetra hub and its
+encyclopedia entry, replaced at the owner's request with an Adobe Firefly
+frame (Nano Banana 2.1): a single neon in a blackwater stream, the red on the
+rear half only. 3:2, resized to 1168x784 through mozjpeg at quality 80, saved
+over the same filename. Recorded in IMAGE_CREDITS.md.
+
 ## 2026-11-01: livebearer group page head
 
 `/assets/guides/livebearers.jpg`, the photo for "Livebearer Care: The
