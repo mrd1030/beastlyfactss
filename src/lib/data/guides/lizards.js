@@ -38,7 +38,7 @@ export const lizardGuides = fillCostTokens([
     firstWeek: {
       intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
-        { label: "Legal", value: "41 of 52 jurisdictions place no restriction. Washington DC, Hawaii, New York City, and New Mexico rule it out as a lizard or a monitor generally; New Jersey, Rhode Island, and West Virginia want a permit.", source: "ackie-monitor-legal-guide" },
+        { label: "Legal", value: "40 of 52 jurisdictions place no restriction. Washington DC, Hawaii, New York City, and New Mexico rule it out as a lizard or a monitor generally; New Jersey, Rhode Island, and West Virginia want a permit; Maine clears it only if captive bred.", source: "ackie-monitor-legal-guide" },
         { label: "Day one", value: "Quarantine a new ackie until it has cleared two separate clean fecal checks before it joins an established collection.", source: "ackie-monitor-health-issues-guide" },
         { label: "Enclosure", value: "5 feet long by 2.5 wide by 4 tall minimum for a single adult, larger than the old 4x2x2 standard, because this is one of the most active lizards kept.", source: "ackie-monitor-tank-setup-guide" },
         { label: "Basking surface", value: "158 to 172°F on the stone, measured with an infrared thermometer. Below about 130°F is too cool to synthesize vitamin D, and most keepers under-heat, so the hotter end is the safer mistake. Cool side 75 to 80°F.", source: "ackie-monitor-tank-setup-guide" },
@@ -152,7 +152,7 @@ export const lizardGuides = fillCostTokens([
     firstWeek: {
       intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
-        { label: "Check the law first", value: "Florida banned new pet tegus on April 29, 2021. Georgia, Alabama, Louisiana, Hawaii, DC, and New York City ban one; New Mexico and New Jersey want permits; Minnesota allows a permitted breeder's only.", source: "argentine-tegu-legal-guide" },
+        { label: "Check the law first", value: "Florida banned new pet tegus on April 29, 2021. Georgia, Alabama, Louisiana, Hawaii, DC, and New York City ban one; New Mexico and New Jersey want permits; Minnesota allows a permitted breeder's only; Maine clears it only if captive bred.", source: "argentine-tegu-legal-guide" },
         { label: "Day one", value: "Quarantine 3 to 6 months on plain paper towel with dedicated tools, the quarantined animal serviced last.", source: "reptile-quarantine-guide" },
         { label: "Enclosure", value: "8 by 4 by 4 feet minimum for an adult male, many keepers go to 10 by 5 by 5 or a room. A hatchling starts around 40 gallons and outgrows it inside a year. The ready-made 8-foot PVC unit is 8x2x2, so adult housing is a DIY build.", source: "argentine-tegu-tank-setup-guide" },
         { label: "Temperature", value: "Basking 95 to 100F, warm side 85 to 95F, cool side around 75F, nights no lower than 75F. A cluster of basking bulbs or a radiant heat panel on a heavy-duty thermostat rated for the wattage.", source: "argentine-tegu-tank-setup-guide" },
@@ -187,7 +187,7 @@ export const lizardGuides = fillCostTokens([
       vetLine: "An adult tegu's size makes emergency transport difficult, so find a reptile vet before you need one.",
     },
     routes: [
-      { slug: "argentine-tegu-legal-guide", line: "Florida's prohibited list with the dates, the closed grandfather window, and the eight other jurisdictions that ban or gate one." },
+      { slug: "argentine-tegu-legal-guide", line: "Florida's prohibited list with the dates, the closed grandfather window, and the eleven other jurisdictions that ban or gate one." },
       { slug: "argentine-tegu-cost-guide", line: "$200 to $500 for the animal, %%setup:argentine-tegu%% for the build, and what a true 8x4x4 enclosure costs built to order." },
       { slug: "argentine-tegu-tank-setup-guide", line: "8x4x4 as a floor, 95 to 100F basking, 70 to 80% humidity, 12 to 18 inches of substrate, and the feeding schedule by age." },
       { slug: "argentine-tegu-feeding-guide", line: "Five meals a week as a hatchling to two as an adult, the 60/30/10 adult plate, the skull-sized portion, cooked eggs, and brumation versus a real refusal." },
@@ -850,7 +850,7 @@ export const lizardGuides = fillCostTokens([
     firstWeek: {
       intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
-        { label: "Legal", value: "Twelve jurisdictions restrict it, five as bans and seven as paperwork; the other 40 place no restriction. Louisiana names this species on its prohibited list.", source: "savannah-monitor-legal-guide" },
+        { label: "Legal", value: "Thirteen jurisdictions restrict it, five as bans and eight as paperwork or a sourcing condition; the other 39 place no restriction. Louisiana names this species on its prohibited list.", source: "savannah-monitor-legal-guide" },
         { label: "Day one", value: "Quarantine 3 to 6 months on plain paper towel away from other reptiles, with a vet check and fresh fecal sample within two weeks.", source: "reptile-quarantine-guide" },
         { label: "Where it came from", value: "Most are wild-caught or farmed in bulk, so many arrive stressed and parasitized. A fecal exam for any new monitor, symptoms or not.", source: "savannah-monitor-cost-guide" },
         { label: "Enclosure", value: "A hatchling starts around 36x24x20 inches; an adult needs 8 by 4 by 4 feet minimum, one per enclosure. The ready-made 8-foot PVC unit is 8x2x2, so adult housing is a DIY build.", source: "savannah-monitor-tank-setup-guide" },
@@ -889,7 +889,7 @@ export const lizardGuides = fillCostTokens([
       { slug: "savannah-monitor-handling-guide", line: "Why this is not the ackie, the five warning signals that end a session, the grip for when an animal has to be controlled, and the nail trim that takes three people." },
       { slug: "savannah-monitor-health-issues-guide", line: "Obesity and fatty liver disease as the defining problem, the wild feeding rhythm that explains it, MBD, and the parasite screen every new animal needs." },
       { slug: "savannah-monitor-enrichment-guide", line: "Eight of eight monitors opening a puzzle tube in ten minutes, why that evidence is genus-level rather than species-level, and puzzle feeding that adds work instead of calories." },
-      { slug: "savannah-monitor-legal-guide", line: "Legal in 40 of 52 jurisdictions, the one state that names this species, and the Arkansas list that clears ten monitors and stops one name short." },
+      { slug: "savannah-monitor-legal-guide", line: "Legal in 39 of 52 jurisdictions, the one state that names this species, and the Arkansas list that clears ten monitors and stops one name short." },
     ],
     buyList: [
       "8x4x4 ft enclosure, realistically a DIY build or a direct order",
@@ -1040,7 +1040,7 @@ export const lizardGuides = fillCostTokens([
     firstWeek: {
       intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
-        { label: "Legal check", value: "Hawaii and Washington DC bar one. New Jersey wants a permit, West Virginia an importation permit, and Minnesota allows one from a permitted breeder. Check the city ordinance too.", source: "veiled-chameleon-legal-guide" },
+        { label: "Legal check", value: "Hawaii and Washington DC bar one. New Jersey wants a permit, West Virginia an importation permit, Minnesota allows one from a permitted breeder, and Maine one bred in captivity. Check the city ordinance too.", source: "veiled-chameleon-legal-guide" },
         { label: "Day one", value: "Quarantine 3 to 6 months in a separate room, with a fecal exam before it meets an established pet.", source: "reptile-quarantine-guide" },
         { label: "Enclosure", value: "24x24x48 inches minimum for an adult, 4x2x4 feet better, screen or hybrid with partly solid sides. A juvenile can start at 18x18x36 but reaches adult size in 6 to 8 months, so buy the adult one now.", source: "veiled-chameleon-tank-setup-guide" },
         { label: "Temperature", value: "Basking around 85°F for females and juveniles, 90 to 95°F for adult males. Ambient 72 to 80°F, with a beneficial night drop to 55 to 65°F.", source: "veiled-chameleon-tank-setup-guide" },

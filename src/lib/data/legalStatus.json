@@ -2099,7 +2099,7 @@
           "sourceId": "co-w11",
           "cite": "§ 1103(B)",
           "quote": "African pygmy hedgehog (Atelerix albiventris, Erinaceus albiventris)",
-          "note": "Named on the unregulated wildlife list, so no CPW license. The species matters here more than in most states: § 008(B)(9) of the prohibited list bars Erinaceus generally, along with the whole of Hemiechinus and Paraechinus, and exempts only Erinaceus albiventris and Atelerix albiventris by name. So the pet African pygmy hedgehog is cleared and the European, long-eared, desert, Brandt's, Indian and bare-bellied hedgehogs are prohibited, a split CPW's mammal list sets out row by row. CPW tells keepers to check their city or county as well, so a local ordinance can still be the binding rule.",
+          "note": "Named on the unregulated wildlife list, so no CPW license. The species matters here more than in most states: § 008(B)(9) of the prohibited list bars Erinaceus generally, along with the whole of Hemiechinus and Paraechinus, and exempts only Erinaceus albiventris and Atelerix albiventris by name. So the pet African pygmy hedgehog is cleared and the European, long-eared, desert, Brandt's, Indian and bare-bellied hedgehogs are prohibited. CPW tells keepers to check their city or county as well, so a local ordinance can still be the binding rule.",
           "localOverride": true,
           "verifiedOn": "2026-11-01"
         },
@@ -5047,12 +5047,12 @@
           "verifiedOn": "2026-11-01"
         },
         "ME": {
-          "status": "legal",
+          "status": "conditional",
           "sourceId": "me-unrestricted",
           "quote": "Chamaeleo calyptratus",
           "verifiedOn": "2026-11-01",
           "cite": "Unrestricted Species List",
-          "note": "Named by binomial on the unrestricted list, so no permit of any kind applies."
+          "note": "Named by binomial on the unrestricted list, so no permit of any kind applies to a captive-bred animal. The whole Reptilia section of the list sits under the heading \"Captive Bred Origin Only\", which is the condition on the clearance: a wild-caught animal of the same species is not unrestricted and falls back to § 7.06(4), under which an uncategorized animal may not be possessed at all."
         },
         "FL": {
           "status": "legal",
@@ -5091,7 +5091,7 @@
           "sourceId": "co-w7",
           "cite": "Appendix A; § 703(A)",
           "quote": "Any species of lizard native only to the tropical and subtropical region from the following families: Chamaeleonidae (chameleons)",
-          "note": "On Appendix A, which under § 703(A) may be possessed, propagated, sold, purchased or transported without a license or documentation. CPW files Chamaeleo calyptratus against this line. This entry moved chapters in 2026: the same family listing used to sit in Chapter W-11 § 1103(B) and now lives in Chapter W-7. CPW tells keepers to check their city or county as well, so a local ordinance can still be the binding rule.",
+          "note": "On Appendix A, which under § 703(A) may be possessed, propagated, sold, purchased or transported without a license or documentation. CPW's species list, which it has since taken down, filed Chamaeleo calyptratus against this line. This entry moved chapters in 2026: the same family listing used to sit in Chapter W-11 § 1103(B) and now lives in Chapter W-7. CPW tells keepers to check their city or county as well, so a local ordinance can still be the binding rule.",
           "localOverride": true,
           "verifiedOn": "2026-11-01"
         },
@@ -5468,11 +5468,12 @@
           "verifiedOn": "2026-11-01"
         },
         "ME": {
-          "status": "legal",
+          "status": "conditional",
           "sourceId": "me-unrestricted",
-          "quote": "Testudo horsfieldii",
-          "note": "Maine's list mislabels it 'Greek Tortoise'. The binomial is Horsfield's/Russian; Greek is T. graeca.",
-          "verifiedOn": "2026-11-01"
+          "quote": "Testudo horsfieldii Russian Tortoise",
+          "note": "Named by species on the unrestricted list. Earlier editions labeled this binomial \"Greek Tortoise\"; the October 2026 list gives it its own name and lists Testudo graeca separately. The Testudines section of the list sits under the heading \"Captive Bred Origin Only; must be a minimum 4\" diameter.\", so the clearance covers a captive-bred tortoise at least four inches across, and a wild-caught or smaller one is not unrestricted and falls back to § 7.06(4), under which an uncategorized animal may not be possessed at all.",
+          "verifiedOn": "2026-11-01",
+          "cite": "Unrestricted Species List, Testudines (Captive Bred Origin Only; minimum 4\")"
         },
         "NY": {
           "status": "legal",
@@ -5751,9 +5752,9 @@
         "CO": {
           "status": "banned",
           "sourceId": "co-cpw-species-list",
-          "cite": "CPW, Wildlife and Animal Possession in Colorado, Regulated Wildlife",
+          "cite": "2 CCR 406-7 Appendix A(C), § 700(G); CPW, Wildlife and Animal Possession in Colorado, Regulated Wildlife",
           "quote": "Any species of wildlife that is not specifically listed in Chapter W-11 as Domestic or Unregulated or in Chapter W-07 as Appendix A or Appendix B, the species is regulated wildlife and a CPW license is required. CPW will not issue a license for private possession (eg pet) of regulated wildlife.",
-          "note": "Testudinidae is on Appendix A, but only for tortoises native only to the tropical and subtropical region, and the Russian tortoise is a Central Asian steppe animal ranging far north of the 26 degree line. CPW's herpetofauna list records Testudo horsfieldii against Appendix A, C, 3 with the finding \"native range is outside tropical/subtropical\", and files the Greek tortoise, Hermann's tortoise and the leopard tortoise the same way, against the sulcata and the red-footed tortoise which do clear it. A tortoise being on Appendix A's family list is therefore not the answer in Colorado; the range test is.",
+          "note": "Testudinidae is on Appendix A, but only for tortoises native only to the tropical and subtropical region, and the Russian tortoise is a Central Asian steppe animal ranging far north of the 26 degree line. The same test clears the sulcata and the red-footed tortoise, whose ranges sit inside the band, and leaves out the Greek and Hermann's tortoises. A tortoise being on Appendix A's family list is therefore not the answer in Colorado; the range test is.",
           "verifiedOn": "2026-11-01"
         },
         "IL": {
@@ -6148,9 +6149,9 @@
         "ME": {
           "sourceId": "me-unrestricted",
           "cite": "Unrestricted Species list",
-          "status": "legal",
+          "status": "conditional",
           "quote": "Python regius",
-          "note": "Named on the unrestricted snake list. Maine lists pythons species by species rather than clearing the family, so the ball python's presence says nothing about its larger relatives.",
+          "note": "Named on the unrestricted snake list. Maine lists pythons species by species rather than clearing the family, so the ball python's presence says nothing about its larger relatives. The whole Reptilia section of the list sits under the heading \"Captive Bred Origin Only\", which is the condition on the clearance: a wild-caught animal of the same species is not unrestricted and falls back to § 7.06(4), under which an uncategorized animal may not be possessed at all.",
           "verifiedOn": "2026-11-01"
         },
         "WI": {
@@ -6215,7 +6216,7 @@
           "sourceId": "co-w7",
           "cite": "Appendix A; § 703(A)",
           "quote": "Any species of snake native only to the tropical and subtropical region from the following families: Pythonidae (giant snakes)",
-          "note": "On Appendix A, which under § 703(A) may be possessed, propagated, sold, purchased or transported without a license or documentation. The ball python is West and Central African and breeds nowhere outside the tropics, so it satisfies the \"native only\" qualifier that decides most of this appendix. CPW's herpetofauna list files Python regius against this line. CPW tells keepers to check their city or county as well, so a local ordinance can still be the binding rule.",
+          "note": "On Appendix A, which under § 703(A) may be possessed, propagated, sold, purchased or transported without a license or documentation. The ball python is West and Central African and breeds nowhere outside the tropics, so it satisfies the \"native only\" qualifier that decides most of this appendix. CPW tells keepers to check their city or county as well, so a local ordinance can still be the binding rule.",
           "localOverride": true,
           "verifiedOn": "2026-11-01"
         },
@@ -6582,9 +6583,9 @@
         "ME": {
           "sourceId": "me-unrestricted",
           "cite": "Unrestricted Species list",
-          "status": "legal",
+          "status": "conditional",
           "quote": "Boa constrictor",
-          "note": "Named individually with no length or weight qualifier attached.",
+          "note": "Named individually with no length or weight qualifier attached. The whole Reptilia section of the list sits under the heading \"Captive Bred Origin Only\", which is the condition on the clearance: a wild-caught animal of the same species is not unrestricted and falls back to § 7.06(4), under which an uncategorized animal may not be possessed at all.",
           "verifiedOn": "2026-11-01"
         },
         "TX": {
@@ -7811,9 +7812,9 @@
         "ME": {
           "sourceId": "me-unrestricted",
           "cite": "Unrestricted Species list",
-          "status": "legal",
+          "status": "conditional",
           "quote": "All Species in Genus Tupinambis (Tegus) Tupinambis spp.*",
-          "note": "Cleared by genus, but the list dates from 2017 and the Argentine black and white tegu was moved out of Tupinambis into Salvator in 2012. The common name column reads Tegus, so the intent is plain, though anyone relying on the scientific name alone should be aware the two do not match current taxonomy.",
+          "note": "Cleared by genus, but the October 2026 list still names the genus Tupinambis, and the Argentine black and white tegu was moved out of Tupinambis into Salvator in 2012. The common name column reads Tegus, so the intent is plain, though anyone relying on the scientific name alone should know the two do not match current taxonomy. The whole Reptilia section of the list sits under the heading \"Captive Bred Origin Only\", which is the condition on the clearance: a wild-caught animal of the same species is not unrestricted and falls back to § 7.06(4), under which an uncategorized animal may not be possessed at all.",
           "verifiedOn": "2026-11-01"
         },
         "AR": {
@@ -7922,7 +7923,7 @@
           "sourceId": "co-w7",
           "cite": "Appendix A; § 703(A)",
           "quote": "Any species of lizard native only to the tropical and subtropical region from the following families: Teiidae (whiptail)",
-          "note": "On Appendix A, which under § 703(A) may be possessed, propagated, sold, purchased or transported without a license or documentation. CPW files Salvator merianae against this line, with the red tegu and the gold tegu beside it. Colorado does not run the tegu-specific rules several southern states have adopted; the family listing decides it. CPW tells keepers to check their city or county as well, so a local ordinance can still be the binding rule.",
+          "note": "On Appendix A, which under § 703(A) may be possessed, propagated, sold, purchased or transported without a license or documentation. CPW's species list, which it has since taken down, filed Salvator merianae against this line, with the red tegu and the gold tegu beside it. Colorado does not run the tegu-specific rules several southern states have adopted; the family listing decides it. CPW tells keepers to check their city or county as well, so a local ordinance can still be the binding rule.",
           "localOverride": true,
           "verifiedOn": "2026-11-01"
         },
@@ -8231,9 +8232,9 @@
         "ME": {
           "sourceId": "me-unrestricted",
           "cite": "Unrestricted Species list",
-          "status": "legal",
+          "status": "conditional",
           "quote": "Varanus exanthematicus",
-          "note": "Maine clears nine monitors by species, the savannah monitor among them, so the clearance is specific to the species named rather than to monitors generally.",
+          "note": "Maine clears ten monitors by species, the savannah monitor among them, so the clearance is specific to the species named rather than to monitors generally. The whole Reptilia section of the list sits under the heading \"Captive Bred Origin Only\", which is the condition on the clearance: a wild-caught animal of the same species is not unrestricted and falls back to § 7.06(4), under which an uncategorized animal may not be possessed at all.",
           "verifiedOn": "2026-11-01"
         },
         "AR": {
@@ -8342,7 +8343,7 @@
           "sourceId": "co-w7",
           "cite": "Appendix A; § 703(A)",
           "quote": "Any species of lizard native only to the tropical and subtropical region from the following families: Varanidae (monitor lizard)",
-          "note": "On Appendix A, which under § 703(A) may be possessed, propagated, sold, purchased or transported without a license or documentation. CPW files Varanus exanthematicus against this line, along with the black-throated, blue-spotted tree, crocodile and Asian water monitors. CPW tells keepers to check their city or county as well, so a local ordinance can still be the binding rule.",
+          "note": "On Appendix A, which under § 703(A) may be possessed, propagated, sold, purchased or transported without a license or documentation. CPW's species list, which it has since taken down, filed Varanus exanthematicus against this line, along with the black-throated, blue-spotted tree, crocodile and Asian water monitors. CPW tells keepers to check their city or county as well, so a local ordinance can still be the binding rule.",
           "localOverride": true,
           "verifiedOn": "2026-11-01"
         },
@@ -8973,7 +8974,7 @@
           "sourceId": "co-cpw-species-list",
           "cite": "CPW, Wildlife and Animal Possession in Colorado, Regulated Wildlife",
           "quote": "Any species of wildlife that is not specifically listed in Chapter W-11 as Domestic or Unregulated or in Chapter W-07 as Appendix A or Appendix B, the species is regulated wildlife and a CPW license is required. CPW will not issue a license for private possession (eg pet) of regulated wildlife.",
-          "note": "Not on the domestic animal list and not on the unregulated wildlife list, which leaves it regulated. CPW's mammal list records exactly that for Hydrochoerus hydrochaeris. Colorado has no pet license to issue. Chapter W-11 § 1104 offers commercial wildlife park licenses, which require commercial status, and a non-commercial wildlife park license that § 1104(B)(2) closed to new entrants: it is available only to someone who held one already or held exotic mammals lawfully before January 1, 1983. The chapter introduction states the effect plainly, that \"noncommercial (pet) possession of regulated mammals has been prohibited by these regulations since 1983\". Recorded here as banned rather than permit: a license exists on paper but not one a pet keeper can obtain.",
+          "note": "Not on the domestic animal list and not on the unregulated wildlife list, which leaves it regulated. Colorado has no pet license to issue. Chapter W-11 § 1104 offers commercial wildlife park licenses, which require commercial status, and a non-commercial wildlife park license that § 1104(B)(2) closed to new entrants: it is available only to someone who held one already or held exotic mammals lawfully before January 1, 1983. The chapter introduction states the effect plainly, that \"noncommercial (pet) possession of regulated mammals has been prohibited by these regulations since 1983\". Recorded here as banned rather than permit: a license exists on paper but not one a pet keeper can obtain.",
           "verifiedOn": "2026-11-01",
           "grandfathered": {
             "before": "1983-01-01",
@@ -10326,7 +10327,7 @@
           "sourceId": "co-w11",
           "cite": "§ 1103(A)",
           "quote": "Domesticated races of chinchillas (Chinchilla laniger)",
-          "note": "On the domestic animal list, so exempted from Parks and Wildlife Commission regulations outright. Colorado names the domesticated race of the long-tailed chinchilla specifically, and CPW files Chinchilla laniger against this line. Its close relative the degu is on no list at all and is regulated wildlife, so the two sit at opposite ends of this map in Colorado. CPW tells keepers to check their city or county as well, so a local ordinance can still be the binding rule.",
+          "note": "On the domestic animal list, so exempted from Parks and Wildlife Commission regulations outright. Colorado names the domesticated race of the long-tailed chinchilla specifically, and CPW's species list, which it has since taken down, filed Chinchilla laniger against this line. Its close relative the degu is on no list at all and is regulated wildlife, so the two sit at opposite ends of this map in Colorado. CPW tells keepers to check their city or county as well, so a local ordinance can still be the binding rule.",
           "localOverride": true,
           "verifiedOn": "2026-11-01"
         },
@@ -11446,7 +11447,7 @@
           "sourceId": "co-w7",
           "cite": "Appendix A; § 703(A)",
           "quote": "Any species of lizard native only to the tropical and subtropical region from the following families: Iguanidae (iguanas)",
-          "note": "On Appendix A, which under § 703(A) may be possessed, propagated, sold, purchased or transported without a license or documentation. CPW files Iguana iguana against this line. The green iguana is neotropical from Mexico south to Paraguay, inside the band the chapter draws. CPW tells keepers to check their city or county as well, so a local ordinance can still be the binding rule.",
+          "note": "On Appendix A, which under § 703(A) may be possessed, propagated, sold, purchased or transported without a license or documentation. CPW's species list, which it has since taken down, filed Iguana iguana against this line. The green iguana is neotropical from Mexico south to Paraguay, inside the band the chapter draws. CPW tells keepers to check their city or county as well, so a local ordinance can still be the binding rule.",
           "localOverride": true,
           "verifiedOn": "2026-11-01"
         },
@@ -11870,7 +11871,7 @@
         "CO": {
           "status": "banned",
           "sourceId": "co-cpw-species-list",
-          "cite": "CPW herpetofauna list; 2 CCR 406-7 § 704(B)(7)(a)",
+          "cite": "2 CCR 406-7 § 701, § 704(B)(7)(a); Appendices A, B and C",
           "quote": "Any species of turtle native only to the tropical and subtropical region from the following families: Carettochelyidae (New Guinea softshell turtles) Dermatemydidae (Central American river turtles) Kinosternidae (mud and musk turtles) Testudinidae (tortoises) Trionychidae (soft-shelled turtles)",
           "note": "Chelydridae appears nowhere in Chapter W-7. Appendix A's turtle block lists five families and this is not one of them, Appendix B is three snake genera, and Appendix C, the wild-collection list, does not include it either. Under § 701 anything the chapter does not allow is unlawful to possess, so a snapping turtle is regulated wildlife with no pet license available. The snapping turtle is native to Colorado's eastern plains, which is the context for the one route the chapter does leave: § 704(B)(7)(a) lets someone who lawfully held a snapping turtle collected on or before May 1, 2026, keep it for the animal's life, on filing a CPW Legacy Report by July 30, 2026.",
           "grandfathered": {
@@ -12194,9 +12195,9 @@
         "ME": {
           "sourceId": "me-unrestricted",
           "cite": "Unrestricted Species list",
-          "status": "legal",
+          "status": "conditional",
           "quote": "all species in infraorder Gekkota Except for: Nephrurus deleani Infraorder Gekkota*",
-          "note": "Cleared at infraorder level, so every gecko is unrestricted. The asterisk footnote does not bite here: Gekko gecko went onto CITES Appendix II in 2019, and the footnote only removes Appendix I species.",
+          "note": "Cleared at infraorder level, so every gecko is unrestricted. The asterisk footnote does not bite here: Gekko gecko went onto CITES Appendix II in 2019, and the footnote only removes Appendix I species. The whole Reptilia section of the list sits under the heading \"Captive Bred Origin Only\", which is the condition on the clearance: a wild-caught animal of the same species is not unrestricted and falls back to § 7.06(4), under which an uncategorized animal may not be possessed at all.",
           "verifiedOn": "2026-11-01"
         },
         "AR": {
@@ -12304,7 +12305,7 @@
           "sourceId": "co-w7",
           "cite": "Appendix A; § 703(A)",
           "quote": "Any species from the families Diplodactylidae (eyelash geckos), Eublepharidae (eyelid geckos), or Gekkonidae (geckos) except Mediterranean house geckos (Hemidactylus turcicus)",
-          "note": "On Appendix A, which under § 703(A) may be possessed, propagated, sold, purchased or transported without a license or documentation. The geckos are handled in the appendix's Other Species block, which CPW introduces as species that are not native only to tropic or subtropic regions, so the native-range qualifier that governs the family lists does not apply to them. Three gecko families are cleared with a single exception, the Mediterranean house gecko. CPW files Gekko gecko against this line. CPW tells keepers to check their city or county as well, so a local ordinance can still be the binding rule.",
+          "note": "On Appendix A, which under § 703(A) may be possessed, propagated, sold, purchased or transported without a license or documentation. The geckos are handled in the appendix's Other Species block, which CPW introduces as species that are not native only to tropic or subtropic regions, so the native-range qualifier that governs the family lists does not apply to them. Three gecko families are cleared with a single exception, the Mediterranean house gecko. CPW's species list, which it has since taken down, filed Gekko gecko against this line. CPW tells keepers to check their city or county as well, so a local ordinance can still be the binding rule.",
           "localOverride": true,
           "verifiedOn": "2026-11-01"
         },
@@ -13083,7 +13084,7 @@
           "cite": "Unrestricted Species list",
           "status": "permit",
           "quote": "Varanus exanthematicus",
-          "note": "Maine clears nine monitors by species, and the Nile monitor is not one of them, so it is restricted. That fits its treatment in Florida and Louisiana for different reasons.",
+          "note": "Maine clears ten monitors by species, and the Nile monitor is not one of them, so it is restricted. That fits its treatment in Florida and Louisiana for different reasons.",
           "verifiedOn": "2026-11-01"
         },
         "AR": {
@@ -13193,7 +13194,7 @@
           "sourceId": "co-w7",
           "cite": "Appendix A; § 703(A)",
           "quote": "Any species of lizard native only to the tropical and subtropical region from the following families: Varanidae (monitor lizard)",
-          "note": "On Appendix A, which under § 703(A) may be possessed, propagated, sold, purchased or transported without a license or documentation. CPW files Varanus niloticus against this line. Colorado's monitor rule turns on native range rather than on adult size or on the animal's reputation, so the Nile monitor and the savannah monitor land in the same place here even though several states separate them. CPW tells keepers to check their city or county as well, so a local ordinance can still be the binding rule.",
+          "note": "On Appendix A, which under § 703(A) may be possessed, propagated, sold, purchased or transported without a license or documentation. CPW's species list, which it has since taken down, filed Varanus niloticus against this line. Colorado's monitor rule turns on native range rather than on adult size or on the animal's reputation, so the Nile monitor and the savannah monitor land in the same place here even though several states separate them. CPW tells keepers to check their city or county as well, so a local ordinance can still be the binding rule.",
           "localOverride": true,
           "verifiedOn": "2026-11-01"
         },
@@ -13651,7 +13652,7 @@
           "sourceId": "co-w7",
           "cite": "Appendix A; § 703(A)",
           "quote": "Any species of snake native only to the tropical and subtropical region from the following families: Pythonidae (giant snakes)",
-          "note": "On Appendix A, which under § 703(A) may be possessed, propagated, sold, purchased or transported without a license or documentation. CPW files Python bivittatus on Appendix A, and files the Indian python, Python molurus, as regulated because its range runs outside the tropics. The two decisions sit a line apart on the same list and show how narrowly the qualifier is being applied. Federal law is a constraint only at the border rather than in Colorado: the Burmese python has been listed as injurious wildlife under the Lacey Act since 2012, which bars importation into the United States and shipment to Hawaii or a territory; since USARK v. Zinke (D.C. Cir. 2017) it does not bar transport between the continental states. CPW tells keepers to check their city or county as well, so a local ordinance can still be the binding rule.",
+          "note": "On Appendix A, which under § 703(A) may be possessed, propagated, sold, purchased or transported without a license or documentation. CPW's species list, which it has since taken down, filed Python bivittatus on Appendix A, and filed the Indian python, Python molurus, as regulated because its range runs outside the tropics. The two decisions sit a line apart on the same list and show how narrowly the qualifier is being applied. Federal law is a constraint only at the border rather than in Colorado: the Burmese python has been listed as injurious wildlife under the Lacey Act since 2012, which bars importation into the United States and shipment to Hawaii or a territory; since USARK v. Zinke (D.C. Cir. 2017) it does not bar transport between the continental states. CPW tells keepers to check their city or county as well, so a local ordinance can still be the binding rule.",
           "localOverride": true,
           "verifiedOn": "2026-11-01"
         },
@@ -13786,7 +13787,7 @@
           "sourceId": "co-cpw-species-list",
           "cite": "CPW, Wildlife and Animal Possession in Colorado, Regulated Wildlife",
           "quote": "Any species of wildlife that is not specifically listed in Chapter W-11 as Domestic or Unregulated or in Chapter W-07 as Appendix A or Appendix B, the species is regulated wildlife and a CPW license is required. CPW will not issue a license for private possession (eg pet) of regulated wildlife.",
-          "note": "Absent from both lists, so regulated. CPW's mammal list names Octodon degus and files it as regulated wildlife. Colorado has no pet license to issue. Chapter W-11 § 1104 offers commercial wildlife park licenses, which require commercial status, and a non-commercial wildlife park license that § 1104(B)(2) closed to new entrants: it is available only to someone who held one already or held exotic mammals lawfully before January 1, 1983. The chapter introduction states the effect plainly, that \"noncommercial (pet) possession of regulated mammals has been prohibited by these regulations since 1983\". The chinchilla, another South American caviomorph rodent kept as a pet, is named on the domestic animal list; the degu never was.",
+          "note": "Absent from both lists, so regulated. Colorado has no pet license to issue. Chapter W-11 § 1104 offers commercial wildlife park licenses, which require commercial status, and a non-commercial wildlife park license that § 1104(B)(2) closed to new entrants: it is available only to someone who held one already or held exotic mammals lawfully before January 1, 1983. The chapter introduction states the effect plainly, that \"noncommercial (pet) possession of regulated mammals has been prohibited by these regulations since 1983\". The chinchilla, another South American caviomorph rodent kept as a pet, is named on the domestic animal list; the degu never was.",
           "verifiedOn": "2026-11-01",
           "grandfathered": {
             "before": "1983-01-01",
@@ -14929,9 +14930,9 @@
         "CO": {
           "status": "banned",
           "sourceId": "co-cpw-species-list",
-          "cite": "CPW herpetofauna list; 2 CCR 406-7 § 704(B)(7)(a)",
+          "cite": "2 CCR 406-7 § 701, § 704(B)(7)(a); Appendices A, B and C",
           "quote": "Any species of turtle native only to the tropical and subtropical region from the following families: Carettochelyidae (New Guinea softshell turtles) Dermatemydidae (Central American river turtles) Kinosternidae (mud and musk turtles) Testudinidae (tortoises) Trionychidae (soft-shelled turtles)",
-          "note": "Emydidae, the family that holds the box turtles and most North American pond turtles, is on none of Chapter W-7's appendices, and § 701 makes possession of any herpetofauna the chapter does not allow unlawful. CPW files the common, eastern, ornate and three-toed box turtles alike against this finding, so this is not a native-versus-imported distinction: a captive-bred eastern box turtle is in the same position as Colorado's own ornate box turtle. The one route is legacy: § 704(B)(7)(a) names the ornate box turtle among the animals a keeper could retain for life if it was legally collected on or before May 1, 2026, and reported by July 30, 2026.",
+          "note": "Emydidae, the family that holds the box turtles and most North American pond turtles, is on none of Chapter W-7's appendices, and § 701 makes possession of any herpetofauna the chapter does not allow unlawful. That covers every box turtle alike, so this is not a native-versus-imported distinction: a captive-bred eastern box turtle is in the same position as Colorado's own ornate box turtle. The one route is legacy: § 704(B)(7)(a) names the ornate box turtle among the animals a keeper could retain for life if it was legally collected on or before May 1, 2026, and reported by July 30, 2026.",
           "grandfathered": {
             "before": "2026-05-01",
             "detail": "An ornate box turtle legally collected on or before May 1, 2026, may be kept and transported within Colorado for the life of the animal if a CPW Legacy Report was filed by July 30, 2026. No new wild capture is allowed."
@@ -15385,7 +15386,7 @@
         "CO": {
           "status": "banned",
           "sourceId": "co-w7",
-          "cite": "§ 708; CPW herpetofauna list",
+          "cite": "2 CCR 406-7 § 708; Appendices A, B and C",
           "quote": "A person may possess, transport, or export, but not propagate, a red-eared slider taken from the wild in Colorado for the life of the animal.",
           "note": "Colorado reversed itself on this species in 2026. The red-eared slider used to be named outright on the Chapter W-11 unregulated wildlife list; Chapter W-7 § 708(A) now declares it invasive herpetofauna detrimental to Colorado wildlife and habitat, allows unlimited collection from the wild, and leaves Emydidae off every appendix. CPW's summary of the position is \"No import, no sale\". What survives is narrow and points the wrong way for a buyer: § 708(C)(1) permits keeping a slider taken from the wild in Colorado, for that animal's life, with no propagation and no release. So the pet-trade route is closed while the wild-take route is wide open, which is the opposite of how these rules usually run. W-7 does have a Legacy Report, due July 30, 2026, but it does not reach the slider: it covers Appendix B snakes held on May 1, 2026 (§ 703(C)), native species collected on or before that date (§ 704(B)(7)), and Gila monsters and Mexican beaded lizards (§ 707). No provision keeps a pet-store slider on the strength of a Legacy Report.",
           "verifiedOn": "2026-11-01"
@@ -15825,7 +15826,7 @@
           "sourceId": "co-w7",
           "cite": "Appendix A; § 703(A)",
           "quote": "Any species of turtle native only to the tropical and subtropical region from the following families: Testudinidae (tortoises)",
-          "note": "On Appendix A, which under § 703(A) may be possessed, propagated, sold, purchased or transported without a license or documentation. CPW files Centrochelys sulcata against this line. Its Sahelian range sits inside the band, unlike the Russian, Greek, Hermann's and leopard tortoises, which CPW files as regulated on the same family listing. CPW tells keepers to check their city or county as well, so a local ordinance can still be the binding rule.",
+          "note": "On Appendix A, which under § 703(A) may be possessed, propagated, sold, purchased or transported without a license or documentation. CPW's species list, which it has since taken down, filed Centrochelys sulcata against this line. Its Sahelian range sits inside the band, unlike the Russian, Greek, Hermann's and leopard tortoises, which that list filed as regulated on the same family listing. CPW tells keepers to check their city or county as well, so a local ordinance can still be the binding rule.",
           "localOverride": true,
           "verifiedOn": "2026-11-01"
         },
@@ -16162,9 +16163,9 @@
         "ME": {
           "sourceId": "me-unrestricted",
           "cite": "Unrestricted Species list",
-          "status": "legal",
+          "status": "conditional",
           "quote": "Heterodon nasicus   Western Hognose Snake",
-          "note": "Only the western hognose is named. The eastern hog-nosed snake is native to Maine and is not on the list, so which species you are buying decides the answer, the same split Rhode Island draws.",
+          "note": "Only the western hognose is named, so which species you are buying decides the answer, the same split Rhode Island draws. An eastern hognose is not on the list and is not cleared. The whole Reptilia section of the list sits under the heading \"Captive Bred Origin Only\", which is the condition on the clearance: a wild-caught animal of the same species is not unrestricted and falls back to § 7.06(4), under which an uncategorized animal may not be possessed at all.",
           "verifiedOn": "2026-11-01"
         },
         "CA": {
@@ -16265,7 +16266,7 @@
           "sourceId": "co-w7",
           "cite": "Appendix B; § 703(B)",
           "quote": "Any captive-bred species from the genus Heterodon except the Eastern hog-nosed snake (Heterodon platirhinos), Lystrophis, or Leioheterodon (hognose snakes)",
-          "note": "Captive-bred western hognose is on Appendix B, needing documentation under § 703(B) but no license, and CPW files Heterodon nasicus (captive bred) against exactly this line. Two things fall outside it. The eastern hognose is excluded by name. And a hognose taken from the wild in Colorado is not covered: CPW files that as legacy possession only, lawful if held on or before May 1, 2026, and reported by July 30, 2026, with no new wild capture allowed. CPW tells keepers to check their city or county as well, so a local ordinance can still be the binding rule.",
+          "note": "Captive-bred western hognose is on Appendix B, needing documentation under § 703(B) but no license, and CPW's species list, which it has since taken down, filed Heterodon nasicus (captive bred) against exactly this line. Two things fall outside it. The eastern hognose is excluded by name. And a hognose taken from the wild in Colorado is not covered: that list treated it as legacy possession only, lawful if held on or before May 1, 2026, and reported by July 30, 2026, with no new wild capture allowed. CPW tells keepers to check their city or county as well, so a local ordinance can still be the binding rule.",
           "localOverride": true,
           "verifiedOn": "2026-11-01"
         },
@@ -16388,9 +16389,9 @@
         "AL": {
           "status": "conditional",
           "sourceId": "al-native-nongame",
-          "cite": "Ala. Admin. Code r. 220-2-.92(1)(c); r. 220-2-.26(1)",
+          "cite": "Ala. Admin. Code r. 220-2-.92(1)(c), (f); r. 220-2-.26(1)",
           "quote": "Snake, Southern Hognose Heterodon simus",
-          "note": "Which hognose decides this, and Alabama says so twice. 220-2-.92(1)(c) protects the southern hognose, Heterodon simus, by name, so possessing that species needs a scientific collection permit or a written permit from the Commissioner. The eastern hognose, H. platirhinos, is also an Alabama animal and is not on the list, and the western hognose, H. nasicus, is the pet trade species and is not native here at all. Both of those are unrestricted. The other half is a nice piece of drafting: 220-2-.26(1) bans venomous reptiles that have never naturally existed in the wild in Alabama and then writes an express exception, \"except for hognose snakes (genus Heterodon)\", which settles the rear-fanged argument that leaves this animal ambiguous in several other states.",
+          "note": "Which hognose decides this, and Alabama says so twice. 220-2-.92(1)(c) protects the southern hognose, Heterodon simus, by name, so possessing that species needs a scientific collection permit or a written permit from the Commissioner. 220-2-.92(1)(f) then protects every Species of Greatest Conservation Need in the State Wildlife Action Plan, and the eastern hognose, H. platirhinos, is one, so it needs the same permit. The western hognose, H. nasicus, is the pet trade species, is not native here at all, and is on neither list, so it is unrestricted. The other half is a nice piece of drafting: 220-2-.26(1) bans venomous reptiles that have never naturally existed in the wild in Alabama and then writes an express exception, \"except for hognose snakes (genus Heterodon)\", which settles the rear-fanged argument that leaves this animal ambiguous in several other states.",
           "verifiedOn": "2026-11-01"
         },
         "IN": {
@@ -18161,9 +18162,9 @@
         "CO": {
           "status": "banned",
           "sourceId": "co-cpw-species-list",
-          "cite": "CPW, Wildlife and Animal Possession in Colorado, Regulated Wildlife",
+          "cite": "2 CCR 406-7 Appendix A(A)(3), § 700(G); CPW, Wildlife and Animal Possession in Colorado, Regulated Wildlife",
           "quote": "Any species of wildlife that is not specifically listed in Chapter W-11 as Domestic or Unregulated or in Chapter W-07 as Appendix A or Appendix B, the species is regulated wildlife and a CPW license is required. CPW will not issue a license for private possession (eg pet) of regulated wildlife.",
-          "note": "Boidae is on Appendix A, but the listing covers only snakes native only to the tropical and subtropical region, and the rosy boa is a southwestern United States and Baja animal ranging north of the 26 degree line in § 700(G). CPW's herpetofauna list records Lichanura trivirgata against Appendix A, A, 3 with the finding \"native range is outside tropical/subtropical\", and files the rubber boa the same way, against Boa constrictor, the rainbow boas and the sand boas, which clear it. So the family listing that makes the boa constrictor legal in Colorado does not carry the rosy boa, and this entry read legal until the May 1, 2026, rewrite added that test.",
+          "note": "Boidae is on Appendix A, but the listing covers only snakes native only to the tropical and subtropical region, and the rosy boa is a southwestern United States and Baja animal ranging north of the 26 degree line in § 700(G). The rubber boa is out for the same reason, while the boa constrictor, whose range is tropical, clears it. So the family listing that makes the boa constrictor legal in Colorado does not carry the rosy boa, and this entry read legal until the May 1, 2026, rewrite added that test.",
           "verifiedOn": "2026-11-01"
         },
         "CT": {
@@ -19239,10 +19240,10 @@
           "verifiedOn": "2026-11-01"
         },
         "ME": {
-          "status": "legal",
+          "status": "conditional",
           "sourceId": "me-unrestricted",
-          "cite": "Unrestricted Species List, Reptilia, Sauria",
-          "note": "Maine's unrestricted species list, as updated in October 2026, names Varanus acanthurus by species, one of nine monitors it now clears. Unrestricted species need no Maine permit to import or possess. An earlier version of the list named only the savannah monitor, which is why the Ackie used to need a permit here.",
+          "cite": "Unrestricted Species List, Reptilia, Sauria (Captive Bred Origin Only)",
+          "note": "Maine's unrestricted species list, as updated in October 2026, names Varanus acanthurus by species, one of ten monitors it now clears. An earlier version of the list named only the savannah monitor, which is why the Ackie used to need a permit here. The whole Reptilia section of the list sits under the heading \"Captive Bred Origin Only\", which is the condition on the clearance: a wild-caught animal of the same species is not unrestricted and falls back to § 7.06(4), under which an uncategorized animal may not be possessed at all.",
           "verifiedOn": "2026-11-01",
           "quote": "Varanus acanthurus Spiny-tailed Monitor"
         },
@@ -19462,9 +19463,9 @@
         "CO": {
           "status": "banned",
           "sourceId": "co-cpw-species-list",
-          "cite": "CPW, Wildlife and Animal Possession in Colorado, Regulated Wildlife",
+          "cite": "2 CCR 406-7 Appendix A(A)(4), § 700(G), § 704; CPW, Wildlife and Animal Possession in Colorado, Regulated Wildlife",
           "quote": "Any species of wildlife that is not specifically listed in Chapter W-11 as Domestic or Unregulated or in Chapter W-07 as Appendix A or Appendix B, the species is regulated wildlife and a CPW license is required. CPW will not issue a license for private possession (eg pet) of regulated wildlife.",
-          "note": "Colubridae is on Appendix A, but only for snakes native only to the tropical and subtropical region, and the common garter snake is a temperate North American animal. CPW's herpetofauna list records Thamnophis sirtalis against Appendix A, A, 4 with the finding \"native range outside tropical/subtropical\", and files the checkered and plains garter snakes the same way. Nothing else in Chapter W-7 reaches it: Appendix B is three snake genera and Thamnophis is not among them. What Colorado does allow is wild collection of two of its own garter snakes, the wandering and the plains, by residents holding a Resident Herpetofauna Collection and Possession License under § 704, which is a route to a Colorado animal rather than to a pet-trade one. This entry read legal until the May 1, 2026, herpetofauna rewrite moved the reptile lists out of Chapter W-11 and attached a native-range test to them.",
+          "note": "Colubridae is on Appendix A, but only for snakes native only to the tropical and subtropical region, and the common garter snake is a temperate North American animal. The checkered and plains garter snakes are temperate too. Nothing else in Chapter W-7 reaches it: Appendix B is three snake genera and Thamnophis is not among them. What Colorado does allow is wild collection of two of its own garter snakes, the wandering and the plains, by residents holding a Resident Herpetofauna Collection and Possession License under § 704, which is a route to a Colorado animal rather than to a pet-trade one. This entry read legal until the May 1, 2026, herpetofauna rewrite moved the reptile lists out of Chapter W-11 and attached a native-range test to them.",
           "verifiedOn": "2026-11-01"
         },
         "CT": {
@@ -19886,7 +19887,7 @@
           "sourceId": "co-w7",
           "cite": "Appendix B; § 703(B)",
           "quote": "Any captive-bred species from the genus Lampropeltis (kingsnakes and milksnakes) except the Western milksnakes (Lampropeltis gentilis/Lampropeltis triangulum gentilis) and Speckled kingsnake (Lampropeltis holbrooki/Lampropeltis getula holbrooki)",
-          "note": "The California kingsnake is neither of the two excluded natives, so it is on Appendix B and needs no license, but it does now need two things it did not need before May 1, 2026: it must be captive-bred, and § 703(B) requires documentation identifying the animal, a receipt or bill of sale, a donation certificate, an importation health certificate or proof of lawful parentage. CPW files Lampropeltis californiae against this line. Anyone holding one on May 1, 2026, could file a CPW Legacy Report under § 703(C) instead. CPW tells keepers to check their city or county as well, so a local ordinance can still be the binding rule.",
+          "note": "The California kingsnake is neither of the two excluded natives, so it is on Appendix B and needs no license, but it does now need two things it did not need before May 1, 2026: it must be captive-bred, and § 703(B) requires documentation identifying the animal, a receipt or bill of sale, a donation certificate, an importation health certificate or proof of lawful parentage. CPW's species list, which it has since taken down, filed Lampropeltis californiae against this line. Anyone holding one on May 1, 2026, could file a CPW Legacy Report under § 703(C) instead. CPW tells keepers to check their city or county as well, so a local ordinance can still be the binding rule.",
           "localOverride": true,
           "verifiedOn": "2026-11-01"
         },
@@ -20010,11 +20011,11 @@
           "localOverride": true
         },
         "ME": {
-          "status": "legal",
+          "status": "conditional",
           "sourceId": "me-unrestricted",
           "cite": "Unrestricted Species list, Serpentes (Captive Bred Origin Only)",
           "quote": "All Species in Genus Lampropeltis (Kingsnakes And Milk Snakes) Except for: Lampropeltis herrerae; Lampropeltis triangulum triangulum",
-          "note": "The whole genus is cleared except two named species, neither of which is the California kingsnake.",
+          "note": "The whole genus is cleared except two named species, neither of which is the California kingsnake. The whole Reptilia section of the list sits under the heading \"Captive Bred Origin Only\", which is the condition on the clearance: a wild-caught animal of the same species is not unrestricted and falls back to § 7.06(4), under which an uncategorized animal may not be possessed at all.",
           "verifiedOn": "2026-11-01"
         },
         "MN": {
@@ -20894,11 +20895,11 @@
           "localOverride": true
         },
         "ME": {
-          "status": "legal",
+          "status": "conditional",
           "sourceId": "me-unrestricted",
           "cite": "Unrestricted Species List, Testudines",
-          "quote": "Red-footed Tortoise",
-          "note": "Maine's own tortoise clearance list (documented in this site's sulcata-tortoise research) names the Russian, Greek, Hermann's, leopard, red-footed and yellow-footed tortoises by common name. The red-footed tortoise is expressly included; the exact binomial spelling used on Maine's PDF was not independently re-verified this round because the source PDF resisted text extraction, so double-check the primary document (maine.gov/ifw/docs/unrestrictedspecies.pdf) before publishing.",
+          "quote": "Chelonoidis carbonaria Red-footed Tortoise",
+          "note": "Named by species on the unrestricted list, alongside the Russian, Greek, Hermann's, leopard and yellow-footed tortoises. The Testudines section of the list sits under the heading \"Captive Bred Origin Only; must be a minimum 4\" diameter.\", so the clearance covers a captive-bred tortoise at least four inches across, and a wild-caught or smaller one is not unrestricted and falls back to § 7.06(4), under which an uncategorized animal may not be possessed at all.",
           "verifiedOn": "2026-11-01"
         },
         "AR": {
@@ -20989,7 +20990,7 @@
           "sourceId": "co-w7",
           "cite": "Appendix A; § 703(A)",
           "quote": "Any species of turtle native only to the tropical and subtropical region from the following families: Testudinidae (tortoises)",
-          "note": "On Appendix A, which under § 703(A) may be possessed, propagated, sold, purchased or transported without a license or documentation. CPW files Chelonoidis carbonarius against this line. Its South American range is entirely inside the band Chapter W-7 § 700(G) draws. CPW tells keepers to check their city or county as well, so a local ordinance can still be the binding rule.",
+          "note": "On Appendix A, which under § 703(A) may be possessed, propagated, sold, purchased or transported without a license or documentation. CPW's species list, which it has since taken down, filed Chelonoidis carbonarius against this line. Its South American range is entirely inside the band Chapter W-7 § 700(G) draws. CPW tells keepers to check their city or county as well, so a local ordinance can still be the binding rule.",
           "localOverride": true,
           "verifiedOn": "2026-11-01"
         },
@@ -21176,7 +21177,7 @@
           "sourceId": "co-w7",
           "cite": "Appendix A; § 703(A)",
           "quote": "Any species of lizard native only to the tropical and subtropical region from the following families: Agamidae (chisel-teeth lizards)",
-          "note": "On Appendix A, which under § 703(A) may be possessed, propagated, sold, purchased or transported without a license or documentation. CPW files Pogona vitticeps against this line, treating the central bearded dragon's Australian interior range as falling inside the tropical and subtropical band. CPW tells keepers to check their city or county as well, so a local ordinance can still be the binding rule.",
+          "note": "On Appendix A, which under § 703(A) may be possessed, propagated, sold, purchased or transported without a license or documentation. CPW's species list, which it has since taken down, filed Pogona vitticeps against this line, treating the central bearded dragon's Australian interior range as falling inside the tropical and subtropical band. CPW tells keepers to check their city or county as well, so a local ordinance can still be the binding rule.",
           "localOverride": true,
           "verifiedOn": "2026-11-01"
         },
@@ -21606,7 +21607,7 @@
           "sourceId": "co-w7",
           "cite": "Appendix A; § 703(A)",
           "quote": "Any species from the families Diplodactylidae (eyelash geckos), Eublepharidae (eyelid geckos), or Gekkonidae (geckos) except Mediterranean house geckos (Hemidactylus turcicus)",
-          "note": "On Appendix A, which under § 703(A) may be possessed, propagated, sold, purchased or transported without a license or documentation. Eublepharidae is cleared outright in the Other Species block rather than through the native-range test, which matters for this species: the leopard gecko's Afghanistan-to-northwest-India range would be a hard call under that test. CPW files Eublepharis macularius against this line. CPW tells keepers to check their city or county as well, so a local ordinance can still be the binding rule.",
+          "note": "On Appendix A, which under § 703(A) may be possessed, propagated, sold, purchased or transported without a license or documentation. Eublepharidae is cleared outright in the Other Species block rather than through the native-range test, which matters for this species: the leopard gecko's Afghanistan-to-northwest-India range would be a hard call under that test. CPW's species list, which it has since taken down, filed Eublepharis macularius against this line. CPW tells keepers to check their city or county as well, so a local ordinance can still be the binding rule.",
           "localOverride": true,
           "verifiedOn": "2026-11-01"
         },
@@ -22036,7 +22037,7 @@
           "sourceId": "co-w7",
           "cite": "Appendix A; § 703(A)",
           "quote": "Any species from the families Diplodactylidae (eyelash geckos), Eublepharidae (eyelid geckos), or Gekkonidae (geckos) except Mediterranean house geckos (Hemidactylus turcicus)",
-          "note": "On Appendix A, which under § 703(A) may be possessed, propagated, sold, purchased or transported without a license or documentation. Diplodactylidae is named in its own right, so the crested gecko does not depend on the older taxonomy that filed Correlophus and Rhacodactylus inside Gekkonidae. CPW files Correlophus ciliatus against this line, and the gargoyle and leachianus geckos with it. CPW tells keepers to check their city or county as well, so a local ordinance can still be the binding rule.",
+          "note": "On Appendix A, which under § 703(A) may be possessed, propagated, sold, purchased or transported without a license or documentation. Diplodactylidae is named in its own right, so the crested gecko does not depend on the older taxonomy that filed Correlophus and Rhacodactylus inside Gekkonidae. CPW's species list, which it has since taken down, filed Correlophus ciliatus against this line, and the gargoyle and leachianus geckos with it. CPW tells keepers to check their city or county as well, so a local ordinance can still be the binding rule.",
           "localOverride": true,
           "verifiedOn": "2026-11-01"
         },
@@ -22466,7 +22467,7 @@
           "sourceId": "co-w7",
           "cite": "Appendix A; § 703(A)",
           "quote": "Any species of lizard native only to the tropical and subtropical region from the following families: Scincidae (skinks)",
-          "note": "On Appendix A, which under § 703(A) may be possessed, propagated, sold, purchased or transported without a license or documentation. CPW files Tiliqua at genus level as well as three named forms, the Indonesian, Halmahera and northern blue-tongues, all on Appendix A. CPW tells keepers to check their city or county as well, so a local ordinance can still be the binding rule.",
+          "note": "On Appendix A, which under § 703(A) may be possessed, propagated, sold, purchased or transported without a license or documentation. CPW's species list, which it has since taken down, filed Tiliqua at genus level as well as three named forms, the Indonesian, Halmahera and northern blue-tongues, all on Appendix A. CPW tells keepers to check their city or county as well, so a local ordinance can still be the binding rule.",
           "localOverride": true,
           "verifiedOn": "2026-11-01"
         },
@@ -22896,7 +22897,7 @@
           "sourceId": "co-w7",
           "cite": "Appendix A; § 703(A)",
           "quote": "Any species of lizard native only to the tropical and subtropical region from the following families: Chamaeleonidae (chameleons)",
-          "note": "On Appendix A, which under § 703(A) may be possessed, propagated, sold, purchased or transported without a license or documentation. CPW files Trioceros jacksonii against this line. Its native East African montane range straddles the equator. CPW tells keepers to check their city or county as well, so a local ordinance can still be the binding rule.",
+          "note": "On Appendix A, which under § 703(A) may be possessed, propagated, sold, purchased or transported without a license or documentation. CPW's species list, which it has since taken down, filed Trioceros jacksonii against this line. Its native East African montane range straddles the equator. CPW tells keepers to check their city or county as well, so a local ordinance can still be the binding rule.",
           "localOverride": true,
           "verifiedOn": "2026-11-01"
         },
@@ -25106,7 +25107,7 @@
           "sourceId": "co-w0-008",
           "cite": "Chapter W-0, § 008(B)(6)",
           "quote": "B. The following terrestrial wildlife species or viable gametes (eggs and sperm) are hereby determined to be detrimental to existing wildlife and their habitat in Colorado, and except as authorized in writing by the Division after consideration of the criteria in Commission Regulation #1102(A)(4), their possession is prohibited. Persons who have proof of possession of those species listed in subsections 1 through 8 of this section prior to September 1, 1990, may possess the following species for the life of the animal(s). ... 6. Raccoon.",
-          "note": "Named on Colorado's prohibited list, which CPW's mammal list confirms row by row for Procyon lotor. This is a harder answer than the regulated tier: the possession itself is prohibited, and CPW's possession page uses the raccoon as its example of an animal not allowed here even where another state permits it. It is a Colorado native as well, and C.R.S. 33-6-109 bars keeping native wildlife taken from the wild.",
+          "note": "Named on Colorado's prohibited list. This is a harder answer than the regulated tier: the possession itself is prohibited, and CPW's possession page uses the raccoon as its example of an animal not allowed here even where another state permits it. It is a Colorado native as well, and C.R.S. 33-6-109 bars keeping native wildlife taken from the wild.",
           "grandfathered": {
             "before": "1990-09-01",
             "detail": "Proof of possession before September 1, 1990, allows the animal to be kept for its life, tagged and reported, but not sold, traded or moved within Colorado."
@@ -27002,7 +27003,7 @@
           "sourceId": "co-cpw-species-list",
           "cite": "CPW, Wildlife and Animal Possession in Colorado, Regulated Wildlife",
           "quote": "Any species of wildlife that is not specifically listed in Chapter W-11 as Domestic or Unregulated or in Chapter W-07 as Appendix A or Appendix B, the species is regulated wildlife and a CPW license is required. CPW will not issue a license for private possession (eg pet) of regulated wildlife.",
-          "note": "CPW's mammal list rules on the South American coati, Nasua nasua, as regulated wildlife, not on the domestic or unregulated list; the white-nosed coati is on no list either and lands in the same place. The prohibited list's raccoon entry is a single species, so it does not reach a coati. Chapter W-11 says noncommercial (pet) possession of regulated mammals has been prohibited since 1983, and its wildlife park licenses are commercial or closed to new entrants.",
+          "note": "Neither coati, the South American Nasua nasua or the white-nosed Nasua narica, is on the domestic or unregulated list, so both are regulated wildlife. The prohibited list's raccoon entry is a single species, so it does not reach a coati. Chapter W-11 says noncommercial (pet) possession of regulated mammals has been prohibited since 1983, and its wildlife park licenses are commercial or closed to new entrants.",
           "verifiedOn": "2026-11-01"
         },
         "AZ": {
@@ -28909,7 +28910,7 @@
           "sourceId": "co-cpw-species-list",
           "cite": "CPW, Wildlife and Animal Possession in Colorado, Regulated Wildlife",
           "quote": "Any species of wildlife that is not specifically listed in Chapter W-11 as Domestic or Unregulated or in Chapter W-07 as Appendix A or Appendix B, the species is regulated wildlife and a CPW license is required. CPW will not issue a license for private possession (eg pet) of regulated wildlife.",
-          "note": "CPW's mammal list rules on Aonyx cinereus by name as regulated wildlife, not on the domestic or unregulated list. CITES Appendix I since 2019 bars commercial international trade separately. Chapter W-11 says noncommercial (pet) possession of regulated mammals has been prohibited since 1983, and its wildlife park licenses are commercial or closed to new entrants.",
+          "note": "Aonyx cinereus is on neither the domestic nor the unregulated list, so it is regulated wildlife. CITES Appendix I since 2019 bars commercial international trade separately. Chapter W-11 says noncommercial (pet) possession of regulated mammals has been prohibited since 1983, and its wildlife park licenses are commercial or closed to new entrants.",
           "verifiedOn": "2026-11-01"
         },
         "AZ": {
@@ -33896,9 +33897,9 @@
         "CO": {
           "status": "banned",
           "sourceId": "co-cpw-species-list",
-          "cite": "CPW species determinations, Crotalus atrox and C. viridis; 2 CCR 406-7 Appendices A and C",
+          "cite": "2 CCR 406-7 § 701; Appendices A and C",
           "quote": "Any species of wildlife that is not specifically listed in Chapter W-11 as Domestic or Unregulated or in Chapter W-07 as Appendix A or Appendix B, the species is regulated wildlife and a CPW license is required. CPW will not issue a license for private possession (eg pet) of regulated wildlife.",
-          "note": "CPW has ruled on two rattlesnakes, the western diamondback and Colorado's own prairie rattlesnake, and gives both the same answer: \"Family Viperidae not approved in regulation\". Appendix A clears only listed nonvenomous families, and Appendix C, the wild-collection list for Colorado natives, names no rattlesnake, so every rattlesnake is regulated wildlife with no pet license.",
+          "note": "Viperidae is on none of Chapter W-7's appendices. Appendix A clears only listed nonvenomous families, and Appendix C, the wild-collection list for Colorado natives, names no rattlesnake, so every rattlesnake is regulated wildlife with no pet license.",
           "verifiedOn": "2026-11-01"
         },
         "AZ": {
@@ -34858,7 +34859,7 @@
           "sourceId": "co-w7",
           "cite": "2 CCR 406-7 Appendix A(A)(5), #703(A)",
           "quote": "A. Any species of snake native only to the tropical and subtropical region from the following families: ... 5. Pythonidae (giant snakes)",
-          "note": "Appendix A clears pythons \"native only to the tropical and subtropical region\", which #700(G) fixes at 26 degrees north to 26 degrees south, and CPW has ruled the reticulated python inside it. No license or documentation is needed. Federally, the reticulated python has been injurious wildlife under the Lacey Act since 2015 (50 CFR 16.15(a)), which bars importing one into the country or shipping one to Hawaii or a territory; USARK v. Zinke (D.C. Cir. 2017) held it does not bar shipment between the continental states.",
+          "note": "Appendix A clears pythons \"native only to the tropical and subtropical region\", which #700(G) fixes at 26 degrees north to 26 degrees south, and the reticulated python's native range, from Bangladesh and Myanmar south through Southeast Asia to Indonesia and the Philippines, sits inside that band. CPW once published a determination saying so and no longer publishes its species determinations. No license or documentation is needed. Federally, the reticulated python has been injurious wildlife under the Lacey Act since 2015 (50 CFR 16.15(a)), which bars importing one into the country or shipping one to Hawaii or a territory; USARK v. Zinke (D.C. Cir. 2017) held it does not bar shipment between the continental states.",
           "verifiedOn": "2026-11-01"
         },
         "AZ": {
@@ -35311,7 +35312,7 @@
           "sourceId": "co-w7",
           "cite": "2 CCR 406-7 #700(G), Appendix A(A)(3)",
           "quote": "A. Any species of snake native only to the tropical and subtropical region from the following families: ... 3. Boidae (giant snakes)",
-          "note": "Boidae is on Appendix A, but only for species \"native only to the tropical and subtropical region\", which #700(G) defines as 26.0 degrees north to 26.0 degrees south. Colorado decides that species by species and CPW's published determinations cover several boas but not the green anaconda. Its range is centered on the Amazon and Orinoco basins, and whether any of it falls south of 26 degrees south is the question the rule turns on. Recorded unclear until CPW rules on it, the same answer the ackie monitor gets; CPW takes questions on unlisted species at Wildlife.SpecialLicensing@state.co.us. Federally, the green anaconda has been injurious wildlife under the Lacey Act since 2015 (50 CFR 16.15(a)), which bars importing one into the country or shipping one to Hawaii or a territory; USARK v. Zinke (D.C. Cir. 2017) held it does not bar shipment between the continental states.",
+          "note": "Boidae is on Appendix A, but only for species \"native only to the tropical and subtropical region\", which #700(G) defines as 26.0 degrees north to 26.0 degrees south. CPW no longer publishes species-by-species determinations, and when it did they never reached the green anaconda. Its range is centered on the Amazon and Orinoco basins, and whether any of it falls south of 26 degrees south is the question the rule turns on. Recorded unclear until CPW answers it, the same answer the ackie monitor gets; CPW takes questions on unlisted species at Wildlife.SpecialLicensing@state.co.us. Federally, the green anaconda has been injurious wildlife under the Lacey Act since 2015 (50 CFR 16.15(a)), which bars importing one into the country or shipping one to Hawaii or a territory; USARK v. Zinke (D.C. Cir. 2017) held it does not bar shipment between the continental states.",
           "verifiedOn": "2026-11-01"
         },
         "AZ": {
@@ -35761,7 +35762,7 @@
           "sourceId": "co-w7",
           "cite": "2 CCR 406-7 #701(A); Appendix A",
           "quote": "it is unlawful for any person to take, possess, sell, offer for sale, purchase, import, export, transport, or release any live herpetofauna in Colorado.",
-          "note": "CPW rules on the alligator by name. Only the caimans are cleared, by Appendix A's other-species block, so an alligator is regulated wildlife with no pet license.",
+          "note": "Crocodylia is on none of Chapter W-7's appendices except for one subfamily. Only the caimans are cleared, by Appendix A's other-species block, so an alligator is regulated wildlife with no pet license.",
           "verifiedOn": "2026-11-01"
         },
         "AZ": {
@@ -38073,9 +38074,9 @@
         "CO": {
           "status": "banned",
           "sourceId": "co-cpw-species-list",
-          "cite": "CPW species determinations, Choloepodidae spp.; 2 CCR 406-11 § 1103",
+          "cite": "2 CCR 406-11 § 1103; CPW, Wildlife and Animal Possession in Colorado, Regulated Wildlife",
           "quote": "Any species of wildlife that is not specifically listed in Chapter W-11 as Domestic or Unregulated or in Chapter W-07 as Appendix A or Appendix B, the species is regulated wildlife and a CPW license is required. CPW will not issue a license for private possession (eg pet) of regulated wildlife.",
-          "note": "CPW rules on the two-toed sloths by family: \"Choloepodidae spp. Two-toed sloths\" are regulated wildlife, not on the domestic or unregulated list. Chapter W-11 says noncommercial (pet) possession of regulated mammals has been prohibited since 1983, and its wildlife park licenses are commercial or closed to new entrants.",
+          "note": "No two-toed sloth is on the domestic or unregulated list, so both species are regulated wildlife. Chapter W-11 says noncommercial (pet) possession of regulated mammals has been prohibited since 1983, and its wildlife park licenses are commercial or closed to new entrants.",
           "verifiedOn": "2026-11-01"
         },
         "AZ": {

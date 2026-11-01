@@ -27,7 +27,7 @@ export const snakeGuides = fillCostTokens([
     firstWeek: {
       intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
-        { label: "Legal check", value: "Broadly legal; the invasive-constrictor rules were written to exclude it. Illegal in Hawaii and New York City, a permit in New Jersey, Delaware and West Virginia, a permitted breeder in Minnesota, and city ordinances vary.", source: "ball-python-legal-guide" },
+        { label: "Legal check", value: "Broadly legal; the invasive-constrictor rules were written to exclude it. Illegal in Hawaii and New York City, a permit in New Jersey, Delaware and West Virginia, a permitted breeder in Minnesota, captive bred only in Maine, and city ordinances vary.", source: "ball-python-legal-guide" },
         { label: "Enclosure", value: "4x2x2 feet for an adult, at least as long as the snake, in PVC, which holds humidity far better than glass. A hatchling up to about 300 grams does well in a 10-gallon, a juvenile under 3 feet in 36x18x18. One snake per enclosure.", source: "ball-python-tank-setup-guide" },
         { label: "Temperatures", value: "Warm side 88 to 92°F with air nowhere above 95°F, cool side 75 to 80°F, nights 72 to 75°F. Every heat source on a thermostat, no hot rocks.", source: "ball-python-tank-setup-guide" },
         { label: "Thermostat probe", value: "On the floor of the warm hide, the surface the snake lies on, held with a probe clip or suction cup rather than tape, never up in the air near the fixture.", source: "reptile-heating-thermostats-guide" },
@@ -210,7 +210,7 @@ export const snakeGuides = fillCostTokens([
         { label: "Budget", value: "%%animal:california-kingsnake%% for the snake, %%setup:california-kingsnake%% for the setup, then roughly %%monthly:california-kingsnake%% a month. A routine exam is $50 to $135; an emergency starts around $150 and can reach $500.", source: "california-kingsnake-cost-guide" },
         { label: "Adult size", value: "2.5 to 4 feet (75 to 120 cm)." },
         { label: "Lifespan", value: "20 years or more with good care; the captive record is 33.3 years.", source: "california-kingsnake-cost-guide" },
-        { label: "Where it is banned", value: "Hawaii bans all snakes and West Virginia bans its native kingsnakes. New Jersey and Delaware require a permit, and Oregon and Nevada write their rules around the snake's color pattern rather than its species.", source: "kingsnake-legal-guide" },
+        { label: "Where it is banned", value: "Hawaii bans all snakes and West Virginia bans its native kingsnakes. New Jersey and Delaware require a permit, Maine clears it only if captive bred, and Oregon and Nevada write their rules around the snake's color pattern rather than its species.", source: "kingsnake-legal-guide" },
         { label: "Power outage", value: "68 to 72°F is the normal night low. Below that, add heat, move the animal, or call the sitter.", source: "reptile-emergency-plan-guide" },
       ],
     },

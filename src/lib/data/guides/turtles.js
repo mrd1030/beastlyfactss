@@ -210,7 +210,7 @@ export const turtleGuides = fillCostTokens([
     firstWeek: {
       intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
-        { label: "Legal", value: "Banned nowhere. New Jersey, New Mexico, Delaware and West Virginia require a permit; Massachusetts, Hawaii, Vermont, Minnesota, and New York City attach conditions, New York City's by size: a hatchling under four inches is barred.", source: "red-footed-tortoise-legal-guide" },
+        { label: "Legal", value: "Banned nowhere. New Jersey, New Mexico, Delaware and West Virginia require a permit; Massachusetts, Hawaii, Vermont, Maine, Minnesota, and New York City attach conditions, New York City's by size: a hatchling under four inches is barred.", source: "red-footed-tortoise-legal-guide" },
         { label: "Quarantine", value: "A minimum of six months, completely separate from any other chelonian, with lab testing. Two or three weeks is not long enough for the herpesvirus.", source: "chelonian-herpesvirus-quarantine-guide" },
         { label: "Enclosure", value: "18 to 24 square feet of floor for an adult indoors. A 4x2x2 ft enclosed enclosure carries a hatchling through juvenile; adults outgrow the shelf and get a custom build or a stock tank.", source: "red-footed-tortoise-tank-setup-guide" },
         { label: "Enclosed, not open-top", value: "An open tortoise table cannot hold humidity; it escapes upward. A front-opening enclosure with a solid top, still ventilated.", source: "red-footed-tortoise-tank-setup-guide" },
@@ -248,7 +248,7 @@ export const turtleGuides = fillCostTokens([
       { slug: "red-footed-tortoise-handling-guide", line: "An observation pet that comes when called, the two-handed lift a 20 pound adult demands, and the growth chart that tells you what to build." },
       { slug: "red-footed-tortoise-health-issues-guide", line: "Respiratory infection from dry and cool, the difference between humid and soggy that decides shell rot, and the controlled study on what drives pyramiding." },
       { slug: "red-footed-tortoise-enrichment-guide", line: "The cognitive bias study that found enriched tortoises judging ambiguity optimistically, the touchscreen work, and the priority order that follows from both." },
-      { slug: "red-footed-tortoise-legal-guide", line: "No outright ban anywhere, the four permit states, and the five jurisdictions that attach conditions, including one that measures the shell rather than naming the species." },
+      { slug: "red-footed-tortoise-legal-guide", line: "No outright ban anywhere, the four permit states, and the six jurisdictions that attach conditions, including one that measures the shell rather than naming the species." },
     ],
     buyList: [
       "Enclosed, front-opening enclosure (4x2x2 ft from hatchling through juvenile)",
@@ -295,7 +295,7 @@ export const turtleGuides = fillCostTokens([
     firstWeek: {
       intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
-        { label: "Legal", value: "One state, Colorado, bans it, five require a permit, and four jurisdictions attach a condition, Hawaii among them, which bans almost everything yet expressly allows this genus. Forty-two of the 52 jurisdictions place no rule on it at all.", source: "russian-tortoise-legal-guide" },
+        { label: "Legal", value: "One state, Colorado, bans it, five require a permit, and five jurisdictions attach a condition, Hawaii among them, which bans almost everything yet expressly allows this genus. Forty-one of the 52 jurisdictions place no rule on it at all.", source: "russian-tortoise-legal-guide" },
         { label: "Enclosure", value: "A 4x2x2 ft tortoise table, about 8 square feet, is the absolute indoor minimum, genuinely a minimum rather than a goal. Aim for at least 12 square feet, and better still roughly 7 ft by 3.5 ft, about 24 square feet.", source: "russian-tortoise-tank-setup-guide" },
         { label: "Temperature", value: "Basking about 95°F at the surface, cool side in the 70s°F. Night drops to about 60°F are fine, and most homes need no supplemental night heat.", source: "russian-tortoise-tank-setup-guide" },
         { label: "Humidity", value: "Ambient 40 to 50% at the open surface, low and dry for this arid species, and 40 to 75% for a juvenile, lower by day and higher at night. A moist hide lined with peat moss gives a humid microclimate to hydrate and shed in.", source: "russian-tortoise-tank-setup-guide" },
