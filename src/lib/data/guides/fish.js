@@ -23,7 +23,7 @@ export const fishGuides = fillCostTokens([
     // no top, so its upper bound is set above every other member's and never
     // sets an edge of a shared band. Drafted 2026-11-01, not yet live.
     layout: "group",
-    // Intro research, with quotes and URLs: LIVEBEARER_GROUP_RESEARCH.md
+    // Intro research, with quotes and URLs: research/LIVEBEARER_GROUP_RESEARCH.md
     // (FishBase species and family pages, Helmstetter et al. 2016, Schlupp
     // 2018, Gasparini et al. 2018, Seriously Fish). Not cited on the page,
     // matching the tetras group.
@@ -111,7 +111,7 @@ export const fishGuides = fillCostTokens([
     // their guide set ships. Live 2026-11-01 with ember; rummy-nose, black
     // skirt and glowlight follow one species a day (content/_scheduled-tetras/).
     layout: "group",
-    // Intro research, with quotes and URLs: TETRA_GROUP_RESEARCH.md
+    // Intro research, with quotes and URLs: research/TETRA_GROUP_RESEARCH.md
     // (Merriam-Webster for the name, Melo et al. 2024 for the families,
     // FishBase for Africa and Mexico, Gonzalez, Patrick and Val 2024 for the
     // water, Romano and Stefanini 2021 for schooling). Not cited on the page,
@@ -742,7 +742,7 @@ export const fishGuides = fillCostTokens([
     // rule cite the shared aquarium guides. The emergency card follows the
     // health guide's own three groups: test the water first and start ich
     // treatment today (callNow), watch and recheck tomorrow (soon). Built
-    // 2026-10-31 with the ember tetra set (research: EMBER_TETRA_RESEARCH.md).
+    // 2026-10-31 with the ember tetra set (research: research/EMBER_TETRA_RESEARCH.md).
     layout: "router",
     firstWeek: {
       intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",

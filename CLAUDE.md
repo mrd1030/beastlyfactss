@@ -57,6 +57,7 @@ Solo developer passion project. Prefer fast, decisive work over exploration.
 
 ## Docs and where they live
 - Docs live in root. CLAUDE.md never moves from root under any circumstances.
+- One exception (owner, 2026-11-01): species and group research notes live in research/, named `<SPECIES>_RESEARCH.md` (for example research/NEON_TETRA_RESEARCH.md) or `<GROUP>_GROUP_RESEARCH.md`. New research files go there, not in root.
 - WHERE_ARE_WE.md is the saved copy of the Where-are-we card (the master list
   of work in flight across branches). The live card is the untracked
   .where-are-we.json in the main checkout. The .md is only ever combined,

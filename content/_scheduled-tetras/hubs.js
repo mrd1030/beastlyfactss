@@ -26,7 +26,7 @@ export const scheduledTetraGuides = [
     // guides. The emergency card follows the health guide's three groups. The
     // fin-nipping caution is also carried on the tetras group page
     // (branches.species[].caution), copied from the handling guide
-    // (research: BLACK_SKIRT_TETRA_RESEARCH.md). Built 2026-10-31.
+    // (research: research/BLACK_SKIRT_TETRA_RESEARCH.md). Built 2026-10-31.
     layout: "router",
     firstWeek: {
       intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
@@ -111,7 +111,7 @@ export const scheduledTetraGuides = [
     // hub keeps no number of its own. Adult size comes from the encyclopedia
     // entry. Water changes and the power outage rule cite the shared aquarium
     // guides. The emergency card follows the health guide's three groups
-    // (research: GLOWLIGHT_TETRA_RESEARCH.md). Built 2026-10-31.
+    // (research: research/GLOWLIGHT_TETRA_RESEARCH.md). Built 2026-10-31.
     layout: "router",
     firstWeek: {
       intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
@@ -198,7 +198,7 @@ export const scheduledTetraGuides = [
     // entry. Water changes and the power outage rule cite the shared aquarium
     // guides. The emergency card follows the health guide's three groups. The
     // fish written about is Petitella bleheri, the species sold under the name
-    // (research: RUMMY_NOSE_TETRA_RESEARCH.md). Built 2026-10-31.
+    // (research: research/RUMMY_NOSE_TETRA_RESEARCH.md). Built 2026-10-31.
     layout: "router",
     firstWeek: {
       intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
