@@ -1280,7 +1280,7 @@ export const fishGuides = fillCostTokens([
         { label: "Water chemistry", value: "Soft and slightly acidic, pH 6.0 to 7.0 at 1 to 12 dGH, which is a different water from what a guppy tolerates. Test your source water first.", source: "neon-tetra-tank-setup-guide" },
         { label: "Filtration and substrate", value: "Gentle flow, a sponge filter or a baffled hang-on-back, over fine gravel or sand.", source: "neon-tetra-tank-setup-guide" },
         { label: "Light and blackwater", value: "Soft light under dense and floating plants, since bright light over an open tank is the opposite of their shaded streams. Driftwood and Indian almond leaves stain the water with tannins and lower the pH.", source: "neon-tetra-tank-setup-guide" },
-        { label: "Feeding schedule", value: "Twice daily, what the school finishes in about 2 to 3 minutes. Fry and juveniles 3 to 4 small feeds a day, adults from about 6 months on twice.", source: "neon-tetra-feeding-guide" },
+        { label: "Feeding schedule", value: "Twice daily, morning and evening, only what the school finishes in a couple of minutes. Small, frequent feeds protect the water better than one large one.", source: "neon-tetra-feeding-guide" },
         { label: "Diet", value: "A quality tropical flake crushed fine, or a micro-pellet, for a very small mouth, with baby brine shrimp, daphnia, cyclops or chopped bloodworm several times a week. Food too large is spat out, which starves the fish while the tank looks fed.", source: "neon-tetra-feeding-guide" },
         { label: "A dead fish", value: "Never leave one in the tank or let the others scavenge it. Neon tetra disease has no cure, and fish that eat an infected body contract it.", source: "neon-tetra-feeding-guide" },
         { label: "Quarantine", value: "At least 30 days in a separate tank before a new fish joins the school, given the disease risk this species carries.", source: "neon-tetra-tank-setup-guide" },
@@ -1306,7 +1306,7 @@ export const fishGuides = fillCostTokens([
     routes: [
       { slug: "neon-tetra-cost-guide", line: "$1 to $3 a fish, why the purchase is a group of 8 to 12, and the %%setup:neon-tetra%% that goes into the tank around them." },
       { slug: "neon-tetra-tank-setup-guide", line: "A tank at least 24 inches long for ten, 70 to 77°F, soft acidic water, gentle flow, and the blackwater detail." },
-      { slug: "neon-tetra-feeding-guide", line: "Twice a day in 2 to 3 minutes, why a very small mouth changes what you buy, and the rule that stops an outbreak." },
+      { slug: "neon-tetra-feeding-guide", line: "Twice a day in a couple of minutes, why a very small mouth changes what you buy, and the rule that stops an outbreak." },
       { slug: "neon-tetra-handling-guide", line: "Why this is a netting-only fish, the school floor, and the tankmates that turn a shoal into lunch." },
       { slug: "neon-tetra-health-issues-guide", line: "Neon tetra disease and the treatable lookalike it gets mistaken for, plus ich, fin rot, and swim bladder trouble." },
       { slug: "neon-tetra-enrichment-guide", line: "Why a school of ten settles better than a smaller one, and how to read whether the school is doing well." },
@@ -1326,8 +1326,8 @@ export const fishGuides = fillCostTokens([
     ],
     faqs: [
       { q: "How can you tell a male neon tetra from a female?", a: "Only once they're adults. Females are rounder-bodied and a little larger than males, who stay slimmer." },
-      { q: "How often should I feed neon tetras?", a: "Twice a day for adults, morning and evening, only as much as they finish in about 2 to 3 minutes. Fry and juveniles need 3 to 4 small feedings a day until about 6 months old." },
-      { q: "So is six enough?", a: "No. Eight is the least to buy, and ten is better. Groups of ten showed less darting and aggression than smaller ones in the study, so if the tank can hold ten, buy ten." },
+      { q: "How often should I feed neon tetras?", a: "Twice a day for adults, morning and evening, only as much as they finish in a couple of minutes." },
+      { q: "So is six enough?", a: "No. Eight is the least to buy and ten is better, since groups of ten showed less darting and aggression than smaller ones. The right number does differ by species: the same 2010 study found no group size effect on angelfish." },
     ],
   },
   {
