@@ -1240,8 +1240,8 @@ export const fishGuides = fillCostTokens([
       "Frozen baby brine shrimp, daphnia, or bloodworms",
     ],
     faqs: [
-      { q: "How can you tell a male neon tetra from a female?", a: "Only once they're adults. Females are rounder-bodied and a little larger than males, who stay slimmer." },
-      { q: "How often should I feed neon tetras?", a: "Twice a day for adults, morning and evening, only as much as they finish in a couple of minutes." },
+      { q: "How can you tell a male neon tetra from a female?", a: "Only once they're adults. Females are rounder-bodied and a little larger than males, who stay slimmer. The fuller belly makes a female's blue stripe look slightly bent, while a male's stripe runs straight." },
+      { q: "How often should I feed neon tetras?", a: "Twice a day for adults, morning and evening, only as much as they finish in a couple of minutes. Fry and juveniles need 3 to 4 small feedings a day until about 6 months old." },
       { q: "So is six enough?", a: "No. Eight is the least to buy and ten is better, since groups of ten showed less darting and aggression than smaller ones. The right number does differ by species: the same 2010 study found no group size effect on angelfish." },
     ],
   },
