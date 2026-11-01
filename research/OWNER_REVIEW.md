@@ -40,13 +40,13 @@ Format: claim | guide | why it needs review | suggested decision. Live guides (c
 - Ich: "82°F is as warm as a swordtail goes", then heat plus salt or medication | swordtail-health-issues-guide.mdx | health: temperature limit and treatment plan; Merck and UF/IFAS give chemical and salt protocols only | soften to what the source supports
 
 ### Neon tetra
-- Wild diet "roughly 20 to 30% plant matter and algae" | neon-tetra-feeding-guide.mdx | number: FishBase says only "plant matter" | soften to "some plant matter"
-- Mouths "only about 1 to 2mm across" | neon-tetra-feeding-guide.mdx | number: no measurement found | remove the figure, or find a source
-- Eggs hatch "though some batches take up to 36" hours; fry free-swimming "3 to 4 days after" | neon-tetra-handling-guide.mdx | number: the 3 to 4 days is FishBase for the cardinal only | soften to "a few days", or find a source
+- Wild diet "roughly 20 to 30% plant matter and algae" | neon-tetra-feeding-guide.mdx | number: FishBase says only "plant matter" | soften to "some plant matter" **DONE: Owner, 2026-11-01: softened to "some plant matter and algae".**
+- Mouths "only about 1 to 2mm across" | neon-tetra-feeding-guide.mdx | number: no measurement found | remove the figure, or find a source **DONE: Owner, 2026-11-01: figure removed ("Their mouths are very small" stays).**
+- Eggs hatch "though some batches take up to 36" hours; fry free-swimming "3 to 4 days after" | neon-tetra-handling-guide.mdx | number: the 3 to 4 days is FishBase for the cardinal only | soften to "a few days", or find a source **DONE: Owner, 2026-11-01: free-swimming softened to "a few days after that".**
 
 ### Cardinal tetra
-- "Most fish recover within one to two weeks with consistent care" (fin rot) | cardinal-tetra-health-issues-guide.mdx | health: recovery time, no source | soften, or remove
-- Neon tetra disease spreads when fish "eat infected tissue", a dead fish keeps it moving (FAQ and body; same in the neon and glowlight health guides) | cardinal-tetra-health-issues-guide.mdx | health: transmission route; Sanders et al. 2010 left the block in the cap trim and Merck gives only horizontal transmission | keep and restore Sanders 2010 if the cap allows, or soften to "spreads between fish"
+- "Most fish recover within one to two weeks with consistent care" (fin rot) | cardinal-tetra-health-issues-guide.mdx | health: recovery time, no source | soften, or remove **DONE: Owner, 2026-11-01: softened to "Most fish recover with consistent care".**
+- Neon tetra disease spreads when fish "eat infected tissue", a dead fish keeps it moving (FAQ and body; same in the neon and glowlight health guides) | cardinal-tetra-health-issues-guide.mdx | health: transmission route; Sanders et al. 2010 left the block in the cap trim and Merck gives only horizontal transmission | keep and restore Sanders 2010 if the cap allows, or soften to "spreads between fish" **DONE: Owner, 2026-11-01: restore Sanders 2010 only if the cap allows; the cardinal health guide is at 8 (the cap), so it stays as written without it.**
 - "77 to 82°F as the everyday target" | cardinal-tetra-tank-setup-guide.mdx | number: its Practical Fishkeeping page had no byline; Seriously Fish gives 73 to 84°F | soften to the Seriously Fish range, or keep
 
 ### Ember tetra
