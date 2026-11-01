@@ -648,3 +648,34 @@ From the 2026-11-01 rewrite of the six ember guides. "In research" means a sourc
 - Health: "overfeeding brings a run of health problems"; "a dull ember usually means its care slipped"; the closing line. (also elsewhere: no)
 - Enrichment: "the embers lose" (betta); the closing paragraph. (also elsewhere: no)
 - Removed in review as unsourced new additions (retailer observations marked do not cite): "overnight shipping can come to about as much as the school itself" and "shipping is charged per order" in the cost guide.
+
+## Moved out of the ember tank setup guide, waiting for the shared substrate guide (2026-11-01)
+
+Owner decision: the general substrate material leaves the ember tank setup guide and goes into the new shared aquarium substrate guide. Until that guide ships, the full removed section is kept here verbatim so nothing is lost. Sources: research section 13.1 (S43, S44, S55, S58, S26 and others).
+
+## Substrate: A Dark Floor That Leaves the Water Soft
+
+The one substrate detail tied to this species is color: embers are best kept in a heavily planted tank, preferably over a dark substrate. Keepers report that embers show brighter color in planted tanks with a dark substrate and background, an observation from the hobby that nobody has measured. A <AffiliateLink href="https://www.amazon.com/dp/B0018CLX3C?tag=beastlyfacts-20" product="Seachem Flourite Black Sand, 7 kg (15.4 lb)">black sand</AffiliateLink> or a dark, small-grained gravel meets it. At the one wild ember site described firsthand, near Aruanã on the Araguaia, the bottom was leaf litter over a yellow, clay-like floor mixed with fine gravel and sand.
+
+**Sand or gravel.** Both work, and they go in differently. Gravel is normally laid 2 inches (5 cm) deep or more, while freshwater tanks generally get only a thin layer of sand. Grain size decides how much dirt the bed holds: very fine sand lets little dirt sink into it, so it stays easy to clean, and the larger the grain, the more gets trapped. For a first planted tank, start with an inert substrate that carries no nutrients of its own, either aquarium gravel or sand.
+
+**Depth.** A tank planted into the substrate needs at least 2 to 3 inches (5 to 7.5 cm) of it. A thin layer of sand is enough where little is rooted in the floor.
+
+**Feeding the plants.** An inert bed leaves the water alone and feeds nothing, so a planted tank adds nutrients one of three ways.
+
+<ComparisonTable
+  headers={["Planted floor", "How it works", "What to watch"]}
+  rows={[
+    ["Inert gravel or sand with root tabs", "Root tab fertilizers are pushed into the bed beside root-feeding plants such as Cryptocoryne", "The simplest start, and it leaves pH and hardness where the water put them"],
+    ["Capped soil", "A layer of dirt 1/8 to 1/4 inch thick, just covering the glass, under a gravel cap at least 2 inches deep", "Cap with gravel, since gas escapes through it; under sand, escaping gas erupts and muddies the water. Moving plants or digging bottom dwellers make a cloudy mess, and soil can cause ammonia spikes or algae"],
+    ["Aquasoil", "Acidic granules that pull the water toward their own pH; one well-known brand is described as running pH 5.0 to 6.0", "By the same account, a lot of ammonium leaches out at first, fish wait two to three weeks after planting, and the bed lasts about two to three years"],
+  ]}
+/>
+
+**What the substrate does to the water.** Whatever goes on the floor has to leave the water soft. Inert substrates matter most for soft-water fish, and even standard pea gravel contains enough calcium to raise pH and hardness. Coral sand belongs only in a tank meant to stay hard and alkaline. Rough, angular colored gravel with a powdery coating can raise both figures too, so a soft-water tank needs an inert substrate in its place. An acidic aquasoil pushes the other way, toward the ember's range.
+
+**Rock follows the same rule.** Limestone and other calcareous rocks, and seashells, leach calcium carbonate into the water. To check a stone, put a few drops of vinegar on it: fizzing means calcium carbonate. Dragon stone passes, and rock with visible veins is best left out of a soft-water tank.
+
+**Leaf litter on the bed.** Leaves are optional, and they sit on top of the substrate. Dried leaf litter and driftwood branches both suit this species. As the leaves decay, colonies of microbes establish on them, and the tannins and other compounds they release are thought to be beneficial, which is a belief among keepers more than a tested result. Catappa leaves are the common choice: they grow a biofilm that fry graze on, and they slightly acidify water whose pH runs high. Bogwood and mopani leach tannic acid as well. None of it softens hard water. Leaves and branches bring pH down a little and keep the water moderately soft, usually not enough to turn it into blackwater, and in hard tap water the hardness still has to come down through the RO blend first. Catappa's reputation against disease traces to a study in which leaf extract was injected into farmed catfish. That says nothing about a leaf lying on the floor of a tank, so a leaf is cover and biofilm, not a treatment.
+
+**Cleaning.** Rinse new substrate thoroughly before it goes in: most of it is dusty enough to cloud the tank, and powder-coated colored gravel is the worst. Once the tank is running, a gravel cleaner keeps the bed clean, and a careful pass can reach most of the floor while drawing off only about 20 to 30% of the water. A planted bed is the exception. A gravel cleaner can suck a planting substrate out, and capped soil clouds the tank when its plants are moved, so the cleaner works the open patches and the rooted areas are left alone.
