@@ -23,8 +23,12 @@ export const fishGuides = fillCostTokens([
     // no top, so its upper bound is set above every other member's and never
     // sets an edge of a shared band. Drafted 2026-11-01, not yet live.
     layout: "group",
+    // Intro research, with quotes and URLs: LIVEBEARER_GROUP_RESEARCH.md
+    // (FishBase species and family pages, Helmstetter et al. 2016, Schlupp
+    // 2018, Gasparini et al. 2018, Seriously Fish). Not cited on the page,
+    // matching the tetras group.
     intro: {
-      text: "INTRO PENDING RESEARCH",
+      text: "Livebearer is a common name rather than one scientific group: fish in several families give birth to free-swimming young, from the splitfins of Mexico to the surfperches of the North Pacific. Guppies, mollies, platies and swordtails all belong to one family, the Poeciliidae, and all four come from the Americas: the guppy from northeastern South America and the nearby Caribbean islands, the others from Mexico and Central America. Fertilization is internal, and a male uses his gonopodium, an anal fin modified into a mating organ, to transfer sperm. A female can store that sperm for months, so one mating can fertilize several broods and a tank can fill with fry long after the last male is gone. All four want hard, alkaline water, and mollies tolerate brackish water and even full marine conditions.",
     },
     branches: {
       groupName: "Livebearers",
@@ -64,7 +68,7 @@ export const fishGuides = fillCostTokens([
       ],
     },
     rules: [
-      { label: "Fry", value: "A female guppy can hold sperm from one mating for 5 to 10 months and drop up to about 8 broods. Adults eat fry, so dense cover decides how many survive.", source: "guppy-handling-guide" },
+      { label: "Fry", value: "One mating can give a female guppy up to about 8 broods. Adults eat fry, so dense cover decides how many survive.", source: "guppy-handling-guide" },
       { label: "Sex ratio", value: "Two to three females per male cuts the chasing. Keeping the sexes in separate tanks is the only way to stop breeding.", source: "platy-handling-guide" },
       { label: "Hard water", value: "Livebearers want hard, alkaline water, the opposite of a tetra. GH and pH are separate measurements, so test both before buying fish.", source: "freshwater-ph-gh-kh-guide" },
       { label: "Cycle first", value: "Most fishless cycles finish in four to six weeks. No fish goes in until ammonia and nitrite read zero.", source: "aquarium-cycling-guide" },
@@ -74,7 +78,6 @@ export const fishGuides = fillCostTokens([
       { label: "Power outage", value: "Oxygen is the threat, not darkness. Unplug the filter rather than letting it sit dead in the water, and keep the surface moving.", source: "aquarium-power-outage-and-transport-guide" },
     ],
     faqs: [
-      { q: "How do guppies breed?", a: "As livebearers. A female drops free-swimming young instead of laying eggs, and she can hold sperm from one mating for 5 to 10 months, producing up to about 8 broods from that single encounter with no male present again. Fry survival runs high wherever there is cover for them to hide in." },
       { q: "How do I manage platy population if I don't want constant breeding?", a: "Keep males and females in separate tanks to avoid breeding entirely, or keep a males-only group for a colorful, breeding-free tank. If you do want controlled breeding, a ratio of roughly two to three females per male cuts down on how much the females get chased and stressed by mating attempts." },
       { q: "How long should I quarantine a new fish before adding it to my main tank?", a: "At least 30 days, and 30 to 60 days for a valuable fish you want to be sure about. Thirty days is the floor, not the target, since some parasites and infections take that long to show themselves." },
       { q: "How long does it take to cycle a fish tank?", a: "Most fishless cycles finish in four to six weeks at a stable warm temperature, though a gene-sequencing study of real home aquarium biofilters found two tanks reaching undetectable ammonia and nitrite by week three while a third took until week eight. Cold water, no seeding, and an inconsistent ammonia dose all push a cycle toward the slower end of that range." },
