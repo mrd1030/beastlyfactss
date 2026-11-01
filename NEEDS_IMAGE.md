@@ -27,15 +27,17 @@ One source photo per slot; the hub and encyclopedia entry share one.
 - Health issues guide hero: `/assets/images/ember-tetra-health-issues.jpg`
 - Enrichment guide hero: `/assets/images/ember-tetra-enrichment.jpg`
 
-### Rummy-nose and black skirt tetra sets (added 2026-10-31, same branch)
+### Rummy-nose, black skirt and glowlight tetra sets (added 2026-10-31, same branch)
 
-Fourteen more photos, same rules as the ember set: a hub head shared with the
+Twenty-one more photos, same rules as the ember set: a hub head shared with the
 encyclopedia entry (3:2, 1168x784) and six guide heroes per species.
 
 - Rummy-nose hub and encyclopedia head: `/assets/guides/rummy-nose-tetra.jpg`
 - Rummy-nose heroes: `/assets/images/rummy-nose-tetra-{cost,tank-setup,feeding,handling,health-issues,enrichment}.jpg`
 - Black skirt hub and encyclopedia head: `/assets/guides/black-skirt-tetra.jpg`
 - Black skirt heroes: `/assets/images/black-skirt-tetra-{cost,tank-setup,feeding,handling,health-issues,enrichment}.jpg`
+- Glowlight hub and encyclopedia head: `/assets/guides/glowlight-tetra.jpg`
+- Glowlight heroes: `/assets/images/glowlight-tetra-{cost,tank-setup,feeding,handling,health-issues,enrichment}.jpg`
 
 ## Replacing the Adobe Stock photos (started 2026-10-20)
 
