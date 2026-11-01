@@ -96,6 +96,7 @@ export const fishSheets = {
     ],
   },
   'cardinal-tetra': {
+    animal: [35, 80],
     necessities: [
       { item: "bristlenose-pleco-20-gallon-long-tank", text: "[20 gallon long tank] for a school of 10" },
       { item: "angelfish-aquarium-heater", text: "[Aquarium heater]" },
@@ -223,7 +224,7 @@ export const fishSheets = {
   'neon-tetra': {
     animal: [1, 5],
     necessities: [
-      { item: "cardinal-tetra-10-20-gallon-tank", text: "[10+ gallon tank]" },
+      { item: "bristlenose-pleco-20-gallon-long-tank", text: "[20 gallon long tank], at least 24 inches long, for a school of 10" },
       { item: "guppy-aquarium-heater", text: "[Aquarium heater]" },
       { item: "neon-tetra-gentle-filter", text: "[Gentle filter]" },
       { item: "neon-tetra-dense-live-silk-plants", text: "[Dense live or silk plants]" },
