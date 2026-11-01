@@ -290,11 +290,11 @@ export const fishSheets = {
     animal: [3, 25],
     monthly: [20, 35],
     necessities: [
-      { item: "bristlenose-pleco-20-gallon-long-tank", text: "[20-gallon long tank]" },
+      { item: "tank-36in-30-40-gallon", text: "[Tank at least 36 inches long], a 30 gallon or 40 gallon breeder" },
       { item: "angelfish-aquarium-heater", text: "[Aquarium heater]" },
       { item: "goldfish-hang-on-back-filter", text: "[Filter sized to tank & bioload]" },
       { item: "angelfish-dense-live-silk-plants", text: "[Live or silk plants]" },
-      { item: "goldfish-tight-fitting-glass-lid", text: "Tight-fitting [glass lid] (the link fits a 20 gallon long; check it against your tank)" },
+      { item: "goldfish-tight-fitting-glass-lid", text: "Tight-fitting [glass lid] (the link fits a 30 inch tank; buy the size that matches yours)" },
       { item: "water-test-kit-liquid", text: "Liquid [water test kit]" },
       { item: "water-conditioner", text: "[Water conditioner] that neutralizes chlorine and chloramine" },
     ],
