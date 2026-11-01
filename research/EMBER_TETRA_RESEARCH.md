@@ -594,7 +594,7 @@ Seems true and useful, but no source found that could be cited:
 - Juvenile feeding frequency (3 to 4 times a day): low-tier blogs and an ANGFA rainbowfish page seen in search results only.
 - Whole frozen bloodworms are too large for a 2 cm ember: unsourced.
 - Freezing or irradiating frozen daphnia and cyclops removes the Camallanus risk: unsourced.
-- Shrimp-safe medication list (praziquantel safe; formalin, malachite green and salt harmful): hobby blogs only, disagreeing.
+- Shrimp-safe medication list (praziquantel safe; formalin, malachite green and salt harmful): hobby blogs only, disagreeing. **Owner decision (2026-11-01): the guides never list any medication as shrimp-safe.** They keep the rule that shrimp come out before any medication goes in, plus the sourced point that copper is toxic to invertebrates.
 - In the US, antibiotics for pet fish need a vet's prescription: not sourced this session.
 - Mouth-siphoning a gravel vacuum risks M. marinum: no source.
 - Heater, air pump and LED wattages used in the 13.6.3 arithmetic (50 W, 3 W, 10 W) and the heater's duty cycle: unsourced assumptions.
