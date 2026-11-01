@@ -4230,6 +4230,18 @@ export const AFFILIATE_PRODUCTS = [
     pets: ["fish"],
   },
   {
+    // Added 2026-11-01 by Claude (owner rule of 2026-11-01): Tahitian Moon was
+    // "Currently unavailable". Listing opened 2026-11-01, sold by Amazon.com.
+    slug: "sand-seachem-flourite-black-15lb",
+    product: "Seachem Flourite Black Sand, 7 kg (15.4 lb)",
+    category: "Substrate",
+    retailer: "amazon",
+    link: "https://www.amazon.com/dp/B0018CLX3C?tag=beastlyfacts-20",
+    description: "Natural black clay sand for planted tanks. Seachem says it is not chemically coated or treated and will not alter the pH, so it suits soft-water tetras.",
+    covers: [],
+    pets: ["fish"],
+  },
+  {
     slug: "gravel-vac-python-pro-clean-large",
     product: "Python Pro-Clean Gravel Washer and Siphon, Large, with Squeeze Bulb",
     category: "Aquarium Equipment",

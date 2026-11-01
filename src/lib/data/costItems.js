@@ -1719,10 +1719,10 @@ export const COST_ITEMS = {
   // sold out, 2026-11-01); the Amazon listing showed "Currently unavailable"
   // that day. Other CaribSea Super Naturals 20 lb bags listed about $30 to
   // $45. Rounded outward around the Tahitian Moon figure.
-  'sand-black-20lb': {
-    label: "Black aquarium sand, 20 lb bag",
-    spec: "20 lb",
-    low: 30, high: 40, product: "sand-caribsea-tahitian-moon-20lb", checked: '2026-11',
+  'sand-black-15lb': {
+    label: "Black aquarium sand, 15.4 lb bag",
+    spec: "15.4 lb",
+    low: 30, high: 40, product: "sand-seachem-flourite-black-15lb", checked: '2026-11',
   },
   // 2026-10
   'glass-lid-48in-versa-top': {
