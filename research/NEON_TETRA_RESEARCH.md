@@ -606,3 +606,11 @@ Observed 2026-11-01 on retailer pages or in the site's own data. For cost tables
 
 - Owner decision (2026-11-01): juvenile feeding is three to four small meals a day, tapering to the adult schedule, in all three tetra feeding guides (matches the neon guide's existing FAQ and the only figure found).
 - Owner decision (2026-11-01): a finished cycle is the single most important step when a tank is first set up; quarantine is the single most important step for every fish added after that.
+
+## Kept without a source (owner review): hobby-site Sources removal, 2026-11-01
+
+Owner rule (docs/RULES.md, "No hobby sites"): retailer care pages and blogs, hobby blogs, hobby magazines, Practical Fishkeeping pages without a named author, its news items and course pages left the Sources blocks. The claims below lost their only cited source in that guide's block and stay in the body as written; the owner decides.
+
+- Enrichment guide: wild-caught neons very rarely reach the trade; most are captive-bred. Was Fishkeeper (N18); Bleher (N13) says the same but is not in this block. (also elsewhere: yes)
+- Handling guide, acclimation: float the bag in dim light and add tank water every few minutes for 30 to 60 minutes until it holds more tank water than shop water (FAQ, body, table); drip acclimation over a couple of hours at 1 to 2 drips a second; bag water down the drain; lights dim for the first hour or two; ammonia up and pH down in transit. Was Practical Fishkeeping acclimatising (N15, no named author). (also elsewhere: yes)
+- Tank setup guide FunFact: its source prop still reads "Practical Fishkeeping, reporting Yoshioka et al. (2010)", a news item (E8). The Yoshioka paper was never opened, so there is no replacement; owner decides. (also elsewhere: no)

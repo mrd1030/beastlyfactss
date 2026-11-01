@@ -508,3 +508,14 @@ Added 2026-11-01 after the correction pass. Left in place as written (owner rule
 - "The smallest and the least demanding of the three" (overview link sentence): no source. **[wording merged: "the smallest and the simplest to house of the three"]** (also elsewhere: no)
 - "tank mates that will predate fry": supported in kind (Practical Fishkeeping, larger fish eat fry), not platy-specific. (also elsewhere: yes)
 - "A 10 gallon tank is a reasonable starting point for a small group": below Seriously Fish's 24 by 12 inch base footprint. **[wording merged: "by volume" caveat added with the 20 by 10 inch base against the 24 by 12 inch footprint, linked to the tank guide]** (also elsewhere: yes)
+
+## Kept without a source (owner review): hobby-site Sources removal, 2026-11-01
+
+Owner rule (docs/RULES.md, "No hobby sites"): retailer care pages and blogs, hobby blogs, hobby magazines, Practical Fishkeeping pages without a named author, its news items and course pages left the Sources blocks. The claims below lost their only cited source in that guide's block and stay in the body as written; the owner decides.
+
+- platy-enrichment-guide.mdx: tankmates that will predate fry as one way to handle the population. Was Practical Fishkeeping "How to breed livebearing fish" (P22, no byline). (also elsewhere: yes)
+- platy-feeding-guide.mdx: fry fed three to four small meals a day (FAQ and body). P22 gave three; Seriously Fish gives 2 to 3. (also elsewhere: yes)
+- platy-handling-guide.mdx FAQ: females often show a dark gravid spot. Was P22. (also elsewhere: no)
+- platy-handling-guide.mdx: other fish will eat fry given the chance. Was P22. (also elsewhere: yes)
+- platy-tank-setup-guide.mdx: a fishless cycle takes 4 to 6 weeks, less with a bottled bacteria product (FAQ and body). Was Practical Fishkeeping "How to Cycle a Fish Tank" (P24, no byline). (also elsewhere: yes)
+- platy-cost-guide.mdx also lost P22; its brood interval and sperm storage stay on Siciliano 1972. Nothing listed.

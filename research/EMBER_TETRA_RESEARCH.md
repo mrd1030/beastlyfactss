@@ -681,3 +681,36 @@ The one substrate detail tied to this species is color: embers are best kept in 
 **Cleaning.** Rinse new substrate thoroughly before it goes in: most of it is dusty enough to cloud the tank, and powder-coated colored gravel is the worst. Once the tank is running, a gravel cleaner keeps the bed clean, and a careful pass can reach most of the floor while drawing off only about 20 to 30% of the water. A planted bed is the exception. A gravel cleaner can suck a planting substrate out, and capped soil clouds the tank when its plants are moved, so the cleaner works the open patches and the rooted areas are left alone.
 
 - Owner decision (2026-11-01): juvenile feeding is three to four small meals a day, tapering to the adult schedule, in all three tetra feeding guides (matches the neon guide's existing FAQ and the only figure found).
+
+## Kept without a source (owner review): hobby-site Sources removal, 2026-11-01
+
+Owner rule (docs/RULES.md, "No hobby sites"): retailer care pages and blogs, hobby blogs, hobby magazines, Practical Fishkeeping pages without a named author, its news items and course pages left the Sources blocks. The claims below lost their only cited source in that guide's block and stay in the body as written; the owner decides.
+
+- Cost guide: lifespan about 2 to 4 years (FAQ, body, Lifespan). Was Aquarium Source (S11). (also elsewhere: yes)
+- Cost guide, shipping: ammonia builds and pH drops on a long trip, the shipped school goes into a dark room with the tank lights off, tank water is mixed in over 30 to 60 minutes, and the bag water goes down the drain. Was Practical Fishkeeping acclimatising (S17, no named author). (also elsewhere: yes)
+- Feeding guide: little mouths that take tiny, slow-sinking food (FAQ and body). Was Aquarium Co-Op (S8). (also elsewhere: yes)
+- Feeding guide: adults eat their own eggs and newly hatched fry, so fry are raised apart (FAQ and body). Was S8. (also elsewhere: no)
+- Feeding guide, schedule table: fry fed small meals several times a day. Was S8. (also elsewhere: no)
+- Feeding guide, Foods to Avoid: the shop tubifex study (6 of 7 samples held infected worms, 5 had spores in the water, several species sold under the name). Was the Practical Fishkeeping news item S46 reporting Hallett et al. 2005; the paper itself was never opened, so it cannot replace the news item. (also elsewhere: no)
+- Enrichment guide FAQ: some bettas and dwarf gouramis turn territorial; a calm one can work as a centerpiece. Was S8. (also elsewhere: yes)
+- Enrichment guide: brighter color in planted tanks with a dark substrate and background. Was S8. (also elsewhere: yes)
+- Enrichment guide: catappa leaves as the common choice, growing a biofilm for fry. Was S8. (also elsewhere: yes)
+- Enrichment guide: embers are relatively outgoing in a large group. Was S8. (also elsewhere: yes)
+- Enrichment guide: males slimmer, females rounder-bodied, clearest from above. Was S8; Seriously Fish still carries the brighter males. (also elsewhere: yes)
+- Handling guide: relatively outgoing, especially in large groups (body and closing). Was S8. (also elsewhere: yes)
+- Handling guide FAQ: adult dwarf shrimp ignored, shrimplets picked off. Was S8. (also elsewhere: yes)
+- Handling guide FAQ: bettas and dwarf gouramis may turn territorial; a calm one can still be a centerpiece. Was S8. (also elsewhere: yes)
+- Handling guide: sexing by a slender male and a rounder female, clearest from above (FAQ and table). Was S8. (also elsewhere: yes)
+- Handling guide, acclimation: lights off; tank water added every few minutes for 30 to 60 minutes until it outweighs shop water; never pour the bag in (trip waste, pest snail eggs); check bag, net and floor for strays; ammonia rising and pH falling in transit; quarantine advisable wherever the fish were bought. Was S17. The water-to-air ratio, dark container and floating-bag netting stay on Nathan Hill (S18). (also elsewhere: yes)
+- Health guide FAQ: no species-specific diseases known, with poor diet and water quality raising the risk of all of them. Was S11. (also elsewhere: no)
+- Health guide, quarantine: a separate tank is worth having no matter where the fish come from. Was S17. (also elsewhere: yes)
+- Health guide, arrival day: ammonia builds and pH drops in the bag, bag water stays out (waste, pest snail eggs), bag and net checked for stuck fish. Was S17. (also elsewhere: yes)
+- Tank setup guide: a 5-gallon nano is sometimes suggested, only with a smaller school (FAQ and body). Was S8. (also elsewhere: yes)
+- Tank setup guide: keepers report brighter color over a dark floor and background. Was S8. (also elsewhere: yes)
+- Tank setup guide, tankmates: small rasboras and danios, Corydoras, otocinclus, hatchetfish or pencilfish. Was S8. (also elsewhere: no)
+- Tank setup guide: a single blue betta or powder blue dwarf gourami as a centerpiece, some individuals territorial. Was S8. (also elsewhere: yes)
+- Tank setup guide, shrimp: adults safe, shrimplets taken. Was S8. (also elsewhere: yes)
+- Tank setup guide, substrate: 2 to 3 inches for a tank planted into the floor, root tabs beside rooted plants. Was Aquarium Co-Op low tech planted (S54). (also elsewhere: yes, substrate guide)
+- Tank setup guide: limestone only for hard tanks, and skip stone that fizzes in vinegar (body and FAQ). Was Practical Fishkeeping tank decoration (S44, no named author). (also elsewhere: yes, substrate guide)
+- Tank setup guide, lighting: about 6 hours at first, working up to 8 to 12 hours. Was S54 and S56; also on the owner-approved lighting item above. (also elsewhere: no)
+- Tank setup guide: leaves and branches growing microbe colonies and a biofilm fry graze on, bringing pH down a little. Was S8. (also elsewhere: yes)

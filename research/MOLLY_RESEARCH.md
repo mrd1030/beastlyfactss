@@ -446,3 +446,13 @@ Added 2026-11-01 after the restore pass. The first correction pass cut these uns
 - Marine mix "can harm freshwater fish" and "never" a substitute (Practical Fishkeeping recommends a marine mix for a brackish molly tank); restored only with the "in a freshwater tank" qualifier.
 - Salt "$22" a container (observed $12.48).
 - "without major physiological stress" at 65 ppt (Gonzalez: oxygen use rose with salinity).
+
+## Kept without a source (owner review): hobby-site Sources removal, 2026-11-01
+
+Owner rule (docs/RULES.md, "No hobby sites"): retailer care pages and blogs, hobby blogs, hobby magazines, Practical Fishkeeping pages without a named author, its news items and course pages left the Sources blocks. The claims below lost their only cited source in that guide's block and stay in the body as written; the owner decides.
+
+- molly-health-issues-guide.mdx, shimmy: even a small amount of ammonia can cause clamping and shimmying, and crowded or poorly filtered shop and home tanks add to it. Was TFH Magazine, Coletti (M20). (also elsewhere: no)
+- molly-health-issues-guide.mdx, shimmy: osmotic shock from moving fish out of salted farm water as a suspected cause. Was M20; mass production in the Far East stays on Seriously Fish. (also elsewhere: no)
+- molly-health-issues-guide.mdx, salt: Coletti's "adapt to" rather than "demand", Norton's argument that salt lets poor tank management carry on, and large, frequent water changes, hard water and plant cover in place of salt. Coletti and Norton are named in the body; M20 was the page. (also elsewhere: yes)
+- molly-tank-setup-guide.mdx, salt: livebearer specialists hold that mollies "adapt to" salinity, and large, frequent water changes and plant cover handle what salt is usually reached for. Was M20. (also elsewhere: yes)
+- molly-enrichment-guide.mdx and molly-handling-guide.mdx lost Practical Fishkeeping "Quick guide to livebearers" (M18, no byline); its one claim there, the sex ratio, stays on Seriously Fish. Nothing listed.

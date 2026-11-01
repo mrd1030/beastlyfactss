@@ -413,3 +413,12 @@ Edit pass 2026-11-01 on content/guides/aquarium-substrate-guide.mdx. These exist
 - Leaves bringing pH down "usually short of blackwater." SB67 only (WEAK). (also elsewhere: no)
 - Nothing on the floor softens hard tap water. SB68 only (WEAK). (also elsewhere: yes, ember-tetra-tank-setup-guide.mdx)
 - Catappa leaves growing a biofilm fry graze on. SB66 only (WEAK). (also elsewhere: yes, ember-tetra-enrichment-guide.mdx)
+
+## Kept without a source (owner review): hobby-site Sources removal, 2026-11-01
+
+Owner rule (docs/RULES.md, "No hobby sites"): retailer care pages and blogs, hobby blogs, hobby magazines, Practical Fishkeeping pages without a named author, its news items and course pages left the Sources blocks. The claims below lost their only cited source in that guide's block and stay in the body as written; the owner decides.
+
+- The wrong grain size and texture can damage barbels and skin. Was Practical Fishkeeping Diploma (SB4, course page). (also elsewhere: yes)
+- Coarse gravel is a poor medium for roots. Was SB4. (also elsewhere: no)
+- Unplanted community tank: stop at about 2 inches of coarse gravel, because deeper beds hold more waste and are likelier to turn anaerobic (body and FAQ). Was SB4; the 1 inch for sand stays on Matt Clarke (SB1). (also elsewhere: yes)
+- Bare floors: waste shows at once and dormant pathogens are easier to clear; substrate hides feces and uneaten food and harbors parasites and pathogens (body and FAQ). Was SB4; Merck still carries the quarantine build and its breakdown and disinfection. (also elsewhere: yes)

@@ -454,3 +454,11 @@ Added 2026-11-01 after the correction pass on content/guides/swordtail-*.mdx. Pe
 - Plan for the Fry: "the fish are large enough that overstocking hits water quality quickly" (U35). (also elsewhere: yes)
 - The jumping line "They are also excellent jumpers. A tank without a lid will lose fish" (U24). (also elsewhere: yes)
 - The Sources entry for Gasparini et al. 2012 is kept; the Koehler et al. 2011 record was not added because its abstract was never read. (also elsewhere: no)
+
+## Kept without a source (owner review): hobby-site Sources removal, 2026-11-01
+
+Owner rule (docs/RULES.md, "No hobby sites"): retailer care pages and blogs, hobby blogs, hobby magazines, Practical Fishkeeping pages without a named author, its news items and course pages left the Sources blocks. The claims below lost their only cited source in that guide's block and stay in the body as written; the owner decides.
+
+- swordtail-feeding-guide.mdx, fry: newly hatched baby brine shrimp as a first food, and the feeding frequency (W23 said three times a day; the guide says 3 to 5). Was Practical Fishkeeping "How to breed livebearing fish" (W23, no byline). (also elsewhere: yes)
+- swordtail-handling-guide.mdx FAQ, acclimation: tank water added in stages over 30 to 60 minutes, and a full drip over a couple of hours for soft or acidic water. Was Practical Fishkeeping acclimatising (W24, no named author). (also elsewhere: yes)
+- swordtail-enrichment-guide.mdx lost Practical Fishkeeping "Quick guide to livebearers" (W22, no byline); its two-male aggression line is also carried by Nathan Hill's "Great fish: Swordtails" (W21). Nothing listed.

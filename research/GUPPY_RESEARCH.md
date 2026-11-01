@@ -485,3 +485,9 @@ Added 2026-11-01 after the restore pass. The first correction pass cut these uns
 - Health: ich "Caused by stress" (UF/IFAS: a parasite spread by fish and equipment); "Water quality is the root of almost everything" and "the common thread running through nearly every condition" (Merck lists stress, poor water quality, overcrowding, failure to quarantine); dropsy "usually from a systemic bacterial infection" (Merck: several causes); "a healthy guppy that eats those crustaceans picks up the worm" as the only route (Levsen and Jakobsen: direct infection also occurs).
 - Handling: gravid spot "just ahead of that fin" (Seriously Fish: behind the anal fin).
 - Feeding FAQ clause "their mouths are too small for anything else" (Merck: flaked feeds can be crushed).
+
+## Kept without a source (owner review): hobby-site Sources removal, 2026-11-01
+
+Owner rule (docs/RULES.md, "No hobby sites"): retailer care pages and blogs, hobby blogs, hobby magazines, Practical Fishkeeping pages without a named author, its news items and course pages left the Sources blocks. The claims below lost their only cited source in that guide's block and stay in the body as written; the owner decides.
+
+- guppy-tank-setup-guide.mdx: most aquariums take four to six weeks to cycle fully (FAQ and body). Was Practical Fishkeeping "How to Cycle a Fish Tank" (G24, no byline). (also elsewhere: yes)

@@ -604,3 +604,11 @@ Distinct new URLs opened and used today: 33 (C17 to C23 and C25 to C50, counting
 
 Health guides cap at 8 sources. Sanders et al. 2010 (C7, PMC4155925) left the health guide's Sources block, since Merck (C8, still cited) supports the host range, the muscle infection and that horizontal transmission is likely. One claim lost its only cited source there and stays as written.
 - Health guide, neon tetra disease: "spreading when fish consume infected tissue, including from a fish that's already died", the FAQ "it spreads when fish eat infected tissue, so a dead fish left in the tank keeps it moving", and the two lines that the body "is what spreads" the parasite (Signs and euthanasia). Merck gives horizontal transmission, not the ingestion route. (also elsewhere: yes, neon and glowlight health guides)
+
+## Kept without a source (owner review): hobby-site Sources removal, 2026-11-01
+
+Owner rule (docs/RULES.md, "No hobby sites"): retailer care pages and blogs, hobby blogs, hobby magazines, Practical Fishkeeping pages without a named author, its news items and course pages left the Sources blocks. The claims below lost their only cited source in that guide's block and stay in the body as written; the owner decides.
+
+- Handling guide, acclimation: new arrivals kept fairly dark, floating and mixing over 30 to 60 minutes, drip acclimation over a couple of hours, the transit table (ammonia rises, pH falls), and the long-shipping exception (match the temperature, then net straight in). Was Practical Fishkeeping acclimatising (C44, credited only "Alex"). UF/IFAS FA16 still carries why ammonia turns more toxic as pH rises. (also elsewhere: yes)
+- Tank setup guide: 77 to 82°F as the everyday target. Was Practical Fishkeeping "Cardinal tetra, Paracheirodon axelrodi" (C13, no byline); Seriously Fish still carries 73 to 84°F and the Acta paper the 86°F tolerance. (also elsewhere: yes)
+- Tank setup guide: most cardinals on sale in the UK are captive-bred, with wild-caught fish available too. Was C13. (also elsewhere: yes)

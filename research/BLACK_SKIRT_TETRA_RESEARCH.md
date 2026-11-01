@@ -879,3 +879,15 @@ Added 2026-11-01 in the health guide Sources trim (health guides cap at 8). Fish
 - Health guide, healthy section: "the black can fade or deepen from day to day with the fish's mood". Was S22. (also elsewhere: yes, handling guide)
 - Health guide, dyed fish: "applied by stripping the slime coat with acid and then soaking the fish in dye" and "The color fades with time anyway." Was S22; Seriously Fish (S21) supports injection, the stress and the shortened lives. (also elsewhere: yes, handling guide)
 - Health guide, varieties: "long, trailing fins draw fin nippers, so a long-fin form gets the same calm company any long-finned fish needs." Was S32. (also elsewhere: yes, handling and tank setup guides)
+
+## Kept without a source (owner review): hobby-site Sources removal, 2026-11-01
+
+Owner rule (docs/RULES.md, "No hobby sites"): retailer care pages and blogs, hobby blogs, hobby magazines, Practical Fishkeeping pages without a named author, its news items and course pages left the Sources blocks. The claims below lost their only cited source in that guide's block and stay in the body as written; the owner decides.
+
+- Cost guide: lifespan about 3 to 5 years (FAQ and Lifespan). Was Aquarium Source (S32). (also elsewhere: no)
+- Enrichment guide: a school of a dozen or more is where black skirts look their most dramatic. Was TFH Magazine (S22). (also elsewhere: no)
+- Enrichment guide, closing: do not house them with slow, long-finned fish. Was S22; Seriously Fish still carries the school-of-12 fix. (also elsewhere: yes)
+- Handling guide: slow fish with long fins take the worst of the nipping, so no bettas (FAQ, body, mistakes list). Was S22. (also elsewhere: yes)
+- Handling guide, shop checklist: dyed fish "dipped in" dye. Was S22; injection stays on Seriously Fish. (also elsewhere: yes)
+- Handling guide FunFact: the black fades or deepens with the fish's mood. Was S22; the age fade stays on Seriously Fish. The FunFact source prop still reads "TFH Magazine and Seriously Fish"; owner decides. (also elsewhere: yes)
+- Handling guide, acclimation: lights off; 30 to 60 minutes of mixing; net, do not pour (trip waste, pest snail eggs); drip only for sensitive animals such as Caridina shrimp; the long-shipping exception (temperature first, then the net or a detoxifier); the first meal a day or two later. Was Practical Fishkeeping acclimatising (S25, no named author). The Practical Fishkeeping study report left too; the tiger barb result now cites Saxby et al. (2010) directly. (also elsewhere: yes)
