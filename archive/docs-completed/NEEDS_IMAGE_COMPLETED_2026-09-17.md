@@ -8,6 +8,14 @@ Newest first.
 
 ---
 
+## 2026-11-01: black skirt tank setup hero
+
+`/assets/images/black-skirt-tetra-tank-setup.jpg`, Adobe Firefly with Nano
+Banana 2, owner approved on the second try (the first drew a tank nearly as
+tall as it was wide and a school of identical poses): a long, low tank with
+plants at both ends and open water in the middle. 3:2, resized to 1168x784
+through mozjpeg at quality 80. Recorded in IMAGE_CREDITS.md.
+
 ## 2026-11-01: black skirt feeding hero
 
 `/assets/images/black-skirt-tetra-feeding.jpg`, Adobe Firefly with Nano Banana
