@@ -3,8 +3,9 @@ import { Lightbulb } from 'lucide-react';
 
 // `source` names where the fact comes from, shown under it the way the fact
 // cards show theirs ("Source: Cornell Chronicle"). A fun fact's source does
-// not go in the article's Sources block (owner, 2026-11-01); `href` is optional.
-export default function FunFact({ children, className = '', source, href }) {
+// not go in the article's Sources block (owner, 2026-11-01). Plain text, no
+// link, like the fact cards.
+export default function FunFact({ children, className = '', source }) {
   return (
     <div className={`my-8 rounded-2xl border border-secondary/30 bg-secondary/5 p-6 ${className}`}>
       <div className="flex items-start gap-3">
@@ -20,10 +21,7 @@ export default function FunFact({ children, className = '', source, href }) {
           </div>
           {source && (
             <p className="text-[11px] font-body text-muted-foreground mt-2">
-              {'Source: '}
-              {href ? (
-                <a href={href} target="_blank" rel="noopener noreferrer" className="underline decoration-dotted underline-offset-2 hover:text-foreground">{source}</a>
-              ) : source}
+              {`Source: ${source}`}
             </p>
           )}
         </div>
