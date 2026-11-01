@@ -12,8 +12,8 @@ Not used: "the substrate should ideally be fine grit, very small rounded gravel 
 
 ## Kept without a source (owner review)
 
-- "Swallowed gravel ... can block the esophagus": supported by SB6, which cannot go in the Sources block (no byline); no source in the block states it. (also elsewhere: yes, the goldfish care package source HTML in content/CAREPACKAGE Guides/ still says "block the gut")
-- "a goldfish cannot digest it" (swallowed gravel): no source opened. (also elsewhere: yes, care package source HTML)
-- Gravel "at least 1/2 inch across": only EWASH (SB25, WEAK content site, in the block). (also elsewhere: yes, goldfish-enrichment-guide.mdx and the care package)
-- Fine sand lets the fish sift "without swallowing harmful amounts": only EWASH (SB25). (also elsewhere: no)
-- Small pea gravel as "the default in many starter kits": no source opened. (also elsewhere: yes, care package source HTML)
+- "Swallowed gravel ... can block the esophagus": supported by SB6, which cannot go in the Sources block (no byline); no source in the block states it. (also elsewhere: yes, the goldfish care package source HTML in content/CAREPACKAGE Guides/ still says "block the gut") [no review needed: weak but uncontroversial]
+- "a goldfish cannot digest it" (swallowed gravel): no source opened. (also elsewhere: yes, care package source HTML) [no review needed: common sense]
+- Gravel "at least 1/2 inch across": only EWASH (SB25, WEAK content site, in the block). (also elsewhere: yes, goldfish-enrichment-guide.mdx and the care package) [review]
+- Fine sand lets the fish sift "without swallowing harmful amounts": only EWASH (SB25). (also elsewhere: no) [no review needed: weak but uncontroversial]
+- Small pea gravel as "the default in many starter kits": no source opened. (also elsewhere: yes, care package source HTML) [no review needed: weak but uncontroversial]

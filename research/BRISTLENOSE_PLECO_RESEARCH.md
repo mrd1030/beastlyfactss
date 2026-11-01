@@ -8,5 +8,5 @@ Added to "Substrate and Hiding Spots", from Seriously Fish (Ancistrus cf. cirrho
 
 ## Kept without a source (owner review), 2026-11-01
 
-- "Smooth sand or rounded gravel is the safer choice, sharp substrate can injure the soft underbelly and barbels as a bristlenose forages." (Substrate and Hiding Spots): kept. No bristlenose source; only the general Practical Fishkeeping lines that coarse grains affect catfish and that texture can damage barbels and skin (SB4, SB5, not species-specific). (also elsewhere: no)
-- "A rounded, aquarium-safe natural sand works well here.": kept. No source names a sand for this species. (also elsewhere: no)
+- "Smooth sand or rounded gravel is the safer choice, sharp substrate can injure the soft underbelly and barbels as a bristlenose forages." (Substrate and Hiding Spots): kept. No bristlenose source; only the general Practical Fishkeeping lines that coarse grains affect catfish and that texture can damage barbels and skin (SB4, SB5, not species-specific). (also elsewhere: no) [no review needed: common sense]
+- "A rounded, aquarium-safe natural sand works well here.": kept. No source names a sand for this species. (also elsewhere: no) [no review needed: weak but uncontroversial]

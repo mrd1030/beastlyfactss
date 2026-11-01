@@ -12,4 +12,4 @@ Left out for the 6-source cap: gravel-type enrichment raised the share of viable
 
 ## Kept without a source (owner review)
 
-- "Fine gravel or sand both work well": no allowed source (Aquarium Co-Op, hobby site, is the only candidate in the block). (also elsewhere: no)
+- "Fine gravel or sand both work well": no allowed source (Aquarium Co-Op, hobby site, is the only candidate in the block). (also elsewhere: no) [no review needed: weak but uncontroversial]

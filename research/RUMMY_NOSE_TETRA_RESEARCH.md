@@ -872,46 +872,46 @@ New sources opened today: 16 (S44 to S59; S58 and S59 were in other tetra files 
 ### Kept without a source (owner review)
 
 Added 2026-11-01 in the contradiction and duplicate pass. Kept as written; the owner decides.
-- Feeding guide, adult portions: "Watching also shows whether the rummy-noses are eating at all." Restored after the rewrite dropped it. Common-sense husbandry; no source opened says it. (also elsewhere: no)
-- Enrichment guide, Light: 14 hours of light to 10 of dark offered as a tank timer setting. S9 gives 14:10 only as the photoperiod its lab schools were kept on; lighting hours are on the owner-allowed unsourced list. (also elsewhere: no)
-- Enrichment guide FunFact: "a trade of about 14 million fish a year" is arithmetic on S44 (142,552,253 fish over 2006 to 2015), not a figure the paper prints. The earlier S3 figures (second, about 6%, 20 to 30 million a year) left the FunFact so it matches the cost guide; Conflicts 4 still stands as a source-vs-source split. (also elsewhere: no)
-- Feeding guide, Foods to Avoid: the whirling disease clause on live tubifex rests on S59 (Merck, general); whirling disease is a salmonid disease, so its relevance to a tetra is the owner's call. The tetra-relevant tubifex risk is S83 (6 of 7 shop samples carried infected worms), which the guide does not cite. (also elsewhere: yes, glowlight feeding guide)
+- Feeding guide, adult portions: "Watching also shows whether the rummy-noses are eating at all." Restored after the rewrite dropped it. Common-sense husbandry; no source opened says it. (also elsewhere: no) [no review needed: common sense]
+- Enrichment guide, Light: 14 hours of light to 10 of dark offered as a tank timer setting. S9 gives 14:10 only as the photoperiod its lab schools were kept on; lighting hours are on the owner-allowed unsourced list. (also elsewhere: no) [no review needed: owner-approved]
+- Enrichment guide FunFact: "a trade of about 14 million fish a year" is arithmetic on S44 (142,552,253 fish over 2006 to 2015), not a figure the paper prints. The earlier S3 figures (second, about 6%, 20 to 30 million a year) left the FunFact so it matches the cost guide; Conflicts 4 still stands as a source-vs-source split. (also elsewhere: no) [no review needed: stale]
+- Feeding guide, Foods to Avoid: the whirling disease clause on live tubifex rests on S59 (Merck, general); whirling disease is a salmonid disease, so its relevance to a tetra is the owner's call. The tetra-relevant tubifex risk is S83 (6 of 7 shop samples carried infected worms), which the guide does not cite. (also elsewhere: yes, glowlight feeding guide) [no review needed: stale]
 
 Added 2026-11-01 in the health guide Sources trim (health guides cap at 8). Aquarium Co-Op (S31), Fishkeeper (S30), Seachem (S58) and ANGFA (S84) left the health guide's Sources block; the claims below lost their only cited source there and stay as written. The invertebrate copper line moved to UF/IFAS FA-13 (S62, added to the UF entry) and was reworded to "Copper is toxic to invertebrates as well", so it is not listed.
-- Health guide opener: "it reacts to stress more readily than most small tetras", and the FAQ "They react to stress more than most tetras, which is why many keepers steer beginners toward hardier fish." Was S31. (also elsewhere: yes, tank setup FAQ)
-- Health guide, Red Nose: the "canary in the coal mine" nickname. Was S31. (also elsewhere: yes, handling, tank setup and cost guides)
-- Health guide, Red Nose: the cause list "from bad water and a cold tank to disease and bullying" and "Bullying is one of the stresses that drains the red". Was S31; Seriously Fish (S21) supports only fading in poor condition. (also elsewhere: yes, feeding and handling guides)
-- Health guide, Red Nose: "Water that has drifted alkaline is one known cause of a dulled head, and in harder, higher-pH water nitrate takes a bigger toll on this fish, with lost color often the first thing a keeper sees", and the FAQ "Alkaline water alone can dull the red". Was S30. (also elsewhere: yes)
-- Health guide, Red Nose and FAQ: shipped or netted fish color up again "within half an hour or by the next day". Was S31. (also elsewhere: yes, handling guide)
-- Health guide, healthy table: "Belly: Slightly rounded". Was S31; the eyes, skin and swimming rows rest on Merck (S67). (also elsewhere: yes, feeding and cost guides)
-- Health guide: "New rummy-noses sometimes come home from the store already carrying a bacterial infection" (fin rot) and "Rummy-noses sometimes arrive from the store already carrying ich" (quarantine, and the quarantine FAQ). Was S31; UF/IFAS (S56) supports disease surfacing 1 to 3 weeks after shipping in general. (also elsewhere: yes)
-- Health guide, fin rot: "most often Aeromonas, Pseudomonas or Flavobacterium: the fin tip turns gray and then wears away, and poor conditions and fighting set it up." Was S84. (also elsewhere: no)
-- Health guide, copper: "rummy-noses tend to leave adult shrimp and snails alone and eat only the babies". Was S31. (also elsewhere: yes, tank setup guide)
-- Health guide, copper: "Seachem's chelated copper product, Cupramine, is dosed at 0.25 mg/L in freshwater, about 20 times that figure". Was S58, the manufacturer's spec. (also elsewhere: no)
-- Health guide, ich: "even the warmest care ranges given for it stop at 84°F". Was S31 (S32 also says it, not cited). (also elsewhere: yes, tank setup guide)
-- Health guide, internal parasites: "Most rummy-noses in shops are tank bred". Was S30 (S57 also says it, not cited). (also elsewhere: yes, cost guide)
-- Health guide opener, "1.5 to 2 inches": the 2 inch end rests on Seriously Fish (50 mm SL); the 1.5 inch end was Fishkeeper's 4 cm (S30). (also elsewhere: yes)
+- Health guide opener: "it reacts to stress more readily than most small tetras", and the FAQ "They react to stress more than most tetras, which is why many keepers steer beginners toward hardier fish." Was S31. (also elsewhere: yes, tank setup FAQ) [no review needed: weak but uncontroversial]
+- Health guide, Red Nose: the "canary in the coal mine" nickname. Was S31. (also elsewhere: yes, handling, tank setup and cost guides) [no review needed: weak but uncontroversial]
+- Health guide, Red Nose: the cause list "from bad water and a cold tank to disease and bullying" and "Bullying is one of the stresses that drains the red". Was S31; Seriously Fish (S21) supports only fading in poor condition. (also elsewhere: yes, feeding and handling guides) [no review needed: weak but uncontroversial]
+- Health guide, Red Nose: "Water that has drifted alkaline is one known cause of a dulled head, and in harder, higher-pH water nitrate takes a bigger toll on this fish, with lost color often the first thing a keeper sees", and the FAQ "Alkaline water alone can dull the red". Was S30. (also elsewhere: yes) [no review needed: weak but uncontroversial]
+- Health guide, Red Nose and FAQ: shipped or netted fish color up again "within half an hour or by the next day". Was S31. (also elsewhere: yes, handling guide) [no review needed: weak but uncontroversial]
+- Health guide, healthy table: "Belly: Slightly rounded". Was S31; the eyes, skin and swimming rows rest on Merck (S67). (also elsewhere: yes, feeding and cost guides) [no review needed: weak but uncontroversial]
+- Health guide: "New rummy-noses sometimes come home from the store already carrying a bacterial infection" (fin rot) and "Rummy-noses sometimes arrive from the store already carrying ich" (quarantine, and the quarantine FAQ). Was S31; UF/IFAS (S56) supports disease surfacing 1 to 3 weeks after shipping in general. (also elsewhere: yes) [no review needed: weak but uncontroversial]
+- Health guide, fin rot: "most often Aeromonas, Pseudomonas or Flavobacterium: the fin tip turns gray and then wears away, and poor conditions and fighting set it up." Was S84. (also elsewhere: no) [no review needed: weak but uncontroversial]
+- Health guide, copper: "rummy-noses tend to leave adult shrimp and snails alone and eat only the babies". Was S31. (also elsewhere: yes, tank setup guide) [no review needed: weak but uncontroversial]
+- Health guide, copper: "Seachem's chelated copper product, Cupramine, is dosed at 0.25 mg/L in freshwater, about 20 times that figure". Was S58, the manufacturer's spec. (also elsewhere: no) [review]
+- Health guide, ich: "even the warmest care ranges given for it stop at 84°F". Was S31 (S32 also says it, not cited). (also elsewhere: yes, tank setup guide) [review]
+- Health guide, internal parasites: "Most rummy-noses in shops are tank bred". Was S30 (S57 also says it, not cited). (also elsewhere: yes, cost guide) [no review needed: weak but uncontroversial]
+- Health guide opener, "1.5 to 2 inches": the 2 inch end rests on Seriously Fish (50 mm SL); the 1.5 inch end was Fishkeeper's 4 cm (S30). (also elsewhere: yes) [review]
 
 ## Kept without a source (owner review): hobby-site Sources removal, 2026-11-01
 
 Owner rule (docs/RULES.md, "No hobby sites"): retailer care pages and blogs, hobby blogs, hobby magazines, Practical Fishkeeping pages without a named author, its news items and course pages left the Sources blocks. The claims below lost their only cited source in that guide's block and stay in the body as written; the owner decides.
 
-- Cost guide: lifespan about 5 years (FAQ and body). Was Aquarium Co-Op (S31). (also elsewhere: yes)
-- Cost guide: a pale nose on a new arrival or a just-netted fish, so wait half an hour or come back another day (FAQ and checklist). Was S31. (also elsewhere: yes)
-- Cost guide checklist: slightly rounded belly. Was S31. (also elsewhere: yes)
-- Cost guide: rummy-noses sometimes arrive carrying ich. Was S31. (also elsewhere: yes)
-- Cost guide, shipping: rummy-noses can play dead in the bag. Was S31. (also elsewhere: yes)
-- Cost guide: active fish that swim back and forth the length of the tank. Was S31. (also elsewhere: no)
-- Feeding guide: flake and mosquito larvae named among the foods (FAQ and body). Was Fishkeeper (S30). (also elsewhere: no)
-- Feeding guide, fry: live vinegar eels or a powdered fry food after infusoria. Was S31; infusoria and brine shrimp nauplii stay on Seriously Fish. (also elsewhere: no)
-- Feeding guide: krill and salmon-based foods fed for color. Was S31. (also elsewhere: no)
-- Feeding guide: in alkaline water rising nitrate can cause a marked loss of color as the first sign. Was S30. (also elsewhere: yes)
-- Feeding guide: bad water and low temperatures both stress a rummy-nose; disease and bullying fade the red. Was S31. (also elsewhere: yes)
-- Handling guide: pale noses after arrival or netting, wait half an hour or come back another day (FAQ and body). Was S31. (also elsewhere: yes)
-- Handling guide FAQ: rummy-noses often play dead in a transport bag and right themselves on a solid surface. Was S31. (also elsewhere: yes)
-- Handling guide: new rummy-noses sometimes come home carrying ich, so they go into a separate hospital tank first (body and mistakes list). Was S31. (also elsewhere: yes)
-- Handling guide, acclimation: lights off for the whole process; tank water added every few minutes for 30 to 60 minutes; net, do not pour; check bag, net and floor for strays; an hour or two before the lights come back on; the first meal a day or two later; drip acclimation as the slower method experienced keepers use; the long-shipment exception (temperature match, then straight in); quarantine wherever the fish came from. Was Practical Fishkeeping acclimatising (S27, no named author). UF/IFAS FA16 still carries the ammonia chemistry. (also elsewhere: yes)
-- Tank setup guide: a confident rummy-nose school makes a good dither fish for Apistogramma and other dwarf cichlids. Was S31. (also elsewhere: no)
-- Tank setup guide, shrimp: baby shrimp and fry eaten, adult dwarf shrimp and snails left alone. Was S31. (also elsewhere: yes)
-- Tank setup guide: the species does well in a standard, well-planted tank, and the red heads look striking against the greenery. Was S31. (also elsewhere: no)
-- Tank setup guide FAQ: rummy-noses are sensitive to stress. Was S31. (also elsewhere: yes)
+- Cost guide: lifespan about 5 years (FAQ and body). Was Aquarium Co-Op (S31). (also elsewhere: yes) [no review needed: owner-approved]
+- Cost guide: a pale nose on a new arrival or a just-netted fish, so wait half an hour or come back another day (FAQ and checklist). Was S31. (also elsewhere: yes) [no review needed: duplicate]
+- Cost guide checklist: slightly rounded belly. Was S31. (also elsewhere: yes) [no review needed: duplicate]
+- Cost guide: rummy-noses sometimes arrive carrying ich. Was S31. (also elsewhere: yes) [no review needed: duplicate]
+- Cost guide, shipping: rummy-noses can play dead in the bag. Was S31. (also elsewhere: yes) [no review needed: weak but uncontroversial]
+- Cost guide: active fish that swim back and forth the length of the tank. Was S31. (also elsewhere: no) [no review needed: weak but uncontroversial]
+- Feeding guide: flake and mosquito larvae named among the foods (FAQ and body). Was Fishkeeper (S30). (also elsewhere: no) [no review needed: weak but uncontroversial]
+- Feeding guide, fry: live vinegar eels or a powdered fry food after infusoria. Was S31; infusoria and brine shrimp nauplii stay on Seriously Fish. (also elsewhere: no) [no review needed: common sense]
+- Feeding guide: krill and salmon-based foods fed for color. Was S31. (also elsewhere: no) [no review needed: weak but uncontroversial]
+- Feeding guide: in alkaline water rising nitrate can cause a marked loss of color as the first sign. Was S30. (also elsewhere: yes) [no review needed: duplicate]
+- Feeding guide: bad water and low temperatures both stress a rummy-nose; disease and bullying fade the red. Was S31. (also elsewhere: yes) [no review needed: duplicate]
+- Handling guide: pale noses after arrival or netting, wait half an hour or come back another day (FAQ and body). Was S31. (also elsewhere: yes) [no review needed: duplicate]
+- Handling guide FAQ: rummy-noses often play dead in a transport bag and right themselves on a solid surface. Was S31. (also elsewhere: yes) [no review needed: duplicate]
+- Handling guide: new rummy-noses sometimes come home carrying ich, so they go into a separate hospital tank first (body and mistakes list). Was S31. (also elsewhere: yes) [no review needed: duplicate]
+- Handling guide, acclimation: lights off for the whole process; tank water added every few minutes for 30 to 60 minutes; net, do not pour; check bag, net and floor for strays; an hour or two before the lights come back on; the first meal a day or two later; drip acclimation as the slower method experienced keepers use; the long-shipment exception (temperature match, then straight in); quarantine wherever the fish came from. Was Practical Fishkeeping acclimatising (S27, no named author). UF/IFAS FA16 still carries the ammonia chemistry. (also elsewhere: yes) [no review needed: common sense]
+- Tank setup guide: a confident rummy-nose school makes a good dither fish for Apistogramma and other dwarf cichlids. Was S31. (also elsewhere: no) [no review needed: weak but uncontroversial]
+- Tank setup guide, shrimp: baby shrimp and fry eaten, adult dwarf shrimp and snails left alone. Was S31. (also elsewhere: yes) [no review needed: duplicate]
+- Tank setup guide: the species does well in a standard, well-planted tank, and the red heads look striking against the greenery. Was S31. (also elsewhere: no) [no review needed: weak but uncontroversial]
+- Tank setup guide FAQ: rummy-noses are sensitive to stress. Was S31. (also elsewhere: yes) [no review needed: duplicate]
