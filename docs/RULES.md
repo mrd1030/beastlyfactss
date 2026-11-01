@@ -174,7 +174,15 @@ FishBase carries it; Practical Fishkeeping, named-author articles only and only
 where no peer-reviewed, extension, vet or Seriously Fish source covers the
 claim, never its news items that report a study (cite the study) and never its
 course pages. A claim whose only source was a hobby site stays in the article
-and goes on that species' owner review list. One exception (owner, 2026-11-01): when removing hobby
+and goes on that species' owner review list.
+
+No links to other sites in an article body (owner, 2026-11-01): stores, blogs,
+hobby sites and papers are never linked or plugged by name in the text; the
+fact is stated plainly and any real source goes in the Sources block. The only
+body links out are Amazon affiliate links and tools the reader uses directly:
+a vet finder directory (the Association of Reptile and Amphibian Veterinarians
+find-a-vet page) and the eBird map. `node scripts/check-source-promo.mjs`
+reports any other. One exception (owner, 2026-11-01): when removing hobby
 sites would leave a guide with fewer than 3 sources, those hobby sources stay
 to bring it back up, never past 6. Cost guides carry no "Prices last checked" or "as of"
 line (owner, 2026-10-06): the table component already prints "Typical
