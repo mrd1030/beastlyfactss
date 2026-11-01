@@ -102,10 +102,15 @@ export const fishSheets = {
       { item: "angelfish-aquarium-heater", text: "[Aquarium heater]" },
       { item: "fire-bellied-toad-small-aquarium-filter-water", text: "[Gentle filter]" },
       { item: "angelfish-dense-live-silk-plants", text: "[Dense live plants]" },
-      { item: "sand-caribsea-10lb", qty: 1, text: "Dark fine [sand] or gravel (check the quantity against your tank's floor)" },
+      { item: "sand-black-15lb", qty: 2, text: "Two 15.4 lb bags of black [sand] that leaves the pH alone (check the quantity against your tank's floor)" },
       { item: "water-test-kit-liquid", text: "Liquid [water test kit]" },
       { item: "water-conditioner", text: "[Water conditioner] that neutralizes chlorine and chloramine" },
       { item: "fish-food-micro-pellets", text: "First supply of [micro pellets]" },
+    ],
+    extras: [
+      { item: "goldfish-bare-10-gallon-tank", text: "Bare [10 gallon tank] for quarantine, with no substrate or decor" },
+      { item: "guppy-aquarium-heater", text: "[Heater] for the quarantine tank" },
+      { item: "neon-tetra-gentle-filter", text: "[Sponge filter] for the quarantine tank" },
     ],
   },
   'corydoras-catfish': {
@@ -228,10 +233,15 @@ export const fishSheets = {
       { item: "guppy-aquarium-heater", text: "[Aquarium heater]" },
       { item: "neon-tetra-gentle-filter", text: "[Gentle filter]" },
       { item: "neon-tetra-dense-live-silk-plants", text: "[Dense live or silk plants]" },
-      { item: "sand-caribsea-10lb", qty: 1, text: "Dark fine [sand] or gravel (check the quantity against your tank's floor)" },
+      { item: "sand-black-15lb", qty: 2, text: "Two 15.4 lb bags of black [sand] that leaves the pH alone (check the quantity against your tank's floor)" },
       { item: "water-test-kit-liquid", text: "Liquid [water test kit]" },
       { item: "water-conditioner", text: "[Water conditioner] that neutralizes chlorine and chloramine" },
       { item: "fish-food-micro-pellets", text: "First supply of [micro pellets]" },
+    ],
+    extras: [
+      { item: "goldfish-bare-10-gallon-tank", text: "Bare [10 gallon tank] for quarantine, with no substrate or decor" },
+      { item: "guppy-aquarium-heater", text: "[Heater] for the quarantine tank" },
+      { item: "neon-tetra-gentle-filter", text: "[Sponge filter] for the quarantine tank" },
     ],
   },
   'oscar-fish': {
