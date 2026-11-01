@@ -8,6 +8,13 @@ Newest first.
 
 ---
 
+## 2026-11-01: black skirt feeding hero
+
+`/assets/images/black-skirt-tetra-feeding.jpg`, Adobe Firefly with Nano Banana
+2, owner approved: four fish taking bloodworm, the grayer coloring of older
+fish. 3:2, resized to 1168x784 through mozjpeg at quality 80. Recorded in
+IMAGE_CREDITS.md.
+
 ## 2026-11-01: black skirt cost hero
 
 `/assets/images/black-skirt-tetra-cost.jpg`, Adobe Firefly with Nano Banana 2,
