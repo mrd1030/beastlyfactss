@@ -421,6 +421,12 @@ third care sheet.
   the live page or that was read. A guide's `lastReviewed` moves only when every
   cell under it checked out that month, and `lastUpdated` only when its text
   changed.
+- The dates are stamped by script, not by hand. Every checker run writes a
+  per-cell record to docs/legal-checks/<yyyy-mm>-fetch.json, and a desktop
+  `--browser` run writes <yyyy-mm>-browser.json; commit both. Then
+  `node scripts/legal-stamp-reviewed.mjs` says how many cells and guides are
+  checked and what blocks the rest. Add `--worked` once the work order is done,
+  `--apply` to write the dates, and `--list` for every blocking cell by guide.
 - A source notice (src/lib/data/sourceNotices.js) is retired once its source is
   readable again and its cells are re-verified, and its `<SourceNotice>` tags
   come out of the guides with it.

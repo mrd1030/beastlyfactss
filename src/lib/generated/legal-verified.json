@@ -1,12 +1,60 @@
 {
   "hedgehog-legal-guide": {
     "total": 52,
-    "modal": "2026-10-01",
-    "modalCount": 51,
+    "modal": "2026-11-01",
+    "modalCount": 39,
     "others": [
       [
-        "2026-11-01",
-        "Maine"
+        "2026-10-01",
+        "Alaska"
+      ],
+      [
+        "2026-10-01",
+        "Florida"
+      ],
+      [
+        "2026-10-01",
+        "Georgia"
+      ],
+      [
+        "2026-10-01",
+        "Illinois"
+      ],
+      [
+        "2026-10-01",
+        "Indiana"
+      ],
+      [
+        "2026-10-01",
+        "Massachusetts"
+      ],
+      [
+        "2026-10-01",
+        "Mississippi"
+      ],
+      [
+        "2026-10-01",
+        "Montana"
+      ],
+      [
+        "2026-10-01",
+        "Nebraska"
+      ],
+      [
+        "2026-10-01",
+        "New York"
+      ],
+      [
+        "2026-10-01",
+        "Pennsylvania"
+      ],
+      [
+        "2026-10-01",
+        "South Dakota"
+      ],
+      [
+        "2026-10-01",
+        "Texas"
       ]
     ],
     "from": "2026-10-01",
@@ -14,12 +62,48 @@
   },
   "ferret-legal-guide": {
     "total": 52,
-    "modal": "2026-10-01",
-    "modalCount": 51,
+    "modal": "2026-11-01",
+    "modalCount": 42,
     "others": [
       [
-        "2026-11-01",
-        "Maine"
+        "2026-10-01",
+        "Alaska"
+      ],
+      [
+        "2026-10-01",
+        "Florida"
+      ],
+      [
+        "2026-10-01",
+        "Georgia"
+      ],
+      [
+        "2026-10-01",
+        "Illinois"
+      ],
+      [
+        "2026-10-01",
+        "Indiana"
+      ],
+      [
+        "2026-10-01",
+        "Mississippi"
+      ],
+      [
+        "2026-10-01",
+        "New York"
+      ],
+      [
+        "2026-10-01",
+        "North Carolina"
+      ],
+      [
+        "2026-10-01",
+        "South Dakota"
+      ],
+      [
+        "2026-10-01",
+        "Texas"
       ]
     ],
     "from": "2026-10-01",
@@ -27,16 +111,68 @@
   },
   "sugar-glider-legal-guide": {
     "total": 52,
-    "modal": "2026-10-01",
-    "modalCount": 50,
+    "modal": "2026-11-01",
+    "modalCount": 37,
     "others": [
       [
-        "2026-10-02",
-        "North Dakota"
+        "2026-10-01",
+        "Alaska"
       ],
       [
-        "2026-11-01",
-        "Maine"
+        "2026-10-01",
+        "Florida"
+      ],
+      [
+        "2026-10-01",
+        "Georgia"
+      ],
+      [
+        "2026-10-01",
+        "Hawaii"
+      ],
+      [
+        "2026-10-01",
+        "Illinois"
+      ],
+      [
+        "2026-10-01",
+        "Indiana"
+      ],
+      [
+        "2026-10-01",
+        "Massachusetts"
+      ],
+      [
+        "2026-10-01",
+        "Mississippi"
+      ],
+      [
+        "2026-10-01",
+        "Montana"
+      ],
+      [
+        "2026-10-01",
+        "Nebraska"
+      ],
+      [
+        "2026-10-01",
+        "New York"
+      ],
+      [
+        "2026-10-01",
+        "North Carolina"
+      ],
+      [
+        "2026-10-01",
+        "Pennsylvania"
+      ],
+      [
+        "2026-10-01",
+        "South Dakota"
+      ],
+      [
+        "2026-10-01",
+        "Texas"
       ]
     ],
     "from": "2026-10-01",
@@ -44,16 +180,48 @@
   },
   "hamster-legal-guide": {
     "total": 52,
-    "modal": "2026-10-01",
-    "modalCount": 50,
+    "modal": "2026-11-01",
+    "modalCount": 42,
     "others": [
       [
-        "2026-10-02",
-        "North Dakota"
+        "2026-10-01",
+        "Alaska"
       ],
       [
-        "2026-11-01",
-        "Maine"
+        "2026-10-01",
+        "Florida"
+      ],
+      [
+        "2026-10-01",
+        "Georgia"
+      ],
+      [
+        "2026-10-01",
+        "Illinois"
+      ],
+      [
+        "2026-10-01",
+        "Indiana"
+      ],
+      [
+        "2026-10-01",
+        "Massachusetts"
+      ],
+      [
+        "2026-10-01",
+        "Mississippi"
+      ],
+      [
+        "2026-10-01",
+        "New York"
+      ],
+      [
+        "2026-10-01",
+        "South Dakota"
+      ],
+      [
+        "2026-10-01",
+        "Texas"
       ]
     ],
     "from": "2026-10-01",
@@ -61,16 +229,52 @@
   },
   "gerbil-legal-guide": {
     "total": 52,
-    "modal": "2026-10-01",
-    "modalCount": 50,
+    "modal": "2026-11-01",
+    "modalCount": 41,
     "others": [
       [
-        "2026-10-02",
-        "North Dakota"
+        "2026-10-01",
+        "Alaska"
       ],
       [
-        "2026-11-01",
-        "Maine"
+        "2026-10-01",
+        "Florida"
+      ],
+      [
+        "2026-10-01",
+        "Georgia"
+      ],
+      [
+        "2026-10-01",
+        "Illinois"
+      ],
+      [
+        "2026-10-01",
+        "Indiana"
+      ],
+      [
+        "2026-10-01",
+        "Massachusetts"
+      ],
+      [
+        "2026-10-01",
+        "Mississippi"
+      ],
+      [
+        "2026-10-01",
+        "Nebraska"
+      ],
+      [
+        "2026-10-01",
+        "New York"
+      ],
+      [
+        "2026-10-01",
+        "South Dakota"
+      ],
+      [
+        "2026-10-01",
+        "Texas"
       ]
     ],
     "from": "2026-10-01",
@@ -78,49 +282,101 @@
   },
   "quaker-parakeet-legal-guide": {
     "total": 52,
-    "modal": "2026-10-01",
-    "modalCount": 48,
+    "modal": "2026-11-01",
+    "modalCount": 41,
     "others": [
       [
-        "2026-10-02",
-        "California"
+        "2026-10-01",
+        "Alaska"
       ],
       [
-        "2026-10-02",
-        "Hawaii"
+        "2026-10-01",
+        "Florida"
       ],
       [
-        "2026-10-02",
-        "Kentucky"
+        "2026-10-01",
+        "Georgia"
       ],
       [
-        "2026-10-08",
-        "Tennessee"
+        "2026-10-01",
+        "Illinois"
+      ],
+      [
+        "2026-10-01",
+        "Indiana"
+      ],
+      [
+        "2026-10-01",
+        "Massachusetts"
+      ],
+      [
+        "2026-10-01",
+        "Mississippi"
+      ],
+      [
+        "2026-10-01",
+        "Montana"
+      ],
+      [
+        "2026-10-01",
+        "Nebraska"
+      ],
+      [
+        "2026-10-01",
+        "South Dakota"
+      ],
+      [
+        "2026-10-01",
+        "Texas"
       ]
     ],
     "from": "2026-10-01",
-    "to": "2026-10-08"
+    "to": "2026-11-01"
   },
   "bengal-cat-legal-guide": {
     "total": 52,
-    "modal": "2026-10-01",
-    "modalCount": 48,
+    "modal": "2026-11-01",
+    "modalCount": 42,
     "others": [
       [
-        "2026-10-08",
-        "Arizona"
+        "2026-10-01",
+        "Alaska"
       ],
       [
-        "2026-10-08",
-        "Delaware"
+        "2026-10-01",
+        "Florida"
       ],
       [
-        "2026-10-08",
-        "Wyoming"
+        "2026-10-01",
+        "Georgia"
       ],
       [
-        "2026-11-01",
-        "Maine"
+        "2026-10-01",
+        "Illinois"
+      ],
+      [
+        "2026-10-01",
+        "Indiana"
+      ],
+      [
+        "2026-10-01",
+        "Mississippi"
+      ],
+      [
+        "2026-10-01",
+        "Nebraska"
+      ],
+      [
+        "2026-10-01",
+        "New York"
+      ],
+      [
+        "2026-10-01",
+        "South Dakota"
+      ],
+      [
+        "2026-10-01",
+        "Texas"
       ]
     ],
     "from": "2026-10-01",
@@ -128,12 +384,56 @@
   },
   "veiled-chameleon-legal-guide": {
     "total": 52,
-    "modal": "2026-10-01",
-    "modalCount": 51,
+    "modal": "2026-11-01",
+    "modalCount": 40,
     "others": [
       [
-        "2026-11-01",
-        "Maine"
+        "2026-10-01",
+        "Alaska"
+      ],
+      [
+        "2026-10-01",
+        "Florida"
+      ],
+      [
+        "2026-10-01",
+        "Georgia"
+      ],
+      [
+        "2026-10-01",
+        "Illinois"
+      ],
+      [
+        "2026-10-01",
+        "Indiana"
+      ],
+      [
+        "2026-10-01",
+        "Massachusetts"
+      ],
+      [
+        "2026-10-01",
+        "Mississippi"
+      ],
+      [
+        "2026-10-01",
+        "Nebraska"
+      ],
+      [
+        "2026-10-01",
+        "New York"
+      ],
+      [
+        "2026-10-01",
+        "South Dakota"
+      ],
+      [
+        "2026-10-01",
+        "Texas"
+      ],
+      [
+        "2026-10-01",
+        "Wisconsin"
       ]
     ],
     "from": "2026-10-01",
@@ -141,12 +441,56 @@
   },
   "russian-tortoise-legal-guide": {
     "total": 52,
-    "modal": "2026-10-01",
-    "modalCount": 51,
+    "modal": "2026-11-01",
+    "modalCount": 40,
     "others": [
       [
-        "2026-11-01",
-        "Maine"
+        "2026-10-01",
+        "Alaska"
+      ],
+      [
+        "2026-10-01",
+        "Florida"
+      ],
+      [
+        "2026-10-01",
+        "Georgia"
+      ],
+      [
+        "2026-10-01",
+        "Illinois"
+      ],
+      [
+        "2026-10-01",
+        "Indiana"
+      ],
+      [
+        "2026-10-01",
+        "Massachusetts"
+      ],
+      [
+        "2026-10-01",
+        "Mississippi"
+      ],
+      [
+        "2026-10-01",
+        "Nebraska"
+      ],
+      [
+        "2026-10-01",
+        "New York"
+      ],
+      [
+        "2026-10-01",
+        "South Dakota"
+      ],
+      [
+        "2026-10-01",
+        "Texas"
+      ],
+      [
+        "2026-10-01",
+        "Wisconsin"
       ]
     ],
     "from": "2026-10-01",
@@ -154,12 +498,56 @@
   },
   "ball-python-legal-guide": {
     "total": 52,
-    "modal": "2026-10-01",
-    "modalCount": 51,
+    "modal": "2026-11-01",
+    "modalCount": 40,
     "others": [
       [
-        "2026-11-01",
-        "Maine"
+        "2026-10-01",
+        "Alaska"
+      ],
+      [
+        "2026-10-01",
+        "Florida"
+      ],
+      [
+        "2026-10-01",
+        "Georgia"
+      ],
+      [
+        "2026-10-01",
+        "Illinois"
+      ],
+      [
+        "2026-10-01",
+        "Indiana"
+      ],
+      [
+        "2026-10-01",
+        "Massachusetts"
+      ],
+      [
+        "2026-10-01",
+        "Mississippi"
+      ],
+      [
+        "2026-10-01",
+        "Nebraska"
+      ],
+      [
+        "2026-10-01",
+        "New York"
+      ],
+      [
+        "2026-10-01",
+        "South Dakota"
+      ],
+      [
+        "2026-10-01",
+        "Texas"
+      ],
+      [
+        "2026-10-01",
+        "Wisconsin"
       ]
     ],
     "from": "2026-10-01",
@@ -167,16 +555,56 @@
   },
   "boa-constrictor-legal-guide": {
     "total": 52,
-    "modal": "2026-10-01",
-    "modalCount": 50,
+    "modal": "2026-11-01",
+    "modalCount": 40,
     "others": [
       [
-        "2026-10-02",
-        "Kansas"
+        "2026-10-01",
+        "Alaska"
       ],
       [
-        "2026-11-01",
-        "Maine"
+        "2026-10-01",
+        "Florida"
+      ],
+      [
+        "2026-10-01",
+        "Georgia"
+      ],
+      [
+        "2026-10-01",
+        "Illinois"
+      ],
+      [
+        "2026-10-01",
+        "Indiana"
+      ],
+      [
+        "2026-10-01",
+        "Massachusetts"
+      ],
+      [
+        "2026-10-01",
+        "Mississippi"
+      ],
+      [
+        "2026-10-01",
+        "Nebraska"
+      ],
+      [
+        "2026-10-01",
+        "New York"
+      ],
+      [
+        "2026-10-01",
+        "South Dakota"
+      ],
+      [
+        "2026-10-01",
+        "Texas"
+      ],
+      [
+        "2026-10-01",
+        "Wisconsin"
       ]
     ],
     "from": "2026-10-01",
@@ -184,12 +612,56 @@
   },
   "tarantula-legal-guide": {
     "total": 52,
-    "modal": "2026-10-01",
-    "modalCount": 51,
+    "modal": "2026-11-01",
+    "modalCount": 40,
     "others": [
       [
-        "2026-11-01",
-        "Maine"
+        "2026-10-01",
+        "Alaska"
+      ],
+      [
+        "2026-10-01",
+        "Florida"
+      ],
+      [
+        "2026-10-01",
+        "Georgia"
+      ],
+      [
+        "2026-10-01",
+        "Hawaii"
+      ],
+      [
+        "2026-10-01",
+        "Illinois"
+      ],
+      [
+        "2026-10-01",
+        "Massachusetts"
+      ],
+      [
+        "2026-10-01",
+        "Mississippi"
+      ],
+      [
+        "2026-10-01",
+        "Pennsylvania"
+      ],
+      [
+        "2026-10-01",
+        "South Dakota"
+      ],
+      [
+        "2026-10-01",
+        "Tennessee"
+      ],
+      [
+        "2026-10-01",
+        "Texas"
+      ],
+      [
+        "2026-10-01",
+        "Utah"
       ]
     ],
     "from": "2026-10-01",
@@ -197,12 +669,60 @@
   },
   "emperor-scorpion-legal-guide": {
     "total": 52,
-    "modal": "2026-10-01",
-    "modalCount": 51,
+    "modal": "2026-11-01",
+    "modalCount": 39,
     "others": [
       [
-        "2026-11-01",
-        "Maine"
+        "2026-10-01",
+        "Alaska"
+      ],
+      [
+        "2026-10-01",
+        "Florida"
+      ],
+      [
+        "2026-10-01",
+        "Georgia"
+      ],
+      [
+        "2026-10-01",
+        "Hawaii"
+      ],
+      [
+        "2026-10-01",
+        "Illinois"
+      ],
+      [
+        "2026-10-01",
+        "Massachusetts"
+      ],
+      [
+        "2026-10-01",
+        "Mississippi"
+      ],
+      [
+        "2026-10-01",
+        "Montana"
+      ],
+      [
+        "2026-10-01",
+        "Pennsylvania"
+      ],
+      [
+        "2026-10-01",
+        "South Dakota"
+      ],
+      [
+        "2026-10-01",
+        "Tennessee"
+      ],
+      [
+        "2026-10-01",
+        "Texas"
+      ],
+      [
+        "2026-10-01",
+        "Utah"
       ]
     ],
     "from": "2026-10-01",
@@ -210,12 +730,60 @@
   },
   "argentine-tegu-legal-guide": {
     "total": 52,
-    "modal": "2026-10-01",
-    "modalCount": 51,
+    "modal": "2026-11-01",
+    "modalCount": 39,
     "others": [
       [
-        "2026-11-01",
-        "Maine"
+        "2026-10-01",
+        "Alaska"
+      ],
+      [
+        "2026-10-01",
+        "Florida"
+      ],
+      [
+        "2026-10-01",
+        "Georgia"
+      ],
+      [
+        "2026-10-01",
+        "Illinois"
+      ],
+      [
+        "2026-10-01",
+        "Indiana"
+      ],
+      [
+        "2026-10-01",
+        "Massachusetts"
+      ],
+      [
+        "2026-10-01",
+        "Mississippi"
+      ],
+      [
+        "2026-10-01",
+        "Montana"
+      ],
+      [
+        "2026-10-01",
+        "Nebraska"
+      ],
+      [
+        "2026-10-01",
+        "New York"
+      ],
+      [
+        "2026-10-01",
+        "South Dakota"
+      ],
+      [
+        "2026-10-01",
+        "Texas"
+      ],
+      [
+        "2026-10-01",
+        "Wisconsin"
       ]
     ],
     "from": "2026-10-01",
@@ -223,12 +791,56 @@
   },
   "savannah-monitor-legal-guide": {
     "total": 52,
-    "modal": "2026-10-01",
-    "modalCount": 51,
+    "modal": "2026-11-01",
+    "modalCount": 40,
     "others": [
       [
-        "2026-11-01",
-        "Maine"
+        "2026-10-01",
+        "Alaska"
+      ],
+      [
+        "2026-10-01",
+        "Florida"
+      ],
+      [
+        "2026-10-01",
+        "Georgia"
+      ],
+      [
+        "2026-10-01",
+        "Illinois"
+      ],
+      [
+        "2026-10-01",
+        "Indiana"
+      ],
+      [
+        "2026-10-01",
+        "Massachusetts"
+      ],
+      [
+        "2026-10-01",
+        "Mississippi"
+      ],
+      [
+        "2026-10-01",
+        "Nebraska"
+      ],
+      [
+        "2026-10-01",
+        "New York"
+      ],
+      [
+        "2026-10-01",
+        "South Dakota"
+      ],
+      [
+        "2026-10-01",
+        "Texas"
+      ],
+      [
+        "2026-10-01",
+        "Wisconsin"
       ]
     ],
     "from": "2026-10-01",
@@ -236,12 +848,56 @@
   },
   "prairie-dog-legal-guide": {
     "total": 52,
-    "modal": "2026-10-01",
-    "modalCount": 51,
+    "modal": "2026-11-01",
+    "modalCount": 40,
     "others": [
       [
-        "2026-11-01",
-        "Maine"
+        "2026-10-01",
+        "Alaska"
+      ],
+      [
+        "2026-10-01",
+        "Florida"
+      ],
+      [
+        "2026-10-01",
+        "Georgia"
+      ],
+      [
+        "2026-10-01",
+        "Hawaii"
+      ],
+      [
+        "2026-10-01",
+        "Illinois"
+      ],
+      [
+        "2026-10-01",
+        "Indiana"
+      ],
+      [
+        "2026-10-01",
+        "Massachusetts"
+      ],
+      [
+        "2026-10-01",
+        "Mississippi"
+      ],
+      [
+        "2026-10-01",
+        "Nebraska"
+      ],
+      [
+        "2026-10-01",
+        "New York"
+      ],
+      [
+        "2026-10-01",
+        "South Dakota"
+      ],
+      [
+        "2026-10-01",
+        "Texas"
       ]
     ],
     "from": "2026-10-01",
@@ -249,12 +905,56 @@
   },
   "capybara-legal-guide": {
     "total": 52,
-    "modal": "2026-10-01",
-    "modalCount": 51,
+    "modal": "2026-11-01",
+    "modalCount": 40,
     "others": [
       [
-        "2026-11-01",
-        "Maine"
+        "2026-10-01",
+        "Alaska"
+      ],
+      [
+        "2026-10-01",
+        "Florida"
+      ],
+      [
+        "2026-10-01",
+        "Georgia"
+      ],
+      [
+        "2026-10-01",
+        "Hawaii"
+      ],
+      [
+        "2026-10-01",
+        "Illinois"
+      ],
+      [
+        "2026-10-01",
+        "Indiana"
+      ],
+      [
+        "2026-10-01",
+        "Massachusetts"
+      ],
+      [
+        "2026-10-01",
+        "Mississippi"
+      ],
+      [
+        "2026-10-01",
+        "Nebraska"
+      ],
+      [
+        "2026-10-01",
+        "New York"
+      ],
+      [
+        "2026-10-01",
+        "South Dakota"
+      ],
+      [
+        "2026-10-01",
+        "Texas"
       ]
     ],
     "from": "2026-10-01",
@@ -262,24 +962,44 @@
   },
   "fennec-fox-legal-guide": {
     "total": 52,
-    "modal": "2026-10-01",
-    "modalCount": 43,
+    "modal": "2026-11-01",
+    "modalCount": 41,
     "others": [
       [
-        "2026-10-02",
-        "California"
+        "2026-10-01",
+        "Alaska"
       ],
       [
-        "2026-10-08",
-        "Arkansas"
+        "2026-10-01",
+        "Florida"
       ],
       [
-        "2026-10-08",
-        "Idaho"
+        "2026-10-01",
+        "Georgia"
       ],
       [
-        "2026-10-08",
-        "Louisiana"
+        "2026-10-01",
+        "Illinois"
+      ],
+      [
+        "2026-10-01",
+        "Indiana"
+      ],
+      [
+        "2026-10-01",
+        "Massachusetts"
+      ],
+      [
+        "2026-10-01",
+        "Nebraska"
+      ],
+      [
+        "2026-10-01",
+        "New York"
+      ],
+      [
+        "2026-10-01",
+        "South Dakota"
       ],
       [
         "2026-10-08",
@@ -287,19 +1007,7 @@
       ],
       [
         "2026-10-08",
-        "Missouri"
-      ],
-      [
-        "2026-10-08",
         "Texas"
-      ],
-      [
-        "2026-10-08",
-        "Washington"
-      ],
-      [
-        "2026-11-01",
-        "Tennessee"
       ]
     ],
     "from": "2026-10-01",
@@ -307,20 +1015,56 @@
   },
   "serval-legal-guide": {
     "total": 52,
-    "modal": "2026-10-01",
-    "modalCount": 49,
+    "modal": "2026-11-01",
+    "modalCount": 40,
     "others": [
       [
-        "2026-10-02",
-        "California"
+        "2026-10-01",
+        "Alaska"
       ],
       [
-        "2026-10-08",
-        "Ohio"
+        "2026-10-01",
+        "Florida"
       ],
       [
-        "2026-11-01",
-        "Tennessee"
+        "2026-10-01",
+        "Georgia"
+      ],
+      [
+        "2026-10-01",
+        "Illinois"
+      ],
+      [
+        "2026-10-01",
+        "Indiana"
+      ],
+      [
+        "2026-10-01",
+        "Massachusetts"
+      ],
+      [
+        "2026-10-01",
+        "Mississippi"
+      ],
+      [
+        "2026-10-01",
+        "Montana"
+      ],
+      [
+        "2026-10-01",
+        "Nebraska"
+      ],
+      [
+        "2026-10-01",
+        "New York"
+      ],
+      [
+        "2026-10-01",
+        "South Dakota"
+      ],
+      [
+        "2026-10-01",
+        "Texas"
       ]
     ],
     "from": "2026-10-01",
@@ -328,16 +1072,56 @@
   },
   "chinchilla-legal-guide": {
     "total": 52,
-    "modal": "2026-10-01",
-    "modalCount": 50,
+    "modal": "2026-11-01",
+    "modalCount": 40,
     "others": [
       [
-        "2026-10-02",
-        "North Dakota"
+        "2026-10-01",
+        "Alaska"
       ],
       [
-        "2026-11-01",
-        "Maine"
+        "2026-10-01",
+        "Florida"
+      ],
+      [
+        "2026-10-01",
+        "Georgia"
+      ],
+      [
+        "2026-10-01",
+        "Illinois"
+      ],
+      [
+        "2026-10-01",
+        "Indiana"
+      ],
+      [
+        "2026-10-01",
+        "Massachusetts"
+      ],
+      [
+        "2026-10-01",
+        "Mississippi"
+      ],
+      [
+        "2026-10-01",
+        "Nebraska"
+      ],
+      [
+        "2026-10-01",
+        "New York"
+      ],
+      [
+        "2026-10-01",
+        "North Carolina"
+      ],
+      [
+        "2026-10-01",
+        "South Dakota"
+      ],
+      [
+        "2026-10-01",
+        "Texas"
       ]
     ],
     "from": "2026-10-01",
@@ -345,20 +1129,52 @@
   },
   "guinea-pig-legal-guide": {
     "total": 52,
-    "modal": "2026-10-01",
-    "modalCount": 49,
+    "modal": "2026-11-01",
+    "modalCount": 41,
     "others": [
       [
-        "2026-10-02",
-        "North Dakota"
+        "2026-10-01",
+        "Alaska"
       ],
       [
-        "2026-10-03",
-        "Hawaii"
+        "2026-10-01",
+        "Florida"
       ],
       [
-        "2026-11-01",
-        "Maine"
+        "2026-10-01",
+        "Georgia"
+      ],
+      [
+        "2026-10-01",
+        "Illinois"
+      ],
+      [
+        "2026-10-01",
+        "Indiana"
+      ],
+      [
+        "2026-10-01",
+        "Massachusetts"
+      ],
+      [
+        "2026-10-01",
+        "Mississippi"
+      ],
+      [
+        "2026-10-01",
+        "Nebraska"
+      ],
+      [
+        "2026-10-01",
+        "New York"
+      ],
+      [
+        "2026-10-01",
+        "South Dakota"
+      ],
+      [
+        "2026-10-01",
+        "Texas"
       ]
     ],
     "from": "2026-10-01",
@@ -366,12 +1182,60 @@
   },
   "green-iguana-legal-guide": {
     "total": 52,
-    "modal": "2026-10-01",
-    "modalCount": 51,
+    "modal": "2026-11-01",
+    "modalCount": 39,
     "others": [
       [
-        "2026-11-01",
-        "Maine"
+        "2026-10-01",
+        "Alaska"
+      ],
+      [
+        "2026-10-01",
+        "Florida"
+      ],
+      [
+        "2026-10-01",
+        "Georgia"
+      ],
+      [
+        "2026-10-01",
+        "Illinois"
+      ],
+      [
+        "2026-10-01",
+        "Indiana"
+      ],
+      [
+        "2026-10-01",
+        "Massachusetts"
+      ],
+      [
+        "2026-10-01",
+        "Mississippi"
+      ],
+      [
+        "2026-10-01",
+        "Montana"
+      ],
+      [
+        "2026-10-01",
+        "Nebraska"
+      ],
+      [
+        "2026-10-01",
+        "New York"
+      ],
+      [
+        "2026-10-01",
+        "South Dakota"
+      ],
+      [
+        "2026-10-01",
+        "Texas"
+      ],
+      [
+        "2026-10-01",
+        "Wisconsin"
       ]
     ],
     "from": "2026-10-01",
@@ -379,12 +1243,56 @@
   },
   "snapping-turtle-legal-guide": {
     "total": 52,
-    "modal": "2026-10-01",
-    "modalCount": 51,
+    "modal": "2026-11-01",
+    "modalCount": 40,
     "others": [
       [
-        "2026-11-01",
-        "Maine"
+        "2026-10-01",
+        "Alaska"
+      ],
+      [
+        "2026-10-01",
+        "Delaware"
+      ],
+      [
+        "2026-10-01",
+        "Florida"
+      ],
+      [
+        "2026-10-01",
+        "Georgia"
+      ],
+      [
+        "2026-10-01",
+        "Illinois"
+      ],
+      [
+        "2026-10-01",
+        "Massachusetts"
+      ],
+      [
+        "2026-10-01",
+        "Mississippi"
+      ],
+      [
+        "2026-10-01",
+        "Nebraska"
+      ],
+      [
+        "2026-10-01",
+        "New York"
+      ],
+      [
+        "2026-10-01",
+        "South Dakota"
+      ],
+      [
+        "2026-10-01",
+        "Texas"
+      ],
+      [
+        "2026-10-01",
+        "Wisconsin"
       ]
     ],
     "from": "2026-10-01",
@@ -392,12 +1300,60 @@
   },
   "tokay-gecko-legal-guide": {
     "total": 52,
-    "modal": "2026-10-01",
-    "modalCount": 51,
+    "modal": "2026-11-01",
+    "modalCount": 39,
     "others": [
       [
-        "2026-11-01",
-        "Maine"
+        "2026-10-01",
+        "Alaska"
+      ],
+      [
+        "2026-10-01",
+        "Florida"
+      ],
+      [
+        "2026-10-01",
+        "Georgia"
+      ],
+      [
+        "2026-10-01",
+        "Illinois"
+      ],
+      [
+        "2026-10-01",
+        "Indiana"
+      ],
+      [
+        "2026-10-01",
+        "Massachusetts"
+      ],
+      [
+        "2026-10-01",
+        "Mississippi"
+      ],
+      [
+        "2026-10-01",
+        "Montana"
+      ],
+      [
+        "2026-10-01",
+        "Nebraska"
+      ],
+      [
+        "2026-10-01",
+        "New York"
+      ],
+      [
+        "2026-10-01",
+        "South Dakota"
+      ],
+      [
+        "2026-10-01",
+        "Texas"
+      ],
+      [
+        "2026-10-01",
+        "Wisconsin"
       ]
     ],
     "from": "2026-10-01",
@@ -405,12 +1361,52 @@
   },
   "tiger-salamander-legal-guide": {
     "total": 52,
-    "modal": "2026-10-01",
-    "modalCount": 51,
+    "modal": "2026-11-01",
+    "modalCount": 41,
     "others": [
       [
-        "2026-11-01",
-        "Maine"
+        "2026-10-01",
+        "Alaska"
+      ],
+      [
+        "2026-10-01",
+        "Florida"
+      ],
+      [
+        "2026-10-01",
+        "Georgia"
+      ],
+      [
+        "2026-10-01",
+        "Illinois"
+      ],
+      [
+        "2026-10-01",
+        "Massachusetts"
+      ],
+      [
+        "2026-10-01",
+        "Mississippi"
+      ],
+      [
+        "2026-10-01",
+        "Nebraska"
+      ],
+      [
+        "2026-10-01",
+        "New York"
+      ],
+      [
+        "2026-10-01",
+        "South Dakota"
+      ],
+      [
+        "2026-10-01",
+        "Texas"
+      ],
+      [
+        "2026-10-01",
+        "Wisconsin"
       ]
     ],
     "from": "2026-10-01",
@@ -418,12 +1414,60 @@
   },
   "nile-monitor-legal-guide": {
     "total": 52,
-    "modal": "2026-10-01",
-    "modalCount": 51,
+    "modal": "2026-11-01",
+    "modalCount": 39,
     "others": [
       [
-        "2026-11-01",
-        "Maine"
+        "2026-10-01",
+        "Alaska"
+      ],
+      [
+        "2026-10-01",
+        "Florida"
+      ],
+      [
+        "2026-10-01",
+        "Georgia"
+      ],
+      [
+        "2026-10-01",
+        "Hawaii"
+      ],
+      [
+        "2026-10-01",
+        "Illinois"
+      ],
+      [
+        "2026-10-01",
+        "Indiana"
+      ],
+      [
+        "2026-10-01",
+        "Massachusetts"
+      ],
+      [
+        "2026-10-01",
+        "Mississippi"
+      ],
+      [
+        "2026-10-01",
+        "Nebraska"
+      ],
+      [
+        "2026-10-01",
+        "New York"
+      ],
+      [
+        "2026-10-01",
+        "South Dakota"
+      ],
+      [
+        "2026-10-01",
+        "Texas"
+      ],
+      [
+        "2026-10-01",
+        "Wisconsin"
       ]
     ],
     "from": "2026-10-01",
@@ -431,20 +1475,60 @@
   },
   "burmese-python-legal-guide": {
     "total": 52,
-    "modal": "2026-10-01",
-    "modalCount": 49,
+    "modal": "2026-11-01",
+    "modalCount": 39,
     "others": [
       [
-        "2026-10-08",
-        "Arkansas"
+        "2026-10-01",
+        "Alaska"
       ],
       [
-        "2026-10-08",
-        "North Carolina"
+        "2026-10-01",
+        "Florida"
       ],
       [
-        "2026-11-01",
-        "Maine"
+        "2026-10-01",
+        "Georgia"
+      ],
+      [
+        "2026-10-01",
+        "Illinois"
+      ],
+      [
+        "2026-10-01",
+        "Indiana"
+      ],
+      [
+        "2026-10-01",
+        "Massachusetts"
+      ],
+      [
+        "2026-10-01",
+        "Mississippi"
+      ],
+      [
+        "2026-10-01",
+        "Montana"
+      ],
+      [
+        "2026-10-01",
+        "Nebraska"
+      ],
+      [
+        "2026-10-01",
+        "New York"
+      ],
+      [
+        "2026-10-01",
+        "South Dakota"
+      ],
+      [
+        "2026-10-01",
+        "Texas"
+      ],
+      [
+        "2026-10-01",
+        "Wisconsin"
       ]
     ],
     "from": "2026-10-01",
@@ -452,16 +1536,60 @@
   },
   "degu-legal-guide": {
     "total": 52,
-    "modal": "2026-10-01",
-    "modalCount": 50,
+    "modal": "2026-11-01",
+    "modalCount": 39,
     "others": [
       [
-        "2026-10-02",
-        "North Dakota"
+        "2026-10-01",
+        "Alaska"
       ],
       [
-        "2026-11-01",
-        "Maine"
+        "2026-10-01",
+        "Florida"
+      ],
+      [
+        "2026-10-01",
+        "Georgia"
+      ],
+      [
+        "2026-10-01",
+        "Hawaii"
+      ],
+      [
+        "2026-10-01",
+        "Illinois"
+      ],
+      [
+        "2026-10-01",
+        "Indiana"
+      ],
+      [
+        "2026-10-01",
+        "Massachusetts"
+      ],
+      [
+        "2026-10-01",
+        "Mississippi"
+      ],
+      [
+        "2026-10-01",
+        "Montana"
+      ],
+      [
+        "2026-10-01",
+        "Nebraska"
+      ],
+      [
+        "2026-10-01",
+        "New York"
+      ],
+      [
+        "2026-10-01",
+        "South Dakota"
+      ],
+      [
+        "2026-10-01",
+        "Texas"
       ]
     ],
     "from": "2026-10-01",
@@ -469,16 +1597,52 @@
   },
   "axolotl-legal-guide": {
     "total": 52,
-    "modal": "2026-10-01",
-    "modalCount": 50,
+    "modal": "2026-11-01",
+    "modalCount": 41,
     "others": [
       [
-        "2026-10-08",
-        "Arkansas"
+        "2026-10-01",
+        "Alaska"
       ],
       [
-        "2026-11-01",
-        "Maine"
+        "2026-10-01",
+        "Florida"
+      ],
+      [
+        "2026-10-01",
+        "Georgia"
+      ],
+      [
+        "2026-10-01",
+        "Illinois"
+      ],
+      [
+        "2026-10-01",
+        "Massachusetts"
+      ],
+      [
+        "2026-10-01",
+        "Mississippi"
+      ],
+      [
+        "2026-10-01",
+        "Nebraska"
+      ],
+      [
+        "2026-10-01",
+        "New York"
+      ],
+      [
+        "2026-10-01",
+        "South Dakota"
+      ],
+      [
+        "2026-10-01",
+        "Texas"
+      ],
+      [
+        "2026-10-01",
+        "Wisconsin"
       ]
     ],
     "from": "2026-10-01",
@@ -486,12 +1650,52 @@
   },
   "box-turtle-legal-guide": {
     "total": 52,
-    "modal": "2026-10-01",
-    "modalCount": 51,
+    "modal": "2026-11-01",
+    "modalCount": 41,
     "others": [
       [
-        "2026-11-01",
-        "Maine"
+        "2026-10-01",
+        "Alaska"
+      ],
+      [
+        "2026-10-01",
+        "Delaware"
+      ],
+      [
+        "2026-10-01",
+        "Florida"
+      ],
+      [
+        "2026-10-01",
+        "Illinois"
+      ],
+      [
+        "2026-10-01",
+        "Massachusetts"
+      ],
+      [
+        "2026-10-01",
+        "Mississippi"
+      ],
+      [
+        "2026-10-01",
+        "Nebraska"
+      ],
+      [
+        "2026-10-01",
+        "New York"
+      ],
+      [
+        "2026-10-01",
+        "South Dakota"
+      ],
+      [
+        "2026-10-01",
+        "Texas"
+      ],
+      [
+        "2026-10-01",
+        "Wisconsin"
       ]
     ],
     "from": "2026-10-01",
@@ -499,20 +1703,52 @@
   },
   "red-eared-slider-legal-guide": {
     "total": 52,
-    "modal": "2026-10-01",
-    "modalCount": 49,
+    "modal": "2026-11-01",
+    "modalCount": 41,
     "others": [
       [
-        "2026-10-02",
-        "Colorado"
+        "2026-10-01",
+        "Alaska"
       ],
       [
-        "2026-10-02",
-        "Vermont"
+        "2026-10-01",
+        "Florida"
       ],
       [
-        "2026-11-01",
-        "Maine"
+        "2026-10-01",
+        "Georgia"
+      ],
+      [
+        "2026-10-01",
+        "Illinois"
+      ],
+      [
+        "2026-10-01",
+        "Massachusetts"
+      ],
+      [
+        "2026-10-01",
+        "Mississippi"
+      ],
+      [
+        "2026-10-01",
+        "Montana"
+      ],
+      [
+        "2026-10-01",
+        "Nebraska"
+      ],
+      [
+        "2026-10-01",
+        "South Dakota"
+      ],
+      [
+        "2026-10-01",
+        "Texas"
+      ],
+      [
+        "2026-10-01",
+        "Wisconsin"
       ]
     ],
     "from": "2026-10-01",
@@ -520,16 +1756,52 @@
   },
   "sulcata-tortoise-legal-guide": {
     "total": 52,
-    "modal": "2026-10-01",
-    "modalCount": 50,
+    "modal": "2026-11-01",
+    "modalCount": 41,
     "others": [
       [
-        "2026-10-02",
-        "Hawaii"
+        "2026-10-01",
+        "Alaska"
       ],
       [
-        "2026-11-01",
-        "Maine"
+        "2026-10-01",
+        "Florida"
+      ],
+      [
+        "2026-10-01",
+        "Georgia"
+      ],
+      [
+        "2026-10-01",
+        "Illinois"
+      ],
+      [
+        "2026-10-01",
+        "Massachusetts"
+      ],
+      [
+        "2026-10-01",
+        "Mississippi"
+      ],
+      [
+        "2026-10-01",
+        "Nebraska"
+      ],
+      [
+        "2026-10-01",
+        "New York"
+      ],
+      [
+        "2026-10-01",
+        "South Dakota"
+      ],
+      [
+        "2026-10-01",
+        "Texas"
+      ],
+      [
+        "2026-10-01",
+        "Wisconsin"
       ]
     ],
     "from": "2026-10-01",
@@ -537,12 +1809,48 @@
   },
   "hognose-snake-legal-guide": {
     "total": 52,
-    "modal": "2026-10-01",
-    "modalCount": 51,
+    "modal": "2026-11-01",
+    "modalCount": 42,
     "others": [
       [
-        "2026-11-01",
-        "Maine"
+        "2026-10-01",
+        "Alaska"
+      ],
+      [
+        "2026-10-01",
+        "Florida"
+      ],
+      [
+        "2026-10-01",
+        "Illinois"
+      ],
+      [
+        "2026-10-01",
+        "Massachusetts"
+      ],
+      [
+        "2026-10-01",
+        "Mississippi"
+      ],
+      [
+        "2026-10-01",
+        "Nebraska"
+      ],
+      [
+        "2026-10-01",
+        "New York"
+      ],
+      [
+        "2026-10-01",
+        "South Dakota"
+      ],
+      [
+        "2026-10-01",
+        "Texas"
+      ],
+      [
+        "2026-10-01",
+        "Wisconsin"
       ]
     ],
     "from": "2026-10-01",
@@ -550,12 +1858,60 @@
   },
   "african-grey-parrot-legal-guide": {
     "total": 52,
-    "modal": "2026-10-01",
-    "modalCount": 51,
+    "modal": "2026-11-01",
+    "modalCount": 39,
     "others": [
       [
-        "2026-11-01",
-        "Maine"
+        "2026-10-01",
+        "Alaska"
+      ],
+      [
+        "2026-10-01",
+        "Florida"
+      ],
+      [
+        "2026-10-01",
+        "Georgia"
+      ],
+      [
+        "2026-10-01",
+        "Illinois"
+      ],
+      [
+        "2026-10-01",
+        "Indiana"
+      ],
+      [
+        "2026-10-01",
+        "Massachusetts"
+      ],
+      [
+        "2026-10-01",
+        "Mississippi"
+      ],
+      [
+        "2026-10-01",
+        "Nebraska"
+      ],
+      [
+        "2026-10-01",
+        "New York"
+      ],
+      [
+        "2026-10-01",
+        "Pennsylvania"
+      ],
+      [
+        "2026-10-01",
+        "South Dakota"
+      ],
+      [
+        "2026-10-01",
+        "Texas"
+      ],
+      [
+        "2026-10-01",
+        "Wisconsin"
       ]
     ],
     "from": "2026-10-01",
@@ -563,12 +1919,56 @@
   },
   "giant-millipede-legal-guide": {
     "total": 52,
-    "modal": "2026-10-01",
-    "modalCount": 51,
+    "modal": "2026-11-01",
+    "modalCount": 40,
     "others": [
       [
-        "2026-11-01",
-        "Maine"
+        "2026-10-01",
+        "Alaska"
+      ],
+      [
+        "2026-10-01",
+        "Florida"
+      ],
+      [
+        "2026-10-01",
+        "Georgia"
+      ],
+      [
+        "2026-10-01",
+        "Hawaii"
+      ],
+      [
+        "2026-10-01",
+        "Illinois"
+      ],
+      [
+        "2026-10-01",
+        "Massachusetts"
+      ],
+      [
+        "2026-10-01",
+        "Mississippi"
+      ],
+      [
+        "2026-10-01",
+        "Pennsylvania"
+      ],
+      [
+        "2026-10-01",
+        "South Dakota"
+      ],
+      [
+        "2026-10-01",
+        "Tennessee"
+      ],
+      [
+        "2026-10-01",
+        "Texas"
+      ],
+      [
+        "2026-10-01",
+        "Utah"
       ]
     ],
     "from": "2026-10-01",
@@ -576,12 +1976,48 @@
   },
   "corn-snake-legal-guide": {
     "total": 52,
-    "modal": "2026-10-01",
-    "modalCount": 51,
+    "modal": "2026-11-01",
+    "modalCount": 42,
     "others": [
       [
-        "2026-11-01",
-        "Maine"
+        "2026-10-01",
+        "Alaska"
+      ],
+      [
+        "2026-10-01",
+        "Florida"
+      ],
+      [
+        "2026-10-01",
+        "Illinois"
+      ],
+      [
+        "2026-10-01",
+        "Massachusetts"
+      ],
+      [
+        "2026-10-01",
+        "Mississippi"
+      ],
+      [
+        "2026-10-01",
+        "Nebraska"
+      ],
+      [
+        "2026-10-01",
+        "New York"
+      ],
+      [
+        "2026-10-01",
+        "South Dakota"
+      ],
+      [
+        "2026-10-01",
+        "Texas"
+      ],
+      [
+        "2026-10-01",
+        "Wisconsin"
       ]
     ],
     "from": "2026-10-01",
@@ -589,12 +2025,48 @@
   },
   "milk-snake-legal-guide": {
     "total": 52,
-    "modal": "2026-10-01",
-    "modalCount": 51,
+    "modal": "2026-11-01",
+    "modalCount": 42,
     "others": [
       [
-        "2026-11-01",
-        "Maine"
+        "2026-10-01",
+        "Alaska"
+      ],
+      [
+        "2026-10-01",
+        "Florida"
+      ],
+      [
+        "2026-10-01",
+        "Illinois"
+      ],
+      [
+        "2026-10-01",
+        "Massachusetts"
+      ],
+      [
+        "2026-10-01",
+        "Mississippi"
+      ],
+      [
+        "2026-10-01",
+        "Nebraska"
+      ],
+      [
+        "2026-10-01",
+        "New York"
+      ],
+      [
+        "2026-10-01",
+        "South Dakota"
+      ],
+      [
+        "2026-10-01",
+        "Texas"
+      ],
+      [
+        "2026-10-01",
+        "Wisconsin"
       ]
     ],
     "from": "2026-10-01",
@@ -602,16 +2074,56 @@
   },
   "rosy-boa-legal-guide": {
     "total": 52,
-    "modal": "2026-10-01",
-    "modalCount": 50,
+    "modal": "2026-11-01",
+    "modalCount": 40,
     "others": [
       [
-        "2026-10-02",
-        "Kansas"
+        "2026-10-01",
+        "Alaska"
       ],
       [
-        "2026-11-01",
-        "Maine"
+        "2026-10-01",
+        "Florida"
+      ],
+      [
+        "2026-10-01",
+        "Georgia"
+      ],
+      [
+        "2026-10-01",
+        "Illinois"
+      ],
+      [
+        "2026-10-01",
+        "Indiana"
+      ],
+      [
+        "2026-10-01",
+        "Massachusetts"
+      ],
+      [
+        "2026-10-01",
+        "Mississippi"
+      ],
+      [
+        "2026-10-01",
+        "Nebraska"
+      ],
+      [
+        "2026-10-01",
+        "New York"
+      ],
+      [
+        "2026-10-01",
+        "South Dakota"
+      ],
+      [
+        "2026-10-01",
+        "Texas"
+      ],
+      [
+        "2026-10-01",
+        "Wisconsin"
       ]
     ],
     "from": "2026-10-01",
@@ -619,20 +2131,113 @@
   },
   "flying-squirrel-legal-guide": {
     "total": 52,
-    "modal": "2026-10-01",
-    "modalCount": 52,
-    "others": [],
+    "modal": "2026-11-01",
+    "modalCount": 40,
+    "others": [
+      [
+        "2026-10-01",
+        "Alaska"
+      ],
+      [
+        "2026-10-01",
+        "Florida"
+      ],
+      [
+        "2026-10-01",
+        "Illinois"
+      ],
+      [
+        "2026-10-01",
+        "Indiana"
+      ],
+      [
+        "2026-10-01",
+        "Massachusetts"
+      ],
+      [
+        "2026-10-01",
+        "Mississippi"
+      ],
+      [
+        "2026-10-01",
+        "Montana"
+      ],
+      [
+        "2026-10-01",
+        "Nebraska"
+      ],
+      [
+        "2026-10-01",
+        "New York"
+      ],
+      [
+        "2026-10-01",
+        "South Dakota"
+      ],
+      [
+        "2026-10-01",
+        "Texas"
+      ],
+      [
+        "2026-10-01",
+        "Wisconsin"
+      ]
+    ],
     "from": "2026-10-01",
-    "to": "2026-10-01"
+    "to": "2026-11-01"
   },
   "ackie-monitor-legal-guide": {
     "total": 52,
-    "modal": "2026-10-01",
-    "modalCount": 51,
+    "modal": "2026-11-01",
+    "modalCount": 40,
     "others": [
       [
-        "2026-11-01",
-        "Maine"
+        "2026-10-01",
+        "Alaska"
+      ],
+      [
+        "2026-10-01",
+        "Florida"
+      ],
+      [
+        "2026-10-01",
+        "Georgia"
+      ],
+      [
+        "2026-10-01",
+        "Illinois"
+      ],
+      [
+        "2026-10-01",
+        "Indiana"
+      ],
+      [
+        "2026-10-01",
+        "Massachusetts"
+      ],
+      [
+        "2026-10-01",
+        "Mississippi"
+      ],
+      [
+        "2026-10-01",
+        "Nebraska"
+      ],
+      [
+        "2026-10-01",
+        "New York"
+      ],
+      [
+        "2026-10-01",
+        "South Dakota"
+      ],
+      [
+        "2026-10-01",
+        "Texas"
+      ],
+      [
+        "2026-10-01",
+        "Wisconsin"
       ]
     ],
     "from": "2026-10-01",
@@ -640,12 +2245,52 @@
   },
   "garter-snake-legal-guide": {
     "total": 52,
-    "modal": "2026-10-01",
-    "modalCount": 51,
+    "modal": "2026-11-01",
+    "modalCount": 41,
     "others": [
       [
-        "2026-11-01",
-        "Maine"
+        "2026-10-01",
+        "Alaska"
+      ],
+      [
+        "2026-10-01",
+        "Delaware"
+      ],
+      [
+        "2026-10-01",
+        "Florida"
+      ],
+      [
+        "2026-10-01",
+        "Illinois"
+      ],
+      [
+        "2026-10-01",
+        "Massachusetts"
+      ],
+      [
+        "2026-10-01",
+        "Mississippi"
+      ],
+      [
+        "2026-10-01",
+        "Nebraska"
+      ],
+      [
+        "2026-10-01",
+        "New York"
+      ],
+      [
+        "2026-10-01",
+        "South Dakota"
+      ],
+      [
+        "2026-10-01",
+        "Texas"
+      ],
+      [
+        "2026-10-01",
+        "Wisconsin"
       ]
     ],
     "from": "2026-10-01",
@@ -653,12 +2298,52 @@
   },
   "kingsnake-legal-guide": {
     "total": 52,
-    "modal": "2026-10-01",
-    "modalCount": 51,
+    "modal": "2026-11-01",
+    "modalCount": 41,
     "others": [
       [
-        "2026-11-01",
-        "Maine"
+        "2026-10-01",
+        "Alaska"
+      ],
+      [
+        "2026-10-01",
+        "Florida"
+      ],
+      [
+        "2026-10-01",
+        "Georgia"
+      ],
+      [
+        "2026-10-01",
+        "Illinois"
+      ],
+      [
+        "2026-10-01",
+        "Massachusetts"
+      ],
+      [
+        "2026-10-01",
+        "Mississippi"
+      ],
+      [
+        "2026-10-01",
+        "Nebraska"
+      ],
+      [
+        "2026-10-01",
+        "New York"
+      ],
+      [
+        "2026-10-01",
+        "South Dakota"
+      ],
+      [
+        "2026-10-01",
+        "Texas"
+      ],
+      [
+        "2026-10-01",
+        "Wisconsin"
       ]
     ],
     "from": "2026-10-01",
@@ -666,12 +2351,64 @@
   },
   "cockatoo-legal-guide": {
     "total": 52,
-    "modal": "2026-10-01",
-    "modalCount": 51,
+    "modal": "2026-11-01",
+    "modalCount": 38,
     "others": [
       [
-        "2026-11-01",
-        "Maine"
+        "2026-10-01",
+        "Alabama"
+      ],
+      [
+        "2026-10-01",
+        "Alaska"
+      ],
+      [
+        "2026-10-01",
+        "Florida"
+      ],
+      [
+        "2026-10-01",
+        "Georgia"
+      ],
+      [
+        "2026-10-01",
+        "Illinois"
+      ],
+      [
+        "2026-10-01",
+        "Indiana"
+      ],
+      [
+        "2026-10-01",
+        "Massachusetts"
+      ],
+      [
+        "2026-10-01",
+        "Mississippi"
+      ],
+      [
+        "2026-10-01",
+        "Nebraska"
+      ],
+      [
+        "2026-10-01",
+        "New York"
+      ],
+      [
+        "2026-10-01",
+        "Pennsylvania"
+      ],
+      [
+        "2026-10-01",
+        "South Dakota"
+      ],
+      [
+        "2026-10-01",
+        "Texas"
+      ],
+      [
+        "2026-10-01",
+        "Wisconsin"
       ]
     ],
     "from": "2026-10-01",
@@ -679,16 +2416,52 @@
   },
   "red-footed-tortoise-legal-guide": {
     "total": 52,
-    "modal": "2026-10-01",
-    "modalCount": 50,
+    "modal": "2026-11-01",
+    "modalCount": 41,
     "others": [
+      [
+        "2026-10-01",
+        "Alaska"
+      ],
+      [
+        "2026-10-01",
+        "Florida"
+      ],
+      [
+        "2026-10-01",
+        "Georgia"
+      ],
+      [
+        "2026-10-01",
+        "Illinois"
+      ],
+      [
+        "2026-10-01",
+        "Mississippi"
+      ],
+      [
+        "2026-10-01",
+        "Nebraska"
+      ],
+      [
+        "2026-10-01",
+        "New York"
+      ],
+      [
+        "2026-10-01",
+        "South Dakota"
+      ],
+      [
+        "2026-10-01",
+        "Texas"
+      ],
+      [
+        "2026-10-01",
+        "Wisconsin"
+      ],
       [
         "2026-10-02",
         "Massachusetts"
-      ],
-      [
-        "2026-11-01",
-        "Maine"
       ]
     ],
     "from": "2026-10-01",
@@ -696,12 +2469,52 @@
   },
   "bearded-dragon-legal-guide": {
     "total": 52,
-    "modal": "2026-10-01",
-    "modalCount": 51,
+    "modal": "2026-11-01",
+    "modalCount": 41,
     "others": [
       [
-        "2026-11-01",
-        "Maine"
+        "2026-10-01",
+        "Alaska"
+      ],
+      [
+        "2026-10-01",
+        "Florida"
+      ],
+      [
+        "2026-10-01",
+        "Georgia"
+      ],
+      [
+        "2026-10-01",
+        "Illinois"
+      ],
+      [
+        "2026-10-01",
+        "Massachusetts"
+      ],
+      [
+        "2026-10-01",
+        "Mississippi"
+      ],
+      [
+        "2026-10-01",
+        "Nebraska"
+      ],
+      [
+        "2026-10-01",
+        "New York"
+      ],
+      [
+        "2026-10-01",
+        "South Dakota"
+      ],
+      [
+        "2026-10-01",
+        "Texas"
+      ],
+      [
+        "2026-10-01",
+        "Wisconsin"
       ]
     ],
     "from": "2026-10-01",
@@ -709,12 +2522,52 @@
   },
   "leopard-gecko-legal-guide": {
     "total": 52,
-    "modal": "2026-10-01",
-    "modalCount": 51,
+    "modal": "2026-11-01",
+    "modalCount": 41,
     "others": [
       [
-        "2026-11-01",
-        "Maine"
+        "2026-10-01",
+        "Alaska"
+      ],
+      [
+        "2026-10-01",
+        "Florida"
+      ],
+      [
+        "2026-10-01",
+        "Georgia"
+      ],
+      [
+        "2026-10-01",
+        "Illinois"
+      ],
+      [
+        "2026-10-01",
+        "Massachusetts"
+      ],
+      [
+        "2026-10-01",
+        "Mississippi"
+      ],
+      [
+        "2026-10-01",
+        "Nebraska"
+      ],
+      [
+        "2026-10-01",
+        "New York"
+      ],
+      [
+        "2026-10-01",
+        "South Dakota"
+      ],
+      [
+        "2026-10-01",
+        "Texas"
+      ],
+      [
+        "2026-10-01",
+        "Wisconsin"
       ]
     ],
     "from": "2026-10-01",
@@ -722,12 +2575,52 @@
   },
   "crested-gecko-legal-guide": {
     "total": 52,
-    "modal": "2026-10-01",
-    "modalCount": 51,
+    "modal": "2026-11-01",
+    "modalCount": 41,
     "others": [
       [
-        "2026-11-01",
-        "Maine"
+        "2026-10-01",
+        "Alaska"
+      ],
+      [
+        "2026-10-01",
+        "Florida"
+      ],
+      [
+        "2026-10-01",
+        "Georgia"
+      ],
+      [
+        "2026-10-01",
+        "Illinois"
+      ],
+      [
+        "2026-10-01",
+        "Massachusetts"
+      ],
+      [
+        "2026-10-01",
+        "Mississippi"
+      ],
+      [
+        "2026-10-01",
+        "Nebraska"
+      ],
+      [
+        "2026-10-01",
+        "New York"
+      ],
+      [
+        "2026-10-01",
+        "South Dakota"
+      ],
+      [
+        "2026-10-01",
+        "Texas"
+      ],
+      [
+        "2026-10-01",
+        "Wisconsin"
       ]
     ],
     "from": "2026-10-01",
@@ -735,12 +2628,52 @@
   },
   "blue-tongue-skink-legal-guide": {
     "total": 52,
-    "modal": "2026-10-01",
-    "modalCount": 51,
+    "modal": "2026-11-01",
+    "modalCount": 41,
     "others": [
       [
-        "2026-11-01",
-        "Maine"
+        "2026-10-01",
+        "Alaska"
+      ],
+      [
+        "2026-10-01",
+        "Florida"
+      ],
+      [
+        "2026-10-01",
+        "Georgia"
+      ],
+      [
+        "2026-10-01",
+        "Illinois"
+      ],
+      [
+        "2026-10-01",
+        "Massachusetts"
+      ],
+      [
+        "2026-10-01",
+        "Mississippi"
+      ],
+      [
+        "2026-10-01",
+        "Nebraska"
+      ],
+      [
+        "2026-10-01",
+        "New York"
+      ],
+      [
+        "2026-10-01",
+        "South Dakota"
+      ],
+      [
+        "2026-10-01",
+        "Texas"
+      ],
+      [
+        "2026-10-01",
+        "Wisconsin"
       ]
     ],
     "from": "2026-10-01",
@@ -748,12 +2681,52 @@
   },
   "jacksons-chameleon-legal-guide": {
     "total": 52,
-    "modal": "2026-10-01",
-    "modalCount": 51,
+    "modal": "2026-11-01",
+    "modalCount": 41,
     "others": [
       [
-        "2026-11-01",
-        "Maine"
+        "2026-10-01",
+        "Alaska"
+      ],
+      [
+        "2026-10-01",
+        "Florida"
+      ],
+      [
+        "2026-10-01",
+        "Georgia"
+      ],
+      [
+        "2026-10-01",
+        "Illinois"
+      ],
+      [
+        "2026-10-01",
+        "Massachusetts"
+      ],
+      [
+        "2026-10-01",
+        "Mississippi"
+      ],
+      [
+        "2026-10-01",
+        "Nebraska"
+      ],
+      [
+        "2026-10-01",
+        "New York"
+      ],
+      [
+        "2026-10-01",
+        "South Dakota"
+      ],
+      [
+        "2026-10-01",
+        "Texas"
+      ],
+      [
+        "2026-10-01",
+        "Wisconsin"
       ]
     ],
     "from": "2026-10-01",
@@ -761,12 +2734,48 @@
   },
   "green-anole-legal-guide": {
     "total": 52,
-    "modal": "2026-10-01",
-    "modalCount": 51,
+    "modal": "2026-11-01",
+    "modalCount": 42,
     "others": [
       [
-        "2026-11-01",
-        "Maine"
+        "2026-10-01",
+        "Alaska"
+      ],
+      [
+        "2026-10-01",
+        "Florida"
+      ],
+      [
+        "2026-10-01",
+        "Illinois"
+      ],
+      [
+        "2026-10-01",
+        "Massachusetts"
+      ],
+      [
+        "2026-10-01",
+        "Mississippi"
+      ],
+      [
+        "2026-10-01",
+        "Nebraska"
+      ],
+      [
+        "2026-10-01",
+        "New York"
+      ],
+      [
+        "2026-10-01",
+        "South Dakota"
+      ],
+      [
+        "2026-10-01",
+        "Texas"
+      ],
+      [
+        "2026-10-01",
+        "Wisconsin"
       ]
     ],
     "from": "2026-10-01",
@@ -774,12 +2783,52 @@
   },
   "rabbit-legal-guide": {
     "total": 52,
-    "modal": "2026-10-01",
-    "modalCount": 51,
+    "modal": "2026-11-01",
+    "modalCount": 41,
     "others": [
       [
-        "2026-11-01",
-        "Maine"
+        "2026-10-01",
+        "Alaska"
+      ],
+      [
+        "2026-10-01",
+        "Florida"
+      ],
+      [
+        "2026-10-01",
+        "Georgia"
+      ],
+      [
+        "2026-10-01",
+        "Illinois"
+      ],
+      [
+        "2026-10-01",
+        "Indiana"
+      ],
+      [
+        "2026-10-01",
+        "Massachusetts"
+      ],
+      [
+        "2026-10-01",
+        "Mississippi"
+      ],
+      [
+        "2026-10-01",
+        "New York"
+      ],
+      [
+        "2026-10-01",
+        "South Dakota"
+      ],
+      [
+        "2026-10-01",
+        "Texas"
+      ],
+      [
+        "2026-10-01",
+        "Wisconsin"
       ]
     ],
     "from": "2026-10-01",
@@ -787,12 +2836,56 @@
   },
   "madagascar-hissing-cockroach-legal-guide": {
     "total": 52,
-    "modal": "2026-10-01",
-    "modalCount": 51,
+    "modal": "2026-11-01",
+    "modalCount": 40,
     "others": [
       [
-        "2026-11-01",
-        "Maine"
+        "2026-10-01",
+        "Alaska"
+      ],
+      [
+        "2026-10-01",
+        "Florida"
+      ],
+      [
+        "2026-10-01",
+        "Georgia"
+      ],
+      [
+        "2026-10-01",
+        "Illinois"
+      ],
+      [
+        "2026-10-01",
+        "Massachusetts"
+      ],
+      [
+        "2026-10-01",
+        "Mississippi"
+      ],
+      [
+        "2026-10-01",
+        "Pennsylvania"
+      ],
+      [
+        "2026-10-01",
+        "South Dakota"
+      ],
+      [
+        "2026-10-01",
+        "Tennessee"
+      ],
+      [
+        "2026-10-01",
+        "Texas"
+      ],
+      [
+        "2026-10-01",
+        "Utah"
+      ],
+      [
+        "2026-10-01",
+        "Wisconsin"
       ]
     ],
     "from": "2026-10-01",
@@ -800,81 +2893,81 @@
   },
   "savannah-cat-legal-guide": {
     "total": 52,
-    "modal": "2026-10-01",
-    "modalCount": 39,
+    "modal": "2026-11-01",
+    "modalCount": 43,
     "others": [
       [
-        "2026-10-08",
-        "Arizona"
+        "2026-10-01",
+        "Alaska"
       ],
       [
-        "2026-10-08",
-        "Delaware"
+        "2026-10-01",
+        "Illinois"
       ],
       [
-        "2026-10-08",
-        "Florida"
+        "2026-10-01",
+        "Indiana"
       ],
       [
-        "2026-10-08",
-        "Georgia"
+        "2026-10-01",
+        "Montana"
       ],
       [
-        "2026-10-08",
-        "Kansas"
+        "2026-10-01",
+        "Nebraska"
       ],
       [
-        "2026-10-08",
-        "Maine"
+        "2026-10-01",
+        "New York"
+      ],
+      [
+        "2026-10-01",
+        "South Dakota"
+      ],
+      [
+        "2026-10-01",
+        "Texas"
       ],
       [
         "2026-10-08",
         "Mississippi"
-      ],
-      [
-        "2026-10-08",
-        "Missouri"
-      ],
-      [
-        "2026-10-08",
-        "North Carolina"
-      ],
-      [
-        "2026-10-08",
-        "South Carolina"
-      ],
-      [
-        "2026-10-08",
-        "Tennessee"
-      ],
-      [
-        "2026-10-08",
-        "Washington"
-      ],
-      [
-        "2026-10-08",
-        "Wyoming"
       ]
     ],
     "from": "2026-10-01",
-    "to": "2026-10-08"
+    "to": "2026-11-01"
   },
   "raccoon-legal-guide": {
     "total": 52,
-    "modal": "2026-10-01",
-    "modalCount": 34,
+    "modal": "2026-11-01",
+    "modalCount": 42,
     "others": [
       [
-        "2026-10-08",
-        "Delaware"
+        "2026-10-01",
+        "Alaska"
       ],
       [
-        "2026-10-08",
-        "Georgia"
+        "2026-10-01",
+        "Florida"
       ],
       [
-        "2026-10-08",
-        "Idaho"
+        "2026-10-01",
+        "Illinois"
+      ],
+      [
+        "2026-10-01",
+        "Massachusetts"
+      ],
+      [
+        "2026-10-01",
+        "Nebraska"
+      ],
+      [
+        "2026-10-01",
+        "New York"
+      ],
+      [
+        "2026-10-01",
+        "South Dakota"
       ],
       [
         "2026-10-08",
@@ -882,59 +2975,11 @@
       ],
       [
         "2026-10-08",
-        "Kansas"
-      ],
-      [
-        "2026-10-08",
-        "Louisiana"
-      ],
-      [
-        "2026-10-08",
-        "Mississippi"
-      ],
-      [
-        "2026-10-08",
-        "Missouri"
-      ],
-      [
-        "2026-10-08",
         "Montana"
       ],
       [
         "2026-10-08",
-        "New Jersey"
-      ],
-      [
-        "2026-10-08",
-        "Oregon"
-      ],
-      [
-        "2026-10-08",
-        "Tennessee"
-      ],
-      [
-        "2026-10-08",
         "Texas"
-      ],
-      [
-        "2026-10-08",
-        "Utah"
-      ],
-      [
-        "2026-10-08",
-        "Washington"
-      ],
-      [
-        "2026-10-08",
-        "Wisconsin"
-      ],
-      [
-        "2026-10-08",
-        "Wyoming"
-      ],
-      [
-        "2026-11-01",
-        "Ohio"
       ]
     ],
     "from": "2026-10-01",
@@ -942,24 +2987,36 @@
   },
   "red-fox-legal-guide": {
     "total": 52,
-    "modal": "2026-10-01",
-    "modalCount": 34,
+    "modal": "2026-11-01",
+    "modalCount": 41,
     "others": [
       [
-        "2026-10-08",
-        "Arkansas"
+        "2026-10-01",
+        "Alaska"
       ],
       [
-        "2026-10-08",
-        "Delaware"
+        "2026-10-01",
+        "Florida"
       ],
       [
-        "2026-10-08",
-        "Georgia"
+        "2026-10-01",
+        "Illinois"
       ],
       [
-        "2026-10-08",
-        "Idaho"
+        "2026-10-01",
+        "Massachusetts"
+      ],
+      [
+        "2026-10-01",
+        "Nebraska"
+      ],
+      [
+        "2026-10-01",
+        "New York"
+      ],
+      [
+        "2026-10-01",
+        "South Dakota"
       ],
       [
         "2026-10-08",
@@ -967,23 +3024,7 @@
       ],
       [
         "2026-10-08",
-        "Kansas"
-      ],
-      [
-        "2026-10-08",
-        "Louisiana"
-      ],
-      [
-        "2026-10-08",
-        "Minnesota"
-      ],
-      [
-        "2026-10-08",
         "Mississippi"
-      ],
-      [
-        "2026-10-08",
-        "Missouri"
       ],
       [
         "2026-10-08",
@@ -991,31 +3032,7 @@
       ],
       [
         "2026-10-08",
-        "New Jersey"
-      ],
-      [
-        "2026-10-08",
-        "Tennessee"
-      ],
-      [
-        "2026-10-08",
         "Texas"
-      ],
-      [
-        "2026-10-08",
-        "Washington"
-      ],
-      [
-        "2026-10-08",
-        "Wisconsin"
-      ],
-      [
-        "2026-10-08",
-        "Wyoming"
-      ],
-      [
-        "2026-11-01",
-        "Ohio"
       ]
     ],
     "from": "2026-10-01",
@@ -1023,24 +3040,36 @@
   },
   "skunk-legal-guide": {
     "total": 52,
-    "modal": "2026-10-01",
-    "modalCount": 34,
+    "modal": "2026-11-01",
+    "modalCount": 40,
     "others": [
       [
-        "2026-10-08",
-        "Arkansas"
+        "2026-10-01",
+        "Alaska"
       ],
       [
-        "2026-10-08",
-        "Delaware"
+        "2026-10-01",
+        "Florida"
       ],
       [
-        "2026-10-08",
-        "Georgia"
+        "2026-10-01",
+        "Illinois"
       ],
       [
-        "2026-10-08",
-        "Idaho"
+        "2026-10-01",
+        "Massachusetts"
+      ],
+      [
+        "2026-10-01",
+        "Nebraska"
+      ],
+      [
+        "2026-10-01",
+        "New York"
+      ],
+      [
+        "2026-10-01",
+        "South Dakota"
       ],
       [
         "2026-10-08",
@@ -1048,31 +3077,11 @@
       ],
       [
         "2026-10-08",
-        "Kansas"
-      ],
-      [
-        "2026-10-08",
-        "Louisiana"
-      ],
-      [
-        "2026-10-08",
         "Mississippi"
       ],
       [
         "2026-10-08",
-        "Missouri"
-      ],
-      [
-        "2026-10-08",
         "Montana"
-      ],
-      [
-        "2026-10-08",
-        "New Jersey"
-      ],
-      [
-        "2026-10-08",
-        "Oregon"
       ],
       [
         "2026-10-08",
@@ -1081,22 +3090,6 @@
       [
         "2026-10-08",
         "Texas"
-      ],
-      [
-        "2026-10-08",
-        "Washington"
-      ],
-      [
-        "2026-10-08",
-        "Wisconsin"
-      ],
-      [
-        "2026-10-08",
-        "Wyoming"
-      ],
-      [
-        "2026-11-01",
-        "Ohio"
       ]
     ],
     "from": "2026-10-01",
@@ -1104,12 +3097,44 @@
   },
   "kinkajou-legal-guide": {
     "total": 52,
-    "modal": "2026-10-01",
-    "modalCount": 44,
+    "modal": "2026-11-01",
+    "modalCount": 41,
     "others": [
       [
-        "2026-10-08",
-        "Arkansas"
+        "2026-10-01",
+        "Alaska"
+      ],
+      [
+        "2026-10-01",
+        "Florida"
+      ],
+      [
+        "2026-10-01",
+        "Georgia"
+      ],
+      [
+        "2026-10-01",
+        "Illinois"
+      ],
+      [
+        "2026-10-01",
+        "Massachusetts"
+      ],
+      [
+        "2026-10-01",
+        "Nebraska"
+      ],
+      [
+        "2026-10-01",
+        "New York"
+      ],
+      [
+        "2026-10-01",
+        "South Dakota"
+      ],
+      [
+        "2026-10-01",
+        "Texas"
       ],
       [
         "2026-10-08",
@@ -1117,27 +3142,7 @@
       ],
       [
         "2026-10-08",
-        "Louisiana"
-      ],
-      [
-        "2026-10-08",
         "Mississippi"
-      ],
-      [
-        "2026-10-08",
-        "Montana"
-      ],
-      [
-        "2026-11-01",
-        "Ohio"
-      ],
-      [
-        "2026-11-01",
-        "Tennessee"
-      ],
-      [
-        "2026-11-01",
-        "West Virginia"
       ]
     ],
     "from": "2026-10-01",
@@ -1145,12 +3150,40 @@
   },
   "coati-legal-guide": {
     "total": 52,
-    "modal": "2026-10-01",
-    "modalCount": 43,
+    "modal": "2026-11-01",
+    "modalCount": 41,
     "others": [
       [
-        "2026-10-08",
-        "Arkansas"
+        "2026-10-01",
+        "Alaska"
+      ],
+      [
+        "2026-10-01",
+        "Florida"
+      ],
+      [
+        "2026-10-01",
+        "Georgia"
+      ],
+      [
+        "2026-10-01",
+        "Illinois"
+      ],
+      [
+        "2026-10-01",
+        "Massachusetts"
+      ],
+      [
+        "2026-10-01",
+        "Nebraska"
+      ],
+      [
+        "2026-10-01",
+        "New York"
+      ],
+      [
+        "2026-10-01",
+        "South Dakota"
       ],
       [
         "2026-10-08",
@@ -1158,31 +3191,11 @@
       ],
       [
         "2026-10-08",
-        "Louisiana"
-      ],
-      [
-        "2026-10-08",
         "Mississippi"
       ],
       [
         "2026-10-08",
-        "Montana"
-      ],
-      [
-        "2026-10-08",
         "Texas"
-      ],
-      [
-        "2026-11-01",
-        "Ohio"
-      ],
-      [
-        "2026-11-01",
-        "Tennessee"
-      ],
-      [
-        "2026-11-01",
-        "West Virginia"
       ]
     ],
     "from": "2026-10-01",
@@ -1190,12 +3203,40 @@
   },
   "bobcat-legal-guide": {
     "total": 52,
-    "modal": "2026-10-01",
-    "modalCount": 36,
+    "modal": "2026-11-01",
+    "modalCount": 42,
     "others": [
       [
-        "2026-10-08",
-        "Arkansas"
+        "2026-10-01",
+        "Alaska"
+      ],
+      [
+        "2026-10-01",
+        "Florida"
+      ],
+      [
+        "2026-10-01",
+        "Illinois"
+      ],
+      [
+        "2026-10-01",
+        "Massachusetts"
+      ],
+      [
+        "2026-10-01",
+        "Nebraska"
+      ],
+      [
+        "2026-10-01",
+        "New York"
+      ],
+      [
+        "2026-10-01",
+        "South Dakota"
+      ],
+      [
+        "2026-10-01",
+        "Texas"
       ],
       [
         "2026-10-08",
@@ -1204,58 +3245,6 @@
       [
         "2026-10-08",
         "Indiana"
-      ],
-      [
-        "2026-10-08",
-        "Kansas"
-      ],
-      [
-        "2026-10-08",
-        "Louisiana"
-      ],
-      [
-        "2026-10-08",
-        "Mississippi"
-      ],
-      [
-        "2026-10-08",
-        "Missouri"
-      ],
-      [
-        "2026-10-08",
-        "Montana"
-      ],
-      [
-        "2026-10-08",
-        "Oregon"
-      ],
-      [
-        "2026-10-08",
-        "Tennessee"
-      ],
-      [
-        "2026-10-08",
-        "West Virginia"
-      ],
-      [
-        "2026-10-08",
-        "Wisconsin"
-      ],
-      [
-        "2026-10-08",
-        "Wyoming"
-      ],
-      [
-        "2026-11-01",
-        "Delaware"
-      ],
-      [
-        "2026-11-01",
-        "Ohio"
-      ],
-      [
-        "2026-11-01",
-        "Washington"
       ]
     ],
     "from": "2026-10-01",
@@ -1263,16 +3252,40 @@
   },
   "arctic-fox-legal-guide": {
     "total": 52,
-    "modal": "2026-10-01",
+    "modal": "2026-11-01",
     "modalCount": 40,
     "others": [
       [
-        "2026-10-08",
-        "Arkansas"
+        "2026-10-01",
+        "Alaska"
       ],
       [
-        "2026-10-08",
-        "Idaho"
+        "2026-10-01",
+        "Florida"
+      ],
+      [
+        "2026-10-01",
+        "Georgia"
+      ],
+      [
+        "2026-10-01",
+        "Illinois"
+      ],
+      [
+        "2026-10-01",
+        "Massachusetts"
+      ],
+      [
+        "2026-10-01",
+        "Nebraska"
+      ],
+      [
+        "2026-10-01",
+        "New York"
+      ],
+      [
+        "2026-10-01",
+        "South Dakota"
       ],
       [
         "2026-10-08",
@@ -1280,19 +3293,7 @@
       ],
       [
         "2026-10-08",
-        "Louisiana"
-      ],
-      [
-        "2026-10-08",
-        "Minnesota"
-      ],
-      [
-        "2026-10-08",
         "Mississippi"
-      ],
-      [
-        "2026-10-08",
-        "Missouri"
       ],
       [
         "2026-10-08",
@@ -1301,18 +3302,6 @@
       [
         "2026-10-08",
         "Texas"
-      ],
-      [
-        "2026-10-08",
-        "Washington"
-      ],
-      [
-        "2026-10-08",
-        "Wyoming"
-      ],
-      [
-        "2026-11-01",
-        "Tennessee"
       ]
     ],
     "from": "2026-10-01",
@@ -1320,20 +3309,48 @@
   },
   "canada-lynx-legal-guide": {
     "total": 52,
-    "modal": "2026-10-01",
-    "modalCount": 41,
+    "modal": "2026-11-01",
+    "modalCount": 40,
     "others": [
       [
-        "2026-10-08",
-        "Arkansas"
+        "2026-10-01",
+        "Alaska"
       ],
       [
-        "2026-10-08",
-        "Louisiana"
+        "2026-10-01",
+        "Florida"
       ],
       [
-        "2026-10-08",
-        "Michigan"
+        "2026-10-01",
+        "Georgia"
+      ],
+      [
+        "2026-10-01",
+        "Illinois"
+      ],
+      [
+        "2026-10-01",
+        "Indiana"
+      ],
+      [
+        "2026-10-01",
+        "Massachusetts"
+      ],
+      [
+        "2026-10-01",
+        "Nebraska"
+      ],
+      [
+        "2026-10-01",
+        "New York"
+      ],
+      [
+        "2026-10-01",
+        "South Dakota"
+      ],
+      [
+        "2026-10-01",
+        "Texas"
       ],
       [
         "2026-10-08",
@@ -1341,31 +3358,7 @@
       ],
       [
         "2026-10-08",
-        "Montana"
-      ],
-      [
-        "2026-10-08",
-        "Ohio"
-      ],
-      [
-        "2026-10-08",
-        "Washington"
-      ],
-      [
-        "2026-10-08",
         "Wisconsin"
-      ],
-      [
-        "2026-10-08",
-        "Wyoming"
-      ],
-      [
-        "2026-11-01",
-        "Tennessee"
-      ],
-      [
-        "2026-11-01",
-        "West Virginia"
       ]
     ],
     "from": "2026-10-01",
@@ -1373,12 +3366,40 @@
   },
   "asian-small-clawed-otter-legal-guide": {
     "total": 52,
-    "modal": "2026-10-01",
-    "modalCount": 43,
+    "modal": "2026-11-01",
+    "modalCount": 42,
     "others": [
       [
-        "2026-10-08",
-        "Arkansas"
+        "2026-10-01",
+        "Alaska"
+      ],
+      [
+        "2026-10-01",
+        "Florida"
+      ],
+      [
+        "2026-10-01",
+        "Georgia"
+      ],
+      [
+        "2026-10-01",
+        "Illinois"
+      ],
+      [
+        "2026-10-01",
+        "Massachusetts"
+      ],
+      [
+        "2026-10-01",
+        "Nebraska"
+      ],
+      [
+        "2026-10-01",
+        "New York"
+      ],
+      [
+        "2026-10-01",
+        "South Dakota"
       ],
       [
         "2026-10-08",
@@ -1386,31 +3407,7 @@
       ],
       [
         "2026-10-08",
-        "Louisiana"
-      ],
-      [
-        "2026-10-08",
-        "Mississippi"
-      ],
-      [
-        "2026-10-08",
-        "Montana"
-      ],
-      [
-        "2026-10-08",
         "Texas"
-      ],
-      [
-        "2026-11-01",
-        "Kentucky"
-      ],
-      [
-        "2026-11-01",
-        "Tennessee"
-      ],
-      [
-        "2026-11-01",
-        "West Virginia"
       ]
     ],
     "from": "2026-10-01",
@@ -1418,48 +3415,44 @@
   },
   "black-bear-legal-guide": {
     "total": 52,
-    "modal": "2026-10-01",
-    "modalCount": 35,
+    "modal": "2026-11-01",
+    "modalCount": 41,
     "others": [
       [
-        "2026-10-08",
-        "Arkansas"
+        "2026-10-01",
+        "Alaska"
+      ],
+      [
+        "2026-10-01",
+        "Florida"
+      ],
+      [
+        "2026-10-01",
+        "Illinois"
+      ],
+      [
+        "2026-10-01",
+        "Indiana"
+      ],
+      [
+        "2026-10-01",
+        "Massachusetts"
+      ],
+      [
+        "2026-10-01",
+        "Nebraska"
+      ],
+      [
+        "2026-10-01",
+        "New York"
+      ],
+      [
+        "2026-10-01",
+        "South Dakota"
       ],
       [
         "2026-10-08",
         "Georgia"
-      ],
-      [
-        "2026-10-08",
-        "Louisiana"
-      ],
-      [
-        "2026-10-08",
-        "Michigan"
-      ],
-      [
-        "2026-10-08",
-        "Mississippi"
-      ],
-      [
-        "2026-10-08",
-        "Missouri"
-      ],
-      [
-        "2026-10-08",
-        "Montana"
-      ],
-      [
-        "2026-10-08",
-        "New Jersey"
-      ],
-      [
-        "2026-10-08",
-        "Ohio"
-      ],
-      [
-        "2026-10-08",
-        "Oregon"
       ],
       [
         "2026-10-08",
@@ -1468,26 +3461,6 @@
       [
         "2026-10-08",
         "Wisconsin"
-      ],
-      [
-        "2026-10-08",
-        "Wyoming"
-      ],
-      [
-        "2026-11-01",
-        "Delaware"
-      ],
-      [
-        "2026-11-01",
-        "Kansas"
-      ],
-      [
-        "2026-11-01",
-        "Washington"
-      ],
-      [
-        "2026-11-01",
-        "West Virginia"
       ]
     ],
     "from": "2026-10-01",
@@ -1495,64 +3468,40 @@
   },
   "wolfdog-legal-guide": {
     "total": 52,
-    "modal": "2026-10-01",
-    "modalCount": 35,
+    "modal": "2026-11-01",
+    "modalCount": 42,
     "others": [
       [
-        "2026-10-08",
-        "Arizona"
+        "2026-10-01",
+        "Alaska"
       ],
       [
-        "2026-10-08",
-        "Arkansas"
+        "2026-10-01",
+        "Illinois"
       ],
       [
-        "2026-10-08",
-        "Delaware"
+        "2026-10-01",
+        "Indiana"
       ],
       [
-        "2026-10-08",
-        "Florida"
+        "2026-10-01",
+        "Nebraska"
       ],
       [
-        "2026-10-08",
-        "Georgia"
+        "2026-10-01",
+        "New York"
       ],
       [
-        "2026-10-08",
-        "Kansas"
+        "2026-10-01",
+        "South Dakota"
       ],
       [
-        "2026-10-08",
-        "Louisiana"
-      ],
-      [
-        "2026-10-08",
-        "Maine"
-      ],
-      [
-        "2026-10-08",
-        "Michigan"
+        "2026-10-01",
+        "Texas"
       ],
       [
         "2026-10-08",
         "Mississippi"
-      ],
-      [
-        "2026-10-08",
-        "Missouri"
-      ],
-      [
-        "2026-10-08",
-        "Montana"
-      ],
-      [
-        "2026-10-08",
-        "Oregon"
-      ],
-      [
-        "2026-10-08",
-        "Tennessee"
       ],
       [
         "2026-10-08",
@@ -1560,68 +3509,68 @@
       ],
       [
         "2026-10-08",
-        "Washington"
-      ],
-      [
-        "2026-10-08",
         "Wisconsin"
       ]
     ],
     "from": "2026-10-01",
-    "to": "2026-10-08"
+    "to": "2026-11-01"
   },
   "capuchin-legal-guide": {
     "total": 52,
-    "modal": "2026-10-01",
-    "modalCount": 40,
+    "modal": "2026-11-01",
+    "modalCount": 39,
     "others": [
       [
-        "2026-10-08",
-        "Arizona"
+        "2026-10-01",
+        "Alaska"
       ],
       [
-        "2026-10-08",
-        "Arkansas"
+        "2026-10-01",
+        "Florida"
       ],
       [
-        "2026-10-08",
-        "Delaware"
+        "2026-10-01",
+        "Georgia"
       ],
       [
-        "2026-10-08",
-        "Idaho"
+        "2026-10-01",
+        "Illinois"
       ],
       [
-        "2026-10-08",
-        "Iowa"
+        "2026-10-01",
+        "Indiana"
       ],
       [
-        "2026-10-08",
-        "Kentucky"
+        "2026-10-01",
+        "Massachusetts"
       ],
       [
-        "2026-10-08",
-        "Missouri"
+        "2026-10-01",
+        "Mississippi"
       ],
       [
-        "2026-10-08",
-        "Ohio"
+        "2026-10-01",
+        "Montana"
       ],
       [
-        "2026-10-08",
-        "South Carolina"
+        "2026-10-01",
+        "Nebraska"
       ],
       [
-        "2026-10-08",
-        "Virginia"
+        "2026-10-01",
+        "New York"
       ],
       [
-        "2026-10-08",
-        "Washington"
+        "2026-10-01",
+        "North Carolina"
       ],
       [
-        "2026-11-01",
-        "West Virginia"
+        "2026-10-01",
+        "South Dakota"
+      ],
+      [
+        "2026-10-01",
+        "Texas"
       ]
     ],
     "from": "2026-10-01",
@@ -1629,56 +3578,60 @@
   },
   "marmoset-legal-guide": {
     "total": 52,
-    "modal": "2026-10-01",
-    "modalCount": 40,
+    "modal": "2026-11-01",
+    "modalCount": 39,
     "others": [
       [
-        "2026-10-08",
-        "Arizona"
+        "2026-10-01",
+        "Alaska"
       ],
       [
-        "2026-10-08",
-        "Arkansas"
+        "2026-10-01",
+        "Florida"
       ],
       [
-        "2026-10-08",
-        "Delaware"
+        "2026-10-01",
+        "Georgia"
       ],
       [
-        "2026-10-08",
-        "Idaho"
+        "2026-10-01",
+        "Illinois"
       ],
       [
-        "2026-10-08",
-        "Iowa"
+        "2026-10-01",
+        "Indiana"
       ],
       [
-        "2026-10-08",
-        "Kentucky"
+        "2026-10-01",
+        "Massachusetts"
       ],
       [
-        "2026-10-08",
-        "Missouri"
+        "2026-10-01",
+        "Mississippi"
       ],
       [
-        "2026-10-08",
-        "Ohio"
+        "2026-10-01",
+        "Montana"
       ],
       [
-        "2026-10-08",
-        "South Carolina"
+        "2026-10-01",
+        "Nebraska"
       ],
       [
-        "2026-10-08",
-        "Virginia"
+        "2026-10-01",
+        "New York"
       ],
       [
-        "2026-10-08",
-        "Washington"
+        "2026-10-01",
+        "North Carolina"
       ],
       [
-        "2026-11-01",
-        "West Virginia"
+        "2026-10-01",
+        "South Dakota"
+      ],
+      [
+        "2026-10-01",
+        "Texas"
       ]
     ],
     "from": "2026-10-01",
@@ -1686,60 +3639,52 @@
   },
   "ring-tailed-lemur-legal-guide": {
     "total": 52,
-    "modal": "2026-10-01",
-    "modalCount": 39,
+    "modal": "2026-11-01",
+    "modalCount": 41,
     "others": [
       [
-        "2026-10-08",
-        "Arizona"
+        "2026-10-01",
+        "Alaska"
       ],
       [
-        "2026-10-08",
-        "Arkansas"
+        "2026-10-01",
+        "Florida"
       ],
       [
-        "2026-10-08",
-        "Delaware"
+        "2026-10-01",
+        "Illinois"
       ],
       [
-        "2026-10-08",
-        "Georgia"
+        "2026-10-01",
+        "Indiana"
       ],
       [
-        "2026-10-08",
-        "Idaho"
+        "2026-10-01",
+        "Massachusetts"
       ],
       [
-        "2026-10-08",
-        "Iowa"
+        "2026-10-01",
+        "Mississippi"
       ],
       [
-        "2026-10-08",
-        "Kentucky"
+        "2026-10-01",
+        "Nebraska"
       ],
       [
-        "2026-10-08",
-        "Missouri"
+        "2026-10-01",
+        "New York"
       ],
       [
-        "2026-10-08",
-        "Ohio"
+        "2026-10-01",
+        "North Carolina"
       ],
       [
-        "2026-10-08",
-        "Virginia"
+        "2026-10-01",
+        "South Dakota"
       ],
       [
-        "2026-10-08",
-        "Washington"
-      ],
-      [
-        "2026-11-01",
-        "South Carolina"
-      ],
-      [
-        "2026-11-01",
-        "West Virginia"
+        "2026-10-01",
+        "Texas"
       ]
     ],
     "from": "2026-10-01",
@@ -1747,56 +3692,60 @@
   },
   "squirrel-monkey-legal-guide": {
     "total": 52,
-    "modal": "2026-10-01",
-    "modalCount": 40,
+    "modal": "2026-11-01",
+    "modalCount": 39,
     "others": [
       [
-        "2026-10-08",
-        "Arizona"
+        "2026-10-01",
+        "Alaska"
       ],
       [
-        "2026-10-08",
-        "Arkansas"
+        "2026-10-01",
+        "Florida"
       ],
       [
-        "2026-10-08",
-        "Delaware"
+        "2026-10-01",
+        "Georgia"
       ],
       [
-        "2026-10-08",
-        "Idaho"
+        "2026-10-01",
+        "Illinois"
       ],
       [
-        "2026-10-08",
-        "Iowa"
+        "2026-10-01",
+        "Indiana"
       ],
       [
-        "2026-10-08",
-        "Kentucky"
+        "2026-10-01",
+        "Massachusetts"
       ],
       [
-        "2026-10-08",
-        "Missouri"
+        "2026-10-01",
+        "Mississippi"
       ],
       [
-        "2026-10-08",
-        "Ohio"
+        "2026-10-01",
+        "Montana"
       ],
       [
-        "2026-10-08",
-        "South Carolina"
+        "2026-10-01",
+        "Nebraska"
       ],
       [
-        "2026-10-08",
-        "Virginia"
+        "2026-10-01",
+        "New York"
       ],
       [
-        "2026-10-08",
-        "Washington"
+        "2026-10-01",
+        "North Carolina"
       ],
       [
-        "2026-11-01",
-        "West Virginia"
+        "2026-10-01",
+        "South Dakota"
+      ],
+      [
+        "2026-10-01",
+        "Texas"
       ]
     ],
     "from": "2026-10-01",
@@ -1804,64 +3753,56 @@
   },
   "tiger-legal-guide": {
     "total": 52,
-    "modal": "2026-10-01",
-    "modalCount": 38,
+    "modal": "2026-11-01",
+    "modalCount": 40,
     "others": [
       [
-        "2026-10-08",
-        "Arizona"
+        "2026-10-01",
+        "Alaska"
       ],
       [
-        "2026-10-08",
-        "Arkansas"
+        "2026-10-01",
+        "Florida"
       ],
       [
-        "2026-10-08",
-        "Delaware"
+        "2026-10-01",
+        "Georgia"
       ],
       [
-        "2026-10-08",
-        "Idaho"
+        "2026-10-01",
+        "Illinois"
       ],
       [
-        "2026-10-08",
-        "Iowa"
+        "2026-10-01",
+        "Indiana"
       ],
       [
-        "2026-10-08",
-        "Kentucky"
+        "2026-10-01",
+        "Massachusetts"
       ],
       [
-        "2026-10-08",
-        "Michigan"
+        "2026-10-01",
+        "Mississippi"
       ],
       [
-        "2026-10-08",
-        "Missouri"
+        "2026-10-01",
+        "Nebraska"
       ],
       [
-        "2026-10-08",
-        "Ohio"
+        "2026-10-01",
+        "New York"
       ],
       [
-        "2026-10-08",
-        "South Carolina"
+        "2026-10-01",
+        "North Carolina"
       ],
       [
-        "2026-10-08",
-        "Virginia"
+        "2026-10-01",
+        "South Dakota"
       ],
       [
-        "2026-10-08",
-        "Washington"
-      ],
-      [
-        "2026-10-08",
-        "Wyoming"
-      ],
-      [
-        "2026-11-01",
-        "West Virginia"
+        "2026-10-01",
+        "Texas"
       ]
     ],
     "from": "2026-10-01",
@@ -1869,64 +3810,56 @@
   },
   "lion-legal-guide": {
     "total": 52,
-    "modal": "2026-10-01",
-    "modalCount": 38,
+    "modal": "2026-11-01",
+    "modalCount": 40,
     "others": [
       [
-        "2026-10-08",
-        "Arizona"
+        "2026-10-01",
+        "Alaska"
       ],
       [
-        "2026-10-08",
-        "Arkansas"
+        "2026-10-01",
+        "Florida"
       ],
       [
-        "2026-10-08",
-        "Delaware"
+        "2026-10-01",
+        "Georgia"
       ],
       [
-        "2026-10-08",
-        "Idaho"
+        "2026-10-01",
+        "Illinois"
       ],
       [
-        "2026-10-08",
-        "Iowa"
+        "2026-10-01",
+        "Indiana"
       ],
       [
-        "2026-10-08",
-        "Kentucky"
+        "2026-10-01",
+        "Massachusetts"
       ],
       [
-        "2026-10-08",
-        "Michigan"
+        "2026-10-01",
+        "Mississippi"
       ],
       [
-        "2026-10-08",
-        "Missouri"
+        "2026-10-01",
+        "Nebraska"
       ],
       [
-        "2026-10-08",
-        "Ohio"
+        "2026-10-01",
+        "New York"
       ],
       [
-        "2026-10-08",
-        "South Carolina"
+        "2026-10-01",
+        "North Carolina"
       ],
       [
-        "2026-10-08",
-        "Virginia"
+        "2026-10-01",
+        "South Dakota"
       ],
       [
-        "2026-10-08",
-        "Washington"
-      ],
-      [
-        "2026-10-08",
-        "Wyoming"
-      ],
-      [
-        "2026-11-01",
-        "West Virginia"
+        "2026-10-01",
+        "Texas"
       ]
     ],
     "from": "2026-10-01",
@@ -1934,76 +3867,56 @@
   },
   "cougar-legal-guide": {
     "total": 52,
-    "modal": "2026-10-01",
-    "modalCount": 35,
+    "modal": "2026-11-01",
+    "modalCount": 40,
     "others": [
       [
-        "2026-10-08",
-        "Alabama"
+        "2026-10-01",
+        "Alaska"
       ],
       [
-        "2026-10-08",
-        "Arizona"
+        "2026-10-01",
+        "Florida"
       ],
       [
-        "2026-10-08",
-        "Arkansas"
+        "2026-10-01",
+        "Illinois"
       ],
       [
-        "2026-10-08",
-        "Delaware"
+        "2026-10-01",
+        "Indiana"
       ],
       [
-        "2026-10-08",
-        "Georgia"
+        "2026-10-01",
+        "Massachusetts"
       ],
       [
-        "2026-10-08",
-        "Idaho"
+        "2026-10-01",
+        "Mississippi"
       ],
       [
-        "2026-10-08",
-        "Iowa"
+        "2026-10-01",
+        "Nebraska"
       ],
       [
-        "2026-10-08",
-        "Kentucky"
+        "2026-10-01",
+        "New York"
       ],
       [
-        "2026-10-08",
-        "Michigan"
+        "2026-10-01",
+        "North Carolina"
       ],
       [
-        "2026-10-08",
-        "Missouri"
+        "2026-10-01",
+        "South Dakota"
       ],
       [
-        "2026-10-08",
-        "Ohio"
-      ],
-      [
-        "2026-10-08",
-        "Oregon"
-      ],
-      [
-        "2026-10-08",
-        "South Carolina"
-      ],
-      [
-        "2026-10-08",
-        "Virginia"
-      ],
-      [
-        "2026-10-08",
-        "Washington"
+        "2026-10-01",
+        "Texas"
       ],
       [
         "2026-10-08",
         "Wisconsin"
-      ],
-      [
-        "2026-11-01",
-        "West Virginia"
       ]
     ],
     "from": "2026-10-01",
@@ -2011,24 +3924,48 @@
   },
   "rattlesnake-legal-guide": {
     "total": 52,
-    "modal": "2026-10-01",
-    "modalCount": 35,
+    "modal": "2026-11-01",
+    "modalCount": 40,
     "others": [
       [
-        "2026-10-08",
-        "Arizona"
+        "2026-10-01",
+        "Alaska"
       ],
       [
-        "2026-10-08",
-        "Arkansas"
+        "2026-10-01",
+        "Georgia"
       ],
       [
-        "2026-10-08",
-        "California"
+        "2026-10-01",
+        "Illinois"
       ],
       [
-        "2026-10-08",
-        "Delaware"
+        "2026-10-01",
+        "Indiana"
+      ],
+      [
+        "2026-10-01",
+        "Massachusetts"
+      ],
+      [
+        "2026-10-01",
+        "Mississippi"
+      ],
+      [
+        "2026-10-01",
+        "Nebraska"
+      ],
+      [
+        "2026-10-01",
+        "New York"
+      ],
+      [
+        "2026-10-01",
+        "South Dakota"
+      ],
+      [
+        "2026-10-01",
+        "Texas"
       ],
       [
         "2026-10-08",
@@ -2036,51 +3973,7 @@
       ],
       [
         "2026-10-08",
-        "Idaho"
-      ],
-      [
-        "2026-10-08",
-        "Iowa"
-      ],
-      [
-        "2026-10-08",
-        "Kansas"
-      ],
-      [
-        "2026-10-08",
-        "Kentucky"
-      ],
-      [
-        "2026-10-08",
-        "Missouri"
-      ],
-      [
-        "2026-10-08",
         "Montana"
-      ],
-      [
-        "2026-10-08",
-        "Ohio"
-      ],
-      [
-        "2026-10-08",
-        "South Carolina"
-      ],
-      [
-        "2026-10-08",
-        "Virginia"
-      ],
-      [
-        "2026-10-08",
-        "Washington"
-      ],
-      [
-        "2026-10-08",
-        "Wisconsin"
-      ],
-      [
-        "2026-11-01",
-        "New Mexico"
       ]
     ],
     "from": "2026-10-01",
@@ -2088,117 +3981,113 @@
   },
   "cobra-legal-guide": {
     "total": 52,
-    "modal": "2026-10-01",
+    "modal": "2026-11-01",
     "modalCount": 40,
     "others": [
       [
-        "2026-10-08",
-        "Arizona"
+        "2026-10-01",
+        "Alaska"
       ],
       [
-        "2026-10-08",
-        "Arkansas"
+        "2026-10-01",
+        "Georgia"
       ],
       [
-        "2026-10-08",
-        "Delaware"
+        "2026-10-01",
+        "Illinois"
+      ],
+      [
+        "2026-10-01",
+        "Indiana"
+      ],
+      [
+        "2026-10-01",
+        "Massachusetts"
+      ],
+      [
+        "2026-10-01",
+        "Mississippi"
+      ],
+      [
+        "2026-10-01",
+        "Montana"
+      ],
+      [
+        "2026-10-01",
+        "Nebraska"
+      ],
+      [
+        "2026-10-01",
+        "New York"
+      ],
+      [
+        "2026-10-01",
+        "South Dakota"
+      ],
+      [
+        "2026-10-01",
+        "Texas"
       ],
       [
         "2026-10-08",
         "Florida"
-      ],
-      [
-        "2026-10-08",
-        "Idaho"
-      ],
-      [
-        "2026-10-08",
-        "Iowa"
-      ],
-      [
-        "2026-10-08",
-        "Kentucky"
-      ],
-      [
-        "2026-10-08",
-        "Missouri"
-      ],
-      [
-        "2026-10-08",
-        "Ohio"
-      ],
-      [
-        "2026-10-08",
-        "South Carolina"
-      ],
-      [
-        "2026-10-08",
-        "Virginia"
-      ],
-      [
-        "2026-10-08",
-        "Washington"
       ]
     ],
     "from": "2026-10-01",
-    "to": "2026-10-08"
+    "to": "2026-11-01"
   },
   "reticulated-python-legal-guide": {
     "total": 52,
-    "modal": "2026-10-01",
-    "modalCount": 39,
+    "modal": "2026-11-01",
+    "modalCount": 40,
     "others": [
       [
-        "2026-10-08",
-        "Arizona"
+        "2026-10-01",
+        "Alaska"
       ],
       [
-        "2026-10-08",
-        "Arkansas"
+        "2026-10-01",
+        "Florida"
       ],
       [
-        "2026-10-08",
-        "Delaware"
+        "2026-10-01",
+        "Georgia"
       ],
       [
-        "2026-10-08",
-        "Idaho"
+        "2026-10-01",
+        "Illinois"
       ],
       [
-        "2026-10-08",
-        "Iowa"
+        "2026-10-01",
+        "Indiana"
       ],
       [
-        "2026-10-08",
-        "Kentucky"
+        "2026-10-01",
+        "Massachusetts"
       ],
       [
-        "2026-10-08",
-        "Missouri"
+        "2026-10-01",
+        "Mississippi"
       ],
       [
-        "2026-10-08",
-        "North Carolina"
+        "2026-10-01",
+        "Montana"
       ],
       [
-        "2026-10-08",
-        "South Carolina"
+        "2026-10-01",
+        "Nebraska"
       ],
       [
-        "2026-10-08",
-        "Virginia"
+        "2026-10-01",
+        "New York"
       ],
       [
-        "2026-10-08",
-        "Washington"
+        "2026-10-01",
+        "South Dakota"
       ],
       [
-        "2026-11-01",
-        "Colorado"
-      ],
-      [
-        "2026-11-01",
-        "Maryland"
+        "2026-10-01",
+        "Texas"
       ]
     ],
     "from": "2026-10-01",
@@ -2206,56 +4095,56 @@
   },
   "green-anaconda-legal-guide": {
     "total": 52,
-    "modal": "2026-10-01",
+    "modal": "2026-11-01",
     "modalCount": 40,
     "others": [
       [
-        "2026-10-08",
-        "Arizona"
+        "2026-10-01",
+        "Alaska"
       ],
       [
-        "2026-10-08",
-        "Arkansas"
+        "2026-10-01",
+        "Florida"
       ],
       [
-        "2026-10-08",
-        "Delaware"
+        "2026-10-01",
+        "Georgia"
       ],
       [
-        "2026-10-08",
-        "Idaho"
+        "2026-10-01",
+        "Illinois"
       ],
       [
-        "2026-10-08",
-        "Iowa"
+        "2026-10-01",
+        "Indiana"
       ],
       [
-        "2026-10-08",
-        "Kentucky"
+        "2026-10-01",
+        "Massachusetts"
       ],
       [
-        "2026-10-08",
-        "Missouri"
+        "2026-10-01",
+        "Mississippi"
       ],
       [
-        "2026-10-08",
-        "North Carolina"
+        "2026-10-01",
+        "Montana"
       ],
       [
-        "2026-10-08",
-        "South Carolina"
+        "2026-10-01",
+        "Nebraska"
       ],
       [
-        "2026-10-08",
-        "Virginia"
+        "2026-10-01",
+        "New York"
       ],
       [
-        "2026-10-08",
-        "Washington"
+        "2026-10-01",
+        "South Dakota"
       ],
       [
-        "2026-11-01",
-        "Maryland"
+        "2026-10-01",
+        "Texas"
       ]
     ],
     "from": "2026-10-01",
@@ -2263,24 +4152,36 @@
   },
   "american-alligator-legal-guide": {
     "total": 52,
-    "modal": "2026-10-01",
-    "modalCount": 29,
+    "modal": "2026-11-01",
+    "modalCount": 42,
     "others": [
       [
-        "2026-10-08",
-        "Alabama"
+        "2026-10-01",
+        "Alaska"
       ],
       [
-        "2026-10-08",
-        "Arizona"
+        "2026-10-01",
+        "Illinois"
       ],
       [
-        "2026-10-08",
-        "Arkansas"
+        "2026-10-01",
+        "Indiana"
       ],
       [
-        "2026-10-08",
-        "Delaware"
+        "2026-10-01",
+        "Massachusetts"
+      ],
+      [
+        "2026-10-01",
+        "Montana"
+      ],
+      [
+        "2026-10-01",
+        "New York"
+      ],
+      [
+        "2026-10-01",
+        "South Dakota"
       ],
       [
         "2026-10-08",
@@ -2288,75 +4189,11 @@
       ],
       [
         "2026-10-08",
-        "Georgia"
-      ],
-      [
-        "2026-10-08",
-        "Idaho"
-      ],
-      [
-        "2026-10-08",
-        "Iowa"
-      ],
-      [
-        "2026-10-08",
-        "Kentucky"
-      ],
-      [
-        "2026-10-08",
-        "Louisiana"
-      ],
-      [
-        "2026-10-08",
         "Mississippi"
       ],
       [
         "2026-10-08",
-        "Missouri"
-      ],
-      [
-        "2026-10-08",
         "Nebraska"
-      ],
-      [
-        "2026-10-08",
-        "North Carolina"
-      ],
-      [
-        "2026-10-08",
-        "Ohio"
-      ],
-      [
-        "2026-10-08",
-        "South Carolina"
-      ],
-      [
-        "2026-10-08",
-        "Texas"
-      ],
-      [
-        "2026-10-08",
-        "Virginia"
-      ],
-      [
-        "2026-10-08",
-        "Washington"
-      ],
-      [
-        "2026-10-08",
-        "Wyoming"
-      ],
-      [
-        "2026-11-01",
-        "Colorado"
-      ],
-      [
-        "2026-11-01",
-        "Minnesota"
-      ],
-      [
-        "2026-11-01",
-        "Oklahoma"
       ]
     ],
     "from": "2026-10-01",
@@ -2364,40 +4201,48 @@
   },
   "caiman-legal-guide": {
     "total": 52,
-    "modal": "2026-10-01",
-    "modalCount": 34,
+    "modal": "2026-11-01",
+    "modalCount": 40,
     "others": [
       [
-        "2026-10-08",
-        "Alabama"
+        "2026-10-01",
+        "Alaska"
       ],
       [
-        "2026-10-08",
-        "Arizona"
+        "2026-10-01",
+        "Florida"
       ],
       [
-        "2026-10-08",
-        "Arkansas"
+        "2026-10-01",
+        "Georgia"
       ],
       [
-        "2026-10-08",
-        "Delaware"
+        "2026-10-01",
+        "Illinois"
       ],
       [
-        "2026-10-08",
-        "Idaho"
+        "2026-10-01",
+        "Indiana"
       ],
       [
-        "2026-10-08",
-        "Iowa"
+        "2026-10-01",
+        "Massachusetts"
       ],
       [
-        "2026-10-08",
-        "Kentucky"
+        "2026-10-01",
+        "Mississippi"
       ],
       [
-        "2026-10-08",
-        "Missouri"
+        "2026-10-01",
+        "Montana"
+      ],
+      [
+        "2026-10-01",
+        "New York"
+      ],
+      [
+        "2026-10-01",
+        "South Dakota"
       ],
       [
         "2026-10-08",
@@ -2405,39 +4250,7 @@
       ],
       [
         "2026-10-08",
-        "North Carolina"
-      ],
-      [
-        "2026-10-08",
-        "Ohio"
-      ],
-      [
-        "2026-10-08",
-        "South Carolina"
-      ],
-      [
-        "2026-10-08",
-        "Tennessee"
-      ],
-      [
-        "2026-10-08",
         "Texas"
-      ],
-      [
-        "2026-10-08",
-        "Virginia"
-      ],
-      [
-        "2026-10-08",
-        "Washington"
-      ],
-      [
-        "2026-10-08",
-        "Wyoming"
-      ],
-      [
-        "2026-11-01",
-        "Minnesota"
       ]
     ],
     "from": "2026-10-01",
@@ -2445,72 +4258,44 @@
   },
   "gray-squirrel-legal-guide": {
     "total": 52,
-    "modal": "2026-10-01",
-    "modalCount": 36,
+    "modal": "2026-11-01",
+    "modalCount": 43,
     "others": [
       [
-        "2026-10-08",
-        "Alabama"
+        "2026-10-01",
+        "Alaska"
       ],
       [
-        "2026-10-08",
-        "Arizona"
+        "2026-10-01",
+        "Florida"
       ],
       [
-        "2026-10-08",
-        "Arkansas"
+        "2026-10-01",
+        "Illinois"
       ],
       [
-        "2026-10-08",
-        "Delaware"
+        "2026-10-01",
+        "Indiana"
       ],
       [
-        "2026-10-08",
-        "Georgia"
+        "2026-10-01",
+        "Massachusetts"
       ],
       [
-        "2026-10-08",
-        "Idaho"
+        "2026-10-01",
+        "Nebraska"
       ],
       [
-        "2026-10-08",
-        "Kansas"
+        "2026-10-01",
+        "New York"
       ],
       [
-        "2026-10-08",
-        "Kentucky"
-      ],
-      [
-        "2026-10-08",
-        "Missouri"
-      ],
-      [
-        "2026-10-08",
-        "New Jersey"
-      ],
-      [
-        "2026-10-08",
-        "South Carolina"
+        "2026-10-01",
+        "South Dakota"
       ],
       [
         "2026-10-08",
         "Texas"
-      ],
-      [
-        "2026-10-08",
-        "Virginia"
-      ],
-      [
-        "2026-10-08",
-        "Wyoming"
-      ],
-      [
-        "2026-11-01",
-        "Ohio"
-      ],
-      [
-        "2026-11-01",
-        "Washington"
       ]
     ],
     "from": "2026-10-01",
@@ -2518,80 +4303,48 @@
   },
   "virginia-opossum-legal-guide": {
     "total": 52,
-    "modal": "2026-10-01",
-    "modalCount": 34,
+    "modal": "2026-11-01",
+    "modalCount": 42,
     "others": [
       [
-        "2026-10-08",
-        "Alabama"
+        "2026-10-01",
+        "Alaska"
       ],
       [
-        "2026-10-08",
-        "Arizona"
+        "2026-10-01",
+        "Florida"
       ],
       [
-        "2026-10-08",
-        "Arkansas"
+        "2026-10-01",
+        "Illinois"
       ],
       [
-        "2026-10-08",
-        "Delaware"
+        "2026-10-01",
+        "Indiana"
       ],
       [
-        "2026-10-08",
-        "Georgia"
+        "2026-10-01",
+        "Massachusetts"
       ],
       [
-        "2026-10-08",
-        "Idaho"
+        "2026-10-01",
+        "Montana"
       ],
       [
-        "2026-10-08",
-        "Kansas"
+        "2026-10-01",
+        "Nebraska"
       ],
       [
-        "2026-10-08",
-        "Kentucky"
+        "2026-10-01",
+        "New York"
       ],
       [
-        "2026-10-08",
-        "Missouri"
-      ],
-      [
-        "2026-10-08",
-        "New Jersey"
-      ],
-      [
-        "2026-10-08",
-        "Tennessee"
+        "2026-10-01",
+        "South Dakota"
       ],
       [
         "2026-10-08",
         "Texas"
-      ],
-      [
-        "2026-10-08",
-        "Virginia"
-      ],
-      [
-        "2026-10-08",
-        "West Virginia"
-      ],
-      [
-        "2026-10-08",
-        "Wisconsin"
-      ],
-      [
-        "2026-11-01",
-        "New Mexico"
-      ],
-      [
-        "2026-11-01",
-        "Ohio"
-      ],
-      [
-        "2026-11-01",
-        "Washington"
       ]
     ],
     "from": "2026-10-01",
@@ -2599,56 +4352,60 @@
   },
   "wallaby-legal-guide": {
     "total": 52,
-    "modal": "2026-10-01",
-    "modalCount": 40,
+    "modal": "2026-11-01",
+    "modalCount": 39,
     "others": [
       [
-        "2026-10-08",
-        "Arizona"
+        "2026-10-01",
+        "Alaska"
       ],
       [
-        "2026-10-08",
-        "Arkansas"
+        "2026-10-01",
+        "Florida"
       ],
       [
-        "2026-10-08",
-        "Delaware"
+        "2026-10-01",
+        "Georgia"
       ],
       [
-        "2026-10-08",
-        "Idaho"
+        "2026-10-01",
+        "Illinois"
       ],
       [
-        "2026-10-08",
-        "Iowa"
+        "2026-10-01",
+        "Indiana"
       ],
       [
-        "2026-10-08",
-        "Kentucky"
+        "2026-10-01",
+        "Massachusetts"
       ],
       [
-        "2026-10-08",
-        "Missouri"
+        "2026-10-01",
+        "Mississippi"
       ],
       [
-        "2026-10-08",
-        "South Carolina"
+        "2026-10-01",
+        "Montana"
       ],
       [
-        "2026-10-08",
-        "Virginia"
+        "2026-10-01",
+        "Nebraska"
       ],
       [
-        "2026-10-08",
-        "Wyoming"
+        "2026-10-01",
+        "New York"
       ],
       [
-        "2026-11-01",
-        "Maryland"
+        "2026-10-01",
+        "North Carolina"
       ],
       [
-        "2026-11-01",
-        "Minnesota"
+        "2026-10-01",
+        "South Dakota"
+      ],
+      [
+        "2026-10-01",
+        "Texas"
       ]
     ],
     "from": "2026-10-01",
@@ -2656,56 +4413,60 @@
   },
   "two-toed-sloth-legal-guide": {
     "total": 52,
-    "modal": "2026-10-01",
-    "modalCount": 40,
+    "modal": "2026-11-01",
+    "modalCount": 39,
     "others": [
       [
-        "2026-10-08",
-        "Arizona"
+        "2026-10-01",
+        "Alaska"
       ],
       [
-        "2026-10-08",
-        "Arkansas"
+        "2026-10-01",
+        "Florida"
       ],
       [
-        "2026-10-08",
-        "Delaware"
+        "2026-10-01",
+        "Georgia"
       ],
       [
-        "2026-10-08",
-        "Idaho"
+        "2026-10-01",
+        "Illinois"
       ],
       [
-        "2026-10-08",
-        "Iowa"
+        "2026-10-01",
+        "Indiana"
       ],
       [
-        "2026-10-08",
-        "Kentucky"
+        "2026-10-01",
+        "Massachusetts"
       ],
       [
-        "2026-10-08",
-        "Missouri"
+        "2026-10-01",
+        "Mississippi"
       ],
       [
-        "2026-10-08",
-        "South Carolina"
+        "2026-10-01",
+        "Montana"
       ],
       [
-        "2026-10-08",
-        "Virginia"
+        "2026-10-01",
+        "Nebraska"
       ],
       [
-        "2026-10-08",
-        "Wyoming"
+        "2026-10-01",
+        "New York"
       ],
       [
-        "2026-11-01",
-        "Maryland"
+        "2026-10-01",
+        "North Carolina"
       ],
       [
-        "2026-11-01",
-        "Minnesota"
+        "2026-10-01",
+        "South Dakota"
+      ],
+      [
+        "2026-10-01",
+        "Texas"
       ]
     ],
     "from": "2026-10-01",
@@ -2713,52 +4474,36 @@
   },
   "white-tailed-deer-legal-guide": {
     "total": 52,
-    "modal": "2026-10-01",
-    "modalCount": 28,
+    "modal": "2026-11-01",
+    "modalCount": 42,
     "others": [
       [
-        "2026-10-08",
-        "Arizona"
+        "2026-10-01",
+        "Alaska"
       ],
       [
-        "2026-10-08",
-        "Arkansas"
+        "2026-10-01",
+        "Florida"
       ],
       [
-        "2026-10-08",
-        "Delaware"
+        "2026-10-01",
+        "Illinois"
       ],
       [
-        "2026-10-08",
-        "Georgia"
+        "2026-10-01",
+        "Massachusetts"
       ],
       [
-        "2026-10-08",
-        "Idaho"
+        "2026-10-01",
+        "Nebraska"
       ],
       [
-        "2026-10-08",
-        "Indiana"
+        "2026-10-01",
+        "New York"
       ],
       [
-        "2026-10-08",
-        "Iowa"
-      ],
-      [
-        "2026-10-08",
-        "Kansas"
-      ],
-      [
-        "2026-10-08",
-        "Kentucky"
-      ],
-      [
-        "2026-10-08",
-        "Louisiana"
-      ],
-      [
-        "2026-10-08",
-        "Michigan"
+        "2026-10-01",
+        "South Dakota"
       ],
       [
         "2026-10-08",
@@ -2766,51 +4511,11 @@
       ],
       [
         "2026-10-08",
-        "Missouri"
-      ],
-      [
-        "2026-10-08",
-        "Montana"
-      ],
-      [
-        "2026-10-08",
-        "Oklahoma"
-      ],
-      [
-        "2026-10-08",
-        "Oregon"
-      ],
-      [
-        "2026-10-08",
-        "South Carolina"
-      ],
-      [
-        "2026-10-08",
         "Texas"
       ],
       [
         "2026-10-08",
-        "Virginia"
-      ],
-      [
-        "2026-10-08",
-        "West Virginia"
-      ],
-      [
-        "2026-10-08",
         "Wisconsin"
-      ],
-      [
-        "2026-11-01",
-        "New Jersey"
-      ],
-      [
-        "2026-11-01",
-        "Ohio"
-      ],
-      [
-        "2026-11-01",
-        "Washington"
       ]
     ],
     "from": "2026-10-01",
