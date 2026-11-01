@@ -456,3 +456,13 @@ Owner rule (docs/RULES.md, "No hobby sites"): retailer care pages and blogs, hob
 - molly-health-issues-guide.mdx, salt: Coletti's "adapt to" rather than "demand", Norton's argument that salt lets poor tank management carry on, and large, frequent water changes, hard water and plant cover in place of salt. Coletti and Norton are named in the body; M20 was the page. (also elsewhere: yes)
 - molly-tank-setup-guide.mdx, salt: livebearer specialists hold that mollies "adapt to" salinity, and large, frequent water changes and plant cover handle what salt is usually reached for. Was M20. (also elsewhere: yes)
 - molly-enrichment-guide.mdx and molly-handling-guide.mdx lost Practical Fishkeeping "Quick guide to livebearers" (M18, no byline); its one claim there, the sex ratio, stays on Seriously Fish. Nothing listed.
+
+## Kept without a source (owner review): Substrate section, 2026-11-01
+
+Edit pass on molly-tank-setup-guide.mdx: the one-line Substrate section grew a sourced paragraph on buffering floors. The existing lines stay as written.
+
+Sources used (opened 2026-11-01): Matt Clarke, "Frequently asked questions on aquarium substrates," Practical Fishkeeping, https://www.practicalfishkeeping.co.uk/features/frequently-asked-questions-on-aquarium-substrates/ (named author; no peer-reviewed, extension, vet or Seriously Fish page covers coral sand in an aquarium). Extracts: "Coral sand and gravel is calcareous, so you should only use it in situations where you want the pH and hardness to be kept high"; coral sand will "make your water rock hard and increase the pH of your water to over 8.0"; calcareous substrates "contain calcium and other minerals that increase the hardness and pH"; "Even standard pea gravel contains sufficient calcium to boost the pH and hardness"; those in very soft water areas "use small amounts to stop the pH of their aquaria from dropping naturally"; dolomite is "a naturally occurring mineral rich in calcium and magnesium", sold uncolored for marine or Rift Lake cichlid tanks. Hardness and pH ranges from the guide's own Seriously Fish entry. (AQUARIUM_SUBSTRATE_RESEARCH.md id SB1.)
+
+- Substrate: "Fine gravel or sand both work well" and "Avoid sharp or coarse gravel, which can damage fins, especially on longer-finned sailfin and lyretail varieties": kept as written, no source. (also elsewhere: yes, the guppy, platy and swordtail tank guides)
+Calcium and magnesium nuance (AQUARIUM_SUBSTRATE_RESEARCH.md, Molly): written as dolomite carrying both minerals (Clarke) rather than as "crushed coral lacks magnesium", which no opened source states. Dense planting from Seriously Fish (M14).
+Left out for want of an allowed source: a crushed coral dose per gallon (Aquarium Co-Op product page only, hobby site).
