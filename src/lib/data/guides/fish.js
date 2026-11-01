@@ -538,8 +538,8 @@ export const fishGuides = fillCostTokens([
     ],
     faqs: [
       { q: "How many cardinal tetras should I keep together?", a: "Ten is the number to plan for. Smaller groups turn pale, hide, and get sick more often from the stress." },
-      { q: "Can cardinal tetras get neon tetra disease?", a: "Yes. It's named after neon tetra specifically, but the parasite affects tetras broadly, along with angelfish, rasboras, barbs, and zebrafish, so cardinal tetra falls within that group. It's caused by a microsporidian parasite, Pleistophora hyphessobryconis, that invades muscle tissue. Watch for restless or erratic swimming, fading or patchy color, visible lumps under the skin, and a curved spine in advanced cases." },
-      { q: "What's the non-obvious detail that makes the biggest difference in a cardinal tetra tank?", a: "Recreating blackwater conditions. Driftwood and Indian almond leaves release natural tannins that stain the water and lower pH, mimicking the shaded, leaf-litter-covered streams this species evolved in. Pair that with dense planting and dim lighting, and color and confidence both improve noticeably." },
+      { q: "Can cardinal tetras get neon tetra disease?", a: "Yes. It is named for the neon, but the microsporidian parasite behind it, Pleistophora hyphessobryconis, affects tetras broadly, along with angelfish, rasboras, barbs, and zebrafish. Watch for restless or erratic swimming, fading or patchy color, visible lumps under the skin, and a curved spine in advanced cases." },
+      { q: "What's the non-obvious detail that makes the biggest difference in a cardinal tetra tank?", a: "Blackwater conditions. As driftwood and Indian almond leaves release tannins, the water tints and the pH eases down, which copies the shaded, leaf-strewn streams the fish comes from. Add dense planting and dim light, and color and confidence both improve noticeably." },
     ],
   },
   {
@@ -1310,7 +1310,7 @@ export const fishGuides = fillCostTokens([
       { slug: "neon-tetra-feeding-guide", line: "Twice a day in 2 to 3 minutes, why a 1 to 2mm mouth changes what you buy, and the rule that stops an outbreak." },
       { slug: "neon-tetra-handling-guide", line: "Why this is a netting-only fish, the school floor, and the tankmates that turn a shoal into lunch." },
       { slug: "neon-tetra-health-issues-guide", line: "Neon tetra disease and the treatable lookalike it gets mistaken for, plus ich, fin rot, and swim bladder trouble." },
-      { slug: "neon-tetra-enrichment-guide", line: "The 2010 study that tested group size properly, and why the answer came back ten rather than six." },
+      { slug: "neon-tetra-enrichment-guide", line: "Why a school of ten settles better than six, and how to read whether the school is doing well." },
     ],
     buyList: [
       "10-gallon tank for a school of six, or a 20-gallon long for ten to fifteen",
@@ -1329,7 +1329,7 @@ export const fishGuides = fillCostTokens([
     faqs: [
       { q: "How can you tell a male neon tetra from a female?", a: "Only once they're adults. Females are rounder-bodied and a little larger, and the fuller belly makes the blue stripe look slightly bent. Males stay slim with a straight stripe." },
       { q: "How often should I feed neon tetras?", a: "Twice a day for adults, morning and evening, only as much as they finish in about 2 to 3 minutes. Fry and juveniles need 3 to 4 small feedings a day until about 6 months old." },
-      { q: "So is six enough?", a: "Six is the number most care sheets give and the study found ten better. The smallest functioning shoaling unit is often put at six to eight, so six is a floor rather than a target. If you can house ten, house ten." },
+      { q: "So is six enough?", a: "Six is the least that works, and ten is better. The smallest functioning shoaling unit is often put at six to eight, so if you can house ten, house ten." },
     ],
   },
   {
