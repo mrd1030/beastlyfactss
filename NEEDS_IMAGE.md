@@ -94,7 +94,19 @@ list when its photo lands.
 
 ## Guide heroes still needed
 
-None. All 17 animal-day heroes (docs/NOV_DEC_ANIMAL_DAYS.md) landed on
+- **Aquarium substrate guide** (added 2026-11-01): hero for
+  `content/guides/aquarium-substrate-guide.mdx`, slot
+  `/assets/images/aquarium-substrate-guide.jpg`, 3:2 at 1168x784, mozjpeg
+  quality 80, then `node scripts/generate-thumbnails.js` for the card and thumb
+  tiers. The article shipped without an `image` line (check-images.mjs fails on
+  a referenced file that does not exist), so the page shows no hero and social
+  shares fall back to the site image until it lands. When it does, replace the
+  commented `# image:` line in the frontmatter with
+  `image: "/assets/images/aquarium-substrate-guide.jpg"`. The `imageAlt` is
+  already set: a freshwater aquarium floor of fine sand on one side and rounded
+  gravel on the other, with rooted plants and a gravel vacuum resting on the bed.
+
+The 17 animal-day heroes (docs/NOV_DEC_ANIMAL_DAYS.md) all landed on
 2026-10-18, owner-generated, installed at 1168x784 through mozjpeg at quality
 80. The 13 that arrived larger (1264x848 or 1728x1152) were scaled down, never up.
 

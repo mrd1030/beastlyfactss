@@ -3040,6 +3040,78 @@
     "imageHeight": 800
   },
   {
+    "path": "/content/guides/aquarium-substrate-guide.mdx",
+    "slug": "aquarium-substrate-guide",
+    "title": "Aquarium Substrate: Sand, Gravel and Planted Floors",
+    "seoTitle": "Aquarium Substrate: Sand, Gravel and Planted Floors",
+    "seoDescription": "Aquarium substrate explained: sand vs gravel, how deep and how many pounds, floors that shift pH, planted beds, bare tanks, and fish that dig or swallow gravel.",
+    "lastUpdated": "2026-11-01",
+    "noIndex": false,
+    "excerpt": "Sand or gravel, how deep and how many pounds, which floors raise pH and which lower it, three ways to feed a planted bed, when to leave the glass bare, and the fish that sift, dig and swallow.",
+    "date": "2026-11-01",
+    "category": "Fish",
+    "categories": [
+      "Fish"
+    ],
+    "tags": [
+      "Fish Care",
+      "Aquarium Substrate",
+      "Planted Tanks",
+      "Water Chemistry",
+      "Beginner Fishkeeping"
+    ],
+    "readTime": 9,
+    "difficulty": "Beginner",
+    "image": null,
+    "imageAlt": "A freshwater aquarium floor of fine sand on one side and rounded gravel on the other, with rooted plants and a gravel vacuum resting on the bed",
+    "emoji": "🪨",
+    "lastReviewed": "2026-11-01",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Is sand or gravel better for a freshwater aquarium?",
+        "a": "Neither wins outright. Sand keeps waste on its surface and suits roots, but it goes stale when laid deep. Gravel hides more debris between its pieces yet stands up to a vacuum. Choose by the fish: sifters and diggers want sand, and many midwater species have no need either way."
+      },
+      {
+        "q": "How many pounds of substrate does my tank need?",
+        "a": "Per-gallon rules of 1 to 1.5 pounds get you close, but they ignore the tank's shape. Multiply the floor's length by its width by the depth you want, or use a manufacturer's calculator that asks for those three figures. A tall tank needs less than its gallons suggest."
+      },
+      {
+        "q": "Will gravel change my water's pH?",
+        "a": "Inert gravel will not, but plenty of gravel sold for aquariums is not inert. Pea gravel carries enough calcium to lift pH and hardness, and rough, powder-coated colored gravel is often dolomite underneath. For a soft-water tank, buy a substrate sold as inert."
+      },
+      {
+        "q": "Can goldfish choke on aquarium gravel?",
+        "a": "A stone caught in the mouth usually comes back out within minutes, though a large one can need sedation at a fish vet. Swallowed pea gravel can block the esophagus. Gravel bigger than the mouth, fine sand, or a bare floor avoids both problems."
+      },
+      {
+        "q": "Do quarantine tanks need substrate?",
+        "a": "No. A hospital or quarantine tank stays bare so waste shows up at once and the whole setup can be broken down and disinfected after each use. A sponge filter, an air pump and a heater are all it carries."
+      },
+      {
+        "q": "What substrate is best for corydoras?",
+        "a": "Smooth, fine sand or fine, rounded gravel, in a layer shallow enough for the fish to dig through to the glass, and kept clean. Barbel damage gets blamed both on sharp grains and on dirty beds, so a cory floor should be neither."
+      },
+      {
+        "q": "Do I need aquasoil to grow aquarium plants?",
+        "a": "No. Plain inert gravel or sand fed with root tabs or a liquid fertilizer grows plenty of plants. Aquasoil feeds roots and acidifies the water, which suits soft-water tetras, but it releases ammonium for the first weeks and is spent after two to three years."
+      }
+    ],
+    "relatedProducts": [
+      "sand-seachem-flourite-black-15lb",
+      "gravel-vac-python-pro-clean-large"
+    ],
+    "factFile": false,
+    "animalDay": null,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 5,
+    "headingCount": 11,
+    "ledeMatchesExcerpt": false
+  },
+  {
     "path": "/content/guides/aquarium-water-changes-guide.mdx",
     "slug": "aquarium-water-changes-guide",
     "title": "Aquarium Water Changes: How Much, How Often, and What the Number Is For",
@@ -12166,7 +12238,7 @@
       },
       {
         "q": "How do I prevent most cardinal tetra health issues?",
-        "a": "Nearly everything treatable on this list traces back to water quality and stability. Half the fish in a 96-hour test died at 1.1 mg/L nitrite, so ammonia and nitrite both need to read zero, which makes confirming a completed nitrogen cycle before stocking the single most useful habit for keeping this species healthy long-term."
+        "a": "Nearly everything treatable on this list traces back to water quality and stability. Half the fish in a 96-hour test died at 1.1 mg/L nitrite, so ammonia and nitrite both need to read zero, which makes confirming a completed nitrogen cycle before stocking the single most important step when the tank is first set up. For every fish added after that, the single most important step is quarantine."
       },
       {
         "q": "Are wild-caught cardinal tetras more likely to get sick?",
@@ -12193,7 +12265,7 @@
     "myth": null,
     "truth": null,
     "sourceCount": 13,
-    "headingCount": 16,
+    "headingCount": 15,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
     "imageHeight": 784
@@ -16350,7 +16422,7 @@
     "title": "Corydoras Enrichment: Sand for the Sifting, Not for the Barbels",
     "seoTitle": "Corydoras Catfish Enrichment Guide",
     "seoDescription": "No study establishes what causes corydoras barbel erosion. Substrate of any kind harbors bacteria. Sand still wins, for the foraging.",
-    "lastUpdated": "2026-09-16",
+    "lastUpdated": "2026-11-01",
     "noIndex": false,
     "excerpt": "Everyone says gravel wears down cory barbels. No study establishes the cause, and substrate of any kind is a documented home for pathogenic bacteria.",
     "date": "2026-09-04",
@@ -16410,7 +16482,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4,
+    "sourceCount": 5,
     "headingCount": 10,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
@@ -16623,7 +16695,7 @@
     "title": "Corydoras Catfish Tank Setup: Substrate Is the Detail That Actually Matters",
     "seoTitle": "Corydoras Catfish Tank Setup Guide",
     "seoDescription": "Corydoras catfish need a 20-gallon long tank, 72-82°F water, and soft sand they can sift with their barbels, kept clean: dirty substrate is the barbel risk.",
-    "lastUpdated": "2026-09-25",
+    "lastUpdated": "2026-11-01",
     "noIndex": false,
     "excerpt": "Corydoras catfish are easy to house well once you get one specific decision right, what's on the bottom of the tank. Everything else about this species' care is fairly standard community-fish practice.",
     "date": "2026-07-27",
@@ -16662,7 +16734,7 @@
       },
       {
         "q": "What substrate is safe for corydoras catfish?",
-        "a": "Soft sand, or smooth, fine, rounded gravel, about 2 inches deep. Sharp or coarse gravel is out, and so are certain specialty planted-tank sands: manufacturers flag some sharp-grained options as unsuitable for bottom-dwellers like cories."
+        "a": "Soft sand, or smooth, fine, rounded gravel, in a thin layer under an inch deep. Sharp or coarse gravel is out, and so are certain specialty planted-tank sands: manufacturers flag some sharp-grained options as unsuitable for bottom-dwellers like cories."
       },
       {
         "q": "Do corydoras catfish need special lighting?",
@@ -16685,7 +16757,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2,
+    "sourceCount": 4,
     "headingCount": 10,
     "ledeMatchesExcerpt": true,
     "imageWidth": 1168,
@@ -37231,7 +37303,7 @@
     "myth": null,
     "truth": null,
     "sourceCount": 9,
-    "headingCount": 17,
+    "headingCount": 16,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
     "imageHeight": 784
@@ -37805,7 +37877,7 @@
     "title": "Oscar Fish Tank Setup: Bigger and More Filtered Than You Expect",
     "seoTitle": "Oscar Fish Tank Setup Guide",
     "seoDescription": "Oscar fish tank setup: the 75-gallon minimum, the heavy-duty filtration a messy cichlid needs, temperature, substrate, water chemistry, and what beginners miss.",
-    "lastUpdated": "2026-09-25",
+    "lastUpdated": "2026-11-01",
     "noIndex": false,
     "excerpt": "Oscars get large and messy, and the setup needs to reflect that from day one, not grow into it gradually.",
     "date": "2026-07-30",
@@ -37844,7 +37916,7 @@
       },
       {
         "q": "What substrate is best for an oscar tank?",
-        "a": "Sand, which oscars enjoy sifting through, or smooth gravel at pea size or larger. Sharp or coarse substrate can injure the mouth of a fish that works the tank floor this much."
+        "a": "Sand, which oscars enjoy sifting through, or smooth gravel too large to swallow. Pea gravel is the size a fish digging through the bottom can swallow. Sharp or coarse substrate can injure the mouth of a fish that works the tank floor this much."
       },
       {
         "q": "What water changes does an oscar tank need?",
