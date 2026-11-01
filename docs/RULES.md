@@ -394,6 +394,40 @@ third care sheet.
   2026-10-17). The per-platform writing rules are the feed skills in
   .claude/commands/ and docs/pinterest-feed.md.
 
+## Legal guides: the monthly review
+
+- Every legal guide, and the matrix cells under it, is reviewed at the start of
+  every month (owner, 2026-11-01). The law moves without telling us, and a
+  legal guide is only as good as its last check.
+- Step 1, free: the legal sources workflow (.github/workflows/legal-sources.yml)
+  runs on the 1st and files an issue, "Legal sources changed: <yyyy-mm>", with
+  the work order. No CLAUDE_CODE_OAUTH_TOKEN is set, so nothing reads it
+  automatically: a session works it.
+- Step 2: work every flagged source. Read the page and fix the cell, never guess
+  one. A "quote gone" is often our own data, not the law: a cell whose quote
+  comes from the second statute in its cite but whose sourceId still names the
+  first. Point sourceId at the page that carries the quote (adding the source
+  if it is missing) rather than rewriting a correct quote.
+- Step 3, desktop: some state sites block cloud servers or only render in a
+  browser (64 sources and 927 cells in November 2026). The owner runs
+  `node scripts/check-legal-sources.mjs --browser` on the desktop and hands the
+  work order to a session. A cell neither run can reach is listed for the owner
+  in that month's issue, not stamped.
+- Step 4: check the guides against the matrix with `npm run check:legal-sync`,
+  `node scripts/check-state-notes.mjs` and `node scripts/check-hub-figures.mjs`.
+  A status change updates the guide's table, prose, counts and FAQ, and any hub
+  row quoting it, in the same commit.
+- Dates stay honest. `verifiedOn` moves only on a cell whose quote was found on
+  the live page or that was read. A guide's `lastReviewed` moves only when every
+  cell under it checked out that month, and `lastUpdated` only when its text
+  changed.
+- A source notice (src/lib/data/sourceNotices.js) is retired once its source is
+  readable again and its cells are re-verified, and its `<SourceNotice>` tags
+  come out of the guides with it.
+- After the month's work merges, run the workflow by hand with "refresh
+  baseline" ticked, so next month compares against this month and not the last
+  baseline. The baseline is only ever written from CI.
+
 ## Placement quirks
 
 - Beastlypedia only surfaces articles filed under `category: "Wild Animals"`,
