@@ -19,7 +19,7 @@
 //   chunks_<slot>_fts  FTS5 over title, heading, species, text, external
 //                      content on chunks_<slot>, porter stemming
 //
-// Optional env: CLOUDFLARE_ACCOUNT_ID (looked up from the token when unset),
+// Optional env: CLOUDFLARE_ACCOUNT_ID (defaults to the site's account below),
 // ASK_D1_DATABASE_ID (defaults to the ask-index id below).
 
 import fs from 'node:fs';
@@ -29,6 +29,8 @@ const ROOT = path.resolve(path.dirname(new URL(import.meta.url).pathname), '..')
 const CHUNKS = path.join(ROOT, '.ask-index', 'chunks.json');
 const META = path.join(ROOT, '.ask-index', 'meta.json');
 const DEFAULT_DB_ID = 'dff48e70-8f70-419b-848e-89252aedb81c'; // ask-index
+// Not a secret. The load token has D1 Edit only, which cannot list accounts.
+const DEFAULT_ACCOUNT_ID = '87c27f51f0e653599f9dac1c1b3cb914';
 const API = 'https://api.cloudflare.com/client/v4';
 // D1 caps one SQL statement at 100 KB. Stay well under it.
 const MAX_STATEMENT_BYTES = 90_000;
@@ -57,12 +59,7 @@ async function cf(pathname, init = {}) {
   return body.result;
 }
 
-async function accountId() {
-  if (process.env.CLOUDFLARE_ACCOUNT_ID) return process.env.CLOUDFLARE_ACCOUNT_ID;
-  const accounts = await cf('/accounts');
-  if (!accounts?.length) throw new Error('token sees no Cloudflare account');
-  return accounts[0].id;
-}
+const accountId = () => process.env.CLOUDFLARE_ACCOUNT_ID || DEFAULT_ACCOUNT_ID;
 
 const sqlString = (v) => (v == null ? 'NULL' : `'${String(v).replace(/'/g, "''")}'`);
 
