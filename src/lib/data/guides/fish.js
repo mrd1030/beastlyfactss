@@ -748,7 +748,7 @@ export const fishGuides = fillCostTokens([
       intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
       rows: [
         { label: "How many", value: "Ten is the target, with 8 to 10 as the least to buy.", source: "ember-tetra-handling-guide" },
-        { label: "Tank size", value: "A 10-gallon tank on a base of roughly 18 x 12 inches (45 x 30 cm) for a school of 10. A 5-gallon only works with a smaller school.", source: "ember-tetra-tank-setup-guide" },
+        { label: "Tank size", value: "A 10-gallon tank on a base of roughly 18 x 12 inches (45 x 30 cm) for a school of 10.", source: "ember-tetra-tank-setup-guide" },
         { label: "Temperature", value: "75 to 82°F (24 to 28°C), held steady by a heater. 82°F is the top of the range, so set the heater inside it and never above it.", source: "ember-tetra-tank-setup-guide" },
         { label: "Water chemistry", value: "Soft, acidic to neutral water: pH 5.0 to 7.0 and a hardness of 1 to 10 dGH.", source: "ember-tetra-tank-setup-guide" },
         { label: "Cycle first", value: "Ammonia and nitrite both read zero in a fully cycled tank before the school goes in.", source: "ember-tetra-tank-setup-guide" },
@@ -808,7 +808,7 @@ export const fishGuides = fillCostTokens([
       "Frozen baby brine shrimp or daphnia",
     ],
     faqs: [
-      { q: "What size tank do ember tetras need?", a: "A 10-gallon tank for a school of 10, on a base of roughly 18 x 12 inches (45 x 30 cm) or the equivalent. A 5-gallon only works with a smaller school, and 10 or more is the group to aim for." },
+      { q: "What size tank do ember tetras need?", a: "A 10-gallon tank for a school of 10, on a base of roughly 18 x 12 inches (45 x 30 cm) or the equivalent. Ten or more is the group to aim for." },
       { q: "How often should I feed ember tetras?", a: "Once or twice a day, a small pinch each time that the school finishes before it settles on the substrate. Small live or frozen food can be one of those meals every day." },
       { q: "Can you treat ich in ember tetras with heat?", a: "Not with heat alone. Most ich strains die above 86°F, and the ember tetra's range tops out at 82°F. Warm the tank slowly to 82°F with an air stone running, which speeds up the parasite's cycle, and let an ich medication do the killing. Salt is unproven for this species at the 4 to 5 grams per liter that kills ich; use an ich medication instead." },
     ],
