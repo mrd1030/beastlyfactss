@@ -2014,7 +2014,7 @@
           "sourceId": "me-unrestricted",
           "quote": "Atelerix albiventris  Four-toed Hedgehog, African Pygmy Hedgehog",
           "note": "Commonly misreported as a permit state.",
-          "verifiedOn": "2026-08-04"
+          "verifiedOn": "2026-11-01"
         },
         "WI": {
           "status": "legal",
@@ -2415,7 +2415,7 @@
           "status": "legal",
           "sourceId": "me-unrestricted",
           "quote": "Mustela putorius furo  Domestic Ferret",
-          "verifiedOn": "2026-08-04",
+          "verifiedOn": "2026-11-01",
           "note": "Named on Maine's unrestricted species list as the domestic ferret, so it needs no importation or possession permit."
         },
         "NY": {
@@ -2848,7 +2848,7 @@
           "status": "legal",
           "sourceId": "me-unrestricted",
           "quote": "Petaurus breviceps  Sugar Glider",
-          "verifiedOn": "2026-08-04",
+          "verifiedOn": "2026-11-01",
           "cite": "Unrestricted Species List",
           "note": "Maine publishes a list of species needing no importation, exhibition or possession permit, and the sugar glider is on it by binomial. An express clearance rather than an inference."
         },
@@ -3463,7 +3463,7 @@
           "status": "legal",
           "quote": "Mesocricetus auratus   Golden Hamster",
           "note": "All the pet hamsters are named: the golden, the Chinese and striped dwarf, and all three Phodopus, the Campbell's, Roborovski's and Dzhungarian. Maine's rodent list is species by species rather than by family.",
-          "verifiedOn": "2026-08-05"
+          "verifiedOn": "2026-11-01"
         },
         "AR": {
           "sourceId": "ar-unrestricted",
@@ -3882,7 +3882,7 @@
           "status": "legal",
           "quote": "Meriones unguiculatus   Gerbil",
           "note": "The Mongolian gerbil is named individually. No other Meriones is listed, which matters only for the less common species.",
-          "verifiedOn": "2026-08-05"
+          "verifiedOn": "2026-11-01"
         },
         "AR": {
           "sourceId": "ar-unrestricted",
@@ -4769,7 +4769,7 @@
           "status": "unclear",
           "quote": "Carnivora (Carnivores)   Mustela putorius furo   Domestic Ferret",
           "note": "A Bengal is registered as Felis catus, and a domestic cat is not wildlife, so the unrestricted list is arguably the wrong document to consult. But the list clears exactly one carnivore, and Maine regulates hybrids of wild species elsewhere in its wildlife rules. Nothing here settles which side a Bengal falls on. Ask Inland Fisheries and Wildlife before buying.",
-          "verifiedOn": "2026-08-05"
+          "verifiedOn": "2026-11-01"
         },
         "AR": {
           "sourceId": "ar-unrestricted",
@@ -5010,7 +5010,7 @@
           "status": "legal",
           "sourceId": "me-unrestricted",
           "quote": "Chamaeleo calyptratus",
-          "verifiedOn": "2026-08-04",
+          "verifiedOn": "2026-11-01",
           "cite": "Unrestricted Species List",
           "note": "Named by binomial on the unrestricted list, so no permit of any kind applies."
         },
@@ -5432,7 +5432,7 @@
           "sourceId": "me-unrestricted",
           "quote": "Testudo horsfieldii",
           "note": "Maine's list mislabels it 'Greek Tortoise'. The binomial is Horsfield's/Russian; Greek is T. graeca.",
-          "verifiedOn": "2026-08-04"
+          "verifiedOn": "2026-11-01"
         },
         "NY": {
           "status": "legal",
@@ -6111,7 +6111,7 @@
           "status": "legal",
           "quote": "Python regius",
           "note": "Named on the unrestricted snake list. Maine lists pythons species by species rather than clearing the family, so the ball python's presence says nothing about its larger relatives.",
-          "verifiedOn": "2026-08-05"
+          "verifiedOn": "2026-11-01"
         },
         "WI": {
           "sourceId": "wi-import-permit",
@@ -6545,7 +6545,7 @@
           "status": "legal",
           "quote": "Boa constrictor",
           "note": "Named individually with no length or weight qualifier attached.",
-          "verifiedOn": "2026-08-05"
+          "verifiedOn": "2026-11-01"
         },
         "TX": {
           "status": "legal",
@@ -6855,7 +6855,7 @@
           "status": "restricted",
           "quote": "Araneae (Spiders) ... Grammostola pulchra ... Grammostola pulchripes ... Grammostola rosea",
           "note": "Three tarantulas are unrestricted and no others: the Brazilian black, the Chaco golden knee and the Chilean rose. Every Brachypelma, Aphonopelma, Caribena or Poecilotheria needs a permit. This is the sharpest species-level split in the matrix, and it turns entirely on which animal is in the enclosure.",
-          "verifiedOn": "2026-08-05"
+          "verifiedOn": "2026-11-01"
         },
         "AR": {
           "sourceId": "ar-unrestricted",
@@ -7291,7 +7291,7 @@
           "status": "permit",
           "quote": "Arachnida (Arachnids) ... Araneae (Spiders) ... Mesostigmata",
           "note": "The arachnid section runs to three tarantulas and one predatory mite. No scorpion appears in it, so the emperor scorpion is not unrestricted and needs a permit. Pandinus imperator is also on CITES Appendix II, though that is not what decides it here.",
-          "verifiedOn": "2026-08-05"
+          "verifiedOn": "2026-11-01"
         },
         "AR": {
           "sourceId": "ar-unrestricted",
@@ -7774,7 +7774,7 @@
           "status": "legal",
           "quote": "All Species in Genus Tupinambis (Tegus) Tupinambis spp.*",
           "note": "Cleared by genus, but the list dates from 2017 and the Argentine black and white tegu was moved out of Tupinambis into Salvator in 2012. The common name column reads Tegus, so the intent is plain, though anyone relying on the scientific name alone should be aware the two do not match current taxonomy.",
-          "verifiedOn": "2026-08-05"
+          "verifiedOn": "2026-11-01"
         },
         "AR": {
           "sourceId": "ar-unrestricted",
@@ -8798,7 +8798,7 @@
           "status": "permit",
           "quote": "Rodentia (Rodents)",
           "note": "The unrestricted rodent list runs to thirteen species, all of them small cage animals. Cynomys is not among them.",
-          "verifiedOn": "2026-08-05"
+          "verifiedOn": "2026-11-01"
         },
         "AR": {
           "sourceId": "ar-unrestricted",
@@ -9232,7 +9232,7 @@
           "status": "permit",
           "quote": "Rodentia (Rodents)",
           "note": "Not on the rodent list, which stops at the brown rat in size terms.",
-          "verifiedOn": "2026-08-05"
+          "verifiedOn": "2026-11-01"
         },
         "AR": {
           "sourceId": "ar-unrestricted",
@@ -10269,7 +10269,7 @@
           "status": "legal",
           "sourceId": "me-unrestricted",
           "quote": "Chinchilla lanigera",
-          "verifiedOn": "2026-08-04",
+          "verifiedOn": "2026-11-01",
           "cite": "Unrestricted Species List",
           "note": "Named by binomial on the unrestricted list."
         },
@@ -10895,7 +10895,7 @@
           "status": "legal",
           "quote": "Guinea Pig Cavia porcellus",
           "note": "Named on the unrestricted rodent list.",
-          "verifiedOn": "2026-08-05"
+          "verifiedOn": "2026-11-01"
         },
         "AR": {
           "sourceId": "ar-unrestricted",
@@ -11298,7 +11298,7 @@
           "status": "permit",
           "quote": "All Species in Genus Ctenosaura (Spiny-tailed Iguanas)",
           "note": "The only iguanas cleared are the spiny-tailed Ctenosaura. Iguana iguana is not on the list, so the common green iguana needs a permit in Maine while its less commonly kept relative does not.",
-          "verifiedOn": "2026-08-05"
+          "verifiedOn": "2026-11-01"
         },
         "AR": {
           "sourceId": "ar-unrestricted",
@@ -11723,7 +11723,7 @@
           "status": "permit",
           "quote": "Testudines (Turtles And Tortoises)",
           "note": "Chelydra serpentina is native to Maine and does not appear on the list of unrestricted species, which is the ordinary pattern: the list is aimed at exotics and native wildlife is handled under the general permit requirement.",
-          "verifiedOn": "2026-08-05"
+          "verifiedOn": "2026-11-01"
         },
         "AR": {
           "sourceId": "ar-unrestricted",
@@ -12157,7 +12157,7 @@
           "status": "legal",
           "quote": "all species in infraorder Gekkota Except for: Nephrurus deleani Infraorder Gekkota*",
           "note": "Cleared at infraorder level, so every gecko is unrestricted. The asterisk footnote does not bite here: Gekko gecko went onto CITES Appendix II in 2019, and the footnote only removes Appendix I species.",
-          "verifiedOn": "2026-08-05"
+          "verifiedOn": "2026-11-01"
         },
         "AR": {
           "sourceId": "ar-unrestricted",
@@ -12580,7 +12580,7 @@
           "status": "permit",
           "quote": "Amphibia (Amphibians)   Captive Bred Origin Only ... Anura (Frogs And Toads)",
           "note": "Maine's amphibian section contains one order, Anura, and every entry in it is a frog or a toad. There is no Caudata order at all, so no salamander or newt of any species is unrestricted in Maine. The whole section is also limited to captive bred origin.",
-          "verifiedOn": "2026-08-05"
+          "verifiedOn": "2026-11-01"
         },
         "AR": {
           "sourceId": "ar-unrestricted",
@@ -13511,7 +13511,7 @@
           "status": "permit",
           "quote": "Serpentes (Snakes)",
           "note": "The snake section lists pythons individually and neither Python bivittatus nor Python molurus is among them. The asterisk footnote would exclude it in any case, since the Burmese python has been federal injurious wildlife under the Lacey Act since 2012.",
-          "verifiedOn": "2026-08-05"
+          "verifiedOn": "2026-11-01"
         },
         "AR": {
           "status": "restricted",
@@ -13957,7 +13957,7 @@
           "status": "legal",
           "quote": "Octodon degu   Degu",
           "note": "Named individually, which is worth noting because the degu is barred outright in California and Georgia and is a legal gray area in several other states.",
-          "verifiedOn": "2026-08-05"
+          "verifiedOn": "2026-11-01"
         },
         "AR": {
           "sourceId": "ar-unrestricted",
@@ -14346,7 +14346,7 @@
           "status": "permit",
           "quote": "Amphibia (Amphibians)   Captive Bred Origin Only ... Anura (Frogs And Toads)",
           "note": "Same gap as the tiger salamander: the amphibian list is frogs and toads only. The axolotl is also IUCN Critically Endangered, which the footnote would catch even if a salamander order existed.",
-          "verifiedOn": "2026-08-05"
+          "verifiedOn": "2026-11-01"
         },
         "AR": {
           "status": "banned",
@@ -14779,7 +14779,7 @@
           "status": "permit",
           "quote": "Testudines (Turtles And Tortoises)",
           "note": "No Terrapene appears anywhere on the list. The only match for the words box turtle is the Amboina box turtle, which is a Cuora and a different animal. The eastern box turtle is also a species of special concern in Maine, so its own native status is part of the picture.",
-          "verifiedOn": "2026-08-05"
+          "verifiedOn": "2026-11-01"
         },
         "AR": {
           "sourceId": "ar-unrestricted",
@@ -15226,7 +15226,7 @@
           "status": "permit",
           "quote": "Testudines (Turtles And Tortoises)",
           "note": "No Trachemys is on the list. Maine treats the slider as a species it does not want established, so a permit rather than an outright naming is what stands between it and a pet keeper.",
-          "verifiedOn": "2026-08-05"
+          "verifiedOn": "2026-11-01"
         },
         "AR": {
           "sourceId": "ar-unrestricted",
@@ -15675,7 +15675,7 @@
           "status": "permit",
           "quote": "Testudines (Turtles And Tortoises)",
           "note": "The tortoises cleared are the Russian, Greek, Hermann's, leopard, red-footed and yellow-footed. Centrochelys sulcata is not among them, and the footnote would exclude it regardless, since the IUCN moved it to Endangered in 2021.",
-          "verifiedOn": "2026-08-05"
+          "verifiedOn": "2026-11-01"
         },
         "AR": {
           "status": "legal",
@@ -16125,7 +16125,7 @@
           "status": "legal",
           "quote": "Heterodon nasicus   Western Hognose Snake",
           "note": "Only the western hognose is named. The eastern hog-nosed snake is native to Maine and is not on the list, so which species you are buying decides the answer, the same split Rhode Island draws.",
-          "verifiedOn": "2026-08-05"
+          "verifiedOn": "2026-11-01"
         },
         "CA": {
           "sourceId": "ca-671",
@@ -16554,7 +16554,7 @@
           "status": "permit",
           "quote": "Order Psittaciformes*   All Species in Order Psittaciformes (Parrots)   Except for: Myiopsitta monachus; Cyanoliseus patagonus; Enicognathus leptorhynchus; Enicognathus ferrugineus; Family Strigopidae",
           "note": "The whole parrot order is cleared, but the asterisk carries the footnote that removes anything on CITES Appendix I or listed by the IUCN as Endangered. The African grey is both: it moved to Appendix I on January 2, 2017, and was assessed Endangered in 2016, months before this list was published. So the one parrot most people think of is outside the clearance while a macaw is inside it.",
-          "verifiedOn": "2026-08-05"
+          "verifiedOn": "2026-11-01"
         },
         "AR": {
           "sourceId": "ar-unrestricted",
@@ -16983,7 +16983,7 @@
           "status": "legal",
           "quote": "Diplopoda (Millipedes) ... Spirostreptus gigas   Giant African Millipede",
           "note": "Maine gives millipedes their own class section and names the giant African millipede twice, under Spirostreptus gigas and Mardonius parilis acuticonus. The species usually sold under that name today is Archispirostreptus gigas, which is the same animal under a later genus.",
-          "verifiedOn": "2026-08-05"
+          "verifiedOn": "2026-11-01"
         },
         "AR": {
           "sourceId": "ar-unrestricted",
@@ -17649,7 +17649,7 @@
           "cite": "Unrestricted Species List, Reptilia, Serpentes",
           "quote": "All Species in Genus Pantherophis (North American Ratsnakes) Except for: Pantherophis gloydi",
           "note": "A captive-bred corn snake needs no importation, possession, exhibition, propagation or research permit. The whole Reptilia section of the list sits under the heading \"Captive Bred Origin Only\", which is the condition on the clearance: a wild-caught animal of the same species is not unrestricted and falls back to § 7.06(4), under which an uncategorized animal may not be possessed at all. The one excepted species, the eastern fox snake, is Category 2 at 09-137 CMR ch. 7 § 7.18(3)(D). The genus entry carries the asterisk that removes anything USFWS-listed as injurious or as threatened or endangered, anything in CITES Appendix I, and anything the IUCN rates Endangered, Critically Endangered or Extinct in the Wild; Pantherophis guttatus is Least Concern and on none of the others.",
-          "verifiedOn": "2026-09-05"
+          "verifiedOn": "2026-11-01"
         },
         "MO": {
           "status": "legal",
@@ -18062,7 +18062,7 @@
           "cite": "Unrestricted Species List, Reptilia, Serpentes; 12 M.R.S. § 12152(1-B)",
           "quote": "All Species in Genus Lampropeltis (Kingsnakes And Milk Snakes) Except for: Lampropeltis herrerae; Lampropeltis triangulum triangulum",
           "note": "Maine clears the genus and then excepts one subspecies, and it is the state's own: Lampropeltis triangulum triangulum, the eastern milk snake. So a captive-bred milk snake of any other form is unrestricted, subject to the section heading \"Captive Bred Origin Only\". The nominate subspecies is not, and it appears in no other category either, so 09-137 CMR ch. 7 § 7.06(4) bars possessing an imported one and no permit is available for it. What is left is 12 M.R.S. § 12152(1-B): up to two of any native reptile may be taken from the wild in Maine and possessed without a permit, provided it is not imported, exhibited, propagated, exported or sold. The other exception, L. herrerae, is Category 1.",
-          "verifiedOn": "2026-09-05"
+          "verifiedOn": "2026-11-01"
         },
         "MO": {
           "status": "conditional",
@@ -19553,7 +19553,7 @@
           "cite": "Unrestricted Species list, Serpentes (Captive Bred Origin Only)",
           "permitFor": "personal",
           "note": "Maine's unrestricted-species list runs through every North American colubrid genus commonly kept as a pet, kingsnakes, ratsnakes, hognose, watersnakes, and more, and Thamnophis is conspicuously absent from every entry. A Maine garter snake needs the state's separate captivity permit rather than falling under this pet-trade clearance.",
-          "verifiedOn": "2026-08-27"
+          "verifiedOn": "2026-11-01"
         },
         "MN": {
           "status": "conditional",
@@ -19975,7 +19975,7 @@
           "cite": "Unrestricted Species list, Serpentes (Captive Bred Origin Only)",
           "quote": "All Species in Genus Lampropeltis (Kingsnakes And Milk Snakes) Except for: Lampropeltis herrerae; Lampropeltis triangulum triangulum",
           "note": "The whole genus is cleared except two named species, neither of which is the California kingsnake.",
-          "verifiedOn": "2026-08-27"
+          "verifiedOn": "2026-11-01"
         },
         "MN": {
           "status": "conditional",
@@ -20387,7 +20387,7 @@
           "quote": "All Species in Order Psittaciformes (Parrots) Except for: Myiopsitta monachus; Cyanoliseus patagonus; Enicognathus leptorhynchus; Enicognathus ferrugineus; Family Strigopidae *Except if listed on: IUCN Red List (Endangered, Critically Endangered, or Extinct in the Wild) OR CITES Appendix I",
           "permitFor": "personal",
           "note": "Maine clears the whole parrot order but then strips back out anything on CITES Appendix I or the IUCN's Endangered/Critically Endangered tiers. That carve-out catches several of the most commonly kept pet cockatoos: the Moluccan, yellow-crested and Goffin's cockatoos are CITES Appendix I, and the umbrella cockatoo is IUCN Endangered even though it's only CITES Appendix II. Species on neither list, like the cockatiel or galah, would still clear it, but size is no guide: the small Goffin's needs the permit; the larger, more iconic cockatoos generally need Maine's captivity permit instead.",
-          "verifiedOn": "2026-08-27"
+          "verifiedOn": "2026-11-01"
         },
         "MN": {
           "status": "legal",
@@ -20859,7 +20859,7 @@
           "cite": "Unrestricted Species List, Testudines",
           "quote": "Red-footed Tortoise",
           "note": "Maine's own tortoise clearance list (documented in this site's sulcata-tortoise research) names the Russian, Greek, Hermann's, leopard, red-footed and yellow-footed tortoises by common name. The red-footed tortoise is expressly included; the exact binomial spelling used on Maine's PDF was not independently re-verified this round because the source PDF resisted text extraction, so double-check the primary document (maine.gov/ifw/docs/unrestrictedspecies.pdf) before publishing.",
-          "verifiedOn": "2026-08-27"
+          "verifiedOn": "2026-11-01"
         },
         "AR": {
           "status": "legal",
@@ -21341,7 +21341,7 @@
           "cite": "Unrestricted Species List, Reptilia, Sauria",
           "quote": "Bearded Dragon Pogona vitticeps",
           "note": "Named by species rather than by genus, so no asterisk and no conservation-status filter. The whole Reptilia section of the list sits under the heading \"Captive Bred Origin Only\", which is the condition on the clearance: a wild-caught animal of the same species is not unrestricted and falls back to § 7.06(4), under which an uncategorized animal may not be possessed at all.",
-          "verifiedOn": "2026-09-05"
+          "verifiedOn": "2026-11-01"
         },
         "MO": {
           "status": "legal",
@@ -21771,7 +21771,7 @@
           "cite": "Unrestricted Species List, Reptilia, Sauria",
           "quote": "all species in infraorder Gekkota Except for: Nephrurus deleani",
           "note": "Maine clears geckos at infraorder rank, which sidesteps the family-splitting problem that other states run into: Eublepharidae, Diplodactylidae and Gekkonidae are all inside Gekkota. Eublepharis macularius is IUCN Least Concern, not CITES Appendix I and on neither USFWS list, so the asterisk on the entry does not remove it. The one exception, the Pernatty knob-tail, is Category 2. The whole Reptilia section of the list sits under the heading \"Captive Bred Origin Only\", which is the condition on the clearance: a wild-caught animal of the same species is not unrestricted and falls back to § 7.06(4), under which an uncategorized animal may not be possessed at all.",
-          "verifiedOn": "2026-09-05"
+          "verifiedOn": "2026-11-01"
         },
         "MO": {
           "status": "legal",
@@ -22201,7 +22201,7 @@
           "cite": "Unrestricted Species List, Reptilia, Sauria",
           "quote": "all species in infraorder Gekkota Except for: Nephrurus deleani",
           "note": "Correlophus ciliatus is a diplodactylid and therefore inside Gekkota. The asterisk is the thing to check here rather than the taxonomy: it removes anything the IUCN rates Endangered, Critically Endangered or Extinct in the Wild, and the crested gecko is Vulnerable, one rung below the cut. It is not listed under CITES at all, so the Appendix I filter does not touch it. The IUCN rating is close enough that a reassessment would move this cell without Maine changing anything, which is the same exposure Massachusetts carries for the ball python. The whole Reptilia section of the list sits under the heading \"Captive Bred Origin Only\", which is the condition on the clearance: a wild-caught animal of the same species is not unrestricted and falls back to § 7.06(4), under which an uncategorized animal may not be possessed at all.",
-          "verifiedOn": "2026-09-05"
+          "verifiedOn": "2026-11-01"
         },
         "MO": {
           "status": "legal",
@@ -23061,7 +23061,7 @@
           "cite": "Unrestricted Species List, Reptilia, Sauria",
           "quote": "Jackson's Chameleon Trioceros jacksonii",
           "note": "Named by species. Maine does not clear Chamaeleonidae as a family: it lists ten chameleons individually, two Trioceros, two Chamaeleo, three Furcifer, Calumma parsonii, Rhampholeon spectrum and Rieppeleon brevicaudatus, so the species entry is what answers this and a chameleon outside those ten is uncategorized. All chameleons are CITES Appendix II, and the asterisk filter names Appendix I. The whole Reptilia section of the list sits under the heading \"Captive Bred Origin Only\", which is the condition on the clearance: a wild-caught animal of the same species is not unrestricted and falls back to § 7.06(4), under which an uncategorized animal may not be possessed at all.",
-          "verifiedOn": "2026-09-05"
+          "verifiedOn": "2026-11-01"
         },
         "MO": {
           "status": "legal",
@@ -23922,7 +23922,7 @@
           "cite": "Unrestricted Species List, Mammalia, Lagomorpha",
           "quote": "European Rabbit Oryctolagus cuniculus",
           "note": "Named by species, and unconditionally: the \"Captive Bred Origin Only\" heading that qualifies the reptile, turtle and lungfish sections does not appear over Mammalia, and the entry carries no asterisk. Maine answers by naming the species rather than by defining domestication, which is why it does not have to distinguish wild-type Oryctolagus the way Rhode Island and Connecticut do.",
-          "verifiedOn": "2026-09-05"
+          "verifiedOn": "2026-11-01"
         },
         "MO": {
           "status": "legal",
@@ -24351,7 +24351,7 @@
           "cite": "Unrestricted Species List, Insecta, Blattodea",
           "quote": "Madagascar Hissing Cockroach Gromphadorhina portentosa",
           "note": "Maine settles the invertebrate question by naming the animal. Invertebrates are inside the scheme rather than outside it: 09-137 CMR ch. 7 § 7.06(1) says the Unrestricted List covers \"species of fish and wildlife, including tropical fish and invertebrates\", and the list has sections for insects, worms and millipedes. Only one cockroach shares the entry, the dubia roach, so this is a considered listing. No asterisk, so no conservation-status filter, and no captive-bred condition, which the list applies only to reptiles, turtles and lungfishes.",
-          "verifiedOn": "2026-09-05"
+          "verifiedOn": "2026-11-01"
         },
         "MO": {
           "status": "legal",
