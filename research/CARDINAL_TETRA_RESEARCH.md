@@ -595,3 +595,5 @@ Distinct new URLs opened and used today: 33 (C17 to C23 and C25 to C50, counting
 - Unsourced items written into the guides anyway (owner review): lighting, juvenile feeding frequency, lifespan.
 - Unsourced items NOT written into the guides: days a tetra can go without food (vacation), heater and light wattages for an electricity estimate, small-fish netting technique where unsourced, and every other new unsourced item from the expansion research. They stay listed in this file.
 - No medication is ever called shrimp-safe.
+
+- Owner decision (2026-11-01): juvenile feeding is three to four small meals a day, tapering to the adult schedule, in all three tetra feeding guides (matches the neon guide's existing FAQ and the only figure found).
