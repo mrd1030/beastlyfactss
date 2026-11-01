@@ -2631,7 +2631,7 @@
     "title": "Angelfish Tank Setup: Height Matters More Than You'd Think",
     "seoTitle": "Angelfish Tank Setup Guide",
     "seoDescription": "Angelfish need height, not just gallons: a 29-gallon tall tank minimum, 55 for a group of 4-6, at least 18-20 inches, plus a secure lid, they jump.",
-    "lastUpdated": "2026-09-25",
+    "lastUpdated": "2026-11-01",
     "noIndex": false,
     "excerpt": "Angelfish have an unusual body shape for a community fish, tall and laterally flattened, and that shape drives nearly every decision in setting up their tank correctly.",
     "date": "2026-07-17",
@@ -2693,7 +2693,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 3,
+    "sourceCount": 4,
     "headingCount": 11,
     "ledeMatchesExcerpt": true,
     "imageWidth": 1168,
@@ -2881,7 +2881,7 @@
       },
       {
         "q": "Is aquarium salt safe for all fish?",
-        "a": "No. The tablespoon per 5 gallons is for scaled fish. Corydoras, plecos and loaches take salt badly, and it is not for a shrimp tank at all. For those, malachite green or formalin in a hospital tank is the route, dosed as the label directs for scaleless fish, which for formalin means half the usual amount."
+        "a": "No. The 4 to 5 grams per liter salt dose is for scaled fish. Corydoras, plecos and loaches take salt badly, and it is not for a shrimp tank at all. For those, malachite green or formalin in a hospital tank is the route, dosed as the label directs for scaleless fish, which for formalin means half the usual amount."
       },
       {
         "q": "Should I treat in the display tank or a hospital tank?",
@@ -6519,7 +6519,7 @@
       },
       {
         "q": "How do I know if my betta has ich or velvet?",
-        "a": "Ich shows up as small white grains across the body and fins, along with scratching against decor, and is treated by slowly raising the tank to 86°F with an air stone and holding it for two weeks, or with aquarium salt at about a tablespoon per 5 gallons. Velvet gives the fish a fine gold or rust-colored dusty sheen, moves fast, and needs a darkened tank plus an antiparasitic or copper treatment started early."
+        "a": "Ich shows up as small white grains across the body and fins, along with scratching against decor, and is treated by slowly raising the tank to 86°F with an air stone and holding it for two weeks, or with aquarium salt at 4 to 5 grams per liter. Velvet gives the fish a fine gold or rust-colored dusty sheen, moves fast, and needs a darkened tank plus an antiparasitic or copper treatment started early."
       },
       {
         "q": "What causes swim bladder disorder in bettas?",
@@ -6552,7 +6552,7 @@
     "title": "Betta Fish Tank Setup: Bigger, Warmer, and Cycled",
     "seoTitle": "Betta Fish Tank Setup Guide",
     "seoDescription": "Betta fish tank setup: 5 gallons minimum, a 15-25W heater holding 76-82°F, and a gentle sponge filter, bettas' long fins can't handle strong current.",
-    "lastUpdated": "2026-10-03",
+    "lastUpdated": "2026-11-01",
     "noIndex": false,
     "excerpt": "The bowl-on-a-desk image most people have of betta fish is outdated. Modern betta care centers on a proper heated, filtered tank, and the setup itself isn't complicated once you know what matters.",
     "date": "2026-07-14",
@@ -6609,8 +6609,8 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 5,
-    "headingCount": 9,
+    "sourceCount": 6,
+    "headingCount": 10,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
     "imageHeight": 784
@@ -10035,7 +10035,7 @@
     "title": "Bristlenose Pleco Tank Setup: Driftwood Is the Detail That Actually Matters",
     "seoTitle": "Bristlenose Pleco Tank Setup Guide",
     "seoDescription": "Bristlenose pleco tank setup guide: the common-pleco size trap, real tank size, why driftwood is required, substrate, and filtration.",
-    "lastUpdated": "2026-09-25",
+    "lastUpdated": "2026-11-01",
     "noIndex": false,
     "excerpt": "Before tank size or filtration, the decision that matters most with a bristlenose pleco is confirming it's the fish you think it is. Get that right, and the rest of the setup is simple.",
     "date": "2026-09-14",
@@ -18474,7 +18474,7 @@
     "title": "Discus Tank Setup: Why the Water-Change Routine Matters More Than the Gallon Number",
     "seoTitle": "Discus Tank Setup Guide",
     "seoDescription": "Discus tank setup guide: tank size, 82-86°F temperature, soft acidic water, filtration choices, substrate, and the water-change routine that matters most.",
-    "lastUpdated": "2026-09-25",
+    "lastUpdated": "2026-11-01",
     "noIndex": false,
     "excerpt": "Discus tolerate a narrower range of water conditions than most community fish, and the tank size number matters less than most people expect, the water-change routine is what separates a discus tank that works from one that doesn't.",
     "date": "2026-09-09",
@@ -18537,7 +18537,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4,
+    "sourceCount": 5,
     "headingCount": 12,
     "ledeMatchesExcerpt": true,
     "imageWidth": 1200,
@@ -19149,7 +19149,7 @@
     "faqs": [
       {
         "q": "Can you treat ich in ember tetras with heat?",
-        "a": "Not with heat alone. Most ich strains die above 86°F, and the ember tetra's range tops out at 82°F. Warm the tank slowly to 82°F with an air stone running, which speeds up the parasite's cycle, and let aquarium salt at about a tablespoon per 5 gallons or an ich medication do the killing."
+        "a": "Not with heat alone. Most ich strains die above 86°F, and the ember tetra's range tops out at 82°F. Warm the tank slowly to 82°F with an air stone running, which speeds up the parasite's cycle, and let an ich medication do the killing. Salt is unproven for this species at the 4 to 5 grams per liter that kills ich; use an ich medication instead."
       },
       {
         "q": "How long should new ember tetras be quarantined?",
@@ -21449,7 +21449,7 @@
       },
       {
         "q": "How much aquarium salt should I use to treat a sick fish?",
-        "a": "The usual starting dose for ich in freshwater fish is about one tablespoon of aquarium salt per 5 gallons of water, added gradually so the fish can acclimate, and only for scaled fish. Dose depends heavily on the species and the condition, so anything beyond that starting point comes from a current product label or your vet."
+        "a": "The dose that kills ich in freshwater fish is 4 to 5 grams per liter (about 15 to 19 grams per gallon) for 7 to 10 days, added gradually so the fish can acclimate, and only for scaled fish that tolerate salt. Dose depends heavily on the species and the condition, so anything beyond that starting point comes from a current product label or your vet."
       },
       {
         "q": "Do I need to remove activated carbon before treating my fish with medication?",
@@ -25349,7 +25349,7 @@
     "title": "Goldfish Tank Setup: Bigger Than You Think, Filtered More Than You'd Guess",
     "seoTitle": "Goldfish Tank Setup Guide",
     "seoDescription": "Goldfish need at least 20 gallons for one fancy fish, 55+ for single tails, and filtration turning over tank volume 10 times an hour or more.",
-    "lastUpdated": "2026-10-03",
+    "lastUpdated": "2026-11-01",
     "noIndex": false,
     "excerpt": "If you take away one thing from goldfish care, make it this: the bowl is wrong, and the tank you need is bigger than most people expect for what looks like a small, simple fish.",
     "date": "2026-07-20",
@@ -27645,7 +27645,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 3,
+    "sourceCount": 4,
     "headingCount": 9,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
@@ -32388,7 +32388,7 @@
     "title": "Koi Pond Setup: Built for Waste Volume, Not Just Water Volume",
     "seoTitle": "Koi Pond Setup Guide",
     "seoDescription": "Koi pond setup: volume and depth sized for waste, not just water, filtration, temperature, substrate, and the predator and winter prep details beginners miss.",
-    "lastUpdated": "2026-09-25",
+    "lastUpdated": "2026-11-01",
     "noIndex": false,
     "excerpt": "Koi husbandry is water management at scale. Get the volume, filtration, and depth right, and koi are hardy, low-drama fish.",
     "date": "2026-07-28",
@@ -32445,7 +32445,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4,
+    "sourceCount": 5,
     "headingCount": 10,
     "ledeMatchesExcerpt": true,
     "imageWidth": 1168,
@@ -35940,7 +35940,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 3,
+    "sourceCount": 4,
     "headingCount": 10,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
@@ -54247,7 +54247,7 @@
     "title": "Zebra Danio Tank Setup: The Rare Community Fish That Might Not Need a Heater",
     "seoTitle": "Zebra Danio Tank Setup Guide: Size and Temp",
     "seoDescription": "Zebra danio tank setup guide: size for a proper school, 64-77°F tolerance, open swimming space, and a secure lid.",
-    "lastUpdated": "2026-09-25",
+    "lastUpdated": "2026-11-01",
     "noIndex": false,
     "excerpt": "Zebra danios come from monsoon-flooded streams and rice paddies across South Asia, water that swings from cool to warm across the year. That wide tolerance is real, and it's why this is one of the only community fish where a heater is optional rather than mandatory.",
     "date": "2026-09-14",
@@ -54308,8 +54308,8 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 5,
-    "headingCount": 8,
+    "sourceCount": 6,
+    "headingCount": 9,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
     "imageHeight": 784
