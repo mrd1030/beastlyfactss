@@ -156,6 +156,24 @@ export const fishSheets = {
       { item: "neon-tetra-gentle-filter", text: "[Sponge filter] for the quarantine tank" },
     ],
   },
+  'glowlight-tetra': {
+    animal: [30, 50],
+    necessities: [
+      { item: "molly-20-gallon-tank", text: "[20 gallon tank] with a base of at least 24 x 15 inches" },
+      { item: "angelfish-aquarium-heater", text: "[Aquarium heater]" },
+      { item: "neon-tetra-gentle-filter", text: "[Sponge filter]" },
+      { item: "neon-tetra-dense-live-silk-plants", text: "[Live plants] in varied heights, with floating plants on top" },
+      { item: "sand-caribsea-10lb", qty: 1, text: "Fine [sand] (check the quantity against your tank's floor)" },
+      { item: "water-test-kit-liquid", text: "Liquid [water test kit]" },
+      { item: "water-conditioner", text: "[Water conditioner] that neutralizes chlorine and chloramine" },
+      { item: "fish-food-micro-pellets", text: "First supply of [micro pellets]" },
+    ],
+    extras: [
+      { item: "goldfish-bare-10-gallon-tank", text: "Bare [10 gallon tank] for quarantine, with no substrate or decor" },
+      { item: "guppy-aquarium-heater", text: "[Heater] for the quarantine tank" },
+      { item: "neon-tetra-gentle-filter", text: "[Sponge filter] for the quarantine tank" },
+    ],
+  },
   'guppy': {
     animal: [2, 20],
     necessities: [
