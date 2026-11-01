@@ -9,6 +9,7 @@ import { CATEGORIES } from '@/lib/data/categories';
 import { mdxPosts } from '@/lib/mdxPosts';
 import { isChroniclesPost } from '@/lib/chronicles';
 import CompactPostCard from '@/components/shared/CompactPostCard';
+import AskBeastly, { isQuestion } from '@/components/search/AskBeastly';
 import { searchLocalContent, normalizeQuery, correctQuery } from '@/lib/localSearch';
 import { Search as BadgeIcon } from 'lucide-react';
 import IconChip, { PageBadge } from '@/components/shared/IconChip';
@@ -92,6 +93,12 @@ export default function Search() {
   // rescue until the query changes again.
   const [forceRaw, setForceRaw] = useState(false);
   const debounceRef = useRef(null);
+  // Enter in the search box asks Ask Beastly when the query reads as a
+  // question (three words or more); a shorter query just searches.
+  const [askSignal, setAskSignal] = useState(0);
+  // An answer or legal links already help the reader, so the "No results
+  // found" block below would only contradict them.
+  const [askResult, setAskResult] = useState(null);
 
   // Newest-first to match the old `| order(publishedAt desc)` query, so the
   // default "relevance" sort (deliberately a no-op) keeps the same ordering.
@@ -202,7 +209,8 @@ export default function Search() {
                 type="text"
                 value={query}
                 onChange={e => handleInput(e.target.value)}
-                placeholder="Search care guides and articles…"
+                onKeyDown={e => { if (e.key === 'Enter' && isQuestion(query)) setAskSignal(n => n + 1); }}
+                placeholder="Search, or ask a question…"
                 className="w-full bg-card border border-border rounded-2xl pl-12 pr-12 py-3.5 text-base font-body focus:outline-none focus:ring-2 focus:ring-secondary/50 text-foreground placeholder:text-muted-foreground shadow-sm"
               />
               {query && (
@@ -211,6 +219,7 @@ export default function Search() {
                 </button>
               )}
             </div>
+            <AskBeastly query={query} askSignal={askSignal} onReply={setAskResult} hasResults={sorted.length + localResultsFlat.length > 0} />
           </motion.div>
         </div>
       </div>
@@ -278,7 +287,7 @@ export default function Search() {
         )}
 
         {/* Sort + count */}
-        {hasSearched && query && (
+        {hasSearched && query && !(sorted.length === 0 && (askResult === 'answered' || askResult === 'legal')) && (
           <div className="flex items-center justify-between mb-4">
             <p className="text-sm font-body text-muted-foreground">
               {`${sorted.length} result${sorted.length !== 1 ? 's' : ''} for "${query}"`}
@@ -311,7 +320,7 @@ export default function Search() {
         )}
 
         {/* Empty state */}
-        {hasSearched && query && sorted.length === 0 && localResultsFlat.length === 0 && (
+        {hasSearched && query && sorted.length === 0 && localResultsFlat.length === 0 && askResult !== 'answered' && askResult !== 'legal' && (
           <div className="text-center py-16">
             <IconChip icon={SearchX} color="gray" size="empty" className="mb-3" />
             <p className="font-display font-bold text-foreground text-lg">No results found</p>
