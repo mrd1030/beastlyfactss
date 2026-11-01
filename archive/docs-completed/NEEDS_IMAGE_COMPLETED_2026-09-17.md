@@ -8,6 +8,14 @@ Newest first.
 
 ---
 
+## 2026-11-01: rummy-nose feeding, health issues and enrichment heroes
+
+`/assets/images/rummy-nose-tetra-{feeding,health-issues,enrichment}.jpg`, Adobe
+Firefly with Nano Banana 2, owner approved. 3:2, resized to 1168x784 through
+mozjpeg at quality 80. The cost, tank setup and handling frames were sent back
+(a malformed tank, and schools drawn as identical copies) and stay open in
+NEEDS_IMAGE.md. Recorded in IMAGE_CREDITS.md.
+
 ## 2026-11-01: tetras group page head
 
 `/assets/guides/tetras.jpg`, the photo for "Tetra Care: The Essentials". Four
