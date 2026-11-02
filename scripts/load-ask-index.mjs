@@ -17,9 +17,12 @@
 // and reloads everything.
 //
 // Schema (the worker reads table names from ask_meta.slot, here 'live'):
-//   ask_meta(key PRIMARY KEY, value)   slot, loaded_at, chunks, meta_hash, and
-//                                      the JSON lookups aliases, species,
-//                                      states, legal
+//   ask_meta(key PRIMARY KEY, value)   slot, loaded_at, chunks, meta_hash,
+//                                      content_hash (one hash over every chunk
+//                                      and legal cell: a build with nothing new
+//                                      stops after reading it), and the JSON
+//                                      lookups aliases, species, states,
+//                                      legal, facts
 //   chunks_live(id INTEGER PRIMARY KEY, key UNIQUE, hash, slug, title,
 //               heading, anchor, url, species, type, text, words)
 //               key is type|url|heading, unique per chunk
@@ -138,6 +141,18 @@ async function main() {
       PRIMARY KEY (animal, code))`);
   }
 
+  // One hash over every chunk and legal cell. When it and the meta match what
+  // the last load saved, nothing changed and the load stops here, reading
+  // about 4 rows. Comparing chunk by chunk (and the row counts) reads about
+  // 26,000 rows, which on a night of branch pushes every few minutes was
+  // over 100,000 rows read every 15 minutes (owner, 2026-11-01).
+  const contentHash = sha([chunks.map((c) => c.key + c.hash), legal.map((c) => c.hash)]);
+  const saved = Object.fromEntries((await rows("SELECT key, value FROM ask_meta WHERE key IN ('slot', 'meta_hash', 'content_hash', 'chunks')")).map((r) => [r.key, r.value]));
+  if (!fresh && saved.slot === SLOT && saved.meta_hash === metaHash && saved.content_hash === contentHash) {
+    console.log(`Ask index load: no content changed, nothing read or written (${saved.chunks} chunks live).`);
+    return;
+  }
+
   // ---------------------------------------------------------------- chunks
   const liveChunks = new Map((fresh ? [] : await rows(`SELECT key, hash FROM ${CHUNKS}`)).map((r) => [r.key, r.hash]));
   const wantChunks = new Map(chunks.map((c) => [c.key, c]));
@@ -182,11 +197,11 @@ async function main() {
   if (n !== chunks.length) throw new Error(`index holds ${n} chunks, expected ${chunks.length}`);
   if (ln !== legal.length) throw new Error(`index holds ${ln} legal cells, expected ${legal.length}`);
 
-  const liveMeta = Object.fromEntries((await rows("SELECT key, value FROM ask_meta WHERE key IN ('slot', 'meta_hash')")).map((r) => [r.key, r.value]));
-  const metaChanged = liveMeta.meta_hash !== metaHash || liveMeta.slot !== SLOT;
+  const metaChanged = saved.meta_hash !== metaHash || saved.slot !== SLOT;
   const changed = dropKeys.length + addChunks.length + dropCells.length + addCells.length;
-  if (metaChanged || changed) {
-    const metaRows = [['slot', SLOT], ['loaded_at', new Date().toISOString()], ['chunks', String(n)], ['meta_hash', metaHash],
+  if (metaChanged || changed || saved.content_hash !== contentHash) {
+    const metaRows = [['slot', SLOT], ['chunks', String(n)], ['meta_hash', metaHash], ['content_hash', contentHash],
+      ...(metaChanged || changed ? [['loaded_at', new Date().toISOString()]] : []),
       ...(metaChanged ? Object.entries(meta).map(([k, v]) => [k, JSON.stringify(v)]) : [])];
     await query(`INSERT INTO ask_meta (key, value) VALUES
       ${metaRows.map(([k, v]) => `(${sqlString(k)}, ${sqlString(v)})`).join(', ')}
