@@ -127,6 +127,12 @@ In `public/_worker.js`, listed in `public/_routes.json`. In order:
    species' care guide hub, unless the first link already is the hub or its
    encyclopedia profile (one page with a toggle). Other search hits never
    show. With no READ, the old order: the top three search hits.
+   "Show me a fun fact" (owner, 2026-11-02): a question that says fact or
+   facts and names no animal gets one fact at random from the facts page,
+   as written, with links to that fact and to /facts/. No model call, one
+   row read (by key, from the url list in ask_meta.facts). The site keeps
+   no popularity count, so "most popular" gets a random one too. With an
+   animal named, the normal search answers.
 5. Search: nicknames expanded, the named species used as a filter ("tortoise"
    also reaches sulcata and Russian), a few reader word synonyms (tank and
    enclosure, eat and feed, poop and droppings), a boost for the matching split

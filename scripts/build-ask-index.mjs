@@ -495,6 +495,8 @@ chunks.forEach((c, i) => {
 //             one (the UI pulls that hub's emergency card)
 //   states    the legal matrix jurisdictions, name -> /exotic-pet-laws/state/<slug>/
 //   legal     the legal matrix animals, for /exotic-pet-laws/<id>/
+//   facts     every fact page's url, for "show me a fun fact" (the worker
+//             picks one and reads that one row by its key)
 const LEGAL = JSON.parse(fs.readFileSync(path.join(ROOT, 'src/lib/data/legalStatus.json'), 'utf8'));
 const stateSlug = (name) => name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 const guideIdByName = new Map(guidesIndex.map((g) => [g.name.toLowerCase(), g.id]));
@@ -510,6 +512,7 @@ const meta = {
   legal: Object.entries(LEGAL.animals)
     .map(([id, a]) => ({ id, name: a.name, article: a.article || null }))
     .sort((a, b) => b.name.length - a.name.length),
+  facts: chunks.filter((c) => c.type === 'fact').map((c) => c.url),
 };
 
 fs.mkdirSync(OUT_DIR, { recursive: true });

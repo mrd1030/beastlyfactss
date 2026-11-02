@@ -1422,6 +1422,7 @@ async function askMeta(db) {
     species: parse(m.species, []),
     states: parse(m.states, []),
     legal: parse(m.legal, []),
+    facts: parse(m.facts, []),
   };
   return askMetaCache;
 }
@@ -1459,6 +1460,7 @@ function askFindName(q, list) {
 // "files", "hub" and "section" name a place on the site on their own, with
 // no verb needed ("betta fish files", "betta section").
 const ASK_NAV_RE = /\b(where(?:'s|s|’s)?\b|show me|find(?! out)|take me|link (me )?to|go to|get to|point me|looking for|browse)\b/;
+const ASK_FACT_RE = /\bfacts?\b/;
 const ASK_SITE_PLACE_RE = /\b(files?|hub|sections?)\b/;
 const ASK_CORRECTION = new Set('sorry oops meant mean typo spelled spelling actually wrong i'.split(' '));
 const ASK_PLACE_RE = /\b(guides?|pages?|files?|info|information|sections?|sheets?|hub|articles?|stuff|everything|posts?)\b/;
@@ -1562,6 +1564,12 @@ async function askRetrieve(db, question, context = null) {
   const ownWords = qOwn.split(/[\s-]+/).map((t) => t.replace(/'s$|'|\*/g, ''))
     .filter((t) => t.length > 1 && !ASK_STOPWORDS.has(t) && !speciesWords.has(t) && !ASK_CORRECTION.has(t));
   const navText = followUp && ownWords.length === 0 ? `${qOwn} ${prev}` : qOwn;
+  // "Show me a fun fact", "any cool facts?": with no animal named, one fact
+  // at random from the facts page, read by its key (one row), no model call.
+  // With an animal named, the normal search finds its facts articles.
+  if (!species && ASK_FACT_RE.test(qOwn) && meta.facts.length) {
+    return { chunks: [], species: null, best: null, legal: false, fact: true, meta, q, qOwn, followUp };
+  }
   if (species?.guideId && ((ASK_NAV_RE.test(navText) && ASK_PLACE_RE.test(navText)) || ASK_SITE_PLACE_RE.test(navText))) {
     return { chunks: [], species, best: null, legal: false, nav: true, meta, q, qOwn, followUp };
   }
@@ -1729,6 +1737,24 @@ async function handleAsk(request, env, ctx) {
       emergency: false,
       species,
       followUp: found.followUp,
+    });
+  }
+
+  if (found.fact) {
+    const pick = found.meta.facts[Math.floor(Math.random() * found.meta.facts.length)];
+    let row = null;
+    try {
+      row = await env.ASK_DB.prepare(`SELECT title, url, text FROM chunks_${found.meta.slot} WHERE key = ?`).bind(`fact|${pick}|`).first();
+    } catch { /* falls through to the facts page link */ }
+    log('answered', row ? [row.url] : []);
+    return storeJson({
+      result: 'answered',
+      // The fact as written, without its "Source:" line (the fact page shows it).
+      answer: row ? row.text.replace(/\n\s*Source:[\s\S]*$/, '').trim() : 'Our facts page has hundreds, each with its source.',
+      links: [...(row ? [{ title: row.title, url: row.url }] : []), { title: 'All our animal facts', url: '/facts/' }],
+      emergency: false,
+      species: null,
+      followUp: false,
     });
   }
 
