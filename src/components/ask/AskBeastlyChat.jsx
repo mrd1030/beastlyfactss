@@ -48,6 +48,8 @@ export default function AskBeastlyChat() {
   const [ui, setUiState] = useState(readUi);
   const [history, setHistory] = useState(readHistory);
   const [pending, setPending] = useState(null);
+  // Clearing cannot be undone, so the trash button asks first.
+  const [confirmClear, setConfirmClear] = useState(false);
   const [input, setInput] = useState('');
   const [captchaToken, setCaptchaToken] = useState('');
   const [captchaNonce, setCaptchaNonce] = useState(0);
@@ -178,7 +180,9 @@ export default function AskBeastlyChat() {
   let placement;
   let style;
   if (isMobile) {
-    placement = 'left-0 right-0 bottom-0 h-[78vh] rounded-t-2xl border-t';
+    // Sits on the tab bar rather than under it, and slides down with it when
+    // the bar hides while reading (data-follows-tabs, index.css).
+    placement = 'left-0 right-0 bottom-[calc(56px+var(--safe-area-inset-bottom,0px))] h-[72vh] rounded-t-2xl border-t';
   } else if (docked) {
     placement = 'right-0 top-14 bottom-0 border-l shadow-2xl';
     style = { width: PANEL_W };
@@ -196,12 +200,15 @@ export default function AskBeastlyChat() {
 
   return (
     <>
-      {isMobile && <div className="fixed inset-0 z-40 bg-black/30" onClick={() => setUi({ mode: 'minimized' })} aria-hidden="true" />}
+      {isMobile && <div className="fixed inset-0 z-[48] bg-black/30" onClick={() => setUi({ mode: 'minimized' })} aria-hidden="true" />}
+      {/* One layer under the navbar and the phone tab bar (both z-50), so the
+          navbar's menus always open over the chat, docked or not. */}
       <section
         data-ask-panel
+        data-follows-tabs={isMobile ? '' : undefined}
         role="dialog"
         aria-label="Ask Beastly"
-        className={`fixed z-50 bg-card border-border flex flex-col ${placement}`}
+        className={`fixed z-[49] bg-card border-border flex flex-col ${placement}`}
         style={style}
       >
         <header
@@ -215,7 +222,7 @@ export default function AskBeastlyChat() {
           <Sparkles className="w-4 h-4 text-secondary" aria-hidden="true" />
           <h2 className="font-display font-bold text-base text-foreground flex-1">Ask Beastly</h2>
           {history.length > 0 && (
-            <button type="button" onClick={clearHistory} aria-label="Clear today's questions" title="Clear today's questions" className="p-1.5 rounded-lg text-muted-foreground hover:text-foreground">
+            <button type="button" onClick={() => setConfirmClear(true)} aria-label="Clear today's questions" title="Clear today's questions" className="p-1.5 rounded-lg text-muted-foreground hover:text-foreground">
               <Trash2 className="w-4 h-4" />
             </button>
           )}
@@ -237,6 +244,18 @@ export default function AskBeastlyChat() {
             <X className="w-4 h-4" />
           </button>
         </header>
+
+        {confirmClear && history.length > 0 && (
+          <div role="alertdialog" aria-label="Clear today's questions?" className="flex flex-wrap items-center gap-2 px-4 py-2.5 border-b border-border bg-destructive/5">
+            <p className="flex-1 min-w-[10rem] text-sm font-body text-foreground">Clear today's questions? This can't be undone.</p>
+            <button type="button" onClick={() => setConfirmClear(false)} className="text-sm font-body font-semibold px-3 py-1.5 rounded-full text-muted-foreground hover:text-foreground">
+              Cancel
+            </button>
+            <button type="button" onClick={() => { clearHistory(); setConfirmClear(false); }} className="text-sm font-body font-bold px-3 py-1.5 rounded-full bg-destructive text-destructive-foreground hover:opacity-90">
+              Clear
+            </button>
+          </div>
+        )}
 
         <div ref={listRef} className="flex-1 overflow-y-auto px-4 py-4 space-y-4">
           {history.length === 0 && !pending && (
