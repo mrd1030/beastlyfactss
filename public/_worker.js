@@ -1347,8 +1347,17 @@ const ASK_STOPWORDS = new Set((
   'out over own same she should so some such than that the their theirs them then there these they this those ' +
   'through to too under until up very was we were what when where which while who whom why will with would you ' +
   'your yours yourself im ive id dont doesnt isnt cant wont thing things get got getting really much many lot ' +
-  'pet pets ok okay need want know tell please one ones also best good ideal right proper stop start make way ways'
+  'pet pets ok okay need want know tell please one ones also best good ideal right proper stop start make way ways ' +
+  // Spoken filler (owner, 2026-11-02): readers type the way they talk ("like,
+  // a hamster", "um so my gecko..."). Left in, these count as words the
+  // passage must contain, which drags a good match under the coverage bar.
+  'like um umm uh uhh uhm erm er hmm hm ah oh eh well yeah yea yep yup nah ' +
+  'actually basically literally honestly seriously kinda sorta kind sort guess think mean ' +
+  'anyway anyways idk lol lmao omg pls plz thx thanks hey hi hello'
 ).split(' '));
+// Stretched filler: "ummmm", "uhhh", "hmmmm", "sooo", "lolol".
+const ASK_FILLER_RE = /^(u+m+|u+h+m*|h+m+|e+r+m*|a+h+|o+h+|e+h+|s+o+o+|l+o+l+(o+l+)*|l+m+a+o+)$/;
+const askIsWord = (t) => t.length > 1 && !ASK_STOPWORDS.has(t) && !ASK_FILLER_RE.test(t);
 
 // Care words: when the question has one, guide sections outrank fact cards.
 // Words readers use for the same thing the guides call something else. A
@@ -1555,7 +1564,7 @@ async function askRetrieve(db, question, context = null) {
   const species = askFindName(q, meta.species);
   const speciesWords = new Set(species ? askNormalize(species.name).split(/[\s-]+/) : []);
   const tokens = [...new Set(
-    q.split(/[\s-]+/).map((t) => t.replace(/'s$|'/g, '')).filter((t) => t.length > 1 && !ASK_STOPWORDS.has(t)),
+    q.split(/[\s-]+/).map((t) => t.replace(/'s$|'/g, '')).filter(askIsWord),
   )];
   if (!tokens.length) return { chunks: [], species, best: null, legal: false, meta, q, qOwn, followUp };
 
@@ -1571,7 +1580,7 @@ async function askRetrieve(db, question, context = null) {
   // A follow-up that only corrects the last question ("sorry, *betta", "I
   // meant betta": nothing new beyond the animal) carries its where-is intent.
   const ownWords = qOwn.split(/[\s-]+/).map((t) => t.replace(/'s$|'|\*/g, ''))
-    .filter((t) => t.length > 1 && !ASK_STOPWORDS.has(t) && !speciesWords.has(t) && !ASK_CORRECTION.has(t));
+    .filter((t) => askIsWord(t) && !speciesWords.has(t) && !ASK_CORRECTION.has(t));
   const navText = followUp && ownWords.length === 0 ? `${qOwn} ${prev}` : qOwn;
   if (!species && ASK_PET_REF_RE.test(qOwn)) {
     return { chunks: [], species: null, best: null, legal: false, clarify: true, meta, q, qOwn, followUp };
@@ -1729,7 +1738,7 @@ async function handleAsk(request, env, ctx) {
 
   if (!(await askVerifyTurnstile(env, request, String(body?.captcha || '')))) return quiet('unavailable');
 
-  const log = (result, slugs = [], extra = {}) => askLog(env, ctx, question, slugs, result, extra);
+  const log = (result, slugs = [], extra = {}, push = {}) => askLog(env, ctx, question, slugs, result, extra, push);
 
   // The sharetest project (beastlyfactss-sharetest.pages.dev) is where Ask
   // Beastly is built and tested: there the per-visitor hourly limit is off
@@ -1853,7 +1862,8 @@ async function handleAsk(request, env, ctx) {
 
   // answer_slug: the page the model named (READ), next to matched_slugs in
   // search order, to see how often its pick is not the top hit.
-  log('answered', slugs, { answer_slug: reply.best?.slug || null });
+  log('answered', slugs, { answer_slug: reply.best?.slug || null },
+    { answer: reply.answer, page: reply.best ? reply.best.title : null });
   return storeJson({
     result: 'answered',
     answer: reply.answer,
@@ -2068,7 +2078,10 @@ const ASK_NTFY_TITLES = {
   clarify: 'Asked which animal',
 };
 
-function askLog(env, ctx, question, matchedSlugs, result, extra = {}) {
+// push: what the phone notification adds beyond the question. On an answer,
+// the answer itself and the page the model took it from (owner, 2026-11-02);
+// neither is stored in Supabase.
+function askLog(env, ctx, question, matchedSlugs, result, extra = {}, push = {}) {
   const jobs = [];
   if (hasSupabaseEnv(env)) {
     jobs.push(supabaseFetch(env, '/rest/v1/ask_log', {
@@ -2079,14 +2092,16 @@ function askLog(env, ctx, question, matchedSlugs, result, extra = {}) {
   }
   const mode = env?.ASK_NTFY_MODE === 'gaps' ? 'gaps' : 'all';
   if (env?.NTFY_ASK_TOPIC && ASK_NTFY_TITLES[result] && (mode === 'all' || result === 'no_match')) {
-    const page = matchedSlugs[0] ? `\n\n${result === 'no_match' ? 'Closest page' : 'From'}: ${matchedSlugs[0]}` : '';
+    const from = push.page || matchedSlugs[0];
+    const page = from ? `\n\n${result === 'no_match' ? 'Closest page' : 'From'}: ${from}` : '';
+    const answer = push.answer ? `\n\nAnswer: ${push.answer}` : '';
     jobs.push(fetch('https://ntfy.sh', {
       method: 'POST',
       headers: { 'content-type': 'application/json' },
       body: JSON.stringify({
         topic: env.NTFY_ASK_TOPIC,
         title: `Ask Beastly: ${ASK_NTFY_TITLES[result]}`,
-        message: `${question}${page}`,
+        message: `${question}${answer}${page}`,
         tags: [result === 'no_match' ? 'grey_question' : result === 'legal' ? 'scales' : 'speech_balloon'],
         priority: result === 'no_match' ? 3 : 2,
       }),

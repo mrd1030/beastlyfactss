@@ -170,7 +170,9 @@ In `public/_worker.js`, listed in `public/_routes.json`. In order:
    the chat the reader's next message carries it: "a hamster" searches as
    "a hamster he's acting weird". A follow-up that names the animal the
    last question lacked always carries the last question along.
-6. Search: nicknames expanded, the named species used as a filter ("tortoise"
+6. Search: spoken filler dropped first (owner, 2026-11-02): "like", "um",
+   "uh", "kinda", "idk", "lol" and stretched forms ("ummmm", "hmmm",
+   "sooo"), so "like, um, a hamster" searches as "hamster". Then nicknames expanded, the named species used as a filter ("tortoise"
    also reaches sulcata and Russian), a few reader word synonyms (tank and
    enclosure, eat and feed, poop and droppings), a boost for the matching split
    care guide and for headings that name the question, and guides ahead of
@@ -312,7 +314,9 @@ recommendation), like the contact form: set `NTFY_ASK_TOPIC` (a private topic
 name, never in code) and `ASK_NTFY_MODE`. `all` (the default) pushes every
 question with its result and the page it came from; `gaps` pushes only
 questions the site does not cover. Start with `all` while traffic is small,
-switch to `gaps` once it passes about 10 a day. `capped` never pushes.
+switch to `gaps` once it passes about 10 a day. `capped` never pushes. An
+answered push carries the answer and the title of the page the model took it
+from (owner, 2026-11-02); other results show the closest page.
 
 ## Setup
 
