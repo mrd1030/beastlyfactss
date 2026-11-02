@@ -310,7 +310,11 @@ export default function Guides() {
                       count={entry.members.length}
                       defaultOpen={!!search.trim() || !!activeSubtype}
                     >
-                      <BrowseRow {...rowFor(entry.hub)} />
+                      {/* Inside its folder the overview card drops the part
+                          the folder already says: "Livebearer Care: The
+                          Essentials" reads "The Essentials", one line like
+                          the cards beside it, not two. */}
+                      <BrowseRow {...rowFor(entry.hub)} name={entry.hub.name.replace(/^[^:]+:\s*/, '')} />
                       {entry.members.map((guide) => <BrowseRow key={guide.id} {...rowFor(guide)} />)}
                     </BrowseGroup>
                   ) : (
