@@ -1062,8 +1062,9 @@ function PostView({ post, onBack, backLabel = 'Back to Critter Digest', factFile
                 to edge inside the page gutter (owner, 2026-11-01). On a phone
                 it sits on the --reading surface edge to edge, with no border:
                 lighter than the page in light mode, darker in dark mode
-                (owner, 2026-11-02, on a Fable recommendation). */}
-            <div className="bg-reading md:bg-card -mx-4 px-4 py-6 sm:-mx-6 sm:px-6 md:mx-0 md:rounded-2xl md:border md:border-border md:p-8">
+                (owner, 2026-11-02, on a Fable recommendation), fading in and
+                out at its top and bottom (.reading-surface, index.css). */}
+            <div className="reading-surface md:bg-card -mx-4 px-4 py-6 sm:-mx-6 sm:px-6 md:mx-0 md:rounded-2xl md:border md:border-border md:p-8">
 
             {/* Was `post.emoji || '🦎'`. 83 posts set no emoji in frontmatter,
                 so the dolphin, shark, octopus and birdwatching articles all
