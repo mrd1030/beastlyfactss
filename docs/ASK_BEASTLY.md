@@ -14,8 +14,14 @@ This file is the spec as built. Where the build differs, it says why.
   the phone tab bar) opens it. On a phone it is a sheet from the bottom; on
   wider screens a floating panel dragged by its header, or docked down the right
   edge as a sidebar over the page (the page does not shift, so an article stays
-  centered). Minimize folds it to a small bar,
-  close returns it to the button. Hidden on /composer/ and in the installed
+  centered). Minimize folds it to a small bar, close returns it to the
+  button. Docked, both minimize and close tuck it into a tab on the right
+  edge, and while it is open the same tab peeks out from behind the
+  sidebar's left edge, so one tab opens it and tucks it away to show the
+  article's own sidebar (owner, 2026-11-02). On a phone, while reading an
+  article, the minimized bar and the round button slide off and fade with
+  the bottom tab bar, and come back with it: a tap on the page, near the
+  top, or at the end (owner, 2026-11-02). Hidden on /composer/ and in the installed
   Beastle app. Code: `src/components/ask/AskBeastlyChat.jsx`, mounted by
   `AskBeastlyChatSlot.jsx` in AppLayout after the page settles, never during
   prerender.
@@ -41,7 +47,10 @@ This file is the spec as built. Where the build differs, it says why.
   (localStorage `beastly-ask-history`), shared with the search page box,
   which always asks a fresh question. The vet line shows once, under the
   input. Legal cells show status, meaning and cite, with the rest under
-  "Why". Code: `src/lib/askBeastly.js`, `src/components/ask/`.
+  "Why". "Search the site" in a reply searches for the animal the reply
+  names, not the whole question. Answer links to a section land on its
+  heading (ScrollToTop waits for the lazy article body). Code:
+  `src/lib/askBeastly.js`, `src/components/ask/`.
 - Critter Keeper's floating dragon bubble is parked to free the corner
   (CRITTER_KEEPER.md).
 
@@ -68,7 +77,11 @@ section. Anchors follow TableOfContents.jsx. Cost placeholders and CostTable
 rows resolve through src/lib/costs.js; ComparisonTables become one line per
 row. A section over 450 words splits at paragraph breaks. The script also
 writes `.ask-index/meta.json`: the searchAliases.js nicknames, the species list
-with care guide ids, and the legal matrix's states and animals.
+with care guide ids, the legal matrix's states and animals, every fact page's
+url (`facts`, for "show me a fun fact"), and the words in more than 5% of the
+searchable chunks with their counts (`common`, left out of the any-word
+search). The output is deterministic: two builds of the same content match
+byte for byte.
 
 ## The index in D1
 
@@ -85,6 +98,24 @@ is a few rows, a build with no content change writes nothing, and only the
 very first load (about 21,000 rows) writes everything. `ASK_INDEX_FORCE=1`
 wipes and reloads. A load that fails partway leaves the old rows serving and
 the next load finishes the job. It never fails the build.
+
+Reads are a budget too (5,000,000 a day). Comparing chunk by chunk and
+counting both tables read about 26,000 rows a build, and a night of branch
+pushes every few minutes went over 100,000 rows read per 15 minutes
+(2026-11-01). Now the load saves one hash over every chunk and legal cell
+(`ask_meta.content_hash`); when it, the meta hash and the chunk count match
+and both tables still hold rows, the load stops after reading about 6 rows.
+A `COUNT(*)` reads the whole table in D1, so the check reads one row from
+each instead. Push branch work with [CI Skip] unless a test build is
+wanted; every sharetest build runs the load.
+
+On 2026-11-01 repeated full reloads, before the incremental load existed,
+wrote about 130,000 rows in one D1 day (the day resets at 00:00 UTC, 19:00
+Eastern in winter). Over the limit, writes fail: the load logs "Ask index
+load FAILED, live index left as it was" and the site keeps serving the old
+index; anything stored in ask_meta (the fingerprint, `facts`, `common`)
+waits for the next build after the reset. A missing `facts` or `common`
+falls back to the normal search.
 
 The sharetest project and main share this database, so once Ask Beastly is on
 main, set the sharetest build command back to `npx vite build`, or two
@@ -119,27 +150,17 @@ In `public/_worker.js`, listed in `public/_routes.json`. In order:
    are", "take me to the leopard gecko guide", "how to find the betta fish
    files") gets that species' hub as a link, result `navigate`, with no
    model call. "Files", "hub" or "section" with a species counts on its
-   own, with no "where" or "find" needed.
-
-   Links under an answer (owner, 2026-11-02, on a Fable recommendation): at
-   most two, each one a page the answer came from. First the page the model
-   names (READ). Second, a page it says it also used (ALSO), or else the
-   species' care guide hub, unless the first link already is the hub or its
-   encyclopedia profile (one page with a toggle). Other search hits never
-   show. With no READ, the old order: the top three search hits.
-   "Show me a fun fact" (owner, 2026-11-02): a question that says fact or
+   own, with no "where" or "find" needed. Any form of "where" counts
+   (where's, wheres), and "find" but not "find out". A real "where"
+   question ("where do bettas live in the wild") names no part of the site
+   and goes to the search.
+5. "Show me a fun fact" (owner, 2026-11-02): a question that says fact or
    facts and names no animal gets one fact at random from the facts page,
    as written, with links to that fact and to /facts/. No model call, one
-   row read (by key, from the url list in ask_meta.facts). The site keeps
+   row read (by key, from the url list in `ask_meta.facts`). The site keeps
    no popularity count, so "most popular" gets a random one too. With an
    animal named, the normal search answers.
-   Rows read per search (owner, 2026-11-01, on a Fable recommendation): the
-   any-word search runs only when the every-word search found nothing, and
-   leaves out words in more than 5% of the chunks (ask_meta.common); if all
-   are common, the two rarest stay. Ranking happens inside the FTS index and
-   only the top rows are joined. An any-word search over common words read
-   about 8,000 rows; the night's average was 3,200 per search.
-5. Search: nicknames expanded, the named species used as a filter ("tortoise"
+6. Search: nicknames expanded, the named species used as a filter ("tortoise"
    also reaches sulcata and Russian), a few reader word synonyms (tank and
    enclosure, eat and feed, poop and droppings), a boost for the matching split
    care guide and for headings that name the question, and guides ahead of
@@ -147,19 +168,37 @@ In `public/_worker.js`, listed in `public/_routes.json`. In order:
    words ("how do I take care of a leopard gecko", "tips for a new hamster
    owner") ranks that species' hub first. A weak best match returns `no_match`
    with no model call.
-   Rows read are a daily budget too (5,000,000 on the free plan): the species
-   goes inside the full text match, so a species question reads about 110
-   rows instead of 6,000; a question with no species tries every word first
-   and any word only if that finds too few; a legal question skips the search.
-6. 1,000 answers a day across the site in KV (owner, 2026-11-02), resetting at
+   Rows read per search (owner, 2026-11-01, on a Fable recommendation): the
+   species goes inside the full text match, so a species question reads
+   about 110 rows instead of 6,000. A question with no species tries every
+   word first; the any-word search runs only when that found nothing, and
+   leaves out words in more than 5% of the chunks (`ask_meta.common`),
+   keeping the two rarest if all are common, and skips an empty word list.
+   Ranking happens inside the FTS index and only the top rows are joined.
+   Measured on the test night: searches averaged 3,200 rows read, and one
+   any-word search over common words read 8,120. Fable's estimate after the
+   change is 250 to 400 per question; check the D1 query metrics once it is
+   live. A legal question skips the search.
+7. 1,000 answers a day across the site in KV (owner, 2026-11-02), resetting at
    midnight Eastern.
-7. Haiku: the top 4 chunks, about 3,000 tokens at most, in `<sources>`, the
+8. Haiku: the top 4 chunks, about 3,000 tokens at most, in `<sources>`, the
    question last.
 
-Reply: `{ result, answer, links, emergency, species }`. `result` is answered,
-legal, no_match, capped, refused or unavailable. Every link comes from the
-chunks sent. On the sharetest site an answer also carries `sources`, the chunks
-the model saw, for the source check.
+Reply: `{ result, answer, links, emergency, species, followUp, health }`.
+`result` is answered, navigate, legal, no_match, capped, refused or
+unavailable. `followUp` says whether the question joined the conversation;
+`health` marks a no_match that sounds like a health problem. On the sharetest
+site an answer also carries `sources`, the chunks the model saw, for the
+source check.
+
+Links under an answer (owner, 2026-11-02, on a Fable recommendation): at most
+two, each one a page the answer came from. First the page the model names
+(READ). Second, a page it says it also used (ALSO, matched against the titles
+sent), or else the species' care guide hub, unless the first link already is
+the hub or its encyclopedia profile (one page with a toggle). Other search
+hits never show: for "where do bettas live in the wild" they were a lifespan
+line in a health article and a feeding article. With no READ, the top three
+search hits.
 
 ## The model call
 
@@ -179,11 +218,12 @@ Rules:
 - Keep hedges from the sources (can, may, often). Do not make them stronger.
 - Never give medication doses. Never say a symptom is fine to wait out or to watch for now.
 - If a source calls the sign urgent, or lists it under "call the vet now", the first sentence tells the reader to call the vet the source names (reptile vet, rabbit-savvy vet) now. The remaining sentences say what the guides tie that sign to.
-- Health gap: if the reader describes a sign, symptom, injury or change in the animal and no source names that sign, the first sentence is: "Our guides don't cover <the sign>, so the safest move is to have a <vet type the sources name, or an exotics vet> look at your <species>." You may add ONE sentence on the closest sign the guides do cover for the same body part or behavior, worded as a check ("so check X"), never as the cause. Never write "what I can tell you".
+- Health gap: if the reader describes a sign, symptom, injury or change in the animal and no source names that sign, the first sentence is: "Our guides don't cover <the sign>, so the safest move is to have a <vet type the sources name, or an exotics vet> look at your <species>." You may add ONE sentence on the closest sign the guides do cover for the same body part or behavior. It starts with "While you wait, check" or "In the meantime, check", names that sign and how urgent it is, and never names a condition as the likely cause. Never write "the closest sign", "the guides cover", or "what I can tell you".
 - Other gap: only when the reader asked for a non-health specific (a step, a number) that no source gives AND you have answered another part, add one sentence: "Our guides don't cover X." Never guess to fill a gap.
-- Speak to the reader directly. Never write "the sources", "Source 2", "I can't say", "I can't tell you", "I don't know", or any sentence about what you are unable to do. Write "our guides" at most once per answer.
+- Speak to the reader directly, in the site's own voice. Never comment on what the passages do or do not cover, agree on, or recommend: no "is covered in our guides", "the sources", "Source 2", "most sources agree", "according to veterinary sources", "I can't say", "I can't tell you", "I don't know", or any sentence about what you are unable to do. Write "our guides" at most once per answer, and only in a gap sentence.
 - Say each point once. Do not restate it in other words.
 - End with the title of the one source that answers best, in the form: READ: <title>
+- Only if your answer also took a fact from a second source, add one more line: ALSO: <title>. Use titles exactly as given in <sources>.
 ```
 
 The "speak directly" rule was added after the first reader test, where six of
@@ -207,11 +247,25 @@ credited to the section that states it. The worker rewrites source talk
 Health gap (owner, 2026-11-02, Fable wording): a sign the guides do not name
 opens with "Our guides don't cover <the sign>, so the safest move is to have a
 <vet> look at your <species>", plus at most one sentence on the closest covered
-sign, worded as something to check, never as the cause. "I can't tell you"
+sign, worded as something to check, never as the cause (since tightened, see
+the wording fixes below). "I can't tell you"
 and similar are cut by the cleanup. The owner considered adding "a fall or a
 bump, watch it, vet if it gets worse" to jaw answers; it stays out: no guide
 names a fall as a cause and the bearded dragon guide lists jaw swelling under
 call the vet now. If it is ever added, it goes into the guide, researched.
+
+Wording fixes (owner, 2026-11-02, on a Fable review of the live test):
+answers said "stuck shed is covered in our guides", "the range most sources
+agree on" and "according to veterinary sources", and a health-gap second
+sentence read as a guessed cause. The prompt now bans comments on what the
+passages cover or agree on, keeps "our guides" to gap sentences, and makes
+the health-gap extra sentence start "While you wait, check" or "In the
+meantime, check". The articles compare their own sources, so the worker also
+rewrites that talk out of a sentence first ("the range most sources agree
+on" becomes "the usual range", "according to ... sources" is cut, "X is
+covered in our guides, and it" becomes "X") and drops a sentence only if
+source talk is still left, so a number in it survives. Not yet checked
+against live answers: rerun the three questions on the next test build.
 
 The worker turns NO_ANSWER into `no_match`, a refusal or an API error into
 `refused` (the matched pages shown as plain links), dashes into "to" in a
