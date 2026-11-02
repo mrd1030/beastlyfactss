@@ -1384,6 +1384,11 @@ const ASK_GUIDE_TOPICS = [
 
 const ASK_CARE_RE = /\b(feed\w*|fed|food|foods|eat\w*|diet|tank\w*|enclosure\w*|cage\w*|setup|set up|habitat|vivarium|terrarium|aquarium|sick\w*|ill|illness|disease\w*|vet|vets|health\w*|symptom\w*|temperature\w*|temp|temps|heat\w*|humid\w*|lamp\w*|uvb|light\w*|cost\w*|price\w*|expensive|cheap|budget|substrate|bedding|clean\w*|handl\w*)\b/;
 const ASK_LEGAL_RE = /\b(legal|illegal|legally|allowed to (own|have|keep|buy)|permit|permits|permitted|licen[cs]e\w*|banned|outlawed|laws?|(what|which) states?|where can (i|you) (own|have|keep|buy|get))\b/;
+// A question the guides do not cover that still sounds like something wrong
+// with the animal: the "not in our guides" reply then adds a vet line.
+const ASK_HEALTH_ISH_RE = /\b(sick\w*|ill|hurt\w*|injur\w*|wound\w*|lump\w*|bump\w*|swell\w*|swollen|vomit\w*|diarrh\w*|limp\w*|discharge|bleed\w*|blood\w*|letharg\w*|not moving|won'?t eat|not eating|stopped eating|breathing|wheez\w*|seizure\w*|pain|infect\w*|rash\w*|scab\w*|cough\w*|sneez\w*)\b/;
+const askSoundsLikeHealth = (q) => ASK_HEALTH_ISH_RE.test(q || '');
+
 // Health words in the question or the sources sent turn on the emergency card.
 const ASK_HEALTH_RE = /\b(not eating|won'?t eat|stopped eating|refus\w* (to eat|food)|letharg\w*|bleed\w*|prolaps\w*|swollen|swelling|breathing|gasping|wheez\w*|seizure\w*|convuls\w*)\b/;
 
@@ -1735,7 +1740,7 @@ async function handleAsk(request, env, ctx) {
 
   if (!found.chunks.length) {
     log('no_match', found.best ? [found.best.slug] : []);
-    return quiet('no_match', { species, followUp: found.followUp });
+    return quiet('no_match', { species, followUp: found.followUp, health: askSoundsLikeHealth(found.qOwn) });
   }
 
   const slugs = [...new Set(found.chunks.map((c) => c.slug))];
@@ -1773,7 +1778,7 @@ async function handleAsk(request, env, ctx) {
   }
   if (reply.kind === 'no_answer') {
     log('no_match', slugs);
-    return quiet('no_match', { species, followUp: found.followUp });
+    return quiet('no_match', { species, followUp: found.followUp, health: askSoundsLikeHealth(found.qOwn) });
   }
 
   log('answered', slugs);

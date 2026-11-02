@@ -193,14 +193,21 @@ export default function AskReply({ question, reply, compact = false, hasResults 
     );
   }
 
+  // Not in the guides: said gently, with something to try, and a vet line
+  // when the question sounds like something is wrong with the animal.
   if (reply.result === 'no_match') {
     return (
-      <p className={muted} aria-live="polite">
-        {compact || !hasResults ? "We don't cover that yet." : "We don't cover that yet. The search results below are the closest we have."}
-        {compact && question && (
-          <> <Link to={searchLink(question)} onClick={onNavigate} className="font-semibold text-secondary hover:underline">Search the site instead</Link>.</>
-        )}
-      </p>
+      <div className={muted} aria-live="polite">
+        <p>
+          {"That one isn't in our guides yet. "}
+          {compact || !hasResults ? 'Try asking it another way, or ' : 'The search results below are the closest we have, or try asking it another way.'}
+          {(compact || !hasResults) && question && (
+            <Link to={searchLink(question)} onClick={onNavigate} className="font-semibold text-secondary hover:underline">search the site</Link>
+          )}
+          {(compact || !hasResults) && (question ? '.' : 'search the site.')}
+        </p>
+        {reply.health && <p className="mt-1.5">If something seems wrong with your pet, a vet is the safest call.</p>}
+      </div>
     );
   }
 

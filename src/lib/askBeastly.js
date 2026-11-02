@@ -76,13 +76,17 @@ export function deleteConversation(id) {
   writeHistory(readHistory().filter((c) => c.id !== id));
 }
 
-export const canFollowUp = (c) => Boolean(c) && !c.closed && c.turns.length < MAX_TURNS;
+// Only answers that gave the reader something count toward the cap: a
+// question the guides do not cover (or one that failed) does not use one up.
+const COUNTED = new Set(['answered', 'navigate', 'legal', 'refused']);
+export const answersUsed = (c) => (c ? c.turns.filter((t) => COUNTED.has(t.reply?.result)).length : 0);
+export const canFollowUp = (c) => Boolean(c) && !c.closed && answersUsed(c) < MAX_TURNS;
 
 // Only what the reader needs to see again goes in: the source chunks the test
 // site returns are dropped.
 function keepable(reply) {
-  const { result, answer = '', links = [], emergency = false, species = null, legal = null } = reply || {};
-  return { result: result || 'unavailable', answer, links, emergency, species, legal };
+  const { result, answer = '', links = [], emergency = false, species = null, legal = null, health = false } = reply || {};
+  return { result: result || 'unavailable', answer, links, emergency, species, legal, health };
 }
 
 // Asks one question, as a follow-up in conversation `conversationId` when it

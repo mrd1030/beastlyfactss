@@ -5,7 +5,7 @@ import {
 import TurnstileWidget, { isTurnstileEnabled } from '@/components/shared/TurnstileWidget';
 import AskReply from '@/components/ask/AskReply';
 import {
-  ASK_HISTORY_EVENT, MAX_TURNS, askQuestion, canFollowUp, clearHistory, deleteConversation, easternDate, readHistory,
+  ASK_HISTORY_EVENT, MAX_TURNS, answersUsed, askQuestion, canFollowUp, clearHistory, deleteConversation, easternDate, readHistory,
 } from '@/lib/askBeastly';
 import { formatDay } from '@/lib/utils/verifiedDates';
 import { useIsMobileViewport } from '@/lib/hooks/useIsMobileViewport';
@@ -418,9 +418,9 @@ export default function AskBeastlyChat() {
                   <p className="text-xs font-body text-muted-foreground">
                     {current.closed
                       ? 'Ask your next question below.'
-                      : current.turns.length >= MAX_TURNS
+                      : answersUsed(current) >= MAX_TURNS
                         ? `That's ${MAX_TURNS} on this topic. Start a new question.`
-                        : `You can ask ${MAX_TURNS - current.turns.length} more about this.`}
+                        : `You can ask ${MAX_TURNS - answersUsed(current)} more about this.`}
                   </p>
                   <button type="button" onClick={newQuestion} className="inline-flex items-center gap-1 text-xs font-body font-semibold text-secondary hover:underline">
                     <Plus className="w-3.5 h-3.5" /> New question

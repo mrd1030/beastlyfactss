@@ -28,7 +28,13 @@ This file is the spec as built. Where the build differs, it says why.
   A follow-up sends only the previous question as context, so the search
   keeps the animal and topic and Haiku sees "Earlier question: ..."; the
   previous answer is never sent. A question naming a different animal, a
-  legal answer, or the 3 answer cap starts a new conversation. History is
+  legal answer, or the 3 answer cap starts a new conversation. Only answers that gave the
+  reader something count toward the 3 (answered, hub links, law answers,
+  matched pages); a question the guides do not cover does not use one up
+  (owner, 2026-11-02). Its reply reads "That one isn't in our guides yet. Try
+  asking it another way, or search the site.", plus "If something seems wrong
+  with your pet, a vet is the safest call." when the question sounds like a
+  health problem. History is
   its own view (the clock button): the last 7 days of conversations, at most
   30, by day, each with its own delete and "Clear all" behind a confirm;
   tapping one opens it read only. Kept in the reader's browser only
