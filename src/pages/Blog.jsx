@@ -1059,8 +1059,11 @@ function PostView({ post, onBack, backLabel = 'Back to Critter Digest', factFile
                 made the page feel like it was spilling. The block is a card
                 from md up only: on a phone the border, background and padding
                 cost the text about 37px a side, so there the article reads edge
-                to edge inside the page gutter (owner, 2026-11-01). */}
-            <div className="md:rounded-2xl md:border md:border-border md:bg-card md:p-8">
+                to edge inside the page gutter (owner, 2026-11-01). On a phone
+                it sits on the --reading surface edge to edge, with no border:
+                lighter than the page in light mode, darker in dark mode
+                (owner, 2026-11-02, on a Fable recommendation). */}
+            <div className="bg-reading md:bg-card -mx-4 px-4 py-6 sm:-mx-6 sm:px-6 md:mx-0 md:rounded-2xl md:border md:border-border md:p-8">
 
             {/* Was `post.emoji || '🦎'`. 83 posts set no emoji in frontmatter,
                 so the dolphin, shark, octopus and birdwatching articles all

@@ -211,6 +211,11 @@
     --background: 42 40% 94.5%;
     --foreground: 136 26% 14%;
     --card: 40 55% 98.5%;
+    /* The article's reading surface on a phone (pages/Blog.jsx), where the
+       bordered card is dropped. Its own token so cards can change without
+       moving it (owner, 2026-11-02, on a Fable recommendation). Light: the
+       card's paper, lighter than the page. */
+    --reading: 40 55% 98.5%;
     --card-foreground: 136 26% 14%;
     --popover: 40 55% 98.5%;
     --popover-foreground: 136 26% 14%;
@@ -272,6 +277,10 @@
     --background: 153 27% 8%;
     --foreground: 41 48% 91%;
     --card: 150 22% 11%;
+    /* Dark: darker than the page, not lighter. The card color read as a
+       faded wash edge to edge; 6% raises the text's contrast and the 8%
+       page still frames it above the title and below the article. */
+    --reading: 153 27% 6%;
     --card-foreground: 41 48% 91%;
     --popover: 150 22% 11%;
     --popover-foreground: 41 48% 91%;
