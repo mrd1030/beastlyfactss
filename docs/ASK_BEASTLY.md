@@ -68,6 +68,14 @@ slot, checks the row count, then flips `ask_meta.slot`. The legal matrix
 half loaded index and a failed load leaves the live one alone. It never fails
 the build.
 
+A load writes roughly 20,000 to 25,000 D1 rows, and the free plan allows
+100,000 a day, so it first compares a fingerprint of the chunks, lookups and
+legal matrix with the live one (`ask_meta.hash`) and writes nothing when they
+match: a code-only build costs no writes. `ASK_INDEX_FORCE=1` reloads anyway.
+The sharetest project and main share this database, so once Ask Beastly is on
+main, set the sharetest build command back to `npx vite build`, or two
+different branches will take turns reloading it.
+
 It runs at the end of `npm run build` when the branch is main, or when
 `ASK_INDEX_LOAD=1`, and only with `CLOUDFLARE_API_TOKEN` (D1 Edit) set. The
 account ID is in the script.

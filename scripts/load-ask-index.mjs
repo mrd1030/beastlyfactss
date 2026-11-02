@@ -25,6 +25,7 @@
 // Optional env: CLOUDFLARE_ACCOUNT_ID (defaults to the site's account below),
 // ASK_D1_DATABASE_ID (defaults to the ask-index id below).
 
+import crypto from 'node:crypto';
 import fs from 'node:fs';
 import path from 'node:path';
 
@@ -82,7 +83,22 @@ async function main() {
   };
 
   await query('CREATE TABLE IF NOT EXISTS ask_meta (key TEXT PRIMARY KEY, value TEXT)');
-  const live = (await rows("SELECT value FROM ask_meta WHERE key = 'slot'"))[0]?.value || 'b';
+
+  // D1's free plan allows 100,000 written rows a day and a full load writes
+  // roughly 20,000 to 25,000 (chunks, the FTS index over them, the legal
+  // matrix). Most builds change code, not content, so the load compares a
+  // fingerprint of everything it would write with the live one and skips
+  // when they match. ASK_INDEX_FORCE=1 reloads anyway.
+  const hash = crypto.createHash('sha256')
+    .update(fs.readFileSync(CHUNKS)).update(fs.readFileSync(META))
+    .update(fs.readFileSync(path.join(ROOT, '.ask-index', 'legal.json')))
+    .digest('hex');
+  const current = Object.fromEntries((await rows("SELECT key, value FROM ask_meta WHERE key IN ('slot', 'hash')")).map((r) => [r.key, r.value]));
+  if (current.hash === hash && current.slot && process.env.ASK_INDEX_FORCE !== '1') {
+    console.log(`Ask index load: unchanged (${hash.slice(0, 12)}), slot ${current.slot} stays live, nothing written.`);
+    return;
+  }
+  const live = current.slot || 'b';
   const slot = live === 'a' ? 'b' : 'a';
   const table = `chunks_${slot}`;
   const fts = `${table}_fts`;
@@ -150,7 +166,7 @@ async function main() {
   // slot flip, in one statement, so the worker never pairs an index with
   // another load's lookups.
   const now = new Date().toISOString();
-  const metaRows = [['slot', slot], ['loaded_at', now], ['chunks', String(n)],
+  const metaRows = [['slot', slot], ['loaded_at', now], ['chunks', String(n)], ['hash', hash],
     ...Object.entries(meta).map(([k, v]) => [k, JSON.stringify(v)])];
   await query(`INSERT INTO ask_meta (key, value) VALUES
     ${metaRows.map(([k, v]) => `(${sqlString(k)}, ${sqlString(v)})`).join(', ')}
