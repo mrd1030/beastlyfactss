@@ -11,7 +11,8 @@ import { trackEvent } from '@/lib/analytics';
 //   closed     the round button in the corner, above the phone tab bar
 //   open       phone: a sheet from the bottom. Wider screens: a floating panel
 //              dragged by its header, or docked down the right edge as a
-//              sidebar that the page makes room for
+//              sidebar over the page (the page does not shift, so an article
+//              stays centered; owner, 2026-11-02)
 //   minimized  a small bar in the corner that reopens it
 //
 // Each question is answered on its own (no follow-up memory). Today's
@@ -76,12 +77,6 @@ export default function AskBeastlyChat() {
 
   const open = ui.mode === 'open';
   const docked = open && !isMobile && ui.dock === 'side';
-
-  // A docked sidebar takes room from the page instead of covering it.
-  useEffect(() => {
-    document.documentElement.classList.toggle('ask-docked', docked);
-    return () => document.documentElement.classList.remove('ask-docked');
-  }, [docked]);
 
   // Newest message in view.
   useEffect(() => {
@@ -185,7 +180,7 @@ export default function AskBeastlyChat() {
   if (isMobile) {
     placement = 'left-0 right-0 bottom-0 h-[78vh] rounded-t-2xl border-t';
   } else if (docked) {
-    placement = 'right-0 top-14 bottom-0 border-l';
+    placement = 'right-0 top-14 bottom-0 border-l shadow-2xl';
     style = { width: PANEL_W };
   } else {
     placement = 'rounded-2xl border shadow-2xl';

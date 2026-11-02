@@ -13,7 +13,8 @@ This file is the spec as built. Where the build differs, it says why.
 - **The chat, on every page.** A round button in the bottom right corner (above
   the phone tab bar) opens it. On a phone it is a sheet from the bottom; on
   wider screens a floating panel dragged by its header, or docked down the right
-  edge as a sidebar the page makes room for. Minimize folds it to a small bar,
+  edge as a sidebar over the page (the page does not shift, so an article stays
+  centered). Minimize folds it to a small bar,
   close returns it to the button. Hidden on /composer/ and in the installed
   Beastle app. Code: `src/components/ask/AskBeastlyChat.jsx`, mounted by
   `AskBeastlyChatSlot.jsx` in AppLayout after the page settles, never during
