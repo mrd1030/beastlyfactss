@@ -118,7 +118,7 @@ In `public/_worker.js`, listed in `public/_routes.json`. In order:
    plus a request for a place on the site ("show me where the betta files
    are", "take me to the leopard gecko guide", "how to find the betta fish
    files") gets that species' hub as a link, result `navigate`, with no
-   model call. "Files" or "hub" with a species counts on its own, with no
+   model call. "Files", "hub" or "section" with a species counts on its own, with no
    "where" or "find" needed.
 5. Search: nicknames expanded, the named species used as a filter ("tortoise"
    also reaches sulcata and Russian), a few reader word synonyms (tank and

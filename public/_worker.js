@@ -1455,10 +1455,11 @@ function askFindName(q, list) {
 // leopard gecko guide"). They get the species' hub as a link, with no model
 // call; the hub is where everything on the animal starts.
 // "how to find the betta fish files" counts too: find (but not "find out"),
-// looking for, get to, browse. "files" and "hub" name a place on the site on
-// their own, with no verb needed ("betta fish files").
-const ASK_NAV_RE = /\b(where (is|are|can i find|do i find|would i find)|show me|find(?! out)|take me|link (me )?to|go to|get to|point me|looking for|browse)\b/;
-const ASK_SITE_PLACE_RE = /\b(files?|hub)\b/;
+// looking for, get to, browse, and any "where" (where's, wheres, where is).
+// "files", "hub" and "section" name a place on the site on their own, with
+// no verb needed ("betta fish files", "betta section").
+const ASK_NAV_RE = /\b(where(?:'s|s|’s)?\b|show me|find(?! out)|take me|link (me )?to|go to|get to|point me|looking for|browse)\b/;
+const ASK_SITE_PLACE_RE = /\b(files?|hub|sections?)\b/;
 const ASK_CORRECTION = new Set('sorry oops meant mean typo spelled spelling actually wrong i'.split(' '));
 const ASK_PLACE_RE = /\b(guides?|pages?|files?|info|information|sections?|sheets?|hub|articles?|stuff|everything|posts?)\b/;
 
