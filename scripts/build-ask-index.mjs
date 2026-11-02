@@ -425,8 +425,8 @@ const meta = {
   species: speciesNames
     .map((name) => ({ name, guideId: guideIdByName.get(name.toLowerCase()) || null }))
     .sort((a, b) => b.name.length - a.name.length),
-  states: Object.values(LEGAL.jurisdictions)
-    .map((j) => ({ name: j.name, slug: stateSlug(j.name) }))
+  states: Object.entries(LEGAL.jurisdictions)
+    .map(([code, j]) => ({ name: j.name, slug: stateSlug(j.name), code: code.toLowerCase() }))
     .sort((a, b) => b.name.length - a.name.length),
   legal: Object.entries(LEGAL.animals)
     .map(([id, a]) => ({ id, name: a.name, article: a.article || null }))

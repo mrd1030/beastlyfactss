@@ -1377,7 +1377,7 @@ const ASK_GUIDE_TOPICS = [
 ];
 
 const ASK_CARE_RE = /\b(feed\w*|fed|food|foods|eat\w*|diet|tank\w*|enclosure\w*|cage\w*|setup|set up|habitat|vivarium|terrarium|aquarium|sick\w*|ill|illness|disease\w*|vet|vets|health\w*|symptom\w*|temperature\w*|temp|temps|heat\w*|humid\w*|lamp\w*|uvb|light\w*|cost\w*|price\w*|expensive|cheap|budget|substrate|bedding|clean\w*|handl\w*)\b/;
-const ASK_LEGAL_RE = /\b(legal|illegal|legally|allowed to (own|have|keep|buy)|permit|permits|permitted|licen[cs]e\w*|banned|outlawed|laws?)\b/;
+const ASK_LEGAL_RE = /\b(legal|illegal|legally|allowed to (own|have|keep|buy)|permit|permits|permitted|licen[cs]e\w*|banned|outlawed|laws?|(what|which) states?|where can (i|you) (own|have|keep|buy|get))\b/;
 // Health words in the question or the sources sent turn on the emergency card.
 const ASK_HEALTH_RE = /\b(not eating|won'?t eat|stopped eating|refus\w* (to eat|food)|letharg\w*|bleed\w*|prolaps\w*|swollen|swelling|breathing|gasping|wheez\w*|seizure\w*|convuls\w*)\b/;
 
@@ -1433,9 +1433,18 @@ function askFindName(q, list) {
 
 // Legal questions get links, never a model summary: the matrix cells change
 // monthly and quote statutes.
+// A state by name, or by its postal code after "in" or "for" ("legal in ny").
+// Codes only count there, so "me", "or" and "in" elsewhere never match.
+function askFindState(q, states) {
+  const byName = askFindName(q, states);
+  if (byName) return byName;
+  const m = q.match(/\b(?:in|for)\s+([a-z]{2,3})\b/);
+  return m ? states.find((s) => s.code === m[1]) || null : null;
+}
+
 function askLegalLinks(q, meta) {
   const links = [];
-  const state = askFindName(q, meta.states);
+  const state = askFindState(q, meta.states);
   const animal = askFindName(q, meta.legal);
   if (state) links.push({ title: `${state.name} exotic pet laws`, url: `/exotic-pet-laws/state/${state.slug}/` });
   if (animal) {
@@ -1470,7 +1479,7 @@ async function askRetrieve(db, question) {
   // "Can I have a hedgehog in California" never says "legal": a state name
   // with own / have / keep / buy / get is a legal question too.
   const legal = ASK_LEGAL_RE.test(q)
-    || (Boolean(askFindName(q, meta.states)) && /\b(own|have|keep|buy|get|bring)\b/.test(q));
+    || (Boolean(askFindState(q, meta.states)) && /\b(own|have|keep|buy|get|bring)\b/.test(q));
   const table = `chunks_${meta.slot}`;
   const fts = `${table}_fts`;
   // With a species named, the species filter does that work, so only the
