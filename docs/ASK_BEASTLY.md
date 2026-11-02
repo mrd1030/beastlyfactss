@@ -178,6 +178,13 @@ with no policies; only the worker's service role writes. Once a week, pull
 every `no_match` row into READER_GAPS.md: real questions the guides do not
 answer yet.
 
+Pushes to the owner's phone through ntfy (owner, 2026-11-02, on a Fable
+recommendation), like the contact form: set `NTFY_ASK_TOPIC` (a private topic
+name, never in code) and `ASK_NTFY_MODE`. `all` (the default) pushes every
+question with its result and the page it came from; `gaps` pushes only
+questions the site does not cover. Start with `all` while traffic is small,
+switch to `gaps` once it passes about 10 a day. `capped` never pushes.
+
 ## Setup
 
 | Where | What |
