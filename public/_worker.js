@@ -1857,15 +1857,27 @@ Rules:
 - Keep hedges from the sources (can, may, often). Do not make them stronger.
 - Never give medication doses. Never say a symptom is fine to wait out or to watch for now.
 - If a source calls the sign urgent, or lists it under "call the vet now", the first sentence tells the reader to call the vet the source names (reptile vet, rabbit-savvy vet) now. The remaining sentences say what the guides tie that sign to.
-- Health gap: if the reader describes a sign, symptom, injury or change in the animal and no source names that sign, the first sentence is: "Our guides don't cover <the sign>, so the safest move is to have a <vet type the sources name, or an exotics vet> look at your <species>." You may add ONE sentence on the closest sign the guides do cover for the same body part or behavior, worded as a check ("so check X"), never as the cause. Never write "what I can tell you".
+- Health gap: if the reader describes a sign, symptom, injury or change in the animal and no source names that sign, the first sentence is: "Our guides don't cover <the sign>, so the safest move is to have a <vet type the sources name, or an exotics vet> look at your <species>." You may add ONE sentence on the closest sign the guides do cover for the same body part or behavior. It starts with "While you wait, check" or "In the meantime, check", names that sign and how urgent it is, and never names a condition as the likely cause. Never write "the closest sign", "the guides cover", or "what I can tell you".
 - Other gap: only when the reader asked for a non-health specific (a step, a number) that no source gives AND you have answered another part, add one sentence: "Our guides don't cover X." Never guess to fill a gap.
-- Speak to the reader directly. Never write "the sources", "Source 2", "I can't say", "I can't tell you", "I don't know", or any sentence about what you are unable to do. Write "our guides" at most once per answer.
+- Speak to the reader directly, in the site's own voice. Never comment on what the passages do or do not cover, agree on, or recommend: no "is covered in our guides", "the sources", "Source 2", "most sources agree", "according to veterinary sources", "I can't say", "I can't tell you", "I don't know", or any sentence about what you are unable to do. Write "our guides" at most once per answer, and only in a gap sentence.
 - Say each point once. Do not restate it in other words.
 - End with the title of the one source that answers best, in the form: READ: <title>
 - Only if your answer also took a fact from a second source, add one more line: ALSO: <title>. Use titles exactly as given in <sources>.`;
 
 function askRewriteSourceTalk(sentence) {
+  // The articles compare their own sources ("most sources agree", "according
+  // to veterinary sources"), and the model echoes it. Those phrases come out
+  // here so the sentence, which often holds the number, survives (owner,
+  // 2026-11-02, on a Fable review).
   let out = sentence
+    .replace(/\b(the )?range (that )?(most|many) sources agree on\b/gi, 'the usual range')
+    .replace(/,?\s*(though|but|while)\s+(a couple|a few|some|one or two)\s+(of them\s+)?recommend\b/gi, ', or')
+    .replace(/,?\s*according to [^,.]*?sources?\b/gi, '')
+    .replace(/^(most|many|several|some) (veterinary |published )?sources (agree|say|recommend|suggest)( that)?,?\s*/i, '')
+    // "Stuck shed is covered in our guides, and it can cut off circulation"
+    // keeps its fact: "Stuck shed can cut off circulation".
+    .replace(/\s+(is|are) covered in our guides,?\s*(and\s+)?(it|they)\s+/i, ' ');
+  out = out
     .replace(/^(according to|per|based on) (the |these |those |the provided )?sources?,?\s*/i, '')
     .replace(/^(the |these )?sources? \d* ?(say|note|state|mention|indicate|show)s?\b( that)?,?\s*/i, '')
     .replace(/\b(the|these|those|the provided) sources (do not|don't|does not|doesn't) (say|cover|mention|explain|address|describe)\b/gi, "our guides don't cover")
@@ -1875,7 +1887,8 @@ function askRewriteSourceTalk(sentence) {
   return out ? out[0].toUpperCase() + out.slice(1) : out;
 }
 
-const ASK_SOURCE_TALK_RE = /\b(the|these|those|my|our|provided|given) sources?\b|\bsources? \d\b|^sources? (say|says|note|notes|mention|mentions|show|shows|describe|describes|don'?t|do not|does not)\b/i;
+// What survives the rewrite and still talks about sources is dropped.
+const ASK_SOURCE_TALK_RE = /\b(the|these|those|my|our|provided|given|most|some|several|many|a couple of|veterinary|published|scientific|available)\s+sources?\b|\bsources?\s+\d\b|\baccording to\s+(the\s+)?(veterinary\s+|published\s+)?sources?\b|\bsources?\s+(agree|recommend|say|says|suggest|differ)\b|^sources? (note|notes|mention|mentions|show|shows|describe|describes|don'?t|do not|does not)\b|\b(is|are) covered in our guides\b/i;
 
 const askSourceTitle = (c) => (c.heading ? `${c.title}: ${c.heading}` : c.title);
 const askEscape = (t) => String(t).replace(/</g, '&lt;').replace(/>/g, '&gt;');
