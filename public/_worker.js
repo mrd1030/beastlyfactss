@@ -1454,7 +1454,11 @@ function askFindName(q, list) {
 // place on the site ("show me where the betta files are", "take me to the
 // leopard gecko guide"). They get the species' hub as a link, with no model
 // call; the hub is where everything on the animal starts.
-const ASK_NAV_RE = /\b(where (is|are|can i find|do i find|would i find)|show me|find me|take me|link (me )?to|go to|point me)\b/;
+// "how to find the betta fish files" counts too: find (but not "find out"),
+// looking for, get to, browse. "files" and "hub" name a place on the site on
+// their own, with no verb needed ("betta fish files").
+const ASK_NAV_RE = /\b(where (is|are|can i find|do i find|would i find)|show me|find(?! out)|take me|link (me )?to|go to|get to|point me|looking for|browse)\b/;
+const ASK_SITE_PLACE_RE = /\b(files?|hub)\b/;
 const ASK_CORRECTION = new Set('sorry oops meant mean typo spelled spelling actually wrong i'.split(' '));
 const ASK_PLACE_RE = /\b(guides?|pages?|files?|info|information|sections?|sheets?|hub|articles?|stuff|everything|posts?)\b/;
 
@@ -1557,7 +1561,7 @@ async function askRetrieve(db, question, context = null) {
   const ownWords = qOwn.split(/[\s-]+/).map((t) => t.replace(/'s$|'|\*/g, ''))
     .filter((t) => t.length > 1 && !ASK_STOPWORDS.has(t) && !speciesWords.has(t) && !ASK_CORRECTION.has(t));
   const navText = followUp && ownWords.length === 0 ? `${qOwn} ${prev}` : qOwn;
-  if (species?.guideId && ASK_NAV_RE.test(navText) && ASK_PLACE_RE.test(navText)) {
+  if (species?.guideId && ((ASK_NAV_RE.test(navText) && ASK_PLACE_RE.test(navText)) || ASK_SITE_PLACE_RE.test(navText))) {
     return { chunks: [], species, best: null, legal: false, nav: true, meta, q, qOwn, followUp };
   }
 
