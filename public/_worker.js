@@ -1618,7 +1618,8 @@ async function askRetrieve(db, question, context = null) {
       const df = (t) => meta.common[t] || 0;
       let words = tokens.filter((t) => !df(t));
       if (!words.length) words = [...tokens].sort((a, b) => df(a) - df(b)).slice(0, 2);
-      rows = await search(anyOf(words));
+      // No words left at all (every one a stopword): an empty MATCH throws.
+      if (words.length) rows = await search(anyOf(words));
     }
   }
 

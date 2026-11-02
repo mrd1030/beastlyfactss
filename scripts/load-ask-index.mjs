@@ -148,7 +148,12 @@ async function main() {
   // over 100,000 rows read every 15 minutes (owner, 2026-11-01).
   const contentHash = sha([chunks.map((c) => c.key + c.hash), legal.map((c) => c.hash)]);
   const saved = Object.fromEntries((await rows("SELECT key, value FROM ask_meta WHERE key IN ('slot', 'meta_hash', 'content_hash', 'chunks')")).map((r) => [r.key, r.value]));
-  if (!fresh && saved.slot === SLOT && saved.meta_hash === metaHash && saved.content_hash === contentHash) {
+  // The tables must still hold rows too: one row read (a COUNT(*) reads the
+  // whole table), so an index emptied behind ask_meta's back gets reloaded.
+  const hasRows = !fresh && (await rows(`SELECT id FROM ${CHUNKS} LIMIT 1`)).length > 0
+    && (await rows(`SELECT animal FROM ${LEGAL} LIMIT 1`)).length > 0;
+  if (hasRows && saved.slot === SLOT && saved.meta_hash === metaHash && saved.content_hash === contentHash
+    && saved.chunks === String(chunks.length)) {
     console.log(`Ask index load: no content changed, nothing read or written (${saved.chunks} chunks live).`);
     return;
   }
