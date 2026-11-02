@@ -1450,6 +1450,7 @@ function askFindName(q, list) {
 // leopard gecko guide"). They get the species' hub as a link, with no model
 // call; the hub is where everything on the animal starts.
 const ASK_NAV_RE = /\b(where (is|are|can i find|do i find|would i find)|show me|find me|take me|link (me )?to|go to|point me)\b/;
+const ASK_CORRECTION = new Set('sorry oops meant mean typo spelled spelling actually wrong i'.split(' '));
 const ASK_PLACE_RE = /\b(guides?|pages?|files?|info|information|sections?|sheets?|hub|articles?|stuff|everything|posts?)\b/;
 
 // Legal questions get links, never a model summary: the matrix cells change
@@ -1546,7 +1547,12 @@ async function askRetrieve(db, question, context = null) {
   // A legal question is answered from the law matrix, never from these
   // chunks, so it skips the search and the rows it would read.
   if (legal) return { chunks: [], species, best: null, legal, meta, q, qOwn, followUp };
-  if (species?.guideId && ASK_NAV_RE.test(qOwn) && ASK_PLACE_RE.test(qOwn)) {
+  // A follow-up that only corrects the last question ("sorry, *betta", "I
+  // meant betta": nothing new beyond the animal) carries its where-is intent.
+  const ownWords = qOwn.split(/[\s-]+/).map((t) => t.replace(/'s$|'|\*/g, ''))
+    .filter((t) => t.length > 1 && !ASK_STOPWORDS.has(t) && !speciesWords.has(t) && !ASK_CORRECTION.has(t));
+  const navText = followUp && ownWords.length === 0 ? `${qOwn} ${prev}` : qOwn;
+  if (species?.guideId && ASK_NAV_RE.test(navText) && ASK_PLACE_RE.test(navText)) {
     return { chunks: [], species, best: null, legal: false, nav: true, meta, q, qOwn, followUp };
   }
 
@@ -1875,8 +1881,8 @@ function askParseReply(text, chunks, stopReason) {
   // a broader range") has no "the" or number before it and stays.
   // "I can't tell you" and its kin: the clause is cut, the sentence kept.
   answer = answer
-    .replace(/,?\s*so I (can'?t|cannot|am unable to|'m unable to) (tell you|say|explain|know)[^.!?]*/gi, '')
-    .replace(/\bI (can'?t|cannot|am unable to|'m unable to) (tell you|say|explain|know)\b[^.!?]*[.!?]?\s*/gi, '');
+    .replace(/,?\s*so I (can'?t|cannot|am unable to|'m unable to) (tell you|say|explain|know|point you|show you|find|help with)[^.!?]*/gi, '')
+    .replace(/\bI (can'?t|cannot|am unable to|'m unable to) (tell you|say|explain|know|point you|show you|find|help with)\b[^.!?]*[.!?]?\s*/gi, '');
   // At most one "not covered" sentence: a second one is dropped.
   let gapSeen = false;
   answer = answer
