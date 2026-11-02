@@ -237,6 +237,27 @@ export default function AskBeastlyChat() {
   }
 
   // ------------------------------------------------------------- minimized
+  // Docked on a wide screen, minimizing tucks the sidebar into a tab on the
+  // right edge (owner, 2026-11-02, Fable spec); floating and phone keep the
+  // pill in the corner.
+  if (ui.mode === 'minimized' && !isMobile && ui.dock === 'side') {
+    return (
+      <button
+        type="button"
+        onClick={() => setUi({ mode: 'open' })}
+        aria-label="Open Ask Beastly"
+        title="Open Ask Beastly"
+        className="fixed right-0 top-1/2 -translate-y-1/2 z-40 w-10 h-[140px] rounded-l-xl bg-secondary text-secondary-foreground border-l border-black/15 shadow-lg flex flex-col items-center justify-center gap-3 transition-all duration-200 hover:-translate-x-1 hover:brightness-110"
+      >
+        <span className="relative">
+          <Sparkles className="w-4 h-4" />
+          {pending && <span className="absolute -top-1 -right-1 w-2 h-2 rounded-full bg-card ring-2 ring-secondary" aria-label="Answer on its way" />}
+        </span>
+        <span className="text-[13px] font-body font-semibold whitespace-nowrap [writing-mode:vertical-rl] rotate-180">Ask Beastly</span>
+      </button>
+    );
+  }
+
   if (ui.mode === 'minimized') {
     const lastQ = current ? current.turns[current.turns.length - 1].q : null;
     return (
@@ -265,7 +286,7 @@ export default function AskBeastlyChat() {
     // the bar hides while reading (data-follows-tabs, index.css).
     placement = 'left-0 right-0 bottom-[calc(56px+var(--safe-area-inset-bottom,0px))] h-[72vh] rounded-t-2xl border-t';
   } else if (docked) {
-    placement = 'right-0 top-14 bottom-0 border-l shadow-2xl';
+    placement = 'right-0 top-14 bottom-0 border-l shadow-2xl ask-slide-in';
     style = { width: PANEL_W };
   } else {
     placement = 'rounded-2xl border shadow-2xl';

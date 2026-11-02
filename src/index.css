@@ -451,3 +451,14 @@ html, body {
     transform: translateY(calc(56px + var(--safe-area-inset-bottom, 0px)));
   }
 }
+
+/* Ask Beastly's docked sidebar slides back in from its edge tab
+   (components/ask/AskBeastlyChat.jsx). */
+@keyframes ask-slide-in {
+  from { transform: translateX(100%); }
+  to { transform: translateX(0); }
+}
+.ask-slide-in { animation: ask-slide-in 200ms ease-out; }
+@media (prefers-reduced-motion: reduce) {
+  .ask-slide-in { animation: none; }
+}
