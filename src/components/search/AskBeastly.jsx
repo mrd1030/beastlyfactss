@@ -31,7 +31,9 @@ export default function AskBeastly({ query, askSignal = 0, onReply, hasResults =
     if (!canAsk || question === askedFor) return;
     setAskedFor(question);
     setState({ status: 'asking' });
-    const entry = await askQuestion(question, captchaToken);
+    // The search page asks one question at a time: always a new conversation.
+    const conversation = await askQuestion(question, captchaToken);
+    const entry = conversation.turns[conversation.turns.length - 1];
     // A Turnstile token is single use: the next question gets a fresh one.
     setCaptchaToken('');
     setCaptchaNonce((n) => n + 1);

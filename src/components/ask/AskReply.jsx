@@ -85,6 +85,10 @@ const searchLink = (q) => `/search/${encodeURIComponent(q)}/`;
 // unclear rule shows the label and the links only: its long note is the
 // law page's to explain.
 function LegalCell({ cell }) {
+  // The status, its one-line meaning and the cite show first; the statute
+  // wording, the note and the rest open under "Why", since a full cell runs
+  // a dozen lines on a phone.
+  const [open, setOpen] = useState(false);
   const bucket = STATUS_BUCKETS[bucketFor(cell.status)];
   const unclear = bucket.key === 'unclear';
   const checked = formatDay(cell.verifiedOn);
@@ -101,9 +105,14 @@ function LegalCell({ cell }) {
         </span>
       </p>
       <p className="mt-1.5 text-sm font-body text-muted-foreground">{bucket.blurb}</p>
-      {!unclear && cell.status && (
+      {!unclear && cell.status && cell.cite && <p className="mt-2 text-xs font-body font-semibold text-foreground">{cell.cite}</p>}
+      {!unclear && cell.status && (cell.quote || cell.note || cell.grandfathered || cell.localOverride) && (
+        <button type="button" onClick={() => setOpen((o) => !o)} aria-expanded={open} className="mt-1.5 text-xs font-body font-semibold text-secondary hover:underline">
+          {open ? 'Hide why' : 'Why'}
+        </button>
+      )}
+      {!unclear && cell.status && open && (
         <>
-          {cell.cite && <p className="mt-2 text-xs font-body font-semibold text-foreground">{cell.cite}</p>}
           {cell.quote && (
             <blockquote className="mt-1.5 border-l-2 border-primary/40 pl-3 text-xs font-body italic text-muted-foreground leading-relaxed">
               {cell.quote}
@@ -129,7 +138,9 @@ function LegalCell({ cell }) {
   );
 }
 
-export default function AskReply({ question, reply, compact = false, hasResults = false, onNavigate }) {
+// showDisclaimer: the "not a substitute for a vet" line under an answer. The
+// chat shows it once under its input instead of under every answer.
+export default function AskReply({ question, reply, compact = false, hasResults = false, onNavigate, showDisclaimer = !compact }) {
   const card = useEmergencyCard(reply?.species?.guideId, Boolean(reply?.emergency && reply?.result === 'answered'));
   const text = compact ? 'text-sm' : 'text-base';
   const muted = `font-body ${compact ? 'text-sm' : 'text-sm'} text-muted-foreground`;
@@ -145,9 +156,11 @@ export default function AskReply({ question, reply, compact = false, hasResults 
         <p className={`font-body ${text} text-foreground leading-relaxed`}>{reply.answer}</p>
         <Links links={reply.links} onNavigate={onNavigate} />
         {reply.emergency && <EmergencyCard species={reply.species} card={card} />}
-        <p className="mt-3 text-[11px] font-body text-muted-foreground">
-          Answers come from our guides. Not a substitute for a vet.
-        </p>
+        {showDisclaimer && (
+          <p className="mt-3 text-[11px] font-body text-muted-foreground">
+            Answers come from our guides. Not a substitute for a vet.
+          </p>
+        )}
       </div>
     );
   }

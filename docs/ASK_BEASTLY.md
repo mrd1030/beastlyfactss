@@ -22,16 +22,20 @@ This file is the spec as built. Where the build differs, it says why.
 - **The search page.** A query of three words or more shows an Ask Beastly
   button under the search box (Enter asks it too), with the answer full width
   above the results. Code: `src/components/search/AskBeastly.jsx`.
-- **History.** Both share the reader's questions and answers from the last 7
-  days (owner, 2026-11-02, on a Fable recommendation), at most 30, kept in the
-  reader's browser only (localStorage `beastly-ask-history`), like My Pack.
-  The chat groups them under Today, Yesterday and short dates; anything older
-  than today says "Answered <date>", since a stored answer is a snapshot.
-  Each question has its own delete; the trash button clears everything after
-  a confirm. Code: `src/lib/askBeastly.js`.
-- Each question is answered on its own: no follow-up memory (owner, 2026-11-02).
-- The answer arrives whole, not streamed, because the worker checks it (dashes,
-  links, a cut sentence) before anyone sees it.
+- **Conversations and history** (owner, 2026-11-02, on a Fable layout). The
+  chat is an answer card, not a chat log. A conversation is up to 3 answers
+  on one topic: the first question plus follow-ups ("what about babies?").
+  A follow-up sends only the previous question as context, so the search
+  keeps the animal and topic and Haiku sees "Earlier question: ..."; the
+  previous answer is never sent. A question naming a different animal, a
+  legal answer, or the 3 answer cap starts a new conversation. History is
+  its own view (the clock button): the last 7 days of conversations, at most
+  30, by day, each with its own delete and "Clear all" behind a confirm;
+  tapping one opens it read only. Kept in the reader's browser only
+  (localStorage `beastly-ask-history`), shared with the search page box,
+  which always asks a fresh question. The vet line shows once, under the
+  input. Legal cells show status, meaning and cite, with the rest under
+  "Why". Code: `src/lib/askBeastly.js`, `src/components/ask/`.
 - Critter Keeper's floating dragon bubble is parked to free the corner
   (CRITTER_KEEPER.md).
 

@@ -1,16 +1,25 @@
 // Ask Beastly, the browser half (docs/ASK_BEASTLY.md): asking POST /api/ask
-// and keeping the reader's recent questions in this browser.
+// and keeping the reader's recent conversations in this browser.
 //
-// The history is the reader's own, like My Pack: localStorage only, never
-// sent anywhere. It keeps the last 7 days (US Eastern dates), at most 30
-// questions, newest kept; older ones drop off when read. The search page box
-// and the floating chat share it. A stored answer is a snapshot of the day it
-// was asked, which the chat says under anything older than today.
+// A conversation is up to MAX_TURNS answers on one topic: the first question
+// plus follow-ups ("what about babies?"). A follow-up sends the previous
+// question as context so the search keeps the animal and topic; the previous
+// answer is never sent. The worker says whether it treated the question as a
+// follow-up (followUp); when it did not (a different animal, or no context),
+// the question starts a new conversation. A legal answer never joins one: it
+// is a conversation of its own, closed.
+//
+// History is the reader's own, like My Pack: localStorage only, never sent
+// anywhere. It keeps the last 7 days (US Eastern dates), at most 30
+// conversations, newest kept; older ones drop off when read. The search page
+// box and the floating chat share it. A stored answer is a snapshot of the
+// day it was asked.
 
 const KEY = 'beastly-ask-history';
 const EVENT = 'beastly-ask-history-change';
-const MAX_ITEMS = 30;
+const MAX_CONVERSATIONS = 30;
 const KEEP_DAYS = 7;
+export const MAX_TURNS = 3;
 
 export const ASK_HISTORY_EVENT = EVENT;
 
@@ -21,9 +30,18 @@ export function easternDate(now = new Date()) {
   return new Intl.DateTimeFormat('en-CA', { timeZone: 'America/New_York' }).format(now);
 }
 
-// The Eastern date KEEP_DAYS - 1 days back: items on or after it are kept.
+// The Eastern date KEEP_DAYS - 1 days back: conversations active on or after
+// it are kept.
 function oldestKeptDate() {
   return easternDate(new Date(Date.now() - (KEEP_DAYS - 1) * 86400000));
+}
+
+// Earlier builds stored one question per item ({ id, q, at, reply }). Each
+// becomes a one-answer conversation.
+function migrate(item) {
+  if (item && Array.isArray(item.turns)) return item;
+  if (!item || !item.q) return null;
+  return { id: item.id, at: item.at, closed: false, turns: [{ q: item.q, at: item.at, reply: item.reply }] };
 }
 
 export function readHistory() {
@@ -31,8 +49,9 @@ export function readHistory() {
     const raw = JSON.parse(localStorage.getItem(KEY) || 'null');
     if (!raw || !Array.isArray(raw.items)) return [];
     const cutoff = oldestKeptDate();
-    const kept = raw.items.filter((it) => it && it.at && easternDate(new Date(it.at)) >= cutoff);
-    if (kept.length !== raw.items.length || raw.date) store(kept);
+    const all = raw.items.map(migrate).filter(Boolean);
+    const kept = all.filter((c) => c.at && easternDate(new Date(c.at)) >= cutoff);
+    if (kept.length !== raw.items.length || raw.date || all.some((c, i) => c !== raw.items[i])) store(kept);
     return kept;
   } catch { /* storage off or bad JSON: start empty */ }
   return [];
@@ -40,7 +59,7 @@ export function readHistory() {
 
 function store(items) {
   try {
-    localStorage.setItem(KEY, JSON.stringify({ items: items.slice(-MAX_ITEMS) }));
+    localStorage.setItem(KEY, JSON.stringify({ items: items.slice(-MAX_CONVERSATIONS) }));
   } catch { /* private window or storage full: the chat still works for this visit */ }
 }
 
@@ -53,9 +72,11 @@ export function clearHistory() {
   writeHistory([]);
 }
 
-export function deleteHistoryItem(id) {
-  writeHistory(readHistory().filter((it) => it.id !== id));
+export function deleteConversation(id) {
+  writeHistory(readHistory().filter((c) => c.id !== id));
 }
+
+export const canFollowUp = (c) => Boolean(c) && !c.closed && c.turns.length < MAX_TURNS;
 
 // Only what the reader needs to see again goes in: the source chunks the test
 // site returns are dropped.
@@ -64,20 +85,37 @@ function keepable(reply) {
   return { result: result || 'unavailable', answer, links, emergency, species, legal };
 }
 
-// Asks one question. Never throws: a network or server failure comes back as
-// { result: 'unavailable' }, which every view treats as "no answer, no error".
-export async function askQuestion(question, captcha = '') {
+// Asks one question, as a follow-up in conversation `conversationId` when it
+// can take one. Never throws: a failure comes back as result 'unavailable',
+// which every view treats as "no answer, no error". Returns the conversation
+// the answer landed in.
+export async function askQuestion(question, captcha = '', conversationId = null) {
   const q = String(question).trim();
+  const current = readHistory().find((c) => c.id === conversationId);
+  const prev = canFollowUp(current) ? current.turns[current.turns.length - 1].q : '';
+
   let reply = { result: 'unavailable' };
   try {
     const res = await fetch('/api/ask', {
       method: 'POST',
       headers: { 'content-type': 'application/json' },
-      body: JSON.stringify({ question: q, captcha }),
+      body: JSON.stringify({ question: q, captcha, ...(prev && { context: { prev } }) }),
     });
     reply = await res.json();
   } catch { /* stays unavailable */ }
-  const entry = { id: `${Date.now()}`, q, at: Date.now(), reply: keepable(reply) };
-  writeHistory([...readHistory(), entry]);
-  return entry;
+
+  const now = Date.now();
+  const turn = { q, at: now, reply: keepable(reply) };
+  const legal = turn.reply.result === 'legal';
+  const items = readHistory();
+  const target = items.find((c) => c.id === conversationId);
+  let conversation;
+  if (prev && reply.followUp && !legal && target && canFollowUp(target)) {
+    conversation = { ...target, at: now, turns: [...target.turns, turn] };
+    writeHistory([...items.filter((c) => c.id !== target.id), conversation]);
+  } else {
+    conversation = { id: `${now}`, at: now, closed: legal, turns: [turn] };
+    writeHistory([...items, conversation]);
+  }
+  return conversation;
 }

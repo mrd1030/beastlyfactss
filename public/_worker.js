@@ -1362,6 +1362,7 @@ const ASK_SYNONYMS = [
   ['big', 'size', 'large', 'length'],
   ['live', 'lifespan', 'old', 'age'],
   ['poop', 'pooped', 'pooping', 'poo', 'stool', 'droppings', 'feces', 'fecal'],
+  ['baby', 'babies', 'hatchling', 'hatchlings', 'juvenile', 'juveniles', 'young'],
 ];
 const ASK_SYNONYM_OF = new Map(ASK_SYNONYMS.flatMap((g) => g.map((w) => [w, g])));
 
@@ -1497,25 +1498,41 @@ const askStem = (t) => {
 
 // Finds the chunks that answer q. Returns { chunks, species, best } where
 // chunks is empty when the best match is too weak to send anywhere.
-async function askRetrieve(db, question) {
+// A follow-up ("what about babies?") carries the conversation's previous
+// question into the search, so its animal and topic come along. Only the
+// question text: the previous answer never goes back to the model, which
+// would let it answer from itself instead of the sections. A question that
+// names a different animal is a new conversation (followUp: false).
+async function askRetrieve(db, question, context = null) {
   const meta = await askMeta(db);
-  let q = askNormalize(question);
-  for (const [re, to] of meta.aliases) q = q.replace(re, to);
+  const expand = (text) => {
+    let out = askNormalize(text);
+    for (const [re, to] of meta.aliases) out = out.replace(re, to);
+    return out;
+  };
+  const qOwn = expand(question);
+  const ownSpecies = askFindName(qOwn, meta.species);
+  const prev = context?.prev ? expand(context.prev) : '';
+  const prevSpecies = prev ? askFindName(prev, meta.species) : null;
+  const followUp = Boolean(prev) && (!ownSpecies || !prevSpecies || ownSpecies.name === prevSpecies.name);
+  const q = followUp && !ownSpecies ? `${qOwn} ${prev}` : qOwn;
 
   const species = askFindName(q, meta.species);
   const speciesWords = new Set(species ? askNormalize(species.name).split(/[\s-]+/) : []);
   const tokens = [...new Set(
     q.split(/[\s-]+/).map((t) => t.replace(/'s$|'/g, '')).filter((t) => t.length > 1 && !ASK_STOPWORDS.has(t)),
   )];
-  if (!tokens.length) return { chunks: [], species, best: null, legal: false, meta, q };
+  if (!tokens.length) return { chunks: [], species, best: null, legal: false, meta, q, qOwn, followUp };
 
   // "Can I have a hedgehog in California" never says "legal": a state name
   // with own / have / keep / buy / get is a legal question too.
-  const legal = ASK_LEGAL_RE.test(q)
-    || (Boolean(askFindState(q, meta.states)) && /\b(own|have|keep|buy|get|bring)\b/.test(q));
+  // Judged on the reader's own words: a follow-up is legal only if it asks a
+  // legal question, though the animal may come from the conversation.
+  const legal = ASK_LEGAL_RE.test(qOwn)
+    || (Boolean(askFindState(qOwn, meta.states)) && /\b(own|have|keep|buy|get|bring)\b/.test(qOwn));
   // A legal question is answered from the law matrix, never from these
   // chunks, so it skips the search and the rows it would read.
-  if (legal) return { chunks: [], species, best: null, legal, meta, q };
+  if (legal) return { chunks: [], species, best: null, legal, meta, q, qOwn, followUp };
 
   const table = `chunks_${meta.slot}`;
   const fts = `${table}_fts`;
@@ -1571,7 +1588,7 @@ async function askRetrieve(db, question) {
   const best = scored[0] || null;
   const minCoverage = species ? ASK.minCoverage : ASK.minCoverageNoSpecies;
   if (!best || best.coverage < minCoverage || best.score < ASK.minScore) {
-    return { chunks: [], species, best, legal, meta, q };
+    return { chunks: [], species, best, legal, meta, q, qOwn, followUp };
   }
   const chunks = [];
   let budget = ASK.tokenBudget;
@@ -1582,7 +1599,7 @@ async function askRetrieve(db, question) {
     budget -= cost;
     if (chunks.length === ASK.topK) break;
   }
-  return { chunks, species, best, legal, meta, q, ranked: scored.slice(0, 8) };
+  return { chunks, species, best, legal, meta, q, qOwn, followUp, ranked: scored.slice(0, 8) };
 }
 
 async function askLimit(env, request) {
@@ -1637,6 +1654,9 @@ async function handleAsk(request, env, ctx) {
     return quiet('unavailable');
   }
   const question = String(body?.question || '').replace(/\s+/g, ' ').trim().slice(0, ASK.maxQuestion);
+  // The conversation's previous question, for a follow-up. Text only.
+  const prev = String(body?.context?.prev || '').replace(/\s+/g, ' ').trim().slice(0, ASK.maxQuestion);
+  const context = prev.length >= 3 ? { prev } : null;
   if (question.length < 3) return quiet('unavailable');
   if (!env.ASK_DB) return quiet('unavailable');
 
@@ -1659,7 +1679,7 @@ async function handleAsk(request, env, ctx) {
 
   let found;
   try {
-    found = await askRetrieve(env.ASK_DB, question);
+    found = await askRetrieve(env.ASK_DB, question, context);
   } catch {
     return quiet('unavailable');
   }
@@ -1676,12 +1696,12 @@ async function handleAsk(request, env, ctx) {
     } catch {
       // No matrix table yet (an index loaded before it existed): links alone.
     }
-    return storeJson({ result: 'legal', answer: '', links: askLegalLinks(found.q, found.meta), legal, emergency: false, species });
+    return storeJson({ result: 'legal', answer: '', links: askLegalLinks(found.q, found.meta), legal, emergency: false, species, followUp: found.followUp });
   }
 
   if (!found.chunks.length) {
     log('no_match', found.best ? [found.best.slug] : []);
-    return quiet('no_match', { species });
+    return quiet('no_match', { species, followUp: found.followUp });
   }
 
   const slugs = [...new Set(found.chunks.map((c) => c.slug))];
@@ -1689,7 +1709,7 @@ async function handleAsk(request, env, ctx) {
   // match that names one. Any matched section was too loose: feeding and
   // substrate sections mention breathing or swelling in passing.
   const top = found.chunks[0];
-  const emergency = ASK_HEALTH_RE.test(found.q)
+  const emergency = ASK_HEALTH_RE.test(found.qOwn)
     || Boolean(top && /-health/.test(top.slug) && ASK_HEALTH_RE.test(top.text.toLowerCase()));
 
   if ((await askDailyUsed(env)) >= ASK.answersPerDay) {
@@ -1699,7 +1719,7 @@ async function handleAsk(request, env, ctx) {
 
   // Any failure from here on is 'refused': the reader gets the matched pages
   // as plain links and the search results the page already shows.
-  const fallback = () => storeJson({ result: 'refused', answer: '', links: askLinks(found.chunks), emergency, species });
+  const fallback = () => storeJson({ result: 'refused', answer: '', links: askLinks(found.chunks), emergency, species, followUp: found.followUp });
   if (!env.ANTHROPIC_API_KEY) {
     log('refused', slugs);
     return fallback();
@@ -1708,7 +1728,7 @@ async function handleAsk(request, env, ctx) {
   let reply;
   try {
     await askCountAnswer(env);
-    reply = await askHaiku(env, question, found.chunks);
+    reply = await askHaiku(env, question, found.chunks, found.followUp ? prev : '');
   } catch {
     log('refused', slugs);
     return fallback();
@@ -1719,7 +1739,7 @@ async function handleAsk(request, env, ctx) {
   }
   if (reply.kind === 'no_answer') {
     log('no_match', slugs);
-    return quiet('no_match', { species });
+    return quiet('no_match', { species, followUp: found.followUp });
   }
 
   log('answered', slugs);
@@ -1729,6 +1749,7 @@ async function handleAsk(request, env, ctx) {
     links: askLinks(found.chunks, reply.best),
     emergency,
     species,
+    followUp: found.followUp,
     ...(testing && { sources: found.chunks.map((c) => ({ url: c.url, title: askSourceTitle(c), text: c.text })) }),
   });
 }
@@ -1755,7 +1776,7 @@ Rules:
 const askSourceTitle = (c) => (c.heading ? `${c.title}: ${c.heading}` : c.title);
 const askEscape = (t) => String(t).replace(/</g, '&lt;').replace(/>/g, '&gt;');
 
-async function askHaiku(env, question, chunks) {
+async function askHaiku(env, question, chunks, prevQuestion = '') {
   const sources = chunks
     .map((c, i) => `<source index="${i + 1}" title="${askEscape(askSourceTitle(c)).replace(/"/g, "'")}">\n${askEscape(c.text)}\n</source>`)
     .join('\n');
@@ -1771,7 +1792,7 @@ async function askHaiku(env, question, chunks) {
       max_tokens: 300,
       thinking: { type: 'disabled' },
       system: [{ type: 'text', text: ASK_SYSTEM, cache_control: { type: 'ephemeral' } }],
-      messages: [{ role: 'user', content: `<sources>\n${sources}\n</sources>\n\nQuestion: ${askEscape(question)}` }],
+      messages: [{ role: 'user', content: `<sources>\n${sources}\n</sources>\n\n${prevQuestion ? `Earlier question: ${askEscape(prevQuestion)}\n` : ''}Question: ${askEscape(question)}` }],
     }),
   });
   if (!res.ok) throw new Error(`anthropic ${res.status}`);
