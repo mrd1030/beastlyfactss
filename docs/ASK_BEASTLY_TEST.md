@@ -216,4 +216,66 @@ Answer time: 1.0 to 1.8 seconds with the model, under 0.15 seconds without (lega
 
 ## Source check
 
-SOURCE_CHECK_PLACEHOLDER
+A Fable agent checked all 17 model answers against the exact sections each one was given, claim by claim, for anything added, made stronger, or wrong, and for answers that mention "the sources". I checked its three flags against the sources myself: all three hold.
+
+**Result: 14 pass, 3 flagged.** No hedge was made stronger, no link was wrong, no dashes.
+
+What it means:
+
+- **Added (1): the axolotl gills answer.** "Shrinking gills can be a sign of stress or poor water conditions" is in none of its sources. The site does not cover shrinking gills; the right reply was NO_ANSWER. This is the failure that matters: the model filled a gap instead of saying so.
+- **Wrong, minor (1): the bearded dragon swollen jaw answer.** It ties a swollen jaw to MBD; the MBD section lists a misshapen jaw and swollen limbs. The vet list's "swelling in the jaw or limbs" and the mouth rot section do support the rest.
+- **Leak (2): rabbit and axolotl.** "Sources say" and "the sources don't say" survive the new prompt rule.
+
+## Ask Beastly source check: 17 answers
+
+Judged only against the `sources` text in check-input.json. No outside knowledge, no web.
+
+### Summary
+
+1. my bearded dragon has a swollen jaw, what does that mean: FLAG (WRONG, minor)
+2. why is my ball python wheezing: PASS
+3. my leopard gecko has stuck shed on its toes: PASS
+4. my rabbit hasn't pooped today and won't eat: FLAG (LEAK)
+5. my axolotl's gills are shrinking: FLAG (ADDED, LEAK)
+6. how often should I feed an adult bearded dragon: PASS (note: "Vet sources" is quoted from the source text, not a leak)
+7. what do hermit crabs eat: PASS
+8. how much should I feed my betta fish: PASS
+9. do corn snakes eat frozen mice: PASS
+10. what size tank does a leopard gecko need: PASS
+11. what temperature should a ball python enclosure be: PASS
+12. does a crested gecko need a heat lamp: PASS
+13. how often should I clean a hamster cage: PASS
+14. what substrate is safe for a bearded dragon: PASS
+15. how many hearts does an octopus have: PASS
+16. why do axolotls never grow up: PASS
+17. how long do tortoises live: PASS
+
+Counts: 14 pass, 3 flagged. By type: ADDED 1 (n5), STRONGER 0, WRONG 1 (n1, minor), LEAK 2 (n4, n5), LINK 0.
+
+Dashes: no em or en dashes in any of the 17 answers.
+
+### Flags
+
+#### 1. my bearded dragon has a swollen jaw, what does that mean
+
+- WRONG (minor): "A swollen jaw can be a sign of Metabolic Bone Disease". The MBD section attaches swelling to the limbs and a different word to the jaw: "soft, bowed, or swollen limbs, a misshapen jaw or spine, a receded lower jaw" (/blog/bearded-dragon-health-issues-guide/#metabolic-bone-disease-mbd). The vet list does say "Swelling in the jaw or limbs" (/blog/bearded-dragon-health-issues-guide/#when-to-see-a-vet-no-question-asked) but without naming a cause, and the mouth rot section says MBD "can all trigger it" (/blog/bearded-dragon-health-issues-guide/#mouth-rot-infectious-stomatitis), so the linkage is indirect rather than invented. Why it matters: low severity, the vet advice is the same either way, but the answer presents jaw swelling as a listed MBD sign when the source lists jaw deformity instead.
+- Everything else is supported: "puffiness on one side of the jaw along with swollen gums or cheesy material in the mouth" matches "swollen or bleeding gums, yellow-white cheesy material in the mouth ... a jaw that looks puffy on one side"; "see a vet promptly rather than waiting" matches "see a vet promptly" and "it's not one to put off". First link (when-to-see-a-vet, which contains "Swelling in the jaw") is a reasonable choice.
+
+#### 4. my rabbit hasn't pooped today and won't eat
+
+- LEAK: "Sources say 8 to 12 hours without food or droppings is already abnormal and past 12 hours is an emergency". The phrase "Sources say" is the model's own; the source text reads "The alarm point is 8 to 12 hours without food or droppings. Past eight hours it is abnormal and a vet should see the rabbit, and at twelve it is an emergency" (/blog/rabbit-feeding-guide/#when-to-worry). The word "sources" does appear in the same page's FAQ ("sources put it at 80 to 85%") but about hay share, not this claim, so this is a genuine leak. Why it matters: it tells the reader there is a document behind the answer rather than speaking as the site.
+- Supported, not flagged: "needs a vet today, not later" matches "same-day vet contact is the safe default"; the warning signs (hunched posture, tooth grinding, bloated belly, lethargy) match "a hunched or tense posture, audible tooth grinding, a bloated or tense abdomen, lethargy". The wording "8 to 12 hours ... is already abnormal" slightly flattens "past eight hours it is abnormal", same direction and same urgency, so not counted as STRONGER.
+
+#### 5. my axolotl's gills are shrinking
+
+- ADDED: "Shrinking gills can be a sign of stress or poor water conditions". Not in any source. The heat stress section lists "curled or forward-facing gill tips, appetite loss, floating, and pale patches on the skin" (/blog/axolotl-health-issues-guide/#heat-stress) and mentions "too much current"; nothing names shrinking or receding gills, and nothing names "poor water conditions" as a cause of gill change. Why it matters: the reader is told a cause the site never gives, right after being told the site does not cover it.
+- LEAK: "the sources don't say what causes this specifically" and "The sources do say that curled or forward-facing gill tips...". Both phrases are the model's own; no source text uses "sources" here. Why it matters: it exposes the retrieval mechanism and reads as a disclaimer instead of an answer.
+- Supported, not flagged: the heat stress signs and "temperatures above roughly 72°F can suppress the immune system" match "Extended exposure above roughly 72°F starts to suppress the immune system". First link (heat-stress) is the right page among those given.
+
+### Notes on answers that pass
+
+- 6 (adult bearded dragon feeding): "Vet sources give a broader range than enthusiast sites, so treat those vet ranges as the more reliable guide" is a close paraphrase of the source's own FAQ text: "Vet sources give broader ranges than enthusiast sites' specific numbers, treat the vet ranges as the more reliable floor and ceiling" (/blog/bearded-dragon-feeding-guide/). "Vet sources" is quoted from the site, so it is not a leak. It is awkward for a reader because the answer does not state what those ranges are, but it is faithful.
+- 8 (betta): "Many keepers feed once a day" paraphrases "Once a day is a common baseline" (/blog/betta-fish-feeding-guide/#feeding-schedule); the fasting day is a recommendation in the source ("build in one fasting day a week") rather than a report of what keepers do. Meaning and hedge are kept, so not flagged.
+- 13 (hamster): "may be needed weekly" is softer than the source's flat "Weekly for a small cage"; a weakened claim, not a strengthened one, so not flagged.
+- 16 (axolotl neoteny): the iodine claim comes from "Adding a small amount of iodine to their water can cause an axolotl to metamorphose ... It rarely happens naturally" (/blog/10-surprising-axolotl-facts/). The Beastfile says "Injected with the right hormone ... which does not happen naturally" (/beastlypedia/axolotl/); the two sources differ slightly from each other, but the answer follows one of them accurately.
+- 17 (tortoise lifespan): every figure matches its source (sulcata 50 to 70 and 70 or more; Russian 40 to 50; red-footed "commonly cited at 50 to 70 years or more"). The answer covers only the three species the sources cover, which is correct behavior for a generic question.
