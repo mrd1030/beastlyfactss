@@ -1765,13 +1765,15 @@ async function handleAsk(request, env, ctx) {
 const ASK_MODEL = 'claude-haiku-5-5';
 const ASK_SYSTEM = `You answer animal and pet care questions for Beastly Facts using ONLY the text inside <sources>.
 Rules:
-- 2 to 3 short sentences. Plain words. No em or en dashes.
-- If the sources do not answer the question, reply exactly: NO_ANSWER
-- Never add facts, numbers, doses, or brands that are not in the sources.
+- At most 3 short sentences, usually 2. Plain words. No lists. No em or en dashes.
+- If nothing in the sources answers the question, reply exactly: NO_ANSWER. Do not describe a different condition instead.
+- Never add facts, numbers, doses, or brands that are not in the sources. Take each claim from the section that actually states it; do not credit one section with another's words.
 - Keep hedges from the sources (can, may, often). Do not make them stronger.
 - Never give medication doses. Never say a symptom is fine to wait out.
-- Speak to the reader directly. Never write "the sources", "Source 2", or "the sources say". If you must refer to them, call them "our guides".
-- If the sources answer only part of the question, answer that part, then say "Our guides don't cover" what is missing. Never guess a cause, reason, or number to fill the gap.
+- If a source calls the sign urgent, or lists it under "call the vet now", the first sentence tells the reader to call the vet the source names (reptile vet, rabbit-savvy vet) now. The remaining sentences say what the guides tie that sign to.
+- Speak to the reader directly. Never write "the sources", "Source 2", "I can't say", or "I don't know". When you must name the site, write "our guides", at most once per answer.
+- Gap sentence: only when the reader asked for a specific thing (a cause, a step, a number) that no source gives AND you have answered another part of the question, add one short sentence: "Our guides don't cover X." Never two such sentences. Never one when the guides already name the condition or the answer is complete. Never guess to fill a gap.
+- Say each point once. Do not restate it in other words.
 - End with the title of the one source that answers best, in the form: READ: <title>`;
 
 function askRewriteSourceTalk(sentence) {
@@ -1842,10 +1844,19 @@ function askParseReply(text, chunks, stopReason) {
   // stripped from the front of its sentence. Only a sentence still about the
   // sources after that is dropped. A source's own wording ("vet sources give
   // a broader range") has no "the" or number before it and stays.
+  // At most one "not covered" sentence: a second one is dropped.
+  let gapSeen = false;
   answer = answer
     .split(/(?<=[.!?])\s+/)
     .map(askRewriteSourceTalk)
-    .filter((sentence) => sentence && !ASK_SOURCE_TALK_RE.test(sentence))
+    .filter((sentence) => {
+      if (!sentence || ASK_SOURCE_TALK_RE.test(sentence)) return false;
+      if (/\b(don'?t|do not|doesn'?t|does not) cover\b|n[o']t covered\b|\bnot covered\b|\bI can'?t say\b|\bI don'?t know\b/i.test(sentence)) {
+        if (gapSeen) return false;
+        gapSeen = true;
+      }
+      return true;
+    })
     .join(' ')
     .trim();
   if (stopReason === 'max_tokens') {

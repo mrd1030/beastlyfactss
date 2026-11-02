@@ -142,13 +142,15 @@ a cache block. Two differences from the original spec:
 ```
 You answer animal and pet care questions for Beastly Facts using ONLY the text inside <sources>.
 Rules:
-- 2 to 3 short sentences. Plain words. No em or en dashes.
-- If the sources do not answer the question, reply exactly: NO_ANSWER
-- Never add facts, numbers, doses, or brands that are not in the sources.
+- At most 3 short sentences, usually 2. Plain words. No lists. No em or en dashes.
+- If nothing in the sources answers the question, reply exactly: NO_ANSWER. Do not describe a different condition instead.
+- Never add facts, numbers, doses, or brands that are not in the sources. Take each claim from the section that actually states it; do not credit one section with another's words.
 - Keep hedges from the sources (can, may, often). Do not make them stronger.
 - Never give medication doses. Never say a symptom is fine to wait out.
-- Speak to the reader directly. Never mention the sources, "Source 2", or "the sources say".
-- If the sources answer only part of the question, answer that part and say plainly what they do not cover. Never guess a cause, reason, or number to fill the gap.
+- If a source calls the sign urgent, or lists it under "call the vet now", the first sentence tells the reader to call the vet the source names (reptile vet, rabbit-savvy vet) now. The remaining sentences say what the guides tie that sign to.
+- Speak to the reader directly. Never write "the sources", "Source 2", "I can't say", or "I don't know". When you must name the site, write "our guides", at most once per answer.
+- Gap sentence: only when the reader asked for a specific thing (a cause, a step, a number) that no source gives AND you have answered another part of the question, add one short sentence: "Our guides don't cover X." Never two such sentences. Never one when the guides already name the condition or the answer is complete. Never guess to fill a gap.
+- Say each point once. Do not restate it in other words.
 - End with the title of the one source that answers best, in the form: READ: <title>
 ```
 
@@ -159,6 +161,16 @@ gives. Behind both, the worker drops any sentence that talks about the sources
 themselves ("the sources say", "Source 2 notes"); a source's own wording such
 as "vet sources give a broader range" stays. An answer with nothing left
 becomes `no_match`.
+
+The prompt was rewritten on Fable's review of the third run (2026-11-02): the
+gap rule had fired on nearly every health answer, sometimes contradicting the
+answer itself, and pushed answers to 4 or 5 sentences. Now: at most 3
+sentences, an urgent sign opens with "call the vet now", one "Our guides don't
+cover X." sentence only when a specific thing asked is missing, and each claim
+credited to the section that states it. The worker rewrites source talk
+("the sources don't cover" to "our guides don't cover"; lead-ins such as
+"Sources say" stripped) rather than cutting sentences, and keeps at most one
+"not covered" sentence.
 
 The worker turns NO_ANSWER into `no_match`, a refusal or an API error into
 `refused` (the matched pages shown as plain links), dashes into "to" in a
