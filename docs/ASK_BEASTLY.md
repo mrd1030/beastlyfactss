@@ -22,10 +22,13 @@ This file is the spec as built. Where the build differs, it says why.
 - **The search page.** A query of three words or more shows an Ask Beastly
   button under the search box (Enter asks it too), with the answer full width
   above the results. Code: `src/components/search/AskBeastly.jsx`.
-- **Today's history.** Both share today's questions and answers, kept in the
+- **History.** Both share the reader's questions and answers from the last 7
+  days (owner, 2026-11-02, on a Fable recommendation), at most 30, kept in the
   reader's browser only (localStorage `beastly-ask-history`), like My Pack.
-  It clears at midnight Eastern, or with the chat's clear button. Code:
-  `src/lib/askBeastly.js`.
+  The chat groups them under Today, Yesterday and short dates; anything older
+  than today says "Answered <date>", since a stored answer is a snapshot.
+  Each question has its own delete; the trash button clears everything after
+  a confirm. Code: `src/lib/askBeastly.js`.
 - Each question is answered on its own: no follow-up memory (owner, 2026-11-02).
 - The answer arrives whole, not streamed, because the worker checks it (dashes,
   links, a cut sentence) before anyone sees it.

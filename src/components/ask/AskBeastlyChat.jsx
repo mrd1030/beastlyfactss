@@ -2,7 +2,8 @@ import React, { useCallback, useEffect, useRef, useState } from 'react';
 import { Sparkles, X, Minus, PanelRight, PanelRightClose, Send, Loader2, Trash2, GripHorizontal } from 'lucide-react';
 import TurnstileWidget, { isTurnstileEnabled } from '@/components/shared/TurnstileWidget';
 import AskReply from '@/components/ask/AskReply';
-import { ASK_HISTORY_EVENT, askQuestion, clearHistory, readHistory } from '@/lib/askBeastly';
+import { ASK_HISTORY_EVENT, askQuestion, clearHistory, deleteHistoryItem, easternDate, readHistory } from '@/lib/askBeastly';
+import { formatDay } from '@/lib/utils/verifiedDates';
 import { useIsMobileViewport } from '@/lib/hooks/useIsMobileViewport';
 import { trackEvent } from '@/lib/analytics';
 
@@ -42,6 +43,14 @@ function saveUi(ui) {
 }
 
 const clamp = (v, lo, hi) => Math.min(Math.max(v, lo), Math.max(lo, hi));
+
+// "Today", "Yesterday", or a short date, for the history's day headings.
+function dayLabel(day) {
+  const today = easternDate();
+  if (day === today) return 'Today';
+  if (day === easternDate(new Date(Date.now() - 86400000))) return 'Yesterday';
+  return (formatDay(day) || day).replace(/, \d{4}$/, '');
+}
 
 export default function AskBeastlyChat() {
   const isMobile = useIsMobileViewport();
@@ -222,7 +231,7 @@ export default function AskBeastlyChat() {
           <Sparkles className="w-4 h-4 text-secondary" aria-hidden="true" />
           <h2 className="font-display font-bold text-base text-foreground flex-1">Ask Beastly</h2>
           {history.length > 0 && (
-            <button type="button" onClick={() => setConfirmClear(true)} aria-label="Clear today's questions" title="Clear today's questions" className="p-1.5 rounded-lg text-muted-foreground hover:text-foreground">
+            <button type="button" onClick={() => setConfirmClear(true)} aria-label="Clear all questions" title="Clear all questions" className="p-1.5 rounded-lg text-muted-foreground hover:text-foreground">
               <Trash2 className="w-4 h-4" />
             </button>
           )}
@@ -246,8 +255,8 @@ export default function AskBeastlyChat() {
         </header>
 
         {confirmClear && history.length > 0 && (
-          <div role="alertdialog" aria-label="Clear today's questions?" className="flex flex-wrap items-center gap-2 px-4 py-2.5 border-b border-border bg-destructive/5">
-            <p className="flex-1 min-w-[10rem] text-sm font-body text-foreground">Clear today's questions? This can't be undone.</p>
+          <div role="alertdialog" aria-label="Clear all questions?" className="flex flex-wrap items-center gap-2 px-4 py-2.5 border-b border-border bg-destructive/5">
+            <p className="flex-1 min-w-[10rem] text-sm font-body text-foreground">Clear all your questions? This can't be undone.</p>
             <button type="button" onClick={() => setConfirmClear(false)} className="text-sm font-body font-semibold px-3 py-1.5 rounded-full text-muted-foreground hover:text-foreground">
               Cancel
             </button>
@@ -273,14 +282,40 @@ export default function AskBeastlyChat() {
             </div>
           )}
 
-          {history.map((item) => (
-            <div key={item.id} className="space-y-2">
-              <p className="ml-8 bg-secondary/10 text-foreground text-sm font-body rounded-2xl rounded-br-md px-3 py-2">{item.q}</p>
-              <div className="mr-4">
-                <AskReply question={item.q} reply={item.reply} compact onNavigate={onNavigate} />
-              </div>
-            </div>
-          ))}
+          {history.map((item, i) => {
+            const day = easternDate(new Date(item.at));
+            const newDay = i === 0 || easternDate(new Date(history[i - 1].at)) !== day;
+            const old = day !== easternDate();
+            return (
+              <React.Fragment key={item.id}>
+                {newDay && (
+                  <p className="flex items-center gap-3 text-[11px] font-body font-semibold uppercase tracking-wide text-muted-foreground">
+                    <span className="flex-1 h-px bg-border" aria-hidden="true" />
+                    {dayLabel(day)}
+                    <span className="flex-1 h-px bg-border" aria-hidden="true" />
+                  </p>
+                )}
+                <div className="space-y-2">
+                  <div className="group ml-8 flex items-start gap-1">
+                    <p className="flex-1 bg-secondary/10 text-foreground text-sm font-body rounded-2xl rounded-br-md px-3 py-2">{item.q}</p>
+                    <button
+                      type="button"
+                      onClick={() => deleteHistoryItem(item.id)}
+                      aria-label={`Delete "${item.q}"`}
+                      title="Delete this question"
+                      className="p-1 mt-1.5 rounded-full text-muted-foreground hover:text-foreground md:opacity-0 md:group-hover:opacity-100 focus:opacity-100"
+                    >
+                      <X className="w-3.5 h-3.5" />
+                    </button>
+                  </div>
+                  <div className="mr-4">
+                    {old && <p className="text-[11px] font-body text-muted-foreground mb-1">{`Answered ${(formatDay(day) || day).replace(/, \d{4}$/, '')}`}</p>}
+                    <AskReply question={item.q} reply={item.reply} compact onNavigate={onNavigate} />
+                  </div>
+                </div>
+              </React.Fragment>
+            );
+          })}
 
           {pending && (
             <div className="space-y-2">
@@ -320,7 +355,7 @@ export default function AskBeastlyChat() {
             </button>
           </div>
           <p className="mt-2 text-[11px] font-body text-muted-foreground">
-            Today's questions stay in this browser and clear at midnight.
+            Your questions stay in this browser for 7 days.
           </p>
         </form>
       </section>
