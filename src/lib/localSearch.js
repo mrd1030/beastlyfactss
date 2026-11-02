@@ -3,7 +3,7 @@
 // articles are searched separately in Search.jsx straight from mdxPosts, so
 // they are deliberately not duplicated here.
 //
-// Matching stays plain lowercase includes(), but the query goes through
+// Matching is by whole words (see wordRe below), and the query goes through
 // normalizeQuery() first: a site-specific alias map (searchAliases.js) expands
 // hobby nicknames and known misspellings ("beardie", "bp", "axelotl") into the
 // canonical name, and both the canonical and the raw string are matched so
@@ -22,36 +22,48 @@ import { SEARCH_ALIASES } from '@/lib/data/searchAliases';
 
 const MAX_PER_TYPE = 6;
 
-function matches(text, variants) {
-  if (typeof text !== 'string') return false;
-  const lower = text.toLowerCase();
-  return variants.some(v => lower.includes(v));
-}
-
 const escapeRe = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 
-// `whole` requires the word to end too: "rat" but not "ratio".
-function matchesWord(text, variants, whole = false) {
-  if (typeof text !== 'string') return false;
-  const lower = text.toLowerCase();
-  return variants.some(v => new RegExp(`\\b${escapeRe(v)}${whole ? '\\b' : ''}`).test(lower));
+// Matching is by whole words, never letters inside a word: plain includes()
+// let "rat" pull in "rather", "regeneration", "Ceratophrys" and "operator",
+// so every section filled with animals that had nothing to do with rats.
+//   whole word   "rat" matches rat, rats, rat's; "rats" matches rat too
+//                (a trailing s or es on the word is optional)
+//   word start   names and titles only, once 4+ letters are typed, so the
+//                navbar dropdown still finds Axolotl at "axol"
+// Taglines, excerpts, definitions, tags and scientific names always need the
+// whole word.
+const reCache = new Map();
+function wordRe(v, prefix) {
+  const key = `${prefix ? 'p' : 'w'}:${v}`;
+  let re = reCache.get(key);
+  if (!re) {
+    const stem = prefix || v.length <= 3 || v.endsWith('ss') ? v : v.replace(/s$/, '');
+    re = new RegExp(`\\b${escapeRe(stem)}${prefix ? '' : '(?:e?s)?\\b'}`);
+    reCache.set(key, re);
+  }
+  return re;
 }
 
-// Each section keeps only MAX_PER_TYPE results, so order decides what shows.
-// Substring matching alone let "rat" fill the encyclopedia list with
-// Invertebrates (the category) and Ceratophrys (a scientific name) before
-// Fancy Rat was reached, and put "Ratio" articles ahead of "Pet Rat". Real
-// word matches come first (the name before other fields, the exact word
-// before a word that starts with it), and letters buried inside a word come
-// last, so "cat" lists the cat breeds before Sulcata Tortoise. Array.sort is
-// stable, so data order still breaks ties.
+function matchesWord(text, variants, prefix = false) {
+  if (typeof text !== 'string') return false;
+  const lower = text.toLowerCase();
+  return variants.some(v => wordRe(v, prefix && v.length >= 4).test(lower));
+}
+
+// A name or title: the whole word, or its start once 4+ letters are typed.
+const matchesName = (text, variants) => matchesWord(text, variants, true);
+// Any other field: the whole word only.
+const matches = (text, variants) => matchesWord(text, variants);
+
+// Each section keeps only MAX_PER_TYPE results, so order decides what shows:
+// the exact word in the name first, then a name word that starts with it,
+// then the exact word in another field. Array.sort is stable, so data order
+// still breaks ties.
 function rank(title, others, variants) {
-  if (matchesWord(title, variants, true)) return 0;
-  if (matchesWord(title, variants)) return 1;
-  if (others.some(t => matchesWord(t, variants, true))) return 2;
-  if (others.some(t => matchesWord(t, variants))) return 3;
-  if (matches(title, variants)) return 4;
-  return 5;
+  if (matchesWord(title, variants)) return 0;
+  if (matchesName(title, variants)) return 1;
+  return 2;
 }
 
 function ranked(items, titleOf, othersOf, variants) {
@@ -60,6 +72,9 @@ function ranked(items, titleOf, othersOf, variants) {
     .sort((a, b) => a.r - b.r)
     .map(({ item }) => item);
 }
+
+export const postMatches = (post, variants) =>
+  matchesName(post.title, variants) || matches(post.excerpt, variants) || (post.tags || []).some(t => matches(t, variants));
 
 // Longest aliases first so "leo gecko" wins before "leo" gets a chance to
 // rewrite part of it. Word-boundary regexes so "leo" never fires inside
@@ -200,7 +215,7 @@ export function searchLocalContent(query) {
   if (!variants.length) return { guides: [], encyclopedia: [], glossary: [], beastlypedia: [], articles: [] };
 
   const guides = ranked(
-    allGuides.filter(g => matches(g.name, variants) || matches(g.tagline, variants) || matches(g.petType, variants)),
+    allGuides.filter(g => matchesName(g.name, variants) || matches(g.tagline, variants) || matches(g.petType, variants)),
     g => g.name, g => [g.tagline, g.petType], variants,
   )
     .slice(0, MAX_PER_TYPE)
@@ -214,7 +229,7 @@ export function searchLocalContent(query) {
     }));
 
   const encyclopedia = ranked(
-    encyclopediaAnimals.filter(a => matches(a.name, variants) || matches(a.scientific, variants) || matches(a.category, variants)),
+    encyclopediaAnimals.filter(a => matchesName(a.name, variants) || matches(a.scientific, variants) || matches(a.category, variants)),
     a => a.name, a => [a.scientific, a.category], variants,
   )
     .slice(0, MAX_PER_TYPE)
@@ -228,7 +243,7 @@ export function searchLocalContent(query) {
     }));
 
   const beastlypedia = ranked(
-    beastfiles.filter(b => matches(b.name, variants) || matches(b.scientific, variants) || matches(b.tagline, variants) || matches(b.group, variants) || (b.alsoKnownAs || []).some(a => matches(a, variants))),
+    beastfiles.filter(b => matchesName(b.name, variants) || matches(b.scientific, variants) || matches(b.tagline, variants) || matches(b.group, variants) || (b.alsoKnownAs || []).some(a => matchesName(a, variants))),
     b => b.name, b => [b.scientific, b.tagline, b.group, ...(b.alsoKnownAs || [])], variants,
   )
     .slice(0, MAX_PER_TYPE)
@@ -244,7 +259,7 @@ export function searchLocalContent(query) {
   const glossaryHits = [];
   GLOSSARY_CATEGORIES.forEach(cat => {
     cat.terms.forEach(t => {
-      if (matches(t.term, variants) || (t.aliases || []).some(a => matches(a, variants)) || matches(t.definition, variants)) {
+      if (matchesName(t.term, variants) || (t.aliases || []).some(a => matchesName(a, variants)) || matches(t.definition, variants)) {
         glossaryHits.push({ t, cat });
       }
     });
@@ -263,7 +278,7 @@ export function searchLocalContent(query) {
   const articles = ranked(
     mdxPosts
       .filter(p => !isChroniclesPost(p))
-      .filter(p => matches(p.title, variants) || matches(p.excerpt, variants) || (p.tags || []).some(t => matches(t, variants))),
+      .filter(p => postMatches(p, variants)),
     p => p.title, p => [p.excerpt, ...(p.tags || [])], variants,
   )
     .slice(0, MAX_PER_TYPE)

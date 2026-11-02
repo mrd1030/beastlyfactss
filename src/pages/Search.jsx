@@ -10,7 +10,7 @@ import { mdxPosts } from '@/lib/mdxPosts';
 import { isChroniclesPost } from '@/lib/chronicles';
 import CompactPostCard from '@/components/shared/CompactPostCard';
 import AskBeastly, { isQuestion } from '@/components/search/AskBeastly';
-import { searchLocalContent, normalizeQuery, correctQuery } from '@/lib/localSearch';
+import { searchLocalContent, normalizeQuery, correctQuery, postMatches } from '@/lib/localSearch';
 import { Search as BadgeIcon } from 'lucide-react';
 import IconChip, { PageBadge } from '@/components/shared/IconChip';
 import { CATEGORY_ICONS } from '@/lib/data/categoryIcons';
@@ -55,9 +55,9 @@ const searchablePosts = mdxPosts.filter(p => !isChroniclesPost(p));
 // Variants come from normalizeQuery: the canonical (alias-expanded) query
 // plus the raw string, so "beardie" reaches bearded dragon articles too, not
 // just the guide that localSearch.js covers.
-const matchesQuery = (post, variants) =>
-  [post.title, post.excerpt, ...(post.tags || [])]
-    .some(text => typeof text === 'string' && variants.some(v => text.toLowerCase().includes(v)));
+// Whole words only, same rule as localSearch.js: "rat" must not match
+// "rather".
+const matchesQuery = postMatches;
 
 const EMPTY_LOCAL = { guides: [], encyclopedia: [], glossary: [], beastlypedia: [], articles: [] };
 const countLocal = (local) =>
