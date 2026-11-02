@@ -56,25 +56,79 @@ const matchesName = (text, variants) => matchesWord(text, variants, true);
 // Any other field: the whole word only.
 const matches = (text, variants) => matchesWord(text, variants);
 
-// Each section keeps only MAX_PER_TYPE results, so order decides what shows:
-// the exact word in the name first, then a name word that starts with it,
-// then the exact word in another field. Array.sort is stable, so data order
-// still breaks ties.
-function rank(title, others, variants) {
-  if (matchesWord(title, variants)) return 0;
-  if (matchesName(title, variants)) return 1;
-  return 2;
+// A query of several words is matched word by word, not as one phrase:
+// "rat sickness" finds the rat health article though no page says "rat
+// sickness". Every word must match somewhere on the item (its name or any
+// other field), filler words ("how", "my", "for") are dropped, and each word
+// also counts when a site word for the same thing matches (SEARCH_SYNONYMS:
+// sickness finds Health, uvb finds Lighting). A one-word query is unchanged.
+const STOPWORDS = new Set(['a', 'an', 'the', 'and', 'or', 'of', 'for', 'to', 'in', 'on', 'at', 'with', 'my', 'your', 'our', 'i', 'you', 'is', 'are', 'do', 'does', 'can', 'how', 'what', 'why', 'when', 'which', 'should', 'about', 'best', 'pet', 'pets']);
+
+const SYNONYM_GROUPS = [
+  ['health', 'sick', 'sickness', 'ill', 'illness', 'illnesses', 'disease', 'diseases', 'symptom', 'symptoms'],
+  ['cost', 'costs', 'price', 'prices', 'expensive', 'cheap', 'money', 'budget'],
+  ['feeding', 'feed', 'food', 'foods', 'diet', 'eat', 'eating', 'eats'],
+  ['tank', 'enclosure', 'setup', 'cage', 'habitat', 'terrarium', 'vivarium', 'aquarium', 'housing'],
+  ['uvb', 'uv', 'lighting', 'light', 'lights', 'lamp', 'bulb', 'basking'],
+  ['handling', 'handle', 'hold', 'holding', 'bite', 'biting', 'tame', 'taming'],
+  ['enrichment', 'toy', 'toys', 'play', 'bored', 'boredom'],
+  ['temperature', 'temperatures', 'heat', 'heating', 'temp', 'warm'],
+];
+const SYNONYMS = new Map();
+SYNONYM_GROUPS.forEach(group => group.forEach(w => SYNONYMS.set(w, group)));
+
+// Each variant becomes a list of terms; each term is the word plus its
+// synonyms, any one of which satisfies it.
+function termsOf(variant) {
+  const words = variant.split(/[^a-z0-9']+/).filter(Boolean);
+  const kept = words.filter(w => !STOPWORDS.has(w));
+  return (kept.length ? kept : words).map(w => SYNONYMS.get(w) || [w]);
 }
 
-function ranked(items, titleOf, othersOf, variants) {
+const fieldsHit = (alts, names, others) =>
+  names.some(t => matchesName(t, alts)) || others.some(t => matches(t, alts));
+
+// The terms of the first variant (canonical, then raw) that all match, or
+// null. topicsOptional (care guides): a topic word (health, cost, setup...)
+// may go unmatched when the name matches the rest, since every care guide
+// covers those topics: "rat sickness" lists the Fancy Rat guide.
+function matchedTerms(names, others, variants, topicsOptional) {
+  for (const v of variants) {
+    const terms = termsOf(v);
+    if (!terms.length) continue;
+    if (terms.every(alts => fieldsHit(alts, names, others))) return terms;
+    if (topicsOptional) {
+      const animal = terms.filter(alts => !SYNONYMS.has(alts[0]));
+      if (animal.length && animal.length < terms.length && animal.every(alts => names.some(t => matchesName(t, alts)))) return animal;
+    }
+  }
+  return null;
+}
+
+// Order decides what shows, since each section keeps only MAX_PER_TYPE: more
+// query words in the name first, the exact word scoring above a name word
+// that starts with it. Array.sort is stable, so data order breaks ties.
+function nameScore(names, terms) {
+  return terms.reduce((n, alts) => n + (
+    names.some(t => matchesWord(t, alts)) ? 2 : names.some(t => matchesName(t, alts)) ? 1 : 0
+  ), 0);
+}
+
+function ranked(items, namesOf, othersOf, variants, topicsOptional = false) {
   return items
-    .map(item => ({ item, r: rank(titleOf(item), othersOf(item), variants) }))
-    .sort((a, b) => a.r - b.r)
+    .map(item => {
+      const names = namesOf(item).filter(Boolean);
+      const terms = matchedTerms(names, othersOf(item).filter(Boolean), variants, topicsOptional);
+      return terms && { item, score: nameScore(names, terms) };
+    })
+    .filter(Boolean)
+    .sort((x, y) => y.score - x.score)
     .map(({ item }) => item);
 }
 
-export const postMatches = (post, variants) =>
-  matchesName(post.title, variants) || matches(post.excerpt, variants) || (post.tags || []).some(t => matches(t, variants));
+// Articles, for Search.jsx: the matching posts, best match first.
+export const rankPosts = (posts, variants) =>
+  ranked(posts, p => [p.title], p => [p.excerpt, ...(p.tags || [])], variants);
 
 // Longest aliases first so "leo gecko" wins before "leo" gets a chance to
 // rewrite part of it. Word-boundary regexes so "leo" never fires inside
@@ -214,10 +268,7 @@ export function searchLocalContent(query) {
   const { variants } = normalizeQuery(query);
   if (!variants.length) return { guides: [], encyclopedia: [], glossary: [], beastlypedia: [], articles: [] };
 
-  const guides = ranked(
-    allGuides.filter(g => matchesName(g.name, variants) || matches(g.tagline, variants) || matches(g.petType, variants)),
-    g => g.name, g => [g.tagline, g.petType], variants,
-  )
+  const guides = ranked(allGuides, g => [g.name], g => [g.tagline, g.petType], variants, true)
     .slice(0, MAX_PER_TYPE)
     .map(g => ({
       key: `guide-${g.id}`,
@@ -228,10 +279,7 @@ export function searchLocalContent(query) {
       to: `/guides/${g.id}/`,
     }));
 
-  const encyclopedia = ranked(
-    encyclopediaAnimals.filter(a => matchesName(a.name, variants) || matches(a.scientific, variants) || matches(a.category, variants)),
-    a => a.name, a => [a.scientific, a.category], variants,
-  )
+  const encyclopedia = ranked(encyclopediaAnimals, a => [a.name], a => [a.scientific, a.category], variants)
     .slice(0, MAX_PER_TYPE)
     .map(a => ({
       key: `enc-${a.id}`,
@@ -242,10 +290,7 @@ export function searchLocalContent(query) {
       to: `/encyclopedia/animal/${a.id}/`,
     }));
 
-  const beastlypedia = ranked(
-    beastfiles.filter(b => matchesName(b.name, variants) || matches(b.scientific, variants) || matches(b.tagline, variants) || matches(b.group, variants) || (b.alsoKnownAs || []).some(a => matchesName(a, variants))),
-    b => b.name, b => [b.scientific, b.tagline, b.group, ...(b.alsoKnownAs || [])], variants,
-  )
+  const beastlypedia = ranked(beastfiles, b => [b.name, ...(b.alsoKnownAs || [])], b => [b.scientific, b.tagline, b.group], variants)
     .slice(0, MAX_PER_TYPE)
     .map(b => ({
       key: `beastfile-${b.id}`,
@@ -256,15 +301,8 @@ export function searchLocalContent(query) {
       to: `/beastlypedia/${b.id}/`,
     }));
 
-  const glossaryHits = [];
-  GLOSSARY_CATEGORIES.forEach(cat => {
-    cat.terms.forEach(t => {
-      if (matchesName(t.term, variants) || (t.aliases || []).some(a => matchesName(a, variants)) || matches(t.definition, variants)) {
-        glossaryHits.push({ t, cat });
-      }
-    });
-  });
-  const glossary = ranked(glossaryHits, ({ t }) => t.term, ({ t }) => [...(t.aliases || []), t.definition], variants)
+  const glossaryTerms = GLOSSARY_CATEGORIES.flatMap(cat => cat.terms.map(t => ({ t, cat })));
+  const glossary = ranked(glossaryTerms, ({ t }) => [t.term, ...(t.aliases || [])], ({ t }) => [t.definition], variants)
     .slice(0, MAX_PER_TYPE)
     .map(({ t, cat }) => ({
       key: `gloss-${slugify(t.term)}`,
@@ -275,12 +313,7 @@ export function searchLocalContent(query) {
       to: `/glossary#${slugify(t.term)}`,
     }));
 
-  const articles = ranked(
-    mdxPosts
-      .filter(p => !isChroniclesPost(p))
-      .filter(p => postMatches(p, variants)),
-    p => p.title, p => [p.excerpt, ...(p.tags || [])], variants,
-  )
+  const articles = rankPosts(mdxPosts.filter(p => !isChroniclesPost(p)), variants)
     .slice(0, MAX_PER_TYPE)
     .map(p => ({
       key: `article-${p._id}`,

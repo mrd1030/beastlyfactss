@@ -10,7 +10,7 @@ import { mdxPosts } from '@/lib/mdxPosts';
 import { isChroniclesPost } from '@/lib/chronicles';
 import CompactPostCard from '@/components/shared/CompactPostCard';
 import AskBeastly, { isQuestion } from '@/components/search/AskBeastly';
-import { searchLocalContent, normalizeQuery, correctQuery, postMatches } from '@/lib/localSearch';
+import { searchLocalContent, normalizeQuery, correctQuery, rankPosts } from '@/lib/localSearch';
 import { Search as BadgeIcon } from 'lucide-react';
 import IconChip, { PageBadge } from '@/components/shared/IconChip';
 import { CATEGORY_ICONS } from '@/lib/data/categoryIcons';
@@ -55,9 +55,10 @@ const searchablePosts = mdxPosts.filter(p => !isChroniclesPost(p));
 // Variants come from normalizeQuery: the canonical (alias-expanded) query
 // plus the raw string, so "beardie" reaches bearded dragon articles too, not
 // just the guide that localSearch.js covers.
-// Whole words only, same rule as localSearch.js: "rat" must not match
-// "rather".
-const matchesQuery = postMatches;
+// Same matching as localSearch.js (whole words, several words matched one by
+// one). Newest first among equally good matches.
+const byDate = (a, b) => new Date(b.publishedAt) - new Date(a.publishedAt);
+const postsByDate = [...searchablePosts].sort(byDate);
 
 const EMPTY_LOCAL = { guides: [], encyclopedia: [], glossary: [], beastlypedia: [], articles: [] };
 const countLocal = (local) =>
@@ -108,8 +109,7 @@ export default function Search() {
     const norm = normalizeQuery(query);
     if (!norm.raw) return { results: [], localResults: EMPTY_LOCAL, didYouMean: null, rescued: false };
 
-    const byDate = (a, b) => new Date(b.publishedAt) - new Date(a.publishedAt);
-    let articles = searchablePosts.filter(p => matchesQuery(p, norm.variants));
+    let articles = rankPosts(postsByDate, norm.variants);
     let local = searchLocalContent(query);
     let suggestion = norm.didYouMean;
     let rescuedFlag = false;
@@ -120,7 +120,7 @@ export default function Search() {
       const corrected = correctQuery(norm.canonical);
       if (corrected) {
         const cNorm = normalizeQuery(corrected);
-        const cArticles = searchablePosts.filter(p => matchesQuery(p, cNorm.variants));
+        const cArticles = rankPosts(postsByDate, cNorm.variants);
         const cLocal = searchLocalContent(corrected);
         if (cArticles.length || countLocal(cLocal)) {
           articles = cArticles;
@@ -131,7 +131,7 @@ export default function Search() {
       }
     }
 
-    return { results: articles.sort(byDate), localResults: local, didYouMean: suggestion, rescued: rescuedFlag };
+    return { results: articles, localResults: local, didYouMean: suggestion, rescued: rescuedFlag };
   }, [query, settledQuery, forceRaw]);
 
   const handleInput = (val) => {
