@@ -1770,9 +1770,20 @@ Rules:
 - Never add facts, numbers, doses, or brands that are not in the sources.
 - Keep hedges from the sources (can, may, often). Do not make them stronger.
 - Never give medication doses. Never say a symptom is fine to wait out.
-- Speak to the reader directly. Never mention the sources, "Source 2", or "the sources say".
-- If the sources answer only part of the question, answer that part and say plainly what they do not cover. Never guess a cause, reason, or number to fill the gap.
+- Speak to the reader directly. Never write "the sources", "Source 2", or "the sources say". If you must refer to them, call them "our guides".
+- If the sources answer only part of the question, answer that part, then say "Our guides don't cover" what is missing. Never guess a cause, reason, or number to fill the gap.
 - End with the title of the one source that answers best, in the form: READ: <title>`;
+
+function askRewriteSourceTalk(sentence) {
+  let out = sentence
+    .replace(/^(according to|per|based on) (the |these |those |the provided )?sources?,?\s*/i, '')
+    .replace(/^(the |these )?sources? \d* ?(say|note|state|mention|indicate|show)s?\b( that)?,?\s*/i, '')
+    .replace(/\b(the|these|those|the provided) sources (do not|don't|does not|doesn't) (say|cover|mention|explain|address|describe)\b/gi, "our guides don't cover")
+    .replace(/\b(the|these|those|the provided) sources (do|also) (say|note|mention)s?\b( that)?\s*/gi, '')
+    .replace(/\b(the|these|those|the provided) sources\b/gi, 'our guides');
+  out = out.trim();
+  return out ? out[0].toUpperCase() + out.slice(1) : out;
+}
 
 const ASK_SOURCE_TALK_RE = /\b(the|these|those|my|our|provided|given) sources?\b|\bsources? \d\b|^sources? (say|says|note|notes|mention|mentions|show|shows|describe|describes|don'?t|do not|does not)\b/i;
 
@@ -1825,13 +1836,16 @@ function askParseReply(text, chunks, stopReason) {
     .replace(/\s*[\u2013\u2014]\s*/g, ', ')
     .replace(/\s+/g, ' ')
     .trim();
-  // A sentence about the sources themselves ("the sources say", "Source 2
-  // notes", "sources don't say") is dropped: the reader never sees the
-  // machinery. A source's own wording ("vet sources give a broader range")
-  // has no "the" or number before it and stays.
+  // Talk about the sources themselves is rewritten, not cut: "the sources
+  // don't cover X" becomes "our guides don't cover X", and a lead-in such as
+  // "Sources say", "According to the sources" or "Source 2 notes" is
+  // stripped from the front of its sentence. Only a sentence still about the
+  // sources after that is dropped. A source's own wording ("vet sources give
+  // a broader range") has no "the" or number before it and stays.
   answer = answer
     .split(/(?<=[.!?])\s+/)
-    .filter((sentence) => !ASK_SOURCE_TALK_RE.test(sentence))
+    .map(askRewriteSourceTalk)
+    .filter((sentence) => sentence && !ASK_SOURCE_TALK_RE.test(sentence))
     .join(' ')
     .trim();
   if (stopReason === 'max_tokens') {
