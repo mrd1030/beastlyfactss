@@ -453,6 +453,22 @@ html, body {
   .page-badge ~ :not(h1):not(.page-title):not(:has(h1)) { clear: left; }
 }
 
+/* The article's reading surface on a phone (pages/Blog.jsx): --reading fades
+   in from the page background over the first 64px and back out over the last
+   64px, so it blends into the page instead of starting and stopping at a hard
+   line (owner, 2026-11-02). From md up the article is a bordered card. */
+@media (max-width: 767px) {
+  .reading-surface {
+    background: linear-gradient(
+      to bottom,
+      hsl(var(--background)) 0,
+      hsl(var(--reading)) 64px,
+      hsl(var(--reading)) calc(100% - 64px),
+      hsl(var(--background)) 100%
+    );
+  }
+}
+
 /* The mobile bottom tabs slide away while reading an article (BottomTabs.jsx);
    the critter bubble that sits above them drops down with them. */
 @media (max-width: 767px) {
