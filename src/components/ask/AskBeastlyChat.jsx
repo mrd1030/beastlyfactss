@@ -253,8 +253,8 @@ export default function AskBeastlyChat() {
         onClick={() => setUi({ mode: 'open' })}
         aria-label="Ask Beastly a question"
         title="Ask Beastly"
-        data-follows-tabs
-        className="fixed right-4 z-40 w-14 h-14 rounded-full bg-secondary text-secondary-foreground shadow-lg flex items-center justify-center hover:scale-105 transition-transform duration-300 bottom-[calc(56px+var(--safe-area-inset-bottom,0px)+12px)] md:bottom-6"
+        data-hides-with-tabs
+        className="fixed right-4 z-40 w-14 h-14 rounded-full bg-secondary text-secondary-foreground shadow-lg flex items-center justify-center hover:scale-105 bottom-[calc(56px+var(--safe-area-inset-bottom,0px)+12px)] md:bottom-6"
       >
         <Sparkles className="w-6 h-6" />
       </button>
@@ -266,7 +266,7 @@ export default function AskBeastlyChat() {
     const lastQ = current ? current.turns[current.turns.length - 1].q : null;
     return (
       <div
-        data-follows-tabs
+        data-hides-with-tabs
         className="fixed right-4 z-40 flex items-center gap-1 bg-card border border-border rounded-full shadow-lg pl-3 pr-1 py-1 max-w-[calc(100vw-2rem)] bottom-[calc(56px+var(--safe-area-inset-bottom,0px)+12px)] md:bottom-6"
       >
         <button type="button" onClick={() => setUi({ mode: 'open' })} className="flex items-center gap-2 min-w-0 py-1.5 text-left">
