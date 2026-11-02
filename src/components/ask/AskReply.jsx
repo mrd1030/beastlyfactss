@@ -181,6 +181,18 @@ export default function AskReply({ question, reply, compact = false, hasResults 
     );
   }
 
+  // "Where is it" questions: the worker answers with the species' hub.
+  if (reply.result === 'navigate') {
+    return (
+      <div aria-live="polite">
+        <p className={`font-body ${text} text-foreground`}>
+          {`Everything we have on the ${reply.species?.name || 'animal'} starts here:`}
+        </p>
+        <Links links={reply.links} onNavigate={onNavigate} />
+      </div>
+    );
+  }
+
   if (reply.result === 'no_match') {
     return (
       <p className={muted} aria-live="polite">

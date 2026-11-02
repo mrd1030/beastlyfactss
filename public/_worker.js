@@ -1436,8 +1436,21 @@ function askFindName(q, list) {
     const name = item.name.toLowerCase();
     if (new RegExp(`\\b${escapeRe(name)}(e?s)?\\b`).test(q)) return item;
   }
+  // Second pass: a name ending in "fish" also matches without it, so
+  // "betta" (and "beta", an alias for it) finds "Betta Fish".
+  for (const item of list) {
+    const short = item.name.toLowerCase().replace(/ fish$/, '');
+    if (short !== item.name.toLowerCase() && new RegExp(`\\b${escapeRe(short)}s?\\b`).test(q)) return item;
+  }
   return null;
 }
+
+// "Where is it" questions: a species with a care guide plus words asking for a
+// place on the site ("show me where the betta files are", "take me to the
+// leopard gecko guide"). They get the species' hub as a link, with no model
+// call; the hub is where everything on the animal starts.
+const ASK_NAV_RE = /\b(where (is|are|can i find|do i find|would i find)|show me|find me|take me|link (me )?to|go to|point me)\b/;
+const ASK_PLACE_RE = /\b(guides?|pages?|files?|info|information|sections?|sheets?|hub|articles?|stuff|everything|posts?)\b/;
 
 // Legal questions get links, never a model summary: the matrix cells change
 // monthly and quote statutes.
@@ -1533,6 +1546,9 @@ async function askRetrieve(db, question, context = null) {
   // A legal question is answered from the law matrix, never from these
   // chunks, so it skips the search and the rows it would read.
   if (legal) return { chunks: [], species, best: null, legal, meta, q, qOwn, followUp };
+  if (species?.guideId && ASK_NAV_RE.test(qOwn) && ASK_PLACE_RE.test(qOwn)) {
+    return { chunks: [], species, best: null, legal: false, nav: true, meta, q, qOwn, followUp };
+  }
 
   const table = `chunks_${meta.slot}`;
   const fts = `${table}_fts`;
@@ -1687,6 +1703,18 @@ async function handleAsk(request, env, ctx) {
   const species = found.species
     ? { name: found.species.name, guideId: found.species.guideId || null }
     : null;
+
+  if (found.nav) {
+    log('answered', [found.species.guideId]);
+    return storeJson({
+      result: 'navigate',
+      answer: '',
+      links: [{ title: `${found.species.name} care guide`, url: `/guides/${found.species.guideId}/` }],
+      emergency: false,
+      species,
+      followUp: found.followUp,
+    });
+  }
 
   if (found.legal) {
     log('legal');

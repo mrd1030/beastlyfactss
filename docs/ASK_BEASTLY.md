@@ -108,7 +108,11 @@ In `public/_worker.js`, listed in `public/_routes.json`. In order:
    shows its label and the links only. A cell never read shows "Not checked
    yet", never unrestricted. Always with links: the state's law page, the
    animal's law page and its legal guide.
-4. Search: nicknames expanded, the named species used as a filter ("tortoise"
+4. "Where is it" questions (owner, 2026-11-02): a species with a care guide
+   plus a request for a place on the site ("show me where the betta files
+   are", "take me to the leopard gecko guide") gets that species' hub as a
+   link, result `navigate`, with no model call.
+5. Search: nicknames expanded, the named species used as a filter ("tortoise"
    also reaches sulcata and Russian), a few reader word synonyms (tank and
    enclosure, eat and feed, poop and droppings), a boost for the matching split
    care guide and for headings that name the question, and guides ahead of
@@ -120,9 +124,9 @@ In `public/_worker.js`, listed in `public/_routes.json`. In order:
    goes inside the full text match, so a species question reads about 110
    rows instead of 6,000; a question with no species tries every word first
    and any word only if that finds too few; a legal question skips the search.
-5. 1,000 answers a day across the site in KV (owner, 2026-11-02), resetting at
+6. 1,000 answers a day across the site in KV (owner, 2026-11-02), resetting at
    midnight Eastern.
-6. Haiku: the top 4 chunks, about 3,000 tokens at most, in `<sources>`, the
+7. Haiku: the top 4 chunks, about 3,000 tokens at most, in `<sources>`, the
    question last.
 
 Reply: `{ result, answer, links, emergency, species }`. `result` is answered,
