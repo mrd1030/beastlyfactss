@@ -41,8 +41,8 @@ export function clearHistory() {
 // Only what the reader needs to see again goes in: the source chunks the test
 // site returns are dropped.
 function keepable(reply) {
-  const { result, answer = '', links = [], emergency = false, species = null } = reply || {};
-  return { result: result || 'unavailable', answer, links, emergency, species };
+  const { result, answer = '', links = [], emergency = false, species = null, legal = null } = reply || {};
+  return { result: result || 'unavailable', answer, links, emergency, species, legal };
 }
 
 // Asks one question. Never throws: a network or server failure comes back as

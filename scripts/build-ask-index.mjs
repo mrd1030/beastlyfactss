@@ -437,6 +437,27 @@ fs.mkdirSync(OUT_DIR, { recursive: true });
 fs.writeFileSync(OUT_FILE, JSON.stringify(chunks));
 fs.writeFileSync(path.join(OUT_DIR, 'meta.json'), JSON.stringify(meta));
 
+// Every legal matrix cell, so a legal question naming an animal and a state
+// is answered with the matrix's own words (status, cite, quote, note, existing
+// owners, local ordinances, date checked) and never by the model.
+const legalCells = [];
+for (const [animalId, a] of Object.entries(LEGAL.animals)) {
+  for (const [code, c] of Object.entries(a.jurisdictions || {})) {
+    legalCells.push({
+      animal: animalId,
+      code: code.toLowerCase(),
+      status: c.status,
+      cite: c.cite || '',
+      quote: c.quote || '',
+      note: c.note || '',
+      grandfathered: c.grandfathered?.detail || '',
+      localOverride: c.localOverride ? 1 : 0,
+      verifiedOn: c.verifiedOn || '',
+    });
+  }
+}
+fs.writeFileSync(path.join(OUT_DIR, 'legal.json'), JSON.stringify(legalCells));
+
 // ---------------------------------------------------------------- report
 
 const byType = {};
@@ -447,6 +468,7 @@ for (const [type, n] of Object.entries(byType).sort((a, b) => b[1] - a[1])) {
 }
 const totalWords = chunks.reduce((s, c) => s + c.words, 0);
 console.log(`  total words   ${totalWords}`);
+console.log(`  legal cells   ${legalCells.length}`);
 console.log(`  meta          ${Object.keys(meta.aliases).length} aliases, ${meta.species.length} species, ${meta.states.length} jurisdictions, ${meta.legal.length} legal animals`);
 console.log('5 largest chunks:');
 for (const c of [...chunks].sort((a, b) => b.words - a.words).slice(0, 5)) {

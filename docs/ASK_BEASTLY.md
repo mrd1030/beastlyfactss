@@ -61,7 +61,9 @@ with care guide ids, and the legal matrix's states and animals.
 `scripts/load-ask-index.mjs` loads it into the D1 database `ask-index`
 (binding `ASK_DB`) through the Cloudflare REST API. Two slots, `chunks_a` and
 `chunks_b`, each with an FTS5 table (porter stemming); a load fills the idle
-slot, checks the row count, then flips `ask_meta.slot`, so readers never see a
+slot, checks the row count, then flips `ask_meta.slot`. The legal matrix
+(src/lib/data/legalStatus.json) loads into the same slot as `legal_a` or
+`legal_b`, one row per animal and jurisdiction, so readers never see a
 half loaded index and a failed load leaves the live one alone. It never fails
 the build.
 
@@ -78,8 +80,15 @@ In `public/_worker.js`, listed in `public/_routes.json`. In order:
 2. 5 questions per visitor per hour in KV `ASK_KV`, keyed on a hash of the IP
    and the Eastern date; no IP is stored. Off on the sharetest site (by host),
    so testing is unlimited and beastlyfacts.com always has it.
-3. Legal questions never reach the model. A legal word, or a state name with
-   own / have / keep / buy / get, returns links: the state's law page, the
+3. Legal questions never reach the model. A legal word ("legal", "permit",
+   "license", "what states", "where can I own"), or a state name or postal
+   code with own / have / keep / buy / get, makes it a legal question. When it
+   names an animal and a state, the reply carries that legal matrix cell word
+   for word (owner, 2026-11-02): status with the law map's own label and blurb,
+   cite, quote, note, existing owners, the local ordinance line and the date
+   checked, laid out like a state row on the animal law page. An unclear rule
+   shows its label and the links only. A cell never read shows "Not checked
+   yet", never unrestricted. Always with links: the state's law page, the
    animal's law page and its legal guide.
 4. Search: nicknames expanded, the named species used as a filter ("tortoise"
    also reaches sulcata and Russian), a few reader word synonyms (tank and

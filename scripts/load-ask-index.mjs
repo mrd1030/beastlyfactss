@@ -18,6 +18,9 @@
 //                 species, type, text, words)
 //   chunks_<slot>_fts  FTS5 over title, heading, species, text, external
 //                      content on chunks_<slot>, porter stemming
+//   legal_<slot>(animal, code, status, cite, quote, note, grandfathered,
+//                local_override, verified_on)  the legal matrix, one row per
+//                animal and jurisdiction (code lowercase, "ny", "nyc")
 //
 // Optional env: CLOUDFLARE_ACCOUNT_ID (defaults to the site's account below),
 // ASK_D1_DATABASE_ID (defaults to the ask-index id below).
@@ -66,6 +69,7 @@ const sqlString = (v) => (v == null ? 'NULL' : `'${String(v).replace(/'/g, "''")
 async function main() {
   const chunks = JSON.parse(fs.readFileSync(CHUNKS, 'utf8'));
   const meta = JSON.parse(fs.readFileSync(META, 'utf8'));
+  const legal = JSON.parse(fs.readFileSync(path.join(ROOT, '.ask-index', 'legal.json'), 'utf8'));
   const acct = await accountId();
   const db = process.env.ASK_D1_DATABASE_ID || DEFAULT_DB_ID;
   const query = (sql) => cf(`/accounts/${acct}/d1/database/${db}/query`, {
@@ -82,6 +86,7 @@ async function main() {
   const slot = live === 'a' ? 'b' : 'a';
   const table = `chunks_${slot}`;
   const fts = `${table}_fts`;
+  const legalTable = `legal_${slot}`;
 
   await query(`DROP TABLE IF EXISTS ${fts}`);
   await query(`DROP TABLE IF EXISTS ${table}`);
@@ -90,27 +95,47 @@ async function main() {
     url TEXT, species TEXT, type TEXT, text TEXT, words INTEGER)`);
 
   // Multi-row INSERTs, each under the statement size cap.
-  const prefix = `INSERT INTO ${table} (id, slug, title, heading, anchor, url, species, type, text, words) VALUES `;
-  let batch = [];
-  let bytes = prefix.length;
   let statements = 0;
-  const flush = async () => {
-    if (!batch.length) return;
-    await query(prefix + batch.join(','));
-    statements++;
-    batch = [];
-    bytes = prefix.length;
+  const insertAll = async (prefix, tuples) => {
+    let batch = [];
+    let bytes = prefix.length;
+    const flush = async () => {
+      if (!batch.length) return;
+      await query(prefix + batch.join(','));
+      statements++;
+      batch = [];
+      bytes = prefix.length;
+    };
+    for (const tuple of tuples) {
+      const size = Buffer.byteLength(tuple) + 1;
+      if (bytes + size > MAX_STATEMENT_BYTES) await flush();
+      batch.push(tuple);
+      bytes += size;
+    }
+    await flush();
   };
-  for (const c of chunks) {
-    const tuple = `(${[c.id, sqlString(c.slug), sqlString(c.title), sqlString(c.heading),
+
+  await insertAll(
+    `INSERT INTO ${table} (id, slug, title, heading, anchor, url, species, type, text, words) VALUES `,
+    chunks.map((c) => `(${[c.id, sqlString(c.slug), sqlString(c.title), sqlString(c.heading),
       sqlString(c.anchor), sqlString(c.url), sqlString(c.species), sqlString(c.type),
-      sqlString(c.text), c.words || 0].join(',')})`;
-    const size = Buffer.byteLength(tuple) + 1;
-    if (bytes + size > MAX_STATEMENT_BYTES) await flush();
-    batch.push(tuple);
-    bytes += size;
-  }
-  await flush();
+      sqlString(c.text), c.words || 0].join(',')})`),
+  );
+
+  // The legal matrix, one row per animal and jurisdiction, in the same slot.
+  await query(`DROP TABLE IF EXISTS ${legalTable}`);
+  await query(`CREATE TABLE ${legalTable} (
+    animal TEXT, code TEXT, status TEXT, cite TEXT, quote TEXT, note TEXT,
+    grandfathered TEXT, local_override INTEGER, verified_on TEXT,
+    PRIMARY KEY (animal, code))`);
+  await insertAll(
+    `INSERT INTO ${legalTable} (animal, code, status, cite, quote, note, grandfathered, local_override, verified_on) VALUES `,
+    legal.map((c) => `(${[sqlString(c.animal), sqlString(c.code), sqlString(c.status), sqlString(c.cite),
+      sqlString(c.quote), sqlString(c.note), sqlString(c.grandfathered), c.localOverride ? 1 : 0,
+      sqlString(c.verifiedOn)].join(',')})`),
+  );
+  const [{ ln }] = await rows(`SELECT COUNT(*) AS ln FROM ${legalTable}`);
+  if (ln !== legal.length) throw new Error(`loaded ${ln} legal rows, expected ${legal.length}`);
 
   await query(`CREATE VIRTUAL TABLE ${fts} USING fts5(
     title, heading, species, text,
@@ -131,7 +156,7 @@ async function main() {
     ${metaRows.map(([k, v]) => `(${sqlString(k)}, ${sqlString(v)})`).join(', ')}
     ON CONFLICT(key) DO UPDATE SET value = excluded.value`);
 
-  console.log(`Ask index load: ${n} chunks into slot ${slot} in ${statements} statements; slot ${slot} is live.`);
+  console.log(`Ask index load: ${n} chunks and ${ln} legal cells into slot ${slot} in ${statements} statements; slot ${slot} is live.`);
 }
 
 main().catch((err) => {

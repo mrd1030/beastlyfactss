@@ -1455,6 +1455,32 @@ function askLegalLinks(q, meta) {
   return links;
 }
 
+// The legal matrix's own answer for one animal in one state, word for word:
+// status, cite, quote, note, existing owners, local ordinances, date checked.
+// Only when the question names both; otherwise the reply is links alone. A
+// cell with no row was never read and comes back as status null, which the
+// page shows as "Not checked yet", never as unrestricted.
+async function askLegalCell(db, q, meta) {
+  const state = askFindState(q, meta.states);
+  const animal = askFindName(q, meta.legal);
+  if (!state || !animal) return null;
+  const row = await db
+    .prepare(`SELECT status, cite, quote, note, grandfathered, local_override, verified_on FROM legal_${meta.slot} WHERE animal = ?1 AND code = ?2`)
+    .bind(animal.id, state.code)
+    .first();
+  return {
+    animal: animal.name,
+    state: state.name,
+    status: row?.status || null,
+    cite: row?.cite || '',
+    quote: row?.quote || '',
+    note: row?.note || '',
+    grandfathered: row?.grandfathered || '',
+    localOverride: Boolean(row?.local_override),
+    verifiedOn: row?.verified_on || '',
+  };
+}
+
 // A rough stem for the coverage check, close enough to the index's porter
 // stemming that "biting" finds "bite" and "feeding" finds "feed".
 const askStem = (t) => {
@@ -1622,7 +1648,13 @@ async function handleAsk(request, env, ctx) {
 
   if (found.legal) {
     log('legal');
-    return storeJson({ result: 'legal', answer: '', links: askLegalLinks(found.q, found.meta), emergency: false, species });
+    let legal = null;
+    try {
+      legal = await askLegalCell(env.ASK_DB, found.q, found.meta);
+    } catch {
+      // No matrix table yet (an index loaded before it existed): links alone.
+    }
+    return storeJson({ result: 'legal', answer: '', links: askLegalLinks(found.q, found.meta), legal, emergency: false, species });
   }
 
   if (!found.chunks.length) {

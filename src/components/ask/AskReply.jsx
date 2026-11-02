@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Sparkles, Siren, ArrowRight, Scale } from 'lucide-react';
 import IconChip from '@/components/shared/IconChip';
+import { STATUS_BUCKETS, bucketFor } from '@/lib/legalBuckets';
+import { formatDay } from '@/lib/utils/verifiedDates';
 
 // One Ask Beastly reply, drawn the same way in the search page box and the
 // floating chat. `compact` is the chat's smaller type.
@@ -77,6 +79,56 @@ function Links({ links, onNavigate }) {
 
 const searchLink = (q) => `/search/${encodeURIComponent(q)}/`;
 
+// One animal in one state, straight from the legal matrix (the worker never
+// sends a legal question to the model). Laid out like a state row on the
+// animal law page, with the map's own label and blurb for the status. An
+// unclear rule shows the label and the links only: its long note is the
+// law page's to explain.
+function LegalCell({ cell }) {
+  const bucket = STATUS_BUCKETS[bucketFor(cell.status)];
+  const unclear = bucket.key === 'unclear';
+  const checked = formatDay(cell.verifiedOn);
+  const painted = bucket.fill !== 'transparent';
+  return (
+    <div className="mt-1">
+      <p className="font-body font-bold text-sm text-foreground">{`${cell.animal} in ${cell.state}`}</p>
+      <p className="mt-1.5 flex flex-wrap items-center gap-2">
+        <span
+          className={`text-xs font-body font-bold px-2 py-0.5 rounded-full ${painted ? '' : 'border border-border text-foreground'}`}
+          style={painted ? { background: bucket.fill, color: bucket.text } : undefined}
+        >
+          {bucket.label}
+        </span>
+      </p>
+      <p className="mt-1.5 text-sm font-body text-muted-foreground">{bucket.blurb}</p>
+      {!unclear && cell.status && (
+        <>
+          {cell.cite && <p className="mt-2 text-xs font-body font-semibold text-foreground">{cell.cite}</p>}
+          {cell.quote && (
+            <blockquote className="mt-1.5 border-l-2 border-primary/40 pl-3 text-xs font-body italic text-muted-foreground leading-relaxed">
+              {cell.quote}
+            </blockquote>
+          )}
+          {cell.note && <p className="mt-1.5 text-xs font-body text-muted-foreground leading-relaxed">{cell.note}</p>}
+          {cell.grandfathered && (
+            <p className="mt-1.5 text-xs font-body text-muted-foreground leading-relaxed">
+              <span className="font-semibold text-foreground">Existing owners: </span>{cell.grandfathered}
+            </p>
+          )}
+          {cell.localOverride && (
+            <p className="mt-1.5 text-xs font-body text-muted-foreground leading-relaxed">
+              This state allows cities and counties to prohibit what state law permits, so check your local ordinance too.
+            </p>
+          )}
+        </>
+      )}
+      {checked && cell.status && (
+        <p className="mt-1.5 text-xs font-body text-muted-foreground">{`Checked against the published text on ${checked}.`}</p>
+      )}
+    </div>
+  );
+}
+
 export default function AskReply({ question, reply, compact = false, hasResults = false, onNavigate }) {
   const card = useEmergencyCard(reply?.species?.guideId, Boolean(reply?.emergency && reply?.result === 'answered'));
   const text = compact ? 'text-sm' : 'text-base';
@@ -104,9 +156,13 @@ export default function AskReply({ question, reply, compact = false, hasResults 
     return (
       <div aria-live="polite">
         <p className="font-display font-bold text-sm text-foreground flex items-center gap-2 mb-1.5">
-          <IconChip icon={Scale} color="gold" size="row" /> Pet laws change, so we link the source
+          <IconChip icon={Scale} color="gold" size="row" /> {reply.legal ? 'From our exotic pet law matrix' : 'Pet laws change, so we link the source'}
         </p>
-        <p className={muted}>Our law pages are checked every month and cite the statute for each state. Start here:</p>
+        {reply.legal ? (
+          <LegalCell cell={reply.legal} />
+        ) : (
+          <p className={muted}>Our law pages are checked every month and cite the statute for each state. Start here:</p>
+        )}
         <Links links={reply.links} onNavigate={onNavigate} />
       </div>
     );
