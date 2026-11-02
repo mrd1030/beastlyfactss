@@ -183,6 +183,19 @@ In `public/_worker.js`, listed in `public/_routes.json`. In order:
    or filler word, so "thanks, what about babies?" is still a question.
    Before, thanks was all filler: alone it came back "not in our guides",
    and after an answer it re-asked the previous question.
+   From the 20-question test (owner, 2026-11-02, Fable review):
+   - A named animal keeps the search on that animal. When its pages do not
+     match, the reply is "not covered" with its hub, never a whole-site
+     search (that once linked the platypus for "my hamster is acting weird").
+   - A vague change with the animal known ("acting weird", "not himself",
+     "something's wrong", no sign named) gets a fixed reply written in code:
+     "Our guides can't narrow down a change like that without a specific
+     sign, so the safest move is to have an exotics vet (a vet for dogs and
+     cats) look at your <animal>.", with the hub. No model call.
+   - No animal named and the best passages each about a different animal
+     ("how often should I clean the tank"): "Which animal?". Not when a best
+     passage is general (a glossary term, a guide about no one animal), not
+     for "what is" questions ("what is uvb"), not when choosing a pet.
 6. Search: spoken filler dropped first (owner, 2026-11-02): "like", "um",
    "uh", "kinda", "idk", "lol" and stretched forms ("ummmm", "hmmm",
    "sooo"), so "like, um, a hamster" searches as "hamster". Then nicknames expanded, the named species used as a filter ("tortoise"

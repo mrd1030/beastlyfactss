@@ -1506,6 +1506,13 @@ const ASK_FACT_RE = /\bfacts?\b/;
 // handled before this, and a question choosing a pet ("my baby is 2, what pet
 // is safe") never gets it.
 const ASK_PET_REF_RE = /\b(he|she|hes|shes|him|her|it|its|they|theyre|them|their)\b|\bmy (pet|baby|boy|girl|guy|little one|buddy)\b/;
+// "Acting weird", "not himself", "something's wrong": a change with no sign
+// named. With the animal known, the reply is written here, not by the model:
+// the prompt rule for it did not hold in the test (owner, 2026-11-02). A
+// named sign anywhere in the question ("acting weird and not eating") goes
+// to the normal search instead.
+const ASK_VAGUE_RE = /\b(acting|acts|seems?|looks?|is|been|being) (weird|strange|funny|odd|off|different|wrong|sick|unwell|not right|not (him|her|it)self)\b|\bnot (himself|herself|itself|acting right|right|well)\b|\bsomething('?s| is) (wrong|off|not right)\b|\bacting (up|out)\b/;
+const ASK_SIGN_RE = /\b(eat\w*|food|drink\w*|water|breath\w*|sneez\w*|wheez\w*|cough\w*|bleed\w*|blood|swell\w*|swollen|lump\w*|bump\w*|limp\w*|shed\w*|poop\w*|pee\w*|urin\w*|diarrh\w*|vomit\w*|throw\w* up|scratch\w*|itch\w*|eye\w*|ear\w*|nose|mouth|jaw|teeth|tooth|skin|scale\w*|shell|fin\w*|gill\w*|tail|leg\w*|feet|foot|toe\w*|wing\w*|feather\w*|fur|hair|bald|weight|thin|fat|bloat\w*|letharg\w*|sleep\w*|hiding|hide\w*|shak\w*|trembl\w*|twitch\w*|seizure\w*|fall\w*|circl\w*|tilt\w*|color|colour|spot\w*|discharge|smell\w*|bite\w*|biting|aggress\w*|scream\w*|hiss\w*|weak\w*)\b/;
 const ASK_CHOOSING_RE = /\b(a|an|which|what|best|good|easy|safe|first|new|another|get a|getting a) (pet|animal)s?\b/;
 const ASK_SITE_PLACE_RE = /\b(files?|hub|sections?)\b/;
 const ASK_CORRECTION = new Set('sorry oops meant mean typo spelled spelling actually wrong i'.split(' '));
@@ -1661,12 +1668,16 @@ async function askRetrieve(db, question, context = null) {
     const name = `species : ${term(askNormalize(species.name))}`;
     rows = await search(content.length ? `${name} AND {title heading text} : (${anyOf(content)})` : name);
   }
-  // No species, or nothing for it: every word first, which reads little.
+  // A named animal keeps the search on that animal: when its pages do not
+  // match, the answer is "not covered" with its hub, never a whole-site
+  // search, which once linked the platypus for "my hamster is acting weird"
+  // (owner, 2026-11-02, from the 20-question test).
+  // No species: every word first, which reads little.
   // Any word only when that found nothing, and without the site's most
   // common words ("eat", "tank"), which match thousands of chunks; when every
   // word is common, the two rarest stay (owner, 2026-11-01, on a Fable
   // recommendation).
-  if (!rows.length) {
+  if (!rows.length && !species) {
     if (tokens.length > 1) rows = await search(allOf(tokens));
     if (!rows.length) {
       const df = (t) => meta.common[t] || 0;
@@ -1696,6 +1707,22 @@ async function askRetrieve(db, question, context = null) {
   }).sort((a, b) => b.score - a.score);
 
   const best = scored[0] || null;
+  // No animal named and the best passages are each about a different animal
+  // ("how often should I clean the tank" matched gerbil, betta and tortoise
+  // cleaning sections): the answer depends on which, so ask. A best passage
+  // about no animal in particular (a glossary term, a general guide) still
+  // answers, and so does a question choosing a pet.
+  // A "what is" question ("what is metabolic bone disease", "what is uvb")
+  // has a general answer, so it never asks either.
+  const top = scored.slice(0, ASK.topK);
+  const general = top.some((r) => !r.species || r.type === 'glossary')
+    || /^(what('?s| is| are| does)|whats|define|meaning of)\b/.test(qOwn);
+  if (!species && best?.species && !general && !ASK_CHOOSING_RE.test(qOwn)) {
+    const animals = new Set(top.map((r) => r.species).filter(Boolean));
+    if (animals.size > 1) {
+      return { chunks: [], species: null, best: null, legal: false, clarify: true, meta, q, qOwn, followUp };
+    }
+  }
   const minCoverage = species ? ASK.minCoverage : ASK.minCoverageNoSpecies;
   if (!best || best.coverage < minCoverage || best.score < ASK.minScore) {
     return { chunks: [], species, best, legal, meta, q, qOwn, followUp };
@@ -1866,6 +1893,19 @@ async function handleAsk(request, env, ctx) {
     return storeJson({ result: 'legal', answer: '', links: askLegalLinks(found.q, found.meta), legal, emergency: false, species, followUp: found.followUp });
   }
 
+  if (species && ASK_VAGUE_RE.test(found.q) && !ASK_SIGN_RE.test(found.q)) {
+    const vet = /\b(dog|cat|puppy|kitten)s?\b/i.test(species.name) || /^(dog|cat)-/.test(species.guideId || '') ? 'a vet' : 'an exotics vet';
+    log('no_match', species.guideId ? [species.guideId] : [], {}, { page: `${species.name} care guide` });
+    return storeJson({
+      result: 'answered',
+      answer: `Our guides can't narrow down a change like that without a specific sign, so the safest move is to have ${vet} look at your ${species.name.toLowerCase()}.`,
+      links: species.guideId ? [{ title: `${species.name} Care Guide`, url: `/guides/${species.guideId}/` }] : [],
+      emergency: false,
+      species,
+      followUp: found.followUp,
+    });
+  }
+
   if (!found.chunks.length) {
     log('no_match', found.best ? [found.best.slug] : []);
     return quiet('no_match', { species, followUp: found.followUp, health: askSoundsLikeHealth(found.qOwn) });
@@ -1955,9 +1995,13 @@ function askRewriteSourceTalk(sentence) {
   // 2026-11-02, on a Fable review).
   let out = sentence
     .replace(/\b(the )?range (that )?(most|many) sources agree on\b/gi, 'the usual range')
-    .replace(/,?\s*(though|but|while)\s+(a couple|a few|some|one or two)\s+(of them\s+)?recommend\b/gi, ', or')
+    .replace(/,?\s*(though|but|while)\s+(a couple|a few|some|one or two|others)\s+(of them\s+)?(recommend|suggest|say|advise)\b/gi, ', or')
     .replace(/,?\s*according to [^,.]*?sources?\b/gi, '')
-    .replace(/^(most|many|several|some) (veterinary |published )?sources (agree|say|recommend|suggest)( that)?,?\s*/i, '')
+    .replace(/^((most|many|several|some) )?(veterinary |published |scientific )?sources (agree|say|recommend|suggest|note|state)( that)?,?\s*/i, '')
+    // "Our emergency card says", "our guides note that": the fact stays.
+    .replace(/^(our|the) (emergency card|guides?|care guide|article|page)s? (says?|notes?|states?|lists?|explains?|recommends?)( that)?,?\s*/i, '')
+    // "Stuck shed is covered in our shedding guide: soak..." keeps the advice.
+    .replace(/^[^.:]*\b(is|are) covered in (our|the) [^.:]*:\s*/i, '')
     // "Stuck shed is covered in our guides, and it can cut off circulation"
     // keeps its fact: "Stuck shed can cut off circulation".
     .replace(/\s+(is|are) covered in our guides,?\s*(and\s+)?(it|they)\s+/i, ' ');
@@ -1972,7 +2016,7 @@ function askRewriteSourceTalk(sentence) {
 }
 
 // What survives the rewrite and still talks about sources is dropped.
-const ASK_SOURCE_TALK_RE = /\b(the|these|those|my|our|provided|given|most|some|several|many|a couple of|veterinary|published|scientific|available)\s+sources?\b|\bsources?\s+\d\b|\baccording to\s+(the\s+)?(veterinary\s+|published\s+)?sources?\b|\bsources?\s+(agree|recommend|say|says|suggest|differ)\b|^sources? (note|notes|mention|mentions|show|shows|describe|describes|don'?t|do not|does not)\b|\b(is|are) covered in our guides\b/i;
+const ASK_SOURCE_TALK_RE = /\b(the|these|those|my|our|provided|given|most|some|several|many|a couple of|veterinary|published|scientific|available)\s+sources?\b|\bsources?\s+\d\b|\baccording to\s+(the\s+)?(veterinary\s+|published\s+)?sources?\b|\bsources?\s+(agree|recommend|say|says|suggest|differ)\b|^sources? (note|notes|mention|mentions|show|shows|describe|describes|don'?t|do not|does not)\b|\bcovered in (our|the) \w+|\b(our|the) emergency card (says|notes|lists)\b/i;
 
 const askSourceTitle = (c) => (c.heading ? `${c.title}: ${c.heading}` : c.title);
 const askEscape = (t) => String(t).replace(/</g, '&lt;').replace(/>/g, '&gt;');
