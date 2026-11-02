@@ -108,6 +108,10 @@ In `public/_worker.js`, listed in `public/_routes.json`. In order:
    words ("how do I take care of a leopard gecko", "tips for a new hamster
    owner") ranks that species' hub first. A weak best match returns `no_match`
    with no model call.
+   Rows read are a daily budget too (5,000,000 on the free plan): the species
+   goes inside the full text match, so a species question reads about 110
+   rows instead of 6,000; a question with no species tries every word first
+   and any word only if that finds too few; a legal question skips the search.
 5. 300 answers a day across the site in KV, resetting at midnight Eastern.
 6. Haiku: the top 4 chunks, about 3,000 tokens at most, in `<sources>`, the
    question last.

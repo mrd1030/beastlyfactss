@@ -1513,29 +1513,42 @@ async function askRetrieve(db, question) {
   // with own / have / keep / buy / get is a legal question too.
   const legal = ASK_LEGAL_RE.test(q)
     || (Boolean(askFindState(q, meta.states)) && /\b(own|have|keep|buy|get|bring)\b/.test(q));
+  // A legal question is answered from the law matrix, never from these
+  // chunks, so it skips the search and the rows it would read.
+  if (legal) return { chunks: [], species, best: null, legal, meta, q };
+
   const table = `chunks_${meta.slot}`;
   const fts = `${table}_fts`;
-  // With a species named, the species filter does that work, so only the
-  // question's other words are matched, and only against title, heading and
-  // text; otherwise every chunk about the animal ranks on its name alone.
+  // The question's own words: not the species name, and with a species named
+  // not the "tell me about it" words either.
   const content = tokens.filter((t) => !speciesWords.has(t) && !(species && ASK_BROAD.has(t)));
   const broad = Boolean(species) && content.length === 0;
-  const expand = (list) => [...new Set(list.flatMap((t) => ASK_SYNONYM_OF.get(t) || [t]))];
-  const quote = (list) => expand(list).map((t) => `"${t.replace(/"/g, '')}"`).join(' OR ');
-  const speciesMatch = content.length ? `{title heading text} : (${quote(content)})` : quote(tokens);
-  const match = quote(tokens);
+  const term = (t) => `"${t.replace(/"/g, '')}"`;
+  const anyOf = (list) => [...new Set(list.flatMap((t) => ASK_SYNONYM_OF.get(t) || [t]))].map(term).join(' OR ');
+  const allOf = (list) => list.map((t) => `(${(ASK_SYNONYM_OF.get(t) || [t]).map(term).join(' OR ')})`).join(' AND ');
   const sql = `SELECT c.id, c.slug, c.title, c.heading, c.url, c.species, c.type, c.text, c.words,
       bm25(${fts}, 4.0, 4.0, 3.0, 1.0) AS rank
     FROM ${fts} JOIN ${table} c ON c.id = ${fts}.rowid
-    WHERE ${fts} MATCH ?1 AND c.type != 'legal' __SPECIES__
+    WHERE ${fts} MATCH ?1 AND c.type != 'legal'
     ORDER BY rank LIMIT ${ASK.candidates}`;
+  const search = async (match) => (await db.prepare(sql).bind(match).all()).results;
+
+  // Rows read are a daily budget (5M on the free plan), so the species goes
+  // inside the MATCH: the index intersects it with the question's words
+  // instead of finding every chunk on the site that mentions "eat" and
+  // filtering afterwards (about 110 rows read instead of 6,000). The phrase
+  // also reaches longer names: "tortoise" finds "Sulcata Tortoise".
   let rows = [];
   if (species) {
-    // "Tortoise" also reaches "Sulcata Tortoise" and "Russian Tortoise".
-    const filter = "AND (c.species = ?2 OR c.species LIKE '% ' || ?2)";
-    rows = (await db.prepare(sql.replace('__SPECIES__', filter)).bind(speciesMatch, species.name).all()).results;
+    const name = `species : ${term(askNormalize(species.name))}`;
+    rows = await search(content.length ? `${name} AND {title heading text} : (${anyOf(content)})` : name);
   }
-  if (!rows.length) rows = (await db.prepare(sql.replace('__SPECIES__', '')).bind(match).all()).results;
+  // No species, or nothing for it: every word first, which reads little,
+  // then any word when that finds too few.
+  if (!rows.length) {
+    if (tokens.length > 1) rows = await search(allOf(tokens));
+    if (rows.length < ASK.topK) rows = await search(anyOf(tokens));
+  }
 
   // Coverage: the share of the question's own words (not the species name)
   // that a chunk contains, matched on a short stem.
