@@ -1355,6 +1355,29 @@ const ASK_STOPWORDS = new Set((
   'actually basically literally honestly seriously kinda sorta kind sort guess think mean ' +
   'anyway anyways idk lol lmao omg pls plz thx thanks hey hi hello'
 ).split(' '));
+// A message that is only thanks or an acknowledgement: "thanks!", "ty so
+// much", "ok cool, got it", "that helps, thank you 🙏". Every word must be one
+// of these, so "thanks, what about babies?" is still a question.
+const ASK_THANKS_WORDS = new Set((
+  'thanks thank thx ty tysm tyvm thankyou thanku appreciate appreciated it you so much a lot lots ' +
+  'very ok okay k kk cool great awesome perfect nice sweet good got gotcha that this helps helped ' +
+  'helpful makes sense amazing wonderful lovely brilliant excellent alright all right will do ' +
+  'oh ah yay yes yeah yep yup gonna try for the all again really i will do much'
+).split(' '));
+// At least one word that carries the thanks or the "ok", so "a lot" alone
+// is not one. "ok", "cool", "got it" count: they close a thread too.
+const ASK_THANKS_CORE = /\b(thanks|thank|thx|ty|tysm|tyvm|thankyou|thanku|appreciate|appreciated|helps|helped|helpful|sense|gotcha|got|ok|okay|k|kk|cool|great|awesome|perfect|nice|sweet|amazing|wonderful|lovely|brilliant|excellent|alright|yay)\b/;
+function askIsThanks(question) {
+  const q = question.toLowerCase().replace(/[^a-z\s']/g, ' ').replace(/'/g, '').replace(/\s+/g, ' ').trim();
+  if (!q || !ASK_THANKS_CORE.test(q)) return false;
+  return q.split(' ').every((w) => ASK_THANKS_WORDS.has(w) || ASK_FILLER_RE.test(w));
+}
+const ASK_THANKS_REPLIES = [
+  "You're welcome! Ask anything else any time.",
+  'Happy to help. Ask away if anything else comes up.',
+  'Glad that helped! Ask any time.',
+];
+
 // Stretched filler: "ummmm", "uhhh", "hmmmm", "sooo", "lolol".
 const ASK_FILLER_RE = /^(u+m+|u+h+m*|h+m+|e+r+m*|a+h+|o+h+|e+h+|s+o+o+|l+o+l+(o+l+)*|l+m+a+o+)$/;
 const askIsWord = (t) => t.length > 1 && !ASK_STOPWORDS.has(t) && !ASK_FILLER_RE.test(t);
@@ -1737,6 +1760,21 @@ async function handleAsk(request, env, ctx) {
   if (!env.ASK_DB) return quiet('unavailable');
 
   if (!(await askVerifyTurnstile(env, request, String(body?.captcha || '')))) return quiet('unavailable');
+
+  // A thank-you gets a thank-you back (owner, 2026-11-02). Before this it was
+  // all filler words: on its own it came back "not in our guides", and after
+  // an answer it re-asked the previous question. No search, no model call,
+  // not logged, not counted toward the hourly limit or the 3 answers.
+  if (askIsThanks(question)) {
+    return storeJson({
+      result: 'thanks',
+      answer: ASK_THANKS_REPLIES[Math.floor(Math.random() * ASK_THANKS_REPLIES.length)],
+      links: [],
+      emergency: false,
+      species: null,
+      followUp: Boolean(context),
+    });
+  }
 
   const log = (result, slugs = [], extra = {}, push = {}) => askLog(env, ctx, question, slugs, result, extra, push);
 

@@ -170,6 +170,14 @@ In `public/_worker.js`, listed in `public/_routes.json`. In order:
    the chat the reader's next message carries it: "a hamster" searches as
    "a hamster he's acting weird". A follow-up that names the animal the
    last question lacked always carries the last question along.
+   Thanks (owner, 2026-11-02): a message that is only thanks or an
+   acknowledgement ("thanks!", "ty so much", "ok cool, got it", "that
+   helps") gets a short "You're welcome" back, result `thanks`: no search,
+   no model call, not logged, not counted toward the hourly limit or the 3
+   answers, and it stays in the conversation. Every word must be a thanks
+   or filler word, so "thanks, what about babies?" is still a question.
+   Before, thanks was all filler: alone it came back "not in our guides",
+   and after an answer it re-asked the previous question.
 6. Search: spoken filler dropped first (owner, 2026-11-02): "like", "um",
    "uh", "kinda", "idk", "lol" and stretched forms ("ummmm", "hmmm",
    "sooo"), so "like, um, a hamster" searches as "hamster". Then nicknames expanded, the named species used as a filter ("tortoise"
@@ -197,7 +205,7 @@ In `public/_worker.js`, listed in `public/_routes.json`. In order:
    question last.
 
 Reply: `{ result, answer, links, emergency, species, followUp, health }`.
-`result` is answered, navigate, clarify, legal, no_match, capped, refused or
+`result` is answered, navigate, clarify, thanks, legal, no_match, capped, refused or
 unavailable. `followUp` says whether the question joined the conversation;
 `health` marks a no_match that sounds like a health problem. On the sharetest
 site an answer also carries `sources`, the chunks the model saw, for the
