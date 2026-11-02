@@ -77,7 +77,10 @@ function Links({ links, onNavigate }) {
   );
 }
 
-const searchLink = (q) => `/search/${encodeURIComponent(q)}/`;
+// The search page matches the whole typed text against titles, summaries and
+// tags, so a full question finds nothing there. When the reply names the
+// animal, the link searches for the animal instead, which lists its guides.
+const searchLink = (q, reply) => `/search/${encodeURIComponent(reply?.species?.name || q)}/`;
 
 // One animal in one state, straight from the legal matrix (the worker never
 // sends a legal question to the model). Laid out like a state row on the
@@ -202,7 +205,7 @@ export default function AskReply({ question, reply, compact = false, hasResults 
           {"That one isn't in our guides yet. "}
           {compact || !hasResults ? 'Try asking it another way, or ' : 'The search results below are the closest we have, or try asking it another way.'}
           {(compact || !hasResults) && question && (
-            <Link to={searchLink(question)} onClick={onNavigate} className="font-semibold text-secondary hover:underline">search the site</Link>
+            <Link to={searchLink(question, reply)} onClick={onNavigate} className="font-semibold text-secondary hover:underline">search the site</Link>
           )}
           {(compact || !hasResults) && (question ? '.' : 'search the site.')}
         </p>
@@ -228,7 +231,7 @@ export default function AskReply({ question, reply, compact = false, hasResults 
       {reply.result === 'capped'
         ? "That's all the questions for now. Try again in a little while, or "
         : "I couldn't look that up right now. Try again in a moment, or "}
-      <Link to={searchLink(question)} onClick={onNavigate} className="font-semibold text-secondary hover:underline">search the site</Link>.
+      <Link to={searchLink(question, reply)} onClick={onNavigate} className="font-semibold text-secondary hover:underline">search the site</Link>.
     </p>
   );
 }
