@@ -332,7 +332,7 @@ export default function AskBeastlyChat() {
           aria-label="Tuck Ask Beastly away"
           title="Tuck away"
           className="fixed top-1/2 -translate-y-1/2 z-[48] w-10 h-[140px] rounded-l-xl bg-secondary text-secondary-foreground border-l border-black/15 shadow-lg flex flex-col items-center justify-center gap-3 transition-transform duration-200 hover:-translate-x-2 hover:brightness-110"
-          style={{ right: PANEL_W - 20 }}
+          style={{ right: PANEL_W - 14 }}
         >
           <Sparkles className="w-4 h-4" />
           <span className="text-[13px] font-body font-semibold whitespace-nowrap [writing-mode:vertical-rl] rotate-180">Ask Beastly</span>
