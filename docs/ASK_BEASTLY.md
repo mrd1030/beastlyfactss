@@ -185,7 +185,7 @@ answer yet.
 | Anthropic Console | key `beastlyfacts-ask`; monthly spend limit $10 with an email alert |
 | Cloudflare D1 | `ask-index`, bound as `ASK_DB` |
 | Cloudflare KV | `ask-limits`, bound as `ASK_KV` |
-| Pages secrets | `ANTHROPIC_API_KEY`; `CLOUDFLARE_API_TOKEN` (D1 Edit, for the build's load) |
+| Pages secrets | `ANTHROPIC_API_KEY`; `CLOUDFLARE_API_TOKEN` (D1 Edit, for the build's load); optional `NTFY_ASK_TOPIC` and `ASK_NTFY_MODE` |
 | Already there on main | `TURNSTILE_SECRET_KEY`, `SUPABASE_URL`, `SUPABASE_SERVICE_ROLE_KEY` |
 
 The sharetest project builds with

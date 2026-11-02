@@ -1848,14 +1848,50 @@ function askLinks(chunks, first = null) {
 
 // Every request goes to Supabase ask_log: the question, the slugs matched and
 // the result. No IP address, no visitor key. Never blocks or breaks the reply.
+//
+// It can also push to the owner's phone through ntfy, like the contact form
+// (owner, 2026-11-02, on a Fable recommendation). Two Cloudflare variables:
+//   NTFY_ASK_TOPIC   the private topic name. Unset: no pushes. A topic can be
+//                    read by anyone who knows its name, so it is never in code.
+//   ASK_NTFY_MODE    "all" (every question with its result and the page that
+//                    answered; the default) or "gaps" (only questions the
+//                    site does not cover). Switch to "gaps" once pushes pass
+//                    about 10 a day. "capped" never pushes, so someone hitting
+//                    the limit cannot flood the phone.
+const ASK_NTFY_TITLES = {
+  answered: 'Answered',
+  no_match: 'Not covered yet',
+  legal: 'Legal question',
+  refused: 'No answer, links shown',
+};
+
 function askLog(env, ctx, question, matchedSlugs, result) {
-  if (!hasSupabaseEnv(env)) return;
-  const write = supabaseFetch(env, '/rest/v1/ask_log', {
-    method: 'POST',
-    headers: { Prefer: 'return=minimal' },
-    body: JSON.stringify({ question, matched_slugs: matchedSlugs, result }),
-  }).catch(() => {});
-  if (ctx?.waitUntil) ctx.waitUntil(write);
+  const jobs = [];
+  if (hasSupabaseEnv(env)) {
+    jobs.push(supabaseFetch(env, '/rest/v1/ask_log', {
+      method: 'POST',
+      headers: { Prefer: 'return=minimal' },
+      body: JSON.stringify({ question, matched_slugs: matchedSlugs, result }),
+    }).catch(() => {}));
+  }
+  const mode = env?.ASK_NTFY_MODE === 'gaps' ? 'gaps' : 'all';
+  if (env?.NTFY_ASK_TOPIC && ASK_NTFY_TITLES[result] && (mode === 'all' || result === 'no_match')) {
+    const page = matchedSlugs[0] ? `\n\n${result === 'no_match' ? 'Closest page' : 'From'}: ${matchedSlugs[0]}` : '';
+    jobs.push(fetch('https://ntfy.sh', {
+      method: 'POST',
+      headers: { 'content-type': 'application/json' },
+      body: JSON.stringify({
+        topic: env.NTFY_ASK_TOPIC,
+        title: `Ask Beastly: ${ASK_NTFY_TITLES[result]}`,
+        message: `${question}${page}`,
+        tags: [result === 'no_match' ? 'grey_question' : result === 'legal' ? 'scales' : 'speech_balloon'],
+        priority: result === 'no_match' ? 3 : 2,
+      }),
+    }).catch(() => {}));
+  }
+  if (!jobs.length) return;
+  const all = Promise.all(jobs);
+  if (ctx?.waitUntil) ctx.waitUntil(all);
 }
 
 export default {
