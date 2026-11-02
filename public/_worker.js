@@ -1352,7 +1352,7 @@ const ASK_STOPWORDS = new Set((
   // a hamster", "um so my gecko..."). Left in, these count as words the
   // passage must contain, which drags a good match under the coverage bar.
   'like um umm uh uhh uhm erm er hmm hm ah oh eh well yeah yea yep yup nah ' +
-  'actually basically literally honestly seriously kinda sorta kind sort guess think mean ' +
+  'actually basically literally honestly seriously kinda sorta kind sort guess think ' +
   'anyway anyways idk lol lmao omg pls plz thx thanks hey hi hello'
 ).split(' '));
 // A message that is only thanks or an acknowledgement: "thanks!", "ty so
@@ -1366,9 +1366,10 @@ const ASK_THANKS_WORDS = new Set((
 ).split(' '));
 // At least one word that carries the thanks or the "ok", so "a lot" alone
 // is not one. "ok", "cool", "got it" count: they close a thread too.
-const ASK_THANKS_CORE = /\b(thanks|thank|thx|ty|tysm|tyvm|thankyou|thanku|appreciate|appreciated|helps|helped|helpful|sense|gotcha|got|ok|okay|k|kk|cool|great|awesome|perfect|nice|sweet|amazing|wonderful|lovely|brilliant|excellent|alright|yay)\b/;
+const ASK_THANKS_CORE = /\b(thanks|thank|thx|ty|tysm|tyvm|thankyou|thanku|appreciate|appreciated|helps|helped|helpful|sense|gotcha|got|ok|okay|k|kk|cool|great|awesome|perfect|nice|sweet|amazing|wonderful|lovely|brilliant|excellent|alright|yay|will do|will try|gonna try)\b/;
 function askIsThanks(question) {
-  const q = question.toLowerCase().replace(/[^a-z\s']/g, ' ').replace(/'/g, '').replace(/\s+/g, ' ').trim();
+  if (/\?/.test(question) && !/\b(thanks|thank|thx|ty|tysm)\b/i.test(question)) return false;
+  const q = question.toLowerCase().replace(/[^a-z0-9\s']/g, ' ').replace(/'/g, '').replace(/\s+/g, ' ').trim();
   if (!q || !ASK_THANKS_CORE.test(q)) return false;
   return q.split(' ').every((w) => ASK_THANKS_WORDS.has(w) || ASK_FILLER_RE.test(w));
 }
@@ -1498,7 +1499,13 @@ const ASK_FACT_RE = /\bfacts?\b/;
 // named and none carried over from the last question. Searching would find
 // nothing or the wrong animal, so the reply asks which animal it is, and the
 // reader's next message carries this question with it (owner, 2026-11-02).
-const ASK_PET_REF_RE = /^(he|she|it|they)\b|\b(he|she|it|they)('s|'re| is| are| isn'?t| aren'?t| won'?t| will| has| have| hasn'?t| keeps| seems| was| were| does| doesn'?t| did| didn'?t| can'?t| just| always| never)\b|\bmy (pet|baby|boy|girl|guy|little one|buddy|friend)\b/;
+// He and she almost always mean the pet here. It and they only count with a
+// behavior or health word after them ("it won't eat", "they keep
+// scratching"), so "it says on your site" or "they're social, right?" do
+// not. A question choosing a pet ("my baby is 2, what pet is safe") is not
+// about a particular animal and never gets the question back (Fable review).
+const ASK_PET_REF_RE = /^(he|she|hes|shes)\b|\b(he|she)('s| is| isn'?t| won'?t| will| has| hasn'?t| keeps| seems| was| does| doesn'?t| did| didn'?t| can'?t| just| always| never| looks| acts| sleeps| eats| stopped)\b|\b(hes|shes)\b|\b(it|they|its|theyre)('s|'re| is| are| isn'?t| aren'?t| won'?t| hasn'?t| haven'?t| keeps| keep| seems| seem| stopped| looks| look| has been| have been| doesn'?t| don'?t| can'?t)? ?(not eating|won'?t eat|eat|eating|drink|drinking|sleep|sleeping|breathing|acting|act|lethargic|sick|weird|strange|off|hiding|scratching|shaking|twitching|limping|bleeding|swollen|losing|lost|throwing up|vomiting|sneezing|wheezing|pooping|peeing|biting|hissing|screaming|crying|hurt|injured|bloated|thin|fat)\b|\bmy (pet|baby|boy|girl|guy|little one|buddy)\b/;
+const ASK_CHOOSING_RE = /\b(a|an|which|what|best|good|easy|safe|first|new|another|get a|getting a) (pet|animal)s?\b/;
 const ASK_SITE_PLACE_RE = /\b(files?|hub|sections?)\b/;
 const ASK_CORRECTION = new Set('sorry oops meant mean typo spelled spelling actually wrong i'.split(' '));
 const ASK_PLACE_RE = /\b(guides?|pages?|files?|info|information|sections?|sheets?|hub|articles?|stuff|everything|posts?)\b/;
@@ -1582,15 +1589,16 @@ async function askRetrieve(db, question, context = null) {
   // A follow-up without its own animal borrows the last question's; one that
   // names the animal the last question lacked ("a hamster", after "he's
   // acting weird") carries the last question along.
-  const q = followUp && (!ownSpecies || !prevSpecies) ? `${qOwn} ${prev}` : qOwn;
+  // Only after a "which animal?" reply does a question that names an animal
+  // carry the last one along; otherwise a new animal stands alone ("best pet
+  // for a kid" then "how much is a hamster" searches the hamster only).
+  const q = followUp && (!ownSpecies || (!prevSpecies && context?.clarify)) ? `${qOwn} ${prev}` : qOwn;
 
   const species = askFindName(q, meta.species);
   const speciesWords = new Set(species ? askNormalize(species.name).split(/[\s-]+/) : []);
   const tokens = [...new Set(
     q.split(/[\s-]+/).map((t) => t.replace(/'s$|'/g, '')).filter(askIsWord),
   )];
-  if (!tokens.length) return { chunks: [], species, best: null, legal: false, meta, q, qOwn, followUp };
-
   // "Can I have a hedgehog in California" never says "legal": a state name
   // with own / have / keep / buy / get is a legal question too.
   // Judged on the reader's own words: a follow-up is legal only if it asks a
@@ -1600,14 +1608,16 @@ async function askRetrieve(db, question, context = null) {
   // A legal question is answered from the law matrix, never from these
   // chunks, so it skips the search and the rows it would read.
   if (legal) return { chunks: [], species, best: null, legal, meta, q, qOwn, followUp };
+  // Before the empty-question check: "he's not himself" is all stopwords.
+  if (!species && ASK_PET_REF_RE.test(qOwn) && !ASK_CHOOSING_RE.test(qOwn)) {
+    return { chunks: [], species: null, best: null, legal: false, clarify: true, meta, q, qOwn, followUp };
+  }
+  if (!tokens.length) return { chunks: [], species, best: null, legal: false, meta, q, qOwn, followUp };
   // A follow-up that only corrects the last question ("sorry, *betta", "I
   // meant betta": nothing new beyond the animal) carries its where-is intent.
   const ownWords = qOwn.split(/[\s-]+/).map((t) => t.replace(/'s$|'|\*/g, ''))
     .filter((t) => askIsWord(t) && !speciesWords.has(t) && !ASK_CORRECTION.has(t));
   const navText = followUp && ownWords.length === 0 ? `${qOwn} ${prev}` : qOwn;
-  if (!species && ASK_PET_REF_RE.test(qOwn)) {
-    return { chunks: [], species: null, best: null, legal: false, clarify: true, meta, q, qOwn, followUp };
-  }
   // "Show me a fun fact", "any cool facts?": with no animal named, one fact
   // at random from the facts page, read by its key (one row), no model call.
   // With an animal named, the normal search finds its facts articles.
@@ -1755,7 +1765,7 @@ async function handleAsk(request, env, ctx) {
   const question = String(body?.question || '').replace(/\s+/g, ' ').trim().slice(0, ASK.maxQuestion);
   // The conversation's previous question, for a follow-up. Text only.
   const prev = String(body?.context?.prev || '').replace(/\s+/g, ' ').trim().slice(0, ASK.maxQuestion);
-  const context = prev.length >= 3 ? { prev } : null;
+  const context = prev.length >= 3 ? { prev, clarify: body?.context?.clarify === true } : null;
   if (question.length < 3) return quiet('unavailable');
   if (!env.ASK_DB) return quiet('unavailable');
 

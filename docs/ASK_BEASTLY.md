@@ -168,8 +168,13 @@ In `public/_worker.js`, listed in `public/_routes.json`. In order:
    "Which animal is this about? Tell me the species and I'll check our
    guides.", result `clarify`, no model call, not counted toward the 3. In
    the chat the reader's next message carries it: "a hamster" searches as
-   "a hamster he's acting weird". A follow-up that names the animal the
-   last question lacked always carries the last question along.
+   "a hamster he's acting weird" (the client sends `context.clarify`; only
+   then does a question naming an animal carry the last one along). He and
+   she count anywhere; it and they only with a behavior or health word
+   after them ("it won't eat", "they keep scratching"), so "it says on your
+   site" or "they're social, right?" search normally, and a question
+   choosing a pet ("my friend wants a pet, what's easy") never gets it
+   (Fable review). "Its tail is purple" is not caught and searches.
    Thanks (owner, 2026-11-02): a message that is only thanks or an
    acknowledgement ("thanks!", "ty so much", "ok cool, got it", "that
    helps") gets a short "You're welcome" back, result `thanks`: no search,

@@ -96,14 +96,17 @@ function keepable(reply) {
 export async function askQuestion(question, captcha = '', conversationId = null) {
   const q = String(question).trim();
   const current = readHistory().find((c) => c.id === conversationId);
-  const prev = canFollowUp(current) ? current.turns[current.turns.length - 1].q : '';
+  const lastTurn = canFollowUp(current) ? current.turns[current.turns.length - 1] : null;
+  const prev = lastTurn ? lastTurn.q : '';
+  // After "which animal?", the reply that names it carries the question.
+  const clarify = lastTurn?.reply?.result === 'clarify';
 
   let reply = { result: 'unavailable' };
   try {
     const res = await fetch('/api/ask', {
       method: 'POST',
       headers: { 'content-type': 'application/json' },
-      body: JSON.stringify({ question: q, captcha, ...(prev && { context: { prev } }) }),
+      body: JSON.stringify({ question: q, captcha, ...(prev && { context: { prev, ...(clarify && { clarify: true }) } }) }),
     });
     reply = await res.json();
   } catch { /* stays unavailable */ }
