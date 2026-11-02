@@ -13,7 +13,8 @@ import { trackEvent } from '@/lib/analytics';
 
 // Ask Beastly's floating chat, on every page (docs/ASK_BEASTLY.md).
 //
-//   closed     the round button in the corner, above the phone tab bar
+//   closed     the round button in the corner, above the phone tab bar;
+//              docked on a wide screen, the tab on the right edge instead
 //   open       phone: a sheet over the tab bar. Wider screens: a floating
 //              panel dragged by its header, or docked down the right edge as a
 //              sidebar over the page (the page does not shift, so an article
@@ -220,27 +221,13 @@ export default function AskBeastlyChat() {
   // On a phone the sheet covers the page, so following a link folds it away.
   const onNavigate = () => { if (isMobile) setUi({ mode: 'minimized' }); };
 
-  // ---------------------------------------------------------------- closed
-  if (ui.mode === 'closed') {
-    return (
-      <button
-        type="button"
-        onClick={() => setUi({ mode: 'open' })}
-        aria-label="Ask Beastly a question"
-        title="Ask Beastly"
-        data-follows-tabs
-        className="fixed right-4 z-40 w-14 h-14 rounded-full bg-secondary text-secondary-foreground shadow-lg flex items-center justify-center hover:scale-105 transition-transform duration-300 bottom-[calc(56px+var(--safe-area-inset-bottom,0px)+12px)] md:bottom-6"
-      >
-        <Sparkles className="w-6 h-6" />
-      </button>
-    );
-  }
-
-  // ------------------------------------------------------------- minimized
+  // ------------------------------------------------- docked: the edge tab
   // Docked on a wide screen, minimizing tucks the sidebar into a tab on the
-  // right edge (owner, 2026-11-02, Fable spec); floating and phone keep the
-  // pill in the corner.
-  if (ui.mode === 'minimized' && !isMobile && ui.dock === 'side') {
+  // right edge (owner, 2026-11-02, Fable spec), and closing does too: the
+  // tab stays until the reader undocks, so a close by accident is one click
+  // from the sidebar again (owner, 2026-11-02). Floating and phone keep the
+  // pill and the round button.
+  if ((ui.mode === 'minimized' || ui.mode === 'closed') && !isMobile && ui.dock === 'side') {
     return (
       <button
         type="button"
@@ -258,6 +245,23 @@ export default function AskBeastlyChat() {
     );
   }
 
+  // ---------------------------------------------------------------- closed
+  if (ui.mode === 'closed') {
+    return (
+      <button
+        type="button"
+        onClick={() => setUi({ mode: 'open' })}
+        aria-label="Ask Beastly a question"
+        title="Ask Beastly"
+        data-follows-tabs
+        className="fixed right-4 z-40 w-14 h-14 rounded-full bg-secondary text-secondary-foreground shadow-lg flex items-center justify-center hover:scale-105 transition-transform duration-300 bottom-[calc(56px+var(--safe-area-inset-bottom,0px)+12px)] md:bottom-6"
+      >
+        <Sparkles className="w-6 h-6" />
+      </button>
+    );
+  }
+
+  // ------------------------------------------------------------- minimized
   if (ui.mode === 'minimized') {
     const lastQ = current ? current.turns[current.turns.length - 1].q : null;
     return (
