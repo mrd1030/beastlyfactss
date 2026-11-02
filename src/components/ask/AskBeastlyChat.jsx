@@ -320,6 +320,24 @@ export default function AskBeastlyChat() {
   return (
     <>
       {isMobile && <div className="fixed inset-0 z-[48] bg-black/30" onClick={() => setUi({ mode: 'minimized' })} aria-hidden="true" />}
+      {/* Docked, the edge tab sits half behind the sidebar's left edge, so
+          the same tab opens it and tucks it away again, showing the
+          article's own sidebar (owner, 2026-11-02). A sibling one layer
+          under the panel, since a child cannot go behind its parent's
+          background. */}
+      {docked && (
+        <button
+          type="button"
+          onClick={() => setUi({ mode: 'minimized' })}
+          aria-label="Tuck Ask Beastly away"
+          title="Tuck away"
+          className="fixed top-1/2 -translate-y-1/2 z-[48] w-10 h-[140px] rounded-l-xl bg-secondary text-secondary-foreground border-l border-black/15 shadow-lg flex flex-col items-center justify-center gap-3 pr-5 transition-transform duration-200 hover:-translate-x-2 hover:brightness-110"
+          style={{ right: PANEL_W - 20 }}
+        >
+          <Sparkles className="w-3.5 h-3.5" />
+          <span className="text-[13px] font-body font-semibold whitespace-nowrap [writing-mode:vertical-rl] rotate-180">Ask Beastly</span>
+        </button>
+      )}
       {/* One layer under the navbar and the phone tab bar (both z-50), so the
           navbar's menus always open over the chat, docked or not. */}
       <section
@@ -330,20 +348,6 @@ export default function AskBeastlyChat() {
         className={`fixed z-[49] bg-card border-border flex flex-col ${placement}`}
         style={style}
       >
-        {/* Docked, the edge tab rides on the sidebar's left edge, so the
-            same tab opens it and tucks it away again (owner, 2026-11-02). */}
-        {docked && (
-          <button
-            type="button"
-            onClick={() => setUi({ mode: 'minimized' })}
-            aria-label="Tuck Ask Beastly away"
-            title="Tuck away"
-            className="absolute -left-10 top-1/2 -translate-y-1/2 w-10 h-[140px] rounded-l-xl bg-secondary text-secondary-foreground border-l border-black/15 shadow-lg flex flex-col items-center justify-center gap-3 transition-all duration-200 hover:-translate-x-1 hover:brightness-110"
-          >
-            <Sparkles className="w-4 h-4" />
-            <span className="text-[13px] font-body font-semibold whitespace-nowrap [writing-mode:vertical-rl] rotate-180">Ask Beastly</span>
-          </button>
-        )}
         <header
           className={`flex items-center gap-1.5 px-3 py-3 border-b border-border select-none ${!isMobile && !docked ? 'cursor-move' : ''}`}
           onPointerDown={onDragStart}
