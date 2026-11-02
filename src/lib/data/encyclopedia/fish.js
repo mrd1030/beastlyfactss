@@ -196,6 +196,20 @@ export const fishEncyclopedia = [
     },
   },
   {
+    id: "rummy-nose-tetra", name: "Rummy-Nose Tetra", scientific: "Petitella bleheri (formerly Hemigrammus bleheri)",
+    category: "Fish", emoji: "🐠", difficulty: "Intermediate", guideId: "rummy-nose-tetra", available: true, image: "/assets/guides/rummy-nose-tetra.jpg",
+    bio: {
+      overview: "The rummy-nose tetra is a slim schooling fish from the blackwater rivers of the Rio Negro and Rio Meta basins, named for the bright red that covers its head. It schools so tightly that physicists use it to study how groups of animals move together, and the red fades when a fish is stressed or kept in poor conditions. Most fish sold under the name are Petitella bleheri; two close look-alikes, P. rhodostoma and P. georgiae, are sometimes sold under the same label.",
+      origin: "Rio Negro and Rio Meta basins (Brazil and Colombia)",
+      habitat: "Tannin-stained, very acidic blackwater rivers and flooded forest streams, with few aquatic plants",
+      adultSize: "About 1.5-2 inches (4-5 cm)",
+      wildDiet: "Omnivorous: microcrustaceans, insect larvae, filamentous algae and plant fragments, shifting with the flood season",
+      wildLifespan: "Not documented in the wild; about 5 years in captivity",
+      conservation: "Least Concern (IUCN)",
+      history: "Géry and Mahnert described the species in 1986 from the Rio Negro in Brazil and named it for Heiko Bleher, the explorer and ornamental fish wholesaler who collected specimens there. It sat in the genus Hemigrammus until a 2020 study moved it, along with the original rummy-nose tetra described by Ahl in 1924, into Petitella. In Brazil's Amazonas state it ranks second among exported aquarium fish, behind only the cardinal tetra.",
+    },
+  },
+  {
     id: "swordtail", name: "Swordtail", scientific: "Xiphophorus hellerii",
     category: "Fish", emoji: "🐠", difficulty: "Beginner", guideId: "swordtail", available: true, image: "/assets/guides/swordtail.jpg",
     bio: {

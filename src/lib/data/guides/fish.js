@@ -108,7 +108,7 @@ export const fishGuides = fillCostTokens([
     // figure no guide states; a band under 3°F reads "Limits", a single-point touch reads "No", and a
     // species' optional `caution` (from its handling guide, such as a fin
     // nipper) is marked with a dagger and printed once under the key. Planned species show as one "Coming" line until
-    // their guide set ships. Live 2026-11-01 with ember; rummy-nose, black
+    // their guide set ships. Live 2026-11-01 with ember, rummy-nose 2026-11-02; black
     // skirt and glowlight follow one species a day (content/_scheduled-tetras/).
     layout: "group",
     // Intro research, with quotes and URLs: research/TETRA_GROUP_RESEARCH.md
@@ -154,7 +154,6 @@ export const fishGuides = fillCostTokens([
         },
         {
           id: "rummy-nose-tetra",
-          planned: true,
           name: "Rummy-Nose Tetra",
           values: ["36-inch tank for 10", "73 to 79°F", "5.5 to 7.0", "1.5 to 2 in"],
           sources: ["rummy-nose-tetra-tank-setup-guide", "rummy-nose-tetra-tank-setup-guide", "rummy-nose-tetra-tank-setup-guide", null],
@@ -1434,6 +1433,94 @@ export const fishGuides = fillCostTokens([
       { q: "What temperature do platies need?", a: "68 to 77°F. Hold it steady anywhere inside that range rather than chasing a number: swings over about 2°F in a day are the problem. Variatus-line platies handle the cool end better than the southern platy does, though a heater is still the safer default unless the room stays warm all year." },
       { q: "How often should I feed my platy?", a: "Adults do well fed once or twice a day, sometimes stretched to three times for very small portions, feeding only what's fully cleared within a minute or two. Juveniles need two or three smaller meals a day, the top of the adult range, to keep pace with faster growth." },
       { q: "Is it true that platies can get tumors?", a: "Yes, and it's one of the most studied facts in the species, but keep it in perspective. Certain platy and swordtail genetic lines develop melanoma through a well-studied mechanism, and Xiphophorus fish have been used as a cancer research model for almost a century. Importantly, in a purebred pet-store platy it is rare, appearing almost exclusively in mature males of advanced age, and it is unmasked far more readily by deliberate cross-breeding between platies and swordtails in a lab setting. If you find a lump or dark growth on your own platy, it's far more likely to be an injury, a cyst, or an unrelated growth than that specific research-famous condition, a vet or fish-health specialist can help rule out the more common, more treatable causes." },
+    ],
+  },
+  {
+    id: "rummy-nose-tetra",
+    name: "Rummy-Nose Tetra",
+    emoji: "🐠",
+    difficulty: "Intermediate",
+    petType: "Fish",
+    image: "/assets/guides/rummy-nose-tetra.jpg",
+    tagline: "The red-nosed schooler that turns laps of a long tank in lockstep!",
+    seoTitle: "Rummy-Nose Tetra Care Guide: Tank, School, and Health",
+    seoDescription: "Rummy-nose tetras need a school of ten and a tank at least 36 inches long. Keep soft water at 73 to 79°F, watch the red nose, and treat ich without heat.",
+    funFact: "Rummy-nose tetras school so tightly that physicists use them to study how groups decide where to go: in a ring-shaped tank, the U-turns that reverse the whole school mostly start with the fish at the front.",
+    // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
+    // deep dive named in its `source`, and that article is where it changes; the
+    // hub keeps no number of its own. Adult size comes from the encyclopedia
+    // entry. Water changes and the power outage rule cite the shared aquarium
+    // guides. The emergency card follows the health guide's three groups. The
+    // fish written about is Petitella bleheri, the species sold under the name
+    // (research: research/RUMMY_NOSE_TETRA_RESEARCH.md). Built 2026-10-31.
+    layout: "router",
+    firstWeek: {
+      intro: "The numbers a new owner needs in the first week, each from the article it links to. Rows with no link come from the encyclopedia.",
+      rows: [
+        { label: "How many", value: "A school of 10 or more.", source: "rummy-nose-tetra-handling-guide" },
+        { label: "Tank size", value: "At least 36 inches (90 cm) long for a school of 10, which puts it in the 30 to 40 gallon range. A 20-gallon long falls six inches short.", source: "rummy-nose-tetra-tank-setup-guide" },
+        { label: "Temperature", value: "73 to 79°F (23 to 26°C), with the heater set inside that band. 79°F is the ceiling.", source: "rummy-nose-tetra-tank-setup-guide" },
+        { label: "Water chemistry", value: "pH 5.5 to 7.0 and a general hardness of 2 to 12 dGH. Soft, acidic water suits them best, and alkaline water dulls the red.", source: "rummy-nose-tetra-tank-setup-guide" },
+        { label: "Cycle first", value: "Ammonia and nitrite both at zero before the school goes in. Rummy-noses are sensitive to stress, and a tank still cycling is a steady source of it.", source: "rummy-nose-tetra-tank-setup-guide" },
+        { label: "Layout", value: "A planted tank or a sparse layout of sand, wood and dried leaves both suit them.", source: "rummy-nose-tetra-tank-setup-guide" },
+        { label: "Diet", value: "Omnivores: micro-pellets, granules or crushed flake as the base, with baby brine shrimp, daphnia and mosquito larvae live or frozen.", source: "rummy-nose-tetra-feeding-guide" },
+        { label: "Feeding schedule", value: "At least once a day, in portions the school clears before any reaches the substrate.", source: "rummy-nose-tetra-feeding-guide" },
+        { label: "Acclimation", value: "Lights off, then small amounts of tank water into the bag every few minutes for 30 to 60 minutes. Net the fish across and throw the bag water away.", source: "rummy-nose-tetra-handling-guide" },
+        { label: "Tankmates", value: "Peaceful. Add them before an angelfish so a resident fish does not bully the new school, and keep them out of discus tanks run above their 79°F top.", source: "rummy-nose-tetra-handling-guide" },
+        { label: "The red nose", value: "A paler nose means stress or slipping conditions: test ammonia, nitrite and pH before anything else.", source: "rummy-nose-tetra-health-issues-guide" },
+        { label: "Quarantine", value: "At least 30 days in their own tank, longer if anything shows, before new fish meet the main school.", source: "rummy-nose-tetra-health-issues-guide" },
+        { label: "Ich", value: "No heat cure: most strains die above 86°F, past the 79°F ceiling. Warm slowly to 79°F with extra aeration and let a copper-free ich medication clear it. Salt is unproven for this species at the 4 to 5 grams per liter that kills ich.", source: "rummy-nose-tetra-health-issues-guide" },
+        { label: "Water changes", value: "25 to 30% weekly from the substrate, with conditioned water at tank temperature. Test nitrate first: under 20 ppm the routine is right, past 40 ppm the next change is 50%.", source: "aquarium-water-changes-guide" },
+        { label: "Budget", value: "About $4 to $6.50 a fish online, closer to $9 in a local store; twelve come to %%animal:rummy-nose-tetra%% before shipping. Setup roughly %%setup:rummy-nose-tetra%%.", source: "rummy-nose-tetra-cost-guide" },
+        { label: "Lifespan", value: "About 5 years in a well-kept tank.", source: "rummy-nose-tetra-cost-guide" },
+        { label: "Adult size", value: "About 2 inches (5 cm)." },
+        { label: "Power outage", value: "Oxygen is the threat, not darkness. Unplug the filter rather than letting it sit dead in the water, and keep the surface moving.", source: "aquarium-power-outage-and-transport-guide" },
+      ],
+    },
+    emergencyCard: {
+      source: "rummy-nose-tetra-health-issues-guide",
+      heading: "Test the water first, then act on these today.",
+      callNow: [
+        "A red nose gone pale, on one fish or across the school",
+        "Fish gasping at the surface or breathing fast",
+        "Several fish showing the same sign together",
+        "A dead fish: lift the body out before doing anything else",
+        "White specks like grains of salt on the body or fins: treat for ich today",
+        "Rapid breathing that keeps going after the water tests clean, since ich can settle in the gills",
+      ],
+      soonHeading: "Watch and check again tomorrow.",
+      soon: [
+        "Flashing: darting at glass, wood or sand to scrape the body",
+        "A slimy look from extra mucus on the skin",
+        "A fish that turns sluggish or skips its food",
+        "Clamped fins, or a fish losing weight while it still eats",
+      ],
+      vetLine: "The red nose is the early warning: when it fades, test the water before you treat anything.",
+    },
+    routes: [
+      { slug: "rummy-nose-tetra-cost-guide", line: "$4 to $6.50 a fish, why a long tank is the real expense, and the %%setup:rummy-nose-tetra%% that goes into it." },
+      { slug: "rummy-nose-tetra-tank-setup-guide", line: "A tank at least 36 inches long, soft acidic water at 73 to 79°F, and why the length matters more than the gallons." },
+      { slug: "rummy-nose-tetra-feeding-guide", line: "What wild fish eat across the flood and dry seasons, the captive staple, and food for fry." },
+      { slug: "rummy-nose-tetra-handling-guide", line: "Acclimation over 30 to 60 minutes, why rummy-noses go in before an angelfish, and the discus question." },
+      { slug: "rummy-nose-tetra-health-issues-guide", line: "Reading the red nose, the 30-day quarantine, and why the ich heat cure stops at 79°F." },
+      { slug: "rummy-nose-tetra-enrichment-guide", line: "The schooling research: how light, sight and the lateral line hold a school of rummy-noses together." },
+    ],
+    buyList: [
+      "Tank at least 36 inches long, 30 to 40 gallons",
+      "Ten or more rummy-nose tetras",
+      "Aquarium heater",
+      "Sponge filter or a baffled hang-on-back",
+      "Fine sand",
+      "Driftwood and dried leaves",
+      "Liquid water test kit",
+      "Water conditioner",
+      "Micro or nano pellet, or a tropical flake to crush",
+      "Frozen baby brine shrimp or daphnia",
+    ],
+    faqs: [
+      { q: "What size tank do rummy-nose tetras need?", a: "One that is at least 36 inches (90 cm) long for a school of 10, which puts it in the 30 to 40 gallon range. Measure the front glass before reading the gallons on the label." },
+      { q: "How often should I feed rummy-nose tetras?", a: "At least once a day. Keep each portion small enough that the school clears it before any reaches the substrate." },
+      { q: "Can you treat ich in rummy-nose tetras with heat?", a: "Not with heat alone. Ich strains mostly die above 86°F, seven degrees past the rummy-nose's 79°F ceiling. Warm the tank slowly to 79°F with extra aeration and let a copper-free ich medication clear the parasite. Salt is unproven for this species at the 4 to 5 grams per liter that kills ich." },
     ],
   },
   {

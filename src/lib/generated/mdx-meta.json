@@ -93,7 +93,7 @@
     "title": "Four Animals, Four First Impressions That Are Wrong",
     "seoTitle": "Ackie, Milk Snake, Cockroach & Angelfish",
     "seoDescription": "Four wrong impressions: an ackie needing 158F-plus heat, a harmless coral snake mimic, a docile roach, and an angelfish that eats tankmates at 3 inches.",
-    "lastUpdated": "2026-09-25",
+    "lastUpdated": "2026-11-01",
     "noIndex": true,
     "excerpt": "Look at each of these for the first time and you'd guess wrong about what you're getting: ackie monitor, milk snake, hissing cockroach, and angelfish.",
     "date": "2026-07-21",
@@ -500,7 +500,7 @@
     "title": "Is It Legal to Own an Ackie Monitor? State-by-State Guide",
     "seoTitle": "Are Ackie Monitors Legal? Banned in Only Four Places",
     "seoDescription": "Ackie monitors are legal in 40 of 52 US jurisdictions. Louisiana bans two other species, not this dwarf one. Four places ban it, three by family alone.",
-    "lastUpdated": "2026-10-02",
+    "lastUpdated": "2026-11-01",
     "noIndex": false,
     "excerpt": "The Ackie monitor clears almost every state, including Louisiana, which bans two other monitor species by name but was never written to reach a dwarf species this size. The four dead ends all catch it as a Varanus rather than as itself.",
     "date": "2026-08-29",
@@ -520,7 +520,7 @@
     "image": "/assets/guides/ackie-monitor-legal.jpg",
     "imageAlt": "Ackie monitor perched on a sun-warmed rock, its dark body and pale yellow speckling and long banded tail clearly visible",
     "emoji": "🦎",
-    "lastReviewed": "2026-10-02",
+    "lastReviewed": "2026-11-01",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -1420,7 +1420,7 @@
     "image": "/assets/guides/african-grey-parrot-legal.jpg",
     "imageAlt": "African grey parrot perched calmly, representing its captive-bred legal status",
     "emoji": "🦜",
-    "lastReviewed": "2026-10-08",
+    "lastReviewed": "2026-11-01",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -2067,7 +2067,7 @@
     "title": "Are Alligators Legal? A Native Reptile Under Game Law",
     "seoTitle": "Are Alligators Legal? 30 Bans, 9 Permit States, by State",
     "seoDescription": "Alligator laws by state: 30 bans, 9 permit states, 5 unclear. Florida's Class II permit, Louisiana's farmers, Texas's proclamation, Wyoming's federal-list ban.",
-    "lastUpdated": "2026-10-17",
+    "lastUpdated": "2026-11-01",
     "noIndex": false,
     "excerpt": "The American alligator is a native game animal in the states where it lives and a dangerous exotic everywhere else, and both kinds of law reach it. The result is 30 bans, nine permits that are mostly for farmers and exhibitors, five states whose text will not decide, and a federal threatened listing that exists only because the alligator looks like a crocodile.",
     "date": "2026-10-17",
@@ -2090,7 +2090,7 @@
     "image": "/assets/guides/american-alligator-legal.jpg",
     "imageAlt": "American alligator resting on a muddy riverbank with its jaws closed and its back ridged in the sun",
     "emoji": "🐊",
-    "lastReviewed": "2026-10-17",
+    "lastReviewed": "2026-11-01",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -2563,7 +2563,7 @@
     "title": "Common Angelfish Health Issues (And What Actually Prevents Them)",
     "seoTitle": "Angelfish Health Issues: Signs & Causes",
     "seoDescription": "Angelfish health problems like ich, hexamita, fin rot, and cotton wool disease almost always trace back to water quality and stress, not bad luck.",
-    "lastUpdated": "2026-09-25",
+    "lastUpdated": "2026-11-01",
     "noIndex": false,
     "excerpt": "Angelfish are hardy in a properly sized, well-maintained tank, and most health problems trace back to water quality and stress.",
     "date": "2026-07-17",
@@ -2602,7 +2602,7 @@
       },
       {
         "q": "Can fin rot be reversed in angelfish?",
-        "a": "Often, if caught early. Correcting water quality plus an antibacterial treatment resolves most cases, though damaged tissue may not fully regrow. Fin rot is usually bacterial, from poor water quality or an untreated fin injury, sometimes from fin-nipping by a tankmate."
+        "a": "Often, if caught early. Clean water, a good diet and a sound setup do most of the work; antibiotics rarely help because they barely reach the fin edges, so a vet takes any case that will not clear. The fin grows back once the infection is gone, though not always completely. Fin rot is usually bacterial, from poor water quality or an untreated fin injury, sometimes from fin-nipping by a tankmate."
       },
       {
         "q": "What is cotton wool disease?",
@@ -2619,7 +2619,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2,
+    "sourceCount": 3,
     "headingCount": 8,
     "ledeMatchesExcerpt": true,
     "imageWidth": 1168,
@@ -2662,7 +2662,7 @@
       },
       {
         "q": "What temperature do angelfish need?",
-        "a": "Between 78 and 82°F, with about 75°F the low end they tolerate. Size the heater at roughly 3 to 5 watts per gallon, so 200 to 250 watts on a 55-gallon, and hold the swing inside about 2 degrees either way."
+        "a": "Anywhere from 75 to 86°F, held steady inside that range. Size the heater at roughly 3 to 5 watts per gallon, so 200 to 250 watts on a 55-gallon, and hold the swing inside about 2 degrees either way."
       },
       {
         "q": "What water chemistry do angelfish need?",
@@ -2873,7 +2873,7 @@
     "faqs": [
       {
         "q": "Can I treat ich with heat alone?",
-        "a": "Only if your fish can live at 86°F for two weeks, because that is the temperature most ich strains cannot survive, and it must be held with extra aeration since warm water carries less oxygen. Discus can, and cardinal tetras tolerate water reaching 86°F in short spells, so for them the heat method is possible only with strong aeration and the fish watched closely. Goldfish, koi, zebra danios, neon, ember, rummy-nose, black skirt and glowlight tetras, and bristlenose plecos cannot, and for them heat goes only as high as the species ceiling, to speed the cycle, while salt or medication does the killing."
+        "a": "Only if your fish can live at 86°F for two weeks, because that is the temperature most ich strains cannot survive, and it must be held with extra aeration since warm water carries less oxygen. Discus can. Goldfish, koi, zebra danios, cardinal, neon, ember, rummy-nose, black skirt and glowlight tetras, and bristlenose plecos cannot, and for them heat goes only as high as the species ceiling, to speed the cycle, while salt or medication does the killing."
       },
       {
         "q": "How long does ich treatment take?",
@@ -3111,7 +3111,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4,
+    "sourceCount": 5,
     "headingCount": 11,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
@@ -3123,7 +3123,7 @@
     "title": "Aquarium Water Changes: How Much, How Often, and What the Number Is For",
     "seoTitle": "Aquarium Water Changes: How Much and How Often",
     "seoDescription": "How much aquarium water to change and how often: the 25 to 30% weekly baseline, the 40 ppm nitrate line that moves it, and why big changes shock fish.",
-    "lastUpdated": "2026-09-16",
+    "lastUpdated": "2026-11-01",
     "noIndex": false,
     "excerpt": "A filter never removes nitrate. Only taking water out does. Here is the 25 to 30 percent weekly baseline, the nitrate reading that moves it, the species that break the rule, and why a huge change can kill the fish it was meant to save.",
     "date": "2026-09-16",
@@ -3207,7 +3207,7 @@
     "image": "/assets/guides/arctic-fox-legal.jpg",
     "imageAlt": "Arctic fox in white winter coat sitting on snow with its ears forward",
     "emoji": "🦊",
-    "lastReviewed": "2026-10-10",
+    "lastReviewed": "2026-11-01",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -3601,7 +3601,7 @@
     "title": "Is It Legal to Own an Argentine Tegu? Florida's Prohibited List Explained",
     "seoTitle": "Are Argentine Tegus Legal? Florida Ban and Permits",
     "seoDescription": "Argentine tegus have been banned from new ownership in Florida since April 2021. The grandfather permit window closed that July. No federal ban exists.",
-    "lastUpdated": "2026-10-02",
+    "lastUpdated": "2026-11-01",
     "noIndex": false,
     "excerpt": "Argentine tegus aren't federally restricted and most states don't touch them, but Florida is the exception. Since 2021 they've been on the state's Prohibited species list, and the window to grandfather one in has already closed.",
     "date": "2026-07-14",
@@ -3621,7 +3621,7 @@
     "image": "/assets/guides/argentine-tegu-legal.jpg",
     "imageAlt": "Argentine black and white tegu in Florida habitat",
     "emoji": "🦎",
-    "lastReviewed": "2026-10-02",
+    "lastReviewed": "2026-11-01",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -3639,7 +3639,7 @@
       },
       {
         "q": "Are tegus restricted anywhere else in the US?",
-        "a": "Yes. Georgia, Alabama, Louisiana, Hawaii, DC and New York City ban a pet tegu. New Mexico wants an import permit, New Jersey a permit under a closed-list code, and Minnesota allows one only from a permitted breeder. Alabama bans at genus level, so a Colombian tegu is caught too."
+        "a": "Yes. Georgia, Alabama, Louisiana, Hawaii, DC and New York City ban a pet tegu. New Mexico wants an import permit, New Jersey a permit under a closed-list code, Minnesota allows one only from a permitted breeder, and Maine clears it only if captive bred. Alabama bans at genus level, so a Colombian tegu is caught too."
       },
       {
         "q": "Can breeders still produce tegus for sale in Florida?",
@@ -3808,7 +3808,7 @@
     "image": "/assets/guides/asian-small-clawed-otter-legal.jpg",
     "imageAlt": "Asian small-clawed otter standing on a wet rock with its short-clawed front paws together and its whiskered face toward the camera",
     "emoji": "🦦",
-    "lastReviewed": "2026-10-12",
+    "lastReviewed": "2026-11-01",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -4352,7 +4352,7 @@
     "image": "/assets/guides/axolotl-legal.jpg",
     "imageAlt": "Pink axolotl in a planted aquarium, representing its state-by-state legal status",
     "emoji": "🦎",
-    "lastReviewed": "2026-10-08",
+    "lastReviewed": "2026-11-01",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -4800,7 +4800,7 @@
     "title": "Is It Legal to Own a Ball Python? State-by-State Guide",
     "seoTitle": "Is a Ball Python Legal in Your State? Full Guide",
     "seoDescription": "Ball pythons were specifically excluded from the 2012 federal python ban. They're legal nearly everywhere except Hawaii's snake ban and NYC's python ban.",
-    "lastUpdated": "2026-09-16",
+    "lastUpdated": "2026-11-01",
     "noIndex": false,
     "excerpt": "The federal python ban that shows up in Everglades news coverage never included ball pythons. They're legal almost everywhere, with two real exceptions: Hawaii's total snake ban, and New York City's ban on the entire python family.",
     "date": "2026-07-23",
@@ -4820,7 +4820,7 @@
     "image": "/assets/guides/ball-python-legal.jpg",
     "imageAlt": "Ball python coiled in its enclosure",
     "emoji": "🐍",
-    "lastReviewed": "2026-10-02",
+    "lastReviewed": "2026-11-01",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -5772,7 +5772,7 @@
     "image": "/assets/guides/bearded-dragon-legal.jpg",
     "imageAlt": "Bearded dragon basking on a flat stone under a heat lamp",
     "emoji": "🦎",
-    "lastReviewed": "2026-10-02",
+    "lastReviewed": "2026-11-01",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -6166,7 +6166,7 @@
     "image": "/assets/guides/bengal-cat-legal.jpg",
     "imageAlt": "Bengal cat with rosetted coat standing alert on a wooden floor",
     "emoji": "🐈",
-    "lastReviewed": "2026-10-08",
+    "lastReviewed": "2026-11-01",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -6395,7 +6395,7 @@
       },
       {
         "q": "Why won't my betta eat?",
-        "a": "Most commonly it's stress from a recent move or tank change, pickiness about a new food, or water that's too cold or of poor quality. Bettas need water in the roughly 76 to 82°F range, cooler water slows their metabolism and appetite noticeably. Check water quality and temperature before assuming anything more serious."
+        "a": "Most commonly it's stress from a recent move or tank change, pickiness about a new food, or water that's too cold or of poor quality. Bettas need water in the roughly 75 to 86°F range, cooler water slows their metabolism and appetite noticeably. Check water quality and temperature before assuming anything more serious."
       },
       {
         "q": "How long can a betta go without eating?",
@@ -6583,7 +6583,7 @@
       },
       {
         "q": "What heater and filter does a betta tank need?",
-        "a": "A 15 to 25 watt adjustable heater sized for a small aquarium, targeting a stable 76 to 82°F with 78 to 80°F as the sweet spot. Pair it with a gentle, low-flow filter, sponge filters are the gold standard here since bettas have long, flowing fins that struggle against strong current."
+        "a": "A 15 to 25 watt adjustable heater sized for a small aquarium, holding a stable temperature anywhere in the 75 to 86°F range. Pair it with a gentle, low-flow filter, sponge filters are the gold standard here since bettas have long, flowing fins that struggle against strong current."
       },
       {
         "q": "How do I cycle a betta tank before adding the fish?",
@@ -6654,7 +6654,7 @@
       },
       {
         "q": "Do betta fish and goldfish need the same water temperature?",
-        "a": "No, and the requirements point in opposite directions. Betta fish are tropical and need heated water around 76 to 82 degrees F. Goldfish are coldwater fish that do best around 65 to 75 degrees F and can be stressed by a heater running too warm."
+        "a": "No, and the requirements point in opposite directions. Betta fish are tropical and need heated water around 75 to 86 degrees F. Goldfish are coldwater fish that do best around 65 to 75 degrees F and can be stressed by a heater running too warm."
       },
       {
         "q": "Can I keep two betta fish or two goldfish together?",
@@ -6786,7 +6786,7 @@
     "image": "/assets/guides/big-cat-legal-guide.jpg",
     "imageAlt": "Adult tiger walking through tall grass with its head low and eyes forward",
     "emoji": "🐅",
-    "lastReviewed": "2026-10-11",
+    "lastReviewed": "2026-11-01",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -7915,7 +7915,7 @@
     "image": "/assets/guides/black-bear-legal.jpg",
     "imageAlt": "American black bear standing in a clearing with its black coat, rounded ears and pale muzzle in clear view",
     "emoji": "🐻",
-    "lastReviewed": "2026-10-13",
+    "lastReviewed": "2026-11-01",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -8337,7 +8337,7 @@
     "image": "/assets/guides/blue-tongue-skink-legal.jpg",
     "imageAlt": "Blue-tongued skink with its tongue extended, showing the blue coloration it is named for",
     "emoji": "🦎",
-    "lastReviewed": "2026-10-02",
+    "lastReviewed": "2026-11-01",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -8798,7 +8798,7 @@
     "title": "Is It Legal to Own a Boa Constrictor? Federal Withdrawal and State Rules",
     "seoTitle": "Are Boa Constrictors Legal? State Bans and Permits",
     "seoDescription": "Boa constrictors avoided the 2015 federal injurious wildlife listing. Hawaii bans them outright, and Louisiana requires a permit at any length.",
-    "lastUpdated": "2026-09-16",
+    "lastUpdated": "2026-11-01",
     "noIndex": false,
     "excerpt": "The federal government proposed banning boa constrictor imports in 2010, then walked it back in 2015. That federal non-listing is the easy part. A handful of states, and Louisiana's 2025 rewrite in particular, are where the rules live.",
     "date": "2026-07-16",
@@ -8818,7 +8818,7 @@
     "image": "/assets/guides/boa-constrictor-legal.jpg",
     "imageAlt": "Boa constrictor coiled, representing its legal status across US states",
     "emoji": "🐍",
-    "lastReviewed": "2026-10-02",
+    "lastReviewed": "2026-11-01",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -9022,7 +9022,7 @@
     "image": "/assets/guides/bobcat-legal.jpg",
     "imageAlt": "Bobcat standing on a rock with its tufted ears, spotted coat and short tail in clear view",
     "emoji": "🐈",
-    "lastReviewed": "2026-10-11",
+    "lastReviewed": "2026-11-01",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -9496,7 +9496,7 @@
     "title": "Is It Legal to Own a Box Turtle? State-by-State Guide",
     "seoTitle": "Is a Box Turtle Legal in Your State? Full Guide",
     "seoDescription": "Box turtle laws vary by state: wild collection is banned in several states, and Florida caps ownership at 2 per person even for captive-bred turtles.",
-    "lastUpdated": "2026-10-08",
+    "lastUpdated": "2026-11-01",
     "noIndex": false,
     "excerpt": "Taking a box turtle from the wild is restricted in most states, but even a legally acquired, captive-bred one isn't automatically unrestricted. Florida caps possession at two per person, and a handful of states attach real conditions.",
     "date": "2026-07-23",
@@ -9516,7 +9516,7 @@
     "image": "/assets/guides/box-turtle-legal.jpg",
     "imageAlt": "Eastern box turtle on a forest floor",
     "emoji": "🐢",
-    "lastReviewed": "2026-10-08",
+    "lastReviewed": "2026-11-01",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -10725,7 +10725,7 @@
     "image": "/assets/guides/burmese-python-legal.jpg",
     "imageAlt": "Coiled Burmese python showing its patterned tan and brown markings",
     "emoji": "🐍",
-    "lastReviewed": "2026-10-08",
+    "lastReviewed": "2026-11-01",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -10764,7 +10764,7 @@
     "title": "Are Caimans Legal? The Exotic Crocodilian, State by State",
     "seoTitle": "Are Caimans Legal? 25 Bans, 7 Permit States, by State",
     "seoDescription": "Caiman laws by state: 25 bans, 7 permit states, 14 with no rule. Where 'alligator' leaves the caiman out, Delaware's 903 list, Texas, the 50 CFR 17.11 listing.",
-    "lastUpdated": "2026-10-17",
+    "lastUpdated": "2026-11-01",
     "noIndex": false,
     "excerpt": "A spectacled caiman is an exotic everywhere in the United States, so it gets the dangerous-animal answer and never the game-code one. That makes its row simpler than the alligator's and, in fourteen jurisdictions, more generous: 25 bans, seven permits, four states that cannot decide, and a federal threatened listing that exists because the caiman looks like something rarer.",
     "date": "2026-10-17",
@@ -10787,7 +10787,7 @@
     "image": "/assets/guides/caiman-legal.jpg",
     "imageAlt": "Spectacled caiman floating at the edge of a pond with only its eyes, bony brow ridge and snout above the water",
     "emoji": "🐊",
-    "lastReviewed": "2026-10-17",
+    "lastReviewed": "2026-11-01",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -11284,7 +11284,7 @@
     "image": "/assets/guides/canada-lynx-legal.jpg",
     "imageAlt": "Canada lynx standing in snow with its long ear tufts, gray winter coat and broad furred paws in clear view",
     "emoji": "🐈",
-    "lastReviewed": "2026-10-11",
+    "lastReviewed": "2026-11-01",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -11773,7 +11773,7 @@
     "image": "/assets/guides/capuchin-legal.jpg",
     "imageAlt": "White-faced capuchin monkey perched on a branch with its pale face and dark cap turned toward the camera",
     "emoji": "🐒",
-    "lastReviewed": "2026-10-15",
+    "lastReviewed": "2026-11-01",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -11848,7 +11848,7 @@
     "image": "/assets/guides/capybara-legal.jpg",
     "imageAlt": "Adult capybara resting at the edge of shallow water with reeds behind it",
     "emoji": "🦫",
-    "lastReviewed": "2026-10-08",
+    "lastReviewed": "2026-11-01",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -12236,11 +12236,11 @@
       },
       {
         "q": "What is ich and how do you treat it in cardinal tetras?",
-        "a": "Small white spots like grains of salt, plus flashing against decor and rapid breathing, mean ich, caused by the parasite Ichthyophthirius multifiliis. Treat it with medication and a daily partial water change. Cardinals tolerate water reaching 86°F, which most ich strains do not survive, so a slow rise to the top of their range with strong aeration is possible if the fish are watched closely."
+        "a": "Small white spots like grains of salt, plus flashing against decor and rapid breathing, mean ich, caused by the parasite Ichthyophthirius multifiliis. Treat it with medication and a daily partial water change, warming the tank slowly to 81°F, the top of their range, with strong aeration. The 86°F that most ich strains do not survive sits above that range, so heat alone is not a treatment for cardinals."
       },
       {
         "q": "What is fin rot and how serious is it?",
-        "a": "A bacterial infection that frays the fin edges, usually from poor water quality, fin-nipping tankmates, or stress. It starts as discoloration on the fin edges and progresses to fraying and tissue loss if untreated. Caught early, it is very treatable with improved water conditions and an antibacterial medication."
+        "a": "A bacterial infection that frays the fin edges, usually from poor water quality, fin-nipping tankmates, or stress. It starts as discoloration on the fin edges and progresses to fraying and tissue loss if untreated. Caught early, it is very treatable: fixing the water, diet and setup is the main treatment, antibiotics are rarely needed because they struggle to reach the fin edges, and the fin starts to regrow once the infection clears."
       },
       {
         "q": "How do I prevent most cardinal tetra health issues?",
@@ -12281,10 +12281,10 @@
     "slug": "cardinal-tetra-tank-setup-guide",
     "title": "Cardinal Tetra Tank Setup: A 20-Gallon Long, Warm Soft Water, and Dim Light",
     "seoTitle": "Cardinal Tetra Tank Setup Guide",
-    "seoDescription": "Cardinal tetra tank setup: a 20-gallon long for 10, 77 to 82°F, soft acidic water, an inert sandy floor, dim light, and a full cycle before the pH comes down.",
+    "seoDescription": "Cardinal tetra tank setup: a 20-gallon long for 10, 73 to 81°F, soft acidic water, an inert sandy floor, dim light, and a full cycle before the pH comes down.",
     "lastUpdated": "2026-11-01",
     "noIndex": false,
-    "excerpt": "Cardinal tetras come from the soft, acidic blackwater of the Rio Negro and the clearer streams of the Orinoco, and they run warmer than neons. A tank for a school of 10 is a 20-gallon long at 77 to 82°F, cycled first and acidified after.",
+    "excerpt": "Cardinal tetras come from the soft, acidic blackwater of the Rio Negro and the clearer streams of the Orinoco, and they run warmer than neons. A tank for a school of 10 is a 20-gallon long at 73 to 81°F, cycled first and acidified after.",
     "date": "2026-09-09",
     "category": "Fish",
     "categories": [
@@ -12314,7 +12314,7 @@
       },
       {
         "q": "What temperature do cardinal tetras need?",
-        "a": "Aim for 77 to 82°F day to day, inside a tolerated 73 to 84°F. Cardinals tolerate water reaching 86°F in short spells, well past the roughly 77°F neons are comfortable with, which suits them to a warmer community tank."
+        "a": "Keep cardinals at 73 to 81°F and hold it steady. Keepers run them to 84°F, and in a 96-hour lab test small juveniles survived 88°F, so a warm summer day is not the danger; a failed heater in a cool room is, with deaths climbing below about 67°F. They run warmer than the roughly 77°F neons are comfortable with, which suits them to a warmer community tank."
       },
       {
         "q": "What water chemistry do cardinal tetras need?",
@@ -12356,7 +12356,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 5,
+    "sourceCount": 6,
     "headingCount": 12,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
@@ -13671,7 +13671,7 @@
     "image": "/assets/guides/chinchilla-legal.jpg",
     "imageAlt": "Pet chinchilla taking a dust bath",
     "emoji": "🐭",
-    "lastReviewed": "2026-10-02",
+    "lastReviewed": "2026-11-01",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -14073,7 +14073,7 @@
     "image": "/assets/guides/coati-legal.jpg",
     "imageAlt": "White-nosed coati walking along a fallen trunk with its long banded tail held straight up and its pale snout toward the ground",
     "emoji": "🐾",
-    "lastReviewed": "2026-10-12",
+    "lastReviewed": "2026-11-01",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -14147,7 +14147,7 @@
     "image": "/assets/guides/cobra-legal.jpg",
     "imageAlt": "Spectacled cobra with its hood spread on dry cracked ground",
     "emoji": "🐍",
-    "lastReviewed": "2026-10-16",
+    "lastReviewed": "2026-11-01",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -15055,7 +15055,7 @@
     "image": "/assets/guides/cockatoo-legal.jpg",
     "imageAlt": "Umbrella cockatoo perched calmly on a natural wood stand",
     "emoji": "🦜",
-    "lastReviewed": "2026-10-08",
+    "lastReviewed": "2026-11-01",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -15254,7 +15254,7 @@
     "image": "/assets/guides/conformation-breeding-laws.jpg",
     "imageAlt": "Gavel beside a flat-faced dog and a folded-ear cat representing breeding conformation law",
     "emoji": "⚖️",
-    "lastReviewed": "2026-09-16",
+    "lastReviewed": "2026-11-01",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -16179,7 +16179,7 @@
     "image": "/assets/guides/corn-snake-legal.jpg",
     "imageAlt": "Corn snake with its distinctive orange and black blotched pattern",
     "emoji": "🐍",
-    "lastReviewed": "2026-10-02",
+    "lastReviewed": "2026-11-01",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -16463,7 +16463,7 @@
       },
       {
         "q": "What prevents barbel erosion?",
-        "a": "Keeping the bottom clean. Regular substrate vacuuming, low nitrate, no uneaten food left to rot. Sharp substrate is not ideal and is a secondary factor next to what is living in a dirty one."
+        "a": "Keeping the bottom clean. Regular substrate vacuuming, low nitrate, no uneaten food left to rot. Whether sharp grains or a dirty bed does more of the damage is still unsettled."
       },
       {
         "q": "How many corydoras should I keep?",
@@ -16662,7 +16662,7 @@
       },
       {
         "q": "Can barbel erosion be treated at home?",
-        "a": "Yes, if it's caught reasonably early. Move to soft sand, do a significant water change, and hold nitrates under 20 ppm from there on. Barbels can regrow over 4 to 8 weeks once conditions improve. Untreated, it can progress to red blotch disease."
+        "a": "Yes, if it's caught reasonably early. Move to soft sand, do a significant water change, and hold nitrates under 20 ppm from there on. Barbels can regrow once conditions improve. Untreated, it can progress to red blotch disease."
       },
       {
         "q": "What is red blotch disease?",
@@ -16798,7 +16798,7 @@
     "image": "/assets/guides/cougar-legal.jpg",
     "imageAlt": "Cougar crouched on a rocky mountain slope with its tawny coat against the gray stone",
     "emoji": "🐆",
-    "lastReviewed": "2026-10-16",
+    "lastReviewed": "2026-11-01",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -17269,7 +17269,7 @@
     "image": "/assets/guides/crested-gecko-legal.jpg",
     "imageAlt": "Crested gecko gripping a branch, showing the eyelash crests it is named for",
     "emoji": "🦎",
-    "lastReviewed": "2026-10-02",
+    "lastReviewed": "2026-11-01",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -17948,7 +17948,7 @@
     "image": "/assets/guides/degu-legal.jpg",
     "imageAlt": "Degu sitting on a wooden ledge holding forage in its forepaws",
     "emoji": "🐹",
-    "lastReviewed": "2026-10-02",
+    "lastReviewed": "2026-11-01",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -18342,7 +18342,7 @@
     "title": "Discus Aren't Handled, But They Are Surprisingly Social for a Cichlid",
     "seoTitle": "Discus Behavior: Social Life & Stress Triggers",
     "seoDescription": "Discus behavior guide: why they need a real group, stress triggers, acclimation, sexing, and tankmate compatibility, from real aquarium sources.",
-    "lastUpdated": "2026-10-31",
+    "lastUpdated": "2026-11-01",
     "noIndex": false,
     "excerpt": "Discus aren't a hands-on pet, but there's an important behavioral fact to understand before stocking a tank with them: unlike most cichlids, which pair off and defend territory, this one wants company.",
     "date": "2026-09-07",
@@ -18385,7 +18385,7 @@
       },
       {
         "q": "Can discus live with neon tetras?",
-        "a": "Not well, long term, and this one is debated. Discus need sustained 82 to 86°F water, and several dedicated discus care guides either specifically recommend against neon tetras or simply don't list them as compatible, favoring cardinal tetras instead, though at least one general fish-store care guide does list neons as compatible. Cardinal tetras tolerate the warmth more reliably and are the safer, more commonly recommended choice."
+        "a": "Not well, long term, and this one is debated. Discus need sustained 79 to 86°F water, and several dedicated discus care guides either specifically recommend against neon tetras or simply don't list them as compatible, favoring cardinal tetras instead, though at least one general fish-store care guide does list neons as compatible. Neons are kept at 70 to 77°F, which never reaches discus water. Cardinal tetras are kept at 73 to 81°F, so a tank shared with discus runs at 79 to 81°F, where the two ranges overlap, and they are the safer, more commonly recommended choice."
       }
     ],
     "relatedProducts": [],
@@ -18406,7 +18406,7 @@
     "title": "Common Discus Health Issues (And What Actually Prevents Them)",
     "seoTitle": "Discus Health Issues: Signs & Causes",
     "seoDescription": "Discus health guide: ich, hole-in-the-head disease, flukes, and fin rot, with symptoms, treatment, and what the research actually says.",
-    "lastUpdated": "2026-09-25",
+    "lastUpdated": "2026-11-01",
     "noIndex": false,
     "excerpt": "Discus have a real reputation for being delicate, and most of what backs that up traces to water quality and stress, just with a narrower margin for error than most fish.",
     "date": "2026-09-08",
@@ -18445,7 +18445,7 @@
       },
       {
         "q": "How do you treat ich in discus?",
-        "a": "Quarantine and heat. Most ich strains cannot survive above 86°F, the top of the 82 to 86°F range discus already live in, and discus-specific protocols take the quarantine tank further, to around 90°F. Daily water changes and a copper or formalin-based treatment during quarantine round out the protocol."
+        "a": "Quarantine and heat. Most ich strains cannot survive above 86°F, the top of the 79 to 86°F range discus already live in, and discus-specific protocols take the quarantine tank further, to around 90°F. Daily water changes and a copper or formalin-based treatment during quarantine round out the protocol."
       },
       {
         "q": "What are flukes, and are they a real risk for discus?",
@@ -18473,7 +18473,7 @@
     "slug": "discus-tank-setup-guide",
     "title": "Discus Tank Setup: Why the Water-Change Routine Matters More Than the Gallon Number",
     "seoTitle": "Discus Tank Setup Guide",
-    "seoDescription": "Discus tank setup guide: tank size, 82-86°F temperature, soft acidic water, filtration choices, substrate, and the water-change routine that matters most.",
+    "seoDescription": "Discus tank setup guide: tank size, 79-86°F temperature, soft acidic water, filtration choices, substrate, and the water-change routine that matters most.",
     "lastUpdated": "2026-11-01",
     "noIndex": false,
     "excerpt": "Discus tolerate a narrower range of water conditions than most community fish, and the tank size number matters less than most people expect, the water-change routine is what separates a discus tank that works from one that doesn't.",
@@ -18506,7 +18506,7 @@
       },
       {
         "q": "What temperature do discus need?",
-        "a": "82 to 86°F, warmer than nearly every other common community fish, warm enough that it narrows the tankmate list. Wild Heckel discus take water closer to 90°F, but 82 to 86°F is the standard target for captive-bred fish."
+        "a": "79 to 86°F, warmer than nearly every other common community fish, warm enough that it narrows the tankmate list. Wild Heckel discus take water closer to 90°F, but 79 to 86°F is the keeping range for captive-bred fish. Hold it steady anywhere inside that range."
       },
       {
         "q": "What water chemistry do discus need?",
@@ -19037,7 +19037,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 3,
+    "sourceCount": 4,
     "headingCount": 8,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
@@ -19226,7 +19226,7 @@
     "faqs": [
       {
         "q": "What size tank do ember tetras need?",
-        "a": "A 10-gallon tank for a school of 10, on a base of roughly 18 x 12 inches (45 x 30 cm) or the equivalent. A 5-gallon only works with a smaller school, and 10 or more is the group to aim for."
+        "a": "A 10-gallon tank for a school of 10, on a base of roughly 18 x 12 inches (45 x 30 cm) or the equivalent. Ten or more is the group to aim for."
       },
       {
         "q": "What temperature do ember tetras need?",
@@ -19239,10 +19239,6 @@
       {
         "q": "Do ember tetras need a planted tank?",
         "a": "Yes. Ember tetras are best kept in a heavily planted tank over a dark substrate, with floating plants as a useful addition and filtration kept gentle."
-      },
-      {
-        "q": "Can ember tetras live in a 5-gallon tank?",
-        "a": "Only with a smaller school. A 5-gallon nano is sometimes suggested for a fish this small, but the group of 10 the species is kept in needs 10 gallons on an 18 x 12 inch base."
       },
       {
         "q": "Do ember tetras need a filter?",
@@ -19649,7 +19645,7 @@
     "image": "/assets/guides/emperor-scorpion-legal.jpg",
     "imageAlt": "Emperor scorpion on bark chips with its heavy granular pincers forward and tail curled over its back",
     "emoji": "🦂",
-    "lastReviewed": "2026-10-02",
+    "lastReviewed": "2026-11-01",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -19801,7 +19797,7 @@
     "title": "The Pet Bans That Are Real, and the Ones That Aren't",
     "seoTitle": "Exotic Pet Laws Guide: Every Species We Cover",
     "seoDescription": "No federal law decides exotic pet ownership, states do. This hub indexes every species legal guide, plus a state-by-state map across 50 states, DC and NYC.",
-    "lastUpdated": "2026-10-17",
+    "lastUpdated": "2026-11-01",
     "noIndex": false,
     "excerpt": "No federal law actually decides whether you can own most exotic pets, states and cities do. Here's what federal law really controls, how state law actually works, and a direct index of every species-specific legal guide.",
     "date": "2026-07-17",
@@ -19821,7 +19817,7 @@
     "image": "/assets/guides/exotic-pet-legal-hub.jpg",
     "imageAlt": "Gavel beside a variety of exotic pets representing US exotic pet law",
     "emoji": "⚖️",
-    "lastReviewed": "2026-10-17",
+    "lastReviewed": "2026-11-01",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -19868,7 +19864,7 @@
     "title": "The Federal Laws That Reach a Pet Owner",
     "seoTitle": "Federal Exotic Pet Laws: What Actually Applies",
     "seoDescription": "The six federal laws that touch exotic pets: the Lacey Act, injurious wildlife, CITES, the big cat bans, the FDA turtle rule and the Wild Bird Conservation Act.",
-    "lastUpdated": "2026-10-11",
+    "lastUpdated": "2026-11-01",
     "noIndex": false,
     "excerpt": "Six federal laws reach private exotic pet keeping in the US, and only one of them bans owning an animal. The rest decide what may cross a border, what may cross a state line, and who may sell it.",
     "date": "2026-09-12",
@@ -19889,7 +19885,7 @@
     "image": "/assets/guides/federal-exotic-pet-laws.jpg",
     "imageAlt": "Hatchling red-eared slider at the waterline on a wet rock",
     "emoji": "📜",
-    "lastReviewed": "2026-09-12",
+    "lastReviewed": "2026-11-01",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -20017,7 +20013,7 @@
     "image": "/assets/guides/fennec-fox-legal.jpg",
     "imageAlt": "Fennec fox standing on a pale sand dune at sunset with its oversized ears backlit",
     "emoji": "🦊",
-    "lastReviewed": "2026-10-08",
+    "lastReviewed": "2026-11-01",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -20488,7 +20484,7 @@
     "image": "/assets/guides/ferret-legal.jpg",
     "imageAlt": "Pet ferret peeking out of a cardboard box",
     "emoji": "🦡",
-    "lastReviewed": "2026-10-02",
+    "lastReviewed": "2026-11-01",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -21902,7 +21898,7 @@
     "image": "/assets/guides/flying-squirrel-legal.jpg",
     "imageAlt": "Southern flying squirrel clinging to bark at night, its large dark eyes and outstretched patagium skin fold visible",
     "emoji": "🐿️",
-    "lastReviewed": "2026-10-08",
+    "lastReviewed": "2026-11-01",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -23136,7 +23132,7 @@
     "title": "Is It Legal to Own a Garter Snake? State-by-State Guide",
     "seoTitle": "Is a Garter Snake Legal in Your State? Full Guide",
     "seoDescription": "Garter snakes are legal in most states but regulated as wildlife. New York reaches even pet-store bred snakes, and Hawaii bans them outright.",
-    "lastUpdated": "2026-10-08",
+    "lastUpdated": "2026-11-01",
     "noIndex": false,
     "excerpt": "Garter snakes are native almost everywhere, so most states regulate them as wildlife first and a pet second, often more strictly than an imported colubrid. New York is the standout: state guidance says its native-species law doesn't differentiate between wild-caught and captive-bred animals, so even a pet-store garter snake has no lawful route there, because no pet permit exists.",
     "date": "2026-08-29",
@@ -23156,7 +23152,7 @@
     "image": "/assets/guides/garter-snake-legal.jpg",
     "imageAlt": "Common garter snake moving through grass",
     "emoji": "🐍",
-    "lastReviewed": "2026-10-08",
+    "lastReviewed": "2026-11-01",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -23621,7 +23617,7 @@
     "image": "/assets/guides/gerbil-legal.jpg",
     "imageAlt": "Mongolian gerbil standing upright on deep bedding",
     "emoji": "🐹",
-    "lastReviewed": "2026-10-02",
+    "lastReviewed": "2026-11-01",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -24713,7 +24709,7 @@
     "image": "/assets/guides/giant-millipede-legal.jpg",
     "imageAlt": "Giant African millipede curled on bark",
     "emoji": "🐛",
-    "lastReviewed": "2026-10-02",
+    "lastReviewed": "2026-11-01",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -25506,7 +25502,7 @@
     "image": "/assets/guides/gray-squirrel-legal.jpg",
     "imageAlt": "Eastern gray squirrel sitting on a branch holding an acorn among autumn leaves",
     "emoji": "🐿️",
-    "lastReviewed": "2026-10-13",
+    "lastReviewed": "2026-11-01",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -25561,7 +25557,7 @@
     "title": "Are Green Anacondas Legal? The Heaviest Snake, State by State",
     "seoTitle": "Are Green Anacondas Legal? 11 Bans, 10 Permits by State",
     "seoDescription": "Green anaconda laws by state: 11 bans, 10 permit states, 24 with no rule. The 2012 yellow and 2015 green listings, Ohio's 12-foot rule, Delaware's 5 feet.",
-    "lastUpdated": "2026-10-17",
+    "lastUpdated": "2026-11-01",
     "noIndex": false,
     "excerpt": "The green anaconda was listed as federal injurious wildlife in 2015, three years after its yellow cousin, and most state rules that reach one reach the whole genus. The result is a row that matches the reticulated python's in fifty cells: 11 bans, 10 permits, four conditions, Arkansas's closed list, two states that cannot decide, and 24 jurisdictions with no rule for the heaviest snake in the world.",
     "date": "2026-10-17",
@@ -25585,7 +25581,7 @@
     "image": "/assets/guides/green-anaconda-legal.jpg",
     "imageAlt": "Green anaconda half submerged in dark swamp water with its head and olive back above the surface",
     "emoji": "🐍",
-    "lastReviewed": "2026-10-17",
+    "lastReviewed": "2026-11-01",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -25611,7 +25607,7 @@
       },
       {
         "q": "Can you own a green anaconda in Colorado?",
-        "a": "The rule does not say. Appendix A of Chapter W-7 clears Boidae, but only species 'native only to the tropical and subtropical region', which Chapter W-11 fixes at 26 degrees north to 26 degrees south. CPW has ruled the reticulated python inside that band and has not ruled on the green anaconda, whose range is centered on the Amazon and Orinoco basins. The map records Colorado as unclear until CPW rules, and CPW takes questions on unlisted species by email."
+        "a": "The rule does not say. Appendix A of Chapter W-7 clears Boidae, but only species 'native only to the tropical and subtropical region', which Chapter W-11 fixes at 26 degrees north to 26 degrees south. The reticulated python's range sits inside that band. The green anaconda's is centered on the Amazon and Orinoco basins, and CPW, which no longer publishes species determinations, never ruled on it. The map records Colorado as unclear until CPW answers, and CPW takes questions on unlisted species by email."
       },
       {
         "q": "Is a green anaconda legal in Arkansas?",
@@ -26008,7 +26004,7 @@
     "image": "/assets/guides/green-anole-legal.jpg",
     "imageAlt": "Green anole with extended pink dewlap perched on a leafy branch",
     "emoji": "🦎",
-    "lastReviewed": "2026-10-02",
+    "lastReviewed": "2026-11-01",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -26471,7 +26467,7 @@
     "image": "/assets/guides/green-iguana-legal.jpg",
     "imageAlt": "Adult green iguana on a branch, showing its dewlap and dorsal crest",
     "emoji": "🦎",
-    "lastReviewed": "2026-10-02",
+    "lastReviewed": "2026-11-01",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -27061,7 +27057,7 @@
     "image": "/assets/guides/guinea-pig-legal.jpg",
     "imageAlt": "Two guinea pigs together on a bed of timothy hay",
     "emoji": "🐹",
-    "lastReviewed": "2026-10-03",
+    "lastReviewed": "2026-11-01",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -27344,7 +27340,7 @@
       },
       {
         "q": "What sex ratio should I keep?",
-        "a": "Several females to each male, and more is better, with two to three per male as the minimum. Keeping males only is the other workable answer and avoids the problem entirely, along with the endless fry."
+        "a": "Several females to each male, and more is better. Keeping males only is the other workable answer and avoids the problem entirely, along with the endless fry."
       },
       {
         "q": "Why do people end up with too many males?",
@@ -27421,11 +27417,11 @@
       },
       {
         "q": "Why has my guppy stopped eating?",
-        "a": "For a female close to giving birth, this is often completely normal, reduced stomach capacity and a shift in focus toward finding a place to deliver. Stress from a new tank, tank cleaning or too many males chasing the females is a common cause, along with poor water quality, cold water, water outside the 72 to 82°F range, and illness. Test the water first."
+        "a": "For a female close to giving birth, this is often completely normal, reduced stomach capacity and a shift in focus toward finding a place to deliver. Stress from a new tank, tank cleaning or too many males chasing the females is a common cause, along with poor water quality, cold water, water outside the 64 to 82°F range, and illness. Test the water first."
       },
       {
         "q": "How long can a guppy safely go without eating?",
-        "a": "There's no agreed number, but decreased appetite that runs past one day is a reason to contact a vet. Many hobbyists are looser, treating a skipped meal, or a full day, as not inherently concerning while the fish otherwise looks and behaves normally."
+        "a": "There's no agreed number. A skipped meal, or even a full day, is not inherently concerning while the fish otherwise looks and behaves normally. If a guppy keeps refusing food and the water tests clean, call a vet."
       },
       {
         "q": "What symptoms alongside not eating mean trouble?",
@@ -27485,7 +27481,7 @@
       },
       {
         "q": "How do I manage guppy population if I don't want constant breeding?",
-        "a": "Keep males and females in separate tanks to avoid breeding entirely, or keep males only for a colorful, breeding-free tank. If you do want controlled breeding, keep several females to each male, roughly two or three per male, so no single female takes all the mating attempts."
+        "a": "Keep males and females in separate tanks to avoid breeding entirely, or keep males only for a colorful, breeding-free tank. If you do want controlled breeding, keep several females to each male, so no single female takes all the mating attempts."
       },
       {
         "q": "How do you tell a male guppy from a female?",
@@ -27553,7 +27549,7 @@
       },
       {
         "q": "What is velvet and is it contagious?",
-        "a": "Small golden or rust-colored spots or a fine dusty coat, often with clamped fins and scratching against decor. Copper-based medication is the standard treatment, a vet may use chloroquine instead, and a recheck after 7 to 10 days may be needed. It spreads between fish, so quarantine affected individuals if possible. Velvet is a parasite, and raising the temperature slightly and dimming the lights during treatment is common practice."
+        "a": "Small golden or rust-colored spots or a fine dusty coat, often with clamped fins and scratching against decor. Copper-based medication is the standard treatment, a vet may use chloroquine instead, and a recheck after 7 to 10 days may be needed. It spreads between fish, so quarantine affected individuals if possible. Velvet is a parasite, and a common keeper step during treatment is to raise the temperature slightly and dim the lights."
       },
       {
         "q": "What is dropsy and can it be treated?",
@@ -27575,7 +27571,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 5,
+    "sourceCount": 7,
     "headingCount": 10,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
@@ -27618,7 +27614,7 @@
       },
       {
         "q": "What temperature do guppies need?",
-        "a": "A tropical species, comfortable from 72 to 82°F, with 82°F as the ceiling. Unless the room stays warm year-round, run a heater sized to the tank. Aim for 76 to 78°F as the target, and budget roughly 3 to 5 watts per gallon, so 25 to 50 watts on a 10-gallon."
+        "a": "A tropical species, comfortable from 64 to 82°F, with 82°F as the ceiling. Unless the room stays warm year-round, run a heater sized to the tank, about 50 watts for a 10-gallon. Hold the temperature steady anywhere inside that range."
       },
       {
         "q": "What water chemistry do guppies need?",
@@ -28207,7 +28203,7 @@
     "image": "/assets/guides/hamster-legal.jpg",
     "imageAlt": "Golden Syrian hamster sitting upright on pale bedding with its front paws held together",
     "emoji": "🐹",
-    "lastReviewed": "2026-10-02",
+    "lastReviewed": "2026-11-01",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -28810,7 +28806,7 @@
     "image": "/assets/guides/hedgehog-legal.jpg",
     "imageAlt": "African pygmy hedgehog walking toward the camera on a pale surface",
     "emoji": "🦔",
-    "lastReviewed": "2026-10-02",
+    "lastReviewed": "2026-11-01",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -29822,7 +29818,7 @@
     "title": "Is It Legal to Own a Hognose Snake? State-by-State Guide",
     "seoTitle": "Is a Hognose Snake Legal in Your State? Full Guide",
     "seoDescription": "Hognose snakes clear venomous-reptile laws almost everywhere. Six places ban them, Georgia and New York City among them, and Colorado's 2026 rule splits them.",
-    "lastUpdated": "2026-10-15",
+    "lastUpdated": "2026-11-01",
     "noIndex": false,
     "excerpt": "Hognose snakes are mildly rear-fanged, and New York City is the one place that regulates them for it. The restrictions to watch for are native-wildlife rules: Georgia, West Virginia and Kansas bar the hognose as their own wildlife, whatever the animal's origin.",
     "date": "2026-07-22",
@@ -29842,7 +29838,7 @@
     "image": "/assets/guides/hognose-snake-legal.jpg",
     "imageAlt": "Hognose snake with its distinctive upturned snout",
     "emoji": "🐍",
-    "lastReviewed": "2026-10-02",
+    "lastReviewed": "2026-11-01",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -31252,7 +31248,7 @@
     "image": "/assets/guides/jacksons-chameleon-legal.jpg",
     "imageAlt": "Male Jackson's chameleon in profile on a branch, all three horns visible",
     "emoji": "🦎",
-    "lastReviewed": "2026-10-02",
+    "lastReviewed": "2026-11-01",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -31844,7 +31840,7 @@
     "title": "Is It Legal to Own a California Kingsnake? State-by-State Guide",
     "seoTitle": "Is a California Kingsnake Legal in Your State? Full Guide",
     "seoDescription": "California kingsnakes are legal almost everywhere, but Hawaii and West Virginia ban them, Delaware and New Jersey require permits, and Oregon judges by pattern.",
-    "lastUpdated": "2026-10-02",
+    "lastUpdated": "2026-11-01",
     "noIndex": false,
     "excerpt": "California kingsnakes are legal to own almost everywhere in the US, but Oregon and Nevada both write their rules around how the snake looks rather than what species it is. Hawaii bans every snake outright, West Virginia bans the genus as its own native wildlife, and Delaware and New Jersey require a permit.",
     "date": "2026-08-29",
@@ -31864,7 +31860,7 @@
     "image": "/assets/guides/kingsnake-legal.jpg",
     "imageAlt": "California kingsnake coiled in its enclosure, showing its banded pattern",
     "emoji": "🐍",
-    "lastReviewed": "2026-10-02",
+    "lastReviewed": "2026-11-01",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -31919,7 +31915,7 @@
     "image": "/assets/guides/kinkajou-legal.jpg",
     "imageAlt": "Kinkajou clinging to a branch at night with its prehensile tail wrapped around the limb and its large dark eyes toward the camera",
     "emoji": "🐾",
-    "lastReviewed": "2026-10-12",
+    "lastReviewed": "2026-11-01",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -33440,7 +33436,7 @@
     "image": "/assets/guides/leopard-gecko-legal.jpg",
     "imageAlt": "Leopard gecko standing on sand-colored substrate, showing its spotted pattern",
     "emoji": "🦎",
-    "lastReviewed": "2026-10-02",
+    "lastReviewed": "2026-11-01",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -33707,7 +33703,7 @@
     "image": "/assets/guides/lion-legal.jpg",
     "imageAlt": "Maned male lion lying on a grassy savanna rise with its head raised and the plain falling away behind it",
     "emoji": "🦁",
-    "lastReviewed": "2026-10-16",
+    "lastReviewed": "2026-11-01",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -34704,7 +34700,7 @@
     "image": "/assets/guides/hissing-cockroach-legal.jpg",
     "imageAlt": "Madagascar hissing cockroach on bark, its glossy segmented back lit from one side",
     "emoji": "🪳",
-    "lastReviewed": "2026-10-02",
+    "lastReviewed": "2026-11-01",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -34877,7 +34873,7 @@
     "image": "/assets/guides/marmoset-legal.jpg",
     "imageAlt": "Common marmoset clinging to a tree trunk with its white ear tufts and banded tail in view",
     "emoji": "🐒",
-    "lastReviewed": "2026-10-15",
+    "lastReviewed": "2026-11-01",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -35335,7 +35331,7 @@
     "image": "/assets/guides/milk-snake-legal.jpg",
     "imageAlt": "Milk snake showing its red, black, and white banded pattern",
     "emoji": "🐍",
-    "lastReviewed": "2026-10-02",
+    "lastReviewed": "2026-11-01",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -35621,7 +35617,7 @@
       },
       {
         "q": "What sex ratio should I keep?",
-        "a": "At least two to three females per male, and more females is better. An all-male group is the other clean answer, though male sailfin mollies can be aggressive toward each other, so it needs space."
+        "a": "Several females per male, and more females is better. An all-male group is the other clean answer, though male sailfin mollies can be aggressive toward each other, so it needs space."
       },
       {
         "q": "Why does grazing matter so much for mollies?",
@@ -35710,7 +35706,7 @@
       },
       {
         "q": "Can I overfeed a molly?",
-        "a": "Yes. Uneaten food rotting in the tank fouls water quality, which then opens the door to most other molly health issues. It is an easier mistake to make than underfeeding, and overfeeding can lead to constipation and swim bladder problems."
+        "a": "Yes. Uneaten food rotting in the tank fouls water quality, which then opens the door to most other molly health issues. It is an easier mistake to make than underfeeding, and keepers commonly link overfeeding to constipation and swim bladder problems."
       }
     ],
     "relatedProducts": [],
@@ -35770,7 +35766,7 @@
       },
       {
         "q": "How do I manage molly population if I don't want constant breeding?",
-        "a": "Keep males and females in separate tanks to avoid breeding entirely, or keep a males-only group for a colorful, breeding-free tank, which needs space and numbers rather than a trio because males squabble among themselves. If you do want controlled breeding, a ratio of roughly one male to two or three females cuts down on females getting chased and stressed by mating attempts."
+        "a": "Keep males and females in separate tanks to avoid breeding entirely, or keep a males-only group for a colorful, breeding-free tank, which needs space and numbers rather than a trio because males squabble among themselves. If you do want controlled breeding, keeping several females per male cuts down on females getting chased and stressed by mating attempts."
       },
       {
         "q": "What's the most common molly-keeping mistake?",
@@ -35862,7 +35858,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4,
+    "sourceCount": 5,
     "headingCount": 10,
     "ledeMatchesExcerpt": true,
     "imageWidth": 1168,
@@ -35906,7 +35902,7 @@
       },
       {
         "q": "What temperature do mollies need?",
-        "a": "Tropical, 72 to 82°F for short-finned mollies, with sailfins listed nearer 70 to 79°F. Steadiness beats precision here: keep swings under about 2°F in a day. A submersible heater is necessary unless the room stays warm year-round."
+        "a": "Tropical, 70 to 82°F for short-finned mollies, with sailfins listed nearer 70 to 79°F. Steadiness beats precision here: keep swings under about 2°F in a day. A submersible heater is necessary unless the room stays warm year-round."
       },
       {
         "q": "What water chemistry do mollies need?",
@@ -37471,7 +37467,7 @@
     "title": "Is It Legal to Own a Nile Monitor? State-by-State Guide",
     "seoTitle": "Are Nile Monitors Legal? Banned in 9 of 52 Places",
     "seoDescription": "Nile monitors are banned in 9 of 52 US jurisdictions and need a permit in 8 more. Florida, Louisiana and New York name the species directly in their rules.",
-    "lastUpdated": "2026-10-02",
+    "lastUpdated": "2026-11-01",
     "noIndex": false,
     "excerpt": "The Nile monitor is the only monitor named on Florida's prohibited list, and one of very few reptiles that several states bar by name rather than by family. Nine jurisdictions ban it and eight more require a permit.",
     "date": "2026-09-14",
@@ -37491,7 +37487,7 @@
     "image": "/assets/guides/nile-monitor-legal.jpg",
     "imageAlt": "Nile monitor at the water's edge with its tongue extended",
     "emoji": "🦎",
-    "lastReviewed": "2026-10-02",
+    "lastReviewed": "2026-11-01",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -39254,7 +39250,7 @@
     "image": "/assets/guides/pet-monkey-legal-guide.jpg",
     "imageAlt": "Capuchin monkey with a pale face and dark cap sitting on a branch and looking at the camera",
     "emoji": "🐒",
-    "lastReviewed": "2026-10-14",
+    "lastReviewed": "2026-11-01",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -39477,7 +39473,7 @@
       },
       {
         "q": "What sex ratio should I keep?",
-        "a": "At least two to three females per male, and more females is better. Platy males can be relentless and the same dynamic applies, and a male-heavy tank produces females that spend their time avoiding rather than feeding."
+        "a": "Several females per male, and more females is better. Platy males can be relentless and the same dynamic applies, and a male-heavy tank produces females that spend their time avoiding rather than feeding."
       },
       {
         "q": "Are platies that hardy?",
@@ -39558,7 +39554,7 @@
       },
       {
         "q": "Can platies overeat?",
-        "a": "Easily, and it's a far more common real problem than underfeeding. Platies will keep eating past the point of being full, and overfeeding can lead to constipation and swim bladder problems. Watch for a long, stringy trail of waste hanging from the fish after a meal, which keepers often read as a sign the portion was too large. Uneaten food rotting in the tank also fouls water quality fast in a tank this small, which opens the door to several other health issues."
+        "a": "Easily, and it's a far more common real problem than underfeeding. Platies will keep eating past the point of being full, and keepers commonly link overfeeding to constipation and swim bladder problems. Watch for a long, stringy trail of waste hanging from the fish after a meal, which keepers often read as a sign the portion was too large. Uneaten food rotting in the tank also fouls water quality fast in a tank this small, which opens the door to several other health issues."
       },
       {
         "q": "Why has my platy stopped eating?",
@@ -39622,7 +39618,7 @@
       },
       {
         "q": "How do I manage platy population if I don't want constant breeding?",
-        "a": "Keep males and females in separate tanks to avoid breeding entirely, or keep a males-only group for a colorful, breeding-free tank. If you do want controlled breeding, a ratio of roughly two to three females per male cuts down on how much the females get chased and stressed by mating attempts."
+        "a": "Keep males and females in separate tanks to avoid breeding entirely, or keep a males-only group for a colorful, breeding-free tank. If you do want controlled breeding, keeping several females per male cuts down on how much the females get chased and stressed by mating attempts."
       },
       {
         "q": "What's the most common platy-keeping mistake?",
@@ -39674,7 +39670,7 @@
     "faqs": [
       {
         "q": "What is ich and how do you treat it in platies?",
-        "a": "White spots like grains of salt over the body and fins, from the protozoan parasite Ichthyophthirius multifiliis. Warm the tank slowly to 79°F, the top of a platy's range, run an air stone, then treat with aquarium salt or an ich medication such as malachite green or formalin, and fix the water quality that let it in."
+        "a": "White spots like grains of salt over the body and fins, from the protozoan parasite Ichthyophthirius multifiliis. Warm the tank slowly to 77°F, the top of a platy's range, run an air stone, then treat with aquarium salt or an ich medication such as malachite green or formalin, and fix the water quality that let it in."
       },
       {
         "q": "What is dropsy and can it be treated?",
@@ -39705,7 +39701,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4,
+    "sourceCount": 5,
     "headingCount": 9,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
@@ -39801,7 +39797,7 @@
       },
       {
         "q": "What temperature do platies need?",
-        "a": "68 to 79°F, with the mid-70s the usual target. Hold it steady rather than chasing a number: swings over about 2°F in a day are the problem. Variatus-line platies handle the cool end better than the southern platy does, though a heater is still the safer default unless the room stays warm all year."
+        "a": "68 to 77°F. Hold it steady anywhere inside that range rather than chasing a number: swings over about 2°F in a day are the problem. Variatus-line platies handle the cool end better than the southern platy does, though a heater is still the safer default unless the room stays warm all year."
       },
       {
         "q": "What water chemistry do platies need?",
@@ -39992,7 +39988,7 @@
     "image": "/assets/guides/prairie-dog-legal.jpg",
     "imageAlt": "Black-tailed prairie dog standing upright at a burrow entrance on short-grass prairie",
     "emoji": "🐾",
-    "lastReviewed": "2026-10-02",
+    "lastReviewed": "2026-11-01",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -40860,7 +40856,7 @@
     "image": "/assets/guides/quaker-parakeet-legal.jpg",
     "imageAlt": "Green and gray quaker parakeet perched on a branch with a stick nest structure behind it",
     "emoji": "🦜",
-    "lastReviewed": "2026-10-08",
+    "lastReviewed": "2026-11-01",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -41462,7 +41458,7 @@
     "image": "/assets/guides/rabbit-legal.jpg",
     "imageAlt": "Rabbit sitting alert indoors with its ears raised",
     "emoji": "🐰",
-    "lastReviewed": "2026-10-02",
+    "lastReviewed": "2026-11-01",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -41580,7 +41576,7 @@
     "image": "/assets/guides/raccoon-legal.jpg",
     "imageAlt": "Raccoon standing on a fallen log with its black mask and ringed tail in clear view",
     "emoji": "🦝",
-    "lastReviewed": "2026-10-10",
+    "lastReviewed": "2026-11-01",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -42102,7 +42098,7 @@
     "title": "Are Rattlesnakes Legal? A Native Snake Answered Twice",
     "seoTitle": "Are Rattlesnakes Legal? 17 Bans, 14 Permits, 14 Conditions",
     "seoDescription": "Rattlesnake laws by state: 17 bans, 14 permit states, 14 conditional. Why native-take rules change the answer in Texas, California, Arizona, Georgia, Florida.",
-    "lastUpdated": "2026-10-16",
+    "lastUpdated": "2026-11-01",
     "noIndex": false,
     "excerpt": "No animal on the map has a more varied row than the rattlesnake: 17 bans, 14 permits, 14 conditions, one unclear, one restricted and five states with no rule. The venomous-reptile clause answers it once, and then the native-take rules answer it again, nearly everywhere, and usually differently.",
     "date": "2026-10-16",
@@ -42124,7 +42120,7 @@
     "image": "/assets/guides/rattlesnake-legal.jpg",
     "imageAlt": "Timber rattlesnake coiled on fallen autumn leaves with its rattle raised",
     "emoji": "🐍",
-    "lastReviewed": "2026-10-16",
+    "lastReviewed": "2026-11-01",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -42545,7 +42541,7 @@
     "image": "/assets/guides/red-eared-slider-legal.jpg",
     "imageAlt": "Red-eared slider turtle basking on a rock",
     "emoji": "🐢",
-    "lastReviewed": "2026-10-08",
+    "lastReviewed": "2026-11-01",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -43043,8 +43039,8 @@
     "slug": "red-footed-tortoise-legal-guide",
     "title": "Is It Legal to Own a Red-Footed Tortoise? State Guide",
     "seoTitle": "Are Red-Footed Tortoises Legal? No State Bans Them",
-    "seoDescription": "Red-footed tortoises are banned nowhere in the US. Four jurisdictions need a permit, five attach conditions, and New York City draws its line by shell size.",
-    "lastUpdated": "2026-10-02",
+    "seoDescription": "Red-footed tortoises are banned nowhere in the US. Four jurisdictions need a permit, six attach conditions, and New York City draws its line by shell size.",
+    "lastUpdated": "2026-11-01",
     "noIndex": false,
     "excerpt": "No US jurisdiction bans the red-footed tortoise outright, which makes it unusual among the reptiles on this map. What it gets instead is conditions, and the most consequential one is a rule about shell size that has nothing to do with the species.",
     "date": "2026-09-11",
@@ -43064,13 +43060,13 @@
     "image": "/assets/guides/red-footed-tortoise-legal.jpg",
     "imageAlt": "Red-footed tortoise walking on a damp forest floor, red leg scales visible",
     "emoji": "🐢",
-    "lastReviewed": "2026-10-02",
+    "lastReviewed": "2026-11-01",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
       {
         "q": "Is the red-footed tortoise banned anywhere in the US?",
-        "a": "No. It is the rare reptile on this map with no outright ban in any of the 52 jurisdictions. New Jersey, New Mexico, Delaware and West Virginia require a permit, and Massachusetts, Hawaii, Vermont, Minnesota and New York City attach conditions."
+        "a": "No. It is the rare reptile on this map with no outright ban in any of the 52 jurisdictions. New Jersey, New Mexico, Delaware and West Virginia require a permit, and Massachusetts, Hawaii, Vermont, Maine, Minnesota and New York City attach conditions."
       },
       {
         "q": "Why does New York City regulate tortoises by size?",
@@ -43194,7 +43190,7 @@
     "image": "/assets/guides/red-fox-legal.jpg",
     "imageAlt": "Red fox standing in short grass with its white-tipped tail and black legs in clear view",
     "emoji": "🦊",
-    "lastReviewed": "2026-10-10",
+    "lastReviewed": "2026-11-01",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -43802,7 +43798,7 @@
     "title": "Are Reticulated Pythons Legal? The Longest Snake, State by State",
     "seoTitle": "Are Reticulated Pythons Legal? 11 Bans, 10 Permits by State",
     "seoDescription": "Reticulated python laws by state: 11 bans, 10 permit states, 25 with no rule. The 2015 injurious listing, Ohio's 12-foot line, Florida's history, Arkansas.",
-    "lastUpdated": "2026-10-17",
+    "lastUpdated": "2026-11-01",
     "noIndex": false,
     "excerpt": "The reticulated python has been federal injurious wildlife since 2015, and that listing bars import and little else. The state map is where the answer lives: 11 bans, 10 permits, four conditions, Arkansas's closed breeder list, Idaho's undefined word, and 25 jurisdictions with no rule for the longest snake in the world.",
     "date": "2026-10-17",
@@ -43825,7 +43821,7 @@
     "image": "/assets/guides/reticulated-python-legal.jpg",
     "imageAlt": "Reticulated python resting along a mossy log in dense jungle with its net pattern catching the light",
     "emoji": "🐍",
-    "lastReviewed": "2026-10-17",
+    "lastReviewed": "2026-11-01",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -43902,7 +43898,7 @@
     "image": "/assets/guides/ring-tailed-lemur-legal.jpg",
     "imageAlt": "Ring-tailed lemur sitting upright on a rock with its banded tail curled beside it and its orange eyes toward the camera",
     "emoji": "🐒",
-    "lastReviewed": "2026-10-14",
+    "lastReviewed": "2026-11-01",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -44290,7 +44286,7 @@
     "title": "Is It Legal to Own a Rosy Boa? State-by-State Guide",
     "seoTitle": "Is a Rosy Boa Legal in Your State? Full Guide",
     "seoDescription": "NYC's Boidae ban technically outlaws the 2-3 foot rosy boa on the same clause as the green anaconda. New Jersey needs a permit, Hawaii bans it.",
-    "lastUpdated": "2026-10-02",
+    "lastUpdated": "2026-11-01",
     "noIndex": false,
     "excerpt": "New York City's health code bans 'any member of the family Boidae' by name, and a rosy boa, a docile species of 24 to 36 inches, is technically a boid. It reads as banned in NYC on the exact same clause that catches the green anaconda. Everywhere else, it's one of the most broadly legal pet snakes around, with narrow exceptions in New Jersey, Colorado and Hawaii.",
     "date": "2026-08-29",
@@ -44310,7 +44306,7 @@
     "image": "/assets/guides/rosy-boa-legal.jpg",
     "imageAlt": "Rosy boa coiled on sand in its enclosure",
     "emoji": "🐍",
-    "lastReviewed": "2026-10-02",
+    "lastReviewed": "2026-11-01",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -44411,6 +44407,477 @@
     "ledeMatchesExcerpt": false,
     "imageWidth": 1200,
     "imageHeight": 896
+  },
+  {
+    "path": "/content/guides/rummy-nose-tetra-cost-guide.mdx",
+    "slug": "rummy-nose-tetra-cost-guide",
+    "title": "How Much Does Rummy-Nose Tetra Ownership Cost?",
+    "seoTitle": "Rummy-Nose Tetra Cost: $230 to $435 Setup, $45 to $80 Fish",
+    "seoDescription": "Rummy-nose tetra cost: $4 to $6.50 a fish, $45 to $80 for a school of 12, $230 to $435 for a 36-inch, 30 to 40 gallon setup, and the quarantine tank to add.",
+    "lastUpdated": "2026-11-01",
+    "noIndex": false,
+    "excerpt": "Rummy-nose tetras are bought as a school, and the school needs a tank at least 36 inches long. That tank and the spare one beside it for quarantine are where most of the money goes.",
+    "date": "2026-11-02",
+    "category": "Fish",
+    "categories": [
+      "Fish"
+    ],
+    "tags": [
+      "Rummy-Nose Tetra",
+      "Cost",
+      "Pet Ownership Cost",
+      "Tank Setup Cost",
+      "Care Tips",
+      "Fish Care"
+    ],
+    "readTime": 7,
+    "difficulty": "Intermediate",
+    "image": "/assets/images/rummy-nose-tetra-cost.jpg",
+    "imageAlt": "A school of rummy-nose tetras with red heads swimming in an aquarium",
+    "emoji": "🐠",
+    "lastReviewed": "2026-10-31",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "How much do rummy-nose tetras cost?",
+        "a": "About $4 to $6.50 a fish from online sellers before shipping, and a local store can charge closer to $9. Twelve fish come to $45 to $80 before shipping."
+      },
+      {
+        "q": "What does a rummy-nose tetra tank setup cost?",
+        "a": "Plan on $230 to $435 for a 36-inch, 30 to 40 gallon tank, a heater, a gentle filter, live plants, fine sand, a liquid test kit, water conditioner and the first micro pellets. A bare quarantine tank with its own heater and filter is extra."
+      },
+      {
+        "q": "What size tank do rummy-nose tetras need?",
+        "a": "One at least 36 inches (90 cm) long for a school of 10, which works out to a 30 gallon or a 40 gallon breeder. Length matters more than gallons for a fish that swims laps."
+      },
+      {
+        "q": "Do rummy-nose tetras need a heater?",
+        "a": "Yes. They are tropical fish that belong at 73 to 79°F (23 to 26°C), so the heater is a required purchase and stays set inside that range."
+      },
+      {
+        "q": "How long do rummy-nose tetras live?",
+        "a": "About 5 years in a well-kept tank, so a school bought today shares its tank and equipment for half a decade."
+      },
+      {
+        "q": "Do rummy-nose tetras need a quarantine tank?",
+        "a": "Yes. Every new batch spends at least 30 days in a bare tank with its own heater and sponge filter before it joins the school. Ich in newly shipped tropical fish often shows up 1 to 3 weeks after arrival, inside that window."
+      },
+      {
+        "q": "Are rummy-nose tetras wild-caught?",
+        "a": "Some still are. Brazil's Amazonas state shipped more than 7 million of them from 2006 to 2015, its third biggest ornamental fish export, and wild exports continue alongside fish bred in Asia."
+      },
+      {
+        "q": "Why do the rummy-noses in the shop have pale heads?",
+        "a": "Fish that arrived a day or two ago, or were just chased with a net, often lose the red for a while. Wait half an hour or come back another day; a school that stays pale is the one to leave."
+      }
+    ],
+    "relatedProducts": [
+      "tank-aqueon-40-breeder",
+      "submersible-aquarium-heater",
+      "sponge-filter",
+      "neon-tetra-food-hikari-micro-pellets",
+      "water-conditioner",
+      "water-test-kit"
+    ],
+    "factFile": false,
+    "animalDay": null,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 4,
+    "headingCount": 10,
+    "ledeMatchesExcerpt": false,
+    "imageWidth": 1168,
+    "imageHeight": 784
+  },
+  {
+    "path": "/content/guides/rummy-nose-tetra-enrichment-guide.mdx",
+    "slug": "rummy-nose-tetra-enrichment-guide",
+    "title": "Rummy-Nose Tetra Enrichment: The School Physicists Study",
+    "seoTitle": "Rummy-Nose Tetra Enrichment Guide",
+    "seoDescription": "Lab studies show why a school of 10 rummy-nose tetras holds its course, why it needs light to see by, and how wood and leaves suit this blackwater fish.",
+    "lastUpdated": "2026-11-01",
+    "noIndex": false,
+    "excerpt": "Rummy-nose tetras school so tightly that physics labs use them to study how a group moves as one. What those labs found about group size, the senses and light is a plan for the tank.",
+    "date": "2026-11-02",
+    "category": "Enrichment",
+    "categories": [
+      "Enrichment"
+    ],
+    "tags": [
+      "Rummy-Nose Tetra",
+      "Enrichment",
+      "Care Tips",
+      "Fish Enrichment",
+      "Fish Welfare",
+      "Tetras"
+    ],
+    "readTime": 8,
+    "difficulty": "Intermediate",
+    "image": "/assets/images/rummy-nose-tetra-enrichment.jpg",
+    "imageAlt": "A tight school of red-headed rummy-nose tetras swimming over sand and driftwood",
+    "emoji": "🐠",
+    "lastReviewed": "2026-10-31",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "How many rummy-nose tetras should be kept together?",
+        "a": "Ten or more of the one species. In a ring-shaped test tank, groups of 10 reversed direction about once every 20 minutes, while pairs turned around about every 12 seconds."
+      },
+      {
+        "q": "Do rummy-nose tetras like dim light?",
+        "a": "Fairly dim, yes, but never dark. A school of five stopped schooling once the light fell to about 1.5 lux, so shade the tank with wood and leaves and keep the light itself on."
+      },
+      {
+        "q": "Why does my rummy-nose tetra school spread out at night?",
+        "a": "It is too dark for the fish to track each other. Rummy-noses coordinate mainly by sight, and in near darkness a school cannot stay coherent, so a loose group after lights out is normal."
+      },
+      {
+        "q": "Do rummy-nose tetras need live plants?",
+        "a": "No. A bare-sand layout with roots and leaves is closer to their home rivers than a planted tank. Plants are fine to add, and either way the tank needs a weekly partial water change, because this fish loses color in poor conditions."
+      },
+      {
+        "q": "How long should a rummy-nose tetra tank be?",
+        "a": "At least 36 inches (90 cm) for a school of 10, which in volume is a 30 to 40 gallon tank. Buy for length, because the school swims from one end to the other and back."
+      },
+      {
+        "q": "Why has my rummy-nose tetra lost its red nose?",
+        "a": "The red fades when the fish is stressed or kept in poor conditions, so test the water before anything else."
+      },
+      {
+        "q": "Do rummy-nose tetras need blackwater?",
+        "a": "No. The species also does well in an ordinary planted tank with clear water. Tea-stained water from wood and leaves suits its color and its origins, and no test has shown that the fish needs it."
+      }
+    ],
+    "relatedProducts": [
+      "driftwood",
+      "catappa-leaves-sungrow-50"
+    ],
+    "factFile": false,
+    "animalDay": null,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 4,
+    "headingCount": 11,
+    "ledeMatchesExcerpt": false,
+    "imageWidth": 1168,
+    "imageHeight": 784
+  },
+  {
+    "path": "/content/guides/rummy-nose-tetra-feeding-guide.mdx",
+    "slug": "rummy-nose-tetra-feeding-guide",
+    "title": "Rummy-Nose Tetra Feeding: Wild Diet, Staples, and How Often to Feed",
+    "seoTitle": "What Do Rummy-Nose Tetras Eat? Diet and Feeding Schedule",
+    "seoDescription": "Rummy-nose tetra feeding by life stage: micro-pellets and crushed flake, live foods and their parasites, foods to avoid, and why rummy-noses stop eating.",
+    "lastUpdated": "2026-11-01",
+    "noIndex": false,
+    "excerpt": "Wild rummy-nose tetras eat tiny crustaceans, midge larvae and algae. A schedule from fry to adult, small staples, live foods and their risks, and why a rummy-nose stops eating.",
+    "date": "2026-11-02",
+    "category": "Fish",
+    "categories": [
+      "Fish"
+    ],
+    "tags": [
+      "Rummy-Nose Tetra",
+      "Feeding",
+      "Diet",
+      "Care Tips",
+      "Fish Diet",
+      "Feeding Schedule",
+      "Live Food",
+      "Not Eating"
+    ],
+    "readTime": 6,
+    "difficulty": "Intermediate",
+    "image": "/assets/images/rummy-nose-tetra-feeding.jpg",
+    "imageAlt": "A school of rummy-nose tetras feeding in a planted aquarium",
+    "emoji": "🐠",
+    "lastReviewed": "2026-10-31",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What do rummy-nose tetras eat?",
+        "a": "They are omnivores. A small dried food such as micro-pellets, granules or crushed flake makes the base, with baby brine shrimp, daphnia and mosquito larvae added live or frozen."
+      },
+      {
+        "q": "How often should I feed rummy-nose tetras?",
+        "a": "At least once a day. Keep each portion small enough that the school clears it before any reaches the substrate."
+      },
+      {
+        "q": "Can rummy-nose tetras eat flakes?",
+        "a": "Yes. Flake works as a staple once it is crumbled down to suit a fish of about 2 inches (5 cm) with a small mouth."
+      },
+      {
+        "q": "What do rummy-nose tetras eat in the wild?",
+        "a": "A study of 177 wild fish from the middle Rio Negro found microcrustaceans, chironomid larvae, filamentous algae and plant fragments, with the mix changing between the flood and the dry season."
+      },
+      {
+        "q": "What do baby rummy-nose tetras eat?",
+        "a": "Infusoria first, then live vinegar eels or a powdered fry food. Adults eat eggs, so fry are raised without them."
+      },
+      {
+        "q": "Why is my rummy-nose tetra not eating?",
+        "a": "Check the tank before the food. Bigger or rowdier tankmates taking the meal, poor water, a cold tank and internal parasites are the usual causes, and a school whose red noses have faded at the same time points to the water."
+      },
+      {
+        "q": "How do I feed rummy-nose tetras while I'm on vacation?",
+        "a": "Leave a sitter meals already measured into a labeled pill organizer, one compartment per feeding, or use an automatic feeder you have run at home for several days to make sure it neither jams nor overfeeds."
+      }
+    ],
+    "relatedProducts": [
+      "neon-tetra-food-hikari-micro-pellets"
+    ],
+    "factFile": false,
+    "animalDay": null,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3,
+    "headingCount": 8,
+    "ledeMatchesExcerpt": false,
+    "imageWidth": 1168,
+    "imageHeight": 784
+  },
+  {
+    "path": "/content/guides/rummy-nose-tetra-handling-guide.mdx",
+    "slug": "rummy-nose-tetra-handling-guide",
+    "title": "Rummy-Nose Tetra Handling Comes Down to One Stressful Trip Home",
+    "seoTitle": "Rummy-Nose Tetra Handling: Netting, Acclimation, School",
+    "seoDescription": "How to pick rummy-nose tetras with healthy red noses, net and bag them, acclimate them over 30 to 60 minutes, add them before an angelfish and keep 10 or more.",
+    "lastUpdated": "2026-11-01",
+    "noIndex": false,
+    "excerpt": "A rummy-nose tetra is never picked up, and its red nose shows every rough moment of the move: the net, the bag, the acclimation and which fish was in the tank first.",
+    "date": "2026-11-02",
+    "category": "Fish",
+    "categories": [
+      "Fish"
+    ],
+    "tags": [
+      "Rummy-Nose Tetra",
+      "Handling",
+      "Acclimation",
+      "Tankmates",
+      "Schooling",
+      "Fish Behavior",
+      "Fish Care"
+    ],
+    "readTime": 8,
+    "difficulty": "Intermediate",
+    "image": "/assets/images/rummy-nose-tetra-handling.jpg",
+    "imageAlt": "A school of silver rummy-nose tetras with bright red heads swimming together in an aquarium",
+    "emoji": "🐠",
+    "lastReviewed": "2026-10-31",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "How do you acclimate rummy-nose tetras?",
+        "a": "With the tank lights off, add small amounts of tank water to the bag every few minutes for 30 to 60 minutes, until the bag is mostly tank water. Net the fish into the tank and throw the bag water away."
+      },
+      {
+        "q": "How many rummy-nose tetras should be kept together?",
+        "a": "Plan on a school of 10 or more. That many rummy-noses need a tank measuring 36 inches (90 cm) or more from end to end."
+      },
+      {
+        "q": "Can rummy-nose tetras live with angelfish?",
+        "a": "Yes, if the tetras go in first. An angelfish that already holds the tank can bully a newly added school into hiding."
+      },
+      {
+        "q": "Can rummy-nose tetras live with discus?",
+        "a": "Discus keepers often pair them, but rummy-noses top out at 79°F (26°C), the bottom of the 79 to 86°F discus range, so the two meet only at 79°F and the pairing leaves the rummy-noses no margin."
+      },
+      {
+        "q": "How do you tell male and female rummy-nose tetras apart?",
+        "a": "Only by shape, and only in grown fish. An adult female has a fuller, rounder build, while a male stays a little slimmer."
+      },
+      {
+        "q": "Should you buy rummy-nose tetras with pale noses?",
+        "a": "Not straight away, but do not write them off either. Fish that arrived in the last couple of days, or were just chased with a net, often look pale, so wait half an hour or come back another day. A tank that stays washed out is the one to pass on."
+      },
+      {
+        "q": "Why is my new rummy-nose tetra lying on its side in the bag?",
+        "a": "Rummy-noses often play dead in a transport bag. Set the bag down on a solid surface and they right themselves."
+      }
+    ],
+    "relatedProducts": [],
+    "factFile": false,
+    "animalDay": null,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 4,
+    "headingCount": 13,
+    "ledeMatchesExcerpt": false,
+    "imageWidth": 1168,
+    "imageHeight": 784
+  },
+  {
+    "path": "/content/guides/rummy-nose-tetra-health-issues-guide.mdx",
+    "slug": "rummy-nose-tetra-health-issues-guide",
+    "title": "Common Rummy-Nose Tetra Health Issues (and What a Fading Red Nose Is Telling You)",
+    "seoTitle": "Rummy-Nose Tetra Health Issues: Red Nose, Ich, Signs",
+    "seoDescription": "Rummy-nose tetra health issues: what a pale red nose means, the signs that need action today, copper-free ich treatment at 79°F, and how to find a fish vet.",
+    "lastUpdated": "2026-11-01",
+    "noIndex": false,
+    "excerpt": "A rummy-nose tetra wears its condition on its face: the red nose pales when something is wrong. Most of what goes wrong starts in the water, ich has to be treated without the usual heat cure, and copper is the one medication this fish handles worst.",
+    "date": "2026-11-02",
+    "category": "Fish",
+    "categories": [
+      "Fish"
+    ],
+    "tags": [
+      "Rummy-Nose Tetra",
+      "Health",
+      "Water Quality",
+      "Fish Disease",
+      "Ich",
+      "Care Tips",
+      "Fish Care"
+    ],
+    "readTime": 10,
+    "difficulty": "Intermediate",
+    "image": "/assets/images/rummy-nose-tetra-health-issues.jpg",
+    "imageAlt": "A school of rummy-nose tetras with bright red heads swimming in a planted aquarium",
+    "emoji": "🐠",
+    "lastReviewed": "2026-10-31",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Why is my rummy-nose tetra's red nose fading?",
+        "a": "A paler nose means the fish is under stress or its conditions have slipped, so run ammonia, nitrite and pH tests before anything else. Alkaline water alone can dull the red, and a nose that stays pale once the water tests clean points to tankmates, diet or early illness."
+      },
+      {
+        "q": "Can you treat ich in rummy-nose tetras with heat?",
+        "a": "Not with heat alone. Ich strains mostly die above 86°F, seven degrees past the rummy-nose's 79°F ceiling. Warm the tank slowly to 79°F with extra aeration and let a copper-free ich medication clear the parasite. Salt is unproven for this species at the 4 to 5 grams per liter that kills ich."
+      },
+      {
+        "q": "How long should new rummy-nose tetras be quarantined?",
+        "a": "A full 30 days in their own tank before they meet the main school. New rummy-noses sometimes come home already carrying ich, and a month gives it time to surface where only the newcomers need treating."
+      },
+      {
+        "q": "Are rummy-nose tetras hard to keep healthy?",
+        "a": "They react to stress more than most tetras, which is why many keepers steer beginners toward hardier fish. A cycled tank held steady at 73 to 79°F, pH 5.5 to 7.0 and 2 to 12 dGH, with a school of 10 or more, prevents most of their problems."
+      },
+      {
+        "q": "What does it mean when several rummy-nose tetras look sick at once?",
+        "a": "Two or more fish showing the same sign together usually means the water, so test ammonia and nitrite straight away. If the readings are clean and white specks appear, start ich treatment that day."
+      },
+      {
+        "q": "Can I use a copper medication on rummy-nose tetras?",
+        "a": "It is the worst choice for this fish. Rummy-noses came out as the most copper-sensitive of 10 wild Amazon species in testing, and copper turns more dangerous still in soft, low-alkalinity water. Pick an ich treatment without copper, and move any shrimp or snails out first."
+      },
+      {
+        "q": "My new rummy-noses have pale noses. Are they sick?",
+        "a": "Not necessarily. Fish that were shipped in the last few days, or just chased with a net, often come back to full red within half an hour or by the next day. A nose that stays pale after they have settled is the one to act on."
+      },
+      {
+        "q": "How do I find a vet for a sick rummy-nose tetra?",
+        "a": "Start with a local exotic or small-animal vet, who can bring an aquatic vet from any state in to consult. The American Association of Fish Veterinarians lists fish vets by state or country. A quart of tank water taken before any water change goes along with the fish."
+      }
+    ],
+    "relatedProducts": [
+      "water-test-kit",
+      "submersible-aquarium-heater",
+      "tank-10-gallon",
+      "sponge-filter"
+    ],
+    "factFile": false,
+    "animalDay": null,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 8,
+    "headingCount": 13,
+    "ledeMatchesExcerpt": false,
+    "imageWidth": 1168,
+    "imageHeight": 784
+  },
+  {
+    "path": "/content/guides/rummy-nose-tetra-tank-setup-guide.mdx",
+    "slug": "rummy-nose-tetra-tank-setup-guide",
+    "title": "Rummy-Nose Tetra Tank Setup: A 36-Inch Run, Soft Acidic Water, and Dim Light",
+    "seoTitle": "Rummy-Nose Tetra Tank Setup Guide",
+    "seoDescription": "Rummy-nose tetra tank setup: a 36-inch tank for a school of 10, 73 to 79°F, pH 5.5 to 7.0 at 2 to 12 dGH, an inert sand floor, dim light and a cycle first.",
+    "lastUpdated": "2026-11-01",
+    "noIndex": false,
+    "excerpt": "Rummy-nose tetras swim in fast bursts as one tight school, so their tank is set by its length: 36 inches for a school of 10, held at 73 to 79°F in soft, acidic water over an inert sand floor, under fairly dim light, and cycled before the school goes in.",
+    "date": "2026-11-02",
+    "category": "Fish",
+    "categories": [
+      "Fish"
+    ],
+    "tags": [
+      "Rummy-Nose Tetra",
+      "Tank Setup",
+      "Substrate",
+      "Filtration",
+      "Aquarium Care",
+      "Care Tips",
+      "Fish Care"
+    ],
+    "readTime": 7,
+    "difficulty": "Intermediate",
+    "image": "/assets/images/rummy-nose-tetra-tank-setup.jpg",
+    "imageAlt": "A long aquarium with sand, driftwood and plants, and a tight school of silver tetras with red heads",
+    "emoji": "🐠",
+    "lastReviewed": "2026-10-31",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What size tank do rummy-nose tetras need?",
+        "a": "One that is at least 36 inches (90 cm) long for a school of 10, which puts it in the 30 to 40 gallon range. Measure the front glass before reading the gallons on the label."
+      },
+      {
+        "q": "Is a 20-gallon tank big enough for rummy-nose tetras?",
+        "a": "No. A 20-gallon long is only 30 inches from end to end, which leaves a school of 10 six inches short of the 36-inch minimum."
+      },
+      {
+        "q": "What temperature do rummy-nose tetras need?",
+        "a": "73 to 79°F (23 to 26°C). A heater set in the middle of that band keeps the tank clear of 79°F, the top of the range."
+      },
+      {
+        "q": "What pH and hardness do rummy-nose tetras need?",
+        "a": "pH 5.5 to 7.0 with a general hardness of 2 to 12 dGH. Soft, acidic water suits them best, and their color dulls when the water turns alkaline."
+      },
+      {
+        "q": "Do rummy-nose tetras need a planted tank?",
+        "a": "No. A planted tank and a sparse layout of sand, wood and dried leaves both suit them, and plants are scarce in the rivers they come from."
+      },
+      {
+        "q": "Can rummy-nose tetras go into a new tank?",
+        "a": "Not until it has finished cycling, with ammonia and nitrite both at zero. Rummy-noses are sensitive to stress, and a tank still cycling is a steady source of it."
+      },
+      {
+        "q": "What substrate is best for rummy-nose tetras?",
+        "a": "Fine river sand about an inch deep, with driftwood and a few dried leaves on top. It has to be inert, because pea gravel and coral sand push pH and hardness up and the red head fades in alkaline water."
+      },
+      {
+        "q": "What fish can live with rummy-nose tetras?",
+        "a": "Calm fish of a similar size that share 73 to 79°F water: other small tetras, pencilfish, Corydoras, small loricariids and dwarf cichlids such as Apistogramma. Boisterous or much larger fish push them aside."
+      }
+    ],
+    "relatedProducts": [
+      "tank-aqueon-40-breeder",
+      "submersible-aquarium-heater",
+      "sponge-filter",
+      "driftwood"
+    ],
+    "factFile": false,
+    "animalDay": null,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3,
+    "headingCount": 12,
+    "ledeMatchesExcerpt": false,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/russian-tortoise-cost-guide.mdx",
@@ -44752,7 +45219,7 @@
     "title": "Are Russian Tortoises Legal? State-by-State Guide",
     "seoTitle": "Are Russian Tortoises Legal? The Rule People Get Backwards",
     "seoDescription": "Colorado is the one state that bans the Russian tortoise. Five more require a permit, Hawaii allows it, and the federal 4-inch rule restricts selling.",
-    "lastUpdated": "2026-10-02",
+    "lastUpdated": "2026-11-01",
     "noIndex": false,
     "excerpt": "One state bans the Russian tortoise and it is not the one you would guess. The rule that shapes the hobby is federal, it is about size rather than species, and it restricts selling rather than owning. Hawaii, of all places, allows the entire genus.",
     "date": "2026-08-12",
@@ -44772,13 +45239,13 @@
     "image": "/assets/guides/russian-tortoise-legal.jpg",
     "imageAlt": "Russian tortoise walking across dry ground with its head raised",
     "emoji": "🐢",
-    "lastReviewed": "2026-10-02",
+    "lastReviewed": "2026-11-01",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
       {
         "q": "Is it legal to own a Russian tortoise?",
-        "a": "In every state but Colorado. Forty-two jurisdictions place no rule on it, five require a permit, four attach a condition, and Hawaii expressly allows the genus Testudo."
+        "a": "In every state but Colorado. Forty-one jurisdictions place no rule on it, five require a permit, five attach a condition, and Hawaii expressly allows the genus Testudo."
       },
       {
         "q": "Is it illegal to buy a Russian tortoise under four inches?",
@@ -44907,7 +45374,7 @@
     "image": "/assets/guides/savannah-cat-legal.jpg",
     "imageAlt": "Savannah cat with tall ears and a spotted golden coat standing on a wooden floor",
     "emoji": "🐈",
-    "lastReviewed": "2026-10-11",
+    "lastReviewed": "2026-11-01",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -45305,10 +45772,10 @@
     "slug": "savannah-monitor-legal-guide",
     "title": "Are Savannah Monitors Legal? Louisiana Is the Surprise",
     "seoTitle": "Are Savannah Monitors Legal? Bans, Permits and Arkansas",
-    "seoDescription": "Savannah monitor legality: legal in 40 of 52 jurisdictions, banned by name in Louisiana, and Arkansas clears 10 monitors while leaving this one out.",
-    "lastUpdated": "2026-10-02",
+    "seoDescription": "Savannah monitor legality: legal in 39 of 52 jurisdictions, banned by name in Louisiana, and Arkansas clears 10 monitors while leaving this one out.",
+    "lastUpdated": "2026-11-01",
     "noIndex": false,
-    "excerpt": "Forty jurisdictions have nothing to say about savannah monitors. Louisiana bans this species by name while leaving most monitors alone, and Arkansas clears ten monitors without including it.",
+    "excerpt": "Thirty-nine jurisdictions have nothing to say about savannah monitors. Louisiana bans this species by name while leaving most monitors alone, and Arkansas clears ten monitors without including it.",
     "date": "2026-08-19",
     "category": "Legal",
     "categories": [
@@ -45326,13 +45793,13 @@
     "image": "/assets/guides/savannah-monitor-legal.jpg",
     "imageAlt": "Savannah monitor on sand in close profile, its blunt snout, heavy neck and yellow-speckled gray scales clearly visible",
     "emoji": "🦎",
-    "lastReviewed": "2026-10-02",
+    "lastReviewed": "2026-11-01",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
       {
         "q": "Are savannah monitors legal in the US?",
-        "a": "In 40 of the 52 jurisdictions nothing restricts one, because most monitor rules reach only the giant species. Of the twelve that do, five are outright bans and seven are paperwork."
+        "a": "In 39 of the 52 jurisdictions nothing restricts one, because most monitor rules reach only the giant species. Of the thirteen that do, five are outright bans and eight are paperwork or a sourcing condition."
       },
       {
         "q": "Where are savannah monitors banned?",
@@ -45340,7 +45807,7 @@
       },
       {
         "q": "Which states require a permit for a savannah monitor?",
-        "a": "Rhode Island (all monitors), Arkansas (ten monitors are cleared by name and this is not one), New Jersey (the genus Varanus whole), Massachusetts, Delaware (a $25 Individual permit) and West Virginia (an importation permit). Minnesota allows one from a permitted breeder."
+        "a": "Rhode Island (all monitors), Arkansas (ten monitors are cleared by name and this is not one), New Jersey (the genus Varanus whole), Massachusetts, Delaware (a $25 Individual permit) and West Virginia (an importation permit). Minnesota allows one from a permitted breeder, and Maine clears it only if captive bred."
       },
       {
         "q": "Why does Louisiana ban the savannah monitor specifically?",
@@ -45635,7 +46102,7 @@
     "image": "/assets/guides/serval-legal.jpg",
     "imageAlt": "Serval walking through tall golden savanna grass, its spotted flank and long legs lit by low sun",
     "emoji": "🐆",
-    "lastReviewed": "2026-10-08",
+    "lastReviewed": "2026-11-01",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -45914,7 +46381,7 @@
     "image": "/assets/guides/skunk-legal.jpg",
     "imageAlt": "Striped skunk walking across short grass with its tail raised and its white back stripes in clear view",
     "emoji": "🦨",
-    "lastReviewed": "2026-10-10",
+    "lastReviewed": "2026-11-01",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -46496,7 +46963,7 @@
     "title": "Are Snapping Turtles Legal? Seasons, Creel Limits and Bans",
     "seoTitle": "Are Snapping Turtles Legal? Seasons and Bag Limits",
     "seoDescription": "Fourteen states allow snapping turtles with a season or a limit, seven ban them, and the answer usually sits in the fishing rules, not the pet rules.",
-    "lastUpdated": "2026-10-02",
+    "lastUpdated": "2026-11-01",
     "noIndex": false,
     "excerpt": "The snapping turtle is the one native reptile a dozen states still let you take, and they answer it in the fishing regulations rather than the pet ones. Fourteen jurisdictions attach a season or a limit. Seven ban it outright.",
     "date": "2026-09-06",
@@ -46516,7 +46983,7 @@
     "image": "/assets/guides/snapping-turtle-legal.jpg",
     "imageAlt": "Common snapping turtle at the muddy edge of a pond with its head raised",
     "emoji": "🐢",
-    "lastReviewed": "2026-10-02",
+    "lastReviewed": "2026-11-01",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -46721,7 +47188,7 @@
     "image": "/assets/guides/squirrel-monkey-legal.jpg",
     "imageAlt": "Squirrel monkey sitting on a branch with its yellow forearms and legs, gray back and black muzzle in view",
     "emoji": "🐒",
-    "lastReviewed": "2026-10-15",
+    "lastReviewed": "2026-11-01",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -47546,7 +48013,7 @@
     "image": "/assets/guides/sugar-glider-legal.jpg",
     "imageAlt": "Sugar glider held gently in cupped hands",
     "emoji": "🐿️",
-    "lastReviewed": "2026-10-02",
+    "lastReviewed": "2026-11-01",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -48082,7 +48549,7 @@
     "image": "/assets/guides/sulcata-tortoise-legal.jpg",
     "imageAlt": "Sulcata tortoise grazing outdoors",
     "emoji": "🐢",
-    "lastReviewed": "2026-10-08",
+    "lastReviewed": "2026-11-01",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -48366,7 +48833,7 @@
       },
       {
         "q": "What sex ratio should I keep?",
-        "a": "At least two or three females per male, and three or four is better. With swordtails the male-to-male question matters as much as the male-to-female one, much as it does for male sailfin mollies kept without females."
+        "a": "Several females per male, and more females is better. With swordtails the male-to-male question matters as much as the male-to-female one, much as it does for male sailfin mollies kept without females."
       },
       {
         "q": "How big a tank do they need?",
@@ -48447,7 +48914,7 @@
       },
       {
         "q": "Can I overfeed a swordtail?",
-        "a": "Easily, and it's a more common real mistake than underfeeding. Overfeeding can lead to constipation and swim bladder problems, and uneaten food rotting in the tank fouls water quality, which opens the door to most other swordtail health issues."
+        "a": "Easily, and it's a more common real mistake than underfeeding. Keepers commonly link overfeeding to constipation and swim bladder problems, and uneaten food rotting in the tank fouls water quality, which opens the door to most other swordtail health issues."
       }
     ],
     "relatedProducts": [],
@@ -48507,7 +48974,7 @@
       },
       {
         "q": "Why does male-to-female ratio matter so much with swordtails?",
-        "a": "Because males can be persistent toward females and combative toward each other. Keep at least two or three females per male, and three or four where the tank allows: the higher end spreads out mating attempts more effectively and reduces the fin damage and stress that come with a single female fielding constant attention."
+        "a": "Because males can be persistent toward females and combative toward each other. Keep several females per male, and more where the tank allows: extra females spread out mating attempts more effectively and reduce the fin damage and stress that come with a single female fielding constant attention."
       },
       {
         "q": "Do I need to quarantine a new swordtail?",
@@ -48590,7 +49057,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4,
+    "sourceCount": 5,
     "headingCount": 8,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1200,
@@ -48633,7 +49100,7 @@
       },
       {
         "q": "What temperature do swordtails need?",
-        "a": "Tropical, roughly 72 to 82°F, down to the mid 60s if it must, with 75 to 79°F the steadier target. Hold it steady rather than chasing a number, and avoid sudden swings. A submersible heater is necessary unless the room stays warm all year."
+        "a": "Tropical, 72 to 82°F, and keepers report them tolerating cooler water. Hold it steady anywhere inside that range rather than chasing a number, and avoid sudden swings. A submersible heater is necessary unless the room stays warm all year."
       },
       {
         "q": "What water chemistry do swordtails need?",
@@ -49086,7 +49553,7 @@
     "image": "/assets/guides/tarantula-legal.jpg",
     "imageAlt": "Tarantula on coconut fiber substrate in a glass terrarium, cork bark behind it",
     "emoji": "🕷️",
-    "lastReviewed": "2026-10-02",
+    "lastReviewed": "2026-11-01",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -49585,7 +50052,7 @@
     "image": "/assets/guides/tiger-legal.jpg",
     "imageAlt": "Tiger walking toward the camera along a shallow forest stream with its stripes reflected in the water",
     "emoji": "🐅",
-    "lastReviewed": "2026-10-16",
+    "lastReviewed": "2026-11-01",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -50007,7 +50474,7 @@
     "image": "/assets/guides/tiger-salamander-legal.jpg",
     "imageAlt": "Tiger salamander with yellow and black blotched pattern, representing its legal status",
     "emoji": "🦎",
-    "lastReviewed": "2026-10-02",
+    "lastReviewed": "2026-11-01",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -50543,10 +51010,10 @@
     "slug": "tokay-gecko-legal-guide",
     "title": "Is It Legal to Own a Tokay Gecko? State-by-State Guide",
     "seoTitle": "Are Tokay Geckos Legal? Only Two Places Say No",
-    "seoDescription": "Tokay geckos are legal in 48 of 52 US jurisdictions. Only Hawaii and DC bar them, and New Jersey exempts the tokay from the permit every other gecko needs.",
-    "lastUpdated": "2026-09-16",
+    "seoDescription": "Tokay geckos are legal in 47 of 52 US jurisdictions. Only Hawaii and DC bar them, and New Jersey exempts the tokay from the permit every other gecko needs.",
+    "lastUpdated": "2026-11-01",
     "noIndex": false,
-    "excerpt": "The tokay has the worst reputation of any commonly kept gecko and the cleanest legal record. It clears 48 of 52 jurisdictions, and in New Jersey it is the one gecko that does not need a permit, because the rule carves it out by name.",
+    "excerpt": "The tokay has the worst reputation of any commonly kept gecko and the cleanest legal record. It clears 47 of 52 jurisdictions, and in New Jersey it is the one gecko that does not need a permit, because the rule carves it out by name.",
     "date": "2026-09-11",
     "category": "Legal",
     "categories": [
@@ -50564,13 +51031,13 @@
     "image": "/assets/guides/tokay-gecko-legal.jpg",
     "imageAlt": "Tokay gecko clinging head-down to a tree trunk, showing its orange-spotted blue skin",
     "emoji": "🦎",
-    "lastReviewed": "2026-10-02",
+    "lastReviewed": "2026-11-01",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
       {
         "q": "Are tokay geckos legal in the US?",
-        "a": "In 48 of 52 jurisdictions, with no permit. Only Hawaii and the District of Columbia bar them, West Virginia asks for an importation permit, and Minnesota attaches conditions that apply to every lizard rather than to this species specifically."
+        "a": "In 47 of 52 jurisdictions, with no permit. Only Hawaii and the District of Columbia bar them, West Virginia asks for an importation permit, and Minnesota and Maine attach conditions that apply to every lizard or reptile rather than to this species specifically."
       },
       {
         "q": "Is it true that New Jersey exempts the tokay gecko?",
@@ -50903,7 +51370,7 @@
     "image": "/assets/guides/two-toed-sloth-legal.jpg",
     "imageAlt": "Two-toed sloth hanging upside down from a branch",
     "emoji": "🦥",
-    "lastReviewed": "2026-10-12",
+    "lastReviewed": "2026-11-01",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -52092,7 +52559,7 @@
     "title": "Are Veiled Chameleons Legal? State-by-State Guide",
     "seoTitle": "Are Veiled Chameleons Legal? Where They Are Banned",
     "seoDescription": "Where veiled chameleons are actually illegal: Hawaii's default ban, Washington DC's lizard ban, and New Jersey's permit rule.",
-    "lastUpdated": "2026-10-02",
+    "lastUpdated": "2026-11-01",
     "noIndex": false,
     "excerpt": "Two places will not let you keep a veiled chameleon, and neither one banned the species. Washington DC left every lizard off a list of seven allowed pets. Hawaii bars anything it has not approved, and the veiled chameleon is already loose on two islands.",
     "date": "2026-08-13",
@@ -52112,13 +52579,13 @@
     "image": "/assets/guides/veiled-chameleon-legal.jpg",
     "imageAlt": "Veiled chameleon gripping a branch with its casque and striped flank visible",
     "emoji": "🦎",
-    "lastReviewed": "2026-10-02",
+    "lastReviewed": "2026-11-01",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
       {
         "q": "Are veiled chameleons legal in the US?",
-        "a": "Legal in forty-six states with no paperwork. Hawaii and Washington DC say no, New Jersey and West Virginia want a permit, and Minnesota wants one from a permitted breeder."
+        "a": "Legal in forty-five states with no paperwork. Hawaii and Washington DC say no, New Jersey and West Virginia want a permit, Minnesota wants one from a permitted breeder, and Maine wants one bred in captivity."
       },
       {
         "q": "Why are veiled chameleons illegal in Hawaii?",
@@ -52221,7 +52688,7 @@
     "title": "Venomous Snake Laws by State: Rattlesnakes, Cobras and the Class Rule",
     "seoTitle": "Venomous Snake Laws by State: Rattlesnake and Cobra Rules",
     "seoDescription": "Venomous snake laws by state: where rattlesnakes and cobras are banned, permitted or legal, which states exempt native rattlesnakes, and the five with no rule.",
-    "lastUpdated": "2026-10-15",
+    "lastUpdated": "2026-11-01",
     "noIndex": false,
     "excerpt": "Most states regulate 'venomous reptiles' as a class, so a cobra and a rattlesnake get one answer. The rattlesnake then gets a second one, because across most of the country it is also a native animal with its own take rules, and those run from a two-snake bag limit in California to a bare 'do not possess' in Nebraska.",
     "date": "2026-10-15",
@@ -52244,7 +52711,7 @@
     "image": "/assets/guides/venomous-snake-laws-by-state.jpg",
     "imageAlt": "Western diamondback rattlesnake coiled on sand with its rattle raised",
     "emoji": "🐍",
-    "lastReviewed": "2026-10-15",
+    "lastReviewed": "2026-11-01",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -52321,7 +52788,7 @@
     "image": "/assets/guides/virginia-opossum-legal.jpg",
     "imageAlt": "Virginia opossum standing on a log at dusk, its white face and bare tail in clear view",
     "emoji": "🐀",
-    "lastReviewed": "2026-10-14",
+    "lastReviewed": "2026-11-01",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -52398,7 +52865,7 @@
     "image": "/assets/guides/wallaby-legal.jpg",
     "imageAlt": "Bennett's wallaby standing upright in a grassy field",
     "emoji": "🦘",
-    "lastReviewed": "2026-10-14",
+    "lastReviewed": "2026-11-01",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -52614,7 +53081,7 @@
     "image": "/assets/guides/white-tailed-deer-legal.jpg",
     "imageAlt": "White-tailed doe standing at the edge of a forest meadow with her tail raised",
     "emoji": "🦌",
-    "lastReviewed": "2026-10-13",
+    "lastReviewed": "2026-11-01",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
@@ -53531,7 +53998,7 @@
     "image": "/assets/guides/wolfdog-legal.jpg",
     "imageAlt": "Wolfdog standing in snow with a gray and cream coat, amber eyes and the long legs and narrow chest of its wolf parent",
     "emoji": "🐺",
-    "lastReviewed": "2026-10-13",
+    "lastReviewed": "2026-11-01",
     "author": "Michael Ryan",
     "canonicalUrl": null,
     "faqs": [
