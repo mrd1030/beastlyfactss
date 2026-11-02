@@ -1423,6 +1423,7 @@ async function askMeta(db) {
     states: parse(m.states, []),
     legal: parse(m.legal, []),
     facts: parse(m.facts, []),
+    common: parse(m.common, {}),
   };
   return askMetaCache;
 }
@@ -1583,11 +1584,17 @@ async function askRetrieve(db, question, context = null) {
   const term = (t) => `"${t.replace(/"/g, '')}"`;
   const anyOf = (list) => [...new Set(list.flatMap((t) => ASK_SYNONYM_OF.get(t) || [t]))].map(term).join(' OR ');
   const allOf = (list) => list.map((t) => `(${(ASK_SYNONYM_OF.get(t) || [t]).map(term).join(' OR ')})`).join(' AND ');
-  const sql = `SELECT c.id, c.slug, c.title, c.heading, c.url, c.species, c.type, c.text, c.words,
-      bm25(${fts}, 4.0, 4.0, 3.0, 1.0) AS rank
-    FROM ${fts} JOIN ${table} c ON c.id = ${fts}.rowid
-    WHERE ${fts} MATCH ?1 AND c.type != 'legal'
-    ORDER BY rank LIMIT ${ASK.candidates}`;
+  // Ranked inside the FTS index first, then joined, so only the top rows are
+  // read from the chunks table instead of every chunk the words match. The
+  // legal chunks are still in the index, so the inner query takes extra rows
+  // and the type filter runs after (owner, 2026-11-01, on a Fable
+  // recommendation).
+  const sql = `SELECT c.id, c.slug, c.title, c.heading, c.url, c.species, c.type, c.text, c.words, m.rank
+    FROM (SELECT rowid, bm25(${fts}, 4.0, 4.0, 3.0, 1.0) AS rank FROM ${fts}
+          WHERE ${fts} MATCH ?1 ORDER BY rank LIMIT ${ASK.candidates + 20}) m
+    JOIN ${table} c ON c.id = m.rowid
+    WHERE c.type != 'legal'
+    ORDER BY m.rank LIMIT ${ASK.candidates}`;
   const search = async (match) => (await db.prepare(sql).bind(match).all()).results;
 
   // Rows read are a daily budget (5M on the free plan), so the species goes
@@ -1600,11 +1607,19 @@ async function askRetrieve(db, question, context = null) {
     const name = `species : ${term(askNormalize(species.name))}`;
     rows = await search(content.length ? `${name} AND {title heading text} : (${anyOf(content)})` : name);
   }
-  // No species, or nothing for it: every word first, which reads little,
-  // then any word when that finds too few.
+  // No species, or nothing for it: every word first, which reads little.
+  // Any word only when that found nothing, and without the site's most
+  // common words ("eat", "tank"), which match thousands of chunks; when every
+  // word is common, the two rarest stay (owner, 2026-11-01, on a Fable
+  // recommendation).
   if (!rows.length) {
     if (tokens.length > 1) rows = await search(allOf(tokens));
-    if (rows.length < ASK.topK) rows = await search(anyOf(tokens));
+    if (!rows.length) {
+      const df = (t) => meta.common[t] || 0;
+      let words = tokens.filter((t) => !df(t));
+      if (!words.length) words = [...tokens].sort((a, b) => df(a) - df(b)).slice(0, 2);
+      rows = await search(anyOf(words));
+    }
   }
 
   // Coverage: the share of the question's own words (not the species name)

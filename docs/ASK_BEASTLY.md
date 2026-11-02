@@ -133,6 +133,12 @@ In `public/_worker.js`, listed in `public/_routes.json`. In order:
    row read (by key, from the url list in ask_meta.facts). The site keeps
    no popularity count, so "most popular" gets a random one too. With an
    animal named, the normal search answers.
+   Rows read per search (owner, 2026-11-01, on a Fable recommendation): the
+   any-word search runs only when the every-word search found nothing, and
+   leaves out words in more than 5% of the chunks (ask_meta.common); if all
+   are common, the two rarest stay. Ranking happens inside the FTS index and
+   only the top rows are joined. An any-word search over common words read
+   about 8,000 rows; the night's average was 3,200 per search.
 5. Search: nicknames expanded, the named species used as a filter ("tortoise"
    also reaches sulcata and Russian), a few reader word synonyms (tank and
    enclosure, eat and feed, poop and droppings), a boost for the matching split

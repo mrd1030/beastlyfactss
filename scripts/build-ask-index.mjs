@@ -497,10 +497,24 @@ chunks.forEach((c, i) => {
 //   legal     the legal matrix animals, for /exotic-pet-laws/<id>/
 //   facts     every fact page's url, for "show me a fun fact" (the worker
 //             picks one and reads that one row by its key)
+//   common    words in more than 5% of the searchable chunks, with how many
+//             chunks hold them. The worker leaves them out of its any-word
+//             search, where "eat" or "tank" made the index score thousands
+//             of rows (about 3,200 rows read per search on a test night).
 const LEGAL = JSON.parse(fs.readFileSync(path.join(ROOT, 'src/lib/data/legalStatus.json'), 'utf8'));
 const stateSlug = (name) => name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 const guideIdByName = new Map(guidesIndex.map((g) => [g.name.toLowerCase(), g.id]));
 const speciesNames = [...new Set(chunks.map((c) => c.species).filter(Boolean))];
+function commonWords(list, share) {
+  const df = new Map();
+  for (const c of list) {
+    const words = new Set(`${c.title} ${c.heading} ${c.text}`.toLowerCase().split(/[^a-z0-9]+/).filter((w) => w.length > 1));
+    for (const w of words) df.set(w, (df.get(w) || 0) + 1);
+  }
+  const min = Math.ceil(list.length * share);
+  return Object.fromEntries([...df].filter(([, n]) => n > min).sort((a, b) => b[1] - a[1]));
+}
+
 const meta = {
   aliases: SEARCH_ALIASES,
   species: speciesNames
@@ -513,6 +527,7 @@ const meta = {
     .map(([id, a]) => ({ id, name: a.name, article: a.article || null }))
     .sort((a, b) => b.name.length - a.name.length),
   facts: chunks.filter((c) => c.type === 'fact').map((c) => c.url),
+  common: commonWords(chunks.filter((c) => c.type !== 'legal'), 0.05),
 };
 
 fs.mkdirSync(OUT_DIR, { recursive: true });
