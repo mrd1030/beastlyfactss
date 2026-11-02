@@ -181,11 +181,13 @@ export default function AskBeastlyChat() {
   };
   const onDragMove = (e) => {
     if (!drag.current) return;
-    setUiState((prev) => ({
-      ...prev,
-      x: clamp(e.clientX - drag.current.dx, EDGE, window.innerWidth - PANEL_W - EDGE),
-      y: clamp(e.clientY - drag.current.dy, 56 + EDGE, window.innerHeight - 120),
-    }));
+    // Read the offset now, not inside the updater: React may run the updater
+    // after the pointerup has cleared drag.current, which threw "Cannot read
+    // properties of null (reading 'dx')" and took the chat down on release
+    // (owner's console, 2026-11-02).
+    const x = clamp(e.clientX - drag.current.dx, EDGE, window.innerWidth - PANEL_W - EDGE);
+    const y = clamp(e.clientY - drag.current.dy, 56 + EDGE, window.innerHeight - 120);
+    setUiState((prev) => ({ ...prev, x, y }));
   };
   const onDragEnd = () => {
     if (!drag.current) return;
