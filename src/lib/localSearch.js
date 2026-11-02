@@ -82,7 +82,10 @@ SYNONYM_GROUPS.forEach(group => group.forEach(w => SYNONYMS.set(w, group)));
 function termsOf(variant) {
   const words = variant.split(/[^a-z0-9']+/).filter(Boolean);
   const kept = words.filter(w => !STOPWORDS.has(w));
-  return (kept.length ? kept : words).map(w => SYNONYMS.get(w) || [w]);
+  const list = kept.length ? kept : words;
+  // Synonyms only widen a word paired with an animal or another word: a
+  // search for just "uvb" means UVB, not every page about lights.
+  return list.map(w => (list.length > 1 && SYNONYMS.get(w)) || [w]);
 }
 
 const fieldsHit = (alts, names, others) =>
@@ -108,10 +111,15 @@ function matchedTerms(names, others, variants, topicsOptional) {
 // Order decides what shows, since each section keeps only MAX_PER_TYPE: more
 // query words in the name first, the exact word scoring above a name word
 // that starts with it. Array.sort is stable, so data order breaks ties.
+// A name that starts with the first query word scores one more, so for
+// "uvb" the general "UVB Lighting" piece leads the species ones that mention
+// UVB later in the title.
 function nameScore(names, terms) {
-  return terms.reduce((n, alts) => n + (
+  const score = terms.reduce((n, alts) => n + (
     names.some(t => matchesWord(t, alts)) ? 2 : names.some(t => matchesName(t, alts)) ? 1 : 0
-  ), 0);
+  ), 0) * 2;
+  const lead = names.some(t => typeof t === 'string' && terms[0].some(a => t.toLowerCase().startsWith(a)));
+  return score + (lead ? 1 : 0);
 }
 
 function ranked(items, namesOf, othersOf, variants, topicsOptional = false) {
@@ -302,7 +310,10 @@ export function searchLocalContent(query) {
     }));
 
   const glossaryTerms = GLOSSARY_CATEGORIES.flatMap(cat => cat.terms.map(t => ({ t, cat })));
-  const glossary = ranked(glossaryTerms, ({ t }) => [t.term, ...(t.aliases || [])], ({ t }) => [t.definition], variants)
+  // Glossary terms match by the term or its aliases only, never the
+  // definition: "uvb" is mentioned in a dozen definitions, and those rows
+  // pushed the guides and articles off the first screen.
+  const glossary = ranked(glossaryTerms, ({ t }) => [t.term, ...(t.aliases || [])], () => [], variants)
     .slice(0, MAX_PER_TYPE)
     .map(({ t, cat }) => ({
       key: `gloss-${slugify(t.term)}`,
