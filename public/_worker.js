@@ -1988,18 +1988,24 @@ Rules:
 - End with the title of the one source that answers best, in the form: READ: <title>
 - Only if your answer also took a fact from a second source, add one more line: ALSO: <title>. Use titles exactly as given in <sources>.`;
 
+// A lead-in that names who says something ("Our emergency card says",
+// "Veterinary sources note"). Cut from the front of a sentence; when one was
+// cut, a second reported clause loses its "that" too, so "says A and that B"
+// becomes "A, and B" (Fable review of the 20-question rerun, 2026-11-02).
+const ASK_LEAD_IN_RE = /^(((most|many|several|some) )?(veterinary |published |scientific )?sources (agree|say|recommend|suggest|note|state)|(our|the) (emergency card|guides?|care guide|article|page)s? (says?|notes?|states?|lists?|explains?|recommends?))( that)?,?\s*/i;
+
 function askRewriteSourceTalk(sentence) {
   // The articles compare their own sources ("most sources agree", "according
   // to veterinary sources"), and the model echoes it. Those phrases come out
   // here so the sentence, which often holds the number, survives (owner,
   // 2026-11-02, on a Fable review).
-  let out = sentence
+  const leadIn = ASK_LEAD_IN_RE.test(sentence);
+  let out = sentence.replace(ASK_LEAD_IN_RE, '');
+  if (leadIn) out = out.replace(/,?\s+and that\s+/gi, ', and ');
+  out = out
     .replace(/\b(the )?range (that )?(most|many) sources agree on\b/gi, 'the usual range')
     .replace(/,?\s*(though|but|while)\s+(a couple|a few|some|one or two|others)\s+(of them\s+)?(recommend|suggest|say|advise)\b/gi, ', or')
     .replace(/,?\s*according to [^,.]*?sources?\b/gi, '')
-    .replace(/^((most|many|several|some) )?(veterinary |published |scientific )?sources (agree|say|recommend|suggest|note|state)( that)?,?\s*/i, '')
-    // "Our emergency card says", "our guides note that": the fact stays.
-    .replace(/^(our|the) (emergency card|guides?|care guide|article|page)s? (says?|notes?|states?|lists?|explains?|recommends?)( that)?,?\s*/i, '')
     // "Stuck shed is covered in our shedding guide: soak..." keeps the advice.
     .replace(/^[^.:]*\b(is|are) covered in (our|the) [^.:]*:\s*/i, '')
     // "Stuck shed is covered in our guides, and it can cut off circulation"
