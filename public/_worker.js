@@ -1462,6 +1462,11 @@ function askFindName(q, list) {
 // no verb needed ("betta fish files", "betta section").
 const ASK_NAV_RE = /\b(where(?:'s|s|’s)?\b|show me|find(?! out)|take me|link (me )?to|go to|get to|point me|looking for|browse)\b/;
 const ASK_FACT_RE = /\bfacts?\b/;
+// "He's acting weird", "my baby won't eat": a particular pet, but no animal
+// named and none carried over from the last question. Searching would find
+// nothing or the wrong animal, so the reply asks which animal it is, and the
+// reader's next message carries this question with it (owner, 2026-11-02).
+const ASK_PET_REF_RE = /^(he|she|it|they)\b|\b(he|she|it|they)('s|'re| is| are| isn'?t| aren'?t| won'?t| will| has| have| hasn'?t| keeps| seems| was| were| does| doesn'?t| did| didn'?t| can'?t| just| always| never)\b|\bmy (pet|baby|boy|girl|guy|little one|buddy|friend)\b/;
 const ASK_SITE_PLACE_RE = /\b(files?|hub|sections?)\b/;
 const ASK_CORRECTION = new Set('sorry oops meant mean typo spelled spelling actually wrong i'.split(' '));
 const ASK_PLACE_RE = /\b(guides?|pages?|files?|info|information|sections?|sheets?|hub|articles?|stuff|everything|posts?)\b/;
@@ -1542,7 +1547,10 @@ async function askRetrieve(db, question, context = null) {
   const prev = context?.prev ? expand(context.prev) : '';
   const prevSpecies = prev ? askFindName(prev, meta.species) : null;
   const followUp = Boolean(prev) && (!ownSpecies || !prevSpecies || ownSpecies.name === prevSpecies.name);
-  const q = followUp && !ownSpecies ? `${qOwn} ${prev}` : qOwn;
+  // A follow-up without its own animal borrows the last question's; one that
+  // names the animal the last question lacked ("a hamster", after "he's
+  // acting weird") carries the last question along.
+  const q = followUp && (!ownSpecies || !prevSpecies) ? `${qOwn} ${prev}` : qOwn;
 
   const species = askFindName(q, meta.species);
   const speciesWords = new Set(species ? askNormalize(species.name).split(/[\s-]+/) : []);
@@ -1565,6 +1573,9 @@ async function askRetrieve(db, question, context = null) {
   const ownWords = qOwn.split(/[\s-]+/).map((t) => t.replace(/'s$|'|\*/g, ''))
     .filter((t) => t.length > 1 && !ASK_STOPWORDS.has(t) && !speciesWords.has(t) && !ASK_CORRECTION.has(t));
   const navText = followUp && ownWords.length === 0 ? `${qOwn} ${prev}` : qOwn;
+  if (!species && ASK_PET_REF_RE.test(qOwn)) {
+    return { chunks: [], species: null, best: null, legal: false, clarify: true, meta, q, qOwn, followUp };
+  }
   // "Show me a fun fact", "any cool facts?": with no animal named, one fact
   // at random from the facts page, read by its key (one row), no model call.
   // With an animal named, the normal search finds its facts articles.
@@ -1718,7 +1729,7 @@ async function handleAsk(request, env, ctx) {
 
   if (!(await askVerifyTurnstile(env, request, String(body?.captcha || '')))) return quiet('unavailable');
 
-  const log = (result, slugs = []) => askLog(env, ctx, question, slugs, result);
+  const log = (result, slugs = [], extra = {}) => askLog(env, ctx, question, slugs, result, extra);
 
   // The sharetest project (beastlyfactss-sharetest.pages.dev) is where Ask
   // Beastly is built and tested: there the per-visitor hourly limit is off
@@ -1752,6 +1763,18 @@ async function handleAsk(request, env, ctx) {
       links: [{ title: `${found.species.name} care guide`, url: `/guides/${found.species.guideId}/` }],
       emergency: false,
       species,
+      followUp: found.followUp,
+    });
+  }
+
+  if (found.clarify) {
+    log('clarify');
+    return storeJson({
+      result: 'clarify',
+      answer: "Which animal is this about? Tell me the species and I'll check our guides.",
+      links: [],
+      emergency: false,
+      species: null,
       followUp: found.followUp,
     });
   }
@@ -1828,7 +1851,9 @@ async function handleAsk(request, env, ctx) {
     return quiet('no_match', { species, followUp: found.followUp, health: askSoundsLikeHealth(found.qOwn) });
   }
 
-  log('answered', slugs);
+  // answer_slug: the page the model named (READ), next to matched_slugs in
+  // search order, to see how often its pick is not the top hit.
+  log('answered', slugs, { answer_slug: reply.best?.slug || null });
   return storeJson({
     result: 'answered',
     answer: reply.answer,
@@ -1857,7 +1882,7 @@ Rules:
 - Keep hedges from the sources (can, may, often). Do not make them stronger.
 - Never give medication doses. Never say a symptom is fine to wait out or to watch for now.
 - If a source calls the sign urgent, or lists it under "call the vet now", the first sentence tells the reader to call the vet the source names (reptile vet, rabbit-savvy vet) now. The remaining sentences say what the guides tie that sign to.
-- Health gap: if the reader describes a sign, symptom, injury or change in the animal and no source names that sign, the first sentence is: "Our guides don't cover <the sign>, so the safest move is to have a <vet type the sources name, or an exotics vet> look at your <species>." You may add ONE sentence on the closest sign the guides do cover for the same body part or behavior. It starts with "While you wait, check" or "In the meantime, check", names that sign and how urgent it is, and never names a condition as the likely cause. Never write "the closest sign", "the guides cover", or "what I can tell you".
+- Health gap: if the reader describes a sign, symptom, injury or change in the animal and no source names that sign, the first sentence is: "Our guides don't cover <the sign>, so the safest move is to have a <vet type the sources name, or an exotics vet> look at your <species>." If the reader named no specific sign (only that the animal seems off, is acting weird or strange), write only that first sentence. Otherwise you may add ONE sentence on the closest sign the guides do cover for the same body part or behavior. It starts with "While you wait, check" or "In the meantime, check", names that sign and how urgent it is, and never names a condition as the likely cause. Never write "the closest sign", "the guides cover", or "what I can tell you".
 - Other gap: only when the reader asked for a non-health specific (a step, a number) that no source gives AND you have answered another part, add one sentence: "Our guides don't cover X." Never guess to fill a gap.
 - Speak to the reader directly, in the site's own voice. Never comment on what the passages do or do not cover, agree on, or recommend: no "is covered in our guides", "the sources", "Source 2", "most sources agree", "according to veterinary sources", "I can't say", "I can't tell you", "I don't know", or any sentence about what you are unable to do. Write "our guides" at most once per answer, and only in a gap sentence.
 - Say each point once. Do not restate it in other words.
@@ -2040,15 +2065,16 @@ const ASK_NTFY_TITLES = {
   no_match: 'Not covered yet',
   legal: 'Legal question',
   refused: 'No answer, links shown',
+  clarify: 'Asked which animal',
 };
 
-function askLog(env, ctx, question, matchedSlugs, result) {
+function askLog(env, ctx, question, matchedSlugs, result, extra = {}) {
   const jobs = [];
   if (hasSupabaseEnv(env)) {
     jobs.push(supabaseFetch(env, '/rest/v1/ask_log', {
       method: 'POST',
       headers: { Prefer: 'return=minimal' },
-      body: JSON.stringify({ question, matched_slugs: matchedSlugs, result }),
+      body: JSON.stringify({ question, matched_slugs: matchedSlugs, result, ...extra }),
     }).catch(() => {}));
   }
   const mode = env?.ASK_NTFY_MODE === 'gaps' ? 'gaps' : 'all';

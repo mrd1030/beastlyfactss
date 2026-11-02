@@ -162,6 +162,14 @@ In `public/_worker.js`, listed in `public/_routes.json`. In order:
    row read (by key, from the url list in `ask_meta.facts`). The site keeps
    no popularity count, so "most popular" gets a random one too. With an
    animal named, the normal search answers.
+   "Which animal?" (owner, 2026-11-02, after Grok and Fable reviews): a
+   question about a particular pet ("he's acting weird", "my baby won't
+   eat") that names no animal and carries none from the last question gets
+   "Which animal is this about? Tell me the species and I'll check our
+   guides.", result `clarify`, no model call, not counted toward the 3. In
+   the chat the reader's next message carries it: "a hamster" searches as
+   "a hamster he's acting weird". A follow-up that names the animal the
+   last question lacked always carries the last question along.
 6. Search: nicknames expanded, the named species used as a filter ("tortoise"
    also reaches sulcata and Russian), a few reader word synonyms (tank and
    enclosure, eat and feed, poop and droppings), a boost for the matching split
@@ -187,7 +195,7 @@ In `public/_worker.js`, listed in `public/_routes.json`. In order:
    question last.
 
 Reply: `{ result, answer, links, emergency, species, followUp, health }`.
-`result` is answered, navigate, legal, no_match, capped, refused or
+`result` is answered, navigate, clarify, legal, no_match, capped, refused or
 unavailable. `followUp` says whether the question joined the conversation;
 `health` marks a no_match that sounds like a health problem. On the sharetest
 site an answer also carries `sources`, the chunks the model saw, for the
@@ -250,7 +258,9 @@ Health gap (owner, 2026-11-02, Fable wording): a sign the guides do not name
 opens with "Our guides don't cover <the sign>, so the safest move is to have a
 <vet> look at your <species>", plus at most one sentence on the closest covered
 sign, worded as something to check, never as the cause (since tightened, see
-the wording fixes below). "I can't tell you"
+the wording fixes below). When the reader names no sign at all ("acting
+weird", "seems off"), only the first sentence: a "check" sentence there
+would point at something the reader never said (2026-11-02, Grok and Fable). "I can't tell you"
 and similar are cut by the cleanup. The owner considered adding "a fall or a
 bump, watch it, vet if it gets worse" to jaw answers; it stays out: no guide
 names a fall as a cause and the bearded dragon guide lists jaw swelling under
@@ -288,7 +298,11 @@ above the answer and the species' emergency card from its router hub under it
 ## Logging
 
 Supabase table `ask_log` (supabase/ask_log.sql): question, matched_slugs,
-result (answered, no_match, capped, refused, legal), created_at. No IP. RLS on
+result (answered, no_match, capped, refused, legal, clarify), answer_slug,
+created_at. No IP. `answer_slug` is the page the model named (READ) on an
+answered row; `matched_slugs` is in search order, so the pair shows how
+often the model picked something other than the top hit (added 2026-11-02
+on Grok's review). RLS on
 with no policies; only the worker's service role writes. Once a week, pull
 every `no_match` row into READER_GAPS.md: real questions the guides do not
 answer yet.
