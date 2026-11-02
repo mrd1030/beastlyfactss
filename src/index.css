@@ -451,3 +451,10 @@ html, body {
     transform: translateY(calc(56px + var(--safe-area-inset-bottom, 0px)));
   }
 }
+
+/* Ask Beastly's chat docked as a sidebar (components/ask/AskBeastlyChat.jsx)
+   takes its width from the page instead of covering it. Wider screens only:
+   on a phone the chat is a sheet and never docks. */
+@media (min-width: 768px) {
+  html.ask-docked body { padding-right: 380px; }
+}
