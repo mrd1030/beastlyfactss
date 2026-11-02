@@ -1375,7 +1375,7 @@ function askIsThanks(question) {
 const ASK_THANKS_REPLIES = [
   "You're welcome! Ask anything else any time.",
   'Happy to help. Ask away if anything else comes up.',
-  'Glad that helped! Ask any time.',
+  'Any time! Ask away if you have another question.',
 ];
 
 // Stretched filler: "ummmm", "uhhh", "hmmmm", "sooo", "lolol".
