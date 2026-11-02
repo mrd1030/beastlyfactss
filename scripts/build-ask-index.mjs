@@ -10,6 +10,9 @@
 //   beastfile   one per published Beastlypedia entry (/beastlypedia/<id>/)
 //   encyclopedia one per encyclopedia animal (/encyclopedia/animal/<id>/)
 //   glossary    one per glossary term (/glossary/#<slugify(term)>)
+//   hub         each care guide hub (/guides/<id>/): router hubs give their
+//               first-week numbers, emergency card and FAQs; dog and cat hubs
+//               their written sections, cost table and FAQs
 //
 // Legal guides are kept with type "legal" so the worker can refuse to send
 // them to Haiku. Skipped: Chronicles (content/short-story), content/_scheduled-*,
@@ -48,6 +51,17 @@ import { lizardEncyclopedia } from '../src/lib/data/encyclopedia/lizards.js';
 import { smallMammalEncyclopedia } from '../src/lib/data/encyclopedia/smallMammals.js';
 import { snakeEncyclopedia } from '../src/lib/data/encyclopedia/snakes.js';
 import { turtleEncyclopedia } from '../src/lib/data/encyclopedia/turtles.js';
+import { amphibianGuides } from '../src/lib/data/guides/amphibians.js';
+import { birdGuides } from '../src/lib/data/guides/birds.js';
+import { catGuides } from '../src/lib/data/guides/cats.js';
+import { dogGuides } from '../src/lib/data/guides/dogs.js';
+import { fishGuides } from '../src/lib/data/guides/fish.js';
+import { geckoGuides } from '../src/lib/data/guides/geckos.js';
+import { invertebrateGuides } from '../src/lib/data/guides/invertebrates.js';
+import { lizardGuides } from '../src/lib/data/guides/lizards.js';
+import { smallMammalGuides } from '../src/lib/data/guides/smallMammals.js';
+import { snakeGuides } from '../src/lib/data/guides/snakes.js';
+import { turtleGuides } from '../src/lib/data/guides/turtles.js';
 
 const ROOT = path.resolve(path.dirname(new URL(import.meta.url).pathname), '..');
 const OUT_DIR = path.join(ROOT, '.ask-index');
@@ -385,6 +399,71 @@ for (const a of encyclopedia) {
       text: part,
     });
   });
+}
+
+const hubs = [
+  ...amphibianGuides, ...birdGuides, ...catGuides, ...dogGuides, ...fishGuides, ...geckoGuides,
+  ...invertebrateGuides, ...lizardGuides, ...smallMammalGuides, ...snakeGuides, ...turtleGuides,
+];
+const humanize = (key) => key.replace(/([a-z])([A-Z])/g, '$1 $2').replace(/^./, (c) => c.toUpperCase());
+const money = (n) => `$${Number(n).toLocaleString('en-US')}`;
+
+// Dog and cat hubs are named like page titles ("Maine Coon: Breed Quirks",
+// "Cat Care: The Essentials", "Small Breed Dogs"); their chunks carry the
+// plain animal so a species search finds them.
+const hubSpecies = (g) => {
+  if (/:\s*Breed Quirks$/.test(g.name)) return g.name.replace(/:\s*Breed Quirks$/, '');
+  if (/^cat-/.test(g.id)) return 'Cat';
+  if (/^dog-/.test(g.id)) return 'Dog';
+  return g.name;
+};
+const hubTitle = (g) => (/:|Dogs$/.test(g.name) ? g.name : `${g.name} Care Guide`);
+
+for (const g of hubs) {
+  const add = (heading, text) => {
+    const clean = mdxToText(String(text || ''));
+    if (wordCount(clean) < 8) return;
+    splitLong(clean).forEach((part, i, all) => {
+      chunks.push({
+        slug: g.id,
+        title: hubTitle(g),
+        heading: heading + (all.length > 1 ? ` (part ${i + 1})` : ''),
+        anchor: '',
+        url: `/guides/${g.id}/`,
+        species: hubSpecies(g),
+        type: 'hub',
+        text: part,
+      });
+    });
+  };
+  if (g.firstWeek?.rows?.length) {
+    add('The first week', g.firstWeek.rows.map((r) => `${r.label}: ${r.value}`).join('\n'));
+  }
+  const card = g.emergencyCard;
+  if (card?.callNow?.length) {
+    add('Emergency card', [
+      card.heading || 'Call the vet now if you see any of these.',
+      ...card.callNow,
+      ...(card.soon?.length ? [card.soonHeading || 'Book a vet visit promptly for these.', ...card.soon] : []),
+      card.vetLine || '',
+    ].join('\n'));
+  }
+  for (const [key, text] of Object.entries(g.sections || {})) {
+    if (typeof text === 'string') add(humanize(key), text);
+  }
+  if (g.costs && typeof g.costs === 'object') {
+    const lines = [];
+    for (const [group, items] of Object.entries(g.costs)) {
+      if (!Array.isArray(items)) continue;
+      for (const it of items) {
+        if (it?.item && it.low != null) lines.push(`${humanize(group)}: ${it.item}: ${it.low === it.high ? `about ${money(it.low)}` : `${money(it.low)} to ${money(it.high)}`}`);
+      }
+    }
+    if (lines.length) add('Costs', lines.join('\n'));
+  }
+  if (Array.isArray(g.faqs) && g.faqs.length) {
+    add('Frequently asked questions', g.faqs.filter((f) => f?.q && f?.a).map((f) => `Q: ${f.q}\nA: ${f.a}`).join('\n\n'));
+  }
 }
 
 for (const cat of GLOSSARY) {

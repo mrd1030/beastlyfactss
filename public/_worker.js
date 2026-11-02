@@ -1365,6 +1365,11 @@ const ASK_SYNONYMS = [
 ];
 const ASK_SYNONYM_OF = new Map(ASK_SYNONYMS.flatMap((g) => g.map((w) => [w, g])));
 
+// Words that say "tell me about this animal" and nothing more specific. A
+// question that names a species and only these ("how do I take care of a
+// leopard gecko") is answered from the species' hub.
+const ASK_BROAD = new Set('take care caring look after raise raising keep keeping basics basic tips guide beginner beginners start starting new owner everything own owning'.split(' '));
+
 // Care guides are split by topic (cost / feeding / handling / health / tank
 // setup / enrichment), so a question about one topic should favor that guide.
 const ASK_GUIDE_TOPICS = [
@@ -1511,7 +1516,8 @@ async function askRetrieve(db, question) {
   // With a species named, the species filter does that work, so only the
   // question's other words are matched, and only against title, heading and
   // text; otherwise every chunk about the animal ranks on its name alone.
-  const content = tokens.filter((t) => !speciesWords.has(t));
+  const content = tokens.filter((t) => !speciesWords.has(t) && !(species && ASK_BROAD.has(t)));
+  const broad = Boolean(species) && content.length === 0;
   const expand = (list) => [...new Set(list.flatMap((t) => ASK_SYNONYM_OF.get(t) || [t]))];
   const quote = (list) => expand(list).map((t) => `"${t.replace(/"/g, '')}"`).join(' OR ');
   const speciesMatch = content.length ? `{title heading text} : (${quote(content)})` : quote(tokens);
@@ -1541,8 +1547,9 @@ async function askRetrieve(db, question) {
     const heading = (r.heading || '').toLowerCase();
     const headingCoverage = content.length && heading ? content.filter(has(heading)).length / content.length : 0;
     let boost = 1;
-    if (care) boost = r.type === 'guide' || r.type === 'faq' ? 1.3 : r.type === 'fact' ? 0.6 : 0.85;
+    if (care) boost = r.type === 'guide' || r.type === 'faq' || r.type === 'hub' ? 1.3 : r.type === 'fact' ? 0.6 : 0.85;
     if (topics.some((t) => r.slug.includes(`-${t}`))) boost *= 1.6;
+    if (broad && r.type === 'hub') boost *= 3;
     return { ...r, coverage, score: -r.rank * (0.5 + coverage) * (1 + 0.5 * headingCoverage) * boost };
   }).sort((a, b) => b.score - a.score);
 
@@ -1793,8 +1800,11 @@ function askLinks(chunks, first = null) {
   const seen = new Set();
   const links = [];
   for (const c of ordered) {
-    if (seen.has(c.slug)) continue;
-    seen.add(c.slug);
+    // One link per page. By path, not slug: a hub and its encyclopedia
+    // profile share an id.
+    const page = c.url.split('#')[0];
+    if (seen.has(page)) continue;
+    seen.add(page);
     links.push({ title: c.title, url: c.url });
   }
   return links.slice(0, 3);

@@ -35,7 +35,7 @@ This file is the spec as built. Where the build differs, it says why.
 ## What it searches
 
 `scripts/build-ask-index.mjs` turns every published page into chunks in
-`.ask-index/chunks.json` (gitignored), about 8,000 of them:
+`.ask-index/chunks.json` (gitignored), about 8,500 of them:
 
 | Type | What | Link |
 |---|---|---|
@@ -46,6 +46,7 @@ This file is the spec as built. Where the build differs, it says why.
 | beastfile | each published Beastlypedia entry | `/beastlypedia/<id>/` |
 | encyclopedia | each encyclopedia profile | `/encyclopedia/animal/<id>/` |
 | glossary | each glossary term | `/glossary/#<slugify(term)>` |
+| hub | each care guide hub: first week, emergency card and FAQs on router hubs; written sections, cost table and FAQs on dog and cat hubs (owner, 2026-11-02) | `/guides/<id>/` |
 | legal | legal guide sections, kept but never sent to the model | |
 
 Skipped: Chronicles (content/short-story), `content/_scheduled-*`, care package
@@ -94,8 +95,10 @@ In `public/_worker.js`, listed in `public/_routes.json`. In order:
    also reaches sulcata and Russian), a few reader word synonyms (tank and
    enclosure, eat and feed, poop and droppings), a boost for the matching split
    care guide and for headings that name the question, and guides ahead of
-   facts on care questions. A weak best match returns `no_match` with no model
-   call.
+   facts on care questions. A question that names a species and only general
+   words ("how do I take care of a leopard gecko", "tips for a new hamster
+   owner") ranks that species' hub first. A weak best match returns `no_match`
+   with no model call.
 5. 300 answers a day across the site in KV, resetting at midnight Eastern.
 6. Haiku: the top 4 chunks, about 3,000 tokens at most, in `<sources>`, the
    question last.
