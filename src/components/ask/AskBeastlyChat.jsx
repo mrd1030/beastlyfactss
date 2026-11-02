@@ -74,8 +74,20 @@ function answeredBy(c) {
   return r.result === 'no_match' ? 'Not covered yet' : 'No answer';
 }
 
-// One conversation's answers, stacked: the question as a small label, then
-// the answer.
+// The reader's own question, as a bubble on the right, so it never reads as
+// part of the answer.
+function QuestionBubble({ children }) {
+  return (
+    <div className="flex justify-end mb-2">
+      <p className="max-w-[85%] bg-secondary text-secondary-foreground text-sm font-body rounded-2xl rounded-br-md px-3.5 py-2 shadow-sm">
+        {children}
+      </p>
+    </div>
+  );
+}
+
+// One conversation's answers, stacked: the reader's question on the right,
+// then the answer.
 function Turns({ conversation, onNavigate, showDate = false }) {
   const day = easternDate(new Date(conversation.turns[0].at));
   return (
@@ -85,7 +97,7 @@ function Turns({ conversation, onNavigate, showDate = false }) {
       )}
       {conversation.turns.map((t) => (
         <div key={t.at}>
-          <p className="text-xs font-body font-semibold text-muted-foreground mb-1.5">{t.q}</p>
+          <QuestionBubble>{t.q}</QuestionBubble>
           <AskReply question={t.q} reply={t.reply} compact onNavigate={onNavigate} />
         </div>
       ))}
@@ -374,7 +386,7 @@ export default function AskBeastlyChat() {
               {current && <Turns conversation={current} onNavigate={onNavigate} />}
               {pending && (
                 <div className={current ? 'mt-5' : ''}>
-                  <p className="text-xs font-body font-semibold text-muted-foreground mb-1.5">{pending}</p>
+                  <QuestionBubble>{pending}</QuestionBubble>
                   <p className="flex items-center gap-2 text-sm font-body text-muted-foreground" role="status">
                     <Loader2 className="w-4 h-4 animate-spin" /> Looking through our guides...
                   </p>
