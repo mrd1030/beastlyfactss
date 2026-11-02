@@ -94,7 +94,8 @@ In `public/_worker.js`, listed in `public/_routes.json`. In order:
 
 1. Turnstile with `TURNSTILE_SECRET_KEY`, skipped while unset (as the contact
    form does).
-2. 5 questions per visitor per hour in KV `ASK_KV`, keyed on a hash of the IP
+2. 12 questions per visitor per hour (owner, 2026-11-02; a follow-up counts as
+   a question) in KV `ASK_KV`, keyed on a hash of the IP
    and the Eastern date; no IP is stored. Off on the sharetest site (by host),
    so testing is unlimited and beastlyfacts.com always has it.
 3. Legal questions never reach the model. A legal word ("legal", "permit",
@@ -119,7 +120,8 @@ In `public/_worker.js`, listed in `public/_routes.json`. In order:
    goes inside the full text match, so a species question reads about 110
    rows instead of 6,000; a question with no species tries every word first
    and any word only if that finds too few; a legal question skips the search.
-5. 300 answers a day across the site in KV, resetting at midnight Eastern.
+5. 1,000 answers a day across the site in KV (owner, 2026-11-02), resetting at
+   midnight Eastern.
 6. Haiku: the top 4 chunks, about 3,000 tokens at most, in `<sources>`, the
    question last.
 
@@ -194,6 +196,8 @@ both scripts.
 ## Cost
 
 Haiku 5.5 is $0.10 per million input tokens and $0.50 per million output under
-100,000 tokens a prompt. An answer is about 3,800 tokens in and 250 out, about
-$0.0005, so 2,000 answers per dollar. The 300 a day cap holds the worst day
-near $0.15. Misses cost nothing.
+100,000 tokens a prompt. Measured in the reader test (Console usage,
+2026-11-02): an answer averages about 1,850 tokens in and 130 out, about
+$0.00025, so 4,000 answers per dollar. The 1,000 a day cap holds the worst day
+near $0.25, about $7.50 a month, under the $10 Console spend limit, which is
+the backstop. Misses and legal answers cost nothing.

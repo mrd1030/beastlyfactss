@@ -1317,17 +1317,17 @@ async function handleCarePackageStore(request, env, pathname) {
 // error: anything that is not an answer comes back as a result the page
 // handles by showing the plain search results it already has.
 //   1. Turnstile (TURNSTILE_SECRET_KEY, same as the contact form)
-//   2. 5 questions per visitor per hour (ASK_KV; the visitor key is a hash of
+//   2. 12 questions per visitor per hour (ASK_KV; the visitor key is a hash of
 //      the IP and the Eastern date, and the IP itself is never stored)
 //   3. legal questions never reach the model: link the legal pages instead
 //   4. search; a weak best match returns no_match without calling the model
-//   5. 300 answers per day (ASK_KV, resets at midnight Eastern)
+//   5. 1,000 answers per day (ASK_KV, resets at midnight Eastern)
 //   6. the model call (step 4 of the build)
 
 const ASK = {
   maxQuestion: 300,
-  perVisitorPerHour: 5,
-  answersPerDay: 300,
+  perVisitorPerHour: 12,
+  answersPerDay: 1000,
   candidates: 40,
   topK: 4,
   tokenBudget: 3000,
