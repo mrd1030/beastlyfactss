@@ -96,7 +96,11 @@ function keepable(reply) {
 export async function askQuestion(question, captcha = '', conversationId = null) {
   const q = String(question).trim();
   const current = readHistory().find((c) => c.id === conversationId);
-  const lastTurn = canFollowUp(current) ? current.turns[current.turns.length - 1] : null;
+  // The last real question: a thank-you turn carries nothing to search, so a
+  // follow-up after "thanks!" goes back to the question before it.
+  const lastTurn = canFollowUp(current)
+    ? [...current.turns].reverse().find((t) => t.reply?.result !== 'thanks') || null
+    : null;
   const prev = lastTurn ? lastTurn.q : '';
   // After "which animal?", the reply that names it carries the question.
   const clarify = lastTurn?.reply?.result === 'clarify';

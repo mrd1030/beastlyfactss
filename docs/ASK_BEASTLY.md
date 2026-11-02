@@ -170,12 +170,15 @@ In `public/_worker.js`, listed in `public/_routes.json`. In order:
    the chat the reader's next message carries it: "a hamster" searches as
    "a hamster he's acting weird" (the client sends `context.clarify`; only
    then does a question naming an animal carry the last one along). He and
-   she count anywhere; it and they only with a behavior or health word
-   after them ("it won't eat", "they keep scratching"), so "it says on your
+   she count anywhere; it and they only with a behavior, health or care word
+   after them ("it won't eat", "they keep scratching", "what does it eat",
+   "how big do they get"). A reader on the bearded dragon hub may mean that
+   animal, but the chat cannot see the page, so it asks. So "it says on your
    site" or "they're social, right?" search normally, and a question
    choosing a pet ("my friend wants a pet, what's easy") never gets it
    (Fable review). "Its tail is purple" is not caught and searches.
-   Thanks (owner, 2026-11-02): a message that is only thanks or an
+   Thanks (owner, 2026-11-02): a thank-you turn is skipped when the next
+   question looks back for its follow-up context. A message that is only thanks or an
    acknowledgement ("thanks!", "ty so much", "ok cool, got it", "that
    helps") gets a short "You're welcome" back, result `thanks`: no search,
    no model call, not logged, not counted toward the hourly limit or the 3

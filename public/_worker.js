@@ -1362,11 +1362,11 @@ const ASK_THANKS_WORDS = new Set((
   'thanks thank thx ty tysm tyvm thankyou thanku appreciate appreciated it you so much a lot lots ' +
   'very ok okay k kk cool great awesome perfect nice sweet good got gotcha that this helps helped ' +
   'helpful makes sense amazing wonderful lovely brilliant excellent alright all right will do ' +
-  'oh ah yay yes yeah yep yup gonna try for the all again really i will do much'
+  'oh ah yay yes yeah yep yup gonna try for the all again really i will ill do much'
 ).split(' '));
 // At least one word that carries the thanks or the "ok", so "a lot" alone
 // is not one. "ok", "cool", "got it" count: they close a thread too.
-const ASK_THANKS_CORE = /\b(thanks|thank|thx|ty|tysm|tyvm|thankyou|thanku|appreciate|appreciated|helps|helped|helpful|sense|gotcha|got|ok|okay|k|kk|cool|great|awesome|perfect|nice|sweet|amazing|wonderful|lovely|brilliant|excellent|alright|yay|will do|will try|gonna try)\b/;
+const ASK_THANKS_CORE = /\b(thanks|thank|thx|ty|tysm|tyvm|thankyou|thanku|appreciate|appreciated|helps|helped|helpful|sense|gotcha|got|ok|okay|k|kk|cool|great|awesome|perfect|nice|sweet|amazing|wonderful|lovely|brilliant|excellent|alright|yay|will do|will try|ill try|ill do|gonna try)\b/;
 function askIsThanks(question) {
   if (/\?/.test(question) && !/\b(thanks|thank|thx|ty|tysm)\b/i.test(question)) return false;
   const q = question.toLowerCase().replace(/[^a-z0-9\s']/g, ' ').replace(/'/g, '').replace(/\s+/g, ' ').trim();
@@ -1500,11 +1500,13 @@ const ASK_FACT_RE = /\bfacts?\b/;
 // nothing or the wrong animal, so the reply asks which animal it is, and the
 // reader's next message carries this question with it (owner, 2026-11-02).
 // He and she almost always mean the pet here. It and they only count with a
-// behavior or health word after them ("it won't eat", "they keep
-// scratching"), so "it says on your site" or "they're social, right?" do
+// behavior, health or care word after them ("it won't eat", "they keep
+// scratching", "what does it eat", "how big do they get"): a reader on the
+// bearded dragon hub may mean that animal, but the chat cannot see the page,
+// so it asks (owner, 2026-11-02). So "it says on your site" or "they're social, right?" do
 // not. A question choosing a pet ("my baby is 2, what pet is safe") is not
 // about a particular animal and never gets the question back (Fable review).
-const ASK_PET_REF_RE = /^(he|she|hes|shes)\b|\b(he|she)('s| is| isn'?t| won'?t| will| has| hasn'?t| keeps| seems| was| does| doesn'?t| did| didn'?t| can'?t| just| always| never| looks| acts| sleeps| eats| stopped)\b|\b(hes|shes)\b|\b(it|they|its|theyre)('s|'re| is| are| isn'?t| aren'?t| won'?t| hasn'?t| haven'?t| keeps| keep| seems| seem| stopped| looks| look| has been| have been| doesn'?t| don'?t| can'?t)? ?(not eating|won'?t eat|eat|eating|drink|drinking|sleep|sleeping|breathing|acting|act|lethargic|sick|weird|strange|off|hiding|scratching|shaking|twitching|limping|bleeding|swollen|losing|lost|throwing up|vomiting|sneezing|wheezing|pooping|peeing|biting|hissing|screaming|crying|hurt|injured|bloated|thin|fat)\b|\bmy (pet|baby|boy|girl|guy|little one|buddy)\b/;
+const ASK_PET_REF_RE = /^(he|she|hes|shes)\b|\b(he|she)('s| is| isn'?t| won'?t| will| has| hasn'?t| keeps| seems| was| does| doesn'?t| did| didn'?t| can'?t| just| always| never| looks| acts| sleeps| eats| stopped)\b|\b(hes|shes)\b|\b(it|they|its|theyre)('s|'re| is| are| isn'?t| aren'?t| won'?t| hasn'?t| haven'?t| keeps| keep| seems| seem| stopped| looks| look| has been| have been| doesn'?t| don'?t| can'?t)? ?(not eating|won'?t eat|eat|eating|drink|drinking|sleep|sleeping|breathing|acting|act|lethargic|sick|weird|strange|off|hiding|scratching|shaking|twitching|limping|bleeding|swollen|losing|lost|throwing up|vomiting|sneezing|wheezing|pooping|peeing|biting|hissing|screaming|crying|hurt|injured|bloated|thin|fat|get|grow|need|needs|live|cost|weigh|like|shed|molt)\b|\bmy (pet|baby|boy|girl|guy|little one|buddy)\b/;
 const ASK_CHOOSING_RE = /\b(a|an|which|what|best|good|easy|safe|first|new|another|get a|getting a) (pet|animal)s?\b/;
 const ASK_SITE_PLACE_RE = /\b(files?|hub|sections?)\b/;
 const ASK_CORRECTION = new Set('sorry oops meant mean typo spelled spelling actually wrong i'.split(' '));
