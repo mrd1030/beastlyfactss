@@ -24,7 +24,9 @@ This file is the spec as built. Where the build differs, it says why.
   top, or at the end (owner, 2026-11-02). Hidden on /composer/ and in the installed
   Beastle app. Code: `src/components/ask/AskBeastlyChat.jsx`, mounted by
   `AskBeastlyChatSlot.jsx` in AppLayout after the page settles, never during
-  prerender.
+  prerender. The slot wraps the chat in an error boundary: an error inside it
+  removes the chat, logs to the console and resets its saved layout, and
+  never blanks the page (a drag after undocking once did, 2026-11-02).
 - **The search page.** A query of three words or more shows an Ask Beastly
   button under the search box (Enter asks it too), with the answer full width
   above the results. Code: `src/components/search/AskBeastly.jsx`.
