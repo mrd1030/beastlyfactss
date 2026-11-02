@@ -5,10 +5,11 @@ import { ChevronDown, Folder, FolderOpen } from 'lucide-react';
 // row that sits in the grid like any other row and opens a panel beneath it.
 //
 // The panel is a sibling grid item spanning the full width, not part of the
-// row, so the row keeps its normal cell size. The list grid uses dense packing
-// (grid-flow-row-dense), which lets the rows after the group fill the cells
-// beside it when it opens, so the panel lands under the row the group sits in
-// rather than leaving a hole. Closed, the panel is hidden, not unmounted (the
+// row, so the row keeps its normal cell size. The list grid does not use
+// dense packing (owner, 2026-11-02): an open panel keeps list order, so the
+// rows after the group sit below the panel instead of jumping up beside the
+// group, which read as if they belonged to it. The cost is empty cells beside
+// an open group in its row. Closed, the panel is hidden, not unmounted (the
 // class toggles too, since Tailwind's `grid` would override the attribute):
 // every species link stays in the DOM and so in the prerendered HTML.
 //
