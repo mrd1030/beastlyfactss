@@ -146,10 +146,11 @@ Rules:
 - If nothing in the sources answers the question, reply exactly: NO_ANSWER. Do not describe a different condition instead.
 - Never add facts, numbers, doses, or brands that are not in the sources. Take each claim from the section that actually states it; do not credit one section with another's words.
 - Keep hedges from the sources (can, may, often). Do not make them stronger.
-- Never give medication doses. Never say a symptom is fine to wait out.
+- Never give medication doses. Never say a symptom is fine to wait out or to watch for now.
 - If a source calls the sign urgent, or lists it under "call the vet now", the first sentence tells the reader to call the vet the source names (reptile vet, rabbit-savvy vet) now. The remaining sentences say what the guides tie that sign to.
-- Speak to the reader directly. Never write "the sources", "Source 2", "I can't say", or "I don't know". When you must name the site, write "our guides", at most once per answer.
-- Gap sentence: only when the reader asked for a specific thing (a cause, a step, a number) that no source gives AND you have answered another part of the question, add one short sentence: "Our guides don't cover X." Never two such sentences. Never one when the guides already name the condition or the answer is complete. Never guess to fill a gap.
+- Health gap: if the reader describes a sign, symptom, injury or change in the animal and no source names that sign, the first sentence is: "Our guides don't cover <the sign>, so the safest move is to have a <vet type the sources name, or an exotics vet> look at your <species>." You may add ONE sentence on the closest sign the guides do cover for the same body part or behavior, worded as a check ("so check X"), never as the cause. Never write "what I can tell you".
+- Other gap: only when the reader asked for a non-health specific (a step, a number) that no source gives AND you have answered another part, add one sentence: "Our guides don't cover X." Never guess to fill a gap.
+- Speak to the reader directly. Never write "the sources", "Source 2", "I can't say", "I can't tell you", "I don't know", or any sentence about what you are unable to do. Write "our guides" at most once per answer.
 - Say each point once. Do not restate it in other words.
 - End with the title of the one source that answers best, in the form: READ: <title>
 ```
@@ -171,6 +172,15 @@ credited to the section that states it. The worker rewrites source talk
 ("the sources don't cover" to "our guides don't cover"; lead-ins such as
 "Sources say" stripped) rather than cutting sentences, and keeps at most one
 "not covered" sentence.
+
+Health gap (owner, 2026-11-02, Fable wording): a sign the guides do not name
+opens with "Our guides don't cover <the sign>, so the safest move is to have a
+<vet> look at your <species>", plus at most one sentence on the closest covered
+sign, worded as something to check, never as the cause. "I can't tell you"
+and similar are cut by the cleanup. The owner considered adding "a fall or a
+bump, watch it, vet if it gets worse" to jaw answers; it stays out: no guide
+names a fall as a cause and the bearded dragon guide lists jaw swelling under
+call the vet now. If it is ever added, it goes into the guide, researched.
 
 The worker turns NO_ANSWER into `no_match`, a refusal or an API error into
 `refused` (the matched pages shown as plain links), dashes into "to" in a

@@ -1769,10 +1769,11 @@ Rules:
 - If nothing in the sources answers the question, reply exactly: NO_ANSWER. Do not describe a different condition instead.
 - Never add facts, numbers, doses, or brands that are not in the sources. Take each claim from the section that actually states it; do not credit one section with another's words.
 - Keep hedges from the sources (can, may, often). Do not make them stronger.
-- Never give medication doses. Never say a symptom is fine to wait out.
+- Never give medication doses. Never say a symptom is fine to wait out or to watch for now.
 - If a source calls the sign urgent, or lists it under "call the vet now", the first sentence tells the reader to call the vet the source names (reptile vet, rabbit-savvy vet) now. The remaining sentences say what the guides tie that sign to.
-- Speak to the reader directly. Never write "the sources", "Source 2", "I can't say", or "I don't know". When you must name the site, write "our guides", at most once per answer.
-- Gap sentence: only when the reader asked for a specific thing (a cause, a step, a number) that no source gives AND you have answered another part of the question, add one short sentence: "Our guides don't cover X." Never two such sentences. Never one when the guides already name the condition or the answer is complete. Never guess to fill a gap.
+- Health gap: if the reader describes a sign, symptom, injury or change in the animal and no source names that sign, the first sentence is: "Our guides don't cover <the sign>, so the safest move is to have a <vet type the sources name, or an exotics vet> look at your <species>." You may add ONE sentence on the closest sign the guides do cover for the same body part or behavior, worded as a check ("so check X"), never as the cause. Never write "what I can tell you".
+- Other gap: only when the reader asked for a non-health specific (a step, a number) that no source gives AND you have answered another part, add one sentence: "Our guides don't cover X." Never guess to fill a gap.
+- Speak to the reader directly. Never write "the sources", "Source 2", "I can't say", "I can't tell you", "I don't know", or any sentence about what you are unable to do. Write "our guides" at most once per answer.
 - Say each point once. Do not restate it in other words.
 - End with the title of the one source that answers best, in the form: READ: <title>`;
 
@@ -1844,6 +1845,10 @@ function askParseReply(text, chunks, stopReason) {
   // stripped from the front of its sentence. Only a sentence still about the
   // sources after that is dropped. A source's own wording ("vet sources give
   // a broader range") has no "the" or number before it and stays.
+  // "I can't tell you" and its kin: the clause is cut, the sentence kept.
+  answer = answer
+    .replace(/,?\s*so I (can'?t|cannot|am unable to|'m unable to) (tell you|say|explain|know)[^.!?]*/gi, '')
+    .replace(/\bI (can'?t|cannot|am unable to|'m unable to) (tell you|say|explain|know)\b[^.!?]*[.!?]?\s*/gi, '');
   // At most one "not covered" sentence: a second one is dropped.
   let gapSeen = false;
   answer = answer
@@ -1851,7 +1856,7 @@ function askParseReply(text, chunks, stopReason) {
     .map(askRewriteSourceTalk)
     .filter((sentence) => {
       if (!sentence || ASK_SOURCE_TALK_RE.test(sentence)) return false;
-      if (/\b(don'?t|do not|doesn'?t|does not) cover\b|n[o']t covered\b|\bnot covered\b|\bI can'?t say\b|\bI don'?t know\b/i.test(sentence)) {
+      if (/\b(don'?t|do not|doesn'?t|does not) cover\b|n[o']t covered\b|\bnot covered\b|\bI can'?t (say|tell you)\b|\bI cannot\b|\bunable to\b|\bI don'?t know\b/i.test(sentence)) {
         if (gapSeen) return false;
         gapSeen = true;
       }
