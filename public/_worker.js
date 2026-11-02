@@ -1361,6 +1361,7 @@ const ASK_SYNONYMS = [
   ['sick', 'ill', 'illness', 'disease', 'symptoms'],
   ['big', 'size', 'large', 'length'],
   ['live', 'lifespan', 'old', 'age'],
+  ['poop', 'pooped', 'pooping', 'poo', 'stool', 'droppings', 'feces', 'fecal'],
 ];
 const ASK_SYNONYM_OF = new Map(ASK_SYNONYMS.flatMap((g) => g.map((w) => [w, g])));
 
@@ -1466,7 +1467,10 @@ async function askRetrieve(db, question) {
   )];
   if (!tokens.length) return { chunks: [], species, best: null, legal: false, meta, q };
 
-  const legal = ASK_LEGAL_RE.test(q);
+  // "Can I have a hedgehog in California" never says "legal": a state name
+  // with own / have / keep / buy / get is a legal question too.
+  const legal = ASK_LEGAL_RE.test(q)
+    || (Boolean(askFindName(q, meta.states)) && /\b(own|have|keep|buy|get|bring)\b/.test(q));
   const table = `chunks_${meta.slot}`;
   const fts = `${table}_fts`;
   // With a species named, the species filter does that work, so only the
@@ -1618,7 +1622,12 @@ async function handleAsk(request, env, ctx) {
   }
 
   const slugs = [...new Set(found.chunks.map((c) => c.slug))];
-  const emergency = ASK_HEALTH_RE.test(found.q) || found.chunks.some((c) => ASK_HEALTH_RE.test(c.text.toLowerCase()));
+  // Health words in the question, or a health guide section as the best
+  // match that names one. Any matched section was too loose: feeding and
+  // substrate sections mention breathing or swelling in passing.
+  const top = found.chunks[0];
+  const emergency = ASK_HEALTH_RE.test(found.q)
+    || Boolean(top && /-health/.test(top.slug) && ASK_HEALTH_RE.test(top.text.toLowerCase()));
 
   if ((await askDailyUsed(env)) >= ASK.answersPerDay) {
     log('capped', slugs);
@@ -1677,6 +1686,7 @@ Rules:
 - Never add facts, numbers, doses, or brands that are not in the sources.
 - Keep hedges from the sources (can, may, often). Do not make them stronger.
 - Never give medication doses. Never say a symptom is fine to wait out.
+- Speak to the reader directly. Never mention the sources, "Source 2", or "the sources say".
 - End with the title of the one source that answers best, in the form: READ: <title>`;
 
 const askSourceTitle = (c) => (c.heading ? `${c.title}: ${c.heading}` : c.title);
