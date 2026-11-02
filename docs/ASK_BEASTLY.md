@@ -118,8 +118,15 @@ In `public/_worker.js`, listed in `public/_routes.json`. In order:
    plus a request for a place on the site ("show me where the betta files
    are", "take me to the leopard gecko guide", "how to find the betta fish
    files") gets that species' hub as a link, result `navigate`, with no
-   model call. "Files", "hub" or "section" with a species counts on its own, with no
-   "where" or "find" needed.
+   model call. "Files", "hub" or "section" with a species counts on its
+   own, with no "where" or "find" needed.
+
+   Links under an answer (owner, 2026-11-02, on a Fable recommendation): at
+   most two, each one a page the answer came from. First the page the model
+   names (READ). Second, a page it says it also used (ALSO), or else the
+   species' care guide hub, unless the first link already is the hub or its
+   encyclopedia profile (one page with a toggle). Other search hits never
+   show. With no READ, the old order: the top three search hits.
 5. Search: nicknames expanded, the named species used as a filter ("tortoise"
    also reaches sulcata and Russian), a few reader word synonyms (tank and
    enclosure, eat and feed, poop and droppings), a boost for the matching split

@@ -1790,7 +1790,7 @@ async function handleAsk(request, env, ctx) {
   return storeJson({
     result: 'answered',
     answer: reply.answer,
-    links: askLinks(found.chunks, reply.best),
+    links: reply.best ? askAnswerLinks(reply.best, reply.also, species) : askLinks(found.chunks),
     emergency,
     species,
     followUp: found.followUp,
@@ -1819,7 +1819,8 @@ Rules:
 - Other gap: only when the reader asked for a non-health specific (a step, a number) that no source gives AND you have answered another part, add one sentence: "Our guides don't cover X." Never guess to fill a gap.
 - Speak to the reader directly. Never write "the sources", "Source 2", "I can't say", "I can't tell you", "I don't know", or any sentence about what you are unable to do. Write "our guides" at most once per answer.
 - Say each point once. Do not restate it in other words.
-- End with the title of the one source that answers best, in the form: READ: <title>`;
+- End with the title of the one source that answers best, in the form: READ: <title>
+- Only if your answer also took a fact from a second source, add one more line: ALSO: <title>. Use titles exactly as given in <sources>.`;
 
 function askRewriteSourceTalk(sentence) {
   let out = sentence
@@ -1870,14 +1871,26 @@ function askParseReply(text, chunks, stopReason) {
   if (!text || /^NO_ANSWER\b/.test(text) || /\bNO_ANSWER\s*$/.test(text)) return { kind: 'no_answer' };
   let answer = text;
   let best = null;
+  const findNamed = (title) => {
+    const named = title.toLowerCase().replace(/[*_"]/g, '').trim();
+    return chunks.find((c) => askSourceTitle(c).toLowerCase() === named)
+      || chunks.find((c) => named.includes(c.title.toLowerCase()) || c.title.toLowerCase().includes(named))
+      || null;
+  };
+  // ALSO comes after READ when the answer used a second source.
+  let also = null;
+  const alsoLine = answer.match(/\n?\s*ALSO:\s*(.+?)\s*$/i);
+  if (alsoLine) {
+    answer = answer.slice(0, alsoLine.index).trim();
+    also = findNamed(alsoLine[1]);
+  }
   const read = answer.match(/\n?\s*READ:\s*(.+?)\s*$/i);
   if (read) {
     answer = answer.slice(0, read.index).trim();
-    const named = read[1].toLowerCase().replace(/[*_"]/g, '').trim();
-    best = chunks.find((c) => askSourceTitle(c).toLowerCase() === named)
-      || chunks.find((c) => named.includes(c.title.toLowerCase()) || c.title.toLowerCase().includes(named))
-      || null;
+    best = findNamed(read[1]);
   }
+  // An ALSO line left mid-text (written before READ) is dropped too.
+  answer = answer.replace(/\s*ALSO:\s*[^\n]*$/i, '');
   answer = answer
     .replace(/(\d)\s*[\u2013\u2014]\s*(\d)/g, '$1 to $2')
     .replace(/\s*[\u2013\u2014]\s*/g, ', ')
@@ -1913,10 +1926,33 @@ function askParseReply(text, chunks, stopReason) {
     answer = end > 0 ? answer.slice(0, end + 1) : answer;
   }
   if (!answer) return { kind: 'no_answer' };
-  return { kind: 'answer', answer, best };
+  return { kind: 'answer', answer, best, also };
 }
 
-// One link per page, in the order the chunks ranked.
+// Under an answer (owner, 2026-11-02, on a Fable recommendation): at most
+// two links, and each one means "this is where the answer came from". The
+// first is the page the model answered from (READ). The second is a page the
+// model says it also used (ALSO), or else the species' care guide hub, where
+// everything on the animal starts, or else nothing. The other search hits
+// never show: for "where do bettas live in the wild" they were a lifespan
+// line in a health article and a feeding article.
+function askAnswerLinks(best, also, species) {
+  const page = (u) => u.split('#')[0];
+  const links = [{ title: best.title, url: best.url }];
+  if (also && page(also.url) !== page(best.url)) {
+    links.push({ title: also.title, url: also.url });
+  } else if (species?.guideId) {
+    // The hub and the species' encyclopedia profile are one page with a
+    // toggle, so either one already is the hub.
+    const hub = `/guides/${species.guideId}/`;
+    const profile = `/encyclopedia/animal/${species.guideId}/`;
+    if (page(best.url) !== hub && page(best.url) !== profile) links.push({ title: `${species.name} Care Guide`, url: hub });
+  }
+  return links;
+}
+
+// One link per page, in the order the chunks ranked. Used when the model
+// named no source, and for refused answers.
 function askLinks(chunks, first = null) {
   const ordered = first ? [first, ...chunks.filter((c) => c !== first)] : chunks;
   const seen = new Set();
