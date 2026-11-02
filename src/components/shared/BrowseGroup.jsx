@@ -8,8 +8,9 @@ import { ChevronDown, Folder, FolderOpen } from 'lucide-react';
 // row, so the row keeps its normal cell size. The list grid does not use
 // dense packing (owner, 2026-11-02): an open panel keeps list order, so the
 // rows after the group sit below the panel instead of jumping up beside the
-// group, which read as if they belonged to it. The cost is empty cells beside
-// an open group in its row. Closed, the panel is hidden, not unmounted (the
+// group, which read as if they belonged to it. An open group also starts its
+// own row (col-start-1), so it heads its panel from the left edge and the
+// cards before it keep their row. Closed, it sits in the grid like any card. Closed, the panel is hidden, not unmounted (the
 // class toggles too, since Tailwind's `grid` would override the attribute):
 // every species link stays in the DOM and so in the prerendered HTML.
 //
@@ -36,7 +37,7 @@ export default function BrowseGroup({ name, subtitle, count, defaultOpen = false
         aria-controls={panelId}
         aria-label={`${name}, ${count} species: ${subtitle}. ${open ? 'Collapse' : 'Expand'}`}
         title={subtitle}
-        className={`flex items-center justify-between w-full text-left bg-card border rounded-xl px-4 py-3 hover:border-secondary/40 hover:shadow-sm transition-all group cursor-pointer ${open ? 'border-secondary/40' : 'border-border'}`}
+        className={`flex items-center justify-between w-full text-left bg-card border rounded-xl px-4 py-3 hover:border-secondary/40 hover:shadow-sm transition-all group cursor-pointer ${open ? 'border-secondary/40 col-start-1' : 'border-border'}`}
       >
         <span className="flex items-center gap-3 min-w-0">
           <span className={`w-10 h-10 rounded-lg flex-shrink-0 grid place-items-center border border-dashed transition-colors ${open ? 'bg-secondary/15 border-secondary/60 text-secondary' : 'bg-muted border-border text-muted-foreground group-hover:text-secondary group-hover:border-secondary/40'}`}>
