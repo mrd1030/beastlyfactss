@@ -148,11 +148,17 @@ Rules:
 - Keep hedges from the sources (can, may, often). Do not make them stronger.
 - Never give medication doses. Never say a symptom is fine to wait out.
 - Speak to the reader directly. Never mention the sources, "Source 2", or "the sources say".
+- If the sources answer only part of the question, answer that part and say plainly what they do not cover. Never guess a cause, reason, or number to fill the gap.
 - End with the title of the one source that answers best, in the form: READ: <title>
 ```
 
 The "speak directly" rule was added after the first reader test, where six of
-17 answers said "the sources say".
+17 answers said "the sources say". The "answer only part" rule followed the
+source check, where the axolotl gills answer filled a gap with a cause no guide
+gives. Behind both, the worker drops any sentence that talks about the sources
+themselves ("the sources say", "Source 2 notes"); a source's own wording such
+as "vet sources give a broader range" stays. An answer with nothing left
+becomes `no_match`.
 
 The worker turns NO_ANSWER into `no_match`, a refusal or an API error into
 `refused` (the matched pages shown as plain links), dashes into "to" in a

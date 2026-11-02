@@ -1771,7 +1771,10 @@ Rules:
 - Keep hedges from the sources (can, may, often). Do not make them stronger.
 - Never give medication doses. Never say a symptom is fine to wait out.
 - Speak to the reader directly. Never mention the sources, "Source 2", or "the sources say".
+- If the sources answer only part of the question, answer that part and say plainly what they do not cover. Never guess a cause, reason, or number to fill the gap.
 - End with the title of the one source that answers best, in the form: READ: <title>`;
+
+const ASK_SOURCE_TALK_RE = /\b(the|these|those|my|our|provided|given) sources?\b|\bsources? \d\b|^sources? (say|says|note|notes|mention|mentions|show|shows|describe|describes|don'?t|do not|does not)\b/i;
 
 const askSourceTitle = (c) => (c.heading ? `${c.title}: ${c.heading}` : c.title);
 const askEscape = (t) => String(t).replace(/</g, '&lt;').replace(/>/g, '&gt;');
@@ -1821,6 +1824,15 @@ function askParseReply(text, chunks, stopReason) {
     .replace(/(\d)\s*[\u2013\u2014]\s*(\d)/g, '$1 to $2')
     .replace(/\s*[\u2013\u2014]\s*/g, ', ')
     .replace(/\s+/g, ' ')
+    .trim();
+  // A sentence about the sources themselves ("the sources say", "Source 2
+  // notes", "sources don't say") is dropped: the reader never sees the
+  // machinery. A source's own wording ("vet sources give a broader range")
+  // has no "the" or number before it and stays.
+  answer = answer
+    .split(/(?<=[.!?])\s+/)
+    .filter((sentence) => !ASK_SOURCE_TALK_RE.test(sentence))
+    .join(' ')
     .trim();
   if (stopReason === 'max_tokens') {
     const end = Math.max(answer.lastIndexOf('. '), answer.lastIndexOf('! '), answer.lastIndexOf('? '));
