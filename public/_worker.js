@@ -1499,14 +1499,13 @@ const ASK_FACT_RE = /\bfacts?\b/;
 // named and none carried over from the last question. Searching would find
 // nothing or the wrong animal, so the reply asks which animal it is, and the
 // reader's next message carries this question with it (owner, 2026-11-02).
-// He and she almost always mean the pet here. It and they only count with a
-// behavior, health or care word after them ("it won't eat", "they keep
-// scratching", "what does it eat", "how big do they get"): a reader on the
-// bearded dragon hub may mean that animal, but the chat cannot see the page,
-// so it asks (owner, 2026-11-02). So "it says on your site" or "they're social, right?" do
-// not. A question choosing a pet ("my baby is 2, what pet is safe") is not
-// about a particular animal and never gets the question back (Fable review).
-const ASK_PET_REF_RE = /^(he|she|hes|shes)\b|\b(he|she)('s| is| isn'?t| won'?t| will| has| hasn'?t| keeps| seems| was| does| doesn'?t| did| didn'?t| can'?t| just| always| never| looks| acts| sleeps| eats| stopped)\b|\b(hes|shes)\b|\b(it|they|its|theyre)('s|'re| is| are| isn'?t| aren'?t| won'?t| hasn'?t| haven'?t| keeps| keep| seems| seem| stopped| looks| look| has been| have been| doesn'?t| don'?t| can'?t)? ?(not eating|won'?t eat|eat|eating|drink|drinking|sleep|sleeping|breathing|acting|act|lethargic|sick|weird|strange|off|hiding|scratching|shaking|twitching|limping|bleeding|swollen|losing|lost|throwing up|vomiting|sneezing|wheezing|pooping|peeing|biting|hissing|screaming|crying|hurt|injured|bloated|thin|fat|get|grow|need|needs|live|cost|weigh|like|shed|molt)\b|\bmy (pet|baby|boy|girl|guy|little one|buddy)\b/;
+// Any he, she, it, they or "my pet" with no animal named or carried over:
+// whatever the question is, the answer depends on which animal, and the chat
+// cannot see the page the reader is on (a reader on the bearded dragon hub
+// may mean that animal). So it asks (owner, 2026-11-02). Law questions are
+// handled before this, and a question choosing a pet ("my baby is 2, what pet
+// is safe") never gets it.
+const ASK_PET_REF_RE = /\b(he|she|hes|shes|him|her|it|its|they|theyre|them|their)\b|\bmy (pet|baby|boy|girl|guy|little one|buddy)\b/;
 const ASK_CHOOSING_RE = /\b(a|an|which|what|best|good|easy|safe|first|new|another|get a|getting a) (pet|animal)s?\b/;
 const ASK_SITE_PLACE_RE = /\b(files?|hub|sections?)\b/;
 const ASK_CORRECTION = new Set('sorry oops meant mean typo spelled spelling actually wrong i'.split(' '));
