@@ -60,21 +60,22 @@ with care guide ids, and the legal matrix's states and animals.
 ## The index in D1
 
 `scripts/load-ask-index.mjs` loads it into the D1 database `ask-index`
-(binding `ASK_DB`) through the Cloudflare REST API. Two slots, `chunks_a` and
-`chunks_b`, each with an FTS5 table (porter stemming); a load fills the idle
-slot, checks the row count, then flips `ask_meta.slot`. The legal matrix
-(src/lib/data/legalStatus.json) loads into the same slot as `legal_a` or
-`legal_b`, one row per animal and jurisdiction, so readers never see a
-half loaded index and a failed load leaves the live one alone. It never fails
-the build.
+(binding `ASK_DB`) through the Cloudflare REST API: `chunks_live` with an FTS5
+table over it (porter stemming), and `legal_live`, the legal matrix
+(src/lib/data/legalStatus.json) one row per animal and jurisdiction.
 
-A load writes roughly 20,000 to 25,000 D1 rows, and the free plan allows
-100,000 a day, so it first compares a fingerprint of the chunks, lookups and
-legal matrix with the live one (`ask_meta.hash`) and writes nothing when they
-match: a code-only build costs no writes. `ASK_INDEX_FORCE=1` reloads anyway.
+The load is incremental (owner, 2026-11-02). D1's free plan allows 100,000
+written rows a day and the site can deploy many times a day, so every chunk
+and legal cell carries a hash of its content; the load reads the live hashes
+and writes only what is new, changed or gone. A new fact or an edited section
+is a few rows, a build with no content change writes nothing, and only the
+very first load (about 21,000 rows) writes everything. `ASK_INDEX_FORCE=1`
+wipes and reloads. A load that fails partway leaves the old rows serving and
+the next load finishes the job. It never fails the build.
+
 The sharetest project and main share this database, so once Ask Beastly is on
 main, set the sharetest build command back to `npx vite build`, or two
-different branches will take turns reloading it.
+branches with different content will keep rewriting each other's sections.
 
 It runs at the end of `npm run build` when the branch is main, or when
 `ASK_INDEX_LOAD=1`, and only with `CLOUDFLARE_API_TOKEN` (D1 Edit) set. The

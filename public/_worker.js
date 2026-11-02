@@ -1404,7 +1404,9 @@ async function askMeta(db) {
   if (askMetaCache && Date.now() - askMetaCache.at < 300000) return askMetaCache;
   const { results } = await db.prepare('SELECT key, value FROM ask_meta').all();
   const m = Object.fromEntries(results.map((r) => [r.key, r.value]));
-  if (m.slot !== 'a' && m.slot !== 'b') throw new Error('ask index has no live slot');
+  // The table set the load wrote: 'live' (incremental), or 'a' / 'b' from
+  // before it.
+  if (!/^[a-z]+$/.test(m.slot || '')) throw new Error('ask index has no live slot');
   const parse = (v, fallback) => { try { return JSON.parse(v); } catch { return fallback; } };
   const aliases = Object.entries(parse(m.aliases, {})).sort((x, y) => y[0].length - x[0].length);
   askMetaCache = {
