@@ -2586,38 +2586,37 @@ Rules:
 - End with the title of the one source that answers best, in the form: READ: <title>
 - Only if your answer also took a fact from a second source, add one more line: ALSO: <title>. Use titles exactly as given in <sources>.`;
 
-// A lead-in that names who says something ("Our emergency card says",
-// "Veterinary sources note"). Cut from the front of a sentence; when one was
-// cut, a second reported clause loses its "that" too, so "says A and that B"
-// becomes "A, and B" (Fable review of the 20-question rerun, 2026-11-02).
-const ASK_LEAD_IN_RE = /^(((most|many|several|some) )?(veterinary |published |scientific )?sources (agree|say|recommend|suggest|note|state)|(our|the) (emergency card|guides?|care guide|article|page)s? ((also|do|does|both|further|specifically) )?(says?|notes?|states?|lists?|explains?|recommends?|mentions?|adds?))( that)?,?\s*/i;
+// Who-says-what talk, one rule for the whole family (owner, 2026-11-03, on a
+// Fable recommendation, replacing a pile of fixed phrases): a speaker (the or
+// our guides, sources, veterinary sources, the emergency card...) followed by
+// a saying verb (note, say, warn, recommend, suggest, add, mention, stress,
+// agree...) is cut wherever it sits, and the fact stays. "Our emergency card
+// says X" becomes "X"; "..., and the guides warn not to let a baby go 3 days"
+// becomes "..., and not to let a baby go 3 days". "Our guides don't cover X"
+// has no saying verb after the speaker, so the gap sentence is untouched.
+// When one is cut, a second reported "and that" goes too ("says A and that
+// B" becomes "A, and B").
+const ASK_ATTRIBUTION_RE = /\b((the|our|these|those|veterinary|published|scientific|most|many|some|several)\s+)?(guides?|sources?|emergency cards?|care guides?)\s+((also|do|does|both|further|specifically|all|generally)\s+)?(warn|note|say|state|list|explain|recommend|suggest|add|mention|stress|agree|advise|caution)s?\b\s*(that\s+)?,?\s*/gi;
 
 function askRewriteSourceTalk(sentence) {
-  // The articles compare their own sources ("most sources agree", "according
-  // to veterinary sources"), and the model echoes it. Those phrases come out
-  // here so the sentence, which often holds the number, survives (owner,
-  // 2026-11-02, on a Fable review).
-  const leadIn = ASK_LEAD_IN_RE.test(sentence);
-  let out = sentence.replace(ASK_LEAD_IN_RE, '');
-  if (leadIn) out = out.replace(/,?\s+and that\s+/gi, ', and ');
+  // Before the speaker rule, which would leave "the range on".
+  const ranged = sentence.replace(/\b(the )?range (that )?(most|many) sources agree on\b/gi, 'the usual range');
+  let out = ranged.replace(ASK_ATTRIBUTION_RE, '');
+  if (out !== ranged) out = out.replace(/,?\s+and that\s+/gi, ', and ');
   out = out
-    .replace(/\b(the )?range (that )?(most|many) sources agree on\b/gi, 'the usual range')
+    // Shapes that are not a speaker plus a verb, kept as their own rules.
     .replace(/,?\s*(though|but|while)\s+(a couple|a few|some|one or two|others)\s+(of them\s+)?(recommend|suggest|say|advise)\b/gi, ', or')
     .replace(/,?\s*according to [^,.]*?sources?\b/gi, '')
+    .replace(/^(according to|per|based on) (the |these |those |the provided )?sources?,?\s*/i, '')
     // "Stuck shed is covered in our shedding guide: soak..." keeps the advice.
     .replace(/^[^.:]*\b(is|are) covered in (our|the) [^.:]*:\s*/i, '')
-    // "Stuck shed is covered in our guides, and it can cut off circulation"
-    // keeps its fact: "Stuck shed can cut off circulation".
-    .replace(/\s+(is|are) covered in our guides,?\s*(and\s+)?(it|they)\s+/i, ' ');
-  out = out
-    .replace(/^(according to|per|based on) (the |these |those |the provided )?sources?,?\s*/i, '')
-    .replace(/^(the |these )?sources? \d* ?(say|note|state|mention|indicate|show)s?\b( that)?,?\s*/i, '')
+    .replace(/\s+(is|are) covered in our guides,?\s*(and\s+)?(it|they)\s+/i, ' ')
+    // Gap sentences in the model's other wordings become ours.
     .replace(/\b(the|these|those|the provided) sources (do not|don't|does not|doesn't) (say|cover|mention|explain|address|describe)\b/gi, "our guides don't cover")
-    // "The guides don't give a usual season": our guides, as in a gap sentence.
     .replace(/\b(the|these|those) guides? (do not|don'?t|does not|doesn'?t)\b/gi, "our guides don't")
-    .replace(/\b(the|these|those|the provided) sources (do|also) (say|note|mention)s?\b( that)?\s*/gi, '')
-    .replace(/\b(the|these|those|the provided) sources\b/gi, 'our guides');
-  out = out.trim();
+    .replace(/\b(the|these|those|the provided) sources\b/gi, 'our guides')
+    .replace(/\s{2,}/g, ' ')
+    .trim();
   return out ? out[0].toUpperCase() + out.slice(1) : out;
 }
 
