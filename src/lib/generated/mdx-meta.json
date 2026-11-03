@@ -5474,7 +5474,7 @@
     "title": "Bearded Dragon Feeding: Schedule, Diet, and Why They Stop Eating",
     "seoTitle": "What Do Bearded Dragons Eat? Diet and Feeding Schedule",
     "seoDescription": "Bearded dragon diet flips with age, mostly insects as juveniles, mostly greens as adults. Gut-load and calcium-dust every feeder, and skip avocado, it's toxic.",
-    "lastUpdated": "2026-10-05",
+    "lastUpdated": "2026-11-03",
     "noIndex": false,
     "excerpt": "Why a bearded dragon's plate should flip from mostly bugs to mostly greens as it grows up, and how to tell brumation from something that needs a vet.",
     "date": "2026-07-27",
@@ -54713,6 +54713,66 @@
     "truth": null,
     "sourceCount": 5,
     "headingCount": 5,
+    "ledeMatchesExcerpt": false,
+    "imageWidth": 1168,
+    "imageHeight": 784
+  },
+  {
+    "path": "/content/guides/world-numbat-day.mdx",
+    "slug": "world-numbat-day",
+    "title": "World Numbat Day Arrives in the Numbat's Best Year in Decades",
+    "seoTitle": "World Numbat Day: First Saturday of November",
+    "seoDescription": "World Numbat Day is the first Saturday of November, set by Project Numbat in 2015. In July 2026 the IUCN moved the numbat from Endangered to Near Threatened.",
+    "lastUpdated": "2026-11-03",
+    "noIndex": false,
+    "excerpt": "The banded anteater lives on termites, up to 20,000 a day, and swallows ants only by accident. By the late 1970s about 300 were left. In July 2026 the IUCN moved the numbat from Endangered to Near Threatened.",
+    "date": "2026-11-03",
+    "category": "Wild Animals",
+    "categories": [
+      "Wild Animals"
+    ],
+    "tags": [
+      "Numbat",
+      "World Numbat Day",
+      "Conservation",
+      "Australia",
+      "Marsupials",
+      "Wild Animals"
+    ],
+    "readTime": 6,
+    "difficulty": "Beginner",
+    "image": "/assets/images/world-numbat-day.jpg",
+    "imageAlt": "A numbat standing on a fallen log in open eucalypt woodland, its reddish back crossed by white bands and its bushy tail raised behind it",
+    "emoji": "🐜",
+    "lastReviewed": "2026-11-03",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "When is World Numbat Day?",
+        "a": "The first Saturday of November. In 2026 that is November 7th, and in 2027 it is November 6th. Project Numbat fixed the rule in 2015, straight after the first celebration at Perth Zoo."
+      },
+      {
+        "q": "Is the numbat still endangered?",
+        "a": "On the IUCN Red List it has been Near Threatened since July 9, 2026, which skips Vulnerable and lands two categories below its old listing. Australian federal law has not followed. Under the EPBC Act the numbat is still Endangered."
+      },
+      {
+        "q": "How many numbats are left in the wild?",
+        "a": "Somewhere between 2,000 and 3,000, against roughly 300 in the late 1970s. They hold on in the two surviving original populations in southwest Western Australia, plus reintroduced populations in Western Australia, South Australia and New South Wales."
+      },
+      {
+        "q": "Do numbats eat ants?",
+        "a": "Almost never. The old name banded anteater is misleading. A numbat is a termite specialist, and the few ants it swallows come up by accident while it digs for termites. It does not drink either, because its prey supplies the water it needs."
+      }
+    ],
+    "relatedProducts": [],
+    "factFile": false,
+    "animalDay": "world-numbat-day",
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 5,
+    "headingCount": 7,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
     "imageHeight": 784

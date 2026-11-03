@@ -9711,6 +9711,18 @@
       "animalDay": "world-lemur-day"
     },
     {
+      "slug": "world-numbat-day",
+      "title": "World Numbat Day: First Saturday of November",
+      "excerpt": "The banded anteater lives on termites, up to 20,000 a day, and swallows ants only by accident. By the late 1970s about",
+      "date": "2026-11-03",
+      "image": "/assets/images/world-numbat-day.jpg",
+      "category": "Wild Animals",
+      "categories": [
+        "Wild Animals"
+      ],
+      "animalDay": "world-numbat-day"
+    },
+    {
       "slug": "world-octopus-day",
       "title": "World Octopus Day: October 8th, and Who Started It",
       "excerpt": "Eight arms, eighth day of the month. World Octopus Day has no charity and no UN resolution behind it. A group of",

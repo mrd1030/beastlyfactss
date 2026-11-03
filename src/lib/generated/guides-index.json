@@ -388,6 +388,15 @@
       "tagline": "The flowing-finned solo showoff that thrives in its own space and recognizes its keeper!"
     },
     {
+      "id": "black-skirt-tetra",
+      "name": "Black Skirt Tetra",
+      "emoji": "🐠",
+      "difficulty": "Beginner",
+      "petType": "Fish",
+      "image": "/assets/guides/black-skirt-tetra.jpg",
+      "tagline": "The hardy, black-finned schooler that keeps its nipping in the family!"
+    },
+    {
       "id": "bristlenose-pleco",
       "name": "Bristlenose Pleco",
       "emoji": "🐟",
@@ -494,6 +503,15 @@
       "petType": "Fish",
       "image": "/assets/guides/platy.jpg",
       "tagline": "The endlessly colorful beginner livebearer that thrives when the water is hard enough!"
+    },
+    {
+      "id": "rummy-nose-tetra",
+      "name": "Rummy-Nose Tetra",
+      "emoji": "🐠",
+      "difficulty": "Intermediate",
+      "petType": "Fish",
+      "image": "/assets/guides/rummy-nose-tetra.jpg",
+      "tagline": "The red-nosed schooler that turns laps of a long tank in lockstep!"
     },
     {
       "id": "swordtail",
