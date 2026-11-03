@@ -124,7 +124,9 @@ The sharetest project and main share this database. Since the merge
 (2026-11-03) the sharetest build command is `npx vite build` again, so only
 main loads the index; the test site reads the same index and writes nothing.
 Test-site builds come only from a branch push without [CI Skip], at the
-owner's word.
+owner's word. A new meta key the test site needs before main loads it can
+be written straight into ask_meta (done once for `catalog`, 2026-11-03, 2
+rows written); the next main load rewrites it with the same value.
 
 It runs at the end of `npm run build` when the branch is main, or when
 `ASK_INDEX_LOAD=1`, and only with `CLOUDFLARE_API_TOKEN` (D1 Edit) set. The
