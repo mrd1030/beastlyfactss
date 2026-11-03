@@ -5,7 +5,7 @@ import {
 import TurnstileWidget, { isTurnstileEnabled } from '@/components/shared/TurnstileWidget';
 import AskReply from '@/components/ask/AskReply';
 import {
-  ASK_HISTORY_EVENT, MAX_TURNS, answersUsed, askQuestion, canFollowUp, clearHistory, deleteConversation, easternDate, readHistory,
+  ASK_HISTORY_EVENT, MAX_TURNS, answersUsed, askQuestion, hasAskPass, canFollowUp, clearHistory, deleteConversation, easternDate, readHistory,
 } from '@/lib/askBeastly';
 import { formatDay } from '@/lib/utils/verifiedDates';
 import { useIsMobileViewport } from '@/lib/hooks/useIsMobileViewport';
@@ -119,6 +119,14 @@ export default function AskBeastlyChat() {
   const [captchaToken, setCaptchaToken] = useState('');
   const [captchaNonce, setCaptchaNonce] = useState(0);
   const [captchaBlocked, setCaptchaBlocked] = useState(false);
+  // While the 30-minute pass from the last Turnstile check is valid, the
+  // widget stays hidden (askBeastly.js). Re-checked each minute so it comes
+  // back when the pass runs out.
+  const [passed, setPassed] = useState(() => hasAskPass());
+  useEffect(() => {
+    const id = window.setInterval(() => setPassed(hasAskPass()), 60000);
+    return () => window.clearInterval(id);
+  }, []);
   const bodyRef = useRef(null);
   const inputRef = useRef(null);
   const drag = useRef(null);
@@ -195,7 +203,7 @@ export default function AskBeastlyChat() {
     setUiState((prev) => { saveUi(prev); return prev; });
   };
 
-  const verified = !isTurnstileEnabled || captchaToken || captchaBlocked;
+  const verified = !isTurnstileEnabled || passed || captchaToken || captchaBlocked;
   const canSend = input.trim().length >= 3 && !pending && verified;
 
   const send = async (text = input) => {
@@ -208,6 +216,7 @@ export default function AskBeastlyChat() {
     const conversation = await askQuestion(q, captchaToken, followable ? current.id : null);
     setCaptchaToken('');
     setCaptchaNonce((n) => n + 1);
+    setPassed(hasAskPass());
     const last = conversation.turns[conversation.turns.length - 1];
     trackEvent('ask_beastly', { result: last.reply.result, place: 'chat', turn: conversation.turns.length });
     setUi({ current: conversation.id });
@@ -519,7 +528,7 @@ export default function AskBeastlyChat() {
             className="border-t border-border px-3 pt-3 pb-[calc(0.75rem+var(--safe-area-inset-bottom,0px))]"
             onSubmit={(e) => { e.preventDefault(); if (canSend) send(); }}
           >
-            {isTurnstileEnabled && (
+            {isTurnstileEnabled && !passed && (
               <TurnstileWidget
                 className="mb-2"
                 onToken={setCaptchaToken}

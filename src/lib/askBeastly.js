@@ -89,6 +89,27 @@ function keepable(reply) {
   return { result: result || 'unavailable', answer, links, emergency, species, legal, health };
 }
 
+// The 30-minute pass the worker hands back after one Turnstile check, so the
+// widget does not run before every question (owner, 2026-11-03). Its first 13
+// characters are the expiry time; the worker checks the signature.
+const PASS_KEY = 'beastly-ask-pass';
+function readPass() {
+  try {
+    const pass = localStorage.getItem(PASS_KEY) || '';
+    const exp = Number(pass.slice(0, 13));
+    return exp > Date.now() + 15000 ? pass : '';
+  } catch {
+    return '';
+  }
+}
+export const hasAskPass = () => Boolean(readPass());
+function savePass(pass) {
+  try {
+    if (pass) localStorage.setItem(PASS_KEY, pass);
+    else localStorage.removeItem(PASS_KEY);
+  } catch { /* storage off: Turnstile runs each time, as before */ }
+}
+
 // The signed-in session's token, sent so the worker can skip the hourly
 // limit for the admin (owner, 2026-11-03). Only someone who has signed in on
 // this browser (the /composer/ login) has 'bf-auth' saved; everyone else
@@ -125,12 +146,17 @@ export async function askQuestion(question, captcha = '', conversationId = null)
   let reply = { result: 'unavailable' };
   try {
     const token = await adminToken();
+    const pass = readPass();
     const res = await fetch('/api/ask', {
       method: 'POST',
       headers: { 'content-type': 'application/json', ...(token && { authorization: `Bearer ${token}` }) },
-      body: JSON.stringify({ question: q, captcha, ...(prev && { context: { prev, ...(clarify && { clarify: true }) } }) }),
+      body: JSON.stringify({ question: q, captcha, ...(pass && { pass }), ...(prev && { context: { prev, ...(clarify && { clarify: true }) } }) }),
     });
     reply = await res.json();
+    if (reply.pass) savePass(reply.pass);
+    // A pass the worker refused (expired in between): drop it, so the
+    // Turnstile widget comes back for the next question.
+    else if (pass && reply.result === 'unavailable' && !captcha) savePass('');
   } catch { /* stays unavailable */ }
 
   const now = Date.now();

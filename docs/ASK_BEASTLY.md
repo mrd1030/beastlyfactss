@@ -132,7 +132,13 @@ account ID is in the script.
 In `public/_worker.js`, listed in `public/_routes.json`. In order:
 
 1. Turnstile with `TURNSTILE_SECRET_KEY`, skipped while unset (as the contact
-   form does).
+   form does). One success earns a 30-minute pass (owner, 2026-11-03): the
+   expiry time signed with HMAC-SHA256 under the same secret, returned as
+   `pass`, kept in localStorage `beastly-ask-pass` and sent with each
+   question; while it is valid the widget is hidden and Turnstile skipped.
+   Nothing is stored server side; a pass cannot be forged or stretched. The
+   hourly limit and daily cap still apply. Before it, a token being single
+   use meant the widget ran before every question.
 2. 12 questions per visitor per hour (owner, 2026-11-02; a follow-up counts as
    a question) in KV `ASK_KV`, keyed on a hash of the IP
    and the Eastern date; no IP is stored. Off on the sharetest site (by host),

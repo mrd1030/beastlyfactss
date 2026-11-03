@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Sparkles, Loader2 } from 'lucide-react';
 import TurnstileWidget, { isTurnstileEnabled } from '@/components/shared/TurnstileWidget';
 import AskReply from '@/components/ask/AskReply';
-import { askQuestion, isQuestion } from '@/lib/askBeastly';
+import { askQuestion, hasAskPass, isQuestion } from '@/lib/askBeastly';
 import { trackEvent } from '@/lib/analytics';
 
 export { isQuestion };
@@ -22,9 +22,11 @@ export default function AskBeastly({ query, askSignal = 0, onReply, hasResults =
   const [captchaToken, setCaptchaToken] = useState('');
   const [captchaNonce, setCaptchaNonce] = useState(0);
   const [captchaBlocked, setCaptchaBlocked] = useState(false);
+  // The chat's 30-minute pass covers this box too (askBeastly.js).
+  const passed = hasAskPass();
 
   const canAsk = isQuestion(query) && state.status !== 'asking'
-    && (!isTurnstileEnabled || captchaToken || captchaBlocked);
+    && (!isTurnstileEnabled || passed || captchaToken || captchaBlocked);
 
   const ask = async () => {
     const question = query.trim();
@@ -76,7 +78,7 @@ export default function AskBeastly({ query, askSignal = 0, onReply, hasResults =
           <span className="text-xs font-body text-muted-foreground">Get a short answer from our guides.</span>
         </div>
       )}
-      {showAsk && isTurnstileEnabled && (
+      {showAsk && isTurnstileEnabled && !passed && (
         <TurnstileWidget
           className="mt-2"
           onToken={setCaptchaToken}
