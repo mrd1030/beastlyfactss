@@ -60,7 +60,7 @@ export default function AskBeastly({ query, askSignal = 0, onReply, hasResults =
 
   const showAsk = isQuestion(query) && query.trim() !== askedFor;
   const entry = state.status === 'done' ? state.entry : null;
-  const boxed = entry && ['answered', 'legal'].includes(entry.reply.result)
+  const boxed = entry && ['answered', 'fact', 'legal'].includes(entry.reply.result)
     || (entry?.reply.result === 'refused' && entry.reply.links?.length);
 
   return (
