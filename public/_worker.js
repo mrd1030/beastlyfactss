@@ -1393,14 +1393,56 @@ function askIsThanks(question) {
   if (!q || !ASK_THANKS_CORE.test(q)) return false;
   return q.split(' ').every((w) => ASK_THANKS_WORDS.has(w) || ASK_FILLER_RE.test(w));
 }
-// Only greeting words, filler and punctuation: "hi", "hello there!", "hey
-// beastly", "good morning". "hi, what do hamsters eat" is a question.
-const ASK_GREETING_WORDS = new Set('hi hii hiya hey heya hello helo hullo howdy yo sup greetings morning afternoon evening good there beastly all everyone guys whats up how are you doing going is it'.split(' '));
-const ASK_GREETING_CORE = /\b(hi+|hiya|hey+|heya|hello+|helo|hullo|howdy|yo|sup|greetings|good (morning|afternoon|evening))\b/;
-function askIsGreeting(question) {
-  const q = question.toLowerCase().replace(/[^a-z\s']/g, ' ').replace(/'/g, '').replace(/\s+/g, ' ').trim();
-  if (!q || !ASK_GREETING_CORE.test(q)) return false;
-  return q.split(' ').every((w) => ASK_GREETING_WORDS.has(w) || /^h+i+$|^he+y+$|^hello+$/.test(w) || ASK_FILLER_RE.test(w));
+// Small talk (owner, 2026-11-03): people type to the box the way they talk.
+// A message that is only one of these phrases gets a short reply in kind: no
+// search, no model call, not logged or counted. The whole message must be the
+// phrase (filler, punctuation, stretched letters and a name like "beastly"
+// aside), so "hi, what do hamsters eat" is still a question.
+const ASK_SMALL_TALK = [
+  ['greeting', [
+    'hi', 'hello', 'hey', 'hiya', 'heya', 'heyo', 'howdy', 'yo', 'sup', 'wassup', 'whats up', 'whatsup', 'what up',
+    'greetings', 'good morning', 'good afternoon', 'good evening', 'morning', 'evening', 'hey there', 'hi there',
+    'hello there', 'how are you', 'how are you doing', 'how r u', 'how ru', 'hows it going', 'how is it going',
+    'how ya doing', 'how you doing', 'whats good', 'whats new', 'whats happening', 'hey hey', 'hi hi',
+  ], 'Hi! Ask me about any animal on the site: care, health, facts or the law.'],
+  ['test', [
+    'test', 'testing', 'test test', 'testing testing', 'testing 123', 'test 123', 'is this working', 'does this work',
+    'is this on', 'are you there', 'anyone there', 'you there', 'hello anyone there', 'can you hear me', 'is anyone there',
+  ], "I'm here! Ask me about any animal on the site and I'll check our guides."],
+  ['about', [
+    'who are you', 'what are you', 'are you a bot', 'are you ai', 'are you an ai', 'are you a robot', 'are you human',
+    'are you real', 'are you a person', 'what can you do', 'what do you do', 'what do you know', 'how does this work',
+    'how do i use this', 'help', 'help me', 'what is this', 'whats this', 'what is beastly', 'who is beastly',
+    'what can i ask', 'what should i ask', 'what can i ask you',
+  ], "I'm Beastly. I answer from Beastly Facts' own guides and fact files, with links to read more. Ask about any animal on the site: care, health, facts or the law."],
+  ['bye', [
+    'bye', 'goodbye', 'good bye', 'bye bye', 'see ya', 'see you', 'see you later', 'later', 'cya', 'ttyl',
+    'good night', 'goodnight', 'night', 'gn', 'gotta go', 'have a good one', 'take care',
+  ], 'Bye! Come back any time you have an animal question.'],
+  ['react', [
+    'lol', 'lmao', 'haha', 'hahaha', 'hehe', 'wow', 'whoa', 'woah', 'omg', 'oh wow', 'oh', 'ooh', 'hmm', 'interesting',
+    'neat', 'huh', 'no way', 'really', 'seriously', 'wild', 'crazy', 'yes', 'no', 'nope', 'yeah', 'yep', 'maybe',
+  ], "Ask me anything about animals whenever you're ready."],
+];
+const ASK_SMALL_TALK_MAP = new Map();
+for (const [kind, phrases, reply] of ASK_SMALL_TALK) for (const ph of phrases) ASK_SMALL_TALK_MAP.set(ph, { kind, reply });
+// Words that may sit around the phrase without changing it.
+const ASK_SMALL_TALK_EXTRA = new Set('beastly bot there friend buddy pal everyone all guys please again so well oh um uh like just ok okay'.split(' '));
+
+function askSmallTalk(question) {
+  const words = question.toLowerCase().replace(/[’']/g, '').replace(/[^a-z0-9\s]/g, ' ')
+    .replace(/([a-z])\1{2,}/g, '$1$1') // "heyyyy" -> "heyy", "soooo" -> "soo"
+    .split(/\s+/).filter(Boolean)
+    .map((w) => w.replace(/^(h+e+y+)$/, 'hey').replace(/^(h+i+)$/, 'hi').replace(/^(he+l+o+)$/, 'hello')
+      .replace(/^(lo+l+)+$/, 'lol').replace(/^(ha)+h?$/, 'haha').replace(/^(he)+h?$/, 'hehe').replace(/^(w+o+w+)$/, 'wow')
+      .replace(/^(s+u+p+)$/, 'sup').replace(/^(b+y+e+)$/, 'bye').replace(/^(h+m+)$/, 'hmm').replace(/^(o+h+)$/, 'oh'));
+  const tryPhrase = (list) => ASK_SMALL_TALK_MAP.get(list.join(' '));
+  let hit = tryPhrase(words);
+  if (!hit) {
+    const core = words.filter((w) => !ASK_SMALL_TALK_EXTRA.has(w) && !ASK_FILLER_RE.test(w));
+    if (core.length && core.length < words.length) hit = tryPhrase(core);
+  }
+  return hit || null;
 }
 
 const ASK_THANKS_REPLIES = [
@@ -1623,7 +1665,10 @@ async function askRetrieve(db, question, context = null) {
   const ownSpecies = askFindName(qOwn, meta.species);
   const prev = context?.prev ? expand(context.prev) : '';
   const prevSpecies = prev ? askFindName(prev, meta.species) : null;
-  const followUp = Boolean(prev) && (!ownSpecies || !prevSpecies || ownSpecies.name === prevSpecies.name);
+  // After "which animal?", a reply that still names no animal is a new
+  // question, not a follow-up ("testing", then "what's up" searched both).
+  const followUp = Boolean(prev) && !(context?.clarify && !ownSpecies)
+    && (!ownSpecies || !prevSpecies || ownSpecies.name === prevSpecies.name);
   // A follow-up without its own animal borrows the last question's; one that
   // names the animal the last question lacked ("a hamster", after "he's
   // acting weird") carries the last question along.
@@ -1894,12 +1939,14 @@ async function handleAskInner(request, env, ctx, state) {
   // all filler words: on its own it came back "not in our guides", and after
   // an answer it re-asked the previous question. No search, no model call,
   // not logged, not counted toward the hourly limit or the 3 answers.
-  // A greeting gets one back, same terms as a thank-you (owner, 2026-11-03):
-  // "hello" alone used to come back "not in our guides".
-  if (askIsGreeting(question)) {
+  // Small talk gets a reply in kind, same terms as a thank-you (owner,
+  // 2026-11-03): "hello" alone used to come back "not in our guides", and
+  // "testing" asked which animal.
+  const talk = askSmallTalk(question);
+  if (talk) {
     return storeJson({
       result: 'greeting',
-      answer: 'Hi! Ask me about any animal on the site: care, health, facts or the law.',
+      answer: talk.reply,
       links: [],
       emergency: false,
       species: null,
@@ -2203,8 +2250,8 @@ function askParseReply(text, chunks, stopReason) {
   // a broader range") has no "the" or number before it and stays.
   // "I can't tell you" and its kin: the clause is cut, the sentence kept.
   answer = answer
-    .replace(/,?\s*so I (can'?t|cannot|am unable to|'m unable to) (tell you|say|explain|know|point you|show you|find|help with)[^.!?]*/gi, '')
-    .replace(/\bI (can'?t|cannot|am unable to|'m unable to) (tell you|say|explain|know|point you|show you|find|help with)\b[^.!?]*[.!?]?\s*/gi, '');
+    .replace(/,?\s*so I (can'?t|cannot|am unable to|'m unable to) (tell( you| from them| from our guides)?|say|explain|know|point you|show you|find|help with)[^.!?]*/gi, '')
+    .replace(/\bI (can'?t|cannot|am unable to|'m unable to) (tell( you| from them| from our guides)?|say|explain|know|point you|show you|find|help with)\b[^.!?]*[.!?]?\s*/gi, '');
   // At most one "not covered" sentence: a second one is dropped.
   let gapSeen = false;
   answer = answer

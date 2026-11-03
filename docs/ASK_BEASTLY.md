@@ -188,10 +188,16 @@ In `public/_worker.js`, listed in `public/_routes.json`. In order:
    there is nothing to answer, and the chat cannot see the page (a reader on
    the bearded dragon hub may mean that animal). A question choosing a pet
    ("my friend wants a pet, what's easy") never gets it.
-   Greetings (owner, 2026-11-03): "hi", "hello there", "hey beastly",
-   "good morning" get "Hi! Ask me about any animal on the site: care,
-   health, facts or the law.", result `greeting`, on the same terms as
-   thanks. The chat now sends from 2 characters, so "hi" goes through.
+   Small talk (owner, 2026-11-03): a message that is only a known phrase
+   gets a reply in kind, result `greeting`, on the same terms as thanks.
+   ASK_SMALL_TALK in the worker lists them by kind: greetings ("hi", "what's
+   up", "how are you"), tests ("testing", "is this working"), questions
+   about the bot ("who are you", "what can you do", "help"), goodbyes and
+   reactions ("lol", "wow", "hmm"). Filler, punctuation, stretched letters
+   ("heyyyy", "hiii") and a name ("beastly") around the phrase do not
+   matter; anything more makes it a question. The chat sends from 2
+   characters, so "hi" goes through. After "which animal?", a reply that
+   still names no animal is a new question, not carried with the last one.
    Thanks (owner, 2026-11-02): a thank-you turn is skipped when the next
    question looks back for its follow-up context. A message that is only thanks or an
    acknowledgement ("thanks!", "ty so much", "ok cool, got it", "that
