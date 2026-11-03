@@ -22,7 +22,8 @@
 //                                      and legal cell: a build with nothing new
 //                                      stops after reading it), and the JSON
 //                                      lookups aliases, species, states,
-//                                      legal, facts
+//                                      legal, facts, common, catalog (every
+//                                      key of meta.json is written)
 //   chunks_live(id INTEGER PRIMARY KEY, key UNIQUE, hash, slug, title,
 //               heading, anchor, url, species, type, text, words)
 //               key is type|url|heading, unique per chunk

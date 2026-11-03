@@ -80,9 +80,10 @@ rows resolve through src/lib/costs.js; ComparisonTables become one line per
 row. A section over 450 words splits at paragraph breaks. The script also
 writes `.ask-index/meta.json`: the searchAliases.js nicknames, the species list
 with care guide ids, the legal matrix's states and animals, every fact page's
-url (`facts`, for "show me a fun fact"), and the words in more than 5% of the
+url (`facts`, for "show me a fun fact"), the words in more than 5% of the
 searchable chunks with their counts (`common`, left out of the any-word
-search). The output is deterministic: two builds of the same content match
+search), and the care guide catalog by category (`catalog`, for "what
+animals do you cover"). The output is deterministic: two builds of the same content match
 byte for byte.
 
 ## The index in D1
@@ -220,6 +221,38 @@ In `public/_worker.js`, listed in `public/_routes.json`. In order:
      ("how often should I clean the tank"): "Which animal?". Not when a best
      passage is general (a glossary term, a guide about no one animal), not
      for "what is" questions ("what is uvb"), not when choosing a pet.
+   "What's on the site" (owner, 2026-11-03): "what animals do you cover",
+   "how many animals are in the guides", "can you list the reptiles you
+   have", "do you have anything on frogs", "which fish do you have" are
+   answered from the catalog, result `catalog`, no search, no model call,
+   counted toward the 3 like a hub link. The build counts it
+   (`ask_meta.catalog`: the eleven category pages in the guides page's
+   order, each with its slug and the names of its animals and breeds, plus
+   the total), so no number is typed into code and a new guide changes the
+   reply on the next build. Group hubs (tetras, livebearers, the dog and
+   cat essentials, the dog size pages) are not animals and are left out.
+   The rule, resolved in `askRetrieve` after the legal check and before the
+   pronoun check: a catalog word (list, how many, what/which
+   animals/species/pets, do you have/cover, anything on, guides on, in the
+   guides, on the site), no care word (ASK_CARE_RE), and no species named,
+   or only a group word. ASK_GROUPS maps group words to category pages:
+   reptiles are geckos, lizards, snakes and turtles-tortoises; frogs,
+   toads, newts and salamanders are amphibians; rodents, hamsters, rabbits
+   and mammals are small-mammals; bugs, insects, spiders, tarantulas,
+   shrimp and scorpions are invertebrates; parrots are birds; kittens are
+   cats, puppies are dogs; and each category's own name. A group word that
+   is also a species in the index ("snake", "gecko", "hamster") counts as
+   the group here. Three replies: a count ("how many": the total and the
+   groups with their counts, link to /guides/), a group listing (the count,
+   up to 8 names in turn across the categories then "and N more", one link
+   per category page), and the general one ("what do you have": the
+   breakdown plus the facts and legal counts, links to /guides/, /facts/
+   and /exotic-pet-laws/). "How many facts do you have" gives the facts
+   count. After a catalog answer, a follow-up that only names a group
+   ("what about snakes?") lists it. "Do you have a guide on axolotls" names
+   a species, so it is a where-is question and gets the hub (ASK_HAVE_RE
+   joined the where-is words for that); "what do reptiles eat" has a care
+   word and goes to the search.
 6. Search: spoken filler dropped first (owner, 2026-11-02): "like", "um",
    "uh", "kinda", "idk", "lol" and stretched forms ("ummmm", "hmmm",
    "sooo"), so "like, um, a hamster" searches as "hamster". Then nicknames expanded, the named species used as a filter ("tortoise"
@@ -249,8 +282,8 @@ In `public/_worker.js`, listed in `public/_routes.json`. In order:
    question last.
 
 Reply: `{ result, answer, links, emergency, species, followUp, health }`.
-`result` is answered, navigate, clarify, thanks, legal, no_match, capped, refused or
-unavailable. `followUp` says whether the question joined the conversation;
+`result` is answered, navigate, catalog, clarify, thanks, greeting, legal, no_match,
+capped, refused or unavailable. `followUp` says whether the question joined the conversation;
 `health` marks a no_match that sounds like a health problem. On the sharetest
 site an answer also carries `sources`, the chunks the model saw, for the
 source check.
@@ -352,8 +385,8 @@ above the answer and the species' emergency card from its router hub under it
 ## Logging
 
 Supabase table `ask_log` (supabase/ask_log.sql): question, matched_slugs,
-result (answered, no_match, capped, refused, legal, clarify), answer_slug,
-created_at. No IP. `answer_slug` is the page the model named (READ) on an
+result (answered, no_match, capped, refused, legal, clarify, catalog),
+answer_slug, created_at. No IP. `answer_slug` is the page the model named (READ) on an
 answered row; `matched_slugs` is in search order, so the pair shows how
 often the model picked something other than the top hit (added 2026-11-02
 on Grok's review). RLS on

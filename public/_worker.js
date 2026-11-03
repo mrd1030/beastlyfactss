@@ -1820,6 +1820,9 @@ async function askMeta(db) {
     legal: parse(m.legal, []),
     facts: parse(m.facts, []),
     common: parse(m.common, {}),
+    // Missing on an index loaded before it existed: the catalog reply is
+    // then skipped and the question goes to the search.
+    catalog: parse(m.catalog, null),
   };
   return askMetaCache;
 }
@@ -1880,6 +1883,121 @@ const ASK_CHOOSING_RE = /\b(a|an|which|what|best|good|easy|safe|first|new|anothe
 const ASK_SITE_PLACE_RE = /\b(files?|hub|sections?)\b/;
 const ASK_CORRECTION = new Set('sorry oops meant mean typo spelled spelling actually wrong i'.split(' '));
 const ASK_PLACE_RE = /\b(guides?|pages?|files?|info|information|sections?|sheets?|hub|articles?|stuff|everything|posts?)\b/;
+// "Do you have a guide on axolotls", "anything on bettas?": asking whether
+// the site has a page on the animal is a where-is question too, and gets
+// the hub.
+const ASK_HAVE_RE = /\b(do|does|did)? ?(you|yall|y'all|the site|this site|beastly) (have|got|cover|carry|offer)\b|\bis there\b|\banything (on|about|for)\b/;
+
+// "What's on the site" questions (owner, 2026-11-03): "what animals do you
+// cover", "how many animals are in the guides", "can you list the reptiles
+// you have", "do you have anything on frogs". Answered from the catalog the
+// build counted (ask_meta.catalog), no search, no model call. The rule: a
+// catalog word, no care word, and no species named (or only a group word).
+// "Do you have a guide on axolotls" names a species, so it is a where-is
+// question and gets the hub; "what do reptiles eat" has a care word and
+// goes to the search.
+const ASK_CATALOG_RE = /\b(list|how many|(what|which) (kinds? of |sorts? of )?(animals?|species|pets?|critters?|creatures?|breeds?)|(do|does|did)? ?(you|yall|y'all|the site|this site|beastly) (have|got|cover|carry|offer)|have you got|is there anything|anything (on|about|for)|guides? (on|for|about)|(in|on) (the|your) (guides|site))\b/;
+// Group words, each with the category pages it means (the slugs of
+// /guides/category/<slug>/) and how the reply names it. Longest match first,
+// so "small mammals" is found before "mammals". A group word that is also a
+// species in the index ("snake", "gecko", "hamster") counts as the group
+// here: "which snakes do you have" lists the snakes, it does not search the
+// snake facts.
+const ASK_GROUPS = [
+  [/\breptiles?\b/, ['geckos', 'lizards', 'snakes', 'turtles-tortoises'], 'reptile'],
+  [/\b(amphibians?|frogs?|toads?|newts?|salamanders?)\b/, ['amphibians'], 'amphibian'],
+  [/\b(birds?|parrots?|parakeets?|finch(es)?)\b/, ['birds'], 'bird'],
+  [/\b(cats?|kittens?|kitties|kitty|felines?)\b/, ['cats'], 'cat'],
+  [/\b(dogs?|puppies|puppy|pups?|canines?)\b/, ['dogs'], 'dog'],
+  [/\bfish(es)?\b/, ['fish'], 'fish'],
+  [/\bgeckos?\b/, ['geckos'], 'gecko'],
+  [/\b(invertebrates?|inverts?|bugs?|insects?|spiders?|tarantulas?|shrimps?|scorpions?|arachnids?)\b/, ['invertebrates'], 'invertebrate'],
+  [/\blizards?\b/, ['lizards'], 'lizard'],
+  [/\b(small mammals?|mammals?|rodents?|hamsters?|rabbits?|bunnies|bunny)\b/, ['small-mammals'], 'small mammal'],
+  [/\bsnakes?\b/, ['snakes'], 'snake'],
+  [/\b(turtles?|tortoises?|chelonians?)\b/, ['turtles-tortoises'], 'turtle and tortoise'],
+];
+// How each category page is named in a reply and its link.
+const ASK_CATEGORY_NOUN = {
+  amphibians: 'amphibian', birds: 'bird', cats: 'cat', dogs: 'dog', fish: 'fish', geckos: 'gecko',
+  invertebrates: 'invertebrate', lizards: 'lizard', 'small-mammals': 'small mammal', snakes: 'snake',
+  'turtles-tortoises': 'turtle and tortoise',
+};
+function askFindGroup(q) {
+  for (const [re, slugs, noun] of ASK_GROUPS) {
+    if (re.test(q)) return { slugs, noun };
+  }
+  return null;
+}
+// The catalog intent of a question, or null: { kind: 'count' | 'group' |
+// 'facts' | 'general', group }. `species` is the species the normal search
+// found, so a real animal name turns this off unless the name is itself a
+// group word.
+const askIsGroupWord = (species) => Boolean(species && askFindGroup(askNormalize(species.name)));
+function askCatalog(q, species, meta) {
+  if (!meta.catalog || !ASK_CATALOG_RE.test(q) || ASK_CARE_RE.test(q)) return null;
+  const group = askFindGroup(q);
+  if (species && !(group && askIsGroupWord(species))) return null;
+  if (group) return { kind: 'group', group };
+  // "Show me a fact" keeps its own reply; "how many facts do you have" is a
+  // count of the facts.
+  if (ASK_FACT_RE.test(q)) return /\bhow many\b/.test(q) ? { kind: 'facts', group: null } : null;
+  return { kind: /\bhow many\b/.test(q) ? 'count' : 'general', group: null };
+}
+
+const askJoin = (names) => (names.length < 2 ? names.join('') : `${names.slice(0, -1).join(', ')} and ${names[names.length - 1]}`);
+// The reply text and links for a catalog question. Every number comes from
+// ask_meta.catalog, which the build counted.
+function askCatalogReply(intent, meta) {
+  const cat = meta.catalog;
+  const groups = cat.groups;
+  const byLabel = (g) => `${g.label.toLowerCase().replace(' & ', ' and ')} (${g.names.length})`;
+  if (intent.kind === 'group') {
+    const picked = intent.group.slugs.map((slug) => groups.find((g) => g.slug === slug)).filter(Boolean);
+    const total = picked.reduce((n, g) => n + g.names.length, 0);
+    // The sample takes turns across the categories, so a reptile listing
+    // shows a gecko, a lizard, a snake and a turtle before a second gecko.
+    const sample = [];
+    for (let i = 0; sample.length < Math.min(8, total); i++) {
+      for (const g of picked) if (g.names[i] && sample.length < Math.min(8, total)) sample.push(g.names[i]);
+    }
+    const rest = total - sample.length;
+    const across = picked.length > 1 ? ` across ${askJoin(picked.map((g) => g.label.toLowerCase().replace(' & ', ' and ')))}` : '';
+    const listed = rest ? `${sample.join(', ')} and ${rest} more` : askJoin(sample);
+    const answer = total
+      ? `We have ${total} ${intent.group.noun} guide${total === 1 ? '' : 's'}${across}: ${listed}. Ask about any of them.`
+      : `We don't have ${intent.group.noun} guides yet. Ask about any other animal, or search the site.`;
+    const links = picked.map((g) => ({
+      title: `${ASK_CATEGORY_NOUN[g.slug] || g.label}`.replace(/^./, (c) => c.toUpperCase()) + ' care guides',
+      url: `/guides/category/${g.slug}/`,
+    }));
+    return { answer, links: links.length ? links : [{ title: 'All care guides', url: '/guides/' }], slugs: picked.map((g) => g.slug) };
+  }
+  const breakdown = askJoin(groups.map(byLabel));
+  if (intent.kind === 'facts') {
+    return {
+      answer: `We have ${meta.facts.length} animal facts, each with its source. Ask for one and I'll pick at random.`,
+      links: [{ title: 'All our animal facts', url: '/facts/' }],
+      slugs: ['facts'],
+    };
+  }
+  if (intent.kind === 'count') {
+    return {
+      answer: `We have care guides for ${cat.total} animals and breeds in ${groups.length} groups: ${breakdown}. Name a group and I'll list them.`,
+      links: [{ title: 'All care guides', url: '/guides/' }],
+      slugs: ['guides'],
+    };
+  }
+  return {
+    answer: `Care guides for ${cat.total} animals and breeds: ${breakdown}. There are also ${meta.facts.length} animal facts and law pages for ${meta.legal.length} exotic pets in every state. Name a group and I'll list it, or ask about any animal.`,
+    links: [
+      { title: 'All care guides', url: '/guides/' },
+      { title: 'All our animal facts', url: '/facts/' },
+      { title: 'Exotic pet laws by state', url: '/exotic-pet-laws/' },
+    ],
+    slugs: ['guides'],
+  };
+}
 
 // Legal questions get links, never a model summary: the matrix cells change
 // monthly and quote statutes.
@@ -1982,6 +2100,16 @@ async function askRetrieve(db, question, context = null) {
   // A legal question is answered from the law matrix, never from these
   // chunks, so it skips the search and the rows it would read.
   if (legal) return { chunks: [], species, best: null, legal, meta, q, qOwn, followUp };
+  // "What animals do you cover", "list the reptiles you have": answered from
+  // the catalog, before the pronoun check below ("the reptiles you have" is
+  // not a pet). Judged on the reader's own words; after a catalog answer, a
+  // follow-up that only names a group ("what about snakes?") carries the
+  // intent along.
+  const ownGroup = askFindGroup(qOwn);
+  const catalog = askCatalog(qOwn, ownSpecies, meta)
+    || (followUp && ownGroup && (!ownSpecies || askIsGroupWord(ownSpecies)) && !ASK_CARE_RE.test(qOwn)
+      && askCatalog(prev, prevSpecies, meta) ? { kind: 'group', group: ownGroup } : null);
+  if (catalog) return { chunks: [], species: null, best: null, legal: false, catalog, meta, q, qOwn, followUp };
   // Before the empty-question check: "he's not himself" is all stopwords.
   if (!species && ASK_PET_REF_RE.test(qOwn) && !ASK_CHOOSING_RE.test(qOwn)) {
     return { chunks: [], species: null, best: null, legal: false, clarify: true, meta, q, qOwn, followUp };
@@ -1998,7 +2126,7 @@ async function askRetrieve(db, question, context = null) {
   if (!species && ASK_FACT_RE.test(qOwn) && meta.facts.length) {
     return { chunks: [], species: null, best: null, legal: false, fact: true, meta, q, qOwn, followUp };
   }
-  if (species?.guideId && ((ASK_NAV_RE.test(navText) && ASK_PLACE_RE.test(navText)) || ASK_SITE_PLACE_RE.test(navText))) {
+  if (species?.guideId && (((ASK_NAV_RE.test(navText) || ASK_HAVE_RE.test(navText)) && ASK_PLACE_RE.test(navText)) || ASK_SITE_PLACE_RE.test(navText))) {
     return { chunks: [], species, best: null, legal: false, nav: true, meta, q, qOwn, followUp };
   }
 
@@ -2302,6 +2430,22 @@ async function handleAskInner(request, env, ctx, state) {
       links: [{ title: `${found.species.name} care guide`, url: `/guides/${found.species.guideId}/` }],
       emergency: false,
       species,
+      followUp: found.followUp,
+    });
+  }
+
+  // What the site covers: the count, a group's listing or the whole
+  // catalog, from the build's counts. Counts toward the 3 answers like a
+  // hub link, since the reader got something.
+  if (found.catalog) {
+    const reply = askCatalogReply(found.catalog, found.meta);
+    log('catalog', reply.slugs, {}, { answer: reply.answer, page: reply.links[0]?.title || null });
+    return storeJson({
+      result: 'catalog',
+      answer: reply.answer,
+      links: reply.links,
+      emergency: false,
+      species: null,
       followUp: found.followUp,
     });
   }
@@ -2631,6 +2775,7 @@ const ASK_NTFY_TITLES = {
   legal: 'Legal question',
   refused: 'No answer, links shown',
   clarify: 'Asked which animal',
+  catalog: 'Asked what we cover',
 };
 
 // push: what the phone notification adds beyond the question. On an answer,
