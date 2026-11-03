@@ -2081,12 +2081,15 @@ async function askRetrieve(db, question, context = null) {
   const qOwn = expand(question);
   const ownSpecies = askFindName(qOwn, meta.species);
   let prev = context?.prev ? expand(context.prev) : '';
-  // After a fact reply, its animal is the carried one (owner, 2026-11-03):
-  // the last question ("fun facts") may name none, so the client sends the
-  // fact's url and the animal stands in for the question. "Another fact"
-  // then gives another seahorse fact, "what do they eat" searches seahorse.
+  // After a fact reply, the client sends the fact's url. Another fact keeps
+  // an animal only when the reader named it (owner, 2026-11-03): "chicken
+  // fun fact" then "another" stays on chickens, but "fun facts" then
+  // "another" is any animal again (it gave two bearded dragon facts in a
+  // row). A question that is not a fact ask ("what do they eat" after a
+  // random seahorse fact) still takes the fact's animal.
   const prevFact = prev && context?.fact ? meta.facts.find((f) => f.url === context.fact) || null : null;
-  if (prevFact?.species && !askFindName(prev, meta.species)) prev = askNormalize(prevFact.species);
+  const factAsk = ASK_FACT_RE.test(qOwn) || (Boolean(prevFact) && ASK_MORE_RE.test(qOwn));
+  if (prevFact?.species && !factAsk && !askFindName(prev, meta.species)) prev = askNormalize(prevFact.species);
   const prevSpecies = prev ? askFindName(prev, meta.species) : null;
   // After "which animal?", a reply that still names no animal is a new
   // question, not a follow-up ("testing", then "what's up" searched both).
@@ -2128,7 +2131,7 @@ async function askRetrieve(db, question, context = null) {
   // fact, read by its key (one row), no model call. The animal is the one
   // named, else the one carried from the last question, else any. The pick
   // happens in handleAskInner, which also skips the fact shown last turn.
-  if (meta.facts.length && (ASK_FACT_RE.test(qOwn) || (prevFact && ASK_MORE_RE.test(qOwn)))) {
+  if (meta.facts.length && factAsk) {
     return { chunks: [], species, best: null, legal: false, fact: true, meta, q, qOwn, followUp };
   }
   // Before the empty-question check: "he's not himself" is all stopwords.
