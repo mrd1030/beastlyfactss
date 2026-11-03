@@ -9,20 +9,6 @@
 // sidebar carries the shared guides.
 export const scheduledTetraAnimals = [
   {
-    id: "black-skirt-tetra", name: "Black Skirt Tetra", scientific: "Gymnocorymbus ternetzi",
-    category: "Fish", emoji: "🐠", difficulty: "Beginner", guideId: "black-skirt-tetra", available: true, image: "/assets/guides/black-skirt-tetra.jpg",
-    bio: {
-      overview: "The black skirt tetra is a hardy, deep-bodied schooling fish from the Rio Paraguay basin in South America, also sold as the black widow tetra. It eats almost anything and handles a wide range of water, but it nips fins, so it is kept in a school of 12 and away from slow, long-finned fish. The white skirt and long-fin forms are the same species, and so are fluorescent GloFish Skirt Tetras.",
-      origin: "Rio Paraguay and Guaporé basins (Brazil, Bolivia, Argentina)",
-      habitat: "Small, slow-moving creeks and streams under dense overhanging vegetation, and plant beds in floodplain oxbow lakes",
-      adultSize: "About 2-2.5 inches (5-6 cm) in aquariums; up to 3 inches (7.5 cm)",
-      wildDiet: "Worms, small crustaceans and insects",
-      wildLifespan: "Not documented in the wild; about 3-5 years in captivity",
-      conservation: "Least Concern (IUCN)",
-      history: "George Albert Boulenger described the species in 1895 as Tetragonopterus ternetzi, from fish collected at Descalvados in Mato Grosso, Brazil, and named it for the Swiss-born naturalist Carl Ternetz, who assembled the collection. Carl Eigenmann moved it into the genus Gymnocorymbus in 1910. A relative in the same genus, Gymnocorymbus bondi, honors Frank Bond, father of the ornithologist James Bond, whose name Ian Fleming borrowed for his spy.",
-    },
-  },
-  {
     id: "glowlight-tetra", name: "Glowlight Tetra", scientific: "Hemigrammus erythrozonus",
     category: "Fish", emoji: "🐠", difficulty: "Beginner", guideId: "glowlight-tetra", available: true, image: "/assets/guides/glowlight-tetra.jpg",
     bio: {
