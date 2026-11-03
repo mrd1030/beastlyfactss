@@ -664,15 +664,17 @@ async function handleContact(request, env) {
     }
   }
 
-  // Sent from Supabase to the ntfy_contact_topic chat; the worker's own topic
-  // is only the fallback (see ntfyViaSupabase).
-  const sent = await ntfySend(env, 'ntfy_contact_topic', env?.NTFY_CONTACT_NOTIF || env?.NTFY_SUBSCRIBER_NOTIF, {
+  // Sent from here, waiting for ntfy's own answer (owner, 2026-11-03): the
+  // Supabase route only says "queued", so a push ntfy refused afterwards
+  // was lost while the visitor saw "sent". Now a refusal shows the visitor
+  // "did not go through" with the email address, as before.
+  const sent = await ntfyDirect(env?.NTFY_CONTACT_NOTIF || env?.NTFY_SUBSCRIBER_NOTIF, {
     title: `${reason}: ${name}`,
     message: `${email ? `From: ${email}\n\n` : 'No email given.\n\n'}${message}`,
     tags: ['envelope'],
     priority: 4,
     ...(email && { click: `mailto:${email}` }),
-  });
+  }, env?.NTFY_TOKEN);
   if (!sent) return storeJson({ error: 'The message did not go through.' }, 502);
   return storeJson({ ok: true });
 }
@@ -898,14 +900,18 @@ async function ntfyViaSupabase(env, secretName, payload) {
 }
 
 // The old route, kept as the fallback: a push straight from the worker.
-async function ntfyDirect(rawTopic, payload) {
+// token: NTFY_TOKEN, an ntfy.sh account access token. Without one, ntfy.sh
+// counts messages per sending IP, and the shared addresses Cloudflare and
+// Supabase send from run out of the daily quota (429 on 2026-11-03).
+async function ntfyDirect(rawTopic, payload, token = '') {
   // A pasted secret can carry a space or line break, which ntfy refuses.
   const topic = String(rawTopic || '').trim();
   if (!topic) return false;
+  const auth = String(token || '').trim();
   try {
     const res = await fetch('https://ntfy.sh', {
       method: 'POST',
-      headers: { 'content-type': 'application/json' },
+      headers: { 'content-type': 'application/json', ...(auth && { authorization: `Bearer ${auth}` }) },
       body: JSON.stringify({ topic, ...payload }),
     });
     return res.ok;
@@ -915,7 +921,7 @@ async function ntfyDirect(rawTopic, payload) {
 }
 
 async function ntfySend(env, secretName, fallbackTopic, payload) {
-  return (await ntfyViaSupabase(env, secretName, payload)) || ntfyDirect(fallbackTopic, payload);
+  return (await ntfyViaSupabase(env, secretName, payload)) || ntfyDirect(fallbackTopic, payload, env?.NTFY_TOKEN);
 }
 
 // ---------------------------------------------------------------------------
