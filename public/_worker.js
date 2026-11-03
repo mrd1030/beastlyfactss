@@ -1739,6 +1739,26 @@ async function askRetrieve(db, question, context = null) {
   return { chunks, species, best, legal, meta, q, qOwn, followUp, ranked: scored.slice(0, 8) };
 }
 
+// True only for a valid Supabase session whose email is in app_admins: one
+// call to the is_admin() function with the reader's own token, which
+// Supabase verifies. Anything else (no token, expired, not an admin, an
+// error) is false, and the normal limit applies.
+async function askIsAdmin(env, request) {
+  const auth = request.headers.get('authorization') || '';
+  const token = auth.startsWith('Bearer ') ? auth.slice(7).trim() : '';
+  if (!token || !hasSupabaseEnv(env)) return false;
+  try {
+    const res = await fetch(`${env.SUPABASE_URL}/rest/v1/rpc/is_admin`, {
+      method: 'POST',
+      headers: { apikey: env.SUPABASE_SERVICE_ROLE_KEY, Authorization: `Bearer ${token}`, 'content-type': 'application/json' },
+      body: '{}',
+    });
+    return res.ok && (await res.json()) === true;
+  } catch {
+    return false;
+  }
+}
+
 async function askLimit(env, request) {
   if (!env.ASK_KV) return { ok: true };
   const ip = request.headers.get('cf-connecting-ip') || 'unknown';
@@ -1824,7 +1844,12 @@ async function handleAsk(request, env, ctx) {
   // applies everywhere.
   const testing = new URL(request.url).hostname.endsWith('beastlyfactss-sharetest.pages.dev');
 
-  if (!testing && !(await askLimit(env, request)).ok) {
+  // The owner signed in as admin skips the hourly limit (owner, 2026-11-03):
+  // the chat sends the Supabase session token, and is_admin() checks it
+  // against app_admins on the server, so it cannot be faked from a browser.
+  // No token, no extra call. The daily cap still applies.
+  const admin = await askIsAdmin(env, request);
+  if (!testing && !admin && !(await askLimit(env, request)).ok) {
     log('capped');
     return quiet('capped');
   }

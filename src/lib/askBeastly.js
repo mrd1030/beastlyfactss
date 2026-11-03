@@ -89,6 +89,23 @@ function keepable(reply) {
   return { result: result || 'unavailable', answer, links, emergency, species, legal, health };
 }
 
+// The signed-in session's token, sent so the worker can skip the hourly
+// limit for the admin (owner, 2026-11-03). Only someone who has signed in on
+// this browser (the /composer/ login) has 'bf-auth' saved; everyone else
+// never loads the Supabase client here. getSession() refreshes an expired
+// token. The worker checks it against app_admins; this side proves nothing.
+async function adminToken() {
+  try {
+    if (!localStorage.getItem('bf-auth')) return '';
+    const { supabase } = await import('@/api/supabaseClient');
+    if (!supabase) return '';
+    const { data } = await supabase.auth.getSession();
+    return data?.session?.access_token || '';
+  } catch {
+    return '';
+  }
+}
+
 // Asks one question, as a follow-up in conversation `conversationId` when it
 // can take one. Never throws: a failure comes back as result 'unavailable',
 // which every view treats as "no answer, no error". Returns the conversation
@@ -107,9 +124,10 @@ export async function askQuestion(question, captcha = '', conversationId = null)
 
   let reply = { result: 'unavailable' };
   try {
+    const token = await adminToken();
     const res = await fetch('/api/ask', {
       method: 'POST',
-      headers: { 'content-type': 'application/json' },
+      headers: { 'content-type': 'application/json', ...(token && { authorization: `Bearer ${token}` }) },
       body: JSON.stringify({ question: q, captcha, ...(prev && { context: { prev, ...(clarify && { clarify: true }) } }) }),
     });
     reply = await res.json();

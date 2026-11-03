@@ -136,7 +136,13 @@ In `public/_worker.js`, listed in `public/_routes.json`. In order:
 2. 12 questions per visitor per hour (owner, 2026-11-02; a follow-up counts as
    a question) in KV `ASK_KV`, keyed on a hash of the IP
    and the Eastern date; no IP is stored. Off on the sharetest site (by host),
-   so testing is unlimited and beastlyfacts.com always has it.
+   so testing is unlimited and beastlyfacts.com always has it. Off for the
+   owner signed in as admin (owner, 2026-11-03): in a browser that has
+   signed in at /composer/ (localStorage `bf-auth`), the chat sends the
+   Supabase session token, and the worker calls `is_admin()` with it, which
+   checks the email against `app_admins`. One extra Supabase call per
+   question from that browser only; no token, no call. The daily cap still
+   applies to the admin.
 3. Legal questions never reach the model. A legal word ("legal", "permit",
    "license", "what states", "where can I own"), or a state name or postal
    code with own / have / keep / buy / get, makes it a legal question. When it
