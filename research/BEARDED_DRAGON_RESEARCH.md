@@ -123,7 +123,9 @@ months, "not a hard four months"; it was not touched on this pass.
 - Mealworms and superworms: the guide says they are "an occasional food for
   adults only, never daily and never for juveniles". NC State lists an
   "occasional super/mealworm" from 1 to 4 months and super/mealworms in the
-  4 months to adulthood diet. [owner call]
+  4 months to adulthood diet. Owner (2026-11-03): follow NC State, and note
+  superworms are high in fat. The feeding guide now says occasional from about
+  a month old, never daily.
 
 - NC State says an adult that "stops eating for more than 1-2 days" should see an
   exotic vet; the owner's rule (2026-11-03) is that a 1 to 2 day refusal is
