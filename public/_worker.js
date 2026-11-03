@@ -2968,7 +2968,10 @@ async function handleAskInner(request, env, ctx, state) {
   let reply;
   try {
     await askCountAnswer(env);
-    reply = await askHaiku(env, question, found.chunks, found.followUp ? prev : '');
+    // Test site only: {"model":"sonnet"} runs the same prompt on Sonnet, for
+    // side by side comparisons. The live site always uses ASK_MODEL.
+    const sonnet = body?.model === 'sonnet' && new URL(request.url).hostname.endsWith('beastlyfactss-sharetest.pages.dev');
+    reply = await askHaiku(env, question, found.chunks, found.followUp ? prev : '', sonnet ? ASK_MODEL_COMPARE : ASK_MODEL);
   } catch {
     log('refused', slugs);
     return fallback();
@@ -3006,6 +3009,7 @@ async function handleAskInner(request, env, ctx, state) {
 // about 150 tokens it is under the 512 token minimum and simply does not
 // cache, which costs nothing.
 const ASK_MODEL = 'claude-haiku-5-5';
+const ASK_MODEL_COMPARE = 'claude-sonnet-5-5';
 const ASK_SYSTEM = `You answer animal and pet care questions for Beastly Facts using ONLY the text inside <sources>.
 Rules:
 - At most 3 short sentences, usually 2. Plain words. No lists. No em or en dashes.
@@ -3061,7 +3065,7 @@ const ASK_SOURCE_TALK_RE = /\b(the|these|those|my|our|provided|given|most|some|s
 const askSourceTitle = (c) => (c.heading ? `${c.title}: ${c.heading}` : c.title);
 const askEscape = (t) => String(t).replace(/</g, '&lt;').replace(/>/g, '&gt;');
 
-async function askHaiku(env, question, chunks, prevQuestion = '') {
+async function askHaiku(env, question, chunks, prevQuestion = '', model = ASK_MODEL) {
   const sources = chunks
     .map((c, i) => `<source index="${i + 1}" title="${askEscape(askSourceTitle(c)).replace(/"/g, "'")}">\n${askEscape(c.text)}\n</source>`)
     .join('\n');
@@ -3073,9 +3077,10 @@ async function askHaiku(env, question, chunks, prevQuestion = '') {
       'content-type': 'application/json',
     },
     body: JSON.stringify({
-      model: ASK_MODEL,
+      model,
       max_tokens: 300,
-      thinking: { type: 'disabled' },
+      // Sonnet 5.5 refuses 'disabled'; 'between_tools' is its thinking-off.
+      thinking: { type: model === ASK_MODEL_COMPARE ? 'between_tools' : 'disabled' },
       system: [{ type: 'text', text: ASK_SYSTEM, cache_control: { type: 'ephemeral' } }],
       messages: [{ role: 'user', content: `<sources>\n${sources}\n</sources>\n\n${prevQuestion ? `Earlier question: ${askEscape(prevQuestion)}\n` : ''}Question: ${askEscape(question)}` }],
     }),
