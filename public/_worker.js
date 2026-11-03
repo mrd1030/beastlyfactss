@@ -1587,7 +1587,7 @@ const ASK_SMALL_TALK = [
   ]],
   // Goodbyes
   ['bye', [
-    'bye', 'goodbye', 'good bye', 'bye bye', 'buh bye', 'bye now', 'bye for now', 'bye then', 'k bye', 'kk bye',
+    'bye', 'thanks bye', 'thank you bye', 'ok thanks bye', 'thx bye', 'ty bye', 'goodbye', 'good bye', 'bye bye', 'buh bye', 'bye now', 'bye for now', 'bye then', 'k bye', 'kk bye',
     'alright bye', 'see ya', 'see you', 'see you later', 'see ya later', 'see you soon', 'see u', 'see u later', 'cya',
     'cya later', 'catch you later', 'later', 'laters', 'ttyl', 'talk later', 'talk to you later', 'talk soon', 'peace',
     'peace out', 'farewell', 'adios', 'ciao',
@@ -2590,7 +2590,7 @@ Rules:
 // "Veterinary sources note"). Cut from the front of a sentence; when one was
 // cut, a second reported clause loses its "that" too, so "says A and that B"
 // becomes "A, and B" (Fable review of the 20-question rerun, 2026-11-02).
-const ASK_LEAD_IN_RE = /^(((most|many|several|some) )?(veterinary |published |scientific )?sources (agree|say|recommend|suggest|note|state)|(our|the) (emergency card|guides?|care guide|article|page)s? (says?|notes?|states?|lists?|explains?|recommends?))( that)?,?\s*/i;
+const ASK_LEAD_IN_RE = /^(((most|many|several|some) )?(veterinary |published |scientific )?sources (agree|say|recommend|suggest|note|state)|(our|the) (emergency card|guides?|care guide|article|page)s? ((also|do|does|both|further|specifically) )?(says?|notes?|states?|lists?|explains?|recommends?|mentions?|adds?))( that)?,?\s*/i;
 
 function askRewriteSourceTalk(sentence) {
   // The articles compare their own sources ("most sources agree", "according
