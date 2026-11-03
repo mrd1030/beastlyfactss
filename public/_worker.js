@@ -1928,10 +1928,123 @@ const ASK_CATALOG_RE = /\b(list|how many|(what|which) (kinds? of |sorts? of )?(a
 // animal?". Treats and snacks are feeding questions, not gifts ("what treats
 // can I give my bearded dragon" goes to the search), and "can I give my dog
 // grapes" has no gift word at all.
-const ASK_GIFT_RE = /\b(gifts?|presents?|stocking stuffers?)\b|\bsomething to (buy|get) (for|my)\b|\b(buy|get) (something|anything) for\b|\b(birthday|christmas|xmas|holidays?|hanukkah|valentines?)\b.*\b(buy|get)\b|\b(buy|get)\b.*\b(birthday|christmas|xmas|holidays?|hanukkah|valentines?)\b/;
+const ASK_OCCASION = 'birthday|bday|christmas|xmas|holidays?|hanukkah|valentines?';
+const ASK_OCCASION_RE = new RegExp(`\\b(${ASK_OCCASION})\\b`);
+const ASK_GIFT_RE = new RegExp(`\\b(gifts?|presents?|stocking stuffers?)\\b|\\bsomething to (buy|get) (for|my)\\b|\\b(buy|get) (something|anything) for\\b|\\b(${ASK_OCCASION})\\b.*\\b(buy|get)\\b|\\b(buy|get)\\b.*\\b(${ASK_OCCASION})\\b`);
 const ASK_TREAT_RE = /\b(treats?|snacks?)\b/;
 const ASK_GIFT_PERSON_RE = /\b(someone|somebody|anyone|a person|people|friends?|buddy|mom|mum|dad|mother|father|parents?|sister|brother|son|daughter|wife|husband|partner|boyfriend|girlfriend|kids?|child|children|niece|nephew|aunt|uncle|grandma|grandpa|grandmother|grandfather|cousin|coworker|colleague|teacher|neighbor|neighbour|lovers?|fans?|owners?|keepers?|enthusiasts?|person who|who (loves?|likes?|has|owns?|keeps?))\b/;
 const askIsGift = (text) => ASK_GIFT_RE.test(text) && !ASK_TREAT_RE.test(text);
+const askAn = (w) => (/^[aeiou]/.test(w) ? 'an' : 'a');
+
+// A pet that just arrived (owner, 2026-11-03, on a Fable design): "I got a
+// leopard gecko, what do I do", "I was gifted a pet", "my mom got me a
+// bearded dragon for christmas, what now", "just got a betta, help". The
+// reply is a line and the animal's care guide hub, no model call, and with
+// no animal named "which animal did you get?". A pet the reader received is
+// never gift shopping, so this is checked before the gift rule ("I was
+// gifted a pet, what do I do" went to the search, and "surprise gift, what
+// do I do" got the gift list). Three ways to say it arrived: the reader got
+// it (ASK_GOT_RE), someone gave it (ASK_RECEIVED_RE), or it was a surprise
+// with a "what do I do" and no "for" ("surprise gift for my hamster" is
+// shopping). Then nothing else may be asked: once the arrival words, the
+// "what now" words, the animal, an occasion, the giver and a few fillers are
+// taken out, no word may be left. "I got a hamster, what should I feed him"
+// leaves "feed" and goes to the search as before.
+const ASK_GOT_RE = /\b(i|we|ive|i've|weve|we've)( just| recently| finally| also| now)? (got|gotten|received|bought|purchased|adopted|rescued|inherited|picked up|brought home|took in|took home|was given|were given|was gifted|were gifted|got given|got gifted|been given|been gifted|been handed|now have|now own)\b|\b(just|recently|finally) (got|gotten|received|bought|purchased|adopted|rescued|picked up|brought home|took in|took home)\b|^(got|bought|adopted|rescued|received) (a|an|my|the|two|some|\d+)\b/;
+const ASK_GIVER = '(someone|somebody|they|he|she|my (mom|mum|dad|mother|father|parents?|sister|brother|son|daughter|wife|husband|partner|boyfriend|girlfriend|kids?|child|children|friends?|aunt|uncle|grandma|grandpa|grandmother|grandfather|cousin|niece|nephew|roommate|neighbou?r|coworker|family|boss|teacher))';
+const ASK_RECEIVED_RE = new RegExp(`\\bgifted\\b|\\b(was|were|been|got) (given|handed)\\b|\\b(got|gave|bought|handed|gifted|surprised|brought|sent) (me|us)\\b|\\b(as|was|were|is|it's|its) a (gift|present|surprise)\\b|\\b${ASK_GIVER} (just |recently )?(got|bought|adopted|brought home|surprised) (a|an|me|us|the|some|two|three|\\d+)\\b`);
+const ASK_SURPRISE_RE = /\bsurprised?\b/;
+const ASK_NEW_PET_ASK_RE = /\b(what (do|should|can|must) (i|we) (do|know|need|start with)|what now|now what|what('?s| is)? next|where (do|should|to) (i |we )?(start|begin)|how (do|should) (i|we) (start|begin)|what do (i|we) need|help|tips?|advice|pointers|any ideas?)\b/;
+const ASK_NEW_PET_FILLER_RE = /\b(pets?|animals?|new|baby|babies|little|today|yesterday|tonight|last (week|night|month|weekend)|this (week|morning|weekend)|home|surprised?|gifts?|presents?|please|pls|hi|hello|hey|so|one|ok|okay|yes|no|first|ever|own)\b/;
+const ASK_NEW_PET_STRIP = [ASK_GOT_RE, ASK_RECEIVED_RE, ASK_NEW_PET_ASK_RE, ASK_NEW_PET_FILLER_RE, ASK_OCCASION_RE, ASK_GIFT_PERSON_RE];
+
+// The words of `text` left once the patterns in `res`, the species' name and
+// any group word (gecko, frog, dog) are taken out: what the reader asked
+// beyond the pattern. Empty means nothing else was asked.
+function askLeftover(text, species, res) {
+  let t = text;
+  for (const re of res) t = t.replace(new RegExp(re.source, 'g'), ' ');
+  const name = species ? askNormalize(species.name) : '';
+  const words = new Set(name ? name.split(/[\s-]+/) : []);
+  const short = name.replace(/ fish$/, '');
+  return t.split(/[\s-]+/).map((w) => w.replace(/'s$|'/g, ''))
+    .filter((w) => askIsWord(w) && !words.has(w) && !words.has(w.replace(/e?s$/, '')) && w !== short && !askFindGroup(w));
+}
+// { species, group } when `text` says a pet just arrived and asks nothing
+// else, both null when it names no animal; null when it is not that.
+function askNewPet(text, meta) {
+  const got = ASK_GOT_RE.test(text) || ASK_RECEIVED_RE.test(text)
+    || (ASK_SURPRISE_RE.test(text) && ASK_NEW_PET_ASK_RE.test(text) && !/\bfor\b/.test(text));
+  if (!got) return null;
+  const species = askFindName(text, meta.species);
+  // The "tell me about it" words (care, tips, beginner, new owner) ask for
+  // the hub too; the puppy alias also expands to "dog care".
+  if (askLeftover(text, species, ASK_NEW_PET_STRIP).some((w) => !ASK_BROAD.has(w))) return null;
+  return { species, group: askFindGroup(text) };
+}
+
+// "Gecko for birthday", "a gecko for her birthday" (owner, 2026-11-03): an
+// occasion and an animal with no gift word and no buy or get could mean the
+// animal is the gift, or the gift is for someone who has one. When the
+// person is clear ("a gecko lover's birthday", "someone who has a gecko") it
+// is the gift reply for a person. When nothing else is said, the reply asks
+// which ("Is the gecko the gift, or is the gift for someone who has one?").
+// Any other word ("is a christmas tree safe for my cat") leaves it to the
+// search, and a treat or care word too.
+const ASK_GIFT_CLEAR_PERSON_RE = /\b(who (loves?|likes?|has|owns?|keeps?)|lovers?|fans?|owners?|keepers?|enthusiasts?)\b/;
+const ASK_DIRECTION_FILLER_RE = /\b(gifts?|presents?|ideas?|something|anything|one|coming|upcoming|next|this|big|little|special|good|great|nice|best|perfect|surprise)\b/;
+function askDirectionAsk(text, meta) {
+  if (!ASK_OCCASION_RE.test(text) || askIsGift(text) || ASK_TREAT_RE.test(text) || ASK_CARE_RE.test(text)) return null;
+  const species = askFindName(text, meta.species);
+  const group = askFindGroup(text);
+  if (!species && !group) return null;
+  if (askLeftover(text, species, [ASK_OCCASION_RE, ASK_GIFT_PERSON_RE, ASK_DIRECTION_FILLER_RE]).length) return null;
+  return { species, group, person: ASK_GIFT_CLEAR_PERSON_RE.test(text) };
+}
+// The reply to that question: 'person' ("someone who has one", "she already
+// has one", "for her gecko"), 'pet' ("for my gecko", "the gift is for the
+// gecko"), 'new' ("the gecko is the gift", "it's the gift", "yes", "getting
+// her one", or just the animal's name), or null when it says something else,
+// which is then a question of its own.
+const ASK_DIR_PERSON_RE = /\b(has|have|had|owns?|keeps?|already|owners?|keepers?|lovers?|fans?|person|someone|somebody|second|2nd|latter|no|nope|nah)\b|\bfor (her|his|their)\b/;
+const ASK_DIR_PET_RE = /\bfor (my|our|the|a|an)\b/;
+const ASK_DIR_NEW_RE = /\b(yes|yeah|yep|yup|first|1st|former|(it's|its|that's|thats|is|as) the (gift|present)|the (gift|present) is|as a (gift|present)|getting|giving|buying|gifting|get|give|buy|the (pet|animal) is|itself)\b|^(the |a |an )?(gift|present)( itself)?$/;
+function askDirectionAnswer(text, species) {
+  const strip = [ASK_DIR_PERSON_RE, ASK_DIR_PET_RE, ASK_DIR_NEW_RE, ASK_DIRECTION_FILLER_RE, ASK_GIFT_PERSON_RE, ASK_OCCASION_RE];
+  if (askLeftover(text, species, strip).length) return null;
+  if (ASK_DIR_PERSON_RE.test(text)) return 'person';
+  if (ASK_DIR_PET_RE.test(text)) return 'pet';
+  return 'new';
+}
+// Which of this file's own questions the last question got, when the client
+// says a clarify came before: 'direction' ("is the gecko the gift?"),
+// 'new_pet' ("which animal did you get?"), or null for the other two ("which
+// animal is this about?", "which animal is the gift for?"), which the normal
+// follow-up path answers. The client only says that a clarify came before,
+// so the worker reads the last question again, with the same rules that
+// chose the clarify the first time.
+function askClarifyKind(prev, meta) {
+  const direction = askDirectionAsk(prev, meta);
+  if (direction && !direction.person) return 'direction';
+  const newPet = askNewPet(prev, meta);
+  if (newPet && !newPet.species && !newPet.group) return 'new_pet';
+  return null;
+}
+// "Yes" or "no" right after "is the gecko the gift?" answers it and is not
+// small talk; only then does a bare yes or no reach the routing. One cached
+// ask_meta read, same as the routing itself.
+const ASK_YES_NO_RE = /^(yes|yeah|yep|yup|no|nope|nah)( please| thanks)?$/;
+async function askAnswersDirection(db, question, context) {
+  if (!context?.clarify || !ASK_YES_NO_RE.test(askNormalize(question))) return false;
+  try {
+    const meta = await askMeta(db);
+    let prev = askNormalize(context.prev);
+    for (const [re, to] of meta.aliases) prev = prev.replace(re, to);
+    return askClarifyKind(prev, meta) === 'direction';
+  } catch {
+    return false;
+  }
+}
 
 // Group words, each with the category pages it means (the slugs of
 // /guides/category/<slug>/) and how the reply names it. Longest match first,
@@ -1961,7 +2074,9 @@ const ASK_CATEGORY_NOUN = {
 };
 function askFindGroup(q) {
   for (const [re, slugs, noun] of ASK_GROUPS) {
-    if (re.test(q)) return { slugs, noun };
+    const m = q.match(re);
+    // `word` is the reader's own word, singular ("frogs" gives "frog").
+    if (m) return { slugs, noun, word: m[0].replace(/ies$/, 'y').replace(/(?<!s)s$/, '') };
   }
   return null;
 }
@@ -2090,6 +2205,52 @@ function askGiftReply(species, gift, meta) {
   return { answer: answer + forPerson, links, slugs, disclosure };
 }
 
+// The new-pet reply (owner, 2026-11-03): a line and the animal's care guide
+// hub, which covers the setup, feeding, handling and health, with no model
+// call. The hub is the species' guide id, or the hub ask_meta.gift names for
+// a breed or the dog and cat pages (Dog, Golden Retriever: no guide id of
+// their own). A group word alone (gecko, frog) gets its category page, a
+// species with no guide the guides page. `giving` is the reader giving the
+// animal rather than getting it (after "is the gecko the gift?"). Null with
+// no animal at all, which gets "which animal did you get?".
+function askNewPetReply(species, newPet, meta) {
+  const name = species?.name || '';
+  const lower = name.toLowerCase();
+  const hub = species?.guideId || meta.gift[name]?.hub || null;
+  const cap = (s) => s.replace(/^./, (c) => c.toUpperCase());
+  if (hub) {
+    const start = newPet.giving
+      ? `Giving ${askAn(lower)} ${lower} means giving its setup too, so start with`
+      : `Congrats on the new ${lower}. Start with`;
+    return {
+      answer: `${start} its care guide: setup, feeding, handling and health are all in there.`,
+      links: [{ title: `${name} care guide`, url: `/guides/${hub}/` }],
+      slugs: [hub],
+    };
+  }
+  if (newPet.group) {
+    // The reader's own word for the animal (frog), the group's for the guides (amphibian).
+    const noun = newPet.group.noun;
+    const word = newPet.group.word || noun;
+    const answer = newPet.giving
+      ? `Giving ${askAn(word)} ${word} means giving its setup too, and each species needs a different one, so pick yours from the ${noun} care guides.`
+      : `Congrats on the new ${word}. Each species needs a different setup, so find yours in the ${noun} care guides and start there.`;
+    return {
+      answer,
+      links: newPet.group.slugs.map((slug) => ({ title: `${cap(ASK_CATEGORY_NOUN[slug] || slug)} care guides`, url: `/guides/category/${slug}/` })),
+      slugs: newPet.group.slugs,
+    };
+  }
+  if (species) {
+    return {
+      answer: `We don't have a ${lower} care guide yet. The care guides cover the common pets, and that's the place to look.`,
+      links: [{ title: 'All care guides', url: '/guides/' }],
+      slugs: ['guides'],
+    };
+  }
+  return null;
+}
+
 // Legal questions get links, never a model summary: the matrix cells change
 // monthly and quote statutes.
 // A state by name, or by its postal code after "in" or "for" ("legal in ny").
@@ -2200,6 +2361,38 @@ async function askRetrieve(db, question, context = null) {
   // A legal question is answered from the law matrix, never from these
   // chunks, so it skips the search and the rows it would read.
   if (legal) return { chunks: [], species, best: null, legal, meta, q, qOwn, followUp };
+  // The reply to one of this file's own questions (owner, 2026-11-03). After
+  // "is the gecko the gift, or for someone who has one?" the reply says
+  // which, and the animal comes from the question it answers (or the reply,
+  // when it names one). After "which animal did you get?" the reply names
+  // it: a species, or a group word like gecko or frog. A reply that asks
+  // something else is a question of its own and takes the normal path.
+  const ownGroup = askFindGroup(qOwn);
+  if (context?.clarify && prev) {
+    const kind = askClarifyKind(prev, meta);
+    if (kind === 'direction') {
+      const animal = ownSpecies || prevSpecies;
+      const group = ownGroup || askFindGroup(prev);
+      const dir = askDirectionAnswer(qOwn, animal);
+      if (dir === 'new') {
+        return { chunks: [], species: animal, best: null, legal: false, newPet: { group, giving: true }, meta, q, qOwn, followUp: true };
+      }
+      if (dir) {
+        return { chunks: [], species: animal, best: null, legal: false, gift: { person: dir === 'person', group }, meta, q, qOwn, followUp: true };
+      }
+    } else if (kind === 'new_pet' && (ownSpecies || ownGroup) && !askLeftover(qOwn, ownSpecies, ASK_NEW_PET_STRIP).some((w) => !ASK_BROAD.has(w))) {
+      return { chunks: [], species: ownSpecies, best: null, legal: false, newPet: { group: ownGroup, giving: false }, meta, q, qOwn, followUp: true };
+    }
+  }
+  // A pet that just arrived ("I got a leopard gecko, what do I do", "I was
+  // gifted a pet"), judged on the reader's own words: the animal is the one
+  // named here, never one carried from the last question ("surprise gift,
+  // what do I do" after a dog gift question is not about the dog). Before
+  // the gift rule: a pet received is not gift shopping.
+  const newPet = askNewPet(qOwn, meta);
+  if (newPet) {
+    return { chunks: [], species: newPet.species, best: null, legal: false, newPet: { group: newPet.group, giving: false }, meta, q, qOwn, followUp };
+  }
   // A gift question, judged on the reader's own words, or on the whole
   // conversation right after "which animal is the gift for?", where the
   // reply ("a hamster") carries the question. Before the catalog check ("do
@@ -2212,12 +2405,20 @@ async function askRetrieve(db, question, context = null) {
     const gift = { person: ASK_GIFT_PERSON_RE.test(giftText), group: askFindGroup(q) };
     return { chunks: [], species, best: null, legal: false, gift, meta, q, qOwn, followUp };
   }
+  // An occasion and an animal with nothing else ("gecko for birthday"): the
+  // gift reply when the person is clear, else ask which way the gift goes.
+  const direction = askDirectionAsk(qOwn, meta);
+  if (direction) {
+    if (direction.person) {
+      return { chunks: [], species: direction.species, best: null, legal: false, gift: { person: true, group: direction.group }, meta, q, qOwn, followUp };
+    }
+    return { chunks: [], species: direction.species, best: null, legal: false, direction, meta, q, qOwn, followUp };
+  }
   // "What animals do you cover", "list the reptiles you have": answered from
   // the catalog, before the pronoun check below ("the reptiles you have" is
   // not a pet). Judged on the reader's own words; after a catalog answer, a
   // follow-up that only names a group ("what about snakes?") carries the
   // intent along.
-  const ownGroup = askFindGroup(qOwn);
   const catalog = askCatalog(qOwn, ownSpecies, meta)
     || (followUp && ownGroup && (!ownSpecies || askIsGroupWord(ownSpecies)) && !ASK_CARE_RE.test(qOwn)
       && askCatalog(prev, prevSpecies, meta) ? { kind: 'group', group: ownGroup } : null);
@@ -2499,7 +2700,7 @@ async function handleAskInner(request, env, ctx, state) {
   // 2026-11-03): "hello" alone used to come back "not in our guides", and
   // "testing" asked which animal.
   const talk = askSmallTalk(question);
-  if (talk) {
+  if (talk && !(await askAnswersDirection(env.ASK_DB, question, context))) {
     return storeJson({
       result: 'greeting',
       answer: talk.reply,
@@ -2557,6 +2758,48 @@ async function handleAskInner(request, env, ctx, state) {
       result: 'navigate',
       answer: '',
       links: [{ title: `${found.species.name} care guide`, url: `/guides/${found.species.guideId}/` }],
+      emergency: false,
+      species,
+      followUp: found.followUp,
+    });
+  }
+
+  // A pet that just arrived (owner, 2026-11-03): a line and its care guide
+  // hub, no model call, logged as answered with the hub. With no animal,
+  // "which animal did you get?", which the next message answers.
+  if (found.newPet) {
+    const reply = askNewPetReply(found.species, found.newPet, found.meta);
+    if (!reply) {
+      log('clarify');
+      return storeJson({
+        result: 'clarify',
+        answer: "Which animal did you get? Tell me the species and I'll point you to its care guide.",
+        links: [],
+        emergency: false,
+        species: null,
+        followUp: found.followUp,
+      });
+    }
+    log('answered', reply.slugs, { answer_slug: reply.links[0]?.url || null }, { answer: reply.answer, page: reply.links[0]?.title || null });
+    return storeJson({
+      result: 'new_pet',
+      answer: reply.answer,
+      links: reply.links,
+      emergency: false,
+      species,
+      followUp: found.followUp,
+    });
+  }
+
+  // An occasion and an animal with no direction ("gecko for birthday"): ask
+  // which way the gift goes. The next message answers it.
+  if (found.direction) {
+    const name = found.species ? found.species.name.toLowerCase() : found.direction.group.word;
+    log('clarify');
+    return storeJson({
+      result: 'clarify',
+      answer: `Is the ${name} the gift, or is the gift for someone who has one?`,
+      links: [],
       emergency: false,
       species,
       followUp: found.followUp,

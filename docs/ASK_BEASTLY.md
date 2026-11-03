@@ -277,10 +277,11 @@ In `public/_worker.js`, listed in `public/_routes.json`. In order:
    my hamster", "christmas present for my cat", "gift for someone who loves
    frogs" get an instant reply, result `gift`, no search, no model call,
    counted toward the 3 like a hub link. The rule (ASK_GIFT_RE, resolved
-   right after the legal check, before the catalog and pronoun checks): a
-   gift word (gift, present, stocking stuffer, "something to buy for"), or
-   an occasion (birthday, Christmas, the holidays, Hanukkah, Valentine's)
-   with buy or get, and no treat or snack word: "what treats can I give my
+   after the legal and new-pet checks, before the catalog and pronoun
+   checks): a gift word (gift, present, stocking stuffer, "something to buy
+   for"), or an occasion (birthday, Christmas, the holidays, Hanukkah,
+   Valentine's; ASK_OCCASION) with buy or get, and no treat or snack word:
+   "what treats can I give my
    bearded dragon" is a feeding question and goes to the search, and "can I
    give my dog grapes" has no gift word. The animal is the one named or
    carried as usual. The reply is one line in the chat's own voice, then
@@ -303,6 +304,80 @@ In `public/_worker.js`, listed in `public/_routes.json`. In order:
    the next message carries the question, so "a hamster" answers it as a
    gift. Logged as `answered` with the pages as the slugs and the first
    link as `answer_slug`; the clarify as `clarify`. No new log result.
+   A new pet (owner, 2026-11-03, from the phone test, on a Fable design):
+   "I got a leopard gecko, what do I do", "I was gifted a pet", "I was
+   given a hamster", "my mom got me a bearded dragon for christmas, what
+   now", "just got a betta, help", "surprise gift, what do I do" get a line
+   and the animal's care guide hub, result `new_pet`, no search, no model
+   call, counted toward the 3 like a hub link. Before the test, "I was
+   gifted a leopard gecko, what do I do" went to the search and came back
+   not covered ("gifted" is not a gift word), and "surprised gift, what do I
+   do" after a dog gift question got the dog gift list again. The rule
+   (askNewPet, resolved after the legal check and before the gift rule, on
+   the reader's own words): the pet arrived, said one of three ways, the
+   reader got it (ASK_GOT_RE: I got, we adopted, just bought, I was given,
+   I was gifted, picked up, brought home), someone gave it (ASK_RECEIVED_RE:
+   gifted, got me, gave us, as a gift, it was a surprise, my mom got a),
+   or a surprise with a "what do I do" and no "for" (ASK_SURPRISE_RE:
+   "surprise gift for my hamster" is shopping); and nothing else asked: once
+   the arrival words, the "what now" words (ASK_NEW_PET_ASK_RE: what do I
+   do, what now, where do I start, help, tips, advice), the animal, an
+   occasion, the giver and a few fillers (ASK_NEW_PET_FILLER_RE, and the
+   "tell me about it" words) are taken out, no word may be left. "I got a
+   hamster, what should I feed him" leaves "feed" and goes to the search as
+   before. The animal is the one named in the message, never one carried
+   from the last question: a received pet is not the one just shopped for.
+   Reply: "Congrats on the new leopard gecko. Start with its care guide:
+   setup, feeding, handling and health are all in there." with the hub,
+   from the species' guide id or the hub `ask_meta.gift` names (Dog, Golden
+   Retriever: no guide id of their own). A group word alone (gecko, frog):
+   "Congrats on the new frog. Each species needs a different setup, so find
+   yours in the amphibian care guides and start there." with the category
+   page (the reader's word for the animal, the group's for the guides). A
+   species with no guide (platypus): "We don't have a platypus care guide
+   yet. The care guides cover the common pets, and that's the place to
+   look." with /guides/. No animal: "Which animal did you get? Tell me the
+   species and I'll point you to its care guide.", result `clarify`, and the
+   next message names it ("a leopard gecko", "a gecko", "hamster"); a reply
+   that asks something else ("a hamster, what should I feed him") is a
+   question of its own and takes the normal follow-up path, and one that
+   only says again that it arrived ("it was a surprise") is asked again.
+   Logged as `answered` with the hub
+   as the slug and `answer_slug`; the clarify as `clarify`. No new log
+   result, and no disclosure: no gear link is shown.
+   "Is the gecko the gift?" (owner, 2026-11-03, from the phone test): an
+   occasion and an animal with no gift word and no buy or get ("gecko for
+   birthday", "gecko for her birthday", "leopard gecko for christmas", "a
+   hamster for my son's birthday") could mean the animal is the gift or the
+   gift is for someone who has one, so the reply asks: "Is the gecko the
+   gift, or is the gift for someone who has one?", result `clarify`, not
+   counted. Before, these went to the search and came back not covered. The
+   rule (askDirectionAsk, after the gift rule): ASK_OCCASION, an animal or
+   group word, and nothing else once the occasion, the person words and a
+   few fillers are out; a treat or care word, or any other word ("is a
+   christmas tree safe for my cat") leaves it to the search. When the person
+   is already clear ("a gecko for a gecko lover's birthday", "for someone
+   who has one", ASK_GIFT_CLEAR_PERSON_RE) it is the gift reply for a
+   person, with no question. The next message answers it
+   (askDirectionAnswer): "the gecko is the gift", "it's the gift", "yes",
+   "getting her one" or just the animal's name gets the new-pet reply in its
+   giving form ("Giving a leopard gecko means giving its setup too, so start
+   with its care guide: setup, feeding, handling and health are all in
+   there."); "someone who has one", "she already has one", "no", "for her
+   gecko" gets the gift reply for a person (care packages included); "for my
+   gecko" the gift reply for the pet. The animal is the one in the question
+   asked, or the one the reply names. A reply that says anything else
+   ("what do leopard geckos eat") is a question of its own. A bare "yes" or
+   "no" is small talk everywhere else; right after this question it is the
+   answer (askAnswersDirection, checked before the small talk reply).
+   How a follow-up knows which question it answers: the client only says a
+   clarify came before (`context.clarify`), so the worker reads the last
+   question again with the same rules that chose the clarify the first
+   time (askClarifyKind): an occasion question with no direction asked "is
+   the gecko the gift?", an arrival with no animal asked "which animal did
+   you get?", and anything else asked "which animal?" (the gift one or the
+   pet one), which the existing follow-up path answers by carrying the last
+   question along. Nothing new travels from the client.
 6. Search: spoken filler dropped first (owner, 2026-11-02): "like", "um",
    "uh", "kinda", "idk", "lol" and stretched forms ("ummmm", "hmmm",
    "sooo"), so "like, um, a hamster" searches as "hamster". Then nicknames expanded, the named species used as a filter ("tortoise"
@@ -332,7 +407,7 @@ In `public/_worker.js`, listed in `public/_routes.json`. In order:
    question last.
 
 Reply: `{ result, answer, links, emergency, species, followUp, health }`.
-`result` is answered, fact, gift, navigate, catalog, clarify, thanks, greeting, legal, no_match,
+`result` is answered, fact, gift, new_pet, navigate, catalog, clarify, thanks, greeting, legal, no_match,
 capped, refused or unavailable. A `gift` reply also carries `disclosure`, the
 affiliate line, empty unless a gear link is among the links. A `fact` reply also carries `fact` (url,
 title, animal) and `missing` (the animal that had none), and is logged as

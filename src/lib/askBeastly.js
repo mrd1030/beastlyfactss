@@ -78,7 +78,7 @@ export function deleteConversation(id) {
 
 // Only answers that gave the reader something count toward the cap: a
 // question the guides do not cover (or one that failed) does not use one up.
-const COUNTED = new Set(['answered', 'navigate', 'legal', 'refused', 'catalog', 'fact', 'gift']);
+const COUNTED = new Set(['answered', 'navigate', 'legal', 'refused', 'catalog', 'fact', 'gift', 'new_pet']);
 export const answersUsed = (c) => (c ? c.turns.filter((t) => COUNTED.has(t.reply?.result)).length : 0);
 export const canFollowUp = (c) => Boolean(c) && !c.closed && answersUsed(c) < MAX_TURNS;
 
