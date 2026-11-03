@@ -188,7 +188,7 @@ export default function AskReply({ question, reply, compact = false, hasResults 
   // the chat the reader's next message carries the question; it does not use
   // up one of the conversation's answers.
   // A thank-you gets a short one back, no links.
-  if (reply.result === 'clarify' || reply.result === 'thanks') {
+  if (reply.result === 'clarify' || reply.result === 'thanks' || reply.result === 'greeting') {
     return (
       <p className={`font-body ${text} text-foreground`} aria-live="polite">{reply.answer}</p>
     );

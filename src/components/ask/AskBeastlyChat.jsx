@@ -204,11 +204,11 @@ export default function AskBeastlyChat() {
   };
 
   const verified = !isTurnstileEnabled || passed || captchaToken || captchaBlocked;
-  const canSend = input.trim().length >= 3 && !pending && verified;
+  const canSend = input.trim().length >= 2 && !pending && verified;
 
   const send = async (text = input) => {
     const q = String(text).trim();
-    if (q.length < 3 || pending || !verified) return;
+    if (q.length < 2 || pending || !verified) return;
     setInput('');
     setView('ask');
     setPending(q);
