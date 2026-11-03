@@ -436,3 +436,28 @@ Haiku 5.5 is $0.10 per million input tokens and $0.50 per million output under
 $0.00025, so 4,000 answers per dollar. The 1,000 a day cap holds the worst day
 near $0.25, about $7.50 a month, under the $10 Console spend limit, which is
 the backstop. Misses and legal answers cost nothing.
+
+## Open items
+
+Left for later on purpose (owner, 2026-11-03); pick back up if the log
+shows them on real questions.
+
+- **Guides that cite their sources inline.** Some article bodies say "per
+  veterinary sources" or "enthusiast sites cite" next to a figure (the
+  bearded dragon feeding guide's hatchling schedule, for one). Haiku copies
+  the phrase, and the clean-up's backstop then drops the whole sentence, so
+  an answer can come out shorter than it should (2 of 6 runs of "what about
+  babies" after the bearded dragon feeding question lost the hatchling
+  line). A content decision, under docs/RULES.md: reword those passages, or
+  leave them and change the backstop to strip the phrase instead of the
+  sentence.
+- **Clean-up next steps, if needed:** on the test site only, return the
+  model's raw text with the cleaned answer, to see exactly what gets cut;
+  the backstop strips the phrase and keeps the sentence unless what is left
+  is under about 4 words; "per X sources" and "X sources cite / put / give /
+  list / report" join the speaker rule; the "some suggest" rule also takes
+  "and", "with" and "or" (the betta feeding answer said "and some suggest
+  up to three smaller meals").
+- **Choosing a pet.** "What is the best pet as a gift" and "my friend wants
+  a pet, what is easy for a kid" come back not covered; they need a search
+  built around the comparison and beginner pet articles.
