@@ -81,7 +81,8 @@ row. A section over 450 words splits at paragraph breaks. The script also
 writes `.ask-index/meta.json`: the searchAliases.js nicknames, the species list
 with care guide ids, the legal matrix's states and animals, every fact page's
 url, species and title (`facts`, for "show me a fun fact" and "chicken
-facts"), the words in more than 5% of the
+facts"), each species' enrichment guide, gear page and hub (`gift`, for
+"what is a good gift for my hamster"), the words in more than 5% of the
 searchable chunks with their counts (`common`, left out of the any-word
 search), and the care guide catalog by category (`catalog`, for "what
 animals do you cover"). The output is deterministic: two builds of the same content match
@@ -272,6 +273,36 @@ In `public/_worker.js`, listed in `public/_routes.json`. In order:
    a species, so it is a where-is question and gets the hub (ASK_HAVE_RE
    joined the where-is words for that); "what do reptiles eat" has a care
    word and goes to the search.
+   Gifts (owner, 2026-11-03, on a Fable design): "what is a good gift for
+   my hamster", "christmas present for my cat", "gift for someone who loves
+   frogs" get an instant reply, result `gift`, no search, no model call,
+   counted toward the 3 like a hub link. The rule (ASK_GIFT_RE, resolved
+   right after the legal check, before the catalog and pronoun checks): a
+   gift word (gift, present, stocking stuffer, "something to buy for"), or
+   an occasion (birthday, Christmas, the holidays, Hanukkah, Valentine's)
+   with buy or get, and no treat or snack word: "what treats can I give my
+   bearded dragon" is a feeding question and goes to the search, and "can I
+   give my dog grapes" has no gift word. The animal is the one named or
+   carried as usual. The reply is one line in the chat's own voice, then
+   the animal's enrichment guide and its gear page, both from
+   `ask_meta.gift` (per species as its chunks name it: the enrichment
+   article's url and short name, the gear page url for the 97 animals in
+   gear-by-animal.json, and the hub id). Whichever exists is linked; with
+   neither, the hub. A group word alone (frogs, geckos) gets its category
+   page, and a species with no guide gets /guides/. The affiliate line
+   ("The gear page carries affiliate links. As an Amazon Associate I earn
+   from qualifying purchases, at no extra cost to you.") travels as
+   `disclosure` and shows under the links only when the gear link is there
+   (FTC: disclosure next to the link). A gift for a person ("someone who
+   loves frogs", "a frog lover", "my friend who has a gecko",
+   ASK_GIFT_PERSON_RE) adds "For the person, a care package from our store
+   is the gift that fits." and a third link, Beastly Facts care packages
+   (/care-packages/store/); a gift for the pet never does. No animal ("good
+   gift for a pet lover"): "Which animal is the gift for? Tell me the
+   species and I'll point you to the right pages.", result `clarify`, and
+   the next message carries the question, so "a hamster" answers it as a
+   gift. Logged as `answered` with the pages as the slugs and the first
+   link as `answer_slug`; the clarify as `clarify`. No new log result.
 6. Search: spoken filler dropped first (owner, 2026-11-02): "like", "um",
    "uh", "kinda", "idk", "lol" and stretched forms ("ummmm", "hmmm",
    "sooo"), so "like, um, a hamster" searches as "hamster". Then nicknames expanded, the named species used as a filter ("tortoise"
@@ -301,8 +332,9 @@ In `public/_worker.js`, listed in `public/_routes.json`. In order:
    question last.
 
 Reply: `{ result, answer, links, emergency, species, followUp, health }`.
-`result` is answered, fact, navigate, catalog, clarify, thanks, greeting, legal, no_match,
-capped, refused or unavailable. A `fact` reply also carries `fact` (url,
+`result` is answered, fact, gift, navigate, catalog, clarify, thanks, greeting, legal, no_match,
+capped, refused or unavailable. A `gift` reply also carries `disclosure`, the
+affiliate line, empty unless a gear link is among the links. A `fact` reply also carries `fact` (url,
 title, animal) and `missing` (the animal that had none), and is logged as
 answered with the fact's url. `followUp` says whether the question joined the conversation;
 `health` marks a no_match that sounds like a health problem. On the sharetest

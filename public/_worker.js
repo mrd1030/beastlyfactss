@@ -1826,6 +1826,10 @@ async function askMeta(db) {
     // Missing on an index loaded before it existed: the catalog reply is
     // then skipped and the question goes to the search.
     catalog: parse(m.catalog, null),
+    // Per species, the pages a gift question links (enrichment guide, gear
+    // page, hub). Missing on an older index: a gift question then gets the
+    // hub, or "which animal?".
+    gift: parse(m.gift, {}),
   };
   return askMetaCache;
 }
@@ -1905,6 +1909,24 @@ const ASK_HAVE_RE = /\b(do|does|did)? ?(you|yall|y'all|the site|this site|beastl
 // question and gets the hub; "what do reptiles eat" has a care word and
 // goes to the search.
 const ASK_CATALOG_RE = /\b(list|how many|(what|which) (kinds? of |sorts? of )?(animals?|species|pets?|critters?|creatures?|breeds?)|(do|does|did)? ?(you|yall|y'all|the site|this site|beastly) (have|got|cover|carry|offer)|have you got|is there anything|anything (on|about|for)|guides? (on|for|about)|(in|on) (the|your) (guides|site))\b/;
+// Gift questions (owner, 2026-11-03): "what is a good gift for my hamster",
+// "christmas present for my cat", "gift for someone who loves frogs". A gift
+// word (gift, present, stocking stuffer, "something to buy for"), or an
+// occasion (birthday, Christmas, the holidays) with buy or get, makes it a
+// gift question; "what should I get my friend who has a gecko for her
+// birthday" has both. The reply is written here, no model call: the animal's
+// enrichment guide and gear page, with the affiliate line next to the gear
+// link, or whichever of the two exists, else its hub. A gift for a person
+// ("someone who loves frogs", "my friend who has a gecko", "a frog lover")
+// also links the care package store. No animal named or carried: "which
+// animal?". Treats and snacks are feeding questions, not gifts ("what treats
+// can I give my bearded dragon" goes to the search), and "can I give my dog
+// grapes" has no gift word at all.
+const ASK_GIFT_RE = /\b(gifts?|presents?|stocking stuffers?)\b|\bsomething to (buy|get) (for|my)\b|\b(buy|get) (something|anything) for\b|\b(birthday|christmas|xmas|holidays?|hanukkah|valentines?)\b.*\b(buy|get)\b|\b(buy|get)\b.*\b(birthday|christmas|xmas|holidays?|hanukkah|valentines?)\b/;
+const ASK_TREAT_RE = /\b(treats?|snacks?)\b/;
+const ASK_GIFT_PERSON_RE = /\b(someone|somebody|anyone|a person|people|friends?|buddy|mom|mum|dad|mother|father|parents?|sister|brother|son|daughter|wife|husband|partner|boyfriend|girlfriend|kids?|child|children|niece|nephew|aunt|uncle|grandma|grandpa|grandmother|grandfather|cousin|coworker|colleague|teacher|neighbor|neighbour|lovers?|fans?|owners?|keepers?|enthusiasts?|person who|who (loves?|likes?|has|owns?|keeps?))\b/;
+const askIsGift = (text) => ASK_GIFT_RE.test(text) && !ASK_TREAT_RE.test(text);
+
 // Group words, each with the category pages it means (the slugs of
 // /guides/category/<slug>/) and how the reply names it. Longest match first,
 // so "small mammals" is found before "mammals". A group word that is also a
@@ -2005,6 +2027,61 @@ function askCatalogReply(intent, meta) {
     ],
     slugs: ['guides'],
   };
+}
+
+// The gift reply: the lines, the links and the affiliate line, with no
+// model call. One line in the chat's own voice, then the enrichment guide
+// and gear page from ask_meta.gift, whichever exist, else the hub; a group
+// word alone gets its category page; a species with no pages gets the
+// guides. A gift for a person adds the care package store. The affiliate
+// line goes with the gear link and only then (FTC: disclosure next to the
+// link). Returns null when there is no animal to answer for.
+const ASK_GIFT_STORE = { title: 'Beastly Facts care packages', url: '/care-packages/store/' };
+const ASK_GIFT_DISCLOSURE = 'The gear page carries affiliate links. As an Amazon Associate I earn from qualifying purchases, at no extra cost to you.';
+function askGiftReply(species, gift, meta) {
+  const entry = species ? meta.gift[species.name] || null : null;
+  const name = species?.name || '';
+  const lower = name.toLowerCase();
+  const an = (w) => (/^[aeiou]/.test(w) ? 'an' : 'a');
+  const forPerson = gift.person ? ' For the person, a care package from our store is the gift that fits.' : '';
+  let answer;
+  let links;
+  let slugs;
+  if (entry) {
+    const who = gift.person ? `${an(lower)} ${lower} keeper` : `${an(lower)} ${lower}`;
+    links = [];
+    if (entry.e) links.push({ title: `${entry.t || name} enrichment guide`, url: entry.e });
+    if (entry.g) links.push({ title: `${name} gear page`, url: entry.g });
+    if (entry.e && entry.g) answer = `The gifts ${who} will actually use are enrichment and gear: the enrichment guide has the ideas, the gear page has the kit.`;
+    else if (entry.e) answer = `The gift ${who} will actually use is enrichment, and the enrichment guide has the ideas.`;
+    else if (entry.g) answer = `The gift ${who} will actually use is gear, and the gear page has the kit.`;
+    else {
+      answer = `We don't have a gift list for the ${lower} yet, but its care guide covers what it needs, which is where the useful gifts come from.`;
+      links.push({ title: `${name} care guide`, url: `/guides/${entry.hub}/` });
+    }
+    slugs = links.map((l) => l.url);
+  } else if (gift.group) {
+    const noun = gift.group.noun;
+    answer = `We don't have one gift list for ${noun}s, since each species needs different things, but the ${noun} guides cover what each one uses.`;
+    links = gift.group.slugs.map((slug) => ({
+      title: `${ASK_CATEGORY_NOUN[slug] || slug}`.replace(/^./, (c) => c.toUpperCase()) + ' care guides',
+      url: `/guides/category/${slug}/`,
+    }));
+    slugs = gift.group.slugs;
+  } else if (species?.guideId) {
+    answer = `We don't have a gift list for the ${lower} yet, but its care guide covers what it needs, which is where the useful gifts come from.`;
+    links = [{ title: `${name} care guide`, url: `/guides/${species.guideId}/` }];
+    slugs = [species.guideId];
+  } else if (species) {
+    answer = `We don't have a gift list for the ${lower} yet. Our care guides are where the useful gifts come from.`;
+    links = [{ title: 'All care guides', url: '/guides/' }];
+    slugs = ['guides'];
+  } else {
+    return null;
+  }
+  if (gift.person) links.push(ASK_GIFT_STORE);
+  const disclosure = links.some((l) => l.url.startsWith('/gear/')) ? ASK_GIFT_DISCLOSURE : '';
+  return { answer: answer + forPerson, links, slugs, disclosure };
 }
 
 // Legal questions get links, never a model summary: the matrix cells change
@@ -2117,6 +2194,18 @@ async function askRetrieve(db, question, context = null) {
   // A legal question is answered from the law matrix, never from these
   // chunks, so it skips the search and the rows it would read.
   if (legal) return { chunks: [], species, best: null, legal, meta, q, qOwn, followUp };
+  // A gift question, judged on the reader's own words, or on the whole
+  // conversation right after "which animal is the gift for?", where the
+  // reply ("a hamster") carries the question. Before the catalog check ("do
+  // you have gift ideas for hamsters" is not a listing) and the pronoun
+  // check ("my friend who has a gecko for her birthday" is not a pet with
+  // no name). The animal is the one named or carried; a group word alone
+  // (frogs, geckos) gets its category page.
+  const giftText = followUp && context?.clarify ? q : qOwn;
+  if (askIsGift(giftText)) {
+    const gift = { person: ASK_GIFT_PERSON_RE.test(giftText), group: askFindGroup(q) };
+    return { chunks: [], species, best: null, legal: false, gift, meta, q, qOwn, followUp };
+  }
   // "What animals do you cover", "list the reptiles you have": answered from
   // the catalog, before the pronoun check below ("the reptiles you have" is
   // not a pet). Judged on the reader's own words; after a catalog answer, a
@@ -2462,6 +2551,34 @@ async function handleAskInner(request, env, ctx, state) {
       result: 'navigate',
       answer: '',
       links: [{ title: `${found.species.name} care guide`, url: `/guides/${found.species.guideId}/` }],
+      emergency: false,
+      species,
+      followUp: found.followUp,
+    });
+  }
+
+  // A gift (owner, 2026-11-03): the animal's enrichment guide and gear
+  // page, no model call, logged as answered with the first page. With no
+  // animal, "which animal is the gift for?", which the next message carries.
+  if (found.gift) {
+    const reply = askGiftReply(found.species, found.gift, found.meta);
+    if (!reply) {
+      log('clarify');
+      return storeJson({
+        result: 'clarify',
+        answer: "Which animal is the gift for? Tell me the species and I'll point you to the right pages.",
+        links: [],
+        emergency: false,
+        species: null,
+        followUp: found.followUp,
+      });
+    }
+    log('answered', reply.slugs, { answer_slug: reply.links[0]?.url || null }, { answer: reply.answer, page: reply.links[0]?.title || null });
+    return storeJson({
+      result: 'gift',
+      answer: reply.answer,
+      links: reply.links,
+      disclosure: reply.disclosure,
       emergency: false,
       species,
       followUp: found.followUp,

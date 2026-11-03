@@ -35,6 +35,7 @@ import { facts } from '../src/lib/data/facts.js';
 import { FACT_SOURCES } from '../src/lib/data/factSources.js';
 import { CATEGORIES as GLOSSARY } from '../src/lib/data/glossaryTerms.js';
 import { SEARCH_ALIASES } from '../src/lib/data/searchAliases.js';
+import { RELATED_ARTICLES } from '../src/lib/data/relatedArticles.js';
 import { mammalBeastfiles } from '../src/lib/data/beastlypedia/mammals.js';
 import { reptileBeastfiles } from '../src/lib/data/beastlypedia/reptiles.js';
 import { amphibianBeastfiles } from '../src/lib/data/beastlypedia/amphibians.js';
@@ -510,7 +511,17 @@ chunks.forEach((c, i) => {
 //             on the next build. Group hubs (the tetra and livebearer pages,
 //             the dog and cat essentials and the dog size pages) are not
 //             animals and are left out.
-const LEGAL = JSON.parse(fs.readFileSync(path.join(ROOT, 'src/lib/data/legalStatus.json'), 'utf8'));
+//   gift      per species (keyed the way its chunks name it: "Cat", "Dog",
+//             "Bearded Dragon"), the pages a gift question links: its
+//             enrichment guide (e), its gear page (g, only for animals in
+//             gear-by-animal.json) and its hub (hub), for "what is a good
+//             gift for my hamster" (owner, 2026-11-03). Only keys that
+//             exist are written. The enrichment article is
+//             <guideId>-enrichment-guide when that is published, else the
+//             enrichment article RELATED_ARTICLES lists for the hub that
+//             starts with the animal's first name word (bengal-cat-, not
+//             cat-, for the Bengal), else the first one listed.
+const LEGAL =JSON.parse(fs.readFileSync(path.join(ROOT, 'src/lib/data/legalStatus.json'), 'utf8'));
 const stateSlug = (name) => name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 const guideIdByName = new Map(guidesIndex.map((g) => [g.name.toLowerCase(), g.id]));
 const speciesNames = [...new Set(chunks.map((c) => c.species).filter(Boolean))];
@@ -544,6 +555,31 @@ const catalog = {
   groups: catalogGroups,
 };
 
+const GEAR_IDS = new Set(
+  JSON.parse(fs.readFileSync(path.join(ROOT, 'src/lib/generated/gear-by-animal.json'), 'utf8')).animals.map((a) => a.id),
+);
+const guideTitleBySlug = new Map(chunks.filter((c) => c.type === 'guide').map((c) => [c.slug, c.title]));
+function enrichmentSlug(g) {
+  const own = `${g.id}-enrichment-guide`;
+  if (guideTitleBySlug.has(own)) return own;
+  const listed = (RELATED_ARTICLES[g.id] || []).filter((s) => s.endsWith('-enrichment-guide') && guideTitleBySlug.has(s));
+  const first = hubSpecies(g).toLowerCase().split(/[\s-]+/)[0];
+  return listed.find((s) => s.startsWith(`${first}-`)) || listed[0] || null;
+}
+const gift = {};
+for (const g of hubs) {
+  const name = hubSpecies(g);
+  if (gift[name]) continue;
+  const e = enrichmentSlug(g);
+  gift[name] = {
+    // The animal the article names ("Dog" from "Dog Enrichment: ..."), so a
+    // breed that borrows the dog or cat guide links it under that name.
+    ...(e && { e: `/blog/${e}/`, t: guideTitleBySlug.get(e).split(':')[0].replace(/\s*enrichment.*$/i, '').trim() }),
+    ...(GEAR_IDS.has(g.id) && { g: `/gear/animal/${g.id}/` }),
+    hub: g.id,
+  };
+}
+
 const meta = {
   aliases: SEARCH_ALIASES,
   species: speciesNames
@@ -558,6 +594,7 @@ const meta = {
   facts: chunks.filter((c) => c.type === 'fact').map((c) => ({ url: c.url, species: c.species, title: c.title })),
   common: commonWords(chunks.filter((c) => c.type !== 'legal'), 0.05),
   catalog,
+  gift,
 };
 
 fs.mkdirSync(OUT_DIR, { recursive: true });
@@ -598,6 +635,7 @@ console.log(`  total words   ${totalWords}`);
 console.log(`  legal cells   ${legalCells.length}`);
 console.log(`  meta          ${Object.keys(meta.aliases).length} aliases, ${meta.species.length} species, ${meta.states.length} jurisdictions, ${meta.legal.length} legal animals`);
 console.log(`  catalog       ${catalog.total} animals in ${catalog.groups.length} groups: ${catalog.groups.map((g) => `${g.label} ${g.names.length}`).join(', ')}`);
+console.log(`  gift          ${Object.keys(gift).length} species, ${Object.values(gift).filter((x) => x.e).length} with an enrichment guide, ${Object.values(gift).filter((x) => x.g).length} with a gear page`);
 console.log('5 largest chunks:');
 for (const c of [...chunks].sort((a, b) => b.words - a.words).slice(0, 5)) {
   console.log(`  ${String(c.words).padStart(5)} words  ${c.type}  ${c.url}  ${c.heading}`);
