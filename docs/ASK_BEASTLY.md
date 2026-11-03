@@ -80,9 +80,10 @@ rows resolve through src/lib/costs.js; ComparisonTables become one line per
 row. A section over 450 words splits at paragraph breaks. The script also
 writes `.ask-index/meta.json`: the searchAliases.js nicknames, the species list
 with care guide ids, the legal matrix's states and animals, every fact page's
-url (`facts`, for "show me a fun fact"), and the words in more than 5% of the
+url (`facts`, for "show me a fun fact"), the words in more than 5% of the
 searchable chunks with their counts (`common`, left out of the any-word
-search). The output is deterministic: two builds of the same content match
+search), and the care guide catalog by category (`catalog`, for "what
+animals do you cover"). The output is deterministic: two builds of the same content match
 byte for byte.
 
 ## The index in D1
@@ -123,7 +124,9 @@ The sharetest project and main share this database. Since the merge
 (2026-11-03) the sharetest build command is `npx vite build` again, so only
 main loads the index; the test site reads the same index and writes nothing.
 Test-site builds come only from a branch push without [CI Skip], at the
-owner's word.
+owner's word. A new meta key the test site needs before main loads it can
+be written straight into ask_meta (done once for `catalog`, 2026-11-03, 2
+rows written); the next main load rewrites it with the same value.
 
 It runs at the end of `npm run build` when the branch is main, or when
 `ASK_INDEX_LOAD=1`, and only with `CLOUDFLARE_API_TOKEN` (D1 Edit) set. The
@@ -188,10 +191,16 @@ In `public/_worker.js`, listed in `public/_routes.json`. In order:
    there is nothing to answer, and the chat cannot see the page (a reader on
    the bearded dragon hub may mean that animal). A question choosing a pet
    ("my friend wants a pet, what's easy") never gets it.
-   Greetings (owner, 2026-11-03): "hi", "hello there", "hey beastly",
-   "good morning" get "Hi! Ask me about any animal on the site: care,
-   health, facts or the law.", result `greeting`, on the same terms as
-   thanks. The chat now sends from 2 characters, so "hi" goes through.
+   Small talk (owner, 2026-11-03): a message that is only a known phrase
+   gets a reply in kind, result `greeting`, on the same terms as thanks.
+   ASK_SMALL_TALK in the worker lists them by kind: greetings ("hi", "what's
+   up", "how are you"), tests ("testing", "is this working"), questions
+   about the bot ("who are you", "what can you do", "help"), goodbyes and
+   reactions ("lol", "wow", "hmm"). Filler, punctuation, stretched letters
+   ("heyyyy", "hiii") and a name ("beastly") around the phrase do not
+   matter; anything more makes it a question. The chat sends from 2
+   characters, so "hi" goes through. After "which animal?", a reply that
+   still names no animal is a new question, not carried with the last one.
    Thanks (owner, 2026-11-02): a thank-you turn is skipped when the next
    question looks back for its follow-up context. A message that is only thanks or an
    acknowledgement ("thanks!", "ty so much", "ok cool, got it", "that
@@ -214,6 +223,38 @@ In `public/_worker.js`, listed in `public/_routes.json`. In order:
      ("how often should I clean the tank"): "Which animal?". Not when a best
      passage is general (a glossary term, a guide about no one animal), not
      for "what is" questions ("what is uvb"), not when choosing a pet.
+   "What's on the site" (owner, 2026-11-03): "what animals do you cover",
+   "how many animals are in the guides", "can you list the reptiles you
+   have", "do you have anything on frogs", "which fish do you have" are
+   answered from the catalog, result `catalog`, no search, no model call,
+   counted toward the 3 like a hub link. The build counts it
+   (`ask_meta.catalog`: the eleven category pages in the guides page's
+   order, each with its slug and the names of its animals and breeds, plus
+   the total), so no number is typed into code and a new guide changes the
+   reply on the next build. Group hubs (tetras, livebearers, the dog and
+   cat essentials, the dog size pages) are not animals and are left out.
+   The rule, resolved in `askRetrieve` after the legal check and before the
+   pronoun check: a catalog word (list, how many, what/which
+   animals/species/pets, do you have/cover, anything on, guides on, in the
+   guides, on the site), no care word (ASK_CARE_RE), and no species named,
+   or only a group word. ASK_GROUPS maps group words to category pages:
+   reptiles are geckos, lizards, snakes and turtles-tortoises; frogs,
+   toads, newts and salamanders are amphibians; rodents, hamsters, rabbits
+   and mammals are small-mammals; bugs, insects, spiders, tarantulas,
+   shrimp and scorpions are invertebrates; parrots are birds; kittens are
+   cats, puppies are dogs; and each category's own name. A group word that
+   is also a species in the index ("snake", "gecko", "hamster") counts as
+   the group here. Three replies: a count ("how many": the total and the
+   groups with their counts, link to /guides/), a group listing (the count,
+   up to 8 names in turn across the categories then "and N more", one link
+   per category page), and the general one ("what do you have": the
+   breakdown plus the facts and legal counts, links to /guides/, /facts/
+   and /exotic-pet-laws/). "How many facts do you have" gives the facts
+   count. After a catalog answer, a follow-up that only names a group
+   ("what about snakes?") lists it. "Do you have a guide on axolotls" names
+   a species, so it is a where-is question and gets the hub (ASK_HAVE_RE
+   joined the where-is words for that); "what do reptiles eat" has a care
+   word and goes to the search.
 6. Search: spoken filler dropped first (owner, 2026-11-02): "like", "um",
    "uh", "kinda", "idk", "lol" and stretched forms ("ummmm", "hmmm",
    "sooo"), so "like, um, a hamster" searches as "hamster". Then nicknames expanded, the named species used as a filter ("tortoise"
@@ -227,7 +268,9 @@ In `public/_worker.js`, listed in `public/_routes.json`. In order:
    Rows read per search (owner, 2026-11-01, on a Fable recommendation): the
    species goes inside the full text match, so a species question reads
    about 110 rows instead of 6,000. A question with no species tries every
-   word first; the any-word search runs only when that found nothing, and
+   word first; the any-word search runs when that found fewer than 4 (it
+   briefly ran only on none, which missed "When do reptiles brumate?": the
+   guides never say "reptiles"), and
    leaves out words in more than 5% of the chunks (`ask_meta.common`),
    keeping the two rarest if all are common, and skips an empty word list.
    Ranking happens inside the FTS index and only the top rows are joined.
@@ -241,8 +284,8 @@ In `public/_worker.js`, listed in `public/_routes.json`. In order:
    question last.
 
 Reply: `{ result, answer, links, emergency, species, followUp, health }`.
-`result` is answered, navigate, clarify, thanks, legal, no_match, capped, refused or
-unavailable. `followUp` says whether the question joined the conversation;
+`result` is answered, navigate, catalog, clarify, thanks, greeting, legal, no_match,
+capped, refused or unavailable. `followUp` says whether the question joined the conversation;
 `health` marks a no_match that sounds like a health problem. On the sharetest
 site an answer also carries `sources`, the chunks the model saw, for the
 source check.
@@ -344,8 +387,8 @@ above the answer and the species' emergency card from its router hub under it
 ## Logging
 
 Supabase table `ask_log` (supabase/ask_log.sql): question, matched_slugs,
-result (answered, no_match, capped, refused, legal, clarify), answer_slug,
-created_at. No IP. `answer_slug` is the page the model named (READ) on an
+result (answered, no_match, capped, refused, legal, clarify, catalog),
+answer_slug, created_at. No IP. `answer_slug` is the page the model named (READ) on an
 answered row; `matched_slugs` is in search order, so the pair shows how
 often the model picked something other than the top hit (added 2026-11-02
 on Grok's review). RLS on
@@ -393,3 +436,28 @@ Haiku 5.5 is $0.10 per million input tokens and $0.50 per million output under
 $0.00025, so 4,000 answers per dollar. The 1,000 a day cap holds the worst day
 near $0.25, about $7.50 a month, under the $10 Console spend limit, which is
 the backstop. Misses and legal answers cost nothing.
+
+## Open items
+
+Left for later on purpose (owner, 2026-11-03); pick back up if the log
+shows them on real questions.
+
+- **Guides that cite their sources inline.** Some article bodies say "per
+  veterinary sources" or "enthusiast sites cite" next to a figure (the
+  bearded dragon feeding guide's hatchling schedule, for one). Haiku copies
+  the phrase, and the clean-up's backstop then drops the whole sentence, so
+  an answer can come out shorter than it should (2 of 6 runs of "what about
+  babies" after the bearded dragon feeding question lost the hatchling
+  line). A content decision, under docs/RULES.md: reword those passages, or
+  leave them and change the backstop to strip the phrase instead of the
+  sentence.
+- **Clean-up next steps, if needed:** on the test site only, return the
+  model's raw text with the cleaned answer, to see exactly what gets cut;
+  the backstop strips the phrase and keeps the sentence unless what is left
+  is under about 4 words; "per X sources" and "X sources cite / put / give /
+  list / report" join the speaker rule; the "some suggest" rule also takes
+  "and", "with" and "or" (the betta feeding answer said "and some suggest
+  up to three smaller meals").
+- **Choosing a pet.** "What is the best pet as a gift" and "my friend wants
+  a pet, what is easy for a kid" come back not covered; they need a search
+  built around the comparison and beginner pet articles.

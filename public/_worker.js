@@ -1393,14 +1393,347 @@ function askIsThanks(question) {
   if (!q || !ASK_THANKS_CORE.test(q)) return false;
   return q.split(' ').every((w) => ASK_THANKS_WORDS.has(w) || ASK_FILLER_RE.test(w));
 }
-// Only greeting words, filler and punctuation: "hi", "hello there!", "hey
-// beastly", "good morning". "hi, what do hamsters eat" is a question.
-const ASK_GREETING_WORDS = new Set('hi hii hiya hey heya hello helo hullo howdy yo sup greetings morning afternoon evening good there beastly all everyone guys whats up how are you doing going is it'.split(' '));
-const ASK_GREETING_CORE = /\b(hi+|hiya|hey+|heya|hello+|helo|hullo|howdy|yo|sup|greetings|good (morning|afternoon|evening))\b/;
-function askIsGreeting(question) {
-  const q = question.toLowerCase().replace(/[^a-z\s']/g, ' ').replace(/'/g, '').replace(/\s+/g, ' ').trim();
-  if (!q || !ASK_GREETING_CORE.test(q)) return false;
-  return q.split(' ').every((w) => ASK_GREETING_WORDS.has(w) || /^h+i+$|^he+y+$|^hello+$/.test(w) || ASK_FILLER_RE.test(w));
+// Small talk (owner, 2026-11-03): people type to the box the way they talk.
+// A message that is only one of these phrases gets a short reply in kind: no
+// search, no model call, not logged or counted. The whole message must be the
+// phrase (filler, punctuation, stretched letters and a name like "beastly"
+// aside), so "hi, what do hamsters eat" is still a question.
+// Phrases are written the way they come out of the normalizer: lowercase, no
+// apostrophes, single spaces, stretched letters already squeezed ("heyyy" is
+// "hey", "lmaooo" is "lmaoo"). Nothing here may be an animal name, a care word
+// or a bare acknowledgement ("ok", "cool", "got it"): thanks has its own path.
+// Each group is [kind, phrases that mean the same thing, replies]; one reply
+// is picked at random so the box answers what was said.
+const ASK_SMALL_TALK = [
+  // Greetings
+  ['greeting', [
+    'hi', 'hello', 'hey', 'hiya', 'heya', 'heyo', 'hai', 'ello', 'hola', 'howdy', 'yo', 'yoo', 'ayo', 'greetings',
+    'good day', 'hey there', 'hi there', 'hello there', 'hey yall', 'hey hey', 'hi hi', 'hello hello',
+  ], [
+    'Hi! Which animal are you curious about?',
+    'Hey! Ask me about any animal on the site: care, health, facts or the law.',
+    'Hello! Name an animal and ask away.',
+    "Hi there! I'm Beastly. What animal is on your mind?",
+    "Hey hey! Got an animal question? I'm listening.",
+  ]],
+  ['greeting', [
+    'sup', 'wassup', 'wasup', 'wazzup', 'wsup', 'whats up', 'whatsup', 'what up', 'whaddup', 'wsp', 'wsg', 'wyd',
+    'yo whats up', 'hey whats up', 'hi whats up', 'whats good', 'whats new', 'whats happening', 'whats poppin',
+    'whats going on',
+  ], [
+    'Not much, just here with the guides. Which animal are you wondering about?',
+    'Hey! Not a lot. Got an animal question for me?',
+    'Just hanging out with the fact files. What animal is on your mind?',
+    'Same old, same old. Ask me about any animal on the site.',
+    'All quiet here. What can I look up for you?',
+  ]],
+  ['greeting', [
+    'how are you', 'how are ya', 'how are u', 'how r u', 'how r you', 'how u', 'hru', 'how are you today',
+    'how are you doing', 'how you doing', 'how ya doing', 'how you doin', 'how u doin', 'hows it going',
+    'how is it going', 'hows it goin', 'how goes it', 'hows things', 'how are things', 'hows life', 'hows your day',
+    'how is your day', 'hows everything', 'hi how are you', 'hello how are you', 'hey how are you', 'hi how r u',
+    'hey how r u', 'hey hows it going',
+  ], [
+    'Doing great, thanks for asking! What animal are you curious about?',
+    "I'm good! Always happy to talk animals. What's your question?",
+    "Can't complain. What animal can I look up for you?",
+    'Doing well! Ask me about any animal on the site.',
+    'Great, and ready for an animal question whenever you are.',
+  ]],
+  ['greeting', ['hbu', 'wbu', 'how about you', 'how bout you'], [
+    "I'm doing great, thanks! Now, which animal are you curious about?",
+    'All good here! What animal question can I look up for you?',
+    'Doing well, thanks for asking. Name an animal and ask away.',
+  ]],
+  ['greeting', ['good morning', 'morning', 'mornin', 'gm'], [
+    'Good morning! What animal are you curious about today?',
+    'Morning! Ask me about any animal on the site.',
+    'Good morning! Which animal is on your mind?',
+    "Morning! Coffee for you, fact files for me. What's your question?",
+  ]],
+  ['greeting', ['good afternoon', 'afternoon'], [
+    'Good afternoon! What animal are you curious about?',
+    'Afternoon! Ask me about any animal on the site.',
+    'Good afternoon! Name an animal and ask away.',
+  ]],
+  ['greeting', ['good evening', 'evening'], [
+    'Good evening! What animal are you curious about?',
+    'Evening! Ask me about any animal on the site.',
+    'Good evening! Name an animal and ask away.',
+  ]],
+  ['greeting', ['nice to meet you', 'pleased to meet you'], [
+    "Nice to meet you too! I'm Beastly. What animal are you curious about?",
+    'Likewise! Ask me about any animal on the site.',
+    'Nice to meet you! Name an animal and ask away.',
+  ]],
+  ['greeting', ['long time no see', 'im back', 'i am back', 'hey im back'], [
+    'Welcome back! Which animal are you wondering about this time?',
+    'Good to see you again! Ask me about any animal on the site.',
+    "Welcome back! The guides haven't gone anywhere. What's your question?",
+  ]],
+  // Tests and pokes
+  ['test', [
+    'test', 'testing', 'test test', 'testing testing', 'testing 123', 'test 123', 'testing 1 2 3', 'test 1 2 3', '123',
+    'this is a test', 'is this a test', 'test message', 'hello test', 'hello world', 'ping', 'asdf', 'qwerty', 'blah',
+  ], [
+    "Test received! Ask me about any animal on the site and I'll look it up in our guides.",
+    'Loud and clear. Which animal are you curious about?',
+    'Yep, it works. Try me with an animal question.',
+    'Pong! Now ask me something about an animal.',
+    'All systems go. Name an animal and ask away.',
+  ]],
+  ['test', [
+    'is this working', 'is this thing working', 'is this even working', 'does this work', 'does this thing work',
+    'does this even work', 'is this on', 'is this thing on', 'is it working', 'does it work', 'is this broken',
+    'are you broken', 'are you working', 'do you work', 'are you on',
+  ], [
+    "Yes, it's working! Ask me about any animal on the site.",
+    'Working and ready. What animal are you curious about?',
+    "It works! Try an animal question and I'll check our guides.",
+    "Yep, I'm on. Name an animal and ask away.",
+  ]],
+  ['test', [
+    'are you alive', 'are you awake', 'are you there', 'are you still there', 'you still there', 'r u there', 'u there',
+    'you there', 'anyone there', 'anybody there', 'is anyone there', 'is anybody there', 'is anyone here',
+    'hello anyone there', 'hello is anyone there', 'hello are you there', 'can you hear me', 'can u hear me',
+    'can you see this', 'can you read this',
+  ], [
+    "I'm here! What animal are you curious about?",
+    'Right here and reading. Ask me about any animal on the site.',
+    'Yep, still here. Got an animal question?',
+    'Present! Name an animal and ask away.',
+  ]],
+  ['test', ['did you get that', 'did that work', 'did it work', 'did that go through', 'did it send'], [
+    "I see this one! If you asked something before, send it again with the animal's name.",
+    'Your message came through. Ask away about any animal on the site.',
+    'Yes, it went through. What animal are you wondering about?',
+  ]],
+  ['test', [
+    'say something', 'say hi', 'talk to me', 'answer me', 'why arent you answering', 'why wont you answer',
+    'are you ignoring me',
+  ], [
+    "I'm here! I answer questions about animals, so name one and ask away.",
+    'Hi! I only reply to animal questions, so try me with one.',
+    "Not ignoring you, promise. Ask me about any animal on the site and I'll look it up.",
+  ]],
+  // About the bot
+  ['about', [
+    'who are you', 'who r u', 'who are u', 'who is this', 'who dis', 'whos this', 'who am i talking to', 'what are you',
+    'what r u', 'tell me about yourself', 'hi who are you', 'hey who are you', 'what is your name', 'whats your name',
+    'whats ur name',
+  ], [
+    "I'm Beastly, the AI helper for Beastly Facts. I answer only from this site's own guides and fact files. What animal are you curious about?",
+    "Beastly here! I'm an AI that looks things up in Beastly Facts' guides and fact files and links the page. Ask me about any animal on the site.",
+    "My name is Beastly. I'm an AI, and everything I say comes from this site's own guides. Name an animal and ask away.",
+  ]],
+  ['about', [
+    'are you a bot', 'r u a bot', 'u a bot', 'are u a bot', 'is this a bot', 'is this a real person', 'am i talking to a bot',
+    'am i talking to a real person', 'are you ai', 'r u ai', 'are you an ai', 'is this ai', 'are you chatgpt',
+    'are you chat gpt', 'are you a robot', 'are you human', 'r u human', 'are you a human', 'are you real', 'r u real',
+    'are you a real person', 'are you a person', 'hi are you a bot', 'hey are you a bot',
+  ], [
+    "Yes, I'm an AI, not a person. I answer only from Beastly Facts' own guides and fact files, with a link to read more. What animal are you curious about?",
+    "I'm a bot, honestly. Everything I say comes from this site's guides, and I link the page so you can check it. Ask me about any animal on the site.",
+    "AI, yes. No human on this end, just Beastly Facts' own guides and fact files. Name an animal and ask away.",
+  ]],
+  ['about', ['who made you', 'who created you'], [
+    "The Beastly Facts team built me to answer questions from the site's own guides and fact files. What animal are you curious about?",
+    'I was made by Beastly Facts, and I answer only from its guides. Ask me about any animal on the site.',
+  ]],
+  ['about', [
+    'what is this', 'whats this', 'what is this for', 'what is this site', 'what is beastly', 'whats beastly',
+    'who is beastly', 'what is ask beastly', 'what is beastly facts', 'what are you for', 'what is your purpose',
+  ], [
+    "This is Ask Beastly, the question box for Beastly Facts. I'm an AI that answers from the site's own guides and fact files. Ask me about any animal on the site.",
+    "Beastly Facts is a pet care and animal facts site, and I'm Beastly, its AI helper. Name an animal and ask away: care, health, facts or the law.",
+    "I'm here to answer animal questions from Beastly Facts' own guides, with a link to read more. What animal are you curious about?",
+  ]],
+  ['about', [
+    'what can you do', 'what do you do', 'what can u do', 'what do you know', 'what can you help with',
+    'what can you help me with', 'what can i ask', 'what can i ask you', 'what should i ask', 'what questions can i ask',
+    'what can you answer', 'what can you tell me', 'what do you know about', 'do you answer questions',
+  ], [
+    'I answer questions about the animals on Beastly Facts: how to care for them, health worries, fun facts and whether they are legal to keep. Name an animal and ask away.',
+    "Anything about an animal on the site: care, health, facts or the law. Try 'how big do bearded dragons get' or 'is it legal to own a fox in Texas'.",
+    "Ask me about any animal on the site and I'll pull the answer from our guides with a link to read more.",
+  ]],
+  ['about', ['where do you get your info', 'what are your sources', 'can i trust you'], [
+    "Everything comes from Beastly Facts' own guides and fact files, and I link the page so you can read it yourself. What animal are you curious about?",
+    'Only from this site, never from the wider web. Each answer links the page it came from. Ask me about any animal on the site.',
+  ]],
+  ['about', ['how does this work', 'how does it work', 'how do i use this', 'how do you work', 'how do i ask a question'], [
+    "Type an animal and your question, like 'what do leopard geckos eat', and I'll answer from our guides with a link to read more.",
+    "Just ask in plain words. Name the animal and what you want to know, and I'll check Beastly Facts' guides.",
+    'Ask about any animal on the site in a sentence or two. I look it up in our guides and link the page.',
+  ]],
+  ['about', [
+    'help', 'help me', 'i need help', 'need help', 'pls help', 'plz help', 'can you help', 'can you help me',
+    'can u help me', 'could you help me', 'hi help', 'hey help', 'hello help', 'hi i need help', 'hi can you help me',
+    'hey can you help me',
+  ], [
+    "Happy to! Tell me the animal and what's going on, and I'll check our guides.",
+    'Sure. Name the animal and your question: care, health, facts or the law.',
+    'I can try! Which animal, and what do you want to know?',
+    "Of course. Ask me about any animal on the site and I'll look it up.",
+  ]],
+  ['about', [
+    'can i ask you something', 'can i ask you a question', 'can i ask a question', 'can i ask something',
+    'i have a question', 'got a question', 'question', 'quick question', 'hi i have a question', 'hey i have a question',
+  ], [
+    'Of course! Go ahead and ask.',
+    'Sure, ask away! Any animal on the site.',
+    'Yes! What animal is it about?',
+    'Go for it. Name the animal and what you want to know.',
+  ]],
+  // Goodbyes
+  ['bye', [
+    'bye', 'thanks bye', 'thank you bye', 'ok thanks bye', 'thx bye', 'ty bye', 'goodbye', 'good bye', 'bye bye', 'buh bye', 'bye now', 'bye for now', 'bye then', 'k bye', 'kk bye',
+    'alright bye', 'see ya', 'see you', 'see you later', 'see ya later', 'see you soon', 'see u', 'see u later', 'cya',
+    'cya later', 'catch you later', 'later', 'laters', 'ttyl', 'talk later', 'talk to you later', 'talk soon', 'peace',
+    'peace out', 'farewell', 'adios', 'ciao',
+  ], [
+    'Bye! Come back whenever an animal question comes up.',
+    'See you later! The guides will be here when you need them.',
+    'Bye for now! Ask me about any animal any time.',
+    "Take care! Come back whenever you're curious about an animal.",
+    "Later! I'll be here with the fact files.",
+  ]],
+  ['bye', [
+    'im out', 'im off', 'im leaving', 'im gonna go', 'i gotta go', 'gotta go', 'gtg', 'g2g', 'got to go', 'i have to go',
+    'gotta run',
+  ], [
+    'No problem, go on! Come back whenever an animal question comes up.',
+    'See you! The guides will be here when you get back.',
+    "Go, go! Ask me about any animal when you're back.",
+  ]],
+  ['bye', ['brb', 'be right back'], [
+    "Sure, I'll be right here.",
+    "Take your time! I'll be here with the fact files.",
+    'No rush. Come back with an animal question whenever.',
+  ]],
+  ['bye', ['good night', 'goodnight', 'night', 'nite', 'night night', 'gn', 'gnight', 'sleep well'], [
+    'Good night! Sleep well, and come back whenever an animal question pops up.',
+    'Night! The guides will be here in the morning.',
+    'Good night! Dream of something furry, feathered or scaly.',
+    "Sleep well! Come back any time you're curious about an animal.",
+  ]],
+  ['bye', [
+    'have a good one', 'have a good day', 'have a nice day', 'have a great day', 'have a good night', 'take care',
+    'take it easy',
+  ], [
+    'You too! Come back whenever an animal question comes up.',
+    'Thanks, you too! Ask me about any animal any time.',
+    'You as well! The guides will be here when you need them.',
+  ]],
+  ['bye', [
+    'im done', 'all done', 'done', 'thats all', 'thats it', 'thats all i needed', 'nothing else', 'no more questions',
+    'no thats all', 'im all set', 'all set', 'im good',
+  ], [
+    'Sounds good! Come back whenever another animal question comes up.',
+    "Great, that's it then. Ask me about any animal any time.",
+    'All right! The guides will be here when you need them.',
+    "Got it. See you next time you're curious about an animal.",
+  ]],
+  // Reactions
+  ['react', ['lol', 'lmao', 'lmaoo', 'lmfao', 'haha', 'hehe', 'jk', 'kidding'], [
+    "Ha! Got an animal question while you're here?",
+    'Glad that landed. Ask me about any animal on the site.',
+    'Animals are pretty funny. Which one are you curious about?',
+    "Heh. Whenever you're ready, name an animal and ask away.",
+  ]],
+  ['react', [
+    'wow', 'whoa', 'woah', 'omg', 'omgg', 'oh my god', 'oh my gosh', 'oh wow', 'no way', 'is this real', 'really',
+    'seriously', 'for real', 'fr', 'crazy', 'insane', 'thats wild', 'thats crazy', 'thats insane',
+  ], [
+    'Right? Animals are full of surprises. Ask me about another one.',
+    "It's true, it's in our fact files. Want to know more about that animal, or a different one?",
+    "Wild, isn't it? Name another animal and I'll dig up more.",
+    'Nature is strange like that. What else are you curious about?',
+  ]],
+  ['react', [
+    'interesting', 'fascinating', 'neat', 'thats interesting', 'thats funny', 'huh', 'true', 'ikr', 'i know right',
+    'same', 'mood', 'no cap',
+  ], [
+    'Plenty more where that came from. Ask me about any animal on the site.',
+    'Animals keep it interesting. What else do you want to know?',
+    "Right? Ask about another animal and I'll find more.",
+  ]],
+  ['react', ['cute', 'so cute', 'aww', 'aw', 'adorable', 'thats cute'], [
+    'Aww, right? Ask me about another animal if you want more.',
+    'Very cute. Want to know how to care for one, or hear more facts?',
+    'Adorable is the word. Which animal are you curious about next?',
+  ]],
+  ['react', ['ew', 'eww', 'gross'], [
+    "Nature isn't always pretty. Ask me about another animal if you want something nicer.",
+    'Yeah, animals can be gross. What else are you curious about?',
+    'Gross but true. Name another animal and ask away.',
+  ]],
+  ['react', ['scary', 'yikes', 'oh no', 'uh oh', 'oh man', 'dang', 'damn', 'ugh', 'sad', 'thats sad'], [
+    "I know. If it's about your own animal, tell me the species and what's going on and I'll check our guides.",
+    'Yeah. Ask me about any animal on the site if you want to know more.',
+    "Not the happiest part of nature. What else can I look up for you?",
+  ]],
+  ['react', ['hmm', 'um', 'umm', 'uh', 'uhh', 'erm'], [
+    "Take your time. Whenever you're ready, name an animal and ask away.",
+    "Thinking it over? Ask me about any animal on the site when you're set.",
+    'No rush. What animal is on your mind?',
+  ]],
+  ['react', ['oh', 'ooh', 'ah', 'ahh', 'oh i see', 'i see', 'mhm', 'meh', 'bruh'], [
+    'Anything else you want to know? Ask about any animal on the site.',
+    "Whenever you're ready, name an animal and ask away.",
+    'More questions welcome. Which animal is next?',
+  ]],
+  ['react', ['yes', 'yeah', 'yea', 'yep', 'yup', 'ya', 'sure', 'i think so', 'uh huh', 'probably'], [
+    'Great! What animal are you curious about?',
+    "Okay! Name the animal and your question and I'll check our guides.",
+    'Go ahead then. Ask me about any animal on the site.',
+  ]],
+  ['react', ['yess', 'yay', 'woohoo'], [
+    'Yay indeed! Ask me about another animal whenever you like.',
+    'Love the energy. Which animal is next?',
+    'Woohoo! Name an animal and ask away.',
+  ]],
+  ['react', ['no', 'nope', 'nah', 'naw', 'noo', 'not really', 'i dont think so', 'nuh uh'], [
+    'No problem. Ask me about any animal on the site whenever you like.',
+    "Okay! I'm here if an animal question comes up.",
+    "Fair enough. Name an animal when you're ready.",
+  ]],
+  ['react', ['maybe', 'idk', 'dunno', 'i dont know', 'i guess', 'kinda', 'whatever'], [
+    "Not sure what to ask? Try a pet you have or an animal you like, and I'll find something.",
+    'Pick any animal on the site and ask what you want to know about it.',
+    "Try 'how long do hamsters live' or 'is it legal to own a hedgehog'. Any animal works.",
+  ]],
+  ['react', ['nvm', 'nevermind', 'never mind', 'forget it'], [
+    'No worries. Ask me about any animal on the site whenever you like.',
+    "All good! I'm here if an animal question comes up.",
+    "Okay! Come back any time you're curious about an animal.",
+  ]],
+];
+const ASK_SMALL_TALK_MAP = new Map();
+for (const [kind, phrases, replies] of ASK_SMALL_TALK) for (const ph of phrases) ASK_SMALL_TALK_MAP.set(ph, { kind, replies });
+// Words that may sit around the phrase without changing it: the bot's name,
+// address words and softeners. Nothing that is itself a phrase above, or
+// "hi beastly" would strip to nothing.
+const ASK_SMALL_TALK_EXTRA = new Set((
+  'beastly bot there friend friends buddy pal everyone everybody all guys yall man bro dude sir maam mr ' +
+  'please pls plz again so well like just ok okay'
+).split(' '));
+
+function askSmallTalk(question) {
+  const words = question.toLowerCase().replace(/[’']/g, '').replace(/[^a-z0-9\s]/g, ' ')
+    .replace(/([a-z])\1{2,}/g, '$1$1') // "heyyyy" -> "heyy", "soooo" -> "soo"
+    .split(/\s+/).filter(Boolean)
+    .map((w) => w.replace(/^(h+e+y+)$/, 'hey').replace(/^(h+i+)$/, 'hi').replace(/^(he+l+o+)$/, 'hello')
+      .replace(/^(lo+l+)+$/, 'lol').replace(/^(ha)+h?$/, 'haha').replace(/^(he)+h?$/, 'hehe').replace(/^(w+o+w+)$/, 'wow')
+      .replace(/^(s+u+p+)$/, 'sup').replace(/^(b+y+e+)$/, 'bye').replace(/^(h+m+)$/, 'hmm').replace(/^(o+h+)$/, 'oh'));
+  const tryPhrase = (list) => ASK_SMALL_TALK_MAP.get(list.join(' '));
+  let hit = tryPhrase(words);
+  if (!hit) {
+    const core = words.filter((w) => !ASK_SMALL_TALK_EXTRA.has(w) && !ASK_FILLER_RE.test(w));
+    if (core.length && core.length < words.length) hit = tryPhrase(core);
+  }
+  if (!hit) return null;
+  return { kind: hit.kind, reply: hit.replies[Math.floor(Math.random() * hit.replies.length)] };
 }
 
 const ASK_THANKS_REPLIES = [
@@ -1487,6 +1820,9 @@ async function askMeta(db) {
     legal: parse(m.legal, []),
     facts: parse(m.facts, []),
     common: parse(m.common, {}),
+    // Missing on an index loaded before it existed: the catalog reply is
+    // then skipped and the question goes to the search.
+    catalog: parse(m.catalog, null),
   };
   return askMetaCache;
 }
@@ -1547,6 +1883,121 @@ const ASK_CHOOSING_RE = /\b(a|an|which|what|best|good|easy|safe|first|new|anothe
 const ASK_SITE_PLACE_RE = /\b(files?|hub|sections?)\b/;
 const ASK_CORRECTION = new Set('sorry oops meant mean typo spelled spelling actually wrong i'.split(' '));
 const ASK_PLACE_RE = /\b(guides?|pages?|files?|info|information|sections?|sheets?|hub|articles?|stuff|everything|posts?)\b/;
+// "Do you have a guide on axolotls", "anything on bettas?": asking whether
+// the site has a page on the animal is a where-is question too, and gets
+// the hub.
+const ASK_HAVE_RE = /\b(do|does|did)? ?(you|yall|y'all|the site|this site|beastly) (have|got|cover|carry|offer)\b|\bis there\b|\banything (on|about|for)\b/;
+
+// "What's on the site" questions (owner, 2026-11-03): "what animals do you
+// cover", "how many animals are in the guides", "can you list the reptiles
+// you have", "do you have anything on frogs". Answered from the catalog the
+// build counted (ask_meta.catalog), no search, no model call. The rule: a
+// catalog word, no care word, and no species named (or only a group word).
+// "Do you have a guide on axolotls" names a species, so it is a where-is
+// question and gets the hub; "what do reptiles eat" has a care word and
+// goes to the search.
+const ASK_CATALOG_RE = /\b(list|how many|(what|which) (kinds? of |sorts? of )?(animals?|species|pets?|critters?|creatures?|breeds?)|(do|does|did)? ?(you|yall|y'all|the site|this site|beastly) (have|got|cover|carry|offer)|have you got|is there anything|anything (on|about|for)|guides? (on|for|about)|(in|on) (the|your) (guides|site))\b/;
+// Group words, each with the category pages it means (the slugs of
+// /guides/category/<slug>/) and how the reply names it. Longest match first,
+// so "small mammals" is found before "mammals". A group word that is also a
+// species in the index ("snake", "gecko", "hamster") counts as the group
+// here: "which snakes do you have" lists the snakes, it does not search the
+// snake facts.
+const ASK_GROUPS = [
+  [/\breptiles?\b/, ['geckos', 'lizards', 'snakes', 'turtles-tortoises'], 'reptile'],
+  [/\b(amphibians?|frogs?|toads?|newts?|salamanders?)\b/, ['amphibians'], 'amphibian'],
+  [/\b(birds?|parrots?|parakeets?|finch(es)?)\b/, ['birds'], 'bird'],
+  [/\b(cats?|kittens?|kitties|kitty|felines?)\b/, ['cats'], 'cat'],
+  [/\b(dogs?|puppies|puppy|pups?|canines?)\b/, ['dogs'], 'dog'],
+  [/\bfish(es)?\b/, ['fish'], 'fish'],
+  [/\bgeckos?\b/, ['geckos'], 'gecko'],
+  [/\b(invertebrates?|inverts?|bugs?|insects?|spiders?|tarantulas?|shrimps?|scorpions?|arachnids?)\b/, ['invertebrates'], 'invertebrate'],
+  [/\blizards?\b/, ['lizards'], 'lizard'],
+  [/\b(small mammals?|mammals?|rodents?|hamsters?|rabbits?|bunnies|bunny)\b/, ['small-mammals'], 'small mammal'],
+  [/\bsnakes?\b/, ['snakes'], 'snake'],
+  [/\b(turtles?|tortoises?|chelonians?)\b/, ['turtles-tortoises'], 'turtle and tortoise'],
+];
+// How each category page is named in a reply and its link.
+const ASK_CATEGORY_NOUN = {
+  amphibians: 'amphibian', birds: 'bird', cats: 'cat', dogs: 'dog', fish: 'fish', geckos: 'gecko',
+  invertebrates: 'invertebrate', lizards: 'lizard', 'small-mammals': 'small mammal', snakes: 'snake',
+  'turtles-tortoises': 'turtle and tortoise',
+};
+function askFindGroup(q) {
+  for (const [re, slugs, noun] of ASK_GROUPS) {
+    if (re.test(q)) return { slugs, noun };
+  }
+  return null;
+}
+// The catalog intent of a question, or null: { kind: 'count' | 'group' |
+// 'facts' | 'general', group }. `species` is the species the normal search
+// found, so a real animal name turns this off unless the name is itself a
+// group word.
+const askIsGroupWord = (species) => Boolean(species && askFindGroup(askNormalize(species.name)));
+function askCatalog(q, species, meta) {
+  if (!meta.catalog || !ASK_CATALOG_RE.test(q) || ASK_CARE_RE.test(q)) return null;
+  const group = askFindGroup(q);
+  if (species && !(group && askIsGroupWord(species))) return null;
+  if (group) return { kind: 'group', group };
+  // "Show me a fact" keeps its own reply; "how many facts do you have" is a
+  // count of the facts.
+  if (ASK_FACT_RE.test(q)) return /\bhow many\b/.test(q) ? { kind: 'facts', group: null } : null;
+  return { kind: /\bhow many\b/.test(q) ? 'count' : 'general', group: null };
+}
+
+const askJoin = (names) => (names.length < 2 ? names.join('') : `${names.slice(0, -1).join(', ')} and ${names[names.length - 1]}`);
+// The reply text and links for a catalog question. Every number comes from
+// ask_meta.catalog, which the build counted.
+function askCatalogReply(intent, meta) {
+  const cat = meta.catalog;
+  const groups = cat.groups;
+  const byLabel = (g) => `${g.label.toLowerCase().replace(' & ', ' and ')} (${g.names.length})`;
+  if (intent.kind === 'group') {
+    const picked = intent.group.slugs.map((slug) => groups.find((g) => g.slug === slug)).filter(Boolean);
+    const total = picked.reduce((n, g) => n + g.names.length, 0);
+    // The sample takes turns across the categories, so a reptile listing
+    // shows a gecko, a lizard, a snake and a turtle before a second gecko.
+    const sample = [];
+    for (let i = 0; sample.length < Math.min(8, total); i++) {
+      for (const g of picked) if (g.names[i] && sample.length < Math.min(8, total)) sample.push(g.names[i]);
+    }
+    const rest = total - sample.length;
+    const across = picked.length > 1 ? ` across ${askJoin(picked.map((g) => g.label.toLowerCase().replace(' & ', ' and ')))}` : '';
+    const listed = rest ? `${sample.join(', ')} and ${rest} more` : askJoin(sample);
+    const answer = total
+      ? `We have ${total} ${intent.group.noun} guide${total === 1 ? '' : 's'}${across}: ${listed}. Ask about any of them.`
+      : `We don't have ${intent.group.noun} guides yet. Ask about any other animal, or search the site.`;
+    const links = picked.map((g) => ({
+      title: `${ASK_CATEGORY_NOUN[g.slug] || g.label}`.replace(/^./, (c) => c.toUpperCase()) + ' care guides',
+      url: `/guides/category/${g.slug}/`,
+    }));
+    return { answer, links: links.length ? links : [{ title: 'All care guides', url: '/guides/' }], slugs: picked.map((g) => g.slug) };
+  }
+  const breakdown = askJoin(groups.map(byLabel));
+  if (intent.kind === 'facts') {
+    return {
+      answer: `We have ${meta.facts.length} animal facts, each with its source. Ask for one and I'll pick at random.`,
+      links: [{ title: 'All our animal facts', url: '/facts/' }],
+      slugs: ['facts'],
+    };
+  }
+  if (intent.kind === 'count') {
+    return {
+      answer: `We have care guides for ${cat.total} animals and breeds in ${groups.length} groups: ${breakdown}. Name a group and I'll list them.`,
+      links: [{ title: 'All care guides', url: '/guides/' }],
+      slugs: ['guides'],
+    };
+  }
+  return {
+    answer: `Care guides for ${cat.total} animals and breeds: ${breakdown}. There are also ${meta.facts.length} animal facts and law pages for ${meta.legal.length} exotic pets in every state. Name a group and I'll list it, or ask about any animal.`,
+    links: [
+      { title: 'All care guides', url: '/guides/' },
+      { title: 'All our animal facts', url: '/facts/' },
+      { title: 'Exotic pet laws by state', url: '/exotic-pet-laws/' },
+    ],
+    slugs: ['guides'],
+  };
+}
 
 // Legal questions get links, never a model summary: the matrix cells change
 // monthly and quote statutes.
@@ -1623,7 +2074,10 @@ async function askRetrieve(db, question, context = null) {
   const ownSpecies = askFindName(qOwn, meta.species);
   const prev = context?.prev ? expand(context.prev) : '';
   const prevSpecies = prev ? askFindName(prev, meta.species) : null;
-  const followUp = Boolean(prev) && (!ownSpecies || !prevSpecies || ownSpecies.name === prevSpecies.name);
+  // After "which animal?", a reply that still names no animal is a new
+  // question, not a follow-up ("testing", then "what's up" searched both).
+  const followUp = Boolean(prev) && !(context?.clarify && !ownSpecies)
+    && (!ownSpecies || !prevSpecies || ownSpecies.name === prevSpecies.name);
   // A follow-up without its own animal borrows the last question's; one that
   // names the animal the last question lacked ("a hamster", after "he's
   // acting weird") carries the last question along.
@@ -1646,6 +2100,16 @@ async function askRetrieve(db, question, context = null) {
   // A legal question is answered from the law matrix, never from these
   // chunks, so it skips the search and the rows it would read.
   if (legal) return { chunks: [], species, best: null, legal, meta, q, qOwn, followUp };
+  // "What animals do you cover", "list the reptiles you have": answered from
+  // the catalog, before the pronoun check below ("the reptiles you have" is
+  // not a pet). Judged on the reader's own words; after a catalog answer, a
+  // follow-up that only names a group ("what about snakes?") carries the
+  // intent along.
+  const ownGroup = askFindGroup(qOwn);
+  const catalog = askCatalog(qOwn, ownSpecies, meta)
+    || (followUp && ownGroup && (!ownSpecies || askIsGroupWord(ownSpecies)) && !ASK_CARE_RE.test(qOwn)
+      && askCatalog(prev, prevSpecies, meta) ? { kind: 'group', group: ownGroup } : null);
+  if (catalog) return { chunks: [], species: null, best: null, legal: false, catalog, meta, q, qOwn, followUp };
   // Before the empty-question check: "he's not himself" is all stopwords.
   if (!species && ASK_PET_REF_RE.test(qOwn) && !ASK_CHOOSING_RE.test(qOwn)) {
     return { chunks: [], species: null, best: null, legal: false, clarify: true, meta, q, qOwn, followUp };
@@ -1662,7 +2126,7 @@ async function askRetrieve(db, question, context = null) {
   if (!species && ASK_FACT_RE.test(qOwn) && meta.facts.length) {
     return { chunks: [], species: null, best: null, legal: false, fact: true, meta, q, qOwn, followUp };
   }
-  if (species?.guideId && ((ASK_NAV_RE.test(navText) && ASK_PLACE_RE.test(navText)) || ASK_SITE_PLACE_RE.test(navText))) {
+  if (species?.guideId && (((ASK_NAV_RE.test(navText) || ASK_HAVE_RE.test(navText)) && ASK_PLACE_RE.test(navText)) || ASK_SITE_PLACE_RE.test(navText))) {
     return { chunks: [], species, best: null, legal: false, nav: true, meta, q, qOwn, followUp };
   }
 
@@ -1703,18 +2167,26 @@ async function askRetrieve(db, question, context = null) {
   // search, which once linked the platypus for "my hamster is acting weird"
   // (owner, 2026-11-02, from the 20-question test).
   // No species: every word first, which reads little.
-  // Any word only when that found nothing, and without the site's most
+  // Any word when that found fewer than 4, and without the site's most
   // common words ("eat", "tank"), which match thousands of chunks; when every
   // word is common, the two rarest stay (owner, 2026-11-01, on a Fable
   // recommendation).
   if (!rows.length && !species) {
     if (tokens.length > 1) rows = await search(allOf(tokens));
-    if (!rows.length) {
+    // Fewer than 4 every-word hits: the any-word search too, which also
+    // returns those hits, so its list replaces the first. "When do reptiles
+    // brumate?" found only the glossary entry with both words; the brumation
+    // guides never say "reptiles" (owner, 2026-11-03, Fable agreed: the
+    // common-word skip below is what keeps this cheap).
+    if (rows.length < ASK.topK) {
       const df = (t) => meta.common[t] || 0;
       let words = tokens.filter((t) => !df(t));
       if (!words.length) words = [...tokens].sort((a, b) => df(a) - df(b)).slice(0, 2);
       // No words left at all (every one a stopword): an empty MATCH throws.
-      if (words.length) rows = await search(anyOf(words));
+      if (words.length) {
+        const wider = await search(anyOf(words));
+        if (wider.length > rows.length) rows = wider;
+      }
     }
   }
 
@@ -1894,12 +2366,14 @@ async function handleAskInner(request, env, ctx, state) {
   // all filler words: on its own it came back "not in our guides", and after
   // an answer it re-asked the previous question. No search, no model call,
   // not logged, not counted toward the hourly limit or the 3 answers.
-  // A greeting gets one back, same terms as a thank-you (owner, 2026-11-03):
-  // "hello" alone used to come back "not in our guides".
-  if (askIsGreeting(question)) {
+  // Small talk gets a reply in kind, same terms as a thank-you (owner,
+  // 2026-11-03): "hello" alone used to come back "not in our guides", and
+  // "testing" asked which animal.
+  const talk = askSmallTalk(question);
+  if (talk) {
     return storeJson({
       result: 'greeting',
-      answer: 'Hi! Ask me about any animal on the site: care, health, facts or the law.',
+      answer: talk.reply,
       links: [],
       emergency: false,
       species: null,
@@ -1956,6 +2430,22 @@ async function handleAskInner(request, env, ctx, state) {
       links: [{ title: `${found.species.name} care guide`, url: `/guides/${found.species.guideId}/` }],
       emergency: false,
       species,
+      followUp: found.followUp,
+    });
+  }
+
+  // What the site covers: the count, a group's listing or the whole
+  // catalog, from the build's counts. Counts toward the 3 answers like a
+  // hub link, since the reader got something.
+  if (found.catalog) {
+    const reply = askCatalogReply(found.catalog, found.meta);
+    log('catalog', reply.slugs, {}, { answer: reply.answer, page: reply.links[0]?.title || null });
+    return storeJson({
+      result: 'catalog',
+      answer: reply.answer,
+      links: reply.links,
+      emergency: false,
+      species: null,
       followUp: found.followUp,
     });
   }
@@ -2096,38 +2586,37 @@ Rules:
 - End with the title of the one source that answers best, in the form: READ: <title>
 - Only if your answer also took a fact from a second source, add one more line: ALSO: <title>. Use titles exactly as given in <sources>.`;
 
-// A lead-in that names who says something ("Our emergency card says",
-// "Veterinary sources note"). Cut from the front of a sentence; when one was
-// cut, a second reported clause loses its "that" too, so "says A and that B"
-// becomes "A, and B" (Fable review of the 20-question rerun, 2026-11-02).
-const ASK_LEAD_IN_RE = /^(((most|many|several|some) )?(veterinary |published |scientific )?sources (agree|say|recommend|suggest|note|state)|(our|the) (emergency card|guides?|care guide|article|page)s? (says?|notes?|states?|lists?|explains?|recommends?))( that)?,?\s*/i;
+// Who-says-what talk, one rule for the whole family (owner, 2026-11-03, on a
+// Fable recommendation, replacing a pile of fixed phrases): a speaker (the or
+// our guides, sources, veterinary sources, the emergency card...) followed by
+// a saying verb (note, say, warn, recommend, suggest, add, mention, stress,
+// agree...) is cut wherever it sits, and the fact stays. "Our emergency card
+// says X" becomes "X"; "..., and the guides warn not to let a baby go 3 days"
+// becomes "..., and not to let a baby go 3 days". "Our guides don't cover X"
+// has no saying verb after the speaker, so the gap sentence is untouched.
+// When one is cut, a second reported "and that" goes too ("says A and that
+// B" becomes "A, and B").
+const ASK_ATTRIBUTION_RE = /\b((the|our|these|those|veterinary|published|scientific|most|many|some|several)\s+)?(guides?|sources?|emergency cards?|care guides?)\s+((also|do|does|both|further|specifically|all|generally)\s+)?(warn|note|say|state|list|explain|recommend|suggest|add|mention|stress|agree|advise|caution)s?\b\s*(that\s+)?,?\s*/gi;
 
 function askRewriteSourceTalk(sentence) {
-  // The articles compare their own sources ("most sources agree", "according
-  // to veterinary sources"), and the model echoes it. Those phrases come out
-  // here so the sentence, which often holds the number, survives (owner,
-  // 2026-11-02, on a Fable review).
-  const leadIn = ASK_LEAD_IN_RE.test(sentence);
-  let out = sentence.replace(ASK_LEAD_IN_RE, '');
-  if (leadIn) out = out.replace(/,?\s+and that\s+/gi, ', and ');
+  // Before the speaker rule, which would leave "the range on".
+  const ranged = sentence.replace(/\b(the )?range (that )?(most|many) sources agree on\b/gi, 'the usual range');
+  let out = ranged.replace(ASK_ATTRIBUTION_RE, '');
+  if (out !== ranged) out = out.replace(/,?\s+and that\s+/gi, ', and ');
   out = out
-    .replace(/\b(the )?range (that )?(most|many) sources agree on\b/gi, 'the usual range')
+    // Shapes that are not a speaker plus a verb, kept as their own rules.
     .replace(/,?\s*(though|but|while)\s+(a couple|a few|some|one or two|others)\s+(of them\s+)?(recommend|suggest|say|advise)\b/gi, ', or')
     .replace(/,?\s*according to [^,.]*?sources?\b/gi, '')
+    .replace(/^(according to|per|based on) (the |these |those |the provided )?sources?,?\s*/i, '')
     // "Stuck shed is covered in our shedding guide: soak..." keeps the advice.
     .replace(/^[^.:]*\b(is|are) covered in (our|the) [^.:]*:\s*/i, '')
-    // "Stuck shed is covered in our guides, and it can cut off circulation"
-    // keeps its fact: "Stuck shed can cut off circulation".
-    .replace(/\s+(is|are) covered in our guides,?\s*(and\s+)?(it|they)\s+/i, ' ');
-  out = out
-    .replace(/^(according to|per|based on) (the |these |those |the provided )?sources?,?\s*/i, '')
-    .replace(/^(the |these )?sources? \d* ?(say|note|state|mention|indicate|show)s?\b( that)?,?\s*/i, '')
+    .replace(/\s+(is|are) covered in our guides,?\s*(and\s+)?(it|they)\s+/i, ' ')
+    // Gap sentences in the model's other wordings become ours.
     .replace(/\b(the|these|those|the provided) sources (do not|don't|does not|doesn't) (say|cover|mention|explain|address|describe)\b/gi, "our guides don't cover")
-    // "The guides don't give a usual season": our guides, as in a gap sentence.
     .replace(/\b(the|these|those) guides? (do not|don'?t|does not|doesn'?t)\b/gi, "our guides don't")
-    .replace(/\b(the|these|those|the provided) sources (do|also) (say|note|mention)s?\b( that)?\s*/gi, '')
-    .replace(/\b(the|these|those|the provided) sources\b/gi, 'our guides');
-  out = out.trim();
+    .replace(/\b(the|these|those|the provided) sources\b/gi, 'our guides')
+    .replace(/\s{2,}/g, ' ')
+    .trim();
   return out ? out[0].toUpperCase() + out.slice(1) : out;
 }
 
@@ -2203,8 +2692,8 @@ function askParseReply(text, chunks, stopReason) {
   // a broader range") has no "the" or number before it and stays.
   // "I can't tell you" and its kin: the clause is cut, the sentence kept.
   answer = answer
-    .replace(/,?\s*so I (can'?t|cannot|am unable to|'m unable to) (tell you|say|explain|know|point you|show you|find|help with)[^.!?]*/gi, '')
-    .replace(/\bI (can'?t|cannot|am unable to|'m unable to) (tell you|say|explain|know|point you|show you|find|help with)\b[^.!?]*[.!?]?\s*/gi, '');
+    .replace(/,?\s*so I (can'?t|cannot|am unable to|'m unable to) (tell( you| from them| from our guides)?|say|explain|know|point you|show you|find|help with)[^.!?]*/gi, '')
+    .replace(/\bI (can'?t|cannot|am unable to|'m unable to) (tell( you| from them| from our guides)?|say|explain|know|point you|show you|find|help with)\b[^.!?]*[.!?]?\s*/gi, '');
   // At most one "not covered" sentence: a second one is dropped.
   let gapSeen = false;
   answer = answer
@@ -2285,6 +2774,7 @@ const ASK_NTFY_TITLES = {
   legal: 'Legal question',
   refused: 'No answer, links shown',
   clarify: 'Asked which animal',
+  catalog: 'Asked what we cover',
 };
 
 // push: what the phone notification adds beyond the question. On an answer,

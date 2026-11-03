@@ -16,6 +16,8 @@
 --   legal      a legality question, answered with links to the legal pages
 --   clarify    a pet named only by "he" or "my baby": the reply asked which
 --              animal (owner, 2026-11-02)
+--   catalog    "what animals do you cover": answered from the build's counts
+--              with links to the category pages (owner, 2026-11-03)
 --
 -- answer_slug: on an answered row, the page the model named as its source
 -- (READ). matched_slugs is in search order, so the two side by side show how
@@ -28,16 +30,17 @@ create table if not exists public.ask_log (
   id bigint generated always as identity primary key,
   question text not null,
   matched_slugs text[] not null default '{}',
-  result text not null check (result in ('answered', 'no_match', 'capped', 'refused', 'legal', 'clarify')),
+  result text not null check (result in ('answered', 'no_match', 'capped', 'refused', 'legal', 'clarify', 'catalog')),
   answer_slug text,
   created_at timestamptz not null default now()
 );
 
--- Added 2026-11-02 to a table that already existed.
+-- Added 2026-11-02 to a table that already existed; 'catalog' joined the
+-- check on 2026-11-03.
 alter table public.ask_log add column if not exists answer_slug text;
 alter table public.ask_log drop constraint if exists ask_log_result_check;
 alter table public.ask_log add constraint ask_log_result_check
-  check (result in ('answered', 'no_match', 'capped', 'refused', 'legal', 'clarify'));
+  check (result in ('answered', 'no_match', 'capped', 'refused', 'legal', 'clarify', 'catalog'));
 
 create index if not exists ask_log_created_at_idx on public.ask_log (created_at desc);
 create index if not exists ask_log_result_idx on public.ask_log (result, created_at desc);

@@ -501,6 +501,14 @@ chunks.forEach((c, i) => {
 //             chunks hold them. The worker leaves them out of its any-word
 //             search, where "eat" or "tank" made the index score thousands
 //             of rows (about 3,200 rows read per search on a test night).
+//   catalog   what the care guides cover, for "what animals do you have":
+//             the eleven category pages in the order the guides page shows
+//             them, each with its /guides/category/<slug>/ and the names of
+//             the animals and breeds in it, plus the total. Counted here,
+//             never typed into the worker, so a new guide changes the reply
+//             on the next build. Group hubs (the tetra and livebearer pages,
+//             the dog and cat essentials and the dog size pages) are not
+//             animals and are left out.
 const LEGAL = JSON.parse(fs.readFileSync(path.join(ROOT, 'src/lib/data/legalStatus.json'), 'utf8'));
 const stateSlug = (name) => name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 const guideIdByName = new Map(guidesIndex.map((g) => [g.name.toLowerCase(), g.id]));
@@ -515,6 +523,26 @@ function commonWords(list, share) {
   return Object.fromEntries([...df].filter(([, n]) => n > min).sort((a, b) => b[1] - a[1]));
 }
 
+// The category labels and slugs as src/pages/Guides.jsx has them; petType is
+// singular for dogs and cats ("Dog", "Cat") and plural everywhere else.
+const CATALOG_GROUPS = [
+  ['Amphibians'], ['Birds'], ['Cats', 'Cat'], ['Dogs', 'Dog'], ['Fish'], ['Geckos'], ['Invertebrates'],
+  ['Lizards'], ['Small Mammals'], ['Snakes'], ['Turtles & Tortoises'],
+];
+const isGroupHub = (g) => g.layout === 'group' || /: The Essentials$|\bBreed Dogs$/.test(g.name);
+const catalogGroups = CATALOG_GROUPS.map(([label, petType = label]) => ({
+  label,
+  slug: label.toLowerCase().replace(/ & /g, '-').replace(/ /g, '-'),
+  names: hubs
+    .filter((g) => g.petType === petType && !isGroupHub(g))
+    .map((g) => g.name.replace(/:\s*Breed Quirks$/, ''))
+    .sort((a, b) => a.localeCompare(b)),
+})).filter((g) => g.names.length);
+const catalog = {
+  total: catalogGroups.reduce((n, g) => n + g.names.length, 0),
+  groups: catalogGroups,
+};
+
 const meta = {
   aliases: SEARCH_ALIASES,
   species: speciesNames
@@ -528,6 +556,7 @@ const meta = {
     .sort((a, b) => b.name.length - a.name.length),
   facts: chunks.filter((c) => c.type === 'fact').map((c) => c.url),
   common: commonWords(chunks.filter((c) => c.type !== 'legal'), 0.05),
+  catalog,
 };
 
 fs.mkdirSync(OUT_DIR, { recursive: true });
@@ -567,6 +596,7 @@ const totalWords = chunks.reduce((s, c) => s + c.words, 0);
 console.log(`  total words   ${totalWords}`);
 console.log(`  legal cells   ${legalCells.length}`);
 console.log(`  meta          ${Object.keys(meta.aliases).length} aliases, ${meta.species.length} species, ${meta.states.length} jurisdictions, ${meta.legal.length} legal animals`);
+console.log(`  catalog       ${catalog.total} animals in ${catalog.groups.length} groups: ${catalog.groups.map((g) => `${g.label} ${g.names.length}`).join(', ')}`);
 console.log('5 largest chunks:');
 for (const c of [...chunks].sort((a, b) => b.words - a.words).slice(0, 5)) {
   console.log(`  ${String(c.words).padStart(5)} words  ${c.type}  ${c.url}  ${c.heading}`);

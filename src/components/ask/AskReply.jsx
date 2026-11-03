@@ -194,6 +194,17 @@ export default function AskReply({ question, reply, compact = false, hasResults 
     );
   }
 
+  // "What animals do you cover": the count, a group's listing or the whole
+  // catalog, with the category pages as links.
+  if (reply.result === 'catalog') {
+    return (
+      <div aria-live="polite">
+        <p className={`font-body ${text} text-foreground leading-relaxed`}>{reply.answer}</p>
+        <Links links={reply.links} onNavigate={onNavigate} />
+      </div>
+    );
+  }
+
   // "Where is it" questions: the worker answers with the species' hub.
   if (reply.result === 'navigate') {
     return (
