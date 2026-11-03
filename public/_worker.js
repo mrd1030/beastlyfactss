@@ -1398,36 +1398,326 @@ function askIsThanks(question) {
 // search, no model call, not logged or counted. The whole message must be the
 // phrase (filler, punctuation, stretched letters and a name like "beastly"
 // aside), so "hi, what do hamsters eat" is still a question.
+// Phrases are written the way they come out of the normalizer: lowercase, no
+// apostrophes, single spaces, stretched letters already squeezed ("heyyy" is
+// "hey", "lmaooo" is "lmaoo"). Nothing here may be an animal name, a care word
+// or a bare acknowledgement ("ok", "cool", "got it"): thanks has its own path.
+// Each group is [kind, phrases that mean the same thing, replies]; one reply
+// is picked at random so the box answers what was said.
 const ASK_SMALL_TALK = [
+  // Greetings
   ['greeting', [
-    'hi', 'hello', 'hey', 'hiya', 'heya', 'heyo', 'howdy', 'yo', 'sup', 'wassup', 'whats up', 'whatsup', 'what up',
-    'greetings', 'good morning', 'good afternoon', 'good evening', 'morning', 'evening', 'hey there', 'hi there',
-    'hello there', 'how are you', 'how are you doing', 'how r u', 'how ru', 'hows it going', 'how is it going',
-    'how ya doing', 'how you doing', 'whats good', 'whats new', 'whats happening', 'hey hey', 'hi hi',
-  ], 'Hi! Ask me about any animal on the site: care, health, facts or the law.'],
+    'hi', 'hello', 'hey', 'hiya', 'heya', 'heyo', 'hai', 'ello', 'hola', 'howdy', 'yo', 'yoo', 'ayo', 'greetings',
+    'good day', 'hey there', 'hi there', 'hello there', 'hey yall', 'hey hey', 'hi hi', 'hello hello',
+  ], [
+    'Hi! Which animal are you curious about?',
+    'Hey! Ask me about any animal on the site: care, health, facts or the law.',
+    'Hello! Name an animal and ask away.',
+    "Hi there! I'm Beastly. What animal is on your mind?",
+    "Hey hey! Got an animal question? I'm listening.",
+  ]],
+  ['greeting', [
+    'sup', 'wassup', 'wasup', 'wazzup', 'wsup', 'whats up', 'whatsup', 'what up', 'whaddup', 'wsp', 'wsg', 'wyd',
+    'yo whats up', 'hey whats up', 'hi whats up', 'whats good', 'whats new', 'whats happening', 'whats poppin',
+    'whats going on',
+  ], [
+    'Not much, just here with the guides. Which animal are you wondering about?',
+    'Hey! Not a lot. Got an animal question for me?',
+    'Just hanging out with the fact files. What animal is on your mind?',
+    'Same old, same old. Ask me about any animal on the site.',
+    'All quiet here. What can I look up for you?',
+  ]],
+  ['greeting', [
+    'how are you', 'how are ya', 'how are u', 'how r u', 'how r you', 'how u', 'hru', 'how are you today',
+    'how are you doing', 'how you doing', 'how ya doing', 'how you doin', 'how u doin', 'hows it going',
+    'how is it going', 'hows it goin', 'how goes it', 'hows things', 'how are things', 'hows life', 'hows your day',
+    'how is your day', 'hows everything', 'hi how are you', 'hello how are you', 'hey how are you', 'hi how r u',
+    'hey how r u', 'hey hows it going',
+  ], [
+    'Doing great, thanks for asking! What animal are you curious about?',
+    "I'm good! Always happy to talk animals. What's your question?",
+    "Can't complain. What animal can I look up for you?",
+    'Doing well! Ask me about any animal on the site.',
+    'Great, and ready for an animal question whenever you are.',
+  ]],
+  ['greeting', ['hbu', 'wbu', 'how about you', 'how bout you'], [
+    "I'm doing great, thanks! Now, which animal are you curious about?",
+    'All good here! What animal question can I look up for you?',
+    'Doing well, thanks for asking. Name an animal and ask away.',
+  ]],
+  ['greeting', ['good morning', 'morning', 'mornin', 'gm'], [
+    'Good morning! What animal are you curious about today?',
+    'Morning! Ask me about any animal on the site.',
+    'Good morning! Which animal is on your mind?',
+    "Morning! Coffee for you, fact files for me. What's your question?",
+  ]],
+  ['greeting', ['good afternoon', 'afternoon'], [
+    'Good afternoon! What animal are you curious about?',
+    'Afternoon! Ask me about any animal on the site.',
+    'Good afternoon! Name an animal and ask away.',
+  ]],
+  ['greeting', ['good evening', 'evening'], [
+    'Good evening! What animal are you curious about?',
+    'Evening! Ask me about any animal on the site.',
+    'Good evening! Name an animal and ask away.',
+  ]],
+  ['greeting', ['nice to meet you', 'pleased to meet you'], [
+    "Nice to meet you too! I'm Beastly. What animal are you curious about?",
+    'Likewise! Ask me about any animal on the site.',
+    'Nice to meet you! Name an animal and ask away.',
+  ]],
+  ['greeting', ['long time no see', 'im back', 'i am back', 'hey im back'], [
+    'Welcome back! Which animal are you wondering about this time?',
+    'Good to see you again! Ask me about any animal on the site.',
+    "Welcome back! The guides haven't gone anywhere. What's your question?",
+  ]],
+  // Tests and pokes
   ['test', [
-    'test', 'testing', 'test test', 'testing testing', 'testing 123', 'test 123', 'is this working', 'does this work',
-    'is this on', 'are you there', 'anyone there', 'you there', 'hello anyone there', 'can you hear me', 'is anyone there',
-  ], "I'm here! Ask me about any animal on the site and I'll check our guides."],
+    'test', 'testing', 'test test', 'testing testing', 'testing 123', 'test 123', 'testing 1 2 3', 'test 1 2 3', '123',
+    'this is a test', 'is this a test', 'test message', 'hello test', 'hello world', 'ping', 'asdf', 'qwerty', 'blah',
+  ], [
+    "Test received! Ask me about any animal on the site and I'll look it up in our guides.",
+    'Loud and clear. Which animal are you curious about?',
+    'Yep, it works. Try me with an animal question.',
+    'Pong! Now ask me something about an animal.',
+    'All systems go. Name an animal and ask away.',
+  ]],
+  ['test', [
+    'is this working', 'is this thing working', 'is this even working', 'does this work', 'does this thing work',
+    'does this even work', 'is this on', 'is this thing on', 'is it working', 'does it work', 'is this broken',
+    'are you broken', 'are you working', 'do you work', 'are you on',
+  ], [
+    "Yes, it's working! Ask me about any animal on the site.",
+    'Working and ready. What animal are you curious about?',
+    "It works! Try an animal question and I'll check our guides.",
+    "Yep, I'm on. Name an animal and ask away.",
+  ]],
+  ['test', [
+    'are you alive', 'are you awake', 'are you there', 'are you still there', 'you still there', 'r u there', 'u there',
+    'you there', 'anyone there', 'anybody there', 'is anyone there', 'is anybody there', 'is anyone here',
+    'hello anyone there', 'hello is anyone there', 'hello are you there', 'can you hear me', 'can u hear me',
+    'can you see this', 'can you read this',
+  ], [
+    "I'm here! What animal are you curious about?",
+    'Right here and reading. Ask me about any animal on the site.',
+    'Yep, still here. Got an animal question?',
+    'Present! Name an animal and ask away.',
+  ]],
+  ['test', ['did you get that', 'did that work', 'did it work', 'did that go through', 'did it send'], [
+    "I see this one! If you asked something before, send it again with the animal's name.",
+    'Your message came through. Ask away about any animal on the site.',
+    'Yes, it went through. What animal are you wondering about?',
+  ]],
+  ['test', [
+    'say something', 'say hi', 'talk to me', 'answer me', 'why arent you answering', 'why wont you answer',
+    'are you ignoring me',
+  ], [
+    "I'm here! I answer questions about animals, so name one and ask away.",
+    'Hi! I only reply to animal questions, so try me with one.',
+    "Not ignoring you, promise. Ask me about any animal on the site and I'll look it up.",
+  ]],
+  // About the bot
   ['about', [
-    'who are you', 'what are you', 'are you a bot', 'are you ai', 'are you an ai', 'are you a robot', 'are you human',
-    'are you real', 'are you a person', 'what can you do', 'what do you do', 'what do you know', 'how does this work',
-    'how do i use this', 'help', 'help me', 'what is this', 'whats this', 'what is beastly', 'who is beastly',
-    'what can i ask', 'what should i ask', 'what can i ask you',
-  ], "I'm Beastly. I answer from Beastly Facts' own guides and fact files, with links to read more. Ask about any animal on the site: care, health, facts or the law."],
+    'who are you', 'who r u', 'who are u', 'who is this', 'who dis', 'whos this', 'who am i talking to', 'what are you',
+    'what r u', 'tell me about yourself', 'hi who are you', 'hey who are you', 'what is your name', 'whats your name',
+    'whats ur name',
+  ], [
+    "I'm Beastly, the AI helper for Beastly Facts. I answer only from this site's own guides and fact files. What animal are you curious about?",
+    "Beastly here! I'm an AI that looks things up in Beastly Facts' guides and fact files and links the page. Ask me about any animal on the site.",
+    "My name is Beastly. I'm an AI, and everything I say comes from this site's own guides. Name an animal and ask away.",
+  ]],
+  ['about', [
+    'are you a bot', 'r u a bot', 'u a bot', 'are u a bot', 'is this a bot', 'is this a real person', 'am i talking to a bot',
+    'am i talking to a real person', 'are you ai', 'r u ai', 'are you an ai', 'is this ai', 'are you chatgpt',
+    'are you chat gpt', 'are you a robot', 'are you human', 'r u human', 'are you a human', 'are you real', 'r u real',
+    'are you a real person', 'are you a person', 'hi are you a bot', 'hey are you a bot',
+  ], [
+    "Yes, I'm an AI, not a person. I answer only from Beastly Facts' own guides and fact files, with a link to read more. What animal are you curious about?",
+    "I'm a bot, honestly. Everything I say comes from this site's guides, and I link the page so you can check it. Ask me about any animal on the site.",
+    "AI, yes. No human on this end, just Beastly Facts' own guides and fact files. Name an animal and ask away.",
+  ]],
+  ['about', ['who made you', 'who created you'], [
+    "The Beastly Facts team built me to answer questions from the site's own guides and fact files. What animal are you curious about?",
+    'I was made by Beastly Facts, and I answer only from its guides. Ask me about any animal on the site.',
+  ]],
+  ['about', [
+    'what is this', 'whats this', 'what is this for', 'what is this site', 'what is beastly', 'whats beastly',
+    'who is beastly', 'what is ask beastly', 'what is beastly facts', 'what are you for', 'what is your purpose',
+  ], [
+    "This is Ask Beastly, the question box for Beastly Facts. I'm an AI that answers from the site's own guides and fact files. Ask me about any animal on the site.",
+    "Beastly Facts is a pet care and animal facts site, and I'm Beastly, its AI helper. Name an animal and ask away: care, health, facts or the law.",
+    "I'm here to answer animal questions from Beastly Facts' own guides, with a link to read more. What animal are you curious about?",
+  ]],
+  ['about', [
+    'what can you do', 'what do you do', 'what can u do', 'what do you know', 'what can you help with',
+    'what can you help me with', 'what can i ask', 'what can i ask you', 'what should i ask', 'what questions can i ask',
+    'what can you answer', 'what can you tell me', 'what do you know about', 'do you answer questions',
+  ], [
+    'I answer questions about the animals on Beastly Facts: how to care for them, health worries, fun facts and whether they are legal to keep. Name an animal and ask away.',
+    "Anything about an animal on the site: care, health, facts or the law. Try 'how big do bearded dragons get' or 'is it legal to own a fox in Texas'.",
+    "Ask me about any animal on the site and I'll pull the answer from our guides with a link to read more.",
+  ]],
+  ['about', ['where do you get your info', 'what are your sources', 'can i trust you'], [
+    "Everything comes from Beastly Facts' own guides and fact files, and I link the page so you can read it yourself. What animal are you curious about?",
+    'Only from this site, never from the wider web. Each answer links the page it came from. Ask me about any animal on the site.',
+  ]],
+  ['about', ['how does this work', 'how does it work', 'how do i use this', 'how do you work', 'how do i ask a question'], [
+    "Type an animal and your question, like 'what do leopard geckos eat', and I'll answer from our guides with a link to read more.",
+    "Just ask in plain words. Name the animal and what you want to know, and I'll check Beastly Facts' guides.",
+    'Ask about any animal on the site in a sentence or two. I look it up in our guides and link the page.',
+  ]],
+  ['about', [
+    'help', 'help me', 'i need help', 'need help', 'pls help', 'plz help', 'can you help', 'can you help me',
+    'can u help me', 'could you help me', 'hi help', 'hey help', 'hello help', 'hi i need help', 'hi can you help me',
+    'hey can you help me',
+  ], [
+    "Happy to! Tell me the animal and what's going on, and I'll check our guides.",
+    'Sure. Name the animal and your question: care, health, facts or the law.',
+    'I can try! Which animal, and what do you want to know?',
+    "Of course. Ask me about any animal on the site and I'll look it up.",
+  ]],
+  ['about', [
+    'can i ask you something', 'can i ask you a question', 'can i ask a question', 'can i ask something',
+    'i have a question', 'got a question', 'question', 'quick question', 'hi i have a question', 'hey i have a question',
+  ], [
+    'Of course! Go ahead and ask.',
+    'Sure, ask away! Any animal on the site.',
+    'Yes! What animal is it about?',
+    'Go for it. Name the animal and what you want to know.',
+  ]],
+  // Goodbyes
   ['bye', [
-    'bye', 'goodbye', 'good bye', 'bye bye', 'see ya', 'see you', 'see you later', 'later', 'cya', 'ttyl',
-    'good night', 'goodnight', 'night', 'gn', 'gotta go', 'have a good one', 'take care',
-  ], 'Bye! Come back any time you have an animal question.'],
+    'bye', 'goodbye', 'good bye', 'bye bye', 'buh bye', 'bye now', 'bye for now', 'bye then', 'k bye', 'kk bye',
+    'alright bye', 'see ya', 'see you', 'see you later', 'see ya later', 'see you soon', 'see u', 'see u later', 'cya',
+    'cya later', 'catch you later', 'later', 'laters', 'ttyl', 'talk later', 'talk to you later', 'talk soon', 'peace',
+    'peace out', 'farewell', 'adios', 'ciao',
+  ], [
+    'Bye! Come back whenever an animal question comes up.',
+    'See you later! The guides will be here when you need them.',
+    'Bye for now! Ask me about any animal any time.',
+    "Take care! Come back whenever you're curious about an animal.",
+    "Later! I'll be here with the fact files.",
+  ]],
+  ['bye', [
+    'im out', 'im off', 'im leaving', 'im gonna go', 'i gotta go', 'gotta go', 'gtg', 'g2g', 'got to go', 'i have to go',
+    'gotta run',
+  ], [
+    'No problem, go on! Come back whenever an animal question comes up.',
+    'See you! The guides will be here when you get back.',
+    "Go, go! Ask me about any animal when you're back.",
+  ]],
+  ['bye', ['brb', 'be right back'], [
+    "Sure, I'll be right here.",
+    "Take your time! I'll be here with the fact files.",
+    'No rush. Come back with an animal question whenever.',
+  ]],
+  ['bye', ['good night', 'goodnight', 'night', 'nite', 'night night', 'gn', 'gnight', 'sleep well'], [
+    'Good night! Sleep well, and come back whenever an animal question pops up.',
+    'Night! The guides will be here in the morning.',
+    'Good night! Dream of something furry, feathered or scaly.',
+    "Sleep well! Come back any time you're curious about an animal.",
+  ]],
+  ['bye', [
+    'have a good one', 'have a good day', 'have a nice day', 'have a great day', 'have a good night', 'take care',
+    'take it easy',
+  ], [
+    'You too! Come back whenever an animal question comes up.',
+    'Thanks, you too! Ask me about any animal any time.',
+    'You as well! The guides will be here when you need them.',
+  ]],
+  ['bye', [
+    'im done', 'all done', 'done', 'thats all', 'thats it', 'thats all i needed', 'nothing else', 'no more questions',
+    'no thats all', 'im all set', 'all set', 'im good',
+  ], [
+    'Sounds good! Come back whenever another animal question comes up.',
+    "Great, that's it then. Ask me about any animal any time.",
+    'All right! The guides will be here when you need them.',
+    "Got it. See you next time you're curious about an animal.",
+  ]],
+  // Reactions
+  ['react', ['lol', 'lmao', 'lmaoo', 'lmfao', 'haha', 'hehe', 'jk', 'kidding'], [
+    "Ha! Got an animal question while you're here?",
+    'Glad that landed. Ask me about any animal on the site.',
+    'Animals are pretty funny. Which one are you curious about?',
+    "Heh. Whenever you're ready, name an animal and ask away.",
+  ]],
   ['react', [
-    'lol', 'lmao', 'haha', 'hahaha', 'hehe', 'wow', 'whoa', 'woah', 'omg', 'oh wow', 'oh', 'ooh', 'hmm', 'interesting',
-    'neat', 'huh', 'no way', 'really', 'seriously', 'wild', 'crazy', 'yes', 'no', 'nope', 'yeah', 'yep', 'maybe',
-  ], "Ask me anything about animals whenever you're ready."],
+    'wow', 'whoa', 'woah', 'omg', 'omgg', 'oh my god', 'oh my gosh', 'oh wow', 'no way', 'is this real', 'really',
+    'seriously', 'for real', 'fr', 'crazy', 'insane', 'thats wild', 'thats crazy', 'thats insane',
+  ], [
+    'Right? Animals are full of surprises. Ask me about another one.',
+    "It's true, it's in our fact files. Want to know more about that animal, or a different one?",
+    "Wild, isn't it? Name another animal and I'll dig up more.",
+    'Nature is strange like that. What else are you curious about?',
+  ]],
+  ['react', [
+    'interesting', 'fascinating', 'neat', 'thats interesting', 'thats funny', 'huh', 'true', 'ikr', 'i know right',
+    'same', 'mood', 'no cap',
+  ], [
+    'Plenty more where that came from. Ask me about any animal on the site.',
+    'Animals keep it interesting. What else do you want to know?',
+    "Right? Ask about another animal and I'll find more.",
+  ]],
+  ['react', ['cute', 'so cute', 'aww', 'aw', 'adorable', 'thats cute'], [
+    'Aww, right? Ask me about another animal if you want more.',
+    'Very cute. Want to know how to care for one, or hear more facts?',
+    'Adorable is the word. Which animal are you curious about next?',
+  ]],
+  ['react', ['ew', 'eww', 'gross'], [
+    "Nature isn't always pretty. Ask me about another animal if you want something nicer.",
+    'Yeah, animals can be gross. What else are you curious about?',
+    'Gross but true. Name another animal and ask away.',
+  ]],
+  ['react', ['scary', 'yikes', 'oh no', 'uh oh', 'oh man', 'dang', 'damn', 'ugh', 'sad', 'thats sad'], [
+    "I know. If it's about your own animal, tell me the species and what's going on and I'll check our guides.",
+    'Yeah. Ask me about any animal on the site if you want to know more.',
+    "Not the happiest part of nature. What else can I look up for you?",
+  ]],
+  ['react', ['hmm', 'um', 'umm', 'uh', 'uhh', 'erm'], [
+    "Take your time. Whenever you're ready, name an animal and ask away.",
+    "Thinking it over? Ask me about any animal on the site when you're set.",
+    'No rush. What animal is on your mind?',
+  ]],
+  ['react', ['oh', 'ooh', 'ah', 'ahh', 'oh i see', 'i see', 'mhm', 'meh', 'bruh'], [
+    'Anything else you want to know? Ask about any animal on the site.',
+    "Whenever you're ready, name an animal and ask away.",
+    'More questions welcome. Which animal is next?',
+  ]],
+  ['react', ['yes', 'yeah', 'yea', 'yep', 'yup', 'ya', 'sure', 'i think so', 'uh huh', 'probably'], [
+    'Great! What animal are you curious about?',
+    "Okay! Name the animal and your question and I'll check our guides.",
+    'Go ahead then. Ask me about any animal on the site.',
+  ]],
+  ['react', ['yess', 'yay', 'woohoo'], [
+    'Yay indeed! Ask me about another animal whenever you like.',
+    'Love the energy. Which animal is next?',
+    'Woohoo! Name an animal and ask away.',
+  ]],
+  ['react', ['no', 'nope', 'nah', 'naw', 'noo', 'not really', 'i dont think so', 'nuh uh'], [
+    'No problem. Ask me about any animal on the site whenever you like.',
+    "Okay! I'm here if an animal question comes up.",
+    "Fair enough. Name an animal when you're ready.",
+  ]],
+  ['react', ['maybe', 'idk', 'dunno', 'i dont know', 'i guess', 'kinda', 'whatever'], [
+    "Not sure what to ask? Try a pet you have or an animal you like, and I'll find something.",
+    'Pick any animal on the site and ask what you want to know about it.',
+    "Try 'how long do hamsters live' or 'is it legal to own a hedgehog'. Any animal works.",
+  ]],
+  ['react', ['nvm', 'nevermind', 'never mind', 'forget it'], [
+    'No worries. Ask me about any animal on the site whenever you like.',
+    "All good! I'm here if an animal question comes up.",
+    "Okay! Come back any time you're curious about an animal.",
+  ]],
 ];
 const ASK_SMALL_TALK_MAP = new Map();
-for (const [kind, phrases, reply] of ASK_SMALL_TALK) for (const ph of phrases) ASK_SMALL_TALK_MAP.set(ph, { kind, reply });
-// Words that may sit around the phrase without changing it.
-const ASK_SMALL_TALK_EXTRA = new Set('beastly bot there friend buddy pal everyone all guys please again so well oh um uh like just ok okay'.split(' '));
+for (const [kind, phrases, replies] of ASK_SMALL_TALK) for (const ph of phrases) ASK_SMALL_TALK_MAP.set(ph, { kind, replies });
+// Words that may sit around the phrase without changing it: the bot's name,
+// address words and softeners. Nothing that is itself a phrase above, or
+// "hi beastly" would strip to nothing.
+const ASK_SMALL_TALK_EXTRA = new Set((
+  'beastly bot there friend friends buddy pal everyone everybody all guys yall man bro dude sir maam mr ' +
+  'please pls plz again so well like just ok okay'
+).split(' '));
 
 function askSmallTalk(question) {
   const words = question.toLowerCase().replace(/[’']/g, '').replace(/[^a-z0-9\s]/g, ' ')
@@ -1442,7 +1732,8 @@ function askSmallTalk(question) {
     const core = words.filter((w) => !ASK_SMALL_TALK_EXTRA.has(w) && !ASK_FILLER_RE.test(w));
     if (core.length && core.length < words.length) hit = tryPhrase(core);
   }
-  return hit || null;
+  if (!hit) return null;
+  return { kind: hit.kind, reply: hit.replies[Math.floor(Math.random() * hit.replies.length)] };
 }
 
 const ASK_THANKS_REPLIES = [
