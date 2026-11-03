@@ -495,8 +495,9 @@ chunks.forEach((c, i) => {
 //             one (the UI pulls that hub's emergency card)
 //   states    the legal matrix jurisdictions, name -> /exotic-pet-laws/state/<slug>/
 //   legal     the legal matrix animals, for /exotic-pet-laws/<id>/
-//   facts     every fact page's url, for "show me a fun fact" (the worker
-//             picks one and reads that one row by its key)
+//   facts     every fact page's url, species and title, for "show me a fun
+//             fact" and "chicken facts" (the worker picks one here and reads
+//             that one row by its key)
 //   common    words in more than 5% of the searchable chunks, with how many
 //             chunks hold them. The worker leaves them out of its any-word
 //             search, where "eat" or "tank" made the index score thousands
@@ -554,7 +555,7 @@ const meta = {
   legal: Object.entries(LEGAL.animals)
     .map(([id, a]) => ({ id, name: a.name, article: a.article || null }))
     .sort((a, b) => b.name.length - a.name.length),
-  facts: chunks.filter((c) => c.type === 'fact').map((c) => c.url),
+  facts: chunks.filter((c) => c.type === 'fact').map((c) => ({ url: c.url, species: c.species, title: c.title })),
   common: commonWords(chunks.filter((c) => c.type !== 'legal'), 0.05),
   catalog,
 };

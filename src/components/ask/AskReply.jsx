@@ -8,7 +8,7 @@ import { formatDay } from '@/lib/utils/verifiedDates';
 // One Ask Beastly reply, drawn the same way in the search page box and the
 // floating chat. `compact` is the chat's smaller type.
 //
-// Results: answered | legal | no_match come from the worker as written.
+// Results: answered | fact | legal | no_match come from the worker as written.
 // refused (the model declined or failed) still carries the matched pages, so
 // they show as plain links. capped and unavailable never read as errors: a
 // sentence and a way to the normal search.
@@ -164,6 +164,37 @@ export default function AskReply({ question, reply, compact = false, hasResults 
             Answers come from our guides. Not a substitute for a vet.
           </p>
         )}
+      </div>
+    );
+  }
+
+  // One fact, as written: a lead line naming the animal and the fact's
+  // title (linked to its page), the fact, then the links. An animal with no
+  // facts gets a line saying so, with its care guide when it has one, and a
+  // fact of another animal under it.
+  if (reply.result === 'fact' && reply.fact) {
+    const { fact, missing } = reply;
+    return (
+      <div aria-live="polite">
+        {missing && (
+          <p className={`${muted} mb-2`}>
+            {missing.seen ? `That was the only ${missing.name.toLowerCase()} fact so far` : `No ${missing.name.toLowerCase()} facts yet`}
+            {missing.url && (
+              <>
+                {', but its '}
+                <Link to={missing.url} onClick={onNavigate} className="font-semibold text-secondary hover:underline">care guide</Link>
+                {' is here'}
+              </>
+            )}
+            {'. Here is one from another animal:'}
+          </p>
+        )}
+        <p className="font-display font-bold text-sm text-secondary flex items-start gap-1.5 mb-1.5">
+          <Sparkles className="w-4 h-4 flex-shrink-0 mt-0.5" />
+          <Link to={fact.url} onClick={onNavigate} className="hover:underline">{`${fact.animal || 'Animal'} fact: ${fact.title}`}</Link>
+        </p>
+        <p className={`font-body ${text} text-foreground leading-relaxed`}>{reply.answer}</p>
+        <Links links={reply.links} onNavigate={onNavigate} />
       </div>
     );
   }

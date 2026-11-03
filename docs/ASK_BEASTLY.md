@@ -80,7 +80,8 @@ rows resolve through src/lib/costs.js; ComparisonTables become one line per
 row. A section over 450 words splits at paragraph breaks. The script also
 writes `.ask-index/meta.json`: the searchAliases.js nicknames, the species list
 with care guide ids, the legal matrix's states and animals, every fact page's
-url (`facts`, for "show me a fun fact"), the words in more than 5% of the
+url, species and title (`facts`, for "show me a fun fact" and "chicken
+facts"), the words in more than 5% of the
 searchable chunks with their counts (`common`, left out of the any-word
 search), and the care guide catalog by category (`catalog`, for "what
 animals do you cover"). The output is deterministic: two builds of the same content match
@@ -173,12 +174,28 @@ In `public/_worker.js`, listed in `public/_routes.json`. In order:
    (where's, wheres), and "find" but not "find out". A real "where"
    question ("where do bettas live in the wild") names no part of the site
    and goes to the search.
-5. "Show me a fun fact" (owner, 2026-11-02): a question that says fact or
-   facts and names no animal gets one fact at random from the facts page,
-   as written, with links to that fact and to /facts/. No model call, one
-   row read (by key, from the url list in `ask_meta.facts`). The site keeps
-   no popularity count, so "most popular" gets a random one too. With an
-   animal named, the normal search answers.
+5. Facts (owner, 2026-11-03, on a Fable design): a message that says fact
+   or facts, whatever else is around it ("fun facts", "can you show me
+   chicken fun facts"), gets one fact, result `fact`: a lead line "<Animal>
+   fact: <title>" linked to the fact page, the fact as written without its
+   Source line, then links to the fact page, the animal's care guide when
+   it has one, and More facts (/facts/). The animal is the one named, else
+   the one carried from the last turn, else any. A fact reply keeps its
+   animal for the next turn: the client sends the fact's url as
+   `context.fact`, the worker takes the animal from it when the last
+   question names none, skips that fact on the next pick, and takes a bare
+   "another", "one more" or "next" after it as a fact ask. An animal with
+   no facts (or whose only fact was just shown) gets "No <animal> facts
+   yet" with its care guide, then a fact of another animal in the same
+   format. No model call, one row read: the pick comes from
+   `ask_meta.facts` (url, species and title per fact), the text by key.
+   "How many facts do you have" stays a catalog count. The site keeps no
+   popularity count, so "most popular" gets a random one too. Counts
+   toward the 3 answers.
+   A bare animal name ("the chicken", "chickens", "a hamster" that is not
+   the answer to "which animal?") gets its hub as a link (result
+   `navigate`), or with no hub a fact of it in the fact format. Never the
+   model.
    "Which animal?" (owner, 2026-11-02, after Grok and Fable reviews): a
    question about a particular pet ("he's acting weird", "my baby won't
    eat") that names no animal and carries none from the last question gets
@@ -284,8 +301,10 @@ In `public/_worker.js`, listed in `public/_routes.json`. In order:
    question last.
 
 Reply: `{ result, answer, links, emergency, species, followUp, health }`.
-`result` is answered, navigate, catalog, clarify, thanks, greeting, legal, no_match,
-capped, refused or unavailable. `followUp` says whether the question joined the conversation;
+`result` is answered, fact, navigate, catalog, clarify, thanks, greeting, legal, no_match,
+capped, refused or unavailable. A `fact` reply also carries `fact` (url,
+title, animal) and `missing` (the animal that had none), and is logged as
+answered with the fact's url. `followUp` says whether the question joined the conversation;
 `health` marks a no_match that sounds like a health problem. On the sharetest
 site an answer also carries `sources`, the chunks the model saw, for the
 source check.
@@ -461,3 +480,11 @@ shows them on real questions.
 - **Choosing a pet.** "What is the best pet as a gift" and "my friend wants
   a pet, what is easy for a kid" come back not covered; they need a search
   built around the comparison and beginner pet articles.
+- **"another" after a random fact.** After a plain "fun facts", "another"
+  keeps the animal of the fact that came up (two bearded dragon facts in a
+  row in the 2026-11-03 run). Possibly keep the animal only when the reader
+  named it.
+- **Two wording slips seen in that run.** Cutting "the guide says" can leave
+  a broken sentence ("For fry, to feed infusoria several times a day"), and
+  the urgent-sign rule's own wording ("what the guides tie that sign to")
+  comes back as "Our guides tie wheezing to...". Neither changes a fact.

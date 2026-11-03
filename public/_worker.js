@@ -1818,7 +1818,10 @@ async function askMeta(db) {
     species: parse(m.species, []),
     states: parse(m.states, []),
     legal: parse(m.legal, []),
-    facts: parse(m.facts, []),
+    // { url, species, title } per fact. An index loaded before the species
+    // and title were there holds urls alone: a random fact still works, a
+    // fact of one animal comes back "no facts yet".
+    facts: parse(m.facts, []).map((f) => (typeof f === 'string' ? { url: f, species: null, title: null } : f)),
     common: parse(m.common, {}),
     // Missing on an index loaded before it existed: the catalog reply is
     // then skipped and the question goes to the search.
@@ -1860,7 +1863,12 @@ function askFindName(q, list) {
 // "files", "hub" and "section" name a place on the site on their own, with
 // no verb needed ("betta fish files", "betta section").
 const ASK_NAV_RE = /\b(where(?:'s|s|’s)?\b|show me|find(?! out)|take me|link (me )?to|go to|get to|point me|looking for|browse)\b/;
+// A fact ask (owner, 2026-11-03): the message says fact or facts, whatever
+// else is around it ("fun facts", "can you show me chicken fun facts").
+// "How many facts do you have" is the catalog's, checked first.
 const ASK_FACT_RE = /\bfacts?\b/;
+// "Another", "one more", "next" right after a fact reply asks for another.
+const ASK_MORE_RE = /^((ok|okay|yes|yeah|sure|please|pls|and|now|do) )*(another|again|next|more|one more|next one|another one|keep going|go on|hit me( again)?)( one)?( please| pls)?$/;
 // "He's acting weird", "my baby won't eat": a particular pet, but no animal
 // named and none carried over from the last question. Searching would find
 // nothing or the wrong animal, so the reply asks which animal it is, and the
@@ -1936,12 +1944,12 @@ function askFindGroup(q) {
 const askIsGroupWord = (species) => Boolean(species && askFindGroup(askNormalize(species.name)));
 function askCatalog(q, species, meta) {
   if (!meta.catalog || !ASK_CATALOG_RE.test(q) || ASK_CARE_RE.test(q)) return null;
+  // "Show me a fact", "do you have any hamster facts" keep their own reply;
+  // "how many facts do you have" is a count of the facts.
+  if (ASK_FACT_RE.test(q)) return /\bhow many\b/.test(q) ? { kind: 'facts', group: null } : null;
   const group = askFindGroup(q);
   if (species && !(group && askIsGroupWord(species))) return null;
   if (group) return { kind: 'group', group };
-  // "Show me a fact" keeps its own reply; "how many facts do you have" is a
-  // count of the facts.
-  if (ASK_FACT_RE.test(q)) return /\bhow many\b/.test(q) ? { kind: 'facts', group: null } : null;
   return { kind: /\bhow many\b/.test(q) ? 'count' : 'general', group: null };
 }
 
@@ -2072,7 +2080,13 @@ async function askRetrieve(db, question, context = null) {
   };
   const qOwn = expand(question);
   const ownSpecies = askFindName(qOwn, meta.species);
-  const prev = context?.prev ? expand(context.prev) : '';
+  let prev = context?.prev ? expand(context.prev) : '';
+  // After a fact reply, its animal is the carried one (owner, 2026-11-03):
+  // the last question ("fun facts") may name none, so the client sends the
+  // fact's url and the animal stands in for the question. "Another fact"
+  // then gives another seahorse fact, "what do they eat" searches seahorse.
+  const prevFact = prev && context?.fact ? meta.facts.find((f) => f.url === context.fact) || null : null;
+  if (prevFact?.species && !askFindName(prev, meta.species)) prev = askNormalize(prevFact.species);
   const prevSpecies = prev ? askFindName(prev, meta.species) : null;
   // After "which animal?", a reply that still names no animal is a new
   // question, not a follow-up ("testing", then "what's up" searched both).
@@ -2110,6 +2124,13 @@ async function askRetrieve(db, question, context = null) {
     || (followUp && ownGroup && (!ownSpecies || askIsGroupWord(ownSpecies)) && !ASK_CARE_RE.test(qOwn)
       && askCatalog(prev, prevSpecies, meta) ? { kind: 'group', group: ownGroup } : null);
   if (catalog) return { chunks: [], species: null, best: null, legal: false, catalog, meta, q, qOwn, followUp };
+  // "Fun facts", "chicken fun fact", "another fact" (owner, 2026-11-03): one
+  // fact, read by its key (one row), no model call. The animal is the one
+  // named, else the one carried from the last question, else any. The pick
+  // happens in handleAskInner, which also skips the fact shown last turn.
+  if (meta.facts.length && (ASK_FACT_RE.test(qOwn) || (prevFact && ASK_MORE_RE.test(qOwn)))) {
+    return { chunks: [], species, best: null, legal: false, fact: true, meta, q, qOwn, followUp };
+  }
   // Before the empty-question check: "he's not himself" is all stopwords.
   if (!species && ASK_PET_REF_RE.test(qOwn) && !ASK_CHOOSING_RE.test(qOwn)) {
     return { chunks: [], species: null, best: null, legal: false, clarify: true, meta, q, qOwn, followUp };
@@ -2117,17 +2138,22 @@ async function askRetrieve(db, question, context = null) {
   if (!tokens.length) return { chunks: [], species, best: null, legal: false, meta, q, qOwn, followUp };
   // A follow-up that only corrects the last question ("sorry, *betta", "I
   // meant betta": nothing new beyond the animal) carries its where-is intent.
+  const isSpeciesWord = (t) => speciesWords.has(t) || speciesWords.has(t.replace(/s$/, '')) || speciesWords.has(t.replace(/es$/, ''));
   const ownWords = qOwn.split(/[\s-]+/).map((t) => t.replace(/'s$|'|\*/g, ''))
-    .filter((t) => askIsWord(t) && !speciesWords.has(t) && !ASK_CORRECTION.has(t));
+    .filter((t) => askIsWord(t) && !isSpeciesWord(t) && !ASK_CORRECTION.has(t));
   const navText = followUp && ownWords.length === 0 ? `${qOwn} ${prev}` : qOwn;
-  // "Show me a fun fact", "any cool facts?": with no animal named, one fact
-  // at random from the facts page, read by its key (one row), no model call.
-  // With an animal named, the normal search finds its facts articles.
-  if (!species && ASK_FACT_RE.test(qOwn) && meta.facts.length) {
-    return { chunks: [], species: null, best: null, legal: false, fact: true, meta, q, qOwn, followUp };
-  }
   if (species?.guideId && (((ASK_NAV_RE.test(navText) || ASK_HAVE_RE.test(navText)) && ASK_PLACE_RE.test(navText)) || ASK_SITE_PLACE_RE.test(navText))) {
     return { chunks: [], species, best: null, legal: false, nav: true, meta, q, qOwn, followUp };
+  }
+  // A bare animal name ("the chicken", "chickens", "a hamster"): its hub as
+  // a link, or with no hub a fact of it (owner, 2026-11-03). Never the
+  // model. Not after "which animal?", where the name answers that question
+  // and carries it along.
+  if (ownSpecies && ownWords.length === 0 && !(followUp && context?.clarify)) {
+    if (ownSpecies.guideId) return { chunks: [], species: ownSpecies, best: null, legal: false, nav: true, meta, q, qOwn, followUp };
+    if (meta.facts.some((f) => f.species === ownSpecies.name)) {
+      return { chunks: [], species: ownSpecies, best: null, legal: false, fact: true, meta, q, qOwn, followUp };
+    }
   }
 
   const table = `chunks_${meta.slot}`;
@@ -2349,7 +2375,12 @@ async function handleAskInner(request, env, ctx, state) {
   const question = String(body?.question || '').replace(/\s+/g, ' ').trim().slice(0, ASK.maxQuestion);
   // The conversation's previous question, for a follow-up. Text only.
   const prev = String(body?.context?.prev || '').replace(/\s+/g, ' ').trim().slice(0, ASK.maxQuestion);
-  const context = prev.length >= 3 ? { prev, clarify: body?.context?.clarify === true } : null;
+  // After a fact reply, the url of the fact shown: its animal carries over
+  // and the next pick skips it.
+  const lastFact = String(body?.context?.fact || '').slice(0, 200);
+  const context = prev.length >= 3
+    ? { prev, clarify: body?.context?.clarify === true, ...(/^\/facts\/[a-z0-9-]+\/$/.test(lastFact) && { fact: lastFact }) }
+    : null;
   if (question.length < 2) return quiet('unavailable');
   if (!env.ASK_DB) return quiet('unavailable');
 
@@ -2462,21 +2493,56 @@ async function handleAskInner(request, env, ctx, state) {
     });
   }
 
+  // A fact (owner, 2026-11-03): of the animal named or carried, else any.
+  // An animal with no facts gets "No <animal> facts yet" (with its hub when
+  // it has one) and a fact of another animal; so does one whose only fact
+  // was shown last turn. The fact shown last turn is skipped. One row read:
+  // the pick comes from ask_meta, the text by key.
   if (found.fact) {
-    const pick = found.meta.facts[Math.floor(Math.random() * found.meta.facts.length)];
+    const all = found.meta.facts;
+    const asked = species;
+    const unseen = (list) => (context?.fact ? list.filter((f) => f.url !== context.fact) : list);
+    let pool = asked ? all.filter((f) => f.species === asked.name) : all;
+    const none = Boolean(asked) && !pool.length;
+    const seen = Boolean(asked) && pool.length > 0 && !unseen(pool).length;
+    const missing = none || seen;
+    if (missing) pool = all.filter((f) => f.species !== asked.name);
+    if (unseen(pool).length) pool = unseen(pool);
+    const pick = pool[Math.floor(Math.random() * pool.length)];
     let row = null;
     try {
-      row = await env.ASK_DB.prepare(`SELECT title, url, text FROM chunks_${found.meta.slot} WHERE key = ?`).bind(`fact|${pick}|`).first();
+      row = await env.ASK_DB.prepare(`SELECT title, url, species, text FROM chunks_${found.meta.slot} WHERE key = ?`).bind(`fact|${pick.url}|`).first();
     } catch { /* falls through to the facts page link */ }
-    log('answered', row ? [row.url] : []);
+    if (!row) {
+      log('no_match', [pick.url]);
+      return storeJson({
+        result: 'refused',
+        answer: '',
+        links: [{ title: 'All our animal facts', url: '/facts/' }],
+        emergency: false,
+        species: asked,
+        followUp: found.followUp,
+      });
+    }
+    const animalName = row.species || pick.species || null;
+    const animal = animalName ? found.meta.species.find((s) => s.name === animalName) || null : null;
+    const fact = { url: row.url, title: row.title, animal: animalName };
+    log('answered', [row.url], { answer_slug: row.url }, { answer: `${animalName || 'Animal'} fact: ${row.title}`, page: row.title });
     return storeJson({
-      result: 'answered',
+      result: 'fact',
       // The fact as written, without its "Source:" line (the fact page shows it).
-      answer: row ? row.text.replace(/\n\s*Source:[\s\S]*$/, '').trim() : 'Our facts page has hundreds, each with its source.',
-      links: [...(row ? [{ title: row.title, url: row.url }] : []), { title: 'All our animal facts', url: '/facts/' }],
+      answer: row.text.replace(/\n\s*Source:[\s\S]*$/, '').trim(),
+      fact,
+      missing: missing ? { name: asked.name, url: asked.guideId ? `/guides/${asked.guideId}/` : null, seen } : null,
+      links: [
+        { title: row.title, url: row.url },
+        ...(animal?.guideId ? [{ title: `${animal.name} care guide`, url: `/guides/${animal.guideId}/` }] : []),
+        { title: 'More facts', url: '/facts/' },
+      ],
       emergency: false,
-      species: null,
-      followUp: false,
+      // The animal asked for stays the topic; with none asked, the fact's.
+      species: asked || (animal ? { name: animal.name, guideId: animal.guideId || null } : null),
+      followUp: found.followUp,
     });
   }
 

@@ -78,15 +78,15 @@ export function deleteConversation(id) {
 
 // Only answers that gave the reader something count toward the cap: a
 // question the guides do not cover (or one that failed) does not use one up.
-const COUNTED = new Set(['answered', 'navigate', 'legal', 'refused', 'catalog']);
+const COUNTED = new Set(['answered', 'navigate', 'legal', 'refused', 'catalog', 'fact']);
 export const answersUsed = (c) => (c ? c.turns.filter((t) => COUNTED.has(t.reply?.result)).length : 0);
 export const canFollowUp = (c) => Boolean(c) && !c.closed && answersUsed(c) < MAX_TURNS;
 
 // Only what the reader needs to see again goes in: the source chunks the test
 // site returns are dropped.
 function keepable(reply) {
-  const { result, answer = '', links = [], emergency = false, species = null, legal = null, health = false } = reply || {};
-  return { result: result || 'unavailable', answer, links, emergency, species, legal, health };
+  const { result, answer = '', links = [], emergency = false, species = null, legal = null, health = false, fact = null, missing = null } = reply || {};
+  return { result: result || 'unavailable', answer, links, emergency, species, legal, health, fact, missing };
 }
 
 // The 30-minute pass the worker hands back after one Turnstile check, so the
@@ -142,6 +142,8 @@ export async function askQuestion(question, captcha = '', conversationId = null)
   const prev = lastTurn ? lastTurn.q : '';
   // After "which animal?", the reply that names it carries the question.
   const clarify = lastTurn?.reply?.result === 'clarify';
+  // After a fact, its url: the worker keeps its animal and skips it next.
+  const fact = lastTurn?.reply?.result === 'fact' ? lastTurn.reply.fact?.url || '' : '';
 
   let reply = { result: 'unavailable' };
   try {
@@ -150,7 +152,7 @@ export async function askQuestion(question, captcha = '', conversationId = null)
     const res = await fetch('/api/ask', {
       method: 'POST',
       headers: { 'content-type': 'application/json', ...(token && { authorization: `Bearer ${token}` }) },
-      body: JSON.stringify({ question: q, captcha, ...(pass && { pass }), ...(prev && { context: { prev, ...(clarify && { clarify: true }) } }) }),
+      body: JSON.stringify({ question: q, captcha, ...(pass && { pass }), ...(prev && { context: { prev, ...(clarify && { clarify: true }), ...(fact && { fact }) } }) }),
     });
     reply = await res.json();
     if (reply.pass) savePass(reply.pass);
