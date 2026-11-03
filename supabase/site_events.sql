@@ -79,6 +79,7 @@ as $$
 declare
   topic text;
   title text;
+  token text;
 begin
   select coalesce(
     (select decrypted_secret from vault.decrypted_secrets where name = 'ntfy_topic'),
@@ -89,6 +90,11 @@ begin
   if (select count(*) from public.site_events where created_at > now() - interval '10 minutes') > 20 then
     return new;
   end if;
+
+  -- ntfy.sh account token (2026-11-03): counts the push against the account
+  -- instead of Supabase's shared sending address, which hit the daily quota
+  -- and dropped a Beastle ping.
+  select btrim(decrypted_secret, E' \t\r\n') into token from vault.decrypted_secrets where name = 'ntfy_token';
 
   title := case new.kind
     when 'personality_quiz' then 'Critter quiz finished'
@@ -110,7 +116,9 @@ begin
       -- Beastle finishes and new beardies buzz (3, default); quiz and push
       -- pings stay quiet in the shade (2, low).
       'priority', case when new.kind = 'beardie_adopted' or new.label like 'Beastle #%' then 3 else 2 end
-    )
+    ),
+    headers := case when token is null or token = '' then jsonb_build_object('Content-Type', 'application/json')
+                    else jsonb_build_object('Content-Type', 'application/json', 'Authorization', 'Bearer ' || token) end
   );
   return new;
 end;
