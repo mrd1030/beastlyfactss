@@ -119,9 +119,11 @@ index; anything stored in ask_meta (the fingerprint, `facts`, `common`)
 waits for the next build after the reset. A missing `facts` or `common`
 falls back to the normal search.
 
-The sharetest project and main share this database, so once Ask Beastly is on
-main, set the sharetest build command back to `npx vite build`, or two
-branches with different content will keep rewriting each other's sections.
+The sharetest project and main share this database. Since the merge
+(2026-11-03) the sharetest build command is `npx vite build` again, so only
+main loads the index; the test site reads the same index and writes nothing.
+Test-site builds come only from a branch push without [CI Skip], at the
+owner's word.
 
 It runs at the end of `npm run build` when the branch is main, or when
 `ASK_INDEX_LOAD=1`, and only with `CLOUDFLARE_API_TOKEN` (D1 Edit) set. The
