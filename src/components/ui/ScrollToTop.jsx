@@ -54,6 +54,41 @@ export default function ScrollToTop() {
         // (e.g. the Glossary's own hash-target effect) - resetting to the top
         // here would win the race and undo that, since this component has no
         // way to know what the target position should be.
+        // A link to a section (Ask Beastly's answer links, "#age-changes-
+        // the-timeline") lands on that heading. The browser only does that on
+        // a full page load, and an article body loads lazily, so look for the
+        // target each frame for a few seconds and stop the moment the reader
+        // scrolls or taps. Pages that handle their own hash (Glossary) land on
+        // the same element, so the two never fight. Back/forward falls
+        // through to the saved position below.
+        if (hash && navigationType !== 'POP') {
+            const id = decodeURIComponent(hash.slice(1));
+            let raf = 0;
+            let done = false;
+            let settle = 0;
+            const started = performance.now();
+            const stop = () => {
+                done = true;
+                cancelAnimationFrame(raf);
+                clearTimeout(settle);
+                ['wheel', 'touchstart', 'keydown', 'mousedown'].forEach(t => window.removeEventListener(t, stop));
+            };
+            ['wheel', 'touchstart', 'keydown', 'mousedown'].forEach(t => window.addEventListener(t, stop, { passive: true }));
+            const tick = () => {
+                if (done) return;
+                const el = document.getElementById(id);
+                if (el) {
+                    el.scrollIntoView({ block: 'start' });
+                    // Images above it can still push it down as they load.
+                    settle = setTimeout(() => { if (!done) el.scrollIntoView({ block: 'start' }); stop(); }, 600);
+                    return;
+                }
+                if (performance.now() - started > RESTORE_WINDOW_MS) stop();
+                else raf = requestAnimationFrame(tick);
+            };
+            tick();
+            return stop;
+        }
         if (hash) return;
         // Opening or closing an overlay that has its own URL (a fact on the
         // facts page) changes the route without leaving the page underneath,

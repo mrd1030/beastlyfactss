@@ -111,3 +111,6 @@ content/CAREPACKAGE Guides/source/.fonts/
 .voice-batch/
 .reader/
 tools/package-review/out/
+
+# Ask Beastly search index, rebuilt by scripts/build-ask-index.mjs
+.ask-index

@@ -128,7 +128,14 @@ the symptoms a real dragon would, each linking to the guide that explains why.
 - Settling in before handling is one real day (the guides' 7 to 14 days on
   the game clock). Rearranging while setting up is free for a real week.
 
-## The floating widget (built)
+## The floating widget (built, parked 2026-11-02)
+
+Parked to free the corner for Ask Beastly's chat (docs/ASK_BEASTLY.md). The
+code below is kept: `CritterBubbleSlot` is no longer mounted in AppLayout and
+the "Show Dex on every page" switch is gone from his card. To bring it back,
+remount the slot and restore the switch, and give it a corner Ask Beastly does
+not use.
+
 
 - `useCritterGame` (`src/lib/critterKeeper/useCritterGame.js`) is the one
   shared dragon: the page, the bubble and the popup read and save it, and a

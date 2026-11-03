@@ -1,5 +1,15 @@
 {
   "version": 1,
-  "include": ["/feed.xml", "/articles.xml", "/subscribed", "/subscribed/", "/api/care-packages/*", "/api/contact", "/api/contact/"],
+  "include": [
+    "/feed.xml",
+    "/articles.xml",
+    "/subscribed",
+    "/subscribed/",
+    "/api/care-packages/*",
+    "/api/contact",
+    "/api/contact/",
+    "/api/ask",
+    "/api/ask/"
+  ],
   "exclude": []
 }

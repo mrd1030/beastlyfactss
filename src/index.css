@@ -475,4 +475,26 @@ html, body {
   html[data-tabs-hidden] [data-follows-tabs] {
     transform: translateY(calc(56px + var(--safe-area-inset-bottom, 0px)));
   }
+  /* Ask Beastly's minimized pill and round button go all the way off the
+     screen with the tabs, for the full reading room, and come back with
+     them near the top or bottom of the page (owner, 2026-11-02). */
+  [data-hides-with-tabs] {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  html[data-tabs-hidden] [data-hides-with-tabs] {
+    transform: translateY(calc(100% + 56px + var(--safe-area-inset-bottom, 0px) + 12px));
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+/* Ask Beastly's docked sidebar slides back in from its edge tab
+   (components/ask/AskBeastlyChat.jsx). */
+@keyframes ask-slide-in {
+  from { transform: translateX(100%); }
+  to { transform: translateX(0); }
+}
+.ask-slide-in { animation: ask-slide-in 200ms ease-out; }
+@media (prefers-reduced-motion: reduce) {
+  .ask-slide-in { animation: none; }
 }

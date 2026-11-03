@@ -3,7 +3,7 @@
 // articles are searched separately in Search.jsx straight from mdxPosts, so
 // they are deliberately not duplicated here.
 //
-// Matching stays plain lowercase includes(), but the query goes through
+// Matching is by whole words (see wordRe below), and the query goes through
 // normalizeQuery() first: a site-specific alias map (searchAliases.js) expands
 // hobby nicknames and known misspellings ("beardie", "bp", "axelotl") into the
 // canonical name, and both the canonical and the raw string are matched so
@@ -22,44 +22,121 @@ import { SEARCH_ALIASES } from '@/lib/data/searchAliases';
 
 const MAX_PER_TYPE = 6;
 
-function matches(text, variants) {
-  if (typeof text !== 'string') return false;
-  const lower = text.toLowerCase();
-  return variants.some(v => lower.includes(v));
-}
-
 const escapeRe = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 
-// `whole` requires the word to end too: "rat" but not "ratio".
-function matchesWord(text, variants, whole = false) {
+// Matching is by whole words, never letters inside a word: plain includes()
+// let "rat" pull in "rather", "regeneration", "Ceratophrys" and "operator",
+// so every section filled with animals that had nothing to do with rats.
+//   whole word   "rat" matches rat, rats, rat's; "rats" matches rat too
+//                (a trailing s or es on the word is optional)
+//   word start   names and titles only, once 4+ letters are typed, so the
+//                navbar dropdown still finds Axolotl at "axol"
+// Taglines, excerpts, definitions, tags and scientific names always need the
+// whole word.
+const reCache = new Map();
+function wordRe(v, prefix) {
+  const key = `${prefix ? 'p' : 'w'}:${v}`;
+  let re = reCache.get(key);
+  if (!re) {
+    const stem = prefix || v.length <= 3 || v.endsWith('ss') ? v : v.replace(/s$/, '');
+    re = new RegExp(`\\b${escapeRe(stem)}${prefix ? '' : '(?:e?s)?\\b'}`);
+    reCache.set(key, re);
+  }
+  return re;
+}
+
+function matchesWord(text, variants, prefix = false) {
   if (typeof text !== 'string') return false;
   const lower = text.toLowerCase();
-  return variants.some(v => new RegExp(`\\b${escapeRe(v)}${whole ? '\\b' : ''}`).test(lower));
+  return variants.some(v => wordRe(v, prefix && v.length >= 4).test(lower));
 }
 
-// Each section keeps only MAX_PER_TYPE results, so order decides what shows.
-// Substring matching alone let "rat" fill the encyclopedia list with
-// Invertebrates (the category) and Ceratophrys (a scientific name) before
-// Fancy Rat was reached, and put "Ratio" articles ahead of "Pet Rat". Real
-// word matches come first (the name before other fields, the exact word
-// before a word that starts with it), and letters buried inside a word come
-// last, so "cat" lists the cat breeds before Sulcata Tortoise. Array.sort is
-// stable, so data order still breaks ties.
-function rank(title, others, variants) {
-  if (matchesWord(title, variants, true)) return 0;
-  if (matchesWord(title, variants)) return 1;
-  if (others.some(t => matchesWord(t, variants, true))) return 2;
-  if (others.some(t => matchesWord(t, variants))) return 3;
-  if (matches(title, variants)) return 4;
-  return 5;
+// A name or title: the whole word, or its start once 4+ letters are typed.
+const matchesName = (text, variants) => matchesWord(text, variants, true);
+// Any other field: the whole word only.
+const matches = (text, variants) => matchesWord(text, variants);
+
+// A query of several words is matched word by word, not as one phrase:
+// "rat sickness" finds the rat health article though no page says "rat
+// sickness". Every word must match somewhere on the item (its name or any
+// other field), filler words ("how", "my", "for") are dropped, and each word
+// also counts when a site word for the same thing matches (SEARCH_SYNONYMS:
+// sickness finds Health, uvb finds Lighting). A one-word query is unchanged.
+const STOPWORDS = new Set(['a', 'an', 'the', 'and', 'or', 'of', 'for', 'to', 'in', 'on', 'at', 'with', 'my', 'your', 'our', 'i', 'you', 'is', 'are', 'do', 'does', 'can', 'how', 'what', 'why', 'when', 'which', 'should', 'about', 'best', 'pet', 'pets']);
+
+const SYNONYM_GROUPS = [
+  ['health', 'sick', 'sickness', 'ill', 'illness', 'illnesses', 'disease', 'diseases', 'symptom', 'symptoms'],
+  ['cost', 'costs', 'price', 'prices', 'expensive', 'cheap', 'money', 'budget'],
+  ['feeding', 'feed', 'food', 'foods', 'diet', 'eat', 'eating', 'eats'],
+  ['tank', 'enclosure', 'setup', 'cage', 'habitat', 'terrarium', 'vivarium', 'aquarium', 'housing'],
+  ['uvb', 'uv', 'lighting', 'light', 'lights', 'lamp', 'bulb', 'basking'],
+  ['handling', 'handle', 'hold', 'holding', 'bite', 'biting', 'tame', 'taming'],
+  ['enrichment', 'toy', 'toys', 'play', 'bored', 'boredom'],
+  ['temperature', 'temperatures', 'heat', 'heating', 'temp', 'warm'],
+];
+const SYNONYMS = new Map();
+SYNONYM_GROUPS.forEach(group => group.forEach(w => SYNONYMS.set(w, group)));
+
+// Each variant becomes a list of terms; each term is the word plus its
+// synonyms, any one of which satisfies it.
+function termsOf(variant) {
+  const words = variant.split(/[^a-z0-9']+/).filter(Boolean);
+  const kept = words.filter(w => !STOPWORDS.has(w));
+  const list = kept.length ? kept : words;
+  // Synonyms only widen a word paired with an animal or another word: a
+  // search for just "uvb" means UVB, not every page about lights.
+  return list.map(w => (list.length > 1 && SYNONYMS.get(w)) || [w]);
 }
 
-function ranked(items, titleOf, othersOf, variants) {
+const fieldsHit = (alts, names, others) =>
+  names.some(t => matchesName(t, alts)) || others.some(t => matches(t, alts));
+
+// The terms of the first variant (canonical, then raw) that all match, or
+// null. topicsOptional (care guides): a topic word (health, cost, setup...)
+// may go unmatched when the name matches the rest, since every care guide
+// covers those topics: "rat sickness" lists the Fancy Rat guide.
+function matchedTerms(names, others, variants, topicsOptional) {
+  for (const v of variants) {
+    const terms = termsOf(v);
+    if (!terms.length) continue;
+    if (terms.every(alts => fieldsHit(alts, names, others))) return terms;
+    if (topicsOptional) {
+      const animal = terms.filter(alts => !SYNONYMS.has(alts[0]));
+      if (animal.length && animal.length < terms.length && animal.every(alts => names.some(t => matchesName(t, alts)))) return animal;
+    }
+  }
+  return null;
+}
+
+// Order decides what shows, since each section keeps only MAX_PER_TYPE: more
+// query words in the name first, the exact word scoring above a name word
+// that starts with it. Array.sort is stable, so data order breaks ties.
+// A name that starts with the first query word scores one more, so for
+// "uvb" the general "UVB Lighting" piece leads the species ones that mention
+// UVB later in the title.
+function nameScore(names, terms) {
+  const score = terms.reduce((n, alts) => n + (
+    names.some(t => matchesWord(t, alts)) ? 2 : names.some(t => matchesName(t, alts)) ? 1 : 0
+  ), 0) * 2;
+  const lead = names.some(t => typeof t === 'string' && terms[0].some(a => t.toLowerCase().startsWith(a)));
+  return score + (lead ? 1 : 0);
+}
+
+function ranked(items, namesOf, othersOf, variants, topicsOptional = false) {
   return items
-    .map(item => ({ item, r: rank(titleOf(item), othersOf(item), variants) }))
-    .sort((a, b) => a.r - b.r)
+    .map(item => {
+      const names = namesOf(item).filter(Boolean);
+      const terms = matchedTerms(names, othersOf(item).filter(Boolean), variants, topicsOptional);
+      return terms && { item, score: nameScore(names, terms) };
+    })
+    .filter(Boolean)
+    .sort((x, y) => y.score - x.score)
     .map(({ item }) => item);
 }
+
+// Articles, for Search.jsx: the matching posts, best match first.
+export const rankPosts = (posts, variants) =>
+  ranked(posts, p => [p.title], p => [p.excerpt, ...(p.tags || [])], variants);
 
 // Longest aliases first so "leo gecko" wins before "leo" gets a chance to
 // rewrite part of it. Word-boundary regexes so "leo" never fires inside
@@ -199,10 +276,7 @@ export function searchLocalContent(query) {
   const { variants } = normalizeQuery(query);
   if (!variants.length) return { guides: [], encyclopedia: [], glossary: [], beastlypedia: [], articles: [] };
 
-  const guides = ranked(
-    allGuides.filter(g => matches(g.name, variants) || matches(g.tagline, variants) || matches(g.petType, variants)),
-    g => g.name, g => [g.tagline, g.petType], variants,
-  )
+  const guides = ranked(allGuides, g => [g.name], g => [g.tagline, g.petType], variants, true)
     .slice(0, MAX_PER_TYPE)
     .map(g => ({
       key: `guide-${g.id}`,
@@ -213,10 +287,7 @@ export function searchLocalContent(query) {
       to: `/guides/${g.id}/`,
     }));
 
-  const encyclopedia = ranked(
-    encyclopediaAnimals.filter(a => matches(a.name, variants) || matches(a.scientific, variants) || matches(a.category, variants)),
-    a => a.name, a => [a.scientific, a.category], variants,
-  )
+  const encyclopedia = ranked(encyclopediaAnimals, a => [a.name], a => [a.scientific, a.category], variants)
     .slice(0, MAX_PER_TYPE)
     .map(a => ({
       key: `enc-${a.id}`,
@@ -227,10 +298,7 @@ export function searchLocalContent(query) {
       to: `/encyclopedia/animal/${a.id}/`,
     }));
 
-  const beastlypedia = ranked(
-    beastfiles.filter(b => matches(b.name, variants) || matches(b.scientific, variants) || matches(b.tagline, variants) || matches(b.group, variants) || (b.alsoKnownAs || []).some(a => matches(a, variants))),
-    b => b.name, b => [b.scientific, b.tagline, b.group, ...(b.alsoKnownAs || [])], variants,
-  )
+  const beastlypedia = ranked(beastfiles, b => [b.name, ...(b.alsoKnownAs || [])], b => [b.scientific, b.tagline, b.group], variants)
     .slice(0, MAX_PER_TYPE)
     .map(b => ({
       key: `beastfile-${b.id}`,
@@ -241,15 +309,11 @@ export function searchLocalContent(query) {
       to: `/beastlypedia/${b.id}/`,
     }));
 
-  const glossaryHits = [];
-  GLOSSARY_CATEGORIES.forEach(cat => {
-    cat.terms.forEach(t => {
-      if (matches(t.term, variants) || (t.aliases || []).some(a => matches(a, variants)) || matches(t.definition, variants)) {
-        glossaryHits.push({ t, cat });
-      }
-    });
-  });
-  const glossary = ranked(glossaryHits, ({ t }) => t.term, ({ t }) => [...(t.aliases || []), t.definition], variants)
+  const glossaryTerms = GLOSSARY_CATEGORIES.flatMap(cat => cat.terms.map(t => ({ t, cat })));
+  // Glossary terms match by the term or its aliases only, never the
+  // definition: "uvb" is mentioned in a dozen definitions, and those rows
+  // pushed the guides and articles off the first screen.
+  const glossary = ranked(glossaryTerms, ({ t }) => [t.term, ...(t.aliases || [])], () => [], variants)
     .slice(0, MAX_PER_TYPE)
     .map(({ t, cat }) => ({
       key: `gloss-${slugify(t.term)}`,
@@ -260,12 +324,7 @@ export function searchLocalContent(query) {
       to: `/glossary#${slugify(t.term)}`,
     }));
 
-  const articles = ranked(
-    mdxPosts
-      .filter(p => !isChroniclesPost(p))
-      .filter(p => matches(p.title, variants) || matches(p.excerpt, variants) || (p.tags || []).some(t => matches(t, variants))),
-    p => p.title, p => [p.excerpt, ...(p.tags || [])], variants,
-  )
+  const articles = rankPosts(mdxPosts.filter(p => !isChroniclesPost(p)), variants)
     .slice(0, MAX_PER_TYPE)
     .map(p => ({
       key: `article-${p._id}`,

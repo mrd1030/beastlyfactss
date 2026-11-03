@@ -1304,9 +1304,920 @@ async function handleCarePackageStore(request, env, pathname) {
   return storeJson({ error: 'Not found.' }, 404);
 }
 
+// ===========================================================================
+// Ask Beastly: POST /api/ask  (docs/ASK_BEASTLY.md)
+// ===========================================================================
+// A reader question answered ONLY from our own content. The search index is
+// the ask-index D1 database (binding ASK_DB), loaded at build time by
+// scripts/load-ask-index.mjs: chunks_a / chunks_b with FTS5 tables, and
+// ask_meta naming the live slot plus the lookups this file cannot import
+// (searchAliases.js, the species list, the legal matrix jurisdictions).
+//
+// Order of checks, cheapest first, and none of them ever shows the reader an
+// error: anything that is not an answer comes back as a result the page
+// handles by showing the plain search results it already has.
+//   1. Turnstile (TURNSTILE_SECRET_KEY, same as the contact form)
+//   2. 12 questions per visitor per hour (ASK_KV; the visitor key is a hash of
+//      the IP and the Eastern date, and the IP itself is never stored)
+//   3. legal questions never reach the model: link the legal pages instead
+//   4. search; a weak best match returns no_match without calling the model
+//   5. 1,000 answers per day (ASK_KV, resets at midnight Eastern)
+//   6. the model call (step 4 of the build)
+
+const ASK = {
+  maxQuestion: 300,
+  perVisitorPerHour: 12,
+  answersPerDay: 1000,
+  candidates: 40,
+  topK: 4,
+  tokenBudget: 3000,
+  tokensPerWord: 1.35,
+  // A best match must clear both to count. Tuned against the reader test.
+  minScore: 4,
+  minCoverage: 0.5,
+  // With no animal named there is nothing to anchor the search, so more of
+  // the question has to be in the chunk.
+  minCoverageNoSpecies: 0.67,
+};
+
+const ASK_STOPWORDS = new Set((
+  'a about after again all am an and any are as at be because been before being below between both but by can ' +
+  'could did do does doing down during each few for from further had has have having he her here hers him his how ' +
+  'i if in into is it its itself just me more most my myself no nor not now of off on once only or other our ours ' +
+  'out over own same she should so some such than that the their theirs them then there these they this those ' +
+  'through to too under until up very was we were what when where which while who whom why will with would you ' +
+  'your yours yourself im ive id dont doesnt isnt cant wont thing things get got getting really much many lot ' +
+  'pet pets ok okay need want know tell please one ones also best good ideal right proper stop start make way ways ' +
+  // Spoken filler (owner, 2026-11-02): readers type the way they talk ("like,
+  // a hamster", "um so my gecko..."). Left in, these count as words the
+  // passage must contain, which drags a good match under the coverage bar.
+  'like um umm uh uhh uhm erm er hmm hm ah oh eh well yeah yea yep yup nah ' +
+  'actually basically literally honestly seriously kinda sorta kind sort guess think ' +
+  'anyway anyways idk lol lmao omg pls plz thx thanks hey hi hello'
+).split(' '));
+// A message that is only thanks or an acknowledgement: "thanks!", "ty so
+// much", "ok cool, got it", "that helps, thank you 🙏". Every word must be one
+// of these, so "thanks, what about babies?" is still a question.
+const ASK_THANKS_WORDS = new Set((
+  'thanks thank thx ty tysm tyvm thankyou thanku appreciate appreciated it you so much a lot lots ' +
+  'very ok okay k kk cool great awesome perfect nice sweet good got gotcha that this helps helped ' +
+  'helpful makes sense amazing wonderful lovely brilliant excellent alright all right will do ' +
+  'oh ah yay yes yeah yep yup gonna try for the all again really i will ill do much'
+).split(' '));
+// At least one word that carries the thanks or the "ok", so "a lot" alone
+// is not one. "ok", "cool", "got it" count: they close a thread too.
+const ASK_THANKS_CORE = /\b(thanks|thank|thx|ty|tysm|tyvm|thankyou|thanku|appreciate|appreciated|helps|helped|helpful|sense|gotcha|got|ok|okay|k|kk|cool|great|awesome|perfect|nice|sweet|amazing|wonderful|lovely|brilliant|excellent|alright|yay|will do|will try|ill try|ill do|gonna try)\b/;
+function askIsThanks(question) {
+  if (/\?/.test(question) && !/\b(thanks|thank|thx|ty|tysm)\b/i.test(question)) return false;
+  const q = question.toLowerCase().replace(/[^a-z0-9\s']/g, ' ').replace(/'/g, '').replace(/\s+/g, ' ').trim();
+  if (!q || !ASK_THANKS_CORE.test(q)) return false;
+  return q.split(' ').every((w) => ASK_THANKS_WORDS.has(w) || ASK_FILLER_RE.test(w));
+}
+const ASK_THANKS_REPLIES = [
+  "You're welcome! Ask anything else any time.",
+  'Happy to help. Ask away if anything else comes up.',
+  'Any time! Ask away if you have another question.',
+];
+
+// Stretched filler: "ummmm", "uhhh", "hmmmm", "sooo", "lolol".
+const ASK_FILLER_RE = /^(u+m+|u+h+m*|h+m+|e+r+m*|a+h+|o+h+|e+h+|s+o+o+|l+o+l+(o+l+)*|l+m+a+o+)$/;
+const askIsWord = (t) => t.length > 1 && !ASK_STOPWORDS.has(t) && !ASK_FILLER_RE.test(t);
+
+// Care words: when the question has one, guide sections outrank fact cards.
+// Words readers use for the same thing the guides call something else. A
+// question word matches its whole group, in the search and in coverage.
+const ASK_SYNONYMS = [
+  ['tank', 'enclosure', 'cage', 'terrarium', 'vivarium', 'habitat', 'aquarium'],
+  ['eat', 'eating', 'feed', 'feeding', 'food', 'diet', 'appetite'],
+  ['cost', 'price', 'expensive', 'cheap', 'budget'],
+  ['temperature', 'temp', 'heat', 'warm', 'basking'],
+  ['sick', 'ill', 'illness', 'disease', 'symptoms'],
+  ['big', 'size', 'large', 'length'],
+  ['live', 'lifespan', 'old', 'age'],
+  ['poop', 'pooped', 'pooping', 'poo', 'stool', 'droppings', 'feces', 'fecal'],
+  ['baby', 'babies', 'hatchling', 'hatchlings', 'juvenile', 'juveniles', 'young'],
+];
+const ASK_SYNONYM_OF = new Map(ASK_SYNONYMS.flatMap((g) => g.map((w) => [w, g])));
+
+// Words that say "tell me about this animal" and nothing more specific. A
+// question that names a species and only these ("how do I take care of a
+// leopard gecko") is answered from the species' hub.
+const ASK_BROAD = new Set('take care caring look after raise raising keep keeping basics basic tips guide beginner beginners start starting new owner everything own owning'.split(' '));
+
+// Care guides are split by topic (cost / feeding / handling / health / tank
+// setup / enrichment), so a question about one topic should favor that guide.
+const ASK_GUIDE_TOPICS = [
+  [/\b(tank\w*|enclosure\w*|cage\w*|terrarium|vivarium|aquarium|setup|set up|temperature\w*|temp|heat\w*|basking|humid\w*|lamp\w*|uvb|light\w*|substrate|bedding|clean\w*)\b/, 'tank-setup'],
+  [/\b(eat\w*|feed\w*|fed|food\w*|diet|treat\w*|appetite)\b/, 'feeding'],
+  [/\b(cost\w*|price\w*|expensive|cheap|budget|afford\w*)\b/, 'cost'],
+  [/\b(sick\w*|ill|illness|disease\w*|vet|symptom\w*|infection\w*|parasite\w*|swollen|letharg\w*)\b/, 'health'],
+  [/\b(handl\w*|hold\w*|pick\w* up|bite\w*|biting|tame|taming)\b/, 'handling'],
+  [/\b(enrich\w*|bored\w*|toy\w*|play\w*)\b/, 'enrichment'],
+];
+
+const ASK_CARE_RE = /\b(feed\w*|fed|food|foods|eat\w*|diet|tank\w*|enclosure\w*|cage\w*|setup|set up|habitat|vivarium|terrarium|aquarium|sick\w*|ill|illness|disease\w*|vet|vets|health\w*|symptom\w*|temperature\w*|temp|temps|heat\w*|humid\w*|lamp\w*|uvb|light\w*|cost\w*|price\w*|expensive|cheap|budget|substrate|bedding|clean\w*|handl\w*)\b/;
+const ASK_LEGAL_RE = /\b(legal|illegal|legally|allowed to (own|have|keep|buy)|permit|permits|permitted|licen[cs]e\w*|banned|outlawed|laws?|(what|which) states?|where can (i|you) (own|have|keep|buy|get))\b/;
+// A question the guides do not cover that still sounds like something wrong
+// with the animal: the "not in our guides" reply then adds a vet line.
+const ASK_HEALTH_ISH_RE = /\b(sick\w*|ill|hurt\w*|injur\w*|wound\w*|lump\w*|bump\w*|swell\w*|swollen|vomit\w*|diarrh\w*|limp\w*|discharge|bleed\w*|blood\w*|letharg\w*|not moving|won'?t eat|not eating|stopped eating|breathing|wheez\w*|seizure\w*|pain|infect\w*|rash\w*|scab\w*|cough\w*|sneez\w*)\b/;
+const askSoundsLikeHealth = (q) => ASK_HEALTH_ISH_RE.test(q || '');
+
+// Health words in the question or the sources sent turn on the emergency card.
+const ASK_HEALTH_RE = /\b(not eating|won'?t eat|stopped eating|refus\w* (to eat|food)|letharg\w*|bleed\w*|prolaps\w*|swollen|swelling|breathing|gasping|wheez\w*|seizure\w*|convuls\w*)\b/;
+
+function easternDate(now = new Date()) {
+  return new Intl.DateTimeFormat('en-CA', { timeZone: 'America/New_York' }).format(now);
+}
+
+async function sha256Hex(text) {
+  const buf = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(text));
+  return [...new Uint8Array(buf)].map((b) => b.toString(16).padStart(2, '0')).join('');
+}
+
+const escapeRe = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+
+// Lookups change only when a build loads a new slot, so one isolate keeps
+// them for a few minutes instead of reading ask_meta on every question.
+let askMetaCache = null;
+async function askMeta(db) {
+  if (askMetaCache && Date.now() - askMetaCache.at < 300000) return askMetaCache;
+  const { results } = await db.prepare('SELECT key, value FROM ask_meta').all();
+  const m = Object.fromEntries(results.map((r) => [r.key, r.value]));
+  // The table set the load wrote: 'live' (incremental), or 'a' / 'b' from
+  // before it.
+  if (!/^[a-z]+$/.test(m.slot || '')) throw new Error('ask index has no live slot');
+  const parse = (v, fallback) => { try { return JSON.parse(v); } catch { return fallback; } };
+  const aliases = Object.entries(parse(m.aliases, {})).sort((x, y) => y[0].length - x[0].length);
+  askMetaCache = {
+    at: Date.now(),
+    slot: m.slot,
+    aliases: aliases.map(([from, to]) => [new RegExp(`\\b${escapeRe(from)}\\b`, 'g'), to.toLowerCase()]),
+    species: parse(m.species, []),
+    states: parse(m.states, []),
+    legal: parse(m.legal, []),
+    facts: parse(m.facts, []),
+    common: parse(m.common, {}),
+  };
+  return askMetaCache;
+}
+
+function askNormalize(text) {
+  return String(text)
+    .toLowerCase()
+    .replace(/[‘’]/g, "'")
+    .replace(/[^a-z0-9'\- ]+/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+// First name in `list` (longest first) found as whole words in q, plural ok.
+function askFindName(q, list) {
+  for (const item of list) {
+    const name = item.name.toLowerCase();
+    if (new RegExp(`\\b${escapeRe(name)}(e?s)?\\b`).test(q)) return item;
+  }
+  // Second pass: a name ending in "fish" also matches without it, so
+  // "betta" (and "beta", an alias for it) finds "Betta Fish".
+  for (const item of list) {
+    const short = item.name.toLowerCase().replace(/ fish$/, '');
+    if (short !== item.name.toLowerCase() && new RegExp(`\\b${escapeRe(short)}s?\\b`).test(q)) return item;
+  }
+  return null;
+}
+
+// "Where is it" questions: a species with a care guide plus words asking for a
+// place on the site ("show me where the betta files are", "take me to the
+// leopard gecko guide"). They get the species' hub as a link, with no model
+// call; the hub is where everything on the animal starts.
+// "how to find the betta fish files" counts too: find (but not "find out"),
+// looking for, get to, browse, and any "where" (where's, wheres, where is).
+// "files", "hub" and "section" name a place on the site on their own, with
+// no verb needed ("betta fish files", "betta section").
+const ASK_NAV_RE = /\b(where(?:'s|s|’s)?\b|show me|find(?! out)|take me|link (me )?to|go to|get to|point me|looking for|browse)\b/;
+const ASK_FACT_RE = /\bfacts?\b/;
+// "He's acting weird", "my baby won't eat": a particular pet, but no animal
+// named and none carried over from the last question. Searching would find
+// nothing or the wrong animal, so the reply asks which animal it is, and the
+// reader's next message carries this question with it (owner, 2026-11-02).
+// Any he, she, it, they or "my pet" with no animal named or carried over:
+// whatever the question is, the answer depends on which animal, and the chat
+// cannot see the page the reader is on (a reader on the bearded dragon hub
+// may mean that animal). So it asks (owner, 2026-11-02). Law questions are
+// handled before this, and a question choosing a pet ("my baby is 2, what pet
+// is safe") never gets it.
+const ASK_PET_REF_RE = /\b(he|she|hes|shes|him|her|it|its|they|theyre|them|their)\b|\bmy (pet|baby|boy|girl|guy|little one|buddy)\b/;
+// "Acting weird", "not himself", "something's wrong": a change with no sign
+// named. With the animal known, the reply is written here, not by the model:
+// the prompt rule for it did not hold in the test (owner, 2026-11-02). A
+// named sign anywhere in the question ("acting weird and not eating") goes
+// to the normal search instead.
+const ASK_VAGUE_RE = /\b(acting|acts|seems?|looks?|is|been|being) (weird|strange|funny|odd|off|different|wrong|sick|unwell|not right|not (him|her|it)self)\b|\bnot (himself|herself|itself|acting right|right|well)\b|\bsomething('?s| is) (wrong|off|not right)\b|\bacting (up|out)\b/;
+const ASK_SIGN_RE = /\b(eat\w*|food|drink\w*|water|breath\w*|sneez\w*|wheez\w*|cough\w*|bleed\w*|blood|swell\w*|swollen|lump\w*|bump\w*|limp\w*|shed\w*|poop\w*|pee\w*|urin\w*|diarrh\w*|vomit\w*|throw\w* up|scratch\w*|itch\w*|eye\w*|ear\w*|nose|mouth|jaw|teeth|tooth|skin|scale\w*|shell|fin\w*|gill\w*|tail|leg\w*|feet|foot|toe\w*|wing\w*|feather\w*|fur|hair|bald|weight|thin|fat|bloat\w*|letharg\w*|sleep\w*|hiding|hide\w*|shak\w*|trembl\w*|twitch\w*|seizure\w*|fall\w*|circl\w*|tilt\w*|color|colour|spot\w*|discharge|smell\w*|bite\w*|biting|aggress\w*|scream\w*|hiss\w*|weak\w*)\b/;
+const ASK_CHOOSING_RE = /\b(a|an|which|what|best|good|easy|safe|first|new|another|get a|getting a) (pet|animal)s?\b/;
+const ASK_SITE_PLACE_RE = /\b(files?|hub|sections?)\b/;
+const ASK_CORRECTION = new Set('sorry oops meant mean typo spelled spelling actually wrong i'.split(' '));
+const ASK_PLACE_RE = /\b(guides?|pages?|files?|info|information|sections?|sheets?|hub|articles?|stuff|everything|posts?)\b/;
+
+// Legal questions get links, never a model summary: the matrix cells change
+// monthly and quote statutes.
+// A state by name, or by its postal code after "in" or "for" ("legal in ny").
+// Codes only count there, so "me", "or" and "in" elsewhere never match.
+function askFindState(q, states) {
+  const byName = askFindName(q, states);
+  if (byName) return byName;
+  const m = q.match(/\b(?:in|for)\s+([a-z]{2,3})\b/);
+  return m ? states.find((s) => s.code === m[1]) || null : null;
+}
+
+function askLegalLinks(q, meta) {
+  const links = [];
+  const state = askFindState(q, meta.states);
+  const animal = askFindName(q, meta.legal);
+  if (state) links.push({ title: `${state.name} exotic pet laws`, url: `/exotic-pet-laws/state/${state.slug}/` });
+  if (animal) {
+    links.push({ title: `${animal.name} laws in every state`, url: `/exotic-pet-laws/${animal.id}/` });
+    if (animal.article) links.push({ title: `Is a ${animal.name.toLowerCase()} legal? The full guide`, url: animal.article });
+  }
+  if (!links.length) links.push({ title: 'Exotic pet laws by state', url: '/exotic-pet-laws/' });
+  return links;
+}
+
+// The legal matrix's own answer for one animal in one state, word for word:
+// status, cite, quote, note, existing owners, local ordinances, date checked.
+// Only when the question names both; otherwise the reply is links alone. A
+// cell with no row was never read and comes back as status null, which the
+// page shows as "Not checked yet", never as unrestricted.
+async function askLegalCell(db, q, meta) {
+  const state = askFindState(q, meta.states);
+  const animal = askFindName(q, meta.legal);
+  if (!state || !animal) return null;
+  const row = await db
+    .prepare(`SELECT status, cite, quote, note, grandfathered, local_override, verified_on FROM legal_${meta.slot} WHERE animal = ?1 AND code = ?2`)
+    .bind(animal.id, state.code)
+    .first();
+  return {
+    animal: animal.name,
+    state: state.name,
+    status: row?.status || null,
+    cite: row?.cite || '',
+    quote: row?.quote || '',
+    note: row?.note || '',
+    grandfathered: row?.grandfathered || '',
+    localOverride: Boolean(row?.local_override),
+    verifiedOn: row?.verified_on || '',
+  };
+}
+
+// A rough stem for the coverage check, close enough to the index's porter
+// stemming that "biting" finds "bite" and "feeding" finds "feed".
+const askStem = (t) => {
+  const base = t.length > 4 ? t.replace(/(ing|ed|es|s)$/, '') : t;
+  return base.slice(0, 5);
+};
+
+// Finds the chunks that answer q. Returns { chunks, species, best } where
+// chunks is empty when the best match is too weak to send anywhere.
+// A follow-up ("what about babies?") carries the conversation's previous
+// question into the search, so its animal and topic come along. Only the
+// question text: the previous answer never goes back to the model, which
+// would let it answer from itself instead of the sections. A question that
+// names a different animal is a new conversation (followUp: false).
+async function askRetrieve(db, question, context = null) {
+  const meta = await askMeta(db);
+  const expand = (text) => {
+    let out = askNormalize(text);
+    for (const [re, to] of meta.aliases) out = out.replace(re, to);
+    return out;
+  };
+  const qOwn = expand(question);
+  const ownSpecies = askFindName(qOwn, meta.species);
+  const prev = context?.prev ? expand(context.prev) : '';
+  const prevSpecies = prev ? askFindName(prev, meta.species) : null;
+  const followUp = Boolean(prev) && (!ownSpecies || !prevSpecies || ownSpecies.name === prevSpecies.name);
+  // A follow-up without its own animal borrows the last question's; one that
+  // names the animal the last question lacked ("a hamster", after "he's
+  // acting weird") carries the last question along.
+  // Only after a "which animal?" reply does a question that names an animal
+  // carry the last one along; otherwise a new animal stands alone ("best pet
+  // for a kid" then "how much is a hamster" searches the hamster only).
+  const q = followUp && (!ownSpecies || (!prevSpecies && context?.clarify)) ? `${qOwn} ${prev}` : qOwn;
+
+  const species = askFindName(q, meta.species);
+  const speciesWords = new Set(species ? askNormalize(species.name).split(/[\s-]+/) : []);
+  const tokens = [...new Set(
+    q.split(/[\s-]+/).map((t) => t.replace(/'s$|'/g, '')).filter(askIsWord),
+  )];
+  // "Can I have a hedgehog in California" never says "legal": a state name
+  // with own / have / keep / buy / get is a legal question too.
+  // Judged on the reader's own words: a follow-up is legal only if it asks a
+  // legal question, though the animal may come from the conversation.
+  const legal = ASK_LEGAL_RE.test(qOwn)
+    || (Boolean(askFindState(qOwn, meta.states)) && /\b(own|have|keep|buy|get|bring)\b/.test(qOwn));
+  // A legal question is answered from the law matrix, never from these
+  // chunks, so it skips the search and the rows it would read.
+  if (legal) return { chunks: [], species, best: null, legal, meta, q, qOwn, followUp };
+  // Before the empty-question check: "he's not himself" is all stopwords.
+  if (!species && ASK_PET_REF_RE.test(qOwn) && !ASK_CHOOSING_RE.test(qOwn)) {
+    return { chunks: [], species: null, best: null, legal: false, clarify: true, meta, q, qOwn, followUp };
+  }
+  if (!tokens.length) return { chunks: [], species, best: null, legal: false, meta, q, qOwn, followUp };
+  // A follow-up that only corrects the last question ("sorry, *betta", "I
+  // meant betta": nothing new beyond the animal) carries its where-is intent.
+  const ownWords = qOwn.split(/[\s-]+/).map((t) => t.replace(/'s$|'|\*/g, ''))
+    .filter((t) => askIsWord(t) && !speciesWords.has(t) && !ASK_CORRECTION.has(t));
+  const navText = followUp && ownWords.length === 0 ? `${qOwn} ${prev}` : qOwn;
+  // "Show me a fun fact", "any cool facts?": with no animal named, one fact
+  // at random from the facts page, read by its key (one row), no model call.
+  // With an animal named, the normal search finds its facts articles.
+  if (!species && ASK_FACT_RE.test(qOwn) && meta.facts.length) {
+    return { chunks: [], species: null, best: null, legal: false, fact: true, meta, q, qOwn, followUp };
+  }
+  if (species?.guideId && ((ASK_NAV_RE.test(navText) && ASK_PLACE_RE.test(navText)) || ASK_SITE_PLACE_RE.test(navText))) {
+    return { chunks: [], species, best: null, legal: false, nav: true, meta, q, qOwn, followUp };
+  }
+
+  const table = `chunks_${meta.slot}`;
+  const fts = `${table}_fts`;
+  // The question's own words: not the species name, and with a species named
+  // not the "tell me about it" words either.
+  const content = tokens.filter((t) => !speciesWords.has(t) && !(species && ASK_BROAD.has(t)));
+  const broad = Boolean(species) && content.length === 0;
+  const term = (t) => `"${t.replace(/"/g, '')}"`;
+  const anyOf = (list) => [...new Set(list.flatMap((t) => ASK_SYNONYM_OF.get(t) || [t]))].map(term).join(' OR ');
+  const allOf = (list) => list.map((t) => `(${(ASK_SYNONYM_OF.get(t) || [t]).map(term).join(' OR ')})`).join(' AND ');
+  // Ranked inside the FTS index first, then joined, so only the top rows are
+  // read from the chunks table instead of every chunk the words match. The
+  // legal chunks are still in the index, so the inner query takes extra rows
+  // and the type filter runs after (owner, 2026-11-01, on a Fable
+  // recommendation).
+  const sql = `SELECT c.id, c.slug, c.title, c.heading, c.url, c.species, c.type, c.text, c.words, m.rank
+    FROM (SELECT rowid, bm25(${fts}, 4.0, 4.0, 3.0, 1.0) AS rank FROM ${fts}
+          WHERE ${fts} MATCH ?1 ORDER BY rank LIMIT ${ASK.candidates + 20}) m
+    JOIN ${table} c ON c.id = m.rowid
+    WHERE c.type != 'legal'
+    ORDER BY m.rank LIMIT ${ASK.candidates}`;
+  const search = async (match) => (await db.prepare(sql).bind(match).all()).results;
+
+  // Rows read are a daily budget (5M on the free plan), so the species goes
+  // inside the MATCH: the index intersects it with the question's words
+  // instead of finding every chunk on the site that mentions "eat" and
+  // filtering afterwards (about 110 rows read instead of 6,000). The phrase
+  // also reaches longer names: "tortoise" finds "Sulcata Tortoise".
+  let rows = [];
+  if (species) {
+    const name = `species : ${term(askNormalize(species.name))}`;
+    rows = await search(content.length ? `${name} AND {title heading text} : (${anyOf(content)})` : name);
+  }
+  // A named animal keeps the search on that animal: when its pages do not
+  // match, the answer is "not covered" with its hub, never a whole-site
+  // search, which once linked the platypus for "my hamster is acting weird"
+  // (owner, 2026-11-02, from the 20-question test).
+  // No species: every word first, which reads little.
+  // Any word only when that found nothing, and without the site's most
+  // common words ("eat", "tank"), which match thousands of chunks; when every
+  // word is common, the two rarest stay (owner, 2026-11-01, on a Fable
+  // recommendation).
+  if (!rows.length && !species) {
+    if (tokens.length > 1) rows = await search(allOf(tokens));
+    if (!rows.length) {
+      const df = (t) => meta.common[t] || 0;
+      let words = tokens.filter((t) => !df(t));
+      if (!words.length) words = [...tokens].sort((a, b) => df(a) - df(b)).slice(0, 2);
+      // No words left at all (every one a stopword): an empty MATCH throws.
+      if (words.length) rows = await search(anyOf(words));
+    }
+  }
+
+  // Coverage: the share of the question's own words (not the species name)
+  // that a chunk contains, matched on a short stem.
+  const care = ASK_CARE_RE.test(q);
+  const topics = ASK_GUIDE_TOPICS.filter(([re]) => re.test(q)).map(([, suffix]) => suffix);
+  const scored = rows.map((r) => {
+    const has = (text) => (t) => (ASK_SYNONYM_OF.get(t) || [t]).some((v) => text.includes(askStem(v)));
+    const hay = `${r.title} ${r.heading} ${r.text}`.toLowerCase();
+    const coverage = content.length ? content.filter(has(hay)).length / content.length : 1;
+    // A section whose heading names what was asked is usually the answer.
+    const heading = (r.heading || '').toLowerCase();
+    const headingCoverage = content.length && heading ? content.filter(has(heading)).length / content.length : 0;
+    let boost = 1;
+    if (care) boost = r.type === 'guide' || r.type === 'faq' || r.type === 'hub' ? 1.3 : r.type === 'fact' ? 0.6 : 0.85;
+    if (topics.some((t) => r.slug.includes(`-${t}`))) boost *= 1.6;
+    if (broad && r.type === 'hub') boost *= 3;
+    return { ...r, coverage, score: -r.rank * (0.5 + coverage) * (1 + 0.5 * headingCoverage) * boost };
+  }).sort((a, b) => b.score - a.score);
+
+  const best = scored[0] || null;
+  // No animal named and the best passages are each about a different animal
+  // ("how often should I clean the tank" matched gerbil, betta and tortoise
+  // cleaning sections): the answer depends on which, so ask. A best passage
+  // about no animal in particular (a glossary term, a general guide) still
+  // answers, and so does a question choosing a pet.
+  // A "what is" question ("what is metabolic bone disease", "what is uvb")
+  // has a general answer, so it never asks either.
+  const top = scored.slice(0, ASK.topK);
+  const general = top.some((r) => !r.species || r.type === 'glossary')
+    || /^(what('?s| is| are| does)|whats|define|meaning of)\b/.test(qOwn);
+  if (!species && best?.species && !general && !ASK_CHOOSING_RE.test(qOwn)) {
+    const animals = new Set(top.map((r) => r.species).filter(Boolean));
+    if (animals.size > 1) {
+      return { chunks: [], species: null, best: null, legal: false, clarify: true, meta, q, qOwn, followUp };
+    }
+  }
+  const minCoverage = species ? ASK.minCoverage : ASK.minCoverageNoSpecies;
+  if (!best || best.coverage < minCoverage || best.score < ASK.minScore) {
+    return { chunks: [], species, best, legal, meta, q, qOwn, followUp };
+  }
+  const chunks = [];
+  let budget = ASK.tokenBudget;
+  for (const r of scored) {
+    const cost = Math.ceil((r.words || 0) * ASK.tokensPerWord);
+    if (cost > budget && chunks.length) continue;
+    chunks.push(r);
+    budget -= cost;
+    if (chunks.length === ASK.topK) break;
+  }
+  return { chunks, species, best, legal, meta, q, qOwn, followUp, ranked: scored.slice(0, 8) };
+}
+
+async function askLimit(env, request) {
+  if (!env.ASK_KV) return { ok: true };
+  const ip = request.headers.get('cf-connecting-ip') || 'unknown';
+  const day = easternDate();
+  const visitor = (await sha256Hex(`${ip}|${day}`)).slice(0, 24);
+  const hour = Math.floor(Date.now() / 3600000);
+  const key = `ask:v:${visitor}:${hour}`;
+  const used = Number(await env.ASK_KV.get(key)) || 0;
+  if (used >= ASK.perVisitorPerHour) return { ok: false };
+  await env.ASK_KV.put(key, String(used + 1), { expirationTtl: 3700 });
+  return { ok: true };
+}
+
+const askDayKey = () => `ask:day:${easternDate()}`;
+async function askDailyUsed(env) {
+  if (!env.ASK_KV) return 0;
+  return Number(await env.ASK_KV.get(askDayKey())) || 0;
+}
+async function askCountAnswer(env) {
+  if (!env.ASK_KV) return;
+  const used = await askDailyUsed(env);
+  await env.ASK_KV.put(askDayKey(), String(used + 1), { expirationTtl: 172800 });
+}
+
+async function askVerifyTurnstile(env, request, token) {
+  if (!env?.TURNSTILE_SECRET_KEY) return true;
+  if (!token) return false;
+  try {
+    const form = new FormData();
+    form.append('secret', env.TURNSTILE_SECRET_KEY);
+    form.append('response', token);
+    const ip = request.headers.get('cf-connecting-ip');
+    if (ip) form.append('remoteip', ip);
+    const res = await fetch('https://challenges.cloudflare.com/turnstile/v0/siteverify', { method: 'POST', body: form });
+    const out = await res.json().catch(() => null);
+    return !(out && out.success === false);
+  } catch {
+    return true; // siteverify unreachable: the per-visitor limit still holds
+  }
+}
+
+async function handleAsk(request, env, ctx) {
+  if (request.method !== 'POST') return storeJson({ error: 'Method not allowed.' }, 405);
+  const quiet = (result, extra = {}) => storeJson({ result, answer: '', links: [], emergency: false, ...extra });
+
+  let body;
+  try {
+    body = await request.json();
+  } catch {
+    return quiet('unavailable');
+  }
+  const question = String(body?.question || '').replace(/\s+/g, ' ').trim().slice(0, ASK.maxQuestion);
+  // The conversation's previous question, for a follow-up. Text only.
+  const prev = String(body?.context?.prev || '').replace(/\s+/g, ' ').trim().slice(0, ASK.maxQuestion);
+  const context = prev.length >= 3 ? { prev, clarify: body?.context?.clarify === true } : null;
+  if (question.length < 3) return quiet('unavailable');
+  if (!env.ASK_DB) return quiet('unavailable');
+
+  if (!(await askVerifyTurnstile(env, request, String(body?.captcha || '')))) return quiet('unavailable');
+
+  // A thank-you gets a thank-you back (owner, 2026-11-02). Before this it was
+  // all filler words: on its own it came back "not in our guides", and after
+  // an answer it re-asked the previous question. No search, no model call,
+  // not logged, not counted toward the hourly limit or the 3 answers.
+  if (askIsThanks(question)) {
+    return storeJson({
+      result: 'thanks',
+      answer: ASK_THANKS_REPLIES[Math.floor(Math.random() * ASK_THANKS_REPLIES.length)],
+      links: [],
+      emergency: false,
+      species: null,
+      followUp: Boolean(context),
+    });
+  }
+
+  const log = (result, slugs = [], extra = {}, push = {}) => askLog(env, ctx, question, slugs, result, extra, push);
+
+  // The sharetest project (beastlyfactss-sharetest.pages.dev) is where Ask
+  // Beastly is built and tested: there the per-visitor hourly limit is off
+  // and answers carry the chunks the model saw, for the source check. Keyed
+  // on the host, so beastlyfacts.com always has the limit and never returns
+  // sources, with nothing to switch back at launch. The daily cap still
+  // applies everywhere.
+  const testing = new URL(request.url).hostname.endsWith('beastlyfactss-sharetest.pages.dev');
+
+  if (!testing && !(await askLimit(env, request)).ok) {
+    log('capped');
+    return quiet('capped');
+  }
+
+  let found;
+  try {
+    found = await askRetrieve(env.ASK_DB, question, context);
+  } catch {
+    return quiet('unavailable');
+  }
+
+  const species = found.species
+    ? { name: found.species.name, guideId: found.species.guideId || null }
+    : null;
+
+  if (found.nav) {
+    log('answered', [found.species.guideId]);
+    return storeJson({
+      result: 'navigate',
+      answer: '',
+      links: [{ title: `${found.species.name} care guide`, url: `/guides/${found.species.guideId}/` }],
+      emergency: false,
+      species,
+      followUp: found.followUp,
+    });
+  }
+
+  if (found.clarify) {
+    log('clarify');
+    return storeJson({
+      result: 'clarify',
+      answer: "Which animal is this about? Tell me the species and I'll check our guides.",
+      links: [],
+      emergency: false,
+      species: null,
+      followUp: found.followUp,
+    });
+  }
+
+  if (found.fact) {
+    const pick = found.meta.facts[Math.floor(Math.random() * found.meta.facts.length)];
+    let row = null;
+    try {
+      row = await env.ASK_DB.prepare(`SELECT title, url, text FROM chunks_${found.meta.slot} WHERE key = ?`).bind(`fact|${pick}|`).first();
+    } catch { /* falls through to the facts page link */ }
+    log('answered', row ? [row.url] : []);
+    return storeJson({
+      result: 'answered',
+      // The fact as written, without its "Source:" line (the fact page shows it).
+      answer: row ? row.text.replace(/\n\s*Source:[\s\S]*$/, '').trim() : 'Our facts page has hundreds, each with its source.',
+      links: [...(row ? [{ title: row.title, url: row.url }] : []), { title: 'All our animal facts', url: '/facts/' }],
+      emergency: false,
+      species: null,
+      followUp: false,
+    });
+  }
+
+  if (found.legal) {
+    log('legal');
+    let legal = null;
+    try {
+      legal = await askLegalCell(env.ASK_DB, found.q, found.meta);
+    } catch {
+      // No matrix table yet (an index loaded before it existed): links alone.
+    }
+    return storeJson({ result: 'legal', answer: '', links: askLegalLinks(found.q, found.meta), legal, emergency: false, species, followUp: found.followUp });
+  }
+
+  if (species && ASK_VAGUE_RE.test(found.q) && !ASK_SIGN_RE.test(found.q)) {
+    const vet = /\b(dog|cat|puppy|kitten)s?\b/i.test(species.name) || /^(dog|cat)-/.test(species.guideId || '') ? 'a vet' : 'an exotics vet';
+    log('no_match', species.guideId ? [species.guideId] : [], {}, { page: `${species.name} care guide` });
+    return storeJson({
+      result: 'answered',
+      answer: `Our guides can't narrow down a change like that without a specific sign, so the safest move is to have ${vet} look at your ${species.name.toLowerCase()}.`,
+      links: species.guideId ? [{ title: `${species.name} Care Guide`, url: `/guides/${species.guideId}/` }] : [],
+      emergency: false,
+      species,
+      followUp: found.followUp,
+    });
+  }
+
+  if (!found.chunks.length) {
+    log('no_match', found.best ? [found.best.slug] : []);
+    return quiet('no_match', { species, followUp: found.followUp, health: askSoundsLikeHealth(found.qOwn) });
+  }
+
+  const slugs = [...new Set(found.chunks.map((c) => c.slug))];
+  // Health words in the question, or a health guide section as the best
+  // match that names one. Any matched section was too loose: feeding and
+  // substrate sections mention breathing or swelling in passing.
+  const top = found.chunks[0];
+  const emergency = ASK_HEALTH_RE.test(found.qOwn)
+    || Boolean(top && /-health/.test(top.slug) && ASK_HEALTH_RE.test(top.text.toLowerCase()));
+
+  if ((await askDailyUsed(env)) >= ASK.answersPerDay) {
+    log('capped', slugs);
+    return quiet('capped', { species, emergency });
+  }
+
+  // Any failure from here on is 'refused': the reader gets the matched pages
+  // as plain links and the search results the page already shows.
+  const fallback = () => storeJson({ result: 'refused', answer: '', links: askLinks(found.chunks), emergency, species, followUp: found.followUp });
+  if (!env.ANTHROPIC_API_KEY) {
+    log('refused', slugs);
+    return fallback();
+  }
+
+  let reply;
+  try {
+    await askCountAnswer(env);
+    reply = await askHaiku(env, question, found.chunks, found.followUp ? prev : '');
+  } catch {
+    log('refused', slugs);
+    return fallback();
+  }
+  if (reply.kind === 'refused') {
+    log('refused', slugs);
+    return fallback();
+  }
+  if (reply.kind === 'no_answer') {
+    log('no_match', slugs);
+    return quiet('no_match', { species, followUp: found.followUp, health: askSoundsLikeHealth(found.qOwn) });
+  }
+
+  // answer_slug: the page the model named (READ), next to matched_slugs in
+  // search order, to see how often its pick is not the top hit.
+  log('answered', slugs, { answer_slug: reply.best?.slug || null },
+    { answer: reply.answer, page: reply.best ? reply.best.title : null });
+  return storeJson({
+    result: 'answered',
+    answer: reply.answer,
+    links: reply.best ? askAnswerLinks(reply.best, reply.also, species) : askLinks(found.chunks),
+    emergency,
+    species,
+    followUp: found.followUp,
+    ...(testing && { sources: found.chunks.map((c) => ({ url: c.url, title: askSourceTitle(c), text: c.text })) }),
+  });
+}
+
+// ---------------------------------------------------------------------------
+// The model call. Plain fetch, no SDK: this file ships unbundled.
+// ---------------------------------------------------------------------------
+// Claude Haiku 5.5 rejects any non-default temperature with a 400, so none is
+// sent. Thinking is turned off (allowed at its default medium effort) so all
+// 300 tokens go to the answer. The system prompt carries a cache marker; at
+// about 150 tokens it is under the 512 token minimum and simply does not
+// cache, which costs nothing.
+const ASK_MODEL = 'claude-haiku-5-5';
+const ASK_SYSTEM = `You answer animal and pet care questions for Beastly Facts using ONLY the text inside <sources>.
+Rules:
+- At most 3 short sentences, usually 2. Plain words. No lists. No em or en dashes.
+- If nothing in the sources answers the question, reply exactly: NO_ANSWER. Do not describe a different condition instead.
+- Never add facts, numbers, doses, or brands that are not in the sources. Take each claim from the section that actually states it; do not credit one section with another's words.
+- Keep hedges from the sources (can, may, often). Do not make them stronger.
+- Never give medication doses. Never say a symptom is fine to wait out or to watch for now.
+- If a source calls the sign urgent, or lists it under "call the vet now", the first sentence tells the reader to call the vet the source names (reptile vet, rabbit-savvy vet) now. The remaining sentences say what the guides tie that sign to.
+- Health gap: if the reader describes a sign, symptom, injury or change in the animal and no source names that sign, the first sentence is: "Our guides don't cover <the sign>, so the safest move is to have a <vet type the sources name, or an exotics vet> look at your <species>." If the reader named no specific sign (only that the animal seems off, is acting weird or strange), write only that first sentence. Otherwise you may add ONE sentence on the closest sign the guides do cover for the same body part or behavior. It starts with "While you wait, check" or "In the meantime, check", names that sign and how urgent it is, and never names a condition as the likely cause. Never write "the closest sign", "the guides cover", or "what I can tell you".
+- Other gap: only when the reader asked for a non-health specific (a step, a number) that no source gives AND you have answered another part, add one sentence: "Our guides don't cover X." Never guess to fill a gap.
+- Speak to the reader directly, in the site's own voice. Never comment on what the passages do or do not cover, agree on, or recommend: no "is covered in our guides", "the sources", "Source 2", "most sources agree", "according to veterinary sources", "I can't say", "I can't tell you", "I don't know", or any sentence about what you are unable to do. Write "our guides" at most once per answer, and only in a gap sentence.
+- Say each point once. Do not restate it in other words.
+- End with the title of the one source that answers best, in the form: READ: <title>
+- Only if your answer also took a fact from a second source, add one more line: ALSO: <title>. Use titles exactly as given in <sources>.`;
+
+// A lead-in that names who says something ("Our emergency card says",
+// "Veterinary sources note"). Cut from the front of a sentence; when one was
+// cut, a second reported clause loses its "that" too, so "says A and that B"
+// becomes "A, and B" (Fable review of the 20-question rerun, 2026-11-02).
+const ASK_LEAD_IN_RE = /^(((most|many|several|some) )?(veterinary |published |scientific )?sources (agree|say|recommend|suggest|note|state)|(our|the) (emergency card|guides?|care guide|article|page)s? (says?|notes?|states?|lists?|explains?|recommends?))( that)?,?\s*/i;
+
+function askRewriteSourceTalk(sentence) {
+  // The articles compare their own sources ("most sources agree", "according
+  // to veterinary sources"), and the model echoes it. Those phrases come out
+  // here so the sentence, which often holds the number, survives (owner,
+  // 2026-11-02, on a Fable review).
+  const leadIn = ASK_LEAD_IN_RE.test(sentence);
+  let out = sentence.replace(ASK_LEAD_IN_RE, '');
+  if (leadIn) out = out.replace(/,?\s+and that\s+/gi, ', and ');
+  out = out
+    .replace(/\b(the )?range (that )?(most|many) sources agree on\b/gi, 'the usual range')
+    .replace(/,?\s*(though|but|while)\s+(a couple|a few|some|one or two|others)\s+(of them\s+)?(recommend|suggest|say|advise)\b/gi, ', or')
+    .replace(/,?\s*according to [^,.]*?sources?\b/gi, '')
+    // "Stuck shed is covered in our shedding guide: soak..." keeps the advice.
+    .replace(/^[^.:]*\b(is|are) covered in (our|the) [^.:]*:\s*/i, '')
+    // "Stuck shed is covered in our guides, and it can cut off circulation"
+    // keeps its fact: "Stuck shed can cut off circulation".
+    .replace(/\s+(is|are) covered in our guides,?\s*(and\s+)?(it|they)\s+/i, ' ');
+  out = out
+    .replace(/^(according to|per|based on) (the |these |those |the provided )?sources?,?\s*/i, '')
+    .replace(/^(the |these )?sources? \d* ?(say|note|state|mention|indicate|show)s?\b( that)?,?\s*/i, '')
+    .replace(/\b(the|these|those|the provided) sources (do not|don't|does not|doesn't) (say|cover|mention|explain|address|describe)\b/gi, "our guides don't cover")
+    .replace(/\b(the|these|those|the provided) sources (do|also) (say|note|mention)s?\b( that)?\s*/gi, '')
+    .replace(/\b(the|these|those|the provided) sources\b/gi, 'our guides');
+  out = out.trim();
+  return out ? out[0].toUpperCase() + out.slice(1) : out;
+}
+
+// What survives the rewrite and still talks about sources is dropped.
+const ASK_SOURCE_TALK_RE = /\b(the|these|those|my|our|provided|given|most|some|several|many|a couple of|veterinary|published|scientific|available)\s+sources?\b|\bsources?\s+\d\b|\baccording to\s+(the\s+)?(veterinary\s+|published\s+)?sources?\b|\bsources?\s+(agree|recommend|say|says|suggest|differ)\b|^sources? (note|notes|mention|mentions|show|shows|describe|describes|don'?t|do not|does not)\b|\bcovered in (our|the) \w+|\b(our|the) emergency card (says|notes|lists)\b/i;
+
+const askSourceTitle = (c) => (c.heading ? `${c.title}: ${c.heading}` : c.title);
+const askEscape = (t) => String(t).replace(/</g, '&lt;').replace(/>/g, '&gt;');
+
+async function askHaiku(env, question, chunks, prevQuestion = '') {
+  const sources = chunks
+    .map((c, i) => `<source index="${i + 1}" title="${askEscape(askSourceTitle(c)).replace(/"/g, "'")}">\n${askEscape(c.text)}\n</source>`)
+    .join('\n');
+  const res = await fetch('https://api.anthropic.com/v1/messages', {
+    method: 'POST',
+    headers: {
+      'x-api-key': env.ANTHROPIC_API_KEY,
+      'anthropic-version': '2026-10-21',
+      'content-type': 'application/json',
+    },
+    body: JSON.stringify({
+      model: ASK_MODEL,
+      max_tokens: 300,
+      thinking: { type: 'disabled' },
+      system: [{ type: 'text', text: ASK_SYSTEM, cache_control: { type: 'ephemeral' } }],
+      messages: [{ role: 'user', content: `<sources>\n${sources}\n</sources>\n\n${prevQuestion ? `Earlier question: ${askEscape(prevQuestion)}\n` : ''}Question: ${askEscape(question)}` }],
+    }),
+  });
+  if (!res.ok) throw new Error(`anthropic ${res.status}`);
+  const msg = await res.json();
+  if (msg.stop_reason === 'refusal') return { kind: 'refused' };
+  const text = (msg.content || []).filter((b) => b.type === 'text').map((b) => b.text).join('').trim();
+  return askParseReply(text, chunks, msg.stop_reason);
+}
+
+// Splits the model's reply into the answer and the source it named, and
+// cleans the answer: no dashes (number ranges become "to"), no half sentence
+// left by a max_tokens cut.
+function askParseReply(text, chunks, stopReason) {
+  if (!text || /^NO_ANSWER\b/.test(text) || /\bNO_ANSWER\s*$/.test(text)) return { kind: 'no_answer' };
+  let answer = text;
+  let best = null;
+  const findNamed = (title) => {
+    const named = title.toLowerCase().replace(/[*_"]/g, '').trim();
+    return chunks.find((c) => askSourceTitle(c).toLowerCase() === named)
+      || chunks.find((c) => named.includes(c.title.toLowerCase()) || c.title.toLowerCase().includes(named))
+      || null;
+  };
+  // ALSO comes after READ when the answer used a second source.
+  let also = null;
+  const alsoLine = answer.match(/\n?\s*ALSO:\s*(.+?)\s*$/i);
+  if (alsoLine) {
+    answer = answer.slice(0, alsoLine.index).trim();
+    also = findNamed(alsoLine[1]);
+  }
+  const read = answer.match(/\n?\s*READ:\s*(.+?)\s*$/i);
+  if (read) {
+    answer = answer.slice(0, read.index).trim();
+    best = findNamed(read[1]);
+  }
+  // An ALSO line left mid-text (written before READ) is dropped too.
+  answer = answer.replace(/\s*ALSO:\s*[^\n]*$/i, '');
+  answer = answer
+    .replace(/(\d)\s*[\u2013\u2014]\s*(\d)/g, '$1 to $2')
+    .replace(/\s*[\u2013\u2014]\s*/g, ', ')
+    .replace(/\s+/g, ' ')
+    .trim();
+  // Talk about the sources themselves is rewritten, not cut: "the sources
+  // don't cover X" becomes "our guides don't cover X", and a lead-in such as
+  // "Sources say", "According to the sources" or "Source 2 notes" is
+  // stripped from the front of its sentence. Only a sentence still about the
+  // sources after that is dropped. A source's own wording ("vet sources give
+  // a broader range") has no "the" or number before it and stays.
+  // "I can't tell you" and its kin: the clause is cut, the sentence kept.
+  answer = answer
+    .replace(/,?\s*so I (can'?t|cannot|am unable to|'m unable to) (tell you|say|explain|know|point you|show you|find|help with)[^.!?]*/gi, '')
+    .replace(/\bI (can'?t|cannot|am unable to|'m unable to) (tell you|say|explain|know|point you|show you|find|help with)\b[^.!?]*[.!?]?\s*/gi, '');
+  // At most one "not covered" sentence: a second one is dropped.
+  let gapSeen = false;
+  answer = answer
+    .split(/(?<=[.!?])\s+/)
+    .map(askRewriteSourceTalk)
+    .filter((sentence) => {
+      if (!sentence || ASK_SOURCE_TALK_RE.test(sentence)) return false;
+      if (/\b(don'?t|do not|doesn'?t|does not) cover\b|n[o']t covered\b|\bnot covered\b|\bI can'?t (say|tell you)\b|\bI cannot\b|\bunable to\b|\bI don'?t know\b/i.test(sentence)) {
+        if (gapSeen) return false;
+        gapSeen = true;
+      }
+      return true;
+    })
+    .join(' ')
+    .trim();
+  if (stopReason === 'max_tokens') {
+    const end = Math.max(answer.lastIndexOf('. '), answer.lastIndexOf('! '), answer.lastIndexOf('? '));
+    answer = end > 0 ? answer.slice(0, end + 1) : answer;
+  }
+  if (!answer) return { kind: 'no_answer' };
+  return { kind: 'answer', answer, best, also };
+}
+
+// Under an answer (owner, 2026-11-02, on a Fable recommendation): at most
+// two links, and each one means "this is where the answer came from". The
+// first is the page the model answered from (READ). The second is a page the
+// model says it also used (ALSO), or else the species' care guide hub, where
+// everything on the animal starts, or else nothing. The other search hits
+// never show: for "where do bettas live in the wild" they were a lifespan
+// line in a health article and a feeding article.
+function askAnswerLinks(best, also, species) {
+  const page = (u) => u.split('#')[0];
+  const links = [{ title: best.title, url: best.url }];
+  if (also && page(also.url) !== page(best.url)) {
+    links.push({ title: also.title, url: also.url });
+  } else if (species?.guideId) {
+    // The hub and the species' encyclopedia profile are one page with a
+    // toggle, so either one already is the hub.
+    const hub = `/guides/${species.guideId}/`;
+    const profile = `/encyclopedia/animal/${species.guideId}/`;
+    if (page(best.url) !== hub && page(best.url) !== profile) links.push({ title: `${species.name} Care Guide`, url: hub });
+  }
+  return links;
+}
+
+// One link per page, in the order the chunks ranked. Used when the model
+// named no source, and for refused answers.
+function askLinks(chunks, first = null) {
+  const ordered = first ? [first, ...chunks.filter((c) => c !== first)] : chunks;
+  const seen = new Set();
+  const links = [];
+  for (const c of ordered) {
+    // One link per page. By path, not slug: a hub and its encyclopedia
+    // profile share an id.
+    const page = c.url.split('#')[0];
+    if (seen.has(page)) continue;
+    seen.add(page);
+    links.push({ title: c.title, url: c.url });
+  }
+  return links.slice(0, 3);
+}
+
+// Every request goes to Supabase ask_log: the question, the slugs matched and
+// the result. No IP address, no visitor key. Never blocks or breaks the reply.
+//
+// It can also push to the owner's phone through ntfy, like the contact form
+// (owner, 2026-11-02, on a Fable recommendation). Two Cloudflare variables:
+//   NTFY_ASK_TOPIC   the private topic name. Unset: no pushes. A topic can be
+//                    read by anyone who knows its name, so it is never in code.
+//   ASK_NTFY_MODE    "all" (every question with its result and the page that
+//                    answered; the default) or "gaps" (only questions the
+//                    site does not cover). Switch to "gaps" once pushes pass
+//                    about 10 a day. "capped" never pushes, so someone hitting
+//                    the limit cannot flood the phone.
+const ASK_NTFY_TITLES = {
+  answered: 'Answered',
+  no_match: 'Not covered yet',
+  legal: 'Legal question',
+  refused: 'No answer, links shown',
+  clarify: 'Asked which animal',
+};
+
+// push: what the phone notification adds beyond the question. On an answer,
+// the answer itself and the page the model took it from (owner, 2026-11-02);
+// neither is stored in Supabase.
+function askLog(env, ctx, question, matchedSlugs, result, extra = {}, push = {}) {
+  const jobs = [];
+  if (hasSupabaseEnv(env)) {
+    jobs.push(supabaseFetch(env, '/rest/v1/ask_log', {
+      method: 'POST',
+      headers: { Prefer: 'return=minimal' },
+      body: JSON.stringify({ question, matched_slugs: matchedSlugs, result, ...extra }),
+    }).catch(() => {}));
+  }
+  const mode = env?.ASK_NTFY_MODE === 'gaps' ? 'gaps' : 'all';
+  if (env?.NTFY_ASK_TOPIC && ASK_NTFY_TITLES[result] && (mode === 'all' || result === 'no_match')) {
+    const from = push.page || matchedSlugs[0];
+    const page = from ? `\n\n${result === 'no_match' ? 'Closest page' : 'From'}: ${from}` : '';
+    const answer = push.answer ? `\n\nAnswer: ${push.answer}` : '';
+    jobs.push(fetch('https://ntfy.sh', {
+      method: 'POST',
+      headers: { 'content-type': 'application/json' },
+      body: JSON.stringify({
+        topic: env.NTFY_ASK_TOPIC,
+        title: `Ask Beastly: ${ASK_NTFY_TITLES[result]}`,
+        message: `${question}${answer}${page}`,
+        tags: [result === 'no_match' ? 'grey_question' : result === 'legal' ? 'scales' : 'speech_balloon'],
+        priority: result === 'no_match' ? 3 : 2,
+      }),
+    }).catch(() => {}));
+  }
+  if (!jobs.length) return;
+  const all = Promise.all(jobs);
+  if (ctx?.waitUntil) ctx.waitUntil(all);
+}
+
 export default {
   async fetch(request, env, ctx) {
     const { pathname } = new URL(request.url);
+
+    if (pathname === '/api/ask' || pathname === '/api/ask/') {
+      return handleAsk(request, env, ctx);
+    }
 
     if (pathname.startsWith('/api/care-packages/')) {
       return handleCarePackageStore(request, env, pathname);
