@@ -585,24 +585,13 @@ async function buildArticlesFeed(request) {
 // repo value, so the topic name stays private. With it unset the route still
 // redirects and simply sends nothing.
 async function notifySubscriber(env) {
-  const topic = env?.NTFY_SUBSCRIBER_NOTIF;
-  if (!topic) return;
-  try {
-    await fetch('https://ntfy.sh', {
-      method: 'POST',
-      headers: { 'content-type': 'application/json' },
-      body: JSON.stringify({
-        topic,
-        title: 'New Critter Digest subscriber',
-        message: 'Someone just signed up through beastlyfacts.com.',
-        tags: ['newspaper'],
-        priority: 3,
-        click: 'https://app.beehiiv.com/',
-      }),
-    });
-  } catch {
-    // A failed alert must never break the visitor's redirect.
-  }
+  await ntfySend(env, 'ntfy_subscriber_topic', env?.NTFY_SUBSCRIBER_NOTIF, {
+    title: 'New Critter Digest subscriber',
+    message: 'Someone just signed up through beastlyfacts.com.',
+    tags: ['newspaper'],
+    priority: 3,
+    click: 'https://app.beehiiv.com/',
+  });
 }
 
 
@@ -675,26 +664,16 @@ async function handleContact(request, env) {
     }
   }
 
-  const topic = env?.NTFY_CONTACT_NOTIF || env?.NTFY_SUBSCRIBER_NOTIF;
-  if (!topic) return storeJson({ error: 'The form is not set up yet.' }, 503);
-
-  try {
-    const res = await fetch('https://ntfy.sh', {
-      method: 'POST',
-      headers: { 'content-type': 'application/json' },
-      body: JSON.stringify({
-        topic,
-        title: `${reason}: ${name}`,
-        message: `${email ? `From: ${email}\n\n` : 'No email given.\n\n'}${message}`,
-        tags: ['envelope'],
-        priority: 4,
-        ...(email && { click: `mailto:${email}` }),
-      }),
-    });
-    if (!res.ok) throw new Error(`ntfy ${res.status}`);
-  } catch {
-    return storeJson({ error: 'The message did not go through.' }, 502);
-  }
+  // Sent from Supabase to the ntfy_contact_topic chat; the worker's own topic
+  // is only the fallback (see ntfyViaSupabase).
+  const sent = await ntfySend(env, 'ntfy_contact_topic', env?.NTFY_CONTACT_NOTIF || env?.NTFY_SUBSCRIBER_NOTIF, {
+    title: `${reason}: ${name}`,
+    message: `${email ? `From: ${email}\n\n` : 'No email given.\n\n'}${message}`,
+    tags: ['envelope'],
+    priority: 4,
+    ...(email && { click: `mailto:${email}` }),
+  });
+  if (!sent) return storeJson({ error: 'The message did not go through.' }, 502);
   return storeJson({ ok: true });
 }
 
@@ -896,6 +875,45 @@ function supabaseFetch(env, path, init = {}) {
 
 function hasSupabaseEnv(env) {
   return Boolean(env?.SUPABASE_URL && env?.SUPABASE_SERVICE_ROLE_KEY);
+}
+
+// Sends an ntfy push from Supabase (supabase/ntfy_push.sql) rather than from
+// here: ntfy.sh's free quota is per sending IP, and Cloudflare's shared
+// addresses use it up, so pushes from the worker were refused with 429
+// (owner, 2026-11-03). The topic lives in Supabase Vault under secretName, one
+// per kind, so each kind has its own chat in the ntfy app. True when queued;
+// false (no Vault topic, Supabase down) lets the caller fall back to the old
+// direct push.
+async function ntfyViaSupabase(env, secretName, payload) {
+  if (!hasSupabaseEnv(env)) return false;
+  try {
+    const res = await supabaseFetch(env, '/rest/v1/rpc/ntfy_push', {
+      method: 'POST',
+      body: JSON.stringify({ secret_name: secretName, payload }),
+    });
+    return res.ok && (await res.json()) === 'queued';
+  } catch {
+    return false;
+  }
+}
+
+// The old route, kept as the fallback: a push straight from the worker.
+async function ntfyDirect(topic, payload) {
+  if (!topic) return false;
+  try {
+    const res = await fetch('https://ntfy.sh', {
+      method: 'POST',
+      headers: { 'content-type': 'application/json' },
+      body: JSON.stringify({ topic, ...payload }),
+    });
+    return res.ok;
+  } catch {
+    return false;
+  }
+}
+
+async function ntfySend(env, secretName, fallbackTopic, payload) {
+  return (await ntfyViaSupabase(env, secretName, payload)) || ntfyDirect(fallbackTopic, payload);
 }
 
 // ---------------------------------------------------------------------------
@@ -1373,6 +1391,16 @@ function askIsThanks(question) {
   if (!q || !ASK_THANKS_CORE.test(q)) return false;
   return q.split(' ').every((w) => ASK_THANKS_WORDS.has(w) || ASK_FILLER_RE.test(w));
 }
+// Only greeting words, filler and punctuation: "hi", "hello there!", "hey
+// beastly", "good morning". "hi, what do hamsters eat" is a question.
+const ASK_GREETING_WORDS = new Set('hi hii hiya hey heya hello helo hullo howdy yo sup greetings morning afternoon evening good there beastly all everyone guys whats up how are you doing going is it'.split(' '));
+const ASK_GREETING_CORE = /\b(hi+|hiya|hey+|heya|hello+|helo|hullo|howdy|yo|sup|greetings|good (morning|afternoon|evening))\b/;
+function askIsGreeting(question) {
+  const q = question.toLowerCase().replace(/[^a-z\s']/g, ' ').replace(/'/g, '').replace(/\s+/g, ' ').trim();
+  if (!q || !ASK_GREETING_CORE.test(q)) return false;
+  return q.split(' ').every((w) => ASK_GREETING_WORDS.has(w) || /^h+i+$|^he+y+$|^hello+$/.test(w) || ASK_FILLER_RE.test(w));
+}
+
 const ASK_THANKS_REPLIES = [
   "You're welcome! Ask anything else any time.",
   'Happy to help. Ask away if anything else comes up.',
@@ -1848,7 +1876,7 @@ async function handleAskInner(request, env, ctx, state) {
   // The conversation's previous question, for a follow-up. Text only.
   const prev = String(body?.context?.prev || '').replace(/\s+/g, ' ').trim().slice(0, ASK.maxQuestion);
   const context = prev.length >= 3 ? { prev, clarify: body?.context?.clarify === true } : null;
-  if (question.length < 3) return quiet('unavailable');
+  if (question.length < 2) return quiet('unavailable');
   if (!env.ASK_DB) return quiet('unavailable');
 
   // A valid pass skips Turnstile; a fresh Turnstile success earns one.
@@ -1864,6 +1892,18 @@ async function handleAskInner(request, env, ctx, state) {
   // all filler words: on its own it came back "not in our guides", and after
   // an answer it re-asked the previous question. No search, no model call,
   // not logged, not counted toward the hourly limit or the 3 answers.
+  // A greeting gets one back, same terms as a thank-you (owner, 2026-11-03):
+  // "hello" alone used to come back "not in our guides".
+  if (askIsGreeting(question)) {
+    return storeJson({
+      result: 'greeting',
+      answer: 'Hi! Ask me about any animal on the site: care, health, facts or the law.',
+      links: [],
+      emergency: false,
+      species: null,
+      followUp: Boolean(context),
+    });
+  }
   if (askIsThanks(question)) {
     return storeJson({
       result: 'thanks',
@@ -2081,6 +2121,8 @@ function askRewriteSourceTalk(sentence) {
     .replace(/^(according to|per|based on) (the |these |those |the provided )?sources?,?\s*/i, '')
     .replace(/^(the |these )?sources? \d* ?(say|note|state|mention|indicate|show)s?\b( that)?,?\s*/i, '')
     .replace(/\b(the|these|those|the provided) sources (do not|don't|does not|doesn't) (say|cover|mention|explain|address|describe)\b/gi, "our guides don't cover")
+    // "The guides don't give a usual season": our guides, as in a gap sentence.
+    .replace(/\b(the|these|those) guides? (do not|don'?t|does not|doesn'?t)\b/gi, "our guides don't")
     .replace(/\b(the|these|those|the provided) sources (do|also) (say|note|mention)s?\b( that)?\s*/gi, '')
     .replace(/\b(the|these|those|the provided) sources\b/gi, 'our guides');
   out = out.trim();
@@ -2256,21 +2298,19 @@ function askLog(env, ctx, question, matchedSlugs, result, extra = {}, push = {})
     }).catch(() => {}));
   }
   const mode = env?.ASK_NTFY_MODE === 'gaps' ? 'gaps' : 'all';
-  if (env?.NTFY_ASK_TOPIC && ASK_NTFY_TITLES[result] && (mode === 'all' || result === 'no_match')) {
+  if (ASK_NTFY_TITLES[result] && (mode === 'all' || result === 'no_match')) {
     const from = push.page || matchedSlugs[0];
     const page = from ? `\n\n${result === 'no_match' ? 'Closest page' : 'From'}: ${from}` : '';
     const answer = push.answer ? `\n\nAnswer: ${push.answer}` : '';
-    jobs.push(fetch('https://ntfy.sh', {
-      method: 'POST',
-      headers: { 'content-type': 'application/json' },
-      body: JSON.stringify({
-        topic: env.NTFY_ASK_TOPIC,
-        title: `Ask Beastly: ${ASK_NTFY_TITLES[result]}`,
-        message: `${question}${answer}${page}`,
-        tags: [result === 'no_match' ? 'grey_question' : result === 'legal' ? 'scales' : 'speech_balloon'],
-        priority: result === 'no_match' ? 3 : 2,
-      }),
-    }).catch(() => {}));
+    // From Supabase to the ntfy_ask_topic chat, like Beastle's pings; the
+    // worker's NTFY_ASK_TOPIC is only the fallback. Default priority (3) so
+    // they show, which the low priority (2) ones did not.
+    jobs.push(ntfySend(env, 'ntfy_ask_topic', env.NTFY_ASK_TOPIC, {
+      title: `Ask Beastly: ${ASK_NTFY_TITLES[result]}`,
+      message: `${question}${answer}${page}`,
+      tags: [result === 'no_match' ? 'grey_question' : result === 'legal' ? 'scales' : 'speech_balloon'],
+      priority: 3,
+    }));
   }
   if (!jobs.length) return;
   const all = Promise.all(jobs);

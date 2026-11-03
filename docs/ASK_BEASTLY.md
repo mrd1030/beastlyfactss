@@ -188,6 +188,10 @@ In `public/_worker.js`, listed in `public/_routes.json`. In order:
    there is nothing to answer, and the chat cannot see the page (a reader on
    the bearded dragon hub may mean that animal). A question choosing a pet
    ("my friend wants a pet, what's easy") never gets it.
+   Greetings (owner, 2026-11-03): "hi", "hello there", "hey beastly",
+   "good morning" get "Hi! Ask me about any animal on the site: care,
+   health, facts or the law.", result `greeting`, on the same terms as
+   thanks. The chat now sends from 2 characters, so "hi" goes through.
    Thanks (owner, 2026-11-02): a thank-you turn is skipped when the next
    question looks back for its follow-up context. A message that is only thanks or an
    acknowledgement ("thanks!", "ty so much", "ok cool, got it", "that
@@ -350,8 +354,16 @@ every `no_match` row into READER_GAPS.md: real questions the guides do not
 answer yet.
 
 Pushes to the owner's phone through ntfy (owner, 2026-11-02, on a Fable
-recommendation), like the contact form: set `NTFY_ASK_TOPIC` (a private topic
-name, never in code) and `ASK_NTFY_MODE`. `all` (the default) pushes every
+recommendation). Since 2026-11-03 they go out from Supabase, not the worker:
+ntfy.sh's free quota is per sending IP, Cloudflare's shared addresses use it
+up, and pushes from the worker were refused with 429 (the Beastle pings,
+sent from Supabase, always arrived). The worker calls
+`public.ntfy_push('ntfy_ask_topic', payload)` (supabase/ntfy_push.sql), which
+reads the topic from Vault and queues the POST through pg_net. The contact
+form (`ntfy_contact_topic`) and new-subscriber alerts
+(`ntfy_subscriber_topic`) use the same function, each its own chat in the
+app. With no Vault topic the worker falls back to its old direct push with
+`NTFY_ASK_TOPIC`. `ASK_NTFY_MODE`: `all` (the default) pushes every
 question with its result and the page it came from; `gaps` pushes only
 questions the site does not cover. Start with `all` while traffic is small,
 switch to `gaps` once it passes about 10 a day. `capped` never pushes. An

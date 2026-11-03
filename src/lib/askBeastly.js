@@ -137,7 +137,7 @@ export async function askQuestion(question, captcha = '', conversationId = null)
   // The last real question: a thank-you turn carries nothing to search, so a
   // follow-up after "thanks!" goes back to the question before it.
   const lastTurn = canFollowUp(current)
-    ? [...current.turns].reverse().find((t) => t.reply?.result !== 'thanks') || null
+    ? [...current.turns].reverse().find((t) => !['thanks', 'greeting'].includes(t.reply?.result)) || null
     : null;
   const prev = lastTurn ? lastTurn.q : '';
   // After "which animal?", the reply that names it carries the question.
