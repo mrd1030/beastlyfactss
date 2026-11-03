@@ -1800,7 +1800,41 @@ async function askVerifyTurnstile(env, request, token) {
   }
 }
 
+// A 30-minute pass after one Turnstile check (owner, 2026-11-03): a token is
+// single use, so without it the widget ran before every question. The pass
+// is the expiry time signed with HMAC-SHA256 under TURNSTILE_SECRET_KEY, so
+// it cannot be forged or stretched, and nothing is stored anywhere. The
+// hourly limit and the daily cap still apply while it is valid.
+const ASK_PASS_MS = 30 * 60 * 1000;
+async function askPassSign(env, exp) {
+  const key = await crypto.subtle.importKey('raw', new TextEncoder().encode(env.TURNSTILE_SECRET_KEY),
+    { name: 'HMAC', hash: 'SHA-256' }, false, ['sign']);
+  const sig = await crypto.subtle.sign('HMAC', key, new TextEncoder().encode(`ask-pass|${exp}`));
+  return [...new Uint8Array(sig)].map((b) => b.toString(16).padStart(2, '0')).join('');
+}
+async function askPassValid(env, pass) {
+  if (!env?.TURNSTILE_SECRET_KEY || typeof pass !== 'string') return false;
+  const m = pass.match(/^(\d{13})\.([0-9a-f]{64})$/);
+  if (!m) return false;
+  const exp = Number(m[1]);
+  const now = Date.now();
+  if (exp <= now || exp > now + ASK_PASS_MS + 60000) return false;
+  const want = await askPassSign(env, exp);
+  let diff = 0;
+  for (let i = 0; i < want.length; i++) diff |= want.charCodeAt(i) ^ m[2].charCodeAt(i);
+  return diff === 0;
+}
+
+// The pass, when one was issued for this request, rides on the reply.
 async function handleAsk(request, env, ctx) {
+  const state = {};
+  const res = await handleAskInner(request, env, ctx, state);
+  if (!state.pass) return res;
+  const data = await res.json().catch(() => null);
+  return data ? storeJson({ ...data, pass: state.pass }, res.status) : res;
+}
+
+async function handleAskInner(request, env, ctx, state) {
   if (request.method !== 'POST') return storeJson({ error: 'Method not allowed.' }, 405);
   const quiet = (result, extra = {}) => storeJson({ result, answer: '', links: [], emergency: false, ...extra });
 
@@ -1817,7 +1851,14 @@ async function handleAsk(request, env, ctx) {
   if (question.length < 3) return quiet('unavailable');
   if (!env.ASK_DB) return quiet('unavailable');
 
-  if (!(await askVerifyTurnstile(env, request, String(body?.captcha || '')))) return quiet('unavailable');
+  // A valid pass skips Turnstile; a fresh Turnstile success earns one.
+  if (!(await askPassValid(env, body?.pass))) {
+    if (!(await askVerifyTurnstile(env, request, String(body?.captcha || '')))) return quiet('unavailable');
+    if (env?.TURNSTILE_SECRET_KEY) {
+      const exp = Date.now() + ASK_PASS_MS;
+      state.pass = `${exp}.${await askPassSign(env, exp)}`;
+    }
+  }
 
   // A thank-you gets a thank-you back (owner, 2026-11-02). Before this it was
   // all filler words: on its own it came back "not in our guides", and after
