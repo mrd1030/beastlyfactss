@@ -898,7 +898,9 @@ async function ntfyViaSupabase(env, secretName, payload) {
 }
 
 // The old route, kept as the fallback: a push straight from the worker.
-async function ntfyDirect(topic, payload) {
+async function ntfyDirect(rawTopic, payload) {
+  // A pasted secret can carry a space or line break, which ntfy refuses.
+  const topic = String(rawTopic || '').trim();
   if (!topic) return false;
   try {
     const res = await fetch('https://ntfy.sh', {

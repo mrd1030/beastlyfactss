@@ -23,7 +23,7 @@
 -- table of ours; pg_net keeps its own request queue until the POST is sent
 -- and the response for a few hours, then drops them.
 --
--- Applied as migration ntfy_push. Re-runnable.
+-- Applied as migrations ntfy_push and ntfy_push_trim_topic. Re-runnable.
 
 create or replace function public.ntfy_push(secret_name text, payload jsonb)
 returns text
@@ -37,7 +37,8 @@ begin
   if secret_name not in ('ntfy_ask_topic', 'ntfy_contact_topic', 'ntfy_subscriber_topic') then
     return 'not allowed';
   end if;
-  select decrypted_secret into topic from vault.decrypted_secrets where name = secret_name;
+  -- Trimmed: a pasted topic can carry a space or line break ntfy refuses.
+  select btrim(decrypted_secret, E' \t\r\n') into topic from vault.decrypted_secrets where name = secret_name;
   if topic is null or topic = '' then return 'no topic'; end if;
   perform net.http_post(
     url := 'https://ntfy.sh',
