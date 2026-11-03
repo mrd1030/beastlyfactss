@@ -29,8 +29,9 @@ Pages opened on 2026-11-03 and what each states:
 - NC State Veterinary Hospital, "How To Feed Your Bearded Dragon"
   (hospital.cvm.ncsu.edu/services/small-animals/nutrition/how-to-feed-your-bearded-dragon/).
   The direct fetch still returns 503 from a cloud runner (WebFetch and curl both);
-  the text was read through a reader proxy (r.jina.ai) and should be eyeballed on
-  the desktop. States: "<1 month old; Feed 2-3x daily", "1 - 4 months old: Feed 2x
+  the text was read through a reader proxy (r.jina.ai). The owner checked the live
+  page on the desktop the same day and pasted its text: every figure below
+  matches. States: "<1 month old; Feed 2-3x daily", "1 - 4 months old: Feed 2x
   daily", "4 months old - adulthood: Feed once daily", "Adult dragons can be fed
   everyday or every other day", diet "50% dark leafy greens, 20% grated or chopped
   vegetables, 25% animal matter" and "a maximum of 5% fruits", "Fruits should be
@@ -118,6 +119,11 @@ months, "not a hard four months"; it was not touched on this pass.
   restore it as a breeder figure]
 
 ## Possible contradictions found (not changed)
+
+- Mealworms and superworms: the guide says they are "an occasional food for
+  adults only, never daily and never for juveniles". NC State lists an
+  "occasional super/mealworm" from 1 to 4 months and super/mealworms in the
+  4 months to adulthood diet. [owner call]
 
 - NC State says an adult that "stops eating for more than 1-2 days" should see an
   exotic vet; the owner's rule (2026-11-03) is that a 1 to 2 day refusal is
