@@ -480,10 +480,6 @@ shows them on real questions.
 - **Choosing a pet.** "What is the best pet as a gift" and "my friend wants
   a pet, what is easy for a kid" come back not covered; they need a search
   built around the comparison and beginner pet articles.
-- **"another" after a random fact.** After a plain "fun facts", "another"
-  keeps the animal of the fact that came up (two bearded dragon facts in a
-  row in the 2026-11-03 run). Possibly keep the animal only when the reader
-  named it.
 - **Two wording slips seen in that run.** Cutting "the guide says" can leave
   a broken sentence ("For fry, to feed infusoria several times a day"), and
   the urgent-sign rule's own wording ("what the guides tie that sign to")
