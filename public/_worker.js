@@ -2039,18 +2039,26 @@ async function askRetrieve(db, question, context = null) {
   // search, which once linked the platypus for "my hamster is acting weird"
   // (owner, 2026-11-02, from the 20-question test).
   // No species: every word first, which reads little.
-  // Any word only when that found nothing, and without the site's most
+  // Any word when that found fewer than 4, and without the site's most
   // common words ("eat", "tank"), which match thousands of chunks; when every
   // word is common, the two rarest stay (owner, 2026-11-01, on a Fable
   // recommendation).
   if (!rows.length && !species) {
     if (tokens.length > 1) rows = await search(allOf(tokens));
-    if (!rows.length) {
+    // Fewer than 4 every-word hits: the any-word search too, which also
+    // returns those hits, so its list replaces the first. "When do reptiles
+    // brumate?" found only the glossary entry with both words; the brumation
+    // guides never say "reptiles" (owner, 2026-11-03, Fable agreed: the
+    // common-word skip below is what keeps this cheap).
+    if (rows.length < ASK.topK) {
       const df = (t) => meta.common[t] || 0;
       let words = tokens.filter((t) => !df(t));
       if (!words.length) words = [...tokens].sort((a, b) => df(a) - df(b)).slice(0, 2);
       // No words left at all (every one a stopword): an empty MATCH throws.
-      if (words.length) rows = await search(anyOf(words));
+      if (words.length) {
+        const wider = await search(anyOf(words));
+        if (wider.length > rows.length) rows = wider;
+      }
     }
   }
 

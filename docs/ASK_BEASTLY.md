@@ -233,7 +233,9 @@ In `public/_worker.js`, listed in `public/_routes.json`. In order:
    Rows read per search (owner, 2026-11-01, on a Fable recommendation): the
    species goes inside the full text match, so a species question reads
    about 110 rows instead of 6,000. A question with no species tries every
-   word first; the any-word search runs only when that found nothing, and
+   word first; the any-word search runs when that found fewer than 4 (it
+   briefly ran only on none, which missed "When do reptiles brumate?": the
+   guides never say "reptiles"), and
    leaves out words in more than 5% of the chunks (`ask_meta.common`),
    keeping the two rarest if all are common, and skips an empty word list.
    Ranking happens inside the FTS index and only the top rows are joined.
