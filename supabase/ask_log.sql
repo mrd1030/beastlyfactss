@@ -23,6 +23,16 @@
 -- (READ). matched_slugs is in search order, so the two side by side show how
 -- often the model picked something other than the top hit.
 --
+-- router (owner, 2026-11-04): what the router (one Haiku call that reads
+-- each question, docs/ASK_BEASTLY.md "The router") made of the question:
+--   {"animal": "Rabbit", "group": null, "unknown": null, "switched": false,
+--    "kind": "care_question", "search": "droppings shape"}
+-- or {"failed": "timeout"} when the rules ran alone (timeout, http 529,
+-- refusal, cut off, invalid, no key, error), or null when the router was
+-- not asked (small talk, thanks, legal questions, replies to the chat's own
+-- questions). Derived from the question, nothing more; the worker retries
+-- an insert without it when the column is missing, so no row depends on it.
+--
 -- Only the worker writes, with the service role key, which bypasses RLS. RLS is
 -- on with no policies, so anon and signed-in users can neither read nor write.
 
@@ -32,12 +42,14 @@ create table if not exists public.ask_log (
   matched_slugs text[] not null default '{}',
   result text not null check (result in ('answered', 'no_match', 'capped', 'refused', 'legal', 'clarify', 'catalog')),
   answer_slug text,
+  router jsonb,
   created_at timestamptz not null default now()
 );
 
 -- Added 2026-11-02 to a table that already existed; 'catalog' joined the
--- check on 2026-11-03.
+-- check on 2026-11-03; router on 2026-11-04.
 alter table public.ask_log add column if not exists answer_slug text;
+alter table public.ask_log add column if not exists router jsonb;
 alter table public.ask_log drop constraint if exists ask_log_result_check;
 alter table public.ask_log add constraint ask_log_result_check
   check (result in ('answered', 'no_match', 'capped', 'refused', 'legal', 'clarify', 'catalog'));

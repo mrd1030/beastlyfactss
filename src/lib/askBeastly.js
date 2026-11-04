@@ -81,9 +81,11 @@ export const canFollowUp = (c) => Boolean(c) && !c.closed;
 
 // Only what the reader needs to see again goes in: the source chunks the test
 // site returns are dropped.
+// The router's read (`read`) comes only from the test site, where the chat
+// shows it under the answer, so it stays when it is there.
 function keepable(reply) {
-  const { result, answer = '', links = [], emergency = false, species = null, group = null, legal = null, health = false, fact = null, missing = null, disclosure = '' } = reply || {};
-  return { result: result || 'unavailable', answer, links, emergency, species, group, legal, health, fact, missing, disclosure };
+  const { result, answer = '', links = [], emergency = false, species = null, group = null, legal = null, health = false, fact = null, missing = null, disclosure = '', read = null } = reply || {};
+  return { result: result || 'unavailable', answer, links, emergency, species, group, legal, health, fact, missing, disclosure, ...(read && { read }) };
 }
 
 // The 30-minute pass the worker hands back after one Turnstile check, so the

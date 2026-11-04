@@ -579,8 +579,10 @@ Reply: `{ result, answer, links, emergency, species, group, followUp, health }`.
 `group` (`{ id, name }`, 2026-11-04) is the group a reply was about when it
 was a group, not an animal (a tetra question, a fish listing); the client
 sends its id back as `context.group`. On the sharetest site every reply the
-router read also carries `read`: its checked read (animal, group, switched,
-kind, search) or `{ failed: <reason> }`, for router-live.mjs.
+router read also carries `read`: its checked read (animal, group, unknown,
+switched, kind, search) or `{ failed: <reason> }`, for router-live.mjs and
+the chat's "Read as:" line there (AskReply's ReadLine, shown only when a
+reply carries `read`, which the live host never sends).
 `result` is answered, fact, gift, new_pet, statement, navigate, catalog, clarify, thanks, greeting, legal, no_match,
 capped, refused or unavailable. A `greeting` reply may carry links (the
 frustration apology links the search and contact pages). A `gift` reply also carries `disclosure`, the
@@ -631,11 +633,32 @@ slow, errors or refuses. Code: `askRouter`, `askRouterCheck`,
    its read. The emergency card is unchanged: it still comes from the health
    words in the reader's own question and the best section.
 
+**One owner per field** (owner, 2026-11-04, on a Fable review). A valid read
+owns the animal, the group, whether the reader moved on (`switched`) and
+what kind of message it is. The rules do not read those again: there is no
+arbitration between the router's read and the word lists when the router
+answered, and the rules decide them only when the router was not asked
+(steps 2, 4 and 5) or failed. The rules own, on both paths, the emergency
+words, the legal words and the law cell, and validation (ids in the lists,
+kind in the enum). What follows the kind is the same code on both paths:
+which fact to pick, the gift's direction question, a hub for a bare name,
+the search itself. In askRetrieve the two paths are the `if (routed)` and
+`else` blocks at the top, and the shared tail after them.
+
+**Two calls, never combined.** The router call and the answer call stay
+separate, and the answer call is skipped for small_talk, thanks,
+frustration, confused, catalog and legal (fixed replies, the catalog's
+counts, the law matrix), and for every other reply that needs no model
+(a hub, a fact, a gift, a new pet, a statement, an animal the site has
+nothing on).
+
 **The call.** `claude-haiku-5-5` (ASK_MODEL), `max_tokens` 200, thinking
-disabled, no temperature, the system prompt in a cache block, a 2.5 second
-timeout (AbortController), and structured output:
-`output_config: { format: { type: 'json_schema', schema } }` with this
-schema (every field required, `additionalProperties: false`):
+disabled with `output_config.effort` set to `low` explicitly (Haiku 5.5
+takes `disabled` only at effort high or below, and its default is medium;
+a read is not a reasoning task), no temperature, the system prompt in a
+cache block, a 2.5 second timeout (AbortController), and structured output:
+`output_config: { effort: 'low', format: { type: 'json_schema', schema } }`
+with this schema (every field required, `additionalProperties: false`):
 
 ```json
 {
@@ -644,16 +667,21 @@ schema (every field required, `additionalProperties: false`):
   "properties": {
     "animal": { "anyOf": [{ "type": "string" }, { "type": "null" }] },
     "group": { "anyOf": [{ "type": "string", "enum": ["tetras", "livebearers", "parrots", "reptiles", "amphibians", "birds", "cats", "dogs", "fish", "geckos", "invertebrates", "lizards", "small-mammals", "snakes", "turtles-tortoises"] }, { "type": "null" }] },
+    "unknown_animal": { "type": "string" },
     "switched": { "type": "boolean" },
     "kind": { "type": "string", "enum": ["care_question", "fact", "catalog", "legal", "gift", "new_pet", "statement", "small_talk", "thanks", "frustration", "confused", "other"] },
     "search": { "type": "string" }
   },
-  "required": ["animal", "group", "switched", "kind", "search"]
+  "required": ["animal", "group", "unknown_animal", "switched", "kind", "search"]
 }
 ```
 
 The user message is the remembered animal (or group), the previous question
-and the message:
+and the message. The remembered animal is the carry exactly as askRetrieve
+will carry it: `context.species` checked against the species list (or
+`context.group` against ASK_GROUPS), as askRemembered reads it, so the
+router judges `switched` against the same animal that carries when it says
+the reader did not move on:
 
 ```
 Remembered animal: Rabbit
@@ -674,6 +702,7 @@ You read one message typed into Ask Beastly, the question box on Beastly Facts, 
 Fields:
 animal: the animal the message itself names or clearly means, written exactly as in the animal lists below, or null. Plurals, nicknames and misspellings count: "bunnies" is Rabbit, "my grey" is African Grey Parrot, "beardie" is Bearded Dragon, "platy fish" is Platy. Leave it null when the message names no animal, even when one is remembered. When it names a kind of animal rather than one species, leave it null and fill group.
 group: the group id from the list below when the message names a kind of animal ("fish", "my tetra fish", "parrots", "snakes"), else null.
+unknown_animal: an animal the message names that is in neither animal list and is not a group ("ferret", "okapi", "sugar glider"), lowercase and singular, 1 to 3 words; else empty. Empty whenever animal or group is filled.
 switched: true when the message is about a different animal or group than the remembered one, or about no animal at all (the site itself, small talk, a general question). false when it names the remembered animal again, or names none and reads as a follow-up about it ("what do they eat", "why do they poop round", "babies?").
 kind: what the message wants.
   care_question: something to look up about an animal or keeping one: feeding, housing, tank mates, health, behavior, breeding, size, lifespan, color, droppings.
@@ -691,31 +720,62 @@ kind: what the message wants.
 search: 2 to 6 lowercase words to look up in the guides, in the words the guides use (droppings for poop, enclosure for cage, feeding for eat, tank mates for living together). The topic only, with no animal or group name. For a short follow-up, carry the topic over from the previous question ("babies?" after "what do rabbits eat" is "baby feeding"). Empty for catalog, small_talk, thanks, frustration and confused.
 ```
 
-**Checking the read** (askRouterCheck). An animal must be a species name in
-ask_meta (case aside), a group must be in ASK_GROUPS; anything else is
-dropped to null. A kind outside the enum or a switched that is not true or
-false means the output is not what the schema promised, and the whole read is
-dropped. The search phrase is lowercased, cut to plain letters, digits and
-apostrophes, 8 words and 80 characters. The router never writes text a reader
-sees.
+**Checking the read** (askRouterCheck, the rules' validation). An animal
+must be a species name in ask_meta (case aside, a plural or a fish name
+without its "fish" allowed), a group must be in ASK_GROUPS, or they are
+dropped. An animal name that is not in the list is an animal the site has
+nothing on, so it moves to the unknown field; a listed name in the unknown
+field becomes the animal. A kind outside the enum or a switched that is not
+true or false means the output is not what the schema promised, and the
+whole read is dropped. The search phrase and the unknown animal are
+lowercased and cut to letters, digits and spaces (8 words and 80
+characters; 3 words and 40), the search phrase goes through the same
+`term()` quoting as the reader's words before any MATCH, and neither is
+ever placed in the answer prompt: the answer call's question is the
+reader's own. The unknown word is the one router string that can reach a
+reader, in the "we don't have a care guide for X" line, and only when the
+reader's own question does not hold the word (then theirs is used).
 
-**Using the read** (askRetrieve):
-- An animal or group the rules did not find in the question (a misspelling
-  or nickname the alias list lacks) becomes the question's own,
-  unless it is the remembered one, which is the carry.
-- The remembered animal (or group) carries only when nothing is named and
-  the router says the reader did not move on (`switched` false) and the
-  kind is not catalog, small talk, thanks, frustration or confused. Any
-  animal or group word, from the rules or the router, ends the carry.
+**Using the read** (askRetrieve, the `routed` block):
+- The animal is the router's, or the group; an animal with no guide whose
+  name is a group word ("Parrot") is that group, as on the rules path. The
+  rules do not read the question for either.
+- The carry: the remembered animal (or group) is the question's when
+  nothing is named and the router says the reader did not move on
+  (`switched` false) and the kind is not catalog, small talk, thanks,
+  frustration or confused. `switched` true ends it. The remembered animal
+  is `context.species` checked against the list (askRemembered), the same
+  name the router was told; the previous question's words are not read for
+  an animal on this path (the rules fallback still reads them).
 - The search phrase joins the reader's own words (see 6 above).
 - Kinds map onto the replies that exist: small_talk, thanks, frustration
-  and confused get the fixed replies, only with no animal or group named
-  ("this is useless, my hamster still won't eat" gets the search); catalog becomes the
-  catalog reply (group listing, the animal reply, or the general one), never
-  with a care word; legal goes to the law reply; gift, new_pet (with an
-  animal or group named) and statement (an animal named, no question mark)
-  take those paths; fact asks for a fact. care_question and other take the
-  search.
+  and confused get the fixed replies; an unknown animal with no animal or
+  group carried gets askUnknownReply (below); new_pet gets the new pet
+  reply, or "which animal did you get?" with none named; statement with an
+  animal gets the statement reply; gift gets the gift reply, or the
+  "is the gecko the gift?" question when askDirectionAsk finds an occasion
+  and an animal with nothing else; catalog gets the group listing, one
+  animal's pages (its hub when it has a guide), the fact count, the guide
+  count or the whole catalog; legal goes to the law reply; fact asks for a
+  fact. care_question and other take the search. A name only the router
+  could read ("my beardie": kind other, no search phrase) is a bare name,
+  so it gets the hub like "the chicken" does.
+
+**An animal the site has nothing on** (askUnknownReply, owner, 2026-11-04):
+"what do ferrets eat" when there were no ferret pages, "do you have
+anything on foxes", "i got a kinkajou today, what do i do". The word is
+matched against the animal names and the law matrix first, by its last
+word (askAnimalsByWord: "foxes" finds Red Fox, Fennec Fox and the Arctic
+fox law page), and the reply is the catalog's one-animal reply: the hub
+when a guide turns up, else "We don't have a care guide for foxes, but we
+do have fox facts and the fox law pages, state by state" with up to two
+fact pages and three law pages. With no name at all, one FTS read over the
+fact and legal chunks for the pages that mention the word, up to three
+("We don't have a care guide for moose, but moose comes up on these
+pages"), or "We don't have a care guide or anything else on X yet". The
+reply's `result` is `catalog`; the log row is `no_match` unless the kind
+was catalog, so a care question about an animal we lack stays on the gap
+list. No model call.
 
 **When it fails.** A timeout, a non-200, `stop_reason` refusal or
 max_tokens, JSON that does not parse or a read that does not check out: the
@@ -725,31 +785,47 @@ the router cannot turn a question into a 500. It is not counted toward the
 daily answer cap (askCountAnswer runs only before the answer call) and
 writes nothing to KV.
 
-**Logging.** ask_log rows and the ntfy pushes are unchanged (no_match rows
-and pushes are how the owner sees content gaps). The push body gets one more
-line at the end: "Read as: Rabbit, care question, search: droppings shape"
-(", new topic" when it read a switch), or "Read as: rules only (timeout)"
-with the reason the rules ran alone. No line when the router was not asked.
-No ask_log column was added: the read is a debugging aid, and the push is
-where the owner looks; if it ever needs counting, a `router` text column
-(`alter table public.ask_log add column router text;`) would hold the same
-line, but it has not been applied.
+**Logging.** Every ask_log row carries the read in the `router` jsonb
+column (owner, 2026-11-04): `{"animal": "Rabbit", "group": null, "unknown":
+null, "switched": false, "kind": "care_question", "search": "droppings
+shape"}`, or `{"failed": "timeout"}` with the reason the rules ran alone, or
+null when the router was not asked. The other columns and the results are
+as they were (no_match rows and pushes are how the owner sees content
+gaps). Until the column exists, Supabase refuses an insert that names it,
+so askLog sends a refused insert once more without it: no row waits on the
+migration. The push body gets one more line at the end: "Read as: Rabbit,
+care question, search: droppings shape" (", new topic" when it read a
+switch, "wallaby (not on the site)" for an unknown animal), or "Read as:
+rules only (timeout)". No line when the router was not asked.
 
 **Test site.** `{"model":"sonnet"}` (sharetest only) runs the router on
-Sonnet too (`claude-sonnet-5-5`, thinking `between_tools`, the same schema),
-so a comparison compares the whole path. Replies there carry `read`.
+Sonnet too (`claude-sonnet-5-5`, thinking `between_tools`, effort low, the
+same schema), so a comparison compares the whole path. Replies there carry
+`read` (the same object as the `router` column), and the chat shows it as
+a small "Read as:" line under each reply (AskReply's ReadLine; the history
+keeps it, see `keepable` in src/lib/askBeastly.js). The live host never
+sends `read`, so the line never shows there.
 
 **Tests.** The router is injectable: `env.ASK_ROUTER_STUB`, a function
 (`{ question, context, system, user }` in, the JSON object out, or a throw
 for a failure). Cloudflare env values are strings, never functions, so
 production cannot take that path. Scratchpad scripts: router-stub-test.mjs
-replays the owner's conversation with the reads a correct router would give
-and with the router failing; router-fetch-test.mjs runs the real request
-against a mocked API (shape, timeout, 529, refusal, cut off, bad JSON, a
-thrown fetch, KV writes); router-push-test.mjs checks the push line and that
-legal, clarify and small talk never call it; router-live.mjs runs the
-owner's conversation, the platy reader and the long gecko conversation on
-the test site.
+replays the owner's conversation, the foxes question, the router-only
+small talk and the unknown animals and nicknames with the reads a correct
+router would give (`router`), with the router failing (`failing`, rules
+alone), with garbage that fails the check (`garbage`, rules alone) and
+with junk names that pass it (`oddbits`: nothing leaks); since the read
+owns the fields, the `neutral` stub in harness2.mjs (no animal, switched
+false) no longer leaves the rules' answers alone, by design, so platy2.mjs
+and cat1.mjs are run without it. router-fetch-test.mjs runs the real
+request against a mocked API (shape with effort low and the six-field
+schema, timeout, 529, refusal, cut off, bad JSON, a thrown fetch, KV
+writes, an unknown animal with junk in the strings); router-push-test.mjs
+checks the push line, the `router` column on the ask_log row (and the
+retry without it), the no_match row for an unknown animal, and that legal,
+clarify and small talk never call it; router-live.mjs runs the owner's
+conversation, the foxes question, the unknown animals and nicknames, the
+platy reader and the long gecko conversation on the test site.
 
 ## The model call
 
@@ -845,7 +921,11 @@ are logged as `answered` with the page as `answer_slug`; small talk, thanks
 and the frustration apology are not logged. No IP. `answer_slug` is the page the model named (READ) on an
 answered row; `matched_slugs` is in search order, so the pair shows how
 often the model picked something other than the top hit (added 2026-11-02
-on Grok's review). RLS on
+on Grok's review). `router` (jsonb, 2026-11-04) is the router's read of the
+question, see The router; apply
+`alter table public.ask_log add column if not exists router jsonb;` live
+(supabase/ask_log.sql carries it), and until then the worker retries each
+insert without it. RLS on
 with no policies; only the worker's service role writes. Once a week, pull
 every `no_match` row into READER_GAPS.md: real questions the guides do not
 answer yet.
@@ -873,7 +953,7 @@ switch to `gaps` once it passes about 10 a day. `capped` never pushes. An
 answered push carries the answer and the title of the page the model took it
 from (owner, 2026-11-02); other results show the closest page. Since
 2026-11-04 a push for a question the router read ends with one "Read as:"
-line (see The router); ask_log rows are unchanged.
+line, and the ask_log row carries the read (see The router).
 
 ## Setup
 
@@ -901,9 +981,11 @@ the backstop. Legal answers and the free small talk cost nothing.
 
 The router (2026-11-04), measured on the built prompt: the system prompt is
 7,205 characters (the rules 2,587, the vocabulary 4,618: 15 groups, 106
-animals with a care page and 190 without), a typical user message about 125, so about 1,830 tokens in at
-4 characters a token, and about 30 tokens out (the JSON is about 110
-characters). The schema adds some tokens the API counts on its side, not
+animals with a care page and 190 without; the unknown_animal rule added
+about 220 characters on 2026-11-04), a typical user message about 125, so about 1,880 tokens in at
+4 characters a token, and about 35 tokens out (the JSON is about 130
+characters with the unknown field). Effort low with thinking disabled
+changes none of that: no thinking tokens either way. The schema adds some tokens the API counts on its side, not
 measured here. At Haiku 5.5 rates ($0.10 / $0.50 per million): about
 $0.00020 a question uncached, $0.00024 when it writes the cache (1.25x on
 the system prompt, the first question in 5 minutes), and $0.00004 when it
@@ -954,13 +1036,21 @@ shows them on real questions.
 - **Router, not yet checked against the live API** (2026-11-04: built and
   tested with stubbed reads and a mocked API; this session had no key).
   Run router-live.mjs on the test site and check: (1) the request is
-  accepted as sent (structured output with thinking disabled on Haiku 5.5,
-  the `anyOf` null fields, the group enum); (2) the reads match the stub
+  accepted as sent (structured output with thinking disabled and
+  `output_config.effort` low on Haiku 5.5, the `anyOf` null fields, the
+  group enum, the unknown_animal string); (2) the reads match the stub
   reads in router-stub-test.mjs, especially `switched` on short follow-ups
-  ("eating?", "their color?") and the search phrases; (3) latency (the
+  ("eating?", "their color?"), the search phrases, and unknown_animal on
+  "what do wallabies eat", "i got a kinkajou today", "tell me about
+  moose" (and empty for the ferret, which has a guide); (3) latency (the
   timeout is 2.5 seconds; if Haiku often takes longer, raise it or trim the
   vocabulary); (4) `cache_read_input_tokens` on the second question within
-  5 minutes; (5) the Sonnet switch.
+  5 minutes; (5) the Sonnet switch; (6) the "Read as:" line under each
+  reply in the test site's chat.
+- **The `router` column** (2026-11-04): apply
+  `alter table public.ask_log add column if not exists router jsonb;` on
+  the live database before or after the deploy; until it is there every
+  insert is sent twice (once refused, once without the read).
 - **After "which animal?" the router is skipped**, so a reply that asks
   something new there gets the rules only.
 
