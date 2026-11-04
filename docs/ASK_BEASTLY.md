@@ -40,7 +40,11 @@ This file is the spec as built. Where the build differs, it says why.
   chat is an answer card, not a chat log. A conversation is the first question
   plus any number of follow-ups ("what about babies?"): the cap of 3 answers
   per conversation was removed on 2026-11-04 (owner); the hourly limit of 12
-  questions per visitor stays. The conversation's animal carries until the
+  questions per visitor stays. Hitting it (or the daily cap) ends the chat:
+  the capped reply joins the conversation and closes it ("That's all the
+  questions for now, so this chat ends here. Come back in a little while to
+  start a new one, or search the site."), so the next question starts a new
+  chat. The conversation's animal carries until the
   reader names a different one.
   A follow-up sends only the previous question as context, so the search
   keeps the animal and topic and Haiku sees "Earlier question: ..."; the

@@ -318,7 +318,7 @@ export default function AskReply({ question, reply, compact = false, hasResults 
   return (
     <p className={muted} aria-live="polite">
       {reply.result === 'capped'
-        ? "That's all the questions for now. Try again in a little while, or "
+        ? "That's all the questions for now, so this chat ends here. Come back in a little while to start a new one, or "
         : "I couldn't look that up right now. Try again in a moment, or "}
       <Link to={searchLink(question, reply)} onClick={onNavigate} className="font-semibold text-secondary hover:underline">search the site</Link>.
     </p>

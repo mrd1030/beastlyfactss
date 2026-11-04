@@ -169,6 +169,16 @@ export async function askQuestion(question, captcha = '', conversationId = null)
   const items = readHistory();
   const target = items.find((c) => c.id === conversationId);
   let conversation;
+  // The hourly limit ends the chat (owner, 2026-11-04): the capped reply
+  // joins the conversation it interrupted and closes it, so the next
+  // question, once the hour allows, starts a new chat.
+  if (turn.reply.result === 'capped') {
+    conversation = target && !target.closed
+      ? { ...target, at: now, closed: true, turns: [...target.turns, turn] }
+      : { id: `${now}`, at: now, closed: true, turns: [turn] };
+    writeHistory([...items.filter((c) => c.id !== conversation.id), conversation]);
+    return conversation;
+  }
   if (prev && reply.followUp && !legal && target && canFollowUp(target)) {
     conversation = { ...target, at: now, turns: [...target.turns, turn] };
     writeHistory([...items.filter((c) => c.id !== target.id), conversation]);
