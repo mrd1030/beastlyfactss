@@ -256,24 +256,3 @@ spray. No people, no boardwalk, no hands, no text, no watermark. Landscape 3:2.
 **Check:** the spray is visible and comes from the nostrils, salt crust is on
 the snout, and the animal is black with a blunt snout rather than a green
 iguana.
-
-## When a fish dies guide hero, 2026-11-04
-
-One guide hero, 3:2 at 1168x784, for `content/guides/fish-death-what-to-do-guide.mdx`.
-It follows "How these handle illness": the page is about a dead fish, so the
-frame shows the thing standing next to it, the calm tank and the tools the
-article sends the reader to first. No dead, sick or floating fish anywhere.
-
-**`/assets/images/fish-death-what-to-do-guide.jpg`**
-
-A calm, healthy planted freshwater aquarium seen from slightly above the front
-rim, a few small fish swimming upright mid-water among green stem plants and
-a rounded stone. On the tank's rim in the near foreground rests a small clear
-water test vial holding pale yellow-green water, and beside it a small green
-aquarium net laid flat, dry and empty. Clear water, soft daylight from a window
-to the left, quiet muted greens and warm wood of the stand. Shot at 50mm,
-f/2.8, the vial and net sharp and the tank interior softly focused behind. No
-dead or floating fish, no fish on its side, no fish in the net, no hands, no
-people, no labels or lettering on the vial, no text, no watermark. 3:2.
-**Check:** every fish visible is upright and swimming, the net is empty, and
-the vial carries no invented lettering.
