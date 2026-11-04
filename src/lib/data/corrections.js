@@ -28,6 +28,33 @@
 
 export const CORRECTIONS = [
   {
+    date: '2026-11-03',
+    page: '/blog/bearded-dragon-brumation-guide/',
+    title: 'Bearded Dragon Brumation',
+    was: 'Call a vet past about three and a half months, "not a hard four months", at more than 10 percent weight loss, or when appetite had not returned within 2 to 3 weeks of waking.',
+    now: 'Longer than 4 months, 10 percent or more of starting body weight lost, or no return of appetite once the dragon is up and moving around consistently. Two to three weeks stays as the expectation for appetite coming back, not the vet trigger. The feeding guide says the same.',
+    why: 'Whyte Ridge Veterinary Hospital, Bearded Dragon Care Info.',
+    reportedBy: 'an AI-assisted audit',
+  },
+  {
+    date: '2026-11-03',
+    page: '/blog/bearded-dragon-feeding-guide/',
+    title: 'Bearded Dragon Feeding',
+    was: 'Set two refusal figures side by side, 1 to 2 days from one hospital and a 1 to 2 week fast from another source, and left the reader between them. Brumation vet check past roughly 3.5 months or more than about 10 percent weight loss. Mealworms and superworms for adults only, never for juveniles.',
+    now: 'A 1 to 2 day refusal is normal for an adult; refusing food for 1 to 2 weeks outside brumation, a shed or a gravid cycle is the point to call a vet, the same line as the health issues guide and the hub\'s emergency card. Brumation: longer than 4 months, 10 percent or more lost, or no appetite once moving around consistently. Mealworms and superworms are an occasional food from about a month old, never daily.',
+    why: 'Texas Avian & Exotic Hospital (more than a week) and South Pasadena Animal Hospital (two or more weeks) for the refusal threshold; Whyte Ridge Veterinary Hospital for brumation; NC State Veterinary Hospital for the worms by age.',
+    reportedBy: 'an AI-assisted audit',
+  },
+  {
+    date: '2026-11-03',
+    page: '/blog/bearded-dragon-safe-foods-guide/',
+    title: 'Bearded Dragon Safe Foods',
+    was: 'Fruit at about 5 to 10 percent of the plant portion. Mealworms and superworms for adults only, never for juveniles.',
+    now: 'Fruit at 5 percent of the diet or less, never past 10 percent. Mealworms and superworms are an occasional food from about a month old, never daily. The feeding guide says the same.',
+    why: 'NC State Veterinary Hospital and LafeberVet (fruit at most 5 percent of the diet; super/mealworms from 1 to 4 months on); VCA Animal Hospitals (fruit 10 to 20 percent of the plants).',
+    reportedBy: 'an AI-assisted audit',
+  },
+  {
     date: '2026-11-01',
     page: '/blog/angelfish-tank-setup-guide/',
     title: 'Angelfish Tank Setup',

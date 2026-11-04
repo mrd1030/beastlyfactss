@@ -39,7 +39,8 @@ Pages opened on 2026-11-03 and what each states:
   dragon becomes lethargic or "stops eating for more than 1-2 days (adults only)".
   That last line is the origin of the guide's old "more than a day or two"
   threshold, which the owner overruled on 2026-11-03 (a 1 to 2 day refusal is
-  normal); the guide now follows the Texas Avian threshold below.
+  normal); the guide now calls a vet at 1 to 2 weeks, the health guide's and the
+  emergency card's line (third pass below).
 - LafeberVet, "Care of the Australian Bearded Dragon" client education handout
   (lafeber.com/vet/wp-content/uploads/Bearded-Dragons.pdf, PDF author Christal
   Pollock, 2012). Same tiers as NC State: "<1 month old: Feed 2-3 times daily", "1-4
@@ -67,6 +68,9 @@ Pages opened on 2026-11-03 and what each states:
   bearded dragon not eating is cause for alarm" and, for a vet visit, when it
   "persists for more than a week (or sooner for younger dragons)". Brumation is
   listed as a normal reason for appetite change, no figures. Added to Sources.
+  Its "more than a week" is the low end of the guide's 1 to 2 week threshold,
+  and the guide still uses its "not every case is cause for alarm" point, so it
+  stays in Sources (third pass below).
 - Avian & Exotic Animal Hospital of Louisiana (gregrichdvm.com), "Why is My
   Bearded Dragon Not Eating?": "Bearded dragons need to eat daily for the first
   10-12 months of life", "After 10 months of age, many bearded dragons convert from
@@ -75,9 +79,8 @@ Pages opened on 2026-11-03 and what each states:
   in Sources (cap); supports the day-or-two-is-normal line.
 - South Pasadena Animal Hospital, "Signs Your Bearded Dragon Needs to See a Vet":
   "give it a few days to a week before panicking", vet visit at "two or more weeks
-  without eating when it's not brumation season". Not in Sources (cap). The guide
-  uses the one-week end of the week-to-two-weeks spread, since the two-week end is
-  the physical reserve, not a waiting period.
+  without eating when it's not brumation season". Not in Sources (cap). Its two
+  weeks is the high end of the guide's 1 to 2 week threshold.
 - Checked and found nothing usable: VCA "Brumation in Bearded Dragons" (no
   figures), Merck "Providing a Home for a Reptile", "Management of Reptiles",
   "Disorders and Diseases of Reptiles" (no fasting or brumation figures), Chicago
@@ -93,15 +96,51 @@ Guide changes on this pass: fruit line (see VCA above); brumation duration adds
 3.5 months or more than about 10%" to "longer than 4 months, 10% or more, or
 appetite not returning once it's moving around consistently" to match Whyte
 Ridge; the refusal threshold moves from "more than a day or two" to "a day or two
-is normal, past about a week call a vet" in When to Worry and the FAQ. Note for
-the owner: `bearded-dragon-brumation-guide.mdx` still says three and a half
-months, "not a hard four months"; it was not touched on this pass.
+is normal, past about a week call a vet" in When to Worry and the FAQ (moved
+again on the third pass below).
+
+## 2026-11-03: third pass, the feeding guide matches the health guide, and the safe foods and brumation guides follow
+
+Owner decision (2026-11-03): the feeding guide matches the health guide and the
+emergency card, not the other way around. `bearded-dragon-health-issues-guide.mdx`
+and the hub's emergency card (`src/lib/data/guides/lizards.js`) call an adult
+refusing food for 1 to 2 weeks outside brumation a call-now sign.
+
+- Feeding guide, When to Worry and the FAQ "How long can a bearded dragon go
+  without eating?": a 1 to 2 day refusal is normal (owner rule); an adult
+  refusing food for 1 to 2 weeks outside brumation, a shed or a gravid cycle is
+  the point to call a vet. The sentence "A healthy adult can physically go 1 to
+  2 weeks without food, but that is its reserve, not a waiting period" is gone,
+  since the reserve and the threshold were now the same span. Babies and
+  juveniles stay at 2 to 3 days. Texas Avian ("more than a week") and South
+  Pasadena ("two or more weeks") both sit inside a 1 to 2 week threshold. Texas
+  Avian stays in Sources: the guide still uses its "not every case ... is cause
+  for alarm" point and its one-week figure is the low end of the threshold.
+- Safe foods guide: the mealworm and superworm rows follow NC State the way the
+  feeding guide did on the second pass (occasional from about a month old, never
+  daily, in place of "adults only, never for juveniles"); "fatty" dropped from
+  the mealworm row (owner, 2026-11-03), superworms keep "high in fat". The fruit
+  line and its FAQ move from "about 5 to 10 percent of the plant portion" to
+  "5 percent of the diet or less, never past 10 percent", matching the feeding
+  guide (VCA, NC State, LafeberVet above).
+- Brumation guide: the vet thresholds move from "past about three and a half
+  months, not a hard four months", "more than 10 percent" and "appetite not back
+  within 2 to 3 weeks of waking" to Whyte Ridge's "longer than 4 months", "10
+  percent or more of starting weight" and "no return of appetite once the
+  dragon is up and moving around consistently", in the FAQ, How Long Brumation
+  Lasts, the vet list and the worked example. "Most often about 2" months added
+  there too. The 2 to 3 week figure stays as the expectation for appetite coming
+  back (FAQ and Waking Up), the way the feeding guide keeps it (owner, option A,
+  2026-11-03). Whyte Ridge added to its Sources; VCA, NC State and Merck stay.
+- The bearded dragon care package (edition 4.1) still carries the old worm rows,
+  fruit line and brumation thresholds; listed in FIX_PACKAGES.md for the next
+  rebuild.
 
 ## Kept without a source (owner review)
 
-- "A healthy adult can physically go 1 to 2 weeks without food" (FAQ and When to
-  Worry): no vet page states a fasting reserve. South Pasadena Animal Hospital's
-  "two or more weeks" vet threshold is the closest. Kept as written.
+- Fruit "once or twice a week at most" (safe foods guide, Fruit and the
+  Never-Feed List): VCA, NC State and LafeberVet cap fruit by share of the diet,
+  none gives a frequency. Kept as written (owner, 2026-11-03).
 - Babies and juveniles "2 to 3 days at most" without food: Texas Avian says only
   "sooner for younger dragons" and the Louisiana hospital says they "need to eat
   daily". No vet page gives 2 to 3 days. Kept as written.
@@ -110,9 +149,11 @@ months, "not a hard four months"; it was not touched on this pass.
 - Brumation "commonly lasting 1 to 3 months": Whyte Ridge says "usually around 2
   months", which sits inside the range but does not state it. Kept, with "most
   often about 2" added.
-- "After brumation ends, appetite should return within 2 to 3 weeks": Whyte Ridge
-  says only "no return of appetite when they start moving around consistently",
-  no time frame. Kept as written.
+- "After brumation ends, appetite should return within 2 to 3 weeks" (feeding
+  guide, and the brumation guide's FAQ and Waking Up section): Whyte Ridge says
+  only "no return of appetite when they start moving around consistently", no
+  time frame. Kept as the expectation; the vet trigger uses Whyte Ridge's wording
+  (owner, 2026-11-03).
 - Hatchlings "3 to 5 feedings a day" (removed on the first pass): NC State,
   LafeberVet, Chicago Exotics and PetMD all give 2 to 3 for hatchlings, so the
   guide's 2 to 3 is now sourced. [owner call stands: leave the 3 to 5 out, or
@@ -125,11 +166,13 @@ months, "not a hard four months"; it was not touched on this pass.
   "occasional super/mealworm" from 1 to 4 months and super/mealworms in the
   4 months to adulthood diet. Owner (2026-11-03): follow NC State, and note
   superworms are high in fat. The feeding guide now says occasional from about
-  a month old, never daily.
+  a month old, never daily, and the safe foods guide's rows match it (third
+  pass).
 
 - NC State says an adult that "stops eating for more than 1-2 days" should see an
   exotic vet; the owner's rule (2026-11-03) is that a 1 to 2 day refusal is
-  normal, and the guide now uses Texas Avian's "more than a week". NC State stays
-  in Sources for the feeding tiers and the fruit cap.
+  normal, and the guide now calls a vet at 1 to 2 weeks, matching the health
+  guide and the emergency card. NC State stays in Sources for the feeding tiers
+  and the fruit cap.
 - Whyte Ridge says "Fruits should be avoided" outright; the guide keeps fruit as
   a minor treat at 5% or less, which is what VCA, NC State and LafeberVet allow.
