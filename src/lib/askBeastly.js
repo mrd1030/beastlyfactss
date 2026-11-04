@@ -1,8 +1,10 @@
 // Ask Beastly, the browser half (docs/ASK_BEASTLY.md): asking POST /api/ask
 // and keeping the reader's recent conversations in this browser.
 //
-// A conversation is up to MAX_TURNS answers on one topic: the first question
-// plus follow-ups ("what about babies?"). A follow-up sends the previous
+// A conversation is the first question plus any number of follow-ups ("what
+// about babies?"): no cap per conversation since 2026-11-04 (owner), only the
+// worker's hourly limit per visitor. Its animal carries until the reader
+// names a different one. A follow-up sends the previous
 // question as context so the search keeps the animal and topic; the previous
 // answer is never sent. The worker says whether it treated the question as a
 // follow-up (followUp); when it did not (a different animal, or no context),
@@ -19,7 +21,6 @@ const KEY = 'beastly-ask-history';
 const EVENT = 'beastly-ask-history-change';
 const MAX_CONVERSATIONS = 30;
 const KEEP_DAYS = 7;
-export const MAX_TURNS = 3;
 
 export const ASK_HISTORY_EVENT = EVENT;
 
@@ -76,13 +77,7 @@ export function deleteConversation(id) {
   writeHistory(readHistory().filter((c) => c.id !== id));
 }
 
-// Only answers that gave the reader something count toward the cap: a
-// question the guides do not cover (or one that failed) does not use one up.
-// A statement ("I have a platy fish") asked nothing, so its reply does not
-// count either, though it stays in the conversation and carries its animal.
-const COUNTED = new Set(['answered', 'navigate', 'legal', 'refused', 'catalog', 'fact', 'gift', 'new_pet']);
-export const answersUsed = (c) => (c ? c.turns.filter((t) => COUNTED.has(t.reply?.result)).length : 0);
-export const canFollowUp = (c) => Boolean(c) && !c.closed && answersUsed(c) < MAX_TURNS;
+export const canFollowUp = (c) => Boolean(c) && !c.closed;
 
 // Only what the reader needs to see again goes in: the source chunks the test
 // site returns are dropped.

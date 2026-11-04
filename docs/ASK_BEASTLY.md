@@ -37,8 +37,11 @@ This file is the spec as built. Where the build differs, it says why.
   second line adds "Beastly is new and still learning, so if an answer
   misses, ask it another way."; the footer under the input stays as it was.
 - **Conversations and history** (owner, 2026-11-02, on a Fable layout). The
-  chat is an answer card, not a chat log. A conversation is up to 3 answers
-  on one topic: the first question plus follow-ups ("what about babies?").
+  chat is an answer card, not a chat log. A conversation is the first question
+  plus any number of follow-ups ("what about babies?"): the cap of 3 answers
+  per conversation was removed on 2026-11-04 (owner); the hourly limit of 12
+  questions per visitor stays. The conversation's animal carries until the
+  reader names a different one.
   A follow-up sends only the previous question as context, so the search
   keeps the animal and topic and Haiku sees "Earlier question: ..."; the
   previous answer is never sent. A question naming a different animal, a
@@ -208,8 +211,7 @@ In `public/_worker.js`, listed in `public/_routes.json`. In order:
    format. No model call, one row read: the pick comes from
    `ask_meta.facts` (url, species and title per fact), the text by key.
    "How many facts do you have" stays a catalog count. The site keeps no
-   popularity count, so "most popular" gets a random one too. Counts
-   toward the 3 answers.
+   popularity count, so "most popular" gets a random one too.
    A bare animal name ("the chicken", "chickens", "a hamster" that is not
    the answer to "which animal?") gets its hub as a link (result
    `navigate`), or with no hub a fact of it in the fact format. Never the

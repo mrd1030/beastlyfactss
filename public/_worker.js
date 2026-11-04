@@ -2856,7 +2856,7 @@ async function handleAskInner(request, env, ctx, state) {
   // A thank-you gets a thank-you back (owner, 2026-11-02). Before this it was
   // all filler words: on its own it came back "not in our guides", and after
   // an answer it re-asked the previous question. No search, no model call,
-  // not logged, not counted toward the hourly limit or the 3 answers.
+  // not logged, not counted toward the hourly limit.
   // Small talk gets a reply in kind, same terms as a thank-you (owner,
   // 2026-11-03): "hello" alone used to come back "not in our guides", and
   // "testing" asked which animal.
@@ -3001,8 +3001,7 @@ async function handleAskInner(request, env, ctx, state) {
   }
 
   // What the site covers: the count, a group's listing or the whole
-  // catalog, from the build's counts. Counts toward the 3 answers like a
-  // hub link, since the reader got something.
+  // catalog, from the build's counts.
   if (found.catalog) {
     const reply = askCatalogReply(found.catalog, found.meta);
     log('catalog', reply.slugs, {}, { answer: reply.answer, page: reply.links[0]?.title || null });
@@ -3019,9 +3018,8 @@ async function handleAskInner(request, env, ctx, state) {
   // A statement naming an animal and asking nothing (owner, 2026-11-04): a
   // warm line and the animal's hub, or with no hub its encyclopedia or
   // Beastlypedia entry (one FTS read on the species), or a fact page. No
-  // model call. Logged as answered with the page; not counted toward the 3
-  // (nothing was asked), and it stays in the conversation so the animal
-  // carries to the next question.
+  // model call. Logged as answered with the page, and it stays in the
+  // conversation so the animal carries to the next question.
   if (found.statement) {
     const reply = await askStatementReply(env.ASK_DB, found.species, found.meta);
     log('answered', reply.slugs, { answer_slug: reply.links[0]?.url || null }, { answer: reply.answer, page: reply.links[0]?.title || null });

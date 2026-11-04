@@ -5,7 +5,7 @@ import {
 import TurnstileWidget, { isTurnstileEnabled } from '@/components/shared/TurnstileWidget';
 import AskReply, { BetaTag } from '@/components/ask/AskReply';
 import {
-  ASK_HISTORY_EVENT, MAX_TURNS, answersUsed, askQuestion, hasAskPass, canFollowUp, clearHistory, deleteConversation, easternDate, readHistory,
+  ASK_HISTORY_EVENT, askQuestion, hasAskPass, canFollowUp, clearHistory, deleteConversation, easternDate, readHistory,
 } from '@/lib/askBeastly';
 import { formatDay } from '@/lib/utils/verifiedDates';
 import { useIsMobileViewport } from '@/lib/hooks/useIsMobileViewport';
@@ -23,8 +23,8 @@ import { trackEvent } from '@/lib/analytics';
 //
 // Inside, an answer card rather than a chat log (owner, 2026-11-02, on a
 // Fable layout):
-//   ask        the current conversation: up to three answers on one topic,
-//              the first question plus follow-ups. With none, an intro, the
+//   ask        the current conversation: the first question plus any
+//              number of follow-ups (no cap since 2026-11-04). With none, an intro, the
 //              example questions and the most recent conversations.
 //   history    the last 7 days of conversations, by day, each deletable
 //   past       one conversation from history, read only, with a way back
@@ -457,9 +457,7 @@ export default function AskBeastlyChat() {
                   <p className="text-xs font-body text-muted-foreground">
                     {current.closed
                       ? 'Ask your next question below.'
-                      : answersUsed(current) >= MAX_TURNS
-                        ? `That's ${MAX_TURNS} on this topic. Start a new question.`
-                        : `You can ask ${MAX_TURNS - answersUsed(current)} more about this.`}
+                      : 'Ask a follow-up, or start a new question.'}
                   </p>
                   <button type="button" onClick={newQuestion} className="inline-flex items-center gap-1 text-xs font-body font-semibold text-secondary hover:underline">
                     <Plus className="w-3.5 h-3.5" /> New question
