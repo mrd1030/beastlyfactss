@@ -329,7 +329,7 @@ Claims written or left in place in this pass that no cited source states directl
 Feeding guides:
 - Neon: "a school that gets them a few times a week shows it in color" (pre-existing, line 89; Seriously Fish says only that a varied menu is best). FAQ "Color-enhancing and plant-based foods help maintain coloration and immune function on their own" (pre-existing, not edited). New FAQ "nothing in the diet alters it" about the stripe: inference from the stripe being structural (F6, F1).
 - Zebra danio: "covers nutrition and coloration on its own" (pre-existing, kept); new "The tank does more for that color than the menu": inference from F1 plus Seriously Fish.
-- Betta: new FAQ "the color claim on the label is the part with the least support for this fish": inference from F27 (and F28, not cited in the guide).
+- Betta: the FAQ line "the color claim on the label is the part with the least support for this fish" was replaced on 2026-11-04 (proposal (b) below, applied); resolved.
 - Black skirt: new FAQ "A black skirt has almost no red or orange to deepen, so an ordinary varied diet serves it just as well": inference from F30 and the fish's appearance.
 - Discus: "for a red or orange discus a pellet listing astaxanthin earns its place": inference from F15.
 - Ember: "the one ingredient check worth making": a recommendation built on F2.
@@ -467,11 +467,14 @@ Search extracts only (not opened, not citable): an Indonesian thesis and journal
 
 ### Kept without a source (owner review)
 
-Nothing was edited in an article, so nothing was kept as written. Two existing lines this pass bears on, for the owner:
-- betta-fish-feeding-guide.mdx FAQ, "the color claim on the label is the part with the least support for this fish": F33 and F34 now show carotenoids do redden red bettas, so the line overstates the doubt. Proposed replacement below.
-- fish-color-and-diet-guide.mdx, "Bettas have the least evidence behind color food of any fish here": now outdated on the same grounds. Proposed replacement below.
+Both outdated lines ("the least support for this fish" in the feeding guide FAQ, "Bettas have the least evidence behind color food of any fish here" in the color guide) were replaced on 2026-11-04 by proposals (a) and (b) below. Nothing left on this list from the betta pass.
 
-### Proposal (a): betta section of the color guide (not applied)
+### Applied 2026-11-04 (owner yes)
+
+- Proposal (a) applied. The color guide's Sources block now carries 7 entries: an owner-approved exception to the 6 cap (2026-11-04) for Clotfelter 2007 (F33). Seriously Fish entry now also lists Betta splendens. An MDX comment above the block records the exception.
+- Proposal (b) applied. Bettafish.org and Aquarium Co-Op removed from the feeding guide; F33 and F38 added; the block stays at 6.
+
+### Proposal (a): betta section of the color guide (applied 2026-11-04)
 
 Replace the body of "## Bettas" in content/_scheduled-tetras/fish-color-and-diet-guide.mdx with:
 
@@ -479,7 +482,7 @@ Replace the body of "## Bettas" in content/_scheduled-tetras/fish-color-and-diet
 
 Sources: F33 (Clotfelter 2007), F27 (Dorce 2025, already in the block), F1 (Ligon and McCartney, already in the block), F38 (add "Betta splendens" to the existing Seriously Fish entry: same site, count unchanged). Owner decision: the block is at the cap of 6, and F33 (Behavioral Ecology) shares no journal with an existing entry, so it would make 7. If the owner keeps the cap, drop the first two sentences' study result and keep the rest, which stands on entries already in the block; the guide then says only "Red, orange and yellow bettas carry carotenoid color, the kind food can deepen", which is the general rule (F1, F2), not a betta result.
 
-### Proposal (b): betta feeding guide color line (not applied)
+### Proposal (b): betta feeding guide color line (applied 2026-11-04)
 
 Replace the paragraph at line 70 of content/guides/betta-fish-feeding-guide.mdx ("Extra pigment in the food has little evidence behind it for bettas. ...") with:
 

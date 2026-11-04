@@ -21,4 +21,9 @@ None from the substrate pass: the new section is all sourced, and no existing su
 
 ## Kept without a source (owner review): color pass, 2026-11-04
 
-- betta-fish-feeding-guide.mdx: the new FAQ line "the color claim on the label is the part with the least support for this fish" is an inference from one annatto trial (FISH_COLOR F27; F28 is a second, non-carotenoid trial not cited in the guide). Full list in research/FISH_COLOR_RESEARCH.md, "Kept without a source (owner review): color pass, 2026-11-04".
+- Resolved 2026-11-04: the FAQ line "the color claim on the label is the part with the least support for this fish" is gone. The color paragraph and the FAQ now rest on Clotfelter 2007 (red bettas redden on carotenoids, blue ones do not; FISH_COLOR F33), Dorce 2025 (annatto, F27) and Seriously Fish (live and frozen food for color and condition, F38).
+
+## 2026-11-04: feeding guide sources, hobby sites removed
+
+- Removed Bettafish.org ("Food & Feeding") and Aquarium Co-Op ("Betta Fish Care Guide") from betta-fish-feeding-guide.mdx under the no hobby sites rule (owner, 2026-11-01; owner yes, 2026-11-04). Added Clotfelter, Ardia and McGraw 2007 (Behavioral Ecology) and Seriously Fish, Betta splendens. The block stays at 6.
+- No research file recorded which lines those two pages backed, and the claims were not traced one by one on this pass. Any line in the guide that rested only on them is now unsourced; trace them on the next betta pass and list any that lose their only source here.

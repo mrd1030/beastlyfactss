@@ -18,7 +18,7 @@ Source counts include the new color source. Links are in-body internal links
   showed within about four weeks."
 - **Old hobby sources still in the Sources blocks.** Not added by this pass,
   but they break the no hobby sites rule (owner, 2026-11-01): Aquarium Co-Op
-  on angelfish, betta, bristlenose, corydoras, discus, ember, oscar and zebra
+  on angelfish, bristlenose, corydoras, discus, ember, oscar and zebra
   danio feeding; Fishkeeping World and Aqua-Fish.net on angelfish. Handle
   under the fish guides regrade (research/FISH_GUIDES_REGRADE_2026-11-01.md),
   keeping any that the 3 source floor needs.
@@ -31,15 +31,6 @@ Source counts include the new color source. Links are in-body internal links
 - Body: "judged more intensely colored by three experienced ornamental fish
   judges" describes the study's method; the reader needs only "fish on the
   astaxanthin alga looked more intensely colored, and growth did not change".
-
-### Betta (sources 6, at the cap)
-- The new line rests on one annatto study whose subject is cold stress
-  (Dorce 2025). "Extra pigment in the food has little evidence behind it for
-  bettas" and the FAQ's "the color claim on the label is the part with the
-  least support for this fish" generalize from one plant pigment (bixin) to
-  all color foods. Soften to what the study shows, or drop the claim to the
-  owner review list.
-- The guide is now at the 6 source cap.
 
 ### Black skirt tetra (sources 5, links 3)
 - No source added. Check that "strongest in juveniles and fades as the fish
@@ -119,7 +110,8 @@ Source counts include the new color source. Links are in-body internal links
 ## The fish color guide (scheduled)
 
 content/_scheduled-tetras/fish-color-and-diet-guide.mdx: 2,678 words,
-sources 6 (at the cap), internal links 1 (spotting a sick fish), as asked.
+sources 7 (owner-approved exception to the 6 cap, 2026-11-04, for the betta
+carotenoid study), internal links 3.
 
 - **Species trials cut by the 6 source cap.** The angelfish, discus,
   goldfish, guppy and stress sections state only the general rule, though
@@ -162,4 +154,3 @@ What is left are gaps, each needing research:
   whether to quarantine).
 - Color: color-enhancing aquarium lights (the fish, or only how it looks).
 - Color: GloFish, which readers confuse with dyed fish.
-- Color: what helps a betta's color, since food has the least evidence there.
