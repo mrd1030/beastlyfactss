@@ -256,3 +256,28 @@ spray. No people, no boardwalk, no hands, no text, no watermark. Landscape 3:2.
 **Check:** the spray is visible and comes from the nostrils, salt crust is on
 the snout, and the animal is black with a blunt snout rather than a green
 iguana.
+
+## Fish color and diet guide, 2026-11-04
+
+One guide hero, 3:2 at 1168x784, for the scheduled
+`content/_scheduled-tetras/fish-color-and-diet-guide.mdx` (alt text: "A bright
+red-orange platy swimming among green aquarium plants"). Ships with the
+glowlight tetra batch.
+
+**`/assets/images/fish-color-and-diet-guide.jpg`**
+
+A single bright red-orange platy swimming in profile through a planted
+freshwater aquarium, turning slightly toward the camera so the whole flank
+catches the light and the color glows. Short, deep, laterally compressed body,
+small upturned mouth, a modest rounded dorsal fin and a fan-shaped rounded tail
+with no extension. Not a swordtail: the lower edge of the tail is rounded, with
+no long sword. Not a guppy: the tail is short and rounded, not long and
+flowing. Not a molly: no tall sail-like dorsal fin. Lush green stem plants and
+broad leaves behind and below, soft out of focus, a dark substrate, a few tiny
+bubbles, clear water. Soft overhead aquarium light from the upper left, the
+greens kept deep so the red-orange reads as the brightest thing in the frame.
+Shot at 100mm macro, f/4, the fish sharp from snout to tail, background
+falling to a gentle blur. No glass reflections, no equipment, no hoses, no
+hands, no text, no watermark. Landscape 3:2.
+**Check:** the tail is rounded with no sword, the dorsal fin is small, and the
+red-orange is even across the body rather than patchy or dyed looking.
