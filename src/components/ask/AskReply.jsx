@@ -299,7 +299,7 @@ function AskReplyBody({ question, reply, compact = false, hasResults = false, on
     return (
       <div aria-live="polite">
         <p className={`font-body ${text} text-foreground`}>
-          {`Everything we have on the ${reply.species?.name || 'animal'} starts here:`}
+          {`Everything we have on the ${reply.species?.said || reply.species?.name || 'animal'} starts here:`}
         </p>
         <Links links={reply.links} onNavigate={onNavigate} />
       </div>

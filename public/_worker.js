@@ -2546,9 +2546,32 @@ function askGiftReply(species, gift, meta) {
 // species with no guide the guides page. `giving` is the reader giving the
 // animal rather than getting it (after "is the gecko the gift?"). Null with
 // no animal at all, which gets "which animal did you get?".
-function askNewPetReply(species, newPet, meta) {
+// The reader's own word for the animal (owner, 2026-11-04: "use bunny when
+// they say bunny and rabbit when they say rabbit"). Only real nicknames are
+// echoed back, never a misspelling from the search aliases. Each maps to its
+// singular, for "a bunny!" when the reader wrote "bunnies".
+const ASK_NICKNAMES = {
+  rabbit: { bunny: 'bunny', bunnies: 'bunny', bun: 'bun', buns: 'bun', bunbun: 'bunbun' },
+  'bearded dragon': { beardie: 'beardie', beardies: 'beardie' },
+  'guinea pig': { cavy: 'cavy', cavies: 'cavy', piggy: 'piggy', piggies: 'piggy' },
+  'african grey parrot': { 'african grey': 'african grey', 'african greys': 'african grey', grey: 'grey', greys: 'grey' },
+  'leopard gecko': { leo: 'leo', leos: 'leo' },
+  'ball python': { bp: 'ball python' },
+  hedgehog: { hedgie: 'hedgie', hedgies: 'hedgie' },
+};
+function askReaderName(question, species) {
+  const table = species && ASK_NICKNAMES[String(species.name).toLowerCase()];
+  if (!table) return null;
+  const q = ` ${askNormalize(question)} `;
+  for (const word of Object.keys(table).sort((a, b) => b.length - a.length)) {
+    if (q.includes(` ${word} `)) return { said: word, one: table[word] };
+  }
+  return null;
+}
+
+function askNewPetReply(species, newPet, meta, question = '') {
   const name = species?.name || '';
-  const lower = name.toLowerCase();
+  const lower = askReaderName(question, species)?.one || name.toLowerCase();
   const hub = species?.guideId || meta.gift[name]?.hub || null;
   const cap = (s) => s.replace(/^./, (c) => c.toUpperCase());
   if (hub) {
@@ -2589,9 +2612,9 @@ function askNewPetReply(species, newPet, meta) {
 // pages), else its encyclopedia or Beastlypedia entry, found through the FTS
 // index on the species name so the chunks table is not scanned, else a fact
 // page of it, else the line alone.
-async function askStatementReply(db, species, meta) {
+async function askStatementReply(db, species, meta, question = '') {
   const name = species.name;
-  const lower = name.toLowerCase();
+  const lower = askReaderName(question, species)?.one || name.toLowerCase();
   const an = askAn(lower);
   const hub = species.guideId || meta.gift[name]?.hub || null;
   if (hub) {
@@ -3396,7 +3419,7 @@ async function handleAskInner(request, env, ctx, state) {
   }
 
   const species = found.species
-    ? { name: found.species.name, guideId: found.species.guideId || null }
+    ? { name: found.species.name, guideId: found.species.guideId || null, said: askReaderName(question, found.species)?.said || null }
     : null;
   // A group topic (tetras, fish) travels back like the animal, so the next
   // question can carry it (context.group).
@@ -3419,7 +3442,7 @@ async function handleAskInner(request, env, ctx, state) {
   // hub, no model call, logged as answered with the hub. With no animal,
   // "which animal did you get?", which the next message answers.
   if (found.newPet) {
-    const reply = askNewPetReply(found.species, found.newPet, found.meta);
+    const reply = askNewPetReply(found.species, found.newPet, found.meta, question);
     if (!reply) {
       log('clarify');
       return storeJson({
@@ -3522,7 +3545,7 @@ async function handleAskInner(request, env, ctx, state) {
   // model call. Logged as answered with the page, and it stays in the
   // conversation so the animal carries to the next question.
   if (found.statement) {
-    const reply = await askStatementReply(env.ASK_DB, found.species, found.meta);
+    const reply = await askStatementReply(env.ASK_DB, found.species, found.meta, question);
     log('answered', reply.slugs, { answer_slug: reply.links[0]?.url || null }, { answer: reply.answer, page: reply.links[0]?.title || null });
     return storeJson({
       result: 'statement',
@@ -3698,6 +3721,7 @@ const ASK_MODEL_COMPARE = 'claude-sonnet-5-5';
 const ASK_SYSTEM = `You answer animal and pet care questions for Beastly Facts using ONLY the text inside <sources>.
 Rules:
 - At most 3 short sentences, usually 2. Plain words. No lists. No em or en dashes.
+- Call the animal what the reader called it: "bunny" if they wrote bunny, "rabbit" if they wrote rabbit, "beardie" if they wrote beardie.
 - If nothing in the sources answers the question, reply exactly: NO_ANSWER. Do not describe a different condition instead.
 - Never add facts, numbers, doses, or brands that are not in the sources. Take each claim from the section that actually states it; do not credit one section with another's words.
 - Keep hedges from the sources (can, may, often). Do not make them stronger.
