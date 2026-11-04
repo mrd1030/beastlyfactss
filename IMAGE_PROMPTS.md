@@ -260,24 +260,26 @@ iguana.
 ## Fish color and diet guide, 2026-11-04
 
 One guide hero, 3:2 at 1168x784, for the scheduled
-`content/_scheduled-tetras/fish-color-and-diet-guide.mdx` (alt text: "A bright
-red-orange platy swimming among green aquarium plants"). Ships with the
-glowlight tetra batch.
+`content/_scheduled-tetras/fish-color-and-diet-guide.mdx` (alt text: "A planted
+aquarium full of colorful fish: red, orange, yellow, blue and black fish
+swimming among green plants"). Ships with the glowlight tetra batch. Owner,
+2026-11-04: a mix of different colored fish, the way a color page should look;
+species accuracy does not matter for this frame.
 
 **`/assets/images/fish-color-and-diet-guide.jpg`**
 
-A single bright red-orange platy swimming in profile through a planted
-freshwater aquarium, turning slightly toward the camera so the whole flank
-catches the light and the color glows. Short, deep, laterally compressed body,
-small upturned mouth, a modest rounded dorsal fin and a fan-shaped rounded tail
-with no extension. Not a swordtail: the lower edge of the tail is rounded, with
-no long sword. Not a guppy: the tail is short and rounded, not long and
-flowing. Not a molly: no tall sail-like dorsal fin. Lush green stem plants and
-broad leaves behind and below, soft out of focus, a dark substrate, a few tiny
-bubbles, clear water. Soft overhead aquarium light from the upper left, the
-greens kept deep so the red-orange reads as the brightest thing in the frame.
-Shot at 100mm macro, f/4, the fish sharp from snout to tail, background
-falling to a gentle blur. No glass reflections, no equipment, no hoses, no
-hands, no text, no watermark. Landscape 3:2.
-**Check:** the tail is rounded with no sword, the dorsal fin is small, and the
-red-orange is even across the body rather than patchy or dyed looking.
+A lush planted freshwater aquarium alive with color, a dozen or so small and
+medium fish spread across the frame at different depths, each a different
+vivid color: a bright red-orange platy, a golden yellow fish, a school of small
+fish with glowing electric blue and red stripes, a deep blue betta with long
+flowing fins, a black fish with a silver sheen, an orange and white goldfish,
+a turquoise and red disc-shaped cichlid. The colors spread evenly so no part of
+the frame is empty, reds and oranges in front, blues and blacks a little
+deeper. Deep green stem plants, broad leaves and a dark substrate behind them,
+clear water, a few tiny bubbles. Soft overhead aquarium light from the upper
+left, the greens kept deep so every fish reads as a bright spot of color. Shot
+at 50mm, f/5.6, the nearest fish sharp and the farthest gently soft. No glass
+reflections, no equipment, no hoses, no hands, no people, no text, no
+watermark. Landscape 3:2.
+**Check:** at least five clearly different fish colors are visible, no fish is
+deformed or has extra fins or eyes, and there is no lettering anywhere.
