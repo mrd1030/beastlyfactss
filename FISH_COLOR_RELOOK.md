@@ -146,3 +146,49 @@ Applied items deleted. What is left:
 - Optional: the seoDescription promises safe disposal the research only
   partly covers; old tank syndrome described differently from the water
   changes guide; lab shipping language heavy for the home case.
+
+## Graded read, 2026-11-04 (new keeper on a phone)
+
+### When a fish dies: B+
+Clear order, safe to act on, short. Holds back: the disposal answer and one
+ordering slip.
+- Fix: the sample paragraph ("If a vet or lab may get involved, take a water
+  sample first...") sits after the 2 mg/L water change advice, so a reader
+  acting in page order changes the water before reading "sample first". Move
+  it above "Any ammonia reading matters", so the section reads sample, test,
+  change, the same order as its own KeyTakeaway.
+- Fix: "remains go where they spread nothing and reach no open water" is
+  stiff; "so the body goes somewhere it cannot spread disease or reach open
+  water" reads plainly.
+- Gap (needs research): what to do between zero and 2 mg/L ammonia. The page
+  says any reading matters, then gives an action only at 2 or more.
+- Gap (needs research): trash or burial, the question the reader came with.
+  The page can only say local rules decide.
+- Gap (needs research): the tankmates. Watch them for how long, and whether
+  to quarantine the rest after an unexplained death.
+
+### Fish color and diet: B
+Accurate and practical, with real numbers and a clear "what to buy". Holds
+back: a science-heavy first section and a few lines a beginner cannot act on.
+- Fix: "Where a Fish's Color Comes From" names four cell types, pteridines,
+  alpha-MSH and melanin-concentrating hormone in two paragraphs. Keep the
+  three kinds of color in plain words and one sentence that the fish can
+  shift its shade in minutes to hours; cut the hormone names.
+- Fix: the fish farm source list (synthetic astaxanthin, Haematococcus
+  pluvialis, red yeast, crayfish oil) is industry detail; keep krill,
+  spirulina, marigold and paprika, the words a keeper finds on a label.
+- Fix: "Doses above the optimum may blunt part of a fish's early immune
+  response" gives the reader nothing to act on (no optimum is named); say
+  "Overdoing it does not help, and too much may work against the immune
+  response."
+- Fix: "Discus reds and oranges depend on the same ready-made astaxanthin"
+  has no clear "same"; "Discus reds and oranges need astaxanthin that
+  arrives ready-made, from krill, shrimp or a food that lists it."
+- Fix: "China rose" is unfamiliar; "hibiscus (China rose)".
+- Fix: "plain ones do not" (brine shrimp) is stronger than the FAQ's "less
+  pigment than an ordinary commercial food"; "plain ones carry little".
+- Gap (needs research): color-enhancing aquarium lights (do they change the
+  fish or only how it looks).
+- Gap (needs research): GloFish, which readers confuse with dyed fish.
+- Gap (needs research): what does help a betta's color, since the page says
+  food has the least evidence there.
