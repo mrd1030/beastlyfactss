@@ -121,23 +121,11 @@ Source counts include the new color source. Links are in-body internal links
 content/_scheduled-tetras/fish-color-and-diet-guide.mdx: 2,678 words,
 sources 6 (at the cap), internal links 1 (spotting a sick fish), as asked.
 
-- **Trial narration throughout.** "In one trial", "the platy trial", "the
-  oscar trial ran 50 days", "in the swordtail trial", "In a four-week
-  trial". The timing paragraph under Color Foods lists trial lengths one by
-  one. Restate as the finding: "expect a visible change in three to four
-  weeks for fast responders, eight to ten for most".
 - **Species trials cut by the 6 source cap.** The angelfish, discus,
   goldfish, guppy and stress sections state only the general rule, though
   each feeding guide now carries a trial. Owner call: raise this guide's
   cap (as the shared class guides have), or leave the trials to the
-  feeding guides.
-- **Length.** 2,678 words with 19 species subsections. Check it reads as
-  one guide, not a list of species notes.
-- **In-body links: owner to pick.** The agent's candidates, each with the
-  sentence it would sit in, are in its report of 2026-11-04 (dyed fish:
-  black skirt health; light: cardinal setup; platy menu: platy feeding;
-  alkaline water: pH guide; ich: ich treatment; discus and koi feeding).
-  Keep to 2 or 3 total, per CLAUDE.md.
+  feeding guides. The Fable review (2026-11-04) advises not raising it.
 - **Needs a hero image** (1168x784), listed in NEEDS_IMAGE.md.
 - **Before it ships:** restamp date, lastUpdated and lastReviewed to the
   ship day; add the glowlight-tetra id to its RELATED_ARTICLES wiring once
@@ -147,49 +135,14 @@ sources 6 (at the cap), internal links 1 (spotting a sick fish), as asked.
 
 ## Fable editor review, 2026-11-04 (both new guides)
 
-Read-only review; nothing edited. Full wording of every proposed rewrite is in
-the session report; the points:
+Applied items deleted. What is left:
 
-### Fish color and diet guide (body about 2,150 words)
-Verdict: the science traces to the research; cut the duplication and the
-trial narration and it is a strong guide of about 1,700 words.
-- Must fix: trial narration in body and FAQs ("Feeding trials show",
-  "In the platy trial", "The swordtail trial measured", "In the oscar trial",
-  FAQ 1, FAQ 5). Timing line: "a month at the least, more likely two" (the
-  relook's "three to four weeks for fast responders" overstates the data).
-- Must fix: each trial figure stated twice (section 2 and again in the
-  species sections; betta annatto twice; "reflected light, which food does
-  not change" six times; the cichlid astaxanthin rule four times). Keep each
-  figure once; fold cardinal into neon; molly, angelfish, discus, corydoras
-  and bristlenose to one sentence each.
-- Must fix: the swordtail growth claim is one-sided (the two marigold trials
-  disagree); state it as a risk.
-- Must fix: three lifts close to Seriously Fish wording (dyed fish stress,
-  rummy-nose varied diet, guppy females).
-- Should fix: the cichlid rule rests on cichlids being Perciformes (older
-  classification, on the owner review list); keep the practical advice, state
-  the group rule once. Excerpt says fish cannot make any red (the body says
-  some red is self-made). FAQ 5 overclaims a flake "does the same job".
-  FAQs 2 and 3 repeat each other and section 3; merge and use the slot for
-  "How long does a color food take to work?". Split the lost-color symptom
-  sentence. Plainer koi and goldfish spirulina line.
-- Disagrees with this list: do not raise the 6 source cap.
-- Links: keep spotting a sick fish; add platy feeding (Platy section) and
-  black skirt tetra health (dyed fish section). Skip cardinal setup, pH, ich,
-  koi.
+### Fish color and diet guide
+- Length: body about 1,670 words plus about 250 in FAQs after the review's
+  cuts, above its 1,700 target. Further cuts would take species facts, not
+  repeats: owner call.
 
-### When a fish dies guide (body about 1,185 words)
-Verdict: tight, well ordered and safe; three wording fixes and one safety
-line before it ships.
-- Must fix: the release sentence lifts Washington and Minnesota wording.
-- Must fix: the water changes link sentence carries only the link; say what
-  the page gives ("small daily changes over about a month").
-- Should fix: ammonia advice reads as "below 2 mg/L is fine"; add that any
-  ammonia in a cycled tank is a problem (FA16), then the 2 mg/L big change.
-- Should fix: the flushing reason borrows the live-organism page; give the
-  disease reason for a dead fish.
-- Should fix: "Look for a Cause" opener has three starts in two sentences.
-- Should fix: FAQ 5 repeats the body.
+### When a fish dies guide
 - Optional: the seoDescription promises safe disposal the research only
   partly covers; old tank syndrome described differently from the water
   changes guide; lab shipping language heavy for the home case.
