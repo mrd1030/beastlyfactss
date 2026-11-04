@@ -1714,9 +1714,47 @@ const ASK_SMALL_TALK = [
     "All good! I'm here if an animal question comes up.",
     "Okay! Come back any time you're curious about an animal.",
   ]],
+  // Frustration and insults (owner, 2026-11-04, from a real conversation:
+  // "U are useless" after three misses). A short apology, never an argument,
+  // with the search page and the contact page as links. Same terms as the
+  // rest of the small talk: no model call, not logged, not counted. "ugh"
+  // stays a reaction above.
+  ['frustrated', [
+    'useless', 'u are useless', 'you are useless', 'youre useless', 'ur useless', 'u r useless', 'this is useless',
+    'thats useless', 'useless bot', 'useless answer', 'so useless',
+    'dumb', 'this is dumb', 'thats dumb', 'youre dumb', 'you are dumb', 'u are dumb', 'ur dumb', 'dumb bot', 'so dumb',
+    'stupid', 'this is stupid', 'thats stupid', 'youre stupid', 'you are stupid', 'u are stupid', 'ur stupid',
+    'u r stupid', 'stupid bot', 'so stupid',
+    'you suck', 'u suck', 'this sucks', 'that sucks', 'sucks', 'it sucks',
+    'not helpful', 'this is not helpful', 'thats not helpful', 'youre not helpful', 'you are not helpful',
+    'u are not helpful', 'not helping', 'youre not helping', 'you are not helping', 'no help', 'didnt help',
+    'that didnt help', 'this didnt help', 'you didnt help', 'doesnt help', 'that doesnt help', 'this doesnt help',
+    'you cant help', 'you cant help me', 'u cant help', 'you are no help', 'youre no help', 'unhelpful',
+    'wrong', 'thats wrong', 'that is wrong', 'this is wrong', 'youre wrong', 'you are wrong', 'wrong answer',
+    'bad answer', 'terrible answer', 'that is not right', 'thats not right',
+    'not what i asked', 'thats not what i asked', 'that is not what i asked', 'you didnt answer',
+    'you didnt answer my question', 'u didnt answer', 'you didnt answer me', 'answer my question',
+    'answer the question', 'youre not answering', 'you are not answering', 'you dont understand',
+    'you didnt understand', 'u dont understand', 'you dont get it', 'you misunderstood',
+    'bad bot', 'worst bot', 'terrible', 'this is terrible', 'horrible', 'this is horrible', 'awful', 'this is awful',
+    'garbage', 'this is garbage', 'trash', 'this is trash', 'rubbish', 'this is rubbish', 'lame', 'this is lame',
+    'pathetic', 'worthless', 'youre worthless', 'you are worthless', 'the worst', 'youre the worst',
+    'you are the worst', 'i hate this', 'i hate you', 'wtf', 'fail', 'epic fail', 'so bad', 'this is bad',
+    'youre bad at this', 'you are bad at this', 'waste of time', 'this is a waste of time', 'what a waste of time',
+    'pointless', 'this is pointless', 'this is broken', 'youre broken', 'you are broken', 'doesnt work',
+    'this doesnt work', 'it doesnt work', 'not working', 'this isnt working', 'its not working',
+  ], [
+    "Sorry about that. I can only answer from our guides, and I miss some things. Try searching the site, or send a note through the contact page and a person will read it.",
+    "Fair enough, that one didn't land. Try asking it another way, search the site, or tell the owner what you were after through the contact page.",
+    "Sorry, I didn't help there. I answer only from what's written in the guides. The search box may find it, and the contact page reaches a real person.",
+    "That's on me. Try a different wording, search the site, or use the contact page to say what was missing and it goes straight to the owner.",
+  ], [
+    { title: 'Search the site', url: '/search/' },
+    { title: 'Contact page', url: '/contact/' },
+  ]],
 ];
 const ASK_SMALL_TALK_MAP = new Map();
-for (const [kind, phrases, replies] of ASK_SMALL_TALK) for (const ph of phrases) ASK_SMALL_TALK_MAP.set(ph, { kind, replies });
+for (const [kind, phrases, replies, links = []] of ASK_SMALL_TALK) for (const ph of phrases) ASK_SMALL_TALK_MAP.set(ph, { kind, replies, links });
 // Words that may sit around the phrase without changing it: the bot's name,
 // address words and softeners. Nothing that is itself a phrase above, or
 // "hi beastly" would strip to nothing.
@@ -1739,7 +1777,7 @@ function askSmallTalk(question) {
     if (core.length && core.length < words.length) hit = tryPhrase(core);
   }
   if (!hit) return null;
-  return { kind: hit.kind, reply: hit.replies[Math.floor(Math.random() * hit.replies.length)] };
+  return { kind: hit.kind, reply: hit.replies[Math.floor(Math.random() * hit.replies.length)], links: hit.links };
 }
 
 const ASK_THANKS_REPLIES = [
@@ -1847,6 +1885,21 @@ function askNormalize(text) {
     .replace(/[^a-z0-9'\- ]+/g, ' ')
     .replace(/\s+/g, ' ')
     .trim();
+}
+// British spellings the guides write the US way (owner, 2026-11-04: a reader
+// asked what to feed platies "so that their colour can come out", and
+// "colour" matched nothing). Applied to the question before the search, on
+// the word's front so colours, coloured and colourful follow. "grey" stays:
+// the site keeps it in names (African grey, greyhound), and a search for
+// "gray" would miss them.
+const ASK_BRITISH = [
+  [/\bcolour/g, 'color'], [/\bbehaviour/g, 'behavior'], [/\bfavourite/g, 'favorite'], [/\blitre/g, 'liter'],
+  [/\bfibre/g, 'fiber'], [/\bmould/g, 'mold'], [/\bodour/g, 'odor'],
+];
+function askAmerican(text) {
+  let out = text;
+  for (const [re, to] of ASK_BRITISH) out = out.replace(re, to);
+  return out;
 }
 
 // First name in `list` (longest first) found as whole words in q, plural ok.
@@ -1967,8 +2020,33 @@ function askLeftover(text, species, res) {
   const name = species ? askNormalize(species.name) : '';
   const words = new Set(name ? name.split(/[\s-]+/) : []);
   const short = name.replace(/ fish$/, '');
+  // A "fish" after a fish's name ("platy fish") is part of the name.
   return t.split(/[\s-]+/).map((w) => w.replace(/'s$|'/g, ''))
-    .filter((w) => askIsWord(w) && !words.has(w) && !words.has(w.replace(/e?s$/, '')) && w !== short && !askFindGroup(w));
+    .filter((w) => askIsWord(w) && !words.has(w) && !words.has(w.replace(/e?s$/, '')) && w !== short && !askFindGroup(w) && !(w === 'fish' && species));
+}
+// A statement with no question in it (owner, 2026-11-04, from a real
+// conversation that opened "I have a platy fish" and later said "I love my
+// platy fish"; both went to the model, which answered the first from the
+// cost guide and found nothing for the second). "I have a platy fish", "my
+// dog is the best", "we just named our hamster Pip", "I love my platy fish"
+// get a warm line and the animal's care guide hub (or its encyclopedia or
+// Beastlypedia entry, or a fact, when it has no hub) with an invitation to
+// ask. The rule: the message names an animal, has no question mark, opens
+// with "I have", "I love", "we named" and the like (ASK_STATEMENT_RE) or is
+// "my <animal> is <something nice>" (ASK_STATEMENT_NICE_RE), and once those
+// words, the animal and a few fillers are out nothing is left, except up to
+// two words after "named" or "called" (the pet's name). "I have a platy
+// fish, how often do I feed her" leaves "often feed" and is a question. A
+// pet that just arrived ("I got a leopard gecko, what do I do") is checked
+// before this and stays a new pet.
+const ASK_STATEMENT_RE = /^(i|we|my (family|kids?|son|daughter|wife|husband|partner|brother|sister|friends?|mom|dad))( just| also| now| recently| finally| really| absolutely| still| already)? (have|has|had|own|owns|keep|keeps|love|loves|like|likes|adore|adores|named|name|call|miss)\b/;
+const ASK_STATEMENT_NICE_RE = /^(my|our) [a-z' -]+ (is|are|was|were) (the |so |very |really |super |such a |such an |a |an |my )?(best|cute|cutest|sweet|sweetest|adorable|amazing|awesome|great|greatest|lovely|beautiful|gorgeous|perfect|wonderful|funny|funniest|smart|smartest|silly|goofy|happy|good|favorite|everything|precious|angel|sweetheart|cutie|goofball|handful|joy|delight)\b/;
+const ASK_STATEMENT_FILLER_RE = /\b(is|are|was|were|the|so|very|really|super|such|best|cute|cutest|sweet|sweetest|adorable|amazing|awesome|great|greatest|lovely|beautiful|gorgeous|perfect|wonderful|funny|funniest|smart|smartest|silly|goofy|happy|good|favorite|everything|precious|angel|sweetheart|cutie|goofball|handful|joy|delight|one|ever|boy|girl|guy|named|called|new|little|baby|pet|pets|fish|two|three|four|five|some|couple|few|pair|at home|years?|months?|weeks?|old|too|also|now|today|again|btw|fyi|ngl)\b/;
+function askStatement(raw, text, species) {
+  if (/\?/.test(raw)) return false;
+  if (!ASK_STATEMENT_RE.test(text) && !ASK_STATEMENT_NICE_RE.test(text)) return false;
+  const left = askLeftover(text, species, [ASK_STATEMENT_RE, ASK_STATEMENT_NICE_RE, ASK_STATEMENT_FILLER_RE]);
+  return left.length <= (/\b(named|called|name is)\b/.test(text) ? 2 : 0);
 }
 // { species, group } when `text` says a pet just arrived and asks nothing
 // else, both null when it names no animal; null when it is not that.
@@ -2251,6 +2329,55 @@ function askNewPetReply(species, newPet, meta) {
   return null;
 }
 
+// The statement reply (owner, 2026-11-04): the animal's care guide hub (its
+// guide id, or the hub ask_meta.gift names for a breed or the dog and cat
+// pages), else its encyclopedia or Beastlypedia entry, found through the FTS
+// index on the species name so the chunks table is not scanned, else a fact
+// page of it, else the line alone.
+async function askStatementReply(db, species, meta) {
+  const name = species.name;
+  const lower = name.toLowerCase();
+  const an = askAn(lower);
+  const hub = species.guideId || meta.gift[name]?.hub || null;
+  if (hub) {
+    return {
+      answer: `${askCap(an)} ${lower}! Everything we have on the ${lower} starts with its care guide. Ask me anything about yours, from feeding to health, and I'll check the guides.`,
+      links: [{ title: `${name} care guide`, url: `/guides/${hub}/` }],
+      slugs: [hub],
+    };
+  }
+  let entry = null;
+  try {
+    const table = `chunks_${meta.slot}`;
+    const fts = `${table}_fts`;
+    entry = await db.prepare(`SELECT c.title, c.url, c.type FROM (SELECT rowid FROM ${fts} WHERE ${fts} MATCH ?1 LIMIT 200) m
+      JOIN ${table} c ON c.id = m.rowid WHERE c.species = ?2 AND c.type IN ('encyclopedia', 'beastfile') ORDER BY c.type DESC LIMIT 1`)
+      .bind(`species : "${askNormalize(name).replace(/"/g, '')}"`, name).first();
+  } catch { /* an index without the entry: the fact or the line alone */ }
+  if (entry) {
+    const what = entry.type === 'encyclopedia' ? 'encyclopedia entry' : 'Beastlypedia entry';
+    return {
+      answer: `${askCap(an)} ${lower}! We don't have a care guide for the ${lower}, but its ${what} has the essentials. Ask me anything about it and I'll check what we have.`,
+      links: [{ title: `${name} ${what}`, url: entry.url }],
+      slugs: [entry.url],
+    };
+  }
+  const fact = meta.facts.find((f) => f.species === name) || null;
+  if (fact) {
+    return {
+      answer: `${askCap(an)} ${lower}! We don't have a care guide for the ${lower}, but we do have a fact or two. Ask me anything and I'll check what we have.`,
+      links: [{ title: fact.title ? `${name} fact: ${fact.title}` : `${name} facts`, url: fact.url }],
+      slugs: [fact.url],
+    };
+  }
+  return {
+    answer: `${askCap(an)} ${lower}! We don't have a guide on the ${lower} yet, but ask me anything and I'll check what we have.`,
+    links: [],
+    slugs: [],
+  };
+}
+const askCap = (s) => s.replace(/^./, (c) => c.toUpperCase());
+
 // Legal questions get links, never a model summary: the matrix cells change
 // monthly and quote statutes.
 // A state by name, or by its postal code after "in" or "for" ("legal in ny").
@@ -2318,7 +2445,7 @@ const askStem = (t) => {
 async function askRetrieve(db, question, context = null) {
   const meta = await askMeta(db);
   const expand = (text) => {
-    let out = askNormalize(text);
+    let out = askAmerican(askNormalize(text));
     for (const [re, to] of meta.aliases) out = out.replace(re, to);
     return out;
   };
@@ -2335,6 +2462,18 @@ async function askRetrieve(db, question, context = null) {
   const factAsk = ASK_FACT_RE.test(qOwn) || (Boolean(prevFact) && ASK_MORE_RE.test(qOwn));
   if (prevFact?.species && !factAsk && !askFindName(prev, meta.species)) prev = askNormalize(prevFact.species);
   const prevSpecies = prev ? askFindName(prev, meta.species) : null;
+  // The conversation's animal (owner, 2026-11-04, from a real conversation:
+  // "I have a platy fish", "she has 3 babies and she has no food", then
+  // "what to feed them so that their colour can come out" asked which
+  // animal, because only the last question travels and it named none). The
+  // client also sends the last animal the worker reported (context.species),
+  // checked against the species list here. It is used only when neither
+  // this question nor the last one names an animal, and only on a
+  // follow-up: a named animal always wins, and after "which animal?" a reply
+  // that names none is still a new question.
+  const carried = !ownSpecies && !prevSpecies && context?.species
+    ? meta.species.find((s) => s.name.toLowerCase() === String(context.species).toLowerCase()) || null
+    : null;
   // After "which animal?", a reply that still names no animal is a new
   // question, not a follow-up ("testing", then "what's up" searched both).
   const followUp = Boolean(prev) && !(context?.clarify && !ownSpecies)
@@ -2347,7 +2486,7 @@ async function askRetrieve(db, question, context = null) {
   // for a kid" then "how much is a hamster" searches the hamster only).
   const q = followUp && (!ownSpecies || (!prevSpecies && context?.clarify)) ? `${qOwn} ${prev}` : qOwn;
 
-  const species = askFindName(q, meta.species);
+  const species = askFindName(q, meta.species) || (followUp ? carried : null);
   const speciesWords = new Set(species ? askNormalize(species.name).split(/[\s-]+/) : []);
   const tokens = [...new Set(
     q.split(/[\s-]+/).map((t) => t.replace(/'s$|'/g, '')).filter(askIsWord),
@@ -2393,6 +2532,13 @@ async function askRetrieve(db, question, context = null) {
   if (newPet) {
     return { chunks: [], species: newPet.species, best: null, legal: false, newPet: { group: newPet.group, giving: false }, meta, q, qOwn, followUp };
   }
+  // A statement that names an animal and asks nothing ("I have a platy
+  // fish", "my dog is the best"): a warm line and the animal's pages, no
+  // model call. Not as the reply to "which animal?", where the name answers
+  // that question and carries it along.
+  if (ownSpecies && !(followUp && context?.clarify) && askStatement(question, qOwn, ownSpecies)) {
+    return { chunks: [], species: ownSpecies, best: null, legal: false, statement: true, meta, q, qOwn, followUp };
+  }
   // A gift question, judged on the reader's own words, or on the whole
   // conversation right after "which animal is the gift for?", where the
   // reply ("a hamster") carries the question. Before the catalog check ("do
@@ -2437,7 +2583,11 @@ async function askRetrieve(db, question, context = null) {
   if (!tokens.length) return { chunks: [], species, best: null, legal: false, meta, q, qOwn, followUp };
   // A follow-up that only corrects the last question ("sorry, *betta", "I
   // meant betta": nothing new beyond the animal) carries its where-is intent.
-  const isSpeciesWord = (t) => speciesWords.has(t) || speciesWords.has(t.replace(/s$/, '')) || speciesWords.has(t.replace(/es$/, ''));
+  // "Platy fish" is the platy: a "fish" after a fish's name is part of the
+  // name (owner, 2026-11-04; it went to the model, which answered a bare
+  // name from the cost guide).
+  const isSpeciesWord = (t) => speciesWords.has(t) || speciesWords.has(t.replace(/s$/, '')) || speciesWords.has(t.replace(/es$/, ''))
+    || (t === 'fish' && Boolean(ownSpecies));
   const ownWords = qOwn.split(/[\s-]+/).map((t) => t.replace(/'s$|'|\*/g, ''))
     .filter((t) => askIsWord(t) && !isSpeciesWord(t) && !ASK_CORRECTION.has(t));
   const navText = followUp && ownWords.length === 0 ? `${qOwn} ${prev}` : qOwn;
@@ -2684,8 +2834,12 @@ async function handleAskInner(request, env, ctx, state) {
   // After a fact reply, the url of the fact shown: its animal carries over
   // and the next pick skips it.
   const lastFact = String(body?.context?.fact || '').slice(0, 200);
+  // The last animal the worker reported in this conversation, by name;
+  // askRetrieve checks it against the species list and uses it only when
+  // neither question names one.
+  const lastSpecies = String(body?.context?.species || '').replace(/\s+/g, ' ').trim().slice(0, 80);
   const context = prev.length >= 3
-    ? { prev, clarify: body?.context?.clarify === true, ...(/^\/facts\/[a-z0-9-]+\/$/.test(lastFact) && { fact: lastFact }) }
+    ? { prev, clarify: body?.context?.clarify === true, ...(/^\/facts\/[a-z0-9-]+\/$/.test(lastFact) && { fact: lastFact }), ...(lastSpecies && { species: lastSpecies }) }
     : null;
   if (question.length < 2) return quiet('unavailable');
   if (!env.ASK_DB) return quiet('unavailable');
@@ -2711,7 +2865,7 @@ async function handleAskInner(request, env, ctx, state) {
     return storeJson({
       result: 'greeting',
       answer: talk.reply,
-      links: [],
+      links: talk.links,
       emergency: false,
       species: null,
       followUp: Boolean(context),
@@ -2858,6 +3012,25 @@ async function handleAskInner(request, env, ctx, state) {
       links: reply.links,
       emergency: false,
       species: null,
+      followUp: found.followUp,
+    });
+  }
+
+  // A statement naming an animal and asking nothing (owner, 2026-11-04): a
+  // warm line and the animal's hub, or with no hub its encyclopedia or
+  // Beastlypedia entry (one FTS read on the species), or a fact page. No
+  // model call. Logged as answered with the page; not counted toward the 3
+  // (nothing was asked), and it stays in the conversation so the animal
+  // carries to the next question.
+  if (found.statement) {
+    const reply = await askStatementReply(env.ASK_DB, found.species, found.meta);
+    log('answered', reply.slugs, { answer_slug: reply.links[0]?.url || null }, { answer: reply.answer, page: reply.links[0]?.title || null });
+    return storeJson({
+      result: 'statement',
+      answer: reply.answer,
+      links: reply.links,
+      emergency: false,
+      species,
       followUp: found.followUp,
     });
   }

@@ -3,7 +3,7 @@ import {
   Sparkles, X, Minus, PanelRight, PanelRightClose, Send, Loader2, GripHorizontal, History, ArrowLeft, Plus, ChevronRight,
 } from 'lucide-react';
 import TurnstileWidget, { isTurnstileEnabled } from '@/components/shared/TurnstileWidget';
-import AskReply from '@/components/ask/AskReply';
+import AskReply, { BetaTag } from '@/components/ask/AskReply';
 import {
   ASK_HISTORY_EVENT, MAX_TURNS, answersUsed, askQuestion, hasAskPass, canFollowUp, clearHistory, deleteConversation, easternDate, readHistory,
 } from '@/lib/askBeastly';
@@ -376,7 +376,13 @@ export default function AskBeastlyChat() {
               <Sparkles className="w-4 h-4 text-secondary ml-1" aria-hidden="true" />
             </>
           )}
-          <h2 className="font-display font-bold text-base text-foreground flex-1 ml-1">{title}</h2>
+          <h2 className="font-display font-bold text-base text-foreground flex-1 ml-1 flex items-center gap-2">
+            {title}
+            {/* Beta (owner, 2026-11-04): a small pill in the chat's accent, on the
+                Ask Beastly title only. Plain text, so a screen reader hears
+                "Ask Beastly Beta" and nothing odd. */}
+            {view !== 'history' && <BetaTag />}
+          </h2>
           {view !== 'history' && history.length > 0 && (
             <button type="button" onClick={() => { setView('history'); setConfirmClear(false); }} aria-label="Your questions" title="Your questions" className={iconBtn}>
               <History className="w-4 h-4" />
@@ -406,7 +412,7 @@ export default function AskBeastlyChat() {
           {view === 'ask' && !current && !pending && (
             <div>
               <p className="text-sm font-body text-foreground mb-1">Ask about any animal on the site.</p>
-              <p className="text-xs font-body text-muted-foreground mb-3">Answers come only from our guides and fact files, with links to read more.</p>
+              <p className="text-xs font-body text-muted-foreground mb-3">Answers come only from our guides and fact files, with links to read more. Beastly is new and still learning, so if an answer misses, ask it another way.</p>
               <div className="flex flex-col items-start gap-2">
                 {EXAMPLES.map((q) => (
                   <button key={q} type="button" onClick={() => send(q)} disabled={!verified}

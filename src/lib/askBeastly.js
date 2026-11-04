@@ -78,6 +78,8 @@ export function deleteConversation(id) {
 
 // Only answers that gave the reader something count toward the cap: a
 // question the guides do not cover (or one that failed) does not use one up.
+// A statement ("I have a platy fish") asked nothing, so its reply does not
+// count either, though it stays in the conversation and carries its animal.
 const COUNTED = new Set(['answered', 'navigate', 'legal', 'refused', 'catalog', 'fact', 'gift', 'new_pet']);
 export const answersUsed = (c) => (c ? c.turns.filter((t) => COUNTED.has(t.reply?.result)).length : 0);
 export const canFollowUp = (c) => Boolean(c) && !c.closed && answersUsed(c) < MAX_TURNS;
@@ -144,6 +146,11 @@ export async function askQuestion(question, captcha = '', conversationId = null)
   const clarify = lastTurn?.reply?.result === 'clarify';
   // After a fact, its url: the worker keeps its animal and skips it next.
   const fact = lastTurn?.reply?.result === 'fact' ? lastTurn.reply.fact?.url || '' : '';
+  // The conversation's animal: the last one the worker reported, so it
+  // carries past a question that names none ("she has 3 babies" after "I
+  // have a platy fish"). The worker uses it only when neither the question
+  // nor the previous one names an animal (owner, 2026-11-04).
+  const species = lastTurn ? [...current.turns].reverse().find((t) => t.reply?.species?.name)?.reply.species.name || '' : '';
 
   let reply = { result: 'unavailable' };
   try {
@@ -152,7 +159,7 @@ export async function askQuestion(question, captcha = '', conversationId = null)
     const res = await fetch('/api/ask', {
       method: 'POST',
       headers: { 'content-type': 'application/json', ...(token && { authorization: `Bearer ${token}` }) },
-      body: JSON.stringify({ question: q, captcha, ...(pass && { pass }), ...(prev && { context: { prev, ...(clarify && { clarify: true }), ...(fact && { fact }) } }) }),
+      body: JSON.stringify({ question: q, captcha, ...(pass && { pass }), ...(prev && { context: { prev, ...(clarify && { clarify: true }), ...(fact && { fact }), ...(species && { species }) } }) }),
     });
     reply = await res.json();
     if (reply.pass) savePass(reply.pass);

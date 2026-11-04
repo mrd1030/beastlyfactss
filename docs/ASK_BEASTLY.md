@@ -30,13 +30,30 @@ This file is the spec as built. Where the build differs, it says why.
 - **The search page.** A query of three words or more shows an Ask Beastly
   button under the search box (Enter asks it too), with the answer full width
   above the results. Code: `src/components/search/AskBeastly.jsx`.
+- **Beta** (owner, 2026-11-04). A small "Beta" pill (`BetaTag` in
+  AskReply.jsx) sits next to the chat title and inside the search page's
+  Ask Beastly button, not on the history view's title or the edge tab.
+  Plain text, so a screen reader hears "Ask Beastly Beta". The empty chat's
+  second line adds "Beastly is new and still learning, so if an answer
+  misses, ask it another way."; the footer under the input stays as it was.
 - **Conversations and history** (owner, 2026-11-02, on a Fable layout). The
   chat is an answer card, not a chat log. A conversation is up to 3 answers
   on one topic: the first question plus follow-ups ("what about babies?").
   A follow-up sends only the previous question as context, so the search
   keeps the animal and topic and Haiku sees "Earlier question: ..."; the
   previous answer is never sent. A question naming a different animal, a
-  legal answer, or the 3 answer cap starts a new conversation. Only answers that gave the
+  legal answer, or the 3 answer cap starts a new conversation.
+  The conversation's animal carries (owner, 2026-11-04, from a real
+  conversation: "I have a platy fish", "she has 3 babies and she has no
+  food", then "what to feed them so that their colour can come out" got
+  "which animal?", because only the last question travels and it named
+  none). The client also sends the last animal the worker reported in the
+  conversation (`context.species`, the name from the last reply that
+  carried one); the worker checks it against the species list and uses it
+  only on a follow-up where neither the question nor the previous one
+  names an animal. A named animal always wins, the "another" fact rule is
+  unchanged, and after "which animal?" a reply that names none is still a
+  new question. Only answers that gave the
   reader something count toward the 3 (answered, hub links, law answers,
   matched pages); a question the guides do not cover does not use one up
   (owner, 2026-11-02). Its reply reads "That one isn't in our guides yet. Try
@@ -219,6 +236,47 @@ In `public/_worker.js`, listed in `public/_routes.json`. In order:
    matter; anything more makes it a question. The chat sends from 2
    characters, so "hi" goes through. After "which animal?", a reply that
    still names no animal is a new question, not carried with the last one.
+   Frustration (owner, 2026-11-04, from a real conversation that ended "U
+   are useless"): "useless", "this is dumb", "you suck", "not helpful",
+   "stupid bot", "wrong", "not what I asked", "you didn't answer my
+   question" and the like are a `frustrated` group in ASK_SMALL_TALK, on
+   the same terms (result `greeting`, no model call, not logged, not
+   counted). One of four short apologies, never an argument, each pointing
+   to the search and the contact page, with "Search the site" (/search/)
+   and "Contact page" (/contact/) as links; a small talk group may carry
+   links, and the chat shows them under the line. "ugh" stays a reaction.
+   Statements (owner, 2026-11-04, from the same conversation: "I have a
+   platy fish" went to the model, which answered from the cost guide, and
+   "I love my platy fish" came back not covered): a message that names an
+   animal and asks nothing gets a warm line and the animal's pages, result
+   `statement`, no model call. The rule (askStatement, after the new-pet
+   rule, before the gift rule, on the reader's own words): no question
+   mark, an opener like "I have", "I love", "we keep", "we just named"
+   (ASK_STATEMENT_RE) or "my <animal> is the best / so cute / my favorite"
+   (ASK_STATEMENT_NICE_RE), and once those words, the animal and a few
+   fillers are out nothing is left, except up to two words after "named" or
+   "called" (the pet's name). "I have a platy fish, how often do I feed her"
+   leaves "often feed" and is a question; "my dog is fat" is not a
+   compliment and goes to the search; "I got a leopard gecko, what do I do"
+   is a new pet, checked first. Not as the reply to "which animal?", where
+   the name answers that question. Reply with a hub: "A platy! Everything
+   we have on the platy starts with its care guide. Ask me anything about
+   yours, from feeding to health, and I'll check the guides." with the hub
+   (the guide id, or the hub `ask_meta.gift` names for Dog and the
+   breeds). No hub: "A platypus! We don't have a care guide for the
+   platypus, but its Beastlypedia entry has the essentials. Ask me anything
+   about it and I'll check what we have." with the encyclopedia entry
+   (first) or the Beastlypedia entry, found through the FTS index on the
+   species name (about 200 rows at most, never a scan of the chunks
+   table); with neither, a fact page ("but we do have a fact or two"), and
+   with nothing "We don't have a guide on the <animal> yet, but ask me
+   anything and I'll check what we have." Logged as `answered` with the
+   page as the slug and `answer_slug` (no new log result), pushed as
+   Answered. Not counted toward the 3 (nothing was asked), but it joins
+   the conversation, so the animal carries to the next question. "Platy
+   fish" alone is the platy: a "fish" after a fish's name is part of the
+   name in the bare-name, where-is and new-pet rules (it went to the model
+   before).
    Thanks (owner, 2026-11-02): a thank-you turn is skipped when the next
    question looks back for its follow-up context. A message that is only thanks or an
    acknowledgement ("thanks!", "ty so much", "ok cool, got it", "that
@@ -380,7 +438,13 @@ In `public/_worker.js`, listed in `public/_routes.json`. In order:
    question along. Nothing new travels from the client.
 6. Search: spoken filler dropped first (owner, 2026-11-02): "like", "um",
    "uh", "kinda", "idk", "lol" and stretched forms ("ummmm", "hmmm",
-   "sooo"), so "like, um, a hamster" searches as "hamster". Then nicknames expanded, the named species used as a filter ("tortoise"
+   "sooo"), so "like, um, a hamster" searches as "hamster". British
+   spellings the guides write the US way are mapped first (owner,
+   2026-11-04: "so that their colour can come out" matched nothing):
+   colour, behaviour, favourite, litre, fibre, mould and odour, on the
+   word's front so colours, coloured and colourful follow (ASK_BRITISH).
+   "grey" stays as typed: the site keeps it in names (African grey,
+   greyhound) and a search for "gray" would miss them. Then nicknames expanded, the named species used as a filter ("tortoise"
    also reaches sulcata and Russian), a few reader word synonyms (tank and
    enclosure, eat and feed, poop and droppings), a boost for the matching split
    care guide and for headings that name the question, and guides ahead of
@@ -407,8 +471,9 @@ In `public/_worker.js`, listed in `public/_routes.json`. In order:
    question last.
 
 Reply: `{ result, answer, links, emergency, species, followUp, health }`.
-`result` is answered, fact, gift, new_pet, navigate, catalog, clarify, thanks, greeting, legal, no_match,
-capped, refused or unavailable. A `gift` reply also carries `disclosure`, the
+`result` is answered, fact, gift, new_pet, statement, navigate, catalog, clarify, thanks, greeting, legal, no_match,
+capped, refused or unavailable. A `greeting` reply may carry links (the
+frustration apology links the search and contact pages). A `gift` reply also carries `disclosure`, the
 affiliate line, empty unless a gear link is among the links. A `fact` reply also carries `fact` (url,
 title, animal) and `missing` (the animal that had none), and is logged as
 answered with the fact's url. `followUp` says whether the question joined the conversation;
@@ -514,7 +579,9 @@ above the answer and the species' emergency card from its router hub under it
 
 Supabase table `ask_log` (supabase/ask_log.sql): question, matched_slugs,
 result (answered, no_match, capped, refused, legal, clarify, catalog),
-answer_slug, created_at. No IP. `answer_slug` is the page the model named (READ) on an
+answer_slug, created_at. Hub links, facts, gifts, new pets and statements
+are logged as `answered` with the page as `answer_slug`; small talk, thanks
+and the frustration apology are not logged. No IP. `answer_slug` is the page the model named (READ) on an
 answered row; `matched_slugs` is in search order, so the pair shows how
 often the model picked something other than the top hit (added 2026-11-02
 on Grok's review). RLS on
