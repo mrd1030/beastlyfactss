@@ -100,6 +100,47 @@ Source counts include the new color source. Links are in-body internal links
 - Body uses a semicolon; fine. Reads well. This is the sentence that answers
   the reader's Ask Beastly question of 2026-11-04.
 
-### Still to check when the batch finishes
-Rummy-nose tetra, swordtail, zebra danio, glowlight tetra (scheduled), and
-the new fish color guide itself (link count: should be 1).
+### Rummy-nose tetra (sources 4, links 3)
+- Reads well. No issue found.
+
+### Swordtail (sources 4, links 3)
+- FAQ "Is more color food better for a swordtail?": "In the marigold trial"
+  is narration.
+
+### Zebra danio (sources 5, links 4, at the link cap)
+- The supplement paragraph now says live food "covers nutrition and
+  coloration on its own", then "The tank does more for that color than the
+  menu". Pick one: drop "and coloration" from the old sentence.
+- At 4 links, so the later link to the color guide means dropping one.
+
+### Glowlight tetra (scheduled; sources 4, links 3)
+- Reads well. No issue found.
+
+## The fish color guide (scheduled)
+
+content/_scheduled-tetras/fish-color-and-diet-guide.mdx: 2,678 words,
+sources 6 (at the cap), internal links 1 (spotting a sick fish), as asked.
+
+- **Trial narration throughout.** "In one trial", "the platy trial", "the
+  oscar trial ran 50 days", "in the swordtail trial", "In a four-week
+  trial". The timing paragraph under Color Foods lists trial lengths one by
+  one. Restate as the finding: "expect a visible change in three to four
+  weeks for fast responders, eight to ten for most".
+- **Species trials cut by the 6 source cap.** The angelfish, discus,
+  goldfish, guppy and stress sections state only the general rule, though
+  each feeding guide now carries a trial. Owner call: raise this guide's
+  cap (as the shared class guides have), or leave the trials to the
+  feeding guides.
+- **Length.** 2,678 words with 19 species subsections. Check it reads as
+  one guide, not a list of species notes.
+- **In-body links: owner to pick.** The agent's candidates, each with the
+  sentence it would sit in, are in its report of 2026-11-04 (dyed fish:
+  black skirt health; light: cardinal setup; platy menu: platy feeding;
+  alkaline water: pH guide; ich: ich treatment; discus and koi feeding).
+  Keep to 2 or 3 total, per CLAUDE.md.
+- **Needs a hero image** (1168x784), listed in NEEDS_IMAGE.md.
+- **Before it ships:** restamp date, lastUpdated and lastReviewed to the
+  ship day; add the glowlight-tetra id to its RELATED_ARTICLES wiring once
+  that hub ships; add the feeding guide links listed in
+  research/FISH_COLOR_RESEARCH.md ("Links to add when the color guide
+  ships").
