@@ -3796,7 +3796,7 @@ const ASK_MODEL_COMPARE = 'claude-sonnet-5-5';
 const ASK_SYSTEM = `You answer animal and pet care questions for Beastly Facts using ONLY the text inside <sources>.
 Rules:
 - At most 3 short sentences, usually 2. Plain words. No lists. No em or en dashes.
-- Call the animal what the reader called it: "bunny" if they wrote bunny, "rabbit" if they wrote rabbit, "beardie" if they wrote beardie.
+- Name the animal with the same word the question uses (bunny, beardie, grey). Never mention the reader, the wording of the question, or this rule.
 - If nothing in the sources answers the question, reply exactly: NO_ANSWER, with no other words. Do not describe a different condition instead, and do not answer a neighboring question (a live animal when the reader asked about a dead one, a different step, another animal). Never open an answer by saying what the guides do not cover or give: if that would be your first sentence, the reply is NO_ANSWER. The one exception is the health gap below.
 - Never add facts, numbers, doses, or brands that are not in the sources. Take each claim from the section that actually states it; do not credit one section with another's words.
 - Keep hedges from the sources (can, may, often). Do not make them stronger.
@@ -4119,7 +4119,12 @@ function askRouterLine(routed) {
 // reader to a vet), which is the intended reply for a symptom the guides do
 // not name.
 const ASK_GAP_OPEN_RE = /^(our|the|these|those) (care )?guides? (don'?t|do not|doesn'?t|does not|can'?t|cannot|never|aren'?t able to|are not able to|have no|has no|give no|offer no|lack)\b/i;
-const ASK_HEALTH_GAP_RE = /\b(safest move|have (a|an) [\w -]*vet\b|see (a|an) [\w -]*vet\b|call (a|an|the) [\w -]*vet\b)/i;
+// The health gap template only ("the safest move is to have a reptile vet
+// look at your gecko"): a sentence that sends the reader to "a vet or pet
+// retailer" about something that is not a sign is still a gap.
+const ASK_HEALTH_GAP_RE = /\b(have|get) (a|an|your) [\w -]*vet (look at|check|examine)\b/i;
+// The model talking about the reader's wording or its own rules.
+const ASK_META_TALK_RE = /\b(the reader|reader (wrote|said|called|asked|uses?)|i'?ll (use|call)|as (the reader|you) (wrote|called|put) it|you (wrote|called it)|the question (says|uses|calls))\b/i;
 function askParseReply(text, chunks, stopReason, question = '') {
   if (!text || /^NO_ANSWER\b/.test(text) || /\bNO_ANSWER\s*$/.test(text)) return { kind: 'no_answer' };
   let answer = text;
@@ -4182,6 +4187,9 @@ function askParseReply(text, chunks, stopReason, question = '') {
   // said "our guides don't cover" twice in other words) is said once.
   const said = new Set();
   const sentences = answer.split(/(?<=[.!?])\s+/).filter((sentence) => {
+    // A sentence about the reader's wording ("The reader wrote parrot, so
+    // I'll use that.") is the model narrating its instructions: dropped.
+    if (ASK_META_TALK_RE.test(sentence)) return false;
     const key = sentence.toLowerCase().replace(/[^a-z0-9 ]+/g, ' ').replace(/\s+/g, ' ').trim();
     if (!key || said.has(key)) return false;
     said.add(key);
