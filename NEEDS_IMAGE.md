@@ -98,6 +98,15 @@ The 17 animal-day heroes (docs/NOV_DEC_ANIMAL_DAYS.md) all landed on
 2026-10-18, owner-generated, installed at 1168x784 through mozjpeg at quality
 80. The 13 that arrived larger (1264x848 or 1728x1152) were scaled down, never up.
 
+- **Fish color and diet guide** (added 2026-11-04, scheduled in
+  `content/_scheduled-tetras/fish-color-and-diet-guide.mdx`): hero
+  `fish-color-and-diet-guide.jpg`, 3:2 at 1168x784, through mozjpeg at quality
+  80. A red or orange platy (or red swordtail) among green plants, matching the
+  frontmatter alt text "A bright red-orange platy swimming among green aquarium
+  plants"; the guide opens on fish color in general and closes on the platy.
+  One photo used nowhere else on the site. Needed before the guide moves into
+  `content/`.
+
 ## Facts awaiting images
 
 The 2026-10-05 run of five (hoopoe, Manx cat, maned wolf, sarcastic
