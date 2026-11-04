@@ -3867,6 +3867,18 @@
       "animalDay": null
     },
     {
+      "slug": "fish-death-what-to-do-guide",
+      "title": "Dead Fish in the Aquarium: What to Do Next",
+      "excerpt": "Confirm it is dead, get the body out, and test the water before changing any of it. Then look for a cause, keep the body cold if a lab may want it, and never flush or release a fish.",
+      "date": "2026-11-04",
+      "image": "/assets/images/fish-death-what-to-do-guide.jpg",
+      "category": "Fish",
+      "categories": [
+        "Fish"
+      ],
+      "animalDay": null
+    },
+    {
       "slug": "fish-quarantine-and-treatment-guide",
       "title": "Fish Quarantine and Treatment: Hospital Tank Guide",
       "excerpt": "Why every new or sick fish belongs in a bare hospital tank first, how long to actually leave it there, and the real rules for aquarium salt, carbon, and aeration once you start treating.",
@@ -9709,6 +9721,18 @@
         "Wild Animals"
       ],
       "animalDay": "world-lemur-day"
+    },
+    {
+      "slug": "world-numbat-day",
+      "title": "World Numbat Day: First Saturday of November",
+      "excerpt": "The banded anteater lives on termites, up to 20,000 a day, and swallows ants only by accident. By the late 1970s about 300 were left. In July 2026 the IUCN moved the numbat from Endangered to Near Threatened.",
+      "date": "2026-11-03",
+      "image": "/assets/images/world-numbat-day.jpg",
+      "category": "Wild Animals",
+      "categories": [
+        "Wild Animals"
+      ],
+      "animalDay": "world-numbat-day"
     },
     {
       "slug": "world-octopus-day",

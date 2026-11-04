@@ -8,6 +8,18 @@ Newest first.
 
 ---
 
+## 2026-11-04: when a fish dies guide hero
+
+`/assets/images/fish-death-what-to-do-guide.jpg`, the hero for `content/guides/fish-death-what-to-do-guide.mdx`, made in Adobe Firefly with partner model Gemini 3.1 (Nano Banana 2) (owner-generated): a calm planted tank on a wooden stand by a window, small fish swimming upright, a clear test vial with pale yellow-green water and an empty green net on the stand. Arrived 1200x896 (4:3); scaled to 1168x872 and cropped to 3:2 at 1168x784 (60 px off the top, 28 px off the bottom) through mozjpeg at quality 80. The frontmatter `image` line goes back in with this install. Credited in IMAGE_CREDITS.md.
+
+---
+
+## 2026-11-04: fish color and diet guide hero
+
+`/assets/images/fish-color-and-diet-guide.jpg`, the hero for the scheduled `content/_scheduled-tetras/fish-color-and-diet-guide.mdx`, made in Adobe Firefly with partner model Gemini 3.1 (Nano Banana 2) (owner-generated): a planted aquarium with a blue betta, a turquoise discus, a black molly, a golden yellow fish, an orange and white goldfish, a red-orange platy and a school of neons. Resized from 1264x848 to 1168x784 through mozjpeg at quality 80, not cropped. Ships with the guide in the glowlight tetra batch. Credited in IMAGE_CREDITS.md.
+
+---
+
 ## 2026-11-01: aquarium substrate guide hero
 
 `/assets/images/aquarium-substrate-guide.jpg`, the hero for `content/guides/aquarium-substrate-guide.mdx`, made in Adobe Firefly with partner model GPT Image 2 (owner-generated): fine dark sand beside rounded pea gravel, a planted Cryptocoryne and sword, Indian almond leaves and a gravel vacuum, no fish. Contrast and midtones lifted, resized from 1264x848 to 1168x784 through mozjpeg at quality 80, not cropped. The frontmatter `image` line is live. Credited in IMAGE_CREDITS.md.

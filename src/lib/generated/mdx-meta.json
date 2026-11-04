@@ -2430,7 +2430,7 @@
     "title": "Angelfish Feeding: Schedule, Diet, and Why They Stop Eating",
     "seoTitle": "What Do Angelfish Eat? Diet and Feeding Schedule",
     "seoDescription": "Angelfish feeding guide: schedule by life stage, their ambush-predator diet, safe vs. risky foods, and portion control that works.",
-    "lastUpdated": "2026-09-24",
+    "lastUpdated": "2026-11-04",
     "noIndex": false,
     "excerpt": "Angelfish are ambush predators that will gorge themselves given the chance, which is why portion discipline matters more here than for most community fish.",
     "date": "2026-07-31",
@@ -2465,6 +2465,10 @@
         "a": "A high-quality flake, generally preferred over pellets for this species, with regular protein supplementation at least twice a week, bloodworms, brine shrimp, daphnia, and mysis shrimp are all good options."
       },
       {
+        "q": "How long does a color food take to work on angelfish?",
+        "a": "Weeks. The one angelfish trial ran for four weeks and the change was visible to judges by its end, so give a new food at least that long before deciding whether it does anything."
+      },
+      {
         "q": "Is tubifex worm safe to feed?",
         "a": "Only from a reputable cultured or commercial source, never wild-collected. Wild tubifex and blackworms carry real parasite and disease risk, commercially cultured or frozen versions are treated as fine by the same sources that warn against wild ones."
       },
@@ -2487,7 +2491,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4,
+    "sourceCount": 5,
     "headingCount": 7,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
@@ -5195,7 +5199,7 @@
     "title": "Bearded Dragon Brumation: Triggers, the Routine, and When to Worry",
     "seoTitle": "Bearded Dragon Brumation Guide: What to Expect",
     "seoDescription": "Bearded dragon brumation typically runs 1 to 3 months. Covers the pre-brumation vet check, the weekly routine, and clear signs it has gone on too long.",
-    "lastUpdated": "2026-10-03",
+    "lastUpdated": "2026-11-03",
     "noIndex": false,
     "excerpt": "A bearded dragon that stops eating and sleeps for weeks might just be brumating. Here's the pre-brumation vet check, the weekly routine, and how long it should take.",
     "date": "2026-09-04",
@@ -5222,7 +5226,7 @@
     "faqs": [
       {
         "q": "How long does bearded dragon brumation last?",
-        "a": "Typically 1 to 3 months. Call a vet if it passes about three and a half months, if the dragon loses more than 10 percent of its body weight, or if appetite has not returned within 2 to 3 weeks of it basking again."
+        "a": "Typically 1 to 3 months, most often about 2. Call a vet if it runs longer than 4 months, if the dragon loses 10 percent or more of its body weight, or if appetite has not returned once it's up and moving around consistently."
       },
       {
         "q": "How do I know if my dragon is brumating or sick?",
@@ -5251,7 +5255,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 3,
+    "sourceCount": 4,
     "headingCount": 12,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
@@ -5503,11 +5507,11 @@
     "faqs": [
       {
         "q": "How often should I feed my bearded dragon?",
-        "a": "It depends heavily on age. Hatchlings eat multiple times a day, mostly insects, dropping to twice daily by a few months old, then once daily or every other day as adults once growth stops. Vet sources give broader ranges than enthusiast sites' specific numbers, treat the vet ranges as the more reliable floor and ceiling."
+        "a": "It depends heavily on age. Hatchlings eat 2 to 3 times a day, mostly insects, dropping to twice daily from about a month old, then once or twice daily as juveniles, and once daily or every other day as adults once growth stops."
       },
       {
         "q": "What's the right ratio of insects to vegetables?",
-        "a": "It flips as the dragon grows up. Juveniles eat mostly insects with vegetables introduced alongside, adults flip toward mostly plant matter with insects offered just a few times a week. Sources differ on the exact percentages, but every one agrees on the direction, more bugs when young, more greens as an adult, and it mirrors a real dietary shift documented in wild bearded dragons too."
+        "a": "It flips as the dragon grows up. Juveniles eat mostly insects with vegetables introduced alongside, and adults flip toward mostly plant matter with insects offered just a few times a week. More bugs when young and more greens as an adult is the same shift wild bearded dragons make as they grow."
       },
       {
         "q": "Do I need to gut-load and dust feeder insects?",
@@ -5515,15 +5519,15 @@
       },
       {
         "q": "Why has my bearded dragon stopped eating?",
-        "a": "Often it's brumation, a shed, or, in females, a gravid cycle before laying, all normal. It becomes a concern when the enclosure's temperature isn't letting the dragon digest, or when refusal comes with lethargy, abnormal stool, or a swollen abdomen."
+        "a": "Often it's brumation, a shed, or in females the run-up to laying eggs. All of those are normal. It becomes a concern when the enclosure's temperature isn't letting the dragon digest, or when refusal comes with lethargy, abnormal stool, or a swollen abdomen."
       },
       {
         "q": "How long can a bearded dragon go without eating?",
-        "a": "There's real tension in the sourcing here. One veterinary teaching hospital treats even 1 to 2 days of refusal in an adult as a reason to seek care, while a separate DVM-reviewed source says healthy adults can physiologically fast 1 to 2 weeks. Both can be true at once, a short refusal is worth watching, but true fasting tolerance runs longer, babies and juveniles have far less room to wait either way."
+        "a": "Skipping food for a day or two is normal for an adult. Call a vet once an adult has refused food for 1 to 2 weeks with no brumation, shed or egg cycle to explain it, or sooner if the refusal comes with lethargy, abnormal stool, or a swollen abdomen. Babies and juveniles can't wait anywhere near as long: 2 to 3 days at most."
       },
       {
         "q": "What foods are dangerous for bearded dragons?",
-        "a": "Avocado, rhubarb, onion and garlic, and any wild-caught insects, especially fireflies, which are toxic. Dog food, cat food, and rabbit food are also inappropriate despite sometimes being suggested online, they aren't nutritionally balanced for this species."
+        "a": "Avocado, rhubarb, onion and garlic, and any wild-caught insects, especially fireflies, which are toxic. Dog food, cat food, and rabbit food are wrong for them too, even though they sometimes get suggested online: none of them is balanced for this species."
       }
     ],
     "relatedProducts": [
@@ -5535,7 +5539,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 3,
+    "sourceCount": 6,
     "headingCount": 7,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
@@ -5811,7 +5815,7 @@
     "title": "Bearded Dragon Safe Foods List: Staple, Occasional, and Never Foods",
     "seoTitle": "Bearded Dragon Food List: What's Safe to Feed (Chart)",
     "seoDescription": "Full bearded dragon food list: staple, occasional, rare, and never foods for insects, greens, vegetables, and fruit, plus the prey-size rule and gut-loading.",
-    "lastUpdated": "2026-10-05",
+    "lastUpdated": "2026-11-03",
     "noIndex": false,
     "excerpt": "Every feeder insect, green, vegetable, and fruit a bearded dragon can eat, sorted into staple, occasional, rare, and never, with the reason behind each tier.",
     "date": "2026-09-12",
@@ -5847,7 +5851,7 @@
       },
       {
         "q": "What fruit is safe for a bearded dragon?",
-        "a": "Figs, papaya, and prickly pear have the best calcium balance and are the top occasional picks. Berries, mango, melon, cored apple and pear, peach, and apricot are fine in small chopped amounts once or twice a week. Fruit overall should stay around 5 to 10 percent of the plant portion, it's a treat, not a food group."
+        "a": "Figs, papaya, and prickly pear have the best calcium balance and are the top occasional picks. Berries, mango, melon, cored apple and pear, peach, and apricot are fine in small chopped amounts once or twice a week. Fruit overall should stay at 5 percent of the diet or less and never pass 10 percent: it's a treat, not a food group."
       },
       {
         "q": "How big should feeder insects be?",
@@ -6355,7 +6359,7 @@
     "title": "Betta Fish Feeding: Schedule, Diet, and Why They Stop Eating",
     "seoTitle": "What Do Betta Fish Eat? Diet and Feeding Schedule",
     "seoDescription": "A betta's stomach is about the size of its eye, so 2-4 pellets a meal is right. Feed once or twice daily, fast weekly, and worry past 5-7 days without food.",
-    "lastUpdated": "2026-10-02",
+    "lastUpdated": "2026-11-04",
     "noIndex": false,
     "excerpt": "How much to feed a betta (less than you'd think), what belongs in the bowl, and the reasons a betta goes off food, from picky eating to something water-quality related.",
     "date": "2026-07-24",
@@ -6402,6 +6406,10 @@
         "a": "A healthy adult can physically survive up to about two weeks, but that's an emergency ceiling, not a target. Most vet-reviewed guidance says to start actively investigating around 5 to 7 days of refused food, sooner if you notice a swollen belly, clamped fins, or lethargy."
       },
       {
+        "q": "Should I buy a color-enhancing food for my betta?",
+        "a": "It is not needed. Choose a pellet for its protein level and a meat-first ingredient list, since the color claim on the label is the part with the least support for this fish."
+      },
+      {
         "q": "What foods should never go in a betta's bowl?",
         "a": "Bread, onion, garlic, salt, sugary foods, processed meats like hot dogs or lunch meat, citrus, and dairy. General tropical flakes and goldfish pellets aren't appropriate as a primary diet either, a betta is an obligate carnivore and needs a betta-specific high-protein pellet."
       }
@@ -6412,7 +6420,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 5,
+    "sourceCount": 6,
     "headingCount": 8,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
@@ -8123,7 +8131,7 @@
     "title": "Black Skirt Tetra Feeding: Diet, Food Size, and How Often to Feed",
     "seoTitle": "What Do Black Skirt Tetras Eat? Diet and Feeding Guide",
     "seoDescription": "Black skirt tetra feeding by life stage: flake or granules, daphnia and bloodworm and their risks, one meal a day, why cold water stops a black skirt eating.",
-    "lastUpdated": "2026-11-01",
+    "lastUpdated": "2026-11-04",
     "noIndex": false,
     "excerpt": "A black skirt tetra is an unfussy omnivore that takes ordinary flake and granules. A schedule from fry to adult, the live foods worth their risk, how cold water cuts its appetite, and why it stops eating.",
     "date": "2026-11-03",
@@ -8165,6 +8173,10 @@
       {
         "q": "Do black skirt tetras eat algae?",
         "a": "Only a little. Wild fish pick up small amounts of algae and plant matter, but worms, small crustaceans and insects make up most of what they eat, so this is no algae eater."
+      },
+      {
+        "q": "Do black skirt tetras need a color-enhancing food?",
+        "a": "No. Color foods are built around carotenoid pigments, often from crustacean ingredients, which deepen reds and oranges. A black skirt has almost no red or orange to deepen, so an ordinary varied diet serves it just as well."
       },
       {
         "q": "What do black skirt tetra fry eat?",
@@ -10301,7 +10313,7 @@
     "title": "Bristlenose Pleco Feeding: Diet, Driftwood, and the Algae Myth",
     "seoTitle": "What Do Bristlenose Plecos Eat? Diet and Feeding Schedule",
     "seoDescription": "Bristlenose pleco feeding guide: why algae alone isn't enough as an adult, the real diet, and why driftwood matters for digestion.",
-    "lastUpdated": "2026-09-25",
+    "lastUpdated": "2026-11-04",
     "noIndex": false,
     "excerpt": "A bristlenose pleco is sold as a living algae solution, and as an adult that reputation quietly stops being true. What it needs is a real diet, plus one piece of tank furniture that doubles as food.",
     "date": "2026-09-14",
@@ -10340,6 +10352,10 @@
         "a": "Bristlenose rasp driftwood constantly and instinctively, and most care guides tie this to healthy digestion, ingesting fiber and the biofilm growing on the wood's surface. Skipping driftwood is associated with digestive problems even in a well-fed fish."
       },
       {
+        "q": "Why does my bristlenose pleco look lighter on some days?",
+        "a": "Fish spread or pull in the dark pigment inside their skin cells within seconds to hours, under the control of hormones and nerves, so a change of shade on its own is normal. Paired with a sunken belly, clamped fins or sores, it is one more reason to test the water."
+      },
+      {
         "q": "How much and how often should I feed a bristlenose pleco?",
         "a": "Once a day, after lights-out for a nocturnal grazer. Give a wafer or vegetable portion it can clear in a few hours, and pull anything still untouched by morning so it doesn't foul the water."
       },
@@ -10357,7 +10373,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4,
+    "sourceCount": 5,
     "headingCount": 9,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1200,
@@ -12513,7 +12529,7 @@
     "title": "Cardinal Tetra Feeding: Schedule, Diet, and the Rule That Prevents an Outbreak",
     "seoTitle": "What Do Cardinal Tetras Eat? Diet and Feeding Schedule",
     "seoDescription": "Cardinal tetra feeding by life stage: micro-pellets and live foods, twice-daily portions, foods to avoid, why cardinals stop eating, and the dead-fish rule.",
-    "lastUpdated": "2026-11-01",
+    "lastUpdated": "2026-11-04",
     "noIndex": false,
     "excerpt": "A wild cardinal tetra picks tiny crustaceans and midge larvae off drowned leaves and wood. A schedule from fry to adult, the foods that copy that diet, why cardinals stop eating, and the rule that stops an outbreak.",
     "date": "2026-09-06",
@@ -12560,6 +12576,10 @@
       {
         "q": "Do cardinal tetras need vitamin supplements?",
         "a": "No. Rotating live and frozen foods through the pellet staple supplies what the fish needs, so no vitamin or mineral additive is called for."
+      },
+      {
+        "q": "Why do my cardinal tetras look dull first thing in the morning?",
+        "a": "A cardinal turns duller at night, with a violet stripe, and a school seen right after the lights come on is still showing that night pattern. Dullness that lasts all day in fish that also ignore food is the reason to test the water."
       },
       {
         "q": "Why won't my wild-caught cardinal tetra eat?",
@@ -16966,7 +16986,7 @@
     "title": "Corydoras Catfish Feeding: Schedule, Diet, and Why They Stop Eating",
     "seoTitle": "What Do Corydoras Catfish Eat? Diet and Feeding Schedule",
     "seoDescription": "Corydoras aren't an algae cleanup crew. Real feeding schedule, sinking food needs, and the myth that quietly starves this fish.",
-    "lastUpdated": "2026-09-25",
+    "lastUpdated": "2026-11-04",
     "noIndex": false,
     "excerpt": "Corydoras have a reputation as an algae-eating cleanup crew that isn't accurate, and believing it is one of the easiest ways to accidentally starve a fish that otherwise asks very little of you.",
     "date": "2026-08-10",
@@ -17009,6 +17029,10 @@
         "a": "Because they feed on the bottom. Flakes get eaten by mid and upper-tank fish long before they sink far enough to matter, so a tank fed exclusively with flakes can leave cories functionally unfed even though food goes in daily."
       },
       {
+        "q": "Why does my cory look paler at times?",
+        "a": "Fish spread or pull in the dark pigment in their skin cells within seconds to hours, driven by hormones and nerves, and stress can push it either way. A change of shade in a fish that is feeding normally is no concern; paired with hiding or a lost appetite, test the water."
+      },
+      {
         "q": "Why has my corydoras catfish stopped eating?",
         "a": "Stress is the most common cause, including from being kept alone or in too small a group, poor water quality, especially ammonia buildup, disease, and the ordinary acclimation period after a move or a new tank are all documented causes."
       },
@@ -17025,7 +17049,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 2,
+    "sourceCount": 3,
     "headingCount": 7,
     "ledeMatchesExcerpt": true,
     "imageWidth": 1168,
@@ -18739,7 +18763,7 @@
     "title": "Discus Feeding: Schedule, Diet, and the Beef-Heart Debate",
     "seoTitle": "What Do Discus Eat? Diet and Feeding Schedule",
     "seoDescription": "Discus feeding guide: schedule by life stage, real diet options, the beef-heart debate, and the science behind 'discus milk' fry feeding.",
-    "lastUpdated": "2026-09-15",
+    "lastUpdated": "2026-11-04",
     "noIndex": false,
     "excerpt": "Discus have unusually small mouths for such a broad-bodied fish, and their fry start life feeding on a parent's own skin, two details that shape almost everything about how this species eats.",
     "date": "2026-09-06",
@@ -18778,6 +18802,10 @@
         "a": "In moderation, yes, it's lean, high in protein, and easily digestible, and a controlled feeding study found no growth penalty when beef heart was blended with shrimp meat rather than fed alone. Fed as the only food, though, its fat content and poor calcium-to-phosphorus ratio are real concerns, so most sources recommend trimming visible fat and treating it as part of a rotation rather than a daily staple."
       },
       {
+        "q": "How long does a color food take to show on discus?",
+        "a": "Weeks. The trial that measured it ran for 10 weeks, so give a new food a couple of months before judging whether it has made any difference."
+      },
+      {
         "q": "How do newly hatched discus fry feed?",
         "a": "On mucus secreted from both parents' skin, a genuine, scientifically documented form of parental care called biparental mucus feeding, not hobbyist folklore. Fry feed on it most heavily for roughly the first two weeks after becoming free-swimming, with a gradual weaning process over the following two weeks as parents start swimming away more often."
       },
@@ -18796,7 +18824,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4,
+    "sourceCount": 5,
     "headingCount": 7,
     "ledeMatchesExcerpt": true,
     "imageWidth": 1168,
@@ -19439,7 +19467,7 @@
     "title": "Ember Tetra Feeding: Diet, Food Size, and How Often to Feed",
     "seoTitle": "What Do Ember Tetras Eat? Diet and Feeding Schedule",
     "seoDescription": "Ember tetra feeding by life stage: crushed flake or micro-pellets, baby brine shrimp and daphnia, live foods to skip, and why embers stop eating.",
-    "lastUpdated": "2026-11-01",
+    "lastUpdated": "2026-11-04",
     "noIndex": false,
     "excerpt": "An ember tetra is about 0.8 inch long, and its diet is sized to match: a schedule from fry to adult, tiny staples, live foods that are worth the risk, and why an ember stops eating.",
     "date": "2026-11-01",
@@ -19487,6 +19515,10 @@
         "a": "Daily small live or frozen food is part of the diet for this species, alongside the dried staple. Baby brine shrimp and daphnia are the right size."
       },
       {
+        "q": "Why are some of my ember tetras paler than others?",
+        "a": "Adult males are the more intensely colored sex, and the females are rounder-bodied and less vivid, so a mixed school always shows a range. The difference is at its widest when the males are in spawning condition."
+      },
+      {
         "q": "Why is my ember tetra not eating?",
         "a": "The usual causes are bigger or rowdier tankmates reaching the food first, poor water such as ammonia or nitrite in a new tank, internal parasites, or illness. Several fish refusing at once points to the water; one fish thinning while the rest eat points to that fish."
       },
@@ -19503,7 +19535,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4,
+    "sourceCount": 5,
     "headingCount": 8,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
@@ -21868,6 +21900,66 @@
     "ledeMatchesExcerpt": true,
     "imageWidth": 1200,
     "imageHeight": 896
+  },
+  {
+    "path": "/content/guides/fish-death-what-to-do-guide.mdx",
+    "slug": "fish-death-what-to-do-guide",
+    "title": "When a Fish Dies: What to Do Next",
+    "seoTitle": "Dead Fish in the Aquarium: What to Do Next",
+    "seoDescription": "Found a dead fish in your aquarium? How to confirm death, why the body comes out now, what to test before a water change, and how to dispose of it safely.",
+    "lastUpdated": "2026-11-04",
+    "noIndex": false,
+    "excerpt": "Confirm it is dead, get the body out, and test the water before changing any of it. Then look for a cause, keep the body cold if a lab may want it, and never flush or release a fish.",
+    "date": "2026-11-04",
+    "category": "Fish",
+    "categories": [
+      "Fish"
+    ],
+    "tags": [
+      "Fish Care",
+      "Dead Fish",
+      "Water Quality",
+      "Ammonia",
+      "Fish Disease",
+      "Aquarium Health"
+    ],
+    "readTime": 6,
+    "difficulty": "Beginner",
+    "image": "/assets/images/fish-death-what-to-do-guide.jpg",
+    "imageAlt": "A calm planted freshwater aquarium with a water test kit vial and a small fish net resting on the rim of the tank",
+    "emoji": "🫧",
+    "lastReviewed": "2026-11-04",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Should the dead fish or a sick one go to the lab?",
+        "a": "A sick one, when there is a choice. Labs learn the most from fish that are close to death or showing the signs most of the group shares, and three to five of those is usually enough."
+      },
+      {
+        "q": "How long does a fish lab take to give an answer?",
+        "a": "Water quality problems and parasites can often be named at the exam itself. A bacterial culture usually needs 24 to 48 hours, finding the antibiotic that works adds another 24 to 48, and tissue or virus testing commonly takes one to two weeks."
+      },
+      {
+        "q": "Is it safe to handle a dead fish with bare hands?",
+        "a": "Wash your hands afterward, as after any work in an aquarium. Mycobacterium, which fish can carry, can cause a skin infection in people that may progress to something more serious, and anyone with a weakened immune system should probably leave tank work to someone else."
+      },
+      {
+        "q": "What can I do with live fish I can no longer keep?",
+        "a": "Give them to a responsible hobbyist, or ask a pet store to take them. Both keep the fish out of local waters, which is where an unwanted aquarium fish does its damage."
+      }
+    ],
+    "relatedProducts": [],
+    "factFile": false,
+    "animalDay": null,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 5,
+    "headingCount": 8,
+    "ledeMatchesExcerpt": false,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/fish-quarantine-and-treatment-guide.mdx",
@@ -25618,7 +25710,7 @@
     "title": "Goldfish Feeding: Schedule, Diet, and Why They Stop Eating",
     "seoTitle": "What Do Goldfish Eat? Diet and Feeding Schedule",
     "seoDescription": "Goldfish have no true stomach, so feed adults one small meal a day, only what's eaten in under 2 minutes, and stop feeding pond goldfish below 39°F.",
-    "lastUpdated": "2026-10-03",
+    "lastUpdated": "2026-11-04",
     "noIndex": false,
     "excerpt": "Goldfish have no true stomach, which is exactly why small, frequent feedings matter so much. Here's a real feeding schedule, what to feed, and how to read appetite loss.",
     "date": "2026-07-26",
@@ -25658,6 +25750,10 @@
         "a": "Pellets, ideally sinking ones for fancy round-bodied varieties. Flakes lose a large share of certain vitamins within about 30 seconds of hitting the water, and floating food makes round-bodied goldfish prone to gulping air at the surface, which is linked to swim bladder trouble."
       },
       {
+        "q": "Can I add color to homemade gel food?",
+        "a": "Shrimp meal and other crustacean ingredients carry carotenoid pigments that are good for color, but they come with a lot of oil, so extension guidance recommends adding vitamin E to any homemade feed that uses them."
+      },
+      {
         "q": "Do I need to stop feeding my pond goldfish in winter?",
         "a": "Yes, scale it down with water temperature. A normal diet is fine above roughly 50°F, switch to a reduced, more digestible formula between about 39 and 50°F, and stop feeding entirely once it drops further, the fish's metabolism slows into dormancy and uneaten food just fouls the water."
       },
@@ -25676,7 +25772,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 3,
+    "sourceCount": 4,
     "headingCount": 10,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
@@ -27839,7 +27935,7 @@
     "title": "Guppy Feeding: Schedule, Diet, and Why They Stop Eating",
     "seoTitle": "What Do Guppies Eat? Diet and Feeding Schedule",
     "seoDescription": "Guppies take food readily, so overfeeding is the bigger risk. Feed small portions at least daily, more often for fry, and learn why a guppy stops eating.",
-    "lastUpdated": "2026-11-01",
+    "lastUpdated": "2026-11-04",
     "noIndex": false,
     "excerpt": "Guppies take food readily, so too much is an easier mistake than too little. Feeding by life stage, what to put in the bowl, and what a refused meal can mean.",
     "date": "2026-08-01",
@@ -27882,6 +27978,10 @@
         "a": "Zooplankton, small insects and detritus. Tank-bred guppies accept most foods, but a flake or small pellet for tropical community fish, with live, frozen or freeze-dried foods rotated in, covers the same ground."
       },
       {
+        "q": "Does tank algae help a guppy's color?",
+        "a": "It can. Single-celled algae are the main carotenoid source for wild guppies, so the algae film they graze and an algae wafer in the rotation both carry the pigment behind a male's orange."
+      },
+      {
         "q": "Why has my guppy stopped eating?",
         "a": "For a female close to giving birth, this is often completely normal, reduced stomach capacity and a shift in focus toward finding a place to deliver. Stress from a new tank, tank cleaning or too many males chasing the females is a common cause, along with poor water quality, cold water, water outside the 64 to 82°F range, and illness. Test the water first."
       },
@@ -27900,7 +28000,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4,
+    "sourceCount": 5,
     "headingCount": 7,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
@@ -32638,7 +32738,7 @@
     "title": "Koi Feeding: Schedule, Diet, and Why They Stop Eating",
     "seoTitle": "What Do Koi Eat? Diet and Feeding Schedule",
     "seoDescription": "Koi feeding runs on water temperature: stop below 48-50°F, feed 2-4 times daily at 68-86°F, and never feed a cold pond, koi have no true stomach to buffer it.",
-    "lastUpdated": "2026-09-15",
+    "lastUpdated": "2026-11-04",
     "noIndex": false,
     "excerpt": "Koi feeding is driven almost entirely by water temperature, not the calendar. Here's the seasonal schedule, what to feed, and why stopping feeding in cold water can save a koi's life.",
     "date": "2026-07-28",
@@ -32682,6 +32782,10 @@
         "a": "Yes. A lower-protein wheat-germ formula is easier to digest at low metabolic rates and is the right choice in the 50 to 64°F range. Save the higher-protein warm-season growth and color formula for consistently warmer water above roughly 60 to 64°F."
       },
       {
+        "q": "Do koi need astaxanthin itself for good red color?",
+        "a": "Not necessarily. Koi, like goldfish and other carp, can turn zeaxanthin from plant sources such as spirulina into astaxanthin in their own bodies, a conversion cichlids and salmon cannot make, so a spirulina-based color food works for them."
+      },
+      {
         "q": "Why has my koi stopped eating?",
         "a": "In cold water, this is completely normal, koi enter a hibernation-like torpor below about 48 to 50°F and live off stored fat until spring. In warm water, poor water quality is the most common concerning cause, especially if multiple fish stop eating at once, that's a signal to test the water immediately."
       },
@@ -32698,7 +32802,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4,
+    "sourceCount": 5,
     "headingCount": 7,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
@@ -36124,7 +36228,7 @@
     "title": "Molly Feeding: Schedule, Diet, and Why Vegetables Matter",
     "seoTitle": "What Do Molly Fish Eat? Diet and Feeding Schedule",
     "seoDescription": "Molly feeding guide: schedule by life stage, why mollies need a large share of plant food, safe foods, how much bloodworm is too much, and why they stop eating.",
-    "lastUpdated": "2026-11-01",
+    "lastUpdated": "2026-11-04",
     "noIndex": false,
     "excerpt": "The sailfin molly eats almost entirely plants in the wild, and the short-finned molly takes a large share of them. Here's a feeding schedule and what to put in the bowl.",
     "date": "2026-09-06",
@@ -36163,6 +36267,10 @@
         "a": "Plants and algae make up a large part of what they eat in the wild, and nearly all of it for the sailfin. A diet that's all protein leaves out the bulk of that, and a sailfin male that gets too little greenstuff may not develop his full dorsal fin. A diet that's all protein with no vegetable or algae content is one of the most frequently cited molly-specific mistakes, tied to real digestive and bloating problems over time."
       },
       {
+        "q": "Is a molly that has lost color sick?",
+        "a": "Not always, since fish lighten and darken within hours through hormones and nerves. Dulled color with a light gray-white film of mucus, or a pale fish with skin sores, points to skin parasites, and either one alongside clamped fins or a lost appetite calls for a water test."
+      },
+      {
         "q": "What should molly fry eat?",
         "a": "Fry accept newly hatched baby brine shrimp or powdered flake from birth. Young fish can take a larger ration for their body weight than adults, in small amounts. Because mollies are livebearers, fry are born larger and more developed than the newly-hatched fry of egg-laying species, so many can start straight on crushed flake or newly-hatched baby brine shrimp rather than needing infusoria first. Feed fry small amounts several times a day, at least 3 to 5 feedings, since their stomachs are tiny relative to how fast they need to grow."
       },
@@ -36181,7 +36289,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4,
+    "sourceCount": 5,
     "headingCount": 6,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
@@ -37543,7 +37651,7 @@
     "title": "Neon Tetra Feeding: Schedule, Diet, and the Rule That Prevents an Outbreak",
     "seoTitle": "What Do Neon Tetras Eat? Diet and Feeding Schedule",
     "seoDescription": "Neon tetra feeding by life stage: live food for fry, crushed micro-pellets twice daily for adults, foods to avoid, why neons stop eating, the dead-fish rule.",
-    "lastUpdated": "2026-11-01",
+    "lastUpdated": "2026-11-04",
     "noIndex": false,
     "excerpt": "A neon tetra takes its food in small bites from the middle of the water: a schedule from fry to adult, foods sized for a tiny mouth, live foods and their risks, and the rule that stops an outbreak.",
     "date": "2026-08-13",
@@ -37596,6 +37704,10 @@
         "a": "No specific supplement is required beyond a varied diet. Color-enhancing and plant-based foods help maintain coloration and immune function on their own."
       },
       {
+        "q": "Why does my neon tetra's stripe change color?",
+        "a": "The fish tilts the stacks of crystals that make the stripe, which shifts it from blue-green in the light to indigo in the dark. The change follows the lighting and is normal, and nothing in the diet alters it."
+      },
+      {
         "q": "What do neon tetra fry eat?",
         "a": "An infusoria-type food for the first few days, then microworm or newly hatched brine shrimp. Live food matters at this stage: in a lab trial, fry raised on prepared food alone almost all died."
       },
@@ -37612,7 +37724,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 5,
+    "sourceCount": 6,
     "headingCount": 9,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1376,
@@ -38136,7 +38248,7 @@
     "title": "Oscar Fish Feeding: Schedule, Diet, and Why Feeder Goldfish Are a Mistake",
     "seoTitle": "What Do Oscar Fish Eat? Diet and Feeding Schedule",
     "seoDescription": "Oscar fish feeding guide: the cichlid-pellet staple, correct portions, and why feeder goldfish are a real health risk.",
-    "lastUpdated": "2026-09-25",
+    "lastUpdated": "2026-11-04",
     "noIndex": false,
     "excerpt": "Oscars will beg for food constantly and are easy to overfeed, but the single most damaging mistake with this species isn't portion size, it's building the diet around live feeder goldfish.",
     "date": "2026-08-14",
@@ -38183,6 +38295,10 @@
         "a": "Slightly rounded, not bulging. Oscars beg constantly, so many keepers fast an adult one day a week to keep portions honest."
       },
       {
+        "q": "Does a color food do anything for an oscar besides color?",
+        "a": "Possibly. Oscars given astaxanthin or a beta carotene-rich alga for 50 days died less often after a bacterial infection, about half of them against roughly three in four on the plain diet."
+      },
+      {
         "q": "Do oscars need vitamin supplements?",
         "a": "No separate product is needed on a quality, varied diet. Vitamin C and vitamin-fortified foods matter for preventing lateral-line disease, but the balanced pellet and varied whole foods do that job, not added powders."
       }
@@ -38195,7 +38311,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 3,
+    "sourceCount": 4,
     "headingCount": 8,
     "ledeMatchesExcerpt": true,
     "imageWidth": 1376,
@@ -39980,7 +40096,7 @@
     "title": "Platy Feeding: Schedule, Diet, and Why Overfeeding Is the Real Risk",
     "seoTitle": "What Do Platy Fish Eat? Diet and Feeding Schedule",
     "seoDescription": "Platy feeding guide: schedule by life stage, what unfussy omnivores actually need, safe foods, and why overfeeding is the real risk with this fish.",
-    "lastUpdated": "2026-11-01",
+    "lastUpdated": "2026-11-04",
     "noIndex": false,
     "excerpt": "Platies are unfussy true omnivores that will eat almost anything offered, which flips the usual worry. With a fish this small, overfeeding, not pickiness, is the mistake that causes problems.",
     "date": "2026-09-10",
@@ -40023,6 +40139,10 @@
         "a": "Easily, and it's a far more common real problem than underfeeding. Platies will keep eating past the point of being full, and keepers commonly link overfeeding to constipation and swim bladder problems. Watch for a long, stringy trail of waste hanging from the fish after a meal, which keepers often read as a sign the portion was too large. Uneaten food rotting in the tank also fouls water quality fast in a tank this small, which opens the door to several other health issues."
       },
       {
+        "q": "What should I feed platies to bring out their color?",
+        "a": "A varied diet that includes a carotenoid source alongside the usual staple. Expect a change over weeks, and only in the reds, oranges and yellows the fish already has: black, pattern and strain are inherited, and a pale platy on good food usually points to stress, illness or bad water."
+      },
+      {
         "q": "Why has my platy stopped eating?",
         "a": "Stress from a new tank, aggressive tankmates, or too many males chasing too few females are common triggers, as is poor or unstable water quality and cold water, which slows metabolism directly. A female close to giving birth may also eat less for a day or so beforehand. Any of these paired with lethargy, clamped fins, or unusual swimming is worth checking water parameters over rather than waiting out."
       }
@@ -40033,7 +40153,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 3,
+    "sourceCount": 5,
     "headingCount": 6,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
@@ -45038,7 +45158,7 @@
     "title": "Rummy-Nose Tetra Feeding: Wild Diet, Staples, and How Often to Feed",
     "seoTitle": "What Do Rummy-Nose Tetras Eat? Diet and Feeding Schedule",
     "seoDescription": "Rummy-nose tetra feeding by life stage: micro-pellets and crushed flake, live foods and their parasites, foods to avoid, and why rummy-noses stop eating.",
-    "lastUpdated": "2026-11-01",
+    "lastUpdated": "2026-11-04",
     "noIndex": false,
     "excerpt": "Wild rummy-nose tetras eat tiny crustaceans, midge larvae and algae. A schedule from fry to adult, small staples, live foods and their risks, and why a rummy-nose stops eating.",
     "date": "2026-11-02",
@@ -45086,6 +45206,10 @@
         "a": "Infusoria first, then live vinegar eels or a powdered fry food. Adults eat eggs, so fry are raised without them."
       },
       {
+        "q": "Does water chemistry affect a rummy-nose's red?",
+        "a": "Yes. Its colors fade in alkaline water, and the species is kept at a pH of about 5.5 to 7.0, so a school that stays pale in hard, alkaline water needs the chemistry fixed before the menu changes."
+      },
+      {
         "q": "Why is my rummy-nose tetra not eating?",
         "a": "Check the tank before the food. Bigger or rowdier tankmates taking the meal, poor water, a cold tank and internal parasites are the usual causes, and a school whose red noses have faded at the same time points to the water."
       },
@@ -45102,7 +45226,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 3,
+    "sourceCount": 4,
     "headingCount": 8,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
@@ -49336,7 +49460,7 @@
     "title": "Swordtail Feeding: Schedule, Diet, and Why They Stop Eating",
     "seoTitle": "What Do Swordtail Fish Eat? Diet and Feeding Schedule",
     "seoDescription": "Swordtail feeding guide: schedule by life stage, a genuine omnivore diet, safe foods, fry feeding, and why swordtails stop eating.",
-    "lastUpdated": "2026-11-01",
+    "lastUpdated": "2026-11-04",
     "noIndex": false,
     "excerpt": "Swordtails are true dietary generalists, more balanced between plant and animal food than a molly's heavier plant lean. Here's a real schedule and what to feed.",
     "date": "2026-09-11",
@@ -49375,6 +49499,10 @@
         "a": "Most can go straight onto finely crushed flake or newly hatched baby brine shrimp. Livebearer fry are born larger and more developed than egg-layer fry, so the infusoria stage is usually unnecessary. Feed small amounts at least 3 to 5 times a day, since their stomachs are tiny relative to how quickly they grow."
       },
       {
+        "q": "Is more color food better for a swordtail?",
+        "a": "No. In the marigold trial, every pigment-enriched diet grew the fish more slowly than plain feed, so a color food works as one part of the rotation and does not replace the staple."
+      },
+      {
         "q": "Why has my swordtail stopped eating?",
         "a": "Stress is the most common cause, whether from a new tank, aggressive tankmates, or a male-to-female ratio that's left one female fielding constant mating attempts. Poor or unstable water quality and cold temperatures are close behind, and a female close to giving birth may also eat less in the day or so beforehand. Any of these paired with lethargy, clamped fins, or unusual swimming is worth checking water parameters over rather than waiting out."
       },
@@ -49389,7 +49517,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 3,
+    "sourceCount": 4,
     "headingCount": 6,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1200,
@@ -55040,7 +55168,7 @@
     "title": "Zebra Danio Feeding: Diet, Schedule, and the Live Food That Can Trigger an Accidental Spawn",
     "seoTitle": "What Do Zebra Danios Eat? Diet and Feeding Schedule",
     "seoDescription": "Zebra danio feeding guide: flake and micro-pellet portions, a twice-daily schedule, and why live food can trigger a surprise spawn.",
-    "lastUpdated": "2026-09-25",
+    "lastUpdated": "2026-11-04",
     "noIndex": false,
     "excerpt": "Zebra danio feeding is simple, a flake or micro-pellet staple with live or frozen food a few times a week. That live food does something worth knowing about first: it's also the classic trigger that gets an unplanned spawn going overnight.",
     "date": "2026-09-13",
@@ -55083,6 +55211,10 @@
         "a": "No. Unlike guppies, which give birth to free-swimming fry, zebra danios are egg-scatterers: a spawning group releases eggs into open water or plants with no nest built and no parental care afterward. In fact, adult danios will eat their own eggs within minutes if given the chance, so intentional breeders remove the adults or use a mesh or marble substrate the eggs can fall through to safety."
       },
       {
+        "q": "Why do my zebra danios look paler over light gravel?",
+        "a": "Zebrafish match their background, pulling the dark pigment in their skin cells together over a pale floor so the fish looks lighter. It is a normal response and reverses over a darker bottom."
+      },
+      {
         "q": "Do zebra danios need vitamin supplements?",
         "a": "No. A quality flake or pellet with live or frozen food rotated in covers their nutritional needs on its own, no separate supplement required."
       }
@@ -55095,7 +55227,7 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 4,
+    "sourceCount": 5,
     "headingCount": 9,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,

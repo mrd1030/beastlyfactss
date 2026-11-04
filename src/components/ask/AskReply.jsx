@@ -158,7 +158,28 @@ function LegalCell({ cell }) {
 
 // showDisclaimer: the "not a substitute for a vet" line under an answer. The
 // chat shows it once under its input instead of under every answer.
-export default function AskReply({ question, reply, compact = false, hasResults = false, onNavigate, showDisclaimer = !compact }) {
+// The router's read, one small line under the reply. Only a reply from the
+// test site carries `read` (the live host never sends it), so this shows
+// nowhere else: what the router made of the question, or that the rules
+// ran alone and why.
+function ReadLine({ read }) {
+  if (!read) return null;
+  const what = read.failed ? `rules only (${read.failed})`
+    : `${read.animal || read.group || (read.unknown ? `${read.unknown} (not on the site)` : 'no animal')}, ${String(read.kind || '').replace(/_/g, ' ')}${read.switched ? ', new topic' : ''}${read.search ? `, search: ${read.search}` : ''}`;
+  return <p className="mt-2 text-[11px] font-body text-muted-foreground/80">{`Read as: ${what}`}</p>;
+}
+
+export default function AskReply(props) {
+  if (!props.reply?.read) return <AskReplyBody {...props} />;
+  return (
+    <>
+      <AskReplyBody {...props} />
+      <ReadLine read={props.reply.read} />
+    </>
+  );
+}
+
+function AskReplyBody({ question, reply, compact = false, hasResults = false, onNavigate, showDisclaimer = !compact }) {
   const card = useEmergencyCard(reply?.species?.guideId, Boolean(reply?.emergency && reply?.result === 'answered'));
   const text = compact ? 'text-sm' : 'text-base';
   const muted = `font-body ${compact ? 'text-sm' : 'text-sm'} text-muted-foreground`;
@@ -278,7 +299,7 @@ export default function AskReply({ question, reply, compact = false, hasResults 
     return (
       <div aria-live="polite">
         <p className={`font-body ${text} text-foreground`}>
-          {`Everything we have on the ${reply.species?.name || 'animal'} starts here:`}
+          {`Everything we have on the ${reply.species?.said || reply.species?.name || 'animal'} starts here:`}
         </p>
         <Links links={reply.links} onNavigate={onNavigate} />
       </div>

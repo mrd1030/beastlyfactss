@@ -11,6 +11,58 @@ came back wrong (the orca's dorsal fin, the satin bowerbird's avenue).
 
 ---
 
+## When a fish dies guide hero, 2026-11-04
+
+One guide hero, 3:2 at 1168x784, for `content/guides/fish-death-what-to-do-guide.mdx`.
+It follows "How these handle illness": the page is about a dead fish, so the
+frame shows the thing standing next to it, the calm tank and the tools the
+article sends the reader to first. No dead, sick or floating fish anywhere.
+
+**`/assets/images/fish-death-what-to-do-guide.jpg`**
+
+A calm, healthy planted freshwater aquarium seen from slightly above the front
+rim, a few small fish swimming upright mid-water among green stem plants and
+a rounded stone. On the tank's rim in the near foreground rests a small clear
+water test vial holding pale yellow-green water, and beside it a small green
+aquarium net laid flat, dry and empty. Clear water, soft daylight from a window
+to the left, quiet muted greens and warm wood of the stand. Shot at 50mm,
+f/2.8, the vial and net sharp and the tank interior softly focused behind. No
+dead or floating fish, no fish on its side, no fish in the net, no hands, no
+people, no labels or lettering on the vial, no text, no watermark. 3:2.
+**Check:** every fish visible is upright and swimming, the net is empty, and
+the vial carries no invented lettering.
+
+---
+
+## Fish color and diet guide, 2026-11-04
+
+One guide hero, 3:2 at 1168x784, for the scheduled
+`content/_scheduled-tetras/fish-color-and-diet-guide.mdx` (alt text: "A planted
+aquarium full of colorful fish: red, orange, yellow, blue and black fish
+swimming among green plants"). Ships with the glowlight tetra batch. Owner,
+2026-11-04: a mix of different colored fish, the way a color page should look;
+species accuracy does not matter for this frame.
+
+**`/assets/images/fish-color-and-diet-guide.jpg`**
+
+A lush planted freshwater aquarium alive with color, a dozen or so small and
+medium fish spread across the frame at different depths, each a different
+vivid color: a bright red-orange platy, a golden yellow fish, a school of small
+fish with glowing electric blue and red stripes, a deep blue betta with long
+flowing fins, a black fish with a silver sheen, an orange and white goldfish,
+a turquoise and red disc-shaped cichlid. The colors spread evenly so no part of
+the frame is empty, reds and oranges in front, blues and blacks a little
+deeper. Deep green stem plants, broad leaves and a dark substrate behind them,
+clear water, a few tiny bubbles. Soft overhead aquarium light from the upper
+left, the greens kept deep so every fish reads as a bright spot of color. Shot
+at 50mm, f/5.6, the nearest fish sharp and the farthest gently soft. No glass
+reflections, no equipment, no hoses, no hands, no people, no text, no
+watermark. Landscape 3:2.
+**Check:** at least five clearly different fish colors are visible, no fish is
+deformed or has extra fins or eyes, and there is no lettering anywhere.
+
+---
+
 ## Ember tetra set, 2026-10-31
 
 Seven frames, all 3:2 at 1168x784: the hub head (shared with the encyclopedia

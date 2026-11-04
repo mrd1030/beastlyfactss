@@ -90,6 +90,8 @@ frog, pen-tailed tree shrew) and Adobe Firefly for ids 287 to 296.
 | `glowlight-tetra-tank-setup.jpg` (guide hero, `public/assets/images/`), resized to 1168x784, not cropped | Adobe Firefly, partner model Gemini 3.1 (Nano Banana 2) | 2026-11-01 |
 | `glowlight-tetra-feeding.jpg` (guide hero, `public/assets/images/`), resized to 1168x784, not cropped | Adobe Firefly, partner model Gemini 3.1 (Nano Banana 2) | 2026-11-01 |
 | `glowlight-tetra-handling.jpg` (guide hero, `public/assets/images/`), resized to 1168x784, not cropped | Adobe Firefly, partner model Gemini 3.1 (Nano Banana 2) | 2026-11-01 |
+| `fish-color-and-diet-guide.jpg` (guide hero for the scheduled fish color and diet guide, `public/assets/images/`), resized from 1264x848 to 1168x784, not cropped | Adobe Firefly, partner model Gemini 3.1 (Nano Banana 2) | 2026-11-04 |
+| `fish-death-what-to-do-guide.jpg` (guide hero, `public/assets/images/`), arrived 1200x896 (4:3): scaled to 1168x872 and cropped to 3:2 at 1168x784, 60 px off the top (water above the plants) and 28 px off the bottom (cabinet) | Adobe Firefly, partner model Gemini 3.1 (Nano Banana 2) | 2026-11-04 |
 | `glowlight-tetra-health-issues.jpg` (guide hero, `public/assets/images/`), resized to 1168x784, not cropped | Adobe Firefly, partner model Gemini 3.1 (Nano Banana 2) | 2026-11-01 |
 | `glowlight-tetra-enrichment.jpg` (guide hero, `public/assets/images/`), resized to 1168x784, not cropped | Adobe Firefly, partner model Gemini 3.1 (Nano Banana 2) | 2026-11-01 |
 | `livebearers.jpg` (livebearer group page head, `public/assets/guides/`), resized to 1168x784, not cropped. Shows guppies, black mollies and swordtails, no platies | Adobe Firefly, partner model Nano Banana 2.1 | 2026-11-01 |
