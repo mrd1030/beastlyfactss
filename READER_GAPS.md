@@ -187,6 +187,7 @@ Grades are the reader's latest grade for that page. "n/g" means the page was nev
 | Target weight or body condition in numbers | ~13 | Open: savannah monitor (verified), ackie, gargoyle, fat-tail, blue-tongue skink adult weight, red-footed, sulcata growth, fire skink, mouse, zebra finch grams. |
 | Treatment specifics | ~10 | Ich temperature is open on the bristlenose and neon pages (verified); the shared ich guide now covers it. Goldfish ich, fin rot and dropsy doses (verified absent). Oscar metronidazole dose (verified). Euthanasia method on neon and cardinal (verified). Hermit crab and scorpion mites and quarantine are covered by the shared invertebrate guide. |
 | How to find the right vet | ~8 | Open: bearded dragon, ball python, cockatiel, cockatoo, hedgehog, savannah monitor, flying squirrel, tiger salamander (vet type). |
+| What to do when a fish dies, and how to dispose of it | all fish | Open. Asked by a reader through Ask Beastly 2026-11-04 ("What do I do with dead fish", "how to dispose of dead fish"). Several fish health guides say to take the body out first, but no page covers disposal (verified). Research notes exist: research/DEAD_FISH_RESEARCH.md. |
 
 ### Per article
 
