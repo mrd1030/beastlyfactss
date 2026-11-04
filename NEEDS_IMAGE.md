@@ -94,9 +94,21 @@ list when its photo lands.
 
 ## Guide heroes still needed
 
+- **When a fish dies guide** (added 2026-11-04): hero for
+  `content/guides/fish-death-what-to-do-guide.mdx`, slot
+  `/assets/images/fish-death-what-to-do-guide.jpg`, 3:2 at 1168x784, mozjpeg
+  quality 80, then `node scripts/generate-thumbnails.js` for the card and thumb
+  tiers. Prompt in IMAGE_PROMPTS.md ("When a fish dies guide hero"). No dead or
+  sick fish in frame: a calm, healthy planted tank with a test kit vial and a
+  small net on the rim, matching the frontmatter alt text "A calm planted
+  freshwater aquarium with a water test kit vial and a small fish net resting on
+  the rim of the tank". The frontmatter `image` line is set, so
+  check-images.mjs reports the file missing until it lands. One photo used
+  nowhere else on the site.
+
 The 17 animal-day heroes (docs/NOV_DEC_ANIMAL_DAYS.md) all landed on
 2026-10-18, owner-generated, installed at 1168x784 through mozjpeg at quality
-80. The 13 that arrived larger (1264x848 or 1728x1152) were scaled down, never up. None open.
+80. The 13 that arrived larger (1264x848 or 1728x1152) were scaled down, never up.
 
 ## Facts awaiting images
 
