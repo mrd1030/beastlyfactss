@@ -334,6 +334,7 @@ Grades are the reader's latest grade for that page. "n/g" means the page was nev
 | When a juvenile schedule becomes adult | 1 | Open: pacman (verified). |
 | Prey size rule | 1 | Open: tiger salamander (verified, no size rule). |
 | Culturing feeders | 2 | Mourning gecko fixed. Praying mantis open (verified). |
+| Feeding for color (colour) | 1 | Open: platy. Asked by a reader through Ask Beastly 2026-11-04 ("what to feed them so that their colour can come out"); no platy guide covers it (verified: the feeding guide mentions color only as discolored fins). |
 
 ### Per article
 
@@ -360,6 +361,7 @@ Grades are the reader's latest grade for that page. "n/g" means the page was nev
 | angelfish-feeding-guide | | A- | The two parasites are still unnamed (verified). |
 | rabbit-feeding-guide | | A- | "Roughly 70% of rabbits recover": could not confirm a source. |
 | hamster-feeding-guide | | B+ | "pick one and stay consistent" on free versus measured feeding (by design, still there). |
+| platy-feeding-guide | | untested | Feeding for color (colour): asked by a reader through Ask Beastly 2026-11-04, not covered (verified). |
 
 Untested feeding guides written after their species' test: box-turtle, budgie, conure, green-iguana, hermit-crab, hognose-snake, lovebird, russian-tortoise, whites-tree-frog (2026-09-09); argentine-tegu, california-kingsnake, canary, fire-bellied-toad, fire-skink, giant-millipede, green-anole, jacksons-chameleon, leaf-tailed-gecko, milk-snake, praying-mantis, quaker-parakeet, savannah-monitor, stick-insect, tiger-salamander, tokay-gecko (2026-09-16).
 

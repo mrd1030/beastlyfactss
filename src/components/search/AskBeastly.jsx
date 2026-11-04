@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Sparkles, Loader2 } from 'lucide-react';
 import TurnstileWidget, { isTurnstileEnabled } from '@/components/shared/TurnstileWidget';
-import AskReply from '@/components/ask/AskReply';
+import AskReply, { BetaTag } from '@/components/ask/AskReply';
 import { askQuestion, hasAskPass, isQuestion } from '@/lib/askBeastly';
 import { trackEvent } from '@/lib/analytics';
 
@@ -73,7 +73,7 @@ export default function AskBeastly({ query, askSignal = 0, onReply, hasResults =
             disabled={!canAsk}
             className="inline-flex items-center gap-1.5 bg-secondary text-secondary-foreground font-body font-bold text-sm px-4 py-2 rounded-full shadow-sm hover:opacity-90 disabled:opacity-50 transition-opacity"
           >
-            <Sparkles className="w-4 h-4" /> Ask Beastly
+            <Sparkles className="w-4 h-4" /> Ask Beastly <BetaTag inverse />
           </button>
           <span className="text-xs font-body text-muted-foreground">Get a short answer from our guides.</span>
         </div>

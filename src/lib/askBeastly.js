@@ -1,8 +1,10 @@
 // Ask Beastly, the browser half (docs/ASK_BEASTLY.md): asking POST /api/ask
 // and keeping the reader's recent conversations in this browser.
 //
-// A conversation is up to MAX_TURNS answers on one topic: the first question
-// plus follow-ups ("what about babies?"). A follow-up sends the previous
+// A conversation is the first question plus any number of follow-ups ("what
+// about babies?"): no cap per conversation since 2026-11-04 (owner), only the
+// worker's hourly limit per visitor. Its animal carries until the reader
+// names a different one. A follow-up sends the previous
 // question as context so the search keeps the animal and topic; the previous
 // answer is never sent. The worker says whether it treated the question as a
 // follow-up (followUp); when it did not (a different animal, or no context),
@@ -19,7 +21,6 @@ const KEY = 'beastly-ask-history';
 const EVENT = 'beastly-ask-history-change';
 const MAX_CONVERSATIONS = 30;
 const KEEP_DAYS = 7;
-export const MAX_TURNS = 3;
 
 export const ASK_HISTORY_EVENT = EVENT;
 
@@ -76,11 +77,7 @@ export function deleteConversation(id) {
   writeHistory(readHistory().filter((c) => c.id !== id));
 }
 
-// Only answers that gave the reader something count toward the cap: a
-// question the guides do not cover (or one that failed) does not use one up.
-const COUNTED = new Set(['answered', 'navigate', 'legal', 'refused', 'catalog', 'fact', 'gift', 'new_pet']);
-export const answersUsed = (c) => (c ? c.turns.filter((t) => COUNTED.has(t.reply?.result)).length : 0);
-export const canFollowUp = (c) => Boolean(c) && !c.closed && answersUsed(c) < MAX_TURNS;
+export const canFollowUp = (c) => Boolean(c) && !c.closed;
 
 // Only what the reader needs to see again goes in: the source chunks the test
 // site returns are dropped.
@@ -144,6 +141,11 @@ export async function askQuestion(question, captcha = '', conversationId = null)
   const clarify = lastTurn?.reply?.result === 'clarify';
   // After a fact, its url: the worker keeps its animal and skips it next.
   const fact = lastTurn?.reply?.result === 'fact' ? lastTurn.reply.fact?.url || '' : '';
+  // The conversation's animal: the last one the worker reported, so it
+  // carries past a question that names none ("she has 3 babies" after "I
+  // have a platy fish"). The worker uses it only when neither the question
+  // nor the previous one names an animal (owner, 2026-11-04).
+  const species = lastTurn ? [...current.turns].reverse().find((t) => t.reply?.species?.name)?.reply.species.name || '' : '';
 
   let reply = { result: 'unavailable' };
   try {
@@ -152,7 +154,7 @@ export async function askQuestion(question, captcha = '', conversationId = null)
     const res = await fetch('/api/ask', {
       method: 'POST',
       headers: { 'content-type': 'application/json', ...(token && { authorization: `Bearer ${token}` }) },
-      body: JSON.stringify({ question: q, captcha, ...(pass && { pass }), ...(prev && { context: { prev, ...(clarify && { clarify: true }), ...(fact && { fact }) } }) }),
+      body: JSON.stringify({ question: q, captcha, ...(pass && { pass }), ...(prev && { context: { prev, ...(clarify && { clarify: true }), ...(fact && { fact }), ...(species && { species }) } }) }),
     });
     reply = await res.json();
     if (reply.pass) savePass(reply.pass);
@@ -167,6 +169,16 @@ export async function askQuestion(question, captcha = '', conversationId = null)
   const items = readHistory();
   const target = items.find((c) => c.id === conversationId);
   let conversation;
+  // The hourly limit ends the chat (owner, 2026-11-04): the capped reply
+  // joins the conversation it interrupted and closes it, so the next
+  // question, once the hour allows, starts a new chat.
+  if (turn.reply.result === 'capped') {
+    conversation = target && !target.closed
+      ? { ...target, at: now, closed: true, turns: [...target.turns, turn] }
+      : { id: `${now}`, at: now, closed: true, turns: [turn] };
+    writeHistory([...items.filter((c) => c.id !== conversation.id), conversation]);
+    return conversation;
+  }
   if (prev && reply.followUp && !legal && target && canFollowUp(target)) {
     conversation = { ...target, at: now, turns: [...target.turns, turn] };
     writeHistory([...items.filter((c) => c.id !== target.id), conversation]);

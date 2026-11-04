@@ -8,7 +8,7 @@ import { formatDay } from '@/lib/utils/verifiedDates';
 // One Ask Beastly reply, drawn the same way in the search page box and the
 // floating chat. `compact` is the chat's smaller type.
 //
-// Results: answered | fact | gift | new_pet | legal | no_match come from the worker as written.
+// Results: answered | fact | gift | new_pet | statement | legal | no_match come from the worker as written.
 // refused (the model declined or failed) still carries the matched pages, so
 // they show as plain links. capped and unavailable never read as errors: a
 // sentence and a way to the normal search.
@@ -80,6 +80,21 @@ function Links({ links, onNavigate }) {
 // The search page matches the whole typed text against titles, summaries and
 // tags, so a full question finds nothing there. When the reply names the
 // animal, the link searches for the animal instead, which lists its guides.
+// The Beta pill (owner, 2026-11-04): next to the chat title and inside the
+// search page's Ask Beastly button. Text only, so a screen reader reads it
+// as part of the name ("Ask Beastly Beta"). `inverse` is for the orange
+// button, where the pill sits on the button's own text color.
+export function BetaTag({ inverse = false }) {
+  return (
+    <span
+      title="Ask Beastly is new and still learning"
+      className={`inline-flex items-center rounded-full px-1.5 py-px text-[10px] font-body font-bold uppercase tracking-wider leading-4 ${inverse ? 'bg-secondary-foreground/20 text-secondary-foreground' : 'bg-secondary/15 text-secondary'}`}
+    >
+      Beta
+    </span>
+  );
+}
+
 const searchLink = (q, reply) => `/search/${encodeURIComponent(reply?.species?.name || q)}/`;
 
 // One animal in one state, straight from the legal matrix (the worker never
@@ -218,17 +233,23 @@ export default function AskReply({ question, reply, compact = false, hasResults 
   // "He's acting weird" with no animal named: the worker asks which one. In
   // the chat the reader's next message carries the question; it does not use
   // up one of the conversation's answers.
-  // A thank-you gets a short one back, no links.
+  // A thank-you gets a short one back, no links. Small talk has none either,
+  // except the apology after "this is useless", which links the search and
+  // contact pages.
   if (reply.result === 'clarify' || reply.result === 'thanks' || reply.result === 'greeting') {
     return (
-      <p className={`font-body ${text} text-foreground`} aria-live="polite">{reply.answer}</p>
+      <div aria-live="polite">
+        <p className={`font-body ${text} text-foreground`}>{reply.answer}</p>
+        <Links links={reply.links} onNavigate={onNavigate} />
+      </div>
     );
   }
 
   // "What animals do you cover": the count, a group's listing or the whole
   // catalog, with the category pages as links. A new pet ("I just got a
-  // hamster, what do I do") draws the same way: one line and its care guide.
-  if (reply.result === 'catalog' || reply.result === 'new_pet') {
+  // hamster, what do I do") and a statement ("I have a platy fish") draw the
+  // same way: one line and the animal's care guide.
+  if (reply.result === 'catalog' || reply.result === 'new_pet' || reply.result === 'statement') {
     return (
       <div aria-live="polite">
         <p className={`font-body ${text} text-foreground leading-relaxed`}>{reply.answer}</p>
@@ -297,7 +318,7 @@ export default function AskReply({ question, reply, compact = false, hasResults 
   return (
     <p className={muted} aria-live="polite">
       {reply.result === 'capped'
-        ? "That's all the questions for now. Try again in a little while, or "
+        ? "That's all the questions for now, so this chat ends here. Come back in a little while to start a new one, or "
         : "I couldn't look that up right now. Try again in a moment, or "}
       <Link to={searchLink(question, reply)} onClick={onNavigate} className="font-semibold text-secondary hover:underline">search the site</Link>.
     </p>
