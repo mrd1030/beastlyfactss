@@ -82,8 +82,8 @@ export const canFollowUp = (c) => Boolean(c) && !c.closed;
 // Only what the reader needs to see again goes in: the source chunks the test
 // site returns are dropped.
 function keepable(reply) {
-  const { result, answer = '', links = [], emergency = false, species = null, legal = null, health = false, fact = null, missing = null, disclosure = '' } = reply || {};
-  return { result: result || 'unavailable', answer, links, emergency, species, legal, health, fact, missing, disclosure };
+  const { result, answer = '', links = [], emergency = false, species = null, group = null, legal = null, health = false, fact = null, missing = null, disclosure = '' } = reply || {};
+  return { result: result || 'unavailable', answer, links, emergency, species, group, legal, health, fact, missing, disclosure };
 }
 
 // The 30-minute pass the worker hands back after one Turnstile check, so the
@@ -144,8 +144,13 @@ export async function askQuestion(question, captcha = '', conversationId = null)
   // The conversation's animal: the last one the worker reported, so it
   // carries past a question that names none ("she has 3 babies" after "I
   // have a platy fish"). The worker uses it only when neither the question
-  // nor the previous one names an animal (owner, 2026-11-04).
-  const species = lastTurn ? [...current.turns].reverse().find((t) => t.reply?.species?.name)?.reply.species.name || '' : '';
+  // nor the previous one names an animal (owner, 2026-11-04). When the last
+  // topic was a group instead ("tetras", "fish"), its id goes as
+  // context.group, so "what do they eat" after "tell me about tetras"
+  // stays on the tetras.
+  const topic = lastTurn ? [...current.turns].reverse().find((t) => t.reply?.species?.name || t.reply?.group?.id) : null;
+  const species = topic?.reply?.species?.name || '';
+  const group = !species ? topic?.reply?.group?.id || '' : '';
 
   let reply = { result: 'unavailable' };
   try {
@@ -154,7 +159,7 @@ export async function askQuestion(question, captcha = '', conversationId = null)
     const res = await fetch('/api/ask', {
       method: 'POST',
       headers: { 'content-type': 'application/json', ...(token && { authorization: `Bearer ${token}` }) },
-      body: JSON.stringify({ question: q, captcha, ...(pass && { pass }), ...(prev && { context: { prev, ...(clarify && { clarify: true }), ...(fact && { fact }), ...(species && { species }) } }) }),
+      body: JSON.stringify({ question: q, captcha, ...(pass && { pass }), ...(prev && { context: { prev, ...(clarify && { clarify: true }), ...(fact && { fact }), ...(species && { species }), ...(group && { group }) } }) }),
     });
     reply = await res.json();
     if (reply.pass) savePass(reply.pass);
