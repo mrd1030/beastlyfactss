@@ -675,6 +675,15 @@ Sonnet switch (`ASK_MODEL_COMPARE`) are the owner's only.
 Left for later on purpose (owner, 2026-11-03); pick back up if the log
 shows them on real questions.
 
+- **From the 2026-11-04 long conversation test (test site).** (1) "how big
+  does a leopard gecko get" said the guides give no adult length and
+  answered with enclosure size: check whether the encyclopedia entry has the
+  figure and the search missed it. (2) A leopard gecko feeding answer kept
+  "Sources vary on the exact adult number" (source talk the clean-up
+  missed). (3) "do they need a heat mat" for a crested gecko found nothing.
+  (4) The crested gecko misting answer ended garbled: "This daily wet-dry
+  swing is kept at 60 to 80%."
+
 - **Guides that cite their sources inline.** Some article bodies say "per
   veterinary sources" or "enthusiast sites cite" next to a figure (the
   bearded dragon feeding guide's hatchling schedule, for one). Haiku copies
