@@ -96,17 +96,7 @@ list when its photo lands.
 
 The 17 animal-day heroes (docs/NOV_DEC_ANIMAL_DAYS.md) all landed on
 2026-10-18, owner-generated, installed at 1168x784 through mozjpeg at quality
-80. The 13 that arrived larger (1264x848 or 1728x1152) were scaled down, never up.
-
-- **Fish color and diet guide** (added 2026-11-04, scheduled in
-  `content/_scheduled-tetras/fish-color-and-diet-guide.mdx`): hero
-  `fish-color-and-diet-guide.jpg`, 3:2 at 1168x784, through mozjpeg at quality
-  80. A planted aquarium with a mix of different colored fish (owner,
-  2026-11-04), matching the frontmatter alt text "A planted aquarium full of
-  colorful fish: red, orange, yellow, blue and black fish swimming among green
-  plants". Prompt in IMAGE_PROMPTS.md.
-  One photo used nowhere else on the site. Needed before the guide moves into
-  `content/`.
+80. The 13 that arrived larger (1264x848 or 1728x1152) were scaled down, never up. None open.
 
 ## Facts awaiting images
 
