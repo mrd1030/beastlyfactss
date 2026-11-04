@@ -398,3 +398,95 @@ The guide ships with one in-body link (the spotting-a-sick-fish guide, in "When 
 - RELATED_ARTICLES: already wired on 2026-11-04 against angelfish, betta-fish, black-skirt-tetra, bristlenose-pleco, cardinal-tetra, corydoras-catfish, discus, ember-tetra, goldfish, guppy, koi, molly, neon-tetra, oscar, platy, rummy-nose-tetra, swordtail and zebra-danio (inserted after 'spotting-a-sick-fish-guide' where present). scripts/check-related-articles.mjs counts content/_scheduled-* slugs as on disk, so it passes, and GuideDetail drops slugs with no published post (`.filter(Boolean)`), so nothing dangles before the guide ships. Add 'glowlight-tetra': [..., 'fish-color-and-diet-guide'] when the glowlight hub moves out of content/_scheduled-tetras/hubs.js. No ARTICLE_TOPIC entry (Wild Animals only).
 - Hero: needs a 1168x784 hero at /assets/images/fish-color-and-diet-guide.jpg, a red or orange platy or swordtail, one photo used nowhere else; the slot is in NEEDS_IMAGE.md under "Guide heroes still needed". The guide must not move into content/ without it.
 - Internal links: one in the body by owner instruction (2026-11-04); the candidates above are for the owner to pick from.
+
+---
+
+## Betta color, 2026-11-04
+
+Owner question: what DOES help a betta's (Betta splendens) color. Budget about 10 pages, ceiling 12. Same reading rules as the top of this file; "IDEAS record" means the RePEc IDEAS bibliographic page, which carries the publisher's full abstract; "curl" means the page HTML was downloaded and read as text.
+
+Pages opened: 10 requests. Content returned by 7: a Europe PMC search batch on betta diet and color (137 hits, 60 records with abstracts read), the IDEAS record for Clotfelter et al. 2007, the Oxford Academic page for the same paper (abstract only, methods paywalled), the ASEAN Journal of Scientific and Technological Reports article page (Kattakdad et al. 2021), a second Europe PMC search batch on betta color change and stress (299 hits, 50 records read), the Seriously Fish Betta splendens page (curl) and the PetMD betta care sheet (curl). Three returned nothing usable: the bio-conferences.org spirulina abstract (bot wall), the Europe PMC full-text request for Lichak et al. 2022 (500), and the NCBI efetch copy of the same paper (abstract only, publisher restricts the full text). Two web searches were run; their result extracts are not cited. OpenAlex was not used (daily rate limit exhausted).
+
+### Sources added
+
+| # | Source | Tier | Access | URL |
+|---|--------|------|--------|-----|
+| F33 | Clotfelter ED, Ardia DR, McGraw KJ (2007). "Red fish, blue fish: trade-offs between pigmentation and immunity in Betta splendens." Behavioral Ecology 18(6):1139-1145. DOI 10.1093/beheco/arm090 | Peer-reviewed, betta | IDEAS record (full abstract); Oxford Academic page opened, methods behind the paywall, so the carotenoid used, dose, duration and sample size were not read | https://doi.org/10.1093/beheco/arm090 |
+| F34 | Kattakdad S, Saowakoon K, Udduang S (2021). "Utilization of Sweet Potato as Pigment Source in Siamese Fighting Fish (Betta splendens) Feed." ASEAN Journal of Scientific and Technological Reports 24(2):70-79. DOI 10.55164/ajstr.v24i2.242161 | Peer-reviewed (university journal, TCI index), betta | Journal article page (full abstract), curl | https://ph02.tci-thaijo.org/index.php/tsujournal/article/view/242161 |
+| F35 | Saekhow S, Thongprajukaew K, Phromkunthong W (2019). "Blue aquarium background is appropriate for rearing male Siamese fighting fish (Betta splendens)." Aquaculture International 27(3):891-903. DOI 10.1007/s10499-019-00374-6 | Peer-reviewed, betta | Europe PMC record (full abstract) | https://doi.org/10.1007/s10499-019-00374-6 |
+| F36 | Thongprajukaew K, Malawa S, Nuntapong N, Hahor W (2024). "Optimal aquarium shape for rearing male Siamese fighting fish (Betta splendens)." Aquacultural Engineering 107:102474. DOI 10.1016/j.aquaeng.2024.102474 | Peer-reviewed, betta | Europe PMC record (full abstract) | https://doi.org/10.1016/j.aquaeng.2024.102474 |
+| F37 | Tang S, Janpoom S, Prasertlux S, Rongmung P, Ratdee O, Zhang W, Khamnamtong B, Klinbunga S (2022). "Transcriptome comparison for identification of pigmentation-related genes in different color varieties of Siamese fighting fish Betta splendens." Comparative Biochemistry and Physiology Part D 43:101014. DOI 10.1016/j.cbd.2022.101014 | Peer-reviewed, betta (genes, no diet) | Europe PMC record (abstract) | https://doi.org/10.1016/j.cbd.2022.101014 |
+| F38 | Seriously Fish, Betta splendens (last revised 2026; same page as BETTA SB51, reread) | Established husbandry reference (species page, allowed under docs/RULES.md) | curl | https://www.seriouslyfish.com/species/betta-splendens/ |
+| F39 | PetMD, "Betta Fish Care Sheet", written by Maria Zayas, DVM (updated April 27, 2026; same page as BETTA SB23, reread) | Veterinarian-written | curl | https://www.petmd.com/fish/betta-fish-care-sheet |
+| F29 (reread in batch) | Thongprajukaew et al. 2025, betta shipping recovery | Peer-reviewed, betta | Europe PMC record (full abstract), same as above | https://pmc.ncbi.nlm.nih.gov/articles/PMC12291930 |
+
+Seen in the search batches, not used for color (no color result in the abstract): Lichak et al. 2022, "Care and Use of Siamese Fighting Fish (Betta Splendens) for Research", Comparative Medicine 72(3):169-180 (abstract only; the husbandry text could hold color lines but was not readable); Iwata et al. 2021, BMC Zoology 6:15 (enriched rearing lowers aggression and cortisol, no color measured); Xu et al. 2026, Animals 16(2):247 (aquatic plants in small betta tanks lowered ammonia and surface breathing, no color measured); Oliveira et al. 2021 (female choice on male personality and body color, result not in the abstract lines read).
+
+Search extracts only (not opened, not citable): an Indonesian thesis and journal article on astaxanthin in betta feed with "7.5%" as the best dose for brightness and hue (dose unit unclear); a 2020 study of astaxanthin-enriched Daphnia on red color in halfmoon bettas (outcome not shown); a 2023 crab shell waste trial, 40 days, 45 fish (color effect unclear); a 2024 BIO Web of Conferences paper on Spirulina platensis in betta feed (page blocked, results not seen).
+
+### 1. Diet
+
+- Clotfelter et al. (IDEAS record, verbatim): "We found that male redness is underlain by carotenoids and that females preferred to associate with red males over blue males". "Redder fish given supplemental carotenoids increased in both immune response (to a phytohemagglutination challenge) and redness compared with controls. In contrast, bluer fish given supplemental carotenoids did not become more red but instead benefited immunologically more so than either control or redder supplemented fish." Also: "Because vertebrates cannot synthesize carotenoids, limited dietary availability may impose a trade-off between maintaining ornamental coloration and health." (F33)
+- Kattakdad et al. (abstract, verbatim): diets of "control feed, 5 % orange sweet potato (OrSP), 5 % yellow sweet potato (YeSP) and 5 % purple sweet potato (PuSP)", total carotenoids "15.63, 42.61, 38.79 and 32.32 mg/kg, respectively"; "Two-month male fishes" from a commercial farm; "After the 8 weeks rearing period", growth and FCR "were not significantly different between treatment groups (p > 0.05)"; "The lightness (L*) of fish fed with the control feed showed the highest value"; "The redness (a*) of fish fed with 5 % OrSP and 5 % YeSP was higher than in the other treatments (p ≤ 0.05)"; "the fish fed with 5% OrSP showed the highest carotenoid accumulation in skin and scale, dorsal fin, anal fin and caudal fin". The abstract does not name the color variety of the males. (F34)
+- Already in this file: Dorce et al. 2025, annatto oil extract (an orange-red plant pigment) in red females for 28 days, skin color unchanged (F27); Gauer et al. 2025, pitaya bark extract in blue males for 21 days, color unchanged (F28).
+- Seriously Fish (curl, verbatim): captive fish "should be offered plenty of small live or frozen foods such as Daphnia, Artemia or chironomid larvae (bloodworm) regularly to ensure development of optimal colour and condition." (F38)
+- Varieties: Tang et al. 2022 compared "mono-color (Red, Blue, Black, White and Yellow), bi-color (Cambodian) and multi-color (Marble) varieties"; "A C > T2520 SNP in BsFzd4 and 10 of 11 SNPs in BsTyrp1a were found only in Black", with tyrosinase and Tyrp1a expression differing among varieties (F37). Tyrosinase and Tyrp1 are melanin-pathway genes, so a Black betta's black is set by its genes and its own melanin (F1: "Melanophores are capable of synthesizing their own melanin").
+- Verdict: SUPPORTED, betta-specific, two studies: carotenoids in the food make a red betta redder (F33, controlled experiment, peer-reviewed, the strongest betta result found), and a carotenoid-bearing feed (5 percent orange or yellow sweet potato) raised redness and fin and skin carotenoid in young males over 8 weeks with no growth cost (F34). Blue bettas on the same supplement did not redden (F33). Not every pigment source works: annatto (F27) and pitaya bark (F28) changed nothing. Dose and duration for F33 were NOT READ (paywall). Which varieties respond: red, by F33; orange and yellow are carotenoid colors by the general rule (F1, F2) but no betta trial tested those varieties by name. Which cannot: blue, by F33; metallic, green and steel sheens are structural by the general rule (F1), not tested in a betta; black is melanin under genetic control (F37, F1). Astaxanthin, spirulina, marigold, paprika, shrimp or krill meal in a betta trial: NOT FOUND at a citable tier (search extracts only, above).
+
+### 2. Stress and color
+
+- Thongprajukaew et al. 2025 (reread, verbatim): "Color parameters, digestive enzyme activities, muscle quality, and whole-body composition of fish 8 days after shipping were comparable to the control fish group (p > 0.05)." The abstract gives a 0 to 12 day series but does not report that color dropped first. (F29)
+- PetMD (curl, verbatim): water issues are "a very common root cause of stress and illness"; "Doing a water change and increasing the temperature is often the first step in improving husbandry." (F39)
+- Verdict: PARTLY. Color matches unshipped fish by day 8 (F29). Stress stripes or horizontal barring as a betta stress sign: NOT FOUND at any citable tier in two Europe PMC batches. A rate of color loss after transport: NOT FOUND.
+
+### 3. Water and environment
+
+- Saekhow et al. 2019 (Europe PMC record, verbatim): solid red males reared 8 weeks against "five aquarium backgrounds (transparent, white, red, blue, and black)"; "Skin coloration (in terms of lightness and redness), muscle RNA concentration, and muscle RNA/protein ratio did not differ in the fish reared on blue background ... relative to the control with transparent background." Growth was best on blue. The abstract reports the color comparison only for blue against transparent. (F35)
+- Thongprajukaew et al. 2024 (Europe PMC record, verbatim): solid red males in square, rectangular and two triangular aquaria (180 mL, 6 cm deep) for eight weeks: "No differences in morphometrics, skin coloration, muscle quality, and whole-body composition were observed." (F36)
+- PetMD (curl): temperature "76 to 81 F (many bettas do best toward the warmer end of that range, but stability is more critical than absolute value)" (the source writes the range with a dash); a heater prevents "temperature fluctuations which are very stressful to fish". No color link stated. (F39)
+- Seriously Fish (curl): "fares best in a well-planted, shady aquarium with plenty of surface cover". No color link stated. (F38)
+- Verdict: what was tested made no difference to a red male's color: a blue background against a clear tank (F35), aquarium shape (F36). Temperature, water quality, tank size, enrichment and lighting tied to betta color: NOT FOUND. Do not write that a background or a bigger tank "brings out" color.
+
+### 4. Behavior and condition
+
+- Breeding: Seriously Fish (verbatim): "The nuptial female becomes paler in colour and dark bars appear on the flanks." "Males are more colourful and develop more-extended fins than females". (F38)
+- Display: Seriously Fish photo caption, "Opercular flaring is a typical aggressive response in this species." No color statement. (F38)
+- Health: PetMD lists among "Signs of a Healthy Betta": "Bright, vibrant coloration"; and "A 'happy' betta is usually a healthy one: good color, intact fins, normal activity, and an eagerness to eat." Contact an expert for "New spots, growths, or unusual changes in appearance". (F39) Cross-species: Merck lists "dulled coloration" and paleness among disease signs (F19, verified above, not reopened).
+- Sexual selection: females "preferred to associate with red males over blue males" (F33).
+- Verdict: SUPPORTED for breeding dress in females (paler with dark flank bars) and for good color as a health sign (vet source). Flaring and color: NOT FOUND (flaring is described, not its color). Age-related fading in bettas: NOT FOUND.
+
+### Not found (this pass)
+
+- A betta trial with astaxanthin, beta carotene, spirulina, marigold, paprika, shrimp or krill meal, opened and readable. Only search extracts (Indonesian astaxanthin work, enriched Daphnia, crab shell, spirulina conference paper).
+- The carotenoid, dose, duration and fish count in Clotfelter et al. 2007 (paywall).
+- A named-variety trial on orange, yellow, green, metallic or black bettas.
+- Stress stripes or barring as a stress sign in males or non-breeding females.
+- How fast color fades after transport (only "back to control by day 8").
+- Temperature, water quality, lighting, tank size or enrichment effects on betta color.
+- Color while flaring; color fading with age.
+
+### Kept without a source (owner review)
+
+Nothing was edited in an article, so nothing was kept as written. Two existing lines this pass bears on, for the owner:
+- betta-fish-feeding-guide.mdx FAQ, "the color claim on the label is the part with the least support for this fish": F33 and F34 now show carotenoids do redden red bettas, so the line overstates the doubt. Proposed replacement below.
+- fish-color-and-diet-guide.mdx, "Bettas have the least evidence behind color food of any fish here": now outdated on the same grounds. Proposed replacement below.
+
+### Proposal (a): betta section of the color guide (not applied)
+
+Replace the body of "## Bettas" in content/_scheduled-tetras/fish-color-and-diet-guide.mdx with:
+
+> A red betta's red is carotenoid color, and food moves it. When male bettas ranging from blue to red were given extra carotenoids, the redder fish turned redder than unsupplemented fish, while the bluer fish did not redden at all and put the pigment into immune response instead. Not every pigment source works: red females fed annatto oil extract for four weeks showed no change in skin color. The blue, green and metallic sheens of many varieties are reflected light, and a black betta's black is melanin the fish makes for itself, so food does not touch either. A female ready to spawn turns paler and shows dark bars along her flanks, which is breeding dress, not illness.
+
+Sources: F33 (Clotfelter 2007), F27 (Dorce 2025, already in the block), F1 (Ligon and McCartney, already in the block), F38 (add "Betta splendens" to the existing Seriously Fish entry: same site, count unchanged). Owner decision: the block is at the cap of 6, and F33 (Behavioral Ecology) shares no journal with an existing entry, so it would make 7. If the owner keeps the cap, drop the first two sentences' study result and keep the rest, which stands on entries already in the block; the guide then says only "Red, orange and yellow bettas carry carotenoid color, the kind food can deepen", which is the general rule (F1, F2), not a betta result.
+
+### Proposal (b): betta feeding guide color line (not applied)
+
+Replace the paragraph at line 70 of content/guides/betta-fish-feeding-guide.mdx ("Extra pigment in the food has little evidence behind it for bettas. ...") with:
+
+> Food can deepen a red betta's red but cannot turn a blue betta red. In a feeding experiment, redder males given extra carotenoids turned redder than unsupplemented fish, while bluer males on the same supplement stayed blue and gained in immune response instead. Not every pigment works: red females fed annatto oil extract for 28 days showed no change in skin color. What reliably brings out color and condition is the small live and frozen food on the menu above, with daphnia, brine shrimp and bloodworms offered regularly.
+
+And replace the FAQ answer to "Should I buy a color-enhancing food for my betta?" with:
+
+> "For a red betta it can help, since carotenoids in the food made red bettas redder in a feeding trial. For a blue betta it does nothing for the color. Choose a pellet for its protein level and a meat-first ingredient list first, and add small live or frozen foods regularly."
+
+Sources: F33 (Clotfelter 2007), F27 (Dorce 2025, already cited), F38 (Seriously Fish Betta splendens). Owner decision: the feeding guide's block is at 6 and still carries two hobby sites (Bettafish.org, Aquarium Co-Op). Under docs/RULES.md they should go, since 4 non-hobby sources remain; removing them frees the two slots for F33 and F38. Any claim that loses its only source with them goes on BETTA_FISH_RESEARCH.md's owner review list. The sweet potato trial (F34) supports the same point but is not needed in either guide; it stays in this file.
