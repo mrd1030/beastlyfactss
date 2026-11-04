@@ -18,3 +18,7 @@ Notes:
 ## Kept without a source (owner review)
 
 None from the substrate pass: the new section is all sourced, and no existing substrate line was in the guide.
+
+## Kept without a source (owner review): color pass, 2026-11-04
+
+- betta-fish-feeding-guide.mdx: the new FAQ line "the color claim on the label is the part with the least support for this fish" is an inference from one annatto trial (FISH_COLOR F27; F28 is a second, non-carotenoid trial not cited in the guide). Full list in research/FISH_COLOR_RESEARCH.md, "Kept without a source (owner review): color pass, 2026-11-04".

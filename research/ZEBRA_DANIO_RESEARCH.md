@@ -13,3 +13,7 @@ Left out for the 6-source cap: gravel-type enrichment raised the share of viable
 ## Kept without a source (owner review)
 
 - "Fine gravel or sand both work well": no allowed source (Aquarium Co-Op, hobby site, is the only candidate in the block). (also elsewhere: no) [no review needed: weak but uncontroversial]
+
+## Kept without a source (owner review): color pass, 2026-11-04
+
+- zebra-danio-feeding-guide.mdx: "covers nutrition and coloration on its own" (pre-existing) stays as written; the new "The tank does more for that color than the menu" is an inference from FISH_COLOR F1 plus Seriously Fish SB50. Full list in research/FISH_COLOR_RESEARCH.md, "Kept without a source (owner review): color pass, 2026-11-04".

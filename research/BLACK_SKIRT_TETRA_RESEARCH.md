@@ -892,3 +892,7 @@ Owner rule (docs/RULES.md, "No hobby sites"): retailer care pages and blogs, hob
 - Handling guide FunFact: the black fades or deepens with the fish's mood. Was S22; the age fade stays on Seriously Fish. The FunFact source prop still reads "TFH Magazine and Seriously Fish"; owner decides. (also elsewhere: yes) [no review needed: duplicate]
 - Handling guide, acclimation: lights off; 30 to 60 minutes of mixing; net, do not pour (trip waste, pest snail eggs); drip only for sensitive animals such as Caridina shrimp; the long-shipping exception (temperature first, then the net or a detoxifier); the first meal a day or two later. Was Practical Fishkeeping acclimatising (S25, no named author). The Practical Fishkeeping study report left too; the tiger barb result now cites Saxby et al. (2010) directly. (also elsewhere: yes) [no review needed: common sense]
 - Tank setup guide: the GloFish color and set details the Skirt Tetra Mixed Set product page carried (S30), removed from Sources by owner decision 2026-11-01 (no product pages). (also elsewhere: yes, cost guide) [no review needed: weak but uncontroversial]
+
+## Kept without a source (owner review): color pass, 2026-11-04
+
+- black-skirt-tetra-feeding-guide.mdx: the new FAQ line "A black skirt has almost no red or orange to deepen, so an ordinary varied diet serves it just as well" is an inference from UF/IFAS VM114 (FISH_COLOR F30) and the fish's appearance. Full list in research/FISH_COLOR_RESEARCH.md, "Kept without a source (owner review): color pass, 2026-11-04".

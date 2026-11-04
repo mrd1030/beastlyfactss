@@ -215,3 +215,186 @@ Not in the block: Eşanu et al. 2015 (weak tier; the dyed-fish section can stand
 Each of those pages already has its own link count; adding one must stay inside the 4-link maximum per article, so check before editing.
 
 **Fact-level sentence for the platy feeding guide** (also in PLATY section 15): "Platies cannot make the red, orange and yellow pigments they show; those are carotenoids that arrive with food, and in an eight-week trial platies fed brine shrimp enriched with beta carotene carried about four times the skin carotenoid of fish fed plain brine shrimp and measured redder. A flake or pellet that lists spirulina, krill, astaxanthin or marigold, or carotenoid-enriched brine shrimp a few times a week, is the lever a keeper has, and it deepens a color the strain already carries rather than adding one." Sources: Abdollahi 2019 (F11), Nakano and Wiegertjes 2020 (F2). With that sentence under "What Platies Eat" and a matching FAQ, Ask Beastly's index (one chunk per section and one per FAQ set, scripts/build-ask-index.mjs) would return it for "what to feed platies so their color comes out", and the worker already rewrites "colour" to "color" before searching (public/_worker.js, added for this question). The cross-species guide would be a second hit once it ships.
+
+---
+
+## Per-species color evidence (added 2026-11-04, second session)
+
+Owner decision 2026-11-04: a quick search per fish species the site covers, about 2 pages each, 40 pages as a hard ceiling, reusing this file and each species' own research file first, stopping once one solid source covers the species, and writing the general rule for the color type where nothing species-specific turns up. Same reading rules as the top of this file. "OpenAlex record" means the abstract was read through the OpenAlex API (an inverted-index abstract rebuilt to text); "Europe PMC record" and "Europe PMC XML" as above; "curl" means the page HTML was downloaded and read as text.
+
+Pages opened this session: 21 requests, 15 of which returned content (the other 6 failed: two ASEP catalogue pages returned 404, a Wicri bibliography page 503, two OpenAlex searches 429 rate limits, and one Europe PMC full-text request 500). One web search was run (angelfish), whose result extracts are not cited. Well under the 40-page ceiling.
+
+### Sources added
+
+| # | Source | Tier | Access | URL |
+|---|--------|------|--------|-----|
+| F26 | Kouba A, Sales J, Sergejevová M, Kozák P, Masojídek J (2013, online 2012). "Colour intensity in angelfish (Pterophyllum scalare) as influenced by dietary microalgae addition." Journal of Applied Ichthyology 29(1):193-199. DOI 10.1111/jai.12010 | Peer-reviewed, angelfish | OpenAlex record (full abstract); Crossref record for the citation | https://doi.org/10.1111/jai.12010 |
+| F27 | Dorce LS, do Couto MVS, da Silva WV, Siqueira MS, do Carmo Ota E, Saturnino KC, Scardua MP, Neu DH, Martelli SM, Honorato CA (2025). "Mitigation of cold stress in red female betta (Betta splendens) through dietary supplementation with annatto (Bixa orellana L.) oil extract." Aquaculture International 33(2):100. DOI 10.1007/s10499-024-01767-y | Peer-reviewed, betta | Europe PMC record (full abstract) | https://doi.org/10.1007/s10499-024-01767-y |
+| F28 | Gauer PC, Ferreira ACV, Siqueira MS, Gimênes-Junior H, Abe HA, Fantini-Hoag L, Godoy AC, Honorato CA (2025). "Hydroalcoholic extract of pitaya (Hylocereus guatemalensis) supplied in the diet for blue Betta splendens and its effects on fish pigmentation." Anais da Academia Brasileira de Ciências 97(2):e20240212. DOI 10.1590/0001-3765202520240212 | Peer-reviewed, betta | Europe PMC record (full abstract) | https://doi.org/10.1590/0001-3765202520240212 |
+| F29 | Thongprajukaew K, Malawa S, Poolthajit S, Nuntapong N, Hahor W (2025). "Recovery of Male Siamese Fighting Fish (Betta splendens) After Overland Shipping." Animals 15(14):2156. DOI 10.3390/ani15142156 | Peer-reviewed, betta | Europe PMC record (full abstract) | https://pmc.ncbi.nlm.nih.gov/articles/PMC12291930 |
+| F30 | Francis-Floyd R. "Fish Nutrition" (VM114), UF/IFAS Extension. DOI 10.32473/edis-fa096-2002 | Extension | PDF read directly (pdftotext) | https://edis.ifas.ufl.edu/publication/FA096/pdf |
+| F1 (reread) | Ligon and McCartney 2016, full text | Peer-reviewed review | Europe PMC XML, PMC5804272 | https://pmc.ncbi.nlm.nih.gov/articles/PMC5804272 |
+| F2 (reread) | Nakano and Wiegertjes 2020, full text searched for ornamental species | Peer-reviewed review | Europe PMC XML | https://pmc.ncbi.nlm.nih.gov/articles/PMC7699198 |
+| F23 (reread) | Seriously Fish, Paracheirodon axelrodi and Paracheirodon innesi | Established husbandry reference | curl | https://www.seriouslyfish.com/species/paracheirodon-axelrodi/ ; https://www.seriouslyfish.com/species/paracheirodon-innesi/ |
+| P12 / F32 (reread) | Merck Veterinary Manual, "Nutritional Diseases of Fish" (Petty, Francis-Floyd and Yanong; full review May 2022, updated June 2026 per the page) | Veterinary reference | Fetch tool | https://www.merckvetmanual.com/exotic-and-laboratory-animals/aquarium-fish/nutritional-diseases-of-fish |
+
+Seen in search batches, not used: Malawa et al. 2023 (Aquaculture 577:739980), red color "fully redeveloped" in regenerated betta fins kept in fermented herb water (a water treatment, not a diet); Malawa et al. 2023 (Aquaculture International 30:3269), Indian almond leaf extract in betta water, skin coloration measured but the abstract shown does not give the color result; Khieokhajonkhet et al. 2026 (Veterinary World 19(7)), gac aril powder and oil in goldfish diets for 10 weeks, abstract cut off before the results; Kattakdad et al. 2026 (Aquaculture Nutrition), roselle extract in fancy carp, pigmentation result cut off. None is cited.
+
+### Reread findings that change what can be cited
+
+- Merck "Nutritional Diseases of Fish" (fetch tool): the page says nothing about carotenoids, pigment, color or vitamin A. Variety, quoted: "Feeding a wide variety of feeds is one way to try to meet the nutritional requirements." So Merck Nutritional cannot carry a diet-and-color sentence in any guide.
+- UF/IFAS VM114 (verbatim): "crustacean by-products serve as a source of carotenoid pigments that are excellent for color enhancement. There is a high oil content associated with carotenoid pigments, so vitamin E supplementation is recommended when these are used." VM114 is already in the black skirt and goldfish feeding guides, and it is the same school as the cardinal guide's CIR921 entry, so it can share that entry without raising the count.
+- Seriously Fish cardinal and neon pages (curl): the Diet sections say each "does best when offered a varied menu" with live and frozen chironomid larvae, mosquito larvae, Daphnia and Moina; neither ties diet to color. Notes, quoted, same on both pages: "The fish are also able to change the intensity of their overall colour pattern to an extent, becoming lighter in bright conditions with pale substrate or background and clear water, and duller with a violet lateral stripe at night, and this may also be a response designed to make them less visible." The cardinal page adds that the fish spawn at night and "exhibit their night-time colour pattern throughout", and that "Rio Negro and Orinoco populations differ in colour pattern".
+- Ligon and McCartney full text: covers the neon directly. "accordion-style changes in stack compression have been observed in the neon tetra"; Lythgoe and Shand "found that shining a white light on the lateral stripes of tetras caused an increase in the distance between adjacent reflecting platelets and an associated shift toward reflecting more long-wavelength light, even in decapitated fish"; neon iridophores hold "an opsin-based visual pigment"; the Venetian blind model "has recently been convincingly and empirically validated" (citing Yoshioka et al., the neon paper). Also: "Iridophores do not contain an actual 'pigment' molecule, rather the mutable arrangement of guanine platelets ... is a dynamic form of structural coloration"; "Rapid color change on the scale of seconds to hours, termed physiological color change"; low epinephrine darkens and high epinephrine lightens skin in the anole example. So F1 alone can carry the neon stripe mechanism in kind; F6 (Gur) is the neon-specific tilt paper.
+- Nakano and Wiegertjes full text: no goldfish, koi, discus, cichlid, guppy, angelfish, tetra, swordtail, betta or oscar content beyond a reference to the platy Artemia paper (F11). It cannot stand in for the species trials.
+
+### Angelfish
+- Kouba et al. 2013 (OpenAlex record, verbatim): a microalgae product "characterised by a high content (approximately 5% w/w) of the carotenoid astaxanthin was included in a basal diet at 0.25, 0.50, 1.00 and 2.00 g per 100 g as a substitute for wheat flour", fed "at 3% of live weight to three replicates of 10 fish each for a period of 28 days". "No significant influence of the microalgae addition was detected (P > 0.05) on the final live weight of the fish." Image-software color components were mixed: "Red, Hue, Value and L* were not linearly related" to inclusion, and where related "correlation coefficients were 0.66 at most". But "When visual evaluation (the most common assessment approach in practice) was used, the judges clearly confirmed that the colour changes were directly related to increasing levels of microalgae inclusion." (F26)
+- Verdict: SUPPORTED, angelfish-specific, one study: an astaxanthin source raised color as judged by eye within 4 weeks, instrument readings mixed, no growth effect. The cichlid conversion rule (F3: Perciformes cannot make astaxanthin from other carotenoids) applies in kind.
+
+### Betta
+- Dorce et al. 2025 (Europe PMC record, verbatim): 150 juvenile red females "(initial weight 0.997 ± 0.038 g and 3.909 ± 0.268 cm)" fed "for 28 days with diets containing increasing levels of annatto oil extract: 0.00; two; 4; 6- and 10-mL.kg⁻¹ diet". "No differences were observed regarding animal performance and survival. The oily extract did not change digestive and liver functions and skin color." (F27)
+- Gauer et al. 2025 (verbatim): pitaya bark extract at 0.24, 0.45 and 0.90 mg/kg of feed for 21 days in male blue bettas "did not change the coloration of blue beta fish (P>0.05)"; conclusion "does not affect skin coloration." (F28) Pitaya pigments are not carotenoids, and a blue betta's blue is structural by the general rule, so this is weak evidence about carotenoids.
+- Thongprajukaew et al. 2025 (verbatim): males shipped by road for two days; "Color parameters, digestive enzyme activities, muscle quality, and whole-body composition of fish 8 days after shipping were comparable to the control fish group"; an "8-day recovery time is an appropriate protocol". The abstract does not say color dropped first, so it supports only "back to normal by day 8". (F29)
+- Already in this file: F21 (betta varieties differ in carotenoid and pteridine gene expression).
+- Verdict: two betta diet trials found no color change; no positive betta carotenoid trial was found. Write "little evidence", never "does not work".
+
+### Black skirt tetra
+- Reused, verified in BLACK_SKIRT_TETRA_RESEARCH.md: Seriously Fish "The intense black colouration of juveniles does fade as they grow" (S21) and DFO "fading to a silvery grey" (S14); best colours "when there are some dense areas of planting, with some floating vegetation added to dim the light" (S21); dyed specimens "injected with garishly coloured dyes ... The process is very stressful to the fish, and often shortens their lifespan considerably" (S21). F30 for crustacean carotenoids. No new search: one solid source already covers the species.
+
+### Bristlenose pleco
+- No species-specific source found (one Europe PMC search across Ancistrus, Corydoras, Loricariidae and Callichthyidae for coloration, pigmentation, melanophores, color change or albino: 222 hits, all taxonomy, barcoding, cytogenetics or husbandry). General rule only: browns and blacks are melanin made by the fish, and shade changes within seconds to hours through hormones and nerves (F1).
+
+### Cardinal tetra
+- Reused: Linhares et al. 2018 (C4, F22), intense light paled the stripes through fewer melanophores, red intensified. Seriously Fish reread (above): lighter in bright conditions over pale substrate, duller with a violet stripe at night, night pattern kept through spawning, regional color-pattern differences. No diet-and-color source for the species.
+
+### Corydoras
+- No species-specific source found (same search as the bristlenose; the one Corydoras husbandry protocol, Chiang et al. 2024 in JAALAS, would not load as full text). General rule only, as for the bristlenose.
+
+### Discus
+- Reused: Tu et al. 2022 (F15). No new search.
+
+### Ember tetra
+- Reused: Seriously Fish "Adult males are more intensely-coloured, especially when in spawning condition"; females rounder-bodied (EMBER S1, paraphrase in that file). No diet-and-color source for the species; the carotenoid rule (F2) applies in kind.
+
+### Glowlight tetra
+- Reused: Seriously Fish "tends to be more colourful when kept in acidic conditions"; "Use fairly dim lighting"; "can appear a little washed out in very spartan setups"; small live and frozen foods "For the best condition and colours" (GLOWLIGHT S1). No new search.
+
+### Goldfish
+- Reused: Elshafey et al. 2023 (F16), Maoka 2011 (F3), and F30. One Europe PMC search on goldfish color change with age and light returned nothing citable in the records shown (the gac trial above was cut off). Paripatananont 1999 (F25) still unopened.
+
+### Guppy
+- Reused: Grether 2000 (F5), Grether, Hudon and Endler 2001 (F4), Seriously Fish (G22, females "larger, plumper and generally exhibit dull colouration"). No new search.
+
+### Koi
+- Reused: Maoka 2011 (F3: Cyprinidae convert zeaxanthin to astaxanthin; zeaxanthin from spirulina used as a red for goldfish and ornamental carp; astaxanthin the principal crustacean carotenoid) and Shi et al. 2026 (F17, light spectrum). No new search.
+
+### Molly
+- No species-specific diet-and-color source found (one Europe PMC search on Poecilia sphenops, latipinna, mexicana, sailfin and black molly with carotenoid, astaxanthin, pigmentation, coloration, melanin or melanophore: 193 hits, none on diet and color). General rule only: a black molly's black is melanin (F1); gold and orange forms carry carotenoid color, which has to be eaten (F1, F2). MOLLY M9 (USGS) already says black mollies are hybrid trade forms.
+
+### Neon tetra
+- Reused: Seriously Fish N12 and reread (above), Gur et al. 2015 (F6), Yoshioka et al. 2011 (F7), and the F1 full-text lines above. No new search.
+
+### Oscar
+- Reused: Alishahi et al. 2015 (F14). No new search.
+
+### Platy
+- Reused: PLATY_RESEARCH.md section 15 (P26 to P33). No new search.
+
+### Rummy-nose tetra
+- Reused: Seriously Fish S21 and S22, "if the fish are not in good condition the red colour can fade considerably", "Its colours will become faded if kept in alkaline conditions", "A varied diet such as this is essential for the best colour development", pH 5.5 to 7.0. Krill and salmon-based foods carry astaxanthin by F2 and F3 (krill is a listed astaxanthin source; astaxanthin is fed to color salmonid flesh). No new search.
+
+### Swordtail
+- Reused: Ezhil et al. 2008 (F12), Heliyon 2023 (F13). No new search.
+
+### Zebra danio
+- Reused: Seriously Fish SB50 (better coloration "in a heavily-planted set-up with a dark substrate"), Patterson and Parichy (F9, three pigment cell classes), Ligon and McCartney (F1, agouti and background matching in zebrafish). No new search.
+
+---
+
+## Feeding guide color passages (applied 2026-11-04)
+
+Every fish feeding guide in content/guides/ plus the scheduled glowlight feeding guide got a sourced color sentence or tightened an existing one, and one color FAQ (koi's FAQ carries the carp conversion point the body leaves out). No new internal links. lastUpdated moved to 2026-11-04 on all 19; lastReviewed untouched. No corrections ledger entry: none of the changes reverses a claim a reader would have acted on (the header rule in src/lib/data/corrections.js), they add or scope color material.
+
+Sources added per guide (count after): angelfish +Kouba (5); betta +Dorce (6, at cap); black skirt none (5, F30 and Seriously Fish already cited); bristlenose +Ligon (5); cardinal none, CIR921 entry turned into a combined UF/IFAS entry that also lists VM114 (6, count unchanged); corydoras +Ligon (4); discus +Tu (5); ember +Nakano (5); goldfish +Elshafey (4); guppy +Grether 2000 (5); koi +Maoka (5); molly +Ligon, Merck entry now lists Disorders and Diseases of Fish beside Nutritional Diseases (5); neon +Gur (6, at cap); oscar +Alishahi (5); platy +Abdollahi, +Nakano, Merck entry now lists Disorders and Diseases of Fish (5); rummy-nose +Nakano (4); swordtail +Ezhil (4); zebra danio +Ligon (5); glowlight none (4).
+
+Platy note: the "vegetables ... support better color" clause the owner asked to replace was already gone from the live guide (an earlier pass rewrote it to "a couple of times a week for variety"), so the proposed sentence was added after the vegetables paragraph and nothing was removed. "About four times" became "more than four times" (112.4 against 24.31 μg/g is 4.6 times), and the proposed "rather than adding one" became "and cannot add one" because the guide was already at the contrast-cadence limit.
+
+---
+
+## Kept without a source (owner review): color pass, 2026-11-04
+
+Claims written or left in place in this pass that no cited source states directly. Nothing was cut.
+
+Feeding guides:
+- Neon: "a school that gets them a few times a week shows it in color" (pre-existing, line 89; Seriously Fish says only that a varied menu is best). FAQ "Color-enhancing and plant-based foods help maintain coloration and immune function on their own" (pre-existing, not edited). New FAQ "nothing in the diet alters it" about the stripe: inference from the stripe being structural (F6, F1).
+- Zebra danio: "covers nutrition and coloration on its own" (pre-existing, kept); new "The tank does more for that color than the menu": inference from F1 plus Seriously Fish.
+- Betta: new FAQ "the color claim on the label is the part with the least support for this fish": inference from F27 (and F28, not cited in the guide).
+- Black skirt: new FAQ "A black skirt has almost no red or orange to deepen, so an ordinary varied diet serves it just as well": inference from F30 and the fish's appearance.
+- Discus: "for a red or orange discus a pellet listing astaxanthin earns its place": inference from F15.
+- Ember: "the one ingredient check worth making": a recommendation built on F2.
+- Corydoras and bristlenose: that their browns, blacks and bronze are melanin and reflective cells is the general rule (F1) applied to the species, not a species measurement.
+
+Color guide (content/_scheduled-tetras/fish-color-and-diet-guide.mdx):
+- "The pattern, the black markings and the variety a fish was bred as come with the fish" and FAQ "Can food turn my fish a different color?": supported for platies by PLATY P6 and P7, which are not in the guide's Sources block (cap).
+- FAQ "a new fish often looks washed out at first": general physiology (F1) plus Seriously Fish's night pattern; no source measures color after a move (F29 shows only that betta color matched controls 8 days after shipping, and F29 is not in the block).
+- Species sections that apply the general rule without a species source in the block: ember, cardinal and neon reds as carotenoid and pteridine color, angelfish silver and black bars, discus blue and green sheens, molly gold and orange, corydoras and bristlenose, guppy spots as carotenoid and pteridine color (F4 not in the block), that cichlids are Perciformes for Maoka's conversion rule.
+
+---
+
+## Color guide: sources cap and the claims that need sources it does not carry
+
+The guide's Sources block is at the cap of 6: Ligon and McCartney (F1); Marine Drugs, Nakano and Wiegertjes (F2) with Maoka (F3); Aquaculture International, Abdollahi (F11), Alishahi (F14) and Dorce (F27); Ezhil (F12); Seriously Fish species pages (F23); Merck, Disorders and Diseases of Fish (F19) with Parasitic Diseases of Fish (ich "dark coloration", MOLLY M8). The species sections would need these further sources to carry their own species results, so those results were left out of the guide and the sections state the general rule instead. Owner decision needed on whether to raise the cap:
+- Angelfish: Kouba et al. 2013 (F26), astaxanthin microalgae and judged color over 28 days.
+- Discus: Tu et al. 2022 (F15), beef heart and commercial feed least red, astaxanthin diets redder, spirulina raised brightness and yellowness.
+- Goldfish: Elshafey et al. 2023 (F16), spirulina and canthaxanthin enriched Artemia, most intense color and fewest chromatic deformities.
+- Guppy: Grether 2000 (F5), males on more carotenoid more attractive in all six populations; Grether, Hudon and Endler 2001 (F4), drosopterins made by the fish.
+- Neon: Gur et al. 2015 (F6), crystal tilt from blue-green to indigo (F1 already carries the mechanism in kind, so this one is optional).
+- Cardinal: Linhares et al. 2018 (F22), intense light pales the stripes.
+- Stress darkening as a social signal: Höglund et al. 2000 (F8).
+- Cichlid breeding dress: Liang et al. 2020 (F10).
+- Koi under blue light: Shi et al. 2026 (F17).
+Eşanu et al. 2015 (F20) stays out of every Sources block (owner, 2026-11-04); the dyed-fish section rests on Seriously Fish alone.
+
+---
+
+## Links to add when the color guide ships
+
+Do not add these until content/_scheduled-tetras/fish-color-and-diet-guide.mdx is in content/. Each line names the sentence the link would sit in and the guide's current internal link count (the check's maximum is 4, encyclopedia links included).
+- platy-feeding-guide.mdx (3 now): "Platies cannot make the red, orange and yellow pigments they show; those are carotenoids that arrive with food." Link "carotenoids".
+- angelfish-feeding-guide.mdx (3): "Pigment in the food does show up in the skin." Link "Pigment in the food".
+- betta-fish-feeding-guide.mdx (2): "Extra pigment in the food has little evidence behind it for bettas." Link "Extra pigment in the food".
+- black-skirt-tetra-feeding-guide.mdx (3): "No menu holds the deep black of a young black skirt." Link "No menu".
+- bristlenose-pleco-feeding-guide.mdx (3): "Food does not set a bristlenose's color." Link "Food does not set".
+- cardinal-tetra-feeding-guide.mdx (3): "the crustaceans among them (brine shrimp, cyclops, daphnia and moina) also carry carotenoid pigments, the ingredient that color-enhancing foods rely on." Link "color-enhancing foods".
+- corydoras-catfish-feeding-guide.mdx (2): "Color is not something to feed for in a cory." Link "feed for".
+- discus-feeding-guide.mdx (2): "Beef heart brings little color with it." Link "little color".
+- ember-tetra-feeding-guide.mdx (3): "Fish cannot make carotenoids from scratch, and carotenoids are the pigments fish farms add to feed to color their fish". Link "Fish cannot make carotenoids".
+- goldfish-feeding-guide.mdx (3): "A goldfish's orange and red come from carotenoids, pigments no fish can make for itself, so they have to arrive in the food." Link "carotenoids".
+- guppy-feeding-guide.mdx (2): "Food also feeds a male guppy's orange." Link "feeds a male guppy's orange".
+- koi-feeding-guide.mdx (2): "The krill meal and spirulina in a color formula are both there for the reds." Link "color formula".
+- molly-feeding-guide.mdx (2): "What food can do for a molly's color depends on the color." Link "What food can do".
+- neon-tetra-feeding-guide.mdx (3): "The blue stripe is a different kind of color: it holds no pigment, and is light reflected from stacks of tiny guanine crystals inside the skin cells." Link "a different kind of color".
+- oscar-fish-feeding-guide.mdx (3): "The oranges and reds on an oscar are carotenoid color, and food moves them." Link "carotenoid color".
+- rummy-nose-tetra-feeding-guide.mdx (3): "Krill and salmon-based foods are also fed for color: both carry astaxanthin, a carotenoid pigment that fish cannot make and have to eat." Link "fed for color".
+- swordtail-feeding-guide.mdx (3): "A red swordtail's red is carotenoid color, which the fish cannot make and has to eat." Link "carotenoid color".
+- zebra-danio-feeding-guide.mdx (4, at the maximum): "Most of a danio's color is made by the fish itself". Adding it means dropping one existing link first (the encyclopedia sentence is the likeliest candidate); owner's call.
+- glowlight-tetra-feeding-guide.mdx (scheduled, 3): "They are also what brings a glowlight to its best condition and color." Link "best condition and color". Ships with the tetra set, so both go live together.
+
+## Candidate in-body links for the color guide (owner to pick)
+
+The guide ships with one in-body link (the spotting-a-sick-fish guide, in "When Lost Color Means Something Is Wrong"). Candidates, each with the sentence it would sit in and what the other page settles:
+- /blog/black-skirt-tetra-health-issues-guide/, in "Dyed and Injected Fish": "Some fish reach stores in colors they were never bred to carry, because dye has been injected under the skin." The black skirt health guide is the species page that covers dyed white skirts and GloFish.
+- /blog/cardinal-tetra-tank-setup-guide/, in "Light, Background and the Time of Day": "Neon and cardinal tetras turn lighter in bright light over a pale substrate in clear water". The setup guide holds the lighting and substrate choices that answer it (confirm the Linhares line is there before linking).
+- /blog/platy-feeding-guide/, in "Livebearers / Platy": "A flake or pellet listing spirulina, krill, astaxanthin or marigold, fed a few times a week, does the same job." The platy feeding guide has the full menu around that sentence.
+- /blog/rummy-nose-tetra-feeding-guide/ or /blog/freshwater-ph-gh-kh-guide/, in "When Lost Color Means Something Is Wrong": "a rummy-nose's red fades considerably when the fish is out of condition and fades in alkaline water". The pH guide settles how to bring alkaline water down.
+- /blog/aquarium-ich-treatment-guide/, same section: "ich pairs its white spots with dark coloration, lethargy and clamped fins". The ich guide is the treatment.
+- /blog/discus-feeding-guide/, in "Cichlids / Discus": "Discus reds and oranges follow the cichlid rule". The discus feeding guide carries the beef-heart trial result.
+- /blog/koi-feeding-guide/, in "Goldfish and Koi": "spirulina, a zeaxanthin source, is used across the industry as a red colorant for goldfish and ornamental carp". The koi guide has the seasonal color-formula schedule.
+
+## Release notes for the color guide
+
+- Ships with the glowlight tetra set from content/_scheduled-tetras/. On the day: move the file into content/guides/, restamp date, lastUpdated and lastReviewed to that Eastern date, run `node scripts/sync-articles.js` then `node scripts/check-rotation.mjs --assign` and commit src/lib/data/rotation.json.
+- RELATED_ARTICLES: already wired on 2026-11-04 against angelfish, betta-fish, black-skirt-tetra, bristlenose-pleco, cardinal-tetra, corydoras-catfish, discus, ember-tetra, goldfish, guppy, koi, molly, neon-tetra, oscar, platy, rummy-nose-tetra, swordtail and zebra-danio (inserted after 'spotting-a-sick-fish-guide' where present). scripts/check-related-articles.mjs counts content/_scheduled-* slugs as on disk, so it passes, and GuideDetail drops slugs with no published post (`.filter(Boolean)`), so nothing dangles before the guide ships. Add 'glowlight-tetra': [..., 'fish-color-and-diet-guide'] when the glowlight hub moves out of content/_scheduled-tetras/hubs.js. No ARTICLE_TOPIC entry (Wild Animals only).
+- Hero: needs a 1168x784 hero at /assets/images/fish-color-and-diet-guide.jpg, a red or orange platy or swordtail, one photo used nowhere else; the slot is in NEEDS_IMAGE.md under "Guide heroes still needed". The guide must not move into content/ without it.
+- Internal links: one in the body by owner instruction (2026-11-04); the candidates above are for the owner to pick from.
