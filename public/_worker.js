@@ -2593,9 +2593,16 @@ async function askLimit(env, request) {
   const visitor = (await sha256Hex(`${ip}|${day}`)).slice(0, 24);
   const hour = Math.floor(Date.now() / 3600000);
   const key = `ask:v:${visitor}:${hour}`;
-  const used = Number(await env.ASK_KV.get(key)) || 0;
-  if (used >= ASK.perVisitorPerHour) return { ok: false };
-  await env.ASK_KV.put(key, String(used + 1), { expirationTtl: 3700 });
+  // A failed KV call (the free plan's 1,000 writes a day running out) lets
+  // the question through rather than failing every visitor until the reset
+  // at 00:00 UTC (owner, 2026-11-04). The daily cap and Turnstile still hold.
+  try {
+    const used = Number(await env.ASK_KV.get(key)) || 0;
+    if (used >= ASK.perVisitorPerHour) return { ok: false };
+    await env.ASK_KV.put(key, String(used + 1), { expirationTtl: 3700 });
+  } catch {
+    return { ok: true };
+  }
   return { ok: true };
 }
 
@@ -2721,7 +2728,12 @@ async function handleAskInner(request, env, ctx, state) {
     });
   }
 
-  const log = (result, slugs = [], extra = {}, push = {}) => askLog(env, ctx, question, slugs, result, extra, push);
+  // Test site questions stay out of ask_log and off the phone (owner,
+  // 2026-11-04), so the gap list and the weekly counts hold readers only.
+  const onTestSite = new URL(request.url).hostname.endsWith('beastlyfactss-sharetest.pages.dev');
+  const log = (result, slugs = [], extra = {}, push = {}) => {
+    if (!onTestSite) askLog(env, ctx, question, slugs, result, extra, push);
+  };
 
   // The sharetest project (beastlyfactss-sharetest.pages.dev) is where Ask
   // Beastly is built and tested: there the per-visitor hourly limit is off

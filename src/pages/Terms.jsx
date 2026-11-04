@@ -30,7 +30,7 @@ export default function Terms() {
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
             <PageBadge icon={BadgeIcon} color="teal" />
             <h1 className="font-display font-bold text-3xl sm:text-4xl text-foreground mb-2">Terms of Service</h1>
-            <p className="text-xs text-muted-foreground font-body">Last updated: October 20, 2026</p>
+            <p className="text-xs text-muted-foreground font-body">Last updated: November 4, 2026</p>
           </motion.div>
         </div>
       </div>
@@ -48,7 +48,7 @@ export default function Terms() {
           </Section>
 
           <Section title="3. User Conduct">
-            <p>When interacting with any features on this Site (including comment sections, contact forms, or newsletter sign-ups), you agree not to:</p>
+            <p>When interacting with any features on this Site (including comment sections, contact forms, Ask Beastly, or newsletter sign-ups), you agree not to:</p>
             <ul className="list-disc pl-5 space-y-1">
               <li>Submit false, misleading, or harmful information.</li>
               <li>Attempt to disrupt, hack, or interfere with Site operations.</li>
@@ -74,6 +74,7 @@ export default function Terms() {
 
           <Section title="6. Disclaimer of Warranties">
             <p>The information on this Site is provided "as is" without warranties of any kind. While we strive for absolute accuracy, animal care information should always be verified with qualified veterinary professionals. BeastlyFacts.com is not liable for any decisions made based on content found on this Site.</p>
+            <p><strong className="text-foreground">Ask Beastly.</strong> Answers in the Ask Beastly chat are written by an AI model (Anthropic's Claude) from passages in our own guides, and only from those passages; a question the guides do not cover gets no answer rather than a guess. The answers are generated automatically and are not reviewed before you see them, so they can be incomplete, out of date or wrong, and they know nothing about your animal beyond what you typed. An answer is general information, not veterinary advice, a diagnosis or a treatment plan. If your animal seems unwell, contact a vet. Legality answers repeat our animal law pages as of the date shown on them and are not legal advice. Ask Beastly is provided as is, is limited to a number of questions per hour and per day, and may be paused or withdrawn at any time; the disclaimer above applies to everything it says.</p>
           </Section>
 
           <Section title="7. External Links & Affiliate Programs">

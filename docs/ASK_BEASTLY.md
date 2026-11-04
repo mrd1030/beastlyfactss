@@ -522,6 +522,12 @@ with no policies; only the worker's service role writes. Once a week, pull
 every `no_match` row into READER_GAPS.md: real questions the guides do not
 answer yet.
 
+Kept 12 months (owner, 2026-11-04): the pg_cron job `ask-log-retention`
+(supabase/ask_log_retention.sql) deletes older rows daily at 08:20 UTC. The
+privacy policy, section 6, promises it, so it stays scheduled. Questions
+asked on the sharetest host are neither logged nor pushed (owner,
+2026-11-04), so the gap list and weekly counts hold readers only.
+
 Pushes to the owner's phone through ntfy (owner, 2026-11-02, on a Fable
 recommendation). Since 2026-11-03 they go out from Supabase, not the worker:
 ntfy.sh's free quota is per sending IP, Cloudflare's shared addresses use it
@@ -562,6 +568,34 @@ Haiku 5.5 is $0.10 per million input tokens and $0.50 per million output under
 $0.00025, so 4,000 answers per dollar. The 1,000 a day cap holds the worst day
 near $0.25, about $7.50 a month, under the $10 Console spend limit, which is
 the backstop. Misses and legal answers cost nothing.
+
+## Upkeep
+
+What keeps it answering (Fable review, 2026-11-04), by risk:
+
+1. Cloudflare KV free plan: 1,000 writes a day, reset 00:00 UTC. A question
+   takes 1 write (hourly limit) plus 1 for each answer, so roughly 500 to 900
+   questions a day use it up. The hourly limit fails open since 2026-11-04 (a
+   failed KV call lets the question through instead of answering every visitor
+   with nothing); the daily cap's write sits inside the answer's try, so a
+   failure there shows links. Workers Paid ($5 a month, 1 million KV writes)
+   removes the ceiling if the KV dashboard shows more than about 400 writes a
+   day.
+2. Anthropic credits and the $10 Console spend limit: a dead balance or the
+   limit turns every answer into links ("No answer, links shown" on the
+   phone). Auto reload on in the Console.
+3. `NTFY_TOKEN` on the Pages Production environment: the contact form awaits
+   ntfy and shows an error when ntfy refuses the shared anonymous quota.
+4. Model retirement: `claude-haiku-5-5` retires no sooner than 2027-10-07,
+   with at least 60 days' email notice. A retired model also shows as links.
+   Swap `ASK_MODEL`, mind the `thinking` field (Sonnet 5.5 rejects
+   `disabled`), and rerun docs/ASK_BEASTLY_TEST.md on the sharetest host first.
+5. D1 and Supabase limits: not close. Never run `ASK_INDEX_FORCE=1` twice in
+   one UTC day.
+
+The sharetest host is behind Cloudflare Access since 2026-11-04, which also
+covers its `/api/ask`, so its open hourly limit, returned sources and the
+Sonnet switch (`ASK_MODEL_COMPARE`) are the owner's only.
 
 ## Open items
 
