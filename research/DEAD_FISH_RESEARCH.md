@@ -21,6 +21,8 @@ Strongest first.
 | D3 | Merck Veterinary Manual, Pet Owner Version: "Disorders and Diseases of Fish." Francis-Floyd R and coauthors including Petty D (University of Florida College of Veterinary Medicine); full review February 2020, last updated April 2026 | Veterinary reference | Page HTML read directly (verbatim) | https://www.merckvetmanual.com/all-other-pets/fish/disorders-and-diseases-of-fish |
 | D4 | Francis-Floyd R, Watson C, Petty D, Pouder DB. "Ammonia in Aquatic Systems." UF/IFAS Extension FA16 (original May 1990, revised February 2009 and June 2022). DOI 10.32473/edis-fa031-2022 | University extension | PDF read directly (verbatim) | https://edis.ifas.ufl.edu/publication/FA031/pdf |
 | D5 | Washington Invasive Species Council (Recreation and Conservation Office): "Pet Owner" | .gov (state) | Fetch tool | https://invasivespecies.wa.gov/find-solutions/pet-owner/ |
+| D6 | Minnesota Department of Natural Resources: "Aquarium owners" | .gov (state) | Opened by the owner on the desktop, 2026-11-04; page text pasted into the session (verbatim) | https://dnr.state.mn.us/invasives/aquarium-owners.html |
+| D7 | Hennepin County (Minnesota) Environment and Energy: "Pet store disposal guidelines for aquatic plants and animals" (34-405-12-23) and "Aquatic Invasive Species (AIS) prevention: How garden center and pet store staff can help" | County government | Opened by the owner on the desktop, 2026-11-04; both PDFs shown to the session as page images (verbatim) | https://www.hennepin.us/-/media/hennepinus/business/conservation/Pet-store-disposal-guidelines.pdf ; https://www.hennepin.us/-/media/hennepinus/business/conservation/prevention-tips.pdf |
 
 Not a separate source: an older copy of D1 (Klinger R, Francis-Floyd R, FA55, revised February 2010, reviewed June 2013) hosted by Texas A&M AgriLife Extension, read directly. Its text matches D1 on every point used here. Cite D1, the current revision. https://extension.rwfm.tamu.edu/wp-content/uploads/sites/8/2013/09/Submission-of-Fish-for-Diagnostic-Evaluation.pdf
 
@@ -71,7 +73,8 @@ Tried but not read (nothing cited from them):
 
 2.2 Household trash, bagged
 - No opened source names the trash. D2's principle (prevent pests and nontarget animals from reaching remains, reduce disease spread) supports a sealed bag.
-- Verdict: UNSUPPORTED as a named option. Edmonton's "garbage" advice is a search extract only.
+- D7 (verbatim, owner-opened) names the trash only for plants: "Freeze unwanted plants for 24 hours in a plastic bag, or heat in a microwave and then place in the trash." For live animals it points to the AVMA euthanasia guidelines and says "Disposal of live organisms should be considered as the last resort".
+- Verdict: UNSUPPORTED as a named option for a dead fish. Edmonton's "garbage" advice is a search extract only; Hennepin's trash advice is for plants.
 
 2.3 Burial (depth, distance from water, pets digging)
 - No opened source. D2's "prevent pests and other nontarget species from gaining access to animal remains" is the principle behind burying deep enough that a dog or wildlife cannot dig it up.
@@ -83,7 +86,9 @@ Tried but not read (nothing cited from them):
 
 2.5 Never release live fish into the wild
 - D5 (fetch tool): "Dumping those contents into a nearby lake, river, or wetland may make you feel like you are freeing the animals, but you may be introducing completely new species into the natural environment." and "Don't purchase, sell, trade, plant, or release invasive species." Alternatives (fetch tool): "consider the alternatives to getting rid of aquarium plants and animals, ... such as donating them to a responsible hobbyist or disposing of them at a pet store."
-- Verdict: SUPPORTED that release is harmful (D5). That release is illegal: NOT FOUND in an opened source (Kansas page blocked; search extracts name Illinois, Kansas and Minnesota bans). Do not write "illegal" without opening a state rule.
+- D6 (verbatim, owner-opened): "It is illegal to introduce non-native species into a free-living state, such as being released, planted or escaping into public waters because they can harm the environment, recreation, and the economy. Never release aquarium plants or animals into the environment".
+- D7 (verbatim, owner-opened): "Make sure plants and animals cannot escape or are not released into the environment." and, quoting the Minnesota DNR, regulated invasive species "may not be introduced into a free-living state, such as being released or planted in public waters." It also names "dumping pets and aquarium water where they may flow to a storm drain or surface water" as a release to avoid.
+- Verdict: SUPPORTED that release is harmful (D5, D6) and, for Minnesota, illegal for non-native species (D6). Write it as "in many states it is illegal" only with a second state in hand; otherwise "releasing it is harmful, and in Minnesota, for example, illegal". The Kansas FAQ and laws pages from the owner's search returned "not found" on 2026-11-04.
 
 2.6 Out of scope, flagged: D5 also says (fetch tool) "One option is to freeze fish or other aquatic animals, gradually slowing their metabolism." That is about euthanizing a live fish, and the site's spotting-a-sick-fish-guide.mdx already rules out freezing a live fish. Do not use D5 for euthanasia; if the topic comes up, D2's aquatic section is the source to read.
 
@@ -129,7 +134,7 @@ Tried but not read (nothing cited from them):
 - Flushing clogging plumbing.
 - Household trash as a named disposal option in an opened agency or vet source.
 - Burial depth, distance from water or wells, and pets or wildlife digging up a buried fish (beyond D2's general "prevent pests and other nontarget species from gaining access").
-- That releasing aquarium fish is illegal (state rules exist per search extracts; none opened).
+- That releasing aquarium fish is illegal beyond Minnesota (D6 covers Minnesota; the Kansas pages were not found).
 - A death-count threshold for calling a vet ("several deaths", "sudden losses").
 - How to tell a resting or shocked fish from a dead one.
 - Freezing a body for later disposal (only hobby extracts; conflicts with necropsy use, see 3.3).
