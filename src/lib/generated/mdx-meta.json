@@ -21925,7 +21925,7 @@
     ],
     "readTime": 6,
     "difficulty": "Beginner",
-    "image": null,
+    "image": "/assets/images/fish-death-what-to-do-guide.jpg",
     "imageAlt": "A calm planted freshwater aquarium with a water test kit vial and a small fish net resting on the rim of the tank",
     "emoji": "🫧",
     "lastReviewed": "2026-11-04",
@@ -21947,10 +21947,6 @@
       {
         "q": "What can I do with live fish I can no longer keep?",
         "a": "Give them to a responsible hobbyist, or ask a pet store to take them. Both keep the fish out of local waters, which is where an unwanted aquarium fish does its damage."
-      },
-      {
-        "q": "The other fish look healthy. Do I still need to test?",
-        "a": "Yes. Tankmates that look fine say nothing about the water, because ammonia, nitrite and low oxygen are invisible. Keep testing on a regular schedule and log each result, which is how a slow drift in the tank gets caught."
       }
     ],
     "relatedProducts": [],
@@ -21961,7 +21957,9 @@
     "truth": null,
     "sourceCount": 5,
     "headingCount": 8,
-    "ledeMatchesExcerpt": false
+    "ledeMatchesExcerpt": false,
+    "imageWidth": 1168,
+    "imageHeight": 784
   },
   {
     "path": "/content/guides/fish-quarantine-and-treatment-guide.mdx",
