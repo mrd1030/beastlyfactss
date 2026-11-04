@@ -591,3 +591,20 @@ shows them on real questions.
   a broken sentence ("For fry, to feed infusoria several times a day"), and
   the urgent-sign rule's own wording ("what the guides tie that sign to")
   comes back as "Our guides tie wheezing to...". Neither changes a fact.
+  Still open for those two shapes; the "so the guide suggests" family is
+  fixed, see below.
+
+Fixed (2026-11-03, on a Fable review of the bearded dragon worm answers):
+
+- A speaker plus verb after "so", "which is why" or "and so" ("They are
+  high in fat, so the guide suggests keeping them to occasional feedings")
+  left ", so keeping them to occasional feedings". The whole clause goes now
+  (`ASK_SO_ATTRIBUTION_RE`), leaving "They are high in fat."
+- One topic word between the determiner and the speaker ("the feeding guide
+  recommends") left "the feeding". The speaker rule allows the word.
+- "though some sources recommend daily greens" left "though daily greens".
+  The "though some ... recommend" rule now runs before the speaker rule and
+  takes "sources" or "guides" after "some", giving ", or daily greens".
+- Routing: "eaten" and "ate" join the eat synonym group, and "hasnt havent
+  hadnt didnt wasnt arent werent" are stopwords, so "my bearded dragon hasnt
+  eaten in 3 days" lands on the feeding guide's When to Worry.

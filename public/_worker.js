@@ -1372,7 +1372,7 @@ const ASK_STOPWORDS = new Set((
   'i if in into is it its itself just me more most my myself no nor not now of off on once only or other our ours ' +
   'out over own same she should so some such than that the their theirs them then there these they this those ' +
   'through to too under until up very was we were what when where which while who whom why will with would you ' +
-  'your yours yourself im ive id dont doesnt isnt cant wont thing things get got getting really much many lot ' +
+  'your yours yourself im ive id dont doesnt isnt cant wont hasnt havent hadnt didnt wasnt arent werent thing things get got getting really much many lot ' +
   'pet pets ok okay need want know tell please one ones also best good ideal right proper stop start make way ways ' +
   // Spoken filler (owner, 2026-11-02): readers type the way they talk ("like,
   // a hamster", "um so my gecko..."). Left in, these count as words the
@@ -1757,7 +1757,7 @@ const askIsWord = (t) => t.length > 1 && !ASK_STOPWORDS.has(t) && !ASK_FILLER_RE
 // question word matches its whole group, in the search and in coverage.
 const ASK_SYNONYMS = [
   ['tank', 'enclosure', 'cage', 'terrarium', 'vivarium', 'habitat', 'aquarium'],
-  ['eat', 'eating', 'feed', 'feeding', 'food', 'diet', 'appetite'],
+  ['eat', 'eating', 'eaten', 'ate', 'feed', 'feeding', 'food', 'diet', 'appetite'],
   ['cost', 'price', 'expensive', 'cheap', 'budget'],
   ['temperature', 'temp', 'heat', 'warm', 'basking'],
   ['sick', 'ill', 'illness', 'disease', 'symptoms'],
@@ -3034,17 +3034,26 @@ Rules:
 // becomes "..., and not to let a baby go 3 days". "Our guides don't cover X"
 // has no saying verb after the speaker, so the gap sentence is untouched.
 // When one is cut, a second reported "and that" goes too ("says A and that
-// B" becomes "A, and B").
-const ASK_ATTRIBUTION_RE = /\b((the|our|these|those|veterinary|published|scientific|most|many|some|several)\s+)?(guides?|sources?|emergency cards?|care guides?)\s+((also|do|does|both|further|specifically|all|generally)\s+)?(warn|note|say|state|list|explain|recommend|suggest|add|mention|stress|agree|advise|caution)s?\b\s*(that\s+)?,?\s*/gi;
+// B" becomes "A, and B"). One topic word may sit between the determiner and
+// the speaker ("the feeding guide recommends"), so the whole speaker goes
+// rather than leaving "the feeding" (2026-11-03).
+const ASK_ATTRIBUTION_RE = /\b((the|our|these|those|veterinary|published|scientific|most|many|some|several)\s+(\w+\s+)?)?(guides?|sources?|emergency cards?|care guides?)\s+((also|do|does|both|further|specifically|all|generally)\s+)?(warn|note|say|state|list|explain|recommend|suggest|add|mention|stress|agree|advise|caution)s?\b\s*(that\s+)?,?\s*/gi;
+// A speaker plus verb that carries its own clause after "so" ("..., so the
+// guide suggests keeping them to occasional feedings"): the clause goes with
+// it, since cutting the speaker alone leaves ", so keeping them..." (2026-11-03).
+const ASK_SO_ATTRIBUTION_RE = /,?\s+(so|which is why|and so)\s+((the|our|these|those|veterinary|published|most|many|some|several)\s+)?(\w+\s+)?(guides?|sources?|emergency cards?|care guides?)\s+((also|do|does|both|further|specifically|all|generally)\s+)?(warn|note|say|state|list|explain|recommend|suggest|add|mention|stress|agree|advise|caution)s?\b[^.!?]*/gi;
 
 function askRewriteSourceTalk(sentence) {
-  // Before the speaker rule, which would leave "the range on".
-  const ranged = sentence.replace(/\b(the )?range (that )?(most|many) sources agree on\b/gi, 'the usual range');
-  let out = ranged.replace(ASK_ATTRIBUTION_RE, '');
+  // Before the speaker rule, which would leave "the range on" and "though
+  // daily greens" (the "though some sources recommend" shape, 2026-11-03).
+  const ranged = sentence
+    .replace(/\b(the )?range (that )?(most|many) sources agree on\b/gi, 'the usual range')
+    .replace(/,?\s*(though|but|while)\s+(a couple|a few|some|one or two|others)\s+(of them\s+)?((sources|guides)\s+)?(recommend|suggest|say|advise)\b/gi, ', or');
+  const clauseCut = ranged.replace(ASK_SO_ATTRIBUTION_RE, '');
+  let out = clauseCut.replace(ASK_ATTRIBUTION_RE, '');
   if (out !== ranged) out = out.replace(/,?\s+and that\s+/gi, ', and ');
   out = out
     // Shapes that are not a speaker plus a verb, kept as their own rules.
-    .replace(/,?\s*(though|but|while)\s+(a couple|a few|some|one or two|others)\s+(of them\s+)?(recommend|suggest|say|advise)\b/gi, ', or')
     .replace(/,?\s*according to [^,.]*?sources?\b/gi, '')
     .replace(/^(according to|per|based on) (the |these |those |the provided )?sources?,?\s*/i, '')
     // "Stuck shed is covered in our shedding guide: soak..." keeps the advice.
