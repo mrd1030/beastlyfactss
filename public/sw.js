@@ -1,4 +1,13 @@
-const CACHE_NAME = "beastlyfacts-v2";
+// v3 (2026-11-04): v2 cached every response the site ever served (every
+// image, every build's scripts) and never deleted any of it. On a phone that
+// browses the site often, that store grew over months until page loads
+// crawled (owner, 2026-11-04: slow in a normal tab, instant in incognito).
+// The new name makes activate delete the v2 store on every visitor's next
+// visit; Pack's saved pages live in SAVED_CACHE_NAME and are kept.
+const CACHE_NAME = "beastlyfacts-v3";
+// Scripts, styles and fonts kept for offline use, newest first, capped so the
+// store cannot grow without limit across builds.
+const MAX_RUNTIME_ENTRIES = 60;
 // Separate from CACHE_NAME on purpose: this holds pages explicitly saved to
 // Pack (see the CACHE_SAVED_PAGE message below) and must survive a runtime
 // cache-name bump on its own version track, not get swept by activate's
@@ -31,24 +40,46 @@ self.addEventListener("activate", (event) => {
   self.clients.claim();
 });
 
+// Only three kinds of request are handled; everything else (images
+// above all) goes straight to the browser and its normal HTTP cache, which
+// the 30-day cache headers already make fast.
+//   - page loads: network first, falling back to a saved Pack page offline
+//   - facts.json: network first, cached for the offline Facts feed
+//   - scripts, styles, fonts: network first, a capped copy kept so a saved
+//     page can still run offline
 self.addEventListener("fetch", (event) => {
   const req = event.request;
   if (req.method !== "GET") return;
+  const url = new URL(req.url);
   // Cross-origin requests (GTM, analytics) are never worth caching and can
-  // throw on opaque no-cors responses - scope runtime caching to the app's
-  // own origin only.
-  if (new URL(req.url).origin !== self.location.origin) return;
+  // throw on opaque no-cors responses.
+  if (url.origin !== self.location.origin) return;
+
+  const isPage = req.mode === "navigate";
+  const isFacts = url.pathname === "/facts.json";
+  const isCode = ["script", "style", "font"].includes(req.destination);
+  if (!isPage && !isFacts && !isCode) return;
 
   event.respondWith(
     fetch(req)
       .then((response) => {
-        const copy = response.clone();
-        caches.open(CACHE_NAME).then((cache) => cache.put(req, copy));
+        if (!isPage && response.ok) {
+          const copy = response.clone();
+          event.waitUntil(
+            caches.open(CACHE_NAME).then(async (cache) => {
+              await cache.put(req, copy);
+              if (!isCode) return;
+              const keys = await cache.keys();
+              const code = keys.filter((k) => k.url.endsWith(".js") || k.url.endsWith(".css") || k.url.endsWith(".woff2"));
+              const extra = code.length - MAX_RUNTIME_ENTRIES;
+              for (let i = 0; i < extra; i++) await cache.delete(code[i]);
+            })
+          );
+        }
         return response;
       })
-      // caches.match() (called on the global CacheStorage, not a specific
-      // Cache) searches every open cache, so this also serves anything
-      // that only ever landed in SAVED_CACHE_NAME.
+      // caches.match() searches every open cache, so a page saved to Pack
+      // (SAVED_CACHE_NAME) is found here when the network is down.
       .catch(() => caches.match(req))
   );
 });
