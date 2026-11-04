@@ -1347,13 +1347,17 @@ async function handleCarePackageStore(request, env, pathname) {
 //      the IP and the Eastern date, and the IP itself is never stored)
 //   3. legal questions never reach the model: link the legal pages instead
 //   4. search; a weak best match returns no_match without calling the model
-//   5. 1,000 answers per day (ASK_KV, resets at midnight Eastern)
+//   5. 1,200 model calls per day, router and answer together (ASK_KV,
+//      resets at midnight Eastern)
 //   6. the model call (step 4 of the build)
 
 const ASK = {
   maxQuestion: 300,
   perVisitorPerHour: 12,
-  answersPerDay: 1000,
+  // Model calls a day across the site, in ASK_UNITS (router 1, answer 1):
+  // 1,200 is 600 answered questions, or 1,200 questions the router read
+  // and nothing answered, about $0.30 on the worst day (see askDailyUsed).
+  unitsPerDay: 1200,
   candidates: 40,
   topK: 4,
   tokenBudget: 3000,
@@ -2277,6 +2281,20 @@ function askGroupPhrases(group, meta) {
     .map((id) => meta.species.find((s) => s.guideId === id)?.name).filter(Boolean);
   return [...new Set([...names, ...hubs, ...(group.extra || [])].map((n) => askNormalize(n).replace(/"/g, '')))];
 }
+// Whether a group holds a species, from the site's own data: the animals
+// the group's search covers (its category pages, hubs and extras, as
+// askGroupPhrases lists them), or an animal that is itself the group word.
+function askGroupHas(group, species, meta) {
+  if (!group || !species) return false;
+  if (askSpeciesGroup(species, meta)?.id === group.id) return true;
+  return askGroupPhrases(group, meta).includes(askNormalize(species.name).replace(/"/g, ''));
+}
+// A question that is only a group word ("fish", "what about parrots", "tetra
+// please"): nothing beyond the group's word, the broad words and fillers.
+function askBareGroup(qOwn, group) {
+  return !qOwn.split(/[\s-]+/).map((t) => t.replace(/'s$|'/g, ''))
+    .some((t) => askIsWord(t) && !group.re.test(t) && !(t === 'fish' && group.slugs.includes('fish')) && !ASK_BROAD.has(t) && !ASK_CORRECTION.has(t));
+}
 // The catalog intent of a question, or null: { kind: 'count' | 'group' |
 // 'facts' | 'general', group }. `species` is the species the normal search
 // found, so a real animal name turns this off unless the name is itself a
@@ -2765,12 +2783,26 @@ async function askRetrieve(db, question, context = null, router = null) {
     ownSpecies = router.animal;
     ownTopicGroup = ownSpecies ? askSpeciesGroup(ownSpecies, meta) : router.group;
     if (ownTopicGroup) ownSpecies = null;
+    // "How do I get my parrot to eat" after the African grey (owner,
+    // 2026-11-04, from the live test: it asked "which parrot?"): a group
+    // word that holds the remembered animal means that animal, not a
+    // switch, whatever the router said about switched. Only a group the
+    // remembered animal is not in moves on. Membership comes from the
+    // site's own data (askGroupHas). A bare group word ("fish", "what about
+    // parrots") still lists the group, and a kind that never carries
+    // (catalog, small talk) keeps the group.
+    const staysOn = Boolean(ownTopicGroup && prev && remembered.species && !ASK_ROUTER_NO_CARRY.has(router.kind)
+      && !askBareGroup(qOwn, ownTopicGroup) && askGroupHas(ownTopicGroup, remembered.species, meta));
+    if (staysOn) {
+      ownSpecies = remembered.species;
+      ownTopicGroup = null;
+    }
     factAsk = router.kind === 'fact' && meta.facts.length > 0;
     // The carry ends when the router says the reader moved on, or read a
     // kind that is never about the remembered animal (the site itself,
     // small talk). With nothing named, the remembered animal or group is
     // the question's.
-    followUp = Boolean(prev) && !router.switched && !ASK_ROUTER_NO_CARRY.has(router.kind);
+    followUp = Boolean(prev) && (staysOn || (!router.switched && !ASK_ROUTER_NO_CARRY.has(router.kind)));
     if (followUp && !ownSpecies && !ownTopicGroup) {
       carriedSpecies = remembered.species;
       carriedGroup = remembered.group;
@@ -2809,6 +2841,17 @@ async function askRetrieve(db, question, context = null, router = null) {
     // question.
     const lastSpecies = prevSpecies || (!prevGroup ? remembered.species : null);
     const lastGroup = prevGroup || (!prevSpecies ? remembered.group : null);
+    // A group word that holds the conversation's animal ("my parrot" after
+    // the African grey) means that animal, as on the router path above. The
+    // animal is the last question's, else the remembered one (the last
+    // question may itself have been a group word for it: "do my fish need
+    // a heater" after the neon tetra). Not a bare group word, which lists
+    // the group, and not the reply to one of this file's own questions.
+    const member = prevSpecies || remembered.species;
+    if (ownTopicGroup && !context?.clarify && member && !askBareGroup(qOwn, ownTopicGroup) && askGroupHas(ownTopicGroup, member, meta)) {
+      ownSpecies = member;
+      ownTopicGroup = null;
+    }
     // A follow-up joins the conversation. A different animal or group starts a
     // new one. After "which animal?", only a reply naming an animal (or a
     // group, "a parrot") answers it; one that names none is a new question
@@ -3014,8 +3057,7 @@ async function askRetrieve(db, question, context = null, router = null) {
   // A bare group ("fish", "tetra", "I want to know about fish", "what about
   // parrots"): its guides listed, as the catalog does, with the group's hub
   // first when it has one (owner, 2026-11-04). Not after "which animal?".
-  if (ownTopicGroup && !(followUp && context?.clarify)
-    && (bare || !qOwn.split(/[\s-]+/).map((t) => t.replace(/'s$|'/g, '')).some((t) => askIsWord(t) && !groupWord(t) && !ASK_BROAD.has(t) && !ASK_CORRECTION.has(t)))) {
+  if (ownTopicGroup && !(followUp && context?.clarify) && (bare || askBareGroup(qOwn, ownTopicGroup))) {
     return found({ species: null, catalog: { kind: 'group', group: ownTopicGroup } });
   }
 
@@ -3202,15 +3244,32 @@ async function askLimit(env, request) {
   return { ok: true };
 }
 
+// The daily budget (owner, 2026-11-04): one KV counter, `ask:day`, in
+// model-call units, covering the router and the answer. It used to count
+// answers alone, so the router ran uncounted on a maxed day (about $0.60 a
+// day at 1,500 router calls, past the $10 Console limit over a month). A
+// unit is one Haiku call: the router (about 1,880 tokens in, 35 out, about
+// $0.00024 uncached) and the answer (about 1,850 in, 130 out, about
+// $0.00025) cost the same, so each is 1; the test site's Sonnet compare
+// costs about 20 times either, so it is 20. The counter is read once per
+// question, before the router (askDailyUsed), and written once at the end
+// with the units spent (askSpendUnits, from handleAsk), so a question
+// writes KV no more often than before: 1 for the hourly limit and 1 for
+// the day. A failed read lets the question through, like the hourly limit;
+// the Console spend limit is the backstop.
+const ASK_UNITS = { router: 1, answer: 1, compare: 20 };
 const askDayKey = () => `ask:day:${easternDate()}`;
 async function askDailyUsed(env) {
   if (!env.ASK_KV) return 0;
-  return Number(await env.ASK_KV.get(askDayKey())) || 0;
+  try {
+    return Number(await env.ASK_KV.get(askDayKey())) || 0;
+  } catch {
+    return 0;
+  }
 }
-async function askCountAnswer(env) {
-  if (!env.ASK_KV) return;
-  const used = await askDailyUsed(env);
-  await env.ASK_KV.put(askDayKey(), String(used + 1), { expirationTtl: 172800 });
+async function askSpendUnits(env, used, units) {
+  if (!env.ASK_KV || !units) return;
+  await env.ASK_KV.put(askDayKey(), String(used + units), { expirationTtl: 172800 });
 }
 
 async function askVerifyTurnstile(env, request, token) {
@@ -3255,10 +3314,16 @@ async function askPassValid(env, pass) {
   return diff === 0;
 }
 
-// The pass, when one was issued for this request, rides on the reply.
+// The pass, when one was issued for this request, rides on the reply. The
+// model-call units the question spent (state.units, see askDailyUsed) are
+// written to the day's counter once, here, whichever way the question ended.
 async function handleAsk(request, env, ctx) {
-  const state = {};
+  const state = { units: 0 };
   const res = await handleAskInner(request, env, ctx, state);
+  if (state.units) {
+    const spend = askSpendUnits(env, state.dayUsed || 0, state.units).catch(() => {});
+    if (ctx?.waitUntil) ctx.waitUntil(spend); else await spend;
+  }
   if (!state.pass && !state.read) return res;
   const data = await res.json().catch(() => null);
   return data ? storeJson({ ...data, ...(state.pass && { pass: state.pass }), ...(state.read && { read: state.read }) }, res.status) : res;
@@ -3369,13 +3434,21 @@ async function handleAskInner(request, env, ctx, state) {
   // Test site only: {"model":"sonnet"} runs the router and the answer on
   // Sonnet, for side by side comparisons. The live site always uses ASK_MODEL.
   const sonnet = body?.model === 'sonnet' && testing;
+  // The day's model-call budget (ASK.unitsPerDay, see askDailyUsed), read
+  // once here. On a maxed day the router is skipped (the rules run alone,
+  // the read logged as "rules only (capped)") and a question that needs the
+  // answer model gets the capped reply below; the free replies (a hub, the
+  // catalog, the law matrix) still answer.
+  state.dayUsed = await askDailyUsed(env);
+  const capped = state.dayUsed >= ASK.unitsPerDay;
   // The router, for everything the free checks above and below do not
   // settle: not a legal question (the law matrix answers those, no model),
   // not the reply to one of this file's own questions (the rules read it
   // from the question they asked). See askRouter.
   let routed = null;
   if (!context?.clarify && !askLooksLegal(askExpand(question, meta), meta)) {
-    routed = await askRouter(env, meta, question, context, sonnet);
+    routed = capped ? { read: null, reason: 'capped', units: 0 } : await askRouter(env, meta, question, context, sonnet);
+    state.units += routed.units;
     routerLine = askRouterLine(routed);
     routerRow = askRouterRow(routed);
     // The test site returns the read, for router-live.mjs and the chat's
@@ -3662,7 +3735,8 @@ async function handleAskInner(request, env, ctx, state) {
   const emergency = ASK_HEALTH_RE.test(found.qOwn)
     || Boolean(top && /-health/.test(top.slug) && ASK_HEALTH_RE.test(top.text.toLowerCase()));
 
-  if ((await askDailyUsed(env)) >= ASK.answersPerDay) {
+  // The day's budget, with what this question's router call already spent.
+  if (capped || state.dayUsed + state.units >= ASK.unitsPerDay) {
     log('capped', slugs);
     return quiet('capped', { species, emergency });
   }
@@ -3677,7 +3751,8 @@ async function handleAskInner(request, env, ctx, state) {
 
   let reply;
   try {
-    await askCountAnswer(env);
+    // Counted before the call: a call that fails was still made.
+    state.units += sonnet ? ASK_UNITS.compare : ASK_UNITS.answer;
     reply = await askHaiku(env, question, found.chunks, found.followUp ? prev : '', sonnet ? ASK_MODEL_COMPARE : ASK_MODEL);
   } catch {
     log('refused', slugs);
@@ -3722,7 +3797,7 @@ const ASK_SYSTEM = `You answer animal and pet care questions for Beastly Facts u
 Rules:
 - At most 3 short sentences, usually 2. Plain words. No lists. No em or en dashes.
 - Call the animal what the reader called it: "bunny" if they wrote bunny, "rabbit" if they wrote rabbit, "beardie" if they wrote beardie.
-- If nothing in the sources answers the question, reply exactly: NO_ANSWER. Do not describe a different condition instead.
+- If nothing in the sources answers the question, reply exactly: NO_ANSWER, with no other words. Do not describe a different condition instead, and do not answer a neighboring question (a live animal when the reader asked about a dead one, a different step, another animal). Never open an answer by saying what the guides do not cover or give: if that would be your first sentence, the reply is NO_ANSWER. The one exception is the health gap below.
 - Never add facts, numbers, doses, or brands that are not in the sources. Take each claim from the section that actually states it; do not credit one section with another's words.
 - Keep hedges from the sources (can, may, often). Do not make them stronger.
 - Never give medication doses. Never say a symptom is fine to wait out or to watch for now.
@@ -3807,7 +3882,7 @@ async function askHaiku(env, question, chunks, prevQuestion = '', model = ASK_MO
   const msg = await res.json();
   if (msg.stop_reason === 'refusal') return { kind: 'refused' };
   const text = (msg.content || []).filter((b) => b.type === 'text').map((b) => b.text).join('').trim();
-  return askParseReply(text, chunks, msg.stop_reason);
+  return askParseReply(text, chunks, msg.stop_reason, question);
 }
 
 // ---------------------------------------------------------------------------
@@ -3824,8 +3899,9 @@ async function askHaiku(env, question, chunks, prevQuestion = '', model = ASK_MO
 // rules read from the question they asked. When the router is slow (2.5
 // seconds), errors, refuses or returns something that does not check out,
 // the rules run alone, as they did before it, and the reader sees no
-// difference. It is not counted toward the daily answer cap and writes
-// nothing to KV; the hourly limit runs before it.
+// difference. It counts one unit toward the day's model-call budget
+// (askDailyUsed) and writes nothing to KV itself; the hourly limit and the
+// day's cap run before it.
 // ---------------------------------------------------------------------------
 const ASK_ROUTER_KINDS = ['care_question', 'fact', 'catalog', 'legal', 'gift', 'new_pet', 'statement', 'small_talk', 'thanks', 'frustration', 'confused', 'other'];
 // Kinds that get a fixed small talk reply, and kinds that never carry the
@@ -3951,23 +4027,29 @@ function askRouterRow(routed) {
   return { animal: r.animal?.name || null, group: r.group?.id || null, unknown: r.unknown || null, switched: r.switched, kind: r.kind, search: r.search };
 }
 
-// One router call. Returns { read, reason }: read is the checked result, or
-// null with the reason the rules ran alone (timeout, http 529, refusal, cut
-// off, invalid, no key, error). Never throws. Test site only: `compare` runs
-// it on Sonnet, like the answer. Tests pass env.ASK_ROUTER_STUB, a function
-// that stands in for the API ({ question, context, system, user } in, the
-// JSON object out, or a throw for a failure); an env value from Cloudflare
-// is a string, never a function, so production cannot take that path.
+// One router call. Returns { read, reason, units }: read is the checked
+// result, or null with the reason the rules ran alone (timeout, http 529,
+// refusal, cut off, invalid, no key, error); units is what the call cost
+// the day's budget (ASK_UNITS: 1, or 20 on Sonnet; 0 when no call was
+// made, the stub included), counted once the request is sent, since a
+// call that times out or fails was still made. Never throws. Test site
+// only: `compare` runs it on Sonnet, like the answer. Tests pass
+// env.ASK_ROUTER_STUB, a function that stands in for the API ({ question,
+// context, system, user } in, the JSON object out, or a throw for a
+// failure); an env value from Cloudflare is a string, never a function, so
+// production cannot take that path.
 async function askRouter(env, meta, question, context, compare = false) {
   const system = askRouterSystem(meta);
   const user = askRouterUser(question, context, meta);
+  let units = 0;
   try {
     let raw;
     if (typeof env?.ASK_ROUTER_STUB === 'function') {
       raw = await env.ASK_ROUTER_STUB({ question, context, system, user });
     } else {
-      if (!env?.ANTHROPIC_API_KEY) return { read: null, reason: 'no key' };
+      if (!env?.ANTHROPIC_API_KEY) return { read: null, reason: 'no key', units };
       const model = compare ? ASK_MODEL_COMPARE : ASK_MODEL;
+      units = compare ? ASK_UNITS.compare : ASK_UNITS.router;
       const ctrl = new AbortController();
       const timer = setTimeout(() => ctrl.abort(), ASK_ROUTER_TIMEOUT_MS);
       let msg;
@@ -3992,19 +4074,19 @@ async function askRouter(env, meta, question, context, compare = false) {
             output_config: { effort: 'low', format: { type: 'json_schema', schema: ASK_ROUTER_SCHEMA } },
           }),
         });
-        if (!res.ok) return { read: null, reason: `http ${res.status}` };
+        if (!res.ok) return { read: null, reason: `http ${res.status}`, units };
         msg = await res.json();
       } finally {
         clearTimeout(timer);
       }
-      if (msg?.stop_reason === 'refusal') return { read: null, reason: 'refusal' };
-      if (msg?.stop_reason === 'max_tokens') return { read: null, reason: 'cut off' };
+      if (msg?.stop_reason === 'refusal') return { read: null, reason: 'refusal', units };
+      if (msg?.stop_reason === 'max_tokens') return { read: null, reason: 'cut off', units };
       raw = JSON.parse((msg?.content || []).filter((b) => b.type === 'text').map((b) => b.text).join(''));
     }
     const read = askRouterCheck(raw, meta);
-    return read ? { read, reason: '' } : { read: null, reason: 'invalid' };
+    return read ? { read, reason: '', units } : { read: null, reason: 'invalid', units };
   } catch (err) {
-    return { read: null, reason: err?.name === 'AbortError' ? 'timeout' : err instanceof SyntaxError ? 'invalid' : 'error' };
+    return { read: null, reason: err?.name === 'AbortError' ? 'timeout' : err instanceof SyntaxError ? 'invalid' : 'error', units };
   }
 }
 
@@ -4021,8 +4103,24 @@ function askRouterLine(routed) {
 
 // Splits the model's reply into the answer and the source it named, and
 // cleans the answer: no dashes (number ranges become "to"), no half sentence
-// left by a max_tokens cut.
-function askParseReply(text, chunks, stopReason) {
+// left by a max_tokens cut, at most 3 sentences and none of them twice.
+// `question` is the reader's own, for the gap backstop below.
+//
+// The gap backstop (owner, 2026-11-04, from the live test): "how to dispose
+// of dead fish" came back "Our guides don't give a method for disposing of
+// a dead fish, so I can't offer steps on that. For an unwanted live
+// goldfish, the state advice is... Our guides don't cover disposing of dead
+// fish." The sources did not answer, so the reply should have been
+// NO_ANSWER (the reader gets the "not in our guides yet" line, the row logs
+// as no_match, which is how the owner sees the gaps). An answer that opens
+// by saying the guides do not cover, give or say the thing asked is that
+// case, so it becomes no_answer, unless it is the health gap (the question
+// names a sign, symptom or change, or the sentence goes on to send the
+// reader to a vet), which is the intended reply for a symptom the guides do
+// not name.
+const ASK_GAP_OPEN_RE = /^(our|the|these|those) (care )?guides? (don'?t|do not|doesn'?t|does not|can'?t|cannot|never|aren'?t able to|are not able to|have no|has no|give no|offer no|lack)\b/i;
+const ASK_HEALTH_GAP_RE = /\b(safest move|have (a|an) [\w -]*vet\b|see (a|an) [\w -]*vet\b|call (a|an|the) [\w -]*vet\b)/i;
+function askParseReply(text, chunks, stopReason, question = '') {
   if (!text || /^NO_ANSWER\b/.test(text) || /\bNO_ANSWER\s*$/.test(text)) return { kind: 'no_answer' };
   let answer = text;
   let best = null;
@@ -4059,8 +4157,8 @@ function askParseReply(text, chunks, stopReason) {
   // a broader range") has no "the" or number before it and stays.
   // "I can't tell you" and its kin: the clause is cut, the sentence kept.
   answer = answer
-    .replace(/,?\s*so I (can'?t|cannot|am unable to|'m unable to) (tell( you| from them| from our guides)?|say|explain|know|point you|show you|find|help with)[^.!?]*/gi, '')
-    .replace(/\bI (can'?t|cannot|am unable to|'m unable to) (tell( you| from them| from our guides)?|say|explain|know|point you|show you|find|help with)\b[^.!?]*[.!?]?\s*/gi, '');
+    .replace(/,?\s*so I (can'?t|cannot|am unable to|'m unable to) (tell( you| from them| from our guides)?|say|explain|know|point you|show you|find|help with|offer|give|provide|suggest|recommend|list|confirm|answer|advise)[^.!?]*/gi, '')
+    .replace(/\bI (can'?t|cannot|am unable to|'m unable to) (tell( you| from them| from our guides)?|say|explain|know|point you|show you|find|help with|offer|give|provide|suggest|recommend|list|confirm|answer|advise)\b[^.!?]*[.!?]?\s*/gi, '');
   // At most one "not covered" sentence: a second one is dropped.
   let gapSeen = false;
   answer = answer
@@ -4080,7 +4178,24 @@ function askParseReply(text, chunks, stopReason) {
     const end = Math.max(answer.lastIndexOf('. '), answer.lastIndexOf('! '), answer.lastIndexOf('? '));
     answer = end > 0 ? answer.slice(0, end + 1) : answer;
   }
+  // At most 3 sentences, and a sentence said twice (the dead fish answer
+  // said "our guides don't cover" twice in other words) is said once.
+  const said = new Set();
+  const sentences = answer.split(/(?<=[.!?])\s+/).filter((sentence) => {
+    const key = sentence.toLowerCase().replace(/[^a-z0-9 ]+/g, ' ').replace(/\s+/g, ' ').trim();
+    if (!key || said.has(key)) return false;
+    said.add(key);
+    return true;
+  }).slice(0, 3);
+  answer = sentences.join(' ');
   if (!answer) return { kind: 'no_answer' };
+  // The gap backstop: an answer that opens with what the guides do not
+  // cover, give or say is NO_ANSWER in other words, unless it is the health
+  // gap (see above): the question names a sign, a symptom or a change, or
+  // the sentence itself sends the reader to a vet.
+  const asked = askNormalize(question);
+  const healthGap = ASK_SIGN_RE.test(asked) || ASK_HEALTH_ISH_RE.test(asked) || ASK_VAGUE_RE.test(asked) || ASK_HEALTH_GAP_RE.test(sentences[0]);
+  if (ASK_GAP_OPEN_RE.test(sentences[0]) && !healthGap) return { kind: 'no_answer' };
   return { kind: 'answer', answer, best, also };
 }
 

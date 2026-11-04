@@ -570,8 +570,11 @@ In `public/_worker.js`, listed in `public/_routes.json`. In order:
    any-word search over common words read 8,120. Fable's estimate after the
    change is 250 to 400 per question; check the D1 query metrics once it is
    live. A legal question skips the search.
-7. 1,000 answers a day across the site in KV (owner, 2026-11-02), resetting at
-   midnight Eastern.
+7. 1,200 model calls a day across the site in KV (owner, 2026-11-02; since
+   2026-11-04 the router counts too, see Cost), resetting at midnight
+   Eastern. On a maxed day the router is skipped and a question that needs
+   the answer model gets the capped reply; a hub, the catalog and the law
+   matrix still answer.
 8. Haiku: the top 4 chunks, about 3,000 tokens at most, in `<sources>`, the
    question last.
 
@@ -621,7 +624,9 @@ slow, errors or refuses. Code: `askRouter`, `askRouterCheck`,
 2. Exact small talk, frustration, confusion and thanks (ASK_SMALL_TALK,
    askIsThanks). Free, exact and reliable, and the most common short
    messages, so "hi", "thanks" and "why" cost nothing and are not counted.
-3. The hourly limit, so the router cannot be run past it.
+3. The hourly limit, so the router cannot be run past it, and the day's
+   model-call budget (since 2026-11-04, see Cost): on a maxed day the
+   router is skipped and the rules run alone.
 4. Legal questions (askLooksLegal: a legal word, or a state with own, have,
    keep, buy or get) skip the router: the law matrix answers them and no
    model ever sees them.
@@ -747,6 +752,23 @@ reader's own question does not hold the word (then theirs is used).
   is `context.species` checked against the list (askRemembered), the same
   name the router was told; the previous question's words are not read for
   an animal on this path (the rules fallback still reads them).
+- A group word over a remembered member (owner, 2026-11-04, from the live
+  test: after the grey, "how do i get my parrot to eat" read as group
+  parrots and asked "Which parrot is this about?"). A group that holds the
+  remembered animal means that animal ("my parrot" is the grey we were
+  talking about), whatever the router said about `switched`, and the
+  question is a follow-up on it. Only a group the remembered animal is not
+  in moves on ("my gecko" after the grey). Membership comes from the site's
+  own data (askGroupHas: the animals the group's search covers, from the
+  catalog's category pages narrowed by the group's `only`, its hubs and
+  extras, or an animal that is itself the group word), never a hand list,
+  so the neon tetra is in fish and in tetras, the platy in fish and in
+  livebearers, a leopard gecko in geckos and reptiles. Not a bare group
+  word ("fish", "what about birds"), which still lists the group, and not a
+  kind that never carries (catalog). The rules fallback does the same with
+  the last question's animal, else the remembered one (the last question
+  may itself have been a group word for it: "do my fish need a heater"
+  after the neon tetra), and not after "which animal?".
 - The search phrase joins the reader's own words (see 6 above).
 - Kinds map onto the replies that exist: small_talk, thanks, frustration
   and confused get the fixed replies; an unknown animal with no animal or
@@ -781,9 +803,11 @@ list. No model call.
 max_tokens, JSON that does not parse or a read that does not check out: the
 rules run alone, exactly as before the router, and the reader sees no
 difference beyond the wait (2.5 seconds at most). askRouter never throws, so
-the router cannot turn a question into a 500. It is not counted toward the
-daily answer cap (askCountAnswer runs only before the answer call) and
-writes nothing to KV.
+the router cannot turn a question into a 500. Since 2026-11-04 it counts one
+unit toward the day's model-call budget (see Cost; the daily counter is read
+before it and written once per question, so it adds no KV write of its own),
+and on a maxed day it is not called: the read is logged as `{"failed":
+"capped"}`.
 
 **Logging.** Every ask_log row carries the read in the `router` jsonb
 column (owner, 2026-11-04): `{"animal": "Rabbit", "group": null, "unknown":
@@ -817,15 +841,22 @@ alone), with garbage that fails the check (`garbage`, rules alone) and
 with junk names that pass it (`oddbits`: nothing leaks); since the read
 owns the fields, the `neutral` stub in harness2.mjs (no animal, switched
 false) no longer leaves the rules' answers alone, by design, so platy2.mjs
-and cat1.mjs are run without it. router-fetch-test.mjs runs the real
+and cat1.mjs are run without it. router-stub-test.mjs also
+replays a group word over a remembered member on both paths (the grey then
+"my parrot", "what about birds", "my gecko"; the neon tetra then "my fish"
+and "my tetras"). router-fetch-test.mjs runs the real
 request against a mocked API (shape with effort low and the six-field
 schema, timeout, 529, refusal, cut off, bad JSON, a thrown fetch, KV
-writes, an unknown animal with junk in the strings); router-push-test.mjs
+writes, an unknown animal with junk in the strings, the day's budget in
+units and the cap before the router and before the answer, the gap
+backstop and the health gap on the answer); router-push-test.mjs
 checks the push line, the `router` column on the ask_log row (and the
-retry without it), the no_match row for an unknown animal, and that legal,
-clarify and small talk never call it; router-live.mjs runs the owner's
+retry without it), the no_match row for an unknown animal, that legal,
+clarify and small talk never call it, and the capped row on a maxed day;
+router-live.mjs runs the owner's
 conversation, the foxes question, the unknown animals and nicknames, the
-platy reader and the long gecko conversation on the test site.
+platy reader, the group word over a remembered member, the dead fish and
+the long gecko conversation on the test site.
 
 ## The model call
 
@@ -840,12 +871,13 @@ a cache block. Two differences from the original spec:
 You answer animal and pet care questions for Beastly Facts using ONLY the text inside <sources>.
 Rules:
 - At most 3 short sentences, usually 2. Plain words. No lists. No em or en dashes.
-- If nothing in the sources answers the question, reply exactly: NO_ANSWER. Do not describe a different condition instead.
+- Call the animal what the reader called it: "bunny" if they wrote bunny, "rabbit" if they wrote rabbit, "beardie" if they wrote beardie.
+- If nothing in the sources answers the question, reply exactly: NO_ANSWER, with no other words. Do not describe a different condition instead, and do not answer a neighboring question (a live animal when the reader asked about a dead one, a different step, another animal). Never open an answer by saying what the guides do not cover or give: if that would be your first sentence, the reply is NO_ANSWER. The one exception is the health gap below.
 - Never add facts, numbers, doses, or brands that are not in the sources. Take each claim from the section that actually states it; do not credit one section with another's words.
 - Keep hedges from the sources (can, may, often). Do not make them stronger.
 - Never give medication doses. Never say a symptom is fine to wait out or to watch for now.
 - If a source calls the sign urgent, or lists it under "call the vet now", the first sentence tells the reader to call the vet the source names (reptile vet, rabbit-savvy vet) now. The remaining sentences say what the guides tie that sign to.
-- Health gap: if the reader describes a sign, symptom, injury or change in the animal and no source names that sign, the first sentence is: "Our guides don't cover <the sign>, so the safest move is to have a <vet type the sources name, or an exotics vet> look at your <species>." You may add ONE sentence on the closest sign the guides do cover for the same body part or behavior. It starts with "While you wait, check" or "In the meantime, check", names that sign and how urgent it is, and never names a condition as the likely cause. Never write "the closest sign", "the guides cover", or "what I can tell you".
+- Health gap: if the reader describes a sign, symptom, injury or change in the animal and no source names that sign, the first sentence is: "Our guides don't cover <the sign>, so the safest move is to have a <vet type the sources name, or an exotics vet> look at your <species>." If the reader named no specific sign (only that the animal seems off, is acting weird or strange), write only that first sentence. Otherwise you may add ONE sentence on the closest sign the guides do cover for the same body part or behavior. It starts with "While you wait, check" or "In the meantime, check", names that sign and how urgent it is, and never names a condition as the likely cause. Never write "the closest sign", "the guides cover", or "what I can tell you".
 - Other gap: only when the reader asked for a non-health specific (a step, a number) that no source gives AND you have answered another part, add one sentence: "Our guides don't cover X." Never guess to fill a gap.
 - Speak to the reader directly, in the site's own voice. Never comment on what the passages do or do not cover, agree on, or recommend: no "is covered in our guides", "the sources", "Source 2", "most sources agree", "according to veterinary sources", "I can't say", "I can't tell you", "I don't know", or any sentence about what you are unable to do. Write "our guides" at most once per answer, and only in a gap sentence.
 - Say each point once. Do not restate it in other words.
@@ -900,6 +932,36 @@ The worker turns NO_ANSWER into `no_match`, a refusal or an API error into
 `refused` (the matched pages shown as plain links), dashes into "to" in a
 number range and a comma elsewhere, and drops a half sentence cut by
 `max_tokens`. The reader never sees an error.
+
+The dead fish (owner, 2026-11-04, from the live test): "how to dispose of
+dead fish" (group fish) went to the answer model with the tetra disease
+sections and a goldfish cost chunk about rehoming an unwanted live fish,
+and came back "Our guides don't give a method for disposing of a dead fish,
+so I can't offer steps on that. For an unwanted live goldfish, the state
+advice is to ask a veterinarian or pet retailer about humane disposal, but
+that covers living fish and not carcasses. Our guides don't cover disposing
+of dead fish." Three causes: the NO_ANSWER rule said nothing about a
+neighboring answer, while the "other gap" rule invited a "don't cover"
+sentence once another part was answered, so the model answered the nearest
+thing and wrapped it in two gap sentences; the group-wide fish search
+hands the model loosely related chunks, which is by design (a group
+question answers across its animals); and askParseReply had no check for
+an answer that is NO_ANSWER in other words ("don't give" is not "don't
+cover", and "so I can't offer" was not in the clause-cut list). Now: the
+prompt says NO_ANSWER with no other words, no neighboring answer, and
+never to open with what the guides do not cover or give, the health gap
+excepted; and askParseReply has a backstop (ASK_GAP_OPEN_RE): an answer
+whose first sentence says the guides do not cover, give, say, have or
+offer the thing asked becomes `no_match` (the reader gets the standard
+"not in our guides yet" line, the row logs as no_match, which is how the
+owner sees content gaps), unless it is the health gap, which is intentional
+for a symptom: the question names a sign, symptom or change (ASK_SIGN_RE,
+ASK_HEALTH_ISH_RE, ASK_VAGUE_RE on the reader's own question, which
+askHaiku now passes in) or the sentence itself sends the reader to a vet
+("so the safest move is to have a vet look"). The clause cut also takes
+"so I can't offer / give / provide / suggest / recommend / list / confirm /
+answer / advise". And every answer is cut to 3 sentences, with a sentence
+said twice (in the same words) kept once.
 
 ## Emergency card
 
@@ -975,9 +1037,8 @@ both scripts.
 Haiku 5.5 is $0.10 per million input tokens and $0.50 per million output under
 100,000 tokens a prompt. Measured in the reader test (Console usage,
 2026-11-02): an answer averages about 1,850 tokens in and 130 out, about
-$0.00025, so 4,000 answers per dollar. The 1,000 a day cap holds the worst day
-near $0.25, about $7.50 a month, under the $10 Console spend limit, which is
-the backstop. Legal answers and the free small talk cost nothing.
+$0.00025, so 4,000 answers per dollar. Legal answers and the free small talk
+cost nothing.
 
 The router (2026-11-04), measured on the built prompt: the system prompt is
 7,205 characters (the rules 2,587, the vocabulary 4,618: 15 groups, 106
@@ -992,22 +1053,51 @@ the system prompt, the first question in 5 minutes), and $0.00004 when it
 reads it (0.1x). At today's traffic most questions are minutes apart, so
 count on about $0.00024 each, roughly doubling the cost of an answered
 question ($0.00025 + $0.00024). Unlike the answer, it also runs on questions
-that end up not covered, so it is not bounded by the 1,000 answers a day
-cap; the hourly limit per visitor bounds it, and at 1,500 router calls on a
-capped day it adds about $0.36. The Console usage page shows the real
+that end up not covered. The Console usage page shows the real
 numbers once it is live: check input tokens per router call and
 `cache_read_input_tokens`.
+
+**The daily cap covers the router** (owner, 2026-11-04). Until then the
+1,000 a day cap (`ASK.answersPerDay`, KV `ask:day`) counted answer calls
+alone, so the router was uncapped by it: 1,000 answers plus about 1,500
+router calls on a maxed day came to about $0.60, around $18 a month, over
+the $10 Console limit. Now the one counter is in model-call units
+(`ASK_UNITS`): a router call is 1, an answer call is 1 (sized from the
+measured costs above: about $0.00024 and $0.00025, the same), and the test
+site's Sonnet compare is 20 for either (about 20 times the price). The cap
+is `ASK.unitsPerDay`, 1,200. The counter is read once per question, before
+the router (askDailyUsed), and written once at the end of the question with
+the units it spent (askSpendUnits, from handleAsk, through `waitUntil`), so
+a question writes KV no more often than before: 1 for the hourly limit and
+1 for the day, and a question that spends nothing (a hub, the catalog, a
+legal answer, a capped reply) writes only the hourly one. On a maxed day
+the router is skipped (the rules run alone, the read logged as "rules only
+(capped)"), a free reply still answers, and a question that reaches the
+answer model gets the capped reply, which ends the chat as before; a day
+one unit short runs the router and caps the answer.
+
+Worst case, recomputed: a unit costs at most about $0.00025 (a router call
+with a cache write is $0.00024, an answer $0.00025), so a maxed day is
+1,200 x $0.00025 = $0.30, whichever mix of questions fills it: 600 answered
+questions (router plus answer), or 1,200 questions the router read and
+nothing answered, or 60 Sonnet comparisons on the test site. A 31-day month
+of maxed days is $9.30, under the $10 Console spend limit, which stays the
+backstop. With the router's cache reads (most questions on a busy day are
+under 5 minutes apart) the real figure is lower, about $0.18 a day. The KV
+free plan's 1,000 writes a day is the tighter ceiling anyway (see Upkeep).
 
 ## Upkeep
 
 What keeps it answering (Fable review, 2026-11-04), by risk:
 
 1. Cloudflare KV free plan: 1,000 writes a day, reset 00:00 UTC. A question
-   takes 1 write (hourly limit) plus 1 for each answer, so roughly 500 to 900
+   takes 1 write (hourly limit) plus 1 for the day's counter when the router
+   or the answer ran (one write for both, since 2026-11-04), so roughly 500
    questions a day use it up. The hourly limit fails open since 2026-11-04 (a
    failed KV call lets the question through instead of answering every visitor
-   with nothing); the daily cap's write sits inside the answer's try, so a
-   failure there shows links. Workers Paid ($5 a month, 1 million KV writes)
+   with nothing); so does the daily counter's read, and its write happens
+   after the reply, so a failure there changes nothing the reader sees.
+   Workers Paid ($5 a month, 1 million KV writes)
    removes the ceiling if the KV dashboard shows more than about 400 writes a
    day.
 2. Anthropic credits and the $10 Console spend limit: a dead balance or the
