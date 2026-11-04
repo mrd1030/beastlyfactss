@@ -475,6 +475,7 @@ set search_path = public, extensions, vault, net
 as $fn$
 declare
   topic text;
+  token text;
   api_url text := 'https://ipqqeofzlwvfnunduuru.supabase.co/rest/v1/rpc/moderate_comment';
   -- The publishable key, which is public by design and already in the site
   -- bundle. It is not what authorises the decision: the per-comment token is.
@@ -488,6 +489,12 @@ begin
   if topic is null or topic = '' then
     return new;
   end if;
+
+  -- ntfy.sh account token (2026-11-03): counts the push against the account
+  -- instead of Supabase's shared sending address, which hit the daily quota.
+  select btrim(decrypted_secret, E' \t\r\n') into token
+  from vault.decrypted_secrets
+  where name = 'ntfy_token';
 
   action_headers := jsonb_build_object(
     'apikey', api_key,
@@ -522,7 +529,8 @@ begin
         )
       )
     ),
-    headers := jsonb_build_object('Content-Type', 'application/json')
+    headers := case when token is null or token = '' then jsonb_build_object('Content-Type', 'application/json')
+                    else jsonb_build_object('Content-Type', 'application/json', 'Authorization', 'Bearer ' || token) end
   );
 
   return new;

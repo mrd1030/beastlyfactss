@@ -8,7 +8,7 @@ import { formatDay } from '@/lib/utils/verifiedDates';
 // One Ask Beastly reply, drawn the same way in the search page box and the
 // floating chat. `compact` is the chat's smaller type.
 //
-// Results: answered | fact | legal | no_match come from the worker as written.
+// Results: answered | fact | gift | new_pet | legal | no_match come from the worker as written.
 // refused (the model declined or failed) still carries the matched pages, so
 // they show as plain links. capped and unavailable never read as errors: a
 // sentence and a way to the normal search.
@@ -226,12 +226,28 @@ export default function AskReply({ question, reply, compact = false, hasResults 
   }
 
   // "What animals do you cover": the count, a group's listing or the whole
-  // catalog, with the category pages as links.
-  if (reply.result === 'catalog') {
+  // catalog, with the category pages as links. A new pet ("I just got a
+  // hamster, what do I do") draws the same way: one line and its care guide.
+  if (reply.result === 'catalog' || reply.result === 'new_pet') {
     return (
       <div aria-live="polite">
         <p className={`font-body ${text} text-foreground leading-relaxed`}>{reply.answer}</p>
         <Links links={reply.links} onNavigate={onNavigate} />
+      </div>
+    );
+  }
+
+  // A gift question: one line, the animal's enrichment guide and gear page
+  // (and the store for a gift to a person), with the affiliate line next to
+  // the links whenever the gear page is one of them.
+  if (reply.result === 'gift') {
+    return (
+      <div aria-live="polite">
+        <p className={`font-body ${text} text-foreground leading-relaxed`}>{reply.answer}</p>
+        <Links links={reply.links} onNavigate={onNavigate} />
+        {reply.disclosure && (
+          <p className="mt-2 text-[11px] font-body text-muted-foreground">{reply.disclosure}</p>
+        )}
       </div>
     );
   }

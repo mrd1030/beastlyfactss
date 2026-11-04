@@ -23,7 +23,8 @@
 -- table of ours; pg_net keeps its own request queue until the POST is sent
 -- and the response for a few hours, then drops them.
 --
--- Applied as migrations ntfy_push and ntfy_push_trim_topic. Re-runnable.
+-- Applied as migrations ntfy_push, ntfy_push_trim_topic and ntfy_push_token.
+-- Re-runnable.
 
 create or replace function public.ntfy_push(secret_name text, payload jsonb)
 returns text
@@ -33,6 +34,7 @@ set search_path = public
 as $$
 declare
   topic text;
+  token text;
 begin
   if secret_name not in ('ntfy_ask_topic', 'ntfy_contact_topic', 'ntfy_subscriber_topic') then
     return 'not allowed';
@@ -40,9 +42,15 @@ begin
   -- Trimmed: a pasted topic can carry a space or line break ntfy refuses.
   select btrim(decrypted_secret, E' \t\r\n') into topic from vault.decrypted_secrets where name = secret_name;
   if topic is null or topic = '' then return 'no topic'; end if;
+  -- An ntfy.sh account token, when saved as Vault secret ntfy_token: without
+  -- it ntfy.sh counts messages per sending IP, and Supabase's shared address
+  -- ran out of the daily quota (429 on 2026-11-03).
+  select btrim(decrypted_secret, E' \t\r\n') into token from vault.decrypted_secrets where name = 'ntfy_token';
   perform net.http_post(
     url := 'https://ntfy.sh',
-    body := payload || jsonb_build_object('topic', topic)
+    body := payload || jsonb_build_object('topic', topic),
+    headers := case when token is null or token = '' then '{"Content-Type": "application/json"}'::jsonb
+                    else jsonb_build_object('Content-Type', 'application/json', 'Authorization', 'Bearer ' || token) end
   );
   return 'queued';
 end;
