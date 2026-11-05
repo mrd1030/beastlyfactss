@@ -127,9 +127,7 @@ carotenoid study), internal links 3.
 Applied items deleted. What is left:
 
 ### Fish color and diet guide
-- Length: body about 1,670 words plus about 250 in FAQs after the review's
-  cuts, above its 1,700 target. Further cuts would take species facts, not
-  repeats: owner call.
+- Length: resolved 2026-11-05. The repeat pass (trial figures moved into their species sections, discus and oscar combined, a closing recap added) brought the body to about 1,700 words.
 
 ### When a fish dies guide
 - Optional: the seoDescription promises safe disposal the research only
