@@ -360,6 +360,8 @@ Eşanu et al. 2015 (F20) stays out of every Sources block (owner, 2026-11-04); t
 
 ## Links to add when the color guide ships
 
+Done 2026-11-05, the day the guide shipped: all added except zebra danio (owner's call, still open). Betta's sentence changed on 2026-11-04, so its link sits on "Food can deepen" instead.
+
 Do not add these until content/_scheduled-tetras/fish-color-and-diet-guide.mdx is in content/. Each line names the sentence the link would sit in and the guide's current internal link count (the check's maximum is 4, encyclopedia links included).
 - platy-feeding-guide.mdx (3 now): "Platies cannot make the red, orange and yellow pigments they show; those are carotenoids that arrive with food." Link "carotenoids".
 - angelfish-feeding-guide.mdx (3): "Pigment in the food does show up in the skin." Link "Pigment in the food".
