@@ -146,3 +146,8 @@ Hobby and retailer pages (hepper.com, pangovet info pages, aquariadise, fishtank
 ## Where a page would start
 
 Five sources cover the core: D1 (first steps, cause checklist, sample, cold not frozen), D2 (signs of death, disposal principle, local rules), D3 (ammonia numbers, removing decaying matter, hand washing), D4 (decay adds ammonia), D5 (do not flush or release). That is inside the 3 to 5 target. The weak spots are the disposal options themselves (trash and burial have no opened source) and the legal line on releasing fish: one more pass at a state agency page (Kansas, Illinois or Minnesota DNR, or a county health burial page) from the owner's desktop browser would close them.
+
+## 2026-11-05: owner edits after the regrade
+
+- Alkalinity (KH) added to the guide's test list, and the old tank syndrome line now links the freshwater pH, GH and KH guide on "little or no alkalinity (KH)" (3 in-body links). D1's test list does not name alkalinity; D3 describes old tank syndrome by "little or no alkalinity", so a reader needs the KH reading to recognize it. Kept without a source naming alkalinity in a test list (owner review).
+- Lab section trimmed (owner, 2026-11-05): the foam cooler and bubble wrap packing, the overnight morning arrival and the turnaround times FAQ are out. Kept: call as soon as disease is a suspicion, misdiagnosis without tests, what makes a usable body, moist, cold, never frozen, call before sending.
