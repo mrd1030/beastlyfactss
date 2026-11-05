@@ -111,6 +111,18 @@ working checklist.
 - Keep the `<Sources>` block curated, never a URL library: 3 to 5 is the target,
   6 is a hard cap, and health guides have a hard cap of 8 (owner, 2026-11-01).
   Going past a cap is the owner's decision, never the writer's: stop and ask.
+  Legal guides have no cap (owner, 2026-11-05), because one statute or
+  regulation per state is a natural limit, not padding. Instead, every entry
+  must back a specific claim in the guide, and four guardrails apply: (1)
+  combine entries by the body that wrote the text, not by the website that
+  hosts it (several states' statutes on Cornell LII stay separate entries,
+  so the reader can see which section says what); (2) the same test applies
+  to an AlsoConsulted list, and an entry nothing in the guide uses comes out;
+  (3) no press release or news article where the primary text exists; (4)
+  each entry links the page that holds the section quoted, ideally the same
+  page as the matrix cell's sourceId. A guide that leans on the matrix for a
+  state with no entry of its own is acceptable, since every matrix cell
+  carries a verified citation.
   An approved overrun says why in an MDX comment directly above `<Sources>` so
   the next audit doesn't trim it. Approved overruns: `bearded-dragon-health-issues-guide.mdx` runs 9 (the prolapse, ADV and vet-finding
   material), `red-eared-slider-health-issues-guide.mdx` runs 6 (the pyramiding
