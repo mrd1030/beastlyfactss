@@ -1897,6 +1897,7 @@ const ASK_GUIDE_TOPICS = [
   [/\b(colou?r\w*|vibran\w*)\b/, 'color'],
 ];
 
+const ASK_COLOR_RE = /\b(colou?r\w*|vibran\w*)\b/;
 const ASK_CARE_RE = /\b(feed\w*|fed|food|foods|eat\w*|diet|tank\w*|enclosure\w*|cage\w*|setup|set up|habitat|vivarium|terrarium|aquarium|sick\w*|ill|illness|disease\w*|vet|vets|health\w*|symptom\w*|temperature\w*|temp|temps|heat\w*|humid\w*|lamp\w*|uvb|light\w*|cost\w*|price\w*|expensive|cheap|budget|substrate|bedding|clean\w*|handl\w*)\b/;
 const ASK_LEGAL_RE = /\b(legal|illegal|legally|allowed to (own|have|keep|buy)|permit|permits|permitted|licen[cs]e\w*|banned|outlawed|laws?|(what|which) states?|where can (i|you) (own|have|keep|buy|get))\b/;
 // The rule-based legal check: a legal word, or a state with own / have /
@@ -3154,6 +3155,20 @@ async function askRetrieve(db, question, context = null, router = null) {
     }
   }
 
+  // Color, asked of fish in general (owner, 2026-11-05): the fish color
+  // guide answers it for every fish, but it names no species, so the species
+  // and group searches above never reach it. "How do I make my fish more
+  // colorful" asked which fish, and "how does a fish enhance its color"
+  // answered from the koi and cardinal feeding guides.
+  const colorAsk = ASK_COLOR_RE.test(q) && !species && group?.id === 'fish';
+  if (colorAsk) {
+    const seen = new Set(rows.map((r) => r.id));
+    const guide = `title : ${term('fish color')}`;
+    let extra = content.length ? await search(`${guide} AND {heading text} : (${anyOf(content)})`) : [];
+    if (!extra.length) extra = await search(guide);
+    rows = [...rows, ...extra.filter((r) => !seen.has(r.id))];
+  }
+
   // Coverage: the share of the question's own words (not the species name)
   // that a chunk contains, matched on a short stem.
   const care = ASK_CARE_RE.test(q);
@@ -3174,6 +3189,7 @@ async function askRetrieve(db, question, context = null, router = null) {
     if (care) boost = r.type === 'guide' || r.type === 'faq' || r.type === 'hub' ? 1.3 : r.type === 'fact' ? 0.6 : 0.85;
     if (topics.some((t) => r.slug.includes(`-${t}`))) boost *= 1.6;
     if (broad && r.type === 'hub') boost *= 3;
+    if (colorAsk && r.slug === 'fish-color-and-diet-guide') boost *= 2.5;
     return { ...r, coverage, score: -r.rank * (0.5 + coverage) * (1 + 0.5 * headingCoverage) * boost };
   }).sort((a, b) => b.score - a.score);
 
