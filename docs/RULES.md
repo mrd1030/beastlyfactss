@@ -220,6 +220,17 @@ priced table, and a dated line only ages.
   paragraph is content, and if it links, it links the one page that
   follows from the point it makes. The bearded dragon guides are the
   reference. Decided 2026-09-14.
+- Every article ends on a closing section (owner, 2026-11-05), so it does
+  not just stop: 2 to 4 sentences, just before the Sources, under a heading
+  that names the takeaway ("Bringing Out a Fish's Best Color", "Looking
+  After the Fish That Are Left"), never "Conclusion", "In Summary" or
+  "Final Thoughts". It says what the reader should do or remember, pulls
+  together what the article already said, adds no new facts, and does not
+  walk back through every section. The link rule above still holds: at most
+  one link, only where it follows from the point. New articles get one when
+  they are written; an existing article gets one whenever it is opened for
+  any other edit (a regrade, a fact-check, a source pass, the species
+  recaps). The fish color and fish death guides are the reference.
 - In-body links go to whatever page is the real answer to something the
   article just raised: another species ("the same calcium problem sugar
   gliders have"), a cross-species guide (quarantine, UVB, gut-loading), the
