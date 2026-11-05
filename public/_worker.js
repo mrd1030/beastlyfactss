@@ -1826,6 +1826,16 @@ function askSmallTalk(question) {
   return { kind: hit.kind, reply: hit.replies[Math.floor(Math.random() * hit.replies.length)], links: hit.links };
 }
 
+const ASK_SITE_RE = /\b(contact|e-?mail|reach|message|get in touch with|talk to)\s+(\w+\s+){0,2}(you|owner|creator|admin|team|(the|this) (site|website)|beastly)\b|\bwho\s+(\w+\s+){0,2}(made|created|built|runs|owns|wrote|started|is behind)\s+((this|the) (site|website|app)|beastly)\b|\b(about|behind) (this|the) (site|website)\b|\bwhat('s| is) (this|the) (site|website)\b|\bwho (owns|runs) beastly\b/i;
+const ASK_SITE_FOLLOW_RE = /^\s*(for |about |on |the |this |it'?s |its )*(the |this )?(site|website|web site|beastly( facts)?|owner|you)\s*[?.!]*\s*$/i;
+function askIsSiteQuestion(question, context) {
+  const q = question.replace(/[’]/g, "'");
+  if (ASK_SITE_RE.test(q) && !/\b(this|my|a|an|the) (fish|dog|cat|snake|lizard|bird|pet|animal|vet)\b/i.test(q.replace(/\b(the|this) (site|website)\b/ig, ''))) return true;
+  return Boolean(context?.prev) && ASK_SITE_RE.test(context.prev) && ASK_SITE_FOLLOW_RE.test(q);
+}
+const ASK_SITE_REPLY = 'The About page covers who runs Beastly Facts and why, and the Contact page sends a message straight to the owner.';
+const ASK_SITE_LINKS = [{ title: 'About Beastly Facts', url: '/about' }, { title: 'Contact', url: '/contact' }];
+
 const ASK_THANKS_REPLIES = [
   "You're welcome! Ask anything else any time.",
   'Happy to help. Ask away if anything else comes up.',
@@ -1880,6 +1890,11 @@ const ASK_GUIDE_TOPICS = [
   [/\b(sick\w*|ill|illness|disease\w*|vet|symptom\w*|infection\w*|parasite\w*|swollen|letharg\w*)\b/, 'health'],
   [/\b(handl\w*|hold\w*|pick\w* up|bite\w*|biting|tame|taming)\b/, 'handling'],
   [/\b(enrich\w*|bored\w*|toy\w*|play\w*)\b/, 'enrichment'],
+  // Color questions (owner, 2026-11-05): "what brings out a betta's color"
+  // lives in the feeding guide's color passage and in the fish color guide,
+  // and lost to the cost and handling guides' "color varieties" lines.
+  [/\b(colou?r\w*|vibran\w*)\b/, 'feeding'],
+  [/\b(colou?r\w*|vibran\w*)\b/, 'color'],
 ];
 
 const ASK_CARE_RE = /\b(feed\w*|fed|food|foods|eat\w*|diet|tank\w*|enclosure\w*|cage\w*|setup|set up|habitat|vivarium|terrarium|aquarium|sick\w*|ill|illness|disease\w*|vet|vets|health\w*|symptom\w*|temperature\w*|temp|temps|heat\w*|humid\w*|lamp\w*|uvb|light\w*|cost\w*|price\w*|expensive|cheap|budget|substrate|bedding|clean\w*|handl\w*)\b/;
@@ -3379,6 +3394,20 @@ async function handleAskInner(request, env, ctx, state) {
       result: 'greeting',
       answer: talk.reply,
       links: talk.links,
+      emergency: false,
+      species: null,
+      followUp: Boolean(context),
+    });
+  }
+  // Questions about the site itself (who runs it, how to reach the owner)
+  // get a fixed reply with the About and Contact pages, no model and no
+  // search (owner, 2026-11-05: "How do I contact the owner" was asked back
+  // for an animal, and the reply "For the site" landed on an aviary guide).
+  if (askIsSiteQuestion(question, context)) {
+    return storeJson({
+      result: 'greeting',
+      answer: ASK_SITE_REPLY,
+      links: ASK_SITE_LINKS,
       emergency: false,
       species: null,
       followUp: Boolean(context),
