@@ -243,6 +243,16 @@ priced table, and a dated line only ages.
   separate section, as long as it is not a link library: fact roundups
   (a recap after a list of facts turns into filler) and wild animal
   spotlights and myth pieces (they already end on their strongest point).
+- State abbreviations (owner, 2026-11-05): state lists in FAQ answers and
+  closing sections use postal codes, in alphabetical order by code, with
+  "and" before the last ("MA, ME, VT and WV"). DC sorts as D (CT, DC, DE),
+  and NYC sits right after NY. Tables keep full state names, and a sentence
+  about a single state spells it out; two or more states make a list. A
+  list may open a sentence, but never with a code that reads as a word (HI,
+  ID, IN, ME, OH, OK, OR): when alphabetical order would put one first,
+  lead with a count or a label ("Permit states: ID, IN and OR"). Existing
+  guides convert when next opened, not in a sweep. The axolotl legal guide
+  is the reference.
 - In-body links go to whatever page is the real answer to something the
   article just raised: another species ("the same calcium problem sugar
   gliders have"), a cross-species guide (quarantine, UVB, gut-loading), the
