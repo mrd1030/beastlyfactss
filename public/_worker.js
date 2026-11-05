@@ -1897,6 +1897,9 @@ const ASK_GUIDE_TOPICS = [
   [/\b(colou?r\w*|vibran\w*)\b/, 'color'],
 ];
 
+const ASK_DIET_Q_RE = /\bwhat\b.*\b(eat|eats|feed|fed|diet)\b|\b(diet|staple food)\b/;
+const ASK_REFUSAL_Q_RE = /\b(won'?t|wont|not|stop\w*|refus\w*|quit|isn'?t|aren'?t|hasn'?t|haven'?t)\b/;
+const ASK_REFUSAL_HEADING_RE = /\b(stop\w* eating|won'?t eat|not eating|refus\w*|off (its|their) food)\b/;
 const ASK_COLOR_RE = /\b(colou?r\w*|vibran\w*)\b/;
 const ASK_CARE_RE = /\b(feed\w*|fed|food|foods|eat\w*|diet|tank\w*|enclosure\w*|cage\w*|setup|set up|habitat|vivarium|terrarium|aquarium|sick\w*|ill|illness|disease\w*|vet|vets|health\w*|symptom\w*|temperature\w*|temp|temps|heat\w*|humid\w*|lamp\w*|uvb|light\w*|cost\w*|price\w*|expensive|cheap|budget|substrate|bedding|clean\w*|handl\w*)\b/;
 const ASK_LEGAL_RE = /\b(legal|illegal|legally|allowed to (own|have|keep|buy)|permit|permits|permitted|licen[cs]e\w*|banned|outlawed|laws?|(what|which) states?|where can (i|you) (own|have|keep|buy|get))\b/;
@@ -3161,6 +3164,7 @@ async function askRetrieve(db, question, context = null, router = null) {
   // colorful" asked which fish, and "how does a fish enhance its color"
   // answered from the koi and cardinal feeding guides.
   const colorAsk = ASK_COLOR_RE.test(q) && !species && group?.id === 'fish';
+  const dietAsk = ASK_DIET_Q_RE.test(qOwn) && !ASK_REFUSAL_Q_RE.test(qOwn);
   if (colorAsk) {
     const seen = new Set(rows.map((r) => r.id));
     const guide = `title : ${term('fish color')}`;
@@ -3190,6 +3194,14 @@ async function askRetrieve(db, question, context = null, router = null) {
     if (topics.some((t) => r.slug.includes(`-${t}`))) boost *= 1.6;
     if (broad && r.type === 'hub') boost *= 3;
     if (colorAsk && r.slug === 'fish-color-and-diet-guide') boost *= 2.5;
+    // A diet question ("what do tetras eat") wants the "What Embers Eat"
+    // section, not "Why Embers Stop Eating", whose heading also has the word
+    // (owner, 2026-11-05: "what do tetras eat" landed on three refusal
+    // sections and the model declined).
+    if (dietAsk) {
+      if (ASK_REFUSAL_HEADING_RE.test(heading)) boost *= 0.5;
+      else if (/^what\b.*\b(eat|eats|diet)\b/.test(heading)) boost *= 1.4;
+    }
     return { ...r, coverage, score: -r.rank * (0.5 + coverage) * (1 + 0.5 * headingCoverage) * boost };
   }).sort((a, b) => b.score - a.score);
 
