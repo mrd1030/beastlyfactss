@@ -3867,6 +3867,18 @@
       "animalDay": null
     },
     {
+      "slug": "fish-color-and-diet-guide",
+      "title": "Fish Color and Diet: What Brings Color Out",
+      "excerpt": "A fish cannot make most of the red, orange or yellow it wears; the carotenoid part comes in with food. The blues, silvers and blacks come from somewhere else, and stress, light and water move all of them. Here is what a color food can do, how long it takes, and what it cannot touch.",
+      "date": "2026-11-05",
+      "image": "/assets/images/fish-color-and-diet-guide.jpg",
+      "category": "Fish",
+      "categories": [
+        "Fish"
+      ],
+      "animalDay": null
+    },
+    {
       "slug": "fish-death-what-to-do-guide",
       "title": "Dead Fish in the Aquarium: What to Do Next",
       "excerpt": "Confirm it is dead, get the body out, and test the water before changing any of it. Then look for a cause, keep the body cold if a lab may want it, and never flush or release a fish.",
@@ -4466,6 +4478,78 @@
       "category": "Wild Animals",
       "categories": [
         "Wild Animals"
+      ],
+      "animalDay": null
+    },
+    {
+      "slug": "glowlight-tetra-cost-guide",
+      "title": "Glowlight Tetra Cost: $30 to $50 for 10, $165 to $380 Setup",
+      "excerpt": "A school of 10 glowlight tetras costs less than the 20 gallon tank it swims in. Every one of them is farm-bred, and the money goes into the tank, the heater and a spare tank for quarantine.",
+      "date": "2026-11-05",
+      "image": "/assets/images/glowlight-tetra-cost.jpg",
+      "category": "Fish",
+      "categories": [
+        "Fish"
+      ],
+      "animalDay": null
+    },
+    {
+      "slug": "glowlight-tetra-enrichment-guide",
+      "title": "Glowlight Tetra Enrichment Guide",
+      "excerpt": "A glowlight tetra comes from tea-colored forest streams in Guyana, and its school flicks its fins to pass on danger. A school of 10, fine plants, open water and shade bring that life into a tank.",
+      "date": "2026-11-05",
+      "image": "/assets/images/glowlight-tetra-enrichment.jpg",
+      "category": "Enrichment",
+      "categories": [
+        "Enrichment"
+      ],
+      "animalDay": null
+    },
+    {
+      "slug": "glowlight-tetra-feeding-guide",
+      "title": "What Do Glowlight Tetras Eat? Diet and Feeding Guide",
+      "excerpt": "Glowlight tetras take almost anything offered, which makes them easy to feed and easy to overfeed. A schedule from fry to adult, small staples, live foods and their risks, and why a glowlight stops eating.",
+      "date": "2026-11-05",
+      "image": "/assets/images/glowlight-tetra-feeding.jpg",
+      "category": "Fish",
+      "categories": [
+        "Fish"
+      ],
+      "animalDay": null
+    },
+    {
+      "slug": "glowlight-tetra-handling-guide",
+      "title": "Glowlight Tetra Handling: Netting, Acclimation, Tankmates",
+      "excerpt": "Nobody picks up a glowlight tetra. Its handling is a net, a bag and an hour of acclimation, and the choices that count are the size of the school and who shares the tank.",
+      "date": "2026-11-05",
+      "image": "/assets/images/glowlight-tetra-handling.jpg",
+      "category": "Fish",
+      "categories": [
+        "Fish"
+      ],
+      "animalDay": null
+    },
+    {
+      "slug": "glowlight-tetra-health-issues-guide",
+      "title": "Glowlight Tetra Health Issues: Ich, Fin Rot, Signs",
+      "excerpt": "No disease belongs to the glowlight tetra in particular. Ich, fin rot and water trouble are the usual list, ich needs a different cure here because the heat method runs hotter than the fish can go, and the soft water that brings out its stripe is where copper does the most harm.",
+      "date": "2026-11-05",
+      "image": "/assets/images/glowlight-tetra-health-issues.jpg",
+      "category": "Fish",
+      "categories": [
+        "Fish"
+      ],
+      "animalDay": null
+    },
+    {
+      "slug": "glowlight-tetra-tank-setup-guide",
+      "title": "Glowlight Tetra Tank Setup Guide",
+      "excerpt": "Glowlight tetras come from dark, acidic forest streams in Guyana. A tank for a school of 10 gives them floor space, 75 to 82°F, acidic water for color, a river-sand floor, fine-leaved plants under dim light, and a finished cycle.",
+      "date": "2026-11-05",
+      "image": "/assets/images/glowlight-tetra-tank-setup.jpg",
+      "category": "Fish",
+      "categories": [
+        "Fish"
       ],
       "animalDay": null
     },

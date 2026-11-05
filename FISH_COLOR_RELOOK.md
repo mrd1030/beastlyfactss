@@ -104,12 +104,12 @@ Source counts include the new color source. Links are in-body internal links
   menu". Pick one: drop "and coloration" from the old sentence.
 - At 4 links, so the later link to the color guide means dropping one.
 
-### Glowlight tetra (scheduled; sources 4, links 3)
+### Glowlight tetra (sources 4, links 4)
 - Reads well. No issue found.
 
-## The fish color guide (scheduled)
+## The fish color guide
 
-content/_scheduled-tetras/fish-color-and-diet-guide.mdx: 2,678 words,
+content/guides/fish-color-and-diet-guide.mdx: 2,678 words,
 sources 7 (owner-approved exception to the 6 cap, 2026-11-04, for the betta
 carotenoid study), internal links 3.
 
@@ -119,11 +119,8 @@ carotenoid study), internal links 3.
   cap (as the shared class guides have), or leave the trials to the
   feeding guides. The Fable review (2026-11-04) advises not raising it.
 - **Needs a hero image** (1168x784), listed in NEEDS_IMAGE.md.
-- **Before it ships:** restamp date, lastUpdated and lastReviewed to the
-  ship day; add the glowlight-tetra id to its RELATED_ARTICLES wiring once
-  that hub ships; add the feeding guide links listed in
-  research/FISH_COLOR_RESEARCH.md ("Links to add when the color guide
-  ships").
+- **Shipped 2026-11-05** with the glowlight tetra set. Feeding guide links to
+  it added in 18 guides; zebra danio skipped (at the 4 link cap, see below).
 
 ## Fable editor review, 2026-11-04 (both new guides)
 

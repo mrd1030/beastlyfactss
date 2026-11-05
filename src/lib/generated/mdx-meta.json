@@ -6407,7 +6407,7 @@
       },
       {
         "q": "Should I buy a color-enhancing food for my betta?",
-        "a": "It is not needed. Choose a pellet for its protein level and a meat-first ingredient list, since the color claim on the label is the part with the least support for this fish."
+        "a": "For a red betta it can help, since carotenoids in the food made red bettas redder in a feeding trial. For a blue betta it does nothing for the color. Choose a pellet for its protein level and a meat-first ingredient list first, and add small live or frozen foods regularly."
       },
       {
         "q": "What foods should never go in a betta's bowl?",
@@ -21902,6 +21902,70 @@
     "imageHeight": 896
   },
   {
+    "path": "/content/guides/fish-color-and-diet-guide.mdx",
+    "slug": "fish-color-and-diet-guide",
+    "title": "Fish Color and Diet: What Brings It Out, and What No Food Can Change",
+    "seoTitle": "Fish Color and Diet: What Brings Color Out",
+    "seoDescription": "Why fish must eat their reds and oranges, what color-enhancing foods contain and how long they take, what no food can change, and the colors fish by fish.",
+    "lastUpdated": "2026-11-05",
+    "noIndex": false,
+    "excerpt": "A fish cannot make most of the red, orange or yellow it wears; the carotenoid part comes in with food. The blues, silvers and blacks come from somewhere else, and stress, light and water move all of them. Here is what a color food can do, how long it takes, and what it cannot touch.",
+    "date": "2026-11-05",
+    "category": "Fish",
+    "categories": [
+      "Fish"
+    ],
+    "tags": [
+      "Fish Care",
+      "Fish Diet",
+      "Fish Color",
+      "Color Enhancing Food",
+      "Astaxanthin",
+      "Beginner Fishkeeping"
+    ],
+    "readTime": 9,
+    "difficulty": "Beginner",
+    "image": "/assets/images/fish-color-and-diet-guide.jpg",
+    "imageAlt": "A planted aquarium full of colorful fish: red, orange, yellow, blue and black fish swimming among green plants",
+    "emoji": "🎨",
+    "lastReviewed": "2026-11-05",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Is a color-enhancing food safe for fish?",
+        "a": "At the amounts tested, yes, and the same pigments have helped fish fight off infection. The catch is balance: a pigment-heavy feed can cost growth, so a color food is one part of the rotation, never the whole diet."
+      },
+      {
+        "q": "Can a color food change a blue or black fish, or its pattern?",
+        "a": "No. Blue, silver and iridescent green are light thrown back by crystals in the skin, black is a pigment the fish makes for itself, and the pattern and variety are bred in. A color food deepens only the reds, oranges and yellows a fish already carries."
+      },
+      {
+        "q": "How long does a color food take to work?",
+        "a": "Weeks, not days. The earliest change shows at around a month, and two months of steady feeding is a fairer test before judging it."
+      },
+      {
+        "q": "Why did my new fish lose its color after I brought it home?",
+        "a": "A move is stressful, and stress shifts color through hormones within hours, so a new fish often looks washed out at first. One that stays pale while refusing food or clamping its fins needs a water test."
+      },
+      {
+        "q": "Do I need enriched brine shrimp to bring out color?",
+        "a": "No. Brine shrimp pass pigment on only when they have eaten it first, and plain brine shrimp put less pigment into platies than an ordinary commercial food did. A staple flake or pellet with astaxanthin, krill or spirulina on the label carries the same pigments with less work."
+      }
+    ],
+    "relatedProducts": [],
+    "factFile": false,
+    "animalDay": null,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 7,
+    "headingCount": 25,
+    "ledeMatchesExcerpt": false,
+    "imageWidth": 1168,
+    "imageHeight": 784
+  },
+  {
     "path": "/content/guides/fish-death-what-to-do-guide.mdx",
     "slug": "fish-death-what-to-do-guide",
     "title": "When a Fish Dies: What to Do Next",
@@ -25413,6 +25477,472 @@
     "truth": "It weighs about 11 pounds, ordinary for the body size. The extreme part is the blood pressure, roughly twice a human.",
     "sourceCount": 10,
     "headingCount": 7,
+    "ledeMatchesExcerpt": false,
+    "imageWidth": 1168,
+    "imageHeight": 784
+  },
+  {
+    "path": "/content/guides/glowlight-tetra-cost-guide.mdx",
+    "slug": "glowlight-tetra-cost-guide",
+    "title": "How Much Does Glowlight Tetra Ownership Cost?",
+    "seoTitle": "Glowlight Tetra Cost: $30 to $50 for 10, $165 to $380 Setup",
+    "seoDescription": "Glowlight tetra cost: about $3 to $5 a fish, $30 to $50 for a school of 10, $165 to $380 for a 20 gallon setup, plus a spare quarantine tank worth adding.",
+    "lastUpdated": "2026-11-01",
+    "noIndex": false,
+    "excerpt": "A school of 10 glowlight tetras costs less than the 20 gallon tank it swims in. Every one of them is farm-bred, and the money goes into the tank, the heater and a spare tank for quarantine.",
+    "date": "2026-11-05",
+    "category": "Fish",
+    "categories": [
+      "Fish"
+    ],
+    "tags": [
+      "Glowlight Tetra",
+      "Cost",
+      "Pet Ownership Cost",
+      "Tank Setup Cost",
+      "Care Tips",
+      "Fish Care"
+    ],
+    "readTime": 6,
+    "difficulty": "Beginner",
+    "image": "/assets/images/glowlight-tetra-cost.jpg",
+    "imageAlt": "A school of glowlight tetras with red stripes swimming in a planted aquarium",
+    "emoji": "🐠",
+    "lastReviewed": "2026-10-31",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "How much do glowlight tetras cost?",
+        "a": "About $3 to $5 a fish in stores and online, before shipping. Ten fish come to $30 to $50."
+      },
+      {
+        "q": "What does a glowlight tetra tank setup cost?",
+        "a": "Plan on $165 to $380 for a 20 gallon tank with a heater, a sponge filter, live plants, sand, a liquid test kit, water conditioner and the first micro pellets. A bare quarantine tank with its own heater and filter is extra."
+      },
+      {
+        "q": "Do glowlight tetras need a heater?",
+        "a": "Yes. They are tropical fish kept at 75 to 82°F (24 to 28°C), so the setup budget includes a heater. An ich outbreak never calls for more heat than 82°F, so a second heater is not part of the plan."
+      },
+      {
+        "q": "How many glowlight tetras should I buy?",
+        "a": "Ten is the school to price. Six is the least that works, and the cost of four more fish is small next to the tank."
+      },
+      {
+        "q": "How long do glowlight tetras live?",
+        "a": "About 2 to 4 years, so the tank, heater and filter usually outlast the first school."
+      },
+      {
+        "q": "Are glowlight tetras wild-caught?",
+        "a": "No. Glowlights in the trade are mass bred on commercial farms in several parts of the world, and wild specimens are not offered for sale. The albino is a selectively bred form with the same care."
+      },
+      {
+        "q": "Do glowlight tetras need a quarantine tank?",
+        "a": "Yes. New fish spend at least 30 days in a bare tank with its own heater and sponge filter, because ich in shipped tropical fish often shows 1 to 3 weeks after arrival. Each batch added later starts its own 30 days."
+      },
+      {
+        "q": "Why do glowlight tetras look faded in the store?",
+        "a": "A glowlight can look washed out in a bare, sparse tank and colors up best in a heavily planted one with acidic water. A dull stripe in a bare dealer tank is not a fault on its own; spots, ragged fins or listless swimming are."
+      }
+    ],
+    "relatedProducts": [
+      "tank-20-gallon-long",
+      "submersible-aquarium-heater",
+      "sponge-filter",
+      "neon-tetra-food-hikari-micro-pellets",
+      "water-conditioner",
+      "water-test-kit"
+    ],
+    "factFile": false,
+    "animalDay": null,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 3,
+    "headingCount": 10,
+    "ledeMatchesExcerpt": false,
+    "imageWidth": 1168,
+    "imageHeight": 784
+  },
+  {
+    "path": "/content/guides/glowlight-tetra-enrichment-guide.mdx",
+    "slug": "glowlight-tetra-enrichment-guide",
+    "title": "Glowlight Tetra Enrichment: A School, Open Water and Stained-Stream Cover",
+    "seoTitle": "Glowlight Tetra Enrichment Guide",
+    "seoDescription": "Glowlight tetras pass alarm through the school with a fin flick. A school of 10, fine-leaved plants, open water, dim light and small live foods suit them.",
+    "lastUpdated": "2026-11-01",
+    "noIndex": false,
+    "excerpt": "A glowlight tetra comes from tea-colored forest streams in Guyana, and its school flicks its fins to pass on danger. A school of 10, fine plants, open water and shade bring that life into a tank.",
+    "date": "2026-11-05",
+    "category": "Enrichment",
+    "categories": [
+      "Enrichment"
+    ],
+    "tags": [
+      "Glowlight Tetra",
+      "Enrichment",
+      "Care Tips",
+      "Fish Enrichment",
+      "Fish Welfare",
+      "Tetras"
+    ],
+    "readTime": 6,
+    "difficulty": "Beginner",
+    "image": "/assets/images/glowlight-tetra-enrichment.jpg",
+    "imageAlt": "A school of glowlight tetras swimming through fine-leaved plants in a planted aquarium",
+    "emoji": "🐠",
+    "lastReviewed": "2026-10-31",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "How many glowlight tetras should be kept together?",
+        "a": "Ten or more. Six is the lowest number that counts as a group, but a group of 10 is what fills the middle and lower water of a tank with activity and color."
+      },
+      {
+        "q": "What plants suit glowlight tetras?",
+        "a": "A wide mix of fine-leaved plants at different heights, with a stretch of open water in the center of the tank for swimming. Fine sand suits the bottom."
+      },
+      {
+        "q": "Do glowlight tetras need tannins or leaf litter?",
+        "a": "Neither is required. Their home streams run dark brown with tannins, so leaf litter, driftwood or floating plants echo that water, provided pH stays between 5.5 and 7.5. Peat in the filter does the same job and is not needed."
+      },
+      {
+        "q": "What live foods do glowlight tetras like?",
+        "a": "Small live and frozen foods such as bloodworm, Daphnia and brine shrimp, offered as a treat beside a staple of micropellets or small flakes."
+      },
+      {
+        "q": "Why do my glowlight tetras flick their fins?",
+        "a": "Fin flicking is this species' alarm display. A glowlight that picks up the alarm chemical in its own kind's skin flicks its fins, and the rest of the shoal turns wary in response."
+      }
+    ],
+    "relatedProducts": [
+      "neon-tetra-food-hikari-micro-pellets"
+    ],
+    "factFile": false,
+    "animalDay": null,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 4,
+    "headingCount": 9,
+    "ledeMatchesExcerpt": false,
+    "imageWidth": 1168,
+    "imageHeight": 784
+  },
+  {
+    "path": "/content/guides/glowlight-tetra-feeding-guide.mdx",
+    "slug": "glowlight-tetra-feeding-guide",
+    "title": "Glowlight Tetra Feeding: Diet, Live Foods, and How Often to Feed",
+    "seoTitle": "What Do Glowlight Tetras Eat? Diet and Feeding Guide",
+    "seoDescription": "Glowlight tetra feeding by life stage: micro pellets or small flake, live foods and their parasites, the tubifex question, and why glowlights stop eating.",
+    "lastUpdated": "2026-11-04",
+    "noIndex": false,
+    "excerpt": "Glowlight tetras take almost anything offered, which makes them easy to feed and easy to overfeed. A schedule from fry to adult, small staples, live foods and their risks, and why a glowlight stops eating.",
+    "date": "2026-11-05",
+    "category": "Fish",
+    "categories": [
+      "Fish"
+    ],
+    "tags": [
+      "Glowlight Tetra",
+      "Feeding",
+      "Diet",
+      "Care Tips",
+      "Fish Diet",
+      "Feeding Schedule",
+      "Live Food",
+      "Not Eating"
+    ],
+    "readTime": 6,
+    "difficulty": "Beginner",
+    "image": "/assets/images/glowlight-tetra-feeding.jpg",
+    "imageAlt": "A school of glowlight tetras feeding in the middle of a planted aquarium",
+    "emoji": "🐠",
+    "lastReviewed": "2026-10-31",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What do glowlight tetras eat?",
+        "a": "Micropellets or small flakes day to day, with bloodworm, daphnia and brine shrimp as live or frozen extras. They are omnivores that take almost anything offered."
+      },
+      {
+        "q": "How often should glowlight tetras be fed?",
+        "a": "Once or twice a day, keeping each feeding light. Give only what the school finishes, since uneaten food fouls the water."
+      },
+      {
+        "q": "Are glowlight tetras picky eaters?",
+        "a": "No. They accept nearly every food of a suitable size, so the risk with this species is overfeeding, not refusal."
+      },
+      {
+        "q": "Do glowlight tetras need live food?",
+        "a": "Not as the staple. A good dried food covers the daily diet, and small live or frozen foods are worth adding to the rotation for variety."
+      },
+      {
+        "q": "Why does my glowlight tetra's stripe look faded?",
+        "a": "Look at the water and the light before the food. Glowlights are more colorful in acidic water, show best under fairly dim lighting, and can look washed out in a sparse, bare tank."
+      },
+      {
+        "q": "What do glowlight tetra fry eat?",
+        "a": "Nothing for the first few days, while the yolk sac lasts. After that they take cultured infusoria, then baby brine shrimp and crushed dry food."
+      },
+      {
+        "q": "Can glowlight tetras eat tubifex worms?",
+        "a": "Live tubifex are best left out, because the worms host fish parasites. Freeze-dried tubifex is sold as an occasional treat, but nothing shows that drying makes it safe, so bloodworm and brine shrimp are the easier choice."
+      },
+      {
+        "q": "How do I feed glowlight tetras while I'm on vacation?",
+        "a": "Have a sitter use meals you measured out in advance, for example one compartment of a labeled pill organizer per feeding, or run an automatic feeder for several days before you leave to check it does not jam or overfeed."
+      }
+    ],
+    "relatedProducts": [
+      "neon-tetra-food-hikari-micro-pellets"
+    ],
+    "factFile": false,
+    "animalDay": null,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 4,
+    "headingCount": 8,
+    "ledeMatchesExcerpt": false,
+    "imageWidth": 1168,
+    "imageHeight": 784
+  },
+  {
+    "path": "/content/guides/glowlight-tetra-handling-guide.mdx",
+    "slug": "glowlight-tetra-handling-guide",
+    "title": "Glowlight Tetras Are Never Handled, So the Trip Home and the Tankmates Matter",
+    "seoTitle": "Glowlight Tetra Handling: Netting, Acclimation, Tankmates",
+    "seoDescription": "How to net, bag and acclimate a 1.6-inch glowlight tetra over 30 to 60 minutes, when shipped fish skip the slow mix, why to buy 10, and which tankmates eat it.",
+    "lastUpdated": "2026-11-01",
+    "noIndex": false,
+    "excerpt": "Nobody picks up a glowlight tetra. Its handling is a net, a bag and an hour of acclimation, and the choices that count are the size of the school and who shares the tank.",
+    "date": "2026-11-05",
+    "category": "Fish",
+    "categories": [
+      "Fish"
+    ],
+    "tags": [
+      "Glowlight Tetra",
+      "Handling",
+      "Acclimation",
+      "Tankmates",
+      "Schooling",
+      "Fish Behavior",
+      "Fish Care"
+    ],
+    "readTime": 7,
+    "difficulty": "Beginner",
+    "image": "/assets/images/glowlight-tetra-handling.jpg",
+    "imageAlt": "A school of small glowlight tetras with red-orange stripes swimming in a planted aquarium",
+    "emoji": "🐠",
+    "lastReviewed": "2026-10-31",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "How do you acclimate glowlight tetras?",
+        "a": "Dim the room, then add a little tank water to the bag every few minutes until it holds mostly aquarium water, which takes 30 to 60 minutes. Net the fish across and leave the bag water behind."
+      },
+      {
+        "q": "How many glowlight tetras should you buy?",
+        "a": "Ten or more is the goal, and six is the least that counts as a school. Ten need a tank with a base of 24 by 15 inches."
+      },
+      {
+        "q": "Can glowlight tetras live with angelfish?",
+        "a": "No. A full-grown angelfish treats a 1.6-inch tetra as food, and the two should not share a tank."
+      },
+      {
+        "q": "Are glowlight tetras aggressive?",
+        "a": "No. They are lively and peaceful, and they do well in a community of other small, calm fish."
+      },
+      {
+        "q": "How should glowlight tetras be bagged for the trip home?",
+        "a": "Fill the bag with one part water to three parts air, then keep it dark in a box or wrapped in a towel or newspaper."
+      },
+      {
+        "q": "How do you tell a male glowlight tetra from a female?",
+        "a": "Look at the belly. Adult females are rounder and grow slightly bigger, while males are slimmer. In grown fish the difference is easy to see."
+      },
+      {
+        "q": "Should glowlight tetras that were shipped be acclimated slowly?",
+        "a": "Not after a long journey. Ammonia builds up in the bag, and mixing in tank water raises the pH, which makes more of that ammonia toxic. Match the temperature, then net the fish straight in, or add an ammonia detoxifier to the bag before mixing."
+      }
+    ],
+    "relatedProducts": [],
+    "factFile": false,
+    "animalDay": null,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 4,
+    "headingCount": 11,
+    "ledeMatchesExcerpt": false,
+    "imageWidth": 1168,
+    "imageHeight": 784
+  },
+  {
+    "path": "/content/guides/glowlight-tetra-health-issues-guide.mdx",
+    "slug": "glowlight-tetra-health-issues-guide",
+    "title": "Common Glowlight Tetra Health Issues (and Why the Ich Heat Cure Stops at 82°F)",
+    "seoTitle": "Glowlight Tetra Health Issues: Ich, Fin Rot, Signs",
+    "seoDescription": "Glowlight tetra health issues: signs that need action today, why the 86°F ich cure is too hot for an 82°F fish, copper in soft water, and finding a fish vet.",
+    "lastUpdated": "2026-11-01",
+    "noIndex": false,
+    "excerpt": "No disease belongs to the glowlight tetra in particular. Ich, fin rot and water trouble are the usual list, ich needs a different cure here because the heat method runs hotter than the fish can go, and the soft water that brings out its stripe is where copper does the most harm.",
+    "date": "2026-11-05",
+    "category": "Fish",
+    "categories": [
+      "Fish"
+    ],
+    "tags": [
+      "Glowlight Tetra",
+      "Health",
+      "Water Quality",
+      "Fish Disease",
+      "Ich",
+      "Care Tips",
+      "Fish Care"
+    ],
+    "readTime": 9,
+    "difficulty": "Beginner",
+    "image": "/assets/images/glowlight-tetra-health-issues.jpg",
+    "imageAlt": "A healthy glowlight tetra with a red-orange stripe swimming among plants in a planted aquarium",
+    "emoji": "🐠",
+    "lastReviewed": "2026-10-31",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "Can you cure ich in glowlight tetras with heat?",
+        "a": "Heat alone will not do it. The temperature that kills most ich strains is 86°F, and a glowlight's range stops at 82°F. Warm the tank slowly up to 82°F with an air stone running to speed the parasite's cycle, and treat with an ich medication. Salt is unproven for this species at the 4 to 5 grams per liter that kills ich."
+      },
+      {
+        "q": "How long should new glowlight tetras be quarantined?",
+        "a": "At least 30 days in a separate tank. A month is long enough for a hidden infection to show in a place where it can be treated without putting the established school at risk."
+      },
+      {
+        "q": "What diseases do glowlight tetras get?",
+        "a": "The recorded list is short: fin rot, white spot (ich), parasitic infestations and general bacterial infections. None is unique to the species."
+      },
+      {
+        "q": "What signs mean a glowlight tetra needs help today?",
+        "a": "Surface gasping, several fish sick together or a body in the tank send you to the ammonia and nitrite test. White spots, fins that are ragged and red, or breathing that stays fast after a clean test mean treating the same day."
+      },
+      {
+        "q": "What water conditions keep glowlight tetras healthy?",
+        "a": "Keep the temperature between 75 and 82°F, the pH between 5.5 and 7.5, and hardness anywhere from 2 to 15 dGH. The acidic end of the pH range brings out the most color."
+      },
+      {
+        "q": "Is a copper ich medication safe for glowlight tetras?",
+        "a": "It is a risky pick. Characins, the group glowlights belong to, were more sensitive to copper than catfish or cichlids in soft Amazon water, and copper sulfate is not to be used below 50 mg/L total alkalinity. Test alkalinity first, or choose a medication without copper, and take any shrimp out before treating."
+      },
+      {
+        "q": "Can glowlight tetras get neon tetra disease?",
+        "a": "No case in a glowlight has been reported, but the parasite behind it infects about 20 freshwater species, and one was another Hemigrammus tetra. A fish that dies is removed at once, since the spores spread when tankmates eat infected tissue."
+      },
+      {
+        "q": "How do I find a vet for a sick glowlight tetra?",
+        "a": "Ask the vet you already see first: any vet may consult an aquatic vet in another state on the case. The American Association of Fish Veterinarians lists fish vets by state or country. Bring about a quart of tank water collected before any water change, kept cold."
+      }
+    ],
+    "relatedProducts": [
+      "tank-10-gallon",
+      "submersible-aquarium-heater",
+      "sponge-filter"
+    ],
+    "factFile": false,
+    "animalDay": null,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 8,
+    "headingCount": 12,
+    "ledeMatchesExcerpt": false,
+    "imageWidth": 1168,
+    "imageHeight": 784
+  },
+  {
+    "path": "/content/guides/glowlight-tetra-tank-setup-guide.mdx",
+    "slug": "glowlight-tetra-tank-setup-guide",
+    "title": "Glowlight Tetra Tank Setup: A 24 x 15 Inch Base, Acidic Water, and Planted Cover",
+    "seoTitle": "Glowlight Tetra Tank Setup Guide",
+    "seoDescription": "Glowlight tetra tank setup: a 24 x 15 inch base for 10, 75 to 82°F, pH 5.5 to 7.5, an inert sand floor, fine-leaved plants, dim light and a cycle first.",
+    "lastUpdated": "2026-11-01",
+    "noIndex": false,
+    "excerpt": "Glowlight tetras come from dark, acidic forest streams in Guyana. A tank for a school of 10 gives them floor space, 75 to 82°F, acidic water for color, a river-sand floor, fine-leaved plants under dim light, and a finished cycle.",
+    "date": "2026-11-05",
+    "category": "Fish",
+    "categories": [
+      "Fish"
+    ],
+    "tags": [
+      "Glowlight Tetra",
+      "Tank Setup",
+      "Substrate",
+      "Filtration",
+      "Aquarium Care",
+      "Care Tips",
+      "Fish Care"
+    ],
+    "readTime": 7,
+    "difficulty": "Beginner",
+    "image": "/assets/images/glowlight-tetra-tank-setup.jpg",
+    "imageAlt": "A planted aquarium with fine-leaved plants and a school of glowlight tetras swimming in open water",
+    "emoji": "🐠",
+    "lastReviewed": "2026-10-31",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "What size tank do glowlight tetras need?",
+        "a": "A tank with a base of at least 24 x 15 inches (60 x 38 cm), roughly 18 to 20 gallons, for a school of 10. A 20-gallon long has the same floor area."
+      },
+      {
+        "q": "Can glowlight tetras live in a 10-gallon tank?",
+        "a": "A 10-gallon falls short of the 24 x 15 inch base the species is given. Six is the smallest group that works, and a school of 10 needs the larger base."
+      },
+      {
+        "q": "What temperature do glowlight tetras need?",
+        "a": "75 to 82°F (24 to 28°C), held steady with a heater. Set it inside the range, since 82°F is the top."
+      },
+      {
+        "q": "What pH and hardness do glowlight tetras want?",
+        "a": "A pH of 5.5 to 7.5 and a hardness of 2 to 15 dGH. Fish kept on the acidic side of that pH range show more color."
+      },
+      {
+        "q": "Do glowlight tetras need live plants?",
+        "a": "Yes, a good spread of them. Fine-leaved plants at several heights give cover, with a clear stretch of open water in the middle for the school to swim."
+      },
+      {
+        "q": "What substrate is best for glowlight tetras?",
+        "a": "River sand, kept thin and inert, with driftwood and some leaf litter on top. Pea gravel and coral sand push the pH up and away from the acidic side where glowlights color best."
+      },
+      {
+        "q": "What fish can live with glowlight tetras?",
+        "a": "Peaceful fish of a similar size: livebearers, danios, rasboras, other small tetras and peaceful bottom dwellers such as Corydoras. Angelfish and anything else big enough to swallow a 1.6-inch fish do not belong."
+      },
+      {
+        "q": "Do glowlight tetras need blackwater?",
+        "a": "No. Every glowlight sold is farm-bred and settles in clear tap water. A tea-colored tint from driftwood and dried leaves, with the light kept dim, brings out the stripe."
+      }
+    ],
+    "relatedProducts": [
+      "tank-20-gallon-long",
+      "submersible-aquarium-heater",
+      "sponge-filter",
+      "water-conditioner",
+      "driftwood"
+    ],
+    "factFile": false,
+    "animalDay": null,
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 4,
+    "headingCount": 12,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
     "imageHeight": 784
