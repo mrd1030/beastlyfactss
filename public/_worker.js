@@ -1826,6 +1826,16 @@ function askSmallTalk(question) {
   return { kind: hit.kind, reply: hit.replies[Math.floor(Math.random() * hit.replies.length)], links: hit.links };
 }
 
+const ASK_SITE_RE = /\b(contact|e-?mail|reach|message|get in touch with|talk to)\s+(\w+\s+){0,2}(you|owner|creator|admin|team|(the|this) (site|website)|beastly)\b|\bwho\s+(\w+\s+){0,2}(made|created|built|runs|owns|wrote|started|is behind)\s+((this|the) (site|website|app)|beastly)\b|\b(about|behind) (this|the) (site|website)\b|\bwhat('s| is) (this|the) (site|website)\b|\bwho (owns|runs) beastly\b/i;
+const ASK_SITE_FOLLOW_RE = /^\s*(for |about |on |the |this |it'?s |its )*(the |this )?(site|website|web site|beastly( facts)?|owner|you)\s*[?.!]*\s*$/i;
+function askIsSiteQuestion(question, context) {
+  const q = question.replace(/[’]/g, "'");
+  if (ASK_SITE_RE.test(q) && !/\b(this|my|a|an|the) (fish|dog|cat|snake|lizard|bird|pet|animal|vet)\b/i.test(q.replace(/\b(the|this) (site|website)\b/ig, ''))) return true;
+  return Boolean(context?.prev) && ASK_SITE_RE.test(context.prev) && ASK_SITE_FOLLOW_RE.test(q);
+}
+const ASK_SITE_REPLY = 'The About page covers who runs Beastly Facts and why, and the Contact page sends a message straight to the owner.';
+const ASK_SITE_LINKS = [{ title: 'About Beastly Facts', url: '/about' }, { title: 'Contact', url: '/contact' }];
+
 const ASK_THANKS_REPLIES = [
   "You're welcome! Ask anything else any time.",
   'Happy to help. Ask away if anything else comes up.',
@@ -1880,8 +1890,17 @@ const ASK_GUIDE_TOPICS = [
   [/\b(sick\w*|ill|illness|disease\w*|vet|symptom\w*|infection\w*|parasite\w*|swollen|letharg\w*)\b/, 'health'],
   [/\b(handl\w*|hold\w*|pick\w* up|bite\w*|biting|tame|taming)\b/, 'handling'],
   [/\b(enrich\w*|bored\w*|toy\w*|play\w*)\b/, 'enrichment'],
+  // Color questions (owner, 2026-11-05): "what brings out a betta's color"
+  // lives in the feeding guide's color passage and in the fish color guide,
+  // and lost to the cost and handling guides' "color varieties" lines.
+  [/\b(colou?r\w*|vibran\w*)\b/, 'feeding'],
+  [/\b(colou?r\w*|vibran\w*)\b/, 'color'],
 ];
 
+const ASK_DIET_Q_RE = /\bwhat\b.*\b(eat|eats|feed|fed|diet)\b|\b(diet|staple food)\b/;
+const ASK_REFUSAL_Q_RE = /\b(won'?t|wont|not|stop\w*|refus\w*|quit|isn'?t|aren'?t|hasn'?t|haven'?t)\b/;
+const ASK_REFUSAL_HEADING_RE = /\b(stop\w* eating|won'?t eat|not eating|refus\w*|off (its|their) food)\b/;
+const ASK_COLOR_RE = /\b(colou?r\w*|vibran\w*)\b/;
 const ASK_CARE_RE = /\b(feed\w*|fed|food|foods|eat\w*|diet|tank\w*|enclosure\w*|cage\w*|setup|set up|habitat|vivarium|terrarium|aquarium|sick\w*|ill|illness|disease\w*|vet|vets|health\w*|symptom\w*|temperature\w*|temp|temps|heat\w*|humid\w*|lamp\w*|uvb|light\w*|cost\w*|price\w*|expensive|cheap|budget|substrate|bedding|clean\w*|handl\w*)\b/;
 const ASK_LEGAL_RE = /\b(legal|illegal|legally|allowed to (own|have|keep|buy)|permit|permits|permitted|licen[cs]e\w*|banned|outlawed|laws?|(what|which) states?|where can (i|you) (own|have|keep|buy|get))\b/;
 // The rule-based legal check: a legal word, or a state with own / have /
@@ -3139,6 +3158,21 @@ async function askRetrieve(db, question, context = null, router = null) {
     }
   }
 
+  // Color, asked of fish in general (owner, 2026-11-05): the fish color
+  // guide answers it for every fish, but it names no species, so the species
+  // and group searches above never reach it. "How do I make my fish more
+  // colorful" asked which fish, and "how does a fish enhance its color"
+  // answered from the koi and cardinal feeding guides.
+  const colorAsk = ASK_COLOR_RE.test(q) && !species && group?.id === 'fish';
+  const dietAsk = ASK_DIET_Q_RE.test(qOwn) && !ASK_REFUSAL_Q_RE.test(qOwn);
+  if (colorAsk) {
+    const seen = new Set(rows.map((r) => r.id));
+    const guide = `title : ${term('fish color')}`;
+    let extra = content.length ? await search(`${guide} AND {heading text} : (${anyOf(content)})`) : [];
+    if (!extra.length) extra = await search(guide);
+    rows = [...rows, ...extra.filter((r) => !seen.has(r.id))];
+  }
+
   // Coverage: the share of the question's own words (not the species name)
   // that a chunk contains, matched on a short stem.
   const care = ASK_CARE_RE.test(q);
@@ -3159,6 +3193,15 @@ async function askRetrieve(db, question, context = null, router = null) {
     if (care) boost = r.type === 'guide' || r.type === 'faq' || r.type === 'hub' ? 1.3 : r.type === 'fact' ? 0.6 : 0.85;
     if (topics.some((t) => r.slug.includes(`-${t}`))) boost *= 1.6;
     if (broad && r.type === 'hub') boost *= 3;
+    if (colorAsk && r.slug === 'fish-color-and-diet-guide') boost *= 2.5;
+    // A diet question ("what do tetras eat") wants the "What Embers Eat"
+    // section, not "Why Embers Stop Eating", whose heading also has the word
+    // (owner, 2026-11-05: "what do tetras eat" landed on three refusal
+    // sections and the model declined).
+    if (dietAsk) {
+      if (ASK_REFUSAL_HEADING_RE.test(heading)) boost *= 0.5;
+      else if (/^what\b.*\b(eat|eats|diet)\b/.test(heading)) boost *= 1.4;
+    }
     return { ...r, coverage, score: -r.rank * (0.5 + coverage) * (1 + 0.5 * headingCoverage) * boost };
   }).sort((a, b) => b.score - a.score);
 
@@ -3379,6 +3422,20 @@ async function handleAskInner(request, env, ctx, state) {
       result: 'greeting',
       answer: talk.reply,
       links: talk.links,
+      emergency: false,
+      species: null,
+      followUp: Boolean(context),
+    });
+  }
+  // Questions about the site itself (who runs it, how to reach the owner)
+  // get a fixed reply with the About and Contact pages, no model and no
+  // search (owner, 2026-11-05: "How do I contact the owner" was asked back
+  // for an animal, and the reply "For the site" landed on an aviary guide).
+  if (askIsSiteQuestion(question, context)) {
+    return storeJson({
+      result: 'greeting',
+      answer: ASK_SITE_REPLY,
+      links: ASK_SITE_LINKS,
       emergency: false,
       species: null,
       followUp: Boolean(context),
@@ -4000,9 +4057,14 @@ function askRouterCheck(raw, meta) {
   if (!raw || typeof raw !== 'object' || Array.isArray(raw)) return null;
   if (!ASK_ROUTER_KINDS.includes(raw.kind) || typeof raw.switched !== 'boolean') return null;
   // A listed name, allowing a plural and a fish name without its "fish".
+  // askPlainWords drops hyphens, so a listed name is compared the same way:
+  // "rummy-nose tetra" came back as "rummy nose tetra" and read as an animal
+  // the site has nothing on (owner, 2026-11-05), and so did every hyphenated
+  // name (red-eared slider, two-toed sloth, ring-tailed lemur).
+  const plain = (text) => text.toLowerCase().replace(/[^a-z0-9 ]+/g, ' ').replace(/\s+/g, ' ').trim();
   const listed = (name) => {
     const forms = [name, name.replace(/s$/, ''), name.replace(/es$/, ''), `${name} fish`];
-    return meta.species.find((sp) => forms.includes(sp.name.toLowerCase()) && !/: the essentials$/i.test(sp.name)) || null;
+    return meta.species.find((sp) => forms.includes(plain(sp.name)) && !/: the essentials$/i.test(sp.name)) || null;
   };
   const name = askPlainWords(raw.animal, 6, 60);
   let animal = name ? listed(name) : null;
