@@ -231,6 +231,18 @@ priced table, and a dated line only ages.
   they are written; an existing article gets one whenever it is opened for
   any other edit (a regrade, a fact-check, a source pass, the species
   recaps). The fish color and fish death guides are the reference.
+  Guards against 800 closings that all sound alike (Fable review,
+  2026-11-05): the heading uses a specific word from the article, never
+  only the species name plus "care" or "health" and never "What to
+  Remember About X"; the closing never opens with "In the end", "Overall"
+  or "Remember", and never restates the article's first sentence; it never
+  brings in a product, a price or a source; 4 sentences is a hard limit.
+  "No new facts" still allows a conclusion the article clearly implies
+  ("needs a water test before it needs a new food"). Two article types
+  may let their last content paragraph serve as the closing, with no
+  separate section, as long as it is not a link library: fact roundups
+  (a recap after a list of facts turns into filler) and wild animal
+  spotlights and myth pieces (they already end on their strongest point).
 - In-body links go to whatever page is the real answer to something the
   article just raised: another species ("the same calcium problem sugar
   gliders have"), a cross-species guide (quarantine, UVB, gut-loading), the
