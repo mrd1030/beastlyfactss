@@ -4045,9 +4045,14 @@ function askRouterCheck(raw, meta) {
   if (!raw || typeof raw !== 'object' || Array.isArray(raw)) return null;
   if (!ASK_ROUTER_KINDS.includes(raw.kind) || typeof raw.switched !== 'boolean') return null;
   // A listed name, allowing a plural and a fish name without its "fish".
+  // askPlainWords drops hyphens, so a listed name is compared the same way:
+  // "rummy-nose tetra" came back as "rummy nose tetra" and read as an animal
+  // the site has nothing on (owner, 2026-11-05), and so did every hyphenated
+  // name (red-eared slider, two-toed sloth, ring-tailed lemur).
+  const plain = (text) => text.toLowerCase().replace(/[^a-z0-9 ]+/g, ' ').replace(/\s+/g, ' ').trim();
   const listed = (name) => {
     const forms = [name, name.replace(/s$/, ''), name.replace(/es$/, ''), `${name} fish`];
-    return meta.species.find((sp) => forms.includes(sp.name.toLowerCase()) && !/: the essentials$/i.test(sp.name)) || null;
+    return meta.species.find((sp) => forms.includes(plain(sp.name)) && !/: the essentials$/i.test(sp.name)) || null;
   };
   const name = askPlainWords(raw.animal, 6, 60);
   let animal = name ? listed(name) : null;
