@@ -220,6 +220,39 @@ priced table, and a dated line only ages.
   paragraph is content, and if it links, it links the one page that
   follows from the point it makes. The bearded dragon guides are the
   reference. Decided 2026-09-14.
+- Every article ends on a closing section (owner, 2026-11-05), so it does
+  not just stop: 2 to 4 sentences, just before the Sources, under a heading
+  that names the takeaway ("Bringing Out a Fish's Best Color", "Looking
+  After the Fish That Are Left"), never "Conclusion", "In Summary" or
+  "Final Thoughts". It says what the reader should do or remember, pulls
+  together what the article already said, adds no new facts, and does not
+  walk back through every section. The link rule above still holds: at most
+  one link, only where it follows from the point. New articles get one when
+  they are written; an existing article gets one whenever it is opened for
+  any other edit (a regrade, a fact-check, a source pass, the species
+  recaps). The fish color and fish death guides are the reference.
+  Guards against 800 closings that all sound alike (Fable review,
+  2026-11-05): the heading uses a specific word from the article, never
+  only the species name plus "care" or "health" and never "What to
+  Remember About X"; the closing never opens with "In the end", "Overall"
+  or "Remember", and never restates the article's first sentence; it never
+  brings in a product, a price or a source; 4 sentences is a hard limit.
+  "No new facts" still allows a conclusion the article clearly implies
+  ("needs a water test before it needs a new food"). Two article types
+  may let their last content paragraph serve as the closing, with no
+  separate section, as long as it is not a link library: fact roundups
+  (a recap after a list of facts turns into filler) and wild animal
+  spotlights and myth pieces (they already end on their strongest point).
+- State abbreviations (owner, 2026-11-05): state lists in FAQ answers and
+  closing sections use postal codes, in alphabetical order by code, with
+  "and" before the last ("MA, ME, VT and WV"). DC and NYC are not states
+  and go last, after the states, DC before NYC ("CA, NY, WA, DC and NYC"). Tables keep full state names, and a sentence
+  about a single state spells it out; two or more states make a list. A
+  list may open a sentence, but never with a code that reads as a word (HI,
+  ID, IN, ME, OH, OK, OR): when alphabetical order would put one first,
+  lead with a count or a label ("Permit states: ID, IN and OR"). Existing
+  guides convert when next opened, not in a sweep. The axolotl legal guide
+  is the reference.
 - In-body links go to whatever page is the real answer to something the
   article just raised: another species ("the same calcium problem sugar
   gliders have"), a cross-species guide (quarantine, UVB, gut-loading), the

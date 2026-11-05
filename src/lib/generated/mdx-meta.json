@@ -4336,7 +4336,7 @@
     "title": "Is It Legal to Own an Axolotl? State-by-State Guide (Virginia Myth Corrected)",
     "seoTitle": "Are Axolotls Legal? Banned States and the Virginia Update",
     "seoDescription": "Where axolotls are actually banned (California and more), why Virginia was legalized in 2021, and the reasoning behind each rule.",
-    "lastUpdated": "2026-10-08",
+    "lastUpdated": "2026-11-05",
     "noIndex": false,
     "excerpt": "Axolotls are banned in a handful of states, California among them, but Virginia isn't one of them anymore. A 2021 rule change legalized them there, and a lot of hobbyist sites still haven't caught up.",
     "date": "2026-07-15",
@@ -4366,7 +4366,7 @@
       },
       {
         "q": "Which states ban axolotls?",
-        "a": "California bans them outright under a detrimental-species regulation, with no pet permits issued. New Jersey bans them, listing axolotls among species that may not be kept as pets or sold. Maine requires a permit that isn't typically issued for pet ownership. Washington DC bans them by omission, since no amphibian fits its permitted pet categories. Wyoming and Alabama ban them via the 2025 federal injurious wildlife listing, and New Mexico bans them through a default group IV designation. Arkansas puts the axolotl on its prohibited list, where only an animal owned before May 16, 2024 and registered with the Game and Fish Commission by June 30, 2025 may still be kept."
+        "a": "Seven places ban them: AL, AR, CA, NJ, NM, WY and DC. CA and NJ ban them on their own lists, NM and DC leave them off their allowed lists, and AL and WY follow the 2025 federal listing. In AR, only an animal owned before May 16, 2024 and registered by June 30, 2025 may stay. MA, ME, VT and WV require a permit instead."
       },
       {
         "q": "Why is California so strict about axolotls specifically?",
@@ -21909,7 +21909,7 @@
     "seoDescription": "Why fish must eat their reds and oranges, what color-enhancing foods contain and how long they take, what no food can change, and the colors fish by fish.",
     "lastUpdated": "2026-11-05",
     "noIndex": false,
-    "excerpt": "A fish cannot make most of the red, orange or yellow it wears; the carotenoid part comes in with food. The blues, silvers and blacks come from somewhere else, and stress, light and water move all of them. Here is what a color food can do, how long it takes, and what it cannot touch.",
+    "excerpt": "A fish cannot make the pigment behind most of the red, orange or yellow it wears; that part comes in with food. The blues, silvers and blacks come from somewhere else, and stress, light and water move all of them. Here is what a color food can do, how long it takes, and what it cannot touch.",
     "date": "2026-11-05",
     "category": "Fish",
     "categories": [
@@ -21934,11 +21934,11 @@
     "faqs": [
       {
         "q": "Is a color-enhancing food safe for fish?",
-        "a": "At the amounts tested, yes, and the same pigments have helped fish fight off infection. The catch is balance: a pigment-heavy feed can cost growth, so a color food is one part of the rotation, never the whole diet."
+        "a": "In a normal rotation, yes, and the same pigments have helped fish fight off infection. The catch is balance: a pigment-heavy food can slow growth, so a color food is one part of the rotation, never the whole diet."
       },
       {
         "q": "Can a color food change a blue or black fish, or its pattern?",
-        "a": "No. Blue, silver and iridescent green are light thrown back by crystals in the skin, black is a pigment the fish makes for itself, and the pattern and variety are bred in. A color food deepens only the reds, oranges and yellows a fish already carries."
+        "a": "No. Blue, silver and shiny green are light bouncing off crystals in the skin, black is a pigment the fish makes for itself, and the pattern and variety are bred in. A color food deepens only the reds, oranges and yellows a fish already carries."
       },
       {
         "q": "How long does a color food take to work?",
@@ -21946,7 +21946,7 @@
       },
       {
         "q": "Why did my new fish lose its color after I brought it home?",
-        "a": "A move is stressful, and stress shifts color through hormones within hours, so a new fish often looks washed out at first. One that stays pale while refusing food or clamping its fins needs a water test."
+        "a": "A move is stressful, and stress changes color within hours, so a new fish often looks washed out at first. One that stays pale while refusing food or clamping its fins needs a water test."
       },
       {
         "q": "Do I need enriched brine shrimp to bring out color?",
@@ -21960,7 +21960,7 @@
     "myth": null,
     "truth": null,
     "sourceCount": 7,
-    "headingCount": 25,
+    "headingCount": 28,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
     "imageHeight": 784
@@ -21971,7 +21971,7 @@
     "title": "When a Fish Dies: What to Do Next",
     "seoTitle": "Dead Fish in the Aquarium: What to Do Next",
     "seoDescription": "Found a dead fish in your aquarium? How to confirm death, why the body comes out now, what to test before a water change, and how to dispose of it safely.",
-    "lastUpdated": "2026-11-04",
+    "lastUpdated": "2026-11-05",
     "noIndex": false,
     "excerpt": "Confirm it is dead, get the body out, and test the water before changing any of it. Then look for a cause, keep the body cold if a lab may want it, and never flush or release a fish.",
     "date": "2026-11-04",
@@ -22001,10 +22001,6 @@
         "a": "A sick one, when there is a choice. Labs learn the most from fish that are close to death or showing the signs most of the group shares, and three to five of those is usually enough."
       },
       {
-        "q": "How long does a fish lab take to give an answer?",
-        "a": "Water quality problems and parasites can often be named at the exam itself. A bacterial culture usually needs 24 to 48 hours, finding the antibiotic that works adds another 24 to 48, and tissue or virus testing commonly takes one to two weeks."
-      },
-      {
         "q": "Is it safe to handle a dead fish with bare hands?",
         "a": "Wash your hands afterward, as after any work in an aquarium. Mycobacterium, which fish can carry, can cause a skin infection in people that may progress to something more serious, and anyone with a weakened immune system should probably leave tank work to someone else."
       },
@@ -22019,8 +22015,8 @@
     "animal": null,
     "myth": null,
     "truth": null,
-    "sourceCount": 5,
-    "headingCount": 8,
+    "sourceCount": 6,
+    "headingCount": 9,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
     "imageHeight": 784
