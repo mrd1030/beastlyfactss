@@ -143,9 +143,8 @@ plain words, the fish farm list trimmed to label words, the immune line, the
 discus line, hibiscus, "plain ones carry little", pteridine jargon gone).
 What is left are gaps, each needing research:
 
-- Fish death: what to do between zero and 2 mg/L ammonia.
-- Fish death: trash or burial (local rules only so far).
-- Fish death: the tankmates after an unexplained death (how long to watch,
-  whether to quarantine).
+- Fish death: trash or burial. Researched 2026-11-05 (research/DEAD_FISH_RESEARCH.md):
+  county and state waste pages support double-bagged trash or burial 2 feet down,
+  but adding one is a sixth source; owner call.
 - Color: color-enhancing aquarium lights (the fish, or only how it looks).
 - Color: GloFish, which readers confuse with dyed fish.

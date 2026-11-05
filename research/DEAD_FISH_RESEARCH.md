@@ -151,3 +151,24 @@ Five sources cover the core: D1 (first steps, cause checklist, sample, cold not 
 
 - Alkalinity (KH) added to the guide's test list, and the old tank syndrome line now links the freshwater pH, GH and KH guide on "little or no alkalinity (KH)" (3 in-body links). D1's test list does not name alkalinity; D3 describes old tank syndrome by "little or no alkalinity", so a reader needs the KH reading to recognize it. Kept without a source naming alkalinity in a test list (owner review).
 - Lab section trimmed (owner, 2026-11-05): the foam cooler and bubble wrap packing, the overnight morning arrival and the turnaround times FAQ are out. Kept: call as soon as disease is a suspicion, misdiagnosis without tests, what makes a usable body, moist, cold, never frozen, call before sending.
+
+## 2026-11-05: the three gaps (Sonnet research pass, 11 pages opened)
+
+Gap 1, ammonia above zero but under 2 mg/L: SUPPORTED by sources already cited.
+- UF/IFAS FA16 (EDIS id FA031, rev. June 2022, https://edis.ifas.ufl.edu/publication/FA031/pdf), verbatim: "any ammonia indicates a problem in your system. If you find it, take corrective measures immediately." "The first thing to do when ammonia is present in a pond or tank is to reduce or stop feeding ... Reducing or stopping feed for a short period of time (e.g., 1-3 days) will not typically have a negative effect on fish (except fry)." "A 25% to 50% water change will help remove some ammonia, assuming the incoming water source does not contain ammonia." "water changes and the use of ammonia-binding products can alleviate ammonia toxicity in the short term." "Whenever ammonia is found, increase the frequency of testing until the problem is corrected." "The portion of un-ionized ammonia increases with increasing pH and/or temperature."
+- Merck, Environmental Diseases of Aquatic Animals in Aquatic Systems (fetch tool): "Overfeeding or malfunction (death) of a biologic filter are common causes of increased NH3." Also "In most home aquariums, a TAN reading of 1.0 is not a huge concern unless pH exceeds 8.5": runs against FA16's "any ammonia indicates a problem"; not used, FA16's tone kept.
+- Guide: the low-reading steps added before the 2 mg/L line. "Retest every day" follows FA16's "increase the frequency of testing".
+
+Gap 2, the surviving fish: PARTLY.
+- FA55 (verbatim) signs: flashing or rubbing, abnormal swimming, faster breathing, lethargy, position in the water column (surface, bottom), not eating, eyes "sunken in, or protruding", fins "clamped down, frayed, or bloody", lesions or growths. "If most of the fish in a system demonstrate abnormal behavior and die within 24 hours ... Agents that create this peracute reaction are usually environmental, namely a change in water quality."
+- Merck, Management of Aquarium Fish (fetch tool): "A 30-day period is the minimum time for quarantine, but longer periods may be necessary."
+- Not found: how many days to watch the rest; any rule to wait before adding new fish after an unexplained death; general advice to treat the rest (Merck's removal of contact fish is disease-specific and not generalized).
+- Guide: a watch-the-rest paragraph in Look for a Cause; "a few times a day" is the site's wording, no source gives a frequency (owner review). Merck pages folded into the existing Merck entry (still 5 sources).
+- Not used: Purdue ADDL, Tsang Lin, "What should I do if I find a dead fish in my pond or tank?" (vet school lab, eligible; FA55 covers the same signs).
+
+Gap 3, disposal in practice: PARTLY, needs a new source, owner call (not applied).
+- Fairfax County Public Works, Animal Carcass Disposal (fetch tool): "Small Animals (25 lbs. or less): Double bag, place in regular trash." Burial "Only on the private property of the animal's owner", at least 2 feet of compacted soil over the animal, 100 feet from wells, 25 feet from ponds and streams. No mention of fish.
+- King County Solid Waste (fetch tool): small dead animals (under 15 pounds) may go in your own garbage; burial on your own property allowed if no nuisance.
+- Florida DEP, Disposal of Deceased Domestic Animals Guidance (verbatim, names fish): bodies "of fish ... as well as bodies of domestic animals that have not died due to disease" may go to a Class I landfill or be buried on the property "at least two feet below the surface of the ground and above the water table."
+- Snippet only, not citable: Maine Department of Agriculture homeowner burial brochure; Kansas KDHE.
+- Not found: any vet, extension or fish agency page on a single pet fish; freezing until trash day.
