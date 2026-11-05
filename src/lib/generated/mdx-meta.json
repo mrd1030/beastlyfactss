@@ -3791,9 +3791,9 @@
     "title": "Are Pet Otters Legal? The Mustelid Clause and the Word Otter",
     "seoTitle": "Are Pet Otters Legal? 15 Bans, 12 Permits, by State",
     "seoDescription": "Pet otter laws by state: 15 bans, 12 permit states, 15 with no rule, 7 unclear. Why CITES Appendix I means captive-bred only, and what 'otter' in fur law does.",
-    "lastUpdated": "2026-10-12",
+    "lastUpdated": "2026-11-05",
     "noIndex": false,
-    "excerpt": "Every pet otter in America is an Asian small-clawed otter, and since 2019 every lawful one is domestic captive-bred, because CITES Appendix I closed the border. Inside the country the family name Mustelidae does most of the work: it bans the otter in Maine and Connecticut, licenses it in South Dakota and Virginia, and frees only the ferret. Seven states name 'otter' in a furbearer list and never say which one.",
+    "excerpt": "Every pet otter in America is an Asian small-clawed otter, and since 2019 every lawful one is domestic captive-bred, because CITES Appendix I closed the border. Inside the country the family name Mustelidae does most of the work: it bans the otter in Maine, bars bringing one into Connecticut, licenses it in South Dakota and Virginia, and frees only the ferret. Seven states name 'otter' in a furbearer list and never say which one.",
     "date": "2026-10-12",
     "category": "Legal",
     "categories": [
@@ -14539,9 +14539,9 @@
     "title": "Are Coatis Legal? The Procyonid the Lists Name by Accident",
     "seoTitle": "Are Coatis Legal? Legal in 24 States, 13 Bans, by State",
     "seoDescription": "Coati laws by state: legal in 24 states, banned in 13 jurisdictions, 11 permit states. Oklahoma, Nebraska and Texas name it, and Arizona treats it as a native.",
-    "lastUpdated": "2026-10-12",
+    "lastUpdated": "2026-11-05",
     "noIndex": false,
-    "excerpt": "The coati shares the kinkajou's map almost line for line, with three differences that come from being named. Oklahoma's exemption list and Nebraska's import list carry the word 'coatimundi' and nothing for the kinkajou, which makes the coati the freer animal in both. Texas lists the white-nosed coati as state threatened, which makes it the banned one there.",
+    "excerpt": "The coati shares the kinkajou's map almost line for line, with four differences that come from being named. Maine names the coati in the permit tier open to a private keeper, and Oklahoma's exemption list and Nebraska's import list carry the word 'coatimundi' and nothing for the kinkajou, which makes the coati the freer animal in all three. Texas lists the white-nosed coati as state threatened, which makes it the banned one there.",
     "date": "2026-10-12",
     "category": "Legal",
     "categories": [
@@ -20325,7 +20325,7 @@
       },
       {
         "q": "What does federal law control, then?",
-        "a": "Mainly four things: importing or shipping certain injurious species across state lines (the Lacey Act), international trade in listed species (CITES), humane treatment standards for commercial dealers and exhibitors (the Animal Welfare Act), and a few narrow public-health rules like the FDA's small-turtle sale ban. None of these are a general private-ownership license system."
+        "a": "Mainly four things: importing certain injurious species or shipping them to or from Hawaii, Puerto Rico, DC and the territories (the Lacey Act), international trade in listed species (CITES), humane treatment standards for commercial dealers and exhibitors (the Animal Welfare Act), and a few narrow public-health rules like the FDA's small-turtle sale ban. None of these are a general private-ownership license system."
       },
       {
         "q": "Is the 4-inch turtle rule a CDC rule?",
@@ -32320,9 +32320,9 @@
     "title": "Is It Legal to Own a Jackson's Chameleon? State Guide",
     "seoTitle": "Are Jackson's Chameleons Legal? Hawaii Is the Twist",
     "seoDescription": "Jackson's chameleons are legal in 46 of 52 US jurisdictions. Hawaii bars them despite having feral populations, and Maine names the species on its cleared list.",
-    "lastUpdated": "2026-10-03",
+    "lastUpdated": "2026-11-05",
     "noIndex": false,
-    "excerpt": "Jackson's chameleons clear 46 of 52 jurisdictions, and the one that bars them is the one where they are most abundant. Hawaii's feral population descends from a single 1972 release in Kaneohe, and no private keeper there may hold one.",
+    "excerpt": "Jackson's chameleons clear 46 of 52 jurisdictions, and of the two places that bar them, one is where they are most abundant. Hawaii's feral population descends from a single 1972 release in Kaneohe, and no private keeper there may hold one.",
     "date": "2026-09-11",
     "category": "Legal",
     "categories": [
@@ -32368,7 +32368,7 @@
     "myth": null,
     "truth": null,
     "sourceCount": 6,
-    "headingCount": 8,
+    "headingCount": 9,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
     "imageHeight": 784
@@ -41078,11 +41078,11 @@
     "path": "/content/guides/prairie-dog-legal-guide.mdx",
     "slug": "prairie-dog-legal-guide",
     "title": "Are Prairie Dogs Legal? The Federal Ban Ended in 2008",
-    "seoTitle": "Are Prairie Dogs Legal? 15 States Still Say No",
-    "seoDescription": "The FDA rescinded its monkeypox-era prairie dog rule in 2008. Fifteen states still ban them outright, Colorado included, where the animal is native and common.",
-    "lastUpdated": "2026-09-11",
+    "seoTitle": "Are Prairie Dogs Legal? 15 Jurisdictions Still Say No",
+    "seoDescription": "The FDA rescinded its monkeypox-era prairie dog rule in 2008. Fifteen jurisdictions still ban them, Colorado included, where the animal is native and common.",
+    "lastUpdated": "2026-11-05",
     "noIndex": false,
-    "excerpt": "For five years it was federally illegal to sell or move a prairie dog across state lines, because of a monkeypox outbreak traced to a Texas pet distributor. The FDA lifted that in 2008. Fifteen states did not follow, and one of them is Colorado.",
+    "excerpt": "For five years it was federally illegal to sell or move a prairie dog across state lines, because of a monkeypox outbreak traced to a Texas pet distributor. The FDA lifted that in 2008. Fifteen jurisdictions did not follow, and one of them is Colorado.",
     "date": "2026-09-06",
     "category": "Legal",
     "categories": [
@@ -41114,7 +41114,7 @@
       },
       {
         "q": "Which states ban prairie dogs?",
-        "a": "Fifteen: California, Georgia, Colorado, Connecticut, Oregon, New Mexico, Kentucky, New Hampshire, Alaska, Alabama, Nebraska, Hawaii, New Jersey, the District of Columbia and New York City. Thirteen more require a permit, Arizona and Utah restrict them, and Texas allows up to 25 without a permit but forbids selling one."
+        "a": "Fifteen: AK, AL, CA, CO, CT, GA, HI, KY, NE, NH, NJ, NM, OR, DC and NYC. Thirteen more require a permit, AZ and UT restrict them, and Texas allows up to 25 without a permit but forbids selling one."
       },
       {
         "q": "Can you own a prairie dog in Colorado?",
@@ -41128,7 +41128,7 @@
     "myth": null,
     "truth": null,
     "sourceCount": 6,
-    "headingCount": 9,
+    "headingCount": 10,
     "ledeMatchesExcerpt": false,
     "imageWidth": 1168,
     "imageHeight": 784
@@ -44988,9 +44988,9 @@
     "title": "Are Ring-Tailed Lemurs Legal? The Primate on the Endangered List",
     "seoTitle": "Are Lemurs Legal? 30 Bans, 7 Permits, by State",
     "seoDescription": "Ring-tailed lemur laws by state: 30 bans, 7 permit states, 13 with no rule, Ohio by registration. The federal endangered listing, CITES Appendix I, Florida.",
-    "lastUpdated": "2026-10-14",
+    "lastUpdated": "2026-11-05",
     "noIndex": false,
-    "excerpt": "The ring-tailed lemur is the one small primate on the federal endangered list, and that listing decides three states by reference before any primate law is read. Missouri, South Carolina and New Jersey bar it for being endangered while clearing or registering the capuchin beside it; Ohio and West Virginia turn around and treat it as the gentlest primate in the statute.",
+    "excerpt": "The ring-tailed lemur is the one small primate on the federal endangered list, and that listing decides three states by reference before any primate law is read. Missouri, South Carolina and New Jersey bar it for being endangered, and the first two clear or register the capuchin beside it; Ohio and West Virginia turn around and treat it as the gentlest primate in the statute.",
     "date": "2026-10-14",
     "category": "Legal",
     "categories": [
