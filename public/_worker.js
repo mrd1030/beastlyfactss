@@ -1900,6 +1900,25 @@ const ASK_GUIDE_TOPICS = [
 const ASK_DIET_Q_RE = /\bwhat\b.*\b(eat|eats|feed|fed|diet)\b|\b(diet|staple food)\b/;
 const ASK_REFUSAL_Q_RE = /\b(won'?t|wont|not|stop\w*|refus\w*|quit|isn'?t|aren'?t|hasn'?t|haven'?t)\b/;
 const ASK_REFUSAL_HEADING_RE = /\b(stop\w* eating|won'?t eat|not eating|refus\w*|off (its|their) food)\b/;
+// The one guided animal a word in the question names, when only one guided
+// name on the site ends in that word ("kingsnake", "conure", "tegu"). A word
+// that ends two names ("gecko", "skink") or appears in another ("boa" in
+// Rosy Boa and Boa Constrictor) names none, and an adjective ("African",
+// "green") never counts.
+function askSoleNamed(q, meta) {
+  const plain = (t) => t.toLowerCase().replace(/[^a-z0-9 ]+/g, ' ').replace(/\s+/g, ' ').trim();
+  const forms = (w) => [w, w.replace(/s$/, ''), w.replace(/es$/, '')];
+  const guided = meta.species.filter((sp) => sp.guideId && !/: the essentials$/i.test(sp.name));
+  // A group word ("parrot", "snake", "gecko") stays the group's.
+  const words = plain(q).split(' ').filter((w) => w.length > 2 && !ASK_GROUPS.some((g) => g.re.test(w)));
+  for (const word of words) {
+    const mine = forms(word);
+    const hits = guided.filter((sp) => mine.includes(plain(sp.name).split(' ').pop()));
+    const anywhere = guided.filter((sp) => plain(sp.name).split(' ').some((w) => mine.includes(w)));
+    if (hits.length === 1 && anywhere.length === 1) return hits[0];
+  }
+  return null;
+}
 const ASK_COLOR_RE = /\b(colou?r\w*|vibran\w*)\b/;
 const ASK_CARE_RE = /\b(feed\w*|fed|food|foods|eat\w*|diet|tank\w*|enclosure\w*|cage\w*|setup|set up|habitat|vivarium|terrarium|aquarium|sick\w*|ill|illness|disease\w*|vet|vets|health\w*|symptom\w*|temperature\w*|temp|temps|heat\w*|humid\w*|lamp\w*|uvb|light\w*|cost\w*|price\w*|expensive|cheap|budget|substrate|bedding|clean\w*|handl\w*)\b/;
 const ASK_LEGAL_RE = /\b(legal|illegal|legally|allowed to (own|have|keep|buy)|permit|permits|permitted|licen[cs]e\w*|banned|outlawed|laws?|(what|which) states?|where can (i|you) (own|have|keep|buy|get))\b/;
@@ -2010,7 +2029,24 @@ function askExpand(text, meta) {
 }
 
 // First name in `list` (longest first) found as whole words in q, plural ok.
+// A name with no care guide that is a shorter spelling of a guided one
+// ("Argentine Tegu" from an article's animal field, "Blue-Tongued Skink" from
+// a fact) stands for the guided animal (owner, 2026-11-06, Fable's gap 1):
+// every word of it, allowing a plural or "-ed", is in the guided name.
+function askPreferGuided(item, list) {
+  if (!item || item.guideId) return item;
+  const plain = (t) => t.toLowerCase().replace(/[^a-z0-9 ]+/g, ' ').replace(/\s+/g, ' ').trim().split(' ');
+  const forms = (w) => [w, w.replace(/s$/, ''), w.replace(/ed$/, ''), w.replace(/d$/, '')];
+  const mine = plain(item.name);
+  const guided = list.filter((sp) => sp.guideId && !/: the essentials$/i.test(sp.name)
+    && mine.every((w) => plain(sp.name).some((g) => forms(w).includes(g) || forms(g).includes(w))));
+  // Exactly one: "Gecko" fits every guided gecko and stays the plain name.
+  return guided.length === 1 ? guided[0] : item;
+}
 function askFindName(q, list) {
+  return askPreferGuided(askFindNameRaw(q, list), list);
+}
+function askFindNameRaw(q, list) {
   for (const item of list) {
     const name = item.name.toLowerCase();
     if (new RegExp(`\\b${escapeRe(name)}(e?s)?\\b`).test(q)) return item;
@@ -2701,8 +2737,17 @@ function askFindState(q, states) {
   const byName = askFindName(q, states);
   if (byName) return byName;
   const m = q.match(/\b(?:in|for)\s+([a-z]{2,3})\b/);
-  return m ? states.find((s) => s.code === m[1]) || null : null;
+  const hit = m ? states.find((s) => s.code === m[1]) || null : null;
+  if (hit) return hit;
+  // A code with no "in" before it, at the end of the question or before
+  // "state" ("is a hedgehog legal pa", "legal tx state"), owner, 2026-11-06,
+  // Fable's gap 4. Codes that are English words (me, or, in, hi, ok, oh, id)
+  // count only after "in" or "for", above.
+  const tail = q.match(/\b([a-z]{2})\s*(?:state)?\s*$/);
+  if (tail && !ASK_WORD_CODES.has(tail[1])) return states.find((s) => s.code === tail[1]) || null;
+  return null;
 }
+const ASK_WORD_CODES = new Set(['me', 'or', 'in', 'hi', 'ok', 'oh', 'id']);
 
 function askLegalLinks(q, meta) {
   const links = [];
@@ -2802,6 +2847,14 @@ async function askRetrieve(db, question, context = null, router = null) {
     ownSpecies = router.animal;
     ownTopicGroup = ownSpecies ? askSpeciesGroup(ownSpecies, meta) : router.group;
     if (ownTopicGroup) ownSpecies = null;
+    // A word that names exactly one animal with a guide is that animal, even
+    // when the router read the group: "what do kingsnakes eat" asked which
+    // snake and "what do conures eat" which parrot, though the site has one
+    // kingsnake and one conure (owner, 2026-11-06).
+    if (!ownSpecies && ownTopicGroup) {
+      const sole = askSoleNamed(qOwn, meta);
+      if (sole) { ownSpecies = sole; ownTopicGroup = null; }
+    }
     // "How do I get my parrot to eat" after the African grey (owner,
     // 2026-11-04, from the live test: it asked "which parrot?"): a group
     // word that holds the remembered animal means that animal, not a
@@ -3069,7 +3122,13 @@ async function askRetrieve(db, question, context = null, router = null) {
   // a link, or with no hub a fact of it (owner, 2026-11-03). Never the
   // model. Not after "which animal?", where the name answers that question
   // and carries it along.
-  if (ownSpecies && bare && !(followUp && context?.clarify)) {
+  // A follow-up that names only an animal but carries a topic ("what about
+  // betta?" after a color question, "and for koi?") answers that topic for
+  // the new animal instead of linking its hub (owner, 2026-11-06).
+  // Not tied to followUp: "and for koi?" switches animal, so the router
+  // reads switched and followUp is false, yet the topic still carries.
+  const carriesTopic = Boolean(prev) && routed && Boolean(router.search) && router.kind === 'care_question';
+  if (ownSpecies && bare && !(followUp && context?.clarify) && !carriesTopic) {
     if (ownSpecies.guideId) return found({ species: ownSpecies, nav: true });
     if (meta.facts.some((f) => f.species === ownSpecies.name)) return found({ species: ownSpecies, fact: true });
   }
@@ -3367,9 +3426,9 @@ async function handleAsk(request, env, ctx) {
     const spend = askSpendUnits(env, state.dayUsed || 0, state.units).catch(() => {});
     if (ctx?.waitUntil) ctx.waitUntil(spend); else await spend;
   }
-  if (!state.pass && !state.read) return res;
+  if (!state.pass && !state.read && !state.topic) return res;
   const data = await res.json().catch(() => null);
-  return data ? storeJson({ ...data, ...(state.pass && { pass: state.pass }), ...(state.read && { read: state.read }) }, res.status) : res;
+  return data ? storeJson({ ...data, ...(state.pass && { pass: state.pass }), ...(state.read && { read: state.read }), ...(state.topic && { topic: state.topic }) }, res.status) : res;
 }
 
 async function handleAskInner(request, env, ctx, state) {
@@ -3394,8 +3453,12 @@ async function handleAskInner(request, env, ctx, state) {
   const lastSpecies = String(body?.context?.species || '').replace(/\s+/g, ' ').trim().slice(0, 80);
   // Or the last group (tetras, fish), by its id, when the last topic was one.
   const lastGroup = askGroupById(String(body?.context?.group || '').slice(0, 40)) ? String(body.context.group) : '';
+  // The router's search phrase from the turn before (owner, 2026-11-06,
+  // Fable's gap 6): the chat only sends the previous question, so a third
+  // turn ("babies?") lost the topic two turns back. Plain words only.
+  const lastTopic = String(body?.context?.topic || '').toLowerCase().replace(/[^a-z0-9 ]+/g, ' ').replace(/\s+/g, ' ').trim().slice(0, 80);
   const context = prev.length >= 3
-    ? { prev, clarify: body?.context?.clarify === true, ...(/^\/facts\/[a-z0-9-]+\/$/.test(lastFact) && { fact: lastFact }), ...(lastSpecies && { species: lastSpecies }), ...(lastGroup && !lastSpecies && { group: lastGroup }) }
+    ? { prev, clarify: body?.context?.clarify === true, ...(/^\/facts\/[a-z0-9-]+\/$/.test(lastFact) && { fact: lastFact }), ...(lastSpecies && { species: lastSpecies }), ...(lastGroup && !lastSpecies && { group: lastGroup }), ...(lastTopic && { topic: lastTopic }) }
     : null;
   if (question.length < 2) return quiet('unavailable');
   if (!env.ASK_DB) return quiet('unavailable');
@@ -3452,16 +3515,21 @@ async function handleAskInner(request, env, ctx, state) {
     });
   }
 
-  // Test site questions stay out of ask_log and off the phone (owner,
-  // 2026-11-04), so the gap list and the weekly counts hold readers only.
+  // Test site questions stay off the phone (owner, 2026-11-04) and go into
+  // their own table, ask_log_test (owner, 2026-11-06), so ask_log, the gap
+  // list and the weekly counts hold readers only.
   const onTestSite = new URL(request.url).hostname.endsWith('beastlyfactss-sharetest.pages.dev');
   // The router's read goes on every ask_log row (the `router` column, as
   // askRouterRow lays it out, null when the router was not asked) and on
   // the phone push as one "Read as:" line.
   let routerLine = '';
   let routerRow = null;
+  // Test site questions are logged too (owner, 2026-11-06, so test answers
+  // can be checked in Supabase), to their own table ask_log_test with the
+  // answer text, and never pushed to the phone.
   const log = (result, slugs = [], extra = {}, push = {}) => {
-    if (!onTestSite) askLog(env, ctx, question, slugs, result, { ...extra, router: routerRow }, routerLine ? { ...push, read: routerLine } : push);
+    if (onTestSite) askLog(env, ctx, question, slugs, result, { ...extra, router: routerRow, test: true, answer: push.answer || null }, null);
+    else askLog(env, ctx, question, slugs, result, { ...extra, router: routerRow }, routerLine ? { ...push, read: routerLine } : push);
   };
 
   // The sharetest project (beastlyfactss-sharetest.pages.dev) is where Ask
@@ -3511,6 +3579,9 @@ async function handleAskInner(request, env, ctx, state) {
     // The test site returns the read, for router-live.mjs and the chat's
     // debug line there.
     if (testing) state.read = routerRow;
+    // The read's search phrase goes back to the chat as the topic, which
+    // it sends as context.topic with the next question.
+    if (routed.read?.search) state.topic = routed.read.search;
   }
 
   let found;
@@ -3779,6 +3850,31 @@ async function handleAskInner(request, env, ctx, state) {
     });
   }
 
+  // An animal with no care guide (fennec fox, capybara, serval: a legal
+  // guide, an encyclopedia entry, a fact) whose question nothing covered:
+  // say so and link what the site does have, instead of the bare "not in our
+  // guides" line (owner, 2026-11-06, Fable's gap 5). Still logged no_match.
+  // Also when the model found nothing to answer from (the fennec fox's
+  // Beastlypedia entry and facts do not cover its diet), below.
+  const noGuideReply = async () => {
+    if (!species || species.guideId || found.meta.gift[species.name]?.hub || askSoundsLikeHealth(found.qOwn)) return null;
+    const have = await askStatementReply(env.ASK_DB, species, found.meta, question);
+    if (!have.links.length) return null;
+    const lower = askReaderName(question, species)?.one || species.name.toLowerCase();
+    log('no_match', have.slugs, {}, { page: have.links[0].title });
+    return storeJson({
+      result: 'answered',
+      answer: `We don't have a care guide for the ${lower}, so that one isn't covered in our guides yet. Here is what we do have on it.`,
+      links: have.links,
+      emergency: false,
+      species,
+      followUp: found.followUp,
+    });
+  };
+  if (!found.chunks.length) {
+    const have = await noGuideReply();
+    if (have) return have;
+  }
   if (!found.chunks.length) {
     log('no_match', found.best ? [found.best.slug] : []);
     return quiet('no_match', { species, group, followUp: found.followUp, health: askSoundsLikeHealth(found.qOwn) });
@@ -3810,7 +3906,13 @@ async function handleAskInner(request, env, ctx, state) {
   try {
     // Counted before the call: a call that fails was still made.
     state.units += sonnet ? ASK_UNITS.compare : ASK_UNITS.answer;
-    reply = await askHaiku(env, question, found.chunks, found.followUp ? prev : '', sonnet ? ASK_MODEL_COMPARE : ASK_MODEL);
+    // A short follow-up ("and for koi?") names only an animal; the router's
+    // topic tells the model what it asks, since the question before it may
+    // not say either (owner, 2026-11-06).
+    const topicWord = routed?.read?.search || '';
+    const modelQuestion = prev && topicWord && question.split(/\s+/).length <= 5
+      ? `${question} (asking about: ${topicWord})` : question;
+    reply = await askHaiku(env, modelQuestion, found.chunks, found.followUp ? prev : '', sonnet ? ASK_MODEL_COMPARE : ASK_MODEL);
   } catch {
     log('refused', slugs);
     return fallback();
@@ -3820,6 +3922,8 @@ async function handleAskInner(request, env, ctx, state) {
     return fallback();
   }
   if (reply.kind === 'no_answer') {
+    const have = await noGuideReply();
+    if (have) return have;
     log('no_match', slugs);
     return quiet('no_match', { species, group, followUp: found.followUp, health: askSoundsLikeHealth(found.qOwn) });
   }
@@ -3890,9 +3994,15 @@ function askRewriteSourceTalk(sentence) {
   const ranged = sentence
     .replace(/\b(the )?range (that )?(most|many) sources agree on\b/gi, 'the usual range')
     .replace(/,?\s*(though|but|while)\s+(a couple|a few|some|one or two|others)\s+(of them\s+)?((sources|guides)\s+)?(recommend|suggest|say|advise)\b/gi, ', or');
-  const clauseCut = ranged.replace(ASK_SO_ATTRIBUTION_RE, '');
+  // "Livebearers are omnivores, and our guides describe their diet as a
+  // varied mix" (owner, 2026-11-06, Fable's gap 7): the fact without the
+  // speaker, "their diet is a varied mix".
+  const described = ranged
+    .replace(/\b(our|the|these|those) (care )?guides? (describe|describes|present|presents) ((?:\w+ ){0,4}?\w+) as\b/gi,
+      (m, a1, a2, a3, what) => `${what} ${/[^s]s$/i.test(what) ? 'are' : 'is'}`);
+  const clauseCut = described.replace(ASK_SO_ATTRIBUTION_RE, '');
   let out = clauseCut.replace(ASK_ATTRIBUTION_RE, '');
-  if (out !== ranged) out = out.replace(/,?\s+and that\s+/gi, ', and ');
+  if (out !== described) out = out.replace(/,?\s+and that\s+/gi, ', and ');
   out = out
     // Shapes that are not a speaker plus a verb, kept as their own rules.
     .replace(/,?\s*according to [^,.]*?sources?\b/gi, '')
@@ -3910,7 +4020,7 @@ function askRewriteSourceTalk(sentence) {
 }
 
 // What survives the rewrite and still talks about sources is dropped.
-const ASK_SOURCE_TALK_RE = /\b(the|these|those|my|our|provided|given|most|some|several|many|a couple of|veterinary|published|scientific|available)\s+sources?\b|\bsources?\s+\d\b|\baccording to\s+(the\s+)?(veterinary\s+|published\s+)?sources?\b|\bsources?\s+(agree|recommend|say|says|suggest|differ)\b|^sources? (note|notes|mention|mentions|show|shows|describe|describes|don'?t|do not|does not)\b|\bcovered in (our|the) \w+|\b(our|the) emergency card (says|notes|lists)\b/i;
+const ASK_SOURCE_TALK_RE = /\b(the|these|those|my|our|provided|given|most|some|several|many|a couple of|veterinary|published|scientific|available)\s+sources?\b|\bsources?\s+\d\b|\baccording to\s+(the\s+)?(veterinary\s+|published\s+)?sources?\b|\bsources?\s+(agree|recommend|say|says|suggest|differ)\b|^sources? (note|notes|mention|mentions|show|shows|describe|describes|don'?t|do not|does not)\b|\bcovered in (our|the) \w+|\b(our|the) emergency card (says|notes|lists)\b|\b(our|the) (care )?guides? (describe|cover|detail|discuss|outline|include)s?\b/i;
 
 const askSourceTitle = (c) => (c.heading ? `${c.title}: ${c.heading}` : c.title);
 const askEscape = (t) => String(t).replace(/</g, '&lt;').replace(/>/g, '&gt;');
@@ -4000,7 +4110,7 @@ kind: what the message wants.
   frustration: annoyed with the answers or the bot ("you're not working", "useless").
   confused: says they do not follow, or a bare "why" or "what" with nothing to look up.
   other: none of these.
-search: 2 to 6 lowercase words to look up in the guides, in the words the guides use (droppings for poop, enclosure for cage, feeding for eat, tank mates for living together). The topic only, with no animal or group name. For a short follow-up, carry the topic over from the previous question ("babies?" after "what do rabbits eat" is "baby feeding"). Empty for catalog, small_talk, thanks, frustration and confused.`;
+search: 2 to 6 lowercase words to look up in the guides, in the words the guides use (droppings for poop, enclosure for cage, feeding for eat, tank mates for living together). The topic only, with no animal or group name. For a short follow-up, carry the topic over from the previous question, or from the previous topic when one is given ("babies?" after "what do rabbits eat" is "baby feeding"; "for color" after a question about color foods keeps "color"). Empty for catalog, small_talk, thanks, frustration and confused.`;
 
 // The system prompt: the rules plus the site's own vocabulary from ask_meta,
 // built once per isolate with the meta and identical on every call, so it
@@ -4038,6 +4148,7 @@ function askRouterUser(question, context, meta) {
     `Remembered animal: ${species ? species.name : 'none'}`,
     ...(group ? [`Remembered group: ${group.id}`] : []),
     `Previous question: ${context?.prev ? askEscape(context.prev) : 'none'}`,
+    ...(context?.topic ? [`Previous topic: ${askEscape(context.topic)}`] : []),
     `Message: <message>${askEscape(question)}</message>`,
   ].join('\n');
 }
@@ -4062,9 +4173,14 @@ function askRouterCheck(raw, meta) {
   // the site has nothing on (owner, 2026-11-05), and so did every hyphenated
   // name (red-eared slider, two-toed sloth, ring-tailed lemur).
   const plain = (text) => text.toLowerCase().replace(/[^a-z0-9 ]+/g, ' ').replace(/\s+/g, ' ').trim();
+  // A single word that ends exactly one guided name is that animal ("rat"
+  // for Fancy Rat, owner, 2026-11-06: "what do rats eat" got only the hub
+  // link). Two words keep their qualifier: "burmese python" is not the
+  // ball python.
   const listed = (name) => {
     const forms = [name, name.replace(/s$/, ''), name.replace(/es$/, ''), `${name} fish`];
-    return meta.species.find((sp) => forms.includes(plain(sp.name)) && !/: the essentials$/i.test(sp.name)) || null;
+    return askPreferGuided(meta.species.find((sp) => forms.includes(plain(sp.name)) && !/: the essentials$/i.test(sp.name)), meta.species)
+      || (!name.includes(' ') ? askSoleNamed(name, meta) : null);
   };
   const name = askPlainWords(raw.animal, 6, 60);
   let animal = name ? listed(name) : null;
@@ -4339,17 +4455,20 @@ const ASK_NTFY_TITLES = {
 function askLog(env, ctx, question, matchedSlugs, result, extra = {}, push = {}) {
   const jobs = [];
   if (hasSupabaseEnv(env)) {
-    const insert = (row) => supabaseFetch(env, '/rest/v1/ask_log', {
+    // Test site rows go to their own table, ask_log_test (owner, 2026-11-06),
+    // so ask_log holds readers only.
+    const table = extra.test ? 'ask_log_test' : 'ask_log';
+    const insert = (row) => supabaseFetch(env, `/rest/v1/${table}`, {
       method: 'POST',
       headers: { Prefer: 'return=minimal' },
       body: JSON.stringify(row),
     });
-    const { router, ...rest } = extra;
-    const row = { question, matched_slugs: matchedSlugs, result, ...rest };
+    const { router, test, answer, ...rest } = extra;
+    const row = { question, matched_slugs: matchedSlugs, result, ...rest, ...(test ? { answer: answer || null } : {}) };
     jobs.push((router === undefined ? insert(row) : insert({ ...row, router }).then((res) => (res.ok ? res : insert(row)))).catch(() => {}));
   }
   const mode = env?.ASK_NTFY_MODE === 'gaps' ? 'gaps' : 'all';
-  if (ASK_NTFY_TITLES[result] && (mode === 'all' || result === 'no_match')) {
+  if (push && ASK_NTFY_TITLES[result] && (mode === 'all' || result === 'no_match')) {
     const from = push.page || matchedSlugs[0];
     const page = from ? `\n\n${result === 'no_match' ? 'Closest page' : 'From'}: ${from}` : '';
     const answer = push.answer ? `\n\nAnswer: ${push.answer}` : '';
@@ -4374,6 +4493,31 @@ export default {
   async fetch(request, env, ctx) {
     const { pathname } = new URL(request.url);
 
+    // Test site only, no model call (owner, 2026-11-06): tries one insert
+    // into ask_log_test and says why it worked or failed. Never shows the key.
+    if (pathname === '/api/ask/logcheck' && new URL(request.url).hostname.endsWith('beastlyfactss-sharetest.pages.dev')) {
+      const key = String(env?.SUPABASE_SERVICE_ROLE_KEY || '');
+      const out = {
+        hasUrl: Boolean(env?.SUPABASE_URL),
+        hasKey: Boolean(key),
+        urlHost: env?.SUPABASE_URL ? (() => { try { return new URL(env.SUPABASE_URL).host; } catch { return 'not a URL'; } })() : null,
+        keyKind: !key ? null : key.startsWith('eyJ') ? 'legacy JWT' : key.startsWith('sb_secret_') ? 'sb_secret' : key.startsWith('sb_publishable_') ? 'sb_publishable' : 'other',
+      };
+      if (hasSupabaseEnv(env)) {
+        try {
+          const res = await supabaseFetch(env, '/rest/v1/ask_log_test', {
+            method: 'POST',
+            headers: { Prefer: 'return=minimal' },
+            body: JSON.stringify({ question: 'logcheck', result: 'logcheck' }),
+          });
+          out.insertStatus = res.status;
+          out.insertBody = (await res.text()).slice(0, 300);
+        } catch (err) {
+          out.insertError = String(err?.message || err).slice(0, 300);
+        }
+      }
+      return new Response(JSON.stringify(out, null, 2), { headers: { 'content-type': 'application/json' } });
+    }
     if (pathname === '/api/ask' || pathname === '/api/ask/') {
       return handleAsk(request, env, ctx);
     }

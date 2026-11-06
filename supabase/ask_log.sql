@@ -33,6 +33,9 @@
 -- questions). Derived from the question, nothing more; the worker retries
 -- an insert without it when the column is missing, so no row depends on it.
 --
+-- Test site questions are not here: they go to ask_log_test
+-- (supabase/ask_log_test.sql, owner, 2026-11-06).
+--
 -- Only the worker writes, with the service role key, which bypasses RLS. RLS is
 -- on with no policies, so anon and signed-in users can neither read nor write.
 

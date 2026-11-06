@@ -9,7 +9,8 @@
     "/api/contact",
     "/api/contact/",
     "/api/ask",
-    "/api/ask/"
+    "/api/ask/",
+    "/api/ask/logcheck"
   ],
   "exclude": []
 }
