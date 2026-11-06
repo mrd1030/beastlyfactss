@@ -136,6 +136,29 @@ refusing food for 1 to 2 weeks outside brumation a call-now sign.
   fruit line and brumation thresholds; listed in FIX_PACKAGES.md for the next
   rebuild.
 
+## 2026-11-06: cost guide morph prices
+
+Price bands, not sourced facts (RULES: sources are for facts, not prices).
+Taken from the owner's screenshots of MorphMarket listings, filtered to US and
+Canada and Central Bearded Dragons, 2026 juveniles, asking price before
+shipping:
+- One visible trait (leatherback, translucent, citrus or red lines): $125
+  (Red River Exotics, several), $125 (genetic super stripe leatherback), $130
+  and $150 (leatherback, possible hets), $250 (citrus translucent
+  leatherback), $295 (red monster visual translucent), $300 (citrus), $200 to
+  $400 (50% red monster and red German lines). Band: about $125 to $400 (the red
+  lines set the top).
+- Zeros and combinations: hypo zero $350 (sale), $450 (four listings), $500,
+  $525, $550 (two), $575, $750; hypo trans leatherback $500; red monster
+  hypo translucent $550; red monster leatherback trans $375; trans leatherback
+  red monster $700; red monster trans het $650. Band: about $350 to $750.
+- Shipping: $30 to $110, most $50 to $75.
+- Not in the screenshots: visual witblits and silkback, so the guide names
+  neither with a price. "Possible het" animals were not used for the bands.
+- The UVB line for hypo, translucent and silkback morphs copies the tank setup
+  guide (UVI 3.0 or lower). That guide's sentence has a comma splice to fix
+  when the sweep reaches it.
+
 ## Kept without a source (owner review)
 
 - Fruit "once or twice a week at most" (safe foods guide, Fruit and the
