@@ -91,10 +91,22 @@ const guideNameById = new Map(guidesIndex.map((g) => [g.id, g.name]));
 // then a tag that is a care guide name, then its `animal` field (mapped to the
 // guide name when it is written as a guide id). Topic tags ("Legal", "UVB",
 // "Christmas") never count, so an article with none of these has no species.
+// Guide files whose names start with a longer form of the guide id (owner,
+// 2026-11-06: every tegu and millipede guide, and the cockroach enrichment
+// guide, went into the index with no species, so a species search missed
+// them and "what do tegus eat" answered from the hub alone).
+const SLUG_PREFIX_ALIASES = {
+  'argentine-tegu': 'tegu',
+  'giant-millipede': 'millipede',
+  'madagascar-hissing-cockroach': 'hissing-cockroach',
+};
 function speciesFor(fm) {
   const slug = fm.slug || '';
   for (const g of guidesById) {
     if (slug === g.id || slug.startsWith(`${g.id}-`)) return g.name;
+  }
+  for (const [prefix, id] of Object.entries(SLUG_PREFIX_ALIASES)) {
+    if (slug.startsWith(`${prefix}-`) && guideNameById.has(id)) return guideNameById.get(id);
   }
   for (const tag of fm.tags || []) {
     const hit = guideNames.get(String(tag).toLowerCase());
