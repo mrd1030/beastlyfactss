@@ -206,7 +206,8 @@ are current bids, not final.
 - Cost guide: "$40 to $100 at most pet stores, sometimes less from a
   breeder". Pet store prices not checked. The owner's MorphMarket screenshots
   (2026-11-06) show one breeder normal at $100 and red monster auctions from
-  $65, so "sometimes less from a breeder" is not borne out. Kept as written.
+  $65, so "sometimes less from a breeder" is not borne out. Owner
+  (2026-11-06): removed; the morph prices are MorphMarket breeder listings.
 
 ## Possible contradictions found (not changed)
 
