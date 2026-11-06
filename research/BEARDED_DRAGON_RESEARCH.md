@@ -249,6 +249,20 @@ Sources block).
   branches, boulders and fence posts", in woodland and shrubland across the
   semi-arid interior of eastern Australia, basking from the elevated position.
 
+- Cost guide: the UVB FunFact said a tube can glow "for months after it's
+  stopped producing usable UV output". Baines et al. 2016 (lamp tests): UV-B
+  "decays with use, primarily due to solarisation of the glass envelope";
+  seven Arcadia and Zoo Med tubes lost a mean 39.9% of UVI from new after 4000
+  hours (about a year), and one other brand lost 64% after 1000 hours (about
+  three months). Rewritten to those figures. "Even while it still lights up"
+  rests on VCA "Bearded Dragons, Housing" ("replaced every six months... even
+  if they still produce visible light"), read from a fetch summary, not
+  verbatim; confirm on the desktop.
+- Handling: the arm-wave FunFact said "Nobody is entirely sure why". The
+  Australian Museum states it: males wave to show submission to a dominant
+  male, which generally defuses the confrontation; females wave to show
+  responsiveness to a male, with a slow head bob. Rewritten.
+
 ## Kept without a source (owner review)
 
 - Fruit "once or twice a week at most" (safe foods guide, Fruit and the
