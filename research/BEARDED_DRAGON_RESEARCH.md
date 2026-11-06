@@ -187,6 +187,16 @@ guide's parasite section gained one sentence on adults with no health history.
 The export ban is not on any care guide; if wanted, it belongs in the
 encyclopedia entry, sourced to the Australian government's EPBC Act page.
 
+## 2026-11-06: feeding schedule wording (sweep)
+
+The feeding guide's schedule contradicted itself (juveniles "once daily, or
+once to twice daily" then a salad "every day" and "every other day is the
+minimum"; adults "once daily or every other day, roughly every 24 to 72 hours"
+next to "greens daily"). Now: juveniles insects once or twice daily plus a
+daily salad (every other day at the least); adults a salad daily and insects a
+few times a week. The adult "every 24 to 72 hours" figure came out with the
+contradiction; FAQ 1 and the hub's Feeding schedule row follow the guide.
+
 ## Kept without a source (owner review)
 
 - Fruit "once or twice a week at most" (safe foods guide, Fruit and the
