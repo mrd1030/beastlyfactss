@@ -1889,7 +1889,7 @@ async function askSourcesReply(db, meta, question, context, kind) {
   if (/\b(legal\w*|illegal|laws?|permits?)\b/.test(q)) suffixes.push('legal');
   const page = (title, url, slug) => ({
     result: 'catalog',
-    answer: `The sources for ${title} are all on the page. The Sources block at the bottom lists the references it was checked against, and a Fun Fact box names its own source right under the fact. AI tools help draft the guides, and each one is checked against that list before it goes live. If you meant a different page, tell me the animal and the topic and I will point you to it.`,
+    answer: `The sources for ${title} are all on the page. The Sources block at the bottom lists the references it was checked against, and any Fun Fact box names its own source right under the fact. AI tools help draft the guides, and each one is checked against that list before it goes live. If you meant a different page, tell me the animal and the topic and I will point you to it.`,
     links: [{ title: `Sources for ${title}`, url: `${url}#article-sources` }],
     species: null,
     slugs: [slug],
