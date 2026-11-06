@@ -3122,7 +3122,11 @@ async function askRetrieve(db, question, context = null, router = null) {
   // a link, or with no hub a fact of it (owner, 2026-11-03). Never the
   // model. Not after "which animal?", where the name answers that question
   // and carries it along.
-  if (ownSpecies && bare && !(followUp && context?.clarify)) {
+  // A follow-up that names only an animal but carries a topic ("what about
+  // betta?" after a color question, "and for koi?") answers that topic for
+  // the new animal instead of linking its hub (owner, 2026-11-06).
+  const carriesTopic = followUp && routed && Boolean(router.search) && router.kind === 'care_question';
+  if (ownSpecies && bare && !(followUp && context?.clarify) && !carriesTopic) {
     if (ownSpecies.guideId) return found({ species: ownSpecies, nav: true });
     if (meta.facts.some((f) => f.species === ownSpecies.name)) return found({ species: ownSpecies, fact: true });
   }
@@ -3848,21 +3852,26 @@ async function handleAskInner(request, env, ctx, state) {
   // guide, an encyclopedia entry, a fact) whose question nothing covered:
   // say so and link what the site does have, instead of the bare "not in our
   // guides" line (owner, 2026-11-06, Fable's gap 5). Still logged no_match.
-  if (!found.chunks.length && species && !species.guideId && !found.meta.gift[species.name]?.hub
-    && !askSoundsLikeHealth(found.qOwn)) {
+  // Also when the model found nothing to answer from (the fennec fox's
+  // Beastlypedia entry and facts do not cover its diet), below.
+  const noGuideReply = async () => {
+    if (!species || species.guideId || found.meta.gift[species.name]?.hub || askSoundsLikeHealth(found.qOwn)) return null;
     const have = await askStatementReply(env.ASK_DB, species, found.meta, question);
-    if (have.links.length) {
-      const lower = askReaderName(question, species)?.one || species.name.toLowerCase();
-      log('no_match', have.slugs, {}, { page: have.links[0].title });
-      return storeJson({
-        result: 'answered',
-        answer: `We don't have a care guide for the ${lower}, so that one isn't covered in our guides yet. Here is what we do have on it.`,
-        links: have.links,
-        emergency: false,
-        species,
-        followUp: found.followUp,
-      });
-    }
+    if (!have.links.length) return null;
+    const lower = askReaderName(question, species)?.one || species.name.toLowerCase();
+    log('no_match', have.slugs, {}, { page: have.links[0].title });
+    return storeJson({
+      result: 'answered',
+      answer: `We don't have a care guide for the ${lower}, so that one isn't covered in our guides yet. Here is what we do have on it.`,
+      links: have.links,
+      emergency: false,
+      species,
+      followUp: found.followUp,
+    });
+  };
+  if (!found.chunks.length) {
+    const have = await noGuideReply();
+    if (have) return have;
   }
   if (!found.chunks.length) {
     log('no_match', found.best ? [found.best.slug] : []);
@@ -3905,6 +3914,8 @@ async function handleAskInner(request, env, ctx, state) {
     return fallback();
   }
   if (reply.kind === 'no_answer') {
+    const have = await noGuideReply();
+    if (have) return have;
     log('no_match', slugs);
     return quiet('no_match', { species, group, followUp: found.followUp, health: askSoundsLikeHealth(found.qOwn) });
   }
