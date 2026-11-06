@@ -173,6 +173,20 @@ are current bids, not final.
   from the tank setup guide (UVI 3.0 or lower). That guide's sentence has a
   comma splice to fix when the sweep reaches it.
 
+## 2026-11-06: cost guide "wild-caught" line
+
+The cost guide said "An older, wild-caught animal is harder to tame, more
+likely to carry intestinal parasites, and often stressed by captivity" (VCA
+Owning Bearded Dragons says this of older wild-caught animals). Australia bans
+the commercial export of live native reptiles (Australian Veterinary
+Association policy page, EPBC Act 1999), so a US buyer does not meet a
+wild-caught dragon. Owner (2026-11-06): the cost guide keeps the money angle
+(an older adult with no health history is the costly one); the wild-caught
+comparison stays on the site in the reptile quarantine guide; the health
+guide's parasite section gained one sentence on adults with no health history.
+The export ban is not on any care guide; if wanted, it belongs in the
+encyclopedia entry, sourced to the Australian government's EPBC Act page.
+
 ## Kept without a source (owner review)
 
 - Fruit "once or twice a week at most" (safe foods guide, Fruit and the
