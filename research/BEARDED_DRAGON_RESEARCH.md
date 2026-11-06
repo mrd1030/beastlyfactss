@@ -210,6 +210,16 @@ replace either one if it states the same figures (desktop check). Each hobby
 source comes out the day a non-hobby source backs its claims and the count
 stays at 3.
 
+## 2026-11-06: no mice for bearded dragons (owner)
+
+VCA "Bearded Dragons, Feeding" says "Pinkie mice or young 'fuzzy' mice may be
+fed to larger bearded dragons, but sparingly" (NC State's page was down when
+checked). Owner (2026-11-06): the site does not suggest mice for bearded
+dragons; snakes and larger reptiles are fine. The feeding guide's pinky line
+came out, and the safe foods guide now says pinky mice and other rodents stay
+off the menu, with insects covering protein at every age. A house rule, not a
+sourced claim.
+
 ## Kept without a source (owner review)
 
 - Fruit "once or twice a week at most" (safe foods guide, Fruit and the
