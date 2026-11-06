@@ -29,7 +29,7 @@ One commit per species, pushed to the working branch.
 
 ### 1. Care package animals (20)
 
-- [ ] bearded-dragon (in progress: cost guide graded B-, fixes and bioactive row applied 2026-11-06; morph paragraph added from owner MorphMarket screenshots. Bioactive guide should carry the DIY floor figure when the sweep reaches it)
+- [ ] bearded-dragon (in progress: cost guide done 2026-11-06, B- to A-, owner accepted the rest; next the handling guide. Health guide needs its closing section when reached. Bioactive guide should carry the DIY floor figure)
 - [ ] leopard-gecko
 - [ ] crested-gecko
 - [ ] gargoyle-gecko
