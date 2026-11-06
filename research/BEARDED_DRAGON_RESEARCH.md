@@ -140,24 +140,38 @@ refusing food for 1 to 2 weeks outside brumation a call-now sign.
 
 Price bands, not sourced facts (RULES: sources are for facts, not prices).
 Taken from the owner's screenshots of MorphMarket listings, filtered to US and
-Canada and Central Bearded Dragons, 2026 juveniles, asking price before
-shipping:
-- One visible trait (leatherback, translucent, citrus or red lines): $125
-  (Red River Exotics, several), $125 (genetic super stripe leatherback), $130
-  and $150 (leatherback, possible hets), $250 (citrus translucent
-  leatherback), $295 (red monster visual translucent), $300 (citrus), $200 to
-  $400 (50% red monster and red German lines). Band: about $125 to $400 (the red
-  lines set the top).
-- Zeros and combinations: hypo zero $350 (sale), $450 (four listings), $500,
-  $525, $550 (two), $575, $750; hypo trans leatherback $500; red monster
-  hypo translucent $550; red monster leatherback trans $375; trans leatherback
-  red monster $700; red monster trans het $650. Band: about $350 to $750.
-- Shipping: $30 to $110, most $50 to $75.
-- Not in the screenshots: visual witblits and silkback, so the guide names
-  neither with a price. "Possible het" animals were not used for the bands.
-- The UVB line for hypo, translucent and silkback morphs copies the tank setup
-  guide (UVI 3.0 or lower). That guide's sentence has a comma splice to fix
-  when the sweep reaches it.
+Canada and Central Bearded Dragons, mostly 2026 juveniles, asking price before
+shipping. "Possible het" animals were not used to set a band. Auction prices
+are current bids, not final.
+- Normals: "Spunky Red Normal" $100; plain red dragons $150 and $350; red
+  monster auctions at $65, $70, $75, $110 (two) and $165. Only one true normal,
+  so the guide's "$40 to $100" stays as written (see the owner review list).
+- One or two visible traits, $125 to $500: citrus and red leatherbacks $125
+  (Red River Exotics, several); genetic super stripe leatherback $125;
+  leatherback possible hets $130 and $150; hypo dunners $120, $200 (two),
+  $350; citrus dunner $225; red citrus blue bar dunner $349; German blue bar
+  dunner $150 (auction); citrus tiger leatherback hypo $300 (two) and $500;
+  sunburst citrus hypo $400; citrus hypo g-stripe $500 (sale from $600); hypo
+  leatherback $375; hypo 50% red monster $375 (two); hypo tiger $300; citrus
+  translucent leatherback $250; high red translucent leatherback $300; red
+  monster visual translucent $295; citrus $300; 50% red monster and red German
+  lines $200 to $400; 3/4 red monster $300; 100% red monster $299 (sale) and
+  $550.
+- Zeros and witblits, $200 to $750: hypo zero $350 (sale), $450 (five), $500
+  (two), $525, $550 (three), $575, $750; witblits $210, $235, $250, $275, $300
+  (four), $350 (four), $450; hypo trans leatherback $500; red monster hypo
+  translucent $550; trans leatherback red monster $700; 100% translucent red
+  monster $700.
+- Rare lines, $1,000 to $2,500: paradox $1,400, $1,500, $1,950, $2,500
+  (paradox line animals $400 to $700, one red paradox blue bar $495); dark red
+  monster dunners $1,250 and $1,450; German red hypo holdback $1,400;
+  witblits trans "Mezmer" $2,100; proven hypo het trans female $1,200 (an
+  adult breeder, not a juvenile).
+- Shipping: $15 to $125 across listings, most $50 to $75, several free.
+- Silkback: none listed in the owner's search; the owner notes they are not
+  looked on favorably. The guide names silkback only in the UVB line, copied
+  from the tank setup guide (UVI 3.0 or lower). That guide's sentence has a
+  comma splice to fix when the sweep reaches it.
 
 ## Kept without a source (owner review)
 
@@ -189,6 +203,10 @@ shipping:
 - Cost guide FAQ: dragons "reach adult size within a year or so". Owner
   (2026-11-06): no reliable source found for adult sizing. Kept as written.
   The site's growth and weight guide puts adult at "18 months and up".
+- Cost guide: "$40 to $100 at most pet stores, sometimes less from a
+  breeder". Pet store prices not checked. The owner's MorphMarket screenshots
+  (2026-11-06) show one breeder normal at $100 and red monster auctions from
+  $65, so "sometimes less from a breeder" is not borne out. Kept as written.
 
 ## Possible contradictions found (not changed)
 
