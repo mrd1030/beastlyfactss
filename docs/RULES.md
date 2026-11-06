@@ -144,8 +144,13 @@ working checklist.
   The ich ceiling is the top of the keeping range. Survival figures (96-hour
   tests, breeding spikes) are written as survival, never as a ceiling, and
   never grant a species the ich heat method.
-- "No source found, claim removed" is a good outcome. A fabricated citation is
-  the worst outcome because it survives review.
+- Not finding a source is a fine result; a fabricated citation is the worst,
+  because it survives review. In a new draft every claim carries its own
+  source, and a claim with no source is left out. Once the owner has edited the
+  draft, which can change wording and add or remove claims, the fact-check rule
+  applies: a claim with no source stays as written and goes on the species'
+  "Kept without a source (owner review)" list (owner, 2026-11-01). Nothing is
+  cut silently.
 - Every superlative gets verified. Mechanisms must match claims, species-specific
   traits get scoped, figures must be current. Arithmetic-check the title,
   excerpt, and meta description last and deliberately, they are the most shared.

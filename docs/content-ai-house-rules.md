@@ -20,7 +20,7 @@ The single biggest failure mode so far: citations that look authoritative but su
 4. **The source must contain the specific claim**, not merely be about the topic. For every source, you must be able to state which sentence in your article it backs. If you cannot, drop it.
 5. **Prefer, in order:** peer-reviewed papers (with DOI) > `.gov` agencies (NOAA, USFWS, USGS) > museums/universities (`.edu`, Smithsonian, AMNH) > established science journalism. Avoid content farms and other listicles entirely.
 6. **Give the real page title**, not the publisher name. "Eye lens radiocarbon reveals centuries of longevity in the Greenland shark", not "Science".
-7. **State uncertainty when you have it.** "No source found for X, claim removed" is a *good* outcome. A fabricated citation is much worse than an uncited sentence, because it survives review by looking legitimate.
+7. **State uncertainty when you have it.** Not finding a source is a fine result. Every claim in a draft carries its own source, and a claim with no source is left out. A fabricated citation is much worse than a missing claim, because it survives review by looking legitimate.
 
 ### B. Factual accuracy
 
@@ -56,7 +56,7 @@ Reviewed errors clustered almost entirely around **surprising claims and superla
 
 > You are fixing five published articles on beastlyfacts.com that shipped with verified factual errors. Each item below was checked against primary sources. Apply the corrections, then re-verify every remaining factual claim in the article yourself using the sourcing rules in your instructions.
 >
-> Rules for this task: never use em dashes or en dashes. Do not invent replacement sources. If a claim cannot be supported by a source you have actually opened, delete the claim rather than reword it. Keep the existing voice.
+> Rules for this task: never use em dashes or en dashes. Do not invent replacement sources. These are published pages: fix what a source contradicts; a claim no opened source supports stays as written and goes on the species' "Kept without a source (owner review)" list. Keep the existing voice.
 >
 > **1. Wolverine Facts: The Toughest Animal Pound for Pound**
 > - Delete the claim that ankles rotate up to 360 degrees. It is false, and that trait (~180 degrees) belongs to squirrels, margays, and clouded leopards. Wolverines do descend trees headfirst, using claws and grip.
@@ -107,7 +107,7 @@ Reviewed errors clustered almost entirely around **surprising claims and superla
 > - The newly hatched dumbo octopus paper is *Current Biology* **February 2018**, not 2020, and the cited URL points to a different paper.
 > - Giant squid eye is "among the largest", not "largest of any living animal": the colossal squid's is larger (~27 cm vs ~25 cm).
 > - "95% unexplored" conflicts with NOAA's current "more than 80 percent".
-> - **Four source URLs are dead** (NOAA exploration.html, NOAA biolum.html, the MBARI barreleye link, and the Current Biology link). Replace each with a page you have actually opened, or drop the claim.
+> - **Four source URLs are dead** (NOAA exploration.html, NOAA biolum.html, the MBARI barreleye link, and the Current Biology link). Replace each with a page you have actually opened. A claim left without a source stays and goes on the owner review list.
 
 ---
 
