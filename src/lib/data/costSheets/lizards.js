@@ -26,6 +26,7 @@ export const lizardSheets = {
   },
   'bearded-dragon': {
     monthly: [75, 145],
+    annual: [900, 1740],
     necessities: [
       { item: "bearded-dragon-enclosure-4x2x2-ft-120", text: "[Enclosure] (4x2x2 ft, ~120 gallons; check the dimensions before you buy)" },
       { item: "uvb-t5ho-12pct-36in-kit", text: "Linear T5 HO [UVB fixture] about two-thirds the enclosure length (check the length against your enclosure), tube included" },

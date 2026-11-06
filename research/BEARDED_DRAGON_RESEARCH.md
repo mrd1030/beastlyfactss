@@ -159,6 +159,14 @@ refusing food for 1 to 2 weeks outside brumation a call-now sign.
   guide's 2 to 3 is now sourced. [owner call stands: leave the 3 to 5 out, or
   restore it as a breeder figure]
 
+- Cost guide, after Hepper and The Vet Desk came out of its Sources (hobby
+  sites, 2026-11-06): "$40 to $100" for a standard morph, impaction surgery
+  "$800 to $2,500" and metabolic bone disease treatment "$200 to $500 or more"
+  had only those two behind them. Kept as written.
+- Cost guide FAQ: dragons "reach adult size within a year or so". Owner
+  (2026-11-06): no reliable source found for adult sizing. Kept as written.
+  The site's growth and weight guide puts adult at "18 months and up".
+
 ## Possible contradictions found (not changed)
 
 - Mealworms and superworms: the guide says they are "an occasional food for

@@ -29,7 +29,7 @@ One commit per species, pushed to the working branch.
 
 ### 1. Care package animals (20)
 
-- [ ] bearded-dragon (in progress: cost guide first)
+- [ ] bearded-dragon (in progress: cost guide graded B-, fixes applied 2026-11-06; morph pricing and bioactive bag count waiting on owner)
 - [ ] leopard-gecko
 - [ ] crested-gecko
 - [ ] gargoyle-gecko
