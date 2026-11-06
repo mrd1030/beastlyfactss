@@ -322,7 +322,7 @@ export const lizardGuides = fillCostTokens([
     ],
     faqs: [
       { q: "How hot does the basking spot need to be?", a: "95 to 110°F on the basking surface for adults, and 105 to 115°F for juveniles, measured with an infrared thermometer aimed at the actual surface rather than the air. That heat comes from a separate basking bulb, not the UVB tube, which supplies UV but little usable heat on its own." },
-      { q: "Why has my bearded dragon stopped eating?", a: "Often it's brumation, a shed, or, in females, a gravid cycle before laying, all normal. It becomes a concern when the enclosure's temperature isn't letting the dragon digest, or when refusal comes with lethargy, abnormal stool, or a swollen abdomen." },
+      { q: "Why has my bearded dragon stopped eating?", a: "Often it's brumation, a shed, or in females the run-up to laying eggs. All of those are normal. It becomes a concern when the enclosure's temperature isn't letting the dragon digest, or when refusal comes with lethargy, abnormal stool, or a swollen abdomen." },
       { q: "What is the most common health problem in pet bearded dragons?", a: "Metabolic bone disease. It comes from too little calcium, inadequate or incorrect UVB, or a diet too high in phosphorus relative to calcium, and juveniles under two years old are hit hardest. Almost every case is preventable with correct lighting and supplementation." },
     ],
   },
