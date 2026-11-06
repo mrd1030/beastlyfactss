@@ -1883,6 +1883,9 @@ async function askSourcesReply(db, meta, question, context, kind) {
   const suffixes = [...new Set(ASK_GUIDE_TOPICS.filter(([re]) => re.test(q)).map(([, s]) => s))]
     .filter((s) => s !== 'color')
     .map((s) => (s === 'health' ? 'health-issues' : s));
+  // The topic lists read care questions, which never say "health": a page
+  // question names the guide ("the leopard gecko health guide").
+  if (/\bhealth\b/.test(q) && !suffixes.includes('health-issues')) suffixes.unshift('health-issues');
   if (/\b(legal\w*|illegal|laws?|permits?)\b/.test(q)) suffixes.push('legal');
   const page = (title, url, slug) => ({
     result: 'catalog',
@@ -3573,7 +3576,9 @@ async function handleAskInner(request, env, ctx, state) {
   // 2026-11-03): "hello" alone used to come back "not in our guides", and
   // "testing" asked which animal.
   const talk = askSmallTalk(question);
-  if (talk && !(await askAnswersDirection(env.ASK_DB, question, context))) {
+  // A sources question ("where do you get your info") is answered below,
+  // not by the small talk line about the site.
+  if (talk && !askSourcesKind(question) && !(await askAnswersDirection(env.ASK_DB, question, context))) {
     return storeJson({
       result: 'greeting',
       answer: talk.reply,
