@@ -42,7 +42,7 @@ export const lizardSheets = {
       { item: "bearded-dragon-supply-plain-calcium-calcium", text: "First supply of [plain calcium], [calcium with D3] and a [multivitamin]" },
     ],
     optional: [
-      { item: "substrate-diy-arid-bioactive-4x2", products: ["topsoil-michigan-peat-garden-magic-40lb"], text: "Arid bioactive substrate 4 to 6 inches deep over the 4 by 2 foot floor: a DIY mix of about two-thirds [organic topsoil] and one-third hardware-store play sand. Two 40 lb bags of topsoil and one or two 50 lb bags of play sand, since the hides, climbing branches and basking platform fill part of the floor" },
+      { item: "substrate-diy-arid-bioactive-4x2", products: ["topsoil-michigan-peat-garden-magic-40lb"], text: "Arid bioactive substrate over the 4 by 2 foot floor: a DIY mix of about two-thirds [organic topsoil] and one-third hardware-store play sand. Two 40 lb bags of organic topsoil and one or two 50 lb bags of play sand reach about 4 inches once the hides, climbing branches and basking platform take their share of the floor; add a bag if your layout leaves more floor open" },
       { item: "desert-sand-optional-10lb", text: "[Desert sand], optional: a 10 lb bag of finer sifted sand to mix into the play sand, which runs dusty" },
       { item: "excavator-clay-optional-4x2", text: "[Excavator clay] mixed in, optional but recommended so burrows and tunnels hold their shape: one or two 10 lb bags" },
       { item: "hognose-snake-leaf-litter-surface-cover", text: "Dry [leaf litter] for the surface" },
