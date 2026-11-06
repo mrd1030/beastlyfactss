@@ -157,6 +157,10 @@ export async function askQuestion(question, captcha = '', conversationId = null)
   // sent back so a short follow-up two turns later keeps it (owner,
   // 2026-11-06).
   const lastTopic = lastTurn?.reply?.topic || '';
+  // The last reply's first link, so "what sources is that from" knows which
+  // page (owner, 2026-11-06). The worker uses it only when it is an article.
+  const firstLink = lastTurn?.reply?.links?.[0];
+  const link = firstLink && typeof firstLink.url === 'string' && firstLink.url.startsWith('/blog/') ? { title: String(firstLink.title || '').slice(0, 120), url: firstLink.url.slice(0, 200) } : null;
 
   let reply = { result: 'unavailable' };
   try {
@@ -165,7 +169,7 @@ export async function askQuestion(question, captcha = '', conversationId = null)
     const res = await fetch('/api/ask', {
       method: 'POST',
       headers: { 'content-type': 'application/json', ...(token && { authorization: `Bearer ${token}` }) },
-      body: JSON.stringify({ question: q, captcha, ...(pass && { pass }), ...(prev && { context: { prev, ...(clarify && { clarify: true }), ...(fact && { fact }), ...(species && { species }), ...(group && { group }), ...(lastTopic && { topic: lastTopic }) } }) }),
+      body: JSON.stringify({ question: q, captcha, ...(pass && { pass }), ...(prev && { context: { prev, ...(clarify && { clarify: true }), ...(fact && { fact }), ...(species && { species }), ...(group && { group }), ...(lastTopic && { topic: lastTopic }), ...(link && { link }) } }) }),
     });
     reply = await res.json();
     if (reply.pass) savePass(reply.pass);

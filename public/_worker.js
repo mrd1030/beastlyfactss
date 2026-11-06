@@ -1836,6 +1836,99 @@ function askIsSiteQuestion(question, context) {
 const ASK_SITE_REPLY = 'The About page covers who runs Beastly Facts and why, and the Contact page sends a message straight to the owner.';
 const ASK_SITE_LINKS = [{ title: 'About Beastly Facts', url: '/about' }, { title: 'Contact', url: '/contact' }];
 
+// Sources questions (owner, 2026-11-06, on Fable's design). Two kinds, both
+// answered with no model call and no search:
+//   general: where the info comes from, whether it is AI written, whether it
+//     can be trusted. The honest answer (AI tools help draft, every guide is
+//     checked against the sources at its foot) and How Guides Are Made.
+//   page: what a page cites. Never a list of names, which could drift from
+//     the page: a link to that page's Sources block (#article-sources, which opens
+//     the full list, see Sources.jsx). The page comes from the animal and
+//     topic named, or from the last reply's link ("what sources is that
+//     from"); with only an animal or only a topic, Beastly asks for the rest.
+// Care talk that says "source" is not a sources question: a heat source, a
+// source of calcium, a good protein source, a reference range.
+const ASK_SOURCES_GENERAL_RE = /\bwhere\b.{0,30}\b(get|find|gets|got|come|comes|came)\b.{0,30}\b(info\w*|facts?|data|content|answers?|stuff)\b|\bwhere (do|did|does) (you|they|this|that|it) (get|come from)\b|\b(written|made|generated|created|done|wrote|writ+en)\s+(by|with|using)\s+(an?\s+)?(ai|chat ?gpt|bots?|robots?)\b|\bai[- ](written|generated|made)\b|\b(use|uses|using|used)\s+(ai|chat ?gpt)\b|\b(does|do|did) (an? )?(ai|chat ?gpt|bots?) (write|make|create|generate)\b|\b(is|are)\s+(this|these|you|your (info\w*|guides?|answers?|facts?)|(the|this) (site|website|guides?|articles?|pages?|info\w*|answers?|facts?))\s+(an?\s+)?(ai|accurate|reliable|trustworthy|legit|checked|fact[- ]?checked|vetted|correct)\b|\bhow (do|can|should) (i|we) (trust|believe)\b|\bhow (do|can) (i|we) know (this|that|it|the (info\w*|guides?|answers?)) (is|are) (true|right|accurate|correct|reliable)\b/i;
+const ASK_SOURCES_PAGE_RE = /\b(sources|citations?|references)\b|\b(your|the|its|their|a|what('s| is)( the)?) source\b|\b(cite[sd]?|sourced|backed( up)?)\b.{0,30}\b(you|this|that|it|guides?|pages?|articles?|answers?|info\w*|claims?)\b|\b(you|this|that|guides?|pages?|articles?|answers?|info\w*)\b.{0,30}\b(cite[sd]?|sourced|backed( up)?)\b/i;
+const ASK_SOURCES_NOT_RE = /\b(food|heat\w*|light|lighting|water|calcium|protein|fiber|fibre|uvb|uva|good|great|rich|poor|natural|alternative|main|primary|power|vitamin\w*|nutrient\w*|energy|d3|cheap|best|reliable|local|feeder|meat|plant)\s+sources?\b|\bsources? of\b|\breference (range|temperature|temp|value|point|chart)s?\b|\bsource (crickets|feeders?|food|worms|insects|plants|rodents|mice)\b/i;
+function askSourcesKind(question) {
+  const q = question.replace(/[’]/g, "'");
+  if (ASK_SOURCES_NOT_RE.test(q)) return null;
+  if (ASK_SOURCES_GENERAL_RE.test(q)) return 'general';
+  if (ASK_SOURCES_PAGE_RE.test(q)) return 'page';
+  return null;
+}
+const ASK_SOURCES_GENERAL = {
+  answer: 'Honest answer: AI tools help draft and organize the guides, and every guide is then checked against veterinary references, published papers and agency sources before it goes up. Those sources are listed at the bottom of each article, so you can follow any claim back to where it came from. How Guides Are Made walks through the whole process.',
+  links: [{ title: 'How Guides Are Made', url: '/how-guides-are-made/' }, { title: 'About Beastly Facts', url: '/about' }],
+};
+const ASK_SOURCES_TOPIC_WORD = { 'tank-setup': 'tank setup', 'health-issues': 'health', feeding: 'feeding', cost: 'cost', handling: 'handling', enrichment: 'enrichment', legal: 'legal' };
+// The previous reply's first link, when it is an article (only articles
+// carry a Sources block). The chat sends it as context.link.
+function askSourcesLink(raw) {
+  const url = typeof raw?.url === 'string' ? raw.url.split('#')[0] : '';
+  if (!/^\/blog\/[a-z0-9-]+\/?$/.test(url)) return null;
+  const title = typeof raw.title === 'string' ? raw.title.replace(/\s+/g, ' ').trim().slice(0, 120) : '';
+  return { url: url.endsWith('/') ? url : `${url}/`, title };
+}
+// Returns { result, answer, links, species, slugs }. A page question that
+// resolves to no page gets the general reply.
+async function askSourcesReply(db, meta, question, context, kind) {
+  // After "which one?", the reply carries the first question's words.
+  const text = context?.clarify && askSourcesKind(context.prev || '') === 'page' ? `${context.prev} ${question}` : question;
+  const q = askExpand(text, meta);
+  const named = askFindName(q, meta.species);
+  const guideId = named?.guideId || null;
+  const hub = guideId || (named && meta.gift[named.name]?.hub) || null;
+  const suffixes = [...new Set(ASK_GUIDE_TOPICS.filter(([re]) => re.test(q)).map(([, s]) => s))]
+    .filter((s) => s !== 'color')
+    .map((s) => (s === 'health' ? 'health-issues' : s));
+  if (/\b(legal\w*|illegal|laws?|permits?)\b/.test(q)) suffixes.push('legal');
+  const page = (title, url, slug) => ({
+    result: 'catalog',
+    answer: `The sources for ${title} are right on the page. Scroll to the bottom for the Sources block: it lists every reference the guide was checked against, and nothing is left off. AI tools help draft the guides, and each one is checked against that list before it goes live. If you meant a different page, tell me the animal and the topic and I will point you to it.`,
+    links: [{ title: `Sources for ${title}`, url: `${url}#article-sources` }],
+    species: null,
+    slugs: [slug],
+  });
+  if (kind !== 'general') {
+    if (guideId && suffixes.length) {
+      const table = `chunks_${meta.slot}`;
+      for (const s of suffixes) {
+        const slug = `${guideId}-${s}-guide`;
+        let row = null;
+        try { row = await db.prepare(`SELECT title FROM ${table} WHERE slug = ?1 LIMIT 1`).bind(slug).first(); } catch { /* treated as missing */ }
+        if (row?.title) return { ...page(row.title, `/blog/${slug}/`, slug), species: { name: named.name, guideId } };
+      }
+    }
+    if (hub) {
+      const lower = named.name.toLowerCase();
+      return {
+        result: 'clarify',
+        answer: `Each ${lower} guide lists its sources in a Sources block at the bottom of the page. Which one are you reading: the care guide, or one on a topic like feeding, health or tank setup?`,
+        links: [{ title: `${named.name} care guide`, url: `/guides/${hub}/` }],
+        species: guideId ? { name: named.name, guideId } : null,
+        slugs: [hub],
+      };
+    }
+    const link = !named ? askSourcesLink(context?.link) : null;
+    if (link) {
+      const slug = link.url.replace(/^\/blog\/|\/$/g, '');
+      return page(link.title || 'that page', link.url, slug);
+    }
+    if (suffixes.length && !named) {
+      return {
+        result: 'clarify',
+        answer: `Which animal's ${ASK_SOURCES_TOPIC_WORD[suffixes[0]]} guide do you mean? Each guide lists its sources in a Sources block at the bottom of the page.`,
+        links: [],
+        species: null,
+        slugs: [],
+      };
+    }
+  }
+  return { result: 'catalog', ...ASK_SOURCES_GENERAL, species: null, slugs: ['how-guides-are-made'] };
+}
+
 const ASK_THANKS_REPLIES = [
   "You're welcome! Ask anything else any time.",
   'Happy to help. Ask away if anything else comes up.',
@@ -3532,6 +3625,24 @@ async function handleAskInner(request, env, ctx, state) {
     else askLog(env, ctx, question, slugs, result, { ...extra, router: routerRow }, routerLine ? { ...push, read: routerLine } : push);
   };
 
+  // Sources questions, before the limit and the router: free, see
+  // askSourcesReply. Also the reply to its own "which one?".
+  const sourcesKind = askSourcesKind(question) || (context?.clarify && askSourcesKind(context.prev || '') === 'page' ? 'page' : null);
+  const sourcesLink = askSourcesLink(body?.context?.link);
+  const sourcesContext = context && sourcesLink ? { ...context, link: sourcesLink } : context;
+  const answerSources = async (kind, meta) => {
+    const reply = await askSourcesReply(env.ASK_DB, meta, question, sourcesContext, kind);
+    log(reply.result === 'clarify' ? 'clarify' : 'answered', reply.slugs, { answer_slug: reply.links[0]?.url || null }, { answer: reply.answer, page: reply.links[0]?.title || null });
+    return storeJson({ result: reply.result, answer: reply.answer, links: reply.links, emergency: false, species: reply.species, followUp: Boolean(context) });
+  };
+  if (sourcesKind) {
+    try {
+      return await answerSources(sourcesKind, await askMeta(env.ASK_DB));
+    } catch {
+      return quiet('unavailable');
+    }
+  }
+
   // The sharetest project (beastlyfactss-sharetest.pages.dev) is where Ask
   // Beastly is built and tested: there the per-visitor hourly limit is off
   // and answers carry the chunks the model saw, for the source check. Keyed
@@ -3583,6 +3694,9 @@ async function handleAskInner(request, env, ctx, state) {
     // it sends as context.topic with the next question.
     if (routed.read?.search) state.topic = routed.read.search;
   }
+  // The router read a sources question the rules missed: the same reply,
+  // resolving a page when it can.
+  if (routed?.read?.kind === 'sources') return answerSources('page', meta);
 
   let found;
   try {
@@ -4070,7 +4184,7 @@ async function askHaiku(env, question, chunks, prevQuestion = '', model = ASK_MO
 // (askDailyUsed) and writes nothing to KV itself; the hourly limit and the
 // day's cap run before it.
 // ---------------------------------------------------------------------------
-const ASK_ROUTER_KINDS = ['care_question', 'fact', 'catalog', 'legal', 'gift', 'new_pet', 'statement', 'small_talk', 'thanks', 'frustration', 'confused', 'other'];
+const ASK_ROUTER_KINDS = ['care_question', 'fact', 'catalog', 'legal', 'gift', 'new_pet', 'statement', 'sources', 'small_talk', 'thanks', 'frustration', 'confused', 'other'];
 // Kinds that get a fixed small talk reply, and kinds that never carry the
 // remembered animal.
 const ASK_ROUTER_TALK = new Set(['small_talk', 'thanks', 'frustration', 'confused']);
@@ -4105,12 +4219,13 @@ kind: what the message wants.
   gift: a gift for a pet or for someone who keeps one.
   new_pet: a pet just arrived and they ask where to start.
   statement: says something about their pet and asks nothing ("I love my platy fish").
+  sources: asks where the site's or an answer's information comes from, whether it is written by AI or accurate, or what a page cites ("where do you get your info", "what are the sources for the gecko guide"). Not a care question that mentions a heat source or a source of calcium.
   small_talk: greetings, tests, questions about the bot itself.
   thanks: thanks or an acknowledgement.
   frustration: annoyed with the answers or the bot ("you're not working", "useless").
   confused: says they do not follow, or a bare "why" or "what" with nothing to look up.
   other: none of these.
-search: 2 to 6 lowercase words to look up in the guides, in the words the guides use (droppings for poop, enclosure for cage, feeding for eat, tank mates for living together). The topic only, with no animal or group name. For a short follow-up, carry the topic over from the previous question, or from the previous topic when one is given ("babies?" after "what do rabbits eat" is "baby feeding"; "for color" after a question about color foods keeps "color"). Empty for catalog, small_talk, thanks, frustration and confused.`;
+search: 2 to 6 lowercase words to look up in the guides, in the words the guides use (droppings for poop, enclosure for cage, feeding for eat, tank mates for living together). The topic only, with no animal or group name. For a short follow-up, carry the topic over from the previous question, or from the previous topic when one is given ("babies?" after "what do rabbits eat" is "baby feeding"; "for color" after a question about color foods keeps "color"). Empty for catalog, sources, small_talk, thanks, frustration and confused.`;
 
 // The system prompt: the rules plus the site's own vocabulary from ask_meta,
 // built once per isolate with the meta and identical on every call, so it

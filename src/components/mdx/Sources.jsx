@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useArticleMeta } from '@/lib/articleMeta';
 import { useLocation } from 'react-router-dom';
 import { REVIEWS } from '@/lib/data/corrections';
@@ -102,7 +102,13 @@ export default function Sources({ children, className = '' }) {
   // Outside review credit, from the register on /how-guides-are-made/. Keyed
   // by the page path, so it appears only on the guide that was actually read.
   // The newest review wins if a page has been read more than once.
-  const { pathname } = useLocation();
+  const { pathname, hash } = useLocation();
+  // A link to #article-sources (Ask Beastly's sources replies, owner, 2026-11-06)
+  // lands on the whole list, open. After mount only: the prerender has no
+  // hash, so the served HTML and the first client paint still match.
+  useEffect(() => {
+    if (hash === '#article-sources') setExpanded(true);
+  }, [hash]);
   const page = pathname.endsWith('/') ? pathname : `${pathname}/`;
   const review = REVIEWS.filter(r => r.page === page).sort((a, b) => (a.date < b.date ? 1 : -1))[0];
 
@@ -114,7 +120,7 @@ export default function Sources({ children, className = '' }) {
   const collapsed = collapsible && !expanded;
 
   return (
-    <div className={`mb-10 prose prose-sm max-w-none text-muted-foreground ${className}`}>
+    <div id="article-sources" style={{ scrollMarginTop: '7rem' }} className={`mb-10 prose prose-sm max-w-none text-muted-foreground ${className}`}>
       {parts.length > 0 && (
         <p className="not-prose text-xs font-body text-muted-foreground mb-3">
           {parts.join(' · ')}
