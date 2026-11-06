@@ -1859,7 +1859,7 @@ function askSourcesKind(question) {
   return null;
 }
 const ASK_SOURCES_GENERAL = {
-  answer: 'Honest answer: AI tools help draft and organize the guides, and every guide is then checked against veterinary references, published papers and agency sources before it goes up. Those sources are listed at the bottom of each article, so you can follow any claim back to where it came from. How Guides Are Made walks through the whole process.',
+  answer: 'Honest answer: AI tools help draft and organize the guides. The owner then edits every page, so a draft is never what gets published, and checks every guide against veterinary references, published papers and agency sources before it goes up. Those sources are listed at the bottom of each article, so you can follow any claim back to where it came from. How Guides Are Made walks through the whole process.',
   links: [{ title: 'How Guides Are Made', url: '/how-guides-are-made/' }, { title: 'About Beastly Facts', url: '/about' }],
 };
 const ASK_SOURCES_TOPIC_WORD = { 'tank-setup': 'tank setup', 'health-issues': 'health', feeding: 'feeding', cost: 'cost', handling: 'handling', enrichment: 'enrichment', legal: 'legal' };
@@ -1889,7 +1889,7 @@ async function askSourcesReply(db, meta, question, context, kind) {
   if (/\b(legal\w*|illegal|laws?|permits?)\b/.test(q)) suffixes.push('legal');
   const page = (title, url, slug) => ({
     result: 'catalog',
-    answer: `The sources for ${title} are all on the page. The Sources block at the bottom lists the references it was checked against, and any Fun Fact box names its own source right under the fact. AI tools help draft the guides, and each one is checked against that list before it goes live. If you meant a different page, tell me the animal and the topic and I will point you to it.`,
+    answer: `The sources for ${title} are all on the page. The Sources block at the bottom lists the references it was checked against, and any Fun Fact box names its own source right under the fact. AI tools help draft the guides, and the owner edits each one and checks it against that list before it goes live. If you meant a different page, tell me the animal and the topic and I will point you to it.`,
     links: [{ title: `Sources for ${title}`, url: `${url}#article-sources` }],
     species: null,
     slugs: [slug],
