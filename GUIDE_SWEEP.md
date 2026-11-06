@@ -29,7 +29,7 @@ One commit per species, pushed to the working branch.
 
 ### 1. Care package animals (20)
 
-- [ ] bearded-dragon (in progress: cost guide done 2026-11-06 at A-. Other five graded (handling B, feeding B-, health C+, tank setup C+, enrichment C); writing fixes, closings, thermostat and feeding schedule applied 2026-11-06; owner calls open: hobby sources in handling and enrichment, FunFacts in health and enrichment, tank setup "Diet, Briefly", pre-brumation vet row. Bioactive guide should carry the DIY floor figure)
+- [ ] bearded-dragon (in progress: cost guide done 2026-11-06 at A-. Other five graded (handling B, feeding B-, health C+, tank setup C+, enrichment C); writing fixes, closings, thermostat and feeding schedule applied 2026-11-06; owner calls applied 2026-11-06 (Vet Desk out, enrichment hobby sources kept under the exception, FunFacts replaced, Diet section cut, pre-brumation line added). Sounds-off list still open. Bioactive guide should carry the DIY floor figure)
 - [ ] leopard-gecko
 - [ ] crested-gecko
 - [ ] gargoyle-gecko

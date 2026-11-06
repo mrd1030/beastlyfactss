@@ -197,6 +197,19 @@ daily salad (every other day at the least); adults a salad daily and insects a
 few times a week. The adult "every 24 to 72 hours" figure came out with the
 contradiction; FAQ 1 and the hub's Feeding schedule row follow the guide.
 
+## 2026-11-06: enrichment guide hobby sources kept
+
+BeardedDragon.org (dig box guide) and Hepper (glass surfing) stay in the
+enrichment guide's Sources under the under-3 exception (RULES, no hobby
+sites): removing them leaves RSPCA alone. They are the only sources behind the
+dig box figures (4 to 6 inches general, 6 to 12 for a gravid female, organic
+topsoil and washed play sand near 50/50, slightly damp, never calcium sand)
+and the glass surfing cause list (undersized enclosure, wrong temperatures,
+reflections, boredom, hunger, a gravid female). A ReptiFiles page would
+replace either one if it states the same figures (desktop check). Each hobby
+source comes out the day a non-hobby source backs its claims and the count
+stays at 3.
+
 ## Kept without a source (owner review)
 
 - Fruit "once or twice a week at most" (safe foods guide, Fruit and the
@@ -232,6 +245,19 @@ contradiction; FAQ 1 and the hub's Feeding schedule row follow the guide.
   (2026-11-06) show one breeder normal at $100 and red monster auctions from
   $65, so "sometimes less from a breeder" is not borne out. Owner
   (2026-11-06): removed; the morph prices are MorphMarket breeder listings.
+
+- Handling guide, Trimming the Claws, after The Vet Desk came out of its
+  Sources (hobby site, 2026-11-06): a dragon on tile, slate or a rough basking
+  rock files its own claws and may need a trim only a few times a year or
+  never; the quick ends where the claw's color changes; cut just past the sharp
+  point, short of that change; small animal or baby nail clippers, since
+  full-size human clippers can split the claw and dog or cat clippers are too
+  big to control; styptic powder on a cut quick, then a reptile vet for pain
+  relief. Nothing else in Sources states any of it. Kept as written.
+- Health guide, pre-brumation vet visit (added 2026-11-06 so the hub's Vet row
+  matches its source): cited to VCA "Brumation in Bearded Dragons", added to
+  the guide's VCA entry. Needs a desktop check that the page states a
+  pre-brumation exam.
 
 ## Possible contradictions found (not changed)
 
