@@ -100,6 +100,22 @@ const SLUG_PREFIX_ALIASES = {
   'giant-millipede': 'millipede',
   'madagascar-hissing-cockroach': 'hissing-cockroach',
 };
+// Breed hubs ("Beagle: Breed Quirks") by their plain breed name, the way
+// hubSpecies labels the hub's own chunks. A breed article tagged "Beagle"
+// or "Bengal Cat" carries that plain name (owner, 2026-11-06, Fable's gap 2:
+// every breed enrichment and feeding guide had no species).
+const breedNames = new Map(guidesIndex
+  .filter((g) => /:\s*Breed Quirks$/.test(g.name))
+  .map((g) => { const plain = g.name.replace(/:\s*Breed Quirks$/, ''); return [plain.toLowerCase(), plain]; }));
+// Animal names written another way in an article, fact or entry, folded into
+// the guide's name so the index has one entry per animal (Fable's gap 1).
+const SPECIES_NAME_ALIASES = {
+  'Argentine Tegu': 'Argentine Black and White Tegu',
+  'Blue-Tongued Skink': 'Blue Tongue Skink',
+  'Alligator': 'American Alligator',
+  'Sphynx Cat': 'Sphynx',
+  'Siamese Cat': 'Siamese',
+};
 function speciesFor(fm) {
   const slug = fm.slug || '';
   for (const g of guidesById) {
@@ -111,6 +127,11 @@ function speciesFor(fm) {
   for (const tag of fm.tags || []) {
     const hit = guideNames.get(String(tag).toLowerCase());
     if (hit) return hit;
+  }
+  for (const tag of fm.tags || []) {
+    const t = String(tag).toLowerCase();
+    const breed = breedNames.get(t) || breedNames.get(t.replace(/ (cat|dog)$/, ''));
+    if (breed) return breed;
   }
   if (fm.animal) return guideNameById.get(String(fm.animal)) || String(fm.animal);
   return null;
@@ -536,6 +557,19 @@ chunks.forEach((c, i) => {
 const LEGAL =JSON.parse(fs.readFileSync(path.join(ROOT, 'src/lib/data/legalStatus.json'), 'utf8'));
 const stateSlug = (name) => name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
 const guideIdByName = new Map(guidesIndex.map((g) => [g.name.toLowerCase(), g.id]));
+// One spelling per animal: the alias map first, then names that differ only
+// in case ("Aye-aye", "Aye-Aye") take the guide's spelling or the first seen.
+{
+  const preferred = new Map();
+  for (const g of guidesIndex) preferred.set(g.name.toLowerCase(), g.name);
+  for (const c of chunks) {
+    if (!c.species) continue;
+    c.species = SPECIES_NAME_ALIASES[c.species] || c.species;
+    const key = c.species.toLowerCase();
+    if (!preferred.has(key)) preferred.set(key, c.species);
+    c.species = preferred.get(key);
+  }
+}
 const speciesNames = [...new Set(chunks.map((c) => c.species).filter(Boolean))];
 function commonWords(list, share) {
   const df = new Map();

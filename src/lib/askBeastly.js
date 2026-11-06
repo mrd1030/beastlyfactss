@@ -84,8 +84,8 @@ export const canFollowUp = (c) => Boolean(c) && !c.closed;
 // The router's read (`read`) comes only from the test site, where the chat
 // shows it under the answer, so it stays when it is there.
 function keepable(reply) {
-  const { result, answer = '', links = [], emergency = false, species = null, group = null, legal = null, health = false, fact = null, missing = null, disclosure = '', read = null } = reply || {};
-  return { result: result || 'unavailable', answer, links, emergency, species, group, legal, health, fact, missing, disclosure, ...(read && { read }) };
+  const { result, answer = '', links = [], emergency = false, species = null, group = null, legal = null, health = false, fact = null, missing = null, disclosure = '', read = null, topic = '' } = reply || {};
+  return { result: result || 'unavailable', answer, links, emergency, species, group, legal, health, fact, missing, disclosure, ...(read && { read }), ...(typeof topic === 'string' && topic && { topic: topic.slice(0, 80) }) };
 }
 
 // The 30-minute pass the worker hands back after one Turnstile check, so the
@@ -153,6 +153,10 @@ export async function askQuestion(question, captcha = '', conversationId = null)
   const topic = lastTurn ? [...current.turns].reverse().find((t) => t.reply?.species?.name || t.reply?.group?.id) : null;
   const species = topic?.reply?.species?.name || '';
   const group = !species ? topic?.reply?.group?.id || '' : '';
+  // The worker's read of the last question's topic (its search phrase),
+  // sent back so a short follow-up two turns later keeps it (owner,
+  // 2026-11-06).
+  const lastTopic = lastTurn?.reply?.topic || '';
 
   let reply = { result: 'unavailable' };
   try {
@@ -161,7 +165,7 @@ export async function askQuestion(question, captcha = '', conversationId = null)
     const res = await fetch('/api/ask', {
       method: 'POST',
       headers: { 'content-type': 'application/json', ...(token && { authorization: `Bearer ${token}` }) },
-      body: JSON.stringify({ question: q, captcha, ...(pass && { pass }), ...(prev && { context: { prev, ...(clarify && { clarify: true }), ...(fact && { fact }), ...(species && { species }), ...(group && { group }) } }) }),
+      body: JSON.stringify({ question: q, captcha, ...(pass && { pass }), ...(prev && { context: { prev, ...(clarify && { clarify: true }), ...(fact && { fact }), ...(species && { species }), ...(group && { group }), ...(lastTopic && { topic: lastTopic }) } }) }),
     });
     reply = await res.json();
     if (reply.pass) savePass(reply.pass);

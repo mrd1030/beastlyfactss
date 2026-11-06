@@ -124,6 +124,7 @@ export const SEARCH_ALIASES = {
   'lepord gecko': 'leopard gecko',
   'crestie': 'crested gecko',
   'cresties': 'crested gecko',
+  'cresty': 'crested gecko',
   'fat tailed gecko': 'african fat-tailed gecko',
   'fat tail gecko': 'african fat-tailed gecko',
   'aft': 'african fat-tailed gecko',
@@ -180,6 +181,7 @@ export const SEARCH_ALIASES = {
   'african spurred': 'sulcata tortoise',
   'african spurred tortoise': 'sulcata tortoise',
   'spurred tortoise': 'sulcata tortoise',
+  'sully': 'sulcata tortoise',
   'horsefield tortoise': 'russian tortoise',
   'horsfield tortoise': 'russian tortoise',
 
@@ -193,6 +195,9 @@ export const SEARCH_ALIASES = {
   'guinie pig': 'guinea pig',
   'hampster': 'hamster',
   'hedgie': 'hedgehog',
+  // Keeper nicknames (owner, 2026-11-06, Fable's gap 3).
+  'hermie': 'hermit crab',
+  'hermies': 'hermit crab',
   'hedge hog': 'hedgehog',
   'suggie': 'sugar glider',
   // "fancy rat", not "rat": as a bare variant, "rat" substring-matches inside
