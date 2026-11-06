@@ -1900,6 +1900,25 @@ const ASK_GUIDE_TOPICS = [
 const ASK_DIET_Q_RE = /\bwhat\b.*\b(eat|eats|feed|fed|diet)\b|\b(diet|staple food)\b/;
 const ASK_REFUSAL_Q_RE = /\b(won'?t|wont|not|stop\w*|refus\w*|quit|isn'?t|aren'?t|hasn'?t|haven'?t)\b/;
 const ASK_REFUSAL_HEADING_RE = /\b(stop\w* eating|won'?t eat|not eating|refus\w*|off (its|their) food)\b/;
+// The one guided animal a word in the question names, when only one guided
+// name on the site ends in that word ("kingsnake", "conure", "tegu"). A word
+// that ends two names ("gecko", "skink") or appears in another ("boa" in
+// Rosy Boa and Boa Constrictor) names none, and an adjective ("African",
+// "green") never counts.
+function askSoleNamed(q, meta) {
+  const plain = (t) => t.toLowerCase().replace(/[^a-z0-9 ]+/g, ' ').replace(/\s+/g, ' ').trim();
+  const forms = (w) => [w, w.replace(/s$/, ''), w.replace(/es$/, '')];
+  const guided = meta.species.filter((sp) => sp.guideId && !/: the essentials$/i.test(sp.name));
+  // A group word ("parrot", "snake", "gecko") stays the group's.
+  const words = plain(q).split(' ').filter((w) => w.length > 2 && !ASK_GROUPS.some((g) => g.re.test(w)));
+  for (const word of words) {
+    const mine = forms(word);
+    const hits = guided.filter((sp) => mine.includes(plain(sp.name).split(' ').pop()));
+    const anywhere = guided.filter((sp) => plain(sp.name).split(' ').some((w) => mine.includes(w)));
+    if (hits.length === 1 && anywhere.length === 1) return hits[0];
+  }
+  return null;
+}
 const ASK_COLOR_RE = /\b(colou?r\w*|vibran\w*)\b/;
 const ASK_CARE_RE = /\b(feed\w*|fed|food|foods|eat\w*|diet|tank\w*|enclosure\w*|cage\w*|setup|set up|habitat|vivarium|terrarium|aquarium|sick\w*|ill|illness|disease\w*|vet|vets|health\w*|symptom\w*|temperature\w*|temp|temps|heat\w*|humid\w*|lamp\w*|uvb|light\w*|cost\w*|price\w*|expensive|cheap|budget|substrate|bedding|clean\w*|handl\w*)\b/;
 const ASK_LEGAL_RE = /\b(legal|illegal|legally|allowed to (own|have|keep|buy)|permit|permits|permitted|licen[cs]e\w*|banned|outlawed|laws?|(what|which) states?|where can (i|you) (own|have|keep|buy|get))\b/;
@@ -2802,6 +2821,14 @@ async function askRetrieve(db, question, context = null, router = null) {
     ownSpecies = router.animal;
     ownTopicGroup = ownSpecies ? askSpeciesGroup(ownSpecies, meta) : router.group;
     if (ownTopicGroup) ownSpecies = null;
+    // A word that names exactly one animal with a guide is that animal, even
+    // when the router read the group: "what do kingsnakes eat" asked which
+    // snake and "what do conures eat" which parrot, though the site has one
+    // kingsnake and one conure (owner, 2026-11-06).
+    if (!ownSpecies && ownTopicGroup) {
+      const sole = askSoleNamed(qOwn, meta);
+      if (sole) { ownSpecies = sole; ownTopicGroup = null; }
+    }
     // "How do I get my parrot to eat" after the African grey (owner,
     // 2026-11-04, from the live test: it asked "which parrot?"): a group
     // word that holds the remembered animal means that animal, not a
