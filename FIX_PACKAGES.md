@@ -45,6 +45,8 @@ Live editions (2026-10-04): bearded dragon 4.1; leopard gecko, crested gecko, ba
 
 - [ ] Book: monthly figure (`pages_01.html:125`) reads "$75 to $145 for feeders, greens, supplements, electricity, bulbs and the yearly vet visit, averaged." The site cost guide moved to $70 to $140 on 2026-11-06 (supplement top-ups cut from about $10 to about $5 a month, owner). Match on the next edit, and check the budget page for the same figure and the $900 to $1,740 year (now $840 to $1,680).
 
+- [ ] Book: safe foods table, "Pinky mice" row (`pages_03.html:153`, tier Rare, "Not a routine food. Occasionally for a larger adult fe..."). Owner (2026-11-06): no mice for bearded dragons; the site's feeding and safe foods guides dropped them. Remove the row, or turn it into a Never row, on the next edit.
+
 ### Leopard gecko (3.1, `leopard-gecko-src`)
 - [ ] Glossary: VCA out (`pages_07.html:60`); CITES (`:12`) moves to the law page mini glossary.
 - Note: ReptiFiles' heights for the 2.5% ShadeDweller Max sit closer than Arcadia's chart implies; Arcadia's general guide gives a UVI of 2 to 3 where the book follows ReptiFiles' lower figure. No change planned.
