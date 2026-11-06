@@ -3906,7 +3906,13 @@ async function handleAskInner(request, env, ctx, state) {
   try {
     // Counted before the call: a call that fails was still made.
     state.units += sonnet ? ASK_UNITS.compare : ASK_UNITS.answer;
-    reply = await askHaiku(env, question, found.chunks, found.followUp ? prev : '', sonnet ? ASK_MODEL_COMPARE : ASK_MODEL);
+    // A short follow-up ("and for koi?") names only an animal; the router's
+    // topic tells the model what it asks, since the question before it may
+    // not say either (owner, 2026-11-06).
+    const topicWord = routed?.read?.search || '';
+    const modelQuestion = prev && topicWord && question.split(/\s+/).length <= 5
+      ? `${question} (asking about: ${topicWord})` : question;
+    reply = await askHaiku(env, modelQuestion, found.chunks, found.followUp ? prev : '', sonnet ? ASK_MODEL_COMPARE : ASK_MODEL);
   } catch {
     log('refused', slugs);
     return fallback();
