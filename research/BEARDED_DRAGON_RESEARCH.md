@@ -220,6 +220,19 @@ came out, and the safe foods guide now says pinky mice and other rodents stay
 off the menu, with insects covering protein at every age. A house rule, not a
 sourced claim.
 
+## 2026-11-06: free-roam and handling time (owner)
+
+The enrichment guide said free-roam sessions build "toward 15 to 30 minutes for
+some adults"; the handling guide caps sessions near 10 to 15 minutes because a
+dragon cools down. Owner (2026-11-06): session length is set by heat. The
+owner's dragons roam for an hour or so in window sun under a heat lamp,
+checked with a temp gun, and go back when they wander off to poop or sleep.
+The enrichment guide now carries that as its firsthand beat (15 to 30 minutes
+removed), with the note that window glass blocks UVB (tank setup guide's
+sourced line) and that time out does no harm with a good setup to return to.
+The handling guide says 10 to 15 minutes in an ordinary room, longer with a
+heat lamp.
+
 ## Kept without a source (owner review)
 
 - Fruit "once or twice a week at most" (safe foods guide, Fruit and the
