@@ -124,8 +124,7 @@ working checklist.
   state with no entry of its own is acceptable, since every matrix cell
   carries a verified citation.
   An approved overrun says why in an MDX comment directly above `<Sources>` so
-  the next audit doesn't trim it. Approved overruns: `bearded-dragon-health-issues-guide.mdx` runs 9 (the prolapse, ADV and vet-finding
-  material), `red-eared-slider-health-issues-guide.mdx` runs 6 (the pyramiding
+  the next audit doesn't trim it. Approved overruns: `red-eared-slider-health-issues-guide.mdx` runs 6 (the pyramiding
   correction needs both the Stancel feeding trial and a cause list),
   `small-mammal-temperature-heat-stress-guide.mdx` runs 10 and
   `small-mammal-grooming-nails-molting-guide.mdx` runs 8 (one source per species
@@ -194,7 +193,8 @@ Seriously Fish, species pages only, and where FishBase states the same figure
 FishBase carries it; Practical Fishkeeping, named-author articles only and only
 where no peer-reviewed, extension, vet or Seriously Fish source covers the
 claim, never its news items that report a study (cite the study) and never its
-course pages. A claim whose only source was a hobby site stays in the article
+course pages. ReptiFiles is an approved reptile care reference (owner,
+2026-11-06) and stays in Sources wherever it backs a claim. A claim whose only source was a hobby site stays in the article
 and goes on that species' owner review list. One exception (owner,
 2026-11-01): when removing hobby sites would leave a guide with fewer than 3
 sources, those hobby sources stay to bring it back up, never past 6.
@@ -242,7 +242,9 @@ priced table, and a dated line only ages.
   one link, only where it follows from the point. New articles get one when
   they are written; an existing article gets one whenever it is opened for
   any other edit (a regrade, a fact-check, a source pass, the species
-  recaps). The fish color and fish death guides are the reference.
+  recaps). The closing is a conclusion, not a pointer back to earlier
+  sections (owner, 2026-11-06): it never says "the list above" or "those
+  signs" and never recaps the sections in order. The fish color and fish death guides are the reference.
   Guards against 800 closings that all sound alike (Fable review,
   2026-11-05): the heading uses a specific word from the article, never
   only the species name plus "care" or "health" and never "What to

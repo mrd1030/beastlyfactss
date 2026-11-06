@@ -2354,11 +2354,11 @@ export const COST_ITEMS = {
     spec: "",
     low: 70, high: 80, product: "humidifier-everlasting-comfort-6l", checked: '2026-10',
   },
-  // Three or four 0.75 cu ft bags of topsoil ($2 to $3.45 each) and three or four 0.5 cu ft bags of play sand ($4.97 each), garden-store prices checked 2026-10-06.
+  // Two 40 lb bags of the linked organic topsoil ($29 each, Amazon) plus one or two 50 lb (0.5 cu ft) bags of play sand ($4.97 each, garden store, checked 2026-10-06): $63 to $68. Reaches about 4 in once the enclosure is furnished (owner's own 4 x 2 build, 2026-11-06).
   'substrate-diy-arid-bioactive-4x2': {
     label: "Arid bioactive substrate, a DIY topsoil and play sand mix",
-    spec: "4 to 6 in over 4 x 2 ft, 80 to 120 qt",
-    low: 65, high: 75, product: null, checked: '2026-10',
+    spec: "about 4 in over 4 x 2 ft once furnished",
+    low: 60, high: 70, product: null, checked: '2026-10',
   },
   // Owner, 2026-10-07: optional, a finer sifted sand to mix into the play sand.
   'desert-sand-optional-10lb': {
