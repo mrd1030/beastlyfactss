@@ -6,8 +6,11 @@ import { ClipboardCheck as BadgeIcon, ChevronRight } from 'lucide-react';
 import { PageBadge } from '@/components/shared/IconChip';
 import { CORRECTIONS, REVIEWS } from '@/lib/data/corrections';
 
-const LAST_UPDATED = '2026-10-15';
-const DESCRIPTION = 'How Beastly Facts guides are researched, drafted and checked, where AI is used, which pages have outside review, and a public log of every correction.';
+const LAST_UPDATED = '2026-11-06';
+// The day the corrections log opened. Separate from LAST_UPDATED, which moves
+// whenever the page is edited.
+const LOG_OPENED = '2026-10-15';
+const DESCRIPTION = 'How Beastly Facts guides are researched, drafted, edited and checked, where AI is used, which pages have outside review, and a public log of every correction.';
 
 // The methods page. The About page says in one paragraph that the guides are
 // checked against sources and that AI helps with drafting. This page is the
@@ -175,9 +178,11 @@ export default function HowGuidesAreMade() {
         <Section title="The short version" delay={0.1}>
           <p>
             One person writes and maintains this site. I am a keeper, not a veterinarian, a biologist or a lawyer.
-            I use AI tools to draft and organize. I check every claim against a source I have opened myself before
-            it goes up, and the sources are listed at the foot of each article. When I get something wrong, I fix
-            it and log the fix on this page.
+            I use AI tools to help research, draft and organize. Then I edit every page myself before it goes up,
+            so a draft is never the version that gets published. I check every claim against a source I have
+            opened myself, and the sources are listed at the foot of each article. Automated checks run every time
+            the site is built, and a page that fails one does not go live. When I get something wrong, I fix it
+            and log the fix on this page.
           </p>
           <p>
             That is the whole method. The rest of this page is what each of those sentences means in practice.
@@ -197,6 +202,23 @@ export default function HowGuidesAreMade() {
             not softened. No source means no sentence. When good sources disagree on a number, the guide gives
             the range rather than picking one. Every recommendation a guide makes is one I have read and agreed
             with. The AI never publishes anything.
+          </p>
+        </Section>
+
+        <Section title="From draft to page" delay={0.17}>
+          <p>
+            A draft is where a page starts, not what it ends up as. I edit every page before it is published:
+            I rewrite passages, cut what does not help someone caring for the animal, reorder sections, and change
+            any recommendation I do not agree with. Pages keep changing after they go up, as I reread them against
+            their sources and as readers write in.
+          </p>
+          <p>
+            The site also has checks in place that run on every build, and a page that fails one does not go live.
+            They catch a fact with no source, a number on an animal's main care page that does not match the guide
+            it comes from, a price that does not match the shared price list, a link to a page that has moved, and
+            the writing habits that make a page read as assembled rather than written. A separate check watches
+            the statutes and agency pages behind the legal guides and flags any that change, and every legal guide
+            is reviewed against the law at the start of each month.
           </p>
         </Section>
 
@@ -306,7 +328,7 @@ export default function HowGuidesAreMade() {
             Typos and link repairs are not logged. Entries are never deleted.
           </p>
           <p>
-            This log opened on {formatDate(LAST_UPDATED)}. Before that, corrections were tracked in working
+            This log opened on {formatDate(LOG_OPENED)}. Before that, corrections were tracked in working
             documents. The entries below from before that date are the fixes from that period that changed what
             a reader would do, dated to the day the fix went live or was recorded as done. Consistency fixes and
             link repairs from the same period are not listed. Where a fix also reached a printable care package,
@@ -314,7 +336,7 @@ export default function HowGuidesAreMade() {
           </p>
           {CORRECTIONS.length === 0 ? (
             <p className="rounded-xl border border-dashed border-border bg-muted/40 px-4 py-3 text-foreground">
-              No corrections logged yet. This log began on {formatDate(LAST_UPDATED)}. Fixes made before that date
+              No corrections logged yet. This log began on {formatDate(LOG_OPENED)}. Fixes made before that date
               were noted on the page they changed.
             </p>
           ) : (
