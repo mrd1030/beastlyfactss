@@ -3480,8 +3480,8 @@ async function handleAskInner(request, env, ctx, state) {
   }
 
   // Test site questions stay off the phone (owner, 2026-11-04) and go into
-  // ask_log marked test (owner, 2026-11-06), so the gap list and the weekly
-  // counts can hold readers only.
+  // their own table, ask_log_test (owner, 2026-11-06), so ask_log, the gap
+  // list and the weekly counts hold readers only.
   const onTestSite = new URL(request.url).hostname.endsWith('beastlyfactss-sharetest.pages.dev');
   // The router's read goes on every ask_log row (the `router` column, as
   // askRouterRow lays it out, null when the router was not asked) and on
@@ -3489,8 +3489,8 @@ async function handleAskInner(request, env, ctx, state) {
   let routerLine = '';
   let routerRow = null;
   // Test site questions are logged too (owner, 2026-11-06, so test answers
-  // can be checked in Supabase), marked test and carrying the answer text,
-  // and never pushed to the phone. Reader counts filter on test = false.
+  // can be checked in Supabase), to their own table ask_log_test with the
+  // answer text, and never pushed to the phone.
   const log = (result, slugs = [], extra = {}, push = {}) => {
     if (onTestSite) askLog(env, ctx, question, slugs, result, { ...extra, router: routerRow, test: true, answer: push.answer || null }, null);
     else askLog(env, ctx, question, slugs, result, { ...extra, router: routerRow }, routerLine ? { ...push, read: routerLine } : push);
@@ -4371,15 +4371,16 @@ const ASK_NTFY_TITLES = {
 function askLog(env, ctx, question, matchedSlugs, result, extra = {}, push = {}) {
   const jobs = [];
   if (hasSupabaseEnv(env)) {
-    const insert = (row) => supabaseFetch(env, '/rest/v1/ask_log', {
+    // Test site rows go to their own table, ask_log_test (owner, 2026-11-06),
+    // so ask_log holds readers only.
+    const table = extra.test ? 'ask_log_test' : 'ask_log';
+    const insert = (row) => supabaseFetch(env, `/rest/v1/${table}`, {
       method: 'POST',
       headers: { Prefer: 'return=minimal' },
       body: JSON.stringify(row),
     });
-    // A test row keeps test and answer in every retry, so a missing column
-    // drops the row instead of logging it as a reader's.
     const { router, test, answer, ...rest } = extra;
-    const row = { question, matched_slugs: matchedSlugs, result, ...rest, ...(test ? { test: true, answer: answer || null } : {}) };
+    const row = { question, matched_slugs: matchedSlugs, result, ...rest, ...(test ? { answer: answer || null } : {}) };
     jobs.push((router === undefined ? insert(row) : insert({ ...row, router }).then((res) => (res.ok ? res : insert(row)))).catch(() => {}));
   }
   const mode = env?.ASK_NTFY_MODE === 'gaps' ? 'gaps' : 'all';
