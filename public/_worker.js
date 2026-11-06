@@ -3479,16 +3479,21 @@ async function handleAskInner(request, env, ctx, state) {
     });
   }
 
-  // Test site questions stay out of ask_log and off the phone (owner,
-  // 2026-11-04), so the gap list and the weekly counts hold readers only.
+  // Test site questions stay off the phone (owner, 2026-11-04) and go into
+  // ask_log marked test (owner, 2026-11-06), so the gap list and the weekly
+  // counts can hold readers only.
   const onTestSite = new URL(request.url).hostname.endsWith('beastlyfactss-sharetest.pages.dev');
   // The router's read goes on every ask_log row (the `router` column, as
   // askRouterRow lays it out, null when the router was not asked) and on
   // the phone push as one "Read as:" line.
   let routerLine = '';
   let routerRow = null;
+  // Test site questions are logged too (owner, 2026-11-06, so test answers
+  // can be checked in Supabase), marked test and carrying the answer text,
+  // and never pushed to the phone. Reader counts filter on test = false.
   const log = (result, slugs = [], extra = {}, push = {}) => {
-    if (!onTestSite) askLog(env, ctx, question, slugs, result, { ...extra, router: routerRow }, routerLine ? { ...push, read: routerLine } : push);
+    if (onTestSite) askLog(env, ctx, question, slugs, result, { ...extra, router: routerRow, test: true, answer: push.answer || null }, null);
+    else askLog(env, ctx, question, slugs, result, { ...extra, router: routerRow }, routerLine ? { ...push, read: routerLine } : push);
   };
 
   // The sharetest project (beastlyfactss-sharetest.pages.dev) is where Ask
@@ -4371,12 +4376,14 @@ function askLog(env, ctx, question, matchedSlugs, result, extra = {}, push = {})
       headers: { Prefer: 'return=minimal' },
       body: JSON.stringify(row),
     });
-    const { router, ...rest } = extra;
-    const row = { question, matched_slugs: matchedSlugs, result, ...rest };
+    // A test row keeps test and answer in every retry, so a missing column
+    // drops the row instead of logging it as a reader's.
+    const { router, test, answer, ...rest } = extra;
+    const row = { question, matched_slugs: matchedSlugs, result, ...rest, ...(test ? { test: true, answer: answer || null } : {}) };
     jobs.push((router === undefined ? insert(row) : insert({ ...row, router }).then((res) => (res.ok ? res : insert(row)))).catch(() => {}));
   }
   const mode = env?.ASK_NTFY_MODE === 'gaps' ? 'gaps' : 'all';
-  if (ASK_NTFY_TITLES[result] && (mode === 'all' || result === 'no_match')) {
+  if (push && ASK_NTFY_TITLES[result] && (mode === 'all' || result === 'no_match')) {
     const from = push.page || matchedSlugs[0];
     const page = from ? `\n\n${result === 'no_match' ? 'Closest page' : 'From'}: ${from}` : '';
     const answer = push.answer ? `\n\nAnswer: ${push.answer}` : '';

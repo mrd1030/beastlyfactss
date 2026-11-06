@@ -33,6 +33,12 @@
 -- questions). Derived from the question, nothing more; the worker retries
 -- an insert without it when the column is missing, so no row depends on it.
 --
+-- test and answer (owner, 2026-11-06): questions asked on the test site
+-- (beastlyfactss-sharetest.pages.dev) are logged with test = true and the
+-- answer text, so test answers can be checked here; they are never pushed to
+-- the phone. Reader counts and the gap list filter on test = false. A live
+-- reader's row has test = false and no answer.
+--
 -- Only the worker writes, with the service role key, which bypasses RLS. RLS is
 -- on with no policies, so anon and signed-in users can neither read nor write.
 
@@ -50,6 +56,8 @@ create table if not exists public.ask_log (
 -- check on 2026-11-03; router on 2026-11-04.
 alter table public.ask_log add column if not exists answer_slug text;
 alter table public.ask_log add column if not exists router jsonb;
+alter table public.ask_log add column if not exists test boolean not null default false;
+alter table public.ask_log add column if not exists answer text;
 alter table public.ask_log drop constraint if exists ask_log_result_check;
 alter table public.ask_log add constraint ask_log_result_check
   check (result in ('answered', 'no_match', 'capped', 'refused', 'legal', 'clarify', 'catalog'));
