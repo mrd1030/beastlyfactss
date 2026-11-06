@@ -242,7 +242,9 @@ priced table, and a dated line only ages.
   one link, only where it follows from the point. New articles get one when
   they are written; an existing article gets one whenever it is opened for
   any other edit (a regrade, a fact-check, a source pass, the species
-  recaps). The fish color and fish death guides are the reference.
+  recaps). The closing is a conclusion, not a pointer back to earlier
+  sections (owner, 2026-11-06): it never says "the list above" or "those
+  signs" and never recaps the sections in order. The fish color and fish death guides are the reference.
   Guards against 800 closings that all sound alike (Fable review,
   2026-11-05): the heading uses a specific word from the article, never
   only the species name plus "care" or "health" and never "What to
