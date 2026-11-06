@@ -124,8 +124,7 @@ working checklist.
   state with no entry of its own is acceptable, since every matrix cell
   carries a verified citation.
   An approved overrun says why in an MDX comment directly above `<Sources>` so
-  the next audit doesn't trim it. Approved overruns: `bearded-dragon-health-issues-guide.mdx` runs 9 (the prolapse, ADV and vet-finding
-  material), `red-eared-slider-health-issues-guide.mdx` runs 6 (the pyramiding
+  the next audit doesn't trim it. Approved overruns: `red-eared-slider-health-issues-guide.mdx` runs 6 (the pyramiding
   correction needs both the Stancel feeding trial and a cause list),
   `small-mammal-temperature-heat-stress-guide.mdx` runs 10 and
   `small-mammal-grooming-nails-molting-guide.mdx` runs 8 (one source per species
