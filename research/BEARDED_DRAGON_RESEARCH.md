@@ -233,6 +233,22 @@ sourced line) and that time out does no harm with a good setup to return to.
 The handling guide says 10 to 15 minutes in an ordinary room, longer with a
 heat lamp.
 
+## 2026-11-06: FunFact sources
+
+FunFacts carry their source as the `source` prop (plain text, not in the
+Sources block).
+- Tank setup: "full, direct desert sun" was contradicted. Baines et al. 2016
+  (JZAR 4(1):42-63), Table 1: Zone 3 "Open or partial sun basker" zone range
+  UVI 1.0 to 2.6, maximum 2.9 to 7.4; Zone 4 "Mid-day sun basker" 2.6 to 3.5,
+  maximum 4.5 to 9.5. The species table lists Pogona vitticeps as zone 3 to 4.
+  Rewritten to the 3 to 9.5 maximum range. Open: the UVB lighting guide lists
+  bearded dragons under Zone 3 only.
+- Health and enrichment: Australian Museum, Central Bearded Dragon. The beard
+  is the lower jaw, puffed out "when alarmed", blackened by males to signal
+  dominance; "an adept climber, and can usually be found on tree stumps, tree
+  branches, boulders and fence posts", in woodland and shrubland across the
+  semi-arid interior of eastern Australia, basking from the elevated position.
+
 ## Kept without a source (owner review)
 
 - Fruit "once or twice a week at most" (safe foods guide, Fruit and the
