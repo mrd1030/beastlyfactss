@@ -3590,6 +3590,18 @@
       "animalDay": null
     },
     {
+      "slug": "fancy-rat-and-mouse-day",
+      "title": "Fancy Rat and Mouse Day: November 12th",
+      "excerpt": "A pet rat and a sewer rat are one species, Rattus norvegicus. What separates them is 125 years of breeding since Mary",
+      "date": "2026-11-06",
+      "image": "/assets/images/fancy-rat-and-mouse-day.jpg",
+      "category": "Small & Exotic Pets",
+      "categories": [
+        "Small & Exotic Pets"
+      ],
+      "animalDay": "fancy-rat-and-mouse-day"
+    },
+    {
       "slug": "federal-exotic-pet-laws-guide",
       "title": "Federal Exotic Pet Laws: What Actually Applies",
       "excerpt": "Six federal laws reach private exotic pet keeping in the US, and only one of them bans owning an animal. The rest",

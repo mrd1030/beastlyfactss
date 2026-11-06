@@ -20357,6 +20357,66 @@
     "imageHeight": 784
   },
   {
+    "path": "/content/guides/fancy-rat-and-mouse-day.mdx",
+    "slug": "fancy-rat-and-mouse-day",
+    "title": "Fancy Rat and Mouse Day and the Rat Bred to Be Handled",
+    "seoTitle": "Fancy Rat and Mouse Day: November 12th",
+    "seoDescription": "Fancy Rat and Mouse Day is November 12th, set by the American Fancy Rat and Mouse Association. How 125 years of breeding turned the Norway rat into a pet.",
+    "lastUpdated": "2026-11-06",
+    "noIndex": false,
+    "excerpt": "A pet rat and a sewer rat are one species, Rattus norvegicus. What separates them is 125 years of breeding since Mary Douglas showed rats at Aylesbury in 1901, and the lab work shows what that kind of selection does.",
+    "date": "2026-11-06",
+    "category": "Small & Exotic Pets",
+    "categories": [
+      "Small & Exotic Pets"
+    ],
+    "tags": [
+      "Fancy Rat",
+      "Fancy Mouse",
+      "Fancy Rat and Mouse Day",
+      "AFRMA",
+      "Rat Behavior",
+      "Small Pets"
+    ],
+    "readTime": 6,
+    "difficulty": "Beginner",
+    "image": "/assets/images/fancy-rat-and-mouse-day.jpg",
+    "imageAlt": "A hooded fancy rat with a black head and shoulders and a white body, sitting up on its hind legs on a wooden surface, whiskers forward",
+    "emoji": "🐀",
+    "lastReviewed": "2026-11-06",
+    "author": "Michael Ryan",
+    "canonicalUrl": null,
+    "faqs": [
+      {
+        "q": "When is Fancy Rat and Mouse Day?",
+        "a": "November 12th, every year. It is a fixed date, so it lands on a Thursday in 2026 and a Friday in 2027. The American Fancy Rat and Mouse Association calls it its official day, though the club gives no year for when it was first held."
+      },
+      {
+        "q": "Are pet rats the same species as wild rats?",
+        "a": "Yes. A fancy rat is a Norway rat, the brown rat found in cities and on farms worldwide. More than a century of breeding has changed its colors, coat and temperament without making it a separate species."
+      },
+      {
+        "q": "Can pet rats carry diseases?",
+        "a": "They can. Being bred in a home does not protect a rat from the infections rats carry. In 2017 a Seoul virus outbreak moved between breeders in 11 states and into Canada, and 24 of the 183 people tested had antibodies. Three went to the hospital and all of them recovered."
+      },
+      {
+        "q": "Who started the rat fancy?",
+        "a": "Mary Douglas, an English fancier remembered as the mother of the rat fancy. She worked through the National Mouse Club and was the hobby's driving force until her death in 1921. Without her it faded, and it took until 1976 for a rats-only club to form in Britain."
+      }
+    ],
+    "relatedProducts": [],
+    "factFile": false,
+    "animalDay": "fancy-rat-and-mouse-day",
+    "animal": null,
+    "myth": null,
+    "truth": null,
+    "sourceCount": 6,
+    "headingCount": 7,
+    "ledeMatchesExcerpt": false,
+    "imageWidth": 1168,
+    "imageHeight": 784
+  },
+  {
     "path": "/content/guides/federal-exotic-pet-laws-guide.mdx",
     "slug": "federal-exotic-pet-laws-guide",
     "title": "The Federal Laws That Reach a Pet Owner",

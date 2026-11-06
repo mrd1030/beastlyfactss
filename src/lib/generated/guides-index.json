@@ -442,6 +442,15 @@
       "tagline": "The tiny orange schooler that glows like a coal against dark plants!"
     },
     {
+      "id": "glowlight-tetra",
+      "name": "Glowlight Tetra",
+      "emoji": "🐠",
+      "difficulty": "Beginner",
+      "petType": "Fish",
+      "image": "/assets/guides/glowlight-tetra.jpg",
+      "tagline": "The easygoing schooler with a stripe that glows like a lit fuse!"
+    },
+    {
       "id": "goldfish",
       "name": "Goldfish",
       "emoji": "🐟",
