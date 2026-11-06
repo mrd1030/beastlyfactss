@@ -179,9 +179,9 @@ export default function HowGuidesAreMade() {
           <p>
             One person writes and maintains this site. I am a keeper, not a veterinarian, a biologist or a lawyer.
             I use AI tools to help research, draft and organize. Then I edit every page myself before it goes up,
-            so a draft is never the version that gets published. I check every claim against a source I have
-            opened myself, and the sources are listed at the foot of each article. Automated checks run every time
-            the site is built, and a page that fails one does not go live. When I get something wrong, I fix it
+            so a draft is never the version that gets published. I check the claims against sources I have opened
+            myself, and the sources are listed at the foot of each article. Automated checks run every time the
+            site is built, and the build stops when one fails. When I get something wrong, I fix it
             and log the fix on this page.
           </p>
           <p>
@@ -192,16 +192,15 @@ export default function HowGuidesAreMade() {
         <Section title="Where the AI is and where it is not" delay={0.15}>
           <p>
             AI tools do a lot of the legwork. They search for sources, pull a first draft together from what they
-            find, and keep wording consistent across a hundred-plus pages. They are good at that. They are also
+            find, and keep wording consistent across hundreds of pages. They are good at that. They are also
             capable of producing a confident sentence that is simply false, and of citing a page that does not
             say what the sentence claims, so no draft is published as drafted.
           </p>
           <p>
-            Every figure and every claim of fact in a draft is traced back to a specific page in a specific
-            source before it ships, by me, with the source open. A claim I cannot find a source for is removed,
-            not softened. No source means no sentence. When good sources disagree on a number, the guide gives
-            the range rather than picking one. Every recommendation a guide makes is one I have read and agreed
-            with. The AI never publishes anything.
+            Figures and claims of fact in a draft are traced back to a specific page in a specific source, by
+            me, with the source open. When good sources disagree on a number, the guide gives the range rather
+            than picking one. The recommendations a guide makes are ones I have read and agreed with. The AI
+            does not publish anything.
           </p>
         </Section>
 
@@ -213,12 +212,16 @@ export default function HowGuidesAreMade() {
             their sources and as readers write in.
           </p>
           <p>
-            The site also has checks in place that run on every build, and a page that fails one does not go live.
-            They catch a fact with no source, a number on an animal's main care page that does not match the guide
-            it comes from, a price that does not match the shared price list, a link to a page that has moved, and
-            the writing habits that make a page read as assembled rather than written. A separate check watches
-            the statutes and agency pages behind the legal guides and flags any that change, and every legal guide
-            is reviewed against the law at the start of each month.
+            The site also has checks in place that run on every build, and the build stops when one fails. They
+            catch a fact card with no source, a number on an animal's main care page that does not match the guide
+            it comes from, a price that does not match the shared price list, and a link to a page that has moved.
+            A writing check looks for the habits that make a page read as assembled rather than written: every new
+            article has to pass it, and the older ones are being brought up to it in batches.
+          </p>
+          <p>
+            A separate check watches the statutes and agency pages behind the legal guides and flags any that
+            change. At the start of each month I check every legal guide against its sources, and the review date
+            on a guide moves only when every entry under it checked out.
           </p>
         </Section>
 
@@ -227,12 +230,12 @@ export default function HowGuidesAreMade() {
             A source is a page I actually opened that contains the specific claim it is cited for. Veterinary
             references, peer-reviewed papers, university extension pages, government and agency material, and
             manufacturer specifications for equipment. What a guide covers is driven by what people actually
-            search for about that animal. Where the figures come from is not: forums, social posts and other hobby
-            sites never supply a number.
+            search for about that animal. Where the figures come from is not: forums and social posts are not sources
+            here, and hobby sites are being worked out of the source lists in favor of stronger ones.
           </p>
           <p>
-            Each article lists its sources at the bottom along with the date it was last reviewed. Most guides
-            rest on four or five. Where a guide spans several species it may carry more. A long list is not a
+            Each guide lists its sources at the bottom along with the date it was last reviewed. Most guides
+            rest on three to five. Where a guide spans several species it may carry more. A long list is not a
             sign of a better article, and I trim sources that no longer carry a claim in the text.
           </p>
           <p>
@@ -251,7 +254,7 @@ export default function HowGuidesAreMade() {
             reference set the others are held to, because those are the animals I have kept the longest.
           </p>
           <p>
-            Every guide also tells you when the right answer is a vet, not a web page.
+            The guides also tell you when the right answer is a vet, not a web page.
           </p>
         </Section>
 
@@ -325,7 +328,7 @@ export default function HowGuidesAreMade() {
             Every substantive fix to a published page is logged here, newest first: what the page said, what it
             says now, and when it changed. A substantive fix is one that changes what a reader would do: a
             basking temperature that was wrong is logged, a sentence reworded to say the same thing is not.
-            Typos and link repairs are not logged. Entries are never deleted.
+            Typos and link repairs are not logged. An entry stays once it is in.
           </p>
           <p>
             This log opened on {formatDate(LOG_OPENED)}. Before that, corrections were tracked in working
@@ -349,8 +352,8 @@ export default function HowGuidesAreMade() {
             Use the form on the <A to="/contact/">contact page</A>, or
             email <a href="mailto:hello@beastlyfacts.com" className="text-secondary font-semibold hover:underline">hello@beastlyfacts.com</a>,
             or message the site on any of the social accounts listed there. Tell me the page and what you think
-            is wrong. A source helps but is not required. I read everything. If you are right, the page changes
-            and the fix is logged above. If I think the page is right, I will tell you why and what it rests on.
+            is wrong. A source helps but is not required. I read everything. If you are right, the page changes,
+            and a fix that changes what a reader would do is logged above. If I think the page is right, I will tell you why and what it rests on.
             The <A to="/about/">About page</A> has the rest of the story.
           </p>
         </Section>
