@@ -3125,7 +3125,9 @@ async function askRetrieve(db, question, context = null, router = null) {
   // A follow-up that names only an animal but carries a topic ("what about
   // betta?" after a color question, "and for koi?") answers that topic for
   // the new animal instead of linking its hub (owner, 2026-11-06).
-  const carriesTopic = followUp && routed && Boolean(router.search) && router.kind === 'care_question';
+  // Not tied to followUp: "and for koi?" switches animal, so the router
+  // reads switched and followUp is false, yet the topic still carries.
+  const carriesTopic = Boolean(prev) && routed && Boolean(router.search) && router.kind === 'care_question';
   if (ownSpecies && bare && !(followUp && context?.clarify) && !carriesTopic) {
     if (ownSpecies.guideId) return found({ species: ownSpecies, nav: true });
     if (meta.facts.some((f) => f.species === ownSpecies.name)) return found({ species: ownSpecies, fact: true });
