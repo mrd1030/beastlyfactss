@@ -262,8 +262,9 @@ sourced claim.
   never; the quick ends where the claw's color changes; cut just past the sharp
   point, short of that change; small animal or baby nail clippers, since
   full-size human clippers can split the claw and dog or cat clippers are too
-  big to control; styptic powder on a cut quick, then a reptile vet for pain
-  relief. Nothing else in Sources states any of it. Kept as written.
+  big to control; styptic powder on a cut quick. Nothing else in Sources states any of it.
+  Kept as written, except the vet call: owner (2026-11-06) made it
+  conditional (won't stop, bleeds again, swelling, favoring the foot).
 - Health guide, pre-brumation vet visit (added 2026-11-06 so the hub's Vet row
   matches its source): cited to VCA "Brumation in Bearded Dragons", added to
   the guide's VCA entry. Needs a desktop check that the page states a
