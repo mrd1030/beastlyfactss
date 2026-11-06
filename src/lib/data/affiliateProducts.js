@@ -184,7 +184,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.7,
     price: "$12–$28",
     description: "Hideout that gives pets a secure place to shelter, reduce stress, and rest.",
-    covers: ["Cork bark hide", "Cork bark hides", "Cork bark hide(s)", "Cork bark for hiding structures", "Warm, cool, and humid hides", "Multiple hides and enrichment items", "Cork bark tubes and branches", "Cork bark tubes", "Cork bark and dense planting", "Flat cork bark and rock hides", "Cork bark and PVC pipe hides", "Cork bark and rock structures", "A basic hide", "Two cork bark hides, one per temperature zone", "Cork bark hide for the cool end, and a basking platform", "A hide (cork bark, half-log, or a broken terracotta pot)"],
+    covers: ["Cork bark hide", "Cork bark hides", "Cork bark hide(s)", "Cork bark for hiding structures", "Warm, cool, and humid hides", "Multiple hides and enrichment items", "Cork bark tubes and branches", "Cork bark tubes", "Cork bark and dense planting", "Flat cork bark and rock hides", "Cork bark and PVC pipe hides", "Cork bark and rock structures", "A basic hide", "Two cork bark hides, one per temperature zone", "Two hides, one for each end, and a basking platform", "A hide (cork bark, half-log, or a broken terracotta pot)"],
     pets: ["reptiles-amphibians"],
   },
   {

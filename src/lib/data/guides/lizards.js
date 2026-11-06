@@ -308,7 +308,7 @@ export const lizardGuides = fillCostTokens([
       "Digital thermometer and hygrometer for the cool side",
       "Infrared temp gun for the basking surface",
       "Paper towel or tile for the floor",
-      "Cork bark hide for the cool end, and a basking platform",
+      "Two hides, one for each end, and a basking platform",
       "Climbing branches",
       "Hammock",
       "Dubia roaches or crickets",
