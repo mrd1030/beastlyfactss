@@ -4409,6 +4409,31 @@ export default {
   async fetch(request, env, ctx) {
     const { pathname } = new URL(request.url);
 
+    // Test site only, no model call (owner, 2026-11-06): tries one insert
+    // into ask_log_test and says why it worked or failed. Never shows the key.
+    if (pathname === '/api/ask/logcheck' && new URL(request.url).hostname.endsWith('beastlyfactss-sharetest.pages.dev')) {
+      const key = String(env?.SUPABASE_SERVICE_ROLE_KEY || '');
+      const out = {
+        hasUrl: Boolean(env?.SUPABASE_URL),
+        hasKey: Boolean(key),
+        urlHost: env?.SUPABASE_URL ? (() => { try { return new URL(env.SUPABASE_URL).host; } catch { return 'not a URL'; } })() : null,
+        keyKind: !key ? null : key.startsWith('eyJ') ? 'legacy JWT' : key.startsWith('sb_secret_') ? 'sb_secret' : key.startsWith('sb_publishable_') ? 'sb_publishable' : 'other',
+      };
+      if (hasSupabaseEnv(env)) {
+        try {
+          const res = await supabaseFetch(env, '/rest/v1/ask_log_test', {
+            method: 'POST',
+            headers: { Prefer: 'return=minimal' },
+            body: JSON.stringify({ question: 'logcheck', result: 'logcheck' }),
+          });
+          out.insertStatus = res.status;
+          out.insertBody = (await res.text()).slice(0, 300);
+        } catch (err) {
+          out.insertError = String(err?.message || err).slice(0, 300);
+        }
+      }
+      return new Response(JSON.stringify(out, null, 2), { headers: { 'content-type': 'application/json' } });
+    }
     if (pathname === '/api/ask' || pathname === '/api/ask/') {
       return handleAsk(request, env, ctx);
     }
