@@ -25,6 +25,16 @@ from a guide without the owner's say.
 - PetMD also states the tail "will regrow within about 30 days", which backs
   the handling guide's regrowth line.
 
+## 2026-11-06: tank setup
+
+- "Diet, Briefly" cut (owner): the feeding guide owns the diet, and the
+  section ended in a link-only sentence.
+- The Oonincx entry had no title, year or link. Now: Oonincx et al. (2020),
+  "The nocturnal leopard gecko (Eublepharis macularius) uses UVb radiation for
+  vitamin D3 synthesis", Comparative Biochemistry and Physiology Part B 250:
+  110506 (PubMed 32950659). Juveniles under low-level UVB had higher plasma
+  25(OH)D3 than controls; growth did not differ.
+
 ## Kept without a source (owner review)
 
 - Cost guide, after The Vet Desk and Reptile Direct came out (2026-11-06):
