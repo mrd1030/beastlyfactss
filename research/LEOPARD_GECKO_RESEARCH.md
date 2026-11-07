@@ -43,6 +43,14 @@ its only source was the bare Zoo Med homepage. Both cut (owner). The cost guide
 now cites 2 sources, under the 3 to 5 target: PetMD and the Cryptosporidium
 study. Not padded; flagged for the next source pass.
 
+## 2026-11-06: no mice for leopard geckos (owner)
+
+The feeding guide said adults, females especially, may take a pinky mouse one
+to two days old, no more than one a week. Owner (2026-11-06): no mice for
+leopard geckos, the same house rule as bearded dragons (snakes and larger
+reptiles are fine). The guide now says pinky mice and other rodents stay off
+the menu, with insects covering protein at every age.
+
 ## Kept without a source (owner review)
 
 - Cost guide, after The Vet Desk and Reptile Direct came out (2026-11-06):

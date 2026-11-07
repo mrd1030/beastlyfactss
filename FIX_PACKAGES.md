@@ -57,6 +57,8 @@ Live editions (2026-10-04): bearded dragon 4.1; leopard gecko, crested gecko, ba
 - [ ] Glossary: VCA out (`pages_07.html:60`); CITES (`:12`) moves to the law page mini glossary.
 - Note: ReptiFiles' heights for the 2.5% ShadeDweller Max sit closer than Arcadia's chart implies; Arcadia's general guide gives a UVI of 2 to 3 where the book follows ReptiFiles' lower figure. No change planned.
 
+- [ ] Book: feeder table, "Pinky (a newborn mouse)" row (`pages_03.html:130`, Occasional, "Adults only; one to two days old; once a week at most.") and the sources table pinky row (`pages_07.html:129`). Owner (2026-11-06): no mice for leopard geckos; the site's feeding guide dropped them. Remove the rows, or make the feeder row a Never row, on the next edit.
+
 ### Crested gecko (3.1, `crested-gecko-src`)
 - [ ] Glossary: IUCN (`pages_07.html:40`) and VCA (`:58`) out; CITES (`:12`) moves to the law page mini glossary.
 - [ ] Gear: the fogger is left unlinked as the "or" alternative to the spray bottle (cost guide setup row).
