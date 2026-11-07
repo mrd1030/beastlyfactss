@@ -75,6 +75,34 @@ text, no lettering, no logo, no signs, no watermark.
 both), the fox has black legs and a white tail tip, the dragon has the spiny
 beard, and the center is open for the text card.
 
+## Seasonal hero swaps (later), 2026-11-07
+
+The autumn hero matches the logo, but it will look like a leftover by spring.
+Winter and spring versions with the same cast and layout were tried on
+2026-11-07; the owner likes the concept and may want a divergent palette when
+the time comes (for example a blue-green), not just the autumn colors moved to
+another season. Not scheduled. Keep the same layout rule as the autumn frame:
+the cast arcs across the top, the center and lower third stay open for the
+text card.
+
+Checks from the first tries, for whichever version is picked:
+- **Deer.** An adult deer has no spots in any season; spots mean a fawn. Two
+  spring tries and one winter try drew a spotted adult. Winter keeps the buck's
+  antlers (bucks carry them into midwinter); spring uses a doe with no antlers,
+  since a spring buck would have short velvet antlers that generators get wrong.
+- **No clothes on the wild animals.** One winter try put the fox in a jacket.
+  The dragon's scarf (and a beanie in winter) is the brand; nothing else wears
+  anything.
+- Fox: black legs and a white tail tip. Barn owl: heart-shaped face. Budgie:
+  yellow face, barred wings.
+
+The winter and spring prompts are in the session that wrote them and repeat
+the autumn prompt with: winter, snow-dusted bare oak and pine sprigs, drifting
+snowflakes, the fox in its thick winter coat, the buck with antlers, a
+matching knit beanie on the dragon; spring, a flowering cherry branch,
+drifting blossom petals and new leaves, a doe with no antlers, small
+wildflowers in the corners.
+
 ## How these handle illness
 
 Sampled from `rabbit-gi-stasis.jpg`, `cat-hairball-vomiting.jpg`,
