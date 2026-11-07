@@ -1,0 +1,48 @@
+/* Color theme: harbor-navy
+   Tried 2026-11-07, not chosen: cool blue-white light mode with navy text and primary and seagreen buttons; navy-black dark mode with seagreen. Only the main tokens were set; sidebar tokens were left at the warm values when it was tried.
+   Saved for reference, not imported anywhere. To use it, copy these values
+   over the matching tokens in the :root and .dark blocks of src/index.css. */
+
+:root {
+  --background: 212 28% 95%;
+  --foreground: 218 45% 14%;
+  --card: 210 40% 99%;
+  --reading: 210 40% 99%;
+  --card-foreground: 218 45% 14%;
+  --popover: 210 40% 99%;
+  --popover-foreground: 218 45% 14%;
+  --primary: 218 52% 22%;
+  --primary-foreground: 210 40% 98%;
+  --secondary: 172 59% 30%;
+  --secondary-foreground: 210 40% 98%;
+  --muted: 212 25% 90%;
+  --muted-foreground: 216 18% 34%;
+  --accent: 40 75% 55%;
+  --accent-foreground: 218 45% 14%;
+  --accent-ink: 36 80% 31%;
+  --border: 214 16% 74%;
+  --input: 214 16% 50%;
+  --ring: 218 52% 22%;
+}
+
+.dark {
+  --background: 220 40% 8%;
+  --foreground: 210 30% 92%;
+  --card: 219 35% 12%;
+  --reading: 220 40% 6%;
+  --card-foreground: 210 30% 92%;
+  --popover: 219 35% 12%;
+  --popover-foreground: 210 30% 92%;
+  --primary: 172 55% 48%;
+  --primary-foreground: 220 40% 8%;
+  --secondary: 170 50% 51%;
+  --secondary-foreground: 220 40% 7%;
+  --muted: 219 30% 15%;
+  --muted-foreground: 212 18% 68%;
+  --accent: 40 80% 65%;
+  --accent-foreground: 220 40% 8%;
+  --accent-ink: 40 80% 65%;
+  --border: 216 20% 32%;
+  --input: 216 20% 32%;
+  --ring: 172 55% 48%;
+}
