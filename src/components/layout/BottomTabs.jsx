@@ -106,7 +106,7 @@ export default function BottomTabs() {
   return (
     /* md:hidden = only visible on mobile */
     <nav
-      className={`md:hidden fixed bottom-0 left-0 right-0 z-50 bg-card/95 backdrop-blur-xl border-t border-border no-select transition-transform duration-300 ease-out ${hidden ? 'translate-y-full' : 'translate-y-0'}`}
+      className={`md:hidden fixed bottom-0 left-0 right-0 z-50 bg-card backdrop-blur-xl border-t border-border no-select transition-transform duration-300 ease-out ${hidden ? 'translate-y-full' : 'translate-y-0'}`}
       style={{ paddingBottom: 'var(--safe-area-inset-bottom)' }}
       onFocus={() => setHidden(false)}
       aria-label="Mobile navigation"

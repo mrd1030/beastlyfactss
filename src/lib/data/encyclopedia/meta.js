@@ -22,10 +22,10 @@ export const encyclopediaCategories = [
 // Amber alone gets -200: yellow on cream still washed out at -100.
 // Flagged first by PageSpeed's accessibility audit, then by eye on a phone.
 export const difficultyColor = {
-  "Self-Sufficient": "text-sky-800 bg-sky-100 dark:bg-sky-950 dark:text-sky-400",
-  "Beginner": "text-emerald-800 bg-emerald-100 dark:bg-emerald-950 dark:text-emerald-400",
-  "Beginner/Intermediate": "text-lime-800 bg-lime-100 dark:bg-lime-950 dark:text-lime-400",
-  "Intermediate": "text-amber-800 bg-amber-200 dark:bg-amber-950 dark:text-amber-400",
-  "Intermediate/Advanced": "text-orange-800 bg-orange-100 dark:bg-orange-950 dark:text-orange-400",
-  "Advanced": "text-red-800 bg-red-100 dark:bg-red-950 dark:text-red-400",
+  "Self-Sufficient": "text-sky-800 bg-sky-100 dark:bg-muted dark:text-sky-400",
+  "Beginner": "text-emerald-800 bg-emerald-100 dark:bg-muted dark:text-emerald-400",
+  "Beginner/Intermediate": "text-lime-800 bg-lime-100 dark:bg-muted dark:text-lime-400",
+  "Intermediate": "text-amber-800 bg-amber-200 dark:bg-muted dark:text-amber-400",
+  "Intermediate/Advanced": "text-orange-800 bg-orange-100 dark:bg-muted dark:text-orange-400",
+  "Advanced": "text-red-800 bg-red-100 dark:bg-muted dark:text-red-400",
 };

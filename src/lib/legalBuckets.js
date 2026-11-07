@@ -20,8 +20,8 @@ export const STATUS_BUCKETS = {
     key: 'permit',
     label: 'Permit required',
     blurb: 'Legal, but you need a permit or license before the animal arrives.',
-    fill: '#F59E0B',
-    text: '#3B2600',
+    fill: '#EA580C',
+    text: '#1F0A00',
   },
   conditions: {
     key: 'conditions',
