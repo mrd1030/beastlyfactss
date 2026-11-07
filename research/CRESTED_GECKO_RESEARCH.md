@@ -2,12 +2,15 @@
 
 Built 2026-11-06 in the structure of the fish research files and research/LEOPARD_GECKO_RESEARCH.md. Research only: no article copy here. This file works only from what is already in the repo: the six guides content/guides/crested-gecko-{cost,handling,health-issues,tank-setup,feeding,enrichment}-guide.mdx and their Sources blocks, the hub entry in src/lib/data/guides/geckos.js, the cost sheet in src/lib/data/costSheets/geckos.js, the crested gecko section of FIX_PACKAGES.md, and the crested gecko mentions in archive/docs-completed/. No page was opened and no search was run for this file. A grep of research/ found no earlier crested gecko notes.
 
+Update 2026-11-06: a hobby-source replacement search run then opened pages and ran web searches. Its findings are filed below: new sources as C21 onward in the Source list, quotes under each topic section, proposed Sources blocks in the Replacement map, a "Possible contradictions found (not changed)" section, and the unsourced items under "Kept without a source (owner review)". Nothing written before that run was removed, and no guide was changed.
+
 How each item was seen is marked on it:
 - "verbatim page read": the page was opened and the quote is as returned. None yet in this file.
 - "abstract read": the abstract was read, not the full paper. None yet.
 - "search summary": seen in a search result summary only; desktop check before leaning on it. None yet.
 - "guide states": a figure or claim the guide carries, with the guide's Sources entry (or entries) that plausibly back it. Which page in a block states the figure was not recorded, and no page was opened for this file. Where the match is unclear: "Sources block lists X; not confirmed which entry states it".
 - "owner": an owner decision, dated "Owner (YYYY-MM-DD): ...", copied from the repo doc that records it. Sweep changes made under house rules are dated "Sweep (YYYY-MM-DD): ...".
+- Search run labels (2026-11-06). The "None yet" notes above predate that run. Its items are marked "verbatim page read" (the page loaded and the quote is as returned; HTML pages through the fetch tool's text extractor, PDFs through pdftotext, noted "PDF text"), "snippet only" (seen in a search result summary, never opened, not counted as a source) or "failed" (the page did not load). A quote cut short at the source's own dash is split into two quoted fragments, so this file carries no dash characters.
 
 Nothing here is cut from a guide without the owner's say. Quoted guide text keeps the guide's own hyphenated ranges (for example "79-85°F"); everything else writes ranges with "to".
 
@@ -17,7 +20,7 @@ Purpose: one place for what the six crested gecko guides rest on, which source p
 
 Strongest first. "Tier" follows docs/RULES.md: peer-reviewed, then .gov, then museums and universities (including veterinary references), then established husbandry references. ReptiFiles and Zen Habitats are approved reptile care references (owner, 2026-11-06). docs/RULES.md bars hobby sites from Sources: retailer blogs and care pages, hobby blogs, hobby societies, forums and hobby magazines. A bare homepage is never a source; the one exception is a combined entry for several pages of one site, which links the main site and lists the pages opened.
 
-Every row below was seen only as "guide states": the URL is as recorded in the guide's Sources block, and none was opened for this file.
+Every row below was seen only as "guide states": the URL is as recorded in the guide's Sources block, and none was opened for this file. (That holds for C1 to C20 as first built. Rows C21 onward come from the 2026-11-06 search run, and the run's reads of C1 to C20 are listed under the table.)
 
 | # | Source | Tier | URL as recorded | How seen | Cited in |
 |---|--------|------|-----------------|----------|----------|
