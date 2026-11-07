@@ -128,3 +128,16 @@ Optional, owner call: add McSharry et al. 2006 (source 7, BMC Pulmonary Medicine
 - "Most owners never develop symptoms" and "the condition is documented as uncommon": no prevalence source opened.
 - Control-table items with no source: damp-wiping versus dry dusting, hard flooring versus carpet, keeping the cage out of the bedroom, general ventilation as a human-exposure control. Merck's ventilation sentence is about affected macaws, not owners.
 - Cockatoo or cockatiel specifically causing bird fancier's lung in a person: only a search-snippet title (source 12), not opened.
+
+## Applied 2026-11-07 (after Fable's review)
+
+- Rafique et al. 2024 added to the body (a macaw and an African grey in a home) and to Sources.
+- Macaw FAQ softened to "has been reported in macaws, mainly blue-and-gold macaws".
+- Kila framing reworded in FAQ 3 and the KeyTakeaway: early lung changes missed on a standard chest X-ray, a detailed exposure history; "tell your doctor about the parrot" stays as the site's own advice.
+- Ventilation table row narrowed: fresh air thins the dust; the "critical" line is now attributed to macaws kept with powder-down birds.
+- PBFD transmission sentence rewritten in our own words (it was a near-lift of Merck's bird-owners page).
+- PBFD species clause replaced (contradicted by Merck): mainly young parrots; uncommon in captive-bred cockatoos since screening; rare but still seen in African greys, Eclectus, lovebirds, lorikeets.
+- Levoit Core300-P label now "up to 1,066 sq ft at 1 ACH" in affiliateProducts.js and the three guides that carry it. The Vital 100S-P label was left alone (its page was not opened).
+- NHLBI symptoms and diagnosis checked on the main page (the /symptoms and /diagnosis subpages 404): all supported; "lung function tests" changed to "lung tests" and "persistent bronchitis" to "long-term bronchitis", with "can build slowly over months or years" from the page. NHLBI calls HP "rare", with no rate.
+- Sources: NHLBI; Kila 2025; Rafique 2024; Merck (Miscellaneous, Viral, Skin and Feather bird-owners); VCA; LafeberVet. Six entries. McSharry 2006 left out (it backs no sentence the guide makes).
+- Unsourced items moved to research/OWNER_REVIEW.md.
