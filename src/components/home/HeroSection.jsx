@@ -131,20 +131,10 @@ export default function HeroSection({ onOpenFact }) {
             <source srcSet={HERO_AVIF} sizes="100vw" type="image/avif" />
             <source srcSet={HERO_WEBP} sizes="100vw" type="image/webp" />
             <source srcSet={HERO_JPG} sizes="100vw" type="image/jpeg" />
-            {/* Centre the crop below lg, where the box matches the source
-                closely enough that object-cover barely takes anything.
-                From lg the box is as tall as the content rather than as tall as
-                the ratio, so cover has real work to do and where it takes that
-                from is a choice. Anchored to the top: the horizon, the sky and
-                the branch hold the same position under the navbar at every
-                width, and the box grows and shrinks against the foreground
-                instead of sliding the whole composition up and down. A centred
-                crop did the opposite, trimming both ends at once, which cut the
-                lorikeet's head off at 2560.
-                Note the crop only turns vertical above about 1443px. Below that
-                the box is taller than the width-scaled image, so cover scales
-                by height and takes the difference off the sides instead, and
-                this vertical anchor does nothing. */}
+            {/* The box matches the 3:2 source on phones and from lg (16/10 on
+                tablets, a slight trim), so object-cover takes little or nothing
+                and the whole illustration shows. object-top keeps the arc of
+                animals in place if a box ever comes out taller than the image. */}
             <img
               src={hero1200Jpg}
               alt="An illustrated bearded dragon in an orange knit scarf on an autumn oak branch, leading a leaping red fox, a barn owl, a buck, a budgie, a rabbit and a tabby cat through swirling leaves"
