@@ -2,7 +2,7 @@
 
 Built 2026-11-06 in the structure of the fish research files and research/LEOPARD_GECKO_RESEARCH.md. Research only: no article copy here. This file works only from what is already in the repo: the six guides content/guides/crested-gecko-{cost,handling,health-issues,tank-setup,feeding,enrichment}-guide.mdx and their Sources blocks, the hub entry in src/lib/data/guides/geckos.js, the cost sheet in src/lib/data/costSheets/geckos.js, the crested gecko section of FIX_PACKAGES.md, and the crested gecko mentions in archive/docs-completed/. No page was opened and no search was run for this file. A grep of research/ found no earlier crested gecko notes.
 
-Update 2026-11-06: a hobby-source replacement search run then opened pages and ran web searches. Its findings are filed below: new sources as C21 onward in the Source list, quotes under each topic section, proposed Sources blocks in the Replacement map, a "Possible contradictions found (not changed)" section, and the unsourced items under "Kept without a source (owner review)". Nothing written before that run was removed, and no guide was changed.
+Update 2026-11-06: a hobby-source replacement search run then opened pages and ran web searches. Its findings are filed below: new sources as C21 onward in the Source list, quotes under each topic section, proposed Sources blocks in the Replacement map, a "Possible contradictions found (not changed)" section, and the unsourced items under "Kept without a source (owner review)". Nothing written before that run was removed, and the search run itself changed no guide (later owner changes are in the Sweep log).
 
 How each item was seen is marked on it:
 - "verbatim page read": the page was opened and the quote is as returned. None yet in this file.
@@ -563,6 +563,13 @@ Current Sources (5): More Reptiles (C20, hobby); RSPCA (C9); IAABC Foundation Jo
 - ReptiFiles decorations (C11): plausibly the plants and hides.
 - RSPCA (C9), IAABC (C10): claims not recorded.
 - Open: the wild tail loss FunFact; "rainforest" against the tank setup guide's "cloud-forest"; the seoDescription's "once or twice a week"; Wikipedia and More Reptiles to replace.
+- Proposed 2026-11-06, pending owner approval (6 entries; drops More Reptiles C20 and Wikipedia C13):
+  - [RSPCA: Crested Gecko advice](https://www.rspca.org.uk/adviceandwelfare/pets/other/crestedgecko) (C9)
+  - [IAABC Foundation Journal: Promoting Natural Behaviors in Geckos Through Enrichment](https://journal.iaabcfoundation.org/gecko-enrichment/) (C10; keep only if a desktop check shows it backs a claim in the guide; otherwise put Higham et al. 2021, C29, in this slot: [Jumping with adhesion: landing surface incline alters impact force and body kinematics in crested geckos (Higham, Hofmann, Modert, Thielen, Speck 2021, Scientific Reports)](https://pmc.ncbi.nlm.nih.gov/articles/PMC8630229/))
+  - [ReptiFiles: Crested Gecko Terrarium Decorations](https://reptifiles.com/crested-gecko-care/crested-gecko-decorations/) (C11)
+  - [Animal Diversity Web: Rhacodactylus ciliatus (Kristin Brusso, 2013)](https://animaldiversity.org/accounts/Rhacodactylus_ciliatus/) (C21)
+  - [And thereby hangs a tail: morphology, developmental patterns and biomechanics of the adhesive tails of crested geckos (Griffing, Sanger, Epperlein, Bauer, Cobos, Higham, Naylor, Gamble 2021, Proceedings of the Royal Society B)](https://pmc.ncbi.nlm.nih.gov/articles/PMC8206695/) (C28)
+  - [Arbor View Animal Hospital: Crested Gecko (Catherine Love, DVM, 2021)](https://arborviewah.com/wp-content/uploads/2021/08/Crested-Gecko-Resource.pdf) (C24)
 
 ### crested-gecko-feeding-guide.mdx
 Dates: date 2026-07-29, lastUpdated 2026-10-03, lastReviewed 2026-07-29.
@@ -571,6 +578,13 @@ Current Sources (5): ReptiFiles food page and feeder insect nutrition chart (C11
 - PetMD (C3): plausibly the schedule and the avoid list; not confirmed.
 - Reptile Craze (C19): plausibly the not-eating causes and the 2 to 3 weeks and 3 days limits.
 - Open: three of five entries are hobby sites, leaving 2 clean; the fasting limits and the feeder percentages need a stronger source.
+- Proposed 2026-11-06, pending owner approval (6 entries; drops NEHerp C14, Moon Valley C15 and Reptile Craze C19). Merck (C25) would back the dehydration skin sign as a seventh entry; it is left out for the cap.
+  - [ReptiFiles](https://reptifiles.com/): the crested gecko food page; the feeder insect nutrition chart (its figures were snippet only in this run); Crested Gecko Shedding Tips (C11)
+  - [PetMD: Crested Gecko Care Sheet (Maria Zayas, DVM)](https://www.petmd.com/reptile/crested-gecko-care-sheet) (C3)
+  - [Zen Habitats](https://www.zenhabitats.com/): Crested Gecko Complete Food Guide; What to Do If Your Crested Gecko Is Not Eating; Answering The Most Asked Crested Gecko Questions (C27)
+  - [Arbor View Animal Hospital: Crested Gecko (Catherine Love, DVM, 2021)](https://arborviewah.com/wp-content/uploads/2021/08/Crested-Gecko-Resource.pdf) (C24)
+  - [Animal Diversity Web: Rhacodactylus ciliatus (Kristin Brusso, 2013)](https://animaldiversity.org/accounts/Rhacodactylus_ciliatus/) (C21)
+  - [Nutrient Analysis of Less Common Invertebrate Prey Items (May, Reppert, Ward, Coslik; Fort Worth Zoo, AZA Nutrition Advisory Group)](https://nagonline.net/wp-content/uploads/2023/11/May-final.pdf) (C30)
 
 ### crested-gecko-handling-guide.mdx
 Dates: date 2026-07-12, lastUpdated 2026-10-02, lastReviewed 2026-07-12.
@@ -590,6 +604,14 @@ Current Sources (5, cap 8): ScaledKeeper (C17, hobby, homepage link); ReptileCoa
 - NEHerp (C14): plausibly the breeding weights and ages and the lay box.
 - VCA dystocia (C4): plausibly the egg binding signs and causes.
 - Open: three of five entries are hobby sites, leaving 2 clean; the impaction ranking, the single-female egg binding claim, "harder on her than a fertile one" and the FunFact have no source shown; the Arcadia 36 in kit link against the 12-inch tube.
+- Proposed 2026-11-06, pending owner approval (7 entries, cap 8; drops ScaledKeeper C17, ReptileCoach C18 and NEHerp C14):
+  - [ReptiFiles](https://reptifiles.com/): The Ultimate Guide to Crested Gecko Care; Crested Gecko Metabolic Bone Disease (MBD); Floppy Tail Syndrome; Impaction; Crested Gecko Shedding Tips (C11)
+  - [Zen Habitats: Crested Gecko Care Guide](https://www.zenhabitats.com/pages/crested-gecko-care-guide) (C27)
+  - [Merck Veterinary Manual](https://www.merckvetmanual.com/): Nutritional, Metabolic, and Endocrine Diseases of Reptiles (Stephen J. Divers, Jessica R. Comolli); Disorders and Diseases of Reptiles (Stephen J. Divers) (C25)
+  - [PetMD: Crested Gecko Care Sheet (Maria Zayas, DVM)](https://www.petmd.com/reptile/crested-gecko-care-sheet) (C3)
+  - [VCA Animal Hospitals: Reptiles, Dystocia](https://vcahospitals.com/know-your-pet/reptiles---dystocia) (C4)
+  - [Animal Diversity Web: Rhacodactylus ciliatus (Kristin Brusso, 2013)](https://animaldiversity.org/accounts/Rhacodactylus_ciliatus/) (C21)
+  - [Arbor View Animal Hospital: Crested Gecko (Catherine Love, DVM, 2021)](https://arborviewah.com/wp-content/uploads/2021/08/Crested-Gecko-Resource.pdf) (C24)
 
 ### crested-gecko-tank-setup-guide.mdx
 Dates: date 2026-07-12, lastUpdated 2026-10-05, lastReviewed 2026-09-24.
@@ -601,13 +623,88 @@ Current Sources (5): ReptiFiles combined (C11: care sheet, temperatures and humi
 - Changed: cool-area floor raised from 70°F to 72°F (site, 2026-10-15); the basking row cut (archive, 2026-09-25 batch).
 - Open: "cloud-forest"; the humidity FAQ low against the body range; no UVB replacement interval; the 12-hour photoperiod and 12-inch 5.0 tube have no recorded source; two thermometers against the one priced. No hobby sites.
 
+## Possible contradictions found (not changed)
+
+Found by the 2026-11-06 search run. The run changed nothing; where the owner has since acted, the item says so and points to the Sweep log.
+
+1. Enrichment guide, daytime resting place. The guide said wild geckos "sleep through the day in secure spots high in the branches". C21: "Crested geckos spend daytime hours resting in thick vegetation near the forest floor, where it is cooler and less sunny." and "rarely traveling much higher than 3 m from the forest floor." C23: "sleeping in trunk hollows or leaf litter". C6: hides "simulate their natural sleep spots of hollowed out trees." Only C13 (Wikipedia) states the high-branch version. Acted on 2026-11-06 (see Sweep log, Contradiction 1); the guide's wild habitat paragraph still ends on "height for sleeping".
+2. Enrichment guide, jump length. The guide said "often by jumping long distances from branch to branch". C21: "They can jump short distances, from branch to branch". Acted on 2026-11-06 (see Sweep log, Contradiction 1).
+3. Cost guide, enclosure size and pair space. The guide: "Two males can never share, and even two females need at least double the 18x18x24 inch single-adult minimum, about 15,500 cubic inches". The ReptiFiles page it cites (C11, Enclosure Size and Cohabitation) lists "Juveniles and adults (>12g)" at "18″L x 18″W x 36″H." and says "If you want to house two females together, you will need an enclosure that can provide at least 2x the volume of an 18x18x36 enclosure", "at least 23,000 cubic inches". C24 matches the owner's 2026-10-15 ruling instead: "or an 18’’x18’’x24’’ (LxWxH)".
+4. Health guide, adult weights. The guide: "A healthy adult male weighs about 35 to 45 grams, and adult females run heavier, about 45 to 65 grams". C11: "weighing 35-45 grams as adults." (one figure for both sexes). C27: "weigh 35-55 grams". C21: range mass "30 to 35 g".
+5. Health guide, maturity. The guide: "Females are not ready to breed until at least 12 months old and 40 grams, and males until 10 months and 30 grams." C11: "It takes crested geckos about 15-18 months to reach sexual maturity". C24: "Crested geckos reach sexual maturity by 15-18 months." C22: "Reach maturity between 8 and 11 months (35g minimum)". C21: "females typically become mature at 12 months at a weight of 30-35 gm".
+6. Health guide, floppy tail. The guide: "It's sometimes associated with calcium or pelvic issues". C27: "Cosmetic tail-base deformity from resting positions; not linked to health or breeding issues". C11 instead lists "Difficulty defecating or laying eggs" and "Deformity of base tail bone and hips".
+7. Diet powder as the whole diet. The feeding guide opens "A crested gecko can live its whole life on a complete powdered diet", and the old health FunFact said "A crested gecko's diet powder alone can supply everything it needs nutritionally, which is unusual among reptiles." C11 (food page): "even with a good crested gecko diet, crested geckos still need bugs." C24 is closer to the guide: "If feeding an insect and fruit combination product, additional insects are not required but do make good enrichment." The health FunFact was replaced on 2026-11-06 (see Sweep log); the feeding guide opener stands.
+8. Heat. The cost guide FAQ: "If your room stays between about 72 and 78°F, it needs no heat at all." C23: "Reptiles depend on external heat sources to regulate their body temperature, so supplementary heating is required to create a temperature range." with a basking temperature of "~28°C". Separately, C27 (FAQ): "Ambient temperatures over low 80ºF can actually kill a Crested Gecko.", lower than the feeding guide's "Heat above about 85°F risks being fatal".
+9. Humidity. The feeding guide: "outside the 60 to 80% target range". C9: "The normal level of humidity should be 40-50%,". C23: "kept between 50-70%". C24: "Crested geckos need an ambient humidity of 50-80%." C3: "The ideal humidity range for a crested gecko's habitat is 70 to 80%."
+10. Feeding guide, hornworm moisture. The guide: "**Hornworms** are about 85% water". C30 measured moisture of 86.7% (under 1 inch) and 88.3% (1 to 2 inch).
+11. Handling guide, tail fat (outside the four guides in this run). The guide: "The tail also held fat reserves". C24: "they don’t store fat in their tails". C9 agrees with the guide: "leads to the loss of vital fat reserves."
+12. Health guide, calcium sac location. The guide: "two small sacs at the back of the mouth". C11 (MBD page): "the white calcium sacs on the roof of his/her mouth". C14 (hobby) agrees with the guide: "located at the back of her mouth".
+13. Lifespan range. The cost guide: "15 to 20 years in captivity". C21: range lifespan in captivity "10 to 20 years". C6: "Cresties live around 10-20 years."
+
 ## Kept without a source (owner review)
 
 Nothing listed yet: items go here as the sweep finds claims that lose their only source or never had one.
+
+Added 2026-11-06 by the hobby-source replacement search run (the line above predates it). Each item stays in its guide as written; nothing was cut. Wording is checked against the guides as they stand after the 2026-11-06 owner changes.
+
+Cost guide (crested-gecko-cost-guide.mdx):
+- "15 to 20 years in captivity, with the earliest known captive individuals living into their 30s." (FAQ) and "the earliest known captive individuals have lived into their 30s" (body): the 30s part.
+- "a lay box of moist coconut fiber and fir bark is part of her kit whether she is bred or not." Only C14 (hobby) states the mix.
+- "Each clutch draws on her calcium, which keeps the supplement line on the monthly budget."
+- "UV cards do not measure UVB."
+- "Females lay infertile eggs with no male present": only partly sourced (C4 implies it; C14, hobby, states it).
+- FunFact: "after a tropical storm that year" (sources say a storm "revealed" or "uncovered" the population, and C33 says "during a rainstorm").
+- FunFact: "Every crested gecko in the pet trade today descends from that rediscovered population."
+- Morph prices, pending the MorphMarket desktop check (C41): "Most normal and patterned crested geckos from a breeder or store sell for under $100, and standard morphs top out around $200. Rare and specialty morphs from established lines run upward of $1,000."
+
+Health guide (crested-gecko-health-issues-guide.mdx):
+- "adult females run heavier, about 45 to 65 grams" (see contradiction 4).
+- "Females are not ready to breed until at least 12 months old and 40 grams, and males until 10 months and 30 grams.": the 40 and 30 gram figures (only C14, hobby).
+- "Once the disease reaches this stage, some of the damage can be permanent even with treatment."
+- "It's sometimes associated with calcium or pelvic issues": the calcium part (the pelvic part has C11), and "If you notice this, it's worth a vet visit to rule out an underlying calcium problem."
+- "This is the most common health problem in pet geckos generally, and crested geckos are no exception."
+- "A warm 15-minute soak can sometimes help a mild case. If symptoms persist beyond 24 to 48 hours, see a vet."
+- "**Watch for:** no bowel movement for a week or more, a visibly bloated abdomen, straining, lethargy, and appetite loss.": the bloating and straining (C11 backs absence of stool and appetite loss).
+- "Obesity is the quieter weight problem, and it is linked to fatty liver disease and to trouble with eggs.": the eggs part (C25 backs fatty liver).
+- "sacs that shrink noticeably over a season mean her reserves are running down"
+- "producing an infertile egg is harder on her than a fertile one" (only C14, hobby).
+- "a container with a few inches of slightly moist coconut fiber and fir bark, roughly half and half." (only C14, hobby).
+- "**Skin and scale issues** can develop from chronically high humidity combined with poor enclosure hygiene."
+- "A mature female kept alone can still develop and lay infertile clutches": only partly sourced (C4 implies it).
+
+Feeding guide (crested-gecko-feeding-guide.mdx):
+- "Portion size is roughly 1/2 teaspoon of mixed CGD for a juvenile and about 1 teaspoon for an adult per feeding"
+- "Some keepers offer only what's cleared within about 4 hours."
+- "anything not eaten within 15 to 20 minutes should come back out" (C23 says 30 minutes; C3 says do not leave them).
+- "watermelon is the flavor fussy eaters most often accept." and the FAQ's "watermelon is the flavor picky eaters most often accept."
+- "**Waxworms** run about 22% fat": snippet only (C11 chart image; C40 vendor restatement gives 24.9%).
+- "**Hornworms** are about 85% water": snippet only from C11; C30 gives 86.7 to 88.3% (see contradiction 10).
+- "citrus fruits, whose acidity is thought to interfere with calcium absorption"
+- "leave out onion, garlic, and eggplant"
+- "Raspberries appear on some high-oxalate lists, so keep them to a rare treat." (C24 lists raspberries among acceptable fruit.)
+- "fireflies, which are treated as toxic to reptiles generally and should never be fed": only the C34 press release; the paper was not opened.
+- "a vet consult is worth considering after the second week, especially with visible weight loss"
+- "Juveniles have far less reserve than adults, so a young gecko refusing food for more than a few days is more urgent than an adult doing the same."
+- "a crested gecko can only go about 3 days without it." and the FAQ's "Water runs on a shorter clock: roughly 3 days."
+- "Hormonal shifts and physical pressure from developing eggs can suppress appetite for a week or more"
+- "appetite commonly dips for a few days before and after, sometimes for up to about a week total.": the timing (C11 backs reduced appetite).
+
+Enrichment guide (crested-gecko-enrichment-guide.mdx):
+- "Vertical climbing structure is the single highest-impact enrichment upgrade for this species."
+- "Release a few into the upper branches after dark instead of dropping them on the floor"
+- "A well-established bioactive enclosure, springtails and isopods working through a drainage layer, soil mix, and leaf litter, adds ongoing low-level stimulation on top of everything above."
+- "Sudden total overhauls of a shy individual's enclosure cause stress rather than enrichment." (FAQ)
+- "Pothos, philodendron, and bromeliads are common safe choices": philodendron (C11 lists the others).
+- What C10 (IAABC) and C20 (More Reptiles) backed is still not recorded: both pages failed to load.
+
+Other guides, FunFact and FAQ items found in the same run:
+- Handling guide FunFact: "field studies since then have found tail loss to be common and largely inconsequential".
+- Tank setup guide: "Their native range in New Caledonia only reaches 79-85°F even in the hot season" (body) and "tops out at 79-85°F in the hot season" (FAQ): C31 gives hot-season mean daily maxima of about 79 to 81°F, so the 85°F top has no source.
 
 ## Sweep log
 
 - 2026-11-06: sweep started; Fable grading pass running; known item: the cost guide's 'two a year, averaged' UVB tube row matches the leopard gecko fix pending (a tube every 6 to 12 months, budgeted at two a year).
 - 2026-11-06: Owner: replace the hobby-site sources with better ones found by a real search (vet, university, government, peer-reviewed, ReptiFiles, Zen Habitats), after Fable's grading pass; no new source goes in without the owner's OK.
 - 2026-11-06: First group applied: setup total fixed in the cost sheet (gecko moved to animal [50, 200], the double-counted 'All in, before the gecko' row deleted; %%setup%% now $420 to $800, gear plus first exam), hub Budget row follows; T5 HO wattage sentence and bare Zoo Med source cut from the cost guide (owner, same as leopard gecko); UVB tube row and FAQ say every 6 to 12 months, budgeted at two a year; health guide UVB link swapped from the 36 inch Arcadia Forest kit to the Zoo Med 14 inch 5.0 hood the cost sheet uses (UVB still recommended); rule fixes (comma splices, contrast cadence, research narration, link sentences, first sentences, health product link off the disease cause, enrichment meta insect frequency); closing sections on all six, checked against each guide's own text.
+- 2026-11-06: hobby-source replacement search run; findings filed; nothing in the guides changed yet; pages that failed: More Reptiles, IAABC, Moon Valley, MorphMarket, Wiley, Endemia, ScholarSpace, INPN (desktop check).
 - 2026-11-06: Contradiction 1 (owner: the guides are for keepers, so fix only wrong statements about wild animals and keep the setup advice). Enrichment: wild geckos 'rest through the day in dense cover' (was 'sleep through the day in secure spots high in the branches'), 'jumping from branch to branch' (was 'jumping long distances'; ADW: 'They can jump short distances, from branch to branch'); setup advice to put daytime cover in the top third kept, reworded off the wild claim; closing reworded to match. Health FunFact (diet-powder advice, broke the health FunFact rule) replaced with the ADW fact: daytime rest in thick vegetation near the forest floor, rarely above about 3 m (owner chose this fact for a FunFact).
