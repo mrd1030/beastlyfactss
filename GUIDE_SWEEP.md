@@ -25,7 +25,7 @@ Six guides per species: cost, handling, health issues, tank setup, feeding, enri
 
 One commit per species, pushed to the working branch.
 
-Agent models (owner, 2026-11-06): grading and regrades run on Fable; source research and research-doc building run on Sonnet, to save credits.
+Agent models (owner, 2026-11-06): grading and regrades run on Fable; source research and research-doc building run on Sonnet, to save credits. Every research run has a hard cap of 20 web searches and 30 page fetches, and reports how many it used and what is still unsourced; more runs are started only when the owner asks.
 
 ## Order
 
