@@ -91,9 +91,14 @@ export default function FactPhotoStrip({ onOpenFact }) {
           </div>
         </div>
 
+        {/* items-start: each card is a <button>, and a button centres its own
+            content vertically, so in a stretched row a one-line title pushed
+            its photo down out of line with its neighbours (owner, 2026-11-07).
+            scroll-px-4: snapping otherwise parks the first card flush against
+            the screen edge, losing the px-4 gutter. */}
         <div
           ref={scrollRef}
-          className="flex gap-3 overflow-x-auto overflow-y-hidden pb-2 -mx-4 px-4 snap-x scrollbar-hide"
+          className="flex items-start gap-3 overflow-x-auto overflow-y-hidden pb-2 -mx-4 px-4 scroll-px-4 snap-x scrollbar-hide"
           style={{ scrollbarWidth: 'none' }}
         >
           {visible.map(({ fact, imagePath }) => (

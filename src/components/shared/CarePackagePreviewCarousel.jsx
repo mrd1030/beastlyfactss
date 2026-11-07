@@ -81,7 +81,7 @@ export default function CarePackagePreviewCarousel({ packageId, packageName, pre
     <div className="relative">
       <div
         ref={trackRef}
-        className="cp-track flex gap-4 overflow-x-auto snap-x snap-mandatory pb-2 -mx-4 px-4 sm:-mx-6 sm:px-6"
+        className="cp-track flex gap-4 overflow-x-auto snap-x snap-mandatory pb-2 -mx-4 px-4 scroll-px-4 sm:-mx-6 sm:px-6 sm:scroll-px-6"
         aria-label={`${packageName} pages`}
       >
         {previews.map((p, i) => (

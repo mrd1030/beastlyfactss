@@ -131,20 +131,10 @@ export default function HeroSection({ onOpenFact }) {
             <source srcSet={HERO_AVIF} sizes="100vw" type="image/avif" />
             <source srcSet={HERO_WEBP} sizes="100vw" type="image/webp" />
             <source srcSet={HERO_JPG} sizes="100vw" type="image/jpeg" />
-            {/* Centre the crop below lg, where the box matches the source
-                closely enough that object-cover barely takes anything.
-                From lg the box is as tall as the content rather than as tall as
-                the ratio, so cover has real work to do and where it takes that
-                from is a choice. Anchored to the top: the horizon, the sky and
-                the branch hold the same position under the navbar at every
-                width, and the box grows and shrinks against the foreground
-                instead of sliding the whole composition up and down. A centred
-                crop did the opposite, trimming both ends at once, which cut the
-                lorikeet's head off at 2560.
-                Note the crop only turns vertical above about 1443px. Below that
-                the box is taller than the width-scaled image, so cover scales
-                by height and takes the difference off the sides instead, and
-                this vertical anchor does nothing. */}
+            {/* The box matches the 3:2 source on phones and from lg (16/10 on
+                tablets, a slight trim), so object-cover takes little or nothing
+                and the whole illustration shows. object-top keeps the arc of
+                animals in place if a box ever comes out taller than the image. */}
             <img
               src={hero1200Jpg}
               alt="An illustrated bearded dragon in an orange knit scarf on an autumn oak branch, leading a leaping red fox, a barn owl, a buck, a budgie, a rabbit and a tabby cat through swirling leaves"
@@ -171,12 +161,8 @@ export default function HeroSection({ onOpenFact }) {
             cards use, and a shadow so it reads as resting ON the photograph
             rather than punched out of it. border-b-0 because the bottom edge
             runs on into the page rather than closing.
-            The border is warmed in dark mode. --border there is hsl(141 14% 42%),
-            a green-gray, which renders as RGB(79,98,81) once it is at 70% over
-            the photograph. Against red desert earth that reads cold, close to
-            blue, by simultaneous contrast. A tan at hue 36 sits in the same
-            family as the image and as the light-mode --border, which is already
-            warm at hue 38. Light mode is left alone for that reason. */}
+            In dark mode the card runs at 90% so the cream illustration does
+            not tint it olive (owner, 2026-11-07). */}
         {/* The negative pull only has a job while the image is in flow. From
             lg the image is behind, so there is nothing to pull up over and the
             section's padding places this instead. Leaving -17vw there would
@@ -193,8 +179,8 @@ export default function HeroSection({ onOpenFact }) {
               element PageSpeed still names as the sole shift culprit. It is
               above the fold and already in the HTML, so it should just be
               visible. */}
-          <div className="w-full rounded-[20px] sm:rounded-3xl border border-border/70 dark:border-[hsl(36_24%_52%/0.55)] bg-card/[0.72] backdrop-blur-[10px] px-[18px] pt-[18px] pb-4 sm:px-7 sm:pt-6 sm:pb-[22px] shadow-[0_14px_30px_hsl(var(--foreground)/0.1)] text-center">
-            <div className="inline-flex items-center gap-2 bg-accent/20 backdrop-blur-sm text-accent-background font-body font-semibold text-xs px-3 py-1.5 rounded-full mb-4">
+          <div className="w-full rounded-[20px] sm:rounded-3xl border border-border/70 bg-card/[0.72] dark:bg-card/[0.9] backdrop-blur-[10px] px-[18px] pt-[18px] pb-4 sm:px-7 sm:pt-6 sm:pb-[22px] shadow-[0_14px_30px_hsl(var(--foreground)/0.1)] text-center">
+            <div className="inline-flex items-center gap-2 bg-accent/20 dark:bg-muted backdrop-blur-sm text-accent-background font-body font-semibold text-xs px-3 py-1.5 rounded-full mb-4">
               <Sparkles className="w-3.5 h-3.5" />
               Pet care guides and animal facts
             </div>

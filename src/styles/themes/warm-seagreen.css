@@ -1,0 +1,68 @@
+/* Color theme: warm-seagreen
+   Current autumn theme (owner, 2026-11-07): warm cream light mode and the original dark green dark mode, with the seagreen "Deep sea glass" accent (#1F7A6E light, #45C1AC dark) in place of the orange.
+   Saved for reference, not imported anywhere. To use it, copy these values
+   over the matching tokens in the :root and .dark blocks of src/index.css. */
+
+:root {
+  --background: 42 40% 94.5%;
+  --foreground: 136 26% 14%;
+  --card: 40 55% 98.5%;
+  --reading: 40 55% 98.5%;
+  --card-foreground: 136 26% 14%;
+  --popover: 40 55% 98.5%;
+  --popover-foreground: 136 26% 14%;
+  --primary: 164 56% 19%;
+  --primary-foreground: 40 75% 97%;
+  --secondary: 172 59% 30%;
+  --secondary-foreground: 40 75% 97%;
+  --muted: 41 35% 91%;
+  --muted-foreground: 36 18% 32%;
+  --accent: 39 67% 55%;
+  --accent-foreground: 136 26% 14%;
+  --accent-ink: 36 80% 31%;
+  --destructive: 340 82% 44%;
+  --destructive-foreground: 0 0% 100%;
+  --border: 38 14% 70%;
+  --input: 38 16% 49%;
+  --ring: 164 56% 19%;
+  --sidebar-background: 40 55% 98.5%;
+  --sidebar-foreground: 136 26% 14%;
+  --sidebar-primary: 164 56% 19%;
+  --sidebar-primary-foreground: 40 75% 97%;
+  --sidebar-accent: 41 35% 91%;
+  --sidebar-accent-foreground: 136 26% 14%;
+  --sidebar-border: 38 14% 70%;
+  --sidebar-ring: 164 56% 19%;
+}
+
+.dark {
+  --background: 153 27% 8%;
+  --foreground: 41 48% 91%;
+  --card: 150 22% 11%;
+  --reading: 153 27% 6%;
+  --card-foreground: 41 48% 91%;
+  --popover: 150 22% 11%;
+  --popover-foreground: 41 48% 91%;
+  --primary: 165 67% 41%;
+  --primary-foreground: 148 33% 8%;
+  --secondary: 170 50% 51%;
+  --secondary-foreground: 22 54% 7%;
+  --muted: 143 18% 14%;
+  --muted-foreground: 41 20% 66%;
+  --accent: 39 82% 67%;
+  --accent-foreground: 148 33% 8%;
+  --accent-ink: 39 82% 67%;
+  --destructive: 345 85% 62%;
+  --destructive-foreground: 153 27% 8%;
+  --border: 141 14% 42%;
+  --input: 141 14% 42%;
+  --ring: 165 67% 41%;
+  --sidebar-background: 150 22% 11%;
+  --sidebar-foreground: 41 48% 91%;
+  --sidebar-primary: 165 67% 41%;
+  --sidebar-primary-foreground: 148 33% 8%;
+  --sidebar-accent: 143 18% 14%;
+  --sidebar-accent-foreground: 41 48% 91%;
+  --sidebar-border: 141 14% 42%;
+  --sidebar-ring: 165 67% 41%;
+}

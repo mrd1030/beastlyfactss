@@ -1,0 +1,68 @@
+/* Color theme: deep-pine
+   Winter candidate (owner, 2026-11-07): gray-green light mode with a blue-green navy primary and seagreen buttons; deep blue-green dark mode with gold buttons and links. Known dark mode kink: faint gold tints (bg-accent/10, bg-secondary/15) turn olive on its background, so check those when it goes live.
+   Saved for reference, not imported anywhere. To use it, copy these values
+   over the matching tokens in the :root and .dark blocks of src/index.css. */
+
+:root {
+  --background: 165 14% 94%;
+  --foreground: 190 40% 12%;
+  --card: 150 20% 98.5%;
+  --reading: 150 20% 98.5%;
+  --card-foreground: 190 40% 12%;
+  --popover: 150 20% 98.5%;
+  --popover-foreground: 190 40% 12%;
+  --primary: 192 55% 18%;
+  --primary-foreground: 150 20% 98%;
+  --secondary: 172 59% 30%;
+  --secondary-foreground: 150 20% 98%;
+  --muted: 165 12% 89%;
+  --muted-foreground: 190 14% 32%;
+  --accent: 38 78% 54%;
+  --accent-foreground: 190 40% 12%;
+  --accent-ink: 36 80% 31%;
+  --destructive: 340 82% 44%;
+  --destructive-foreground: 0 0% 100%;
+  --border: 170 10% 72%;
+  --input: 170 10% 48%;
+  --ring: 192 55% 18%;
+  --sidebar-background: 150 20% 98.5%;
+  --sidebar-foreground: 190 40% 12%;
+  --sidebar-primary: 192 55% 18%;
+  --sidebar-primary-foreground: 150 20% 98%;
+  --sidebar-accent: 165 12% 89%;
+  --sidebar-accent-foreground: 190 40% 12%;
+  --sidebar-border: 170 10% 72%;
+  --sidebar-ring: 192 55% 18%;
+}
+
+.dark {
+  --background: 195 38% 7%;
+  --foreground: 150 18% 91%;
+  --card: 195 32% 11%;
+  --reading: 195 38% 5%;
+  --card-foreground: 150 18% 91%;
+  --popover: 195 32% 11%;
+  --popover-foreground: 150 18% 91%;
+  --primary: 170 50% 50%;
+  --primary-foreground: 195 38% 7%;
+  --secondary: 38 80% 62%;
+  --secondary-foreground: 195 38% 6%;
+  --muted: 195 26% 14%;
+  --muted-foreground: 165 12% 66%;
+  --accent: 38 80% 62%;
+  --accent-foreground: 195 38% 7%;
+  --accent-ink: 38 80% 62%;
+  --destructive: 345 85% 62%;
+  --destructive-foreground: 153 27% 8%;
+  --border: 190 16% 30%;
+  --input: 190 16% 30%;
+  --ring: 170 50% 50%;
+  --sidebar-background: 195 32% 11%;
+  --sidebar-foreground: 150 18% 91%;
+  --sidebar-primary: 170 50% 50%;
+  --sidebar-primary-foreground: 195 38% 7%;
+  --sidebar-accent: 195 26% 14%;
+  --sidebar-accent-foreground: 150 18% 91%;
+  --sidebar-border: 190 16% 30%;
+  --sidebar-ring: 170 50% 50%;
+}
