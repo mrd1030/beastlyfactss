@@ -119,7 +119,7 @@ export default function HeroSection({ onOpenFact }) {
             move with the width. The photograph is unchanged and still fills
             whatever room it is given, it just does it behind the content
             instead of in front of it in the layout. */}
-        <div className="relative w-full aspect-[4/3] sm:aspect-[16/10] overflow-hidden lg:absolute lg:inset-0 lg:aspect-auto lg:h-full">
+        <div className="relative w-full aspect-[3/2] sm:aspect-[16/10] overflow-hidden lg:absolute lg:inset-0 lg:aspect-auto lg:h-full">
           <picture>
             {/* AVIF first: <picture> takes the first source whose type the
                 browser accepts, so order is the negotiation. The preload in
@@ -179,7 +179,7 @@ export default function HeroSection({ onOpenFact }) {
             section's padding places this instead. Leaving -17vw there would
             drag the card further up the wider the window got, which is the same
             drift running the other way. */}
-        <div className="relative z-[5] w-full max-w-[760px] -mt-[28vw] sm:-mt-[17vw] lg:mt-0 px-3 sm:px-5 flex flex-col items-center">
+        <div className="relative z-[5] w-full max-w-[760px] -mt-[26vw] sm:-mt-[17vw] lg:mt-0 px-3 sm:px-5 flex flex-col items-center">
           <div className="w-full flex flex-col items-center">
           {/* Deliberately NOT animated in, same reasoning as the daily fact
               card below. framer-motion does not emit its styles into the
