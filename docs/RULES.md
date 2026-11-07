@@ -188,7 +188,9 @@ exists to state it.
 
 A `<Sources>` entry is a vet, university, government, peer-reviewed paper,
 manufacturer spec, or established husbandry reference. Never a retailer product
-page or a for-sale listing.
+page or a for-sale listing. One exception (owner, 2026-11-06): a MorphMarket listings
+page backs morph prices in a cost guide, since breeder listings are where those
+prices live; the body never names it.
 
 No hobby sites (owner, 2026-11-01): retailer blogs and care pages (Aquarium
 Co-Op, Fishkeeper and the like), hobby blogs (Aquarium Source and the like),
@@ -198,8 +200,8 @@ Seriously Fish, species pages only, and where FishBase states the same figure
 FishBase carries it; Practical Fishkeeping, named-author articles only and only
 where no peer-reviewed, extension, vet or Seriously Fish source covers the
 claim, never its news items that report a study (cite the study) and never its
-course pages. ReptiFiles is an approved reptile care reference (owner,
-2026-11-06) and stays in Sources wherever it backs a claim. A claim whose only source was a hobby site stays in the article
+course pages. ReptiFiles and Zen Habitats are approved reptile care references
+(owner, 2026-11-06) and stay in Sources wherever they back a claim. A claim whose only source was a hobby site stays in the article
 and goes on that species' owner review list. One exception (owner,
 2026-11-01): when removing hobby sites would leave a guide with fewer than 3
 sources, those hobby sources stay to bring it back up, never past 6.
