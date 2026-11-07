@@ -132,7 +132,7 @@ export const geckoGuides = fillCostTokens([
         { label: "Handling", value: "Wait about two weeks, and until the gecko is a sub-adult of 10 to 15 grams (roughly 4 to 5 inches, about 6 months old). Then 5 minute sessions building to 15 minutes, under 20 minutes total a day. Never grab the tail, it does not grow back.", source: "crested-gecko-handling-guide" },
         { label: "Budget", value: "$50 to $200 for a normal morph, upward of $1,000 for rare and specialty morphs. %%setup:crested-gecko%% of equipment and the first vet exam. %%monthly:crested-gecko%% a month after that.", source: "crested-gecko-cost-guide" },
         { label: "Adult size", value: "7 to 9 inches including tail." },
-        { label: "Lifespan", value: "15 to 20 years in captivity, with the earliest known captive individuals living into their 30s.", source: "crested-gecko-cost-guide" },
+        { label: "Lifespan", value: "10 to 20 years in captivity, with the earliest known captive individuals living into their 30s.", source: "crested-gecko-cost-guide" },
         { label: "Hygiene", value: "Wash hands with soap right after any contact, keep the gecko out of the kitchen, and never clean the enclosure in a kitchen sink or a bathtub people use.", source: "reptile-salmonella-hygiene-guide" },
         { label: "Power outage", value: "65 to 72°F is the normal night low. Sustained below 72°F, day or night, causes lethargy and appetite loss, add heat, move the animal, or call the sitter.", source: "reptile-emergency-plan-guide" },
       ],
