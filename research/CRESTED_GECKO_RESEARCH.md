@@ -342,3 +342,4 @@ Nothing listed yet: items go here as the sweep finds claims that lose their only
 ## Sweep log
 
 - 2026-11-06: sweep started; Fable grading pass running; known item: the cost guide's 'two a year, averaged' UVB tube row matches the leopard gecko fix pending (a tube every 6 to 12 months, budgeted at two a year).
+- 2026-11-06: Owner: replace the hobby-site sources with better ones found by a real search (vet, university, government, peer-reviewed, ReptiFiles, Zen Habitats), after Fable's grading pass; no new source goes in without the owner's OK.
