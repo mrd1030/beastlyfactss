@@ -44,6 +44,30 @@ Every row below was seen only as "guide states": the URL is as recorded in the g
 | C18 | ReptileCoach: Crested Gecko Health Problems: MBD, Impaction & FTS Guide | FLAG: hobby blog | https://reptilecoach.com/crested-gecko-health-problems-guide/ | guide states | health |
 | C19 | Reptile Craze: crested gecko not eating page; how long crested geckos go without food or water | FLAG: hobby blog. FLAG: homepage link with pages listed | https://reptilecraze.com/ | guide states | feeding |
 | C20 | More Reptiles: Crested Gecko Enrichment, Simple and Easy DIY Ideas | FLAG: hobby blog | https://www.morereptiles.com/crested-gecko-enrichment/ | guide states | enrichment |
+| C21 | Brusso K (2013). "Rhacodactylus ciliatus." Animal Diversity Web, University of Michigan (editors Amy Schrank, Jeremy Wright) | University | https://animaldiversity.org/accounts/Rhacodactylus_ciliatus/ | verbatim page read (2026-11-06). The Correlophus_ciliatus account URL returned 404 | proposed: health, feeding, enrichment |
+| C22 | BGSU Herpetarium: New Caledonian Crested Gecko (compiled by Eileen Underwood, updated 8/2016) | University | https://www.bgsu.edu/arts-and-sciences/biological-sciences/facilities-and-resources/bgsu-herpetarium/animals/reptiles/new-caledonian-crested-gecko.html | verbatim page read | proposed: cost |
+| C23 | RVC Exotics Service, Beaumont Sainsbury Animal Hospital, Royal Veterinary College: Crested Gecko Care (reviewed December 2022) | Vet school | https://rvc-web-app01.live01.azure.rvc.ac.uk/Media/Default/Beaumont%20Sainsbury%20Animal%20Hospital/EXOTICS/Animal%20Care%20Factsheets/Crested-gecko-care-and-advice-2022-jh.pdf | verbatim page read, PDF text. The same path on www.rvc.ac.uk returned 403 | not proposed; quotes filed |
+| C24 | Love C, DVM (updated 2021). Crested Gecko. Arbor View Animal Hospital | Vet hospital | https://arborviewah.com/wp-content/uploads/2021/08/Crested-Gecko-Resource.pdf | verbatim page read, PDF text | proposed: health, feeding, enrichment |
+| C25 | Merck Veterinary Manual, combined: Divers SJ, Comolli JR, "Nutritional, Metabolic, and Endocrine Diseases of Reptiles" (full review July 2025, peer reviewed by João Brandão); Divers SJ, "Disorders and Diseases of Reptiles" (pet owner version, full review August 2020) | Veterinary reference | https://www.merckvetmanual.com/ with pages https://www.merckvetmanual.com/exotic-and-laboratory-animals/reptiles/nutritional-metabolic-and-endocrine-diseases-of-reptiles and https://www.merckvetmanual.com/all-other-pets/reptiles/disorders-and-diseases-of-reptiles | verbatim page read (both). https://www.merckvetmanual.com/exotic-and-laboratory-animals/reptiles/metabolic-diseases-of-reptiles returned 404 | proposed: health |
+| C26 | Baines FM (2024-08-20). UVB Lighting for Reptiles. LafeberVet | Veterinary | https://lafeber.com/vet/uvb-lighting-for-reptiles/ | verbatim page read | proposed: cost |
+| C27 | Zen Habitats, combined: Crested Gecko Care Guide (Zen Habitats Research Team, last updated May 2026); Crested Gecko Complete Food Guide (Madeline Smith, 2023-12-22); What to Do If Your Crested Gecko Is Not Eating (Madeline Smith, 2024-11-30); Answering The Most Asked Crested Gecko Questions (Madeline Smith, 2023-12-29) | Approved reptile care reference (owner, 2026-11-06) | https://www.zenhabitats.com/ with pages https://www.zenhabitats.com/pages/crested-gecko-care-guide, https://www.zenhabitats.com/pages/crested-gecko-complete-food-guide, https://www.zenhabitats.com/blogs/reptile-care-sheets-resources/what-to-do-if-your-crested-gecko-is-not-eating, https://www.zenhabitats.com/blogs/reptile-care-sheets-resources/answering-the-most-asked-crested-gecko-questions-zen-habitats | verbatim page read (all four) | proposed: health, feeding |
+| C28 | Griffing AH, Sanger TJ, Epperlein L, Bauer AM, Cobos A, Higham TE, Naylor E, Gamble T (2021). "And thereby hangs a tail: morphology, developmental patterns and biomechanics of the adhesive tails of crested geckos (Correlophus ciliatus)." Proc R Soc B 288(1953):20210650. doi:10.1098/rspb.2021.0650 | Peer-reviewed | https://pmc.ncbi.nlm.nih.gov/articles/PMC8206695/ | verbatim page read | proposed: enrichment |
+| C29 | Higham TE, Hofmann MNS, Modert M, Thielen M, Speck T (2021). "Jumping with adhesion: landing surface incline alters impact force and body kinematics in crested geckos." Sci Rep 11:23043. doi:10.1038/s41598-021-02033-4 | Peer-reviewed | https://pmc.ncbi.nlm.nih.gov/articles/PMC8630229/ | verbatim page read | alternate for enrichment (see Replacement map) |
+| C30 | May S, Reppert A, Ward A, Coslik A. "Nutrient Analysis of Less Common Invertebrate Prey Items." Cook Museum of Natural Science and Fort Worth Zoo; hosted by the AZA Nutrition Advisory Group (no year printed; file dated 2023) | Zoo nutrition proceedings | https://nagonline.net/wp-content/uploads/2023/11/May-final.pdf | verbatim page read, PDF text | proposed: feeding |
+| C31 | Météo-France: Fiche climatologique, GORO_ANCIENNE_PEPINIERE (indicatif 98832101, 298 m), statistics 2010 to 2020, records 2010 to 2025 | Government agency | https://donneespubliques.meteofrance.fr/FichesClim/FICHECLIM_98832101.pdf | verbatim page read, PDF text | FunFact candidate |
+| C32 | Météo-France: Fiche climatologique, NOUMEA (indicatif 98818001, 69 m), statistics 1991 to 2020 | Government agency | https://object.files.data.gouv.fr/meteofrance/data/synchro_ftp/REF_STATION/FICHECLIM_98818001.pdf | verbatim page read (table values as returned by the fetch tool) | not proposed: coastal city outside the forest range |
+| C33 | Erie Zoo: Black Eyelash Crested Gecko | Zoo | https://www.eriezoo.org/animals-by-species/reptiles/black-eyelash-crested-gecko | verbatim page read | FunFact candidate |
+| C34 | Cornell Chronicle: "Poisonous North American fireflies are killing exotic zoo and pet lizards, Cornell biologists warn" (press release on Knight M, Glor R, Smedley SR, González A, Adler K, Eisner T (1999), "Firefly toxicosis in lizards," Journal of Chemical Ecology 25(9)) | University press release; the paper itself was not opened | https://news.cornell.edu/node/278835 | verbatim page read (press release only) | not proposed |
+| C35 | Bauer AM, Sadlier RA (1994). "The Terrestrial Herpetofauna of the Ile des Pins, New Caledonia." Pacific Science 48(4):353-366. Australian Museum listing page | Peer-reviewed (listing page only) | https://publications.australian.museum/the-terrestrial-herpetofauna-of-the-ile-des-pins-new-caledonia/ | listing page read; no crested gecko text on it. Full text on ScholarSpace failed (C38) | none |
+| C36 | Endemia.nc: Correlophus ciliatus species page | New Caledonia biodiversity database (IUCN-based) | https://endemia.nc/en/faune/fiche1023 | failed (403 and a Cloudflare check); seen as snippet only | none |
+| C37 | The Reptile Database: Correlophus ciliatus | Taxonomic database | https://reptile-database.reptarium.cz/species?genus=Correlophus&species=ciliatus | failed (503) | none |
+| C38 | ScholarSpace, University of Hawaii: Bauer and Sadlier 1994 (C35) full text | Peer-reviewed host | https://scholarspace.manoa.hawaii.edu/handle/10125/2294 | failed (Cloudflare check) | none |
+| C39 | Seipp R, Klemmer K (1994). "Wiederentdeckung von Rhacodactylus ciliatus Guichenot 1866 im Süden Neukaledoniens." Senckenbergiana Biologica 74(1/2):199-204 (INPN download) | Peer-reviewed | https://inpn.mnhn.fr/docs-web/docs/download/410852 | failed (403). Citation seen in Wikipedia's reference list (C13) and in a search snippet | none |
+| C40 | Finke MD (2002). "Complete nutrient composition of commercially raised invertebrates used as food for insectivores." Zoo Biology 21(3):269-285. doi:10.1002/zoo.10031 | Peer-reviewed | https://onlinelibrary.wiley.com/doi/abs/10.1002/zoo.10031 | failed (403). Waxworm figures seen as snippet only, restated by a vendor FAQ. The Feedipedia reference page https://feedipedia.org/node/16408 loaded but gives no waxworm figures; the mirror https://czaw.org/?p=2271 returned 404 | none |
+| C41 | MorphMarket: crested gecko listings | Allowed for morph prices in a cost guide only (owner, 2026-11-06) | https://www.morphmarket.com/us/c/reptiles/lizards/crested-geckos | failed (403); desktop check | proposed: cost (pending the desktop check) |
+| C42 | ARAV 1999 conference proceedings PDF (scanned) | Veterinary association proceedings | https://cdn.ymaws.com/members.arav.org/resource/resmgr/Files/Proceedings_1999/1999_09.pdf | failed (scanned image, no text) | none |
+| C43 | Exo Terra: Correlophus ciliatus care guide | Manufacturer care page, not a product spec, so treated as hobby | https://exo-terra.com/explore/care-guides/lizards/correlophus-ciliatus/ | snippet only | none |
+| C44 | Other fetches that returned nothing usable: a PubMed search for Finke waxworm composition (no results); the PangoVet growth chart (301 redirect to The Vet Desk, C16's site, not followed); a Springer search (login redirect, not followed) | n/a | https://pubmed.ncbi.nlm.nih.gov/?term=Finke+waxworm+nutrient+composition ; https://info.pangovet.com/pet-health-wellness/geckos/crested-geckos-size-weight-growth-chart ; https://link.springer.com/search?query=Firefly+Toxicosis+in+Lizards | failed | none |
 
 Counts: 20 distinct sources across 27 Sources entries. Seven look like hobby sites (C14 to C20). Three entries link a homepage: C12 is a bare homepage for a specific spec claim; C17 and C19 use the combined-entry form, but on hobby sites. C11 uses the combined-entry form on an approved site, which RULES allows when the listed pages were opened; whether they were opened is not recorded. C13 (Wikipedia) is weak but not a hobby site.
 
@@ -52,6 +76,19 @@ Effect of the hobby rule per guide (RULES: when removing hobby sites would leave
 - Health: 5 entries; without C14, C17 and C18 it has C3 and C4. Under 3.
 - Feeding: 5 entries; without C14, C15 and C19 it has C11 and C3. Under 3.
 - Enrichment: 5 entries; without C20 it has C9, C10, C11 and C13.
+
+Search run 2026-11-06, reads of the existing rows:
+- C3 PetMD: verbatim page read. Author Maria Zayas, DVM; reviewed by Ivan Alfonso, DVM; updated Nov. 14, 2025.
+- C4 VCA dystocia: verbatim page read. Gregory Rich, DVM, and Rick Axelson, DVM; last updated May 26, 2025.
+- C6 Chicago Exotics: verbatim page read. Erica Mede, CVT; photos and edits Susan Horton, DVM; no date shown.
+- C9 RSPCA: verbatim page read.
+- C10 IAABC Foundation Journal: failed (empty page, twice). What it backs is still not recorded.
+- C11 ReptiFiles, pages opened: The Ultimate Guide to Crested Gecko Care (https://reptifiles.com/crested-gecko-care/); Enclosure Size and Cohabitation (https://reptifiles.com/crested-gecko/care-guide/crested-gecko-terrarium-size-cohabitation); Sexing Crested Geckos (https://reptifiles.com/crested-gecko-care/sick-crested-gecko/sexing-crested-geckos/); Metabolic Bone Disease (https://reptifiles.com/crested-gecko-care/sick-crested-gecko/crested-gecko-metabolic-bone-disease/); Floppy Tail Syndrome (https://www.reptifiles.com/crested-gecko-care/sick-crested-gecko/crested-gecko-floppy-tail-syndrome-fts/); Impaction (https://reptifiles.com/crested-gecko-care/sick-crested-gecko/crested-gecko-impaction/); Shedding Tips (https://reptifiles.com/crested-gecko-care/sick-crested-gecko/crested-gecko-shedding/); the food page at both https://reptifiles.com/crested-gecko-care/crested-gecko-food/ and https://reptifiles.com/crested-gecko/care-guide/crested-gecko-food; Terrarium Decorations (https://reptifiles.com/crested-gecko-care/crested-gecko-decorations/); all verbatim page read. The feeder chart page https://reptifiles.com/feeder-insect-nutrition-facts-chart/ loaded, but its table is an image, so its figures are snippet only; https://reptifiles.com/feeder-insect-nutrition-chart/ returned 404. Not opened in this run: the starter kit, handling, tail loss and temperatures and humidity pages.
+- C13 Wikipedia: verbatim page read, with the references attached to each sentence.
+- C14 NEHerp breeding page: verbatim page read, only to record what it backs. Still a hobby site.
+- C15 Moon Valley Reptiles: failed (503).
+- C16 The Vet Desk, C17 ScaledKeeper, C18 ReptileCoach, C19 Reptile Craze: not opened.
+- C20 More Reptiles: failed (empty page, twice). What it backs is still not recorded.
 - Handling (C1, C5, C7, C11) and tank setup (C2, C3, C6, C8, C11): no hobby sites.
 
 ---
@@ -62,22 +99,56 @@ Effect of the hobby rule per guide (RULES: when removing hobby sites would leave
 - Hub "Adult size" row: "7 to 9 inches including tail." The hub comment says adult size comes from the encyclopedia entry, which no deep dive repeats. None of the six guides states it.
 - Guide states (health guide): "A healthy adult male weighs about 35 to 45 grams, and adult females run heavier, about 45 to 65 grams, more for a while when carrying eggs." Sources block lists ScaledKeeper's weight and growth chart (C17), ReptileCoach (C18), PetMD (C3), NEHerp (C14), VCA dystocia (C4); not confirmed which entry states it. The ScaledKeeper weight chart is the likeliest, and it is a hobby blog.
 - Guide states (handling guide, and the hub "Handling" row): a sub-adult or older juvenile is "roughly 10 to 15 grams or about 4 to 5 inches and 6 months old". Sources block lists Gumangan (C1), ReptiFiles (C11), Merck (C5), Swiftail (C7); not confirmed which entry states it.
+- Search run 2026-11-06:
+  - C11 (Ultimate Guide), verbatim page read: "Crested geckos measure about 8 inches long from snout to tail, and weighing 35-45 grams as adults." One figure for both sexes.
+  - C27 (care guide), verbatim page read: "Adults reach 7-9 inches (including tail) and weigh 35-55 grams, living 15-20+ years in captivity." C27 (FAQ), verbatim page read: "Crested Geckos reach 6-10 inches long from snout to tip of tail and weigh between 35-55 grams when full grown."
+  - C27 (not eating page), verbatim page read: "A healthy adult gecko typically weighs around 15-35g by its first birthday."
+  - C21, verbatim page read: "Adult crested geckos typically average 20.3 centimeters in total length"; range mass "30 to 35 g".
+  - C22, verbatim page read: "SVL 4-4.7”; total ~8”".
+  - C24, verbatim page read (PDF text): Adult Size "7-9 inches." C33, verbatim page read: Size "7-9 inches". C6 gives length only, 7 to 9 inches, no weight. C3 gives adult length as 5 to 8 inches (written on the page as a dash range), no weight.
+  - No page found states females at 45 to 65 grams.
 
 1.2 Sexual maturity and sexing
 - Guide states (health guide): "Females are not ready to breed until at least 12 months old and 40 grams, and males until 10 months and 30 grams." Sources block lists NEHerp's breeding page (C14) among five; not confirmed which entry states it. NEHerp is a hobby site.
 - Guide states (handling guide, cost guide): the hemipenal bulge "usually appears between 18 and 25 grams, so a gecko under that weight with no bulge is unsexed, not female." Femoral pore sexing with a loupe is "not always accurate". Handling Sources block lists ReptiFiles sexing (C11); the cost guide block lists ReptiFiles "Sexing Crested Geckos" (C11). Archive (FIX_PLAN_COMPLETED_2026-09-25.md): the book said sexable "at 15 to 18 months"; the site's 18 to 25 g (handling guide; ReptiFiles) won, done in that batch.
 - Guide states (feeding guide): adults are 12+ months for the feeding schedule.
+- Search run 2026-11-06:
+  - C21, verbatim page read: "females typically become mature at 12 months at a weight of 30-35 gm"; "Males become sexually mature between 9-12 months of age".
+  - C22, verbatim page read: "Reach maturity between 8 and 11 months (35g minimum)".
+  - C11 (Ultimate Guide), verbatim page read: "It takes crested geckos about 15-18 months to reach sexual maturity, with a 15-20 year lifespan."
+  - C24, verbatim page read (PDF text): "Males have a visible hemipenal bulge starting around 6 months of age. Crested geckos reach sexual maturity by 15-18 months."
+  - C11 (sexing), verbatim page read: "this bulge develops between 18-25g"; on femoral pores with magnification, "this isn't always accurate." No age and no breeding weights on that page.
+  - C14 (NEHerp, hobby, recorded only to show what it backs), verbatim page read: "The female should be a minimum of 12 months old"; "Females should weigh 40+ grams before introduction."; "The male should be at least 10 months old"; "Males should weigh 30+ grams before introduction."
+  - Snippet only: a Petco vet technician answer gives at least 40 grams and 12 to 18 months for females; Reptiles Magazine gives 38 to 40 grams. Retailer and hobby magazine; not sources.
 
 1.3 Tail: autotomy without regrowth
 - Guide states (handling guide, every guide that mentions it, hub FAQ): the tail drops along built-in fracture points, keeps wiggling to distract a predator, and "does not grow back". C1's title as recorded in the handling guide reads "a lizard incapable of tail regeneration". Sources block also lists ReptiFiles tail loss (C11) and Merck traumatic injuries (C5).
 - Guide states (handling guide): the drop "is thought to be painless or close to it"; a tailless gecko ("frog butt") lives "a completely normal, healthy life". Sources block lists C1, C11, C5, C7; not confirmed which entry states it.
 - Guide states (enrichment guide): a semi-prehensile tail whose tip carries the same adhesive setae as its toes. Sources block lists More Reptiles (C20), RSPCA (C9), IAABC (C10), ReptiFiles decorations (C11), Wikipedia (C13); not confirmed which entry states it.
+- Search run 2026-11-06:
+  - C28, verbatim page read: "Our data provide support for the serial homology of adhesive tail pads with toe pads."; "Setal densities between tail and toe pads are close to each other."; tail setae are "of comparable height to toe setae"; "the highly functional C. ciliatus tails do not regenerate"; the species does "not regenerate a full tail after autotomy, nor amputation."; "Unlike most geckos, no autotomy planes are visible distal to the eighth vertebra." It does not discuss how often wild geckos lose tails.
+  - C11 (Ultimate Guide), verbatim page read: "The same "hairs" that cover their toe pads can also be found on the tip of this tail!"; "if crested geckos lose their tail, it will not grow back."
+  - C21, verbatim page read: "Crested geckos also have a prehensile tail with setae at the tip, adding extra support when hanging from tree branches"; "Crested geckos exhibit caudal autotomy and can drop their tails if in danger from a predator."; "These geckos can not re-grow their tails, which can cause them to become less agile."
+  - C6, verbatim page read: "Crested geckos are excellent climbers due to the lamellae on their toes and the tip of their tail."; "there is no regrowth of lost tails."; "nearly all the adults in the wild have lost their tails."
+  - C29, verbatim page read: "crested geckos do not regrow their tail following autotomy"; "the tail is elevated throughout the jump."
+  - C23, verbatim page read (PDF text): "Similar to other geckos, it can shed its tail as a defence mechanism (autotomy), but unlike others it lacks an ability to regenerate the tail, so care should be taken while handling."
+  - C24, verbatim page read (PDF text): "Their tails are partially prehensile, though not to the same extent as a chameleon, and they possess tail autotomy (they can drop their tails). Unlike leopard geckos, when a crestie drops their tail, it doesn’t grow back. However, they don’t store fat in their tails so it is generally not as detrimental for a crestie to drop their tail, and the majority of wild cresties end up doing so."
+  - C9, verbatim page read: "Never grasp the tail as it can be dropped, which is stressful and leads to the loss of vital fat reserves."
+  - C22, verbatim page read: "Tail loss is followed by regeneration of pointy stub."
+  - C13, verbatim page read: "The toes and the tip of the semi-prehensile tail are covered in small hairs called setae." (no citation on that sentence); "Most adults in the wild lack tails." (cites Seipp and Klemmer 1994, C39).
+  - C43 (Exo Terra), snippet only: virtually all adult specimens observed in the wild had no tail.
+  - No page found states that field studies found tail loss "largely inconsequential".
 
 1.4 Color change ("firing up")
 - Guide states (handling guide): dark parts turn darker and light parts lighter; it seems to happen when the gecko is excited; the cause is not fully understood; normal, not illness. Sources block lists C1, C11, C5, C7; not confirmed which entry states it.
 
 1.5 Activity pattern
 - Guide states (handling, tank setup, feeding guides): most active at dusk and after dark; feeds at night.
+- Search run 2026-11-06:
+  - C21, verbatim page read: "Crested geckos are typically solitary, nocturnal animals."; "Crested geckos are omnivores, feeding primarily on insects, nectar, and fruits, hunting and feeding at night."
+  - C23, verbatim page read (PDF text): "only becomes active at night."; and under lighting, "Despite being crepuscular species (active at dawn and dusk), crested geckos appear to benefit from UV-b light."
+  - C24, verbatim page read (PDF text): "Cresties are crepuscular (active at dawn and dusk), and spend most of their day in shrubs or in trees."
+  - C9, verbatim page read: "Cresties are active at night, have the ability to cling to branches and are good at jumping."
 
 ## 2. Wild habitat
 
