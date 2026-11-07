@@ -38,59 +38,70 @@ regenerating an existing frame, and start here when writing a new one.
 Props carry no lettering. A generator asked for a scale, a maze or a chart will
 invent garbage text on it, and the site's own watermark goes on afterwards.
 
-## Home page hero, 2026-11-06
+## Home page hero, 2026-11-07
 
-One frame for the home page hero (`src/assets/hero-*`, four sizes up to 1600x1067)
-and the share card (`public/assets/og-default.jpg`, 1200x630, cropped from the
-same frame). Generate at 3:2, as large as the tool allows, and never enlarge:
-if it arrives under 1600 wide, the largest size is installed at what arrived.
+One frame for the home page hero (`src/assets/hero-*`) and the share card
+(`public/assets/og-default.jpg`, 1200x630, cropped from the top of the same
+frame). Installed on the working branch 2026-11-07 for the owner's review, not
+yet on main.
 
-Why it changes: the headline is "Wild facts. Pet care." and the current frame
-shows only Australian wildlife and one pet, so a visitor who keeps a cat, a
-betta or a hamster sees nothing for them. It also puts a rainbow lorikeet, a
-coastal and eastern forest bird, out on the red desert with a bearded dragon,
-a habitat mix-up on the first picture of a site whose pitch is that it looked
-things up. The new frame holds both halves of the headline: the pets you live
-with indoors, the wild animal you will never meet outside the window.
+Why it changed: the old frame (a bearded dragon, a rainbow lorikeet and a red
+kangaroo on red desert) showed one pet against a headline that promises "Wild
+facts. Pet care.", and rainbow lorikeets do not live out on the red desert. Two
+photographic room scenes and a split cat and fox pounce were tried and turned
+down as not saying BeastlyFacts. The brand look is the logo's: the bearded
+dragon in the orange knit scarf, hand-illustrated, warm cream with autumn
+oranges and browns.
 
-Layout: the text card sits over the lower middle of the frame on phones and
-over the centre on desktop (`object-top` crop). Keep the subjects in the left
-and right thirds and the upper two thirds, and leave the centre and the bottom
-third calm (wall, floor, rug), with nothing there that the card would cut in
-half.
+**Chosen prompt (owner's final frame came from a revision of this in Firefly,
+partner model GPT Image 2.5 Sunburst):**
 
-**`src/assets/hero-*` and `public/assets/og-default.jpg`**
+A warm, hand-illustrated storybook scene in the style of a detailed ink and
+watercolor illustration, cream background tones with a palette of burnt orange,
+rust, golden yellow and warm brown. A bearded dragon wearing an orange knit
+scarf sits up proudly on a sturdy branch in the upper left, leaning forward
+with curiosity, its scarf and a swirl of autumn leaves streaming in the breeze:
+broad triangular head, spiny beard under the jaw, soft spikes along its sides,
+tan scales. Not an iguana. Sweeping in a wide, lively arc from the dragon across
+the top of the frame to the right are animals in motion, drawn in the same
+style: a red fox mid-leap, a barn owl gliding with wings spread, a white-tailed
+deer bounding, a green budgie flying, a rabbit hopping, and a tabby cat
+stretching up after a falling leaf. Everyone moves in the same direction, like
+a parade of animals following the dragon. Soft golden light, lots of movement
+in fur, feathers and leaves. The center and lower third are open cream space
+with a few drifting leaves and nothing important in them. 3:2. No people, no
+text, no lettering, no logo, no signs, no watermark.
+**Check:** an adult deer with antlers has no fawn spots (one early frame had
+both), the fox has black legs and a white tail tip, the dragon has the spiny
+beard, and the center is open for the text card.
 
-A bright, lived-in living room in warm late-morning daylight, seen at eye level
-from across the room. On the left third, a large front-opening glass terrarium
-on a low wooden stand, set up correctly: a long UVB tube and a basking lamp in
-a fixture on the mesh top, a flat stone basking platform under the lamp, a
-cork hide, a shallow water dish and a natural soil floor. On the platform an
-adult bearded dragon basks with its head raised: tan and orange, a broad
-triangular head, a spiny beard under the jaw, rows of soft spikes along the
-sides of the body. Not an iguana, not a frilled lizard, no dewlap. On the right
-third, a tall window with a deep sill; on the sill a gray tabby cat lies curled
-and relaxed, facing out, nowhere near the terrarium. Through the window, a
-green meadow edged by woodland, and at the meadow edge a red fox stands alert
-and looking toward the house: rust-red coat, black lower legs, a white chest
-and a white tip on a full tail. Not a dog, not a coyote. The centre of the room
-is quiet: a plain warm wall, a trailing houseplant, a soft rug on a wooden
-floor. Natural colour, gentle contrast, photographic. 35mm, deep focus so both
-the dragon and the fox are sharp. 3:2.
-No people, no hands, no text, no labels or lettering on the terrarium or
-anything else, no screens, no watermark, no heat rock, no sand, no second
-reptile, no animal touching another, no cat on or near the terrarium.
-**Check:** the dragon has the spiny beard and triangular head (not an iguana),
-the fox has black legs and a white tail tip (not a dog), the terrarium shows a
-UVB tube and a basking lamp on top, and the centre and bottom third are calm
-enough to sit under the text card.
+## Seasonal hero swaps (later), 2026-11-07
 
-Install, after the owner approves the frame: re-encode through mozjpeg at
-quality 80 into hero-400, -800, -1200 and -1600 (jpg, webp, avif), crop
-og-default.jpg to 1200x630 from the same frame, update the hero `alt` in
-`src/components/home/HeroSection.jsx` and the `og:image:alt` in
-`src/pages/Home.jsx`, check the `lg:object-top` crop note in HeroSection still
-holds, and record the tool and model in IMAGE_CREDITS.md.
+The autumn hero matches the logo, but it will look like a leftover by spring.
+Winter and spring versions with the same cast and layout were tried on
+2026-11-07; the owner likes the concept and may want a divergent palette when
+the time comes (for example a blue-green), not just the autumn colors moved to
+another season. Not scheduled. Keep the same layout rule as the autumn frame:
+the cast arcs across the top, the center and lower third stay open for the
+text card.
+
+Checks from the first tries, for whichever version is picked:
+- **Deer.** An adult deer has no spots in any season; spots mean a fawn. Two
+  spring tries and one winter try drew a spotted adult. Winter keeps the buck's
+  antlers (bucks carry them into midwinter); spring uses a doe with no antlers,
+  since a spring buck would have short velvet antlers that generators get wrong.
+- **No clothes on the wild animals.** One winter try put the fox in a jacket.
+  The dragon's scarf (and a beanie in winter) is the brand; nothing else wears
+  anything.
+- Fox: black legs and a white tail tip. Barn owl: heart-shaped face. Budgie:
+  yellow face, barred wings.
+
+The winter and spring prompts are in the session that wrote them and repeat
+the autumn prompt with: winter, snow-dusted bare oak and pine sprigs, drifting
+snowflakes, the fox in its thick winter coat, the buck with antlers, a
+matching knit beanie on the dragon; spring, a flowering cherry branch,
+drifting blossom petals and new leaves, a doe with no antlers, small
+wildflowers in the corners.
 
 ## How these handle illness
 

@@ -36,7 +36,7 @@ import hero1600Jpg from '@/assets/hero-1600.jpg';
 // stops change at lg and an inline style cannot carry a media query. See the
 // comment there for why the desktop fade starts later than the phone one.
 
-const srcSet = (a, b, c, d) => `${a} 400w, ${b} 800w, ${c} 1200w, ${d} 1600w`;
+const srcSet = (a, b, c, d) => `${a} 400w, ${b} 800w, ${c} 1200w, ${d} 1536w`;
 const HERO_AVIF = srcSet(hero400Avif, hero800Avif, hero1200Avif, hero1600Avif);
 const HERO_WEBP = srcSet(hero400Webp, hero800Webp, hero1200Webp, hero1600Webp);
 const HERO_JPG = srcSet(hero400Jpg, hero800Jpg, hero1200Jpg, hero1600Jpg);
@@ -94,12 +94,15 @@ export default function HeroSection({ onOpenFact }) {
   };
 
   return (
-   <section className="relative flex flex-col items-center px-0 pt-0 pb-10 lg:pt-[400px]">
+   <section className="relative flex flex-col items-center px-0 pt-0 pb-10 lg:pt-[max(400px,30vw)]">
         {/* ==================== HERO IMAGE ====================
             Full bleed, square corners, running straight into the navbar. The
-            source is 3:2 and the box is 4/3 on phones, 16/10 above that, so the
-            crop is 11% off the sides at worst and 6% off top and bottom: the
-            picture is essentially whole at every width.
+            source is 3:2 and the box is 3:2 on phones (the whole frame, so the cat
+            at the right edge is never cut), 16/10 on tablets, and 3:2 again
+            from lg, sized by the width rather than the section's height: a
+            full-height cover crop cut the cat and the dragon's scarf off the
+            sides at 1440 (owner, 2026-11-07). The section's lg:pt grows with
+            the width so the card stays under the animals.
             The old treatment was an absolutely positioned min-h-screen
             background with object-cover, which on a 412x823 phone threw away
             67% of the image width. The bearded dragon in the previous hero was
@@ -119,7 +122,7 @@ export default function HeroSection({ onOpenFact }) {
             move with the width. The photograph is unchanged and still fills
             whatever room it is given, it just does it behind the content
             instead of in front of it in the layout. */}
-        <div className="relative w-full aspect-[4/3] sm:aspect-[16/10] overflow-hidden lg:absolute lg:inset-0 lg:aspect-auto lg:h-full">
+        <div className="relative w-full aspect-[3/2] sm:aspect-[16/10] overflow-hidden lg:absolute lg:inset-x-0 lg:top-0 lg:aspect-[3/2]">
           <picture>
             {/* AVIF first: <picture> takes the first source whose type the
                 browser accepts, so order is the negotiation. The preload in
@@ -144,7 +147,7 @@ export default function HeroSection({ onOpenFact }) {
                 this vertical anchor does nothing. */}
             <img
               src={hero1200Jpg}
-              alt="A bearded dragon basking on red desert earth, with a rainbow lorikeet perched on a flowering branch and a red kangaroo standing in the spinifex behind"
+              alt="An illustrated bearded dragon in an orange knit scarf on an autumn oak branch, leading a leaping red fox, a barn owl, a buck, a budgie, a rabbit and a tabby cat through swirling leaves"
               className="h-full w-full object-cover lg:object-top hero-fade"
               fetchpriority="high"
               width="1200"
@@ -179,7 +182,7 @@ export default function HeroSection({ onOpenFact }) {
             section's padding places this instead. Leaving -17vw there would
             drag the card further up the wider the window got, which is the same
             drift running the other way. */}
-        <div className="relative z-[5] w-full max-w-[760px] -mt-[20vw] sm:-mt-[17vw] lg:mt-0 px-3 sm:px-5 flex flex-col items-center">
+        <div className="relative z-[5] w-full max-w-[760px] -mt-[26vw] sm:-mt-[17vw] lg:mt-0 px-3 sm:px-5 flex flex-col items-center">
           <div className="w-full flex flex-col items-center">
           {/* Deliberately NOT animated in, same reasoning as the daily fact
               card below. framer-motion does not emit its styles into the
@@ -197,11 +200,11 @@ export default function HeroSection({ onOpenFact }) {
             </div>
 
             <h1 className="font-display font-bold leading-[1.15] mb-4 text-[clamp(1.9rem,4.6vw,3.3rem)]">
-              <span className="text-foreground">Wild facts. Pet care.</span>
+              <span className="text-foreground">Wild&nbsp;facts. Pet&nbsp;care.</span>
               <br />
-              <span className="text-secondary">We looked it up.</span>
+              <span className="text-secondary">We looked it&nbsp;up.</span>
               <br />
-              <span className="text-foreground">So you don&rsquo;t have to.</span>
+              <span className="text-foreground">So you don&rsquo;t&nbsp;have&nbsp;to.</span>
             </h1>
 
            <p className="text-base sm:text-lg text-foreground/80 font-body max-w-lg mx-auto mb-6 text-center leading-relaxed">
