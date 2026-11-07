@@ -35,6 +35,14 @@ from a guide without the owner's say.
   110506 (PubMed 32950659). Juveniles under low-level UVB had higher plasma
   25(OH)D3 than controls; growth did not differ.
 
+## 2026-11-06: cost guide T5 sentence
+
+The T5 HO wattage-to-length sentence (24, 39 and 54 W; copied from the bearded
+dragon guide) contradicted the 14 W, 24 inch ShadeDweller the guide sells, and
+its only source was the bare Zoo Med homepage. Both cut (owner). The cost guide
+now cites 2 sources, under the 3 to 5 target: PetMD and the Cryptosporidium
+study. Not padded; flagged for the next source pass.
+
 ## Kept without a source (owner review)
 
 - Cost guide, after The Vet Desk and Reptile Direct came out (2026-11-06):
