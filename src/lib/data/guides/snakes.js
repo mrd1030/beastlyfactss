@@ -580,7 +580,7 @@ export const snakeGuides = fillCostTokens([
     routes: [
       { slug: "milk-snake-cost-guide", line: "$70 to $500 by subspecies and morph, the %%setup:milk-snake%% setup, and why the real commitment here is time rather than money." },
       { slug: "milk-snake-tank-setup-guide", line: "The 48x24x24 minimum, the halogen bulb over a basking stone, the moisture balance, feeding, and the no-cohabitation rule." },
-      { slug: "milk-snake-feeding-guide", line: "Prey no wider than the head or 10% of its weight, every 5 to 7 days as a hatchling and 10 to 14 as an adult, and why hatchlings eat snakes." },
+      { slug: "milk-snake-feeding-guide", line: "Prey no wider than the head or 10% of its weight, every 5 to 7 days as a hatchling and 10 to 14 as an adult, and why milk snakes eat snakes." },
       { slug: "milk-snake-handling-guide", line: "A muskier, flightier temperament than a corn snake's, the cannibalism rule, and where the red-touches-yellow rhyme stops working." },
       { slug: "milk-snake-health-issues-guide", line: "Respiratory infection, scale rot, mites, retained shed, and the one dial, moisture, that sits behind three of them." },
       { slug: "milk-snake-enrichment-guide", line: "Why a snake that hides constantly needs more cover rather than a smaller enclosure, and how to clutter one properly." },
