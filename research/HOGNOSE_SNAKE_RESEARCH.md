@@ -215,14 +215,35 @@ Order follows the existing blocks. Entries marked (existing, not re-opened) were
 - Tank: the humid hide and the "diurnal so UVB" argument beyond ReptiFiles and Montana; halogen versus heat mat preference (not searched); full change interval is sourced.
 - "Morph is the identical animal underneath" and the setup/cost totals.
 
+## Applied 2026-11-07
+
+Owner-approved fixes from the source check above, applied the same day. No web page was opened for this pass; every change rests on the quotes in the source check.
+
+- Feeding interval: hatchlings and juveniles every 4 to 5 days, adults of both sexes about once a week (Chicago Exotics, ReptiFiles). No source above supports a separate 5 to 7 day hatchling figure (only the Reptile Centre retailer, "fed weekly"), so hatchlings fold into the juvenile 4 to 5 days. The two-week adult default and the 10 to 14 / 14 to 21 day female lines are gone from the feeding guide body and FAQ. The cost guide's "fed infrequently" framing (body and FAQ) now says an adult eats about once a week. The hub carries no interval; the encyclopedia carries none.
+- Prey size: no wider than the snake's head (ReptiFiles, PetPlace), in the feeding guide's FAQ, body and closing. Gram bands kept as written.
+- Mice: the staple, rotated with other prey rather than fed alone, since a mice-only diet is calorie-dense (ReptiFiles). Rats, gerbils, hamsters, multimammate mice and chicks kept as written.
+- Substrate depth: 3 to 5 inches, 4 to 5 for a large adult female (ReptiFiles), in the tank setup body, FAQ, seoDescription (151 characters) and the hub row. The enrichment guide and the cost sheet carry no depth figure.
+- Floor space: the "one square foot per foot of snake" rule of thumb is cut from the tank setup body and FAQ and the hub row; each now leads with the 20 and 40 gallon minimums.
+- Bite first aid (handling): get the snake off promptly, since symptoms track hold time (Damm); cool water over its face usually makes it let go; yanking can tear the skin (ReptiFiles).
+- Damm results: "None caused systemic envenoming" replaced with two reports of lasting effects, one of them weakness for more than a year (Section 3.3). The handling FAQ on danger (Weinstein and Keyler case, "no systemic effects") stays, and its hub copy with it.
+- Lifespan: 10 to 20 years in captivity (Chicago Exotics; ADW 15 to 20 in human care) in the cost guide body and FAQ and the hub row. The encyclopedia line is ADW's and stays.
+- Sources blocks: cost 4 (ReptiFiles combined, ADW, Chicago Exotics, Zoo Med combined; Big Apple Herp out), handling 4 (Weinstein and Keyler, Damm, ReptiFiles combined, Montana Field Guide; Furry Critter and Wildlife Nomads out), health 5 (Chicago Exotics now linked, ReptiFiles, Divers, Merck combined, PetPlace), tank setup 4 (ReptiFiles, Chicago Exotics, Merck husbandry, Montana; Wildlife Nomads out; the proposal's Zoo Med fifth entry was marked omit, so 4, not 5), feeding 4 (Chicago Exotics, ReptiFiles, Merck combined with the existing Nutrition in Reptiles page, ADW for toads as the wild diet; Reptiles Magazine and the Reptile Centre out), enrichment 4 unchanged.
+- Logged: five entries in src/lib/data/corrections.js; the book and store changes are queued under the hognose heading in FIX_PACKAGES.md.
+- Not changed, outside the six guides and the hub: content/guides/corn-snake-vs-hognose-snake-guide.mdx (table "10-15 years typical, 15-20 reported") and content/guides/veiled-chameleon-ferret-hognose-overview.mdx ("a hognose lives 10 to 15 years in captivity") still carry the old lifespan. Owner decides.
+
 ## Kept without a source (owner review)
 
 Flagged by Fable as odd or possibly incorrect; not checked yet.
 - Cost FunFact: a morph is "the identical animal underneath".
 - Cost: UV index meter at $240 to $265 as "highly recommended".
-- Handling: "pour cool water over its face" to release a bite; FAQ 5 "sits nearer the corn snake" against the setup guide's drier, more active framing.
+- Handling: "pour cool water over its face" to release a bite (changed 2026-11-07: now "get it off promptly", with cool water as the usual release; the water advice rests on ReptiFiles alone); FAQ 5 "sits nearer the corn snake" against the setup guide's drier, more active framing.
 - Health: respiratory infection as "the most common issue in this species"; 3 to 6 month quarantine; two weeks of rest, then a quarter-size meal after regurgitation.
-- Tank setup: UVB "10 to 14 inches through a screen, 14 to 18 with no mesh" for a 5.0 tube; one square foot per foot of snake beside a 30x13 minimum for a male; full substrate change every three months; hatchlings under 6 inches in a 5 gallon.
-- Feeding: chicks as a fallback prey; "a 70 gram male may settle on a hopper or a couple of fuzzies"; mice as "the best diet" for a toad specialist.
+- Tank setup: UVB "10 to 14 inches through a screen, 14 to 18 with no mesh" for a 5.0 tube; one square foot per foot of snake beside a 30x13 minimum for a male (cut 2026-11-07); full substrate change every three months; hatchlings under 6 inches in a 5 gallon.
+- Feeding: chicks as a fallback prey; "a 70 gram male may settle on a hopper or a couple of fuzzies"; mice as "the best diet" for a toad specialist (changed 2026-11-07: the staple, rotated with other prey).
 - Enrichment: "cooler enriched side preferred more" stated as a finding in one place and as the authors' interpretation in another.
 - Hub row is 509 words, 9 over the 500 cap (check-hub-rows reports it as slack).
+- Lost a source on 2026-11-07 (Sources blocks cleaned), kept as written:
+  - Feeding: chicks, gerbils, hamsters and multimammate mice as fallbacks, and larger snakes taking smaller rats (only the Reptile Centre retailer); the gram-based hatchling prey bands and "a 70 gram male may settle on a hopper or a couple of fuzzies" (no source); chicken bone broth and commercial scent strips as scents, and the three-refusal threshold (Chicago covers tuna and amphibian only); a breeding male refusing and the run-up to brumation stopping a snake eating (not checked).
+  - Feeding (not in the guide, for the record): the longer intervals for mature females, 10 to 14 days and 14 to 21 for some large females, are cut from the guide with the two-week default; no source above states them.
+  - Handling: two weeks to settle before the first session (Furry Critter said five to seven days); session lengths (5 minutes, building to 10, up to half an hour, never past an hour); musk during death feigning and the snake rolling belly-up again when turned over (Montana covers the display and death feigning, not these two details).
+  - Cost: every morph price tier and the $50 to $200 female premium (Big Apple Herp removed, page gone), pending the owner's MorphMarket desktop check; vet, meter and running-cost prices stay unsourced as before.
