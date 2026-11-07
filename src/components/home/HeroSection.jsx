@@ -94,12 +94,15 @@ export default function HeroSection({ onOpenFact }) {
   };
 
   return (
-   <section className="relative flex flex-col items-center px-0 pt-0 pb-10 lg:pt-[400px]">
+   <section className="relative flex flex-col items-center px-0 pt-0 pb-10 lg:pt-[max(400px,30vw)]">
         {/* ==================== HERO IMAGE ====================
             Full bleed, square corners, running straight into the navbar. The
-            source is 3:2 and the box is 4/3 on phones, 16/10 above that, so the
-            crop is 11% off the sides at worst and 6% off top and bottom: the
-            picture is essentially whole at every width.
+            source is 3:2 and the box is 3:2 on phones (the whole frame, so the cat
+            at the right edge is never cut), 16/10 on tablets, and 3:2 again
+            from lg, sized by the width rather than the section's height: a
+            full-height cover crop cut the cat and the dragon's scarf off the
+            sides at 1440 (owner, 2026-11-07). The section's lg:pt grows with
+            the width so the card stays under the animals.
             The old treatment was an absolutely positioned min-h-screen
             background with object-cover, which on a 412x823 phone threw away
             67% of the image width. The bearded dragon in the previous hero was
@@ -119,7 +122,7 @@ export default function HeroSection({ onOpenFact }) {
             move with the width. The photograph is unchanged and still fills
             whatever room it is given, it just does it behind the content
             instead of in front of it in the layout. */}
-        <div className="relative w-full aspect-[3/2] sm:aspect-[16/10] overflow-hidden lg:absolute lg:inset-0 lg:aspect-auto lg:h-full">
+        <div className="relative w-full aspect-[3/2] sm:aspect-[16/10] overflow-hidden lg:absolute lg:inset-x-0 lg:top-0 lg:aspect-[3/2]">
           <picture>
             {/* AVIF first: <picture> takes the first source whose type the
                 browser accepts, so order is the negotiation. The preload in
