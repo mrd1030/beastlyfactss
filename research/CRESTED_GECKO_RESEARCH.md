@@ -159,11 +159,60 @@ Search run 2026-11-06, reads of the existing rows:
 - Guide states (cost guide FunFact, hub funFact): considered extinct "for much of the twentieth century" until a 1994 field expedition rediscovered them in New Caledonia; the cost FunFact says "after a tropical storm that year", the hub funFact says "during a tropical storm". The cost FunFact adds that "Every crested gecko in the pet trade today descends from that rediscovered population." Cost Sources block lists C11, C16, C14, C12; none plausibly states it. No recorded source (see Gaps).
 - Guide states (handling and enrichment FunFacts): most adult crested geckos found in the wild are already tailless; the handling FunFact adds that field studies since 1994 found tail loss "common and largely inconsequential" for breeding, climbing and health. No field study is in either Sources block. Not confirmed which entry states it (see Gaps).
 - FIX_PACKAGES.md (open, set up 2026-10-04, still open 2026-10-15), Glossary: IUCN (`pages_07.html:40`) and VCA (`:58`) come out of the book's main glossary; CITES (`:12`) moves to the law page mini glossary. Filed here because IUCN and CITES are the status terms; the VCA part belongs with the health pages.
+- Search run 2026-11-06, range and populations:
+  - C21, verbatim page read: "Crested geckos are endemic to the islands of Grand Terre (Provence Sud), and the Isle of Pines, New Caledonia."; "There are three distinct and disjunct populations of crested geckos: one on the Isle of Pines, and two on Grand Terre."; "There are unconfirmed reports of these geckos from Kôtomo Island, New Caledonia."
+  - C22, verbatim page read: "New Caledonia, southern Grande Terre, Isle of Pines and Kotomo (island)".
+  - C11 (Ultimate Guide), verbatim page read: "They are most common on the islands Grande Terre and Isle of Pines."
+  - C13, verbatim page read: "There are three disjunct populations: one on the Isle of Pines and surrounding islets" (cites C21).
+  - Snippet only: C36 (Endemia) lists Rivière Bleue and the Pourina valley, Mt Koghis, Mt Ouin and the Isle of Pines, with the species Vulnerable and the little fire ant the main threat; a Wikipedia mirror places one Grande Terre population around the Blue River park and the other just south of Mount Dzumac; a Plazi treatment separates the Belep populations as C. belepensis.
+- Search run 2026-11-06, habitat and daytime resting place:
+  - C21, verbatim page read: "This area is tropical rainforest with precipitation levels potentially as high as 400 cm per year."; "They are most typically found at elevations from 150-1000 meters above sea level."; "Crested geckos spend daytime hours resting in thick vegetation near the forest floor, where it is cooler and less sunny."; "At night they spend much of their time foraging in shrubs and lower portions of the canopy."; "rarely traveling much higher than 3 m from the forest floor."
+  - C23, verbatim page read (PDF text): "In its natural environment, it can be found resting in rainforests, sleeping in trunk hollows or leaf litter, and only becomes active at night."
+  - C6, verbatim page read: hides "simulate their natural sleep spots of hollowed out trees."
+  - C13, verbatim page read: "preferring to inhabit the lower canopy and understory of the New Caledonia rainforests" (cites Sadlier et al. 2021, IUCN Red List, and de Vosjoli et al. 2003); "will generally spend the daylight hours sleeping in secure spots in high branches" (cites Sadlier et al. 2021; de Vosjoli et al. 2003; Exo Terra 2014; Gamble et al. 2015).
+  - C22, verbatim page read: "Semi-arboreal; found in moist primary forest". C9, verbatim page read: "Crested geckos originate from hot, humid forests in New Caledonia." C27 (care guide), verbatim page read: "native to the tropical forests of New Caledonia, an island chain east of Australia." C33, verbatim page read: habitat "Forests in New Caledonia".
+- Search run 2026-11-06, jumping, thin branches and predators:
+  - C21, verbatim page read: "They can jump short distances, from branch to branch"; "One of the main predators of crested geckos are little fire ants"; "Other predators include dogs, cats, rats, snakes, and other geckos, many of which are introduced species as well." Rhacodactylus leachianus appears only as "Henkel's giant gecko (Rhacodactylus leachianus henkeli)" in a list; no thin-branch claim.
+  - C29, verbatim page read: "a species that commonly jumps in its natural habitat."; jumps likely happen "when foraging at night or when disturbed by a predator while it is hidden during the day."; crested geckos "may only jump to escape predation."; in nature they "would likely jump down and land on cantilevered leaves."
+  - C11 (decorations), verbatim page read: "Wild crested geckos are known to spend time among thin branches in particular." The habit helps them "evade one of their predators: the larger and heavier leachie gecko." No Latin name on the page.
+  - C22, verbatim page read: "Like to jump."
+  - C24, verbatim page read (PDF text): "One of the biggest threats to wild crested geckos is the introduced little fire ant that not only swarms the geckos in large numbers, but also competes for arthropod prey."
+  - C13, verbatim page read: "Studies show rodents and cats as the primary predation threat to the crested gecko." (no citation). Wikipedia does not mention R. leachianus or thin branches.
+- Search run 2026-11-06, the 1994 rediscovery:
+  - C11 (Ultimate Guide), verbatim page read: "until 1994, when a tropical storm revealed that populations were very much alive and well."
+  - C9, verbatim page read: "The crested gecko was once thought to be extinct in the wild until 1994 when a tropical storm uncovered a small population" "on Ile de Pins, a small island in the Pacific Ocean which is part of New Caledonia."
+  - C33, verbatim page read: "The eyelash crested gecko was thought to have been extinct after not being seen for more than a century" "when it was rediscovered in the Isle of Pines during a rainstorm in 1994."
+  - C23, verbatim page read (PDF text): "The Crested gecko originates from the islands of New Caledonia where the species was believed to be extinct until 1994 when it was subsequently rediscovered."
+  - C24, verbatim page read (PDF text): "Until 1994, crested geckos were thought to be extinct in the wild. Their population was re-discovered, and although export is no longer allowed, this species has thrived in captivity and is readily available in the US pet trade."
+  - C27 (care guide), verbatim page read: "Thought extinct until their rediscovery in 1994".
+  - C21, verbatim page read: "In 1994 this species was rediscovered by Robert Seipp and Phillippe de Vosjoli." No storm.
+  - C13, verbatim page read: "it was rediscovered in 1994 during an expedition led by German herpetologist Robert Seipp" (cites Hamper 2003 and C39). No storm.
+  - C6 dates the species to 1866 and does not mention 1994.
+  - Snippet only (C39 abstract): the species had not been recorded since Guichenot described it in 1866; the spring 1994 expedition visited islands off southern New Caledonia.
+  - Storm timing: no page says "after" a storm. C11 and C9 say a storm "revealed" or "uncovered" the population; C33 says "during a rainstorm".
+  - No page found states that every crested gecko in the pet trade descends from the 1994 population.
+- Search run 2026-11-06, hot-season temperatures:
+  - C31, verbatim page read (PDF text): Goro, Ancienne Pépinière, lat 22°16'09"S, lon 166°58'03"E, 298 m, in the far south of Grande Terre (the gecko's region, not a confirmed population site). Mean daily maximum, 2010 to 2020: January 27 °C, February 27.2 °C, March 26.7 °C, December 26.1 °C (about 79 to 81°F). Mean daily minimum: January 21.2 °C, February 22.1 °C. Highest recorded: 32.1 °C (01-2020). Days with a maximum of 30 °C or more: 1.8 in February on average, 3.6 a year.
+  - C21, verbatim page read: "High and low temperatures can range from 11.1-27.8°C, though temperatures typically range from 22.2-23.9°C."
+  - C32, verbatim page read: Nouméa, coastal, 69 m, 1991 to 2020 mean daily maximum January 29.5 °C, February 29.9 °C, March 29.0 °C; record 36.8 °C (January 2024). Outside the forest range; recorded for context only.
+  - No page found puts the gecko's range at 85°F in the hot season.
 
 ## 3. Lifespan
 
 - Guide states (cost guide body and FAQ, hub "Lifespan" row copied from it): "15 to 20 years in captivity, with the earliest known captive individuals living into their 30s." The cost guide's seoDescription and description say "15-20+ year lifespan". Cost Sources block lists C11, C16, C14, C12; not confirmed which entry states it. The "into their 30s" has no recorded source (see Gaps).
 - Archive (FIX_PLAN_COMPLETED_2026-09-25.md): the encyclopedia's "the widely quoted 10-20 years is a captive range" contradicted the hub and cost guide's "15 to 20 years in captivity"; marked done in that batch ("Pick one captive range").
+- Search run 2026-11-06:
+  - C23, verbatim page read (PDF text): "Geckos may live 15-20 years if looked after correctly."
+  - C24, verbatim page read (PDF text): Lifespan "15-20 years."
+  - C11 (Ultimate Guide), verbatim page read: "with a 15-20 year lifespan."
+  - C27 (care guide), verbatim page read: "15-20+ years in captivity". C27 (FAQ), verbatim page read: "Crested Geckos can live 15-20 years with proper care."
+  - C9, verbatim page read: geckos "could live up to 15 to 20 years in captivity".
+  - C3, verbatim page read: 15 to 20 years with proper care (the page writes the range with a dash).
+  - C21, verbatim page read: "Crested geckos are thought to be able to live for over 20 years in captivity, though there is some uncertainty"; "No information regarding lifespan in the wild is currently available."; range lifespan in captivity "10 to 20 years".
+  - C6, verbatim page read: "Cresties live around 10-20 years."
+  - C22, verbatim page read: ">9 years (probably 15+ years)". C33, verbatim page read: "Up to 20 years".
+  - C13, verbatim page read: kept for 15 to 20 years or more (the page writes the range with a dash; it cites a hobby page and C21).
+  - No page found states captive crested geckos living into their 30s. A search found no AnAge entry or dated record.
 
 ## 4. Enclosure, heat, humidity and lighting
 
@@ -172,6 +221,14 @@ Search run 2026-11-06, reads of the existing rows:
 - Guide states (tank setup guide): hatchlings under about 12 to 13 grams go in a grow-out enclosure; 12x12x12 inches is the standard hatchling size; move up once past that weight and feeding reliably. The cost guide says a hatchling can start in "a basic faunarium for around $20". Archive (FIX_PLAN_COMPLETED_2026-09-25.md): grow-out size for juveniles was a "truly missing" item, done in that batch.
 - Guide states (tank setup and handling guides): house singly; never two males; do not group hatchlings (tail biting). The cost guide says "Two males can never share, and even two females need at least double the 18x18x24 inch single-adult minimum, about 15,500 cubic inches". The cost guide allows two females in double space; the tank setup and handling guides say singly (see Gaps).
 - FIX_PACKAGES.md (open), Book: `pages_02.html:44` pair space reads "double the space of an 18×18×36 in" enclosure. Sweep (2026-10-05) logged it. Settled 2026-10-15 (owner: the tank setup guide wins): the site cost guide now says double the 18x18x24 single-adult minimum; the book follows on its next edit. Archive (CONSISTENCY_SWEEP_COMPLETED_2026-10-15.md) records the same item, closed on the site 2026-10-15.
+- Search run 2026-11-06:
+  - C11 (Enclosure Size and Cohabitation), verbatim page read: "Juveniles and adults (>12g)" are listed at "18″L x 18″W x 36″H."; "height is better than width or depth."; "If you want to house two females together, you will need an enclosure that can provide at least 2x the volume of an 18x18x36 enclosure." The page puts an 18x18x36 at 11,664 cubic inches and asks for "at least 23,000 cubic inches" for two. "Hatchlings (<12g)" are listed at "12″L x 12″W x 12″H." "In almost every species, males housed together will fight and injure/kill one another."; "Please don't cohab a male and female together unless you're trying to breed them."; "Look out for tail nipping, crest biting, weight loss, and unusual behavior."; "separate them immediately!"
+  - C24, verbatim page read (PDF text): "Adult crested geckos can be maintained in a 20-30 gallon terrarium, or an 18’’x18’’x24’’ (LxWxH). Given that this species is arboreal, it is beneficial for them to have more height than length or width. Young cresties under 12g can be housed in small 5 gallon terrariums (8’’x8’’x12’’) but they must be upgraded as they grow."; "Reptiles are not stressed by too much space, but by too much exposure."
+  - C23, verbatim page read (PDF text): "We recommend a minimum vivarium size of 45x45x60cm."; "In general the happiest lizard is the solitary lizard."
+  - C3, verbatim page read: "A single adult crested gecko needs a tank that's 20 gallons or larger"; "Do not house more than one male crested gecko in the same habitat, as they are territorial and will fight."
+  - C27 (FAQ), verbatim page read: "Some people may say keeping females together is fine, but it is not worth the risk for no benefit."; "Male Crested Geckos are territorial and will fight one another if housed together."
+  - C9, verbatim page read: "It is best to keep these geckos singly and you must not keep males with others permanently."; "You might be able to keep females together, providing there are enough basking, hiding, and eating areas" "for each individual."
+  - C27 (not eating page), verbatim page read: "Geckos can become stressed or overwhelmed in enclosures that are too large."; "juveniles may struggle to find food in such a large space."
 
 4.2 Temperatures
 - Guide states (tank setup guide table, hub "Temperature" row): ambient 72 to 78°F; warm area (top) up to about 80°F; cool area (bottom) 72 to 75°F; hard maximum 85°F anywhere. Sources block lists C11 (temperatures and humidity page), C3, C6, C8, C2; not confirmed which entry states which.
@@ -180,6 +237,14 @@ Search run 2026-11-06, reads of the existing rows:
 - Hub "Power outage" row (source: reptile-emergency-plan-guide, outside the six): "65 to 72°F is the normal night low. Sustained below 72°F, day or night, causes lethargy and appetite loss". None of the six guides gives a night low; the tank setup guide's cool-area floor is 72°F (see Gaps).
 - FIX_PACKAGES.md (open), Book: `pages_02.html` temperature table "Floor, the cool area" reads 70 to 75°F. The site setup guide moved the floor to 72 to 75°F on 2026-10-15, since its own text puts lethargy at or below about 72°F. Match on the next edit. Archive (CONSISTENCY_SWEEP_COMPLETED_2026-10-15.md): the same item, closed on the site 2026-10-15.
 - Archive (FIX_PLAN_COMPLETED_2026-09-25.md): the tank setup basking row once read "82-85°F at the surface... (some sources: 72-75°F to be safe)"; marked done ("State one target"). The guide now has no basking row.
+- Search run 2026-11-06:
+  - C22, verbatim page read: "Thrive in temperatures ranging from 70-85°F, but never more than 85°F." The page gives a preferred range of 72 to 78°F and a basking site of 78 to 84°F.
+  - C23, verbatim page read (PDF text): "Reptiles depend on external heat sources to regulate their body temperature, so supplementary heating is required to create a temperature range."; "providing a basking temperature of ~28°C"; "Heat sources must be attached to a thermostat and measured with a digital maximum/minimum thermometer to ensure the tank does not overheat. The cool end should be maintained at ~25°C."; set "so that the overnight temperature does not drop below ~20°C."
+  - C24, verbatim page read (PDF text): "Crested geckos need a basking spot of 80-85F, a warm ambient of 77-80F, and a cool ambient of 70-75F. Temperature should not rise over 85, as this can cause heat stress. Any light emitting sources should be turned off at night and temperatures can drop to the mid 60s."; "Ambient temperatures are best measured with digital thermometers (one on the warm end and one on the cool end), as analog thermometers are often inaccurate."
+  - C3, verbatim page read: warm end around 72 to 75 F and cool end 68 to 75 F (written as dash ranges); "should never be exposed to temperatures over 80 F for extended periods".
+  - C9, verbatim page read: "The coolest part of the vivarium should be 20 to 24oC and the temperature can safely drop to 18 to 20oC at night." Basking zone 26 to 28°C.
+  - C27 (FAQ), verbatim page read: "Ambient temperatures over low 80ºF can actually kill a Crested Gecko."
+  - C27 (not eating page), verbatim page read: "Geckos may eat less if they are too cold or stressed by excessive heat."
 
 4.3 Heat equipment and thermometers
 - Guide states (cost guide FAQ and body): no heat needed if the room stays between about 72 and 78°F; otherwise a 25 to 40 watt bulb and dome, $20 to $40, on a thermostat; "if you use a bulb, the thermostat is not optional"; "a $15 to $25 digital thermometer belongs in the enclosure as a safety check" either way.
@@ -200,6 +265,12 @@ Search run 2026-11-06, reads of the existing rows:
 - Guide states (health guide): retained shed is "almost always a humidity problem"; chronically high humidity with poor hygiene causes skin and scale issues; respiratory infection from an enclosure too cold or too wet.
 - FIX_PACKAGES.md (open, set up 2026-10-04), Gear: the fogger is left unlinked as the "or" alternative to the spray bottle (cost guide setup row). The cost sheet row reads "[Fine misting bottle], or a fogger" ($10 to $40).
 - Archive (BEEF_UP_PLAN_COMPLETED_2026-09-22.md): the crested gecko humidity guide (outside the six) went from 275 to 752 words.
+- Search run 2026-11-06:
+  - C9, verbatim page read: "The normal level of humidity should be 40-50%," with temporary boosts up to 80% by misting.
+  - C23, verbatim page read (PDF text): "Humidity should be checked with a hygrometer and kept between 50-70%, this can be achieved by spraying at regular intervals or by using a suitable substrate which maintains moisture."
+  - C24, verbatim page read (PDF text): "Crested geckos need an ambient humidity of 50-80%."; "Stagnant air and poor ventilation can lead to molding and respiratory infections. It is natural for even tropical reptiles to have humidity dips during the day, and spikes at night."
+  - C3, verbatim page read: "The ideal humidity range for a crested gecko's habitat is 70 to 80%."
+  - C27 (not eating page), verbatim page read: "Constant high or low humidity can cause stress, respiratory issues, or dehydration."
 
 4.6 UVB and lighting
 - Baines et al. 2016 (C2), guide states (tank setup guide, FAQ and hub "UVB" row): a UVI of around 0.6 to 1.4 at the basking area.
@@ -209,18 +280,36 @@ Search run 2026-11-06, reads of the existing rows:
 - Guide states (cost guide): "A T5 tube's wattage is not its length: a 24-watt tube is about 22 inches long, a 39-watt tube about 34 inches and a 54-watt tube about 46 inches, so go by the length in inches when you match it to two-thirds of the enclosure." Its only plausible source is the bare Zoo Med homepage (C12). The leopard gecko cost guide's matching T5 HO wattage sentence was cut with its bare Zoo Med homepage (owner, 2026-11-06, LEOPARD_GECKO_RESEARCH.md section 4.6). Not acted on here.
 - Cost sheet: "Low-output UVB hood with a [5.0 (5%) T5 HO tube], about two-thirds the enclosure length". Hub buy list: "Low-output 12-inch T5 UVB fixture". On an 18-inch-wide enclosure two-thirds is 12 inches, so the two agree for the minimum enclosure only.
 - Guide states (cost guide monthly table and FAQ): "UVB tube replacement, two a year, averaged", about $5 a month. The tank setup guide gives no replacement interval. Owner ruling (2026-10-05, CONSISTENCY_SWEEP_COMPLETED_2026-10-15.md): "UVB tubes are replaced every 6 to 12 months on the maker's schedule." See the Sweep log, 2026-11-06.
+- Search run 2026-11-06:
+  - C26, verbatim page read: "The best way to monitor output is with the UV Index Meter (Solarmeter® 6.5 or 6.5R)"; "Owners of a UV Index Meter (Solarmeter® 6.5 or 6.5R) can simply use meter readings"; "Although meters are expensive up front, they can save money in the long run". The page does not mention UV indicator cards.
+  - C23, verbatim page read (PDF text): "for crested geckos a lamp with a low output (e.g. 6%) should be used to mimic the low level sunlight they would be exposed to in their wild environment."; "Lamps should be kept on for ~ 12 hours per day"; "All lamps should be changed at least as frequently as manufacturer’s instructions or checked regularly for their UV output."
+  - C24, verbatim page read (PDF text): "Like all lizards, crested geckos require UVB light to synthesize vitamin D3 in their skin."; "UVB fixtures should be roughly as long as half your reptile’s enclosure length."; "UVB cannot penetrate glass"; "Replace UVB bulbs every 6 months, as they can continue to give off light even when not producing UVB."; "red or black nightlights should not be used as they can disrupt normal day/night cycles."
+  - C11 (MBD page), verbatim page read: "providing a 5% UVB bulb, and dusting all insects with calcium powder."
+  - No page found states that UV cards do not measure UVB.
 
 4.7 Substrate
 - Guide states (tank setup guide, hub "Floor" row): paper towel for hatchlings and quarantine; coconut fiber, sphagnum or a bioactive soil mix for adults, at least 2 inches deep; spot-clean daily; full change monthly (simple) or every 3 to 4 months (bioactive).
 - Guide states (health guide): impaction usually from loose substrate "(sand or bark)"; solid substrate (paper towel or tile) for young geckos.
 - Guide states (handling guide): swap loose substrate for paper towel until a tail stump has sealed.
+- Search run 2026-11-06:
+  - C24, verbatim page read (PDF text): "At least 2’’ of substrate should be provided to help hold humidity. Geckos under 12g are better off on paper towels, as they are more prone to substrate impactions."; "Avoid CalciSand, VitaSand, crushed walnut, gravel, and corncob as these substrates carry a much higher risk of impaction."
+  - C23, verbatim page read (PDF text): "Care should be taken not to feed your lizard directly on the substrate to avoid accidental ingestion and blockages (especially with wood chip or sand based substrates)."
+  - C3, verbatim page read: substrate "can lead to a fatal gastrointestinal obstruction if consumed."
 
 4.8 Furnishings
 - Guide states (tank setup guide): branches, vines and cork bark at multiple heights; foliage; a feeding ledge ("crested geckos eat arboreally in the wild"); a humid hide lined with damp sphagnum; a shallow water dish, with most hydration from licking misted droplets.
+- Search run 2026-11-06:
+  - C11 (decorations), verbatim page read: "Given that crested geckos are arboreal (tree-dwelling), climbing opportunities are especially important."; decor options "cork bark/tubes," "birdhouse hides," "magnetic ledges"; "Crested geckos will use the foliage in their enclosures as makeshift hides, often picking one or two favorite spots."; the live plant list names Guzmania lingulata and Vrisea splendens (Sword Bromeliad), "Scindapsus (Pothos)", "Sanseveria (Snake Plant)", "Asplenium (Bird's Nest fern)" and "Ficus"; philodendron is not listed; "Although they need full-spectrum 6500K lighting and specific amounts of water, they can be a great addition to your crested gecko terrarium."
+  - C24, verbatim page read (PDF text): "Plenty of branches, logs, and rocks should be provided so the gecko can climb and practice natural behaviors."; "Plants (live or fake), ground clutter, and corkwood are all other excellent options for adding enrichment and cover to a crestie’s enclosure."; "Feeding platforms, either on the ground or magnetically elevated, should be used to keep food off of substrate."; "Cresties and other arboreal lizards tend to drink droplets off of surfaces, so this is another advantage of daily misting."
+  - C6, verbatim page read: "Plants whether fake or real are essential for crested geckos to feel secure and offer enrichment as well."; "Hiding places are necessary for crested geckos to feel secure."
+  - C9, verbatim page read: "Crested geckos will typically hide during the day so provide half coconut shells or cork bark tubes for this."; "The ideal enclosure will contain tall, broad plants, creating variation in light and shade."; "Safe wood such as fruit tree or grapevine branches should be used."
+  - C23, verbatim page read (PDF text): "One hide should contain damp moss or kitchen towel to provide a humid environment for shedding."
 
 4.9 Cleaning
 - Guide states (tank setup guide): water and food dishes emptied, washed and disinfected daily; spot-clean daily; a non-bioactive enclosure fully cleaned at least weekly; bleach needs at least 10 minutes of contact before rinsing; bioactive setups skip the weekly strip-down.
 - Archive (FIX_PLAN_COMPLETED_2026-09-25.md): the book said dishes scrubbed weekly and a deep clean monthly; the site's daily dishes, weekly clean and 10-minute bleach won (crested-gecko-tank-setup-guide). The water dish schedule was a "truly missing" item in the same batch.
+- Search run 2026-11-06:
+  - C23, verbatim page read (PDF text): "The vivarium should be spot cleaned as soon as any waste appears to help prevent disease and fully cleaned once a month with a reptile safe disinfectant."; the water container "should be changed daily."
 
 ## 5. Diet and feeding
 
@@ -231,6 +320,14 @@ All "guide states" items in this section are from the feeding guide unless named
 - Guide states: about 1/2 teaspoon of mixed CGD for a juvenile, about 1 teaspoon for an adult; some keepers offer only what is cleared in about 4 hours; uneaten diet out the next morning; insects no wider than the space between the eyes (also health guide); uneaten insects out after 15 to 20 minutes.
 - Archive (STORE_CLAIMS_MAP_COMPLETED_2026-10-04.md): the book's p13 matches (1/2 tsp juvenile, 1 tsp adult; rotate 2 to 3).
 - Archive (CONSISTENCY_SWEEP_COMPLETED_2026-10-15.md): the enrichment guide's insects "once or twice a week" against the feeding guide's "about once a week at most" was closed as already fixed on 2026-10-15, with a note that the enrichment seoDescription still read "live insects once or twice a week". It still does (see Gaps).
+- Search run 2026-11-06:
+  - C11 (food page), verbatim page read: "Juveniles (0-12 months old): CGD daily, insects 1-2x/weekly"; "Adults (>12 months old): CGD every 2-3 days, insects 0-1x/weekly"; "Offer insects 1x/week for best results."; "If you notice that your gecko is getting fat on this schedule, reduce the number of feedings."; "feeder roaches should be no wider than the space between the gecko's eyes".
+  - C27 (food guide), verbatim page read: juveniles "Crested gecko diet available daily, insects 1-2x/weekly"; adults "Crested gecko diet every 2-3 days, insects 0-1x/weekly" (the page sets each age off with a dash); "Offer insects 1-2x/week for best results."
+  - C24, verbatim page read (PDF text): "A few insects no larger than the gecko’s head can also be offered 1-2x/week for additional protein and enrichment."; "Adults should be fed every other day, and juveniles (<8 months) daily."
+  - C6, verbatim page read: "Hatchlings should be fed a powdered diet every other day and appropriately sized insects once a week."; "Adults are fed powdered diet two times a week and insects two times a week."; "The number of insects offered depends on the number of insects the crested can eat in 10 minutes."; "It is never recommended to leave insects, especially crickets, unattended in the enclosure."
+  - C3, verbatim page read: insects "one to two times a week as a treat"; "about five to ten crickets or three to four worms at each feeding session"; insects "no bigger than the widest part of a crested gecko's head"; "Live, uneaten insects can injure a gecko and should not be left in their habitat."
+  - C23, verbatim page read (PDF text): "invertebrate prey such as house crickets, black crickets, dubia roaches and locusts offered once or twice per week."; live food "removed from the enclosure if not eaten within 30 minutes."
+  - No page found states the 1/2 and 1 teaspoon portions, the 4-hour window or the 15 to 20 minute removal.
 
 5.2 What they eat
 - Guide states: a complete powdered diet (CGD) is the staple, mixed to a ketchup-like consistency, supplying protein, fruit, calcium and vitamin D3; Pangea and Repashy the two most established brands; rotate 2 to 3 flavors or brands; watermelon flavor "called out as having unusually high acceptance among fussy eaters". Do not introduce insects before the gecko reliably eats CGD.
@@ -238,15 +335,42 @@ All "guide states" items in this section are from the feeding guide unless named
 - Guide states: pureed fruit as an occasional treat (banana, mango, papaya, apricot, peach, melon, berries); too much fruit can make a gecko reject CGD.
 - Guide states (feeding FAQ and body): avoid avocado, rhubarb, citrus ("acidity is thought to interfere with calcium absorption"), fireflies, wild-caught insects, onion, garlic and eggplant; raspberries are disputed (high-oxalate in some sources).
 - Guide states (health FunFact): "A crested gecko's diet powder alone can supply everything it needs nutritionally, which is unusual among reptiles." Health Sources block lists C17, C18, C3, C14, C4; not confirmed which entry states it.
+- Search run 2026-11-06, the staple and insects:
+  - C11 (food page), verbatim page read: "Mix the powdered diet with water to a ketchup or smoothie consistency and offer in a biodegradable condiment cup."; "even with a good crested gecko diet, crested geckos still need bugs."; "small hornworms (captive only; wild are toxic!)"; "Waxworms can be offered occasionally as treats, especially for thin geckos."; "Avoid mealworms and superworms."; "These are known to be potentially difficult to digest for cresties, leading to impaction in some cases." Black soldier fly larvae are listed among good feeders.
+  - C11 (feeder chart), snippet only: hornworms 85% moisture, 10% protein, 10% fat, marked "DO NOT FEED WILD-CAUGHT (TOXIC)"; wax worms 61% moisture, 14% protein, 22% fat, marked "High fat; treat only." The page loaded but its table is an image. Its text, verbatim page read: "This data assumes that each feeder is properly gutloaded and healthy,"; the data "has been averaged from the sources of nutritional information that I've found for each type."
+  - C30, verbatim page read (PDF text), Table 1: Tobacco Hornworm (<1 inch) moisture 86.7%; Tobacco Hornworm (1-2 inch) moisture 88.3%; crude fat 10.4% and 9.5% on a dry matter basis.
+  - C40, snippet only: a vendor FAQ restating Finke 2002 gives waxworms 58.5% moisture, 14.1% protein, 24.9% fat, 0.6% ash, 3.4% fiber; the column headers were not confirmed on a page.
+  - C23, verbatim page read (PDF text): "Crested geckos are omnivores and in the wild will eat a variety of plant matter, invertebrates and even other small lizards."; "Mealworms should only be given in moderation while waxworms and morio worms should only be given as occasional treats due to their high fat content."
+  - C24, verbatim page read (PDF text): "Crickets, phoenix worms, silkworms, dubia roaches, and hornworms are all acceptable insect choices. Mealworms and superworms have been known to cause impactions in crested geckos."; "If feeding an insect and fruit combination product, additional insects are not required but do make good enrichment."; "Multivitamins are generally not required when using commercial diets."
+  - C6, verbatim page read: "Meal worms can be used but are rather high in fat."
+  - C27 (food guide), verbatim page read: "Incomplete diets, such as baby food, fruit puree, or only insects, can lead to health issues".
+- Search run 2026-11-06, fruit and foods to avoid:
+  - C11 (food page), verbatim page read: "Appropriate fruits include bananas, mango, apricots, papaya, and berries."; "Keep in mind that if you offer fruit too often, the gecko may reject prepared diet, risking malnutrition."
+  - C24, verbatim page read (PDF text): "Fruit: Papaya, fig, prickly pear, raspberries, strawberries, pineapple, melon, mango, blueberries, grapes, apples without seeds. Avoid avocado and rhubarb."
+  - C27 (food guide), verbatim page read: "A small piece of select non-citrus fruit as a treat is fine now and then for your crested gecko." It lists "Over ripe watermelon" among soft fruit treats but says nothing about watermelon flavored diet.
+  - C34 (press release only), verbatim page read: "Just one firefly, with its poisonous lucibufagin chemicals, is enough to kill a lizard"; "Don't let your lizards eat fireflies." The paper (Knight et al. 1999) was not opened.
+  - No page found states that watermelon is the flavor fussy eaters most often accept, that citrus acidity interferes with calcium absorption, that onion, garlic or eggplant are unsafe, or that raspberries are high in oxalate.
 
 5.3 Gut-loading and supplements
 - Guide states: gut-load feeders 24 to 72 hours before feeding; dust lightly with plain reptile calcium before each insect feeding; occasionally skipping is fine.
 - Guide states (health guide): supplement with calcium for MBD prevention; each clutch draws on a female's calcium.
+- Search run 2026-11-06:
+  - C11 (food page), verbatim page read: "All feeder insects should be gutloaded for at least 24 hours before feeding."; "All insects should be dusted with a calcium supplement to correct the Ca:P (calcium to phosphorous) ratio."; "If you are using UVB light in your crested gecko's enclosure, use a calcium powder without vitamin D."
+  - C24, verbatim page read (PDF text): "all insects should be gutloaded (fed a highly nutritious meal 24-48 hours before feeding)"; "Insects should also be dusted with calcium powder 1-2x/week."; "If you are providing adequate UVB, calcium powder does not need to contain D3."
+  - C3, verbatim page read: insects "gut-loaded six to 12 hours before being fed to a crested gecko"; "Dust your gecko's insects with a calcium supplement with vitamin D before each feeding session."
+  - C23, verbatim page read (PDF text): "We recommend alternating dusting with a calcium supplement (e.g. Calcidust) and a combined vitamin/mineral supplement (e.g. Nutrobal)."
 
 5.4 Not eating
 - Guide states (and hub "Not eating" row and FAQ): a healthy, good-weight adult can go about 2 to 3 weeks without food; a vet consult after the second week, especially with weight loss; juveniles have far less reserve; water about 3 days. Sources block lists Reptile Craze's "how long without food or water" page (C19); not confirmed which entry states it. C19 is a hobby blog.
 - Guide states: causes are shedding (appetite dips a few days either side, up to about a week); breeding season or gravidity (a week or more); stress; seasonal winter slowdown (not brumation; do not cool deliberately); picky eating; husbandry (heat, humidity, undersized enclosure); illness (mouth rot, parasites, respiratory infection, impaction, MBD); egg binding; dehydration. Sources block lists Reptile Craze's not eating page (C19); not confirmed which entry states it.
 - Guide states: red flags are weight loss, a bony spine, hip or tail base, sunken eyes, lethargy or weak grip, a soft lower jaw.
+- Search run 2026-11-06:
+  - C27 (food guide), verbatim page read: "Crested geckos can go 2-3 weeks without eating but cannot live long without access to water."
+  - C27 (not eating page), verbatim page read: "Geckos can become stressed or overwhelmed in enclosures that are too large."; "Geckos may eat less if they are too cold or stressed by excessive heat."; "Constant high or low humidity can cause stress, respiratory issues, or dehydration."; "Many geckos prefer a thick smoothie texture over thinner more watery options."; geckos "might refuse their staple food and hold out in favor of insects."; "If your gecko shows signs of illness, significant weight loss, or unusual behavior, consult a reptile savvy veterinarian."
+  - C27 (FAQ), verbatim page read: "Though their appetite may be slightly less and their growth may slow down in the cooler months, they do not go through a hibernation cycle."
+  - C11 (shedding page), verbatim page read: lists "reduced appetite" as a shedding symptom; it does not say how long before or after.
+  - C25 (pet owner page), verbatim page read: "Signs of dehydration include loose skin or sunken eyes."
+  - No page found states a vet consult after the second week, that juveniles have far less reserve, the 3-day water limit, the gravid appetite drop, or the timing of the shedding dip.
 
 ## 6. Behavior, handling and enrichment
 
@@ -262,6 +386,9 @@ All "guide states" items in this section are from the feeding guide unless named
 6.4 Tail loss care and causes
 - Guide states (handling guide): not a medical emergency; the wound closes on its own if clean; paper towel until the stump seals; watch for a soft or hard swelling (abscess) and see a vet if it looks infected; the tail held fat reserves, so watch weight and hydration afterward. Causes: fright, rough handling, a bullying cagemate, a fall, a tail trapped in a lid or door. Sources block lists Merck traumatic injuries (C5) and ReptiFiles tail loss (C11); not confirmed which entry states it.
 - Guide states (handling guide): unsexed juveniles kept together can include two males, which fight "badly enough to injure or kill".
+- Search run 2026-11-06:
+  - C24, verbatim page read (PDF text): "Never grab your crestie by the tail as this can cause a tail dropping response." C9, verbatim page read: "Never grasp the tail as it can be dropped, which is stressful and leads to the loss of vital fat reserves." See also section 1.3 (C24 says they do not store fat in the tail).
+  - C11 (Enclosure Size and Cohabitation), verbatim page read: "In almost every species, males housed together will fight and injure/kill one another."
 
 6.5 Enrichment
 - Guide states (enrichment guide KeyTakeaway): vertical climbing structure is "the single highest-impact enrichment upgrade for this species". Sources block lists C20, C9, C10, C11, C13; not confirmed which entry states it.
@@ -270,6 +397,13 @@ All "guide states" items in this section are from the feeding guide unless named
 - Guide states (enrichment guide): release a few insects into the upper branches after dark; diet dish on an elevated magnetic ledge. Bioactive (springtails, isopods, drainage layer, soil, leaf litter) is optional. FAQ: rearrange only occasionally; total overhauls stress a shy gecko.
 - RSPCA (C9) and IAABC (C10): in the enrichment block; the claims they back are not recorded.
 - Archive (FIX_PLAN_COMPLETED_2026-09-25.md): the enrichment guide graded B for "generic plant and hide sections that fit any arboreal reptile"; marked done in that batch.
+- Search run 2026-11-06:
+  - C9, verbatim page read: "Crested geckos are arboreal, meaning that they live off the ground, in branches."; "Feeding live insects also provides enrichment because it encourages natural hunting behaviours."
+  - C11 (decorations), verbatim page read: lists "Jumping/climbing potential" as a basic requirement for decor; "Given that crested geckos are arboreal (tree-dwelling), climbing opportunities are especially important."
+  - C24, verbatim page read (PDF text): "Reptiles are not stressed by too much space, but by too much exposure. Providing adequate cover and enrichment will keep a reptile from being stressed by their environment."; "Magnetic wall mounted feeding ledges are useful for crested geckos, as in the wild they eat in trees."
+  - C10 (IAABC) and C20 (More Reptiles): failed; still not recorded what either backs.
+  - Snippet only: Rickman et al. 2025 (Applied Animal Behaviour Science) found enriched housing improved welfare in leopard geckos, not crested geckos; a 2023 study found crested geckos had higher and more variable fecal glucocorticoid metabolite levels than leopard geckos. No crested gecko enrichment trial was found.
+  - No page found ranks vertical climbing as the single highest-impact upgrade, or backs releasing insects into the upper branches, the bioactive notes, or rearranging only occasionally.
 
 ## 7. Health
 
@@ -277,27 +411,65 @@ Sources block (health guide): ScaledKeeper (C17), ReptileCoach (C18), PetMD (C3)
 
 7.1 Metabolic bone disease
 - Guide states: from a calcium or vitamin D3 deficiency; progressive; early sign a soft or rubbery lower jaw; advanced signs floppy or weak limbs, misaligned jaw, kinked spine, tremors, trouble climbing; some damage can be permanent; a vet diagnoses with bloodwork and x-rays. Prevention: complete diet powder, calcium, low-level UVB. Sources block lists C17, C18, C3; not confirmed which entry states it.
+- Search run 2026-11-06:
+  - C25 (Nutritional, Metabolic, and Endocrine Diseases of Reptiles), verbatim page read: "It is caused by poor diet (low calcium:phosphorus ratio, vitamin D3 deficiency)."; signs include "swollen/distorted mandible, maxilla, and/or long bones," "limb and spinal pathologic fractures," "inability to walk normally," "muscle fasciculations," and "tetany"; "Diagnosis requires radiographic examination to document generalized demineralization of the skeleton."; "Findings in the late stages include hyperphosphatemia and low total and ionized calcium."; prognosis "favorable, particularly if the animal is still eating".
+  - C25 (Disorders and Diseases of Reptiles), verbatim page read: "Signs include poor appetite, weakness, an inability to walk normally, swollen or distorted jaw or leg bones"; "Diagnosis requires x-rays to document generalized loss of bone from the skeleton".
+  - C27 (care guide), verbatim page read: "Calcium/D3 deficiency or malabsorption; signs include kinky tail, tremors, rubber jaw, spine/leg kinks".
+  - C11 (MBD page), verbatim page read: cause "calcium or vitamin D3 deficiency"; signs "wavy tail," "soft jaw," "curved limbs," "lethargy," and "loss of appetite"; "Increasing calcium supplementation with vitamin D3 and UVB light will improve minor cases."; "Veterinary care is recommended for more severe cases or cases that do not improve after a couple weeks of treatment."; "MBD is particularly easy to prevent in crested geckos."
+  - C24, verbatim page read (PDF text): "Crested geckos are prone to nutritional-secondary hyperparathyroidism (metabolic bone disease), dysecdysis (shedding problems), parasites, and substrate impaction."
+  - C6, verbatim page read: crested geckos can "suffer from metabolic bone disease."
+  - No page found states that some MBD damage can be permanent.
 
 7.2 Floppy tail syndrome
 - Guide states: the tail hangs over the head or sits at an odd angle, typically from chronic upside-down resting against glass; sometimes associated with calcium or pelvic issues; occasionally overlaps with MBD but is not diagnostic of it; a vet visit to rule out a calcium problem. Sources block lists ReptileCoach (C18, title names FTS); not confirmed which entry states it.
+- Search run 2026-11-06:
+  - C11 (FTS page), verbatim page read: "Tail hangs over gecko’s back or to the side when upside down"; "Difficulty defecating or laying eggs"; causes "Sleeping upside down repeatedly" and "Deformity of base tail bone and hips"; "Make an appointment with an exotic veterinarian."; "Tail amputation may necessary to prevent further deformity of the spine and/or hips."; "FTS can be prevented or managed by cluttering the terrarium with lots of hiding spots and other décor".
+  - C27 (care guide), verbatim page read: "Cosmetic tail-base deformity from resting positions; not linked to health or breeding issues".
+  - No page found links FTS to calcium.
 
 7.3 Impaction
 - Guide states: "the most common health problem in pet geckos generally" (no source shown for the ranking; see Gaps); causes are loose substrate, oversized prey or unpassed shed; signs are no bowel movement for a week or more, bloating, straining, lethargy, appetite loss; a warm 15-minute soak can help a mild case; a vet if symptoms last past 24 to 48 hours.
+- Search run 2026-11-06:
+  - C27 (care guide), verbatim page read: "Hard mass blocking the intestines; usually linked to dehydration or unsuitable substrate/prey size".
+  - C11 (impaction page), verbatim page read: causes "loose substrate," "hard-shelled feeder insects," "too large feeder insects," and "dehydration"; signs "weight loss," "loss of appetite," and "absence of stool"; "If no stool, call an exotic veterinarian."
+  - C24, verbatim page read (PDF text): "Geckos under 12g are better off on paper towels, as they are more prone to substrate impactions." C3 lists "GI impactions" among common illnesses.
+  - No page found states the "most common health problem" ranking, the 15-minute soak, the 24 to 48 hour window, bloating or straining.
 
 7.4 Shedding
 - Guide states: juveniles shed every one to two weeks, adults about once a month; stuck shed at toes, tail tip or eyes can cut off circulation and cost a toe; fix humidity and add a humid hide. Sources block lists C17, C18, C3; not confirmed which entry states it.
+- Search run 2026-11-06:
+  - C3, verbatim page read: juveniles shed "every one to two weeks," adults "once a month."
+  - C27 (care guide), verbatim page read: "Young/growing geckos as often as weekly; adults every few weeks".
+  - C25 (Disorders and Diseases of Reptiles), verbatim page read: "Low humidity, skin parasites, nutritional deficiencies, infectious diseases" can contribute to an abnormal shed; "bands of skin encircling the tail or toes, may not shed properly and may be retained."
+  - C11 (shedding page), verbatim page read: "Increase humidity to 80-100% until shedding is complete."; "Keep a close eye on the toes and tip of the tail."; "If the shed gets stuck, they can get pinched and fall off."; a DIY humid hide by "creating a small sauna with a tupperware and a wet, lukewarm paper towel." and "Let the gecko sit inside for 10-15 minutes."
+  - C6, verbatim page read: "If the humidity is too low, crested geckos will exhibits shedding problems and even dehydration."
 
 7.5 Obesity
 - Guide states: linked to fatty liver disease and egg trouble; signs are a round belly in a non-gravid gecko, fat at the leg bases or flanks, less climbing; cause a high-fat diet or insects too often; cut insect meals first.
+- Search run 2026-11-06:
+  - C25 (Nutritional, Metabolic, and Endocrine Diseases of Reptiles), verbatim page read: "Restricted opportunities for exercise, reproduction, and hibernation... combined with excessive caloric intake, can quickly result in morbid obesity and hepatic lipidosis."
+  - No page found links obesity to trouble with eggs.
 
 7.6 Respiratory infection
 - Guide states: an enclosure too cold or too wet; open-mouth breathing, mucus, wheezing, lethargy; needs a vet promptly.
+- Search run 2026-11-06:
+  - C27 (care guide), verbatim page read: "Usually from improper temperature/humidity; signs include open-mouth breathing, wheezing, mucus".
+  - C25 (Disorders and Diseases of Reptiles), verbatim page read: infections "can be caused by parasites of the respiratory system or the whole body, unfavorable environmental temperatures"; "Open-mouth breathing, discharge from the nose, and difficulty breathing are frequent signs."
+  - C24, verbatim page read (PDF text): "Stagnant air and poor ventilation can lead to molding and respiratory infections."
 
 7.7 Other conditions and the vet schedule
 - Guide states: dehydration shows as sunken eyes and repeated stuck sheds (feeding guide adds wrinkled, loose-looking skin); internal parasites and, less often, cryptosporidiosis, "serious and often difficult to treat".
 - Guide states (health guide, hub emergency card copied from it): a vet within the first 30 days, then an annual exam with a fecal test; see a vet promptly for a soft or misshapen jaw, no bowel movement for a week or more, breathing difficulty, ongoing weight loss or neurological signs.
 - Guide states (health guide FAQ and body): weigh at least monthly and log it, every few days while off food. Archive (FIX_PLAN_COMPLETED_2026-09-25.md): the book's p14 "weigh weekly" and the health guide's old "Weigh your gecko weekly" against the feeding guide's monthly were settled on at least monthly, more often while off food.
 - Archive (FIX_PLAN_COMPLETED_2026-09-25.md, item added 2026-10-02): the book's "Association of Reptilian and Amphibian Veterinarians" corrected to "Association of Reptile and Amphibian Veterinarians" (arav.org); the site and the package template were fixed 2026-10-02.
+- Search run 2026-11-06:
+  - C25 (Disorders and Diseases of Reptiles), verbatim page read: "Signs of dehydration include loose skin or sunken eyes."; "Your veterinarian can test your reptile's feces for gastrointestinal parasites."; on cryptosporidiosis, "Several treatments have been suggested, but most do not work consistently." and "Intensive supportive care will often stabilize and help prolong the life of the affected reptile."
+  - C27 (care guide), verbatim page read: parasites "Pinworms (most common), coccidia, hookworms, roundworms -- diagnosed via fecal test"; first vet visit "Within the first few weeks home to establish a baseline"; the page also recommends a fecal test at intake and calls "Tracking your crested gecko's weight and body condition over time" one of the most practical tools.
+  - C3, verbatim page read: "Crested geckos should be seen by a veterinarian once a year."
+  - C24, verbatim page read (PDF text): "Crested geckos should be examined by your veterinarian every 6-12 months."
+  - C23, verbatim page read (PDF text): "We recommend annual health checks every year for pet reptiles as medical problems are more easily treated if detected at an early stage".
+  - Snippet only: a ReptiFiles health page advises weighing weekly (page not opened).
+  - No page found ties skin and scale problems to high humidity with poor hygiene.
 
 ## 8. Breeding and egg laying
 
@@ -309,6 +481,19 @@ Sources block (health guide): ScaledKeeper (C17), ReptileCoach (C18), PetMD (C3)
 - Guide states (feeding guide): gravidity can suppress appetite for a week or more; gravid females look plump and less active.
 - Sexual maturity: section 1.2. Archive (FIX_PLAN_COMPLETED_2026-09-25.md): gravid female and infertile egg care was a "truly missing" item, done in that batch.
 - Cost sheet: no lay box row, though the cost guide says every adult female needs one (see Gaps).
+- Search run 2026-11-06, clutch size and frequency:
+  - C22, verbatim page read: "6-10 clutches of 2 eggs per clutch at 3-4 week intervals."
+  - C21, verbatim page read: "Females are capable of laying 2 eggs every 4-6 weeks and do so 30-40 days after copulation"; "they retain sperm and may lay up to 4 eggs before copulating again."; "Breeding and egg laying takes place 8-10 months of the year"; "Eggs can be as large as 11x24 mm and 1.2-2.8 gm, and hatch 60-150 days after being laid."
+  - C6, verbatim page read: "Females lay two eggs every three weeks during breeding."; "A plastic lidded container with an access hole and several ventilation holes is ideal for nest boxes."
+  - C33, verbatim page read: "2 eggs hatch in about 60 days".
+- Search run 2026-11-06, egg binding:
+  - C4, verbatim page read: "Most of the time, pet reptiles brought to a veterinary hospital for examination of dystocia are single females" (the sentence goes on to say these females have had no exposure to a male); "In reptiles that do not give live birth, dystocia may also be referred to as egg binding or ovostasis."; causes "improper diet leading to low calcium or protein levels, and/or dehydration." and "housing temperature that is too hot or cold, improper humidity levels, inadequate nest site."; "A gravid reptile with dystocia is usually anorectic, weak, and may show a distended abdomen."; "Many cases progress to severe lethargy and the pet may become unresponsive if not treated early"; "Delaying treatment may compromise the mother, the young, and future reproductive success for breeding female reptiles."; "Most reptiles are oviparous, meaning they produce eggs." No sentence says outright that females lay eggs without a male.
+  - C25 (Disorders and Diseases of Reptiles), verbatim page read: "Metabolic disease or infection can worsen the issue."; reptiles "may retain eggs or fetuses for weeks or even months after the normal timing of laying/birth."
+- Search run 2026-11-06, calcium sacs:
+  - C11 (MBD page), verbatim page read: "Check your gecko's calcium reserves by periodically examining the white calcium sacs on the roof of his/her mouth." It does not say what shrinking sacs mean.
+  - Snippet only: Lamb et al. 2017, on Gonatodes antillensis (not a crested gecko), found adult females have larger endolymphatic sacs, linked to calcium stored early in reproduction and used for eggs.
+- Search run 2026-11-06, what C14 (NEHerp, hobby) backs, verbatim page read: "Most gravid females will drop 2 eggs about once per month."; "Females with no male can still lay (infertile) eggs."; "It is more difficult for a female to produce an infertile egg than a fertile one."; lay box of "a few inches of slightly moist coconut fiber & fir bark (a roughly 50/50 mix)."; "Check the calcium sacs of breeding Crested females (located at the back of her mouth)"; "Yellow & misformed eggs are usually infertile."
+- No page found outside C14 backs the lay box mix, an infertile egg being harder on her, shrinking sacs as a reserve signal, or each clutch drawing on her calcium.
 
 ## 9. Price observations (retail listings, NOT sources, do not cite)
 
@@ -320,10 +505,11 @@ From the cost guide, hub and cost sheet as they stand on 2026-11-06. The cost gu
 - Monthly table ($40 to $55, matches the cost sheet's monthly [40, 55]): diet powder about $5 (one $20 jar lasts about 3 months); insects $5 to $10; calcium about $5; substrate about $10; electricity about $5; UVB tubes about $5 ("two a year, averaged"); vet $5 to $15. The rows sum to $40 to $55.
 - Cost sheet rows (resolved 2026-11-06 with src/lib/costs.js): gecko $50 to $200; enclosure $150 to $200; UVB hood and tube $45 to $75; heat bulb and dome $20 to $40; dimming thermostat $30 to $35; coconut fiber $15 to $40; cork, branches and plants $45 to $80; thermometer and hygrometer $15 to $25; misting bottle or fogger $10 to $40; calcium $5 to $15; first jar of CGD $10 to $25; gram scale $10 to $15; initial vet exam and fecal $65 to $210; "All in, before the gecko" $420 to $800.
 - Cost sheet totals as the build fills them: %%setup:crested-gecko%% = $890 to $1,800; %%gear:crested-gecko%% = $355 to $590; %%monthly:crested-gecko%% = $40 to $55. The setup total sums the gecko row, the vet row and the "All in, before the gecko" row as well as the gear. Gear plus the vet row is $420 to $800, which is the "All in" figure, so that row is counted twice. The cost guide then reads "Altogether the equipment comes to $890 to $1,800, and $420 to $800 once the first vet exam and fecal test are counted"; the seoTitle and hub "Budget" row carry the same $890 to $1,800. See Gaps. Not edited here.
+- Search run 2026-11-06: MorphMarket (C41) returned 403, so no morph price was read. Desktop check needed before it goes in the cost guide's Sources.
 
 ## Gaps
 
-- No page was opened for any source in this file: every item is "guide states". Nothing is confirmed against a page yet.
+- No page was opened for any source in this file: every item is "guide states". Nothing is confirmed against a page yet. (True of the file as first built. The 2026-11-06 search run's page reads are filed under each section and marked; its unsourced items are under "Kept without a source (owner review)".)
 - Hobby sites (C14 to C20) are in four of six guides. Cost, health and feeding drop under 3 sources without them, so RULES keeps enough of them to reach 3 until stronger sources are found.
 - Bare homepage: Zoo Med (C12) is the only plausible source for the T5 wattage-to-length sentence in the cost guide. The leopard gecko twin of that sentence was cut with its bare Zoo Med homepage (owner, 2026-11-06).
 - Wikipedia (C13) is the likeliest backer for the enrichment guide's range, three populations, habitat and predator facts. Weak source; no stronger one recorded.
@@ -363,6 +549,12 @@ Current Sources (4): ReptiFiles combined (C11: starter kit, enclosure size and c
 - NEHerp (C14): plausibly the lay box and the egg schedule. Hobby site.
 - Zoo Med (C12): the T5 wattage-to-length sentence. Bare homepage.
 - Open: the setup total double count (section 9); "into their 30s"; the rediscovery FunFact has no source in the block; the two-females line against "house singly"; the UVB tube row (Sweep log, 2026-11-06); two of four entries are hobby sites and one is a bare homepage, so only C11 is clean.
+- Proposed 2026-11-06, pending owner approval (5 entries; drops The Vet Desk C16 and NEHerp C14):
+  - [ReptiFiles](https://reptifiles.com/): Crested Gecko Starter Kit / Shopping List (not opened in the 2026-11-06 run); Crested Gecko Enclosure Size and Cohabitation; Sexing Crested Geckos; The Ultimate Guide to Crested Gecko Care (C11)
+  - [BGSU Herpetarium: New Caledonian Crested Gecko](https://www.bgsu.edu/arts-and-sciences/biological-sciences/facilities-and-resources/bgsu-herpetarium/animals/reptiles/new-caledonian-crested-gecko.html) (C22)
+  - [VCA Animal Hospitals: Reptiles, Dystocia](https://vcahospitals.com/know-your-pet/reptiles---dystocia) (C4)
+  - [LafeberVet: UVB Lighting for Reptiles (Frances Baines)](https://lafeber.com/vet/uvb-lighting-for-reptiles/) (C26)
+  - [MorphMarket: crested gecko listings](https://www.morphmarket.com/us/c/reptiles/lizards/crested-geckos) (C41; morph prices only; pending a desktop check, since the page returned 403)
 
 ### crested-gecko-enrichment-guide.mdx
 Dates: date 2026-08-15, lastUpdated 2026-09-24, lastReviewed 2026-08-15.
@@ -418,3 +610,4 @@ Nothing listed yet: items go here as the sweep finds claims that lose their only
 - 2026-11-06: sweep started; Fable grading pass running; known item: the cost guide's 'two a year, averaged' UVB tube row matches the leopard gecko fix pending (a tube every 6 to 12 months, budgeted at two a year).
 - 2026-11-06: Owner: replace the hobby-site sources with better ones found by a real search (vet, university, government, peer-reviewed, ReptiFiles, Zen Habitats), after Fable's grading pass; no new source goes in without the owner's OK.
 - 2026-11-06: First group applied: setup total fixed in the cost sheet (gecko moved to animal [50, 200], the double-counted 'All in, before the gecko' row deleted; %%setup%% now $420 to $800, gear plus first exam), hub Budget row follows; T5 HO wattage sentence and bare Zoo Med source cut from the cost guide (owner, same as leopard gecko); UVB tube row and FAQ say every 6 to 12 months, budgeted at two a year; health guide UVB link swapped from the 36 inch Arcadia Forest kit to the Zoo Med 14 inch 5.0 hood the cost sheet uses (UVB still recommended); rule fixes (comma splices, contrast cadence, research narration, link sentences, first sentences, health product link off the disease cause, enrichment meta insect frequency); closing sections on all six, checked against each guide's own text.
+- 2026-11-06: Contradiction 1 (owner: the guides are for keepers, so fix only wrong statements about wild animals and keep the setup advice). Enrichment: wild geckos 'rest through the day in dense cover' (was 'sleep through the day in secure spots high in the branches'), 'jumping from branch to branch' (was 'jumping long distances'; ADW: 'They can jump short distances, from branch to branch'); setup advice to put daytime cover in the top third kept, reworded off the wild claim; closing reworded to match. Health FunFact (diet-powder advice, broke the health FunFact rule) replaced with the ADW fact: daytime rest in thick vegetation near the forest floor, rarely above about 3 m (owner chose this fact for a FunFact).
