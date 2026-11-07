@@ -23,9 +23,9 @@ export const geckoSheets = {
     ],
   },
   'crested-gecko': {
+    animal: [50, 200],
     monthly: [40, 55],
     necessities: [
-      { text: "The gecko itself (normal morph)", low: 50, high: 200 },
       { item: "crested-gecko-enclosure-18x18x24-minimum-vertical", text: "[Enclosure] (18x18x24 in minimum, vertical/arboreal; check the dimensions before you buy)" },
       { item: "crested-gecko-low-output-uvb-hood", text: "Low-output UVB hood with a [5.0 (5%) T5 HO tube], about two-thirds the enclosure length (check the length against your enclosure)" },
       { item: "crested-gecko-heat-bulb-dome-fixture", text: "[Heat bulb] and [dome fixture] (25-40W)" },
@@ -38,7 +38,6 @@ export const geckoSheets = {
       { item: "crested-gecko-jar-complete-crested-gecko", text: "First jar of [complete crested gecko diet]" },
       { item: "kitchen-scale-grams", text: "[Kitchen scale that reads in grams]" },
       { text: "Initial vet exam + fecal test", low: 65, high: 210 },
-      { text: "All in, before the gecko", low: 420, high: 800 },
     ],
   },
   'gargoyle-gecko': {
