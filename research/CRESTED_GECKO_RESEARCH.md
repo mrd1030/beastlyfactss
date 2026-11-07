@@ -643,17 +643,19 @@ Found by the 2026-11-06 search run. The run changed nothing; where the owner has
 
 ## Kept without a source (owner review)
 
+The open items are also triaged in research/OWNER_REVIEW.md (2026-11-06), with a suggested decision for each.
+
 Nothing listed yet: items go here as the sweep finds claims that lose their only source or never had one.
 
 Added 2026-11-06 by the hobby-source replacement search run (the line above predates it). Each item stays in its guide as written; nothing was cut. Wording is checked against the guides as they stand after the 2026-11-06 owner changes.
 
 Cost guide (crested-gecko-cost-guide.mdx):
-- "15 to 20 years in captivity, with the earliest known captive individuals living into their 30s." (FAQ) and "the earliest known captive individuals have lived into their 30s" (body): the 30s part.
+- "15 to 20 years in captivity, with the earliest known captive individuals living into their 30s." (FAQ) and "the earliest known captive individuals have lived into their 30s" (body): the 30s part. (Lifespan itself now 10 to 20 years, sourced, 2026-11-06; the 30s part stays open.)
 - "a lay box of moist coconut fiber and fir bark is part of her kit whether she is bred or not." Only C14 (hobby) states the mix.
 - "Each clutch draws on her calcium, which keeps the supplement line on the monthly budget."
 - "UV cards do not measure UVB."
 - "Females lay infertile eggs with no male present": only partly sourced (C4 implies it; C14, hobby, states it).
-- FunFact: "after a tropical storm that year" (sources say a storm "revealed" or "uncovered" the population, and C33 says "during a rainstorm").
+- FunFact: "after a tropical storm that year" (sources say a storm "revealed" or "uncovered" the population, and C33 says "during a rainstorm"). Resolved 2026-11-06: now "during a tropical storm".
 - FunFact: "Every crested gecko in the pet trade today descends from that rediscovered population."
 - Morph prices, pending the MorphMarket desktop check (C41): "Most normal and patterned crested geckos from a breeder or store sell for under $100, and standard morphs top out around $200. Rare and specialty morphs from established lines run upward of $1,000."
 
@@ -663,7 +665,7 @@ Health guide (crested-gecko-health-issues-guide.mdx):
 - "Once the disease reaches this stage, some of the damage can be permanent even with treatment."
 - "It's sometimes associated with calcium or pelvic issues": the calcium part (the pelvic part has C11), and "If you notice this, it's worth a vet visit to rule out an underlying calcium problem."
 - "This is the most common health problem in pet geckos generally, and crested geckos are no exception."
-- "A warm 15-minute soak can sometimes help a mild case. If symptoms persist beyond 24 to 48 hours, see a vet."
+- "A warm 15-minute soak can sometimes help a mild case. If symptoms persist beyond 24 to 48 hours, see a vet." (now "If there is still no stool 24 to 48 hours after a soak, see a vet.")
 - "**Watch for:** no bowel movement for a week or more, a visibly bloated abdomen, straining, lethargy, and appetite loss.": the bloating and straining (C11 backs absence of stool and appetite loss).
 - "Obesity is the quieter weight problem, and it is linked to fatty liver disease and to trouble with eggs.": the eggs part (C25 backs fatty liver).
 - "sacs that shrink noticeably over a season mean her reserves are running down"
@@ -673,7 +675,7 @@ Health guide (crested-gecko-health-issues-guide.mdx):
 - "A mature female kept alone can still develop and lay infertile clutches": only partly sourced (C4 implies it).
 
 Handling guide (crested-gecko-handling-guide.mdx):
-- FunFact (rewritten 2026-11-06): "Going without one does not stop a gecko from climbing, breeding or staying healthy." Kept from the old FunFact's "largely inconsequential, it doesn't affect breeding, climbing, or overall health"; the old "field studies since then" wording is out. C6 backs only the first sentence.
+- FunFact (rewritten 2026-11-06): "Going without one does not stop a gecko from climbing, breeding or staying healthy." Kept from the old FunFact's "largely inconsequential, it doesn't affect breeding, climbing, or overall health"; the old "field studies since then" wording is out. C6 backs only the first sentence. Update 2026-11-06: the FunFact's second sentence was cut in the regrade fixes; the same claim stays in the body ("lives a completely normal, healthy life").
 
 Feeding guide (crested-gecko-feeding-guide.mdx):
 - "Water runs on a shorter clock: roughly 3 days." (FAQ) and "a crested gecko can only go about 3 days without water" (body): only Reptile Craze (C19, hobby) stated it; it left the Sources 2026-11-06. C27 says only that they "cannot live long without access to water."
@@ -682,7 +684,7 @@ Feeding guide (crested-gecko-feeding-guide.mdx):
 - "anything not eaten within 15 to 20 minutes should come back out" (C23 says 30 minutes; C3 says do not leave them).
 - "watermelon is the flavor fussy eaters most often accept." and the FAQ's "watermelon is the flavor picky eaters most often accept."
 - "**Waxworms** run about 22% fat": snippet only (C11 chart image; C40 vendor restatement gives 24.9%).
-- "**Hornworms** are about 85% water": snippet only from C11; C30 gives 86.7 to 88.3% (see contradiction 10).
+- "**Hornworms** are about 85% water": snippet only from C11; C30 gives 86.7 to 88.3% (see contradiction 10). Resolved 2026-11-06: now about 87% (C30).
 - "citrus fruits, whose acidity is thought to interfere with calcium absorption"
 - "leave out onion, garlic, and eggplant"
 - "Raspberries appear on some high-oxalate lists, so keep them to a rare treat." (C24 lists raspberries among acceptable fruit.)
@@ -699,11 +701,11 @@ Enrichment guide (crested-gecko-enrichment-guide.mdx):
 - "A well-established bioactive enclosure, springtails and isopods working through a drainage layer, soil mix, and leaf litter, adds ongoing low-level stimulation on top of everything above."
 - "Sudden total overhauls of a shy individual's enclosure cause stress rather than enrichment." (FAQ)
 - "Pothos, philodendron, and bromeliads are common safe choices": philodendron (C11 lists the others).
-- What C10 (IAABC) and C20 (More Reptiles) backed is still not recorded: both pages failed to load.
+- What C10 (IAABC) and C20 (More Reptiles) backed is still not recorded: both pages failed to load. Resolved 2026-11-06: IAABC read by the owner and kept; More Reptiles out of Sources.
 
 Other guides, FunFact and FAQ items found in the same run:
-- Handling guide FunFact: "field studies since then have found tail loss to be common and largely inconsequential".
-- Tank setup guide: "Their native range in New Caledonia only reaches 79-85°F even in the hot season" (body) and "tops out at 79-85°F in the hot season" (FAQ): C31 gives hot-season mean daily maxima of about 79 to 81°F, so the 85°F top has no source.
+- Handling guide FunFact: "field studies since then have found tail loss to be common and largely inconsequential". Resolved 2026-11-06: FunFact rewritten.
+- Tank setup guide: "Their native range in New Caledonia only reaches 79-85°F even in the hot season" (body) and "tops out at 79-85°F in the hot season" (FAQ): C31 gives hot-season mean daily maxima of about 79 to 81°F, so the 85°F top has no source. Resolved 2026-11-06: now about 79 to 81°F.
 
 ## Sweep log
 

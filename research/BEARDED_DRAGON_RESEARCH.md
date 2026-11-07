@@ -390,6 +390,8 @@ shutoff", both rows of the cost guide's setup table.
 
 ## Kept without a source (owner review)
 
+The open items are also triaged in research/OWNER_REVIEW.md (2026-11-06), with a suggested decision for each.
+
 - Fruit "once or twice a week at most" (safe foods guide, Fruit and the Never-Feed List): VCA, NC State and LafeberVet cap fruit by share of the diet, none gives a frequency. Kept as written (owner, 2026-11-03).
 - Babies and juveniles "2 to 3 days at most" without food: Texas Avian says only "sooner for younger dragons" and the Louisiana hospital says they "need to eat daily". No vet page gives 2 to 3 days. Kept as written.
 - Brumation "typically starting between 1 and 3 years old": no vet page gives an age range. Kept as written.

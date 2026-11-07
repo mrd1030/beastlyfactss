@@ -298,6 +298,8 @@ line.
 
 ## Kept without a source (owner review)
 
+The open items are also triaged in research/OWNER_REVIEW.md (2026-11-06), with a suggested decision for each.
+
 - Cost guide, after The Vet Desk and Reptile Direct came out (2026-11-06): $20 to $45 at a pet store; $50 to $150 from a breeder; popular morphs $75 to $300 and rare morphs $500 to $3,500 or more; $35 to $100 for live shipping; an annual exam at $85 to $105; sick or emergency visits $100 to $800 or more. Kept as written.
 - Handling: "A gecko barking isn't necessarily distress, since it can just mean it's hungry". No source in the guide states it. Kept as written.
 - Health: "Most reptiles brought to a vet for egg binding are single females that have never met a male". Strong statistical claim with no source shown. Kept as written.
