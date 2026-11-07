@@ -36,7 +36,7 @@ import hero1600Jpg from '@/assets/hero-1600.jpg';
 // stops change at lg and an inline style cannot carry a media query. See the
 // comment there for why the desktop fade starts later than the phone one.
 
-const srcSet = (a, b, c, d) => `${a} 400w, ${b} 800w, ${c} 1200w, ${d} 1600w`;
+const srcSet = (a, b, c, d) => `${a} 400w, ${b} 800w, ${c} 1200w, ${d} 1536w`;
 const HERO_AVIF = srcSet(hero400Avif, hero800Avif, hero1200Avif, hero1600Avif);
 const HERO_WEBP = srcSet(hero400Webp, hero800Webp, hero1200Webp, hero1600Webp);
 const HERO_JPG = srcSet(hero400Jpg, hero800Jpg, hero1200Jpg, hero1600Jpg);
@@ -144,7 +144,7 @@ export default function HeroSection({ onOpenFact }) {
                 this vertical anchor does nothing. */}
             <img
               src={hero1200Jpg}
-              alt="A bearded dragon basking on red desert earth, with a rainbow lorikeet perched on a flowering branch and a red kangaroo standing in the spinifex behind"
+              alt="An illustrated bearded dragon in an orange knit scarf on an autumn oak branch, leading a leaping red fox, a barn owl, a buck, a budgie, a rabbit and a tabby cat through swirling leaves"
               className="h-full w-full object-cover lg:object-top hero-fade"
               fetchpriority="high"
               width="1200"
