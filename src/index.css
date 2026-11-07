@@ -208,19 +208,19 @@
        is a calmer warm sand and cards are near-white paper above it, with a
        soft shadow (see the bg-card rule at the end of this file) and much
        lighter borders doing the separation instead. */
-    --background: 165 14% 94%;
-    --foreground: 190 40% 12%;
-    --card: 150 20% 98.5%;
+    --background: 42 40% 94.5%;
+    --foreground: 136 26% 14%;
+    --card: 40 55% 98.5%;
     /* The article's reading surface on a phone (pages/Blog.jsx), where the
        bordered card is dropped. Its own token so cards can change without
        moving it (owner, 2026-11-02, on a Fable recommendation). Light: the
        card's paper, lighter than the page. */
-    --reading: 150 20% 98.5%;
-    --card-foreground: 190 40% 12%;
-    --popover: 150 20% 98.5%;
-    --popover-foreground: 190 40% 12%;
-    --primary: 192 55% 18%;
-    --primary-foreground: 150 20% 98%;
+    --reading: 40 55% 98.5%;
+    --card-foreground: 136 26% 14%;
+    --popover: 40 55% 98.5%;
+    --popover-foreground: 136 26% 14%;
+    --primary: 164 56% 19%;
+    --primary-foreground: 40 75% 97%;
     /* Deepened 54% -> 40% lightness on 2026-08-31: the site sets this orange
        as TEXT everywhere (text-secondary on ~190 small bold labels and links,
        plus every prose link via --tw-prose-links), and at 54% it measured
@@ -229,9 +229,7 @@
        4.59:1 on --muted, so the same token works as both fill and text on
        every light surface. Dark mode overrides with its own brighter orange,
        which already passed as text (6.44:1). */
-    /* Deep Pine scheme on trial (owner, 2026-11-07, sharetest): navy-green
-       background, text and primary, seagreen buttons and links in light,
-       gold in dark. Seagreen (owner, 2026-11-07), replacing the burnt orange 17 80% 40%:
+    /* Seagreen (owner, 2026-11-07), replacing the burnt orange 17 80% 40%:
        "Deep sea glass" #1F7A6E. It is set as text on ~190 labels and links
        as well as filled buttons: 4.8:1 on --background, 5.2:1 with the cream
        --secondary-foreground on top. The logo badge and the home hero keep
@@ -241,11 +239,11 @@
        deepened fill above, near-black dropped under 4:1 while cream clears
        5.2:1. Dark mode still pairs its bright orange with near-black
        (6.79:1) via its own override below. */
-    --secondary-foreground: 150 20% 98%;
-    --muted: 165 12% 89%;
-    --muted-foreground: 190 14% 32%;
-    --accent: 38 78% 54%;
-    --accent-foreground: 190 40% 12%;
+    --secondary-foreground: 40 75% 97%;
+    --muted: 41 35% 91%;
+    --muted-foreground: 36 18% 32%;
+    --accent: 39 67% 55%;
+    --accent-foreground: 136 26% 14%;
     /* Gold as text. --accent is a fill color: set as text on the light
        background it measures near 2:1. Anything rendering gold TEXT or icons
        (text-accent-ink) uses this deepened gold instead: 5:1 on
@@ -260,9 +258,9 @@
        old 49% outlines (3.6:1, on everything) read as wireframe clutter.
        Inputs keep the darker value: a form field's boundary is often its
        only affordance and needs the 3:1 non-text floor, which 70% fails. */
-    --border: 170 10% 72%;
-    --input: 170 10% 48%;
-    --ring: 192 55% 18%;
+    --border: 38 14% 70%;
+    --input: 38 16% 49%;
+    --ring: 164 56% 19%;
     --chart-1: 17 77% 54%;
     --chart-2: 39 67% 55%;
     --chart-3: 164 56% 19%;
@@ -270,17 +268,20 @@
     --chart-5: 48 100% 60%;
     --radius: 0.5rem;
 
-    --sidebar-background: 150 20% 98.5%;
-    --sidebar-foreground: 190 40% 12%;
-    --sidebar-primary: 192 55% 18%;
-    --sidebar-primary-foreground: 150 20% 98%;
-    --sidebar-accent: 165 12% 89%;
-    --sidebar-accent-foreground: 190 40% 12%;
-    --sidebar-border: 170 10% 72%;
-    --sidebar-ring: 192 55% 18%;
+    --sidebar-background: 40 55% 98.5%;
+    --sidebar-foreground: 136 26% 14%;
+    --sidebar-primary: 164 56% 19%;
+    --sidebar-primary-foreground: 40 75% 97%;
+    --sidebar-accent: 41 35% 91%;
+    --sidebar-accent-foreground: 136 26% 14%;
+    --sidebar-border: 38 14% 70%;
+    --sidebar-ring: 164 56% 19%;
   }
 
   .dark {
+    /* Deep Pine dark mode (owner, 2026-11-07, sharetest trial): deep
+       blue-green night with gold buttons and links. Light mode stays the
+       warm scheme with the seagreen accent. */
     --background: 195 38% 7%;
     --foreground: 150 18% 91%;
     --card: 195 32% 11%;
