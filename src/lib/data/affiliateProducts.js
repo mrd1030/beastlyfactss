@@ -1165,7 +1165,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.6,
     price: "$13–$21",
     description: "Handheld laser thermometer for instant surface temperature checks. Great for basking spots and warm hides.",
-    covers: ["Infrared temp gun for the mat's surface", "Infrared thermometer for surface readings", "Infrared temperature gun"], // generic-brand IR gun, commonly used to check heat-source surface temps for hedgehog/sugar glider setups too, not just reptile basking spots
+    covers: ["Infrared temp gun for the mat's surface", "Infrared temp gun for the warm hide floor", "Infrared thermometer for surface readings", "Infrared temperature gun"], // generic-brand IR gun, commonly used to check heat-source surface temps for hedgehog/sugar glider setups too, not just reptile basking spots
     pets: ["reptiles-amphibians", "small-mammals"],
   },
   {

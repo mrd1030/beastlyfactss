@@ -378,6 +378,16 @@ Current Sources: RSPCA How to care for your bearded dragon; BeardedDragon.org Di
 - Zoo Med tube sizes and the MSD quarantine figure seen only in search
   summaries: owner is fine with that as recorded.
 
+## Hub check, 2026-11-06
+
+Hub fields compared with the guides only (no sources opened). Changed: UVB row
+scoped to a 12% tube and carries the hypo, silkback and translucent UVI 3.0
+line; brumation route line says 1 to 3 months; emergency card order matches
+the health guide; funFact carries both arm-wave meanings; Handling row adds
+"Sessions run about 10 to 15 minutes in an ordinary room; heat sets the
+limit." Kept: the buy list's Hammock and "Dimming thermostat with a safety
+shutoff", both rows of the cost guide's setup table.
+
 ## Kept without a source (owner review)
 
 - Fruit "once or twice a week at most" (safe foods guide, Fruit and the Never-Feed List): VCA, NC State and LafeberVet cap fruit by share of the diet, none gives a frequency. Kept as written (owner, 2026-11-03).

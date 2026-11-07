@@ -378,7 +378,7 @@ export const geckoGuides = fillCostTokens([
     tagline: "The smiling gecko that's perfect for first-time reptile parents!",
     seoTitle: "Leopard Gecko Care Guide: Setup, Feeding, and Health",
     seoDescription: "Start a leopard gecko right: the 36x18x18 tank that replaced the 20-gallon standard, three hides, belly heat on a thermostat, feeding by age, and vet signs.",
-    funFact: "Unlike most geckos, leopard geckos have eyelids and can blink and wink at you! They also store fat in their chunky tails for energy reserves.",
+    funFact: "Unlike many geckos, leopard geckos have working eyelids: they can blink, and they close their eyes to sleep. They also store fat in their tails, which is why a thinning tail is the first warning sign.",
     // Router hub (docs/RULES.md, Hubs). Every figure below is copied from the
     // deep dive named in `source`, and that article is where it changes; the
     // hub keeps no number of its own. Lifespan and adult size come from the
@@ -392,7 +392,7 @@ export const geckoGuides = fillCostTokens([
       rows: [
         { label: "Day one", value: "A new gecko is quarantined 3 to 6 months away from any reptile you already keep, on paper towel, with its own tools and a vet workup inside that window.", source: "reptile-quarantine-guide" },
         { label: "Enclosure", value: "36x18x18 inches is the adult minimum, well past the old 20-gallon-long standard. A hatchling can start in a 10-gallon. Floor space counts for more than height.", source: "leopard-gecko-tank-setup-guide" },
-        { label: "Heat", value: "A heat mat under the warm hide, always on a thermostat, with the probe inside the warm hide and the mat's surface checked with an infrared gun. Skip overhead heat lamps as the primary source.", source: "leopard-gecko-temperature-guide" },
+        { label: "Heat", value: "A heat mat under the warm hide, always on an on/off probe thermostat with the probe on the warm hide floor, and that floor read with an infrared gun. Overhead heat works too, but belly heat is preferred for this species.", source: "leopard-gecko-temperature-guide" },
         { label: "Temperatures", value: "Warm hide floor 88 to 92°F, warm side air 80 to 84°F, cool side 70 to 77°F. Nights in the 70s, with 65°F the floor.", source: "leopard-gecko-temperature-guide" },
         { label: "Hides", value: "Three, not one: a warm dry hide, a cool dry hide, and a humid hide lined with damp sphagnum moss on the cool or middle side.", source: "leopard-gecko-tank-setup-guide" },
         { label: "Humidity", value: "30 to 40% in the enclosure, 70 to 80% inside the humid hide only. Raising the whole enclosure to hit that number is a respiratory infection risk.", source: "leopard-gecko-tank-setup-guide" },
@@ -401,7 +401,7 @@ export const geckoGuides = fillCostTokens([
         { label: "Feeding schedule", value: "Hatchlings daily, juveniles daily or every 1 to 2 days, adults every 2 to 4 days once the tail is as thick as the neck.", source: "leopard-gecko-feeding-guide" },
         { label: "Calcium", value: "Gut-load feeders for 24 to 72 hours, dust with plain calcium at most feedings for juveniles and breeding females and 2 to 3 times a week for adults, calcium with D3 a couple of times a week if there is no UVB, a multivitamin about once a week.", source: "leopard-gecko-feeding-guide" },
         { label: "Not eating", value: "A healthy adult with a plump tail can go a couple of weeks. A visibly thinning tail is the signal to stop waiting and see a reptile vet.", source: "leopard-gecko-feeding-guide" },
-        { label: "Handling", value: "Wait one to two weeks, and until it eats normally and stops fleeing. Then 5-minute sessions every other day, building to 10 to 20 minutes. Never by the tail, never during a shed.", source: "leopard-gecko-handling-guide" },
+        { label: "Handling", value: "Wait one to two weeks, and until it eats normally and stops fleeing. Then 5-minute sessions every other day, building to 10 to 20 minutes. Hatchlings: a few minutes, once eating well and no longer bolting. Never by the tail, never during a shed.", source: "leopard-gecko-handling-guide" },
         { label: "Budget", value: "%%gear:leopard-gecko%% of equipment, %%setup:leopard-gecko%% with the first vet exam, then %%monthly:leopard-gecko%% a month. An annual wellness exam runs $85 to $105; sick visits $100 to $800 or more.", source: "leopard-gecko-cost-guide" },
         { label: "Adult size", value: "6 to 9 inches; males 60 to 90 grams, females as light as 45.", source: "leopard-gecko-handling-guide" },
         { label: "Lifespan", value: "10 to 20 years with proper care, some reaching 25 to 30.", source: "leopard-gecko-cost-guide" },
@@ -421,7 +421,7 @@ export const geckoGuides = fillCostTokens([
         "Prolapse",
         "Retained shed that's swollen, darkened, or won't clear from the eyes or toes",
       ],
-      vetLine: "A reptile-experienced vet, found before you need one. Treat a tail thinning to a stick as cryptosporidiosis until a fecal PCR says otherwise: one clear test doesn't fully rule it out, and there is no cure.",
+      vetLine: "A reptile-experienced vet, with a fresh fecal sample and the cryptosporidiosis PCR test asked for by name, even for a gecko that seems healthy. One clear test doesn't fully rule it out, and there is no cure.",
     },
     routes: [
       { slug: "leopard-gecko-cost-guide", line: "$20 to $45 for the gecko, %%gear:leopard-gecko%% of equipment, %%monthly:leopard-gecko%% a month, and what a sick visit really costs." },
@@ -438,7 +438,7 @@ export const geckoGuides = fillCostTokens([
       "Three hides: warm dry, cool dry, and a humid hide",
       "Sphagnum moss for the humid hide",
       "Digital thermometer and hygrometer",
-      "Infrared temp gun for the mat's surface",
+      "Infrared temp gun for the warm hide floor",
       "Paper towel or tile for the floor",
       "Shallow water dish",
       "Small calcium dish",
