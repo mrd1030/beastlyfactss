@@ -305,3 +305,4 @@ line.
 - Tank setup: lights "14 hours a day in summer and cut back to 12 hours in winter". No cited source states it. Kept as written.
 - Tank setup: "Arcadia's own chart puts this 24-inch, 14-watt tube at a higher UV index than the short 12-inch 7% kit at the same distance (1.0 against 0.65 at 12 inches)". Named inline as a manufacturer spec, but no Arcadia page is in Sources; desktop check of the chart and add it.
 - Handling FunFact source (Higham and Russell, Biology Letters): desktop check of the citation.
+- Cost guide morphs (owner, 2026-11-06): the guide gives price bands only (basic, popular, rare designer) and names no morphs, with no MorphMarket entry in Sources. Same as the crested gecko: keep the bands; a named-morph section with MorphMarket prices is deferred to a later date.
