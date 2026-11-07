@@ -407,7 +407,7 @@ export default function AskBeastlyChat() {
           </button>
         </header>
 
-        <div ref={bodyRef} className="flex-1 overflow-y-auto px-4 py-4">
+        <div ref={bodyRef} className="flex-1 overflow-y-auto overscroll-contain px-4 py-4">
           {/* ------------------------------------------------ the answer card */}
           {view === 'ask' && !current && !pending && (
             <div>

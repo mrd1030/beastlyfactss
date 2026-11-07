@@ -85,7 +85,7 @@ export const snakeEncyclopedia = [
   },
   {
     id: "milk-snake", name: "Milk Snake", scientific: "Lampropeltis triangulum",
-    category: "Snakes", emoji: "🐍", difficulty: "Beginner", guideId: "milk-snake", available: true, image: "/assets/guides/milk-snake.jpg",
+    category: "Snakes", emoji: "🐍", difficulty: "Beginner/Intermediate", guideId: "milk-snake", available: true, image: "/assets/guides/milk-snake.jpg",
     bio: {
       overview: "Milk snakes are a widely distributed kingsnake species found from Canada through Central America. Their name comes from the folk myth that they slipped into barns to drink cow's milk - unfounded, but barn-dwelling rodents are certainly part of their diet. Many subspecies display vivid red, black, and yellow/white banding that resembles the venomous coral snake, widely explained as Batesian mimicry.",
       origin: "North and Central America (Canada to Ecuador)",

@@ -34,10 +34,11 @@ Agent models (owner, 2026-11-06): grading and regrades run on Fable; source rese
 - [ ] bearded-dragon (in progress: all six graded and fixed 2026-11-06; cost, handling, tank setup A-, health, feeding, enrichment fixed toward A- after the last regrade. Open: desktop checks (VCA brumation and housing pages, nail claims, ReptiFiles for enrichment), CANV naming, UVB guide zone 3 to 4, bioactive guide DIY floor figure, book items in FIX_PACKAGES)
 - [ ] leopard-gecko (in progress: all six graded and fixed 2026-11-06, regrade B to C+ before the last round of fixes; owner review list in research/LEOPARD_GECKO_RESEARCH.md; book pinky rows queued)
 - [ ] crested-gecko (in progress: all six graded and fixed 2026-11-06; final regrade 2026-11-07: cost A-, handling A-, health A, tank setup A, feeding A, enrichment A-, fixes applied. Eight contradictions settled, FunFacts sourced, Sources blocks rebuilt with the hobby sites out, hub matched, book items and corrections logged. Open: MorphMarket desktop check, named-morph section deferred, owner decision on adding tetra-style sections (buying checklist, shipping, health triage and healthy-gecko table, enrichment priority order); owner review list in research/CRESTED_GECKO_RESEARCH.md)
+- [ ] hognose-snake (moved up 2026-11-07: MSN cites its tank setup guide. Graded, source-checked (Sonnet) and fixed 2026-11-07; final Fable regrade: cost A-, handling B+ then polished, health A-, tank setup A-, feeding A-, enrichment A-. Hobby and retailer sources out, feeding interval, prey size, substrate depth, bite first aid and lifespan corrected, corrections logged, book items in FIX_PACKAGES. Open: owner review list in research/HOGNOSE_SNAKE_RESEARCH.md (prices need a MorphMarket desktop check), book rebuild)
+- [ ] milk-snake (moved up 2026-11-07: MSN cites its feeding and tank setup guides, snakesnuggles its health guide. Graded, source-checked (Sonnet) and fixed 2026-11-07; final Fable regrade: cost B, handling B+, health B+, tank setup B+, feeding A-, enrichment A-, then a last polish round on Fable's notes. Difficulty set to Beginner/Intermediate (six guides, hub, encyclopedia, vs corn snake and legal guides). Open: owner review list in research/MILK_SNAKE_RESEARCH.md (prices unsourced))
 - [ ] gargoyle-gecko
 - [ ] african-fat-tail
 - [ ] ball-python
-- [ ] hognose-snake
 - [ ] russian-tortoise
 - [ ] axolotl
 - [ ] whites-tree-frog
@@ -90,7 +91,6 @@ Agent models (owner, 2026-11-06): grading and regrades run on Fable; source rese
 - [ ] koi
 - [ ] leaf-tailed-gecko
 - [ ] madagascar-hissing-cockroach
-- [ ] milk-snake
 - [ ] mourning-gecko
 - [ ] mouse
 - [ ] oscar-fish
