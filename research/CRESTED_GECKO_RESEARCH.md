@@ -668,7 +668,7 @@ Health guide (crested-gecko-health-issues-guide.mdx):
 - "Obesity is the quieter weight problem, and it is linked to fatty liver disease and to trouble with eggs.": the eggs part (C25 backs fatty liver).
 - "sacs that shrink noticeably over a season mean her reserves are running down"
 - "producing an infertile egg is harder on her than a fertile one" (only C14, hobby).
-- "a container with a few inches of slightly moist coconut fiber and fir bark, roughly half and half." (only C14, hobby).
+- "a container with a few inches of slightly moist coconut fiber and fir bark, roughly half and half." (only C14, hobby). The lay box itself is backed by C6 ("A plastic lidded container with an access hole and several ventilation holes is ideal for nest boxes"), added to the health Sources 2026-11-06; the fiber and bark mix is still unsourced.
 - "**Skin and scale issues** can develop from chronically high humidity combined with poor enclosure hygiene."
 - "A mature female kept alone can still develop and lay infertile clutches": only partly sourced (C4 implies it).
 
@@ -728,3 +728,4 @@ Other guides, FunFact and FAQ items found in the same run:
 - 2026-11-06: Enrichment Sources approved and applied (owner): RSPCA (C9), ReptiFiles decorations (C11), IAABC (C10, owner desktop read: peer reviewed; backs 'Live feeding... promotes hunting and stalking behaviour', layout changes about monthly and less often for a stressed gecko, multi-level climbing 'a must' for arboreal geckos), Animal Diversity Web (C21), Griffing et al. 2021 (C28), Arbor View (C24). More Reptiles (C20) and Wikipedia (C13) out. Lines that were Wikipedia only: 'lower canopy and understory of rainforest' trimmed to 'rainforest' (C21), 'the Isle of Pines and its islets' to 'the Isle of Pines' (C21); 'height for sleeping' now 'cover for resting' (follows contradiction 1, C21).
 - 2026-11-06: Feeding Sources approved and applied (owner): ReptiFiles (C11, plus Shedding Tips), PetMD (C3), Arbor View (C24), Zen Habitats (C27), Animal Diversity Web (C21, feeding at night), AZA Nutrition Advisory Group nutrient analysis (C30, hornworm moisture). NEHerp (C14), Moon Valley (C15) and Reptile Craze (C19) out; the 3 day water limit goes on the owner review list.
 - 2026-11-06: Health Sources approved and applied (owner): ReptiFiles (C11: Ultimate Guide, MBD, floppy tail, impaction, shedding), Zen Habitats (C27), Merck (C25), PetMD (C3), VCA dystocia (C4), Animal Diversity Web (C21), Arbor View (C24); 7 of 8. ScaledKeeper (C17), ReptileCoach (C18) and NEHerp (C14) out; the lines only NEHerp backed were already on the owner review list.
+- 2026-11-06: Chicago Exotics (C6) added to the health Sources for the lay box (owner); 8 of 8, the cap.
