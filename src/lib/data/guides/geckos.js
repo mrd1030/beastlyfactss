@@ -402,7 +402,7 @@ export const geckoGuides = fillCostTokens([
         { label: "Calcium", value: "Gut-load feeders for 24 to 72 hours, dust with plain calcium at most feedings for juveniles and breeding females and 2 to 3 times a week for adults, calcium with D3 a couple of times a week if there is no UVB, a multivitamin about once a week.", source: "leopard-gecko-feeding-guide" },
         { label: "Not eating", value: "A healthy adult with a plump tail can go a couple of weeks. A visibly thinning tail is the signal to stop waiting and see a reptile vet.", source: "leopard-gecko-feeding-guide" },
         { label: "Handling", value: "Wait one to two weeks, and until it eats normally and stops fleeing. Then 5-minute sessions every other day, building to 10 to 20 minutes. Never by the tail, never during a shed.", source: "leopard-gecko-handling-guide" },
-        { label: "Budget", value: "$315 to $760 of equipment, %%setup:leopard-gecko%% with the first vet exam, then %%monthly:leopard-gecko%% a month. An annual wellness exam runs $85 to $105; sick visits $100 to $800 or more.", source: "leopard-gecko-cost-guide" },
+        { label: "Budget", value: "%%gear:leopard-gecko%% of equipment, %%setup:leopard-gecko%% with the first vet exam, then %%monthly:leopard-gecko%% a month. An annual wellness exam runs $85 to $105; sick visits $100 to $800 or more.", source: "leopard-gecko-cost-guide" },
         { label: "Adult size", value: "6 to 9 inches; males 60 to 90 grams, females as light as 45.", source: "leopard-gecko-handling-guide" },
         { label: "Lifespan", value: "10 to 20 years with proper care, some reaching 25 to 30.", source: "leopard-gecko-cost-guide" },
         { label: "Hygiene", value: "Wash hands with soap right after any contact, keep the gecko out of the kitchen, and never clean the enclosure in a kitchen sink or a bathtub people use.", source: "reptile-salmonella-hygiene-guide" },
@@ -424,7 +424,7 @@ export const geckoGuides = fillCostTokens([
       vetLine: "A reptile-experienced vet, found before you need one. Treat a tail thinning to a stick as cryptosporidiosis until a fecal PCR says otherwise: one clear test doesn't fully rule it out, and there is no cure.",
     },
     routes: [
-      { slug: "leopard-gecko-cost-guide", line: "$20 to $45 for the gecko, $315 to $760 of equipment, %%monthly:leopard-gecko%% a month, and what a sick visit really costs." },
+      { slug: "leopard-gecko-cost-guide", line: "$20 to $45 for the gecko, %%gear:leopard-gecko%% of equipment, %%monthly:leopard-gecko%% a month, and what a sick visit really costs." },
       { slug: "leopard-gecko-tank-setup-guide", line: "The 36x18x18 minimum, belly heat on a thermostat, the three-hide system, and the humid hide that prevents most shedding problems." },
       { slug: "leopard-gecko-temperature-guide", line: "Every zone's target, mat versus overhead, the thermostat rule, night temperatures, and the signs the numbers are wrong." },
       { slug: "leopard-gecko-feeding-guide", line: "How often by age, what they eat, the safe treats and the foods to avoid, and the reasons one refuses food, from a normal shed to a vet visit." },
