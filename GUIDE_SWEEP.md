@@ -30,7 +30,7 @@ One commit per species, pushed to the working branch.
 ### 1. Care package animals (20)
 
 - [ ] bearded-dragon (in progress: all six graded and fixed 2026-11-06; cost, handling, tank setup A-, health, feeding, enrichment fixed toward A- after the last regrade. Open: desktop checks (VCA brumation and housing pages, nail claims, ReptiFiles for enrichment), CANV naming, UVB guide zone 3 to 4, bioactive guide DIY floor figure, book items in FIX_PACKAGES)
-- [ ] leopard-gecko
+- [ ] leopard-gecko (in progress: all six graded and fixed 2026-11-06, regrade B to C+ before the last round of fixes; owner review list in research/LEOPARD_GECKO_RESEARCH.md; book pinky rows queued)
 - [ ] crested-gecko
 - [ ] gargoyle-gecko
 - [ ] african-fat-tail
