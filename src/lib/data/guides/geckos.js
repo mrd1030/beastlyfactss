@@ -178,7 +178,7 @@ export const geckoGuides = fillCostTokens([
     faqs: [
       { q: "How long can a crested gecko go without eating?", a: "About 2 to 3 weeks for a healthy adult at a good weight, though a vet consult is worth considering once the second week passes, especially alongside visible weight loss. Juveniles hold far less reserve and don't get that grace period. Water runs on a shorter clock: roughly 3 days." },
       { q: "Does a crested gecko's tail grow back if it drops?", a: "No, and this is the critical difference from species like leopard geckos. A crested gecko's tail does not grow back once dropped. The good news is a tailless gecko, often called a \"frog butt\" by keepers, lives a completely normal, healthy life." },
-      { q: "What's the maximum safe temperature for a crested gecko enclosure?", a: "85°F, a hard ceiling with zero exceptions. New Caledonia, where they come from, tops out at 79-85°F in the hot season, and a long stretch above that risks fatal heat stroke. Too much heat is the bigger danger with this species." },
+      { q: "What's the maximum safe temperature for a crested gecko enclosure?", a: "85°F, a hard ceiling with zero exceptions. New Caledonia, where they come from, averages daily highs of about 79 to 81°F in the hot season, and a long stretch above 85°F risks fatal heat stroke. Too much heat is the bigger danger with this species." },
     ],
   },
   {
