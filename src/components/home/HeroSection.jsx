@@ -200,11 +200,11 @@ export default function HeroSection({ onOpenFact }) {
             </div>
 
             <h1 className="font-display font-bold leading-[1.15] mb-4 text-[clamp(1.9rem,4.6vw,3.3rem)]">
-              <span className="text-foreground">Wild facts. Pet care.</span>
+              <span className="text-foreground">Wild&nbsp;facts. Pet&nbsp;care.</span>
               <br />
-              <span className="text-secondary">We looked it up.</span>
+              <span className="text-secondary">We looked it&nbsp;up.</span>
               <br />
-              <span className="text-foreground">So you don&rsquo;t have to.</span>
+              <span className="text-foreground">So you don&rsquo;t&nbsp;have&nbsp;to.</span>
             </h1>
 
            <p className="text-base sm:text-lg text-foreground/80 font-body max-w-lg mx-auto mb-6 text-center leading-relaxed">
