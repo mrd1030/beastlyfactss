@@ -515,8 +515,8 @@ export const snakeGuides = fillCostTokens([
     ],
     faqs: [
       { q: "How humid should a hognose snake enclosure be?", a: "Keep the air at 30 to 50%, which is dry for a pet snake. The only damp spot is a humid hide the snake uses when it sheds." },
-      { q: "Why are hognose snakes prone to impaction?", a: "Hognoses are enthusiastic, somewhat messy eaters, and they're prone to swallowing substrate along with their food. Feeding in a separate container away from the loose substrate is the single most effective prevention. Learn your snake's usual gap between a meal and its stool. A missed stool past that gap, with bloating, lethargy or refused food, needs a vet, not more waiting." },
-      { q: "Are Western hognose snakes dangerous to handle?", a: "Not dangerous, but not harmless either. Bites are documented and uncommon, mostly from a hungry snake around feeding time, and the effects stay local. A quick bite often does nothing; a snake that holds on or chews can cause marked swelling and bruising. In the best-known case a keeper had swelling, bruising and mild cellulitis, no systemic effects, and a recovery that ran about five months." },
+      { q: "Why are hognose snakes prone to impaction?", a: "Hognoses grab prey hard and often swallow bedding with it. Serving meals in a separate tub keeps the bedding out of the meal. A stool that comes later than your snake's normal, alongside a swollen belly, sluggishness or a refused meal, calls for a vet visit." },
+      { q: "Are Western hognose snakes dangerous to handle?", a: "Not dangerous, but not harmless either. A rare bite, usually from a snake that mistakes a hand for food, can swell and bruise badly if the snake keeps hold, though the effects stay around the wound." },
     ],
   },
   {
@@ -601,9 +601,9 @@ export const snakeGuides = fillCostTokens([
       "Frozen/thawed rodents",
     ],
     faqs: [
-      { q: "Can I keep two milk snakes together?", a: "No, never. Milk snakes are cannibalistic, and housing two together in the same enclosure under any circumstances is a firm rule with no exceptions." },
-      { q: "Does the 'red touches yellow, kill a fellow' rhyme work?", a: "Only as a rough US regional guideline, and even then it has real limits. Central and South America have dozens of coral snake species with different band orders, and young or damaged, twisted specimens can make the pattern hard to read, even for experienced herpetologists. It's essentially a non-issue for a captive-bred pet, since there's no real confusion risk in a home setting." },
-      { q: "My milk snake hides all the time. Does it need a smaller enclosure?", a: "That is the conclusion most keepers reach and the colubrid research points elsewhere. Given enclosures longer than their body, corn snakes stretched out fully and preferred the larger option. A snake that hides constantly in a large bare enclosure is short of cover rather than short of walls." },
+      { q: "Can I keep two milk snakes together?", a: "No, never. Milk snakes are cannibalistic, and never housing two together is the firm rule with no exceptions." },
+      { q: "Does the 'red touches yellow, kill a fellow' rhyme work?", a: "Only as a rough guide inside the US. Coral snakes farther south show different band orders, and a young or damaged snake can be hard to read even for experienced herpetologists. A captive-bred pet from a breeder needs no identifying at all." },
+      { q: "My milk snake hides all the time. Does it need a smaller enclosure?", a: "That is the conclusion most keepers reach, and the colubrid research points elsewhere. Given enclosures longer than their body, corn snakes stretched out fully and preferred the larger option. A snake that hides constantly in a big bare enclosure needs more cover spread across that floor, and a smaller box would only take the room away." },
     ],
   },
   {
