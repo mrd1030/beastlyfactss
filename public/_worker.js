@@ -3240,7 +3240,11 @@ async function askRetrieve(db, question, context = null, router = null) {
   // The question's own words: not the species name, and with a species named
   // not the "tell me about it" words either.
   // A group's own word ("tetra", "fish") is its name here, not content.
-  const content = tokens.filter((t) => !speciesWords.has(t) && !groupWord(t) && !((species || group) && ASK_BROAD.has(t)));
+  // A plural of the name is the name too: "how big do millipedes get" kept
+  // "millipedes" as a word to find, and the size section, which says
+  // "millipede", never matched (owner, 2026-11-07).
+  const nameWord = (t) => speciesWords.has(t) || speciesWords.has(t.replace(/s$/, '')) || speciesWords.has(t.replace(/es$/, ''));
+  const content = tokens.filter((t) => !nameWord(t) && !groupWord(t) && !((species || group) && ASK_BROAD.has(t)));
   // The router's words and the reader's, each scored on its own below.
   const contentRouter = content.filter((t) => routerWords.has(t));
   const contentReader = content.filter((t) => readerWords.has(t));
@@ -4310,6 +4314,12 @@ function askRouterCheck(raw, meta) {
   // field is the animal.
   let unknown = askPlainWords(raw.unknown_animal, 3, 40) || (name && !animal ? askPlainWords(name, 3, 40) : '');
   if (unknown && !animal && !group && listed(unknown)) animal = listed(unknown);
+  // A nickname the router did not know ("sully", owner, 2026-11-07) goes
+  // through the site's alias list before it counts as an unknown animal.
+  if (unknown && !animal && !group) {
+    const aliased = askExpand(unknown, meta);
+    if (aliased !== unknown && listed(aliased)) animal = listed(aliased);
+  }
   if (animal || group) unknown = '';
   const { kind } = raw;
   const search = askPlainWords(raw.search, 8, 80);
