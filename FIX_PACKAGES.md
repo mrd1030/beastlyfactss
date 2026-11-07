@@ -55,6 +55,7 @@ Live editions (2026-10-04): bearded dragon 4.1; leopard gecko, crested gecko, ba
 - Note, not yet a change: the book (`pages_02.html:144`) and the site's UVB guide put bearded dragons in Ferguson Zone 3. Baines et al. 2016 lists Pogona vitticeps as zone 3 to 4. Owner decides whether to change either.
 
 ### Leopard gecko (3.1, `leopard-gecko-src`)
+- [ ] Book: `pages_02.html:161` to `:162` UVB distance table, inside the enclosure: normally colored "10 to 18 in (25 to 45 cm)" becomes 12 to 18 in (30 to 45 cm); albino and pale morphs "14 to 18 in (35 to 45 cm)" becomes about 20 in (50 cm). Over-mesh figures unchanged. Owner, 2026-11-06, from the Arcadia Brochure 2026 LumenIZE ProT5 table (14 W ShadeDweller Max, full output: 1.4 at 12 in, 1.0 at 15, 0.8 at 18, 0.5 at 20); copy at research/assets/arcadia-brochure-2026-p37-uvi-outputs.jpg.
 - [ ] Glossary: VCA out (`pages_07.html:60`); CITES (`:12`) moves to the law page mini glossary.
 - Note: ReptiFiles' heights for the 2.5% ShadeDweller Max sit closer than Arcadia's chart implies; Arcadia's general guide gives a UVI of 2 to 3 where the book follows ReptiFiles' lower figure. No change planned.
 
