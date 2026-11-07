@@ -179,7 +179,7 @@ export default function HeroSection({ onOpenFact }) {
             section's padding places this instead. Leaving -17vw there would
             drag the card further up the wider the window got, which is the same
             drift running the other way. */}
-        <div className="relative z-[5] w-full max-w-[760px] -mt-[20vw] sm:-mt-[17vw] lg:mt-0 px-3 sm:px-5 flex flex-col items-center">
+        <div className="relative z-[5] w-full max-w-[760px] -mt-[28vw] sm:-mt-[17vw] lg:mt-0 px-3 sm:px-5 flex flex-col items-center">
           <div className="w-full flex flex-col items-center">
           {/* Deliberately NOT animated in, same reasoning as the daily fact
               card below. framer-motion does not emit its styles into the
