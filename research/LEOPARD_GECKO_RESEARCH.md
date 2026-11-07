@@ -280,6 +280,12 @@ Current Sources (5): PetMD care sheet (L10); VCA care and feeding (L11); Gould e
 - Changed: "Diet, Briefly" cut (Owner 2026-11-06); tube replacement every 6 to 12 months (Owner 2026-11-06).
 - Open: lighting hours and the Arcadia chart (owner review); the UVB distances and pale-morph UVI have no recorded source.
 
+## Owner decisions, 2026-11-06 (late)
+
+- Mice: the guides and care package book do not mention mice at all (owner).
+  The feeding guide line was cut; the book rows are queued for removal in
+  FIX_PACKAGES.md.
+
 ## Kept without a source (owner review)
 
 - Cost guide, after The Vet Desk and Reptile Direct came out (2026-11-06): $20 to $45 at a pet store; $50 to $150 from a breeder; popular morphs $75 to $300 and rare morphs $500 to $3,500 or more; $35 to $100 for live shipping; an annual exam at $85 to $105; sick or emergency visits $100 to $800 or more. Kept as written.

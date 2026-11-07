@@ -365,6 +365,19 @@ Current Sources: RSPCA How to care for your bearded dragon; BeardedDragon.org Di
 - Reptile quarantine guide: keeps the wild-caught comparison (owner, 2026-11-06).
 - Encyclopedia entry: the export ban, if used, sourced to the Australian government's EPBC Act page (owner, 2026-11-06).
 
+## Owner decisions, 2026-11-06 (late)
+
+- Adult diet ratio about 80% greens and 20% insects is the owner's rule. NC
+  State (75% plant, 25% animal) and VCA (50/50) differ; the guide keeps 80/20.
+  Do not re-raise.
+- MorphMarket stays in the cost guide's Sources for morph prices; written into
+  RULES.md as the one for-sale listing exception.
+- Mice: the guides and care package books do not mention mice at all (owner).
+  The feeding and safe foods lines were cut; the book row is queued for
+  removal in FIX_PACKAGES.md.
+- Zoo Med tube sizes and the MSD quarantine figure seen only in search
+  summaries: owner is fine with that as recorded.
+
 ## Kept without a source (owner review)
 
 - Fruit "once or twice a week at most" (safe foods guide, Fruit and the Never-Feed List): VCA, NC State and LafeberVet cap fruit by share of the diet, none gives a frequency. Kept as written (owner, 2026-11-03).

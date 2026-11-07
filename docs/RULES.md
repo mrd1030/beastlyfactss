@@ -183,7 +183,9 @@ exists to state it.
 
 A `<Sources>` entry is a vet, university, government, peer-reviewed paper,
 manufacturer spec, or established husbandry reference. Never a retailer product
-page or a for-sale listing.
+page or a for-sale listing. One exception (owner, 2026-11-06): a MorphMarket listings
+page backs morph prices in a cost guide, since breeder listings are where those
+prices live; the body never names it.
 
 No hobby sites (owner, 2026-11-01): retailer blogs and care pages (Aquarium
 Co-Op, Fishkeeper and the like), hobby blogs (Aquarium Source and the like),
