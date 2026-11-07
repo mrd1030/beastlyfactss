@@ -51,6 +51,26 @@ leopard geckos, the same house rule as bearded dragons (snakes and larger
 reptiles are fine). The guide now says pinky mice and other rodents stay off
 the menu, with insects covering protein at every age.
 
+## 2026-11-06: sounds-off items settled in the sweep
+
+- Handling: "hold off on regular handling until it reaches roughly 6 inches"
+  waited until near adult size (adults are 6 to 9 inches); no source gives a
+  size cutoff. Replaced with readiness, matching the guide's settle-in section.
+- Feeding: waxworms "limit them to a couple times a week" read as a staple
+  beside "occasional treats"; now "keep them to an occasional treat".
+- Feeding: "adult weights of 60 to 75 grams" scoped "in that study" (seven
+  geckos); the handling guide and hub carry the species range.
+- Cost: the $30 floor only adds up with the optional UVB row; the annual line
+  now says "with the UVB row".
+- Enrichment: Rickman et al. 2025 cited from the paper, not the Lincoln news
+  page (Applied Animal Behaviour Science 283: 106487,
+  doi 10.1016/j.applanim.2024.106487). Abstract via the Refinement Database:
+  enriched housing showed "a range of behaviours indicative of improved
+  welfare", no difference on anxiety tests, and "a strong preference for the
+  Naturalistic enriched enclosure" (N = 6). The guide's wording matches.
+- Enrichment: the toys-do-not-replace-hides point cut from FAQ 2; the
+  KeyTakeaway and What Not to Do keep it.
+
 ## Kept without a source (owner review)
 
 - Cost guide, after The Vet Desk and Reptile Direct came out (2026-11-06):
@@ -58,3 +78,18 @@ the menu, with insects covering protein at every age.
   $300 and rare morphs $500 to $3,500 or more; $35 to $100 for live shipping;
   an annual exam at $85 to $105; sick or emergency visits $100 to $800 or more.
   Kept as written.
+- Handling: "A gecko barking isn't necessarily distress, since it can just mean
+  it's hungry". No source in the guide states it. Kept as written.
+- Health: "Most reptiles brought to a vet for egg binding are single females
+  that have never met a male". Strong statistical claim with no source shown.
+  Kept as written.
+- Health: "A mature female can lay four to five clutches in a season, about a
+  month apart". Kept as written.
+- Tank setup: lights "14 hours a day in summer and cut back to 12 hours in
+  winter". No cited source states it. Kept as written.
+- Tank setup: "Arcadia's own chart puts this 24-inch, 14-watt tube at a higher
+  UV index than the short 12-inch 7% kit at the same distance (1.0 against
+  0.65 at 12 inches)". Named inline as a manufacturer spec, but no Arcadia page
+  is in Sources; desktop check of the chart and add it.
+- Handling FunFact source (Higham and Russell, Biology Letters): desktop check
+  of the citation.
