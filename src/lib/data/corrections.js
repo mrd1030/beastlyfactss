@@ -29,6 +29,30 @@
 export const CORRECTIONS = [
   {
     date: '2026-11-07',
+    page: '/blog/milk-snake-feeding-guide/',
+    title: 'Milk Snake Feeding',
+    was: 'It said to wait 48 hours after a meal before handling.',
+    now: 'Wait about 3 days after a meal before handling.',
+    why: 'MSD Veterinary Manual, Nutrition in Snakes',
+  },
+  {
+    date: '2026-11-07',
+    page: '/blog/milk-snake-feeding-guide/',
+    title: 'Milk Snake Feeding',
+    was: 'Prey could be up to 1.5 times the width of the snake\'s body. The tank setup guide said the same.',
+    now: 'Prey no wider than the snake\'s head, in the feeding and tank setup guides.',
+    why: 'MSD Veterinary Manual, Nutrition in Snakes',
+  },
+  {
+    date: '2026-11-07',
+    page: '/blog/milk-snake-tank-setup-guide/',
+    title: 'Milk Snake Tank Setup',
+    was: 'It said low-level UVB offers a real benefit.',
+    now: 'UVB is optional: a whole-prey eater does not need it for calcium, though it is recommended for welfare.',
+    why: 'Baines, LafeberVet: UVB Lighting for Reptiles; Merck Veterinary Manual',
+  },
+  {
+    date: '2026-11-07',
     page: '/blog/hognose-snake-feeding-guide/',
     title: 'Hognose Snake Feeding',
     was: 'Young snakes were to eat every 5 to 7 days, mature females every 10 to 14 days and some large females every 14 to 21, with once every two weeks as the default for any adult.',

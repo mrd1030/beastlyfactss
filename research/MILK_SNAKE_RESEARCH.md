@@ -218,6 +218,19 @@ The prices stay unsourced (no approved price source exists; see the unsourced li
 - Arboreal claim in the enrichment FAQ.
 - Hutchings 2025 not opened this pass; Harper and Pfennig not reopened.
 
+## Applied 2026-11-07
+
+Owner-approved fixes from the source check, applied by Claude. No web page was opened for this; every change rests on the quotes above.
+
+- Handling after a meal: feeding guide "48 hours" is now "about 3 days" (MSD Nutrition in Snakes). No other milk snake guide or the hub gave a number.
+- UVB: tank setup Lighting now says UVB is optional, a whole-prey eater gets D3 from its food and does not need UVB for calcium, and appropriate UVB is widely recommended for every reptile on welfare grounds (Baines, Lafeber; Merck lists snakes under no special lighting requirements). The 5% T5 hood link stays. Hub UVB row reworded to match.
+- Arboreal claim cut: enrichment FAQ 4 now offers a climb as an option, not a requirement, and the Climbing section's "climb more readily than the terrestrial label suggests" is now "Climbing is an option, not a need." ADW was not added to enrichment, since the body makes no ground-dwelling claim.
+- "Old World tale" is now "folk legend" in the handling FAQ and body (MN DNR).
+- "Hatchlings feed mainly on other young snakes" now carries ADW's hedge, "seem to feed mainly on", in the feeding FAQ, the KeyTakeaway and the description.
+- Prey size: the 1.5 times width rule is now "no wider than the snake's head" (MSD) in the feeding title, H1, excerpt, seoDescription, description, FAQ and body, the tank setup FAQ and Diet Basics, and the hub feeding row and route line. The 10% body weight rule is unchanged. The feeding body's "the weight rule catches an overfed adult, since a fat snake is wider" sentence was cut, since the head rule does not follow body width.
+- Sources: cost 4 (XYZReptiles out; Merck Management and Husbandry and ADW in; PetMD trimmed to the care sheet actually read). Handling 6 (MN DNR in; PetMD trimmed; MDX comment updated). Health 4 entries covering six pages: the clinic page is out, the two Merck pages are combined into one entry, the two WikiVet pages into another, MSD Nutrition in Snakes added. Tank setup 5 (Merck Management and Husbandry, Baines/Lafeber and Grover and Despain 2009 in; IRCF journal owner approved). Feeding 5 (MSD and Grover and Despain in). Enrichment unchanged at 5; its MDX note is still true.
+- Difficulty: "Beginner/Intermediate" on all six guides, the hub and the encyclopedia entry. Reason: PetMD's DVM-authored care sheet rates the species Intermediate, ReptiFiles calls it fine for people new to snakes, and nervous, nippy hatchlings, musking and a genus known for escapes put it a step above a corn snake. The vs corn snake and legal guides still say "Beginner" and were not changed.
+
 ## Kept without a source (owner review)
 
 Flagged by Fable as odd or possibly incorrect; not checked yet.
@@ -227,3 +240,11 @@ Flagged by Fable as odd or possibly incorrect; not checked yet.
 - Tank setup: "low-level UVB offers real benefit"; the F10SC brand name in the body.
 - Feeding: "the occasional chick"; fasting 1 to 2 weeks before cooling; "hatchlings feed mainly on other young snakes".
 - Enrichment: FAQ 4 "more arboreal than kingsnakes generally get credit for"; Hutchings 2025 is in Sources but not used in the body.
+
+Updated 2026-11-07 after the source check (items that lost their source or are still unsourced; the Fable list above is kept as history):
+- Cost: every price (Pueblan $70 to $100, Honduran and Sinaloan $150 to $200, morphs $150 to $500, $15 to $30 a month, exam $50 to $100, fecal $25 to $50, emergency $150 to $300). XYZReptiles is gone and no approved price source exists. "Wild-caught snakes and unproven hatchlings are the ones most likely to refuse food" is backed in this pass only by Grover and Despain (buy captive-bred, established feeders), which is not in the cost Sources.
+- Tank setup: Pueblan 28 to 36 inches and Honduran 40 to 48 inches; halogen preferred over ceramic as the main heat; F10SC contact time (the guide gives no number, keep it that way); daily spot clean and the 3 to 4 month substrate replacement.
+- Handling: belly "a few tablespoons"; "no more than one session a day"; adults of a few subspecies "nervous for life"; "nursing mothers" in the folk legend (MN DNR names cows only).
+- Health: mite color "red" (the clinic page was the only carrier); scale rot cause (wet, dirty substrate) and its progression to septicemia, both carried only by the removed clinic page.
+- Feeding: "the occasional chick"; fasting 1 to 2 weeks before cooling (Grover supports the principle, not the figure); hatchling and juvenile intervals (ReptiFiles only; vets say more often); "both rules give the same mouse" now pairs head width with 10% body weight.
+- Enrichment: Hutchings 2025 still not opened and still unused in the body.
