@@ -28,6 +28,30 @@
 
 export const CORRECTIONS = [
   {
+    date: '2026-11-07',
+    page: '/blog/bird-feather-dust-air-quality-guide/',
+    title: 'Bird Dust and Air Quality',
+    was: 'It said cockatoos and African greys carry the most risk of psittacine beak and feather disease (PBFD).',
+    now: 'PBFD mainly affects young parrots. Screening has made it uncommon in captive-bred cockatoos, and it is rare but still seen in African greys, Eclectus parrots, lovebirds and lorikeets.',
+    why: 'Merck Veterinary Manual, Viral Diseases of Pet Birds',
+  },
+  {
+    date: '2026-11-07',
+    page: '/blog/bird-feather-dust-air-quality-guide/',
+    title: 'Bird Dust and Air Quality',
+    was: 'The Levoit Core300-P was labeled as covering up to 1,073 sq ft.',
+    now: 'Up to 1,066 sq ft at one air change per hour, the maker\'s figure. The same label is fixed on the cockatoo tank setup and African grey vs cockatoo guides.',
+    why: 'Levoit Core 300-P product page',
+  },
+  {
+    date: '2026-11-07',
+    page: '/blog/bird-feather-dust-air-quality-guide/',
+    title: 'Bird Dust and Air Quality',
+    was: 'It said hypersensitivity pneumonitis occurs in macaws kept with cockatiels or cockatoos, and that a 2025 case report blamed delayed diagnosis on doctors not linking symptoms to a bird.',
+    now: 'It has been reported in macaws, mainly blue-and-gold macaws. The case report ties the delay to early lung changes that a standard chest X-ray misses, and stresses a detailed exposure history.',
+    why: 'Merck Veterinary Manual, Miscellaneous Diseases of Pet Birds; Kila et al., Cureus 2025',
+  },
+  {
     date: '2026-11-06',
     page: '/blog/crested-gecko-tank-setup-guide/',
     title: 'Crested Gecko Tank Setup',

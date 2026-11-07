@@ -1639,7 +1639,7 @@ export const AFFILIATE_PRODUCTS = [
   },
   {
     slug: "air-purifier-levoit-core300-p",
-    product: "Levoit Core300-P Air Purifier (HEPA, up to 1073 sq ft)",
+    product: "Levoit Core300-P Air Purifier (HEPA, up to 1,066 sq ft at 1 ACH)",
     category: "Air Purifiers",
     retailer: "amazon",
     link: "https://amzn.to/4ynFpdm",
