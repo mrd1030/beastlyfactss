@@ -9,6 +9,22 @@ from a guide without the owner's say.
   sites). Zen Habitats stays in the feeding guide: approved by the owner
   (2026-11-06), the same standing as ReptiFiles.
 
+## 2026-11-06: FunFacts
+
+- Cost and enrichment FunFacts cut (owner): the cost one was advice the body
+  already gives; the enrichment one cited unnamed "additional work".
+- Health FunFact (stick tail nickname, a disease topic) replaced with the
+  eyelid fact. PetMD Leopard Gecko Care Sheet: "Unlike many gecko species,
+  leopard geckos have functional eyelids" and "they can blink and even close
+  their eyes while sleeping".
+- Handling FunFact (dropped tail twitches as a decoy) sourced to Higham and
+  Russell, "Flip, flop and fly: modulated motor control and highly variable
+  movement patterns of autotomized gecko tails", Biology Letters (online
+  September 2009, cited as 2010). Seen through press coverage, not the paper:
+  desktop check of the citation.
+- PetMD also states the tail "will regrow within about 30 days", which backs
+  the handling guide's regrowth line.
+
 ## Kept without a source (owner review)
 
 - Cost guide, after The Vet Desk and Reptile Direct came out (2026-11-06):
