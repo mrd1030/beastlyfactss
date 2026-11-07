@@ -78,6 +78,7 @@ Live editions (2026-10-04): bearded dragon 4.1; leopard gecko, crested gecko, ba
 - [ ] Book: `pages_06.html:120` "If the room holds the range, skip the bulb and thermostat": add that the thermometer stays either way, as a safety check (owner, 2026-10-05; PetMD and Chicago Exotics both keep thermometers in with or without heat). The equipment page (`pages_02.html:92`) and daily check (`pages_06.html:342`) already have it, so this is one clause on the skip line.
 - [ ] Book: `pages_02.html:44` pair space "double the space of an 18×18×36 in" enclosure; the setup guide's single-adult minimum is 18x18x24. Settled 2026-10-15: the site cost guide now says double the 18x18x24 single-adult minimum; the book follows on the next edit. (Sweep 2026-10-05.)
 - [ ] Book: `pages_02.html` temperature table, "Floor, the cool area" reads 70 to 75°F. The site setup guide moved the floor to 72 to 75°F on 2026-10-15, since its own text puts lethargy at or below about 72°F. Match on the next edit.
+- [ ] Book: `pages_03.html:196` adult row "Males about 35 to 45 g; females about 45 to 65 g, more while carrying eggs": the site health guide now says about 35 to 55 g for an adult, a female heavier for a while when carrying eggs (owner, 2026-11-06; Zen Habitats 35 to 55 g, no source gives a split by sex or 45 to 65 g).
 
 ### Gargoyle gecko (1.1, `gargoyle-gecko-src`)
 - [ ] Glossary: ARAV (`pages_5.html:8`) and IUCN (`:42`) out.
