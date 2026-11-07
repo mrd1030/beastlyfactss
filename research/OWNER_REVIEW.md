@@ -100,7 +100,7 @@ Format: claim | guide | why it needs review | suggested decision. Live guides (c
 - "A mature female can lay four to five clutches in a season, about a month apart" | leopard-gecko-health-issues-guide.mdx | number: no source shown | keep, or find a source
 - Lights "14 hours a day in summer and cut back to 12 hours in winter" | leopard-gecko-tank-setup-guide.mdx | number: no cited source | keep, or soften to "a longer day in summer"
 - Arcadia chart: the 24 inch 14 W tube at UVI 1.0 against 0.65 for the 12 inch 7% kit at 12 inches | leopard-gecko-tank-setup-guide.mdx | number: named inline as a maker spec, but no Arcadia page in Sources | desktop check of the chart, then add it
-- Handling FunFact source, Higham and Russell, Biology Letters | leopard-gecko-handling-guide.mdx | citation | desktop check
+- Handling FunFact source, Higham and Russell, Biology Letters | leopard-gecko-handling-guide.mdx | citation | desktop check **DONE: Owner desktop PDF, 2026-11-06: Biol. Lett. (2010) 6(1): 70-73, doi 10.1098/rsbl.2009.0577; abstract: "extremely complex movement patterns for up to 30 min following autotomy, including acrobatic flips up to 3 cm in height"; FunFact rewritten to match (owner).**
 - Morphs: price bands only, no named morphs, no MorphMarket entry | leopard-gecko-cost-guide.mdx | scope | **DONE: Owner, 2026-11-06: keep the bands; a named-morph section is deferred**
 
 ### Crested gecko
