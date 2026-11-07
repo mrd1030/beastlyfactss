@@ -1165,7 +1165,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.6,
     price: "$13–$21",
     description: "Handheld laser thermometer for instant surface temperature checks. Great for basking spots and warm hides.",
-    covers: ["Infrared temp gun for the mat's surface", "Infrared thermometer for surface readings", "Infrared temperature gun"], // generic-brand IR gun, commonly used to check heat-source surface temps for hedgehog/sugar glider setups too, not just reptile basking spots
+    covers: ["Infrared temp gun for the mat's surface", "Infrared temp gun for the warm hide floor", "Infrared thermometer for surface readings", "Infrared temperature gun"], // generic-brand IR gun, commonly used to check heat-source surface temps for hedgehog/sugar glider setups too, not just reptile basking spots
     pets: ["reptiles-amphibians", "small-mammals"],
   },
   {
@@ -1790,7 +1790,7 @@ export const AFFILIATE_PRODUCTS = [
     rating: 4.5,
     price: "$49–$71",
     description: "T5 UVB fixture kit that provides moderate UVB for tropical or shade-dwelling reptiles.",
-    covers: ["Low-output UVB (T5 HO)", "Low-output UVB (T5 HO 5%)", "Low-output UVB (T5 HO, Zone 1)", "Low-output UVB (optional but beneficial)", "UVB (T5 HO 5-6%)", "Optional low-level UVB (5%)", "Optional low-output T5 UVB", "Optional low-output linear T5 UVB on a 12-hour timer", "Low-output UVB (T5 HO, around 5.0)", "Low-output UVB, a 5% or forest-strength T5 bulb", "Low-output UVB fixture and bulb", "Low-output UVB fixture (T5 HO)", "Low-output T5 UVB and hood", "Low-output 12-inch T5 UVB fixture (check the length against your enclosure)"],
+    covers: ["Low-output UVB (T5 HO)", "Low-output UVB (T5 HO 5%)", "Low-output UVB (T5 HO, Zone 1)", "Low-output UVB (optional but beneficial)", "UVB (T5 HO 5-6%)", "Optional low-level UVB (5%)", "Optional low-output T5 UVB", "Optional low-output linear T5 UVB on a 12-hour timer", "Low-output UVB (T5 HO, around 5.0)", "Low-output UVB, a 5% or forest-strength T5 bulb", "Low-output UVB fixture and bulb", "Low-output UVB fixture (T5 HO)", "Low-output T5 UVB and hood", "Low-output 14-inch T5 UVB hood with a 5.0 tube (check the length against your enclosure)"],
     altGroup: "low-output-uvb-t5",
     pets: ["reptiles-amphibians"],
   },

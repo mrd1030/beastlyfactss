@@ -25,13 +25,15 @@ Six guides per species: cost, handling, health issues, tank setup, feeding, enri
 
 One commit per species, pushed to the working branch.
 
+Agent models (owner, 2026-11-06): grading and regrades run on Fable; source research and research-doc building run on Sonnet, to save credits. Every research run has a hard cap of 20 web searches and 30 page fetches, and reports how many it used and what is still unsourced; more runs are started only when the owner asks.
+
 ## Order
 
 ### 1. Care package animals (20)
 
 - [ ] bearded-dragon (in progress: all six graded and fixed 2026-11-06; cost, handling, tank setup A-, health, feeding, enrichment fixed toward A- after the last regrade. Open: desktop checks (VCA brumation and housing pages, nail claims, ReptiFiles for enrichment), CANV naming, UVB guide zone 3 to 4, bioactive guide DIY floor figure, book items in FIX_PACKAGES)
 - [ ] leopard-gecko (in progress: all six graded and fixed 2026-11-06, regrade B to C+ before the last round of fixes; owner review list in research/LEOPARD_GECKO_RESEARCH.md; book pinky rows queued)
-- [ ] crested-gecko
+- [ ] crested-gecko (in progress: all six graded and fixed 2026-11-06; final regrade 2026-11-07: cost A-, handling A-, health A, tank setup A, feeding A, enrichment A-, fixes applied. Eight contradictions settled, FunFacts sourced, Sources blocks rebuilt with the hobby sites out, hub matched, book items and corrections logged. Open: MorphMarket desktop check, named-morph section deferred, owner decision on adding tetra-style sections (buying checklist, shipping, health triage and healthy-gecko table, enrichment priority order); owner review list in research/CRESTED_GECKO_RESEARCH.md)
 - [ ] gargoyle-gecko
 - [ ] african-fat-tail
 - [ ] ball-python

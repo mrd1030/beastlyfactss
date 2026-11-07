@@ -38,6 +38,60 @@ regenerating an existing frame, and start here when writing a new one.
 Props carry no lettering. A generator asked for a scale, a maze or a chart will
 invent garbage text on it, and the site's own watermark goes on afterwards.
 
+## Home page hero, 2026-11-06
+
+One frame for the home page hero (`src/assets/hero-*`, four sizes up to 1600x1067)
+and the share card (`public/assets/og-default.jpg`, 1200x630, cropped from the
+same frame). Generate at 3:2, as large as the tool allows, and never enlarge:
+if it arrives under 1600 wide, the largest size is installed at what arrived.
+
+Why it changes: the headline is "Wild facts. Pet care." and the current frame
+shows only Australian wildlife and one pet, so a visitor who keeps a cat, a
+betta or a hamster sees nothing for them. It also puts a rainbow lorikeet, a
+coastal and eastern forest bird, out on the red desert with a bearded dragon,
+a habitat mix-up on the first picture of a site whose pitch is that it looked
+things up. The new frame holds both halves of the headline: the pets you live
+with indoors, the wild animal you will never meet outside the window.
+
+Layout: the text card sits over the lower middle of the frame on phones and
+over the centre on desktop (`object-top` crop). Keep the subjects in the left
+and right thirds and the upper two thirds, and leave the centre and the bottom
+third calm (wall, floor, rug), with nothing there that the card would cut in
+half.
+
+**`src/assets/hero-*` and `public/assets/og-default.jpg`**
+
+A bright, lived-in living room in warm late-morning daylight, seen at eye level
+from across the room. On the left third, a large front-opening glass terrarium
+on a low wooden stand, set up correctly: a long UVB tube and a basking lamp in
+a fixture on the mesh top, a flat stone basking platform under the lamp, a
+cork hide, a shallow water dish and a natural soil floor. On the platform an
+adult bearded dragon basks with its head raised: tan and orange, a broad
+triangular head, a spiny beard under the jaw, rows of soft spikes along the
+sides of the body. Not an iguana, not a frilled lizard, no dewlap. On the right
+third, a tall window with a deep sill; on the sill a gray tabby cat lies curled
+and relaxed, facing out, nowhere near the terrarium. Through the window, a
+green meadow edged by woodland, and at the meadow edge a red fox stands alert
+and looking toward the house: rust-red coat, black lower legs, a white chest
+and a white tip on a full tail. Not a dog, not a coyote. The centre of the room
+is quiet: a plain warm wall, a trailing houseplant, a soft rug on a wooden
+floor. Natural colour, gentle contrast, photographic. 35mm, deep focus so both
+the dragon and the fox are sharp. 3:2.
+No people, no hands, no text, no labels or lettering on the terrarium or
+anything else, no screens, no watermark, no heat rock, no sand, no second
+reptile, no animal touching another, no cat on or near the terrarium.
+**Check:** the dragon has the spiny beard and triangular head (not an iguana),
+the fox has black legs and a white tail tip (not a dog), the terrarium shows a
+UVB tube and a basking lamp on top, and the centre and bottom third are calm
+enough to sit under the text card.
+
+Install, after the owner approves the frame: re-encode through mozjpeg at
+quality 80 into hero-400, -800, -1200 and -1600 (jpg, webp, avif), crop
+og-default.jpg to 1200x630 from the same frame, update the hero `alt` in
+`src/components/home/HeroSection.jsx` and the `og:image:alt` in
+`src/pages/Home.jsx`, check the `lg:object-top` crop note in HeroSection still
+holds, and record the tool and model in IMAGE_CREDITS.md.
+
 ## How these handle illness
 
 Sampled from `rabbit-gi-stasis.jpg`, `cat-hairball-vomiting.jpg`,

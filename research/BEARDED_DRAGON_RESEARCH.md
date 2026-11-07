@@ -378,7 +378,19 @@ Current Sources: RSPCA How to care for your bearded dragon; BeardedDragon.org Di
 - Zoo Med tube sizes and the MSD quarantine figure seen only in search
   summaries: owner is fine with that as recorded.
 
+## Hub check, 2026-11-06
+
+Hub fields compared with the guides only (no sources opened). Changed: UVB row
+scoped to a 12% tube and carries the hypo, silkback and translucent UVI 3.0
+line; brumation route line says 1 to 3 months; emergency card order matches
+the health guide; funFact carries both arm-wave meanings; Handling row adds
+"Sessions run about 10 to 15 minutes in an ordinary room; heat sets the
+limit." Kept: the buy list's Hammock and "Dimming thermostat with a safety
+shutoff", both rows of the cost guide's setup table.
+
 ## Kept without a source (owner review)
+
+The open items are also triaged in research/OWNER_REVIEW.md (2026-11-06), with a suggested decision for each.
 
 - Fruit "once or twice a week at most" (safe foods guide, Fruit and the Never-Feed List): VCA, NC State and LafeberVet cap fruit by share of the diet, none gives a frequency. Kept as written (owner, 2026-11-03).
 - Babies and juveniles "2 to 3 days at most" without food: Texas Avian says only "sooner for younger dragons" and the Louisiana hospital says they "need to eat daily". No vet page gives 2 to 3 days. Kept as written.
@@ -399,3 +411,9 @@ Current Sources: RSPCA How to care for your bearded dragon; BeardedDragon.org Di
 - Whyte Ridge says "Fruits should be avoided" outright; the guide keeps fruit as a minor treat at 5% or less, which is what VCA, NC State and LafeberVet allow.
 - VCA Bearded Dragons Feeding: "Pinkie mice or young 'fuzzy' mice may be fed to larger bearded dragons, but sparingly". The site says no mice (owner, 2026-11-06).
 - Baines 2016 lists Pogona vitticeps as zone 3 to 4; the site's UVB lighting guide lists bearded dragons under Zone 3 only.
+- 2026-11-06: Owner desktop PDFs, VCA Brumation in Bearded Dragons (Gregory Rich, DVM, created Apr 9, 2024) and VCA Bearded Dragons: Housing (Rich, Hess, Axelson, last updated Oct 16, 2026), read verbatim.
+  - Housing confirms the four fetch-summary lines: UV output "decreases with age, so they should be replaced every six months or as directed by the manufacturer, even if they still produce visible light"; "it must reach the pet without glass or plastic between the bulb and the animal"; "Large rocks that are easy enough to climb on and around allow for basking"; "Fresh water should always be available in a sturdy dish that will not easily tip over." Also: "Sunlight through window glass does not provide the same exposure." (backs the free-roam window note directly); "A bearded dragon is usually best housed alone."; in the wild they "often brumate when temperatures drop below 50ºF (10ºC) over a period of weeks to months."
+  - Brumation backs the health guide's pre-brumation vet visit: "If you are considering inducing a state of brumation you should first have your bearded dragon checked by a knowledgeable reptile veterinarian to establish his/her health status." and "Rather than assume your bearded dragon is undergoing brumation, have your pet seen by a veterinarian". Also: "Bearded dragons finish their growth spurt around 10-12 months of age. At this time, they often slow their food consumption from a daily routine to every 48-72 hours." (bears on the cost FAQ's "adult size within a year or so", on the owner review list). No brumation age range or length in months.
+- 2026-11-06: Cost guide Sources: the VCA entry is now combined (Owning Bearded Dragons; Brumation in Bearded Dragons), backing 'reach adult size within a year or so' with 'finish their growth spurt around 10-12 months of age' (owner).
+- 2026-11-06: Owner desktop PDFs, ReptiFiles "How to Provide Enrichment for Lizards" and "Bearded Dragon Egg Laying", read verbatim. Enrichment for Lizards: "Encourage burrowing behavior with deep, natural substrate, like sand, soil, and leaf litter."; "Changing up the enclosure every once in a while can also be a good form of environmental enrichment for lizards." No depth or mix. Egg Laying: "A lay box is simply a plastic bin with ~6 inches of dampened play sand in which your female can dig a hole for her eggs."; sand wet until it "clumps together easily", so she can "dig a cave that won't collapse"; play sand only, no topsoil. Neither page covers glass surfing. VCA Housing (owner PDF, same day): "Even so-called digestible 'calcium sand' may cause a blockage when ingested and should be avoided."; "Sunlight through window glass does not provide the same exposure."
+- 2026-11-06: Enrichment guide Sources (owner): ReptiFiles (Enrichment for Lizards; Bearded Dragon Egg Laying) and VCA Bearded Dragons: Housing added; five entries. BeardedDragon.org (4 to 6 inch general depth, the near 50/50 topsoil and sand mix) and Hepper (glass surfing causes) stay, as the only sources for those lines, under the under-3 exception until a better source turns up.
